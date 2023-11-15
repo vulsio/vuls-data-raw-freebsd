@@ -1,0 +1,32 @@
+{
+  "vid": "9b7491fb-f253-11e9-a50c-000c29c4dc65",
+  "topic": "python 3.7 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "python37"
+      ],
+      "range": [
+        {
+          "lt": "3.7.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Python changelog:</p>\n\t<blockquote cite=\"https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-5-final\">\n\t  <p>bpo-38243: Escape the server title of xmlrpc.server.DocXMLRPCServer when rendering\n\t   the document page as HTML.</p>\n\t  <p>bpo-38174: Update vendorized expat library version to 2.2.8, which resolves\n\t   CVE-2019-15903.</p>\n\t  <p>bpo-37764: Fixes email._header_value_parser.get_unstructured going into an infinite\n\t   loop for a specific case in which the email header does not have trailing whitespace,\n\t   and the case in which it contains an invalid encoded word.</p>\n\t  <p>bpo-37461: Fix an infinite loop when parsing specially crafted email headers.</p>\n\t  <p>bpo-34155: Fix parsing of invalid email addresses with more than one @\n\t   (e.g. a@b@c.com.) to not return the part before 2nd @ as valid email address.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-5-final"
+    ],
+    "cvename": [
+      "CVE-2019-15903"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-09-14",
+    "entry": "2019-10-19"
+  }
+}

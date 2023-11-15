@@ -1,0 +1,106 @@
+{
+  "vid": "978b0f76-122d-11e4-afe3-bc5ff4fb5e7b",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "31.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "24.7.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "31.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "24.7.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "24.7.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nss"
+      ],
+      "range": [
+        {
+          "lt": "3.16.1_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2014-66 IFRAME sandbox same-origin access through\n\t    redirect</p>\n\t  <p>MFSA 2014-65 Certificate parsing broken by non-standard\n\t    character encoding</p>\n\t  <p>MFSA 2014-64 Crash in Skia library when scaling high\n\t    quality images</p>\n\t  <p>MFSA 2014-63 Use-after-free while when manipulating\n\t    certificates in the trusted cache</p>\n\t  <p>MFSA 2014-62 Exploitable WebGL crash with Cesium\n\t    JavaScript library</p>\n\t  <p>MFSA 2014-61 Use-after-free with FireOnStateChange\n\t    event</p>\n\t  <p>MFSA 2014-60 Toolbar dialog customization event\n\t    spoofing</p>\n\t  <p>MFSA 2014-59 Use-after-free in DirectWrite font\n\t    handling</p>\n\t  <p>MFSA 2014-58 Use-after-free in Web Audio due to\n\t    incorrect control message ordering</p>\n\t  <p>MFSA 2014-57 Buffer overflow during Web Audio\n\t    buffering for playback</p>\n\t  <p>MFSA 2014-56 Miscellaneous memory safety hazards\n\t    (rv:31.0 / rv:24.7)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-56.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-57.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-58.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-59.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-60.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-61.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-62.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-63.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-64.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-65.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-66.html",
+      "https://www.mozilla.org/security/announce/"
+    ],
+    "cvename": [
+      "CVE-2014-1544",
+      "CVE-2014-1547",
+      "CVE-2014-1548",
+      "CVE-2014-1549",
+      "CVE-2014-1550",
+      "CVE-2014-1551",
+      "CVE-2014-1552",
+      "CVE-2014-1555",
+      "CVE-2014-1556",
+      "CVE-2014-1557",
+      "CVE-2014-1558",
+      "CVE-2014-1559",
+      "CVE-2014-1560",
+      "CVE-2014-1561"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-07-22",
+    "entry": "2014-07-23"
+  }
+}

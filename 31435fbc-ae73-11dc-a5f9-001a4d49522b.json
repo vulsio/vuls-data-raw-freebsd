@@ -1,0 +1,34 @@
+{
+  "vid": "31435fbc-ae73-11dc-a5f9-001a4d49522b",
+  "topic": "peercast -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "peercast"
+      ],
+      "range": [
+        {
+          "lt": "0.1218"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Luigi Auriemma reports that peercast is vulnerable to a\n\t  buffer overflow which could lead to a DoS or potentially\n\t  remote code execution:</p>\n\t<blockquote cite=\"http://aluigi.altervista.org/adv/peercasthof-adv.txt\">\n\t  <p>The handshakeHTTP function which handles all the requests\n\t    received by the other clients is vulnerable to a heap\n\t    overflow which allows an attacker to fill the\n\t    loginPassword and loginMount buffers located in the\n\t    Servent class with how much data he wants.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://aluigi.altervista.org/adv/peercasthof-adv.txt",
+      "http://secunia.com/advisories/28120/"
+    ],
+    "cvename": [
+      "CVE-2007-6454"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-12-17",
+    "entry": "2007-12-19",
+    "modified": "2010-05-12"
+  }
+}

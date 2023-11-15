@@ -1,0 +1,35 @@
+{
+  "vid": "59e7af2d-8db7-11de-883b-001e3300a30d",
+  "topic": "pidgin -- MSN overflow parsing SLP messages",
+  "affects": [
+    {
+      "name": [
+        "pidgin",
+        "libpurple",
+        "finch"
+      ],
+      "range": [
+        {
+          "lt": "2.5.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/36384\">\n\t  <p>A vulnerability has been reported in Pidgin, which can be\n\t    exploited by malicious people to potentially compromise a user's\n\t    system.</p>\n\t  <p>The vulnerability is caused due to an error in the\n\t    \"msn_slplink_process_msg()\" function when processing MSN SLP\n\t    messages and can be exploited to corrupt memory.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary\n\t    code.</p>\n\t  <p>The vulnerability is reported in versions 2.5.8 and prior.\n\t    Other versions may also be affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/36384/",
+      "http://www.pidgin.im/news/security/?id=34"
+    ],
+    "cvename": [
+      "CVE-2009-2694"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-08-18",
+    "entry": "2009-08-20"
+  }
+}

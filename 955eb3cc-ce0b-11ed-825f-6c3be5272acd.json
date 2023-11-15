@@ -1,0 +1,72 @@
+{
+  "vid": "955eb3cc-ce0b-11ed-825f-6c3be5272acd",
+  "topic": "Grafana -- Stored XSS in Graphite FunctionDescription tooltip",
+  "affects": [
+    {
+      "name": [
+        "grafana"
+      ],
+      "range": [
+        {
+          "lt": "8.5.22"
+        },
+        {
+          "lt": "9.2.15",
+          "ge": "9.0.0"
+        },
+        {
+          "lt": "9.3.11",
+          "ge": "9.3.0"
+        },
+        {
+          "lt": "9.4.7",
+          "ge": "9.4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana8"
+      ],
+      "range": [
+        {
+          "lt": "8.5.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana9"
+      ],
+      "range": [
+        {
+          "lt": "9.2.15"
+        },
+        {
+          "lt": "9.3.11",
+          "ge": "9.3.0"
+        },
+        {
+          "lt": "9.4.7",
+          "ge": "9.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/03/22/grafana-security-release-new-versions-with-security-fixes-for-cve-2023-1410/\">\n\t  <p>When a user adds a Graphite data source, they can then use the data source\n\t  in a dashboard. This capability contains a feature to use Functions. Once\n\t  a function is selected, a small tooltip appears when hovering over the name\n\t  of the function. This tooltip allows you to delete the selected Function\n\t  from your query or show the Function Description. However, no sanitization\n\t  is done when adding this description to the DOM.</p>\n\t  <p>Since it is not uncommon to connect to public data sources, an attacker\n\t  could host a Graphite instance with modified Function Descriptions containing\n\t  XSS payloads. When the victim uses it in a query and accidentally hovers\n\t  over the Function Description, an attacker-controlled XSS payload\n\t  will be executed.</p>\n\t  <p>The severity of this vulnerability is of CVSSv3.1 5.7 Medium\n\t  (CVSS: AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:N (5.7)).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://grafana.com/security/security-advisories/cve-2023-1410/"
+    ],
+    "cvename": [
+      "CVE-2023-1410"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-14",
+    "entry": "2023-03-29"
+  }
+}

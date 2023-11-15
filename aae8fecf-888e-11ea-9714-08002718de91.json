@@ -1,0 +1,41 @@
+{
+  "vid": "aae8fecf-888e-11ea-9714-08002718de91",
+  "topic": "py-yaml -- FullLoader (still) exploitable for arbitrary command execution",
+  "affects": [
+    {
+      "name": [
+        "py27-yaml",
+        "py35-yaml",
+        "py36-yaml",
+        "py37-yaml",
+        "py38-yaml"
+      ],
+      "range": [
+        {
+          "lt": "5.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Riccardo Schirone (https://github.com/ret2libc) reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=1807367\">\n\t  <p>In FullLoader python/object/new constructor, implemented by\n\t    construct_python_object_apply, has support for setting the\n\t    state of a deserialized instance through the set_python_instance_state\n\t    method.  After setting the state, some operations are performed\n\t    on the instance to complete its initialization, however it is\n\t    possible for an attacker to set the instance' state in such a way\n\t    that arbitrary code is executed by the FullLoader.</p>\n\t  <p>This patch tries to block such attacks in FullLoader by\n\t    preventing set_python_instance_state from setting arbitrar\n\t    properties. It implements a blacklist that includes extend method\n\t    (called by construct_python_object_apply) and all special\n\t    methods (e.g. __set__, __setitem__, etc.).</p>\n\t  <p>Users who need special attributes being set in the state of a\n\t    deserialized object can still do it through the UnsafeLoader, which\n\t    however should not be used on untrusted input. Additionally, they can\n\t    subclass FullLoader and redefine state_blacklist_regexp to include the\n\t    additional attributes they need, passing the subclassed loader to\n\t    yaml.load.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1807367",
+      "https://github.com/yaml/pyyaml/pull/386"
+    ],
+    "cvename": [
+      "CVE-2020-1747"
+    ],
+    "freebsd_pr": [
+      "ports/245937"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-03-02",
+    "entry": "2020-04-27",
+    "modified": "2020-04-29"
+  }
+}

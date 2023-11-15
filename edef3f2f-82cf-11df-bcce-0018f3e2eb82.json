@@ -1,0 +1,36 @@
+{
+  "vid": "edef3f2f-82cf-11df-bcce-0018f3e2eb82",
+  "topic": "png -- libpng decompression buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "png"
+      ],
+      "range": [
+        {
+          "lt": "1.4.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PNG project describes the problem in an advisory:</p>\n\t<blockquote cite=\"http://www.libpng.org/pub/png/libpng.html\">\n\t  <p>Several versions of libpng through 1.4.2 (and through 1.2.43\n\t    in the older series) contain a bug whereby progressive\n\t    applications such as web browsers (or the rpng2 demo app included\n\t    in libpng) could receive an extra row of image data beyond the\n\t    height reported in the header, potentially leading to an\n\t    out-of-bounds write to memory (depending on how the application\n\t    is written) and the possibility of execution of an attacker's\n\t    code with the privileges of the libpng user (including remote\n\t    compromise in the case of a libpng-based browser visiting a\n\t    hostile web site).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.libpng.org/pub/png/libpng.html"
+    ],
+    "cvename": [
+      "CVE-2010-1205"
+    ],
+    "bid": [
+      "41174"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-03-30",
+    "entry": "2010-06-28",
+    "modified": "2010-06-28"
+  }
+}

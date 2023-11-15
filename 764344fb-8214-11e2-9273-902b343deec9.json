@@ -1,0 +1,32 @@
+{
+  "vid": "764344fb-8214-11e2-9273-902b343deec9",
+  "topic": "sudo -- Authentication bypass when clock is reset",
+  "affects": [
+    {
+      "name": [
+        "sudo"
+      ],
+      "range": [
+        {
+          "lt": "1.8.6.p7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.sudo.ws/sudo/alerts/epoch_ticket.html\">\n\t  <p>The flaw may allow someone with physical access to a machine that\n\t    is not password-protected to run sudo commands without knowing the\n\t    logged in user's password. On systems where sudo is the principal\n\t    way of running commands as root, such as on Ubuntu and Mac OS X,\n\t    there is a greater chance that the logged in user has run sudo\n\t    before and thus that an attack would succeed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.sudo.ws/sudo/alerts/epoch_ticket.html"
+    ],
+    "cvename": [
+      "CVE-2013-1775"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-02-27",
+    "entry": "2013-03-01"
+  }
+}

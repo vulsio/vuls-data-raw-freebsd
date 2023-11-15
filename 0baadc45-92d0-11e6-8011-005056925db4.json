@@ -1,0 +1,35 @@
+{
+  "vid": "0baadc45-92d0-11e6-8011-005056925db4",
+  "topic": "Axis2 -- Cross-site scripting (XSS) vulnerability",
+  "affects": [
+    {
+      "name": [
+        "axis2"
+      ],
+      "range": [
+        {
+          "lt": "1.7.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Apache Axis2 reports:</p>\n\t<blockquote cite=\"http://axis.apache.org/axis2/java/core/release-notes/1.7.3.html\">\n\t<p>Apache Axis2 1.7.3 is a security release that contains a fix\n\t    for CVE-2010-3981. That security vulnerability affects the admin console\n\t    that is part of the Axis2 Web application and was originally reported\n\t    for SAP BusinessObjects (which includes a version of Axis2). That report\n\t    didn’t mention Axis2 at all and the Axis2 project only recently became\n\t    aware (thanks to Devesh Bhatt and Nishant Agarwala) that the issue\n\t    affects Apache Axis2 as well.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://axis.apache.org/axis2/java/core/release-notes/1.7.3.html"
+    ],
+    "cvename": [
+      "CVE-2010-3981"
+    ],
+    "freebsd_pr": [
+      "ports/213546"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-10-18",
+    "entry": "2016-10-18"
+  }
+}

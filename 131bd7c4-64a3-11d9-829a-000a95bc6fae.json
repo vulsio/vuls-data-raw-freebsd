@@ -1,0 +1,33 @@
+{
+  "vid": "131bd7c4-64a3-11d9-829a-000a95bc6fae",
+  "topic": "libxine -- DVD subpicture decoder heap overflow",
+  "affects": [
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.0.r6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A xine security announcement states:</p>\n\t<blockquote cite=\"http://xinehq.de/index.php/security/XSA-2004-5\">\n\t  <p>A heap overflow has been found in the DVD subpicture\n\t    decoder of xine-lib. This can be used for a remote heap\n\t    overflow exploit, which can, on some systems, lead to or\n\t    help in executing malicious code with the permissions of the\n\t    user running a xine-lib based media application.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xinehq.de/index.php/security/XSA-2004-5"
+    ],
+    "cvename": [
+      "CVE-2004-1379"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-06",
+    "entry": "2005-01-12",
+    "modified": "2005-01-19"
+  }
+}

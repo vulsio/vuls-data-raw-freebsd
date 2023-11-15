@@ -1,0 +1,32 @@
+{
+  "vid": "1374b96c-a1c2-11db-9ddc-0011098b2f36",
+  "topic": "sircd -- remote reverse DNS buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "sircd"
+      ],
+      "range": [
+        {
+          "le": "0.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/8153/\">\n\t <p>A vulnerability in sircd can be exploited by a malicious person\n\t   to compromise a vulnerable system.  The vulnerability is caused\n\t   by a boundary error in the code handling reverse DNS lookups,\n\t   when a user connects to the service. If the FQDN (Fully Qualified\n\t   Domain Name) returned is excessively long, the allocated buffer\n\t   is overflowed making it possible to execute arbitrary code on the\n\t   system with the privileges of the sircd daemon.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/8153"
+    ],
+    "bid": [
+      "6924"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-02-24",
+    "entry": "2007-01-15"
+  }
+}

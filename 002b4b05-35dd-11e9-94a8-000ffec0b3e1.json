@@ -1,0 +1,32 @@
+{
+  "vid": "002b4b05-35dd-11e9-94a8-000ffec0b3e1",
+  "topic": "drupal -- Drupal core - Highly critical - Remote Code Execution",
+  "affects": [
+    {
+      "name": [
+        "drupal8"
+      ],
+      "range": [
+        {
+          "lt": "8.6.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal Security Team</p>\n\t<blockquote cite=\"https://www.drupal.org/SA-CORE-2019-003\">\n\t  <p>Some field types do not properly sanitize data from non-form sources.\n\tThis can lead to arbitrary PHP code execution in some cases..</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.drupal.org/sa-core-2019-002"
+    ],
+    "cvename": [
+      "CVE-2019-6340"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-20",
+    "entry": "2019-02-21"
+  }
+}

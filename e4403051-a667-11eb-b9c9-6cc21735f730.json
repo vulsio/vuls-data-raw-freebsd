@@ -1,0 +1,30 @@
+{
+  "vid": "e4403051-a667-11eb-b9c9-6cc21735f730",
+  "topic": "sbibboleth-sp -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "shibboleth-sp"
+      ],
+      "range": [
+        {
+          "lt": "3.2.1_1",
+          "ge": "3.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n      <p>Shibboleth project reports:</p>\n      <blockquote cite=\"https://shibboleth.net/community/advisories/secadv_20210426.txt\">\n\t<p>Session recovery feature contains a null pointer deference.</p>\n\t<p>\n\t  The cookie-based session recovery feature added in V3.0 contains a\n\t  flaw that is exploitable on systems *not* using the feature if a\n\t  specially crafted cookie is supplied.\n\t</p>\n\t<p>\n\t  This manifests as a crash in the shibd daemon/service process.\n\t</p>\n\t<p>\n\t  Because it is very simple to trigger this condition remotely, it\n\t  results in a potential denial of service condition exploitable by\n\t  a remote, unauthenticated attacker.\n\t</p>\n      </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://shibboleth.net/community/advisories/secadv_20210426.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-23",
+    "entry": "2021-04-26"
+  }
+}

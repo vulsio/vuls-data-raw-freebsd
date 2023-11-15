@@ -1,0 +1,54 @@
+{
+  "vid": "3ebd4cb5-657f-11de-883a-00e0815b8da8",
+  "topic": "nagios -- Command Injection Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "nagios"
+      ],
+      "range": [
+        {
+          "le": "3.0.6_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nagios2"
+      ],
+      "range": [
+        {
+          "le": "2.12_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nagios-devel"
+      ],
+      "range": [
+        {
+          "le": "3.1.0_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/35543?\">\n\t  <p>A vulnerability has been reported in Nagios, which can be\n\t    exploited by malicious users to potentially compromise a\n\t    vulnerable system.</p>\n\t  <p>Input passed to the \"ping\" parameter in statuswml.cgi is not\n\t    properly sanitised before being used to invoke the ping command.\n\t    This can be exploited to inject and execute arbitrary shell\n\t    commands.</p>\n\t  <p>Successful exploitation requires access to the ping feature\n\t    of the WAP interface.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/35543",
+      "http://tracker.nagios.org/view.php?id=15"
+    ],
+    "cvename": [
+      "CVE-2009-2288"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-05-29",
+    "entry": "2009-06-30",
+    "modified": "2009-07-13"
+  }
+}

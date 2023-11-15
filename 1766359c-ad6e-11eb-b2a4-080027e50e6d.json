@@ -1,0 +1,61 @@
+{
+  "vid": "1766359c-ad6e-11eb-b2a4-080027e50e6d",
+  "topic": "Django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py36-django22",
+        "py37-django22",
+        "py38-django22",
+        "py39-django22"
+      ],
+      "range": [
+        {
+          "lt": "2.2.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py36-django31",
+        "py37-django31",
+        "py38-django31",
+        "py39-django31"
+      ],
+      "range": [
+        {
+          "lt": "3.1.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py36-django32",
+        "py37-django32",
+        "py38-django32",
+        "py39-django32"
+      ],
+      "range": [
+        {
+          "lt": "3.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django Release reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2021/may/04/security-releases/\">\n\t  <p>CVE-2021-31542:Potential directory-traversal via uploaded files.</p>\n\t  <p>MultiPartParser, UploadedFile, and FieldFile allowed directory-traversal\n\t    via uploaded files with suitably crafted file names.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2021/may/04/security-releases/"
+    ],
+    "cvename": [
+      "CVE-2021-31542"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-22",
+    "entry": "2021-05-05"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "vid": "326c517a-d029-11d9-9aed-000e0c2e438a",
+  "topic": "phpbb -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpbb"
+      ],
+      "range": [
+        {
+          "lt": "2.0.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpBB is vulnerable to remote exploitation of an input\n\t  validation vulnerability allows attackers to read the\n\t  contents of arbitrary system files under the privileges\n\t  of the webserver.  This also allows remote attackers to\n\t  unlink arbitrary system files under the privileges of the\n\t  webserver.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://security.gentoo.org/glsa/glsa-200503-02.xml",
+      "http://www.idefense.com/application/poi/display?id=205&type=vulnerabilities",
+      "http://www.idefense.com/application/poi/display?id=204&type=vulnerabilities"
+    ],
+    "cvename": [
+      "CVE-2005-0258",
+      "CVE-2005-0259"
+    ],
+    "bid": [
+      "12618",
+      "12621",
+      "12623"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-22",
+    "entry": "2005-07-09"
+  }
+}

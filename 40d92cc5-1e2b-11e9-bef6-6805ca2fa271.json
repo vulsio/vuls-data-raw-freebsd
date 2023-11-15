@@ -1,0 +1,33 @@
+{
+  "vid": "40d92cc5-1e2b-11e9-bef6-6805ca2fa271",
+  "topic": "powerdns-recursor -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "powerdns-recursor"
+      ],
+      "range": [
+        {
+          "lt": "4.1.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PowerDNS Team reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/recursor/changelog/4.1.html\">\n\t  <p>CVE-2019-3806: An issue has been found in PowerDNS Recursor where Lua hooks are\n\t   not properly applied to queries received over TCP in some specific combination of\n\t   settings, possibly bypassing security policies enforced using Lua.\n\n\t   When the recursor is configured to run with more than one thread (threads=X) and to\n\t   do the distribution of incoming queries to the worker threads itself\n\t   (pdns-distributes-queries=yes), the Lua script is not properly loaded in the thread\n\t   handling incoming TCP queries, causing the Lua hooks to not be properly applied.</p>\n\t  <p>CVE-2019-3807: An issue has been found in PowerDNS Recursor where records in the\n\t   answer section of responses received from authoritative servers with the AA flag not\n\t   set were not properly validated, allowing an attacker to bypass DNSSEC validation.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://doc.powerdns.com/recursor/changelog/4.1.html"
+    ],
+    "cvename": [
+      "CVE-2019-3806",
+      "CVE-2019-3807"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-01-21",
+    "entry": "2019-01-22"
+  }
+}

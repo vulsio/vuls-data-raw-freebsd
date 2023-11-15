@@ -1,0 +1,43 @@
+{
+  "vid": "27b9b2f0-8081-11e4-b4ca-bcaec565249c",
+  "topic": "xserver -- multiple issue with X client request handling",
+  "affects": [
+    {
+      "name": [
+        "xorg-server"
+      ],
+      "range": [
+        {
+          "lt": "1.12.4_10,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Alan Coopersmith reports:</p>\n\t<blockquote cite=\"http://lists.x.org/archives/xorg-announce/2014-December/002500.html\">\n\t  <p>Ilja van Sprundel, a security researcher with IOActive, has\n\t    discovered a large number of issues in the way the X server\n\t    code base handles requests from X clients, and has worked\n\t    with X.Org's security team to analyze, confirm, and fix\n\t    these issues.</p>\n\n\t  <p>The vulnerabilities could be exploited to cause the X server\n\t    to access uninitialized memory or overwrite arbitrary memory\n\t    in the X server process.  This can cause a denial of service\n\t    (e.g., an X server segmentation fault), or could be exploited\n\t    to achieve arbitrary code execution.</p>\n\n\t  <p>The GLX extension to the X Window System allows an X client\n\t    to send X protocol to the X server, to request that the X\n\t    server perform OpenGL rendering on behalf of the X client.\n\t    This is known as \"GLX indirect rendering\", as opposed to\n\t    \"GLX direct rendering\" where the X client submits OpenGL\n\t    rendering commands directly to the GPU, bypassing the X\n\t    server and avoiding the X server code for GLX protocol\n\t    handling.</p>\n\n\t  <p>Most GLX indirect rendering implementations share some\n\t    common ancestry, dating back to \"Sample Implementation\"\n\t    code from Silicon Graphics, Inc (SGI), which SGI\n\t    originally commercially licensed to other Unix workstation\n\t    and graphics vendors, and later released as open source, so\n\t    those vulnerabilities may affect other licensees of SGI's\n\t    code base beyond those running code from the X.Org Foundation\n\t    or the XFree86 Project.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.x.org/archives/xorg-announce/2014-December/002500.html"
+    ],
+    "cvename": [
+      "CVE-2014-8091",
+      "CVE-2014-8092",
+      "CVE-2014-8093",
+      "CVE-2014-8094",
+      "CVE-2014-8095",
+      "CVE-2014-8096",
+      "CVE-2014-8097",
+      "CVE-2014-8098",
+      "CVE-2014-8099",
+      "CVE-2014-8100",
+      "CVE-2014-8101",
+      "CVE-2014-8102"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-12-09",
+    "entry": "2014-12-10"
+  }
+}

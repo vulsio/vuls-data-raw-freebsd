@@ -1,0 +1,38 @@
+{
+  "vid": "4775c807-8f30-11dd-821f-001cc0377035",
+  "topic": "mysql -- command line client input validation vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mysql-client"
+      ],
+      "range": [
+        {
+          "lt": "5.1.28_1",
+          "gt": "5.1"
+        },
+        {
+          "lt": "5.0.67_1",
+          "gt": "5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Thomas Henlich reports:</p>\n\t<blockquote cite=\"http://www.henlich.de/it-security/mysql-command-line-client-html-injection-vulnerability/\">\n\t  <p>The mysql command-line client does not quote HTML special\n\t    characters like &lt; in its output. This allows an attacker who\n\t    is able to write data into a table to hide or modify records in\n\t    the output, and to inject potentially dangerous code, e. g.\n\t    Javascript to perform cross-site scripting or cross-site request\n\t    forgery attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.henlich.de/it-security/mysql-command-line-client-html-injection-vulnerability/"
+    ],
+    "bid": [
+      "31486"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-04-17",
+    "entry": "2008-10-01",
+    "modified": "2008-10-10"
+  }
+}

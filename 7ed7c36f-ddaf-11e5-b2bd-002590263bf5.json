@@ -1,0 +1,39 @@
+{
+  "vid": "7ed7c36f-ddaf-11e5-b2bd-002590263bf5",
+  "topic": "xen-kernel -- PV superpage functionality missing sanity checks",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "eq": "3.4.0"
+        },
+        {
+          "eq": "3.4.1"
+        },
+        {
+          "lt": "4.5.2_2",
+          "ge": "4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-167.html\">\n\t  <p>The PV superpage functionality lacks certain validity checks on\n\t    data being passed to the hypervisor by guests.  This is the case\n\t    for the page identifier (MFN) passed to MMUEXT_MARK_SUPER and\n\t    MMUEXT_UNMARK_SUPER sub-ops of the HYPERVISOR_mmuext_op hypercall as\n\t    well as for various forms of page table updates.</p>\n\t  <p>Use of the feature, which is disabled by default, may have unknown\n\t    effects, ranging from information leaks through Denial of Service to\n\t    privilege escalation.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-167.html"
+    ],
+    "cvename": [
+      "CVE-2016-1570"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-20",
+    "entry": "2016-02-28"
+  }
+}

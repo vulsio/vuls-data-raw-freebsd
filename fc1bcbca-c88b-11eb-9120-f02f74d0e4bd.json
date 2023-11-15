@@ -1,0 +1,38 @@
+{
+  "vid": "fc1bcbca-c88b-11eb-9120-f02f74d0e4bd",
+  "topic": "dino -- Path traversal in Dino file transfers",
+  "affects": [
+    {
+      "name": [
+        "dino"
+      ],
+      "range": [
+        {
+          "lt": "0.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dino team reports:</p>\n\t<blockquote cite=\"https://dino.im/security/cve-2021-33896/\">\n\t  <p>It was discovered that when a user receives and downloads\n\t  a file in Dino, URI-encoded path separators in the file name\n\t  will be decoded, allowing an attacker to traverse\n\t  directories and create arbitrary files in the context of the\n\t  user.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://dino.im/security/cve-2021-33896/"
+    ],
+    "cvename": [
+      "CVE-2021-33896"
+    ],
+    "mlist": [
+      {
+        "text": "https://marc.info/?l=oss-security&m=162308719412719",
+        "msgid": "392f934a-f937-7b29-5f7f-5df3ee60d8a8@.larma.de"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2021-06-07",
+    "entry": "2021-06-08"
+  }
+}

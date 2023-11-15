@@ -1,0 +1,38 @@
+{
+  "vid": "6aa398d0-1c4d-11e9-96dd-a4badb296695",
+  "topic": "joomla3 -- vulnerabilitiesw",
+  "affects": [
+    {
+      "name": [
+        "joomla3"
+      ],
+      "range": [
+        {
+          "lt": "3.9.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>JSST reports:</p>\n\t<blockquote cite=\"https://developer.joomla.org/security-centre/760-00190101-core-stored-xss-in-mod-banners.html\">\n\t  <p>Inadequate escaping in mod_banners leads to a stored XSS vulnerability.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://developer.joomla.org/security-centre/761-20190102-core-stored-xss-in-com-contact.html\">\n\t  <p>Inadequate escaping in com_contact leads to a stored XSS vulnerability</p>\n\t</blockquote>\n\t<blockquote cite=\"https://developer.joomla.org/security-centre/762-20190103-core-stored-xss-issue-in-the-global-configuration-textfilter-settings.html\">\n\t  <p>Inadequate checks at the Global Configuration Text Filter settings allowed a stored XSS.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://developer.joomla.org/security-centre/763-20190104-core-stored-xss-issue-in-the-global-configuration-help-url.html\">\n\t  <p>Inadequate checks at the Global Configuration helpurl settings allowed a stored XSS.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://developer.joomla.org/security-centre/760-00190101-core-stored-xss-in-mod-banners.html",
+      "https://developer.joomla.org/security-centre/761-20190102-core-stored-xss-in-com-contact.html",
+      "https://developer.joomla.org/security-centre/762-20190103-core-stored-xss-issue-in-the-global-configuration-textfilter-settings.html",
+      "https://developer.joomla.org/security-centre/763-20190104-core-stored-xss-issue-in-the-global-configuration-help-url.html"
+    ],
+    "cvename": [
+      "CVE-2019-6264",
+      "CVE-2019-6261",
+      "CVE-2019-6263",
+      "CVE-2019-6262"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-12-01",
+    "entry": "2019-01-20"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "vid": "23afd91f-676b-11da-99f6-00123ffe8333",
+  "topic": "phpmyadmin -- register_globals emulation \"import_blacklist\" manipulation",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.7.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17925/\">\n\t  <p>Stefan Esser has reported a vulnerability in phpMyAdmin,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks, disclose sensitive\n\t    information, and compromise a vulnerable system.</p>\n\t  <p>The vulnerability is caused due to an error in the\n\t    register_globals emulation layer in \"grab_globals.php\"\n\t    where the \"import_blacklist\" variable is not properly\n\t    protected from being overwritten. This can be exploited\n\t    to execute arbitrary HTML and script code in a user's\n\t    browser session in context of an affected site, and\n\t    include arbitrary files from external and local resources.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-9",
+      "http://www.hardened-php.net/advisory_252005.110.html",
+      "http://secunia.com/advisories/17925/"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-12-07",
+    "entry": "2005-12-07"
+  }
+}

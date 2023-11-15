@@ -1,0 +1,34 @@
+{
+  "vid": "bcee3989-d106-4f60-948f-835375634710",
+  "topic": "varnish -- Varnish HTTP Request Parsing Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "varnish"
+      ],
+      "range": [
+        {
+          "lt": "2.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/33712\">\n\t  <p>Varnish is prone to a remote denial-of-service\n\t    vulnerability because the application fails to handle\n\t    certain HTTP requests.</p>\n\t  <p>Successfully exploiting this issue allows remote\n\t    attackers to crash the affected application denying further\n\t    service to legitimate users.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/33852/",
+      "http://varnish.projects.linpro.no/wiki/WikiStart"
+    ],
+    "bid": [
+      "33712"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-10-17",
+    "entry": "2009-02-14",
+    "modified": "2009-02-15"
+  }
+}

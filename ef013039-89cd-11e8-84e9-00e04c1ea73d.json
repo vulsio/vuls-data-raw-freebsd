@@ -1,0 +1,42 @@
+{
+  "vid": "ef013039-89cd-11e8-84e9-00e04c1ea73d",
+  "topic": "typo3 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "typo3-7"
+      ],
+      "range": [
+        {
+          "lt": "7.6.30"
+        }
+      ]
+    },
+    {
+      "name": [
+        "typo3-8"
+      ],
+      "range": [
+        {
+          "lt": "8.7.17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Typo3 core team reports:</p>\n\t<blockquote cite=\"https://typo3.org/article/typo3-931-8717-and-7630-security-releases-published/\">\n\t  <p>It has been discovered that TYPO3’s Salted Password system extension (which is a mandatory system component)\n\t    is vulnerable to Authentication Bypass when using hashing methods which are related by PHP class inheritance.\n\t    In standard TYPO3 core distributions stored passwords using the blowfish hashing algorithm can be overridden\n\t    when using MD5 as the default hashing algorithm by just knowing a valid username.\n\t    Per default the Portable PHP hashing algorithm (PHPass) is used which is not vulnerable.</p>\n\t  <p>Phar files (formerly known as \"PHP archives\") can act als self extracting archives which leads to the fact\n\t    that source code is executed when Phar files are invoked. The Phar file format is not limited to be stored\n\t    with a dedicated file extension - \"bundle.phar\" would be valid as well as \"bundle.txt\" would be. This way,\n\t    Phar files can be obfuscated as image or text file which would not be denied from being uploaded and persisted\n\t    to a TYPO3 installation. Due to a missing sanitization of user input, those Phar files can be invoked by\n\t    manipulated URLs in TYPO3 backend forms. A valid backend user account is needed to exploit this vulnerability.\n\t    In theory the attack vector would be possible in the TYPO3 frontend as well, however no functional exploit\n\t    has been identified so far.</p>\n\t  <p>Failing to properly dissociate system related configuration from user generated configuration,\n\t    the Form Framework (system extension \"form\") is vulnerable to SQL injection and Privilege Escalation.\n\t    Basically instructions can be persisted to a form definition file that were not configured to be modified -\n\t    this applies to definitions managed using the form editor module as well as direct file upload using the regular\n\t    file list module. A valid backend user account as well as having system extension form activated are needed\n\t    in order to exploit this vulnerability.</p>\n\t  <p>It has been discovered that the Form Framework (system extension \"form\") is vulnerable to Insecure Deserialization\n\t    when being used with the additional PHP PECL package “yaml”, which is capable of unserializing YAML contents\n\t    to PHP objects. A valid backend user account as well as having PHP setting \"yaml.decode_php\" enabled is needed\n\t    to exploit this vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://typo3.org/security/advisory/typo3-core-sa-2018-001/",
+      "https://typo3.org/security/advisory/typo3-core-sa-2018-002/",
+      "https://typo3.org/security/advisory/typo3-core-sa-2018-003/",
+      "https://typo3.org/security/advisory/typo3-core-sa-2018-004/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-07-12",
+    "entry": "2018-07-17"
+  }
+}

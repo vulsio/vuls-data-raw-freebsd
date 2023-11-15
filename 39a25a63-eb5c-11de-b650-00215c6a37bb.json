@@ -1,0 +1,36 @@
+{
+  "vid": "39a25a63-eb5c-11de-b650-00215c6a37bb",
+  "topic": "php -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.2.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PHP developers reports:</p>\n\t<blockquote cite=\"http://www.php.net/releases/5_2_12.php\">\n\t  <p>This release focuses on improving the stability of the\n\t    PHP 5.2.x branch with over 60 bug fixes, some of which\n\t    are security related. All users of PHP 5.2 are encouraged\n\t    to upgrade to this release.</p>\n\t  <p>Security Enhancements and Fixes in PHP 5.2.12:</p>\n\t  <ul>\n\t    <li>Fixed a safe_mode bypass in tempnam() identified by\n\t      Grzegorz Stachowiak. (CVE-2009-3557, Rasmus)</li>\n\t    <li>Fixed a open_basedir bypass in posix_mkfifo()\n\t      identified by Grzegorz Stachowiak. (CVE-2009-3558, Rasmus)</li>\n\t    <li>Added \"max_file_uploads\" INI directive, which can\n\t      be set to limit the number of file uploads per-request\n\t      to 20 by default, to prevent possible DOS via temporary\n\t      file exhaustion, identified by Bogdan Calin.\n\t      (CVE-2009-4017, Ilia)</li>\n\t    <li>Added protection for $_SESSION from interrupt\n\t      corruption and improved \"session.save_path\" check,\n\t      identified by Stefan Esser. (CVE-2009-4143, Stas)</li>\n\t    <li>Fixed bug #49785 (insufficient input string\n\t       validation of htmlspecialchars()). (CVE-2009-4142,\n\t       Moriyoshi, hello at iwamot dot com)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.php.net/releases/5_2_12.php"
+    ],
+    "cvename": [
+      "CVE-2009-3557",
+      "CVE-2009-3558",
+      "CVE-2009-4017",
+      "CVE-2009-4142",
+      "CVE-2009-4143"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-12-17",
+    "entry": "2009-12-17"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vid": "5f030587-e39a-11de-881e-001aa0166822",
+  "topic": "expat2 -- Parser crash with specially formatted UTF-8 sequences",
+  "affects": [
+    {
+      "name": [
+        "expat2",
+        "linux-f10-expat"
+      ],
+      "range": [
+        {
+          "lt": "2.0.1_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3720\">\n\t  <p>The updatePosition function in lib/xmltok_impl.c in\n\t    libexpat in Expat 2.0.1, as used in Python, PyXML,\n\t    w3c-libwww, and other software, allows context-dependent\n\t    attackers to cause a denial of service (application crash)\n\t    via an XML document with crafted UTF-8 sequences that\n\t    trigger a buffer over-read.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2009-3720"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-01-17",
+    "entry": "2009-12-08"
+  }
+}

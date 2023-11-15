@@ -1,0 +1,36 @@
+{
+  "vid": "603fe36d-ec9d-11d8-b913-000c41e2cdad",
+  "topic": "kdelibs insecure temporary file handling",
+  "affects": [
+    {
+      "name": [
+        "kdelibs"
+      ],
+      "range": [
+        {
+          "le": "3.2.3_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>According to a KDE Security Advisory, KDE may sometimes\n\t  create temporary files without properly checking the ownership\n\t  and type of the target path.\tThis could allow a local\n\t  attacker to cause KDE applications to overwrite arbitrary\n\t  files.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kde.org/info/security/advisory-20040811-1.txt",
+      "http://www.kde.org/info/security/advisory-20040811-2.txt",
+      "ftp://ftp.kde.org/pub/kde/security_patches/post-3.2.3-kdelibs-kstandarddirs.patch",
+      "ftp://ftp.kde.org/pub/kde/security_patches/post-3.2.3-kdelibs-dcopserver.patch"
+    ],
+    "cvename": [
+      "CVE-2004-0689",
+      "CVE-2004-0690"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-11",
+    "entry": "2004-08-12"
+  }
+}

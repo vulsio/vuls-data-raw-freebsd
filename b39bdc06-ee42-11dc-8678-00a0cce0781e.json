@@ -1,0 +1,30 @@
+{
+  "vid": "b39bdc06-ee42-11dc-8678-00a0cce0781e",
+  "topic": "dovecot -- security hole in blocking passdbs",
+  "affects": [
+    {
+      "name": [
+        "dovecot"
+      ],
+      "range": [
+        {
+          "lt": "1.0.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dovecot reports:</p>\n\t<blockquote cite=\"http://dovecot.org/list/dovecot-news/2008-March/000065.html\">\n\t  <p>Security hole in blocking passdbs (MySQL always. PAM, passwd\n\t    and shadow if blocking=yes) where user could specify extra\n\t    fields in the password. The main problem here is when specifying\n\t    \"skip_password_check\" introduced in v1.0.11 for fixing master user\n\t    logins, allowing the user to log in as anyone without a valid\n\t    password.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://dovecot.org/list/dovecot-news/2008-March/000065.html",
+      "http://secunia.com/advisories/29295/"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-03-09",
+    "entry": "2008-03-10"
+  }
+}

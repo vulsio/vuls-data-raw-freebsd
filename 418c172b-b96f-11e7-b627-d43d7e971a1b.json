@@ -1,0 +1,38 @@
+{
+  "vid": "418c172b-b96f-11e7-b627-d43d7e971a1b",
+  "topic": "GitLab -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab"
+      ],
+      "range": [
+        {
+          "ge": "2.8.0",
+          "le": "9.4.6"
+        },
+        {
+          "ge": "9.5.0",
+          "le": "9.5.8"
+        },
+        {
+          "ge": "10.0.0",
+          "le": "10.0.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GitLab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2017/10/17/gitlab-10-dot-0-dot-4-security-release/\">\n    <h1>Cross-Site Scripting (XSS) vulnerability in the Markdown sanitization\n    filter</h1>\n\t  <p>Yasin Soliman via HackerOne reported a Cross-Site Scripting (XSS)\n\t  vulnerability in the GitLab markdown sanitization filter. The sanitization\n\t  filter was not properly stripping invalid characters from URL schemes and\n\t  was therefore vulnerable to persistent XSS attacks anywhere Markdown was\n\t  supported.</p>\n    <h1>Cross-Site Scripting (XSS) vulnerability in search bar</h1>\n    <p>Josh Unger reported a Cross-Site Scripting (XSS) vulnerability in the\n    issue search bar. Usernames were not being properly HTML escaped inside the\n    author filter would could allow arbitrary script execution.</p>\n    <h1>Open redirect in repository git redirects</h1>\n    <p>Eric Rafaloff via HackerOne reported that GitLab was vulnerable to an\n    open redirect vulnerability when redirecting requests for repository names\n    that include the git extension. GitLab was not properly removing dangerous\n    parameters from the params field before redirecting which could allow an\n    attacker to redirect users to arbitrary hosts.</p>\n    <h1>Username changes could leave repositories behind</h1>\n    <p>An internal code review discovered that a bug in the code that moves\n    repositories during a username change could potentially leave behind\n    projects, allowing an attacker who knows the previous username to\n    potentially steal the contents of repositories on instances that are not\n    configured with hashed namespaces.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2017/10/17/gitlab-10-dot-0-dot-4-security-release/"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-10-17",
+    "entry": "2017-10-25"
+  }
+}

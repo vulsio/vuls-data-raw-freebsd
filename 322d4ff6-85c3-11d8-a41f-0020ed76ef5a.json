@@ -1,0 +1,39 @@
+{
+  "vid": "322d4ff6-85c3-11d8-a41f-0020ed76ef5a",
+  "topic": "Midnight Commander buffer overflow during symlink resolution",
+  "affects": [
+    {
+      "name": [
+        "mc"
+      ],
+      "range": [
+        {
+          "lt": "4.6.0_9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Midnight Commander uses a fixed sized stack buffer while\n\t  resolving symbolic links within file archives (tar or cpio).\n\t  If an attacker can cause a user to process a specially\n\t  crafted file archive with Midnight Commander,\n\t  the attacker may be able to obtain the privileges of the\n\t  target user.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2003-1023"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=106399528518704",
+        "msgid": "E1A0LbX-000NPk-00.alienhard-mail-ru@f9.mail.ru"
+      }
+    ],
+    "bid": [
+      "8658"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-09-19",
+    "entry": "2004-04-03",
+    "modified": "2004-04-13"
+  }
+}

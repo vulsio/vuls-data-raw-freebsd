@@ -1,0 +1,39 @@
+{
+  "vid": "8a5770b4-54b5-11db-a5ae-00508d6a62df",
+  "topic": "mambo -- multiple SQL injection vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mambo"
+      ],
+      "range": [
+        {
+          "lt": "4.6.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>James Bercegay reports:</p>\n\t<blockquote cite=\"http://www.gulftech.org/?node=research&amp;article_id=00116-10042006\">\n\t  <p>Mambo is vulnerable to an Authentication Bypass issue that\n\t    is due to an SQL Injection in the login function. The SQL\n\t    Injection is possible because the $passwd variable is only\n\t    sanitized when it is not passed as an argument to the\n\t    function.</p>\n\t</blockquote>\n\t<p>Omid reports:</p>\n\t<blockquote cite=\"http://seclists.org/bugtraq/2006/Aug/0491.html\">\n\t  <p>There are several sql injections in Mambo 4.6 RC2 &amp;\n\t    Joomla 1.0.10 (and maybe other versions):</p>\n\t  <ul>\n\t    <li>When a user edits a content, the \"id\" parameter is not\n\t      checked properly in /components/com_content/content.php,\n\t      which can cause 2 sql injections.</li>\n\t    <li>The \"limit\" parameter in the administration section is\n\t      not checked. This affects many pages of administration\n\t      section</li>\n\t    <li>In the administration section, while editing/creating a\n\t      user, the \"gid\" parameter is not checked properly.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.gulftech.org/?node=research&article_id=00116-10042006",
+      "http://seclists.org/bugtraq/2006/Aug/0491.html",
+      "http://www.frsirt.com/english/advisories/2006/3918",
+      "http://mamboxchange.com/forum/forum.php?forum_id=7704",
+      "http://secunia.com/advisories/21644/",
+      "http://secunia.com/advisories/22221/"
+    ],
+    "bid": [
+      "19719",
+      "19734"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-08-26",
+    "entry": "2006-10-05",
+    "modified": "2011-06-27"
+  }
+}

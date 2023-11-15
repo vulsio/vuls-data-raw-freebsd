@@ -1,0 +1,33 @@
+{
+  "vid": "c6fbd447-59ed-11e0-8d04-0015f2db7bde",
+  "topic": "gdm -- privilege escalation vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gdm"
+      ],
+      "range": [
+        {
+          "lt": "2.30.5_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sebastian Krahmer reports:</p>\n\t<blockquote cite=\"http://mail.gnome.org/archives/distributor-list/2011-March/msg00008.html\">\n\t  <p>It was discovered that the GNOME Display Manager (gdm) cleared the cache\n\t    directory, which is owned by an unprivileged user, with the privileges of the\n\t    root user.  A race condition exists in gdm where a local user could take\n\t    advantage of this by writing to the cache directory between ending the session\n\t    and the signal to clean up the session, which could lead to the execution of\n\t    arbitrary code as the root user.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mail.gnome.org/archives/distributor-list/2011-March/msg00008.html",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=688323"
+    ],
+    "cvename": [
+      "CVE-2011-0727"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-03-28",
+    "entry": "2011-03-29"
+  }
+}

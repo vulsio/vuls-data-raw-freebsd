@@ -1,0 +1,43 @@
+{
+  "vid": "cd409df7-f483-11e5-92ce-002590263bf5",
+  "topic": "bind -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "bind910"
+      ],
+      "range": [
+        {
+          "lt": "9.10.3P4",
+          "ge": "9.10.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind9-devel"
+      ],
+      "range": [
+        {
+          "lt": "9.11.0.a20160309"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01351\">\n\t  <p>A response containing multiple DNS cookies causes servers with\n\t    cookie support enabled to exit with an assertion failure.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/article/AA-01351"
+    ],
+    "cvename": [
+      "CVE-2016-2088"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-03-09",
+    "entry": "2016-03-28"
+  }
+}

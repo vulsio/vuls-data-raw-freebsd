@@ -1,0 +1,38 @@
+{
+  "vid": "976d7bf9-38ea-11ec-b3b0-3065ec8fd3ec",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "95.0.4638.69"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2021/10/stable-channel-update-for-desktop_28.html\">\n\t  <p>This release contains 8 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1259864] High CVE-2021-37997 : Use after free in Sign-In.\n\t      Reported by Wei Yuan of MoyunSec VLab on 2021-10-14</li>\n\t    <li>[1259587] High CVE-2021-37998 : Use after free in Garbage\n\t      Collection. Reported by Cassidy Kim of Amber Security Lab, OPPO\n\t      Mobile Telecommunications Corp. Ltd. on 2021-10-13</li>\n\t    <li>[1251541] High CVE-2021-37999 : Insufficient data validation in\n\t      New Tab Page. Reported by Ashish Arun Dhone on 2021-09-21</li>\n\t    <li>[1249962] High CVE-2021-38000 : Insufficient validation of\n\t      untrusted input in Intents. Reported by Clement Lecigne, Neel\n\t      Mehta, and Maddie Stone of Google Threat Analysis Group on\n\t      2021-09-15</li>\n\t    <li>[1260577] High CVE-2021-38001 : Type Confusion in V8. Reported\n\t      by @s0rrymybad of Kunlun Lab via Tianfu Cup on 2021-10-16</li>\n\t    <li>[1260940] High CVE-2021-38002 : Use after free in Web Transport.\n\t      Reported by @__R0ng of 360 Alpha Lab, ? via Tianfu Cup on\n\t      2021-10-16</li>\n\t    <li>[1263462] High CVE-2021-38003 : Inappropriate implementation in\n\t      V8. Reported by Clément Lecigne from Google TAG and Samuel Gross\n\t      from Google Project Zero on 2021-10-26</li>\n\t  </ul>\n\t  <p>Google is aware that exploits for CVE-2021-38000 and\n\t    CVE-2021-38003 exist in the wild.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2021/10/stable-channel-update-for-desktop_28.html"
+    ],
+    "cvename": [
+      "CVE-2021-37997",
+      "CVE-2021-37998",
+      "CVE-2021-37999",
+      "CVE-2021-38000",
+      "CVE-2021-38001",
+      "CVE-2021-38002",
+      "CVE-2021-38003"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-10-28",
+    "entry": "2021-10-29"
+  }
+}

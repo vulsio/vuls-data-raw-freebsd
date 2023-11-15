@@ -1,0 +1,56 @@
+{
+  "vid": "bd760627-3493-11e0-8103-00215c6a37bb",
+  "topic": "django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py23-django",
+        "py24-django",
+        "py25-django",
+        "py26-django",
+        "py27-django",
+        "py30-django",
+        "py31-django"
+      ],
+      "range": [
+        {
+          "lt": "1.2.5",
+          "gt": "1.2"
+        },
+        {
+          "lt": "1.1.4",
+          "gt": "1.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py23-django-devel",
+        "py24-django-devel",
+        "py25-django-devel",
+        "py26-django-devel",
+        "py27-django-devel",
+        "py30-django-devel",
+        "py31-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "15470,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django project reports:</p>\n\t<blockquote cite=\"http://www.djangoproject.com/weblog/2011/feb/08/security/\">\n\t  <p>Today the Django team is issuing multiple releases --\n\t    Django 1.2.5 and Django 1.1.4 -- to remedy three security\n\t    issues reported to us. All users of affected versions of\n\t    Django are urged to upgrade immediately.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.djangoproject.com/weblog/2011/feb/08/security/"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-02-08",
+    "entry": "2011-02-09"
+  }
+}

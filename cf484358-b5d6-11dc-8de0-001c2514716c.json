@@ -1,0 +1,29 @@
+{
+  "vid": "cf484358-b5d6-11dc-8de0-001c2514716c",
+  "topic": "dovecot -- Specific LDAP + auth cache configuration may mix up user logins",
+  "affects": [
+    {
+      "name": [
+        "dovecot"
+      ],
+      "range": [
+        {
+          "lt": "1.0.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dovecot reports:</p>\n\t<blockquote cite=\"http://www.dovecot.org/list/dovecot-news/2007-December/000057.html\">\n\t  <p>If two users with the same password and same pass_filter\n\t    variables log in within auth_cache_ttl seconds (1h by default),\n\t    the second user may get logged in with the first user's cached\n\t    pass_attrs. For example if pass_attrs contained the user's\n\t    home/mail directory, this would mean that the second user will\n\t    be accessing the first user's mails.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.dovecot.org/list/dovecot-news/2007-December/000057.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-12-21",
+    "entry": "2007-12-29"
+  }
+}

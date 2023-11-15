@@ -1,0 +1,33 @@
+{
+  "vid": "a7975581-ee26-11e1-8bd8-0022156e8794",
+  "topic": "inn -- plaintext command injection into encrypted channel",
+  "affects": [
+    {
+      "name": [
+        "inn"
+      ],
+      "range": [
+        {
+          "lt": "2.5.2_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>INN developers report:</p>\n\t<blockquote cite=\"https://www.isc.org/software/inn/2.5.3article\">\n\t  <p>Fixed a possible plaintext command injection during the\n\t  negotiation of a TLS layer.  The vulnerability detailed\n\t  in CVE-2011-0411 affects the STARTTLS and AUTHINFO SASL\n\t  commands.  nnrpd now resets its read buffer upon\n\t  a successful negotiation of a TLS layer.  It prevents\n\t  malicious commands, sent unencrypted, from being executed\n\t  in the new encrypted state of the session.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.isc.org/software/inn/2.5.3article"
+    ],
+    "cvename": [
+      "CVE-2012-3523",
+      "CVE-2011-0411"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-14",
+    "entry": "2012-08-25"
+  }
+}

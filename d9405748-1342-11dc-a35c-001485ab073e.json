@@ -1,0 +1,45 @@
+{
+  "vid": "d9405748-1342-11dc-a35c-001485ab073e",
+  "topic": "mod_jk -- information disclosure",
+  "affects": [
+    {
+      "name": [
+        "mod_jk"
+      ],
+      "range": [
+        {
+          "lt": "1.2.23,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_jk-ap2"
+      ],
+      "range": [
+        {
+          "lt": "1.2.23"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Kazu Nambo reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-jk.html\">\n\t  <p>URL decoding the the Apache webserver prior to\n\t    decoding in the Tomcat server could pypass access\n\t    control rules and give access to pages on a different\n\t    AJP by sending a crafted URL.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/25383/",
+      "http://tomcat.apache.org/connectors-doc/news/20070301.html#20070518.1",
+      "http://tomcat.apache.org/security-jk.html"
+    ],
+    "cvename": [
+      "CVE-2007-1860"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-05-18",
+    "entry": "2007-06-05",
+    "modified": "2007-10-31"
+  }
+}

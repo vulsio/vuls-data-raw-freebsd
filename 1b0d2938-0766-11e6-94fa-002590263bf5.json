@@ -1,0 +1,33 @@
+{
+  "vid": "1b0d2938-0766-11e6-94fa-002590263bf5",
+  "topic": "libtasn1 -- denial of service parsing malicious DER certificates",
+  "affects": [
+    {
+      "name": [
+        "libtasn1"
+      ],
+      "range": [
+        {
+          "lt": "4.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GNU Libtasn1 NEWS reports:</p>\n\t<blockquote cite=\"http://git.savannah.gnu.org/gitweb/?p=libtasn1.git;a=blob_plain;f=NEWS;hb=e9bcdc86b920d72c9cffc2570d14eea2f6365b37\">\n\t  <p>Fixes to avoid an infinite recursion when decoding without the\n\t    ASN1_DECODE_FLAG_STRICT_DER flag. Reported by Pascal Cuoq.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2016/04/13/3",
+      "http://git.savannah.gnu.org/gitweb/?p=libtasn1.git;a=blob_plain;f=NEWS;hb=e9bcdc86b920d72c9cffc2570d14eea2f6365b37"
+    ],
+    "cvename": [
+      "CVE-2016-4008"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-04-11",
+    "entry": "2016-04-21"
+  }
+}

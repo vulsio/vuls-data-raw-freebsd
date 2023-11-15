@@ -1,0 +1,32 @@
+{
+  "vid": "bc20510f-4dd4-11dd-93e7-0211d880e350",
+  "topic": "poppler -- uninitialized pointer",
+  "affects": [
+    {
+      "name": [
+        "poppler"
+      ],
+      "range": [
+        {
+          "lt": "0.8.4_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Felipe Andres Manzano reports:</p>\n\t<blockquote cite=\"http://milw0rm.com/exploits/6032\">\n\t  <p>The libpoppler pdf rendering library, can free\n\t    uninitialized pointers, leading to arbitrary code\n\t    execution. This vulnerability results from memory\n\t    management bugs in the Page class constructor/destructor.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://milw0rm.com/exploits/6032"
+    ],
+    "cvename": [
+      "CVE-2008-2950"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-07-07",
+    "entry": "2008-07-09"
+  }
+}

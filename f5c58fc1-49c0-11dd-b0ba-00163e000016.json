@@ -1,0 +1,29 @@
+{
+  "vid": "f5c58fc1-49c0-11dd-b0ba-00163e000016",
+  "topic": "py-pylons -- Path traversal bug",
+  "affects": [
+    {
+      "name": [
+        "py24-pylons"
+      ],
+      "range": [
+        {
+          "lt": "0.9.6.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Pylons team reports:</p>\n\t<blockquote cite=\"http://wiki.pylonshq.com/display/pylonsdocs/0.9.6.2\">\n\t  <p>The error.py controller uses paste.fileapp to serve the static\n\t    resources to the browser. The default error.py controller uses\n\t    os.path.join to combine the id from Routes with the media path.\n\t    Routes prior to 1.8 double unquoted the PATH_INFO, resulting in\n\t    FileApp returning files from the filesystem that can be outside\n\t    of the intended media path directory.</p>\n\t  <p>An attacker can craft URL's which utilize the double escaping\n\t    to pass in a name to the error.py controller which contains a\n\t    leading slash thus escaping the intended media path and serving\n\t    files from any location on the filesystem that the Pylons\n\t    application has access to.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://wiki.pylonshq.com/display/pylonsdocs/0.9.6.2"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-05-28",
+    "entry": "2008-07-04"
+  }
+}

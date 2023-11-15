@@ -1,0 +1,82 @@
+{
+  "vid": "0c367e98-0415-11ed-a53b-6c3be5272acd",
+  "topic": "Grafana -- Stored XSS",
+  "affects": [
+    {
+      "name": [
+        "grafana"
+      ],
+      "range": [
+        {
+          "lt": "8.3.10",
+          "ge": "8.3.0"
+        },
+        {
+          "lt": "8.4.10",
+          "ge": "8.4.0"
+        },
+        {
+          "lt": "8.5.9",
+          "ge": "8.5.0"
+        },
+        {
+          "lt": "9.0.3",
+          "ge": "9.0.0"
+        },
+        {
+          "lt": "9.2.7",
+          "ge": "9.1.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana8"
+      ],
+      "range": [
+        {
+          "lt": "8.3.10",
+          "ge": "8.3.0"
+        },
+        {
+          "lt": "8.4.10",
+          "ge": "8.4.0"
+        },
+        {
+          "lt": "8.5.9",
+          "ge": "8.5.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana9"
+      ],
+      "range": [
+        {
+          "lt": "9.0.3"
+        },
+        {
+          "lt": "9.2.7",
+          "ge": "9.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/07/14/grafana-v9-0-3-8-5-9-8-4-10-and-8-3-10-released-with-high-severity-security-fix/\">\n\t  <p>An attacker can exploit this vulnerability to escalate privilege from editor to admin by tricking an authenticated admin to click on a link. (Note: Grafana Alerting is activated by default in Grafana 9.0.)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/grafana/grafana/security/advisories/GHSA-vw7q-p2qg-4m5f"
+    ],
+    "cvename": [
+      "CVE-2022-31097"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-06-19",
+    "entry": "2022-07-15"
+  }
+}

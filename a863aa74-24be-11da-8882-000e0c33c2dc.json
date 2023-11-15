@@ -1,0 +1,53 @@
+{
+  "vid": "a863aa74-24be-11da-8882-000e0c33c2dc",
+  "topic": "X11 server -- pixmap allocation vulnerability",
+  "affects": [
+    {
+      "name": [
+        "XFree86-Server"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xorg-server"
+      ],
+      "range": [
+        {
+          "lt": "6.8.2_5"
+        },
+        {
+          "lt": "6.8.99.12_1",
+          "gt": "6.8.99"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Allocating large pixmaps by a client can trigger an integer\n\t  overflow in the X server, potentially leading to execution of\n\t  arbitrary code with elevated (root) privileges.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=166856",
+      "https://bugs.freedesktop.org/show_bug.cgi?id=594"
+    ],
+    "cvename": [
+      "CVE-2005-2495"
+    ],
+    "bid": [
+      "14807"
+    ],
+    "cert_vu": [
+      "102441"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-09-12",
+    "entry": "2005-09-15"
+  }
+}

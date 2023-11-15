@@ -1,0 +1,32 @@
+{
+  "vid": "cf91c1e4-2b6d-11de-931b-00e0815b8da8",
+  "topic": "ejabberd -- cross-site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ejabberd"
+      ],
+      "range": [
+        {
+          "lt": "2.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/34133\">\n\t  <p>The ejabberd application is prone to a cross-site scripting\n\t    vulnerability.</p>\n\t  <p>An attacker may leverage this issue to execute arbitrary script code\n\t    in the browser of an unsuspecting user in the context of the affected\n\t    site and to steal cookie-based authentication credentials.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2009-0934"
+    ],
+    "bid": [
+      "34133"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-03-16",
+    "entry": "2009-04-17"
+  }
+}

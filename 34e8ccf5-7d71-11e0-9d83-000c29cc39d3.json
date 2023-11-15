@@ -1,0 +1,30 @@
+{
+  "vid": "34e8ccf5-7d71-11e0-9d83-000c29cc39d3",
+  "topic": "Zend Framework -- potential SQL injection when using PDO_MySql",
+  "affects": [
+    {
+      "name": [
+        "ZendFramework"
+      ],
+      "range": [
+        {
+          "lt": "1.11.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Zend Framework team reports:</p>\n\t<blockquote cite=\"http://framework.zend.com/security/advisory/ZF2011-02\">\n\t  <p>Developers using non-ASCII-compatible encodings in conjunction\n\t    with the MySQL PDO driver of PHP may be vulnerable to SQL\n\t    injection attacks.  Developers using ASCII-compatible encodings\n\t    like UTF8 or latin1 are not affected by this PHP issue.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://framework.zend.com/security/advisory/ZF2011-02",
+      "http://zend-framework-community.634137.n4.nabble.com/Zend-Framework-1-11-6-and-1-10-9-released-td3503741.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-05-06",
+    "entry": "2011-05-13"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "vid": "db4b2f27-252a-11eb-865c-00155d646400",
+  "topic": "go -- math/big: panic during recursive division of very large numbers; cmd/go: arbitrary code execution at build time through cgo",
+  "affects": [
+    {
+      "name": [
+        "go"
+      ],
+      "range": [
+        {
+          "lt": "1.15.5,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/42552\">\n\t  <p>A number of math/big.Int methods (Div, Exp, DivMod, Quo, Rem,\n\t    QuoRem, Mod, ModInverse, ModSqrt, Jacobi, and GCD) can panic\n\t    when provided crafted large inputs. For the panic to happen,\n\t    the divisor or modulo argument must be larger than 3168 bits\n\t    (on 32-bit architectures) or 6336 bits (on 64-bit architectures).\n\t    Multiple math/big.Rat methods are similarly affected.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/42556\">\n\t  <p>The go command may execute arbitrary code at build time when\n\t    cgo is in use. This may occur when running go get on a malicious\n\t    package, or any other command that builds untrusted code.  This\n\t    can be caused by a malicious gcc flags specified via a #cgo\n\t    directive.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/42559\">\n\t  <p>The go command may execute arbitrary code at build time when\n\t    cgo is in use. This may occur when running go get on a malicious\n\t    package, or any other command that builds untrusted code.  This\n\t    can be caused by malicious unquoted symbol names.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/golang/go/issues/42552",
+      "https://github.com/golang/go/issues/42556",
+      "https://github.com/golang/go/issues/42559"
+    ],
+    "cvename": [
+      "CVE-2020-28362",
+      "CVE-2020-28367",
+      "CVE-2020-28366"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-11-09",
+    "entry": "2020-11-12"
+  }
+}

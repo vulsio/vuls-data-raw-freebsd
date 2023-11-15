@@ -1,0 +1,37 @@
+{
+  "vid": "a763a0e7-c3d9-11e5-b5fe-002590263bf5",
+  "topic": "privoxy -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "privoxy"
+      ],
+      "range": [
+        {
+          "lt": "3.0.24"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Privoxy Developers reports:</p>\n\t<blockquote cite=\"http://www.privoxy.org/3.0.24/user-manual/whatsnew.html\">\n\t  <p>Prevent invalid reads in case of corrupt chunk-encoded content.\n\t    CVE-2016-1982. Bug discovered with afl-fuzz and AddressSanitizer.\n\t    </p>\n\t  <p>Remove empty Host headers in client requests. Previously they\n\t    would result in invalid reads. CVE-2016-1983. Bug discovered with\n\t    afl-fuzz and AddressSanitizer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.privoxy.org/3.0.24/user-manual/whatsnew.html",
+      "http://www.openwall.com/lists/oss-security/2016/01/21/4"
+    ],
+    "cvename": [
+      "CVE-2016-1982",
+      "CVE-2016-1983"
+    ],
+    "freebsd_pr": [
+      "ports/206504"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-22",
+    "entry": "2016-01-26"
+  }
+}

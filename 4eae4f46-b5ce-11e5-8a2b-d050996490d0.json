@@ -1,0 +1,67 @@
+{
+  "vid": "4eae4f46-b5ce-11e5-8a2b-d050996490d0",
+  "topic": "ntp -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ntp"
+      ],
+      "range": [
+        {
+          "lt": "4.2.8p5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ntp-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.3.78"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.2_9",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_26",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_33",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Network Time Foundation reports:</p>\n\t<blockquote cite=\"http://support.ntp.org/bin/view/Main/SecurityNotice#January_2016_NTP_4_2_8p5_Securit\">\n\t  <p>NTF's NTP Project has been notified of the following\n\t    1 medium-severity vulnerability that is fixed in\n\t    ntp-4.2.8p5, released on Thursday, 7 January 2016:</p>\n\t  <p>NtpBug2956: Small-step/Big-step CVE-2015-5300</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.cs.bu.edu/~goldbe/NTPattack.html",
+      "http://support.ntp.org/bin/view/Main/NtpBug2956",
+      "http://support.ntp.org/bin/view/Main/SecurityNotice#January_2016_NTP_4_2_8p5_Securit"
+    ],
+    "cvename": [
+      "CVE-2015-5300"
+    ],
+    "freebsd_sa": [
+      "SA-16:02.ntp"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-21",
+    "entry": "2016-01-08",
+    "modified": "2016-08-09"
+  }
+}

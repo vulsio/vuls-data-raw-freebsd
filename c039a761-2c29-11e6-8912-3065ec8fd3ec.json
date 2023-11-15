@@ -1,0 +1,42 @@
+{
+  "vid": "c039a761-2c29-11e6-8912-3065ec8fd3ec",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "51.0.2704.79"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.nl/2016/06/stable-channel-update.html\">\n\t  <p>15 security fixes in this release, including:</p>\n\t  <ul>\n\t    <li>601073] High CVE-2016-1696: Cross-origin bypass in Extension\n\t      bindings. Credit to anonymous.</li>\n\t    <li>[613266] High CVE-2016-1697: Cross-origin bypass in Blink.\n\t      Credit to Mariusz Mlynski.</li>\n\t    <li>[603725] Medium CVE-2016-1698: Information leak in Extension\n\t      bindings. Credit to Rob Wu.</li>\n\t    <li>[607939] Medium CVE-2016-1699: Parameter sanitization failure\n\t      in DevTools. Credit to Gregory Panakkal.</li>\n\t    <li>[608104] Medium CVE-2016-1700: Use-after-free in Extensions.\n\t      Credit to Rob Wu.</li>\n\t    <li>[608101] Medium CVE-2016-1701: Use-after-free in Autofill.\n\t      Credit to Rob Wu.</li>\n\t    <li>[609260] Medium CVE-2016-1702: Out-of-bounds read in Skia.\n\t      Credit to cloudfuzzer.</li>\n\t    <li>[616539] CVE-2016-1703: Various fixes from internal audits,\n\t      fuzzing and other initiatives.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://googlechromereleases.blogspot.nl/2016/06/stable-channel-update.html"
+    ],
+    "cvename": [
+      "CVE-2016-1695",
+      "CVE-2016-1696",
+      "CVE-2016-1697",
+      "CVE-2016-1698",
+      "CVE-2016-1699",
+      "CVE-2016-1700",
+      "CVE-2016-1701",
+      "CVE-2016-1702",
+      "CVE-2016-1703"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-06-01",
+    "entry": "2016-06-06"
+  }
+}

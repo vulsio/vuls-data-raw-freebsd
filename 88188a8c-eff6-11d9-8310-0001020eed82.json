@@ -1,0 +1,37 @@
+{
+  "vid": "88188a8c-eff6-11d9-8310-0001020eed82",
+  "topic": "phppgadmin -- \"formLanguage\" local file inclusion vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phppgadmin"
+      ],
+      "range": [
+        {
+          "lt": "3.5.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15941/\">\n\t  <p>A vulnerability has been reported in phpPgAdmin, which\n\t    can be exploited by malicious people to disclose sensitive\n\t    information.</p>\n\t  <p>Input passed to the \"formLanguage\" parameter in\n\t    \"index.php\" isn't properly verified, before it is used to\n\t    include files. This can be exploited to include arbitrary\n\t    files from local resources.</p>\n\t  <p>Successful exploitation requires that \"magic_quotes_gpc\"\n\t    is disabled.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/15941/",
+      "http://sourceforge.net/project/shownotes.php?release_id=342261"
+    ],
+    "cvename": [
+      "CVE-2005-2256"
+    ],
+    "bid": [
+      "14142"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-05",
+    "entry": "2005-07-08",
+    "modified": "2005-07-21"
+  }
+}

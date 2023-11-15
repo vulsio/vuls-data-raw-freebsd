@@ -1,0 +1,33 @@
+{
+  "vid": "9e2d0dcf-9926-11e8-a92d-0050562a4d7b",
+  "topic": "py-cryptography -- tag forgery vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py27-cryptography",
+        "py34-cryptography",
+        "py35-cryptography",
+        "py36-cryptography",
+        "py37-cryptography"
+      ],
+      "range": [
+        {
+          "lt": "2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Python Cryptographic Authority (PyCA) project reports:</p>\n\t<blockquote cite=\"https://cryptography.io/en/latest/changelog/#v2-3\">\n\t  <p>finalize_with_tag() allowed tag truncation by default which can allow tag forgery in some cases. The method now enforces the min_tag_length provided to the GCM constructor</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2018-10903"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-07-17",
+    "entry": "2018-08-06"
+  }
+}

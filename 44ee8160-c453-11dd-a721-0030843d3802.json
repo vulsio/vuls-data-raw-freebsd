@@ -1,0 +1,33 @@
+{
+  "vid": "44ee8160-c453-11dd-a721-0030843d3802",
+  "topic": "mgetty+sendfax -- symlink attack via insecure temporary files",
+  "affects": [
+    {
+      "name": [
+        "mgetty+sendfax"
+      ],
+      "range": [
+        {
+          "lt": "1.1.35_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian reports:</p>\n\t<blockquote cite=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=496403\">\n\t  <p>Faxspool in mgetty 1.1.36 allows local users to overwrite\n\t    arbitrary files via a symlink attack on a /tmp/faxsp.####\n\t    temporary file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=496403",
+      "https://bugs.gentoo.org/show_bug.cgi?id=235806"
+    ],
+    "cvename": [
+      "CVE-2008-4936"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-08-24",
+    "entry": "2008-12-07"
+  }
+}

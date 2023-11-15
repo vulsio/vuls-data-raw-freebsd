@@ -1,0 +1,36 @@
+{
+  "vid": "58a3c266-db01-11dd-ae30-001cc0377035",
+  "topic": "php5-gd -- uninitialized memory information disclosure vulnerability",
+  "affects": [
+    {
+      "name": [
+        "php5-gd"
+      ],
+      "range": [
+        {
+          "le": "5.2.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>According to CVE-2008-5498 entry:</p>\n\t<blockquote cite=\"http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5498\">\n\t  <p>Array index error in the \"imageRotate\" function in PHP 5.2.8 and\n\t    earlier allows context-dependent attackers to read the contents\n\t    of arbitrary memory locations via a crafted value of the third\n\t    argument (aka the \"bgd_color\" or \"clrBack\" argument) for an indexed\n\t    image.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securiteam.com/unixfocus/6G00Y0ANFU.html"
+    ],
+    "cvename": [
+      "CVE-2008-5498"
+    ],
+    "bid": [
+      "33002"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-24",
+    "entry": "2009-01-05",
+    "modified": "2009-02-04"
+  }
+}

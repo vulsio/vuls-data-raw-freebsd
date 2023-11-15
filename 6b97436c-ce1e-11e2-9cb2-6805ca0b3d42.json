@@ -1,0 +1,33 @@
+{
+  "vid": "6b97436c-ce1e-11e2-9cb2-6805ca0b3d42",
+  "topic": "phpMyAdmin -- XSS due to unescaped HTML output in Create View page",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "4.0.3",
+          "ge": "4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2013-6.php\">\n\t  <p>When creating a view with a crafted name and an incorrect\n\t  CREATE statement, it is possible to trigger an XSS.</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t  logged in to phpMyAdmin, as the usual token protection\n\t  prevents non-logged-in users from accessing the required\n\t  form.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2013-6.php"
+    ],
+    "cvename": [
+      "CVE-2013-3742"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-06-05",
+    "entry": "2013-06-05"
+  }
+}

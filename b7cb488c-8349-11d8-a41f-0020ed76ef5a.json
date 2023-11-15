@@ -1,0 +1,38 @@
+{
+  "vid": "b7cb488c-8349-11d8-a41f-0020ed76ef5a",
+  "topic": "isakmpd payload handling denial-of-service vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "isakmpd"
+      ],
+      "range": [
+        {
+          "le": "20030903"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Numerous errors in isakmpd's input packet validation lead to\n\t  denial-of-service vulnerabilities.  From the Rapid7 advisory:</p>\n\t<blockquote cite=\"http://www.rapid7.com/advisories/R7-0018.html\">\n\t  <p>The ISAKMP packet processing functions in OpenBSD's\n\t    isakmpd daemon contain multiple payload handling flaws\n\t    that allow a remote attacker to launch a denial of\n\t    service attack against the daemon.</p>\n\t  <p>Carefully crafted ISAKMP packets will cause the isakmpd\n\t    daemon to attempt out-of-bounds reads, exhaust available\n\t    memory, or loop endlessly (consuming 100% of the CPU).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.rapid7.com/advisories/R7-0018.html",
+      "http://www.openbsd.org/errata34.html"
+    ],
+    "cvename": [
+      "CVE-2004-0218",
+      "CVE-2004-0219",
+      "CVE-2004-0220",
+      "CVE-2004-0221",
+      "CVE-2004-0222"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-17",
+    "entry": "2004-03-31",
+    "modified": "2004-09-14"
+  }
+}

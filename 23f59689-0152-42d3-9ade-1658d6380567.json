@@ -1,0 +1,104 @@
+{
+  "vid": "23f59689-0152-42d3-9ade-1658d6380567",
+  "topic": "mozilla -- use-after-free in compositor",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "59.0.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "waterfox"
+      ],
+      "range": [
+        {
+          "lt": "56.0.4.36_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.49.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "52.7.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "52.7.3,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "52.7.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "52.7.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "52.7.0_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-10/\">\n\t  <h1>CVE-2018-5148: Use-after-free in compositor</h1>\n\t  <p>A use-after-free vulnerability can occur in the\n\t    compositor during certain graphics operations when a raw\n\t    pointer is used instead of a reference counted one. This\n\t    results in a potentially exploitable crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2018-10/"
+    ],
+    "cvename": [
+      "CVE-2018-5148"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-26",
+    "entry": "2018-03-27",
+    "modified": "2018-03-31"
+  }
+}

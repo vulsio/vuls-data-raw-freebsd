@@ -1,0 +1,30 @@
+{
+  "vid": "63eb2b11-e802-11e7-a58c-6805ca0b3d42",
+  "topic": "phpMyAdmin -- XSRF/CSRF vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "4.7.7",
+          "ge": "4.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2017-9/\">\n\t  <h3>Description</h3>\n\t  <p>By deceiving a user to click on a crafted URL, it is\n\t    possible to perform harmful database operations such as\n\t    deleting records, dropping/truncating tables etc.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be critical.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.phpmyadmin.net/security/PMASA-2017-9/"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-12-23",
+    "entry": "2017-12-23"
+  }
+}

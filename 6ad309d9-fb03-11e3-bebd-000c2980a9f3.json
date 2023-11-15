@@ -1,0 +1,54 @@
+{
+  "vid": "6ad309d9-fb03-11e3-bebd-000c2980a9f3",
+  "topic": "samba -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "samba36"
+      ],
+      "range": [
+        {
+          "lt": "3.6.24"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba4"
+      ],
+      "range": [
+        {
+          "lt": "4.0.19"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba41"
+      ],
+      "range": [
+        {
+          "lt": "4.1.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The samba project reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/history/\">\n\t  <p>A malformed packet can cause the nmbd server to loop the CPU and\n\t    prevent any further NetBIOS name service.</p>\n\t  <p>Valid unicode path names stored on disk can cause smbd to\n\t    crash if an authenticated client attempts to read them\n\t    using a non-unicode request.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.samba.org/samba/security/CVE-2014-0244",
+      "https://www.samba.org/samba/security/CVE-2014-3493"
+    ],
+    "cvename": [
+      "CVE-2014-0244",
+      "CVE-2014-3493"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-06-23",
+    "entry": "2014-06-23"
+  }
+}

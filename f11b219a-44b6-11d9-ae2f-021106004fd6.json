@@ -1,0 +1,50 @@
+{
+  "vid": "f11b219a-44b6-11d9-ae2f-021106004fd6",
+  "topic": "rssh & scponly -- arbitrary command execution",
+  "affects": [
+    {
+      "name": [
+        "rssh"
+      ],
+      "range": [
+        {
+          "le": "2.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "scponly"
+      ],
+      "range": [
+        {
+          "lt": "4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jason Wies identified both rssh &amp; scponly have a vulnerability\n\t  that allows arbitrary command execution.  He reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110202047507273\">\n\t  <p>The problem is compounded when you recognize that the main use of\n\t    rssh and scponly is to allow file transfers, which in turn allows a\n\t    malicious user to transfer and execute entire custom scripts on the\n\t    remote machine.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "freebsd_pr": [
+      "ports/74633"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110202047507273",
+        "msgid": "20041202135143.GA7105@xc.net"
+      }
+    ],
+    "bid": [
+      "11791",
+      "11792"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-28",
+    "entry": "2004-12-02",
+    "modified": "2004-12-12"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "vid": "25e0593d-13c0-11e5-9afb-3c970e169bc2",
+  "topic": "tomcat -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "tomcat"
+      ],
+      "range": [
+        {
+          "lt": "6.0.44"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat7"
+      ],
+      "range": [
+        {
+          "lt": "7.0.55"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat8"
+      ],
+      "range": [
+        {
+          "lt": "8.0.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "hadoop2"
+      ],
+      "range": [
+        {
+          "le": "2.6.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "oozie"
+      ],
+      "range": [
+        {
+          "le": "4.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Apache Software Foundation reports:</p>\n\t<blockquote cite=\"https://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.44\">\n\t  <p>Low: Denial of Service CVE-2014-0230</p>\n\t  <p>When a response for a request with a request body is\n\t    returned to the user agent before the request body is\n\t    fully read, by default Tomcat swallows the remaining\n\t    request body so that the next request on the connection\n\t    may be processed. There was no limit to the size of\n\t    request body that Tomcat would swallow. This permitted\n\t    a limited Denial of Service as Tomcat would never close\n\t    the connection and a processing thread would remain\n\t    allocated to the connection.</p>\n\t  <p>Moderate: Security Manager bypass CVE-2014-7810</p>\n\t  <p>Malicious web applications could use expression\n\t    language to bypass the protections of a Security\n\t    Manager as expressions were evaluated within a\n\t    privileged code section.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.44"
+    ],
+    "cvename": [
+      "CVE-2014-0230",
+      "CVE-2014-7810"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-05-12",
+    "entry": "2015-06-16",
+    "modified": "2017-03-18"
+  }
+}

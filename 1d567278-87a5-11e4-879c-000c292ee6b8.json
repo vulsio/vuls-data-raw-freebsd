@@ -1,0 +1,33 @@
+{
+  "vid": "1d567278-87a5-11e4-879c-000c292ee6b8",
+  "topic": "git -- Arbitrary command execution on case-insensitive filesystems",
+  "affects": [
+    {
+      "name": [
+        "git"
+      ],
+      "range": [
+        {
+          "lt": "2.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Git Project reports:</p>\n\t<blockquote cite=\"http://article.gmane.org/gmane.linux.kernel/1853266\">\n\t  <p>When using a case-insensitive filesystem an attacker can\n\t    craft a malicious Git tree that will cause Git to overwrite\n\t    its own .git/config file when cloning or checking out a\n\t    repository, leading to arbitrary command execution in the\n\t    client machine.  If you are a hosting service whose users\n\t    may fetch from your service to Windows or Mac OS X machines,\n\t    you are strongly encouraged to update to protect such users\n\t    who use existing versions of Git.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/blog/1938-git-client-vulnerability-announced",
+      "http://article.gmane.org/gmane.linux.kernel/1853266"
+    ],
+    "cvename": [
+      "CVE-2014-9390"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-12-19",
+    "entry": "2014-12-19"
+  }
+}

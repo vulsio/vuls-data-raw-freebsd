@@ -1,0 +1,47 @@
+{
+  "vid": "18dc48fe-ca42-11df-aade-0050568f000c",
+  "topic": "FreeBSD -- Integer overflow in bzip2 decompression",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.4_11",
+          "ge": "6.4"
+        },
+        {
+          "lt": "7.1_14",
+          "ge": "7.1"
+        },
+        {
+          "lt": "7.3_3",
+          "ge": "7.3"
+        },
+        {
+          "lt": "8.0_5",
+          "ge": "8.0"
+        },
+        {
+          "lt": "8.1_1",
+          "ge": "8.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When decompressing data, the run-length encoded values are not\n\t  adequately sanity-checked, allowing for an integer overflow.</p>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-10:08.bzip2"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-09-20",
+    "entry": "2010-10-24",
+    "modified": "2016-08-09"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "vid": "cf133acc-82e7-4755-a66a-5ddf90dacbe6",
+  "topic": "graphite2 -- out-of-bounds write with malicious font",
+  "affects": [
+    {
+      "name": [
+        "graphite2"
+      ],
+      "range": [
+        {
+          "lt": "1.3.9_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c7-graphite2"
+      ],
+      "range": [
+        {
+          "lt": "1.3.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2017-10/\">\n\t  <p>An out-of-bounds write in the Graphite 2 library\n\t    triggered with a maliciously crafted Graphite font. This\n\t    results in a potentially exploitable crash. This issue was\n\t    fixed in the Graphite 2 library as well as Mozilla\n\t    products.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/silnrsi/graphite/commit/1ce331d5548b"
+    ],
+    "cvename": [
+      "CVE-2017-5436"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-04-19",
+    "entry": "2017-04-19",
+    "modified": "2017-04-20"
+  }
+}

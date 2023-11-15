@@ -1,0 +1,45 @@
+{
+  "vid": "8838abf0-bc47-11ec-b516-0897988a1c07",
+  "topic": "Asterisk -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.25.2",
+          "gt": "16.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "18.11.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories/\">\n\t  <p>AST-2022-001 - When using STIR/SHAKEN, its possible\n\t  to download files that are not certificates. These files\n\t  could be much larger than what you would expect to\n\t  download.</p>\n\t  <p>AST-2022-002 - When using STIR/SHAKEN, its possible\n\t  to send arbitrary requests like GET to interfaces such\n\t  as localhost using the Identity header.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2022-001.html",
+      "https://downloads.asterisk.org/pub/security/AST-2022-002.html"
+    ],
+    "cvename": [
+      "CVE-2022-26498",
+      "CVE-2022-26499"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-04-14",
+    "entry": "2022-04-14"
+  }
+}

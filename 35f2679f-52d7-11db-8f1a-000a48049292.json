@@ -1,0 +1,38 @@
+{
+  "vid": "35f2679f-52d7-11db-8f1a-000a48049292",
+  "topic": "postnuke -- admin section SQL injection",
+  "affects": [
+    {
+      "name": [
+        "postnuke"
+      ],
+      "range": [
+        {
+          "lt": "0.763"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISS X-Force reports:</p>\n\t<blockquote cite=\"http://xforce.iss.net/xforce/xfdb/29271\">\n\t  <p>PostNuke is vulnerable to SQL injection. A remote attacker\n\t    could send specially-crafted SQL statements to the admin\n\t    section using the hits parameter, which could allow the\n\t    attacker to view, add, modify or delete information in the\n\t    back-end database.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xforce.iss.net/xforce/xfdb/29271",
+      "http://www.securityfocus.com/archive/1/archive/1/447361/100/0/threaded",
+      "http://secunia.com/advisories/22197/"
+    ],
+    "cvename": [
+      "CVE-2006-5121"
+    ],
+    "bid": [
+      "20317"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-09-29",
+    "entry": "2006-10-03",
+    "modified": "2007-11-17"
+  }
+}

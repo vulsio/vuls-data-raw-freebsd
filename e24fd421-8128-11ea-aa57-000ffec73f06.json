@@ -1,0 +1,29 @@
+{
+  "vid": "e24fd421-8128-11ea-aa57-000ffec73f06",
+  "topic": "drupal -- Drupal Core - Moderately critical - Third-party library",
+  "affects": [
+    {
+      "name": [
+        "drupal8"
+      ],
+      "range": [
+        {
+          "lt": "8.8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/sa-core-2020-001\">\n\t  <p>The Drupal project uses the third-party library CKEditor, which has\n\t    released a security improvement that is needed to protect some\n\t    Drupal configurations.</p>\n\t  <p>Vulnerabilities are possible if Drupal is configured to use the\n\t    WYSIWYG CKEditor for your site's users. An attacker that can createor\n\t    edit content may be able to exploit this Cross Site Scripting (XSS)\n\t    vulnerability to target users with access to the WYSIWYG CKEditor,\n\t    and this may include site admins with privileged access.</p>\n\t  <p>The latest versions of Drupal update CKEditor to 4.14 to mitigate\n\t    the vulnerabilities.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.drupal.org/sa-core-2020-001"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-03-18",
+    "entry": "2020-04-17"
+  }
+}

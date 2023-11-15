@@ -1,0 +1,34 @@
+{
+  "vid": "67c05283-5d62-11d8-80e3-0020ed76ef5a",
+  "topic": "Buffer overflow in Mutt 1.4",
+  "affects": [
+    {
+      "name": [
+        "mutt",
+        "ja-mutt"
+      ],
+      "range": [
+        {
+          "lt": "1.4.2",
+          "ge": "1.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mutt 1.4 contains a buffer overflow that could be exploited\n\t  with a specially formed message, causing Mutt to crash or\n\t  possibly execute arbitrary code.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mutt.org/news.html"
+    ],
+    "cvename": [
+      "CVE-2004-0078"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-02-11",
+    "entry": "2004-02-12"
+  }
+}

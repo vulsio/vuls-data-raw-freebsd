@@ -1,0 +1,65 @@
+{
+  "vid": "3d675519-5654-11e5-9ad8-14dae9d210b8",
+  "topic": "php -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php5",
+        "php5-soap",
+        "php5-xsl"
+      ],
+      "range": [
+        {
+          "lt": "5.4.45"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55",
+        "php55-soap",
+        "php55-xsl"
+      ],
+      "range": [
+        {
+          "lt": "5.5.29"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56",
+        "php56-soap",
+        "php56-xsl"
+      ],
+      "range": [
+        {
+          "lt": "5.6.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.4.45\">\n\t    <ul><li>Core:\n\t    <ul>\n\t    <li>Fixed bug #70172 (Use After Free Vulnerability in unserialize()).</li>\n\t    <li>Fixed bug #70219 (Use after free vulnerability in session deserializer).</li>\n\t    </ul></li>\n\t    <li>EXIF:\n\t    <ul>\n\t    <li>Fixed bug #70385 (Buffer over-read in exif_read_data with TIFF IFD tag byte value of 32 bytes).</li>\n\t    </ul></li>\n\t    <li>hash:\n\t    <ul>\n\t    <li>Fixed bug #70312 (HAVAL gives wrong hashes in specific cases).</li>\n\t    </ul></li>\n\t    <li>PCRE:\n\t    <ul>\n\t    <li>Fixed bug #70345 (Multiple vulnerabilities related to PCRE functions).</li>\n\t    </ul></li>\n\t    <li>SOAP:\n\t    <ul>\n\t    <li>Fixed bug #70388 (SOAP serialize_function_call() type confusion / RCE).</li>\n\t    </ul></li>\n\t    <li>SPL:\n\t    <ul>\n\t    <li>Fixed bug #70365 (Use-after-free vulnerability in unserialize() with SplObjectStorage).</li>\n\t    <li>Fixed bug #70366 (Use-after-free vulnerability in unserialize() with SplDoublyLinkedList).</li>\n\t    </ul></li>\n\t    <li>XSLT:\n\t    <ul>\n\t    <li>Fixed bug #69782 (NULL pointer dereference).</li>\n\t    </ul></li>\n\t    <li>ZIP:\n\t    <ul>\n\t    <li>Fixed bug #70350 (ZipArchive::extractTo allows for directory traversal when creating directories).</li>\n\t    </ul></li>\n\t    </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-5.php#5.4.45",
+      "http://php.net/ChangeLog-5.php#5.5.29",
+      "http://php.net/ChangeLog-5.php#5.6.13"
+    ],
+    "cvename": [
+      "CVE-2015-6834",
+      "CVE-2015-6835",
+      "CVE-2015-6836",
+      "CVE-2015-6837",
+      "CVE-2015-6838"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-03",
+    "entry": "2015-09-08",
+    "modified": "2015-09-08"
+  }
+}

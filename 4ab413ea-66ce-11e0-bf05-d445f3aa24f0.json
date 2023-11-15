@@ -1,0 +1,42 @@
+{
+  "vid": "4ab413ea-66ce-11e0-bf05-d445f3aa24f0",
+  "topic": "krb5 -- MITKRB5-SA-2011-002, KDC vulnerable to hang when using LDAP back end",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2",
+          "ge": "1.7"
+        },
+        {
+          "ge": "1.8",
+          "le": "1.8.4"
+        },
+        {
+          "eq": "1.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An advisory published by the MIT Kerberos team says:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-002.txt\">\n\t  <p>The MIT krb5 Key Distribution Center (KDC) daemon is vulnerable\n\t    to denial of service attacks from unauthenticated remote\n\t    attackers.  CVE-2011-0281 and CVE-2011-0282 occur only in KDCs\n\t    using LDAP back ends, but CVE-2011-0283 occurs in all krb5-1.9\n\t    KDCs.</p>\n\t  <p>Exploit code is not known to exist, but the vulnerabilities are\n\t    easy to trigger manually.  The trigger for CVE-2011-0281 has\n\t    already been disclosed publicly, but that fact might not be\n\t    obvious to casual readers of the message in which it was\n\t    disclosed.  The triggers for CVE-2011-0282 and CVE-2011-0283\n\t    have not yet been disclosed publicly, but they are also\n\t    trivial.</p>\n\t  <p>CVE-2011-0281: An unauthenticated remote attacker can cause a KDC\n\t    configured with an LDAP back end to become completely unresponsive\n\t    until restarted.</p>\n\t  <p>CVE-2011-0282: An unauthenticated remote attacker can cause a KDC\n\t    configured with an LDAP back end to crash with a null pointer\n\t    dereference.</p>\n\t  <p>CVE-2011-0283: An unauthenticated remote attacker can cause a\n\t    krb5-1.9 KDC with any back end to crash with a null pointer\n\t    dereference.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-002.txt"
+    ],
+    "cvename": [
+      "CVE-2011-0281",
+      "CVE-2011-0282",
+      "CVE-2011-0283"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-02-08",
+    "entry": "2011-04-14"
+  }
+}

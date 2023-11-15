@@ -1,0 +1,29 @@
+{
+  "vid": "d4c70df5-335d-11da-9c70-0040f42d58c6",
+  "topic": "weex -- remote format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "weex"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1.5_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Emanuel Haupt reports:</p>\n\t<blockquote>\n\t  <p>Someone who controls an FTP server that weex will log in to\n\t    can set up malicious data in the account that weex will use,\n\t    and that will cause a format string bug that will allow remote\n\t    code execution. It will only happen when weex is first run or\n\t    when its cache files are rebuilt with the -r option,\n\t    though. The vulnerability was found by Ulf Harnhammar.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "freebsd_pr": [
+      "ports/86833"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-02",
+    "entry": "2005-10-02"
+  }
+}

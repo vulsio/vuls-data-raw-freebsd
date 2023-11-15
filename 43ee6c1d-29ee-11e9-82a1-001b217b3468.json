@@ -1,0 +1,38 @@
+{
+  "vid": "43ee6c1d-29ee-11e9-82a1-001b217b3468",
+  "topic": "Gitlab -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "11.7.4",
+          "ge": "11.7.0"
+        },
+        {
+          "lt": "11.6.9",
+          "ge": "11.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2019/02/05/critical-security-release-gitlab-11-dot-7-dot-4-released/\">\n\t  <p>Leak of Confidential Issue and Merge Request Titles</p>\n\t  <p>Persistent XSS in User Status</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2019/02/05/critical-security-release-gitlab-11-dot-7-dot-4-released/"
+    ],
+    "cvename": [
+      "CVE-2019-7353",
+      "CVE-2019-6796"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-05",
+    "entry": "2019-02-06"
+  }
+}

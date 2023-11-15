@@ -1,0 +1,32 @@
+{
+  "vid": "f9ada0b5-3d80-11ed-9330-080027f5fec9",
+  "topic": "squid -- Exposure of sensitive information in cache manager",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "5.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mikhail Evdokimov (aka konata) reports:</p>\n\t<blockquote cite=\"https://github.com/squid-cache/squid/security/advisories/GHSA-rcg9-7fqm-83mq\">\n\t  <p>\n\t    Due to inconsistent handling of internal URIs Squid is\n\t    vulnerable to Exposure of Sensitive Information about\n\t    clients using the proxy. This problem allows a trusted\n\t    client to directly access cache manager information\n\t    bypassing the manager ACL protection. The available cache\n\t    manager information contains records of internal network\n\t    structure, client credentials, client identity and client\n\t    traffic behaviour.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/squid-cache/squid/security/advisories/GHSA-rcg9-7fqm-83mq"
+    ],
+    "cvename": [
+      "CVE-2022-41317"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-04-17",
+    "entry": "2022-09-26"
+  }
+}

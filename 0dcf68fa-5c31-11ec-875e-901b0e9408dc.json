@@ -1,0 +1,39 @@
+{
+  "vid": "0dcf68fa-5c31-11ec-875e-901b0e9408dc",
+  "topic": "Matrix clients -- several vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cinny"
+      ],
+      "range": [
+        {
+          "lt": "1.6.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "element-web"
+      ],
+      "range": [
+        {
+          "lt": "1.9.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matrix developers report:</p>\n\t<blockquote cite=\"https://matrix.org/blog/2021/12/13/disclosure-buffer-overflow-in-libolm-and-matrix-js-sdk\">\n\t  <p>Today we are releasing security updates to libolm, matrix-js-sdk,\n\t  and several clients including Element Web / Desktop. Users are\n\t  encouraged to upgrade as soon as possible.</p>\n\t  <p>These releases mitigate a buffer overflow in olm_session_describe,\n\t  a libolm debugging function used by matrix-js-sdk in its end-to-end\n\t  encryption (E2EE) implementation. If you rely on matrix-js-sdk for\n\t  E2EE, you are affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://matrix.org/blog/2021/12/13/disclosure-buffer-overflow-in-libolm-and-matrix-js-sdk"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-12-03",
+    "entry": "2021-12-13"
+  }
+}

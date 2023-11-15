@@ -1,0 +1,38 @@
+{
+  "vid": "62c0dbbd-bfce-11e5-b5fe-002590263bf5",
+  "topic": "cgit -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cgit"
+      ],
+      "range": [
+        {
+          "lt": "0.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jason A. Donenfeld reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/01/14/6\">\n\t  <p>Reflected Cross Site Scripting and Header Injection in Mimetype\n\t    Query String.</p>\n\t  <p>Stored Cross Site Scripting and Header Injection in Filename\n\t    Parameter.</p>\n\t  <p>Integer Overflow resulting in Buffer Overflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.zx2c4.com/pipermail/cgit/2016-January/002817.html",
+      "http://www.openwall.com/lists/oss-security/2016/01/14/6"
+    ],
+    "cvename": [
+      "CVE-2016-1899",
+      "CVE-2016-1900",
+      "CVE-2016-1901"
+    ],
+    "freebsd_pr": [
+      "ports/206417"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-14",
+    "entry": "2016-01-20"
+  }
+}

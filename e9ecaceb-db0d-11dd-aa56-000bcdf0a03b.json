@@ -1,0 +1,42 @@
+{
+  "vid": "e9ecaceb-db0d-11dd-aa56-000bcdf0a03b",
+  "topic": "FreeBSD -- Cross-site request forgery in ftpd(8)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.3_7",
+          "ge": "6.3"
+        },
+        {
+          "lt": "6.4_1",
+          "ge": "6.4"
+        },
+        {
+          "lt": "7.0_7",
+          "ge": "7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The ftpd(8) server splits long commands into several\n\t  requests.  This may result in the server executing a command\n\t  which is hidden inside another very long command.</p>\n\t<h1>Impact:</h1>\n\t<p>This could, with a specifically crafted command, be used in a\n\t  cross-site request forgery attack.</p>\n\t<p>FreeBSD systems running ftpd(8) server could act as a point\n\t  of privilege escalation in an attack against users using web\n\t  browser to access trusted FTP sites.</p>\n\t<h1>Workaround:</h1>\n\t<p>No workaround is available, but systems not running FTP\n\t  servers are not vulnerable.  Systems not running the FreeBSD\n\t  ftp(8) server are not affected, but users of other ftp\n\t  daemons are advised to take care since several other ftp\n\t  daemons are known to have related bugs.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2008-4247"
+    ],
+    "freebsd_sa": [
+      "SA-08:12.ftpd"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-23",
+    "entry": "2009-01-05",
+    "modified": "2016-08-09"
+  }
+}

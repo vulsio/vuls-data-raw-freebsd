@@ -1,0 +1,39 @@
+{
+  "vid": "5b8d8dee-6088-11ed-8c5e-641c67a117d8",
+  "topic": "varnish -- HTTP/2 Request Forgery Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "varnish7"
+      ],
+      "range": [
+        {
+          "lt": "7.2.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "varnish6"
+      ],
+      "range": [
+        {
+          "le": "6.6.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Varnish Cache Project reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00011.html\">\n      <p>A request forgery attack can be performed on Varnish Cache servers that\n\t have the HTTP/2 protocol turned on. An attacker may introduce\n\t characters through the HTTP/2 pseudo-headers that are invalid in the\n\t context of an HTTP/1 request line, causing the Varnish server to\n\t produce invalid HTTP/1 requests to the backend. This may in turn be\n\t used to successfully exploit vulnerabilities in a server behind the\n\t Varnish server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://varnish-cache.org/security/VSV00011.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-08",
+    "entry": "2022-11-09"
+  }
+}

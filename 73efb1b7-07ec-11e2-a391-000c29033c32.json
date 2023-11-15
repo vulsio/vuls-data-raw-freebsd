@@ -1,0 +1,37 @@
+{
+  "vid": "73efb1b7-07ec-11e2-a391-000c29033c32",
+  "topic": "eperl -- Remote code execution",
+  "affects": [
+    {
+      "name": [
+        "eperl"
+      ],
+      "range": [
+        {
+          "le": "2.2.14_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>David Madison reports:</p>\n\t<blockquote cite=\"http://www.shmoo.com/mail/bugtraq/jun01/msg00286.shtml\">\n\t  <p>ePerl is a multipurpose Perl filter and interpreter program\n\t    for Unix systems. The ePerl preprocessor contains an input\n\t    validation error. The preprocessor allows foreign data to be\n\t    \"safely\" included using the 'sinclude' directive.</p>\n\t  <p>The problem occurs when a file referenced by a 'sinclude'\n\t    directive contains a 'include' directive; the contents of\n\t    the file referred to by the second directive will be loaded\n\t    and executed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.shmoo.com/mail/bugtraq/jun01/msg00286.shtml",
+      "http://xforce.iss.net/xforce/xfdb/6743",
+      "http://osvdb.org/show/osvdb/1880"
+    ],
+    "cvename": [
+      "CVE-2001-0733"
+    ],
+    "bid": [
+      "2912"
+    ]
+  },
+  "dates": {
+    "discovery": "2001-06-21",
+    "entry": "2012-09-26"
+  }
+}

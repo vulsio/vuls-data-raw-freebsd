@@ -1,0 +1,79 @@
+{
+  "vid": "32db37a5-50c3-11db-acf3-000c6ec775d9",
+  "topic": "openssh -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.1_10",
+          "ge": "6.1"
+        },
+        {
+          "lt": "6.0_15",
+          "ge": "6.0"
+        },
+        {
+          "lt": "5.5_8",
+          "ge": "5.5"
+        },
+        {
+          "lt": "5.4_22",
+          "ge": "5.4"
+        },
+        {
+          "lt": "5.3_37",
+          "ge": "5.0"
+        },
+        {
+          "lt": "4.11_25"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssh"
+      ],
+      "range": [
+        {
+          "lt": "4.4,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssh-portable"
+      ],
+      "range": [
+        {
+          "lt": "4.4.p1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description</h1>\n\t<p>The CRC compensation attack detector in the sshd(8) daemon,\n\t  upon receipt of duplicate blocks, uses CPU time cubic in the\n\t  number of duplicate blocks received.\t[CVE-2006-4924]</p>\n\t<p>A race condition exists in a signal handler used by the\n\t  sshd(8) daemon to handle the LoginGraceTime option, which\n\t  can potentially cause some cleanup routines to be executed\n\t  multiple times.  [CVE-2006-5051]</p>\n\t<h1>Impact</h1>\n\t<p>An attacker sending specially crafted packets to sshd(8)\n\t  can cause a Denial of Service by using 100% of CPU time\n\t  until a connection timeout occurs.  Since this attack can be\n\t  performed over multiple connections simultaneously, it is\n\t  possible to cause up to MaxStartups (10 by default) sshd\n\t  processes to use all the CPU time they can obtain.\n\t  [CVE-2006-4924]</p>\n\t<p>The OpenSSH project believe that the race condition can\n\t  lead to a Denial of Service or potentially remote code\n\t  execution, but the FreeBSD Security Team has been unable to\n\t  verify the exact impact.  [CVE-2006-5051]</p>\n\t<h1>Workaround</h1>\n\t<p>The attack against the CRC compensation attack detector can\n\t  be avoided by disabling SSH Protocol version 1 support in\n\t  sshd_config(5).</p>\n\t<p>There is no workaround for the second issue.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openssh.com/txt/release-4.4"
+    ],
+    "cvename": [
+      "CVE-2006-4924",
+      "CVE-2006-5051"
+    ],
+    "freebsd_sa": [
+      "SA-06:22.openssh"
+    ],
+    "bid": [
+      "20216"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-09-25",
+    "entry": "2006-09-30"
+  }
+}

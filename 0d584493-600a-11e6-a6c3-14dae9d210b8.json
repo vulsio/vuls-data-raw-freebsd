@@ -1,0 +1,37 @@
+{
+  "vid": "0d584493-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- routed(8) remote denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.1_17",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_22",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The input path in routed(8) will accept queries from any\n\tsource and attempt to answer them. However, the output path\n\tassumes that the destination address for the response is\n\ton a directly connected network.</p>\n\t<h1>Impact:</h1>\n\t<p>Upon receipt of a query from a source which is not on a\n\tdirectly connected network, routed(8) will trigger an\n\tassertion and terminate. The affected system's routing table\n\twill no longer be updated. If the affected system is a\n\trouter, its routes will eventually expire from other routers'\n\trouting tables, and its networks will no longer be reachable\n\tunless they are also connected to another router.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2015-5674"
+    ],
+    "freebsd_sa": [
+      "SA-15:19.routed"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-05",
+    "entry": "2016-08-11"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "vid": "58247a96-01c8-11da-bc08-0001020eed82",
+  "topic": "phpmyadmin -- cross site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpmyadmin",
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.6.2.r1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A phpMyAdmin security announcement reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-3\">\n\t  <p>The convcharset parameter was not correctly validated,\n\t    opening the door to a XSS attack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-3"
+    ],
+    "cvename": [
+      "CVE-2005-0992"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111264361622660",
+        "msgid": "4f9e4516050404101223fbdeed@mail.gmail.com"
+      }
+    ],
+    "bid": [
+      "12982"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-04-03",
+    "entry": "2005-07-31"
+  }
+}

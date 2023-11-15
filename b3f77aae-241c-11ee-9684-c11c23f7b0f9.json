@@ -1,0 +1,30 @@
+{
+  "vid": "b3f77aae-241c-11ee-9684-c11c23f7b0f9",
+  "topic": "gitea -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.20.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/22759\">\n\t  <p>Test if container blob is accessible before mounting.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/22175\">\n\t  <p>Set type=\"password\" on all auth_token fields</p>\n\t  <p>Seen when migrating from other hosting platforms.</p>\n\t  <p>Prevents exposing the token to screen capture/cameras/eyeballs.</p>\n\t  <p>Prevents the browser from saving the value in its autocomplete\n\t    dictionary, which often is not secure.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.gitea.com/release-of-1.20.0",
+      "https://github.com/go-gitea/gitea/releases/tag/v1.20.0"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-06-08",
+    "entry": "2023-07-05"
+  }
+}

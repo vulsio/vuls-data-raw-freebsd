@@ -1,0 +1,33 @@
+{
+  "vid": "27616957-b084-11ea-937b-b42e99a1b9c3",
+  "topic": "dbus file descriptor leak",
+  "affects": [
+    {
+      "name": [
+        "dbus"
+      ],
+      "range": [
+        {
+          "lt": "1.12.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>GitHub Security Lab reports:</p>\n    <blockquote cite=\"https://gitlab.freedesktop.org/dbus/dbus/-/issues/294\">\n\t<p>D-Bus has a file descriptor leak, which can lead to denial of service when the dbus-daemon runs out of file descriptors.\n\tAn unprivileged local attacker can use this to attack the system dbus-daemon, leading to denial of service for all users of the machine.</p>\n    </blockquote>\n\t"
+  },
+  "references": {
+    "url": [
+      "https://gitlab.freedesktop.org/dbus/dbus/-/issues/294",
+      "https://www.openwall.com/lists/oss-security/2020/06/04/3"
+    ],
+    "cvename": [
+      "CVE-2020-12049"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-09",
+    "entry": "2020-07-03"
+  }
+}

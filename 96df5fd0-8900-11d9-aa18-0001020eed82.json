@@ -1,0 +1,43 @@
+{
+  "vid": "96df5fd0-8900-11d9-aa18-0001020eed82",
+  "topic": "curl -- authentication buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.13.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Two iDEFENSE Security Advisories reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110902601221592\">\n\t  <p>An exploitable stack-based buffer overflow condition\n\t    exists when using NT Lan Manager (NTLM)\n\t    authentication. The problem specifically exists within\n\t    <code>Curl_input_ntlm()</code> defined in\n\t    lib/http_ntlm.c.</p>\n\t  <p>Successful exploitation allows remote attackers to\n\t    execute arbitrary code under the privileges of the target\n\t    user. Exploitation requires that an attacker either coerce\n\t    or force a target to connect to a malicious server using\n\t    NTLM authentication.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110902850731457\">\n\t  <p>An exploitable stack-based buffer overflow condition\n\t    exists when using Kerberos authentication. The problem\n\t    specifically exists within the functions\n\t    <code>Curl_krb_kauth()</code> and <code>krb4_auth()</code>\n\t    defined in lib/krb4.c.</p>\n\t  <p>Successful exploitation allows remote attackers to\n\t    execute arbitrary code under the privileges of the target\n\t    user. Exploitation requires that an attacker either coerce\n\t    or force a target to connect to a malicious server using\n\t    Kerberos authentication.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-0490"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110902850731457",
+        "msgid": "FB24803D1DF2A34FA59FC157B77C970503E2462D@idserv04.idef.com"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110902601221592",
+        "msgid": "FB24803D1DF2A34FA59FC157B77C970503E2462E@idserv04.idef.com"
+      }
+    ],
+    "bid": [
+      "12615",
+      "12616"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-21",
+    "entry": "2005-02-27"
+  }
+}

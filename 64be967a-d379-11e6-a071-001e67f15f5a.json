@@ -1,0 +1,36 @@
+{
+  "vid": "64be967a-d379-11e6-a071-001e67f15f5a",
+  "topic": "libvncserver -- multiple buffer overflows",
+  "affects": [
+    {
+      "name": [
+        "libvncserver"
+      ],
+      "range": [
+        {
+          "lt": "0.9.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>libvnc server reports:</p>\n\t<blockquote cite=\"https://github.com/LibVNC/libvncserver/pull/137\">\n\t  <p>Two unrelated buffer overflows can be used by a malicious server to overwrite parts of the heap and crash the client (or possibly execute arbitrary code).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/LibVNC/libvncserver/pull/137"
+    ],
+    "cvename": [
+      "CVE-2016-9941",
+      "CVE-2016-9942"
+    ],
+    "freebsd_pr": [
+      "ports/215805"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-24",
+    "entry": "2017-01-09"
+  }
+}

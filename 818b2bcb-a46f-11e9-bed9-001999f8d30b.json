@@ -1,0 +1,52 @@
+{
+  "vid": "818b2bcb-a46f-11e9-bed9-001999f8d30b",
+  "topic": "asterisk -- Remote crash vulnerability with MESSAGE messages",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.27.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk15"
+      ],
+      "range": [
+        {
+          "lt": "15.7.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>A specially crafted SIP in-dialog MESSAGE message can cause Asterisk to crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2019-002.html"
+    ],
+    "cvename": [
+      "CVE-2019-12827"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-06-13",
+    "entry": "2019-07-12"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "08a2df48-6c6a-11e7-9b01-2047478f2f70",
+  "topic": "collectd5 -- Denial of service by sending a signed network packet to a server which is not set up to check signatures",
+  "affects": [
+    {
+      "name": [
+        "collectd5"
+      ],
+      "range": [
+        {
+          "lt": "5.7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>marcinguy reports:</p>\n\t<blockquote cite=\"https://github.com/collectd/collectd/issues/2174\">\n\t  <p>After sending this payload, collectd seems to be entering endless while()\n\t     loop in packet_parse consuming high CPU resources, possibly crash/gets killed after a while.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/collectd/collectd/issues/2174"
+    ],
+    "cvename": [
+      "CVE-2017-7401"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-02-13",
+    "entry": "2017-07-19"
+  }
+}

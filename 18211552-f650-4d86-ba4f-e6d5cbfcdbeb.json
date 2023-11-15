@@ -1,0 +1,55 @@
+{
+  "vid": "18211552-f650-4d86-ba4f-e6d5cbfcdbeb",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "65.0.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "60.5.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "60.5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-04/\">\n\t  <p>CVE-2018-18356: Use-after-free in Skia</p>\n\t  <p>CVE-2019-5785: Integer overflow in Skia</p>\n\t  <p>CVE-2018-18511: Cross-origin theft of images with ImageBitmapRenderingContext</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2019-04/",
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2019-05/"
+    ],
+    "cvename": [
+      "CVE-2018-18511",
+      "CVE-2018-18356",
+      "CVE-2019-5785"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-13",
+    "entry": "2019-02-13"
+  }
+}

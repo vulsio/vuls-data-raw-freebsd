@@ -1,0 +1,35 @@
+{
+  "vid": "0bf9d7fb-05b3-11da-bc08-0001020eed82",
+  "topic": "mambo -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mambo"
+      ],
+      "range": [
+        {
+          "lt": "4.5.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15710/\">\n\t  <p>Some vulnerabilities have been reported in Mambo, where\n\t    some have unknown impacts and others can be exploited by\n\t    malicious people to conduct spoofing and SQL injection\n\t    attacks.</p>\n\t  <ol>\n\t    <li>Input passed to the \"user_rating\" parameter when\n\t      voting isn't properly sanitised before being used in a\n\t      SQL query. This can be exploited to manipulate SQL\n\t      queries by injecting arbitrary SQL code.</li>\n\t    <li>Some unspecified vulnerabilities in the \"mosDBTable\"\n\t      class and the \"DOMIT\" library have an unknown\n\t      impact.</li>\n\t    <li>An unspecified error in the \"administrator/index3.php\"\n\t      script can be exploited to spoof session IDs.</li>\n\t  </ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/15710/"
+    ],
+    "cvename": [
+      "CVE-2005-2002"
+    ],
+    "bid": [
+      "13966"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-06-15",
+    "entry": "2005-08-05"
+  }
+}

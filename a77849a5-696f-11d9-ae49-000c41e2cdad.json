@@ -1,0 +1,110 @@
+{
+  "vid": "a77849a5-696f-11d9-ae49-000c41e2cdad",
+  "topic": "mozilla -- insecure permissions for some downloaded files",
+  "affects": [
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "0.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-linux-mozillafirebird",
+        "el-linux-mozillafirebird",
+        "firefox",
+        "ja-linux-mozillafirebird-gtk1",
+        "ja-mozillafirebird-gtk2",
+        "linux-mozillafirebird",
+        "ru-linux-mozillafirebird",
+        "zhCN-linux-mozillafirebird",
+        "zhTW-linux-mozillafirebird"
+      ],
+      "range": [
+        {
+          "lt": "1.0.r2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-netscape7",
+        "fr-netscape7",
+        "ja-netscape7",
+        "netscape7",
+        "pt_BR-netscape7"
+      ],
+      "range": [
+        {
+          "le": "7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla-gtk1",
+        "linux-mozilla",
+        "linux-mozilla-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.7.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7.5,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-linux-netscape",
+        "fr-linux-netscape",
+        "ja-linux-netscape",
+        "linux-netscape",
+        "linux-phoenix",
+        "mozilla+ipv6",
+        "mozilla-embedded",
+        "mozilla-firebird",
+        "mozilla-gtk2",
+        "mozilla-gtk",
+        "mozilla-thunderbird",
+        "phoenix"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>In a Mozilla bug report, Daniel Kleinsinger writes:</p>\n\t<blockquote cite=\"https://bugzilla.mozilla.org/show_bug.cgi?id=251297\">\n\t  <p>I was comparing treatment of attachments opened directly\n\t    from emails on different platforms. I discovered that Linux\n\t    builds save attachments in /tmp with world readable rights.\n\t    This doesn't seem like a good thing. Couldn't someone else\n\t    logged onto the same machine read your attachments?</p>\n\t</blockquote>\n\t<p>This could expose the contents of downloaded files or email\n\t  attachments to other users on a multi-user system.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=251297"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=109865078103911",
+        "msgid": "417C19F1.2040107@ptraced.net"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-07-13",
+    "entry": "2005-01-18"
+  }
+}

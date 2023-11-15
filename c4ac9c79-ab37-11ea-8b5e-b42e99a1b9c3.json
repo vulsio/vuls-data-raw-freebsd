@@ -1,0 +1,65 @@
+{
+  "vid": "c4ac9c79-ab37-11ea-8b5e-b42e99a1b9c3",
+  "topic": "several security issues in sqlite3",
+  "affects": [
+    {
+      "name": [
+        "sqlite3"
+      ],
+      "range": [
+        {
+          "lt": "3.32.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "12.1_8",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.4_2",
+          "ge": "11.4"
+        },
+        {
+          "lt": "11.3_12",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>sqlite3 update:</p>\n\t<p>Various security issues could be used by an attacker to cause SQLite to crash, resulting in a denial of service, or possibly execute arbitrary code.</p>\n\t<ul>\n\t  <li>CVE-2020-11655: SQLite through 3.31.1 allows attackers to cause a denial of service (segmentation fault) via a malformed window-function query because the AggInfo object's initialization is mishandled.</li>\n\t  <li>CVE-2020-13434: SQLite through 3.32.0 has an integer overflow in sqlite3_str_vappendf in printf.c.</li>\n\t  <li>CVE-2020-13435: SQLite through 3.32.0 has a segmentation fault in sqlite3ExprCodeTarget in expr.c.</li>\n\t  <li>CVE-2020-13630: ext/fts3/fts3.c in SQLite before 3.32.0 has a use-after-free in fts3EvalNextRow, related to the snippet feature.</li>\n\t  <li>CVE-2020-13631: SQLite before 3.32.0 allows a virtual table to be renamed to the name of one of its shadow tables, related to alter.c and build.c.</li>\n\t  <li>CVE-2020-13632: ext/fts3/fts3_snippet.c in SQLite before 3.32.0 has a NULL pointer dereference via a crafted matchinfo() query.</li>\n\t</ul>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-11655",
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-13434",
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-13435",
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-13630",
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-13631",
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-13632"
+    ],
+    "cvename": [
+      "CVE-2020-11655",
+      "CVE-2020-13434",
+      "CVE-2020-13435",
+      "CVE-2020-13630",
+      "CVE-2020-13631",
+      "CVE-2020-13632"
+    ],
+    "freebsd_sa": [
+      "SA-20:22.sqlite"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-05-25",
+    "entry": "2020-06-10",
+    "modified": "2020-08-06"
+  }
+}

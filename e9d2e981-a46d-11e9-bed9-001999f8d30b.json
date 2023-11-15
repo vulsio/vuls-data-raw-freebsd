@@ -1,0 +1,52 @@
+{
+  "vid": "e9d2e981-a46d-11e9-bed9-001999f8d30b",
+  "topic": "asterisk -- Remote Crash Vulnerability in chan_sip channel driver",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.27.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk15"
+      ],
+      "range": [
+        {
+          "lt": "15.7.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When T.38 faxing is done in Asterisk a T.38 reinvite\n\t  may be sent to an endpoint to switch it to T.38. If the\n\t  endpoint responds with an improperly formatted SDP answer\n\t  including both a T.38 UDPTL stream and an audio or video\n\t  stream containing only codecs not allowed on the SIP peer\n\t  or user a crash will occur. The code incorrectly assumes\n\t  that there will be at least one common codec when T.38\n\t  is also in the SDP answer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2019-003.html"
+    ],
+    "cvename": [
+      "CVE-2019-13161"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-06-28",
+    "entry": "2019-07-12"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "vid": "4622635f-37a1-11e5-9970-14dae9d210b8",
+  "topic": "net-snmp -- snmptrapd crash",
+  "affects": [
+    {
+      "name": [
+        "net-snmp"
+      ],
+      "range": [
+        {
+          "ge": "5.7.0",
+          "le": "5.7.2.1"
+        },
+        {
+          "ge": "5.6.0",
+          "le": "5.6.2.1"
+        },
+        {
+          "ge": "5.5.0",
+          "le": "5.5.2.1"
+        },
+        {
+          "ge": "5.4.0",
+          "le": "5.4.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Murray McAllister reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2014/q3/473\">\n\t  <p>A remote denial-of-service flaw was found in the way\n\t    snmptrapd handled certain SNMP traps when started with the\n\t    \"-OQ\" option. If an attacker sent an SNMP trap containing a\n\t    variable with a NULL type where an integer variable type was\n\t    expected, it would cause snmptrapd to crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://seclists.org/oss-sec/2014/q3/473",
+      "http://sourceforge.net/p/net-snmp/code/ci/7f4a7b891332899cea26e95be0337aae01648742/",
+      "https://sourceforge.net/p/net-snmp/official-patches/48/"
+    ],
+    "cvename": [
+      "CVE-2014-3565"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-07-31",
+    "entry": "2015-07-31"
+  }
+}

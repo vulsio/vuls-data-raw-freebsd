@@ -1,0 +1,41 @@
+{
+  "vid": "bd9fc2bf-5ffe-11d9-a11a-000a95bc6fae",
+  "topic": "vim -- vulnerabilities in modeline handling",
+  "affects": [
+    {
+      "name": [
+        "vim",
+        "vim-console",
+        "vim-lite",
+        "vim+ruby"
+      ],
+      "range": [
+        {
+          "lt": "6.3.45"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ciaran McCreesh discovered news ways in which a VIM modeline\n\t  can be used to trojan a text file.  The patch by Bram\n\t  Moolenaar reads:</p>\n\t<blockquote cite=\"ftp://ftp.vim.org/pub/vim/patches/6.3/6.3.045\">\n\t  <p>Problem: Unusual characters in an option value may cause\n\t    unexpected behavior, especially for a modeline. (Ciaran\n\t    McCreesh)</p>\n\t  <p>Solution: Don't allow setting termcap options or\n\t    'printdevice' or 'titleold' in a modeline. Don't list\n\t    options for \"termcap\" and \"all\" in a modeline. Don't allow\n\t    unusual characters in 'filetype', 'syntax', 'backupext',\n\t    'keymap', 'patchmode' and 'langmenu'.</p>\n\t</blockquote>\n\t<p><strong>Note:</strong> It is generally recommended that VIM\n\t  users use <code>set nomodeline</code> in\n\t  <code>~/.vimrc</code> to avoid the possibility of trojaned\n\t  text files.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "ftp://ftp.vim.org/pub/vim/patches/6.3/6.3.045"
+    ],
+    "cvename": [
+      "CVE-2004-1138"
+    ],
+    "mlist": [
+      {
+        "text": "http://groups.yahoo.com/group/vimdev/message/38084"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-09",
+    "entry": "2005-01-06",
+    "modified": "2005-01-13"
+  }
+}

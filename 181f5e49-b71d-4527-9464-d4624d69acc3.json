@@ -1,0 +1,36 @@
+{
+  "vid": "181f5e49-b71d-4527-9464-d4624d69acc3",
+  "topic": "py-treq -- sensitive information leak vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-treq",
+        "py38-treq",
+        "py39-treq",
+        "py310-treq",
+        "py311-treq"
+      ],
+      "range": [
+        {
+          "lt": "22.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-fhpf-pp6p-55qc\">\n      <p>Treq's request methods (`treq.get`, `treq.post`, `HTTPClient.request`, `HTTPClient.get`, etc.) accept cookies as a dictionary.</p>\n      <p>Such cookies are not bound to a single domain, and are therefore sent to *every* domain (\"supercookies\").</p>\n      <p>This can potentially cause sensitive information to leak upon an HTTP redirect to a different domain., e.g. should `https://example.com` redirect to `http://cloudstorageprovider.com` the latter will receive the cookie `session`.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/GHSA-fhpf-pp6p-55qc"
+    ],
+    "cvename": [
+      "CVE-2022-23607"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-02-01",
+    "entry": "2023-08-31"
+  }
+}

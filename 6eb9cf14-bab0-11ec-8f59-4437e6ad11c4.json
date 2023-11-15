@@ -1,0 +1,32 @@
+{
+  "vid": "6eb9cf14-bab0-11ec-8f59-4437e6ad11c4",
+  "topic": "mutt -- mutt_decode_uuencoded() can read past the of the input line",
+  "affects": [
+    {
+      "name": [
+        "mutt"
+      ],
+      "range": [
+        {
+          "lt": "2.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tavis Ormandy reports:</p>\n\t<blockquote cite=\"https://gitlab.com/muttmua/mutt/-/issues/404\">\n\t  <p>mutt_decode_uuencoded(), the line length is read from the untrusted uuencoded part without validation. This could result in including private memory in message parts, for example fragments of other messages, passphrases or keys in replys</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://gitlab.com/muttmua/mutt/-/issues/404"
+    ],
+    "cvename": [
+      "CVE-2022-1328"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-04-04",
+    "entry": "2022-04-12"
+  }
+}

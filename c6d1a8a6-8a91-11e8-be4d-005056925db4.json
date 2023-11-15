@@ -1,0 +1,33 @@
+{
+  "vid": "c6d1a8a6-8a91-11e8-be4d-005056925db4",
+  "topic": "znc -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "znc"
+      ],
+      "range": [
+        {
+          "lt": "1.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14055\">\n\t  <p>ZNC before 1.7.1-rc1 does not properly validate untrusted lines\n\t    coming from the network, allowing a non-admin user to escalate his\n\t    privilege and inject rogue values into znc.conf.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14056\">\n\t  <p>ZNC before 1.7.1-rc1 is prone to a path traversal flaw via ../ in\n\t    a web skin name to access files outside of the intended skins\n\t    directories.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wiki.znc.in/ChangeLog/1.7.1"
+    ],
+    "cvename": [
+      "CVE-2018-14055",
+      "CVE-2018-14056"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-07-14",
+    "entry": "2018-07-18"
+  }
+}

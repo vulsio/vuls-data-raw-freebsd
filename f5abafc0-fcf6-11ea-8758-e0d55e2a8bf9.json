@@ -1,0 +1,31 @@
+{
+  "vid": "f5abafc0-fcf6-11ea-8758-e0d55e2a8bf9",
+  "topic": "libxml -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libxml2"
+      ],
+      "range": [
+        {
+          "lt": "2.9.10_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE mitre reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2019-20388\">\n\t    <h3>CVE-2019-20388</h3>\n\t    <p>\n\t      xmlSchemaPreRun in xmlschemas.c in libxml2 2.9.10 allows an xmlSchemaValidateStream memory leak.\n\t    </p>\n\t    <h3>CVE-2020-7595</h3>\n\t    <p>\n\t      xmlStringLenDecodeEntities in parser.c in libxml2 2.9.10 has an infinite loop in a certain end-of-file situation.\n\t    </p>\n\t  <h3>CVE-2020-24977</h3>\n\t  <p>\n\t    GNOME project libxml2 v2.9.10 and earlier have a global buffer over-read vulnerability in xmlEncodeEntitiesInternal\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2019-20388",
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-7595",
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-24977"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-21",
+    "entry": "2020-09-22"
+  }
+}

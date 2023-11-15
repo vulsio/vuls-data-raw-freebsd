@@ -1,0 +1,32 @@
+{
+  "vid": "833b469b-5247-11ee-9667-080027f5fec9",
+  "topic": "curl -- HTTP headers eat all memory",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "8.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>selmelc on hackerone reports:</p>\n\t<blockquote cite=\"https://curl.se/docs/CVE-2023-38039.html\">\n\t  <p>\n\t    When curl retrieves an HTTP response, it stores the\n\t    incoming headers so that they can be accessed later via\n\t    the libcurl headers API.\n\t  </p>\n\t  <p>\n\t    However, curl did not have a limit in how many or how\n\t    large headers it would accept in a response, allowing a\n\t    malicious server to stream an endless series of headers\n\t    and eventually cause curl to run out of heap memory.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.se/docs/CVE-2023-38039.html HERE"
+    ],
+    "cvename": [
+      "CVE-2023-38039"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-09-13",
+    "entry": "2023-09-13"
+  }
+}

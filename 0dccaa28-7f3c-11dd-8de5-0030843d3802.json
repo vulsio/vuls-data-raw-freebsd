@@ -1,0 +1,69 @@
+{
+  "vid": "0dccaa28-7f3c-11dd-8de5-0030843d3802",
+  "topic": "python -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "python24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.5_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python25"
+      ],
+      "range": [
+        {
+          "lt": "2.5.2_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python23"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31305\">\n\t  <p>Some vulnerabilities have been reported in Python, where some have\n\t    unknown impact and others can potentially be exploited by malicious\n\t    people to cause a DoS (Denial of Service) or to compromise a\n\t    vulnerable system.</p>\n\t  <p>Various integer overflow errors exist in core modules e.g.\n\t    stringobject, unicodeobject, bufferobject, longobject, tupleobject,\n\t    stropmodule, gcmodule, mmapmodule.</p>\n\t  <p>An integer overflow in the hashlib module can lead to an unreliable\n\t    cryptographic digest results.</p>\n\t  <p>Integer overflow errors in the processing of unicode strings can be\n\t    exploited to cause buffer overflows on 32-bit systems.</p>\n\t  <p>An integer overflow exists in the PyOS_vsnprintf() function on\n\t    architectures that do not have a \"vsnprintf()\" function.</p>\n\t  <p>An integer underflow error in the PyOS_vsnprintf() function when\n\t    passing zero-length strings can lead to memory corruption.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.python.org/issue2620",
+      "http://bugs.python.org/issue2588",
+      "http://bugs.python.org/issue2589",
+      "http://secunia.com/advisories/31305"
+    ],
+    "cvename": [
+      "CVE-2008-2315",
+      "CVE-2008-2316",
+      "CVE-2008-3142",
+      "CVE-2008-3144"
+    ],
+    "mlist": [
+      {
+        "text": "http://mail.python.org/pipermail/python-checkins/2008-July/072276.html"
+      },
+      {
+        "text": "http://mail.python.org/pipermail/python-checkins/2008-July/072174.html"
+      },
+      {
+        "text": "http://mail.python.org/pipermail/python-checkins/2008-June/070481.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2008-08-04",
+    "entry": "2008-09-10"
+  }
+}

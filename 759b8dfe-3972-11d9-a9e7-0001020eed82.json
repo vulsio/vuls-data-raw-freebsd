@@ -1,0 +1,63 @@
+{
+  "vid": "759b8dfe-3972-11d9-a9e7-0001020eed82",
+  "topic": "Overflow error in fetch",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "5.3_1",
+          "ge": "5.3"
+        },
+        {
+          "lt": "5.2.1_12",
+          "ge": "5.2.1"
+        },
+        {
+          "lt": "5.1_18",
+          "ge": "5.1"
+        },
+        {
+          "lt": "5.0_22",
+          "ge": "5.0"
+        },
+        {
+          "lt": "4.10_4",
+          "ge": "4.10"
+        },
+        {
+          "lt": "4.9_13",
+          "ge": "4.9"
+        },
+        {
+          "lt": "4.8_26",
+          "ge": "4.8"
+        },
+        {
+          "lt": "4.7_28"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An integer overflow condition in <a href=\"http://www.freebsd.org/cgi/man.cgi?query=fetch\">fetch(1)</a>\n\t  in the processing of HTTP headers can result in a buffer\n\t  overflow.</p>\n\t<p>A malicious server or CGI script can respond to an HTTP or\n\t  HTTPS request in such a manner as to cause arbitrary\n\t  portions of the client's memory to be overwritten, allowing\n\t  for arbitrary code execution.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-1053"
+    ],
+    "freebsd_sa": [
+      "SA-04:16.fetch"
+    ],
+    "bid": [
+      "11702"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-14",
+    "entry": "2004-11-18"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "vid": "3a023570-91ab-11ed-8950-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "15.7.2",
+          "ge": "15.7.0"
+        },
+        {
+          "lt": "15.6.4",
+          "ge": "15.6.0"
+        },
+        {
+          "lt": "15.5.7",
+          "ge": "6.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2023/01/09/security-release-gitlab-15-7-2-released/\">\n\t  <p>Race condition on gitlab.com enables verified email forgery and third-party account hijacking</p>\n\t  <p>DOS and high resource consumption of Prometheus server through abuse of Grafana integration proxy endpoint</p>\n\t  <p>Maintainer can leak sentry token by changing the configured URL</p>\n\t  <p>Maintainer can leak masked webhook secrets by changing target URL of the webhook</p>\n\t  <p>Cross-site scripting in wiki changes page affecting self-hosted instances running without strict CSP</p>\n\t  <p>Group access tokens continue to work after owner loses ability to revoke them</p>\n\t  <p>Users' avatar disclosure by user ID in private GitLab instances</p>\n\t  <p>Arbitrary Protocol Redirection in GitLab Pages</p>\n\t  <p>Regex DoS due to device-detector parsing user agents</p>\n\t  <p>Regex DoS in the Submodule Url Parser</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2023/01/09/security-release-gitlab-15-7-2-released/"
+    ],
+    "cvename": [
+      "CVE-2022-4037",
+      "CVE-2022-3613",
+      "CVE-2022-4365",
+      "CVE-2022-4342",
+      "CVE-2022-3573",
+      "CVE-2022-4167",
+      "CVE-2022-3870",
+      "CVE-2023-0042",
+      "CVE-2022-4131",
+      "CVE-2022-3514"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-01-09",
+    "entry": "2023-01-11"
+  }
+}

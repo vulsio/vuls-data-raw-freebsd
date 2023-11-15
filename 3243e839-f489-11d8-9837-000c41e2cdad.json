@@ -1,0 +1,40 @@
+{
+  "vid": "3243e839-f489-11d8-9837-000c41e2cdad",
+  "topic": "fidogate -- write files as `news' user",
+  "affects": [
+    {
+      "name": [
+        "fidogate"
+      ],
+      "range": [
+        {
+          "lt": "4.4.9_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "fidogate-ds"
+      ],
+      "range": [
+        {
+          "lt": "5.1.1_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Neils Heinen reports that the setuid `news' binaries\n\t  installed as part of fidogate may be used to create files or\n\t  append to file with the privileges of the `news' user by\n\t  setting the LOGFILE environmental variable.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://cvs.sourceforge.net/viewcvs.py/fidogate/fidogate/ChangeLog?rev=4.320&view=markup"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-21",
+    "entry": "2004-08-22",
+    "modified": "2004-08-23"
+  }
+}

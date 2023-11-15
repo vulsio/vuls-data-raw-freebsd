@@ -1,0 +1,39 @@
+{
+  "vid": "81f127a8-0038-11da-86bc-000e0c2e438a",
+  "topic": "vim -- vulnerabilities in modeline handling: glob, expand",
+  "affects": [
+    {
+      "name": [
+        "vim",
+        "vim-console",
+        "vim-lite",
+        "vim+ruby"
+      ],
+      "range": [
+        {
+          "lt": "6.3.82",
+          "ge": "6.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Georgi Guninski discovered a way to construct Vim modelines\n\t  that execute arbitrary shell commands.  The vulnerability\n\t  can be exploited by including shell commands in modelines\n\t  that call the glob() or expand() functions.  An attacker\n\t  could trick an user to read or edit a trojaned file with\n\t  modelines enabled, after which the attacker is able to\n\t  execute arbitrary commands with the privileges of the user.</p>\n\t<p><strong>Note:</strong> It is generally recommended that VIM\n\t  users use <code>set nomodeline</code> in\n\t  <code>~/.vimrc</code> to avoid the possibility of trojaned\n\t  text files.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.guninski.com/where_do_you_want_billg_to_go_today_5.html"
+    ],
+    "cvename": [
+      "CVE-2005-2368"
+    ],
+    "bid": [
+      "14374"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-25",
+    "entry": "2005-07-31"
+  }
+}

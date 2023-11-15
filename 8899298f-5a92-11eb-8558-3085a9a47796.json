@@ -1,0 +1,30 @@
+{
+  "vid": "8899298f-5a92-11eb-8558-3085a9a47796",
+  "topic": "cloud-init -- Wrong access permissions of authorized keys",
+  "affects": [
+    {
+      "name": [
+        "cloud-init"
+      ],
+      "range": [
+        {
+          "lt": "20.4.1",
+          "ge": "20.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cloud-init reports:</p>\n\t<blockquote cite=\"https://bugs.launchpad.net/cloud-init/+bug/1911680\">\n\t <p>cloud-init release 20.4.1 is now available.  This is a hotfix\n\t release, that contains a single patch to address a security issue in\n\t cloud-init 20.4.</p>\n\n\t <p>Briefly, for users who provide more than one unique SSH key to\n\t cloud-init and have a shared AuthorizedKeysFile configured in\n\t sshd_config, cloud-init 20.4 started writing all of these keys to such a\n\t file, granting all such keys SSH access as root.</p>\n\n\t <p>It's worth restating this implication: if you are using the default\n\t AuthorizedKeysFile setting in /etc/ssh/sshd_config, as most will be,\n\t then you are _not_ affected by this issue.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.launchpad.net/cloud-init/+bug/1911680"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-01-14",
+    "entry": "2021-01-19"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "vid": "d8c901ff-0f0f-11e1-902b-20cf30e32f6d",
+  "topic": "Apache 1.3 -- mod_proxy reverse proxy exposure",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "lt": "1.3.43"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.43.1.59_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+ipv6"
+      ],
+      "range": [
+        {
+          "lt": "1.3.43"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+mod_perl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.43"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+mod_ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.41+2.8.31_4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+mod_ssl+ipv6"
+      ],
+      "range": [
+        {
+          "lt": "1.3.41+2.8.31_4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ru-apache-1.3"
+      ],
+      "range": [
+        {
+          "lt": "1.3.43+30.23_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ru-apache+mod_ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.43+30.23_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Apache HTTP server project reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_13.html\">\n\t  <p>An exposure was found when using mod_proxy in reverse proxy mode.\n\t    In certain configurations using RewriteRule with proxy flag, a\n\t    remote attacker could cause the reverse proxy to connect to an\n\t    arbitrary server, possibly disclosing sensitive information from\n\t    internal web servers not directly accessible to attacker.  There\n\t    is no patch against this issue!</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://httpd.apache.org/security/vulnerabilities_13.html",
+      "http://seclists.org/fulldisclosure/2011/Oct/232"
+    ],
+    "cvename": [
+      "CVE-2011-3368"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-10-05",
+    "entry": "2011-11-14"
+  }
+}

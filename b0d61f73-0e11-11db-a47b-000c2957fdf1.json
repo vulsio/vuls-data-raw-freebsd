@@ -1,0 +1,41 @@
+{
+  "vid": "b0d61f73-0e11-11db-a47b-000c2957fdf1",
+  "topic": "trac -- reStructuredText breach of privacy and denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "trac",
+        "ja-trac"
+      ],
+      "range": [
+        {
+          "lt": "0.9.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Trac 0.9.6 Release Notes reports:</p>\n\t<blockquote cite=\"http://lists.edgewall.com/archive/trac-announce/2006-July/000013.html\">\n\t  <p>Fixed reStructuredText breach of privacy and denial of\n\t    service vulnerability found by Felix Wiemann.</p>\n\t  <p>The discovered vulnerability requires docutils to be\n\t    installed and enabled. Systems that do not have docutils\n\t    installed or enabled are not vulnerable. As of this\n\t    version version 0.3.9 or greater of docutils is required\n\t    for using reStructuredText markup in Trac.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://projects.edgewall.com/trac/wiki/ChangeLog"
+    ],
+    "cvename": [
+      "CVE-2005-3980",
+      "CVE-2005-4305",
+      "CVE-2005-4065"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.edgewall.com/archive/trac-announce/2006-July/000013.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2006-07-06",
+    "entry": "2006-07-07",
+    "modified": "2010-05-12"
+  }
+}

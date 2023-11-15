@@ -1,0 +1,34 @@
+{
+  "vid": "74daa370-2797-11e8-95ec-a4badb2f4699",
+  "topic": "FreeBSD -- Speculative Execution Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "11.1_8",
+          "ge": "11.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A number of issues relating to speculative execution\n\twere found last year and publicly announced January 3rd.\n\tTwo of these, known as Meltdown and Spectre V2, are addressed\n\there.</p>\n\t<p>CVE-2017-5754 (Meltdown) - ------------------------</p>\n\t<p>This issue relies on an affected CPU speculatively\n\texecuting instructions beyond a faulting instruction. When\n\tthis happens, changes to architectural state are not\n\tcommitted, but observable changes may be left in micro-\n\tarchitectural state (for example, cache). This may be used\n\tto infer privileged data.</p>\n\t<p>CVE-2017-5715 (Spectre V2) - --------------------------</p>\n\t<p>Spectre V2 uses branch target injection to speculatively\n\texecute kernel code at an address under the control of an\n\tattacker.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker may be able to read secret data from the\n\tkernel or from a process when executing untrusted code (for\n\texample, in a web browser).</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2017-5715",
+      "CVE-2017-5754"
+    ],
+    "freebsd_sa": [
+      "SA-18:03.speculative_execution"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-14",
+    "entry": "2018-03-14"
+  }
+}

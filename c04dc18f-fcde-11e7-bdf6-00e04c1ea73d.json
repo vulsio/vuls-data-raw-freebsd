@@ -1,0 +1,44 @@
+{
+  "vid": "c04dc18f-fcde-11e7-bdf6-00e04c1ea73d",
+  "topic": "wordpress -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "wordpress",
+        "fr-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.9.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "ja-wordpress",
+        "ru-wordpress",
+        "zh-wordpress-zh_CN",
+        "zh-wordpress-zh_TW"
+      ],
+      "range": [
+        {
+          "lt": "4.9.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>wordpress developers reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2018/01/wordpress-4-9-2-security-and-maintenance-release/\">\n\t  <p>JavaScript errors that prevented saving posts in Firefox have been fixed.</p>\n\t  <p>The previous taxonomy-agnostic behavior of get_category_link() and category_description() was restored.</p>\n\t  <p>Switching themes will now attempt to restore previous widget assignments, even when there are no sidebars to map.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wordpress.org/news/2018/01/wordpress-4-9-2-security-and-maintenance-release/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-16",
+    "entry": "2018-01-19"
+  }
+}

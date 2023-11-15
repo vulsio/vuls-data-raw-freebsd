@@ -1,0 +1,33 @@
+{
+  "vid": "261ca31c-179f-11e8-b8b9-6805ca0b3d42",
+  "topic": "phpMyAdmin -- self XSS in central columns feature",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "4.7.8",
+          "ge": "4.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2018-1/\">\n\t  <h3>Summary</h3>\n\t  <p>Self XSS in central columns feature</p>\n\t  <h3>Description</h3>\n\t  <p>A self-cross site scripting (XSS) vulnerability has been\n\t    reported relating to the central columns feature.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be of moderate severity.</p>\n\t  <h3>Mitigation factor</h3>\n\t  <p>A valid token must be used in the attack</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.phpmyadmin.net/security/PMASA-2018-1/"
+    ],
+    "cvename": [
+      "CVE-2018-7260"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-02-21",
+    "entry": "2018-02-22"
+  }
+}

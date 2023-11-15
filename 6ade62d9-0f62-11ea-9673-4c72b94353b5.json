@@ -1,0 +1,32 @@
+{
+  "vid": "6ade62d9-0f62-11ea-9673-4c72b94353b5",
+  "topic": "clamav -- Denial-of-Service (DoS) vulnerability",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.102.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Micah Snyder reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2019/11/clamav-01021-and-01015-patches-have.html\">\n\t  <p>A Denial-of-Service (DoS) vulnerability may occur when scanning a specially crafted email\n\t    file as a result of excessively long scan times. The issue is resolved by implementing\n\t    several maximums in parsing MIME messages and by optimizing use of memory allocation.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.clamav.net/2019/11/clamav-01021-and-01015-patches-have.html"
+    ],
+    "cvename": [
+      "CVE-2019-15961"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-09-06",
+    "entry": "2019-11-25"
+  }
+}

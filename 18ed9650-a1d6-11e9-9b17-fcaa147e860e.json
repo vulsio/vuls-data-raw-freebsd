@@ -1,0 +1,33 @@
+{
+  "vid": "18ed9650-a1d6-11e9-9b17-fcaa147e860e",
+  "topic": "python 3.6 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "python36"
+      ],
+      "range": [
+        {
+          "lt": "3.6.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Python changelog:</p>\n\t<blockquote cite=\"https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-9-final\">\n\t  <p>bpo-35907: CVE-2019-9948: Avoid file reading by disallowing local-file://\n\t    and local_file:// URL schemes in URLopener().open() and URLopener().retrieve()\n\t    of urllib.request.</p>\n\t  <p>bpo-36742: Fixes mishandling of pre-normalization characters in urlsplit().</p>\n\t  <p>bpo-30458: Address CVE-2019-9740 by disallowing URL paths with embedded\n\t    whitespace or control characters through into the underlying http client\n\t    request. Such potentially malicious header injection URLs now cause an\n\t    http.client.InvalidURL exception to be raised.</p>\n\t  <p>bpo-36216: Changes urlsplit() to raise ValueError when the URL contains\n\t    characters that decompose under IDNA encoding (NFKC-normalization) into\n\t    characters that affect how the URL is parsed.</p>\n\t  <p>bpo-33529: Prevent fold function used in email header encoding from\n\t    entering infinite loop when there are too many non-ASCII characters in\n\t    a header.</p>\n\t  <p>bpo-35121: Don't send cookies of domain A without Domain attribute to\n\t    domain B when domain A is a suffix match of domain B while using a cookiejar\n\t    with http.cookiejar.DefaultCookiePolicy policy. Patch by Karthikeyan\n\t    Singaravelan.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-9-final"
+    ],
+    "cvename": [
+      "CVE-2019-9948",
+      "CVE-2019-9740"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-03-13",
+    "entry": "2019-07-08"
+  }
+}

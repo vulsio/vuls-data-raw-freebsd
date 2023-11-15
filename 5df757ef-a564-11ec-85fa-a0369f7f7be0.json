@@ -1,0 +1,44 @@
+{
+  "vid": "5df757ef-a564-11ec-85fa-a0369f7f7be0",
+  "topic": "wordpress -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "wordpress",
+        "fr-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "5.9.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "zh_CN-wordpress",
+        "th_TW-wordpress",
+        "ja-wordpress",
+        "ru-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "5.9.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>wordpress developers reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2022/03/wordpress-5-9-2-security-maintenance-release/\">\n\t  <p>This security and maintenance release features 1 bug fix in addition to 3 security fixes.\n\t    Because this is a security release, it is recommended that you update your sites immediately.\n\t    All versions since WordPress 3.7 have also been updated.\n\t    The security team would like to thank the following people for responsively reporting\n\t    vulnerabilities, allowing them to be fixed in this release:\n\t    -Melar Dev, for finding a Prototype Pollution Vulnerability in a jQuery dependency\n\t    -Ben Bidner of the WordPress security team, for finding a Stored Cross Site Scripting Vulnerability\n\t    -Researchers from Johns Hopkins University, for finding a Prototype Pollution Vulnerability in the block editor</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wordpress.org/news/2022/03/wordpress-5-9-2-security-maintenance-release/"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-03-11",
+    "entry": "2022-03-16"
+  }
+}

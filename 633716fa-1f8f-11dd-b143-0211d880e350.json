@@ -1,0 +1,32 @@
+{
+  "vid": "633716fa-1f8f-11dd-b143-0211d880e350",
+  "topic": "vorbis-tools -- Speex header processing vulnerability",
+  "affects": [
+    {
+      "name": [
+        "vorbis-tools"
+      ],
+      "range": [
+        {
+          "lt": "1.2.0_2,3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/29882/\">\n\t  <p>A vulnerability has been reported in vorbis-tools,\n\t    which can potentially be exploited by malicious people\n\t    to compromise a user's system.</p>\n\t  <p>The vulnerability is caused due to an input validation\n\t    error when processing Speex headers, which can be\n\t    exploited via a specially crafted Speex stream containing\n\t    a negative \"modeID\" field in the header.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/29882/"
+    ],
+    "cvename": [
+      "CVE-2008-1686"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-04-18",
+    "entry": "2008-05-11"
+  }
+}

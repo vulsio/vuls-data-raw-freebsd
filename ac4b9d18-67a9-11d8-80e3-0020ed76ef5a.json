@@ -1,0 +1,37 @@
+{
+  "vid": "ac4b9d18-67a9-11d8-80e3-0020ed76ef5a",
+  "topic": "fetchmail -- denial-of-service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "fetchmail"
+      ],
+      "range": [
+        {
+          "lt": "6.2.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dave Jones discovered a denial-of-service vulnerability\n\t  in fetchmail. An email message containing a very long line\n\t  could cause fetchmail to segfault due to missing NUL\n\t  termination in transact.c.</p>\n\t<p>Eric Raymond decided not to mention this issue in the\n\t  release notes for fetchmail 6.2.5, but it was fixed\n\t  there.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xforce.iss.net/xforce/xfdb/13450",
+      "http://www.openbsd.org/cgi-bin/cvsweb/ports/mail/fetchmail/patches/Attic/patch-rfc822_c?rev=1.1"
+    ],
+    "cvename": [
+      "CVE-2003-0792"
+    ],
+    "bid": [
+      "8843"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-10-16",
+    "entry": "2004-02-25",
+    "modified": "2012-09-04"
+  }
+}

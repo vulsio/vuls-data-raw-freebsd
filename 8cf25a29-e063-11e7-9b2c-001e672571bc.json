@@ -1,0 +1,33 @@
+{
+  "vid": "8cf25a29-e063-11e7-9b2c-001e672571bc",
+  "topic": "rubygem-passenger -- arbitrary file read vulnerability",
+  "affects": [
+    {
+      "name": [
+        "rubygem-passenger"
+      ],
+      "range": [
+        {
+          "lt": "5.1.11",
+          "ge": "5.0.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Phusion reports:</p>\n\t<blockquote cite=\"https://blog.phusion.nl/2017/10/13/passenger-security-advisory-5-1-11/\">\n\t  <p>The cPanel Security Team discovered a vulnerability in Passenger\n\t    that allows users to list the contents of arbitrary files on the\n\t    system. CVE-2017-16355 has been assigned to this issue.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.phusion.nl/2017/10/13/passenger-security-advisory-5-1-11/"
+    ],
+    "cvename": [
+      "CVE-2017-16355"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-10-13",
+    "entry": "2017-12-18"
+  }
+}

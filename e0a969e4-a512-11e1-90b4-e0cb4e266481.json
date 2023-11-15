@@ -1,0 +1,50 @@
+{
+  "vid": "e0a969e4-a512-11e1-90b4-e0cb4e266481",
+  "topic": "RT -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "rt40"
+      ],
+      "range": [
+        {
+          "lt": "4.0.6",
+          "ge": "4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rt38"
+      ],
+      "range": [
+        {
+          "lt": "3.8.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>BestPractical report:</p>\n\t<blockquote cite=\"http://blog.bestpractical.com/2012/05/security-vulnerabilities-in-rt.html\">\n\t  <p>Internal audits of the RT codebase have uncovered a\n\t    number of security vulnerabilities in RT. We are releasing\n\t    versions 3.8.12 and 4.0.6 to resolve these vulnerabilities,\n\t    as well as patches which apply atop all released versions of\n\t    3.8 and 4.0.</p>\n\t  <p>The vulnerabilities addressed by 3.8.12, 4.0.6, and the\n\t    below patches include the following:</p>\n\t  <p>The previously released tool to upgrade weak password\n\t    hashes as part of CVE-2011-0009 was an incomplete fix and\n\t    failed to upgrade passwords of disabled users.</p>\n\t  <p>RT versions 3.0 and above contain a number of cross-site\n\t    scripting (XSS) vulnerabilities which allow an attacker to\n\t    run JavaScript with the user's credentials. CVE-2011-2083 is\n\t    assigned to this vulnerability.</p>\n\t  <p>RT versions 3.0 and above are vulnerable to multiple\n\t    information disclosure vulnerabilities. This includes the\n\t    ability for privileged users to expose users' previous\n\t    password hashes -- this vulnerability is particularly\n\t    dangerous given RT's weak hashing previous to the fix in\n\t    CVE-2011-0009. A separate vulnerability allows privileged\n\t    users to obtain correspondence history for any ticket in\n\t    RT. CVE-2011-2084 is assigned to this vulnerability.</p>\n\t  <p>All publicly released versions of RT are vulnerable to\n\t    cross-site request forgery (CSRF). CVE-2011-2085 is assigned\n\t    to this vulnerability.</p>\n\t  <p>We have also added a separate configuration option\n\t    ($RestrictLoginReferrer) to prevent login CSRF, a different\n\t    class of CSRF attack.</p>\n\t  <p>RT versions 3.6.1 and above are vulnerable to a remote\n\t    execution of code vulnerability if the optional VERP\n\t    configuration options ($VERPPrefix and $VERPDomain) are\n\t    enabled. RT 3.8.0 and higher are vulnerable to a limited\n\t    remote execution of code which can be leveraged for\n\t    privilege escalation. RT 4.0.0 and above contain a\n\t    vulnerability in the global $DisallowExecuteCode option,\n\t    allowing sufficiently privileged users to still execute code\n\t    even if RT was configured to not allow it. CVE-2011-4458 is\n\t    assigned to this set of vulnerabilities.</p>\n\t  <p>RT versions 3.0 and above may, under some circumstances,\n\t    still respect rights that a user only has by way of a\n\t    currently-disabled group. CVE-2011-4459 is assigned to this\n\t    vulnerability.</p>\n\t  <p>RT versions 2.0 and above are vulnerable to a SQL\n\t    injection attack, which allow privileged users to obtain\n\t    arbitrary information from the database. CVE-2011-4460 is\n\t    assigned to this vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.bestpractical.com/2012/05/security-vulnerabilities-in-rt.html"
+    ],
+    "cvename": [
+      "CVE-2011-0009",
+      "CVE-2011-2082",
+      "CVE-2011-2083",
+      "CVE-2011-2084",
+      "CVE-2011-2085",
+      "CVE-2011-4458",
+      "CVE-2011-4459",
+      "CVE-2011-4460"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-05-22",
+    "entry": "2012-05-23"
+  }
+}

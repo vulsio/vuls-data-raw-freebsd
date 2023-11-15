@@ -1,0 +1,35 @@
+{
+  "vid": "1fbd6db1-a4e4-11e5-b864-14dae9d210b8",
+  "topic": "py-amf -- input sanitization errors",
+  "affects": [
+    {
+      "name": [
+        "py27-amf",
+        "py32-amf",
+        "py33-amf",
+        "py34-amf"
+      ],
+      "range": [
+        {
+          "lt": "0.8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2015-011.html\">\n\t  <p>A specially crafted AMF payload, containing malicious\n\t    references to XML external entities, can be used to trigger Denial of\n\t    Service (DoS) conditions or arbitrarily return the contents of files\n\t    that are accessible with the running application privileges.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ocert.org/advisories/ocert-2015-011.html"
+    ],
+    "cvename": [
+      "CVE-2015-8549"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-01",
+    "entry": "2015-12-17"
+  }
+}

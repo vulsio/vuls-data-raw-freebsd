@@ -1,0 +1,39 @@
+{
+  "vid": "78ad2525-9d0c-11db-a5f6-000c6ec775d9",
+  "topic": "opera -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "opera-devel",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "9.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>iDefense reports:</p>\n\t<blockquote cite=\"http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=457\">\n\t  <p>The vulnerability specifically exists due to Opera\n\t    improperly processing a JPEG DHT marker. The DHT marker is\n\t    used to define a Huffman Table which is used for decoding\n\t    the image data. An invalid number of index bytes in the\n\t    DHT marker will trigger a heap overflow with partially\n\t    user controlled data.</p>\n\t  <p>Exploitation of this vulnerability would allow an\n\t    attacker to execute arbitrary code on the affected\n\t    host. The attacker would first need to construct a website\n\t    containing the malicious image and trick the vulnerable\n\t    user into visiting the site. This would trigger the\n\t    vulnerability and allow the code to execute with the\n\t    privileges of the local user.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=458\">\n\t  <p>A flaw exists within Opera's Javascript SVG\n\t    implementation. When processing a\n\t    createSVGTransformFromMatrix request Opera does not\n\t    properly validate the type of object passed to the\n\t    function. Passing an incorrect object to this function can\n\t    result in it using a pointer that is user controlled when\n\t    it attempts to make the virtual function call.</p>\n\t  <p>Exploitation of this vulnerability would allow an\n\t    attacker to execute arbitrary code on the affected\n\t    host. The attacker would first need to construct a website\n\t    containing the malicious JavaScript and trick the\n\t    vulnerable user into visiting the site. This would trigger\n\t    the vulnerability and allow the code to execute with the\n\t    privileges of the local user.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=457",
+      "http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=458",
+      "http://www.opera.com/support/search/supsearch.dml?index=851",
+      "http://www.opera.com/support/search/supsearch.dml?index=852"
+    ],
+    "cvename": [
+      "CVE-2007-0126",
+      "CVE-2007-0127"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-01-05",
+    "entry": "2007-01-05",
+    "modified": "2010-05-12"
+  }
+}

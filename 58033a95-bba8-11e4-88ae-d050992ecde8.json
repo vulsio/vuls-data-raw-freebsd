@@ -1,0 +1,63 @@
+{
+  "vid": "58033a95-bba8-11e4-88ae-d050992ecde8",
+  "topic": "bind -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "bind910",
+        "bind910-base"
+      ],
+      "range": [
+        {
+          "lt": "9.10.1P2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind99",
+        "bind99-base"
+      ],
+      "range": [
+        {
+          "lt": "9.9.6P2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "9.3_10",
+          "ge": "9.3"
+        },
+        {
+          "lt": "8.4_24",
+          "ge": "8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01235\">\n\t  <p>When configured to perform DNSSEC validation, named can\n\t    crash when encountering a rare set of conditions in the\n\t    managed trust anchors.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/article/AA-01235"
+    ],
+    "cvename": [
+      "CVE-2015-1349"
+    ],
+    "freebsd_sa": [
+      "SA-15:05.bind"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-02-18",
+    "entry": "2015-02-23",
+    "modified": "2016-08-09"
+  }
+}

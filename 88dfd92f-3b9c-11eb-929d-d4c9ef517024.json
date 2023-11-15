@@ -1,0 +1,44 @@
+{
+  "vid": "88dfd92f-3b9c-11eb-929d-d4c9ef517024",
+  "topic": "LibreSSL -- NULL pointer dereference",
+  "affects": [
+    {
+      "name": [
+        "libressl"
+      ],
+      "range": [
+        {
+          "lt": "3.2.3",
+          "gt": "3.2.0"
+        },
+        {
+          "lt": "3.1.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libressl-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The LibreSSL project reports:</p>\n\t<blockquote cite=\"https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.2.3-relnotes.txt\">\n\t  <p>Malformed ASN.1 in a certificate revocation list or a timestamp\n\t    response token can lead to a NULL pointer dereference.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.2.3-relnotes.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-12-08",
+    "entry": "2020-12-11",
+    "modified": "2020-12-12"
+  }
+}

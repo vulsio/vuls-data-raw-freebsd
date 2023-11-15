@@ -1,0 +1,34 @@
+{
+  "vid": "bb0a8795-15dc-11df-bf0a-002170daae37",
+  "topic": "wireshark -- LWRES vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wireshark",
+        "wireshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "1.2.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wireshark project reports:</p>\n\t<blockquote cite=\"http://www.wireshark.org/security/wnpa-sec-2010-02.html\">\n\t  <p>Babi discovered several buffer overflows in the\n\t    LWRES dissector.</p>\n\t  <p>It may be possible to make Wireshark crash remotely\n\t    or by convincing someone to read a malformed packet\n\t    trace file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/38257/",
+      "http://www.wireshark.org/security/wnpa-sec-2010-02.html"
+    ],
+    "cvename": [
+      "CVE-2010-0304"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-01-27",
+    "entry": "2010-02-10"
+  }
+}

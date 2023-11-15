@@ -1,0 +1,37 @@
+{
+  "vid": "50ad9a9a-1e28-11e9-98d7-0050562a4d7b",
+  "topic": "www/py-requests -- Information disclosure vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py27-requests",
+        "py35-requests",
+        "py36-requests",
+        "py37-requests"
+      ],
+      "range": [
+        {
+          "lt": "2.20.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-18074\">\n\t  <p>The Requests package before 2.20.0 for Python sends an HTTP Authorization header\n\t     to an http URI upon receiving a same-hostname https-to-http redirect, which makes\n\t     it easier for remote attackers to discover credentials by sniffing the network.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-18074",
+      "https://nvd.nist.gov/vuln/detail/CVE-2018-18074",
+      "https://github.com/requests/requests/issues/4716",
+      "https://github.com/requests/requests/pull/4718",
+      "https://github.com/requests/requests/commit/c45d7c49ea75133e52ab22a8e9e13173938e36ff"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-27",
+    "entry": "2019-01-22",
+    "modified": "2019-01-27"
+  }
+}

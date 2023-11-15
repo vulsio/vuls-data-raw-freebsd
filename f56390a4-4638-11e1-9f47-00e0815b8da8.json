@@ -1,0 +1,42 @@
+{
+  "vid": "f56390a4-4638-11e1-9f47-00e0815b8da8",
+  "topic": "FreeBSD -- Buffer overflow in handling of UNIX socket addresses",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "7.3_8",
+          "ge": "7.3"
+        },
+        {
+          "lt": "7.4_4",
+          "ge": "7.4"
+        },
+        {
+          "lt": "8.1_6",
+          "ge": "8.1"
+        },
+        {
+          "lt": "8.2_4",
+          "ge": "8.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-11:05.unix.asc\">\n\t<h1>Problem Description:</h1>\n\t<p>When a UNIX-domain socket is attached to a location using the\n\t  bind(2) system call, the length of the provided path is not\n\t  validated.  Later, when this address was returned via other system\n\t  calls, it is copied into a fixed-length buffer.</p>\n\t<p>Linux uses a larger socket address structure for UNIX-domain\n\t  sockets than FreeBSD, and the FreeBSD's linux emulation code did\n\t  not translate UNIX-domain socket addresses into the correct size\n\t  of structure.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-11:05.unix"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-09-28",
+    "entry": "2012-01-29"
+  }
+}

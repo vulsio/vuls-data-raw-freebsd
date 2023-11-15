@@ -1,0 +1,58 @@
+{
+  "vid": "3dd6ccf4-a3c6-11e7-a52e-0800279f2ff8",
+  "topic": "OpenVPN -- out-of-bounds write in legacy key-method 1",
+  "affects": [
+    {
+      "name": [
+        "openvpn-polarssl"
+      ],
+      "range": [
+        {
+          "lt": "2.3.18"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openvpn-mbedtls"
+      ],
+      "range": [
+        {
+          "lt": "2.4.4",
+          "ge": "2.4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openvpn"
+      ],
+      "range": [
+        {
+          "lt": "2.4.4",
+          "ge": "2.4.0"
+        },
+        {
+          "lt": "2.3.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Steffan Karger reports:</p>\n\t<blockquote cite=\"https://community.openvpn.net/openvpn/wiki/CVE-2017-12166\">\n\t  <p>The bounds check in read_key() was performed after using the value,\n\t    instead of before. If 'key-method 1' is used, this allowed an\n\t    attacker to send a malformed packet to trigger a stack buffer\n\t    overflow. [...]</p>\n\t  <p>Note that 'key-method 1' has been replaced by 'key method 2' as the\n\t    default in OpenVPN 2.0 (released on 2005-04-17), and explicitly\n\t    deprecated in 2.4 and marked for removal in 2.5. This should limit\n\t    the amount of users impacted by this issue.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://community.openvpn.net/openvpn/wiki/CVE-2017-12166",
+      "https://www.mail-archive.com/openvpn-devel@lists.sourceforge.net/msg15492.html"
+    ],
+    "cvename": [
+      "CVE-2017-12166"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-09-21",
+    "entry": "2017-09-27"
+  }
+}

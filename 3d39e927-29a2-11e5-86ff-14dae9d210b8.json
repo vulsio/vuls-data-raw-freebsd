@@ -1,0 +1,49 @@
+{
+  "vid": "3d39e927-29a2-11e5-86ff-14dae9d210b8",
+  "topic": "php -- use-after-free vulnerability",
+  "affects": [
+    {
+      "name": [
+        "php56-sqlite3"
+      ],
+      "range": [
+        {
+          "lt": "5.6.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55-sqlite3"
+      ],
+      "range": [
+        {
+          "lt": "5.5.27"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php5-sqlite3"
+      ],
+      "range": [
+        {
+          "lt": "5.4.43"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Symeon Paraschoudis reports:</p>\n\t<blockquote cite=\"https://bugs.php.net/bug.php?id=69972\">\n\t  <p>Use-after-free vulnerability in sqlite3SafetyCheckSickOrOk()</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.php.net/bug.php?id=69972"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-30",
+    "entry": "2015-07-13"
+  }
+}

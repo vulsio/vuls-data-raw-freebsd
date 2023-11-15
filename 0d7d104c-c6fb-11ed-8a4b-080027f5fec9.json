@@ -1,0 +1,37 @@
+{
+  "vid": "0d7d104c-c6fb-11ed-8a4b-080027f5fec9",
+  "topic": "curl -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "8.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Harry Sintonen reports:</p>\n\t<blockquote cite=\"https://curl.se/docs/security.html\">\n\t  <dl>\n\t    <dt>CVE-2023-27533</dt>\n\t    <dd>\n\t      curl supports communicating using the TELNET protocol\n\t      and as a part of this it offers users to pass on user\n\t      name and \"telnet options\" for the server\n\t      negotiation.\n\n\t      Due to lack of proper input scrubbing and without it\n\t      being the documented functionality, curl would pass on\n\t      user name and telnet options to the server as\n\t      provided. This could allow users to pass in carefully\n\t      crafted content that pass on content or do option\n\t      negotiation without the application intending to do\n\t      so. In particular if an application for example allows\n\t      users to provide the data or parts of the data.\n\t    </dd>\n\t    <dt>CVE-2023-27534</dt>\n\t    <dd>\n\t      curl supports SFTP transfers. curl's SFTP implementation\n\t      offers a special feature in the path component of URLs:\n\t      a tilde (~) character as the first path element in the\n\t      path to denotes a path relative to the user's home\n\t      directory. This is supported because of wording in the\n\t      once proposed to-become RFC draft that was to dictate\n\t      how SFTP URLs work.\n\n\t      Due to a bug, the handling of the tilde in SFTP path did\n\t      however not only replace it when it is used stand-alone\n\t      as the first path element but also wrongly when used as\n\t      a mere prefix in the first element.\n\n\t      Using a path like /~2/foo when accessing a server using\n\t      the user dan (with home directory /home/dan) would then\n\t      quite surprisingly access the file /home/dan2/foo.\n\n\t      This can be taken advantage of to circumvent filtering\n\t      or worse.\n\t    </dd>\n\t    <dt>CVE-2023-27535</dt>\n\t    <dd>\n\t      libcurl would reuse a previously created FTP connection\n\t      even when one or more options had been changed that\n\t      could have made the effective user a very different one,\n\t      thus leading to the doing the second transfer with wrong\n\t      credentials.\n\n\t      libcurl keeps previously used connections in a\n\t      connection pool for subsequent transfers to reuse if one\n\t      of them matches the setup. However, several FTP settings\n\t      were left out from the configuration match checks,\n\t      making them match too easily. The settings in questions\n\t      are CURLOPT_FTP_ACCOUNT,\n\t      CURLOPT_FTP_ALTERNATIVE_TO_USER, CURLOPT_FTP_SSL_CCC and\n\t      CURLOPT_USE_SSL level.\n\t    </dd>\n\t    <dt>CVE-2023-27536</dt>\n\t    <dd>\n\t      ibcurl would reuse a previously created connection even\n\t      when the GSS delegation (CURLOPT_GSSAPI_DELEGATION)\n\t      option had been changed that could have changed the\n\t      user's permissions in a second transfer.\n\n\t      libcurl keeps previously used connections in a\n\t      connection pool for subsequent transfers to reuse if one\n\t      of them matches the setup. However, this GSS delegation\n\t      setting was left out from the configuration match\n\t      checks, making them match too easily, affecting\n\t      krb5/kerberos/negotiate/GSSAPI transfers.\n\t    </dd>\n\t    <dt>CVE-2023-27537</dt>\n\t    <dd>\n\t      libcurl supports sharing HSTS data between separate\n\t      \"handles\". This sharing was introduced without\n\t      considerations for do this sharing across separate\n\t      threads but there was no indication of this fact in the\n\t      documentation.\n\n\t      Due to missing mutexes or thread locks, two threads\n\t      sharing the same HSTS data could end up doing a\n\t      double-free or use-after-free.\n\t    </dd>\n\t    <dt>CVE-2023-27538</dt>\n\t    <dd>\n\t      libcurl would reuse a previously created connection even\n\t      when an SSH related option had been changed that should\n\t      have prohibited reuse.\n\n\t      libcurl keeps previously used connections in a\n\t      connection pool for subsequent transfers to reuse if one\n\t      of them matches the setup. However, two SSH settings\n\t      were left out from the configuration match checks,\n\t      making them match too easily.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.se/docs/security.html"
+    ],
+    "cvename": [
+      "CVE-2023-27533",
+      "CVE-2023-27534",
+      "CVE-2023-27535",
+      "CVE-2023-27536",
+      "CVE-2023-27537",
+      "CVE-2023-27538"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-20",
+    "entry": "2023-03-20"
+  }
+}

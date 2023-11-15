@@ -1,0 +1,122 @@
+{
+  "vid": "18e5428f-ae7c-11d9-837d-000e0c2e438a",
+  "topic": "jdk -- jar directory traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "jdk"
+      ],
+      "range": [
+        {
+          "le": "1.2.2p11_3"
+        },
+        {
+          "ge": "1.3.*",
+          "le": "1.3.1p9_4"
+        },
+        {
+          "ge": "1.4.*",
+          "le": "1.4.2p7"
+        },
+        {
+          "ge": "1.5.*",
+          "le": "1.5.0p1_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-ibm-jdk"
+      ],
+      "range": [
+        {
+          "le": "1.4.2_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-sun-jdk"
+      ],
+      "range": [
+        {
+          "le": "1.4.2.08_1"
+        },
+        {
+          "eq": "1.5.0b1"
+        },
+        {
+          "eq": "1.5.0b1,1"
+        },
+        {
+          "ge": "1.5.0,2",
+          "le": "1.5.0.02,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-blackdown-jdk"
+      ],
+      "range": [
+        {
+          "le": "1.4.2_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "diablo-jdk"
+      ],
+      "range": [
+        {
+          "le": "1.3.1.0_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "diablo-jdk-freebsd6"
+      ],
+      "range": [
+        {
+          "le": "i386.1.5.0.07.00"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-jdk"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Pluf has discovered a vulnerability in Sun Java JDK/SDK,\n\t  which potentially can be exploited by malicious people to\n\t  compromise a user's system.</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111331593310508\">\n\t  <p>The jar tool does not check properly if the files to be\n\t    extracted have the string \"../\" on its names, so it's\n\t    possible for an attacker to create a malicious jar file in\n\t    order to overwrite arbitrary files within the filesystem.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securiteam.com/securitynews/5IP0C0AFGW.html",
+      "http://secunia.com/advisories/14902/"
+    ],
+    "cvename": [
+      "CVE-2005-1080"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111331593310508",
+        "msgid": "200504120226.10559.pluf@7a69ezine.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-04-11",
+    "entry": "2005-04-16",
+    "modified": "2006-09-12"
+  }
+}

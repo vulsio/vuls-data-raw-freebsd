@@ -1,0 +1,37 @@
+{
+  "vid": "32c92a75-aa71-11ea-92ab-00163e433440",
+  "topic": "FreeBSD -- USB HID descriptor parsing error",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.1_6",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.3_10",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>If the push/pop level of the USB HID state is not restored within\n\tthe processing of the same HID item, an invalid memory location may be\n\tused for subsequent HID item processing.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker with physical access to a USB port may be able to use a\n\tspecially crafted USB device to gain kernel or user-space code execution.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-7456"
+    ],
+    "freebsd_sa": [
+      "SA-20:17.usb"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-06-03",
+    "entry": "2020-06-09"
+  }
+}

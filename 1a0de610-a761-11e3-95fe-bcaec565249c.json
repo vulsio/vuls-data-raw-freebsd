@@ -1,0 +1,29 @@
+{
+  "vid": "1a0de610-a761-11e3-95fe-bcaec565249c",
+  "topic": "freetype2 -- Out of bounds read/write",
+  "affects": [
+    {
+      "name": [
+        "freetype2"
+      ],
+      "range": [
+        {
+          "lt": "2.5.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mateusz Jurczyk reports:</p>\n\t<blockquote cite=\"http://savannah.nongnu.org/bugs/?41697\">\n\t  <p>Out of bounds stack-based read/write in\n\t    cf2_hintmap_build.</p>\n\t  <p>This is a critical vulnerability in the CFF Rasterizer\n\t    code recently contributed by Adobe, leading to potential\n\t    arbitrary code execution in the context of the FreeType2\n\t    library client.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://savannah.nongnu.org/bugs/?41697"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-02-25",
+    "entry": "2014-03-09"
+  }
+}

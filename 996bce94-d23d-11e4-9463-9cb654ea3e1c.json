@@ -1,0 +1,35 @@
+{
+  "vid": "996bce94-d23d-11e4-9463-9cb654ea3e1c",
+  "topic": "libuv -- incorrect revocation order while relinquishing privileges",
+  "affects": [
+    {
+      "name": [
+        "node010"
+      ],
+      "range": [
+        {
+          "lt": "0.10.36"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Nodejs releases reports:</p>\n\t<blockquote cite=\"http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable\">\n\t  <h5>CVE-2015-0278</h5>\n\t  <p>This may potentially allow an attacker to gain elevated privileges.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable"
+    ],
+    "cvename": [
+      "CVE-2015-0278"
+    ],
+    "freebsd_pr": [
+      "ports/198861"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-14",
+    "entry": "2015-03-24"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "vid": "741f8841-9c6b-11d9-9dbe-000a95bc6fae",
+  "topic": "firefox -- arbitrary code execution from sidebar panel",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Mozilla Foundation Security Advisory states:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-31.html\">\n\t  <p>If a user bookmarked a malicious page as a Firefox\n\t    sidebar panel that page could execute arbitrary programs\n\t    by opening a privileged page and injecting javascript into\n\t    it.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/mfsa2005-31.html"
+    ],
+    "cvename": [
+      "CVE-2005-0402"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-03-03",
+    "entry": "2005-03-24"
+  }
+}

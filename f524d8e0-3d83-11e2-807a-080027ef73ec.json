@@ -1,0 +1,52 @@
+{
+  "vid": "f524d8e0-3d83-11e2-807a-080027ef73ec",
+  "topic": "bogofilter -- heap corruption by invalid base64 input",
+  "affects": [
+    {
+      "name": [
+        "bogofilter"
+      ],
+      "range": [
+        {
+          "lt": "1.2.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bogofilter-sqlite"
+      ],
+      "range": [
+        {
+          "lt": "1.2.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bogofilter-tc"
+      ],
+      "range": [
+        {
+          "lt": "1.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>David Relson reports:</p>\n\t<blockquote cite=\"https://bogofilter.svn.sourceforge.net/svnroot/bogofilter/trunk/bogofilter/NEWS\">\n\t  <p>Fix a heap corruption in base64 decoder on invalid input.\n\t\tAnalysis and patch by Julius Plenz, [FU Berlin, Germany].</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bogofilter.sourceforge.net/security/bogofilter-SA-2012-01"
+    ],
+    "cvename": [
+      "CVE-2012-5468"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-10-17",
+    "entry": "2012-12-03"
+  }
+}

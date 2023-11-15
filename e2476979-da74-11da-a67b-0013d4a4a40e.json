@@ -1,0 +1,44 @@
+{
+  "vid": "e2476979-da74-11da-a67b-0013d4a4a40e",
+  "topic": "firefox -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.5.0.3,1",
+          "gt": "1.5.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.5.0.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports for\n\t  deleted object reference when designMode=\"on\"</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/2006/mfsa2006-30.html\">\n\t  <p>Martijn Wargers and Nick Mott each described crashes that\n\t    were discovered to ultimately stem from the same root cause:\n\t    attempting to use a deleted controller context when designMode\n\t    was turned on. This generally results in crashing the browser,\n\t    but in theory references to deleted objects can be abused to\n\t    run malicious code.</p>\n\t  <p>\"splices\" reported the same crash at the fan site MozillaZine and\n\t    on Bugtraq, incorrectly describing it as a buffer overflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-30.html"
+    ],
+    "cvename": [
+      "CVE-2006-1993"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-05-02",
+    "entry": "2006-05-03",
+    "modified": "2006-05-05"
+  }
+}

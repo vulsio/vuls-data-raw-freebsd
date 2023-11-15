@@ -1,0 +1,55 @@
+{
+  "vid": "a0089e18-fc9e-11e4-bc58-001e67150279",
+  "topic": "rubygems -- request hijacking vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ruby20-gems"
+      ],
+      "range": [
+        {
+          "lt": "2.4.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby21-gems"
+      ],
+      "range": [
+        {
+          "lt": "2.4.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby22-gems"
+      ],
+      "range": [
+        {
+          "lt": "2.4.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jonathan Claudius reports:</p>\n\t<blockquote cite=\"http://blog.rubygems.org/2015/05/14/CVE-2015-3900.html\">\n\t  <p>RubyGems provides the ability of a domain to direct clients to a\n\t    separate host that is used to fetch gems and make API calls against.\n\t    This mechanism is implemented via DNS, specifically a SRV record\n\t    _rubygems._tcp under the original requested domain.</p>\n\t  <p>RubyGems did not validate the hostname returned in the SRV record\n\t    before sending requests to it. This left clients open to a DNS\n\t    hijack attack, whereby an attacker could return a SRV of their\n\t    choosing and get the client to use it.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.rubygems.org/2015/05/14/CVE-2015-3900.html"
+    ],
+    "cvename": [
+      "CVE-2015-3900"
+    ],
+    "freebsd_pr": [
+      "ports/200264"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-05-14",
+    "entry": "2015-05-17"
+  }
+}

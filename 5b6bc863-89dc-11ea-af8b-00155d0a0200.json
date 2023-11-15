@@ -1,0 +1,35 @@
+{
+  "vid": "5b6bc863-89dc-11ea-af8b-00155d0a0200",
+  "topic": "ceph14 -- multiple security issues",
+  "affects": [
+    {
+      "name": [
+        "ceph14"
+      ],
+      "range": [
+        {
+          "lt": "14.2.9",
+          "gt": "14.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>RedHat reports:</p>\n\t<blockquote cite=\"https://access.redhat.com/security/cve/cve-2020-1759\">\n\t  <p>ceph: secure mode of msgr2 breaks both confidentiality and integrity aspects for long-lived sessions.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://access.redhat.com/security/cve/cve-2020-1760\">\n\t  <p>ceph: header-splitting in RGW GetObject has a possible XSS.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openwall.com/lists/oss-security/2020/04/07/2",
+      "https://www.openwall.com/lists/oss-security/2020/04/07/1"
+    ],
+    "cvename": [
+      "CVE-2020-1759",
+      "CVE-2020-1760"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-07",
+    "entry": "2020-04-14"
+  }
+}

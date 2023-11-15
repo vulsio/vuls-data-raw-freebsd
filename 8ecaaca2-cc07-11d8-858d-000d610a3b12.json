@@ -1,0 +1,37 @@
+{
+  "vid": "8ecaaca2-cc07-11d8-858d-000d610a3b12",
+  "topic": "Linux binary compatibility mode input validation error",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "4.9_10",
+          "ge": "4.9"
+        },
+        {
+          "lt": "4.8_23",
+          "ge": "4.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A programming error in the handling of some Linux system\n\t  calls may result in memory locations being accessed without\n\t  proper validation.</p>\n\t<p>It may be possible for a local attacker to read and/or\n\t  overwrite portions of kernel memory, resulting in disclosure\n\t  of sensitive information or potential privilege escalation.\n\t  A local attacker can cause a system panic.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0602"
+    ],
+    "freebsd_sa": [
+      "SA-04:13.linux"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-06-18",
+    "entry": "2004-06-30"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "vid": "908f4cf2-1e8b-11e0-a587-001b77d09812",
+  "topic": "sudo -- local privilege escalation",
+  "affects": [
+    {
+      "name": [
+        "sudo"
+      ],
+      "range": [
+        {
+          "lt": "1.7.4.5",
+          "ge": "1.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.sudo.ws/sudo/alerts/runas_group_pw.html\">\n\t  <p>Beginning with sudo version 1.7.0 it has been possible\n\t    to grant permission to run a command using a specified\n\t    group via sudo's -g option (run as group), if allowed by\n\t    the sudoers file. A flaw exists in sudo's password\n\t    checking logic that allows a user to run a command\n\t    with only the group changed without being prompted\n\t    for a password.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.sudo.ws/sudo/alerts/runas_group_pw.html",
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=609641"
+    ],
+    "cvename": [
+      "CVE-2011-0010"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-01-11",
+    "entry": "2011-01-13"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "f1bf28c5-d447-11e5-b2bd-002590263bf5",
+  "topic": "xdelta3 -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "xdelta3"
+      ],
+      "range": [
+        {
+          "lt": "3.0.9,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stepan Golosunov reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/02/08/1\">\n\t  <p>Buffer overflow was found and fixed in xdelta3 binary diff tool\n\t    that allows arbitrary code execution from input files at least on\n\t    some systems.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2016/02/08/1",
+      "https://github.com/jmacd/xdelta-devel/commit/ef93ff74203e030073b898c05e8b4860b5d09ef2"
+    ],
+    "cvename": [
+      "CVE-2014-9765"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-10-08",
+    "entry": "2016-02-16"
+  }
+}

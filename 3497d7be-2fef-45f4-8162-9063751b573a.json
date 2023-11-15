@@ -1,0 +1,37 @@
+{
+  "vid": "3497d7be-2fef-45f4-8162-9063751b573a",
+  "topic": "fetchmail -- remote root/code injection from malicious POP3 server",
+  "affects": [
+    {
+      "name": [
+        "fetchmail"
+      ],
+      "range": [
+        {
+          "lt": "6.2.5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>fetchmail's POP3/UIDL code does not truncate received UIDs properly.\n\t  A malicious or compromised POP3 server can thus corrupt fetchmail's\n\t  stack and inject code when fetchmail is using UIDL, either through\n\t  configuration, or as a result of certain server capabilities. Note\n\t  that fetchmail is run as root on some sites, so an attack might\n\t  compromise the root account and thus the whole machine.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=212762",
+      "http://www.fetchmail.info/fetchmail-SA-2005-01.txt"
+    ],
+    "cvename": [
+      "CVE-2005-2335"
+    ],
+    "freebsd_pr": [
+      "ports/83805"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-20",
+    "entry": "2005-07-20",
+    "modified": "2005-07-21"
+  }
+}

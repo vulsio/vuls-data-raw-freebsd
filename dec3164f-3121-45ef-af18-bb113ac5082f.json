@@ -1,0 +1,42 @@
+{
+  "vid": "dec3164f-3121-45ef-af18-bb113ac5082f",
+  "topic": "sqlite -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "sqlite3"
+      ],
+      "range": [
+        {
+          "lt": "3.8.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3414\">\n\t  <p>SQLite before 3.8.9 does not properly implement the\n\t    dequoting of collation-sequence names, which allows\n\t    context-dependent attackers to cause a denial of service\n\t    (uninitialized memory access and application crash) or\n\t    possibly have unspecified other impact via a crafted\n\t    COLLATE clause, as demonstrated by COLLATE\"\"\"\"\"\"\"\" at the\n\t    end of a SELECT statement.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3415\">\n\t  <p>The sqlite3VdbeExec function in vdbe.c in SQLite before\n\t    3.8.9 does not properly implement comparison operators,\n\t    which allows context-dependent attackers to cause a denial\n\t    of service (invalid free operation) or possibly have\n\t    unspecified other impact via a crafted CHECK clause, as\n\t    demonstrated by CHECK(0&amp;O&gt;O) in a CREATE TABLE statement.\n\t  </p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3416\">\n\t  <p>The sqlite3VXPrintf function in printf.c in SQLite before\n\t    3.8.9 does not properly handle precision and width values\n\t    during floating-point conversions, which allows\n\t    context-dependent attackers to cause a denial of service\n\t    (integer overflow and stack-based buffer overflow) or\n\t    possibly have unspecified other impact via large integers\n\t    in a crafted printf function call in a SELECT statement.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.sqlite.org/src/info/eddc05e7bb31fae7",
+      "https://www.sqlite.org/src/info/02e3c88fbf6abdcf",
+      "https://www.sqlite.org/src/info/c494171f77dc2e5e"
+    ],
+    "cvename": [
+      "CVE-2015-3414",
+      "CVE-2015-3415",
+      "CVE-2015-3416"
+    ],
+    "mlist": [
+      {
+        "text": "http://seclists.org/fulldisclosure/2015/Apr/31"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-14",
+    "entry": "2015-04-18",
+    "modified": "2015-05-08"
+  }
+}

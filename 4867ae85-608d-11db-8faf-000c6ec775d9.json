@@ -1,0 +1,37 @@
+{
+  "vid": "4867ae85-608d-11db-8faf-000c6ec775d9",
+  "topic": "opera -- URL parsing heap overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "opera-devel",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "9.02",
+          "gt": "9.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>iDefense Labs reports:</p>\n\t<blockquote cite=\"http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=424\">\n\t  <p>Remote exploitation of a heap overflow vulnerability\n\t    within version 9 of Opera Software's Opera Web browser\n\t    could allow an attacker to execute arbitrary code on the\n\t    affected host.</p>\n\t  <p>A flaw exists within Opera when parsing a tag that\n\t    contains a URL. A heap buffer with a constant size of 256\n\t    bytes is allocated to store the URL, and the tag's URL is\n\t    copied into this buffer without sufficient bounds checking\n\t    of its length.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=424",
+      "http://secunia.com/advisories/22218/",
+      "http://www.opera.com/support/search/supsearch.dml?index=848"
+    ],
+    "cvename": [
+      "CVE-2006-4819"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-10-17",
+    "entry": "2006-10-20"
+  }
+}

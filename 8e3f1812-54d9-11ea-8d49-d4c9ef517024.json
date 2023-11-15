@@ -1,0 +1,32 @@
+{
+  "vid": "8e3f1812-54d9-11ea-8d49-d4c9ef517024",
+  "topic": "WeeChat -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "weechat"
+      ],
+      "range": [
+        {
+          "lt": "2.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The WeeChat project reports:</p>\n\t<blockquote cite=\"https://weechat.org/doc/security/\">\n\t  <p>Buffer overflow when receiving a malformed IRC message 324 (channel\n\t    mode). (CVE-2020-8955)</p>\n\t  <p>Buffer overflow when a new IRC message 005 is received with longer\n\t    nick prefixes.</p>\n\t  <p>Crash when receiving a malformed IRC message 352 (WHO).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://weechat.org/doc/security/"
+    ],
+    "cvename": [
+      "CVE-2020-8955"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-02-20",
+    "entry": "2020-02-21"
+  }
+}

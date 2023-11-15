@@ -1,0 +1,41 @@
+{
+  "vid": "0cb9d5bb-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Resource exhaustion in TCP reassembly",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "10.1_16",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_21",
+          "ge": "9.3"
+        },
+        {
+          "lt": "8.4_35",
+          "ge": "8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>There is a mistake with the introduction of VNET, which\n\tconverted the global limit on the number of segments that\n\tcould belong to reassembly queues into a per-VNET limit.\n\tBecause mbufs are allocated from a global pool, in the\n\tpresence of a sufficient number of VNETs, the total number\n\tof mbufs attached to reassembly queues can grow to the total\n\tnumber of mbufs in the system, at which point all network\n\ttraffic would cease.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can establish concurrent TCP connections\n\tacross a sufficient number of VNETs and manipulate the\n\tinbound packet streams such that the maximum number of mbufs\n\tare enqueued on each reassembly queue can cause mbuf cluster\n\texhaustion on the target system, resulting in a Denial of\n\tService condition.</p>\n\t<p>As the default per-VNET limit on the number of segments\n\tthat can belong to reassembly queues is 1/16 of the total\n\tnumber of mbuf clusters in the system, only systems that\n\thave 16 or more VNET instances are vulnerable.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2015-1417"
+    ],
+    "freebsd_sa": [
+      "SA-15:15.tcp"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-28",
+    "entry": "2016-08-11"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "d51b52cf-c199-11e9-b13f-001b217b3468",
+  "topic": "Libgit2 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libgit2"
+      ],
+      "range": [
+        {
+          "lt": "0.28.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Git community reports:</p>\n\t<blockquote cite=\"https://github.com/libgit2/libgit2/releases/tag/v0.28.3\">\n\t  <p>A carefully constructed commit object with a very large number\nof parents may lead to potential out-of-bounds writes or\npotential denial of service.</p>\n\t  <p>The ProgramData configuration file is always read for compatibility\nwith Git for Windows and Portable Git installations. The ProgramData\nlocation is not necessarily writable only by administrators, so we\nnow ensure that the configuration file is owned by the administrator\nor the current user.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/libgit2/libgit2/releases/tag/v0.28.3"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-08-13",
+    "entry": "2019-08-18"
+  }
+}

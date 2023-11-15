@@ -1,0 +1,32 @@
+{
+  "vid": "d487d4fc-43a8-11ed-8b01-b42e991fc52e",
+  "topic": "zydis -- heap buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "zydis"
+      ],
+      "range": [
+        {
+          "lt": "3.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Zyantific reports:</p>\n\t<blockquote cite=\"https://github.com/zyantific/zydis/security/advisories/GHSA-q42v-hv86-3m4g\">\n\t<p>\n\tZydis users of versions v3.2.0 and older\n\tthat use the string functions provided in zycore in order to\n\tappend untrusted user data to the formatter buffer within\n\ttheir custom formatter hooks can run into heap buffer\n\toverflows. Older versions of Zydis failed to properly\n\tinitialize the string object within the formatter buffer,\n\tforgetting to initialize a few fields, leaving their value\n\tto chance. This could then in turn cause zycore functions\n\tlike ZyanStringAppend to make incorrect calculations for the\n\tnew target size, resulting in heap memory corruption.\n\t</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.cvedetails.com/cve/CVE-2021-41253"
+    ],
+    "cvename": [
+      "CVE-2021-41253"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-11-08",
+    "entry": "2022-10-04"
+  }
+}

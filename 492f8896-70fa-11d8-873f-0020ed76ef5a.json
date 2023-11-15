@@ -1,0 +1,44 @@
+{
+  "vid": "492f8896-70fa-11d8-873f-0020ed76ef5a",
+  "topic": "Apache 2 mod_ssl denial-of-service",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "ge": "2.0",
+          "le": "2.0.48_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Joe Orton reports a memory leak in Apache 2's mod_ssl.\n\t  A remote attacker may issue HTTP requests on an HTTPS\n\t  port, causing an error.  Due to a bug in processing this\n\t  condition, memory associated with the connection is\n\t  not freed.  Repeated requests can result in consuming\n\t  all available memory resources, probably resulting in\n\t  termination of the Apache process.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.apacheweek.com/features/security-20",
+      "http://cvs.apache.org/viewcvs.cgi/httpd-2.0/modules/ssl/ssl_engine_io.c?r1=1.100.2.11&r2=1.100.2.12",
+      "http://nagoya.apache.org/bugzilla/show_bug.cgi?id=27106"
+    ],
+    "cvename": [
+      "CVE-2004-0113"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=apache-cvs&m=107869699329638"
+      }
+    ],
+    "bid": [
+      "9826"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-02-20",
+    "entry": "2004-03-08",
+    "modified": "2004-05-19"
+  }
+}

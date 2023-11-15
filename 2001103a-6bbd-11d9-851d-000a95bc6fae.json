@@ -1,0 +1,48 @@
+{
+  "vid": "2001103a-6bbd-11d9-851d-000a95bc6fae",
+  "topic": "imlib -- xpm heap buffer overflows and integer overflows",
+  "affects": [
+    {
+      "name": [
+        "imlib"
+      ],
+      "range": [
+        {
+          "lt": "1.9.15_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "imlib2"
+      ],
+      "range": [
+        {
+          "lt": "1.1.2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Pavel Kankovsky reports:</p>\n\t<blockquote cite=\"https://bugzilla.fedora.us/show_bug.cgi?id=2051#c11\">\n\t  <p>Imlib affected by a variant of CAN-2004-0782 too.</p>\n\t  <p>I've discovered more vulnerabilities in Imlib\n\t    (1.9.13). In particular, it appears to be affected by a\n\t    variant of Chris Evans' libXpm flaw #1 (CAN-2004-0782, see\n\t    http://scary.beasts.org/security/CESA-2004-003.txt). Look\n\t    at the attached image, it kills ee on my 7.3.</p>\n\t</blockquote>\n\t<p>The flaws also affect imlib2.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.fedora.us/show_bug.cgi?id=2051#c11",
+      "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=138516",
+      "http://cvs.sourceforge.net/viewcvs.py/enlightenment/e17/libs/imlib2/src/modules/loaders/loader_xpm.c#rev1.3"
+    ],
+    "cvename": [
+      "CVE-2004-1025",
+      "CVE-2004-1026"
+    ],
+    "bid": [
+      "11830"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-06",
+    "entry": "2005-01-21"
+  }
+}

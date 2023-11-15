@@ -1,0 +1,34 @@
+{
+  "vid": "a30e5e44-5440-11d9-9e1e-c296ac722cb3",
+  "topic": "squid -- confusing results on empty acl declarations",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "2.5.7_5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Applying an empty ACL list results in unexpected behavior:\n\t  anything will match an empty ACL list.  For example,</p>\n\t<blockquote cite=\"http://www.squid-cache.org/bugs/show_bug.cgi?id=1166\">\n\t  <p>The meaning of the configuration gets very confusing when\n\t    we encounter empty ACLs such as</p>\n\t  <p><code>acl something src \"/path/to/empty_file.txt\"<br/>\n\t      http_access allow something somewhere</code></p>\n\t  <p>gets parsed (with warnings) as</p>\n\t  <p><code>http_access allow somewhere</code></p>\n\t  <p>And similarily if you are using proxy_auth acls without\n\t    having any auth schemes defined.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-empty_acls",
+      "http://www.squid-cache.org/bugs/show_bug.cgi?id=1166"
+    ],
+    "cvename": [
+      "CVE-2005-0194"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-21",
+    "entry": "2004-12-23",
+    "modified": "2005-02-08"
+  }
+}

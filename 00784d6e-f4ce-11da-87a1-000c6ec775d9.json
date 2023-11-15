@@ -1,0 +1,31 @@
+{
+  "vid": "00784d6e-f4ce-11da-87a1-000c6ec775d9",
+  "topic": "squirrelmail -- plugin.php local file inclusion vulnerability",
+  "affects": [
+    {
+      "name": [
+        "squirrelmail"
+      ],
+      "range": [
+        {
+          "lt": "1.4.6_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The SquirrelMail Project Team reports:</p>\n\t<blockquote cite=\"http://www.squirrelmail.org/security/issue/2006-06-01\">\n\t  <p>A security issue has been uncovered in\n\t    functions/plugin.php that could allow a remote user to\n\t    access local files on the server without requiring\n\t    login. This issue manifests itself if register_globals is\n\t    enabled, and magic_quotes_gpc is disabled.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squirrelmail.org/security/issue/2006-06-01",
+      "http://secunia.com/advisories/20406/"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-06-01",
+    "entry": "2006-06-05",
+    "modified": "2006-06-06"
+  }
+}

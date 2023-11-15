@@ -1,0 +1,36 @@
+{
+  "vid": "9855ac8e-2aec-11db-a6e2-000e0c2e438a",
+  "topic": "alsaplayer -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "alsaplayer"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Luigi Auriemma reports three vulnerabilities within\n\t  alsaplayer:</p>\n\t<blockquote cite=\"http://aluigi.altervista.org/adv/alsapbof-adv.txt\">\n\t  <ul>\n\t    <li>The function which handles the HTTP connections is\n\t      vulnerable to a buffer-overflow that happens when it uses\n\t      sscanf for copying the URL in the Location's field\n\t      received from the server into the redirect buffer of only\n\t      1024 bytes declared in http_open.</li>\n\t    <li>A buffer-overflow exists in the functions which add items\n\t      to the playlist when the GTK interface is used (so the other\n\t      interfaces are not affected by this problem): new_list_item\n\t      and CbUpdated in interface/gtk/PlaylistWindow.cpp.</li>\n\t    <li>AlsaPlayer automatically queries the CDDB server\n\t      specified in its configuration (by default\n\t      freedb.freedb.org) when the user choices the CDDA function\n\t      for playing audio CDs.  The function which queries the\n\t      server uses a buffer of 20 bytes and one of 9 for storing\n\t      the category and ID strings received from the server while\n\t      the buffer which contains this server's response is 32768\n\t      bytes long.  Naturally for exploiting this bug the attacker\n\t      must have control of the freedb server specified in the\n\t      AlsaPlayer's configuration.</li>\n\t  </ul>\n\t</blockquote>\n\t<p>These vulnerabilities could allow a remote attacker to\n\t  execute arbitrary code, possibly gaining access to the\n\t  system.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://aluigi.altervista.org/adv/alsapbof-adv.txt"
+    ],
+    "cvename": [
+      "CVE-2006-4089"
+    ],
+    "bid": [
+      "19450"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-08-09",
+    "entry": "2006-08-13",
+    "modified": "2010-05-12"
+  }
+}

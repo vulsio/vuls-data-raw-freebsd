@@ -1,0 +1,50 @@
+{
+  "vid": "2ecb7b20-d97e-11e0-b2e2-00215c6a37bb",
+  "topic": "OpenSSL -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.0_6",
+          "ge": "1.0.0"
+        },
+        {
+          "lt": "1.0.0",
+          "ge": "0.9.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-f10-openssl"
+      ],
+      "range": [
+        {
+          "lt": "0.9.8r",
+          "ge": "0.9.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OpenSSL Team reports:</p>\n\t<blockquote cite=\"http://openssl.org/news/secadv_20110906.txt\">\n\t  <p>Two security flaws have been fixed in OpenSSL 1.0.0e</p>\n\t  <p>Under certain circumstances OpenSSL's internal certificate\n\t    verification routines can incorrectly accept a CRL whose\n\t    nextUpdate field is in the past.  (CVE-2011-3207)</p>\n\t  <p>OpenSSL server code for ephemeral ECDH ciphersuites is not\n\t    thread-safe, and furthermore can crash if a client violates\n\t    the protocol by sending handshake messages in incorrect\n\t    order.  (CVE-2011-3210)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openssl.org/news/secadv_20110906.txt"
+    ],
+    "cvename": [
+      "CVE-2011-3207",
+      "CVE-2011-3210"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-09-06",
+    "entry": "2011-09-07",
+    "modified": "2014-04-10"
+  }
+}

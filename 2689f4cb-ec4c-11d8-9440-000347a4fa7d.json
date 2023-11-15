@@ -1,0 +1,39 @@
+{
+  "vid": "2689f4cb-ec4c-11d8-9440-000347a4fa7d",
+  "topic": "rsync -- path sanitizing vulnerability",
+  "affects": [
+    {
+      "name": [
+        "rsync"
+      ],
+      "range": [
+        {
+          "lt": "2.6.2_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An rsync security advisory reports:</p>\n\t<blockquote cite=\"http://samba.org/rsync/#security_aug04\">\n\t  <p>There is a path-sanitizing bug that affects daemon mode in\n\t    all recent rsync versions (including 2.6.2) but only if\n\t    chroot is disabled.</p>\n\t</blockquote>\n\t<p>The bug may allow a remote user to access files outside\n\t  of an rsync module's configured path with the privileges\n\t  configured for that module.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://samba.org/rsync/#security_aug04",
+      "http://secunia.com/advisories/12294",
+      "http://www.osvdb.org/8829"
+    ],
+    "cvename": [
+      "CVE-2004-0792"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.samba.org/archive/rsync-announce/2004/000017.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-12",
+    "entry": "2004-08-26"
+  }
+}

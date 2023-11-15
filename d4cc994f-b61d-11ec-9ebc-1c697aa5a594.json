@@ -1,0 +1,37 @@
+{
+  "vid": "d4cc994f-b61d-11ec-9ebc-1c697aa5a594",
+  "topic": "FreeBSD -- 802.11 heap buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "13.0_11",
+          "ge": "13.0"
+        },
+        {
+          "lt": "12.3_5",
+          "ge": "12.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The 802.11 beacon handling routine failed to validate the length of\n\tan IEEE 802.11s Mesh ID before copying it to a heap-allocated\n\tbuffer.</p>\n\t<h1>Impact:</h1>\n\t<p>While a FreeBSD Wi-Fi client is in scanning mode (i.e., not\n\tassociated with a SSID) a malicious beacon frame may overwrite kernel\n\tmemory, leading to remote code execution.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2022-23088"
+    ],
+    "freebsd_sa": [
+      "SA-22:07.wifi_meshid"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-04-06",
+    "entry": "2022-04-07"
+  }
+}

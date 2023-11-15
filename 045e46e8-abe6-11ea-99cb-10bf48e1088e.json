@@ -1,0 +1,34 @@
+{
+  "vid": "045e46e8-abe6-11ea-99cb-10bf48e1088e",
+  "topic": "tcpreplay -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "tcpreplay"
+      ],
+      "range": [
+        {
+          "lt": "4.3.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>fklassen on Github reports:</p>\n\t<blockquote cite=\"https://github.com/appneta/tcpreplay/releases/tag/v4.3.2\">\n\t  <p>This release fixes the following security issues:</p>\n\t  <ul>\n\t    <li>memory access in do_checksum()</li>\n\t    <li>NULL pointer dereference get_layer4_v6()</li>\n\t    <li>NULL pointer dereference get_ipv6_l4proto()</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/appneta/tcpreplay/releases/tag/v4.3.2"
+    ],
+    "cvename": [
+      "CVE-2019-8381",
+      "CVE-2019-8376",
+      "CVE-2019-8377"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-03-12",
+    "entry": "2020-06-11"
+  }
+}

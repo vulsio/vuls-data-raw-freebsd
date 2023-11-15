@@ -1,0 +1,42 @@
+{
+  "vid": "274922b8-ad20-11df-af1f-00e0814cab4e",
+  "topic": "phpmyadmin -- Several XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.3.5.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "phpMyAdmin211"
+      ],
+      "range": [
+        {
+          "lt": "2.11.10.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpMyAdmin Team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2010-5.php\">\n\t  <p>It was possible to conduct a XSS attack using crafted URLs org\n\t    POST parameters on several pages.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2010-5.php"
+    ],
+    "cvename": [
+      "CVE-2010-3056"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-08-09",
+    "entry": "2010-08-21"
+  }
+}

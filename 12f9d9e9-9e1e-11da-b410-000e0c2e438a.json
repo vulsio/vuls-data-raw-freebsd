@@ -1,0 +1,35 @@
+{
+  "vid": "12f9d9e9-9e1e-11da-b410-000e0c2e438a",
+  "topic": "phpicalendar -- cross site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpicalendar"
+      ],
+      "range": [
+        {
+          "lt": "2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Francesco Ongaro reports that phpicalendar is vulnerable for\n\t  a cross site scripting attack.  The vulnerability is caused by\n\t  improper validation of the index.php file allowing attackers\n\t  to include an arbitrary file with the .php extension</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ush.it/2005/10/25/php-icalendar-css/"
+    ],
+    "cvename": [
+      "CVE-2005-3366"
+    ],
+    "bid": [
+      "15193"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-25",
+    "entry": "2006-02-15"
+  }
+}

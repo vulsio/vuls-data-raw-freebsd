@@ -1,0 +1,59 @@
+{
+  "vid": "f4f15051-4574-11ed-81a1-080027881239",
+  "topic": "Django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py37-django32",
+        "py38-django32",
+        "py39-django32",
+        "py310-django32"
+      ],
+      "range": [
+        {
+          "lt": "3.2.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py38-django40",
+        "py39-django40",
+        "py310-django40"
+      ],
+      "range": [
+        {
+          "lt": "4.0.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py38-django41",
+        "py39-django41",
+        "py310-django41"
+      ],
+      "range": [
+        {
+          "lt": "4.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2022/oct/04/security-releases/\">\n\t  <p>CVE-2022-41323: Potential denial-of-service vulnerability in\n\t    internationalized URLs.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2022/oct/04/security-releases/"
+    ],
+    "cvename": [
+      "CVE-2022-41323"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-09-23",
+    "entry": "2022-10-06"
+  }
+}

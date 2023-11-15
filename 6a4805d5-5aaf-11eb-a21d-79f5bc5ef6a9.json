@@ -1,0 +1,34 @@
+{
+  "vid": "6a4805d5-5aaf-11eb-a21d-79f5bc5ef6a9",
+  "topic": "go -- cmd/go: packages using cgo can cause arbitrary code execution at build time; crypto/elliptic: incorrect operations on the P-224 curve",
+  "affects": [
+    {
+      "name": [
+        "go"
+      ],
+      "range": [
+        {
+          "lt": "1.15.7,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/43783\">\n\t  <p>The go command may execute arbitrary code at build time when cgo is\n\t    in use on Windows. This may occur when running \"go get\", or\n\t    any other command that builds code. Only users who build untrusted\n\t    code (and don't execute it) are affected. In addition to Windows\n\t    users, this can also affect Unix users who have \".\" listed\n\t    explicitly in their PATH and are running \"go get\" or build\n\t    commands outside of a module or with module mode disabled.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/43786\">\n\t  <p>The P224() Curve implementation can in rare circumstances generate\n\t    incorrect outputs, including returning invalid points from\n\t    ScalarMult. The crypto/x509 and golang.org/x/crypto/ocsp (but not\n\t    crypto/tls) packages support P-224 ECDSA keys, but they are not\n\t    supported by publicly trusted certificate authorities. No other\n\t    standard library or golang.org/x/crypto package supports or uses the\n\t    P-224 curve.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://golang.org/issue/43783",
+      "http://golang.org/issue/43786"
+    ],
+    "cvename": [
+      "CVE-2021-3115",
+      "CVE-2021-3114"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-01-13",
+    "entry": "2021-01-19"
+  }
+}

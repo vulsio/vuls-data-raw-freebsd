@@ -1,0 +1,35 @@
+{
+  "vid": "55b498e2-e56c-11e1-bbd5-001c25e46b1d",
+  "topic": "Several vulnerabilities found in IcedTea-Web",
+  "affects": [
+    {
+      "name": [
+        "icedtea-web"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The IcedTea project team reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=840592\">\n\t  <p>CVE-2012-3422: Use of uninitialized instance pointers</p>\n\t  <p>An uninitialized pointer use flaw was found in IcedTea-Web web\n\t    browser plugin.  A malicious web page could use this flaw make\n\t    IcedTea-Web browser plugin pass invalid pointer to a web browser.\n\t    Depending on the browser used, it may cause the browser to crash\n\t    or possibly execute arbitrary code.</p>\n\t  <p>The get_cookie_info() and get_proxy_info() call\n\t    getFirstInTableInstance() with the instance_to_id_map hash as\n\t    a parameter.  If instance_to_id_map is empty (which can happen\n\t    when plugin was recently removed), getFirstInTableInstance()\n\t    returns an uninitialized pointer.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=841345\">\n\t  <p>CVE-2012-3423: Incorrect handling of non 0-terminated strings</p>\n\t  <p>It was discovered that the IcedTea-Web web browser plugin\n\t    incorrectly assumed that all strings provided by browser are NUL\n\t    terminated, which is not guaranteed by the NPAPI (Netscape Plugin\n\t    Application Programming Interface).  When used in a browser that\n\t    does not NUL terminate NPVariant NPStrings, this could lead to\n\t    buffer over-read or over-write, resulting in possible information\n\t    leak, crash, or code execution.</p>\n\t  <p>Mozilla browsers currently NUL terminate strings, however recent\n\t    Chrome versions are known not to provide NUL terminated data.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-3422",
+      "CVE-2012-3423"
+    ],
+    "mlist": [
+      {
+        "text": "http://mail.openjdk.java.net/pipermail/distro-pkg-dev/2012-July/019580.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2012-07-31",
+    "entry": "2012-08-13"
+  }
+}

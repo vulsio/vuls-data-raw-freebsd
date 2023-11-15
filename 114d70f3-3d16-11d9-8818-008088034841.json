@@ -1,0 +1,37 @@
+{
+  "vid": "114d70f3-3d16-11d9-8818-008088034841",
+  "topic": "Cyrus IMAPd -- PARTIAL command out of bounds memory corruption",
+  "affects": [
+    {
+      "name": [
+        "cyrus-imapd"
+      ],
+      "range": [
+        {
+          "lt": "2.1.17"
+        },
+        {
+          "ge": "2.2.*",
+          "le": "2.2.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Due to a bug within the argument parser of the partial\n\t  command an argument like \"body[p\" will be wrongly detected as\n\t  \"body.peek\". Because of this the bufferposition gets increased\n\t  by 10 instead of 5 and could therefore point outside the\n\t  allocated memory buffer for the rest of the parsing\n\t  process. In imapd versions prior to 2.2.7 the handling of\n\t  \"body\" or \"bodypeek\" arguments was broken so that the\n\t  terminating ']' got overwritten by a '\\0'. Combined the two\n\t  problems allow a potential attacker to overwrite a single byte\n\t  of malloc() control structures, which leads to remote code\n\t  execution if the attacker successfully controls the heap\n\t  layout.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://security.e-matters.de/advisories/152004.html"
+    ],
+    "cvename": [
+      "CVE-2004-1012"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-06",
+    "entry": "2004-11-22",
+    "modified": "2004-11-24"
+  }
+}

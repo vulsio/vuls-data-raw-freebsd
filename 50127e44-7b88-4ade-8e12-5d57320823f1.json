@@ -1,0 +1,45 @@
+{
+  "vid": "50127e44-7b88-4ade-8e12-5d57320823f1",
+  "topic": "salt -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py27-salt",
+        "py32-salt",
+        "py33-salt",
+        "py34-salt",
+        "py35-salt",
+        "py36-salt"
+      ],
+      "range": [
+        {
+          "lt": "2016.11.8"
+        },
+        {
+          "lt": "2017.7.2",
+          "ge": "2017.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SaltStack reports:</p>\n\t<blockquote cite=\"https://docs.saltstack.com/en/latest/topics/releases/2017.7.2.html\">\n\t  <p>Directory traversal vulnerability in minion id validation in SaltStack.\n\t    Allows remote minions with incorrect credentials to authenticate to a\n\t    master via a crafted minion ID. Credit for discovering the security flaw\n\t    goes to: Julian Brost (julian@0x4a42.net). NOTE: this vulnerability exists\n\t    because of an incomplete fix for CVE-2017-12791.</p>\n\t  <p>Remote Denial of Service with a specially crafted authentication request.\n\t    Credit for discovering the security flaw goes to: Julian Brost\n\t    (julian@0x4a42.net)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.saltstack.com/en/latest/topics/releases/2017.7.2.html",
+      "https://docs.saltstack.com/en/2016.11/topics/releases/2016.11.8.html",
+      "https://github.com/saltstack/salt/commit/80d90307b07b3703428ecbb7c8bb468e28a9ae6d",
+      "https://github.com/saltstack/salt/commit/5f8b5e1a0f23fe0f2be5b3c3e04199b57a53db5b"
+    ],
+    "cvename": [
+      "CVE-2017-14695",
+      "CVE-2017-14696"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-10-09",
+    "entry": "2017-11-23"
+  }
+}

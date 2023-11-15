@@ -1,0 +1,42 @@
+{
+  "vid": "736e55bc-39bb-11de-a493-001b77d09812",
+  "topic": "cups -- remote code execution and DNS rebinding",
+  "affects": [
+    {
+      "name": [
+        "cups-base"
+      ],
+      "range": [
+        {
+          "lt": "1.3.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gentoo security team summarizes:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200904-20.xml\">\n\t  <p>The following issues were reported in CUPS:</p>\n\t  <ul>\n\t    <li>iDefense reported an integer overflow in the\n\t      _cupsImageReadTIFF() function in the \"imagetops\" filter,\n\t      leading to a heap-based buffer overflow (CVE-2009-0163).</li>\n\t    <li>Aaron Siegel of Apple Product Security reported that the\n\t      CUPS web interface does not verify the content of the \"Host\"\n\t      HTTP header properly (CVE-2009-0164).</li>\n\t    <li>Braden Thomas and Drew Yao of Apple Product Security\n\t      reported that CUPS is vulnerable to CVE-2009-0146,\n\t      CVE-2009-0147 and CVE-2009-0166, found earlier in xpdf and\n\t      poppler.</li>\n\t  </ul>\n\t  <p>A remote attacker might send or entice a user to send a\n\t    specially crafted print job to CUPS, possibly resulting in the\n\t    execution of arbitrary code with the privileges of the\n\t    configured CUPS user -- by default this is \"lp\", or a Denial\n\t    of Service. Furthermore, the web interface could be used to\n\t    conduct DNS rebinding attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.cups.org/articles.php?L582"
+    ],
+    "cvename": [
+      "CVE-2009-0163",
+      "CVE-2009-0164",
+      "CVE-2009-0146",
+      "CVE-2009-0147",
+      "CVE-2009-0166"
+    ],
+    "bid": [
+      "34571",
+      "34665",
+      "34568"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-05-05",
+    "entry": "2009-05-07",
+    "modified": "2009-05-13"
+  }
+}

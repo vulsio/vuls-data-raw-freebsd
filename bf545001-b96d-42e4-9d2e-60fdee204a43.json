@@ -1,0 +1,42 @@
+{
+  "vid": "bf545001-b96d-42e4-9d2e-60fdee204a43",
+  "topic": "h2o -- HTTP/2 Rapid Reset attack vulnerability",
+  "affects": [
+    {
+      "name": [
+        "h2o"
+      ],
+      "range": [
+        {
+          "le": "2.2.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "h2o-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.3.0.d.20231010"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t  <p>Kazuo Okuhu reports:</p>\n    <blockquote cite=\"https://github.com/h2o/h2o/issues/3291\">\n\t\t<p>\n\t\tH2O is vulnerable to the HTTP/2 Rapid Reset attack.\n\t\tAn attacker might be able to consume more than adequate amount of\n\t\tprocessing power of h2o and the backend servers by mounting the\n\t\tattack.\n    </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/h2o/h2o/security/advisories/GHSA-2m7v-gc89-fjqf"
+    ],
+    "cvename": [
+      "CVE-2023-44487"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-10",
+    "entry": "2023-10-10"
+  }
+}

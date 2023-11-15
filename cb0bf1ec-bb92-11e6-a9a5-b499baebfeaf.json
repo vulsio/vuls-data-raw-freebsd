@@ -1,0 +1,44 @@
+{
+  "vid": "cb0bf1ec-bb92-11e6-a9a5-b499baebfeaf",
+  "topic": "Apache httpd -- denial of service in HTTP/2",
+  "affects": [
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "ge": "2.4.17",
+          "le": "2.4.23_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_http2-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.8.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>mod_http2 reports:</p>\n\t<blockquote cite=\"http://mail-archives.apache.org/mod_mbox/httpd-announce/201612.mbox/%3C1A097A43-7CCB-4BA1-861F-E0C7EEE83A4B%40apache.org%3E\">\n\t  <p>The Apache HTTPD web server (from 2.4.17-2.4.23) did not apply\n\t    limitations on request headers correctly when experimental module\n\t    for the HTTP/2 protocol is used to access a resource.</p>\n\t  <p>The net result is that a the server allocates too much memory\n\t    instead of denying the request. This can lead to memory exhaustion\n\t    of the server by a properly crafted request.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mail-archives.apache.org/mod_mbox/httpd-announce/201612.mbox/%3C1A097A43-7CCB-4BA1-861F-E0C7EEE83A4B%40apache.org%3E",
+      "https://github.com/icing/mod_h2/releases/tag/v1.8.3"
+    ],
+    "cvename": [
+      "CVE-2016-8740"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-12-06",
+    "entry": "2016-12-06"
+  }
+}

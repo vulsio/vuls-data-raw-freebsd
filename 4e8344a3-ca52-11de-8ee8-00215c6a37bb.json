@@ -1,0 +1,57 @@
+{
+  "vid": "4e8344a3-ca52-11de-8ee8-00215c6a37bb",
+  "topic": "gd -- '_gdGetColors' remote buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gd"
+      ],
+      "range": [
+        {
+          "lt": "2.0.35_2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php5-gd"
+      ],
+      "range": [
+        {
+          "lt": "5.2.11_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php4-gd"
+      ],
+      "range": [
+        {
+          "lt": "4.4.9_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3546\">\n\t  <p>The _gdGetColors function in gd_gd.c in PHP 5.2.11 and\n\t    5.3.0, and the GD Graphics Library 2.x, does not properly\n\t    verify a certain colorsTotal structure member, which might\n\t    allow remote attackers to conduct buffer overflow or buffer\n\t    over-read attacks via a crafted GD file, a different\n\t    vulnerability than CVE-2009-3293.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/37069",
+      "http://secunia.com/advisories/37080"
+    ],
+    "cvename": [
+      "CVE-2009-3546"
+    ],
+    "bid": [
+      "36712"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-10-15",
+    "entry": "2009-11-05",
+    "modified": "2010-06-17"
+  }
+}

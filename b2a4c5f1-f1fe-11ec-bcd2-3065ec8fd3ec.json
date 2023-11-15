@@ -1,0 +1,40 @@
+{
+  "vid": "b2a4c5f1-f1fe-11ec-bcd2-3065ec8fd3ec",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "103.0.5060.53"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2022/06/stable-channel-update-for-desktop_21.html\">\n\t  <p>This release contains 14 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1335458] Critical CVE-2022-2156: Use after free in Base. Reported by Mark Brand of Google Project Zero on 2022-06-11</li>\n\t    <li>[1327312] High CVE-2022-2157: Use after free in Interest groups. Reported by Nan Wang(@eternalsakura13) and Guang Gong of 360 Alpha Lab on 2022-05-19</li>\n\t    <li>[1321078] High CVE-2022-2158: Type Confusion in V8. Reported by Bohan Liu (@P4nda20371774) of Tencent Security Xuanwu Lab on 2022-04-29</li>\n\t    <li>[1116450] Medium CVE-2022-2160: Insufficient policy enforcement in DevTools. Reported by David Erceg on 2020-08-14</li>\n\t    <li>[1330289] Medium CVE-2022-2161: Use after free in WebApp Provider. Reported by Zhihua Yao of KunLun Lab on 2022-05-30</li>\n\t    <li>[1307930] Medium CVE-2022-2162: Insufficient policy enforcement in File System API. Reported by Abdelhamid Naceri (halov) on 2022-03-19</li>\n\t    <li>[1308341] Low CVE-2022-2163: Use after free in Cast UI and Toolbar. Reported by Chaoyuan Peng (@ret2happy) on 2022-03-21</li>\n\t    <li>[1268445] Low CVE-2022-2164: Inappropriate implementation in Extensions API. Reported by José Miguel Moreno Computer Security Lab (COSEC) at UC3M on 2021-11-10</li>\n\t    <li>[1250993] Low CVE-2022-2165: Insufficient data validation in URL formatting. Reported by Rayyan Bijoora on 2021-09-19</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2022/06/stable-channel-update-for-desktop_21.html"
+    ],
+    "cvename": [
+      "CVE-2022-2156",
+      "CVE-2022-2157",
+      "CVE-2022-2158",
+      "CVE-2022-2160",
+      "CVE-2022-2161",
+      "CVE-2022-2162",
+      "CVE-2022-2163",
+      "CVE-2022-2164",
+      "CVE-2022-2165"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-06-21",
+    "entry": "2022-06-22"
+  }
+}

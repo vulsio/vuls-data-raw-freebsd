@@ -1,0 +1,32 @@
+{
+  "vid": "14ab174c-40ef-11de-9fd5-001bd3385381",
+  "topic": "cyrus-sasl -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "cyrus-sasl"
+      ],
+      "range": [
+        {
+          "lt": "2.1.23"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US-CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/238019\">\n\t  <p>The sasl_encode64() function converts a string into\n\t    base64. The Cyrus SASL library contains buffer overflows\n\t    that occur because of unsafe use of the sasl_encode64()\n\t    function.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kb.cert.org/vuls/id/238019"
+    ],
+    "cvename": [
+      "CVE-2009-0688"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-04-08",
+    "entry": "2009-05-15"
+  }
+}

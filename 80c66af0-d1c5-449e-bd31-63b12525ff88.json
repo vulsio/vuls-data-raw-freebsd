@@ -1,0 +1,167 @@
+{
+  "vid": "80c66af0-d1c5-449e-bd31-63b12525ff88",
+  "topic": "ffmpeg -- out-of-bounds array access",
+  "affects": [
+    {
+      "name": [
+        "libav"
+      ],
+      "range": [
+        {
+          "lt": "11.4",
+          "ge": "11.0"
+        },
+        {
+          "lt": "10.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gstreamer1-libav"
+      ],
+      "range": [
+        {
+          "lt": "1.5.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "handbrake"
+      ],
+      "range": [
+        {
+          "lt": "1.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg"
+      ],
+      "range": [
+        {
+          "lt": "2.2.15,1",
+          "ge": "2.2.0,1"
+        },
+        {
+          "lt": "2.0.7,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg26"
+      ],
+      "range": [
+        {
+          "lt": "2.6.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg25"
+      ],
+      "range": [
+        {
+          "lt": "2.5.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg23"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg1"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "avidemux",
+        "avidemux26"
+      ],
+      "range": [
+        {
+          "lt": "2.6.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "kodi"
+      ],
+      "range": [
+        {
+          "lt": "15.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mplayer",
+        "mencoder"
+      ],
+      "range": [
+        {
+          "lt": "1.1.r20150403"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mythtv",
+        "mythtv-frontend"
+      ],
+      "range": [
+        {
+          "le": "0.27.5,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3395\">\n\t  <p>The msrle_decode_pal4 function in msrledec.c in Libav\n\t    before 10.7 and 11.x before 11.4 and FFmpeg before 2.0.7,\n\t    2.2.x before 2.2.15, 2.4.x before 2.4.8, 2.5.x before 2.5.6,\n\t    and 2.6.x before 2.6.2 allows remote attackers to have\n\t    unspecified impact via a crafted image, related to a pixel\n\t    pointer, which triggers an out-of-bounds array access.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=f7e1367f58263593e6cee3c282f7277d7ee9d553",
+      "https://git.libav.org/?p=libav.git;a=commit;h=5ecabd3c54b7c802522dc338838c9a4c2dc42948",
+      "https://ffmpeg.org/security.html",
+      "https://git.libav.org/?p=libav.git;a=blob;f=Changelog;hb=refs/tags/v11.4"
+    ],
+    "cvename": [
+      "CVE-2015-3395"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-12",
+    "entry": "2015-09-01",
+    "modified": "2018-03-25"
+  }
+}

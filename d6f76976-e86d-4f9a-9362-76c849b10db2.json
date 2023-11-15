@@ -1,0 +1,39 @@
+{
+  "vid": "d6f76976-e86d-4f9a-9362-76c849b10db2",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.275"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "lt": "2.263.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://www.jenkins.io/security/advisory/2021-01-13/\">\n\t  <h1>Description</h1>\n\t  <h5>(Medium) SECURITY-1452 / CVE-2021-21602</h5>\n\t  <p>Arbitrary file read vulnerability in workspace browsers</p>\n\t  <h5>(High) SECURITY-1889 / CVE-2021-21603</h5>\n\t  <p>XSS vulnerability in notification bar</p>\n\t  <h5>(High) SECURITY-1923 / CVE-2021-21604</h5>\n\t  <p>Improper handling of REST API XML deserialization errors</p>\n\t  <h5>(High) SECURITY-2021 / CVE-2021-21605</h5>\n\t  <p>Path traversal vulnerability in agent names</p>\n\t  <h5>(Medium) SECURITY-2023 / CVE-2021-21606</h5>\n\t  <p>Arbitrary file existence check in file fingerprints</p>\n\t  <h5>(Medium) SECURITY-2025 / CVE-2021-21607</h5>\n\t  <p>Excessive memory allocation in graph URLs leads to denial of service</p>\n\t  <h5>(High) SECURITY-2035 / CVE-2021-21608</h5>\n\t  <p>Stored XSS vulnerability in button labels</p>\n\t  <h5>(Low) SECURITY-2047 / CVE-2021-21609</h5>\n\t  <p>Missing permission check for paths with specific prefix</p>\n\t  <h5>(High) SECURITY-2153 / CVE-2021-21610</h5>\n\t  <p>Reflected XSS vulnerability in markup formatter preview</p>\n\t  <h5>(High) SECURITY-2171 / CVE-2021-21611</h5>\n\t  <p>Stored XSS vulnerability on new item page</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.jenkins.io/security/advisory/2021-01-13/"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-01-13",
+    "entry": "2021-01-13"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "e72fd82b-fa01-11d9-bc08-0001020eed82",
+  "topic": "dnrd -- remote buffer and stack overflow vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "dnrd"
+      ],
+      "range": [
+        {
+          "lt": "2.19.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Natanael Copa reports that dnrd is vulnerable to a remote\n\t  buffer overflow and a remote stack overflow.\tThese\n\t  vulnerabilities can be triggered by sending invalid DNS\n\t  packets to dnrd.</p>\n\t<p>The buffer overflow could potentially be used to execute\n\t  arbitrary code with the permissions of the dnrd daemon.\n\t  Note that dnrd runs in an chroot environment and runs as\n\t  non-root.</p>\n\t<p>The stack overflow vulnerability can cause dnrd to\n\t  crash.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-2315",
+      "CVE-2005-2316"
+    ],
+    "freebsd_pr": [
+      "ports/83851"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-21",
+    "entry": "2005-07-21"
+  }
+}

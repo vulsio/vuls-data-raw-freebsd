@@ -1,0 +1,33 @@
+{
+  "vid": "2b4c8e1f-1609-11e6-b55e-b499baebfeaf",
+  "topic": "libarchive -- RCE vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libarchive"
+      ],
+      "range": [
+        {
+          "lt": "3.2.0,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The libarchive project reports:</p>\n\t<blockquote cite=\"https://github.com/libarchive/libarchive/commit/d0331e8e5b05b475f20b1f3101fe1ad772d7e7e7\">\n\t  <p>Heap-based buffer overflow in the zip_read_mac_metadata function\n\t    in archive_read_support_format_zip.c in libarchive before 3.2.0\n\t    allows remote attackers to execute arbitrary code via crafted\n\t    entry-size values in a ZIP archive.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/libarchive/libarchive/commit/d0331e8e5b05b475f20b1f3101fe1ad772d7e7e7"
+    ],
+    "cvename": [
+      "CVE-2016-1541"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-01",
+    "entry": "2016-05-09",
+    "modified": "2016-05-10"
+  }
+}

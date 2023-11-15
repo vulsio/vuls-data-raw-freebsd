@@ -1,0 +1,34 @@
+{
+  "vid": "49c35943-0eeb-421c-af4f-78e04582e5fb",
+  "topic": "seatd-launch -- privilege escalation with SUID",
+  "affects": [
+    {
+      "name": [
+        "seatd"
+      ],
+      "range": [
+        {
+          "lt": "0.6.2",
+          "ge": "0.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Kenny Levinsen reports:</p>\n\t<blockquote cite=\"https://lists.sr.ht/~kennylevinsen/seatd-announce/%3CGJ2IZQ.HCKS1J0LSI803%40kl.wtf%3E\">\n\t  <p>seatd-launch used execlp, which reads the PATH environment variable to\n\t     search for the requested executable, to execute seatd. This meant that\n\t     the caller could freely control what executable was loaded by adding a\n\t     user-writable directory to PATH.</p>\n\t  <p>If seatd-launch had the SUID bit set, this could be used by a\n\t     malicious user with the ability to execute seatd-launch to mount a\n\t     privilege escalation attack to the owner of seatd-launch, which is\n\t     likely root.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.sr.ht/~kennylevinsen/seatd-announce/%3CGJ2IZQ.HCKS1J0LSI803%40kl.wtf%3E"
+    ],
+    "cvename": [
+      "CVE-2021-41387"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-09-15",
+    "entry": "2021-09-16",
+    "modified": "2021-09-18"
+  }
+}

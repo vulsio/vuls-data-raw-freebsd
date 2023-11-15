@@ -1,0 +1,50 @@
+{
+  "vid": "065b3b72-c5ab-11e8-9ae2-001b217b3468",
+  "topic": "Gitlab -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "11.3.1",
+          "ge": "11.3.0"
+        },
+        {
+          "lt": "11.2.4",
+          "ge": "11.2.0"
+        },
+        {
+          "lt": "11.1.7",
+          "ge": "7.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2018/10/01/security-release-gitlab-11-dot-3-dot-1-released/\">\n\t  <p>SSRF GCP access token disclosure</p>\n\t  <p>Persistent XSS on issue details</p>\n\t  <p>Diff formatter DoS in Sidekiq jobs</p>\n\t  <p>Confidential information disclosure in events API endpoint</p>\n\t  <p>validate_localhost function in url_blocker.rb could be bypassed</p>\n\t  <p>Slack integration CSRF Oauth2</p>\n\t  <p>GRPC::Unknown logging token disclosure</p>\n\t  <p>IDOR merge request approvals</p>\n\t  <p>Persistent XSS package.json</p>\n\t  <p>Persistent XSS merge request project import</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2018/10/01/security-release-gitlab-11-dot-3-dot-1-released/"
+    ],
+    "cvename": [
+      "CVE-2018-17450",
+      "CVE-2018-17454",
+      "CVE-2018-15472",
+      "CVE-2018-17449",
+      "CVE-2018-17452",
+      "CVE-2018-17451",
+      "CVE-2018-17453",
+      "CVE-2018-17455",
+      "CVE-2018-17537",
+      "CVE-2018-17536"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-10-01",
+    "entry": "2018-10-01"
+  }
+}

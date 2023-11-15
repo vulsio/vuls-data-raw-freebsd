@@ -1,0 +1,31 @@
+{
+  "vid": "edf47177-fe3f-11e0-a207-0014a5e3cda6",
+  "topic": "phpLDAPadmin -- Remote PHP code injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpldapadmin"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1.1_1,1",
+          "ge": "1.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>EgiX (n0b0d13s at gmail dot com) reports:</p>\n\t<blockquote cite=\"http://packetstormsecurity.org/files/106120/phpldapadmin-inject.txt\">\n\t  <p>The $sortby parameter passed to 'masort' function in file\n\t    lib/functions.php isn't properly sanitized before being used in\n\t    a call to create_function() at line 1080.  This can be exploited\n\t    to inject and execute arbitrary PHP code.  The only possible\n\t    attack vector is when handling the 'query_engine' command, in\n\t    which input passed through $_REQUEST['orderby'] is passed as\n\t    $sortby parameter to 'masort' function.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://packetstormsecurity.org/files/106120/phpldapadmin-inject.txt",
+      "http://sourceforge.net/tracker/?func=detail&aid=3417184&group_id=61828&atid=498546"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-10-23",
+    "entry": "2011-10-24"
+  }
+}

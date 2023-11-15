@@ -1,0 +1,46 @@
+{
+  "vid": "006e3b7c-d7d7-11e5-b85f-0018fe623f2b",
+  "topic": "jasper -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jasper"
+      ],
+      "range": [
+        {
+          "lt": "1.900.1_16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2014-012.html\">\n\t  <p>The library is affected by a double-free vulnerability in function\n\t    jas_iccattrval_destroy()\n\t    as well as a heap-based buffer overflow in function jp2_decode().\n\t    A specially crafted jp2 file can be used to trigger the vulnerabilities.</p>\n\t</blockquote>\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2015-001.html\">\n\t  <p>The library is affected by an off-by-one error in a buffer boundary check\n\t    in jpc_dec_process_sot(), leading to a heap based buffer overflow, as well\n\t    as multiple unrestricted stack memory use issues in jpc_qmfb.c, leading to\n\t    stack overflow.\n\t    A specially crafted jp2 file can be used to trigger the vulnerabilities.</p>\n\t</blockquote>\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2014-009.html\">\n\t  <p>Multiple off-by-one flaws, leading to heap-based buffer overflows, were\n\t    found in the way JasPer decoded JPEG 2000 files. A specially crafted file\n\t    could cause an application using JasPer to crash or,\n\t    possibly, execute arbitrary code.</p>\n\t</blockquote>\n\t<p>limingxing reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2016/q1/233\">\n\t  <p>A vulnerability was found in the way the JasPer's jas_matrix_clip()\n\t    function parses certain JPEG 2000 image files. A specially crafted file\n\t    could cause an application using JasPer to crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ocert.org/advisories/ocert-2014-012.html",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1173157",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1173162",
+      "http://www.ocert.org/advisories/ocert-2015-001.html",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1179282",
+      "http://www.ocert.org/advisories/ocert-2014-009.html",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1167537",
+      "http://seclists.org/oss-sec/2016/q1/233",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1302636"
+    ],
+    "cvename": [
+      "CVE-2014-8137",
+      "CVE-2014-8138",
+      "CVE-2014-8157",
+      "CVE-2014-8158",
+      "CVE-2014-9029",
+      "CVE-2016-2089"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-12-10",
+    "entry": "2016-02-20",
+    "modified": "2016-02-24"
+  }
+}

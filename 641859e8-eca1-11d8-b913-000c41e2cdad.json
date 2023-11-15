@@ -1,0 +1,102 @@
+{
+  "vid": "641859e8-eca1-11d8-b913-000c41e2cdad",
+  "topic": "Mutiple browser frame injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "kdelibs"
+      ],
+      "range": [
+        {
+          "lt": "3.2.3_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "kdebase"
+      ],
+      "range": [
+        {
+          "lt": "3.2.3_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-opera",
+        "opera"
+      ],
+      "range": [
+        {
+          "lt": "7.52",
+          "ge": "7.50"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "0.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla",
+        "linux-mozilla-devel",
+        "mozilla-gtk1"
+      ],
+      "range": [
+        {
+          "lt": "1.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "netscape7"
+      ],
+      "range": [
+        {
+          "lt": "7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A class of bugs affecting many web browsers in the same way\n\t  was discovered.  A Secunia advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/11978\">\n\t  <p>The problem is that the browsers don't check if a target\n\t    frame belongs to a website containing a malicious link,\n\t    which therefore doesn't prevent one browser window from\n\t    loading content in a named frame in another window.</p>\n\t  <p>Successful exploitation allows a malicious website to load\n\t    arbitrary content in an arbitrary frame in another browser\n\t    window owned by e.g. a trusted site.</p>\n\t</blockquote>\n\t<p>A KDE Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20040811-3.txt\">\n\t  <p>A malicious website could abuse Konqueror to insert\n\t    its own frames into the page of an otherwise trusted\n\t    website. As a result the user may unknowingly send\n\t    confidential information intended for the trusted website\n\t    to the malicious website.</p>\n\t</blockquote>\n\t<p>Secunia has provided a demonstration of the vulnerability at <a href=\"http://secunia.com/multiple_browsers_frame_injection_vulnerability_test/\">http://secunia.com/multiple_browsers_frame_injection_vulnerability_test/</a>.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/11978/",
+      "http://bugzilla.mozilla.org/show_bug.cgi?id=246448",
+      "ftp://ftp.kde.org/pub/kde/security_patches/post-3.2.3-kdelibs-htmlframes.patch",
+      "ftp://ftp.kde.org/pub/kde/security_patches/post-3.2.3-kdebase-htmlframes.patch"
+    ],
+    "cvename": [
+      "CVE-2004-0717",
+      "CVE-2004-0718",
+      "CVE-2004-0721"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-11",
+    "entry": "2004-08-12",
+    "modified": "2004-09-14"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "vid": "3d0428b2-fdfb-11e4-894f-d050996490d0",
+  "topic": "clamav -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.98.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "clamav-devel"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ClamAV project reports:</p>\n\t<blockquote cite=\"http://blog.clamav.net/2015/04/clamav-0987-has-been-released.html\">\n\t  <p>ClamAV 0.98.7 is here! This release contains new\n\t    scanning features and bug fixes.</p>\n\t  <p>Fix infinite loop condition on crafted y0da cryptor file.\n\t    Identified and patch suggested by Sebastian Andrzej Siewior.\n\t    CVE-2015-2221.</p>\n\t  <p>Fix crash on crafted petite packed file. Reported and patch\n\t    supplied by Sebastian Andrzej Siewior. CVE-2015-2222.</p>\n\t  <p>Fix an infinite loop condition on a crafted \"xz\" archive\n\t    file.  This was reported by Dimitri Kirchner and Goulven\n\t    Guiheux.  CVE-2015-2668.</p>\n\t  <p>Apply upstream patch for possible heap overflow in Henry\n\t    Spencer's regex library. CVE-2015-2305.</p>\n\t  <p>Fix crash in upx decoder with crafted file. Discovered and\n\t    patch supplied by Sebastian Andrzej Siewior. CVE-2015-2170.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.clamav.net/2015/04/clamav-0987-has-been-released.html"
+    ],
+    "cvename": [
+      "CVE-2015-2170",
+      "CVE-2015-2221",
+      "CVE-2015-2222",
+      "CVE-2015-2305",
+      "CVE-2015-2668"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-29",
+    "entry": "2015-05-19"
+  }
+}

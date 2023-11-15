@@ -1,0 +1,58 @@
+{
+  "vid": "6eddfa51-fb44-11e9-86e9-001b217b3468",
+  "topic": "Gitlab -- Disclosure Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "12.4.1",
+          "ge": "12.4.0"
+        },
+        {
+          "lt": "12.3.6",
+          "ge": "12.3.0"
+        },
+        {
+          "lt": "12.2.9",
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/blog/2019/10/30/security-release-gitlab-12-dot-4-dot-1-released/\">\n\t  <p>Source branch of a MR could be removed by an unauthorised user</p>\n\t  <p>Private group members could be listed</p>\n\t  <p>Disclosure of System Notes via Elasticsearch integration</p>\n\t  <p>Disclosure of Private Comments via Elasticsearch integration</p>\n\t  <p>Confirm existence of private repositories</p>\n\t  <p>Private group membership could be disclosed</p>\n\t  <p>Disclosure of Project Labels</p>\n\t  <p>Disclosure of Private Project Path and Labels</p>\n\t  <p>Uncontrolled Resource Consumption due to Nested GraphQL Queries</p>\n\t  <p>Improper access control on comments</p>\n\t  <p>Sentry Token Access Control</p>\n\t  <p>Authorisation check for Project Transfer option</p>\n\t  <p>XSS in Wiki Pages Using RDoc</p>\n\t  <p>Untrusted Input could be used for Internal Redirect</p>\n\t  <p>Access control for protected environments</p>\n\t  <p>Private Sub Group path Disclosure</p>\n\t  <p>Disclosure of Group Packages List</p>\n\t  <p>Private Repository Name Disclosure</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/blog/2019/10/30/security-release-gitlab-12-dot-4-dot-1-released/"
+    ],
+    "cvename": [
+      "CVE-2019-18446",
+      "CVE-2019-18447",
+      "CVE-2019-18460",
+      "CVE-2019-18456",
+      "CVE-2019-18448",
+      "CVE-2019-18449",
+      "CVE-2019-18450",
+      "CVE-2019-18452",
+      "CVE-2019-18455",
+      "CVE-2019-18453",
+      "CVE-2019-18457",
+      "CVE-2019-18458",
+      "CVE-2019-18454",
+      "CVE-2019-18451",
+      "CVE-2019-18459",
+      "CVE-2019-18461",
+      "CVE-2019-18463",
+      "CVE-2019-18462"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-30",
+    "entry": "2019-10-30"
+  }
+}

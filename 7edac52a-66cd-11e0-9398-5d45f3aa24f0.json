@@ -1,0 +1,40 @@
+{
+  "vid": "7edac52a-66cd-11e0-9398-5d45f3aa24f0",
+  "topic": "krb5 -- MITKRB5-SA-2011-003, KDC vulnerable to double-free when PKINIT enabled",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2",
+          "ge": "1.7"
+        },
+        {
+          "lt": "1.8.4",
+          "ge": "1.8"
+        },
+        {
+          "eq": "1.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An advisory published by the MIT Kerberos team says:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-003.txt\">\n\t  <p>The MIT Kerberos 5 Key Distribution Center (KDC) daemon is\n\t     vulnerable to a double-free condition if the Public Key\n\t     Cryptography for Initial Authentication (PKINIT) capability is\n\t     enabled, resulting in daemon crash or arbitrary code execution\n\t     (which is believed to be difficult).</p>\n\t  <p>An unauthenticated remote attacker can induce a double-free\n\t     event, causing the KDC daemon to crash (denial of service),\n\t     or to execute arbitrary code.  Exploiting a double-free event\n\t     to execute arbitrary code is believed to be difficult.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-003.txt"
+    ],
+    "cvename": [
+      "CVE-2011-0284"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-03-15",
+    "entry": "2011-04-14"
+  }
+}

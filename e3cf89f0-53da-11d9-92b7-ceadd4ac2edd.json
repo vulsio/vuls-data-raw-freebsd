@@ -1,0 +1,53 @@
+{
+  "vid": "e3cf89f0-53da-11d9-92b7-ceadd4ac2edd",
+  "topic": "phpbb -- arbitrary command execution and other vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpbb"
+      ],
+      "range": [
+        {
+          "lt": "2.0.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The ChangeLog for phpBB 2.0.11 states:</p>\n\t<blockquote cite=\"http://www.phpbb.com/support/documents.php?mode=changelog\">\n\t  <p>Changes since 2.0.10</p>\n\t  <ul>\n\t    <li>Fixed vulnerability in highlighting code (<strong>very\n\t      high severity, please update your installation as soon\n\t      as possible</strong>)</li>\n\t    <li>Fixed unsetting global vars - <strong>Matt\n\t      Kavanagh</strong></li>\n\t    <li>Fixed XSS vulnerability in username handling\n\t      - <strong>AnthraX101</strong></li>\n\t    <li>Fixed not confirmed sql injection in username handling\n\t      - <strong>warmth</strong></li>\n\t    <li>Added check for empty topic id in topic_review\n\t      function</li>\n\t    <li>Added visual confirmation mod to code base</li>\n\t  </ul>\n\t</blockquote>\n\t<p>Additionally, a US-CERT Technical Cyber Security Alert reports:</p>\n\t<blockquote cite=\"http://www.us-cert.gov/cas/techalerts/TA04-356A.html\">\n\t  <p>phpBB contains an user input validation problem with\n\t    regard to the parsing of the URL. An intruder can deface a\n\t    phpBB website, execute arbitrary commands, or gain\n\t    administrative privileges on a compromised bulletin\n\t    board.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpbb.com/support/documents.php?mode=changelog",
+      "http://www.phpbb.com/phpBB/viewtopic.php?f=14&t=240636"
+    ],
+    "cvename": [
+      "CVE-2004-1315"
+    ],
+    "freebsd_pr": [
+      "ports/74106"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110029415208724",
+        "msgid": "20041113030542.11396.qmail@www.securityfocus.com"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110079436714518",
+        "msgid": "20041118123055.28647.qmail@mail.securityfocus.com"
+      }
+    ],
+    "cert_vu": [
+      "497400"
+    ],
+    "us_cert_ta": [
+      "TA04-356A"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-18",
+    "entry": "2004-12-22",
+    "modified": "2005-01-24"
+  }
+}

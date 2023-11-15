@@ -1,0 +1,41 @@
+{
+  "vid": "be4ccb7b-c48b-11da-ae12-0002b3b60e4c",
+  "topic": "openvpn -- LD_PRELOAD code execution on client through malicious or compromised server",
+  "affects": [
+    {
+      "name": [
+        "openvpn"
+      ],
+      "range": [
+        {
+          "lt": "2.0.6",
+          "ge": "2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Hendrik Weimer reports:</p>\n\t<blockquote cite=\"http://www.osreviews.net/reviews/security/openvpn-print\">\n\t  <p>OpenVPN clients are a bit too generous when accepting\n\t    configuration options from a server. It is possible to transmit\n\t    environment variables to client-side shell scripts.  There are some\n\t    filters in place to prevent obvious nonsense, however they don't\n\t    catch the good old LD_PRELOAD trick. All we need is to put a file\n\t    onto the client under a known location (e.g. by returning a\n\t    specially crafted document upon web access) and we have a remote\n\t    root exploit. But since the attack may only come from authenticated\n\t    servers, this threat is greatly reduced.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.osreviews.net/reviews/security/openvpn-print",
+      "http://openvpn.net/changelog.html"
+    ],
+    "cvename": [
+      "CVE-2006-1629"
+    ],
+    "mlist": [
+      {
+        "text": "http://sourceforge.net/mailarchive/message.php?msg_id=15298074",
+        "msgid": "4431F7C4.4030804@yonan.net"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2006-04-03",
+    "entry": "2006-04-05",
+    "modified": "2006-04-06"
+  }
+}

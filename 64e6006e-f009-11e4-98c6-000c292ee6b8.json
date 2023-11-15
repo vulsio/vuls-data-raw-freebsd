@@ -1,0 +1,49 @@
+{
+  "vid": "64e6006e-f009-11e4-98c6-000c292ee6b8",
+  "topic": "powerdns -- Label decompression bug can cause crashes or CPU spikes",
+  "affects": [
+    {
+      "name": [
+        "powerdns"
+      ],
+      "range": [
+        {
+          "lt": "3.4.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "powerdns-recursor"
+      ],
+      "range": [
+        {
+          "lt": "3.7.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PowerDNS project reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/md/security/powerdns-advisory-2015-01/\">\n\t  <p>A bug was discovered in our label decompression code, making it\n\t    possible for names to refer to themselves, thus causing a loop during\n\t    decompression. On some platforms, this bug can be abused to cause\n\t    crashes. On all platforms, this bug can be abused to cause\n\t    service-affecting CPU spikes.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://doc.powerdns.com/md/security/powerdns-advisory-2015-01/"
+    ],
+    "cvename": [
+      "CVE-2015-1868",
+      "CVE-2015-5470"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.openwall.com/lists/oss-security/2015/07/10/8"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-23",
+    "entry": "2015-05-01",
+    "modified": "2015-07-12"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "vid": "5d8ef725-7228-11eb-8386-001999f8d30b",
+  "topic": "asterisk -- Remote attacker could prematurely tear down SRTP calls",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.38.2",
+          "ge": "13.38.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.16.1",
+          "ge": "16.16.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "18.2.1",
+          "ge": "18.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>An unauthenticated remote attacker could replay SRTP\n\t  packets which could cause an Asterisk instance configured\n\t  without strict RTP validation to tear down calls\n\t  prematurely.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2021-003.html"
+    ],
+    "cvename": [
+      "CVE-2021-26712"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-02-18",
+    "entry": "2021-02-18"
+  }
+}

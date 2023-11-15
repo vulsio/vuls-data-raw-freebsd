@@ -1,0 +1,88 @@
+{
+  "vid": "99858b7c-7ece-11df-a007-000f20797ede",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "3.6.4,1",
+          "gt": "3.6.*,1"
+        },
+        {
+          "lt": "3.5.10,1",
+          "gt": "3.5.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.5.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.0.5",
+          "gt": "2.0.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "3.0.5",
+          "ge": "3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2010-33 User tracking across sites using Math.random()</p>\n\t  <p>MFSA 2010-32 Content-Disposition: attachment ignored if Content-Type: multipart also present</p>\n\t  <p>MFSA 2010-31 focus() behavior can be used to inject or steal keystrokes</p>\n\t  <p>MFSA 2010-30 Integer Overflow in XSLT Node Sorting</p>\n\t  <p>MFSA 2010-29 Heap buffer overflow in nsGenericDOMDataNode::SetTextInternal</p>\n\t  <p>MFSA 2010-28 Freed object reuse across plugin instances</p>\n\t  <p>MFSA 2010-27 Use-after-free error in nsCycleCollector::MarkRoots()</p>\n\t  <p>MFSA 2010-26 Crashes with evidence of memory corruption (rv:1.9.2.4/ 1.9.1.10)</p>\n\t  <p>MFSA 2010-25 Re-use of freed object due to scope confusion</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-33.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-32.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-31.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-30.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-29.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-28.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-27.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-26.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-25.html"
+    ],
+    "cvename": [
+      "CVE-2008-5913",
+      "CVE-2010-0183",
+      "CVE-2010-1121",
+      "CVE-2010-1125",
+      "CVE-2010-1197",
+      "CVE-2010-1199",
+      "CVE-2010-1196",
+      "CVE-2010-1198",
+      "CVE-2010-1200",
+      "CVE-2010-1201",
+      "CVE-2010-1202",
+      "CVE-2010-1203"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-06-22",
+    "entry": "2010-06-23"
+  }
+}

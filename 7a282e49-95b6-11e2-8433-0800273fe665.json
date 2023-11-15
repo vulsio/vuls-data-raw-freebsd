@@ -1,0 +1,59 @@
+{
+  "vid": "7a282e49-95b6-11e2-8433-0800273fe665",
+  "topic": "dns/bind9* -- Malicious Regex Can Cause Memory Exhaustion",
+  "affects": [
+    {
+      "name": [
+        "bind99"
+      ],
+      "range": [
+        {
+          "lt": "9.9.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind99-base"
+      ],
+      "range": [
+        {
+          "lt": "9.9.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind98"
+      ],
+      "range": [
+        {
+          "lt": "9.8.4.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind98-base"
+      ],
+      "range": [
+        {
+          "lt": "9.8.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-00871\">\n\t  <p>A critical defect in BIND 9 allows an attacker to cause\n\t     excessive memory consumption in named or other programs\n\t     linked to libdns.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2013-2266"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-03-11",
+    "entry": "2013-03-27"
+  }
+}

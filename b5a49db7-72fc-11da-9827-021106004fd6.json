@@ -1,0 +1,30 @@
+{
+  "vid": "b5a49db7-72fc-11da-9827-021106004fd6",
+  "topic": "scponly -- local privilege escalation exploits",
+  "affects": [
+    {
+      "name": [
+        "scponly"
+      ],
+      "range": [
+        {
+          "lt": "4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Max Vozeler reports:</p>\n\t<blockquote cite=\"https://lists.ccs.neu.edu/pipermail/scponly/2005-December/001027.html\">\n\t  <p>If ALL the following conditions are true, administrators using\n\t    scponly-4.1 or older may be at risk of a local privilege\n\t    escalation exploit:</p>\n\t  <ul>\n\t    <li>the chrooted setuid scponlyc binary is installed</li>\n\t    <li>regular non-scponly users have interactive shell access\n\t      to the box</li>\n\t    <li>a user executable dynamically linked setuid binary\n\t      (such as ping) exists on the same file system mount\n\t      as the user's home directory</li>\n\t    <li>the operating system supports an LD_PRELOAD style\n\t      mechanism to overload dynamic library loading</li>\n\t  </ul>\n\t</blockquote>\n\t<p>Pekka Pessi also reports:</p>\n\t<blockquote cite=\"https://lists.ccs.neu.edu/pipermail/scponly/2005-December/001027.html\">\n\t  <p>If ANY the following conditions are true, administrators\n\t    using scponly-4.1 or older may be at risk of a local privilege\n\t    escalation exploit:</p>\n\t  <ul>\n\t    <li>scp compatibility is enabled</li>\n\t    <li>rsync compatibility is enabled</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.ccs.neu.edu/pipermail/scponly/2005-December/001027.html",
+      "http://sublimation.org/scponly/#relnotes"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-12-21",
+    "entry": "2005-12-22"
+  }
+}

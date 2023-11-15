@@ -1,0 +1,32 @@
+{
+  "vid": "064225c5-1f53-11d9-836a-0090962cff2a",
+  "topic": "squid -- NTLM authentication denial-of-service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "2.5.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A remote attacker is able to cause a denial-of-service\n\t  situation, when NTLM authentication is enabled in squid.\n\t  NTLM authentication uses two functions which lack correct\n\t  offset checking.</p>\n    "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/bugs/show_bug.cgi?id=1045"
+    ],
+    "cvename": [
+      "CVE-2004-0832"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-18",
+    "entry": "2004-10-18"
+  }
+}

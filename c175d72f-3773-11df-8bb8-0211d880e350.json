@@ -1,0 +1,32 @@
+{
+  "vid": "c175d72f-3773-11df-8bb8-0211d880e350",
+  "topic": "gtar -- buffer overflow in rmt client",
+  "affects": [
+    {
+      "name": [
+        "gtar"
+      ],
+      "range": [
+        {
+          "lt": "1.22_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jakob Lell reports:</p>\n\t<blockquote cite=\"http://www.agrs.tu-berlin.de/index.php?id=78327\">\n\t  <p>The rmt client implementation of GNU Tar/Cpio contains\n\t    a heap-based buffer overflow which possibly allows\n\t    arbitrary code execution.</p>\n\t  <p>The problem can be exploited when using an\n\t    untrusted/compromised rmt server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.agrs.tu-berlin.de/index.php?id=78327"
+    ],
+    "cvename": [
+      "CVE-2010-0624"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-03-24",
+    "entry": "2010-03-24"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "vid": "c72a2494-c08b-11e2-bb21-083e8ed0f47b",
+  "topic": "plib -- stack-based buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "plib"
+      ],
+      "range": [
+        {
+          "lt": "1.8.5_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-4552\">\n\t  <p>Stack-based buffer overflow in the error function in\n\t  ssg/ssgParser.cxx in PLIB 1.8.5 allows remote attackers to\n\t  execute arbitrary code via a crafted 3d model file that\n\t  triggers a long error message, as demonstrated by a .ase\n\t  file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-4552"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.openwall.com/lists/oss-security/2012/10/29/8"
+      }
+    ],
+    "bid": [
+      "55839"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-10-09",
+    "entry": "2013-05-19"
+  }
+}

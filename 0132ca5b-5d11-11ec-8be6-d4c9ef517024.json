@@ -1,0 +1,32 @@
+{
+  "vid": "0132ca5b-5d11-11ec-8be6-d4c9ef517024",
+  "topic": "OpenSSL -- Certificate validation issue",
+  "affects": [
+    {
+      "name": [
+        "openssl-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20211214.txt\">\n\t  <p>Invalid handling of X509_verify_cert() internal errors in libssl\n\t    (Moderate)</p>\n\t  <p>Internally libssl in OpenSSL calls X509_verify_cert() on the client\n\t    side to verify a certificate supplied by a server. That function may\n\t    return a negative return value to indicate an internal error (for\n\t    example out of memory). Such a negative return value is mishandled by\n\t    OpenSSL and will cause an IO function (such as SSL_connect() or\n\t    SSL_do_handshake()) to not indicate success and a subsequent call to\n\t    SSL_get_error() to return the value SSL_ERROR_WANT_RETRY_VERIFY.\n\t    This return value is only supposed to be returned by OpenSSL if the\n\t    application has previously called SSL_CTX_set_cert_verify_callback().\n\t    Since most applications do not do this the\n\t    SSL_ERROR_WANT_RETRY_VERIFY return value from SSL_get_error() will be\n\t    totally unexpected and applications may not behave correctly as a\n\t    result. The exact behaviour will depend on the application but it\n\t    could result in crashes, infinite loops or other similar incorrect\n\t    responses.</p>\n\t  </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20211214.txt"
+    ],
+    "cvename": [
+      "CVE-2021-4044"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-12-14",
+    "entry": "2021-12-14"
+  }
+}

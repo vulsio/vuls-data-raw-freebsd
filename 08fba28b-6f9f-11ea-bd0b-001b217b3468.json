@@ -1,0 +1,46 @@
+{
+  "vid": "08fba28b-6f9f-11ea-bd0b-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "12.9.1",
+          "ge": "12.9.0"
+        },
+        {
+          "lt": "12.8.8",
+          "ge": "12.8.0"
+        },
+        {
+          "lt": "12.7.8",
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2020/03/26/security-release-12-dot-9-dot-1-released/\">\n\t  <p>Arbitrary File Read when Moving an Issue</p>\n\t  <p>Path Traversal in NPM Package Registry</p>\n\t  <p>SSRF on Project Import</p>\n\t  <p>External Users Can Create Personal Snippet</p>\n\t  <p>Triggers Decription Can be Updated by Other Maintainers in Project</p>\n\t  <p>Information Disclosure on Confidential Issues Moved to Private Programs</p>\n\t  <p>Potential DoS in Repository Archive Download</p>\n\t  <p>Blocked Users Can Still Pull/Push Docker Images</p>\n\t  <p>Repository Mirroring not Disabled when Feature not Activated</p>\n\t  <p>Vulnerability Feedback Page Was Leaking Information on Vulnerabilities</p>\n\t  <p>Stored XSS Vulnerability in Admin Feature</p>\n\t  <p>Upload Feature Allowed a User to Read Unauthorized Exported Files</p>\n\t  <p>Unauthorized Users Are Able to See CI Metrics</p>\n\t  <p>Last Pipeline Status of a Merge Request Leaked</p>\n\t  <p>Blind SSRF on FogBugz</p>\n\t  <p>Update Nokogiri dependency</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2020/03/26/security-release-12-dot-9-dot-1-released/"
+    ],
+    "cvename": [
+      "CVE-2020-10953",
+      "CVE-2020-10956",
+      "CVE-2020-10954",
+      "CVE-2020-10952",
+      "CVE-2020-10955",
+      "CVE-2020-9795"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-03-26",
+    "entry": "2020-03-26"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "vid": "4f254817-6318-11ee-b2ff-080027de9982",
+  "topic": "Django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py39-django32",
+        "py310-django32",
+        "py311-django32"
+      ],
+      "range": [
+        {
+          "lt": "3.2.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py39-django41",
+        "py310-django41",
+        "py311-django41"
+      ],
+      "range": [
+        {
+          "lt": "4.1.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py39-django42",
+        "py310-django42",
+        "py311-django42"
+      ],
+      "range": [
+        {
+          "lt": "4.2.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Django reports:</p>\n       <blockquote cite=\"https://www.djangoproject.com/weblog/2023/oct/04/security-releases/\">\n\t<p>CVE-2023-43665: Denial-of-service possibility in django.utils.text.Truncator.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2023/oct/04/security-releases/"
+    ],
+    "cvename": [
+      "CVE-2023-43665"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-01",
+    "entry": "2023-10-05"
+  }
+}

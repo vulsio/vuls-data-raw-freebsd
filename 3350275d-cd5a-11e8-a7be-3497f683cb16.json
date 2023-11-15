@@ -1,0 +1,39 @@
+{
+  "vid": "3350275d-cd5a-11e8-a7be-3497f683cb16",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.146"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "lt": "2.138.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2018-10-10/\">\n\t  <h1>Description</h1>\n\t  <h5>(Low) SECURITY-867</h5>\n\t  <p>Path traversal vulnerability in Stapler allowed accessing internal data</p>\n\t  <h5>(Medium) SECURITY-1074</h5>\n\t  <p>Arbitrary file write vulnerability using file parameter definitions</p>\n\t  <h5>(Medium) SECURITY-1129</h5>\n\t  <p>Reflected XSS vulnerability</p>\n\t  <h5>(Medium) SECURITY-1162</h5>\n\t  <p>Ephemeral user record was created on some invalid authentication attempts</p>\n\t  <h5>(Medium) SECURITY-1128</h5>\n\t  <p>Ephemeral user record creation</p>\n\t  <h5>(Medium) SECURITY-1158</h5>\n\t  <p>Session fixation vulnerability on user signup</p>\n\t  <h5>(Medium) SECURITY-765</h5>\n\t  <p>Failures to process form submission data could result in secrets being displayed or written to logs</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jenkins.io/security/advisory/2018-10-10/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-10-10",
+    "entry": "2018-10-11"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "vid": "6f736456-c060-11dc-982e-001372fd0af2",
+  "topic": "drupal -- cross site scripting (utf8)",
+  "affects": [
+    {
+      "name": [
+        "drupal5"
+      ],
+      "range": [
+        {
+          "lt": "5.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "drupal4"
+      ],
+      "range": [
+        {
+          "lt": "4.7.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/208564\">\n\t  <p>When outputting plaintext Drupal strips potentially dangerous\n\t    HTML tags and attributes from HTML, and escapes characters which\n\t    have a special meaning in HTML. This output filtering secures\n\t    the site against cross site scripting attacks via user input.</p>\n\t  <p>Certain byte sequences that are invalid in the UTF8\n\t    specification are not handled properly by Internet Explorer 6\n\t    and may lead it to see a multibyte start character where none is\n\t    present. Internet Explorer 6 then consumes a number of\n\t    subsequent UTF-8 characters. This may lead to unsafe attributes\n\t    that were outside a tag for the filter to appear inside a tag\n\t    for Internet Explorer 6. This behaviour can then be used to\n\t    insert and execute javascript in the context of the website.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/208564",
+      "http://secunia.com/advisories/28422/"
+    ],
+    "cvename": [
+      "CVE-2008-0273"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-01-10",
+    "entry": "2008-01-11",
+    "modified": "2010-05-12"
+  }
+}

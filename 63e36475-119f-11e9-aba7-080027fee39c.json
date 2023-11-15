@@ -1,0 +1,29 @@
+{
+  "vid": "63e36475-119f-11e9-aba7-080027fee39c",
+  "topic": "gitea -- insufficient privilege check",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.6.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea project reports:</p>\n\t<blockquote cite=\"https://blog.gitea.io/2019/01/release-of-1.6.3/\">\n\t  <p>Security</p>\n\t  <ul>\n\t    <li>Prevent DeleteFilePost doing arbitrary deletion</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/go-gitea/gitea/issues/5631"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-01-04",
+    "entry": "2019-01-06"
+  }
+}

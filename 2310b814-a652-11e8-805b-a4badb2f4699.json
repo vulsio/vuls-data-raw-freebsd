@@ -1,0 +1,38 @@
+{
+  "vid": "2310b814-a652-11e8-805b-a4badb2f4699",
+  "topic": "FreeBSD -- L1 Terminal Fault (L1TF) Kernel Information Disclosure",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "11.2_2",
+          "ge": "11.2"
+        },
+        {
+          "lt": "11.1_13",
+          "ge": "11.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>On certain Intel 64-bit x86 systems there is a period\n\tof time during terminal fault handling where the CPU may\n\tuse speculative execution to try to load data. The CPU may\n\tspeculatively access the level 1 data cache (L1D). Data\n\twhich would otherwise be protected may then be determined\n\tby using side channel methods.</p>\n\t<p>This issue affects bhyve on FreeBSD/amd64 systems.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker executing user code, or kernel code inside\n\tof a virtual machine, may be able to read secret data from\n\tthe kernel or from another virtual machine.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2018-3620",
+      "CVE-2018-3646"
+    ],
+    "freebsd_sa": [
+      "SA-18:09.l1tf"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-14",
+    "entry": "2018-08-22"
+  }
+}

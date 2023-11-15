@@ -1,0 +1,42 @@
+{
+  "vid": "79c68ef7-c8ae-4ade-91b4-4b8221b7c72a",
+  "topic": "firefox -- Cross-origin restriction bypass using Fetch",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "41.0.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "41.0.2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Firefox Developers report:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2015-115/\">\n\t  <p>Security researcher Abdulrahman Alqabandi reported that the fetch()\n\t    API did not correctly implement the Cross-Origin Resource Sharing\n\t    (CORS) specification, allowing a malicious page to access private\n\t    data from other origins. Mozilla developer Ben Kelly independently reported the\n\t    same issue.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2015-115/"
+    ],
+    "cvename": [
+      "CVE-2015-7184"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-15",
+    "entry": "2015-10-16"
+  }
+}

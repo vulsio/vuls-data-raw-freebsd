@@ -1,0 +1,39 @@
+{
+  "vid": "29194cb8-6e9f-11e1-8376-f0def16c5c1b",
+  "topic": "nginx -- potential information leak",
+  "affects": [
+    {
+      "name": [
+        "nginx"
+      ],
+      "range": [
+        {
+          "lt": "1.0.14,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nginx-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.1.17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>nginx development team reports:</p>\n\t<blockquote cite=\"http://nginx.net/CHANGES\">\n\t  <p>Matthew Daley recently discovered a security problem\n\t    which may lead to a disclosure of previously freed memory\n\t    on specially crafted response from an upstream server,\n\t    potentially resulting in sensitive information leak.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://nginx.net/CHANGES"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-03-15",
+    "entry": "2012-03-15"
+  }
+}

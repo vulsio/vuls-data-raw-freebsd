@@ -1,0 +1,33 @@
+{
+  "vid": "d10fc771-958f-11eb-9c34-080027f515ea",
+  "topic": "curl -- TLS 1.3 session ticket proxy host mixup",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.76.0",
+          "ge": "7.63.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Daniel Stenberg reports:</p>\n\t<blockquote cite=\"https://curl.se/docs/CVE-2021-22890.html\">\n\t  <p>\n\t    Enabled by default, libcurl supports the use of TLS 1.3 session\n\t    tickets to resume previous TLS sessions to speed up subsequent\n\t    TLS handshakes.\n\t  </p>\n\t  <p>\n\t    When using a HTTPS proxy and TLS 1.3, libcurl can confuse session\n\t    tickets arriving from the HTTPS proxy but work as if they arrived\n\t    from the remote server and then wrongly \"short-cut\" the host\n\t    handshake. The reason for this confusion is the modified sequence\n\t    from TLS 1.2 when the session ids would provided only during the\n\t    TLS handshake, while in TLS 1.3 it happens post hand-shake and\n\t    the code was not updated to take that changed behavior into account.\n\t  </p>\n\t  <p>\n\t    When confusing the tickets, a HTTPS proxy can trick libcurl to use\n\t    the wrong session ticket resume for the host and thereby circumvent\n\t    the server TLS certificate check and make a MITM attack to be\n\t    possible to perform unnoticed.\n\t  </p>\n\t  <p>\n\t    This flaw can allow a malicious HTTPS proxy to MITM the traffic.\n\t    Such a malicious HTTPS proxy needs to provide a certificate that\n\t    curl will accept for the MITMed server for an attack to work -\n\t    unless curl has been told to ignore the server certificate check.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.se/docs/CVE-2021-22890.html"
+    ],
+    "cvename": [
+      "CVE-2021-22890"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-03-31",
+    "entry": "2021-04-10"
+  }
+}

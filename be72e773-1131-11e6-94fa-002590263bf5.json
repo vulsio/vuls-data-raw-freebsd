@@ -1,0 +1,57 @@
+{
+  "vid": "be72e773-1131-11e6-94fa-002590263bf5",
+  "topic": "gitlab -- privilege escalation via \"impersonate\" feature",
+  "affects": [
+    {
+      "name": [
+        "gitlab"
+      ],
+      "range": [
+        {
+          "lt": "8.2.5",
+          "ge": "8.2.0"
+        },
+        {
+          "lt": "8.3.9",
+          "ge": "8.3.0"
+        },
+        {
+          "lt": "8.4.10",
+          "ge": "8.4.0"
+        },
+        {
+          "lt": "8.5.12",
+          "ge": "8.5.0"
+        },
+        {
+          "lt": "8.6.8",
+          "ge": "8.6.0"
+        },
+        {
+          "lt": "8.7.1",
+          "ge": "8.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GitLab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2016/05/02/cve-2016-4340-patches/\">\n\t  <p>During an internal code review, we discovered a critical security\n\t    flaw in the \"impersonate\" feature of GitLab. Added in GitLab 8.2,\n\t    this feature was intended to allow an administrator to simulate\n\t    being logged in as any other user.</p>\n\t  <p>A part of this feature was not properly secured and it was possible\n\t    for any authenticated user, administrator or not, to \"log in\" as any\n\t    other user, including administrators. Please see the issue for more\n\t    details.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2016/05/02/cve-2016-4340-patches/",
+      "https://gitlab.com/gitlab-org/gitlab-ce/issues/15548"
+    ],
+    "cvename": [
+      "CVE-2016-4340"
+    ],
+    "freebsd_pr": [
+      "ports/209225"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-02",
+    "entry": "2016-05-03"
+  }
+}

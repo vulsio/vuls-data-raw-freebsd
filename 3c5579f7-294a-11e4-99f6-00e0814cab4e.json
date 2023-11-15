@@ -1,0 +1,164 @@
+{
+  "vid": "3c5579f7-294a-11e4-99f6-00e0814cab4e",
+  "topic": "django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py27-django"
+      ],
+      "range": [
+        {
+          "lt": "1.6.6",
+          "ge": "1.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py27-django15"
+      ],
+      "range": [
+        {
+          "lt": "1.5.9",
+          "ge": "1.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py27-django14"
+      ],
+      "range": [
+        {
+          "lt": "1.4.14",
+          "ge": "1.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py32-django"
+      ],
+      "range": [
+        {
+          "lt": "1.6.6",
+          "ge": "1.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py32-django15"
+      ],
+      "range": [
+        {
+          "lt": "1.5.9",
+          "ge": "1.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py33-django"
+      ],
+      "range": [
+        {
+          "lt": "1.6.6",
+          "ge": "1.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py33-django15"
+      ],
+      "range": [
+        {
+          "lt": "1.5.9",
+          "ge": "1.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py34-django"
+      ],
+      "range": [
+        {
+          "lt": "1.6.6",
+          "ge": "1.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py34-django15"
+      ],
+      "range": [
+        {
+          "lt": "1.5.9",
+          "ge": "1.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py27-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "20140821,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py32-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "20140821,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py33-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "20140821,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py34-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "20140821,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Django project reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2014/aug/20/security/\">\n\t  <p>These releases address an issue with reverse() generating external\n\t    URLs; a denial of service involving file uploads; a potential\n\t    session hijacking issue in the remote-user middleware; and a data\n\t    leak in the administrative interface. We encourage all users of\n\t    Django to upgrade as soon as possible.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2014/aug/20/security/"
+    ],
+    "cvename": [
+      "CVE-2014-0480",
+      "CVE-2014-0481",
+      "CVE-2014-0482",
+      "CVE-2014-0483"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-08-20",
+    "entry": "2014-08-21"
+  }
+}

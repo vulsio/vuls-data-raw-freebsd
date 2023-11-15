@@ -1,0 +1,38 @@
+{
+  "vid": "f5c4d7f7-9f4b-11dd-bab1-001999392805",
+  "topic": "opera -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "9.61"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Opera reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/903/\">\n\t  <p>Certain constructs are not escaped correctly by Opera's\n\t    History Search results. These can be used to inject scripts\n\t    into the page, which can then be used to look through the user's\n\t    browsing history, including the contents of the pages they have\n\t    visited. These may contain sensitive information.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/904/\">\n\t  <p>If a link that uses a JavaScript URL triggers Opera's Fast\n\t    Forward feature, when the user activates Fast Forward, the\n\t    script should run on the current page. When a page is held in a\n\t    frame, the script is incorrectly executed on the outermost page,\n\t    not the page where the URL was located. This can be used to\n\t    execute scripts in the context of an unrelated frame, which\n\t    allows cross-site scripting.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/905/\">\n\t  <p>When Opera is previewing a news feed, some scripts are not\n\t    correctly blocked. These scripts are able to subscribe the user\n\t    to any feed URL that the attacker chooses, and can also view\n\t    the contents of any feeds that the user is subscribed to.\n\t    These may contain sensitive information.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.opera.com/support/search/view/903/",
+      "http://www.opera.com/support/search/view/904/",
+      "http://www.opera.com/support/search/view/905/"
+    ],
+    "cvename": [
+      "CVE-2008-4697",
+      "CVE-2008-4698",
+      "CVE-2008-4725"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-10-17",
+    "entry": "2008-10-28",
+    "modified": "2010-05-02"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vid": "b2383758-5f15-11db-ae08-0008743bf21a",
+  "topic": "drupal -- multiple XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "drupal"
+      ],
+      "range": [
+        {
+          "lt": "4.6.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/files/sa-2006-024/advisory.txt\">\n\t  <p>A bug in input validation and lack of output validation\n\t    allows HTML and script insertion on several pages.</p>\n\t  <p>Drupal's XML parser passes unescaped data to watchdog\n\t    under certain circumstances. A malicious user may execute\n\t    an XSS attack via a specially crafted RSS feed. This\n\t    vulnerability exists on systems that do not use PHP's\n\t    mb_string extension (to check if mb_string is being used,\n\t    navigate to admin/settings and look under \"String\n\t    handling\"). Disabling the aggregator module provides an\n\t    immediate workaround.</p>\n\t  <p>The aggregator module, profile module, and forum module do\n\t    not properly escape output of certain fields.</p>\n\t  <p>Note: XSS attacks may lead to administrator access if\n\t    certain conditions are met.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/files/sa-2006-024/advisory.txt",
+      "http://drupal.org/drupal-4.7.4"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-10-18",
+    "entry": "2006-10-18"
+  }
+}

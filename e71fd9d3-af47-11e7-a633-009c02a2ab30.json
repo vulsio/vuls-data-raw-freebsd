@@ -1,0 +1,62 @@
+{
+  "vid": "e71fd9d3-af47-11e7-a633-009c02a2ab30",
+  "topic": "nss -- Use-after-free in TLS 1.2 generating handshake hashes",
+  "affects": [
+    {
+      "name": [
+        "nss"
+      ],
+      "range": [
+        {
+          "lt": "3.32.1",
+          "ge": "3.32"
+        },
+        {
+          "lt": "3.28.6",
+          "ge": "3.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c6-nss"
+      ],
+      "range": [
+        {
+          "lt": "3.28.4_2",
+          "ge": "3.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c7-nss"
+      ],
+      "range": [
+        {
+          "lt": "3.28.4_2",
+          "ge": "3.28"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2017-21/#CVE-2017-7805\">\n\t  <p>During TLS 1.2 exchanges, handshake hashes are generated which\n\t     point to a message buffer. This saved data is used for later\n\t     messages but in some cases, the handshake transcript can\n\t     exceed the space available in the current buffer, causing the\n\t     allocation of a new buffer. This leaves a pointer pointing to\n\t     the old, freed buffer, resulting in a use-after-free when\n\t     handshake hashes are then calculated afterwards. This can\n\t     result in a potentially exploitable crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2017-21/#CVE-2017-7805",
+      "https://hg.mozilla.org/projects/nss/rev/2d7b65b72290",
+      "https://hg.mozilla.org/projects/nss/rev/d3865e2957d0"
+    ],
+    "cvename": [
+      "CVE-2017-7805"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-08-04",
+    "entry": "2017-10-12",
+    "modified": "2018-01-29"
+  }
+}

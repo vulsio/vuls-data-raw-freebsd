@@ -1,0 +1,83 @@
+{
+  "vid": "76c8b690-340b-11eb-a2b7-54e1ad3d6335",
+  "topic": "xorg-server -- Multiple input validation failures in X server XKB extension",
+  "affects": [
+    {
+      "name": [
+        "xorg-server"
+      ],
+      "range": [
+        {
+          "lt": "1.20.9_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xephyr"
+      ],
+      "range": [
+        {
+          "lt": "1.20.9_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xorg-vfbserver"
+      ],
+      "range": [
+        {
+          "lt": "1.20.9_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xorg-nestserver"
+      ],
+      "range": [
+        {
+          "lt": "1.20.9_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xwayland"
+      ],
+      "range": [
+        {
+          "lt": "1.20.9_2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xorg-dmx"
+      ],
+      "range": [
+        {
+          "lt": "1.20.9_1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2020-December/003066.html\">\n\t  <p>These issues can lead to privileges elevations for authorized\n\t    clients on systems where the X server is running privileged.</p>\n\t  <p>Insufficient checks on the lengths of the XkbSetMap request can\n\t    lead to out of bounds memory accesses in the X server.</p>\n\t  <p>Insufficient checks on input of the XkbSetDeviceInfo request can\n\t    lead to a buffer overflow on the head in the X server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.x.org/archives/xorg-announce/2020-December/003066.html"
+    ],
+    "cvename": [
+      "CVE-2020-14360",
+      "CVE-2020-25712"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-12-01",
+    "entry": "2020-12-01"
+  }
+}

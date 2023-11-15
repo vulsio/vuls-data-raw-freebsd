@@ -1,0 +1,34 @@
+{
+  "vid": "a40ec970-0efa-11e5-90e4-d050996490d0",
+  "topic": "cups -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cups-base"
+      ],
+      "range": [
+        {
+          "lt": "2.0.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CUPS development team reports:</p>\n\t<blockquote cite=\"https://cups.org/blog.php?L1082\">\n\t  <p>The new release addresses two security vulnerabilities,\n\t    add localizations for German and Russian, and includes\n\t    several general bug fixes. Changes include:</p>\n\t  <p>Security: Fixed CERT VU #810572/CVE-2015-1158/CVE-2015-1159\n\t    exploiting the dynamic linker (STR #4609)</p>\n\t  <p>Security: The scheduler could hang with malformed\n\t    gzip data (STR #4602)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cups.org/blog.php?L1082",
+      "https://www.kb.cert.org/vuls/id/810572"
+    ],
+    "cvename": [
+      "CVE-2015-1158",
+      "CVE-2015-1159"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-09",
+    "entry": "2015-06-09"
+  }
+}

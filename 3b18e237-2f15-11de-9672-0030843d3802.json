@@ -1,0 +1,101 @@
+{
+  "vid": "3b18e237-2f15-11de-9672-0030843d3802",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.20_7,1"
+        },
+        {
+          "lt": "3.0.9,1",
+          "gt": "3.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox",
+        "linux-firefox-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey-devel"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "1.1.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.22"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2009-22: Firefox allows Refresh header to redirect to\n\t    javascript: URIs</p>\n\t  <p>MFSA 2009-21: POST data sent to wrong site when saving web page\n\t    with embedded frame</p>\n\t  <p>MFSA 2009-20: Malicious search plugins can inject code into\n\t    arbitrary sites</p>\n\t  <p>MFSA 2009-19: Same-origin violations in XMLHttpRequest and\n\t    XPCNativeWrapper.toString</p>\n\t  <p>MFSA 2009-18: XSS hazard using third-party stylesheets and XBL\n\t    bindings</p>\n\t  <p>MFSA 2009-17: Same-origin violations when Adobe Flash loaded via\n\t    view-source: scheme</p>\n\t  <p>MFSA 2009-16: jar: scheme ignores the content-disposition: header\n\t    on the inner URI</p>\n\t  <p>MFSA 2009-15: URL spoofing with box drawing character</p>\n\t  <p>MFSA 2009-14  Crashes with evidence of memory corruption\n\t    (rv:1.9.0.9)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-22.html",
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-21.html",
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-20.html",
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-19.html",
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-18.html",
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-17.html",
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-16.html",
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-15.html",
+      "http://www.mozilla.org/security/announce/2009/mfsa2009-14.html"
+    ],
+    "cvename": [
+      "CVE-2009-1303",
+      "CVE-2009-1306",
+      "CVE-2009-1307",
+      "CVE-2009-1308",
+      "CVE-2009-1309",
+      "CVE-2009-1312",
+      "CVE-2009-1311",
+      "CVE-2009-1302",
+      "CVE-2009-1304",
+      "CVE-2009-1305",
+      "CVE-2009-1310"
+    ],
+    "bid": [
+      "34656"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-04-21",
+    "entry": "2009-04-22",
+    "modified": "2009-12-12"
+  }
+}

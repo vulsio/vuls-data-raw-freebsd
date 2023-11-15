@@ -1,0 +1,86 @@
+{
+  "vid": "3f3837cc-48fb-4414-aa46-5b1c23c9feae",
+  "topic": "krb5 -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.14.6"
+        },
+        {
+          "lt": "1.15.2",
+          "ge": "1.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "krb5-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.14.6"
+        },
+        {
+          "lt": "1.15.2",
+          "ge": "1.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "krb5-115"
+      ],
+      "range": [
+        {
+          "lt": "1.15.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "krb5-114"
+      ],
+      "range": [
+        {
+          "lt": "1.14.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "krb5-113"
+      ],
+      "range": [
+        {
+          "lt": "1.14.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MIT reports:</p>\n\t<blockquote cite=\"http://krbdev.mit.edu/rt/Ticket/Display.html?id=8599\">\n\t  <p>CVE-2017-11368:</p>\n\t  <p>In MIT krb5 1.7 and later, an authenticated attacker can cause an\n\t     assertion failure in krb5kdc by sending an invalid S4U2Self or\n\t     S4U2Proxy request.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://krbdev.mit.edu/rt/Ticket/Display.html?id=8598\">\n\t  <p>CVE-2017-11462:</p>\n\t  <p>RFC 2744 permits a GSS-API implementation to delete an existing\n\t     security context on a second or subsequent call to gss_init_sec_context()\n\t     or gss_accept_sec_context() if the call results in an error.\n\t     This API behavior has been found to be dangerous, leading to the\n\t     possibility of memory errors in some callers.  For safety, GSS-API\n\t     implementations should instead preserve existing security contexts\n\t     on error until the caller deletes them.</p>\n\t  <p>All versions of MIT krb5 prior to this change may delete acceptor\n\t     contexts on error.  Versions 1.13.4 through 1.13.7, 1.14.1 through\n\t     1.14.5, and 1.15 through 1.15.1 may also delete initiator contexts\n\t     on error.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2017-11368",
+      "https://krbdev.mit.edu/rt/Ticket/Display.html?id=8599",
+      "https://github.com/krb5/krb5/commit/ffb35baac6981f9e8914f8f3bffd37f284b85970",
+      "https://nvd.nist.gov/vuln/detail/CVE-2017-11462",
+      "https://krbdev.mit.edu/rt/Ticket/Display.html?id=8598",
+      "https://github.com/krb5/krb5/commit/56f7b1bc95a2a3eeb420e069e7655fb181ade5cf"
+    ],
+    "cvename": [
+      "CVE-2017-11368",
+      "CVE-2017-11462"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-07-14",
+    "entry": "2017-10-18"
+  }
+}

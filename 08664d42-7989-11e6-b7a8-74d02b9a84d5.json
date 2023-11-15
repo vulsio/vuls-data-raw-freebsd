@@ -1,0 +1,32 @@
+{
+  "vid": "08664d42-7989-11e6-b7a8-74d02b9a84d5",
+  "topic": "h2o -- fix DoS attack vector",
+  "affects": [
+    {
+      "name": [
+        "h2o"
+      ],
+      "range": [
+        {
+          "lt": "2.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Frederik Deweerdt reported a denial-of-service attack vector\n\tdue to an unhandled error condition during socket connection.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/h2o/h2o/issues/1077"
+    ],
+    "cvename": [
+      "CVE-2016-4864"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-06-09",
+    "entry": "2016-09-14"
+  }
+}

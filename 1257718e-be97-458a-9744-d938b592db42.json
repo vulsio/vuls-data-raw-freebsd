@@ -1,0 +1,33 @@
+{
+  "vid": "1257718e-be97-458a-9744-d938b592db42",
+  "topic": "node -- access to unintended files",
+  "affects": [
+    {
+      "name": [
+        "node"
+      ],
+      "range": [
+        {
+          "lt": "8.6.0",
+          "ge": "8.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>node developers report:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/101056\">\n\t  <p>Node.js 8.5.0 before 8.6.0 allows remote attackers to access unintended files, because a change to \"..\" handling was incompatible with the pathname validation used by unspecified community modules.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securityfocus.com/bid/101056"
+    ],
+    "cvename": [
+      "CVE-2017-14849"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-09-27",
+    "entry": "2017-10-10"
+  }
+}

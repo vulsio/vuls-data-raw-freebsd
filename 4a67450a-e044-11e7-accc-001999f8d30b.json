@@ -1,0 +1,29 @@
+{
+  "vid": "4a67450a-e044-11e7-accc-001999f8d30b",
+  "topic": "asterisk -- Remote Crash Vulnerability in RTCP Stack",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.18.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>If a compound RTCP packet is received containing more\n\t  than one report (for example a Receiver Report and a\n\t  Sender Report) the RTCP stack will incorrectly store\n\t  report information outside of allocated memory potentially\n\t  causing a crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2017-012.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-12-12",
+    "entry": "2017-12-13"
+  }
+}

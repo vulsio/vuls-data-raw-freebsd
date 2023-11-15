@@ -1,0 +1,34 @@
+{
+  "vid": "7a2e0063-0e4e-11e8-94c0-5453ed2e2b49",
+  "topic": "p7zip-codec-rar -- insufficient error handling",
+  "affects": [
+    {
+      "name": [
+        "p7zip-codec-rar"
+      ],
+      "range": [
+        {
+          "lt": "16.02_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5996\">\n\t  <p>Insufficient exception handling in the method\n\t    NCompress::NRar3::CDecoder::Code of 7-Zip before 18.00 and p7zip\n\t    can lead to multiple memory corruptions within the PPMd code,\n\t    alows remote attackers to cause a denial of service (segmentation\n\t    fault) or execute arbitrary code via a crafted RAR archive.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://landave.io/2018/01/7-zip-multiple-memory-corruptions-via-rar-and-zip/",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5996",
+      "https://nvd.nist.gov/vuln/detail/CVE-2018-5996"
+    ],
+    "cvename": [
+      "CVE-2018-5996"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-23",
+    "entry": "2018-02-10"
+  }
+}

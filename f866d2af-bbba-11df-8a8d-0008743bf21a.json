@@ -1,0 +1,34 @@
+{
+  "vid": "f866d2af-bbba-11df-8a8d-0008743bf21a",
+  "topic": "vim6 -- heap-based overflow while parsing shell metacharacters",
+  "affects": [
+    {
+      "name": [
+        "vim6",
+        "vim6+ruby"
+      ],
+      "range": [
+        {
+          "lt": "6.3.62",
+          "ge": "6.2.429"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Description for CVE-2008-3432 says:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3432\">\n\t  <p>Heap-based buffer overflow in the mch_expand_wildcards\n\t    function in os_unix.c in Vim 6.2 and 6.3 allows user-assisted\n\t    attackers to execute arbitrary code via shell metacharacters\n\t    in filenames, as demonstrated by the netrw.v3 test case.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2008/07/15/4"
+    ],
+    "cvename": [
+      "CVE-2008-3432"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-07-31",
+    "entry": "2010-09-09"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "dfc1daa8-61de-11da-b64c-0001020eed82",
+  "topic": "opera -- command line URL shell command injection",
+  "affects": [
+    {
+      "name": [
+        "linux-opera",
+        "opera-devel",
+        "opera"
+      ],
+      "range": [
+        {
+          "lt": "8.51"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An Opera Advisory reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/search/supsearch.dml?index=818\">\n\t  <p>Opera for UNIX uses a wrapper shell script to start up\n\t    Opera. This shell script reads the input arguments, like\n\t    the file names or URLs that Opera is to open. It also\n\t    performs some environment checks, for example whether Java\n\t    is available and if so, where it is located.</p>\n\t  <p>This wrapper script can also run commands embedded in the\n\t    URL, so that a specially crafted URL can make arbitrary\n\t    commands run on the recipient's machine. Users who have\n\t    other programs set up to use Opera to open Web links are\n\t    vulnerable to this flaw. For these users, clicking a Web\n\t    link in for example OpenOffice.org or Evolution can run a\n\t    command that was put into the link.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/secunia_research/2005-57/advisory/",
+      "http://www.opera.com/support/search/supsearch.dml?index=818"
+    ],
+    "cvename": [
+      "CVE-2005-3750"
+    ],
+    "bid": [
+      "15521"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-11-17",
+    "entry": "2005-11-30"
+  }
+}

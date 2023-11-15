@@ -1,0 +1,36 @@
+{
+  "vid": "76301302-1d59-11d9-814e-0001020eed82",
+  "topic": "xerces-c2 -- Attribute blowup denial-of-service",
+  "affects": [
+    {
+      "name": [
+        "xerces-c2"
+      ],
+      "range": [
+        {
+          "lt": "2.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Amit Klein reports about Xerces-C++:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109674050017645\">\n\t  <p>An attacker can craft a malicious XML document, which\n\t    uses XML attributes in a way that inflicts a denial of\n\t    service condition on the target machine (XML parser).  The\n\t    result of this attack is that the XML parser consumes all\n\t    the CPU.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109674050017645",
+        "msgid": "415F00A8.13029.1FAADB7@localhost"
+      }
+    ],
+    "bid": [
+      "11312"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-10-02",
+    "entry": "2004-10-13",
+    "modified": "2004-10-14"
+  }
+}

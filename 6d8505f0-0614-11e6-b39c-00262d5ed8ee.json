@@ -1,0 +1,42 @@
+{
+  "vid": "6d8505f0-0614-11e6-b39c-00262d5ed8ee",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "50.0.2661.75"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.nl/2016/04/stable-channel-update_13.html\">\n\t  <p>20 security fixes in this release, including:</p>\n\t  <ul>\n\t    <li>[590275] High CVE-2016-1652: Universal XSS in extension\n\t      bindings. Credit to anonymous.</li>\n\t    <li>[589792] High CVE-2016-1653: Out-of-bounds write in V8. Credit\n\t      to Choongwoo Han.</li>\n\t    <li>[591785] Medium CVE-2016-1651: Out-of-bounds read in Pdfium\n\t      JPEG2000 decoding. Credit to kdot working with HP's Zero Day\n\t      Initiative.</li>\n\t    <li>[589512] Medium CVE-2016-1654: Uninitialized memory read in\n\t      media. Credit to Atte Kettunen of OUSPG.</li>\n\t    <li>[582008] Medium CVE-2016-1655: Use-after-free related to\n\t      extensions. Credit to Rob Wu.</li>\n\t    <li>[570750] Medium CVE-2016-1656: Android downloaded file path\n\t      restriction bypass. Credit to Dzmitry Lukyanenko.</li>\n\t    <li>[567445] Medium CVE-2016-1657: Address bar spoofing. Credit to\n\t      Luan Herrera.</li>\n\t    <li>[573317] Low CVE-2016-1658: Potential leak of sensitive\n\t      information to malicious extensions. Credit to Antonio Sanso\n\t      (@asanso) of Adobe.</li>\n\t    <li>[602697] CVE-2016-1659: Various fixes from internal audits,\n\t      fuzzing and other initiatives.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://googlechromereleases.blogspot.nl/2016/04/stable-channel-update_13.html"
+    ],
+    "cvename": [
+      "CVE-2016-1651",
+      "CVE-2016-1652",
+      "CVE-2016-1653",
+      "CVE-2016-1654",
+      "CVE-2016-1655",
+      "CVE-2016-1656",
+      "CVE-2016-1657",
+      "CVE-2016-1658",
+      "CVE-2016-1659"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-04-13",
+    "entry": "2016-04-19"
+  }
+}

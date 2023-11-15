@@ -1,0 +1,32 @@
+{
+  "vid": "c1630aa3-7970-11e8-8634-dcfe074bd614",
+  "topic": "SQLite -- Corrupt DB can cause a NULL pointer dereference",
+  "affects": [
+    {
+      "name": [
+        "upp"
+      ],
+      "range": [
+        {
+          "le": "11540"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2018-8740\">\n\t  <p>SQLite databases whose schema is corrupted using a CREATE TABLE AS\n\t  statement could cause a NULL pointer dereference, related to build.c\n\t  and prepare.c.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://openwall.com/lists/oss-security/2018/03/17/1"
+    ],
+    "cvename": [
+      "CVE-2018-8740"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-16",
+    "entry": "2018-07-01"
+  }
+}

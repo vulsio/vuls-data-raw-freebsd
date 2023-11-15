@@ -1,0 +1,29 @@
+{
+  "vid": "f59dda75-5ff4-11de-a13e-00e0815b8da8",
+  "topic": "tor-devel -- DNS resolution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "tor-devel"
+      ],
+      "range": [
+        {
+          "lt": "0.2.1.15-rc"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Tor Project reports:</p>\n\t<blockquote cite=\"https://git.torproject.org/checkout/tor/master/ChangeLog\">\n\t  <p>A malicious exit relay could convince a controller that the\n\t    client's DNS question resolves to an internal IP address.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://git.torproject.org/checkout/tor/master/ChangeLog"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-06-20",
+    "entry": "2009-06-23"
+  }
+}

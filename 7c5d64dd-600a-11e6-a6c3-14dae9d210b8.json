@@ -1,0 +1,42 @@
+{
+  "vid": "7c5d64dd-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Kernel stack disclosure in Linux compatibility layer",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "10.3_4",
+          "ge": "10.3"
+        },
+        {
+          "lt": "10.2_18",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_35",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_43",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The implementation of the TIOCGSERIAL ioctl(2) does not\n\tclear the output struct before copying it out to userland.</p>\n\t<p>The implementation of the Linux sysinfo() system call\n\tdoes not clear the output struct before copying it out to\n\tuserland.</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged user can read a portion of uninitialised\n\tkernel stack data, which may contain sensitive information,\n\tsuch as the stack guard, portions of the file cache or\n\tterminal buffers, which an attacker might leverage to obtain\n\televated privileges.</p>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-16:20.linux"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-31",
+    "entry": "2016-08-11"
+  }
+}

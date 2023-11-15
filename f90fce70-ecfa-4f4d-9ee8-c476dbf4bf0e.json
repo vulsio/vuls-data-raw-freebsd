@@ -1,0 +1,32 @@
+{
+  "vid": "f90fce70-ecfa-4f4d-9ee8-c476dbf4bf0e",
+  "topic": "mozilla -- data: URL can inherit wrong origin after an HTTP redirect",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "50.0.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-91/\">\n\t  <p>Redirection from an HTTP connection to a data: URL\n\t    assigns the referring site's origin to the data: URL in some\n\t    circumstances. This can result in same-origin violations\n\t    against a domain if it loads resources from malicious\n\t    sites. Cross-origin setting of cookies has been demonstrated\n\t    without the ability to read them.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2016-91/"
+    ],
+    "cvename": [
+      "CVE-2016-9078"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-28",
+    "entry": "2016-11-29"
+  }
+}

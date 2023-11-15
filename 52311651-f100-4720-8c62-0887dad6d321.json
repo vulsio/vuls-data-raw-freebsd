@@ -1,0 +1,44 @@
+{
+  "vid": "52311651-f100-4720-8c62-0887dad6d321",
+  "topic": "py-tensorflow -- unchecked argument causing crash",
+  "affects": [
+    {
+      "name": [
+        "py37-tensorflow",
+        "py38-tensorflow",
+        "py39-tensorflow",
+        "py310-tensorflow",
+        "py311-tensorflow"
+      ],
+      "range": [
+        {
+          "lt": "2.7.2"
+        },
+        {
+          "lt": "2.8.1",
+          "ge": "2.8.0"
+        },
+        {
+          "lt": "2.9.2",
+          "ge": "2.9.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>Jingyi Shi reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-mgmh-g2v6-mqw5\">\n      <p>The 'AvgPoolOp' function takes an argument `ksize` that must be positive but is not checked.</p>\n      <p>A negative `ksize` can trigger a `CHECK` failure and crash the program.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/GHSA-mgmh-g2v6-mqw5"
+    ],
+    "cvename": [
+      "CVE-2022-35941"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-09-16",
+    "entry": "2023-04-09"
+  }
+}

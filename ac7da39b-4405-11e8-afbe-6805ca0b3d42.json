@@ -1,0 +1,30 @@
+{
+  "vid": "ac7da39b-4405-11e8-afbe-6805ca0b3d42",
+  "topic": "phpmyadmin -- CSRF vulnerability allowing arbitrary SQL execution",
+  "affects": [
+    {
+      "name": [
+        "phpmyadmin"
+      ],
+      "range": [
+        {
+          "lt": "4.8.0.1",
+          "ge": "4.8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2018-2/\">\n\t  <h3>Summary</h3>\n\t  <p>CSRF vulnerability allowing arbitrary SQL execution</p>\n\t  <h3>Description</h3>\n\t  <p>By deceiving a user to click on a crafted URL, it is\n\t    possible for an attacker to execute arbitrary SQL\n\t    commands.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be critical.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.phpmyadmin.net/security/PMASA-2018-2/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-04-17",
+    "entry": "2018-04-19"
+  }
+}

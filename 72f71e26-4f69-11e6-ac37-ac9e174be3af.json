@@ -1,0 +1,42 @@
+{
+  "vid": "72f71e26-4f69-11e6-ac37-ac9e174be3af",
+  "topic": "Apache OpenOffice 4.1.2 -- Memory Corruption Vulnerability (Impress Presentations)",
+  "affects": [
+    {
+      "name": [
+        "apache-openoffice"
+      ],
+      "range": [
+        {
+          "lt": "4.1.2_8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache-openoffice-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.2.1753426,4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache OpenOffice Project reports:</p>\n\t<blockquote cite=\"http://www.openoffice.org/security/cves/CVE-2016-1513.html\">\n\t  <p>An OpenDocument Presentation .ODP or Presentation Template\n\t    .OTP file can contain invalid presentation elements that lead\n\t    to memory corruption when the document is loaded in Apache\n\t    OpenOffice Impress. The defect may cause the document to appear\n\t    as corrupted and OpenOffice may crash in a recovery-stuck mode\n\t    requiring manual intervention. A crafted exploitation of the\n\t    defect can allow an attacker to cause denial of service\n\t    (memory corruption and application crash) and possible\n\t    execution of arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openoffice.org/security/cves/CVE-2015-4551.html"
+    ],
+    "cvename": [
+      "CVE-2016-1513"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-07-17",
+    "entry": "2016-07-21"
+  }
+}

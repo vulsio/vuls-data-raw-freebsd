@@ -1,0 +1,32 @@
+{
+  "vid": "3145faf1-974c-11e0-869e-000c29249b2e",
+  "topic": "ikiwiki -- tty hijacking via ikiwiki-mass-rebuild",
+  "affects": [
+    {
+      "name": [
+        "ikiwiki"
+      ],
+      "range": [
+        {
+          "lt": "3.20110608"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The IkiWiki development team reports:</p>\n\t<blockquote cite=\"http://ikiwiki.info/security/#index40h2\">\n\t  <p>Ludwig Nussel discovered a way for users to hijack root's tty\n\t    when ikiwiki-mass-rebuild was run.  Additionally, there was\n\t    some potential for information disclosure via symlinks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://ikiwiki.info/security/#index40h2"
+    ],
+    "cvename": [
+      "CVE-2011-1408"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-06-08",
+    "entry": "2011-06-15"
+  }
+}

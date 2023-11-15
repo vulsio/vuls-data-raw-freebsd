@@ -1,0 +1,44 @@
+{
+  "vid": "e14b9870-62a4-11ee-897b-000bab9f87f1",
+  "topic": "Request Tracker -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "rt44"
+      ],
+      "range": [
+        {
+          "lt": "4.4.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rt50"
+      ],
+      "range": [
+        {
+          "lt": "5.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Request Tracker reports:</p>\n\t<p>CVE-2023-41259 SECURITY: RT is vulnerable to unvalidated email headers in incoming email and the mail-gateway REST interface.</p>\n\t<p>CVE-2023-41260 SECURITY: RT is vulnerable to information leakage via response messages returned from requests sent via the mail-gateway REST interface.</p>\n\t<p>CVE-2023-45024 SECURITY: RT 5.0 is vulnerable to information leakage via transaction searches made by authenticated users in the transaction query builder.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bestpractical.com/request-tracker/"
+    ],
+    "cvename": [
+      "CVE-2023-41259",
+      "CVE-2023-41260",
+      "CVE-2023-45024"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-18",
+    "entry": "2023-10-18"
+  }
+}

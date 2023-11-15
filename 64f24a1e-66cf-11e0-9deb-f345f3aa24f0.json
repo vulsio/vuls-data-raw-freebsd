@@ -1,0 +1,40 @@
+{
+  "vid": "64f24a1e-66cf-11e0-9deb-f345f3aa24f0",
+  "topic": "krb5 -- MITKRB5-SA-2011-001, kpropd denial of service",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2",
+          "ge": "1.7"
+        },
+        {
+          "lt": "1.8.4",
+          "ge": "1.8"
+        },
+        {
+          "eq": "1.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An advisory published by the MIT Kerberos team says:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-001.txt\">\n\t  <p>The MIT krb5 KDC database propagation daemon (kpropd) is\n\t    vulnerable to a denial-of-service attack triggered by invalid\n\t    network input.  If a kpropd worker process receives invalid\n\t    input that causes it to exit with an abnormal status, it can\n\t    cause the termination of the listening process that spawned it,\n\t    preventing the slave KDC it was running on from receiving\n\t    database updates from the master KDC.</p>\n\t  <p>Exploit code is not known to exist, but the vulnerabilities are\n\t    easy to trigger manually.</p>\n\t  <p>An unauthenticated remote attacker can cause kpropd running in\n\t    standalone mode (the \"-S\" option) to terminate its listening\n\t    process, preventing database propagations to the KDC host on\n\t    which it was running.  Configurations where kpropd runs in\n\t    incremental propagation mode (\"iprop\") or as an inetd server\n\t    are not affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-001.txt"
+    ],
+    "cvename": [
+      "CVE-2010-4022"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-02-08",
+    "entry": "2011-04-14"
+  }
+}

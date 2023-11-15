@@ -1,0 +1,33 @@
+{
+  "vid": "2004616d-f66c-11e5-b94c-001999f8d30b",
+  "topic": "Botan BER Decoder vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "botan110"
+      ],
+      "range": [
+        {
+          "lt": "1.10.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The botan developers reports:</p>\n\t<blockquote cite=\"http://botan.randombit.net/\">\n\t  <p>Excess memory allocation in BER decoder - The BER decoder would allocate a fairly arbitrary amount of memory in a length field, even if there was no chance the read request would succeed. This might cause the process to run out of memory or invoke the OOM killer.</p>\n\t  <p>Crash in BER decoder - The BER decoder would crash due to reading from offset 0 of an empty vector if it encountered a BIT STRING which did not contain any data at all. This can be used to easily crash applications reading untrusted ASN.1 data, but does not seem exploitable for code execution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://botan.randombit.net/security.html"
+    ],
+    "cvename": [
+      "CVE-2015-5726",
+      "CVE-2015-5727"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-03",
+    "entry": "2016-03-31"
+  }
+}

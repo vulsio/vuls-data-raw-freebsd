@@ -1,0 +1,52 @@
+{
+  "vid": "b3f9f8ef-b1bb-11e5-9728-002590263bf5",
+  "topic": "qemu -- denial of service vulnerability in MegaRAID SAS HBA emulation",
+  "affects": [
+    {
+      "name": [
+        "qemu",
+        "qemu-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.5.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "qemu-sbruno",
+        "qemu-user-static"
+      ],
+      "range": [
+        {
+          "lt": "2.5.50.g20160213"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/12/21/7\">\n\t  <p>Qemu emulator built with the SCSI MegaRAID SAS HBA emulation\n\t    support is vulnerable to a stack buffer overflow issue. It occurs\n\t    while processing the SCSI controller's CTRL_GET_INFO command. A\n\t    privileged guest user could use this flaw to crash the Qemu process\n\t    instance resulting in DoS.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/12/21/7",
+      "https://lists.gnu.org/archive/html/qemu-devel/2015-12/msg03737.html",
+      "http://git.qemu.org/?p=qemu.git;a=commit;h=36fef36b91f7ec0435215860f1458b5342ce2811",
+      "https://github.com/seanbruno/qemu-bsd-user/commit/36fef36b91f7ec0435215860f1458b5342ce2811"
+    ],
+    "cvename": [
+      "CVE-2015-8613"
+    ],
+    "freebsd_pr": [
+      "ports/205813",
+      "ports/205814"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-21",
+    "entry": "2016-01-03",
+    "modified": "2016-07-06"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "vid": "ca16fd0b-5fd1-11e6-a6f2-6cc21735f730",
+  "topic": "PostgreSQL -- Denial-of-Service and Code Injection Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "postgresql91-server"
+      ],
+      "range": [
+        {
+          "lt": "9.1.23",
+          "ge": "9.1.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql92-server"
+      ],
+      "range": [
+        {
+          "lt": "9.2.18",
+          "ge": "9.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql93-server"
+      ],
+      "range": [
+        {
+          "lt": "9.3.11",
+          "ge": "9.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql94-server"
+      ],
+      "range": [
+        {
+          "lt": "9.4.9",
+          "ge": "9.4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql95-server"
+      ],
+      "range": [
+        {
+          "lt": "9.5.4",
+          "ge": "9.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PostgreSQL project reports:</p>\n\t<blockquote cite=\"http://www.postgresql.org/about/news/1688/\">\n\t  <p>\n\t  Security Fixes nested CASE expressions +\n\t  database and role names with embedded special characters\n\t  </p>\n\t  <ul>\n\t    <li>CVE-2016-5423: certain nested CASE expressions can cause the\n\t     server to crash.\n\t    </li>\n\t    <li>CVE-2016-5424: database and role names with embedded special\n\t     characters can allow code injection during administrative operations\n\t     like pg_dumpall.\n\t    </li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-5423",
+      "CVE-2016-5424"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-08-11",
+    "entry": "2016-08-11"
+  }
+}

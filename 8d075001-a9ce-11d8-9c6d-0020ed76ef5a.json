@@ -1,0 +1,44 @@
+{
+  "vid": "8d075001-a9ce-11d8-9c6d-0020ed76ef5a",
+  "topic": "neon date parsing vulnerability",
+  "affects": [
+    {
+      "name": [
+        "neon"
+      ],
+      "range": [
+        {
+          "lt": "0.24.5_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "sitecopy"
+      ],
+      "range": [
+        {
+          "le": "0.13.4_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stefan Esser reports:</p>\n\t<blockquote cite=\"http://security.e-matters.de/advisories/062004.html\">\n\t  <p>A vulnerability within a libneon date parsing function\n\t    could cause a heap overflow which could lead to remote\n\t    code execution, depending on the application using\n\t    libneon.</p>\n\t</blockquote>\n\t<p>The vulnerability is in the function ne_rfc1036_parse,\n\t  which is in turn used by the function ne_httpdate_parse.\n\t  Applications using either of these neon functions may be\n\t  vulnerable.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://security.e-matters.de/advisories/062004.html",
+      "http://secunia.com/advisories/11785"
+    ],
+    "cvename": [
+      "CVE-2004-0398"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-05-19",
+    "entry": "2004-05-19",
+    "modified": "2004-06-25"
+  }
+}

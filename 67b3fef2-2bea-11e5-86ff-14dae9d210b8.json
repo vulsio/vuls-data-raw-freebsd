@@ -1,0 +1,39 @@
+{
+  "vid": "67b3fef2-2bea-11e5-86ff-14dae9d210b8",
+  "topic": "groovy -- remote execution of untrusted code",
+  "affects": [
+    {
+      "name": [
+        "groovy"
+      ],
+      "range": [
+        {
+          "lt": "2.4.4",
+          "ge": "1.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cédric Champeau reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/121\">\n\t  <p>Description</p>\n\t  <p>When an application has Groovy on the classpath and that\n\t    it uses standard Java serialization mechanism to communicate\n\t    between servers, or to store local data, it is possible for\n\t    an attacker to bake a special serialized object that will\n\t    execute code directly when deserialized. All applications\n\t    which rely on serialization and do not isolate the code which\n\t    deserializes objects are subject to this vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://groovy-lang.org/security.html",
+      "https://issues.apache.org/jira/browse/GROOVY-7504"
+    ],
+    "cvename": [
+      "CVE-2015-3253"
+    ],
+    "mlist": [
+      {
+        "text": "http://seclists.org/oss-sec/2015/q3/121"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-09",
+    "entry": "2015-07-16"
+  }
+}

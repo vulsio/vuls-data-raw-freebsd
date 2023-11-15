@@ -1,0 +1,33 @@
+{
+  "vid": "be088777-6085-11ea-8609-08002731610e",
+  "topic": "gitea -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.11.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea Team reports for release 1.11.0:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/releases/tag/v1.11.0\">\n\t  <ul>\n\t    <li>Never allow an empty password to validate (#9682) (#9683)</li>\n\t    <li>Prevent redirect to Host (#9678) (#9679)</li>\n\t    <li>Swagger hide search field (#9554)</li>\n\t    <li>Add \"search\" to reserved usernames (#9063)</li>\n\t    <li>Switch to fomantic-ui (#9374)</li>\n\t    <li>Only serve attachments when linked to issue/release and if accessible by user (#9340)</li>\n\t  </ul>\n\t</blockquote>\n\t<p>The Gitea Team reports for release 1.11.2:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/releases/tag/v1.11.2\">\n\t  <ul>\n\t    <li>Ensure only own addresses are updated (#10397) (#10399)</li>\n\t    <li>Logout POST action (#10582) (#10585)</li>\n\t    <li>Org action fixes and form cleanup (#10512) (#10514)</li>\n\t    <li>Change action GETs to POST (#10462) (#10464)</li>\n\t    <li>Fix admin notices (#10480) (#10483)</li>\n\t    <li>Change admin dashboard to POST (#10465) (#10466)</li>\n\t    <li>Update markbates/goth (#10444) (#10445)</li>\n\t    <li>Update crypto vendors (#10385) (#10398)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.gitea.io/2020/02/gitea-1.11.0-is-released/",
+      "https://blog.gitea.io/2020/03/gitea-1.11.2-is-released/"
+    ],
+    "freebsd_pr": [
+      "ports/244025"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-11-18",
+    "entry": "2020-03-07"
+  }
+}

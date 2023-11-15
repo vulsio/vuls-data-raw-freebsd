@@ -1,0 +1,29 @@
+{
+  "vid": "0c2c4d84-42a2-11e5-9daa-14dae9d210b8",
+  "topic": "freeradius3 -- insufficient validation on packets",
+  "affects": [
+    {
+      "name": [
+        "freeradius3"
+      ],
+      "range": [
+        {
+          "lt": "3.0.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jouni Malinen reports:</p>\n\t<blockquote cite=\"http://freeradius.org/security.html#eap-pwd-2015\">\n\t  <p>The EAP-PWD module performed insufficient validation on\n\t    packets received from an EAP peer. This module is not enabled in the\n\t    default configuration. Administrators must manually enable it for their\n\t    server to be vulnerable. Only versions 3.0 up to 3.0.8 are affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://freeradius.org/security.html#eap-pwd-2015"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-04",
+    "entry": "2015-08-14"
+  }
+}

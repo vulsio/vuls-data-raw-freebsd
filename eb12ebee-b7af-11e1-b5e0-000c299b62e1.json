@@ -1,0 +1,42 @@
+{
+  "vid": "eb12ebee-b7af-11e1-b5e0-000c299b62e1",
+  "topic": "clamav -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.97.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "clamav-devel"
+      ],
+      "range": [
+        {
+          "lt": "20120612"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE Advisories report:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1419\">\n\t  <p>The TAR parser allows remote attackers to bypass malware detection\n\t     via a POSIX TAR file with an initial [aliases] character sequence.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1457\">\n\t  <p>The TAR parser allows remote attackers to bypass malware detection\n\t     via a TAR archive entry with a length field that exceeds the total\n\t     TAR file size.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1458\">\n\t  <p>The Microsoft CHM file parser allows remote attackers to bypass\n\t     malware detection via a crafted reset interval in the LZXC header\n\t     of a CHM file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1459\">\n\t  <p>The TAR file parser allows remote attackers to bypass malware\n\t     detection via a TAR archive entry with a length field\n\t     corresponding to that entire entry, plus part of the header ofxi\n\t     the next entry.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-1419",
+      "CVE-2012-1457",
+      "CVE-2012-1458",
+      "CVE-2012-1459"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-03-19",
+    "entry": "2012-06-16"
+  }
+}

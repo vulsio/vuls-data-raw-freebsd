@@ -1,0 +1,47 @@
+{
+  "vid": "0c2db2aa-5584-11e7-9a7d-b499baebfeaf",
+  "topic": "Apache httpd -- several vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache22"
+      ],
+      "range": [
+        {
+          "lt": "2.2.33"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.26"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache httpd project reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <ul>\n\t    <li>ap_get_basic_auth_pw() Authentication Bypass (CVE-2017-3167):<br/>\n\t      Use of the ap_get_basic_auth_pw() by third-party modules outside\n\t      of the authentication phase may lead to authentication requirements\n\t      being bypassed.</li>\n\t    <li>mod_ssl Null Pointer Dereference (CVE-2017-3169):<br/>mod_ssl may\n\t      dereference a NULL pointer when third-party modules\n\t      call ap_hook_process_connection() during an HTTP request to an HTTPS\n\t      port.</li>\n\t    <li>mod_http2 Null Pointer Dereference (CVE-2017-7659):<br/> A maliciously\n\t      constructed HTTP/2 request could cause mod_http2 to dereference a NULL\n\t      pointer and crash the server process.</li>\n\t    <li>ap_find_token() Buffer Overread (CVE-2017-7668):<br/>The HTTP strict\n\t      parsing changes added in 2.2.32 and 2.4.24 introduced a bug in token\n\t      list parsing, which allows ap_find_token() to search past the end of its\n\t      input string. By maliciously crafting a sequence of request headers, an\n\t      attacker may be able to cause a segmentation fault, or to force\n\t      ap_find_token() to return an incorrect value.</li>\n\t    <li>mod_mime Buffer Overread (CVE-2017-7679):<br/>mod_mime can read one\n\t       byte past the end of a buffer when sending a malicious Content-Type\n\t       response header.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://httpd.apache.org/security/vulnerabilities_24.html",
+      "https://httpd.apache.org/security/vulnerabilities_22.html"
+    ],
+    "cvename": [
+      "CVE-2017-3167",
+      "CVE-2017-3169",
+      "CVE-2017-7659",
+      "CVE-2017-7668",
+      "CVE-2017-7679"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-06-20",
+    "entry": "2017-06-20"
+  }
+}

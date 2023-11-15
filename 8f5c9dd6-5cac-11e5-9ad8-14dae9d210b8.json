@@ -1,0 +1,34 @@
+{
+  "vid": "8f5c9dd6-5cac-11e5-9ad8-14dae9d210b8",
+  "topic": "p7zip -- directory traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "p7zip"
+      ],
+      "range": [
+        {
+          "lt": "9.38.1_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Alexander Cherepanov reports:</p>\n\t<blockquote cite=\"https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=774660\">\n\t  <p>7z (and 7zr) is susceptible to a directory traversal vulnerability.\n\t    While extracting an archive, it will extract symlinks and then follow\n\t    them if they are referenced in further entries. This can be exploited by\n\t    a rogue archive to write files outside the current directory.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=774660",
+      "http://www.openwall.com/lists/oss-security/2015/01/11/2",
+      "http://sourceforge.net/p/p7zip/bugs/147/"
+    ],
+    "cvename": [
+      "CVE-2015-1038"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-01-05",
+    "entry": "2015-09-16"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "vid": "b950a83b-789e-11e8-8545-d8cb8abf62dd",
+  "topic": "Gitlab -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab"
+      ],
+      "range": [
+        {
+          "lt": "11.0.1",
+          "ge": "11.0.0"
+        },
+        {
+          "lt": "10.8.5",
+          "ge": "10.8.0"
+        },
+        {
+          "lt": "10.7.6",
+          "ge": "4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2018/06/25/security-release-gitlab-11-dot-0-dot-1-released/\">\n\t  <p>Wiki XSS</p>\n\t  <p>Sanitize gem updates</p>\n\t  <p>XSS in url_for(params)</p>\n\t  <p>Content injection via username</p>\n\t  <p>Activity feed publicly displaying internal project names</p>\n\t  <p>Persistent XSS in charts</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2018/06/25/security-release-gitlab-11-dot-0-dot-1-released/"
+    ],
+    "cvename": [
+      "CVE-2018-12606",
+      "CVE-2018-3740",
+      "CVE-2018-12605",
+      "CVE-2018-12607"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-25",
+    "entry": "2018-06-25"
+  }
+}

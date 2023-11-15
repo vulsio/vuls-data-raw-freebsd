@@ -1,0 +1,39 @@
+{
+  "vid": "36034227-cf81-11e5-9c2b-00262d5ed8ee",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "48.0.2564.109"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.nl/2016/02/stable-channel-update_9.html\">\n\t  <p>6 security fixes in this release, including:</p>\n\t  <ul>\n\t    <li>[546677] High CVE-2016-1622: Same-origin bypass in Extensions.\n\t      Credit to anonymous.</li>\n\t    <li>[577105] High CVE-2016-1623: Same-origin bypass in DOM. Credit\n\t      to Mariusz Mlynski.</li>\n\t    <li>[509313] Medium CVE-2016-1625: Navigation bypass in Chrome\n\t      Instant. Credit to Jann Horn.</li>\n\t    <li>[571480] Medium CVE-2016-1626: Out-of-bounds read in PDFium.\n\t      Credit to anonymous, working with HP's Zero Day Initiative.</li>\n\t    <li>[585517] CVE-2016-1627: Various fixes from internal audits,\n\t      fuzzing and other initiatives.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://googlechromereleases.blogspot.nl/2016/02/stable-channel-update_9.html"
+    ],
+    "cvename": [
+      "CVE-2016-1622",
+      "CVE-2016-1623",
+      "CVE-2016-1625",
+      "CVE-2016-1626",
+      "CVE-2016-1627"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-08",
+    "entry": "2016-02-09",
+    "modified": "2016-03-08"
+  }
+}

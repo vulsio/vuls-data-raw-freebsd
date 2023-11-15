@@ -1,0 +1,49 @@
+{
+  "vid": "a13500d0-0570-11e5-aab1-d050996490d0",
+  "topic": "wireshark -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wireshark",
+        "wireshark-lite",
+        "tshark",
+        "tshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "1.12.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wireshark development team reports:</p>\n\t<blockquote cite=\"https://www.wireshark.org/docs/relnotes/wireshark-1.12.5.html\">\n\t  <p>The following vulnerabilities have been fixed.</p>\n\t  <ul>\n\t    <li><p>wnpa-sec-2015-12</p>\n\t      <p>The LBMR dissector could go into an infinite loop.\n\t\t(Bug 11036) CVE-2015-3808, CVE-2015-3809</p></li>\n\t    <li><p>wnpa-sec-2015-13</p>\n\t      <p>The WebSocket dissector could recurse excessively.\n\t\t(Bug 10989) CVE-2015-3810</p></li>\n\t    <li><p>wnpa-sec-2015-14</p>\n\t      <p>The WCP dissector could crash while decompressing data.\n\t\t(Bug 10978) CVE-2015-3811</p></li>\n\t    <li><p>wnpa-sec-2015-15</p>\n\t      <p>The X11 dissector could leak memory. (Bug 11088)\n\t\tCVE-2015-3812</p></li>\n\t    <li><p>wnpa-sec-2015-16</p>\n\t      <p>The packet reassembly code could leak memory.\n\t\t(Bug 11129) CVE-2015-3813</p></li>\n\t    <li><p>wnpa-sec-2015-17</p>\n\t      <p>The IEEE 802.11 dissector could go into an infinite loop.\n\t\t(Bug 11110) CVE-2015-3814</p></li>\n\t    <li><p>wnpa-sec-2015-18</p>\n\t      <p>The Android Logcat file parser could crash. Discovered by\n\t\tHanno Böck. (Bug 11188) CVE-2015-3815</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.wireshark.org/docs/relnotes/wireshark-1.12.5.html",
+      "https://www.wireshark.org/security/wnpa-sec-2015-12.html",
+      "https://www.wireshark.org/security/wnpa-sec-2015-13.html",
+      "https://www.wireshark.org/security/wnpa-sec-2015-14.html",
+      "https://www.wireshark.org/security/wnpa-sec-2015-15.html",
+      "https://www.wireshark.org/security/wnpa-sec-2015-16.html",
+      "https://www.wireshark.org/security/wnpa-sec-2015-17.html",
+      "https://www.wireshark.org/security/wnpa-sec-2015-18.html"
+    ],
+    "cvename": [
+      "CVE-2015-3808",
+      "CVE-2015-3809",
+      "CVE-2015-3810",
+      "CVE-2015-3811",
+      "CVE-2015-3812",
+      "CVE-2015-3813",
+      "CVE-2015-3814",
+      "CVE-2015-3815"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-05-12",
+    "entry": "2015-05-28"
+  }
+}

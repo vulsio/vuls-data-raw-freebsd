@@ -1,0 +1,39 @@
+{
+  "vid": "93be487e-211f-11e1-89b4-001ec9578670",
+  "topic": "isc-dhcp-server -- Remote DoS",
+  "affects": [
+    {
+      "name": [
+        "isc-dhcp42-server"
+      ],
+      "range": [
+        {
+          "lt": "4.2.3_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "isc-dhcp41-server"
+      ],
+      "range": [
+        {
+          "lt": "4.1.e_3,2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://www.isc.org/software/bind/advisories/cve-2011-4539\">\n\t  <p>A bug exists which allows an attacker who is able to send DHCP\n\t    Request packets, either directly or through a relay, to remotely\n\t    crash an ISC DHCP server if that server is configured to evaluate\n\t    expressions using a regular expression (i.e. uses the \"~=\" or\n\t    \"~~\" comparison operators).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2011-4539"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-12-07",
+    "entry": "2011-12-07"
+  }
+}

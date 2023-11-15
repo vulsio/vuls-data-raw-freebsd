@@ -1,0 +1,36 @@
+{
+  "vid": "04cf89e3-5854-11e6-b334-002590263bf5",
+  "topic": "xen-kernel -- x86: Missing SMAP whitelisting in 32-bit exception / event delivery",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.7.0_3",
+          "gt": "4.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-183.html\">\n\t  <p>Supervisor Mode Access Prevention is a hardware feature designed\n\t    to make an Operating System more robust, by raising a pagefault\n\t    rather than accidentally following a pointer into userspace.\n\t    However, legitimate accesses into userspace require whitelisting,\n\t    and the exception delivery mechanism for 32bit PV guests wasn't\n\t    whitelisted.</p>\n\t  <p>A malicious 32-bit PV guest kernel can trigger a safety check,\n\t    crashing the hypervisor and causing a denial of service to other\n\t    VMs on the host.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-183.html"
+    ],
+    "cvename": [
+      "CVE-2016-6259"
+    ],
+    "freebsd_pr": [
+      "ports/211482"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-07-26",
+    "entry": "2016-08-02"
+  }
+}

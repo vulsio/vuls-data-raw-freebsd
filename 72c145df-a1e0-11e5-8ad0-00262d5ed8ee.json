@@ -1,0 +1,37 @@
+{
+  "vid": "72c145df-a1e0-11e5-8ad0-00262d5ed8ee",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "47.0.2526.80"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.nl/2015/12/stable-channel-update_8.html\">\n\t  <p>7 security fixes in this release, including:</p>\n\t  <ul>\n\t    <li>[548273] High CVE-2015-6788: Type confusion in extensions.\n\t      Credit to anonymous.</li>\n\t    <li>[557981] High CVE-2015-6789: Use-after-free in Blink. Credit to\n\t      cloudfuzzer.</li>\n\t    <li>[542054] Medium CVE-2015-6790: Escaping issue in saved pages.\n\t      Credit to Inti De Ceukelaire.</li>\n\t    <li>[567513] CVE-2015-6791: Various fixes from internal audits,\n\t      fuzzing and other initiatives.</li>\n\t    <li>Multiple vulnerabilities in V8 fixed at the tip of the 4.7\n\t      branch (currently 4.7.80.23).</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://googlechromereleases.blogspot.nl/2015/12/stable-channel-update_8.html"
+    ],
+    "cvename": [
+      "CVE-2015-6788",
+      "CVE-2015-6789",
+      "CVE-2015-6790",
+      "CVE-2015-6791"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-08",
+    "entry": "2015-12-13"
+  }
+}

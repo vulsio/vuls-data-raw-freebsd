@@ -1,0 +1,38 @@
+{
+  "vid": "86291013-16e6-11e8-ae9f-d43d7e971a1b",
+  "topic": "GitLab -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab"
+      ],
+      "range": [
+        {
+          "ge": "6.1.0",
+          "le": "10.2.7"
+        },
+        {
+          "ge": "10.3.0",
+          "le": "10.3.6"
+        },
+        {
+          "ge": "10.4.0",
+          "le": "10.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GitLab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2018/02/07/gitlab-security-10-4-3-plus-10-3-7-plus-10-2-8-blog/\">\n    <h1>SnippetFinder information disclosure</h1>\n\t  <p>The GitLab SnippetFinder component contained an information disclosure\n\t  which allowed access to snippets restricted to Only team members or\n\t  configured as disabled. The issue is now resolved in the latest version.</p>\n    <h1>LDAP API authorization issue</h1>\n    <p>An LDAP API endpoint contained an authorization vulnerability which\n    unintentionally disclosed bulk LDAP groups data. This issue is now fixed in\n    the latest release.</p>\n    <h1>Persistent XSS mermaid markdown</h1>\n    <p>The mermaid markdown feature contained a persistent XSS issue that is now\n    resolved in the latest release.</p>\n    <h1>Insecure direct object reference Todo API</h1>\n    <p>The Todo API was vulnerable to an insecure direct object reference issue\n    which resulted in an information disclosure of confidential data.</p>\n    <h1>GitHub import access control issue</h1>\n    <p>An improper access control weakness issue was discovered in the GitHub\n    import feature. The issue allowed an attacker to create projects under other\n    accounts which they shouldn't have access to. The issue is now resolved in\n    the latest version.</p>\n    <h1>Protected variables information disclosure</h1>\n    <p>The CI jobs protected tag feature contained a vulnerability which\n    resulted in an information disclosure of protected variables. The issue is\n    now resolved in the latest release.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2018/02/07/gitlab-security-10-4-3-plus-10-3-7-plus-10-2-8-blog/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-02-07",
+    "entry": "2018-02-21"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "vid": "e69ba632-326f-11d9-b5b7-000854d03344",
+  "topic": "ez-ipupdate -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ez-ipupdate"
+      ],
+      "range": [
+        {
+          "lt": "3.0.11b8_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Data supplied by a remote server is used as the format string\n\t  instead of as parameters in a syslog() call.\tThis may lead\n\t  to crashes or potential running of arbitrary code.  It is\n\t  only a problem when running in daemon mode (very common) and\n\t  when using some service types.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0980"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.netsys.com/pipermail/full-disclosure/2004-November/028590.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-11",
+    "entry": "2004-11-11"
+  }
+}

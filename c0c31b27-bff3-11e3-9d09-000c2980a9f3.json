@@ -1,0 +1,33 @@
+{
+  "vid": "c0c31b27-bff3-11e3-9d09-000c2980a9f3",
+  "topic": "openafs -- Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "openafs"
+      ],
+      "range": [
+        {
+          "lt": "1.6.7",
+          "ge": "1.4.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenAFS development team reports:</p>\n\t<blockquote cite=\"http://openafs.org/security/OPENAFS-SA-2014-001.txt\">\n\t  <p>An attacker with the ability to connect to an OpenAFS fileserver can\n\t    trigger a buffer overflow, crashing the server.</p>\n\t  <p>The buffer overflow can be triggered by sending an unauthenticated\n\t    request for file server statistical information.</p>\n\t  <p>Clients are not affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://openafs.org/security/OPENAFS-SA-2014-001.txt"
+    ],
+    "cvename": [
+      "CVE-2014-0159"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-04-09",
+    "entry": "2014-04-09"
+  }
+}

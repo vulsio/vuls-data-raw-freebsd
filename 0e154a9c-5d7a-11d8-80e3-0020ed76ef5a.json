@@ -1,0 +1,30 @@
+{
+  "vid": "0e154a9c-5d7a-11d8-80e3-0020ed76ef5a",
+  "topic": "seti@home remotely exploitable buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "setiathome"
+      ],
+      "range": [
+        {
+          "lt": "3.0.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The seti@home client contains a buffer overflow in the HTTP\n\t  response handler.  A malicious, spoofed seti@home server can\n\t  exploit this buffer overflow to cause remote code execution\n\t  on the client.  Exploit programs are widely available.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://setiathome.berkeley.edu/version308.html",
+      "http://web.archive.org/web/20030609204812/http://spoor12.edup.tudelft.nl/"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-04-08",
+    "entry": "2004-02-12"
+  }
+}

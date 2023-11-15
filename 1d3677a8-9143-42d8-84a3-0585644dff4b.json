@@ -1,0 +1,32 @@
+{
+  "vid": "1d3677a8-9143-42d8-84a3-0585644dff4b",
+  "topic": "h2o -- uninitialised memory access in HTTP3",
+  "affects": [
+    {
+      "name": [
+        "h2o-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.3.0.d.20220131"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Emil Lerner reports:</p>\n\t<blockquote cite=\"https://github.com/h2o/h2o/security/advisories/GHSA-f9xw-j925-m4m4\">\n       <p>When receiving QUIC frames in certain order, HTTP/3 server-side\n       implementation of h2o can be misguided to treat uninitialized\n       memory as HTTP/3 frames that have been received. When h2o is\n       used as a reverse proxy, an attacker can abuse this vulnerability\n       to send internal state of h2o to backend servers controlled by\n       the attacker or third party. Also, if there is an HTTP endpoint\n       that reflects the traffic sent from the client, an attacker can\n       use that reflector to obtain internal state of h2o.</p>\n       <p>This internal state includes traffic of other connections in\n       unencrypted form and TLS session tickets.</p>\n       <p>This vulnerability exists in h2o server with HTTP/3\n       support, between commit 93af138 and d1f0f65. None of the\n       released versions of h2o are affected by this vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/h2o/h2o/security/advisories/GHSA-f9xw-j925-m4m4"
+    ],
+    "cvename": [
+      "CVE-2021-43848"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-01-31",
+    "entry": "2022-02-02"
+  }
+}

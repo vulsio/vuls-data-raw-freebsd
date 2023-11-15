@@ -1,0 +1,60 @@
+{
+  "vid": "9f65d382-56a4-11e7-83e3-080027ef73ec",
+  "topic": "OpenVPN -- several vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openvpn"
+      ],
+      "range": [
+        {
+          "lt": "2.3.17"
+        },
+        {
+          "lt": "2.4.3",
+          "ge": "2.4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openvpn-mbedtls"
+      ],
+      "range": [
+        {
+          "lt": "2.4.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openvpn-polarssl"
+      ],
+      "range": [
+        {
+          "lt": "2.3.17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Samuli Seppänen reports:</p>\n\t<blockquote cite=\"https://community.openvpn.net/openvpn/wiki/VulnerabilitiesFixedInOpenVPN243\">\n\t  <p>In May/June 2017 Guido Vranken threw a fuzzer at OpenVPN 2.4.2. In\n\t    the process he found several vulnerabilities and reported them to\n\t    the OpenVPN project. [...] The first releases to have these fixes are OpenVPN 2.4.3 and 2.3.17.</p>\n\t  <p>This is a list of fixed important vulnerabilities:</p>\n\t  <ul>\n\t    <li>Remotely-triggerable ASSERT() on malformed IPv6 packet</li>\n\t    <li>Pre-authentication remote crash/information disclosure for clients</li>\n\t    <li>Potential double-free in --x509-alt-username</li>\n\t    <li>Remote-triggerable memory leaks</li>\n\t    <li>Post-authentication remote DoS when using the --x509-track option</li>\n\t    <li>Null-pointer dereference in establish_http_proxy_passthru()</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://community.openvpn.net/openvpn/wiki/VulnerabilitiesFixedInOpenVPN243"
+    ],
+    "cvename": [
+      "CVE-2017-7508",
+      "CVE-2017-7512",
+      "CVE-2017-7520",
+      "CVE-2017-7521",
+      "CVE-2017-7522"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-05-19",
+    "entry": "2017-06-21"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "968d1e74-1740-11e5-a643-40a8f0757fb4",
+  "topic": "p5-Dancer -- possible to abuse session cookie values",
+  "affects": [
+    {
+      "name": [
+        "p5-Dancer"
+      ],
+      "range": [
+        {
+          "lt": "1.3138"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Russell Jenkins reports:</p>\n\t<blockquote cite=\"INSERT URL HERE\">\n\t  <p>It was possible to abuse session cookie values so that\n\t    file-based session stores such as Dancer::Session::YAML or\n\t    Dancer2::Session::YAML would attempt to read/write from\n\t    any file on the filesystem with the same extension the\n\t    file-based store uses, such as '*.yml' for the YAML\n\t    stores.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.preshweb.co.uk/pipermail/dancer-users/2015-June/004621.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-12",
+    "entry": "2015-06-20"
+  }
+}

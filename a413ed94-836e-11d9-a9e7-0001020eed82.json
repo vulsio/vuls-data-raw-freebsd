@@ -1,0 +1,47 @@
+{
+  "vid": "a413ed94-836e-11d9-a9e7-0001020eed82",
+  "topic": "putty -- pscp/psftp heap corruption vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "putty"
+      ],
+      "range": [
+        {
+          "lt": "0.57"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Simon Tatham reports:</p>\n\t<blockquote cite=\"http://lists.tartarus.org/pipermail/putty-announce/2005/000012.html\">\n\t  <p>This version fixes a security hole in previous versions\n\t    of PuTTY, which can allow a malicious SFTP server to\n\t    attack your client. If you use either PSCP or PSFTP, you\n\t    should upgrade. Users of the main PuTTY program are not\n\t    affected. (However, note that the server must have passed\n\t    host key verification before this attack can be launched,\n\t    so a man-in-the-middle shouldn't be able to attack you if\n\t    you're careful.)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-sftp-readdir.html",
+      "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-sftp-string.html"
+    ],
+    "cvename": [
+      "CVE-2005-0467"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.tartarus.org/pipermail/putty-announce/2005/000012.html",
+        "msgid": "E1D2taM-0005R1-00@ixion.tartarus.org"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110902510713763",
+        "msgid": "FB24803D1DF2A34FA59FC157B77C970503E2462F@idserv04.idef.com"
+      }
+    ],
+    "bid": [
+      "12601"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-20",
+    "entry": "2005-02-20",
+    "modified": "2005-02-23"
+  }
+}

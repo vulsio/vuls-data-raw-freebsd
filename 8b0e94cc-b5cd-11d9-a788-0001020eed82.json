@@ -1,0 +1,35 @@
+{
+  "vid": "8b0e94cc-b5cd-11d9-a788-0001020eed82",
+  "topic": "gaim -- AIM/ICQ remote denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gaim",
+        "ja-gaim",
+        "ko-gaim",
+        "ru-gaim"
+      ],
+      "range": [
+        {
+          "lt": "1.1.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The GAIM team reports that GAIM is vulnerable to a\n\t  denial-of-service vulnerability which can cause GAIM to\n\t  freeze:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/index.php?id=10\">\n\t  <p>Certain malformed SNAC packets sent by other AIM or ICQ\n\t    users can trigger an infinite loop in Gaim when parsing\n\t    the SNAC. The remote user would need a custom client, able\n\t    to generate malformed SNACs.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://gaim.sourceforge.net/security/index.php?id=10"
+    ],
+    "cvename": [
+      "CVE-2005-0472"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-17",
+    "entry": "2005-04-25"
+  }
+}

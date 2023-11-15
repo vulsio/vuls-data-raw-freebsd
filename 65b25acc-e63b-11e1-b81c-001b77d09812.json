@@ -1,0 +1,35 @@
+{
+  "vid": "65b25acc-e63b-11e1-b81c-001b77d09812",
+  "topic": "rssh -- arbitrary command execution",
+  "affects": [
+    {
+      "name": [
+        "rssh"
+      ],
+      "range": [
+        {
+          "lt": "2.3.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Derek Martin (rssh maintainer) reports:</p>\n\t<blockquote cite=\"http://sourceforge.net/mailarchive/message.php?msg_id=29235647\">\n\t  <p>Henrik Erkkonen has discovered that, through clever\n\t  manipulation of environment variables on the ssh command\n\t  line, it is possible to circumvent rssh.  As far as I can\n\t  tell, there is no way to effect a root compromise, except of\n\t  course if the root account is the one you're attempting to\n\t  protect with rssh...</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://sourceforge.net/mailarchive/message.php?msg_id=29235647"
+    ],
+    "cvename": [
+      "CVE-2012-3478"
+    ],
+    "bid": [
+      "53430"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-05-08",
+    "entry": "2012-08-22"
+  }
+}

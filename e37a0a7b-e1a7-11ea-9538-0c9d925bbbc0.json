@@ -1,0 +1,35 @@
+{
+  "vid": "e37a0a7b-e1a7-11ea-9538-0c9d925bbbc0",
+  "topic": "security/trousers -- several vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "trousers"
+      ],
+      "range": [
+        {
+          "lt": "0.3.14_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>the TrouSerS project reports reports:</p>\n\t<blockquote cite=\"https://sourceforge.net/p/trousers/trousers/ci/e74dd1d96753b0538192143adf58d04fcd3b242b/\">\n\t  <p>If the tcsd daemon is started with root privileges, it fails to\n\t    drop the root gid after it is no longer needed.</p>\n\t  <p>If the tcsd daemon is started with root privileges, the tss user\n\t    has read and write access to the /etc/tcsd.conf file.</p>\n\t  <p>If the tcsd daemon is started with root privileges, the creation\n\t    of the system.data file is prone to symlink attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://sourceforge.net/p/trousers/trousers/ci/e74dd1d96753b0538192143adf58d04fcd3b242b/",
+      "https://www.openwall.com/lists/oss-security/2020/05/20/3"
+    ],
+    "cvename": [
+      "CVE-2020-24330",
+      "CVE-2020-24331",
+      "CVE-2020-24332"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-05-20",
+    "entry": "2020-08-18"
+  }
+}

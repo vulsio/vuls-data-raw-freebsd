@@ -1,0 +1,35 @@
+{
+  "vid": "622e14b1-b40c-11e2-8441-00e0814cab4e",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "1.514"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory reports:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2013-05-02\">\n\t  <p>This advisory announces multiple security vulnerabilities that\n\t    were found in Jenkins core.</p>\n\t  <ol>\n\t    <li>\n\t      <p>SECURITY-63 / CVE-2013-2034</p>\n\t      <p>This creates a cross-site request forgery (CSRF) vulnerability\n\t\t on Jenkins master, where an anonymous attacker can trick an\n\t\t administrator to execute arbitrary code on Jenkins master by\n\t\t having him open a specifically crafted attack URL.</p>\n\t      <p>There's also a related vulnerability where the permission\n\t\t check on this ability is done imprecisely, which may affect\n\t\t those who are running Jenkins instances with a custom\n\t\t authorization strategy plugin.</p>\n\t    </li>\n\t    <li>\n\t      <p>SECURITY-67 / CVE-2013-2033</p>\n\t      <p>This creates a cross-site scripting (XSS) vulnerability, where\n\t\t an attacker with a valid user account on Jenkins can execute\n\t\t JavaScript in the browser of other users, if those users are\n\t\t using certain browsers.</p>\n\t    </li>\n\t    <li>\n\t      <p>SECURITY-69 / CVE-2013-2034</p>\n\t      <p>This is another CSRF vulnerability that allows an attacker to\n\t\t cause a deployment of binaries to Maven repositories. This\n\t\t vulnerability has the same CVE ID as SEUCRITY-63.</p>\n\t    </li>\n\t    <li>\n\t      <p>SECURITY-71 / CVE-2013-1808</p>\n\t      <p>This creates a cross-site scripting (XSS) vulnerability.</p>\n\t    </li>\n\t  </ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2013-05-02"
+    ],
+    "cvename": [
+      "CVE-2013-2034",
+      "CVE-2013-2033",
+      "CVE-2013-2034",
+      "CVE-2013-1808"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-05-02",
+    "entry": "2013-05-03"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "vid": "c1dc55dc-9556-11e6-b154-3065ec8fd3ec",
+  "topic": "Tor -- remote denial of service",
+  "affects": [
+    {
+      "name": [
+        "tor"
+      ],
+      "range": [
+        {
+          "lt": "0.2.8.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tor-devel"
+      ],
+      "range": [
+        {
+          "lt": "0.2.9.4-alpha"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Tor Blog reports:</p>\n\t<blockquote cite=\"https://blog.torproject.org/blog/tor-0289-released-important-fixes\">\n\t  <p>Prevent a class of security bugs caused by treating the contents\n\t    of a buffer chunk as if they were a NUL-terminated string. At least\n\t    one such bug seems to be present in all currently used versions of\n\t    Tor, and would allow an attacker to remotely crash most Tor\n\t    instances, especially those compiled with extra compiler hardening.\n\t    With this defense in place, such bugs can't crash Tor, though we\n\t    should still fix them as they occur. Closes ticket 20384\n\t    (TROVE-2016-10-001).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.torproject.org/blog/tor-0289-released-important-fixes"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-10-17",
+    "entry": "2016-10-18"
+  }
+}

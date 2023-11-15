@@ -1,0 +1,40 @@
+{
+  "vid": "c13a8c17-cbeb-11ed-956f-7054d21a9e2a",
+  "topic": "py39-lmdb -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py39-lmdb"
+      ],
+      "range": [
+        {
+          "lt": "0.98"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>TeamSeri0us reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2019-236\">\n      <p>An issue was discovered in py-lmdb 0.97. For certain values of md_flags, mdb_node_add does not properly set up a memcpy destination, leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>\n    </blockquote>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2019-237\">\n      <p>An issue was discovered in py-lmdb 0.97. For certain values of mp_flags, mdb_page_touch does not properly set up mc-&gt;mc_pg[mc-&gt;top], leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>\n    </blockquote>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2019-238\">\n      <p>An issue was discovered in py-lmdb 0.97. mdb_node_del does not validate a memmove in the case of an unexpected node-&gt;mn_hi, leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>\n    </blockquote>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2019-239\">\n      <p>An issue was discovered in py-lmdb 0.97. For certain values of mn_flags, mdb_cursor_set triggers a memcpy with an invalid write operation within mdb_xcursor_init1. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>\n    </blockquote>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2019-240\">\n      <p>An issue was discovered in py-lmdb 0.97. There is a divide-by-zero error in the function mdb_env_open2 if mdb_env_read_header obtains a zero value for a certain size field. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2019-236",
+      "https://osv.dev/vulnerability/PYSEC-2019-237",
+      "https://osv.dev/vulnerability/PYSEC-2019-238",
+      "https://osv.dev/vulnerability/PYSEC-2019-239",
+      "https://osv.dev/vulnerability/PYSEC-2019-240"
+    ],
+    "cvename": [
+      "CVE-2019-16224",
+      "CVE-2019-16225",
+      "CVE-2019-16226",
+      "CVE-2019-16227",
+      "CVE-2019-16228"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-09-11",
+    "entry": "2023-03-26"
+  }
+}

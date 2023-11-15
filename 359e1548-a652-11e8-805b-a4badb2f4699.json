@@ -1,0 +1,37 @@
+{
+  "vid": "359e1548-a652-11e8-805b-a4badb2f4699",
+  "topic": "FreeBSD -- Resource exhaustion in IP fragment reassembly",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "11.2_2",
+          "ge": "11.2"
+        },
+        {
+          "lt": "11.1_13",
+          "ge": "11.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A researcher has notified us of a DoS attack applicable\n\tto another operating system. While FreeBSD may not be\n\tvulnerable to that exact attack, we have identified several\n\tplaces where inadequate DoS protection could allow an\n\tattacker to consume system resources.</p>\n\t<p>It is not necessary that the attacker be able to establish\n\ttwo-way communication to carry out these attacks. These\n\tattacks impact both IPv4 and IPv6 fragment reassembly.</p>\n\t<h1>Impact:</h1>\n\t<p>In the worst case, an attacker could send a stream of\n\tcrafted fragments with a low packet rate which would consume\n\ta substantial amount of CPU.</p>\n\t<p>Other attack vectors allow an attacker to send a stream\n\tof crafted fragments which could consume a large amount of\n\tCPU or all available mbuf clusters on the system.</p>\n\t<p>These attacks could temporarily render a system unreachable\n\tthrough network interfaces or temporarily render a system\n\tunresponsive. The effects of the attack should clear within\n\t60 seconds after the attack stops.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2018-6923"
+    ],
+    "freebsd_sa": [
+      "SA-18:10.ip"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-14",
+    "entry": "2018-08-22"
+  }
+}

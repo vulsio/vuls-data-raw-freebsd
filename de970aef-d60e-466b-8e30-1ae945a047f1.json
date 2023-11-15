@@ -1,0 +1,32 @@
+{
+  "vid": "de970aef-d60e-466b-8e30-1ae945a047f1",
+  "topic": "py39-configobj -- vulnerable to Regular Expression Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "py39-configobj"
+      ],
+      "range": [
+        {
+          "le": "5.0.6_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>DarkTinia reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24\">\n      <p>All versions of the package configobj are vulnerable to Regular Expression Denial of Service (ReDoS) via the validate function, using (.+?)\\((.*)\\).</p>\n      <p>**Note:** This is only exploitable in the case of a developer, putting the offending value in a server side configuration file.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24"
+    ],
+    "cvename": [
+      "CVE-2023-26112"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-04-03",
+    "entry": "2023-04-09"
+  }
+}

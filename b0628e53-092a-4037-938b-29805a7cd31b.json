@@ -1,0 +1,38 @@
+{
+  "vid": "b0628e53-092a-4037-938b-29805a7cd31b",
+  "topic": "mercurial -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "mercurial"
+      ],
+      "range": [
+        {
+          "lt": "4.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>mercurial developers reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/100290\">\n\t  <p>Mercurial prior to version 4.3 is vulnerable to a missing symlink check that can malicious repositories to modify files outside the repository</p>\n\t  <p>Mercurial prior to 4.3 did not adequately sanitize hostnames passed to ssh, leading to possible shell-injection attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securityfocus.com/bid/100290",
+      "https://security.gentoo.org/glsa/201709-18",
+      "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29",
+      "http://www.securityfocus.com/bid/100290",
+      "https://security.gentoo.org/glsa/201709-18",
+      "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29"
+    ],
+    "cvename": [
+      "CVE-2017-1000115",
+      "CVE-2017-1000116"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-10-05",
+    "entry": "2017-10-16"
+  }
+}

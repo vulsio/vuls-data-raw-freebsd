@@ -1,0 +1,37 @@
+{
+  "vid": "f1892066-0e74-11de-92de-000bcdc1757a",
+  "topic": "apache -- Cross-site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "lt": "2.2.9_2",
+          "gt": "2.2.0"
+        },
+        {
+          "lt": "2.0.63_2",
+          "gt": "2.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2939\">\n\t  <p>Cross-site scripting (XSS) vulnerability in proxy_ftp.c in the\n\t    mod_proxy_ftp module in Apache 2.0.63 and earlier, and mod_proxy_ftp.c\n\t    in the mod_proxy_ftp module in Apache 2.2.9 and earlier 2.2 versions,\n\t    allows remote attackers to inject arbitrary web script or HTML via a\n\t    wildcard in the last directory component in the pathname in an FTP\n\t    URI.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.rapid7.com/advisories/R7-0033.jsp"
+    ],
+    "cvename": [
+      "CVE-2008-2939"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-07-25",
+    "entry": "2009-03-11"
+  }
+}

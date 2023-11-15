@@ -1,0 +1,33 @@
+{
+  "vid": "fdd1c316-5a3d-11e1-8d3e-e0cb4e266481",
+  "topic": "phpMyAdmin -- XSS in replication setup",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.4.10.1",
+          "gt": "3.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2012-1.php\">\n\t  <p>It was possible to conduct XSS using a crafted database name.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2012-1.php"
+    ],
+    "cvename": [
+      "CVE-2012-1190"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-02-18",
+    "entry": "2012-02-18"
+  }
+}

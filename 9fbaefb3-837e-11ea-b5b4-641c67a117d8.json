@@ -1,0 +1,44 @@
+{
+  "vid": "9fbaefb3-837e-11ea-b5b4-641c67a117d8",
+  "topic": "py-twisted -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py27-twisted",
+        "py35-twisted",
+        "py36-twisted",
+        "py37-twisted",
+        "py38-twisted"
+      ],
+      "range": [
+        {
+          "lt": "20.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Twisted developers reports:</p>\n\t<blockquote cite=\"https://github.com/twisted/twisted/blob/twisted-20.3.0/NEWS.rst\">\n\t<p>All HTTP clients in twisted.web.client now raise a ValueError when\n\tcalled with a method and/or URL that contain invalid characters. This\n\tmitigates CVE-2019-12387. Thanks to Alex Brasetvik for reporting this\n\tvulnerability.</p>\n\t<p>The HTTP/2 server implementation now enforces TCP flow control on\n\tcontrol frame messages and times out clients that send invalid data\n\twithout reading responses. This closes CVE-2019-9512 (Ping Flood),\n\tCVE-2019-9514 (Reset Flood), and CVE-2019-9515 (Settings Flood). Thanks\n\tto Jonathan Looney and Piotr Sikora.</p>\n\t<p>twisted.web.http was subject to several request smuggling attacks.\n\tRequests with multiple Content-Length headers were allowed\n\t(CVE-2020-10108, thanks to Jake Miller from Bishop Fox and ZeddYu Lu\n\tfor reporting this) and now fail with a 400; requests with a\n\tContent-Length header and a Transfer-Encoding header honored the first\n\theader (CVE-2020-10109, thanks to Jake Miller from Bishop Fox for\n\treporting this) and now fail with a 400; requests whose\n\tTransfer-Encoding header had a value other than \"chunked\" and\n\t\"identity\" (thanks to ZeddYu Lu) were allowed and now fail with a 400.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/twisted/twisted/blob/twisted-20.3.0/NEWS.rst"
+    ],
+    "cvename": [
+      "CVE-2019-12387",
+      "CVE-2019-9512",
+      "CVE-2019-9514",
+      "CVE-2019-9515",
+      "CVE-2020-10108",
+      "CVE-2020-10109"
+    ],
+    "freebsd_pr": [
+      "ports/245252"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-03-01",
+    "entry": "2020-04-21"
+  }
+}

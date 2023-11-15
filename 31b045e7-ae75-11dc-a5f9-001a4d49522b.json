@@ -1,0 +1,39 @@
+{
+  "vid": "31b045e7-ae75-11dc-a5f9-001a4d49522b",
+  "topic": "opera -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "opera-devel",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "9.25"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Opera Software ASA reports about multiple security\n\t  fixes:</p>\n\t<blockquote cite=\"http://www.opera.com/docs/changelogs/freebsd/925/\">\n\t  <ul>\n\t    <li>Fixed an issue where plug-ins could be used to allow\n\t      cross domain scripting, as reported by David\n\t      Bloom. Details will be disclosed at a later date.</li>\n\t    <li>Fixed an issue with TLS certificates that could be\n\t      used to execute arbitrary code, as reported by Alexander\n\t      Klink (Cynops GmbH). Details will be disclosed at a\n\t      later date.</li>\n\t    <li>Rich text editing can no longer be used to allow cross\n\t      domain scripting, as reported by David Bloom. See our\n\t      advisory.</li>\n\t    <li>Prevented bitmaps from revealing random data from\n\t      memory, as reported by Gynvael Coldwind. Details will be\n\t      disclosed at a later date.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.opera.com/docs/changelogs/freebsd/925/",
+      "http://www.opera.com/support/search/view/875/"
+    ],
+    "cvename": [
+      "CVE-2007-6520",
+      "CVE-2007-6521",
+      "CVE-2007-6522",
+      "CVE-2007-6524"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-12-19",
+    "entry": "2007-12-19",
+    "modified": "2007-12-29"
+  }
+}

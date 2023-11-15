@@ -1,0 +1,36 @@
+{
+  "vid": "b54abe9d-7024-4d10-98b2-180cf1717766",
+  "topic": "py-beaker -- arbitrary code execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-beaker",
+        "py38-beaker",
+        "py39-beaker",
+        "py310-beaker",
+        "py311-beaker"
+      ],
+      "range": [
+        {
+          "le": "1.12.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>matheusbrat reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2020-216\">\n      <p>The Beaker library through 1.12.1 for Python is affected by deserialization of untrusted data, which could lead to arbitrary code execution.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2020-216"
+    ],
+    "cvename": [
+      "CVE-2013-7489"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-06-26",
+    "entry": "2023-04-10"
+  }
+}

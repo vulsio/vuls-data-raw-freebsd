@@ -1,0 +1,37 @@
+{
+  "vid": "374793ad-2720-4c4a-b86c-fc4a1780deac",
+  "topic": "py-psutil -- double free vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-psutil121",
+        "py38-psutil121",
+        "py39-psutil121",
+        "py310-psutil121",
+        "py311-psutil121"
+      ],
+      "range": [
+        {
+          "lt": "5.6.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>ret2libc reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2019-41\">\n      <p>psutil (aka python-psutil) through 5.6.5 can have a double free.</p>\n      <p>This occurs because of refcount mishandling within a while or for loop that converts system data into a Python object.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2019-41",
+      "https://osv.dev/vulnerability/GHSA-qfc5-mcwq-26q8"
+    ],
+    "cvename": [
+      "CVE-2019-18874"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-11-12",
+    "entry": "2023-04-10"
+  }
+}

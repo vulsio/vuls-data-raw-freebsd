@@ -1,0 +1,62 @@
+{
+  "vid": "36def7ba-6d2b-11ea-b115-643150d3111d",
+  "topic": "puppetserver and puppetdb -- Puppet Server and PuppetDB may leak sensitive information via metrics API",
+  "affects": [
+    {
+      "name": [
+        "puppetdb5"
+      ],
+      "range": [
+        {
+          "lt": "5.2.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "puppetdb6"
+      ],
+      "range": [
+        {
+          "lt": "6.9.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "puppetserver5"
+      ],
+      "range": [
+        {
+          "lt": "5.3.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "puppetserver6"
+      ],
+      "range": [
+        {
+          "lt": "6.9.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Puppetlabs reports:</p>\n\t<blockquote cite=\"https://puppet.com/security/cve/CVE-2020-7943/\">\n\t  <p>Puppet Server and PuppetDB provide useful performance and debugging information via their metrics API endpoints. For PuppetDB this may contain things like hostnames. Puppet Server reports resource names and titles for defined types (which may contain sensitive information) as well as function names and class names. Previously, these endpoints were open to the local network.</p>\n\t  <p>PE 2018.1.13 &amp; 2019.4.0, Puppet Server 6.9.1 &amp; 5.3.12, and PuppetDB 6.9.1 &amp; 5.2.13 disable trapperkeeper-metrics /v1 metrics API and only allows /v2 access on localhost by default.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://puppet.com/security/cve/CVE-2020-7943/"
+    ],
+    "cvename": [
+      "CVE-2020-7943"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-03-10",
+    "entry": "2020-03-23"
+  }
+}

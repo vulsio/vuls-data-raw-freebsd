@@ -1,0 +1,37 @@
+{
+  "vid": "6a245f31-4254-11de-b67a-0030843d3802",
+  "topic": "libwmf -- embedded GD library Use-After-Free vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libwmf"
+      ],
+      "range": [
+        {
+          "lt": "0.2.8.4_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/34901\">\n\t  <p>A vulnerability has been reported in libwmf, which can be exploited\n\t    by malicious people to cause a DoS (Denial of Service) or compromise\n\t    an application using the library.</p>\n\t  <p>The vulnerability is caused due to a use-after-free error within the\n\t    embedded GD library, which can be exploited to cause a crash or\n\t    potentially to execute arbitrary code via a specially crafted WMF\n\t    file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=496864",
+      "https://rhn.redhat.com/errata/RHSA-2009-0457.html",
+      "http://secunia.com/advisories/34901/"
+    ],
+    "cvename": [
+      "CVE-2009-1364"
+    ],
+    "bid": [
+      "34792"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-05-05",
+    "entry": "2009-05-16"
+  }
+}

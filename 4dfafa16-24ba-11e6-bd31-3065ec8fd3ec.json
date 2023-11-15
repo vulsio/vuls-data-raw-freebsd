@@ -1,0 +1,38 @@
+{
+  "vid": "4dfafa16-24ba-11e6-bd31-3065ec8fd3ec",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "50.0.2661.102"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.nl/2016/05/stable-channel-update.html\">\n\t  <p>5 security fixes in this release, including:</p>\n\t  <ul>\n\t    <li>[605766] High CVE-2016-1667: Same origin bypass in DOM. Credit\n\t      to Mariusz Mlynski.</li>\n\t    <li>[605910] High CVE-2016-1668: Same origin bypass in Blink V8\n\t      bindings. Credit to Mariusz Mlynski.</li>\n\t    <li>[606115] High CVE-2016-1669: Buffer overflow in V8. Credit to\n\t      Choongwoo Han.</li>\n\t    <li>[578882] Medium CVE-2016-1670: Race condition in loader. Credit\n\t      to anonymous.</li>\n\t    <li>[586657] Medium CVE-2016-1671: Directory traversal using the\n\t      file scheme on Android. Credit to Jann Horn.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://googlechromereleases.blogspot.nl/2016/05/stable-channel-update.html"
+    ],
+    "cvename": [
+      "CVE-2016-1667",
+      "CVE-2016-1668",
+      "CVE-2016-1669",
+      "CVE-2016-1670",
+      "CVE-2016-1671"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-11",
+    "entry": "2016-05-28"
+  }
+}

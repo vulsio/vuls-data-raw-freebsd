@@ -1,0 +1,33 @@
+{
+  "vid": "e91cf90c-d6dd-11e7-9d10-001999f8d30b",
+  "topic": "asterisk -- DOS Vulnerability in Asterisk chan_skinny",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.18.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>If the chan_skinny (AKA SCCP protocol) channel driver\n\t  is flooded with certain requests it can cause the asterisk\n\t  process to use excessive amounts of virtual memory\n\t  eventually causing asterisk to stop processing requests\n\t  of any kind.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2017-013.html"
+    ],
+    "cvename": [
+      "CVE-2017-17090"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-11-30",
+    "entry": "2017-12-01",
+    "modified": "2017-12-13"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "vid": "53e531a7-e559-11e0-b481-001b2134ef46",
+  "topic": "linux-flashplugin -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "linux-flashplugin"
+      ],
+      "range": [
+        {
+          "le": "9.0r289"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-f10-flashplugin"
+      ],
+      "range": [
+        {
+          "lt": "10.3r183.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Adobe Product Security Incident Response Team reports:</p>\n\t<blockquote cite=\"https://www.adobe.com/support/security/bulletins/apsb11-26.html\">\n\t  <p>Critical vulnerabilities have been identified in Adobe Flash\n\t    Player 10.3.183.7 and earlier versions for Windows, Macintosh,\n\t    Linux and Solaris, and Adobe Flash Player 10.3.186.6 and earlier\n\t    versions for Android.  These vulnerabilities could cause a crash\n\t    and potentially allow an attacker to take control of the\n\t    affected system.</p>\n\t  <p>There are reports that one of these vulnerabilities\n\t    (CVE-2011-2444) is being exploited in the wild in active\n\t    targeted attacks designed to trick the user into clicking on\n\t    a malicious link delivered in an email message.  This universal\n\t    cross-site scripting issue could be used to take actions on a\n\t    user's behalf on any website or webmail provider if the user\n\t    visits a malicious website.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.adobe.com/support/security/bulletins/apsb11-26.html"
+    ],
+    "cvename": [
+      "CVE-2011-2426",
+      "CVE-2011-2427",
+      "CVE-2011-2428",
+      "CVE-2011-2429",
+      "CVE-2011-2430",
+      "CVE-2011-2444"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-06-06",
+    "entry": "2011-09-22"
+  }
+}

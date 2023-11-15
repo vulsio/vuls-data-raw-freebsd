@@ -1,0 +1,41 @@
+{
+  "vid": "7c0bac69-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Incorrect argument handling in sendmsg(2)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "10.3_3",
+          "ge": "10.3"
+        },
+        {
+          "lt": "10.2_17",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_34",
+          "ge": "10.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Incorrect argument handling in the socket code allows\n\tmalicious local user to overwrite large portion of the\n\tkernel memory.</p>\n\t<h1>Impact:</h1>\n\t<p>Malicious local user may crash kernel or execute arbitrary\n\tcode in the kernel, potentially gaining superuser privileges.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-1887"
+    ],
+    "freebsd_sa": [
+      "SA-16:19.sendmsg"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-17",
+    "entry": "2016-08-11"
+  }
+}

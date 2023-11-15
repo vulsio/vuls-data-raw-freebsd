@@ -1,0 +1,34 @@
+{
+  "vid": "6eb1dc51-1244-11dd-bab7-0016179b2dd5",
+  "topic": "phpmyadmin -- Username/Password Session File Information Disclosure",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.11.5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A phpMyAdmin security announcement report:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-2\">\n\t  <p>phpMyAdmin saves sensitive information like the MySQL username and\n\t    password and the Blowfish secret key in session data, which might be\n\t    unprotected on a shared host.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/29613/",
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-3"
+    ],
+    "cvename": [
+      "CVE-2008-1567"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-03-31",
+    "entry": "2008-04-24",
+    "modified": "2008-09-17"
+  }
+}

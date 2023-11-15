@@ -1,0 +1,41 @@
+{
+  "vid": "5536c8e4-36b3-11e2-a633-902b343deec9",
+  "topic": "FreeBSD -- Linux compatibility layer input validation error",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "7.4_11",
+          "ge": "7.4"
+        },
+        {
+          "lt": "8.3_5",
+          "ge": "8.3"
+        },
+        {
+          "lt": "9.0_5",
+          "ge": "9.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-12:08.linux.asc\">\n\t  <p>A programming error in the handling of some Linux system calls\n\t     may result in memory locations being accessed without proper\n\t     validation.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-4576"
+    ],
+    "freebsd_sa": [
+      "SA-12:08.linux"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-11-22",
+    "entry": "2012-11-24"
+  }
+}

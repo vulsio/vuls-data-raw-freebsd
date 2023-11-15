@@ -1,0 +1,29 @@
+{
+  "vid": "91afa94c-c452-11da-8bff-000ae42e9b93",
+  "topic": "mod_pubcookie -- cross site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mod_pubcookie"
+      ],
+      "range": [
+        {
+          "lt": "3.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Nathan Dors of the Pubcookie Project reports:</p>\n\t<blockquote cite=\"http://www.pubcookie.org/news/20060306-apps-secadv.html\">\n\t  <p>Non-persistent XSS vulnerabilities were found in the\n\t    Pubcookie Apache module (mod_pubcookie) and ISAPI\n\t    filter. These components mishandle untrusted data when\n\t    printing responses to the browser. This makes them\n\t    vulnerable to carefully crafted requests containing script\n\t    or HTML. If an attacker can lure an unsuspecting user to\n\t    visit carefully staged content, the attacker can use it to\n\t    redirect the user to a vulnerable Pubcookie application\n\t    server and attempt to exploit the XSS vulnerabilities.</p>\n\t  <p>These vulnerabilities are classified as *high* due to the\n\t    nature and purpose of Pubcookie application servers for user\n\t    authentication and Web Single Sign-on (SSO). An attacker\n\t    who injects malicious script through the vulnerabilities\n\t    might steal private Pubcookie data including a user's\n\t    authentication assertion (\"granting\") cookies and\n\t    application session cookies.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cert_vu": [
+      "314540"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-03-06",
+    "entry": "2006-04-05"
+  }
+}

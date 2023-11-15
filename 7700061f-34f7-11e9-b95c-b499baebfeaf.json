@@ -1,0 +1,43 @@
+{
+  "vid": "7700061f-34f7-11e9-b95c-b499baebfeaf",
+  "topic": "OpenSSL -- Padding oracle vulnerability",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2r,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c6-openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1e_16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20190226.txt\">\n\t  <p>0-byte record padding oracle (CVE-2019-1559) (Moderate)<br/>\n\t    If an application encounters a fatal protocol error and then calls\n\t    SSL_shutdown() twice (once to send a close_notify, and once to receive\n\t    one) then OpenSSL can respond differently to the calling application if\n\t    a 0 byte record is received with invalid padding compared to if a 0 byte\n\t    record is received with an invalid MAC. If the application then behaves\n\t    differently based on that in a way that is detectable to the remote peer,\n\t    then this amounts to a padding oracle that could be used to decrypt data.\n\t    </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20190226.txt"
+    ],
+    "cvename": [
+      "CVE-2019-1559"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-19",
+    "entry": "2019-02-20",
+    "modified": "2019-03-07"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "fe7ac70a-792b-11ee-bf9a-a04a5edf46d9",
+  "topic": "PptiPNG -- Global-buffer-overflow",
+  "affects": [
+    {
+      "name": [
+        "optipng"
+      ],
+      "range": [
+        {
+          "lt": "0.7.7_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Frank-Z7 reports:</p>\n\t<blockquote cite=\"https://github.com/Frank-Z7/z-vulnerabilitys/blob/main/optipng-global-buffer-overflow1/optipng-global-buffer-overflow1.md\">\n\t  <p>Running optipng with the \"-zm 3 -zc 1 -zw 256 -snip -out\"\n\t    configuration options enabled raises a global-buffer-overflow bug,\n\t    which could allow a remote attacker to conduct a denial-of-service\n\t    attack or other unspecified effect on a crafted file.</p>\n\t</blockquote>\n\t"
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2023-43907"
+    ],
+    "cvename": [
+      "CVE-2023-43907"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-09-30",
+    "entry": "2023-11-02"
+  }
+}

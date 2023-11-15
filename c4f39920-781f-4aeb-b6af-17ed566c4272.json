@@ -1,0 +1,87 @@
+{
+  "vid": "c4f39920-781f-4aeb-b6af-17ed566c4272",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "62.0.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "waterfox"
+      ],
+      "range": [
+        {
+          "lt": "56.2.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.53.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "60.2.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "60.2.2,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul",
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "60.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-24/\">\n\t  <h1>CVE-2018-12386: Type confusion in JavaScript</h1>\n\t  <p>A vulnerability in register allocation in JavaScript can\n\t    lead to type confusion, allowing for an arbitrary read and\n\t    write. This leads to remote code execution inside the\n\t    sandboxed content process when triggered.</p>\n\t  <h1>CVE-2018-12387: </h1>\n\t  <p>A vulnerability where the JavaScript JIT compiler inlines\n\t    Array.prototype.push with multiple arguments that results\n\t    in the stack pointer being off by 8 bytes after a\n\t    bailout. This leaks a memory address to the calling\n\t    function which can be used as part of an exploit inside\n\t    the sandboxed content process.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2018-24/"
+    ],
+    "cvename": [
+      "CVE-2018-12386",
+      "CVE-2018-12387"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-10-02",
+    "entry": "2018-10-02",
+    "modified": "2019-07-23"
+  }
+}

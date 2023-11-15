@@ -1,0 +1,41 @@
+{
+  "vid": "0d57c1d9-03f4-11e0-bf50-001a926c7637",
+  "topic": "krb5 -- multiple checksum handling vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2",
+          "ge": "1.7.0"
+        },
+        {
+          "ge": "1.8.0",
+          "le": "1.8.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The MIT Kerberos team reports:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-007.txt\">\n\t  <p>MIT krb incorrectly accepts an unkeyed\n\t    checksum with DES session keys for version 2 (RFC 4121)\n\t    of the GSS-API krb5 mechanism.</p>\n\t  <p>An unauthenticated remote attacker can forge GSS tokens that are\n\t    intended to be integrity-protected but unencrypted, if the targeted\n\t    pre-existing application session uses a DES session key.</p>\n\t  <p>MIT krb5 KDC incorrectly accepts RFC\n\t    3961 key-derivation checksums using RC4 keys when verifying the\n\t    req-checksum in a KrbFastArmoredReq.</p>\n\t  <p>An unauthenticated remote attacker has a 1/256 chance of swapping a\n\t    client-issued KrbFastReq into a different KDC-REQ, if the armor\n\t    key is RC4. The consequences are believed to be minor.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-007.txt",
+      "http://osvdb.org/69609"
+    ],
+    "cvename": [
+      "CVE-2010-1324"
+    ],
+    "bid": [
+      "45116"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-11-30",
+    "entry": "2010-12-09"
+  }
+}

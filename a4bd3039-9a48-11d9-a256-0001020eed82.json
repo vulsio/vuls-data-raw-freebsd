@@ -1,0 +1,33 @@
+{
+  "vid": "a4bd3039-9a48-11d9-a256-0001020eed82",
+  "topic": "xv -- filename handling format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "xv",
+        "ja-xv"
+      ],
+      "range": [
+        {
+          "lt": "3.10a_5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Gentoo Linux Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200503-09.xml\">\n\t  <p>Tavis Ormandy of the Gentoo Linux Security Audit Team\n\t    identified a flaw in the handling of image filenames by xv.</p>\n\t  <p>Successful exploitation would require a victim to process\n\t    a specially crafted image with a malformed filename,\n\t    potentially resulting in the execution of arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.gentoo.org/security/en/glsa/glsa-200503-09.xml"
+    ],
+    "cvename": [
+      "CVE-2005-0665"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-03-01",
+    "entry": "2005-03-21"
+  }
+}

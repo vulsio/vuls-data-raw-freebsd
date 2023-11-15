@@ -1,0 +1,33 @@
+{
+  "vid": "45500f74-5947-11dc-87c1-000e2e5785ad",
+  "topic": "fetchmail -- denial of service on reject of local warning message",
+  "affects": [
+    {
+      "name": [
+        "fetchmail"
+      ],
+      "range": [
+        {
+          "lt": "6.3.8_4",
+          "ge": "4.6.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2007-02.txt\">\n\t  <p>fetchmail will generate warning messages in certain\n\t    circumstances (for instance, when leaving oversized messages\n\t    on the server or login to the upstream fails) and send them\n\t    to the local postmaster or the user running it.</p>\n\t  <p>If this warning message is then refused by the SMTP listener\n\t    that fetchmail is forwarding the message to, fetchmail\n\t    crashes and does not collect further messages until it is\n\t    restarted.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.fetchmail.info/fetchmail-SA-2007-02.txt"
+    ],
+    "cvename": [
+      "CVE-2007-4565"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-07-29",
+    "entry": "2007-09-02"
+  }
+}

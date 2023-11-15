@@ -1,0 +1,57 @@
+{
+  "vid": "1fa4c9f1-cfca-11da-a672-000e0c2e438a",
+  "topic": "FreeBSD -- FPU information disclosure",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.0_7",
+          "ge": "6.0"
+        },
+        {
+          "lt": "5.4_14",
+          "ge": "5.4"
+        },
+        {
+          "lt": "5.3_29",
+          "ge": "5.3"
+        },
+        {
+          "lt": "5.3",
+          "ge": "5"
+        },
+        {
+          "lt": "4.11_17",
+          "ge": "4.11"
+        },
+        {
+          "lt": "4.10_23",
+          "ge": "4.10"
+        },
+        {
+          "lt": "4.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description</h1>\n\t<p>On \"7th generation\" and \"8th generation\" processors\n\t  manufactured by AMD, including the AMD Athlon, Duron, Athlon\n\t  MP, Athlon XP, Athlon64, Athlon64 FX, Opteron, Turion, and\n\t  Sempron, the fxsave and fxrstor instructions do not save and\n\t  restore the FOP, FIP, and FDP registers unless the exception\n\t  summary bit (ES) in the x87 status word is set to 1,\n\t  indicating that an unmasked x87 exception has occurred.</p>\n\t<p>This behaviour is consistent with documentation provided by\n\t  AMD, but is different from processors from other vendors,\n\t  which save and restore the FOP, FIP, and FDP registers\n\t  regardless of the value of the ES bit.  As a result of this\n\t  discrepancy remaining unnoticed until now, the FreeBSD kernel\n\t  does not restore the contents of the FOP, FIP, and FDP\n\t  registers between context switches.</p>\n\t<h1>Impact</h1>\n\t<p>On affected processors, a local attacker can monitor the\n\t  execution path of a process which uses floating-point\n\t  operations.  This may allow an attacker to steal\n\t  cryptographic keys or other sensitive information.</p>\n\t<h1>Workaround</h1>\n\t<p>No workaround is available, but systems which do not use AMD\n\t  Athlon, Duron, Athlon MP, Athlon XP, Athlon64, Athlon64 FX,\n\t  Opteron, Turion, or Sempron processors are not vulnerable.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-1056"
+    ],
+    "freebsd_sa": [
+      "SA-06:14.fpu"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-04-19",
+    "entry": "2006-04-19",
+    "modified": "2016-08-09"
+  }
+}

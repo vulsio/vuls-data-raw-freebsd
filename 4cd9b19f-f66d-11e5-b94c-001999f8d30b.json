@@ -1,0 +1,33 @@
+{
+  "vid": "4cd9b19f-f66d-11e5-b94c-001999f8d30b",
+  "topic": "Multiple vulnerabilities in Botan",
+  "affects": [
+    {
+      "name": [
+        "botan110"
+      ],
+      "range": [
+        {
+          "lt": "1.10.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The botan developers reports:</p>\n\t<blockquote cite=\"http://botan.randombit.net/security.html\">\n\t  <p>Infinite loop in modular square root algorithm - The ressol function implements the Tonelli-Shanks algorithm for finding square roots could be sent into a nearly infinite loop due to a misplaced conditional check. This could occur if a composite modulus is provided, as this algorithm is only defined for primes. This function is exposed to attacker controlled input via the OS2ECP function during ECC point decompression.</p>\n\t  <p>Heap overflow on invalid ECC point - The PointGFp constructor did not check that the affine coordinate arguments were less than the prime, but then in curve multiplication assumed that both arguments if multiplied would fit into an integer twice the size of the prime.</p>\n\t  <p>The bigint_mul and bigint_sqr functions received the size of the output buffer, but only used it to dispatch to a faster algorithm in cases where there was sufficient output space to call an unrolled multiplication function.</p>\n\t  <p>The result is a heap overflow accessible via ECC point decoding, which accepted untrusted inputs. This is likely exploitable for remote code execution.</p>\n\t  <p>On systems which use the mlock pool allocator, it would allow an attacker to overwrite memory held in secure_vector objects. After this point the write will hit the guard page at the end of the mmapped region so it probably could not be used for code execution directly, but would allow overwriting adjacent key material.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://botan.randombit.net/security.html"
+    ],
+    "cvename": [
+      "CVE-2016-2194",
+      "CVE-2016-2195"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-01",
+    "entry": "2016-03-31"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "vid": "1bcfd963-e483-41b8-ab8e-bad5c3ce49c9",
+  "topic": "brotli -- buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "brotli"
+      ],
+      "range": [
+        {
+          "lt": "0.3.0_1",
+          "ge": "0.3.0"
+        },
+        {
+          "lt": "0.2.0_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libbrotli"
+      ],
+      "range": [
+        {
+          "lt": "0.3.0_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "48.0.2564.109"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox",
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "45.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.42"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "38.7.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul",
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "38.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.nl/2016/02/stable-channel-update_9.html\">\n\t  <p>[583607] High CVE-2016-1624: Buffer overflow in Brotli. Credit to lukezli.</p>\n\t</blockquote>\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-30/\">\n\t  <p>Security researcher Luke Li reported a pointer underflow\n\t    bug in the Brotli library's decompression that leads to a\n\t    buffer overflow. This results in a potentially exploitable\n\t    crash when triggered.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/google/brotli/commit/37a320dd81db8d546cd24a45b4c61d87b45dcade",
+      "https://chromium.googlesource.com/chromium/src/+/7716418a27d561ee295a99f11fd3865580748de2%5E!/",
+      "https://www.mozilla.org/security/advisories/mfsa2016-30/",
+      "https://hg.mozilla.org/releases/mozilla-release/rev/4a5d8ade4e3e"
+    ],
+    "cvename": [
+      "CVE-2016-1624",
+      "CVE-2016-1968"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-08",
+    "entry": "2016-03-08",
+    "modified": "2016-03-08"
+  }
+}

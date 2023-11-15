@@ -1,0 +1,40 @@
+{
+  "vid": "3a6960ef-c8a8-11e1-9924-001fd0af1a4c",
+  "topic": "puppet -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "puppet"
+      ],
+      "range": [
+        {
+          "lt": "2.7.18",
+          "gt": "2.7.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t   <p>puppet -- multiple vulnerabilities</p>\n\t   <blockquote cite=\"http://projects.puppetlabs.com/projects/puppet/wiki/Release_Notes#2.7.18\">\n\t      <p>Arbitrary file read on the puppet master from authenticated\n\t\t clients (high). It is possible to construct an HTTP get request\n\t\t from an authenticated client with a valid certificate that will\n\t\t return the contents of an arbitrary file on the Puppet master\n\t\t that the master has read-access to.</p>\n\t      <p>Arbitrary file delete/D.O.S on Puppet Master from authenticated\n\t\t clients (high). Given a Puppet master with the \"Delete\"\n\t\t directive allowed in auth.conf for an authenticated host, an\n\t\t attacker on that host can send a specially crafted Delete\n\t\t request that can cause an arbitrary file deletion on the Puppet\n\t\t master, potentially causing a denial of service attack. Note\n\t\t that this vulnerability does *not* exist in Puppet as\n\t\t configured by default.</p>\n\t      <p>The last_run_report.yaml is world readable (medium). The most\n\t\t recent Puppet run report is stored on the Puppet master with\n\t\t world-readable permissions. The report file contains the\n\t\t context diffs of any changes to configuration on an agent,\n\t\t which may contain sensitive information that an attacker can\n\t\t then access. The last run report is overwritten with every\n\t\t Puppet run.</p>\n\t      <p>Arbitrary file read on the Puppet master by an agent (medium).\n\t\t This vulnerability is dependent upon vulnerability\n\t\t \"last_run_report.yml is world readable\" above. By creating a\n\t\t hard link of a Puppet-managed file to an arbitrary file that\n\t\t the Puppet master can read, an attacker forces the contents to\n\t\t be written to the puppet run summary. The context diff is\n\t\t stored in last_run_report.yaml, which can then be accessed by\n\t\t the attacker.</p>\n\t      <p>Insufficient input validation for agent hostnames (low). An\n\t\t attacker could trick the administrator into signing an\n\t\t attacker's certificate rather than the intended one by\n\t\t constructing specially crafted certificate requests containing\n\t\t specific ANSI control sequences. It is possible to use the\n\t\t sequences to rewrite the order of text displayed to an\n\t\t administrator such that display of an invalid certificate and\n\t\t valid certificate are transposed. If the administrator signs\n\t\t the attacker's certificate, the attacker can then\n\t\t man-in-the-middle the agent.</p>\n\t      <p>Agents with certnames of IP addresses can be impersonated\n\t\t (low). If an authenticated host with a certname of an IP\n\t\t address changes IP addresses, and a second host assumes the\n\t\t first host's former IP address, the second host will be treated\n\t\t by the puppet master as the first one, giving the second host\n\t\t access to the first host's catalog. Note: This will not be\n\t\t fixed in Puppet versions prior to the forthcoming 3.x. Instead,\n\t\t with this announcement IP-based authentication in Puppet &lt; 3.x\n\t\t is deprecated.</p>\n\t   </blockquote>\n\t"
+  },
+  "references": {
+    "url": [
+      "http://projects.puppetlabs.com/projects/puppet/wiki/Release_Notes#2.7.18",
+      "http://puppetlabs.com/security/cve/cve-2012-3864/",
+      "http://puppetlabs.com/security/cve/cve-2012-3865/",
+      "http://puppetlabs.com/security/cve/cve-2012-3866/",
+      "http://puppetlabs.com/security/cve/cve-2012-3867/"
+    ],
+    "cvename": [
+      "CVE-2012-3864",
+      "CVE-2012-3865",
+      "CVE-2012-3866",
+      "CVE-2012-3867"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-07-05",
+    "entry": "2012-07-10"
+  }
+}

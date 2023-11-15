@@ -1,0 +1,33 @@
+{
+  "vid": "bad59128-c188-11e8-9d40-f0def10dca57",
+  "topic": "wesnoth -- Code Injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wesnoth"
+      ],
+      "range": [
+        {
+          "lt": "1.14.4,1",
+          "ge": "1.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>shadowm reports:</p>\n\t<blockquote cite=\"https://forums.wesnoth.org/viewtopic.php?t=48528\">\n\t  <p>A severe bug was found in the game client which could allow a malicious user to execute arbitrary code through the Lua engine by using specially-crafted code in add-ons, saves, replays, or networked games. This issue affects all platforms and all existing releases since Wesnoth version 1.7.0.\n\t  Users of all previous version should upgrade immediately.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://gist.github.com/shikadiqueen/45951ddc981cf8e0d9a74e4b30400380"
+    ],
+    "cvename": [
+      "CVE-2018-1999023"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-07-14",
+    "entry": "2018-09-26"
+  }
+}

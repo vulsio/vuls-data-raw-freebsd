@@ -1,0 +1,32 @@
+{
+  "vid": "ed18aa92-e4f4-11e9-b6fa-3085a9a95629",
+  "topic": "cacti -- Authenticated users may bypass authorization checks",
+  "affects": [
+    {
+      "name": [
+        "cacti"
+      ],
+      "range": [
+        {
+          "lt": "1.2.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The cacti developers reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16723\">\n\t  <p>In Cacti through 1.2.6, authenticated users may bypass authorization checks\n\t    (for viewing a graph) via a direct graph_json.php request with a modified\n\t    local_graph_id parameter.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/Cacti/cacti/releases/tag/release%2F1.2.7"
+    ],
+    "cvename": [
+      "CVE-2019-16723"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-09-23",
+    "entry": "2019-10-02"
+  }
+}

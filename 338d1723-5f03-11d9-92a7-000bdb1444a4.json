@@ -1,0 +1,40 @@
+{
+  "vid": "338d1723-5f03-11d9-92a7-000bdb1444a4",
+  "topic": "horde -- XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "horde",
+        "horde-php5"
+      ],
+      "range": [
+        {
+          "lt": "3.0.1",
+          "gt": "3.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Hyperdose Security Advisory reports:</p>\n\t<blockquote cite=\"http://lists.horde.org/archives/announce/2005/000159.html\">\n\t  <p>Horde contains two XSS attacks that can be exploited\n\t    through GET requests.  Once exploited, these requests\n\t    could be used to execute any javascript commands in the\n\t    context of that user, potentially including but not\n\t    limited to reading and deleting email, and stealing auth\n\t    tokens.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110564059322774",
+        "msgid": "1105593825.8638@mx249a.mysite4now.com"
+      },
+      {
+        "text": "http://lists.horde.org/archives/announce/2005/000159.html"
+      }
+    ],
+    "bid": [
+      "12255"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-01-04",
+    "entry": "2005-01-22"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "vid": "ffa15b3b-e6f6-11ea-8cbf-54e1ad3d6335",
+  "topic": "xorg-server -- Multiple input validation failures in X server extensions",
+  "affects": [
+    {
+      "name": [
+        "xorg-server"
+      ],
+      "range": [
+        {
+          "lt": "1.20.8_4,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xephyr"
+      ],
+      "range": [
+        {
+          "lt": "1.20.8_4,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xorg-vfbserver"
+      ],
+      "range": [
+        {
+          "lt": "1.20.8_4,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xorg-nestserver"
+      ],
+      "range": [
+        {
+          "lt": "1.20.8_4,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xwayland"
+      ],
+      "range": [
+        {
+          "lt": "1.20.8_4,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xorg-dmx"
+      ],
+      "range": [
+        {
+          "lt": "1.20.8_4,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2020-August/003058.html\">\n\t  <p>All theses issuses  can lead to local privileges elevation on\n\t    systems where the X server is running privileged.</p>\n\t  <p>The handler for the XkbSetNames request does not validate the\n\t    request length before accessing its contents.</p>\n\t  <p>An integer underflow exists in the handler for the\n\t    XIChangeHierarchy request.</p>\n\t  <p>An integer underflow exist in the handler for the XkbSelectEvents\n\t    request.</p>\n\t  <p> An integer underflow exist in the handler for the CreateRegister\n\t    request of the X record extension.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.x.org/archives/xorg-announce/2020-August/003058.html"
+    ],
+    "cvename": [
+      "CVE-2020-14345",
+      "CVE-2020-14346",
+      "CVE-2020-14361",
+      "CVE-2020-14362"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-08-25",
+    "entry": "2020-08-25"
+  }
+}

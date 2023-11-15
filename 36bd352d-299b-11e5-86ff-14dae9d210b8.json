@@ -1,0 +1,81 @@
+{
+  "vid": "36bd352d-299b-11e5-86ff-14dae9d210b8",
+  "topic": "mysql -- SSL Downgrade",
+  "affects": [
+    {
+      "name": [
+        "php56-mysql",
+        "php56-mysqli"
+      ],
+      "range": [
+        {
+          "lt": "5.6.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55-mysql",
+        "php55-mysqli"
+      ],
+      "range": [
+        {
+          "lt": "5.5.27"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php5-mysql",
+        "php5-mysqli"
+      ],
+      "range": [
+        {
+          "lt": "5.4.43"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb55-client"
+      ],
+      "range": [
+        {
+          "lt": "5.5.44"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb100-client"
+      ],
+      "range": [
+        {
+          "lt": "10.0.20"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Duo Security reports:</p>\n\t<blockquote cite=\"https://www.duosecurity.com/blog/backronym-mysql-vulnerability\">\n\t  <p>Researchers have identified a serious vulnerability in some\n\t    versions of Oracle’s MySQL database product that allows an attacker to\n\t    strip SSL/TLS connections of their security wrapping transparently.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.php.net/bug.php?id=69669",
+      "https://www.duosecurity.com/blog/backronym-mysql-vulnerability",
+      "http://www.ocert.org/advisories/ocert-2015-003.html",
+      "https://mariadb.atlassian.net/browse/MDEV-7937",
+      "https://mariadb.com/kb/en/mariadb/mariadb-10020-changelog/",
+      "https://mariadb.com/kb/en/mariadb/mariadb-5544-changelog/"
+    ],
+    "cvename": [
+      "CVE-2015-3152"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-20",
+    "entry": "2015-07-13",
+    "modified": "2015-07-18"
+  }
+}

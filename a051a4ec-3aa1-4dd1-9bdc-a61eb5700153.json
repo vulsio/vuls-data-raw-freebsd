@@ -1,0 +1,47 @@
+{
+  "vid": "a051a4ec-3aa1-4dd1-9bdc-a61eb5700153",
+  "topic": "leafnode fetchnews denial-of-service triggered by truncated transmission",
+  "affects": [
+    {
+      "name": [
+        "leafnode"
+      ],
+      "range": [
+        {
+          "le": "1.9.47"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>When a downloaded news article ends prematurely, i. e. when the\n\t  server sends [CR]LF.[CR]LF before sending a blank line, fetchnews may\n\t  wait indefinitely for data that never arrives. Workaround: configure\n\t  \"minlines=1\" (or use a bigger value) in the configuration file. Found\n\t  by Toni Viemerö.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://leafnode.sourceforge.net/leafnode-SA-2004-01.txt",
+      "http://sourceforge.net/tracker/index.php?func=detail&aid=873149&group_id=57767&atid=485349"
+    ],
+    "cvename": [
+      "CVE-2004-2068"
+    ],
+    "freebsd_pr": [
+      "ports/61105"
+    ],
+    "mlist": [
+      {
+        "text": "http://article.gmane.org/gmane.network.leafnode.announce/32",
+        "msgid": "20040109015625.GA12319@merlin.emma.line.org"
+      },
+      {
+        "text": "http://sourceforge.net/mailarchive/message.php?msg_id=6922570",
+        "msgid": "20040109015625.GA12319@merlin.emma.line.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-01-08",
+    "entry": "2004-05-21",
+    "modified": "2005-05-13"
+  }
+}

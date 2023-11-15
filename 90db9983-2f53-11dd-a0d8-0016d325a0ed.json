@@ -1,0 +1,29 @@
+{
+  "vid": "90db9983-2f53-11dd-a0d8-0016d325a0ed",
+  "topic": "ikiwiki -- cleartext passwords",
+  "affects": [
+    {
+      "name": [
+        "ikiwiki"
+      ],
+      "range": [
+        {
+          "lt": "2.48"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The ikiwiki development team reports:</p>\n\t<blockquote cite=\"http://ikiwiki.info/security/#index32h2\">\n\t  <p>Until version 2.48, ikiwiki stored passwords in cleartext in\n\t    the userdb. That risks exposing all users' passwords if the file\n\t    is somehow exposed. To pre-emtively guard against that, current\n\t    versions of ikiwiki store password hashes (using Eksblowfish).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://ikiwiki.info/security/#index32h2"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-05-30",
+    "entry": "2008-06-01"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "49d9c28c-fbad-11e4-b0fb-00269ee29e57",
+  "topic": "Quassel IRC -- SQL injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "quassel"
+      ],
+      "range": [
+        {
+          "lt": "0.11.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Quassel IRC developers report:</p>\n\t<blockquote cite=\"http://www.quassel-irc.org/node/127\">\n\t  <p>Restarting a PostgreSQL database while Quassel Core is running\n\t    would not properly re-initialize the database session inside Quassel,\n\t    bringing back an old security issue (CVE-2013-4422).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/quassel/quassel/commit/6605882f41331c80f7ac3a6992650a702ec71283"
+    ],
+    "cvename": [
+      "CVE-2015-3427"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-23",
+    "entry": "2015-05-16"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "8e89a89a-fd15-11e7-bdf6-00e04c1ea73d",
+  "topic": "phpbb3 -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "phpbb3"
+      ],
+      "range": [
+        {
+          "lt": "3.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpbb developers reports:</p>\n\t<blockquote cite=\"https://wiki.phpbb.com/Release_Highlights/3.2.2\">\n\t  <p>Password updater working with PostgreSQL - The cron for updating legacy password hashes was running invalid queries on PostgreSQL.</p>\n\t  <p>Deleting orphaned attachments w/ large number of orphaned attachments - Orphaned attachment deletion was improved to be able to delete them when a large number of orphaned attachments exist.</p>\n\t  <p>Multiple bugfixes for retrieving image size - Multiple issues with retrieving the image size of JPEGs and temporary files were resolved.</p>\n\t  <p>Issues with updating from phpBB 3.0.6 - Inconsistencies in the way parent modules were treated caused issues with updating from older phpBB 3.0 versions.</p>\n\t  <p>Forum / topic icon blurriness - Fixed issues with forum and topic icons looking blurry on some browsers.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wiki.phpbb.com/Release_Highlights/3.2.2"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-07",
+    "entry": "2018-01-19"
+  }
+}

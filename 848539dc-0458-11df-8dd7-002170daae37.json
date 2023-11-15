@@ -1,0 +1,36 @@
+{
+  "vid": "848539dc-0458-11df-8dd7-002170daae37",
+  "topic": "dokuwiki -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "dokuwiki"
+      ],
+      "range": [
+        {
+          "lt": "20091225_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dokuwiki reports:</p>\n\t<blockquote cite=\"http://bugs.splitbrain.org/index.php?do=details&amp;task_id=1853\">\n\t  <p>The plugin does no checks against cross-site request\n\t    forgeries (CSRF) which can be exploited to e.g. change\n\t    the access control rules by tricking a logged in\n\t    administrator into visiting a malicious web site.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://bugs.splitbrain.org/index.php?do=details&amp;task_id=1847\">\n\t  <p>The bug allows listing the names of arbitrary file on\n\t    the webserver - not their contents. This could leak\n\t    private information about wiki pages and server structure.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.splitbrain.org/index.php?do=details&task_id=1847",
+      "http://bugs.splitbrain.org/index.php?do=details&task_id=1853"
+    ],
+    "cvename": [
+      "CVE-2010-0288",
+      "CVE-2010-0287",
+      "CVE-2010-0289"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-01-17",
+    "entry": "2010-01-18",
+    "modified": "2010-05-02"
+  }
+}

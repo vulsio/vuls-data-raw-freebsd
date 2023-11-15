@@ -1,0 +1,34 @@
+{
+  "vid": "d76961da-56f6-11e5-934b-002590263bf5",
+  "topic": "pgbouncer -- failed auth_query lookup leads to connection as auth_user",
+  "affects": [
+    {
+      "name": [
+        "pgbouncer"
+      ],
+      "range": [
+        {
+          "eq": "1.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PgBouncer reports:</p>\n\t<blockquote cite=\"http://pgbouncer.github.io/2015/09/pgbouncer-1-6-1/\">\n\t  <p>New auth_user functionality introduced in 1.6 allows login as\n\t    auth_user when client presents unknown username. It's quite likely\n\t    auth_user is superuser. Affects only setups that have enabled\n\t    auth_user in their config.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://pgbouncer.github.io/2015/09/pgbouncer-1-6-1/",
+      "https://github.com/pgbouncer/pgbouncer/issues/69",
+      "http://www.openwall.com/lists/oss-security/2015/09/04/3"
+    ],
+    "cvename": [
+      "CVE-2015-6817"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-03",
+    "entry": "2015-09-09"
+  }
+}

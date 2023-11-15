@@ -1,0 +1,67 @@
+{
+  "vid": "5df8bd95-8290-11e7-93af-005056925db4",
+  "topic": "Zabbix -- Remote code execution",
+  "affects": [
+    {
+      "name": [
+        "zabbix2-server",
+        "zabbix2-proxy"
+      ],
+      "range": [
+        {
+          "le": "2.0.20"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zabbix22-server",
+        "zabbix22-proxy"
+      ],
+      "range": [
+        {
+          "lt": "2.2.19"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zabbix3-server",
+        "zabbix3-proxy"
+      ],
+      "range": [
+        {
+          "lt": "3.0.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zabbix32-server",
+        "zabbix32-proxy"
+      ],
+      "range": [
+        {
+          "lt": "3.2.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2824\">\n\t  <p>An exploitable code execution vulnerability exists in the trapper command\n\t    functionality of Zabbix Server 2.4.X. A specially crafted set of packets\n\t    can cause a command injection resulting in remote code execution. An attacker\n\t    can make requests from an active Zabbix Proxy to trigger this vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2824",
+      "https://support.zabbix.com/browse/ZBX-12349"
+    ],
+    "cvename": [
+      "CVE-2017-2824"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-07-05",
+    "entry": "2017-08-16"
+  }
+}

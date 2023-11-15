@@ -1,0 +1,34 @@
+{
+  "vid": "b9077cc4-6d04-4bcb-a37a-9ceaebfdcc9e",
+  "topic": "ganglia -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ganglia-monitor-core",
+        "ganglia-monitor-webfrontend"
+      ],
+      "range": [
+        {
+          "lt": "3.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t <blockquote cite=\"http://secunia.com/advisories/33506\">\n\t    <p>Spike Spiegel has discovered a vulnerability in Ganglia which\n\t      can be exploited by malicious people to compromise a\n\t      vulnerable system.  The vulnerability is caused due to a\n\t      boundary error within the process_path function in\n\t      gmetad/server.c. This can be exploited to cause a stack-based\n\t      buffer overflow by e.g. sending a specially crafted message to\n\t      the gmetad service.</p>\n\t    <p>The vulnerability is confirmed in version 3.1.1. Other\n\t      versions may also be affected.</p>\n\t  </blockquote>\n       "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/33506"
+    ],
+    "cvename": [
+      "CVE-2009-0241"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-01-26",
+    "entry": "2009-01-30",
+    "modified": "2009-01-30"
+  }
+}

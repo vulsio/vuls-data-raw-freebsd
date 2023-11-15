@@ -1,0 +1,32 @@
+{
+  "vid": "6df56c60-3738-11e6-a671-60a44ce6887b",
+  "topic": "wget -- HTTP to FTP redirection file name confusion vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wget"
+      ],
+      "range": [
+        {
+          "lt": "1.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Giuseppe Scrivano reports:</p>\n\t<blockquote cite=\"http://lists.gnu.org/archive/html/info-gnu/2016-06/msg00004.html\">\n\t  <p>On a server redirect from HTTP to a FTP resource, wget would trust the\n\t    HTTP server and uses the name in the redirected URL as the destination\n\t    filename.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.gnu.org/archive/html/info-gnu/2016-06/msg00004.html"
+    ],
+    "cvename": [
+      "CVE-2016-4971"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-06-09",
+    "entry": "2016-06-21"
+  }
+}

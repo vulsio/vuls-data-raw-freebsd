@@ -1,0 +1,61 @@
+{
+  "vid": "1bdd4db6-2223-11ec-91be-001b217b3468",
+  "topic": "Gitlab -- vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "14.3.1",
+          "ge": "14.3.0"
+        },
+        {
+          "lt": "14.2.5",
+          "ge": "14.2.0"
+        },
+        {
+          "lt": "14.1.7",
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2021/09/30/security-release-gitlab-14-3-1-released/\">\n\t  <p>Stored XSS in merge request creation page</p>\n\t  <p>Denial-of-service attack in Markdown parser</p>\n\t  <p>Stored Cross-Site Scripting vulnerability in the GitLab Flavored Markdown</p>\n\t  <p>DNS Rebinding vulnerability in Gitea importer</p>\n\t  <p>Exposure of trigger tokens on project exports</p>\n\t  <p>Improper access control for users with expired password</p>\n\t  <p>Access tokens are not cleared after impersonation</p>\n\t  <p>Reflected Cross-Site Scripting in Jira Integration</p>\n\t  <p>DNS Rebinding vulnerability in Fogbugz importer</p>\n\t  <p>Access tokens persist after project deletion</p>\n\t  <p>User enumeration vulnerability</p>\n\t  <p>Potential DOS via API requests</p>\n\t  <p>Pending invitations of public groups and public projects are visible to any user</p>\n\t  <p>Bypass Disabled Repo by URL Project Creation</p>\n\t  <p>Low privileged users can see names of the private groups shared in projects</p>\n\t  <p>API discloses sensitive info to low privileged users</p>\n\t  <p>Epic listing do not honour group memberships</p>\n\t  <p>Insecure Direct Object Reference vulnerability may lead to protected branch names getting disclosed</p>\n\t  <p>Low privileged users can import users from projects that they they are not a maintainer on</p>\n\t  <p>Potential DOS via dependencies API</p>\n\t  <p>Create a project with unlimited repository size through malicious Project Import</p>\n\t  <p>Bypass disabled Bitbucket Server import source project creation</p>\n\t  <p>Requirement to enforce 2FA is not honored when using git commands</p>\n\t  <p>Content spoofing vulnerability</p>\n\t  <p>Improper session management in impersonation feature</p>\n\t  <p>Create OAuth application with arbitrary scopes through content spoofing</p>\n\t  <p>Lack of account lockout on change password functionality</p>\n\t  <p>Epic reference was not updated while moved between groups</p>\n\t  <p>Missing authentication allows disabling of two-factor authentication</p>\n\t  <p>Information disclosure in SendEntry</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2021/09/30/security-release-gitlab-14-3-1-released/"
+    ],
+    "cvename": [
+      "CVE-2021-39885",
+      "CVE-2021-39877",
+      "CVE-2021-39887",
+      "CVE-2021-39867",
+      "CVE-2021-39869",
+      "CVE-2021-39872",
+      "CVE-2021-39878",
+      "CVE-2021-39866",
+      "CVE-2021-39882",
+      "CVE-2021-39875",
+      "CVE-2021-39870",
+      "CVE-2021-39884",
+      "CVE-2021-39883",
+      "CVE-2021-22259",
+      "CVE-2021-39868",
+      "CVE-2021-39871",
+      "CVE-2021-39874",
+      "CVE-2021-39873",
+      "CVE-2021-39881",
+      "CVE-2021-39886",
+      "CVE-2021-39879"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-09-30",
+    "entry": "2021-09-30"
+  }
+}

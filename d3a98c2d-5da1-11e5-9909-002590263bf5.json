@@ -1,0 +1,35 @@
+{
+  "vid": "d3a98c2d-5da1-11e5-9909-002590263bf5",
+  "topic": "squid -- TLS/SSL parser denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "3.5.9",
+          "ge": "3.5.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Amos Jeffries, release manager of the Squid-3 series, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/09/18/1\">\n\t  <p>Vulnerable versions are 3.5.0.1 to 3.5.8 (inclusive), which are\n\t    built with OpenSSL and configured for \"SSL-Bump\" decryption.</p>\n\t  <p>Integer overflows can lead to invalid pointer math reading from\n\t    random memory on some CPU architectures. In the best case this leads\n\t    to wrong TLS extensions being used for the client, worst-case a\n\t    crash of the proxy terminating all active transactions.</p>\n\t  <p>Incorrect message size checks and assumptions about the existence\n\t    of TLS extensions in the SSL/TLS handshake message can lead to very\n\t    high CPU consumption (up to and including 'infinite loop'\n\t    behaviour).</p>\n\t  <p>The above can be triggered remotely. Though there is one layer of\n\t    authorization applied before this processing to check that the\n\t    client is allowed to use the proxy, that check is generally weak. MS\n\t    Skype on Windows XP is known to trigger some of these.</p>\n\t</blockquote>\n\t<p>The FreeBSD port does not use SSL by default and is not vulnerable\n\t  in the default configuration.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Advisories/SQUID-2015_3.txt",
+      "http://www.openwall.com/lists/oss-security/2015/09/18/1"
+    ],
+    "freebsd_pr": [
+      "ports/203186"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-18",
+    "entry": "2015-09-18",
+    "modified": "2016-02-18"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "7a7c5853-10a3-11dd-8eb8-00163e000016",
+  "topic": "libxine -- array index vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.1.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>xine Team reports:</p>\n\t<blockquote cite=\"http://www.xinehq.de/index.php/news\">\n\t  <p>A new xine-lib version is now available. This release contains a\n\t    security fix (an unchecked array index that could allows remote\n\t    attackers to execute arbitrary code via a header structure\n\t    containing a negative offset, which is used to dereference a\n\t    function pointer.)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.xinehq.de/index.php/news"
+    ],
+    "cvename": [
+      "CVE-2008-1686"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-04-06",
+    "entry": "2008-04-24"
+  }
+}

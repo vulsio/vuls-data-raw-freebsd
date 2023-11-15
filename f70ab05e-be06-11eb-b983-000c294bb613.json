@@ -1,0 +1,30 @@
+{
+  "vid": "f70ab05e-be06-11eb-b983-000c294bb613",
+  "topic": "drupal7 -- fix possible CSS",
+  "affects": [
+    {
+      "name": [
+        "drupal7"
+      ],
+      "range": [
+        {
+          "lt": "7.80",
+          "gt": "7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal Security team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/sa-core-2021-002\">\n\t  <p>Drupal core's sanitization API fails to properly filter\n\t\tcross-site scripting under certain circumstances.\n\t\tNot all sites and users are affected, but configuration\n\t\tchanges to prevent the exploit might be impractical\n\t\tand will vary between sites. Therefore, we recommend\n\t\tall sites update to this release as soon as\n\t\tpossible.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-13672"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-21",
+    "entry": "2021-06-06"
+  }
+}

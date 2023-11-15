@@ -1,0 +1,45 @@
+{
+  "vid": "7d4f4955-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Heap vulnerability in bspatch",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.3_6",
+          "ge": "10.3"
+        },
+        {
+          "lt": "10.2_20",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_37",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_45",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The implementation of bspatch does not check for a\n\tnegative value on numbers of bytes read from the diff and\n\textra streams, allowing an attacker who can control the\n\tpatch file to write at arbitrary locations in the heap.</p>\n\t<p>This issue was first discovered by The Chromium Project\n\tand reported independently by Lu Tung-Pin to the FreeBSD\n\tproject.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can control the patch file can cause a\n\tcrash or run arbitrary code under the credentials of the\n\tuser who runs bspatch, in many cases, root.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-9862"
+    ],
+    "freebsd_sa": [
+      "SA-16:25.bspatch"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-07-25",
+    "entry": "2016-08-11"
+  }
+}

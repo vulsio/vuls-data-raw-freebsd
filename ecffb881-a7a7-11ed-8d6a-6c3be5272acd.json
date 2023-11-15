@@ -1,0 +1,67 @@
+{
+  "vid": "ecffb881-a7a7-11ed-8d6a-6c3be5272acd",
+  "topic": "Grafana -- Stored XSS in ResourcePicker component",
+  "affects": [
+    {
+      "name": [
+        "grafana"
+      ],
+      "range": [
+        {
+          "lt": "8.5.16",
+          "ge": "8.1.0"
+        },
+        {
+          "lt": "9.2.10",
+          "ge": "9.0.0"
+        },
+        {
+          "lt": "9.3.4",
+          "ge": "9.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana8"
+      ],
+      "range": [
+        {
+          "lt": "8.5.16",
+          "ge": "8.1.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana9"
+      ],
+      "range": [
+        {
+          "lt": "9.2.10",
+          "ge": "9.0.0"
+        },
+        {
+          "lt": "9.3.4",
+          "ge": "9.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/01/25/grafana-security-releases-new-versions-with-fixes-for-cve-2022-23552-cve-2022-41912-and-cve-2022-39324/\">\n\t  <p>On 2022-12-16 during an internal audit of Grafana, a member of the security\n\t  team found a stored XSS vulnerability affecting the core plugin GeoMap.</p>\n\t  <p>The stored XSS vulnerability was possible due to SVG-files weren't properly\n\t  sanitized and allowed arbitrary JavaScript to be executed in the context\n\t  of the currently authorized user of the Grafana instance.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/grafana/grafana/security/advisories/GHSA-8xmm-x63g-f6xv"
+    ],
+    "cvename": [
+      "CVE-2022-23552"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-12-16",
+    "entry": "2023-02-09"
+  }
+}

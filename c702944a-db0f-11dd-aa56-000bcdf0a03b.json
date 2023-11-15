@@ -1,0 +1,39 @@
+{
+  "vid": "c702944a-db0f-11dd-aa56-000bcdf0a03b",
+  "topic": "FreeBSD -- netgraph / bluetooth privilege escalation",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.3_7",
+          "ge": "6.3"
+        },
+        {
+          "lt": "6.4_1",
+          "ge": "6.4"
+        },
+        {
+          "lt": "7.0_7",
+          "ge": "7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Some function pointers for netgraph and bluetooth sockets are\n\t  not properly initialized.</p>\n\t<h1>Impact:</h1>\n\t<p>A local user can cause the FreeBSD kernel to execute\n\t  arbitrary code.  This could be used by an attacker directly;\n\t  or it could be used to gain root privilege or to escape from\n\t  a jail.</p>\n\t<h1>Workaround:</h1>\n\t<p>No workaround is available, but systems without local\n\t  untrusted users are not vulnerable.  Furthermore, systems are\n\t  not vulnerable if they have neither the ng_socket nor\n\t  ng_bluetooth kernel modules loaded or compiled into the\n\t  kernel.</p>\n\t<p>Systems with the security.jail.socket_unixiproute_only\n\t  sysctl set to 1 (the default) are only vulnerable if they have\n\t  local untrusted users outside of jails.</p>\n\t<p>If the command</p>\n\t<p><code># kldstat -v | grep ng_</code></p>\n\t<p>produces no output, the system is not vulnerable.</p>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-08:13.protosw"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-23",
+    "entry": "2009-01-05",
+    "modified": "2016-08-09"
+  }
+}

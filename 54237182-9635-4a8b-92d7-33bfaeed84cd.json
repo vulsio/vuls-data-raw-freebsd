@@ -1,0 +1,39 @@
+{
+  "vid": "54237182-9635-4a8b-92d7-33bfaeed84cd",
+  "topic": "ruby-gems -- Algorithmic Complexity Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ruby19-gems"
+      ],
+      "range": [
+        {
+          "lt": "1.8.26"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby20-gems"
+      ],
+      "range": [
+        {
+          "lt": "1.8.26"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ruby Gem developers report:</p>\n\t<blockquote cite=\"http://blog.rubygems.org/2013/09/09/CVE-2013-4287.html\">\n\t  <p>RubyGems validates versions with a regular expression that is\n\t    vulnerable to denial of service due to backtracking. For specially\n\t    crafted RubyGems versions attackers can cause denial of service\n\t    through CPU consumption.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2013-4287"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-09-09",
+    "entry": "2013-11-24"
+  }
+}

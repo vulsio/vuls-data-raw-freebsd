@@ -1,0 +1,69 @@
+{
+  "vid": "2c6af5c3-4d36-11ec-a539-0800270512f4",
+  "topic": "rubygem-cgi -- buffer overrun in CGI.escape_html",
+  "affects": [
+    {
+      "name": [
+        "ruby"
+      ],
+      "range": [
+        {
+          "lt": "2.7.5,1",
+          "ge": "2.7.0,1"
+        },
+        {
+          "lt": "3.0.3,1",
+          "ge": "3.0.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.5,1",
+          "ge": "2.7.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby30"
+      ],
+      "range": [
+        {
+          "lt": "3.0.3,1",
+          "ge": "3.0.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rubygem-cgi"
+      ],
+      "range": [
+        {
+          "lt": "0.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>chamal reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816/\">\n\t  <p>\n\t    A security vulnerability that causes buffer overflow when\n\t    you pass a very large string (&gt; 700 MB) to\n\t    <code>CGI.escape_html</code> on a platform where\n\t    <code>long</code> type takes 4 bytes, typically, Windows.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816/"
+    ],
+    "cvename": [
+      "CVE-2021-41816"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-11-24",
+    "entry": "2021-11-24"
+  }
+}

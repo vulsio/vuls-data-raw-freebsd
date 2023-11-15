@@ -1,0 +1,44 @@
+{
+  "vid": "ad747a01-1fee-11e4-8ff1-f0def16c5c1b",
+  "topic": "nginx -- inject commands into SSL session vulnerability",
+  "affects": [
+    {
+      "name": [
+        "nginx"
+      ],
+      "range": [
+        {
+          "lt": "1.6.1,2",
+          "ge": "1.6.0,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nginx-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.7.4",
+          "ge": "1.5.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The nginx project reports:</p>\n\t<blockquote cite=\"http://mailman.nginx.org/pipermail/nginx-announce/2014/000144.html\">\n\t  <p>Security: pipelined commands were not discarded after STARTTLS\n\t    command in SMTP proxy (CVE-2014-3556); the bug had appeared in 1.5.6.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mailman.nginx.org/pipermail/nginx-announce/2014/000144.html"
+    ],
+    "cvename": [
+      "CVE-2014-3556"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-08-05",
+    "entry": "2014-08-09"
+  }
+}

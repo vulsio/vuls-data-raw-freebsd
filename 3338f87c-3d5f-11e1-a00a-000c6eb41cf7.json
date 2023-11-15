@@ -1,0 +1,30 @@
+{
+  "vid": "3338f87c-3d5f-11e1-a00a-000c6eb41cf7",
+  "topic": "PowerDNS -- Denial of Service Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "powerdns",
+        "powerdns-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PowerDNS Team reports:</p>\n\t<blockquote cite=\"http://www.powerdns.com/news/powerdns-security-advisory-2012-01.html\">\n\t  <p>Using well crafted UDP packets, one or more PowerDNS servers\n\t    could be made to enter a tight packet loop, causing temporary\n\t    denial of service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-0206"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-01-10",
+    "entry": "2012-01-12"
+  }
+}

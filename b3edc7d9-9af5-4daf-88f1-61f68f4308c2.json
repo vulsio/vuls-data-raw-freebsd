@@ -1,0 +1,35 @@
+{
+  "vid": "b3edc7d9-9af5-4daf-88f1-61f68f4308c2",
+  "topic": "Jupyter Notebook -- vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py27-notebook",
+        "py34-notebook",
+        "py35-notebook",
+        "py36-notebook"
+      ],
+      "range": [
+        {
+          "lt": "5.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8768\">\n\t  <p>In Jupyter Notebook before 5.4.1, a maliciously forged notebook file\n\t    can bypass sanitization to execute JavaScript in the notebook context.\n\t    Specifically, invalid HTML is 'fixed' by jQuery after sanitization,\n\t\tmaking it dangerous.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8768"
+    ],
+    "cvename": [
+      "CVE-2018-8768"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-18",
+    "entry": "2018-03-19"
+  }
+}

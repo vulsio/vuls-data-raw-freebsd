@@ -1,0 +1,82 @@
+{
+  "vid": "7c27192f-0bc3-11e7-9940-b499baebfeaf",
+  "topic": "mysql -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mariadb55-client"
+      ],
+      "range": [
+        {
+          "le": "5.5.54"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb100-client"
+      ],
+      "range": [
+        {
+          "lt": "10.0.30"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb101-client"
+      ],
+      "range": [
+        {
+          "lt": "10.1.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mysql55-client"
+      ],
+      "range": [
+        {
+          "le": "5.5.54"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mysql56-client"
+      ],
+      "range": [
+        {
+          "lt": "5.6.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mysql57-client"
+      ],
+      "range": [
+        {
+          "lt": "5.7.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Openwall reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2017/02/11/11\">\n\t  <p>C client library for MySQL (libmysqlclient.so) has\n\t    use-after-free defect which can cause crash of applications\n\t    using that MySQL client.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2017/02/11/11"
+    ],
+    "cvename": [
+      "CVE-2017-3302"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-01-27",
+    "entry": "2017-03-18"
+  }
+}

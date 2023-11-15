@@ -1,0 +1,38 @@
+{
+  "vid": "079b3641-c4bd-11eb-a22a-693f0544ae52",
+  "topic": "go -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "go"
+      ],
+      "range": [
+        {
+          "lt": "1.16.5,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/45910\">\n\t  <p>The SetString and UnmarshalText methods of math/big.Rat may cause a\n\t    panic or an unrecoverable fatal error if passed inputs with very\n\t    large exponents.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/46313\">\n\t  <p>ReverseProxy in net/http/httputil could be made to forward certain\n\t    hop-by-hop headers, including Connection. In case the target of the\n\t    ReverseProxy was itself a reverse proxy, this would let an attacker\n\t    drop arbitrary headers, including those set by the\n\t    ReverseProxy.Director.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/46241\">\n\t  <p>The LookupCNAME, LookupSRV, LookupMX, LookupNS, and LookupAddr\n\t    functions in net, and their respective methods on the Resolver type\n\t    may return arbitrary values retrieved from DNS which do not follow\n\t    the established RFC 1035 rules for domain names. If these names are\n\t    used without further sanitization, for instance unsafely included in\n\t    HTML, they may allow for injection of unexpected content. Note that\n\t    LookupTXT may still return arbitrary values that could require\n\t    sanitization before further use.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/46242\">\n\t  <p>The NewReader and OpenReader functions in archive/zip can cause a\n\t    panic or an unrecoverable fatal error when reading an archive that\n\t    claims to contain a large number of files, regardless of its actual\n\t    size.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/golang/go/issues/45910",
+      "https://github.com/golang/go/issues/46313",
+      "https://github.com/golang/go/issues/46241",
+      "https://github.com/golang/go/issues/46242"
+    ],
+    "cvename": [
+      "CVE-2021-33198",
+      "CVE-2021-33197",
+      "CVE-2021-33195",
+      "CVE-2021-33196"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-01",
+    "entry": "2021-06-03"
+  }
+}

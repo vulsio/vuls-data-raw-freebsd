@@ -1,0 +1,59 @@
+{
+  "vid": "0b9af110-d529-11e6-ae1b-002590263bf5",
+  "topic": "tomcat -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "tomcat"
+      ],
+      "range": [
+        {
+          "lt": "6.0.48"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat7"
+      ],
+      "range": [
+        {
+          "lt": "7.0.73"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat8"
+      ],
+      "range": [
+        {
+          "lt": "8.0.39"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-8.html#Fixed_in_Apache_Tomcat_8.0.39\">\n\t  <p>Important: Remote Code Execution CVE-2016-8735</p>\n\t  <p>Important: Information Disclosure CVE-2016-6816</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.48",
+      "http://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.73",
+      "http://tomcat.apache.org/security-8.html#Fixed_in_Apache_Tomcat_8.0.39"
+    ],
+    "cvename": [
+      "CVE-2016-8735",
+      "CVE-2016-6816"
+    ],
+    "freebsd_pr": [
+      "ports/214599"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-22",
+    "entry": "2017-01-07",
+    "modified": "2017-03-18"
+  }
+}

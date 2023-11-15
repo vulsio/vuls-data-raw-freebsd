@@ -1,0 +1,48 @@
+{
+  "vid": "12efc567-9879-11dd-a5e7-0030843d3802",
+  "topic": "drupal -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "drupal5"
+      ],
+      "range": [
+        {
+          "lt": "5.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "drupal6"
+      ],
+      "range": [
+        {
+          "lt": "6.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/318706\">\n\t  <p>A logic error in the core upload module validation allowed\n\t    unprivileged users to attach files to content. Users can view files\n\t    attached to content which they do not otherwise have access to.\n\t    If the core upload module is not enabled, your site will not be\n\t    affected.</p>\n\t  <p>A deficiency in the user module allowed users who had been blocked\n\t    by access rules to continue logging into the site under certain\n\t    conditions. If you do not use the 'access rules' functionality in core,\n\t    your site will not be affected.</p>\n\t  <p>The BlogAPI module does not implement correct validation for\n\t    certain content fields, allowing for values to be set for fields which\n\t    would otherwise be inaccessible on an internal Drupal form. We have\n\t    hardened these checks in BlogAPI module for this release, but the\n\t    security team would like to re-iterate that the 'Administer content\n\t    with BlogAPI' permission should only be given to trusted users.\n\t    If the core BlogAPI module is not enabled, your site will not be\n\t    affected.</p>\n\t  <p>A weakness in the node module API allowed for node validation to be\n\t    bypassed in certain circumstances for contributed modules implementing\n\t    the API. Additional checks have been added to ensure that validation\n\t    is performed in all cases. This vulnerability only affects sites using\n\t    one of a very small number of contributed modules, all of which will\n\t    continue to work correctly with the improved API. None of them were\n\t    found vulnerable, so our correction is a preventative measure.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/318706",
+      "http://secunia.com/advisories/32200/",
+      "http://secunia.com/advisories/32201/",
+      "http://secunia.com/advisories/32198/"
+    ],
+    "cvename": [
+      "CVE-2008-4791",
+      "CVE-2008-4792",
+      "CVE-2008-4793"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-10-08",
+    "entry": "2008-10-12",
+    "modified": "2010-05-12"
+  }
+}

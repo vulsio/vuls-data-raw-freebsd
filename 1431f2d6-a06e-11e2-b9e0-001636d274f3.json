@@ -1,0 +1,37 @@
+{
+  "vid": "1431f2d6-a06e-11e2-b9e0-001636d274f3",
+  "topic": "NVIDIA UNIX driver -- ARGB cursor buffer overflow in \"NoScanout\" mode",
+  "affects": [
+    {
+      "name": [
+        "nvidia-driver"
+      ],
+      "range": [
+        {
+          "lt": "310.44",
+          "ge": "310.14"
+        },
+        {
+          "lt": "304.88",
+          "ge": "195.22"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVIDIA Unix security team reports:</p>\n\t<blockquote cite=\"http://nvidia.custhelp.com/app/answers/detail/a_id/3290\">\n\t  <p>When the NVIDIA driver for the X Window System is operated in\n\t     \"NoScanout\" mode, and an X client installs an ARGB cursor that\n\t     is larger than the expected size (64x64 or 256x256, depending on\n\t     the driver version), the driver will overflow a buffer.  This\n\t     can cause a denial of service (e.g., an X server segmentation\n\t     fault), or could be exploited to achieve arbitrary code\n\t     execution.  Because the X server runs as setuid root in many\n\t     configurations, an attacker could potentially use this\n\t     vulnerability in those configurations to gain root privileges.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://nvidia.custhelp.com/app/answers/detail/a_id/3290"
+    ],
+    "cvename": [
+      "CVE-2013-0131"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-03-27",
+    "entry": "2013-04-08"
+  }
+}

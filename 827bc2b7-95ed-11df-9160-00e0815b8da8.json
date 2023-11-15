@@ -1,0 +1,34 @@
+{
+  "vid": "827bc2b7-95ed-11df-9160-00e0815b8da8",
+  "topic": "git -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "git"
+      ],
+      "range": [
+        {
+          "lt": "1.7.1.1_1",
+          "ge": "1.5.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Greg Brockman reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2010/07/22/1\">\n\t  <p>If an attacker were to create a crafted working copy where the\n\t    user runs any git command, the attacker could force execution\n\t    of arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://git.kernel.org/?p=git/git.git;a=commit;h=3c9d0414ed2db0167e6c828b547be8fc9f88fccc",
+      "http://www.openwall.com/lists/oss-security/2010/07/22/1"
+    ],
+    "cvename": [
+      "CVE-2010-2542"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-07-20",
+    "entry": "2010-07-23"
+  }
+}

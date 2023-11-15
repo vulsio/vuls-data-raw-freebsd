@@ -1,0 +1,49 @@
+{
+  "vid": "b31a1088-460f-11de-a11a-0022156e8794",
+  "topic": "GnuTLS -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gnutls"
+      ],
+      "range": [
+        {
+          "lt": "2.6.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gnutls-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.7.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/34783/discuss\">\n\t  <p>GnuTLS is prone to multiple remote vulnerabilities:</p>\n\t    <ul>\n\t    <li>A remote code-execution vulnerability.</li>\n\t    <li>A denial-of-service vulnerability.</li>\n\t    <li>A signature-generation vulnerability.</li>\n\t    <li>A signature-verification vulnerability.</li>\n\t    </ul>\n\t  <p>An attacker can exploit these issues to potentially execute\n\t    arbitrary code, trigger denial-of-service conditions, carry\n\t    out attacks against data signed with weak signatures, and\n\t    cause clients to accept expired or invalid certificates from\n\t    servers.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://article.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/3515",
+      "http://article.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/3516",
+      "http://article.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/3517"
+    ],
+    "cvename": [
+      "CVE-2009-1415",
+      "CVE-2009-1416",
+      "CVE-2009-1417"
+    ],
+    "bid": [
+      "34783"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-05-21",
+    "entry": "2009-08-17"
+  }
+}

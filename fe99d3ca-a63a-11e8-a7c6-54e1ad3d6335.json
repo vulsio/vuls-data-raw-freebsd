@@ -1,0 +1,34 @@
+{
+  "vid": "fe99d3ca-a63a-11e8-a7c6-54e1ad3d6335",
+  "topic": "libX11 -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libX11"
+      ],
+      "range": [
+        {
+          "lt": "1.6.6,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The freedesktop.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2018-August/002915.html\">\n\t  <p>The functions XGetFontPath, XListExtensions, and XListFonts are\n\t    vulnerable to an off-by-one override on malicious server responses.\n\t    The server replies consist of chunks consisting of a length byte\n\t    followed by actual string, which is not NUL-terminated.\n\t    While parsing the response, the length byte is overridden with '\\0',\n\t    thus the memory area can be used as storage of C strings later on.\n\t    To be able to NUL-terminate the last string, the buffer is reserved\n\t    with an additional byte of space. For a boundary check, the variable\n\t    chend (end of ch) was introduced, pointing at the end of the buffer\n\t    which ch initially points to. Unfortunately there is a difference\n\t    in handling \"the end of ch\". While chend points at the first byte\n\t    that must not be written to, the for-loop uses chend as the last\n\t    byte that can be written to. Therefore, an off-by-one can occur.</p>\n\t  <p>The length value is interpreted as signed char on many systems\n\t    (depending on default signedness of char), which can lead to an out\n\t    of boundary write up to 128 bytes in front of the allocated storage,\n\t    but limited to NUL byte(s).</p>\n\t  <p>If the server sends a reply in which even the first string would\n\t    overflow the transmitted bytes, list[0] (or flist[0]) will be set to\n\t    NULL and a count of 0 is returned. If the resulting list is freed\n\t    with XFreeExtensionList or XFreeFontPath later on, the first Xfree\n\t    call is turned into Xfree (NULL-1) which will most likely trigger a\n\t    segmentation fault. Casting the length value to unsigned char fixes\n\t    the problem and allows string values with up to 255 characters.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.x.org/archives/xorg-announce/2018-August/002915.html"
+    ],
+    "cvename": [
+      "CVE-2018-14598",
+      "CVE-2018-14599",
+      "CVE-2018-14600"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-21",
+    "entry": "2018-08-22"
+  }
+}

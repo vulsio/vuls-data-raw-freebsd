@@ -1,0 +1,33 @@
+{
+  "vid": "71b24d99-c60b-11e5-bf36-6805ca0b3d42",
+  "topic": "phpmyadmin -- Unsafe comparison of XSRF/CSRF token",
+  "affects": [
+    {
+      "name": [
+        "phpmyadmin"
+      ],
+      "range": [
+        {
+          "lt": "4.5.4",
+          "ge": "4.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-5/\">\n\t  <p>The comparison of the XSRF/CSRF token parameter with the\n\t    value saved in the session is vulnerable to timing\n\t    attacks. Moreover, the comparison could be bypassed if the\n\t    XSRF/CSRF token matches a particular pattern.</p>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.phpmyadmin.net/security/PMASA-2016-5/"
+    ],
+    "cvename": [
+      "CVE-2016-2041"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-28",
+    "entry": "2016-01-28"
+  }
+}

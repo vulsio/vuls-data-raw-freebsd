@@ -1,0 +1,32 @@
+{
+  "vid": "4d763c65-9246-11ec-9aa3-4ccc6adda413",
+  "topic": "libmysoft -- Heap-based buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libmysofa"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Zhengjie Du reports:</p>\n\t<blockquote cite=\"https://huntr.dev/bounties/7ca8d9ea-e2a6-4294-af28-70260bb53bc1/\">\n\t  <p>There are some heap-buffer-overflows in mysofa2json of\n\t    libmysofa. They are in function loudness, mysofa_check and\n\t    readOHDRHeaderMessageDataLayout.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.huntr.dev/bounties/7ca8d9ea-e2a6-4294-af28-70260bb53bc1/"
+    ],
+    "cvename": [
+      "CVE-2021-3756"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-09-27",
+    "entry": "2022-02-20"
+  }
+}

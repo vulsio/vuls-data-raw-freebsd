@@ -1,0 +1,63 @@
+{
+  "vid": "60de13d5-95f0-11e1-806a-001143cd36d8",
+  "topic": "php -- vulnerability in certain CGI-based setups",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.4.2",
+          "gt": "5.4"
+        },
+        {
+          "lt": "5.3.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php53"
+      ],
+      "range": [
+        {
+          "lt": "5.3.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php4"
+      ],
+      "range": [
+        {
+          "lt": "4.4.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php52"
+      ],
+      "range": [
+        {
+          "lt": "5.2.17_8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>php development team reports:</p>\n\t<blockquote cite=\"http://www.php.net/archive/2012.php#id2012-05-03-1\">\n\t  <p>Security Enhancements and Fixes in PHP 5.3.12:</p>\n\t  <ul>\n\t    <li>Initial fix for cgi-bin ?-s cmdarg parse issue\n\t      (CVE-2012-1823)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-1823"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-05-03",
+    "entry": "2012-05-05"
+  }
+}

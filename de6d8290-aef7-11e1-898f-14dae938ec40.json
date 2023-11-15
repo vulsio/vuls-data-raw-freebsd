@@ -1,0 +1,33 @@
+{
+  "vid": "de6d8290-aef7-11e1-898f-14dae938ec40",
+  "topic": "mail/sympa* -- Multiple vulnerabilities in Sympa archive management",
+  "affects": [
+    {
+      "name": [
+        "sympa"
+      ],
+      "range": [
+        {
+          "lt": "6.0.7"
+        },
+        {
+          "lt": "6.1.11",
+          "gt": "6.1.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>David Verdin reports:</p>\n\t<blockquote cite=\"http://www.sympa.org/security_advisories#security_breaches_in_archives_management\">\n\t  <p>Multiple vulnerabilities have been discovered in Sympa archive\n\t    management that allow to skip the scenario-based authorization\n\t    mechanisms.</p>\n\t  <p>This vulnerability allows the attacker to:</p>\n\t  <ul>\n\t    <li>display the archives management page ('arc_manage')</li>\n\t    <li>download the list's archives</li>\n\t    <li>delete the list's archives</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.sympa.org/security_advisories#security_breaches_in_archives_management"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-05-15",
+    "entry": "2012-06-05"
+  }
+}

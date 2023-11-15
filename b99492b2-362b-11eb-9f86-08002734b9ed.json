@@ -1,0 +1,32 @@
+{
+  "vid": "b99492b2-362b-11eb-9f86-08002734b9ed",
+  "topic": "gitea -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.13.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea Team reports for release 1.13.0:</p>\n\t<blockquote cite=\"https://blog.gitea.io/2020/12/gitea-1.13.0-is-released/\">\n\t  <ul>\n\t    <li>Add Allow-/Block-List for Migrate and Mirrors</li>\n\t    <li>Prevent git operations for inactive users</li>\n\t    <li>Disallow urlencoded new lines in git protocol paths if there is a port</li>\n\t    <li>Mitigate Security vulnerability in the git hook feature</li>\n\t    <li>Disable DSA ssh keys by default </li>\n\t    <li>Set TLS minimum version to 1.2</li>\n\t    <li>Use argon as default password hash algorithm</li>\n\t    <li>Escape failed highlighted files</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/go-gitea/gitea/releases/tag/v1.13.0"
+    ],
+    "freebsd_pr": [
+      "ports/251577"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-12-01",
+    "entry": "2020-12-04"
+  }
+}

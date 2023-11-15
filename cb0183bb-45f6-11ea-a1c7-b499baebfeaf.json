@@ -1,0 +1,138 @@
+{
+  "vid": "cb0183bb-45f6-11ea-a1c7-b499baebfeaf",
+  "topic": "MariaDB -- Vulnerability in C API",
+  "affects": [
+    {
+      "name": [
+        "mariadb55-client"
+      ],
+      "range": [
+        {
+          "lt": "5.5.67"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb55-server"
+      ],
+      "range": [
+        {
+          "lt": "5.5.67"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb101-client"
+      ],
+      "range": [
+        {
+          "lt": "10.1.44"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb101-server"
+      ],
+      "range": [
+        {
+          "lt": "10.1.44"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb102-client"
+      ],
+      "range": [
+        {
+          "lt": "10.2.31"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb102-server"
+      ],
+      "range": [
+        {
+          "lt": "10.2.31"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb103-client"
+      ],
+      "range": [
+        {
+          "lt": "10.3.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb103-server"
+      ],
+      "range": [
+        {
+          "lt": "10.3.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb104-client"
+      ],
+      "range": [
+        {
+          "lt": "10.4.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb104-server"
+      ],
+      "range": [
+        {
+          "lt": "10.4.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mariadb-connector-c"
+      ],
+      "range": [
+        {
+          "lt": "3.1.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MariaDB reports:</p>\n\t<blockquote cite=\"https://mariadb.com/kb/en/security/\">\n\t  <p>Difficult to exploit vulnerability allows unauthenticated attacker\n\t    with network access via multiple protocols to compromise MySQL Client.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://mariadb.com/kb/en/security/",
+      "https://mariadb.com/kb/en/mdb-5567-rn/",
+      "https://mariadb.com/kb/en/mdb-10412-rn/",
+      "https://mariadb.com/kb/en/mdb-10322-rn/",
+      "https://mariadb.com/kb/en/mdb-10231-rn/",
+      "https://mariadb.com/kb/en/mdb-10144-rn/",
+      "https://mariadb.com/kb/en/mariadb-connector-c-317-release-notes/"
+    ],
+    "cvename": [
+      "CVE-2020-2574"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-28",
+    "entry": "2020-02-02"
+  }
+}

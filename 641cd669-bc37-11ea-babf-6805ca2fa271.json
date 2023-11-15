@@ -1,0 +1,41 @@
+{
+  "vid": "641cd669-bc37-11ea-babf-6805ca2fa271",
+  "topic": "powerdns-recursor -- access restriction bypass",
+  "affects": [
+    {
+      "name": [
+        "powerdns-recursor"
+      ],
+      "range": [
+        {
+          "lt": "4.3.2",
+          "ge": "4.3.0"
+        },
+        {
+          "lt": "4.2.3",
+          "ge": "4.2.0"
+        },
+        {
+          "lt": "4.1.17",
+          "ge": "4.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PowerDNS Team reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/recursor/changelog/4.3.html#change-4.3.2\">\n\t  <p>CVE-2020-14196: An issue has been found in PowerDNS Recursor where the ACL applied to the internal\n\t     web server via webserver-allow-from is not properly enforced, allowing a remote attacker to send\n\t     HTTP queries to the internal web server, bypassing the restriction.\n\n\t     In the default configuration the API webserver is not enabled. Only installations using a\n\t     non-default value for webserver and webserver-address are affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://doc.powerdns.com/recursor/security-advisories/index.html"
+    ],
+    "cvename": [
+      "CVE-2020-14196"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-01",
+    "entry": "2020-07-02"
+  }
+}

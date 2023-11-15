@@ -1,0 +1,32 @@
+{
+  "vid": "dec6b8e9-c9fe-11ed-bb39-901b0e9408dc",
+  "topic": "dino -- Insufficient message sender validation in Dino",
+  "affects": [
+    {
+      "name": [
+        "dino"
+      ],
+      "range": [
+        {
+          "lt": "0.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dino team reports:</p>\n\t<blockquote cite=\"https://dino.im/security/cve-2023-28686/\">\n\t  <p>Dino before 0.2.3, 0.3.x before 0.3.2, and 0.4.x before 0.4.2 allows\n\tattackers to modify the personal bookmark store via a crafted\n\tmessage.  The attacker can change the display of group chats or\n\tforce a victim to join a group chat; the victim may then be tricked\n\tinto disclosing sensitive information.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://dino.im/security/cve-2023-28686/"
+    ],
+    "cvename": [
+      "CVE-2023-28686"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-23",
+    "entry": "2023-03-24"
+  }
+}

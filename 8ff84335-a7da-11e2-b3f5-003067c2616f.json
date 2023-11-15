@@ -1,0 +1,35 @@
+{
+  "vid": "8ff84335-a7da-11e2-b3f5-003067c2616f",
+  "topic": "jasper -- buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "jasper"
+      ],
+      "range": [
+        {
+          "lt": "1.900.1_12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Fedora reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/887409\">\n\t  <p>JasPer fails to properly decode marker segments and other\n\t    sections in malformed JPEG2000 files. Malformed inputs can\n\t    cause heap buffer overflows which in turn may result in\n\t    execution of attacker-controlled code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kb.cert.org/vuls/id/887409"
+    ],
+    "cvename": [
+      "CVE-2008-3520",
+      "CVE-2008-3522",
+      "CVE-2011-4516",
+      "CVE-2011-4517"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-12-09",
+    "entry": "2013-04-18"
+  }
+}

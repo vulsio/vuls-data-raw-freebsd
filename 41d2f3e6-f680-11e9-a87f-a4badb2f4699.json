@@ -1,0 +1,41 @@
+{
+  "vid": "41d2f3e6-f680-11e9-a87f-a4badb2f4699",
+  "topic": "FreeBSD -- ICMPv6 / MLDv2 out-of-bounds memory access",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.0_9",
+          "ge": "12.0"
+        },
+        {
+          "lt": "11.3_2",
+          "ge": "11.3"
+        },
+        {
+          "lt": "11.2_13",
+          "ge": "11.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The ICMPv6 input path incorrectly handles cases where\n\tan MLDv2 listener query packet is internally fragmented\n\tacross multiple mbufs.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker may be able to cause an out-of-bounds\n\tread or write that may cause the kernel to attempt to access\n\tan unmapped page and subsequently panic.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-5608"
+    ],
+    "freebsd_sa": [
+      "SA-19:19.mldv2"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-08-06",
+    "entry": "2019-10-24"
+  }
+}

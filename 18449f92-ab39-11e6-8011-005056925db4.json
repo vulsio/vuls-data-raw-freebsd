@@ -1,0 +1,40 @@
+{
+  "vid": "18449f92-ab39-11e6-8011-005056925db4",
+  "topic": "libwww -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libwww"
+      ],
+      "range": [
+        {
+          "lt": "5.4.0_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3183\">\n\t <p>The HTBoundary_put_block function in HTBound.c for W3C libwww\n\t   (w3c-libwww) allows remote servers to cause a denial of service\n\t   (segmentation fault) via a crafted multipart/byteranges MIME message\n\t   that triggers an out-of-bounds read.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3560\">\n\t <p>The big2_toUtf8 function in lib/xmltok.c in libexpat in Expat 2.0.1,\n\t   as used in the XML-Twig module for Perl, allows context-dependent\n\t   attackers to cause a denial of service (application crash) via an XML\n\t   document with malformed UTF-8 sequences that trigger a buffer\n\t   over-read, related to the doProlog function in lib/xmlparse.c, a\n\t   different vulnerability than CVE-2009-2625 and CVE-2009-3720.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3720\">\n\t <p>The updatePosition function in lib/xmltok_impl.c in libexpat in\n\t   Expat 2.0.1, as used in Python, PyXML, w3c-libwww, and other\n\t   software, allows context-dependent attackers to cause a denial of\n\t   service (application crash) via an XML document with crafted UTF-8\n\t   sequences that trigger a buffer over-read, a different vulnerability\n\t   than CVE-2009-2625.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=170518"
+    ],
+    "cvename": [
+      "CVE-2005-3183",
+      "CVE-2009-3560",
+      "CVE-2009-3720"
+    ],
+    "freebsd_pr": [
+      "ports/214546"
+    ],
+    "bid": [
+      "15035"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-12",
+    "entry": "2016-11-29"
+  }
+}

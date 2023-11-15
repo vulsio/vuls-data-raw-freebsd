@@ -1,0 +1,35 @@
+{
+  "vid": "ae9fb0d7-c4dc-11da-b2fb-000e0c2e438a",
+  "topic": "netpbm -- buffer overflow in pnmtopng",
+  "affects": [
+    {
+      "name": [
+        "netpbm"
+      ],
+      "range": [
+        {
+          "lt": "10.26"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ubuntu reports:</p>\n\t<blockquote cite=\"http://www.ubuntulinux.org/support/documentation/usn/usn-210-1\">\n\t  <p>A buffer overflow was found in the \"pnmtopng\" conversion\n\t    program.  By tricking an user (or automated system) to\n\t    process a specially crafted PNM image with pnmtopng, this\n\t    could be exploited to execute arbitrary code with the\n\t    privileges of the user running pnmtopng.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ubuntulinux.org/support/documentation/usn/usn-210-1"
+    ],
+    "cvename": [
+      "CAN-2005-2978"
+    ],
+    "bid": [
+      "15128"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-18",
+    "entry": "2006-04-05"
+  }
+}

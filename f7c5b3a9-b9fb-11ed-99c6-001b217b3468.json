@@ -1,0 +1,51 @@
+{
+  "vid": "f7c5b3a9-b9fb-11ed-99c6-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "15.9.2",
+          "ge": "15.9.0"
+        },
+        {
+          "lt": "15.8.4",
+          "ge": "15.8.0"
+        },
+        {
+          "lt": "15.7.8",
+          "ge": "9.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2023/03/02/security-release-gitlab-15-9-2-released/\">\n\t  <p>Stored XSS via Kroki diagram</p>\n\t  <p>Prometheus integration Google IAP details are not hidden, may leak account details from instance/group/project settings</p>\n\t  <p>Improper validation of SSO and SCIM tokens while managing groups</p>\n\t  <p>Maintainer can leak Datadog API key by changing Datadog site</p>\n\t  <p>Clipboard based XSS in the title field of work items</p>\n\t  <p>Improper user right checks for personal snippets</p>\n\t  <p>Release Description visible in public projects despite release set as project members only</p>\n\t  <p>Group integration settings sensitive information exposed to project maintainers</p>\n\t  <p>Improve pagination limits for commits</p>\n\t  <p>Gitlab Open Redirect Vulnerability</p>\n\t  <p>Maintainer may become an Owner of a project</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2023/03/02/security-release-gitlab-15-9-2-released/"
+    ],
+    "cvename": [
+      "CVE-2023-0050",
+      "CVE-2022-4289",
+      "CVE-2022-4331",
+      "CVE-2023-0483",
+      "CVE-2022-4007",
+      "CVE-2022-3758",
+      "CVE-2023-0223",
+      "CVE-2022-4462",
+      "CVE-2023-1072",
+      "CVE-2022-3381",
+      "CVE-2023-1084"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-02",
+    "entry": "2023-03-03"
+  }
+}

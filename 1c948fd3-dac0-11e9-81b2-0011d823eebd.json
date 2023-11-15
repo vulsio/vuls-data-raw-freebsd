@@ -1,0 +1,29 @@
+{
+  "vid": "1c948fd3-dac0-11e9-81b2-0011d823eebd",
+  "topic": "Mbed TLS -- Side channel attack on deterministic ECDSA",
+  "affects": [
+    {
+      "name": [
+        "mbedtls"
+      ],
+      "range": [
+        {
+          "lt": "2.16.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Janos Follath reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2019-10\">\n\t  <p>Mbed TLS does not have a constant-time/constant-trace arithmetic\n\t    library and uses blinding to protect against side channel\n\t    attacks.</p>\n\t  <p>In the ECDSA signature routine previous Mbed TLS versions used the\n\t    same RNG object for generating the ephemeral key pair and for\n\t    generating the blinding values. The deterministic ECDSA function\n\t    reused this by passing the RNG object created from the private key\n\t    and the message to be signed as prescribed by RFC 6979. This meant\n\t    that the same RNG object was used whenever the same message was\n\t    signed, rendering the blinding ineffective.</p>\n\t  <p>If the victim can be tricked to sign the same message repeatedly,\n\t    the private key may be recoverable through side channels.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2019-10"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-09-06",
+    "entry": "2019-09-19"
+  }
+}

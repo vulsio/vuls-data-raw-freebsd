@@ -1,0 +1,36 @@
+{
+  "vid": "6d68618a-7199-11db-a2ad-000c6ec775d9",
+  "topic": "bugzilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "bugzilla",
+        "ja-bugzilla"
+      ],
+      "range": [
+        {
+          "lt": "2.22.1",
+          "gt": "2.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/2.18.5/\">\n\t  <ul>\n\t    <li>Sometimes the information put into the &lt;h1&gt; and\n\t      &lt;h2&gt; tags in Bugzilla was not properly escaped,\n\t      leading to a possible XSS vulnerability.</li>\n\t    <li>Bugzilla administrators were allowed to put raw,\n\t      unfiltered HTML into many fields in Bugzilla, leading to\n\t      a possible XSS vulnerability.  Now, the HTML allowed in\n\t      those fields is limited.</li>\n\t    <li>attachment.cgi could leak the names of private\n\t      attachments</li>\n\t    <li>The \"deadline\" field was visible in the XML format of\n\t      a bug, even to users who were not a member of the\n\t      \"timetrackinggroup.\"</li>\n\t    <li>A malicious user could pass a URL to an admin, and\n\t      make the admin delete or change something that he had\n\t      not intended to delete or change.</li>\n\t    <li>It is possible to inject arbitrary HTML into the\n\t      showdependencygraph.cgi page, allowing for a cross-site\n\t      scripting attack.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.bugzilla.org/security/2.18.5/"
+    ],
+    "cvename": [
+      "CVE-2006-5453",
+      "CVE-2006-5454",
+      "CVE-2006-5455"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-10-15",
+    "entry": "2006-11-11"
+  }
+}

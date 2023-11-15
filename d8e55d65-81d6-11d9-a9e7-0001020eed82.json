@@ -1,0 +1,36 @@
+{
+  "vid": "d8e55d65-81d6-11d9-a9e7-0001020eed82",
+  "topic": "opera -- kfmclient exec command execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "opera-devel",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "7.54.20050131"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Giovanni Delvecchio reports:</p>\n\t<blockquote cite=\"http://www.zone-h.org/advisories/read/id=6503\">\n\t  <p>Opera for linux uses \"kfmclient exec\" as \"Default\n\t    Application\" to handle saved files.  This could be used by\n\t    malicious remote users to execute arbitrary shell commands\n\t    on a target system.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/13447/",
+      "http://www.opera.com/freebsd/changelogs/754u2/",
+      "http://www.zone-h.org/advisories/read/id=6503"
+    ],
+    "cvename": [
+      "CVE-2004-1491"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-12",
+    "entry": "2005-02-18"
+  }
+}

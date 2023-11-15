@@ -1,0 +1,29 @@
+{
+  "vid": "19d648e0-ab69-11e9-bfef-000ffec0b3e1",
+  "topic": "drupal -- Drupal core - Access bypass",
+  "affects": [
+    {
+      "name": [
+        "drupal8"
+      ],
+      "range": [
+        {
+          "lt": "8.7.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/SA-CORE-2019-008\">\n\t  <p>In Drupal 8.7.4, when the experimental Workspaces module is enabled,\n\t    an access bypass condition is created.</p>\n\t  <p>This can be mitigated by disabling the Workspaces module. It does\n\t    not affect any release other than Drupal 8.7.4.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.drupal.org/SA-CORE-2019-008"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-07-17",
+    "entry": "2019-07-21"
+  }
+}

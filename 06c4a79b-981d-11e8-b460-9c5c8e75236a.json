@@ -1,0 +1,32 @@
+{
+  "vid": "06c4a79b-981d-11e8-b460-9c5c8e75236a",
+  "topic": "cgit -- directory traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "cgit"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jann Horn reports:</p>\n\t<blockquote cite=\"https://lists.zx2c4.com/pipermail/cgit/2018-August/004176.html\">\n\t  <p>cgit_clone_objects in CGit before 1.2.1 has a directory traversal vulnerability when `enable-http-clone=1` is not turned off, as demonstrated by a cgit/cgit.cgi/git/objects/?path=../ request.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.zx2c4.com/pipermail/cgit/2018-August/004176.html"
+    ],
+    "cvename": [
+      "CVE-2018-14912"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-03",
+    "entry": "2018-08-04"
+  }
+}

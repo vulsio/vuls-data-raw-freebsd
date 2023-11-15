@@ -1,0 +1,37 @@
+{
+  "vid": "8aa6340d-e7c6-41e0-b2a3-3c9e9930312a",
+  "topic": "py39-redis -- can send response data to the client of an unrelated request",
+  "affects": [
+    {
+      "name": [
+        "py39-redis"
+      ],
+      "range": [
+        {
+          "lt": "4.4.4",
+          "ge": "4.4.0"
+        },
+        {
+          "lt": "4.5.4",
+          "ge": "4.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>drago-balto reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-8fww-64cx-x8p5\">\n      <p>redis-py through 4.5.3 and 4.4.3 leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a non-pipeline operation), and can send response data to the client of an unrelated request.</p>\n      <p>NOTE: this issue exists because of an incomplete fix for CVE-2023-28858.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/GHSA-8fww-64cx-x8p5"
+    ],
+    "cvename": [
+      "CVE-2023-28859"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-26",
+    "entry": "2023-04-09"
+  }
+}

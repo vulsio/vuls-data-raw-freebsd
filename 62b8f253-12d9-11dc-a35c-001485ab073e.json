@@ -1,0 +1,38 @@
+{
+  "vid": "62b8f253-12d9-11dc-a35c-001485ab073e",
+  "topic": "typo3 -- email header injection",
+  "affects": [
+    {
+      "name": [
+        "typo3"
+      ],
+      "range": [
+        {
+          "lt": "4.0.5",
+          "gt": "3.0"
+        },
+        {
+          "lt": "4.1.1",
+          "gt": "4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Olivier Dobberkau, Andreas Otto, and Thorsten Kahler report:</p>\n\t<blockquote cite=\"http://typo3.org/teams/security/security-bulletins/typo3-20070221-1/\">\n\t  <p>An unspecified error in the internal form engine can be used for\n\t    sending arbitrary mail headers, using it for purposes which it\n\t    is not meant for, e.g. sending spam messages.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/24207/",
+      "http://typo3.org/teams/security/security-bulletins/typo3-20070221-1/"
+    ],
+    "cvename": [
+      "CVE-2007-1081"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-02-21",
+    "entry": "2007-06-04"
+  }
+}

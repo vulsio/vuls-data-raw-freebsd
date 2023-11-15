@@ -1,0 +1,33 @@
+{
+  "vid": "4364e1f1-0f44-11e4-b090-20cf30e32f6d",
+  "topic": "apache24 -- several vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://svn.apache.org/viewvc/httpd/httpd/branches/2.4.x/CHANGES?view=markup&amp;pathrev=1610737\">\n\t  <p>mod_proxy: Fix crash in Connection header handling which allowed a\n\t    denial of service attack against a reverse proxy with a threaded MPM.</p>\n\t  <p>Fix a race condition in scoreboard handling, which could lead to a\n\t    heap buffer overflow.</p>\n\t  <p>mod_deflate: The DEFLATE input filter (inflates request bodies) now\n\t    limits the length and compression ratio of inflated request bodies to avoid\n\t    denial of sevice via highly compressed bodies.  See directives\n\t    DeflateInflateLimitRequestBody, DeflateInflateRatioLimit,\n\t    and DeflateInflateRatioBurst.</p>\n\t  <p>mod_cgid: Fix a denial of service against CGI scripts that do\n\t    not consume stdin that could lead to lingering HTTPD child processes\n\t    filling up the scoreboard and eventually hanging the server.  By\n\t    default, the client I/O timeout (Timeout directive) now applies to\n\t    communication with scripts.  The CGIDScriptTimeout directive can be\n\t    used to set a different timeout for communication with scripts.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-0117",
+      "CVE-2014-3523",
+      "CVE-2014-0226",
+      "CVE-2014-0118",
+      "CVE-2014-0231"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-07-15",
+    "entry": "2014-07-19"
+  }
+}

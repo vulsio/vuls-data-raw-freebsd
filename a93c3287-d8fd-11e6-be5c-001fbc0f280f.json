@@ -1,0 +1,34 @@
+{
+  "vid": "a93c3287-d8fd-11e6-be5c-001fbc0f280f",
+  "topic": "Ansible -- Command execution on Ansible controller from host",
+  "affects": [
+    {
+      "name": [
+        "ansible"
+      ],
+      "range": [
+        {
+          "lt": "2.2.0.0_2",
+          "gt": "1.9.6_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Computest reports:</p>\n\t<blockquote cite=\"https://www.computest.nl/advisories/CT-2017-0109_Ansible.txt\">\n\t  <p>Computest found and exploited several issues\n\t    that allow a compromised host to execute commands\n\t    on the Ansible controller and thus gain access\n\t    to other hosts controlled by that controller.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.computest.nl/advisories/CT-2017-0109_Ansible.txt",
+      "https://lwn.net/Articles/711357/"
+    ],
+    "cvename": [
+      "CVE-2016-9587"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-01-09",
+    "entry": "2017-01-12"
+  }
+}

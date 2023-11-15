@@ -1,0 +1,69 @@
+{
+  "vid": "9fa7b139-c1e9-409e-bed0-006aadcf5845",
+  "topic": "xorg-server -- Multiple security issues in X server extensions",
+  "affects": [
+    {
+      "name": [
+        "xorg-server",
+        "xephyr",
+        "xorg-vfbserver"
+      ],
+      "range": [
+        {
+          "lt": "21.1.5,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xorg-nestserver"
+      ],
+      "range": [
+        {
+          "lt": "21.1.5,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xwayland"
+      ],
+      "range": [
+        {
+          "lt": "22.1.6,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xwayland-devel"
+      ],
+      "range": [
+        {
+          "lt": "21.0.99.1.319"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2022-December/003302.html\">\n\t  <ul>\n\t    <li>CVE-2022-46340/ZDI-CAN-19265: X.Org Server XTestSwapFakeInput stack\n\t    overflow\n\n\t    <p>The swap handler for the XTestFakeInput request of the XTest extension\n\t    may corrupt the stack if GenericEvents with lengths larger than 32 bytes\n\t    are sent through a the XTestFakeInput request.</p>\n\n\t    <p>This issue does not affect systems where client and server use the same\n\t    byte order.</p></li>\n\n\t    <li>CVE-2022-46341/ZDI-CAN-19381: X.Org Server XIPassiveUngrab\n\t    out-of-bounds access\n\n\t    <p>The handler for the XIPassiveUngrab request accesses out-of-bounds\n\t    memory when invoked with a high keycode or button code.</p></li>\n\n\t    <li>CVE-2022-46342/ZDI-CAN-19400: X.Org Server XvdiSelectVideoNotify\n\t    use-after-free\n\n\t    <p>The handler for the XvdiSelectVideoNotify request may write to memory\n\t    after it has been freed.</p></li>\n\n\t    <li>CVE-2022-46343/ZDI-CAN-19404: X.Org Server ScreenSaverSetAttributes\n\t    use-after-free\n\n\t    <p>The handler for the ScreenSaverSetAttributes request may write to memory\n\t    after it has been freed.</p></li>\n\n\t    <li>CVE-2022-46344/ZDI-CAN-19405: X.Org Server XIChangeProperty\n\t    out-of-bounds access\n\n\t    <p>The handler for the XIChangeProperty request has a length-validation\n\t    issues, resulting in out-of-bounds memory reads and potential\n\t    information disclosure.</p></li>\n\n\t    <li>CVE-2022-4283/ZDI-CAN-19530: X.Org Server XkbGetKbdByName use-after-free\n\n\t    <p>The XkbCopyNames function left a dangling pointer to freed memory,\n\t    resulting in out-of-bounds memory access on subsequent XkbGetKbdByName\n\t    requests.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.x.org/archives/xorg-announce/2022-December/003302.html"
+    ],
+    "cvename": [
+      "CVE-2022-46340",
+      "CVE-2022-46341",
+      "CVE-2022-46342",
+      "CVE-2022-46343",
+      "CVE-2022-46344",
+      "CVE-2022-4283"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-12-14",
+    "entry": "2023-01-11"
+  }
+}

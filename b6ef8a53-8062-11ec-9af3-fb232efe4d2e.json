@@ -1,0 +1,35 @@
+{
+  "vid": "b6ef8a53-8062-11ec-9af3-fb232efe4d2e",
+  "topic": "OpenEXR -- Heap-buffer-overflow in Imf_3_1::LineCompositeTask::execute",
+  "affects": [
+    {
+      "name": [
+        "openexr"
+      ],
+      "range": [
+        {
+          "lt": "3.1.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cary Phillips reports:</p>\n\t<blockquote cite=\"https://github.com/AcademySoftwareFoundation/openexr/blob/v3.1.4/CHANGES.md#version-314-january-26-2022\">\n\t  <p>[OpenEXR Version 3.1.4 is a] patch release that [...]\n\t    addresses one public security vulnerability:\n\t    CVE-2021-45942 Heap-buffer-overflow in\n\t    Imf_3_1::LineCompositeTask::execute [and several]\n\t    specific OSS-fuzz issues [...].</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/AcademySoftwareFoundation/openexr/blob/v3.1.4/CHANGES.md#version-314-january-26-2022",
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41416",
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41999",
+      "https://github.com/AcademySoftwareFoundation/openexr/pull/1209"
+    ],
+    "cvename": [
+      "CVE-2021-45942"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-11-26",
+    "entry": "2022-01-28"
+  }
+}

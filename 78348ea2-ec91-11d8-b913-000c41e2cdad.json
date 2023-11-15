@@ -1,0 +1,35 @@
+{
+  "vid": "78348ea2-ec91-11d8-b913-000c41e2cdad",
+  "topic": "acroread uudecoder input validation error",
+  "affects": [
+    {
+      "name": [
+        "acroread",
+        "acroread4",
+        "acroread5"
+      ],
+      "range": [
+        {
+          "lt": "5.0.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An iDEFENSE security advisory reports:</p>\n\t<blockquote cite=\"www.idefense.com/application/poi/display?id=124&amp;type=vulnerabilities\">\n\t  <p>Remote exploitation of an input validation error in the\n\t    uudecoding feature of Adobe Acrobat Reader (Unix) 5.0\n\t    allows an attacker to execute arbitrary code.</p>\n\t  <p>The Unix and Linux versions of Adobe Acrobat Reader 5.0\n\t    automatically attempt to convert uuencoded documents\n\t    back into their original format.  The vulnerability\n\t    specifically exists in the failure of Acrobat Reader to\n\t    check for the backtick shell metacharacter in the filename\n\t    before executing a command with a shell. This allows a\n\t    maliciously constructed filename to execute arbitrary\n\t    programs.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.idefense.com/application/poi/display?id=124&type=vulnerabilities"
+    ],
+    "cvename": [
+      "CVE-2004-0630"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-12",
+    "entry": "2004-08-12",
+    "modified": "2005-01-06"
+  }
+}

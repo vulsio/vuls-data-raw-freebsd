@@ -1,0 +1,41 @@
+{
+  "vid": "53b3474c-f680-11e9-a87f-a4badb2f4699",
+  "topic": "FreeBSD -- Reference count overflow in mqueue filesystem 32-bit compat",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.0_10",
+          "ge": "12.0"
+        },
+        {
+          "lt": "11.3_3",
+          "ge": "11.3"
+        },
+        {
+          "lt": "11.2_14",
+          "ge": "11.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>System calls operating on file descriptors obtain a\n\treference to relevant struct file which due to a programming\n\terror was not always put back, which in turn could be used\n\tto overflow the counter of affected struct file.</p>\n\t<h1>Impact:</h1>\n\t<p>A local user can use this flaw to obtain access to files,\n\tdirectories, sockets, etc., opened by processes owned by\n\tother users. If obtained struct file represents a directory\n\tfrom outside of user's jail, it can be used to access files\n\toutside of the jail. If the user in question is a jailed\n\troot they can obtain root privileges on the host system.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-5603"
+    ],
+    "freebsd_sa": [
+      "SA-19:24.mqueuefs"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-08-20",
+    "entry": "2019-10-24"
+  }
+}

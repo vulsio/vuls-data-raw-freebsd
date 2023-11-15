@@ -1,0 +1,32 @@
+{
+  "vid": "cc1fd3da-b8fd-4f4d-a092-c38541c0f993",
+  "topic": "vault -- User Enumeration via LDAP auth",
+  "affects": [
+    {
+      "name": [
+        "vault"
+      ],
+      "range": [
+        {
+          "lt": "1.6.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Vault developers report:</p>\n\t<blockquote cite=\"https://discuss.hashicorp.com/t/hcsec-2020-25-vault-s-ldap-auth-method-allows-user-enumeration/18984\">\n\t  <p>Vault allowed enumeration of users via the LDAP auth method. This vulnerability, was fixed in Vault 1.6.1 and 1.5.6.</p>\n\t  <p>An external party reported that they were able to enumerate LDAP users via error messages returned by Vault’s LDAP auth method</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://discuss.hashicorp.com/t/hcsec-2020-25-vault-s-ldap-auth-method-allows-user-enumeration/18984"
+    ],
+    "cvename": [
+      "CVE-2020-35177"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-12-16",
+    "entry": "2020-12-17"
+  }
+}

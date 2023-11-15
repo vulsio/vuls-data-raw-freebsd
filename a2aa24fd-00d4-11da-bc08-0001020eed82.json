@@ -1,0 +1,32 @@
+{
+  "vid": "a2aa24fd-00d4-11da-bc08-0001020eed82",
+  "topic": "opera -- download dialog spoofing vulnerability",
+  "affects": [
+    {
+      "name": [
+        "linux-opera",
+        "opera-devel",
+        "opera"
+      ],
+      "range": [
+        {
+          "lt": "8.02"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15870/\">\n\t  <p>Secunia Research has discovered a vulnerability in Opera,\n\t    which can be exploited by malicious people to trick users\n\t    into executing malicious files.</p>\n\t  <p>The vulnerability is caused due to an error in the\n\t    handling of extended ASCII codes in the download\n\t    dialog. This can be exploited to spoof the file extension\n\t    in the file download dialog via a specially crafted\n\t    \"Content-Disposition\" HTTP header.</p>\n\t  <p>Successful exploitation may result in users being tricked\n\t    into executing a malicious file via the download dialog,\n\t    but requires that the \"Arial Unicode MS\" font\n\t    (ARIALUNI.TTF) has been installed on the system.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/15870/",
+      "http://www.opera.com/freebsd/changelogs/802/"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-28",
+    "entry": "2005-07-30"
+  }
+}

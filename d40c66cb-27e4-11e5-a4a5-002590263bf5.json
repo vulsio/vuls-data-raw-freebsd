@@ -1,0 +1,42 @@
+{
+  "vid": "d40c66cb-27e4-11e5-a4a5-002590263bf5",
+  "topic": "xen-kernel and xen-tools -- Long latency MMIO mapping operations are not preemptible",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xen-tools"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-125.html\">\n\t  <p>The XEN_DOMCTL_memory_mapping hypercall allows long running\n\t    operations without implementing preemption.</p>\n\t  <p>This hypercall is used by the device model as part of the emulation\n\t    associated with configuration of PCI devices passed through to HVM\n\t    guests and is therefore indirectly exposed to those guests.</p>\n\t  <p>This can cause a physical CPU to become busy for a significant\n\t    period, leading to a host denial of service in some cases.</p>\n\t  <p>If a host denial of service is not triggered then it may instead be\n\t    possible to deny service to the domain running the device model,\n\t    e.g. domain 0.</p>\n\t  <p>This hypercall is also exposed more generally to all toolstacks.\n\t    However the uses of it in libxl based toolstacks are not believed\n\t    to open up any avenue of attack from an untrusted guest. Other\n\t    toolstacks may be vulnerable however.</p>\n\t  <p>The vulnerability is exposed via HVM guests which have a PCI device\n\t    assigned to them. A malicious HVM guest in such a configuration can\n\t    mount a denial of service attack affecting the whole system via its\n\t    associated device model (qemu-dm).</p>\n\t  <p>A guest is able to trigger this hypercall via operations which it\n\t    is legitimately expected to perform, therefore running the device\n\t    model as a stub domain does not offer protection against the host\n\t    denial of service issue. However it does offer some protection\n\t    against secondary issues such as denial of service against dom0.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-125.html"
+    ],
+    "cvename": [
+      "CVE-2015-2752"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-31",
+    "entry": "2015-07-11"
+  }
+}

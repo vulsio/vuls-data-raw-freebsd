@@ -1,0 +1,35 @@
+{
+  "vid": "1b61ecef-cdb9-11e6-a9a5-b499baebfeaf",
+  "topic": "PHP -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php70"
+      ],
+      "range": [
+        {
+          "lt": "7.0.14"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Check Point reports:</p>\n\t<blockquote cite=\"http://blog.checkpoint.com/2016/12/27/check-point-discovers-three-zero-day-vulnerabilities-web-programming-language-php-7/\">\n\t  <p>... discovered 3 fresh and previously unknown vulnerabilities\n\t    (CVE-2016-7479, CVE-2016-7480,  CVE-2016-7478) in the PHP 7\n\t    unserialize mechanism.</p>\n\t  <p>The first two vulnerabilities allow attackers to take full control\n\t    over servers, allowing them to do anything they want with the\n\t    website, from spreading malware to defacing it or stealing customer\n\t    data.</p>\n\t  <p>The last vulnerability generates a Denial of Service attack which\n\t    basically hangs the website, exhausts its memory consumption, and\n\t    shuts it down.</p>\n\t  <p>The PHP security team issued fixes for two of the vulnerabilities\n\t    on the 13th of October and 1st of December.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.checkpoint.com/2016/12/27/check-point-discovers-three-zero-day-vulnerabilities-web-programming-language-php-7/"
+    ],
+    "cvename": [
+      "CVE-2016-7478",
+      "CVE-2016-7479",
+      "CVE-2016-7480"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-12-27",
+    "entry": "2016-12-29",
+    "modified": "2017-01-04"
+  }
+}

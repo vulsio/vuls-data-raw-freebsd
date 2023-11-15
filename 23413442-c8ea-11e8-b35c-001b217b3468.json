@@ -1,0 +1,43 @@
+{
+  "vid": "23413442-c8ea-11e8-b35c-001b217b3468",
+  "topic": "Gitlab -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "11.3.4",
+          "ge": "11.3.0"
+        },
+        {
+          "lt": "11.2.5",
+          "ge": "11.2.0"
+        },
+        {
+          "lt": "11.1.8",
+          "ge": "10.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2018/10/05/critical-security-release-11-3-4/\">\n\t  <p>Merge request information disclosure</p>\n\t  <p>Private project namespace information disclosure</p>\n\t  <p>Gitlab Flavored Markdown API information disclosure</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2018/10/05/critical-security-release-11-3-4/"
+    ],
+    "cvename": [
+      "CVE-2018-17939",
+      "CVE-2018-17976",
+      "CVE-2018-17975"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-10-05",
+    "entry": "2018-10-05"
+  }
+}

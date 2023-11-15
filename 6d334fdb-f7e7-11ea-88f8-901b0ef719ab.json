@@ -1,0 +1,41 @@
+{
+  "vid": "6d334fdb-f7e7-11ea-88f8-901b0ef719ab",
+  "topic": "FreeBSD -- ftpd privilege escalation via ftpchroot feature",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "12.1_10",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.4_4",
+          "ge": "11.4"
+        },
+        {
+          "lt": "11.3_14",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A ftpd(8) bug in the implementation of the file system sandbox, combined\n\twith capabilities available to an authenticated FTP user, can be used to\n\tescape the file system restriction configured in ftpchroot(5).\n\tMoreover, the bug allows a malicious client to gain root privileges.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious FTP user can gain privileged access to an affected system.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-7468"
+    ],
+    "freebsd_sa": [
+      "SA-20:30.ftpd"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-09-15",
+    "entry": "2020-09-16"
+  }
+}

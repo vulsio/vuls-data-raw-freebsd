@@ -1,0 +1,32 @@
+{
+  "vid": "5238ac45-9d8c-11db-858b-0060084a00e5",
+  "topic": "fetchmail -- TLS enforcement problem/MITM attack/password exposure",
+  "affects": [
+    {
+      "name": [
+        "fetchmail"
+      ],
+      "range": [
+        {
+          "lt": "6.3.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2006-02.txt\">\n\t  <p>Fetchmail has had several longstanding password disclosure\n\t    vulnerabilities.</p>\n\t  <ul>\n\t    <li>sslcertck/sslfingerprint options should have implied\n\t      \"sslproto tls1\" in order to enforce TLS negotiation,\n\t      but did not.</li>\n\t    <li>Even with \"sslproto tls1\" in the config, fetches\n\t      would go ahead in plain text if STLS/STARTTLS wasn't available\n\t      (not advertised, or advertised but rejected).</li>\n\t    <li>POP3 fetches could completely ignore all TLS options\n\t      whether available or not because it didn't reliably issue\n\t      CAPA before checking for STLS support - but CAPA is a\n\t      requisite for STLS. Whether or not CAPAbilities were probed,\n\t      depended on the \"auth\" option. (Fetchmail only\n\t      tried CAPA if the auth option was not set at all, was set\n\t      to gssapi, kerberos, kerberos_v4, otp, or cram-md5.)</li>\n\t    <li>POP3 could fall back to using plain text passwords, even\n\t      if strong authentication had been configured.</li>\n\t    <li>POP2 would not complain if strong authentication or TLS\n\t      had been requested.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.fetchmail.info/fetchmail-SA-2006-02.txt"
+    ],
+    "cvename": [
+      "CVE-2006-5867"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-01-04",
+    "entry": "2007-01-06"
+  }
+}

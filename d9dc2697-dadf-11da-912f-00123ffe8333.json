@@ -1,0 +1,34 @@
+{
+  "vid": "d9dc2697-dadf-11da-912f-00123ffe8333",
+  "topic": "phpwebftp -- \"language\" Local File Inclusion",
+  "affects": [
+    {
+      "name": [
+        "phpwebftp"
+      ],
+      "range": [
+        {
+          "lt": "3.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19706/\">\n\t  <p>phpWebFTP have a vulnerability, which can be exploited by\n\t    malicious people to disclose sensitive information.</p>\n\t  <p>Input passed to the \"language\" parameter in index.php isn't\n\t    properly verified, before it is used to include files. This can be\n\t    exploited to include arbitrary files from local resources.</p>\n\t  <p>Successful exploitation requires that \"magic_quotes_gpc\" is\n\t    disabled.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://sourceforge.net/forum/forum.php?forum_id=566199",
+      "http://secunia.com/advisories/19706/"
+    ],
+    "cvename": [
+      "CVE-2006-1812",
+      "CVE-2006-1813"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-04-18",
+    "entry": "2006-05-03"
+  }
+}

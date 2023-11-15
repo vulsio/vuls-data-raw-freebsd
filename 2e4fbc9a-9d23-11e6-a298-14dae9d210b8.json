@@ -1,0 +1,33 @@
+{
+  "vid": "2e4fbc9a-9d23-11e6-a298-14dae9d210b8",
+  "topic": "sudo -- Potential bypass of sudo_noexec.so via wordexp()",
+  "affects": [
+    {
+      "name": [
+        "sudo"
+      ],
+      "range": [
+        {
+          "lt": "1.8.18p1",
+          "ge": "1.6.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Todd C. Miller reports:</p>\n\t<blockquote cite=\"https://www.sudo.ws/alerts/noexec_wordexp.html\">\n\t  <p>A flaw exists in sudo's noexec functionality that may allow\n\t    a user with sudo privileges to run additional commands even when the\n\t    NOEXEC tag has been applied to a command that uses the wordexp()\n\t    function.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.sudo.ws/alerts/noexec_wordexp.html"
+    ],
+    "cvename": [
+      "CVE-2016-7076"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-10-28",
+    "entry": "2016-10-28"
+  }
+}

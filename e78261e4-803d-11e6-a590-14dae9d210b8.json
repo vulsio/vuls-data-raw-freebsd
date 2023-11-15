@@ -1,0 +1,36 @@
+{
+  "vid": "e78261e4-803d-11e6-a590-14dae9d210b8",
+  "topic": "irssi -- heap corruption and missing boundary checks",
+  "affects": [
+    {
+      "name": [
+        "irssi",
+        "zh-irssi"
+      ],
+      "range": [
+        {
+          "lt": "0.8.20",
+          "ge": "0.8.17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2016.txt\">\n\t  <p>Remote crash and heap corruption. Remote code execution seems\n\t    difficult since only Nuls are written.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://irssi.org/security/irssi_sa_2016.txt"
+    ],
+    "cvename": [
+      "CVE-2016-7044",
+      "CVE-2016-7045"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-21",
+    "entry": "2016-09-21",
+    "modified": "2016-09-22"
+  }
+}

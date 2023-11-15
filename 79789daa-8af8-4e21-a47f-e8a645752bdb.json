@@ -1,0 +1,32 @@
+{
+  "vid": "79789daa-8af8-4e21-a47f-e8a645752bdb",
+  "topic": "ruby -- Object taint bypassing in DL and Fiddle in Ruby",
+  "affects": [
+    {
+      "name": [
+        "ruby19"
+      ],
+      "range": [
+        {
+          "lt": "1.9.3.429,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ruby Developers report:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2013/05/14/taint-bypass-dl-fiddle-cve-2013-2065/\">\n\t  <p>There is a vulnerability in DL and Fiddle in Ruby where tainted\n\t     strings can be used by system calls regardless of the $SAFE level\n\t     set in Ruby.\n\t  </p>\n\t  <p>Native functions exposed to Ruby with DL or Fiddle do not check the\n\t     taint values set on the objects passed in. This can result in\n\t     tainted objects being accepted as input when a SecurityError\n\t     exception should be raised.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ruby-lang.org/en/news/2013/05/14/taint-bypass-dl-fiddle-cve-2013-2065/"
+    ],
+    "cvename": [
+      "CVE-2013-2065"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-05-14",
+    "entry": "2013-05-26"
+  }
+}

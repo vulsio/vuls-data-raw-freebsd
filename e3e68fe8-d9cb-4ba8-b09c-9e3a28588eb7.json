@@ -1,0 +1,60 @@
+{
+  "vid": "e3e68fe8-d9cb-4ba8-b09c-9e3a28588eb7",
+  "topic": "firefox -- Heap buffer overflow rasterizing paths in SVG with Skia",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "60.0.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "waterfox"
+      ],
+      "range": [
+        {
+          "lt": "56.2.0.13_5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "52.8.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.49.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-14/\">\n\t  <p>A heap buffer overflow can occur in the Skia library when\n\t    rasterizing paths using a maliciously crafted SVG file\n\t    with anti-aliasing turned off. This results in a\n\t    potentially exploitable crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2018-14/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-06",
+    "entry": "2018-06-08"
+  }
+}

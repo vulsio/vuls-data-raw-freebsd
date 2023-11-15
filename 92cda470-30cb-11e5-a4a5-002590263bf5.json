@@ -1,0 +1,35 @@
+{
+  "vid": "92cda470-30cb-11e5-a4a5-002590263bf5",
+  "topic": "sox -- input sanitization errors",
+  "affects": [
+    {
+      "name": [
+        "sox"
+      ],
+      "range": [
+        {
+          "lt": "14.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2014-010.html\">\n\t  <p>The sox command line tool is affected by two heap-based buffer\n\t    overflows, respectively located in functions start_read() and\n\t    AdpcmReadBlock().</p>\n\t  <p>A specially crafted wav file can be used to trigger the\n\t    vulnerabilities.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ocert.org/advisories/ocert-2014-010.html"
+    ],
+    "cvename": [
+      "CVE-2014-8145"
+    ],
+    "bid": [
+      "71774"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-20",
+    "entry": "2015-07-23"
+  }
+}

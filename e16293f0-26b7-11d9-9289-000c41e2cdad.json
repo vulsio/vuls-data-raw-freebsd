@@ -1,0 +1,45 @@
+{
+  "vid": "e16293f0-26b7-11d9-9289-000c41e2cdad",
+  "topic": "gaim -- heap overflow exploitable by malicious GroupWise server",
+  "affects": [
+    {
+      "name": [
+        "gaim",
+        "ja-gaim",
+        "ko-gaim",
+        "ru-gaim"
+      ],
+      "range": [
+        {
+          "lt": "0.82"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gaim"
+      ],
+      "range": [
+        {
+          "gt": "20030000"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sean <q>infamous42md</q> reports that a malicious GroupWise\n\t  messaging server may be able to exploit a heap buffer\n\t  overflow in gaim, leading to arbitrary code execution.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://gaim.sourceforge.net/security/?id=2"
+    ],
+    "cvename": [
+      "CVE-2004-0754"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-26",
+    "entry": "2004-10-25"
+  }
+}

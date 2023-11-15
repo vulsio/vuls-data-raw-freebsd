@@ -1,0 +1,33 @@
+{
+  "vid": "e4848ca4-8820-11e5-ab94-002590263bf5",
+  "topic": "xen-kernel -- some pmu and profiling hypercalls log without rate limiting",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5.1_1",
+          "ge": "3.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-152.html\">\n\t  <p>HYPERCALL_xenoprof_op and HYPERVISOR_xenpmu_op log some errors and\n\t    attempts at invalid operations. These log messages are not\n\t    rate-limited, even though they can be triggered by guests.</p>\n\t  <p>A malicious guest could cause repeated logging to the hypervisor\n\t    console, leading to a Denial of Service attack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-152.html"
+    ],
+    "cvename": [
+      "CVE-2015-7971"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-29",
+    "entry": "2015-11-11"
+  }
+}

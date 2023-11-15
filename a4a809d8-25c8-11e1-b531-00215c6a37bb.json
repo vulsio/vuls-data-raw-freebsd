@@ -1,0 +1,48 @@
+{
+  "vid": "a4a809d8-25c8-11e1-b531-00215c6a37bb",
+  "topic": "opera -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "11.60"
+        }
+      ]
+    },
+    {
+      "name": [
+        "opera-devel"
+      ],
+      "range": [
+        {
+          "lt": "11.60,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Opera software reports:</p>\n\t<blockquote cite=\"http://www.opera.com/docs/changelogs/unix/1160/\">\n\t  <ul>\n\t    <li>Fixed a moderately severe issue; details will be\n\t      disclosed at a later date</li>\n\t    <li>Fixed an issue that could allow pages to set cookies\n\t      or communicate cross-site for some top level domains;\n\t      see our <a href=\"http://www.opera.com/support/kb/view/1003/\">advisory</a></li>\n\t    <li>Improved handling of certificate revocation corner\n\t      cases</li>\n\t    <li>Added a fix for a weakness in the SSL v3.0 and TLS 1.0\n\t      specifications, as reported by Thai Duong and Juliano Rizzo;\n\t      see our <a href=\"http://www.opera.com/support/kb/view/1004/\">advisory</a></li>\n\t    <li>Fixed an issue where the JavaScript \"in\" operator\n\t      allowed leakage of cross-domain information, as reported\n\t      by David Bloom; see our <a href=\"http://www.opera.com/support/kb/view/1005/\">advisory</a></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.opera.com/support/kb/view/1003/",
+      "http://www.opera.com/support/kb/view/1004/",
+      "http://www.opera.com/support/kb/view/1005/"
+    ],
+    "cvename": [
+      "CVE-2011-3389",
+      "CVE-2011-4681",
+      "CVE-2011-4682",
+      "CVE-2011-4683"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-12-06",
+    "entry": "2011-12-13"
+  }
+}

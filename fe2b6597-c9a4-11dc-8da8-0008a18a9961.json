@@ -1,0 +1,49 @@
+{
+  "vid": "fe2b6597-c9a4-11dc-8da8-0008a18a9961",
+  "topic": "xorg -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "xorg-server"
+      ],
+      "range": [
+        {
+          "lt": "1.4_4,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libXfont"
+      ],
+      "range": [
+        {
+          "lt": "1.3.1_2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matthieu Herrb of X.Org reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/xorg/2008-January/031918.html\">\n\t  <p>Several vulnerabilities have been identified in server code\n\t    of the X window system caused by lack of proper input validation\n\t    on user controlled data in various parts of the software,\n\t    causing various kinds of overflows.</p>\n\t  <p>Exploiting these overflows will crash the X server or,\n\t    under certain circumstances allow the execution of arbitray\n\t    machine code.</p>\n\t  <p>When the X server is running with root privileges (which is the\n\t    case for the Xorg server and for most kdrive based servers),\n\t    these vulnerabilities can thus also be used to raise\n\t    privileges.</p>\n\t  <p>All these vulnerabilities, to be exploited succesfully, require\n\t    either an already established connection to a running X server\n\t    (and normally running X servers are only accepting authenticated\n\t    connections), or a shell access with a valid user on the machine\n\t    where the vulnerable server is installed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.freedesktop.org/archives/xorg/2008-January/031918.html",
+      "http://lists.freedesktop.org/archives/xorg/2008-January/032099.html",
+      "http://secunia.com/advisories/28532/"
+    ],
+    "cvename": [
+      "CVE-2007-5760",
+      "CVE-2007-5958",
+      "CVE-2007-6427",
+      "CVE-2007-6428",
+      "CVE-2007-6429",
+      "CVE-2008-0006"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-01-18",
+    "entry": "2008-01-23"
+  }
+}

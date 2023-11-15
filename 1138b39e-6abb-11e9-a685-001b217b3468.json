@@ -1,0 +1,46 @@
+{
+  "vid": "1138b39e-6abb-11e9-a685-001b217b3468",
+  "topic": "Gitlab -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "11.10.2",
+          "ge": "11.10.0"
+        },
+        {
+          "lt": "11.9.10",
+          "ge": "11.9.0"
+        },
+        {
+          "lt": "11.8.9",
+          "ge": "6.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2019/04/29/security-release-gitlab-11-dot-10-dot-2-released/\">\n\t  <p>Moving an Issue to Private Repo Leaks Project Namespace</p>\n\t  <p>Notification Emails Sent to Restricted Users</p>\n\t  <p>Unauthorized Comments on Confidential Issues</p>\n\t  <p>Merge Request Approval Count Inflation</p>\n\t  <p>Unsanitized Branch Names on New Merge Request Notification Emails</p>\n\t  <p>Improper Sanitation of Credentials in Gitaly</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2019/04/29/security-release-gitlab-11-dot-10-dot-2-released/"
+    ],
+    "cvename": [
+      "CVE-2019-11545",
+      "CVE-2019-11544",
+      "CVE-2019-11548",
+      "CVE-2019-11546",
+      "CVE-2019-11547",
+      "CVE-2019-11549"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-04-29",
+    "entry": "2019-04-29"
+  }
+}

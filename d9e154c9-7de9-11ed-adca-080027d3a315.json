@@ -1,0 +1,47 @@
+{
+  "vid": "d9e154c9-7de9-11ed-adca-080027d3a315",
+  "topic": "typo3 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "typo3-11-php81"
+      ],
+      "range": [
+        {
+          "lt": "11.5.20"
+        }
+      ]
+    },
+    {
+      "name": [
+        "typo3-12-php81"
+      ],
+      "range": [
+        {
+          "lt": "12.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>TYPO3 reports:</p>\n\t<blockquote cite=\"https://typo3.org/article/typo3-1211-11520-and-10433-security-releases-published\">\n\t  <p>TYPO3-CORE-SA-2022-012: Denial of Service in Page Error Handling.</p>\n\t  <p>TYPO3-CORE-SA-2022-013: Weak Authentication in Frontend Login.</p>\n\t  <p>TYPO3-CORE-SA-2022-014: Insufficient Session Expiration after Password Reset.</p>\n\t  <p>TYPO3-CORE-SA-2022-015: Arbitrary Code Execution via Form Framework.</p>\n\t  <p>TYPO3-CORE-SA-2022-016: Sensitive Information Disclosure via YAML Placeholder Expressions in Site Configuration.</p>\n\t  <p>TYPO3-CORE-SA-2022-017: By-passing Cross-Site Scripting Protection in HTML Sanitizer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://typo3.org/article/typo3-1211-11520-and-10433-security-releases-published"
+    ],
+    "cvename": [
+      "CVE-2022-23499",
+      "CVE-2022-23500",
+      "CVE-2022-23501",
+      "CVE-2022-23502",
+      "CVE-2022-23503",
+      "CVE-2022-23504"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-12-13",
+    "entry": "2022-12-17"
+  }
+}

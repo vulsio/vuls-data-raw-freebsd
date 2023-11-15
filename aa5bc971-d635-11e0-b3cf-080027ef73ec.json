@@ -1,0 +1,112 @@
+{
+  "vid": "aa5bc971-d635-11e0-b3cf-080027ef73ec",
+  "topic": "nss/ca_root_nss -- fraudulent certificates issued by DigiNotar.nl",
+  "affects": [
+    {
+      "name": [
+        "nss"
+      ],
+      "range": [
+        {
+          "lt": "3.12.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ca_root_nss"
+      ],
+      "range": [
+        {
+          "lt": "3.12.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "3.6.22,1",
+          "gt": "3.6.*,1"
+        },
+        {
+          "lt": "6.0.2,1",
+          "gt": "4.0.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.3.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "3.6.22,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "3.1.14",
+          "gt": "3.1.*"
+        },
+        {
+          "lt": "6.0.2",
+          "gt": "5.0.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "3.1.14"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.3.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Heather Adkins, Google's Information Security Manager, reported that\n\tGoogle received</p>\n\t<blockquote cite=\"http://googleonlinesecurity.blogspot.com/2011/08/update-on-attempted-man-in-middle.html\">\n\t  <p>[...] reports of attempted SSL man-in-the-middle (MITM)\n\t    attacks against Google users, whereby someone tried to get between\n\t    them and encrypted Google services.  The people affected were\n\t    primarily located in Iran.  The attacker used a fraudulent SSL\n\t    certificate issued by DigiNotar, a root certificate authority that\n\t    should not issue certificates for Google (and has since revoked\n\t    it). [...]</p>\n\t</blockquote>\n\t<p>VASCO Data Security International Inc., owner of DigiNotar, issued a\n\t  press statement confirming this incident:</p>\n\t<blockquote cite=\"http://www.vasco.com/company/press_room/news_archive/2011/news_diginotar_reports_security_incident.aspx\">\n\t  <p>On July 19th 2011, DigiNotar detected an intrusion\n\t    into its Certificate Authority (CA) infrastructure, which resulted\n\t    in the fraudulent issuance of public key certificate requests for\n\t    a number of domains, including Google.com.  [...] an external\n\t    security audit concluded that all fraudulently issued certificates\n\t    were\n\t    revoked.  Recently, it was discovered that at least one fraudulent\n\t    certificate had not been revoked at the time. [...]</p>\n\t</blockquote>\n\t<p>Mozilla, maintainer of the NSS package, from which FreeBSD derived\n\t  ca_root_nss, stated that they:</p>\n\t<blockquote cite=\"https://blog.mozilla.com/security/2011/09/02/diginotar-removal-follow-up/\">\n\t  <p>revoked our trust in the DigiNotar certificate authority from\n\t    all Mozilla software.  This is not a temporary suspension, it is\n\t    a complete removal from our trusted root program.  Complete\n\t    revocation of trust is a decision we treat with careful\n\t    consideration, and employ as a last resort.\n\t  </p><p>Three central issues informed our decision:</p>\n\t  <ol><li>Failure to notify. [...]</li>\n\t    <li>The scope of the breach remains unknown. [...]</li>\n\t    <li>The attack is not theoretical.</li></ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.vasco.com/company/press_room/news_archive/2011/news_diginotar_reports_security_incident.aspx",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-34.html",
+      "http://googleonlinesecurity.blogspot.com/2011/08/update-on-attempted-man-in-middle.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-07-19",
+    "entry": "2011-09-03",
+    "modified": "2011-09-06"
+  }
+}

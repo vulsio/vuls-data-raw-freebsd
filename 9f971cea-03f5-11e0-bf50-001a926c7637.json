@@ -1,0 +1,37 @@
+{
+  "vid": "9f971cea-03f5-11e0-bf50-001a926c7637",
+  "topic": "krb5 -- unkeyed PAC checksum handling vulnerability",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2",
+          "ge": "1.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The MIT Kerberos team reports:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-007.txt\">\n\t  <p>MIT krb5 incorrectly accepts an unkeyed checksum for PAC\n\t    signatures.</p>\n\t  <p>An authenticated remote attacker can forge PACs if using a KDC that\n\t    does not filter client-provided PAC data.  This can result in\n\t    privilege escalation against a service that relies on PAC contents\n\t    to make authorization decisions.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-007.txt",
+      "http://osvdb.org/69609"
+    ],
+    "cvename": [
+      "CVE-2010-1324"
+    ],
+    "bid": [
+      "45116"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-11-30",
+    "entry": "2010-12-09"
+  }
+}

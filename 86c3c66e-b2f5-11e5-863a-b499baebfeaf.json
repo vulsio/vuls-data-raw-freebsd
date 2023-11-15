@@ -1,0 +1,36 @@
+{
+  "vid": "86c3c66e-b2f5-11e5-863a-b499baebfeaf",
+  "topic": "unzip -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "unzip"
+      ],
+      "range": [
+        {
+          "lt": "6.0_7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gustavo Grieco reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/09/07/4\">\n\t <p>Two issues were found in unzip 6.0:</p>\n\t <p> * A heap overflow triggered by unzipping a file with password\n\t    (e.g unzip -p -P x sigsegv.zip).</p>\n\t <p> * A denegation of service with a file that never finishes unzipping\n\t    (e.g. unzip sigxcpu.zip).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/09/07/4"
+    ],
+    "cvename": [
+      "CVE-2015-7696",
+      "CVE-2015-7697"
+    ],
+    "freebsd_pr": [
+      "ports/204413"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-26",
+    "entry": "2016-01-04"
+  }
+}

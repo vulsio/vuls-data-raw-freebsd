@@ -1,0 +1,37 @@
+{
+  "vid": "3c10ccdf-6a09-11ea-92ab-00163e433440",
+  "topic": "FreeBSD -- Insufficient oce(4) ioctl(2) privilege checking",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.1_3",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.3_7",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The driver-specific ioctl(2) command handlers in oce(4) failed to\n\tcheck whether the caller has sufficient privileges to perform the\n\tcorresponding operation.</p>\n\t<h1>Impact:</h1>\n\t<p>The oce(4) handler permits unprivileged users to send passthrough\n\tcommands to device firmware.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-15876"
+    ],
+    "freebsd_sa": [
+      "SA-20:05.if_oce_ioctl"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-03-19",
+    "entry": "2020-03-19"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "vid": "2826317b-10ec-11e7-944e-000c292e4fd8",
+  "topic": "samba -- symlink race allows access outside share definition",
+  "affects": [
+    {
+      "name": [
+        "samba36"
+      ],
+      "range": [
+        {
+          "ge": "3.6.0",
+          "le": "3.6.25_4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba4"
+      ],
+      "range": [
+        {
+          "ge": "4.0.0",
+          "le": "4.0.26"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba41"
+      ],
+      "range": [
+        {
+          "ge": "4.1.0",
+          "le": "4.1.23"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba42"
+      ],
+      "range": [
+        {
+          "ge": "4.2.0",
+          "le": "4.2.14"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba43"
+      ],
+      "range": [
+        {
+          "ge": "4.3.0",
+          "le": "4.3.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba44"
+      ],
+      "range": [
+        {
+          "lt": "4.4.12",
+          "ge": "4.4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba45"
+      ],
+      "range": [
+        {
+          "lt": "4.5.7",
+          "ge": "4.5.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba46"
+      ],
+      "range": [
+        {
+          "lt": "4.6.1",
+          "ge": "4.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Samba team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2017-2619.html\">\n\t  <p>A time-of-check, time-of-use race condition\n\t  can allow clients to access non-exported parts\n\t  of the file system via symlinks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.samba.org/samba/security/CVE-2017-2619.html"
+    ],
+    "cvename": [
+      "CVE-2017-2619"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-03-23",
+    "entry": "2017-03-24"
+  }
+}

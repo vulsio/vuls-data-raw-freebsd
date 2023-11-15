@@ -1,0 +1,33 @@
+{
+  "vid": "49beb00f-a6e1-4a42-93df-9cb14b4c2bee",
+  "topic": "Mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "thunderbird-60.7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-20/\">\n\t  <h1>CVE-2019-11707: Type confusion in Array.pop</h1>\n\t  <p>A type confusion vulnerability can occur when manipulating\n\t    JavaScript objects due to issues in Array.pop. This can allow\n\t    for an exploitable crash. We are aware of targeted attacks in\n\t    the wild abusing this flaw.</p>\n\t  <h1>CVE-2019-11708: sandbox escape using Prompt:Open</h1>\n\t  <p>Insufficient vetting of parameters passed with the\n\t    Prompt:Open IPC message between child and parent processes can\n\t    result in the non-sandboxed parent process opening web content\n\t    chosen by a compromised child process. When combined with\n\t    additional vulnerabilities this could result in executing\n\t    arbitrary code on the user's computer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2019-20/"
+    ],
+    "cvename": [
+      "CVE-2019-11707",
+      "CVE-2019-11708"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-06-20",
+    "entry": "2019-06-21"
+  }
+}

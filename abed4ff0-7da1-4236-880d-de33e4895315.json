@@ -1,0 +1,33 @@
+{
+  "vid": "abed4ff0-7da1-4236-880d-de33e4895315",
+  "topic": "moinmoin -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "moinmoin"
+      ],
+      "range": [
+        {
+          "lt": "1.9.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MoinMoin reports:</p>\n\t<blockquote cite=\"https://github.com/moinwiki/moin-1.9/blob/1.9.11/docs/CHANGES#L13\">\n\t<ul>\n\t  <li><p>Security fix for CVE-2020-25074: fix remote code execution via cache action</p></li>\n\t  <li><p>Security fix for CVE-2020-15275: fix malicious SVG attachment causing stored XSS vulnerability</p></li>\n\t</ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/moinwiki/moin-1.9/blob/1.9.11/docs/CHANGES#L13"
+    ],
+    "cvename": [
+      "CVE-2020-25074",
+      "CVE-2020-15275"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-11-08",
+    "entry": "2021-01-18"
+  }
+}

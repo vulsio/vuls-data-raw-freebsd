@@ -1,0 +1,44 @@
+{
+  "vid": "cfd2a634-3785-11ee-94b4-6cc21735f730",
+  "topic": "postgresql-server -- Extension script @substitutions@ within quoting allow SQL injection",
+  "affects": [
+    {
+      "name": [
+        "postgresql-server"
+      ],
+      "range": [
+        {
+          "lt": "11.21"
+        },
+        {
+          "lt": "12.16"
+        },
+        {
+          "lt": "13.12"
+        },
+        {
+          "lt": "14.9"
+        },
+        {
+          "lt": "15.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PostgreSQL Project reports</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2023-39417/\">\n\t  <p>\n\t    An extension script is vulnerable if it uses @extowner@,\n\t    @extschema@, or @extschema:...@ inside a quoting construct\n\t    (dollar quoting, '', or \"\"). No bundled extension is\n\t    vulnerable. Vulnerable uses do appear in a documentation\n\t    example and in non-bundled extensions. Hence, the attack\n\t    prerequisite is an administrator having installed files of a\n\t    vulnerable, trusted, non-bundled extension. Subject to that\n\t    prerequisite, this enables an attacker having database-level\n\t    CREATE privilege to execute arbitrary code as the bootstrap\n\t    superuser. PostgreSQL will block this attack in the core\n\t    server, so there's no need to modify individual extensions.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.postgresql.org/support/security/CVE-2023-39417/"
+    ],
+    "cvename": [
+      "CVE-2023-39417"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-08-10",
+    "entry": "2023-08-10"
+  }
+}

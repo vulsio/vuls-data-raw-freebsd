@@ -1,0 +1,44 @@
+{
+  "vid": "61b07d71-ce0e-11dd-a721-0030843d3802",
+  "topic": "mediawiki -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mediawiki"
+      ],
+      "range": [
+        {
+          "lt": "1.6.11",
+          "gt": "1.6.0"
+        },
+        {
+          "lt": "1.12.3",
+          "gt": "1.12.0"
+        },
+        {
+          "lt": "1.13.3",
+          "gt": "1.13.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The MediaWiki development team reports:</p>\n\t<blockquote cite=\"http://lists.wikimedia.org/pipermail/mediawiki-announce/2008-December/000080.html\">\n\t  <p>Certain unspecified input is not properly sanitised before being\n\t    returned to the user. This can be exploited to execute arbitrary HTML\n\t    and script code in a user's browser session in context of an affected\n\t    site.</p>\n\t  <p>Certain unspecified input related to uploads is not properly\n\t    sanitised before being used. This can be exploited to inject arbitrary\n\t    HTML and script code, which will be executed in a user's browser\n\t    session in context of an affected site when a malicious data is\n\t    opened. Successful exploitation may require that uploads are enabled\n\t    and the victim uses an Internet Explorer based browser.</p>\n\t  <p>Certain SVG scripts are not properly sanitised before being used.\n\t    This can be exploited to inject arbitrary HTML and script code, which\n\t    will be executed in a user's browser session in context of an affected\n\t    site when a malicious data is opened. Successful exploitation may require\n\t    that SVG uploads are enabled and the victim uses a browser supporting SVG\n\t    scripting.</p>\n\t  <p>The application allows users to perform certain actions via HTTP\n\t    requests without performing any validity checks to verify the\n\t    requests. This can be exploited to perform certain operations when a\n\t    logged in user visits a malicious site.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/33133/",
+      "http://lists.wikimedia.org/pipermail/mediawiki-announce/2008-December/000080.html"
+    ],
+    "cvename": [
+      "CVE-2008-5249",
+      "CVE-2008-5250",
+      "CVE-2008-5252"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-15",
+    "entry": "2008-12-19"
+  }
+}

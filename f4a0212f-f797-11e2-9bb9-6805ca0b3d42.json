@@ -1,0 +1,50 @@
+{
+  "vid": "f4a0212f-f797-11e2-9bb9-6805ca0b3d42",
+  "topic": "phpMyAdmin -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "4.0.4.2",
+          "ge": "4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "phpMyAdmin35"
+      ],
+      "range": [
+        {
+          "lt": "3.5.8.2",
+          "ge": "3.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2013-8.php\">\n\t  <p>XSS due to unescaped HTML Output when executing a SQL query.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2013-9.php\">\n\t  <p>5 XSS vulnerabilities in setup, chart display, process\n\t  list, and logo link.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2013-11.php\">\n\t  <p>If a crafted version.json would be presented, an XSS\n\t  could be introduced.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2013-12.php\">\n\t  <p>Full path disclosure vulnerabilities.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2013-13.php\">\n\t  <p> XSS vulnerability when a text to link transformation is\n\t  used.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2013-14.php\">\n\t  <p>Self-XSS due to unescaped HTML output in schema\n\t  export.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2013-15.php\">\n\t  <p>SQL injection vulnerabilities, producing a privilege\n\t  escalation (control user).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2013-8.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2013-9.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2013-11.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2013-12.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2013-13.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2013-14.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2013-15.php",
+      "http://sourceforge.net/projects/phpmyadmin/files/phpMyAdmin/3.5.8.2/phpMyAdmin-3.5.8.2-notes.html/view",
+      "http://sourceforge.net/projects/phpmyadmin/files/phpMyAdmin/4.0.4.2/phpMyAdmin-4.0.4.2-notes.html/view"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-07-28",
+    "entry": "2013-07-28",
+    "modified": "2013-07-29"
+  }
+}

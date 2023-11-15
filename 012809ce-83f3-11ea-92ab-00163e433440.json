@@ -1,0 +1,48 @@
+{
+  "vid": "012809ce-83f3-11ea-92ab-00163e433440",
+  "topic": "OpenSSL remote denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "12.1_4",
+          "ge": "12.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.1.1g,1",
+          "ge": "1.1.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Server or client applications that call the SSL_check_chain()\n\tfunction during or after a TLS 1.3 handshake may crash due to a NULL\n\tpointer dereference as a result of incorrect handling of the\n\t\"signature_algorithms_cert\" TLS extension.  The crash occurs if an\n\tinvalid or unrecognized signature algorithm is received from the\n\tpeer.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious peer could exploit the NULL pointer dereference crash,\n\tcausing a denial of service attack.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20200421.txt"
+    ],
+    "cvename": [
+      "CVE-2020-1967"
+    ],
+    "freebsd_sa": [
+      "SA-20:11.openssl"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-21",
+    "entry": "2020-04-21",
+    "modified": "2020-04-22"
+  }
+}

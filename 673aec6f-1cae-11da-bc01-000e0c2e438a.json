@@ -1,0 +1,36 @@
+{
+  "vid": "673aec6f-1cae-11da-bc01-000e0c2e438a",
+  "topic": "htdig -- cross site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "htdig"
+      ],
+      "range": [
+        {
+          "lt": "3.2.0.b6_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Michael Krax reports a vulnerability within htdig.  The\n\t  vulnerability lies within an unsanitized config parameter,\n\t  allowing a malicious attacker to execute arbitrary scripting\n\t  code on the target's browser.  This might allow the attacker\n\t  to obtain the user's cookies which are associated with the\n\t  site, including cookies used for authentication.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securitytracker.com/alerts/2005/Feb/1013078.html"
+    ],
+    "cvename": [
+      "CVE-2005-0085"
+    ],
+    "bid": [
+      "12442"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-03",
+    "entry": "2005-09-04",
+    "modified": "2005-09-13"
+  }
+}

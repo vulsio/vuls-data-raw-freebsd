@@ -1,0 +1,38 @@
+{
+  "vid": "17702e54-3da0-11ec-b7e0-3085a9a95629",
+  "topic": "pyrad -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py36-pyrad",
+        "py37-pyrad",
+        "py38-pyrad",
+        "py39-pyrad",
+        "py310-pyrad"
+      ],
+      "range": [
+        {
+          "lt": "2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Nathaniel McCallum reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=911682\">\n\t  <p>packet.py in pyrad before 2.1 uses weak random numbers to generate RADIUS authenticators and hash passwords, which makes it easier for remote attackers to obtain sensitive information via a brute force attack.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=911685\">\n\t  <p>The CreateID function in packet.py in pyrad before 2.1 uses sequential packet IDs, which makes it easier for remote attackers to spoof packets by predicting the next ID, a different vulnerability than CVE-2013-0294.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=911682",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=911685"
+    ],
+    "cvename": [
+      "CVE-2013-0294",
+      "CVE-2013-0342"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-01-15",
+    "entry": "2021-11-05"
+  }
+}

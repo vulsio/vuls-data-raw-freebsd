@@ -1,0 +1,38 @@
+{
+  "vid": "08de38d2-e2d0-11ea-9538-0c9d925bbbc0",
+  "topic": "adns -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "adns"
+      ],
+      "range": [
+        {
+          "lt": "1.5.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ian Jackson and the adns project reports:</p>\n\t<blockquote cite=\"https://www.chiark.greenend.org.uk/pipermail/adns-announce/2020/000004.html\">\n\t<p>Vulnerable applications: all adns callers.\n\t  Exploitable by: the local recursive resolver.\n\t  Likely worst case: Remote code execution.</p>\n\t<p>Vulnerable applications: those that make SOA queries.\n\t  Exploitable by: upstream DNS data sources.\n\t  Likely worst case: DoS (crash of the adns-using application)</p>\n\t<p>Vulnerable applications: those that use adns_qf_quoteok_query.\n\t  Exploitable by: sources of query domain names.\n\t  Likely worst case: DoS (crash of the adns-using application)</p>\n\t<p>Vulnerable applications: adnshost.\n\t  Exploitable by: code responsible for framing the input.\n\t  Likely worst case: DoS (adnshost crashes at EOF).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.chiark.greenend.org.uk/pipermail/adns-announce/2020/000004.html"
+    ],
+    "cvename": [
+      "CVE-2017-9103",
+      "CVE-2017-9104",
+      "CVE-2017-9105",
+      "CVE-2017-9106",
+      "CVE-2017-9107",
+      "CVE-2017-9108",
+      "CVE-2017-9109"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-05-21",
+    "entry": "2020-08-20"
+  }
+}

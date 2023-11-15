@@ -1,0 +1,47 @@
+{
+  "vid": "e500b9bf-ca3e-11df-aade-0050568f000c",
+  "topic": "FreeBSD -- BIND named(8) cache poisoning with DNSSEC validation",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.3_15",
+          "ge": "6.3"
+        },
+        {
+          "lt": "6.4_9",
+          "ge": "6.4"
+        },
+        {
+          "lt": "7.1_10",
+          "ge": "7.1"
+        },
+        {
+          "lt": "7.2_6",
+          "ge": "7.2"
+        },
+        {
+          "lt": "8.0_2",
+          "ge": "8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>If a client requests DNSSEC records with the Checking Disabled (CD)\n\t  flag set, BIND may cache the unvalidated responses. These responses\n\t  may later be returned to another client that has not set the CD\n\t  flag.</p>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-10:01.bind"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-01-06",
+    "entry": "2010-10-24",
+    "modified": "2016-08-09"
+  }
+}

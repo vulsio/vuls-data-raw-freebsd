@@ -1,0 +1,54 @@
+{
+  "vid": "0904e81f-a89d-11e8-afbb-bc5ff4f77b71",
+  "topic": "node.js -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "node"
+      ],
+      "range": [
+        {
+          "lt": "10.9.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node8"
+      ],
+      "range": [
+        {
+          "lt": "8.11.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node6"
+      ],
+      "range": [
+        {
+          "lt": "6.14.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/\">\n\t  <h1>OpenSSL: Client DoS due to large DH parameter</h1>\n\t  <p>This fixes a potential denial of service (DoS) attack\n\t  against client connections by a malicious server. During a TLS\n\t  communication handshake, where both client and server agree to\n\t  use a cipher-suite using DH or DHE (Diffie-Hellman, in both\n\t  ephemeral and non-ephemeral modes), a malicious server can\n\t  send a very large prime value to the client. Because this has\n\t  been unbounded in OpenSSL, the client can be forced to spend\n\t  an unreasonably long period of time to generate a key,\n\t  potentially causing a denial of service.</p>\n\t  <h1>OpenSSL: ECDSA key extraction via local side-channel</h1>\n\t  <p>Attackers with access to observe cache-timing may be able\n\t  to extract DSA or ECDSA private keys by causing the victim to\n\t  create several signatures and watching responses. This flaw\n\t  does not have a CVE due to OpenSSL policy to not assign itself\n\t  CVEs for local-only vulnerabilities that are more academic\n\t  than practical. This vulnerability was discovered by Keegan\n\t  Ryan at NCC Group and impacts many cryptographic libraries\n\t  including OpenSSL.</p>\n\t  <h1>Unintentional exposure of uninitialized memory</h1>\n\t  <p>Only Node.js 10 is impacted by this flaw.</p>\n\t  <p>Node.js TSC member Nikita Skovoroda discovered an argument\n\t  processing flaw that causes Buffer.alloc() to return\n\t  uninitialized memory. This method is intended to be safe and\n\t  only return initialized, or cleared, memory. The third\n\t  argument specifying encoding can be passed as a number, this\n\t  is misinterpreted by Buffer's internal \"fill\" method as the\n\t  start to a fill operation. This flaw may be abused where\n\t  Buffer.alloc() arguments are derived from user input to return\n\t  uncleared memory blocks that may contain sensitive\n\t  information.</p>\n\t  <h1>Out of bounds (OOB) write</h1>\n\t  <p>Node.js TSC member Nikita Skovoroda discovered an OOB write\n\t  in Buffer that can be used to write to memory outside of a\n\t  Buffer's memory space. This can corrupt unrelated Buffer\n\t  objects or cause the Node.js process to crash.</p>\n\t  <p>When used with UCS-2 encoding (recognized by Node.js under\n\t  the names 'ucs2', 'ucs-2', 'utf16le' and 'utf-16le'),\n\t  Buffer#write() can be abused to write outside of the bounds of\n\t  a single Buffer. Writes that start from the second-to-last\n\t  position of a buffer cause a miscalculation of the maximum\n\t  length of the input bytes to be written.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/"
+    ],
+    "cvename": [
+      "CVE-2018-0732",
+      "CVE-2018-7166",
+      "CVE-2018-12115"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-16",
+    "entry": "2018-08-25"
+  }
+}

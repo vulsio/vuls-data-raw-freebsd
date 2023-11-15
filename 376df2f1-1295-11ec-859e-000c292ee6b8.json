@@ -1,0 +1,38 @@
+{
+  "vid": "376df2f1-1295-11ec-859e-000c292ee6b8",
+  "topic": "consul -- rpc: authorize raft requests",
+  "affects": [
+    {
+      "name": [
+        "consul"
+      ],
+      "range": [
+        {
+          "lt": "1.10.2"
+        },
+        {
+          "lt": "1.9.9"
+        },
+        {
+          "lt": "1.8.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Hashicorp reports:</p>\n\t<blockquote cite=\"https://github.com/hashicorp/consul/releases/tag/v1.9.9\">\n\t  <p>HashiCorp Consul Raft RPC layer allows non-server agents with a\n\t    valid certificate signed by the same CA to access server-only\n\t    functionality, enabling privilege escalation.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/hashicorp/consul/releases/tag/v1.9.9"
+    ],
+    "cvename": [
+      "CVE-2021-37219"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-08-27",
+    "entry": "2021-09-11"
+  }
+}

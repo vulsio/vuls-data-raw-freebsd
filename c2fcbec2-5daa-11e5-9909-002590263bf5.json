@@ -1,0 +1,62 @@
+{
+  "vid": "c2fcbec2-5daa-11e5-9909-002590263bf5",
+  "topic": "moodle -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "moodle27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "moodle28"
+      ],
+      "range": [
+        {
+          "lt": "2.8.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "moodle29"
+      ],
+      "range": [
+        {
+          "lt": "2.9.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Moodle Release Notes report:</p>\n\t<blockquote cite=\"https://docs.moodle.org/dev/Moodle_2.7.10_release_notes\">\n\t  <p>MSA-15-0030: Students can re-attempt answering questions in the\n\t    lesson (CVE-2015-5264)</p>\n\t  <p>MSA-15-0031: Teacher in forum can still post to \"all participants\"\n\t    and groups they are not members of (CVE-2015-5272 - 2.7.10 only)</p>\n\t  <p>MSA-15-0032: Users can delete files uploaded by other users in wiki\n\t    (CVE-2015-5265)</p>\n\t  <p>MSA-15-0033: Meta course synchronization enrolls suspended students\n\t    as managers for a short period of time (CVE-2015-5266)</p>\n\t  <p>MSA-15-0034: Vulnerability in password recovery mechanism\n\t    (CVE-2015-5267)</p>\n\t  <p>MSA-15-0035: Rating component does not check separate groups\n\t    (CVE-2015-5268)</p>\n\t  <p>MSA-15-0036: XSS in grouping description (CVE-2015-5269)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/09/21/1",
+      "https://docs.moodle.org/dev/Moodle_2.7.10_release_notes",
+      "https://docs.moodle.org/dev/Moodle_2.8.8_release_notes",
+      "https://docs.moodle.org/dev/Moodle_2.9.2_release_notes"
+    ],
+    "cvename": [
+      "CVE-2015-5264",
+      "CVE-2015-5272",
+      "CVE-2015-5265",
+      "CVE-2015-5266",
+      "CVE-2015-5267",
+      "CVE-2015-5268",
+      "CVE-2015-5269"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-14",
+    "entry": "2015-09-18",
+    "modified": "2015-09-24"
+  }
+}

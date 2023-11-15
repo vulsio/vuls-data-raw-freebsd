@@ -1,0 +1,38 @@
+{
+  "vid": "7229d900-88af-11d8-90d1-0020ed76ef5a",
+  "topic": "mksnap_ffs clears file system options",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "5.2_1",
+          "ge": "5.2"
+        },
+        {
+          "lt": "5.1_12",
+          "ge": "5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The kernel interface for creating a snapshot of a\n\t  filesystem is the same as that for changing the flags on\n\t  that filesystem.  Due to an oversight, the <a href=\"http://www.freebsd.org/cgi/man.cgi?query=mksnap_ffs\">mksnap_ffs(8)</a>\n\t  command called that interface with only the snapshot flag\n\t  set, causing all other flags to be reset to the default\n\t  value.</p>\n\t<p>A regularly scheduled backup of a live filesystem, or\n\t  any other process that uses the mksnap_ffs command\n\t  (for instance, to provide a rough undelete functionality\n\t  on a file server), will clear any flags in effect on the\n\t  filesystem being snapshot.  Possible consequences depend\n\t  on local usage, but can include disabling extended access\n\t  control lists or enabling the use of setuid executables\n\t  stored on an untrusted filesystem.</p>\n\t<p>The mksnap_ffs command is normally only available to\n\t  the superuser and members of the `operator' group.  There\n\t  is therefore no risk of a user gaining elevated privileges\n\t  directly through use of the mksnap_ffs command unless\n\t  it has been intentionally made available to unprivileged\n\t  users.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0099"
+    ],
+    "freebsd_sa": [
+      "SA-04:01.mksnap_ffs"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-01-30",
+    "entry": "2004-04-07",
+    "modified": "2004-05-05"
+  }
+}

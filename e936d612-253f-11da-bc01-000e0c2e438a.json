@@ -1,0 +1,33 @@
+{
+  "vid": "e936d612-253f-11da-bc01-000e0c2e438a",
+  "topic": "apache -- Certificate Revocation List (CRL) off-by-one vulnerability",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "lt": "2.0.54_1",
+          "gt": "2.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Marc Stern reports an off-by-one vulnerability in within\n\t  mod_ssl.  The vulnerability lies in mod_ssl's Certificate\n\t  Revocation List (CRL).  If Apache is configured to use a\n\t  CRL this could allow an attacker to crash a child process\n\t  causing a Denial of Service.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-1268"
+    ],
+    "bid": [
+      "14366"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-12",
+    "entry": "2005-09-17"
+  }
+}

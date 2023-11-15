@@ -1,0 +1,45 @@
+{
+  "vid": "0eab001a-9708-11ec-96c9-589cfc0f81b0",
+  "topic": "typo3 -- XSS vulnerability in svg-sanitize",
+  "affects": [
+    {
+      "name": [
+        "typo3-10-php74"
+      ],
+      "range": [
+        {
+          "lt": "10.4.25"
+        }
+      ]
+    },
+    {
+      "name": [
+        "typo3-11-php74",
+        "typo3-11-php80",
+        "typo3-11-php81"
+      ],
+      "range": [
+        {
+          "lt": "11.5.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>The TYPO3 project reports:</p>\n       <blockquote cite=\"https://typo3.org/article/typo3-psa-2022-001\">\n\t <p>The SVG sanitizer library enshrined/svg-sanitize before version\n\t 0.15.0 did not remove HTML elements wrapped in a CDATA section.\n\t As a result, SVG content embedded in HTML (fetched as text/html)\n\t was susceptible to cross-site scripting. Plain SVG files\n\t (fetched as image/svg+xml) were not affected.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/typo3/typo3/commit/9940defb21",
+      "https://typo3.org/article/typo3-psa-2022-001"
+    ],
+    "cvename": [
+      "CVE-2022-23638"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-02-22",
+    "entry": "2022-02-27"
+  }
+}

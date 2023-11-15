@@ -1,0 +1,43 @@
+{
+  "vid": "ddd48087-bd86-11e9-b13f-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "12.1.6",
+          "ge": "12.1.0"
+        },
+        {
+          "lt": "12.0.6",
+          "ge": "12.0.0"
+        },
+        {
+          "lt": "11.11.8",
+          "ge": "10.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2019/08/12/critical-security-release-gitlab-12-dot-1-dot-6-released/\">\n\t  <p>Insecure Authentication Methods Disabled for Grafana By Default</p>\n\t  <p>Multiple Command-Line Flag Injection Vulnerabilities</p>\n\t  <p>Insecure Cookie Handling on GitLab Pages</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2019/08/12/critical-security-release-gitlab-12-dot-1-dot-6-released/"
+    ],
+    "cvename": [
+      "CVE-2019-14943",
+      "CVE-2019-14944",
+      "CVE-2019-14942"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-08-12",
+    "entry": "2019-08-13"
+  }
+}

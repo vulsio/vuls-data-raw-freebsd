@@ -1,0 +1,42 @@
+{
+  "vid": "ac256985-b6a9-11e6-a3bf-206a8a720317",
+  "topic": "subversion -- Unrestricted XML entity expansion in mod_dontdothat and Subversionclients using http(s)",
+  "affects": [
+    {
+      "name": [
+        "subversion18"
+      ],
+      "range": [
+        {
+          "lt": "1.8.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "subversion"
+      ],
+      "range": [
+        {
+          "lt": "1.9.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2016-8734-advisory.txt\">\n\t  <p>The mod_dontdothat module of subversion and subversion clients using\n\t  http(s):// are vulnerable to a denial-of-service attack, caused by\n\t  exponential XML entity expansion. The attack targets XML parsers\n\t  causing targeted process to consume excessive amounts of resources.\n\t  The attack is also known as the \"billions of laughs attack.\"</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://subversion.apache.org/security/CVE-2016-8734-advisory.txt"
+    ],
+    "cvename": [
+      "CVE-2016-8734"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-29",
+    "entry": "2016-11-29"
+  }
+}

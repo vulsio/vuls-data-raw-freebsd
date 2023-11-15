@@ -1,0 +1,39 @@
+{
+  "vid": "653a8059-7c49-11e6-9242-3065ec8fd3ec",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "53.0.2785.113"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"https://googlechromereleases.blogspot.nl/2016/09/stable-channel-update-for-desktop_13.html\">\n\t  <p>Several security fixes in this release, including:</p>\n\t  <ul>\n\t    <li>[641101] High CVE-2016-5170: Use after free in Blink.Credit to\n\t      Anonymous</li>\n\t    <li>[643357] High CVE-2016-5171: Use after free in Blink. Credit to\n\t      Anonymous</li>\n\t    <li>[616386] Medium CVE-2016-5172: Arbitrary Memory Read in v8.\n\t      Credit to Choongwoo Han</li>\n\t    <li>[468931] Medium CVE-2016-5173: Extension resource access.\n\t      Credit to Anonymous</li>\n\t    <li>[579934] Medium CVE-2016-5174: Popup not correctly suppressed.\n\t      Credit to Andrey Kovalev (@L1kvID) Yandex Security Team</li>\n\t    <li>[646394] CVE-2016-5175: Various fixes from internal audits,\n\t      fuzzing and other initiatives.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://googlechromereleases.blogspot.nl/2016/09/stable-channel-update-for-desktop_13.html"
+    ],
+    "cvename": [
+      "CVE-2016-5170",
+      "CVE-2016-5171",
+      "CVE-2016-5172",
+      "CVE-2016-5173",
+      "CVE-2016-5174",
+      "CVE-2016-5175"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-13",
+    "entry": "2016-09-16"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "c2c8c84b-e734-11e3-9a25-5404a6a6412c",
+  "topic": "mumble -- NULL pointer dereference and heap-based buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "mumble"
+      ],
+      "range": [
+        {
+          "ge": "1.2.4",
+          "le": "1.2.4_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mumble reports:</p>\n\t<blockquote cite=\"http://blog.mumble.info/mumble-1-2-5/\">\n\t  <p>A malformed Opus voice packet sent to a Mumble client could trigger\n\t    a NULL pointer dereference or an out-of-bounds array access.</p>\n\t  <p>A malformed Opus voice packet sent to a Mumble client could trigger a\n\t    heap-based buffer overflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mumble.info/security/Mumble-SA-2014-001.txt",
+      "http://mumble.info/security/Mumble-SA-2014-002.txt"
+    ],
+    "cvename": [
+      "CVE-2014-0044",
+      "CVE-2014-0045"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-01-25",
+    "entry": "2014-05-29"
+  }
+}

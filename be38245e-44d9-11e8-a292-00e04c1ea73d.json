@@ -1,0 +1,43 @@
+{
+  "vid": "be38245e-44d9-11e8-a292-00e04c1ea73d",
+  "topic": "wordpress -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "wordpress",
+        "fr-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.9.5,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "zh_CN-wordpress",
+        "zh_TW-wordpress",
+        "ja-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.9.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>wordpress developers reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/\">\n\t  <p>Don't treat localhost as same host by default.</p>\n\t  <p>Use safe redirects when redirecting the login page if SSL is forced.</p>\n\t  <p>Make sure the version string is correctly escaped for use in generator tags.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-04-03",
+    "entry": "2018-04-20"
+  }
+}

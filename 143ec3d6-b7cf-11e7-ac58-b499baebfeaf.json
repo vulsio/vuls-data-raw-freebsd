@@ -1,0 +1,33 @@
+{
+  "vid": "143ec3d6-b7cf-11e7-ac58-b499baebfeaf",
+  "topic": "cURL -- out of bounds read",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.56.1",
+          "ge": "7.20"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20171023.html\">\n\t  <p>libcurl contains a buffer overrun flaw in the IMAP handler.<br/>\n\t    An IMAP FETCH response line indicates the size of the returned data,\n\t    in number of bytes. When that response says the data is zero bytes,\n\t    libcurl would pass on that (non-existing) data with a pointer and\n\t    the size (zero) to the deliver-data function.<br/>\n\t    libcurl's deliver-data function treats zero as a magic number and\n\t    invokes strlen() on the data to figure out the length. The strlen()\n\t    is called on a heap based buffer that might not be zero terminated\n\t    so libcurl might read beyond the end of it into whatever memory lies\n\t    after (or just crash) and then deliver that to the application as if\n\t    it was actually downloaded.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.haxx.se/docs/adv_20171023.html"
+    ],
+    "cvename": [
+      "CVE-2017-1000257"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-10-23",
+    "entry": "2017-10-23"
+  }
+}

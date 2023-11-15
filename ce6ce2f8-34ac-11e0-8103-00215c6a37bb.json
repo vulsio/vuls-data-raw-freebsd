@@ -1,0 +1,43 @@
+{
+  "vid": "ce6ce2f8-34ac-11e0-8103-00215c6a37bb",
+  "topic": "awstats -- arbitrary commands execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "awstats"
+      ],
+      "range": [
+        {
+          "lt": "7.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "awstats-devel"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Awstats change log reports:</p>\n\t<blockquote cite=\"http://awstats.sourceforge.net/docs/awstats_changelog.txt\">\n\t  <ul>\n\t    <li>Security fix (Traverse directory of LoadPlugin)</li>\n\t    <li>Security fix (Limit config to defined directory\n\t      to avoid access to external config file via a nfs\n\t      or webdav link).</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.exploitdevelopment.com/Vulnerabilities/2010-WEB-001.html",
+      "http://awstats.sourceforge.net/docs/awstats_changelog.txt"
+    ],
+    "cvename": [
+      "CVE-2010-4367"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-05-01",
+    "entry": "2011-02-10"
+  }
+}

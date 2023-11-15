@@ -1,0 +1,39 @@
+{
+  "vid": "0dc91089-ca41-11df-aade-0050568f000c",
+  "topic": "FreeBSD -- Unvalidated input in nfsclient",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "7.2_8",
+          "ge": "7.2"
+        },
+        {
+          "lt": "7.3_1",
+          "ge": "7.3"
+        },
+        {
+          "lt": "8.0_3",
+          "ge": "8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The NFS client subsystem fails to correctly validate the length of a\n\t  parameter provided by the user when a filesystem is mounted.</p>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-10:06.nfsclient"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-05-27",
+    "entry": "2010-10-24",
+    "modified": "2016-08-09"
+  }
+}

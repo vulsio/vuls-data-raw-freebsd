@@ -1,0 +1,32 @@
+{
+  "vid": "90becf7c-1acf-11e7-970f-002590263bf5",
+  "topic": "xen-kernel -- broken check in memory_exchange() permits PV guest breakout",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.7.2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-206.html\">\n\t  <p>The XSA-29 fix introduced an insufficient check on XENMEM_exchange\n\t    input, allowing the caller to drive hypervisor memory accesses\n\t    outside of the guest provided input/output arrays.</p>\n\t  <p>A malicious or buggy 64-bit PV guest may be able to access all of\n\t    system memory, allowing for all of privilege escalation, host\n\t    crashes, and information leaks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://xenbits.xen.org/xsa/advisory-212.html"
+    ],
+    "cvename": [
+      "CVE-2017-7228"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-04-04",
+    "entry": "2017-04-06"
+  }
+}

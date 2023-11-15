@@ -1,0 +1,53 @@
+{
+  "vid": "63347ee7-6841-11dc-82b6-02e0185f8d72",
+  "topic": "wordpress -- remote sql injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "2.2.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "zh-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "2.2.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "wordpress-mu"
+      ],
+      "range": [
+        {
+          "lt": "1.2.4,2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Alexander Concha reports:</p>\n\t<blockquote cite=\"http://www.buayacorp.com/files/wordpress/wordpress-sql-injection-advisory.html\">\n\t  <p>While testing WordPress, it has been discovered a SQL\n\t    Injection vulnerability that allows an attacker to retrieve\n\t    remotely any user credentials from a vulnerable site, this\n\t    bug is caused because of early database escaping and the\n\t    lack of validation in query string like parameters.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.buayacorp.com/files/wordpress/wordpress-sql-injection-advisory.html"
+    ],
+    "cvename": [
+      "CVE-2007-4894"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-09-10",
+    "entry": "2007-09-21"
+  }
+}

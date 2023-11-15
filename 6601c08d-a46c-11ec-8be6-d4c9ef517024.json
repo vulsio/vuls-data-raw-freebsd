@@ -1,0 +1,35 @@
+{
+  "vid": "6601c08d-a46c-11ec-8be6-d4c9ef517024",
+  "topic": "Apache httpd -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.53"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache httpd project reports:</p>\n\t<blockquote cite=\"https://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <ul>\n\t    <li><p>mod_lua: Use of uninitialized value of in r:parsebody (moderate)\n\t      (CVE-2022-22719)</p><p>A carefully crafted request body can cause a\n\t      read to a random memory area which could cause the process to crash.\n\t    </p></li>\n\t    <li><p>HTTP request smuggling vulnerability (important) (CVE-2022-22720)\n\t      </p><p>httpd fails to close inbound connection when errors are\n\t      encountered discarding the request body, exposing the server to HTTP\n\t      Request Smuggling</p></li>\n\t    <li><p>core: Possible buffer overflow with very large or unlimited\n\t      LimitXMLRequestBody (low) (CVE-2022-22721)</p><p>If LimitXMLRequestBody\n\t      is set to allow request bodies larger than 350MB (defaults to 1M) on 32\n\t      bit systems an integer overflow happens which later causes out of\n\t      bounds writes.</p></li>\n\t    <li><p>mod_sed: Read/write beyond bounds (important) (CVE-2022-23924)</p>\n\t      <p>Out-of-bounds Write vulnerability in mod_sed of Apache HTTP Server\n\t\tallows an attacker to overwrite heap memory with possibly attacker\n\t\tprovided data.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://httpd.apache.org/security/vulnerabilities_24.html"
+    ],
+    "cvename": [
+      "CVE-2022-22719",
+      "CVE-2022-22720",
+      "CVE-2022-22721",
+      "CVE-2022-23943"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-03-14",
+    "entry": "2022-03-15"
+  }
+}

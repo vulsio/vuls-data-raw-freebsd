@@ -1,0 +1,72 @@
+{
+  "vid": "0f37d765-c5d4-11db-9f82-000e0c2e438a",
+  "topic": "OpenSSL -- Multiple problems in crypto(3)",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "0.9.7l_0"
+        },
+        {
+          "lt": "0.9.8d_0",
+          "ge": "0.9.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.1_9",
+          "ge": "6.1"
+        },
+        {
+          "lt": "6.0_14",
+          "ge": "6.0"
+        },
+        {
+          "lt": "5.5_7",
+          "ge": "5.5"
+        },
+        {
+          "lt": "5.4_21",
+          "ge": "5.4"
+        },
+        {
+          "lt": "5.3_36",
+          "ge": "5.3"
+        },
+        {
+          "lt": "4.11_24",
+          "ge": "4.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Several problems have been found in OpenSSL:</p>\n\t<ul>\n\t  <li>During the parsing of certain invalid ASN1 structures an\n\t    error condition is mishandled, possibly resulting in an\n\t    infinite loop.</li>\n\t  <li>A buffer overflow exists in the SSL_get_shared_ciphers\n\t    function.</li>\n\t  <li>A NULL pointer may be dereferenced in the SSL version 2\n\t    client code.</li>\n\t</ul>\n\t<p>In addition, many applications using OpenSSL do not perform\n\t  any validation of the lengths of public keys being used.</p>\n\t<h1>Impact:</h1>\n\t<p>Servers which parse ASN1 data from untrusted sources may be\n\t  vulnerable to a denial of service attack.</p>\n\t<p>An attacker accessing a server which uses SSL version 2 may\n\t  be able to execute arbitrary code with the privileges of that\n\t  server.</p>\n\t<p>A malicious SSL server can cause clients connecting using\n\t  SSL version 2 to crash.</p>\n\t<p>Applications which perform public key operations using\n\t  untrusted keys may be vulnerable to a denial of service\n\t  attack.</p>\n\t<h1>Workaround:</h1>\n\t<p>No workaround is available, but not all of the\n\t  vulnerabilities mentioned affect all applications.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-2937",
+      "CVE-2006-2938",
+      "CVE-2006-2940",
+      "CVE-2006-3738",
+      "CVE-2006-4343"
+    ],
+    "freebsd_sa": [
+      "SA-06:23.openssl"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-09-28",
+    "entry": "2007-02-26",
+    "modified": "2016-08-09"
+  }
+}

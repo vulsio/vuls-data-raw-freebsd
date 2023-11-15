@@ -1,0 +1,33 @@
+{
+  "vid": "7a1b2624-6a89-11ee-af06-5404a68ad561",
+  "topic": "traefik -- Resource exhaustion by malicious HTTP/2 client",
+  "affects": [
+    {
+      "name": [
+        "traefik"
+      ],
+      "range": [
+        {
+          "lt": "2.10.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The traefik authors report:</p>\n\t<blockquote cite=\"https://github.com/traefik/traefik/security/advisories/GHSA-7v4p-328v-8v5g\">\n\t  <p>There is a vulnerability in GO managing HTTP/2 requests, which\n\t     impacts Traefik. This vulnerability could be exploited to cause\n\t     a denial of service.</p>\n\t</blockquote>\n\t"
+  },
+  "references": {
+    "url": [
+      "https://github.com/traefik/traefik/security/advisories/GHSA-7v4p-328v-8v5g"
+    ],
+    "cvename": [
+      "CVE-2023-39325",
+      "CVE-2023-44487"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-10",
+    "entry": "2023-10-14"
+  }
+}

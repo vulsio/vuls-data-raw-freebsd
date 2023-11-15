@@ -1,0 +1,37 @@
+{
+  "vid": "cfb12f02-06e1-11e5-8fda-002590263bf5",
+  "topic": "cabextract -- directory traversal with UTF-8 symbols in filenames",
+  "affects": [
+    {
+      "name": [
+        "cabextract"
+      ],
+      "range": [
+        {
+          "lt": "1.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cabextract ChangeLog reports:</p>\n\t<blockquote cite=\"http://www.cabextract.org.uk/#changes\">\n\t  <p>It was possible for cabinet files to extract to absolute file\n\t    locations, and it was possible on Cygwin to get around cabextract's\n\t    absolute and relative path protections by using backslashes.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.cabextract.org.uk/#changes"
+    ],
+    "cvename": [
+      "CVE-2015-2060"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.openwall.com/lists/oss-security/2015/02/18/3"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-02-18",
+    "entry": "2015-05-31"
+  }
+}

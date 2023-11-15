@@ -1,0 +1,33 @@
+{
+  "vid": "43cb40b3-c8c2-11da-a672-000e0c2e438a",
+  "topic": "f2c -- insecure temporary files",
+  "affects": [
+    {
+      "name": [
+        "f2c"
+      ],
+      "range": [
+        {
+          "lt": "20060506"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Javier Fernández-Sanguino Peña reports two temporary file\n\t  vulnerability within f2c.  The vulnerabilities are caused\n\t  due to weak temporary file handling.\tAn attacker could\n\t  create an symbolic link, causing a local user running f2c\n\t  to overwrite the symlinked file.  This could give the\n\t  attacker elevated privileges.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CAN-2005-0017"
+    ],
+    "bid": [
+      "1280"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-01-27",
+    "entry": "2006-04-10",
+    "modified": "2006-08-15"
+  }
+}

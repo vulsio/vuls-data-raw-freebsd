@@ -1,0 +1,46 @@
+{
+  "vid": "953911fe-51ef-11e2-8e34-0022156e8794",
+  "topic": "tomcat -- bypass of CSRF prevention filter",
+  "affects": [
+    {
+      "name": [
+        "tomcat"
+      ],
+      "range": [
+        {
+          "ge": "6.0.0",
+          "le": "6.0.35"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat7"
+      ],
+      "range": [
+        {
+          "ge": "7.0.0",
+          "le": "7.0.31"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-7.html\">\n\t  <p>The CSRF prevention filter could be bypassed if a request was made to a\n\t     protected resource without a session identifier present in the request.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://tomcat.apache.org/security-6.html",
+      "http://tomcat.apache.org/security-7.html"
+    ],
+    "cvename": [
+      "CVE-2012-4431"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-12-04",
+    "entry": "2012-12-04",
+    "modified": "2017-03-18"
+  }
+}

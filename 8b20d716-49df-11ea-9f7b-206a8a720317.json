@@ -1,0 +1,42 @@
+{
+  "vid": "8b20d716-49df-11ea-9f7b-206a8a720317",
+  "topic": "ksh93 -- certain environment variables interpreted as arithmetic expressions on startup, leading to code injection",
+  "affects": [
+    {
+      "name": [
+        "ksh93"
+      ],
+      "range": [
+        {
+          "lt": "2020.0.1_1,1",
+          "ge": "2020.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ksh93-devel"
+      ],
+      "range": [
+        {
+          "lt": "2020.02.07"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Upstream ksh93 maintainer Siteshwar Vashisht reports:</p>\n\t<blockquote cite=\"https://access.redhat.com/security/cve/CVE-2019-14868\">\n\t  <p>A flaw was found in the way ksh evaluates certain environment\n\t    variables. An attacker could use this flaw to override or bypass\n\t    environment restrictions to execute shell commands. Services and\n\t    applications that allow remote unauthenticated attackers to\n\t    provide one of those environment variables could allow them to\n\t    exploit this issue remotely.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1757324",
+      "https://access.redhat.com/security/cve/CVE-2019-14868",
+      "https://access.redhat.com/errata/RHSA-2020:0431"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-01",
+    "entry": "2020-02-07"
+  }
+}

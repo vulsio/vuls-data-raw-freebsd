@@ -1,0 +1,46 @@
+{
+  "vid": "0523fb7e-8444-4e86-812d-8de05f6f0dce",
+  "topic": "libutp -- remote denial of service or arbitrary code execution",
+  "affects": [
+    {
+      "name": [
+        "bittorrent-libutp"
+      ],
+      "range": [
+        {
+          "lt": "0.20130514_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "transmission-cli",
+        "transmission-deamon",
+        "transmission-gtk",
+        "transmission-qt4"
+      ],
+      "range": [
+        {
+          "lt": "2.74"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6129\">\n\t  <p>Stack-based buffer overflow in utp.cpp in libutp, as used\n\t    in Transmission before 2.74 and possibly other products,\n\t    allows remote attackers to cause a denial of service (crash)\n\t    and possibly execute arbitrary code via crafted \"micro\n\t    transport protocol packets.\"</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/bittorrent/libutp/issues/38",
+      "https://trac.transmissionbt.com/ticket/5002"
+    ],
+    "cvename": [
+      "CVE-2012-6129"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-01",
+    "entry": "2014-12-29"
+  }
+}

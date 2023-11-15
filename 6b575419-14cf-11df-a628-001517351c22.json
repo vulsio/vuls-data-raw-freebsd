@@ -1,0 +1,33 @@
+{
+  "vid": "6b575419-14cf-11df-a628-001517351c22",
+  "topic": "otrs -- SQL injection",
+  "affects": [
+    {
+      "name": [
+        "otrs"
+      ],
+      "range": [
+        {
+          "lt": "2.4.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OTRS Security Advisory reports:</p>\n\t<blockquote cite=\"http://otrs.org/advisory/OSA-2010-01-en/\">\n\t  <p>Missing security quoting for SQL statements allows agents and\n\t    customers to manipulate SQL queries. So it's possible for\n\t    authenticated users to inject SQL queries\n\t    via string manipulation of statements.</p>\n\t  <p>A malicious user may be able to manipulate SQL queries to read\n\t    or modify records in the database. This way it could also be\n\t    possible to get access to more permissions (e. g. administrator\n\t    permissions).</p>\n\t  <p>To use this vulnerability the malicious user needs to have\n\t    a valid Agent- or Customer-session.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://otrs.org/advisory/OSA-2010-01-en/"
+    ],
+    "cvename": [
+      "CVE-2010-0438"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-02-08",
+    "entry": "2010-02-08",
+    "modified": "2010-05-02"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "vid": "f115f693-36b2-11e2-a633-902b343deec9",
+  "topic": "FreeBSD -- Insufficient message length validation for EAP-TLS messages",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "8.3_5",
+          "ge": "8.3"
+        },
+        {
+          "lt": "9.0_5",
+          "ge": "9.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-12:07.hostapd.asc\">\n\t  <p>The internal authentication server of hostapd does not\n\t     sufficiently validate the message length field of EAP-TLS\n\t     messages.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-4445"
+    ],
+    "freebsd_sa": [
+      "SA-12:07.hostapd"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-11-22",
+    "entry": "2012-11-24"
+  }
+}

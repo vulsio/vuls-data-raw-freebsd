@@ -1,0 +1,38 @@
+{
+  "vid": "4e4bd2c2-6bd5-11d9-9e1e-c296ac722cb3",
+  "topic": "squid -- HTTP response splitting cache pollution attack",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "2.5.7_8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t  <p>According to a whitepaper published by Sanctum, Inc., it\n\t    is possible to mount cache poisoning attacks against, among others,\n\t    squid proxies by inserting false replies into the HTTP stream.</p>\n\t  <p>The squid patches page notes:</p>\n\t  <blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-response_splitting\">\n\t    <p>This patch additionally strengthens Squid from the HTTP response\n\t      attack described by Sanctum.</p>\n\t  </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-response_splitting",
+      "http://www.squid-cache.org/bugs/show_bug.cgi?id=1200",
+      "https://www.watchfire.com/securearea/whitepapers.aspx?id=8"
+    ],
+    "cvename": [
+      "CVE-2005-0175"
+    ],
+    "cert_vu": [
+      "625878"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-01",
+    "entry": "2005-01-22",
+    "modified": "2005-02-07"
+  }
+}

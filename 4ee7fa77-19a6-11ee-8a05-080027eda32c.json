@@ -1,0 +1,61 @@
+{
+  "vid": "4ee7fa77-19a6-11ee-8a05-080027eda32c",
+  "topic": "Django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py38-django32",
+        "py39-django32",
+        "py310-django32",
+        "py311-django32"
+      ],
+      "range": [
+        {
+          "lt": "3.2.20"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py38-django41",
+        "py39-django41",
+        "py310-django41",
+        "py311-django41"
+      ],
+      "range": [
+        {
+          "lt": "4.1.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py38-django42",
+        "py39-django42",
+        "py310-django42",
+        "py311-django42"
+      ],
+      "range": [
+        {
+          "lt": "4.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2023/jul/03/security-releases/\">\n\t  <p>CVE-2023-36053: Potential regular expression denial of service\n\t    vulnerability in EmailValidator/URLValidator.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2023/jul/03/security-releases/"
+    ],
+    "cvename": [
+      "CVE-2023-36053"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-07-01",
+    "entry": "2023-07-03"
+  }
+}

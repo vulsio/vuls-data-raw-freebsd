@@ -1,0 +1,32 @@
+{
+  "vid": "7d7221ee-d334-11ea-bc50-080027846a02",
+  "topic": "Python -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "python38"
+      ],
+      "range": [
+        {
+          "lt": "3.8.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/3/whatsnew/changelog.html#python-3-8-5-final\">\n\t  <p>bpo-41304: Fixes python3x._pth being ignored on Windows, caused by the fix for\n\t    bpo-29778 (CVE-2020-15801).</p>\n\t  <p>bpo-39603: Prevent http header injection by rejecting control characters in\n\t    http.client.putreques().</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.python.org/3/whatsnew/changelog.html#python-3-8-5-final"
+    ],
+    "cvename": [
+      "CVE-2020-15801"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-02-11",
+    "entry": "2020-07-31"
+  }
+}

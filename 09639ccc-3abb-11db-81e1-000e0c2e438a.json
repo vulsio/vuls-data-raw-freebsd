@@ -1,0 +1,36 @@
+{
+  "vid": "09639ccc-3abb-11db-81e1-000e0c2e438a",
+  "topic": "hlstats -- multiple cross site scripting vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "hlstats"
+      ],
+      "range": [
+        {
+          "le": "1.35"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Kefka reports multiple cross site scripting vulnerabilities\n\t  within hlstats.  The vulnerabilities are caused due to\n\t  improper checking of variables, allowing an attacker to\n\t  perform cross site scripting.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-4454",
+      "CVE-2006-6780",
+      "CVE-2006-6781",
+      "CVE-2007-2812"
+    ],
+    "bid": [
+      "19745"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-08-29",
+    "entry": "2006-09-02",
+    "modified": "2011-09-03"
+  }
+}

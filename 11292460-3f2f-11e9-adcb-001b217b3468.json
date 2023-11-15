@@ -1,0 +1,57 @@
+{
+  "vid": "11292460-3f2f-11e9-adcb-001b217b3468",
+  "topic": "Gitlab -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "11.8.1",
+          "ge": "11.8.0"
+        },
+        {
+          "lt": "11.7.6",
+          "ge": "11.7.0"
+        },
+        {
+          "lt": "11.6.10",
+          "ge": "2.9.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2019/03/04/security-release-gitlab-11-dot-8-dot-1-released/\">\n\t  <p>Arbitrary file read via MergeRequestDiff</p>\n\t  <p>CSRF add Kubernetes cluster integration</p>\n\t  <p>Blind SSRF in prometheus integration</p>\n\t  <p>Merge request information disclosure</p>\n\t  <p>IDOR milestone name information disclosure</p>\n\t  <p>Burndown chart information disclosure</p>\n\t  <p>Private merge request titles in public project information disclosure</p>\n\t  <p>Private namespace disclosure in email notification when issue is moved</p>\n\t  <p>Milestone name disclosure</p>\n\t  <p>Issue board name disclosure</p>\n\t  <p>NPM automatic package referencer</p>\n\t  <p>Path traversal snippet mover</p>\n\t  <p>Information disclosure repo existence</p>\n\t  <p>Issue DoS via Mermaid</p>\n\t  <p>Privilege escalation impersonate user</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/2019/03/04/security-release-gitlab-11-dot-8-dot-1-released/"
+    ],
+    "cvename": [
+      "CVE-2019-9221",
+      "CVE-2019-9176",
+      "CVE-2019-9174",
+      "CVE-2019-9172",
+      "CVE-2019-9170",
+      "CVE-2019-9175",
+      "CVE-2019-9178",
+      "CVE-2019-9179",
+      "CVE-2019-9171",
+      "CVE-2019-9224",
+      "CVE-2019-9225",
+      "CVE-2019-9219",
+      "CVE-2019-9217",
+      "CVE-2019-9222",
+      "CVE-2019-9223",
+      "CVE-2019-9220",
+      "CVE-2019-9485"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-03-04",
+    "entry": "2019-03-05"
+  }
+}

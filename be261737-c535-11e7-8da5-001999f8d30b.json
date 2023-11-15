@@ -1,0 +1,34 @@
+{
+  "vid": "be261737-c535-11e7-8da5-001999f8d30b",
+  "topic": "asterisk -- Memory/File Descriptor/RTP leak in pjsip session resource",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.18.1",
+          "ge": "13.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>A memory leak occurs when an Asterisk pjsip session\n\t  object is created and that call gets rejected before the\n\t  session itself is fully established. When this happens\n\t  the session object never gets destroyed. This then leads\n\t  to file descriptors and RTP ports being leaked as well.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2017-011.html"
+    ],
+    "cvename": [
+      "CVE-2017-16672"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-10-15",
+    "entry": "2017-11-09",
+    "modified": "2017-12-13"
+  }
+}

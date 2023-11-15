@@ -1,0 +1,32 @@
+{
+  "vid": "d42e5b66-6ea0-11df-9c8d-00e0815b8da8",
+  "topic": "sudo -- Secure path vulnerability",
+  "affects": [
+    {
+      "name": [
+        "sudo"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://sudo.ws/sudo/alerts/secure_path.html\">\n\t  <p>Most versions of the C library function getenv() return the\n\t    first instance of an environment variable to the caller.  However,\n\t    some programs, notably the GNU Bourne Again SHell (bash), do\n\t    their own environment parsing and may choose the last instance\n\t    of a variable rather than the first one.</p>\n\t  <p>An attacker may manipulate the environment of the process that\n\t    executes Sudo such that a second PATH variable is present.  When\n\t    Sudo runs a bash script, it is this second PATH variable that\n\t    is used by bash, regardless of whether or not Sudo has overwritten\n\t    the first instance of PATH.  This may allow an attacker to\n\t    subvert the program being run under Sudo and execute commands\n\t    he/she would not otherwise be allowed to run.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://sudo.ws/sudo/alerts/secure_path.html"
+    ],
+    "cvename": [
+      "CVE-2010-1646"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-06-02",
+    "entry": "2010-06-02"
+  }
+}

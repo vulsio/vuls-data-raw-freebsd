@@ -1,0 +1,44 @@
+{
+  "vid": "240ac24c-dff3-11dd-a765-0030843d3802",
+  "topic": "mysql -- remote dos via malformed password packet",
+  "affects": [
+    {
+      "name": [
+        "mysql-server"
+      ],
+      "range": [
+        {
+          "lt": "4.1.24",
+          "ge": "4.1"
+        },
+        {
+          "lt": "5.0.44",
+          "ge": "5.0"
+        },
+        {
+          "lt": "5.1.20",
+          "ge": "5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MySQL reports:</p>\n\t<blockquote cite=\"http://dev.mysql.com/doc/refman/4.1/en/news-4-1-24.html\">\n\t  <p>A malformed password packet in the connection protocol\n\t    could cause the server to crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.mysql.com/bug.php?id=28984"
+    ],
+    "cvename": [
+      "CVE-2007-3780"
+    ],
+    "bid": [
+      "25017"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-07-15",
+    "entry": "2009-01-11"
+  }
+}

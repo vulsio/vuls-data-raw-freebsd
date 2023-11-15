@@ -1,0 +1,39 @@
+{
+  "vid": "7e4e5c53-a56c-11e0-b180-00216aa06fc2",
+  "topic": "phpmyadmin -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.4.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-5.php\">\n\t  <p>It was possible to manipulate the PHP session superglobal using\n\t    some of the Swekey authentication code.  This could open a path\n\t    for other attacks.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-6.php\">\n\t  <p>An unsanitized key from the Servers array is written in a comment\n\t    of the generated config.  An attacker can modify this key by\n\t    modifying the SESSION superglobal array.  This allows the attacker\n\t    to close the comment and inject code.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-7.php\">\n\t  <p>Through a possible bug in PHP running on Windows systems a NULL\n\t    byte can truncate the pattern string allowing an attacker to\n\t    inject the /e modifier causing the preg_replace function to\n\t    execute its second argument as PHP code.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-8.php\">\n\t  <p>Fixed filtering of a file path in the MIME-type transformation\n\t    code, which allowed for directory traversal.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-5.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-6.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-7.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-8.php"
+    ],
+    "cvename": [
+      "CVE-2011-2505",
+      "CVE-2011-2506",
+      "CVE-2011-2507",
+      "CVE-2011-2508"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-07-02",
+    "entry": "2011-07-03",
+    "modified": "2011-07-28"
+  }
+}

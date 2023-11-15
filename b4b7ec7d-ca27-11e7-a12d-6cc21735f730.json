@@ -1,0 +1,29 @@
+{
+  "vid": "b4b7ec7d-ca27-11e7-a12d-6cc21735f730",
+  "topic": "shibboleth2-sp -- \"Dynamic\" metadata provider plugin issue",
+  "affects": [
+    {
+      "name": [
+        "shibboleth2-sp"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Internet2 community reports:</p>\n\t<blockquote cite=\"http://shibboleth.internet2.edu/secadv/secadv_20171115.txt\">\n\t  <p>\n\t    The Shibboleth Service Provider software includes a MetadataProvider\n\t    plugin with the plugin type \"Dynamic\" to obtain metadata on demand\n\t    from a query server, in place of the more typical mode of\n\t    downloading aggregates separately containing all of the metadata to\n\t    load.\n\t  </p><p>\n\t    All the plugin types rely on MetadataFilter plugins to perform\n\t    critical security checks such as signature verification, enforcement\n\t    of validity periods, and other checks specific to deployments.\n\t  </p><p>\n\t    Due to a coding error, the \"Dynamic\" plugin fails to configure\n\t    itself with the filters provided to it and thus omits whatever\n\t    checks they are intended to perform, which will typically leave\n\t    deployments vulnerable to active attacks involving the substitution\n\t    of metadata if the network path to the query service is\n\t    compromised.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://shibboleth.internet2.edu/secadv/secadv_20171115.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-11-15",
+    "entry": "2017-11-15"
+  }
+}

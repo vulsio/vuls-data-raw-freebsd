@@ -1,0 +1,32 @@
+{
+  "vid": "a78299e7-9ef3-11da-b410-000e0c2e438a",
+  "topic": "libtomcrypt -- weak signature scheme with ECC keys",
+  "affects": [
+    {
+      "name": [
+        "libtomcrypt"
+      ],
+      "range": [
+        {
+          "le": "1.02"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Secure Science Corporation reports that libtomcrypt is\n\t  vulnerable to a weak signature scheme.  This allows an\n\t  attacker to create a valid random signature and use that to\n\t  sign arbitrary messages without requiring the private key.</p>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111540819703204",
+        "msgid": "4276CC31.9000307@securescience.net"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-05-01",
+    "entry": "2006-02-16"
+  }
+}

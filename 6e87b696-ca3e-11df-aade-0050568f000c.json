@@ -1,0 +1,47 @@
+{
+  "vid": "6e87b696-ca3e-11df-aade-0050568f000c",
+  "topic": "FreeBSD -- Inappropriate directory permissions in freebsd-update(8)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.3_14",
+          "ge": "6.3"
+        },
+        {
+          "lt": "6.4_8",
+          "ge": "6.4"
+        },
+        {
+          "lt": "7.1_9",
+          "ge": "7.1"
+        },
+        {
+          "lt": "7.2_5",
+          "ge": "7.2"
+        },
+        {
+          "lt": "8.0_1",
+          "ge": "8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When downloading updates to FreeBSD via 'freebsd-update fetch' or\n\t  'freebsd-update upgrade', the freebsd-update(8) utility copies\n\t  currently installed files into its working directory\n\t  (/var/db/freebsd-update by default) both for the purpose of merging\n\t  changes to configuration files and in order to be able to roll back\n\t  installed updates.</p>\n\t<p>The default working directory used by freebsd-update(8) is normally\n\t  created during the installation of FreeBSD with permissions which\n\t  allow all local users to see its contents, and freebsd-update(8) does\n\t  not take any steps to restrict access to files stored in said\n\t  directory.</p>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-09:17.freebsd-update"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-12-03",
+    "entry": "2010-10-24",
+    "modified": "2016-08-09"
+  }
+}

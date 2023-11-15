@@ -1,0 +1,33 @@
+{
+  "vid": "9245681c-7c3c-11e7-b5af-a4badb2f4699",
+  "topic": "sqlite3 -- heap-buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "sqlite3"
+      ],
+      "range": [
+        {
+          "lt": "3.20.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google reports:</p>\n\t<blockquote cite=\"https://bugs.launchpad.net/ubuntu/+source/sqlite3/+bug/1700937\">\n\t  <p>A heap-buffer overflow (sometimes a crash) can arise when\n\t    running a SQL request on malformed sqlite3 databases.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.launchpad.net/ubuntu/+source/sqlite3/+bug/1700937"
+    ],
+    "cvename": [
+      "CVE-2017-10989"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-08-08",
+    "entry": "2017-08-08",
+    "modified": "2017-09-19"
+  }
+}

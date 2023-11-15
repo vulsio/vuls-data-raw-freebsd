@@ -1,0 +1,46 @@
+{
+  "vid": "3b47104f-1461-11ed-a0c5-080027240888",
+  "topic": "Django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py38-django32",
+        "py39-django32",
+        "py310-django32"
+      ],
+      "range": [
+        {
+          "lt": "3.2.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py38-django40",
+        "py39-django40",
+        "py310-django40"
+      ],
+      "range": [
+        {
+          "lt": "4.0.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2022/aug/03/security-releases/\">\n\t  <p>CVE-2022-36359: Potential reflected file download vulnerability in FileResponse.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2022/aug/03/security-releases/"
+    ],
+    "cvename": [
+      "CVE-2022-36359"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-08-01",
+    "entry": "2022-08-05"
+  }
+}

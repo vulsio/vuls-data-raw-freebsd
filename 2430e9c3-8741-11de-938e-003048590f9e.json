@@ -1,0 +1,54 @@
+{
+  "vid": "2430e9c3-8741-11de-938e-003048590f9e",
+  "topic": "wordpress -- remote admin password reset vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "2.8.4,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "2.8.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "wordpress-mu"
+      ],
+      "range": [
+        {
+          "lt": "2.8.4a"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>WordPress reports:</p>\n\t<blockquote cite=\"http://wordpress.org/development/2009/08/2-8-4-security-release/\">\n\t  <p>A specially crafted URL could be requested that would allow an\n\t    attacker to bypass a security check to verify a user requested a\n\t    password reset. As a result, the first account without a key in the\n\t    database (usually the admin account) would have its password reset and\n\t    a new password would be emailed to the account owner.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://wordpress.org/development/2009/08/2-8-4-security-release/",
+      "http://www.milw0rm.com/exploits/9410"
+    ],
+    "cvename": [
+      "CVE-2009-2762"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-08-10",
+    "entry": "2009-08-12",
+    "modified": "2010-05-02"
+  }
+}

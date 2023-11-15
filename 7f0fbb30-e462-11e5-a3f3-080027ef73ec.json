@@ -1,0 +1,33 @@
+{
+  "vid": "7f0fbb30-e462-11e5-a3f3-080027ef73ec",
+  "topic": "PuTTY - old-style scp downloads may allow remote code execution",
+  "affects": [
+    {
+      "name": [
+        "putty"
+      ],
+      "range": [
+        {
+          "lt": "0.67"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Simon G. Tatham reports:</p>\n\t<blockquote cite=\"http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-pscp-sink-sscanf.html\">\n\t  <p>Many versions of PSCP prior to 0.67 have a stack corruption\n\t    vulnerability in their treatment of the 'sink' direction (i.e.\n\t    downloading from server to client) of the old-style SCP protocol.\n\t    </p>\n\t  <p>In order for this vulnerability to be exploited, the user must\n\t    connect to a malicious server and attempt to download any file.[...]\n\t    you can work around it in a vulnerable PSCP by using the -sftp\n\t    option to force the use of the newer SFTP protocol, provided your\n\t    server supports that protocol.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-pscp-sink-sscanf.html",
+      "https://github.com/tintinweb/pub/tree/master/pocs/cve-2016-2563"
+    ],
+    "cvename": [
+      "CVE-2016-2563"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-26",
+    "entry": "2016-03-07"
+  }
+}

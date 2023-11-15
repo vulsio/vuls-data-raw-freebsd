@@ -1,0 +1,33 @@
+{
+  "vid": "56665ccb-8723-11e5-9b13-14dae9d210b8",
+  "topic": "powerdns -- Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "powerdns"
+      ],
+      "range": [
+        {
+          "lt": "3.4.7",
+          "ge": "3.4.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PowerDNS reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/md/security/powerdns-advisory-2015-03/\">\n\t  <p>A bug was found using afl-fuzz in our packet parsing code.\n\t    This bug, when exploited, causes an assertion error and consequent\n\t    termination of the the pdns_server process, causing a Denial of Service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://doc.powerdns.com/md/security/powerdns-advisory-2015-03/"
+    ],
+    "cvename": [
+      "CVE-2015-5311"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-11-03",
+    "entry": "2015-11-09"
+  }
+}

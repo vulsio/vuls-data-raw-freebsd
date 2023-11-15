@@ -1,0 +1,29 @@
+{
+  "vid": "a00c76d9-0c05-4d99-bef7-ae4521cb2a4d",
+  "topic": "zeek -- potential DoS vulnerabilty",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "4.0.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v4.0.6\">\n\t  <p> Fix potential unbounded state growth in the FTP\n\t  analyzer when receiving a specially-crafted stream of\n\t  commands. This may lead to a buffer overflow and cause\n\t  Zeek to crash. Due to the possibility of this happening\n\t  with packets received from the network, this is a potential\n\t  DoS vulnerabilty. </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/zeek/zeek/releases/tag/v4.0.6"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-04-21",
+    "entry": "2022-04-21"
+  }
+}

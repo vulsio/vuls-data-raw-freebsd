@@ -1,0 +1,65 @@
+{
+  "vid": "a61374fc-3a4d-11e6-a671-60a44ce6887b",
+  "topic": "Python -- HTTP Header Injection in Python urllib",
+  "affects": [
+    {
+      "name": [
+        "python27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python33"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python34"
+      ],
+      "range": [
+        {
+          "lt": "3.4.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python35"
+      ],
+      "range": [
+        {
+          "lt": "3.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Guido Vranken reports:</p>\n\t<blockquote cite=\"https://bugs.python.org/issue22928\">\n\t  <p>HTTP header injection in urrlib2/urllib/httplib/http.client with\n\t     newlines in header values, where newlines have a semantic consequence of\n\t     denoting the start of an additional header line.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.python.org/issue22928",
+      "http://blog.blindspotsecurity.com/2016/06/advisory-http-header-injection-in.html",
+      "http://www.openwall.com/lists/oss-security/2016/06/14/7"
+    ],
+    "cvename": [
+      "CVE-2016-5699"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-24",
+    "entry": "2016-06-30",
+    "modified": "2016-07-04"
+  }
+}

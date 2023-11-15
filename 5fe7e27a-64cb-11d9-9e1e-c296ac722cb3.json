@@ -1,0 +1,35 @@
+{
+  "vid": "5fe7e27a-64cb-11d9-9e1e-c296ac722cb3",
+  "topic": "squid -- denial of service with forged WCCP messages",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "2.5.7_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The squid patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-wccp_denial_of_service\">\n\t  <p>WCCP_I_SEE_YOU messages contain a 'number of caches'\n\t    field which should be between 1 and 32. Values outside\n\t    that range may crash Squid if WCCP is enabled, and if an\n\t    attacker can spoof UDP packets with the WCCP router's IP\n\t    address.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-wccp_denial_of_service",
+      "http://www.squid-cache.org/bugs/show_bug.cgi?id=1190",
+      "http://www.squid-cache.org/Advisories/SQUID-2005_2.txt"
+    ],
+    "cvename": [
+      "CVE-2005-0095"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-01-07",
+    "entry": "2005-01-12",
+    "modified": "2005-01-22"
+  }
+}

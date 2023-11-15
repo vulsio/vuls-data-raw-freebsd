@@ -1,0 +1,45 @@
+{
+  "vid": "87261557-a450-11e2-9898-001060e06fd4",
+  "topic": "FreeBSD -- Network ACL mishandling in mountd(8)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "7.3_5",
+          "ge": "7.3"
+        },
+        {
+          "lt": "7.4_1",
+          "ge": "7.4"
+        },
+        {
+          "lt": "8.1_3",
+          "ge": "8.1"
+        },
+        {
+          "lt": "8.2_1",
+          "ge": "8.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-11:01.mountd.asc\">\n\t<h1>Problem Description:</h1>\n\t<p>While parsing the exports(5) table, a network mask in the form of\n\t  \"-network=netname/prefixlength\" results in an incorrect network mask\n\t  being computed if the prefix length is not a multiple of 8.</p>\n\t<p>For example, specifying the ACL for an export as \"-network\n\t  192.0.2.0/23\" would result in a netmask of 255.255.127.0 being used\n\t  instead of the correct netmask of 255.255.254.0.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2011-1739"
+    ],
+    "freebsd_sa": [
+      "SA-11:01.mountd"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-04-20",
+    "entry": "2012-01-29"
+  }
+}

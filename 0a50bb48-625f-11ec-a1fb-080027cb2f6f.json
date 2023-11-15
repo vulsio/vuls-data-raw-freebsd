@@ -1,0 +1,57 @@
+{
+  "vid": "0a50bb48-625f-11ec-a1fb-080027cb2f6f",
+  "topic": "mediawiki -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mediawiki135"
+      ],
+      "range": [
+        {
+          "lt": "1.35.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mediawiki136"
+      ],
+      "range": [
+        {
+          "lt": "1.36.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mediawiki137"
+      ],
+      "range": [
+        {
+          "lt": "1.37.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mediawiki reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/QEN3EK4JXAVJMJ5GF3GYOAKNJPEKFQYA/\">\n\t  <p>(T292763. CVE-2021-44854) REST API incorrectly publicly caches\n\t    autocomplete search results from private wikis.</p>\n\t  <p>(T271037, CVE-2021-44856) Title blocked in AbuseFilter can be created via\n\t    Special:ChangeContentModel.</p>\n\t  <p>(T297322, CVE-2021-44857) Unauthorized users can use action=mcrundo to\n\t    replace the content of arbitrary pages.</p>\n\t  <p> (T297322, CVE-2021-44858) Unauthorized users can view contents of private\n\t    wikis using various actions.</p>\n\t  <p>(T297574, CVE-2021-45038) Unauthorized users can access private wiki\n\t    contents using rollback action</p>\n\t  <p>(T293589, CVE-2021-44855) Blind Stored XSS in VisualEditor media dialog.</p>\n\t  <p>(T294686) Special:Nuke doesn't actually delete pages.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/QEN3EK4JXAVJMJ5GF3GYOAKNJPEKFQYA/"
+    ],
+    "cvename": [
+      "CVE-2021-44854",
+      "CVE-2021-44856",
+      "CVE-2021-44857",
+      "CVE-2021-44858",
+      "CVE-2021-45038",
+      "CVE-2021-44855"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-12-01",
+    "entry": "2021-12-21"
+  }
+}

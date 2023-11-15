@@ -1,0 +1,52 @@
+{
+  "vid": "aaea7b7c-4887-11ee-b164-001b217b3468",
+  "topic": "Gitlab -- Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "16.3.1",
+          "ge": "16.3.0"
+        },
+        {
+          "lt": "16.2.5",
+          "ge": "16.2.0"
+        },
+        {
+          "lt": "16.1.5",
+          "ge": "4.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2023/08/31/security-release-gitlab-16-3-1-released/\">\n\t  <p>Privilege escalation of \"external user\" to internal access through group service account</p>\n\t  <p>Maintainer can leak sentry token by changing the configured URL (fix bypass)</p>\n\t  <p>Google Cloud Logging private key showed in plain text in GitLab UI leaking to other group owners</p>\n\t  <p>Information disclosure via project import endpoint</p>\n\t  <p>Developer can leak DAST scanners \"Site Profile\" request headers and auth password</p>\n\t  <p>Project forking outside current group</p>\n\t  <p>User is capable of creating Model experiment and updating existing run's status in public project</p>\n\t  <p>ReDoS in bulk import API</p>\n\t  <p>Pagination for Branches and Tags can be skipped leading to DoS</p>\n\t  <p>Internal Open Redirection Due to Improper handling of \"../\" characters</p>\n\t  <p>Subgroup Member With Reporter Role Can Edit Group Labels</p>\n\t  <p>Banned user can delete package registries</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2023/08/31/security-release-gitlab-16-3-1-released/"
+    ],
+    "cvename": [
+      "CVE-2023-3915",
+      "CVE-2023-4378",
+      "CVE-2023-3950",
+      "CVE-2023-4630",
+      "CVE-2022-4343",
+      "CVE-2023-4638",
+      "CVE-2023-4018",
+      "CVE-2023-3205",
+      "CVE-2023-4647",
+      "CVE-2023-1279",
+      "CVE-2023-0120",
+      "CVE-2023-1555"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-08-31",
+    "entry": "2023-09-01"
+  }
+}

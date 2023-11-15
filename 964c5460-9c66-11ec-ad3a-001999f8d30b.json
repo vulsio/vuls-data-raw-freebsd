@@ -1,0 +1,46 @@
+{
+  "vid": "964c5460-9c66-11ec-ad3a-001999f8d30b",
+  "topic": "asterisk -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.24.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "18.10.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories/\">\n\t  <p>AST-2022-004 - The header length on incoming STUN\n\t  messages that contain an ERROR-CODE attribute is not\n\t  properly checked. This can result in an integer underflow.\n\t  Note, this requires ICE or WebRTC support to be in use\n\t  with a malicious remote party.</p>\n\t  <p>AST-2022-005 - When acting as a UAC, and when placing\n\t  an outgoing call to a target that then forks Asterisk may\n\t  experience undefined behavior (crashes, hangs, etc) after\n\t  a dialog set is prematurely freed.</p>\n\t  <p>AST-2022-006 - If an incoming SIP message contains a\n\t  malformed multi-part body an out of bounds read access\n\t  may occur, which can result in undefined behavior. Note,\n\t  its currently uncertain if there is any externally\n\t  exploitable vector within Asterisk for this issue, but\n\t  providing this as a security issue out of caution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2022-004.html",
+      "https://downloads.asterisk.org/pub/security/AST-2022-005.html",
+      "https://downloads.asterisk.org/pub/security/AST-2022-006.html"
+    ],
+    "cvename": [
+      "CVE-2021-37706",
+      "CVE-2022-23608",
+      "CVE-2022-21723"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-03-03",
+    "entry": "2022-03-05"
+  }
+}

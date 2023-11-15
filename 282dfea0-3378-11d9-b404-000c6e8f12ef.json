@@ -1,0 +1,37 @@
+{
+  "vid": "282dfea0-3378-11d9-b404-000c6e8f12ef",
+  "topic": "apache2 multiple space header denial-of-service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "gt": "2.*",
+          "le": "2.0.52_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>It is possible for remote attackers to cause a denial-of-service\n\t  scenario on Apache 2.0.52 and earlier by sending an HTTP GET\n\t  request with a MIME header containing multiple lines full of\n\t  whitespaces.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0942"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=109930632317208",
+        "msgid": "a62f45480411010157571febcc.mail@gmail.com"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-01",
+    "entry": "2004-11-10",
+    "modified": "2004-11-11"
+  }
+}

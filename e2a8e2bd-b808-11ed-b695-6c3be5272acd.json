@@ -1,0 +1,65 @@
+{
+  "vid": "e2a8e2bd-b808-11ed-b695-6c3be5272acd",
+  "topic": "Grafana -- Stored XSS in geomap panel plugin via attribution",
+  "affects": [
+    {
+      "name": [
+        "grafana"
+      ],
+      "range": [
+        {
+          "lt": "8.5.21"
+        },
+        {
+          "lt": "9.2.13",
+          "ge": "9.0.0"
+        },
+        {
+          "lt": "9.3.8",
+          "ge": "9.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana8"
+      ],
+      "range": [
+        {
+          "lt": "8.5.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana9"
+      ],
+      "range": [
+        {
+          "lt": "9.2.13",
+          "ge": "9.0.0"
+        },
+        {
+          "lt": "9.3.8",
+          "ge": "9.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/02/28/grafana-security-release-new-versions-with-security-fixes-for-cve-2023-0594-cve-2023-0507-and-cve-2023-22462/\">\n\t  <p>During an internal audit of Grafana on January 25, a member of the security\n\t  team found a stored XSS vulnerability affecting the core geomap plugin.</p>\n\t  <p>The stored XSS vulnerability was possible because map attributions weren’t\n\t  properly sanitized, allowing arbitrary JavaScript to be executed in the context\n\t  of the currently authorized user of the Grafana instance.</p>\n\t  <p>The CVSS score for this vulnerability is 7.3 High\n\t  (CVSS:7.3/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://grafana.com/blog/2023/02/28/grafana-security-release-new-versions-with-security-fixes-for-cve-2023-0594-cve-2023-0507-and-cve-2023-22462/"
+    ],
+    "cvename": [
+      "CVE-2023-0507"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-01-25",
+    "entry": "2023-03-01"
+  }
+}

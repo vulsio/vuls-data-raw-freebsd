@@ -1,0 +1,41 @@
+{
+  "vid": "87270ba5-03d3-11ea-b81f-3085a9a95629",
+  "topic": "urllib3 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py27-urllib3",
+        "py35-urllib3",
+        "py36-urllib3",
+        "py37-urllib3",
+        "py38-urllib3"
+      ],
+      "range": [
+        {
+          "lt": "1.24.3,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NIST reports: (by search in the range 2018/01/01 - 2019/11/10):</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;query=urllib3&amp;search_type=all&amp;pub_start_date=01%2F01%2F2018&amp;pub_end_date=11%2F10%2F2019\">\n\t  <p>urllib3 before version 1.23 does not remove the Authorization HTTP header when following a cross-origin redirect (i.e., a redirect that differs in host, port, or scheme). This can allow for credentials in the Authorization header to be exposed to unintended hosts or transmitted in cleartext.</p>\n\t  <p>In the urllib3 library through 1.24.1 for Python, CRLF injection is possible if the attacker controls the request parameter.</p>\n\t  <p>The urllib3 library before 1.24.2 for Python mishandles certain cases where the desired set of CA certificates is different from the OS store of CA certificates, which results in SSL connections succeeding in situations where a verification failure is the correct outcome. This is related to use of the ssl_context, ca_certs, or ca_certs_dir argument.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&query=urllib3&search_type=all&pub_start_date=01%2F01%2F2018&pub_end_date=11%2F10%2F2019"
+    ],
+    "cvename": [
+      "CVE-2018-20060",
+      "CVE-2019-11236",
+      "CVE-2019-11324"
+    ],
+    "freebsd_pr": [
+      "ports/229322"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-12-11",
+    "entry": "2019-11-26"
+  }
+}

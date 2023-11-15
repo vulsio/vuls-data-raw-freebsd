@@ -1,0 +1,36 @@
+{
+  "vid": "c9221ec9-17a2-11ec-b335-d4c9ef517024",
+  "topic": "cURL -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.79.0",
+          "ge": "7.20.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.se/docs/security.html\">\n\t  <ul>\n\t    <li>UAF and double-free in MQTT sending (CVE-2021-22945)</li>\n\t    <li>Protocol downgrade required TLS bypassed (CVE-2021-22946)</li>\n\t    <li>STARTTLS protocol injection via MITM (CVE-2021-22945)</li>\n\t  </ul>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.se/docs/security.html"
+    ],
+    "cvename": [
+      "CVE-2021-22945",
+      "CVE-2021-22946",
+      "CVE-2021-22947"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-09-15",
+    "entry": "2021-09-17",
+    "modified": "2021-09-28"
+  }
+}

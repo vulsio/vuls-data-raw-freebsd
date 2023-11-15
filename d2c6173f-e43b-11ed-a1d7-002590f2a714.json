@@ -1,0 +1,54 @@
+{
+  "vid": "d2c6173f-e43b-11ed-a1d7-002590f2a714",
+  "topic": "git -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "git"
+      ],
+      "range": [
+        {
+          "lt": "2.40.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.40.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-tiny"
+      ],
+      "range": [
+        {
+          "lt": "2.40.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>git developers reports:</p>\n\t<blockquote cite=\"INSERT URL HERE\">\n\t  <p>This update includes 2 security fixes:</p>\n\t  <ul>\n\t     <li>CVE-2023-25652: By feeding specially crafted input to `git apply --reject`, a path outside the working tree can be overwritten with partially controlled contents (corresponding to the rejected hunk(s) from the given patch)</li>\n\t     <li>CVE-2023-29007: A specially crafted `.gitmodules` file with submodule URLs that are longer than 1024 characters can used to exploit a bug that can be used to inject arbitrary configuration into user's git config.  This can result in arbitrary execution of code, by inserting values for core.pager, core.editor and so on</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/git/git/security/advisories/GHSA-2hvf-7c8p-28fx",
+      "https://github.com/git/git/security/advisories/GHSA-v48j-4xgg-4844"
+    ],
+    "cvename": [
+      "CVE-2023-25652",
+      "CVE-2023-29007"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-04-25",
+    "entry": "2023-04-26"
+  }
+}

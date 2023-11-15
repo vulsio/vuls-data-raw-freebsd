@@ -1,0 +1,45 @@
+{
+  "vid": "42a2c82a-75b9-11e1-89b4-001ec9578670",
+  "topic": "quagga -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "quagga"
+      ],
+      "range": [
+        {
+          "lt": "0.99.20.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "quagga-re"
+      ],
+      "range": [
+        {
+          "lt": "0.99.17.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/551715\">\n\t  <p>The ospfd implementation of OSPF in Quagga allows a remote\n\t    attacker (on a local network segment with OSPF enabled) to cause\n\t    a denial of service (daemon aborts due to an assert) with a\n\t    malformed OSPF LS-Update message.</p>\n\t  <p>The ospfd implementation of OSPF in Quagga allows a remote\n\t    attacker (on a local network segment with OSPF enabled) to cause\n\t    a denial of service (daemon crash) with a malformed OSPF Network-\n\t    LSA message.</p>\n\t  <p>The bgpd implementation of BGP in Quagga allows remote attackers\n\t    to cause a denial of service (daemon aborts due to an assert) via\n\t    BGP Open message with an invalid AS4 capability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kb.cert.org/vuls/id/551715"
+    ],
+    "cvename": [
+      "CVE-2012-0249",
+      "CVE-2012-0250",
+      "CVE-2012-0255"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-03-23",
+    "entry": "2012-03-24",
+    "modified": "2012-03-26"
+  }
+}

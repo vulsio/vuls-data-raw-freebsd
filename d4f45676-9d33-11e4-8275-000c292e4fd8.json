@@ -1,0 +1,44 @@
+{
+  "vid": "d4f45676-9d33-11e4-8275-000c292e4fd8",
+  "topic": "samba -- Elevation of privilege to Active Directory Domain Controller",
+  "affects": [
+    {
+      "name": [
+        "samba4"
+      ],
+      "range": [
+        {
+          "lt": "4.0.23",
+          "ge": "4.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba41"
+      ],
+      "range": [
+        {
+          "lt": "4.1.15",
+          "ge": "4.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Samba team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2014-8143\">\n\t  <p>In Samba's AD DC we neglected to ensure that\n\t  attempted modifications of the userAccountControl attribute\n\t  did not allow the UF_SERVER_TRUST_ACCOUNT bit to be set.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.samba.org/samba/security/CVE-2014-8143"
+    ],
+    "cvename": [
+      "CVE-2014-8143"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-01-15",
+    "entry": "2015-01-16"
+  }
+}

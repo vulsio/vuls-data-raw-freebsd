@@ -1,0 +1,52 @@
+{
+  "vid": "fd64188d-a71d-11e0-89b4-001ec9578670",
+  "topic": "BIND -- Remote DoS against authoritative and recursive servers",
+  "affects": [
+    {
+      "name": [
+        "bind96"
+      ],
+      "range": [
+        {
+          "lt": "9.6.3.1.ESV.R4.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind97"
+      ],
+      "range": [
+        {
+          "lt": "9.7.3.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind98"
+      ],
+      "range": [
+        {
+          "lt": "9.8.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://www.isc.org/software/bind/advisories/cve-2011-2464\">\n\t  <p>A defect in the affected BIND 9 versions allows an attacker to\n\t    remotely cause the \"named\" process to exit using a specially\n\t    crafted packet.</p>\n\t  <p>This defect affects both recursive and authoritative servers.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.isc.org/software/bind/advisories/cve-2011-2464"
+    ],
+    "cvename": [
+      "CVE-2011-2464"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-07-05",
+    "entry": "2011-07-05"
+  }
+}

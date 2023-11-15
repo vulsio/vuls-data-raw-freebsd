@@ -1,0 +1,34 @@
+{
+  "vid": "f923205f-6e66-11ee-85eb-84a93843eb75",
+  "topic": "Apache httpd -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.58"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache httpd project reports:</p>\n\t<blockquote cite=\"https://dlcdn.apache.org/httpd/CHANGES_2.4.58\">\n\t  <ul>\n\t    <li>CVE-2023-45802: Apache HTTP Server: HTTP/2 stream\n\t      memory not reclaimed right away on RST</li>\n\t    <li>CVE-2023-43622: Apache HTTP Server: DoS in HTTP/2 with\n\t      initial windows size 0</li>\n\t    <li>CVE-2023-31122: mod_macro buffer over-read</li>\n\t  </ul>\n\t</blockquote>\n\t"
+  },
+  "references": {
+    "url": [
+      "https://dlcdn.apache.org/httpd/CHANGES_2.4.58"
+    ],
+    "cvename": [
+      "CVE-2023-45802",
+      "CVE-2023-43622",
+      "CVE-2023-31122"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-19",
+    "entry": "2023-10-19"
+  }
+}

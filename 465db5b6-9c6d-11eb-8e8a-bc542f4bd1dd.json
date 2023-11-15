@@ -1,0 +1,49 @@
+{
+  "vid": "465db5b6-9c6d-11eb-8e8a-bc542f4bd1dd",
+  "topic": "xorg-server -- Input validation failures in X server XInput extension",
+  "affects": [
+    {
+      "name": [
+        "xorg-server"
+      ],
+      "range": [
+        {
+          "lt": "1.20.11,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xwayland"
+      ],
+      "range": [
+        {
+          "lt": "1.20.11,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xwayland-devel"
+      ],
+      "range": [
+        {
+          "le": "1.20.0.877"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>X.Org server security reports for release 1.20.11:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg/2021-April/060678.html\">\n\t  <ul>\n\t    <li>Fix XChangeFeedbackControl() request underflow</li>\n\t  </ul>\n\t  <p>.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://gitlab.freedesktop.org/xorg/xserver/-/tags/xorg-server-1.20.11"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-13",
+    "entry": "2021-04-13"
+  }
+}

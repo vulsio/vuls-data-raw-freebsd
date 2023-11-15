@@ -1,0 +1,70 @@
+{
+  "vid": "ec49f6b5-ee39-11e8-b2f4-74d435b63d51",
+  "topic": "php-imap -- imap_open allows to run arbitrary shell commands via mailbox parameter",
+  "affects": [
+    {
+      "name": [
+        "php56-imap"
+      ],
+      "range": [
+        {
+          "lt": "5.6.38_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php70-imap"
+      ],
+      "range": [
+        {
+          "lt": "*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php71-imap"
+      ],
+      "range": [
+        {
+          "lt": "*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php72-imap"
+      ],
+      "range": [
+        {
+          "lt": "*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php73-imap"
+      ],
+      "range": [
+        {
+          "lt": "*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP team reports:</p>\n\t<blockquote cite=\"https://bugs.php.net/bug.php?id=77153\">\n\t  <p>imap_open allows to run arbitrary shell commands via mailbox parameter.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.php.net/bug.php?id=77153"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-10-23",
+    "entry": "2018-11-22",
+    "modified": "2018-11-22"
+  }
+}

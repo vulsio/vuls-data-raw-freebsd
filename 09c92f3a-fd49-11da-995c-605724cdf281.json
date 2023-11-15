@@ -1,0 +1,37 @@
+{
+  "vid": "09c92f3a-fd49-11da-995c-605724cdf281",
+  "topic": "WebCalendar -- information disclosure vulnerability",
+  "affects": [
+    {
+      "name": [
+        "WebCalendar"
+      ],
+      "range": [
+        {
+          "lt": "1.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/20367/\">\n\t  <p>socsam has discovered a vulnerability in WebCalendar,\n\t    which can be exploited by malicious people to bypass\n\t    certain security restrictions and disclose sensitive\n\t    information.</p>\n\t  <p>Input passed to the \"includedir\" parameter isn't properly\n\t    verified, before it is used in an \"fopen()\" call. This can\n\t    be exploited to load an arbitrary setting file from an\n\t    external web site.</p>\n\t  <p>This can further be exploited to disclose the content of\n\t    arbitrary files by defining the \"user_inc\" variable in a\n\t    malicious setting file.</p>\n\t  <p>Successful exploitation requires that \"register_globals\"\n\t    is enabled.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securityfocus.com/archive/1/435379",
+      "http://www.securityfocus.com/archive/1/436263"
+    ],
+    "cvename": [
+      "CVE-2006-2762"
+    ],
+    "bid": [
+      "18175"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-05-30",
+    "entry": "2006-06-16",
+    "modified": "2006-06-17"
+  }
+}

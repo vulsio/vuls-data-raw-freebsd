@@ -1,0 +1,41 @@
+{
+  "vid": "02fb9764-1893-11ed-9b22-002590c1f29c",
+  "topic": "FreeBSD -- Memory disclosure by stale virtual memory mapping",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "13.1_1",
+          "ge": "13.1"
+        },
+        {
+          "lt": "13.0_12",
+          "ge": "13.0"
+        },
+        {
+          "lt": "12.3_6",
+          "ge": "12.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A particular case of memory sharing is mishandled in the virtual\n\tmemory system.  This is very similar to SA-21:08.vm, but with a\n\tdifferent root cause.</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged local user process can maintain a mapping of a page\n\tafter it is freed, allowing that process to read private data\n\tbelonging to other processes or the kernel.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2022-23091"
+    ],
+    "freebsd_sa": [
+      "SA-22:11.vm"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-08-09",
+    "entry": "2022-08-10"
+  }
+}

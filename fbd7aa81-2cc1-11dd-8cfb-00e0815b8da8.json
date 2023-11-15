@@ -1,0 +1,50 @@
+{
+  "vid": "fbd7aa81-2cc1-11dd-8cfb-00e0815b8da8",
+  "topic": "Nagios -- Cross Site Scripting Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "nagios"
+      ],
+      "range": [
+        {
+          "lt": "2.12"
+        },
+        {
+          "lt": "3.0.2",
+          "gt": "3.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nagios-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30283\">\n\t  <p>A vulnerability has been reported in Nagios, which can be\n\t    exploited by malicious people to conduct cross-site scripting\n\t    attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/30283"
+    ],
+    "cvename": [
+      "CVE-2007-5803"
+    ],
+    "bid": [
+      "29140"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-05-20",
+    "entry": "2008-05-28",
+    "modified": "2008-09-08"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vid": "eef56761-11eb-11e1-bb94-001c140104d4",
+  "topic": "hiawatha -- memory leak in PreventSQLi routine",
+  "affects": [
+    {
+      "name": [
+        "hiawatha"
+      ],
+      "range": [
+        {
+          "lt": "7.8.2",
+          "ge": "7.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Hugo Leisink reports via private mail to maintainer:</p>\n\t<blockquote>\n\t  <p>The memory leak was introduced in version 7.6.  It is in the\n\t    routing that checks for SQL injections.  So, if you have set\n\t    PreventSQLi to 'no', there is no problem.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.hiawatha-webserver.org/changelog"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-11-18",
+    "entry": "2011-11-18"
+  }
+}

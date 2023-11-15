@@ -1,0 +1,35 @@
+{
+  "vid": "e543c6f8-abf2-11e4-8ac7-d050992ecde8",
+  "topic": "unzip -- out of boundary access issues in test_compr_eb",
+  "affects": [
+    {
+      "name": [
+        "unzip"
+      ],
+      "range": [
+        {
+          "lt": "6.0_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ubuntu Security Notice USN-2489-1 reports:</p>\n\t<blockquote cite=\"http://www.ubuntu.com/usn/usn-2489-1/\">\n\t  <p>Michal Zalewski discovered that unzip incorrectly handled\n\t    certain malformed zip archives. If a user or automated system\n\t    were tricked into processing a specially crafted zip archive,\n\t    an attacker could possibly execute arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ubuntu.com/usn/usn-2489-1/",
+      "http://people.canonical.com/~ubuntu-security/cve/2014/CVE-2014-9636.html",
+      "http://seclists.org/oss-sec/2014/q4/489",
+      "http://www.info-zip.org/phpBB3/viewtopic.php?f=7&t=450"
+    ],
+    "cvename": [
+      "CVE-2014-9636"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-02",
+    "entry": "2015-02-03"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "vid": "45b8e2eb-7056-11e8-8fab-63ca6e0e13a2",
+  "topic": "node.js -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "node6"
+      ],
+      "range": [
+        {
+          "lt": "6.14.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node8"
+      ],
+      "range": [
+        {
+          "lt": "8.11.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node"
+      ],
+      "range": [
+        {
+          "lt": "10.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/june-2018-security-releases/\">\n\t  <h1>Denial of Service Vulnerability in HTTP/2 (CVE-2018-7161)</h1>\n\t  <p>All versions of 8.x and later are vulnerable and the severity is\n\t    HIGH. An attacker can cause a denial of service (DoS) by causing a\n\t    node server providing an http2 server to crash. This can be\n\t    accomplished by interacting with the http2 server in a manner that\n\t    triggers a cleanup bug where objects are used in native code after\n\t    they are no longer available. This has been addressed by updating\n\t    the http2 implementation. Thanks to Jordan Zebor at F5 Networks for\n\t    reporting this issue.</p>\n\t  <h1>Denial of Service, nghttp2 dependency (CVE-2018-1000168)</h1>\n\t  <p>All versions of 9.x and later are vulnerable and the severity is\n\t    HIGH. Under certain conditions, a malicious client can trigger an\n\t    uninitialized read (and a subsequent segfault) by sending a\n\t    malformed ALTSVC frame. This has been addressed through an by\n\t    updating nghttp2.</p>\n\t  <h1>Denial of Service Vulnerability in TLS (CVE-2018-7162)</h1>\n\t  <p>All versions of 9.x and later are vulnerable and the severity is\n\t    HIGH. An attacker can cause a denial of service (DoS) by causing a\n\t    node process which provides an http server supporting TLS server to\n\t    crash. This can be accomplished by sending duplicate/unexpected\n\t    messages during the handshake. This vulnerability has been addressed\n\t    by updating the TLS implementation. Thanks to Jordan Zebor at F5\n\t    Networks all of his help investigating this issue with the Node.js\n\t    team.</p>\n\t  <h1>Memory exhaustion DoS on v9.x (CVE-2018-7164)</h1>\n\t  <p>Versions 9.7.0 and later are vulnerable and the severity is MEDIUM.\n\t    A bug introduced in 9.7.0 increases the memory consumed when reading\n\t    from the network into JavaScript using the net.Socket object\n\t    directly as a stream. An attacker could use this cause a denial of\n\t    service by sending tiny chunks of data in short succession. This\n\t    vulnerability was restored by reverting to the prior behaviour.</p>\n\t  <h1>Calls to Buffer.fill() and/or Buffer.alloc() may hang (CVE-2018-7167)</h1>\n\t  <p>Calling Buffer.fill() or Buffer.alloc() with some parameters can\n\t    lead to a hang which could result in a Denial of Service. In order\n\t    to address this vulnerability, the implementations of Buffer.alloc()\n\t    and Buffer.fill() were updated so that they zero fill instead of\n\t    hanging in these cases.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nodejs.org/en/blog/vulnerability/june-2018-security-releases/",
+      "https://nghttp2.org/blog/2018/04/12/nghttp2-v1-31-1/"
+    ],
+    "cvename": [
+      "CVE-2018-7161",
+      "CVE-2018-7162",
+      "CVE-2018-7164",
+      "CVE-2018-7167",
+      "CVE-2018-1000168"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-12",
+    "entry": "2018-06-15"
+  }
+}

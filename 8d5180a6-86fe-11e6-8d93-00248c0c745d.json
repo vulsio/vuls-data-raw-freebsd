@@ -1,0 +1,38 @@
+{
+  "vid": "8d5180a6-86fe-11e6-8d93-00248c0c745d",
+  "topic": "PHP -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php56"
+      ],
+      "range": [
+        {
+          "lt": "5.6.26"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.6.26\">\n\t<ul>\n\t  <li><p>Fixed bug #73007 (add locale length check)</p></li>\n\t  <li><p>Fixed bug #72293 (Heap overflow in mysqlnd related to BIT fields)</p></li>\n\t  <li><p>Fixed bug #72928 (Out of bound when verify signature of zip phar in phar_parse_zipfile)</p></li>\n\t  <li><p>Fixed bug #73029 (Missing type check when unserializing SplArray)</p></li>\n\t  <li><p>Fixed bug #73052 (Memory Corruption in During Deserialized-object Destruction)</p></li>\n\t  <li><p>Fixed bug #72860 (wddx_deserialize use-after-free)</p></li>\n\t  <li><p>Fixed bug #73065 (Out-Of-Bounds Read in php_wddx_push_element)</p></li>\n\t</ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-5.php#5.6.26"
+    ],
+    "cvename": [
+      "CVE-2016-7416",
+      "CVE-2016-7412",
+      "CVE-2016-7414",
+      "CVE-2016-7417",
+      "CVE-2016-7411",
+      "CVE-2016-7413",
+      "CVE-2016-7418"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-16",
+    "entry": "2016-09-30"
+  }
+}

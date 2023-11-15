@@ -1,0 +1,55 @@
+{
+  "vid": "bd349f7a-b3b9-11e5-8255-5453ed2e2b49",
+  "topic": "tiff -- out-of-bounds read in tif_getimage.c",
+  "affects": [
+    {
+      "name": [
+        "tiff"
+      ],
+      "range": [
+        {
+          "lt": "4.0.6_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c6-tiff"
+      ],
+      "range": [
+        {
+          "lt": "3.9.4_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-f10-tiff"
+      ],
+      "range": [
+        {
+          "ge": "*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>LMX of Qihoo 360 Codesafe Team discovered an out-of-bounds read in\n\t  tif_getimage.c. An attacker could create a specially-crafted TIFF\n\t  file that could cause libtiff to crash.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2015-8665"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.openwall.com/lists/oss-security/2015/12/24/2"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-24",
+    "entry": "2016-01-05",
+    "modified": "2016-09-06"
+  }
+}

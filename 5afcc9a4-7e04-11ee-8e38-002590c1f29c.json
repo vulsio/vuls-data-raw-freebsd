@@ -1,0 +1,37 @@
+{
+  "vid": "5afcc9a4-7e04-11ee-8e38-002590c1f29c",
+  "topic": "FreeBSD -- libc stdio buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "13.2_5",
+          "ge": "13.2"
+        },
+        {
+          "lt": "12.4_7",
+          "ge": "12.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>For line-buffered streams the __sflush() function did not\n\tcorrectly update the FILE object's write space member when the\n\twrite(2) system call returns an error.</p>\n\t<h1>Impact:</h1>\n\t<p>Depending on the nature of an application that calls libc's\n\tstdio functions and the presence of errors returned from the write(2)\n\tsystem call (or an overridden stdio write routine) a heap buffer\n\toverfly may occur.  Such overflows may lead to data corruption or\n\tthe execution of arbitrary code at the privilege level of the calling\n\tprogram.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2023-5941"
+    ],
+    "freebsd_sa": [
+      "SA-23:15.stdio"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-11-08",
+    "entry": "2023-11-08"
+  }
+}

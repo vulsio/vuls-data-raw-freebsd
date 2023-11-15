@@ -1,0 +1,33 @@
+{
+  "vid": "e4133d8b-ab33-451a-bc68-3719de73d54a",
+  "topic": "routinator -- potential DOS attack",
+  "affects": [
+    {
+      "name": [
+        "routinator"
+      ],
+      "range": [
+        {
+          "lt": "0.11.3",
+          "ge": "0.9.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>\n\t Due to a mistake in error handling, data in RRDP snapshot and delta files\n\t that isn’t correctly base 64 encoded is treated as a fatal error and causes\n\t Routinator to exit.\n\n\t Worst case impact of this vulnerability is denial of service for the RPKI\n\t data that Routinator provides to routers. This may stop your network from\n\t validating route origins based on RPKI data. This vulnerability does not\n\t allow an attacker to manipulate RPKI data. We are not aware of exploitation\n\t of this vulnerability at this point in time.\n\n\t Starting with release 0.11.3, Routinator handles encoding errors by rejecting\n\t the snapshot or delta file and continuing with validation. In case of an\n\t invalid delta file, it will try using the snapshot instead. If a snapshot file\n\t is invalid, the update of the repository will fail and an update through rsync\n\t is attempted.\n\t </p>\n\t<blockquote cite=\"https://www.cvedetails.com/cve/CVE-2022-3029/\">\n\t  <p>.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nlnetlabs.nl/downloads/routinator/CVE-2022-3029.txt"
+    ],
+    "cvename": [
+      "CVE-2022-3029"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-10-06",
+    "entry": "2022-10-07"
+  }
+}

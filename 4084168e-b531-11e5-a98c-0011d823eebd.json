@@ -1,0 +1,39 @@
+{
+  "vid": "4084168e-b531-11e5-a98c-0011d823eebd",
+  "topic": "mbedTLS/PolarSSL -- SLOTH attack on TLS 1.2 server authentication",
+  "affects": [
+    {
+      "name": [
+        "polarssl13"
+      ],
+      "range": [
+        {
+          "lt": "1.3.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mbedtls"
+      ],
+      "range": [
+        {
+          "lt": "2.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ARM Limited reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/releases/mbedtls-2.2.1-2.1.4-1.3.16-and-polarssl.1.2.19-released\">\n\t  <p>MD5 handshake signatures in TLS 1.2 are vulnerable to the SLOTH attack\n\t    on TLS 1.2 server authentication.  They have been disabled by default.\n\t    Other attacks from the SLOTH paper do not apply to any version of mbed\n\t    TLS or PolarSSL.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://tls.mbed.org/tech-updates/releases/mbedtls-2.2.1-2.1.4-1.3.16-and-polarssl.1.2.19-released"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-04",
+    "entry": "2016-01-07"
+  }
+}

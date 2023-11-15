@@ -1,0 +1,35 @@
+{
+  "vid": "98f1241f-8c09-4237-ad0d-67fb4158ea7a",
+  "topic": "Mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "60.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-17/\">\n\t  <h1>CVE-2019-11703: Heap buffer overflow in icalparser.c</h1>\n\t  <p>A flaw in Thunderbird's implementation of iCal causes a heap\n\t    buffer overflow in parser_get_next_char when processing certain\n\t    email messages, resulting in a potentially exploitable crash.</p>\n\t  <h1>CVE-2019-11704: Heap buffer overflow in icalvalue.c</h1>\n\t  <p>A flaw in Thunderbird's implementation of iCal causes a heap\n\t    buffer overflow in icalmemory_strdup_and_dequote when processing\n\t    certain email messages, resulting in a potentially exploitable\n\t    crash.</p>\n\t  <h1>CVE-2019-11705: Stack buffer overflow in icalrecur.c</h1>\n\t  <p>A flaw in Thunderbird's implementation of iCal causes a stack\n\t    buffer overflow in icalrecur_add_bydayrules when processing\n\t    certain email messages, resulting in a potentially exploitable\n\t    crash.</p>\n\t  <h1>CVE-2019-11706: Type confusion in icalproperty.c</h1>\n\t  <p>A flaw in Thunderbird's implementation of iCal causes a type\n\t    confusion in icaltimezone_get_vtimezone_properties when\n\t    processing certain email messages, resulting in a crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2019-17/"
+    ],
+    "cvename": [
+      "CVE-2019-11703",
+      "CVE-2019-11704",
+      "CVE-2019-11705",
+      "CVE-2019-11706"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-06-13",
+    "entry": "2019-06-21"
+  }
+}

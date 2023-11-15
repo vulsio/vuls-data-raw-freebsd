@@ -1,0 +1,43 @@
+{
+  "vid": "f671c282-95ef-11eb-9c34-080027f515ea",
+  "topic": "python -- Information disclosure via pydoc -p: /getfile?key=path allows to read arbitrary file on the filesystem",
+  "affects": [
+    {
+      "name": [
+        "python38"
+      ],
+      "range": [
+        {
+          "lt": "3.8.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python39"
+      ],
+      "range": [
+        {
+          "lt": "3.9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>David Schwörer reports:</p>\n\t<blockquote cite=\"https://pythoninsider.blogspot.com/2021/04/python-393-and-389-are-now-available.html\">\n\t  <p>\n\t    Remove the getfile feature of the pydoc module which could be\n\t    abused to read arbitrary files on the disk (directory traversal\n\t    vulnerability). Moreover, even source code of Python modules\n\t    can contain sensitive data like passwords.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://pythoninsider.blogspot.com/2021/04/python-393-and-389-are-now-available.html",
+      "https://bugs.python.org/issue42988"
+    ],
+    "cvename": [
+      "CVE-2021-3426"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-01-21",
+    "entry": "2021-04-10"
+  }
+}

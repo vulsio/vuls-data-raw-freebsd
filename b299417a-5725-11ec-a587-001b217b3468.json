@@ -1,0 +1,59 @@
+{
+  "vid": "b299417a-5725-11ec-a587-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "14.5.2",
+          "ge": "14.5.0"
+        },
+        {
+          "lt": "14.4.4",
+          "ge": "14.4.0"
+        },
+        {
+          "lt": "14.3.6",
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2021/12/06/security-release-gitlab-14-5-2-released/\">\n\t  <p>Group members with developer role can escalate their privilege to maintainer on projects that they import</p>\n\t  <p>When user registration is limited, external users that aren't developers shouldn't have access to the CI Lint API</p>\n\t  <p>Collision in access memoization leads to potential elevated privileges on groups and projects</p>\n\t  <p>Project access token names are returned for unauthenticated requesters</p>\n\t  <p>Sensitive info disclosure in logs</p>\n\t  <p>Disclosure of a user's custom project and group templates</p>\n\t  <p>ReDoS in Maven package version</p>\n\t  <p>Potential denial of service via the Diff feature</p>\n\t  <p>Regular Expression Denial of Service via user comments</p>\n\t  <p>Service desk email accessible by any project member</p>\n\t  <p>Regular Expression Denial of Service via quick actions</p>\n\t  <p>IDOR in \"external status check\" API leaks data about any status check on the instance</p>\n\t  <p>Default branch name visible in public projects restricting access to the source code repository</p>\n\t  <p>Deploy token allows access to disabled project Wiki</p>\n\t  <p>Regular Expression Denial of Service via deploy Slash commands</p>\n\t  <p>Users can reply to Vulnerability Report discussions despite Only Project Members settings</p>\n\t  <p>Unauthorised deletion of protected branches</p>\n\t  <p>Author can approve Merge Request after having access revoked</p>\n\t  <p>HTML Injection via Swagger UI</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2021/12/06/security-release-gitlab-14-5-2-released/"
+    ],
+    "cvename": [
+      "CVE-2021-39944",
+      "CVE-2021-39935",
+      "CVE-2021-39937",
+      "CVE-2021-39915",
+      "CVE-2021-39919",
+      "CVE-2021-39930",
+      "CVE-2021-39940",
+      "CVE-2021-39932",
+      "CVE-2021-39933",
+      "CVE-2021-39934",
+      "CVE-2021-39917",
+      "CVE-2021-39916",
+      "CVE-2021-39941",
+      "CVE-2021-39936",
+      "CVE-2021-39938",
+      "CVE-2021-39918",
+      "CVE-2021-39931",
+      "CVE-2021-39945",
+      "CVE-2021-39910"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-12-06",
+    "entry": "2021-12-07"
+  }
+}

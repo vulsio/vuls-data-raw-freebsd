@@ -1,0 +1,32 @@
+{
+  "vid": "6ca7eddd-d436-486a-b169-b948436bcf14",
+  "topic": "libvpx -- buffer overflow in vp9_init_context_buffers",
+  "affects": [
+    {
+      "name": [
+        "libvpx"
+      ],
+      "range": [
+        {
+          "lt": "1.4.0.488_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/security/advisories/mfsa2015-101/\">\n\t  <p>Security researcher Khalil Zhani reported that a\n\t    maliciously crafted vp9 format video could be used to\n\t    trigger a buffer overflow while parsing the file. This leads\n\t    to a potentially exploitable crash due to a flaw in the\n\t    libvpx library.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2015-101/"
+    ],
+    "cvename": [
+      "CVE-2015-4506"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-22",
+    "entry": "2015-11-10"
+  }
+}

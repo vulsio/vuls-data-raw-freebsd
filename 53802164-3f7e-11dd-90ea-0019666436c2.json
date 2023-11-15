@@ -1,0 +1,46 @@
+{
+  "vid": "53802164-3f7e-11dd-90ea-0019666436c2",
+  "topic": "ruby -- multiple integer and buffer overflow vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ruby",
+        "ruby+pthreads",
+        "ruby+pthreads+oniguruma",
+        "ruby+oniguruma"
+      ],
+      "range": [
+        {
+          "lt": "1.8.6.111_3,1",
+          "ge": "1.8.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby_static"
+      ],
+      "range": [
+        {
+          "ge": "1.8.*,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The official ruby site reports:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2008/06/20/arbitrary-code-execution-vulnerabilities/\">\n\t  <p>Multiple vulnerabilities in Ruby may lead to a denial of service\n\t    (DoS) condition or allow execution of arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ruby-lang.org/en/news/2008/06/20/arbitrary-code-execution-vulnerabilities/"
+    ],
+    "cvename": [
+      "CVE-2008-2726"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-06-19",
+    "entry": "2008-06-21"
+  }
+}

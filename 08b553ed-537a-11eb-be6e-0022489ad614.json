@@ -1,0 +1,65 @@
+{
+  "vid": "08b553ed-537a-11eb-be6e-0022489ad614",
+  "topic": "Node.js -- January 2021 Security Releases",
+  "affects": [
+    {
+      "name": [
+        "node10"
+      ],
+      "range": [
+        {
+          "lt": "10.23.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node12"
+      ],
+      "range": [
+        {
+          "lt": "12.20.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node14"
+      ],
+      "range": [
+        {
+          "lt": "14.15.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node"
+      ],
+      "range": [
+        {
+          "lt": "15.5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/january-2021-security-releases/\">\n\t  <h1>use-after-free in TLSWrap (High) (CVE-2020-8265)</h1>\n\t  <p>Affected Node.js versions are vulnerable to a use-after-free bug in its TLS implementation. When writing to a TLS enabled socket, node::StreamBase::Write calls node::TLSWrap::DoWrite with a freshly allocated WriteWrap object as first argument. If the DoWrite method does not return an error, this object is passed back to the caller as part of a StreamWriteResult structure. This may be exploited to corrupt memory leading to a Denial of Service or potentially other exploits.</p>\n\t  <h1>HTTP Request Smuggling in nodejs (Low) (CVE-2020-8287)</h1>\n\t  <p>Affected versions of Node.js allow two copies of a header field in a http request. For example, two Transfer-Encoding header fields. In this case Node.js identifies the first header field and ignores the second. This can lead to HTTP Request Smuggling.</p>\n\t  <h1>OpenSSL - EDIPARTYNAME NULL pointer de-reference (CVE-2020-1971)</h1>\n\t  <p>iThis is a vulnerability in OpenSSL which may be exploited through Node.js. You can read more about it in https://www.openssl.org/news/secadv/20201208.txt.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nodejs.org/en/blog/vulnerability/january-2021-security-releases/",
+      "https://www.openssl.org/news/secadv/20201208.txt"
+    ],
+    "cvename": [
+      "CVE-2020-8265",
+      "CVE-2020-8287",
+      "CVE-2020-1971"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-01-04",
+    "entry": "2021-01-14"
+  }
+}

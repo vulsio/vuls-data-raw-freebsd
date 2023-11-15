@@ -1,0 +1,32 @@
+{
+  "vid": "0d732fd1-27e0-11e5-a4a5-002590263bf5",
+  "topic": "xen-tools -- HVM qemu unexpectedly enabling emulated VGA graphics backends",
+  "affects": [
+    {
+      "name": [
+        "xen-tools"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-119.html\">\n\t  <p>When instantiating an emulated VGA device for an x86 HVM guest qemu\n\t    will by default enable a backend to expose that device, either SDL\n\t    or VNC depending on the version of qemu and the build time\n\t    configuration.</p>\n\t  <p>The libxl toolstack library does not explicitly disable these\n\t    default backends when they are not enabled, leading to an unexpected\n\t    backend running.</p>\n\t  <p>If either SDL or VNC is explicitly enabled in the guest\n\t    configuration then only the expected backends will be enabled.</p>\n\t  <p>This affects qemu-xen and qemu-xen-traditional differently.</p>\n\t  <p>If qemu-xen was compiled with SDL support then this would result in\n\t    an SDL window being opened if $DISPLAY is valid, or a failure to\n\t    start the guest if not.</p>\n\t  <p>If qemu-xen was compiled without SDL support then qemu would\n\t    instead start a VNC server listening on ::1 (IPv6 localhost) or\n\t    127.0.0.1 (IPv4 localhost) with IPv6 preferred if available. A VNC\n\t    password will not be configured even if one is present in the guest\n\t    configuration.</p>\n\t  <p>qemu-xen-traditional will never start a vnc backend unless\n\t    explicitly configured. However by default it will start an SDL\n\t    backend if it was built with SDL support and $DISPLAY is valid.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-119.html"
+    ],
+    "cvename": [
+      "CVE-2015-2152"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-13",
+    "entry": "2015-07-11"
+  }
+}

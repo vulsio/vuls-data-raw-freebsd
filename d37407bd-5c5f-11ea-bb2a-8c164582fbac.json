@@ -1,0 +1,104 @@
+{
+  "vid": "d37407bd-5c5f-11ea-bb2a-8c164582fbac",
+  "topic": "TiMidity++ -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "timidity++"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "timidity++-emacs"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "timidity++-gtk"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "timidity++-motif"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "timidity++-slang"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "timidity++-tcltk"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "timidity++-xaw"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "timidity++-xskin"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>qflb.wu of DBAPPSecurity reports:</p>\n\t<blockquote cite=\"https://seclists.org/fulldisclosure/2017/Jul/83\">\n\t  <p>Ihe insert_note_steps function in readmidi.c in TiMidity++ 2.14.0\n\t  can cause a denial of service(divide-by-zero error and application\n\t  crash) via a crafted mid file.</p>\n\t  <p>The resample_gauss function in resample.c in TiMidity++ 2.14.0\n\t  can cause a denial of service(heap-buffer-overflow) via a crafted\n\t  mid file.</p>\n\t  <p>The play_midi function in playmidi.c in TiMidity++ 2.14.0 can\n\t  cause a denial of service(large loop and CPU consumption) via\n\t  a crafted mid file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://seclists.org/fulldisclosure/2017/Jul/83"
+    ],
+    "cvename": [
+      "CVE-2017-11546",
+      "CVE-2017-11547",
+      "CVE-2017-11549"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-07-31",
+    "entry": "2020-03-02"
+  }
+}

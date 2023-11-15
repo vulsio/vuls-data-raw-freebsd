@@ -1,0 +1,35 @@
+{
+  "vid": "51d1d428-42f0-11de-ad22-000e35248ad7",
+  "topic": "libxine -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.1.16.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Multiple vulnerabilities were fixed in libxine 1.1.16.2.</p>\n\t<p>Tobias Klein reports:</p>\n\t<blockquote cite=\"http://trapkit.de/advisories/TKADV2009-004.txt\">\n\t  <p>FFmpeg contains a type conversion vulnerability while\n\t    parsing malformed 4X movie files. The vulnerability may be\n\t    exploited by a (remote) attacker to execute arbitrary code in\n\t    the context of FFmpeg or an application using the FFmpeg\n\t    library.</p>\n\t  <p>Note: A similar issue also affects xine-lib &lt; version\n\t    1.1.16.2.</p>\n\t</blockquote>\n\t<p>xine developers report:</p>\n\t<blockquote cite=\"http://sourceforge.net/project/shownotes.php?group_id=9655&amp;release_id=660071\">\n\t  <ul>\n\t    <li>Fix broken size checks in various input plugins (ref.\n\t      CVE-2008-5239).</li>\n\t    <li>More malloc checking (ref. CVE-2008-5240).</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://trapkit.de/advisories/TKADV2009-004.txt",
+      "http://sourceforge.net/project/shownotes.php?release_id=660071"
+    ],
+    "cvename": [
+      "CVE-2009-0698",
+      "CVE-2008-5234",
+      "CVE-2008-5240"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-02-15",
+    "entry": "2009-05-17"
+  }
+}

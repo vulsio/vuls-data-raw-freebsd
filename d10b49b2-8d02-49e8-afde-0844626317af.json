@@ -1,0 +1,97 @@
+{
+  "vid": "d10b49b2-8d02-49e8-afde-0844626317af",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "64.0_3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "waterfox"
+      ],
+      "range": [
+        {
+          "lt": "56.2.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.53.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "60.4.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "60.4.0,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul",
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "60.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-29/\">\n\t  <p>CVE-2018-12407: Buffer overflow with ANGLE library when using VertexBuffer11 module</p>\n\t  <p>CVE-2018-17466: Buffer overflow and out-of-bounds read in ANGLE library with TextureStorage11</p>\n\t  <p>CVE-2018-18492: Use-after-free with select element</p>\n\t  <p>CVE-2018-18493: Buffer overflow in accelerated 2D canvas with Skia</p>\n\t  <p>CVE-2018-18494: Same-origin policy violation using location attribute and performance.getEntries to steal cross-origin URLs</p>\n\t  <p>CVE-2018-18495: WebExtension content scripts can be loaded in about: pages</p>\n\t  <p>CVE-2018-18496: Embedded feed preview page can be abused for clickjacking</p>\n\t  <p>CVE-2018-18497: WebExtensions can load arbitrary URLs through pipe separators</p>\n\t  <p>CVE-2018-18498: Integer overflow when calculating buffer sizes for images</p>\n\t  <p>CVE-2018-12406: Memory safety bugs fixed in Firefox 64</p>\n\t  <p>CVE-2018-12405: Memory safety bugs fixed in Firefox 64 and Firefox ESR 60.4</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2018-29/",
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2018-30/"
+    ],
+    "cvename": [
+      "CVE-2018-12405",
+      "CVE-2018-12406",
+      "CVE-2018-12407",
+      "CVE-2018-17466",
+      "CVE-2018-18492",
+      "CVE-2018-18493",
+      "CVE-2018-18494",
+      "CVE-2018-18495",
+      "CVE-2018-18496",
+      "CVE-2018-18497",
+      "CVE-2018-18498"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-12-11",
+    "entry": "2018-12-11",
+    "modified": "2019-07-23"
+  }
+}

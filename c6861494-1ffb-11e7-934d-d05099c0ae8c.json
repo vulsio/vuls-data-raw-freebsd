@@ -1,0 +1,67 @@
+{
+  "vid": "c6861494-1ffb-11e7-934d-d05099c0ae8c",
+  "topic": "BIND -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "bind99"
+      ],
+      "range": [
+        {
+          "lt": "9.9.9P8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind910"
+      ],
+      "range": [
+        {
+          "lt": "9.10.4P8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind911"
+      ],
+      "range": [
+        {
+          "lt": "9.11.0P5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind9-devel"
+      ],
+      "range": [
+        {
+          "le": "9.12.0.a.2017.03.25"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01465/0\">\n\t  <p>A query with a specific set of characteristics could\n\t    cause a server using DNS64 to encounter an assertion\n\t    failure and terminate.</p>\n\t  <p>An attacker could deliberately construct a query,\n\t    enabling denial-of-service against a server if it\n\t    was configured to use the DNS64 feature and other\n\t    preconditions were met.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01466/0\">\n\t  <p>Mistaken assumptions about the ordering of records in\n\t    the answer section of a response containing CNAME or\n\t    DNAME resource records could lead to a situation in\n\t    which named would exit with an assertion failure when\n\t    processing a response in which records occurred in an\n\t    unusual order.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01471/0\">\n\t  <p>named contains a feature which allows operators to\n\t    issue commands to a running server by communicating\n\t    with the server process over a control channel,\n\t    using a utility program such as rndc.</p>\n\t  <p>A regression introduced in a recent feature change\n\t    has created a situation under which some versions of\n\t    named can be caused to exit with a REQUIRE assertion\n\t    failure if they are sent a null command string.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/article/AA-01465/0",
+      "https://kb.isc.org/article/AA-01466/0",
+      "https://kb.isc.org/article/AA-01471/0"
+    ],
+    "cvename": [
+      "CVE-2017-3136",
+      "CVE-2017-3137",
+      "CVE-2017-3138"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-04-12",
+    "entry": "2017-04-13",
+    "modified": "2017-04-13"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "1daea60a-4719-11da-b5c6-0004614cc33d",
+  "topic": "ruby -- vulnerability in the safe level settings",
+  "affects": [
+    {
+      "name": [
+        "ruby",
+        "ruby_static"
+      ],
+      "range": [
+        {
+          "lt": "1.6.8.2004.07.28_2",
+          "gt": "1.6.*"
+        },
+        {
+          "lt": "1.8.2_5",
+          "gt": "1.8.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ruby home page reports:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/20051003.html\">\n\t  <p>The Object Oriented Scripting Language Ruby supports\n\t    safely executing an untrusted code with two mechanisms:\n\t    safe level and taint flag on objects.</p>\n\t  <p>A vulnerability has been found that allows bypassing\n\t    these mechanisms.</p>\n\t  <p>By using the vulnerability, arbitrary code can be executed\n\t    beyond the restrictions specified in each safe level.\n\t    Therefore, Ruby has to be updated on all systems that use\n\t    safe level to execute untrusted code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ruby-lang.org/en/20051003.html"
+    ],
+    "cvename": [
+      "CVE-2005-2337"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-02",
+    "entry": "2005-10-27"
+  }
+}

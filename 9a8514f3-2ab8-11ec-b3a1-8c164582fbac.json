@@ -1,0 +1,82 @@
+{
+  "vid": "9a8514f3-2ab8-11ec-b3a1-8c164582fbac",
+  "topic": "Ansible -- Ansible user credentials disclosure in ansible-connection module",
+  "affects": [
+    {
+      "name": [
+        "py36-ansible-core",
+        "py37-ansible-core",
+        "py38-ansible-core",
+        "py39-ansible-core",
+        "py310-ansible-core"
+      ],
+      "range": [
+        {
+          "lt": "2.11.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py36-ansible-base",
+        "py37-ansible-base",
+        "py38-ansible-base",
+        "py39-ansible-base",
+        "py310-ansible-base"
+      ],
+      "range": [
+        {
+          "lt": "2.10.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py36-ansible2",
+        "py37-ansible2",
+        "py38-ansible2",
+        "py39-ansible2",
+        "py310-ansible2"
+      ],
+      "range": [
+        {
+          "lt": "2.9.27"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py36-ansible",
+        "py37-ansible",
+        "py38-ansible",
+        "py39-ansible",
+        "py310-ansible"
+      ],
+      "range": [
+        {
+          "lt": "2.9.27"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Red Hat reports:</p>\n\t<blockquote cite=\"\">\n       <p>A flaw was found in Ansible Engine's ansible-connection\n       module, where sensitive information such as the Ansible\n       user credentials is disclosed by default in the traceback\n       error message. The highest threat from this vulnerability\n       is to confidentiality.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://access.redhat.com/security/cve/CVE-2021-3620",
+      "https://nvd.nist.gov/vuln/detail/CVE-2021-3620",
+      "https://github.com/ansible/ansible/blob/stable-2.9/changelogs/CHANGELOG-v2.9.rst#v2-9-27",
+      "https://github.com/ansible/ansible/blob/stable-2.10/changelogs/CHANGELOG-v2.10.rst#v2-10-15",
+      "https://github.com/ansible/ansible/blob/stable-2.11/changelogs/CHANGELOG-v2.11.rst#v2-11-6"
+    ],
+    "cvename": [
+      "CVE-2021-3620"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-06-25",
+    "entry": "2021-10-11"
+  }
+}

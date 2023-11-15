@@ -1,0 +1,42 @@
+{
+  "vid": "4d87d357-202c-11e3-be06-000c29ee3065",
+  "topic": "FreeBSD -- Insufficient credential checks in network ioctl(2)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "9.1_7",
+          "ge": "9.1"
+        },
+        {
+          "lt": "8.4_4",
+          "ge": "8.4"
+        },
+        {
+          "lt": "8.3_11",
+          "ge": "8.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Problem Description:</p>\n\t<p>As is commonly the case, the IPv6 and ATM network layer\n\t  ioctl request handlers are written in such a way that an\n\t  unrecognized request is passed on unmodified to the link\n\t  layer, which will either handle it or return an error\n\t  code.</p>\n\t<p>Network interface drivers, however, assume that the\n\t  SIOCSIFADDR, SIOCSIFBRDADDR, SIOCSIFDSTADDR and\n\t  SIOCSIFNETMASK requests have been handled at the network\n\t  layer, and therefore do not perform input validation or\n\t  verify the caller's credentials.  Typical link-layer actions\n\t  for these requests may include marking the interface as \"up\"\n\t  and resetting the underlying hardware.</p>\n\t<p>Impact:</p>\n\t<p>An unprivileged user with the ability to run arbitrary code\n\t  can cause any network interface in the system to perform the\n\t  link layer actions associated with a SIOCSIFADDR,\n\t  SIOCSIFBRDADDR, SIOCSIFDSTADDR or SIOCSIFNETMASK ioctl\n\t  request; or trigger a kernel panic by passing a specially\n\t  crafted address structure which causes a network interface\n\t  driver to dereference an invalid pointer.</p>\n\t<p>Although this has not been confirmed, the possibility that\n\t  an attacker may be able to execute arbitrary code in kernel\n\t  context cannot be ruled out.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2013-5691"
+    ],
+    "freebsd_sa": [
+      "SA-13:12.ifioctl"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-09-10",
+    "entry": "2013-09-19",
+    "modified": "2016-08-09"
+  }
+}

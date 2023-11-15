@@ -1,0 +1,52 @@
+{
+  "vid": "ab02f981-ab9e-11e6-ae1b-002590263bf5",
+  "topic": "moodle -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "moodle29"
+      ],
+      "range": [
+        {
+          "lt": "2.9.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "moodle30"
+      ],
+      "range": [
+        {
+          "lt": "3.0.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "moodle31"
+      ],
+      "range": [
+        {
+          "lt": "3.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Marina Glancy reports:</p>\n\t<blockquote cite=\"https://moodle.org/security/\">\n\t  <ul>\n\t    <li><p>MSA-16-0022: Web service tokens should be invalidated when\n\t    the user password is changed or forced to be changed.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://moodle.org/security/"
+    ],
+    "cvename": [
+      "CVE-2016-7038"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-12",
+    "entry": "2016-11-16"
+  }
+}

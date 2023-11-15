@@ -1,0 +1,33 @@
+{
+  "vid": "a83f25df-d775-11e0-8bf1-003067b2972c",
+  "topic": "XSS issue in MantisBT",
+  "affects": [
+    {
+      "name": [
+        "mantis"
+      ],
+      "range": [
+        {
+          "lt": "1.2.7",
+          "ge": "1.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"http://www.mantisbt.org/blog/?p=142\">\n\t  <p>Net.Edit0r from BlACK Hat Group reported an XSS issue in\n\t    search.php.  All MantisBT users (including anonymous users that\n\t    are not logged in to public bug trackers) could be impacted by\n\t    this vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2011-2938"
+    ],
+    "freebsd_pr": [
+      "ports/160368"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-08-18",
+    "entry": "2011-09-05"
+  }
+}

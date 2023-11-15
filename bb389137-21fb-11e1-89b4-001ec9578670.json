@@ -1,0 +1,44 @@
+{
+  "vid": "bb389137-21fb-11e1-89b4-001ec9578670",
+  "topic": "asterisk -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "1.8.7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "1.6.2.21"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Asterisk project reports:</p>\n\t<blockquote cite=\"http://downloads.asterisk.org/pub/security/AST-2011-013.html\">\n\t  <p>It is possible to enumerate SIP usernames when the general and\n\t    user/peer NAT settings differ in whether to respond to the port\n\t    a request is sent from or the port listed for responses in the\n\t    Via header.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://downloads.asterisk.org/pub/security/AST-2011-014.html\">\n\t  <p>When the \"automon\" feature is enabled in features.conf, it is\n\t    possible to send a sequence of SIP requests that cause Asterisk\n\t    to dereference a NULL pointer and crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://downloads.asterisk.org/pub/security/AST-2011-013.html",
+      "http://downloads.asterisk.org/pub/security/AST-2011-014.html"
+    ],
+    "cvename": [
+      "CVE-2011-4597",
+      "CVE-2011-4598"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-12-08",
+    "entry": "2011-12-09"
+  }
+}

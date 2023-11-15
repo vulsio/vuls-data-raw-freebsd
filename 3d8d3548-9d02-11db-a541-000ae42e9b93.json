@@ -1,0 +1,38 @@
+{
+  "vid": "3d8d3548-9d02-11db-a541-000ae42e9b93",
+  "topic": "drupal -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "drupal"
+      ],
+      "range": [
+        {
+          "lt": "4.7.5",
+          "gt": "4.7"
+        },
+        {
+          "lt": "4.6.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal security team reports:</p>\n\t<blockquote cite=\"http://drupal.org/files/sa-2007-001/advisory.txt\">\n\t  <p>A few arguments passed via URLs are not properly sanitized\n\t    before display.  When an attacker is able to entice an\n\t    administrator to follow a specially crafted link, arbitrary\n\t    HTML and script code can be injected and executed in the\n\t    victim's session. Such an attack may lead to administrator\n\t    access if certain conditions are met.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/files/sa-2007-002/advisory.txt\">\n\t  <p>The way page caching was implemented allows a denial of\n\t    service attack. An attacker has to have the ability to post\n\t    content on the site. He or she would then be able to poison\n\t    the page cache, so that it returns cached 404 page not found\n\t    errors for existing pages.</p>\n\t  <p>If the page cache is not enabled, your site is not vulnerable.\n\t    The vulnerability only affects sites running on top of MySQL.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/files/sa-2007-001/advisory.txt",
+      "http://drupal.org/files/sa-2007-002/advisory.txt"
+    ],
+    "cvename": [
+      "CVE-2007-0136"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-01-05",
+    "entry": "2007-01-05",
+    "modified": "2010-05-12"
+  }
+}

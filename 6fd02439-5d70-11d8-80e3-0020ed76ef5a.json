@@ -1,0 +1,55 @@
+{
+  "vid": "6fd02439-5d70-11d8-80e3-0020ed76ef5a",
+  "topic": "Several remotely exploitable buffer overflows in gaim",
+  "affects": [
+    {
+      "name": [
+        "gaim",
+        "ja-gaim",
+        "ko-gaim",
+        "ru-gaim"
+      ],
+      "range": [
+        {
+          "lt": "0.75_3"
+        },
+        {
+          "eq": "0.75_5"
+        },
+        {
+          "eq": "0.76"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gaim"
+      ],
+      "range": [
+        {
+          "ge": "20030000"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stefan Esser of e-matters found almost a dozen remotely\n\t  exploitable vulnerabilities in Gaim.\tFrom the e-matters\n\t  advisory:</p>\n\t<blockquote cite=\"http://security.e-matters.de/advisories/012004.txt\">\n\t  <p>While developing a custom add-on, an integer overflow\n\t  in the handling of AIM DirectIM packets was revealed that\n\t  could lead to a remote compromise of the IM client. After\n\t  disclosing this bug to the vendor, they had to make a\n\t  hurried release because of a change in the Yahoo connection\n\t  procedure that rendered GAIM useless. Unfourtunately at the\n\t  same time a closer look onto the sourcecode revealed 11 more\n\t  vulnerabilities.</p>\n\n\t  <p>The 12 identified problems range from simple standard\n\t  stack overflows, over heap overflows to an integer overflow\n\t  that can be abused to cause a heap overflow. Due to the\n\t  nature of instant messaging many of these bugs require\n\t  man-in-the-middle attacks between client and server. But the\n\t  underlying protocols are easy to implement and MIM attacks\n\t  on ordinary TCP sessions is a fairly simple task.</p>\n\n\t  <p>In combination with the latest kernel vulnerabilities or\n\t  the habit of users to work as root/administrator these bugs\n\t  can result in remote root compromises.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://security.e-matters.de/advisories/012004.txt"
+    ],
+    "cvename": [
+      "CVE-2004-0005",
+      "CVE-2004-0006",
+      "CVE-2004-0007",
+      "CVE-2004-0008"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-01-26",
+    "entry": "2004-02-12",
+    "modified": "2004-10-25"
+  }
+}

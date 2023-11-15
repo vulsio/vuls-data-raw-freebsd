@@ -1,0 +1,40 @@
+{
+  "vid": "fcfdabb7-f14d-4e61-a7d5-cfefb4b99b15",
+  "topic": "Ruby Rack Gem -- Multiple Issues",
+  "affects": [
+    {
+      "name": [
+        "rubygem18-rack"
+      ],
+      "range": [
+        {
+          "lt": "1.4.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rubygem19-rack"
+      ],
+      "range": [
+        {
+          "lt": "1.4.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Rack developers report:</p>\n\t<blockquote cite=\"http://www.ruby-forum.com/topic/4410659\">\n\t  <p>Today we are proud to announce the release of Rack 1.4.5.</p>\n\t  <p>Fix CVE-2013-0263, timing attack against Rack::Session::Cookie</p>\n\t  <p>Fix CVE-2013-0262, symlink path traversal in Rack::File</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2013-0262",
+      "CVE-2013-0263"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-02-08",
+    "entry": "2013-02-17"
+  }
+}

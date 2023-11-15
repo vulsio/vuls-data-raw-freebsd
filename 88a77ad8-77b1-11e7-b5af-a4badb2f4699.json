@@ -1,0 +1,48 @@
+{
+  "vid": "88a77ad8-77b1-11e7-b5af-a4badb2f4699",
+  "topic": "Varnish -- Denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "varnish4"
+      ],
+      "range": [
+        {
+          "lt": "4.0.5",
+          "ge": "4.0.1"
+        },
+        {
+          "lt": "4.1.8",
+          "ge": "4.1.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "varnish5"
+      ],
+      "range": [
+        {
+          "lt": "5.0.1"
+        },
+        {
+          "lt": "5.1.3",
+          "ge": "5.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phk reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00001.html\">\n\t  <p>A wrong if statement in the varnishd source code means that\n\t    particular invalid requests from the client can trigger an assert.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://varnish-cache.org/security/VSV00001.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-08-02",
+    "entry": "2017-08-02"
+  }
+}

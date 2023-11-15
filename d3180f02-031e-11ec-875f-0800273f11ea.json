@@ -1,0 +1,32 @@
+{
+  "vid": "d3180f02-031e-11ec-875f-0800273f11ea",
+  "topic": "gitea -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.15.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea Team reports for release 1.15.0:</p>\n\t<blockquote cite=\"https://blog.gitea.io/2021/08/gitea-1.15.0-is-released/\">\n\t  <ul>\n\t    <li>Encrypt LDAP bind password in db with SECRET_KEY (#15547)</li>\n\t    <li>Remove random password in Dockerfiles (#15362)</li>\n\t    <li>Upgrade to the latest version of golang-jwt and increase minimum go to 1.15 (#16590) (#16606)</li>\n\t    <li>Correctly create of git-daemon-export-ok files (#16508) (#16514)</li>\n\t    <li>Don't show private user's repo in explore view (#16550) (#16554)</li>\n\t    <li>Update node tar dependency to 6.1.6 (#16622) (#16623)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/go-gitea/gitea/releases/tag/v1.15.0"
+    ],
+    "freebsd_pr": [
+      "ports/257994"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-29",
+    "entry": "2021-08-22"
+  }
+}

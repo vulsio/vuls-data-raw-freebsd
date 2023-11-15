@@ -1,0 +1,33 @@
+{
+  "vid": "8d10038e-515c-11df-83fb-0015587e2cc1",
+  "topic": "joomla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "joomla15"
+      ],
+      "range": [
+        {
+          "ge": "1.5.1",
+          "le": "1.5.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Joomla! reported the following vulnerabilities:</p>\n\t<blockquote cite=\"http://developer.joomla.org/security/news/311-20100423-core-negative-values-for-limit-and-offset.html\">\n\t  <p>If a user entered a URL with a negative query limit\n\t    or offset, a PHP notice would display revealing information\n\t    about the system..</p>\n\t</blockquote>\n\t<blockquote cite=\"http://developer.joomla.org/security/news/310-20100423-core-installer-migration-script.html\">\n\t  <p>The migration script in the Joomla! installer does not\n\t    check the file type being uploaded. If the installation\n\t    application is present, an attacker could use it to\n\t    upload malicious files to a server.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://developer.joomla.org/security/news/309-20100423-core-sessation-fixation.html\">\n\t  <p>Session id doesn't get modified when user logs in. A\n\t    remote site may be able to forward a visitor to the\n\t    Joomla! site and set a specific cookie.  If the user\n\t    then logs in, the remote site can use that cookie to\n\t    authenticate as that user.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://developer.joomla.org/security/news/308-20100423-core-password-reset-tokens.html\">\n\t  <p>When a user requests a password reset, the reset tokens\n\t    were stored in plain text in the database. While this\n\t    is not a vulnerability in itself, it allows user accounts\n\t    to be compromised if there is an extension on the site\n\t    with an SQL injection vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://developer.joomla.org/security/news/308-20100423-core-password-reset-tokens.html",
+      "http://developer.joomla.org/security/news/309-20100423-core-sessation-fixation.html",
+      "http://developer.joomla.org/security/news/310-20100423-core-installer-migration-script.html",
+      "http://developer.joomla.org/security/news/311-20100423-core-negative-values-for-limit-and-offset.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-04-23",
+    "entry": "2010-04-26"
+  }
+}

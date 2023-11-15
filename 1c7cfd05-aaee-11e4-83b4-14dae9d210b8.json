@@ -1,0 +1,34 @@
+{
+  "vid": "1c7cfd05-aaee-11e4-83b4-14dae9d210b8",
+  "topic": "Xymon -- buffer overrun",
+  "affects": [
+    {
+      "name": [
+        "xymon-server"
+      ],
+      "range": [
+        {
+          "lt": "4.3.18",
+          "ge": "4.3.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian reports:</p>\n\t<blockquote cite=\"https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=776007\">\n\t  <p>web/acknowledge.c uses a string twice in a format string, but only\n\t    allocates memory for one copy.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/01/31/4",
+      "https://security-tracker.debian.org/tracker/CVE-2015-1430"
+    ],
+    "cvename": [
+      "CVE-2015-1430"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-09-28",
+    "entry": "2015-02-02"
+  }
+}

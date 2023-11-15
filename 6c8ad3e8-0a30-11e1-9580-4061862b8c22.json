@@ -1,0 +1,96 @@
+{
+  "vid": "6c8ad3e8-0a30-11e1-9580-4061862b8c22",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "8.0,1",
+          "gt": "4.0,1"
+        },
+        {
+          "lt": "3.6.24,1",
+          "gt": "3.6.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "1.9.2.24",
+          "gt": "1.9.2.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "8.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "8.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "8.0",
+          "gt": "4.0"
+        },
+        {
+          "lt": "3.1.16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2011-46 loadSubScript unwraps XPCNativeWrapper scope\n\t    parameter (1.9.2 branch)</p>\n\t  <p>MFSA 2011-47 Potential XSS against sites using Shift-JIS</p>\n\t  <p>MFSA 2011-48 Miscellaneous memory safety hazards (rv:8.0)</p>\n\t  <p>MFSA 2011-49 Memory corruption while profiling using Firebug</p>\n\t  <p>MFSA 2011-50 Cross-origin data theft using canvas and Windows\n\t    D2D</p>\n\t  <p>MFSA 2011-51 Cross-origin image theft on Mac with integrated\n\t    Intel GPU</p>\n\t  <p>MFSA 2011-52 Code execution via NoWaiverWrapper</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-46.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-47.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-48.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-49.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-50.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-51.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-52.html"
+    ],
+    "cvename": [
+      "CVE-2011-3647",
+      "CVE-2011-3648",
+      "CVE-2011-3649",
+      "CVE-2011-3650",
+      "CVE-2011-3651",
+      "CVE-2011-3652",
+      "CVE-2011-3653",
+      "CVE-2011-3654",
+      "CVE-2011-3655"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-11-08",
+    "entry": "2011-11-08"
+  }
+}

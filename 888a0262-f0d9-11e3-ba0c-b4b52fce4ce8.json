@@ -1,0 +1,116 @@
+{
+  "vid": "888a0262-f0d9-11e3-ba0c-b4b52fce4ce8",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "30.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "24.6.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.26.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "30.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.26.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "24.6.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nspr"
+      ],
+      "range": [
+        {
+          "lt": "4.10.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "24.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2014-48 Miscellaneous memory safety hazards\n\t    (rv:30.0 / rv:24.6)</p>\n\t  <p>MFSA 2014-49 Use-after-free and out of bounds\n\t    issues found using Address Sanitizer</p>\n\t  <p>MFSA 2014-51 Use-after-free in Event Listener\n\t    Manager</p>\n\t  <p>MFSA 2014-52 Use-after-free with SMIL Animation\n\t    Controller</p>\n\t  <p>MFSA 2014-53 Buffer overflow in Web Audio Speex\n\t    resampler</p>\n\t  <p>MFSA 2014-54 Buffer overflow in Gamepad API</p>\n\t  <p>MFSA 2014-55 Out of bounds write in NSPR</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-48.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-49.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-51.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-52.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-53.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-54.html",
+      "https://www.mozilla.org/security/announce/2014/mfsa2014-55.html"
+    ],
+    "cvename": [
+      "CVE-2014-1533",
+      "CVE-2014-1534",
+      "CVE-2014-1536",
+      "CVE-2014-1537",
+      "CVE-2014-1540",
+      "CVE-2014-1541",
+      "CVE-2014-1542",
+      "CVE-2014-1543",
+      "CVE-2014-1545"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-06-10",
+    "entry": "2014-06-10"
+  }
+}

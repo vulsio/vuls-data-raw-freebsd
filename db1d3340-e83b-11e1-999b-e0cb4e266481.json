@@ -1,0 +1,32 @@
+{
+  "vid": "db1d3340-e83b-11e1-999b-e0cb4e266481",
+  "topic": "phpMyAdmin -- Multiple XSS in Table operations, Database structure, Trigger and Visualize GIS data pages",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.5.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2012-4.php\">\n\t  <p>Using a crafted table name, it was possible to produce a\n\t    XSS : 1) On the Database Structure page, creating a new\n\t    table with a crafted name 2) On the Database Structure page,\n\t    using the Empty and Drop links of the crafted table name 3)\n\t    On the Table Operations page of a crafted table, using the\n\t    'Empty the table (TRUNCATE)' and 'Delete the table (DROP)'\n\t    links 4) On the Triggers page of a database containing\n\t    tables with a crafted name, when opening the 'Add Trigger'\n\t    popup 5) When creating a trigger for a table with a crafted\n\t    name, with an invalid definition. Having crafted data in a\n\t    database table, it was possible to produce a XSS : 6) When\n\t    visualizing GIS data, having a crafted label name.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2012-4.php"
+    ],
+    "cvename": [
+      "CVE-2012-4345"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-12",
+    "entry": "2012-08-17"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "7c5bd5b8-d652-11dd-a765-0030843d3802",
+  "topic": "mplayer -- twinvq processing buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mplayer",
+        "mplayer-esound",
+        "mplayer-gtk",
+        "mplayer-gtk-esound",
+        "mplayer-gtk2",
+        "mplayer-gtk2-esound"
+      ],
+      "range": [
+        {
+          "lt": "0.99.11_9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A trapkit reports:</p>\n\t<blockquote cite=\"http://trapkit.de/advisories/TKADV2008-014.txt\">\n\t  <p>MPlayer contains a stack buffer overflow vulnerability while\n\t    parsing malformed TwinVQ media files. The vulnerability may be\n\t    exploited by a (remote) attacker to execute arbitrary code in\n\t    the context of MPlayer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/33136/",
+      "http://trapkit.de/advisories/TKADV2008-014.txt"
+    ],
+    "cvename": [
+      "CVE-2008-5616"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-14",
+    "entry": "2008-12-30"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "vid": "b4f8be9e-56b2-11e1-9fb7-003067b2972c",
+  "topic": "Python -- DoS via malformed XML-RPC / HTTP POST request",
+  "affects": [
+    {
+      "name": [
+        "python32"
+      ],
+      "range": [
+        {
+          "le": "3.2.2_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python31"
+      ],
+      "range": [
+        {
+          "le": "3.1.4_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python27"
+      ],
+      "range": [
+        {
+          "le": "2.7.2_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python26"
+      ],
+      "range": [
+        {
+          "le": "2.6.7_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python25"
+      ],
+      "range": [
+        {
+          "le": "2.5.6_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python24"
+      ],
+      "range": [
+        {
+          "le": "2.4.5_8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "pypy"
+      ],
+      "range": [
+        {
+          "le": "1.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jan Lieskovsky reports,</p>\n\t<blockquote cite=\"http://bugs.python.org/issue14001\">\n\t  <p>A denial of service flaw was found in the way Simple XML-RPC\n\t    Server module of Python processed client connections, that were\n\t    closed prior the complete request body has been received.  A\n\t    remote attacker could use this flaw to cause Python Simple\n\t    XML-RPC based server process to consume excessive amount of\n\t    CPU.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.python.org/issue14001",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=789790",
+      "https://bugs.pypy.org/issue1047"
+    ],
+    "cvename": [
+      "CVE-2012-0845"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-02-13",
+    "entry": "2012-02-14",
+    "modified": "2012-02-26"
+  }
+}

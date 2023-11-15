@@ -1,0 +1,51 @@
+{
+  "vid": "7a9d5dfe-c507-11d8-8898-000d6111a684",
+  "topic": "isc-dhcp3-server buffer overflow in logging mechanism",
+  "affects": [
+    {
+      "name": [
+        "isc-dhcp3-relay",
+        "isc-dhcp3-server"
+      ],
+      "range": [
+        {
+          "lt": "3.0.1.r14",
+          "ge": "3.0.1.r12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A buffer overflow exists in the logging functionality\n\t  of the DHCP daemon which could lead to Denial of Service\n\t  attacks and has the potential to allow attackers to\n\t  execute arbitrary code.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.osvdb.org/7237"
+    ],
+    "cvename": [
+      "CVE-2004-0460"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.securityfocus.com/archive/1/366801",
+        "msgid": "BAY13-F94UHMuEEkHMz0005c4f7@hotmail.com"
+      },
+      {
+        "text": "http://www.securityfocus.com/archive/1/367286",
+        "msgid": "40DFAB69.1060909@sympatico.ca"
+      }
+    ],
+    "cert_vu": [
+      "317350"
+    ],
+    "us_cert_ta": [
+      "TA04-174A"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-06-22",
+    "entry": "2004-06-25",
+    "modified": "2004-08-12"
+  }
+}

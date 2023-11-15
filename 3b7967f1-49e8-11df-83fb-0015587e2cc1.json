@@ -1,0 +1,54 @@
+{
+  "vid": "3b7967f1-49e8-11df-83fb-0015587e2cc1",
+  "topic": "irssi -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "irssi"
+      ],
+      "range": [
+        {
+          "lt": "0.8.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zh-irssi"
+      ],
+      "range": [
+        {
+          "lt": "0.8.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "irssi-devel"
+      ],
+      "range": [
+        {
+          "lt": "20100325"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Two vulnerabilities have found in irssi. The first issue\n\t  could allow man-in-the-middle attacks due to a missing\n\t  comparison of SSL server hostnames and the certificate\n\t  domain names (e.g. CN).</p>\n\t<p>A second vulnerability, related to the nick matching code,\n\t  could be triggered by remote attackers in order to crash\n\t  an irssi client when leaving a channel.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xforce.iss.net/xforce/xfdb/57790",
+      "http://xforce.iss.net/xforce/xfdb/57791"
+    ],
+    "cvename": [
+      "CVE-2010-1155",
+      "CVE-2010-1156"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-04-16",
+    "entry": "2010-04-19"
+  }
+}

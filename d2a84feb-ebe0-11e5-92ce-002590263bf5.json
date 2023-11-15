@@ -1,0 +1,111 @@
+{
+  "vid": "d2a84feb-ebe0-11e5-92ce-002590263bf5",
+  "topic": "git -- integer overflow",
+  "affects": [
+    {
+      "name": [
+        "git"
+      ],
+      "range": [
+        {
+          "lt": "2.4.11"
+        },
+        {
+          "lt": "2.5.5",
+          "ge": "2.5.0"
+        },
+        {
+          "lt": "2.6.6",
+          "ge": "2.6.0"
+        },
+        {
+          "lt": "2.7.4",
+          "ge": "2.7.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-gui"
+      ],
+      "range": [
+        {
+          "lt": "2.4.11"
+        },
+        {
+          "lt": "2.5.5",
+          "ge": "2.5.0"
+        },
+        {
+          "lt": "2.6.6",
+          "ge": "2.6.0"
+        },
+        {
+          "lt": "2.7.4",
+          "ge": "2.7.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.4.11"
+        },
+        {
+          "lt": "2.5.5",
+          "ge": "2.5.0"
+        },
+        {
+          "lt": "2.6.6",
+          "ge": "2.6.0"
+        },
+        {
+          "lt": "2.7.4",
+          "ge": "2.7.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-subversion"
+      ],
+      "range": [
+        {
+          "lt": "2.4.11"
+        },
+        {
+          "lt": "2.5.5",
+          "ge": "2.5.0"
+        },
+        {
+          "lt": "2.6.6",
+          "ge": "2.6.0"
+        },
+        {
+          "lt": "2.7.4",
+          "ge": "2.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian reports:</p>\n\t<blockquote cite=\"https://security-tracker.debian.org/tracker/CVE-2016-2324\">\n\t  <p>integer overflow due to a loop which adds more to \"len\".</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://security-tracker.debian.org/tracker/CVE-2016-2324",
+      "https://github.com/git/git/commit/9831e92bfa833ee9c0ce464bbc2f941ae6c2698d"
+    ],
+    "cvename": [
+      "CVE-2016-2324"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-24",
+    "entry": "2016-03-18"
+  }
+}

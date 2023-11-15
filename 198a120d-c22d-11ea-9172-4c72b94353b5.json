@@ -1,0 +1,29 @@
+{
+  "vid": "198a120d-c22d-11ea-9172-4c72b94353b5",
+  "topic": "mybb -- multible vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mybb"
+      ],
+      "range": [
+        {
+          "lt": "1.8.22"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>mybb Team reports:</p>\n\t<blockquote cite=\"https://blog.mybb.com/2019/12/30/mybb-1-8-22-released-security-maintenance-release/\">\n\t  <p>High risk: Installer RCE on settings file write</p>\n\t  <p>Medium risk: Arbitrary upload paths and Local File Inclusion RCE</p>\n\t  <p>Medium risk: XSS via insufficient HTML sanitization of Blog feed and Extend data</p>\n\t  <p>Low risk: Open redirect on login</p>\n\t  <p>Low risk: SCEditor reflected XSS</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.mybb.com/2019/12/30/mybb-1-8-22-released-security-maintenance-release/"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-12-30",
+    "entry": "2020-07-09"
+  }
+}

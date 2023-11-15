@@ -1,0 +1,89 @@
+{
+  "vid": "0fcd3af0-a0fe-11e6-b1cf-14dae9d210b8",
+  "topic": "FreeBSD -- OpenSSL Remote DoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.3_12",
+          "ge": "10.3"
+        },
+        {
+          "lt": "10.2_25",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_42",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_50",
+          "ge": "9.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2i,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.1.0a"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c6-openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1e_13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c7-openssl-libs"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1e_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to improper handling of alert packets, OpenSSL would\n\tconsume an excessive amount of CPU time processing undefined\n\talert messages.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker who can initiate handshakes with an\n\tOpenSSL based server can cause the server to consume a lot\n\tof computation power with very little bandwidth usage, and\n\tmay be able to use this technique in a leveraged Denial of\n\tService attack.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://seclists.org/oss-sec/2016/q4/224"
+    ],
+    "cvename": [
+      "CVE-2016-8610"
+    ],
+    "freebsd_sa": [
+      "SA-16:35.openssl"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-02",
+    "entry": "2016-11-02",
+    "modified": "2017-02-22"
+  }
+}

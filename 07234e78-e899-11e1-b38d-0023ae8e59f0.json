@@ -1,0 +1,46 @@
+{
+  "vid": "07234e78-e899-11e1-b38d-0023ae8e59f0",
+  "topic": "databases/postgresql*-server -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "postgresql-server"
+      ],
+      "range": [
+        {
+          "lt": "8.3.20",
+          "gt": "8.3.*"
+        },
+        {
+          "lt": "8.4.13",
+          "gt": "8.4.*"
+        },
+        {
+          "lt": "9.0.9",
+          "gt": "9.0.*"
+        },
+        {
+          "lt": "9.1.5",
+          "gt": "9.1.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PostgreSQL Global Development Group reports:</p>\n\t<blockquote cite=\"http://www.postgresql.org/about/news/1407/\">\n\t  <p>The PostgreSQL Global Development Group today released\n\t    security updates for all active branches of the PostgreSQL\n\t    database system, including versions 9.1.5, 9.0.9, 8.4.13 and\n\t    8.3.20. This update patches security holes associated with\n\t    libxml2 and libxslt, similar to those affecting other open\n\t    source projects. All users are urged to update their\n\t    installations at the first available opportunity</p>\n\t  <p>Users who are relying on the built-in XML functionality to\n\t    validate external DTDs will need to implement a workaround, as\n\t    this security patch disables that functionality. Users who are\n\t    using xslt_process() to fetch documents or stylesheets from\n\t    external URLs will no longer be able to do so. The PostgreSQL\n\t    project regrets the need to disable both of these features in\n\t    order to maintain our security standards. These security issues\n\t    with XML are substantially similar to issues patched recently\n\t    by the Webkit (CVE-2011-1774), XMLsec (CVE-2011-1425) and PHP5\n\t    (CVE-2012-0057) projects.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.postgresql.org/about/news/1407/"
+    ],
+    "cvename": [
+      "CVE-2012-3488",
+      "CVE-2012-3489"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-17",
+    "entry": "2012-08-17"
+  }
+}

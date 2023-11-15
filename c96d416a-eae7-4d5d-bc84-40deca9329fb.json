@@ -1,0 +1,95 @@
+{
+  "vid": "c96d416a-eae7-4d5d-bc84-40deca9329fb",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "62.0_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "waterfox"
+      ],
+      "range": [
+        {
+          "lt": "56.2.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.49.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "60.2.0_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "60.2.0,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul",
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "60.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-20/\">\n\t  <p>CVE-2018-12377: Use-after-free in refresh driver timers</p>\n\t  <p>CVE-2018-12378: Use-after-free in IndexedDB</p>\n\t  <p>CVE-2018-12379: Out-of-bounds write with malicious MAR file</p>\n\t  <p>CVE-2017-16541: Proxy bypass using automount and autofs</p>\n\t  <p>CVE-2018-12381: Dragging and dropping Outlook email message results in page navigation</p>\n\t  <p>CVE-2018-12382: Addressbar spoofing with javascript URI on Firefox for Android</p>\n\t  <p>CVE-2018-12383: Setting a master password post-Firefox 58 does not delete unencrypted previously stored passwords</p>\n\t  <p>CVE-2018-12375: Memory safety bugs fixed in Firefox 62</p>\n\t  <p>CVE-2018-12376: Memory safety bugs fixed in Firefox 62 and Firefox ESR 60.2</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2018-20/",
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2018-21/"
+    ],
+    "cvename": [
+      "CVE-2017-16541",
+      "CVE-2018-12375",
+      "CVE-2018-12376",
+      "CVE-2018-12377",
+      "CVE-2018-12378",
+      "CVE-2018-12379",
+      "CVE-2018-12381",
+      "CVE-2018-12382",
+      "CVE-2018-12383"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-09-05",
+    "entry": "2018-09-05",
+    "modified": "2018-09-15"
+  }
+}

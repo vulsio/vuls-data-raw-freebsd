@@ -1,0 +1,45 @@
+{
+  "vid": "1ddab5cb-14c9-4632-959f-802c412a9593",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.245"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "lt": "2.235.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://www.jenkins.io/security/advisory/2020-07-15/\">\n\t  <h1>Description</h1>\n\t  <h5>(High) SECURITY-1868 / CVE-2020-2220</h5>\n\t  <p>Stored XSS vulnerability in job build time trend</p>\n\t  <h5>(High) SECURITY-1901 / CVE-2020-2221</h5>\n\t  <p>Stored XSS vulnerability in upstream cause</p>\n\t  <h5>(High) SECURITY-1902 / CVE-2020-2222</h5>\n\t  <p>Stored XSS vulnerability in 'keep forever' badge icons</p>\n\t  <h5>(High) SECURITY-1945 / CVE-2020-2223</h5>\n\t  <p>Stored XSS vulnerability in console links</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.jenkins.io/security/advisory/2020-07-15/"
+    ],
+    "cvename": [
+      "CVE-2020-2220",
+      "CVE-2020-2221",
+      "CVE-2020-2222",
+      "CVE-2020-2223"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-15",
+    "entry": "2020-07-15"
+  }
+}

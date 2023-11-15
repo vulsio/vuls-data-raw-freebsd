@@ -1,0 +1,33 @@
+{
+  "vid": "1ac858b0-3fae-11e1-a127-0013d3ccd9df",
+  "topic": "OpenTTD -- Denial of service (server) via slow read attack",
+  "affects": [
+    {
+      "name": [
+        "openttd"
+      ],
+      "range": [
+        {
+          "lt": "1.1.5",
+          "ge": "0.3.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenTTD Team reports:</p>\n\t<blockquote cite=\"http://security.openttd.org/en/CVE-2012-0049\">\n\t  <p>Using a slow read type attack it is possible to prevent anyone\n\t    from joining a server with virtually no resources.  Once\n\t    downloading the map no other downloads of the map can start, so\n\t    downloading really slowly will prevent others from joining.\n\t    This can be further aggravated by the pause-on-join setting in\n\t    which case the game is paused and the players cannot continue\n\t    the game during such an attack.  This attack requires that the\n\t    user is not banned and passes the authorization to the server,\n\t    although for many servers there is no server password and thus\n\t    authorization is easy.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://security.openttd.org/en/CVE-2012-0049"
+    ],
+    "cvename": [
+      "CVE-2012-0049"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-01-06",
+    "entry": "2012-01-16"
+  }
+}

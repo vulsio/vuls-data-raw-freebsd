@@ -1,0 +1,39 @@
+{
+  "vid": "6129fdc7-6462-456d-a3ef-8fc3fbf44d16",
+  "topic": "openvpn -- arbitrary code execution on client through malicious or compromised server",
+  "affects": [
+    {
+      "name": [
+        "openvpn"
+      ],
+      "range": [
+        {
+          "lt": "2.0.4",
+          "ge": "2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>James Yonan reports:</p>\n\t<blockquote cite=\"http://openvpn.net/changelog.html\">\n\t  <p>A format string vulnerability\n\t    in the foreign_option function in options.c could\n\t    potentially allow a malicious or compromised server\n\t    to execute arbitrary code on the client.  Only\n\t    non-Windows clients are affected.  The vulnerability\n\t    only exists if (a) the client's TLS negotiation with\n\t    the server succeeds, (b) the server is malicious or\n\t    has been compromised such that it is configured to\n\t    push a maliciously crafted options string to the client,\n\t    and (c) the client indicates its willingness to accept\n\t    pushed options from the server by having \"pull\" or\n\t    \"client\" in its configuration file (Credit: Vade79).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://openvpn.net/changelog.html"
+    ],
+    "cvename": [
+      "CVE-2005-3393"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.securityfocus.com/archive/1/415293/30/0/threaded"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-31",
+    "entry": "2005-11-01",
+    "modified": "2005-11-04"
+  }
+}

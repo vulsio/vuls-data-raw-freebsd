@@ -1,0 +1,39 @@
+{
+  "vid": "bab29816-ff93-11e8-b05b-00e04c1ea73d",
+  "topic": "typo3 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "typo3-8"
+      ],
+      "range": [
+        {
+          "lt": "8.7.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "typo3-9"
+      ],
+      "range": [
+        {
+          "lt": "9.5.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Typo3 core team reports:</p>\n\t<blockquote cite=\"https://typo3.org/article/typo3-952-8721-and-7632-security-releases-published/\">\n\t  <p>CKEditor 4.11 fixes an XSS vulnerability in the HTML parser reported by maxarr.\n\t    The vulnerability stemmed from the fact that it was possible to execute XSS inside\n\t    the CKEditor source area after persuading the victim to: (i) switch CKEditor to\n\t    source mode, then (ii) paste a specially crafted HTML code, prepared by the attacker,\n\t    into the opened CKEditor source area, and (iii) switch back to WYSIWYG mode.\n\t    Although this is an unlikely scenario, we recommend to upgrade to the latest editor version.</p>\n\t  <p>Failing to properly encode user input, online media asset rendering\n\t    (*.youtube and *.vimeo files) is vulnerable to cross-site scripting. A valid backend user\n\t    account or write access on the server system (e.g. SFTP) is needed in order to exploit this\n\t    vulnerability.</p>\n\t  <p>Failing to properly encode user input, notifications shown in modal windows in the TYPO3\n\t    backend are vulnerable to cross-site scripting. A valid backend user account is needed in\n\t    order to exploit this vulnerability.</p>\n\t  <p>Failing to properly encode user input, login status display is vulnerable to cross-site\n\t    scripting in the website frontend. A valid user account is needed in order to exploit this\n\t    vulnerability - either a backend user or a frontend user having the possibility to modify\n\t    their user profile.</p>\n\t  <p>Template patterns that are affected are:</p>\n\t  <ul>\n\t    <li>###FEUSER_[fieldName]### using system extension felogin</li>\n\t    <li>&lt;!--###USERNAME###--&gt; for regular frontend rendering\n\t      (pattern can be defined individually using TypoScript setting\n\t      config.USERNAME_substToken)</li>\n\t  </ul>\n\t  <p>It has been discovered that cookies created in the Install Tool are not hardened to be\n\t    submitted only via HTTP. In combination with other vulnerabilities such as cross-site\n\t    scripting it can lead to hijacking an active and valid session in the Install Tool.</p>\n\t  <p>The Install Tool exposes the current TYPO3 version number to non-authenticated users.</p>\n\t  <p>Online Media Asset Handling (*.youtube and *.vimeo files) in the TYPO3 backend is vulnerable\n\t    to denial of service. Putting large files with according file extensions results in high\n\t    consumption of system resources. This can lead to exceeding limits of the current PHP process\n\t    which results in a dysfunctional backend component. A valid backend user account or write\n\t    access on the server system (e.g. SFTP) is needed in order to exploit this vulnerability.</p>\n\t  <p>TYPO3’s built-in record registration functionality (aka “basic shopping cart”) using recs\n\t    URL parameters is vulnerable to denial of service. Failing to properly ensure that anonymous\n\t    user sessions are valid, attackers can use this vulnerability in order to create  an arbitrary\n\t    amount of individual session-data records in the database.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://typo3.org/article/typo3-952-8721-and-7632-security-releases-published/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-12-11",
+    "entry": "2018-12-14"
+  }
+}

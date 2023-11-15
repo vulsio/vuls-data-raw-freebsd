@@ -1,0 +1,38 @@
+{
+  "vid": "cff0b2e2-0716-11eb-9e5d-08002728f74c",
+  "topic": "libexif -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libexif"
+      ],
+      "range": [
+        {
+          "lt": "0.6.22"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Release notes:</p>\n\t<blockquote cite=\"https://github.com/libexif/libexif/blob/master/NEWS\">\n\t  <p>Lots of fixes exposed by fuzzers like AFL, ClusterFuzz, OSSFuzz and others:</p>\n\t  <p>CVE-2016-6328: fixed integer overflow when parsing maker notes</p>\n\t  <p>CVE-2017-7544: fixed buffer overread</p>\n\t  <p>CVE-2018-20030: Fix for recursion DoS</p>\n\t  <p>CVE-2019-9278: replaced integer overflow checks the compiler could optimize away by safer constructs</p>\n\t  <p>CVE-2020-0093: read overflow</p>\n\t  <p>CVE-2020-12767: fixed division by zero </p>\n\t  <p>CVE-2020-13112: Various buffer overread fixes due to integer overflows in maker notes</p>\n\t  <p>CVE-2020-13113: Potential use of uninitialized memory </p>\n\t  <p>CVE-2020-13114: Time consumption DoS when parsing canon array markers</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/libexif/libexif/blob/master/NEWS",
+      "CVE-2016-6328",
+      "CVE-2017-7544",
+      "CVE-2018-20030",
+      "CVE-2019-9278",
+      "CVE-2020-0093",
+      "CVE-2020-12767",
+      "CVE-2020-13112",
+      "CVE-2020-13113",
+      "CVE-2020-13114"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-05-18",
+    "entry": "2020-10-05"
+  }
+}

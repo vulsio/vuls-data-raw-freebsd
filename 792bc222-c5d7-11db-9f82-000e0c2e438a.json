@@ -1,0 +1,32 @@
+{
+  "vid": "792bc222-c5d7-11db-9f82-000e0c2e438a",
+  "topic": "libarchive -- Infinite loop in corrupt archives handling in libarchive",
+  "affects": [
+    {
+      "name": [
+        "libarchive"
+      ],
+      "range": [
+        {
+          "lt": "1.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>If the end of an archive is reached while attempting to\n\t  \"skip\" past a region of an archive, libarchive will enter an\n\t  infinite loop wherein it repeatedly attempts (and fails) to\n\t  read further data.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker able to cause a system to extract (via \"tar -x\"\n\t  or another application which uses libarchive) or list the\n\t  contents (via \"tar -t\" or another libarchive-using\n\t  application) of an archive provided by the attacker can cause\n\t  libarchive to enter an infinite loop and use all available\n\t  CPU time.</p>\n\t<h1>Workaround:</h1>\n\t<p>No workaround is available.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-5680"
+    ],
+    "freebsd_sa": [
+      "SA-06:24.libarchive"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-11-08",
+    "entry": "2007-02-26"
+  }
+}

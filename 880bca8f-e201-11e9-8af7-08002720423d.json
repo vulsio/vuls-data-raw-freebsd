@@ -1,0 +1,52 @@
+{
+  "vid": "880bca8f-e201-11e9-8af7-08002720423d",
+  "topic": "mongodb -- Attach IDs to users",
+  "affects": [
+    {
+      "name": [
+        "mongodb34"
+      ],
+      "range": [
+        {
+          "lt": "3.4.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mongodb36"
+      ],
+      "range": [
+        {
+          "lt": "3.6.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mongodb40"
+      ],
+      "range": [
+        {
+          "lt": "4.0.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitch Wasson of Cisco's Advanced Malware Protection Group reports:</p>\n\t<blockquote cite=\"https://jira.mongodb.org/browse/SERVER-38984\">\n\t  <p>After user deletion in MongoDB Server the improper invalidation of authorization sessions allows an authenticated user's session to persist and become conflated with new accounts, if those accounts reuse the names of deleted ones.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jira.mongodb.org/browse/SERVER-38984"
+    ],
+    "cvename": [
+      "CVE-2019-2386"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-08-06",
+    "entry": "2019-09-28"
+  }
+}

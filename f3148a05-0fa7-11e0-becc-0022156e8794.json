@@ -1,0 +1,40 @@
+{
+  "vid": "f3148a05-0fa7-11e0-becc-0022156e8794",
+  "topic": "php -- corruption of $GLOBALS and $this variables via extract() method",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.3.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php52"
+      ],
+      "range": [
+        {
+          "lt": "5.2.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Off-by-one error in the sanity validator for the extract()\n\t  method allowed attackers to replace the values of $GLOBALS\n\t  and $this when mode EXTR_OVERWRITE was used.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mail-archive.com/php-cvs@lists.php.net/msg47722.html",
+      "http://www.php.net/releases/5_2_15.php"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-12-10",
+    "entry": "2011-01-13"
+  }
+}

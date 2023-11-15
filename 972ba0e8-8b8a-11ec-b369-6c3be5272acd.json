@@ -1,0 +1,68 @@
+{
+  "vid": "972ba0e8-8b8a-11ec-b369-6c3be5272acd",
+  "topic": "Node.js -- January 2022 Security Releases",
+  "affects": [
+    {
+      "name": [
+        "node"
+      ],
+      "range": [
+        {
+          "lt": "12.22.9",
+          "ge": "12.0.0"
+        },
+        {
+          "lt": "14.18.3",
+          "ge": "14.0.0"
+        },
+        {
+          "lt": "16.13.2",
+          "ge": "16.0.0"
+        },
+        {
+          "lt": "17.3.1",
+          "ge": "17.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node16"
+      ],
+      "range": [
+        {
+          "lt": "16.13.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "node14"
+      ],
+      "range": [
+        {
+          "lt": "14.18.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/\">\n\t  <h1>Improper handling of URI Subject Alternative Names (Medium)(CVE-2021-44531)</h1>\n\t  <p>Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.</p>\n\t  <h1>Certificate Verification Bypass via String Injection (Medium)(CVE-2021-44532)</h1>\n\t  <p>Node.js converts SANs (Subject Alternative Names) to a string format. It uses this string to check peer certificates against hostnames when validating connections. The string format was subject to an injection vulnerability when name constraints were used within a certificate chain, allowing the bypass of these name constraints.</p>\n\t  <h1>Incorrect handling of certificate subject and issuer fields (Medium)(CVE-2021-44533)</h1>\n\t  <p>Node.js did not handle multi-value Relative Distinguished Names correctly. Attackers could craft certificate subjects containing a single-value Relative Distinguished Name that would be interpreted as a multi-value Relative Distinguished Name, for example, in order to inject a Common Name that would allow bypassing the certificate subject verification.</p>\n\t  <h1>Prototype pollution via <code>console.table</code> properties (Low)(CVE-2022-21824)</h1>\n\t  <p>Due to the formatting logic of the <code>console.table()</code> function it was not safe to allow user controlled input to be passed to the <code>properties</code> parameter while simultaneously passing a plain object with at least one property as the first parameter, which could be <code>__proto__</code>. The prototype pollution has very limited control, in that it only allows an empty string to be assigned to numerical keys of the object prototype.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/"
+    ],
+    "cvename": [
+      "CVE-2021-44531",
+      "CVE-2021-44532",
+      "CVE-2021-44533",
+      "CVE-2022-21824"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-01-10",
+    "entry": "2022-02-12"
+  }
+}

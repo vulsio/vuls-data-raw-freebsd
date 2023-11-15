@@ -1,0 +1,46 @@
+{
+  "vid": "fbc8413f-2f7a-11de-9a3f-001b77d09812",
+  "topic": "FreeBSD -- remotely exploitable crash in OpenSSL",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.3_10",
+          "ge": "6.3"
+        },
+        {
+          "lt": "6.4_4",
+          "ge": "6.4"
+        },
+        {
+          "lt": "7.0_12",
+          "ge": "7.0"
+        },
+        {
+          "lt": "7.1_5",
+          "ge": "7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description</h1>\n\t  <p>The function ASN1_STRING_print_ex does not properly validate\n\t    the lengths of BMPString or UniversalString objects before\n\t    attempting to print them.</p>\n\t<h1>Impact</h1>\n\t  <p>An application which attempts to print a BMPString or\n\t    UniversalString which has an invalid length will crash as a\n\t    result of OpenSSL accessing invalid memory locations.  This\n\t    could be used by an attacker to crash a remote application.</p>\n\t<h1>Workaround</h1>\n\t  <p>No workaround is available, but applications which do not use\n\t    the ASN1_STRING_print_ex function (either directly or indirectly)\n\t    are not affected.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2009-0590"
+    ],
+    "freebsd_sa": [
+      "SA-09:08.openssl"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-03-25",
+    "entry": "2009-05-07",
+    "modified": "2009-05-13"
+  }
+}

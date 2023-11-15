@@ -1,0 +1,33 @@
+{
+  "vid": "11351c82-9909-11e5-a9c8-14dae9d5a9d2",
+  "topic": "piwik -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "piwik"
+      ],
+      "range": [
+        {
+          "lt": "2.15.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Piwik changelog reports:</p>\n\t<blockquote cite=\"http://piwik.org/changelog/piwik-2-15-0/\">\n\t  <p>This release is rated critical.\n\n\t   We are grateful for Security researchers who disclosed\n\t   security issues privately to the Piwik Security Response\n\t   team: Elamaran Venkatraman, Egidio Romano and Dmitriy\n\t   Shcherbatov. The following vulnerabilities were fixed:\n\t   XSS, CSRF, possible file inclusion in older PHP versions\n\t   (low impact), possible Object Injection Vulnerability\n\t   (low impact).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://piwik.org/changelog/piwik-2-15-0/"
+    ],
+    "cvename": [
+      "CVE-2015-7815",
+      "CVE-2015-7816"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-11-17",
+    "entry": "2015-12-02"
+  }
+}

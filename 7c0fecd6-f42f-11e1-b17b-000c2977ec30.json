@@ -1,0 +1,47 @@
+{
+  "vid": "7c0fecd6-f42f-11e1-b17b-000c2977ec30",
+  "topic": "mediawiki -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mediawiki"
+      ],
+      "range": [
+        {
+          "lt": "1.19.2",
+          "ge": "1.19"
+        },
+        {
+          "lt": "1.18.5",
+          "ge": "1.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mediawiki reports:</p>\n\t<blockquote cite=\"http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-August/000119.html\">\n\t  <p>(Bug 39700) Wikipedia administrator Writ Keeper discovered\n\t    a stored XSS (HTML injection) vulnerability. This was\n\t    possible due to the handling of link text on File: links for\n\t    nonexistent files. MediaWiki 1.16 and later is affected.</p>\n\t  <p>(Bug 39180) User Fomafix reported several DOM-based XSS\n\t    vulnerabilities, made possible by a combination of loose\n\t    filtering of the uselang parameter, and JavaScript gadgets\n\t    on various language Wikipedias.</p>\n\t  <p>(Bug 39180) During internal review, it was discovered that\n\t    CSRF tokens, available via the api, were not protected with\n\t    X-Frame-Options headers. This could lead to a CSRF vulnerability\n\t    if the API response is embedded in an external website using\n\t    using an iframe.</p>\n\t  <p>(Bug 39824) During internal review, it was discovered extensions\n\t    were not always allowed to prevent the account creation action.\n\t    This allowed users blocked by the GlobalBlocking extension to\n\t    create accounts.</p>\n\t  <p>(Bug 39184) During internal review, it was discovered that\n\t    password data was always saved to the local MediaWiki database\n\t    even if authentication was handled by an extension, such as LDAP.\n\t    This could allow a compromised MediaWiki installation to leak\n\t    information about user's LDAP passwords. Additionally, in situations\n\t    when an authentication plugin returned false in its strict\n\t    function, this would allow old passwords to be used for accounts\n\t    that did not exist in the external system, indefinitely.</p>\n\t  <p>(Bug 39823) During internal review, it was discovered that metadata\n\t    about blocks, hidden by a user with suppression rights, was visible\n\t    to administrators.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.wikimedia.org/show_bug.cgi?id=39700",
+      "https://bugzilla.wikimedia.org/show_bug.cgi?id=37587",
+      "https://bugzilla.wikimedia.org/show_bug.cgi?id=39180",
+      "https://bugzilla.wikimedia.org/show_bug.cgi?id=39824",
+      "https://bugzilla.wikimedia.org/show_bug.cgi?id=39184",
+      "https://bugzilla.wikimedia.org/show_bug.cgi?id=39823"
+    ],
+    "cvename": [
+      "CVE-2012-4377",
+      "CVE-2012-4378",
+      "CVE-2012-4379",
+      "CVE-2012-4380",
+      "CVE-2012-4381",
+      "CVE-2012-4382"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-27",
+    "entry": "2012-09-01"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "bc83cfc9-42cf-4b00-97ad-d352ba0c5e2b",
+  "topic": "zeek -- null-pointer dereference vulnerability",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "4.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jon Siwek of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v4.0.1\">\n\t  <p>Fix null-pointer dereference when encountering an\n\t  invalid enum name in a config/input file that tries to\n\t  read it into a set[enum].  For those that have such an\n\t  input feed whose contents may come from external/remote\n\t  sources, this is a potential DoS vulnerability. </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/zeek/zeek/releases/tag/v4.0.1"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-01",
+    "entry": "2021-04-21"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "vid": "c1c18ee1-c711-11e5-96d6-14dae9d210b8",
+  "topic": "nginx -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "nginx"
+      ],
+      "range": [
+        {
+          "lt": "1.8.1,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nginx-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.9.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Maxim Dounin reports:</p>\n\t<blockquote cite=\"http://mailman.nginx.org/pipermail/nginx/2016-January/049700.html\">\n\t  <p>Several problems in nginx resolver were identified, which\n\t    might allow an attacker to cause worker process crash, or might have\n\t    potential other impact if the \"resolver\" directive\n\t    is used in a configuration file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mailman.nginx.org/pipermail/nginx/2016-January/049700.html"
+    ],
+    "cvename": [
+      "CVE-2016-0742",
+      "CVE-2016-0746",
+      "CVE-2016-0747"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-26",
+    "entry": "2016-01-30"
+  }
+}

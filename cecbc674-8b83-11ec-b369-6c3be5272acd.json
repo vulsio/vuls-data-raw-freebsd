@@ -1,0 +1,52 @@
+{
+  "vid": "cecbc674-8b83-11ec-b369-6c3be5272acd",
+  "topic": "Grafana -- XSS",
+  "affects": [
+    {
+      "name": [
+        "grafana6"
+      ],
+      "range": [
+        {
+          "ge": "6.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana7"
+      ],
+      "range": [
+        {
+          "lt": "7.5.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana8"
+      ],
+      "range": [
+        {
+          "lt": "8.3.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/02/08/grafana-7.5.15-and-8.3.5-released-with-moderate-severity-security-fixes/\">\n\t  <p>On Jan. 16, an external security researcher, Jasu Viding contacted Grafana to disclose an XSS vulnerability in the way that Grafana handles data sources. Should an existing data source connected to Grafana be compromised, it could be used to inappropriately gain access to other data sources connected to the same Grafana org. We believe that this vulnerability is rated at CVSS 6.8 (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://grafana.com/blog/2022/02/08/grafana-7.5.15-and-8.3.5-released-with-moderate-severity-security-fixes/"
+    ],
+    "cvename": [
+      "CVE-2022-21702"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-01-16",
+    "entry": "2022-02-12"
+  }
+}

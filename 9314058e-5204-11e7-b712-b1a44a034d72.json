@@ -1,0 +1,33 @@
+{
+  "vid": "9314058e-5204-11e7-b712-b1a44a034d72",
+  "topic": "cURL -- URL file scheme drive letter buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.54.1",
+          "ge": "7.53.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cURL security advisory:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20170614.html\">\n\t  <p>When libcurl is given either</p>\n\t  <p>1. a file: URL that doesn't use two slashes following the colon, or</p>\n\t  <p>2. is told that file is the default scheme to use for URLs without scheme</p>\n\t  <p>... and the given path starts with a drive letter and libcurl is built for\n\t    Windows or DOS, then libcurl would copy the path with a wrong offset, so that\n\t    the end of the given path would write beyond the malloc buffer. Up to seven\n\t    bytes too much.</p>\n\t  <p>We are not aware of any exploit of this flaw.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.haxx.se/docs/adv_20170614.html"
+    ],
+    "cvename": [
+      "CVE-2017-9502"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-06-14",
+    "entry": "2017-06-15"
+  }
+}

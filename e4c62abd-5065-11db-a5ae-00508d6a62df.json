@@ -1,0 +1,38 @@
+{
+  "vid": "e4c62abd-5065-11db-a5ae-00508d6a62df",
+  "topic": "tikiwiki -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "tikiwiki"
+      ],
+      "range": [
+        {
+          "lt": "1.9.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21536/\">\n\t  <p>Thomas Pollet has discovered a vulnerability in TikiWiki,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks.</p>\n\t  <p>Input passed to the \"highlight\" parameter in\n\t    tiki-searchindex.php is not properly sanitised before being\n\t    returned to the user. This can be exploited to execute\n\t    arbitrary HTML and script code in a user's browser session\n\t    in context of an affected site.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://secunia.com/advisories/21733/\">\n\t  <p>rgod has discovered a vulnerability in TikiWiki, which can\n\t    be exploited by malicious people to compromise a vulnerable\n\t    system.</p>\n\t  <p>The vulnerability is caused due to the \"jhot.php\" script\n\t    not correctly verifying uploaded files. This can e.g. be\n\t    exploited to execute arbitrary PHP code by uploading a\n\t    malicious PHP script to the \"img/wiki\" directory.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/21536/",
+      "http://secunia.com/advisories/21733/"
+    ],
+    "cvename": [
+      "CVE-2006-4299",
+      "CVE-2006-4602"
+    ],
+    "bid": [
+      "19654",
+      "19819"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-08-21",
+    "entry": "2006-09-30"
+  }
+}

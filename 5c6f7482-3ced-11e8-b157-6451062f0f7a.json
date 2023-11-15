@@ -1,0 +1,38 @@
+{
+  "vid": "5c6f7482-3ced-11e8-b157-6451062f0f7a",
+  "topic": "Flash Player -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "linux-flashplayer"
+      ],
+      "range": [
+        {
+          "lt": "29.0.0.140"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Adobe reports:</p>\n\t<blockquote cite=\"https://helpx.adobe.com/security/products/flash-player/apsb18-08.html\">\n\t  <ul>\n\t    <li>This update resolves a use-after-free vulnerability that\n\t      could lead to remote code execution (CVE-2018-4932).</li>\n\t    <li>This update resolves out-of-bounds read vulnerabilities that\n\t      could lead to information disclosure (CVE-2018-4933,\n\t      CVE-2018-4934).</li>\n\t    <li>This update resolves out-of-bounds write vulnerabilities that\n\t      could lead to remote code execution (CVE-2018-4935,\n\t      CVE-2018-4937).</li>\n\t    <li>This update resolves a heap overflow vulnerability that\n\t      could lead to information disclosure (CVE-2018-4936).</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://helpx.adobe.com/security/products/flash-player/apsb18-08.html"
+    ],
+    "cvename": [
+      "CVE-2018-4932",
+      "CVE-2018-4933",
+      "CVE-2018-4934",
+      "CVE-2018-4935",
+      "CVE-2018-4936",
+      "CVE-2018-4937"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-04-10",
+    "entry": "2018-04-10",
+    "modified": "2018-07-11"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "e72d5bf5-07a0-11e8-8248-0021ccb9e74d",
+  "topic": "w3m - multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "w3m",
+        "w3m-img",
+        "ja-w3m",
+        "ja-w3m-img"
+      ],
+      "range": [
+        {
+          "lt": "0.5.3.20180125"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Tatsuya Kinoshita reports:</p>\n       <blockquote cite=\"https://github.com/tats/w3m/commit/01d41d49b273a8cc75b27c6ab42291b46004fc0c\">\n       <p>CVE-2018-6196 * table.c: Prevent negative indent value in feed_table_block_tag().</p>\n       <p>CVE-2018-6197 * form.c: Prevent invalid columnPos() call in formUpdateBuffer().</p>\n       <p>CVE-2018-6198 * config.h.dist, config.h.in, configure, configure.ac, main.c, rc.c: Make temporary directory safely when ~/.w3m is unwritable.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/tats/w3m/commit/e773a0e089276f82c546447c0fd1e6c0f9156628"
+    ],
+    "cvename": [
+      "CVE-2018-6196",
+      "CVE-2018-6197",
+      "CVE-2018-6198"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-25",
+    "entry": "2018-02-01",
+    "modified": "2018-02-03"
+  }
+}

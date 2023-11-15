@@ -1,0 +1,32 @@
+{
+  "vid": "0ff80f41-aefe-11ec-b4b6-d05099c0c059",
+  "topic": "gitea -- Improper/incorrect authorization",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.16.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Youssef Rebahi-Gilbert reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0905\">\n\t  <p>\n\t    When Gitea is built and configured for PAM authentication\n\t    it skips checking authorization completely. Therefore expired\n\t    accounts and accounts with expired passwords can still login.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://huntr.dev/bounties/8d221f92-b2b1-4878-bc31-66ff272e5ceb"
+    ],
+    "cvename": [
+      "CVE-2022-0905"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-03-06",
+    "entry": "2022-03-29"
+  }
+}

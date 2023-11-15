@@ -1,0 +1,37 @@
+{
+  "vid": "c9b3324f-8e03-4ae3-89ce-8098cdc5bfa9",
+  "topic": "py-markdown2 -- regular expression denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-markdown2",
+        "py38-markdown2",
+        "py39-markdown2",
+        "py310-markdown2",
+        "py311-markdown2"
+      ],
+      "range": [
+        {
+          "lt": "2.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>Ben Caller reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2021-20\">\n      <p>markdown2 &gt;=1.0.1.18, fixed in 2.4.0, is affected by a regular expression denial of service vulnerability.</p>\n      <p>If an attacker provides a malicious string, it can make markdown2 processing difficult or delayed for an extended period of time.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2021-20",
+      "https://osv.dev/vulnerability/GHSA-jr9p-r423-9m2r"
+    ],
+    "cvename": [
+      "CVE-2021-26813"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-03-03",
+    "entry": "2023-08-31"
+  }
+}

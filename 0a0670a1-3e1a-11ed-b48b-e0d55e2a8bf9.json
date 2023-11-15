@@ -1,0 +1,33 @@
+{
+  "vid": "0a0670a1-3e1a-11ed-b48b-e0d55e2a8bf9",
+  "topic": "expat -- Heap use-after-free vulnerability",
+  "affects": [
+    {
+      "name": [
+        "expat"
+      ],
+      "range": [
+        {
+          "lt": "2.4.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian Security Advisory reports:</p>\n\t<blockquote cite=\"https://www.debian.org/security/2022/dsa-5236\">\n\t  <p>Rhodri James discovered a heap use-after-free vulnerability in the doContent function in Expat, an XML parsing C library, which could result in denial of service or potentially the execution of arbitrary code, if a malformed XML file is processed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.debian.org/security/2022/dsa-5236",
+      "https://nvd.nist.gov/vuln/detail/CVE-2022-40674"
+    ],
+    "cvename": [
+      "CVE-2022-40674"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-09-14",
+    "entry": "2022-09-27"
+  }
+}

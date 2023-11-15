@@ -1,0 +1,44 @@
+{
+  "vid": "4b98613c-0078-11e9-b05b-00e04c1ea73d",
+  "topic": "wordpress -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "wordpress",
+        "fr-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "5.0.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "zh_CN-wordpress",
+        "zh_TW-wordpress",
+        "ja-wordpress",
+        "ru-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "5.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>wordpress developers reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/\">\n\t  <p>WordPress versions 5.0 and earlier are affected by the following bugs, which are\n\t    fixed in version 5.0.1. Updated versions of WordPress 4.9 and older releases are\n\t    also available, for users who have not yet updated to 5.0.</p>\n\t  <p>Karim El Ouerghemmi discovered that authors could alter meta data to delete files\n\t    that they weren’t authorized to.</p>\n\t  <p>Simon Scannell of RIPS Technologies discovered that authors could create posts of\n\t    unauthorized post types with specially crafted input.</p>\n\t  <p>Sam Thomas discovered that contributors could craft meta data in a way that resulted\n\t    in PHP object injection.</p>\n\t  <p>Tim Coen discovered that contributors could edit new comments from higher-privileged\n\t    users, potentially leading to a cross-site scripting vulnerability.</p>\n\t  <p>Tim Coen also discovered that specially crafted URL inputs could lead to a cross-site\n\t    scripting vulnerability in some circumstances. WordPress itself was not affected,\n\t    but plugins could be in some situations.</p>\n\t  <p>Team Yoast discovered that the user activation screen could be indexed by search\n\t    engines in some uncommon configurations, leading to exposure of email addresses,\n\t    and in some rare cases, default generated passwords.</p>\n\t  <p>Tim Coen and Slavco discovered that authors on Apache-hosted sites could upload\n\t    specifically crafted files that bypass MIME verification, leading to a cross-site\n\t    scripting vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-12-13",
+    "entry": "2018-12-15"
+  }
+}

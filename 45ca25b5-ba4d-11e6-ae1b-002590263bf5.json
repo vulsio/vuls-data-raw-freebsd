@@ -1,0 +1,35 @@
+{
+  "vid": "45ca25b5-ba4d-11e6-ae1b-002590263bf5",
+  "topic": "xen-kernel -- x86: Disallow L3 recursive pagetable for 32-bit PV guests",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-185.html\">\n\t  <p>On real hardware, a 32-bit PAE guest must leave the USER and RW bit\n\t    clear in L3 pagetable entries, but the pagetable walk behaves as if\n\t    they were set. (The L3 entries are cached in processor registers,\n\t    and don't actually form part of the pagewalk.)</p>\n\t  <p>When running a 32-bit PV guest on a 64-bit Xen, Xen must always OR\n\t    in the USER and RW bits for L3 updates for the guest to observe\n\t    architectural behaviour. This is unsafe in combination with\n\t    recursive pagetables.</p>\n\t  <p>As there is no way to construct an L3 recursive pagetable in native\n\t    32-bit PAE mode, disallow this option in 32-bit PV guests.</p>\n\t  <p>A malicious 32-bit PV guest administrator can escalate their\n\t    privilege to that of the host.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://xenbits.xen.org/xsa/advisory-185.html"
+    ],
+    "cvename": [
+      "CVE-2016-7092"
+    ],
+    "freebsd_pr": [
+      "ports/214936"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-08",
+    "entry": "2016-12-04"
+  }
+}

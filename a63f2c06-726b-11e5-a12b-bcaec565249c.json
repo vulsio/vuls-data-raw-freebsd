@@ -1,0 +1,46 @@
+{
+  "vid": "a63f2c06-726b-11e5-a12b-bcaec565249c",
+  "topic": "flash -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "linux-c6-flashplugin",
+        "linux-f10-flashplugin",
+        "linux-c6_64-flashplugin"
+      ],
+      "range": [
+        {
+          "lt": "11.2r202.535"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Adobe reports:</p>\n\t<blockquote cite=\"https://helpx.adobe.com/security/products/flash-player/apsb15-25.html\">\n\t  <p>These updates resolve a vulnerability that could be exploited\n\t    to bypass the same-origin-policy and lead to information\n\t    disclosure (CVE-2015-7628).</p>\n\n\t  <p>These updates include a defense-in-depth feature in the Flash\n\t    broker API (CVE-2015-5569).</p>\n\n\t  <p>These updates resolve use-after-free vulnerabilities that\n\t    could lead to code execution (CVE-2015-7629, CVE-2015-7631,\n\t    CVE-2015-7643, CVE-2015-7644).</p>\n\n\t  <p>These updates resolve a buffer overflow vulnerability that\n\t    could lead to code execution (CVE-2015-7632).</p>\n\n\t  <p>These updates resolve memory corruption vulnerabilities that\n\t    could lead to code execution (CVE-2015-7625, CVE-2015-7626,\n\t    CVE-2015-7627, CVE-2015-7630, CVE-2015-7633, CVE-2015-7634).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://helpx.adobe.com/security/products/flash-player/apsb15-25.html"
+    ],
+    "cvename": [
+      "CVE-2015-5569",
+      "CVE-2015-7625",
+      "CVE-2015-7626",
+      "CVE-2015-7627",
+      "CVE-2015-7628",
+      "CVE-2015-7629",
+      "CVE-2015-7630",
+      "CVE-2015-7631",
+      "CVE-2015-7632",
+      "CVE-2015-7633",
+      "CVE-2015-7634",
+      "CVE-2015-7643",
+      "CVE-2015-7644"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-13",
+    "entry": "2015-10-14"
+  }
+}

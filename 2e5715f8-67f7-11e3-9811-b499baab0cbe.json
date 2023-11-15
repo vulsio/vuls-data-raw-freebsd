@@ -1,0 +1,43 @@
+{
+  "vid": "2e5715f8-67f7-11e3-9811-b499baab0cbe",
+  "topic": "gnupg -- RSA Key Extraction via Low-Bandwidth Acoustic Cryptanalysis attack",
+  "affects": [
+    {
+      "name": [
+        "gnupg"
+      ],
+      "range": [
+        {
+          "lt": "1.4.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gnupg1"
+      ],
+      "range": [
+        {
+          "lt": "1.4.16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Werner Koch reports:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000337.html\">\n\t  <p>CVE-2013-4576 has been assigned to this security bug.</p>\n\t  <p>The paper describes two attacks.  The first attack allows\n\t    to distinguish keys: An attacker is able to notice which key is\n\t    currently used for decryption.  This is in general not a problem but\n\t    may be used to reveal the information that a message, encrypted to a\n\t    commonly not used key, has been received by the targeted machine.  We\n\t    do not have a software solution to mitigate this attack.</p>\n\t  <p>The second attack is more serious.  It is an adaptive\n\t    chosen ciphertext attack to reveal the private key.  A possible\n\t    scenario is that the attacker places a sensor (for example a standard\n\t    smartphone) in the vicinity of the targeted machine.  That machine is\n\t    assumed to do unattended RSA decryption of received mails, for example\n\t    by using a mail client which speeds up browsing by opportunistically\n\t    decrypting mails expected to be read soon.  While listening to the\n\t    acoustic emanations of the targeted machine, the smartphone will send\n\t    new encrypted messages to that machine and re-construct the private\n\t    key bit by bit.  A 4096 bit RSA key used on a laptop can be revealed\n\t    within an hour.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000337.html"
+    ],
+    "cvename": [
+      "CVE-2013-4576"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-12-18",
+    "entry": "2013-12-18",
+    "modified": "2014-04-30"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "e55f948f-d729-11e0-abd1-0017f22d6707",
+  "topic": "security/cfs -- buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "cfs"
+      ],
+      "range": [
+        {
+          "le": "1.4.1_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2002/dsa-116\">\n\t  <p>Zorgon found several buffer overflows in cfsd, a daemon that\n\t    pushes encryption services into the Unix(tm) file system.\n\t    We are not yet sure if these overflows can successfully be\n\t    exploited to gain root access to the machine running the CFS\n\t    daemon.  However, since cfsd can easily be forced to die, a\n\t    malicious user can easily perform a denial of service attack\n\t    to it.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.debian.org/security/2002/dsa-116"
+    ],
+    "cvename": [
+      "CVE-2002-0351"
+    ]
+  },
+  "dates": {
+    "discovery": "2002-03-02",
+    "entry": "2011-09-04"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "6876b163-8708-11e7-8568-e8e0b747a45a",
+  "topic": "pspp -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "pspp"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE Details reports:</p>\n\t<blockquote cite=\"https://www.cvedetails.com/vulnerability-list/vendor_id-72/product_id-38732/year-2017/GNU-Pspp.html\">\n\t  <ul>\n\t    <li>There is an Integer overflow in the hash_int function of the libpspp library\n\t      in GNU PSPP 0.10.5-pre2 (CVE-2017-10791).</li>\n\t    <li>There is a NULL Pointer Dereference in the function ll_insert() of the libpspp\n\t      library in GNU PSPP 0.10.5-pre2 (CVE-2017-10792).</li>\n\t    <li>There is an illegal address access in the function output_hex() in data/data-out.c\n\t      of the libpspp library in GNU PSPP 0.11.0 that will lead to remote denial of service (CVE-2017-12958).</li>\n\t    <li>There is a reachable assertion abort in the function dict_add_mrset() in data/dictionary.c\n\t      of the libpspp library in GNU PSPP 0.11.0 that will lead to a remote denial of service attack (CVE-2017-12959).</li>\n\t    <li>There is a reachable assertion abort in the function dict_rename_var() in data/dictionary.c\n\t      of the libpspp library in GNU PSPP 0.11.0 that will lead to remote denial of service (CVE-2017-12960).</li>\n\t    <li>There is an assertion abort in the function parse_attributes() in data/sys-file-reader.c\n\t      of the libpspp library in GNU PSPP 0.11.0 that will lead to remote denial of service (CVE-2017-12961).</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.cvedetails.com/vulnerability-list/vendor_id-72/product_id-38732/year-2017/GNU-Pspp.html"
+    ],
+    "cvename": [
+      "CVE-2017-10791",
+      "CVE-2017-10792",
+      "CVE-2017-12958",
+      "CVE-2017-12959",
+      "CVE-2017-12960",
+      "CVE-2017-12961"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-08-18",
+    "entry": "2017-08-22",
+    "modified": "2017-08-30"
+  }
+}

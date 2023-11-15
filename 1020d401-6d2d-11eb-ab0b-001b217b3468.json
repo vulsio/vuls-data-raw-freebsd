@@ -1,0 +1,38 @@
+{
+  "vid": "1020d401-6d2d-11eb-ab0b-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "13.8.4",
+          "ge": "13.8.0"
+        },
+        {
+          "lt": "13.7.7",
+          "ge": "13.7.0"
+        },
+        {
+          "lt": "13.6.7",
+          "ge": "10.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2021/02/11/security-release-gitlab-13-8-4-released/\">\n\t  <p>Improper Certificate Validation for Fortinet OTP</p>\n\t  <p>Denial of Service Attack on gitlab-shell</p>\n\t  <p>Resource exhaustion due to pending jobs</p>\n\t  <p>Confidential issue titles were exposed</p>\n\t  <p>Improper access control allowed demoted project members to access authored merge requests</p>\n\t  <p>Improper access control allowed unauthorized users to access analytic pages</p>\n\t  <p>Unauthenticated CI lint API may lead to information disclosure and SSRF</p>\n\t  <p>Prometheus integration in Gitlab may lead to SSRF</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2021/02/11/security-release-gitlab-13-8-4-released/"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-02-11",
+    "entry": "2021-02-12"
+  }
+}

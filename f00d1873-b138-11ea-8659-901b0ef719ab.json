@@ -1,0 +1,44 @@
+{
+  "vid": "f00d1873-b138-11ea-8659-901b0ef719ab",
+  "topic": "BIND -- Remote Denial of Service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "bind911"
+      ],
+      "range": [
+        {
+          "lt": "9.11.20",
+          "ge": "9.11.14"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind916"
+      ],
+      "range": [
+        {
+          "lt": "9.16.4",
+          "ge": "9.16.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/docs/cve-2020-8619\">\n\t  <p>The asterisk character (\"*\") is allowed in DNS zone files, where\n\t    it is most commonly present as a wildcard at a terminal node of\n\t    the Domain Name System graph. However, the RFCs do not require\n\t    and BIND does not enforce that an asterisk character be present\n\t    only at a terminal node.</p>\n\t  <p>A problem can occur when an asterisk is present in an empty\n\t    non-terminal location within the DNS graph. If such a node exists,\n\t    after a series of queries, named can reach an inconsistent state\n\t    that results in the failure of an assertion check in rbtdb.c,\n\t    followed by the program exiting due to the assertion failure.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/docs/cve-2020-8619"
+    ],
+    "cvename": [
+      "CVE-2020-8619"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-06-17",
+    "entry": "2020-06-18"
+  }
+}

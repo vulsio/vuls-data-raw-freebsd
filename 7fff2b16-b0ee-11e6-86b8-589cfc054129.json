@@ -1,0 +1,76 @@
+{
+  "vid": "7fff2b16-b0ee-11e6-86b8-589cfc054129",
+  "topic": "wireshark -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "tshark"
+      ],
+      "range": [
+        {
+          "lt": "2.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "wireshark"
+      ],
+      "range": [
+        {
+          "lt": "2.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "wireshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "wireshark-qt5"
+      ],
+      "range": [
+        {
+          "lt": "2.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wireshark project reports:</p>\n\t<blockquote cite=\"://www.wireshark.org/docs/relnotes/wireshark-2.2.2.html\">\n\t <p>Wireshark project is releasing Wireshark 2.2.2, which addresses:</p>\n\t <ul>\n\t   <li>wnpa-sec-2016-58: Profinet I/O long loop - CVE-2016-9372</li>\n\t   <li>wnpa-sec-2016-59: AllJoyn crash - CVE-2016-9374</li>\n\t   <li>wnpa-sec-2016-60: OpenFlow crash - CVE-2016-9376</li>\n\t   <li>wnpa-sec-2016-61: DCERPC crash - CVE-2016-9373</li>\n\t   <li>wnpa-sec-2016-62: DTN infinite loop - CVE-2016-9375</li>\n\t </ul>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.wireshark.org/docs/relnotes/wireshark-2.2.2.html"
+    ],
+    "cvename": [
+      "CVE-2016-9372",
+      "CVE-2016-9373",
+      "CVE-2016-9374",
+      "CVE-2016-9375",
+      "CVE-2016-9376"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-16",
+    "entry": "2016-12-01"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "vid": "3dac84c9-bce1-4199-9784-d68af1eb7b2e",
+  "topic": "libtremor -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libtremor"
+      ],
+      "range": [
+        {
+          "lt": "1.2.0.s20101013"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The RedHat Project reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=438125\">\n\t  <p>Will Drewry of the Google Security Team reported multiple\n\t    issues in OGG Vorbis and Tremor libraries, that could cause\n\t    application using those libraries to crash (NULL pointer\n\t    dereference or divide by zero), enter an infinite loop or\n\t    cause heap overflow caused by integer overflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://redpig.dataspill.org/2008/05/multiple-vulnerabilities-in-ogg-tremor.html",
+      "https://git.xiph.org/?p=tremor.git;a=commitdiff;h=7e94eea",
+      "https://git.xiph.org/?p=tremor.git;a=commitdiff;h=1d1f93e",
+      "https://git.xiph.org/?p=tremor.git;a=commitdiff;h=159efc4"
+    ],
+    "cvename": [
+      "CVE-2008-1418",
+      "CVE-2008-1419",
+      "CVE-2008-1420",
+      "CVE-2008-1423",
+      "CVE-2008-2009"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-03-19",
+    "entry": "2015-08-25",
+    "modified": "2015-08-25"
+  }
+}

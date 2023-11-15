@@ -1,0 +1,42 @@
+{
+  "vid": "89d5bca6-0150-11ec-bf0c-080027eedc6a",
+  "topic": "The Bouncy Castle Crypto APIs -- EC math vulnerability",
+  "affects": [
+    {
+      "name": [
+        "bouncycastle15"
+      ],
+      "range": [
+        {
+          "lt": "1.66"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bouncycastle"
+      ],
+      "range": [
+        {
+          "lt": "1.66"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Bouncy Castle team reports::</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15522\">\n\t  <p>\n\t    Bouncy Castle BC Java before 1.66 has a timing issue within the EC\n\t    math library that can expose information about the private key when\n\t    an attacker is able to observe timing information for the generation\n\t    of multiple deterministic ECDSA signatures.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15522"
+    ],
+    "cvename": [
+      "CVE-2020-15522"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-04",
+    "entry": "2021-08-20"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vid": "ffb82d3a-610f-11da-8823-00123ffe8333",
+  "topic": "mambo -- \"register_globals\" emulation layer overwrite vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mambo"
+      ],
+      "range": [
+        {
+          "lt": "4.5.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17622/\">\n\t  <p>peter MC tachatte has discovered a vulnerability in Mambo,\n\t    which can be exploited by malicious people to manipulate\n\t    certain information and compromise a vulnerable system.</p>\n\t  <p>The vulnerability is caused due to an error in the\n\t    \"register_globals\" emulation layer in \"globals.php\" where\n\t    certain arrays used by the system can be overwritten. This\n\t    can be exploited to include arbitrary files from external\n\t    and local resources via the \"mosConfig_absolute_path\" parameter.</p>\n\t  <p>Successful exploitation requires that \"register_globals\"\n\t    is disabled.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mamboserver.com/index.php?option=com_content&task=view&id=172&Itemid=1",
+      "http://secunia.com/advisories/17622/"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-11-17",
+    "entry": "2005-11-30"
+  }
+}

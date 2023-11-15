@@ -1,0 +1,36 @@
+{
+  "vid": "1f6ee708-0d22-11e1-b5bd-14dae938ec40",
+  "topic": "phpmyadmin -- Local file inclusion",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.4.7.1",
+          "gt": "3.4"
+        },
+        {
+          "lt": "3.3.10.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jan Lieskovsky reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-17.php\">\n\t  <p>Importing a specially-crafted XML file which contains an XML\n\t    entity injection permits to retrieve a local file (limited by the\n\t    privileges of the user running the web server).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-17.php"
+    ],
+    "cvename": [
+      "CVE-2011-4107"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-11-10",
+    "entry": "2011-11-12"
+  }
+}

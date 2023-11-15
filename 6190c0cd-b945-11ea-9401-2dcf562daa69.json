@@ -1,0 +1,55 @@
+{
+  "vid": "6190c0cd-b945-11ea-9401-2dcf562daa69",
+  "topic": "PuTTY -- Release 0.74 fixes two security vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "putty"
+      ],
+      "range": [
+        {
+          "lt": "0.74"
+        }
+      ]
+    },
+    {
+      "name": [
+        "putty-gtk2"
+      ],
+      "range": [
+        {
+          "lt": "0.74"
+        }
+      ]
+    },
+    {
+      "name": [
+        "putty-nogtk"
+      ],
+      "range": [
+        {
+          "lt": "0.74"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Simon Tatham reports:</p>\n\t<blockquote cite=\"https://lists.tartarus.org/pipermail/putty-announce/2020/000030.html\">\n\t  <p>[Release 0.74] fixes the following security issues:</p>\n\t  <ul><li>New configuration option to disable PuTTY's default policy of\n\t    changing its host key algorithm preferences to prefer keys it\n\t    already knows. (There is a theoretical information leak in this\n\t    policy.) [CVE-2020-14002]</li>\n\t  <li>In some situations an SSH server could cause PuTTY to access freed\n\t    mdmory by pretending to accept an SSH key and then refusing the\n\t    actual signature. It can only happen if you're using an SSH agent.</li>\n\t</ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.tartarus.org/pipermail/putty-announce/2020/000030.html",
+      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-dynamic-hostkey-info-leak.html",
+      "https://www.fzi.de/en/news/news/detail-en/artikel/fsa-2020-2-ausnutzung-eines-informationslecks-fuer-gezielte-mitm-angriffe-auf-ssh-clients/",
+      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-agent-keylist-used-after-free.html"
+    ],
+    "cvename": [
+      "CVE-2020-14002"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-06-27",
+    "entry": "2020-06-28"
+  }
+}

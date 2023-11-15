@@ -1,0 +1,41 @@
+{
+  "vid": "762b7d4a-ec19-11ea-88f8-901b0ef719ab",
+  "topic": "FreeBSD -- dhclient heap overflow",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "12.1_9",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.4_3",
+          "ge": "11.4"
+        },
+        {
+          "lt": "11.3_13",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When parsing option 119 data, dhclient(8) computes the uncompressed domain\n\tlist length so that it can allocate an appropriately sized buffer to store\n\tthe uncompressed list.  The code to compute the length failed to handle\n\tcertain malformed input, resulting in a heap overflow when the uncompressed\n\tlist is copied into in inadequately sized buffer.</p>\n\t<h1>Impact:</h1>\n\t<p>The heap overflow could in principle be exploited to achieve remote code\n\texecution.  The affected process runs with reduced privileges in a Capsicum\n\tsandbox, limiting the immediate impact of an exploit.  However, it is\n\tpossible the bug could be combined with other vulnerabilities to escape the\n\tsandbox.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-7461"
+    ],
+    "freebsd_sa": [
+      "SA-20:26.dhclient"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-09-02",
+    "entry": "2020-09-02"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "647ac600-cc70-11ec-9cfc-10c37b4ac2ea",
+  "topic": "gogs -- XSS in issue attachments",
+  "affects": [
+    {
+      "name": [
+        "gogs"
+      ],
+      "range": [
+        {
+          "lt": "0.12.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The gogs project reports:</p>\n\t<blockquote cite=\"https://github.com/gogs/gogs/issues/6919\">\n\t  <p>Repository issues page allows HTML attachments with arbitrary\n\t    JS code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/gogs/gogs/issues/6919",
+      "https://huntr.dev/bounties/34a12146-3a5d-4efc-a0f8-7a3ae04b198d/"
+    ],
+    "cvename": [
+      "CVE-2022-1464"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-04-12",
+    "entry": "2022-05-05"
+  }
+}

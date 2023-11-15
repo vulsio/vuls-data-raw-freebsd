@@ -1,0 +1,76 @@
+{
+  "vid": "0b8d01a4-a0d2-11e6-9ca2-d050996490d0",
+  "topic": "BIND -- Remote Denial of Service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "bind99"
+      ],
+      "range": [
+        {
+          "lt": "9.9.9P4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind910"
+      ],
+      "range": [
+        {
+          "lt": "9.10.4P4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind911"
+      ],
+      "range": [
+        {
+          "lt": "9.11.0P1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind9-devel"
+      ],
+      "range": [
+        {
+          "le": "9.12.0.a.2016.10.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "9.3_50",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01434/\">\n\t  <p>A defect in BIND's handling of responses containing\n\t    a DNAME answer can cause a resolver to exit after\n\t    encountering an assertion failure in db.c or\n\t    resolver.c</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/article/AA-01434/"
+    ],
+    "cvename": [
+      "CVE-2016-8864"
+    ],
+    "freebsd_sa": [
+      "SA-16:34.bind"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-01",
+    "entry": "2016-11-02"
+  }
+}

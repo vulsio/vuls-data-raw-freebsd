@@ -1,0 +1,34 @@
+{
+  "vid": "6738977b-e9a5-11da-b9f4-00123ffe8333",
+  "topic": "coppermine -- \"file\" Local File Inclusion Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "coppermine"
+      ],
+      "range": [
+        {
+          "lt": "1.4.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19665/\">\n\t  <p>Coppermine Photo Gallery have a vulnerability, which can be\n\t    exploited by malicious people to disclose sensitive\n\t    information.</p>\n\t  <p>Input passed to the \"file\" parameter in \"index.php\" isn't properly\n\t    verified, before it is used to include files. This can be exploited\n\t    to include arbitrary files from local resources.</p>\n\t  <p>Example:\n\t    http://[host]/index.php?file=.//././/././/././/./[file]%00</p>\n\t  <p>Successful exploitation requires that \"magic_quotes_gpc\" is\n\t    disabled.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://coppermine-gallery.net/forum/index.php?topic=30655.0",
+      "http://myimei.com/security/2006-04-14/copperminephotogallery144-plugininclusionsystemindexphp-remotefileinclusion-attack.html",
+      "http://secunia.com/advisories/19665/"
+    ],
+    "cvename": [
+      "CVE-2006-1909"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-04-19",
+    "entry": "2006-05-22"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "vid": "4d6b5ea9-bc64-4e77-a7ee-d62ba68a80dd",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "110.0.5481.177"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ungoogled-chromium"
+      ],
+      "range": [
+        {
+          "lt": "110.0.5481.177"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2023/02/stable-channel-desktop-update_22.html\">\n\t <p>This update includes 10 security fixes:</p>\n\t <ul>\n\t   <li>[1415366] Critical CVE-2023-0941: Use after free in Prompts. Reported by Anonymous on 2023-02-13</li>\n\t   <li>[1414738] High CVE-2023-0927: Use after free in Web Payments API. Reported by Rong Jian of VRI on 2023-02-10</li>\n\t   <li>[1309035] High CVE-2023-0928: Use after free in SwiftShader. Reported by Anonymous on 2022-03-22</li>\n\t   <li>[1399742] High CVE-2023-0929: Use after free in Vulkan. Reported by Cassidy Kim(@cassidy6564) on 2022-12-09</li>\n\t   <li>[1410766] High CVE-2023-0930: Heap buffer overflow in Video. Reported by Cassidy Kim(@cassidy6564) on 2023-01-27</li>\n\t   <li>[1407701] High CVE-2023-0931: Use after free in Video. Reported by Cassidy Kim(@cassidy6564) on 2023-01-17</li>\n\t   <li>[1413005] High CVE-2023-0932: Use after free in WebRTC. Reported by Omri Bushari (Talon Cyber Security) on 2023-02-05</li>\n\t   <li>[1404864] Medium CVE-2023-0933: Integer overflow in PDF. Reported by Zhiyi Zhang from Codesafe Team of Legendsec at QI-ANXIN</li>\n\t </ul>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2023/02/stable-channel-desktop-update_22.html"
+    ],
+    "cvename": [
+      "CVE-2023-0941",
+      "CVE-2023-0927",
+      "CVE-2023-0928",
+      "CVE-2023-0929",
+      "CVE-2023-0930",
+      "CVE-2023-0931",
+      "CVE-2023-0932",
+      "CVE-2023-0933"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-02-22",
+    "entry": "2023-02-22"
+  }
+}

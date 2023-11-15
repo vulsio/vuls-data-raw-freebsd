@@ -1,0 +1,33 @@
+{
+  "vid": "740badcb-c60b-11e5-bf36-6805ca0b3d42",
+  "topic": "phpmyadmin -- Multiple full path disclosure vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpmyadmin"
+      ],
+      "range": [
+        {
+          "lt": "4.5.4",
+          "ge": "4.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-6/\">\n\t  <p>By calling some scripts that are part of phpMyAdmin in an\n\t    unexpected way, it is possible to trigger phpMyAdmin to\n\t    display a PHP error message which contains the full path of\n\t    the directory where phpMyAdmin is installed.</p>\n\t  <p>We consider these vulnerabilities to be non-critical.</p>\n\t  <p>This path disclosure is possible on servers where the\n\t    recommended setting of the PHP configuration directive\n\t    display_errors is set to on, which is against the\n\t    recommendations given in the PHP manual for a production\n\t    server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.phpmyadmin.net/security/PMASA-2016-6/"
+    ],
+    "cvename": [
+      "CVE-2016-2042"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-28",
+    "entry": "2016-01-28"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "a3764767-f31e-11e7-95f2-005056925db4",
+  "topic": "irssi -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "irssi"
+      ],
+      "range": [
+        {
+          "lt": "1.0.6,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2018_01.txt\">\n\t  <p>When the channel topic is set without specifying a sender, Irssi\n\t    may dereference NULL pointer. Found by Joseph Bisch.</p>\n\t  <p>When using incomplete escape codes, Irssi may access data beyond\n\t    the end of the string. Found by Joseph Bisch.</p>\n\t  <p>A calculation error in the completion code could cause a heap\n\t    buffer overflow when completing certain strings.\n\t    Found by Joseph Bisch.</p>\n\t  <p>When using an incomplete variable argument, Irssi may access data\n\t    beyond the end of the string. Found by Joseph Bisch.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://irssi.org/security/irssi_sa_2018_01.txt"
+    ],
+    "cvename": [
+      "CVE-2018-5205",
+      "CVE-2018-5206",
+      "CVE-2018-5207",
+      "CVE-2018-5208"
+    ],
+    "freebsd_pr": [
+      "ports/224954"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-03",
+    "entry": "2018-01-06"
+  }
+}

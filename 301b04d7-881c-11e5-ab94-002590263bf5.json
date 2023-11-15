@@ -1,0 +1,33 @@
+{
+  "vid": "301b04d7-881c-11e5-ab94-002590263bf5",
+  "topic": "xen-tools -- libxl fails to honour readonly flag on disks with qemu-xen",
+  "affects": [
+    {
+      "name": [
+        "xen-tools"
+      ],
+      "range": [
+        {
+          "lt": "4.5.1_1",
+          "ge": "4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-142.html\">\n\t  <p>Callers of libxl can specify that a disk should be read-only to the\n\t    guest. However, there is no code in libxl to pass this information\n\t    to qemu-xen (the upstream-based qemu); and indeed there is no way in\n\t    qemu to make a disk read-only.</p>\n\t  <p>The vulnerability is exploitable only via devices emulated by the\n\t    device model, not the parallel PV devices for supporting PVHVM.\n\t    Normally the PVHVM device unplug protocol renders the emulated\n\t    devices inaccessible early in boot.</p>\n\t  <p>Malicious guest administrators or (in some situations) users may be\n\t    able to write to supposedly read-only disk images.</p>\n\t  <p>CDROM devices (that is, devices specified to be presented to the\n\t    guest as CDROMs, regardless of the nature of the backing storage on\n\t    the host) are not affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-142.html"
+    ],
+    "cvename": [
+      "CVE-2015-7311"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-22",
+    "entry": "2015-11-11"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "24a82876-002e-11e8-9a95-0cc47a02c232",
+  "topic": "powerdns-recursor -- insufficient validation of DNSSEC signatures",
+  "affects": [
+    {
+      "name": [
+        "powerdns-recursor"
+      ],
+      "range": [
+        {
+          "lt": "4.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PowerDNS Security Advisory reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2018-01.html\">\n\t  <p>An issue has been found in the DNSSEC validation component of\n\t    PowerDNS Recursor, allowing an ancestor delegation NSEC or NSEC3\n\t    record to be used to wrongfully prove the non-existence of a RR\n\t    below the owner name of that record. This would allow an attacker in\n\t    position of man-in-the-middle to send a NXDOMAIN answer for a name\n\t    that does exist.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2018-01.html"
+    ],
+    "cvename": [
+      "CVE-2018-1000003"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-22",
+    "entry": "2018-01-23"
+  }
+}

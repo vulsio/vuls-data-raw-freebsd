@@ -1,0 +1,38 @@
+{
+  "vid": "93a1c9a7-5bef-11ec-a47a-001517a2e1a4",
+  "topic": "openhab -- log4j remote code injection",
+  "affects": [
+    {
+      "name": [
+        "openhab2",
+        "openhab"
+      ],
+      "range": [
+        {
+          "le": "2.5.12"
+        },
+        {
+          "lt": "3.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Openhab reports:</p>\n\t<blockquote cite=\"https://github.com/openhab/openhab-distro/security/advisories/GHSA-j99j-qp89-pcfq\">\n\t  <p>Any openHAB instance that is publicly available or which consumes untrusted content from remote servers is potentially a target of this attack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/openhab/openhab-distro/security/advisories/GHSA-j99j-qp89-pcfq",
+      "https://github.com/ops4j/org.ops4j.pax.logging/security/advisories/GHSA-xxfh-x98p-j8fr",
+      "https://github.com/advisories/GHSA-jfh8-c2jp-5v3q"
+    ],
+    "cvename": [
+      "CVE-2021-44228"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-12-10",
+    "entry": "2021-12-13"
+  }
+}

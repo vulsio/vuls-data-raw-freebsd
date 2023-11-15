@@ -1,0 +1,35 @@
+{
+  "vid": "a60a2e95-acba-4b11-bc32-ffb47364e07d",
+  "topic": "libgd -- Denial of servica via double free",
+  "affects": [
+    {
+      "name": [
+        "libgd"
+      ],
+      "range": [
+        {
+          "lt": "2.2.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>libgd developers report:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2017/dsa-3961\">\n\t  <p>Double free vulnerability in the gdImagePngPtr function in libgd2 before 2.2.5 allows remote attackers to cause a denial of service via vectors related to a palette with no colors.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.debian.org/security/2017/dsa-3961",
+      "https://github.com/libgd/libgd/issues/381",
+      "https://github.com/libgd/libgd/releases/tag/gd-2.2.5",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N2BLXX7KNRE7ZVQAKGTHHWS33CUCXVUP/"
+    ],
+    "cvename": [
+      "CVE-2017-6362"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-09-07",
+    "entry": "2017-09-26"
+  }
+}

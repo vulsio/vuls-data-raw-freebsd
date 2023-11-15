@@ -1,0 +1,42 @@
+{
+  "vid": "035d17b2-484a-11d9-813c-00065be4b5b6",
+  "topic": "mysql -- erroneous access restrictions applied to table renames",
+  "affects": [
+    {
+      "name": [
+        "mysql-server"
+      ],
+      "range": [
+        {
+          "le": "3.23.58_3"
+        },
+        {
+          "lt": "4.0.21",
+          "ge": "4.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Red Hat advisory reports:</p>\n\t<blockquote cite=\"http://rhn.redhat.com/errata/RHSA-2004-611.html\">\n\t  <p>Oleksandr Byelkin discovered that \"ALTER TABLE ... RENAME\" checked\n\t    the CREATE/INSERT rights of the old table instead of the new\n\t    one.</p>\n\t</blockquote>\n\t<p>Table access restrictions, on the affected MySQL servers, may\n\t  accidently or intentially be bypassed due to this bug.</p>\n       "
+  },
+  "references": {
+    "url": [
+      "http://bugs.mysql.com/bug.php?id=3270",
+      "http://rhn.redhat.com/errata/RHSA-2004-611.html",
+      "http://xforce.iss.net/xforce/xfdb/17666"
+    ],
+    "cvename": [
+      "CVE-2004-0835"
+    ],
+    "bid": [
+      "11357"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-23",
+    "entry": "2004-12-16",
+    "modified": "2005-03-15"
+  }
+}

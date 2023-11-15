@@ -1,0 +1,41 @@
+{
+  "vid": "5721ae65-b30a-11e9-a87f-a4badb2f4699",
+  "topic": "FreeBSD -- pts(4) write-after-free",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.0_8",
+          "ge": "12.0"
+        },
+        {
+          "lt": "11.2_12",
+          "ge": "11.2"
+        },
+        {
+          "lt": "11.3_1",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The code which handles a close(2) of a descriptor created\n\tby posix_openpt(2) fails to undo the configuration which\n\tcauses SIGIO to be raised. This bug can lead to a\n\twrite-after-free of kernel memory.</p>\n\t<h1>Impact:</h1>\n\t<p>The bug permits malicious code to trigger a write-after-free,\n\twhich may be used to gain root privileges or escape a\n\tjail.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-5606"
+    ],
+    "freebsd_sa": [
+      "SA-19:13.pts"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-07-24",
+    "entry": "2019-07-30"
+  }
+}

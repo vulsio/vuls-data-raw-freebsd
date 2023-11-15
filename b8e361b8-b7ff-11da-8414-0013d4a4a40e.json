@@ -1,0 +1,35 @@
+{
+  "vid": "b8e361b8-b7ff-11da-8414-0013d4a4a40e",
+  "topic": "curl -- TFTP packet buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "curl",
+        "linux-curl"
+      ],
+      "range": [
+        {
+          "lt": "7.15.3",
+          "gt": "7.14.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Project cURL Security Advisory reports:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20060320.html\">\n\t  <p>libcurl uses the given file part of a TFTP URL in a manner that\n\t    allows a malicious user to overflow a heap-based memory buffer due\n\t    to the lack of boundary check.</p>\n\t  <p>This overflow happens if you pass in a URL with a TFTP\n\t    protocol prefix (\"tftp://\"), using a valid host and a path\n\t    part that is longer than 512 bytes.</p>\n\t  <p>The affected flaw can be triggered by a redirect, if\n\t    curl/libcurl is told to follow redirects and an HTTP\n\t    server points the client to a tftp URL with the\n\t    characteristics described above.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://curl.haxx.se/docs/adv_20060320.html"
+    ],
+    "cvename": [
+      "CVE-2006-1061"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-03-20",
+    "entry": "2006-03-20",
+    "modified": "2006-10-05"
+  }
+}

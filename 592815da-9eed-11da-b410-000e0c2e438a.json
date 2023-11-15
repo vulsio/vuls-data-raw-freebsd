@@ -1,0 +1,32 @@
+{
+  "vid": "592815da-9eed-11da-b410-000e0c2e438a",
+  "topic": "mantis -- \"view_filters_page.php\" cross site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mantis"
+      ],
+      "range": [
+        {
+          "lt": "1.0.0a4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>r0t reports:</p>\n\t<blockquote cite=\"http://pridels.blogspot.com/2005/12/mantis-bugtracking-system-xss-vuln.html\">\n\t  <p>Mantis contains a flaw that allows a remote cross site\n\t    scripting attack.  This flaw exists because input passed to\n\t    \"target_field\" parameter in \"view_filters_page.php\" is not\n\t    properly sanitised before being returned to the user.  This\n\t    could allow a user to create a specially crafted URL that\n\t    would execute arbitrary code in a user's browser within the\n\t    trust relationship between the browser and the server,\n\t    leading to a loss of integrity.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://pridels.blogspot.com/2005/12/mantis-bugtracking-system-xss-vuln.html"
+    ],
+    "cvename": [
+      "CAN-2005-4238"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-12-13",
+    "entry": "2006-02-16"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "0bf816f6-3cfe-11ec-86cd-dca632b19f10",
+  "topic": "advancecomp -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "advancecomp"
+      ],
+      "range": [
+        {
+          "lt": "2.1.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Joonun Jang reports:</p>\n\t<blockquote cite=\"https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=889270\">\n\t  <p>heap buffer overflow running advzip with \"-l poc\" option</p>\n\t  <p>Running 'advzip -l poc' with the attached file raises heap buffer overflow\n\t  which may allow a remote attacker to cause unspecified impact including denial-of-service attack.\n\t  I expected the program to terminate without segfault, but the program crashes as follow. [...]\n\t  </p>\n\t</blockquote>\n\t<p>and other vulnerabilities.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2018-1056",
+      "CVE-2019-8379",
+      "CVE-2019-8383",
+      "CVE-2019-9210"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-07-29",
+    "entry": "2021-11-19"
+  }
+}

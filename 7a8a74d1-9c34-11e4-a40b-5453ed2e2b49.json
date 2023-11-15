@@ -1,0 +1,32 @@
+{
+  "vid": "7a8a74d1-9c34-11e4-a40b-5453ed2e2b49",
+  "topic": "kde-runtime -- incorrect CBC encryption handling",
+  "affects": [
+    {
+      "name": [
+        "kde-runtime"
+      ],
+      "range": [
+        {
+          "lt": "4.12_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Valentin Rusu reports:</p>\n\t<blockquote cite=\"https://www.kde.org/info/security/advisory-20150109-1.txt\">\n\t  <p>Until KDE Applications 14.12.0, kwalletd incorrectly handled CBC\n\t    encryption blocks when encrypting secrets in kwl files. The secrets\n\t    were still encrypted, but the result binary data corresponded to an\n\t    ECB encrypted block instead of CBC.</p>\n\t  <p>The ECB encryption algorithm, even if it'll scramble user data,\n\t    will produce same encrypted byte sequence for the same input text.\n\t    As a result, attackers may eventually find-out the encrypted\n\t    text.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.kde.org/info/security/advisory-20150109-1.txt"
+    ],
+    "cvename": [
+      "CVE-2013-7252"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-01-09",
+    "entry": "2015-01-14"
+  }
+}

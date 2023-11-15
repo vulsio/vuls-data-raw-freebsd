@@ -1,0 +1,37 @@
+{
+  "vid": "ee6fa2bd-406a-11dd-936a-0015af872849",
+  "topic": "php -- input validation error in safe_mode",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.2.6_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>According to Maksymilian Arciemowicz research,\n\t  it is possible to bypass security restrictions\n\t  of <code>safe_mode</code> in various\n\t  functions via directory traversal vulnerability. The attacker\n\t  can use this attack to gain access to sensitive\n\t  information. Functions utilizing\n\t  <code>expand_filepath()</code> may be affected.</p>\n\t<p>It should be noted that this vulnerability is not\n\t  considered to be serious by the FreeBSD Security Team,\n\t  since <code>safe_mode</code> and <code>open_basedir</code>\n\t  are insecure by design and should not be relied upon.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://securityreason.com/achievement_securityalert/54"
+    ],
+    "cvename": [
+      "CVE-2008-2665",
+      "CVE-2008-2666"
+    ],
+    "bid": [
+      "29797"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-06-17",
+    "entry": "2008-06-22",
+    "modified": "2008-09-04"
+  }
+}

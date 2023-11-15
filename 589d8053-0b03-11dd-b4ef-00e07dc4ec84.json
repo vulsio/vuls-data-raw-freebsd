@@ -1,0 +1,43 @@
+{
+  "vid": "589d8053-0b03-11dd-b4ef-00e07dc4ec84",
+  "topic": "clamav -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.93"
+        }
+      ]
+    },
+    {
+      "name": [
+        "clamav-devel"
+      ],
+      "range": [
+        {
+          "lt": "20080415"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/29000\">\n\t  <p>Some vulnerabilities have been reported in ClamAV, which can be\n\t    exploited by malicious people to cause a DoS (Denial of Service)\n\t    or to compromise a vulnerable system.</p>\n\t  <p>1) A boundary error exists within the \"cli_scanpe()\" function in\n\t    libclamav/pe.c. This can be exploited to cause a heap-based buffer\n\t    overflow via a specially crafted \"Upack\" executable.</p>\n\t  <p>Successful exploitation allows execution of arbitrary code.</p>\n\t  <p>2) A boundary error within the processing of PeSpin packed\n\t    executables in libclamav/spin.c can be exploited to cause a\n\t    heap-based buffer overflow.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary code.</p>\n\t  <p>3) An unspecified error in the processing of ARJ files can be\n\t    exploited to hang ClamAV.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/29000"
+    ],
+    "cvename": [
+      "CVE-2008-1100",
+      "CVE-2008-1387"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-04-15",
+    "entry": "2008-04-15"
+  }
+}

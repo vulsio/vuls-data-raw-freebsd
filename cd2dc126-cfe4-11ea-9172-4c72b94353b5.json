@@ -1,0 +1,39 @@
+{
+  "vid": "cd2dc126-cfe4-11ea-9172-4c72b94353b5",
+  "topic": "Cacti -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cacti"
+      ],
+      "range": [
+        {
+          "lt": "1.2.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cacti developers reports:</p>\n\t<blockquote cite=\"https://www.cacti.net/release_notes.php?version=1.2.13\">\n\t  <p>Multiple fixes for bundled jQuery to prevent\n\t    code exec (CVE-2020-11022, CVE-2020-11023).</p>\n\t  <p>PHPMail contains a escaping bug\n\t    (CVE-2020-13625).</p>\n\t  <p>SQL Injection via color.php in Cacti\n\t    (CVE-2020-14295).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.cacti.net/release_notes.php?version=1.2.13",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11022",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11023",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13625",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14295"
+    ],
+    "cvename": [
+      "CVE-2020-11022",
+      "CVE-2020-11023",
+      "CVE-2020-13625",
+      "CVE-2020-14295"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-15",
+    "entry": "2020-07-27"
+  }
+}

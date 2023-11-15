@@ -1,0 +1,35 @@
+{
+  "vid": "0f8bf913-7efa-11ec-8c04-2cf05d620ecc",
+  "topic": "polkit -- Local Privilege Escalation",
+  "affects": [
+    {
+      "name": [
+        "polkit"
+      ],
+      "range": [
+        {
+          "lt": "0.120_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Qualys reports:</p>\n\t<blockquote cite=\"https://seclists.org/oss-sec/2022/q1/80\">\n\t  <p>We discovered a Local Privilege Escalation (from any user to root) in\npolkit's pkexec, a SUID-root program that is installed by default on\nevery major Linux distribution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://seclists.org/oss-sec/2022/q1/80"
+    ],
+    "cvename": [
+      "CVE-2021-4034"
+    ],
+    "freebsd_pr": [
+      "ports/261482"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-01-25",
+    "entry": "2022-01-26"
+  }
+}

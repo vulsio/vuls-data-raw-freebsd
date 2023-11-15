@@ -1,0 +1,66 @@
+{
+  "vid": "482d40cb-f9a3-11e5-92ce-002590263bf5",
+  "topic": "php -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php70",
+        "php70-fileinfo",
+        "php70-mbstring",
+        "php70-phar",
+        "php70-snmp"
+      ],
+      "range": [
+        {
+          "lt": "7.0.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56",
+        "php56-fileinfo",
+        "php56-mbstring",
+        "php56-phar",
+        "php56-snmp"
+      ],
+      "range": [
+        {
+          "lt": "5.6.20"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55",
+        "php55-fileinfo",
+        "php55-mbstring",
+        "php55-phar",
+        "php55-snmp"
+      ],
+      "range": [
+        {
+          "lt": "5.5.34"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP Group reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-7.php#7.0.5\">\n\t  <ul><li>Fileinfo:\n\t  <ul>\n\t    <li>Fixed bug #71527 (Buffer over-write in finfo_open with\n\t      malformed magic file).</li>\n\t  </ul></li>\n\t  <li>mbstring:\n\t  <ul>\n\t    <li>Fixed bug #71906 (AddressSanitizer: negative-size-param (-1)\n\t      in mbfl_strcut).</li>\n\t  </ul></li>\n\t  <li>Phar:\n\t  <ul>\n\t    <li>Fixed bug #71860 (Invalid memory write in phar on filename with\n\t      \\0 in name).</li>\n\t  </ul></li>\n\t  <li>SNMP:\n\t  <ul>\n\t    <li>Fixed bug #71704 (php_snmp_error() Format String Vulnerability).\n\t      </li>\n\t  </ul></li>\n\t  <li>Standard:\n\t  <ul>\n\t    <li>Fixed bug #71798 (Integer Overflow in php_raw_url_encode).</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-7.php#7.0.5",
+      "http://php.net/ChangeLog-5.php#5.6.20",
+      "http://php.net/ChangeLog-5.php#5.5.34"
+    ],
+    "freebsd_pr": [
+      "ports/208465"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-03-31",
+    "entry": "2016-04-03"
+  }
+}

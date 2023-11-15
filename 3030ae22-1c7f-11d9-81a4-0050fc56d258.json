@@ -1,0 +1,30 @@
+{
+  "vid": "3030ae22-1c7f-11d9-81a4-0050fc56d258",
+  "topic": "mail-notification -- denial-of-service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mail-notification"
+      ],
+      "range": [
+        {
+          "lt": "0.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Caused by an untested return value, and a resulting\n\t  null pointer dereference, it is possible for an attacker\n\t  to crash the application.  However, the attacker must first\n\t  hijack the connection between Mail Notification and the\n\t  Gmail or IMAP server.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.nongnu.org/mailnotify/sa/mail-notification-SA-04:2.asc",
+      "http://www.nongnu.org/mailnotify/sa/mail-notification-SA-04:3.asc"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-10-06",
+    "entry": "2004-10-12"
+  }
+}

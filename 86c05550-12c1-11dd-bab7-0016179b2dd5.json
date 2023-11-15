@@ -1,0 +1,33 @@
+{
+  "vid": "86c05550-12c1-11dd-bab7-0016179b2dd5",
+  "topic": "mksh -- TTY attachment privilege escalation",
+  "affects": [
+    {
+      "name": [
+        "mksh"
+      ],
+      "range": [
+        {
+          "lt": "R33d"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/29803/\">\n\t  <p>The vulnerability is caused due to an error when attaching to a TTY\n\t    via the -T command line switch. This can be exploited to execute\n\t    arbitrary commands with the privileges of the user running mksh via\n\t    characters previously written to the attached virtual console.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/29803/",
+      "http://www.mirbsd.org/mksh.htm#clog"
+    ],
+    "cvename": [
+      "CVE-2008-1845"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-04-14",
+    "entry": "2008-04-25"
+  }
+}

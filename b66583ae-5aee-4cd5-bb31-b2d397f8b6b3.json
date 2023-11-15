@@ -1,0 +1,43 @@
+{
+  "vid": "b66583ae-5aee-4cd5-bb31-b2d397f8b6b3",
+  "topic": "librsvg2 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "librsvg2"
+      ],
+      "range": [
+        {
+          "lt": "2.40.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "librsvg2-rust"
+      ],
+      "range": [
+        {
+          "lt": "2.46.3",
+          "ge": "2.41.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Librsvg2 developers reports:</p>\n\t<blockquote cite=\"https://mail.gnome.org/archives/ftp-release-list/2020-February/msg00133.htmlE\">\n\t  <p>Backport the following fixes from 2.46.x:</p>\n\t  <p>Librsvg now has limits on the number of loaded XML elements,\n\t    and the number of referenced elements within an SVG document.  This\n\t    is to mitigate malicious SVGs which try to consume all memory, and\n\t    those which try to consume an exponential amount of CPU time.</p>\n\t  <p>Fix stack exhaustion with circular references in &lt;use&gt; elements.</p>\n\t  <p>Fix a denial-of-service condition from exponential explosion\n\t    of rendered elements, through nested use of SVG &lt;use&gt; elements in\n\t    malicious SVGs.  This is similar to the XML \"billion laughs attack\"\n\t    but for SVG instancing.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://mail.gnome.org/archives/ftp-release-list/2020-February/msg00133.html"
+    ],
+    "cvename": [
+      "CVE-2019-20446"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-02-26",
+    "entry": "2020-03-02"
+  }
+}

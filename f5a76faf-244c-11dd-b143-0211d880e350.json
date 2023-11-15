@@ -1,0 +1,34 @@
+{
+  "vid": "f5a76faf-244c-11dd-b143-0211d880e350",
+  "topic": "libvorbis -- various security issues",
+  "affects": [
+    {
+      "name": [
+        "libvorbis"
+      ],
+      "range": [
+        {
+          "lt": "1.2.0_2,3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Red Hat reports:</p>\n\t<blockquote cite=\"https://rhn.redhat.com/errata/RHSA-2008-0270.html\">\n\t  <p>Will Drewry of the Google Security Team reported several\n\t    flaws in the way libvorbis processed audio data. An\n\t    attacker could create a carefully crafted [Vorbis] audio file\n\t    in such a way that it could cause an application linked\n\t    with libvorbis to crash, or execute arbitrary code when\n\t    it was opened.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://rhn.redhat.com/errata/RHSA-2008-0270.html"
+    ],
+    "cvename": [
+      "CVE-2008-1419",
+      "CVE-2008-1420",
+      "CVE-2008-1423"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-05-14",
+    "entry": "2008-05-17"
+  }
+}

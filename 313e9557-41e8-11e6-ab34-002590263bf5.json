@@ -1,0 +1,45 @@
+{
+  "vid": "313e9557-41e8-11e6-ab34-002590263bf5",
+  "topic": "wireshark -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wireshark",
+        "wireshark-lite",
+        "wireshark-qt5",
+        "tshark",
+        "tshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wireshark development team reports:</p>\n\t<blockquote cite=\"https://www.wireshark.org/docs/relnotes/wireshark-2.0.4.html\">\n\t  <p>The following vulnerabilities have been fixed:</p>\n\t  <ul>\n\t    <li><p>wnpa-sec-2016-29</p>\n\t      <p>The SPOOLS dissector could go into an infinite loop. Discovered\n\t      by the CESG.</p></li>\n\t    <li><p>wnpa-sec-2016-30</p>\n\t      <p>The IEEE 802.11 dissector could crash. (Bug 11585)</p></li>\n\t    <li><p>wnpa-sec-2016-31</p>\n\t      <p>The IEEE 802.11 dissector could crash. Discovered by Mateusz\n\t      Jurczyk. (Bug 12175)</p></li>\n\t    <li><p>wnpa-sec-2016-32</p>\n\t      <p>The UMTS FP dissector could crash. (Bug 12191)</p></li>\n\t    <li><p>wnpa-sec-2016-33</p>\n\t      <p>Some USB dissectors could crash. Discovered by Mateusz\n\t      Jurczyk. (Bug 12356)</p></li>\n\t    <li><p>wnpa-sec-2016-34</p>\n\t      <p>The Toshiba file parser could crash. Discovered by iDefense\n\t      Labs. (Bug 12394)</p></li>\n\t    <li><p>wnpa-sec-2016-35</p>\n\t      <p>The CoSine file parser could crash. Discovered by iDefense\n\t      Labs. (Bug 12395)</p></li>\n\t    <li><p>wnpa-sec-2016-36</p>\n\t      <p>The NetScreen file parser could crash. Discovered by iDefense\n\t      Labs. (Bug 12396)</p></li>\n\t    <li><p>wnpa-sec-2016-37</p>\n\t      <p>The Ethernet dissector could crash. (Bug 12440)</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.wireshark.org/docs/relnotes/wireshark-2.0.4.html",
+      "http://www.openwall.com/lists/oss-security/2016/06/09/4"
+    ],
+    "cvename": [
+      "CVE-2016-5350",
+      "CVE-2016-5351",
+      "CVE-2016-5352",
+      "CVE-2016-5353",
+      "CVE-2016-5354",
+      "CVE-2016-5355",
+      "CVE-2016-5356",
+      "CVE-2016-5357",
+      "CVE-2016-5358"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-06-07",
+    "entry": "2016-07-04"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "f353525a-d8b8-11e6-a071-001e67f15f5a",
+  "topic": "lshell -- Multiple security issues",
+  "affects": [
+    {
+      "name": [
+        "lshell"
+      ],
+      "range": [
+        {
+          "le": "0.9.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>lshell reports:</p>\n\t<blockquote cite=\"https://github.com/ghantoos/lshell/issues/151\">\n\t  <p>It is possible to escape lshell if an allowed command can execute an arbitrary non allowed one (issue #122).</p>\n\t  <p>Inappropriate parsing of commands can lead to arbitrary command execution (issue #147, #149, #151).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/ghantoos/lshell/issues/122",
+      "https://github.com/ghantoos/lshell/issues/147",
+      "https://github.com/ghantoos/lshell/issues/149",
+      "https://github.com/ghantoos/lshell/issues/151"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-04",
+    "entry": "2018-07-27"
+  }
+}

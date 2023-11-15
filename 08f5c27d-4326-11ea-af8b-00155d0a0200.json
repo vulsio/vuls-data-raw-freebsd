@@ -1,0 +1,33 @@
+{
+  "vid": "08f5c27d-4326-11ea-af8b-00155d0a0200",
+  "topic": "OpenSMTPd -- critical LPE / RCE vulnerability",
+  "affects": [
+    {
+      "name": [
+        "opensmtpd"
+      ],
+      "range": [
+        {
+          "lt": "6.6.2,1",
+          "ge": "6.4.0,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OpenSMTPD developers report:</p>\n\t<blockquote cite=\"https://opensmtpd.org/security.html\">\n\t  <p>An incorrect check allows an attacker to trick mbox delivery\n\t   into executing arbitrary commands as root and lmtp delivery\n\t    into executing arbitrary commands as an unprivileged user</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openwall.com/lists/oss-security/2020/01/28/3"
+    ],
+    "cvename": [
+      "CVE-2020-7247"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-28",
+    "entry": "2020-01-29"
+  }
+}

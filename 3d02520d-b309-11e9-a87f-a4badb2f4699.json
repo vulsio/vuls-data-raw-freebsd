@@ -1,0 +1,37 @@
+{
+  "vid": "3d02520d-b309-11e9-a87f-a4badb2f4699",
+  "topic": "FreeBSD -- IPv6 fragment reassembly panic in pf(4)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.0_4",
+          "ge": "12.0"
+        },
+        {
+          "lt": "11.2_10",
+          "ge": "11.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A bug in the pf(4) IPv6 fragment reassembly logic\n\tincorrectly uses the last extension header offset from the\n\tlast received packet instead of from the first packet.</p>\n\t<h1>Impact:</h1>\n\t<p>Malicious IPv6 packets with different IPv6 extensions\n\tcould cause a kernel panic or potentially a filtering rule\n\tbypass.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-5597"
+    ],
+    "freebsd_sa": [
+      "SA-19:05.pf"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-05-14",
+    "entry": "2019-07-30"
+  }
+}

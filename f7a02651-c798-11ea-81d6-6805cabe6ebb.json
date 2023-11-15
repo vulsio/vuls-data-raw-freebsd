@@ -1,0 +1,34 @@
+{
+  "vid": "f7a02651-c798-11ea-81d6-6805cabe6ebb",
+  "topic": "clamav -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.102.4,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Micah Snyder reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2020/07/clamav-01024-security-patch-released.html\">\n\t  <dl>\n\t    <dt>CVE-2020-3350</dt>\n\t    <dd>\n\t      Fixed a vulnerability a malicious user could exploit to replace\n\t      a scan target's directory with a symlink to another path to trick\n\t      clamscan, clamdscan, or clamonacc into removing or moving a different\n\t      file (such as a critical system file). The issue would affect users\n\t      that use the --move or --remove options for clamscan, clamdscan and\n\t      clamonacc.\n\t    </dd>\n\t    <dt>CVE-2020-3327</dt>\n\t    <dd>\n\t      Fixed a vulnerability in the ARJ archive-parsing module in ClamAV\n\t      0.102.3 that could cause a denial-of-service (DoS) condition.\n\t      Improper bounds checking resulted in an out-of-bounds read that could\n\t      cause a crash. The previous fix for this CVE in version 0.102.3 was\n\t      incomplete. This fix correctly resolves the issue.\n\t    </dd>\n\t    <dt>CVE-2020-3481</dt>\n\t    <dd>\n\t      Fixed a vulnerability in the EGG archive module in ClamAV 0.102.0\n\t      - 0.102.3 that could cause a denial-of-service (DoS) condition.\n\t      Improper error handling could cause a crash due to a NULL pointer\n\t      dereference. This vulnerability is mitigated for those using the\n\t      official ClamAV signature databases because the file type signatures\n\t      in daily.cvd will not enable the EGG archive parser in affected\n\t      versions.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.clamav.net/2020/07/clamav-01024-security-patch-released.html"
+    ],
+    "cvename": [
+      "CVE-2020-3350",
+      "CVE-2020-3327",
+      "CVE-2020-3481"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-16",
+    "entry": "2020-07-16"
+  }
+}

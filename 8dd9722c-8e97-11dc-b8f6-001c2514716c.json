@@ -1,0 +1,33 @@
+{
+  "vid": "8dd9722c-8e97-11dc-b8f6-001c2514716c",
+  "topic": "cups -- off-by-one buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "cups-base"
+      ],
+      "range": [
+        {
+          "lt": "1.3.3_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/27233\">\n\t  <p>Secunia Research has discovered a vulnerability in CUPS, which can\n\t    be exploited by malicious people to compromise a vulnerable\n\t    system.</p>\n\t  <p>The vulnerability is caused due to a boundary error within the\n\t    \"ippReadIO()\" function in cups/ipp.c when processing IPP (Internet\n\t    Printing Protocol) tags.  This can be exploited to overwrite one\n\t    byte on the stack with a zero by sending an IPP request containing\n\t    specially crafted \"textWithLanguage\" or \"nameWithLanguage\" tags.</p>\n\t  <p>Successful exploitation allows execution of arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/secunia_research/2007-76/"
+    ],
+    "cvename": [
+      "CVE-2007-4351"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-11-06",
+    "entry": "2007-11-09",
+    "modified": "2007-11-12"
+  }
+}

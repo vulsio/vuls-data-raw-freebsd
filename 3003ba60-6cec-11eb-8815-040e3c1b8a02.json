@@ -1,0 +1,29 @@
+{
+  "vid": "3003ba60-6cec-11eb-8815-040e3c1b8a02",
+  "topic": "oauth2-proxy -- domain whitelist could be used as redirect",
+  "affects": [
+    {
+      "name": [
+        "oauth2-proxy"
+      ],
+      "range": [
+        {
+          "lt": "7.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SO-AND-SO reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2021-21291\">\n\t  <p>In OAuth2 Proxy before version 7.0.0, for users that use the\n\t     whitelist domain feature, a domain that ended in a similar way to\n\t     the intended domain could have been allowed as a redirect.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2021-21291"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-02-02",
+    "entry": "2021-02-12"
+  }
+}

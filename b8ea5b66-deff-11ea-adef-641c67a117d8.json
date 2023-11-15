@@ -1,0 +1,32 @@
+{
+  "vid": "b8ea5b66-deff-11ea-adef-641c67a117d8",
+  "topic": "snmptt -- malicious shell code",
+  "affects": [
+    {
+      "name": [
+        "snmptt"
+      ],
+      "range": [
+        {
+          "lt": "1.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Snmptt reports:</p>\n\t<blockquote cite=\"http://snmptt.sourceforge.net/changelog.shtml\">\n\t  <p>Fixed a security issue with EXEC / PREXEC / unknown_trap_exec that could\n\t    allow malicious shell code to be executed.</p>\n\t  <p>Fixed a bug with EXEC / PREXEC / unknown_trap_exec that caused commands to be\n\t    run as root instead of the user defined in daemon_uid.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://snmptt.sourceforge.net/changelog.shtml"
+    ],
+    "freebsd_pr": [
+      "ports/248162"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-23",
+    "entry": "2020-08-15"
+  }
+}

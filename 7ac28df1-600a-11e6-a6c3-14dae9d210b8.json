@@ -1,0 +1,41 @@
+{
+  "vid": "7ac28df1-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Linux compatibility layer issetugid(2) system call",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "10.2_11",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_28",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_35",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A programming error in the Linux compatibility layer\n\tcould cause the issetugid(2) system call to return incorrect\n\tinformation.</p>\n\t<h1>Impact:</h1>\n\t<p>If an application relies on output of the issetugid(2)\n\tsystem call and that information is incorrect, this could\n\tlead to a privilege escalation.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-1883"
+    ],
+    "freebsd_sa": [
+      "SA-16:10.linux"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-27",
+    "entry": "2016-08-11"
+  }
+}

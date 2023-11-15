@@ -1,0 +1,38 @@
+{
+  "vid": "1ba21ff1-e672-11eb-a686-3065ec8fd3ec",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "91.0.4472.164"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2021/07/stable-channel-update-for-desktop.html\">\n\t  <p>This release contains 8 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1219082] High CVE-2021-30559: Out of bounds write in ANGLE.\n\t      Reported by Seong-Hwan Park (SeHwa) of SecunologyLab on\n\t      2021-06-11</li>\n\t    <li>[1214842] High CVE-2021-30541: Use after free in V8. Reported by\n\t      Richard Wheeldon on 2021-05-31</li>\n\t    <li>[1219209] High CVE-2021-30560: Use after free in Blink XSLT.\n\t      Reported by Nick Wellnhofer on 2021-06-12</li>\n\t    <li>[1219630] High CVE-2021-30561: Type Confusion in V8. Reported by\n\t      Sergei Glazunov of Google Project Zero on 2021-06-14</li>\n\t    <li>[1220078] High CVE-2021-30562: Use after free in WebSerial.\n\t      Reported by Anonymous on 2021-06-15</li>\n\t    <li>[1228407] High CVE-2021-30563: Type Confusion in V8. Reported by\n\t      Anonymous on 2021-07-12</li>\n\t    <li>[1221309] Medium CVE-2021-30564: Heap buffer overflow in WebXR.\n\t      Reported by Ali Merchant, iQ3Connect VR Platform on\n\t      2021-06-17</li>\n\t  </ul>\n\t  <p>Google is aware of reports that an exploit for CVE-2021-30563 exists in the wild.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2021/07/stable-channel-update-for-desktop.html"
+    ],
+    "cvename": [
+      "CVE-2021-30541",
+      "CVE-2021-30559",
+      "CVE-2021-30560",
+      "CVE-2021-30561",
+      "CVE-2021-30562",
+      "CVE-2021-30563",
+      "CVE-2021-30564"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-07-15",
+    "entry": "2021-07-16"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "b8a0fea2-9be9-11ed-8acf-0800277bb8a8",
+  "topic": "gitea -- information disclosure",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.18.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/22566\">\n\t  <p>Prevent multiple To recipients: Change the mailer interface to\n\t    prevent leaking of possible hidden email addresses when sending\n\t    to multiple recipients.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.gitea.io/2023/01/gitea-1.18.3-is-released/"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-01-22",
+    "entry": "2023-01-24"
+  }
+}

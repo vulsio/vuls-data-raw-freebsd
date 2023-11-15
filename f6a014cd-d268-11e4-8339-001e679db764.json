@@ -1,0 +1,57 @@
+{
+  "vid": "f6a014cd-d268-11e4-8339-001e679db764",
+  "topic": "GNU binutils -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cross-binutils"
+      ],
+      "range": [
+        {
+          "lt": "2.25"
+        }
+      ]
+    },
+    {
+      "name": [
+        "x86_64-pc-mingw32-binutils"
+      ],
+      "range": [
+        {
+          "lt": "2.25"
+        }
+      ]
+    },
+    {
+      "name": [
+        "m6811-binutils"
+      ],
+      "range": [
+        {
+          "lt": "2.25"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US-CERT/NIST reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8501\">\n\t  <p>The _bfd_XXi_swap_aouthdr_in function in bfd/peXXigen.c in GNU\n\t    binutils 2.24 and earlier allows remote attackers to cause a\n\t    denial of service (out-of-bounds write) and possibly have other\n\t    unspecified impact via a crafted NumberOfRvaAndSizes field in the\n\t    AOUT header in a PE executable.</p>\n\t</blockquote>\n\t<p>US-CERT/NIST reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8502\">\n\t  <p>Heap-based buffer overflow in the pe_print_edata function in\n\t    bfd/peXXigen.c in GNU binutils 2.24 and earlier allows remote\n\t    attackers to cause a denial of service (crash) and possibly have\n\t    other unspecified impact via a truncated export table in a PE\n\t    file.</p>\n\t</blockquote>\n\t<p>US-CERT/NIST reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8503\">\n\t  <p>Stack-based buffer overflow in the ihex_scan function in\n\t    bfd/ihex.c in GNU binutils 2.24 and earlier allows remote\n\t    attackers to cause a denial of service (crash) and possibly have\n\t    other unspecified impact via a crafted ihex file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8501",
+      "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8502",
+      "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8503"
+    ],
+    "cvename": [
+      "CVE-2014-8501",
+      "CVE-2014-8502",
+      "CVE-2014-8503"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-12-09",
+    "entry": "2015-03-24",
+    "modified": "2016-01-08"
+  }
+}

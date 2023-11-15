@@ -1,0 +1,68 @@
+{
+  "vid": "6a72eff7-ccd6-11ea-9172-4c72b94353b5",
+  "topic": "Apache Tomcat -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "tomcat7"
+      ],
+      "range": [
+        {
+          "lt": "7.0.105"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat85"
+      ],
+      "range": [
+        {
+          "lt": "8.5.57"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat9"
+      ],
+      "range": [
+        {
+          "lt": "9.0.37"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat-devel"
+      ],
+      "range": [
+        {
+          "lt": "10.0.0.M7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t  <p>An h2c direct connection did not release the HTTP/1.1 processor after\n\t    the upgrade to HTTP/2. If a sufficient number of such requests were\n\t    made, an OutOfMemoryException could occur leading to a denial of service.</p>\n\t  <p>The payload length in a WebSocket frame was not correctly validated.\n\t    Invalid payload lengths could trigger an infinite loop. Multiple\n\t    requests with invalid payload lengths could lead to a denial of service.</p>\n\t  <p>A specially crafted sequence of HTTP/2 requests could trigger high CPU\n\t    usage for several seconds. If a sufficient number of such requests were\n\t    made on concurrent HTTP/2 connections, the server could become unresponsive.</p>\n\t"
+  },
+  "references": {
+    "url": [
+      "https://tomcat.apache.org/security-7.html",
+      "https://tomcat.apache.org/security-8.html",
+      "https://tomcat.apache.org/security-9.html",
+      "https://tomcat.apache.org/security-10.html"
+    ],
+    "cvename": [
+      "CVE-2020-11996",
+      "CVE-2020-13934",
+      "CVE-2020-13935"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-05",
+    "entry": "2020-07-23",
+    "modified": "2020-07-23"
+  }
+}

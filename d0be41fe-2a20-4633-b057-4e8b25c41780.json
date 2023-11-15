@@ -1,0 +1,29 @@
+{
+  "vid": "d0be41fe-2a20-4633-b057-4e8b25c41780",
+  "topic": "bro -- array bounds and potential DOS issues",
+  "affects": [
+    {
+      "name": [
+        "bro"
+      ],
+      "range": [
+        {
+          "lt": "2.5.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Corelight reports:</p>\n\t<blockquote cite=\"https://www.bro.org/download/NEWS.bro.html\">\n\t  <p>Bro 2.5.5 primarily addresses security issues:</p>\n\t  <ul>\n\t      <li>Fix array bounds checking in BinPAC: for arrays\n\t\tthat are fields within a record, the bounds check\n\t\twas based on a pointer to the start of the record\n\t\trather than the start of the array field, potentially\n\t\tresulting in a buffer over-read.</li>\n\t      <li>Fix SMTP command string comparisons: the number\n\t       of bytes compared was based on the user-supplied\n\t       string length and can lead to incorrect matches.\n\t       e.g.  giving a command of \"X\" incorrectly matched\n\t       \"X-ANONYMOUSTLS\" (and an empty commands match\n\t       anything).</li>\n\t    </ul>\n\t  <p>Address potential vectors for Denial of Service:</p>\n\t    <ul>\n\t      <li>\"Weird\" events are now generally suppressed/sampled\n\t\tby default according to some tunable parameters.</li>\n\t      <li>Improved handling of empty lines in several text\n\t\tprotocol analyzers that can cause performance issues\n\t\twhen seen in long sequences.</li>\n\t      <li>Add `smtp_excessive_pending_cmds' weird which\n\t\tserves as a notification for when the \"pending\n\t\tcommand\" queue has reached an upper limit and been\n\t\tcleared to prevent one from attempting to slowly\n\t\texhaust memory.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.bro.org/download/NEWS.bro.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-28",
+    "entry": "2018-08-29"
+  }
+}

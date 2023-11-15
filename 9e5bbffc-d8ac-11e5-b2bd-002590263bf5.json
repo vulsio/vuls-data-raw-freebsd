@@ -1,0 +1,35 @@
+{
+  "vid": "9e5bbffc-d8ac-11e5-b2bd-002590263bf5",
+  "topic": "bsh -- remote code execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "bsh"
+      ],
+      "range": [
+        {
+          "lt": "2.0.b6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stian Soiland-Reyes reports:</p>\n\t<blockquote cite=\"https://github.com/beanshell/beanshell/releases/tag/2.0b6\">\n\t  <p>This release fixes a remote code execution vulnerability that was\n\t    identified in BeanShell by Alvaro Muñoz and Christian Schneider.\n\t    The BeanShell team would like to thank them for their help and\n\t    contributions to this fix!</p>\n\t  <p>An application that includes BeanShell on the classpath may be\n\t    vulnerable if another part of the application uses Java\n\t    serialization or XStream to deserialize data from an untrusted\n\t    source.</p>\n\t  <p>A vulnerable application could be exploited for remote code\n\t    execution, including executing arbitrary shell commands.</p>\n\t  <p>This update fixes the vulnerability in BeanShell, but it is worth\n\t    noting that applications doing such deserialization might still be\n\t    insecure through other libraries. It is recommended that application\n\t    developers take further measures such as using a restricted class\n\t    loader when deserializing. See notes on Java serialization security\n\t    XStream security and How to secure deserialization from untrusted\n\t    input without using encryption or sealing.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/beanshell/beanshell/releases/tag/2.0b6"
+    ],
+    "cvename": [
+      "CVE-2016-2510"
+    ],
+    "freebsd_pr": [
+      "ports/207334"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-18",
+    "entry": "2016-02-21"
+  }
+}

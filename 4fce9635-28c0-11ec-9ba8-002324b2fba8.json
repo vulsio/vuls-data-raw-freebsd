@@ -1,0 +1,32 @@
+{
+  "vid": "4fce9635-28c0-11ec-9ba8-002324b2fba8",
+  "topic": "go -- misc/wasm, cmd/link: do not let command line arguments overwrite global data",
+  "affects": [
+    {
+      "name": [
+        "go"
+      ],
+      "range": [
+        {
+          "lt": "1.17.2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/48797\">\n\t  <p>When invoking functions from WASM modules, built using GOARCH=wasm\n\t  GOOS=js, passing very large arguments can cause portions of the module\n\t  to be overwritten with data from the arguments.</p>\n\t  <p>If using wasm_exec.js to execute WASM modules, users will need to\n\t  replace their copy after rebuilding any modules.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/golang/go/issues/48797"
+    ],
+    "cvename": [
+      "CVE-2021-38297"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-10-06",
+    "entry": "2021-10-09"
+  }
+}

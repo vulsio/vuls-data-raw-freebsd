@@ -1,0 +1,43 @@
+{
+  "vid": "9d271bab-da22-11eb-86f0-94c691a700a6",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.300"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "lt": "2.289.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://www.jenkins.io/security/advisory/2021-06-30/\">\n\t  <h1>Description</h1>\n\t  <h5>(Medium) SECURITY-2278 / CVE-2021-21670</h5>\n\t  <p>Improper permission checks allow canceling queue items and aborting builds</p>\n\t  <h5>(High) SECURITY-2371 / CVE-2021-21671</h5>\n\t  <p>Session fixation vulnerability</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.jenkins.io/security/advisory/2021-06-30/"
+    ],
+    "cvename": [
+      "CVE-2021-21670",
+      "CVE-2021-21671"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-06-30",
+    "entry": "2021-07-01"
+  }
+}

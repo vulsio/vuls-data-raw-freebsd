@@ -1,0 +1,49 @@
+{
+  "vid": "a2c4d3d5-4c7b-11df-83fb-0015587e2cc1",
+  "topic": "pidgin -- multiple remote denial of service vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "pidgin"
+      ],
+      "range": [
+        {
+          "lt": "2.6.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libpurple"
+      ],
+      "range": [
+        {
+          "lt": "2.6.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Three denial of service vulnerabilities where found in\n\t  pidgin and allow remote attackers to crash the application.\n\t  The developers summarized these problems as follows:</p>\n\t<blockquote cite=\"http://pidgin.im/news/security/?id=45\">\n\t<p>Pidgin can become unresponsive when displaying large\n\t  numbers of smileys</p>\n\t</blockquote>\n\t<blockquote cite=\"http://pidgin.im/news/security/?id=44\">\n\t<p>Certain nicknames in group chat rooms can trigger a\n\t  crash in Finch</p>\n\t</blockquote>\n\t<blockquote cite=\"http://pidgin.im/news/security/?id=43\">\n\t  <p>Failure to validate all fields of an incoming message\n\t    can trigger a crash</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://pidgin.im/news/security/?id=43",
+      "http://pidgin.im/news/security/?id=44",
+      "http://pidgin.im/news/security/?id=45"
+    ],
+    "cvename": [
+      "CVE-2010-0277",
+      "CVE-2010-0420",
+      "CVE-2010-0423"
+    ],
+    "bid": [
+      "38294"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-02-18",
+    "entry": "2010-04-20"
+  }
+}

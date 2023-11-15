@@ -1,0 +1,36 @@
+{
+  "vid": "f94befcd-1289-11e2-a25e-525400272390",
+  "topic": "gitolite -- path traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gitolite"
+      ],
+      "range": [
+        {
+          "ge": "3.01",
+          "le": "3.04"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sitaram Chamarty reports:</p>\n\t<blockquote cite=\"https://groups.google.com/forum/#!topic/gitolite/K9SnQNhCQ-0/discussion\">\n\t  <p>I'm sorry to say there is a potential path traversal vulnerability in\n\t  v3. Thanks to Stephane Chazelas for finding it and alerting me.</p>\n\t  <p>Can it affect you? This can only affect you if you are using wild\n\t  card repos, *and* at least one of your patterns allows the string\n\t  \"../\" to match multiple times.</p>\n\t  <p>How badly can it affect you? A malicious user who *also* has the\n\t  ability to create arbitrary files in, say, /tmp (e.g., he has his own\n\t  userid on the same box), can compromise the entire \"git\" user.\n\t  Otherwise the worst he can do is create arbitrary repos in /tmp.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-4506"
+    ],
+    "mlist": [
+      {
+        "text": "https://groups.google.com/forum/#!topic/gitolite/K9SnQNhCQ-0/discussion",
+        "msgid": "CAMK1S_jotna+d_X2C-+es-M28i1aUBcsNeiXxwJ63EshQ8ht6w@mail.gmail.com"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2012-10-09",
+    "entry": "2012-10-15"
+  }
+}

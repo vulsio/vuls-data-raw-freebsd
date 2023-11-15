@@ -1,0 +1,45 @@
+{
+  "vid": "21c223f2-d596-11da-8098-00123ffe8333",
+  "topic": "ethereal -- Multiple Protocol Dissector Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ethereal",
+        "ethereal-lite",
+        "tethereal",
+        "tethereal-lite"
+      ],
+      "range": [
+        {
+          "lt": "0.99.0",
+          "ge": "0.8.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19769/\">\n\t  <p>Multiple vulnerabilities have been reported in Ethereal, which\n\t    can be exploited by malicious people to cause a DoS (Denial of\n\t    Service) or compromise a vulnerable system.</p>\n\t  <p>The vulnerabilities are caused due to various types of errors\n\t    including boundary errors, an off-by-one error, an infinite loop\n\t    error, and several unspecified errors in a multitude of protocol\n\t    dissectors.</p>\n\t  <p>Successful exploitation causes Ethereal to stop responding,\n\t    consume a large amount of system resources, crash, or execute\n\t    arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ethereal.com/appnotes/enpa-sa-00023.html",
+      "http://secunia.com/advisories/19769/"
+    ],
+    "cvename": [
+      "CVE-2006-1932",
+      "CVE-2006-1933",
+      "CVE-2006-1934",
+      "CVE-2006-1935",
+      "CVE-2006-1936",
+      "CVE-2006-1937",
+      "CVE-2006-1938",
+      "CVE-2006-1939",
+      "CVE-2006-1940"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-04-25",
+    "entry": "2006-04-27"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "vid": "41f8af15-c8b9-11e6-ae1b-002590263bf5",
+  "topic": "squid -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "3.5.23",
+          "ge": "3.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "squid-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.0.17",
+          "ge": "4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Squid security advisory 2016:10 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2016_10.txt\">\n\t  <p>Due to incorrect comparison of request headers Squid can deliver\n\t    responses containing private data to clients it should not have\n\t    reached.</p>\n\t  <p>This problem allows a remote attacker to discover private and\n\t    sensitive information about another clients browsing session.\n\t    Potentially including credentials which allow access to further\n\t    sensitive resources. This problem only affects Squid configured\n\t    to use the Collapsed Forwarding feature. It is of particular\n\t    importance for HTTPS reverse-proxy sites with Collapsed\n\t    Forwarding.</p>\n\t</blockquote>\n\t<p>Squid security advisory 2016:11 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2016_11.txt\">\n\t  <p>Due to incorrect HTTP conditional request handling Squid can\n\t    deliver responses containing private data to clients it should not\n\t    have reached.</p>\n\t  <p>This problem allows a remote attacker to discover private and\n\t    sensitive information about another clients browsing session.\n\t    Potentially including credentials which allow access to further\n\t    sensitive resources..</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Advisories/SQUID-2016_10.txt",
+      "http://www.squid-cache.org/Advisories/SQUID-2016_11.txt"
+    ],
+    "cvename": [
+      "CVE-2016-10002",
+      "CVE-2016-10003"
+    ],
+    "freebsd_pr": [
+      "ports/215416",
+      "ports/215418"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-12-16",
+    "entry": "2016-12-23"
+  }
+}

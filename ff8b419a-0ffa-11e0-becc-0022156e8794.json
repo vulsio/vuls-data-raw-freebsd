@@ -1,0 +1,32 @@
+{
+  "vid": "ff8b419a-0ffa-11e0-becc-0022156e8794",
+  "topic": "Drupal Views plugin -- cross-site scripting",
+  "affects": [
+    {
+      "name": [
+        "drupal6-views"
+      ],
+      "range": [
+        {
+          "lt": "2.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal security team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/999380\">\n\t  <p>The Views module provides a flexible method for Drupal site\n\t    designers to control how lists and tables of content are\n\t    presented. Under certain circumstances, Views could display\n\t    parts of the page path without escaping, resulting in a\n\t    relected Cross Site Scripting (XSS) vulnerability. An attacker\n\t    could exploit this to gain full administrative access.</p>\n\t  <p>Mitigating factors: This vulnerability only occurs with a\n\t    specific combination of configuration options for a specific\n\t    View, but this combination is used in the default Views\n\t    provided by some additional modules. A malicious user would\n\t    need to get an authenticated administrative user to visit a\n\t    specially crafted URL.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/999380"
+    ],
+    "cvename": [
+      "CVE-2010-4521"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-12-15",
+    "entry": "2010-12-28"
+  }
+}

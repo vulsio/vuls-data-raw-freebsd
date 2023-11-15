@@ -1,0 +1,32 @@
+{
+  "vid": "479c5b91-b6cc-11e6-a04e-3417eb99b9a0",
+  "topic": "wget -- Access List Bypass / Race Condition",
+  "affects": [
+    {
+      "name": [
+        "wget"
+      ],
+      "range": [
+        {
+          "le": "1.17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dawid Golunski reports:</p>\n\t<blockquote cite=\"https://legalhackers.com/advisories/Wget-Exploit-ACL-bypass-RaceCond-CVE-2016-7098.html\">\n\t  <p>GNU wget in version 1.17 and earlier, when used in\n\t    mirroring/recursive mode, is affected by a Race Condition\n\t    vulnerability that might allow remote attackers to bypass intended\n\t    wget access list restrictions specified with -A parameter.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7098"
+    ],
+    "cvename": [
+      "CVE-2016-7098"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-24",
+    "entry": "2016-11-30"
+  }
+}

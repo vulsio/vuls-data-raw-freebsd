@@ -1,0 +1,62 @@
+{
+  "vid": "bdab0acd-d4cd-11e1-8a1c-14dae9ebcf89",
+  "topic": "php -- potential overflow in _php_stream_scandir",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.4.5",
+          "gt": "5.4"
+        },
+        {
+          "lt": "5.3.15",
+          "ge": "5.3"
+        },
+        {
+          "lt": "5.2.17_10",
+          "ge": "5.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php53"
+      ],
+      "range": [
+        {
+          "lt": "5.3.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php52"
+      ],
+      "range": [
+        {
+          "lt": "5.2.17_10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP Development Team reports:</p>\n\t<blockquote cite=\"http://www.php.net/archive/2012.php#id2012-07-19-1\">\n\t  <p>The release of PHP 5.4.15 and 5.4.5 fix a potential overflow in\n\t    _php_stream_scandir</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.php.net/archive/2012.php#id2012-07-19-1"
+    ],
+    "cvename": [
+      "CVE-2012-2688"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-07-19",
+    "entry": "2012-07-23",
+    "modified": "2013-01-15"
+  }
+}

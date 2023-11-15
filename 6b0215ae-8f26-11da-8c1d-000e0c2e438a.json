@@ -1,0 +1,51 @@
+{
+  "vid": "6b0215ae-8f26-11da-8c1d-000e0c2e438a",
+  "topic": "cpio -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "6.0_2",
+          "ge": "6.0"
+        },
+        {
+          "lt": "5.4_9",
+          "ge": "5.4"
+        },
+        {
+          "lt": "5.3_24",
+          "ge": "5.3"
+        },
+        {
+          "lt": "4.11_14",
+          "ge": "4.11"
+        },
+        {
+          "lt": "4.10_20",
+          "ge": "4.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Problem description:</p>\n\t<p>A number of issues has been discovered in cpio:</p>\n\t<p>When creating a new file, cpio closes the file before setting\n\t  its permissions. (CVE-2005-1111)</p>\n\t<p>When extracting files cpio does not properly sanitize file\n\t  names to filter out \"..\" components, even if the\n\t  --no-absolute-filenames option is used. (CVE-2005-1229)</p>\n\t<p>When adding large files (larger than 4 GB) to a cpio archive\n\t  on 64-bit platforms an internal buffer might overflow.\n\t  (CVE-2005-4268)</p>\n\t<p>Impact</p>\n\t<p>The first problem can allow a local attacker to change the\n\t  permissions of files owned by the user executing cpio providing\n\t  that they have write access to the directory in which the file\n\t  is being extracted. (CVE-2005-1111)</p>\n\t<p>The lack of proper file name sanitation can allow an attacker\n\t  to overwrite arbitrary local files when extracting files from\n\t  a cpio archive. (CVE-2005-1229)</p>\n\t<p>The buffer-overflow on 64-bit platforms could lead cpio to a\n\t  Denial-of-Service situation (crash) or possibly execute\n\t  arbitrary code with the permissions of the user running\n\t  cpio. (CVE-2005-4268)</p>\n\t<p>Workaround</p>\n\t<p>Use a different utility to create and extract cpio archives,\n\t  for example pax(1) or (on FreeBSD 5.3 or later) tar(1).  If\n\t  this is not possible, do not extract untrusted archives and\n\t  when running on 64-bit platforms do not add untrusted files\n\t  to cpio archives.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-1111",
+      "CVE-2005-1229",
+      "CVE-2005-4268"
+    ],
+    "freebsd_sa": [
+      "SA-06:03.cpio"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-01-11",
+    "entry": "2006-01-27"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "vid": "8c451386-dff3-11dd-a765-0030843d3802",
+  "topic": "mysql -- privilege escalation and overwrite of the system table information",
+  "affects": [
+    {
+      "name": [
+        "mysql-server"
+      ],
+      "range": [
+        {
+          "lt": "4.1.24",
+          "ge": "4.1"
+        },
+        {
+          "lt": "5.0.51",
+          "ge": "5.0"
+        },
+        {
+          "lt": "5.1.23",
+          "ge": "5.1"
+        },
+        {
+          "lt": "6.0.4",
+          "ge": "6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MySQL reports:</p>\n\t<blockquote cite=\"http://dev.mysql.com/doc/refman/4.1/en/news-4-1-24.html\">\n\t  <p>Using RENAME TABLE against a table with explicit DATA\n\t    DIRECTORY and INDEX DIRECTORY options can be used to overwrite\n\t    system table information by replacing the symbolic link\n\t    points. the file to which the symlink points.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.mysql.com/bug.php?id=32111"
+    ],
+    "cvename": [
+      "CVE-2007-5969"
+    ],
+    "bid": [
+      "26765"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-11-14",
+    "entry": "2009-01-11"
+  }
+}

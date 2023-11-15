@@ -1,0 +1,31 @@
+{
+  "vid": "3cc84400-6576-11d9-a9e7-0001020eed82",
+  "topic": "mpg123 -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mpg123",
+        "mpg123-nas",
+        "mpg123-esound"
+      ],
+      "range": [
+        {
+          "lt": "0.59r_17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Yuri D'Elia has found a buffer overflow vulnerability in\n\t  mpg123's parsing of frame headers in input streams.  This\n\t  vulnerability can potentially lead to execution of arbitrary\n\t  code with the permissions of the user running mpg123, if the\n\t  user runs mpg123 on a specially crafted MP2 or MP3 file.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0991"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-01-01",
+    "entry": "2005-01-13"
+  }
+}

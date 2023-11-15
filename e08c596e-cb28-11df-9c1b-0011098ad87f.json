@@ -1,0 +1,31 @@
+{
+  "vid": "e08c596e-cb28-11df-9c1b-0011098ad87f",
+  "topic": "horde-gollem -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "horde-gollem"
+      ],
+      "range": [
+        {
+          "lt": "1.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Horde team reports:</p>\n\t<blockquote cite=\"http://article.gmane.org/gmane.comp.horde.announce/523\">\n\t  <p>The major changes compared to Gollem version H3 (1.1.1) are:</p>\n\t  <p>* Fixed an XSS vulnerability in the file viewer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://article.gmane.org/gmane.comp.horde.announce/523",
+      "http://git.horde.org/diff.php/gollem/docs/CHANGES?rt=horde&r1=1.114.2.55&r2=1.114.2.59&ty=h",
+      "http://bugs.horde.org/ticket/9191"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-08-21",
+    "entry": "2010-09-28"
+  }
+}

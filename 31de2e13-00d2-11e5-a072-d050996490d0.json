@@ -1,0 +1,56 @@
+{
+  "vid": "31de2e13-00d2-11e5-a072-d050996490d0",
+  "topic": "php -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.4.41"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55"
+      ],
+      "range": [
+        {
+          "lt": "5.5.25"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56"
+      ],
+      "range": [
+        {
+          "lt": "5.6.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PHP development team reports:</p>\n\t<blockquote cite=\"https://php.net/ChangeLog-5.php#5.6.9\">\n\t  <p>Fixed bug #69364 (PHP Multipart/form-data remote DoS\n\t    Vulnerability). (CVE-2015-4024)</p>\n\t  <p>Fixed bug #69418 (CVE-2006-7243 fix regressions in\n\t    5.4+). (CVE-2015-4025)</p>\n\t  <p>Fixed bug #69545 (Integer overflow in ftp_genlist()\n\t    resulting in heap overflow). (CVE-2015-4022)</p>\n\t  <p>Fixed bug #68598 (pcntl_exec() should not allow null\n\t    char). (CVE-2015-4026)</p>\n\t  <p>Fixed bug #69453 (Memory Corruption in phar_parse_tarfile\n\t    when entry filename starts with null). (CVE-2015-4021)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://php.net/ChangeLog-5.php#5.6.9"
+    ],
+    "cvename": [
+      "CVE-2015-4021",
+      "CVE-2015-4022",
+      "CVE-2015-4024",
+      "CVE-2015-4025",
+      "CVE-2015-4026"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-05-14",
+    "entry": "2015-05-22"
+  }
+}

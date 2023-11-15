@@ -1,0 +1,32 @@
+{
+  "vid": "848bdd06-f93a-11eb-9f7d-206a8a720317",
+  "topic": "x11/cde -- Local privilege escalation via CDE dtsession",
+  "affects": [
+    {
+      "name": [
+        "cde"
+      ],
+      "range": [
+        {
+          "lt": "2.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Marco Ivaldi (marco.ivaldi () mediaservice net) reports:</p>\n\t<blockquote cite=\"https://seclists.org/bugtraq/2020/Jan/22\">\n\t  <p>A buffer overflow in the CheckMonitor() function in the Common\n\t  Desktop Environment 2.3.1 and earlier and 1.6 and earlier,\n\t  as distributed with Oracle Solaris 10 1/13 (Update 11) and\n\t  earlier, allows local users to gain root privileges via a long\n\t  palette name passed to dtsession in a malicious .Xdefaults\n\t  file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-2696"
+    ],
+    "cvename": [
+      "CVE-2020-2696"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-15",
+    "entry": "2021-08-09"
+  }
+}

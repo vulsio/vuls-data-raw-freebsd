@@ -1,0 +1,50 @@
+{
+  "vid": "a35f415d-572a-11e5-b0a4-f8b156b6dcc8",
+  "topic": "vorbis-tools, opus-tools -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "vorbis-tools"
+      ],
+      "range": [
+        {
+          "lt": "1.4.0_10,3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "opus-tools"
+      ],
+      "range": [
+        {
+          "lt": "0.1.9_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Paris Zoumpouloglou reports:</p>\n\t<blockquote cite=\"https://trac.xiph.org/ticket/2136\">\n\t  <p>I discovered an integer overflow issue in oggenc,\n\t    related to the number of channels in the input WAV file.\n\t    The issue triggers an out-of-bounds memory access which\n\t    causes oggenc to crash.</p>\n\t</blockquote>\n\t<p>Paris Zoumpouloglou reports:</p>\n\t<blockquote cite=\"https://trac.xiph.org/ticket/2136\">\n\t  <p>A crafted WAV file with number of channels set to 0\n\t    will cause oggenc to crash due to a division by zero\n\t    issue.</p>\n\t</blockquote>\n\t<p>pengsu reports:</p>\n\t<blockquote cite=\"https://trac.xiph.org/ticket/2212\">\n\t  <p>I discovered an buffer overflow issue in oggenc/audio.c\n\t    when it tries to open invalid aiff file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://trac.xiph.org/ticket/2136",
+      "https://trac.xiph.org/ticket/2137",
+      "https://trac.xiph.org/ticket/2212"
+    ],
+    "cvename": [
+      "CVE-2014-9639",
+      "CVE-2014-9638",
+      "CVE-2015-6749"
+    ],
+    "freebsd_pr": [
+      "ports/202941"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-08",
+    "entry": "2015-09-09",
+    "modified": "2015-09-09"
+  }
+}

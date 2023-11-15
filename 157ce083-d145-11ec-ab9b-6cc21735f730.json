@@ -1,0 +1,69 @@
+{
+  "vid": "157ce083-d145-11ec-ab9b-6cc21735f730",
+  "topic": "PostgreSQL Server -- execute arbitrary SQL code as DBA user",
+  "affects": [
+    {
+      "name": [
+        "postgresql14-server"
+      ],
+      "range": [
+        {
+          "lt": "14.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql13-server"
+      ],
+      "range": [
+        {
+          "lt": "13.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql12-server"
+      ],
+      "range": [
+        {
+          "lt": "12.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql11-server"
+      ],
+      "range": [
+        {
+          "lt": "11.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql10-server"
+      ],
+      "range": [
+        {
+          "lt": "10.21"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote>\n\t  <p>\n\t    Confine additional operations within \"security restricted\n\t    operation\" sandboxes.\n\t  </p>\n\t  <p>\n\t    Autovacuum, CLUSTER, CREATE INDEX, REINDEX, REFRESH MATERIALIZED VIEW,\n\t    and pg_amcheck activated the \"security restricted operation\" protection\n\t    mechanism too late, or even not at all in some code paths.\n\t    A user having permission to create non-temporary objects within a\n\t    database could define an object that would execute arbitrary SQL\n\t    code with superuser permissions the next time that autovacuum\n\t    processed the object, or that some superuser ran one of the affected\n\t    commands against it.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2022-1552"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-05-11",
+    "entry": "2022-05-11"
+  }
+}

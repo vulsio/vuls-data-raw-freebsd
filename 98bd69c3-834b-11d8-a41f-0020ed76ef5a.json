@@ -1,0 +1,60 @@
+{
+  "vid": "98bd69c3-834b-11d8-a41f-0020ed76ef5a",
+  "topic": "Courier mail services: remotely exploitable buffer overflows",
+  "affects": [
+    {
+      "name": [
+        "courier"
+      ],
+      "range": [
+        {
+          "lt": "0.45"
+        }
+      ]
+    },
+    {
+      "name": [
+        "courier-imap"
+      ],
+      "range": [
+        {
+          "lt": "3.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "sqwebmail"
+      ],
+      "range": [
+        {
+          "lt": "4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Courier set of mail services use a common Unicode\n\t  library.  This library contains buffer overflows in the\n\t  converters for two popular Japanese character encodings.\n\t  These overflows may be remotely exploitable, triggered by\n\t  a maliciously formatted email message that is later processed\n\t  by one of the Courier mail services.\n\t  From the release notes for the corrected versions of the\n\t  Courier set of mail services:</p>\n\t<blockquote>\n\t  <p>iso2022jp.c: Converters became (upper-)compatible with\n\t    ISO-2022-JP (RFC1468 / JIS X 0208:1997 Annex 2) and\n\t    ISO-2022-JP-1 (RFC2237).  Buffer overflow vulnerability\n\t    (when Unicode character is out of BMP range) has been\n\t    closed.  Convert error handling was implemented.</p>\n\t  <p>shiftjis.c: Broken SHIFT_JIS converters has been fixed\n\t    and became (upper-)compatible with Shifted Encoding Method\n\t    (JIS X 0208:1997 Annex 1). Buffer overflow vulnerability\n\t    (when Unicode character is out of BMP range) has been\n\t    closed.  Convert error handling was implemented.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://cvs.sourceforge.net/viewcvs.py/courier/libs/unicode/iso2022jp.c?rev=1.10&view=markup",
+      "http://cvs.sourceforge.net/viewcvs.py/courier/libs/unicode/shiftjis.c?rev=1.6&view=markup",
+      "http://secunia.com/advisories/11087",
+      "http://www.osvdb.org/4194",
+      "http://www.osvdb.org/6927"
+    ],
+    "cvename": [
+      "CVE-2004-0224"
+    ],
+    "bid": [
+      "9845"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-02-01",
+    "entry": "2004-03-31",
+    "modified": "2004-07-16"
+  }
+}

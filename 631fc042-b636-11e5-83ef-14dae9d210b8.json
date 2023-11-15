@@ -1,0 +1,35 @@
+{
+  "vid": "631fc042-b636-11e5-83ef-14dae9d210b8",
+  "topic": "polkit -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "polkit"
+      ],
+      "range": [
+        {
+          "lt": "0.113"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Colin Walters reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/polkit-devel/2015-June/000425.html\">\n\t  <ul>\n\t    <li><p>Integer overflow in the\n\t    authentication_agent_new_cookie function in PolicyKit (aka polkit)\n\t    before 0.113 allows local users to gain privileges by creating a large\n\t    number of connections, which triggers the issuance of a duplicate cookie\n\t    value.</p></li>\n\t    <li><p>The authentication_agent_new function in\n\t    polkitbackend/polkitbackendinteractiveauthority.c in PolicyKit (aka\n\t    polkit) before 0.113 allows local users to cause a denial of service\n\t    (NULL pointer dereference and polkitd daemon crash) by calling\n\t    RegisterAuthenticationAgent with an invalid object path.</p></li>\n\t    <li><p>The polkit_backend_action_pool_init function in\n\t    polkitbackend/polkitbackendactionpool.c in PolicyKit (aka polkit) before\n\t    0.113 might allow local users to gain privileges via duplicate action\n\t    IDs in action descriptions.</p></li>\n\t    <li><p>PolicyKit (aka polkit) before 0.113 allows local\n\t    users to cause a denial of service (memory corruption and polkitd daemon\n\t    crash) and possibly gain privileges via unspecified vectors, related to\n\t    \"javascript rule evaluation.\"</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.freedesktop.org/archives/polkit-devel/2015-June/000425.html"
+    ],
+    "cvename": [
+      "CVE-2015-4625",
+      "CVE-2015-3218",
+      "CVE-2015-3255",
+      "CVE-2015-3256"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-03",
+    "entry": "2016-01-08"
+  }
+}

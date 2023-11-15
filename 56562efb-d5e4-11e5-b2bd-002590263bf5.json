@@ -1,0 +1,36 @@
+{
+  "vid": "56562efb-d5e4-11e5-b2bd-002590263bf5",
+  "topic": "squid -- SSL/TLS processing remote DoS",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "3.5.14",
+          "ge": "3.5.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Squid security advisory 2016:1 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2016_1.txt\">\n\t  <p>Due to incorrectly handling server errors Squid is vulnerable to a\n\t    denial of service attack when connecting to TLS or SSL servers.</p>\n\t  <p>This problem allows any trusted client to perform a denial of\n\t    service attack on the Squid service regardless of whether TLS or\n\t    SSL is configured for use in the proxy.</p>\n\t  <p>Misconfigured client or server software may trigger this issue\n\t    to perform a denial of service unintentionally.</p>\n\t  <p>However, the bug is exploitable only if Squid is built using the\n\t    --with-openssl option.</p>\n\t</blockquote>\n\t<p>The FreeBSD port does not use SSL by default and is not vulnerable\n\t  in the default configuration.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Advisories/SQUID-2016_1.txt"
+    ],
+    "cvename": [
+      "CVE-2016-2390"
+    ],
+    "freebsd_pr": [
+      "ports/207294"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-16",
+    "entry": "2016-02-18"
+  }
+}

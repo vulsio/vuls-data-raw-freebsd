@@ -1,0 +1,35 @@
+{
+  "vid": "92442c4b-6f4a-11db-bd28-0012f06707f0",
+  "topic": "Imlib2 -- multiple image file processing vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "imlib2"
+      ],
+      "range": [
+        {
+          "lt": "20060926_1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/22732/\">\n\t  <p>Some vulnerabilities have been reported in imlib2, which can be\n\t    exploited by malicious people to cause a DoS (Denial of Service)\n\t    or potentially compromise an application using the library.</p>\n\t  <p>The vulnerabilities are caused due to unspecified errors within\n\t    the processing of JPG, ARGB, PNG, LBM, PNM, TIFF, and TGA images.\n\t    This may be exploited to execute arbitrary code by e.g. tricking a\n\t    user into opening a specially crafted image file with an\n\t    application using imlib2.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-4806",
+      "CVE-2006-4807",
+      "CVE-2006-4808",
+      "CVE-2006-4809"
+    ],
+    "bid": [
+      "20903"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-11-03",
+    "entry": "2006-11-08"
+  }
+}

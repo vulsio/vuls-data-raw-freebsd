@@ -1,0 +1,99 @@
+{
+  "vid": "57a700f9-12c0-11e2-9f86-001d923933b6",
+  "topic": "dns/bind9* -- crash on deliberately constructed combination of records",
+  "affects": [
+    {
+      "name": [
+        "bind99"
+      ],
+      "range": [
+        {
+          "lt": "9.9.1.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind99-base"
+      ],
+      "range": [
+        {
+          "lt": "9.9.1.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind98"
+      ],
+      "range": [
+        {
+          "lt": "9.8.3.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind98-base"
+      ],
+      "range": [
+        {
+          "lt": "9.8.3.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind97"
+      ],
+      "range": [
+        {
+          "lt": "9.7.6.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind97-base"
+      ],
+      "range": [
+        {
+          "lt": "9.7.6.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind96"
+      ],
+      "range": [
+        {
+          "lt": "9.6.3.1.ESV.R7.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind96-base"
+      ],
+      "range": [
+        {
+          "lt": "9.6.3.1.ESV.R7.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-00801/\">\n\t  <p>A deliberately constructed combination of records could cause named\n\t     to hang while populating the additional section of a response.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-5166"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-09-26",
+    "entry": "2012-10-10"
+  }
+}

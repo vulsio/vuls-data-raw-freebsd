@@ -1,0 +1,33 @@
+{
+  "vid": "eab8c3bd-e50c-11de-9cd0-001a926c7637",
+  "topic": "ruby -- heap overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ruby"
+      ],
+      "range": [
+        {
+          "lt": "1.9.1.376,1",
+          "ge": "1.9.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The official ruby site reports:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2009/12/07/heap-overflow-in-string/\">\n\t  <p>There is a heap overflow vulnerability in String#ljust,\n\t    String#center and String#rjust. This has allowed an attacker to run\n\t    arbitrary code in some rare cases.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ruby-lang.org/en/news/2009/12/07/heap-overflow-in-string/"
+    ],
+    "cvename": [
+      "CVE-2009-4124"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-11-30",
+    "entry": "2009-12-09"
+  }
+}

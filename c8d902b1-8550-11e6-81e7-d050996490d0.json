@@ -1,0 +1,77 @@
+{
+  "vid": "c8d902b1-8550-11e6-81e7-d050996490d0",
+  "topic": "BIND -- Remote Denial of Service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "bind99"
+      ],
+      "range": [
+        {
+          "lt": "9.9.9P3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind910"
+      ],
+      "range": [
+        {
+          "lt": "9.10.4P3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind911"
+      ],
+      "range": [
+        {
+          "lt": "9.11.0.rc3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind9-devel"
+      ],
+      "range": [
+        {
+          "lt": "9.12.0.a.2016.09.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "9.3_48",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01419\">\n\t  <p>Testing by ISC has uncovered a critical error condition\n\t    which can occur when a nameserver is constructing a\n\t    response.  A defect in the rendering of messages into\n\t    packets can cause named to exit with an assertion\n\t    failure in buffer.c while constructing a response\n\t    to a query that meets certain criteria.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/article/AA-01419"
+    ],
+    "cvename": [
+      "CVE-2016-2776"
+    ],
+    "freebsd_sa": [
+      "SA-16:28.bind"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-27",
+    "entry": "2016-09-28",
+    "modified": "2016-10-10"
+  }
+}

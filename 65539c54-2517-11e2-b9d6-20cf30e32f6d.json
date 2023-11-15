@@ -1,0 +1,75 @@
+{
+  "vid": "65539c54-2517-11e2-b9d6-20cf30e32f6d",
+  "topic": "apache22 -- several vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache22"
+      ],
+      "range": [
+        {
+          "lt": "2.2.23",
+          "gt": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache22-event-mpm"
+      ],
+      "range": [
+        {
+          "lt": "2.2.23",
+          "gt": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache22-itk-mpm"
+      ],
+      "range": [
+        {
+          "lt": "2.2.23",
+          "gt": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache22-peruser-mpm"
+      ],
+      "range": [
+        {
+          "lt": "2.2.23",
+          "gt": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache22-worker-mpm"
+      ],
+      "range": [
+        {
+          "lt": "2.2.23",
+          "gt": "2.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_22.html\">\n\t  <h1>low: XSS in mod_negotiation when untrusted uploads are supported CVE-2012-2687</h1>\n\t  <p>Possible XSS for sites which use mod_negotiation and\n\t    allow untrusted uploads to locations which have MultiViews enabled.</p>\n\t  <h1>low: insecure LD_LIBRARY_PATH handling CVE-2012-0883</h1>\n\t  <p>This issue was already fixed in port version 2.2.22_5</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-2687",
+      "CVE-2012-0833"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-09-13",
+    "entry": "2012-11-02"
+  }
+}

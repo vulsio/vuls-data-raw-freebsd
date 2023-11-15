@@ -1,0 +1,43 @@
+{
+  "vid": "77bb0541-c1aa-11e3-a5ac-001b21614864",
+  "topic": "dbus-glib -- privledge escalation",
+  "affects": [
+    {
+      "name": [
+        "dbus-glib"
+      ],
+      "range": [
+        {
+          "lt": "0.100.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-f10-dbus-glib"
+      ],
+      "range": [
+        {
+          "lt": "0.100.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sebastian Krahmer reports:</p>\n\t<blockquote cite=\"https://bugs.freedesktop.org/show_bug.cgi?id=60916\">\n\t  <p>A privilege escalation flaw was found in the way dbus-glib, the\n\t    D-Bus add-on library to integrate the standard D-Bus library with\n\t    the GLib thread abstraction and main loop, performed filtering of\n\t    the message sender (message source subject), when the\n\t    NameOwnerChanged signal was received. A local attacker could use\n\t    this flaw to escalate their privileges.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.freedesktop.org/show_bug.cgi?id=60916"
+    ],
+    "cvename": [
+      "CVE-2013-0292"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-02-15",
+    "entry": "2014-04-11",
+    "modified": "2014-04-30"
+  }
+}

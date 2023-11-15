@@ -1,0 +1,42 @@
+{
+  "vid": "24f6b1eb-43d5-11db-81e1-000e0c2e438a",
+  "topic": "win32-codecs -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "win32-codecs"
+      ],
+      "range": [
+        {
+          "lt": "3.1.0.p8_1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apple Security Team reports that there are multiple\n\t  vulnerabilities within QuickTime (one of the plugins for\n\t  win32-codecs).  A remote attacker capable of creating a\n\t  malicious SGI image, FlashPix, FLC movie, or a QuickTime\n\t  movie can possibly lead to execution of arbitrary code or\n\t  cause a Denial of Service (application crash).</p>\n\t<p>Users who have QuickTime (/win32-codecs) as a browser plugin\n\t  may be vulnerable to remote code execution by visiting a\n\t  website containing a malicious SGI image, FlashPix, FLC movie\n\t  or a QuickTime movie.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://docs.info.apple.com/article.html?artnum=304357"
+    ],
+    "cvename": [
+      "CVE-2006-4381",
+      "CVE-2006-4382",
+      "CVE-2006-4384",
+      "CVE-2006-4385",
+      "CVE-2006-4386",
+      "CVE-2006-4388",
+      "CVE-2006-4389"
+    ],
+    "bid": [
+      "20138"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-09-08",
+    "entry": "2006-09-14",
+    "modified": "2006-10-17"
+  }
+}

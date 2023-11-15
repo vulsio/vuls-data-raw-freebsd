@@ -1,0 +1,56 @@
+{
+  "vid": "3ff95dd3-c291-11df-b0dc-00215c6a37bb",
+  "topic": "django -- cross-site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py23-django",
+        "py24-django",
+        "py25-django",
+        "py26-django",
+        "py30-django",
+        "py31-django"
+      ],
+      "range": [
+        {
+          "lt": "1.2.2",
+          "gt": "1.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py23-django-devel",
+        "py24-django-devel",
+        "py25-django-devel",
+        "py26-django-devel",
+        "py30-django-devel",
+        "py31-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "13698,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django project reports:</p>\n\t<blockquote cite=\"http://www.djangoproject.com/weblog/2010/sep/08/security-release/\">\n\t  <p>The provided template tag for inserting the CSRF\n\t    token into forms -- {% csrf_token %} -- explicitly\n\t    trusts the cookie value, and displays it as-is.\n\t    Thus, an attacker who is able to tamper with the\n\t    value of the CSRF cookie can cause arbitrary content\n\t    to be inserted, unescaped, into the outgoing HTML of\n\t    the form, enabling cross-site scripting (XSS) attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xforce.iss.net/xforce/xfdb/61729"
+    ],
+    "cvename": [
+      "CVE-2010-3082"
+    ],
+    "bid": [
+      "43116"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-09-13",
+    "entry": "2010-09-17"
+  }
+}

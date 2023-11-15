@@ -1,0 +1,36 @@
+{
+  "vid": "f6ea18bb-65b9-11e9-8b31-002590045d9c",
+  "topic": "py-yaml -- arbitrary code execution",
+  "affects": [
+    {
+      "name": [
+        "py27-yaml",
+        "py35-yaml",
+        "py36-yaml",
+        "py37-yaml"
+      ],
+      "range": [
+        {
+          "lt": "4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>pyyaml reports:</p>\n\t<blockquote cite=\"https://github.com/yaml/pyyaml/wiki/PyYAML-yaml.load(input)-Deprecation\">\n\t  <p>the PyYAML.load function could be easily exploited to call any Python\n\tfunction. That means it could call any system command using os.system()</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18342",
+      "https://github.com/yaml/pyyaml/pull/74"
+    ],
+    "cvename": [
+      "CVE-2017-18342"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-27",
+    "entry": "2019-04-23"
+  }
+}

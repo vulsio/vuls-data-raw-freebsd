@@ -1,0 +1,42 @@
+{
+  "vid": "49b61ab6-0d04-11ea-87ca-001999f8d30b",
+  "topic": "asterisk -- AMI user could execute system commands",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.29.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.6.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>A remote authenticated Asterisk Manager Interface (AMI)\n\t  user without system authorization could use a specially\n\t  crafted Originate AMI request to execute arbitrary system\n\t  commands.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2019-007.html"
+    ],
+    "cvename": [
+      "CVE-2019-18610"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-10",
+    "entry": "2019-11-22"
+  }
+}

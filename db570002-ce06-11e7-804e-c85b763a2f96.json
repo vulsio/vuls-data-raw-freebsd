@@ -1,0 +1,35 @@
+{
+  "vid": "db570002-ce06-11e7-804e-c85b763a2f96",
+  "topic": "cacti -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cacti"
+      ],
+      "range": [
+        {
+          "lt": "1.1.28"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cacti reports:</p>\n\t<blockquote cite=\"https://www.cacti.net/release_notes.php?version=1.1.28\">\n\t  <p>Changelog</p>\n\t    <p>issue#1057: CVE-2017-16641 - Potential vulnerability in RRDtool functions</p>\n\t    <p>issue#1066: CVE-2017-16660 in remote_agent.php logging function</p>\n\t    <p>issue#1066: CVE-2017-16661 in view log file</p>\n\t    <p>issue#1071: CVE-2017-16785 in global_session.php Reflection XSS</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://sourceforge.net/p/cacti/mailman/message/36122745/"
+    ],
+    "cvename": [
+      "CVE-2017-16641",
+      "CVE-2017-16660",
+      "CVE-2017-16661",
+      "CVE-2017-16785"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-11-01",
+    "entry": "2017-11-20"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "vid": "904d78b8-0f7e-11e4-8b71-5453ed2e2b49",
+  "topic": "qt4-imageformats, qt5-gui -- DoS vulnerability in the GIF image handler",
+  "affects": [
+    {
+      "name": [
+        "qt4-imageformats"
+      ],
+      "range": [
+        {
+          "lt": "4.8.6_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "qt5-gui"
+      ],
+      "range": [
+        {
+          "lt": "5.2.1_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Richard J. Moore reports:</p>\n\t<blockquote cite=\"http://lists.qt-project.org/pipermail/announce/2014-April/000045.html\">\n\t  <p>The builtin GIF decoder in QtGui prior to Qt 5.3 contained a bug\n\t    that would lead to a null pointer dereference when loading certain\n\t    hand crafted corrupt GIF files. This in turn would cause the\n\t    application loading these hand crafted GIFs to crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-0190"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.qt-project.org/pipermail/announce/2014-April/000045.html"
+      }
+    ],
+    "bid": [
+      "67087"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-04-24",
+    "entry": "2014-07-19",
+    "modified": "2014-07-21"
+  }
+}

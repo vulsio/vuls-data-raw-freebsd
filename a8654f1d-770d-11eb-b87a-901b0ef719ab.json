@@ -1,0 +1,37 @@
+{
+  "vid": "a8654f1d-770d-11eb-b87a-901b0ef719ab",
+  "topic": "FreeBSD -- login.access fails to apply rules",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "12.2_4",
+          "ge": "12.2"
+        },
+        {
+          "lt": "11.4_8",
+          "ge": "11.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A regression in the login.access(5) rule processor has the effect\n\tof causing rules to fail to match even when they should not. This\n\tmeans that rules denying access may be ignored.</p>\n\t<h1>Impact:</h1>\n\t<p>The configuration in login.access(5) may not be applied, permitting\n\tlogin access to users even when the system is configured to deny it.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-25580"
+    ],
+    "freebsd_sa": [
+      "SA-21:03.pam_login_access"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-02-24",
+    "entry": "2021-02-25"
+  }
+}

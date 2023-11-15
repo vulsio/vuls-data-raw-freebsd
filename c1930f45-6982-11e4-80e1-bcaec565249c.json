@@ -1,0 +1,32 @@
+{
+  "vid": "c1930f45-6982-11e4-80e1-bcaec565249c",
+  "topic": "dbus -- incomplete fix for CVE-2014-3636 part A",
+  "affects": [
+    {
+      "name": [
+        "dbus"
+      ],
+      "range": [
+        {
+          "lt": "1.8.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Simon McVittie reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/dbus/2014-November/016395.html\">\n\t  <p>The patch issued by the D-Bus maintainers for CVE-2014-3636\n\t    was based on incorrect reasoning, and does not fully prevent\n\t    the attack described as \"CVE-2014-3636 part A\", which is\n\t    repeated below. Preventing that attack requires raising the\n\t    system dbus-daemon's RLIMIT_NOFILE (ulimit -n) to a higher\n\t    value. CVE-2014-7824 has been allocated for this\n\t    vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.freedesktop.org/archives/dbus/2014-November/016395.html"
+    ],
+    "cvename": [
+      "CVE-2014-7824"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-10",
+    "entry": "2014-11-11"
+  }
+}

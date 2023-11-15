@@ -1,0 +1,42 @@
+{
+  "vid": "6a131fbf-ec76-11e7-aa65-001b216d295b",
+  "topic": "The Bouncy Castle Crypto APIs: CVE-2017-13098 (\"ROBOT\")",
+  "affects": [
+    {
+      "name": [
+        "bouncycastle"
+      ],
+      "range": [
+        {
+          "lt": "1.59"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bouncycastle15"
+      ],
+      "range": [
+        {
+          "lt": "1.59"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Legion of the Bouncy Castle reports:</p>\n\t<blockquote cite=\"https://www.bouncycastle.org/releasenotes.html\">\n\t  <p>Release: 1.59</p>\n\t  <p>CVE-2017-13098 (\"ROBOT\"), a Bleichenbacher oracle in TLS\n\t     when RSA key exchange is negotiated. This potentially affected\n\t     BCJSSE servers and any other TLS servers configured to use JCE\n\t     for the underlying crypto - note the two TLS implementations\n\t     using the BC lightweight APIs are not affected by this.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.bouncycastle.org/releasenotes.html"
+    ],
+    "cvename": [
+      "CVE-2017-13098"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-12-12",
+    "entry": "2017-12-29"
+  }
+}

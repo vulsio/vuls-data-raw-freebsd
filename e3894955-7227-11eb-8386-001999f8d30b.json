@@ -1,0 +1,44 @@
+{
+  "vid": "e3894955-7227-11eb-8386-001999f8d30b",
+  "topic": "asterisk -- Remote crash possible when negotiating T.38",
+  "affects": [
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.16.1",
+          "ge": "16.15.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "18.2.1",
+          "ge": "18.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When re-negotiating for T.38 if the initial remote\n\t  response was delayed just enough Asterisk would send both\n\t  audio and T.38 in the SDP. If this happened, and the\n\t  remote responded with a declined T.38 stream then Asterisk\n\t  would crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2021-002.html"
+    ],
+    "cvename": [
+      "CVE-2021-26717"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-02-05",
+    "entry": "2021-02-18"
+  }
+}

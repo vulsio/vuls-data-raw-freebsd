@@ -1,0 +1,30 @@
+{
+  "vid": "d371b627-6ed5-11d9-bd18-000a95bc6fae",
+  "topic": "zhcon -- unauthorized file access",
+  "affects": [
+    {
+      "name": [
+        "zhcon",
+        "zh-zhcon"
+      ],
+      "range": [
+        {
+          "lt": "0.2.3_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Martin <q>Joey</q> Schulze reports:</p>\n\t<blockquote>\n\t  <p>Erik Sjöund discovered that zhcon, a fast console CJK\n\t    system using the Linux framebuffer, accesses a\n\t    user-controlled configuration file with elevated\n\t    privileges. Thus, it is possible to read arbitrary files.</p>\n\t</blockquote>\n\t<p>When installed from the FreeBSD Ports Collection, zhcon is\n\t  installed set-user-ID root.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-0072"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-01-25",
+    "entry": "2005-01-25"
+  }
+}

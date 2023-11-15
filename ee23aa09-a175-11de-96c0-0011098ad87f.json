@@ -1,0 +1,33 @@
+{
+  "vid": "ee23aa09-a175-11de-96c0-0011098ad87f",
+  "topic": "horde-base -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "horde-base"
+      ],
+      "range": [
+        {
+          "lt": "3.3.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Horde team reports:</p>\n\t<blockquote cite=\"http://cvs.horde.org/diff.php/horde/docs/CHANGES?r1=1.515.2.558&amp;r2=1.515.2.559\">\n\t  <p>An error within the form library when handling image form fields can\n\t    be exploited to overwrite arbitrary local files.</p>\n\t  <p>An error exists within the MIME Viewer library when rendering unknown\n\t    text parts. This can be exploited to execute arbitrary HTML and script\n\t    code in a user's browser session in context of an affected site if\n\t    malicious data is viewed.</p>\n\t  <p>The preferences system does not properly sanitise numeric preference\n\t    types. This can be exploited to execute arbitrary HTML and script code\n\t    in a user's browser session in contact of an affected site.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.horde.org/ticket/?id=8311",
+      "http://bugs.horde.org/ticket/?id=8399",
+      "http://secunia.com/advisories/36665/",
+      "http://cvs.horde.org/diff.php/horde/docs/CHANGES?r1=1.515.2.558&r2=1.515.2.559"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-05-28",
+    "entry": "2009-09-14",
+    "modified": "2009-09-22"
+  }
+}

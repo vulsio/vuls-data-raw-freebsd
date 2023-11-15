@@ -1,0 +1,43 @@
+{
+  "vid": "a21037d5-2c38-11de-ab3b-0017a4cccfc6",
+  "topic": "xpdf -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "xpdf"
+      ],
+      "range": [
+        {
+          "lt": "3.02_11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://www.vupen.com/english/advisories/2009/1065\">\n\t  <p>Some vulnerabilities have been reported in Xpdf, which can be\n\t    exploited by malicious people to potentially compromise a user's\n\t    system.</p>\n\t  <p>A boundary error exists when decoding JBIG2 symbol dictionary\n\t    segments. This can be exploited to cause a heap-based buffer\n\t    overflow and potentially execute arbitrary code.</p>\n\t  <p>Multiple integer overflows in the JBIG2 decoder can be\n\t    exploited to potentially execute arbitrary code.</p>\n\t  <p>Multiple boundary errors in the JBIG2 decoder can be\n\t    exploited to cause buffer overflows and potentially execute\n\t    arbitrary code.</p>\n\t  <p>Multiple errors in the JBIG2 decoder can be exploited can be\n\t    exploited to free arbitrary memory and potentially execute arbitrary\n\t    code.</p>\n\t  <p>Multiple unspecified input validation errors in the JBIG2 decoder can\n\t    be exploited to potentially execute arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/34291",
+      "http://www.vupen.com/english/advisories/2009/1065"
+    ],
+    "cvename": [
+      "CVE-2009-0146",
+      "CVE-2009-0147",
+      "CVE-2009-0166",
+      "CVE-2009-0799",
+      "CVE-2009-0800",
+      "CVE-2009-1179",
+      "CVE-2009-1180",
+      "CVE-2009-1181",
+      "CVE-2009-1182",
+      "CVE-2009-1183"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-04-16",
+    "entry": "2009-04-18",
+    "modified": "2009-04-18"
+  }
+}

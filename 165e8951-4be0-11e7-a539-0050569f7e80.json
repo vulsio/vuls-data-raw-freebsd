@@ -1,0 +1,33 @@
+{
+  "vid": "165e8951-4be0-11e7-a539-0050569f7e80",
+  "topic": "irssi -- remote DoS",
+  "affects": [
+    {
+      "name": [
+        "irssi"
+      ],
+      "range": [
+        {
+          "lt": "1.0.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Joseph Bisch reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_06.txt\">\n\t  <p>When receiving a DCC message without source nick/host, Irssi would\n\t    attempt to dereference a NULL pointer.</p>\n\t  <p>When receiving certain incorrectly quoted DCC files, Irssi would\n\t    try to find the terminating quote one byte before the allocated\n\t    memory.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://irssi.org/security/irssi_sa_2017_06.txt"
+    ],
+    "cvename": [
+      "CVE-2017-9468",
+      "CVE-2017-9469"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-06-06",
+    "entry": "2017-06-08"
+  }
+}

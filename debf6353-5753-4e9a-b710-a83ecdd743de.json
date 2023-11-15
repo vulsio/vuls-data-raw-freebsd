@@ -1,0 +1,39 @@
+{
+  "vid": "debf6353-5753-4e9a-b710-a83ecdd743de",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.160"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "lt": "2.150.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2019-01-16/\">\n\t  <h1>Description</h1>\n\t  <h5>(High) SECURITY-868</h5>\n\t  <p>Administrators could persist access to Jenkins using crafted 'Remember me' cookie</p>\n\t  <h5>(Medium) SECURITY-901</h5>\n\t  <p>Deleting a user in an external security realm did not invalidate their session or 'Remember me' cookie</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jenkins.io/security/advisory/2019-01-16/"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-01-16",
+    "entry": "2019-01-16"
+  }
+}

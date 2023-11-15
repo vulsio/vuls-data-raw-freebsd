@@ -1,0 +1,34 @@
+{
+  "vid": "9f0a405e-4edd-11d9-a9e7-0001020eed82",
+  "topic": "phpmyadmin -- file disclosure vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1.r1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A phpMyAdmin security announcement reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2004-4\">\n\t  <p>File disclosure: on systems where the UploadDir mecanism\n\t    is active, read_dump.php can be called with a crafted\n\t    form; using the fact that the sql_localfile variable is\n\t    not sanitized can lead to a file disclosure.</p>\n\t</blockquote>\n\t<p>Enabling <q>PHP safe mode</q> on the server can be used as\n\t  a workaround for this vulnerability.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2004-4",
+      "http://www.exaprobe.com/labs/advisories/esa-2004-1213.html"
+    ],
+    "cvename": [
+      "CVE-2004-1148"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-13",
+    "entry": "2004-12-15",
+    "modified": "2004-12-19"
+  }
+}

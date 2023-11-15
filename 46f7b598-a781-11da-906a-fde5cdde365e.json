@@ -1,0 +1,39 @@
+{
+  "vid": "46f7b598-a781-11da-906a-fde5cdde365e",
+  "topic": "bugzilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "bugzilla",
+        "ja-bugzilla"
+      ],
+      "range": [
+        {
+          "lt": "2.20.1",
+          "ge": "2.17.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Some vulnerabilities have been reported in Bugzilla,\n\t  which can be exploited by malicious users to conduct SQL injection\n\t  attacks, and by malicious people to disclose sensitive information\n\t  and conduct script insertion attacks.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.bugzilla.org/security/2.18.4/"
+    ],
+    "cvename": [
+      "CVE-2006-2420",
+      "CVE-2006-0916",
+      "CVE-2006-0915",
+      "CVE-2006-0914",
+      "CVE-2006-0913"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-02-20",
+    "entry": "2006-02-27",
+    "modified": "2006-11-11"
+  }
+}

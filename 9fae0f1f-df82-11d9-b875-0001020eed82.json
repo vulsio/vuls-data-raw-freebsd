@@ -1,0 +1,65 @@
+{
+  "vid": "9fae0f1f-df82-11d9-b875-0001020eed82",
+  "topic": "tcpdump -- infinite loops in protocol decoding",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "5.4_2",
+          "ge": "5.4"
+        },
+        {
+          "lt": "5.3_16",
+          "ge": "5.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tcpdump"
+      ],
+      "range": [
+        {
+          "lt": "3.8.3_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description</h1>\n\t<p>Several tcpdump protocol decoders contain programming\n\t  errors which can cause them to go into infinite loops.</p>\n\t<h1>Impact</h1>\n\t<p>An attacker can inject specially crafted packets into the\n\t   network which, when processed by tcpdump, could lead to a\n\t   denial-of-service. After the attack, tcpdump would no\n\t   longer capture traffic, and would potentially use all\n\t   available processor time.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-1267",
+      "CVE-2005-1278",
+      "CVE-2005-1279",
+      "CVE-2005-1280"
+    ],
+    "freebsd_sa": [
+      "SA-05:10.tcpdump"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111454406222040",
+        "msgid": "20050426100140.1945.qmail@www.securityfocus.com"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111454461300644",
+        "msgid": "20050426100057.1748.qmail@www.securityfocus.com"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111928309502304",
+        "msgid": "20050619091553.GB982@zaphod.nitro.dk"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-06-09",
+    "entry": "2005-06-18",
+    "modified": "2005-06-20"
+  }
+}

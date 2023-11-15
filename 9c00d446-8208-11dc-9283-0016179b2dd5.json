@@ -1,0 +1,55 @@
+{
+  "vid": "9c00d446-8208-11dc-9283-0016179b2dd5",
+  "topic": "drupal --- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "drupal4"
+      ],
+      "range": [
+        {
+          "lt": "4.7.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "drupal5"
+      ],
+      "range": [
+        {
+          "lt": "5.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/184315\">\n\t  <p>In some circumstances Drupal allows user-supplied data to\n\t    become part of response headers. As this user-supplied data\n\t    is not always properly escaped, this can be exploited by\n\t    malicious users to execute HTTP response splitting attacks\n\t    which may lead to a variety of issues, among them cache\n\t    poisoning, cross-user defacement and injection of arbitrary\n\t    code.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/184316\">\n\t  <p>The Drupal installer allows any visitor to provide credentials\n\t    for a database when the site's own database is not reachable. This\n\t    allows attackers to run arbitrary code on the site's server.\n\t    An immediate workaround is the removal of the file install.php\n\t    in the Drupal root directory.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/184320\">\n\t  <p>The allowed extension list of the core Upload module contains\n\t    the extension HTML by default. Such files can be used to execute\n\t    arbitrary script code in the context of the affected site when a\n\t    user views the file. Revoking upload permissions or removing the\n\t    .html extension from the allowed extension list will stop uploads\n\t    of malicious files. but will do nothing to protect your site\n\t    againstfiles that are already present. Carefully inspect the file\n\t    system path for any HTML files. We recommend you remove any HTML\n\t    file you did not update yourself. You should look for , CSS\n\t    includes, Javascript includes, and onerror=\"\" attributes if\n\t    you need to review files individually.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/184348\">\n\t  <p>The Drupal Forms API protects against cross site request\n\t    forgeries (CSRF), where a malicious site can cause a user\n\t    to unintentionally submit a form to a site where he is\n\t    authenticated. The user deletion form does not follow the\n\t    standard Forms API submission model and is therefore not\n\t    protected against this type of attack. A CSRF attack may\n\t    result in the deletion of users.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/184354\">\n\t  <p>The publication status of comments is not passed during the\n\t    hook_comments API operation, causing various modules that rely\n\t    on the publication status (such as Organic groups, or Subscriptions)\n\t    to mail out unpublished comments.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/184315",
+      "http://drupal.org/node/184316",
+      "http://drupal.org/node/184348",
+      "http://drupal.org/node/184354",
+      "http://drupal.org/node/184320",
+      "http://secunia.com/advisories/27292",
+      "http://secunia.com/advisories/27292",
+      "http://secunia.com/advisories/27292",
+      "http://secunia.com/advisories/27290",
+      "http://secunia.com/advisories/27290"
+    ],
+    "cvename": [
+      "CVE-2007-5597",
+      "CVE-2007-5596",
+      "CVE-2007-5595",
+      "CVE-2007-5594",
+      "CVE-2007-5593"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-10-17",
+    "entry": "2007-10-24"
+  }
+}

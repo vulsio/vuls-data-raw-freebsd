@@ -1,0 +1,29 @@
+{
+  "vid": "e9fca207-e399-11de-881e-001aa0166822",
+  "topic": "expat2 -- buffer over-read and crash",
+  "affects": [
+    {
+      "name": [
+        "expat2"
+      ],
+      "range": [
+        {
+          "lt": "2.0.1_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3560\">\n\t  <p>The big2_toUtf8 function in lib/xmltok.c in libexpat in\n\t    Expat 2.0.1, as used in the XML-Twig module for Perl, allows\n\t    context-dependent attackers to cause a denial of service\n\t    (application crash) via an XML document with malformed UTF-8\n\t    sequences that trigger a buffer over-read, related to the\n\t    doProlog function in lib/xmlparse.c.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2009-3560"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-10-05",
+    "entry": "2009-12-08"
+  }
+}

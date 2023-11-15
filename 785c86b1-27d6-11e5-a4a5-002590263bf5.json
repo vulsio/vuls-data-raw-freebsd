@@ -1,0 +1,33 @@
+{
+  "vid": "785c86b1-27d6-11e5-a4a5-002590263bf5",
+  "topic": "xen-kernel -- arm: vgic-v2: GICD_SGIR is not properly emulated",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_3",
+          "ge": "4.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-117.html\">\n\t  <p>When decoding a guest write to a specific register in the virtual\n\t    interrupt controller Xen would treat an invalid value as a critical\n\t    error and crash the host.</p>\n\t  <p>By writing an invalid value to the GICD.SGIR register a guest can\n\t    crash the host, resulting in a Denial of Service attack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-117.html"
+    ],
+    "cvename": [
+      "CVE-2015-0268"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-02-12",
+    "entry": "2015-07-11"
+  }
+}

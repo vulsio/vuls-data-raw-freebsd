@@ -1,0 +1,42 @@
+{
+  "vid": "012b495c-9d51-11de-8d20-001bd3385381",
+  "topic": "cyrus-imapd -- Potential buffer overflow in Sieve",
+  "affects": [
+    {
+      "name": [
+        "cyrus-imapd"
+      ],
+      "range": [
+        {
+          "lt": "2.2.13_6",
+          "gt": "2.2.0"
+        },
+        {
+          "lt": "2.3.14_2",
+          "gt": "2.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Cyrus IMAP Server ChangeLog states:</p>\n\t<blockquote cite=\"http://cyrusimap.web.cmu.edu/imapd/changes.html\">\n\t  <p>Fixed CERT VU#336053 - Potential buffer overflow in Sieve.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kb.cert.org/vuls/id/336053",
+      "http://www.debian.org/security/2009/dsa-1881"
+    ],
+    "cvename": [
+      "CVE-2009-2632"
+    ],
+    "bid": [
+      "36296"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-09-02",
+    "entry": "2009-09-09",
+    "modified": "2009-09-14"
+  }
+}

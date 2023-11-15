@@ -1,0 +1,33 @@
+{
+  "vid": "3310014a-5ef9-11ed-812b-206a8a720317",
+  "topic": "sudo -- Potential out-of-bounds write for small passwords",
+  "affects": [
+    {
+      "name": [
+        "sudo"
+      ],
+      "range": [
+        {
+          "lt": "1.9.12p1",
+          "ge": "1.8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SO-AND-SO reports:</p>\n\t<blockquote cite=\"INSERT URL HERE\">\n\t  <p>Sudo 1.8.0 through 1.9.12, with the crypt() password backend,\n\t     contains a plugins/sudoers/auth/passwd.c array-out-of-bounds\n\t     error that can result in a heap-based buffer over-read. This\n\t     can be triggered by arbitrary local users with access to sudo\n\t     by entering a password of seven characters or fewer. The impact\n\t     could vary depending on the system libraries, compiler,\n\t     and processor architecture.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43995"
+    ],
+    "cvename": [
+      "CVE-2022-43995"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-07",
+    "entry": "2022-11-07"
+  }
+}

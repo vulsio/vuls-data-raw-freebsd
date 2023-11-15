@@ -1,0 +1,41 @@
+{
+  "vid": "45671c0e-a652-11e8-805b-a4badb2f4699",
+  "topic": "FreeBSD -- Unauthenticated EAPOL-Key Decryption Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "11.2_2",
+          "ge": "11.2"
+        },
+        {
+          "lt": "11.1_13",
+          "ge": "11.1"
+        },
+        {
+          "lt": "10.4_11",
+          "ge": "10.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When using WPA2, EAPOL-Key frames with the Encrypted\n\tflag and without the MIC flag set, the data field was\n\tdecrypted first without verifying the MIC. When the dta\n\tfield was encrypted using RC4, for example, when negotiating\n\tTKIP as a pairwise cipher, the unauthenticated but decrypted\n\tdata was subsequently processed. This opened wpa_supplicant(8)\n\tto abuse by decryption and recovery of sensitive information\n\tcontained in EAPOL-Key messages.</p>\n\t<p>See\n\thttps://w1.fi/security/2018-1/unauthenticated-eapol-key-decryption.txt\n\tfor a detailed description of the bug.</p>\n\t<h1>Impact:</h1>\n\t<p>All users of the WPA2 TKIP pairwise cipher are vulnerable\n\tto information, for example, the group key.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2018-1452"
+    ],
+    "freebsd_sa": [
+      "SA-18:11.hostapd"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-14",
+    "entry": "2018-08-22"
+  }
+}

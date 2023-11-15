@@ -1,0 +1,40 @@
+{
+  "vid": "9ac0f9c4-492b-11df-83fb-0015587e2cc1",
+  "topic": "krb5 -- multiple denial of service vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "ge": "1.7",
+          "le": "1.7_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Two vulnerabilities in krb5 can be used by remote\n\t  attackers in denial of service attacks. The MIT security\n\t  advisories report this as follows:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-001.txt\">\n\t  <p>An unauthenticated remote attacker can send an invalid\n\t    request to a KDC process that will cause it to crash\n\t    due to an assertion failure, creating a denial of\n\t    service.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-002.txt\">\n\t  <p>An unauthenticated remote attacker could cause a GSS-API\n\t    application, including the Kerberos administration\n\t    daemon (kadmind) to crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-001.txt",
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-002.txt"
+    ],
+    "cvename": [
+      "CVE-2010-0283",
+      "CVE-2010-0628"
+    ],
+    "bid": [
+      "38260",
+      "38904"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-02-16",
+    "entry": "2010-04-19",
+    "modified": "2013-06-16"
+  }
+}

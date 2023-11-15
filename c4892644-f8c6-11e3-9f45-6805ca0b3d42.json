@@ -1,0 +1,36 @@
+{
+  "vid": "c4892644-f8c6-11e3-9f45-6805ca0b3d42",
+  "topic": "phpMyAdmin -- two XSS vulnerabilities due to unescaped db/table names",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "4.2.4",
+          "ge": "4.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-2.php\">\n\t  <p>Self-XSS due to unescaped HTML output in recent/favorite\n\t    tables navigation.</p>\n\n\t  <p>When marking a crafted database or table name as\n\t    favorite or having it in recent tables, it is possible to\n\t    trigger an XSS.</p>\n\n\n\t  <p>This vulnerability can be triggered only by someone who\n\t    logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    form.</p>\n\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-3.php\">\n\t  <p>Self-XSS due to unescaped HTML output in navigation items\n\t    hiding feature.</p>\n\n\t  <p>When hiding or unhiding a crafted table name in the\n\t    navigation, it is possible to trigger an XSS.</p>\n\n\t  <p>This vulnerability can be triggered only by someone who\n\t    logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    form.</p>\n\t</blockquote>\n    "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-2.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-3.php"
+    ],
+    "cvename": [
+      "CVE-2014-4348",
+      "CVE-2014-4349"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-06-20",
+    "entry": "2014-06-20",
+    "modified": "2014-06-24"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "vid": "791e8f79-e7d1-11e9-8b31-206a8a720317",
+  "topic": "Xpdf -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "xpdf"
+      ],
+      "range": [
+        {
+          "lt": "4.02,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xpdf4"
+      ],
+      "range": [
+        {
+          "lt": "4.02,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xpdf3"
+      ],
+      "range": [
+        {
+          "lt": "3.04_11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Xpdf 4.02 fixes two vulnerabilities. Both fixes have been\n\t   backported to 3.04.</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2019-9877\">\n\t  <p>An invalid memory access vulnerability in TextPage::findGaps()\n\t     in Xpdf 4.01 through a crafted PDF document can cause a\n\t     segfault.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2019-16927\">\n\t  <p>An out of bounds write exists in TextPage::findGaps() of\n\t     Xpdf 4.01.01 </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2019-9877",
+      "https://nvd.nist.gov/vuln/detail/CVE-2019-16927",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9877",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1692"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-01",
+    "entry": "2019-10-06"
+  }
+}

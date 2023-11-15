@@ -1,0 +1,35 @@
+{
+  "vid": "ad5e70bb-c429-11d9-ac59-02061b08fc24",
+  "topic": "gaim -- MSN remote DoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gaim",
+        "ja-gaim",
+        "ko-gaim",
+        "ru-gaim"
+      ],
+      "range": [
+        {
+          "lt": "1.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The GAIM team reports:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/index.php?id=17\">\n\t  <p>Potential remote denial of service bug resulting from not\n\t    checking a pointer for non-NULL before passing it to\n\t    strncmp, which results in a crash. This can be triggered\n\t    by a remote client sending an SLP message with an empty\n\t    body.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://gaim.sourceforge.net/security/index.php?id=17"
+    ],
+    "cvename": [
+      "CVE-2005-1262"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-05-10",
+    "entry": "2005-05-14"
+  }
+}

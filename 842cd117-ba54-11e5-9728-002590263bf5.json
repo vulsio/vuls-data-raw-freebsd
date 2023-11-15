@@ -1,0 +1,36 @@
+{
+  "vid": "842cd117-ba54-11e5-9728-002590263bf5",
+  "topic": "prosody -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "prosody"
+      ],
+      "range": [
+        {
+          "lt": "0.9.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Prosody Team reports:</p>\n\t<blockquote cite=\"http://blog.prosody.im/prosody-0-9-9-security-release/\">\n\t  <p>Fix path traversal vulnerability in mod_http_files\n\t    (CVE-2016-1231)</p>\n\t  <p>Fix use of weak PRNG in generation of dialback secrets\n\t    (CVE-2016-1232)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.prosody.im/prosody-0-9-9-security-release/"
+    ],
+    "cvename": [
+      "CVE-2016-1231",
+      "CVE-2016-1232"
+    ],
+    "freebsd_pr": [
+      "ports/206150"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-08",
+    "entry": "2016-01-14"
+  }
+}

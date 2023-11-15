@@ -1,0 +1,44 @@
+{
+  "vid": "34e0316a-aa91-11df-8c2e-001517289bf8",
+  "topic": "ruby -- UTF-7 encoding XSS vulnerability in WEBrick",
+  "affects": [
+    {
+      "name": [
+        "ruby",
+        "ruby+pthreads",
+        "ruby+pthreads+oniguruma",
+        "ruby+oniguruma"
+      ],
+      "range": [
+        {
+          "lt": "1.8.7.248_3,1",
+          "ge": "1.8.*,1"
+        },
+        {
+          "lt": "1.9.1.430,1",
+          "ge": "1.9.*,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The official ruby site reports:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2010/08/16/xss-in-webrick-cve-2010-0541/\">\n\t  <p>WEBrick have had a cross-site scripting vulnerability that allows\n\t    an attacker to inject arbitrary script or HTML via a crafted URI.\n\t    This does not affect user agents that strictly implement HTTP/1.1,\n\t    however, some user agents do not.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ruby-lang.org/en/news/2010/08/16/xss-in-webrick-cve-2010-0541/"
+    ],
+    "cvename": [
+      "CVE-2010-0541"
+    ],
+    "bid": [
+      "40895"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-08-16",
+    "entry": "2010-08-17",
+    "modified": "2010-08-20"
+  }
+}

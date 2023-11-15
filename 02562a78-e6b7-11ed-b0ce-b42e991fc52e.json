@@ -1,0 +1,42 @@
+{
+  "vid": "02562a78-e6b7-11ed-b0ce-b42e991fc52e",
+  "topic": "cloud-init -- sensitive data exposure in cloud-init logs",
+  "affects": [
+    {
+      "name": [
+        "cloud-init"
+      ],
+      "range": [
+        {
+          "lt": "23.1.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "cloud-init-devel"
+      ],
+      "range": [
+        {
+          "lt": "23.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>security@ubuntu.com reports:</p>\n\t<blockquote cite=\"https://bugs.launchpad.net/cloud-init/+bug/2013967\">\n\t  <p>Sensitive data could be exposed in logs of cloud-init before version\n\t23.1.2.  An attacker could use this information to find hashed\n\tpasswords and possibly escalate their privilege.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2023-1786"
+    ],
+    "cvename": [
+      "CVE-2023-1786"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-04-26",
+    "entry": "2023-04-29"
+  }
+}

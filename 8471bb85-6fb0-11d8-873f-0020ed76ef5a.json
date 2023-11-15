@@ -1,0 +1,39 @@
+{
+  "vid": "8471bb85-6fb0-11d8-873f-0020ed76ef5a",
+  "topic": "GNU Anubis buffer overflows and format string vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "anubis"
+      ],
+      "range": [
+        {
+          "le": "3.6.2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ulf Härnhammar discovered several vulnerabilities in GNU\n\t  Anubis.</p>\n\t<ul>\n\t  <li>Unsafe uses of `sscanf'.\tThe `%s' format specifier is\n\t    used, which allows a classical buffer overflow.  (auth.c)</li>\n\t  <li>Format string bugs invoking `syslog'.  (log.c, errs.c,\n\t    ssl.c)</li>\n\t</ul>\n\t<p>Ulf notes that these vulnerabilities can be exploited by a\n\t  malicious IDENT server as a denial-of-service attack.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0353",
+      "CVE-2004-0354"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.netsys.com/pipermail/full-disclosure/2004-March/018290.html"
+      }
+    ],
+    "bid": [
+      "9772"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-04",
+    "entry": "2004-03-06",
+    "modified": "2004-03-29"
+  }
+}

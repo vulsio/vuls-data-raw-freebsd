@@ -1,0 +1,84 @@
+{
+  "vid": "730db824-e216-11d8-9b0a-000347a4fa7d",
+  "topic": "Mozilla / Firefox user interface spoofing vulnerability",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "le": "0.9.1_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla"
+      ],
+      "range": [
+        {
+          "le": "1.7.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla-devel"
+      ],
+      "range": [
+        {
+          "le": "1.7.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "le": "1.7.1,2"
+        },
+        {
+          "ge": "1.8.a,2",
+          "le": "1.8.a2,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla-gtk1"
+      ],
+      "range": [
+        {
+          "le": "1.7.1_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla project's family of browsers contain a design\n\t  flaw that can allow a website to spoof almost perfectly any\n\t  part of the Mozilla user interface, including spoofing web\n\t  sites for phishing or internal elements such as the \"Master\n\t  Password\" dialog box.  This achieved by manipulating \"chrome\"\n\t  through remote XUL content.  Recent versions of Mozilla have\n\t  been fixed to not allow untrusted documents to utilize\n\t  \"chrome\" in this way.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugzilla.mozilla.org/show_bug.cgi?id=22183",
+      "http://bugzilla.mozilla.org/show_bug.cgi?id=244965",
+      "http://bugzilla.mozilla.org/show_bug.cgi?id=252198",
+      "http://www.nd.edu/~jsmith30/xul/test/spoof.html",
+      "http://secunia.com/advisories/12188"
+    ],
+    "cvename": [
+      "CVE-2004-0764"
+    ],
+    "bid": [
+      "10832"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-07-19",
+    "entry": "2004-07-30",
+    "modified": "2004-08-15"
+  }
+}

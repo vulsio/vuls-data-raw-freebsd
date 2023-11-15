@@ -1,0 +1,32 @@
+{
+  "vid": "55facdb0-2c24-11eb-9aac-08002734b9ed",
+  "topic": "gitea -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.12.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea Team reports for release 1.12.6:</p>\n\t<blockquote cite=\"https://blog.gitea.io/2020/11/gitea-1.12.6-is-released/\">\n\t  <ul>\n\t  <li>Prevent git operations for inactive users</li>\n\t  <li>Disallow urlencoded new lines in git protocol paths if there is a port</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "Disallow urlencoded new lines in git protocol paths if there is a port"
+    ],
+    "freebsd_pr": [
+      "ports/251296"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-11-16",
+    "entry": "2020-11-21"
+  }
+}

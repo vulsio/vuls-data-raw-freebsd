@@ -1,0 +1,39 @@
+{
+  "vid": "1b769b72-582b-11e2-b66b-00e0814cab4e",
+  "topic": "django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "django"
+      ],
+      "range": [
+        {
+          "lt": "1.4.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "django13"
+      ],
+      "range": [
+        {
+          "lt": "1.3.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Django Project reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2012/dec/10/security/\">\n\t<ol>\n\t  <li>\n\t  <p>Host header poisoning</p>\n\t  <p>Several earlier Django security releases focused on the issue of\n\t      poisoning the HTTP Host header, causing Django to generate URLs\n\t      pointing to arbitrary, potentially-malicious domains.</p>\n\t  <p>In response to further input received and reports of continuing\n\t      issues following the previous release, we're taking additional\n\t      steps to tighten Host header validation. Rather than attempt to\n\t      accommodate all features HTTP supports here, Django's Host header\n\t      validation attempts to support a smaller, but far more common, subset:</p>\n\t    <ul>\n\t\t<li>Hostnames must consist of characters [A-Za-z0-9] plus hyphen\n\t\t    ('-') or dot ('.').</li>\n\t\t<li>IP addresses -- both IPv4 and IPv6 -- are permitted.</li>\n\t\t<li>Port, if specified, is numeric.</li>\n\t    </ul>\n\t  <p>Any deviation from this will now be rejected, raising the exception\n\t      django.core.exceptions.SuspiciousOperation.</p>\n\t  </li>\n\t  <li>\n\t  <p>Redirect poisoning</p>\n\t  <p>Also following up on a previous issue: in July of this year, we made\n\t      changes to Django's HTTP redirect classes, performing additional\n\t      validation of the scheme of the URL to redirect to (since, both\n\t      within Django's own supplied applications and many third-party\n\t      applications, accepting a user-supplied redirect target is a common\n\t      pattern).</p>\n\t  <p>Since then, two independent audits of the code turned up further\n\t      potential problems. So, similar to the Host-header issue, we are\n\t      taking steps to provide tighter validation in response to reported\n\t      problems (primarily with third-party applications, but to a certain\n\t      extent also within Django itself). This comes in two parts:</p>\n\t    <ol>\n\t\t<li>A new utility function, django.utils.http.is_safe_url, is\n\t\t    added; this function takes a URL and a hostname, and checks\n\t\t    that the URL is either relative, or if absolute matches the\n\t\t    supplied hostname. This function is intended for use whenever\n\t\t    user-supplied redirect targets are accepted, to ensure that\n\t\t    such redirects cannot lead to arbitrary third-party sites.</li>\n\t\t<li>All of Django's own built-in views -- primarily in the\n\t\t    authentication system -- which allow user-supplied redirect\n\t\t    targets now use is_safe_url to validate the supplied URL.</li>\n\t    </ol>\n\t  </li>\n\t  </ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2012/dec/10/security/"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-12-10",
+    "entry": "2013-01-06"
+  }
+}

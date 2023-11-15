@@ -1,0 +1,35 @@
+{
+  "vid": "4055aee5-f4c6-11e7-95f2-005056925db4",
+  "topic": "awstats -- remote code execution",
+  "affects": [
+    {
+      "name": [
+        "awstats"
+      ],
+      "range": [
+        {
+          "lt": "7.7,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000501\">\n\t  <p>Awstats version 7.6 and earlier is vulnerable to a path traversal\n\t    flaw in the handling of the \"config\" and \"migrate\" parameters resulting\n\t    in unauthenticated remote code execution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000501"
+    ],
+    "cvename": [
+      "CVE-2017-1000501"
+    ],
+    "freebsd_pr": [
+      "ports/225007"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-03",
+    "entry": "2018-01-08"
+  }
+}

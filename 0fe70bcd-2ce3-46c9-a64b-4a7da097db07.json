@@ -1,0 +1,44 @@
+{
+  "vid": "0fe70bcd-2ce3-46c9-a64b-4a7da097db07",
+  "topic": "python -- possible integer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "python34"
+      ],
+      "range": [
+        {
+          "lt": "3.4.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python35"
+      ],
+      "range": [
+        {
+          "lt": "3.5.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Python issue:</p>\n\t<blockquote cite=\"https://bugs.python.org/issue30657\">\n\t  <p>There is a possible integer overflow in PyString_DecodeEscape\n\t    function of the file stringobject.c, which can be abused to gain\n\t    a heap overflow, possibly leading to arbitrary code execution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.python.org/issue30657",
+      "https://docs.python.org/3.4/whatsnew/changelog.html",
+      "https://docs.python.org/3.5/whatsnew/changelog.html"
+    ],
+    "cvename": [
+      "CVE-2017-1000158"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-06-03",
+    "entry": "2018-02-11"
+  }
+}

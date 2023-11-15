@@ -1,0 +1,35 @@
+{
+  "vid": "5f29c2e4-9f6a-11d8-abbc-00e08110b673",
+  "topic": "exim buffer overflow when verify = header_syntax is used",
+  "affects": [
+    {
+      "name": [
+        "exim",
+        "exim-ldap2",
+        "exim-mysql",
+        "exim-postgresql"
+      ],
+      "range": [
+        {
+          "lt": "4.33+20_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A remote exploitable buffer overflow has been discovered\n\t  in exim when verify = header_syntax is used in the\n\t  configuration file. This does not affect the default\n\t  configuration.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.guninski.com/exim1.html"
+    ],
+    "cvename": [
+      "CVE-2004-0400"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-05-06",
+    "entry": "2004-05-06"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "vid": "05dc6efa-2370-11e3-95b7-00e0814cab4e",
+  "topic": "django -- denial-of-service via large passwords",
+  "affects": [
+    {
+      "name": [
+        "py26-django"
+      ],
+      "range": [
+        {
+          "lt": "1.5.4",
+          "ge": "1.5"
+        },
+        {
+          "lt": "1.4.8",
+          "ge": "1.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py27-django"
+      ],
+      "range": [
+        {
+          "lt": "1.5.4",
+          "ge": "1.5"
+        },
+        {
+          "lt": "1.4.8",
+          "ge": "1.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py26-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "20130922,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py27-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "20130922,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Django project reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2013/sep/15/security/\">\n\t  <p>These releases address a denial-of-service attack against Django's\n\t    authentication framework. All users of Django are encouraged to\n\t    upgrade immediately.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2013/sep/15/security/"
+    ],
+    "cvename": [
+      "CVE-2013-1443"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-09-15",
+    "entry": "2013-09-22",
+    "modified": "2014-04-30"
+  }
+}

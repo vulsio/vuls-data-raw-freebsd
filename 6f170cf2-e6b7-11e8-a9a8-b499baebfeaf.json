@@ -1,0 +1,32 @@
+{
+  "vid": "6f170cf2-e6b7-11e8-a9a8-b499baebfeaf",
+  "topic": "OpenSSL -- timing vulnerability",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2p_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20181112.txt\">\n\t  <p>Microarchitecture timing vulnerability in ECC scalar\n\t    multiplication. Severity: Low<br/>\n\t    OpenSSL ECC scalar multiplication, used in e.g. ECDSA and ECDH, has\n\t    been shown to be vulnerable to a microarchitecture timing side channel\n\t    attack. An attacker with sufficient access to mount local timing\n\t    attacks during ECDSA signature generation could recover the private\n\t    key.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20181112.txt"
+    ],
+    "cvename": [
+      "CVE-2018-5407"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-11-12",
+    "entry": "2018-11-12"
+  }
+}

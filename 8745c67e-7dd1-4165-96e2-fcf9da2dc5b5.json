@@ -1,0 +1,36 @@
+{
+  "vid": "8745c67e-7dd1-4165-96e2-fcf9da2dc5b5",
+  "topic": "gsoap -- remote code execution via via overflow",
+  "affects": [
+    {
+      "name": [
+        "gsoap"
+      ],
+      "range": [
+        {
+          "lt": "2.8.47"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Senrio reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/99868/discuss\">\n\t  <p>Genivia gSOAP is prone to a stack-based buffer-overflow\n\t  vulnerability because it fails to properly bounds check user-supplied\n\t  data before copying it into an insufficiently sized buffer.</p>\n\t  <p>A remote attacker may exploit this issue to execute arbitrary code\n\t  in the context of the affected device. Failed attempts will likely\n\t  cause a denial-of-service condition.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securityfocus.com/bid/99868/discuss",
+      "http://blog.senr.io/blog/devils-ivy-flaw-in-widely-used-third-party-code-impacts-millions",
+      "http://blog.senr.io/devilsivy.html",
+      "https://www.genivia.com/advisory.html#Security_advisory:_CVE-2017-9765_bug_in_certain_versions_of_gSOAP_2.7_up_to_2.8.47_%28June_21,_2017%29",
+      "https://www.genivia.com/changelog.html#Version_2.8.48_upd_%2806/21/2017%29"
+    ],
+    "cvename": [
+      "CVE-2017-9765"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-07-18",
+    "entry": "2017-07-25"
+  }
+}

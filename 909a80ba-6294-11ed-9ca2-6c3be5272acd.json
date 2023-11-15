@@ -1,0 +1,59 @@
+{
+  "vid": "909a80ba-6294-11ed-9ca2-6c3be5272acd",
+  "topic": "Grafana -- Improper authentication",
+  "affects": [
+    {
+      "name": [
+        "grafana"
+      ],
+      "range": [
+        {
+          "lt": "8.5.14",
+          "ge": "8.0.0"
+        },
+        {
+          "lt": "9.1.8",
+          "ge": "9.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana8"
+      ],
+      "range": [
+        {
+          "lt": "8.5.14",
+          "ge": "8.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana9"
+      ],
+      "range": [
+        {
+          "lt": "9.1.8",
+          "ge": "9.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/10/12/grafana-security-releases-new-versions-with-fixes-for-cve-2022-39229-cve-2022-39201-cve-2022-31130-cve-2022-31123/\">\n\t  <p>On September 7, as a result of an internal security audit, we discovered\n\t  a security vulnerability in Grafana’s basic authentication related to the usage\n\t  of username and email address.</p>\n\t  <p>n Grafana, a user’s username and email address are unique fields, which\n\t  means no other user can have the same username or email address as another user.\n\t  </p>\n\t  <p>In addition, a user can have an email address as a username, and the Grafana\n\t  login allows users to sign in with either username or email address. This\n\t  creates an unusual behavior, where <em>user_1</em> can register with one email\n\t  address and <em>user_2</em> can register their username as <em>user_1</em>’s\n\t  email address. As a result, <em>user_1</em> would be prevented from signing\n\t  in to Grafana, since <em>user_1</em> password won’t match with <em>user_2</em>\n\t  email address.</p>\n\t  <p>The CVSS score for this vulnerability is 4.3 moderate\n\t  (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/grafana/grafana/security/advisories/GHSA-gj7m-853r-289r"
+    ],
+    "cvename": [
+      "CVE-2022-39229"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-09-07",
+    "entry": "2022-11-12"
+  }
+}

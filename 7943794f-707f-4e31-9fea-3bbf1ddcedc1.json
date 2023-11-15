@@ -1,0 +1,117 @@
+{
+  "vid": "7943794f-707f-4e31-9fea-3bbf1ddcedc1",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libvorbis"
+      ],
+      "range": [
+        {
+          "lt": "1.3.6,3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libtremor"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1.s20180316"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "59.0.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "waterfox"
+      ],
+      "range": [
+        {
+          "lt": "56.0.4.36_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.49.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "52.7.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "52.7.2,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "52.7.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "52.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-08/\">\n\t  <h1>CVE-2018-5146: Out of bounds memory write in libvorbis</h1>\n\t  <p>An out of bounds memory write while processing Vorbis\n\t    audio data was reported through the Pwn2Own contest.</p>\n\t  <h1>CVE-2018-5147: Out of bounds memory write in libtremor</h1>\n\t  <p>The libtremor library has the same flaw as\n\t    CVE-2018-5146. This library is used by Firefox in place of\n\t    libvorbis on Android and ARM platforms.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2018-08/",
+      "https://www.mozilla.org/security/advisories/mfsa2018-09/"
+    ],
+    "cvename": [
+      "CVE-2018-5146",
+      "CVE-2018-5147"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-16",
+    "entry": "2018-03-16",
+    "modified": "2018-03-31"
+  }
+}

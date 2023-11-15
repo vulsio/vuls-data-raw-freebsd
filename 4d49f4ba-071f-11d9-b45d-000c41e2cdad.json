@@ -1,0 +1,35 @@
+{
+  "vid": "4d49f4ba-071f-11d9-b45d-000c41e2cdad",
+  "topic": "apache -- ap_resolve_env buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "lt": "2.0.50_3",
+          "ge": "2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SITIC discovered a vulnerability in Apache 2's handling of\n\t  environmental variable settings in the httpd configuration\n\t  files (the main `httpd.conf' and `.htaccess' files).\n\t  According to a SITIC advisory:</p>\n\t<blockquote cite=\"http://lists.netsys.com/pipermail/full-disclosure/2004-September/026463.html\">\n\t  <p>The buffer overflow occurs when expanding ${ENVVAR}\n\t    constructs in .htaccess or httpd.conf files. The function\n\t    ap_resolve_env() in server/util.c copies data from\n\t    environment variables to the character array tmp with\n\t    strcat(3), leading to a buffer overflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0747"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.netsys.com/pipermail/full-disclosure/2004-September/026463.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-15",
+    "entry": "2004-09-15"
+  }
+}

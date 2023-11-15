@@ -1,0 +1,33 @@
+{
+  "vid": "eca2d861-76f4-42ed-89d2-23a2cb396c87",
+  "topic": "poppler -- multiple denial of service issues",
+  "affects": [
+    {
+      "name": [
+        "poppler"
+      ],
+      "range": [
+        {
+          "lt": "0.56.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Poppler developers report:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/99241/discuss\">\n\t  <p>Poppler is prone to a stack-based buffer-overflow\n\t  vulnerability.</p>\n\t  <p>Successful exploits may allow attackers to crash the affected\n\t  application, resulting in denial-of-service condition. Due to the\n\t  nature of this issue, arbitrary code execution may be possible but\n\t  this has not been confirmed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securityfocus.com/bid/99241/discuss"
+    ],
+    "cvename": [
+      "CVE-2017-9865",
+      "CVE-2017-9775"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-06-21",
+    "entry": "2017-08-24"
+  }
+}

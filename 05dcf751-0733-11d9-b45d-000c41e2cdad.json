@@ -1,0 +1,32 @@
+{
+  "vid": "05dcf751-0733-11d9-b45d-000c41e2cdad",
+  "topic": "cups -- print queue browser denial-of-service",
+  "affects": [
+    {
+      "name": [
+        "cups-base"
+      ],
+      "range": [
+        {
+          "lt": "1.1.21"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>If the CUPS server (cupsd) receives a zero-length UDP\n\t  message, it will disable its print queue browser service.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.cups.org/str.php?L863"
+    ],
+    "cvename": [
+      "CVE-2004-0558"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-23",
+    "entry": "2004-09-15"
+  }
+}

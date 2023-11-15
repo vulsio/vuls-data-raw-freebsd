@@ -1,0 +1,29 @@
+{
+  "vid": "7289214f-7c55-11e1-ab3b-000bcdf0a03b",
+  "topic": "libpurple -- Remote DoS via an MSN OIM message that lacks UTF-8 encoding",
+  "affects": [
+    {
+      "name": [
+        "libpurple"
+      ],
+      "range": [
+        {
+          "lt": "2.10.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US-CERT reports:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1178\">\n\t  <p>The msn_oim_report_to_user function in oim.c in the MSN protocol\n\t    plugin in libpurple in Pidgin before 2.10.2 allows remote servers\n\t    to cause a denial of service (application crash) via an OIM message\n\t    that lacks UTF-8 encoding.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-1178"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-03-15",
+    "entry": "2012-04-01"
+  }
+}

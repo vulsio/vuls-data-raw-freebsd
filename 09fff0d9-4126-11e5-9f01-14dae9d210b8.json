@@ -1,0 +1,33 @@
+{
+  "vid": "09fff0d9-4126-11e5-9f01-14dae9d210b8",
+  "topic": "py-foolscap -- local file inclusion",
+  "affects": [
+    {
+      "name": [
+        "py27-foolscap",
+        "py32-foolscap",
+        "py33-foolscap",
+        "py34-foolscap"
+      ],
+      "range": [
+        {
+          "lt": "0.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Brian Warner reports:</p>\n\t<blockquote cite=\"https://github.com/warner/foolscap/blob/a17218e18e01c05a9655863cd507b80561692c14/NEWS\">\n\t  <p>The \"flappserver\" feature was found to have a vulnerability in the\n\t    service-lookup code which, when combined with an attacker who has the ability\n\t    to write files to a location where the flappserver process could read them,\n\t    would allow that attacker to obtain control of the flappserver process.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/warner/foolscap/blob/a17218e18e01c05a9655863cd507b80561692c14/NEWS",
+      "http://foolscap.lothar.com/trac/ticket/226"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-09-23",
+    "entry": "2015-08-12"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "dc9f8335-2b3b-11e0-a91b-00e0815b8da8",
+  "topic": "isc-dhcp-server -- DHCPv6 crash",
+  "affects": [
+    {
+      "name": [
+        "isc-dhcp41-server"
+      ],
+      "range": [
+        {
+          "le": "4.1.2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"http://www.isc.org/software/dhcp/advisories/cve-2011-0413\">\n\t  <p>When the DHCPv6 server code processes a message for an address\n\t    that was previously declined and internally tagged as abandoned\n\t    it can trigger an assert failure resulting in the server crashing.\n\t    This could be used to crash DHCPv6 servers remotely. This issue\n\t    only affects DHCPv6 servers. DHCPv4 servers are unaffected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.isc.org/software/dhcp/advisories/cve-2011-0413",
+      "http://www.kb.cert.org/vuls/id/686084"
+    ],
+    "cvename": [
+      "CVE-2011-0413"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-01-26",
+    "entry": "2011-01-28"
+  }
+}

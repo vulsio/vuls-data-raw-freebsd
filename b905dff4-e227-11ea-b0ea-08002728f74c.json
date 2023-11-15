@@ -1,0 +1,34 @@
+{
+  "vid": "b905dff4-e227-11ea-b0ea-08002728f74c",
+  "topic": "curl -- expired pointer dereference vulnerability",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.72.0",
+          "ge": "7.29.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>curl security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2020-8231: wrong connect-only connection</p>\n\t  <p>An application that performs multiple requests with libcurl's multi API\n\t    and sets the CURLOPT_CONNECT_ONLY option, might in rare circumstances\n\t    experience that when subsequently using the setup connect-only transfer,\n\t    libcurl will pick and use the wrong connection - and instead pick\n\t    another one the application has created since then.</p>\n\t  <p>CURLOPT_CONNECT_ONLY is the option to tell libcurl to not perform an\n\t    actual transfer, only connect. When that operation is completed, libcurl\n\t    remembers which connection it used for that transfer and \"easy handle\".\n\t    It remembers the connection using a pointer to the internal connectdata\n\t    struct in memory.</p>\n\t  <p>If more transfers are then done with the same multi handle before the\n\t    connect-only connection is used, leading to the initial connect-only\n\t    connection to get closed (for example due to idle time-out) while also\n\t    new transfers (and connections) are setup, such a new connection might\n\t    end up getting the exact same memory address as the now closed\n\t    connect-only connection.</p>\n\t  <p>If after those operations, the application then wants to use the\n\t    original transfer's connect-only setup to for example use\n\t    curl_easy_send() to send raw data over that connection, libcurl could\n\t    erroneously find an existing connection still being alive at the address\n\t    it remembered since before even though this is now a new and different\n\t    connection.</p>\n\t  <p>The application could then accidentally send data over that connection\n\t    which wasn't at all intended for that recipient, entirely unknowingly.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.haxx.se/docs/security.html",
+      "https://curl.haxx.se/docs/CVE-2020-8231.html"
+    ],
+    "cvename": [
+      "CVE-2020-8231"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-08-19",
+    "entry": "2020-08-19"
+  }
+}

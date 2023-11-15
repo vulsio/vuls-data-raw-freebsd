@@ -1,0 +1,33 @@
+{
+  "vid": "3d1372e1-7822-4fd8-b56e-5ee832afbd96",
+  "topic": "wolfssl -- DDoS amplification in DTLS",
+  "affects": [
+    {
+      "name": [
+        "wolfssl"
+      ],
+      "range": [
+        {
+          "lt": "3.6.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n  <p>Sebastian Ramacher identified an error in wolfSSL's implementation\n    of the server side of the DTLS handshake, which could be abused\n    for DDoS amplification or a DoS on the DTLS server itself.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.wolfssl.com/wolfSSL/Blog/Entries/2015/9/17_Two_Vulnerabilities_Recently_Found%2C_An_Attack_on_RSA_using_CRT_and_DoS_Vulnerability_With_DTLS.html",
+      "https://github.com/IAIK/wolfSSL-DoS"
+    ],
+    "cvename": [
+      "CVE-2015-6925"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-18",
+    "entry": "2016-01-05"
+  }
+}

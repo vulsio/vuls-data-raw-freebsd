@@ -1,0 +1,46 @@
+{
+  "vid": "753f8185-5ba9-42a4-be02-3f55ee580093",
+  "topic": "phpMyAdmin -- XSS attack in database search",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.3.8.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "phpMyAdmin211"
+      ],
+      "range": [
+        {
+          "lt": "2.11.11.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpMyAdmin team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2010-8.php\">\n\t  <p>It was possible to conduct a XSS attack using spoofed request on the\n\t    db search script.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2010-8.php"
+    ],
+    "cvename": [
+      "CVE-2010-4329"
+    ],
+    "freebsd_pr": [
+      "ports/152685",
+      "ports/152686"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-11-29",
+    "entry": "2010-11-30"
+  }
+}

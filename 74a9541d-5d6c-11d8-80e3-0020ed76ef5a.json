@@ -1,0 +1,47 @@
+{
+  "vid": "74a9541d-5d6c-11d8-80e3-0020ed76ef5a",
+  "topic": "clamav remote denial-of-service",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.65_7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>clamav will exit when a programming\n\t  assertion is not met.  A malformed uuencoded message can\n\t  trigger this assertion, allowing an attacker to trivially\n\t  crash clamd or other components of clamav.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.osvdb.org/3894",
+      "http://secunia.com/advisories/10826",
+      "http://xforce.iss.net/xforce/xfdb/15077"
+    ],
+    "cvename": [
+      "CVE-2004-0270"
+    ],
+    "freebsd_pr": [
+      "ports/62586"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.securityfocus.com/archive/1/353186",
+        "msgid": "40279811.9050407@fillmore-labs.com"
+      }
+    ],
+    "bid": [
+      "9610"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-02-09",
+    "entry": "2004-02-12",
+    "modified": "2004-06-27"
+  }
+}

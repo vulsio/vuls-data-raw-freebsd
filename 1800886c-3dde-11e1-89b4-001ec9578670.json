@@ -1,0 +1,32 @@
+{
+  "vid": "1800886c-3dde-11e1-89b4-001ec9578670",
+  "topic": "isc-dhcp-server -- DoS in DHCPv6",
+  "affects": [
+    {
+      "name": [
+        "isc-dhcp42-server"
+      ],
+      "range": [
+        {
+          "lt": "4.2.3_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://www.isc.org/software/dhcp/advisories/cve-2011-4868\">\n\t  <p>Due to improper handling of a DHCPv6 lease structure, ISC DHCP\n\t    servers that are serving IPv6 address pools AND using Dynamic\n\t    DNS can encounter a segmentation fault error while updating lease\n\t    status under certain conditions.</p>\n\t  <p>The potential exists for this condition to be intentionally\n\t    triggered, resulting in effective denial of service to\n\t    clients expecting service from the affected server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.isc.org/software/dhcp/advisories/cve-2011-4868"
+    ],
+    "cvename": [
+      "CVE-2011-4868"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-01-13",
+    "entry": "2012-01-13"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "vid": "3bd3c9f8-41ee-11ec-9bac-589cfc007716",
+  "topic": "puppet -- Unsafe HTTP Redirect",
+  "affects": [
+    {
+      "name": [
+        "puppet6"
+      ],
+      "range": [
+        {
+          "lt": "6.25.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "puppet7"
+      ],
+      "range": [
+        {
+          "lt": "7.12.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "puppetserver6"
+      ],
+      "range": [
+        {
+          "lt": "6.17.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "puppetserver7"
+      ],
+      "range": [
+        {
+          "lt": "7.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Puppet reports:</p>\n\t<blockquote cite=\"https://puppet.com/security/cve/cve-2021-27023\">\n\t  <p>A flaw was discovered in Puppet Agent and Puppet Server that may result in a leak of HTTP credentials when following HTTP redirects to a different host. This is similar to CVE-2018-1000007.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://puppet.com/security/cve/cve-2021-27023"
+    ],
+    "cvename": [
+      "CVE-2021-27023"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-11-09",
+    "entry": "2021-11-10"
+  }
+}

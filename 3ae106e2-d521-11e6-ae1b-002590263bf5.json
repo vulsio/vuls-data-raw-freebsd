@@ -1,0 +1,59 @@
+{
+  "vid": "3ae106e2-d521-11e6-ae1b-002590263bf5",
+  "topic": "tomcat -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "tomcat"
+      ],
+      "range": [
+        {
+          "lt": "6.0.47"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat7"
+      ],
+      "range": [
+        {
+          "lt": "7.0.72"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat8"
+      ],
+      "range": [
+        {
+          "lt": "8.0.37"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-8.html#Fixed_in_Apache_Tomcat_8.5.5_and_8.0.37\">\n\t  <p>Low: Unrestricted Access to Global Resources CVE-2016-6797</p>\n\t  <p>Low: Security Manager Bypass CVE-2016-6796</p>\n\t  <p>Low: System Property Disclosure CVE-2016-6794</p>\n\t  <p>Low: Security Manager Bypass CVE-2016-5018</p>\n\t  <p>Low: Timing Attack CVE-2016-0762</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.47",
+      "http://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.72",
+      "http://tomcat.apache.org/security-8.html#Fixed_in_Apache_Tomcat_8.5.5_and_8.0.37"
+    ],
+    "cvename": [
+      "CVE-2016-6797",
+      "CVE-2016-6796",
+      "CVE-2016-6794",
+      "CVE-2016-5018",
+      "CVE-2016-0762"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-10-27",
+    "entry": "2017-01-07",
+    "modified": "2017-03-18"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "vid": "5e135178-8aeb-11e4-801f-0022156e8794",
+  "topic": "wordpress -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "3.7.5,1"
+        },
+        {
+          "lt": "3.8.5,1",
+          "ge": "3.8,1"
+        },
+        {
+          "lt": "3.9.3,1",
+          "ge": "3.9,1"
+        },
+        {
+          "lt": "4.0.1,1",
+          "ge": "4.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zh-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "3.7.5"
+        },
+        {
+          "lt": "3.8.5",
+          "ge": "3.8"
+        },
+        {
+          "lt": "3.9.3",
+          "ge": "3.9"
+        },
+        {
+          "lt": "4.0.1",
+          "ge": "4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "3.7.5"
+        },
+        {
+          "lt": "3.8.5",
+          "ge": "3.8"
+        },
+        {
+          "lt": "3.9.3",
+          "ge": "3.9"
+        },
+        {
+          "lt": "4.0.1",
+          "ge": "4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ja-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "3.7.5"
+        },
+        {
+          "lt": "3.8.5",
+          "ge": "3.8"
+        },
+        {
+          "lt": "3.9.3",
+          "ge": "3.9"
+        },
+        {
+          "lt": "4.0.1",
+          "ge": "4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ru-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "3.7.5"
+        },
+        {
+          "lt": "3.8.5",
+          "ge": "3.8"
+        },
+        {
+          "lt": "3.9.3",
+          "ge": "3.9"
+        },
+        {
+          "lt": "4.0.1",
+          "ge": "4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9039\">\n\t  <p>wp-login.php in WordPress before 3.7.5, 3.8.x before\n\t    3.8.5, 3.9.x before 3.9.3, and 4.x before 4.0.1 might allow\n\t    remote attackers to reset passwords by leveraging access to\n\t    an e-mail account that received a password-reset message.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9038\">\n\t  <p>wp-includes/http.php in WordPress before 3.7.5, 3.8.x\n\t    before 3.8.5, 3.9.x before 3.9.3, and 4.x before 4.0.1\n\t    allows remote attackers to conduct server-side request\n\t    forgery (SSRF) attacks by referring to a 127.0.0.0/8\n\t    resource.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9037\">\n\t  <p>WordPress before 3.7.5, 3.8.x before 3.8.5, 3.9.x before\n\t    3.9.3, and 4.x before 4.0.1 might allow remote attackers to\n\t    obtain access to an account idle since 2008 by leveraging an\n\t    improper PHP dynamic type comparison for an MD5 hash.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9036\">\n\t  <p>Cross-site scripting (XSS) vulnerability in WordPress\n\t    before 3.7.5, 3.8.x before 3.8.5, 3.9.x before 3.9.3, and\n\t    4.x before 4.0.1 allows remote attackers to inject arbitrary\n\t    web script or HTML via a crafted Cascading Style Sheets\n\t    (CSS) token sequence in a post.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9035\">\n\t  <p>Cross-site scripting (XSS) vulnerability in Press This in\n\t    WordPress before 3.7.5, 3.8.x before 3.8.5, 3.9.x before\n\t    3.9.3, and 4.x before 4.0.1 allows remote attackers to\n\t    inject arbitrary web script or HTML via unspecified\n\t    vectors</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9034\">\n\t  <p>wp-includes/class-phpass.php in WordPress before 3.7.5,\n\t    3.8.x before 3.8.5, 3.9.x before 3.9.3, and 4.x before 4.0.1\n\t    allows remote attackers to cause a denial of service (CPU\n\t    consumption) via a long password that is improperly handled\n\t    during hashing, a similar issue to CVE-2014-9016.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9033\">\n\t  <p>Cross-site request forgery (CSRF) vulnerability in\n\t    wp-login.php in WordPress 3.7.4, 3.8.4, 3.9.2, and 4.0\n\t    allows remote attackers to hijack the authentication of\n\t    arbitrary users for requests that reset passwords.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-9033",
+      "CVE-2014-9034",
+      "CVE-2014-9035",
+      "CVE-2014-9036",
+      "CVE-2014-9037",
+      "CVE-2014-9038",
+      "CVE-2014-9039"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-25",
+    "entry": "2015-01-05"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "vid": "b971d2a6-1670-11da-978e-0001020eed82",
+  "topic": "pcre -- regular expression buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "pcre",
+        "pcre-utf8"
+      ],
+      "range": [
+        {
+          "lt": "6.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The pcre library is vulnerable to a buffer overflow\n\t  vulnerability due to insufficient validation of quantifier\n\t  values.  This could lead execution of arbitrary code with\n\t  the permissions of the program using pcre by way of a\n\t  specially crated regular expression.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.pcre.org/changelog.txt"
+    ],
+    "cvename": [
+      "CVE-2005-2491"
+    ],
+    "bid": [
+      "14620"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-08-01",
+    "entry": "2005-08-26"
+  }
+}

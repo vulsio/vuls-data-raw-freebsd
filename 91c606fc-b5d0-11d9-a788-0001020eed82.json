@@ -1,0 +1,54 @@
+{
+  "vid": "91c606fc-b5d0-11d9-a788-0001020eed82",
+  "topic": "mplayer & libxine -- MMS and Real RTSP buffer overflow vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mplayer",
+        "mplayer-gtk",
+        "mplayer-gtk2",
+        "mplayer-esound",
+        "mplayer-gtk-esound",
+        "mplayer-gtk2-esound"
+      ],
+      "range": [
+        {
+          "lt": "0.99.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1",
+          "ge": "0.9.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A xine security announcement reports:</p>\n\t<blockquote cite=\"http://xinehq.de/index.php/security/XSA-2004-8\">\n\t  <p>By a user receiving data from a malicious network\n\t    streaming server, an attacker can overrun a heap buffer,\n\t    which can, on some systems, lead to or help in executing\n\t    attacker-chosen malicious code with the permissions of the\n\t    user running a xine-lib based media application.</p>\n\t  <p>Both the MMS and Real RTSP streaming client code made\n\t    some too-strong assumptions on the transferred\n\t    data. Several critical bounds checks were missing,\n\t    resulting in the possibility of heap overflows, should the\n\t    remote server not adhere to these assumptions. In the MMS\n\t    case, a remote server could present content with too many\n\t    individual streams; in the RTSP case, a remote server's\n\t    reply could have too many lines.</p>\n\t  <p>An attacker can set up a server delivering malicious data\n\t    to the users. This can be used to overflow a heap buffer,\n\t    which can, with certain implementations of heap\n\t    management, lead to attacker chosen data written to the\n\t    stack. This can cause attacker-chosen code being executed\n\t    with the permissions of the user running the\n\t    application. By tricking users to retrieve a stream, which\n\t    can be as easy as providing a link on a website, this\n\t    vulnerability can be exploited remotely.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mplayerhq.hu/homepage/design7/news.html#vuln10",
+      "http://www.mplayerhq.hu/homepage/design7/news.html#vuln11",
+      "http://xinehq.de/index.php/security/XSA-2004-8"
+    ],
+    "cvename": [
+      "CVE-2005-1195"
+    ],
+    "bid": [
+      "13270",
+      "13271"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-04-16",
+    "entry": "2005-04-25"
+  }
+}

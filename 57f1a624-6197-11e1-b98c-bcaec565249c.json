@@ -1,0 +1,33 @@
+{
+  "vid": "57f1a624-6197-11e1-b98c-bcaec565249c",
+  "topic": "libxml2 -- heap buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "libxml2",
+        "linux-f10-libxml2"
+      ],
+      "range": [
+        {
+          "lt": "2.7.8_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google chrome team reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.com/2012/01/stable-channel-update.html\">\n\t  <p>Heap-based buffer overflow in libxml2, allows remote attackers\n\t    to cause a denial of service or possibly have unspecified other\n\t    impact via unknown vectors.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://googlechromereleases.blogspot.com/2012/01/stable-channel-update.html"
+    ],
+    "cvename": [
+      "CVE-2011-3919"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-01-05",
+    "entry": "2012-02-27"
+  }
+}

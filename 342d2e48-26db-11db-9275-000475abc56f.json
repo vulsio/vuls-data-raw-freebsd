@@ -1,0 +1,43 @@
+{
+  "vid": "342d2e48-26db-11db-9275-000475abc56f",
+  "topic": "clamav -- heap overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.88.4",
+          "ge": "0.88.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "clamav-devel"
+      ],
+      "range": [
+        {
+          "lt": "20060808"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Clamav team reports:</p>\n\t<blockquote cite=\"http://www.clamav.net/security/0.88.4.html\">\n\t  <p>A heap overflow vulnerability was discovered in libclamav\n\t    which could cause a denial of service or allow the\n\t    execution of arbitrary code.</p>\n\t  <p>The problem is specifically located in the PE file rebuild\n\t    function used by the UPX unpacker.</p>\n\t  <p>Relevant code from libclamav/upx.c:</p>\n\t  <p>\n\t    memcpy(dst, newbuf, foffset);\n\t    *dsize = foffset;\n\t    free(newbuf);\n\n\t    cli_dbgmsg(\"UPX: PE structure rebuilt from compressed file\\n\");\n\t    return 1;</p>\n\t  <p>Due to improper validation it is possible to overflow the above\n\t    memcpy() beyond the allocated memory block.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.clamav.net/security/0.88.4.html"
+    ],
+    "cvename": [
+      "CVE-2006-4018"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-08-07",
+    "entry": "2006-08-08"
+  }
+}

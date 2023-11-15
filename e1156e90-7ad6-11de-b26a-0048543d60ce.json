@@ -1,0 +1,39 @@
+{
+  "vid": "e1156e90-7ad6-11de-b26a-0048543d60ce",
+  "topic": "squid -- several remote denial of service vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "3.0.17",
+          "ge": "3.0.1"
+        },
+        {
+          "lt": "3.1.0.12",
+          "ge": "3.1.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Squid security advisory 2009:2 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2009_2.txt\">\n\t  <p>Due to incorrect buffer limits and related bound checks Squid\n\t    is vulnerable to a denial of service attack when processing\n\t    specially crafted requests or responses.</p>\n\t  <p>Due to incorrect data validation Squid is vulnerable to a\n\t    denial of service attack when processing specially crafted\n\t    responses.</p>\n\t  <p>These problems allow any trusted client or external server to\n\t    perform a denial of service attack on the Squid service.</p>\n\t</blockquote>\n\t<p>Squid-2.x releases are not affected.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Advisories/SQUID-2009_2.txt"
+    ],
+    "cvename": [
+      "CVE-2009-2621",
+      "CVE-2009-2622"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-07-27",
+    "entry": "2009-07-27",
+    "modified": "2009-08-06"
+  }
+}

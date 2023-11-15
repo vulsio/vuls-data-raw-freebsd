@@ -1,0 +1,42 @@
+{
+  "vid": "2af10639-4299-11ea-aab1-98fa9bfec35a",
+  "topic": "pkg -- vulnerability in libfetch",
+  "affects": [
+    {
+      "name": [
+        "pkg"
+      ],
+      "range": [
+        {
+          "lt": "1.12.0_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "pkg-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.12.99_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A programming error allows an attacker who can specify a URL with a username\n\t   and/or password components to overflow libfetch(3) buffers.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-7450"
+    ],
+    "freebsd_sa": [
+      "SA-20:01.libfetch"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-28",
+    "entry": "2020-01-29"
+  }
+}

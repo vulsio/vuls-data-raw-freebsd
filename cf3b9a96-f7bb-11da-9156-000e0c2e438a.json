@@ -1,0 +1,57 @@
+{
+  "vid": "cf3b9a96-f7bb-11da-9156-000e0c2e438a",
+  "topic": "smbfs -- chroot escape",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "4.10_24",
+          "ge": "4.10"
+        },
+        {
+          "lt": "4.11_18",
+          "ge": "4.11"
+        },
+        {
+          "lt": "5.3_30",
+          "ge": "5.3"
+        },
+        {
+          "lt": "5.4_15",
+          "ge": "5.4"
+        },
+        {
+          "lt": "5.5_1",
+          "ge": "5.5"
+        },
+        {
+          "lt": "6.0_8",
+          "ge": "6.0"
+        },
+        {
+          "lt": "6.1_1",
+          "ge": "6.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description</h1>\n\t<p>smbfs does not properly sanitize paths containing a backslash\n\t  character; in particular the directory name '..\\' is\n\t  interpreted as the parent directory by the SMB/CIFS server,\n\t  but smbfs handles it in the same manner as any other\n\t  directory.</p>\n\t<h1>Impact</h1>\n\t<p>When inside a chroot environment which resides on a smbfs\n\t  mounted file-system it is possible for an attacker to escape\n\t  out of this chroot to any other directory on the smbfs\n\t  mounted file-system.</p>\n\t<h1>Workaround</h1>\n\t<p>Mount the smbfs file-systems which need to be used with\n\t  chroot on top, in a way so the chroot directory is exactly on\n\t  the mount point and not a sub directory</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-2654"
+    ],
+    "freebsd_sa": [
+      "SA-06:16.smbfs"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-05-31",
+    "entry": "2006-06-09"
+  }
+}

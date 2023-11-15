@@ -1,0 +1,38 @@
+{
+  "vid": "1f922de0-3fe5-11d9-a9e7-0001020eed82",
+  "topic": "unarj -- directory traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "unarj"
+      ],
+      "range": [
+        {
+          "lt": "2.43_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>unarj has insufficient checks for filenames that contain\n\t  <q>..</q>.  This can allow an attacker to overwrite\n\t  arbitrary files with the permissions of the user running\n\t  unarj.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-1027"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=109748984030292",
+        "msgid": "200410102243.i9AMhA9F083398@mailserver2.hushmail.com"
+      }
+    ],
+    "bid": [
+      "11436"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-10-10",
+    "entry": "2004-11-26"
+  }
+}

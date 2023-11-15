@@ -1,0 +1,90 @@
+{
+  "vid": "92d44f83-a7bf-41cf-91ee-3d1b8ecf579f",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox",
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "46.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.43"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "45.1.0,1",
+          "ge": "39.0,1"
+        },
+        {
+          "lt": "38.8.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul",
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "45.1.0",
+          "ge": "39.0"
+        },
+        {
+          "lt": "38.8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/known-vulnerabilities/firefox/#firefox46\">\n\t<p>MFSA 2016-39 Miscellaneous memory safety hazards (rv:46.0 /\n\t  rv:45.1 / rv:38.8)</p>\n\t<p>MFSA 2016-42 Use-after-free and buffer overflow\n\t  in Service Workers</p>\n\t<p>MFSA 2016-44 Buffer overflow in libstagefright with\n\t  CENC offsets</p>\n\t<p>MFSA 2016-45 CSP not applied to pages sent with\n\t  multipart/x-mixed-replace</p>\n\t<p>MFSA 2016-46 Elevation of privilege with\n\t  chrome.tabs.update API in web extensions</p>\n\t<p>MFSA 2016-47 Write to invalid HashMap entry through\n\t  JavaScript.watch()</p>\n\t<p>MFSA 2016-48 Firefox Health Reports could accept events\n\t  from untrusted domains</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2016-39/",
+      "https://www.mozilla.org/security/advisories/mfsa2016-42/",
+      "https://www.mozilla.org/security/advisories/mfsa2016-44/",
+      "https://www.mozilla.org/security/advisories/mfsa2016-45/",
+      "https://www.mozilla.org/security/advisories/mfsa2016-46/",
+      "https://www.mozilla.org/security/advisories/mfsa2016-47/",
+      "https://www.mozilla.org/security/advisories/mfsa2016-48/"
+    ],
+    "cvename": [
+      "CVE-2016-2804",
+      "CVE-2016-2805",
+      "CVE-2016-2806",
+      "CVE-2016-2807",
+      "CVE-2016-2808",
+      "CVE-2016-2811",
+      "CVE-2016-2812",
+      "CVE-2016-2814",
+      "CVE-2016-2816",
+      "CVE-2016-2817",
+      "CVE-2016-2820"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-04-26",
+    "entry": "2016-04-26"
+  }
+}

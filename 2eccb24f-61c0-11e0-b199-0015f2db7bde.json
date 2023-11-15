@@ -1,0 +1,32 @@
+{
+  "vid": "2eccb24f-61c0-11e0-b199-0015f2db7bde",
+  "topic": "xrdb -- root hole via rogue hostname",
+  "affects": [
+    {
+      "name": [
+        "xrdb"
+      ],
+      "range": [
+        {
+          "lt": "1.0.6_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matthias Hopf reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/xorg-announce/2011-April/001636.html\">\n\t  <p>By crafting hostnames with shell escape characters, arbitrary\n\t    commands can be executed in a root environment when a display\n\t    manager reads in the resource database via xrdb.</p>\n\t  <p>These specially crafted hostnames can occur in two environments:</p>\n\t  <p>Systems are affected are: systems set their hostname via DHCP,\n\t    and the used DHCP client allows setting of hostnames with illegal\n\t    characters. And systems that allow remote logins via xdmcp.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.freedesktop.org/archives/xorg-announce/2011-April/001636.html"
+    ],
+    "cvename": [
+      "CVE-2011-0465"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-04-05",
+    "entry": "2011-04-14"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "vid": "f3eec2b5-8cd8-11d9-8066-000a95bc6fae",
+  "topic": "postnuke -- SQL injection vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "postnuke"
+      ],
+      "range": [
+        {
+          "lt": "0.760"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Two separate SQL injection vulnerabilities have been\n\t   identified in the PostNuke PHP content management\n\t   system. An attacker can use this vulnerability to\n\t   potentially insert executable PHP code into the content\n\t   management system (to view all files within the PHP scope,\n\t   for instance). Various other SQL injection vulnerabilities\n\t   exist, which give attackers the ability to run SQL queries\n\t   on any tables within the database.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://news.postnuke.com/Article2669.html"
+    ],
+    "cvename": [
+      "CVE-2005-0617",
+      "CVE-2005-0615"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110962710805864"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110962819232255"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-28",
+    "entry": "2005-03-04"
+  }
+}

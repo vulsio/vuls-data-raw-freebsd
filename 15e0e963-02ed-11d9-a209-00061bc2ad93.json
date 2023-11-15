@@ -1,0 +1,34 @@
+{
+  "vid": "15e0e963-02ed-11d9-a209-00061bc2ad93",
+  "topic": "mpg123 buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "mpg123",
+        "mpg123-nas",
+        "mpg123-esound"
+      ],
+      "range": [
+        {
+          "le": "0.59r"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The mpg123 software version 0.59r contains a\n\t  buffer overflow vulnerability which may permit\n\t  the execution of arbitrary code as the owner of\n\t  the mpg123 process.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.alighieri.org/advisories/advisory-mpg123.txt"
+    ],
+    "cvename": [
+      "CVE-2004-0805"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-08-16",
+    "entry": "2004-09-14"
+  }
+}

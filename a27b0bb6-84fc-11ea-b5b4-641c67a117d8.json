@@ -1,0 +1,77 @@
+{
+  "vid": "a27b0bb6-84fc-11ea-b5b4-641c67a117d8",
+  "topic": "Python -- Regular Expression DoS attack against client",
+  "affects": [
+    {
+      "name": [
+        "python38"
+      ],
+      "range": [
+        {
+          "lt": "3.8.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python37"
+      ],
+      "range": [
+        {
+          "le": "3.7.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python36"
+      ],
+      "range": [
+        {
+          "lt": "3.6.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python35"
+      ],
+      "range": [
+        {
+          "le": "3.5.9_4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ben Caller and Matt Schwager reports:</p>\n\t<blockquote cite=\"https://python-security.readthedocs.io/vuln/urllib-basic-auth-regex.html\">\n\t  <p>Python 2.7 through 2.7.17, 3.5 through 3.5.9, 3.6 through 3.6.10, 3.7\n\t    through 3.7.6, and 3.8 through 3.8.1 allows an HTTP server to conduct\n\t    Regular Expression Denial of Service (ReDoS) attacks against a client\n\t    because of urllib.request.AbstractBasicAuthHandler catastrophic\n\t    backtracking.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://python-security.readthedocs.io/vuln/urllib-basic-auth-regex.html",
+      "https://bugs.python.org/issue39503"
+    ],
+    "cvename": [
+      "CVE-2020-8492"
+    ],
+    "freebsd_pr": [
+      "ports/245819"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-11-17",
+    "entry": "2020-04-23",
+    "modified": "2020-06-13"
+  }
+}

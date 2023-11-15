@@ -1,0 +1,56 @@
+{
+  "vid": "cda566a0-2df0-4eb0-b70e-ed7a6fb0ab3c",
+  "topic": "puppet27 and puppet -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "puppet"
+      ],
+      "range": [
+        {
+          "lt": "3.1.1",
+          "ge": "3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "puppet27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.21",
+          "ge": "2.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Moses Mendoza reports:</p>\n\t<blockquote cite=\"https://puppetlabs.com/blog/security-updates-new-releases-of-puppet-and-puppet-enterprise/\">\n\t  <p>A vulnerability found in Puppet could allow an authenticated client\n\t     to cause the master to execute arbitrary code while responding to a\n\t     catalog request. Specifically, in order to exploit the\n\t     vulnerability, the puppet master must be made to invoke the\n\t     'template' or 'inline_template' functions during catalog compilation.\n\t  </p>\n\t  <p>A vulnerability found in Puppet could allow an authenticated client\n\t     to connect to a puppet master and perform unauthorized actions.\n\t     Specifically, given a valid certificate and private key, an agent\n\t     could retrieve catalogs from the master that it is not authorized\n\t     to access or it could poison the puppet master's caches for any\n\t     puppet-generated data that supports caching such as catalogs,\n\t     nodes, facts, and resources. The extent and severity of this\n\t     vulnerability varies depending on the specific configuration of the\n\t     master: for example, whether it is using storeconfigs or not, which\n\t     version, whether it has access to the cache or not, etc.\n\t  </p>\n\t  <p>A vulnerability has been found in Puppet which could allow\n\t     authenticated clients to execute arbitrary code on agents that have\n\t     been configured to accept kick connections. This vulnerability is\n\t     not present in the default configuration of puppet agents, but if\n\t     they have been configured to listen for incoming connections\n\t     ('listen=true'), and the agent's auth.conf has been configured to\n\t     allow access to the `run` REST endpoint, then a client could\n\t     construct an HTTP request which could execute arbitrary code. The\n\t     severity of this issue is exacerbated by the fact that puppet\n\t     agents typically run as root.\n\t  </p>\n\t  <p>A vulnerability has been found in Puppet that could allow a client\n\t     negotiating a connection to a master to downgrade the master's\n\t     SSL protocol to SSLv2. This protocol has been found to contain\n\t     design weaknesses. This issue only affects systems running older\n\t     versions (pre 1.0.0) of openSSL. Newer versions explicitly disable\n\t     SSLv2.\n\t  </p>\n\t  <p>A vulnerability found in Puppet could allow unauthenticated clients\n\t     to send requests to the puppet master which would cause it to load\n\t     code unsafely. While there are no reported exploits, this\n\t     vulnerability could cause issues like those described in Rails\n\t     CVE-2013-0156. This vulnerability only affects puppet masters\n\t     running Ruby 1.9.3 and higher.\n\t  </p>\n\t  <p>This vulnerability affects puppet masters 0.25.0 and above. By\n\t     default, auth.conf allows any authenticated node to submit a report\n\t     for any other node. This can cause issues with compliance. The\n\t     defaults in auth.conf have been changed.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://puppetlabs.com/security/cve/cve-2013-1640/",
+      "https://puppetlabs.com/security/cve/cve-2013-1652/",
+      "https://puppetlabs.com/security/cve/cve-2013-1653/",
+      "https://puppetlabs.com/security/cve/cve-2013-1654/",
+      "https://puppetlabs.com/security/cve/cve-2013-1655/",
+      "https://puppetlabs.com/security/cve/cve-2013-2275/",
+      "https://groups.google.com/forum/?fromgroups=#!topic/puppet-announce/f_gybceSV6E",
+      "https://groups.google.com/forum/?fromgroups=#!topic/puppet-announce/kgDyaPhHniw"
+    ],
+    "cvename": [
+      "CVE-2013-1640",
+      "CVE-2013-1652",
+      "CVE-2013-1653",
+      "CVE-2013-1654",
+      "CVE-2013-1655",
+      "CVE-2013-2275"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-03-13",
+    "entry": "2013-03-13"
+  }
+}

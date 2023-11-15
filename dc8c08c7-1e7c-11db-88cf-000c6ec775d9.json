@@ -1,0 +1,137 @@
+{
+  "vid": "dc8c08c7-1e7c-11db-88cf-000c6ec775d9",
+  "topic": "apache -- mod_rewrite buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "lt": "1.3.36_1",
+          "ge": "1.3.28"
+        },
+        {
+          "lt": "2.0.58_2",
+          "ge": "2.0.46"
+        },
+        {
+          "lt": "2.2.2_1",
+          "ge": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+mod_perl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.36_1",
+          "ge": "1.3.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+ipv6"
+      ],
+      "range": [
+        {
+          "lt": "1.3.37",
+          "ge": "1.3.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache_fp"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ru-apache"
+      ],
+      "range": [
+        {
+          "lt": "1.3.37+30.23",
+          "ge": "1.3.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ru-apache+mod_ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.34.1.57_2",
+          "ge": "1.3.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.34.1.57_2",
+          "ge": "1.3.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+mod_ssl",
+        "apache+mod_ssl+ipv6",
+        "apache+mod_ssl+mod_accel",
+        "apache+mod_ssl+mod_accel+ipv6",
+        "apache+mod_ssl+mod_accel+mod_deflate",
+        "apache+mod_ssl+mod_accel+mod_deflate+ipv6",
+        "apache+mod_ssl+mod_deflate",
+        "apache+mod_ssl+mod_deflate+ipv6",
+        "apache+mod_ssl+mod_snmp",
+        "apache+mod_ssl+mod_snmp+mod_accel",
+        "apache+mod_ssl+mod_snmp+mod_accel+ipv6",
+        "apache+mod_ssl+mod_snmp+mod_deflate",
+        "apache+mod_ssl+mod_snmp+mod_deflate+ipv6",
+        "apache+mod_ssl+mod_snmp+mod_accel+mod_deflate+ipv6"
+      ],
+      "range": [
+        {
+          "lt": "1.3.36+2.8.27_1",
+          "ge": "1.3.28"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation and The Apache HTTP Server\n\t  Project reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=apache-httpd-announce&amp;m=115409818602955\">\n\t  <p>An off-by-one flaw exists in the Rewrite module,\n\t    mod_rewrite, as shipped with Apache 1.3 since 1.3.28, 2.0\n\t    since 2.0.46, and 2.2 since 2.2.0.</p>\n\t  <p>Depending on the manner in which Apache HTTP Server was\n\t    compiled, this software defect may result in a\n\t    vulnerability which, in combination with certain types of\n\t    Rewrite rules in the web server configuration files, could\n\t    be triggered remotely. For vulnerable builds, the nature\n\t    of the vulnerability can be denial of service (crashing of\n\t    web server processes) or potentially allow arbitrary code\n\t    execution. This issue has been rated as having important\n\t    security impact by the Apache HTTP Server Security Team.</p>\n\t  <p>This flaw does not affect a default installation of\n\t    Apache HTTP Server.  Users who do not use, or have not\n\t    enabled, the Rewrite module mod_rewrite are not affected\n\t    by this issue. This issue only affects installations using\n\t    a Rewrite rule with the following characteristics:</p>\n\t  <ul>\n\t    <li>The RewriteRule allows the attacker to control the\n\t      initial part of the rewritten URL (for example if the\n\t      substitution URL starts with $1)</li>\n\t    <li>The RewriteRule flags do NOT include any of the\n\t      following flags: Forbidden (F), Gone (G), or NoEscape\n\t      (NE).</li>\n\t  </ul>\n\t  <p>Please note that ability to exploit this issue is\n\t    dependent on the stack layout for a particular compiled\n\t    version of mod_rewrite. If the compiler used to compile\n\t    Apache HTTP Server has added padding to the stack\n\t    immediately after the buffer being overwritten, it will\n\t    not be possible to exploit this issue, and Apache HTTP\n\t    Server will continue operating normally.</p>\n\t  <p>The Apache HTTP Server project thanks Mark Dowd of McAfee\n\t    Avert Labs for the responsible reporting of this\n\t    vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-3747"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=apache-httpd-announce&m=115409818602955",
+        "msgid": "44CA22D9.6020200@apache.org"
+      }
+    ],
+    "cert_vu": [
+      "395412"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-07-27",
+    "entry": "2006-07-28",
+    "modified": "2006-11-01"
+  }
+}

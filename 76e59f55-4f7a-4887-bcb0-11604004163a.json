@@ -1,0 +1,44 @@
+{
+  "vid": "76e59f55-4f7a-4887-bcb0-11604004163a",
+  "topic": "libxml2 -- Multiple Issues",
+  "affects": [
+    {
+      "name": [
+        "libxml2"
+      ],
+      "range": [
+        {
+          "le": "2.9.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>libxml2 developers report:</p>\n\t<p>The htmlParseTryOrFinish function in HTMLparser.c in libxml2 2.9.4 allows attackers to cause a denial of service (buffer over-read) or information disclosure.</p>\n\t<p>A buffer overflow was discovered in libxml2 20904-GITv2.9.4-16-g0741801. The function xmlSnprintfElementContent in valid.c is supposed to recursively dump the element content definition into a char buffer 'buf' of size 'size'. The variable len is assigned strlen(buf). If the content-&gt;type is XML_ELEMENT_CONTENT_ELEMENT, then (i) the content-&gt;prefix is appended to buf (if it actually fits) whereupon (ii) content-&gt;name is written to the buffer. However, the check for whether the content-&gt;name actually fits also uses 'len' rather than the updated buffer length strlen(buf). This allows us to write about \"size\" many bytes beyond the allocated memory. This vulnerability causes programs that use libxml2, such as PHP, to crash.</p>\n\t<p>libxml2 20904-GITv2.9.4-16-g0741801 is vulnerable to a stack-based buffer overflow. The function xmlSnprintfElementContent in valid.c is supposed to recursively dump the element content definition into a char buffer 'buf' of size 'size'. At the end of the routine, the function may strcat two more characters without checking whether the current strlen(buf) + 2 &lt; size. This vulnerability causes programs that use libxml2, such as PHP, to crash.</p>\n\t<p>libxml2 20904-GITv2.9.4-16-g0741801 is vulnerable to a heap-based buffer over-read in the xmlDictComputeFastKey function in dict.c. This vulnerability causes programs that use libxml2, such as PHP, to crash. This vulnerability exists because of an incomplete fix for libxml2 Bug 759398.</p>\n\t<p>libxml2 20904-GITv2.9.4-16-g0741801 is vulnerable to a heap-based buffer over-read in the xmlDictAddString function in dict.c. This vulnerability causes programs that use libxml2, such as PHP, to crash. This vulnerability exists because of an incomplete fix for CVE-2016-1839.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.gnome.org/show_bug.cgi?id=775200",
+      "http://www.openwall.com/lists/oss-security/2017/05/15/1",
+      "http://www.securityfocus.com/bid/98599",
+      "http://www.openwall.com/lists/oss-security/2017/05/15/1",
+      "http://www.securityfocus.com/bid/98556",
+      "http://www.openwall.com/lists/oss-security/2017/05/15/1",
+      "http://www.securityfocus.com/bid/98601",
+      "http://www.openwall.com/lists/oss-security/2017/05/15/1",
+      "http://www.securityfocus.com/bid/98568"
+    ],
+    "cvename": [
+      "CVE-2017-8872",
+      "CVE-2017-9047",
+      "CVE-2017-9048",
+      "CVE-2017-9049",
+      "CVE-2017-9050"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-05-10",
+    "entry": "2017-12-13"
+  }
+}

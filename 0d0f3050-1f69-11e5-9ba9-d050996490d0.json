@@ -1,0 +1,41 @@
+{
+  "vid": "0d0f3050-1f69-11e5-9ba9-d050996490d0",
+  "topic": "ntp -- control message remote Denial of Service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ntp"
+      ],
+      "range": [
+        {
+          "lt": "4.2.8p3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ntp-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.3.25"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ntp.org reports:</p>\n\t<blockquote cite=\"http://support.ntp.org/bin/view/Main/SecurityNotice#June_2015_NTP_Security_Vulnerabi\">\n\t  <p>Under limited and specific circumstances an attacker can send a\n\t    crafted packet to cause a vulnerable ntpd instance to crash.\n\t    This requires each of the following to be true:</p>\n\t  <ul>\n\t    <li>ntpd set up to allow for remote configuration (not\n\t      allowed by default), and</li>\n\t    <li>knowledge of the configuration password, and</li>\n\t    <li>access to a computer entrusted to perform remote\n\t      configuration.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.ntp.org/show_bug.cgi?id=2853",
+      "https://www.kb.cert.org/vuls/id/668167",
+      "http://support.ntp.org/bin/view/Main/SecurityNotice#June_2015_NTP_Security_Vulnerabi"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-29",
+    "entry": "2015-06-30"
+  }
+}

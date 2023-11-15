@@ -1,0 +1,30 @@
+{
+  "vid": "68b29058-d348-11e7-b9fe-c13eb7bcbf4f",
+  "topic": "exim -- remote code execution, deny of service in BDAT",
+  "affects": [
+    {
+      "name": [
+        "exim"
+      ],
+      "range": [
+        {
+          "lt": "4.89_2",
+          "ge": "4.88"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Exim team reports:</p>\n\t<blockquote cite=\"https://bugs.exim.org/show_bug.cgi?id=2199\">\n\t  <p>The receive_msg function in receive.c in the SMTP daemon in Exim 4.88 and 4.89 allows remote attackers to execute arbitrary code or cause a denial of service (use-after-free) via vectors involving BDAT commands.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.exim.org/show_bug.cgi?id=2199"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-11-23",
+    "entry": "2017-11-27"
+  }
+}

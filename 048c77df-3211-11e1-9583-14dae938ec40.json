@@ -1,0 +1,29 @@
+{
+  "vid": "048c77df-3211-11e1-9583-14dae938ec40",
+  "topic": "zabbix-frontend -- multiple XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "zabbix-frontend"
+      ],
+      "range": [
+        {
+          "lt": "1.8.10,2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Martina Matari reports:</p>\n\t<blockquote cite=\"https://support.zabbix.com/browse/ZBX-4015\">\n\t  <p>These URLs (hostgroups.php, usergrps.php) are vulnerable to\n\t     persistent XSS attacks due to improper sanitation of gname\n\t     variable when creating user and host groups.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://support.zabbix.com/browse/ZBX-4015"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-08-04",
+    "entry": "2011-12-29"
+  }
+}

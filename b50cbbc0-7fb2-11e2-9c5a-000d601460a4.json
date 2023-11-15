@@ -1,0 +1,33 @@
+{
+  "vid": "b50cbbc0-7fb2-11e2-9c5a-000d601460a4",
+  "topic": "otrs -- XSS vulnerability in Internet Explorer could lead to remote code execution",
+  "affects": [
+    {
+      "name": [
+        "otrs"
+      ],
+      "range": [
+        {
+          "lt": "3.1.9",
+          "ge": "3.1.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OTRS Project reports:</p>\n\t<blockquote cite=\"http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2012-01\">\n\t  <p>This advisory covers vulnerabilities discovered in the OTRS core\n\t  system. Due to the XSS vulnerability in Internet Explorer an attacker\n\t  could send a specially prepared HTML email to OTRS which would cause\n\t  JavaScript code to be executed in your Internet Explorer while\n\t  displaying the email.</p>\n\t  <p>Affected by this vulnerability are all releases of OTRS 2.4.x up to\n\t  and including 2.4.12, 3.0.x up to and including 3.0.14 and 3.1.x up to\n\t  and including 3.1.8 in combination with Internet Explorer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2012-01"
+    ],
+    "cvename": [
+      "CVE-2012-2582"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-22",
+    "entry": "2013-02-25"
+  }
+}

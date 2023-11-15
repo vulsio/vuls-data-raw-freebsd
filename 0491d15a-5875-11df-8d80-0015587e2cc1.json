@@ -1,0 +1,36 @@
+{
+  "vid": "0491d15a-5875-11df-8d80-0015587e2cc1",
+  "topic": "lxr -- multiple XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "lxr"
+      ],
+      "range": [
+        {
+          "le": "0.9.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dan Rosenberg reports:</p>\n\t<blockquote cite=\"http://sourceforge.net/mailarchive/message.php?msg_name=E1NS2s4-0001PE-F2%403bkjzd1.ch3.sourceforge.com\">\n\t  <p>There are several cross-site scripting vulnerabilities\n\t    in LXR. These vulnerabilities could allow an attacker\n\t    to execute scripts in a user's browser, steal cookies\n\t    associated with vulnerable domains, redirect the user\n\t    to malicious websites, etc.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/38117",
+      "http://sourceforge.net/mailarchive/message.php?msg_name=E1NS2s4-0001PE-F2%403bkjzd1.ch3.sourceforge.com"
+    ],
+    "cvename": [
+      "CVE-2009-4497"
+    ],
+    "freebsd_pr": [
+      "ports/146337"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-01-05",
+    "entry": "2010-05-05"
+  }
+}

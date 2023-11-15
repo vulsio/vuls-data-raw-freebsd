@@ -1,0 +1,42 @@
+{
+  "vid": "57573136-920e-11e0-bdc9-001b2134ef46",
+  "topic": "linux-flashplugin -- cross-site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "linux-flashplugin"
+      ],
+      "range": [
+        {
+          "le": "9.0r289"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-f10-flashplugin"
+      ],
+      "range": [
+        {
+          "lt": "10.3r181.22"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Adobe Product Security Incident Response Team reports:</p>\n\t<blockquote cite=\"http://www.adobe.com/support/security/bulletins/apsb11-13.html\">\n\t  <p>An important vulnerability has been identified in Adobe\n\t    Flash Player 10.3.181.16 and earlier versions for Windows,\n\t    Macintosh, Linux and Solaris, and Adobe Flash Player\n\t    10.3.185.22 and earlier versions for Android.  This universal\n\t    cross-site scripting vulnerability (CVE-2011-2107) could be\n\t    used to take actions on a user's behalf on any website or\n\t    webmail provider, if the user visits a malicious website.\n\t    There are reports that this vulnerability is being exploited\n\t    in the wild in active targeted attacks designed to trick\n\t    the user into clicking on a malicious link delivered in an\n\t    email message.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.adobe.com/support/security/bulletins/apsb11-13.html"
+    ],
+    "cvename": [
+      "CVE-2011-2107"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-05-13",
+    "entry": "2011-06-08"
+  }
+}

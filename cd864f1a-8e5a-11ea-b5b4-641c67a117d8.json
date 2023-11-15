@@ -1,0 +1,36 @@
+{
+  "vid": "cd864f1a-8e5a-11ea-b5b4-641c67a117d8",
+  "topic": "cacti -- XSS exposure",
+  "affects": [
+    {
+      "name": [
+        "cacti"
+      ],
+      "range": [
+        {
+          "lt": "1.2.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cacti developer reports:</p>\n\t<blockquote cite=\"https://sourceforge.net/p/cacti/mailman/message/37000502/\">\n\t  <p>Lack of escaping of color items can lead to XSS exposure.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://sourceforge.net/p/cacti/mailman/message/37000502/",
+      "https://github.com/Cacti/cacti/blob/release/1.2.12/CHANGELOG"
+    ],
+    "cvename": [
+      "CVE-2020-7106"
+    ],
+    "freebsd_pr": [
+      "ports/246164"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-16",
+    "entry": "2020-05-04"
+  }
+}

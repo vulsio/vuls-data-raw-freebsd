@@ -1,0 +1,32 @@
+{
+  "vid": "d0034536-ff24-11e4-a072-d050996490d0",
+  "topic": "proftpd -- arbitrary code execution vulnerability with chroot",
+  "affects": [
+    {
+      "name": [
+        "proftpd"
+      ],
+      "range": [
+        {
+          "lt": "1.3.5_7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ProFTPd development team reports:</p>\n\t<blockquote cite=\"http://bugs.proftpd.org/show_bug.cgi?id=4169\">\n\t  <p>Vadim Melihow reported a critical issue with proftpd\n\t    installations that use the mod_copy module's SITE CPFR/SITE\n\t    CPTO commands; mod_copy allows these commands to be used by\n\t    *unauthenticated clients*.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.proftpd.org/show_bug.cgi?id=4169"
+    ],
+    "cvename": [
+      "CVE-2015-3306"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-15",
+    "entry": "2015-05-20"
+  }
+}

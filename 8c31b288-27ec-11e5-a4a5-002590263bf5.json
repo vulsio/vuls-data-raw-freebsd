@@ -1,0 +1,33 @@
+{
+  "vid": "8c31b288-27ec-11e5-a4a5-002590263bf5",
+  "topic": "xen-kernel -- vulnerability in the iret hypercall handler",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_3",
+          "ge": "3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-136.html\">\n\t  <p>A buggy loop in Xen's compat_iret() function iterates the wrong way\n\t    around a 32-bit index.  Any 32-bit PV guest kernel can trigger this\n\t    vulnerability by attempting a hypercall_iret with EFLAGS.VM set.</p>\n\t  <p>Given the use of __get/put_user(), and that the virtual addresses\n\t    in question are contained within the lower canonical half, the guest\n\t    cannot clobber any hypervisor data.  Instead, Xen will take up to\n\t    2^33 pagefaults, in sequence, effectively hanging the host.</p>\n\t  <p>Malicious guest administrators can cause a denial of service\n\t    affecting the whole system.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-136.html"
+    ],
+    "cvename": [
+      "CVE-2015-4164"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-11",
+    "entry": "2015-07-11"
+  }
+}

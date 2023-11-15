@@ -1,0 +1,45 @@
+{
+  "vid": "a7bfd423-484f-11d9-a9e7-0001020eed82",
+  "topic": "cscope -- symlink attack vulnerability",
+  "affects": [
+    {
+      "name": [
+        "cscope"
+      ],
+      "range": [
+        {
+          "lt": "15.5_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cscope is vulnerable to a symlink attack which could lead\n\t  to an attacker overwriting arbitrary files with the\n\t  permissions of the user running cscope.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://sourceforge.net/tracker/index.php?func=detail&aid=1062807&group_id=4664&atid=104664"
+    ],
+    "cvename": [
+      "CVE-2004-0996"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110133485519690",
+        "msgid": "20041124025903.9337.qmail@www.securityfocus.com"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110072752707293",
+        "msgid": "20041118012718.78b07d79.research@rexotec.com"
+      }
+    ],
+    "bid": [
+      "11697"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-04-03",
+    "entry": "2004-12-07"
+  }
+}

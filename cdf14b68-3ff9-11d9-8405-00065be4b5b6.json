@@ -1,0 +1,36 @@
+{
+  "vid": "cdf14b68-3ff9-11d9-8405-00065be4b5b6",
+  "topic": "Open DC Hub -- remote buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "opendchub"
+      ],
+      "range": [
+        {
+          "lt": "0.7.14_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Donato Ferrante reported an exploitable buffer overflow in\n\t  this software package. Any user that can login with 'admin'\n\t  privileges can abuse it, trough the $RedirectAll command,\n\t  to execute arbitrary code.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.gentoo.org/security/en/glsa/glsa-200411-37.xml"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110144606411674",
+        "msgid": "20041124155429.893852455E@chernobyl.investici.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-24",
+    "entry": "2004-11-27",
+    "modified": "2005-02-13"
+  }
+}

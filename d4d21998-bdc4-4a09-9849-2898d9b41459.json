@@ -1,0 +1,29 @@
+{
+  "vid": "d4d21998-bdc4-4a09-9849-2898d9b41459",
+  "topic": "zeek -- several vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "4.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v4.0.4\">\n\t  <p> Paths from log stream make it into system() unchecked,\n\t  potentially leading to commands being run on the system\n\t  unintentionally. This requires either bad scripting or a\n\t  malicious package to be installed, and is considered low\n\t  severity. </p>\n\t  <p> Fix potential unbounded state growth in the PIA\n\t  analyzer when receiving a connection with either a large\n\t  number of zero-length packets, or one which continues\n\t  ack-ing unseen segments. It is possible to run Zeek out\n\t  of memory in these instances and cause it to crash. Due\n\t  to the possibility of this happening with packets received\n\t  from the network, this is a potential DoS vulnerability.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/zeek/zeek/releases/tag/v4.0.4"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-08-26",
+    "entry": "2021-09-22"
+  }
+}

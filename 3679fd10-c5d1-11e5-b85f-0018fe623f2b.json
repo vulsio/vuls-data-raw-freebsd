@@ -1,0 +1,67 @@
+{
+  "vid": "3679fd10-c5d1-11e5-b85f-0018fe623f2b",
+  "topic": "openssl -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2_7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mingw32-openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2f",
+          "ge": "1.0.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.2_12",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_29",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_36",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20160128.txt\">\n\t  <ol>\n\t    <li>Historically OpenSSL only ever generated DH parameters based on \"safe\"\n\t      primes. More recently (in version 1.0.2) support was provided for\n\t      generating X9.42 style parameter files such as those required for RFC 5114\n\t      support. The primes used in such files may not be \"safe\". Where an\n\t      application is using DH configured with parameters based on primes that are\n\t      not \"safe\" then an attacker could use this fact to find a peer's private\n\t      DH exponent. This attack requires that the attacker complete multiple\n\t      handshakes in which the peer uses the same private DH exponent. For example\n\t      this could be used to discover a TLS server's private DH exponent if it's\n\t      reusing the private DH exponent or it's using a static DH ciphersuite.\n\t      OpenSSL provides the option SSL_OP_SINGLE_DH_USE for ephemeral DH (DHE) in\n\t      TLS. It is not on by default. If the option is not set then the server\n\t      reuses the same private DH exponent for the life of the server process and\n\t      would be vulnerable to this attack. It is believed that many popular\n\t      applications do set this option and would therefore not be at risk.\n\t      (CVE-2016-0701)</li>\n\t    <li>A malicious client can negotiate SSLv2 ciphers that have been disabled on\n\t      the server and complete SSLv2 handshakes even if all SSLv2 ciphers have\n\t      been disabled, provided that the SSLv2 protocol was not also disabled via\n\t      SSL_OP_NO_SSLv2.\n\t      (CVE-2015-3197)</li>\n\t  </ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20160128.txt"
+    ],
+    "cvename": [
+      "CVE-2016-0701",
+      "CVE-2015-3197"
+    ],
+    "freebsd_sa": [
+      "SA-16:11.openssl"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-22",
+    "entry": "2016-01-28",
+    "modified": "2016-08-09"
+  }
+}

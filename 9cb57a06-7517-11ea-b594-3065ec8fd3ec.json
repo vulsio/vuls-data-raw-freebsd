@@ -1,0 +1,34 @@
+{
+  "vid": "9cb57a06-7517-11ea-b594-3065ec8fd3ec",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "80.0.3987.162"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_31.html\">\n\t  <p>This update contains 8 security fixes.</p>\n\t  <ul>\n\t    <li>[1062247] High CVE-2020-6450: Use after free in WebAudio.\n\t      Reported by Man Yue Mo of Semmle Security Research Team on\n\t      2020-03-17</li>\n\t    <li>[1061018] High CVE-2020-6451: Use after free in WebAudio.\n\t      Reported by Man Yue Mo of Semmle Security Research Team on\n\t      2020-03-12</li>\n\t    <li>[1059764] High CVE-2020-6452: Heap buffer overflow in media\n\t      Reported by asnine on 2020-03-09</li>\n\t    <li>[1066247] Various fixes from internal audits, fuzzing and other\n\t      initiatives.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_31.html"
+    ],
+    "cvename": [
+      "CVE-2020-6450",
+      "CVE-2020-6451",
+      "CVE-2020-6452"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-03-31",
+    "entry": "2020-04-02"
+  }
+}

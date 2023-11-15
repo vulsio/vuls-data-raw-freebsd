@@ -1,0 +1,43 @@
+{
+  "vid": "7033b42d-ef09-11e5-b766-14dae9d210b8",
+  "topic": "pcre -- stack buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "pcre"
+      ],
+      "range": [
+        {
+          "lt": "8.38"
+        }
+      ]
+    },
+    {
+      "name": [
+        "pcre2"
+      ],
+      "range": [
+        {
+          "lt": "10.20_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Philip Hazel reports:</p>\n\t<blockquote cite=\"https://bugs.exim.org/show_bug.cgi?id=1791\">\n\t  <p>PCRE does not validate that handling the (*ACCEPT) verb\n\t    will occur within the bounds of the cworkspace stack buffer, leading to\n\t    a stack buffer overflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.exim.org/show_bug.cgi?id=1791"
+    ],
+    "cvename": [
+      "CVE-2016-3191"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-09",
+    "entry": "2016-03-21",
+    "modified": "2016-03-21"
+  }
+}

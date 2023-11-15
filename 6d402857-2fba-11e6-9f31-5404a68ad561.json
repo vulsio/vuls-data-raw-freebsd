@@ -1,0 +1,39 @@
+{
+  "vid": "6d402857-2fba-11e6-9f31-5404a68ad561",
+  "topic": "VLC -- Possibly remote code execution via crafted file",
+  "affects": [
+    {
+      "name": [
+        "vlc"
+      ],
+      "range": [
+        {
+          "lt": "2.2.4,4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "vlc-qt4"
+      ],
+      "range": [
+        {
+          "lt": "2.2.4,4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The VLC project reports:</p>\n\t<blockquote cite=\"https://www.videolan.org/developers/vlc-branch/NEWS\">\n\t  <p>Fix out-of-bound write in adpcm QT IMA codec (CVE-2016-5108)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-5108"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-25",
+    "entry": "2016-06-11"
+  }
+}

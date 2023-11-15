@@ -1,0 +1,80 @@
+{
+  "vid": "edf61c61-0f07-11d9-8393-000103ccf9d6",
+  "topic": "php -- strip_tags cross-site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mod_php4-twig",
+        "php4",
+        "php4-cgi",
+        "php4-cli",
+        "php4-dtc",
+        "php4-horde",
+        "php4-nms"
+      ],
+      "range": [
+        {
+          "le": "4.3.7_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_php4"
+      ],
+      "range": [
+        {
+          "le": "4.3.7_3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php5",
+        "php5-cgi",
+        "php5-cli"
+      ],
+      "range": [
+        {
+          "le": "5.0.0.r3_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_php5"
+      ],
+      "range": [
+        {
+          "le": "5.0.0.r3_2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stefan Esser of e-matters discovered that PHP's strip_tags()\n\t  function would ignore certain characters during parsing of tags,\n\t  allowing these tags to pass through. Select browsers could then\n\t  parse these tags, possibly allowing cross-site scripting attacks.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://security.e-matters.de/advisories/122004.html"
+    ],
+    "cvename": [
+      "CVE-2004-0595"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=108981589117423",
+        "msgid": "20040713225525.GB26865@e-matters.de"
+      }
+    ],
+    "bid": [
+      "10724"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-07-07",
+    "entry": "2004-09-27",
+    "modified": "2013-06-19"
+  }
+}

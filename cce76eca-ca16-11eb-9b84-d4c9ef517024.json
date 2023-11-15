@@ -1,0 +1,39 @@
+{
+  "vid": "cce76eca-ca16-11eb-9b84-d4c9ef517024",
+  "topic": "Apache httpd -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.48"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache httpd reports:</p>\n\t<blockquote cite=\"https://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <ul>\n\t    <li>moderate: mod_proxy_wstunnel tunneling of non Upgraded\n\t      connections (CVE-2019-17567)</li>\n\t    <li>moderate: Improper Handling of Insufficient Privileges\n\t      (CVE-2020-13938)</li>\n\t    <li>low: mod_proxy_http NULL pointer dereference\n\t      (CVE-2020-13950)</li>\n\t    <li>low: mod_auth_digest possible stack overflow by one nul byte\n\t      (CVE-2020-35452)</li>\n\t    <li>low: mod_session NULL pointer dereference (CVE-2021-26690)</li>\n\t    <li>low: mod_session response handling heap overflow (CVE-2021-26691)</li>\n\t    <li>moderate: Unexpected URL matching with 'MergeSlashes OFF'\n\t      (CVE-2021-30641)</li>\n\t    <li>important: NULL pointer dereference on specially crafted HTTP/2\n\t      request (CVE-2021-31618)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://httpd.apache.org/security/vulnerabilities_24.html"
+    ],
+    "cvename": [
+      "CVE-2019-17567",
+      "CVE-2020-13938",
+      "CVE-2020-13950",
+      "CVE-2020-35452",
+      "CVE-2021-26690",
+      "CVE-2021-26691",
+      "CVE-2021-30641",
+      "CVE-2021-31618"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-06-09",
+    "entry": "2021-06-10"
+  }
+}

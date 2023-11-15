@@ -1,0 +1,32 @@
+{
+  "vid": "6aa2d135-b40e-11e5-9728-002590263bf5",
+  "topic": "xen-kernel -- ioreq handling possibly susceptible to multiple read issue",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5.2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-166.html\">\n\t  <p>Single memory accesses in source code can be translated to multiple\n\t    ones in machine code by the compiler, requiring special caution when\n\t    accessing shared memory.  Such precaution was missing from the\n\t    hypervisor code inspecting the state of I/O requests sent to the\n\t    device model for assistance.</p>\n\t  <p>Due to the offending field being a bitfield, it is however believed\n\t    that there is no issue in practice, since compilers, at least when\n\t    optimizing (which is always the case for non-debug builds), should find\n\t    it more expensive to extract the bit field value twice than to keep the\n\t    calculated value in a register.</p>\n\t  <p>This vulnerability is exposed to malicious device models.  In\n\t    conventional Xen systems this means the qemu which service an HVM\n\t    domain.  On such systems this vulnerability can only be exploited if\n\t    the attacker has gained control of the device model qemu via another\n\t    vulnerability.</p>\n\t  <p>Privilege escalation, host crash (Denial of Service), and leaked\n\t    information all cannot be excluded.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-166.html"
+    ],
+    "freebsd_pr": [
+      "ports/205841"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-17",
+    "entry": "2016-01-06"
+  }
+}

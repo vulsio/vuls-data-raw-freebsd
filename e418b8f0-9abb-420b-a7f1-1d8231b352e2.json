@@ -1,0 +1,32 @@
+{
+  "vid": "e418b8f0-9abb-420b-a7f1-1d8231b352e2",
+  "topic": "webkit2-gtk3 -- Denial of service",
+  "affects": [
+    {
+      "name": [
+        "webkit2-gtk3"
+      ],
+      "range": [
+        {
+          "lt": "2.28.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The WebKitGTK project reports the following vulnerability.</p>\n\t<blockquote cite=\"https://webkitgtk.org/security/WSA-2020-0004.html\">\n\t  <p>Processing maliciously crafted web content may lead to arbitrary code execution or application crash (denial of service). Description: A memory corruption issue (use-after-free) was addressed with improved memory handling.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://webkitgtk.org/security/WSA-2020-0004.html"
+    ],
+    "cvename": [
+      "CVE-2020-11793"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-16",
+    "entry": "2020-04-18"
+  }
+}

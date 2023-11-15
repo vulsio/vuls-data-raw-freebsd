@@ -1,0 +1,47 @@
+{
+  "vid": "4260eacb-26b8-11d9-9289-000c41e2cdad",
+  "topic": "gaim -- multiple buffer overflows",
+  "affects": [
+    {
+      "name": [
+        "gaim",
+        "ja-gaim",
+        "ko-gaim",
+        "ru-gaim"
+      ],
+      "range": [
+        {
+          "lt": "0.82"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gaim"
+      ],
+      "range": [
+        {
+          "gt": "20030000"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sean <q>infamous42md</q> reports several situations in gaim\n\t  that may result in exploitable buffer overflows:</p>\n\t<ul>\n\t  <li>Rich Text Format (RTF) messages in Novell GroupWise\n\t    protocol</li>\n\t  <li>Unsafe use of gethostbyname in zephyr protocol</li>\n\t  <li>URLs which are over 2048 bytes long once decoded</li>\n\t</ul>\n      "
+  },
+  "references": {
+    "url": [
+      "http://gaim.sourceforge.net/security/?id=3",
+      "http://gaim.sourceforge.net/security/?id=4",
+      "http://gaim.sourceforge.net/security/?id=5"
+    ],
+    "cvename": [
+      "CVE-2004-0785"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-26",
+    "entry": "2004-10-25"
+  }
+}

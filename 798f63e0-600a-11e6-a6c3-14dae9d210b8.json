@@ -1,0 +1,41 @@
+{
+  "vid": "798f63e0-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Linux compatibility layer setgroups(2) system call",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "10.2_9",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_26",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_33",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A programming error in the Linux compatibility layer\n\tsetgroups(2) system call can lead to an unexpected results,\n\tsuch as overwriting random kernel memory contents.</p>\n\t<h1>Impact:</h1>\n\t<p>It is possible for a local attacker to overwrite portions\n\tof kernel memory, which may result in a privilege escalation\n\tor cause a system panic.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-1881"
+    ],
+    "freebsd_sa": [
+      "SA-16:04.linux"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-14",
+    "entry": "2016-08-11"
+  }
+}

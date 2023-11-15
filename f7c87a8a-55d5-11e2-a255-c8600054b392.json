@@ -1,0 +1,58 @@
+{
+  "vid": "f7c87a8a-55d5-11e2-a255-c8600054b392",
+  "topic": "asterisk -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk11"
+      ],
+      "range": [
+        {
+          "lt": "11.1.2",
+          "gt": "11.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk10"
+      ],
+      "range": [
+        {
+          "lt": "10.11.1",
+          "gt": "10.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "1.8.19.1",
+          "gt": "1.8.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/security\">\n\t  <p>Crashes due to large stack allocations when using TCP</p>\n\t  <p>Denial of Service Through Exploitation of Device State Caching</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://downloads.digium.com/pub/security/AST-2012-014.html",
+      "http://downloads.digium.com/pub/security/AST-2012-015.html",
+      "https://www.asterisk.org/security"
+    ],
+    "cvename": [
+      "CVE-2012-5976",
+      "CVE-2012-5977"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-01-02",
+    "entry": "2013-01-03"
+  }
+}

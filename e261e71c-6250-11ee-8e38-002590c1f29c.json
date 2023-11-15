@@ -1,0 +1,33 @@
+{
+  "vid": "e261e71c-6250-11ee-8e38-002590c1f29c",
+  "topic": "FreeBSD -- copy_file_range insufficient capability rights check",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "13.2_4",
+          "ge": "13.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The syscall checked only for the CAP_READ and CAP_WRITE\n\tcapabilities on the input and output file descriptors, respectively.\n\tUsing an offset is logically equivalent to seeking, and the syscall\n\tmust additionally require the CAP_SEEK capability.</p>\n\t<h1>Impact:</h1>\n\t<p>A sandboxed process with only read or write but no seek capability\n\ton a file descriptor may be able to read data from or write data\n\tto an arbitrary location within the file corresponding to that file\n\tdescriptor.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2023-5369"
+    ],
+    "freebsd_sa": [
+      "SA-23:13.capsicum"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-03",
+    "entry": "2023-10-04"
+  }
+}

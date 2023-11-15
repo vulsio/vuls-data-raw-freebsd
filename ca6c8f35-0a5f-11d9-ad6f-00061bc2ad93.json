@@ -1,0 +1,73 @@
+{
+  "vid": "ca6c8f35-0a5f-11d9-ad6f-00061bc2ad93",
+  "topic": "apache -- heap overflow in mod_proxy",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "lt": "1.3.31_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache13-ssl"
+      ],
+      "range": [
+        {
+          "le": "1.3.29.1.53_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache13-modssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.31+2.8.18_4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache13+ipv6"
+      ],
+      "range": [
+        {
+          "le": "1.3.29_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache13-modperl"
+      ],
+      "range": [
+        {
+          "le": "1.3.31"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A buffer overflow exists in mod_proxy which may\n\t  allow an attacker to launch local DoS attacks\n\t  and possibly execute arbitrary code.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.guninski.com/modproxy1.html"
+    ],
+    "cvename": [
+      "CVE-2004-0492"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-06-10",
+    "entry": "2004-09-19",
+    "modified": "2004-10-05"
+  }
+}

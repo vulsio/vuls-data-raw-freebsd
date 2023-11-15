@@ -1,0 +1,42 @@
+{
+  "vid": "01c231cd-4393-11d9-8bb9-00065be4b5b6",
+  "topic": "mysql -- GRANT access restriction problem",
+  "affects": [
+    {
+      "name": [
+        "mysql-server"
+      ],
+      "range": [
+        {
+          "le": "3.23.58_3"
+        },
+        {
+          "lt": "4.0.21",
+          "ge": "4.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t <p>When a user is granted access to a database with a name containing\n\t   an underscore and the underscore is not escaped then that user might\n\t   also be able to access other, similarly named, databases on the\n\t   affected system.</p>\n\t <p>The problem is that the underscore is seen as a wildcard by MySQL\n\t   and therefore it is possible that an admin might accidently GRANT a\n\t   user access to multiple databases.</p>\n       "
+  },
+  "references": {
+    "url": [
+      "http://bugs.mysql.com/bug.php?id=3933",
+      "http://rhn.redhat.com/errata/RHSA-2004-611.html",
+      "http://www.openpkg.org/security/OpenPKG-SA-2004.045-mysql.html"
+    ],
+    "cvename": [
+      "CVE-2004-0957"
+    ],
+    "bid": [
+      "11435"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-29",
+    "entry": "2004-12-16",
+    "modified": "2005-03-15"
+  }
+}

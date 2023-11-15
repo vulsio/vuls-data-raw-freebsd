@@ -1,0 +1,44 @@
+{
+  "vid": "afc60484-0652-440e-b01a-5ef814747f06",
+  "topic": "ruby -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ruby"
+      ],
+      "range": [
+        {
+          "lt": "2.3.8,1",
+          "ge": "2.3.0,1"
+        },
+        {
+          "lt": "2.4.5,1",
+          "ge": "2.4.0,1"
+        },
+        {
+          "lt": "2.5.2,1",
+          "ge": "2.5.0,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ruby news:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2018/10/17/ruby-2-5-2-released/\">\n\t  <p>CVE-2018-16395: OpenSSL::X509::Name equality check does not work\n\t    correctly</p>\n\t  <p>An instance of OpenSSL::X509::Name contains entities such as CN, C and\n\t    so on. Some two instances of OpenSSL::X509::Name are equal only when\n\t    all entities are exactly equal. However, there is a bug that the\n\t    equality check is not correct if the value of an entity of the\n\t    argument (right-hand side) starts with the value of the receiver\n\t    (left-hand side). So, if a malicious X.509 certificate is passed to\n\t    compare with an existing certificate, there is a possibility to be\n\t    judged incorrectly that they are equal.</p>\n\t  <p>CVE-2018-16396: Tainted flags are not propagated in Array#pack and\n\t    String#unpack with some directives</p>\n\t  <p>Array#pack method converts the receiver's contents into a string with\n\t    specified format. If the receiver contains some tainted objects, the\n\t    returned string also should be tainted. String#unpack method which\n\t    converts the receiver into an array also should propagate its tainted\n\t    flag to the objects contained in the returned array. But, with B, b, H\n\t    and h directives, the tainted flags are not propagated. So, if a script\n\t    processes unreliable inputs by Array#pack and/or String#unpack with\n\t    these directives and checks the reliability with tainted flags, the\n\t    check might be wrong.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.ruby-lang.org/en/news/2018/10/17/ruby-2-5-2-released/",
+      "https://www.ruby-lang.org/en/news/2018/10/17/openssl-x509-name-equality-check-does-not-work-correctly-cve-2018-16395/",
+      "https://www.ruby-lang.org/en/news/2018/10/17/not-propagated-taint-flag-in-some-formats-of-pack-cve-2018-16396/"
+    ],
+    "cvename": [
+      "CVE-2018-16395",
+      "CVE-2018-16396"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-10-17",
+    "entry": "2018-10-20"
+  }
+}

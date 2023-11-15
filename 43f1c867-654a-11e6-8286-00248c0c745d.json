@@ -1,0 +1,33 @@
+{
+  "vid": "43f1c867-654a-11e6-8286-00248c0c745d",
+  "topic": "Rails 4 -- Possible XSS Vulnerability in Action View",
+  "affects": [
+    {
+      "name": [
+        "rubygem-actionview"
+      ],
+      "range": [
+        {
+          "lt": "4.2.7.1",
+          "gt": "3.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ruby Security team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/forum/#!topic/ruby-security-ann/8B2iV2tPRSE\">\n\t  <p>There is a possible XSS vulnerability in Action View.  Text declared as \"HTML\nsafe\" will not have quotes escaped when used as attribute values in tag\nhelpers.  This vulnerability has been assigned the CVE identifier\nCVE-2016-6316.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://groups.google.com/forum/#!topic/ruby-security-ann/8B2iV2tPRSE"
+    ],
+    "cvename": [
+      "CVE-2016-6316"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-08-11",
+    "entry": "2016-08-18"
+  }
+}

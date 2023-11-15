@@ -1,0 +1,42 @@
+{
+  "vid": "08a125f3-e35a-11e7-a293-54e1ad3d6335",
+  "topic": "libXfont -- permission bypass when opening files through symlinks",
+  "affects": [
+    {
+      "name": [
+        "libXfont"
+      ],
+      "range": [
+        {
+          "lt": "1.5.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libXfont2"
+      ],
+      "range": [
+        {
+          "lt": "2.0.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>the freedesktop.org project reports:</p>\n\t<blockquote cite=\"https://cgit.freedesktop.org/xorg/lib/libXfont/commit/?id=7b377456f95d2ec3ead40f4fb74ea620191f88c8\">\n\t  <p>A non-privileged X client can instruct X server running under root\n\t    to open any file by creating own directory with \"fonts.dir\",\n\t    \"fonts.alias\" or any font file being a symbolic link to any other\n\t    file in the system. X server will then open it. This can be issue\n\t    with special files such as /dev/watchdog.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cgit.freedesktop.org/xorg/lib/libXfont/commit/?id=7b377456f95d2ec3ead40f4fb74ea620191f88c8"
+    ],
+    "cvename": [
+      "CVE-2017-16611"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-11-25",
+    "entry": "2017-12-17"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "386a14bb-1a21-41c6-a2cf-08d79213379b",
+  "topic": "zeek -- potential DoS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "6.0.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v6.0.2\">\n\t  <p> A specially-crafted SSL packet could cause Zeek to\n\t  leak memory and potentially crash. </p>\n\t  <p> A specially-crafted series of FTP packets could cause\n\t  Zeek to log entries for requests that have already been\n\t  completed, using resources unnecessarily and potentially\n\t  causing Zeek to lose other traffic. </p>\n\t  <p> A specially-crafted series of SSL packets could cause\n\t  Zeek to output a very large number of unnecessary alerts\n\t  for the same record. </p>\n\t  <p> A specially-crafted series of SSL packets could cause\n\t  Zeek to generate very long ssl_history fields in the\n\t  ssl.log, potentially using a large amount of memory due\n\t  to unbounded state growth </p>\n\t  <p> A specially-crafted IEEE802.11 packet could cause\n\t  Zeek to overflow memory and potentially crash </p>\n\t</blockquote>\n\t"
+  },
+  "references": {
+    "url": [
+      "https://github.com/zeek/zeek/releases/tag/v6.0.2"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-27",
+    "entry": "2023-10-27"
+  }
+}

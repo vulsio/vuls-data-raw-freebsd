@@ -1,0 +1,29 @@
+{
+  "vid": "f7e9a1cc-0931-11ee-94b4-6cc21735f730",
+  "topic": "xmltooling -- remote resource access",
+  "affects": [
+    {
+      "name": [
+        "xmltooling"
+      ],
+      "range": [
+        {
+          "lt": "3.2.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Shibboleth consortium reports:</p>\n\t<blockquote cite=\"https://shibboleth.net/community/advisories/secadv_20230612.txt\">\n\t  <p>An updated version of the XMLTooling library that is part of the\n\t  OpenSAML and Shibboleth Service Provider software is now available\n\t  which corrects a server-side request forgery (SSRF) vulnerability.</p>\n\t  <p>Including certain legal but \"malicious in intent\" content in the\n\t  KeyInfo element defined by the XML Signature standard will result\n\t  in attempts by the SP's shibd process to dereference untrusted\n\t  URLs.</p>\n\t  <p>While the content of the URL must be supplied within the message\n\t  and does not include any SP internal state or dynamic content,\n\t  there is at minimum a risk of denial of service, and the attack\n\t  could be combined with others to create more serious vulnerabilities\n\t  in the future.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://shibboleth.net/community/advisories/secadv_20230612.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-06-12",
+    "entry": "2023-06-12"
+  }
+}

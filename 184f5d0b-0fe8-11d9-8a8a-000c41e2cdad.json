@@ -1,0 +1,34 @@
+{
+  "vid": "184f5d0b-0fe8-11d9-8a8a-000c41e2cdad",
+  "topic": "subversion -- WebDAV fails to protect metadata",
+  "affects": [
+    {
+      "name": [
+        "subversion",
+        "subversion-perl",
+        "subversion-python"
+      ],
+      "range": [
+        {
+          "lt": "1.0.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>In some situations, subversion metadata may be unexpectedly\n\t  disclosed via WebDAV.  A subversion advisory states:</p>\n\t<blockquote cite=\"http://subversion.tigris.org/security/CAN-2004-0749-advisory.txt\">\n\t  <p>mod_authz_svn, the Apache httpd module which does path-based\n\t    authorization on Subversion repositories, is not correctly\n\t    protecting all metadata on unreadable paths.</p>\n\t  <p>This security issue is not about revealing the contents\n\t    of protected files: it only reveals metadata about\n\t    protected areas such as paths and log messages.  This may\n\t    or may not be important to your organization, depending\n\t    on how you're using path-based authorization, and the\n\t    sensitivity of the metadata.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://subversion.tigris.org/security/CAN-2004-0749-advisory.txt"
+    ],
+    "cvename": [
+      "CVE-2004-0749"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-15",
+    "entry": "2004-09-26"
+  }
+}

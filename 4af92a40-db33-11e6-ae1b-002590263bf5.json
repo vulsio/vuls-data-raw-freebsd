@@ -1,0 +1,33 @@
+{
+  "vid": "4af92a40-db33-11e6-ae1b-002590263bf5",
+  "topic": "groovy -- remote execution of untrusted code/DoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "groovy"
+      ],
+      "range": [
+        {
+          "lt": "2.4.8",
+          "ge": "1.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Groovy project reports:</p>\n\t<blockquote cite=\"http://groovy-lang.org/security.html\">\n\t  <p>When an application with Groovy on classpath uses standard Java\n\t    serialization mechanisms, e.g. to communicate between servers or to\n\t    store local data, it is possible for an attacker to bake a special\n\t    serialized object that will execute code directly when deserialized.\n\t    All applications which rely on serialization and do not isolate the\n\t    code which deserializes objects are subject to this vulnerability.\n\t    This is similar to CVE-2015-3253 but this exploit involves extra\n\t    wrapping of objects and catching of exceptions which are now safe\n\t    guarded against.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://groovy-lang.org/security.html"
+    ],
+    "cvename": [
+      "CVE-2016-6814"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-20",
+    "entry": "2017-01-15"
+  }
+}

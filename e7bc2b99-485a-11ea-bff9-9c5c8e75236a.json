@@ -1,0 +1,32 @@
+{
+  "vid": "e7bc2b99-485a-11ea-bff9-9c5c8e75236a",
+  "topic": "clamav -- Denial-of-Service (DoS) vulnerability",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.102.2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Micah Snyder\t reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2020/02/clamav-01022-security-patch-released.html\">\n\t  <p>A denial-of-service (DoS) condition may occur when using the optional\n\t     credit card data-loss-prevention (DLP) feature. Improper bounds checking of\n\t     an unsigned variable resulted in an out-of-bounds read, which causes a crash.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.clamav.net/2020/02/clamav-01022-security-patch-released.html"
+    ],
+    "cvename": [
+      "CVE-2020-3123"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-02-05",
+    "entry": "2020-02-05"
+  }
+}

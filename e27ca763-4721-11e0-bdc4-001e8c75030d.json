@@ -1,0 +1,49 @@
+{
+  "vid": "e27ca763-4721-11e0-bdc4-001e8c75030d",
+  "topic": "subversion -- remote HTTP DoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "subversion"
+      ],
+      "range": [
+        {
+          "ge": "1.6",
+          "le": "1.6.15"
+        },
+        {
+          "ge": "1.5",
+          "le": "1.6.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "subversion-freebsd"
+      ],
+      "range": [
+        {
+          "ge": "1.6",
+          "le": "1.6.15"
+        },
+        {
+          "ge": "1.5",
+          "le": "1.6.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2011-0715-advisory.txt\">\n\t  <p>Subversion HTTP servers up to 1.5.9 (inclusive) or 1.6.15 (inclusive)\n\t    are vulnerable to a remotely triggerable NULL-pointer dereference.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2011-0715"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-02-27",
+    "entry": "2011-03-05"
+  }
+}

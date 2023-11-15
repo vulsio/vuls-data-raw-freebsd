@@ -1,0 +1,39 @@
+{
+  "vid": "e21474c6-031a-11e6-aa86-001999f8d30b",
+  "topic": "PJSIP -- TCP denial of service in PJProject",
+  "affects": [
+    {
+      "name": [
+        "pjsip"
+      ],
+      "range": [
+        {
+          "le": "2.4.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "pjsip-extsrtp"
+      ],
+      "range": [
+        {
+          "le": "2.4.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>PJProject has a limit on the number of TCP connections\n\t  that it can accept. Furthermore, PJProject does not close\n\t  TCP connections it accepts. By default, this value is\n\t  approximately 60.</p>\n\t  <p>An attacker can deplete the number of allowed TCP\n\t  connections by opening TCP connections and sending no\n\t  data to Asterisk.</p>\n\t  <p>If PJProject has been compiled in debug mode, then\n\t  once the number of allowed TCP connections has been\n\t  depleted, the next attempted TCP connection to Asterisk\n\t  will crash due to an assertion in PJProject.</p>\n\t  <p>If PJProject has not been compiled in debug mode, then\n\t  any further TCP connection attempts will be rejected.\n\t  This makes Asterisk unable to process TCP SIP traffic.</p>\n\t  <p>Note that this only affects TCP/TLS, since UDP is\n\t  connectionless.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://downloads.asterisk.org/pub/security/AST-2016-005.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-15",
+    "entry": "2016-04-15"
+  }
+}

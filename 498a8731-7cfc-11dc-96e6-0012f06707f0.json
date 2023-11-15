@@ -1,0 +1,34 @@
+{
+  "vid": "498a8731-7cfc-11dc-96e6-0012f06707f0",
+  "topic": "phpmyadmin -- cross-site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.11.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The DigiTrust Group discovered serious XSS vulnerability in\n\t  the phpMyAdmin server_status.php script. According to their\n\t  report</p>\n\t<blockquote cite=\"http://www.digitrustgroup.com/advisories/TDG-advisory071015a.html\">\n\t  <p>vulnerability can be exploited to execute arbitrary HTML and\n\t    script code in a user's browser session in context of an affected\n\t    site.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.digitrustgroup.com/advisories/TDG-advisory071015a.html",
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-6"
+    ],
+    "cvename": [
+      "CVE-2007-5589"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-10-17",
+    "entry": "2007-10-17",
+    "modified": "2010-05-12"
+  }
+}

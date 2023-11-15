@@ -1,0 +1,44 @@
+{
+  "vid": "4451a4c9-c05e-11dc-982e-001372fd0af2",
+  "topic": "drupal -- cross site request forgery",
+  "affects": [
+    {
+      "name": [
+        "drupal5"
+      ],
+      "range": [
+        {
+          "lt": "5.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "drupal4"
+      ],
+      "range": [
+        {
+          "lt": "4.7.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/208562\">\n\t  <p>The aggregator module fetches items from RSS feeds and makes\n\t    them available on the site. The module provides an option to\n\t    remove items from a particular feed. This has been implemented\n\t    as a simple GET request and is therefore vulnerable to cross\n\t    site request forgeries. For example: Should a privileged user\n\t    view a page containing an &lt;img&gt; tag with a specially\n\t    constructed src pointing to a remove items URL, the items would\n\t    be removed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/208562",
+      "http://secunia.com/advisories/28422/"
+    ],
+    "cvename": [
+      "CVE-2008-0272"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-01-10",
+    "entry": "2008-01-11",
+    "modified": "2010-05-12"
+  }
+}

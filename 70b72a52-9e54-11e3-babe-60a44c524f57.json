@@ -1,0 +1,40 @@
+{
+  "vid": "70b72a52-9e54-11e3-babe-60a44c524f57",
+  "topic": "otrs -- XSS Issue",
+  "affects": [
+    {
+      "name": [
+        "otrs"
+      ],
+      "range": [
+        {
+          "lt": "3.1.20"
+        },
+        {
+          "lt": "3.2.15",
+          "gt": "3.2.*"
+        },
+        {
+          "lt": "3.3.5",
+          "gt": "3.3.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OTRS Project reports:</p>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2014-03-xss-issue/\">\n\t  <p>An attacker could send a specially prepared HTML email to OTRS. If\nhe can then trick an agent into following a special link to display this email,\nJavaScript code would be executed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.otrs.com/security-advisory-2014-03-xss-issue/"
+    ],
+    "cvename": [
+      "CVE-2014-1695"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-02-25",
+    "entry": "2014-02-25"
+  }
+}

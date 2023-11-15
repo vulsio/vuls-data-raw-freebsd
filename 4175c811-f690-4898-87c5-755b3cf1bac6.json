@@ -1,0 +1,36 @@
+{
+  "vid": "4175c811-f690-4898-87c5-755b3cf1bac6",
+  "topic": "ntp -- stack-based buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "ntp"
+      ],
+      "range": [
+        {
+          "lt": "4.2.4p7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US-CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/853097\">\n\t  <p>ntpd contains a stack buffer overflow which may allow a remote\n\t    unauthenticated attacker to execute arbitrary code on a vulnerable\n\t    system or create a denial of service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kb.cert.org/vuls/id/853097"
+    ],
+    "cvename": [
+      "CVE-2009-0159",
+      "CVE-2009-1252"
+    ],
+    "bid": [
+      "35017"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-05-06",
+    "entry": "2009-05-20"
+  }
+}

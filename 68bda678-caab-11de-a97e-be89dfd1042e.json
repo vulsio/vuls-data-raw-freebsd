@@ -1,0 +1,35 @@
+{
+  "vid": "68bda678-caab-11de-a97e-be89dfd1042e",
+  "topic": "p5-HTML-Parser -- denial of service",
+  "affects": [
+    {
+      "name": [
+        "p5-HTML-Parser"
+      ],
+      "range": [
+        {
+          "lt": "3.63"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3627\">\n\t  <p>The decode_entities function in util.c in HTML-Parser before\n\t    3.63 allows context-dependent attackers to cause a denial of service\n\t    (infinite loop) via an incomplete SGML numeric character reference,\n\t    which triggers generation of an invalid UTF-8 character.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/37155"
+    ],
+    "cvename": [
+      "CVE-2009-3627"
+    ],
+    "bid": [
+      "36807"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-10-23",
+    "entry": "2009-11-06"
+  }
+}

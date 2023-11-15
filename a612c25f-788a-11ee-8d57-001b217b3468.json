@@ -1,0 +1,47 @@
+{
+  "vid": "a612c25f-788a-11ee-8d57-001b217b3468",
+  "topic": "Gitlab -- Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "16.5.1",
+          "ge": "16.5.0"
+        },
+        {
+          "lt": "16.4.2",
+          "ge": "16.4.0"
+        },
+        {
+          "lt": "16.3.6",
+          "ge": "11.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2023/10/31/security-release-gitlab-16-5-1-16-4-2-16-3-6-released/\">\n\t  <p>Disclosure of CI/CD variables using Custom project templates</p>\n\t  <p>GitLab omnibus DoS crash via OOM with CI Catalogs</p>\n\t  <p>Parsing gitlab-ci.yml with large string via timeout input leads to Denial of Service</p>\n\t  <p>DoS - Blocking FIFO files in Tar archives</p>\n\t  <p>Titles exposed by service-desk template</p>\n\t  <p>Approval on protected environments can be bypassed</p>\n\t  <p>Version information disclosure when super_sidebar_logged_out feature flag is enabled</p>\n\t  <p>Add abuse detection for search syntax filter pipes</p>\n\t</blockquote>\n\t"
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2023/10/31/security-release-gitlab-16-5-1-16-4-2-16-3-6-released/"
+    ],
+    "cvename": [
+      "CVE-2023-3399",
+      "CVE-2023-5825",
+      "CVE-2023-3909",
+      "CVE-2023-3246",
+      "CVE-2023-5600",
+      "CVE-2023-4700",
+      "CVE-2023-5831"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-31",
+    "entry": "2023-11-01"
+  }
+}

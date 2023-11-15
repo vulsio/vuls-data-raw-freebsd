@@ -1,0 +1,45 @@
+{
+  "vid": "df0a2fd1-4c92-11ee-8290-a8a1599412c6",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "116.0.5845.179"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ungoogled-chromium"
+      ],
+      "range": [
+        {
+          "lt": "116.0.5845.179"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop.html\">\n\t <p>This update includes 4 security fixes:</p>\n\t <ul>\n\t    <li>[1476403] High CVE-2023-4761: Out of bounds memory access in FedCM. Reported by DarkNavy on 2023-08-28</li>\n\t    <li>[1473247] High CVE-2023-4762: Type Confusion in V8. Reported by Rong Jian of VRI on 2023-08-16</li>\n\t    <li>[1469928] High CVE-2023-4763: Use after free in Networks. Reported by anonymous on 2023-08-03</li>\n\t    <li>[1447237] High CVE-2023-4764: Incorrect security UI in BFCache. Reported by Irvan Kurniawan (sourc7) on 2023-05-20</li>\n\t </ul>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop.html"
+    ],
+    "cvename": [
+      "CVE-2023-4761",
+      "CVE-2023-4762",
+      "CVE-2023-4763",
+      "CVE-2023-4764"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-09-05",
+    "entry": "2023-09-06"
+  }
+}

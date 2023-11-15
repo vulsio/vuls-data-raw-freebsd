@@ -1,0 +1,39 @@
+{
+  "vid": "b3531fe1-2b03-11df-b6db-00248c9b4be7",
+  "topic": "drupal -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "drupal5"
+      ],
+      "range": [
+        {
+          "lt": "5.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "drupal6"
+      ],
+      "range": [
+        {
+          "lt": "6.16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/731710\">\n\t  <p>A user-supplied value is directly output during installation\n\t    allowing a malicious user to craft a URL and perform a cross-site\n\t    scripting attack. The exploit can only be conducted on sites not yet\n\t    installed.</p>\n\t  <p>The API function drupal_goto() is susceptible to a phishing attack.\n\t    An attacker could formulate a redirect in a way that gets the Drupal\n\t    site to send the user to an arbitrarily provided URL. No user\n\t    submitted data will be sent to that URL.</p>\n\t  <p>Locale module and dependent contributed modules do not sanitize the\n\t    display of language codes, native and English language names properly.\n\t    While these usually come from a preselected list, arbitrary\n\t    administrator input is allowed. This vulnerability is mitigated by the\n\t    fact that the attacker must have a role with the 'administer\n\t    languages' permission.</p>\n\t  <p>Under certain circumstances, a user with an open session that is\n\t    blocked can maintain his/her session on the Drupal site, despite being\n\t    blocked.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/731710"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-03-03",
+    "entry": "2010-03-08"
+  }
+}

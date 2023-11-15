@@ -1,0 +1,36 @@
+{
+  "vid": "1cecd5e0-c372-11e5-96d6-14dae9d210b8",
+  "topic": "xymon-server -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "xymon-server"
+      ],
+      "range": [
+        {
+          "lt": "4.3.25"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>J.C. Cleaver reports:</p>\n\t<blockquote cite=\"http://lists.xymon.com/pipermail/xymon/2016-February/042986.html\">\n\t  <ul>\n\t  <li><p>CVE-2016-2054: Buffer overflow in xymond handling of\n\t    \"config\" command</p></li>\n\t  <li><p> CVE-2016-2055: Access to possibly confidential files\n\t    in the Xymon configuration directory</p></li>\n\t  <li><p>CVE-2016-2056: Shell command injection in the\n\t    \"useradm\" and \"chpasswd\" web applications</p></li>\n\t  <li><p>CVE-2016-2057: Incorrect permissions on IPC queues\n\t    used by the xymond daemon can bypass IP access filtering</p></li>\n\t  <li><p>CVE-2016-2058: Javascript injection in \"detailed status\n\t    webpage\" of monitoring items; XSS vulnerability via malformed\n\t    acknowledgment messages</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.xymon.com/pipermail/xymon/2016-February/042986.html"
+    ],
+    "cvename": [
+      "CVE-2016-2054",
+      "CVE-2016-2055",
+      "CVE-2016-2056",
+      "CVE-2016-2057",
+      "CVE-2016-2058"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-19",
+    "entry": "2016-02-09"
+  }
+}

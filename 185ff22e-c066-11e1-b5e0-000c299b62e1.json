@@ -1,0 +1,49 @@
+{
+  "vid": "185ff22e-c066-11e1-b5e0-000c299b62e1",
+  "topic": "FreeBSD -- Incorrect crypt() hashing",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "7.4_8",
+          "ge": "7.4"
+        },
+        {
+          "lt": "8.1_10",
+          "ge": "8.1"
+        },
+        {
+          "lt": "8.2_8",
+          "ge": "8.2"
+        },
+        {
+          "lt": "8.3_2",
+          "ge": "8.3"
+        },
+        {
+          "lt": "9.0_2",
+          "ge": "9.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-12:02.crypt.asc\">\n\t  <p>There is a programming error in the DES implementation used in crypt()\n\t     when handling input which contains characters that cannot be represented\n\t     with 7-bit ASCII.</p>\n\t  <p>When the input contains characters with only the most significant bit set\n\t     (0x80), that character and all characters after it will be ignored.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-2143"
+    ],
+    "freebsd_sa": [
+      "SA-12:02.crypt"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-05-30",
+    "entry": "2012-06-27"
+  }
+}

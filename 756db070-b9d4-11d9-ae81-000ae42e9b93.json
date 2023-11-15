@@ -1,0 +1,41 @@
+{
+  "vid": "756db070-b9d4-11d9-ae81-000ae42e9b93",
+  "topic": "coppermine -- IP spoofing and XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "coppermine"
+      ],
+      "range": [
+        {
+          "lt": "1.3.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GHC team reports about coppermine</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/396080\">\n\t  <p>The lack of sanitizing of user defined variables may\n\t    result in undesirable consequences such as IP spoofing\n\t    or XSS attack.</p>\n\t  <p>Generally users of Coppermine Gallery can post comments.\n\t    Remote address &amp; x-forwarded-for variables are logged\n\t    for admin's eyes.  X-Forwarded-for variable does not pass\n\t    throu any filtration before logging into database. User\n\t    can define/redefine this variable.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://coppermine.sourceforge.net/board/index.php?topic=17134.0"
+    ],
+    "cvename": [
+      "CVE-2005-1172"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.securityfocus.com/archive/1/396080",
+        "msgid": "20050418122434.10438.qmail@www.securityfocus.com"
+      }
+    ],
+    "bid": [
+      "13218"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-04-18",
+    "entry": "2005-05-01"
+  }
+}

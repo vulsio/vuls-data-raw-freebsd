@@ -1,0 +1,39 @@
+{
+  "vid": "660ebbf5-daeb-11e5-b2bd-002590263bf5",
+  "topic": "squid -- remote DoS in HTTP response processing",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "3.5.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Squid security advisory 2016:2 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2016_2.txt\">\n\t  <p>Due to incorrect bounds checking Squid is vulnerable to a denial\n\t    of service attack when processing HTTP responses.</p>\n\t  <p>These problems allow remote servers delivering certain unusual\n\t    HTTP response syntax to trigger a denial of service for all\n\t    clients accessing the Squid service.</p>\n\t  <p>HTTP responses containing malformed headers that trigger this\n\t    issue are becoming common. We are not certain at this time if\n\t    that is a sign of malware or just broken server scripting.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Advisories/SQUID-2016_2.txt",
+      "http://www.openwall.com/lists/oss-security/2016/02/24/12"
+    ],
+    "cvename": [
+      "CVE-2016-2569",
+      "CVE-2016-2570",
+      "CVE-2016-2571"
+    ],
+    "freebsd_pr": [
+      "ports/207454"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-24",
+    "entry": "2016-02-24",
+    "modified": "2016-02-28"
+  }
+}

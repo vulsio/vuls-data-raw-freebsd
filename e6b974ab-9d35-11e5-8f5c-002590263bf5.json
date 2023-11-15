@@ -1,0 +1,32 @@
+{
+  "vid": "e6b974ab-9d35-11e5-8f5c-002590263bf5",
+  "topic": "Salt -- information disclosure",
+  "affects": [
+    {
+      "name": [
+        "py27-salt"
+      ],
+      "range": [
+        {
+          "lt": "2015.8.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Salt release notes report:</p>\n\t<blockquote cite=\"https://docs.saltstack.com/en/latest/topics/releases/2015.8.3.html\">\n\t  <p>CVE-2015-8034: Saving state.sls cache data to disk with insecure\n\t    permissions</p>\n\t  <p>This affects users of the state.sls function. The state run cache\n\t    on the minion was being created with incorrect permissions. This\n\t    file could potentially contain sensitive data that was inserted via\n\t    jinja into the state SLS files. The permissions for this file are\n\t    now being set correctly. Thanks to @zmalone for bringing this issue\n\t    to our attention.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.saltstack.com/en/latest/topics/releases/2015.8.3.html"
+    ],
+    "cvename": [
+      "CVE-2015-8034"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-11-25",
+    "entry": "2015-12-07"
+  }
+}

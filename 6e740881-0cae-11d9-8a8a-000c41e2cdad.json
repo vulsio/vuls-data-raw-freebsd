@@ -1,0 +1,49 @@
+{
+  "vid": "6e740881-0cae-11d9-8a8a-000c41e2cdad",
+  "topic": "mozilla -- automated file upload",
+  "affects": [
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7,2",
+          "ge": "1.7.a,2"
+        },
+        {
+          "lt": "1.8.a2,2",
+          "ge": "1.8.a,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla-gtk1"
+      ],
+      "range": [
+        {
+          "lt": "1.7",
+          "ge": "1.7.a"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A malicious web page can cause an automated file upload\n\t  from the victim's machine when viewed with Mozilla with\n\t  Javascript enabled.  This is due to a bug permitting\n\t  default values for type=\"file\" &lt;input&gt; elements in\n\t  certain situations.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=241924"
+    ],
+    "cvename": [
+      "CVE-2004-0759"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-04-28",
+    "entry": "2004-09-22",
+    "modified": "2004-09-26"
+  }
+}

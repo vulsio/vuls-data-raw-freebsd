@@ -1,0 +1,34 @@
+{
+  "vid": "abc3ef37-95d4-11ea-9004-25fadb81abf4",
+  "topic": "json-c -- integer overflow and out-of-bounds write via a large JSON file",
+  "affects": [
+    {
+      "name": [
+        "json-c"
+      ],
+      "range": [
+        {
+          "lt": "0.14"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tobias Stöckmann reports:</p>\n\t<blockquote cite=\"https://github.com/json-c/json-c/pull/592\">\n\t  <p>\n\t    I have discovered a way to trigger an out of boundary write while\n\t    parsing a huge json file through a malicious input source. It can be\n\t    triggered if an attacker has control over the input stream or if a\n\t    huge load during filesystem operations can be triggered.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/json-c/json-c/pull/592",
+      "https://github.com/json-c/json-c/pull/599"
+    ],
+    "cvename": [
+      "CVE-2020-12762"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-05-02",
+    "entry": "2020-05-14",
+    "modified": "2020-05-17"
+  }
+}

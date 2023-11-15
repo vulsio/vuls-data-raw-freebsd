@@ -1,0 +1,80 @@
+{
+  "vid": "c4a18a12-77fc-11e5-a687-206a8a720317",
+  "topic": "ntp -- 13 low- and medium-severity vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ntp"
+      ],
+      "range": [
+        {
+          "lt": "4.2.8p4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ntp-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.3.76"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.2_7",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_24",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_30",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ntp.org reports:</p>\n\t<blockquote cite=\"http://support.ntp.org/bin/view/Main/SecurityNotice#Recent_Vulnerabilities\">\n\t  <p>NTF's NTP Project has been notified of the following 13 low-\n\t     and medium-severity vulnerabilities that are fixed in\n\t     ntp-4.2.8p4, released on Wednesday, 21 October 2015:</p>\n\t  <ul>\n\t    <li>Bug 2941 CVE-2015-7871 NAK to the Future: Symmetric\n\t\tassociation authentication bypass via crypto-NAK\n\t\t(Cisco ASIG)</li>\n\t    <li>Bug 2922 CVE-2015-7855 decodenetnum() will ASSERT botch\n\t\tinstead of returning FAIL on some bogus values (IDA)</li>\n\t    <li>Bug 2921 CVE-2015-7854 Password Length Memory Corruption\n\t\tVulnerability. (Cisco TALOS)</li>\n\t    <li>Bug 2920 CVE-2015-7853 Invalid length data provided by a\n\t\tcustom refclock driver could cause a buffer overflow.\n\t\t(Cisco TALOS)</li>\n\t    <li>Bug 2919 CVE-2015-7852 ntpq atoascii() Memory Corruption\n\t\tVulnerability. (Cisco TALOS)</li>\n\t    <li>Bug 2918 CVE-2015-7851 saveconfig Directory Traversal\n\t\tVulnerability. (OpenVMS) (Cisco TALOS)</li>\n\t    <li>Bug 2917 CVE-2015-7850 remote config logfile-keyfile.\n\t\t(Cisco TALOS)</li>\n\t    <li>Bug 2916 CVE-2015-7849 trusted key use-after-free.\n\t\t(Cisco TALOS)</li>\n\t    <li>Bug 2913 CVE-2015-7848 mode 7 loop counter underrun.\n\t\t(Cisco TALOS)</li>\n\t    <li>Bug 2909 CVE-2015-7701 Slow memory leak in CRYPTO_ASSOC.\n\t\t(Tenable)</li>\n\t    <li>Bug 2902 : CVE-2015-7703 configuration directives \"pidfile\"\n\t\tand \"driftfile\" should only be allowed locally. (RedHat)</li>\n\t    <li>Bug 2901 : CVE-2015-7704, CVE-2015-7705 Clients that\n\t\treceive a KoD should validate the origin timestamp field.\n\t\t(Boston University)</li>\n\t    <li>Bug 2899 : CVE-2015-7691, CVE-2015-7692, CVE-2015-7702\n\t\tIncomplete autokey data packet length checks. (Tenable)</li>\n\t  </ul>\n\t  <p>The only generally-exploitable bug in the above list is the\n\t     crypto-NAK bug, which has a CVSS2 score of 6.4.</p>\n\t  <p>Additionally, three bugs that have already been fixed in\n\t     ntp-4.2.8 but were not fixed in ntp-4.2.6 as it was EOL'd\n\t     have a security component, but are all below 1.8 CVSS score,\n\t     so we're reporting them here:</p>\n\t  <ul>\n\t    <li>Bug 2382 : Peer precision &lt; -31 gives division by zero</li>\n\t    <li>Bug 1774 : Segfaults if cryptostats enabled when built\n\t\twithout OpenSSL</li>\n\t    <li>Bug 1593 : ntpd abort in free() with logconfig syntax error</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://support.ntp.org/bin/view/Main/SecurityNotice#Recent_Vulnerabilities"
+    ],
+    "cvename": [
+      "CVE-2015-7691",
+      "CVE-2015-7692",
+      "CVE-2015-7701",
+      "CVE-2015-7702",
+      "CVE-2015-7703",
+      "CVE-2015-7704",
+      "CVE-2015-7705",
+      "CVE-2015-7848",
+      "CVE-2015-7849",
+      "CVE-2015-7850",
+      "CVE-2015-7851",
+      "CVE-2015-7852",
+      "CVE-2015-7853",
+      "CVE-2015-7854",
+      "CVE-2015-7855",
+      "CVE-2015-7871"
+    ],
+    "freebsd_sa": [
+      "SA-15:25.ntp"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-21",
+    "entry": "2015-10-21",
+    "modified": "2016-08-09"
+  }
+}

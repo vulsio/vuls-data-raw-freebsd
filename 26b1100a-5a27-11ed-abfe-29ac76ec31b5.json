@@ -1,0 +1,42 @@
+{
+  "vid": "26b1100a-5a27-11ed-abfe-29ac76ec31b5",
+  "topic": "go -- syscall, os/exec: unsanitized NUL in environment variables",
+  "affects": [
+    {
+      "name": [
+        "go118"
+      ],
+      "range": [
+        {
+          "lt": "1.18.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "go119"
+      ],
+      "range": [
+        {
+          "lt": "1.19.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/56284\">\n\t  <p>syscall, os/exec: unsanitized NUL in environment\n\t    variables</p>\n\t  <p>On Windows, syscall.StartProcess and os/exec.Cmd did not\n\t    properly check for invalid environment variable values. A\n\t    malicious environment variable value could exploit this\n\t    behavior to set a value for a different environment\n\t    variable. For example, the environment variable string\n\t    \"A=B\\x00C=D\" set the variables \"A=B\" and \"C=D\".</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://groups.google.com/g/golang-dev/c/83nKqv2W1Dk/m/gEJdD5vjDwAJ"
+    ],
+    "cvename": [
+      "CVE-2022-41716"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-10-17",
+    "entry": "2022-11-01"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "vid": "9de4c1c1-b9ee-11e9-82aa-6cc21735f730",
+  "topic": "PostgresSQL -- TYPE in pg_temp execute arbitrary SQL during `SECURITY DEFINER` execution",
+  "affects": [
+    {
+      "name": [
+        "postgresql11-server"
+      ],
+      "range": [
+        {
+          "lt": "11.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql10-server"
+      ],
+      "range": [
+        {
+          "lt": "10.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql96-server"
+      ],
+      "range": [
+        {
+          "lt": "9.6.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql95-server"
+      ],
+      "range": [
+        {
+          "lt": "9.5.19"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql94-server"
+      ],
+      "range": [
+        {
+          "lt": "9.4.24"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1960/\">\n\t  <p>\n\t    Versions Affected: 9.4 - 11\n\t  </p>\n\t  <p>\n\t    Given a suitable `SECURITY DEFINER` function, an attacker can execute arbitrary\n\t    SQL under the identity of the function owner.  An attack requires `EXECUTE`\n\t    permission on the function, which must itself contain a function call having\n\t    inexact argument type match.  For example, `length('foo'::varchar)` and\n\t    `length('foo')` are inexact, while `length('foo'::text)` is exact.\n\t    As part of exploiting this vulnerability, the attacker uses `CREATE DOMAIN`\n\t    to create a type in a `pg_temp` schema. The attack pattern and fix are similar\n\t    to that for CVE-2007-2138.\n\t  </p>\n\t  <p>\n\t    Writing `SECURITY DEFINER` functions continues to require following\n\t    the considerations noted in the documentation:\n\t  </p>\n\t  <p>\n\t    https://www.postgresql.org/docs/devel/sql-createfunction.html#SQL-CREATEFUNCTION-SECURITY\n\t  </p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1960/\">\n\t  <p>\n\t    Versions Affected: 11\n\t  </p>\n\t  <p>\n\t    In a database containing hypothetical, user-defined hash equality operators,\n\t    an attacker could read arbitrary bytes of server memory. For an attack to\n\t    become possible, a superuser would need to create unusual operators.\n\t    It is possible for operators not purpose-crafted for attack to have\n\t    the properties that enable an attack, but we are not aware of specific examples.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.postgresql.org/about/news/1960/"
+    ],
+    "cvename": [
+      "CVE-2019-10208",
+      "CVE-2019-10209"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-08-08",
+    "entry": "2019-08-08"
+  }
+}

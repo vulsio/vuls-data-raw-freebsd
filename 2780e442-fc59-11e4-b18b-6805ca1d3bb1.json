@@ -1,0 +1,76 @@
+{
+  "vid": "2780e442-fc59-11e4-b18b-6805ca1d3bb1",
+  "topic": "qemu, xen and VirtualBox OSE -- possible VM escape and code execution (\"VENOM\")",
+  "affects": [
+    {
+      "name": [
+        "qemu",
+        "qemu-devel"
+      ],
+      "range": [
+        {
+          "lt": "0.11.1_19"
+        },
+        {
+          "lt": "2.3.0_1",
+          "ge": "0.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "qemu-sbruno"
+      ],
+      "range": [
+        {
+          "lt": "2.3.50.g20150501_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "virtualbox-ose"
+      ],
+      "range": [
+        {
+          "lt": "4.3.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xen-tools"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_5",
+          "ge": "4.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jason Geffner, CrowdStrike Senior Security Researcher reports:</p>\n\t<blockquote cite=\"http://venom.crowdstrike.com/\">\n\t  <p>VENOM, CVE-2015-3456, is a security vulnerability in\n\t    the virtual floppy drive code used by many computer\n\t    virtualization platforms. This vulnerability may allow\n\t    an attacker to escape from the confines of an affected\n\t    virtual machine (VM) guest and potentially obtain\n\t    code-execution access to the host. Absent mitigation,\n\t    this VM escape could open access to the host system and\n\t    all other VMs running on that host, potentially giving\n\t    adversaries significant elevated access to the host's\n\t    local network and adjacent systems.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://venom.crowdstrike.com/",
+      "http://www.oracle.com/technetwork/topics/security/alert-cve-2015-3456-2542656.html",
+      "http://xenbits.xen.org/xsa/advisory-133.html"
+    ],
+    "cvename": [
+      "CVE-2015-3456"
+    ],
+    "freebsd_pr": [
+      "ports/200255",
+      "ports/200256",
+      "ports/200257"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-29",
+    "entry": "2015-05-17",
+    "modified": "2015-09-28"
+  }
+}

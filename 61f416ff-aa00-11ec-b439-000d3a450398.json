@@ -1,0 +1,32 @@
+{
+  "vid": "61f416ff-aa00-11ec-b439-000d3a450398",
+  "topic": "tcpslice -- heap-based use-after-free in extract_slice()",
+  "affects": [
+    {
+      "name": [
+        "tcpslice"
+      ],
+      "range": [
+        {
+          "lt": "1.5,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Tcpdump Group reports:</p>\n\t<blockquote cite=\"https://github.com/the-tcpdump-group/tcpslice/commit/030859fce9c77417de657b9bb29c0f78c2d68f4a\">\n\t  <p>heap-based use-after-free in extract_slice()</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/the-tcpdump-group/tcpslice/issues/11"
+    ],
+    "cvename": [
+      "CVE-2021-41043"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-09-13",
+    "entry": "2022-03-22"
+  }
+}

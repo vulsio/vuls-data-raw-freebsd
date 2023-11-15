@@ -1,0 +1,37 @@
+{
+  "vid": "d35373ae-4d34-11ee-8e38-002590c1f29c",
+  "topic": "FreeBSD -- pf incorrectly handles multiple IPv6 fragment headers",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "13.2_3",
+          "ge": "13.2"
+        },
+        {
+          "lt": "12.4_5",
+          "ge": "12.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>With a 'scrub fragment reassemble' rule, a packet containing multiple IPv6\n\tfragment headers would be reassembled, and then immediately processed.  That\n\tis, a packet with multiple fragment extension headers would not be recognized\n\tas the correct ultimate payload. Instead a packet with multiple IPv6 fragment\n\theaders would unexpectedly be interpreted as a fragmented packet, rather than\n\tas whatever the real payload is.</p>\n\t<h1>Impact:</h1>\n\t<p>IPv6 fragments may bypass firewall rules written on the assumption all\n\tfragments have been reassembled and, as a result, be forwarded or processed\n\tby the host.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2023-4809"
+    ],
+    "freebsd_sa": [
+      "SA-23:10.pf"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-09-06",
+    "entry": "2023-09-07"
+  }
+}

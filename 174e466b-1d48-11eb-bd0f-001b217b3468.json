@@ -1,0 +1,53 @@
+{
+  "vid": "174e466b-1d48-11eb-bd0f-001b217b3468",
+  "topic": "Gitlab -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "13.5.2",
+          "ge": "13.5.0"
+        },
+        {
+          "lt": "13.4.5",
+          "ge": "13.4.0"
+        },
+        {
+          "lt": "13.3.9",
+          "ge": "8.8.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2020/11/02/security-release-gitlab-13-5-2-released/\">\n\t  <p>Path Traversal in LFS Upload</p>\n\t  <p>Path traversal allows saving packages in arbitrary location</p>\n\t  <p>Kubernetes agent API leaks private repos</p>\n\t  <p>Terraform state deletion API exposes object storage URL</p>\n\t  <p>Stored-XSS in error message of build-dependencies</p>\n\t  <p>Git credentials persisted on disk</p>\n\t  <p>Potential Denial of service via container registry</p>\n\t  <p>Info leak when group is transferred from private to public group</p>\n\t  <p>Limited File Disclosure Via Multipart Bypass</p>\n\t  <p>Unauthorized user is able to access scheduled pipeline variables and values</p>\n\t  <p>CSRF in runner administration page allows an attacker to pause/resume runners</p>\n\t  <p>Regex backtracking attack in path parsing of Advanced Search result</p>\n\t  <p>Bypass of required CODEOWNERS approval</p>\n\t  <p>SAST CiConfiguration information visible without permissions</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2020/11/02/security-release-gitlab-13-5-2-released/"
+    ],
+    "cvename": [
+      "CVE-2020-13355",
+      "CVE-2020-26405",
+      "CVE-2020-13358",
+      "CVE-2020-13359",
+      "CVE-2020-13340",
+      "CVE-2020-13353",
+      "CVE-2020-13354",
+      "CVE-2020-13352",
+      "CVE-2020-13356",
+      "CVE-2020-13351",
+      "CVE-2020-13350",
+      "CVE-2020-13349",
+      "CVE-2020-13348"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-11-02",
+    "entry": "2020-11-02"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "3df5a920-6edc-11e9-a44b-0050562a4d7b",
+  "topic": "comms/hylafax -- Malformed fax sender remote code execution in JPEG support",
+  "affects": [
+    {
+      "name": [
+        "hylafax"
+      ],
+      "range": [
+        {
+          "lt": "6.0.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"ftp://ftp.hylafax.org/security/CVE-2018-17141.html\">\n\t  <p>A malicious sender that sets both JPEG and MH,MR,MMR or JBIG in\n\t     the same DCS signal or sends a large JPEG page could lead to remote code execution.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "ftp://ftp.hylafax.org/security/CVE-2018-17141.html",
+      "https://www.x41-dsec.de/lab/advisories/x41-2018-008-hylafax/",
+      "http://bugs.hylafax.org/show_bug.cgi?id=974",
+      "http://git.hylafax.org/HylaFAX?a=commit;h=c6cac8d8cd0dbe313689ba77023e12bc5b3027be"
+    ],
+    "cvename": [
+      "CVE-2018-17141"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-24",
+    "entry": "2019-05-05"
+  }
+}

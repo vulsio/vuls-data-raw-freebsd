@@ -1,0 +1,36 @@
+{
+  "vid": "4bf57137-ba4d-11e6-ae1b-002590263bf5",
+  "topic": "xen-kernel -- use after free in FIFO event channel code",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5",
+          "ge": "4.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-188.html\">\n\t  <p>When the EVTCHNOP_init_control operation is called with a bad guest\n\t    frame number, it takes an error path which frees a control structure\n\t    without also clearing the corresponding pointer. Certain subsequent\n\t    operations (EVTCHNOP_expand_array or another EVTCHNOP_init_control),\n\t    upon finding the non-NULL pointer, continue operation assuming it\n\t    points to allocated memory.</p>\n\t  <p>A malicious guest administrator can crash the host, leading to a\n\t    DoS. Arbitrary code execution (and therefore privilege escalation),\n\t    and information leaks, cannot be excluded.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://xenbits.xen.org/xsa/advisory-188.html"
+    ],
+    "cvename": [
+      "CVE-2016-7154"
+    ],
+    "freebsd_pr": [
+      "ports/214936"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-08",
+    "entry": "2016-12-04"
+  }
+}

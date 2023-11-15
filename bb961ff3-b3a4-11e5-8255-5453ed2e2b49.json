@@ -1,0 +1,38 @@
+{
+  "vid": "bb961ff3-b3a4-11e5-8255-5453ed2e2b49",
+  "topic": "cacti -- SQL injection vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cacti"
+      ],
+      "range": [
+        {
+          "le": "0.8.8f_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8369\">\n\t  <p>SQL injection vulnerability in include/top_graph_header.php in\n\t    Cacti 0.8.8f and earlier allows remote attackers to execute arbitrary\n\t    SQL commands via the rra_id parameter in a properties action to\n\t    graph.php.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.cacti.net/view.php?id=2646",
+      "http://svn.cacti.net/viewvc?view=rev&revision=7767"
+    ],
+    "cvename": [
+      "CVE-2015-8369"
+    ],
+    "mlist": [
+      {
+        "text": "http://seclists.org/fulldisclosure/2015/Dec/8"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-05",
+    "entry": "2016-01-05"
+  }
+}

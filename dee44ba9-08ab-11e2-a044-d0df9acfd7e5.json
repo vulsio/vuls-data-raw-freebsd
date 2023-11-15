@@ -1,0 +1,29 @@
+{
+  "vid": "dee44ba9-08ab-11e2-a044-d0df9acfd7e5",
+  "topic": "OpenX -- SQL injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "openx"
+      ],
+      "range": [
+        {
+          "lt": "2.8.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/50598/\">\n\t  <p>A vulnerability has been discovered in OpenX, which can be\n\t     exploited by malicious people to conduct SQL injection\n\t     attacks.</p>\n\t  <p>Input passed via the \"xajaxargs\" parameter to\n\t     www/admin/updates-history.php (when \"xajax\" is set to\n\t     \"expandOSURow\") is not properly sanitised in e.g. the\n\t     \"queryAuditBackupTablesByUpgradeId()\" function\n\t     (lib/OA/Upgrade/DB_UpgradeAuditor.php) before being used in SQL\n\t     queries. This can be exploited to manipulate SQL queries by\n\t     injecting arbitrary SQL code.</p>\n\t  <p>The vulnerability is confirmed in version 2.8.9. Prior versions\n\t     may also be affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/50598/"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-09-14",
+    "entry": "2012-09-27"
+  }
+}

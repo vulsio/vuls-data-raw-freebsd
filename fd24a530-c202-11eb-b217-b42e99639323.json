@@ -1,0 +1,35 @@
+{
+  "vid": "fd24a530-c202-11eb-b217-b42e99639323",
+  "topic": "wayland -- integer overflow",
+  "affects": [
+    {
+      "name": [
+        "wayland"
+      ],
+      "range": [
+        {
+          "lt": "1.19.0_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tobias Stoeckmann reports:</p>\n\t<blockquote cite=\"https://gitlab.freedesktop.org/wayland/wayland/-/merge_requests/133\">\n\t  <p>The libXcursor fix for CVE-2013-2003 has never been imported into wayland, leaving it vulnerable to it.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://gitlab.freedesktop.org/wayland/wayland/-/merge_requests/133"
+    ],
+    "cvename": [
+      "CVE-2013-2003"
+    ],
+    "freebsd_pr": [
+      "ports/256273"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-02",
+    "entry": "2021-05-31"
+  }
+}

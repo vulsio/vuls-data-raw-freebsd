@@ -1,0 +1,62 @@
+{
+  "vid": "8b1f53f3-2da5-11e5-86ff-14dae9d210b8",
+  "topic": "php-phar -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php56-phar"
+      ],
+      "range": [
+        {
+          "lt": "5.6.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55-phar"
+      ],
+      "range": [
+        {
+          "lt": "5.5.27"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php5-phar"
+      ],
+      "range": [
+        {
+          "lt": "5.4.43"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p> reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/141\">\n\t  <p>Segfault in Phar::convertToData on invalid file.</p>\n\t  <p>Buffer overflow and stack smashing error in phar_fix_filepath.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.php.net/bug.php?id=69958",
+      "http://git.php.net/?p=php-src.git;a=commit;h=bf58162ddf970f63502837f366930e44d6a992cf",
+      "https://bugs.php.net/bug.php?id=69923",
+      "http://git.php.net/?p=php-src.git;a=commit;h=6dedeb40db13971af45276f80b5375030aa7e76f"
+    ],
+    "cvename": [
+      "CVE-2015-5589",
+      "CVE-2015-5590"
+    ],
+    "mlist": [
+      {
+        "text": "http://seclists.org/oss-sec/2015/q3/141"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-24",
+    "entry": "2015-07-18",
+    "modified": "2015-12-18"
+  }
+}

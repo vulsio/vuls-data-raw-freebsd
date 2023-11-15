@@ -1,0 +1,45 @@
+{
+  "vid": "5bf6ed6d-9002-4f43-ad63-458f59e45384",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "le": "2.227"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "le": "2.204.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2020-03-25/\">\n\t  <h1>Description</h1>\n\t  <h5>(High) SECURITY-1774 / CVE-2020-2160</h5>\n\t  <p>CSRF protection for any URL could be bypassed</p>\n\t  <h5>(Medium) SECURITY-1781 / CVE-2020-2161</h5>\n\t  <p>Stored XSS vulnerability in label expression validation</p>\n\t  <h5>(Medium) SECURITY-1793 / CVE-2020-2162</h5>\n\t  <p>Stored XSS vulnerability in file parameters</p>\n\t  <h5>(Medium) SECURITY-1796 / CVE-2020-2163</h5>\n\t  <p>Stored XSS vulnerability in list view column headers</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jenkins.io/security/advisory/2020-03-25/"
+    ],
+    "cvename": [
+      "CVE-2020-2160",
+      "CVE-2020-2161",
+      "CVE-2020-2162",
+      "CVE-2020-2163"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-03-25",
+    "entry": "2020-03-25"
+  }
+}

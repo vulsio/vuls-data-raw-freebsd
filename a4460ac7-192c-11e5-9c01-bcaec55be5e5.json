@@ -1,0 +1,33 @@
+{
+  "vid": "a4460ac7-192c-11e5-9c01-bcaec55be5e5",
+  "topic": "devel/ipython -- remote execution",
+  "affects": [
+    {
+      "name": [
+        "ipython"
+      ],
+      "range": [
+        {
+          "lt": "3.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Kyle Kelley reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q2/779\">\n\t  <p>Summary: JSON error responses from the IPython notebook REST API\n\t  contained URL parameters and were incorrectly reported as text/html\n\t  instead of application/json. The error messages included some of these\n\t  URL params, resulting in a cross site scripting attack. This affects\n\t  users on Mozilla Firefox but not Chromium/Google Chrome.</p>\n\t  <p>API paths with issues:</p>\n\t  <ul>\n\t    <li>/api/contents (3.0-3.1)</li>\n\t    <li>/api/notebooks (2.0-2.4, 3.0-3.1)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://seclists.org/oss-sec/2015/q2/779"
+    ],
+    "cvename": [
+      "CVE-2015-4706",
+      "CVE-2015-4707"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-22",
+    "entry": "2015-06-22"
+  }
+}

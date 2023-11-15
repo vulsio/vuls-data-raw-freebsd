@@ -1,0 +1,40 @@
+{
+  "vid": "6a3c3e5c-66cb-11e0-a116-c535f3aa24f0",
+  "topic": "krb5 -- MITKRB5-SA-2011-004, kadmind invalid pointer free() [CVE-2011-0285]",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2",
+          "ge": "1.7"
+        },
+        {
+          "lt": "1.8.4",
+          "ge": "1.8"
+        },
+        {
+          "eq": "1.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An advisory published by the MIT Kerberos team says:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-004.txt\">\n\t  <p>The password-changing capability of the MIT krb5 administration\n\t    daemon (kadmind) has a bug that can cause it to attempt to free()\n\t    an invalid pointer under certain error conditions.  This can cause\n\t    the daemon to crash or induce the execution of arbitrary code\n\t    (which is believed to be difficult).  No exploit that executes\n\t    arbitrary code is known to exist, but it is easy to trigger a\n\t    denial of service manually.</p>\n\t  <p>Some platforms detect attempted freeing of invalid pointers and\n\t    protectively terminate the process, preventing arbitrary code\n\t    execution on those platforms.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-004.txt"
+    ],
+    "cvename": [
+      "CVE-2011-0285"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-04-12",
+    "entry": "2011-04-14"
+  }
+}

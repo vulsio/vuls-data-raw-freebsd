@@ -1,0 +1,39 @@
+{
+  "vid": "6905f05f-a0c9-11e8-8335-8c164535ad80",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.138"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "lt": "2.121.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2018-08-15/\">\n\t  <h1>Description</h1>\n\t  <h5>(Low) SECURITY-637</h5>\n\t  <p> Jenkins allowed deserialization of URL objects with host components</p>\n\t  <h5>(Medium) SECURITY-672</h5>\n\t  <p>Ephemeral user record was created on some invalid authentication attempts</p>\n\t  <h5>(Medium) SECURITY-790</h5>\n\t  <p>Cron expression form validation could enter infinite loop, potentially resulting in denial of service</p>\n\t  <h5>(Low) SECURITY-996</h5>\n\t  <p>\"Remember me\" cookie was evaluated even if that feature is disabled</p>\n\t  <h5>(Medium) SECURITY-1071</h5>\n\t  <p>Unauthorized users could access agent logs</p>\n\t  <h5>(Low) SECURITY-1076</h5>\n\t  <p>Unauthorized users could cancel scheduled restarts initiated from the update center</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jenkins.io/security/advisory/2018-08-15/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-15",
+    "entry": "2018-08-15"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "vid": "7fc3e827-64a5-11e8-aedb-00224d821998",
+  "topic": "strongswan -- Fix Denial-of-Service Vulnerability strongSwan (CVE-2018-10811, CVE-2018-5388)",
+  "affects": [
+    {
+      "name": [
+        "strongswan"
+      ],
+      "range": [
+        {
+          "lt": "5.6.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>strongSwan security team reports:</p>\n\t<blockquote cite=\"https://www.strongswan.org/blog/2018/05/28/strongswan-5.6.3-released.html\">\n\t  <ul><li>A denial-of-service vulnerability in the IKEv2 key derivation was fixed\n\t     if the openssl plugin is used in FIPS mode and HMAC-MD5 is negotiated as\n\t     PRF (which is not FIPS-compliant). So this should only affect very specific setups,\n\t     but in such configurations all strongSwan versions since 5.0.1 may be affected.</li>\n\t     <li>A denial-of-service vulnerability in the stroke plugin was fixed.\n\t\t When reading a message from the socket the plugin did not check the received length.\n\t\t Unless a group is configured, root privileges are required to access that socket,\n\t\t so in the default configuration this shouldn't be an issue, but all strongSwan versions may be affected.\n\t     </li>\n\t </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.strongswan.org/blog/2018/05/28/strongswan-vulnerability-(cve-2018-10811).html",
+      "https://www.strongswan.org/blog/2018/05/28/strongswan-vulnerability-(cve-2018-5388).html"
+    ],
+    "cvename": [
+      "CVE-2018-10811",
+      "CVE-2018-5388"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-05-16",
+    "entry": "2018-05-31"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "f8b46415-c264-11ea-8659-901b0ef719ab",
+  "topic": "FreeBSD -- posix_spawnp(3) buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "11.4_1",
+          "ge": "11.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>posix_spawnp spawns a new thread with a limited stack allocated on the heap\n\tbefore delegating to execvp for the final execution within that thread.</p>\n\t<p>execvp would previously make unbounded allocations on the stack, directly\n\tproportional to the length of the user-controlled PATH environment variable.</p>\n\t<h1>Impact:</h1>\n\t<p>Long values in the user-controlled PATH environment variable cause\n\tposix_spawnp to write beyond the end of stack that was allocated, ultimately\n\toverflowing the heap-allocated stack with a direct copy of the value stored\n\tin PATH.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-7458"
+    ],
+    "freebsd_sa": [
+      "SA-20:18.posix_spawnp"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-09",
+    "entry": "2020-07-10"
+  }
+}

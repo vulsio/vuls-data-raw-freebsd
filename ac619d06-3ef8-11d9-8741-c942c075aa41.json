@@ -1,0 +1,95 @@
+{
+  "vid": "ac619d06-3ef8-11d9-8741-c942c075aa41",
+  "topic": "jdk/jre -- Security Vulnerability With Java Plugin",
+  "affects": [
+    {
+      "name": [
+        "jdk"
+      ],
+      "range": [
+        {
+          "ge": "1.4.0",
+          "le": "1.4.2p6_6"
+        },
+        {
+          "ge": "1.3.0",
+          "le": "1.3.1p9_5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-jdk",
+        "linux-sun-jdk"
+      ],
+      "range": [
+        {
+          "ge": "1.4.0",
+          "le": "1.4.2.05"
+        },
+        {
+          "ge": "1.3.0",
+          "le": "1.3.1.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-blackdown-jdk"
+      ],
+      "range": [
+        {
+          "ge": "1.3.0",
+          "le": "1.4.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-ibm-jdk"
+      ],
+      "range": [
+        {
+          "ge": "1.3.0",
+          "le": "1.4.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "diablo-jdk",
+        "diablo-jre"
+      ],
+      "range": [
+        {
+          "ge": "1.3.1.0",
+          "le": "1.3.1.0_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Sun Java Plugin capability in Java 2 Runtime Environment\n\t  (JRE) 1.4.2_01, 1.4.2_04, and possibly earlier versions, does\n\t  not properly restrict access between Javascript and Java\n\t  applets during data transfer, which allows remote attackers to\n\t  load unsafe classes and execute arbitrary code.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://sunsolve.sun.com/search/document.do?assetkey=1-26-57591-1&searchclause=%22category:security%22%20%22availability,%20security%22",
+      "http://www.securityfocus.com/archive/1/382072"
+    ],
+    "cvename": [
+      "CVE-2004-1029"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110125046627909",
+        "msgid": "20041123070248.GA25385@jouko.iki.fi"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-24",
+    "entry": "2004-11-25",
+    "modified": "2005-04-27"
+  }
+}

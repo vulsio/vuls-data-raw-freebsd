@@ -1,0 +1,37 @@
+{
+  "vid": "ab947396-9018-11e6-a590-14dae9d210b8",
+  "topic": "openoffice -- information disclosure vulnerability",
+  "affects": [
+    {
+      "name": [
+        "apache-openoffice",
+        "apache-openoffice-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Apache reports:</p>\n\t<blockquote cite=\"http://www.openoffice.org/security/cves/CVE-2014-3575.html\">\n\t  <p>The exposure exploits the way OLE previews are generated to\n\t    embed arbitrary file data into a specially crafted document when it is\n\t    opened. Data exposure is possible if the updated document is distributed\n\t    to other parties.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openoffice.org/security/cves/CVE-2014-3575.html"
+    ],
+    "cvename": [
+      "CVE-2014-3575"
+    ],
+    "freebsd_pr": [
+      "ports/212379"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-08-21",
+    "entry": "2016-10-12",
+    "modified": "2016-10-18"
+  }
+}

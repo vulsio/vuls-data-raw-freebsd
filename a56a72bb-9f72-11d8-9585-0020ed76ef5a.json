@@ -1,0 +1,32 @@
+{
+  "vid": "a56a72bb-9f72-11d8-9585-0020ed76ef5a",
+  "topic": "phpBB session table exhaustion",
+  "affects": [
+    {
+      "name": [
+        "phpbb"
+      ],
+      "range": [
+        {
+          "le": "2.0.8_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The includes/sessions.php unnecessarily adds session item into\n\t  session table and therefore vulnerable to a denial-of-service\n\t  attack.</p>\n\t"
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=108256462710010",
+        "msgid": "20040421011055.GA1448@frontfree.net"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-05",
+    "entry": "2004-05-06"
+  }
+}

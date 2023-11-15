@@ -1,0 +1,41 @@
+{
+  "vid": "499f6b41-58db-4f98-b8e7-da8c18985eda",
+  "topic": "quassel -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "quassel"
+      ],
+      "range": [
+        {
+          "lt": "0.12.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "quassel-core"
+      ],
+      "range": [
+        {
+          "lt": "0.12.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gentoo reports:</p>\n\t<blockquote cite=\"https://bugs.gentoo.org/653834\">\n\t  <p>quasselcore: corruption of heap metadata caused by qdatastream\n\t    leading to preauth remote code execution.</p>\n\t    <ul>\n\t      <li>Severity: high, by default the server port is publicly open\n\t\tand the address can be requested using the /WHOIS command of IRC\n\t\tprotocol.</li>\n\t      <li>Description: In Qdatastream protocol each object is prepended\n\t\twith 4 bytes for the object size, this can be used to trigger\n\t\tallocation errors.</li>\n\t    </ul>\n\t  <p>quasselcore DDOS</p>\n\t    <ul>\n\t      <li>Severity: low, only impacts unconfigured quasselcore\n\t\tinstances.</li>\n\t      <li>Description: A login attempt causes a NULL pointer dereference\n\t\twhen the database is not initialized.</li>\n\t    </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.gentoo.org/653834",
+      "https://github.com/quassel/quassel/commit/08bace4e9ecf08273f094c0c6aa8b3363d38ac3e",
+      "https://github.com/quassel/quassel/commit/18389a713a6810f57ab237b945e8ee03df857b8b"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-04-24",
+    "entry": "2018-04-26"
+  }
+}

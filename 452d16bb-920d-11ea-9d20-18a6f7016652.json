@@ -1,0 +1,33 @@
+{
+  "vid": "452d16bb-920d-11ea-9d20-18a6f7016652",
+  "topic": "qutebrowser -- Reloading page with certificate errors shows a green URL",
+  "affects": [
+    {
+      "name": [
+        "qutebrowser"
+      ],
+      "range": [
+        {
+          "lt": "1.11.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Qutebrowser developers report:</p>\n\t<blockquote cite=\"https://github.com/qutebrowser/qutebrowser/security/advisories/GHSA-4rcq-jv2f-898j\">\n\t  <p>After a certificate error was overridden by the user,\n\t    qutebrowser displays the URL as yellow (colors.statusbar.url.warn.fg).\n\t    However, when the affected website was subsequently loaded again,\n\t    the URL was mistakenly displayed as green (colors.statusbar.url.success_https).\n\t    While the user already has seen a certificate error prompt at this point\n\t    (or set content.ssl_strict to false which is not recommended),\n\t    this could still provide a false sense of security.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/qutebrowser/qutebrowser/security/advisories/GHSA-4rcq-jv2f-898j",
+      "https://github.com/qutebrowser/qutebrowser/issues/5403"
+    ],
+    "cvename": [
+      "CVE-2020-11054"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-05-02",
+    "entry": "2020-05-09"
+  }
+}

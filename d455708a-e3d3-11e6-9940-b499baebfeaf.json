@@ -1,0 +1,84 @@
+{
+  "vid": "d455708a-e3d3-11e6-9940-b499baebfeaf",
+  "topic": "OpenSSL -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2k,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.1.0d"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c6-openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1e_13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c7-openssl-libs"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1e_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "11.0_8",
+          "ge": "11.0"
+        },
+        {
+          "lt": "10.3_17",
+          "ge": "10.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20170126.txt\">\n\t  <ul>\n\t    <li>Truncated packet could crash via OOB read (CVE-2017-3731)</li>\n\t    <li>Bad (EC)DHE parameters cause a client crash (CVE-2017-3730)</li>\n\t    <li>BN_mod_exp may produce incorrect results on x86_64 (CVE-2017-3732)</li>\n\t    <li>Montgomery multiplication may produce incorrect results (CVE-2016-7055)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20170126.txt"
+    ],
+    "cvename": [
+      "CVE-2016-7055",
+      "CVE-2017-3730",
+      "CVE-2017-3731",
+      "CVE-2017-3732"
+    ],
+    "freebsd_sa": [
+      "SA-17:02.openssl"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-01-26",
+    "entry": "2017-01-26",
+    "modified": "2017-05-26"
+  }
+}

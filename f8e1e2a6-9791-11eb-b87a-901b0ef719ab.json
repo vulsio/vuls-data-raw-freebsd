@@ -1,0 +1,33 @@
+{
+  "vid": "f8e1e2a6-9791-11eb-b87a-901b0ef719ab",
+  "topic": "FreeBSD -- double free in accept_filter(9) socket configuration interface",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.2_6",
+          "ge": "12.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>An unprivileged process can configure an accept filter on a listening\n\tsocket.  This is done using the setsockopt(2) system call.  The process\n\tsupplies the name of the accept filter which is to be attached to the\n\tsocket, as well as a string containing filter-specific information.</p>\n\t<p>If the filter implements the accf_create callback, the socket option\n\thandler attempts to preserve the process-supplied argument string.  A\n\tbug in the socket option handler caused this string to be freed\n\tprematurely, leaving a dangling pointer.  Additional operations on the\n\tsocket can turn this into a double free or a use-after-free.</p>\n\t<h1>Impact:</h1>\n\t<p>The bug may be exploited to trigger local privilege escalation or\n\tkernel memory disclosure.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2021-29627"
+    ],
+    "freebsd_sa": [
+      "SA-21:09.accept_filter"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-06",
+    "entry": "2021-04-07"
+  }
+}

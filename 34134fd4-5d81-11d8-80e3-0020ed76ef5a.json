@@ -1,0 +1,31 @@
+{
+  "vid": "34134fd4-5d81-11d8-80e3-0020ed76ef5a",
+  "topic": "pine insecure URL handling",
+  "affects": [
+    {
+      "name": [
+        "pine",
+        "zh-pine",
+        "iw-pine"
+      ],
+      "range": [
+        {
+          "lt": "4.44"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An attacker may send an email message containing a specially\n\t  constructed URL that will execute arbitrary commands when\n\t  viewed.</p>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-02:05.pine"
+    ]
+  },
+  "dates": {
+    "discovery": "2002-01-04",
+    "entry": "2004-02-12"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "6107efb9-aae3-11da-aea1-000854d03344",
+  "topic": "gtar -- invalid headers buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "gtar"
+      ],
+      "range": [
+        {
+          "lt": "1.15.1_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GNU tar is vulnerable to a buffer overflow, caused by\n\t  improper bounds checking of the PAX extended headers. By\n\t  tricking an user into processing a specially crafted tar\n\t  archive, this could be exploited to execute arbitrary\n\t  code with the privileges of the user.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-0300"
+    ],
+    "bid": [
+      "16764"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-02-22",
+    "entry": "2006-03-03"
+  }
+}

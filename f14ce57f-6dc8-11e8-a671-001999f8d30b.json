@@ -1,0 +1,29 @@
+{
+  "vid": "f14ce57f-6dc8-11e8-a671-001999f8d30b",
+  "topic": "asterisk -- Infinite loop when reading iostreams",
+  "affects": [
+    {
+      "name": [
+        "asterisk15"
+      ],
+      "range": [
+        {
+          "lt": "15.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When connected to Asterisk via TCP/TLS if the client\n\t  abruptly disconnects, or sends a specially crafted message\n\t  then Asterisk gets caught in an infinite loop while trying\n\t  to read the data stream. Thus rendering the system as\n\t  unusable.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2018-007.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-11",
+    "entry": "2018-06-11"
+  }
+}

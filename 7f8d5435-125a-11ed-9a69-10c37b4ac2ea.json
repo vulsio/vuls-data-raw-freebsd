@@ -1,0 +1,42 @@
+{
+  "vid": "7f8d5435-125a-11ed-9a69-10c37b4ac2ea",
+  "topic": "go -- decoding big.Float and big.Rat can panic",
+  "affects": [
+    {
+      "name": [
+        "go118"
+      ],
+      "range": [
+        {
+          "lt": "1.18.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "go117"
+      ],
+      "range": [
+        {
+          "lt": "1.17.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/53871\">\n\t  <p>encoding/gob &amp; math/big: decoding big.Float and\n\t    big.Rat can panic</p>\n\t  <p>Decoding big.Float and big.Rat types can panic if the\n\t    encoded message is too short.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://groups.google.com/g/golang-announce/c/YqYYG87xB10"
+    ],
+    "cvename": [
+      "CVE-2022-32189"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-07-14",
+    "entry": "2022-08-02"
+  }
+}

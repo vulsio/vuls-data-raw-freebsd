@@ -1,0 +1,46 @@
+{
+  "vid": "134acaa2-51ef-11e2-8e34-0022156e8794",
+  "topic": "tomcat -- denial of service",
+  "affects": [
+    {
+      "name": [
+        "tomcat"
+      ],
+      "range": [
+        {
+          "ge": "6.0.0",
+          "le": "6.0.35"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat7"
+      ],
+      "range": [
+        {
+          "ge": "7.0.0",
+          "le": "7.0.27"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-7.html\">\n\t  <p>When using the NIO connector with sendfile and HTTPS enabled, if a\n\t     client breaks the connection while reading the response an infinite loop\n\t     is entered leading to a denial of service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://tomcat.apache.org/security-6.html",
+      "http://tomcat.apache.org/security-7.html"
+    ],
+    "cvename": [
+      "CVE-2012-4534"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-12-04",
+    "entry": "2012-12-04",
+    "modified": "2017-03-18"
+  }
+}

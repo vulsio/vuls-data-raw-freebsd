@@ -1,0 +1,39 @@
+{
+  "vid": "d2a892b9-2605-11e4-9da0-00a0986f28c4",
+  "topic": "PHP multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php53"
+      ],
+      "range": [
+        {
+          "lt": "5.3.29"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP Team reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.3.29\">\n\t  <p>insecure temporary file use in the configure script</p>\n\t  <p>unserialize() SPL ArrayObject / SPLObjectStorage Type Confusion\n\t    </p>\n\t  <p>Heap buffer over-read in DateInterval</p>\n\t  <p>fileinfo: cdf_read_short_sector insufficient boundary check</p>\n\t  <p>fileinfo: CDF infinite loop in nelements DoS</p>\n\t  <p>fileinfo: fileinfo: numerous file_printf calls resulting in\n\t    performance degradation)</p>\n\t  <p>Fix potential segfault in dns_check_record()</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-5.php#5.3.29",
+      "https://www.sektioneins.de/en/blog/14-07-04-phpinfo-infoleak.html"
+    ],
+    "cvename": [
+      "CVE-2013-6712",
+      "CVE-2014-0207",
+      "CVE-2014-0237",
+      "CVE-2014-0238",
+      "CVE-2014-3515",
+      "CVE-2014-3981",
+      "CVE-2014-4049"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-08-14",
+    "entry": "2014-08-18"
+  }
+}

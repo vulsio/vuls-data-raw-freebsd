@@ -1,0 +1,80 @@
+{
+  "vid": "d86890da-f498-11e4-99aa-bcaec565249c",
+  "topic": "wordpress -- 2 cross-site scripting vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.2.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ja-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ru-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zh-wordpress-zh_CN"
+      ],
+      "range": [
+        {
+          "lt": "4.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zh-wordpress-zh_TW"
+      ],
+      "range": [
+        {
+          "lt": "4.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Samuel Sidler reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2015/05/wordpress-4-2-2/\">\n\t  <p>The Genericons icon font package, which is used in a number of\n\t    popular themes and plugins, contained an HTML file vulnerable to\n\t    a cross-site scripting attack. All affected themes and plugins\n\t    hosted on WordPress.org (including the Twenty Fifteen default\n\t    theme) have been updated today by the WordPress security team\n\t    to address this issue by removing this nonessential file. To\n\t    help protect other Genericons usage, WordPress 4.2.2\n\t    proactively scans the wp-content directory for this HTML\n\t    file and removes it. Reported by Robert Abela of Netsparker.</p>\n\n\t  <p>WordPress versions 4.2 and earlier are affected by a critical\n\t    cross-site scripting vulnerability, which could enable anonymous\n\t    users to compromise a site. WordPress 4.2.2 includes a\n\t    comprehensive fix for this issue.</p>\n\n\t  <p>The release also includes hardening for a potential cross-site\n\t    scripting vulnerability when using the visual editor. This issue\n\t    was reported by Mahadev Subedi.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wordpress.org/news/2015/05/wordpress-4-2-2/"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-05-07",
+    "entry": "2015-05-07",
+    "modified": "2015-09-15"
+  }
+}

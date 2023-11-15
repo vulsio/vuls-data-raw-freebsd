@@ -1,0 +1,38 @@
+{
+  "vid": "c7526a14-c4dc-11da-9699-00123ffe8333",
+  "topic": "mplayer -- Multiple integer overflows",
+  "affects": [
+    {
+      "name": [
+        "mplayer",
+        "mplayer-esound",
+        "mplayer-gtk",
+        "mplayer-gtk2",
+        "mplayer-gtk-esound",
+        "mplayer-gtk2-esound"
+      ],
+      "range": [
+        {
+          "lt": "0.99.7_12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19418/\">\n\t  <p>The vulnerabilities are caused due to integer overflow errors\n\t    in \"libmpdemux/asfheader.c\" within the handling of an ASF file,\n\t    and in \"libmpdemux/aviheader.c\" when parsing the \"indx\" chunk in\n\t    an AVI file. This can be exploited to cause heap-based buffer\n\t    overflows via a malicious ASF file, or via a AVI file with\n\t    specially-crafted \"wLongsPerEntry\" and \"nEntriesInUse\" values in\n\t    the \"indx\" chunk.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.xfocus.org/advisories/200603/11.html",
+      "http://secunia.com/advisories/19418/"
+    ],
+    "cvename": [
+      "CVE-2006-1502"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-03-29",
+    "entry": "2006-04-07"
+  }
+}

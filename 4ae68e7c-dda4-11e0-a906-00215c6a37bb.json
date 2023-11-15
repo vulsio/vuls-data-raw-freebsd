@@ -1,0 +1,29 @@
+{
+  "vid": "4ae68e7c-dda4-11e0-a906-00215c6a37bb",
+  "topic": "roundcube -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "roundcube"
+      ],
+      "range": [
+        {
+          "lt": "0.5.4,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>RoundCube development Team reports:</p>\n\t<blockquote cite=\"http://sourceforge.net/news/?group_id=139281&amp;id=302769\">\n\t  <p>We just published a new release which fixes a recently\n\t    reported XSS vulnerability as an update to the stable 0.5\n\t    branch.  Please update your installations with this new\n\t    version or patch them with the fix which is also published\n\t    in the downloads section or our sourceforge.net page.</p>\n\t</blockquote>\n\t<p>and:</p>\n\t<blockquote cite=\"http://trac.roundcube.net/ticket/1488030\">\n\t  <p>During one of pen-tests I found that _mbox parameter is not\n\t    properly sanitized and reflected XSS attack is possible.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2011-2937"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-08-09",
+    "entry": "2011-09-13"
+  }
+}

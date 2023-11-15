@@ -1,0 +1,35 @@
+{
+  "vid": "a1126054-b57c-11dd-8892-0017319806e7",
+  "topic": "enscript -- arbitrary code execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "enscript-a4",
+        "enscript-letter",
+        "enscript-letterdj"
+      ],
+      "range": [
+        {
+          "lt": "1.6.4_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ulf Harnhammar of Secunia Research reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3863\">\n\t  <p>Stack-based buffer overflow in the read_special_escape function\n\t    in src/psgen.c in GNU Enscript 1.6.1 and 1.6.4 beta, when the -e\n\t    (aka special escapes processing) option is enabled, allows\n\t    user-assisted remote attackers to execute arbitrary code via a\n\t    crafted ASCII file, related to the setfilename command.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/secunia_research/2008-41/"
+    ],
+    "cvename": [
+      "CVE-2008-3863",
+      "CVE-2008-4306"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-10-22",
+    "entry": "2008-11-18"
+  }
+}

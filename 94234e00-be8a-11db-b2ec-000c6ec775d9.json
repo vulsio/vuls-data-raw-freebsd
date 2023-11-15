@@ -1,0 +1,47 @@
+{
+  "vid": "94234e00-be8a-11db-b2ec-000c6ec775d9",
+  "topic": "rar -- password prompt buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "rar"
+      ],
+      "range": [
+        {
+          "lt": "3.70.b1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "unrar",
+        "zh-unrar"
+      ],
+      "range": [
+        {
+          "lt": "3.70.b1,4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>iDefense reports:</p>\n\t<blockquote cite=\"http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=472\">\n\t  <p>Remote exploitation of a stack based buffer overflow\n\t    vulnerability in RARLabs Unrar may allow an attacker to\n\t    execute arbitrary code with the privileges of the user\n\t    opening the archive.</p>\n\t  <p>Unrar is prone to a stack based buffer overflow when\n\t    processing specially crafted password protected\n\t    archives.</p>\n\t  <p>If users are using the vulnerable command line based\n\t    unrar, they still need to interact with the program in\n\t    order to trigger the vulnerability. They must respond to\n\t    the prompt asking for the password, after which the\n\t    vulnerability will be triggered. They do not need to enter\n\t    a correct password, but they must at least push the enter\n\t    key.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=472",
+      "http://www.rarsoft.com/rarnew.htm"
+    ],
+    "cvename": [
+      "CVE-2007-0855"
+    ],
+    "bid": [
+      "22447"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-02-07",
+    "entry": "2007-02-17"
+  }
+}

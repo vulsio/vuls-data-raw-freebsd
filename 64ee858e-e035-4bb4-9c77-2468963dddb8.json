@@ -1,0 +1,30 @@
+{
+  "vid": "64ee858e-e035-4bb4-9c77-2468963dddb8",
+  "topic": "libvorbis -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libvorbis"
+      ],
+      "range": [
+        {
+          "lt": "1.3.6,3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-14632\">\n\t  <p>Xiph.Org libvorbis 1.3.5 allows Remote Code Execution\n\t    upon freeing uninitialized memory in the function\n\t    vorbis_analysis_headerout() in info.c when\n\t    vi-&gt;channels&lt;=0, a similar issue to Mozilla bug\n\t    550184.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-14633\">\n\t  <p>In Xiph.Org libvorbis 1.3.5, an out-of-bounds array read\n\t    vulnerability exists in the function mapping0_forward() in\n\t    mapping0.c, which may lead to DoS when operating on a\n\t    crafted audio file with vorbis_analysis().</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2017-14632",
+      "CVE-2017-14633"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-16",
+    "entry": "2018-03-16"
+  }
+}

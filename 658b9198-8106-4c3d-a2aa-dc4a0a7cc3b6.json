@@ -1,0 +1,29 @@
+{
+  "vid": "658b9198-8106-4c3d-a2aa-dc4a0a7cc3b6",
+  "topic": "zeek -- potential DoS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "5.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v5.0.4\">\n\t  <p> A specially-crafted series of HTTP 0.9 packets can\n\t  cause Zeek to spend large amounts of time processing the\n\t  packets. </p>\n\t  <p> A specially-crafted FTP packet can cause Zeek to spend\n\t  large amounts of time processing the command. </p>\n\t  <p> A specially-crafted IPv6 packet can cause Zeek to\n\t  overflow memory and potentially crash. </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/zeek/zeek/releases/tag/v5.0.4"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-24",
+    "entry": "2022-11-24"
+  }
+}

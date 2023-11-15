@@ -1,0 +1,49 @@
+{
+  "vid": "6d472244-6007-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- TCP reassembly vulnerability",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "8.4_9",
+          "ge": "8.4"
+        },
+        {
+          "lt": "8.3_16",
+          "ge": "8.3"
+        },
+        {
+          "lt": "9.2_5",
+          "ge": "9.2"
+        },
+        {
+          "lt": "9.1_12",
+          "ge": "9.1"
+        },
+        {
+          "lt": "10.0_2",
+          "ge": "10.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>FreeBSD may add a reassemble queue entry on the stack\n\tinto the segment list when the reassembly queue reaches its\n\tlimit. The memory from the stack is undefined after the\n\tfunction returns. Subsequent iterations of the reassembly\n\tfunction will attempt to access this entry.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can send a series of specifically crafted\n\tpackets with a connection could cause a denial of service\n\tsituation by causing the kernel to crash.</p>\n\t<p>Additionally, because the undefined on stack memory may\n\tbe overwritten by other kernel threads, while extremely\n\tdifficult, it may be possible for an attacker to construct\n\ta carefully crafted attack to obtain portion of kernel\n\tmemory via a connected socket. This may result in the\n\tdisclosure of sensitive information such as login credentials,\n\tetc. before or even without crashing the system.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-3000"
+    ],
+    "freebsd_sa": [
+      "SA-14:08.tcp"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-04-30",
+    "entry": "2016-08-11"
+  }
+}

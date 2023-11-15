@@ -1,0 +1,37 @@
+{
+  "vid": "09910d76-4c82-11df-83fb-0015587e2cc1",
+  "topic": "fetchmail -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "fetchmail"
+      ],
+      "range": [
+        {
+          "ge": "4.6.3",
+          "le": "6.3.16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Fetchmail developer Matthias Andree reported a vulnerability\n\t  that allows remote attackers to crash the application\n\t  when it is runs in verbose mode.</p>\n\t<blockquote cite=\"http://gitorious.org/fetchmail/fetchmail/commit/ec06293\">\n\t  <p>Fetchmail before release 6.3.17 did not properly\n\t    sanitize external input (mail headers and UID). When a\n\t    multi-character locale (such as UTF-8) was in use, this\n\t    could cause memory exhaustion and thus a denial of\n\t    service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://gitorious.org/fetchmail/fetchmail/commit/ec06293",
+      "http://seclists.org/oss-sec/2010/q2/76"
+    ],
+    "cvename": [
+      "CVE-2010-1167"
+    ],
+    "freebsd_pr": [
+      "ports/145857"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-04-18",
+    "entry": "2010-04-20"
+  }
+}

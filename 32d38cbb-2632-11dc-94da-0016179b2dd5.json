@@ -1,0 +1,34 @@
+{
+  "vid": "32d38cbb-2632-11dc-94da-0016179b2dd5",
+  "topic": "flac123 -- stack overflow in comment parsing",
+  "affects": [
+    {
+      "name": [
+        "flac123"
+      ],
+      "range": [
+        {
+          "lt": "0.0.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>isecpartners reports:</p>\n\t<blockquote cite=\"http://www.isecpartners.com/advisories/2007-002-flactools.txt\">\n\t  <p>flac123, also known as flac-tools, is vulnerable\n\t    to a buffer overflow in vorbis comment parsing.\n\t    This allows for the execution of arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://sourceforge.net/forum/forum.php?forum_id=710314",
+      "http://www.isecpartners.com/advisories/2007-002-flactools.txt"
+    ],
+    "cvename": [
+      "CVE-2007-3507"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-06-05",
+    "entry": "2007-06-28",
+    "modified": "2007-08-10"
+  }
+}

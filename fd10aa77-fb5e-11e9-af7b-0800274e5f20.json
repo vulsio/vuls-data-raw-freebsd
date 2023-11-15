@@ -1,0 +1,30 @@
+{
+  "vid": "fd10aa77-fb5e-11e9-af7b-0800274e5f20",
+  "topic": "gitea -- information disclosure",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.9.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea Team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/issues/8303\">\n\t  <p>When a comment in an issue or PR mentions a user using\n\t  @username, the mentioned user receives a mail notification even if\n\t  they don't have permission to see the originating repository.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/go-gitea/gitea/releases/tag/v1.9.5",
+      "https://blog.gitea.io/2019/10/gitea-1.9.5-is-released/"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-09-27",
+    "entry": "2019-10-30"
+  }
+}

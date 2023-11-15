@@ -1,0 +1,138 @@
+{
+  "vid": "1d8ff4a2-0445-11e0-8e32-000f20797ede",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "3.6.13,1",
+          "gt": "3.6.*,1"
+        },
+        {
+          "lt": "3.5.16,1",
+          "gt": "3.5.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "1.9.2.13",
+          "gt": "1.9.2.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "3.6.13,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.5.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.0.11",
+          "gt": "2.0.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "3.1.7",
+          "ge": "3.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.0.11",
+          "gt": "2.0.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "3.0.11",
+          "ge": "3.0"
+        },
+        {
+          "lt": "3.1.7",
+          "ge": "3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2010-74 Miscellaneous memory safety hazards (rv:1.9.2.13/ 1.9.1.16)</p>\n\t  <p>MFSA 2010-75 Buffer overflow while line breaking after document.write with long string</p>\n\t  <p>MFSA 2010-76 Chrome privilege escalation with window.open and isindex element</p>\n\t  <p>MFSA 2010-77 Crash and remote code execution using HTML tags inside a XUL tree</p>\n\t  <p>MFSA 2010-78 Add support for OTS font sanitizer</p>\n\t  <p>MFSA 2010-79 Java security bypass from LiveConnect loaded via data: URL meta refresh</p>\n\t  <p>MFSA 2010-80 Use-after-free error with nsDOMAttribute MutationObserver</p>\n\t  <p>MFSA 2010-81 Integer overflow vulnerability in NewIdArray</p>\n\t  <p>MFSA 2010-82 Incomplete fix for CVE-2010-0179</p>\n\t  <p>MFSA 2010-83 Location bar SSL spoofing using network error page</p>\n\t  <p>MFSA 2010-84 XSS hazard in multiple character encodings</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-74.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-75.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-76.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-77.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-78.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-79.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-80.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-81.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-82.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-83.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-84.html"
+    ],
+    "cvename": [
+      "CVE-2010-3766",
+      "CVE-2010-3767",
+      "CVE-2010-3768",
+      "CVE-2010-3769",
+      "CVE-2010-3770",
+      "CVE-2010-3771",
+      "CVE-2010-3772",
+      "CVE-2010-3773",
+      "CVE-2010-3774",
+      "CVE-2010-3775",
+      "CVE-2010-3776",
+      "CVE-2010-3777",
+      "CVE-2010-3778"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-12-09",
+    "entry": "2010-12-10"
+  }
+}

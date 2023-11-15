@@ -1,0 +1,33 @@
+{
+  "vid": "38d2df4d-b143-11e9-87e7-901b0e934d69",
+  "topic": "py-matrix-synapse -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py27-matrix-synapse",
+        "py35-matrix-synapse",
+        "py36-matrix-synapse",
+        "py37-matrix-synapse"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matrix developers report:</p>\n\t<blockquote cite=\"https://matrix.org/blog/2019/07/26/critical-security-update-synapse-1-2-1-released\">\n\t  <p>The matrix team releases Synapse 1.2.1 as a critical security update. It contains patches relating to redactions and event federation:</p>\n\t  <ul>\n\t    <li>Prevent an attack where a federated server could send redactions for arbitrary events in v1 and v2 rooms.</li>\n\t    <li>Prevent a denial-of-service attack where cycles of redaction events would make Synapse spin infinitely.</li>\n\t    <li>Prevent an attack where users could be joined or parted from public rooms without their consent.</li>\n\t    <li>Fix a vulnerability where a federated server could spoof read-receipts from users on other servers. </li>\n\t    <li>It was possible for a room moderator to send a redaction for an m.room.create event, which would downgrade the room to version 1.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://matrix.org/blog/2019/07/26/critical-security-update-synapse-1-2-1-released",
+      "https://github.com/matrix-org/synapse/releases/tag/v1.2.1"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-07-26",
+    "entry": "2019-07-28"
+  }
+}

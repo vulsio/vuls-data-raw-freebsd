@@ -1,0 +1,32 @@
+{
+  "vid": "d8769838-8814-11d8-90d1-0020ed76ef5a",
+  "topic": "racoon fails to verify signature during Phase 1",
+  "affects": [
+    {
+      "name": [
+        "racoon"
+      ],
+      "range": [
+        {
+          "lt": "20040407b"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ralf Spenneberg discovered a serious flaw in racoon.\n\t  When using Phase 1 main or aggressive mode, racoon does\n\t  not verify the client's RSA signature.  Any installations\n\t  using <em>X.509 authentication</em> are <strong>strongly\n\t  urged</strong> to upgrade.</p>\n\t<p>Installations using <em>pre-shared keys</em> are believed\n\t  to be unaffected.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kame.net/dev/cvsweb2.cgi/kame/kame/kame/racoon/crypto_openssl.c?rev=1.84&content-type=text/x-cvsweb-markup"
+    ],
+    "cvename": [
+      "CVE-2004-0155"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-04-05",
+    "entry": "2004-04-07"
+  }
+}

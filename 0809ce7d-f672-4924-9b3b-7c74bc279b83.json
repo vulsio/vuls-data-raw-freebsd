@@ -1,0 +1,35 @@
+{
+  "vid": "0809ce7d-f672-4924-9b3b-7c74bc279b83",
+  "topic": "gtar -- GNU TAR safer_name_suffix Remote Denial of Service Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gtar"
+      ],
+      "range": [
+        {
+          "lt": "1.19"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/26445/\">\n\t  <p>GNUs tar and cpio utilities are prone to a denial-of-service\n\t    vulnerability because of insecure use of the alloca()\n\t    function.</p>\n\t  <p>Successfully exploiting this issue allows attackers\n\t    to crash the affected utilities and possibly to execute\n\t    code but this has not been confirmed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securityfocus.com/bid/26445/"
+    ],
+    "cvename": [
+      "CVE-2007-4476"
+    ],
+    "bid": [
+      "26445"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-11-14",
+    "entry": "2009-01-15"
+  }
+}

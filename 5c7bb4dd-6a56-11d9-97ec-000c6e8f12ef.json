@@ -1,0 +1,38 @@
+{
+  "vid": "5c7bb4dd-6a56-11d9-97ec-000c6e8f12ef",
+  "topic": "konversation -- shell script command injection",
+  "affects": [
+    {
+      "name": [
+        "konversation"
+      ],
+      "range": [
+        {
+          "lt": "0.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Konversation comes with Perl scripts that do not properly escape\n\t  shell characters on executing a script. This makes it possible\n\t  to attack Konversation with shell script command injection.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-0129",
+      "CVE-2005-0130",
+      "CVE-2005-0131"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=110616016509114",
+        "msgid": "200501191739.56585.wouter@coekaerts.be"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-01-19",
+    "entry": "2005-01-19",
+    "modified": "2005-01-21"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "0d4c31ac-cb91-11d8-8898-000d6111a684",
+  "topic": "Remote code injection in phpMyAdmin",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.5.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>This vulnerability would allow remote user to inject PHP code\n\t  to be executed by eval() function.  This vulnerability is only\n\t  exploitable if variable $cfg['LeftFrameLight'] is set to FALSE (in\n\t  file config.inc.php).</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://sf.net/forum/forum.php?forum_id=387635",
+      "http://secunia.com/advisories/11974",
+      "http://eagle.kecapi.com/sec/fd/phpMyAdmin.html"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.securityfocus.com/archive/1/367486",
+        "msgid": "20040629025752.976.qmail@www.securityfocus.com"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-06-29",
+    "entry": "2004-07-02",
+    "modified": "2004-09-28"
+  }
+}

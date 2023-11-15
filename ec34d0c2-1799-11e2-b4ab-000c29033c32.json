@@ -1,0 +1,48 @@
+{
+  "vid": "ec34d0c2-1799-11e2-b4ab-000c29033c32",
+  "topic": "Zend Framework -- Multiple vulnerabilities via XXE injection",
+  "affects": [
+    {
+      "name": [
+        "ZendFramework"
+      ],
+      "range": [
+        {
+          "lt": "1.11.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "magento"
+      ],
+      "range": [
+        {
+          "lt": "1.7.0.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Zend Framework team reports:</p>\n\t<blockquote cite=\"http://framework.zend.com/security/advisory/ZF2012-01\">\n\t  <p>The XmlRpc package of Zend Framework is vulnerable to XML\n\t    eXternal Entity Injection attacks (both server and client).\n\t    The SimpleXMLElement class (SimpleXML PHP extension) is used\n\t    in an insecure way to parse XML data. External entities can be\n\t    specified by adding a specific DOCTYPE element to XML-RPC\n\t    requests. By exploiting this vulnerability an application may be\n\t    coerced to open arbitrary files and/or TCP connections.</p>\n\t  <p>Additionally, the Zend_Dom, Zend_Feed, Zend_Soap, and\n\t    Zend_XmlRpc components are vulnerable to XML Entity Expansion\n\t    (XEE) vectors, leading to Denial of Service vectors. XEE attacks\n\t    occur when the XML DOCTYPE declaration includes XML entity\n\t    definitions that contain either recursive or circular references;\n\t    this leads to CPU and memory consumption, making Denial of\n\t    Service exploits trivial to implement.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.sec-consult.com/files/20120626-0_zend_framework_xxe_injection.txt",
+      "http://framework.zend.com/security/advisory/ZF2012-01",
+      "http://framework.zend.com/security/advisory/ZF2012-02",
+      "http://www.openwall.com/lists/oss-security/2012/06/26/2",
+      "https://secunia.com/advisories/49665/",
+      "http://www.magentocommerce.com/download/release_notes"
+    ],
+    "cvename": [
+      "CVE-2012-3363"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-06-26",
+    "entry": "2012-10-16",
+    "modified": "2015-10-14"
+  }
+}

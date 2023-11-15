@@ -1,0 +1,40 @@
+{
+  "vid": "1e37fa3e-5988-4991-808f-eae98047e2af",
+  "topic": "py-httpie -- exposure of sensitive information vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py37-httpie",
+        "py38-httpie",
+        "py39-httpie",
+        "py310-httpie",
+        "py311-httpie"
+      ],
+      "range": [
+        {
+          "lt": "3.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>Glyph reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2022-34\">\n      <p>HTTPie is a command-line HTTP client.</p>\n      <p>HTTPie has the practical concept of sessions, which help users to persistently store some of the state that belongs to the outgoing requests and incoming responses on the disk for further usage.</p>\n      <p>Before 3.1.0, HTTPie didn't distinguish between cookies and hosts they belonged.</p>\n      <p>This behavior resulted in the exposure of some cookies when there are redirects originating from the actual host to a third party website.</p>\n      <p>Users are advised to upgrade.</p>\n      <p>There are no known workarounds.</p>\n    </blockquote>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2022-167\">\n      <p>Exposure of Sensitive Information to an Unauthorized Actor in GitHub repository httpie/httpie prior to 3.1.0.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2022-34",
+      "https://osv.dev/vulnerability/GHSA-9w4w-cpc8-h2fq",
+      "https://osv.dev/vulnerability/PYSEC-2022-167",
+      "https://osv.dev/vulnerability/GHSA-6pc9-xqrg-wfqw"
+    ],
+    "cvename": [
+      "CVE-2022-24737",
+      "CVE-2022-0430"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-03-07",
+    "entry": "2023-08-31"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vid": "62642942-590f-11eb-a0dc-8c164582fbac",
+  "topic": "Ghostscript -- SAFER Sandbox Breakout",
+  "affects": [
+    {
+      "name": [
+        "ghostscript9-agpl-base"
+      ],
+      "range": [
+        {
+          "lt": "9.52_8",
+          "ge": "9.50"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SO-AND-SO reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2020-15900\">\n\t  <p>A memory corruption issue was found in Artifex\n\t  Ghostscript 9.50 and 9.52. Use of a non-standard\n\t  PostScript operator can allow overriding of file access\n\t  controls. The 'rsearch' calculation for the 'post' size\n\t  resulted in a size that was too large, and could underflow\n\t  to max uint32_t. This was fixed in commit\n\t  5d499272b95a6b890a1397e11d20937de000d31b.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2020-15900"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-28",
+    "entry": "2021-01-17"
+  }
+}

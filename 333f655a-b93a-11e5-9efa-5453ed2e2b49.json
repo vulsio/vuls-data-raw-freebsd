@@ -1,0 +1,56 @@
+{
+  "vid": "333f655a-b93a-11e5-9efa-5453ed2e2b49",
+  "topic": "p5-PathTools -- File::Spec::canonpath loses taint",
+  "affects": [
+    {
+      "name": [
+        "p5-PathTools"
+      ],
+      "range": [
+        {
+          "lt": "3.6200",
+          "gt": "3.4000"
+        }
+      ]
+    },
+    {
+      "name": [
+        "perl5",
+        "perl5.20",
+        "perl5.22",
+        "perl5-devel"
+      ],
+      "range": [
+        {
+          "lt": "5.20.2",
+          "ge": "5.19.9"
+        },
+        {
+          "lt": "5.22.2",
+          "ge": "5.21.0"
+        },
+        {
+          "lt": "5.23.7",
+          "ge": "5.23.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ricardo Signes reports:</p>\n\t<blockquote>\n\t  <p>Beginning in PathTools 3.47 and/or perl 5.20.0, the\n\t    File::Spec::canonpath() routine returned untained strings even if\n\t    passed tainted input. This defect undermines the guarantee of taint\n\t    propagation, which is sometimes used to ensure that unvalidated\n\t    user input does not reach sensitive code.</p>\n\t  <p>This defect was found and reported by David Golden of MongoDB.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://rt.perl.org/Public/Bug/Display.html?id=126862"
+    ],
+    "cvename": [
+      "CVE-2015-8607"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-11",
+    "entry": "2016-01-12",
+    "modified": "2016-08-22"
+  }
+}

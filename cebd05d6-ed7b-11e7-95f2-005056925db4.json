@@ -1,0 +1,40 @@
+{
+  "vid": "cebd05d6-ed7b-11e7-95f2-005056925db4",
+  "topic": "OTRS -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "otrs"
+      ],
+      "range": [
+        {
+          "lt": "5.0.26"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OTRS reports:</p>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2017-07-security-update-otrs-framework/\">\n\t  <p>An attacker who is logged into OTRS as an agent can request special URLs\n\t    from OTRS which can lead to the execution of shell commands with the\n\t    permissions of the web server user.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2017-08-security-update-otrs-framework/\">\n\t  <p>An attacker who is logged into OTRS as a customer can use the ticket search\n\t    form to disclose internal article information of their customer tickets.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2017-09-security-update-otrs-framework/\">\n\t  <p>An attacker who is logged into OTRS as an agent can manipulate form\n\t    parameters and execute arbitrary shell commands with the permissions of the\n\t    OTRS or web server user.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2017-10-security-update-otrs-framework/\">\n\t  <p>An attacker can send a specially prepared email to an OTRS system. If this\n\t    system has cookie support disabled, and a logged in agent clicks a link in this\n\t    email, the session information could be leaked to external systems, allowing the\n\t    attacker to take over the agent’s session.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.otrs.com/security-advisory-2017-07-security-update-otrs-framework/",
+      "https://www.otrs.com/security-advisory-2017-08-security-update-otrs-framework/",
+      "https://www.otrs.com/security-advisory-2017-09-security-update-otrs-framework/",
+      "https://www.otrs.com/security-advisory-2017-10-security-update-otrs-framework/"
+    ],
+    "cvename": [
+      "CVE-2017-16664",
+      "CVE-2017-16854",
+      "CVE-2017-16921"
+    ],
+    "freebsd_pr": [
+      "ports/224729"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-11-21",
+    "entry": "2017-12-30"
+  }
+}

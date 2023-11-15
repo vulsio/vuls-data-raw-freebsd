@@ -1,0 +1,58 @@
+{
+  "vid": "9b2a5e88-02b8-11e2-92d1-000d601460a4",
+  "topic": "php5 -- Denial of Service in php_date_parse_tzfile()",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.2.17_11",
+          "ge": "5.2"
+        },
+        {
+          "lt": "5.3.9",
+          "ge": "5.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php52"
+      ],
+      "range": [
+        {
+          "lt": "5.2.17_11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php53"
+      ],
+      "range": [
+        {
+          "lt": "5.3.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE CVE team reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0789\">\n\t  <p>Memory leak in the timezone functionality in PHP before 5.3.9\n\t    allows remote attackers to cause a denial of service (memory\n\t    consumption) by triggering many strtotime function calls, which are\n\t    not properly handled by the php_date_parse_tzfile cache.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0789",
+      "https://bugs.php.net/bug.php?id=53502"
+    ],
+    "cvename": [
+      "CVE-2012-0789"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-12-08",
+    "entry": "2012-09-19"
+  }
+}

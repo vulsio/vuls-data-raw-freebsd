@@ -1,0 +1,32 @@
+{
+  "vid": "b99f99f6-021e-11ed-8c6f-000c29ffbb6c",
+  "topic": "git -- privilege escalation",
+  "affects": [
+    {
+      "name": [
+        "git"
+      ],
+      "range": [
+        {
+          "lt": "2.37.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The git project reports:</p>\n\t<blockquote cite=\"https://lkml.org/lkml/2022/7/12/1137\">\n\t  <p>Git is vulnerable to privilege escalation in all platforms.\n\t    An unsuspecting user could still be affected by the issue\n\t    reported in CVE-2022-24765, for example when navigating as\n\t    root into a shared tmp directory that is owned by them, but\n\t    where an attacker could create a git repository.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29187"
+    ],
+    "cvename": [
+      "CVE-2022-29187"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-07-12",
+    "entry": "2022-07-12"
+  }
+}

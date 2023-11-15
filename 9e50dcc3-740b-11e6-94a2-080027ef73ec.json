@@ -1,0 +1,33 @@
+{
+  "vid": "9e50dcc3-740b-11e6-94a2-080027ef73ec",
+  "topic": "mailman -- CSRF hardening in parts of the web interface",
+  "affects": [
+    {
+      "name": [
+        "mailman"
+      ],
+      "range": [
+        {
+          "lt": "2.1.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The late Tokio Kikuchi reported:</p>\n\t<blockquote cite=\"https://bugs.launchpad.net/mailman/+bug/775294\">\n\t  <p>We may have to set lifetime for input forms because of recent\n\t    activities on cross-site request forgery (CSRF). The form lifetime\n\t    is successfully deployed in frameworks like web.py or plone etc.\n\t    Proposed branch lp:~tkikuchi/mailman/form-lifetime implement\n\t    lifetime in admin, admindb, options and edithtml interfaces.\n\t    [...]</p>\n\t</blockquote>\n\t<blockquote cite=\"https://launchpad.net/mailman/2.1/2.1.15\">\n\t  <p>The web admin interface has been hardened against CSRF attacks by\n\t  adding a hidden, encrypted token with a time stamp to form submissions\n\t  and not accepting authentication by cookie if the token is missing,\n\t  invalid or older than the new mm_cfg.py setting FORM_LIFETIME which\n\t  defaults to one hour.  Posthumous thanks go to Tokio Kikuchi for this implementation [...].</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.launchpad.net/mailman/+bug/775294",
+      "https://launchpad.net/mailman/2.1/2.1.15"
+    ],
+    "cvename": [
+      "CVE-2016-7123"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-05-02",
+    "entry": "2016-09-06"
+  }
+}

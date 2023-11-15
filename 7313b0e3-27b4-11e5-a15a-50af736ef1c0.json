@@ -1,0 +1,29 @@
+{
+  "vid": "7313b0e3-27b4-11e5-a15a-50af736ef1c0",
+  "topic": "pivotx -- Multiple unrestricted file upload vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "pivotx"
+      ],
+      "range": [
+        {
+          "lt": "2.3.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Pivotx reports:</p>\n\t<blockquote cite=\"http://pivotx.net/page/security\">\n\t  <p>Multiple unrestricted file upload vulnerabilities in fileupload.php\n\t    in PivotX before 2.3.9 allow remote authenticated users to execute\n\t    arbitrary PHP code by uploading a file with a (1) .php or (2) .php#\n\t    extension, and then accessing it via unspecified vectors.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-0341"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-04-15",
+    "entry": "2015-07-11"
+  }
+}

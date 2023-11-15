@@ -1,0 +1,41 @@
+{
+  "vid": "0c064c43-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Resource exhaustion due to sessions stuck in LAST_ACK state",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "10.1_15",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_20",
+          "ge": "9.3"
+        },
+        {
+          "lt": "8.4_34",
+          "ge": "8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>TCP connections transitioning to the LAST_ACK state can\n\tbecome permanently stuck due to mishandling of protocol\n\tstate in certain situations, which in turn can lead to\n\taccumulated consumption and eventual exhaustion of system\n\tresources, such as mbufs and sockets.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can repeatedly establish TCP connections\n\tto a victim system (for instance, a Web server) could create\n\tmany TCP connections that are stuck in LAST_ACK state and\n\tcause resource exhaustion, resulting in a denial of service\n\tcondition. This may also happen in normal operation where\n\tno intentional attack is conducted, but an attacker who can\n\tsend specifically crafted packets can trigger this more\n\treliably.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2015-5358"
+    ],
+    "freebsd_sa": [
+      "SA-15:13.tcp"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-21",
+    "entry": "2016-08-11"
+  }
+}

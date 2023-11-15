@@ -1,0 +1,52 @@
+{
+  "vid": "d226626c-857f-11e0-95cc-001b2134ef46",
+  "topic": "linux-flashplugin -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "linux-flashplugin"
+      ],
+      "range": [
+        {
+          "le": "9.0r289"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-f10-flashplugin"
+      ],
+      "range": [
+        {
+          "lt": "10.3r181.14"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Adobe Product Security Incident Response Team reports:</p>\n\t<blockquote cite=\"http://www.adobe.com/support/security/bulletins/apsb11-12.html\">\n\t  <p>Critical vulnerabilities have been identified in Adobe Flash\n\t    Player 10.2.159.1 and earlier versions (Adobe Flash Player\n\t    10.2.154.28 and earlier for Chrome users) for Windows,\n\t    Macintosh, Linux and Solaris, and Adobe Flash Player 10.2.157.51\n\t    and earlier versions for Android.  These vulnerabilities could\n\t    cause the application to crash and could potentially allow an\n\t    attacker to take control of the affected system.  There are\n\t    reports of malware attempting to exploit one of the\n\t    vulnerabilities, CVE-2011-0627, in the wild via a Flash (.swf)\n\t    file embedded in a Microsoft Word (.doc) or Microsoft Excel\n\t    (.xls) file delivered as an email attachment targeting the\n\t    Windows platform.  However, to date, Adobe has not obtained a\n\t    sample that successfully completes an attack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.adobe.com/support/security/bulletins/apsb11-12.html"
+    ],
+    "cvename": [
+      "CVE-2011-0579",
+      "CVE-2011-0618",
+      "CVE-2011-0619",
+      "CVE-2011-0620",
+      "CVE-2011-0621",
+      "CVE-2011-0622",
+      "CVE-2011-0623",
+      "CVE-2011-0624",
+      "CVE-2011-0625",
+      "CVE-2011-0626",
+      "CVE-2011-0627"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-01-20",
+    "entry": "2011-05-23"
+  }
+}

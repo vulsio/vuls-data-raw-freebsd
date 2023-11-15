@@ -1,0 +1,64 @@
+{
+  "vid": "7f645ee5-7681-11e5-8519-005056ac623e",
+  "topic": "Git -- Execute arbitrary code",
+  "affects": [
+    {
+      "name": [
+        "git"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-gui"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-subversion"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Git release notes:</p>\n\t<blockquote cite=\"https://raw.githubusercontent.com/git/git/master/Documentation/RelNotes/2.6.1.txt\">\n\t  <p>Some protocols (like git-remote-ext) can execute arbitrary code\n\t    found in the URL.  The URLs that submodules use may come from\n\t    arbitrary sources (e.g., .gitmodules files in a remote\n\t    repository), and can hurt those who blindly enable recursive\n\t    fetch.  Restrict the allowed protocols to well known and safe\n\t    ones.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://raw.githubusercontent.com/git/git/master/Documentation/RelNotes/2.6.1.txt",
+      "http://www.openwall.com/lists/oss-security/2015/12/11/7"
+    ],
+    "cvename": [
+      "CVE-2015-7545"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-23",
+    "entry": "2015-10-19",
+    "modified": "2015-12-12"
+  }
+}

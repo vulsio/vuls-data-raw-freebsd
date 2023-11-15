@@ -1,0 +1,38 @@
+{
+  "vid": "3efc106e-c451-11dd-a721-0030843d3802",
+  "topic": "dovecot-managesieve -- Script Name Directory Traversal Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "dovecot-managesieve"
+      ],
+      "range": [
+        {
+          "lt": "0.10.4"
+        },
+        {
+          "lt": "0.11.1",
+          "ge": "0.11.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/Advisories/32768/\">\n\t  <p>The security issue is caused due to an input validation error when\n\t    processing script names. This can be exploited to read or modify\n\t    arbitrary files having \".sieve\" extensions via directory traversal\n\t    attacks, with the privileges of the attacker's user id.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.vupen.com/english/advisories/2008/3190",
+      "http://secunia.com/Advisories/32768/",
+      "http://dovecot.org/list/dovecot/2008-November/035259.html"
+    ],
+    "cvename": [
+      "CVE-2008-5301"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-11-18",
+    "entry": "2008-12-07"
+  }
+}

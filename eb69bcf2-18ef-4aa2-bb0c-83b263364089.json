@@ -1,0 +1,54 @@
+{
+  "vid": "eb69bcf2-18ef-4aa2-bb0c-83b263364089",
+  "topic": "ruby -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ruby"
+      ],
+      "range": [
+        {
+          "lt": "2.3.7,1",
+          "ge": "2.3.0,1"
+        },
+        {
+          "lt": "2.4.4,1",
+          "ge": "2.4.0,1"
+        },
+        {
+          "lt": "2.5.1,1",
+          "ge": "2.5.0,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ruby news:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-5-1-released/\">\n\t  <p>CVE-2017-17742: HTTP response splitting in WEBrick</p>\n\t  <p>If a script accepts an external input and outputs it without\n\t    modification as a part of HTTP responses, an attacker can use newline\n\t    characters to deceive the clients that the HTTP response header is\n\t    stopped at there, and can inject fake HTTP responses after the newline\n\t    characters to show malicious contents to the clients.</p>\n\t  <p>CVE-2018-6914: Unintentional file and directory creation with\n\t    directory traversal in tempfile and tmpdir</p>\n\t  <p>Dir.mktmpdir method introduced by tmpdir library accepts the prefix\n\t    and the suffix of the directory which is created as the first parameter.\n\t    The prefix can contain relative directory specifiers \"../\", so this\n\t    method can be used to target any directory. So, if a script accepts an\n\t    external input as the prefix, and the targeted directory has\n\t    inappropriate permissions or the ruby process has inappropriate\n\t    privileges, the attacker can create a directory or a file at any\n\t    directory.</p>\n\t  <p>CVE-2018-8777: DoS by large request in WEBrick</p>\n\t  <p>If an attacker sends a large request which contains huge HTTP headers,\n\t    WEBrick try to process it on memory, so the request causes the\n\t    out-of-memory DoS attack.</p>\n\t  <p>CVE-2018-8778: Buffer under-read in String#unpack</p>\n\t  <p>String#unpack receives format specifiers as its parameter, and can\n\t    be specified the position of parsing the data by the specifier @. If a\n\t    big number is passed with @, the number is treated as the negative\n\t    value, and out-of-buffer read is occurred. So, if a script accepts an\n\t    external input as the argument of String#unpack, the attacker can read\n\t    data on heaps.</p>\n\t  <p>CVE-2018-8779: Unintentional socket creation by poisoned NUL byte in\n\t    UNIXServer and UNIXSocket</p>\n\t  <p>UNIXServer.open accepts the path of the socket to be created at the\n\t    first parameter. If the path contains NUL (\\0) bytes, this method\n\t    recognize that the path is completed before the NUL bytes. So, if a\n\t    script accepts an external input as the argument of this method, the\n\t    attacker can make the socket file in the unintentional path. And,\n\t    UNIXSocket.open also accepts the path of the socket to be created at\n\t    the first parameter without checking NUL bytes like UNIXServer.open.\n\t    So, if a script accepts an external input as the argument of this\n\t    method, the attacker can accepts the socket file in the unintentional\n\t    path.</p>\n\t  <p>CVE-2018-8780: Unintentional directory traversal by poisoned NUL byte\n\t    in Dir</p>\n\t  <p>Dir.open, Dir.new, Dir.entries and Dir.empty? accept the path of the\n\t    target directory as their parameter. If the parameter contains NUL (\\0)\n\t    bytes, these methods recognize that the path is completed before the\n\t    NUL bytes. So, if a script accepts an external input as the argument of\n\t    these methods, the attacker can make the unintentional directory\n\t    traversal.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-5-1-released/",
+      "https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-4-4-released/",
+      "https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-3-7-released/",
+      "https://www.ruby-lang.org/en/news/2018/03/28/http-response-splitting-in-webrick-cve-2017-17742/",
+      "https://www.ruby-lang.org/en/news/2018/03/28/unintentional-file-and-directory-creation-with-directory-traversal-cve-2018-6914/",
+      "https://www.ruby-lang.org/en/news/2018/03/28/large-request-dos-in-webrick-cve-2018-8777/",
+      "https://www.ruby-lang.org/en/news/2018/03/28/buffer-under-read-unpack-cve-2018-8778/",
+      "https://www.ruby-lang.org/en/news/2018/03/28/poisoned-nul-byte-unixsocket-cve-2018-8779/",
+      "https://www.ruby-lang.org/en/news/2018/03/28/poisoned-nul-byte-dir-cve-2018-8780/"
+    ],
+    "cvename": [
+      "CVE-2017-17742",
+      "CVE-2018-6914",
+      "CVE-2018-8777",
+      "CVE-2018-8778",
+      "CVE-2018-8779",
+      "CVE-2018-8780"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-28",
+    "entry": "2018-03-29"
+  }
+}

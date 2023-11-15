@@ -1,0 +1,32 @@
+{
+  "vid": "af19ecd0-0f6a-11e7-970f-002590263bf5",
+  "topic": "xen-tools -- Cirrus VGA Heap overflow via display refresh",
+  "affects": [
+    {
+      "name": [
+        "xen-tools"
+      ],
+      "range": [
+        {
+          "lt": "4.7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-211.html\">\n\t  <p>A privileged user within the guest VM can cause a heap overflow in\n\t    the device model process, potentially escalating their privileges to\n\t    that of the device model process.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-211.html"
+    ],
+    "cvename": [
+      "CVE-2016-9603"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-03-14",
+    "entry": "2017-03-23"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "vid": "ad74a1bd-16d2-11d9-bc4a-000c41e2cdad",
+  "topic": "php -- php_variables memory disclosure",
+  "affects": [
+    {
+      "name": [
+        "mod_php4-twig",
+        "php4-cgi",
+        "php4-cli",
+        "php4-dtc",
+        "php4-horde",
+        "php4-nms",
+        "php4"
+      ],
+      "range": [
+        {
+          "le": "4.3.8_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_php",
+        "mod_php4"
+      ],
+      "range": [
+        {
+          "ge": "4",
+          "le": "4.3.8_2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php5",
+        "php5-cgi",
+        "php5-cli"
+      ],
+      "range": [
+        {
+          "le": "5.0.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_php5"
+      ],
+      "range": [
+        {
+          "le": "5.0.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stefano Di Paola reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109527531130492\">\n\t  <p>Bad array parsing in php_variables.c could lead to show\n\t    arbitrary memory content such as pieces of php code\n\t    and other data.  This affects all GET, POST or COOKIES\n\t    variables.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109527531130492",
+        "msgid": "1095267581.2818.13.camel@localhost"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-15",
+    "entry": "2004-10-05"
+  }
+}

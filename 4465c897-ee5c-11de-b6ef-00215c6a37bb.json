@@ -1,0 +1,30 @@
+{
+  "vid": "4465c897-ee5c-11de-b6ef-00215c6a37bb",
+  "topic": "monkey -- improper input validation vulnerability",
+  "affects": [
+    {
+      "name": [
+        "monkey"
+      ],
+      "range": [
+        {
+          "lt": "0.9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Census Labs reports:</p>\n\t<blockquote cite=\"http://census-labs.com/news/2009/12/14/monkey-httpd/\">\n\t  <p>We have discovered a remotely exploitable\n\t    \"improper input validation\" vulnerability in the Monkey\n\t    web server that allows an attacker to perform denial of\n\t    service attacks by repeatedly crashing worker threads\n\t    that process HTTP requests.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://census-labs.com/news/2009/12/14/monkey-httpd/",
+      "http://groups.google.com/group/monkeyd/browse_thread/thread/055b4e9b83973861/"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-12-14",
+    "entry": "2009-12-21"
+  }
+}

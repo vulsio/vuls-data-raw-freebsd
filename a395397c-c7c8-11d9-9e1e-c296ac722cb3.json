@@ -1,0 +1,33 @@
+{
+  "vid": "a395397c-c7c8-11d9-9e1e-c296ac722cb3",
+  "topic": "squid -- possible abuse of cachemgr.cgi",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "2.5.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The squid patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE9-cachemgr_conf\">\n\t  <p>This patch adds access controls to the cachemgr.cgi script,\n\t    preventing it from being abused to reach other servers than\n\t    allowed in a local configuration file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE9-cachemgr_conf",
+      "http://www.squid-cache.org/bugs/show_bug.cgi?id=1094"
+    ],
+    "cvename": [
+      "CVE-1999-0710"
+    ]
+  },
+  "dates": {
+    "discovery": "1999-07-29",
+    "entry": "2005-05-19"
+  }
+}

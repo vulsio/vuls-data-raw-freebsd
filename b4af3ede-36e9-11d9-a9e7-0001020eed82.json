@@ -1,0 +1,39 @@
+{
+  "vid": "b4af3ede-36e9-11d9-a9e7-0001020eed82",
+  "topic": "twiki -- arbitrary shell command execution",
+  "affects": [
+    {
+      "name": [
+        "twiki"
+      ],
+      "range": [
+        {
+          "lt": "20040902"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Hans Ulrich Niedermann reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110037207516456\">\n\t  <p>The TWiki search function uses a user supplied search\n\t    string to compose a command line executed by the Perl\n\t    backtick (``) operator.</p>\n\t  <p>The search string is not checked properly for shell\n\t    metacharacters and is thus vulnerable to search string\n\t    containing quotes and shell commands.</p>\n\t  <p>IMPACT: An attacker is able to execute arbitrary shell\n\t    commands with the privileges of the TWiki process.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://twiki.org/cgi-bin/view/Codev/SecurityAlertExecuteCommandsWithSearch"
+    ],
+    "cvename": [
+      "CVE-2004-1037"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110037207516456",
+        "msgid": "86zn1mhchx.fsf@n-dimensional.de"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-12",
+    "entry": "2004-11-15",
+    "modified": "2004-11-23"
+  }
+}

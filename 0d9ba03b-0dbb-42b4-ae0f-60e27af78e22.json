@@ -1,0 +1,32 @@
+{
+  "vid": "0d9ba03b-0dbb-42b4-ae0f-60e27af78e22",
+  "topic": "sympa -- buffer overflow in \"queue\"",
+  "affects": [
+    {
+      "name": [
+        "sympa"
+      ],
+      "range": [
+        {
+          "lt": "4.1.2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Erik Sjölund discovered a vulnerability in Sympa.  The\n\t  <code>queue</code> application processes messages received via\n\t  aliases.  It contains a buffer overflow in the usage of\n\t  <code>sprintf</code>.  In some configurations, it may allow an\n\t  attacker to execute arbitrary code as the <code>sympa</code>\n\t  user.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.debian.org/security/2005/dsa-677"
+    ],
+    "cvename": [
+      "CVE-2005-0073"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-11",
+    "entry": "2005-06-01"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "vid": "85d976be-93e3-11ec-aaad-14dae9d5a9d2",
+  "topic": "The Update Framwork -- path traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-tuf",
+        "py38-tuf",
+        "py39-tuf",
+        "py310-tuf",
+        "py311-tuf"
+      ],
+      "range": [
+        {
+          "le": "0.18.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2021-41131\">\n\t  <p>python-tuf is a Python reference implementation of The Update Framework (TUF). In both clients (`tuf/client` and `tuf/ngclient`), there is a path traversal vulnerability that in the worst case can overwrite files ending in `.json` anywhere on the client system on a call to `get_one_valid_targetinfo()`. It occurs because the rolename is used to form the filename, and may contain path traversal characters (ie `../../name.json`). The impact is mitigated by a few facts: It only affects implementations that allow arbitrary rolename selection for delegated targets metadata, The attack requires the ability to A) insert new metadata for the path-traversing role and B) get the role delegated by an existing targets metadata, The written file content is heavily restricted since it needs to be a valid, signed targets file. The file extension is always .json. A fix is available in version 0.19 or newer. There are no workarounds that do not require code changes. Clients can restrict the allowed character set for rolenames, or they can store metadata in files named in a way that is not vulnerable: neither of these approaches is possible without modifying python-tuf.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2021-41131"
+    ],
+    "cvename": [
+      "CVE-2021-41131"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-10-22",
+    "entry": "2022-02-22"
+  }
+}

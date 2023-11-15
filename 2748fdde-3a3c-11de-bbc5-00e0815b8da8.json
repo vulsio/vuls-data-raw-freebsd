@@ -1,0 +1,39 @@
+{
+  "vid": "2748fdde-3a3c-11de-bbc5-00e0815b8da8",
+  "topic": "quagga -- Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "quagga"
+      ],
+      "range": [
+        {
+          "lt": "0.99.11_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian Security Team reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/503220\">\n\t  <p>It was discovered that Quagga, an IP routing daemon, could\n\t    no longer process the Internet routing table due to broken\n\t    handling of multiple 4-byte AS numbers in an AS path. If such\n\t    a prefix is received, the BGP daemon crashes with an assert\n\t    failure leading to a denial of service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2009-1572"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.quagga.net/pipermail/quagga-dev/2009-April/006541.html",
+        "msgid": "Pine.LNX.4.64.0904301931590.24373@nacho.alt.net"
+      }
+    ],
+    "bid": [
+      "34656"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-05-04",
+    "entry": "2009-05-06",
+    "modified": "2009-05-07"
+  }
+}

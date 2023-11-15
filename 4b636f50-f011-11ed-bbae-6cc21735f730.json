@@ -1,0 +1,44 @@
+{
+  "vid": "4b636f50-f011-11ed-bbae-6cc21735f730",
+  "topic": "postgresql-server -- Row security policies disregard user ID changes after inlining",
+  "affects": [
+    {
+      "name": [
+        "postgresql-server"
+      ],
+      "range": [
+        {
+          "lt": "15.3"
+        },
+        {
+          "lt": "14.8"
+        },
+        {
+          "lt": "13.11"
+        },
+        {
+          "lt": "12.15"
+        },
+        {
+          "lt": "11.20"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PostgreSQL Project reports</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2023-2455/\">\n\t  <p>\n\t    While CVE-2016-2193 fixed most interaction between row security and\n\t    user ID changes, it missed a scenario involving function\n\t    inlining. This leads to potentially incorrect policies being\n\t    applied in cases where role-specific policies are used and a\n\t    given query is planned under one role and then executed under\n\t    other roles. This scenario can happen under security definer\n\t    functions or when a common user and query is planned\n\t    initially and then re-used across multiple SET ROLEs.\n\t    Applying an incorrect policy may permit a user to complete\n\t    otherwise-forbidden reads and modifications. This affects\n\t    only databases that have used CREATE POLICY to define a row\n\t    security policy.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.postgresql.org/support/security/CVE-2023-2455/"
+    ],
+    "cvename": [
+      "CVE-2023-2455"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-05-11",
+    "entry": "2023-05-11"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "vid": "c7b5d72b-886a-11e3-9533-60a44c524f57",
+  "topic": "otrs -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "otrs"
+      ],
+      "range": [
+        {
+          "lt": "3.1.19"
+        },
+        {
+          "lt": "3.2.14",
+          "gt": "3.2.*"
+        },
+        {
+          "lt": "3.3.4",
+          "gt": "3.3.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OTRS Project reports:</p>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2014-02-sql-injection-issue/\">\n\t  <p>SQL injection issue</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2014-01-csrf-issue-customer-web-interface/\">\n\t  <p>An attacker that managed to take over the session of a logged in customer\n\t    could create tickets and/or send follow-ups to existing tickets due to\n\t    missing challenge token checks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.otrs.com/security-advisory-2014-02-sql-injection-issue/",
+      "https://www.otrs.com/security-advisory-2014-01-csrf-issue-customer-web-interface/"
+    ],
+    "cvename": [
+      "CVE-2014-1471"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-01-28",
+    "entry": "2014-01-28",
+    "modified": "2014-02-06"
+  }
+}

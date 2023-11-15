@@ -1,0 +1,48 @@
+{
+  "vid": "f70d09cb-0c46-11db-aac7-000c6ec775d9",
+  "topic": "mambo -- SQL injection vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mambo"
+      ],
+      "range": [
+        {
+          "lt": "4.5.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Team Mambo reports that two SQL injection\n\t  vulnerabilities have been found in Mambo.  The\n\t  vulnerabilities exists due to missing sanitation of the\n\t  <code>title</code> and <code>catid</code> parameters in the\n\t  <code>weblinks.php</code> page and can lead to execution of\n\t  arbitrary SQL code.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/18935/",
+      "http://secunia.com/advisories/20745/",
+      "http://www.mamboserver.com/?option=com_content&task=view&id=207",
+      "http://www.gulftech.org/?node=research&article_id=00104-02242006"
+    ],
+    "cvename": [
+      "CVE-2006-0871",
+      "CVE-2006-1794",
+      "CVE-2006-3262",
+      "CVE-2006-3263"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=115056811230529",
+        "msgid": "20060617123242.1684.qmail@securityfocus.com"
+      }
+    ],
+    "bid": [
+      "16775"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-06-19",
+    "entry": "2006-07-05",
+    "modified": "2006-10-05"
+  }
+}

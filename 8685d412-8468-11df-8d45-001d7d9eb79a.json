@@ -1,0 +1,34 @@
+{
+  "vid": "8685d412-8468-11df-8d45-001d7d9eb79a",
+  "topic": "kvirc -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "kvirc",
+        "kvirc-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Two security vulnerabilities have been discovered:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2451\">\n\t  <p>Multiple format string vulnerabilities in the DCC functionality\n\t    in KVIrc 3.4 and 4.0 have unspecified impact and remote attack vectors.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2452\">\n\t  <p>Directory traversal vulnerability in the DCC functionality\n\t    in KVIrc 3.4 and 4.0 allows remote attackers to overwrite\n\t    arbitrary files via unknown vectors.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.omnikron.net/pipermail/kvirc/2010-May/000867.html"
+    ],
+    "cvename": [
+      "CVE-2010-2451",
+      "CVE-2010-2452"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-05-17",
+    "entry": "2010-06-30"
+  }
+}

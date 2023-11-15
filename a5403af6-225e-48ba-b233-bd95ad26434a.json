@@ -1,0 +1,37 @@
+{
+  "vid": "a5403af6-225e-48ba-b233-bd95ad26434a",
+  "topic": "py-Scrapy -- cookie injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-Scrapy",
+        "py38-Scrapy",
+        "py39-Scrapy",
+        "py310-Scrapy",
+        "py311-Scrapy"
+      ],
+      "range": [
+        {
+          "lt": "1.8.2"
+        },
+        {
+          "lt": "2.6.0",
+          "ge": "2.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-mfjm-vh54-3f96\">\n      <p>Responses from domain names whose public domain name suffix contains 1 or more periods (e.g. responses from `example.co.uk`, given its public domain name suffix is `co.uk`) are able to set cookies that are included in requests to any other domain sharing the same domain name suffix.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/GHSA-mfjm-vh54-3f96"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-03-01",
+    "entry": "2023-08-31"
+  }
+}

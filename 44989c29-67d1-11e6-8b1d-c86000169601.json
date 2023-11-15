@@ -1,0 +1,32 @@
+{
+  "vid": "44989c29-67d1-11e6-8b1d-c86000169601",
+  "topic": "fontconfig -- insufficiently cache file validation",
+  "affects": [
+    {
+      "name": [
+        "fontconfig"
+      ],
+      "range": [
+        {
+          "lt": "1.12.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian security team reports:</p>\n\t<blockquote cite=\"https://packetstormsecurity.com/files/138236/Debian-Security-Advisory-3644-1.html\">\n\t  <p>Tobias Stoeckmann discovered that cache files are insufficiently\n\t    validated in fontconfig, a generic font configuration library. An\n\t    attacker can trigger arbitrary free() calls, which in turn allows\n\t    double free attacks and therefore arbitrary code execution. In\n\t    combination with setuid binaries using crafted cache files, this\n\t    could allow privilege escalation.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://packetstormsecurity.com/files/138236/Debian-Security-Advisory-3644-1.html"
+    ],
+    "cvename": [
+      "CVE-2016-5384"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-08-05",
+    "entry": "2016-08-21"
+  }
+}

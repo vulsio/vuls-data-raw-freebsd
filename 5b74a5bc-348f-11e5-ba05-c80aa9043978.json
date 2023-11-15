@@ -1,0 +1,55 @@
+{
+  "vid": "5b74a5bc-348f-11e5-ba05-c80aa9043978",
+  "topic": "OpenSSH -- MaxAuthTries limit bypass via duplicates in KbdInteractiveDevices",
+  "affects": [
+    {
+      "name": [
+        "openssh-portable"
+      ],
+      "range": [
+        {
+          "lt": "6.9.p1_2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.1_16",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_21",
+          "ge": "9.3"
+        },
+        {
+          "lt": "8.4_36",
+          "ge": "8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"https://access.redhat.com/security/cve/CVE-2015-5600\">\n\t  <p>It was discovered that the OpenSSH sshd daemon did not check the\n\t    list of keyboard-interactive authentication methods for duplicates.\n\t    A remote attacker could use this flaw to bypass the MaxAuthTries\n\t    limit, making it easier to perform password guessing attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://access.redhat.com/security/cve/CVE-2015-5600"
+    ],
+    "cvename": [
+      "CVE-2015-5600"
+    ],
+    "freebsd_sa": [
+      "SA-15:16.openssh"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-21",
+    "entry": "2015-07-27",
+    "modified": "2016-08-09"
+  }
+}

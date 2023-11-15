@@ -1,0 +1,49 @@
+{
+  "vid": "e00304d2-bbed-11e6-b1cf-14dae9d210b8",
+  "topic": "FreeBSD -- Possible login(1) argument injection in telnetd(8)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "11.0_4",
+          "ge": "11.0"
+        },
+        {
+          "lt": "10.3_13",
+          "ge": "10.3"
+        },
+        {
+          "lt": "10.2_26",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_43",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_51",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>An unexpected sequence of memory allocation failures\n\tcombined with insufficient error checking could result in\n\tthe construction and execution of an argument sequence that\n\twas not intended.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who controls the sequence of memory allocation\n\tfailures and success may cause login(1) to run without\n\tauthentication and may be able to cause misbehavior of\n\tlogin(1) replacements.</p>\n\t<p>No practical way of controlling these memory allocation\n\tfailures is known at this time.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-1888"
+    ],
+    "freebsd_sa": [
+      "SA-16:36.telnetd"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-12-06",
+    "entry": "2016-12-06"
+  }
+}

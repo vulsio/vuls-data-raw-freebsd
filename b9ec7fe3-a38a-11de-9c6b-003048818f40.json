@@ -1,0 +1,35 @@
+{
+  "vid": "b9ec7fe3-a38a-11de-9c6b-003048818f40",
+  "topic": "bugzilla -- two SQL injections, sensitive data exposure",
+  "affects": [
+    {
+      "name": [
+        "bugzilla"
+      ],
+      "range": [
+        {
+          "lt": "3.4.2",
+          "gt": "3.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.4/\">\n\t  <ul>\n\t    <li>It is possible to inject raw SQL into the Bugzilla\n\t    database via the \"Bug.create\" and \"Bug.search\" WebService\n\t    functions.</li>\n\t    <li>When a user would change his password, his new password would\n\t    be exposed in the URL field of the browser if he logged in right\n\t    after changing his password.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.bugzilla.org/security/3.0.8/"
+    ],
+    "cvename": [
+      "CVE-2009-3125",
+      "CVE-2009-3165",
+      "CVE-2009-3166"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-09-11",
+    "entry": "2009-09-17"
+  }
+}

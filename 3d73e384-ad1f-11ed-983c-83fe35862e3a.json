@@ -1,0 +1,45 @@
+{
+  "vid": "3d73e384-ad1f-11ed-983c-83fe35862e3a",
+  "topic": "go -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "go119"
+      ],
+      "range": [
+        {
+          "lt": "1.19.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "go120"
+      ],
+      "range": [
+        {
+          "lt": "1.20.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/57274\">\n\t  <p>path/filepath: path traversal in filepath.Clean on Windows</p>\n\t  <p>On Windows, the filepath.Clean function could transform\n\t    an invalid path such as a/../c:/b into the valid path\n\t    c:\\b. This transformation of a relative (if invalid)\n\t    path into an absolute path could enable a directory\n\t    traversal attack. The filepath.Clean function will now\n\t    transform this path into the relative (but still\n\t    invalid) path .\\c:\\b.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/58006\">\n\t  <p>net/http, mime/multipart: denial of service from excessive\n\t    resource consumption</p>\n\t  <p>Multipart form parsing with\n\t    mime/multipart.Reader.ReadForm can consume largely\n\t    unlimited amounts of memory and disk files. This also\n\t    affects form parsing in the net/http package with the\n\t    Request methods FormFile, FormValue, ParseMultipartForm,\n\t    and PostFormValue.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/58001\">\n\t  <p>crypto/tls: large handshake records may cause panics</p>\n\t  <p>\n\t    Both clients and servers may send large TLS handshake\n\t    records which cause servers and clients,\n\t    respectively, to panic when attempting to construct responses.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/57855\">\n\t  <p>net/http: avoid quadratic complexity in HPACK decoding</p>\n\t  <p>A maliciously crafted HTTP/2 stream could cause\n\t    excessive CPU consumption in the HPACK decoder,\n\t    sufficient to cause a denial of service from a small\n\t    number of small requests.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://groups.google.com/g/golang-dev/c/G2APtTxT1HQ/m/6O6aksDaBAAJ"
+    ],
+    "cvename": [
+      "CVE-2022-41722",
+      "CVE-2022-41725",
+      "CVE-2022-41724",
+      "CVE-2022-41723"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-02-14",
+    "entry": "2023-02-15"
+  }
+}

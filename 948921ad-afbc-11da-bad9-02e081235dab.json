@@ -1,0 +1,36 @@
+{
+  "vid": "948921ad-afbc-11da-bad9-02e081235dab",
+  "topic": "GnuPG does not detect injection of unsigned data",
+  "affects": [
+    {
+      "name": [
+        "gnupg"
+      ],
+      "range": [
+        {
+          "lt": "1.4.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Werner Koch reports:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2006q1/000216.html\">\n\t  <p>In the aftermath of the false positive signature\n\t    verfication bug (announced 2006-02-15) more thorough testing\n\t    of the fix has been done and another vulnerability has been\n\t    detected.  This new problem affects the use of *gpg* for\n\t    verification of signatures which are _not_ detached\n\t    signatures.  The problem also affects verification of\n\t    signatures embedded in encrypted messages; i.e. standard use\n\t    of gpg for mails.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2006-0049"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.gnupg.org/pipermail/gnupg-announce/2006q1/000216.html",
+        "msgid": "87d5gvh2kr.fsf@wheatstone.g10code.de"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2006-03-09",
+    "entry": "2006-03-10",
+    "modified": "2006-03-11"
+  }
+}

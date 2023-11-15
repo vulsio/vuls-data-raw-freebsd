@@ -1,0 +1,53 @@
+{
+  "vid": "739948e3-78bf-11e8-b23c-080027ac955c",
+  "topic": "mailman -- hardening against malicious listowners injecting evil HTML scripts",
+  "affects": [
+    {
+      "name": [
+        "mailman"
+      ],
+      "range": [
+        {
+          "lt": "2.1.27"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mailman-with-htdig"
+      ],
+      "range": [
+        {
+          "lt": "2.1.27"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ja-mailman"
+      ],
+      "range": [
+        {
+          "lt": "2.1.14.j7_5,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://bazaar.launchpad.net/~mailman-coders/mailman/2.1/view/head:/NEWS#L8\">\n\t  <p>Existing protections against malicious listowners injecting evil\n\t    scripts into listinfo pages have had a few more checks added.\n\t  </p>\n\t  <p>A few more error messages have had their values HTML escaped.</p>\n\t  <p>The hash generated when SUBSCRIBE_FORM_SECRET is set could have been\n\t    the same as one generated at the same time for a different list and\n\t    IP address.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bazaar.launchpad.net/~mailman-coders/mailman/2.1/view/head:/NEWS#L8",
+      "https://www.mail-archive.com/mailman-users@python.org/"
+    ],
+    "cvename": [
+      "CVE-2018-0618"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-09",
+    "entry": "2018-06-25"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "vid": "5f326d75-1db9-11e2-bc8f-d0df9acfd7e5",
+  "topic": "django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "django"
+      ],
+      "range": [
+        {
+          "lt": "1.4.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "django13"
+      ],
+      "range": [
+        {
+          "lt": "1.3.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Django Project reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2012/oct/17/security/\">\n\t<ol>\n\t  <li>\n\t  <p>Host header poisoning</p>\n\t  <p>Some parts of Django -- independent of end-user-written applications\n\t     -- make use of full URLs, including domain name, which are generated\n\t     from the HTTP Host header. Some attacks against this are beyond Django's\n\t     ability to control, and require the web server to be properly configured;\n\t     Django's documentation has for some time contained notes advising users\n\t     on such configuration.</p>\n\t  <p>Django's own built-in parsing of the Host header is, however, still\n\t     vulnerable, as was reported to us recently. The Host header parsing\n\t     in Django 1.3 and Django 1.4 -- specifically, django.http.HttpRequest.get_host()\n\t     -- was incorrectly handling username/password information in the header.\n\t     Thus, for example, the following Host header would be accepted by Django when\n\t     running on \"validsite.com\":</p>\n\t  <p>Host: validsite.com:random@evilsite.com</p>\n\t  <p>Using this, an attacker can cause parts of Django -- particularly the\n\t     password-reset mechanism -- to generate and display arbitrary URLs to users.</p>\n\t  <p>To remedy this, the parsing in HttpRequest.get_host() is being modified; Host\n\t     headers which contain potentially dangerous content (such as username/password\n\t     pairs) now raise the exception django.core.exceptions.SuspiciousOperation.</p>\n\t  </li>\n\t  <li>\n\t  <p>Documentation of HttpOnly cookie option</p>\n\t  <p>As of Django 1.4, session cookies are always sent with the HttpOnly flag, which\n\t     provides some additional protection from cross-site scripting attacks by denying\n\t     client-side scripts access to the session cookie.</p>\n\t  <p>Though not directly a security issue in Django, it has been reported that the\n\t     Django 1.4 documentation incorrectly described this change, by claiming that this\n\t     was now the default for all cookies set by the HttpResponse.set_cookie() method.</p>\n\t  <p>The Django documentation has been updated to reflect that this only applies to the\n\t     session cookie. Users of Django are encouraged to review their use of set_cookie()\n\t     to ensure that the HttpOnly flag is being set or unset appropriately.</p>\n\t  </li>\n\t  </ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2012/oct/17/security/"
+    ],
+    "cvename": [
+      "CVE-2012-4520"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-10-17",
+    "entry": "2012-10-24"
+  }
+}

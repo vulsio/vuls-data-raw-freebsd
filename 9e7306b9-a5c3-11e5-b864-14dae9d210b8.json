@@ -1,0 +1,32 @@
+{
+  "vid": "9e7306b9-a5c3-11e5-b864-14dae9d210b8",
+  "topic": "quassel -- remote denial of service",
+  "affects": [
+    {
+      "name": [
+        "quassel"
+      ],
+      "range": [
+        {
+          "lt": "0.12.2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Pierre Schweitzer reports:</p>\n       <blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/12/12/1\">\n\t <p>Any client sending the command \"/op *\" in a query will\n\t   cause the Quassel core to crash.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/12/12/1"
+    ],
+    "cvename": [
+      "CVE-2015-8547"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-11-22",
+    "entry": "2015-12-18"
+  }
+}

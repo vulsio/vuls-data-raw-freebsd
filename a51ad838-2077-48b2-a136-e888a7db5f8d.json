@@ -1,0 +1,32 @@
+{
+  "vid": "a51ad838-2077-48b2-a136-e888a7db5f8d",
+  "topic": "openvpn -- denial of service: client certificate validation can disconnect unrelated clients",
+  "affects": [
+    {
+      "name": [
+        "openvpn"
+      ],
+      "range": [
+        {
+          "lt": "2.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>James Yonan reports:</p>\n\t<blockquote cite=\"http://openvpn.net/changelog.html\">\n\t  <p>DoS attack against server when run with \"verb 0\" and\n\t    without \"tls-auth\".  If a client connection to the server\n\t    fails certificate verification, the OpenSSL error queue is\n\t    not properly flushed, which can result in another unrelated\n\t    client instance on the server seeing the error and\n\t    responding to it, resulting in disconnection of the\n\t    unrelated client.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://openvpn.net/changelog.html"
+    ],
+    "cvename": [
+      "CVE-2005-2531"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-08-03",
+    "entry": "2005-08-19"
+  }
+}

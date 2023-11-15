@@ -1,0 +1,45 @@
+{
+  "vid": "631c4710-9be5-4a80-9310-eb2847fe24dd",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.57"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "lt": "2.46.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2017-04-26/\">\n\t  <h1>Description</h1>\n\t  <h5>SECURITY-412 through SECURITY-420 / CVE-2017-1000356</h5>\n\t  <p>CSRF: Multiple vulnerabilities</p>\n\t  <h5>SECURITY-429 / CVE-2017-1000353</h5>\n\t  <p>CLI: Unauthenticated remote code execution</p>\n\t  <h5>SECURITY-466 / CVE-2017-1000354</h5>\n\t  <p>CLI: Login command allowed impersonating any Jenkins user</p>\n\t  <h5>SECURITY-503 / CVE-2017-1000355</h5>\n\t  <p>XStream: Java crash when trying to instantiate void/Void</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jenkins.io/security/advisory/2017-04-26/"
+    ],
+    "cvename": [
+      "CVE-2017-1000356",
+      "CVE-2017-1000353",
+      "CVE-2017-1000354",
+      "CVE-2017-1000355"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-04-26",
+    "entry": "2017-04-27"
+  }
+}

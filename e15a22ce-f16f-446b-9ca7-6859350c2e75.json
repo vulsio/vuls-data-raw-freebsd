@@ -1,0 +1,38 @@
+{
+  "vid": "e15a22ce-f16f-446b-9ca7-6859350c2e75",
+  "topic": "quagga -- several security issues",
+  "affects": [
+    {
+      "name": [
+        "quagga"
+      ],
+      "range": [
+        {
+          "lt": "1.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Quagga reports:</p>\n\t<blockquote cite=\"https://www.quagga.net/security/Quagga-2018-0543.txt\">\n\t  <p>The Quagga BGP daemon, bgpd, does not properly bounds\n\t  check the data sent with a NOTIFY to a peer, if an attribute\n\t  length is invalid. Arbitrary data from the bgpd process\n\t  may be sent over the network to a peer and/or it may crash.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.quagga.net/security/Quagga-2018-1114.txt\">\n\t  <p>The Quagga BGP daemon, bgpd, can double-free memory\n\t  when processing certain forms of UPDATE message, containing\n\t  cluster-list and/or unknown attributes.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.quagga.net/security/Quagga-2018-1550.txt\">\n\t  <p>The Quagga BGP daemon, bgpd, can overrun internal BGP\n\t  code-to-string conversion tables used for debug by 1\n\t  pointer value, based on input.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.quagga.net/security/Quagga-2018-1975.txt\">\n\t  <p>The Quagga BGP daemon, bgpd, can enter an infinite\n\t  loop if sent an invalid OPEN message by a configured peer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.quagga.net/security/Quagga-2018-0543.txt",
+      "https://www.quagga.net/security/Quagga-2018-1114.txt",
+      "https://www.quagga.net/security/Quagga-2018-1550.txt",
+      "https://www.quagga.net/security/Quagga-2018-1975.txt"
+    ],
+    "cvename": [
+      "CVE-2018-5378",
+      "CVE-2018-5379",
+      "CVE-2018-5380",
+      "CVE-2018-5381"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-31",
+    "entry": "2018-02-15"
+  }
+}

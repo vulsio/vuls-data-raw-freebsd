@@ -1,0 +1,29 @@
+{
+  "vid": "4c11b51e-cd8d-11e8-b0cb-a0f3c100ae18",
+  "topic": "Memory leak bug in Toxcore",
+  "affects": [
+    {
+      "name": [
+        "toxcore"
+      ],
+      "range": [
+        {
+          "lt": "0.2.8,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Tox project blog reports:</p>\n\t<blockquote cite=\"https://blog.tox.chat/2018/10/memory-leak-bug-and-new-toxcore-release-fixing-it/\">\n\t  <p>A memory leak bug was discovered in Toxcore that can be triggered remotely to\nexhaust one’s system memory, resulting in a denial of service attack.\nThe bug is present in the TCP Server module of Toxcore and therefore it\naffects mostly bootstrap nodes. Regular Tox clients generally have the\nTCP Server functionality disabled by default, leaving them unaffected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.tox.chat/2018/10/memory-leak-bug-and-new-toxcore-release-fixing-it/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-09-29",
+    "entry": "2018-10-11"
+  }
+}

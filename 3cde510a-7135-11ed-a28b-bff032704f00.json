@@ -1,0 +1,50 @@
+{
+  "vid": "3cde510a-7135-11ed-a28b-bff032704f00",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "15.6.1",
+          "ge": "15.6.0"
+        },
+        {
+          "lt": "15.5.5",
+          "ge": "15.5.0"
+        },
+        {
+          "lt": "15.4.6",
+          "ge": "9.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/11/30/security-release-gitlab-15-6-1-released/\">\n\t  <p>DAST API scanner exposes Authorization headers in vulnerabilities</p>\n\t  <p>Group IP allow-list not fully respected by the Package Registry</p>\n\t  <p>Deploy keys and tokens may bypass External Authorization service if it is enabled</p>\n\t  <p>Repository import still allows to import 40 hexadecimal branches</p>\n\t  <p>Webhook secret tokens leaked in webhook logs</p>\n\t  <p>Maintainer can leak webhook secret token by changing the webhook URL</p>\n\t  <p>Cross-site scripting in Jira Integration affecting self-hosted instances without strict CSP</p>\n\t  <p>Release names visible in public projects despite release set as project members only</p>\n\t  <p>Sidekiq background job DoS by uploading malicious NuGet packages</p>\n\t  <p>SSRF in Web Terminal advertise_address</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2022/11/30/security-release-gitlab-15-6-1-released/"
+    ],
+    "cvename": [
+      "CVE-2022-4206",
+      "CVE-2022-3820",
+      "CVE-2022-3740",
+      "CVE-2022-4205",
+      "CVE-2022-3902",
+      "CVE-2022-4054",
+      "CVE-2022-3572",
+      "CVE-2022-3482",
+      "CVE-2022-3478",
+      "CVE-2022-4201"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-30",
+    "entry": "2022-12-01"
+  }
+}

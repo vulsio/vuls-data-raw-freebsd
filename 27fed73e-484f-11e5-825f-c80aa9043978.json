@@ -1,0 +1,29 @@
+{
+  "vid": "27fed73e-484f-11e5-825f-c80aa9043978",
+  "topic": "OpenSSH -- PermitRootLogin may allow password connections with 'without-password'",
+  "affects": [
+    {
+      "name": [
+        "openssh-portable"
+      ],
+      "range": [
+        {
+          "eq": "7.0.p1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"http://www.openssh.com/txt/release-7.1\">\n\t  <p>OpenSSH 7.0 contained a logic error in PermitRootLogin=\n\t    prohibit-password/without-password that could, depending on\n\t    compile-time configuration, permit password authentication to\n\t    root while preventing other forms of authentication. This problem\n\t    was reported by Mantas Mikulenas.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openssh.com/txt/release-7.1"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-20",
+    "entry": "2015-08-21"
+  }
+}

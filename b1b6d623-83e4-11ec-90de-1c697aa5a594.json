@@ -1,0 +1,37 @@
+{
+  "vid": "b1b6d623-83e4-11ec-90de-1c697aa5a594",
+  "topic": "FreeBSD -- vt console buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "13.0_6",
+          "ge": "13.0"
+        },
+        {
+          "lt": "12.2_12",
+          "ge": "12.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Under certain conditions involving use of the highlight buffer\n\twhile text is scrolling on the console, console data may overwrite\n\tdata structures associated with the system console or other kernel\n\tmemory.</p>\n\t<h1>Impact:</h1>\n\t<p>Users with access to the system console may be able to cause system\n\tmisbehaviour.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2021-29632"
+    ],
+    "freebsd_sa": [
+      "SA-22:01.vt"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-01-11",
+    "entry": "2022-02-02"
+  }
+}

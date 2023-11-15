@@ -1,0 +1,30 @@
+{
+  "vid": "6a4bfe75-692a-11e0-bce7-001eecdd401a",
+  "topic": "VLC -- Heap corruption in MP4 demultiplexer",
+  "affects": [
+    {
+      "name": [
+        "vlc"
+      ],
+      "range": [
+        {
+          "lt": "1.1.9",
+          "ge": "1.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>VideoLAN project reports:</p>\n\t<blockquote cite=\"http://www.videolan.org/security/sa1103.html\">\n\t  <p>When parsing some MP4 (MPEG-4 Part 14) files, insufficient\n\t    buffer size might lead to corruption of the heap.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.videolan.org/security/sa1103.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-04-07",
+    "entry": "2011-04-17"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "vid": "326b2f3e-6fc7-4661-955d-a772760db9cf",
+  "topic": "py-tflite -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-tflite",
+        "py38-tflite",
+        "py39-tflite",
+        "py310-tflite",
+        "py311-tflite"
+      ],
+      "range": [
+        {
+          "lt": "2.8.4"
+        },
+        {
+          "lt": "2.9.3",
+          "ge": "2.9.0"
+        },
+        {
+          "lt": "2.10.1",
+          "ge": "2.10.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>Thibaut Goetghebuer-Planchon reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5\">\n      <p>The reference kernel of the CONV_3D_TRANSPOSE TensorFlow Lite operator wrongly increments the data_ptr when adding the bias to the result.</p>\n      <p>Instead of `data_ptr += num_channels;` it should be `data_ptr += output_num_channels;` as if the number of input channels is different than the number of output channels, the wrong result will be returned and a buffer overflow will occur if num_channels &gt; output_num_channels.</p>\n      <p>An attacker can craft a model with a specific number of input channels in a way similar to the attached example script.</p>\n      <p>It is then possible to write specific values through the bias of the layer outside the bounds of the buffer.</p>\n      <p>This attack only works if the reference kernel resolver is used in the interpreter (i.e. `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` is used).</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5"
+    ],
+    "cvename": [
+      "CVE-2022-41894"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-21",
+    "entry": "2023-04-09"
+  }
+}

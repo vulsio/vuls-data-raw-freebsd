@@ -1,0 +1,33 @@
+{
+  "vid": "108a4be3-e612-11e9-9963-5f1753e0aca0",
+  "topic": "unbound -- parsing vulnerability",
+  "affects": [
+    {
+      "name": [
+        "unbound"
+      ],
+      "range": [
+        {
+          "lt": "1.9.4",
+          "ge": "1.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Unbound Security Advisories:</p>\n\t<blockquote cite=\"https://www.nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-parsing-notify-queries\">\n\t  <p>Due to an error in parsing NOTIFY queries, it is possible for Unbound\n\t    to continue processing malformed queries and may ultimately result in a\n\t    pointer dereference in uninitialized memory. This results in a crash of\n\t    the Unbound daemon.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-parsing-notify-queries"
+    ],
+    "cvename": [
+      "CVE-2019-16866"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-03",
+    "entry": "2019-10-03"
+  }
+}

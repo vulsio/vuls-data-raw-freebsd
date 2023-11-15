@@ -1,0 +1,32 @@
+{
+  "vid": "e66a5440-7258-11e9-b0e1-6cc21735f730",
+  "topic": "PostgreSQL -- Memory disclosure in partition routing",
+  "affects": [
+    {
+      "name": [
+        "postgresql11-server"
+      ],
+      "range": [
+        {
+          "lt": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1939/\">\n\t  <p>\n\t    Prior to this release, a user running PostgreSQL 11 can read\n\t    arbitrary bytes of server memory by executing a purpose-crafted\n\t    INSERT statement to a partitioned table.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.postgresql.org/about/news/1939/"
+    ],
+    "cvename": [
+      "CVE-2019-10129"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-05-09",
+    "entry": "2019-05-09"
+  }
+}

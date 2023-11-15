@@ -1,0 +1,35 @@
+{
+  "vid": "fde53204-7ea6-11d8-9645-0020ed76ef5a",
+  "topic": "insecure temporary file creation in xine-check, xine-bugreport",
+  "affects": [
+    {
+      "name": [
+        "xine"
+      ],
+      "range": [
+        {
+          "lt": "0.9.23_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Some scripts installed with xine create temporary files\n\t  insecurely.  It is recommended that these scripts (xine-check,\n\t  xine-bugreport) not be used.\tThey are not needed for normal\n\t  operation.</p>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=107997911025558"
+      }
+    ],
+    "bid": [
+      "9939"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-20",
+    "entry": "2004-03-26",
+    "modified": "2004-05-09"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "vid": "8f86d8b5-6025-11d9-a9e7-0001020eed82",
+  "topic": "tiff -- tiffdump integer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "tiff"
+      ],
+      "range": [
+        {
+          "lt": "3.7.1_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-tiff"
+      ],
+      "range": [
+        {
+          "lt": "3.6.1_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dmitry V. Levin found a potential integer overflow in the\n\t  tiffdump utility which could lead to execution of arbitrary\n\t  code.  This could be exploited by tricking an user into\n\t  executing tiffdump on a specially crafted tiff image.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-1183"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-01-06",
+    "entry": "2005-01-06",
+    "modified": "2005-03-01"
+  }
+}

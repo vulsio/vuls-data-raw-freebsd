@@ -1,0 +1,61 @@
+{
+  "vid": "85f33a8d-492f-11e2-aa75-003067c2616f",
+  "topic": "opera -- execution of arbitrary code",
+  "affects": [
+    {
+      "name": [
+        "opera"
+      ],
+      "range": [
+        {
+          "lt": "12.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "opera-devel"
+      ],
+      "range": [
+        {
+          "lt": "12.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "12.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-opera-devel"
+      ],
+      "range": [
+        {
+          "lt": "12.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Opera reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/kb/view/1038/\">\n\t  <p>When loading GIF images into memory, Opera should allocate the\n\t    correct amount of memory to store that image. Specially crafted\n\t    image files can cause Opera to allocate the wrong amount of memory.\n\t    Subsequent data may then overwrite unrelated memory with\n\t    attacker-controlled data. This can lead to a crash, which may also\n\t    execute that data as code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.opera.com/support/kb/view/1038/",
+      "http://www.opera.com/support/kb/view/1039/"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-12-18",
+    "entry": "2012-12-18",
+    "modified": "2014-04-30"
+  }
+}

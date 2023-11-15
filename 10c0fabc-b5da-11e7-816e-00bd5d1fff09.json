@@ -1,0 +1,35 @@
+{
+  "vid": "10c0fabc-b5da-11e7-816e-00bd5d1fff09",
+  "topic": "h2o -- DoS in workers",
+  "affects": [
+    {
+      "name": [
+        "h2o"
+      ],
+      "range": [
+        {
+          "lt": "2.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Frederik Deweerdt reports:</p>\n       <blockquote cite=\"https://github.com/h2o/h2o/releases/tag/v2.2.3\">\n       <p>Multiple Denial-of-Service vulnerabilities exist in h2o workers -\n       see references for full details.</p>\n       <p>CVE-2017-10868: Worker processes may crash when receiving a request with invalid framing.</p>\n       <p>CVE-2017-10869: The stack may overflow when proxying huge requests.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/h2o/h2o/issues/1459",
+      "https://github.com/h2o/h2o/issues/1460",
+      "https://github.com/h2o/h2o/releases/tag/v2.2.3"
+    ],
+    "cvename": [
+      "CVE-2017-10868",
+      "CVE-2017-10869"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-07-19",
+    "entry": "2017-10-17"
+  }
+}

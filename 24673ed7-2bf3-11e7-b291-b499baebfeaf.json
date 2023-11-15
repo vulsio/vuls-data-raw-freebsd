@@ -1,0 +1,45 @@
+{
+  "vid": "24673ed7-2bf3-11e7-b291-b499baebfeaf",
+  "topic": "LibreSSL -- TLS verification vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libressl"
+      ],
+      "range": [
+        {
+          "lt": "2.5.3_1",
+          "ge": "2.5.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libressl-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.5.3_1",
+          "ge": "2.5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p> Jakub Jirutka reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2017/q2/145\">\n\t  <p>LibreSSL 2.5.1 to 2.5.3 lacks TLS certificate verification if\n\t    SSL_get_verify_result is relied upon for a later check of a\n\t    verification result, in a use case where a user-provided verification\n\t    callback returns 1, as demonstrated by acceptance of invalid\n\t    certificates by nginx.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://seclists.org/oss-sec/2017/q2/145",
+      "https://github.com/libressl-portable/portable/issues/307"
+    ],
+    "cvename": [
+      "CVE-2017-8301"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-04-27",
+    "entry": "2017-04-28"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "vid": "be0e3817-3bfe-11e9-9cd6-001999f8d30b",
+  "topic": "asterisk -- Remote crash vulnerability with SDP protocol violation",
+  "affects": [
+    {
+      "name": [
+        "asterisk15"
+      ],
+      "range": [
+        {
+          "lt": "15.7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When Asterisk makes an outgoing call, a very specific\n\t  SDP protocol violation by the remote party can cause\n\t  Asterisk to crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2019-001.html"
+    ],
+    "cvename": [
+      "CVE-2019-7251"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-01-24",
+    "entry": "2019-03-01"
+  }
+}

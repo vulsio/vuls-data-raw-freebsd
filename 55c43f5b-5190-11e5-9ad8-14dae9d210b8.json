@@ -1,0 +1,33 @@
+{
+  "vid": "55c43f5b-5190-11e5-9ad8-14dae9d210b8",
+  "topic": "powerdns -- denial of service",
+  "affects": [
+    {
+      "name": [
+        "powerdns"
+      ],
+      "range": [
+        {
+          "lt": "3.4.6",
+          "ge": "3.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PowerDNS reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/md/security/powerdns-advisory-2015-02/\">\n\t  <p>A bug was found in our DNS packet parsing/generation code,\n\t    which, when exploited, can cause individual threads (disabling service)\n\t    or whole processes (allowing a supervisor to restart them) to crash with\n\t    just one or a few query packets.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://doc.powerdns.com/md/security/powerdns-advisory-2015-02/"
+    ],
+    "cvename": [
+      "CVE-2015-5230"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-02",
+    "entry": "2015-09-02"
+  }
+}

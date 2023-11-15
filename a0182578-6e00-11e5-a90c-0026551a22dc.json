@@ -1,0 +1,75 @@
+{
+  "vid": "a0182578-6e00-11e5-a90c-0026551a22dc",
+  "topic": "PostgreSQL -- minor security problems.",
+  "affects": [
+    {
+      "name": [
+        "postgresql90-server"
+      ],
+      "range": [
+        {
+          "lt": "9.0.22",
+          "ge": "9.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql91-server"
+      ],
+      "range": [
+        {
+          "lt": "9.1.18",
+          "ge": "9.1.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql92-server"
+      ],
+      "range": [
+        {
+          "lt": "9.2.13",
+          "ge": "9.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql93-server"
+      ],
+      "range": [
+        {
+          "lt": "9.3.9",
+          "ge": "9.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql94-server"
+      ],
+      "range": [
+        {
+          "lt": "9.4.4",
+          "ge": "9.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PostgreSQL project reports:</p>\n\t<blockquote cite=\"http://www.postgresql.org/about/news/1615/\">\n\t  <p>\n\t\tTwo security issues have been fixed in this release which affect\n\t\tusers of specific PostgreSQL features.\n\t  </p>\n\t  <ul>\n\t    <li>CVE-2015-5289 json or jsonb input values constructed from\n\t\tarbitrary user input can crash the PostgreSQL server and cause a denial of\n\t\tservice.\n\t    </li>\n\t    <li>CVE-2015-5288: The crypt() function included with the optional pgCrypto\n\t\textension could be exploited to read a few additional bytes of memory.\n\t\tNo working exploit for this issue has been developed.\n\t    </li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2015-5289",
+      "CVE-2015-5288"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-08",
+    "entry": "2015-10-08"
+  }
+}

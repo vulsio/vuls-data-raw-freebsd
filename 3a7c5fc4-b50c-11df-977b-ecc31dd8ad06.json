@@ -1,0 +1,32 @@
+{
+  "vid": "3a7c5fc4-b50c-11df-977b-ecc31dd8ad06",
+  "topic": "p5-libwww -- possibility to remote servers to create file with a .(dot) character",
+  "affects": [
+    {
+      "name": [
+        "p5-libwww"
+      ],
+      "range": [
+        {
+          "lt": "5.835"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>lwp-download in libwww-perl before 5.835 does not reject downloads\n\t  to filenames that begin with a `.' (dot) character, which allows\n\t  remote servers to create or overwrite files via a 3xx redirect to a\n\t  URL with a crafted filename or a Content-Disposition header that\n\t  suggests a crafted filename, and possibly execute arbitrary code as\n\t  a consequence of writing to a dotfile in a home directory.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://cpansearch.perl.org/src/GAAS/libwww-perl-5.836/Changes"
+    ],
+    "cvename": [
+      "CVE-2010-2253"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-06-09",
+    "entry": "2010-08-31"
+  }
+}

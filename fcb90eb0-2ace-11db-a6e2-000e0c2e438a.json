@@ -1,0 +1,44 @@
+{
+  "vid": "fcb90eb0-2ace-11db-a6e2-000e0c2e438a",
+  "topic": "mysql -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mysql-server"
+      ],
+      "range": [
+        {
+          "lt": "5.1.6",
+          "ge": "5.1"
+        },
+        {
+          "lt": "5.0.19",
+          "ge": "5.0"
+        },
+        {
+          "lt": "4.1.18",
+          "ge": "4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jean-David Maillefer reports a Denial of Service vulnerability\n\t  within MySQL.  The vulnerability is caused by improper checking\n\t  of the data_format routine, which cause the MySQL server to\n\t  crash.  The crash is triggered by the following code:<br/>\n\t  <code>\"SELECT date_format('%d%s', 1);</code></p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.mysql.com/bug.php?id=20729"
+    ],
+    "cvename": [
+      "CVE-2006-3469"
+    ],
+    "bid": [
+      "19032"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-06-27",
+    "entry": "2006-08-13"
+  }
+}

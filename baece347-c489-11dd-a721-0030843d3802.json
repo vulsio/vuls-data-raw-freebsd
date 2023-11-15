@@ -1,0 +1,38 @@
+{
+  "vid": "baece347-c489-11dd-a721-0030843d3802",
+  "topic": "wireshark -- SMTP Processing Denial of Service Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wireshark",
+        "wireshark-lite",
+        "ethereal",
+        "ethereal-lite",
+        "tethereal",
+        "tethereal-lite"
+      ],
+      "range": [
+        {
+          "lt": "1.0.4_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/32840/\">\n\t  <p>A vulnerability has been reported in Wireshark, which can be\n\t    exploited by malicious people to cause a DoS.</p>\n\t  <p>The vulnerability is caused due to an error in the SMTP dissector\n\t    and can be exploited to trigger the execution of an infinite loop via\n\t    a large SMTP packet.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/32840/",
+      "http://lists.grok.org.uk/pipermail/full-disclosure/2008-November/065840.html"
+    ],
+    "cvename": [
+      "CVE-2008-5285"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-11-24",
+    "entry": "2008-12-07"
+  }
+}

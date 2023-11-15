@@ -1,0 +1,43 @@
+{
+  "vid": "d2c2952d-85a1-11dc-bfff-003048705d5a",
+  "topic": "py-django -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py23-django",
+        "py24-django",
+        "py25-django"
+      ],
+      "range": [
+        {
+          "lt": "0.96.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py23-django-devel",
+        "py24-django-devel",
+        "py25-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "20071026"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django project reports:</p>\n\t<blockquote cite=\"http://www.djangoproject.com/weblog/2007/oct/26/security-fix/\">\n\t  <p>A per-process cache used by Django's internationalization\n\t    (\"i18n\") system to store the results of translation lookups\n\t    for particular values of the HTTP Accept-Language header\n\t    used the full value of that header as a key. An attacker\n\t    could take advantage of this by sending repeated requests\n\t    with extremely large strings in the Accept-Language header,\n\t    potentially causing a denial of service by filling available\n\t    memory.</p>\n\t  <p>Due to limitations imposed by Web server software on the\n\t    size of HTTP header fields, combined with reasonable limits\n\t    on the number of requests which may be handled by a single\n\t    server process over its lifetime, this vulnerability may be\n\t    difficult to exploit. Additionally, it is only present when\n\t    the \"USE_I18N\" setting in Django is \"True\" and the i18n\n\t    middleware component is enabled*. Nonetheless, all users of\n\t    affected versions of Django are encouraged to update.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.djangoproject.com/weblog/2007/oct/26/security-fix/"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-10-26",
+    "entry": "2007-10-27"
+  }
+}

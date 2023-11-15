@@ -1,0 +1,31 @@
+{
+  "vid": "3f1df2f9-cd22-11e0-9bb2-00215c6a37bb",
+  "topic": "PHP -- crypt() returns only the salt for MD5",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.3.7_2",
+          "ge": "5.3.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PHP development team reports:</p>\n\t<blockquote cite=\"https://bugs.php.net/bug.php?id=55439\">\n\t  <p>If crypt() is executed with MD5 salts, the return value\n\t    consists of the salt only.  DES and BLOWFISH salts work as\n\t    expected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.php.net/bug.php?id=55439"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-08-17",
+    "entry": "2011-08-23",
+    "modified": "2011-08-30"
+  }
+}

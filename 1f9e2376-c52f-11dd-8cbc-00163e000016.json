@@ -1,0 +1,33 @@
+{
+  "vid": "1f9e2376-c52f-11dd-8cbc-00163e000016",
+  "topic": "php5 -- potential magic_quotes_gpc vulnerability",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.2.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PHP Developers reports:</p>\n\t<blockquote cite=\"http://www.php.net/archive/2008.php#id2008-12-07-1\">\n\t  <p>Due to a security bug found in the PHP 5.2.7 release, it has been\n\t    removed from distribution. The bug affects configurations where\n\t    magic_quotes_gpc is enabled, because it remains off even when set to\n\t    on.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.php.net/archive/2008.php#id2008-12-07-1"
+    ],
+    "cvename": [
+      "CVE-2008-5844"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-07",
+    "entry": "2008-12-08",
+    "modified": "2010-05-02"
+  }
+}

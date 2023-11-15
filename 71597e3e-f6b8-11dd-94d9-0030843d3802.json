@@ -1,0 +1,36 @@
+{
+  "vid": "71597e3e-f6b8-11dd-94d9-0030843d3802",
+  "topic": "websvn -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "websvn"
+      ],
+      "range": [
+        {
+          "lt": "2.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/32338/\">\n\t  <p>Some vulnerabilities have been reported in WebSVN, which can be\n\t    exploited by malicious users to disclose sensitive information, and by\n\t    malicious people to conduct cross-site scripting attacks and\n\t    manipulate data.</p>\n\t  <p>Input passed in the URL to index.php is not properly sanitised\n\t    before being returned to the user. This can be exploited to execute\n\t    arbitrary HTML and script code in a user's browser session in context\n\t    of an affected site.</p>\n\t  <p>Input passed to the \"rev\" parameter in rss.php is not properly\n\t    sanitised before being used. This can be exploited to overwrite\n\t    arbitrary files via directory traversal attacks.</p>\n\t  <p>Access to restricted repositories is not properly enforced, which\n\t    can be exploited to disclose potentially sensitive information by\n\t    accessing the repository via \"listing.php\" and using the \"compare with\n\t    previous\" and \"show changed files\" links.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/32338/",
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=512191",
+      "http://www.gulftech.org/?node=research&article_id=00132-10202008"
+    ],
+    "cvename": [
+      "CVE-2008-5918",
+      "CVE-2008-5919",
+      "CVE-2009-0240"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-10-23",
+    "entry": "2009-02-09"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "705b759c-7293-11e5-a371-14dae9d210b8",
+  "topic": "pear-twig -- remote code execution",
+  "affects": [
+    {
+      "name": [
+        "pear-twig-twig"
+      ],
+      "range": [
+        {
+          "lt": "1.20.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Fabien Potencier reports:</p>\n\t<blockquote cite=\"http://symfony.com/blog/security-release-twig-1-20-0\">\n\t  <p>End users can craft valid Twig code that allows them to\n\t    execute arbitrary code (RCEs) via the _self variable, which is always\n\t    available, even in sandboxed templates.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://symfony.com/blog/security-release-twig-1-20-0"
+    ],
+    "cvename": [
+      "CVE-2015-7809"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-12",
+    "entry": "2015-10-14"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "vid": "6678211c-bd47-11ed-beb0-1c1b0d9ea7e6",
+  "topic": "Apache OpenOffice -- master password vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache-openoffice"
+      ],
+      "range": [
+        {
+          "lt": "4.1.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache-openoffice-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.2.1678061694,4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Openoffice project reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-37400\">\n\t  <p>Apache OpenOffice supports the storage of passwords for web connections in the user's configuration database. The stored passwords are encrypted with a single master key provided by the user. A flaw in OpenOffice existed where the required initialization vector for encryption was always the same which weakens the security of the encryption making them vulnerable if an attacker has access to the user's configuration data. This issue affects: Apache OpenOffice versions prior to 4.1.13. Reference: CVE-2022-26306 - LibreOffice</p>\n\t</blockquote>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-37401\">\n\t  <p>Apache OpenOffice supports the storage of passwords for web connections in the user's configuration database. The stored passwords are encrypted with a single master key provided by the user. A flaw in OpenOffice existed where master key was poorly encoded resulting in weakening its entropy from 128 to 43 bits making the stored passwords vulnerable to a brute force attack if an attacker has access to the users stored config. This issue affects: Apache OpenOffice versions prior to 4.1.13. Reference: CVE-2022-26307 - LibreOffice</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cwiki.apache.org/confluence/display/OOOUSERS/AOO+4.1.13+Release+Notes"
+    ],
+    "cvename": [
+      "CVE-2022-37400",
+      "CVE-2022-37401"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-02-25",
+    "entry": "2023-03-08"
+  }
+}

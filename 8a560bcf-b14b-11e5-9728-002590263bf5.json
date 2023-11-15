@@ -1,0 +1,46 @@
+{
+  "vid": "8a560bcf-b14b-11e5-9728-002590263bf5",
+  "topic": "qemu -- denial of service vulnerability in VNC",
+  "affects": [
+    {
+      "name": [
+        "qemu",
+        "qemu-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.1.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "qemu-sbruno",
+        "qemu-user-static"
+      ],
+      "range": [
+        {
+          "lt": "2.2.50.g20141230"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/09/02/7\">\n\t  <p>Qemu emulator built with the VNC display driver is vulnerable to an\n\t    infinite loop issue. It could occur while processing a\n\t    CLIENT_CUT_TEXT message with specially crafted payload message.</p>\n\t  <p>A privileged guest user could use this flaw to crash the Qemu\n\t    process on the host, resulting in DoS.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/09/02/7",
+      "http://git.qemu.org/?p=qemu.git;a=commit;h=f9a70e79391f6d7c2a912d785239ee8effc1922d",
+      "https://github.com/seanbruno/qemu-bsd-user/commit/f9a70e79391f6d7c2a912d785239ee8effc1922d"
+    ],
+    "cvename": [
+      "CVE-2015-5239"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-06-30",
+    "entry": "2016-01-02"
+  }
+}

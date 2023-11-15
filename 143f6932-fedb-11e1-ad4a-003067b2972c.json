@@ -1,0 +1,34 @@
+{
+  "vid": "143f6932-fedb-11e1-ad4a-003067b2972c",
+  "topic": "bacula -- Console ACL Bypass",
+  "affects": [
+    {
+      "name": [
+        "bacula"
+      ],
+      "range": [
+        {
+          "lt": "5.2.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"https://secunia.com/advisories/50535/\">\n\t  <p>A security issue has been reported in Bacula, which can be\n\t  exploited by malicious users to bypass certain security\n\t  restrictions.</p>\n\t  <p>The security issue is caused due to an error within the implementation\n\t  of console ACLs, which can be exploited to gain access to certain\n\t  restricted functionality and e.g. dump resources.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.bacula.org/git/cgit.cgi/bacula/commit/?id=67debcecd3d530c429e817e1d778e79dcd1db905",
+      "https://secunia.com/advisories/50535/",
+      "http://sourceforge.net/projects/bacula/files/bacula/5.2.11/ReleaseNotes/view"
+    ],
+    "cvename": [
+      "CVE-2012-4430"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-09-12",
+    "entry": "2012-09-15"
+  }
+}

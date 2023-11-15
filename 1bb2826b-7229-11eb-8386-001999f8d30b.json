@@ -1,0 +1,52 @@
+{
+  "vid": "1bb2826b-7229-11eb-8386-001999f8d30b",
+  "topic": "asterisk -- Remote Crash Vulnerability in PJSIP channel driver",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.38.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "16.16.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "18.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>Given a scenario where an outgoing call is placed from\n\t  Asterisk to a remote SIP server it is possible for a crash\n\t  to occur.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2021-005.html"
+    ],
+    "cvename": [
+      "CVE-2021-26906"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-02-08",
+    "entry": "2021-02-18"
+  }
+}

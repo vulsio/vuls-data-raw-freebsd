@@ -1,0 +1,69 @@
+{
+  "vid": "050eba46-7638-11ed-820d-080027d3a315",
+  "topic": "Python -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "python37"
+      ],
+      "range": [
+        {
+          "lt": "3.7.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python38"
+      ],
+      "range": [
+        {
+          "lt": "3.8.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python39"
+      ],
+      "range": [
+        {
+          "lt": "3.9.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python310"
+      ],
+      "range": [
+        {
+          "lt": "3.10.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python311"
+      ],
+      "range": [
+        {
+          "lt": "3.11.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/3/whatsnew/changelog.html#changelog\">\n\t  <p>gh-100001: python -m http.server no longer allows terminal control characters sent\n\t    within a garbage request to be printed to the stderr server log.\n\t    This is done by changing the http.server BaseHTTPRequestHandler .log_message method\n\t    to replace control characters with a \\xHH hex escape before printing.</p>\n\t  <p>gh-87604: Avoid publishing list of active per-interpreter audit hooks via the gc module.</p>\n\t  <p>gh-98433: The IDNA codec decoder used on DNS hostnames by socket or asyncio related\n\t    name resolution functions no longer involves a quadratic algorithm. This prevents a\n\t    potential CPU denial of service if an out-of-spec excessive length hostname involving\n\t    bidirectional characters were decoded. Some protocols such as urllib http 3xx redirects\n\t    potentially allow for an attacker to supply such a name.</p>\n\t  <p>gh-98739: Update bundled libexpat to 2.5.0.</p>\n\t  <p>gh-97612: Fix a shell code injection vulnerability in the get-remote-certificate.py example\n\t    script. The script no longer uses a shell to run openssl commands. Issue reported and\n\t    initial fix by Caleb Shortt. Patch by Victor Stinner.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.python.org/3/whatsnew/changelog.html#changelog"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-09-28",
+    "entry": "2022-12-07"
+  }
+}

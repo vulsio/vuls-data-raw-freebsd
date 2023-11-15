@@ -1,0 +1,48 @@
+{
+  "vid": "7764b219-8148-11e8-aa4d-000e0cd7b374",
+  "topic": "zziplib - multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "zziplib"
+      ],
+      "range": [
+        {
+          "lt": "0.13.68"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NIST reports (by search in the range 2017/01/01 - 2018/07/06):</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;query=zziplib&amp;search_type=all&amp;pub_start_date=01%2F01%2F2017&amp;pub_end_date=07%2F06%2F2018\">\n\t  <p>17 security fixes in this release:</p>\n\t  <ul>\n\t   <li>Heap-based buffer overflow in the __zzip_get32 function in fetch.c.</li>\n\t   <li>Heap-based buffer overflow in the __zzip_get64 function in fetch.c.</li>\n\t   <li>Heap-based buffer overflow in the zzip_mem_entry_extra_block function\n\t      in memdisk.c.</li>\n\t   <li>The zzip_mem_entry_new function in memdisk.c allows remote attackers\n\t      to cause a denial of service (out-of-bounds read and crash) via a\n\t      crafted ZIP file.</li>\n\t   <li>The prescan_entry function in fseeko.c allows remote attackers to cause\n\t      a denial of service (NULL pointer dereference and crash) via crafted\n\t      ZIP file.</li>\n\t   <li>The zzip_mem_entry_new function in memdisk.c cause a NULL pointer\n\t      dereference and crash via a crafted ZIP file.</li>\n\t   <li>seeko.c cause a denial of service (assertion failure and crash) via a\n\t      crafted ZIP file.</li>\n\t   <li>A segmentation fault caused by invalid memory access in the\n\t      zzip_disk_fread function because the size variable is not validated\n\t      against the amount of file-&gt;stored data.</li>\n\t   <li>A memory alignment error and bus error in the __zzip_fetch_disk_trailer\n\t      function of zzip/zip.c.</li>\n\t   <li>A bus error caused by loading of a misaligned address in the\n\t      zzip_disk_findfirst function.</li>\n\t   <li>An uncontrolled memory allocation and a crash in the __zzip_parse_root_directory\n\t      function.</li>\n\t   <li>An invalid memory address dereference was discovered in zzip_disk_fread\n\t      in mmapped.c.</li>\n\t   <li>A memory leak triggered in the function zzip_mem_disk_new in\n\t      memdisk.c.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&query=zziplib&search_type=all&pub_start_date=01%2F01%2F2017&pub_end_date=07%2F06%2F2018\""
+    ],
+    "cvename": [
+      "CVE-2017-5974",
+      "CVE-2017-5975",
+      "CVE-2017-5976",
+      "CVE-2017-5977",
+      "CVE-2017-5978",
+      "CVE-2017-5979",
+      "CVE-2017-5980",
+      "CVE-2017-5981",
+      "CVE-2018-6381",
+      "CVE-2018-6484",
+      "CVE-2018-6540",
+      "CVE-2018-6541",
+      "CVE-2018-6542",
+      "CVE-2018-6869",
+      "CVE-2018-7725",
+      "CVE-2018-7726",
+      "CVE-2018-7727"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-03-01",
+    "entry": "2018-07-06"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "402ae710-26a2-11dd-ae05-825f4c35000a",
+  "topic": "peercast -- arbitrary code execution",
+  "affects": [
+    {
+      "name": [
+        "peercast"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t  <p>Nico Golde discovered that PeerCast, a P2P audio and\n\t    video streaming server, is vulnerable to a buffer overflow\n\t    in the HTTP Basic Authentication code, allowing a remote\n\t    attacker to crash PeerCast or execure arbitrary code.</p>\n\t"
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/30020"
+    ],
+    "cvename": [
+      "CVE-2008-2040"
+    ],
+    "bid": [
+      "28986"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-05-20",
+    "entry": "2008-05-21"
+  }
+}

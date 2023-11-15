@@ -1,0 +1,52 @@
+{
+  "vid": "612a34ec-81dc-11da-a043-0002a5c3d308",
+  "topic": "clamav -- possible heap overflow in the UPX code",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.88"
+        }
+      ]
+    },
+    {
+      "name": [
+        "clamav-devel"
+      ],
+      "range": [
+        {
+          "lt": "20060110"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Zero Day Initiative reports:</p>\n\t<blockquote cite=\"http://www.zerodayinitiative.com/advisories/ZDI-06-001.html\">\n\t  <p>This vulnerability allows remote attackers to execute\n\t    arbitrary code on vulnerable Clam AntiVirus\n\t    installations. Authentication is not required to exploit\n\t    this vulnerability.</p>\n\t  <p>This specific flaw exists within libclamav/upx.c during\n\t    the unpacking of executable files compressed with UPX. Due\n\t    to an invalid size calculation during a data copy from the\n\t    user-controlled file to heap allocated memory, an\n\t    exploitable memory corruption condition is created.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.zerodayinitiative.com/advisories/ZDI-06-001.html",
+      "http://secunia.com/advisories/18379/"
+    ],
+    "cvename": [
+      "CVE-2006-0162"
+    ],
+    "mlist": [
+      {
+        "text": "http://lurker.clamav.net/message/20060109.213247.a16ae8db.en.html"
+      }
+    ],
+    "bid": [
+      "16191"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-01-09",
+    "entry": "2006-01-10",
+    "modified": "2006-01-15"
+  }
+}

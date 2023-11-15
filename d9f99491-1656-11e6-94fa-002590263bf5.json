@@ -1,0 +1,84 @@
+{
+  "vid": "d9f99491-1656-11e6-94fa-002590263bf5",
+  "topic": "perl5 -- taint mechanism bypass vulnerability",
+  "affects": [
+    {
+      "name": [
+        "perl5"
+      ],
+      "range": [
+        {
+          "lt": "5.18.4_21"
+        },
+        {
+          "lt": "5.20.3_12",
+          "ge": "5.20.0"
+        },
+        {
+          "lt": "5.22.1_8",
+          "ge": "5.22.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "perl5.18"
+      ],
+      "range": [
+        {
+          "lt": "5.18.4_21",
+          "ge": "5.18.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "perl5.20"
+      ],
+      "range": [
+        {
+          "lt": "5.20.3_12",
+          "ge": "5.20.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "perl5.22"
+      ],
+      "range": [
+        {
+          "lt": "5.22.1_8",
+          "ge": "5.22.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "perl"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2381\">\n\t  <p>Perl might allow context-dependent attackers to bypass the taint\n\t    protection mechanism in a child process via duplicate environment\n\t    variables in envp.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-2381"
+    ],
+    "freebsd_pr": [
+      "ports/208879"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-04-08",
+    "entry": "2016-05-10",
+    "modified": "2016-08-22"
+  }
+}

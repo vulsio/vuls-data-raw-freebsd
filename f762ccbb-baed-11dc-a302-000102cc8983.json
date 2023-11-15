@@ -1,0 +1,44 @@
+{
+  "vid": "f762ccbb-baed-11dc-a302-000102cc8983",
+  "topic": "linux-realplayer -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "linux-realplayer"
+      ],
+      "range": [
+        {
+          "lt": "10.0.9.809.20070726",
+          "ge": "10.0.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/27361\">\n\t  <p>Multiple vulnerabilities have been reported in\n\t    RealPlayer/RealOne/HelixPlayer, which can be exploited by malicious\n\t    people to compromise a user's system.</p>\n\t  <p>An input validation error when processing .RA/.RAM files can be\n\t    exploited to cause a heap corruption via a specially crafted\n\t    .RA/.RAM file with an overly large size field in the header.</p>\n\t  <p>An error in the processing of .PLS files can be exploited to cause\n\t    a memory corruption and execute arbitrary code via a specially\n\t    crafted .PLS file.</p>\n\t  <p>An input validation error when parsing .SWF files can be exploited\n\t    to cause a buffer overflow via a specially crafted .SWF file with\n\t    malformed record headers.</p>\n\t  <p>A boundary error when processing rm files can be exploited to\n\t    cause a buffer overflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/27361",
+      "http://service.real.com/realplayer/security/10252007_player/en/",
+      "http://www.zerodayinitiative.com/advisories/ZDI-07-063.html",
+      "http://www.zerodayinitiative.com/advisories/ZDI-07-062.html",
+      "http://www.zerodayinitiative.com/advisories/ZDI-07-061.html",
+      "http://secunia.com/advisories/25819/"
+    ],
+    "cvename": [
+      "CVE-2007-5081",
+      "CVE-2007-3410",
+      "CVE-2007-2263",
+      "CVE-2007-2264"
+    ],
+    "cert_vu": [
+      "759385"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-10-25",
+    "entry": "2008-01-04"
+  }
+}

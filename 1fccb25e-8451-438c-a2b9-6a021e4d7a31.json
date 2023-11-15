@@ -1,0 +1,34 @@
+{
+  "vid": "1fccb25e-8451-438c-a2b9-6a021e4d7a31",
+  "topic": "nghttp2 -- Denial of service due to NULL pointer dereference",
+  "affects": [
+    {
+      "name": [
+        "libnghttp2",
+        "nghttp2"
+      ],
+      "range": [
+        {
+          "lt": "1.31.1",
+          "ge": "1.10.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>nghttp2 blog:</p>\n\t<blockquote cite=\"https://nghttp2.org/blog/2018/04/12/nghttp2-v1-31-1/\">\n\t  <p>If ALTSVC frame is received by libnghttp2 and it is larger than it can\n\t    accept, the pointer field which points to ALTSVC frame payload is left\n\t    NULL. Later libnghttp2 attempts to access another field through the\n\t    pointer, and gets segmentation fault.</p>\n\t  <p>ALTSVC frame is defined by RFC 7838.</p>\n\t  <p>The largest frame size libnghttp2 accept is by default 16384 bytes.</p>\n\t  <p>Receiving ALTSVC frame is disabled by default. Application has to\n\t    enable it explicitly by calling\n\t    nghttp2_option_set_builtin_recv_extension_type(opt, NGHTTP2_ALTSVC).</p>\n\t  <p>Transmission of ALTSVC is always enabled, and it does not cause this\n\t    vulnerability.</p>\n\t  <p>ALTSVC frame is expected to be sent by server, and received by client\n\t    as defined in RFC 7838.</p>\n\t  <p>Client and server are both affected by this vulnerability if the\n\t    reception of ALTSVC frame is enabled. As written earlier, it is useless\n\t    to enable reception of ALTSVC frame on server side. So, server is\n\t    generally safe unless application accidentally enabled the reception of\n\t    ALTSVC frame.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nghttp2.org/blog/2018/04/12/nghttp2-v1-31-1/"
+    ],
+    "cvename": [
+      "CVE-2018-1000168"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-04-04",
+    "entry": "2018-04-13"
+  }
+}

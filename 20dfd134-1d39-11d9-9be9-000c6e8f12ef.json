@@ -1,0 +1,42 @@
+{
+  "vid": "20dfd134-1d39-11d9-9be9-000c6e8f12ef",
+  "topic": "freeradius -- denial-of-service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "freeradius"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1",
+          "ge": "0.8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A remote attacker may be able to crash the freeRADIUS Server\n\t  due to three independant bugs in the function which does\n\t  improper checking values while processing RADIUS\n\t  attributes.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securitytracker.com/alerts/2004/Sep/1011364.html"
+    ],
+    "cvename": [
+      "CVE-2004-0938",
+      "CVE-2004-0960",
+      "CVE-2004-0961"
+    ],
+    "bid": [
+      "11222"
+    ],
+    "cert_vu": [
+      "541574"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-20",
+    "entry": "2004-10-13",
+    "modified": "2004-10-19"
+  }
+}

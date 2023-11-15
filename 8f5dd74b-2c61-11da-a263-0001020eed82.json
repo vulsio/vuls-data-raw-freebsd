@@ -1,0 +1,135 @@
+{
+  "vid": "8f5dd74b-2c61-11da-a263-0001020eed82",
+  "topic": "firefox & mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.0.7,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.0.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7.12,2"
+        },
+        {
+          "ge": "1.8.*,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla-devel"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "netscape7"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-linux-mozillafirebird",
+        "el-linux-mozillafirebird",
+        "ja-linux-mozillafirebird-gtk1",
+        "ja-mozillafirebird-gtk2",
+        "linux-mozillafirebird",
+        "ru-linux-mozillafirebird",
+        "zhCN-linux-mozillafirebird",
+        "zhTW-linux-mozillafirebird"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-linux-netscape",
+        "de-netscape7",
+        "fr-linux-netscape",
+        "fr-netscape7",
+        "ja-linux-netscape",
+        "ja-netscape7",
+        "linux-netscape",
+        "linux-phoenix",
+        "mozilla+ipv6",
+        "mozilla-embedded",
+        "mozilla-firebird",
+        "mozilla-gtk1",
+        "mozilla-gtk2",
+        "mozilla-gtk",
+        "mozilla-thunderbird",
+        "phoenix",
+        "pt_BR-netscape7"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports of multiple\n\t  issues:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-58.html\">\n\t  <h1>Heap overrun in XBM image processing</h1>\n\t  <p>jackerror reports that an improperly terminated XBM image\n\t    ending with space characters instead of the expected end\n\t    tag can lead to a heap buffer overrun. This appears to be\n\t    exploitable to install or run malicious code on the user's\n\t    machine.</p>\n\t  <p>Thunderbird does not support the XBM format and is not\n\t    affected by this flaw.</p>\n\t  <h1>Crash on \"zero-width non-joiner\" sequence</h1>\n\t  <p>Mats Palmgren discovered that a reported crash on Unicode\n\t    sequences with \"zero-width non-joiner\" characters was due\n\t    to stack corruption that may be exploitable.</p>\n\t  <h1>XMLHttpRequest header spoofing</h1>\n\t  <p>It was possible to add illegal and malformed headers to\n\t    an XMLHttpRequest. This could have been used to exploit\n\t    server or proxy flaws from the user's machine, or to fool\n\t    a server or proxy into thinking a single request was a\n\t    stream of separate requests. The severity of this\n\t    vulnerability depends on the value of servers which might\n\t    be vulnerable to HTTP request smuggling and similar\n\t    attacks, or which share an IP address (virtual hosting)\n\t    with the attacker's page.</p>\n\t  <p>For users connecting to the web through a proxy this flaw\n\t    could be used to bypass the same-origin restriction on\n\t    XMLHttpRequests by fooling the proxy into handling a\n\t    single request as multiple pipe-lined requests directed at\n\t    arbitrary hosts. This could be used, for example, to read\n\t    files on intranet servers behind a firewall.</p>\n\t  <h1>Object spoofing using XBL &lt;implements&gt;</h1>\n\t  <p>moz_bug_r_a4 demonstrated a DOM object spoofing bug\n\t    similar to <a href=\"http://www.mozilla.org/security/announce/mfsa2005-55.html\">MFSA\n\t    2005-55</a> using an XBL control that &lt;implements&gt;\n\t    an internal interface. The severity depends on the version\n\t    of Firefox: investigation so far indicates Firefox 1.0.x\n\t    releases don't expose any vulnerable functionality to\n\t    interfaces spoofed in this way, but that early Deer Park\n\t    Alpha 1 versions did.</p>\n\t  <p>XBL was changed to no longer allow unprivileged controls\n\t    from web content to implement XPCOM interfaces.</p>\n\t  <h1>JavaScript integer overflow</h1>\n\t  <p>Georgi Guninski reported an integer overflow in the\n\t    JavaScript engine. We presume this could be exploited to\n\t    run arbitrary code under favorable conditions.</p>\n\t  <h1>Privilege escalation using about: scheme</h1>\n\t  <p>heatsync and shutdown report two different ways to bypass\n\t    the restriction on loading high privileged \"chrome\" pages\n\t    from an unprivileged \"about:\" page. By itself this is\n\t    harmless--once the \"about\" page's privilege is raised the\n\t    original page no longer has access--but should this be\n\t    combined with a same-origin violation this could lead to\n\t    arbitrary code execution.</p>\n\t  <h1>Chrome window spoofing</h1>\n\t  <p>moz_bug_r_a4 demonstrates a way to get a blank \"chrome\"\n\t    canvas by opening a window from a reference to a closed\n\t    window. The resulting window is not privileged, but the\n\t    normal browser UI is missing and can be used to construct\n\t    a spoof page without any of the safety features of the\n\t    browser chrome designed to alert users to phishing sites,\n\t    such as the address bar and the status bar.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/mfsa2005-58.html"
+    ],
+    "cvename": [
+      "CVE-2005-2701",
+      "CVE-2005-2702",
+      "CVE-2005-2703",
+      "CVE-2005-2704",
+      "CVE-2005-2705",
+      "CVE-2005-2706",
+      "CVE-2005-2707"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-09-22",
+    "entry": "2005-09-23",
+    "modified": "2005-10-26"
+  }
+}

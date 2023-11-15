@@ -1,0 +1,41 @@
+{
+  "vid": "8b986a05-4dbe-11e0-8b9a-02e0184b8d35",
+  "topic": "avahi -- denial of service",
+  "affects": [
+    {
+      "name": [
+        "avahi",
+        "avahi-app",
+        "avahi-autoipd",
+        "avahi-gtk",
+        "avahi-libdns",
+        "avahi-qt3",
+        "avahi-qt4",
+        "avahi-sharp"
+      ],
+      "range": [
+        {
+          "lt": "0.6.29"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Avahi developers reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/43361/\">\n\t  <p>A vulnerability has been reported in Avahi, which can be exploited\n\t    by malicious people to cause a DoS (Denial of Service).\n\t    The vulnerability is caused due to an error when processing certain\n\t    UDP packets, which can be exploited to trigger an infinite loop by\n\t    e.g. sending an empty packet to port 5353/UDP.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/43361/",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=667187"
+    ],
+    "cvename": [
+      "CVE-2011-1002",
+      "CVE-2010-2244"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-02-21",
+    "entry": "2011-03-13"
+  }
+}

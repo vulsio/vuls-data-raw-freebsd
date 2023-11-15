@@ -1,0 +1,29 @@
+{
+  "vid": "2adc3e78-22d1-11e2-b9f0-d0df9acfd7e5",
+  "topic": "drupal7 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "drupal7"
+      ],
+      "range": [
+        {
+          "lt": "7.16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/1815912\">\n\t<ol>\n\t  <li>\n\t  <p>Arbitrary PHP code execution</p>\n\t  <p>A bug in the installer code was identified that allows an attacker\n\t     to re-install Drupal using an external database server under certain\n\t     transient conditions. This could allow the attacker to execute\n\t     arbitrary PHP code on the original server.</p>\n\t  </li>\n\t  <li>\n\t  <p>Information disclosure - OpenID module</p>\n\t  <p>For sites using the core OpenID module, an information disclosure\n\t     vulnerability was identified that allows an attacker to read files\n\t     on the local filesystem by attempting to log in to the site using a\n\t     malicious OpenID server.</p>\n\t  </li>\n\t</ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/1815912"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-10-17",
+    "entry": "2012-10-31"
+  }
+}

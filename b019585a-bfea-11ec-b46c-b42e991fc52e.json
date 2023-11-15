@@ -1,0 +1,32 @@
+{
+  "vid": "b019585a-bfea-11ec-b46c-b42e991fc52e",
+  "topic": "zgrep -- arbitrary file write",
+  "affects": [
+    {
+      "name": [
+        "gzip"
+      ],
+      "range": [
+        {
+          "lt": "1.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>RedHat reports:</p>\n\t<blockquote cite=\"https://access.redhat.com/security/cve/cve-2022-1271\">\n\t  <p>An arbitrary file write vulnerability was found in GNU\n\t\tgzip's zgrep utility. When zgrep is applied on the\n\t\tattacker's chosen file name (for example, a crafted\n\t\tfile name), this can overwrite an attacker's content\n\t\tto an arbitrary attacker-selected file. This flaw\n\t\toccurs due to insufficient validation when processing\n\t\tfilenames with two or more newlines where selected\n\t\tcontent and the target file names are embedded in\n\t\tcrafted multi-line file names. This flaw allows a\n\t\tremote, low privileged attacker to force zgrep to\n\t\twrite arbitrary files on the system.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2073310"
+    ],
+    "cvename": [
+      "CVE-2022-1271"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-04-07",
+    "entry": "2022-04-19"
+  }
+}

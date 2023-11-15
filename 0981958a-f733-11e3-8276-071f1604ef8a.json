@@ -1,0 +1,29 @@
+{
+  "vid": "0981958a-f733-11e3-8276-071f1604ef8a",
+  "topic": "iodined -- authentication bypass",
+  "affects": [
+    {
+      "name": [
+        "iodine"
+      ],
+      "range": [
+        {
+          "lt": "0.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Erik Ekman of the iodine project reports:</p>\n    <blockquote cite=\"https://github.com/yarrick/iodine/commit/b715be5cf3978fbe589b03b09c9398d0d791f850\">\n\t<p>The client could bypass the password check by continuing after\n\t    getting error from the server and guessing the network parameters.\n\t    The server would still accept the rest of the setup and also network\n\t    traffic.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/yarrick/iodine/commit/b715be5cf3978fbe589b03b09c9398d0d791f850"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-06-16",
+    "entry": "2014-06-18"
+  }
+}

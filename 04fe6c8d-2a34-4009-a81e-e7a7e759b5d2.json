@@ -1,0 +1,35 @@
+{
+  "vid": "04fe6c8d-2a34-4009-a81e-e7a7e759b5d2",
+  "topic": "cURL -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.60.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cURL security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2018-1000300: FTP shutdown response buffer overflow</p>\n\t  <p>curl might overflow a heap based memory buffer when closing down an\n\t    FTP connection with very long server command replies.</p>\n\t  <p>When doing FTP transfers, curl keeps a spare \"closure handle\" around\n\t    internally that will be used when an FTP connection gets shut down\n\t    since the original curl easy handle is then already removed.</p>\n\t  <p>FTP server response data that gets cached from the original transfer\n\t    might then be larger than the default buffer size (16 KB) allocated in\n\t    the \"closure handle\", which can lead to a buffer overwrite. The\n\t    contents and size of that overwrite is controllable by the server.</p>\n\t  <p>This situation was detected by an assert() in the code, but that was\n\t    of course only preventing bad stuff in debug builds. This bug is very\n\t    unlikely to trigger with non-malicious servers.</p>\n\t  <p>We are not aware of any exploit of this flaw.</p>\n\t  <p>CVE-2018-1000301: RTSP bad headers buffer over-read</p>\n\t  <p>curl can be tricked into reading data beyond the end of a heap based\n\t    buffer used to store downloaded content.</p>\n\t  <p>When servers send RTSP responses back to curl, the data starts out\n\t    with a set of headers. curl parses that data to separate it into a\n\t    number of headers to deal with those appropriately and to find the end\n\t    of the headers that signal the start of the \"body\" part.</p>\n\t  <p>The function that splits up the response into headers is called\n\t    Curl_http_readwrite_headers() and in situations where it can't find a\n\t    single header in the buffer, it might end up leaving a pointer pointing\n\t    into the buffer instead of to the start of the buffer which then later\n\t    on may lead to an out of buffer read when code assumes that pointer\n\t    points to a full buffer size worth of memory to use.</p>\n\t  <p>This could potentially lead to information leakage but most likely a\n\t    crash/denial of service for applications if a server triggers this flaw.</p>\n\t  <p>We are not aware of any exploit of this flaw.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.haxx.se/docs/security.html",
+      "https://curl.haxx.se/docs/adv_2018-82c2.html",
+      "https://curl.haxx.se/docs/adv_2018-b138.html"
+    ],
+    "cvename": [
+      "CVE-2018-1000300",
+      "CVE-2018-1000301"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-05-16",
+    "entry": "2018-05-16"
+  }
+}

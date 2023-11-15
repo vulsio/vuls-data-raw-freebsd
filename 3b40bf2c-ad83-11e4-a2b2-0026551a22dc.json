@@ -1,0 +1,78 @@
+{
+  "vid": "3b40bf2c-ad83-11e4-a2b2-0026551a22dc",
+  "topic": "PostgreSQL -- multiple buffer overflows and memory issues",
+  "affects": [
+    {
+      "name": [
+        "postgresql90-server"
+      ],
+      "range": [
+        {
+          "lt": "9.0.19",
+          "ge": "9.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql91-server"
+      ],
+      "range": [
+        {
+          "lt": "9.1.15",
+          "ge": "9.1.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql92-server"
+      ],
+      "range": [
+        {
+          "lt": "9.2.10",
+          "ge": "9.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql93-server"
+      ],
+      "range": [
+        {
+          "lt": "9.3.6",
+          "ge": "9.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql94-server"
+      ],
+      "range": [
+        {
+          "lt": "9.4.1",
+          "ge": "9.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PostgreSQL Project reports:</p>\n\t<blockquote cite=\"http://www.postgresql.org/about/news/1569/\">\n\t  <p>This update fixes multiple security issues reported in PostgreSQL\n\t    over the past few months.  All of these issues require prior\n\t    authentication, and some require additional conditions, and as such\n\t    are not considered generally urgent.  However, users should examine\n\t    the list of security holes patched below in case they are particularly\n\t    vulnerable.</p>\n\t  <ol>\n\t    <li>CVE-2015-0241 Buffer overruns in \"to_char\" functions.</li>\n\t    <li>CVE-2015-0242 Buffer overrun in replacement printf family of\n\t\tfunctions.</li>\n\t    <li>CVE-2015-0243 Memory errors in functions in the pgcrypto extension.</li>\n\t    <li>CVE-2015-0244 An error in extended protocol message reading.</li>\n\t    <li>CVE-2014-8161 Constraint violation errors can cause display of values in columns\n\t\twhich the user would not normally have rights to see.</li>\n\t  </ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2015-0241",
+      "CVE-2015-0242",
+      "CVE-2015-0243",
+      "CVE-2015-0244",
+      "CVE-2014-8161"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-02-05",
+    "entry": "2015-02-05"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "vid": "f5561ade-846c-11e4-b7a7-20cf30e32f6d",
+  "topic": "subversion -- DoS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mod_dav_svn"
+      ],
+      "range": [
+        {
+          "lt": "1.8.11",
+          "ge": "1.8.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "subversion16"
+      ],
+      "range": [
+        {
+          "lt": "1.7.19",
+          "ge": "1.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "subversion17"
+      ],
+      "range": [
+        {
+          "lt": "1.7.19",
+          "ge": "1.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "subversion"
+      ],
+      "range": [
+        {
+          "lt": "1.7.19",
+          "ge": "1.0.0"
+        },
+        {
+          "lt": "1.8.11",
+          "ge": "1.8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Subversion Project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/\">\n\t  <p>Subversion's mod_dav_svn Apache HTTPD server module will crash when it\n\t     receives a REPORT request for some invalid formatted special URIs.</p>\n\t  <p>Subversion's mod_dav_svn Apache HTTPD server module will crash when it\n\t     receives a request for some invalid formatted special URIs.</p>\n\t  <p>We consider this to be a medium risk vulnerability.  Repositories which\n\t     allow for anonymous reads will be vulnerable without authentication.\n\t     Unfortunately, no special configuration is required and all mod_dav_svn\n\t     servers are vulnerable.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://subversion.apache.org/security/CVE-2014-3580-advisory.txt",
+      "http://subversion.apache.org/security/CVE-2014-8108-advisory.txt"
+    ],
+    "cvename": [
+      "CVE-2014-3580",
+      "CVE-2014-8108"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-12-13",
+    "entry": "2014-12-15"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "97c22a94-5b8b-11e2-b131-000c299b62e1",
+  "topic": "nagios -- buffer overflow in history.cgi",
+  "affects": [
+    {
+      "name": [
+        "nagios"
+      ],
+      "range": [
+        {
+          "lt": "3.4.3_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>full disclosure reports:</p>\n\t<blockquote cite=\"http://archives.neohapsis.com/archives/fulldisclosure/2012-12/0108.html\">\n\t  <p>history.cgi is vulnerable to a buffer overflow due to the use of\n\t     sprintf with user supplied data that has not been restricted in size.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://archives.neohapsis.com/archives/fulldisclosure/2012-12/0108.html",
+      "http://nagios.svn.sourceforge.net/viewvc/nagios?view=revision&revision=2547"
+    ],
+    "cvename": [
+      "CVE-2012-6096"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-12-21",
+    "entry": "2013-01-10"
+  }
+}

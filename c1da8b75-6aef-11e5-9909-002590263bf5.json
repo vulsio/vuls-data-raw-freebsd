@@ -1,0 +1,58 @@
+{
+  "vid": "c1da8b75-6aef-11e5-9909-002590263bf5",
+  "topic": "php -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php5-phar"
+      ],
+      "range": [
+        {
+          "le": "5.4.45"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55-phar"
+      ],
+      "range": [
+        {
+          "lt": "5.5.30"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56-phar"
+      ],
+      "range": [
+        {
+          "lt": "5.6.14"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.5.30\">\n\t  <p>Phar:</p>\n\t  <ul>\n\t    <li>Fixed bug #69720 (Null pointer dereference in\n\t      phar_get_fp_offset()).</li>\n\t    <li>Fixed bug #70433 (Uninitialized pointer in phar_make_dirstream\n\t      when zip entry filename is \"/\").</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-5.php#5.5.30",
+      "http://php.net/ChangeLog-5.php#5.6.14"
+    ],
+    "cvename": [
+      "CVE-2015-7803",
+      "CVE-2015-7804"
+    ],
+    "freebsd_pr": [
+      "ports/203541"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-01",
+    "entry": "2015-10-04",
+    "modified": "2015-10-12"
+  }
+}

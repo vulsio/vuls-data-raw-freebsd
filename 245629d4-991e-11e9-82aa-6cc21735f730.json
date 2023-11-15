@@ -1,0 +1,42 @@
+{
+  "vid": "245629d4-991e-11e9-82aa-6cc21735f730",
+  "topic": "PostgreSQL -- Stack-based buffer overflow via setting a password",
+  "affects": [
+    {
+      "name": [
+        "postgresql11-server"
+      ],
+      "range": [
+        {
+          "lt": "11.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql10-server"
+      ],
+      "range": [
+        {
+          "lt": "10.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1949/\">\n\t  <p>\n\t    An authenticated user could create a stack-based buffer overflow\n\t    by changing their own password to a purpose-crafted value. In addition\n\t    to the ability to crash the PostgreSQL server, this could be further\n\t    exploited to execute arbitrary code as the PostgreSQL operating system account.\n\t  </p>\n\t  <p>\n\t    Additionally, a rogue server could send a specifically crafted\n\t    message during the SCRAM authentication process and cause a libpq-enabled client\n\t    to either crash or execute arbitrary code as the client's operating system account.\n\t  </p>\n\t  <p>\n\t    This issue is fixed by upgrading and restarting your PostgreSQL\n\t    server as well as your libpq installations. All users running\n\t    PostgreSQL 10, 11, and 12 beta are encouraged to upgrade as soon as possible.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.postgresql.org/about/news/1949/"
+    ],
+    "cvename": [
+      "CVE-2019-10164"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-06-20",
+    "entry": "2019-06-27"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "vid": "c80b27a2-3165-11e5-8a1d-14dae9d210b8",
+  "topic": "wordpress -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.2.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "ja-wordpress",
+        "ru-wordpress",
+        "zh-wordpress-zh_CN",
+        "zh-wordpress-zh_TW"
+      ],
+      "range": [
+        {
+          "lt": "4.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gary Pendergast reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2015/07/wordpress-4-2-3/\">\n\t  <p>WordPress versions 4.2.2 and earlier are affected by a\n\t    cross-site scripting vulnerability, which could allow users with the\n\t    Contributor or Author role to compromise a site. This was reported by\n\t    Jon Cave and fixed by Robert Chapin, both of the WordPress security\n\t    team.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wordpress.org/news/2015/07/wordpress-4-2-3/"
+    ],
+    "cvename": [
+      "CVE-2015-5622",
+      "CVE-2015-5623"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-23",
+    "entry": "2015-07-23",
+    "modified": "2015-09-15"
+  }
+}

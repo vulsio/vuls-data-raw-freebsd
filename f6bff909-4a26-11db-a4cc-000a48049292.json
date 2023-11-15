@@ -1,0 +1,45 @@
+{
+  "vid": "f6bff909-4a26-11db-a4cc-000a48049292",
+  "topic": "libmms -- stack-based buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "libmms"
+      ],
+      "range": [
+        {
+          "lt": "0.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre CVE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2200\">\n\t  <p>Stack-based buffer overflow in libmms, as used by (a)\n\t    MiMMS 0.0.9 and (b) xine-lib 1.1.0 and earlier, allows\n\t    remote attackers to cause a denial of service (application\n\t    crash) and possibly execute arbitrary code via the (1)\n\t    send_command, (2) string_utf16, (3) get_data, and (4)\n\t    get_media_packet functions, and possibly other functions.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=374577"
+    ],
+    "cvename": [
+      "CVE-2006-2200"
+    ],
+    "bid": [
+      "18608"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-05-04",
+    "entry": "2006-09-22"
+  }
+}

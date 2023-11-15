@@ -1,0 +1,35 @@
+{
+  "vid": "48e14d86-42f1-11de-ad22-000e35248ad7",
+  "topic": "libxine -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.1.16.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>xine developers report:</p>\n\t<blockquote cite=\"http://sourceforge.net/project/shownotes.php?group_id=9655&amp;release_id=673233\">\n\t  <ul>\n\t    <li>Fix another possible int overflow in the 4XM demuxer.\n\t    (ref. TKADV2009-004, CVE-2009-0385)</li>\n\t    <li>Fix an integer overflow in the Quicktime demuxer.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://trapkit.de/advisories/TKADV2009-004.txt",
+      "http://trapkit.de/advisories/TKADV2009-005.txt",
+      "http://sourceforge.net/project/shownotes.php?release_id=660071"
+    ],
+    "cvename": [
+      "CVE-2009-0385",
+      "CVE-2009-1274"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-04-04",
+    "entry": "2009-05-17"
+  }
+}

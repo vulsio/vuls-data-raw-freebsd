@@ -1,0 +1,33 @@
+{
+  "vid": "c0fd7890-4346-11db-89cc-000ae42e9b93",
+  "topic": "drupal-pubcookie -- authentication may be bypassed",
+  "affects": [
+    {
+      "name": [
+        "drupal-pubcookie"
+      ],
+      "range": [
+        {
+          "le": "4.6.0_20060210"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/83064\">\n\t  <p>It is possible for a malicious user to spoof a user's\n\t    identity by bypassing the login redirection mechanism in the\n\t    pubcookie module. The malicious user may gain the privileges\n\t    of the user they are spoofing, including the administrative\n\t    user.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/83064"
+    ],
+    "cvename": [
+      "CVE-2006-4717"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-09-08",
+    "entry": "2006-09-13",
+    "modified": "2010-05-12"
+  }
+}

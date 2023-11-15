@@ -1,0 +1,48 @@
+{
+  "vid": "d4a358d3-e09a-11dd-a765-0030843d3802",
+  "topic": "nagios -- web interface privilege escalation vulnerability",
+  "affects": [
+    {
+      "name": [
+        "nagios"
+      ],
+      "range": [
+        {
+          "lt": "3.0.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nagios2"
+      ],
+      "range": [
+        {
+          "lt": "2.12_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>securityfocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/32156/discuss\">\n\t  <p>An attacker with low-level privileges may exploit this issue to\n\t    bypass authorization and cause arbitrary commands to run within the\n\t    context of the Nagios server. This may aid in further attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/33320",
+      "http://www.ubuntu.com/usn/USN-698-1",
+      "http://www.nagios.org/development/history/nagios-3x.php"
+    ],
+    "cvename": [
+      "CVE-2008-5027"
+    ],
+    "bid": [
+      "32156"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-11-06",
+    "entry": "2009-01-12",
+    "modified": "2009-01-15"
+  }
+}

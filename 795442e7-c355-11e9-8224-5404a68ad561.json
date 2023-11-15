@@ -1,0 +1,43 @@
+{
+  "vid": "795442e7-c355-11e9-8224-5404a68ad561",
+  "topic": "vlc -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "vlc"
+      ],
+      "range": [
+        {
+          "lt": "3.0.8,4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The VLC project reports:</p>\n\t<blockquote cite=\"https://www.videolan.org/developers/vlc-branch/NEWS\">\n\t  <p>Security:\n\t     * Fix a buffer overflow in the MKV demuxer (CVE-2019-14970)\n\t     * Fix a read buffer overflow in the avcodec decoder (CVE-2019-13962)\n\t     * Fix a read buffer overflow in the FAAD decoder\n\t     * Fix a read buffer overflow in the OGG demuxer (CVE-2019-14437, CVE-2019-14438)\n\t     * Fix a read buffer overflow in the ASF demuxer (CVE-2019-14776)\n\t     * Fix a use after free in the MKV demuxer (CVE-2019-14777, CVE-2019-14778)\n\t     * Fix a use after free in the ASF demuxer (CVE-2019-14533)\n\t     * Fix a couple of integer underflows in the MP4 demuxer (CVE-2019-13602)\n\t     * Fix a null dereference in the dvdnav demuxer\n\t     * Fix a null dereference in the ASF demuxer (CVE-2019-14534)\n\t     * Fix a null dereference in the AVI demuxer\n\t     * Fix a division by zero in the CAF demuxer (CVE-2019-14498)\n\t     * Fix a division by zero in the ASF demuxer (CVE-2019-14535)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.videolan.org/developers/vlc-branch/NEWS"
+    ],
+    "cvename": [
+      "CVE-2019-13602",
+      "CVE-2019-13962",
+      "CVE-2019-14437",
+      "CVE-2019-14438",
+      "CVE-2019-14498",
+      "CVE-2019-14533",
+      "CVE-2019-14534",
+      "CVE-2019-14535",
+      "CVE-2019-14776",
+      "CVE-2019-14777",
+      "CVE-2019-14778",
+      "CVE-2019-14970"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-07-14",
+    "entry": "2019-08-20"
+  }
+}

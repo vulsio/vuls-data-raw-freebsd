@@ -1,0 +1,32 @@
+{
+  "vid": "e11955ca-187c-11e2-be36-00215af774f0",
+  "topic": "xinetd -- attackers can bypass access restrictions if tcpmux-servers service enabled",
+  "affects": [
+    {
+      "name": [
+        "xinetd"
+      ],
+      "range": [
+        {
+          "lt": "2.3.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Thomas Swan reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=790940\">\n\t  <p>xinetd allows for services to be configured with the TCPMUX\n\t    or TCPMUXPLUS service types, which makes those services\n\t    available on port 1, as per RFC 1078 [1], if the tcpmux-server\n\t    service is enabled.  When the tcpmux-server service is enabled,\n\t    xinetd would expose _all_ enabled services via the tcpmux port,\n\t    instead of just the configured service(s).  This could allow\n\t    a remote attacker to bypass firewall restrictions and access\n\t    services via the tcpmux port.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=790940"
+    ],
+    "cvename": [
+      "CVE-2012-0862"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-02-15",
+    "entry": "2012-10-17"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "vid": "73ec1008-72f0-11dd-874b-0030843d3802",
+  "topic": "opera -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "9.52"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Opera Team reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/893/\">\n\t  <p>Scripts are able to change the addresses of framed pages that\n\t    come from the same site. Due to a flaw in the way that Opera checks\n\t    what frames can be changed, a site can change the address of frames\n\t    on other sites inside any window that it has opened. This allows\n\t    sites to open pages from other sites, and display misleading\n\t    information on them.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/894/\">\n\t  <p>Custom shortcut and menu commands can be used to activate external\n\t    applications. In some cases, the parameters passed to these\n\t    applications are not prepared correctly, and may be created from\n\t    uninitialized memory. These may be misinterpreted as additional\n\t    parameters, and depending on the application, this could allow\n\t    execution of arbitrary code.</p>\n\t  <p>Successful exploitation requires convincing the user to modify\n\t    their shortcuts or menu files appropriately, pointing to an\n\t    appropriate target application, then to activate that shortcut at\n\t    an appropriate time. To inject code, additional means will have to\n\t    be employed.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/895/\">\n\t  <p>When insecure pages load content from secure sites into a frame,\n\t    they can cause Opera to incorrectly report the insecure site as\n\t    being secure. The padlock icon will incorrectly be shown, and the\n\t    security information dialog will state that the connection is\n\t    secure, but without any certificate information.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/896/\">\n\t  <p>As a security precaution, Opera does not allow Web pages to\n\t    link to files on the user's local disk. However, a flaw exists\n\t    that allows Web pages to link to feed source files on the\n\t    user's computer. Suitable detection of JavaScript events and\n\t    appropriate manipulation can unreliably allow a script to\n\t    detect the difference between successful and unsuccessful\n\t    subscriptions to these files, to allow it to discover if the\n\t    file exists or not. In most cases the attempt will fail.</p>\n\t  </blockquote>\n\t  <blockquote cite=\"http://www.opera.com/support/search/view/897/\">\n\t    <p>It has been reported that when a user subscribes to a news\n\t      feed using the feed subscription button, the page address\n\t      can be changed. This causes the address field not to update\n\t      correctly. Although this can mean that misleading\n\t      information can be displayed in the address field, it can\n\t      only leave the attacking page's address in the address bar,\n\t      not a trusted third party address.</p>\n\t  </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.opera.com/support/search/view/893/",
+      "http://www.opera.com/support/search/view/894/",
+      "http://www.opera.com/support/search/view/895/",
+      "http://www.opera.com/support/search/view/896/",
+      "http://www.opera.com/support/search/view/897/"
+    ],
+    "cvename": [
+      "CVE-2008-4195",
+      "CVE-2008-4197",
+      "CVE-2008-4198",
+      "CVE-2008-4200"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-08-20",
+    "entry": "2008-08-25",
+    "modified": "2010-05-12"
+  }
+}

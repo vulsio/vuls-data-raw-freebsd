@@ -1,0 +1,122 @@
+{
+  "vid": "1fade8a3-e9e8-11e0-9580-4061862b8c22",
+  "topic": "Mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "7.0,1",
+          "gt": "4.0,1"
+        },
+        {
+          "lt": "3.6.23,1",
+          "gt": "3.6.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "1.9.2.23",
+          "gt": "1.9.2.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "7.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "7.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "7.0",
+          "gt": "4.0"
+        },
+        {
+          "lt": "3.1.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2011-36 Miscellaneous memory safety hazards (rv:7.0 /\n\t    rv:1.9.2.23)</p>\n\t  <p>MFSA 2011-37 Integer underflow when using JavaScript RegExp</p>\n\t  <p>MFSA 2011-38 XSS via plugins and shadowed window.location\n\t    object</p>\n\t  <p>MFSA 2011-39 Defense against multiple Location headers due to\n\t    CRLF Injection</p>\n\t  <p>MFSA 2011-40 Code installation through holding down Enter</p>\n\t  <p>MFSA 2011-41 Potentially exploitable WebGL crashes</p>\n\t  <p>MFSA 2011-42 Potentially exploitable crash in the YARR regular\n\t    expression library</p>\n\t  <p>MFSA 2011-43 loadSubScript unwraps XPCNativeWrapper scope\n\t    parameter</p>\n\t  <p>MFSA 2011-44 Use after free reading OGG headers</p>\n\t  <p>MFSA 2011-45 Inferring Keystrokes from motion data</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-36.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-37.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-38.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-39.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-40.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-41.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-42.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-43.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-44.html",
+      "http://www.mozilla.org/security/announce/2011/mfsa2011-45.html"
+    ],
+    "cvename": [
+      "CVE-2011-2372",
+      "CVE-2011-2995",
+      "CVE-2011-2996",
+      "CVE-2011-2997",
+      "CVE-2011-2999",
+      "CVE-2011-3000",
+      "CVE-2011-3001",
+      "CVE-2011-3002",
+      "CVE-2011-3003",
+      "CVE-2011-3004",
+      "CVE-2011-3005",
+      "CVE-2011-3232"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-09-27",
+    "entry": "2011-09-28"
+  }
+}

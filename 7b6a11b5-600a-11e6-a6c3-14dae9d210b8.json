@@ -1,0 +1,50 @@
+{
+  "vid": "7b6a11b5-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Incorrect argument validation in sysarch(2)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "11.0_2",
+          "ge": "11.0"
+        },
+        {
+          "lt": "10.3_11",
+          "ge": "10.3"
+        },
+        {
+          "lt": "10.2_24",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_41",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_49",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A special combination of sysarch(2) arguments, specify\n\ta request to uninstall a set of descriptors from the LDT.\n\tThe start descriptor is cleared and the number of descriptors\n\tare provided. Due to lack of sufficient bounds checking\n\tduring argument validity verification, unbound zero'ing of\n\tthe process LDT and adjacent memory can be initiated from\n\tusermode.</p>\n\t<h1>Impact:</h1>\n\t<p>This vulnerability could cause the kernel to panic. In\n\taddition it is possible to perform a local Denial of Service\n\tagainst the system by unprivileged processes.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-1885"
+    ],
+    "freebsd_sa": [
+      "SA-16:15.sysarch"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-03-16",
+    "entry": "2016-08-11",
+    "modified": "2016-10-25"
+  }
+}

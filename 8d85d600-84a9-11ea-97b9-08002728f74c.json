@@ -1,0 +1,36 @@
+{
+  "vid": "8d85d600-84a9-11ea-97b9-08002728f74c",
+  "topic": "Wagtail -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py35-wagtail",
+        "py36-wagtail",
+        "py37-wagtail",
+        "py38-wagtail"
+      ],
+      "range": [
+        {
+          "lt": "2.7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wagtail release notes:</p>\n\t<blockquote cite=\"https://docs.wagtail.io/en/latest/releases/2.7.2.html\">\n\t  <p>CVE-2020-11001: Possible XSS attack via page revision comparison view</p>\n\t  <p>This release addresses a cross-site scripting (XSS) vulnerability on\n\t    the page revision comparison view within the Wagtail admin interface. A\n\t    user with a limited-permission editor account for the Wagtail admin\n\t    could potentially craft a page revision history that, when viewed by a\n\t    user with higher privileges, could perform actions with that user\n\t    credentials. The vulnerability is not exploitable by an ordinary site\n\t    visitor without access to the Wagtail admin.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.wagtail.io/en/latest/releases/2.7.2.html",
+      "https://github.com/advisories/GHSA-v2wc-pfq2-5cm6"
+    ],
+    "cvename": [
+      "CVE-2020-11001"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-03",
+    "entry": "2020-04-22"
+  }
+}

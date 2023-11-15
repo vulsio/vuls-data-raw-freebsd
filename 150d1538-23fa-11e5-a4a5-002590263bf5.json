@@ -1,0 +1,33 @@
+{
+  "vid": "150d1538-23fa-11e5-a4a5-002590263bf5",
+  "topic": "squid -- Improper Protection of Alternate Path with CONNECT requests",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "3.5.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Squid security advisory 2015:2 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2015_2.txt\">\n\t  <p>Squid configured with cache_peer and operating on explicit proxy\n\t    traffic does not correctly handle CONNECT method peer responses.</p>\n\t  <p>The bug is important because it allows remote clients to bypass\n\t    security in an explicit gateway proxy.</p>\n\t  <p>However, the bug is exploitable only if you have configured\n\t    cache_peer to receive CONNECT requests.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Advisories/SQUID-2015_2.txt"
+    ],
+    "cvename": [
+      "CVE-2015-5400"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-06",
+    "entry": "2015-07-06",
+    "modified": "2015-07-17"
+  }
+}

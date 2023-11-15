@@ -1,0 +1,97 @@
+{
+  "vid": "b396cf6c-62e6-11e7-9def-b499baebfeaf",
+  "topic": "oniguruma -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libevhtp"
+      ],
+      "range": [
+        {
+          "lt": "1.2.14"
+        }
+      ]
+    },
+    {
+      "name": [
+        "oniguruma4"
+      ],
+      "range": [
+        {
+          "lt": "4.7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "oniguruma5"
+      ],
+      "range": [
+        {
+          "lt": "5.9.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "oniguruma6"
+      ],
+      "range": [
+        {
+          "lt": "6.4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56-mbstring"
+      ],
+      "range": [
+        {
+          "lt": "5.6.31"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php70-mbstring"
+      ],
+      "range": [
+        {
+          "lt": "7.0.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php71-mbstring"
+      ],
+      "range": [
+        {
+          "lt": "7.1.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>the PHP project reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-7.php\">\n\t  <ul>\n\t    <li>A stack out-of-bounds read occurs in match_at() during regular\n\t      expression searching. A logical error involving order of validation\n\t      and access in match_at() could result in an out-of-bounds read from\n\t      a stack buffer (CVE-2017-9224).</li>\n\t    <li>A heap out-of-bounds write or read occurs in next_state_val()\n\t      during regular expression compilation. Octal numbers larger than 0xff\n\t      are not handled correctly in fetch_token() and fetch_token_in_cc().\n\t      A malformed regular expression containing an octal number in the form\n\t      of '\\700' would produce an invalid code point value larger than 0xff\n\t      in next_state_val(), resulting in an out-of-bounds write memory\n\t      corruption (CVE-2017-9226).</li>\n\t    <li>A stack out-of-bounds read occurs in mbc_enc_len() during regular\n\t      expression searching. Invalid handling of reg-&gt;dmin in\n\t      forward_search_range() could result in an invalid pointer dereference,\n\t      as an out-of-bounds read from a stack buffer (CVE-2017-9227).</li>\n\t    <li>A heap out-of-bounds write occurs in bitset_set_range() during\n\t      regular expression compilation due to an uninitialized variable from\n\t      an incorrect state transition. An incorrect state transition in\n\t      parse_char_class() could create an execution path that leaves a\n\t      critical local variable uninitialized until it's used as an index,\n\t      resulting in an out-of-bounds write memory corruption (CVE-2017-9228).</li>\n\t    <li>A SIGSEGV occurs in left_adjust_char_head() during regular expression\n\t      compilation. Invalid handling of reg-&gt;dmax in forward_search_range() could\n\t      result in an invalid pointer dereference, normally as an immediate\n\t      denial-of-service condition (CVE-2017-9228).</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-7.php"
+    ],
+    "cvename": [
+      "CVE-2017-9224",
+      "CVE-2017-9226",
+      "CVE-2017-9227",
+      "CVE-2017-9228",
+      "CVE-2017-9228"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-07-06",
+    "entry": "2017-07-07",
+    "modified": "2018-01-04"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "vid": "0d3f99f7-b30c-11e9-a87f-a4badb2f4699",
+  "topic": "FreeBSD -- File description reference count leak",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.0_8",
+          "ge": "12.0"
+        },
+        {
+          "lt": "11.2_12",
+          "ge": "11.2"
+        },
+        {
+          "lt": "11.3_1",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>If a process attempts to transmit rights over a UNIX-domain\n\tsocket and an error causes the attempt to fail, references\n\tacquired on the rights are not released and are leaked.\n\tThis bug can be used to cause the reference counter to wrap\n\taround and free the corresponding file structure.</p>\n\t<h1>Impact:</h1>\n\t<p>A local user can exploit the bug to gain root privileges\n\tor escape from a jail.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-5607"
+    ],
+    "freebsd_sa": [
+      "SA-19:17.fd"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-07-24",
+    "entry": "2019-07-30"
+  }
+}

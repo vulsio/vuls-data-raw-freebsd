@@ -1,0 +1,34 @@
+{
+  "vid": "37d106a8-15a4-483e-8247-fcb68b16eaf8",
+  "topic": "Dovecot -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "dovecot"
+      ],
+      "range": [
+        {
+          "lt": "2.3.10.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-May/000438.html\">\n\t  <p>Vulnerability Details:\n\tSending malformed NOOP command causes crash in submission, submission-login or\n\tlmtp service.\n\nRisk:\n\tRemote attacker can keep submission-login service down, causing denial of\n\tservice attack. For lmtp the risk is neglible, as lmtp is usually behind a\n\ttrusted MTA.\n\nSteps to reproduce:\n\tSend ``NOOP EE\"FY`` to submission port, or similarly malformed command.</p>\n\t  <p>Vulnerability Details:\n\n\tSending command followed by sufficient number of newlines triggers a\n\tuse-after-free bug that might crash submission-login, submission or\n\tlmtp service.\n\nRisk:\n\n\tRemote attacker can keep submission-login service down, causing denial\n\tof service attack. For lmtp the risk is neglible, as lmtp is usually\n\tbehind a trusted MTA.\n\nSteps to reproduce:\n\n\tThis can be currently reproduced with ASAN or Valgrind. Reliable way to\n\tcrash has not yet been discovered.\n\t</p>\n\t<p>Vulnerability Details:\n\tSending mail with empty quoted localpart causes submission or lmtp component\n\tto crash.\n\nRisk:\n\tMalicious actor can cause denial of service to mail delivery by repeatedly\n\tsending mails with bad sender or recipient address.\n\nSteps to reproduce:\n\tSend mail with envelope sender or recipient as &lt;\"\"@example.org&gt;.\n\nWorkaround:\n\tFor submission there is no workaround, but triggering the bug requires valid\n\tcredentials.\n\tFor lmtp, one can implement sufficient filtering on MTA level to prevent mails\n\t  with such addresses from ending up in LMTP delivery.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://dovecot.org/pipermail/dovecot-news/2020-May/000438.html"
+    ],
+    "cvename": [
+      "CVE-2020-10957",
+      "CVE-2020-10958",
+      "CVE-2020-10967"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-02",
+    "entry": "2020-05-18"
+  }
+}

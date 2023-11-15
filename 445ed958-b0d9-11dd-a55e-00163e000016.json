@@ -1,0 +1,34 @@
+{
+  "vid": "445ed958-b0d9-11dd-a55e-00163e000016",
+  "topic": "faad2 -- heap overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "faad2"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1_1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4201\">\n\t  <p>Heap-based buffer overflow in the decodeMP4file function\n\t    (frontend/main.c) in FAAD2 2.6.1 and earlier allows remote\n\t    attackers to cause a denial of service (crash) and possibly\n\t    execute arbitrary code via a crafted MPEG-4 (MP4) file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=499899",
+      "http://www.gentoo.org/security/en/glsa/glsa-200811-03.xml"
+    ],
+    "cvename": [
+      "CVE-2008-4201"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-09-16",
+    "entry": "2008-11-12",
+    "modified": "2008-11-13"
+  }
+}

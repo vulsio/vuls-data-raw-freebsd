@@ -1,0 +1,78 @@
+{
+  "vid": "b7e23050-2d5d-4e61-9b48-62e89db222ca",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "57.0.1,1",
+          "ge": "57.0,1"
+        },
+        {
+          "lt": "56.0.2_11,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "waterfox"
+      ],
+      "range": [
+        {
+          "lt": "56.0.s20171130"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.49.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "52.5.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "52.5.1,2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2017-27/\">\n\t  <p>CVE-2017-7843: Web worker in Private Browsing mode can write IndexedDB data</p>\n\t  <p>CVE-2017-7844: Visited history information leak through SVG image</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2017-27/"
+    ],
+    "cvename": [
+      "CVE-2017-7843",
+      "CVE-2017-7844"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-11-29",
+    "entry": "2017-12-05"
+  }
+}

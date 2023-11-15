@@ -1,0 +1,33 @@
+{
+  "vid": "7c555ce3-658d-4589-83dd-4b6a31c5d610",
+  "topic": "RabbitMQ-C -- integer overflow leads to heap corruption",
+  "affects": [
+    {
+      "name": [
+        "rabbitmq-c",
+        "rabbitmq-c-devel"
+      ],
+      "range": [
+        {
+          "lt": "0.10.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>alanxz reports:</p>\n\t<blockquote cite=\"https://github.com/alanxz/rabbitmq-c/commit/fc85be7123050b91b054e45b91c78d3241a5047a\">\n\t  <p>When parsing a frame header, validate that the frame_size is less than\n\tor equal to INT32_MAX. Given frame_max is limited between 0 and\n\tINT32_MAX in amqp_login and friends, this does not change the API.\n\tThis prevents a potential buffer overflow when a malicious client sends\n\ta frame_size that is close to UINT32_MAX, in which causes an overflow\n\twhen computing state-&gt;target_size resulting in a small value there. A\n\tbuffer is then allocated with the small amount, then memcopy copies the\n\tframe_size writing to memory beyond the end of the buffer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-18609"
+    ],
+    "cvename": [
+      "CVE-2019-18609"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-29",
+    "entry": "2021-06-25"
+  }
+}

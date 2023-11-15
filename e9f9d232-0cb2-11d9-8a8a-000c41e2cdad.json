@@ -1,0 +1,63 @@
+{
+  "vid": "e9f9d232-0cb2-11d9-8a8a-000c41e2cdad",
+  "topic": "mozilla -- security icon spoofing",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "0.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla",
+        "linux-mozilla-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla-gtk1"
+      ],
+      "range": [
+        {
+          "lt": "1.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Under certain situations it is possible for the security icon\n\t  which Mozilla displays when connected to a site using SSL to\n\t  be spoofed.  This could be used to make so-called \"phishing\n\t  attacks\" more difficult to detect.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=240053"
+    ],
+    "cvename": [
+      "CVE-2004-0761"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-04-08",
+    "entry": "2004-09-22"
+  }
+}

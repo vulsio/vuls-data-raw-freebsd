@@ -1,0 +1,33 @@
+{
+  "vid": "4caf01e2-30e6-11e5-a4a5-002590263bf5",
+  "topic": "libidn -- out-of-bounds read issue with invalid UTF-8 input",
+  "affects": [
+    {
+      "name": [
+        "libidn"
+      ],
+      "range": [
+        {
+          "lt": "1.31"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Simon Josefsson reports:</p>\n\t<blockquote cite=\"http://git.savannah.gnu.org/cgit/libidn.git/plain/NEWS?id=libidn-1-31\">\n\t  <p>stringprep_utf8_to_ucs4 now rejects invalid UTF-8. This function\n\t    has always been documented to not validate that the input UTF-8\n\t    string is actually valid UTF-8...\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://git.savannah.gnu.org/cgit/libidn.git/plain/NEWS?id=libidn-1-31"
+    ],
+    "cvename": [
+      "CVE-2015-2059"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-02-09",
+    "entry": "2015-07-23",
+    "modified": "2015-08-03"
+  }
+}

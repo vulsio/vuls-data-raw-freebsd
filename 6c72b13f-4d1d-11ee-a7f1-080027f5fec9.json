@@ -1,0 +1,58 @@
+{
+  "vid": "6c72b13f-4d1d-11ee-a7f1-080027f5fec9",
+  "topic": "redis -- Possible bypassing ACL configuration",
+  "affects": [
+    {
+      "name": [
+        "redis"
+      ],
+      "range": [
+        {
+          "lt": "7.0.13",
+          "ge": "7.0.0"
+        },
+        {
+          "lt": "7.2.1",
+          "ge": "7.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "redis-devel"
+      ],
+      "range": [
+        {
+          "lt": "7.2.0.20230831"
+        }
+      ]
+    },
+    {
+      "name": [
+        "redis70"
+      ],
+      "range": [
+        {
+          "lt": "7.0.13",
+          "ge": "7.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>yangbodong22011 reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc\">\n\t  <p>\n\t    Redis does not correctly identify keys accessed by SORT_RO\n\t    and, as a result, may grant users executing this command\n\t    access to keys that are not explicitly authorized by the\n\t    ACL configuration.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc"
+    ],
+    "cvename": [
+      "CVE-2023-41053"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-09-06",
+    "entry": "2023-09-07"
+  }
+}

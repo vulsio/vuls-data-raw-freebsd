@@ -1,0 +1,37 @@
+{
+  "vid": "33ab4a47-bfc1-11d8-b00e-000347a4fa7d",
+  "topic": "Several vulnerabilities found in PHPNuke",
+  "affects": [
+    {
+      "name": [
+        "phpnuke"
+      ],
+      "range": [
+        {
+          "lt": "7.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Janek Vind \"waraxe\" reports that several issues in the\n\t  PHPNuke software may be exploited via carefully crafted\n\t  URL requests.  These URLs will permit the injection of\n\t  SQL code, cookie theft, and the readability of the\n\t  PHPNuke administrator account.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.waraxe.us/index.php?modname=sa&id=27",
+      "http://secunia.com/advisories/11920"
+    ],
+    "cvename": [
+      "CVE-2003-0279",
+      "CVE-2003-0318",
+      "CVE-2004-0266",
+      "CVE-2004-0269"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-05-05",
+    "entry": "2004-07-03",
+    "modified": "2004-09-28"
+  }
+}

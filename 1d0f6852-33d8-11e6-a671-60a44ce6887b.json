@@ -1,0 +1,62 @@
+{
+  "vid": "1d0f6852-33d8-11e6-a671-60a44ce6887b",
+  "topic": "Python -- Integer overflow in zipimport module",
+  "affects": [
+    {
+      "name": [
+        "python35"
+      ],
+      "range": [
+        {
+          "lt": "3.5.1_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python34"
+      ],
+      "range": [
+        {
+          "lt": "3.4.4_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python33"
+      ],
+      "range": [
+        {
+          "lt": "3.3.6_5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.11_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Python reports:</p>\n       <blockquote cite=\"http://bugs.python.org/issue26171\">\n       <p>Possible integer overflow and heap corruption in\n       zipimporter.get_data()</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.python.org/issue26171"
+    ],
+    "cvename": [
+      "CVE-2016-5636"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-21",
+    "entry": "2016-06-17"
+  }
+}

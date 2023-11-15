@@ -1,0 +1,35 @@
+{
+  "vid": "56971fa6-641c-11d9-a097-000854d03344",
+  "topic": "xshisen -- local buffer overflows",
+  "affects": [
+    {
+      "name": [
+        "xshisen"
+      ],
+      "range": [
+        {
+          "lt": "1.36_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Steve Kemp has found buffer overflows in the handling\n\t  of the command line flag -KCONV and the XSHISENLIB environment\n\t  variable.  Ulf Härnhammer has detected an unbounded copy from\n\t  the GECOS field to a char array.  All overflows can be exploited\n\t  to gain group games privileges.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=213957",
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=289784"
+    ],
+    "cvename": [
+      "CVE-2003-1053",
+      "CVE-2005-0117"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-01-11",
+    "entry": "2005-01-11",
+    "modified": "2005-01-19"
+  }
+}

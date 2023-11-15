@@ -1,0 +1,44 @@
+{
+  "vid": "a92ed304-716c-11e4-b008-001999f8d30b",
+  "topic": "asterisk -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk"
+      ],
+      "range": [
+        {
+          "lt": "1.8.32.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk11"
+      ],
+      "range": [
+        {
+          "lt": "11.14.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/security\">\n\t  <p>AST-2014-012 - Mixed IP address families in access\n\t  control lists may permit unwanted traffic.</p>\n\t  <p>AST-2014-018 - AMI permission escalation through DB\n\t  dialplan function.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://downloads.asterisk.org/pub/security/AST-2014-012.html",
+      "http://downloads.asterisk.org/pub/security/AST-2014-018.html"
+    ],
+    "cvename": [
+      "CVE-2014-8412",
+      "CVE-2014-8418"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-21",
+    "entry": "2014-11-21"
+  }
+}

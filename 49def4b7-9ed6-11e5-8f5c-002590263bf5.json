@@ -1,0 +1,33 @@
+{
+  "vid": "49def4b7-9ed6-11e5-8f5c-002590263bf5",
+  "topic": "redmine -- information leak vulnerability",
+  "affects": [
+    {
+      "name": [
+        "redmine"
+      ],
+      "range": [
+        {
+          "lt": "2.4.6"
+        },
+        {
+          "lt": "2.5.2",
+          "ge": "2.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Redmine reports:</p>\n\t<blockquote cite=\"http://www.redmine.org/projects/redmine/wiki/Security_Advisories\">\n\t  <p>Potential data leak (project names) in the invalid form\n\t    authenticity token error screen.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.redmine.org/projects/redmine/wiki/Security_Advisories"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-07-06",
+    "entry": "2015-12-10"
+  }
+}

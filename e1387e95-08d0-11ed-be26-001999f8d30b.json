@@ -1,0 +1,33 @@
+{
+  "vid": "e1387e95-08d0-11ed-be26-001999f8d30b",
+  "topic": "VirtualBox -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "virtualbox-ose"
+      ],
+      "range": [
+        {
+          "lt": "6.1.36"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Oracle reports:</p>\n\t<blockquote cite=\"https://www.oracle.com/security-alerts/cpujul2022.html\">\n\t  <p> Easily exploitable vulnerability allows high privileged\n\t  attacker with logon to the infrastructure where Oracle\n\t  VM VirtualBox executes to compromise Oracle VM VirtualBox.\n\t  Successful attacks of this vulnerability can result in\n\t  unauthorized ability to cause a hang or frequently\n\t  repeatable crash (complete DOS) of Oracle VM VirtualBox.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+    ],
+    "cvename": [
+      "CVE-2022-21554",
+      "CVE-2022-21571"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-07-20",
+    "entry": "2022-07-21"
+  }
+}

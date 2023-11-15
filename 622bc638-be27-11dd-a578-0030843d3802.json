@@ -1,0 +1,46 @@
+{
+  "vid": "622bc638-be27-11dd-a578-0030843d3802",
+  "topic": "wordpress -- header rss feed script insertion vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wordpress",
+        "de-wordpress",
+        "wordpress-mu"
+      ],
+      "range": [
+        {
+          "lt": "2.6.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zh-wordpress"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/32882/\">\n\t  <p>Input passed via the HTTP \"Host\" header is not properly sanitised\n\t    before being used. This can be exploited to execute arbitrary HTML and\n\t    script code in a user's browser session in context of an affected site\n\t    if malicious data is viewed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/32882/",
+      "http://wordpress.org/development/2008/11/wordpress-265/"
+    ],
+    "cvename": [
+      "CVE-2008-5278"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-11-26",
+    "entry": "2008-11-29",
+    "modified": "2010-05-02"
+  }
+}

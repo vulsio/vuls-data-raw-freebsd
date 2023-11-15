@@ -1,0 +1,39 @@
+{
+  "vid": "7d239578-7ff2-11dd-8de5-0030843d3802",
+  "topic": "horde -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "horde-base"
+      ],
+      "range": [
+        {
+          "lt": "3.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31842/\">\n\t  <p>Some vulnerabilities have been reported in various Horde products,\n\t    which can be exploited by malicious people to conduct script insertion\n\t    attacks</p>\n\t  <p>Input via MIME attachment linking is not properly sanitised in the\n\t    MIME library before being used. This can be exploited to execute\n\t    arbitrary HTML and script code in a user's browser session if e.g. a\n\t    malicious email is viewed.</p>\n\t  <p>Certain unspecified input in HTML messages is not properly\n\t    sanitised before being used. This can be exploited to execute\n\t    arbitrary HTML and script in a user's browser session if e.g. a\n\t    malicious HTML email is viewed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/31842/"
+    ],
+    "cvename": [
+      "CVE-2008-3823",
+      "CVE-2008-3824"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.horde.org/archives/announce/2008/000429.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2008-09-10",
+    "entry": "2008-09-11",
+    "modified": "2008-10-03"
+  }
+}

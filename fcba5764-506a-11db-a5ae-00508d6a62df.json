@@ -1,0 +1,49 @@
+{
+  "vid": "fcba5764-506a-11db-a5ae-00508d6a62df",
+  "topic": "dokuwiki -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "dokuwiki"
+      ],
+      "range": [
+        {
+          "lt": "20060309c"
+        }
+      ]
+    },
+    {
+      "name": [
+        "dokuwiki-devel"
+      ],
+      "range": [
+        {
+          "lt": "20060909"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21819/\">\n\t  <p>rgod has discovered a vulnerability in DokuWiki, which can\n\t    be exploited by malicious people to compromise a vulnerable\n\t    system.</p>\n\t  <p>Input passed to the \"TARGET_FN\" parameter in\n\t    bin/dwpage.php is not properly sanitised before being used\n\t    to copy files. This can be exploited via directory\n\t    traversal attacks in combination with DokuWiki's file\n\t    upload feature to execute arbitrary PHP code.</p>\n\t</blockquote>\n\t<p>CVE Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4674\">\n\t  <p>Direct static code injection vulnerability in doku.php in\n\t    DokuWiki before 2006-03-09c allows remote attackers to\n\t    execute arbitrary PHP code via the X-FORWARDED-FOR HTTP\n\t    header, which is stored in config.php.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4675\">\n\t  <p>Unrestricted file upload vulnerability in\n\t    lib/exe/media.php in DokuWiki before 2006-03-09c allows\n\t    remote attackers to upload executable files into the\n\t    data/media folder via unspecified vectors.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4679\">\n\t  <p>DokuWiki before 2006-03-09c enables the debug feature by\n\t    default, which allows remote attackers to obtain sensitive\n\t    information by calling doku.php with the X-DOKUWIKI-DO HTTP\n\t    header set to \"debug\".</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/21819/",
+      "http://bugs.splitbrain.org/index.php?do=details&id=906"
+    ],
+    "cvename": [
+      "CVE-2006-4674",
+      "CVE-2006-4675",
+      "CVE-2006-4679"
+    ],
+    "bid": [
+      "19911"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-09-08",
+    "entry": "2006-09-30",
+    "modified": "2006-10-02"
+  }
+}

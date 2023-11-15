@@ -1,0 +1,75 @@
+{
+  "vid": "9c88d8a8-8372-11e2-a010-20cf30e32f6d",
+  "topic": "apache22 -- several vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache22"
+      ],
+      "range": [
+        {
+          "lt": "2.2.24",
+          "gt": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache22-event-mpm"
+      ],
+      "range": [
+        {
+          "lt": "2.2.24",
+          "gt": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache22-itk-mpm"
+      ],
+      "range": [
+        {
+          "lt": "2.2.24",
+          "gt": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache22-peruser-mpm"
+      ],
+      "range": [
+        {
+          "lt": "2.2.24",
+          "gt": "2.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache22-worker-mpm"
+      ],
+      "range": [
+        {
+          "lt": "2.2.24",
+          "gt": "2.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_22.html\">\n\t  <h1>low: XSS due to unescaped hostnames CVE-2012-3499</h1>\n\t  <p>Various XSS flaws due to unescaped hostnames and URIs HTML output in\n\t    mod_info, mod_status, mod_imagemap, mod_ldap, and mod_proxy_ftp.</p>\n\t  <h1>moderate: XSS in mod_proxy_balancer CVE-2012-4558</h1>\n\t  <p>A XSS flaw affected the mod_proxy_balancer manager interface.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-3499",
+      "CVE-2012-4558"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-10-07",
+    "entry": "2013-03-02"
+  }
+}

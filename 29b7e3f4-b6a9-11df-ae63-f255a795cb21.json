@@ -1,0 +1,32 @@
+{
+  "vid": "29b7e3f4-b6a9-11df-ae63-f255a795cb21",
+  "topic": "lftp -- multiple HTTP client download filename vulnerability",
+  "affects": [
+    {
+      "name": [
+        "lftp"
+      ],
+      "range": [
+        {
+          "lt": "4.0.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The get1 command, as used by lftpget, in LFTP before 4.0.6 does\n\t  not properly validate a server-provided filename before determining\n\t  the destination filename of a download, which allows remote servers\n\t  to create or overwrite arbitrary files via a Content-Disposition\n\t  header that suggests a crafted filename, and possibly execute\n\t  arbitrary code as a consequence of writing to a dotfile in a home\n\t  directory.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=591580"
+    ],
+    "cvename": [
+      "CVE-2010-2251"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-06-09",
+    "entry": "2010-09-03"
+  }
+}

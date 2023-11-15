@@ -1,0 +1,37 @@
+{
+  "vid": "9a447f78-d0f8-11ea-9837-e09467587c17",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "84.0.4147.105"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop_27.html\">\n\t  <p>This update contains 8 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1105318] High CVE-2020-6537: Type Confusion in V8. Reported by\n\t      Alphalaab on 2020-07-14</li>\n\t    <li>[1096677] High CVE-2020-6538: Inappropriate implementation in\n\t      WebView. Reported by Yongke Wang(@Rudykewang) and Aryb1n(@aryb1n)\n\t      of Tencent Security Xuanwu Lab on 2020-06-18</li>\n\t    <li>[1104061] High CVE-2020-6532: Use after free in SCTP. Reported\n\t      by Anonymous on 2020-07-09</li>\n\t    <li>[1105635] High CVE-2020-6539: Use after free in CSS. Reported\n\t      by Oriol Brufau on 2020-07-14</li>\n\t    <li>[1105720] High CVE-2020-6540: Heap buffer overflow in Skia.\n\t      Reported by Zhen Zhou of NSFOCUS Security Team on 2020-07-15</li>\n\t    <li>[1106773] High CVE-2020-6541: Use after free in WebUSB. Reported\n\t      by Sergei Glazunov of Google Project Zero on 2020-07-17</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop_27.html"
+    ],
+    "cvename": [
+      "CVE-2020-6532",
+      "CVE-2020-6537",
+      "CVE-2020-6538",
+      "CVE-2020-6539",
+      "CVE-2020-6540",
+      "CVE-2020-6541"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-27",
+    "entry": "2020-07-28"
+  }
+}

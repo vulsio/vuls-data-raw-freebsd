@@ -1,0 +1,117 @@
+{
+  "vid": "e3f0374a-7ad6-11e2-84cd-d43d7e0c7c02",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "19.0,1",
+          "gt": "18.0,1"
+        },
+        {
+          "lt": "17.0.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "17.0.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "17.0.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "17.0.3",
+          "gt": "11.0"
+        },
+        {
+          "lt": "10.0.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "10.0.12",
+          "gt": "1.9.2.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2013-21 Miscellaneous memory safety hazards (rv:19.0 /\n\t    rv:17.0.3)</p>\n\t  <p>MFSA 2013-22 Out-of-bounds read in image rendering</p>\n\t  <p>MFSA 2013-23 Wrapped WebIDL objects can be wrapped again</p>\n\t  <p>MFSA 2013-24 Web content bypass of COW and SOW security wrappers</p>\n\t  <p>MFSA 2013-25 Privacy leak in JavaScript Workers</p>\n\t  <p>MFSA 2013-26 Use-after-free in nsImageLoadingContent</p>\n\t  <p>MFSA 2013-27 Phishing on HTTPS connection through malicious proxy</p>\n\t  <p>MFSA 2013-28 Use-after-free, out of bounds read, and buffer\n\t    overflow issues found using Address Sanitizer</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2013/mfsa2013-20.html",
+      "http://www.mozilla.org/security/announce/2013/mfsa2013-21.html",
+      "http://www.mozilla.org/security/announce/2013/mfsa2013-22.html",
+      "http://www.mozilla.org/security/announce/2013/mfsa2013-23.html",
+      "http://www.mozilla.org/security/announce/2013/mfsa2013-24.html",
+      "http://www.mozilla.org/security/announce/2013/mfsa2013-25.html",
+      "http://www.mozilla.org/security/announce/2013/mfsa2013-26.html",
+      "http://www.mozilla.org/security/announce/2013/mfsa2013-27.html",
+      "http://www.mozilla.org/security/known-vulnerabilities/"
+    ],
+    "cvename": [
+      "CVE-2013-0765",
+      "CVE-2013-0772",
+      "CVE-2013-0773",
+      "CVE-2013-0774",
+      "CVE-2013-0775",
+      "CVE-2013-0776",
+      "CVE-2013-0783",
+      "CVE-2013-0784"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-02-19",
+    "entry": "2013-02-19",
+    "modified": "2013-02-20"
+  }
+}

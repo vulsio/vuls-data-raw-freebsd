@@ -1,0 +1,33 @@
+{
+  "vid": "a4372a68-652c-11e0-a25a-00151735203a",
+  "topic": "OTRS -- Several XSS attacks possible",
+  "affects": [
+    {
+      "name": [
+        "otrs"
+      ],
+      "range": [
+        {
+          "lt": "3.0.7",
+          "gt": "2.3.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OTRS Security Advisory reports:</p>\n\t<blockquote cite=\"http://otrs.org/advisory/OSA-2011-01-en/\">\n\t  <ul>\n\t    <li>Several XSS attacks possible:\n\t      An attacker could trick a logged in user to following a prepared\n\t      URL inside of the OTRS system which causes a page to be shown that\n\t      possibly includes malicious !JavaScript code because of incorrect\n\t      escaping during the generation of the HTML page.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://otrs.org/advisory/OSA-2011-01-en/"
+    ],
+    "cvename": [
+      "CVE-2011-1518"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-03-12",
+    "entry": "2011-04-12"
+  }
+}

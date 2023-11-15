@@ -1,0 +1,34 @@
+{
+  "vid": "9770d6ac-614d-11e5-b379-14dae9d210b8",
+  "topic": "libssh2 -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libssh2"
+      ],
+      "range": [
+        {
+          "lt": "1.5.0,2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mariusz Ziulek reports:</p>\n\t<blockquote cite=\"http://www.libssh2.org/adv_20150311.html\">\n\t  <p>A malicious attacker could man in the middle a real server\n\t    and cause libssh2 using clients to crash (denial of service) or\n\t    otherwise read and use completely unintended memory areas in this\n\t    process.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.libssh2.org/adv_20150311.html",
+      "https://trac.libssh2.org/ticket/294"
+    ],
+    "cvename": [
+      "CVE-2015-1782"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-01-25",
+    "entry": "2015-09-22",
+    "modified": "2015-09-22"
+  }
+}

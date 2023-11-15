@@ -1,0 +1,38 @@
+{
+  "vid": "51b51d4a-7c0f-11dc-9e47-0011d861d5e2",
+  "topic": "phpmyadmin -- cross-site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.11.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/26020/discuss\">\n\t  <p>phpMyAdmin is prone to a cross-site scripting vulnerability\n\t    because it fails to properly sanitize user-supplied input.</p>\n\t  <p>An attacker may leverage this issue to execute arbitrary script\n\t    code in the browser of an unsuspecting user in the context of the\n\t    affected site. This may help the attacker steal potentially\n\t    sensitive information and launch other attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-5",
+      "http://www.digitrustgroup.com/advisories/TDG-advisory071009a",
+      "http://secunia.com/advisories/27173"
+    ],
+    "cvename": [
+      "CVE-2007-5386"
+    ],
+    "bid": [
+      "26020"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-10-12",
+    "entry": "2007-10-16",
+    "modified": "2007-10-20"
+  }
+}

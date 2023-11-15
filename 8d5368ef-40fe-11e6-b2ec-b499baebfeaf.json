@@ -1,0 +1,62 @@
+{
+  "vid": "8d5368ef-40fe-11e6-b2ec-b499baebfeaf",
+  "topic": "Python -- smtplib StartTLS stripping vulnerability",
+  "affects": [
+    {
+      "name": [
+        "python27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python33"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python34"
+      ],
+      "range": [
+        {
+          "lt": "3.4.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python35"
+      ],
+      "range": [
+        {
+          "lt": "3.5.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Red Hat reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-0772\">\n\t  <p>A vulnerability in smtplib allowing MITM attacker to perform a\n\t    startTLS stripping attack. smtplib does not seem to raise an exception\n\t    when the remote end (smtp server) is capable of negotiating starttls but\n\t    fails to respond with 220 (ok) to an explicit call of SMTP.starttls().\n\t    This may allow a malicious MITM to perform a startTLS stripping attack\n\t    if the client code does not explicitly check the response code for startTLS.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-0772"
+    ],
+    "cvename": [
+      "CVE-2016-0772"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-06-14",
+    "entry": "2016-07-03"
+  }
+}

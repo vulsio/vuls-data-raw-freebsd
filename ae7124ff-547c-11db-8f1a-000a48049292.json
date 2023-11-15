@@ -1,0 +1,39 @@
+{
+  "vid": "ae7124ff-547c-11db-8f1a-000a48049292",
+  "topic": "openldap -- slapd acl selfwrite Security Issue",
+  "affects": [
+    {
+      "name": [
+        "openldap-server",
+        "openldap-sasl-server"
+      ],
+      "range": [
+        {
+          "lt": "2.3.25"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Howard Chu reports:</p>\n\t<blockquote cite=\"http://www.openldap.org/its/index.cgi/Software%20Bugs?id=4587\">\n\t  <p>An ACL of the form 'access to dn.subtree=\"ou=groups,\n\t    dc=example,dc=com\" attr=member by * selfwrite' is intended\n\t    to only allow users to add/delete their own DN to the\n\t    target attribute. Currently it allows any DNs to be\n\t    modified.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openldap.org/its/index.cgi/Software%20Bugs?id=4587",
+      "http://www.openldap.org/lists/openldap-announce/200608/msg00000.html",
+      "http://secunia.com/advisories/21721",
+      "http://securitytracker.com/alerts/2006/Sep/1016783.html"
+    ],
+    "cvename": [
+      "CVE-2006-4600"
+    ],
+    "bid": [
+      "19832"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-06-14",
+    "entry": "2006-10-05"
+  }
+}

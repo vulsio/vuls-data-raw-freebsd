@@ -1,0 +1,58 @@
+{
+  "vid": "cdf18ed9-7f4a-11d8-9645-0020ed76ef5a",
+  "topic": "multiple vulnerabilities in ethereal",
+  "affects": [
+    {
+      "name": [
+        "ethereal",
+        "tethereal"
+      ],
+      "range": [
+        {
+          "lt": "0.10.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stefan Esser of e-matters Security discovered a baker's dozen\n\t  of buffer overflows in Ethereal's decoders, including:</p>\n\t<ul>\n\t  <li>NetFlow</li>\n\t  <li>IGAP</li>\n\t  <li>EIGRP</li>\n\t  <li>PGM</li>\n\t  <li>IRDA</li>\n\t  <li>BGP</li>\n\t  <li>ISUP</li>\n\t  <li>TCAP</li>\n\t  <li>UCP</li>\n\t</ul>\n\t<p>In addition, a vulnerability in the RADIUS decoder was found\n\t  by Jonathan Heusser.</p>\n\t<p>Finally, there is one uncredited vulnerability described by the\n\t   Ethereal team as:</p>\n\t<blockquote cite=\"http://www.ethereal.com/appnotes/enpa-sa-00013.html\">\n\t    <p>A zero-length Presentation protocol selector could make\n\t    Ethereal crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ethereal.com/appnotes/enpa-sa-00013.html",
+      "http://security.e-matters.de/advisories/032004.html",
+      "http://secunia.com/advisories/11185",
+      "http://www.osvdb.org/4462",
+      "http://www.osvdb.org/4463",
+      "http://www.osvdb.org/4464"
+    ],
+    "cvename": [
+      "CVE-2004-0176",
+      "CVE-2004-0365",
+      "CVE-2004-0367"
+    ],
+    "bid": [
+      "9952"
+    ],
+    "cert_vu": [
+      "119876",
+      "124454",
+      "125156",
+      "433596",
+      "591820",
+      "644886",
+      "659140",
+      "695486",
+      "740188",
+      "792286",
+      "864884",
+      "931588"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-23",
+    "entry": "2004-03-26",
+    "modified": "2004-07-11"
+  }
+}

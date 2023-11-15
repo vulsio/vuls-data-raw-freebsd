@@ -1,0 +1,34 @@
+{
+  "vid": "f4b95430-51d8-11da-8e93-0010dc4afb40",
+  "topic": "flyspray -- cross-site scripting vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "flyspray"
+      ],
+      "range": [
+        {
+          "lt": "0.9.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17316/\">\n\t  <p>Lostmon has reported some vulnerabilities in Flyspray,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks.</p>\n\t  <p>Some input isn't properly sanitised before being\n\t    returned to the user.  This can be exploited to execute\n\t    arbitrary HTML and script code in a user's browser\n\t    session in context of an affected site.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/17316/",
+      "http://lostmon.blogspot.com/2005/10/flyspray-bug-killer-multiple-variable.html"
+    ],
+    "bid": [
+      "15209"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-26",
+    "entry": "2005-11-10",
+    "modified": "2005-11-29"
+  }
+}

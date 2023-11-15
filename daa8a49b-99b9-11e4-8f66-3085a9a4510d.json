@@ -1,0 +1,47 @@
+{
+  "vid": "daa8a49b-99b9-11e4-8f66-3085a9a4510d",
+  "topic": "libevent -- integer overflow in evbuffers",
+  "affects": [
+    {
+      "name": [
+        "libevent"
+      ],
+      "range": [
+        {
+          "lt": "1.4.15"
+        },
+        {
+          "lt": "2.0.22",
+          "ge": "2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libevent2"
+      ],
+      "range": [
+        {
+          "lt": "2.0.22"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian Security Team reports:</p>\n\t<blockquote cite=\"https://www.debian.org/security/2015/dsa-3119\">\n\t  <p>Andrew Bartlett of Catalyst reported a defect affecting certain\n\t     applications using the Libevent evbuffer API. This defect leaves\n\t     applications which pass insanely large inputs to evbuffers open\n\t     to a possible heap overflow or infinite loop. In order to exploit\n\t     this flaw, an attacker needs to be able to find a way to provoke\n\t     the program into trying to make a buffer chunk larger than what\n\t     will fit into a single size_t or off_t.\n\t </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.debian.org/security/2015/dsa-3119"
+    ],
+    "cvename": [
+      "CVE-2014-6272"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-01-05",
+    "entry": "2015-01-11",
+    "modified": "2017-02-20"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "vid": "67b050ae-ec82-11ea-9071-10c37b4ac2ea",
+  "topic": "go -- net/http/cgi, net/http/fcgi: Cross-Site Scripting (XSS) when Content-Type is not specified",
+  "affects": [
+    {
+      "name": [
+        "go"
+      ],
+      "range": [
+        {
+          "lt": "1.14.8,1"
+        },
+        {
+          "lt": "1.15.1,1",
+          "ge": "1.15,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/40928\">\n\t  <p>When a Handler does not explicitly set the Content-Type header, both\n\t    CGI implementations default to “text/html”. If an attacker can make\n\t    a server generate content under their control (e.g. a JSON\n\t    containing user data or an uploaded image file) this might be\n\t    mistakenly returned by the server as “text/html”. If a victim visits\n\t    such a page they could get the attacker's code executed in the\n\t    context of the server origin. If an attacker can make a server\n\t    generate content under their control (e.g. a JSON containing user\n\t    data or an uploaded image file) this might be mistakenly returned by\n\t    the server as “text/html”. If a victim visits such a page they could\n\t    get the attacker's code executed in the context of the server\n\t    origin.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/golang/go/issues/40928"
+    ],
+    "cvename": [
+      "CVE-2020-24553"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-08-20",
+    "entry": "2020-09-01"
+  }
+}

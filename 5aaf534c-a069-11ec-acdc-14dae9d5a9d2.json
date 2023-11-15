@@ -1,0 +1,32 @@
+{
+  "vid": "5aaf534c-a069-11ec-acdc-14dae9d5a9d2",
+  "topic": "Teeworlds -- Buffer Overflow",
+  "affects": [
+    {
+      "name": [
+        "teeworlds"
+      ],
+      "range": [
+        {
+          "lt": "0.7.5_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2021-43518\">\n\t  <p>Teeworlds up to and including 0.7.5 is vulnerable to Buffer Overflow. A map parser does not validate m_Channels value coming from a map file, leading to a buffer overflow. A malicious server may offer a specially crafted map that will overwrite client's stack causing denial of service or code execution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2021-43518"
+    ],
+    "cvename": [
+      "CVE-2021-43518"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-10-23",
+    "entry": "2022-03-10"
+  }
+}

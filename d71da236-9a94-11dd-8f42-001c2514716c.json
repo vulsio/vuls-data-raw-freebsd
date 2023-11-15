@@ -1,0 +1,31 @@
+{
+  "vid": "d71da236-9a94-11dd-8f42-001c2514716c",
+  "topic": "libxml2 -- two vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libxml2"
+      ],
+      "range": [
+        {
+          "lt": "2.6.32_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31558/\">\n\t  <p>Two vulnerabilities have been reported in Libxml2, which can be\n\t    exploited by malicious people to cause a DoS (Denial of Service)\n\t    or potentially compromise an application using the library.</p>\n\t  <p>1) A recursion error exists when processing certain XML content.\n\t    This can be exploited to e.g. exhaust all available memory and CPU\n\t    resources by tricking an application using Libxml2 into processing\n\t    specially crafted XML documents.</p>\n\t  <p>2) A boundary error in the processing of long XML entity names\n\t    in parser.c can be exploited to cause a heap-based buffer overflow\n\t    when specially crafted XML content is parsed.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2008-3281",
+      "CVE-2008-3529"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-08-22",
+    "entry": "2008-10-15",
+    "modified": "2008-10-20"
+  }
+}

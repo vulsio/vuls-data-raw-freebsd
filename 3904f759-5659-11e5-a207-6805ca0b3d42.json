@@ -1,0 +1,33 @@
+{
+  "vid": "3904f759-5659-11e5-a207-6805ca0b3d42",
+  "topic": "phpMyAdmin -- reCaptcha bypass",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "4.4.14.1",
+          "ge": "4.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2015-4/\">\n\t  <p>This vulnerability allows to complete the reCaptcha test\n\t    and subsequently perform a brute force attack to guess user\n\t    credentials without having to complete further reCaptcha\n\t    tests.</p>\n\n\t  <p>We consider this vulnerability to be non critical since\n\t    reCaptcha is an additional opt-in security measure.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.phpmyadmin.net/security/PMASA-2015-4/"
+    ],
+    "cvename": [
+      "CVE-2015-6830"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-08",
+    "entry": "2015-09-08"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "vid": "85d76f02-5380-11d9-a9e7-0001020eed82",
+  "topic": "mplayer -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mplayer",
+        "mplayer-gtk",
+        "mplayer-gtk2",
+        "mplayer-esound",
+        "mplayer-gtk-esound",
+        "mplayer-gtk2-esound"
+      ],
+      "range": [
+        {
+          "lt": "0.99.5_5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "le": "1.0.r5_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>iDEFENSE and the MPlayer Team have found multiple\n\t  vulnerabilities in MPlayer:</p>\n\t<ul>\n\t  <li>Potential heap overflow in Real RTSP streaming code</li>\n\t  <li>Potential stack overflow in MMST streaming code</li>\n\t  <li>Multiple buffer overflows in BMP demuxer</li>\n\t  <li>Potential heap overflow in pnm streaming code</li>\n\t  <li>Potential buffer overflow in mp3lib</li>\n\t</ul>\n\t<p>These vulnerabilities could allow a remote attacker to\n\t  execute arbitrary code as the user running MPlayer. The\n\t  problem in the pnm streaming code also affects xine.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mplayerhq.hu/homepage/design7/news.html#mplayer10pre5try2",
+      "http://www.idefense.com/application/poi/display?id=166",
+      "http://www.idefense.com/application/poi/display?id=167",
+      "http://www.idefense.com/application/poi/display?id=168",
+      "http://xinehq.de/index.php/security/XSA-2004-6"
+    ],
+    "cvename": [
+      "CVE-2004-1187",
+      "CVE-2004-1188"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110322526210300",
+        "msgid": "IDSERV04yz5b6KZmcK80000000c@exchange.idefense.com"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110322829807443",
+        "msgid": "IDSERV04FVjCRGryWtI0000000f@exchange.idefense.com"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110323022605345",
+        "msgid": "IDSERV046beUzmRf6Ci00000012@exchange.idefense.com"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-10",
+    "entry": "2004-12-21",
+    "modified": "2005-01-12"
+  }
+}

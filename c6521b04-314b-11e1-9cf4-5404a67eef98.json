@@ -1,0 +1,29 @@
+{
+  "vid": "c6521b04-314b-11e1-9cf4-5404a67eef98",
+  "topic": "lighttpd -- remote DoS in HTTP authentication",
+  "affects": [
+    {
+      "name": [
+        "lighttpd"
+      ],
+      "range": [
+        {
+          "lt": "1.4.30"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US-CERT/NIST reports:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4362\">\n\t  <p>Integer signedness error in the base64_decode function in the\n\t    HTTP authentication functionality (http_auth.c) in lighttpd 1.4\n\t    before 1.4.30 and 1.5 before SVN revision 2806 allows remote\n\t    attackers to cause a denial of service (segmentation fault)\n\t    via crafted base64 input that triggers an out-of-bounds read\n\t    with a negative index.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2011-4362"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-11-29",
+    "entry": "2011-12-28"
+  }
+}

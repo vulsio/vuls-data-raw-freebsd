@@ -1,0 +1,34 @@
+{
+  "vid": "5efd7a93-2dfb-11e9-9549-e980e869c2e9",
+  "topic": "OpenJPEG -- integer overflow",
+  "affects": [
+    {
+      "name": [
+        "openjpeg"
+      ],
+      "range": [
+        {
+          "lt": "2.3.0_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2018-5727\">\n\t  <p>In OpenJPEG 2.3.0, there is an integer overflow vulnerability in the\n\t    opj_t1_encode_cblks function (openjp2/t1.c). Remote attackers could\n\t    leverage this vulnerability to cause a denial of service via a crafted\n\t    bmp file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2018-5727",
+      "https://github.com/uclouvain/openjpeg/issues/1053"
+    ],
+    "cvename": [
+      "CVE-2018-5727"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-12-08",
+    "entry": "2019-02-11",
+    "modified": "2019-03-29"
+  }
+}

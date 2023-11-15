@@ -1,0 +1,35 @@
+{
+  "vid": "0832ee18-cf77-11dc-8c6a-00304881ac9a",
+  "topic": "jetty -- multiple vulnerability",
+  "affects": [
+    {
+      "name": [
+        "jetty"
+      ],
+      "range": [
+        {
+          "lt": "6.1.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Greg Wilkins reports:</p>\n\t<blockquote cite=\"http://jira.codehaus.org/browse/JETTY-386#action_117699\">\n\t  <p>jetty allows remote attackers to bypass protection mechanisms and\n\t    read the source of files via multiple '/' characters in the URI.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://jira.codehaus.org/browse/JETTY-386#action_117699"
+    ],
+    "cvename": [
+      "CVE-2007-6672"
+    ],
+    "bid": [
+      "27117"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-12-22",
+    "entry": "2008-02-04"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "vid": "bb022643-84fb-11e6-a4a1-60a44ce6887b",
+  "topic": "django -- CSRF protection bypass on a site with Google Analytics",
+  "affects": [
+    {
+      "name": [
+        "py-django19"
+      ],
+      "range": [
+        {
+          "lt": "1.9.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py-django18"
+      ],
+      "range": [
+        {
+          "lt": "1.8.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py-django"
+      ],
+      "range": [
+        {
+          "lt": "1.8.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Django Software Foundation reports:</p>\n       <blockquote cite=\"https://www.djangoproject.com/weblog/2016/sep/26/security-releases/\">\n\t <p>An interaction between Google Analytics and Django's cookie parsing could allow an attacker to set arbitrary cookies leading to a bypass of CSRF protection.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2016/sep/26/security-releases/"
+    ],
+    "cvename": [
+      "CVE-2016-7401"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-26",
+    "entry": "2016-09-27"
+  }
+}

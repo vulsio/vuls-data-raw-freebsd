@@ -1,0 +1,33 @@
+{
+  "vid": "2675f0db-baa5-11ea-aa12-80ee73419af3",
+  "topic": "xrdp -- Local users can perform a buffer overflow attack against the xrdp-sesman service and then inpersonate it",
+  "affects": [
+    {
+      "name": [
+        "xrdp"
+      ],
+      "range": [
+        {
+          "lt": "0.9.13.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ashley Newson reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-4044\">\n\t  <p>The xrdp-sesman service can be crashed by connecting over port 3350 and supplying a malicious payload.  Once the xrdp-sesman process is dead, an unprivileged attacker on the server could then proceed to start their own imposter sesman service listening on port 3350.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-j9fv-6fwf-p3g4",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-4044"
+    ],
+    "cvename": [
+      "CVE-2020-4044"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-06-02",
+    "entry": "2020-06-30"
+  }
+}

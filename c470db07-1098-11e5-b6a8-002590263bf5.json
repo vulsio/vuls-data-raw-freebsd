@@ -1,0 +1,39 @@
+{
+  "vid": "c470db07-1098-11e5-b6a8-002590263bf5",
+  "topic": "security/ossec-hids-* -- root escalation via syscheck feature",
+  "affects": [
+    {
+      "name": [
+        "ossec-hids-server",
+        "ossec-hids-client",
+        "ossec-hids-local"
+      ],
+      "range": [
+        {
+          "lt": "2.8.2",
+          "ge": "2.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OSSEC reports:</p>\n\t<blockquote cite=\"http://www.ossec.net/?p=1198\">\n\t  <p>The CVE-2015-3222 vulnerability, which allows for root escalation\n\t    via sys check has been fixed in OSSEC 2.8.2.  This issue does not\n\t    affect agents.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ossec.net/?p=1198",
+      "https://github.com/ossec/ossec-hids/releases/tag/2.8.2"
+    ],
+    "cvename": [
+      "CVE-2015-3222"
+    ],
+    "freebsd_pr": [
+      "ports/200801"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-11",
+    "entry": "2015-06-12"
+  }
+}

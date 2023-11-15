@@ -1,0 +1,34 @@
+{
+  "vid": "f11d3b22-88c6-11da-a7b2-0060084a00e5",
+  "topic": "fetchmail -- crash when bouncing a message",
+  "affects": [
+    {
+      "name": [
+        "fetchmail"
+      ],
+      "range": [
+        {
+          "lt": "6.3.2",
+          "ge": "6.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2006-01.txt\">\n\t  <p>Fetchmail contains a bug that causes itself to crash when\n\t    bouncing a message to the originator or to the local\n\t    postmaster. The crash happens after the bounce message has\n\t    been sent, when fetchmail tries to free the dynamic array\n\t    of failed addresses, and calls the free() function with an\n\t    invalid pointer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.fetchmail.info/fetchmail-SA-2006-01.txt",
+      "http://bugs.debian.org/348747"
+    ],
+    "cvename": [
+      "CVE-2006-0321"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-01-22",
+    "entry": "2006-01-23"
+  }
+}

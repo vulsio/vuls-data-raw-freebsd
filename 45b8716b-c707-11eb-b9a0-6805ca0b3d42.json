@@ -1,0 +1,33 @@
+{
+  "vid": "45b8716b-c707-11eb-b9a0-6805ca0b3d42",
+  "topic": "pglogical -- shell command injection in pglogical.create_subscription()",
+  "affects": [
+    {
+      "name": [
+        "pglogical"
+      ],
+      "range": [
+        {
+          "lt": "2.3.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>2ndQuadrant reports:</p>\n\t<blockquote cite=\"https://github.com/2ndQuadrant/pglogical/releases/tag/REL2_3_4\">\n\t  <ul>\n\t    <li>\n\t      Fix pg_dump/pg_restore execution (CVE-2021-3515)<br/>\n\t      <br/>\n\t      Correctly escape the connection string for both pg_dump\n\t      and pg_restore so that exotic database and user names are\n\t      handled correctly.<br/>\n\t      <br/>\n\t      Reported by Pedro Gallegos\n\t    </li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/2ndQuadrant/pglogical/releases/tag/REL2_3_4",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1954112"
+    ],
+    "cvename": [
+      "CVE-2021-3515"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-06-01",
+    "entry": "2021-06-06"
+  }
+}

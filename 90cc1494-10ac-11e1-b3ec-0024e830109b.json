@@ -1,0 +1,80 @@
+{
+  "vid": "90cc1494-10ac-11e1-b3ec-0024e830109b",
+  "topic": "BIND -- Remote DOS",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "7.3_9",
+          "ge": "7.3"
+        },
+        {
+          "lt": "7.4_5",
+          "ge": "7.4"
+        },
+        {
+          "lt": "8.1_7",
+          "ge": "8.1"
+        },
+        {
+          "lt": "8.2_5",
+          "ge": "8.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind96"
+      ],
+      "range": [
+        {
+          "lt": "9.6.3.1.ESV.R5.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind97"
+      ],
+      "range": [
+        {
+          "lt": "9.7.4.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind98"
+      ],
+      "range": [
+        {
+          "lt": "9.8.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Internet Systems Consortium reports:</p>\n\t<blockquote cite=\"https://www.isc.org/software/bind/advisories/cve-2011-4313\">\n\t  <p>Organizations across the Internet reported crashes interrupting\n\t    service on BIND 9 nameservers performing recursive queries.\n\t    Affected servers crashed after logging an error in query.c with\n\t    the following message: \"INSIST(! dns_rdataset_isassociated(sigrdataset))\"\n\t    Multiple versions were reported being affected, including all\n\t    currently supported release versions of ISC BIND 9.</p>\n\t  <p>Because it may be possible to trigger this bug even on networks\n\t    that do not allow untrusted users to access the recursive name\n\t    servers (perhaps via specially crafted e-mail messages, and/or\n\t    malicious web sites) it is recommended that ALL operators of\n\t    recursive name servers upgrade immediately.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4313",
+      "https://www.isc.org/software/bind/advisories/cve-2011-4313"
+    ],
+    "cvename": [
+      "CVE-2011-4313"
+    ],
+    "freebsd_sa": [
+      "SA-11:06.bind"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-11-16",
+    "entry": "2011-11-16",
+    "modified": "2012-01-29"
+  }
+}

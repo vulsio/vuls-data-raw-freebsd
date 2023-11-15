@@ -1,0 +1,43 @@
+{
+  "vid": "0c7a3ee2-3654-11e1-b404-20cf30e32f6d",
+  "topic": "bugzilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "bugzilla"
+      ],
+      "range": [
+        {
+          "lt": "3.6.7",
+          "ge": "2.4.*"
+        },
+        {
+          "lt": "4.0.3",
+          "ge": "4.0.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.4.12/\">\n\t  <p>The following security issues have been discovered in Bugzilla:</p>\n\t  <ul>\n\t    <li>Tabular and graphical reports, as well as new charts have\n\t      a debug mode which displays raw data as plain text. This\n\t      text is not correctly escaped and a crafted URL could use\n\t      this vulnerability to inject code leading to XSS.</li>\n\t    <li>The User.offer_account_by_email WebService method ignores\n\t      the user_can_create_account setting of the authentication\n\t      method and generates an email with a token in it which the\n\t      user can use to create an account. Depending on the\n\t      authentication method being active, this could allow the\n\t      user to log in using this account.\n\t      Installations where the createemailregexp parameter is\n\t      empty are not vulnerable to this issue.</li>\n\t    <li>The creation of bug reports and of attachments is not\n\t      protected by a token and so they can be created without the\n\t      consent of a user if the relevant code is embedded in an\n\t      HTML page and the user visits this page.  This behavior was\n\t      intentional to let third-party applications submit new bug\n\t      reports and attachments easily.  But as this behavior can be\n\t      abused by a malicious user, it has been decided to block\n\t      submissions with no valid token starting from version 4.2rc1.\n\t      Older branches are not patched to not break these third-party\n\t      applications after the upgrade.</li>\n\t  </ul>\n\t  <p>All affected installations are encouraged to upgrade as soon\n\t    as possible.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=697699",
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=711714",
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=703975",
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=703983"
+    ],
+    "cvename": [
+      "CVE-2011-3657",
+      "CVE-2011-3667",
+      "CVE-2011-3668",
+      "CVE-2011-3669"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-11-28",
+    "entry": "2012-01-05"
+  }
+}

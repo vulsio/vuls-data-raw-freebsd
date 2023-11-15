@@ -1,0 +1,53 @@
+{
+  "vid": "16f7ec68-5cce-11ed-9be7-454b1dd82c64",
+  "topic": "Gitlab -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "15.5.2",
+          "ge": "15.5.0"
+        },
+        {
+          "lt": "15.4.4",
+          "ge": "15.4.0"
+        },
+        {
+          "lt": "15.3.5",
+          "ge": "9.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/11/02/security-release-gitlab-15-5-2-released/\">\n\t  <p>DAST analyzer sends custom request headers with every request</p>\n\t  <p>Stored-XSS with CSP-bypass via scoped labels' color</p>\n\t  <p>Maintainer can leak Datadog API key by changing integration URL</p>\n\t  <p>Uncontrolled resource consumption when parsing URLs</p>\n\t  <p>Issue HTTP requests when users view an OpenAPI document and click buttons</p>\n\t  <p>Command injection in CI jobs via branch name in CI pipelines</p>\n\t  <p>Open redirection</p>\n\t  <p>Prefill variables do not check permission of the project in external CI config</p>\n\t  <p>Disclosure of audit events to insufficiently permissioned group and project members</p>\n\t  <p>Arbitrary GFM references rendered in Jira issue description leak private/confidential resources</p>\n\t  <p>Award emojis API for an internal note is accessible to users without access to the note</p>\n\t  <p>Open redirect in pipeline artifacts when generating HTML documents</p>\n\t  <p>Retrying a job in a downstream pipeline allows the retrying user to take ownership of the retried jobs in upstream pipelines</p>\n\t  <p>Project-level Secure Files can be written out of the target directory</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2022/11/02/security-release-gitlab-15-5-2-released/"
+    ],
+    "cvename": [
+      "CVE-2022-3767",
+      "CVE-2022-3265",
+      "CVE-2022-3483",
+      "CVE-2022-3818",
+      "CVE-2022-3726",
+      "CVE-2022-2251",
+      "CVE-2022-3486",
+      "CVE-2022-3793",
+      "CVE-2022-3413",
+      "CVE-2022-2761",
+      "CVE-2022-3819",
+      "CVE-2022-3280",
+      "CVE-2022-3706"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-02",
+    "entry": "2022-11-05"
+  }
+}

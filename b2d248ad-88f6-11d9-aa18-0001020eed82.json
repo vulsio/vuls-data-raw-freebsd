@@ -1,0 +1,40 @@
+{
+  "vid": "b2d248ad-88f6-11d9-aa18-0001020eed82",
+  "topic": "cyrus-imapd -- multiple buffer overflow vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cyrus-imapd"
+      ],
+      "range": [
+        {
+          "lt": "2.1.18"
+        },
+        {
+          "lt": "2.2.11",
+          "gt": "2.2.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Cyrus IMAP Server ChangeLog states:</p>\n\t<blockquote cite=\"http://asg.web.cmu.edu/cyrus/download/imapd/changes.html\">\n\t  <ul>\n\t    <li>Fix possible single byte overflow in mailbox handling\n\t      code.</li>\n\t    <li>Fix possible single byte overflows in the imapd\n\t      annotate extension.</li>\n\t    <li>Fix stack buffer overflows in fetchnews (exploitable\n\t      by peer news server), backend (exploitable by admin),\n\t      and in imapd (exploitable by users though only on\n\t      platforms where a filename may be larger than a mailbox\n\t      name).</li>\n\t  </ul>\n\t</blockquote>\n\t<p>The 2.1.X series are reportedly only affected by the second\n\t  issue.</p>\n\t<p>These issues may lead to execution of arbitrary code with\n\t  the permissions of the user running the Cyrus IMAP\n\t  Server.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://asg.web.cmu.edu/cyrus/download/imapd/changes.html"
+    ],
+    "cvename": [
+      "CVE-2005-0546"
+    ],
+    "bid": [
+      "12636"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-14",
+    "entry": "2005-02-27",
+    "modified": "2005-04-05"
+  }
+}

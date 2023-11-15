@@ -1,0 +1,32 @@
+{
+  "vid": "98092444-5645-11e5-9ad8-14dae9d210b8",
+  "topic": "screen -- stack overflow",
+  "affects": [
+    {
+      "name": [
+        "screen"
+      ],
+      "range": [
+        {
+          "lt": "4.3.1_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Kuang-che Wu reports:</p>\n\t<blockquote cite=\"https://savannah.gnu.org/bugs/?45713\">\n\t  <p>screen will recursively call MScrollV to depth n/256. This\n\t    is time consuming and will overflow stack if n is huge.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://savannah.gnu.org/bugs/?45713"
+    ],
+    "cvename": [
+      "CVE-2015-6806"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-07",
+    "entry": "2015-09-08"
+  }
+}

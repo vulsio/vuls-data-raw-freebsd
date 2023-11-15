@@ -1,0 +1,29 @@
+{
+  "vid": "c290f093-c89e-11e6-821e-68f7288bdf41",
+  "topic": "Pligg CMS -- XSS Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "pligg"
+      ],
+      "range": [
+        {
+          "le": "2.0.2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Netsparker reports: </p>\n\t<blockquote cite=\"https://www.netsparker.com/web-applications-advisories/ns-15-011-xss-vulnerability-identified-in-pligg-cms/\">\n\t  <p>Proof of Concept URL for XSS in Pligg CMS:</p>\n\t  <p>Page: groups.php</p>\n\t  <p>Parameter Name: keyword</p>\n\t  <p>Parameter Type: GET</p>\n\t  <p>Attack Pattern: http://example.com/pligg-cms-2.0.2/groups.php?view=search&amp;keyword='+alert(0x000D82)+'</p>\n\t  <p>For more information on cross-site scripting vulnerabilities read the article Cross-site Scripting (XSS).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.netsparker.com/web-applications-advisories/ns-15-011-xss-vulnerability-identified-in-pligg-cms/"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-05-13",
+    "entry": "2016-12-22"
+  }
+}

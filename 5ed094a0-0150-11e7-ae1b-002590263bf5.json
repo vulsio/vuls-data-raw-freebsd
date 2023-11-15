@@ -1,0 +1,35 @@
+{
+  "vid": "5ed094a0-0150-11e7-ae1b-002590263bf5",
+  "topic": "ikiwiki -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ikiwiki"
+      ],
+      "range": [
+        {
+          "lt": "3.20161229"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10026\">\n\t  <p>ikiwiki 3.20161219 does not properly check if a revision changes\n\t    the access permissions for a page on sites with the git and\n\t    recentchanges plugins and the CGI interface enabled, which allows\n\t    remote attackers to revert certain changes by leveraging permissions\n\t    to change the page before the revision was made.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://ikiwiki.info/security/#index47h2\">\n\t  <p>When CGI::FormBuilder-&gt;field(\"foo\") is called in list context\n\t    (and in particular in the arguments to a subroutine that takes named\n\t    arguments), it can return zero or more values for foo from the CGI\n\t    request, rather than the expected single value. This breaks the\n\t    usual Perl parsing convention for named arguments, similar to\n\t    CVE-2014-1572 in Bugzilla (which was caused by a similar API design\n\t    issue in CGI.pm).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://ikiwiki.info/security/#index46h2",
+      "https://ikiwiki.info/security/#index47h2"
+    ],
+    "cvename": [
+      "CVE-2016-10026",
+      "CVE-2016-9645",
+      "CVE-2016-9646"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-12-19",
+    "entry": "2017-03-05"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "vid": "b53bbf58-257f-11e6-9f4d-20cf30e32f6d",
+  "topic": "openvswitch -- MPLS buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "openvswitch"
+      ],
+      "range": [
+        {
+          "lt": "2.3.3",
+          "ge": "2.2.0"
+        },
+        {
+          "lt": "2.4.1",
+          "ge": "2.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Open vSwitch reports:</p>\n\t<blockquote cite=\"http://openvswitch.org/pipermail/announce/2016-March/000082.html\">\n\t  <p>Multiple versions of Open vSwitch are vulnerable to remote buffer\n\t    overflow attacks, in which crafted MPLS packets could overflow the\n\t    buffer reserved for MPLS labels in an OVS internal data structure.\n\t    The MPLS packets that trigger the vulnerability and the potential for\n\t    exploitation vary depending on version:</p>\n\t<p>Open vSwitch 2.1.x and earlier are not vulnerable.</p>\n\t<p>In Open vSwitch 2.2.x and 2.3.x, the MPLS buffer overflow can be\n\t  exploited for arbitrary remote code execution.</p>\n\t<p>In Open vSwitch 2.4.x, the MPLS buffer overflow does not obviously lead\n\t  to a remote code execution exploit, but testing shows that it can allow a\n\t  remote denial of service.  See the mitigation section for details.</p>\n\t<p>Open vSwitch 2.5.x is not vulnerable.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://openvswitch.org/pipermail/announce/2016-March/000082.html",
+      "http://openvswitch.org/pipermail/announce/2016-March/000083.html"
+    ],
+    "cvename": [
+      "CVE-2016-2074"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-03-28",
+    "entry": "2016-05-29",
+    "modified": "2016-07-03"
+  }
+}

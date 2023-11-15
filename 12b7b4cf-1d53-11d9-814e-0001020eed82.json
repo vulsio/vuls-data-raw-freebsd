@@ -1,0 +1,35 @@
+{
+  "vid": "12b7b4cf-1d53-11d9-814e-0001020eed82",
+  "topic": "wordpress -- XSS in administration panel",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Pages in the administration panel of Wordpress are\n\t  vulnerable for XSS attacks.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://wordpress.org/development/2004/10/wp-121/"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109641484723194",
+        "msgid": "20040927231608.19365.qmail@www.securityfocus.com"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-27",
+    "entry": "2004-10-13"
+  }
+}

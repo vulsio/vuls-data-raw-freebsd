@@ -1,0 +1,61 @@
+{
+  "vid": "8fd4f40a-4b7d-11ee-aa2a-080027de9982",
+  "topic": "Django -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py38-django32",
+        "py39-django32",
+        "py310-django32",
+        "py311-django32"
+      ],
+      "range": [
+        {
+          "lt": "3.2.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py38-django41",
+        "py39-django41",
+        "py310-django41",
+        "py311-django41"
+      ],
+      "range": [
+        {
+          "lt": "4.1.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py38-django42",
+        "py39-django42",
+        "py310-django42",
+        "py311-django42"
+      ],
+      "range": [
+        {
+          "lt": "4.2.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2023/sep/04/security-releases/\">\n\t  <p>CVE-2023-41164: Potential denial of service vulnerability in\n\t    django.utils.encoding.uri_to_iri().</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.djangoproject.com/weblog/2023/sep/04/security-releases/"
+    ],
+    "cvename": [
+      "CVE-2023-41164"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-09-01",
+    "entry": "2023-09-04"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "vid": "fceb2b08-cb76-11ec-a06f-d4c9ef517024",
+  "topic": "OpenSSL -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.1.1o,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl-quictls"
+      ],
+      "range": [
+        {
+          "lt": "3.0.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20220503.txt\">\n\t  <ul>\n\t    <li>The c_rehash script allows command injection (CVE-2022-1292)\n\t      (Moderate) <br/>The c_rehash script does not properly sanitise shell\n\t      metacharacters to prevent command injection.  This script is distributed\n\t      by some operating systems in a manner where it is automatically\n\t      executed. On such operating systems, an attacker could execute arbitrary\n\t      commands with the privileges of the script.</li>\n\t    <li>OCSP_basic_verify may incorrectly verify the response signing\n\t      certificate (CVE-2022-1343) (Moderate)<br/>The function\n\t      `OCSP_basic_verify` verifies the signer certificate on an OCSP response.\n\t      In the case where the (non-default) flag OCSP_NOCHECKS is used then the\n\t      response will be positive (meaning a successful verification) even in\n\t      the case where the response signing certificate fails to verify.</li>\n\t    <li>Incorrect MAC key used in the RC4-MD5 ciphersuite (CVE-2022-1434)\n\t      (Low)<br/>The OpenSSL 3.0 implementation of the RC4-MD5 ciphersuite\n\t      incorrectly uses the AAD data as the MAC key. This makes the MAC key\n\t      trivially predictable.</li>\n\t    <li>Resource leakage when decoding certificates and keys (CVE-2022-1473)\n\t      (Low)<br/>The OPENSSL_LH_flush() function, which empties a hash table,\n\t      containsa bug that breaks reuse of the memory occuppied by the removed\n\t      hash table entries.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20220503.txt"
+    ],
+    "cvename": [
+      "CVE-2022-1292",
+      "CVE-2022-1343",
+      "CVE-2022-1434",
+      "CVE-2022-1473"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-05-03",
+    "entry": "2022-05-04",
+    "modified": "2022-05-05"
+  }
+}

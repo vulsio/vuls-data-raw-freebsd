@@ -1,0 +1,133 @@
+{
+  "vid": "b0911985-6e2a-11d9-9557-000a95bc6fae",
+  "topic": "web browsers -- window injection vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7.6,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla",
+        "linux-mozilla-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.7.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-linux-mozillafirebird",
+        "el-linux-mozillafirebird",
+        "ja-linux-mozillafirebird-gtk1",
+        "ja-mozillafirebird-gtk2",
+        "linux-mozillafirebird",
+        "ru-linux-mozillafirebird",
+        "zhCN-linux-mozillafirebird",
+        "zhTW-linux-mozillafirebird",
+        "de-netscape7",
+        "fr-netscape7",
+        "ja-netscape7",
+        "netscape7",
+        "pt_BR-netscape7",
+        "mozilla-gtk1"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-linux-netscape",
+        "fr-linux-netscape",
+        "ja-linux-netscape",
+        "linux-netscape",
+        "linux-phoenix",
+        "mozilla+ipv6",
+        "mozilla-embedded",
+        "mozilla-firebird",
+        "mozilla-gtk2",
+        "mozilla-gtk",
+        "mozilla-thunderbird",
+        "phoenix"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "kdebase",
+        "kdelibs"
+      ],
+      "range": [
+        {
+          "lt": "3.3.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "opera",
+        "opera-devel",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "7.54.20050131"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Research advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/secunia_research/2004-13/advisory/\">\n\t  <p>Secunia Research has reported a vulnerability in multiple\n\t    browsers, which can be exploited by malicious people to\n\t    spoof the content of websites.</p>\n\t  <p>The problem is that a website can inject content into\n\t    another site's window if the target name of the window is\n\t    known. This can e.g. be exploited by a malicious website\n\t    to spoof the content of a pop-up window opened on a\n\t    trusted website.</p>\n\t  <p>Secunia has constructed a test, which can be used to\n\t    check if your browser is affected by this issue:\n\t    <a href=\"http://secunia.com/multiple_browsers_window_injection_vulnerability_test/\">http://secunia.com/multiple_browsers_window_injection_vulnerability_test/</a></p>\n\t</blockquote>\n\t<p>A <a href=\"http://mozillanews.org/?article_date=2004-12-08+06-48-46\">workaround\n\t    for Mozilla-based browsers</a> is available.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/secunia_research/2004-13/advisory/",
+      "http://secunia.com/multiple_browsers_window_injection_vulnerability_test/",
+      "http://secunia.com/advisories/13129/",
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=273699",
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=103638",
+      "http://mozillanews.org/?article_date=2004-12-08+06-48-46",
+      "http://secunia.com/advisories/13253/",
+      "http://secunia.com/advisories/13254/",
+      "http://www.kde.org/info/security/advisory-20041213-1.txt",
+      "http://secunia.com/advisories/13402/"
+    ],
+    "cvename": [
+      "CVE-2004-1156",
+      "CVE-2004-1157",
+      "CVE-2004-1158",
+      "CVE-2004-1160"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-08",
+    "entry": "2005-01-24",
+    "modified": "2005-02-26"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "a7080c30-91a2-11dc-b2eb-00b0d07e6c7e",
+  "topic": "mt-daapd -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mt-daapd"
+      ],
+      "range": [
+        {
+          "lt": "0.2.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US-CERT reports:</p>\n\t<blockquote cite=\"http://www.us-cert.gov/cas/bulletins/SB07-316.html\">\n\t  <p>webserver.c in mt-dappd in Firefly Media Server 0.2.4 and\n\t    earlier allows remote attackers to cause a denial of service\n\t    (NULL dereference and daemon crash) via a stats method action\n\t    to /xml-rpc with (1) an empty Authorization header line, which\n\t    triggers a crash in the ws_decodepassword function; or (2) a\n\t    header line without a ':' character, which triggers a crash\n\t    in the ws_getheaders function.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2007-5824"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-11-05",
+    "entry": "2007-11-12"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "vid": "2e116ba5-f7c3-11d9-928e-000b5d7e6dd5",
+  "topic": "kdebase -- Kate backup file permission leak",
+  "affects": [
+    {
+      "name": [
+        "kdebase"
+      ],
+      "range": [
+        {
+          "lt": "3.4.1",
+          "ge": "3.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux_base-suse"
+      ],
+      "range": [
+        {
+          "lt": "9.3_2",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A KDE Security Advisory explains:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20050718-1.txt\">\n\t  <p>Kate / Kwrite create a file backup before saving a modified\n\t    file. These backup files are created with default permissions,\n\t    even if the original file had more strict permissions set.</p>\n\t  <p>Depending on the system security settings, backup files\n\t    might be readable by other users.  Kate / Kwrite are\n\t    network transparent applications and therefore this\n\t    vulnerability might not be restricted to local users.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.kde.org/show_bug.cgi?id=103331",
+      "http://www.kde.org/info/security/advisory-20050718-1.txt"
+    ],
+    "cvename": [
+      "CVE-2005-1920"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-18",
+    "entry": "2005-07-18",
+    "modified": "2005-10-09"
+  }
+}

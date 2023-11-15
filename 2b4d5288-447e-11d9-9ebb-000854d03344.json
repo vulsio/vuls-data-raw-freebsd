@@ -1,0 +1,29 @@
+{
+  "vid": "2b4d5288-447e-11d9-9ebb-000854d03344",
+  "topic": "rockdodger -- buffer overflows",
+  "affects": [
+    {
+      "name": [
+        "rockdodger"
+      ],
+      "range": [
+        {
+          "lt": "0.6_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The environment variable HOME is copied without regard\n\t  to buffer size, which can be used to gain elevated privilege\n\t  if the binary is installed setgid games, and a string is\n\t  read from the high score file without bounds check.</p>\n\t<p>The port installs the binary without setgid, but with a\n\t  world-writable high score file.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=278878"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-10-29",
+    "entry": "2004-12-02"
+  }
+}

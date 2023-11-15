@@ -1,0 +1,30 @@
+{
+  "vid": "4f8665d0-0465-11e9-b77a-6cc21735f730",
+  "topic": "shibboleth-sp -- crashes on malformed date/time content",
+  "affects": [
+    {
+      "name": [
+        "shibboleth-sp"
+      ],
+      "range": [
+        {
+          "lt": "3.0.3",
+          "ge": "3.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Shibboleth Consortium reports:</p>\n\t<blockquote cite=\"https://shibboleth.net/community/advisories/secadv_20181219a.txt\">\n\t  <p>SAML messages, assertions, and metadata all commonly contain\n\t  date/time information in a standard XML format.</p>\n\t  <p>Invalid formatted data in such fields cause an exception of a type\n\t  that was not handled properly in the V3 software and causes a crash\n\t  (usually to the shibd daemon process, but possibly to Apache in rare\n\t   cases). Note that the crash occurs prior to evaluation of a message's\n\t  authenticity, so can be exploited by an untrusted attacker.</p>\n\t  <p>The problem is believed to be specific to the V3 software and would\n\t  not cause a crash in the older, now unsupported, V2 software.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://shibboleth.net/community/advisories/secadv_20181219a.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-12-19",
+    "entry": "2018-12-20"
+  }
+}

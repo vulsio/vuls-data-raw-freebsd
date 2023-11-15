@@ -1,0 +1,42 @@
+{
+  "vid": "81826d12-317a-11e2-9186-406186f3d89d",
+  "topic": "weechat -- Arbitrary shell command execution via scripts",
+  "affects": [
+    {
+      "name": [
+        "weechat"
+      ],
+      "range": [
+        {
+          "lt": "0.3.9.2",
+          "ge": "0.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "weechat-devel"
+      ],
+      "range": [
+        {
+          "lt": "20121118"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sebastien Helleu reports:</p>\n\t<blockquote cite=\"http://weechat.org/security/\">\n\t  <p>Untrusted command for function hook_process could lead to\n\t  execution of commands, because of shell expansions.</p>\n\t  <p>Workaround with a non-patched version: remove/unload all scripts\n\t  calling function hook_process (for maximum safety).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://weechat.org/security/",
+      "https://savannah.nongnu.org/bugs/?37764"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-11-15",
+    "entry": "2012-11-18",
+    "modified": "2012-11-18"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "734b8f46-773d-4fef-bed3-61114fe8e4c5",
+  "topic": "libX11 -- Sub-object overflows",
+  "affects": [
+    {
+      "name": [
+        "libX11"
+      ],
+      "range": [
+        {
+          "lt": "1.8.6,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The X.Org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2023-June/003406.html\">\n\t  <ul>\n\t    <li>Buffer overflows in InitExt.c in libX11 prior to 1.8.6 [CVE-2023-3138]\n\n\t    <p>The functions in src/InitExt.c in libX11 prior to 1.8.6 do not check\n\t    that the values provided for the Request, Event, or Error IDs are\n\t    within the bounds of the arrays that those functions write to, using\n\t    those IDs as array indexes.  Instead they trusted that they were called\n\t    with values provided by an Xserver that was adhering to the bounds\n\t    specified in the X11 protocol, as all X servers provided by X.Org do.</p>\n\n\t    <p>As the protocol only specifies a single byte for these values, an\n\t    out-of-bounds value provided by a malicious server (or a malicious\n\t    proxy-in-the-middle) can only overwrite other portions of the Display\n\t    structure and not write outside the bounds of the Display structure\n\t    itself.  Testing has found it is possible to at least cause the client\n\t    to crash with this memory corruption.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.x.org/archives/xorg-announce/2023-June/003406.html"
+    ],
+    "cvename": [
+      "CVE-2023-3138"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-06-15",
+    "entry": "2023-06-16"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "2328adef-157c-11d9-8402-000d93664d5c",
+  "topic": "racoon -- improper certificate handling",
+  "affects": [
+    {
+      "name": [
+        "racoon"
+      ],
+      "range": [
+        {
+          "lt": "20040818a"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Thomas Walpuski noted when OpenSSL would detect an error\n\t  condition for a peer certificate, racoon mistakenly ignored\n\t  the error. This could allow five invalid certificate states\n\t  to properly be used for authentication.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kame.net/racoon/racoon-ml/msg00517.html"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=108726102304507",
+        "msgid": "20040614185623.GA10290@unproved.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-01-31",
+    "entry": "2004-10-03"
+  }
+}

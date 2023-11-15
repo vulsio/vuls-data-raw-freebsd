@@ -1,0 +1,32 @@
+{
+  "vid": "e800cd4b-4212-11e6-942d-bc5ff45d0f28",
+  "topic": "xen-tools -- Unrestricted qemu logging",
+  "affects": [
+    {
+      "name": [
+        "xen-tools"
+      ],
+      "range": [
+        {
+          "lt": "4.7.0_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-180.html\">\n\t  <p>When the libxl toolstack launches qemu for HVM guests, it pipes the\n\t    output of stderr to a file in /var/log/xen.  This output is not\n\t    rate-limited in any way.  The guest can easily cause qemu to print\n\t    messages to stderr, causing this file to become arbitrarily large.\n\t    </p>\n\t  <p>The disk containing the logfile can be exhausted, possibly causing a\n\t    denial-of-service (DoS).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-180.html"
+    ],
+    "cvename": [
+      "CVE-2014-3672"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-23",
+    "entry": "2016-07-04"
+  }
+}

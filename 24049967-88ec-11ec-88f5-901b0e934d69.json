@@ -1,0 +1,32 @@
+{
+  "vid": "24049967-88ec-11ec-88f5-901b0e934d69",
+  "topic": "py-twisted -- cookie and authorization headers are leaked when following cross-origin redirects",
+  "affects": [
+    {
+      "name": [
+        "py37-twisted",
+        "py38-twisted",
+        "py39-twisted",
+        "py310-twisted"
+      ],
+      "range": [
+        {
+          "lt": "22.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Twisted developers report:</p>\n\t<blockquote cite=\"https://github.com/twisted/twisted/security/advisories/GHSA-92x2-jw7w-xvvx\">\n\t  <p> Cookie and Authorization headers are leaked when following cross-origin redirects in <code>twited.web.client.RedirectAgent</code> and <code>twisted.web.client.BrowserLikeRedirectAgent</code>.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/twisted/twisted/security/advisories/GHSA-92x2-jw7w-xvvx"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-02-07",
+    "entry": "2022-02-13"
+  }
+}

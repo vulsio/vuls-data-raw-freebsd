@@ -1,0 +1,33 @@
+{
+  "vid": "f4464e49-7e04-11ee-8e38-002590c1f29c",
+  "topic": "FreeBSD -- Incorrect libcap_net limitation list manipulation",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "13.2_5",
+          "ge": "13.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Casper services allow limiting operations that a process can\n\tperform.  Each service maintains a specific list of permitted\n\toperations.  Certain operations can be further restricted, such as\n\tspecifying which domain names can be resolved.  During the verification\n\tof limits, the service must ensure that the new set of constraints\n\tis a subset of the previous one.  In the case of the cap_net service,\n\tthe currently limited set of domain names was fetched incorrectly.</p>\n\t<h1>Impact:</h1>\n\t<p>In certain scenarios, if only a list of resolvable domain names\n\twas specified without setting any other limitations, the application\n\tcould submit a new list of domains including include entries not\n\tpreviously in the list.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2023-5978"
+    ],
+    "freebsd_sa": [
+      "SA-23:16.cap_net"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-11-08",
+    "entry": "2023-11-08"
+  }
+}

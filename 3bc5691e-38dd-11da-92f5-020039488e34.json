@@ -1,0 +1,33 @@
+{
+  "vid": "3bc5691e-38dd-11da-92f5-020039488e34",
+  "topic": "libxine -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.1.0_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gentoo Linux Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200510-08.xml\">\n\t  <p>Ulf Harnhammar discovered a format string bug in the routines\n\t    handling CDDB server response contents.</p>\n\t  <p>An attacker could submit malicious information about an audio\n\t    CD to a public CDDB server (or impersonate a public CDDB server).\n\t    When the victim plays this CD on a multimedia frontend relying\n\t    on xine-lib, it could end up executing arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.gentoo.org/security/en/glsa/glsa-200510-08.xml",
+      "http://xinehq.de/index.php/security/XSA-2005-1"
+    ],
+    "cvename": [
+      "CVE-2005-2967"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-08",
+    "entry": "2005-10-09"
+  }
+}

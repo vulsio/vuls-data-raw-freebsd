@@ -1,0 +1,32 @@
+{
+  "vid": "a4c9e12d-88b7-11e3-8ada-10bf48e1088e",
+  "topic": "socat -- buffer overflow with data from command line",
+  "affects": [
+    {
+      "name": [
+        "socat"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Florian Weimer of the Red Hat Product Security Team reports:</p>\n\t<blockquote cite=\"http://www.dest-unreach.org/socat/contrib/socat-secadv5.txt\">\n\t  <p>Due to a missing check during assembly of the HTTP request line a long\n\t    target server name in the PROXY-CONNECT address can cause a stack buffer\n\t    overrun. Exploitation requires that the attacker is able to provide the\n\t    target server name to the PROXY-CONNECT address in the command line.\n\t    This can happen for example in scripts that receive data from untrusted\n\t    sources.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.dest-unreach.org/socat/contrib/socat-secadv5.txt"
+    ],
+    "cvename": [
+      "CVE-2014-0019"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-01-24",
+    "entry": "2014-01-29"
+  }
+}

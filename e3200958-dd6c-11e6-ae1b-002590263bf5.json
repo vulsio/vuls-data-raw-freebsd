@@ -1,0 +1,63 @@
+{
+  "vid": "e3200958-dd6c-11e6-ae1b-002590263bf5",
+  "topic": "powerdns -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "powerdns"
+      ],
+      "range": [
+        {
+          "lt": "3.4.11"
+        },
+        {
+          "lt": "4.0.2",
+          "ge": "4.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "powerdns-recursor"
+      ],
+      "range": [
+        {
+          "lt": "3.7.4"
+        },
+        {
+          "lt": "4.0.4",
+          "ge": "4.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PowerDNS reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/md/security/powerdns-advisory-2016-02/\">\n\t  <p>2016-02: Crafted queries can cause abnormal CPU usage</p>\n\t</blockquote>\n\t<blockquote cite=\"https://doc.powerdns.com/md/security/powerdns-advisory-2016-03/\">\n\t  <p>2016-03: Denial of service via the web server</p>\n\t</blockquote>\n\t<blockquote cite=\"https://doc.powerdns.com/md/security/powerdns-advisory-2016-04/\">\n\t  <p>2016-04: Insufficient validation of TSIG signatures</p>\n\t</blockquote>\n\t<blockquote cite=\"https://doc.powerdns.com/md/security/powerdns-advisory-2016-05/\">\n\t  <p>2016-05: Crafted zone record can cause a denial of service</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://doc.powerdns.com/md/security/powerdns-advisory-2016-02/",
+      "https://doc.powerdns.com/md/security/powerdns-advisory-2016-03/",
+      "https://doc.powerdns.com/md/security/powerdns-advisory-2016-04/",
+      "https://doc.powerdns.com/md/security/powerdns-advisory-2016-05/",
+      "https://blog.powerdns.com/2017/01/13/powerdns-authoritative-server-4-0-2-released/",
+      "https://blog.powerdns.com/2017/01/13/powerdns-recursor-4-0-4-released/"
+    ],
+    "cvename": [
+      "CVE-2016-7068",
+      "CVE-2016-7072",
+      "CVE-2016-7073",
+      "CVE-2016-7074",
+      "CVE-2016-2120"
+    ],
+    "freebsd_pr": [
+      "ports/216135",
+      "ports/216136"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-12-15",
+    "entry": "2017-01-18"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "7f242313-aea5-11eb-8151-67f74cf7c704",
+  "topic": "go -- net/http: ReadRequest can stack overflow due to recursion with very large headers",
+  "affects": [
+    {
+      "name": [
+        "go"
+      ],
+      "range": [
+        {
+          "lt": "1.16.4,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/45710\">\n\t  <p>http.ReadRequest can stack overflow due to recursion when given a\n\t    request with a very large header (~8-10MB depending on the\n\t    architecture). A http.Server which overrides the default max header\n\t    of 1MB by setting Server.MaxHeaderBytes to a much larger value could\n\t    also be vulnerable in the same way.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/golang/go/issues/45710"
+    ],
+    "cvename": [
+      "CVE-2021-31525"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-22",
+    "entry": "2021-05-06"
+  }
+}

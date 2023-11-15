@@ -1,0 +1,41 @@
+{
+  "vid": "6ed5c5e3-a840-11e7-b5af-a4badb2f4699",
+  "topic": "FreeBSD -- OpenSSH Denial of Service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "11.1_1",
+          "ge": "11.1"
+        },
+        {
+          "lt": "11.0_12",
+          "ge": "11.0"
+        },
+        {
+          "lt": "10.3_21",
+          "ge": "10.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>There is no limit on the password length.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker may be able to cause an affected SSH\n\tserver to use excessive amount of CPU by sending very long\n\tpasswords, when PasswordAuthentication is enabled by the\n\tsystem administrator.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-6515"
+    ],
+    "freebsd_sa": [
+      "SA-17:06.openssh"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-08-10",
+    "entry": "2017-10-03"
+  }
+}

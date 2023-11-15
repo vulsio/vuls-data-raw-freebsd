@@ -1,0 +1,38 @@
+{
+  "vid": "7d09b9ee-e0ba-11e5-abc4-6fb07af136d2",
+  "topic": "exim -- local privillege escalation",
+  "affects": [
+    {
+      "name": [
+        "exim"
+      ],
+      "range": [
+        {
+          "lt": "4.86.2"
+        },
+        {
+          "lt": "4.85.2"
+        },
+        {
+          "lt": "4.84.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Exim development team reports:</p>\n\t<blockquote cite=\"https://lists.exim.org/lurker/message/20160302.191005.a72d8433.en.html\">\n\t<p>All installations having Exim set-uid root and using 'perl_startup' are\n\tvulnerable to a local privilege escalation. Any user who can start an\n\tinstance of Exim (and this is normally <strong>any</strong> user) can gain root\n\tprivileges. If you do not use 'perl_startup' you <strong>should</strong> be safe.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.exim.org/lurker/message/20160302.191005.a72d8433.en.html"
+    ],
+    "cvename": [
+      "CVE-2016-1531"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-26",
+    "entry": "2016-03-02"
+  }
+}

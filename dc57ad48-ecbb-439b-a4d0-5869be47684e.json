@@ -1,0 +1,46 @@
+{
+  "vid": "dc57ad48-ecbb-439b-a4d0-5869be47684e",
+  "topic": "vlc -- Use after free vulnerability",
+  "affects": [
+    {
+      "name": [
+        "vlc"
+      ],
+      "range": [
+        {
+          "le": "2.2.8_6,4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "vlc-qt4"
+      ],
+      "range": [
+        {
+          "le": "2.2.8_6,4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11529\">\n\t  <p>VideoLAN VLC media player 2.2.x is prone to a use after free\n\t    vulnerability which an attacker can leverage to execute arbitrary\n\t    code via crafted MKV files. Failed exploit attempts will likely\n\t    result in denial of service conditions.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11529",
+      "http://seclists.org/fulldisclosure/2018/Jul/28",
+      "https://github.com/rapid7/metasploit-framework/pull/10335",
+      "https://github.com/videolan/vlc-3.0/commit/c472668ff873cfe29281822b4548715fb7bb0368",
+      "https://github.com/videolan/vlc-3.0/commit/d2dadb37e7acc25ae08df71e563855d6e17b5b42"
+    ],
+    "cvename": [
+      "CVE-2018-11529"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-06",
+    "entry": "2018-07-21"
+  }
+}

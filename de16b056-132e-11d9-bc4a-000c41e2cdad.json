@@ -1,0 +1,51 @@
+{
+  "vid": "de16b056-132e-11d9-bc4a-000c41e2cdad",
+  "topic": "samba -- remote file disclosure",
+  "affects": [
+    {
+      "name": [
+        "samba"
+      ],
+      "range": [
+        {
+          "lt": "2.2.12"
+        },
+        {
+          "gt": "3.*",
+          "le": "3.0.2a"
+        },
+        {
+          "gt": "3.*,1",
+          "le": "3.0.2a_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ja-samba"
+      ],
+      "range": [
+        {
+          "lt": "2.2.11.j1.0_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>According to a Samba Team security notice:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/news/#security_2.2.12\">\n\t  <p>A security vulnerability has been located in Samba\n\t    2.2.x &lt;= 2.2.11 and Samba 3.0.x &lt;= 3.0.5. A remote\n\t    attacker may be able to gain access to files which exist\n\t    outside of the share's defined path. Such files must still\n\t    be readable by the account used for the connection.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.samba.org/samba/news/#errata_05oct\">\n\t  <p>The original notice for CAN-2004-0815 indicated that\n\t    Samba 3.0.x &lt;= 3.0.5 was vulnerable to the security\n\t    issue. After further research, Samba developers have\n\t    confirmed that only Samba 3.0.2a and earlier releases\n\t    contain the exploitable code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.samba.org/samba/news/#security_2.2.12"
+    ],
+    "cvename": [
+      "CVE-2004-0815"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-30",
+    "entry": "2004-09-30",
+    "modified": "2008-09-26"
+  }
+}

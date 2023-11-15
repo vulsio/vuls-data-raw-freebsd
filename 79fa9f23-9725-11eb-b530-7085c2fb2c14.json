@@ -1,0 +1,32 @@
+{
+  "vid": "79fa9f23-9725-11eb-b530-7085c2fb2c14",
+  "topic": "upnp -- stack overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "upnp"
+      ],
+      "range": [
+        {
+          "lt": "1.14.5,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28302\">\n\t  <p>\n\t      A stack overflow in pupnp 1.16.1 can cause the denial of service through the\n\t      Parser_parseDocument() function. ixmlNode_free() will release a child node\n\t      recursively, which will consume stack space and lead to a crash.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/pupnp/pupnp/issues/249"
+    ],
+    "cvename": [
+      "CVE-2021-28302"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-03-12",
+    "entry": "2021-04-06"
+  }
+}

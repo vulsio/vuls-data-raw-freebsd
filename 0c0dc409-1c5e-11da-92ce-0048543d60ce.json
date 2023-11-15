@@ -1,0 +1,38 @@
+{
+  "vid": "0c0dc409-1c5e-11da-92ce-0048543d60ce",
+  "topic": "squid -- Possible Denial Of Service Vulnerability in store.c",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "2.5.10_5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The squid patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE10-STORE_PENDING\">\n\t  <p>Squid crashes with the above assertion failure [assertion failed:\n\t    store.c:523: \"e-&gt;store_status == STORE_PENDING\"] in certain\n\t    conditions involving aborted requests.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE10-STORE_PENDING",
+      "http://www.squid-cache.org/bugs/show_bug.cgi?id=1368",
+      "http://secunia.com/advisories/16708/"
+    ],
+    "cvename": [
+      "CVE-2005-2794"
+    ],
+    "bid": [
+      "14761"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-08-02",
+    "entry": "2005-09-04",
+    "modified": "2005-10-02"
+  }
+}

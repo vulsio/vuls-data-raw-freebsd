@@ -1,0 +1,32 @@
+{
+  "vid": "f5f0a640-bae8-11e9-bb3a-001e2a3f778d",
+  "topic": "KDE Frameworks -- malicious .desktop files execute code",
+  "affects": [
+    {
+      "name": [
+        "kf5-kconfig"
+      ],
+      "range": [
+        {
+          "lt": "5.60.0_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The KDE Community has released a security announcement:</p>\n\t<blockquote cite=\"https://kde.org/info/security/advisory-20190807-1.txt\">\n\t  <p>The syntax Key[$e]=$(shell command) in *.desktop files, .directory files, and configuration files\n(typically found in ~/.config) was an intentional feature of KConfig, to allow flexible configuration.\nThis could however be abused by malicious people to make the users install such files and get code\nexecuted even without intentional action by the user.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kde.org/info/security/advisory-20190807-1.txt"
+    ],
+    "cvename": [
+      "CVE-2019-14744"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-08-07",
+    "entry": "2019-08-09"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "40fcf20f-8891-11d8-90d1-0020ed76ef5a",
+  "topic": "racoon remote denial of service vulnerability (IKE Generic Payload Header)",
+  "affects": [
+    {
+      "name": [
+        "racoon"
+      ],
+      "range": [
+        {
+          "lt": "20040407b"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>When racoon receives an IKE message with an incorrectly\n\t  constructed Generic Payload Header, it may behave erratically,\n\t  going into a tight loop and dropping connections.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://orange.kame.net/dev/query-pr.cgi?pr=555"
+    ],
+    "cvename": [
+      "CVE-2004-0392"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-12-03",
+    "entry": "2004-04-07",
+    "modified": "2004-04-14"
+  }
+}

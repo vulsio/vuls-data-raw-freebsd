@@ -1,0 +1,46 @@
+{
+  "vid": "877e918e-5362-11d9-96d4-00065be4b5b6",
+  "topic": "mpg123 -- playlist processing buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mpg123",
+        "mpg123-nas",
+        "mpg123-esound"
+      ],
+      "range": [
+        {
+          "le": "0.59r_15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A buffer overflow vulnerability exists in the playlist\n\t  processing of mpg123. A specially crafted playlist entry\n\t  can cause a stack overflow that can be used to inject\n\t  arbitrary code into the mpg123 process.</p>\n\t<p>Note that a malicious playlist, demonstrating this\n\t  vulnerability, was released by the bug finder and may be\n\t  used as a template by attackers.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://tigger.uic.edu/~jlongs2/holes/mpg123.txt",
+      "http://secunia.com/advisories/13511/",
+      "http://xforce.iss.net/xforce/xfdb/18626"
+    ],
+    "cvename": [
+      "CVE-2004-1284"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110321888413132",
+        "msgid": "653D74053BA6F54A81ED83DCF969DF08CFA2AA@pivxes1.pivx.com"
+      }
+    ],
+    "bid": [
+      "11958"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-15",
+    "entry": "2005-01-03",
+    "modified": "2005-01-13"
+  }
+}

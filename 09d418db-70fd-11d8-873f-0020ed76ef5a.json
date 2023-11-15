@@ -1,0 +1,83 @@
+{
+  "vid": "09d418db-70fd-11d8-873f-0020ed76ef5a",
+  "topic": "Apache 1.3 IP address access control failure on some 64-bit platforms",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "lt": "1.3.29_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+mod_ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.29+2.8.16_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.29.1.53_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ru-apache"
+      ],
+      "range": [
+        {
+          "lt": "1.3.29+30.19_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ru-apache+mod_ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.29+30.19+2.8.16_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Henning Brauer discovered a programming error in Apache\n\t  1.3's mod_access that results in the netmasks in IP address\n\t  access control rules being interpreted incorrectly on\n\t  64-bit, big-endian platforms.  In some cases, this could\n\t  cause a `deny from' IP address access control rule including\n\t  a netmask to fail.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://cvs.apache.org/viewcvs.cgi/apache-1.3/src/modules/standard/mod_access.c?r1=1.46&r2=1.47",
+      "http://www.apacheweek.com/features/security-13",
+      "http://nagoya.apache.org/bugzilla/show_bug.cgi?id=23850"
+    ],
+    "cvename": [
+      "CVE-2003-0993"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=apache-cvs&m=107869603013722"
+      }
+    ],
+    "bid": [
+      "9829"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-03-07",
+    "entry": "2004-03-08",
+    "modified": "2004-03-12"
+  }
+}

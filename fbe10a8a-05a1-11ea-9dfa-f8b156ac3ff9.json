@@ -1,0 +1,47 @@
+{
+  "vid": "fbe10a8a-05a1-11ea-9dfa-f8b156ac3ff9",
+  "topic": "FreeBSD -- Intel CPU Microcode Update",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.1_1",
+          "ge": "12.1"
+        },
+        {
+          "lt": "12.0_12",
+          "ge": "12.0"
+        },
+        {
+          "lt": "11.3_5",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Starting with version 1.26, the devcpu-data port/package includes\n\tupdates and mitigations for the following technical and security\n\tadvisories (depending on CPU model).</p>\n\t<p>Intel TSX Updates (TAA) CVE-2019-11135 Voltage Modulation\n\tVulnerability CVE-2019-11139 MD_CLEAR Operations\n\tCVE-2018-12126 CVE-2018-12127 CVE-2018-12130 CVE-2018-11091\n\tTA Indirect Sharing CVE-2017-5715 EGETKEY CVE-2018-12126\n\tCVE-2018-12127 CVE-2018-12130 CVE-2018-11091 JCC SKX102\n\t  Erratum </p>\n\t<p>Updated microcode includes mitigations for\n\tCPU issues, but may also cause a performance regression due\n\tto the JCC erratum mitigation.  Please visit\n\thttp://www.intel.com/benchmarks for further information.\n\t</p>\n\t<p>Please visit http://www.intel.com/security for\n\tdetailed information on these advisories as well as a list of\n\tCPUs that are affected.</p>\n\t<p>Operating a CPU without the latest microcode may result in erratic or\n\tunpredictable behavior, including system crashes and lock ups.\n\tCertain issues listed in this advisory may result in the leakage of\n\tprivileged system information to unprivileged users.  Please refer to\n\tthe security advisories listed above for detailed information.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-11135",
+      "CVE-2019-11139",
+      "CVE-2018-12126",
+      "CVE-2018-12127",
+      "CVE-2018-12130",
+      "CVE-2018-11091",
+      "CVE-2017-5715"
+    ],
+    "freebsd_sa": [
+      "SA-19:26.mcu"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-11-14",
+    "entry": "2019-11-25"
+  }
+}

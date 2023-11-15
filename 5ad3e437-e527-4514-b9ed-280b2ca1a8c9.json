@@ -1,0 +1,32 @@
+{
+  "vid": "5ad3e437-e527-4514-b9ed-280b2ca1a8c9",
+  "topic": "openvpn -- multiple TCP clients connecting with the same certificate at the same time can crash the server",
+  "affects": [
+    {
+      "name": [
+        "openvpn"
+      ],
+      "range": [
+        {
+          "lt": "2.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>James Yonan reports:</p>\n\t<blockquote cite=\"http://openvpn.net/changelog.html\">\n\t  <p>If two or more client machines try to connect to the server\n\t    at the same time via TCP, using the same client certificate,\n\t    and when --duplicate-cn is not enabled on the server, a race\n\t    condition can crash the server with \"Assertion failed at\n\t    mtcp.c:411\"</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://openvpn.net/changelog.html"
+    ],
+    "cvename": [
+      "CVE-2005-2534"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-08-03",
+    "entry": "2005-08-19"
+  }
+}

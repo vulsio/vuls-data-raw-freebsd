@@ -1,0 +1,34 @@
+{
+  "vid": "3e0da406-aece-11e9-8d41-97657151f8c2",
+  "topic": "Exim -- RCE in ${sort} expansion",
+  "affects": [
+    {
+      "name": [
+        "exim"
+      ],
+      "range": [
+        {
+          "lt": "4.92.1",
+          "ge": "4.85"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Exim team report:</p>\n\t<blockquote cite=\"https://www.exim.org/static/doc/security/CVE-2019-13917.txt\">\n\t  <p>\n\t    A local or remote attacker can execute programs with root privileges - if you've an unusual configuration.\n\t  </p>\n\t  <p>\n\t    If your configuration uses the ${sort } expansion for items that can be controlled by an attacker (e.g. $local_part, $domain). The default config, as shipped by the Exim developers, does not contain ${sort }.\n\t  </p>\n\t  <p>\n\t    The vulnerability is exploitable either remotely or locally and could\nbe used to execute other programs with root privilege.  The ${sort }\nexpansion re-evaluates its items.\n\t  </p>\n\t  <p>\n\t    Exim 4.92.1 is not vulnerable.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.exim.org/static/doc/security/CVE-2019-13917.txt"
+    ],
+    "cvename": [
+      "CVE-2019-13917"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-07-18",
+    "entry": "2019-07-25",
+    "modified": "2019-07-26"
+  }
+}

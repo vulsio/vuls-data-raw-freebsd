@@ -1,0 +1,29 @@
+{
+  "vid": "3886cafe-668c-11e2-94b8-1c4bd681f0cf",
+  "topic": "django-cms -- XSS Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py-django-cms"
+      ],
+      "range": [
+        {
+          "lt": "2.3.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cross-site scripting (XSS) vulnerability</p>\n\t<blockquote cite=\"https://www.django-cms.org/en/blog/2012/12/04/2-3-5-security-release/\">\n\t  <p>Jonas Obrist reports: The security issue allows users with limited\n\t    admin access to elevate their privileges through XSS injection\n\t    using the page_attribute template tag. Only users with admin access\n\t    and the permission to edit at least one django CMS page object\n\t    could exploit this vulnerability. Websites that do not use the\n\t    page_attribute template tag are not affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.django-cms.org/en/blog/2012/12/04/2-3-5-security-release/"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-12-04",
+    "entry": "2013-01-25"
+  }
+}

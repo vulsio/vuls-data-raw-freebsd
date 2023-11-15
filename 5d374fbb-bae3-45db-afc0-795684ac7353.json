@@ -1,0 +1,43 @@
+{
+  "vid": "5d374fbb-bae3-45db-afc0-795684ac7353",
+  "topic": "jenkins -- Path traversal vulnerability allows access to files outside plugin resources",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "le": "2.106"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "le": "2.89.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins developers report:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2018-02-14/\">\n\t  <p>Jenkins did not properly prevent specifying relative paths that\n\t  escape a base directory for URLs accessing plugin resource files. This\n\t  allowed users with Overall/Read permission to download files from the\n\t  Jenkins master they should not have access to.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jenkins.io/security/advisory/2018-02-14/",
+      "https://jenkins.io/blog/2018/02/14/security-updates/"
+    ],
+    "cvename": [
+      "CVE-2018-6356"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-02-14",
+    "entry": "2018-02-14"
+  }
+}

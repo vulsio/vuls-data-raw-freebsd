@@ -1,0 +1,37 @@
+{
+  "vid": "e4dac715-c818-11df-a92c-0015587e2cc1",
+  "topic": "squid -- Denial of service vulnerability in request handling",
+  "affects": [
+    {
+      "name": [
+        "squid"
+      ],
+      "range": [
+        {
+          "lt": "3.0.25_3",
+          "ge": "3.0.1"
+        },
+        {
+          "lt": "3.1.8",
+          "ge": "3.1.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Squid security advisory 2010:3 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2010_3.txt\">\n\t  <p>Due to an internal error in string handling Squid is\n\t    vulnerable to a denial of service attack when processing\n\t    specially crafted requests.</p>\n\t  <p>This problem allows any trusted client to perform a\n\t    denial of service attack on the Squid service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.squid-cache.org/Advisories/SQUID-2010_3.txt"
+    ],
+    "cvename": [
+      "CVE-2010-3072"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-08-30",
+    "entry": "2010-09-24"
+  }
+}

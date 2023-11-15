@@ -1,0 +1,34 @@
+{
+  "vid": "aa4f86af-3172-11e2-ad21-20cf30e32f6d",
+  "topic": "YUI JavaScript library -- JavaScript injection exploits in Flash components",
+  "affects": [
+    {
+      "name": [
+        "yahoo-ui"
+      ],
+      "range": [
+        {
+          "le": "2.8.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The YUI team reports:</p>\n\t<blockquote cite=\"http://yuilibrary.com/support/20121030-vulnerability/\">\n\t  <h1>Vulnerability in YUI 2.4.0 through YUI 2.9.0</h1>\n\t  <p>A XSS vulnerability has been discovered in some YUI 2 .swf files\n\t    from versions 2.4.0 through 2.9.0. This defect allows JavaScript\n\t    injection exploits to be created against domains that host affected\n\t    YUI .swf files.</p>\n\t  <p>If your site loads YUI 2 from a CDN (yui.yahooapis.com,\n\t     ajax.googleapis.com, etc.) and not from your own domain, you\n\t     are not affected. YUI 3 is not affected by this issue.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://yuilibrary.com/support/20121030-vulnerability/"
+    ],
+    "cvename": [
+      "CVE-2012-5881",
+      "CVE-2012-5882"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-10-30",
+    "entry": "2012-11-27",
+    "modified": "2012-11-29"
+  }
+}

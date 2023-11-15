@@ -1,0 +1,33 @@
+{
+  "vid": "80adc394-ddaf-11e5-b2bd-002590263bf5",
+  "topic": "xen-kernel -- VMX: intercept issue with INVLPG on non-canonical address",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5.2_2",
+          "ge": "3.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-168.html\">\n\t  <p>While INVLPG does not cause a General Protection Fault when used on\n\t    a non-canonical address, INVVPID in its \"individual address\"\n\t    variant, which is used to back the intercepted INVLPG in certain\n\t    cases, fails in such cases. Failure of INVVPID results in a\n\t    hypervisor bug check.</p>\n\t  <p>A malicious guest can crash the host, leading to a Denial of\n\t    Service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-168.html"
+    ],
+    "cvename": [
+      "CVE-2016-1571"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-20",
+    "entry": "2016-02-28"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "vid": "d86becfe-05a4-11ee-9d4a-080027eda32c",
+  "topic": "Python -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "python37"
+      ],
+      "range": [
+        {
+          "lt": "3.7.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python38"
+      ],
+      "range": [
+        {
+          "lt": "3.8.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python39"
+      ],
+      "range": [
+        {
+          "lt": "3.9.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python310"
+      ],
+      "range": [
+        {
+          "lt": "3.10.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python311"
+      ],
+      "range": [
+        {
+          "lt": "3.11.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://pythoninsider.blogspot.com/2023/06/python-3114-31012-3917-3817-3717-and.html\">\n\t  <p>gh-103142: The version of OpenSSL used in Windows and Mac installers has been upgraded\n\t    to 1.1.1u to address CVE-2023-2650, CVE-2023-0465, CVE-2023-0466, CVE-2023-0464, as well\n\t    as CVE-2023-0286, CVE-2022-4303, and CVE-2022-4303 fixed previously in 1.1.1t (gh-101727).</p>\n\t  <p>gh-102153: urllib.parse.urlsplit() now strips leading C0 control and space characters\n\t    following the specification for URLs defined by WHATWG in response to CVE-2023-24329.</p>\n\t  <p>gh-99889: Fixed a security in flaw in uu.decode() that could allow for directory traversal\n\t    based on the input if no out_file was specified.</p>\n\t  <p>gh-104049: Do not expose the local on-disk location in directory indexes produced by\n\t    http.client.SimpleHTTPRequestHandler.</p>\n\t  <p>gh-101283: subprocess.Popen now uses a safer approach to find cmd.exe when launching with\n\t    shell=True.</p>\n\t  <p>gh-103935: trace.__main__ now uses io.open_code() for files to be executed instead of raw open().</p>\n\t  <p>gh-102953: The extraction methods in tarfile, and shutil.unpack_archive(), have a new filter\n\t    argument that allows limiting tar features than may be surprising or dangerous, such as creating\n\t    files outside the destination directory. </p>\n\t  <p>gh-102126: Fixed a deadlock at shutdown when clearing thread states if any finalizer tries to\n\t    acquire the runtime head lock.</p>\n\t  <p>gh-100892: Fixed a crash due to a race while iterating over thread states in clearing\n\t    threading.local.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://pythoninsider.blogspot.com/2023/06/python-3114-31012-3917-3817-3717-and.html"
+    ],
+    "cvename": [
+      "CVE-2022-4303",
+      "CVE-2023-2650",
+      "CVE-2023-0286",
+      "CVE-2023-0464",
+      "CVE-2023-0465",
+      "CVE-2023-0466",
+      "CVE-2023-24329"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-06-08",
+    "entry": "2023-06-08"
+  }
+}

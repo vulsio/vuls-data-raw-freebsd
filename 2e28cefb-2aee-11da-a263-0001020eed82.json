@@ -1,0 +1,131 @@
+{
+  "vid": "2e28cefb-2aee-11da-a263-0001020eed82",
+  "topic": "firefox & mozilla -- command line URL shell command injection",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.0.7,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.0.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7.12,2"
+        },
+        {
+          "ge": "1.8.*,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla-devel"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "netscape7"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-linux-mozillafirebird",
+        "el-linux-mozillafirebird",
+        "ja-linux-mozillafirebird-gtk1",
+        "ja-mozillafirebird-gtk2",
+        "linux-mozillafirebird",
+        "ru-linux-mozillafirebird",
+        "zhCN-linux-mozillafirebird",
+        "zhTW-linux-mozillafirebird"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-linux-netscape",
+        "de-netscape7",
+        "fr-linux-netscape",
+        "fr-netscape7",
+        "ja-linux-netscape",
+        "ja-netscape7",
+        "linux-netscape",
+        "linux-phoenix",
+        "mozilla+ipv6",
+        "mozilla-embedded",
+        "mozilla-firebird",
+        "mozilla-gtk1",
+        "mozilla-gtk2",
+        "mozilla-gtk",
+        "mozilla-thunderbird",
+        "phoenix",
+        "pt_BR-netscape7"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/16869/\">\n\t  <p>Peter Zelezny has discovered a vulnerability in Firefox,\n\t    which can be exploited by malicious people to compromise a\n\t    user's system.</p>\n\t  <p>The vulnerability is caused due to the shell script used\n\t    to launch Firefox parsing shell commands that are enclosed\n\t    within backticks in the URL provided via the command\n\t    line. This can e.g. be exploited to execute arbitrary\n\t    shell commands by tricking a user into following a\n\t    malicious link in an external application which uses\n\t    Firefox as the default browser.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=307185",
+      "http://secunia.com/advisories/16869/",
+      "http://www.mozilla.org/security/announce/mfsa2005-59.html"
+    ],
+    "cvename": [
+      "CVE-2005-2968"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-09-06",
+    "entry": "2005-09-22",
+    "modified": "2005-10-26"
+  }
+}

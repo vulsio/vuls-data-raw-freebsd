@@ -1,0 +1,44 @@
+{
+  "vid": "fd376b8b-41e1-11d8-b096-0020ed76ef5a",
+  "topic": "Buffer overflow in INN control message handling",
+  "affects": [
+    {
+      "name": [
+        "inn"
+      ],
+      "range": [
+        {
+          "lt": "2.4.1",
+          "ge": "2.4.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "inn-stable"
+      ],
+      "range": [
+        {
+          "lt": "20031022_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A small, fixed-size stack buffer is used to construct a\n\t  filename based on a received control message.  This could\n\t  result in a stack buffer overflow.</p>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=inn-workers&m=107351974008605",
+        "msgid": "87d69v7222.fsf@windlord.stanford.edu"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-01-07",
+    "entry": "2004-01-08",
+    "modified": "2004-10-21"
+  }
+}

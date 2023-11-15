@@ -1,0 +1,113 @@
+{
+  "vid": "c4f067b9-dc4a-11df-8e32-000f20797ede",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "3.6.11,1",
+          "gt": "3.6.*,1"
+        },
+        {
+          "lt": "3.5.14,1",
+          "gt": "3.5.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "1.9.2.11",
+          "gt": "1.9.2.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "3.6.11,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.5.14"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.0.9",
+          "gt": "2.0.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "3.0.9",
+          "ge": "3.0"
+        },
+        {
+          "lt": "3.1.5",
+          "ge": "3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2010-64 Miscellaneous memory safety hazards (rv:1.9.2.11/ 1.9.1.14)</p>\n\t  <p>MFSA 2010-65 Buffer overflow and memory corruption using document.write</p>\n\t  <p>MFSA 2010-66 Use-after-free error in nsBarProp</p>\n\t  <p>MFSA 2010-67 Dangling pointer vulnerability in LookupGetterOrSetter</p>\n\t  <p>MFSA 2010-68 XSS in gopher parser when parsing hrefs</p>\n\t  <p>MFSA 2010-69 Cross-site information disclosure via modal calls</p>\n\t  <p>MFSA 2010-70 SSL wildcard certificate matching IP addresses</p>\n\t  <p>MFSA 2010-71 Unsafe library loading vulnerabilities</p>\n\t  <p>MFSA 2010-72 Insecure Diffie-Hellman key exchange</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-64.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-65.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-66.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-67.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-68.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-69.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-70.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-71.html",
+      "http://www.mozilla.org/security/announce/2010/mfsa2010-72.html"
+    ],
+    "cvename": [
+      "CVE-2010-3170",
+      "CVE-2010-3173",
+      "CVE-2010-3174",
+      "CVE-2010-3175",
+      "CVE-2010-3176",
+      "CVE-2010-3177",
+      "CVE-2010-3178",
+      "CVE-2010-3179",
+      "CVE-2010-3180",
+      "CVE-2010-3181",
+      "CVE-2010-3182",
+      "CVE-2010-3183"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-10-19",
+    "entry": "2010-10-20"
+  }
+}

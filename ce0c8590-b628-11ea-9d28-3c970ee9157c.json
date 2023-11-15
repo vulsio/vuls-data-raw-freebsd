@@ -1,0 +1,34 @@
+{
+  "vid": "ce0c8590-b628-11ea-9d28-3c970ee9157c",
+  "topic": "CUPS -- memory corruption",
+  "affects": [
+    {
+      "name": [
+        "cups"
+      ],
+      "range": [
+        {
+          "lt": "2.3.3_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Apple reports:</p>\n\t<blockquote cite=\"https://github.com/apple/cups/releases/tag/v2.3.3\">\n\t  <ul>\n\t    <li>CVE-2019-8842: The ippReadIO function may under-read an\n\t      extension.</li>\n\t    <li>CVE-2020-3898: The ppdOpen function did not handle invalid UI\n\t      constraint. ppdcSource::get_resolution function did not handle\n\t      invalid resolution strings. An application may be able to gain\n\t      elevated privileges.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/apple/cups/releases/tag/v2.3.3",
+      "https://support.apple.com/en-us/HT211100"
+    ],
+    "cvename": [
+      "CVE-2019-8842",
+      "CVE-2020-3898"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-28",
+    "entry": "2020-06-24"
+  }
+}

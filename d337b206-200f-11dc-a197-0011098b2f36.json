@@ -1,0 +1,35 @@
+{
+  "vid": "d337b206-200f-11dc-a197-0011098b2f36",
+  "topic": "xpcd -- buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "xpcd"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Debian Project reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-676\">\n\t  <p>Erik Sjolund discovered a buffer overflow in pcdsvgaview,\n\t    an SVGA PhotoCD viewer.  xpcd-svga is part of xpcd and uses\n\t    svgalib to display graphics on the Linux console for which\n\t    root permissions are required.  A malicious user could\n\t    overflow a fixed-size buffer and may cause the program to\n\t    execute arbitrary code with elevated privileges.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.debian.org/security/2005/dsa-676"
+    ],
+    "cvename": [
+      "CVE-2005-0074"
+    ],
+    "bid": [
+      "12523"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-11",
+    "entry": "2007-06-21"
+  }
+}

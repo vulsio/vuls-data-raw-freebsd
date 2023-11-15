@@ -1,0 +1,61 @@
+{
+  "vid": "27c331d5-64c7-11d8-80e3-0020ed76ef5a",
+  "topic": "Vulnerabilities in H.323 implementations",
+  "affects": [
+    {
+      "name": [
+        "pwlib"
+      ],
+      "range": [
+        {
+          "lt": "1.5.0_5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk"
+      ],
+      "range": [
+        {
+          "le": "0.7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openh323"
+      ],
+      "range": [
+        {
+          "lt": "1.12.0_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The <a href=\"http://www.niscc.gov.uk/\">NISCC</a> and the <a href=\"http://www.ee.oulu.fi/research/ouspg/\">OUSPG</a>\n\t  developed a test suite for the H.323 protocol.  This test\n\t  suite has uncovered vulnerabilities in several H.323\n\t  implementations with impacts ranging from denial-of-service\n\t  to arbitrary code execution.</p>\n\t<p>In the FreeBSD Ports Collection, `pwlib' is directly\n\t  affected.  Other applications such as `asterisk' and\n\t  `openh323' incorporate `pwlib' statically and so are also\n\t  independently affected.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.uniras.gov.uk/vuls/2004/006489/h323.htm",
+      "http://www.ee.oulu.fi/research/ouspg/protos/testing/c07/h2250v4/index.html",
+      "http://www.southeren.com/blog/archives/000055.html"
+    ],
+    "cvename": [
+      "CVE-2004-0097"
+    ],
+    "cert_sa": [
+      "CA-2004-01"
+    ],
+    "cert_vu": [
+      "749342"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-01-13",
+    "entry": "2004-02-22",
+    "modified": "2004-06-08"
+  }
+}

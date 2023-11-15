@@ -1,0 +1,33 @@
+{
+  "vid": "f1deed23-27ec-11e5-a4a5-002590263bf5",
+  "topic": "xen-tools -- xl command line config handling stack overflow",
+  "affects": [
+    {
+      "name": [
+        "xen-tools"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_8",
+          "ge": "4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-137.html\">\n\t  <p>The xl command line utility mishandles long configuration values\n\t    when passed as command line arguments, with a buffer overrun.</p>\n\t  <p>A semi-trusted guest administrator or controller, who is intended\n\t    to be able to partially control the configuration settings for a\n\t    domain, can escalate their privileges to that of the whole host.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-137.html"
+    ],
+    "cvename": [
+      "CVE-2015-3259"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-07",
+    "entry": "2015-07-11"
+  }
+}

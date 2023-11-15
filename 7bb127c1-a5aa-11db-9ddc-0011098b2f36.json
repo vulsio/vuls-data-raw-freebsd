@@ -1,0 +1,37 @@
+{
+  "vid": "7bb127c1-a5aa-11db-9ddc-0011098b2f36",
+  "topic": "joomla -- multiple remote vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "joomla"
+      ],
+      "range": [
+        {
+          "lt": "1.0.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/23563/\">\n\t  <p>Some vulnerabilities have been reported in Joomla!, where some\n\t    have unknown impacts and one can be exploited by malicious people\n\t    to conduct cross-site scripting attacks.</p>\n\t  <ol>\n\t    <li>Input passed to an unspecified parameter is not properly\n\t      sanitised before being returned to the user.  This can be\n\t      exploited to execute arbitrary HTML and script code in a\n\t      user's browser session in context of an affected site.</li>\n\t    <li>The vulnerabilities are caused due to unspecified errors\n\t      in Joomla!.  The vendor describes them as \"several low level\n\t      security issues\". No further information is currently\n\t      available.</li>\n\t    </ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/23563/"
+    ],
+    "cvename": [
+      "CVE-2006-6832",
+      "CVE-2006-6833",
+      "CVE-2006-6834"
+    ],
+    "bid": [
+      "21810"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-12-29",
+    "entry": "2007-01-17"
+  }
+}

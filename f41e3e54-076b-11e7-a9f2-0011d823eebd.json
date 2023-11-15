@@ -1,0 +1,39 @@
+{
+  "vid": "f41e3e54-076b-11e7-a9f2-0011d823eebd",
+  "topic": "mbed TLS (PolarSSL) -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mbedtls"
+      ],
+      "range": [
+        {
+          "lt": "2.4.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "polarssl13"
+      ],
+      "range": [
+        {
+          "lt": "1.3.19"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Janos Follath reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2017-01\">\n\t  <ul>\n\t    <li>If a malicious peer supplies a certificate with a specially\n\t      crafted secp224k1 public key, then an attacker can cause the\n\t      server or client to attempt to free block of memory held on\n\t      stack.  Depending on the platform, this could result in a Denial\n\t      of Service (client crash) or potentially could be exploited to\n\t      allow remote code execution with the same privileges as the host\n\t      application.</li>\n\t    <li>If the client and the server both support MD5 and the client\n\t      can be tricked to authenticate to a malicious server, then the\n\t      malicious server can impersonate the client. To launch this man\n\t      in the middle attack, the adversary has to compute a\n\t      chosen-prefix MD5 collision in real time. This is very expensive\n\t      computationally, but can be practical.  Depending on the\n\t      platform, this could result in a Denial of Service (client crash)\n\t      or potentially could be exploited to allow remote code execution\n\t      with the same privileges as the host application.</li>\n\t    <li>A bug in the logic of the parsing of a PEM encoded Certificate\n\t      Revocation List in mbedtls_x509_crl_parse() can result in an\n\t      infinite loop. In versions before 1.3.10 the same bug results in\n\t      an infinite recursion stack overflow that usually crashes the\n\t      application.  Methods and means of acquiring the CRLs is not part\n\t      of the TLS handshake and in the strict TLS setting this\n\t      vulnerability cannot be triggered remotely. The vulnerability\n\t      cannot be triggered unless the application explicitly calls\n\t      mbedtls_x509_crl_parse() or mbedtls_x509_crl_parse_file()on a PEM\n\t      formatted CRL of untrusted origin. In which case the\n\t      vulnerability can be exploited to launch a denial of service\n\t      attack against the application.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2017-01"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-03-11",
+    "entry": "2017-03-12"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "50744596-368f-11d9-a9e7-0001020eed82",
+  "topic": "proxytunnel -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "proxytunnel"
+      ],
+      "range": [
+        {
+          "lt": "1.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Gentoo Linux Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200411-07.xml\">\n\t  <p>Florian Schilhabel of the Gentoo Linux Security Audit\n\t    project found a format string vulnerability in\n\t    Proxytunnel. When the program is started in daemon mode\n\t    (-a [port]), it improperly logs invalid proxy answers to\n\t    syslog.</p>\n\t  <p>A malicious remote server could send specially-crafted\n\t    invalid answers to exploit the format string\n\t    vulnerability, potentially allowing the execution of\n\t    arbitrary code on the tunnelling host with the rights of\n\t    the Proxytunnel process.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://proxytunnel.sourceforge.net/news.html",
+      "http://www.gentoo.org/security/en/glsa/glsa-200411-07.xml"
+    ],
+    "cvename": [
+      "CVE-2004-0992"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-01",
+    "entry": "2004-11-15"
+  }
+}

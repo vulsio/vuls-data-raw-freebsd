@@ -1,0 +1,47 @@
+{
+  "vid": "56ba8728-f987-11de-b28d-00215c6a37bb",
+  "topic": "PEAR -- Net_Ping and Net_Traceroute remote arbitrary command injection",
+  "affects": [
+    {
+      "name": [
+        "pear-Net_Ping"
+      ],
+      "range": [
+        {
+          "lt": "2.4.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "pear-Net_Traceroute"
+      ],
+      "range": [
+        {
+          "lt": "0.21.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PEAR Security Advisory reports:</p>\n\t<blockquote cite=\"http://blog.pear.php.net/2009/11/14/net_traceroute-and-net_ping-security-advisory/\">\n\t  <p>Multiple remote arbitrary command injections have been\n\t    found in the Net_Ping and Net_Traceroute.</p>\n\t  <p>When input from forms are used directly, the attacker\n\t    could pass variables that would allow him to execute\n\t    remote arbitrary command injections.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://pear.php.net/advisory20091114-01.txt"
+    ],
+    "cvename": [
+      "CVE-2009-4024",
+      "CVE-2009-4025"
+    ],
+    "bid": [
+      "37093",
+      "37094"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-11-14",
+    "entry": "2010-01-04"
+  }
+}

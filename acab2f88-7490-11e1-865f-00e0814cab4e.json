@@ -1,0 +1,29 @@
+{
+  "vid": "acab2f88-7490-11e1-865f-00e0814cab4e",
+  "topic": "Apache Traffic Server -- heap overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "trafficserver"
+      ],
+      "range": [
+        {
+          "lt": "3.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CERT-FI reports:</p>\n\t<blockquote cite=\"https://www.cert.fi/en/reports/2012/vulnerability612884.html\">\n\t  <p>A heap overflow vulnerability has been found in the HTTP\n\t    (Hypertext Transfer Protocol) protocol handling of Apache\n\t    Traffic Server. The vulnerability allows an attacker to cause\n\t    a denial of service or potentially to execute his own code by\n\t    sending a specially modified HTTP message to an affected\n\t    server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-0256"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-03-22",
+    "entry": "2012-03-24"
+  }
+}

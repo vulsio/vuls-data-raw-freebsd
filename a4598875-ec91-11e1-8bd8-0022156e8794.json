@@ -1,0 +1,29 @@
+{
+  "vid": "a4598875-ec91-11e1-8bd8-0022156e8794",
+  "topic": "rssh -- configuration restrictions bypass",
+  "affects": [
+    {
+      "name": [
+        "rssh"
+      ],
+      "range": [
+        {
+          "lt": "2.3.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Derek Martin (rssh maintainer) reports:</p>\n\t<blockquote cite=\"http://www.pizzashack.org/rssh/security.shtml\">\n\t  <p>John Barber reported a problem where, if the system\n\t  administrator misconfigures rssh by providing too few access\n\t  bits in the configuration file, the user will be given\n\t  default permissions (scp) to the entire system, potentially\n\t  circumventing any configured chroot.  Fixing this required a\n\t  behavior change: in the past, using rssh without a config\n\t  file would give all users default access to use scp on an\n\t  unchrooted system.  In order to correct the reported bug,\n\t  this feature has been eliminated, and you must now have a\n\t  valid configuration file.  If no config file exists, all\n\t  users will be locked out.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.pizzashack.org/rssh/security.shtml"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-08-01",
+    "entry": "2012-08-22"
+  }
+}

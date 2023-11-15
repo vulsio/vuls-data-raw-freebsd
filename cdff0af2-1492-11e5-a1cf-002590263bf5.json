@@ -1,0 +1,69 @@
+{
+  "vid": "cdff0af2-1492-11e5-a1cf-002590263bf5",
+  "topic": "php5 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php5-dom",
+        "php5-ftp",
+        "php5-gd",
+        "php5-pgsql"
+      ],
+      "range": [
+        {
+          "lt": "5.4.42"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55-dom",
+        "php55-ftp",
+        "php55-gd",
+        "php55-pgsql"
+      ],
+      "range": [
+        {
+          "lt": "5.5.26"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56-dom",
+        "php56-ftp",
+        "php56-gd",
+        "php56-psql"
+      ],
+      "range": [
+        {
+          "lt": "5.6.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP project reports:</p>\n\t<blockquote cite=\"http://www.php.net/ChangeLog-5.php\">\n\t  <p>DOM and GD:</p>\n\t  <ul>\n\t    <li>Fixed bug #69719 (Incorrect handling of paths with NULs).</li>\n\t  </ul>\n\t  <p>FTP:</p>\n\t  <ul>\n\t    <li>Improved fix for bug #69545 (Integer overflow in ftp_genlist()\n\t       resulting in heap overflow). (CVE-2015-4643)</li>\n\t  </ul>\n\t  <p>Postgres:</p>\n\t  <ul>\n\t    <li>Fixed bug #69667 (segfault in php_pgsql_meta_data).\n\t      (CVE-2015-4644)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.php.net/ChangeLog-5.php#5.4.42",
+      "http://www.php.net/ChangeLog-5.php#5.5.26",
+      "http://www.php.net/ChangeLog-5.php#5.6.10"
+    ],
+    "cvename": [
+      "CVE-2015-4643",
+      "CVE-2015-4644"
+    ],
+    "mlist": [
+      {
+        "text": "http://openwall.com/lists/oss-security/2015/06/18/3"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-11",
+    "entry": "2015-06-23"
+  }
+}

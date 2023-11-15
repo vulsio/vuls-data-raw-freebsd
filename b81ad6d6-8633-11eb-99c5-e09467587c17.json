@@ -1,0 +1,34 @@
+{
+  "vid": "b81ad6d6-8633-11eb-99c5-e09467587c17",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "89.0.4389.90"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2021/03/stable-channel-update-for-desktop_12.html\">\n\t  <p>This release includes 5 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1167357] High CVE-2021-21191: Use after free in WebRTC.\n\t      Reported by raven (@raid_akame)  on 2021-01-15</li>\n\t    <li>[1181387] High CVE-2021-21192: Heap buffer overflow in tab\n\t      groups. Reported by Abdulrahman Alqabandi, Microsoft Browser\n\t      Vulnerability Research on 2021-02-23</li>\n\t    <li>[1186287] High CVE-2021-21193: Use after free in Blink.\n\t      Reported by Anonymous on 2021-03-09</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2021/03/stable-channel-update-for-desktop_12.html"
+    ],
+    "cvename": [
+      "CVE-2021-11191",
+      "CVE-2021-11192",
+      "CVE-2021-11193"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-03-12",
+    "entry": "2021-03-16"
+  }
+}

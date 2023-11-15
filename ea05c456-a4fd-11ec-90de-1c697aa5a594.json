@@ -1,0 +1,95 @@
+{
+  "vid": "ea05c456-a4fd-11ec-90de-1c697aa5a594",
+  "topic": "OpenSSL -- Infinite loop in BN_mod_sqrt parsing certificates",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.1.1n,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl-quictls"
+      ],
+      "range": [
+        {
+          "lt": "3.0.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libressl"
+      ],
+      "range": [
+        {
+          "lt": "3.4.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libressl-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.5.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "13.0_8",
+          "ge": "13.0"
+        },
+        {
+          "lt": "12.3_3",
+          "ge": "12.3"
+        },
+        {
+          "lt": "12.2_14",
+          "ge": "12.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20220315.txt\">\n\t<p>Infinite loop in BN_mod_sqrt() reachable when parsing certificates\n\t  (High)</p>\n\t<p>The BN_mod_sqrt() function, which computes a modular square root,\n\t  contains a bug that can cause it to loop forever for non-prime\n\t  moduli.</p>\n\t<p>Internally this function is used when parsing certificates that\n\t  contain elliptic curve public keys in compressed form or explicit\n\t  elliptic curve parameters with a base point encoded in compressed\n\t  form.</p>\n\t<p>It is possible to trigger the infinite loop by crafting a\n\t  certificate that has invalid explicit curve parameters.</p>\n\t<p>Since certificate parsing happens prior to verification of the\n\t  certificate signature, any process that parses an externally\n\t  supplied certificate may thus be subject to a denial of service\n\t  attack. The infinite loop can also be reached when parsing crafted\n\t  private keys as they can contain explicit elliptic curve\n\t  parameters.</p>\n\t<p>Thus vulnerable situations include:</p>\n\t<ul>\n\t  <li>TLS clients consuming server certificates</li>\n\t  <li>TLS servers consuming client certificates</li>\n\t  <li>Hosting providers taking certificates or private keys from\n\t    customers</li>\n\t  <li>Certificate authorities parsing certification requests from\n\t    subscribers</li>\n\t  <li>Anything else which parses ASN.1 elliptic curve parameters</li>\n\t</ul>\n\t<p>Also any other applications that use the BN_mod_sqrt() where the\n\t  attacker can control the parameter values are vulnerable to this DoS\n\t  issue.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20220315.txt"
+    ],
+    "cvename": [
+      "CVE-2022-0778"
+    ],
+    "freebsd_sa": [
+      "SA-22:03.openssl"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-03-15",
+    "entry": "2022-03-16",
+    "modified": "2022-03-16"
+  }
+}

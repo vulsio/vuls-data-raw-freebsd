@@ -1,0 +1,33 @@
+{
+  "vid": "508da89c-78b9-11ed-854f-5404a68ad561",
+  "topic": "traefik -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "traefik"
+      ],
+      "range": [
+        {
+          "lt": "2.9.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Traefik project reports:</p>\n\t<blockquote cite=\"https://github.com/traefik/traefik/releases/tag/v2.9.6\">\n\t  <p>This update is recommended for all traefik users and provides following important security fixes:</p>\n\t  <ul>\n\t    <li>CVE-2022-23469: Authorization header displayed in the debug logs</li>\n\t    <li>CVE-2022-46153: Routes exposed with an empty TLSOption in traefik</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/traefik/traefik/releases/tag/v2.9.6"
+    ],
+    "cvename": [
+      "CVE-2022-23469",
+      "CVE-2022-46153"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-12-08",
+    "entry": "2022-12-10"
+  }
+}

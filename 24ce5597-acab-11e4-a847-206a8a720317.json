@@ -1,0 +1,55 @@
+{
+  "vid": "24ce5597-acab-11e4-a847-206a8a720317",
+  "topic": "krb5 -- Vulnerabilities in kadmind, libgssrpc, gss_process_context_token VU#540092",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.13_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "krb5-112"
+      ],
+      "range": [
+        {
+          "lt": "1.12.2_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "krb5-111"
+      ],
+      "range": [
+        {
+          "lt": "1.11.5_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SO-AND-SO reports:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2015-001.txt\">\n\t  <p>CVE-2014-5352: In the MIT krb5 libgssapi_krb5 library, after\n\t     gss_process_context_token() is used to process a valid context\n\t     deletion token, the caller is left with a security context handle\n\t     containing a dangling pointer.  Further uses of this handle will\n\t     result in use-after-free and double-free memory access violations.\n\t     libgssrpc server applications such as kadmind are vulnerable as\n\t     they can be instructed to call gss_process_context_token().</p>\n\t  <p>CVE-2014-9421: If the MIT krb5 kadmind daemon receives invalid XDR\n\t     data from an authenticated user, it may perform use-after-free and\n\t     double-free memory access violations while cleaning up the partial\n\t     deserialization results.  Other libgssrpc server applications may\n\t     also be vulnerable if they contain insufficiently defensive XDR\n\t     functions.</p>\n\t  <p>CVE-2014-9422: The MIT krb5 kadmind daemon incorrectly accepts\n\t     authentications to two-component server principals whose first\n\t     component is a left substring of \"kadmin\" or whose realm is a left\n\t     prefix of the default realm.</p>\n\t  <p>CVE-2014-9423: libgssrpc applications including kadmind output\n\t     four or eight bytes of uninitialized memory to the network as\n\t     part of an unused \"handle\" field in replies to clients.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2015-001.txt"
+    ],
+    "cvename": [
+      "CVE-2014-5352",
+      "CVE-2014-9421",
+      "CVE-2014-9422",
+      "CVE-2014-9423"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-02-03",
+    "entry": "2015-02-04"
+  }
+}

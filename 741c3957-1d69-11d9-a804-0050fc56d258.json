@@ -1,0 +1,32 @@
+{
+  "vid": "741c3957-1d69-11d9-a804-0050fc56d258",
+  "topic": "icecast -- HTTP header overflow",
+  "affects": [
+    {
+      "name": [
+        "icecast2"
+      ],
+      "range": [
+        {
+          "lt": "2.0.2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>It is possible to execute remote code simply using\n\tHTTP request plus 31 headers followed by a shellcode that will be\n\texecuted directly.</p>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=109646043512722",
+        "msgid": "20040928184943.0a82b6f6.aluigi@autistici.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-29",
+    "entry": "2004-10-13"
+  }
+}

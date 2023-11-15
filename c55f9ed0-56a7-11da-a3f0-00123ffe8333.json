@@ -1,0 +1,31 @@
+{
+  "vid": "c55f9ed0-56a7-11da-a3f0-00123ffe8333",
+  "topic": "phpmyadmin -- HTTP Response Splitting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.6.4.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A phpMyAdmin security advisory reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-6\">\n\t  <p>Some scripts in phpMyAdmin are vulnerable to an\n\t    HTTP Response Splitting attack.</p>\n\t  <p>Severity:</p>\n\t  <p>We consider these vulnerabilities to be serious.\n\t    However, they can only be triggered on systems running\n\t    with register_globals = on.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-6",
+      "http://secunia.com/advisories/17578/",
+      "http://www.fitsec.com/advisories/FS-05-02.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-11-15",
+    "entry": "2005-11-16"
+  }
+}

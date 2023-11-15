@@ -1,0 +1,32 @@
+{
+  "vid": "0bf376b7-cc6b-11e2-a424-14dae938ec40",
+  "topic": "net/openafs -- buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "openafs"
+      ],
+      "range": [
+        {
+          "lt": "1.6.2.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Nickolai Zeldovich reports:</p>\n\t<blockquote cite=\"http://www.openafs.org/pages/security/OPENAFS-SA-2013-001.txt\">\n\t  <p>An attacker with the ability to manipulate AFS directory ACLs may\n\t  crash the fileserver hosting that volume.\n\t  In addition, once a corrupt ACL is placed on a fileserver, its\n\t  existence may crash client utilities manipulating ACLs\n\t  on that server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openafs.org/pages/security/OPENAFS-SA-2013-001.txt"
+    ],
+    "cvename": [
+      "CVE-2013-1794"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-02-27",
+    "entry": "2013-06-03"
+  }
+}

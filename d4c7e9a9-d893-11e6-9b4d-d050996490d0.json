@@ -1,0 +1,79 @@
+{
+  "vid": "d4c7e9a9-d893-11e6-9b4d-d050996490d0",
+  "topic": "BIND -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "bind99"
+      ],
+      "range": [
+        {
+          "lt": "9.9.9P5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind910"
+      ],
+      "range": [
+        {
+          "lt": "9.10.4P5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind911"
+      ],
+      "range": [
+        {
+          "lt": "9.11.0P2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bind9-devel"
+      ],
+      "range": [
+        {
+          "le": "9.12.0.a.2016.12.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.0",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01439/0\">\n\t  <p>A malformed query response received by a recursive\n\t    server in response to a query of RTYPE ANY could\n\t    trigger an assertion failure while named is attempting\n\t    to add the RRs in the query response to the cache.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01440/0\">\n\t  <p>Depending on the type of query and the EDNS options\n\t    in the query they receive, DNSSEC-enabled authoritative\n\t    servers are expected to include RRSIG and other RRsets\n\t    in their responses to recursive servers.\n\t    DNSSEC-validating servers will also make specific queries\n\t    for DS and other RRsets.\n\t    Whether DNSSEC-validating or not, an error in processing\n\t    malformed query responses that contain DNSSEC-related\n\t    RRsets that are inconsistent with other RRsets in the\n\t    same query response can trigger an assertion failure.\n\t    Although the combination of properties which triggers\n\t    the assertion should not occur in normal traffic, it\n\t    is potentially possible for the assertion to be triggered\n\t    deliberately by an attacker sending a specially-constructed\n\t    answer.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01441/0\">\n\t  <p>An unusually-formed answer containing a DS resource\n\t    record could trigger an assertion failure.  While the\n\t    combination of properties which triggers the assertion\n\t    should not occur in normal traffic, it is potentially\n\t    possible for the assertion to be triggered deliberately\n\t    by an attacker sending a specially-constructed answer\n\t    having the required properties.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01442/0\">\n\t  <p>An error in handling certain queries can cause an\n\t    assertion failure when a server is using the\n\t    nxdomain-redirect feature to cover a zone for which\n\t    it is also providing authoritative service.\n\t    A vulnerable server could be intentionally stopped\n\t    by an attacker if it was using a configuration that\n\t    met the criteria for the vulnerability and if the\n\t    attacker could cause it to accept a query that\n\t    possessed the required attributes.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/article/AA-01439/0",
+      "https://kb.isc.org/article/AA-01440/0",
+      "https://kb.isc.org/article/AA-01441/0",
+      "https://kb.isc.org/article/AA-01442/0"
+    ],
+    "cvename": [
+      "CVE-2016-9131",
+      "CVE-2016-9147",
+      "CVE-2016-9444",
+      "CVE-2016-9778"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-01-11",
+    "entry": "2017-01-12"
+  }
+}

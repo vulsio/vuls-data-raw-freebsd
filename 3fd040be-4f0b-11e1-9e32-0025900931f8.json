@@ -1,0 +1,35 @@
+{
+  "vid": "3fd040be-4f0b-11e1-9e32-0025900931f8",
+  "topic": "php -- arbitrary remote code execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.3.10",
+          "ge": "5.3.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/47806/\">\n\t  <p>A vulnerability has been reported in PHP, which can be exploited\n\t    by malicious people to compromise a vulnerable system.</p>\n\t  <p>The vulnerability is caused due to a logic error within the\n\t    \"php_register_variable_ex()\" function (php_variables.c) when\n\t    hashing form posts and updating a hash table, which can be\n\t    exploited to execute arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.php.net/archive/2012.php#id2012-02-02-1",
+      "http://secunia.com/advisories/47806/"
+    ],
+    "cvename": [
+      "CVE-2012-0830"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-02-02",
+    "entry": "2012-02-04",
+    "modified": "2012-02-06"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "e4fcf020-0447-11e0-becc-0022156e8794",
+  "topic": "exim -- local privilege escalation",
+  "affects": [
+    {
+      "name": [
+        "exim"
+      ],
+      "range": [
+        {
+          "lt": "4.73"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>David Woodhouse reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=661756#c3\">\n\t  <p>Secondly a privilege escalation where the trusted 'exim'\n\t    user is able to tell Exim to use arbitrary config files,\n\t    in which further ${run ...} commands will be invoked as\n\t    root.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.exim.org/lurker/message/20101209.022730.dbb6732d.en.html",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=661756#c3"
+    ],
+    "cvename": [
+      "CVE-2010-4345"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-12-10",
+    "entry": "2011-01-08"
+  }
+}

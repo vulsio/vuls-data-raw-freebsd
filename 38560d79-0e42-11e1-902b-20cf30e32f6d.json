@@ -1,0 +1,32 @@
+{
+  "vid": "38560d79-0e42-11e1-902b-20cf30e32f6d",
+  "topic": "Apache APR -- DoS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apr0"
+      ],
+      "range": [
+        {
+          "lt": "0.9.20.0.9.19"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Portable Runtime Project reports:</p>\n\t<blockquote cite=\"http://www.apache.org/dist/apr/CHANGES-APR-0.9\">\n\t  <p>Reimplement apr_fnmatch() from scratch using a non-recursive\n\t    algorithm; now has improved compliance with the fnmatch()\n\t    spec.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.apache.org/dist/apr/Announcement0.9.html"
+    ],
+    "cvename": [
+      "CVE-2011-0419"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-05-19",
+    "entry": "2011-11-13"
+  }
+}

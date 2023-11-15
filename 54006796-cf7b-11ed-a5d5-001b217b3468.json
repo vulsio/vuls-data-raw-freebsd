@@ -1,0 +1,55 @@
+{
+  "vid": "54006796-cf7b-11ed-a5d5-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "15.10.1",
+          "ge": "15.10.0"
+        },
+        {
+          "lt": "15.9.4",
+          "ge": "15.9.0"
+        },
+        {
+          "lt": "15.8.5",
+          "ge": "8.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2023/03/30/security-release-gitlab-15-10-1-released/\">\n\t  <p>Cross-site scripting in \"Maximum page reached\" page</p>\n\t  <p>Private project guests can read new changes using a fork</p>\n\t  <p>Mirror repository error reveals password in Settings UI</p>\n\t  <p>DOS and high resource consumption of Prometheus server through abuse of Prometheus integration proxy endpoint</p>\n\t  <p>Unauthenticated users can view Environment names from public projects limited to project members only</p>\n\t  <p>Copying information to the clipboard could lead to the execution of unexpected commands</p>\n\t  <p>Maintainer can leak masked webhook secrets by adding a new parameter to the webhook URL</p>\n\t  <p>Arbitrary HTML injection possible when :soft_email_confirmation feature flag is enabled in the latest release</p>\n\t  <p>Framing of arbitrary content (leading to open redirects) on any page allowing user controlled markdown</p>\n\t  <p>MR for security reports are available to everyone</p>\n\t  <p>API timeout when searching for group issues</p>\n\t  <p>Unauthorised user can add child epics linked to victim's epic in an unrelated group</p>\n\t  <p>GitLab search allows to leak internal notes</p>\n\t  <p>Ambiguous branch name exploitation in GitLab</p>\n\t  <p>Improper permissions checks for moving an issue</p>\n\t  <p>Private project branches names can be leaked through a fork</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2023/03/30/security-release-gitlab-15-10-1-released/"
+    ],
+    "cvename": [
+      "CVE-2022-3513",
+      "CVE-2023-0485",
+      "CVE-2023-1098",
+      "CVE-2023-1733",
+      "CVE-2023-0319",
+      "CVE-2023-1708",
+      "CVE-2023-0838",
+      "CVE-2023-0523",
+      "CVE-2023-0155",
+      "CVE-2023-1167",
+      "CVE-2023-1417",
+      "CVE-2023-1710",
+      "CVE-2023-0450",
+      "CVE-2023-1071",
+      "CVE-2022-3375"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-30",
+    "entry": "2023-03-31"
+  }
+}

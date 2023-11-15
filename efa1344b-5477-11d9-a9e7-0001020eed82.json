@@ -1,0 +1,38 @@
+{
+  "vid": "efa1344b-5477-11d9-a9e7-0001020eed82",
+  "topic": "ethereal -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ethereal",
+        "ethereal-lite",
+        "tethereal",
+        "tethereal-lite"
+      ],
+      "range": [
+        {
+          "lt": "0.10.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An Ethreal Security Advisories reports:</p>\n\t<blockquote cite=\"http://www.ethereal.com/appnotes/enpa-sa-00016.html\">\n\t  <p>Issues have been discovered in the following protocol\n\t    dissectors:</p>\n\t  <ul>\n\t    <li>Matthew Bing discovered a bug in DICOM dissection that\n\t      could make Ethereal crash.</li>\n\t    <li>An invalid RTP timestamp could make Ethereal hang and\n\t      create a large temporary file, possibly filling\n\t      available disk space.</li>\n\t    <li>The HTTP dissector could access previously-freed\n\t      memory, causing a crash.</li>\n\t    <li>Brian Caswell discovered that an improperly formatted\n\t      SMB packet could make Ethereal hang, maximizing CPU\n\t      utilization.</li>\n\t  </ul>\n\t  <p>Impact: It may be possible to make Ethereal crash or run\n\t    arbitrary code by injecting a purposefully malformed\n\t    packet onto the wire or by convincing someone to read a\n\t    malformed packet trace file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ethereal.com/appnotes/enpa-sa-00016.html"
+    ],
+    "cvename": [
+      "CVE-2004-1139",
+      "CVE-2004-1140",
+      "CVE-2004-1141",
+      "CVE-2004-1142"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-14",
+    "entry": "2004-12-23"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "vid": "beab40bf-c1ca-4d2b-ad46-2f14bac8a968",
+  "topic": "Ruby Activemodel Gem -- Circumvention of attr_protected",
+  "affects": [
+    {
+      "name": [
+        "rubygem18-activemodel"
+      ],
+      "range": [
+        {
+          "lt": "3.2.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rubygem19-activemodel"
+      ],
+      "range": [
+        {
+          "lt": "3.2.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Aaron Patterson reports:</p>\n\t<blockquote cite=\"https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/AFBKNY7VSH8\">\n\t  <p>The attr_protected method allows developers to specify a blacklist\n\t     of model attributes which users should not be allowed to assign to.\n\t     By using a specially crafted request, attackers could circumvent\n\t     this protection and alter values that were meant to be protected.</p>\n\t  <p>All users running an affected release should either upgrade or use\n\t     one of the work arounds immediately. Users should also consider\n\t     switching from attr_protected to the whitelist method\n\t     attr_accessible which is not vulnerable to this attack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2013-0276"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-02-11",
+    "entry": "2013-02-17"
+  }
+}

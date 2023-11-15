@@ -1,0 +1,49 @@
+{
+  "vid": "74389f22-6007-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Kernel stack disclosure in setlogin(2) / getlogin(2)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "10.0_12",
+          "ge": "10.0"
+        },
+        {
+          "lt": "9.3_5",
+          "ge": "9.3"
+        },
+        {
+          "lt": "9.2_15",
+          "ge": "9.2"
+        },
+        {
+          "lt": "9.1_22",
+          "ge": "9.1"
+        },
+        {
+          "lt": "8.4_19",
+          "ge": "8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When setlogin(2) is called while setting up a new login\n\tsession, the login name is copied into an uninitialized\n\tstack buffer, which is then copied into a buffer of the\n\tsame size in the session structure. The getlogin(2) system\n\tcall returns the entire buffer rather than just the portion\n\toccupied by the login name associated with the session.</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged user can access this memory by calling\n\tgetlogin(2) and reading beyond the terminating NUL character\n\tof the resulting string. Up to 16 (FreeBSD 8) or 32 (FreeBSD\n\t9 and 10) bytes of kernel memory may be leaked in this\n\tmanner for each invocation of setlogin(2).</p>\n\t<p>This memory may contain sensitive information, such as\n\tportions of the file cache or terminal buffers, which an\n\tattacker might leverage to obtain elevated privileges.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-8476"
+    ],
+    "freebsd_sa": [
+      "SA-14:25.setlogin"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-04",
+    "entry": "2016-08-11"
+  }
+}

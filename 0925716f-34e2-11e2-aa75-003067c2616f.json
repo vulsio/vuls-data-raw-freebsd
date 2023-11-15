@@ -1,0 +1,60 @@
+{
+  "vid": "0925716f-34e2-11e2-aa75-003067c2616f",
+  "topic": "opera -- execution of arbitrary code",
+  "affects": [
+    {
+      "name": [
+        "opera"
+      ],
+      "range": [
+        {
+          "lt": "12.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "opera-devel"
+      ],
+      "range": [
+        {
+          "lt": "12.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "12.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-opera-devel"
+      ],
+      "range": [
+        {
+          "lt": "12.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Opera reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/kb/view/1036/\">\n\t  <p>When requesting pages using HTTP, Opera temporarily stores the\n\t    response in a buffer.  In some cases, Opera may incorrectly allocate\n\t    too little space for a buffer, and may then store too much of the\n\t    response in that buffer.  This causes a buffer overflow, which in\n\t    turn can lead to a memory corruption and crash.  It is possible to\n\t    use this crash to execute the overflowing data as code, which may\n\t    be controlled by an attacking site.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.opera.com/support/kb/view/1036/"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-11-19",
+    "entry": "2012-11-22",
+    "modified": "2014-04-30"
+  }
+}

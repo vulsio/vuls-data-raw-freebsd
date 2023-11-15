@@ -1,0 +1,43 @@
+{
+  "vid": "4769914e-b844-11de-b159-0030843d3802",
+  "topic": "phpmyadmin -- XSS and SQL injection vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.2.2.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "phpMyAdmin211"
+      ],
+      "range": [
+        {
+          "lt": "2.11.9.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpMyAdmin Team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2009-6.php\">\n\t<p>Cross-site scripting (XSS) vulnerability allows remote attackers to\n\t  inject arbitrary web script or HTML via a crafted MySQL table name.</p>\n\t<p>SQL injection vulnerability allows remote attackers to inject SQL via\n\t  various interface parameters of the PDF schema generator feature.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2009-6.php"
+    ],
+    "cvename": [
+      "CVE-2009-3696",
+      "CVE-2009-3697"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-10-13",
+    "entry": "2009-10-13"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "vid": "252f40cb-618c-47f4-a2cf-1abf30cffbbe",
+  "topic": "py-Flask-Cors -- directory traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-Flask-Cors",
+        "py38-Flask-Cors",
+        "py39-Flask-Cors",
+        "py310-Flask-Cors",
+        "py311-Flask-Cors"
+      ],
+      "range": [
+        {
+          "lt": "3.0.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>praetorian-colby-morgan reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2020-43\">\n      <p>An issue was discovered in Flask-CORS (aka CORS Middleware for Flask) before 3.0.9.</p>\n      <p>It allows ../ directory traversal to access private resources because resource matching does not ensure that pathnames are in a canonical format.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2020-43",
+      "https://osv.dev/vulnerability/GHSA-xc3p-ff3m-f46v"
+    ],
+    "cvename": [
+      "CVE-2020-25032"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-08-31",
+    "entry": "2023-08-31"
+  }
+}

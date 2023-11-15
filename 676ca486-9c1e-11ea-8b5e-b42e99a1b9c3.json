@@ -1,0 +1,65 @@
+{
+  "vid": "676ca486-9c1e-11ea-8b5e-b42e99a1b9c3",
+  "topic": "Apache Tomcat Remote Code Execution via session persistence",
+  "affects": [
+    {
+      "name": [
+        "tomcat7"
+      ],
+      "range": [
+        {
+          "lt": "7.0.104"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat85"
+      ],
+      "range": [
+        {
+          "lt": "8.5.55"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat9"
+      ],
+      "range": [
+        {
+          "lt": "9.0.35"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat-devel"
+      ],
+      "range": [
+        {
+          "lt": "10.0.0.M5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t  <p>Under certain circumstances an attacker will be able to trigger remote code execution via deserialization of the file under their control</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://tomcat.apache.org/security-7.html",
+      "http://tomcat.apache.org/security-8.html",
+      "http://tomcat.apache.org/security-9.html",
+      "http://tomcat.apache.org/security-10.html"
+    ],
+    "cvename": [
+      "CVE-2020-9484"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-05-12",
+    "entry": "2020-05-22"
+  }
+}

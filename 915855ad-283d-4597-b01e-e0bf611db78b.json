@@ -1,0 +1,32 @@
+{
+  "vid": "915855ad-283d-4597-b01e-e0bf611db78b",
+  "topic": "libspf2 -- Integer Underflow Remote Code Execution",
+  "affects": [
+    {
+      "name": [
+        "libspf2"
+      ],
+      "range": [
+        {
+          "le": "1.2.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Trendmicro ZDI reports:</p>\n\t<blockquote cite=\"https://www.zerodayinitiative.com/advisories/ZDI-23-1472/\">\n\t<p>Integer Underflow Remote Code Execution Vulnerability</p>\n\t<p>The specific flaw exists within the parsing of SPF macros.\n\tWhen parsing SPF macros, the process does not properly\n\tvalidate user-supplied data, which can result in an integer\n\tunderflow before writing to memory. An attacker can leverage\n\tthis vulnerability to execute code in the context of the\n\tservice account.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-42118"
+    ],
+    "cvename": [
+      "CVE-2023-42118"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-06-06",
+    "entry": "2023-10-04"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "vid": "1098a15b-b0f6-42b7-b5c7-8a8646e8be07",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "56.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.49.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "52.4.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "52.4.0,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul",
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "52.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2017-18/\">\n\t  <p>CVE-2017-7793: Use-after-free with Fetch API</p>\n\t  <p>CVE-2017-7817: Firefox for Android address bar spoofing through fullscreen mode</p>\n\t  <p>CVE-2017-7818: Use-after-free during ARIA array manipulation</p>\n\t  <p>CVE-2017-7819: Use-after-free while resizing images in design mode</p>\n\t  <p>CVE-2017-7824: Buffer overflow when drawing and validating elements with ANGLE</p>\n\t  <p>CVE-2017-7805: Use-after-free in TLS 1.2 generating handshake hashes</p>\n\t  <p>CVE-2017-7812: Drag and drop of malicious page content to the tab bar can open locally stored files</p>\n\t  <p>CVE-2017-7814: Blob and data URLs bypass phishing and malware protection warnings</p>\n\t  <p>CVE-2017-7813: Integer truncation in the JavaScript parser</p>\n\t  <p>CVE-2017-7825: OS X fonts render some Tibetan and Arabic unicode characters as spaces</p>\n\t  <p>CVE-2017-7815: Spoofing attack with modal dialogs on non-e10s installations</p>\n\t  <p>CVE-2017-7816: WebExtensions can load about: URLs in extension UI</p>\n\t  <p>CVE-2017-7821: WebExtensions can download and open non-executable files without user interaction</p>\n\t  <p>CVE-2017-7823: CSP sandbox directive did not create a unique origin</p>\n\t  <p>CVE-2017-7822: WebCrypto allows AES-GCM with 0-length IV</p>\n\t  <p>CVE-2017-7820: Xray wrapper bypass with new tab and web console</p>\n\t  <p>CVE-2017-7811: Memory safety bugs fixed in Firefox 56</p>\n\t  <p>CVE-2017-7810: Memory safety bugs fixed in Firefox 56 and Firefox ESR 52.4</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2017-21/",
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2017-22/"
+    ],
+    "cvename": [
+      "CVE-2017-7793",
+      "CVE-2017-7805",
+      "CVE-2017-7810",
+      "CVE-2017-7811",
+      "CVE-2017-7812",
+      "CVE-2017-7813",
+      "CVE-2017-7814",
+      "CVE-2017-7815",
+      "CVE-2017-7816",
+      "CVE-2017-7817",
+      "CVE-2017-7818",
+      "CVE-2017-7819",
+      "CVE-2017-7820",
+      "CVE-2017-7821",
+      "CVE-2017-7822",
+      "CVE-2017-7823",
+      "CVE-2017-7824",
+      "CVE-2017-7825"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-09-28",
+    "entry": "2017-09-29",
+    "modified": "2017-10-03"
+  }
+}

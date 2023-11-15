@@ -1,0 +1,37 @@
+{
+  "vid": "6e8f9003-6007-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Incorrect error handling in PAM policy parser",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "9.2_7",
+          "ge": "9.2"
+        },
+        {
+          "lt": "10.0_4",
+          "ge": "10.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The OpenPAM library searches for policy definitions in\n\tseveral locations. While doing so, the absence of a policy\n\tfile is a soft failure (handled by searching in the next\n\tlocation) while the presence of an invalid file is a hard\n\tfailure (handled by returning an error to the caller).</p>\n\t<p>The policy parser returns the same error code (ENOENT)\n\twhen a syntactically valid policy references a non-existent\n\tmodule as when the requested policy file does not exist.\n\tThe search loop regards this as a soft failure and looks\n\tfor the next similarly-named policy, without discarding the\n\tpartially-loaded configuration.</p>\n\t<p>A similar issue can arise if a policy contains an include\n\tdirective that refers to a non-existent policy.</p>\n\t<h1>Impact:</h1>\n\t<p>If a module is removed, or the name of a module is\n\tmisspelled in the policy file, the PAM library will proceed\n\twith a partially loaded configuration. Depending on the\n\texact circumstances, this may result in a fail-open scenario\n\twhere users are allowed to log in without a password, or\n\twith an incorrect password.</p>\n\t<p>In particular, if a policy references a module installed\n\tby a package or port, and that package or port is being\n\treinstalled or upgraded, there is a brief window of time\n\tduring which the module is absent and policies that use it\n\tmay fail open. This can be especially damaging to Internet-facing\n\tSSH servers, which are regularly subjected to brute-force\n\tscans.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-3879"
+    ],
+    "freebsd_sa": [
+      "SA-14:13.pam"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-06-03",
+    "entry": "2016-08-11"
+  }
+}

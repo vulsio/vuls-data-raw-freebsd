@@ -1,0 +1,33 @@
+{
+  "vid": "75f39413-7a00-11e5-a2a1-002590263bf5",
+  "topic": "drupal -- open redirect vulnerability",
+  "affects": [
+    {
+      "name": [
+        "drupal7"
+      ],
+      "range": [
+        {
+          "lt": "7.41"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal development team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/SA-CORE-2015-004\">\n\t  <p>The Overlay module in Drupal core displays administrative pages\n\t    as a layer over the current page (using JavaScript), rather than\n\t    replacing the page in the browser window. The Overlay module does\n\t    not sufficiently validate URLs prior to displaying their contents,\n\t    leading to an open redirect vulnerability.</p>\n\t  <p>This vulnerability is mitigated by the fact that it can only be\n\t    used against site users who have the \"Access the administrative\n\t    overlay\" permission, and that the Overlay module must be enabled.\n\t    </p>\n\t  <p>An incomplete fix for this issue was released as part of\n\t    SA-CORE-2015-002.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.drupal.org/SA-CORE-2015-004",
+      "http://www.openwall.com/lists/oss-security/2015/10/23/6"
+    ],
+    "cvename": [
+      "CVE-2015-7943"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-21",
+    "entry": "2015-10-24"
+  }
+}

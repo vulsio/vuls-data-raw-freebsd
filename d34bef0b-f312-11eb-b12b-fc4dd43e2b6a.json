@@ -1,0 +1,55 @@
+{
+  "vid": "d34bef0b-f312-11eb-b12b-fc4dd43e2b6a",
+  "topic": "tomcat -- HTTP request smuggling in multiple versions",
+  "affects": [
+    {
+      "name": [
+        "tomcat85"
+      ],
+      "range": [
+        {
+          "ge": "8.5.0",
+          "le": "8.5.66"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat9"
+      ],
+      "range": [
+        {
+          "ge": "9.0.0",
+          "le": "9.0.46"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tomcat10"
+      ],
+      "range": [
+        {
+          "ge": "10.0.0",
+          "le": "10.0.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Bahruz Jabiyev, Steven Sprecher and Kaan Onarlioglu of NEU seclab reports:</p>\n\t<blockquote cite=\"https://tomcat.apache.org/security.html\">\n\t  <p>Apache Tomcat did not correctly parse the HTTP transfer-encoding request header in some circumstances leading to the possibility to request smuggling when used with a reverse proxy. Specifically: Tomcat incorrectly ignored the transfer-encoding header if the client declared it would only accept an HTTP/1.0 response; Tomcat honoured the identify encoding; and Tomcat did not ensure that, if present, the chunked encoding was the final encoding.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33037"
+    ],
+    "cvename": [
+      "CVE-2021-33037"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-07",
+    "entry": "2021-08-01"
+  }
+}

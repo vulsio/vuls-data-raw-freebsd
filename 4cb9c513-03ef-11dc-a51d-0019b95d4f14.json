@@ -1,0 +1,35 @@
+{
+  "vid": "4cb9c513-03ef-11dc-a51d-0019b95d4f14",
+  "topic": "png -- DoS crash vulnerability",
+  "affects": [
+    {
+      "name": [
+        "png"
+      ],
+      "range": [
+        {
+          "lt": "1.2.17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Libpng Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/l/li/libpng/libpng-1.2.17-ADVISORY.txt\">\n\t  <p>A grayscale PNG image with a malformed (bad CRC) tRNS\n\t    chunk will crash some libpng applications.</p>\n\t  <p>This vulnerability could be used to crash a browser when\n\t    a user tries to view such a malformed PNG file.  It is not\n\t    known whether the vulnerability could be exploited\n\t    otherwise.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/l/li/libpng/libpng-1.2.17-ADVISORY.txt"
+    ],
+    "cvename": [
+      "CVE-2007-2445"
+    ],
+    "cert_vu": [
+      "684664"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-05-15",
+    "entry": "2007-05-16"
+  }
+}

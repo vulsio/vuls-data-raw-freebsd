@@ -1,0 +1,34 @@
+{
+  "vid": "526d9642-3ae7-11e9-a669-8c164582fbac",
+  "topic": "slixmpp -- improper access control",
+  "affects": [
+    {
+      "name": [
+        "py35-slixmpp",
+        "py36-slixmpp",
+        "py37-slixmpp"
+      ],
+      "range": [
+        {
+          "lt": "1.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2019-1000021\">\n\t  <p>slixmpp version before commit 7cd73b594e8122dddf847953fcfc85ab4d316416\n\t    contains an incorrect Access Control vulnerability in XEP-0223 plugin\n\t    (Persistent Storage of Private Data via PubSub) options profile, used\n\t    for the configuration of default access model that can result in\n\t    all of the contacts of the victim can see private data having been\n\t    published to a PEP node. This attack appears to be exploitable\n\t    if the user of this library publishes any private data on PEP,\n\t    the node isn't configured to be private. This vulnerability appears\n\t    to have been fixed in commit 7cd73b594e8122dddf847953fcfc85ab4d316416\n\t    which is included in slixmpp 1.4.2.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2019-1000021"
+    ],
+    "cvename": [
+      "CVE-2019-1000021"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-04",
+    "entry": "2019-03-05"
+  }
+}

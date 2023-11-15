@@ -1,0 +1,39 @@
+{
+  "vid": "80f9dbd3-8eec-11eb-b9e8-3525f51429a0",
+  "topic": "nettle 3.7.2 -- fix serious ECDSA signature verify bug",
+  "affects": [
+    {
+      "name": [
+        "nettle"
+      ],
+      "range": [
+        {
+          "lt": "3.7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c7-nettle"
+      ],
+      "range": [
+        {
+          "lt": "3.7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Niels Möller reports:</p>\n\t<blockquote cite=\"https://lists.lysator.liu.se/pipermail/nettle-bugs/2021/009458.html\">\n\t  <p>\n\t    I've prepared a new bug-fix release of Nettle, a low-level\n\t    cryptographics library, to fix a serious bug in the function to\n\t    verify ECDSA signatures. Implications include an assertion failure,\n\t    which could be used for denial-of-service, when verifying signatures\n\t    on the secp_224r1 and secp521_r1 curves.\n\t  </p>\n\t  <p>\n\t    Even when no assert is triggered in ecdsa_verify, ECC point\n\t    multiplication may get invalid intermediate values as input, and\n\t    produce incorrect results. [...] It appears difficult to construct\n\t    an alleged signature that makes the function misbehave in such a way\n\t    that an invalid signature is accepted as valid, but such attacks\n\t    can't be ruled out without further analysis.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.lysator.liu.se/pipermail/nettle-bugs/2021/009458.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-03-21",
+    "entry": "2021-03-27"
+  }
+}

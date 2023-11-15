@@ -1,0 +1,120 @@
+{
+  "vid": "e6296105-449b-11db-ba89-000c6ec775d9",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.5.0.7,1"
+        },
+        {
+          "lt": "2.0_1,1",
+          "gt": "2.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "1.5.0.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "1.0.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird",
+        "linux-thunderbird",
+        "mozilla-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "1.5.0.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.a2006.09.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.5.a2006.09.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla-devel",
+        "linux-mozilla",
+        "mozilla"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports of multiple security issues\n\t  in Firefox, Seamonkey, and Thunderbird.  Several of these\n\t  issues can probably be used to run arbitrary code with the\n\t  privilege of the user running the program.</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/\">\n\t  <ul>\n\t    <li>MFSA 2006-64 Crashes with evidence of memory\n\t      corruption (rv:1.8.0.7)</li>\n\t    <li>MFSA 2006-63 JavaScript execution in mail via XBL</li>\n\t    <li>MFSA 2006-62 Popup-blocker cross-site scripting (XSS)</li>\n\t    <li>MFSA 2006-61 Frame spoofing using document.open()</li>\n\t    <li>MFSA 2006-60 RSA Signature Forgery</li>\n\t    <li>MFSA 2006-59 Concurrency-related vulnerability</li>\n\t    <li>MFSA 2006-58 Auto-Update compromise through DNS and\n\t      SSL spoofing</li>\n\t    <li>MFSA 2006-57 JavaScript Regular Expression Heap\n\t      Corruption</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-57.html",
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-58.html",
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-59.html",
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-60.html",
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-61.html",
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-62.html",
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-63.html",
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-64.html"
+    ],
+    "cvename": [
+      "CVE-2006-4253",
+      "CVE-2006-4340",
+      "CVE-2006-4565",
+      "CVE-2006-4566",
+      "CVE-2006-4567",
+      "CVE-2006-4568",
+      "CVE-2006-4569",
+      "CVE-2006-4570",
+      "CVE-2006-4571"
+    ],
+    "bid": [
+      "20042"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-09-14",
+    "entry": "2006-09-15",
+    "modified": "2006-11-02"
+  }
+}

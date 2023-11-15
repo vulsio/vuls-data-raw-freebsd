@@ -1,0 +1,43 @@
+{
+  "vid": "31c09848-1829-11e4-bf04-60a44c524f57",
+  "topic": "tor -- traffic confirmation attack",
+  "affects": [
+    {
+      "name": [
+        "tor"
+      ],
+      "range": [
+        {
+          "lt": "0.2.4.23"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tor-devel"
+      ],
+      "range": [
+        {
+          "lt": "0.2.5.6.a"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Tor Project reports:</p>\n\t<blockquote cite=\"https://lists.torproject.org/pipermail/tor-announce/2014-July/000094.html\">\n\t  <p>Tor before 0.2.4.23 and 0.2.5 before 0.2.5.6-alpha maintains a\n\t    circuit after an inbound RELAY_EARLY cell is received by a client,\n\t    which makes it easier for remote attackers to conduct\n\t    traffic-confirmation attacks by using the pattern of RELAY and\n\t    RELAY_EARLY cells as a means of communicating information about\n\t    hidden service names.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.torproject.org/pipermail/tor-announce/2014-July/000094.html",
+      "https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack"
+    ],
+    "cvename": [
+      "CVE-2014-5117"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-07-30",
+    "entry": "2014-07-30"
+  }
+}

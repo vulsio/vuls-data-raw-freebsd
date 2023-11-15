@@ -1,0 +1,38 @@
+{
+  "vid": "69cf62a8-a0aa-11ea-9ea5-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "13.0.1",
+          "ge": "13.0.0"
+        },
+        {
+          "lt": "12.10.7",
+          "ge": "12.10.0"
+        },
+        {
+          "lt": "12.9.8",
+          "ge": "12.9.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2020/05/27/security-release-13-0-1-released/\">\n\t  <p>User Email Verification Bypass</p>\n\t  <p>OAuth Flow Missing Email Verification Checks</p>\n\t  <p>Notification Email Verification Bypass</p>\n\t  <p>Undisclosed Vulnerability on a Third-Party Rendering Engine</p>\n\t  <p>Group Sign-Up Restriction Bypass</p>\n\t  <p>Mirror Project Owner Impersonation</p>\n\t  <p>Missing Permission Check on Fork Relation Creation</p>\n\t  <p>Cross-Site Scripting in Repository Files API</p>\n\t  <p>Kubernetes Cluster Token Disclosure</p>\n\t  <p>Object Storage File Enumeration</p>\n\t  <p>Insecure Authorization Check on Project Deploy Keys</p>\n\t  <p>Cross-Site Scripting on Metrics Dashboard</p>\n\t  <p>Denial of Service on Custom Dashboards</p>\n\t  <p>Client-Side Code Injection through Mermaid Markup</p>\n\t  <p>Cross-Site Scripting on Static Site Editor</p>\n\t  <p>Disclosure of Amazon EKS Credentials</p>\n\t  <p>Denial of Service on Workhorse</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2020/05/27/security-release-13-0-1-released/"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-05-27",
+    "entry": "2020-05-28"
+  }
+}

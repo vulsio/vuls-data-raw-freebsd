@@ -1,0 +1,31 @@
+{
+  "vid": "ed8cbad5-21a8-11ea-9b6d-901b0e934d69",
+  "topic": "py-matrix-synapse -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py35-matrix-synapse",
+        "py36-matrix-synapse",
+        "py37-matrix-synapse"
+      ],
+      "range": [
+        {
+          "lt": "1.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matrix developers report:</p>\n\t<blockquote cite=\"https://github.com/matrix-org/synapse/releases/tag/v1.7.1\">\n\t  <p>The [synapse 1.7.1] release includes several security fixes as well\n\t    as a fix to a bug exposed by the security fixes. All previous releases\n\t    of Synapse are affected. Administrators are encouraged to upgrade as\n\t    soon as possible.</p>\n\t  <ul>\n\t    <li>Fix a bug which could cause room events to be incorrectly authorized\n\t      using events from a different room.</li>\n\t    <li>Fix a bug causing responses to the /context client endpoint to not\n\t      use the pruned version of the event.</li>\n\t    <li>Fix a cause of state resets in room versions 2 onwards.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/matrix-org/synapse/releases/tag/v1.7.1"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-12-18",
+    "entry": "2019-12-18"
+  }
+}

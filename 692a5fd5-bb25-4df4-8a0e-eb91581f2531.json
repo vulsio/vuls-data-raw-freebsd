@@ -1,0 +1,37 @@
+{
+  "vid": "692a5fd5-bb25-4df4-8a0e-eb91581f2531",
+  "topic": "py-flask-caching -- remote code execution or local privilege escalation vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py37-flask-caching",
+        "py38-flask-caching",
+        "py39-flask-caching",
+        "py310-flask-caching",
+        "py311-flask-caching"
+      ],
+      "range": [
+        {
+          "le": "2.0.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>subnix reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2021-13\">\n      <p>The Flask-Caching extension through 2.0.2 for Flask relies on Pickle for serialization, which may lead to remote code execution or local privilege escalation.</p>\n      <p>If an attacker gains access to cache storage (e.g., filesystem, Memcached, Redis, etc.), they can construct a crafted payload, poison the cache, and execute Python code.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2021-13",
+      "https://osv.dev/vulnerability/GHSA-656c-6cxf-hvcv"
+    ],
+    "cvename": [
+      "CVE-2021-33026"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-13",
+    "entry": "2023-08-31"
+  }
+}

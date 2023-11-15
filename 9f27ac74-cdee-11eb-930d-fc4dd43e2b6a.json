@@ -1,0 +1,32 @@
+{
+  "vid": "9f27ac74-cdee-11eb-930d-fc4dd43e2b6a",
+  "topic": "ircII -- denial of service",
+  "affects": [
+    {
+      "name": [
+        "ircii"
+      ],
+      "range": [
+        {
+          "lt": "20210314"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Michael Ortmann reports:</p>\n\t<blockquote cite=\"https://www.openwall.com/lists/oss-security/2021/03/24/2\">\n\t  <p>ircii has a bug in parsing CTCP UTC messages.</p>\n\t  <p>Its unknown if this could also be used for arbitrary code execution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-29376"
+    ],
+    "cvename": [
+      "CVE-2021-29376"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-03-02",
+    "entry": "2021-03-30"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "vid": "0640198a-d117-11de-b667-0030843d3802",
+  "topic": "wordpress -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "2.8.6,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "2.8.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/37332/\">\n\t  <p>The security issue is caused due to the wp_check_filetype()\n\t    function in /wp-includes/functions.php improperly validating uploaded\n\t    files. This can be exploited to execute arbitrary PHP code by\n\t    uploading a malicious PHP script with multiple extensions.</p>\n\t  <p>Successful exploitation of this vulnerability requires that Apache\n\t    is not configured to handle the mime-type for media files with an e.g.\n\t    \"gif\", \"jpg\", \"png\", \"tif\", \"wmv\" extension.</p>\n\t  <p>Input passed via certain parameters to press-this.php is not\n\t    properly sanitised before being displayed to the user. This can be\n\t    exploited to insert arbitrary HTML and script code, which will be\n\t    executed in a user's browser session in context of an affected site\n\t    when the malicious data is being viewed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://wordpress.org/development/2009/11/wordpress-2-8-6-security-release/",
+      "http://secunia.com/advisories/37332/"
+    ],
+    "cvename": [
+      "CVE-2009-3890",
+      "CVE-2009-3891"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-11-12",
+    "entry": "2009-11-14",
+    "modified": "2010-05-02"
+  }
+}

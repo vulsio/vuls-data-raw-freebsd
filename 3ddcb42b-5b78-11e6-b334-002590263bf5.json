@@ -1,0 +1,64 @@
+{
+  "vid": "3ddcb42b-5b78-11e6-b334-002590263bf5",
+  "topic": "moodle -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "moodle28"
+      ],
+      "range": [
+        {
+          "le": "2.8.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "moodle29"
+      ],
+      "range": [
+        {
+          "lt": "2.9.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "moodle30"
+      ],
+      "range": [
+        {
+          "lt": "3.0.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "moodle31"
+      ],
+      "range": [
+        {
+          "lt": "3.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Marina Glancy reports:</p>\n\t<blockquote cite=\"https://moodle.org/security/\">\n\t  <ul>\n\t    <li><p>MSA-16-0019: Glossary search displays entries without\n\t    checking user permissions to view them</p></li>\n\t    <li><p>MSA-16-0020: Text injection in email headers</p></li>\n\t    <li><p>MSA-16-0021: Unenrolled user still receives event monitor\n\t    notifications even though they can no longer access course</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://moodle.org/security/"
+    ],
+    "cvename": [
+      "CVE-2016-5012",
+      "CVE-2016-5013",
+      "CVE-2016-5014"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-07-19",
+    "entry": "2016-08-06"
+  }
+}

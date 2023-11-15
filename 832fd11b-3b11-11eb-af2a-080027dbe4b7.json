@@ -1,0 +1,33 @@
+{
+  "vid": "832fd11b-3b11-11eb-af2a-080027dbe4b7",
+  "topic": "glpi -- Remote Code Execution (RCE) via the backup functionality",
+  "affects": [
+    {
+      "name": [
+        "glpi"
+      ],
+      "range": [
+        {
+          "lt": "9.4.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE Corporation reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11060\">\n\t  <p>In GLPI before 9.4.6, an attacker can execute system commands by abusing the backup functionality. Theoretically, this vulnerability can be exploited by an attacker without a valid account by using a CSRF. Due to the difficulty of the exploitation, the attack is only conceivable by an account having Maintenance privileges and the right to add WIFI networks. This is fixed in version 9.4.6.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/glpi-project/glpi/security/advisories/GHSA-cvvq-3fww-5v6f",
+      "https://github.com/glpi-project/glpi/commit/ad748d59c94da177a3ed25111c453902396f320c"
+    ],
+    "cvename": [
+      "CVE-2020-11060"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-03-30",
+    "entry": "2020-03-30"
+  }
+}

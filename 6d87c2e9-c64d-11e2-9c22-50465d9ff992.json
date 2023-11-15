@@ -1,0 +1,32 @@
+{
+  "vid": "6d87c2e9-c64d-11e2-9c22-50465d9ff992",
+  "topic": "socat -- FD leak",
+  "affects": [
+    {
+      "name": [
+        "socat"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gerhard Rieger reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2013/q2/411\">\n\t  <p>Under certain circumstances an FD leak occurs and can be misused for\n\t    denial of service attacks against socat running in server mode.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://seclists.org/oss-sec/2013/q2/411"
+    ],
+    "cvename": [
+      "CVE-2013-3571"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-05-26",
+    "entry": "2013-05-26"
+  }
+}

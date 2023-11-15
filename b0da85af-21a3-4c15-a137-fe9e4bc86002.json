@@ -1,0 +1,181 @@
+{
+  "vid": "b0da85af-21a3-4c15-a137-fe9e4bc86002",
+  "topic": "ffmpeg -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libav"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gstreamer-ffmpeg"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "handbrake"
+      ],
+      "range": [
+        {
+          "lt": "1.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg"
+      ],
+      "range": [
+        {
+          "lt": "2.8.3,1",
+          "ge": "2.8,1"
+        },
+        {
+          "lt": "2.7.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg26"
+      ],
+      "range": [
+        {
+          "lt": "2.6.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg25"
+      ],
+      "range": [
+        {
+          "lt": "2.5.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ffmpeg-devel",
+        "ffmpeg23",
+        "ffmpeg2",
+        "ffmpeg1",
+        "ffmpeg-011",
+        "ffmpeg0"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "avidemux",
+        "avidemux2",
+        "avidemux26"
+      ],
+      "range": [
+        {
+          "le": "2.6.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "kodi"
+      ],
+      "range": [
+        {
+          "lt": "16.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mplayer",
+        "mencoder"
+      ],
+      "range": [
+        {
+          "lt": "1.1.r20150822_7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mythtv",
+        "mythtv-frontend"
+      ],
+      "range": [
+        {
+          "le": "0.27.5,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "plexhometheater"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6761\">\n\t  <p>The update_dimensions function in libavcodec/vp8.c in\n\t    FFmpeg through 2.8.1, as used in Google Chrome before\n\t    46.0.2490.71 and other products, relies on a\n\t    coefficient-partition count during multi-threaded operation,\n\t    which allows remote attackers to cause a denial of service\n\t    (race condition and memory corruption) or possibly have\n\t    unspecified other impact via a crafted WebM file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8216\">\n\t  <p>The ljpeg_decode_yuv_scan function in\n\t    libavcodec/mjpegdec.c in FFmpeg before 2.8.2 omits certain\n\t    width and height checks, which allows remote attackers to\n\t    cause a denial of service (out-of-bounds array access) or\n\t    possibly have unspecified other impact via crafted MJPEG\n\t    data.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8217\">\n\t  <p>The ff_hevc_parse_sps function in libavcodec/hevc_ps.c in\n\t    FFmpeg before 2.8.2 does not validate the Chroma Format\n\t    Indicator, which allows remote attackers to cause a denial\n\t    of service (out-of-bounds array access) or possibly have\n\t    unspecified other impact via crafted High Efficiency Video\n\t    Coding (HEVC) data.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8218\">\n\t  <p>The decode_uncompressed function in libavcodec/faxcompr.c\n\t    in FFmpeg before 2.8.2 does not validate uncompressed runs,\n\t    which allows remote attackers to cause a denial of service\n\t    (out-of-bounds array access) or possibly have unspecified\n\t    other impact via crafted CCITT FAX data.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8219\">\n\t  <p>The init_tile function in libavcodec/jpeg2000dec.c in\n\t    FFmpeg before 2.8.2 does not enforce minimum-value and\n\t    maximum-value constraints on tile coordinates, which allows\n\t    remote attackers to cause a denial of service (out-of-bounds\n\t    array access) or possibly have unspecified other impact via\n\t    crafted JPEG 2000 data.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8363\">\n\t  <p>The jpeg2000_read_main_headers function in\n\t    libavcodec/jpeg2000dec.c in FFmpeg before 2.6.5, 2.7.x\n\t    before 2.7.3, and 2.8.x through 2.8.2 does not enforce\n\t    uniqueness of the SIZ marker in a JPEG 2000 image, which\n\t    allows remote attackers to cause a denial of service\n\t    (out-of-bounds heap-memory access) or possibly have\n\t    unspecified other impact via a crafted image with two or\n\t    more of these markers.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8364\">\n\t  <p>Integer overflow in the ff_ivi_init_planes function in\n\t    libavcodec/ivi.c in FFmpeg before 2.6.5, 2.7.x before 2.7.3,\n\t    and 2.8.x through 2.8.2 allows remote attackers to cause a\n\t    denial of service (out-of-bounds heap-memory access) or\n\t    possibly have unspecified other impact via crafted image\n\t    dimensions in Indeo Video Interactive data.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8365\">\n\t  <p>The smka_decode_frame function in libavcodec/smacker.c in\n\t    FFmpeg before 2.6.5, 2.7.x before 2.7.3, and 2.8.x through\n\t    2.8.2 does not verify that the data size is consistent with\n\t    the number of channels, which allows remote attackers to\n\t    cause a denial of service (out-of-bounds array access) or\n\t    possibly have unspecified other impact via crafted Smacker\n\t    data.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=dabea74d0e82ea80cd344f630497cafcb3ef872c",
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=d24888ef19ba38b787b11d1ee091a3d94920c76a",
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=93f30f825c08477fe8f76be00539e96014cc83c8",
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=d4a731b84a08f0f3839eaaaf82e97d8d9c67da46",
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=43492ff3ab68a343c1264801baa1d5a02de10167",
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=44a7f17d0b20e6f8d836b2957e3e357b639f19a2",
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=df91aa034b82b77a3c4e01791f4a2b2ff6c82066",
+      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=4a9af07a49295e014b059c1ab624c40345af5892",
+      "https://ffmpeg.org/security.html"
+    ],
+    "cvename": [
+      "CVE-2015-6761",
+      "CVE-2015-8216",
+      "CVE-2015-8217",
+      "CVE-2015-8218",
+      "CVE-2015-8219",
+      "CVE-2015-8363",
+      "CVE-2015-8364",
+      "CVE-2015-8365"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-11-27",
+    "entry": "2015-12-02",
+    "modified": "2018-03-25"
+  }
+}

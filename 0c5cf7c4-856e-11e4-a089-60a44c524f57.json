@@ -1,0 +1,41 @@
+{
+  "vid": "0c5cf7c4-856e-11e4-a089-60a44c524f57",
+  "topic": "otrs -- Incomplete Access Control",
+  "affects": [
+    {
+      "name": [
+        "otrs"
+      ],
+      "range": [
+        {
+          "lt": "3.2.17",
+          "gt": "3.2.*"
+        },
+        {
+          "lt": "3.3.11",
+          "gt": "3.3.*"
+        },
+        {
+          "lt": "4.0.3",
+          "gt": "4.0.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OTRS project reports:</p>\n\t<blockquote cite=\"http://www.otrs.com/security-advisory-2014-06-incomplete-access-control/\">\n\t  <p>An attacker with valid OTRS credentials could access and manipulate ticket data\n\t     of other users via the GenericInterface, if a ticket webservice is configured\n\t     and not additionally secured.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.otrs.com/security-advisory-2014-06-incomplete-access-control/"
+    ],
+    "cvename": [
+      "CVE-2014-9324"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-12-16",
+    "entry": "2014-12-16"
+  }
+}

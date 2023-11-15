@@ -1,0 +1,34 @@
+{
+  "vid": "a460035e-d111-11e1-aff7-001fd056c417",
+  "topic": "libjpeg-turbo -- heap-based buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "libjpeg-turbo"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"http://sourceforge.net/projects/libjpeg-turbo/files/1.2.1/README.txt\">\n\t  <p>The Changelog for version 1.2.1 says: Fixed a regression caused by\n\t  1.2.0[6] in which decompressing corrupt JPEG images (specifically,\n\t  images in which the component count was erroneously set to a large\n\t  value) would cause libjpeg-turbo to segfault.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=826849\">\n\t  <p>A Heap-based buffer overflow was found in the way libjpeg-turbo\n\t  decompressed certain corrupt JPEG images in which the component count\n\t  was erroneously set to a large value. An attacker could create a\n\t  specially-crafted JPEG image that, when opened, could cause an\n\t  application using libpng to crash or, possibly, execute arbitrary code\n\t  with the privileges of the user running the application.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://sourceforge.net/projects/libjpeg-turbo/files/1.2.1/README.txt",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=826849"
+    ],
+    "cvename": [
+      "CVE-2012-2806"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-05-31",
+    "entry": "2012-07-18",
+    "modified": "2012-07-19"
+  }
+}

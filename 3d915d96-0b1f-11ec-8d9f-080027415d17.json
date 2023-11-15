@@ -1,0 +1,64 @@
+{
+  "vid": "3d915d96-0b1f-11ec-8d9f-080027415d17",
+  "topic": "cyrus-imapd -- multiple-minute daemon hang via input that is mishandled during hash-table interaction",
+  "affects": [
+    {
+      "name": [
+        "cyrus-imapd34"
+      ],
+      "range": [
+        {
+          "lt": "3.4.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "cyrus-imapd32"
+      ],
+      "range": [
+        {
+          "lt": "3.2.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "cyrus-imapd30"
+      ],
+      "range": [
+        {
+          "lt": "3.0.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "cyrus-imapd25",
+        "cyrus-imapd24",
+        "cyrus-imapd23"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cyrus IMAP 3.4.2 Release Notes states:</p>\n\t<blockquote cite=\"https://www.cyrusimap.org/imap/download/release-notes/3.4/x/3.4.2.html\">\n\t  <p>Fixed CVE-2021-33582: Certain user inputs are used as hash table keys during processing. A poorly chosen string hashing algorithm meant that the user could control which bucket their data was stored in, allowing a malicious user to direct many inputs to a single bucket. Each subsequent insertion to the same bucket requires a strcmp of every other entry in it. At tens of thousands of entries, each new insertion could keep the CPU busy in a strcmp loop for minutes.\nThe string hashing algorithm has been replaced with a better one, and now also uses a random seed per hash table, so malicious inputs cannot be precomputed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33582"
+    ],
+    "cvename": [
+      "CVE-2021-33582"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-26",
+    "entry": "2021-09-01"
+  }
+}

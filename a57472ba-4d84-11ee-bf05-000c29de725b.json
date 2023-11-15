@@ -1,0 +1,62 @@
+{
+  "vid": "a57472ba-4d84-11ee-bf05-000c29de725b",
+  "topic": "Python -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "python38"
+      ],
+      "range": [
+        {
+          "lt": "3.8.18"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python39"
+      ],
+      "range": [
+        {
+          "lt": "3.9.18"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python310"
+      ],
+      "range": [
+        {
+          "lt": "3.10.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python311"
+      ],
+      "range": [
+        {
+          "lt": "3.11.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://pythoninsider.blogspot.com/2023/08/python-3115-31013-3918-and-3818-is-now.html\">\n\t  <p>gh-108310: Fixed an issue where instances of ssl.SSLSocket were vulnerable\n\t    to a bypass of the TLS handshake and included protections (like certificate\n\t    verification) and treating sent unencrypted data as if it were post-handshake\n\t    TLS encrypted data.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://pythoninsider.blogspot.com/2023/08/python-3115-31013-3918-and-3818-is-now.html"
+    ],
+    "cvename": [
+      "CVE-2023-40217"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-08-22",
+    "entry": "2023-09-07"
+  }
+}

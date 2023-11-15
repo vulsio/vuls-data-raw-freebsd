@@ -1,0 +1,34 @@
+{
+  "vid": "38f213b6-8f3d-4067-91ef-bf14de7ba518",
+  "topic": "libXpm -- Issues handling XPM files",
+  "affects": [
+    {
+      "name": [
+        "libXpm"
+      ],
+      "range": [
+        {
+          "lt": "3.5.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The X.Org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2023-January/003312.html\">\n\t  <ol>\n\t    <li>CVE-2022-46285: Infinite loop on unclosed comments\n\n\t    <p>When reading XPM images from a file with libXpm 3.5.14 or older, if a\n\t    comment in the file is not closed (i.e. a C-style comment starts with\n\t    \"/*\" and is missing the closing \"*/\"), the ParseComment() function will\n\t    loop forever calling getc() to try to read the rest of the comment,\n\t    failing to notice that it has returned EOF, which may cause a denial of\n\t    service to the calling program.</p>\n\n\t    <p>This issue was found by Marco Ivaldi of the Humanativa Group's HN Security team.</p>\n\n\t    <p>The fix is provided in\n\t    https://gitlab.freedesktop.org/xorg/lib/libxpm/-/commit/a3a7c6dcc3b629d7650148</p></li>\n\n\t    <li>CVE-2022-44617: Runaway loop on width of 0 and enormous height\n\n\t    <p>When reading XPM images from a file with libXpm 3.5.14 or older, if a\n\t    image has a width of 0 and a very large height, the ParsePixels() function\n\t    will loop over the entire height calling getc() and ungetc() repeatedly,\n\t    or in some circumstances, may loop seemingly forever, which may cause a denial\n\t    of service to the calling program when given a small crafted XPM file to parse.</p>\n\n\t    <p>This issue was found by Martin Ettl.</p>\n\n\t    <p>The fix is provided in\n\t    https://gitlab.freedesktop.org/xorg/lib/libxpm/-/commit/f80fa6ae47ad4a5beacb28\n\t    and\n\t    https://gitlab.freedesktop.org/xorg/lib/libxpm/-/commit/c5ab17bcc34914c0b0707d</p></li>\n\n\t    <li>CVE-2022-4883: compression commands depend on $PATH\n\n\t    <p>By default, on all platforms except MinGW, libXpm will detect if a filename\n\t    ends in .Z or .gz, and will when reading such a file fork off an uncompress\n\t    or gunzip command to read from via a pipe, and when writing such a file will\n\t    fork off a compress or gzip command to write to via a pipe.</p>\n\n\t    <p>In libXpm 3.5.14 or older these are run via execlp(), relying on $PATH\n\t    to find the commands.  If libXpm is called from a program running with\n\t    raised privileges, such as via setuid, then a malicious user could set\n\t    $PATH to include programs of their choosing to be run with those privileges.</p>\n\n\t    <p>This issue was found by Alan Coopersmith of the Oracle Solaris team.</p></li>\n\t  </ol>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.x.org/archives/xorg-announce/2023-January/003312.html"
+    ],
+    "cvename": [
+      "CVE-2022-46285",
+      "CVE-2022-44617",
+      "CVE-2022-4883"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-01-17",
+    "entry": "2023-03-23"
+  }
+}

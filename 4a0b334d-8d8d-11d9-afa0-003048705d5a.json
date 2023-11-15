@@ -1,0 +1,37 @@
+{
+  "vid": "4a0b334d-8d8d-11d9-afa0-003048705d5a",
+  "topic": "phpbb -- Insuffient check against HTML code in usercp_register.php",
+  "affects": [
+    {
+      "name": [
+        "phpbb"
+      ],
+      "range": [
+        {
+          "le": "2.0.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Neo Security Team reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110987231502274\">\n\t  <p>If we specify a variable in the html code (any type:\n\t    hidden, text, radio, check, etc) with the name allowhtml,\n\t    allowbbcode or allowsmilies, is going to be on the html,\n\t    bbcode and smilies in our signature.</p>\n\t</blockquote>\n\t<p>This is a low risk vulnerability that allows users to bypass\n\t  forum-wide configuration.</p>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110987231502274",
+        "msgid": "20050303055339.3109.qmail@www.securityfocus.com"
+      },
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110988400407204",
+        "msgid": "38599.166.68.134.174.1109875231.squirrel@166.68.134.174"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-28",
+    "entry": "2005-03-05",
+    "modified": "2005-03-07"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "f9e96930-e6df-11dc-8c6a-00304881ac9a",
+  "topic": "pcre -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "pcre"
+      ],
+      "range": [
+        {
+          "lt": "7.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PCRE developers report:</p>\n\t<blockquote cite=\"http://pcre.org/changelog.txt\">\n\t  <p>A character class containing a very large number of characters with\n\t    codepoints greater than 255 (in UTF-8 mode, of course) caused a\n\t    buffer overflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://pcre.org/changelog.txt"
+    ],
+    "cvename": [
+      "CVE-2008-0674"
+    ],
+    "bid": [
+      "27786"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-01-28",
+    "entry": "2008-02-29"
+  }
+}

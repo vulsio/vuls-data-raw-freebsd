@@ -1,0 +1,44 @@
+{
+  "vid": "14ad2a28-66d2-11dc-b25f-02e0185f8d72",
+  "topic": "konquerer -- address bar spoofing",
+  "affects": [
+    {
+      "name": [
+        "kdebase"
+      ],
+      "range": [
+        {
+          "lt": "3.5.7_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "kdelibs"
+      ],
+      "range": [
+        {
+          "lt": "3.5.7_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The KDE development team reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20070914-1.txt\">\n\t  <p>The Konqueror address bar is vulnerable to spoofing attacks\n\t    that are based on embedding white spaces in the url. In addition\n\t    the address bar could be tricked to show an URL which it is\n\t    intending to visit for a short amount of time instead of the\n\t    current URL.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kde.org/info/security/advisory-20070914-1.txt"
+    ],
+    "cvename": [
+      "CVE-2007-3820",
+      "CVE-2007-4224",
+      "CVE-2007-4225"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-09-14",
+    "entry": "2007-09-19"
+  }
+}

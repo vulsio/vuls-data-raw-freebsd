@@ -1,0 +1,50 @@
+{
+  "vid": "f7a3b18c-624c-4703-9756-b6b27429e5b0",
+  "topic": "leafnode denial-of-service triggered by article request",
+  "affects": [
+    {
+      "name": [
+        "leafnode"
+      ],
+      "range": [
+        {
+          "lt": "1.9.30",
+          "ge": "1.9.20"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The leafnode NNTP server may go into an unterminated loop with 100%\n\t  CPU use when an article is requested by Message-ID that has been\n\t  crossposted to several news groups when one of the group names is the\n\t  prefix of another group name that the article was cross-posted\n\t  to. Found by Jan Knutar.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://leafnode.sourceforge.net/leafnode-SA-2002-01.txt"
+    ],
+    "cvename": [
+      "CVE-2002-1661"
+    ],
+    "freebsd_pr": [
+      "ports/46613"
+    ],
+    "mlist": [
+      {
+        "text": "http://sourceforge.net/mailarchive/message.php?msg_id=2796226",
+        "msgid": "20021229205023.GA5216@merlin.emma.line.org"
+      },
+      {
+        "text": "http://article.gmane.org/gmane.network.leafnode.announce/8",
+        "msgid": "20021229205023.GA5216@merlin.emma.line.org"
+      }
+    ],
+    "bid": [
+      "6490"
+    ]
+  },
+  "dates": {
+    "discovery": "2002-11-06",
+    "entry": "2004-05-21",
+    "modified": "2005-05-13"
+  }
+}

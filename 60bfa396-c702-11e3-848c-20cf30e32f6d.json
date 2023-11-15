@@ -1,0 +1,53 @@
+{
+  "vid": "60bfa396-c702-11e3-848c-20cf30e32f6d",
+  "topic": "bugzilla -- Social Engineering",
+  "affects": [
+    {
+      "name": [
+        "bugzilla40"
+      ],
+      "range": [
+        {
+          "lt": "4.0.12",
+          "ge": "2.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bugzilla42"
+      ],
+      "range": [
+        {
+          "lt": "4.2.8",
+          "ge": "4.1.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bugzilla44"
+      ],
+      "range": [
+        {
+          "lt": "4.4.3",
+          "ge": "4.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>A Bugzilla Security Advisory reports:</h1>\n\t<blockquote cite=\"http://www.bugzilla.org/security/4.0.11/\">\n\t  <p>Dangerous control characters can be inserted into\n\t    Bugzilla, notably into bug comments. If the text, which\n\t    may look safe, is copied into a terminal such as xterm or\n\t    gnome-terminal, then unexpected commands could be executed\n\t    on the local machine.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=968576"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-04-17",
+    "entry": "2014-04-18",
+    "modified": "2014-04-18"
+  }
+}

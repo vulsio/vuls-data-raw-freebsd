@@ -1,0 +1,55 @@
+{
+  "vid": "b060ee50-daba-11e3-99f2-bcaec565249c",
+  "topic": "libXfont -- X Font Service Protocol and Font metadata file handling issues",
+  "affects": [
+    {
+      "name": [
+        "libXfont"
+      ],
+      "range": [
+        {
+          "lt": "1.4.7_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c6-xorg-libs"
+      ],
+      "range": [
+        {
+          "lt": "7.4_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-f10-xorg-libs"
+      ],
+      "range": [
+        {
+          "ge": "*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Alan Coopersmith reports:</p>\n\t<blockquote cite=\"http://lists.x.org/archives/xorg-announce/2014-May/002431.html\">\n\t  <p>Ilja van Sprundel, a security researcher with IOActive, has\n\t    discovered several issues in the way the libXfont library\n\t    handles the responses it receives from xfs servers, and has\n\t    worked with X.Org's security team to analyze, confirm, and fix\n\t    these issues.</p>\n\t  <p>Most of these issues stem from libXfont trusting the font server\n\t    to send valid protocol data, and not verifying that the values\n\t    will not overflow or cause other damage.  This code is commonly\n\t    called from the X server when an X Font Server is active in the\n\t    font path, so may be running in a setuid-root process depending\n\t    on the X server in use.  Exploits of this path could be used by\n\t    a local, authenticated user to attempt to raise privileges; or\n\t    by a remote attacker who can control the font server to attempt\n\t    to execute code with the privileges of the X server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.x.org/archives/xorg-announce/2014-May/002431.html"
+    ],
+    "cvename": [
+      "CVE-2014-0209",
+      "CVE-2014-0210",
+      "CVE-2014-0211"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-05-13",
+    "entry": "2014-05-13",
+    "modified": "2015-07-15"
+  }
+}

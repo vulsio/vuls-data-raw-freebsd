@@ -1,0 +1,33 @@
+{
+  "vid": "8e8b8b94-7f1d-11dd-a66a-0019666436c2",
+  "topic": "rubygem-rails -- SQL injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "rubygem-rails"
+      ],
+      "range": [
+        {
+          "lt": "2.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jonathan Weiss reports, that it is possible\n\t  to perform an SQL injection in Rails applications\n\t  via not correctly sanitized :limit and :offset\n\t  parameters. It is possible to change arbitrary\n\t  values in affected tables or gain access to the\n\t  sensitive data.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.innerewut.de/2008/6/16/why-you-should-upgrade-to-rails-2-1"
+    ],
+    "cvename": [
+      "CVE-2008-4094"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-09-08",
+    "entry": "2008-09-10",
+    "modified": "2010-05-12"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "vid": "f5e52bf5-fc77-11db-8163-000e0c2e438a",
+  "topic": "php -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php5-imap",
+        "php5-odbc",
+        "php5-session",
+        "php5-shmop",
+        "php5-sqlite",
+        "php5-wddx",
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.2.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php4-odbc",
+        "php4-session",
+        "php4-shmop",
+        "php4-wddx",
+        "php4"
+      ],
+      "range": [
+        {
+          "lt": "4.4.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_php4-twig",
+        "mod_php4",
+        "mod_php5",
+        "mod_php",
+        "php4-cgi",
+        "php4-cli",
+        "php4-dtc",
+        "php4-horde",
+        "php4-nms",
+        "php5-cgi",
+        "php5-cli",
+        "php5-dtc",
+        "php5-horde",
+        "php5-nms"
+      ],
+      "range": [
+        {
+          "lt": "4.4.7",
+          "ge": "4"
+        },
+        {
+          "lt": "5.2.2",
+          "ge": "5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP development team reports:</p>\n\t<blockquote cite=\"http://www.php.net/releases/5_2_2.php\">\n\t  <p>Security Enhancements and Fixes in PHP 5.2.2 and PHP\n\t    4.4.7:</p>\n\t  <ul>\n\t    <li>Fixed CVE-2007-1001, GD wbmp used with invalid image\n\t      size</li>\n\t    <li>Fixed asciiz byte truncation inside mail()</li>\n\t    <li>Fixed a bug in mb_parse_str() that can be used to\n\t      activate register_globals</li>\n\t    <li>Fixed unallocated memory access/double free in in\n\t      array_user_key_compare()</li>\n\t    <li>Fixed a double free inside session_regenerate_id()</li>\n\t    <li>Added missing open_basedir &amp; safe_mode checks to zip://\n\t      and bzip:// wrappers.</li>\n\t    <li>Limit nesting level of input variables with\n\t      max_input_nesting_level as fix for.</li>\n\t    <li>Fixed CRLF injection inside ftp_putcmd().</li>\n\t    <li>Fixed a possible super-global overwrite inside\n\t      import_request_variables().</li>\n\t    <li>Fixed a remotely trigger-able buffer overflow inside\n\t      bundled libxmlrpc library.</li>\n\t  </ul>\n\t  <p>Security Enhancements and Fixes in PHP 5.2.2 only:</p>\n\t  <ul>\n\t    <li>Fixed a header injection via Subject and To parameters\n\t      to the mail() function</li>\n\t    <li>Fixed wrong length calculation in unserialize S\n\t      type.</li>\n\t    <li>Fixed substr_compare and substr_count information\n\t      leak.</li>\n\t    <li>Fixed a remotely trigger-able buffer overflow inside\n\t      make_http_soap_request().</li>\n\t    <li>Fixed a buffer overflow inside\n\t      user_filter_factory_create().</li>\n\t  </ul>\n\t  <p>Security Enhancements and Fixes in PHP 4.4.7 only:</p>\n\t  <ul>\n\t    <li>XSS in phpinfo()</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.php.net/releases/4_4_7.php",
+      "http://www.php.net/releases/5_2_2.php"
+    ],
+    "cvename": [
+      "CVE-2007-1001"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-05-03",
+    "entry": "2007-05-07",
+    "modified": "2014-04-01"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "vid": "f4ce64c2-5bd4-11e5-9040-3c970e169bc2",
+  "topic": "wordpress -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.3.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "ja-wordpress",
+        "ru-wordpress",
+        "zh-wordpress-zh_CN",
+        "zh-wordpress-zh_TW"
+      ],
+      "range": [
+        {
+          "lt": "4.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Samuel Sidler reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2015/09/wordpress-4-3-1/\">\n\t  <p>WordPress 4.3.1 is now available. This is a security\n\t    release for all previous versions and we strongly\n\t    encourage you to update your sites immediately.</p>\n\t  <ul>\n\t    <li>WordPress versions 4.3 and earlier are vulnerable\n\t      to a cross-site scripting vulnerability when processing\n\t      shortcode tags (CVE-2015-5714). Reported by Shahar Tal\n\t      and Netanel Rubin of <a href=\"http://checkpoint.com/\">Check Point</a>.</li>\n\t    <li>A separate cross-site scripting vulnerability was found\n\t      in the user list table. Reported by Ben Bidner of the\n\t      WordPress security team.</li>\n\t    <li>Finally, in certain cases, users without proper\n\t      permissions could publish private posts and make\n\t      them sticky (CVE-2015-5715). Reported by Shahar Tal\n\t      and Netanel Rubin of <a href=\"http://checkpoint.com/\">Check Point</a>.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/10/28/1",
+      "https://wordpress.org/news/2015/09/wordpress-4-3-1/"
+    ],
+    "cvename": [
+      "CVE-2015-5714",
+      "CVE-2015-5715",
+      "CVE-2015-7989"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-15",
+    "entry": "2015-09-15",
+    "modified": "2015-10-29"
+  }
+}

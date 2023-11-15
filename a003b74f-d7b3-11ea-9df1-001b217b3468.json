@@ -1,0 +1,36 @@
+{
+  "vid": "a003b74f-d7b3-11ea-9df1-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "13.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2020/08/05/gitlab-13-2-3-released/\">\n\t  <p>Arbitrary File Read when Moving an Issue</p>\n\t  <p>Memory Exhaustion via Excessive Logging of Invite Email Error</p>\n\t  <p>Denial of Service Through Project Import Feature</p>\n\t  <p>User Controlled Git Configuration Settings Resulting in SSRF</p>\n\t  <p>Stored XSS in Issue Reference Number Tooltip</p>\n\t  <p>Stored XSS in Issues List via Milestone Title</p>\n\t  <p>Improper Access Control After Group Transfer</p>\n\t  <p>Bypass Email Verification Required for OAuth Flow</p>\n\t  <p>Confusion When Using Hexadecimal Branch Names</p>\n\t  <p>Insufficient OAuth Revocation</p>\n\t  <p>Improper Access Control for Project Sharing</p>\n\t  <p>Stored XSS in Jobs Page</p>\n\t  <p>Improper Access Control of Applications Page</p>\n\t  <p>SSRF into Shared Runner</p>\n\t  <p>Update Kramdown Gem</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2020/08/05/gitlab-13-2-3-released/"
+    ],
+    "cvename": [
+      "CVE-2020-10977",
+      "CVE-2020-13280",
+      "CVE-2020-13281",
+      "CVE-2020-14001"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-08-05",
+    "entry": "2020-08-06",
+    "modified": "2020-08-25"
+  }
+}

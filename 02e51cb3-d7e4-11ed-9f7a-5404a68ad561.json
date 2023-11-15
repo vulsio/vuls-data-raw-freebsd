@@ -1,0 +1,34 @@
+{
+  "vid": "02e51cb3-d7e4-11ed-9f7a-5404a68ad561",
+  "topic": "traefik -- Use of vulnerable Go modules net/http, net/textproto",
+  "affects": [
+    {
+      "name": [
+        "traefik"
+      ],
+      "range": [
+        {
+          "lt": "2.9.9_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://pkg.go.dev/vuln/GO-2023-1704\">\n\t  <p>HTTP and MIME header parsing can allocate large amounts\n\t     of memory, even when parsing small inputs, potentially\n\t     leading to a denial of service. Certain unusual patterns\n\t     of input data can cause the common function used to parse\n\t     HTTP and MIME headers to allocate substantially more\n\t     memory than required to hold the parsed headers. An\n\t     attacker can exploit this behavior to cause an HTTP\n\t     server to allocate large amounts of memory from a small\n\t     request, potentially leading to memory exhaustion and a\n\t     denial of service. With fix, header parsing now correctly\n\t     allocates only the memory required to hold parsed headers.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.cve.org/CVERecord?id=CVE-2023-24534",
+      "https://www.cve.org/CVERecord?id=CVE-2023-29013"
+    ],
+    "cvename": [
+      "CVE-2023-24534",
+      "CVE-2023-29013"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-10",
+    "entry": "2023-04-07"
+  }
+}

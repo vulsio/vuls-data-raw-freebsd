@@ -1,0 +1,30 @@
+{
+  "vid": "ab0bab3c-2927-11ee-8608-07b8d3947721",
+  "topic": "gitea -- Disallow dangerous URL schemes",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.20.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/25960\">\n\t  <p>Disallow javascript, vbscript and data (data uri images still\n\t    work) url schemes even if all other schemes are allowed</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.gitea.com/release-of-1.20.1",
+      "https://github.com/go-gitea/gitea/releases/tag/v1.20.1"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-06-18",
+    "entry": "2023-07-23"
+  }
+}

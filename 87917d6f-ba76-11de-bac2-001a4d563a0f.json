@@ -1,0 +1,53 @@
+{
+  "vid": "87917d6f-ba76-11de-bac2-001a4d563a0f",
+  "topic": "django -- denial-of-service attack",
+  "affects": [
+    {
+      "name": [
+        "py23-django",
+        "py24-django",
+        "py25-django",
+        "py26-django",
+        "py30-django",
+        "py31-django"
+      ],
+      "range": [
+        {
+          "lt": "1.1.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py23-django-devel",
+        "py24-django-devel",
+        "py25-django-devel",
+        "py26-django-devel",
+        "py30-django-devel",
+        "py31-django-devel"
+      ],
+      "range": [
+        {
+          "lt": "11603,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Django project reports:</p>\n\t<blockquote cite=\"http://www.djangoproject.com/weblog/2009/oct/09/security/\">\n\t  <p>Django's forms library includes field types which perform\n\t    regular-expression-based validation of email addresses and\n\t    URLs. Certain addresses/URLs could trigger a pathological\n\t    performance case in these regular expression, resulting in\n\t    the server process/thread becoming unresponsive, and consuming\n\t    excessive CPU over an extended period of time. If deliberately\n\t    triggered, this could result in an effectively\n\t    denial-of-service attack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.djangoproject.com/weblog/2009/oct/09/security/"
+    ],
+    "cvename": [
+      "CVE-2009-3695"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-10-09",
+    "entry": "2009-10-16",
+    "modified": "2010-05-02"
+  }
+}

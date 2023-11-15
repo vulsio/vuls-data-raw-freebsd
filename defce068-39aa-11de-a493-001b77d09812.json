@@ -1,0 +1,45 @@
+{
+  "vid": "defce068-39aa-11de-a493-001b77d09812",
+  "topic": "wireshark -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ethereal",
+        "ethereal-lite",
+        "tethereal",
+        "tethereal-lite",
+        "wireshark",
+        "wireshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "1.0.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wireshark team reports:</p>\n\t<blockquote cite=\"http://www.wireshark.org/security/wnpa-sec-2009-02.html\">\n\t  <p>Wireshark 1.0.7 fixes the following vulnerabilities:</p>\n\t  <ul>\n\t    <li>The PROFINET dissector was vulnerable to a format\n\t      string overflow. (Bug 3382) Versions affected: 0.99.6 to\n\t      1.0.6, CVE-2009-1210.</li>\n\t    <li>The Check Point High-Availability Protocol (CPHAP)\n\t      dissector could crash. (Bug 3269) Versions affected: 0.9.6\n\t      to 1.0.6; CVE-2009-1268.</li>\n\t    <li>Wireshark could crash while loading a Tektronix .rf5\n\t      file. (Bug 3366) Versions affected: 0.99.6 to 1.0.6,\n\t      CVE-2009-1269.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.wireshark.org/security/wnpa-sec-2009-02.html",
+      "http://secunia.com/advisories/34542"
+    ],
+    "cvename": [
+      "CVE-2009-1210",
+      "CVE-2009-1268",
+      "CVE-2009-1269"
+    ],
+    "bid": [
+      "34291",
+      "34457"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-04-06",
+    "entry": "2009-05-09",
+    "modified": "2009-05-13"
+  }
+}

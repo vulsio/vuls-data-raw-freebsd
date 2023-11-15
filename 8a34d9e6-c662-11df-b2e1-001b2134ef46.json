@@ -1,0 +1,43 @@
+{
+  "vid": "8a34d9e6-c662-11df-b2e1-001b2134ef46",
+  "topic": "linux-flashplugin -- remote code execution",
+  "affects": [
+    {
+      "name": [
+        "linux-flashplugin"
+      ],
+      "range": [
+        {
+          "lt": "9.0r283"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-f8-flashplugin",
+        "linux-f10-flashplugin"
+      ],
+      "range": [
+        {
+          "lt": "10.1r85"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Adobe Product Security Incident Response Team reports:</p>\n\t<blockquote cite=\"http://www.adobe.com/support/security/advisories/apsa10-03.html\">\n\t  <p>A critical vulnerability exists in Adobe Flash Player\n\t    10.1.82.76 and earlier versions for Windows, Macintosh,\n\t    Linux, Solaris, and Adobe Flash Player 10.1.92.10 for\n\t    Android.  This vulnerability also affects Adobe Reader\n\t    9.3.4 and earlier versions for Windows, Macintosh and\n\t    UNIX, and Adobe Acrobat 9.3.4 and earlier versions for\n\t    Windows and Macintosh.  This vulnerability (CVE-2010-2884)\n\t    could cause a crash and potentially allow an attacker\n\t    to take control of the affected system.  There are\n\t    reports that this vulnerability is being actively\n\t    exploited in the wild against Adobe Flash Player on\n\t    Windows.  Adobe is not aware of any attacks exploiting\n\t    this vulnerability against Adobe Reader or Acrobat to\n\t    date.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.adobe.com/support/security/advisories/apsa10-03.html"
+    ],
+    "cvename": [
+      "CVE-2010-2884"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-09-14",
+    "entry": "2010-09-22"
+  }
+}

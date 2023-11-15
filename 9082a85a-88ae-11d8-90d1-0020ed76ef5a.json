@@ -1,0 +1,38 @@
+{
+  "vid": "9082a85a-88ae-11d8-90d1-0020ed76ef5a",
+  "topic": "jailed processes can attach to other jails",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "5.1_14",
+          "ge": "5.1"
+        },
+        {
+          "lt": "5.2.1",
+          "ge": "5.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A programming error has been found in the <a href=\"http://www.freebsd.org/cgi/man.cgi?query=jail_attach\">jail_attach(2)</a>\n\t  system call which affects the way that system call verifies\n\t  the privilege level of the calling process.  Instead of\n\t  failing immediately if the calling process was already\n\t  jailed, the jail_attach system call would fail only after\n\t  changing the calling process's root directory.</p>\n\t<p>A process with superuser privileges inside a jail could\n\t  change its root directory to that of a different jail,\n\t  and thus gain full read and write access to files and\n\t  directories within the target jail.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0126"
+    ],
+    "freebsd_sa": [
+      "SA-04:03.jail"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-02-19",
+    "entry": "2004-04-07",
+    "modified": "2004-05-05"
+  }
+}

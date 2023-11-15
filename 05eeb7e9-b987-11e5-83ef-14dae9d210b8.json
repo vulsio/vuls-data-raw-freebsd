@@ -1,0 +1,76 @@
+{
+  "vid": "05eeb7e9-b987-11e5-83ef-14dae9d210b8",
+  "topic": "isc-dhcpd -- Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "isc-dhcp41-server"
+      ],
+      "range": [
+        {
+          "lt": "4.1.e_10,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "isc-dhcp41-client"
+      ],
+      "range": [
+        {
+          "lt": "4.1.e_3,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "isc-dhcp41-relay"
+      ],
+      "range": [
+        {
+          "lt": "4.1.e_6,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "isc-dhcp42-client",
+        "isc-dhcp42-server",
+        "isc-dhcp42-relay"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "isc-dhcp43-client",
+        "isc-dhcp43-server",
+        "isc-dhcp43-relay"
+      ],
+      "range": [
+        {
+          "lt": "4.3.3.p1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01334\">\n\t  <p>A badly formed packet with an invalid IPv4 UDP length field\n\t    can cause a DHCP server, client, or relay program to terminate\n\t    abnormally.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/article/AA-01334"
+    ],
+    "cvename": [
+      "CVE-2015-8605"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-05",
+    "entry": "2016-01-12"
+  }
+}

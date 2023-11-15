@@ -1,0 +1,42 @@
+{
+  "vid": "2899da38-7300-11ed-92ce-3065ec8fd3ec",
+  "topic": "chromium -- Type confusion in V8",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "108.0.5359.94"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ungoogled-chromium"
+      ],
+      "range": [
+        {
+          "lt": "108.0.5359.94"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2022/12/stable-channel-update-for-desktop.html\">\n\t  <p>This release contains 1 security fix:</p>\n\t  <ul>\n\t    <li>[1394403] High CVE-2022-4262: Type Confusion in V8. Reported by Clement Lecigne of Google's Threat Analysis Group on 2022-11-29</li>\n\t  </ul>\n\t  <p>Google is aware that an exploit for CVE-2022-4262 exists in the wild.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2022/12/stable-channel-update-for-desktop.html"
+    ],
+    "cvename": [
+      "CVE-2022-4262"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-12-02",
+    "entry": "2022-12-03"
+  }
+}

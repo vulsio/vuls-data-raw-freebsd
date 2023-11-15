@@ -1,0 +1,29 @@
+{
+  "vid": "9f7ae7ea-da93-4f86-b257-ba76707f6d5d",
+  "topic": "zeek -- Various vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "3.0.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jon Siwek of Corelight reports:</p>\n\t<blockquote cite=\"https://raw.githubusercontent.com/zeek/zeek/v3.0.7/NEWS\">\n\t  <p>This release fixes the following security issues:</p>\n\t  <ul>\n\t  <li>\n\t  Fix potential stack overflow in NVT analyzer</li>\n\t  <li>\n\t  Fix NVT analyzer memory leak from multiple telnet authn name options</li>\n\t  <li>\n\t  Fix multiple content-transfer-encoding headers causing a memory leak</li>\n\t  <li>\n\t  Fix potential leak of Analyzers added to tree during Analyzer::Done</li>\n\t  <li>\n\t  Prevent IP fragment reassembly on packets without minimal IP header</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://raw.githubusercontent.com/zeek/zeek/v3.0.7/NEWS"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-05-04",
+    "entry": "2020-06-10"
+  }
+}

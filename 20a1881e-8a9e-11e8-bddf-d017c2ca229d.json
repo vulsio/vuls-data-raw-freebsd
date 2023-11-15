@@ -1,0 +1,48 @@
+{
+  "vid": "20a1881e-8a9e-11e8-bddf-d017c2ca229d",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.133"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "lt": "2.121.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2018-07-18/\">\n\t  <h1>Description</h1>\n\t  <h5>(High) SECURITY-897 / CVE-2018-1999001</h5>\n\t  <p>Users without Overall/Read permission can have Jenkins reset parts of global configuration on the next restart </p>\n\t  <h5>(High) SECURITY-914 / CVE-2018-1999002</h5>\n\t  <p>Arbitrary file read vulnerability</p>\n\t  <h5>(Medium) SECURITY-891 / CVE-2018-1999003</h5>\n\t  <p>Unauthorized users could cancel queued builds</p>\n\t  <h5>(Medium) SECURITY-892 / CVE-2018-1999004</h5>\n\t  <p>Unauthorized users could initiate and abort agent launches</p>\n\t  <h5>(Medium) SECURITY-944 / CVE-2018-1999005</h5>\n\t  <p>Stored XSS vulnerability</p>\n\t  <h5>(Medium) SECURITY-925 / CVE-2018-1999006</h5>\n\t  <p>Unauthorized users are able to determine when a plugin was extracted from its JPI package</p>\n\t  <h5>(Medium) SECURITY-390 / CVE-2018-1999007</h5>\n\t  <p>XSS vulnerability in Stapler debug mode</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jenkins.io/security/advisory/2018-07-18/"
+    ],
+    "cvename": [
+      "CVE-2018-1999001",
+      "CVE-2018-1999002",
+      "CVE-2018-1999003",
+      "CVE-2018-1999004",
+      "CVE-2018-1999005",
+      "CVE-2018-1999006",
+      "CVE-2018-1999007"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-07-18",
+    "entry": "2018-07-18"
+  }
+}

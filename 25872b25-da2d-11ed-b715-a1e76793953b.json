@@ -1,0 +1,114 @@
+{
+  "vid": "25872b25-da2d-11ed-b715-a1e76793953b",
+  "topic": "ghostscript -- exploitable buffer overflow in (T)BCP in PS interpreter",
+  "affects": [
+    {
+      "name": [
+        "ghostscript"
+      ],
+      "range": [
+        {
+          "lt": "10.01.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript7-base"
+      ],
+      "range": [
+        {
+          "lt": "10.01.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript7-commfont"
+      ],
+      "range": [
+        {
+          "lt": "10.01.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript7-jpnfont"
+      ],
+      "range": [
+        {
+          "lt": "10.01.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript7-korfont"
+      ],
+      "range": [
+        {
+          "lt": "10.01.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript7-x11"
+      ],
+      "range": [
+        {
+          "lt": "10.01.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript8-base"
+      ],
+      "range": [
+        {
+          "lt": "10.01.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript8-x11"
+      ],
+      "range": [
+        {
+          "lt": "10.01.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript9-agpl-base"
+      ],
+      "range": [
+        {
+          "lt": "9.56.1_10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2023/04/12/4\">\n\t  <p>In Artifex Ghostscript through 10.01.0, there is a buffer overflow\n\tleading to potential corruption of data internal to the PostScript\n\tinterpreter, in base/sbcp.c.  This affects BCPEncode, BCPDecode,\n\tTBCPEncode, and TBCPDecode.  If the write buffer is filled to one\n\tbyte less than full, and one then tries to write an escaped character,\n\ttwo bytes are written.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2023-28879",
+      "https://artifex.com/news/critical-security-vulnerability-fixed-in-ghostscript"
+    ],
+    "cvename": [
+      "CVE-2023-28879"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-23",
+    "entry": "2023-04-13",
+    "modified": "2023-04-28"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "7b5a8e3b-52cc-11e8-8c7a-9c5c8e75236a",
+  "topic": "wget -- cookie injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wget"
+      ],
+      "range": [
+        {
+          "lt": "1.19.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Harry Sintonen of F-Secure Corporation reports:</p>\n\t<blockquote cite=\"https://sintonen.fi/advisories/gnu-wget-cookie-injection.txt\">\n\t  <p>GNU Wget is susceptible to a malicious web server injecting arbitrary cookies to the cookie jar file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://sintonen.fi/advisories/gnu-wget-cookie-injection.txt"
+    ],
+    "cvename": [
+      "CVE-2018-0494"
+    ],
+    "freebsd_pr": [
+      "ports/228071"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-04-26",
+    "entry": "2018-05-08"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "vid": "4bfcd857-c628-11da-b2fb-000e0c2e438a",
+  "topic": "kaffeine -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "kaffeine"
+      ],
+      "range": [
+        {
+          "lt": "0.8.0",
+          "ge": "0.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The KDE team reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20060404-1.txt\">\n\t  <p>Kaffeine can produce a buffer overflow in http_peek() while\n\t    creating HTTP request headers for fetching remote playlists,\n\t    which under certain circumstances could be used to crash the\n\t    application and/or execute arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kde.org/info/security/advisory-20060404-1.txt"
+    ],
+    "cvename": [
+      "CVE-2006-0051"
+    ],
+    "bid": [
+      "17372"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-04-04",
+    "entry": "2006-04-07"
+  }
+}

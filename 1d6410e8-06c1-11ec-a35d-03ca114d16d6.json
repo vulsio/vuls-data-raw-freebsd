@@ -1,0 +1,32 @@
+{
+  "vid": "1d6410e8-06c1-11ec-a35d-03ca114d16d6",
+  "topic": "fetchmail -- STARTTLS bypass vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "fetchmail"
+      ],
+      "range": [
+        {
+          "lt": "6.4.22.r1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Problem:</p>\n\t<blockquote cite=\"https://www.fetchmail.info/fetchmail-SA-2021-02.txt\">\n\t  <p>In certain circumstances, fetchmail 6.4.21 and older would\n\t    not encrypt the session using STARTTLS/STLS, and might not have\n\t    cleared session state across the TLS negotiation.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.fetchmail.info/fetchmail-SA-2021-02.txt"
+    ],
+    "cvename": [
+      "CVE-2021-39272"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-08-10",
+    "entry": "2021-08-26"
+  }
+}

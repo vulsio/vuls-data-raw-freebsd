@@ -1,0 +1,41 @@
+{
+  "vid": "13031d98-9bd1-11e2-a7be-8c705af55518",
+  "topic": "FreeBSD -- BIND remote denial of service",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "9.0_7",
+          "ge": "9.0"
+        },
+        {
+          "lt": "9.1_2",
+          "ge": "9.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-13:04.bind.asc\">\n\t  <p>A flaw in a library used by BIND allows an\n\t    attacker to deliberately cause excessive memory\n\t    consumption by the named(8) process.  This\n\t    affects both recursive and authoritative\n\t    servers.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://kb.isc.org/article/AA-00871"
+    ],
+    "cvename": [
+      "CVE-2013-2266"
+    ],
+    "freebsd_sa": [
+      "SA-13:04.bind"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-04-02",
+    "entry": "2013-04-02",
+    "modified": "2016-08-09"
+  }
+}

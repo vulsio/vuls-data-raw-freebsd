@@ -1,0 +1,35 @@
+{
+  "vid": "8d4ae57d-d2ab-11da-a672-000e0c2e438a",
+  "topic": "xine -- multiple remote string vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "xine"
+      ],
+      "range": [
+        {
+          "lt": "0.99.4_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>c0ntexb reports:</p>\n\t<blockquote cite=\"http://www.open-security.org/advisories/16\">\n\t  <p>There are 2 format string bugs in the latest version of\n\t    Xine that could be exploited by a malicious person to\n\t    execute code on the system of a remote user running the\n\t    media player against a malicious playlist file.  By passing\n\t    a format specifier in the path of a file that is embedded\n\t    in a remote playlist, it is possible to trigger this bug.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.open-security.org/advisories/16"
+    ],
+    "cvename": [
+      "CVE-2006-1905"
+    ],
+    "bid": [
+      "17579"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-04-18",
+    "entry": "2006-04-23"
+  }
+}

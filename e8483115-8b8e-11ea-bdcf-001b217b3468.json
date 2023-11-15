@@ -1,0 +1,45 @@
+{
+  "vid": "e8483115-8b8e-11ea-bdcf-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "12.10.2",
+          "ge": "12.10.0"
+        },
+        {
+          "lt": "12.9.5",
+          "ge": "12.9.0"
+        },
+        {
+          "lt": "12.8.10",
+          "ge": "8.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2020/04/30/security-release-12-10-2-released/\">\n\t  <p>Path Traversal in NuGet Package Registry</p>\n\t  <p>Workhorse Bypass Leads to File Disclosure</p>\n\t  <p>OAuth Application Client Secrets Revealed</p>\n\t  <p>Code Owners Approval Rules Are Not Updated for Existing Merge Requests When Source Branch Changes</p>\n\t  <p>Code Owners Protection Not Enforced from Web UI</p>\n\t  <p>Repository Mirror Passwords Exposed To Maintainers</p>\n\t  <p>Admin Audit Log Page Denial of Service</p>\n\t  <p>Private Project ID Revealed Through Group API</p>\n\t  <p>Elasticsearch Credentials Logged to ELK</p>\n\t  <p>GitHub Personal Access Token Exposed on Integrations Page</p>\n\t  <p>Update Nokogiri dependency</p>\n\t  <p>Update OpenSSL Dependency</p>\n\t  <p>Update git</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2020/04/30/security-release-12-10-2-released/"
+    ],
+    "cvename": [
+      "CVE-2020-12448",
+      "CVE-2020-10187",
+      "CVE-2020-7595",
+      "CVE-2020-1967",
+      "CVE-2020-11008"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-30",
+    "entry": "2020-05-01"
+  }
+}

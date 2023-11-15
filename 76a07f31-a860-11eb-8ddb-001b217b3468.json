@@ -1,0 +1,33 @@
+{
+  "vid": "76a07f31-a860-11eb-8ddb-001b217b3468",
+  "topic": "Carrierwave -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "rubygem-carrierwave"
+      ],
+      "range": [
+        {
+          "lt": "1.3.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Community reports:</p>\n\t<blockquote cite=\"https://github.com/carrierwaveuploader/carrierwave/blob/master/CHANGELOG.md#132---2021-02-08\">\n\t  <p>Fix Code Injection vulnerability in CarrierWave::RMagick</p>\n\t  <p>Fix SSRF vulnerability in the remote file download feature</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/carrierwaveuploader/carrierwave/blob/master/CHANGELOG.md#132---2021-02-08"
+    ],
+    "cvename": [
+      "CVE-2021-21288",
+      "CVE-2021-21305"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-02-08",
+    "entry": "2021-04-28"
+  }
+}

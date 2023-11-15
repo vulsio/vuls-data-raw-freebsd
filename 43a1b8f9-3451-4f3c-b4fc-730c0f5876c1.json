@@ -1,0 +1,37 @@
+{
+  "vid": "43a1b8f9-3451-4f3c-b4fc-730c0f5876c1",
+  "topic": "sam2p -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "sam2p"
+      ],
+      "range": [
+        {
+          "lt": "0.49.3,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>sam2p developers report:</p>\n\t<blockquote cite=\"https://github.com/pts/sam2p/issues/14\">\n\t  <p>In sam2p 0.49.3, a heap-based buffer overflow exists in the pcxLoadImage24 function of the file in_pcx.cpp.</p>\n\t  <p>In sam2p 0.49.3, the in_xpm_reader function in in_xpm.cpp has an integer signedness error, leading to a crash when writing to an out-of-bounds array element.</p>\n\t  <p>In sam2p 0.49.3, an integer overflow exists in the pcxLoadImage24 function of the file in_pcx.cpp, leading to an invalid write operation.</p>\n\t  <p>In sam2p 0.49.3, the pcxLoadRaster function in in_pcx.cpp has an integer signedness error leading to a heap-based buffer overflow.</p>\n\t  <p>Because of an integer overflow in sam2p 0.49.3, a loop executes 0xffffffff times, ending with an invalid read of size 1 in the Image::Indexed::sortPal function in image.cpp. However, this also causes memory corruption because of an attempted write to the invalid d[0xfffffffe] array element.</p>\n\t  <p>In sam2p 0.49.3, there is an invalid read of size 2 in the parse_rgb function in in_xpm.cpp. However, this can also cause a write to an illegal address.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/pts/sam2p/issues/14"
+    ],
+    "cvename": [
+      "CVE-2017-14628",
+      "CVE-2017-14629",
+      "CVE-2017-14630",
+      "CVE-2017-14631",
+      "CVE-2017-14636",
+      "CVE-2017-14637"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-09-21",
+    "entry": "2017-09-28"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "e3f64457-cccd-11e2-af76-206a8a720317",
+  "topic": "krb5 -- UDP ping-pong vulnerability in the kpasswd (password changing) service. [CVE-2002-2443]",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "le": "1.11.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>No advisory has been released yet.</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/www/krb5-1.11/\">\n\t  <p>schpw.c in the kpasswd service in kadmind in MIT Kerberos 5\n\t  (aka krb5) before 1.11.3 does not properly validate UDP packets\n\t  before sending responses, which allows remote attackers to cause\n\t  a denial of service (CPU and bandwidth consumption) via a forged\n\t  packet that triggers a communication loop, as demonstrated by\n\t  krb_pingpong.nasl, a related issue to CVE-1999-0103.\n\t  [CVE-2002-2443].</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/www/krb5-1.11/"
+    ],
+    "cvename": [
+      "CVE-2002-2443"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-05-10",
+    "entry": "2013-06-03"
+  }
+}

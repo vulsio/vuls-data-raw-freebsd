@@ -1,0 +1,30 @@
+{
+  "vid": "5af511e5-e928-11e5-92ce-002590263bf5",
+  "topic": "php7 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php70",
+        "php70-soap"
+      ],
+      "range": [
+        {
+          "lt": "7.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP Group reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-7.php#7.0.4\">\n\t  <ul><li>Core:\n\t  <ul>\n\t    <li>Fixed bug #71637 (Multiple Heap Overflow due to integer\n\t      overflows in xml/filter_url/addcslashes).</li>\n\t  </ul></li>\n\t  <li>SOAP:\n\t  <ul>\n\t    <li>Fixed bug #71610 (Type Confusion Vulnerability - SOAP /\n\t      make_http_soap_request()).</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-7.php#7.0.4"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-03-03",
+    "entry": "2016-03-13"
+  }
+}

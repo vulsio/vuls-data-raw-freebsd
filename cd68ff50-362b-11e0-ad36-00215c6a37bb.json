@@ -1,0 +1,40 @@
+{
+  "vid": "cd68ff50-362b-11e0-ad36-00215c6a37bb",
+  "topic": "phpMyAdmin -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.3.9.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "phpMyAdmin211"
+      ],
+      "range": [
+        {
+          "lt": "2.11.11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpMyAdmin team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-2.php\">\n\t  <p>It was possible to create a bookmark which would be executed\n\t    unintentionally by other users.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-1.php\">\n\t  <p>When the files README, ChangeLog or LICENSE have been removed\n\t    from their original place (possibly by the distributor), the\n\t    scripts used to display these files can show their full path,\n\t    leading to possible further attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-2.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-1.php"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-02-08",
+    "entry": "2011-02-11"
+  }
+}

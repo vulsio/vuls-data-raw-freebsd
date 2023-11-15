@@ -1,0 +1,73 @@
+{
+  "vid": "96eab874-9c79-11e8-b34b-6cc21735f730",
+  "topic": "PostgreSQL -- two vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "postgresql10-server"
+      ],
+      "range": [
+        {
+          "lt": "10.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql96-server"
+      ],
+      "range": [
+        {
+          "lt": "9.6.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql95-server"
+      ],
+      "range": [
+        {
+          "lt": "9.5.14"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql94-server"
+      ],
+      "range": [
+        {
+          "lt": "9.4.19"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql93-server"
+      ],
+      "range": [
+        {
+          "lt": "9.3.24"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1878/\">\n\t  <p>CVE-2018-10915: Certain host connection parameters defeat\n\t  client-side security defenses</p>\n\t  <p>libpq, the client connection API for PostgreSQL that is also used\n\t  by other connection libraries, had an internal issue where it did not\n\t  reset all of its connection state variables when attempting to\n\t  reconnect. In particular, the state variable that determined whether\n\t  or not a password is needed for a connection would not be reset, which\n\t  could allow users of features requiring libpq, such as the \"dblink\" or\n\t  \"postgres_fdw\" extensions, to login to servers they should not be able\n\t  to access.</p>\n\t  <p>CVE-2018-10925: Memory disclosure and missing authorization in\n\t  `INSERT ... ON CONFLICT DO UPDATE`</p>\n\t  <p>An attacker able to issue CREATE TABLE can read arbitrary bytes of\n\t  server memory using an upsert (`INSERT ... ON CONFLICT DO UPDATE`)\n\t  query.  By default, any user can exploit that. A user that has\n\t  specific INSERT privileges and an UPDATE privilege on at least one\n\t  column in a given table can also update other columns using a view and\n\t  an upsert query.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.postgresql.org/about/news/1878/"
+    ],
+    "cvename": [
+      "CVE-2018-10915",
+      "CVE-2018-10925"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-09",
+    "entry": "2018-08-10"
+  }
+}

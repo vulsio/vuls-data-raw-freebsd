@@ -1,0 +1,37 @@
+{
+  "vid": "51d1282d-420e-11e7-82c5-14dae9d210b8",
+  "topic": "FreeBSD -- ipfilter(4) fragment handling panic",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "11.0_10",
+          "ge": "11.0"
+        },
+        {
+          "lt": "10.3_19",
+          "ge": "10.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>ipfilter(4), capable of stateful packet inspection, using\n\tthe \"keep state\" or \"keep frags\" rule options, will not\n\tonly maintain the state of connections, such as TCP streams\n\tor UDP communication, it also maintains the state of\n\tfragmented packets. When a packet fragments are received\n\tthey are cached in a hash table (and linked list). When a\n\tfragment is received it is compared with fragments already\n\tcached in the hash table for a match. If it does not match\n\tthe new entry is used to create a new entry in the hash\n\ttable. If on the other hand it does match, unfortunately\n\tthe wrong entry is freed, the entry in the hash table. This\n\tresults in use after free panic (and for a brief moment\n\tprior to the panic a memory leak due to the wrong entry\n\tbeing freed).</p>\n\t<h1>Impact:</h1>\n\t<p>Carefully feeding fragments that are allowed to pass by\n\tan ipfilter(4) firewall can be used to cause a panic followed\n\tby reboot loop denial of service attack.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2017-1081"
+    ],
+    "freebsd_sa": [
+      "SA-17:04.ipfilter"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-04-27",
+    "entry": "2017-05-26"
+  }
+}

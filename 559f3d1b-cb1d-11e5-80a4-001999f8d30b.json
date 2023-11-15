@@ -1,0 +1,57 @@
+{
+  "vid": "559f3d1b-cb1d-11e5-80a4-001999f8d30b",
+  "topic": "asterisk -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk"
+      ],
+      "range": [
+        {
+          "lt": "1.8.32.3_5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk11"
+      ],
+      "range": [
+        {
+          "lt": "11.21.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>AST-2016-001 - BEAST vulnerability in HTTP server</p>\n\t  <p>AST-2016-002 - File descriptor exhaustion in chan_sip</p>\n\t  <p>AST-2016-003 - Remote crash vulnerability when receiving UDPTL FAX data</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://downloads.asterisk.org/pub/security/AST-2016-001.html",
+      "http://downloads.asterisk.org/pub/security/AST-2016-002.html",
+      "http://downloads.asterisk.org/pub/security/AST-2016-003.html"
+    ],
+    "cvename": [
+      "CVE-2011-3389",
+      "CVE-2016-2316",
+      "CVE-2016-2232"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-03",
+    "entry": "2016-02-04",
+    "modified": "2016-03-07"
+  }
+}

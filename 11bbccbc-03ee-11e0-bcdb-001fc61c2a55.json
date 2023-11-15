@@ -1,0 +1,41 @@
+{
+  "vid": "11bbccbc-03ee-11e0-bcdb-001fc61c2a55",
+  "topic": "krb5 -- multiple checksum handling vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2",
+          "ge": "1.3.0"
+        },
+        {
+          "ge": "1.8.0",
+          "le": "1.8.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The MIT Kerberos team reports:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-007.txt\">\n\t  <p>MIT krb5 clients incorrectly accept an unkeyed checksums\n\t    in the SAM-2 preauthentication challenge.</p>\n\t  <p>An unauthenticated remote attacker could alter a SAM-2 challenge,\n\t    affecting the prompt text seen by the user or the kind of response\n\t    sent to the KDC.  Under some circumstances, this can negate the\n\t    incremental security benefit of using a single-use authentication\n\t    mechanism token.</p>\n\t  <p>MIT krb5 incorrectly accepts RFC 3961 key-derivation checksums\n\t    using RC4 keys when verifying KRB-SAFE messages.</p>\n\t  <p>An unauthenticated remote attacker has a 1/256 chance of forging\n\t    KRB-SAFE messages in an application protocol if the targeted\n\t    pre-existing session uses an RC4 session key.  Few application\n\t    protocols use KRB-SAFE messages.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-007.txt",
+      "http://osvdb.org/69610"
+    ],
+    "cvename": [
+      "CVE-2010-1323"
+    ],
+    "bid": [
+      "45118"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-11-30",
+    "entry": "2010-12-09"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "vid": "9f15c2da-947e-11ea-92ab-00163e433440",
+  "topic": "FreeBSD -- Use after free in cryptodev module",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.1_5",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.3_9",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A race condition permitted a data structure in the kernel to be used\n\tafter it was freed by the cryptodev module.</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged process can overwrite arbitrary kernel memory.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-15879"
+    ],
+    "freebsd_sa": [
+      "SA-20:15.cryptodev"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-20",
+    "entry": "2020-05-12"
+  }
+}

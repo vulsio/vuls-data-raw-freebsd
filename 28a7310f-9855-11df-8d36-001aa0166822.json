@@ -1,0 +1,35 @@
+{
+  "vid": "28a7310f-9855-11df-8d36-001aa0166822",
+  "topic": "apache -- Remote DoS bug in mod_cache and mod_dav",
+  "affects": [
+    {
+      "name": [
+        "apache"
+      ],
+      "range": [
+        {
+          "lt": "2.2.16",
+          "ge": "2.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Apache ChangeLog reports:</p>\n\t<blockquote cite=\"http://www.apache.org/dist/httpd/CHANGES_2.2.16\">\n\t  <p>mod_dav, mod_cache: Fix Handling of requests without a path segment.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.apache.org/dist/httpd/CHANGES_2.2.16",
+      "https://issues.apache.org/bugzilla/show_bug.cgi?id=49246",
+      "http://svn.apache.org/viewvc?view=revision&revision=966349"
+    ],
+    "cvename": [
+      "CVE-2010-1452"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-07-21",
+    "entry": "2010-07-26"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "vid": "2f90556f-18c6-11e4-9cc4-5453ed2e2b49",
+  "topic": "kdelibs -- KAuth PID Reuse Flaw",
+  "affects": [
+    {
+      "name": [
+        "kdelibs"
+      ],
+      "range": [
+        {
+          "lt": "4.12.5_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Martin Sandsmark reports:</p>\n\t<blockquote cite=\"http://lists.kde.org/?l=kde-announce&amp;m=140674898412923&amp;w=2\">\n\t  <p>The KAuth framework uses polkit-1 API which tries to authenticate\n\t    using the requestors PID. This is prone to PID reuse race\n\t    conditions.</p>\n\t  <p>This potentially allows a malicious application to pose as another\n\t    for authentication purposes when executing privileged actions.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-5033"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.kde.org/?l=kde-announce&m=140674898412923&w=2"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2014-07-30",
+    "entry": "2014-07-31"
+  }
+}

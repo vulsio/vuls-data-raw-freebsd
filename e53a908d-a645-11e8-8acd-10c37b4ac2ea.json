@@ -1,0 +1,31 @@
+{
+  "vid": "e53a908d-a645-11e8-8acd-10c37b4ac2ea",
+  "topic": "gogs -- open redirect vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gogs"
+      ],
+      "range": [
+        {
+          "lt": "0.11.53_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>bluecatli (Tencent's Xuanwu Lab) reports:</p>\n\t<blockquote cite=\"https://github.com/gogs/gogs/issues/5364\">\n\t  <p>The function isValidRedirect in gogs/routes/user/auth.go is used in login action to validate if url is on the same site.</p>\n\t  <p>If the Location header startswith /\\, it will be transformed to // by browsers.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/gogs/gogs/issues/5364",
+      "https://github.com/gogs/gogs/pull/5365",
+      "https://github.com/gogs/gogs/commit/1f247cf8139cb483276cd8dd06385a800ce9d4b2"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-06",
+    "entry": "2018-08-22"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "cf40e8b7-264d-11ee-a468-80fa5b29d485",
+  "topic": "virtualbox-ose -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "virtualbox-ose"
+      ],
+      "range": [
+        {
+          "lt": "6.1.46"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>secalert_us@oracle.com reports:</p>\n\t<blockquote cite=\"https://www.oracle.com/security-alerts/cpujul2023.html\">\n\t  <p>Vulnerability in the Oracle VM VirtualBox product of Oracle\n\tVirtualization (component: Core).  Supported versions that are\n\taffected are Prior to 6.1.46 and Prior to 7.0.10.  Easily exploitable\n\tvulnerability allows low privileged attacker with logon to the\n\tinfrastructure where Oracle VM VirtualBox executes to compromise\n\tOracle VM VirtualBox.  Successful attacks of this vulnerability can\n\tresult in unauthorized ability to cause a hang or frequently\n\trepeatable crash (complete DOS) of Oracle VM VirtualBox.  Note:\n\tThis vulnerability applies to Windows VMs only.  CVSS 3.1 Base Score\n\t5.5 (Availability impacts).  CVSS Vector:\n\t(CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2023-22017"
+    ],
+    "cvename": [
+      "CVE-2023-22017"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-07-18",
+    "entry": "2023-07-19"
+  }
+}

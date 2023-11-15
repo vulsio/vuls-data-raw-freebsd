@@ -1,0 +1,47 @@
+{
+  "vid": "8688d5cd-328c-11da-a263-0001020eed82",
+  "topic": "cfengine -- arbitrary file overwriting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "cfengine"
+      ],
+      "range": [
+        {
+          "lt": "2.1.6_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "cfengine2"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Debian Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-835\">\n\t  <p>Javier Fernández-Sanguino Peña discovered several\n\t    insecure temporary file uses in cfengine, a tool for\n\t    configuring and maintaining networked machines, that can\n\t    be exploited by a symlink attack to overwrite arbitrary\n\t    files owned by the user executing cfengine, which is\n\t    probably root.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.debian.org/security/2005/dsa-835",
+      "http://www.debian.org/security/2005/dsa-836"
+    ],
+    "cvename": [
+      "CVE-2005-2960"
+    ],
+    "bid": [
+      "14994"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-10-01",
+    "entry": "2005-10-01",
+    "modified": "2005-10-07"
+  }
+}

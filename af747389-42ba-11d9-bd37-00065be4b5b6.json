@@ -1,0 +1,41 @@
+{
+  "vid": "af747389-42ba-11d9-bd37-00065be4b5b6",
+  "topic": "mod_access_referer -- null pointer dereference vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mod_access_referer"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A malformed <q>Referer</q> header field causes the Apache\n\t  ap_parse_uri_components function to discard it with the\n\t  result that a pointer is not initialized.  The\n\t  mod_access_referer module does not take this into account\n\t  with the result that it may use such a pointer.</p>\n\t<p>The null pointer vulnerability may possibly be used in a\n\t  remote denial of service attack against affected Apache\n\t  servers.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/8612/"
+    ],
+    "cvename": [
+      "CVE-2003-1054"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=105053485515811"
+      }
+    ],
+    "bid": [
+      "7375"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-04-16",
+    "entry": "2004-12-11",
+    "modified": "2005-01-19"
+  }
+}

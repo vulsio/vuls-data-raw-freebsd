@@ -1,0 +1,44 @@
+{
+  "vid": "4740174c-82bb-11e8-a29a-00e04c1ea73d",
+  "topic": "wordpress -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "wordpress",
+        "fr-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.9.7,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "zh_CN-wordpress",
+        "zh_TW-wordpress",
+        "ja-wordpress",
+        "ru-wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.9.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>wordpressdevelopers reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2018/07/wordpress-4-9-7-security-and-maintenance-release/\">\n\t  <p>Taxonomy: Improve cache handling for term queries.</p>\n\t  <p>Posts, Post Types: Clear post password cookie when logging out.</p>\n\t  <p>Widgets: Allow basic HTML tags in sidebar descriptions on Widgets admin screen.</p>\n\t  <p>Community Events Dashboard: Always show the nearest WordCamp if one is coming up, even if there are multiple Meetups happening first.</p>\n\t  <p>Privacy: Make sure default privacy policy content does not cause a fatal error when flushing rewrite rules outside of the admin context.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wordpress.org/news/2018/07/wordpress-4-9-7-security-and-maintenance-release/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-07-05",
+    "entry": "2018-07-08"
+  }
+}

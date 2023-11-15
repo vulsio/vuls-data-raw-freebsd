@@ -1,0 +1,37 @@
+{
+  "vid": "d1ac6a6a-bea8-11eb-b87a-901b0ef719ab",
+  "topic": "FreeBSD-kernel -- SMAP bypass",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "13.0_1",
+          "ge": "13.0"
+        },
+        {
+          "lt": "12.2_7",
+          "ge": "12.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The FreeBSD kernel enables SMAP during boot when the CPU reports that\n\tthe SMAP capability is present.  Subroutines such as copyin() and\n\tcopyout() are responsible for disabling SMAP around the sections of code\n\tthat perform user memory accesses.</p>\n\t<p>Such subroutines must handle page faults triggered when user memory is\n\tnot mapped.  The kernel's page fault handler checks the validity of the\n\tfault, and if it is indeed valid it will map a page and resume copying.\n\tIf the fault is invalid, the fault handler returns control to a\n\ttrampoline which aborts the operation and causes an error to be\n\treturned.  In this second scenario, a bug in the implementation of SMAP\n\tsupport meant that SMAP would remain disabled until the thread returns\n\tto user mode.</p>\n\t<h1>Impact:</h1>\n\t<p>This bug may be used to bypass the protections provided by SMAP for the\n\tduration of a system call.  It could thus be combined with other kernel\n\tbugs to craft an exploit.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2021-29628"
+    ],
+    "freebsd_sa": [
+      "SA-21:11.smap"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-27",
+    "entry": "2021-05-27"
+  }
+}

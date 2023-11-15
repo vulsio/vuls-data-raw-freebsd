@@ -1,0 +1,45 @@
+{
+  "vid": "9bdd8eb5-564a-11e5-9ad8-14dae9d210b8",
+  "topic": "wireshark -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wireshark",
+        "wireshark-lite",
+        "wireshark-qt5",
+        "tshark",
+        "tshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "1.12.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wireshark development team reports:</p>\n\t<blockquote cite=\"https://www.wireshark.org/docs/relnotes/wireshark-1.12.7.html\">\n\t  <p>The following vulnerabilities have been fixed.</p>\n\t  <ul>\n\t    <li><p>wnpa-sec-2015-21</p>\n\t      <p>Protocol tree crash. (Bug 11309)</p></li>\n\t    <li><p>wnpa-sec-2015-22</p>\n\t      <p>Memory manager crash. (Bug 11373)</p></li>\n\t    <li><p>wnpa-sec-2015-23</p>\n\t      <p>Dissector table crash. (Bug 11381)</p></li>\n\t    <li><p>wnpa-sec-2015-24</p>\n\t      <p>ZigBee crash. (Bug 11389)</p></li>\n\t    <li><p>wnpa-sec-2015-25</p>\n\t      <p>GSM RLC/MAC infinite loop. (Bug 11358)</p></li>\n\t    <li><p>wnpa-sec-2015-26</p>\n\t      <p>WaveAgent crash. (Bug 11358)</p></li>\n\t    <li><p>wnpa-sec-2015-27</p>\n\t      <p>OpenFlow infinite loop. (Bug 11358)</p></li>\n\t    <li><p>wnpa-sec-2015-28</p>\n\t      <p>Ptvcursor crash. (Bug 11358)</p></li>\n\t    <li><p>wnpa-sec-2015-29</p>\n\t      <p>WCCP crash. (Bug 11358)</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.wireshark.org/docs/relnotes/wireshark-1.12.7.html"
+    ],
+    "cvename": [
+      "CVE-2015-6241",
+      "CVE-2015-6242",
+      "CVE-2015-6243",
+      "CVE-2015-6244",
+      "CVE-2015-6245",
+      "CVE-2015-6246",
+      "CVE-2015-6247",
+      "CVE-2015-6248",
+      "CVE-2015-6249"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-12",
+    "entry": "2015-09-08",
+    "modified": "2015-09-08"
+  }
+}

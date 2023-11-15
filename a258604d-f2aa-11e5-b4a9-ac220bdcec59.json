@@ -1,0 +1,32 @@
+{
+  "vid": "a258604d-f2aa-11e5-b4a9-ac220bdcec59",
+  "topic": "activemq -- Unsafe deserialization",
+  "affects": [
+    {
+      "name": [
+        "activemq"
+      ],
+      "range": [
+        {
+          "lt": "5.13.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Alvaro Muatoz, Matthias Kaiser and Christian Schneider reports:</p>\n\t<blockquote cite=\"http://activemq.apache.org/security-advisories.data/CVE-2015-5254-announcement.txt\">\n\t  <p>JMS Object messages depends on Java Serialization for\n\t    marshaling/unmashaling of the message payload. There are a couple of places\n\t    inside the broker where deserialization can occur, like web console or stomp\n\t    object message transformation. As deserialization of untrusted data can lead to\n\t    security flaws as demonstrated in various reports, this leaves the broker\n\t    vulnerable to this attack vector. Additionally, applications that consume\n\t    ObjectMessage type of messages can be vulnerable as they deserialize objects on\n\t    ObjectMessage.getObject() calls.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://activemq.apache.org/security-advisories.data/CVE-2015-5254-announcement.txt"
+    ],
+    "cvename": [
+      "CVE-2015-5254"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-08",
+    "entry": "2016-03-25"
+  }
+}

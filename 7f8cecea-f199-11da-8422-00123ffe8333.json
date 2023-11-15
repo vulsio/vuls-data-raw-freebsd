@@ -1,0 +1,39 @@
+{
+  "vid": "7f8cecea-f199-11da-8422-00123ffe8333",
+  "topic": "MySQL -- SQL-injection security vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mysql-server"
+      ],
+      "range": [
+        {
+          "ge": "5.1",
+          "le": "5.1.9"
+        },
+        {
+          "lt": "5.0.22",
+          "ge": "5.0"
+        },
+        {
+          "lt": "4.1.20",
+          "ge": "4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MySQL reports:</p>\n\t<blockquote cite=\"http://lists.mysql.com/announce/364\">\n\t  <p>An SQL-injection security hole has been found in multibyte\n\t    encoding processing. An SQL-injection security hole can include a\n\t    situation whereby when inserting user supplied data into a\n\t    database, the user might inject his own SQL statements that the\n\t    server will execute. With regards to this vulnerability discovered,\n\t    when character set unaware escaping is used (e.g., addslashes() in\n\t    PHP), it is possible to bypass it in some multibyte character sets\n\t    (e.g., SJIS, BIG5 and GBK). As a result, a function like\n\t    addslashes() is not able to prevent SQL injection attacks. It is\n\t    impossible to fix this on the server side. The best solution is for\n\t    applications to use character set aware escaping offered in a\n\t    function like mysql_real_escape().</p>\n\t  <p>Workarounds:</p>\n\t    <p>One can use NO_BACKSLASH_ESCAPES mode as a workaround for a bug\n\t      in mysql_real_escape_string(), if you cannot upgrade your server\n\t      for some reason. It will enable SQL standard compatibility mode,\n\t      where backslash is not considered a special character.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.mysql.com/announce/364",
+      "http://lists.mysql.com/announce/365"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-05-31",
+    "entry": "2006-06-01"
+  }
+}

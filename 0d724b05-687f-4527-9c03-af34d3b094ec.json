@@ -1,0 +1,51 @@
+{
+  "vid": "0d724b05-687f-4527-9c03-af34d3b094ec",
+  "topic": "ImageMagick -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ImageMagick",
+        "ImageMagick-nox11"
+      ],
+      "range": [
+        {
+          "lt": "6.9.3.9_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ImageMagick7",
+        "ImageMagick7-nox11"
+      ],
+      "range": [
+        {
+          "lt": "7.0.1.0_1",
+          "ge": "7.0.0.0.b20150715"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Openwall reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/05/03/18\">\n\t  <p>Insufficient filtering for filename passed to delegate's command\n\t    allows remote code execution during conversion of several file\n\t    formats. Any service which uses ImageMagick to process user\n\t    supplied images and uses default delegates.xml / policy.xml,\n\t    may be vulnerable to this issue.</p>\n\t  <p>It is possible to make ImageMagick perform a HTTP GET or FTP\n\t    request</p>\n\t  <p>It is possible to delete files by using ImageMagick's 'ephemeral'\n\t    pseudo protocol which deletes files after reading.</p>\n\t  <p>It is possible to move image files to file with any extension\n\t    in any folder by using ImageMagick's 'msl' pseudo protocol.\n\t    msl.txt and image.gif should exist in known location - /tmp/\n\t    for PoC (in real life it may be web service written in PHP,\n\t    which allows to upload raw txt files and process images with\n\t    ImageMagick).</p>\n\t  <p>It is possible to get content of the files from the server\n\t    by using ImageMagick's 'label' pseudo protocol.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2016/05/03/18",
+      "https://imagetragick.com/"
+    ],
+    "cvename": [
+      "CVE-2016-3714",
+      "CVE-2016-3715",
+      "CVE-2016-3716",
+      "CVE-2016-3717",
+      "CVE-2016-3718"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-03",
+    "entry": "2016-05-06",
+    "modified": "2016-05-07"
+  }
+}

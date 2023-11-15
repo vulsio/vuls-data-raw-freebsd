@@ -1,0 +1,32 @@
+{
+  "vid": "59a43a73-3786-11ee-94b4-6cc21735f730",
+  "topic": "postgresql-server -- MERGE fails to enforce UPDATE or SELECT row security policies",
+  "affects": [
+    {
+      "name": [
+        "postgresql-server"
+      ],
+      "range": [
+        {
+          "lt": "15.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PostgreSQL Project reports</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2023-39418/\">\n\t  <p>\n\t    PostgreSQL 15 introduced the MERGE command, which fails to test\n\t    new rows against row security policies defined for UPDATE and\n\t    SELECT. If UPDATE and SELECT policies forbid some row that\n\t    INSERT policies do not forbid, a user could store such rows.\n\t    Subsequent consequences are application-dependent. This\n\t    affects only databases that have used CREATE POLICY to define\n\t    a row security policy.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.postgresql.org/support/security/CVE-2023-39418/"
+    ],
+    "cvename": [
+      "CVE-2023-39418"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-08-10",
+    "entry": "2023-08-10"
+  }
+}

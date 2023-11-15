@@ -1,0 +1,43 @@
+{
+  "vid": "a23ebf36-e8b6-4665-b0f3-4c977f9a145c",
+  "topic": "security/py-ecdsa -- multiple issues",
+  "affects": [
+    {
+      "name": [
+        "py27-ecdsa"
+      ],
+      "range": [
+        {
+          "le": "0.13.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py37-ecdsa"
+      ],
+      "range": [
+        {
+          "le": "0.13.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>py-ecdsa developers report:</p>\n\t<blockquote cite=\"https://github.com/warner/python-ecdsa/releases/tag/python-ecdsa-0.13.3\">\n\t  <p>Fix CVE-2019-14853 - possible DoS caused by malformed signature decoding.</p>\n\t  <p>Fix CVE-2019-14859 - signature malleability caused by insufficient checks of DER encoding</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/warner/python-ecdsa/releases/tag/python-ecdsa-0.13.3"
+    ],
+    "cvename": [
+      "CVE-2019-14853",
+      "CVE-2019-14859"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-07",
+    "entry": "2020-08-16"
+  }
+}

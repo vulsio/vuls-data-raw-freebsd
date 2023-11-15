@@ -1,0 +1,30 @@
+{
+  "vid": "fc55e396-6deb-11df-8b8e-000c29ba66d2",
+  "topic": "mediawiki -- two security vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mediawiki"
+      ],
+      "range": [
+        {
+          "lt": "1.15.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Two security vulnerabilities were discovered:</p>\n\t<blockquote cite=\"http://lists.wikimedia.org/pipermail/mediawiki-announce/2010-May/000091.html\">\n\t  <p>Noncompliant CSS parsing behaviour in Internet Explorer\n\t    allows attackers to construct CSS strings which are treated\n\t    as safe by previous versions of MediaWiki, but are decoded\n\t    to unsafe strings by Internet Explorer.</p>\n\t  <p>A CSRF vulnerability was discovered in our login interface.\n\t    Although regular logins are protected as of 1.15.3,  it was\n\t    discovered that the account creation and password reset\n\t    reset features were not protected from CSRF. This could lead\n\t    to unauthorised access to private wikis.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/39922/",
+      "http://lists.wikimedia.org/pipermail/mediawiki-announce/2010-May/000091.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-05-28",
+    "entry": "2010-06-02"
+  }
+}

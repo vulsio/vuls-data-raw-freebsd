@@ -1,0 +1,33 @@
+{
+  "vid": "4b673ae7-5f9a-11dc-84dd-000102cc8983",
+  "topic": "lighttpd -- FastCGI header overrun in mod_fastcgi",
+  "affects": [
+    {
+      "name": [
+        "lighttpd"
+      ],
+      "range": [
+        {
+          "lt": "1.4.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>lighttpd maintainer reports:</p>\n\t<blockquote cite=\"http://www.lighttpd.net/assets/2007/9/9/lighttpd_sa_2007_12.txt\">\n\t  <p>Lighttpd is prone to a header overflow when using the mod_fastcgi\n\t    extension, this can lead to arbitrary code execution in the fastcgi\n\t    application. For a detailed description of the bug see the external\n\t    reference.</p>\n\t  <p>This bug was found by Mattias Bengtsson and Philip Olausson</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.lighttpd.net/assets/2007/9/9/lighttpd_sa_2007_12.txt",
+      "http://secweb.se/en/advisories/lighttpd-fastcgi-remote-vulnerability/"
+    ],
+    "cvename": [
+      "CVE-2007-4727"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-09-09",
+    "entry": "2007-09-10"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "6779e82f-b60b-11da-913d-000ae42e9b93",
+  "topic": "drupal -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "drupal"
+      ],
+      "range": [
+        {
+          "lt": "3.6.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Drupal reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/53806\">\n\t  <p>Mail header injection vulnerability.</p>\n\t  <p>Linefeeds and carriage returns were not being stripped from\n\t    email headers, raising the possibility of bogus headers\n\t    being inserted into outgoing email.</p>\n\t  <p>This could lead to Drupal sites being used to send unwanted\n\t    email.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/53805\">\n\t  <p>Session fixation vulnerability.</p>\n\t  <p>If someone creates a clever enough URL and convinces you to\n\t    click on it, and you later log in but you do not log off\n\t    then the attacker may be able to impersonate you.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/53803\">\n\t  <p>XSS vulnerabilities.</p>\n\t  <p>Some user input sanity checking was missing. This could\n\t    lead to possible cross-site scripting (XSS) attacks.</p>\n\t  <p>XSS can lead to user tracking and theft of accounts and\n\t    services.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/53796\">\n\t  <p>Security bypass in menu.module.</p>\n\t  <p>If you use menu.module to create a menu item, the page you\n\t    point to will be accessible to all, even if it is an admin\n\t    page.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/53806",
+      "http://drupal.org/node/53805",
+      "http://drupal.org/node/53803",
+      "http://drupal.org/node/53796"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-03-13",
+    "entry": "2006-03-17"
+  }
+}

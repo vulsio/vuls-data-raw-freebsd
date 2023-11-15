@@ -1,0 +1,35 @@
+{
+  "vid": "9b5162de-6f39-11e8-818e-e8e0b747a45a",
+  "topic": "libgcrypt -- side-channel attack vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libgcrypt"
+      ],
+      "range": [
+        {
+          "lt": "1.8.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GnuPG reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0495\">\n\t  <p>Mitigate a local side-channel attack on ECDSA signature as described in the white paper \"Return on the Hidden Number Problem\".</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.nccgroup.trust/us/our-research/technical-advisory-return-of-the-hidden-number-problem/",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0495",
+      "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.7.4-relnotes.txt"
+    ],
+    "cvename": [
+      "CVE-2018-0495"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-13",
+    "entry": "2018-06-13",
+    "modified": "2018-06-14"
+  }
+}

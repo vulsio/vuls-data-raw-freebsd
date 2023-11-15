@@ -1,0 +1,36 @@
+{
+  "vid": "594eb447-e398-11d9-a8bd-000cf18bbe54",
+  "topic": "ruby -- arbitrary command execution on XMLRPC server",
+  "affects": [
+    {
+      "name": [
+        "ruby",
+        "ruby_static"
+      ],
+      "range": [
+        {
+          "lt": "1.8.2_3",
+          "gt": "1.8.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Nobuhiro IMAI reports:</p>\n\t<blockquote cite=\"http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/5237\">\n\t  <p>the default value modification on\n\t    Module#public_instance_methods (from false to true) breaks\n\t    s.add_handler(XMLRPC::iPIMethods(\"sample\"), MyHandler.new) style\n\t    security protection.</p>\n\t  <p>This problem could allow a remote attacker to execute arbitrary\n\t    commands on XMLRPC server of libruby.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/5237",
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=315064"
+    ],
+    "cvename": [
+      "CVE-2005-1992"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-06-22",
+    "entry": "2005-06-23",
+    "modified": "2005-11-06"
+  }
+}

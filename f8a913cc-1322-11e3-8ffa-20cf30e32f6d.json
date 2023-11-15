@@ -1,0 +1,41 @@
+{
+  "vid": "f8a913cc-1322-11e3-8ffa-20cf30e32f6d",
+  "topic": "svnserve is vulnerable to a local privilege escalation vulnerability via symlink attack.",
+  "affects": [
+    {
+      "name": [
+        "subversion"
+      ],
+      "range": [
+        {
+          "lt": "1.6.23_2",
+          "ge": "1.4.0"
+        },
+        {
+          "lt": "1.7.13",
+          "ge": "1.7.0"
+        },
+        {
+          "lt": "1.8.3",
+          "ge": "1.8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Subversion Project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2013-4277-advisory.txt\">\n\t  <p>svnserve takes a --pid-file option which creates a file containing the\n\t    process id it is running as.  It does not take steps to ensure that the file\n\t    it has been directed at is not a symlink.  If the pid file is in a directory\n\t    writeable by unprivileged users, the destination could be replaced by a\n\t    symlink allowing for privilege escalation.  svnserve does not create a pid\n\t    file by default.</p>\n\t  <p>All versions are only vulnerable when the --pid-file=ARG option is used.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://subversion.apache.org/security/CVE-2013-4277-advisory.txt"
+    ],
+    "cvename": [
+      "CVE-2013-4277"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-08-30",
+    "entry": "2013-09-02"
+  }
+}

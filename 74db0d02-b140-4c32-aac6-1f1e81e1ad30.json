@@ -1,0 +1,34 @@
+{
+  "vid": "74db0d02-b140-4c32-aac6-1f1e81e1ad30",
+  "topic": "dovecot -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "dovecot"
+      ],
+      "range": [
+        {
+          "lt": "2.3.9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-February/000431.html\">\n\t  <p>lib-smtp doesn't handle truncated command parameters properly, resulting\nin infinite loop taking 100% CPU for the process. This happens for LMTP\n(where it doesn't matter so much) and also for submission-login where\nunauthenticated users can trigger it. </p>\n\t</blockquote>\n\t<p>Aki also  reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-February/000430.html\">\n\t  <p>Snippet generation crashes if:\n\n     message is large enough that message-parser returns multiple body\nblocks\n    The first block(s) don't contain the full snippet (e.g. full of\nwhitespace)\n    input ends with '&gt;'\n\t</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://dovecot.org/pipermail/dovecot-news/2020-February/000430.html",
+      "https://dovecot.org/pipermail/dovecot-news/2020-February/000431.html"
+    ],
+    "cvename": [
+      "CVE-2020-7046",
+      "CVE-2020-7967"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-14",
+    "entry": "2020-02-13"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "vid": "b2ff68b2-9f29-11db-a4e4-0211d87675b7",
+  "topic": "mplayer -- buffer overflow in the code for RealMedia RTSP streams.",
+  "affects": [
+    {
+      "name": [
+        "mplayer",
+        "mplayer-esound",
+        "mplayer-gtk",
+        "mplayer-gtk2",
+        "mplayer-gtk-esound",
+        "mplayer-gtk2-esound"
+      ],
+      "range": [
+        {
+          "lt": "0.99.10_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"http://www.mplayerhq.hu/design7/news.html\">\n\t<p>A potential buffer overflow was found in the code used to handle\n\tRealMedia RTSP streams. When checking for matching asm rules, the code\n\tstores the results in a fixed-size array, but no boundary checks are\n\tperformed. This may lead to a buffer overflow if the user is tricked\n\tinto connecting to a malicious server. Since the attacker cannot write\n\tarbitrary data into the buffer, creating an exploit is very hard; but a\n\tDoS attack is easily made.\n\tA fix for this problem was committed to SVN on Sun Dec 31 13:27:53 2006\n\tUTC as r21799. The fix involves three files: stream/realrtsp/asmrp.c,\n\tstream/realrtsp/asmrp.h and stream/realrtsp/real.c.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mplayerhq.hu/design7/news.html"
+    ],
+    "cvename": [
+      "CVE-2006-6172"
+    ],
+    "freebsd_pr": [
+      "ports/107217"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-12-31",
+    "entry": "2007-01-08"
+  }
+}

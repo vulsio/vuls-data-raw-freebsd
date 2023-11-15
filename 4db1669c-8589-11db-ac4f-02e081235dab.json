@@ -1,0 +1,34 @@
+{
+  "vid": "4db1669c-8589-11db-ac4f-02e081235dab",
+  "topic": "gnupg -- remotely controllable function pointer",
+  "affects": [
+    {
+      "name": [
+        "gnupg"
+      ],
+      "range": [
+        {
+          "lt": "1.4.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Werner Koch reports:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2006q4/000491.html\">\n\t  <p>GnuPG uses data structures called filters to process\n\t    OpenPGP messages.  These filters are used in a similar\n\t    way as a pipelines in the shell.  For communication\n\t    between these filters context structures are used.\tThese\n\t    are usually allocated on the stack and passed to the\n\t    filter functions.  At most places the OpenPGP data stream\n\t    fed into these filters is closed before the context\n\t    structure gets deallocated.  While decrypting encrypted\n\t    packets, this may not happen in all cases and the filter\n\t    may use a void contest structure filled with garbage.  An\n\t    attacker may control this garbage.\tThe filter context\n\t    includes another context used by the low-level decryption\n\t    to access the decryption algorithm.  This is done using a\n\t    function pointer.  By carefully crafting an OpenPGP\n\t    message, an attacker may control this function pointer and\n\t    call an arbitrary function of the process.\tObviously an\n\t    exploit needs to prepared for a specific version,\n\t    compiler, libc, etc to be successful - but it is\n\t    definitely doable.</p>\n\t  <p>Fixing this is obvious: We need to allocate the context on\n\t    the heap and use a reference count to keep it valid as\n\t    long as either the controlling code or the filter code\n\t    needs it.</p>\n\t  <p>We have checked all other usages of such a stack based\n\t    filter contexts but fortunately found no other vulnerable\n\t    places.  This allows to release a relatively small patch.\n\t    However, for reasons of code cleanness and easier audits\n\t    we will soon start to change all these stack based filter\n\t    contexts to heap based ones.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.gnupg.org/pipermail/gnupg-announce/2006q4/000246.html",
+      "http://secunia.com/advisories/23245/"
+    ],
+    "cvename": [
+      "CVE-2006-6235"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-12-04",
+    "entry": "2006-12-07",
+    "modified": "2006-12-15"
+  }
+}

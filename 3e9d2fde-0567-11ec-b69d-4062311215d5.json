@@ -1,0 +1,41 @@
+{
+  "vid": "3e9d2fde-0567-11ec-b69d-4062311215d5",
+  "topic": "FreeBSD -- Remote code execution in ggatec(8)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "13.0_4",
+          "ge": "13.0"
+        },
+        {
+          "lt": "12.2_10",
+          "ge": "12.2"
+        },
+        {
+          "lt": "11.4_13",
+          "ge": "11.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The ggatec(8) daemon does not validate the size of a response before writing\n\tit to a fixed-sized buffer.  This allows to overwrite the stack of ggatec(8).</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious ggated(8) or an attacker in a priviledged network position can\n\toverwrite the stack with crafted content and potentially execute arbitrary\n\tcode.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2021-29630"
+    ],
+    "freebsd_sa": [
+      "SA-21:14.ggatec"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-08-24",
+    "entry": "2021-08-25"
+  }
+}

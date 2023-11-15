@@ -1,0 +1,49 @@
+{
+  "vid": "7488378d-6007-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- Remote command execution in ftp(1)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.0_12",
+          "ge": "10.0"
+        },
+        {
+          "lt": "9.3_5",
+          "ge": "9.3"
+        },
+        {
+          "lt": "9.2_15",
+          "ge": "9.2"
+        },
+        {
+          "lt": "9.1_22",
+          "ge": "9.1"
+        },
+        {
+          "lt": "8.4_19",
+          "ge": "8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A malicious HTTP server could cause ftp(1) to execute\n\tarbitrary commands.</p>\n\t<h1>Impact:</h1>\n\t<p>When operating on HTTP URIs, the ftp(1) client follows\n\tHTTP redirects, and uses the part of the path after the\n\tlast '/' from the last resource it accesses as the output\n\tfilename if '-o' is not specified.</p>\n\t<p>If the output file name provided by the server begins\n\twith a pipe ('|'), the output is passed to popen(3), which\n\tmight be used to execute arbitrary commands on the ftp(1)\n\tclient machine.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-8517"
+    ],
+    "freebsd_sa": [
+      "SA-14:26.ftp"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-04",
+    "entry": "2016-08-11"
+  }
+}

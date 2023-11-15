@@ -1,0 +1,35 @@
+{
+  "vid": "25b78bdd-25b8-11ec-a341-d4c9ef517024",
+  "topic": "Apache httpd -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.50",
+          "ge": "2.4.49"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache http server project reports:</p>\n\t<blockquote cite=\"https://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <ul>\n\t    <li>moderate: null pointer dereference in h2 fuzzing\n\t      (CVE-2021-41524)</li>\n\t    <li>important: Path traversal and file disclosure vulnerability in\n\t      Apache HTTP Server 2.4.49 (CVE-2021-41773)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://httpd.apache.org/security/vulnerabilities_24.html"
+    ],
+    "cvename": [
+      "CVE-2021-41524",
+      "CVE-2021-41773"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-10-05",
+    "entry": "2021-10-05",
+    "modified": "2021-10-06"
+  }
+}

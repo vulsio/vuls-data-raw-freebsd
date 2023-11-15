@@ -1,0 +1,33 @@
+{
+  "vid": "e50b04e8-9c55-11d8-9366-0020ed76ef5a",
+  "topic": "xine-lib arbitrary file overwrite",
+  "affects": [
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.0.r3_5",
+          "gt": "0.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>From the xinehq advisory:</p>\n\t<blockquote cite=\"http://www.xinehq.de/index.php/security/XSA-2004-1\">\n\t  <p>By opening a malicious MRL in any xine-lib based media\n\t    player, an attacker can write arbitrary content to an\n\t    arbitrary file, only restricted by the permissions of the\n\t    user running the application.</p>\n\t</blockquote>\n\t<p>The flaw is a result of a feature that allows MRLs (media\n\t  resource locator URIs) to specify arbitrary configuration\n\t  options.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.xinehq.de/index.php/security/XSA-2004-1"
+    ],
+    "bid": [
+      "10193"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-04-20",
+    "entry": "2004-05-02"
+  }
+}

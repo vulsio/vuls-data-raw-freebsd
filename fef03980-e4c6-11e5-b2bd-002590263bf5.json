@@ -1,0 +1,48 @@
+{
+  "vid": "fef03980-e4c6-11e5-b2bd-002590263bf5",
+  "topic": "wordpress -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.4.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "ja-wordpress",
+        "ru-wordpress",
+        "zh-wordpress-zh_CN",
+        "zh-wordpress-zh_TW"
+      ],
+      "range": [
+        {
+          "lt": "4.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Samuel Sidler reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2016/02/wordpress-4-4-2-security-and-maintenance-release/\">\n\t  <p>WordPress 4.4.2 is now available. This is a security release for\n\t    all previous versions and we strongly encourage you to update your\n\t    sites immediately.</p>\n\t  <p>WordPress versions 4.4.1 and earlier are affected by two security\n\t    issues: a possible SSRF for certain local URIs, reported by Ronni\n\t    Skansing; and an open redirection attack, reported by Shailesh\n\t    Suthar.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2016/02/04/6",
+      "https://wordpress.org/news/2016/02/wordpress-4-4-2-security-and-maintenance-release/"
+    ],
+    "cvename": [
+      "CVE-2016-2221",
+      "CVE-2016-2222"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-02",
+    "entry": "2016-03-08"
+  }
+}

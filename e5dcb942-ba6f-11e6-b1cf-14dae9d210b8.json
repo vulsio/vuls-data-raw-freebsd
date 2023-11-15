@@ -1,0 +1,39 @@
+{
+  "vid": "e5dcb942-ba6f-11e6-b1cf-14dae9d210b8",
+  "topic": "py-cryptography -- vulnerable HKDF key generation",
+  "affects": [
+    {
+      "name": [
+        "py27-cryptography",
+        "py33-cryptography",
+        "py34-cryptography",
+        "py35-cryptography"
+      ],
+      "range": [
+        {
+          "lt": "1.5.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Alex Gaynor reports:</p>\n\t<blockquote cite=\"https://github.com/pyca/cryptography/commit/b94cacf2ae6e75e4007a79709bbf5360435b512d\">\n\t  <p>Fixed a bug where ``HKDF`` would return an empty\n\t    byte-string if used with a ``length`` less than\n\t    ``algorithm.digest_size``.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/pyca/cryptography/commit/b94cacf2ae6e75e4007a79709bbf5360435b512d"
+    ],
+    "cvename": [
+      "CVE-2016-9243"
+    ],
+    "freebsd_pr": [
+      "ports/214915"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-05",
+    "entry": "2016-12-04",
+    "modified": "2016-12-06"
+  }
+}

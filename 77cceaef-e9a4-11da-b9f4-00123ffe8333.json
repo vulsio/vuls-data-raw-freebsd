@@ -1,0 +1,34 @@
+{
+  "vid": "77cceaef-e9a4-11da-b9f4-00123ffe8333",
+  "topic": "coppermine -- File Inclusion Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "coppermine"
+      ],
+      "range": [
+        {
+          "lt": "1.4.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/18941/\">\n\t  <p>Coppermine Photo Gallery have a vulnerability, which can be\n\t    exploited by malicious people and by malicious users to compromise\n\t    a vulnerable system.</p>\n\t  <p>1) Input passed to the \"lang\" parameter in include/init.inc.php\n\t    isn't properly verified, before it is used to include files. This\n\t    can be exploited to include arbitrary files from local resources.\n\t    The vulnerability can be further exploited by users who are allowed\n\t    to upload image files to execute arbitrary PHP code.</p>\n\t  <p>2) Input passed to the \"f\" parameter in docs/showdoc.php isn't\n\t    properly verified, before it is used to include files. This can be\n\t    exploited to include arbitrary files from local resources on the\n\t    Windows platform, and remote files from Windows shared folders.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://retrogod.altervista.org/cpg_143_adv.html",
+      "http://secunia.com/advisories/18941/"
+    ],
+    "cvename": [
+      "CVE-2006-0872",
+      "CVE-2006-0873"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-02-20",
+    "entry": "2006-05-22"
+  }
+}

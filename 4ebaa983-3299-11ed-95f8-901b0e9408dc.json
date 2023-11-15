@@ -1,0 +1,29 @@
+{
+  "vid": "4ebaa983-3299-11ed-95f8-901b0e9408dc",
+  "topic": "dendrite -- Signature checks not applied to some retrieved missing events",
+  "affects": [
+    {
+      "name": [
+        "dendrite"
+      ],
+      "range": [
+        {
+          "lt": "0.9.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dendrite team reports:</p>\n\t<blockquote cite=\"https://github.com/matrix-org/dendrite/security/advisories/GHSA-pfw4-xjgm-267c\">\n\t  <p>Events retrieved from a remote homeserver using /get_missing_events did\n\t  not have their signatures verified correctly. This could potentially allow\n\t  a remote homeserver to provide invalid/modified events to Dendrite via this\n\t  endpoint.</p>\n\t  <p>Note that this does not apply to events retrieved through other endpoints\n\t  (e.g. /event, /state) as they have been correctly verified.</p>\n\t  <p>Homeservers that have federation disabled are not vulnerable.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/matrix-org/dendrite/security/advisories/GHSA-pfw4-xjgm-267c"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-09-12",
+    "entry": "2022-09-12"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "vid": "1613db79-8e52-11da-8426-000fea0a9611",
+  "topic": "kpopup -- local root exploit and local denial of service",
+  "affects": [
+    {
+      "name": [
+        "kpopup"
+      ],
+      "range": [
+        {
+          "ge": "0.9.1",
+          "le": "0.9.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre CVE reports:</p>\n\t<blockquote cite=\"http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-1170\">\n\t  <p>Format string vulnerability in main.cpp in kpopup\n\t    0.9.1-0.9.5pre2 allows local users to cause a denial of\n\t    service (segmentation fault) and possibly execute\n\t    arbitrary code via format string specifiers in command\n\t    line arguments.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-1167\">\n\t  <p>misc.cpp in KPopup 0.9.1 trusts the PATH variable when\n\t    executing killall, which allows local users to elevate\n\t    their privileges by modifying the PATH variable to\n\t    reference a malicious killall program.</p>\n\t</blockquote>\n\t<p>SecurityFocus credits \"b0f\" b0fnet@yahoo.com</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securityfocus.com/archive/1/342736",
+      "http://www.henschelsoft.de/kpopup_en.html"
+    ],
+    "cvename": [
+      "CVE-2003-1170",
+      "CVE-2003-1167"
+    ],
+    "bid": [
+      "8918",
+      "8915"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-10-28",
+    "entry": "2006-02-07"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "vid": "882a38f9-17dd-11ec-b335-d4c9ef517024",
+  "topic": "Apache httpd -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.49"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache project reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <ul>\n\t    <li>moderate: Request splitting via HTTP/2 method injection and\n\t      mod_proxy (CVE-2021-33193)</li>\n\t    <li>moderate: NULL pointer dereference in httpd core\n\t      (CVE-2021-34798)</li>\n\t    <li>moderate: mod_proxy_uwsgi out of bound read (CVE-2021-36160)</li>\n\t    <li>low: ap_escape_quotes buffer overflow (CVE-2021-39275)</li>\n\t    <li>high: mod_proxy SSRF (CVE-2021-40438)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://httpd.apache.org/security/vulnerabilities_24.html"
+    ],
+    "cvename": [
+      "CVE-2021-33193",
+      "CVE-2021-34798",
+      "CVE-2021-36160",
+      "CVE-2021-39275",
+      "CVE-2021-40438"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-09-16",
+    "entry": "2021-09-17",
+    "modified": "2021-09-28"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "vid": "a0afb4b9-89a1-11dd-a65b-00163e000016",
+  "topic": "squirrelmail -- Session hijacking vulnerability",
+  "affects": [
+    {
+      "name": [
+        "squirrelmail"
+      ],
+      "range": [
+        {
+          "le": "1.4.15_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Hanno Boeck reports:</p>\n\t<blockquote cite=\"http://seclists.org/bugtraq/2008/Sep/0239.html\">\n\t  <p>When configuring a web application to use only ssl (e.g. by\n\t    forwarding all http-requests to https), a user would expect that\n\t    sniffing and hijacking the session is impossible.</p>\n\t  <p>Though, for this to be secure, one needs to set the session\n\t    cookie to have the secure flag.  Otherwise the cookie will be\n\t    transferred through HTTP if the victim's browser does a single\n\t    HTTP request on the same domain.</p>\n\t  <p>Squirrelmail does not set that flag.  It is fixed in the 1.5\n\t    test versions, but current 1.4.15 is vulnerable.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2008-3663"
+    ],
+    "mlist": [
+      {
+        "text": "http://seclists.org/bugtraq/2008/Sep/0239.html"
+      }
+    ],
+    "bid": [
+      "31321"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-08-12",
+    "entry": "2008-09-23"
+  }
+}

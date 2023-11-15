@@ -1,0 +1,32 @@
+{
+  "vid": "e359051d-90bd-11e5-bd18-002590263bf5",
+  "topic": "a2ps -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "a2ps"
+      ],
+      "range": [
+        {
+          "lt": "4.13b_8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jong-Gwon Kim reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/11/16/4\">\n\t  <p>When user runs a2ps with malicious crafted pro(a2ps prologue) file,\n\t    an attacker can execute arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/11/16/4"
+    ],
+    "cvename": [
+      "CVE-2015-8107"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-11-16",
+    "entry": "2015-11-22"
+  }
+}

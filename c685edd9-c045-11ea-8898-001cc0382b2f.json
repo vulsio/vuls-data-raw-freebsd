@@ -1,0 +1,29 @@
+{
+  "vid": "c685edd9-c045-11ea-8898-001cc0382b2f",
+  "topic": "Mbed TLS -- Side-channel attack on ECC key import and validation",
+  "affects": [
+    {
+      "name": [
+        "mbedtls"
+      ],
+      "range": [
+        {
+          "lt": "2.16.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Manuel Pégourié-Gonnard reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-07\">\n\t  <p>The scalar multiplication function in Mbed TLS accepts a random\n\t    number generator (RNG) as an optional argument and, if provided,\n\t    uses it to protect against some attacks.</p>\n\t  <p>It is the caller's responsibility to provide a RNG if protection\n\t    against side-channel attacks is desired; however two groups of\n\t    functions in Mbed TLS itself fail to pass a RNG:</p>\n\t  <ol>\n\t    <li>mbedtls_pk_parse_key() and mbedtls_pk_parse_keyfile()</li>\n\t    <li>mbedtls_ecp_check_pub_priv() and mbedtls_pk_check_pair()</li>\n\t  </ol>\n\t  <p>When those functions are called, scalar multiplication is computed\n\t    without randomisation, a number of old and new attacks apply,\n\t    allowing a powerful local attacker to fully recover the private\n\t    key.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-07"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-01",
+    "entry": "2020-07-07"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vid": "8581189c-bd5f-11de-8709-0017a4cccfc6",
+  "topic": "Xpdf -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "xpdf"
+      ],
+      "range": [
+        {
+          "lt": "3.02_11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/507261\">\n\t  <p>Some vulnerabilities have been reported in Xpdf, which can be\n\t    exploited by malicious people to potentially compromise a user's\n\t    system.</p>\n\t  <p>1) Multiple integer overflows in \"SplashBitmap::SplashBitmap()\"\n\t    can be exploited to cause heap-based buffer overflows.</p>\n\t  <p>2) An integer overflow error in \"ObjectStream::ObjectStream()\"\n\t    can be exploited to cause a heap-based buffer overflow.</p>\n\t  <p>3) Multiple integer overflows in \"Splash::drawImage()\" can be\n\t    exploited to cause heap-based buffer overflows.</p>\n\t  <p>4) An integer overflow error in \"PSOutputDev::doImageL1Sep()\"\n\t    can be exploited to cause a heap-based buffer overflow when\n\t    converting a PDF document to a PS file.</p>\n\t  <p>Successful exploitation of the vulnerabilities may allow execution\n\t    of arbitrary code by tricking a user into opening a specially crafted\n\t    PDF file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.securityfocus.com/archive/1/507261",
+      "http://secunia.com/advisories/37053/"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-10-14",
+    "entry": "2009-10-20"
+  }
+}

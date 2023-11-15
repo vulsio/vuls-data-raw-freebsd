@@ -1,0 +1,53 @@
+{
+  "vid": "07f3fe15-a9de-11d9-a788-0001020eed82",
+  "topic": "php -- readfile() DoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mod_php4-twig",
+        "php4-cgi",
+        "php4-cli",
+        "php4-dtc",
+        "php4-horde",
+        "php4-nms",
+        "php4"
+      ],
+      "range": [
+        {
+          "lt": "4.3.5_7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_php",
+        "mod_php4"
+      ],
+      "range": [
+        {
+          "lt": "4.3.5_7,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A SUSE Security advisory reports:</p>\n\t<blockquote cite=\"http://www.novell.com/linux/security/advisories/2005_06_sr.html\">\n\t  <p>A bug in the readfile() function of php4 could be used to\n\t    to crash the httpd running the php4 code when accessing\n\t    files with a multiple of the architectures page size\n\t    leading to a denial of service.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.php.net/bug.php?id=27037",
+      "http://www.novell.com/linux/security/advisories/2005_06_sr.html"
+    ],
+    "cvename": [
+      "CVE-2005-0596"
+    ],
+    "bid": [
+      "12665"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-01-25",
+    "entry": "2005-04-10"
+  }
+}

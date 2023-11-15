@@ -1,0 +1,37 @@
+{
+  "vid": "79217c9b-e1d9-11d9-b875-0001020eed82",
+  "topic": "opera -- XMLHttpRequest security bypass",
+  "affects": [
+    {
+      "name": [
+        "linux-opera",
+        "opera-devel",
+        "opera"
+      ],
+      "range": [
+        {
+          "lt": "8.01",
+          "gt": "8.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15008/\">\n\t  <p>Secunia Research has discovered a vulnerability in Opera,\n\t    which can be exploited by malicious people to steal\n\t    content or to perform actions on other web sites with the\n\t    privileges of the user.</p>\n\t  <p>Normally, it should not be possible for the\n\t    <code>XMLHttpRequest</code> object to access resources\n\t    from outside the domain of which the object was\n\t    opened. However, due to insufficient validation of server\n\t    side redirects, it is possible to circumvent this\n\t    restriction.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/15008/",
+      "http://secunia.com/secunia_research/2005-4/advisory/",
+      "http://www.opera.com/freebsd/changelogs/801/#security"
+    ],
+    "cvename": [
+      "CVE-2005-1475"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-06-16",
+    "entry": "2005-06-20"
+  }
+}

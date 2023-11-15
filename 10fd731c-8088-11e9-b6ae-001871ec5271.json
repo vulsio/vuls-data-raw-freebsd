@@ -1,0 +1,44 @@
+{
+  "vid": "10fd731c-8088-11e9-b6ae-001871ec5271",
+  "topic": "cyrus-imapd -- buffer overrun in httpd",
+  "affects": [
+    {
+      "name": [
+        "cyrus-imapd30"
+      ],
+      "range": [
+        {
+          "lt": "3.0.10",
+          "ge": "3.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "cyrus-imapd25"
+      ],
+      "range": [
+        {
+          "lt": "2.5.13",
+          "ge": "2.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cyrus IMAP 3.0.10 Release Notes states:</p>\n\t<blockquote cite=\"https://www.cyrusimap.org/imap/download/release-notes/3.0/x/3.0.10.html\">\n\t  <p>Fixed CVE-2019-11356: buffer overrun in httpd</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11356"
+    ],
+    "cvename": [
+      "CVE-2019-11356"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-04-19",
+    "entry": "2019-05-27"
+  }
+}

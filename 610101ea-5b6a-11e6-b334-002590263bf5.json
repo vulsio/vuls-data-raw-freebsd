@@ -1,0 +1,44 @@
+{
+  "vid": "610101ea-5b6a-11e6-b334-002590263bf5",
+  "topic": "wireshark -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wireshark",
+        "wireshark-lite",
+        "wireshark-qt5",
+        "tshark",
+        "tshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.0.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wireshark development team reports:</p>\n\t<blockquote cite=\"https://www.wireshark.org/docs/relnotes/wireshark-2.0.5.html\">\n\t  <p>The following vulnerabilities have been fixed:</p>\n\t  <ul>\n\t    <li><p>wnpa-sec-2016-41</p>\n\t      <p>PacketBB crash. (Bug 12577)</p></li>\n\t    <li><p>wnpa-sec-2016-42</p>\n\t      <p>WSP infinite loop. (Bug 12594)</p></li>\n\t    <li><p>wnpa-sec-2016-44</p>\n\t      <p>RLC long loop. (Bug 12660)</p></li>\n\t    <li><p>wnpa-sec-2016-45</p>\n\t      <p>LDSS dissector crash. (Bug 12662)</p></li>\n\t    <li><p>wnpa-sec-2016-46</p>\n\t      <p>RLC dissector crash. (Bug 12664)</p></li>\n\t    <li><p>wnpa-sec-2016-47</p>\n\t      <p>OpenFlow long loop. (Bug 12659)</p></li>\n\t    <li><p>wnpa-sec-2016-48</p>\n\t      <p>MMSE, WAP, WBXML, and WSP infinite loop. (Bug 12661)</p></li>\n\t    <li><p>wnpa-sec-2016-49</p>\n\t      <p>WBXML crash. (Bug 12663)</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.wireshark.org/docs/relnotes/wireshark-2.0.5.html",
+      "http://www.openwall.com/lists/oss-security/2016/08/01/4"
+    ],
+    "cvename": [
+      "CVE-2016-6505",
+      "CVE-2016-6506",
+      "CVE-2016-6508",
+      "CVE-2016-6509",
+      "CVE-2016-6510",
+      "CVE-2016-6511",
+      "CVE-2016-6512",
+      "CVE-2016-6513"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-07-27",
+    "entry": "2016-08-06"
+  }
+}

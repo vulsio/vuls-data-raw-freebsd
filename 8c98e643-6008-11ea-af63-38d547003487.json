@@ -1,0 +1,40 @@
+{
+  "vid": "8c98e643-6008-11ea-af63-38d547003487",
+  "topic": "salt -- salt-api vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py27-salt",
+        "py32-salt",
+        "py33-salt",
+        "py34-salt",
+        "py35-salt",
+        "py36-salt",
+        "py37-salt",
+        "py38-salt"
+      ],
+      "range": [
+        {
+          "lt": "2019.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SaltStack reports:</p>\n\t<blockquote cite=\"https://docs.saltstack.com/en/latest/topics/releases/2019.2.3.html\">\n\t  <p>With the Salt NetAPI enabled in addition to having a SSH roster\n\t    defined, unauthenticated access is possible when specifying the\n\t    client as SSH.</p>\n\t  <p>Additionally, when the raw_shell option is specified any arbitrary\n\t    command may be run on the Salt master when specifying SSH options.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.saltstack.com/en/latest/topics/releases/2019.2.3.html",
+      "https://nvd.nist.gov/vuln/detail/CVE-2019-17361"
+    ],
+    "cvename": [
+      "CVE-2019-17361"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-15",
+    "entry": "2020-03-07"
+  }
+}

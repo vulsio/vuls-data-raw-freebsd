@@ -1,0 +1,42 @@
+{
+  "vid": "bfe9c75e-5028-11e0-b2d2-00215c6a37bb",
+  "topic": "asterisk -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "1.6.2.17.1",
+          "gt": "1.6.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "1.8.3.1",
+          "gt": "1.8.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk Development Team reports:</p>\n\t<blockquote cite=\"http://www.venturevoip.com/news.php?rssid=2521\">\n\t  <p>The releases of Asterisk 1.6.1.23, 1.6.2.17.1, and 1.8.3.1\n\t    resolve two issues:</p>\n\t  <ul>\n\t    <li>Resource exhaustion in Asterisk Manager Interface\n\t      (AST-2011-003)</li>\n\t    <li>Remote crash vulnerability in TCP/TLS server\n\t      (AST-2011-004)</li>\n\t  </ul>\n\t  <p>The issues and resolutions are described in the AST-2011-003\n\t    and AST-2011-004 security advisories.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://downloads.asterisk.org/pub/security/AST-2011-003.html",
+      "http://downloads.asterisk.org/pub/security/AST-2011-004.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-03-01",
+    "entry": "2011-03-16"
+  }
+}

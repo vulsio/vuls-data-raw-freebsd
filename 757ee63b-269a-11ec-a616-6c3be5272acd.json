@@ -1,0 +1,40 @@
+{
+  "vid": "757ee63b-269a-11ec-a616-6c3be5272acd",
+  "topic": "Grafana -- Snapshot authentication bypass",
+  "affects": [
+    {
+      "name": [
+        "grafana8",
+        "grafana7",
+        "grafana6",
+        "grafana"
+      ],
+      "range": [
+        {
+          "lt": "8.1.6",
+          "ge": "8.0.0"
+        },
+        {
+          "lt": "7.5.11",
+          "ge": "2.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2021/10/05/grafana-7.5.11-and-8.1.6-released-with-critical-security-fix/\">\n\t  <p>Unauthenticated and authenticated users are able to view the snapshot with the lowest database key by accessing the literal paths:</p>\n\t  <ul>\n\t    <li><code>/dashboard/snapshot/:key</code>, or</li>\n\t    <li><code>/api/snapshots/:key</code></li>\n\t  </ul>\n\t  <p>If the snapshot \"public_mode\" configuration setting is set to true (vs default of false), unauthenticated users are able to delete the snapshot with the lowest database key by accessing the literal path:</p>\n\t  <ul>\n\t    <li><code>/api/snapshots-delete/:deleteKey</code></li>\n\t  </ul>\n\t  <p>Regardless of the snapshot \"public_mode\" setting, authenticated users are able to delete the snapshot with the lowest database key by accessing the literal paths:</p>\n\t  <ul>\n\t    <li><code>/api/snapshots/:key</code>, or</li>\n\t    <li><code>/api/snapshots-delete/:deleteKey</code></li>\n\t  </ul>\n\t  <p>The combination of deletion and viewing enables a complete walk through all snapshot data while resulting in complete snapshot data loss.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://grafana.com/blog/2021/10/05/grafana-7.5.11-and-8.1.6-released-with-critical-security-fix/"
+    ],
+    "cvename": [
+      "CVE-2021-39226"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-09-15",
+    "entry": "2021-10-06"
+  }
+}

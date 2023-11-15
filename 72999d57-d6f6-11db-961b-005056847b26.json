@@ -1,0 +1,36 @@
+{
+  "vid": "72999d57-d6f6-11db-961b-005056847b26",
+  "topic": "WebCalendar -- \"noSet\" variable overwrite vulnerability",
+  "affects": [
+    {
+      "name": [
+        "WebCalendar"
+      ],
+      "range": [
+        {
+          "lt": "1.0.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/24403/\">\n\t  <p>A vulnerability has been discovered in WebCalendar,\n\t    which can be exploited by malicious people to compromise\n\t    a vulnerable system.</p>\n\t  <p>Input passed to unspecified parameters is not properly\n\t    verified before being used with the \"noSet\" parameter set.\n\t    This can be exploited to overwrite certain variables, and\n\t    allows e.g. the inclusion of arbitrary PHP files from internal\n\t    or external resources.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://sourceforge.net/project/shownotes.php?release_id=491130",
+      "http://xforce.iss.net/xforce/xfdb/32832"
+    ],
+    "cvename": [
+      "CVE-2007-1343"
+    ],
+    "bid": [
+      "22834"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-03-04",
+    "entry": "2007-04-08"
+  }
+}

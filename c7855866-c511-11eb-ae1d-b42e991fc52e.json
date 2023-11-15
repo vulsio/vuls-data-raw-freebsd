@@ -1,0 +1,32 @@
+{
+  "vid": "c7855866-c511-11eb-ae1d-b42e991fc52e",
+  "topic": "tauthon -- Regular Expression Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "tauthon"
+      ],
+      "range": [
+        {
+          "lt": "2.8.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p/>\n\t<blockquote cite=\"https://github.com/naftaliharris/tauthon/blob/master/Misc/NEWS.d/2.8.3.rst\">\n\t  <p>The :class:`~urllib.request.AbstractBasicAuthHandler` class\n\t    of the :mod:`urllib.request` module uses an inefficient\n\t    regular expression which can be exploited by an\n\t    attacker to cause a denial of service</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8492"
+    ],
+    "cvename": [
+      "CVE-2020-8492"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-30",
+    "entry": "2021-06-04"
+  }
+}

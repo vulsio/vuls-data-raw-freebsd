@@ -1,0 +1,47 @@
+{
+  "vid": "967b852b-1e28-11e6-8dd3-002590263bf5",
+  "topic": "hostapd and wpa_supplicant -- psk configuration parameter update allowing arbitrary data to be written",
+  "affects": [
+    {
+      "name": [
+        "wpa_supplicant"
+      ],
+      "range": [
+        {
+          "lt": "2.5_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "hostapd"
+      ],
+      "range": [
+        {
+          "lt": "2.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jouni Malinen reports:</p>\n\t<blockquote cite=\"http://w1.fi/security/2016-1/psk-parameter-config-update.txt\">\n\t  <p>psk configuration parameter update allowing arbitrary data to be\n\t    written (2016-1 - CVE-2016-4476/CVE-2016-4477).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://w1.fi/security/2016-1/psk-parameter-config-update.txt"
+    ],
+    "cvename": [
+      "CVE-2016-4476",
+      "CVE-2016-4477"
+    ],
+    "freebsd_pr": [
+      "ports/209564"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-02",
+    "entry": "2016-05-20",
+    "modified": "2017-03-22"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "vid": "18b3c61b-83de-11e5-905b-ac9e174be3af",
+  "topic": "OpenOffice 4.1.1 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache-openoffice"
+      ],
+      "range": [
+        {
+          "lt": "4.1.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache-openoffice-devel"
+      ],
+      "range": [
+        {
+          "lt": "4.2.1705368,3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache OpenOffice Project reports:</p>\n\t<blockquote cite=\"http://www.openoffice.org/security/cves/CVE-2015-4551.html\">\n\t  <p>A vulnerability in OpenOffice settings of OpenDocument Format\n\t    files and templates allows silent access to files that are\n\t    readable from an user account, over-riding the user's default\n\t    configuration settings. Once these files are imported into a\n\t    maliciously-crafted document, the data can be silently hidden\n\t    in the document and possibly exported to an external party\n\t    without being observed. </p>\n\t</blockquote>\n\t<p>The Apache OpenOffice Project reports:</p>\n\t<blockquote cite=\"http://www.openoffice.org/security/cves/CVE-2015-5212.html\">\n\t  <p>A crafted ODF document can be used to create a buffer that is\n\t    too small for the amount of data loaded into it, allowing an\n\t    attacker to cause denial of service (memory corruption and\n\t    application crash) and possible execution of arbitrary code.</p>\n\t</blockquote>\n\t<p>The Apache OpenOffice Project reports:</p>\n\t<blockquote cite=\"http://www.openoffice.org/security/cves/CVE-2015-5213.html\">\n\t  <p>A crafted Microsoft Word DOC file can be used to specify a\n\t    document buffer that is too small for the amount of data\n\t    provided for it. Failure to detect the discrepancy allows an\n\t    attacker to cause denial of service (memory corruption and\n\t    application crash) and possible execution of arbitrary code.</p>\n\t</blockquote>\n\t<p>The Apache OpenOffice Project reports:</p>\n\t<blockquote cite=\"http://www.openoffice.org/security/cves/CVE-2015-5214.html\">\n\t  <p>A crafted Microsoft Word DOC can contain invalid bookmark\n\t    positions leading to memory corruption when the document is\n\t    loaded or bookmarks are manipulated. The defect allows an\n\t    attacker to cause denial of service (memory corruption and\n\t    application crash) and possible execution of arbitrary code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openoffice.org/security/cves/CVE-2015-4551.html",
+      "http://www.openoffice.org/security/cves/CVE-2015-5212.html",
+      "http://www.openoffice.org/security/cves/CVE-2015-5213.html",
+      "http://www.openoffice.org/security/cves/CVE-2015-5214.html"
+    ],
+    "cvename": [
+      "CVE-2015-4551",
+      "CVE-2015-5212",
+      "CVE-2015-5213",
+      "CVE-2015-5214"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-11-04",
+    "entry": "2015-11-05",
+    "modified": "2015-11-05"
+  }
+}

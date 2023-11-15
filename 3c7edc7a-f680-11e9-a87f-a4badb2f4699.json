@@ -1,0 +1,42 @@
+{
+  "vid": "3c7edc7a-f680-11e9-a87f-a4badb2f4699",
+  "topic": "FreeBSD -- Multiple vulnerabilities in bzip2",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "12.0_9",
+          "ge": "12.0"
+        },
+        {
+          "lt": "11.3_2",
+          "ge": "11.3"
+        },
+        {
+          "lt": "11.2_13",
+          "ge": "11.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The decompressor used in bzip2 contains a bug which can\n\tlead to an out-of-bounds write when processing a specially\n\tcrafted bzip2(1) file.</p>\n\t<p>bzip2recover contains a heap use-after-free bug which\n\tcan be triggered when processing a specially crafted bzip2(1)\n\tfile.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can cause maliciously crafted input to\n\tbe processed may trigger either of these bugs. The bzip2recover\n\tbug may cause a crash, permitting a denial-of-service. The\n\tbzip2 decompressor bug could potentially be exploited to\n\texecute arbitrary code.</p>\n\t<p>Note that some utilities, including the tar(1) archiver\n\tand the bspatch(1) binary patching utility (used in portsnap(8)\n\tand freebsd-update(8)) decompress bzip2(1)-compressed data\n\tinternally; system administrators should assume that their\n\tsystems will at some point decompress bzip2(1)-compressed\n\tdata even if they never explicitly invoke the bunzip2(1)\n\tutility.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2016-3189",
+      "CVE-2019-1290"
+    ],
+    "freebsd_sa": [
+      "SA-19:18.bzip2"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-08-06",
+    "entry": "2019-10-24"
+  }
+}

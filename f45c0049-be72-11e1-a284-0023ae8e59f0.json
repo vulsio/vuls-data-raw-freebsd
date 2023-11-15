@@ -1,0 +1,34 @@
+{
+  "vid": "f45c0049-be72-11e1-a284-0023ae8e59f0",
+  "topic": "pycrypto -- vulnerable ElGamal key generation",
+  "affects": [
+    {
+      "name": [
+        "py-pycrypto"
+      ],
+      "range": [
+        {
+          "lt": "2.6",
+          "ge": "2.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dwayne C. Litzenberger of PyCrypto reports:</p>\n\t<blockquote cite=\"http://lists.dlitz.net/pipermail/pycrypto/2012q2/000587.html\">\n\t  <p>In the ElGamal schemes (for both encryption and signatures), g is\n\t     supposed to be the generator of the entire Z^*_p group.  However, in\n\t     PyCrypto 2.5 and earlier, g is more simply the generator of a random\n\t     sub-group of Z^*_p.</p>\n\t  <p>The result is that the signature space (when the key is used for\n\t     signing) or the public key space (when the key is used for encryption)\n\t     may be greatly reduced from its expected size of log(p) bits, possibly\n\t     down to 1 bit (the worst case if the order of g is 2).</p>\n\t  <p>While it has not been confirmed, it has also been suggested that an\n\t     attacker might be able to use this fact to determine the private key.</p>\n\t  <p>Anyone using ElGamal keys should generate new keys as soon as\n\t     practical.</p>\n\t  <p>Any additional information about this bug will be tracked at\n\t     https://bugs.launchpad.net/pycrypto/+bug/985164</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.dlitz.net/pipermail/pycrypto/2012q2/000587.html",
+      "https://bugs.launchpad.net/pycrypto/+bug/985164"
+    ],
+    "cvename": [
+      "CVE-2012-2417"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-05-24",
+    "entry": "2012-06-24"
+  }
+}

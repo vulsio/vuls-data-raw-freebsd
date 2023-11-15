@@ -1,0 +1,45 @@
+{
+  "vid": "635bf5f4-26b7-11d9-9289-000c41e2cdad",
+  "topic": "gaim -- malicious smiley themes",
+  "affects": [
+    {
+      "name": [
+        "gaim",
+        "ja-gaim",
+        "ko-gaim",
+        "ru-gaim"
+      ],
+      "range": [
+        {
+          "lt": "0.82"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gaim"
+      ],
+      "range": [
+        {
+          "gt": "20030000"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gaim Security Issues page documents a problem with\n\t  installing smiley themes from an untrusted source:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=1\">\n\t  <p>To install a new smiley theme, a user can drag a tarball\n\t    from a graphical file manager, or a hypertext link to one\n\t    from a web browser. When a tarball is dragged, Gaim executes\n\t    a shell command to untar it. However, it does not escape the\n\t    filename before sending it to the shell. Thus, a specially\n\t    crafted filename could execute arbitrary commands if the\n\t    user could be convinced to drag a file into the smiley theme\n\t    selector.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://gaim.sourceforge.net/security/?id=1"
+    ],
+    "cvename": [
+      "CVE-2004-0784"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-22",
+    "entry": "2004-10-25"
+  }
+}

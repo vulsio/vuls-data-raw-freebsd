@@ -1,0 +1,34 @@
+{
+  "vid": "36858e78-3963-11e4-ad84-000c29f6ae42",
+  "topic": "security/ossec-hids-* -- root escalation via temp files",
+  "affects": [
+    {
+      "name": [
+        "ossec-hids-server",
+        "ossec-hids-client",
+        "ossec-hids-local"
+      ],
+      "range": [
+        {
+          "lt": "2.8.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OSSEC reports:</p>\n\t<blockquote cite=\"http://www.ossec.net/?p=1135\">\n\t  <p>This correction will create the temp file for the hosts deny file\n\t    in /var/ossec and will use mktemp where available to create\n\t    NON-predictable temp file name. In cases where mktemp is not\n\t    available we have written a BAD version of mktemp, but should be a\n\t    little better then just process id.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ossec.net/?p=1135"
+    ],
+    "cvename": [
+      "CVE-2014-5284"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-09-09",
+    "entry": "2014-09-11"
+  }
+}

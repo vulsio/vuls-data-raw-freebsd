@@ -1,0 +1,80 @@
+{
+  "vid": "66d77c58-3b1d-11e6-8e82-002590263bf5",
+  "topic": "php -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php55",
+        "php55-gd",
+        "php55-mbstring",
+        "php55-wddx",
+        "php55-zip"
+      ],
+      "range": [
+        {
+          "lt": "5.5.37"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56",
+        "php56-gd",
+        "php56-mbstring",
+        "php56-phar",
+        "php56-wddx",
+        "php56-zip"
+      ],
+      "range": [
+        {
+          "lt": "5.6.23"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php70",
+        "php70-gd",
+        "php70-mbstring",
+        "php70-phar",
+        "php70-wddx",
+        "php70-zip"
+      ],
+      "range": [
+        {
+          "lt": "7.0.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP Group reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.5.37\">\n\t  <p>Please reference CVE/URL list for details</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-5.php#5.5.37",
+      "http://php.net/ChangeLog-5.php#5.6.23",
+      "http://php.net/ChangeLog-7.php#7.0.8"
+    ],
+    "cvename": [
+      "CVE-2015-8874",
+      "CVE-2016-5766",
+      "CVE-2016-5767",
+      "CVE-2016-5768",
+      "CVE-2016-5769",
+      "CVE-2016-5770",
+      "CVE-2016-5771",
+      "CVE-2016-5772",
+      "CVE-2016-5773"
+    ],
+    "freebsd_pr": [
+      "ports/210491",
+      "ports/210502"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-06-23",
+    "entry": "2016-06-25"
+  }
+}

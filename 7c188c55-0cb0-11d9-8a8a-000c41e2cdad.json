@@ -1,0 +1,67 @@
+{
+  "vid": "7c188c55-0cb0-11d9-8a8a-000c41e2cdad",
+  "topic": "mozilla -- NULL bytes in FTP URLs",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "0.9.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla",
+        "linux-mozilla-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2,2"
+        },
+        {
+          "ge": "1.8.a,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mozilla-gtk1"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>When handling FTP URLs containing NULL bytes, Mozilla will\n\t  interpret the file content as HTML.  This may allow unexpected\n\t  execution of Javascript when viewing plain text or other file\n\t  types via FTP.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugzilla.mozilla.org/show_bug.cgi?id=250906"
+    ],
+    "cvename": [
+      "CVE-2004-0760"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-07-11",
+    "entry": "2004-09-22",
+    "modified": "2004-09-24"
+  }
+}

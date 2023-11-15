@@ -1,0 +1,33 @@
+{
+  "vid": "ff65eecb-91e4-11dc-bd6c-0016179b2dd5",
+  "topic": "flac -- media file processing integer overflow vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "flac"
+      ],
+      "range": [
+        {
+          "lt": "1.1.2_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>iDefense Laps reports:</p>\n\t<blockquote cite=\"http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=608\">\n\t  <p>Remote exploitation of multiple integer overflow vulnerabilities\n\t    in libFLAC, as included with various vendor's software\n\t    distributions, allows attackers to execute arbitrary code\n\t    in the context of the currently logged in user.</p>\n\t  <p>These vulnerabilities specifically exist in the handling of\n\t    malformed FLAC media files. In each case, an integer overflow can\n\t    occur while calculating the amount of memory to allocate. As such,\n\t    insufficient memory is allocated for the data that is subsequently\n\t    read in from the file, and a heap based buffer overflow occurs.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/27210/",
+      "http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=608"
+    ],
+    "cvename": [
+      "CVE-2007-4619"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-10-11",
+    "entry": "2007-11-13"
+  }
+}

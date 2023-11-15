@@ -1,0 +1,37 @@
+{
+  "vid": "c2e10368-77ab-11d8-b9e8-00e04ccb0a62",
+  "topic": "ModSecurity for Apache 2.x remote off-by-one overflow",
+  "affects": [
+    {
+      "name": [
+        "mod_security"
+      ],
+      "range": [
+        {
+          "lt": "1.7.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>When the directive \"SecFilterScanPost\" is enabled,\n\t  the Apache 2.x version of ModSecurity is vulnerable\n\t  to an off-by-one overflow</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.s-quadra.com/advisories/Adv-20040315.txt",
+      "http://secunia.com/advisories/11138"
+    ],
+    "bid": [
+      "9885"
+    ],
+    "cert_vu": [
+      "779438"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-02-09",
+    "entry": "2004-03-17",
+    "modified": "2004-06-27"
+  }
+}

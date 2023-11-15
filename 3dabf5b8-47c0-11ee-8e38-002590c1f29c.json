@@ -1,0 +1,41 @@
+{
+  "vid": "3dabf5b8-47c0-11ee-8e38-002590c1f29c",
+  "topic": "FreeBSD -- Remote denial of service in IPv6 fragment reassembly",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "13.2_2",
+          "ge": "13.2"
+        },
+        {
+          "lt": "13.1_9",
+          "ge": "13.1"
+        },
+        {
+          "lt": "12.4_4",
+          "ge": "12.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Each fragment of an IPv6 packet contains a fragment header which\n\tspecifies the offset of the fragment relative to the original packet,\n\tand each fragment specifies its length in the IPv6 header.  When\n\treassembling the packet, the kernel calculates the complete IPv6 payload\n\tlength.  The payload length must fit into a 16-bit field in the IPv6\n\theader.</p>\n\t<p>Due to a bug in the kernel, a set of carefully crafted packets can\n\ttrigger an integer overflow in the calculation of the reassembled\n\tpacket's payload length field.</p>\n\t<h1>Impact:</h1>\n\t<p>Once an IPv6 packet has been reassembled, the kernel continues\n\tprocessing its contents.  It does so assuming that the fragmentation\n\tlayer has validated all fields of the constructed IPv6 header.  This bug\n\tviolates such assumptions and can be exploited to trigger a remote\n\tkernel panic, resulting in a denial of service.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2023-3107"
+    ],
+    "freebsd_sa": [
+      "SA-23:06.ipv6"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-08-01",
+    "entry": "2023-08-31"
+  }
+}

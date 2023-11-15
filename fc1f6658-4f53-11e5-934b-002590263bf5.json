@@ -1,0 +1,86 @@
+{
+  "vid": "fc1f6658-4f53-11e5-934b-002590263bf5",
+  "topic": "ghostscript -- denial of service (crash) via crafted Postscript files",
+  "affects": [
+    {
+      "name": [
+        "ghostscript7",
+        "ghostscript7-nox11",
+        "ghostscript7-base",
+        "ghostscript7-x11"
+      ],
+      "range": [
+        {
+          "lt": "7.07_32"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript8",
+        "ghostscript8-nox11",
+        "ghostscript8-base",
+        "ghostscript8-x11"
+      ],
+      "range": [
+        {
+          "lt": "8.71_19"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript9",
+        "ghostscript9-nox11",
+        "ghostscript9-base",
+        "ghostscript9-x11"
+      ],
+      "range": [
+        {
+          "lt": "9.06_11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript9-agpl",
+        "ghostscript9-agpl-nox11"
+      ],
+      "range": [
+        {
+          "lt": "9.15_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ghostscript9-agpl-base",
+        "ghostscript9-agpl-x11"
+      ],
+      "range": [
+        {
+          "lt": "9.16_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3228\">\n\t  <p>Integer overflow in the gs_heap_alloc_bytes function in\n\t    base/gsmalloc.c in Ghostscript 9.15 and earlier allows remote\n\t    attackers to cause a denial of service (crash) via a crafted\n\t    Postscript (ps) file, as demonstrated by using the ps2pdf command,\n\t    which triggers an out-of-bounds read or write.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.ghostscript.com/show_bug.cgi?id=696041",
+      "http://bugs.ghostscript.com/show_bug.cgi?id=696070",
+      "http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=0c0b0859"
+    ],
+    "cvename": [
+      "CVE-2015-3228"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-17",
+    "entry": "2015-09-01",
+    "modified": "2015-09-02"
+  }
+}

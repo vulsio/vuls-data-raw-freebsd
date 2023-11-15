@@ -1,0 +1,33 @@
+{
+  "vid": "c95836a0-2b3b-11e9-9838-8c164567ca3c",
+  "topic": "unit -- heap memory buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "unit"
+      ],
+      "range": [
+        {
+          "lt": "1.7.1",
+          "ge": "0.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>unit security problems:</p>\n\t<blockquote cite=\"http://mailman.nginx.org/pipermail/unit/2019-February/000112.html\">\n\t  <p>CVE-2019-7401: a head memory buffer overflow might have</p>\n\t  <p>been caused in the router process by a specially crafted</p>\n\t  <p>request, potentially resulting in a segmentation fault</p>\n\t  <p>or other unspecified behavior.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mailman.nginx.org/pipermail/unit/2019-February/000112.html"
+    ],
+    "cvename": [
+      "CVE-2019-7401"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-07",
+    "entry": "2019-02-08"
+  }
+}

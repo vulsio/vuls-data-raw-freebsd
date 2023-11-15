@@ -1,0 +1,35 @@
+{
+  "vid": "918a5d1f-9d40-11e5-8f5c-002590263bf5",
+  "topic": "KeePassX -- information disclosure",
+  "affects": [
+    {
+      "name": [
+        "KeePassX"
+      ],
+      "range": [
+        {
+          "lt": "0.4.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Yves-Alexis Perez reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/11/30/4\">\n\t  <p>Starting an export (using File / Export to / KeepassX XML file) and\n\t    cancelling it leads to KeepassX saving a cleartext XML file in\n\t    ~/.xml without any warning.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/11/30/4"
+    ],
+    "cvename": [
+      "CVE-2015-8378"
+    ],
+    "freebsd_pr": [
+      "ports/205105"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-08",
+    "entry": "2015-12-08"
+  }
+}

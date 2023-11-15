@@ -1,0 +1,51 @@
+{
+  "vid": "f4428842-a583-4a4c-89b7-297c3459a1c3",
+  "topic": "bogofilter -- RFC 2047 decoder denial-of-service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "bogofilter",
+        "bogofilter-qdbm",
+        "bogofilter-tdb",
+        "ru-bogofilter"
+      ],
+      "range": [
+        {
+          "lt": "0.92.8",
+          "ge": "0.17.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The bogofilter team has been provided with a test case of a\n\t   malformatted (non-conformant) RFC-2047 encoded word that can cause\n\t   bogofilter versions 0.92.7 and prior to try to write a NUL byte into\n\t   a memory location that is either one byte past the end of a flex\n\t   buffer or to a location that is the negative of the encoded word's\n\t   start of payload data, causing a segmentation fault.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/275373",
+      "http://bogofilter.sourceforge.net/security/bogofilter-SA-2004-01"
+    ],
+    "cvename": [
+      "CVE-2004-1007"
+    ],
+    "freebsd_pr": [
+      "ports/73144"
+    ],
+    "mlist": [
+      {
+        "text": "http://article.gmane.org/gmane.mail.bogofilter.devel/3308",
+        "msgid": "20041008143604.GA14934@scowler.net"
+      },
+      {
+        "text": "http://article.gmane.org/gmane.mail.bogofilter.devel/3317",
+        "msgid": "m3r7o892vj.fsf@merlin.emma.line.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-10-09",
+    "entry": "2004-10-26",
+    "modified": "2015-09-28"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "vid": "8375a73f-01bf-11da-bc08-0001020eed82",
+  "topic": "gnupg -- OpenPGP symmetric encryption vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gnupg"
+      ],
+      "range": [
+        {
+          "lt": "1.4.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "p5-Crypt-OpenPGP"
+      ],
+      "range": [
+        {
+          "le": "1.03"
+        }
+      ]
+    },
+    {
+      "name": [
+        "pgp"
+      ],
+      "range": [
+        {
+          "ge": "3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Serge Mister and Robert Zuccherato reports that the OpenPGP\n\t  protocol is vulnerable to a cryptographic attack when using\n\t  symmetric encryption in an automated way.</p>\n\t<p>David Shaw reports about the impact:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2005q1/000191.html\">\n\t  <p>This attack, while very significant from a cryptographic\n\t    point of view, is not generally effective in the real\n\t    world.  To be specific, unless you have your OpenPGP\n\t    program set up as part of an automated system to accept\n\t    encrypted messages, decrypt them, and then provide a\n\t    response to the submitter, then this does not affect you\n\t    at all.</p>\n\t</blockquote>\n\t<p>Note that the <q>fix</q> in GnuPG does note completely\n\t  eliminate the potential problem:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2005q1/000191.html\">\n\t  <p>These patches disable a portion of the OpenPGP protocol\n\t    that the attack is exploiting.  This change should not be\n\t    user visible.  With the patch in place, this attack will\n\t    not work using a public-key encrypted message.  It will\n\t    still work using a passphrase-encrypted message.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://eprint.iacr.org/2005/033",
+      "http://lists.gnupg.org/pipermail/gnupg-announce/2005q1/000191.html",
+      "http://www.pgp.com/newsroom/ctocorner/openpgp.html"
+    ],
+    "cvename": [
+      "CVE-2005-0366"
+    ],
+    "cert_vu": [
+      "303094"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-08",
+    "entry": "2005-07-31",
+    "modified": "2007-04-23"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "c8c31c41-49ed-11df-83fb-0015587e2cc1",
+  "topic": "curl -- libcurl buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.20.0",
+          "ge": "7.10.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The cURL project reports in a security advisory:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20100209.html\">\n\t  <p>Using the affected libcurl version to download compressed\n\t    content over HTTP, an application can ask libcurl to\n\t    automatically uncompress data. When doing so, libcurl\n\t    can wrongly send data up to 64K in size to the callback\n\t    which thus is much larger than the documented maximum\n\t    size.</p>\n\t  <p>An application that blindly trusts libcurl's max limit\n\t    for a fixed buffer size or similar is then a possible\n\t    target for a buffer overflow vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://curl.haxx.se/docs/adv_20100209.html",
+      "http://www.debian.org/security/2010/dsa-2023",
+      "http://www.openwall.com/lists/oss-security/2010/02/09/5"
+    ],
+    "cvename": [
+      "CVE-2010-0734"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-02-09",
+    "entry": "2010-04-19"
+  }
+}

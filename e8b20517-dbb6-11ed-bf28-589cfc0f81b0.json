@@ -1,0 +1,33 @@
+{
+  "vid": "e8b20517-dbb6-11ed-bf28-589cfc0f81b0",
+  "topic": "mod_gnutls -- Infinite Loop on request read timeout",
+  "affects": [
+    {
+      "name": [
+        "ap24-mod_gnutls"
+      ],
+      "range": [
+        {
+          "lt": "0.12.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The mod_gnutls project reports:</p>\n\t<blockquote cite=\"https://lists.gnupg.org/pipermail/mod_gnutls-devel/2023-February/000221.html\">\n\t  <p>Mod_gnutls is a TLS module for Apache HTTPD based on GnuTLS.  Versions\n\t  from 0.9.0 to 0.12.0 (including) did not properly fail blocking\n\t  read operations on TLS connections when the transport hit timeouts.\n\t  Instead it entered an endless loop retrying the read operation,\n\t  consuming CPU resources.  This could be exploited for denial of\n\t  service attacks.  If trace level logging was enabled, it would also\n\t  produce an excessive amount of log output during the loop, consuming\n\t  disk space.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2023-25824",
+      "https://mod.gnutls.org/browser/mod_gnutls/CHANGELOG?rev=17b2836dc3e27754159ffb098323a4cd4426192f"
+    ],
+    "cvename": [
+      "CVE-2023-25824"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-02-23",
+    "entry": "2023-04-15"
+  }
+}

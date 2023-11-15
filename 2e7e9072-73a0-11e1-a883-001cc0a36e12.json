@@ -1,0 +1,51 @@
+{
+  "vid": "2e7e9072-73a0-11e1-a883-001cc0a36e12",
+  "topic": "libtasn1 -- ASN.1 length decoding vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libtasn1"
+      ],
+      "range": [
+        {
+          "lt": "2.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gnutls"
+      ],
+      "range": [
+        {
+          "lt": "2.12.18"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gnutls-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.16",
+          "gt": "2.99"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mu Dynamics, Inc. reports:</p>\n\t<blockquote cite=\"http://article.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/5959\">\n\t  <p>Various functions using the ASN.1 length decoding logic in\n\t    Libtasn1 were incorrectly assuming that the return value from\n\t    asn1_get_length_der is always less than the length of the\n\t    enclosing ASN.1 structure, which is only true for valid\n\t    structures and not for intentionally corrupt or otherwise\n\t    buggy structures.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2012-1569"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-03-20",
+    "entry": "2012-03-21",
+    "modified": "2012-03-24"
+  }
+}

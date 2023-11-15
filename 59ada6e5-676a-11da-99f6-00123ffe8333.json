@@ -1,0 +1,33 @@
+{
+  "vid": "59ada6e5-676a-11da-99f6-00123ffe8333",
+  "topic": "phpmyadmin -- XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A phpMyAdmin security advisory reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-8\">\n\t  <p>It was possible to conduct an XSS attack via the\n\t    HTTP_HOST variable; also, some scripts in the libraries\n\t    directory that handle header generation were vulnerable\n\t    to XSS.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-8",
+      "http://secunia.com/advisories/17895/"
+    ],
+    "cvename": [
+      "CVE-2005-3665"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-12-05",
+    "entry": "2005-12-07"
+  }
+}

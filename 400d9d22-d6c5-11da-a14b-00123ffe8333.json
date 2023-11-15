@@ -1,0 +1,32 @@
+{
+  "vid": "400d9d22-d6c5-11da-a14b-00123ffe8333",
+  "topic": "trac -- Wiki Macro Script Insertion Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "trac",
+        "ja-trac"
+      ],
+      "range": [
+        {
+          "lt": "0.9.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19870/\">\n\t  <p>A vulnerability has been reported, which can be exploited by\n\t    malicious people to conduct script insertion attacks.</p>\n\t  <p>Input passed using the wiki macro isn't properly sanitised before\n\t    being used. This can be exploited to inject arbitrary HTML and\n\t    script code, which will be executed in a user's browser session in\n\t    context of an affected site when the malicious user data is\n\t    viewed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://projects.edgewall.com/trac/wiki/ChangeLog",
+      "http://jvn.jp/jp/JVN%2384091359/index.html",
+      "http://secunia.com/advisories/19870/"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-04-28",
+    "entry": "2006-05-02"
+  }
+}

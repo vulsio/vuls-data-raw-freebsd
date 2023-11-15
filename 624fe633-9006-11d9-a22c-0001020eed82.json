@@ -1,0 +1,35 @@
+{
+  "vid": "624fe633-9006-11d9-a22c-0001020eed82",
+  "topic": "libexif -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "libexif"
+      ],
+      "range": [
+        {
+          "lt": "0.6.10_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sylvain Defresne reports that libexif is vulnerable to a\n\t  buffer overflow vulnerability due to insufficient input\n\t  checking.  This could lead crash of applications using\n\t  libexif.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.ubuntulinux.org/show_bug.cgi?id=7152"
+    ],
+    "cvename": [
+      "CVE-2005-0664"
+    ],
+    "bid": [
+      "12744"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-03-03",
+    "entry": "2005-03-08"
+  }
+}

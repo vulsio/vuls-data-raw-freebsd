@@ -1,0 +1,42 @@
+{
+  "vid": "972837fc-c304-11e3-8758-00262d5ed8ee",
+  "topic": "ChaSen -- buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "chasen-base"
+      ],
+      "range": [
+        {
+          "lt": "2.4.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "chasen"
+      ],
+      "range": [
+        {
+          "lt": "2.4.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>JVN iPedia reports:</p>\n\t<blockquote cite=\"http://jvn.jp/en/jp/JVN16901583/index.html\">\n\t  <p>ChaSen provided by Nara Institute of Science and Technology is a\n\t    software for morphologically analyzing Japanese. ChaSen contains an\n\t    issue when reading in strings, which may lead to a buffer\n\t    overflow.</p>\n\t  <p>An arbitrary script may be executed by an attacker with access to\n\t    a system that is running a product listed in \"Products\n\t    Affected.\"</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://jvn.jp/en/jp/JVN16901583/index.html"
+    ],
+    "cvename": [
+      "CVE-2011-4000"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-11-08",
+    "entry": "2014-04-13"
+  }
+}

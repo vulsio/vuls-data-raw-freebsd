@@ -1,0 +1,37 @@
+{
+  "vid": "ab804e60-d693-11e6-9171-14dae9d210b8",
+  "topic": "moinmoin -- XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "moinmoin"
+      ],
+      "range": [
+        {
+          "lt": "1.9.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Thomas Waldmann reports:</p>\n\t<blockquote cite=\"http://hg.moinmo.in/moin/1.9/file/1.9.9/docs/CHANGES\">\n\t<ul>\n\t  <li><p>fix XSS in AttachFile view (multifile related) CVE-2016-7148</p></li>\n\t  <li><p>fix XSS in GUI editor's attachment dialogue CVE-2016-7146</p></li>\n\t  <li><p>fix XSS in GUI editor's link dialogue CVE-2016-9119</p></li>\n\t</ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://hg.moinmo.in/moin/1.9/file/1.9.9/docs/CHANGES"
+    ],
+    "cvename": [
+      "CVE-2016-7148",
+      "CVE-2016-7146",
+      "CVE-2016-9119"
+    ],
+    "freebsd_pr": [
+      "ports/214937"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-10-31",
+    "entry": "2017-01-09"
+  }
+}

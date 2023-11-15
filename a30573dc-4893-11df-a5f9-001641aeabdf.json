@@ -1,0 +1,35 @@
+{
+  "vid": "a30573dc-4893-11df-a5f9-001641aeabdf",
+  "topic": "krb5 -- remote denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "krb5"
+      ],
+      "range": [
+        {
+          "le": "1.6.3_9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An authenticated remote attacker can causing a denial\n\t  of service by using a newer version of the kadmin protocol\n\t  than the server supports.</p>\n\t<p>The MIT Kerberos team also reports the cause:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-003.txt\">\n\t  <p>The Kerberos administration daemon (kadmind) can crash\n\t    due to referencing freed memory.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-003.txt"
+    ],
+    "cvename": [
+      "CVE-2010-0629"
+    ],
+    "bid": [
+      "39247"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-04-06",
+    "entry": "2010-04-18"
+  }
+}

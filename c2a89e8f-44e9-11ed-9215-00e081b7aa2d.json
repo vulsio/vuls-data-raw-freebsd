@@ -1,0 +1,33 @@
+{
+  "vid": "c2a89e8f-44e9-11ed-9215-00e081b7aa2d",
+  "topic": "jenkins -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "lt": "2.370"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://www.jenkins.io/security/advisory/2022-09-21/\">\n\t  <h1>Description</h1>\n\t  <h5>(High) SECURITY-2886 / CVE-2022-41224</h5>\n\t  <p>Jenkins 2.367 through 2.369 (both inclusive) does not escape\n\t    tooltips of the l:helpIcon UI component used for some help icons on\n\t    the Jenkins web UI.</p>\n\t  <p>This results in a stored cross-site scripting (XSS) vulnerability\n\t    exploitable by attackers able to control tooltips for this\n\t    component.</p>\n\t  <p>Jenkins 2.370 escapes tooltips of the l:helpIcon UI component.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.jenkins.io/security/advisory/2022-09-21/"
+    ],
+    "cvename": [
+      "CVE-2022-41224"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-09-21",
+    "entry": "2022-10-05",
+    "modified": "2022-10-07"
+  }
+}

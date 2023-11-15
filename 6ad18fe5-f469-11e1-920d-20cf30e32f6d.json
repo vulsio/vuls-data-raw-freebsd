@@ -1,0 +1,43 @@
+{
+  "vid": "6ad18fe5-f469-11e1-920d-20cf30e32f6d",
+  "topic": "bugzilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "bugzilla"
+      ],
+      "range": [
+        {
+          "lt": "3.6.11",
+          "ge": "3.6.0"
+        },
+        {
+          "lt": "4.0.8",
+          "ge": "4.0.0"
+        },
+        {
+          "lt": "4.2.3",
+          "ge": "4.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>A Bugzilla Security Advisory reports:</h1>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.6.10/\">\n\t  <p>The following security issues have been discovered in\n\t     Bugzilla:</p>\n\t  <h1>LDAP Injection</h1>\n\t  <p>When the user logs in using LDAP, the username is not\n\t     escaped when building the uid=$username filter which is\n\t     used to query the LDAP directory. This could potentially\n\t     lead to LDAP injection.</p>\n\t  <h1>Directory Browsing</h1>\n\t  <p>Extensions are not protected against directory browsing\n\t     and users can access the source code of the templates\n\t     which may contain sensitive data.\n\t     Directory browsing is blocked in Bugzilla 4.3.3 only,\n\t     because it requires a configuration change in the Apache\n\t     httpd.conf file to allow local .htaccess files to use\n\t     Options -Indexes. To not break existing installations,\n\t     this fix has not been backported to stable branches.\n\t     The access to templates is blocked for all supported\n\t     branches except the old 3.6 branch, because this branch\n\t     doesn't have .htaccess in the bzr repository and cannot\n\t     be fixed easily for existing installations without\n\t     potentially conflicting with custom changes.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=785470",
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=785522",
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=785511"
+    ],
+    "cvename": [
+      "CVE-2012-3981"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-30",
+    "entry": "2012-09-01"
+  }
+}

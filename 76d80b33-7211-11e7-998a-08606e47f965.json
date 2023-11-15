@@ -1,0 +1,33 @@
+{
+  "vid": "76d80b33-7211-11e7-998a-08606e47f965",
+  "topic": "jabberd -- authentication bypass vulnerability",
+  "affects": [
+    {
+      "name": [
+        "jabberd"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/99511/discuss\">\n\t  <p>JabberD is prone to an authentication-bypass vulnerability.\n\t     An attacker can exploit this issue to bypass the authentication\n\t     mechanism and perform unauthorized actions. This may lead to\n\t     further attacks.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=867032",
+      "http://www.securityfocus.com/bid/99511"
+    ],
+    "cvename": [
+      "CVE-2017-10807"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-07-03",
+    "entry": "2017-07-26"
+  }
+}

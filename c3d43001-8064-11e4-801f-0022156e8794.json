@@ -1,0 +1,59 @@
+{
+  "vid": "c3d43001-8064-11e4-801f-0022156e8794",
+  "topic": "mutt -- denial of service via crafted mail message",
+  "affects": [
+    {
+      "name": [
+        "mutt"
+      ],
+      "range": [
+        {
+          "lt": "1.5.23_7",
+          "ge": "1.5.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ja-mutt"
+      ],
+      "range": [
+        {
+          "lt": "1.5.23_7",
+          "ge": "1.5.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "zh-mutt"
+      ],
+      "range": [
+        {
+          "lt": "1.5.23_7",
+          "ge": "1.5.22"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9116\">\n\t  <p>The write_one_header function in mutt 1.5.23 does not\n\t  properly handle newline characters at the beginning of a\n\t  header, which allows remote attackers to cause a denial of\n\t  service (crash) via a header with an empty body, which\n\t  triggers a heap-based buffer overflow in the mutt_substrdup\n\t  function.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=771125",
+      "http://dev.mutt.org/trac/ticket/3716"
+    ],
+    "cvename": [
+      "CVE-2014-9116"
+    ],
+    "bid": [
+      "71334"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-11-26",
+    "entry": "2014-12-23"
+  }
+}

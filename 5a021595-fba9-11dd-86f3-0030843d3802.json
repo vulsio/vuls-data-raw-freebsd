@@ -1,0 +1,29 @@
+{
+  "vid": "5a021595-fba9-11dd-86f3-0030843d3802",
+  "topic": "pycrypto -- ARC2 module buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "py-pycrypto"
+      ],
+      "range": [
+        {
+          "lt": "2.0.1_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dwayne C. Litzenberger reports:</p>\n\t<blockquote cite=\"http://lists.dlitz.net/pipermail/pycrypto/2009q1/000062.html\">\n\t  <p>pycrypto is exposed to a buffer overflow issue because it fails to\n\t    adequately verify user-supplied input. This issue resides in the ARC2\n\t    module. This issue can be triggered with specially crafted ARC2 keys\n\t    in excess of 128 bytes.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.dlitz.net/pipermail/pycrypto/2009q1/000062.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-02-06",
+    "entry": "2009-02-15"
+  }
+}

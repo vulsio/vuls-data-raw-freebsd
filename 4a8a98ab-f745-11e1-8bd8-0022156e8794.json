@@ -1,0 +1,35 @@
+{
+  "vid": "4a8a98ab-f745-11e1-8bd8-0022156e8794",
+  "topic": "moinmoin -- cross-site scripting via RST parser",
+  "affects": [
+    {
+      "name": [
+        "moinmoin"
+      ],
+      "range": [
+        {
+          "lt": "1.9.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE CVE team reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1058\">\n\t  <p>Cross-site scripting (XSS) vulnerability in the\n\t  reStructuredText (rst) parser in parser/text_rst.py in\n\t  MoinMoin before 1.9.4, when docutils is installed or when\n\t  \"format rst\" is set, allows remote attackers to inject\n\t  arbitrary web script or HTML via a javascript: URL in the\n\t  refuri attribute.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://moinmo.in/SecurityFixes"
+    ],
+    "cvename": [
+      "CVE-2011-1058"
+    ],
+    "bid": [
+      "46476"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-02-21",
+    "entry": "2012-09-05"
+  }
+}

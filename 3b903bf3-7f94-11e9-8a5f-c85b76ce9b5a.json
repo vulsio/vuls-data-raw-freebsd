@@ -1,0 +1,33 @@
+{
+  "vid": "3b903bf3-7f94-11e9-8a5f-c85b76ce9b5a",
+  "topic": "suricata -- buffer over-read",
+  "affects": [
+    {
+      "name": [
+        "suricata"
+      ],
+      "range": [
+        {
+          "lt": "4.1.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10053\">\n\t  <p>An issue was discovered in Suricata 4.1.x before 4.1.4. If the input of the function SSHParseBanner is composed only of a \\n character, then the program runs into a heap-based buffer over-read. This occurs because the erroneous search for \\r results in an integer underflow.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://suricata-ids.org/2019/04/30/suricata-4-1-4-released/"
+    ],
+    "cvename": [
+      "CVE-2019-10053"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-03-15",
+    "entry": "2019-05-26",
+    "modified": "2019-05-26"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "vid": "c4b7badf-24ca-11d8-82e5-0020ed76ef5a",
+  "topic": "Buffer overflows in libmcrypt",
+  "affects": [
+    {
+      "name": [
+        "libmcrypt"
+      ],
+      "range": [
+        {
+          "lt": "2.5.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>libmcrypt does incomplete input validation, leading to\n\t  several buffer overflows.  Additionally,\n\t  a memory leak is present.  Both of these problems may be\n\t  exploited in a denial-of-service attack.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2003-0031",
+      "CVE-2003-0032"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=104162752401212&w=2"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2003-10-25",
+    "entry": "2003-10-25",
+    "modified": "2003-10-25"
+  }
+}

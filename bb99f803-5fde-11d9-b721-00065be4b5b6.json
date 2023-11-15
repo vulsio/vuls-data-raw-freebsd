@@ -1,0 +1,44 @@
+{
+  "vid": "bb99f803-5fde-11d9-b721-00065be4b5b6",
+  "topic": "helvis -- information leak vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ko-helvis"
+      ],
+      "range": [
+        {
+          "le": "1.8h2_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "helvis"
+      ],
+      "range": [
+        {
+          "le": "1.8h2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Once a recovery file has been preserved by the setuid root elvprsv\n\tutility it is placed in a worldreadable directory with worldreadable\n\tpermissions.  This possibly allows sensitive information to leak.</p>\n\t<p>In addition to this information leak, it is possible for users\n\tto recover files that belong to other users by using elvrec, another\n\tsetuid root binary.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://people.freebsd.org/~niels/ports/korean/helvis/issues.txt"
+    ],
+    "cvename": [
+      "CVE-2005-0118",
+      "CVE-2005-0119"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-24",
+    "entry": "2005-01-10",
+    "modified": "2005-01-19"
+  }
+}

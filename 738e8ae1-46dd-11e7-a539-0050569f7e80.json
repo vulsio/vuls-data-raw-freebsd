@@ -1,0 +1,29 @@
+{
+  "vid": "738e8ae1-46dd-11e7-a539-0050569f7e80",
+  "topic": "duo -- Two-factor authentication bypass",
+  "affects": [
+    {
+      "name": [
+        "duo"
+      ],
+      "range": [
+        {
+          "lt": "1.9.21"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The duo security team reports:</p>\n\t<blockquote cite=\"https://duo.com/labs/psa/duo-psa-2017-002\">\n\t  <p>An untrusted user may be able to set the http_proxy variable to\n\t    an invalid address.  If this happens, this will trigger the\n\t    configured 'failmode' behavior, which defaults to safe.  Safe\n\t    mode causes the authentication to report a success.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://duo.com/labs/psa/duo-psa-2017-002"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-05-19",
+    "entry": "2017-06-01"
+  }
+}

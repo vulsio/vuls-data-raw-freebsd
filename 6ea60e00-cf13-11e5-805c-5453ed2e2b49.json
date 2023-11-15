@@ -1,0 +1,45 @@
+{
+  "vid": "6ea60e00-cf13-11e5-805c-5453ed2e2b49",
+  "topic": "py-imaging, py-pillow -- Buffer overflow in FLI decoding code",
+  "affects": [
+    {
+      "name": [
+        "py27-pillow",
+        "py33-pillow",
+        "py34-pillow",
+        "py35-pillow"
+      ],
+      "range": [
+        {
+          "lt": "2.9.0_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "py27-imaging"
+      ],
+      "range": [
+        {
+          "lt": "1.1.7_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Pillow maintainers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.org/en/3.1.x/releasenotes/3.1.1.html\">\n\t  <p>In all versions of Pillow, dating back at least to the last PIL\n\t    1.1.7 release, FliDecode.c has a buffer overflow error.</p>\n\t  <p>There is a memcpy error where x is added to a target buffer\n\t    address. X is used in several internal temporary variable roles,\n\t    but can take a value up to the width of the image. Im-&gt;image[y]\n\t    is a set of row pointers to segments of memory that are the size of\n\t    the row. At the max y, this will write the contents of the line off\n\t    the end of the memory buffer, causing a segfault.</p>\n\t  <p>This issue was found by Alyssa Besseling at Atlassian.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/python-pillow/Pillow/commit/bcaaf97f4ff25b3b5b9e8efeda364e17e80858ec"
+    ],
+    "cvename": [
+      "CVE-2016-0775"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-05",
+    "entry": "2016-02-09"
+  }
+}

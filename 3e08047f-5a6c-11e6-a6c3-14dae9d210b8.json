@@ -1,0 +1,74 @@
+{
+  "vid": "3e08047f-5a6c-11e6-a6c3-14dae9d210b8",
+  "topic": "p5-XSLoader -- local arbitrary code execution",
+  "affects": [
+    {
+      "name": [
+        "p5-XSLoader"
+      ],
+      "range": [
+        {
+          "lt": "0.22"
+        }
+      ]
+    },
+    {
+      "name": [
+        "perl5",
+        "perl5.18",
+        "perl5.20",
+        "perl5.22",
+        "perl5.24",
+        "perl5-devel"
+      ],
+      "range": [
+        {
+          "lt": "5.18.4_24"
+        },
+        {
+          "lt": "5.20.3_15",
+          "ge": "5.20"
+        },
+        {
+          "lt": "5.22.3.r2",
+          "ge": "5.21"
+        },
+        {
+          "lt": "5.24.1.r2",
+          "ge": "5.23"
+        },
+        {
+          "lt": "5.25.2.87",
+          "ge": "5.25"
+        }
+      ]
+    },
+    {
+      "name": [
+        "perl"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jakub Wilk reports:</p>\n\t<blockquote cite=\"https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=829578\">\n\t  <p>XSLoader tries to load code from a subdirectory in the cwd when\n\t    called inside a string eval</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=829578"
+    ],
+    "cvename": [
+      "CVE-2016-6185"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-06-30",
+    "entry": "2016-08-04",
+    "modified": "2016-08-22"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "vid": "b2a1a3b5-ed95-11d9-8310-0001020eed82",
+  "topic": "net-snmp -- remote DoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "net-snmp"
+      ],
+      "range": [
+        {
+          "lt": "5.2.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Net-SNMP release announcement reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=net-snmp-announce&amp;m=112059518426328\">\n\t  <p>A security vulnerability has been found in Net-SNMP\n\t    releases that could allow a denial of service attack\n\t    against Net-SNMP agent's which have opened a stream based\n\t    protocol (EG, TCP but not UDP; it should be noted that\n\t    Net-SNMP does not by default open a TCP port).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-2177"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=net-snmp-announce&m=112059518426328",
+        "msgid": "sdzmt5sul0.fsf@wes.hardakers.net"
+      }
+    ],
+    "bid": [
+      "14168"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-02",
+    "entry": "2005-07-05",
+    "modified": "2005-10-26"
+  }
+}

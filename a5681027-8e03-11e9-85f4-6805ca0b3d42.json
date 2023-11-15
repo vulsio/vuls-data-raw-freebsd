@@ -1,0 +1,36 @@
+{
+  "vid": "a5681027-8e03-11e9-85f4-6805ca0b3d42",
+  "topic": "phpMyAdmin -- CSRF vulnerability in login form",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin",
+        "phpMyAdmin-php56",
+        "phpMyAdmin-php70",
+        "phpMyAdmin-php71",
+        "phpMyAdmin-php72"
+      ],
+      "range": [
+        {
+          "lt": "4.9.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2019-4/\">\n\t  <h3>Summary</h3>\n\t  <p>CSRF vulnerability in login form</p>\n\n\t  <h3>Description</h3>\n\t  <p>A vulnerability was found that allows an attacker to\n\t    trigger a CSRF attack against a phpMyAdmin user. The\n\t    attacker can trick the user, for instance through a broken\n\t    <code>&lt;img&gt;</code> tag pointing at the victim's\n\t    phpMyAdmin database, and the attacker can potentially\n\t    deliver a payload (such as a specific INSERT or DELETE\n\t    statement) through the victim.</p>\n\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be severe.</p>\n\n\n\t  <h3>Mitigation factor</h3> <p>Only the 'cookie'\n\t    auth_type is affected; users can temporary use\n\t    phpMyAdmin's http authentication as a workaround.</p>\n\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.phpmyadmin.net/security/PMASA-2019-4/"
+    ],
+    "cvename": [
+      "CVE-2019-12616"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-06-04",
+    "entry": "2019-06-13"
+  }
+}

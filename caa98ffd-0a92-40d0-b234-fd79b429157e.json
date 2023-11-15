@@ -1,0 +1,32 @@
+{
+  "vid": "caa98ffd-0a92-40d0-b234-fd79b429157e",
+  "topic": "cURL -- URL request injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.40.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cURL reports:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20150108B.html\">\n\t  <p>When libcurl sends a request to a server via a HTTP proxy, it\n\t    copies the entire URL into the request and sends if off.\n\t    If the given URL contains line feeds and carriage returns those will\n\t    be sent along to the proxy too, which allows the program to for\n\t    example send a separate HTTP request injected embedded in the URL.\n\t    Many programs allow some kind of external sources to set the URL or\n\t    provide partial pieces for the URL to ask for, and if the URL as\n\t    received from the user is not stripped good enough this flaw allows\n\t    malicious users to do additional requests in a way that was not\n\t    intended, or just to insert request headers into the request that\n\t    the program didn't intend.\n\t    We are not aware of any exploit of this flaw.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://curl.haxx.se/docs/adv_20150108B.html"
+    ],
+    "cvename": [
+      "CVE-2014-8150"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-12-25",
+    "entry": "2015-01-09"
+  }
+}

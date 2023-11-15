@@ -1,0 +1,38 @@
+{
+  "vid": "5aaa257e-772d-11e3-a65a-3c970e169bc2",
+  "topic": "openssl -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1_9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OpenSSL development team reports:</p>\n\t<blockquote cite=\"http://www.openssl.org/news/openssl-1.0.1-notes.html\">\n\t  <p>Major changes between OpenSSL 1.0.1e and OpenSSL 1.0.1f [6 Jan 2014]:</p>\n\t  <ul>\n\t    <li>Fix for TLS record tampering bug [CVE-2013-4353]</li>\n\t    <li>Fix for TLS version checking bug [CVE-2013-6449]</li>\n\t    <li>Fix for DTLS retransmission bug [CVE-2013-6450]</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openssl.org/news/openssl-1.0.1-notes.html"
+    ],
+    "cvename": [
+      "CVE-2013-4353",
+      "CVE-2013-6449",
+      "CVE-2013-6450"
+    ],
+    "freebsd_sa": [
+      "SA-14:03.openssl"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-01-06",
+    "entry": "2014-01-06",
+    "modified": "2016-08-09"
+  }
+}

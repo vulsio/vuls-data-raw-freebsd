@@ -1,0 +1,34 @@
+{
+  "vid": "fb25333d-442f-11e4-98f3-5453ed2e2b49",
+  "topic": "krfb -- Multiple security issues in bundled libvncserver",
+  "affects": [
+    {
+      "name": [
+        "krfb"
+      ],
+      "range": [
+        {
+          "lt": "4.12.5_4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Martin Sandsmark reports:</p>\n\t<blockquote cite=\"http://lists.kde.org/?l=kde-announce&amp;m=141153917319769&amp;w=2\">\n\t  <p>krfb 4.14 [and earlier] embeds libvncserver which has had\n\t    several security issues.</p>\n\t  <p>Several remotely exploitable security issues have been\n\t    uncovered in libvncserver, some of which might allow a\n\t    remote authenticated user code execution or application\n\t    crashes.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-6055"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.kde.org/?l=kde-announce&m=141153917319769&w=2"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2014-09-23",
+    "entry": "2014-09-25"
+  }
+}

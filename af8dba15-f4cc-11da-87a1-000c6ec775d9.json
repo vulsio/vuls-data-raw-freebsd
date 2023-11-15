@@ -1,0 +1,31 @@
+{
+  "vid": "af8dba15-f4cc-11da-87a1-000c6ec775d9",
+  "topic": "dokuwiki -- spellchecker remote PHP code execution",
+  "affects": [
+    {
+      "name": [
+        "dokuwiki"
+      ],
+      "range": [
+        {
+          "lt": "20060309_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stefan Esser reports:</p>\n\t<blockquote cite=\"http://www.hardened-php.net/advisory_042006.119.html\">\n\t  <p>During the evaluation of DokuWiki for a german/korean\n\t    wiki of mine a flaw in DokuWiki's spellchecker was\n\t    discovered, that allows injecting arbitrary PHP commands,\n\t    by requesting a spellcheck on PHP commands in 'complex\n\t    curly syntax'.</p>\n\t  <p>Because the spellchecker is written as part of the AJAX\n\t    functionality of DokuWiki, it can be directly called by\n\t    any website visitor, without the need for a wiki\n\t    account.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.hardened-php.net/advisory_042006.119.html",
+      "http://bugs.splitbrain.org/index.php?do=details&id=823",
+      "http://secunia.com/advisories/20429/"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-06-05",
+    "entry": "2006-06-05"
+  }
+}

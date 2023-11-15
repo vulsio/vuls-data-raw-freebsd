@@ -1,0 +1,33 @@
+{
+  "vid": "2bcd2d24-24ca-11d8-82e5-0020ed76ef5a",
+  "topic": "Buffer overflow in pam_smb password handling",
+  "affects": [
+    {
+      "name": [
+        "pam_smb"
+      ],
+      "range": [
+        {
+          "lt": "1.9.9_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Applications utilizing pam_smb can be compromised by\n\t  any user who can enter a password.  In many cases,\n\t  this is a remote root compromise.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.skynet.ie/~airlied/pam_smb/"
+    ],
+    "cvename": [
+      "CVE-2003-0686"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-10-25",
+    "entry": "2003-10-25",
+    "modified": "2003-10-25"
+  }
+}

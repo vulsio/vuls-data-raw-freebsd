@@ -1,0 +1,42 @@
+{
+  "vid": "c1e5f35e-f93d-11e1-b07f-00235a5f2c9a",
+  "topic": "emacs -- remote code execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "emacs"
+      ],
+      "range": [
+        {
+          "lt": "24.2",
+          "gt": "24.*"
+        },
+        {
+          "gt": "23.*",
+          "le": "23.4_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chong Yidong reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2012/08/13/1\">\n\t  <p>Paul Ling has found a security flaw in the file-local\n\t  variables code in GNU Emacs.</p>\n\t  <p>When the Emacs user option `enable-local-variables' is\n\t  set to `:safe' (the default value is t), Emacs should\n\t  automatically refuse to evaluate `eval' forms in file-local\n\t  variable sections. Due to the bug, Emacs instead\n\t  automatically evaluates such `eval' forms. Thus, if the user\n\t  changes the value of `enable-local-variables' to `:safe',\n\t  visiting a malicious file can cause automatic execution of\n\t  arbitrary Emacs Lisp code with the permissions of the\n\t  user.</p>\n\t  <p>The bug is present in Emacs 23.2, 23.3, 23.4, and\n\t  24.1.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.gnu.org/archive/html/emacs-devel/2012-08/msg00802.html",
+      "http://debbugs.gnu.org/cgi/bugreport.cgi?bug=12155"
+    ],
+    "cvename": [
+      "CVE-2012-3479"
+    ],
+    "bid": [
+      "54969"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-13",
+    "entry": "2012-09-08",
+    "modified": "2013-05-13"
+  }
+}

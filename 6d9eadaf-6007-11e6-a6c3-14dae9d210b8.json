@@ -1,0 +1,42 @@
+{
+  "vid": "6d9eadaf-6007-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- sendmail improper close-on-exec flag handling",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.0_4",
+          "ge": "10.0"
+        },
+        {
+          "lt": "9.2_7",
+          "ge": "9.2"
+        },
+        {
+          "lt": "9.1_14",
+          "ge": "9.1"
+        },
+        {
+          "lt": "8.4_11",
+          "ge": "8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>There is a programming error in sendmail(8) that prevented\n\topen file descriptors have close-on-exec properly set.\n\tConsequently a subprocess will be able to access all open\n\tfiles that the parent process have open.</p>\n\t<h1>Impact:</h1>\n\t<p>A local user who can execute their own program for mail\n\tdelivery will be able to interfere with an open SMTP\n\tconnection.</p>\n      "
+  },
+  "references": {
+    "freebsd_sa": [
+      "SA-14:11.sendmail"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-06-03",
+    "entry": "2016-08-11"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "vid": "c71cdc95-3c18-45b7-866a-af28b59aabb5",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "59.0_1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "waterfox"
+      ],
+      "range": [
+        {
+          "lt": "56.0.4.36_3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.49.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "52.7.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "52.7.0,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul",
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "52.7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-06/\">\n\t  <p>CVE-2018-5127: Buffer overflow manipulating SVG animatedPathSegList</p>\n\t  <p>CVE-2018-5128: Use-after-free manipulating editor selection ranges</p>\n\t  <p>CVE-2018-5129: Out-of-bounds write with malformed IPC messages</p>\n\t  <p>CVE-2018-5130: Mismatched RTP payload type can trigger memory corruption</p>\n\t  <p>CVE-2018-5131: Fetch API improperly returns cached copies of no-store/no-cache resources</p>\n\t  <p>CVE-2018-5132: WebExtension Find API can search privileged pages</p>\n\t  <p>CVE-2018-5133: Value of the app.support.baseURL preference is not properly sanitized</p>\n\t  <p>CVE-2018-5134: WebExtensions may use view-source: URLs to bypass content restrictions</p>\n\t  <p>CVE-2018-5135: WebExtension browserAction can inject scripts into unintended contexts</p>\n\t  <p>CVE-2018-5136: Same-origin policy violation with data: URL shared workers</p>\n\t  <p>CVE-2018-5137: Script content can access legacy extension non-contentaccessible resources</p>\n\t  <p>CVE-2018-5138: Android Custom Tab address spoofing through long domain names</p>\n\t  <p>CVE-2018-5140: Moz-icon images accessible to web content through moz-icon: protocol</p>\n\t  <p>CVE-2018-5141: DOS attack through notifications Push API</p>\n\t  <p>CVE-2018-5142: Media Capture and Streams API permissions display incorrect origin with data: and blob: URLs</p>\n\t  <p>CVE-2018-5143: Self-XSS pasting javascript: URL with embedded tab into addressbar</p>\n\t  <p>CVE-2018-5126: Memory safety bugs fixed in Firefox 59</p>\n\t  <p>CVE-2018-5125: Memory safety bugs fixed in Firefox 59 and Firefox ESR 52.7</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2018-06/",
+      "https://www.mozilla.org/security/advisories/mfsa2018-07/"
+    ],
+    "cvename": [
+      "CVE-2018-5125",
+      "CVE-2018-5126",
+      "CVE-2018-5127",
+      "CVE-2018-5128",
+      "CVE-2018-5129",
+      "CVE-2018-5130",
+      "CVE-2018-5131",
+      "CVE-2018-5132",
+      "CVE-2018-5133",
+      "CVE-2018-5134",
+      "CVE-2018-5135",
+      "CVE-2018-5136",
+      "CVE-2018-5137",
+      "CVE-2018-5138",
+      "CVE-2018-5140",
+      "CVE-2018-5141",
+      "CVE-2018-5142",
+      "CVE-2018-5143"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-03-13",
+    "entry": "2018-03-13",
+    "modified": "2018-03-16"
+  }
+}

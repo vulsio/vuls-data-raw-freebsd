@@ -1,0 +1,33 @@
+{
+  "vid": "694da5b4-5877-11df-8d80-0015587e2cc1",
+  "topic": "mediawiki -- authenticated CSRF vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mediawiki"
+      ],
+      "range": [
+        {
+          "lt": "1.15.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A MediaWiki security announcement reports:</p>\n\t<blockquote cite=\"http://lists.wikimedia.org/pipermail/mediawiki-announce/2010-April/000090.html\">\n\t  <p>MediaWiki was found to be vulnerable to login CSRF.\n\t    An attacker who controls a user account on the target\n\t    wiki can force the victim to log in as the attacker,\n\t    via a script on an external website.</p>\n\t  <p>If the wiki is configured to allow user scripts, say\n\t    with \"$wgAllowUserJs = true\" in LocalSettings.php, then\n\t    the attacker can proceed to mount a phishing-style\n\t    attack against the victim to obtain their password.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.wikimedia.org/pipermail/mediawiki-announce/2010-April/000090.html",
+      "https://bugzilla.wikimedia.org/show_bug.cgi?id=23076"
+    ],
+    "cvename": [
+      "CVE-2010-1150"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-04-07",
+    "entry": "2010-05-05"
+  }
+}

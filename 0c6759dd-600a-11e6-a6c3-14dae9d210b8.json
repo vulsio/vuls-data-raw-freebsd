@@ -1,0 +1,33 @@
+{
+  "vid": "0c6759dd-600a-11e6-a6c3-14dae9d210b8",
+  "topic": "FreeBSD -- shell injection vulnerability in patch(1)",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.1_16",
+          "ge": "10.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to insufficient sanitization of the input patch\n\tstream, it is possible for a patch file to cause patch(1)\n\tto run commands in addition to the desired SCCS or RCS\n\tcommands.</p>\n\t<h1>Impact:</h1>\n\t<p>This issue could be exploited to execute arbitrary\n\tcommands as the user invoking patch(1) against a specially\n\tcrafted patch file, which could be leveraged to obtain\n\televated privileges.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2015-1416"
+    ],
+    "freebsd_sa": [
+      "SA-15:14.bsdpatch"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-28",
+    "entry": "2016-08-11"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "vid": "22dc4a22-d1e5-11e4-879c-00e0814cab4e",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "le": "1.605"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "le": "1.596.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-03-23\">\n\t  <h1>Description</h1>\n\t  <h5>SECURITY-171, SECURITY-177 (Reflective XSS vulnerability)</h5>\n\t  <p>An attacker without any access to Jenkins can navigate the user\n\t    to a carefully crafted URL and have the user execute unintended\n\t    actions. This vulnerability can be used to attack Jenkins inside\n\t    firewalls from outside so long as the location of Jenkins is known\n\t    to the attacker.</p>\n\t  <h5>SECURITY-180 (forced API token change)</h5>\n\t  <p>The part of Jenkins that issues a new API token was not\n\t    adequately protected against anonymous attackers. This allows an\n\t    attacker to escalate privileges on Jenkins.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-03-23"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-23",
+    "entry": "2015-03-24"
+  }
+}

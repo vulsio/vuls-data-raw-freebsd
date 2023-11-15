@@ -1,0 +1,29 @@
+{
+  "vid": "115a1389-858e-11e0-a76c-000743057ca2",
+  "topic": "Pubcookie Login Server -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "pubcookie-login-server"
+      ],
+      "range": [
+        {
+          "lt": "3.3.2d"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Nathan Dors, Pubcookie Project reports:</p>\n\t<blockquote cite=\"http://pubcookie.org/news/20070606-login-secadv.html\">\n\t  <p>A  new non-persistent XSS vulnerability was found in the\n\t    Pubcookie login server's compiled binary \"index.cgi\" CGI\n\t    program.  The CGI program mishandles untrusted data when\n\t    printing responses to the browser.  This makes the program\n\t    vulnerable to carefully crafted requests containing script\n\t    or HTML.  If an attacker can lure an unsuspecting user to\n\t    visit carefully staged content, the attacker can use it to\n\t    redirect the user to his or her local Pubcookie login page\n\t    and attempt to exploit the XSS vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://pubcookie.org/news/20070606-login-secadv.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-05-25",
+    "entry": "2011-05-23"
+  }
+}

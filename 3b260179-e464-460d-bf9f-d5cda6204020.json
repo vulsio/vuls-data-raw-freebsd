@@ -1,0 +1,38 @@
+{
+  "vid": "3b260179-e464-460d-bf9f-d5cda6204020",
+  "topic": "racoon -- remote denial-of-service",
+  "affects": [
+    {
+      "name": [
+        "racoon"
+      ],
+      "range": [
+        {
+          "lt": "20050510a"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sebastian Krahmer discovered that the racoon ISAKMP daemon\n\t  could be crashed with a maliciously crafted UDP packet.  No\n\t  authentication is required in order to perform the attack.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xforce.iss.net/xforce/xfdb/19707",
+      "https://bugzilla.redhat.com/bugzilla/attachment.cgi?id=109966&action=view"
+    ],
+    "cvename": [
+      "CVE-2005-0398"
+    ],
+    "mlist": [
+      {
+        "text": "http://sourceforge.net/mailarchive/forum.php?thread_id=6787713&forum_id=32000"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-03-12",
+    "entry": "2005-06-03"
+  }
+}

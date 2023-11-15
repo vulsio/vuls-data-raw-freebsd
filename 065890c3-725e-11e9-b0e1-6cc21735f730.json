@@ -1,0 +1,62 @@
+{
+  "vid": "065890c3-725e-11e9-b0e1-6cc21735f730",
+  "topic": "PostgreSQL -- Selectivity estimators bypass row security policies",
+  "affects": [
+    {
+      "name": [
+        "postgresql11-server"
+      ],
+      "range": [
+        {
+          "lt": "11.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql10-server"
+      ],
+      "range": [
+        {
+          "lt": "10.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql96-server"
+      ],
+      "range": [
+        {
+          "lt": "9.6.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql95-server"
+      ],
+      "range": [
+        {
+          "lt": "9.5.17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1939/\">\n\t  <p>\n\t    PostgreSQL maintains statistics for tables by sampling\n\t    data available in columns; this data is consulted during\n\t    the query planning process. Prior to this release, a user\n\t    able to execute SQL queries with permissions to read a\n\t    given column could craft a leaky operator that could\n\t    read whatever data had been sampled from that column.\n\t    If this happened to include values from rows that the user\n\t    is forbidden to see by a row security policy, the user\n\t    could effectively bypass the policy. This is fixed by only\n\t    allowing a non-leakproof operator to use this data if\n\t    there are no relevant row security policies for the table.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.postgresql.org/about/news/1939/"
+    ],
+    "cvename": [
+      "CVE-2019-10130"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-05-09",
+    "entry": "2019-05-09"
+  }
+}

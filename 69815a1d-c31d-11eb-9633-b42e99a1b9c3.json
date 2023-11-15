@@ -1,0 +1,63 @@
+{
+  "vid": "69815a1d-c31d-11eb-9633-b42e99a1b9c3",
+  "topic": "SOGo -- SAML user authentication impersonation",
+  "affects": [
+    {
+      "name": [
+        "sogo"
+      ],
+      "range": [
+        {
+          "lt": "5.1.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "sogo-activesync"
+      ],
+      "range": [
+        {
+          "lt": "5.1.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "sogo2"
+      ],
+      "range": [
+        {
+          "lt": "2.4.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "sogo2-activesync"
+      ],
+      "range": [
+        {
+          "lt": "2.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>sogo.nu reports:</p>\n\t<blockquote cite=\"https://www.sogo.nu/news/2021/saml-vulnerability.html\">\n\t  <p>SOGo was not validating the signatures of any SAML assertions it received.</p>\n\t  <p>This means any actor with network access to the deployment could impersonate</p>\n\t  <p>users when SAML was the authentication method.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.sogo.nu/news/2021/saml-vulnerability.html",
+      "https://blogs.akamai.com/2021/06/sogo-and-packetfence-impacted-by-saml-implementation-vulnerabilities.html"
+    ],
+    "cvename": [
+      "CVE-2021-33054"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-06-01",
+    "entry": "2021-06-02"
+  }
+}

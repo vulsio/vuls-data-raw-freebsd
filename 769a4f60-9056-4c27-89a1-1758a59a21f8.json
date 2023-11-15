@@ -1,0 +1,29 @@
+{
+  "vid": "769a4f60-9056-4c27-89a1-1758a59a21f8",
+  "topic": "zeek -- Vulnerability due to memory leak",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "3.0.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jon Siwek of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v3.0.11\">\n\t  <p>This release fixes the following security issue:</p>\n\t  <ul>\n\t  <li>A memory leak in multipart MIME code has potential\n\t  for remote exploitation and cause for Denial of Service\n\t  via resource exhaustion.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/zeek/zeek/releases/tag/v3.0.11"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-09-29",
+    "entry": "2020-10-07"
+  }
+}

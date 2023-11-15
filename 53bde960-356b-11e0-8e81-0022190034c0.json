@@ -1,0 +1,32 @@
+{
+  "vid": "53bde960-356b-11e0-8e81-0022190034c0",
+  "topic": "mupdf -- Remote System Access",
+  "affects": [
+    {
+      "name": [
+        "mupdf"
+      ],
+      "range": [
+        {
+          "lt": "0.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/43020/\">\n\t  <p>The vulnerability is caused due to an error within the\n\t    \"closedctd()\" function in fitz/filt_dctd.c when processing PDF\n\t    files containing certain malformed JPEG images. This can be\n\t    exploited to cause a stack corruption by e.g. tricking a user\n\t    into opening a specially crafted PDF file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/43020/"
+    ],
+    "bid": [
+      "46027"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-01-26",
+    "entry": "2011-02-10"
+  }
+}

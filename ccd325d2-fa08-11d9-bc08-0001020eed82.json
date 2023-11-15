@@ -1,0 +1,47 @@
+{
+  "vid": "ccd325d2-fa08-11d9-bc08-0001020eed82",
+  "topic": "isc-dhcpd -- format string vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "isc-dhcp3-client",
+        "isc-dhcp3-devel",
+        "isc-dhcp3-relay",
+        "isc-dhcp3-server",
+        "isc-dhcp3",
+        "isc-dhcp",
+        "isc-dhcpd"
+      ],
+      "range": [
+        {
+          "lt": "3.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The ISC DHCP programs are vulnerable to several format\n\t  string vulnerabilities which may allow a remote attacker to\n\t  execute arbitrary code with the permissions of the DHCP\n\t  programs, typically root for the DHCP server.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-1006"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=dhcp-announce&m=109996073218290",
+        "msgid": "20041109003345.GG763@isc.org"
+      }
+    ],
+    "bid": [
+      "11591"
+    ],
+    "cert_vu": [
+      "448384"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-08",
+    "entry": "2005-07-23"
+  }
+}

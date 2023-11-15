@@ -1,0 +1,63 @@
+{
+  "vid": "c1d97a8b-05ed-11d9-b45d-000c41e2cdad",
+  "topic": "mozilla -- POP client heap overflow",
+  "affects": [
+    {
+      "name": [
+        "mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-mozilla"
+      ],
+      "range": [
+        {
+          "lt": "1.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "netscape7"
+      ],
+      "range": [
+        {
+          "lt": "7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "0.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>zen-parse discovered a heap buffer overflow in Mozilla's\n\t  POP client implementation.  A malicious POP server\n\t  could exploit this vulnerability to cause Mozilla to execute\n\t  arbitrary code.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugzilla.mozilla.org/show_bug.cgi?id=229374",
+      "http://bugzilla.mozilla.org/show_bug.cgi?id=157644"
+    ],
+    "cvename": [
+      "CVE-2004-0757"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-07-22",
+    "entry": "2004-09-14"
+  }
+}

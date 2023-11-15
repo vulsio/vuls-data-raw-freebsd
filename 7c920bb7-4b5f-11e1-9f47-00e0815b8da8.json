@@ -1,0 +1,34 @@
+{
+  "vid": "7c920bb7-4b5f-11e1-9f47-00e0815b8da8",
+  "topic": "sudo -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "sudo"
+      ],
+      "range": [
+        {
+          "lt": "1.8.3_2",
+          "ge": "1.8.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.gratisoft.us/sudo/alerts/sudo_debug.html\">\n\t  <p>Sudo 1.8.0 introduced simple debugging support that was primarily\n\t    intended for use when developing policy or I/O logging plugins.\n\t    The sudo_debug() function contains a flaw where the program name\n\t    is used as part of the format string passed to the fprintf()\n\t    function. The program name can be controlled by the caller,\n\t    either via a symbolic link or, on some systems, by setting argv[0]\n\t    when executing sudo.</p>\n\t  <p>Using standard format string vulnerability exploitation\n\t    techniques it is possible to leverage this bug to achieve root\n\t    privileges.</p>\n\t  <p>Exploitation of the bug does not require that the attacker be\n\t    listed in the sudoers file. As such, we strongly suggest that\n\t    affected sites upgrade from affected sudo versions as soon as\n\t    possible.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.gratisoft.us/sudo/alerts/sudo_debug.html"
+    ],
+    "cvename": [
+      "CVE-2012-0809"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-01-30",
+    "entry": "2012-01-30",
+    "modified": "2012-01-31"
+  }
+}

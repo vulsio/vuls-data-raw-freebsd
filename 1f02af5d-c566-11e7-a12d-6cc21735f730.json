@@ -1,0 +1,86 @@
+{
+  "vid": "1f02af5d-c566-11e7-a12d-6cc21735f730",
+  "topic": "PostgreSQL vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "postgresql92-server"
+      ],
+      "range": [
+        {
+          "lt": "9.2.24",
+          "ge": "9.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql93-server"
+      ],
+      "range": [
+        {
+          "lt": "9.3.20",
+          "ge": "9.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql94-server"
+      ],
+      "range": [
+        {
+          "lt": "9.4.15",
+          "ge": "9.4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql95-server"
+      ],
+      "range": [
+        {
+          "lt": "9.5.10",
+          "ge": "9.5.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql96-server"
+      ],
+      "range": [
+        {
+          "lt": "9.6.6",
+          "ge": "9.6.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql10-server"
+      ],
+      "range": [
+        {
+          "lt": "10.1",
+          "ge": "10.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1801/\">\n\t  <ul>\n\t    <li>CVE-2017-15098: Memory disclosure in JSON functions</li>\n\t    <li>CVE-2017-15099: INSERT ... ON CONFLICT DO UPDATE fails to\n\t    enforce SELECT privileges</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2017-15099",
+      "CVE-2017-15098"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-10-10",
+    "entry": "2017-11-09"
+  }
+}

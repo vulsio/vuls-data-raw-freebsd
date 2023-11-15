@@ -1,0 +1,48 @@
+{
+  "vid": "95b01379-9d52-11e7-a25c-471bafc3262f",
+  "topic": "ruby -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ruby"
+      ],
+      "range": [
+        {
+          "lt": "2.2.8",
+          "ge": "2.2.0"
+        },
+        {
+          "lt": "2.3.5",
+          "ge": "2.3.0"
+        },
+        {
+          "lt": "2.4.2",
+          "ge": "2.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ruby blog:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/security/\">\n\t  <p>CVE-2017-0898: Buffer underrun vulnerability in Kernel.sprintf</p>\n\t  <p>If a malicious format string which contains a precious specifier (*)\n\t    is passed and a huge minus value is also passed to the specifier,\n\t    buffer underrun may be caused. In such situation, the result may\n\t    contains heap, or the Ruby interpreter may crash.</p>\n\t  <p>CVE-2017-10784: Escape sequence injection vulnerability in the Basic\n\t    authentication of WEBrick</p>\n\t  <p>When using the Basic authentication of WEBrick, clients can pass an\n\t    arbitrary string as the user name. WEBrick outputs the passed user name\n\t    intact to its log, then an attacker can inject malicious escape\n\t    sequences to the log and dangerous control characters may be executed\n\t    on a victim’s terminal emulator.</p>\n\t  <p>This vulnerability is similar to a vulnerability already fixed, but\n\t    it had not been fixed in the Basic authentication.</p>\n\t  <p>CVE-2017-14033: Buffer underrun vulnerability in OpenSSL ASN1 decode</p>\n\t  <p>If a malicious string is passed to the decode method of OpenSSL::ASN1,\n\t    buffer underrun may be caused and the Ruby interpreter may crash.</p>\n\t  <p>CVE-2017-14064: Heap exposure vulnerability in generating JSON</p>\n\t  <p>The generate method of JSON module optionally accepts an instance of\n\t    JSON::Ext::Generator::State class. If a malicious instance is passed,\n\t    the result may include contents of heap.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.ruby-lang.org/en/security/",
+      "https://www.ruby-lang.org/en/news/2017/09/14/sprintf-buffer-underrun-cve-2017-0898/",
+      "https://www.ruby-lang.org/en/news/2017/09/14/webrick-basic-auth-escape-sequence-injection-cve-2017-10784/",
+      "https://www.ruby-lang.org/en/news/2017/09/14/openssl-asn1-buffer-underrun-cve-2017-14033/",
+      "https://www.ruby-lang.org/en/news/2017/09/14/json-heap-exposure-cve-2017-14064/"
+    ],
+    "cvename": [
+      "CVE-2017-0898",
+      "CVE-2017-10784",
+      "CVE-2017-14033",
+      "CVE-2017-14064"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-09-14",
+    "entry": "2017-09-19"
+  }
+}

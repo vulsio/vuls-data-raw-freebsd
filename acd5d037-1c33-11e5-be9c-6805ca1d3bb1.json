@@ -1,0 +1,58 @@
+{
+  "vid": "acd5d037-1c33-11e5-be9c-6805ca1d3bb1",
+  "topic": "qemu -- Heap overflow in QEMU PCNET controller, allowing guest to host escape (CVE-2015-3209)",
+  "affects": [
+    {
+      "name": [
+        "qemu",
+        "qemu-devel"
+      ],
+      "range": [
+        {
+          "lt": "0.11.1_20"
+        },
+        {
+          "lt": "2.3.0_2",
+          "ge": "0.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "qemu-sbruno"
+      ],
+      "range": [
+        {
+          "lt": "2.3.50.g20150618_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xen-tools"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The QEMU security team reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-135.html\">\n\t  <p>A guest which has access to an emulated PCNET network\n\t    device (e.g. with \"model=pcnet\" in their VIF configuration)\n\t    can exploit this vulnerability to take over the qemu\n\t    process elevating its privilege to that of the qemu\n\t    process.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-135.html"
+    ],
+    "cvename": [
+      "CVE-2015-3209"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-10",
+    "entry": "2015-06-26",
+    "modified": "2015-07-11"
+  }
+}

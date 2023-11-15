@@ -1,0 +1,36 @@
+{
+  "vid": "bcad3faa-b40c-11e5-9728-002590263bf5",
+  "topic": "xen-kernel -- XENMEM_exchange error handling issues",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5.2_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-159.html\">\n\t  <p>Error handling in the operation may involve handing back pages to\n\t    the domain. This operation may fail when in parallel the domain gets\n\t    torn down. So far this failure unconditionally resulted in the host\n\t    being brought down due to an internal error being assumed. This is\n\t    CVE-2015-8339.</p>\n\t  <p>Furthermore error handling so far wrongly included the release of a\n\t    lock. That lock, however, was either not acquired or already released\n\t    on all paths leading to the error handling sequence. This is\n\t    CVE-2015-8340.</p>\n\t  <p>A malicious guest administrator may be able to deny service by\n\t    crashing the host or causing a deadlock.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-159.html"
+    ],
+    "cvename": [
+      "CVE-2015-8339",
+      "CVE-2015-8340"
+    ],
+    "freebsd_pr": [
+      "ports/205841"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-08",
+    "entry": "2016-01-06"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "vid": "f9f5c5a2-17b5-11e8-90b8-001999f8d30b",
+  "topic": "asterisk and pjsip -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk13"
+      ],
+      "range": [
+        {
+          "lt": "13.19.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "pjsip"
+      ],
+      "range": [
+        {
+          "lt": "2.7.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "pjsip-extsrtp"
+      ],
+      "range": [
+        {
+          "lt": "2.7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>AST-2018-002 - By crafting an SDP message with an\n\t  invalid media format description Asterisk crashes when\n\t  using the pjsip channel driver because pjproject's sdp\n\t  parsing algorithm fails to catch the invalid media format\n\t  description.</p>\n\t  <p>AST-2018-003 - By crafting an SDP message body with\n\t  an invalid fmtp attribute Asterisk crashes when using the\n\t  pjsip channel driver because pjproject's fmtp retrieval\n\t  function fails to check if fmtp value is empty (set empty\n\t  if previously parsed as invalid).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://downloads.asterisk.org/pub/security/AST-2018-002.html",
+      "https://downloads.asterisk.org/pub/security/AST-2018-003.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-02-21",
+    "entry": "2018-02-22"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "9b5a905f-e556-452f-a00c-8f070a086181",
+  "topic": "libtiff -- Improper Input Validation",
+  "affects": [
+    {
+      "name": [
+        "libtiff"
+      ],
+      "range": [
+        {
+          "le": "4.0.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>libtiff developers report:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/100524\">\n\t  <p>There is a reachable assertion abort in the function TIFFWriteDirectoryTagSubifd() in LibTIFF 4.0.8, related to tif_dirwrite.c and a SubIFD tag. A crafted input will lead to a remote denial of service attack.</p>\n\t  <p>There is a reachable assertion abort in the function TIFFWriteDirectorySec() in LibTIFF 4.0.8, related to tif_dirwrite.c and a SubIFD tag. A crafted input will lead to a remote denial of service attack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugzilla.maptools.org/show_bug.cgi?id=2727",
+      "http://bugzilla.maptools.org/show_bug.cgi?id=2728",
+      "http://www.securityfocus.com/bid/100524"
+    ],
+    "cvename": [
+      "CVE-2017-13726",
+      "CVE-2017-13727"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-08-29",
+    "entry": "2017-10-10"
+  }
+}

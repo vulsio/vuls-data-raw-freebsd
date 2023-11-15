@@ -1,0 +1,48 @@
+{
+  "vid": "8c1da77d-d3e9-11d9-8ffb-00061bc2ad93",
+  "topic": "xloadimage -- buffer overflow in FACES image handling",
+  "affects": [
+    {
+      "name": [
+        "xli"
+      ],
+      "range": [
+        {
+          "le": "1.17.0_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xloadimage"
+      ],
+      "range": [
+        {
+          "lt": "4.1.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>In 2001, zen-parse discovered a buffer overflow in\n\t  xloadimage's FACES image loader.  A maliciously crafted image\n\t  could cause xloadimage to execute arbitrary code.  A published\n\t  exploit exists for this vulnerability.</p>\n\t<p>In 2005, Rob Holland discovered that the same vulnerability\n\t  was present in xli.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=46186",
+      "http://bugs.gentoo.org/show_bug.cgi?id=79762"
+    ],
+    "cvename": [
+      "CVE-2001-0775"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=99477230306845"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2000-02-19",
+    "entry": "2005-06-03"
+  }
+}

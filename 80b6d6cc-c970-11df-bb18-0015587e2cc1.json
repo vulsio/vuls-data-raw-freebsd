@@ -1,0 +1,30 @@
+{
+  "vid": "80b6d6cc-c970-11df-bb18-0015587e2cc1",
+  "topic": "openx -- remote code execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "openx"
+      ],
+      "range": [
+        {
+          "lt": "2.8.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenX project reported:</p>\n\t<blockquote cite=\"http://blog.openx.org/09/security-update/\">\n\t  <p>It has been brought to our attention that there is a vulnerability\n\t  in the 2.8 downloadable version of OpenX that can result in a server\n\t  running the downloaded version of OpenX being compromised.</p>\n\t</blockquote>\n\t<p>This vulnerability exists in the file upload functionality\n\t  and allows attackers to upload and execute PHP code of\n\t  their choice.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.openx.org/09/security-update/",
+      "http://www.h-online.com/security/news/item/Web-sites-distribute-malware-via-hacked-OpenX-servers-1079099.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-09-14",
+    "entry": "2010-09-26"
+  }
+}

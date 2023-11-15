@@ -1,0 +1,33 @@
+{
+  "vid": "37528379-76a8-11e9-a4fd-00012e582166",
+  "topic": "Rust -- violation of Rust's safety guarantees",
+  "affects": [
+    {
+      "name": [
+        "rust"
+      ],
+      "range": [
+        {
+          "lt": "1.34.2",
+          "ge": "1.34.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sean McArthur reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12083\">\n\t  <p>\n\t    The Rust Programming Language Standard Library 1.34.x\n\t    before 1.34.2 contains a stabilized method which, if\n\t    overridden, can violate Rust's safety guarantees and\n\t    cause memory unsafety.  If the Error::type_id method\n\t    is overridden then any type can be safely cast to any\n\t    other type, causing memory safety vulnerabilities in\n\t    safe code (e.g., out-of-bounds write or read).  Code\n\t    that does not manually implement Error::type_id is\n\t    unaffected.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.rust-lang.org/2019/05/13/Security-advisory.html"
+    ],
+    "cvename": [
+      "CVE-2019-12083"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-05-09",
+    "entry": "2019-05-15"
+  }
+}

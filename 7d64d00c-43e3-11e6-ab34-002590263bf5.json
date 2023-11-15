@@ -1,0 +1,35 @@
+{
+  "vid": "7d64d00c-43e3-11e6-ab34-002590263bf5",
+  "topic": "quassel -- remote denial of service",
+  "affects": [
+    {
+      "name": [
+        "quassel"
+      ],
+      "range": [
+        {
+          "lt": "0.12.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4414\">\n\t  <p>The onReadyRead function in core/coreauthhandler.cpp in Quassel\n\t    before 0.12.4 allows remote attackers to cause a denial of service\n\t    (NULL pointer dereference and crash) via invalid handshake data.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://quassel-irc.org/node/129",
+      "https://github.com/quassel/quassel/commit/e678873",
+      "http://www.openwall.com/lists/oss-security/2016/04/30/2",
+      "http://www.openwall.com/lists/oss-security/2016/04/30/4"
+    ],
+    "cvename": [
+      "CVE-2016-4414"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-04-24",
+    "entry": "2016-07-07"
+  }
+}

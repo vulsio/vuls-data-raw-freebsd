@@ -1,0 +1,36 @@
+{
+  "vid": "ca8e56d5-e856-11dc-b5af-0017319806e7",
+  "topic": "ghostscript -- zseticcspace() function buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ghostscript-gpl",
+        "ghostscript-gpl-nox11"
+      ],
+      "range": [
+        {
+          "lt": "8.61_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chris Evans from the Google Security Team reports:</p>\n\t<blockquote cite=\"http://scary.beasts.org/security/CESA-2008-001.html\">\n\t  <p>Severity: parsing of evil PostScript file will result in\n\t    arbitrary code execution.</p>\n\t  <p>A stack-based buffer overflow in the zseticcspace() function\n\t    in zicc.c allows remote arbitrary code execution via a\n\t    malicious PostScript file (.ps) that contains a long Range\n\t    array.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://scary.beasts.org/security/CESA-2008-001.html"
+    ],
+    "cvename": [
+      "CVE-2008-0411"
+    ],
+    "bid": [
+      "28017"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-02-28",
+    "entry": "2008-03-05"
+  }
+}

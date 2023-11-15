@@ -1,0 +1,86 @@
+{
+  "vid": "67dbeeb6-80f4-11ea-bafd-815569f3852d",
+  "topic": "ansible - subversion password leak from PID",
+  "affects": [
+    {
+      "name": [
+        "ansible"
+      ],
+      "range": [
+        {
+          "lt": "2.8.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ansible27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ansible26"
+      ],
+      "range": [
+        {
+          "lt": "2.7.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ansible25"
+      ],
+      "range": [
+        {
+          "lt": "2.7.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ansible24"
+      ],
+      "range": [
+        {
+          "lt": "2.7.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ansible23"
+      ],
+      "range": [
+        {
+          "lt": "2.7.17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Borja Tarraso reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1739\">\n\t  <p>A flaw was found in Ansible 2.7.16 and prior, 2.8.8 and prior, and 2.9.5\n\t    and prior when a password is set with the argument \"password\" of svn module,\n\t    it is used on svn command line, disclosing to other users within the same\n\t    node. An attacker could take advantage by reading the cmdline file from that\n\t    particular PID on the procfs.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1739",
+      "https://github.com/ansible/ansible/issues/67797",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FWDK3QUVBULS3Q3PQTGEKUQYPSNOU5M3/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QT27K5ZRGDPCH7GT3DRI3LO4IVDVQUB7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/U3IMV3XEIUXL6S4KPLYYM4TVJQ2VNEP2/"
+    ],
+    "cvename": [
+      "CVE-2020-1739"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-02-12",
+    "entry": "2020-04-17"
+  }
+}

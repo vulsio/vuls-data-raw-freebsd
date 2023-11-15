@@ -1,0 +1,34 @@
+{
+  "vid": "b168ddea-105a-11db-ac96-000c6ec775d9",
+  "topic": "samba -- memory exhaustion DoS in smbd",
+  "affects": [
+    {
+      "name": [
+        "samba",
+        "ja-samba"
+      ],
+      "range": [
+        {
+          "lt": "3.0.23,1",
+          "ge": "3.0.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CAN-2006-3403.html\">\n\t  <p>The smbd daemon maintains internal data structures used\n\t    track active connections to file and printer shares.  In\n\t    certain circumstances an attacker may be able to\n\t    continually increase the memory usage of an smbd process\n\t    by issuing a large number of share connection requests.\n\t    This defect affects all Samba configurations.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.samba.org/samba/security/CAN-2006-3403.html"
+    ],
+    "cvename": [
+      "CVE-2006-3403"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-07-10",
+    "entry": "2006-07-10"
+  }
+}

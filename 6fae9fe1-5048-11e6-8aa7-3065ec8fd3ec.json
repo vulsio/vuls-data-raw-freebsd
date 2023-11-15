@@ -1,0 +1,50 @@
+{
+  "vid": "6fae9fe1-5048-11e6-8aa7-3065ec8fd3ec",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "52.0.2743.82"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"https://googlechromereleases.blogspot.nl/2016/07/stable-channel-update.html\">\n\t  <p>48 security fixes in this release, including:</p>\n\t  <ul>\n\t    <li>[610600] High CVE-2016-1706: Sandbox escape in PPAPI. Credit to\n\t      Pinkie Pie xisigr of Tencent's Xuanwu Lab</li>\n\t    <li>[613949] High CVE-2016-1708: Use-after-free in Extensions.\n\t      Credit to Adam Varsan</li>\n\t    <li>[614934] High CVE-2016-1709: Heap-buffer-overflow in sfntly.\n\t      Credit to ChenQin of Topsec Security Team</li>\n\t    <li>[616907] High CVE-2016-1710: Same-origin bypass in Blink.\n\t      Credit to Mariusz Mlynski</li>\n\t    <li>[617495] High CVE-2016-1711: Same-origin bypass in Blink.\n\t      Credit to Mariusz Mlynski</li>\n\t    <li>[618237] High CVE-2016-5127: Use-after-free in Blink.  Credit\n\t      to cloudfuzzer</li>\n\t    <li>[619166] High CVE-2016-5128: Same-origin bypass in V8. Credit\n\t      to Anonymous</li>\n\t    <li>[620553] High CVE-2016-5129: Memory corruption in V8. Credit to\n\t      Jeonghoon Shin</li>\n\t    <li>[623319] High CVE-2016-5130: URL spoofing. Credit to Wadih\n\t      Matar</li>\n\t    <li>[623378] High CVE-2016-5131: Use-after-free in libxml. Credit\n\t      to Nick Wellnhofer</li>\n\t    <li>[607543] Medium CVE-2016-5132: Limited same-origin bypass in\n\t      Service Workers. Credit to Ben Kelly</li>\n\t    <li>[613626] Medium CVE-2016-5133: Origin confusion in proxy\n\t      authentication.  Credit to Patch Eudor</li>\n\t    <li>[593759] Medium CVE-2016-5134: URL leakage via PAC script.\n\t      Credit to Paul Stone</li>\n\t    <li>[605451] Medium CVE-2016-5135: Content-Security-Policy bypass.\n\t      Credit to kingxwy</li>\n\t    <li>[625393] Medium CVE-2016-5136: Use after free in extensions.\n\t      Credit to Rob Wu</li>\n\t    <li>[625945] Medium CVE-2016-5137: History sniffing with HSTS and\n\t      CSP. Credit to Xiaoyin Liu</li>\n\t    <li>[629852] CVE-2016-1705: Various fixes from internal audits,\n\t      fuzzing and other initiatives.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://googlechromereleases.blogspot.nl/2016/07/stable-channel-update.html"
+    ],
+    "cvename": [
+      "CVE-2016-1705",
+      "CVE-2016-1706",
+      "CVE-2016-1708",
+      "CVE-2016-1709",
+      "CVE-2016-1710",
+      "CVE-2016-1711",
+      "CVE-2016-5127",
+      "CVE-2016-5128",
+      "CVE-2016-5129",
+      "CVE-2016-5130",
+      "CVE-2016-5131",
+      "CVE-2016-5132",
+      "CVE-2016-5133",
+      "CVE-2016-5134",
+      "CVE-2016-5135",
+      "CVE-2016-5136",
+      "CVE-2016-5137"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-07-20",
+    "entry": "2016-07-22"
+  }
+}

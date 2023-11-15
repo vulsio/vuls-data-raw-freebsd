@@ -1,0 +1,35 @@
+{
+  "vid": "9dde9dac-08f4-11e1-af36-003067b2972c",
+  "topic": "caml-light -- insecure use of temporary files",
+  "affects": [
+    {
+      "name": [
+        "caml-light"
+      ],
+      "range": [
+        {
+          "le": "0.75"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>caml-light uses mktemp() insecurely, and also does\n\t  unsafe things in /tmp during make install.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2011-4119"
+    ],
+    "mlist": [
+      {
+        "text": "http://seclists.org/oss-sec/2011/q4/249",
+        "msgid": "20111106200911.GC13652@netbsd.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2011-11-02",
+    "entry": "2011-11-06"
+  }
+}

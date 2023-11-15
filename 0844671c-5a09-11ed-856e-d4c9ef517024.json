@@ -1,0 +1,33 @@
+{
+  "vid": "0844671c-5a09-11ed-856e-d4c9ef517024",
+  "topic": "OpenSSL -- Buffer overflows in Email verification",
+  "affects": [
+    {
+      "name": [
+        "openssl-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20221101.txt\">\n\t  <p>X.509 Email Address 4-byte Buffer Overflow (CVE-2022-3602) (High):\n\t    A buffer overrun can be triggered in X.509 certificate verification,\n\t    specifically in name constraint checking.</p>\n\t  <p>X.509 Email Address Variable Length Buffer Overflow (CVE-2022-3786)\n\t    (High): A buffer overrun can be triggered in X.509 certificate\n\t    verification, specifically in name constraint checking.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20221101.txt"
+    ],
+    "cvename": [
+      "CVE-2022-3602",
+      "CVE-2022-3786"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-01",
+    "entry": "2022-11-01"
+  }
+}

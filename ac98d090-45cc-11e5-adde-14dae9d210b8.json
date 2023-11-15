@@ -1,0 +1,32 @@
+{
+  "vid": "ac98d090-45cc-11e5-adde-14dae9d210b8",
+  "topic": "freexl -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "freexl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jodie Cunningham reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/03/25/1\">\n\t  <p>#1:  A flaw was found in the way FreeXL reads sectors from\n\t    the input file. A specially crafted file could possibly\n\t    result in stack corruption near freexl.c:3752.</p>\n\t  <p>#2: A flaw was found in the function allocate_cells(). A\n\t    specially crafted file with invalid workbook dimensions\n\t    could possibly result in stack corruption near freexl.c:1074</p>\n\t  <p>#3: A flaw was found in the way FreeXL handles a premature EOF. A\n\t    specially crafted input file could possibly result in stack corruption\n\t    near freexl.c:1131</p>\n\t  <p>#4: FreeXL 1.0.0g did not properly check requests for workbook memory\n\t    allocation. A specially crafted input file could cause a Denial of\n\t    Service, or possibly write onto the stack.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/03/25/1"
+    ],
+    "cvename": [
+      "CVE-2015-2776"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-24",
+    "entry": "2015-08-18"
+  }
+}

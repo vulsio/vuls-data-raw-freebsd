@@ -1,0 +1,29 @@
+{
+  "vid": "9c03845c-7398-11eb-bc0e-2cf05d620ecc",
+  "topic": "raptor2 -- malformed input file can lead to a segfault",
+  "affects": [
+    {
+      "name": [
+        "raptor2"
+      ],
+      "range": [
+        {
+          "lt": "2.0.15_17"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Redland Issue Tracker reports:</p>\n\t<blockquote cite=\"https://bugs.librdf.org/mantis/view.php?id=650\">\n\t  <p>due to an out of bounds array access in\nraptor_xml_writer_start_element_common.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.librdf.org/mantis/view.php?id=650"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-11-24",
+    "entry": "2021-02-20"
+  }
+}

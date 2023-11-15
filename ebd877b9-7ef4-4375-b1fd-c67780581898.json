@@ -1,0 +1,43 @@
+{
+  "vid": "ebd877b9-7ef4-4375-b1fd-c67780581898",
+  "topic": "ruby -- Hostname check bypassing vulnerability in SSL client",
+  "affects": [
+    {
+      "name": [
+        "ruby19"
+      ],
+      "range": [
+        {
+          "lt": "1.9.3.448,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby18"
+      ],
+      "range": [
+        {
+          "lt": "1.8.7.374,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ruby Developers report:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2013/06/27/hostname-check-bypassing-vulnerability-in-openssl-client-cve-2013-4073/\">\n\t  <p>Ruby's SSL client implements hostname identity check but it does\n\t     not properly handle hostnames in the certificate that contain null\n\t     bytes.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ruby-lang.org/en/news/2013/06/27/hostname-check-bypassing-vulnerability-in-openssl-client-cve-2013-4073/"
+    ],
+    "cvename": [
+      "CVE-2013-4073"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-06-27",
+    "entry": "2013-07-11",
+    "modified": "2013-09-24"
+  }
+}

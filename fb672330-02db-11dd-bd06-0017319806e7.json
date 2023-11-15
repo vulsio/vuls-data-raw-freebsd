@@ -1,0 +1,36 @@
+{
+  "vid": "fb672330-02db-11dd-bd06-0017319806e7",
+  "topic": "suphp -- multiple local privilege escalation vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "suphp"
+      ],
+      "range": [
+        {
+          "lt": "0.6.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Multiple local privilege escalation are found in the symlink\n\t  verification code.  An attacker may use it to run a PHP script with\n\t  the victim's privilege.  This attack is a little harder when suphp\n\t  operates in paranoid mode.  For suphp that runs in owner mode\n\t  which is the default in ports, immediate upgrade to latest\n\t  version is advised.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.marsching.biz/pipermail/suphp/2008-March/001750.html"
+    ],
+    "cvename": [
+      "CVE-2008-1614"
+    ],
+    "bid": [
+      "28568"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-03-30",
+    "entry": "2008-04-05",
+    "modified": "2010-05-12"
+  }
+}

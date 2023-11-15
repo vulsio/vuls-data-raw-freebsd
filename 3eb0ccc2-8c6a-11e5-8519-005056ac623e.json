@@ -1,0 +1,32 @@
+{
+  "vid": "3eb0ccc2-8c6a-11e5-8519-005056ac623e",
+  "topic": "strongswan -- authentication bypass vulnerability in the eap-mschapv2 plugin",
+  "affects": [
+    {
+      "name": [
+        "strongswan"
+      ],
+      "range": [
+        {
+          "lt": "5.3.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Strongswan Release Notes reports:</p>\n\t<blockquote cite=\"https://github.com/strongswan/strongswan/blob/master/NEWS\">\n\t  <p>Fixed an authentication bypass vulnerability in the eap-mschapv2 plugin that\n\t    was caused by insufficient verification of the internal state when handling\n\t    MSCHAPv2 Success messages received by the client.\n\t    This vulnerability has been registered as CVE-2015-8023.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/strongswan/strongswan/commit/453e204ac40dfff2e0978e8f84a5f8ff0cbc45e2"
+    ],
+    "cvename": [
+      "CVE-2015-8023"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-11-16",
+    "entry": "2015-11-16"
+  }
+}

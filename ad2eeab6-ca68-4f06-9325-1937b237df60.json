@@ -1,0 +1,35 @@
+{
+  "vid": "ad2eeab6-ca68-4f06-9325-1937b237df60",
+  "topic": "consul -- vulnerability in embedded DNS library",
+  "affects": [
+    {
+      "name": [
+        "consul"
+      ],
+      "range": [
+        {
+          "lt": "1.0.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Consul developers report:</p>\n\t<blockquote cite=\"https://github.com/hashicorp/consul/issues/3859\">\n\t  <p>A flaw was found in the embedded DNS library used in consul which\n\t  may allow a denial of service attack. Consul was updated to include\n\t  the fixed version.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/hashicorp/consul/issues/3859",
+      "https://github.com/hashicorp/consul/blob/master/CHANGELOG.md#105-february-7-2018",
+      "https://github.com/miekg/dns/pull/631",
+      "https://github.com/miekg/dns/issues/627"
+    ],
+    "cvename": [
+      "CVE-2017-15133"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-01-17",
+    "entry": "2018-02-16"
+  }
+}

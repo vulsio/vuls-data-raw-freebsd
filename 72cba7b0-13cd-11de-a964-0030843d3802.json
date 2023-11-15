@@ -1,0 +1,37 @@
+{
+  "vid": "72cba7b0-13cd-11de-a964-0030843d3802",
+  "topic": "netatalk -- arbitrary command execution in papd daemon",
+  "affects": [
+    {
+      "name": [
+        "netatalk"
+      ],
+      "range": [
+        {
+          "lt": "2.0.3_5,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33227/\">\n\t  <p>A vulnerability has been reported in Netatalk, which potentially\n\t    can be exploited by malicious users to compromise a vulnerable system.</p>\n\t  <p>The vulnerability is caused due to the papd daemon improperly\n\t    sanitising several received parameters before passing them in a call\n\t    to popen(). This can be exploited to execute arbitrary commands via\n\t    a specially crafted printing request.</p>\n\t  <p>Successful exploitation requires that a printer is configured to\n\t    pass arbitrary values as parameters to a piped command.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/33227/",
+      "http://www.openwall.com/lists/oss-security/2009/01/13/3"
+    ],
+    "cvename": [
+      "CVE-2008-5718"
+    ],
+    "bid": [
+      "32925"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-19",
+    "entry": "2009-03-18",
+    "modified": "2009-03-18"
+  }
+}

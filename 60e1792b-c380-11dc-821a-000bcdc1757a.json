@@ -1,0 +1,32 @@
+{
+  "vid": "60e1792b-c380-11dc-821a-000bcdc1757a",
+  "topic": "geeklog xss vulnerability",
+  "affects": [
+    {
+      "name": [
+        "geeklog"
+      ],
+      "range": [
+        {
+          "lt": "1.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Geeklog reports:</p>\n\t<blockquote cite=\"http://www.geeklog.net/article.php/geeklog-1.4.0sr6\">\n\t  <p>MustLive pointed out a possible XSS in the form to email an\n\t    article to a friend that we're fixing with this release.</p>\n\t  <p>Please note that this problem only exists in Geeklog 1.4.0\n\t    - neither Geeklog 1.4.1 nor any older versions (1.3.x series)\n\t    have that problem.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.geeklog.net/article.php/geeklog-1.4.0sr6"
+    ],
+    "cvename": [
+      "CVE-2006-3756"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-01-08",
+    "entry": "2008-01-15"
+  }
+}

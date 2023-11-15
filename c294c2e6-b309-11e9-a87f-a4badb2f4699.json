@@ -1,0 +1,33 @@
+{
+  "vid": "c294c2e6-b309-11e9-a87f-a4badb2f4699",
+  "topic": "FreeBSD -- Resource exhaustion in non-default RACK TCP stack",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.0_6",
+          "ge": "12.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>While processing acknowledgements, the RACK code uses\n\tseveral linked lists to maintain state entries. A malicious\n\tattacker can cause the lists to grow unbounded. This can\n\tcause an expensive list traversal on every packet being\n\tprocessed, leading to resource exhaustion and a denial of\n\tservice.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker with the ability to send specially crafted\n\tTCP traffic to a victim system can degrade network performance\n\tand/or consume excessive CPU by exploiting the inefficiency\n\tof traversing the potentially very large RACK linked lists\n\twith relatively small bandwidth cost.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2019-5599"
+    ],
+    "freebsd_sa": [
+      "SA-19:08.rack"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-06-19",
+    "entry": "2019-07-30"
+  }
+}

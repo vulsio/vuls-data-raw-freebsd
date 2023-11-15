@@ -1,0 +1,110 @@
+{
+  "vid": "4c005a5e-2541-4d95-80a0-00c76919aa66",
+  "topic": "fd_set -- bitmap index overflow in multiple applications",
+  "affects": [
+    {
+      "name": [
+        "gatekeeper"
+      ],
+      "range": [
+        {
+          "lt": "2.2.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "citadel"
+      ],
+      "range": [
+        {
+          "lt": "6.29"
+        }
+      ]
+    },
+    {
+      "name": [
+        "3proxy"
+      ],
+      "range": [
+        {
+          "lt": "0.5.b"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jabber"
+      ],
+      "range": [
+        {
+          "lt": "1.4.3.1_1,1"
+        },
+        {
+          "eq": "1.4.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bnc"
+      ],
+      "range": [
+        {
+          "lt": "2.9.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rinetd"
+      ],
+      "range": [
+        {
+          "lt": "0.62_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "dante"
+      ],
+      "range": [
+        {
+          "lt": "1.1.15"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bld"
+      ],
+      "range": [
+        {
+          "lt": "0.3.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>3APA3A reports:</p>\n\t<blockquote cite=\"http://www.security.nnov.ru/advisories/sockets.asp\">\n\t  <p>If programmer fails to check socket number before using\n\t    select() or fd_set macros, it's possible to overwrite\n\t    memory behind fd_set structure. Very few select() based\n\t    application actually check FD_SETSIZE value. <em>[...]</em></p>\n\t  <p>Depending on vulnerable application it's possible to\n\t    overwrite portions of memory. Impact is close to\n\t    off-by-one overflows, code execution doesn't seems\n\t    exploitable.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.gotbnc.com/changes.html#2.9.3",
+      "http://www.security.nnov.ru/advisories/sockets.asp"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110660879328901",
+        "msgid": "1473827718.20050124233008@security.nnov.ru"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-12",
+    "entry": "2005-06-17",
+    "modified": "2006-09-03"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "1fe734bf-4a06-11db-b48d-00508d6a62df",
+  "topic": "opera -- RSA Signature Forgery",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "opera-devel",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "9.02"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Opera reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/search/supsearch.dml?index=845\">\n\t  <p>A specially crafted digital certificate can bypass Opera's\n\t    certificate signature verification. Forged certificates can\n\t    contain any false information the forger chooses, and Opera\n\t    will still present it as valid. Opera will not present any\n\t    warning dialogs in this case, and the security status will\n\t    be the highest possible (3). This defeats the protection\n\t    against \"man in the middle\", the attacks that SSL was\n\t    designed to prevent.</p>\n\t  <p>There is a flaw in OpenSSL's RSA signature verification\n\t    that affects digital certificates using 3 as the public\n\t    exponent. Some of the certificate issuers that are on\n\t    Opera's list of trusted signers have root certificates with\n\t    3 as the public exponent. The forged certificate can appear\n\t    to be signed by one of these.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/21982/",
+      "http://secunia.com/advisories/21709/",
+      "http://www.cdc.informatik.tu-darmstadt.de/securebrowser/",
+      "http://www.openssl.org/news/secadv_20060905.txt",
+      "http://www.mozilla.org/security/announce/2006/mfsa2006-60.html"
+    ],
+    "cvename": [
+      "CVE-2006-4339"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-09-18",
+    "entry": "2006-09-22"
+  }
+}

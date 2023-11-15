@@ -1,0 +1,37 @@
+{
+  "vid": "83b29e3f-886f-439f-b9a8-72e014479ff9",
+  "topic": "py-dparse -- REDoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-dparse",
+        "py38-dparse",
+        "py39-dparse",
+        "py310-dparse",
+        "py311-dparse"
+      ],
+      "range": [
+        {
+          "lt": "0.5.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>yeisonvargasf reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2022-301\">\n      <p>dparse is a parser for Python dependency files.</p>\n      <p>dparse in versions before 0.5.2 contain a regular expression that is vulnerable to a Regular Expression Denial of Service.</p>\n      <p>All the users parsing index server URLs with dparse are impacted by this vulnerability.</p>\n      <p>Users unable to upgrade should avoid passing index server URLs in the source file to be parsed.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2022-301",
+      "https://osv.dev/vulnerability/GHSA-8fg9-p83m-x5pq"
+    ],
+    "cvename": [
+      "CVE-2022-39280"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-10-06",
+    "entry": "2023-08-31"
+  }
+}

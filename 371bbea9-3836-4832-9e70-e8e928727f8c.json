@@ -1,0 +1,42 @@
+{
+  "vid": "371bbea9-3836-4832-9e70-e8e928727f8c",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium",
+        "chromium-npapi",
+        "chromium-pulse"
+      ],
+      "range": [
+        {
+          "lt": "48.0.2564.82"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.de/2016/01/stable-channel-update_20.html\">\n\t  <p>This update includes 37 security fixes, including:</p>\n\t  <ul>\n\t    <li>[497632] High CVE-2016-1612: Bad cast in V8.</li>\n\t    <li>[572871] High CVE-2016-1613: Use-after-free in PDFium.</li>\n\t    <li>[544691] Medium CVE-2016-1614: Information leak in Blink.</li>\n\t    <li>[468179] Medium CVE-2016-1615: Origin confusion in Omnibox.</li>\n\t    <li>[541415] Medium CVE-2016-1616: URL Spoofing.</li>\n\t    <li>[544765] Medium CVE-2016-1617: History sniffing with HSTS and\n\t      CSP.</li>\n\t    <li>[552749] Medium CVE-2016-1618: Weak random number generator in\n\t      Blink.</li>\n\t    <li>[557223] Medium CVE-2016-1619: Out-of-bounds read in\n\t      PDFium.</li>\n\t    <li>[579625] CVE-2016-1620: Various fixes from internal audits,\n\t      fuzzing and other initiatives.</li>\n\t    <li>Multiple vulnerabilities in V8 fixed at the tip of the 4.8\n\t      branch.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://googlechromereleases.blogspot.de/2016/01/stable-channel-update_20.html"
+    ],
+    "cvename": [
+      "CVE-2016-1612",
+      "CVE-2016-1613",
+      "CVE-2016-1614",
+      "CVE-2016-1615",
+      "CVE-2016-1616",
+      "CVE-2016-1617",
+      "CVE-2016-1618",
+      "CVE-2016-1619",
+      "CVE-2016-1620"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-20",
+    "entry": "2016-01-21"
+  }
+}

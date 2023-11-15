@@ -1,0 +1,32 @@
+{
+  "vid": "e8bcac84-2d5c-11e9-9a74-e0d55e2a8bf9",
+  "topic": "kf5-kauth -- Insecure handling of arguments in helpers",
+  "affects": [
+    {
+      "name": [
+        "kf5-kauth"
+      ],
+      "range": [
+        {
+          "lt": "5.54.0_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Albert Astals Cid  reports:</p>\n\t<blockquote cite=\"https://www.kde.org/info/security/advisory-20190209-1.txt\">\n\t<p>KAuth allows to pass parameters with arbitrary types to helpers running as root over DBus.</p>\n\t<p>Certain types can cause crashes and trigger decoding arbitrary images with dynamically loaded plugin</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.kde.org/info/security/advisory-20190209-1.txt"
+    ],
+    "cvename": [
+      "CVE-2019-7443"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-09",
+    "entry": "2019-02-10"
+  }
+}

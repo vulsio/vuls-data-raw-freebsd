@@ -1,0 +1,33 @@
+{
+  "vid": "1091d2d1-cb2e-11e5-b14b-bcaec565249c",
+  "topic": "webkit -- UI spoof",
+  "affects": [
+    {
+      "name": [
+        "webkit-gtk2",
+        "webkit-gtk3"
+      ],
+      "range": [
+        {
+          "lt": "2.4.9_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>webkit reports:</p>\n\t<blockquote cite=\"http://webkitgtk.org/security/WSA-2015-0002.html\">\n\t  <p>The ScrollView::paint function in platform/scroll/ScrollView.cpp\n\t    in Blink, as used in Google Chrome before 35.0.1916.114, allows\n\t    remote attackers to spoof the UI by extending scrollbar painting\n\t    into the parent frame.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://webkitgtk.org/security/WSA-2015-0002.html"
+    ],
+    "cvename": [
+      "CVE-2014-1748"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-28",
+    "entry": "2016-02-04"
+  }
+}

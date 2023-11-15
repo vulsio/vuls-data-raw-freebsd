@@ -1,0 +1,41 @@
+{
+  "vid": "9eb01384-d793-11ea-88f8-901b0ef719ab",
+  "topic": "FreeBSD -- Potential memory corruption in USB network device drivers",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.1_8",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.4_2",
+          "ge": "11.4"
+        },
+        {
+          "lt": "11.3_12",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A missing length validation code common to these three drivers means that a\n\tmalicious USB device could write beyond the end of an allocated network\n\tpacket buffer.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker with physical access to a USB port and the ability to bring a\n\tnetwork interface up may be able to use a specially crafted USB device to\n\tgain kernel or user-space code execution.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-7459"
+    ],
+    "freebsd_sa": [
+      "SA-20:21.usb_net"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-08-05",
+    "entry": "2020-08-06"
+  }
+}

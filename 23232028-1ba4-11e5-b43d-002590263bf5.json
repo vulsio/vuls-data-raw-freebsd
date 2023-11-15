@@ -1,0 +1,37 @@
+{
+  "vid": "23232028-1ba4-11e5-b43d-002590263bf5",
+  "topic": "elasticsearch -- security fix for shared file-system repositories",
+  "affects": [
+    {
+      "name": [
+        "elasticsearch"
+      ],
+      "range": [
+        {
+          "lt": "1.6.0",
+          "ge": "1.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/community/security\">\n\t  <p>Vulnerability Summary: All Elasticsearch versions from 1.0.0 to\n\t    1.5.2 are vulnerable to an attack that uses Elasticsearch to modify\n\t    files read and executed by certain other applications.</p>\n\t  <p>Remediation Summary: Users should upgrade to 1.6.0. Alternately,\n\t    ensure that other applications are not present on the system, or\n\t    that Elasticsearch cannot write into areas where these applications\n\t    would read.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.elastic.co/community/security",
+      "https://www.elastic.co/blog/elasticsearch-1-6-0-released"
+    ],
+    "cvename": [
+      "CVE-2015-4165"
+    ],
+    "freebsd_pr": [
+      "ports/201008"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-09",
+    "entry": "2015-06-26"
+  }
+}

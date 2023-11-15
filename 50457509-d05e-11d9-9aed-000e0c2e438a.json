@@ -1,0 +1,40 @@
+{
+  "vid": "50457509-d05e-11d9-9aed-000e0c2e438a",
+  "topic": "phpSysInfo -- cross site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpSysInfo"
+      ],
+      "range": [
+        {
+          "lt": "2.5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Securityreason.com advisory reports that various cross\n\t  site scripting vulnerabilities have been found in phpSysInfo.\n\t  Input is not properly sanitised before it is returned to the\n\t  user.  A malicious person could exploit this to execute\n\t  arbitrary HTML and script code in a users browser session.\n\t  Also it is possible to view the full path of certain scripts\n\t  by accessing them directly.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-0869",
+      "CVE-2005-0870"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111161017209422",
+        "msgid": "20050323180207.11987.qmail@www.securityfocus.com"
+      }
+    ],
+    "bid": [
+      "12887"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-03-22",
+    "entry": "2005-07-09",
+    "modified": "2005-12-25"
+  }
+}

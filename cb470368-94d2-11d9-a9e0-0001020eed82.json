@@ -1,0 +1,43 @@
+{
+  "vid": "cb470368-94d2-11d9-a9e0-0001020eed82",
+  "topic": "ethereal -- multiple protocol dissectors vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ethereal",
+        "ethereal-lite",
+        "tethereal",
+        "tethereal-lite"
+      ],
+      "range": [
+        {
+          "lt": "0.10.10",
+          "ge": "0.9.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An Ethreal Security Advisories reports:</p>\n\t<blockquote cite=\"http://www.ethereal.com/appnotes/enpa-sa-00018.html\">\n\t  <p>Issues have been discovered in the following protocol\n\t    dissectors:</p>\n\t  <ul>\n\t    <li>Matevz Pustisek discovered a buffer overflow in the\n\t      Etheric dissector. CVE: CAN-2005-0704</li>\n\t    <li>The GPRS-LLC dissector could crash if the \"ignore\n\t      cipher bit\" option was enabled. CVE: CAN-2005-0705</li>\n\t    <li>Diego Giago discovered a buffer overflow in the 3GPP2\n\t      A11 dissector. This flaw was later reported by Leon\n\t      Juranic. CVE: CAN-2005-0699</li>\n\t    <li>Leon Juranic discovered a buffer overflow in the IAPP dissector.\n\t      CVE: CAN-2005-0739</li>\n\t    <li>A bug in the JXTA dissector could make Ethereal crash.</li>\n\t    <li>A bug in the sFlow dissector could make Ethereal crash.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ethereal.com/appnotes/enpa-sa-00018.html"
+    ],
+    "cvename": [
+      "CVE-2005-0699",
+      "CVE-2005-0704",
+      "CVE-2005-0705",
+      "CVE-2005-0739"
+    ],
+    "bid": [
+      "12759"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-03-09",
+    "entry": "2005-03-14",
+    "modified": "2005-06-24"
+  }
+}

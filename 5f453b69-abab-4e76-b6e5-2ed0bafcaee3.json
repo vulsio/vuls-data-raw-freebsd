@@ -1,0 +1,32 @@
+{
+  "vid": "5f453b69-abab-4e76-b6e5-2ed0bafcaee3",
+  "topic": "firefox -- integer overflow in createImageBitmap()",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "52.0.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2017-08/\">\n\t  <p>An integer overflow in createImageBitmap() was reported\n\t    through the Pwn2Own contest. The fix for this vulnerability\n\t    disables the experimental extensions to the\n\t    createImageBitmap API. This function runs in the content\n\t    sandbox, requiring a second vulnerability to compromise a\n\t    user's computer.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2017-08/"
+    ],
+    "cvename": [
+      "CVE-2017-5428"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-03-17",
+    "entry": "2017-03-18"
+  }
+}

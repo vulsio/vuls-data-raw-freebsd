@@ -1,0 +1,58 @@
+{
+  "vid": "ae599263-bca2-11ea-b78f-b42e99a1b9c3",
+  "topic": "samba -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "samba410"
+      ],
+      "range": [
+        {
+          "lt": "4.10.17"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba411"
+      ],
+      "range": [
+        {
+          "lt": "4.11.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba412"
+      ],
+      "range": [
+        {
+          "lt": "4.12.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/history/security.html\">\n\t  <p>Four vulnerabilities were fixed in samba:</p>\n\t  <ul>\n\t  <li>CVE-2020-10730: NULL pointer de-reference and use-after-free in Samba AD DC LDAP Server with ASQ, VLV and paged_results</li>\n\t  <li>CVE-2020-10745: Parsing and packing of NBT and DNS packets can consume excessive CPU in the AD DC (only)</li>\n\t  <li>CVE-2020-10760: LDAP Use-after-free in Samba AD DC Global Catalog with paged_results and VLV</li>\n\t  <li>CVE-2020-14303: Empty UDP packet DoS in Samba AD DC nbtd</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.samba.org/samba/security/CVE-2020-10730.html",
+      "https://www.samba.org/samba/security/CVE-2020-10745.html",
+      "https://www.samba.org/samba/security/CVE-2020-10760.html",
+      "https://www.samba.org/samba/security/CVE-2020-14303.html"
+    ],
+    "cvename": [
+      "CVE-2020-10730",
+      "CVE-2020-10745",
+      "CVE-2020-10760",
+      "CVE-2020-14303"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-02",
+    "entry": "2020-07-02"
+  }
+}

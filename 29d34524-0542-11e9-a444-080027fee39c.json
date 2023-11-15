@@ -1,0 +1,30 @@
+{
+  "vid": "29d34524-0542-11e9-a444-080027fee39c",
+  "topic": "gitea -- privilege escalation, XSS",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.6.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea project reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/releases/tag/v1.6.2\">\n\t  <p>Security</p>\n\t  <ul>\n\t    <li>Sanitize uploaded file names</li>\n\t    <li>HTMLEncode user added text</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/go-gitea/gitea/issues/5569",
+      "https://github.com/go-gitea/gitea/issues/5565"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-12-19",
+    "entry": "2018-12-21"
+  }
+}

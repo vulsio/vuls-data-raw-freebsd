@@ -1,0 +1,32 @@
+{
+  "vid": "c365536d-e3cf-11eb-9d8d-b37b683944c2",
+  "topic": "go -- crypto/tls: clients can panic when provided a certificate of the wrong type for the negotiated parameters",
+  "affects": [
+    {
+      "name": [
+        "go"
+      ],
+      "range": [
+        {
+          "lt": "1.16.6,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/47143\">\n\t\t<p>crypto/tls clients can panic when provided a certificate of\n\t\t the wrong type for the negotiated parameters. net/http clients\n\t\t performing HTTPS requests are also affected. The panic can be\n\t\t triggered by an attacker in a privileged network position\n\t\t without access to the server certificate's private key, as\n\t\t long as a trusted ECDSA or Ed25519 certificate for the server\n\t\t exists (or can be issued), or the client is configured with\n\t\t Config.InsecureSkipVerify. Clients that disable all TLS_RSA\n\t\t cipher suites (that is, TLS 1.0–1.2 cipher suites without\n\t\t ECDHE), as well as TLS 1.3-only clients, are unaffected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/golang/go/issues/47143"
+    ],
+    "cvename": [
+      "CVE-2021-34558"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-07-07",
+    "entry": "2021-07-12"
+  }
+}

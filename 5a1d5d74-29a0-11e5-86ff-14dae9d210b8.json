@@ -1,0 +1,49 @@
+{
+  "vid": "5a1d5d74-29a0-11e5-86ff-14dae9d210b8",
+  "topic": "php -- arbitrary code execution",
+  "affects": [
+    {
+      "name": [
+        "php56"
+      ],
+      "range": [
+        {
+          "lt": "5.6.11"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55"
+      ],
+      "range": [
+        {
+          "lt": "5.5.27"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.4.43"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cmb reports:</p>\n\t<blockquote cite=\"https://bugs.php.net/bug.php?id=69768\">\n\t  <p>When delayed variable substitution is enabled (can be set in the\n\t    Registry, for instance), !ENV! works similar to %ENV%, and the\n\t    value of the environment variable ENV will be subsituted.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.php.net/bug.php?id=69768"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-06-07",
+    "entry": "2015-07-13"
+  }
+}

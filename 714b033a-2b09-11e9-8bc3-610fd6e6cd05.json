@@ -1,0 +1,37 @@
+{
+  "vid": "714b033a-2b09-11e9-8bc3-610fd6e6cd05",
+  "topic": "curl -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "curl"
+      ],
+      "range": [
+        {
+          "lt": "7.64.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>curl security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2018-16890: NTLM type-2 out-of-bounds buffer read</p>\n\t  <p>libcurl contains a heap buffer out-of-bounds read flaw.</p>\n\t  <p>The function handling incoming NTLM type-2 messages\n\t    (lib/vauth/ntlm.c:ntlm_decode_type2_target) does not validate incoming\n\t    data correctly and is subject to an integer overflow vulnerability.</p>\n\t  <p>Using that overflow, a malicious or broken NTLM server could trick\n\t    libcurl to accept a bad length + offset combination that would lead to a\n\t    buffer read out-of-bounds.</p>\n\t  <p>CVE-2019-3822: NTLMv2 type-3 header stack buffer overflow</p>\n\t  <p>libcurl contains a stack based buffer overflow vulnerability.</p>\n\t  <p>The function creating an outgoing NTLM type-3 header\n\t    (lib/vauth/ntlm.c:Curl_auth_create_ntlm_type3_message()), generates the\n\t    request HTTP header contents based on previously received data. The\n\t    check that exists to prevent the local buffer from getting overflowed is\n\t    implemented wrongly (using unsigned math) and as such it does not\n\t    prevent the overflow from happening.</p>\n\t  <p>This output data can grow larger than the local buffer if very large\n\t    \"nt response\" data is extracted from a previous NTLMv2 header provided\n\t    by the malicious or broken HTTP server.</p>\n\t  <p>Such a \"large value\" needs to be around 1000 bytes or more. The actual\n\t    payload data copied to the target buffer comes from the NTLMv2 type-2\n\t    response header.</p>\n\t  <p>CVE-2019-3823: SMTP end-of-response out-of-bounds read</p>\n\t  <p>libcurl contains a heap out-of-bounds read in the code handling the\n\t    end-of-response for SMTP.</p>\n\t  <p>If the buffer passed to smtp_endofresp() isn't NUL terminated and\n\t    contains no character ending the parsed number, and len is set to 5,\n\t    then the strtol() call reads beyond the allocated buffer. The read\n\t    contents will not be returned to the caller.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://curl.haxx.se/docs/security.html",
+      "https://curl.haxx.se/docs/CVE-2018-16890.html",
+      "https://curl.haxx.se/docs/CVE-2019-3822.html",
+      "https://curl.haxx.se/docs/CVE-2019-3823.html"
+    ],
+    "cvename": [
+      "CVE-2018-16890",
+      "CVE-2019-3822",
+      "CVE-2019-3823"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-07",
+    "entry": "2019-02-07"
+  }
+}

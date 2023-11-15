@@ -1,0 +1,34 @@
+{
+  "vid": "39953788-6bbb-11d9-8bc9-000a95bc6fae",
+  "topic": "egroupware -- arbitrary file download in JiNN",
+  "affects": [
+    {
+      "name": [
+        "eGroupWare"
+      ],
+      "range": [
+        {
+          "lt": "1.0.0.006"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>eGroupWare contains a bug in the JiNN component that allows\n\t  a remote attacker to download arbitrary files.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://cvs.sourceforge.net/viewcvs.py/egroupware/jinn/CHANGELOG#rev1.24"
+    ],
+    "mlist": [
+      {
+        "text": "http://sourceforge.net/mailarchive/forum.php?thread_id=5915445&forum_id=35178"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-10-15",
+    "entry": "2005-01-21"
+  }
+}

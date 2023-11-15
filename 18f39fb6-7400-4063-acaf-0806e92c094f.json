@@ -1,0 +1,103 @@
+{
+  "vid": "18f39fb6-7400-4063-acaf-0806e92c094f",
+  "topic": "Mozilla -- SVG Animation Remote Code Execution",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "50.0.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "45.5.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "45.5.1,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.46"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.46"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "45.5.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "45.5.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "45.5.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-92/\">\n\t  <p>A use-after-free vulnerability in SVG Animation has been\n\t     discovered. An exploit built on this vulnerability has been\n\t     discovered in the wild targeting Firefox and Tor Browser\n\t     users on Windows.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2016-92/"
+    ],
+    "cvename": [
+      "CVE-2016-9079"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-11-30",
+    "entry": "2016-12-01",
+    "modified": "2016-12-16"
+  }
+}

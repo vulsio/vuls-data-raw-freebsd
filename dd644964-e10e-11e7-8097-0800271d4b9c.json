@@ -1,0 +1,41 @@
+{
+  "vid": "dd644964-e10e-11e7-8097-0800271d4b9c",
+  "topic": "ruby -- Command injection vulnerability in Net::FTP",
+  "affects": [
+    {
+      "name": [
+        "ruby"
+      ],
+      "range": [
+        {
+          "lt": "2.2.9,1",
+          "ge": "2.2.0,1"
+        },
+        {
+          "lt": "2.3.6,1",
+          "ge": "2.3.0,1"
+        },
+        {
+          "lt": "2.4.3,1",
+          "ge": "2.4.0,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Etienne Stalmans from the Heroku product security team reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2017/12/14/net-ftp-command-injection-cve-2017-17405/\">\n\t  <p>There is a command injection vulnerability in Net::FTP bundled with Ruby.</p>\n\t  <p><code>Net::FTP#get</code>, <code>getbinaryfile</code>, <code>gettextfile</code>, <code>put</code>, <code>putbinaryfile</code>, and <code>puttextfile</code> use <code>Kernel#open</code> to open a local file.  If the <code>localfile</code> argument starts with the pipe character <code>\"|\"</code>, the command following the pipe character is executed.  The default value of <code>localfile</code> is <code>File.basename(remotefile)</code>, so malicious FTP servers could cause arbitrary command execution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.ruby-lang.org/en/news/2017/12/14/net-ftp-command-injection-cve-2017-17405/"
+    ],
+    "cvename": [
+      "CVE-2017-17405"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-12-14",
+    "entry": "2017-12-14"
+  }
+}

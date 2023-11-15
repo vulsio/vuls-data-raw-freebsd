@@ -1,0 +1,33 @@
+{
+  "vid": "74bbde13-ec17-11ea-88f8-901b0ef719ab",
+  "topic": "FreeBSD -- IPv6 Hop-by-Hop options use-after-free bug",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "11.3_13",
+          "ge": "11.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to improper mbuf handling in the kernel, a use-after-free bug might be\n\ttriggered by sending IPv6 Hop-by-Hop options over the loopback interface.</p>\n\t<h1>Impact:</h1>\n\t<p>Triggering the use-after-free situation may result in unintended kernel\n\tbehaviour including a kernel panic.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-7462"
+    ],
+    "freebsd_sa": [
+      "SA-20:24.ipv6"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-09-02",
+    "entry": "2020-09-02"
+  }
+}

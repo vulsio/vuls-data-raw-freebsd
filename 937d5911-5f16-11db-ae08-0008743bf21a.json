@@ -1,0 +1,30 @@
+{
+  "vid": "937d5911-5f16-11db-ae08-0008743bf21a",
+  "topic": "drupal -- cross site request forgeries",
+  "affects": [
+    {
+      "name": [
+        "drupal"
+      ],
+      "range": [
+        {
+          "lt": "4.6.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/files/sa-2006-025/advisory.txt\">\n\t  <p>Visiting a specially crafted page, anywhere on the web, may\n\t    allow that page to post forms to a Drupal site in the\n\t    context of the visitor's session. To illustrate; suppose\n\t    one has an active user 1 session, the most powerful\n\t    administrator account for a site, to a Drupal site while\n\t    visiting a website created by an attacker. This website\n\t    will now be able to submit any form to the Drupal site with\n\t    the privileges of user 1, either by enticing the user to\n\t    submit a form or by automated means.</p>\n\t  <p>An attacker can exploit this vulnerability by changing\n\t    passwords, posting PHP code or creating new users, for\n\t    example. The attack is only limited by the privileges of\n\t    the session it executes in.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/files/sa-2006-025/advisory.txt",
+      "http://drupal.org/drupal-4.7.4"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-10-18",
+    "entry": "2006-10-18"
+  }
+}

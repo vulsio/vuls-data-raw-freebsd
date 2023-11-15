@@ -1,0 +1,59 @@
+{
+  "vid": "3d95c9a7-7d5c-11e3-a8c1-206a8a720317",
+  "topic": "ntpd DRDoS / Amplification Attack using ntpdc monlist command",
+  "affects": [
+    {
+      "name": [
+        "ntp"
+      ],
+      "range": [
+        {
+          "lt": "4.2.7p26"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "8.3_14",
+          "ge": "8.3"
+        },
+        {
+          "lt": "8.4_7",
+          "ge": "8.4"
+        },
+        {
+          "lt": "9.1_10",
+          "ge": "9.1"
+        },
+        {
+          "lt": "9.2_3",
+          "ge": "9.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ntp.org reports:</p>\n\t<blockquote cite=\"http://support.ntp.org/bin/view/Main/SecurityNotice#DRDoS_Amplification_Attack_using\">\n\t  <p>Unrestricted access to the monlist feature in\n\t    ntp_request.c in ntpd in NTP before 4.2.7p26 allows remote\n\t    attackers to cause a denial of service (traffic\n\t    amplification) via forged (1) REQ_MON_GETLIST or (2)\n\t    REQ_MON_GETLIST_1 requests, as exploited in the wild in\n\t    December 2013</p>\n\t  <p>Use noquery to your default restrictions to block all\n\t    status queries.</p>\n\t  <p>Use disable monitor to disable the ``ntpdc -c monlist''\n\t    command while still allowing other status queries.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://support.ntp.org/bin/view/Main/SecurityNotice#DRDoS_Amplification_Attack_using"
+    ],
+    "cvename": [
+      "CVE-2013-5211"
+    ],
+    "freebsd_sa": [
+      "SA-14:02.ntpd"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-01-01",
+    "entry": "2014-01-14",
+    "modified": "2016-08-09"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vid": "15a04b9f-47cb-11e7-a853-001fbc0f280f",
+  "topic": "ansible -- Input validation flaw in jinja2 templating system",
+  "affects": [
+    {
+      "name": [
+        "ansible"
+      ],
+      "range": [
+        {
+          "lt": "2.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>RedHat security team reports:</p>\n\t<blockquote cite=\"https://access.redhat.com/security/cve/cve-2017-7481\">\n\t  <p>An input validation flaw was found in Ansible, where it fails to\n\t    properly mark lookup-plugin results as unsafe. If an attacker could\n\t    control the results of lookup() calls, they could inject Unicode\n\t    strings to be parsed by the jinja2 templating system, result in\n\t    code execution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://access.redhat.com/security/cve/cve-2017-7481",
+      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7481"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-05-09",
+    "entry": "2017-06-02"
+  }
+}

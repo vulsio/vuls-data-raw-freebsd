@@ -1,0 +1,33 @@
+{
+  "vid": "103a47d5-27e7-11e5-a4a5-002590263bf5",
+  "topic": "xen-kernel -- Certain domctl operations may be abused to lock up the host",
+  "affects": [
+    {
+      "name": [
+        "xen-kernel"
+      ],
+      "range": [
+        {
+          "lt": "4.5.0_3",
+          "ge": "4.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-127.html\">\n\t  <p>XSA-77 put the majority of the domctl operations on a list\n\t    excepting them from having security advisories issued for them if\n\t    any effects their use might have could hamper security. Subsequently\n\t    some of them got declared disaggregation safe, but for a small\n\t    subset this was not really correct: Their (mis-)use may result in\n\t    host lockups.</p>\n\t  <p>As a result, the potential security benefits of toolstack\n\t    disaggregation are not always fully realised.</p>\n\t  <p>Domains deliberately given partial management control may be able\n\t    to deny service to the entire host.</p>\n\t  <p>As a result, in a system designed to enhance security by radically\n\t    disaggregating the management, the security may be reduced.  But,\n\t    the security will be no worse than a non-disaggregated design.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xenbits.xen.org/xsa/advisory-127.html"
+    ],
+    "cvename": [
+      "CVE-2015-2751"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-31",
+    "entry": "2015-07-11"
+  }
+}

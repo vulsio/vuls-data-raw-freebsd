@@ -1,0 +1,29 @@
+{
+  "vid": "e44fe906-df27-11e0-a333-001cc0a36e12",
+  "topic": "phpMyAdmin -- multiple XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.4.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-14.php\">\n\t  <p>Firstly, if a row contains javascript code, after inline\n\t    editing this row and saving, the code is executed.  Secondly,\n\t    missing sanitization on the db, table and column names leads\n\t    to XSS vulnerabilities.</p>\n\t  <p>Versions 3.4.0 to 3.4.4 were found vulnerable.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-14.php"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-09-11",
+    "entry": "2011-09-14"
+  }
+}

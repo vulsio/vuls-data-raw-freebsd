@@ -1,0 +1,43 @@
+{
+  "vid": "4a638895-41b7-11de-b1cc-00219b0fc4d8",
+  "topic": "mod_perl -- cross-site scripting",
+  "affects": [
+    {
+      "name": [
+        "mod_perl"
+      ],
+      "range": [
+        {
+          "lt": "1.31"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_perl2"
+      ],
+      "range": [
+        {
+          "lt": "2.05"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/3459796\">\n\t  <p>Certain input passed to the \"Apache::Status\" and \"Apache2::Status\"\n\t    modules is not properly sanitised before being returned to the user.\n\t    This can be exploited to execute arbitrary HTML and script code in a\n\t    user's browser session in context of an affected website.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/34597"
+    ],
+    "cvename": [
+      "CVE-2009-0796"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-02-28",
+    "entry": "2009-05-16",
+    "modified": "2009-05-16"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "7392e1e3-4eb9-11ed-856e-d4c9ef517024",
+  "topic": "OpenSSL -- Potential NULL encryption in NID_undef with Custom Cipher",
+  "affects": [
+    {
+      "name": [
+        "openssl-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"://www.openssl.org/news/secadv/20221011.txt\">\n\t  <p>Using a Custom Cipher with NID_undef may lead to NULL encryption (low)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20221011.txt"
+    ],
+    "cvename": [
+      "CVE-2022-3358"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-10-11",
+    "entry": "2022-10-18"
+  }
+}

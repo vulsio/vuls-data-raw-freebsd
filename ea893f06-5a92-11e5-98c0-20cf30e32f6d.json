@@ -1,0 +1,42 @@
+{
+  "vid": "ea893f06-5a92-11e5-98c0-20cf30e32f6d",
+  "topic": "Bugzilla security issues",
+  "affects": [
+    {
+      "name": [
+        "bugzilla44"
+      ],
+      "range": [
+        {
+          "lt": "4.4.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bugzilla50"
+      ],
+      "range": [
+        {
+          "lt": "5.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Bugzilla Security Advisory</p>\n\t<blockquote cite=\"https://www.bugzilla.org/security/4.2.14/\">\n\t  <p>Login names (usually an email address) longer than 127\n\t    characters are silently truncated in MySQL which could\n\t    cause the domain name of the email address to be\n\t    corrupted. An attacker could use this vulnerability to\n\t    create an account with an email address different from the\n\t    one originally requested. The login name could then be\n\t    automatically added to groups based on the group's regular\n\t  expression setting.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=1202447"
+    ],
+    "cvename": [
+      "CVE-2015-4499"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-09-10",
+    "entry": "2015-09-14"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "vid": "10e3ed8a-db7f-11ea-8bdf-643150d3111d",
+  "topic": "puppetdb -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "puppetdb5"
+      ],
+      "range": [
+        {
+          "lt": "5.2.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Puppetlabs reports:</p>\n\t<blockquote cite=\"https://puppet.com/security/cve/jackson-july-2020-security-fixes/\">\n\t  <p>In June 2020, jackson-databind published security updates addressing several CVEs. Previous releases of PuppetDB contain a vulnerable version of jackson.core:jackson-databind. PuppetDB 5.2.18 contains an updated version of jackson-databind that has patched the vulnerabilities.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://puppet.com/security/cve/jackson-july-2020-security-fixes/"
+    ],
+    "cvename": [
+      "CVE-2020-9548",
+      "CVE-2020-14062",
+      "CVE-2020-14060",
+      "CVE-2020-14061",
+      "CVE-2020-14195"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-07-23",
+    "entry": "2020-08-11"
+  }
+}

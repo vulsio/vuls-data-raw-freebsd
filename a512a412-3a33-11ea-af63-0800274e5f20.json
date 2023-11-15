@@ -1,0 +1,32 @@
+{
+  "vid": "a512a412-3a33-11ea-af63-0800274e5f20",
+  "topic": "gitea -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.10.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea Team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/releases/tag/v1.10.3\">\n\t  <ul>\n\t    <li>Hide credentials when submitting migration</li>\n\t    <li>Never allow an empty password to validate</li>\n\t    <li>Prevent redirect to Host</li>\n\t    <li>Hide public repos owned by private orgs</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/go-gitea/gitea/releases/tag/v1.10.3"
+    ],
+    "freebsd_pr": [
+      "ports/243437"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-11-22",
+    "entry": "2020-01-18"
+  }
+}

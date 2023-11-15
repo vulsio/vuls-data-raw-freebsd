@@ -1,0 +1,30 @@
+{
+  "vid": "f55921aa-10c9-11ec-8647-00e0670f2660",
+  "topic": "MPD5 PPPoE Server remotely exploitable crash",
+  "affects": [
+    {
+      "name": [
+        "mpd5"
+      ],
+      "range": [
+        {
+          "lt": "5.9_2",
+          "ge": "5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Version 5.9_2 contains security fix for PPPoE servers.\n\tInsufficient validation of incoming PPPoE Discovery request\n\tspecially crafted by unauthenticated user might lead to unexpected\n\ttermination of the process. The problem affects mpd versions\n\tsince 5.0. Installations not using PPPoE server configuration\n\twere not affected.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mpd.sourceforge.net/doc5/mpd4.html#4"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-09-04",
+    "entry": "2021-09-09"
+  }
+}

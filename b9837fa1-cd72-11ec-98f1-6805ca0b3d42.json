@@ -1,0 +1,32 @@
+{
+  "vid": "b9837fa1-cd72-11ec-98f1-6805ca0b3d42",
+  "topic": "rsyslog8 -- heap buffer overflow on receiving TCP syslog",
+  "affects": [
+    {
+      "name": [
+        "rsyslog"
+      ],
+      "range": [
+        {
+          "lt": "8.2204.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Rainer Gerhards reports:</p>\n\t<blockquote cite=\"https://github.com/rsyslog/rsyslog/security/advisories/GHSA-ggw7-xr6h-mmr8\">\n\t  <p>Modules for TCP syslog reception have a heap buffer\n\t  overflow when octet-counted framing is used. The attacker\n\t  can corrupt heap values, leading to data integrity issues\n\t  and availability impact. Remote code execution is unlikely\n\t  to happen but not impossible..</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/rsyslog/rsyslog/security/advisories/GHSA-ggw7-xr6h-mmr8"
+    ],
+    "cvename": [
+      "CVE-2022-24903"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-05-05",
+    "entry": "2022-05-06"
+  }
+}

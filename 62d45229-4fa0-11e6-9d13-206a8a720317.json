@@ -1,0 +1,43 @@
+{
+  "vid": "62d45229-4fa0-11e6-9d13-206a8a720317",
+  "topic": "krb5 -- KDC denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "krb5-113"
+      ],
+      "range": [
+        {
+          "lt": "1.13.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "krb5-114"
+      ],
+      "range": [
+        {
+          "lt": "1.14.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Major changes in krb5 1.14.3 and krb5 1.13.6:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/krb5-1.14/\">\n\t  <p>Fix a rare KDC denial of service vulnerability when anonymous\n\t     client principals are restricted to obtaining TGTs only\n\t     [CVE-2016-3120] .</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.mit.edu/kerberos/krb5-1.14/"
+    ],
+    "cvename": [
+      "CVE-2016-3120"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-07-20",
+    "entry": "2016-07-21",
+    "modified": "2016-07-26"
+  }
+}

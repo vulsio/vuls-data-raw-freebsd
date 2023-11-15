@@ -1,0 +1,33 @@
+{
+  "vid": "a7062952-9023-11d9-a22c-0001020eed82",
+  "topic": "phpmyadmin -- information disclosure vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpmyadmin",
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.6.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A phpMyAdmin security announcement reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-2\">\n\t  <p>By calling some scripts that are part of phpMyAdmin in an\n\t    unexpected way (especially scripts in the libraries\n\t    subdirectory), it is possible to trigger phpMyAdmin to\n\t    display a PHP error message which contains the full path\n\t    of the directory where phpMyAdmin is installed.</p>\n\t  <p><strong>Mitigation factor:</strong> This path disclosure\n\t    is possible on servers where the recommended setting of\n\t    the PHP configuration directive\n\t    <code>display_errors</code> is set to on, which is against\n\t    the recommendations given in the PHP manual.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-2"
+    ],
+    "cvename": [
+      "CVE-2005-0544"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-22",
+    "entry": "2005-03-08"
+  }
+}

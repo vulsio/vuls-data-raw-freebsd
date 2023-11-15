@@ -1,0 +1,45 @@
+{
+  "vid": "0e1e3789-d87f-11dd-8ecd-00163e000016",
+  "topic": "vim -- multiple vulnerabilities in the netrw module",
+  "affects": [
+    {
+      "name": [
+        "vim",
+        "vim-console",
+        "vim-lite",
+        "vim-gtk2",
+        "vim-gnome"
+      ],
+      "range": [
+        {
+          "lt": "7.2",
+          "ge": "7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jan Minar reports:</p>\n\t<blockquote cite=\"http://www.rdancer.org/vulnerablevim-netrw.v2.html\">\n\t  <p>Applying the ``D'' to a file with a crafted file name,\n\t   or inside a directory with a crafted directory name, can\n\t   lead to arbitrary code execution.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.rdancer.org/vulnerablevim-netrw.v5.html\">\n\t  <p>Lack of sanitization throughout Netrw can lead to arbitrary\n\t    code execution upon opening a directory with a crafted\n\t    name.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.rdancer.org/vulnerablevim-netrw-credentials-dis.html\">\n\t  <p>The Vim Netrw Plugin shares the FTP user name and password\n\t    across all FTP sessions.  Every time Vim makes a new FTP\n\t    connection, it sends the user name and password of the\n\t    previous FTP session to the FTP server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.rdancer.org/vulnerablevim-netrw.html",
+      "http://www.rdancer.org/vulnerablevim-netrw.v2.html",
+      "http://www.rdancer.org/vulnerablevim-netrw.v5.html",
+      "http://www.rdancer.org/vulnerablevim-netrw-credentials-dis.html"
+    ],
+    "cvename": [
+      "CVE-2008-3076"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.openwall.com/lists/oss-security/2008/10/16/2"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2008-10-16",
+    "entry": "2009-01-02"
+  }
+}

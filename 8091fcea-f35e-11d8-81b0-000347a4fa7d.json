@@ -1,0 +1,65 @@
+{
+  "vid": "8091fcea-f35e-11d8-81b0-000347a4fa7d",
+  "topic": "a2ps -- insecure command line argument handling",
+  "affects": [
+    {
+      "name": [
+        "a2ps-a4"
+      ],
+      "range": [
+        {
+          "lt": "4.13b_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "a2ps-letter"
+      ],
+      "range": [
+        {
+          "lt": "4.13b_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "a2ps-letterdj"
+      ],
+      "range": [
+        {
+          "lt": "4.13b_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Rudolf Polzer reports:</p>\n\t<blockquote>\n\t  <p>a2ps builds a command line for file() containing an\n\t    unescaped version of the file name, thus might call\n\t    external programs described by the file name.  Running a\n\t    cronjob over a public writable directory a2ps-ing all\n\t    files in it - or simply typing \"a2ps *.txt\" in /tmp - is\n\t    therefore dangerous.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.osvdb.org/9176"
+    ],
+    "cvename": [
+      "CVE-2004-1170"
+    ],
+    "freebsd_pr": [
+      "ports/70618"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=109334851517137",
+        "msgid": "e5312d6a040824040119840c7c@mail.gmail.com"
+      }
+    ],
+    "bid": [
+      "11025"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-18",
+    "entry": "2004-10-20",
+    "modified": "2004-12-30"
+  }
+}

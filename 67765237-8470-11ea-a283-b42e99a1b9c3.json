@@ -1,0 +1,163 @@
+{
+  "vid": "67765237-8470-11ea-a283-b42e99a1b9c3",
+  "topic": "malicious URLs can cause git to send a stored credential to wrong server",
+  "affects": [
+    {
+      "name": [
+        "git"
+      ],
+      "range": [
+        {
+          "lt": "2.26.2",
+          "ge": "2.26.0"
+        },
+        {
+          "lt": "2.25.4",
+          "ge": "2.25.0"
+        },
+        {
+          "lt": "2.24.3",
+          "ge": "2.24.0"
+        },
+        {
+          "lt": "2.23.3",
+          "ge": "2.23.0"
+        },
+        {
+          "lt": "2.22.4",
+          "ge": "2.22.0"
+        },
+        {
+          "lt": "2.21.3",
+          "ge": "2.21.0"
+        },
+        {
+          "lt": "2.20.4",
+          "ge": "2.20.0"
+        },
+        {
+          "lt": "2.19.5",
+          "ge": "2.19.0"
+        },
+        {
+          "lt": "2.18.4",
+          "ge": "2.18.0"
+        },
+        {
+          "lt": "2.17.5",
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.26.2",
+          "ge": "2.26.0"
+        },
+        {
+          "lt": "2.25.4",
+          "ge": "2.25.0"
+        },
+        {
+          "lt": "2.24.3",
+          "ge": "2.24.0"
+        },
+        {
+          "lt": "2.23.3",
+          "ge": "2.23.0"
+        },
+        {
+          "lt": "2.22.4",
+          "ge": "2.22.0"
+        },
+        {
+          "lt": "2.21.3",
+          "ge": "2.21.0"
+        },
+        {
+          "lt": "2.20.4",
+          "ge": "2.20.0"
+        },
+        {
+          "lt": "2.19.5",
+          "ge": "2.19.0"
+        },
+        {
+          "lt": "2.18.4",
+          "ge": "2.18.0"
+        },
+        {
+          "lt": "2.17.5",
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "git-gui"
+      ],
+      "range": [
+        {
+          "lt": "2.26.2",
+          "ge": "2.26.0"
+        },
+        {
+          "lt": "2.25.4",
+          "ge": "2.25.0"
+        },
+        {
+          "lt": "2.24.3",
+          "ge": "2.24.0"
+        },
+        {
+          "lt": "2.23.3",
+          "ge": "2.23.0"
+        },
+        {
+          "lt": "2.22.4",
+          "ge": "2.22.0"
+        },
+        {
+          "lt": "2.21.3",
+          "ge": "2.21.0"
+        },
+        {
+          "lt": "2.20.4",
+          "ge": "2.20.0"
+        },
+        {
+          "lt": "2.19.5",
+          "ge": "2.19.0"
+        },
+        {
+          "lt": "2.18.4",
+          "ge": "2.18.0"
+        },
+        {
+          "lt": "2.17.5",
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>git security advisory reports:</p>\n\t<blockquote cite=\"https://github.com/git/git/security/advisories/GHSA-hjc9-x69f-jqj7\">\n\t  <p>Git uses external \"credential helper\" programs to store and retrieve passwords or\n\t  other credentials from secure storage provided by the operating system. Specially-crafted\n\t  URLs that are considered illegal as of the recently published Git versions can cause Git\n\t  to send a \"blank\" pattern to helpers, missing hostname and protocol fields. Many helpers\n\t  will interpret this as matching any URL, and will return some unspecified stored password,\n\t  leaking the password to an attacker's server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/git/git/security/advisories/GHSA-hjc9-x69f-jqj7"
+    ],
+    "cvename": [
+      "CVE-2020-11008"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-20",
+    "entry": "2020-04-22"
+  }
+}

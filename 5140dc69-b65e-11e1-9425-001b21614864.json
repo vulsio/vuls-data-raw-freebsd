@@ -1,0 +1,46 @@
+{
+  "vid": "5140dc69-b65e-11e1-9425-001b21614864",
+  "topic": "ImageMagick -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "ImageMagick"
+      ],
+      "range": [
+        {
+          "lt": "6.7.6.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ImageMagick-nox11"
+      ],
+      "range": [
+        {
+          "lt": "6.7.6.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>ImageMagick reports:</p>\n\t<blockquote cite=\"http://www.cert.fi/en/reports/2012/vulnerability635606.html\">\n\t  <p>Three vulnerabilities have been identified in ImageMagick's\n\t     handling of JPEG and TIFF files. With these vulnerabilities, it is\n\t     possible to cause a denial of service situation in the target\n\t     system.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.imagemagick.org/discourse-server/viewtopic.php?f=4&t=20629",
+      "http://www.cert.fi/en/reports/2012/vulnerability635606.html"
+    ],
+    "cvename": [
+      "CVE-2012-0259",
+      "CVE-2012-0260",
+      "CVE-2012-1798"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-03-28",
+    "entry": "2012-06-14",
+    "modified": "2014-04-30"
+  }
+}

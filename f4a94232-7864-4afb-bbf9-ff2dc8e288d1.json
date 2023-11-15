@@ -1,0 +1,76 @@
+{
+  "vid": "f4a94232-7864-4afb-bbf9-ff2dc8e288d1",
+  "topic": "py-cinder -- data leak",
+  "affects": [
+    {
+      "name": [
+        "py37-cinder",
+        "py38-cinder",
+        "py39-cinder",
+        "py310-cinder",
+        "py311-cinder"
+      ],
+      "range": [
+        {
+          "le": "12.0.9"
+        },
+        {
+          "ge": "13.0.0",
+          "le": "13.0.9"
+        },
+        {
+          "ge": "14.0.0",
+          "le": "14.3.1"
+        },
+        {
+          "ge": "15.0.0",
+          "le": "15.6.0"
+        },
+        {
+          "ge": "16.0.0",
+          "le": "16.4.2"
+        },
+        {
+          "ge": "17.0.0",
+          "le": "17.4.0"
+        },
+        {
+          "ge": "18.0.0",
+          "le": "18.2.1"
+        },
+        {
+          "ge": "19.0.0",
+          "le": "19.2.0"
+        },
+        {
+          "ge": "20.0.0",
+          "le": "20.1.0"
+        },
+        {
+          "ge": "21.0.0",
+          "le": "21.1.0"
+        },
+        {
+          "ge": "22.0.0",
+          "le": "22.0.0.0rc2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>Duncan Thomas reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497\">\n      <p>The (1) GlusterFS and (2) Linux Smbfs drivers in OpenStack Cinder before 2014.1.3 allows remote authenticated users to obtain file data from the Cinder-volume host by cloning and attaching a volume with a crafted qcow2 header.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497"
+    ],
+    "cvename": [
+      "CVE-2014-3641"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-05-17",
+    "entry": "2023-04-09"
+  }
+}

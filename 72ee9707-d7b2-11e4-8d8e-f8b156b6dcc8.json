@@ -1,0 +1,34 @@
+{
+  "vid": "72ee9707-d7b2-11e4-8d8e-f8b156b6dcc8",
+  "topic": "cpio -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gcpio"
+      ],
+      "range": [
+        {
+          "lt": "2.11_3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>From the Debian Security Team:</p>\n\t<blockquote cite=\"https://security-tracker.debian.org/tracker/CVE-2014-9112\">\n\t  <p>Heap-based buffer overflow in the process_copy_in\n\t    function in GNU Cpio 2.11 allows remote attackers to cause\n\t    a denial of service via a large block value in a cpio\n\t    archive.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://security-tracker.debian.org/tracker/CVE-2015-1197\">\n\t  <p>cpio 2.11, when using the --no-absolute-filenames\n\t    option, allows local users to write to arbitrary files\n\t    via a symlink attack on a file in an archive.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://security-tracker.debian.org/tracker/CVE-2014-9112",
+      "https://bugzilla.suse.com/show_bug.cgi?id=658010"
+    ],
+    "cvename": [
+      "CVE-2014-9112",
+      "CVE-2015-1197"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-27",
+    "entry": "2015-03-31"
+  }
+}

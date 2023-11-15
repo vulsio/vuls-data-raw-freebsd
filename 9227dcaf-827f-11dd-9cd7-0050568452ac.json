@@ -1,0 +1,35 @@
+{
+  "vid": "9227dcaf-827f-11dd-9cd7-0050568452ac",
+  "topic": "twiki -- Arbitrary code execution in session files",
+  "affects": [
+    {
+      "name": [
+        "twiki"
+      ],
+      "range": [
+        {
+          "lt": "4.2.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Th1nk3r reports:</p>\n\t<blockquote cite=\"http://www.milw0rm.com/exploits/6269\">\n\t  <p>The version of TWiki installed on the remote host allows access to\n\t    the 'configure' script and fails to sanitize the 'image' parameter\n\t    of that script of directory traversal sequences before returning the\n\t    file contents when the 'action' parameter is set to 'image'. An\n\t    unauthenticated attacker can leverage this issue to view arbitrary\n\t    files on the remote host subject to the privileges of the web server\n\t    user id. .</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://twiki.org/cgi-bin/view/Codev/SecurityAlert-CVE-2008-3195",
+      "http://www.kb.cert.org/vuls/id/362012",
+      "https://inspectit.accessitgroup.com/threats/details.cgi?id=34031",
+      "http://www.nessus.org/plugins/index.php?view=single&id=34031"
+    ],
+    "cvename": [
+      "CVE-2008-3195"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-08-05",
+    "entry": "2008-09-14"
+  }
+}

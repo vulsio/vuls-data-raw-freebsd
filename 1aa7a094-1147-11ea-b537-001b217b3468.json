@@ -1,0 +1,58 @@
+{
+  "vid": "1aa7a094-1147-11ea-b537-001b217b3468",
+  "topic": "Gitlab -- Multiple Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "12.5.1",
+          "ge": "12.5.0"
+        },
+        {
+          "lt": "12.4.4",
+          "ge": "12.4.0"
+        },
+        {
+          "lt": "12.3.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/blog/2019/11/27/security-release-gitlab-12-5-1-released/\">\n\t  <p>Path traversal with potential remote code execution</p>\n\t  <p>Private objects exposed through project import</p>\n\t  <p>Disclosure of notes via Elasticsearch integration</p>\n\t  <p>Disclosure of comments via Elasticsearch integration</p>\n\t  <p>DNS Rebind SSRF in various chat notifications</p>\n\t  <p>Disclosure of vulnerability status in dependency list</p>\n\t  <p>Disclosure of commit count in Cycle Analytics</p>\n\t  <p>Exposure of related branch names</p>\n\t  <p>Tags pushes from blocked users</p>\n\t  <p>Branches and Commits exposed to Guest members via integration</p>\n\t  <p>IDOR when adding users to protected environments</p>\n\t  <p>Former project members able to access repository information</p>\n\t  <p>Unauthorized access to grafana metrics</p>\n\t  <p>Todos created for former project members</p>\n\t  <p>Update Mattermost dependency</p>\n\t  <p>Disclosure of AWS secret keys on certain Admin pages</p>\n\t  <p>Stored XSS in Group and User profile fields</p>\n\t  <p>Forked project information disclosed via Project API</p>\n\t  <p>Denial of Service in the issue and commit comment pages</p>\n\t  <p>Tokens stored in plaintext</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/blog/2019/11/27/security-release-gitlab-12-5-1-released/"
+    ],
+    "cvename": [
+      "CVE-2019-19088",
+      "CVE-2019-19309",
+      "CVE-2019-19086",
+      "CVE-2019-19087",
+      "CVE-2019-19261",
+      "CVE-2019-19256",
+      "CVE-2019-19254",
+      "CVE-2019-19257",
+      "CVE-2019-19263",
+      "CVE-2019-19258",
+      "CVE-2019-19259",
+      "CVE-2019-19260",
+      "CVE-2019-19262",
+      "CVE-2019-19255",
+      "CVE-2019-19310",
+      "CVE-2019-19311",
+      "CVE-2019-19312",
+      "CVE-2019-19313",
+      "CVE-2019-19314"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-11-27",
+    "entry": "2019-11-27"
+  }
+}

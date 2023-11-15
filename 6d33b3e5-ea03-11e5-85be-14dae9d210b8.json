@@ -1,0 +1,34 @@
+{
+  "vid": "6d33b3e5-ea03-11e5-85be-14dae9d210b8",
+  "topic": "node -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "node"
+      ],
+      "range": [
+        {
+          "lt": "5.7.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jeremiah Senkpiel reports:</p>\n\t<blockquote cite=\"https://github.com/nodejs/node/commit/805f054cc7791c447dbb960fbf3b179ea05294ac\">\n\t  <ul>\n\t  <li><p>Fix a double-free defect in parsing malformed DSA keys\n\t    that may potentially be used for DoS or memory corruption attacks.</p></li>\n\t  <li><p>Fix a defect that can cause memory corruption in\n\t    certain very rare cases</p></li>\n\t  <li><p>Fix a defect that makes the CacheBleed Attack possible</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/nodejs/node/commit/805f054cc7791c447dbb960fbf3b179ea05294ac"
+    ],
+    "cvename": [
+      "CVE-2016-0702",
+      "CVE-2016-0705",
+      "CVE-2016-0797"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-03-02",
+    "entry": "2016-03-14"
+  }
+}

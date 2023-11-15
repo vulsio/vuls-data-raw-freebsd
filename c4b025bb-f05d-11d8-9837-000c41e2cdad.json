@@ -1,0 +1,63 @@
+{
+  "vid": "c4b025bb-f05d-11d8-9837-000c41e2cdad",
+  "topic": "tnftpd -- remotely exploitable vulnerability",
+  "affects": [
+    {
+      "name": [
+        "tnftpd"
+      ],
+      "range": [
+        {
+          "lt": "20040810"
+        }
+      ]
+    },
+    {
+      "name": [
+        "lukemftpd"
+      ],
+      "range": [
+        {
+          "ge": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "le": "4.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>lukemftpd(8) is an enhanced BSD FTP server produced\n\t  within the NetBSD project.  The sources for lukemftpd are\n\t  shipped with some versions of FreeBSD, however it is not\n\t  built or installed by default.  The build system option\n\t  WANT_LUKEMFTPD must be set to build and install lukemftpd.\n\t  [<strong>NOTE</strong>: An exception is FreeBSD 4.7-RELEASE,\n\t  wherein lukemftpd was installed, but not enabled, by\n\t  default.]</p>\n\t<p>Przemyslaw Frasunek discovered several vulnerabilities\n\t  in lukemftpd arising from races in the out-of-band signal\n\t  handling code used to implement the ABOR command.  As a\n\t  result of these races, the internal state of the FTP server\n\t  may be manipulated in unexpected ways.</p>\n\t<p>A remote attacker may be able to cause FTP commands to\n\t  be executed with the privileges of the running lukemftpd\n\t  process.  This may be a low-privilege `ftp' user if the `-r'\n\t  command line option is specified, or it may be superuser\n\t  privileges if `-r' is *not* specified.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://cvsweb.netbsd.org/bsdweb.cgi/src/libexec/ftpd/ftpd.c#rev1.158",
+      "ftp://ftp.netbsd.org/pub/NetBSD/security/advisories/NetBSD-SA2004-009.txt.asc"
+    ],
+    "cvename": [
+      "CVE-2004-0794"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.netsys.com/pipermail/full-disclosure/2004-August/025418.html",
+        "msgid": "412239E7.1070807@freebsd.lublin.pl"
+      }
+    ],
+    "bid": [
+      "10967"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-17",
+    "entry": "2004-08-17",
+    "modified": "2016-08-11"
+  }
+}

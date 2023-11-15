@@ -1,0 +1,73 @@
+{
+  "vid": "1ba034fb-ca38-11ed-b242-d4c9ef517024",
+  "topic": "OpenSSL -- Excessive Resource Usage Verifying X.509 Policy Constraints",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.1.1t,1_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl30"
+      ],
+      "range": [
+        {
+          "lt": "3.0.8_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl31"
+      ],
+      "range": [
+        {
+          "lt": "3.1.0_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "openssl-quic"
+      ],
+      "range": [
+        {
+          "lt": "3.0.8_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "virtualbox-ose"
+      ],
+      "range": [
+        {
+          "lt": "6.1.46"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20230322.txt\">\n\t  <p>Severity: Low</p>\n\t  <p>A security vulnerability has been identified in all supported versions\n\t    of OpenSSL related to the verification of X.509 certificate chains\n\t    that include policy constraints.  Attackers may be able to exploit this\n\t    vulnerability by creating a malicious certificate chain that triggers\n\t    exponential use of computational resources, leading to a denial-of-service\n\t    (DoS) attack on affected systems.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv/20230322.txt"
+    ],
+    "cvename": [
+      "CVE-2023-0464"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-23",
+    "entry": "2023-03-24",
+    "modified": "2023-07-19"
+  }
+}

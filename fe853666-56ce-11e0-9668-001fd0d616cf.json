@@ -1,0 +1,29 @@
+{
+  "vid": "fe853666-56ce-11e0-9668-001fd0d616cf",
+  "topic": "php -- ZipArchive segfault with FL_UNCHANGED on empty archive",
+  "affects": [
+    {
+      "name": [
+        "php5-zip"
+      ],
+      "range": [
+        {
+          "lt": "5.3.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US-CERT/NIST reports:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0421\">\n\t  <p>The _zip_name_locate function in zip_name_locate.c in the Zip extension\n\t    in PHP before 5.3.6 does not properly handle a ZIPARCHIVE::FL_UNCHANGED\n\t    argument, which might allow context-dependent attackers to cause a\n\t    denial of service (application crash) via an empty ZIP archive that is\n\t    processed with a (1) locateName or (2) statName operation.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2011-0421"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-03-20",
+    "entry": "2011-03-25"
+  }
+}

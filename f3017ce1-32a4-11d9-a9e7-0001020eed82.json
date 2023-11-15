@@ -1,0 +1,30 @@
+{
+  "vid": "f3017ce1-32a4-11d9-a9e7-0001020eed82",
+  "topic": "socat -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "socat"
+      ],
+      "range": [
+        {
+          "lt": "1.4.0.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Socat Security Advisory 1 states:</p>\n\t<blockquote cite=\"http://www.dest-unreach.org/socat/advisory/socat-adv-1.html\">\n\t  <p>socat up to version 1.4.0.2 contains a syslog() based\n\t    format string vulnerability. This issue was originally\n\t    reported by CoKi on 19 Oct.2004 <a href=\"http://www.nosystem.com.ar/advisories/advisory-07.txt\">http://www.nosystem.com.ar/advisories/advisory-07.txt</a>.\n\t    Further investigation showed that this vulnerability could\n\t    under some circumstances lead to local or remote execution\n\t    of arbitrary code with the privileges of the socat\n\t    process.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.dest-unreach.org/socat/advisory/socat-adv-1.html",
+      "http://www.nosystem.com.ar/advisories/advisory-07.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-10-18",
+    "entry": "2004-11-10"
+  }
+}

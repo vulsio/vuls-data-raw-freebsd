@@ -1,0 +1,30 @@
+{
+  "vid": "5ed2f96b-33b7-4863-8c6b-540d22344424",
+  "topic": "imap-uw -- University of Washington IMAP c-client Remote Format String Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "imap-uw"
+      ],
+      "range": [
+        {
+          "lt": "2007e"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/33795\">\n\t  <p>University of Washington IMAP c-client is prone to a remote\n\t    format-string vulnerability because the software fails to adequately\n\t    sanitize user-supplied input before passing it as the\n\t    format-specifier to a formatted-printing function.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "bid": [
+      "33795"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-02-17",
+    "entry": "2009-05-21",
+    "modified": "2009-05-22"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "c0ef061a-c7f0-11e6-ae1b-002590263bf5",
+  "topic": "Joomla! -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "joomla3"
+      ],
+      "range": [
+        {
+          "lt": "3.4.7",
+          "ge": "1.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The JSST and the Joomla! Security Center report:</p>\n\t<blockquote cite=\"https://developer.joomla.org/security-centre/639-20151206-core-session-hardening.html\">\n\t  <h2>[20151206] - Core - Session Hardening</h2>\n\t  <p>The Joomla Security Strike team has been following up on the\n\t    critical security vulnerability patched last week. Since the recent\n\t    update it has become clear that the root cause is a bug in PHP\n\t    itself. This was fixed by PHP in September of 2015 with the releases\n\t    of PHP 5.4.45, 5.5.29, 5.6.13 (Note that this is fixed in all\n\t    versions of PHP 7 and has been back-ported in some specific Linux\n\t    LTS versions of PHP 5.3). This fixes the bug across all supported\n\t    PHP versions.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://developer.joomla.org/security-centre/640-20151207-core-sql-injection.html\">\n\t  <h2>[20151207] - Core - SQL Injection</h2>\n\t  <p>Inadequate filtering of request data leads to a SQL Injection\n\t    vulnerability.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://developer.joomla.org/security-centre/639-20151206-core-session-hardening.html",
+      "https://developer.joomla.org/security-centre/640-20151207-core-sql-injection.html",
+      "https://www.joomla.org/announcements/release-news/5643-joomla-3-4-7.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-21",
+    "entry": "2016-12-22"
+  }
+}

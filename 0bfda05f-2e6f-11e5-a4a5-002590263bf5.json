@@ -1,0 +1,40 @@
+{
+  "vid": "0bfda05f-2e6f-11e5-a4a5-002590263bf5",
+  "topic": "cacti -- Multiple XSS and SQL injection vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "cacti"
+      ],
+      "range": [
+        {
+          "lt": "0.8.8e"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Cacti Group, Inc. reports:</p>\n\t<blockquote cite=\"http://www.cacti.net/release_notes_0_8_8e.php\">\n\t  <p>Important Security Fixes</p>\n\t  <ul>\n\t    <li>Multiple XSS and SQL injection vulnerabilities</li>\n\t    <li>CVE-2015-4634 - SQL injection in graphs.php</li>\n\t  </ul>\n\t  <p>Changelog</p>\n\t  <ul>\n\t    <li>bug: Fixed various SQL Injection vectors</li>\n\t    <li>bug#0002574: SQL Injection Vulnerabilities in graph items and\n\t       graph template items</li>\n\t    <li>bug#0002577: CVE-2015-4634 - SQL injection in graphs.php</li>\n\t    <li>bug#0002579: SQL Injection Vulnerabilities in data sources</li>\n\t    <li>bug#0002580: SQL Injection in cdef.php</li>\n\t    <li>bug#0002582: SQL Injection in data_templates.php</li>\n\t    <li>bug#0002583: SQL Injection in graph_templates.php</li>\n\t    <li>bug#0002584: SQL Injection in host_templates.php</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.cacti.net/release_notes_0_8_8e.php"
+    ],
+    "cvename": [
+      "CVE-2015-4634"
+    ],
+    "freebsd_pr": [
+      "ports/201702"
+    ],
+    "mlist": [
+      {
+        "text": "http://seclists.org/oss-sec/2015/q3/150"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-12",
+    "entry": "2015-07-20"
+  }
+}

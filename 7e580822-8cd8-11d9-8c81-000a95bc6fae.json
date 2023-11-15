@@ -1,0 +1,37 @@
+{
+  "vid": "7e580822-8cd8-11d9-8c81-000a95bc6fae",
+  "topic": "postnuke -- cross-site scripting (XSS) vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "postnuke"
+      ],
+      "range": [
+        {
+          "lt": "0.760"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A cross-site scripting vulnerability is present in the\n\t   PostNuke PHP content management system. By passing data\n\t   injected through exploitable errors in input validation, an\n\t   attacker can insert code which will run on the machine of\n\t   anybody viewing the page. It is feasible that this attack\n\t   could be used to retrieve session information from cookies,\n\t   thereby allowing the attacker to gain administrative access\n\t   to the CMS.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://news.postnuke.com/Article2669.html"
+    ],
+    "cvename": [
+      "CVE-2005-0616"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110962768300373"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-02-28",
+    "entry": "2005-03-04"
+  }
+}

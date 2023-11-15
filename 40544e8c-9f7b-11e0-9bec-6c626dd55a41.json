@@ -1,0 +1,61 @@
+{
+  "vid": "40544e8c-9f7b-11e0-9bec-6c626dd55a41",
+  "topic": "Asterisk -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "asterisk14"
+      ],
+      "range": [
+        {
+          "lt": "1.4.41.2",
+          "gt": "1.4.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk16"
+      ],
+      "range": [
+        {
+          "lt": "1.6.2.18.2",
+          "gt": "1.6.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "asterisk18"
+      ],
+      "range": [
+        {
+          "lt": "1.8.4.4",
+          "gt": "1.8.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Asterisk Development Team reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/node/51650\">\n\t  <p>AST-2011-008: If a remote user sends a SIP packet containing a\n\t    NULL, Asterisk assumes available data extends past the null to\n\t    the end of the packet when the buffer is actually truncated when\n\t    copied.  This causes SIP header parsing to modify data past the\n\t    end of the buffer altering unrelated memory structures.  This\n\t    vulnerability does not affect TCP/TLS connections.</p>\n\t  <p>AST-2011-009: A remote user sending a SIP packet containing a\n\t    Contact header with a missing left angle bracket causes Asterisk\n\t    to access a null pointer.</p>\n\t  <p>AST-2011-010: A memory address was inadvertently transmitted\n\t    over the network via IAX2 via an option control frame and the\n\t    remote party would try to access it.</p>\n\t  <p>Possible enumeration of SIP users due to differing\n\t    authentication responses.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://downloads.asterisk.org/pub/security/AST-2011-008.html",
+      "http://downloads.asterisk.org/pub/security/AST-2011-009.html",
+      "http://downloads.asterisk.org/pub/security/AST-2011-010.html",
+      "http://downloads.asterisk.org/pub/security/AST-2011-011.html"
+    ],
+    "cvename": [
+      "CVE-2011-2529",
+      "CVE-2011-2535",
+      "CVE-2011-2536"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-06-24",
+    "entry": "2011-06-25",
+    "modified": "2011-06-29"
+  }
+}

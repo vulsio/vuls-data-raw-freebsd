@@ -1,0 +1,54 @@
+{
+  "vid": "237a201c-888b-487f-84d3-7d92266381d6",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "40.0.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "40.0.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "38.2.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/\">\n\t  <p>MFSA 2015-95 Add-on notification bypass through data URLs</p>\n\t  <p>MFSA 2015-94 Use-after-free when resizing canvas element\n\t    during restyling</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2015-94/",
+      "https://www.mozilla.org/security/advisories/mfsa2015-95/"
+    ],
+    "cvename": [
+      "CVE-2015-4497",
+      "CVE-2015-4498"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-27",
+    "entry": "2015-08-28"
+  }
+}

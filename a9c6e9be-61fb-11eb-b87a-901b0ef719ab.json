@@ -1,0 +1,42 @@
+{
+  "vid": "a9c6e9be-61fb-11eb-b87a-901b0ef719ab",
+  "topic": "FreeBSD -- Uninitialized kernel stack leaks in several file systems",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.2_3",
+          "ge": "12.2"
+        },
+        {
+          "lt": "12.1_13",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.4_7",
+          "ge": "11.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Several file systems were not properly initializing the d_off field\n\tof the dirent structures returned by VOP_READDIR. In particular,\n\ttmpfs(5), smbfs(5), autofs(5) and mqueuefs(5) were failing to do so.\n\tAs a result, eight uninitialized kernel stack bytes may be leaked to\n\tuserspace by these file systems. This problem is not present in\n\tFreeBSD 11.</p>\n\t<p>Additionally, msdosfs(5) was failing to zero-fill a pair of padding\n\tfields in the dirent structure, resulting in a leak of three\n\tuninitialized bytes.</p>\n\t<h1>Impact:</h1>\n\t<p>Kernel stack disclosures may leak sensitive information which could\n\tbe used to compromise the security of the system.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-25578",
+      "CVE-2020-25579"
+    ],
+    "freebsd_sa": [
+      "SA-21:01.fsdisclosure"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-01-29",
+    "entry": "2021-01-29"
+  }
+}

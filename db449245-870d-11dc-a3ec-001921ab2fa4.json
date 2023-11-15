@@ -1,0 +1,38 @@
+{
+  "vid": "db449245-870d-11dc-a3ec-001921ab2fa4",
+  "topic": "openldap -- multiple remote denial of service vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openldap-server"
+      ],
+      "range": [
+        {
+          "lt": "2.3.39"
+        },
+        {
+          "lt": "2.4.6",
+          "gt": "2.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>BugTraq reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/26245/\">\n\t  <p>OpenLDAP is prone to multiple remote denial-of-service\n\t    vulnerabilities because of an incorrect NULL-termination\n\t    issue and a double-free issue.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2007-5707",
+      "CVE-2007-5708"
+    ],
+    "bid": [
+      "26245"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-10-29",
+    "entry": "2007-10-30",
+    "modified": "2007-10-31"
+  }
+}

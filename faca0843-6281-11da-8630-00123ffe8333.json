@@ -1,0 +1,32 @@
+{
+  "vid": "faca0843-6281-11da-8630-00123ffe8333",
+  "topic": "drupal -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "drupal"
+      ],
+      "range": [
+        {
+          "lt": "4.6.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17824/\">\n\t  <p>Some vulnerabilities have been reported in Drupal,\n\t    which can be exploited by malicious people to bypass\n\t    certain security restrictions, and conduct script\n\t    insertion and HTTP response splitting attacks.</p>\n\t  <p>1) An input validation error in the filtering of\n\t    HTML code can be exploited to inject arbitrary\n\t    JavaScript code in submitted content, which will be\n\t    executed in a user's browser session in context of\n\t    an affected site when the malicious user data is\n\t    viewed.\n\t    Successful exploitation requires that the user has\n\t    access to the full HTML input format.\n\t    Ref: sa-2005-007</p>\n\t  <p>2) An input validation error in the attachment\n\t    handling can be exploited to upload a malicious\n\t    image with embedded HTML and script content, which\n\t    will be executed in a user's browser session in\n\t    context of an affected site when viewed directly with\n\t    the Microsoft Internet Explorer browser.\n\t    This can also be exploited to inject arbitrary HTTP\n\t    headers, which will be included in the response sent\n\t    to the user.\n\t    Ref: sa-2005-008</p>\n\t  <p>3) The problem is that it is possible to bypass the\n\t    \"access user profile\" permission. However, this cannot\n\t    be exploited to modify data.\n\t    Successful exploitation requires that the server runs\n\t    PHP 5.\n\t    Ref: sa-2005-009</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/files/sa-2005-007/advisory.txt",
+      "http://drupal.org/files/sa-2005-008/advisory.txt",
+      "http://drupal.org/files/sa-2005-009/advisory.txt",
+      "http://secunia.com/advisories/17824/"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-12-01",
+    "entry": "2005-12-01"
+  }
+}

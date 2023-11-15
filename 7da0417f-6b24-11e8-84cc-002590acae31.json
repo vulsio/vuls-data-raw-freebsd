@@ -1,0 +1,44 @@
+{
+  "vid": "7da0417f-6b24-11e8-84cc-002590acae31",
+  "topic": "gnupg -- unsanitized output (CVE-2018-12020)",
+  "affects": [
+    {
+      "name": [
+        "gnupg"
+      ],
+      "range": [
+        {
+          "lt": "2.2.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gnupg1"
+      ],
+      "range": [
+        {
+          "lt": "1.4.23"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GnuPG reports:</p>\n\t<blockquote cite=\"https://lists.gnupg.org/pipermail/gnupg-announce/2018q2/000425.html\">\n\t  <p>GnuPG did not sanitize input file names, which may then be output to\n\t    the terminal.  This could allow terminal control sequences or fake\n\t    status messages to be injected into the output.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12020",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7526"
+    ],
+    "cvename": [
+      "CVE-2018-12020",
+      "CVE-2017-7526"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-06-07",
+    "entry": "2018-06-08"
+  }
+}

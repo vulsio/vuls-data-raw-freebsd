@@ -1,0 +1,32 @@
+{
+  "vid": "ca543e06-207a-11d9-814e-0001020eed82",
+  "topic": "cacti -- SQL injection",
+  "affects": [
+    {
+      "name": [
+        "cacti"
+      ],
+      "range": [
+        {
+          "lt": "0.8.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Fernando Quintero reports that Cacti 0.8.5a suffers from a\n\t  SQL injection attack where an attacker can change the\n\t  password for any Cacti user.\tThis attack is not possible if\n\t  the PHP option magic_quotes_gpc is set to On, which is the\n\t  default for PHP in FreeBSD.</p>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=109269427427368",
+        "msgid": "1092686621.818.8.camel@mitnick.nadied.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-16",
+    "entry": "2004-10-17"
+  }
+}

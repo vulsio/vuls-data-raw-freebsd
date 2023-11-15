@@ -1,0 +1,45 @@
+{
+  "vid": "d8e1aadd-ee68-11d9-8310-0001020eed82",
+  "topic": "clamav -- cabinet file handling DoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "clamav"
+      ],
+      "range": [
+        {
+          "lt": "0.86"
+        }
+      ]
+    },
+    {
+      "name": [
+        "clamav-devel"
+      ],
+      "range": [
+        {
+          "lt": "20050620"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An iDEFENSE Security Advisory reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=112006456809016\">\n\t  <p>Remote exploitation of an input validation error in Clam\n\t    AntiVirus ClamAV allows attackers to cause a denial of\n\t    service condition.</p>\n\t  <p>The vulnerability specifically exists due to insufficient\n\t    validation on cabinet file header data. The\n\t    <code>ENSURE_BITS()</code> macro fails to check for zero\n\t    length reads, allowing a carefully constructed cabinet\n\t    file to cause an infinite loop.</p>\n\t  <p>ClamAV is used in a number of mail gateway\n\t    products. Successful exploitation requires an attacker to\n\t    send a specially constructed CAB file through a mail\n\t    gateway or personal anti-virus client utilizing the ClamAV\n\t    scanning engine. The infinate loop will cause the ClamAV\n\t    software to use all available processor resources,\n\t    resulting in a denial of service or severe degradation to\n\t    system performance. Remote exploitation can be achieved by\n\t    sending a malicious file in an e-mail message or during an\n\t    HTTP session.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2005-1923"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112006456809016",
+        "msgid": "FB24803D1DF2A34FA59FC157B77C97050462A3AB@IDSERV04.idef.com"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2005-06-29",
+    "entry": "2005-07-06"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "81326883-2905-11e5-a4a5-002590263bf5",
+  "topic": "devel/ipython -- CSRF possible remote execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ipython"
+      ],
+      "range": [
+        {
+          "lt": "3.2.1",
+          "ge": "0.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Kyle Kelley reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/92\">\n\t  <p>Summary: POST requests exposed via the IPython REST API are\n\t    vulnerable to cross-site request forgery (CSRF). Web pages on\n\t    different domains can make non-AJAX POST requests to known IPython\n\t    URLs, and IPython will honor them. The user's browser will\n\t    automatically send IPython cookies along with the requests. The\n\t    response is blocked by the Same-Origin Policy, but the request\n\t    isn't.</p>\n\t  <p>API paths with issues:</p>\n\t  <ul>\n\t    <li>POST /api/contents/&lt;path&gt;/&lt;file&gt;</li>\n\t    <li>POST /api/contents/&lt;path&gt;/&lt;file&gt;/checkpoints</li>\n\t    <li>POST /api/contents/&lt;path&gt;/&lt;file&gt;/checkpoints/&lt;checkpoint_id&gt;</li>\n\t    <li>POST /api/kernels</li>\n\t    <li>POST /api/kernels/&lt;kernel_id&gt;/&lt;action&gt;</li>\n\t    <li>POST /api/sessions</li>\n\t    <li>POST /api/clusters/&lt;cluster_id&gt;/&lt;action&gt;</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://seclists.org/oss-sec/2015/q3/92",
+      "http://ipython.org/ipython-doc/3/whatsnew/version3.html#ipython-3-2-1"
+    ],
+    "cvename": [
+      "CVE-2015-5607"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-12",
+    "entry": "2015-07-13",
+    "modified": "2015-07-22"
+  }
+}

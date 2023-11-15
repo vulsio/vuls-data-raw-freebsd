@@ -1,0 +1,39 @@
+{
+  "vid": "fc99c736-3499-11d9-98a7-0090962cff2a",
+  "topic": "gnats -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gnats"
+      ],
+      "range": [
+        {
+          "ge": "4.*",
+          "le": "4.0_2"
+        },
+        {
+          "le": "3.113.1_9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gnats suffers from a format string bug, which may enable an\n\t  attacker to execute arbitary code.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0623"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=108820000823191",
+        "msgid": "20040625164231.7437.qmail@www.securityfocus.com"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-06-21",
+    "entry": "2004-11-12"
+  }
+}

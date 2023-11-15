@@ -1,0 +1,29 @@
+{
+  "vid": "a59e263a-45cd-11e5-adde-14dae9d210b8",
+  "topic": "freexl -- integer overflow",
+  "affects": [
+    {
+      "name": [
+        "freexl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Stefan Cornelius reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/07/06/7\">\n\t  <p>There's an integer overflow in the allocate_cells() function\n\t    when trying to allocate the memory for worksheet with specially\n\t    crafted row/column dimensions. This can be exploited to cause a\n\t    heap memory corruption. The most likely outcome of this is a crash\n\t    when trying to initialize the cells later in the function.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/07/06/7"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-07-06",
+    "entry": "2015-08-18"
+  }
+}

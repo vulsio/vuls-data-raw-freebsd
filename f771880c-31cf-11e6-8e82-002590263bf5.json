@@ -1,0 +1,29 @@
+{
+  "vid": "f771880c-31cf-11e6-8e82-002590263bf5",
+  "topic": "botan -- cryptographic vulnerability",
+  "affects": [
+    {
+      "name": [
+        "botan110"
+      ],
+      "range": [
+        {
+          "lt": "1.10.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9742\">\n\t  <p>The Miller-Rabin primality check in Botan before 1.10.8 and 1.11.x\n\t    before 1.11.9 improperly uses a single random base, which makes it\n\t    easier for remote attackers to defeat cryptographic protection\n\t    mechanisms via a DH group.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2014-9742"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-04-11",
+    "entry": "2016-06-14"
+  }
+}

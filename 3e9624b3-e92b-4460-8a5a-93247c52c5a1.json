@@ -1,0 +1,29 @@
+{
+  "vid": "3e9624b3-e92b-4460-8a5a-93247c52c5a1",
+  "topic": "zeek -- Remote crash vulnerability",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "3.0.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jon Siwek of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v3.0.13\">\n\t  <p>Fix ASCII Input reader's treatment of input files\n\t  containing null-bytes. An input file containing null-bytes\n\t  could lead to a buffer-over-read, crash Zeek, and be\n\t  exploited to cause Denial of Service. </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/zeek/zeek/releases/tag/v3.0.13"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-02-10",
+    "entry": "2021-02-22"
+  }
+}

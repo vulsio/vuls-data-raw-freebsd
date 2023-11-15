@@ -1,0 +1,54 @@
+{
+  "vid": "aa4d3d73-ef17-11e1-b593-00269ef07d24",
+  "topic": "Calligra, KOffice -- input validation failure",
+  "affects": [
+    {
+      "name": [
+        "koffice"
+      ],
+      "range": [
+        {
+          "le": "1.6.3_18,2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "koffice-kde4"
+      ],
+      "range": [
+        {
+          "le": "2.3.3_7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "calligra"
+      ],
+      "range": [
+        {
+          "lt": "2.5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>KDE Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20120810-1.txt\">\n\t  <p>A flaw has been found which can allow malicious code to take\n\t    advantage of an input validation failure in the Microsoft import\n\t    filter in Calligra and KOffice. Exploitation can allow the attacker\n\t    to gain control of the running process and execute code on its\n\t    behalf.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.kde.org/info/security/advisory-20120810-1.txt",
+      "http://media.blackhat.com/bh-us-12/Briefings/C_Miller/BH_US_12_Miller_NFC_attack_surface_WP.pdf"
+    ],
+    "cvename": [
+      "CVE-2012-3455",
+      "CVE-2012-3456"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-10",
+    "entry": "2012-08-26"
+  }
+}

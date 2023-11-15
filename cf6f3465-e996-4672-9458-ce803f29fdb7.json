@@ -1,0 +1,37 @@
+{
+  "vid": "cf6f3465-e996-4672-9458-ce803f29fdb7",
+  "topic": "py-markdown2 -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py37-markdown2",
+        "py38-markdown2",
+        "py39-markdown2",
+        "py310-markdown2",
+        "py311-markdown2"
+      ],
+      "range": [
+        {
+          "lt": "2.3.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>TheGrandPew reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2020-65\">\n      <p>python-markdown2 through 2.3.8 allows XSS because element names are mishandled unless a \\w+ match succeeds.</p>\n      <p>For example, an attack might use elementname@ or elementname- with an onclick attribute.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2020-65",
+      "https://osv.dev/vulnerability/GHSA-fv3h-8x5j-pvgq"
+    ],
+    "cvename": [
+      "CVE-2020-11888"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-04-20",
+    "entry": "2023-08-31"
+  }
+}

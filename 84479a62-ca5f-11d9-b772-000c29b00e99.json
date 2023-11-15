@@ -1,0 +1,38 @@
+{
+  "vid": "84479a62-ca5f-11d9-b772-000c29b00e99",
+  "topic": "fswiki -- XSS problem in file upload form",
+  "affects": [
+    {
+      "name": [
+        "fswiki"
+      ],
+      "range": [
+        {
+          "le": "3.5.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia security advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15538\">\n\t  <p>A vulnerability has been reported in FreeStyle Wiki and\n\t    FSWikiLite, which can be exploited by malicious people to\n\t    conduct script insertion attacks.</p>\n\t  <p>Input passed in uploaded attachments is not properly\n\t    sanitised before being used. This can be exploited to inject\n\t    arbitrary HTML and script code, which will be executed in a\n\t    user's browser session in context of an affected site when\n\t    the malicious attachment is viewed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/15538",
+      "http://fswiki.poi.jp/wiki.cgi?page=%CD%FA%CE%F2%2F2005%2D5%2D19",
+      "http://jvn.jp/jp/JVN%23465742E4/index.html"
+    ],
+    "cvename": [
+      "CVE-2005-1799"
+    ],
+    "freebsd_pr": [
+      "ports/81520"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-05-19",
+    "entry": "2005-05-29",
+    "modified": "2005-06-01"
+  }
+}

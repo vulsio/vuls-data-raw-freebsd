@@ -1,0 +1,72 @@
+{
+  "vid": "54976998-f248-11e8-81e2-005056a311d1",
+  "topic": "samba -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "samba46"
+      ],
+      "range": [
+        {
+          "le": "4.6.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba47"
+      ],
+      "range": [
+        {
+          "lt": "4.7.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba48"
+      ],
+      "range": [
+        {
+          "lt": "4.8.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba49"
+      ],
+      "range": [
+        {
+          "lt": "4.9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The samba project reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-14629.html\">\n\t  <p>All versions of Samba from 4.0.0 onwards are vulnerable to infinite\n\t    query recursion caused by CNAME loops. Any dns record can be added via\n\t    ldap by an unprivileged user using the ldbadd tool, so this is a\n\t    security issue.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-16841.html\">\n\t  <p>When configured to accept smart-card authentication, Samba's KDC will call\n\t    talloc_free() twice on the same memory if the principal in a validly signed\n\t    certificate does not match the principal in the AS-REQ.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-16851.html\">\n\t  <p>During the processing of an LDAP search before Samba's AD DC returns\n\t    the LDAP entries to the client, the entries are cached in a single\n\t    memory object with a maximum size of 256MB.  When this size is\n\t    reached, the Samba process providing the LDAP service will follow the\n\t    NULL pointer, terminating the process.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-16852.html\">\n\t  <p>During the processing of an DNS zone in the DNS management DCE/RPC server,\n\t    the internal DNS server or the Samba DLZ plugin for BIND9, if the\n\t    DSPROPERTY_ZONE_MASTER_SERVERS property or DSPROPERTY_ZONE_SCAVENGING_SERVERS\n\t    property is set, the server will follow a NULL pointer and terminate</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-16853.html\">\n\t  <p>A user in a Samba AD domain can crash the KDC when Samba is built in the\n\t    non-default MIT Kerberos configuration.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-16857.html\">\n\t  <p>AD DC Configurations watching for bad passwords (to restrict brute forcing\n\t    of passwords) in a window of more than 3 minutes may not watch for bad\n\t    passwords at all.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.samba.org/samba/security/CVE-2018-14629.html",
+      "https://www.samba.org/samba/security/CVE-2018-16841.html",
+      "https://www.samba.org/samba/security/CVE-2018-16851.html",
+      "https://www.samba.org/samba/security/CVE-2018-16852.html",
+      "https://www.samba.org/samba/security/CVE-2018-16853.html",
+      "https://www.samba.org/samba/security/CVE-2018-16857.html"
+    ],
+    "cvename": [
+      "CVE-2018-14629",
+      "CVE-2018-16841",
+      "CVE-2018-16851",
+      "CVE-2018-16852",
+      "CVE-2018-16853",
+      "CVE-2018-16857"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-14",
+    "entry": "2018-08-14"
+  }
+}

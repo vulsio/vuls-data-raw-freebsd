@@ -1,0 +1,41 @@
+{
+  "vid": "a5cf3ecd-38db-11e8-8b7f-a4badb2f469b",
+  "topic": "FreeBSD -- vt console memory disclosure",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "11.1_9",
+          "ge": "11.1"
+        },
+        {
+          "lt": "10.4_8",
+          "ge": "10.4"
+        },
+        {
+          "lt": "10.3_29",
+          "ge": "10.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Insufficient validation of user-provided font parameters\n\tcan result in an integer overflow, leading to the use of\n\tarbitrary kernel memory as glyph data. Characters that\n\treference this data can be displayed on the screen, effectively\n\tdisclosing kernel memory.</p>\n\t<h1>Impact:</h1>\n\t<p>Unprivileged users may be able to access privileged\n\tkernel data.</p>\n\t<p>Such memory might contain sensitive information, such\n\tas portions of the file cache or terminal buffers. This\n\tinformation might be directly useful, or it might be leveraged\n\tto obtain elevated privileges in some way; for example, a\n\tterminal buffer might include a user-entered password.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2018-6917"
+    ],
+    "freebsd_sa": [
+      "SA-18:04.vt"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-04-04",
+    "entry": "2018-04-05"
+  }
+}

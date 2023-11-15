@@ -1,0 +1,43 @@
+{
+  "vid": "1a0704e7-0edf-11e0-becc-0022156e8794",
+  "topic": "php-imap -- Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "php5-imap"
+      ],
+      "range": [
+        {
+          "lt": "5.3.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php52-imap"
+      ],
+      "range": [
+        {
+          "lt": "5.2.15"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The following DoS condition in IMAP extension\n\t  was fixed in PHP 5.3.4 and PHP 5.2.15:</p>\n\t<blockquote cite=\"http://securitytracker.com/alerts/2010/Nov/1024761.html\">\n\t<p>A remote user can send specially crafted IMAP user name\n\t  or password data to trigger a double free memory error\n\t  in 'ext/imap/php_imap.c' and cause the target service\n\t  to crash.</p>\n\t<p>It may be possible to execute arbitrary code.\n\t  However, code execution was not confirmed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.php.net/releases/5_3_4.php",
+      "http://www.php.net/releases/5_2_15.php"
+    ],
+    "cvename": [
+      "CVE-2010-4150"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-12-13",
+    "entry": "2011-01-13"
+  }
+}

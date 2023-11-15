@@ -1,0 +1,30 @@
+{
+  "vid": "d0b12952-cb86-11e6-906f-0cc47a065786",
+  "topic": "h2o -- Use-after-free vulnerability",
+  "affects": [
+    {
+      "name": [
+        "h2o"
+      ],
+      "range": [
+        {
+          "lt": "2.0.4_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Kazuho Oku reports:</p>\n\t<blockquote cite=\"https://github.com/h2o/h2o/issues?q=label%3Avulnerability\">\n\t  <p>A use-after-free vulnerability exists in H2O up to and including\n\t    version 2.0.4 / 2.1.0-beta3 that can be used by a remote attacker to\n\t    mount DoS attacks and / or information theft.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/h2o/h2o/releases/tag/v2.0.5",
+      "https://github.com/h2o/h2o/issues/1144"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-09",
+    "entry": "2016-12-29"
+  }
+}

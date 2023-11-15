@@ -1,0 +1,37 @@
+{
+  "vid": "d79fc873-b5f9-11e0-89b4-001ec9578670",
+  "topic": "phpmyadmin -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "3.4.3.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-9.php\">\n\t  <p>XSS in table Print view.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-10.php\">\n\t  <p>Via a crafted MIME-type transformation parameter, an attacker can\n\t    perform a local file inclusion.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-11.php\">\n\t  <p>In the 'relational schema' code a parameter was not sanitized before\n\t    being used to concatenate a class name.</p>\n\t  <p>The end result is a local file inclusion vulnerability and code\n\t    execution.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2011-12.php\">\n\t  <p>It was possible to manipulate the PHP session superglobal using\n\t    some of the Swekey authentication code.</p>\n\t  <p>This is very similar to PMASA-2011-5, documented in\n\t    7e4e5c53-a56c-11e0-b180-00216aa06fc2</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-9.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-10.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-11.php",
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2011-12.php"
+    ],
+    "cvename": [
+      "CVE-2011-2642",
+      "CVE-2011-2643"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-07-23",
+    "entry": "2011-07-24",
+    "modified": "2011-07-28"
+  }
+}

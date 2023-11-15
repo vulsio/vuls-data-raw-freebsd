@@ -1,0 +1,87 @@
+{
+  "vid": "3ce8c7e2-66cf-11dc-b25f-02e0185f8d72",
+  "topic": "mozilla -- code execution via Quicktime media-link files",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.7,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "1.1.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox-devel"
+      ],
+      "range": [
+        {
+          "lt": "3.0.a2007.12.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.0.a2007.12.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-ja",
+        "linux-mozilla-devel",
+        "linux-mozilla",
+        "mozilla"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports a vulnerability within the\n\t  mozilla browser.  This vulnerability also affects various\n\t  other browsers like firefox and seamonkey.  The vulnerability\n\t  is caused by QuickTime Media-Link files that contain a qtnext\n\t  attribute.  This could allow an attacker to start the browser\n\t  with arbitrary command-line options.\tThis could allow the\n\t  attacker to install malware, steal local data and possibly\n\t  execute and/or do other arbitrary things within the users\n\t  context.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2007/mfsa2007-28.html"
+    ],
+    "cvename": [
+      "CVE-2006-4965"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-09-18",
+    "entry": "2007-09-19",
+    "modified": "2007-12-14"
+  }
+}

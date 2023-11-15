@@ -1,0 +1,39 @@
+{
+  "vid": "546deeea-3fc6-11e6-a671-60a44ce6887b",
+  "topic": "SQLite3 -- Tempdir Selection Vulnerability",
+  "affects": [
+    {
+      "name": [
+        "sqlite3"
+      ],
+      "range": [
+        {
+          "lt": "3.13.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>KoreLogic security reports:</p>\n\t<blockquote cite=\"https://www.korelogic.com/Resources/Advisories/KL-001-2016-003.txt\">\n\t  <p>Affected versions of SQLite reject potential tempdir locations if\n\t    they are not readable, falling back to '.'. Thus, SQLite will favor\n\t    e.g. using cwd for tempfiles on such a system, even if cwd is an\n\t    unsafe location.  Notably, SQLite also checks the permissions of\n\t    '.', but ignores the results of that check.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.korelogic.com/Resources/Advisories/KL-001-2016-003.txt",
+      "http://openwall.com/lists/oss-security/2016/07/01/2",
+      "http://www.sqlite.org/cgi/src/info/67985761aa93fb61",
+      "http://www.sqlite.org/cgi/src/info/b38fe522cfc971b3",
+      "http://www.sqlite.org/cgi/src/info/614bb709d34e1148"
+    ],
+    "cvename": [
+      "CVE-2016-6153"
+    ],
+    "freebsd_pr": [
+      "ports/209827"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-07-01",
+    "entry": "2016-07-03"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "vid": "e02c572f-2af0-11e2-bb44-003067b2972c",
+  "topic": "weechat -- Crash or freeze when decoding IRC colors in strings",
+  "affects": [
+    {
+      "name": [
+        "weechat"
+      ],
+      "range": [
+        {
+          "lt": "0.3.9.1",
+          "ge": "0.3.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "weechat-devel"
+      ],
+      "range": [
+        {
+          "lt": "20121110",
+          "ge": "20110614"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Sebastien Helleu reports:</p>\n\t<blockquote cite=\"https://savannah.nongnu.org/bugs/?37704\">\n\t  <p>A buffer overflow is causing a crash or freeze of WeeChat when\n\t  decoding IRC colors in strings.</p>\n\t  <p>Workaround for a non-patched version:\n\t  /set irc.network.colors_receive off</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://weechat.org/security/",
+      "https://savannah.nongnu.org/bugs/?37704"
+    ],
+    "cvename": [
+      "CVE-2012-5854"
+    ],
+    "freebsd_pr": [
+      "ports/173513"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-11-09",
+    "entry": "2012-11-10",
+    "modified": "2012-11-13"
+  }
+}

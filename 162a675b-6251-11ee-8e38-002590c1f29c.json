@@ -1,0 +1,33 @@
+{
+  "vid": "162a675b-6251-11ee-8e38-002590c1f29c",
+  "topic": "FreeBSD -- arm64 boot CPUs may lack speculative execution protections",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "13.2_4",
+          "ge": "13.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>On CPU 0 the check for the SMCCC workaround is called before\n\tSMCCC support has been initialized.</p>\n\t<h1>Impact:</h1>\n\t<p>No speculative execution workarounds are installed on CPU 0.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2023-5370"
+    ],
+    "freebsd_sa": [
+      "SA-23:14.smccc"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-10-03",
+    "entry": "2023-10-04"
+  }
+}

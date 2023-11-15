@@ -1,0 +1,37 @@
+{
+  "vid": "924cb116-4d35-11ee-8e38-002590c1f29c",
+  "topic": "FreeBSD -- Wi-Fi encryption bypass",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "13.2_3",
+          "ge": "13.2"
+        },
+        {
+          "lt": "12.4_5",
+          "ge": "12.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The net80211 subsystem would fallback to the multicast key for unicast\n\ttraffic in the event the unicast key was removed.  This would result in\n\tbuffered unicast traffic being exposed to any stations with access to the\n\tmulticast key.</p>\n\t<h1>Impact:</h1>\n\t<p>As described in the \"Framing Frames: Bypassing Wi-Fi Encryption by\n\tManipulating Transmit Queues\" paper, an attacker can induce an access point\n\tto buffer frames for a client, deauthenticate the client (causing the unicast\n\tkey to be removed from the access point), and subsequent flushing of the\n\tbuffered frames now encrypted with the multicast key.  This would give the\n\tattacker access to the data.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2022-47522"
+    ],
+    "freebsd_sa": [
+      "SA-23:11.wifi"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-09-06",
+    "entry": "2023-09-07"
+  }
+}

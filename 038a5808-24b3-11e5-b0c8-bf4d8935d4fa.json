@@ -1,0 +1,42 @@
+{
+  "vid": "038a5808-24b3-11e5-b0c8-bf4d8935d4fa",
+  "topic": "roundcube -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "roundcube"
+      ],
+      "range": [
+        {
+          "lt": "1.1.2,1",
+          "ge": "1.1.0,1"
+        },
+        {
+          "lt": "1.0.6,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n      <p>Roundcube reports:</p>\n      <blockquote cite=\"https://roundcube.net/news/2015/06/05/updates-1.1.2-and-1.0.6-released/\">\n\t    <p>We just published updates to both stable versions 1.0 and\n\t    1.1 after fixing many minor bugs and adding some security improvements\n\t    to the 1.1 release branch. Version 1.0.6 comes with cherry-picked fixes\n\t    from the more recent version to ensure proper long term support\n\t    especially in regards of security and compatibility.<br/>\n\t    <br/>\n\t    The security-related fixes in particular are:<br/>\n\t    <br/>\n\t    * XSS vulnerability in _mbox argument<br/>\n\t    * security improvement in contact photo handling<br/>\n\t    * potential info disclosure from temp directory</p>\n      </blockquote>\n     "
+  },
+  "references": {
+    "url": [
+      "https://roundcube.net/news/2015/06/05/updates-1.1.2-and-1.0.6-released/"
+    ],
+    "cvename": [
+      "CVE-2015-5381",
+      "CVE-2015-5383"
+    ],
+    "mlist": [
+      {
+        "text": "http://openwall.com/lists/oss-security/2015/07/06/10"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-05-30",
+    "entry": "2015-07-07"
+  }
+}

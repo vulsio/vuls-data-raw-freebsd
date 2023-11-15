@@ -1,0 +1,36 @@
+{
+  "vid": "d5e1aac8-db0b-11dd-ae30-001cc0377035",
+  "topic": "xterm -- DECRQSS remote command execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "xterm"
+      ],
+      "range": [
+        {
+          "lt": "238"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/33060/discuss\">\n\t  <p>The xterm program is prone to a remote command-execution\n\t    vulnerability because it fails to sufficiently validate user\n\t    input.</p>\n\t  <p>Successfully exploiting this issue would allow an attacker\n\t    to execute arbitrary commands on an affected computer in the\n\t    context of the affected application.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=510030"
+    ],
+    "cvename": [
+      "CVE-2008-2383"
+    ],
+    "bid": [
+      "33060"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-28",
+    "entry": "2009-01-05",
+    "modified": "2009-01-06"
+  }
+}

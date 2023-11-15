@@ -1,0 +1,33 @@
+{
+  "vid": "40a844bf-c430-11e8-96dc-000743165db0",
+  "topic": "bitcoin -- Denial of Service and Possible Mining Inflation",
+  "affects": [
+    {
+      "name": [
+        "bitcoin",
+        "bitcoin-daemon"
+      ],
+      "range": [
+        {
+          "lt": "0.16.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Bitcoin Core reports:</p>\n\t<blockquote cite=\"https://bitcoincore.org/en/2018/09/20/notice/\">\n\t  <p>CVE-2018-17144, a fix for which was released on September 18th in Bitcoin Core versions 0.16.3 and 0.17.0rc4, includes both a Denial of Service component and a critical inflation vulnerability. It was originally reported to several developers working on Bitcoin Core, as well as projects supporting other cryptocurrencies, including ABC and Unlimited on September 17th as a Denial of Service bug only, however we quickly determined that the issue was also an inflation vulnerability with the same root cause and fix.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bitcoincore.org/en/2018/09/20/notice/"
+    ],
+    "cvename": [
+      "CVE-2018-17144"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-09-17",
+    "entry": "2018-09-29"
+  }
+}

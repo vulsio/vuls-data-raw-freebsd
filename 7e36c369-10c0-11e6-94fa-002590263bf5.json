@@ -1,0 +1,47 @@
+{
+  "vid": "7e36c369-10c0-11e6-94fa-002590263bf5",
+  "topic": "wireshark -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wireshark",
+        "wireshark-lite",
+        "wireshark-qt5",
+        "tshark",
+        "tshark-lite"
+      ],
+      "range": [
+        {
+          "lt": "2.0.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Wireshark development team reports:</p>\n\t<blockquote cite=\"https://www.wireshark.org/docs/relnotes/wireshark-2.0.3.html\">\n\t  <p>The following vulnerabilities have been fixed:</p>\n\t  <ul>\n\t    <li><p>wnpa-sec-2016-19</p>\n\t      <p>The NCP dissector could crash. (Bug 11591)</p></li>\n\t    <li><p>wnpa-sec-2016-20</p>\n\t      <p>TShark could crash due to a packet reassembly bug. (Bug 11799)\n\t\t</p></li>\n\t    <li><p>wnpa-sec-2016-21</p>\n\t      <p>The IEEE 802.11 dissector could crash. (Bug 11824, Bug 12187)\n\t\t</p></li>\n\t    <li><p>wnpa-sec-2016-22</p>\n\t      <p>The PKTC dissector could crash. (Bug 12206)</p></li>\n\t    <li><p>wnpa-sec-2016-23</p>\n\t      <p>The PKTC dissector could crash. (Bug 12242)</p></li>\n\t    <li><p>wnpa-sec-2016-24</p>\n\t      <p>The IAX2 dissector could go into an infinite loop. (Bug\n\t\t12260)</p></li>\n\t    <li><p>wnpa-sec-2016-25</p>\n\t      <p>Wireshark and TShark could exhaust the stack. (Bug 12268)</p>\n\t\t</li>\n\t    <li><p>wnpa-sec-2016-26</p>\n\t      <p>The GSM CBCH dissector could crash. (Bug 12278)</p></li>\n\t    <li><p>wnpa-sec-2016-27</p>\n\t      <p>MS-WSP dissector crash. (Bug 12341)</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.wireshark.org/docs/relnotes/wireshark-2.0.3.html",
+      "http://www.openwall.com/lists/oss-security/2016/04/25/2"
+    ],
+    "cvename": [
+      "CVE-2016-4076",
+      "CVE-2016-4077",
+      "CVE-2016-4078",
+      "CVE-2016-4079",
+      "CVE-2016-4080",
+      "CVE-2016-4081",
+      "CVE-2016-4006",
+      "CVE-2016-4082",
+      "CVE-2016-4083",
+      "CVE-2016-4084"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-04-22",
+    "entry": "2016-05-02",
+    "modified": "2016-07-04"
+  }
+}

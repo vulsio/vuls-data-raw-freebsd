@@ -1,0 +1,57 @@
+{
+  "vid": "dfe0cdc1-baf2-11e5-863a-b499baebfeaf",
+  "topic": "openssh -- information disclosure",
+  "affects": [
+    {
+      "name": [
+        "openssh-portable"
+      ],
+      "range": [
+        {
+          "lt": "7.1.p2,1",
+          "gt": "5.4.p0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.2_10",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_27",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_34",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OpenSSH reports:</p>\n\t<blockquote cite=\"http://www.openssh.com/security.html\">\n\t  <p>OpenSSH clients between versions 5.4 and 7.1 are vulnerable to\n\t  information disclosure that may allow a malicious server to retrieve\n\t  information including under some circumstances, user's private keys.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openssh.com/security.html"
+    ],
+    "cvename": [
+      "CVE-2016-0777",
+      "CVE-2016-0778"
+    ],
+    "freebsd_sa": [
+      "SA-16:07"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-14",
+    "entry": "2016-01-14",
+    "modified": "2016-08-09"
+  }
+}

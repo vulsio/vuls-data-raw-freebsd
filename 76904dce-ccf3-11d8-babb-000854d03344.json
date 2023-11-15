@@ -1,0 +1,37 @@
+{
+  "vid": "76904dce-ccf3-11d8-babb-000854d03344",
+  "topic": "Pavuk HTTP Location header overflow",
+  "affects": [
+    {
+      "name": [
+        "pavuk"
+      ],
+      "range": [
+        {
+          "lt": "0.9.28_5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>When pavuk sends a request to a web server and the server\n\t  sends back the HTTP status code 305 (Use Proxy), pavuk\n\t  copies data from the HTTP Location header in an unsafe\n\t  manner. This leads to a stack-based buffer overflow with\n\t  control over EIP.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.osvdb.org/7319"
+    ],
+    "cvename": [
+      "CVE-2004-0456"
+    ],
+    "mlist": [
+      {
+        "text": "http://lists.netsys.com/pipermail/full-disclosure/2004-July/023322.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-06-30",
+    "entry": "2004-07-03"
+  }
+}

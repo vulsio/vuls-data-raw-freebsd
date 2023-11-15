@@ -1,0 +1,29 @@
+{
+  "vid": "34c93ae8-7e6f-11db-bf00-02e081235dab",
+  "topic": "gnupg -- buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "gnupg"
+      ],
+      "range": [
+        {
+          "lt": "1.4.5_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Werner Koch reports:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2006q4/000241.html\">\n\t  <p>When running GnuPG interactively, special crafted\n\t    messages may be used to crash gpg or gpg2.\tRunning gpg in\n\t    batch mode, as done by all software using gpg as a backend\n\t    (e.g. mailers), is not affected by this bug.</p>\n\t  <p>Exploiting this overflow seems to be possible.</p>\n\t  <p>gpg-agent, gpgsm, gpgv or other tools from the GnuPG\n\t    suite are not affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.gnupg.org/pipermail/gnupg-announce/2006q4/000241.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-11-27",
+    "entry": "2006-11-27"
+  }
+}

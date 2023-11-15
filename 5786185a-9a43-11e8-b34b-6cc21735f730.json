@@ -1,0 +1,29 @@
+{
+  "vid": "5786185a-9a43-11e8-b34b-6cc21735f730",
+  "topic": "xml-security-c -- crashes on malformed KeyInfo content",
+  "affects": [
+    {
+      "name": [
+        "apache-xml-security-c"
+      ],
+      "range": [
+        {
+          "lt": "2.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The shibboleth project reports:</p>\n\t<blockquote cite=\"https://shibboleth.net/community/advisories/secadv_20180803.txt\">\n\t  <p>\n\t    SAML messages, assertions, and metadata all commonly make use of the\n\t    XML Signature KeyInfo construct, which expresses information about\n\t    keys and certificates used in signing or encrypting XML.\n\t  </p>\n\t  <p>\n\t    The Apache Santuario XML Security for C++ library contained code\n\t    paths at risk of dereferencing null pointers when processing various\n\t    kinds of malformed KeyInfo hints typically found in signed or\n\t    encrypted XML.  The usual effect is a crash, and in the case of the\n\t    Shibboleth SP software, a crash in the shibd daemon, which prevents\n\t    access to protected resources until the daemon is restarted.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://shibboleth.net/community/advisories/secadv_20180803.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-03",
+    "entry": "2018-08-07"
+  }
+}

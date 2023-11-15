@@ -1,0 +1,31 @@
+{
+  "vid": "229577a8-0936-11db-bf72-00046151137e",
+  "topic": "phpmyadmin -- cross site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "2.8.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpmyadmin Site reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2006-4\">\n\t  <p>It was possible to craft a request that contains XSS by attacking\n\t    the \"table\" parameter.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2006-4",
+      "http://securitynews.ir/advisories/phpmyadmin281.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-06-30",
+    "entry": "2006-07-03",
+    "modified": "2007-10-16"
+  }
+}

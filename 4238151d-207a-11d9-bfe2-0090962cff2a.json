@@ -1,0 +1,68 @@
+{
+  "vid": "4238151d-207a-11d9-bfe2-0090962cff2a",
+  "topic": "mod_ssl -- SSLCipherSuite bypass",
+  "affects": [
+    {
+      "name": [
+        "ru-apache+mod_ssl"
+      ],
+      "range": [
+        {
+          "le": "1.3.31+30.20+2.8.18"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+mod_ssl"
+      ],
+      "range": [
+        {
+          "lt": "1.3.31+2.8.20"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache+mod_ssl+ipv6"
+      ],
+      "range": [
+        {
+          "le": "1.3.31+2.8.18_4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "apache2"
+      ],
+      "range": [
+        {
+          "le": "2.0.52_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>It is possible for clients to use any cipher suite configured by\n\t  the virtual host, whether or not a certain cipher suite is selected\n\t  for a specific directory.  This might result in clients using a\n\t  weaker encryption than originally configured.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://issues.apache.org/bugzilla/show_bug.cgi?id=31505"
+    ],
+    "cvename": [
+      "CVE-2004-0885"
+    ],
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=apache-modssl&m=109724918128044",
+        "msgid": "20041008152510.GE8385@redhat.com"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-10-01",
+    "entry": "2004-10-23"
+  }
+}

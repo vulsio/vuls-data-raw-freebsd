@@ -1,0 +1,35 @@
+{
+  "vid": "40856a51-e1d9-11d9-b875-0001020eed82",
+  "topic": "opera -- \"javascript:\" URL cross-site scripting vulnerability",
+  "affects": [
+    {
+      "name": [
+        "linux-opera",
+        "opera-devel",
+        "opera"
+      ],
+      "range": [
+        {
+          "lt": "8.01"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15411/\">\n\t  <p>Secunia Research has discovered a vulnerability in Opera,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks and to read local files.</p>\n\t  <p>The vulnerability is caused due to Opera not properly\n\t    restricting the privileges of \"javascript:\" URLs when\n\t    opened in e.g. new windows or frames.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/15411/",
+      "http://www.opera.com/freebsd/changelogs/801/#security"
+    ],
+    "cvename": [
+      "CVE-2005-1669"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-06-16",
+    "entry": "2005-06-20"
+  }
+}

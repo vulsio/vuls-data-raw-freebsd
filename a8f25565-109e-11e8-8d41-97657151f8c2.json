@@ -1,0 +1,33 @@
+{
+  "vid": "a8f25565-109e-11e8-8d41-97657151f8c2",
+  "topic": "uwsgi -- a stack-based buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "uwsgi"
+      ],
+      "range": [
+        {
+          "lt": "2.0.16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Uwsgi developers report:</p>\n\t<blockquote cite=\"http://lists.unbit.it/pipermail/uwsgi/2018-February/008835.html\">\n\t  <p>It was discovered that the uwsgi_expand_path function in utils.c in\n\t    Unbit uWSGI, an application container server, has a stack-based buffer\n\t    overflow via a large directory length that can cause a\n\t    denial-of-service (application crash) or stack corruption.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.unbit.it/pipermail/uwsgi/2018-February/008835.html",
+      "https://lists.debian.org/debian-lts-announce/2018/02/msg00010.html"
+    ],
+    "cvename": [
+      "CVE-2018-6758"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-02-06",
+    "entry": "2018-02-13"
+  }
+}

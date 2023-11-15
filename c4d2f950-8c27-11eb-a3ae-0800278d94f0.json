@@ -1,0 +1,32 @@
+{
+  "vid": "c4d2f950-8c27-11eb-a3ae-0800278d94f0",
+  "topic": "gitea -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.13.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea Team reports for release 1.13.6:</p>\n\t<blockquote cite=\"https://blog.gitea.io/2021/03/gitea-1.13.6-is-released/\">\n\t  <ul>\n\t    <li>Fix bug on avatar middleware</li>\n\t    <li>Fix another clusterfuzz identified issue</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/go-gitea/gitea/releases/tag/v1.13.5"
+    ],
+    "freebsd_pr": [
+      "ports/254515"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-03-21",
+    "entry": "2021-03-23"
+  }
+}

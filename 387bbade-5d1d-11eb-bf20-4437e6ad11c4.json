@@ -1,0 +1,32 @@
+{
+  "vid": "387bbade-5d1d-11eb-bf20-4437e6ad11c4",
+  "topic": "mutt -- denial of service",
+  "affects": [
+    {
+      "name": [
+        "mutt"
+      ],
+      "range": [
+        {
+          "lt": "2.0.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tavis Ormandy reports:</p>\n\t<blockquote cite=\"https://gitlab.com/muttmua/mutt/-/issues/323\">\n\t  <p>\n\t    rfc822.c in Mutt through 2.0.4 allows remote attackers to cause a\n\t    denial of service (mailbox unavailability) by sending email messages\n\t    with sequences of semicolon characters in RFC822 address fields\n\t    (aka terminators of empty groups). A small email message from the\n\t    attacker can cause large memory consumption, and the victim\n\t    may then be unable to see email messages from other persons.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://gitlab.com/muttmua/mutt/-/issues/323"
+    ],
+    "cvename": [
+      "CVE-2021-3181"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-01-17",
+    "entry": "2021-01-23"
+  }
+}

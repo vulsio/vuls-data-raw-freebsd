@@ -1,0 +1,32 @@
+{
+  "vid": "17f369dc-d7e7-11e1-90a2-000c299b62e1",
+  "topic": "nsd -- Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "nsd"
+      ],
+      "range": [
+        {
+          "lt": "3.2.13"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tom Hendrikx reports:</p>\n\t<blockquote cite=\"http://www.nlnetlabs.nl/downloads/CVE-2012-2979.txt\">\n\t  <p>It is possible to crash (SIGSEGV) a NSD child server process by\n\t     sending it a DNS packet from any host on the internet and the per\n\t     zone stats build option is enabled. A crashed child process will\n\t     automatically be restarted by the parent process, but an attacker\n\t     may keep the NSD server occupied restarting child processes by\n\t     sending it a stream of such packets effectively preventing the\n\t     NSD server to serve.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.nlnetlabs.nl/downloads/CVE-2012-2979.txt"
+    ],
+    "cvename": [
+      "CVE-2012-2979"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-07-27",
+    "entry": "2012-07-27"
+  }
+}

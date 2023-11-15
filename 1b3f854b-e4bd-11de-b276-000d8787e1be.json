@@ -1,0 +1,35 @@
+{
+  "vid": "1b3f854b-e4bd-11de-b276-000d8787e1be",
+  "topic": "freeradius -- remote packet of death vulnerability",
+  "affects": [
+    {
+      "name": [
+        "freeradius"
+      ],
+      "range": [
+        {
+          "lt": "1.1.8"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>freeRADIUS Vulnerability Notifications reports:</p>\n\t<blockquote cite=\"http://freeradius.org/security.html\">\n\t  <p>2009.09.09 v1.1.7 - Anyone who can send packets to\n\t    the server can crash it by sending a Tunnel-Password\n\t    attribute in an Access-Request packet. This\n\t    vulnerability is not otherwise exploitable. We have\n\t    released 1.1.8 to correct this vulnerability.</p>\n\t  <p>This issue is similar to the previous Tunnel-Password\n\t    issue noted below. The vulnerable versions are 1.1.3\n\t    through 1.1.7. Version 2.x is not affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3111",
+      "http://freeradius.org/security.html",
+      "http://www.milw0rm.com/exploits/9642"
+    ],
+    "cvename": [
+      "CVE-2009-3111"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-09-09",
+    "entry": "2009-12-14",
+    "modified": "2009-12-14"
+  }
+}

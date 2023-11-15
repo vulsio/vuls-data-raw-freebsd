@@ -1,0 +1,32 @@
+{
+  "vid": "3a1474ba-f646-11e9-b0af-b888e347c638",
+  "topic": "sudo -- Potential bypass of Runas user restrictions",
+  "affects": [
+    {
+      "name": [
+        "sudo"
+      ],
+      "range": [
+        {
+          "lt": "1.8.28"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Todd C. Miller reports:</p>\n       <blockquote cite=\"https://www.sudo.ws/alerts/minus_1_uid.html\">\n\t <p>When sudo is configured to allow a user to run commands as an\n\t  arbitrary user via the ALL keyword in a Runas specification, it\n\t  is possible to run commands as root by specifying the user ID -1\n\t  or 4294967295.</p>\n\t <p>This can be used by a user with sufficient sudo privileges to\n\t  run commands as root even if the Runas specification explicitly\n\t  disallows root access as long as the ALL keyword is listed first\n\t  in the Runas specification.</p>\n\t <p>Log entries for commands run this way will list the target user\n\t  as 4294967295 instead of root. In addition, PAM session modules\n\t  will not be run for the command.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.sudo.ws/alerts/minus_1_uid.html"
+    ],
+    "cvename": [
+      "CVE-2019-14287"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-15",
+    "entry": "2019-10-24"
+  }
+}

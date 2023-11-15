@@ -1,0 +1,58 @@
+{
+  "vid": "d5e0317e-5e45-11e2-a113-c48508086173",
+  "topic": "java 7.x -- security manager bypass",
+  "affects": [
+    {
+      "name": [
+        "openjdk7"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-sun-jdk"
+      ],
+      "range": [
+        {
+          "lt": "7.11",
+          "ge": "7.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-sun-jre"
+      ],
+      "range": [
+        {
+          "lt": "7.11",
+          "ge": "7.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/625617\">\n\t  <p>Java 7 Update 10 and earlier versions of Java 7 contain a\n\t    vulnerability that can allow a remote, unauthenticated\n\t    attacker to execute arbitrary code on a vulnerable\n\t    system.</p>\n\t  <p>The Java JRE plug-in provides its own Security Manager.\n\t    Typically, a web applet runs with a security manager\n\t    provided by the browser or Java Web Start plugin. Oracle's\n\t    document states, \"If there is a security manager already\n\t    installed, this method first calls the security manager's\n\t    checkPermission method with a\n\t    RuntimePermission(\"setSecurityManager\") permission to ensure\n\t    it's safe to replace the existing security manager.  This may\n\t    result in throwing a SecurityException\".</p>\n\t  <p>By leveraging the vulnerability in the Java Management\n\t    Extensions (JMX) MBean components, unprivileged Java code\n\t    can access restricted classes.  By using that vulnerability\n\t    in conjunction with a second vulnerability involving the\n\t    Reflection API and the invokeWithArguments method of the\n\t    MethodHandle class, an untrusted Java applet can escalate\n\t    its privileges by calling the the setSecurityManager()\n\t    function to allow full privileges, without requiring code\n\t    signing.  Oracle Java 7 update 10 and earlier Java 7 versions\n\t    are affected. The invokeWithArguments method was introduced\n\t    with Java 7, so therefore Java 6 is not affected.</p>\n\t  <p>This vulnerability is being attacked in the wild, and is\n\t    reported to be incorporated into exploit kits. Exploit code\n\t    for this vulnerability is also publicly available.</p>\n\t</blockquote>\n\t<p>Esteban Guillardoy from Immunity Inc. additionally clarifies\n\t  on the recursive reflection exploitation technique:</p>\n\t<blockquote cite=\"https://partners.immunityinc.com/idocs/Java%20MBeanInstantiator.findClass%200day%20Analysis.pdf\">\n\t  <p>The real issue is in the native\n\t    sun.reflect.Reflection.getCallerClass method.</p>\n\t  <p>We can see the following information in the Reflection\n\t    source code:</p>\n\t  <p>Returns the class of the method realFramesToSkip frames\n\t    up the stack (zero-based), ignoring frames associated with\n\t    java.lang.reflect.Method.invoke() and its\n\t    implementation.</p>\n\t  <p>So what is happening here is that they forgot to skip the\n\t  frames related to the new Reflection API and only the old\n\t  reflection API is taken into account.</p>\n\t</blockquote>\n\t<p>This exploit does not only affect Java applets, but every\n\t  piece of software that relies on the Java Security Manager for\n\t  sandboxing executable code is affected: malicious code can\n\t  totally disable Security Manager.</p>\n\t<p>For users who are running native Web browsers with enabled\n\t  Java plugin, the workaround is to remove the java/icedtea-web\n\t  port and restart all browser instances.</p>\n\t<p>For users who are running Linux Web browser flavors, the\n\t  workaround is either to disable the Java plugin in browser\n\t  or to upgrade linux-sun-* packages to the non-vulnerable\n\t  version.</p>\n\t<p>It is not recommended to run untrusted applets using\n\t  appletviewer, since this may lead to the execution of the\n\t  malicious code on vulnerable versions on JDK/JRE.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.oracle.com/technetwork/topics/security/alert-cve-2013-0422-1896849.html",
+      "https://partners.immunityinc.com/idocs/Java%20MBeanInstantiator.findClass%200day%20Analysis.pdf"
+    ],
+    "cvename": [
+      "CVE-2013-0433"
+    ],
+    "cert_vu": [
+      "625617"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-01-10",
+    "entry": "2013-01-14"
+  }
+}

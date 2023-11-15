@@ -1,0 +1,33 @@
+{
+  "vid": "3e8b7f8a-49b0-11e4-b711-6805ca0b3d42",
+  "topic": "phpMyAdmin -- XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "4.2.9.1",
+          "ge": "4.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-11.php\">\n\t  <p>With a crafted ENUM value it is possible to trigger an\n\t    XSS in table search and table structure pages. This\n\t    vulnerability can be triggered only by someone who is\n\t    logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    pages.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-11.php"
+    ],
+    "cvename": [
+      "CVE-2014-7217"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-10-01",
+    "entry": "2014-10-01"
+  }
+}

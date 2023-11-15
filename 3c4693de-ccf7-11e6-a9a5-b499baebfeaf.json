@@ -1,0 +1,42 @@
+{
+  "vid": "3c4693de-ccf7-11e6-a9a5-b499baebfeaf",
+  "topic": "phpmailer -- Remote Code Execution",
+  "affects": [
+    {
+      "name": [
+        "phpmailer"
+      ],
+      "range": [
+        {
+          "lt": "5.2.20"
+        }
+      ]
+    },
+    {
+      "name": [
+        "tt-rss"
+      ],
+      "range": [
+        {
+          "lt": "29.12.2016.04.37"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Legal Hackers reports:</p>\n\t<blockquote cite=\"https://legalhackers.com/advisories/PHPMailer-Exploit-Remote-Code-Exec-CVE-2016-10045-Vuln-Patch-Bypass.html\">\n\t  <p>An independent research uncovered a critical vulnerability in\n\t    PHPMailer that could potentially be used by (unauthenticated)\n\t    remote attackers to achieve remote arbitrary code execution in\n\t    the context of the web server user and remotely compromise the\n\t    target web application.</p>\n\t  <p>To exploit the vulnerability an attacker could target common\n\t    website components such as contact/feedback forms, registration\n\t    forms, password email resets and others that send out emails with\n\t    the help of a vulnerable version of the PHPMailer class.</p>\n\t  <p>The first patch of the vulnerability CVE-2016-10033 was incomplete.\n\t    This advisory demonstrates the bypass of the patch. The bypass allows\n\t    to carry out Remote Code Execution on all current versions (including\n\t    5.2.19).</p>\n\t  </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://legalhackers.com/advisories/PHPMailer-Exploit-Remote-Code-Exec-CVE-2016-10045-Vuln-Patch-Bypass.html"
+    ],
+    "cvename": [
+      "CVE-2016-10045"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-12-28",
+    "entry": "2016-12-28"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "vid": "9d15355b-ce7c-11e4-9db0-d050992ecde8",
+  "topic": "OpenSSL -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1_19",
+          "ge": "1.0.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mingw32-openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1m",
+          "ge": "1.0.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-c6-openssl"
+      ],
+      "range": [
+        {
+          "lt": "1.0.1e_4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libressl"
+      ],
+      "range": [
+        {
+          "le": "2.1.5_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.1_8",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_12",
+          "ge": "9.3"
+        },
+        {
+          "lt": "8.4_26",
+          "ge": "8.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv_20150319.txt\">\n\t  <ul>\n\t    <li>Reclassified: RSA silently downgrades to EXPORT_RSA\n\t      [Client] (CVE-2015-0204).  OpenSSL only.</li>\n\t    <li>Segmentation fault in ASN1_TYPE_cmp (CVE-2015-0286)</li>\n\t    <li>ASN.1 structure reuse memory corruption (CVE-2015-0287)</li>\n\t    <li>PKCS#7 NULL pointer dereferences (CVE-2015-0289)</li>\n\t    <li>Base64 decode (CVE-2015-0292).  OpenSSL only.</li>\n\t    <li>DoS via reachable assert in SSLv2 servers\n\t      (CVE-2015-0293).  OpenSSL only.</li>\n\t    <li>Use After Free following d2i_ECPrivatekey error\n\t      (CVE-2015-0209)</li>\n\t    <li>X509_to_X509_REQ NULL pointer deref (CVE-2015-0288)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openssl.org/news/secadv_20150319.txt"
+    ],
+    "cvename": [
+      "CVE-2015-0204",
+      "CVE-2015-0286",
+      "CVE-2015-0287",
+      "CVE-2015-0289",
+      "CVE-2015-0292",
+      "CVE-2015-0293",
+      "CVE-2015-0209",
+      "CVE-2015-0288"
+    ],
+    "freebsd_sa": [
+      "SA-15:06.openssl"
+    ],
+    "freebsd_pr": [
+      "ports/198681"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-03-19",
+    "entry": "2015-03-19",
+    "modified": "2016-08-09"
+  }
+}

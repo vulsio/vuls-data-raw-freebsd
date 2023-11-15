@@ -1,0 +1,113 @@
+{
+  "vid": "42c98cef-62b1-4b8b-9065-f4621e08d526",
+  "topic": "libvpx -- out-of-bounds write",
+  "affects": [
+    {
+      "name": [
+        "libvpx"
+      ],
+      "range": [
+        {
+          "lt": "1.4.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "33.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "firefox-esr"
+      ],
+      "range": [
+        {
+          "lt": "31.1.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "33.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.30"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "31.1.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.30"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "31.1.2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "31.1.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2014-77/\">\n\t  <p>Using the Address Sanitizer tool, security researcher\n\t    Abhishek Arya (Inferno) of the Google Chrome Security Team\n\t    found an out-of-bounds write when buffering WebM format\n\t    video containing frames with invalid tile sizes. This can\n\t    lead to a potentially exploitable crash during WebM video\n\t    playback.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/security/advisories/mfsa2014-77/",
+      "https://hg.mozilla.org/releases/mozilla-esr31/rev/6023f0b4f8ba"
+    ],
+    "cvename": [
+      "CVE-2014-1578"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-10-14",
+    "entry": "2015-08-12"
+  }
+}

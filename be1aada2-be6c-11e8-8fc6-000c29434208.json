@@ -1,0 +1,64 @@
+{
+  "vid": "be1aada2-be6c-11e8-8fc6-000c29434208",
+  "topic": "mediawiki -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "mediawiki127"
+      ],
+      "range": [
+        {
+          "lt": "1.27.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mediawiki129"
+      ],
+      "range": [
+        {
+          "le": "1.29.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mediawiki130"
+      ],
+      "range": [
+        {
+          "lt": "1.30.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mediawiki131"
+      ],
+      "range": [
+        {
+          "lt": "1.31.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mediawiki reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/pipermail/mediawiki-announce/2018-September/000223.html\">\n\t  <p>Security fixes:</p>\n\t  <p>T169545: $wgRateLimits entry for 'user' overrides 'newbie'.</p>\n\t    <p>T194605: BotPasswords can bypass CentralAuth's account lock.</p>\n\t    <p>T187638: When a log event is (partially) hidden Special:Redirect/logid\n\t     can link to the incorrect log and reveal hidden</p>\n\t    <p>T193237: Special:BotPasswords should require reauthenticate.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.wikimedia.org/pipermail/mediawiki-announce/2018-September/000223.html"
+    ],
+    "cvename": [
+      "CVE-2018-0503",
+      "CVE-2018-0505",
+      "CVE-2018-0504"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-08-29",
+    "entry": "2018-09-22"
+  }
+}

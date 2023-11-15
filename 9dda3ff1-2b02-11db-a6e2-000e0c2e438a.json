@@ -1,0 +1,35 @@
+{
+  "vid": "9dda3ff1-2b02-11db-a6e2-000e0c2e438a",
+  "topic": "x11vnc -- authentication bypass vulnerability",
+  "affects": [
+    {
+      "name": [
+        "x11vnc"
+      ],
+      "range": [
+        {
+          "lt": "0.8.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ludwig Nussel reports that x11vnc is vulnerable to an\n\t  authentication bypass vulnerability.\tThe vulnerability is\n\t  caused by an error in auth.c.  This could allow a remote\n\t  attacker to gain unauthorized and unauthenticated access\n\t  to the system.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.debian.org/376824"
+    ],
+    "cvename": [
+      "CVE-2006-2450"
+    ],
+    "bid": [
+      "18977"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-08-08",
+    "entry": "2006-08-13"
+  }
+}

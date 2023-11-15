@@ -1,0 +1,46 @@
+{
+  "vid": "83b38a2c-413e-11e5-bfcf-6805ca0b3d42",
+  "topic": "RT -- two XSS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "rt42"
+      ],
+      "range": [
+        {
+          "lt": "4.2.12",
+          "ge": "4.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rt40"
+      ],
+      "range": [
+        {
+          "lt": "4.0.24",
+          "ge": "4.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Best Practical reports:</p>\n\t<blockquote cite=\"http://blog.bestpractical.com/2015/08/security-vulnerabilities-in-rt.html\">\n\t  <p>RT 4.0.0 and above are vulnerable to a cross-site\n\t    scripting (XSS) attack via the user and group rights\n\t    management pages.  This vulnerability is assigned\n\t    CVE-2015-5475.  It was discovered and reported by Marcin\n\t    Kopec at Data Reliance Shared Service Center.</p>\n\t  <p>RT 4.2.0 and above are vulnerable to a cross-site\n\t    scripting (XSS) attack via the cryptography interface.\n\t    This vulnerability could allow an attacker with a\n\t    carefully-crafted key to inject JavaScript into RT's user\n\t    interface.  Installations which use neither GnuPG nor\n\t    S/MIME are unaffected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://blog.bestpractical.com/2015/08/security-vulnerabilities-in-rt.html"
+    ],
+    "cvename": [
+      "CVE-2015-5475",
+      "CVE-2015-6506"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-12",
+    "entry": "2015-08-12",
+    "modified": "2015-08-18"
+  }
+}

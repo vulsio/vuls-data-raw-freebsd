@@ -1,0 +1,34 @@
+{
+  "vid": "d193aa9f-3f8c-11e9-9a24-6805ca0b38e8",
+  "topic": "rssh - multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "rssh"
+      ],
+      "range": [
+        {
+          "lt": "2.3.4_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>NVD reports:</p>\n       <blockquote cite=\"https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe%3a%2fa%3apizzashack%3arssh%3a2.3.4\">\n\t<p>rssh version 2.3.4 contains a CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability in allowscp permission that can result in Local command execution. This attack appear to be exploitable via An authorized SSH user with the allowscp permission.</p>\n\t<p>Insufficient sanitization of arguments passed to rsync can bypass the restrictions imposed by rssh, a restricted shell that should restrict users to perform only rsync operations, resulting in the execution of arbitrary shell commands.</p>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&cves=on&cpe_version=cpe%3a%2fa%3apizzashack%3arssh%3a2.3.4"
+    ],
+    "cvename": [
+      "CVE-2019-1000018",
+      "CVE-2019-3463",
+      "CVE-2019-3464"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-04",
+    "entry": "2019-03-06"
+  }
+}

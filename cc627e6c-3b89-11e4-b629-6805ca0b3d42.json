@@ -1,0 +1,33 @@
+{
+  "vid": "cc627e6c-3b89-11e4-b629-6805ca0b3d42",
+  "topic": "phpMyAdmin -- XSRF/CSRF due to DOM based XSS in the micro history feature",
+  "affects": [
+    {
+      "name": [
+        "phpMyAdmin"
+      ],
+      "range": [
+        {
+          "lt": "4.2.8.1",
+          "ge": "4.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-10.php\">\n\t  <p>XSRF/CSRF due to DOM based XSS in the micro history feature.</p>\n\t  <p>By deceiving a logged-in user to click on a crafted URL,\n\t    it is possible to perform remote code execution and in some\n\t    cases, create a root account due to a DOM based XSS\n\t    vulnerability in the micro history feature.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-10.php"
+    ],
+    "cvename": [
+      "CVE-2014-6300"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-09-13",
+    "entry": "2014-09-13"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "7003b62d-7252-46ff-a9df-1b1900f1e65b",
+  "topic": "RabbitMQ -- Denial of Service via improper input validation",
+  "affects": [
+    {
+      "name": [
+        "rabbitmq"
+      ],
+      "range": [
+        {
+          "lt": "3.8.16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jonathon Knudsen of Synopsys Cybersecurity Research Center reports:</p>\n\t<blockquote cite=\"https://tanzu.vmware.com/security/cve-2021-22116\">\n      <p>All versions prior to 3.8.16 are prone to a denial of service\n\t  vulnerability due to improper input validation in AMQP 1.0 client\n\t  connection endpoint. A malicious client can exploit the vulnerability\n\t  by sending malicious AMQP messages to the target RabbitMQ instance\n\t  having the AMQP 1.0 plugin enabled.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://tanzu.vmware.com/security/cve-2021-22116",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22116"
+    ],
+    "cvename": [
+      "CVE-2021-22116"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-10",
+    "entry": "2021-06-28"
+  }
+}

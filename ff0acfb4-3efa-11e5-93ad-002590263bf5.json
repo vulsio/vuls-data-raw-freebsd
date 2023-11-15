@@ -1,0 +1,32 @@
+{
+  "vid": "ff0acfb4-3efa-11e5-93ad-002590263bf5",
+  "topic": "pcre -- heap overflow vulnerability in '(?|' situations",
+  "affects": [
+    {
+      "name": [
+        "pcre"
+      ],
+      "range": [
+        {
+          "le": "8.37_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Venustech ADLAB reports:</p>\n\t<blockquote cite=\"https://bugs.exim.org/show_bug.cgi?id=1667\">\n\t  <p>PCRE library is prone to a vulnerability which leads to Heap\n\t    Overflow. During the compilation of a malformed regular expression,\n\t    more data is written on the malloced block than the expected size\n\t    output by compile_regex. Exploits with advanced Heap Fengshui\n\t    techniques may allow an attacker to execute arbitrary code in the\n\t    context of the user running the affected application.</p>\n\t  <p>Latest version of PCRE is prone to a Heap Overflow vulnerability\n\t    which could caused by the following regular expression.</p>\n\t  <p>/(?J:(?|(:(?|(?'R')(\\k'R')|((?'R')))H'Rk'Rf)|s(?'R'))))/</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://bugs.exim.org/show_bug.cgi?id=1667"
+    ],
+    "freebsd_pr": [
+      "ports/202209"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-05",
+    "entry": "2015-08-10"
+  }
+}

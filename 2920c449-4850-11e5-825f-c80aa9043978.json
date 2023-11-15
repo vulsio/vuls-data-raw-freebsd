@@ -1,0 +1,57 @@
+{
+  "vid": "2920c449-4850-11e5-825f-c80aa9043978",
+  "topic": "OpenSSH -- PAM vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "openssh-portable"
+      ],
+      "range": [
+        {
+          "lt": "7.0.p1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "10.2_2",
+          "ge": "10.2"
+        },
+        {
+          "lt": "10.1_19",
+          "ge": "10.1"
+        },
+        {
+          "lt": "9.3_24",
+          "ge": "9.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<blockquote cite=\"http://www.openssh.com/txt/release-7.0\">\n\t  <p>OpenSSH 6.8 and 6.9 incorrectly set TTYs to be world-writable.\n\t    Local attackers may be able to write arbitrary messages to\n\t    logged-in users, including terminal escape sequences. Reported\n\t    by Nikolay Edigaryev.</p>\n\t  <p>Fixed a privilege separation\n\t    weakness related to PAM support. Attackers who could successfully\n\t    compromise the pre-authentication process for remote code\n\t    execution and who had valid credentials on the host could\n\t    impersonate other users.</p>\n\t  <p>Fixed a use-after-free bug\n\t    related to PAM support that was reachable by attackers who could\n\t    compromise the pre-authentication process for remote code\n\t    execution.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openssh.com/txt/release-7.0"
+    ],
+    "cvename": [
+      "CVE-2015-6563",
+      "CVE-2015-6564",
+      "CVE-2015-6565"
+    ],
+    "freebsd_sa": [
+      "SA-15:22.openssh"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-11",
+    "entry": "2015-08-21",
+    "modified": "2016-08-09"
+  }
+}

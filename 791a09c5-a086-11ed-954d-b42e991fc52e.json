@@ -1,0 +1,32 @@
+{
+  "vid": "791a09c5-a086-11ed-954d-b42e991fc52e",
+  "topic": "prometheus2 -- basic authentication bypass",
+  "affects": [
+    {
+      "name": [
+        "prometheus"
+      ],
+      "range": [
+        {
+          "lt": "0.8.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Prometheus team reports:</p>\n\t<blockquote cite=\"https://github.com/prometheus/exporter-toolkit/security/advisories/GHSA-7rg2-cxvp-9p7p\">\n\t<p>\n\t  Prometheus and its exporters can be secured by a web.yml file that\n\t  specifies usernames and hashed passwords for basic authentication.\n\t  Passwords are hashed with bcrypt, which means that even if you have\n\t  access to the hash, it is very hard to find the original password\n\t  back. Passwords are hashed with bcrypt, which means that even if you\n\t  have access to the hash, it is very hard to find the original\n\t  password back. However, a flaw in the way this mechanism was\n\t  implemented in the exporter toolkit makes it possible with people\n\t  who know the hashed password to authenticate against Prometheus.\n\t  A request can be forged by an attacker to poison the internal cache\n\t  used to cache the computation of hashes and make subsequent requests\n\t  successful. This cache is used in both happy and unhappy scenarios\n\t  in order to limit side channel attacks that could tell an attacker\n\t    if a user is present in the file or not.\n\t</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46146"
+    ],
+    "cvename": [
+      "CVE-2022-46146"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-28",
+    "entry": "2023-01-30"
+  }
+}

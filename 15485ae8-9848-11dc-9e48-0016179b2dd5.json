@@ -1,0 +1,34 @@
+{
+  "vid": "15485ae8-9848-11dc-9e48-0016179b2dd5",
+  "topic": "phpmyadmin -- Cross Site Scripting",
+  "affects": [
+    {
+      "name": [
+        "phpmyadmin"
+      ],
+      "range": [
+        {
+          "lt": "2.11.2.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>phpMyAdmin security announcement:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-8\">\n\t  <p>The login page auth_type cookie was vulnerable to XSS via\n\t    the convcharset parameter. An attacker could use this to\n\t    execute malicious code on the visitors computer</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-8",
+      "http://www.nth-dimension.org.uk/downloads.php?id=38"
+    ],
+    "cvename": [
+      "CVE-2007-6100"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-11-20",
+    "entry": "2007-11-21",
+    "modified": "2010-05-12"
+  }
+}

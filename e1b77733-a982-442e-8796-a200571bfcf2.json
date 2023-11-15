@@ -1,0 +1,38 @@
+{
+  "vid": "e1b77733-a982-442e-8796-a200571bfcf2",
+  "topic": "py-ansible -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py37-ansible",
+        "py38-ansible",
+        "py39-ansible",
+        "py310-ansible",
+        "py311-ansible"
+      ],
+      "range": [
+        {
+          "le": "7.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>abeluck reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2020-220\">\n      <p>A flaw was found in Ansible Base when using the aws_ssm connection plugin as garbage collector is not happening after playbook run is completed.</p>\n      <p>Files would remain in the bucket exposing the data.</p>\n      <p>This issue affects directly data confidentiality.</p>\n    </blockquote>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2020-221\">\n      <p>A flaw was found in Ansible Base when using the aws_ssm connection plugin as there is no namespace separation for file transfers.</p>\n      <p>Files are written directly to the root bucket, making possible to have collisions when running multiple ansible processes.</p>\n      <p>This issue affects mainly the service availability.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2020-220",
+      "https://osv.dev/vulnerability/PYSEC-2020-221"
+    ],
+    "cvename": [
+      "CVE-2020-25635",
+      "CVE-2020-25636"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-10-05",
+    "entry": "2023-04-10"
+  }
+}

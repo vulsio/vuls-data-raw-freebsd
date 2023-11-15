@@ -1,0 +1,120 @@
+{
+  "vid": "a1050b8b-6db3-11e1-8b37-0011856a6e37",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "10.0.3,1",
+          "gt": "4.0,1"
+        },
+        {
+          "lt": "3.6.28",
+          "ge": "3.6.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "10.0.3,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "10.0.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "2.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "10.0.3",
+          "gt": "4.0"
+        },
+        {
+          "lt": "3.1.20",
+          "gt": "3.1.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxul"
+      ],
+      "range": [
+        {
+          "lt": "1.9.2.28",
+          "gt": "1.9.2.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2012-13 XSS with Drag and Drop and Javascript: URL</p>\n\t  <p>MFSA 2012-14 SVG issues found with Address Sanitizer</p>\n\t  <p>MFSA 2012-15 XSS with multiple Content Security Policy headers</p>\n\t  <p>MFSA 2012-16 Escalation of privilege with Javascript: URL as home page</p>\n\t  <p>MFSA 2012-17 Crash when accessing keyframe cssText after dynamic modification</p>\n\t  <p>MFSA 2012-18 window.fullScreen writeable by untrusted content</p>\n\t  <p>MFSA 2012-19 Miscellaneous memory safety hazards (rv:11.0/ rv:10.0.3 / rv:1.9.2.28)</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2012/mfsa2012-13.html",
+      "http://www.mozilla.org/security/announce/2012/mfsa2012-14.html",
+      "http://www.mozilla.org/security/announce/2012/mfsa2012-15.html",
+      "http://www.mozilla.org/security/announce/2012/mfsa2012-16.html",
+      "http://www.mozilla.org/security/announce/2012/mfsa2012-17.html",
+      "http://www.mozilla.org/security/announce/2012/mfsa2012-18.html",
+      "http://www.mozilla.org/security/announce/2012/mfsa2012-19.html"
+    ],
+    "cvename": [
+      "CVE-2012-0451",
+      "CVE-2012-0455",
+      "CVE-2012-0456",
+      "CVE-2012-0457",
+      "CVE-2012-0458",
+      "CVE-2012-0459",
+      "CVE-2012-0460",
+      "CVE-2012-0461",
+      "CVE-2012-0462",
+      "CVE-2012-0463",
+      "CVE-2012-0464"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-03-13",
+    "entry": "2012-03-14",
+    "modified": "2012-03-18"
+  }
+}

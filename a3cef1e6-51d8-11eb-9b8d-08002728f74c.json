@@ -1,0 +1,33 @@
+{
+  "vid": "a3cef1e6-51d8-11eb-9b8d-08002728f74c",
+  "topic": "CairoSVG -- Regular Expression Denial of Service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "py36-cairosvg",
+        "py37-cairosvg",
+        "py38-cairosvg",
+        "py39-cairosvg"
+      ],
+      "range": [
+        {
+          "lt": "2.5.1",
+          "ge": "2.0.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CairoSVG security advisories:</p>\n\t<blockquote cite=\"https://github.com/Kozea/CairoSVG/security/advisories/GHSA-hq37-853p-g5cf\">\n\t  <p>When processing SVG files, the python package CairoSVG uses two regular\n\t    expressions which are vulnerable to Regular Expression Denial of Service\n\t    (REDoS).</p>\n\t  <p>If an attacker provides a malicious SVG, it can make cairosvg get stuck\n\t    processing the file for a very long time.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/Kozea/CairoSVG/security/advisories/GHSA-hq37-853p-g5cf"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-12-30",
+    "entry": "2021-01-10"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "vid": "632c98be-aad2-4af2-849f-41a6862afd6a",
+  "topic": "p5-Imager -- possibly exploitable buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "p5-Imager"
+      ],
+      "range": [
+        {
+          "lt": "0.57"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Imager 0.56 and all earlier versions with BMP support have\n\t  a security issue when reading compressed 8-bit per pixel BMP\n\t  files where either a compressed run of data or a literal run\n\t  of data overflows the scan-line.</p>\n\t<p>Such an overflow causes a buffer overflow in a malloc()\n\t  allocated memory buffer, possibly corrupting the memory arena\n\t  headers.</p>\n\t<p>The effect depends on your system memory allocator, with glibc\n\t  this typically results in an abort, but with other memory\n\t  allocators it may be possible to cause local code execution.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "https://rt.cpan.org/Public/Bug/Display.html?id=26811",
+      "http://ifsec.blogspot.com/2007/04/several-windows-image-viewers.html"
+    ],
+    "cvename": [
+      "CVE-2007-1942",
+      "CVE-2007-1943",
+      "CVE-2007-1946",
+      "CVE-2007-1948"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-04-04",
+    "entry": "2007-04-30",
+    "modified": "2010-05-12"
+  }
+}

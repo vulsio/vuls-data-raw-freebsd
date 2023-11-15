@@ -1,0 +1,30 @@
+{
+  "vid": "f87a9376-0943-11e6-8fc4-00a0986f28c4",
+  "topic": "phpmyfaq -- cross-site request forgery vulnerability",
+  "affects": [
+    {
+      "name": [
+        "phpmyfaq"
+      ],
+      "range": [
+        {
+          "lt": "2.8.27"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The phpMyFAQ team reports:</p>\n\t<blockquote cite=\"http://www.phpmyfaq.de/security/advisory-2016-04-11\">\n\t  <p>The vulnerability exists due to application does not properly\n\t    verify origin of HTTP requests in \"Interface Translation\"\n\t    functionality.: A remote unauthenticated attacker can create\n\t    a specially crafted malicious web page with CSRF exploit, trick\n\t    a logged-in administrator to visit the page, spoof the HTTP\n\t    request, as if it was coming from the legitimate user, inject\n\t    and execute arbitrary PHP code on the target system with privileges\n\t    of the webserver.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.phpmyfaq.de/security/advisory-2016-04-11",
+      "https://www.htbridge.com/advisory/HTB23300"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-04-11",
+    "entry": "2016-04-23"
+  }
+}

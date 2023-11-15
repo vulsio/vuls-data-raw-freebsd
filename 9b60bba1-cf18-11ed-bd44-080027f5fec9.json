@@ -1,0 +1,99 @@
+{
+  "vid": "9b60bba1-cf18-11ed-bd44-080027f5fec9",
+  "topic": "rubygem-uri -- ReDoS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ruby"
+      ],
+      "range": [
+        {
+          "lt": "2.7.8,1",
+          "ge": "2.7.0,1"
+        },
+        {
+          "lt": "3.0.6,1",
+          "ge": "3.0.0,1"
+        },
+        {
+          "lt": "3.1.4,1",
+          "ge": "3.1.0,1"
+        },
+        {
+          "lt": "3.2.2,1",
+          "ge": "3.2.0.p1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.8,1",
+          "ge": "2.7.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby30"
+      ],
+      "range": [
+        {
+          "lt": "3.0.6,1",
+          "ge": "3.0.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby31"
+      ],
+      "range": [
+        {
+          "lt": "3.1.4,1",
+          "ge": "3.1.0,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ruby32"
+      ],
+      "range": [
+        {
+          "lt": "3.2.2,1",
+          "ge": "3.2.0.p1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rubygem-uri"
+      ],
+      "range": [
+        {
+          "lt": "0.12.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dominic Couture reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2023/03/28/redos-in-uri-cve-2023-28755/\">\n\t  <p>\n\t    A ReDoS issue was discovered in the URI component. The URI\n\t    parser mishandles invalid URLs that have specific\n\t    characters. It causes an increase in execution time for\n\t    parsing strings to URI objects.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.ruby-lang.org/en/news/2023/03/28/redos-in-uri-cve-2023-28755/"
+    ],
+    "cvename": [
+      "CVE-2023-28755"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-28",
+    "entry": "2023-03-30"
+  }
+}

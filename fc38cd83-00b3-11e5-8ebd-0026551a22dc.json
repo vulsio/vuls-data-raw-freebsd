@@ -1,0 +1,76 @@
+{
+  "vid": "fc38cd83-00b3-11e5-8ebd-0026551a22dc",
+  "topic": "PostgreSQL -- minor security problems.",
+  "affects": [
+    {
+      "name": [
+        "postgresql90-server"
+      ],
+      "range": [
+        {
+          "lt": "9.0.20",
+          "ge": "9.0.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql91-server"
+      ],
+      "range": [
+        {
+          "lt": "9.1.16",
+          "ge": "9.1.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql92-server"
+      ],
+      "range": [
+        {
+          "lt": "9.2.11",
+          "ge": "9.2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql93-server"
+      ],
+      "range": [
+        {
+          "lt": "9.3.7",
+          "ge": "9.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "postgresql94-server"
+      ],
+      "range": [
+        {
+          "lt": "9.4.2",
+          "ge": "9.4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PostgreSQL project reports:</p>\n\t<blockquote cite=\"http://www.postgresql.org/about/news/1587/\">\n\t  <p>\n\t\tThis update fixes three security vulnerabilities reported in\n\t\tPostgreSQL over the past few months. Nether of these issues is seen as\n\t\tparticularly urgent. However, users should examine them in case their\n\t\tinstallations are vulnerable:.\n\t  </p>\n\t  <ul>\n\t    <li>CVE-2015-3165 Double \"free\" after authentication timeout.</li>\n\t    <li>CVE-2015-3166 Unanticipated errors from the standard library.</li>\n\t    <li>CVE-2015-3167 pgcrypto has multiple error messages for decryption with an incorrect key.</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2015-3165",
+      "CVE-2015-3166",
+      "CVE-2015-3167"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-10",
+    "entry": "2015-05-22"
+  }
+}

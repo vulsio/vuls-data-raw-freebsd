@@ -1,0 +1,95 @@
+{
+  "vid": "12b336c6-fe36-11dc-b09c-001c2514716c",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.13,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox",
+        "linux-firefox-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "1.1.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "flock",
+        "linux-flock"
+      ],
+      "range": [
+        {
+          "lt": "1.1.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey-devel"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.14"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports of multiple security issues\n\t  in Firefox, Seamonkey, and Thunderbird.  Several of these\n\t  issues can probably be used to run arbitrary code with the\n\t  privilege of the user running the program.</p>\n\t<blockquote cite=\"http://www.mozilla.org/projects/security/known-vulnerabilities.html\">\n\t  <ul>\n\t    <li><a href=\"/security/announce/2008/mfsa2008-19.html\">MFSA 2008-19</a>\n\t      XUL popup spoofing variant (cross-tab popups)</li>\n\t    <li><a href=\"/security/announce/2008/mfsa2008-18.html\">MFSA 2008-18</a>\n\t      Java socket connection to any local port via LiveConnect</li>\n\t    <li><a href=\"/security/announce/2008/mfsa2008-17.html\">MFSA 2008-17</a>\n\t      Privacy issue with SSL Client Authentication</li>\n\t    <li><a href=\"/security/announce/2008/mfsa2008-16.html\">MFSA 2008-16</a>\n\t      HTTP Referrer spoofing with malformed URLs</li>\n\t    <li><a href=\"/security/announce/2008/mfsa2008-15.html\">MFSA 2008-15</a>\n\t      Crashes with evidence of memory corruption (rv:1.8.1.13)</li>\n\t    <li><a href=\"/security/announce/2008/mfsa2008-14.html\">MFSA 2008-14</a>\n\t      JavaScript privilege escalation and arbitrary code execution</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2008-1241",
+      "CVE-2008-1240",
+      "CVE-2007-4879",
+      "CVE-2008-1238",
+      "CVE-2008-1236",
+      "CVE-2008-1237",
+      "CVE-2008-1233",
+      "CVE-2008-1234",
+      "CVE-2008-1235"
+    ],
+    "bid": [
+      "28448"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-03-26",
+    "entry": "2008-03-30",
+    "modified": "2009-12-12"
+  }
+}

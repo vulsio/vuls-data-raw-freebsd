@@ -1,0 +1,36 @@
+{
+  "vid": "d944719e-42f4-4864-89ed-f045b541919f",
+  "topic": "gtar -- Directory traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "gtar"
+      ],
+      "range": [
+        {
+          "lt": "1.18_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Red Hat reports:</p>\n\t<blockquote cite=\"http://rhn.redhat.com/errata/RHSA-2007-0860.html\">\n\t  <p>A path traversal flaw was discovered in the way GNU\n\t  tar extracted archives.  A malicious user could create a\n\t  tar archive that could write to arbitrary files to which\n\t  the user running GNU tar had write access.</p>\n\t</blockquote>\n\t<p>Red Hat credits Dmitry V. Levin for reporting the issue.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://rhn.redhat.com/errata/RHSA-2007-0860.html",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=251921"
+    ],
+    "cvename": [
+      "CVE-2007-4131"
+    ],
+    "bid": [
+      "25417"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-08-23",
+    "entry": "2007-09-01"
+  }
+}

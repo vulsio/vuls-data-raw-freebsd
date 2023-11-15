@@ -1,0 +1,49 @@
+{
+  "vid": "e195679d-045b-4953-bb33-be0073ba2ac6",
+  "topic": "libxml2 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libxml2"
+      ],
+      "range": [
+        {
+          "lt": "2.9.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Daniel Veillard reports:</p>\n\t<blockquote cite=\"https://mail.gnome.org/archives/xml/2016-May/msg00023.html\">\n\t  <p>More format string warnings with possible format string\n\t    vulnerability (David Kilzer)</p>\n\t  <p>Avoid building recursive entities (Daniel Veillard)</p>\n\t  <p>Heap-based buffer overread in htmlCurrentChar (Pranjal Jumde)</p>\n\t  <p>Heap-based buffer-underreads due to xmlParseName (David Kilzer)</p>\n\t  <p>Heap use-after-free in xmlSAX2AttributeNs (Pranjal Jumde)</p>\n\t  <p>Heap use-after-free in htmlParsePubidLiteral and\n\t    htmlParseSystemiteral (Pranjal Jumde)</p>\n\t  <p>Fix some format string warnings with possible format string\n\t    vulnerability (David Kilzer)</p>\n\t  <p>Detect change of encoding when parsing HTML names (Hugh Davenport)</p>\n\t  <p>Fix inappropriate fetch of entities content (Daniel Veillard)</p>\n\t  <p>Bug 759398: Heap use-after-free in xmlDictComputeFastKey\n\t    (Pranjal Jumde)</p>\n\t  <p>Bug 758605: Heap-based buffer overread in xmlDictAddString\n\t    (Pranjal Jumde)</p>\n\t  <p>Bug 758588: Heap-based buffer overread in\n\t    xmlParserPrintFileContextInternal (David Kilzer)</p>\n\t  <p>Bug 757711: heap-buffer-overflow in xmlFAParsePosCharGroup\n\t    (Pranjal Jumde)</p>\n\t  <p>Add missing increments of recursion depth counter to XML parser.\n\t    (Peter Simons)</p>\n\t  <p>Fix NULL pointer deref in XPointer range-to</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://mail.gnome.org/archives/xml/2016-May/msg00023.html",
+      "https://bugzilla.gnome.org/show_bug.cgi?id=759398",
+      "https://bugzilla.gnome.org/show_bug.cgi?id=758605",
+      "https://bugzilla.gnome.org/show_bug.cgi?id=758588",
+      "https://bugzilla.gnome.org/show_bug.cgi?id=757711",
+      "https://git.gnome.org/browse/libxml2/patch/?id=d8083bf77955b7879c1290f0c0a24ab8cc70f7fb"
+    ],
+    "cvename": [
+      "CVE-2016-1762",
+      "CVE-2016-1833",
+      "CVE-2016-1834",
+      "CVE-2016-1835",
+      "CVE-2016-1836",
+      "CVE-2016-1837",
+      "CVE-2016-1838",
+      "CVE-2016-1839",
+      "CVE-2016-1840",
+      "CVE-2016-3627",
+      "CVE-2016-3705",
+      "CVE-2016-4449",
+      "CVE-2016-4483"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-05-23",
+    "entry": "2016-08-28"
+  }
+}

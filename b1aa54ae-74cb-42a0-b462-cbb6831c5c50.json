@@ -1,0 +1,33 @@
+{
+  "vid": "b1aa54ae-74cb-42a0-b462-cbb6831c5c50",
+  "topic": "RabbitMQ -- Denial of Service in AMQP1.0 plugin",
+  "affects": [
+    {
+      "name": [
+        "rabbitmq"
+      ],
+      "range": [
+        {
+          "lt": "3.8.16"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Pivotal.io reports:</p>\n\t<blockquote cite=\"https://tanzu.vmware.com/security/cve-2021-22116\">\n\t<p>All versions prior to 3.8.16 are prone to a denial of\n\t   service vulnerability due to improper input validation\n\t   in AMQP 1.0 client connection endpoint.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://tanzu.vmware.com/security/cve-2021-22116",
+      "https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.19"
+    ],
+    "cvename": [
+      "CVE-2016-9877"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-10",
+    "entry": "2021-05-10"
+  }
+}

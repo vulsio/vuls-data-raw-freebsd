@@ -1,0 +1,36 @@
+{
+  "vid": "2acdf364-9f8d-4aaf-8d1b-867fdfd771c6",
+  "topic": "py-kerberos -- DoS and MitM vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py37-kerberos",
+        "py38-kerberos",
+        "py39-kerberos",
+        "py310-kerberos",
+        "py311-kerberos"
+      ],
+      "range": [
+        {
+          "le": "1.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>macosforgebot reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2017-49\">\n      <p>The checkPassword function in python-kerberos does not authenticate the KDC it attempts to communicate with, which allows remote attackers to cause a denial of service (bad response), or have other unspecified impact by performing a man-in-the-middle attack.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2017-49"
+    ],
+    "cvename": [
+      "CVE-2015-3206"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-08-25",
+    "entry": "2023-04-10"
+  }
+}

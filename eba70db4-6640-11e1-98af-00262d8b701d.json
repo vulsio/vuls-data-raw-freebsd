@@ -1,0 +1,37 @@
+{
+  "vid": "eba70db4-6640-11e1-98af-00262d8b701d",
+  "topic": "dropbear -- arbitrary code execution",
+  "affects": [
+    {
+      "name": [
+        "dropbear"
+      ],
+      "range": [
+        {
+          "lt": "2012.55",
+          "ge": "0.51"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Dropbear project reports:</p>\n\t<blockquote cite=\"http://xforce.iss.net/xforce/xfdb/73444\">\n\t  <p>Dropbear SSH Server could allow a remote authenticated attacker\n\t    to execute arbitrary code on the system, caused by a use-after-\n\t    free error.  If a command restriction is enforced, an attacker\n\t    could exploit this vulnerability to execute arbitrary code on\n\t    the system with root privileges.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/48147",
+      "http://xforce.iss.net/xforce/xfdb/73444"
+    ],
+    "cvename": [
+      "CVE-2012-0920"
+    ],
+    "bid": [
+      "52159"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-02-22",
+    "entry": "2012-03-04"
+  }
+}

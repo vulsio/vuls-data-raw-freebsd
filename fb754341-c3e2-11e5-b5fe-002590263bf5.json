@@ -1,0 +1,48 @@
+{
+  "vid": "fb754341-c3e2-11e5-b5fe-002590263bf5",
+  "topic": "wordpress -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "4.4.1,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "de-wordpress",
+        "ja-wordpress",
+        "ru-wordpress",
+        "zh-wordpress-zh_CN",
+        "zh-wordpress-zh_TW"
+      ],
+      "range": [
+        {
+          "lt": "4.4.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Aaron Jorbin reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/\">\n\t  <p>WordPress 4.4.1 is now available. This is a security release for\n\t    all previous versions and we strongly encourage you to update your\n\t    sites immediately.</p>\n\t  <p>WordPress versions 4.4 and earlier are affected by a cross-site\n\t    scripting vulnerability that could allow a site to be compromised.\n\t    This was reported by Crtc4L.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2016/01/08/3",
+      "https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/"
+    ],
+    "cvename": [
+      "CVE-2016-1564"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-06",
+    "entry": "2016-01-26",
+    "modified": "2016-03-08"
+  }
+}

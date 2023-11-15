@@ -1,0 +1,44 @@
+{
+  "vid": "f0fa19dd-c060-11dc-982e-001372fd0af2",
+  "topic": "drupal -- cross site scripting (register_globals)",
+  "affects": [
+    {
+      "name": [
+        "drupal5"
+      ],
+      "range": [
+        {
+          "lt": "5.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "drupal4"
+      ],
+      "range": [
+        {
+          "lt": "4.7.11"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/208565\">\n\t  <p>When theme .tpl.php files are accessible via the web and the PHP\n\t    setting register_globals is set to enabled, anonymous users are\n\t    able to execute cross site scripting attacks via specially\n\t    crafted links.</p>\n\t  <p>Drupal's .htaccess attempts to set register_globals to disabled\n\t    and also prevents access to .tpl.php files. Only when both these\n\t    measures are not effective and your PHP interpreter is\n\t    configured with register_globals set to enabled, will this issue\n\t    affect you.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://drupal.org/node/208565",
+      "http://secunia.com/advisories/28422/"
+    ],
+    "cvename": [
+      "CVE-2008-0274"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-01-10",
+    "entry": "2008-01-11",
+    "modified": "2010-05-12"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "vid": "a7dd4c2d-77e4-46de-81a2-c453c317f9de",
+  "topic": "couchdb -- user privilege escalation",
+  "affects": [
+    {
+      "name": [
+        "couchdb"
+      ],
+      "range": [
+        {
+          "lt": "3.1.2,2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Cory Sabol reports:</p>\n    <blockquote cite=\"https://docs.couchdb.org/en/stable/cve/2021-38295.html\">\n      <p>A malicious user with permission to create documents in a\n       database is able to attach a HTML attachment to a document.\n       If a CouchDB admin opens that attachment in a browser, e.g.\n       via the CouchDB admin interface Fauxton, any JavaScript code\n       embedded in that HTML attachment will be executed within the\n       security context of that admin. A similar route is available\n       with the already deprecated _show and _list functionality.\n\t  </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.couchdb.org/en/stable/cve/2021-38295.html"
+    ],
+    "cvename": [
+      "CVE-2021-39205"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-08-09",
+    "entry": "2021-10-12"
+  }
+}

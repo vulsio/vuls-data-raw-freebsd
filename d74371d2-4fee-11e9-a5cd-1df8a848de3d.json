@@ -1,0 +1,64 @@
+{
+  "vid": "d74371d2-4fee-11e9-a5cd-1df8a848de3d",
+  "topic": "Python -- NULL pointer dereference vulnerability",
+  "affects": [
+    {
+      "name": [
+        "python27"
+      ],
+      "range": [
+        {
+          "lt": "2.7.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python35"
+      ],
+      "range": [
+        {
+          "lt": "3.5.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python36"
+      ],
+      "range": [
+        {
+          "lt": "3.6.8_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "python37"
+      ],
+      "range": [
+        {
+          "lt": "3.7.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Python Changelog:</p>\n\t<blockquote cite=\"https://docs.python.org/3.7/whatsnew/changelog.html\">\n\t  <p>bpo-35746: [CVE-2019-5010] Fix a NULL pointer deref in ssl module. The\n\t    cert parser did not handle CRL distribution points with empty DP or URI\n\t    correctly. A malicious or buggy certificate can result into segfault.\n\t    Vulnerability (TALOS-2018-0758) reported by Colin Read and Nicolas Edet\n\t    of Cisco.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://docs.python.org/3.7/whatsnew/changelog.html",
+      "https://bugs.python.org/issue35746"
+    ],
+    "cvename": [
+      "CVE-2019-5010"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-01-15",
+    "entry": "2019-03-26",
+    "modified": "2019-03-27"
+  }
+}

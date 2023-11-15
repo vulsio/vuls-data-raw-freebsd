@@ -1,0 +1,30 @@
+{
+  "vid": "e917caba-e291-11e9-89f1-152fed202bb7",
+  "topic": "Exim -- heap-based buffer overflow in string_vformat leading to RCE",
+  "affects": [
+    {
+      "name": [
+        "exim"
+      ],
+      "range": [
+        {
+          "lt": "4.92.3",
+          "ge": "4.92"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Exim developers team report:</p>\n\t<blockquote cite=\"https://lists.exim.org/lurker/message/20190927.032457.c1044d4c.en.html\">\n\t  <p>There is a heap overflow in string_vformat().Using a EHLO message, remote code\nexecution seems to be possible.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.openwall.com/lists/oss-security/2019/09/28/1"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-09-28",
+    "entry": "2019-09-29"
+  }
+}

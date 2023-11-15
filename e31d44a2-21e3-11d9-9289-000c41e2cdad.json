@@ -1,0 +1,30 @@
+{
+  "vid": "e31d44a2-21e3-11d9-9289-000c41e2cdad",
+  "topic": "imwheel -- insecure handling of PID file",
+  "affects": [
+    {
+      "name": [
+        "imwheel"
+      ],
+      "range": [
+        {
+          "lt": "1.0.0.p12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Computer Academic Underground advisory describes the\n\t  consequences of imwheel's handling of the process ID file (PID\n\t  file):</p>\n\t<blockquote cite=\"http://www.caughq.org/advisories/CAU-2004-0002.txt\">\n\t  <p>imwheel exclusively uses a predictably named PID file for\n\t    management of multiple imwheel processes. A race condition\n\t    exists when the -k command-line option is used to kill\n\t    existing imwheel processes. This race condition may be\n\t    used by a local user to Denial of Service another user\n\t    using imwheel, lead to resource exhaustion of the host\n\t    system, or append data to arbitrary files.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.caughq.org/advisories/CAU-2004-0002.txt",
+      "http://imwheel.sourceforge.net/files/DEVELOPMENT.txt"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-08-20",
+    "entry": "2004-10-19"
+  }
+}

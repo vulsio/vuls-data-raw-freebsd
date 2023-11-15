@@ -1,0 +1,29 @@
+{
+  "vid": "a8af7d70-8007-11db-b280-0008743bf21a",
+  "topic": "kronolith -- arbitrary local file inclusion vulnerability",
+  "affects": [
+    {
+      "name": [
+        "kronolith"
+      ],
+      "range": [
+        {
+          "lt": "2.1.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>iDefense Labs reports:</p>\n\t<blockquote cite=\"http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=445\">\n\t  <p>Remote exploitation of a design error in Horde's Kronolith\n\t    could allow an authenticated web mail user to execute\n\t    arbitrary PHP code under the security context of the running\n\t    web server.</p>\n\t  <p>The vulnerability specifically exists due to a design error in the\n\t    way it includes certain files. Specifically, the 'lib/FBView.php'\n\t    file contains a function 'Kronolith_FreeBusy_View::factory' which\n\t    will include local files that are supplied via the 'view' HTTP GET\n\t    request parameter.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.horde.org/archives/announce/2006/000307.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-11-29",
+    "entry": "2006-11-30"
+  }
+}

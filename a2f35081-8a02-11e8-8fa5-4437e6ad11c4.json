@@ -1,0 +1,43 @@
+{
+  "vid": "a2f35081-8a02-11e8-8fa5-4437e6ad11c4",
+  "topic": "mutt -- remote code injection and path traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "mutt"
+      ],
+      "range": [
+        {
+          "lt": "1.10.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Kevin J. McCarthy reports:</p>\n\t<blockquote cite=\"http://lists.mutt.org/pipermail/mutt-announce/Week-of-Mon-20180716/000004.html\">\n\t  <p>Fixes a remote code injection vulnerability when \"subscribing\"\n\t     to an IMAP mailbox, either via $imap_check_subscribed, or via the\n\t     &lt;subscribe&gt; function in the browser menu.  Mutt was generating a\n\t     \"mailboxes\" command and sending that along to the muttrc parser.\n\t     However, it was not escaping \"`\", which executes code and inserts\n\t     the result.  This would allow a malicious IMAP server to execute\n\t     arbitrary code (for $imap_check_subscribed).</p>\n\t    <p>Fixes POP body caching path traversal vulnerability.</p>\n\t    <p>Fixes IMAP header caching path traversal vulnerability.</p>\n\t    <p>CVE-2018-14349 - NO Response Heap Overflow</p>\n\t    <p>CVE-2018-14350 - INTERNALDATE Stack Overflow</p>\n\t    <p>CVE-2018-14351 - STATUS Literal Length relative write</p>\n\t    <p>CVE-2018-14352 - imap_quote_string off-by-one stack overflow</p>\n\t    <p>CVE-2018-14353 - imap_quote_string int underflow</p>\n\t    <p>CVE-2018-14354 - imap_subscribe Remote Code Execution</p>\n\t    <p>CVE-2018-14355 - STATUS mailbox header cache directory traversal</p>\n\t    <p>CVE-2018-14356 - POP empty UID NULL deref</p>\n\t    <p>CVE-2018-14357 - LSUB Remote Code Execution</p>\n\t    <p>CVE-2018-14358 - RFC822.SIZE Stack Overflow</p>\n\t    <p>CVE-2018-14359 - base64 decode Stack Overflow</p>\n\t    <p>CVE-2018-14362 - POP Message Cache Directory Traversal</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.mutt.org/pipermail/mutt-announce/Week-of-Mon-20180716/000004.html"
+    ],
+    "cvename": [
+      "CVE-2018-14349",
+      "CVE-2018-14350",
+      "CVE-2018-14351",
+      "CVE-2018-14352",
+      "CVE-2018-14353",
+      "CVE-2018-14354",
+      "CVE-2018-14355",
+      "CVE-2018-14356",
+      "CVE-2018-14357",
+      "CVE-2018-14358",
+      "CVE-2018-14359",
+      "CVE-2018-14362"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-07-15",
+    "entry": "2018-07-17"
+  }
+}

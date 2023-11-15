@@ -1,0 +1,35 @@
+{
+  "vid": "ad82b0e9-c3d6-11e5-b5fe-002590263bf5",
+  "topic": "privoxy -- malicious server spoofing as proxy vulnerability",
+  "affects": [
+    {
+      "name": [
+        "privoxy"
+      ],
+      "range": [
+        {
+          "lt": "3.0.21"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Privoxy Developers reports:</p>\n\t<blockquote cite=\"http://www.privoxy.org/3.0.21/user-manual/whatsnew.html\">\n\t  <p>Proxy authentication headers are removed unless the new directive\n\t    enable-proxy-authentication-forwarding is used. Forwarding the\n\t    headers potentially allows malicious sites to trick the user into\n\t    providing them with login information. Reported by Chris John Riley.\n\t    </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.privoxy.org/3.0.21/user-manual/whatsnew.html"
+    ],
+    "cvename": [
+      "CVE-2013-2503"
+    ],
+    "freebsd_pr": [
+      "ports/176813"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-03-07",
+    "entry": "2016-01-26"
+  }
+}

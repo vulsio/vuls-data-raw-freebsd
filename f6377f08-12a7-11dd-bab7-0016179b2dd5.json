@@ -1,0 +1,36 @@
+{
+  "vid": "f6377f08-12a7-11dd-bab7-0016179b2dd5",
+  "topic": "php -- integer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "php5"
+      ],
+      "range": [
+        {
+          "lt": "5.2.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/28392/discuss\">\n\t  <p>Integer overflow in PHP 5.2.5 and earlier allows context-dependent\n\t    attackers to cause a denial of service and possibly have unspecified\n\t    other impact via a printf format parameter with a large width\n\t    specifier, related to the php_sprintf_appendstring function in\n\t    formatted_print.c and probably other functions for formatted strings\n\t    (aka *printf functions).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://securityreason.com/achievement_securityalert/52"
+    ],
+    "cvename": [
+      "CVE-2008-1384"
+    ],
+    "bid": [
+      "28392"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-03-21",
+    "entry": "2008-04-25",
+    "modified": "2008-05-02"
+  }
+}

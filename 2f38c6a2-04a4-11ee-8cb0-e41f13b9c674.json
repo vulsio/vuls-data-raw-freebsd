@@ -1,0 +1,42 @@
+{
+  "vid": "2f38c6a2-04a4-11ee-8cb0-e41f13b9c674",
+  "topic": "qpress -- directory traversal",
+  "affects": [
+    {
+      "name": [
+        "qpress"
+      ],
+      "range": [
+        {
+          "lt": "11.3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "xtrabackup8"
+      ],
+      "range": [
+        {
+          "lt": "8.0.32"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"https://github.com/EvgeniyPatlan/qpress/commit/ddb312090ebd5794e81bc6fb1dfb4e79eda48761\">\n\t  <p>qpress before PierreLvx/qpress 20220819 and before version 11.3,\n\tas used in Percona XtraBackup and other products, allows directory\n\ttraversal via ../ in a .qp file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2022-45866"
+    ],
+    "cvename": [
+      "CVE-2022-45866"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-11-23",
+    "entry": "2023-06-06"
+  }
+}

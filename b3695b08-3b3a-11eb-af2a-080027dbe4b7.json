@@ -1,0 +1,33 @@
+{
+  "vid": "b3695b08-3b3a-11eb-af2a-080027dbe4b7",
+  "topic": "glpi -- Public GLPIKEY can be used to decrypt any data",
+  "affects": [
+    {
+      "name": [
+        "glpi"
+      ],
+      "range": [
+        {
+          "lt": "9.4.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE Corporation reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5248\">\n\t  <p>GLPI before before version 9.4.6 has a vulnerability involving a default encryption key. GLPIKEY is public and is used on every instance. This means anyone can decrypt sensitive data stored using this key. It is possible to change the key before installing GLPI. But on existing instances, data must be reencrypted with the new key. Problem is we can not know which columns or rows in the database are using that; espcially from plugins. Changing the key without updating data would lend in bad password sent from glpi; but storing them again from the UI will work.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/glpi-project/glpi/security/advisories/GHSA-j222-j9mf-h6j9",
+      "https://github.com/glpi-project/glpi/commit/efd14468c92c4da43333aa9735e65fd20cbc7c6c"
+    ],
+    "cvename": [
+      "CVE-2020-5248"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-01-02",
+    "entry": "2020-01-02"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "0d369972-d4ba-11e7-bfca-005056925db4",
+  "topic": "borgbackup -- remote users can override repository restrictions",
+  "affects": [
+    {
+      "name": [
+        "py34-borgbackup",
+        "py35-borgbackup",
+        "py36-borgbackup"
+      ],
+      "range": [
+        {
+          "lt": "1.1.3",
+          "ge": "1.1.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>BorgBackup reports:</p>\n\t<blockquote cite=\"https://github.com/borgbackup/borg/blob/1.1.3/docs/changes.rst#version-113-2017-11-27\">\n\t  <p>Incorrect implementation of access controls allows remote users to\n\t    override repository restrictions in Borg servers. A user able to\n\t    access a remote Borg SSH server is able to circumvent access controls\n\t    post-authentication. Affected releases: 1.1.0, 1.1.1, 1.1.2. Releases\n\t    1.0.x are NOT affected.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/borgbackup/borg/blob/1.1.3/docs/changes.rst#version-113-2017-11-27"
+    ],
+    "cvename": [
+      "CVE-2017-15914"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-11-27",
+    "entry": "2017-11-29"
+  }
+}

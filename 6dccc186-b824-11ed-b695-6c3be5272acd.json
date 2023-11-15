@@ -1,0 +1,52 @@
+{
+  "vid": "6dccc186-b824-11ed-b695-6c3be5272acd",
+  "topic": "Grafana -- Stored XSS in text panel plugin",
+  "affects": [
+    {
+      "name": [
+        "grafana"
+      ],
+      "range": [
+        {
+          "lt": "9.2.10",
+          "ge": "9.2.0"
+        },
+        {
+          "lt": "9.3.4",
+          "ge": "9.3.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "grafana9"
+      ],
+      "range": [
+        {
+          "lt": "9.2.10",
+          "ge": "9.2.0"
+        },
+        {
+          "lt": "9.3.4",
+          "ge": "9.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/02/28/grafana-security-release-new-versions-with-security-fixes-for-cve-2023-0594-cve-2023-0507-and-cve-2023-22462/\">\n\t  <p>During an internal audit of Grafana on January 1, a member of the security\n\t  team found a stored XSS vulnerability affecting the core text plugin.</p>\n\t  <p>The stored XSS vulnerability requires several user interactions in order\n\t  to be fully exploited. The vulnerability was possible due to React’s render\n\t  cycle that will pass through the unsanitized HTML code, but in the next cycle,\n\t  the HTML is cleaned up and saved in Grafana’s database.</p>\n\t  <p>The CVSS score for this vulnerability is 6.4 Medium\n\t  (CVSS:6.4/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/grafana/grafana/security/advisories/GHSA-7rqg-hjwc-6mjf"
+    ],
+    "cvename": [
+      "CVE-2023-22462"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-01-01",
+    "entry": "2023-03-01"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "vid": "b51cfaea-e919-11ec-9fba-080027240888",
+  "topic": "py-numpy -- Missing return-value validation of the function PyArray_DescrNew",
+  "affects": [
+    {
+      "name": [
+        "py38-numpy",
+        "py39-numpy",
+        "py310-numpy"
+      ],
+      "range": [
+        {
+          "lt": "1.22.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Numpy reports:</p>\n\t<blockquote cite=\"https://github.com/numpy/numpy/pull/20960\">\n\t  <p>At most call-sites for PyArray_DescrNew, there are no validations of its return,\n\t    but an invalid address may be returned.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/numpy/numpy/pull/20960"
+    ],
+    "cvename": [
+      "CVE-2021-41495"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-19",
+    "entry": "2022-06-11"
+  }
+}

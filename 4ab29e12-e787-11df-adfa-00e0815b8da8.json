@@ -1,0 +1,35 @@
+{
+  "vid": "4ab29e12-e787-11df-adfa-00e0815b8da8",
+  "topic": "Mailman -- cross-site scripting in web interface",
+  "affects": [
+    {
+      "name": [
+        "mailman"
+      ],
+      "range": [
+        {
+          "lt": "2.1.14"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/41265\">\n\t  <p>Two vulnerabilities have been reported in Mailman, which\n\t    can be exploited by malicious users to conduct script\n\t    insertion attacks.</p>\n\t  <p>Certain input passed via the list descriptions is not\n\t    properly sanitised before being displayed to the user. This\n\t    can be exploited to insert arbitrary HTML and script code,\n\t    which will be executed in a user's browser session in context\n\t    of an affected site when the malicious data is being\n\t    viewed.</p>\n\t  <p>Successful exploitation requires \"list owner\" permissions.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/41265"
+    ],
+    "cvename": [
+      "CVE-2010-3089"
+    ],
+    "bid": [
+      "43187"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-09-14",
+    "entry": "2010-11-03"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "a9c51caf-6603-11db-ab90-000e35fd8194",
+  "topic": "mysql -- database suid privilege escalation",
+  "affects": [
+    {
+      "name": [
+        "mysql-server"
+      ],
+      "range": [
+        {
+          "lt": "5.1.12",
+          "ge": "5.1"
+        },
+        {
+          "lt": "5.0.25",
+          "ge": "5.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Dmitri Lenev reports a privilege escalation in\n\t  MySQL.  MySQL evaluates arguments of suid routines in the\n\t  security context of the routine's definer instead of the\n\t  routine's caller, which allows remote and local\n\t  authenticated users to gain privileges through a routine\n\t  that has been made available using GRANT EXECUTE.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bugs.mysql.com/bug.php?id=18630"
+    ],
+    "cvename": [
+      "CVE-2006-4227"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-03-29",
+    "entry": "2006-10-29",
+    "modified": "2006-10-30"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "aaedf196-6436-11e7-8b49-002590263bf5",
+  "topic": "codeigniter -- input validation bypass",
+  "affects": [
+    {
+      "name": [
+        "codeigniter"
+      ],
+      "range": [
+        {
+          "lt": "3.1.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The CodeIgniter changelog reports:</p>\n\t<blockquote cite=\"https://www.codeigniter.com/user_guide/changelog.html\">\n\t  <p>Form Validation Library rule valid_email could be bypassed if\n\t    idn_to_ascii() is available.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.codeigniter.com/user_guide/changelog.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-06-19",
+    "entry": "2017-07-08"
+  }
+}

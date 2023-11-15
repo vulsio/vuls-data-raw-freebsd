@@ -1,0 +1,45 @@
+{
+  "vid": "bfdbc7ec-9c3f-11e0-9bec-6c626dd55a41",
+  "topic": "Samba -- Denial of service - memory corruption",
+  "affects": [
+    {
+      "name": [
+        "samba34"
+      ],
+      "range": [
+        {
+          "lt": "3.4.12",
+          "gt": "3.4.*"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba35"
+      ],
+      "range": [
+        {
+          "lt": "3.5.7",
+          "gt": "3.5.*"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Samba team reports:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2011-0719.html\">\n\t  <p>Samba is vulnerable to a denial of service, caused by a memory\n\t    corruption error related to missing range checks on file\n\t    descriptors being used in the \"FD_SET\" macro.  By performing a\n\t    select on a bad file descriptor set, a remote attacker could\n\t    exploit this vulnerability to cause the application to crash or\n\t    possibly execute arbitrary code on the system.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.samba.org/samba/security/CVE-2011-0719.html",
+      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0719"
+    ],
+    "cvename": [
+      "CVE-2011-0719"
+    ]
+  },
+  "dates": {
+    "discovery": "2011-02-28",
+    "entry": "2011-06-21"
+  }
+}

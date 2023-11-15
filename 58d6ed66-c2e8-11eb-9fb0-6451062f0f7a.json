@@ -1,0 +1,34 @@
+{
+  "vid": "58d6ed66-c2e8-11eb-9fb0-6451062f0f7a",
+  "topic": "libX11 -- Arbitrary code execution",
+  "affects": [
+    {
+      "name": [
+        "libX11"
+      ],
+      "range": [
+        {
+          "lt": "1.7.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.freedesktop.org/archives/xorg/2021-May/060699.html\">\n\t  <p>XLookupColor() and other X libraries function lack proper validation\n\t    of the length of their string parameters. If those parameters can be\n\t    controlled by an external application (for instance a color name that\n\t    can be emitted via a terminal control sequence) it can lead to the\n\t    emission of extra X protocol requests to the X server.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://lists.freedesktop.org/archives/xorg/2021-May/060699.html",
+      "https://nvd.nist.gov/vuln/detail/CVE-2021-31535"
+    ],
+    "cvename": [
+      "CVE-2021-31535"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-11",
+    "entry": "2021-06-01",
+    "modified": "2022-02-08"
+  }
+}

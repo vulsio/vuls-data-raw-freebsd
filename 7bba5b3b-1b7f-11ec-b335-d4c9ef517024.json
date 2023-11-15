@@ -1,0 +1,32 @@
+{
+  "vid": "7bba5b3b-1b7f-11ec-b335-d4c9ef517024",
+  "topic": "mod_auth_mellon -- Redirect URL validation bypass",
+  "affects": [
+    {
+      "name": [
+        "mod_auth_mellon"
+      ],
+      "range": [
+        {
+          "lt": "0.18.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jakub Hrozek reports:</p>\n\t<blockquote cite=\"https://github.com/latchset/mod_auth_mellon/releases/tag/v0.18.0\">\n\t  <p>Version 0.17.0 and older of mod_auth_mellon allows the redirect URL\n\t    validation to be bypassed by specifying an URL formatted as\n\t    ///fishing-site.example.com/logout.html</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/latchset/mod_auth_mellon/releases/tag/v0.18.0"
+    ],
+    "cvename": [
+      "CVE-2019-13038"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-07-30",
+    "entry": "2021-09-22"
+  }
+}

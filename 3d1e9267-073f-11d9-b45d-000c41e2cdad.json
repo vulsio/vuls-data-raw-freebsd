@@ -1,0 +1,56 @@
+{
+  "vid": "3d1e9267-073f-11d9-b45d-000c41e2cdad",
+  "topic": "gdk-pixbuf -- image decoding vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "linux-gdk-pixbuf"
+      ],
+      "range": [
+        {
+          "lt": "0.22.0.11.3.5"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gtk"
+      ],
+      "range": [
+        {
+          "lt": "2.4.9_1",
+          "ge": "2.0"
+        }
+      ]
+    },
+    {
+      "name": [
+        "gdk-pixbuf"
+      ],
+      "range": [
+        {
+          "lt": "0.22.0_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chris Evans discovered several flaws in the gdk-pixbuf\n\t  XPM image decoder:</p>\n\t<ul>\n\t  <li>Heap-based overflow in pixbuf_create_from_xpm</li>\n\t  <li>Stack-based overflow in xpm_extract_color</li>\n\t  <li>Integer overflows in io-ico.c</li>\n\t</ul>\n\t<p>Some of these flaws are believed to be exploitable.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://scary.beasts.org/security/CESA-2004-005.txt"
+    ],
+    "cvename": [
+      "CVE-2004-0782",
+      "CVE-2004-0783",
+      "CVE-2004-0788"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-15",
+    "entry": "2004-09-15",
+    "modified": "2004-11-09"
+  }
+}

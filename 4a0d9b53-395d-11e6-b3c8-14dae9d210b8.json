@@ -1,0 +1,38 @@
+{
+  "vid": "4a0d9b53-395d-11e6-b3c8-14dae9d210b8",
+  "topic": "libarchive -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "libarchive"
+      ],
+      "range": [
+        {
+          "lt": "3.2.1,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Hanno Bock and Cisco Talos report:</p>\n\t<blockquote cite=\"http://openwall.com/lists/oss-security/2016/06/23/6\">\n\t  <ul>\n\t  <li><p>Out of bounds heap read in RAR parser</p></li>\n\t  <li><p>Signed integer overflow in ISO parser</p></li>\n\t  <li><p>TALOS-2016-0152 [CVE-2016-4300]: 7-Zip\n\t    read_SubStreamsInfo Integer Overflow</p></li>\n\t  <li><p>TALOS-2016-0153 [CVE-2016-4301]: mtree parse_device Stack\n\t    Based Buffer Overflow</p></li>\n\t  <li><p>TALOS-2016-0154 [CVE-2016-4302]: Libarchive Rar RestartModel\n\t    Heap Overflow</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://openwall.com/lists/oss-security/2016/06/23/6",
+      "https://github.com/libarchive/libarchive/issues/521",
+      "https://github.com/libarchive/libarchive/issues/717#event-697151157",
+      "http://blog.talosintel.com/2016/06/the-poisoned-archives.html"
+    ],
+    "cvename": [
+      "CVE-2015-8934",
+      "CVE-2016-4300",
+      "CVE-2016-4301",
+      "CVE-2016-4302"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-06-23",
+    "entry": "2016-06-23"
+  }
+}

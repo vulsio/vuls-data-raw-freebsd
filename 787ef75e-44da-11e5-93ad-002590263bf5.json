@@ -1,0 +1,66 @@
+{
+  "vid": "787ef75e-44da-11e5-93ad-002590263bf5",
+  "topic": "php5 -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php5",
+        "php5-openssl",
+        "php5-phar",
+        "php5-soap"
+      ],
+      "range": [
+        {
+          "lt": "5.4.44"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55",
+        "php55-openssl",
+        "php55-phar",
+        "php55-soap"
+      ],
+      "range": [
+        {
+          "lt": "5.5.28"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56",
+        "php56-openssl",
+        "php56-phar",
+        "php56-soap"
+      ],
+      "range": [
+        {
+          "lt": "5.6.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP project reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php\">\n\t  <p>Core:</p>\n\t  <ul>\n\t    <li>Fixed bug #69793 (Remotely triggerable stack exhaustion via\n\t      recursive method calls).</li>\n\t    <li>Fixed bug #70121 (unserialize() could lead to unexpected methods\n\t      execution / NULL pointer deref).</li>\n\t  </ul>\n\t  <p>OpenSSL:</p>\n\t  <ul>\n\t    <li>Fixed bug #70014 (openssl_random_pseudo_bytes() is not\n\t      cryptographically secure).</li>\n\t  </ul>\n\t  <p>Phar:</p>\n\t  <ul>\n\t    <li>Improved fix for bug #69441.</li>\n\t    <li>Fixed bug #70019 (Files extracted from archive may be placed\n\t      outside of destination directory).</li>\n\t  </ul>\n\t  <p>SOAP:</p>\n\t  <ul>\n\t    <li>Fixed bug #70081 (SoapClient info leak / null pointer\n\t      dereference via multiple type confusions).</li>\n\t  </ul>\n\t  <p>SPL:</p>\n\t  <ul>\n\t    <li>Fixed bug #70068 (Dangling pointer in the unserialization of\n\t      ArrayObject items).</li>\n\t    <li>Fixed bug #70166 (Use After Free Vulnerability in unserialize()\n\t      with SPLArrayObject).</li>\n\t    <li>Fixed bug #70168 (Use After Free Vulnerability in unserialize()\n\t      with SplObjectStorage).</li>\n\t    <li>Fixed bug #70169 (Use After Free Vulnerability in unserialize()\n\t      with SplDoublyLinkedList).</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://php.net/ChangeLog-5.php#5.4.44",
+      "http://php.net/ChangeLog-5.php#5.5.28",
+      "http://php.net/ChangeLog-5.php#5.6.12"
+    ],
+    "cvename": [
+      "CVE-2015-6831",
+      "CVE-2015-6832",
+      "CVE-2015-6833"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-08-06",
+    "entry": "2015-08-17",
+    "modified": "2015-09-08"
+  }
+}

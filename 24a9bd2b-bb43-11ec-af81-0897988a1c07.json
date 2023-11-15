@@ -1,0 +1,51 @@
+{
+  "vid": "24a9bd2b-bb43-11ec-af81-0897988a1c07",
+  "topic": "Composer -- Command injection vulnerability",
+  "affects": [
+    {
+      "name": [
+        "php74-composer",
+        "php80-composer",
+        "php81-composer"
+      ],
+      "range": [
+        {
+          "lt": "1.10.26"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php74-composer2",
+        "php80-composer2",
+        "php81-composer2"
+      ],
+      "range": [
+        {
+          "lt": "2.2.12",
+          "ge": "2.0.0"
+        },
+        {
+          "lt": "2.3.5",
+          "ge": "2.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Composer developers reports:</p>\n\t<blockquote cite=\"https://github.com/composer/composer/security/advisories/GHSA-x7cr-6qr6-2hh6\">\n\t  <p>The Composer method VcsDriver::getFileContent() with\n\t  user-controlled $file or $identifier arguments is susceptible\n\t  to an argument injection vulnerability. It can be leveraged\n\t  to gain arbitrary command execution if the Mercurial or\n\t  the Git driver are used.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/composer/composer/security/advisories/GHSA-x7cr-6qr6-2hh6"
+    ],
+    "cvename": [
+      "CVE-2022-24828"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-04-13",
+    "entry": "2022-04-13"
+  }
+}

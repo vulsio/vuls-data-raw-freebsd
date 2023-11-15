@@ -1,0 +1,32 @@
+{
+  "vid": "81da673e-dfe1-11e2-9389-08002798f6ff",
+  "topic": "apache-xml-security-c -- heap overflow during XPointer evaluation",
+  "affects": [
+    {
+      "name": [
+        "apache-xml-security-c"
+      ],
+      "range": [
+        {
+          "lt": "1.7.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://santuario.apache.org/secadv.data/CVE-2013-2210.txt\">\n\t  <p>The attempted fix to address CVE-2013-2154 introduced the\n\t  possibility of a heap overflow, possibly leading to arbitrary code\n\t  execution, in the processing of malformed XPointer expressions in the\n\t  XML Signature Reference processing code.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://santuario.apache.org/secadv.data/CVE-2013-2210.txt"
+    ],
+    "cvename": [
+      "CVE-2013-2210"
+    ]
+  },
+  "dates": {
+    "discovery": "2013-06-27",
+    "entry": "2013-06-28"
+  }
+}

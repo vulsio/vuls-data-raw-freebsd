@@ -1,0 +1,36 @@
+{
+  "vid": "d6c51737-a84b-11e5-8f5c-002590263bf5",
+  "topic": "librsvg2 -- denial of service vulnerability",
+  "affects": [
+    {
+      "name": [
+        "librsvg2"
+      ],
+      "range": [
+        {
+          "lt": "2.40.12"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Adam Maris, Red Hat Product Security, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/12/21/5\">\n\t  <p>CVE-2015-7558: Stack exhaustion due to cyclic dependency causing to\n\t    crash an application was found in librsvg2 while parsing SVG file.\n\t    It has been fixed in 2.40.12 by many commits that has rewritten the\n\t    checks for cyclic references.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2015/12/21/5",
+      "https://bugzilla.redhat.com/1268243"
+    ],
+    "cvename": [
+      "CVE-2015-7558"
+    ],
+    "freebsd_pr": [
+      "ports/205502"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-02",
+    "entry": "2015-12-22"
+  }
+}

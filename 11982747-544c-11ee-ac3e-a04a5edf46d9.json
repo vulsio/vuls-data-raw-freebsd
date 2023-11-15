@@ -1,0 +1,34 @@
+{
+  "vid": "11982747-544c-11ee-ac3e-a04a5edf46d9",
+  "topic": "routinator -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "routinator"
+      ],
+      "range": [
+        {
+          "lt": "0.12.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>NLnet Labs report:</p>\n\t<blockquote cite=\"https://nlnetlabs.nl/news/2023/Sep/13/routinator-0.12.2-released/\">\n\t  <p>This release fixes two issues in Routinator that can be exploited\n\t  remotely by rogue RPKI CAs and repositories. We therefore advise all\n\t  users of Routinator to upgrade to this release at their earliest\n\t  convenience.</p>\n\t  <p>The first issue, CVE-2022-39915, can lead to Routinator crashing\n\t  when trying to decode certain illegal RPKI objects.</p>\n\t  <p>The second issue, CVE-2022-39916, only affects users that have the\n\t  rrdp-keep-responses option enabled which allows storing all received\n\t  RRDP responses on disk. Because the file name for these responses is\n\t  derived from the URI and the path wasn't checked properly, a RRDP URI\n\tcould be constructed that results in the response stored outside the\n\tdirectory, possibly overwriting existing files.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nlnetlabs.nl/downloads/routinator/CVE-2023-39915.txt",
+      "https://nlnetlabs.nl/downloads/routinator/CVE-2023-39916.txt"
+    ],
+    "cvename": [
+      "CVE-2022-39915",
+      "CVE-2022-39916"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-12-08",
+    "entry": "2023-09-16"
+  }
+}

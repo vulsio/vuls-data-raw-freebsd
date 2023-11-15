@@ -1,0 +1,42 @@
+{
+  "vid": "47e2e52c-975c-11e7-942d-5404a68a61a2",
+  "topic": "emacs -- enriched text remote code execution vulnerability",
+  "affects": [
+    {
+      "name": [
+        "emacs25",
+        "emacs-nox11"
+      ],
+      "range": [
+        {
+          "lt": "25.3,3"
+        }
+      ]
+    },
+    {
+      "name": [
+        "emacs-devel"
+      ],
+      "range": [
+        {
+          "lt": "26.0.50.20170912,2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Paul Eggert reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2017/q3/422\">\n\t  <p>Charles A. Roelli has found a security flaw in the enriched mode in GNU Emacs.</p>\n\t  <p>When Emacs renders MIME text/enriched data (Internet RFC 1896), it\n\t  is vulnerable to arbitrary code execution. Since Emacs-based mail\n\t  clients decode \"Content-Type: text/enriched\", this code is exploitable\n\t  remotely. This bug affects GNU Emacs versions 19.29 through 25.2.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://seclists.org/oss-sec/2017/q3/422",
+      "https://bugs.gnu.org/28350"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-09-04",
+    "entry": "2017-09-12",
+    "modified": "2017-09-13"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vid": "ca982e2d-61a9-11ec-8be6-d4c9ef517024",
+  "topic": "Apache httpd -- Multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "apache24"
+      ],
+      "range": [
+        {
+          "lt": "2.4.52"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Apache httpd project reports:</p>\n\t<blockquote cite=\"https://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <p>moderate: Possible NULL dereference or SSRF in forward proxy\n\t    configurations in Apache HTTP Server 2.4.51 and earlier (CVE-2021-44224)\n\t    <br/>A crafted URI sent to httpd configured as a forward proxy\n\t    (ProxyRequests on) can cause a crash (NULL pointer dereference) or, for\n\t    configurations mixing forward and reverse proxy declarations, can allow\n\t    for requests to be directed to a declared Unix Domain Socket endpoint\n\t    (Server Side Request Forgery).</p>\n\t  <p>high: Possible buffer overflow when parsing multipart content in\n\t    mod_lua of Apache HTTP Server 2.4.51 and earlier (CVE-2021-44790)<br/>A\n\t    carefully crafted request body can cause a buffer overflow in the\n\t    mod_lua multipart parser (r:parsebody() called from Lua scripts).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://httpd.apache.org/security/vulnerabilities_24.html"
+    ],
+    "cvename": [
+      "CVE-2021-44224",
+      "CVE-2021-44790"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-12-20",
+    "entry": "2021-12-20"
+  }
+}

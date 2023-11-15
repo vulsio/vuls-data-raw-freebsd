@@ -1,0 +1,39 @@
+{
+  "vid": "a8c8001b-216c-11e7-80aa-005056925db4",
+  "topic": "dovecot -- Dovecot DoS when passdb dict was used for authentication",
+  "affects": [
+    {
+      "name": [
+        "dovecot",
+        "dovecot2"
+      ],
+      "range": [
+        {
+          "lt": "2.2.29",
+          "gt": "2.2.25_6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Timo Sirainen reports:</p>\n\t<blockquote cite=\"https://dovecot.org/list/dovecot-news/2017-April/000341.html\">\n\t  <p>passdb/userdb dict: Don't double-expand %variables in keys. If dict\n\t\twas used as the authentication passdb, using specially crafted\n\t   %variables in the username could be used to cause DoS.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2017-2669"
+    ],
+    "mlist": [
+      {
+        "text": "https://dovecot.org/list/dovecot-news/2017-April/000341.html"
+      },
+      {
+        "text": "https://dovecot.org/list/dovecot-news/2017-April/000342.html"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2016-12-01",
+    "entry": "2017-04-30"
+  }
+}

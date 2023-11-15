@@ -1,0 +1,33 @@
+{
+  "vid": "934b1de4-00d7-11da-bc08-0001020eed82",
+  "topic": "opera -- image dragging vulnerability",
+  "affects": [
+    {
+      "name": [
+        "linux-opera",
+        "opera-devel",
+        "opera"
+      ],
+      "range": [
+        {
+          "lt": "8.02"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15756/\">\n\t  <p>Secunia Research has discovered a vulnerability in Opera,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks and retrieve a user's\n\t    files.</p>\n\t  <p>The vulnerability is caused due to Opera allowing a user\n\t    to drag e.g. an image, which is actually a \"javascript:\"\n\t    URI, resulting in cross-site scripting if dropped over\n\t    another site. This may also be used to populate a file\n\t    upload form, resulting in uploading of arbitrary files to\n\t    a malicious web site.</p>\n\t  <p>Successful exploitation requires that the user is tricked\n\t    into dragging and dropping e.g. an image or a link.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/15756/",
+      "http://www.opera.com/freebsd/changelogs/802/"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-07-28",
+    "entry": "2005-07-30",
+    "modified": "2006-06-08"
+  }
+}

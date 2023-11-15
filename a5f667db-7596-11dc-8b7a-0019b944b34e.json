@@ -1,0 +1,32 @@
+{
+  "vid": "a5f667db-7596-11dc-8b7a-0019b944b34e",
+  "topic": "xfs -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "xfs"
+      ],
+      "range": [
+        {
+          "lt": "1.0.5,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Matthieu Herrb reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/xorg/2007-October/028899.html\">\n\t  <h1>Problem Description:</h1>\n\t  <p>Several vulnerabilities have been identified in xfs, the X font\n\t    server.  The QueryXBitmaps and QueryXExtents protocol requests\n\t    suffer from lack of validation of their 'length' parameters.</p>\n\t  <h1>Impact:</h1>\n\t  <p>On most modern systems, the font server is accessible only for\n\t    local clients and runs with reduced privileges, but on some\n\t    systems it may still be accessible from remote clients and\n\t    possibly running with root privileges, creating an opportunity\n\t    for remote privilege escalation.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://lists.freedesktop.org/archives/xorg/2007-October/028899.html"
+    ],
+    "cvename": [
+      "CVE-2007-4568"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-10-02",
+    "entry": "2007-10-08"
+  }
+}

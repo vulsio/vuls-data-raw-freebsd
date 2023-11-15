@@ -1,0 +1,32 @@
+{
+  "vid": "c682923d-b444-11ed-9268-b42e991fc52e",
+  "topic": "freerdp -- clients using `/parallel` command line switch might read uninitialized data",
+  "affects": [
+    {
+      "name": [
+        "freerdp"
+      ],
+      "range": [
+        {
+          "lt": "2.8.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>MITRE reports:</p>\n      <blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-39282\">\n\t<p>\n\t  FreeRDP based clients on unix systems using\n\t  `/parallel` command line switch might read uninitialized\n\t  data and send it to the server the client is currently\n\t  connected to. FreeRDP based server implementations are not\n\t  affected.\n\t</p>\n      </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-c45q-wcpg-mxjq"
+    ],
+    "cvename": [
+      "CVE-2022-39282"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-10-13",
+    "entry": "2023-02-24"
+  }
+}

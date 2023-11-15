@@ -1,0 +1,69 @@
+{
+  "vid": "5764c634-10d2-11e6-94fa-002590263bf5",
+  "topic": "php -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "php70",
+        "php70-bcmath",
+        "php70-exif",
+        "php70-gd",
+        "php70-xml"
+      ],
+      "range": [
+        {
+          "lt": "7.0.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php56",
+        "php56-bcmath",
+        "php56-exif",
+        "php56-gd",
+        "php56-xml"
+      ],
+      "range": [
+        {
+          "lt": "5.6.21"
+        }
+      ]
+    },
+    {
+      "name": [
+        "php55",
+        "php55-bcmath",
+        "php55-exif",
+        "php55-gd",
+        "php55-xml"
+      ],
+      "range": [
+        {
+          "lt": "5.5.35"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The PHP Group reports:</p>\n\t<blockquote cite=\"http://www.php.net/ChangeLog-5.php#5.5.35\">\n\t  <ul><li>BCMath:\n\t  <ul>\n\t    <li>Fixed bug #72093 (bcpowmod accepts negative scale and corrupts\n\t      _one_ definition).</li>\n\t  </ul></li>\n\t  <li>Exif:\n\t  <ul>\n\t    <li>Fixed bug #72094 (Out of bounds heap read access in exif header\n\t      processing).</li>\n\t  </ul></li>\n\t  <li>GD:\n\t  <ul>\n\t    <li>Fixed bug #71912 (libgd: signedness vulnerability).\n\t      (CVE-2016-3074)</li>\n\t  </ul></li>\n\t  <li>Intl:\n\t  <ul>\n\t    <li>Fixed bug #72061 (Out-of-bounds reads in zif_grapheme_stripos\n\t      with negative offset).</li>\n\t  </ul></li>\n\t  <li>XML:\n\t  <ul>\n\t    <li>Fixed bug #72099 (xml_parse_into_struct segmentation fault).\n\t      </li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.php.net/ChangeLog-7.php#7.0.6",
+      "http://www.php.net/ChangeLog-5.php#5.6.21",
+      "http://www.php.net/ChangeLog-5.php#5.5.35"
+    ],
+    "cvename": [
+      "CVE-2016-3074"
+    ],
+    "freebsd_pr": [
+      "ports/209145"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-04-28",
+    "entry": "2016-05-03"
+  }
+}

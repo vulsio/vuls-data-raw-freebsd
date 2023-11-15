@@ -1,0 +1,33 @@
+{
+  "vid": "70111759-1dae-11ea-966a-206a8a720317",
+  "topic": "spamassassin -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "spamassassin"
+      ],
+      "range": [
+        {
+          "lt": "3.4.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>the Apache Spamassassin project reports:</p>\n\t<blockquote cite=\"https://www.cybersecurity-help.cz/vdb/SB2019121311\">\n\t  <p>An input validation error of user-supplied input parsing\n\t    multipart emails. Specially crafted emails can consume all\n\t    resources on the system.</p>\n\t  <p>A local user is able to execute arbitrary shell commands\n\t     through specially crafted nefarious CF files.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.cybersecurity-help.cz/vdb/SB2019121311"
+    ],
+    "cvename": [
+      "CVE-2019-12420",
+      "CVE-2018-11805"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-12-11",
+    "entry": "2019-12-13"
+  }
+}

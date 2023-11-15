@@ -1,0 +1,53 @@
+{
+  "vid": "f93be979-a992-11d8-aecc-000d610a3b12",
+  "topic": "cvs pserver remote heap buffer overflow",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "5.2_7",
+          "ge": "5.2"
+        },
+        {
+          "lt": "5.1_17",
+          "ge": "5.1"
+        },
+        {
+          "lt": "5.0_21",
+          "ge": "5.0"
+        },
+        {
+          "lt": "4.9_8",
+          "ge": "4.9"
+        },
+        {
+          "lt": "4.8_21",
+          "ge": "4.8"
+        },
+        {
+          "lt": "4.7_27",
+          "ge": "4.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Due to a programming error in code used to parse data\n\t  received from the client, malformed data can cause a heap\n\t  buffer to overflow, allowing the client to overwrite\n\t  arbitrary portions of the server's memory.</p>\n\t<p>A malicious CVS client can exploit this to run arbitrary\n\t  code on the server at the privilege level of the CVS server\n\t  software.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2004-0396"
+    ],
+    "freebsd_sa": [
+      "SA-04:10.cvs"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-05-02",
+    "entry": "2004-05-19"
+  }
+}

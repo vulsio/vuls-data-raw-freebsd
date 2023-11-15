@@ -1,0 +1,51 @@
+{
+  "vid": "1b70bef4-649f-11d9-a30e-000a95bc6fae",
+  "topic": "libxine -- multiple buffer overflows in RTSP",
+  "affects": [
+    {
+      "name": [
+        "mplayer",
+        "mplayer-gtk",
+        "mplayer-gtk2",
+        "mplayer-esound",
+        "mplayer-gtk-esound",
+        "mplayer-gtk2-esound"
+      ],
+      "range": [
+        {
+          "lt": "0.99.4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "libxine"
+      ],
+      "range": [
+        {
+          "lt": "1.0.r4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A xine security announcement states:</p>\n\t<blockquote cite=\"http://xinehq.de/index.php/security/XSA-2004-3\">\n\t  <p>Multiple vulnerabilities have been found and fixed in the\n\t    Real-Time Streaming Protocol (RTSP) client for RealNetworks\n\t    servers, including a series of potentially remotely\n\t    exploitable buffer overflows. This is a joint advisory by\n\t    the MPlayer and xine teams as the code in question is common\n\t    to these projects.</p>\n\t  <p>Severity: High (arbitrary remote code execution under the\n\t    user ID running the player) when playing Real RTSP streams.\n\t    At this time, there is no known exploit for these\n\t    vulnerabilities.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xinehq.de/index.php/security/XSA-2004-3",
+      "http://xforce.iss.net/xforce/xfdb/16019"
+    ],
+    "cvename": [
+      "CVE-2004-0433"
+    ],
+    "bid": [
+      "10245"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-05-25",
+    "entry": "2005-01-12"
+  }
+}

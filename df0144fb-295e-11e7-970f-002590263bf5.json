@@ -1,0 +1,29 @@
+{
+  "vid": "df0144fb-295e-11e7-970f-002590263bf5",
+  "topic": "codeigniter -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "codeigniter"
+      ],
+      "range": [
+        {
+          "lt": "3.1.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The CodeIgniter changelog reports:</p>\n\t<blockquote cite=\"https://www.codeigniter.com/user_guide/changelog.html\">\n\t  <p>Fixed a header injection vulnerability in common function\n\t    set_status_header() under Apache (thanks to Guillermo Caminer from\n\t    Flowgate).</p>\n\t  <p>Fixed byte-safety issues in Encrypt Library (DEPRECATED) when\n\t    mbstring.func_overload is enabled.</p>\n\t  <p>Fixed byte-safety issues in Encryption Library when\n\t    mbstring.func_overload is enabled.</p>\n\t  <p>Fixed byte-safety issues in compatibility functions\n\t    password_hash(), hash_pbkdf2() when mbstring.func_overload is\n\t    enabled.</p>\n\t  <p>Updated Encrypt Library (DEPRECATED) to call mcrypt_create_iv()\n\t    with MCRYPT_DEV_URANDOM.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.codeigniter.com/user_guide/changelog.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-03-23",
+    "entry": "2017-04-25"
+  }
+}

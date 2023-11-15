@@ -1,0 +1,41 @@
+{
+  "vid": "8eed0c5c-3482-11eb-b87a-901b0ef719ab",
+  "topic": "FreeBSD -- ICMPv6 use-after-free in error message handling",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD-kernel"
+      ],
+      "range": [
+        {
+          "lt": "12.2_1",
+          "ge": "12.2"
+        },
+        {
+          "lt": "12.1_11",
+          "ge": "12.1"
+        },
+        {
+          "lt": "11.4_5",
+          "ge": "11.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When an ICMPv6 error message is received, the FreeBSD ICMPv6 stack\n\tmay extract information from the message to hand to upper-layer\n\tprotocols. As a part of this operation, it may parse IPv6 header\n\toptions from a packet embedded in the ICMPv6 message.</p>\n\t<p>The handler for a routing option caches a pointer into the packet\n\tbuffer holding the ICMPv6 message. However, when processing\n\tsubsequent options the packet buffer may be freed, rendering the\n\tcached pointer invalid. The network stack may later dereference the\n\tpointer, potentially triggering a use-after-free.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote host may be able to trigger a read of freed kernel memory.\n\tThis may trigger a kernel panic if the address had been unmapped.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2020-7469"
+    ],
+    "freebsd_sa": [
+      "SA-20:31.icmp6"
+    ]
+  },
+  "dates": {
+    "discovery": "2020-12-01",
+    "entry": "2020-12-02"
+  }
+}

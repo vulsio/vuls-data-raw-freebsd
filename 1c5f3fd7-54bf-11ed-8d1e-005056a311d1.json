@@ -1,0 +1,52 @@
+{
+  "vid": "1c5f3fd7-54bf-11ed-8d1e-005056a311d1",
+  "topic": "samba -- buffer overflow in Heimdal unwrap_des3()",
+  "affects": [
+    {
+      "name": [
+        "samba412"
+      ],
+      "range": [
+        {
+          "lt": "4.12.16"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba413"
+      ],
+      "range": [
+        {
+          "lt": "4.13.17_4"
+        }
+      ]
+    },
+    {
+      "name": [
+        "samba416"
+      ],
+      "range": [
+        {
+          "lt": "4.16.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2022-3437.html\">\n\t  <p>The DES (for Samba 4.11 and earlier) and Triple-DES decryption\n\t  routines in the Heimdal GSSAPI library allow a length-limited write\n\t  buffer overflow on malloc() allocated memory when presented with a\n\t  maliciously small packet.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.samba.org/samba/security/CVE-2022-3437.html"
+    ],
+    "cvename": [
+      "CVE-2022-3437"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-08-02",
+    "entry": "2022-10-25"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "vid": "2d9ad236-4d26-11db-b48d-00508d6a62df",
+  "topic": "freeciv -- Denial of Service Vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "freeciv",
+        "freeciv-gtk",
+        "freeciv-gtk2",
+        "freeciv-nox11"
+      ],
+      "range": [
+        {
+          "lt": "2.0.8_2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21171/\">\n\t  <p>Luigi Auriemma has reported a vulnerability in Freeciv,\n\t    which can be exploited by malicious people to cause a DoS\n\t    (Denial of Service).</p>\n\t  <p>An error in the \"generic_handle_player_attribute_chunk()\"\n\t    function in common/packets.c can be exploited to crash the\n\t    service via a specially crafted\n\t    PACKET_PLAYER_ATTRIBUTE_CHUNK packet sent to the server.</p>\n\t  <p>An error in the \"handle_unit_orders()\" function in\n\t    server/unithand.c can be exploited to crash the service\n\t    via a specially crafted packet.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/21171/",
+      "http://aluigi.altervista.org/adv/freecivx-adv.txt"
+    ],
+    "cvename": [
+      "CVE-2006-3913"
+    ],
+    "bid": [
+      "19117"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-07-23",
+    "entry": "2006-09-26"
+  }
+}

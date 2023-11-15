@@ -1,0 +1,35 @@
+{
+  "vid": "0e30e802-a9db-11dd-93a2-000bcdf0a03b",
+  "topic": "opera -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "opera",
+        "linux-opera"
+      ],
+      "range": [
+        {
+          "lt": "9.62"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Opera reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/906/\">\n\t  <p>When certain parameters are passed to Opera's History\n\t    Search, they can cause content not to be correctly\n\t    sanitized.  This can allow scripts to be injected into the\n\t    History Search results page.  Such scripts can then run with\n\t    elevated privileges and interact with Opera's configuration,\n\t    allowing them to execute arbitrary code.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/907/\">\n\t  <p>The links panel shows links in all frames on the current\n\t    page, including links with JavaScript URLs.  When a page is\n\t    held in a frame, the script is incorrectly executed on the\n\t    outermost page, not the page where the URL was located.\n\t    This can be used to execute scripts in the context of an\n\t    unrelated frame, which allows cross-site scripting.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.opera.com/support/search/view/906/",
+      "http://www.opera.com/support/search/view/907/"
+    ],
+    "cvename": [
+      "CVE-2008-4794"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-11-03",
+    "entry": "2008-11-03",
+    "modified": "2010-05-02"
+  }
+}

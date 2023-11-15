@@ -1,0 +1,36 @@
+{
+  "vid": "e4181981-ccf1-11ed-956f-7054d21a9e2a",
+  "topic": "py39-sqlalchemy10 -- multiple SQL Injection vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "py39-sqlalchemy10"
+      ],
+      "range": [
+        {
+          "lt": "1.3.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n    <p>21k reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2019-123\">\n      <p>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.</p>\n    </blockquote>\n    <p>nosecurity reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2019-124\">\n      <p>SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.</p>\n    </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://osv.dev/vulnerability/PYSEC-2019-123",
+      "https://osv.dev/vulnerability/PYSEC-2019-124",
+      "https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf",
+      "https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q"
+    ],
+    "cvename": [
+      "CVE-2019-7164",
+      "CVE-2019-7548"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-02-06",
+    "entry": "2023-03-28"
+  }
+}

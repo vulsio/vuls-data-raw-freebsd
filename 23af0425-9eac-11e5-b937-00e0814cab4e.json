@@ -1,0 +1,39 @@
+{
+  "vid": "23af0425-9eac-11e5-b937-00e0814cab4e",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "le": "1.641"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "le": "1.625.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-12-09\">\n\t  <h1>Description</h1>\n\t  <h5>SECURITY-95 / CVE-2015-7536 (Stored XSS vulnerability through workspace files and archived artifacts)</h5>\n\t  <p>In certain configurations, low privilege users were able to\n\t    create e.g. HTML files in workspaces and archived artifacts that\n\t    could result in XSS when accessed by other users. Jenkins now sends\n\t    Content-Security-Policy headers that enables sandboxing and\n\t    prohibits script execution by default.</p>\n\t  <h5>SECURITY-225 / CVE-2015-7537 (CSRF vulnerability in some administrative actions)</h5>\n\t  <p>Several administration/configuration related URLs could be\n\t    accessed using GET, which allowed attackers to circumvent CSRF\n\t    protection.</p>\n\t  <h5>SECURITY-233 / CVE-2015-7538 (CSRF protection ineffective)</h5>\n\t  <p>Malicious users were able to circumvent CSRF protection on any\n\t    URL by sending specially crafted POST requests.</p>\n\t  <h5>SECURITY-234 / CVE-2015-7539 (Jenkins plugin manager vulnerable to MITM attacks)</h5>\n\t  <p>While the Jenkins update site data is digitally signed, and the\n\t    signature verified by Jenkins, Jenkins did not verify the provided\n\t    SHA-1 checksums for the plugin files referenced in the update site\n\t    data. This enabled MITM attacks on the plugin manager, resulting\n\t    in installation of attacker-provided plugins.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-12-09"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-12-09",
+    "entry": "2015-12-09"
+  }
+}

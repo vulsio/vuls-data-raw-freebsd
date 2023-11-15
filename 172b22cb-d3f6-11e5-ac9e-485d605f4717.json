@@ -1,0 +1,42 @@
+{
+  "vid": "172b22cb-d3f6-11e5-ac9e-485d605f4717",
+  "topic": "firefox -- Same-origin-policy violation using Service Workers with plugins",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "44.0.2,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "44.0.2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/known-vulnerabilities/firefox/#firefox44.0.2\">\n\t  <p>MFSA 2016-13 Jason Pang of OneSignal reported that service workers intercept\n\t    responses to plugin network requests made through the browser. Plugins which\n\t    make security decisions based on the content of network requests can have these\n\t    decisions subverted if a service worker forges responses to those requests. For\n\t    example, a forged crossdomain.xml could allow a malicious site to violate the\n\t    same-origin policy using the Flash plugin.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.mozilla.org/en-US/security/advisories/mfsa2016-13/"
+    ],
+    "cvename": [
+      "CVE-2016-1949"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-02-11",
+    "entry": "2016-02-15"
+  }
+}

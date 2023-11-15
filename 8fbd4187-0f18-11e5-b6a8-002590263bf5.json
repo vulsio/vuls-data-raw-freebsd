@@ -1,0 +1,41 @@
+{
+  "vid": "8fbd4187-0f18-11e5-b6a8-002590263bf5",
+  "topic": "pgbouncer -- remote denial of service",
+  "affects": [
+    {
+      "name": [
+        "pgbouncer"
+      ],
+      "range": [
+        {
+          "lt": "1.5.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>PgBouncer reports:</p>\n\t<blockquote cite=\"https://pgbouncer.github.io/2015/04/pgbouncer-1-5-5/\">\n\t  <p>Fix remote crash - invalid packet order causes lookup of NULL pointer. Not\n\t    exploitable, just DoS.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://pgbouncer.github.io/2015/04/pgbouncer-1-5-5/"
+    ],
+    "cvename": [
+      "CVE-2015-4054"
+    ],
+    "freebsd_pr": [
+      "ports/200507"
+    ],
+    "mlist": [
+      {
+        "text": "http://www.openwall.com/lists/oss-security/2015/05/21/2"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2015-04-08",
+    "entry": "2015-06-10",
+    "modified": "2015-09-28"
+  }
+}

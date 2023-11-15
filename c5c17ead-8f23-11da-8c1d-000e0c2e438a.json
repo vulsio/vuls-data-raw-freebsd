@@ -1,0 +1,56 @@
+{
+  "vid": "c5c17ead-8f23-11da-8c1d-000e0c2e438a",
+  "topic": "cvsbug -- race condition",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "5.4_7",
+          "ge": "5.4"
+        },
+        {
+          "lt": "5.3_22",
+          "ge": "5.3"
+        },
+        {
+          "lt": "4.11_12",
+          "ge": "4.11"
+        },
+        {
+          "lt": "4.10_18",
+          "ge": "4.10"
+        }
+      ]
+    },
+    {
+      "name": [
+        "cvs+ipv6"
+      ],
+      "range": [
+        {
+          "lt": "1.11.17_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Problem description</p>\n\t<p>A temporary file is created, used, deleted, and then\n\t  re-created with the same name.  This creates a window during\n\t  which an attacker could replace the file with a link to\n\t  another file.  While cvsbug(1) is based on the send-pr(1)\n\t  utility, this problem does not exist in the version of\n\t  send-pr(1) distributed with FreeBSD.<br/>\n\t  In FreeBSD 4.10 and 5.3, some additional problems exist\n\t  concerning temporary file usage in both cvsbug(1) and\n\t  send-pr(1).</p>\n\t<p>Impact</p>\n\t<p>A local attacker could cause data to be written to any file\n\t  to which the user running cvsbug(1) (or send-pr(1) in FreeBSD\n\t  4.10 and 5.3) has write access.  This may cause damage in\n\t  itself (e.g., by destroying important system files or\n\t  documents) or may be used to obtain elevated privileges.</p>\n\t<p>Workaround</p>\n\t<p>Do not use the cvsbug(1) utility on any system with untrusted\n\t  users.<br/>\n\t  Do not use the send-pr(1) utility on a FreeBSD 4.10 or 5.3\n\t  system with untrusted users.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CAN-2005-2693"
+    ],
+    "freebsd_sa": [
+      "SA-05:20.cvsbug"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-09-07",
+    "entry": "2006-01-27",
+    "modified": "2006-11-08"
+  }
+}

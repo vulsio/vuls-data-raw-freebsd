@@ -1,0 +1,32 @@
+{
+  "vid": "a4955b32-ed84-11d9-8310-0001020eed82",
+  "topic": "wordpress -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "wordpress"
+      ],
+      "range": [
+        {
+          "lt": "1.5.1.2,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>A Gentoo Linux Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200506-04.xml\">\n\t  <p>Due to a lack of input validation, WordPress is\n\t    vulnerable to SQL injection and XSS attacks.</p>\n\t  <p>An attacker could use the SQL injection vulnerabilities to\n\t    gain information from the database. Furthermore the\n\t    cross-site scripting issues give an attacker the ability\n\t    to inject and execute malicious script code or to steal\n\t    cookie-based authentication credentials, potentially\n\t    compromising the victim's browser.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.gentoo.org/security/en/glsa/glsa-200506-04.xml"
+    ],
+    "cvename": [
+      "CVE-2005-1810"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-04-12",
+    "entry": "2005-07-05"
+  }
+}

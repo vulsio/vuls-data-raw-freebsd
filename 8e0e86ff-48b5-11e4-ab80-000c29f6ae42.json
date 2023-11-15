@@ -1,0 +1,43 @@
+{
+  "vid": "8e0e86ff-48b5-11e4-ab80-000c29f6ae42",
+  "topic": "rsyslog -- remote syslog PRI vulnerability",
+  "affects": [
+    {
+      "name": [
+        "rsyslog"
+      ],
+      "range": [
+        {
+          "lt": "7.6.7"
+        }
+      ]
+    },
+    {
+      "name": [
+        "rsyslog8"
+      ],
+      "range": [
+        {
+          "lt": "8.4.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The rsyslog project reports:</p>\n\t<blockquote cite=\"http://www.rsyslog.com/remote-syslog-pri-vulnerability/\">\n\t  <p>potential abort when a message with PRI &gt; 191 was processed\n\t    if the \"pri-text\" property was used in active templates,\n\t    this could be abused to a remote denial of service from\n\t    permitted senders</p>\n\t  <p>The original fix for CVE-2014-3634 was not adequate.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.rsyslog.com/remote-syslog-pri-vulnerability/"
+    ],
+    "cvename": [
+      "CVE-2014-3634"
+    ]
+  },
+  "dates": {
+    "discovery": "2014-09-30",
+    "entry": "2014-09-30",
+    "modified": "2014-10-02"
+  }
+}

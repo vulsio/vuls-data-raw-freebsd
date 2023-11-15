@@ -1,0 +1,37 @@
+{
+  "vid": "214e8e07-d369-11dd-b800-001b77d09812",
+  "topic": "vinagre -- format string vulnerability",
+  "affects": [
+    {
+      "name": [
+        "vinagre"
+      ],
+      "range": [
+        {
+          "lt": "0.5.2"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>CORE Security Technologies reports:</p>\n\t<blockquote cite=\"http://www.coresecurity.com/content/vinagre-format-string\">\n\t  <p>A format string error has been found on the\n\t    vinagre_utils_show_error() function that can be exploited via\n\t    commands issued from a malicious server containing format\n\t    string specifiers on the VNC name.</p>\n\t  <p>In a web based attack scenario, the user would be required\n\t    to connect to a malicious server. Successful exploitation\n\t    would then allow the attacker to execute arbitrary code with\n\t    the privileges of the Vinagre user.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.coresecurity.com/content/vinagre-format-string",
+      "http://ftp.gnome.org/pub/GNOME/sources/vinagre/0.5/vinagre-0.5.2.news"
+    ],
+    "cvename": [
+      "CVE-2008-5660"
+    ],
+    "bid": [
+      "32682"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-12-09",
+    "entry": "2008-12-31",
+    "modified": "2010-05-02"
+  }
+}

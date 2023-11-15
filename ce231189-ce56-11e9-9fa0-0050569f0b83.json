@@ -1,0 +1,29 @@
+{
+  "vid": "ce231189-ce56-11e9-9fa0-0050569f0b83",
+  "topic": "www/varnish6 -- Denial of Service",
+  "affects": [
+    {
+      "name": [
+        "varnish6"
+      ],
+      "range": [
+        {
+          "lt": "6.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Varnish Team reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00003.html\">\n\t  <p>A failure in HTTP/1 parsing can allow a remote attacker to trigger\n\t    an assertion in varnish, restarting the daemon and clearing the cache.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://varnish-cache.org/security/VSV00003.html"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-09-02",
+    "entry": "2019-09-03"
+  }
+}

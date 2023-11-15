@@ -1,0 +1,30 @@
+{
+  "vid": "1f935f61-075d-11db-822b-728b50d539a3",
+  "topic": "Joomla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "joomla"
+      ],
+      "range": [
+        {
+          "lt": "1.0.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Joomla Site reports:</p>\n\t<blockquote cite=\"http://www.joomla.org/content/view/1510/74/\">\n\t  <ul>\n\t    <li>Secured \"Remember Me\" functionality against SQL injection\n\t      attacks</li>\n\t    <li>Secured \"Related Items\" module against SQL injection\n\t      attacks</li>\n\t    <li>Secured \"Weblinks\" submission against SQL injection\n\t      attacks</li>\n\t    <li>Secured SEF from XSS vulnerability</li>\n\t    <li>Hardened frontend submission forms against spoofing</li>\n\t    <li>Secured mosmsg from misuse</li>\n\t    <li>Hardened mosgetparam by setting variable type to integer if\n\t      default value is detected as numeric</li>\n\t    <li>Secured com_messages from XSS vulnerability</li>\n\t    <li>Secured getUserStateFromRequest() from XSS vulnerability</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://secunia.com/advisories/20746/",
+      "http://www.joomla.org/content/view/1510/74/"
+    ]
+  },
+  "dates": {
+    "discovery": "2006-06-26",
+    "entry": "2006-06-30"
+  }
+}

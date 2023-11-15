@@ -1,0 +1,44 @@
+{
+  "vid": "ef2ffb03-f2b0-11db-ad25-0010b5a0a860",
+  "topic": "mod_perl -- remote DoS in PATH_INFO parsing",
+  "affects": [
+    {
+      "name": [
+        "mod_perl"
+      ],
+      "range": [
+        {
+          "lt": "1.30"
+        }
+      ]
+    },
+    {
+      "name": [
+        "mod_perl2"
+      ],
+      "range": [
+        {
+          "lt": "2.0.3_2,3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mandriva reports:</p>\n\t<blockquote cite=\"http://www.mandriva.com/security/advisories?name=MDKSA-2007:083\">\n\t  <p>PerlRun.pm in Apache mod_perl 1.29 and earlier, and\n\t    RegistryCooker.pm in mod_perl 2.x, does not properly escape\n\t    PATH_INFO before use in a regular expression, which allows remote\n\t    attackers to cause a denial of service (resource consumption) via a\n\t    crafted URI.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mandriva.com/security/advisories?name=MDKSA-2007:083",
+      "http://secunia.com/advisories/24839"
+    ],
+    "cvename": [
+      "CVE-2007-1349"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-03-29",
+    "entry": "2007-04-24",
+    "modified": "2007-06-27"
+  }
+}

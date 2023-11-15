@@ -1,0 +1,36 @@
+{
+  "vid": "cb13a765-a277-11eb-97a0-e09467587c17",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "90.0.4430.85"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Chrome Reelases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2021/04/stable-channel-update-for-desktop_20.html\">\n\t  <p>This release includes 7 security fixes, including:</p>\n\t  <ul>\n\t    <li>1194046] High CVE-2021-21222: Heap buffer overflow in V8.\n\t     Reported by Guang Gong of Alpha Lab, Qihoo 360 on 2021-03-30</li>\n\t    <li>[1195308] High CVE-2021-21223: Integer overflow in Mojo.\n\t      Reported by Guang Gong of Alpha Lab, Qihoo 360 on 2021-04-02</li>\n\t    <li>[1195777] High CVE-2021-21224: Type Confusion in V8. Reported\n\t      by Jose Martinez (tr0y4) from VerSprite Inc. on 2021-04-05</li>\n\t    <li>[1195977] High CVE-2021-21225: Out of bounds memory access in\n\t      V8. Reported by Brendon Tiszka (@btiszka) supporting the EFF on\n\t      2021-04-05</li>\n\t    <li>[1197904] High CVE-2021-21226: Use after free in navigation.\n\t      Reported by Brendon Tiszka (@btiszka) supporting the EFF on\n\t      2021-04-11</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2021/04/stable-channel-update-for-desktop_20.html"
+    ],
+    "cvename": [
+      "CVE-2021-21222",
+      "CVE-2021-21223",
+      "CVE-2021-21224",
+      "CVE-2021-21225",
+      "CVE-2021-21226"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-04-20",
+    "entry": "2021-04-21"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vid": "8eefa87f-31f1-496d-bf8e-2b465b6e4e8a",
+  "topic": "zeek -- potential DoS vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "zeek"
+      ],
+      "range": [
+        {
+          "lt": "6.0.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v6.0.1\">\n\t  <p> File extraction limits were not correctly enforced\n\t  for files containing large amounts of missing bytes. </p>\n\t  <p> Sessions are sometimes not cleaned up completely\n\t  within Zeek during shutdown, potentially causing a crash\n\t  when using the -B dpd flag for debug logging. </p>\n\t  <p> A specially-crafted HTTP packet can cause Zeek's\n\t  filename extraction code to take a long time to process\n\t  the data. </p>\n\t  <p> A specially-crafted series of FTP packets made up of\n\t  a CWD request followed by a large amount of ERPT requests\n\t  may cause Zeek to spend a long time logging the commands.\n\t  </p>\n\t  <p> A specially-crafted VLAN packet can cause Zeek to\n\t  overflow memory and potentially crash. </p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/zeek/zeek/releases/tag/v6.0.1"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-09-12",
+    "entry": "2023-09-12"
+  }
+}

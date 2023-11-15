@@ -1,0 +1,32 @@
+{
+  "vid": "95a69d1a-52a5-11e2-a289-1c4bd681f0cf",
+  "topic": "otrs -- XSS vulnerability in Firefox and Opera",
+  "affects": [
+    {
+      "name": [
+        "otrs"
+      ],
+      "range": [
+        {
+          "lt": "3.1.10"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>OTRS Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.otrs.com/open-source/community-news/security-advisories/security-advisory-2012-02/\">\n\t  <p>This advisory covers vulnerabilities discovered in the OTRS core\nsystem. This is a variance of the XSS vulnerability, where an attacker could\nsend a specially prepared HTML email to OTRS which would cause JavaScript code\nto be executed in your browser while displaying the email in Firefox and Opera.\nIn this case this is achieved with an invalid HTML structure with nested tags.\n</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.otrs.com/open-source/community-news/security-advisories/security-advisory-2012-02/"
+    ],
+    "cvename": [
+      "CVE-2012-4600"
+    ]
+  },
+  "dates": {
+    "discovery": "2012-08-30",
+    "entry": "2012-12-30"
+  }
+}

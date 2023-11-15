@@ -1,0 +1,41 @@
+{
+  "vid": "41af0277-47bf-11ee-8e38-002590c1f29c",
+  "topic": "FreeBSD -- Network authentication attack via pam_krb5",
+  "affects": [
+    {
+      "name": [
+        "FreeBSD"
+      ],
+      "range": [
+        {
+          "lt": "13.2_1",
+          "ge": "13.2"
+        },
+        {
+          "lt": "13.1_8",
+          "ge": "13.1"
+        },
+        {
+          "lt": "12.4_3",
+          "ge": "12.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>pam_krb5 authenticates the user by essentially running kinit(1) with\n\tthe password, getting a `ticket-granting ticket' (tgt) from the Kerberos\n\tKDC (Key Distribution Center) over the network, as a way to verify the\n\tpassword.</p>\n\t<p>Normally, the system running the pam_krb5 module will also have a\n\tkeytab, a key provisioned by the KDC. The pam_krb5 module will use the\n\ttgt to get a service ticket and validate it against the keytab, ensuring\n\tthe tgt is valid and therefore, the password is valid.</p>\n\t<p>However, if a keytab is not provisioned on the system, pam_krb5 has\n\tno way to validate the response from the KDC, and essentially trusts the\n\ttgt provided over the network as being valid.</p>\n\t<h1>Impact:</h1>\n\t<p>In a non-default FreeBSD installation that leverages pam_krb5 for\n\tauthentication and does not have a keytab provisioned, an attacker that\n\tis able to control both the password and the KDC responses can return a\n\tvalid tgt, allowing authentication to occur for any user on the\n\tsystem.</p>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2023-3326"
+    ],
+    "freebsd_sa": [
+      "SA-23:04.pam_krb5"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-06-21",
+    "entry": "2023-08-31"
+  }
+}

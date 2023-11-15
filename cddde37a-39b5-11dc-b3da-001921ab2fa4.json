@@ -1,0 +1,42 @@
+{
+  "vid": "cddde37a-39b5-11dc-b3da-001921ab2fa4",
+  "topic": "dokuwiki -- XSS vulnerability in spellchecker backend",
+  "affects": [
+    {
+      "name": [
+        "dokuwiki"
+      ],
+      "range": [
+        {
+          "lt": "20070626_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "dokuwiki-devel"
+      ],
+      "range": [
+        {
+          "lt": "20070524_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>DokuWiki reports:</p>\n\t<blockquote cite=\"http://bugs.splitbrain.org/index.php?do=details&amp;task_id=1195\">\n\t  <p>The spellchecker tests the UTF-8 capabilities of the used browser\n\t    by sending an UTF-8 string to the backend, which will send it back\n\t    unfiltered.  By comparing string length the spellchecker can work\n\t    around broken implementations. An attacker could construct a form to\n\t    let users send JavaScript to the spellchecker backend, resulting in\n\t    malicious JavaScript being executed in their browser.</p>\n\t  <p>Affected are all versions up to and including 2007-06-26 even when\n\t    the spell checker is disabled.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://xforce.iss.net/xforce/xfdb/35501"
+    ],
+    "cvename": [
+      "CVE-2007-3930"
+    ]
+  },
+  "dates": {
+    "discovery": "2007-06-26",
+    "entry": "2007-07-24"
+  }
+}

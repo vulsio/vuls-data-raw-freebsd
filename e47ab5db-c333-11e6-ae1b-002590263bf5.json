@@ -1,0 +1,37 @@
+{
+  "vid": "e47ab5db-c333-11e6-ae1b-002590263bf5",
+  "topic": "atheme-services -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "atheme-services"
+      ],
+      "range": [
+        {
+          "lt": "7.2.7"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9773\">\n\t  <p>modules/chanserv/flags.c in Atheme before 7.2.7 allows remote\n\t    attackers to modify the Anope FLAGS behavior by registering and\n\t    dropping the (1) LIST, (2) CLEAR, or (3) MODIFY keyword nicks.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4478\">\n\t  <p>Buffer overflow in the xmlrpc_char_encode function in\n\t    modules/transport/xmlrpc/xmlrpclib.c in Atheme before 7.2.7 allows\n\t    remote attackers to cause a denial of service via vectors related\n\t    to XMLRPC response encoding.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/atheme/atheme/commit/87580d767868360d2fed503980129504da84b63e",
+      "https://github.com/atheme/atheme/commit/c597156adc60a45b5f827793cd420945f47bc03b"
+    ],
+    "cvename": [
+      "CVE-2014-9773",
+      "CVE-2016-4478"
+    ],
+    "freebsd_pr": [
+      "ports/209217"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-01-09",
+    "entry": "2016-12-16"
+  }
+}

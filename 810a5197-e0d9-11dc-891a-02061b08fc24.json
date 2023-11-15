@@ -1,0 +1,98 @@
+{
+  "vid": "810a5197-e0d9-11dc-891a-02061b08fc24",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.12,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox",
+        "linux-firefox-devel"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.12"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "1.1.8"
+        }
+      ]
+    },
+    {
+      "name": [
+        "flock",
+        "linux-flock"
+      ],
+      "range": [
+        {
+          "lt": "1.0.9"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-seamonkey-devel"
+      ],
+      "range": [
+        {
+          "gt": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports of multiple security issues\n\t  in Firefox, Seamonkey, and Thunderbird.  Several of these\n\t  issues can probably be used to run arbitrary code with the\n\t  privilege of the user running the program.</p>\n\t<blockquote cite=\"http://www.mozilla.org/projects/security/known-vulnerabilities.html\">\n\t  <ul>\n\t    <li>Web forgery overwrite with div overlay</li>\n\t    <li>URL token stealing via stylesheet redirect</li>\n\t    <li>Mishandling of locally-saved plain text files</li>\n\t    <li>File action dialog tampering</li>\n\t    <li>Possible information disclosure in BMP decoder</li>\n\t    <li>Web browsing history and forward navigation stealing</li>\n\t    <li>Directory traversal via chrome: URI</li>\n\t    <li>Stored password corruption</li>\n\t    <li>Privilege escalation, XSS, Remote Code Execution</li>\n\t    <li>Multiple file input focus stealing vulnerabilities</li>\n\t    <li>Crashes with evidence of memory corruption (rv:1.8.1.12)</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/projects/security/known-vulnerabilities.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-01.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-02.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-03.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-04.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-05.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-06.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-07.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-08.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-09.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-10.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-11.html"
+    ],
+    "cvename": [
+      "CVE-2008-0412",
+      "CVE-2008-0413",
+      "CVE-2008-0414",
+      "CVE-2008-0415",
+      "CVE-2008-0417",
+      "CVE-2008-0418",
+      "CVE-2008-0419",
+      "CVE-2008-0420",
+      "CVE-2008-0591",
+      "CVE-2008-0592",
+      "CVE-2008-0593",
+      "CVE-2008-0594"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-02-07",
+    "entry": "2008-02-22",
+    "modified": "2009-12-12"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vid": "5048ed45-b0f1-11ed-ab04-9106b1b896dd",
+  "topic": "gitea -- password hash quality",
+  "affects": [
+    {
+      "name": [
+        "gitea"
+      ],
+      "range": [
+        {
+          "lt": "1.18.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Gitea team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/22942\">\n\t  <p>This PR refactors and improves the password hashing code within\n\t    gitea and makes it possible for server administrators to set the\n\t    password hashing parameters.</p>\n\t  <p>In addition it takes the opportunity to adjust the settings for\n\t    pbkdf2 in order to make the hashing a little stronger.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/22823\">\n\t  <p>Add command to bulk set must-change-password</p>\n\t  <p>As part of administration sometimes it is appropriate to\n\t    forcibly tell users to update their passwords.</p>\n\t  <p>This PR creates a new command gitea admin user\n\t    must-change-password which will set the MustChangePassword flag on\n\t    the provided users.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://blog.gitea.io/2023/02/gitea-1.18.4-is-released/",
+      "https://github.com/go-gitea/gitea/releases/tag/v1.18.4"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-02-14",
+    "entry": "2023-02-20"
+  }
+}

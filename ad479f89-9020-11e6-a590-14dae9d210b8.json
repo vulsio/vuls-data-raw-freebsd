@@ -1,0 +1,37 @@
+{
+  "vid": "ad479f89-9020-11e6-a590-14dae9d210b8",
+  "topic": "file-roller -- path traversal vulnerability",
+  "affects": [
+    {
+      "name": [
+        "file-roller"
+      ],
+      "range": [
+        {
+          "lt": "3.20.2,1",
+          "ge": "3.5.4,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p> reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/09/08/4\">\n\t  <p>File Roller 3.5.4 through 3.20.2 was affected by a path\n\t    traversal bug that could result in deleted files if a user\n\t    were tricked into opening a malicious archive.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.openwall.com/lists/oss-security/2016/09/08/4"
+    ],
+    "cvename": [
+      "CVE-2016-7162"
+    ],
+    "freebsd_pr": [
+      "ports/213199"
+    ]
+  },
+  "dates": {
+    "discovery": "2016-09-08",
+    "entry": "2016-10-12",
+    "modified": "2016-10-18"
+  }
+}

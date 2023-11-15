@@ -1,0 +1,33 @@
+{
+  "vid": "a90d040e-f5b0-11e9-acc4-4576b265fda6",
+  "topic": "Loofah -- XSS vulnerability",
+  "affects": [
+    {
+      "name": [
+        "rubygem-loofah"
+      ],
+      "range": [
+        {
+          "lt": "2.3.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>GitHub issue:</p>\n\t<blockquote cite=\"https://github.com/flavorjones/loofah/issues/171\">\n\t  <p>This issue has been created for public disclosure of an XSS\n\t    vulnerability that was responsibly reported by\n\t    https://hackerone.com/vxhex</p>\n\t  <p>In the Loofah gem, through v2.3.0, unsanitized JavaScript may occur in\n\t    sanitized output when a crafted SVG element is republished.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/flavorjones/loofah/releases",
+      "https://github.com/flavorjones/loofah/issues/171"
+    ],
+    "cvename": [
+      "CVE-2019-15587"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-10-22",
+    "entry": "2019-10-23"
+  }
+}

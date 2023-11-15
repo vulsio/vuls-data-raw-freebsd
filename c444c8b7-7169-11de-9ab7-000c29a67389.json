@@ -1,0 +1,45 @@
+{
+  "vid": "c444c8b7-7169-11de-9ab7-000c29a67389",
+  "topic": "isc-dhcp-client -- Stack overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "isc-dhcp31-client"
+      ],
+      "range": [
+        {
+          "le": "3.1.1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "isc-dhcp30-client"
+      ],
+      "range": [
+        {
+          "lt": "3.0.7_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>US-CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/410676\">\n\t  <p>The ISC DHCP dhclient application contains a stack buffer\n\t    overflow, which may allow a remote, unauthenticated attacker to\n\t    execute arbitrary code with root privileges.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.isc.org/node/468",
+      "http://secunia.com/advisories/35785",
+      "http://www.kb.cert.org/vuls/id/410676"
+    ],
+    "cvename": [
+      "CVE-2009-0692"
+    ]
+  },
+  "dates": {
+    "discovery": "2009-07-14",
+    "entry": "2009-07-15",
+    "modified": "2009-07-21"
+  }
+}

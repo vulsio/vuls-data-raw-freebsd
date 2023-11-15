@@ -1,0 +1,32 @@
+{
+  "vid": "ccaea96b-7dcd-11ec-93df-00224d821998",
+  "topic": "strongswan - Incorrect Handling of Early EAP-Success Messages",
+  "affects": [
+    {
+      "name": [
+        "strongswan"
+      ],
+      "range": [
+        {
+          "lt": "5.9.5"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Strongswan Release Notes reports:</p>\n\t<blockquote cite=\"https://github.com/strongswan/strongswan/releases/tag/5.9.5\">\n\t  <p>Fixed a vulnerability in the EAP client implementation\n\t    that was caused by incorrectly handling early EAP-Success\n\t    messages. It may allow to bypass the client and in some\n\t    scenarios even the server authentication, or could lead to\n\t    a denial-of-service attack. This vulnerability has been\n\t    registered as CVE-2021-45079.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://www.strongswan.org/blog/2022/01/24/strongswan-vulnerability-(cve-2021-45079).html"
+    ],
+    "cvename": [
+      "CVE-2021-45079"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-12-16",
+    "entry": "2022-01-25"
+  }
+}

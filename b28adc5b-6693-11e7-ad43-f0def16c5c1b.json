@@ -1,0 +1,44 @@
+{
+  "vid": "b28adc5b-6693-11e7-ad43-f0def16c5c1b",
+  "topic": "nginx -- a specially crafted request might result in an integer overflow",
+  "affects": [
+    {
+      "name": [
+        "nginx"
+      ],
+      "range": [
+        {
+          "lt": "1.12.1,2",
+          "ge": "0.5.6"
+        }
+      ]
+    },
+    {
+      "name": [
+        "nginx-devel"
+      ],
+      "range": [
+        {
+          "lt": "1.13.3",
+          "ge": "0.5.6"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Maxim Dounin reports:</p>\n\t<blockquote cite=\"http://mailman.nginx.org/pipermail/nginx-announce/2017/000200.html\">\n\t  <p>A security issue was identified in nginx range filter.  A specially\n\t    crafted request might result in an integer overflow and incorrect\n\t    processing of ranges, potentially resulting in sensitive information\n\t    leak (CVE-2017-7529).</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mailman.nginx.org/pipermail/nginx-announce/2017/000200.html"
+    ],
+    "cvename": [
+      "CVE-2017-7529"
+    ]
+  },
+  "dates": {
+    "discovery": "2017-07-11",
+    "entry": "2017-07-11"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "vid": "5f003a08-ba3c-11d9-837d-000e0c2e438a",
+  "topic": "sharutils -- unshar insecure temporary file creation",
+  "affects": [
+    {
+      "name": [
+        "sharutils"
+      ],
+      "range": [
+        {
+          "lt": "4.3.80"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>An Ubuntu Advisory reports:</p>\n\t<blockquote cite=\"http://www.ubuntulinux.org/support/documentation/usn/usn-104-1\">\n\t  <p>Joey Hess discovered that \"unshar\" created temporary files\n\t    in an insecure manner. This could allow a symbolic link\n\t    attack to create or overwrite arbitrary files with the\n\t    privileges of the user invoking the program.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.ubuntulinux.org/support/documentation/usn/usn-104-1"
+    ],
+    "cvename": [
+      "CVE-2005-0990"
+    ],
+    "bid": [
+      "12981"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-04-04",
+    "entry": "2005-05-01"
+  }
+}

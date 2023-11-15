@@ -1,0 +1,52 @@
+{
+  "vid": "25ed4ff8-8940-11df-a339-0026189baca3",
+  "topic": "bogofilter -- heap underrun on malformed base64 input",
+  "affects": [
+    {
+      "name": [
+        "bogofilter"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1_2"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bogofilter-sqlite"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1_1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "bogofilter-tc"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Julius Plenz reports:</p>\n\t<blockquote cite=\"http://www.bogofilter.org/pipermail/bogofilter-dev/2010-June/003475.html\">\n\t  <p>I found a bug in the base64_decode function which may cause memory\n\t    corruption when the function is executed on a malformed base64\n\t    encoded string.</p>\n\t  <p>If a string starting with an equal-sign is passed to the\n\t    base64_decode function it triggers a memory corruption that\n\t    in some cases makes bogofilter crash.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://bogofilter.sourceforge.net/security/bogofilter-SA-2010-01"
+    ],
+    "cvename": [
+      "CVE-2010-2494"
+    ]
+  },
+  "dates": {
+    "discovery": "2010-06-28",
+    "entry": "2010-07-06"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "vid": "0ebc6e78-7ac6-11e5-b35a-002590263bf5",
+  "topic": "Joomla! -- Core - SQL Injection/ACL Violation vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "joomla3"
+      ],
+      "range": [
+        {
+          "lt": "3.4.5",
+          "ge": "3.2.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The JSST and the Joomla! Security Center report:</p>\n\t<blockquote cite=\"http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html\">\n\t  <h2>[20151001] - Core - SQL Injection</h2>\n\t  <p>Inadequate filtering of request data leads to a SQL Injection\n\t    vulnerability.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://developer.joomla.org/security-centre/629-20151002-core-acl-violations.html\">\n\t  <h2>[20151002] - Core - ACL Violations</h2>\n\t  <p>Inadequate ACL checks in com_contenthistory provide potential read\n\t    access to data which should be access restricted.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html",
+      "http://developer.joomla.org/security-centre/629-20151002-core-acl-violations.html",
+      "https://www.joomla.org/announcements/release-news/5634-joomla-3-4-5-released.html"
+    ],
+    "cvename": [
+      "CVE-2015-7297",
+      "CVE-2015-7857",
+      "CVE-2015-7858",
+      "CVE-2015-7859"
+    ]
+  },
+  "dates": {
+    "discovery": "2015-10-22",
+    "entry": "2015-10-25"
+  }
+}

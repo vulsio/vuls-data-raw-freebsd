@@ -1,0 +1,56 @@
+{
+  "vid": "4c26f668-0fd2-11ed-a83d-001b217b3468",
+  "topic": "Gitlab -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "gitlab-ce"
+      ],
+      "range": [
+        {
+          "lt": "15.2.1",
+          "ge": "15.2.0"
+        },
+        {
+          "lt": "15.1.4",
+          "ge": "15.1.0"
+        },
+        {
+          "lt": "15.0.5",
+          "ge": "0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/07/28/security-release-gitlab-15-2-1-released/\">\n\t  <p>Revoke access to confidential notes todos</p>\n\t  <p>Pipeline subscriptions trigger new pipelines with the wrong author</p>\n\t  <p>Ability to gain access to private project through an email invite by using other user's email address as an unverified secondary email</p>\n\t  <p>Import via git protocol allows to bypass checks on repository</p>\n\t  <p>Unauthenticated IP allowlist bypass when accessing job artifacts through GitLab Pages</p>\n\t  <p>Maintainer can leak Packagist and other integration access tokens by changing integration URL</p>\n\t  <p>Unauthenticated access to victims Grafana datasources through path traversal</p>\n\t  <p>Unauthorized users can filter issues by contact and organization</p>\n\t  <p>Malicious Maintainer may change the visibility of project or a group</p>\n\t  <p>Stored XSS in job error messages</p>\n\t  <p>Enforced group MFA can be bypassed when using Resource Owner Password Credentials grant</p>\n\t  <p>Non project members can view public project's Deploy Keys</p>\n\t  <p>IDOR in project with Jira integration leaks project owner's other projects Jira issues</p>\n\t  <p>Group Bot Users and Tokens not deleted after group deletion</p>\n\t  <p>Email invited members can join projects even after the member lock has been enabled</p>\n\t  <p>Datadog integration returns user emails</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://about.gitlab.com/releases/2022/07/28/security-release-gitlab-15-2-1-released/"
+    ],
+    "cvename": [
+      "CVE-2022-2512",
+      "CVE-2022-2498",
+      "CVE-2022-2326",
+      "CVE-2022-2417",
+      "CVE-2022-2501",
+      "CVE-2022-2497",
+      "CVE-2022-2531",
+      "CVE-2022-2539",
+      "CVE-2022-2456",
+      "CVE-2022-2500",
+      "CVE-2022-2303",
+      "CVE-2022-2095",
+      "CVE-2022-2499",
+      "CVE-2022-2307",
+      "CVE-2022-2459",
+      "CVE-2022-2534"
+    ]
+  },
+  "dates": {
+    "discovery": "2022-07-28",
+    "entry": "2022-07-30"
+  }
+}

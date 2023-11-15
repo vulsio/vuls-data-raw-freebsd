@@ -1,0 +1,33 @@
+{
+  "vid": "553224e7-4325-11d9-a3d5-000c6e8f12ef",
+  "topic": "jabberd -- remote buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "jabberd"
+      ],
+      "range": [
+        {
+          "ge": "2.*",
+          "le": "2.0.4"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Caused by improper bounds-checking of username\n\t  and password in the C2S module, it is possible\n\t  for an attacker to cause a remote buffer overflow.\n\t  The server directly handles the userinput with\n\t  SQL backend functions - malicious input may lead\n\t  to buffer overflow.</p>\n      "
+  },
+  "references": {
+    "mlist": [
+      {
+        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110144303826709",
+        "msgid": "41A3FEE1.5030701@0x557.org"
+      }
+    ]
+  },
+  "dates": {
+    "discovery": "2004-11-24",
+    "entry": "2004-11-30"
+  }
+}

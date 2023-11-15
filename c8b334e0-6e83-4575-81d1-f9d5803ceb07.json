@@ -1,0 +1,48 @@
+{
+  "vid": "c8b334e0-6e83-4575-81d1-f9d5803ceb07",
+  "topic": "chromium -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "chromium"
+      ],
+      "range": [
+        {
+          "lt": "111.0.5563.110"
+        }
+      ]
+    },
+    {
+      "name": [
+        "ungoogled-chromium"
+      ],
+      "range": [
+        {
+          "lt": "111.0.5563.110"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2023/03/stable-channel-update-for-desktop_21.html\">\n\t <p>This update includes 8 security fixes:</p>\n\t <ul>\n\t   <li>[1421773] High CVE-2023-1528: Use after free in Passwords. Reported by Wan Choi of Seoul National University on 2023-03-07</li>\n\t   <li>[1419718] High CVE-2023-1529: Out of bounds memory access in WebHID. Reported by anonymous on 2023-02-27</li>\n\t   <li>[1419831] High CVE-2023-1530: Use after free in PDF. Reported by The UK's National Cyber Security Centre (NCSC) on 2023-02-27</li>\n\t   <li>[1415330] High CVE-2023-1531: Use after free in ANGLE. Reported by Piotr Bania of Cisco Talos on 2023-02-13</li>\n\t   <li>[1421268] High CVE-2023-1532: Out of bounds read in GPU Video. Reported by Mark Brand of Google Project Zero on 2023-03-03</li>\n\t   <li>[1422183] High CVE-2023-1533: Use after free in WebProtect. Reported by Weipeng Jiang (@Krace) of VRI on 2023-03-07</li>\n\t   <li>[1422594] High CVE-2023-1534: Out of bounds read in ANGLE. Reported by Jann Horn and Mark Brand of Google Project Zero on 2023-03-08</li>\n\t </ul>\n       </blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://chromereleases.googleblog.com/2023/03/stable-channel-update-for-desktop_21.html"
+    ],
+    "cvename": [
+      "CVE-2023-1528",
+      "CVE-2023-1529",
+      "CVE-2023-1530",
+      "CVE-2023-1531",
+      "CVE-2023-1532",
+      "CVE-2023-1533",
+      "CVE-2023-1534"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-03-21",
+    "entry": "2023-03-22"
+  }
+}

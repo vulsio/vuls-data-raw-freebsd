@@ -1,0 +1,36 @@
+{
+  "vid": "f2d5e56e-67eb-11d9-a9e7-0001020eed82",
+  "topic": "unrtf -- buffer overflow vulnerability",
+  "affects": [
+    {
+      "name": [
+        "unrtf"
+      ],
+      "range": [
+        {
+          "lt": "0.19.3_1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Yosef Klein and Limin Wang have found a buffer overflow\n\t  vulnerability in unrtf that can allow an attacker to execute\n\t  arbitrary code with the permissions of the user running\n\t  unrtf, by running unrtf on a specially crafted rtf\n\t  document.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://tigger.uic.edu/~jlongs2/holes/unrtf.txt"
+    ],
+    "cvename": [
+      "CVE-2004-1297"
+    ],
+    "bid": [
+      "12030"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-12-15",
+    "entry": "2005-01-16",
+    "modified": "2005-02-11"
+  }
+}

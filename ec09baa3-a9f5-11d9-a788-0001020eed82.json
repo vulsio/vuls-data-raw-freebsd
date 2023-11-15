@@ -1,0 +1,38 @@
+{
+  "vid": "ec09baa3-a9f5-11d9-a788-0001020eed82",
+  "topic": "gaim -- remote DoS on receiving certain messages over IRC",
+  "affects": [
+    {
+      "name": [
+        "gaim",
+        "ja-gaim",
+        "ko-gaim",
+        "ru-gaim"
+      ],
+      "range": [
+        {
+          "lt": "1.2.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The GAIM team reports:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=14\">\n\t  <p>The IRC protocol plugin in Gaim 1.2.0, and possibly\n\t    earlier versions, allows (1) remote attackers to inject\n\t    arbitrary Gaim markup via irc_msg_kick, irc_msg_mode,\n\t    irc_msg_part, irc_msg_quit, (2) remote attackers to inject\n\t    arbitrary Pango markup and pop up empty dialog boxes via\n\t    irc_msg_invite, or (3) malicious IRC servers to cause a\n\t    denial of service (application crash) by injecting certain\n\t    Pango markup into irc_msg_badmode, irc_msg_banned,\n\t    irc_msg_unknown, irc_msg_nochan functions.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://gaim.sourceforge.net/security/?id=14"
+    ],
+    "cvename": [
+      "CVE-2005-0966"
+    ],
+    "bid": [
+      "13003"
+    ]
+  },
+  "dates": {
+    "discovery": "2005-04-02",
+    "entry": "2005-04-10"
+  }
+}

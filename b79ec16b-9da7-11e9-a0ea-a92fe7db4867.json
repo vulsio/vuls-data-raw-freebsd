@@ -1,0 +1,33 @@
+{
+  "vid": "b79ec16b-9da7-11e9-a0ea-a92fe7db4867",
+  "topic": "ettercap -- out-of-bound read vulnerability",
+  "affects": [
+    {
+      "name": [
+        "ettercap"
+      ],
+      "range": [
+        {
+          "lt": "0.8.3,1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Ettercap GitHub issue:</p>\n\t<blockquote cite=\"https://github.com/Ettercap/ettercap/issues/782\">\n\t  <p>Etterfilter results in an invalid read of 8 bytes when parsing a crafted file.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://github.com/Ettercap/ettercap/issues/782",
+      "https://nvd.nist.gov/vuln/detail/CVE-2017-6430"
+    ],
+    "cvename": [
+      "CVE-2017-6430"
+    ]
+  },
+  "dates": {
+    "discovery": "2019-07-01",
+    "entry": "2019-07-03"
+  }
+}

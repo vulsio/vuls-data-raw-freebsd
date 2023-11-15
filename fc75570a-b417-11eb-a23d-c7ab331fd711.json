@@ -1,0 +1,33 @@
+{
+  "vid": "fc75570a-b417-11eb-a23d-c7ab331fd711",
+  "topic": "Prosody -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "prosody"
+      ],
+      "range": [
+        {
+          "lt": "0.11.9"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Prosody security advisory 2021-05-12 reports:</p>\n\t<blockquote cite=\"https://prosody.im/security/advisory_20210512/\">\n\t  <p>\n\t    This advisory details 5 new security vulnerabilities discovered in the\n\t    Prosody.im XMPP server software. All issues are fixed in the 0.11.9\n\t    release default configuration.\n\t  </p>\n\t  <ul>\n\t    <li>CVE-2021-32918: DoS via insufficient memory consumption controls</li>\n\t    <li>CVE-2021-32920: DoS via repeated TLS renegotiation causing excessive CPU consumption</li>\n\t    <li>CVE-2021-32921: Use of timing-dependent string comparison with sensitive values</li>\n\t    <li>CVE-2021-32917: Use of mod_proxy65 is unrestricted in default configuration</li>\n\t    <li>CVE-2021-32919: Undocumented dialback-without-dialback option insecure</li>\n\t  </ul>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "cvename": [
+      "CVE-2021-32918",
+      "CVE-2021-32920",
+      "CVE-2021-32921",
+      "CVE-2021-32917",
+      "CVE-2021-32919"
+    ]
+  },
+  "dates": {
+    "discovery": "2021-05-12",
+    "entry": "2021-05-13"
+  }
+}

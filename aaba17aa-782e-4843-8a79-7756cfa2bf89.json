@@ -1,0 +1,39 @@
+{
+  "vid": "aaba17aa-782e-4843-8a79-7756cfa2bf89",
+  "topic": "jenkins -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "jenkins"
+      ],
+      "range": [
+        {
+          "le": "2.115"
+        }
+      ]
+    },
+    {
+      "name": [
+        "jenkins-lts"
+      ],
+      "range": [
+        {
+          "le": "2.107.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Jenkins developers report:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2018-04-11/\">\n\t  <p>The Jenkins CLI sent different error responses for commands with\n\t  view and agent arguments depending on the existence of the specified\n\t  views or agents to unauthorized users. This allowed attackers to\n\t  determine whether views or agents with specified names exist.</p>\n\t  <p>The Jenkins CLI now returns the same error messages to unauthorized\n\t  users independent of the existence of specified view or agent\n\t  names</p>\n\t  <p>Some JavaScript confirmation dialogs included the item name in an\n\t  unsafe manner, resulting in a possible cross-site scripting\n\t  vulnerability exploitable by users with permission to create or\n\t  configure items.</p>\n\t  <p>JavaScript confirmation dialogs that include the item name now\n\t  properly escape it, so it can be safely displayed.</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://jenkins.io/security/advisory/2018-04-11/"
+    ]
+  },
+  "dates": {
+    "discovery": "2018-04-11",
+    "entry": "2018-04-12"
+  }
+}

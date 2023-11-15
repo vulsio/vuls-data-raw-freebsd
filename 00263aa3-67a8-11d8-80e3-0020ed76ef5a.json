@@ -1,0 +1,32 @@
+{
+  "vid": "00263aa3-67a8-11d8-80e3-0020ed76ef5a",
+  "topic": "mailman XSS in user options page",
+  "affects": [
+    {
+      "name": [
+        "mailman"
+      ],
+      "range": [
+        {
+          "lt": "2.1.1"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>From the 2.1.1 release notes:</p>\n\t<blockquote><p>Closed a cross-site scripting vulnerability in\n\tthe user options page.</p></blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://mail.python.org/pipermail/mailman-announce/2003-February/000056.html"
+    ],
+    "cvename": [
+      "CVE-2003-0038"
+    ]
+  },
+  "dates": {
+    "discovery": "2003-02-08",
+    "entry": "2004-02-25"
+  }
+}

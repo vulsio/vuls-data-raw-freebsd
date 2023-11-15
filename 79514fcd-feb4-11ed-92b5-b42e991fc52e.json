@@ -1,0 +1,32 @@
+{
+  "vid": "79514fcd-feb4-11ed-92b5-b42e991fc52e",
+  "topic": "Kanboard -- Clipboard based cross-site scripting (blocked with default CSP) in Kanboard",
+  "affects": [
+    {
+      "name": [
+        "php80-kanboard"
+      ],
+      "range": [
+        {
+          "lt": "1.2.29"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>security-advisories@github.com reports:</p>\n\t<blockquote cite=\"https://github.com/kanboard/kanboard/commit/26b6eebb78d4306e48b836a58f7c386251aa2bc7\">\n\t  <p>Kanboard is project management software that focuses on the Kanban\n\tmethodology.  Due to improper handling of elements under the\n\t`contentEditable` element, maliciously crafted clipboard content\n\tcan inject arbitrary HTML tags into the DOM.  A low-privileged\n\tattacker with permission to attach a document on a vulnerable\n\tKanboard instance can trick the victim into pasting malicious\n\tscreenshot data and achieve cross-site scripting if CSP is improperly\n\tconfigured.  This issue has been patched in version 1.2.29.\n\t</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2023-32685"
+    ],
+    "cvename": [
+      "CVE-2023-32685"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-05-30",
+    "entry": "2023-05-30"
+  }
+}

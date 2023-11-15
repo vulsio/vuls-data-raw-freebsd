@@ -1,0 +1,42 @@
+{
+  "vid": "bf2e7483-d3fa-440d-8c6e-8f1f2f018818",
+  "topic": "linux_base -- vulnerabilities in Red Hat 7.1 libraries",
+  "affects": [
+    {
+      "name": [
+        "linux_base"
+      ],
+      "range": [
+        {
+          "lt": "7.3"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>Trevor Johnson reported that the Red Hat Linux RPMs used\n\t  by linux_base contained multiple older vulnerabilities, such\n\t  as a DNS resolver issue and critical bugs in X font handling\n\t  and XPM image handling.</p>\n      "
+  },
+  "references": {
+    "url": [
+      "http://fedoralegacy.org/updates/RH7.3/2004-10-23-FLSA_2004_1947__Updated_glibc_packages_fix_flaws.html",
+      "http://rhn.redhat.com/errata/RHSA-2004-059.html",
+      "http://rhn.redhat.com/errata/RHSA-2004-478.html",
+      "http://rhn.redhat.com/errata/RHSA-2004-612.html"
+    ],
+    "cvename": [
+      "CVE-2002-0029",
+      "CVE-2004-0083",
+      "CVE-2004-0084",
+      "CVE-2004-0106",
+      "CVE-2004-0687",
+      "CVE-2004-0688",
+      "CVE-2004-0692",
+      "CVE-2004-0914"
+    ]
+  },
+  "dates": {
+    "discovery": "2004-09-27",
+    "entry": "2005-06-01"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "vid": "f29fea8f-b19f-11dd-a55e-00163e000016",
+  "topic": "mozilla -- multiple vulnerabilities",
+  "affects": [
+    {
+      "name": [
+        "firefox"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.18,1"
+        },
+        {
+          "lt": "3.0.4,1",
+          "gt": "3.*,1"
+        }
+      ]
+    },
+    {
+      "name": [
+        "linux-firefox"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.18"
+        }
+      ]
+    },
+    {
+      "name": [
+        "seamonkey",
+        "linux-seamonkey"
+      ],
+      "range": [
+        {
+          "lt": "1.1.13"
+        }
+      ]
+    },
+    {
+      "name": [
+        "thunderbird",
+        "linux-thunderbird"
+      ],
+      "range": [
+        {
+          "lt": "2.0.0.18"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The Mozilla Foundation reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/\">\n\t  <p>MFSA 2008-58  Parsing error in E4X default namespace</p>\n\t  <p>MFSA 2008-57 -moz-binding property bypasses security checks on\n\t    codebase principals</p>\n\t  <p>MFSA 2008-56 nsXMLHttpRequest::NotifyEventListeners() same-origin\n\t    violation</p>\n\t  <p>MFSA 2008-55 Crash and remote code execution in\n\t    nsFrameManager</p>\n\t  <p>MFSA 2008-54 Buffer overflow in http-index-format parser</p>\n\t  <p>MFSA 2008-53 XSS and JavaScript privilege escalation via session\n\t    restore</p>\n\t  <p>MFSA 2008-52 Crashes with evidence of memory corruption\n\t    (rv:1.9.0.4/1.8.1.18)</p>\n\t  <p>MFSA 2008-51 file: URIs inherit chrome privileges when opened\n\t    from chrome</p>\n\t  <p>MFSA 2008-50  Crash and remote code execution via __proto__\n\t    tampering</p>\n\t  <p>MFSA 2008-49  Arbitrary code execution via Flash Player dynamic\n\t    module unloading</p>\n\t  <p>MFSA 2008-48 Image stealing via canvas and HTTP redirect</p>\n\t  <p>MFSA 2008-47 Information stealing via local shortcut files</p>\n\t  <p>MFSA 2008-46  Heap overflow when canceling newsgroup message</p>\n\t  <p>MFSA 2008-44 resource: traversal vulnerabilities</p>\n\t  <p>MFSA 2008-43 BOM characters stripped from JavaScript before\n\t    execution</p>\n\t  <p>MFSA 2008-42 Crashes with evidence of memory corruption\n\t    (rv:1.9.0.2/1.8.1.17)</p>\n\t  <p>MFSA 2008-41 Privilege escalation via XPCnativeWrapper\n\t    pollution</p>\n\t  <p>MFSA 2008-38 nsXMLDocument::OnChannelRedirect() same-origin\n\t    violation</p>\n\t  <p>MFSA 2008-37 UTF-8 URL stack buffer overflow</p>\n\t</blockquote>\n      "
+  },
+  "references": {
+    "url": [
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-47.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-48.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-49.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-50.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-51.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-52.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-53.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-54.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-55.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-56.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-57.html",
+      "http://www.mozilla.org/security/announce/2008/mfsa2008-58.html"
+    ],
+    "cvename": [
+      "CVE-2008-0017",
+      "CVE-2008-4582",
+      "CVE-2008-5012",
+      "CVE-2008-5013",
+      "CVE-2008-5014",
+      "CVE-2008-5015",
+      "CVE-2008-5016",
+      "CVE-2008-5017",
+      "CVE-2008-5018",
+      "CVE-2008-5019",
+      "CVE-2008-5021",
+      "CVE-2008-5022",
+      "CVE-2008-5023",
+      "CVE-2008-5024"
+    ]
+  },
+  "dates": {
+    "discovery": "2008-11-13",
+    "entry": "2008-11-13",
+    "modified": "2008-11-23"
+  }
+}
