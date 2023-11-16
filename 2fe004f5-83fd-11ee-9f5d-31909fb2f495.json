@@ -1,0 +1,34 @@
+{
+  "vid": "2fe004f5-83fd-11ee-9f5d-31909fb2f495",
+  "topic": "openvpn -- 2.6.0...2.6.6 --fragment option division by zero crash, and TLS data leak",
+  "affects": [
+    {
+      "name": [
+        "openvpn"
+      ],
+      "range": [
+        {
+          "lt": "2.6.7_1",
+          "ge": "2.6.0"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "xmlns": "http://www.w3.org/1999/xhtml",
+    "text": "\n\t<p>The OpenVPN community project team reports:</p>\n\t<blockquote cite=\"https://github.com/OpenVPN/openvpn/blob/v2.6.7/Changes.rst#overview-of-changes-in-267\">\n\t\t<p>CVE-2023-46849 OpenVPN versions between 2.6.0 and 2.6.6 incorrectly restore \"--fragment\" configuration in some circumstances, leading to a division by zero when \"--fragment\" is used. On platforms where division by zero is fatal, this will cause an OpenVPN crash.\n\t\t<br/>\nReported by Niccolo Belli and WIPocket (Github #400, #417).\n\t</p>\n\t<p>CVE-2023-46850 OpenVPN versions between 2.6.0 and 2.6.6 incorrectly use a send buffer after it has been free()d in some circumstances, causing some free()d memory to be sent to the peer. All configurations using TLS (e.g. not using --secret) are affected by this issue. (found while tracking down CVE-2023-46849 / Github #400, #417)</p>\n\t</blockquote>\n\t"
+  },
+  "references": {
+    "url": [
+      "https://github.com/OpenVPN/openvpn/blob/v2.6.7/Changes.rst#overview-of-changes-in-267"
+    ],
+    "cvename": [
+      "CVE-2023-46849",
+      "CVE-2023-46850"
+    ]
+  },
+  "dates": {
+    "discovery": "2023-08-29",
+    "entry": "2023-11-15"
+  }
+}
