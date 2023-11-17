@@ -1,42 +1,42 @@
 {
-  "vid": "57c1c2ee-7914-11ea-90bf-0800276545c1",
-  "topic": "Squid -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "4.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Squid developers reports:</p>\n\t<blockquote cite=\"http://lists.squid-cache.org/pipermail/squid-announce/2020-February/000107.html\">\n\t  <p>Improper Input Validation issues in HTTP Request\n\t     processing (CVE-2020-8449, CVE-2020-8450).</p>\n\t  <p>Information Disclosure issue in FTP Gateway\n\t     (CVE-2019-12528).</p>\n\t  <p>Buffer Overflow issue in ext_lm_group_acl helper\n\t    (CVE-2020-8517).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.squid-cache.org/pipermail/squid-announce/2020-February/000107.html",
-      "https://nvd.nist.gov/vuln/detail/CVE-2020-8449",
-      "https://nvd.nist.gov/vuln/detail/CVE-2020-8450",
-      "https://nvd.nist.gov/vuln/detail/CVE-2019-12528",
-      "https://nvd.nist.gov/vuln/detail/CVE-2020-8517"
-    ],
-    "cvename": [
-      "CVE-2020-8449",
-      "CVE-2020-8450",
-      "CVE-2019-12528",
-      "CVE-2020-8517"
-    ],
-    "freebsd_pr": [
-      "ports/244026"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-02-10",
-    "entry": "2020-04-07"
-  }
+	"vid": "57c1c2ee-7914-11ea-90bf-0800276545c1",
+	"topic": "Squid -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "4.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Squid developers reports:</p>\n\t<blockquote cite=\"http://lists.squid-cache.org/pipermail/squid-announce/2020-February/000107.html\">\n\t  <p>Improper Input Validation issues in HTTP Request\n\t     processing (CVE-2020-8449, CVE-2020-8450).</p>\n\t  <p>Information Disclosure issue in FTP Gateway\n\t     (CVE-2019-12528).</p>\n\t  <p>Buffer Overflow issue in ext_lm_group_acl helper\n\t    (CVE-2020-8517).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.squid-cache.org/pipermail/squid-announce/2020-February/000107.html",
+			"https://nvd.nist.gov/vuln/detail/CVE-2020-8449",
+			"https://nvd.nist.gov/vuln/detail/CVE-2020-8450",
+			"https://nvd.nist.gov/vuln/detail/CVE-2019-12528",
+			"https://nvd.nist.gov/vuln/detail/CVE-2020-8517"
+		],
+		"cvename": [
+			"CVE-2020-8449",
+			"CVE-2020-8450",
+			"CVE-2019-12528",
+			"CVE-2020-8517"
+		],
+		"freebsd_pr": [
+			"ports/244026"
+		]
+	},
+	"dates": {
+		"discovery": "2020-02-10",
+		"entry": "2020-04-07"
+	}
 }

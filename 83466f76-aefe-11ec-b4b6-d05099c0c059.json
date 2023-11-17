@@ -1,32 +1,32 @@
 {
-  "vid": "83466f76-aefe-11ec-b4b6-d05099c0c059",
-  "topic": "gitea -- Open Redirect on login",
-  "affects": [
-    {
-      "name": [
-        "gitea"
-      ],
-      "range": [
-        {
-          "lt": "1.16.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Andrew Thornton reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1058\">\n\t  <p>\n\t    When a location containing backslashes is presented, the existing\n\t    protections against open redirect are bypassed, because browsers\n\t    will convert adjacent forward and backslashes within the location\n\t    to double forward slashes.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://huntr.dev/bounties/4fb42144-ac70-4f76-a5e1-ef6b5e55dc0d/"
-    ],
-    "cvename": [
-      "CVE-2022-1058"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-03-23",
-    "entry": "2022-03-29"
-  }
+	"vid": "83466f76-aefe-11ec-b4b6-d05099c0c059",
+	"topic": "gitea -- Open Redirect on login",
+	"affects": [
+		{
+			"name": [
+				"gitea"
+			],
+			"range": [
+				{
+					"lt": "1.16.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Andrew Thornton reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1058\">\n\t  <p>\n\t    When a location containing backslashes is presented, the existing\n\t    protections against open redirect are bypassed, because browsers\n\t    will convert adjacent forward and backslashes within the location\n\t    to double forward slashes.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://huntr.dev/bounties/4fb42144-ac70-4f76-a5e1-ef6b5e55dc0d/"
+		],
+		"cvename": [
+			"CVE-2022-1058"
+		]
+	},
+	"dates": {
+		"discovery": "2022-03-23",
+		"entry": "2022-03-29"
+	}
 }

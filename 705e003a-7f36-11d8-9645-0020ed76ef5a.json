@@ -1,33 +1,33 @@
 {
-  "vid": "705e003a-7f36-11d8-9645-0020ed76ef5a",
-  "topic": "squid ACL bypass due to URL decoding bug",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "2.5.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>From the Squid advisory:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2004_1.txt\">\n\t  <p>Squid versions 2.5.STABLE4 and earlier contain a bug\n\t  in the \"%xx\" URL decoding function.  It may insert a NUL\n\t  character into decoded URLs, which may allow users to bypass\n\t  url_regex ACLs.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Advisories/SQUID-2004_1.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0189"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-02-29",
-    "entry": "2004-03-26",
-    "modified": "2015-05-01"
-  }
+	"vid": "705e003a-7f36-11d8-9645-0020ed76ef5a",
+	"topic": "squid ACL bypass due to URL decoding bug",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "2.5.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>From the Squid advisory:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2004_1.txt\">\n\t  <p>Squid versions 2.5.STABLE4 and earlier contain a bug\n\t  in the \"%xx\" URL decoding function.  It may insert a NUL\n\t  character into decoded URLs, which may allow users to bypass\n\t  url_regex ACLs.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Advisories/SQUID-2004_1.txt"
+		],
+		"cvename": [
+			"CVE-2004-0189"
+		]
+	},
+	"dates": {
+		"discovery": "2004-02-29",
+		"entry": "2004-03-26",
+		"modified": "2015-05-01"
+	}
 }

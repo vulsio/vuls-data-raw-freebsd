@@ -1,39 +1,39 @@
 {
-  "vid": "86a98b57-fb8e-11d8-9343-000a95bc6fae",
-  "topic": "krb5 -- double-free vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "krb5"
-      ],
-      "range": [
-        {
-          "le": "1.3.4_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>An advisory published by the MIT Kerberos team says:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-002-dblfree.txt\">\n\t  <p>The MIT Kerberos 5 implementation's Key Distribution Center\n\t    (KDC) program contains a double-free vulnerability that\n\t    potentially allows a remote attacker to execute arbitrary code.\n\t    Compromise of a KDC host compromises the security of the entire\n\t    authentication realm served by the KDC.  Additionally, double-free\n\t    vulnerabilities exist in MIT Kerberos 5 library code, making\n\t    client programs and application servers vulnerable.</p>\n\t</blockquote>\n\t<p>Double-free vulnerabilities of this type are not believed to be\n\t  exploitable for code execution on FreeBSD systems.  However,\n\t  the potential for other ill effects may exist.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-002-dblfree.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0642",
-      "CVE-2004-0643",
-      "CVE-2004-0772"
-    ],
-    "cert_vu": [
-      "795632",
-      "866472",
-      "350792"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-31",
-    "entry": "2004-08-31"
-  }
+	"vid": "86a98b57-fb8e-11d8-9343-000a95bc6fae",
+	"topic": "krb5 -- double-free vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"krb5"
+			],
+			"range": [
+				{
+					"le": "1.3.4_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>An advisory published by the MIT Kerberos team says:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-002-dblfree.txt\">\n\t  <p>The MIT Kerberos 5 implementation's Key Distribution Center\n\t    (KDC) program contains a double-free vulnerability that\n\t    potentially allows a remote attacker to execute arbitrary code.\n\t    Compromise of a KDC host compromises the security of the entire\n\t    authentication realm served by the KDC.  Additionally, double-free\n\t    vulnerabilities exist in MIT Kerberos 5 library code, making\n\t    client programs and application servers vulnerable.</p>\n\t</blockquote>\n\t<p>Double-free vulnerabilities of this type are not believed to be\n\t  exploitable for code execution on FreeBSD systems.  However,\n\t  the potential for other ill effects may exist.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-002-dblfree.txt"
+		],
+		"cvename": [
+			"CVE-2004-0642",
+			"CVE-2004-0643",
+			"CVE-2004-0772"
+		],
+		"cert_vu": [
+			"795632",
+			"866472",
+			"350792"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-31",
+		"entry": "2004-08-31"
+	}
 }

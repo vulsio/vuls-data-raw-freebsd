@@ -1,46 +1,46 @@
 {
-  "vid": "10bf8eed-b14d-11e5-9728-002590263bf5",
-  "topic": "qemu -- denial of service vulnerability in e1000 NIC support",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.4.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qemu-sbruno",
-        "qemu-user-static"
-      ],
-      "range": [
-        {
-          "lt": "2.5.50.g20151224"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/09/04/4\">\n\t  <p>Qemu emulator built with the e1000 NIC emulation support is\n\t    vulnerable to an infinite loop issue. It could occur while\n\t    processing transmit descriptor data when sending a network packet.\n\t    </p>\n\t  <p>A privileged user inside guest could use this flaw to crash the\n\t    Qemu instance resulting in DoS.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2015/09/04/4",
-      "http://git.qemu.org/?p=qemu.git;a=commit;h=3a56af1fbc17ff453f6e90fb08ce0c0e6fd0b61b",
-      "https://github.com/seanbruno/qemu-bsd-user/commit/b947ac2bf26479e710489739c465c8af336599e7"
-    ],
-    "cvename": [
-      "CVE-2015-6815"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-09-04",
-    "entry": "2016-01-02"
-  }
+	"vid": "10bf8eed-b14d-11e5-9728-002590263bf5",
+	"topic": "qemu -- denial of service vulnerability in e1000 NIC support",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"lt": "2.4.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"qemu-sbruno",
+				"qemu-user-static"
+			],
+			"range": [
+				{
+					"lt": "2.5.50.g20151224"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/09/04/4\">\n\t  <p>Qemu emulator built with the e1000 NIC emulation support is\n\t    vulnerable to an infinite loop issue. It could occur while\n\t    processing transmit descriptor data when sending a network packet.\n\t    </p>\n\t  <p>A privileged user inside guest could use this flaw to crash the\n\t    Qemu instance resulting in DoS.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2015/09/04/4",
+			"http://git.qemu.org/?p=qemu.git;a=commit;h=3a56af1fbc17ff453f6e90fb08ce0c0e6fd0b61b",
+			"https://github.com/seanbruno/qemu-bsd-user/commit/b947ac2bf26479e710489739c465c8af336599e7"
+		],
+		"cvename": [
+			"CVE-2015-6815"
+		]
+	},
+	"dates": {
+		"discovery": "2015-09-04",
+		"entry": "2016-01-02"
+	}
 }

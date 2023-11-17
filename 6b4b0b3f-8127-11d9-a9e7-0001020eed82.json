@@ -1,43 +1,43 @@
 {
-  "vid": "6b4b0b3f-8127-11d9-a9e7-0001020eed82",
-  "topic": "postgresql -- multiple buffer overflows in PL/PgSQL parser",
-  "affects": [
-    {
-      "name": [
-        "postgresql",
-        "postgresql-server",
-        "ja-postgresql"
-      ],
-      "range": [
-        {
-          "lt": "7.3.9_1"
-        },
-        {
-          "lt": "7.4.7_1",
-          "gt": "7.4.*"
-        },
-        {
-          "lt": "8.0.1_1",
-          "gt": "8.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PL/PgSQL parser in postgresql is vulnerable to several\n\t  buffer overflows.  These could be exploited by a remote\n\t  attacker to execute arbitrary code with the permissions of\n\t  the postgresql server by running a specially crafted\n\t  query.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://archives.postgresql.org/pgsql-committers/2005-02/msg00049.php"
-    ],
-    "cvename": [
-      "CVE-2005-0247"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-07",
-    "entry": "2005-02-17",
-    "modified": "2005-02-19"
-  }
+	"vid": "6b4b0b3f-8127-11d9-a9e7-0001020eed82",
+	"topic": "postgresql -- multiple buffer overflows in PL/PgSQL parser",
+	"affects": [
+		{
+			"name": [
+				"postgresql",
+				"postgresql-server",
+				"ja-postgresql"
+			],
+			"range": [
+				{
+					"lt": "7.3.9_1"
+				},
+				{
+					"lt": "7.4.7_1",
+					"gt": "7.4.*"
+				},
+				{
+					"lt": "8.0.1_1",
+					"gt": "8.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PL/PgSQL parser in postgresql is vulnerable to several\n\t  buffer overflows.  These could be exploited by a remote\n\t  attacker to execute arbitrary code with the permissions of\n\t  the postgresql server by running a specially crafted\n\t  query.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://archives.postgresql.org/pgsql-committers/2005-02/msg00049.php"
+		],
+		"cvename": [
+			"CVE-2005-0247"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-07",
+		"entry": "2005-02-17",
+		"modified": "2005-02-19"
+	}
 }

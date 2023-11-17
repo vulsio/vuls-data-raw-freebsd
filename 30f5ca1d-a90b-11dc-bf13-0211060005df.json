@@ -1,41 +1,41 @@
 {
-  "vid": "30f5ca1d-a90b-11dc-bf13-0211060005df",
-  "topic": "qemu -- Translation Block Local Denial of Service Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.9.0_4"
-        },
-        {
-          "lt": "0.9.0s.20070802_1",
-          "ge": "0.9.0s.20070101*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/26666/discuss\">\n\t  <p>QEMU is prone to a local denial-of-service vulnerability\n\t    because it fails to perform adequate boundary checks when\n\t    handling user-supplied input.</p>\n\t  <p>Attackers can exploit this issue to cause denial-of-service\n\t    conditions. Given the nature of the issue, attackers may also be\n\t    able to execute arbitrary code, but this has not been confirmed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.securityfocus.com/archive/1/484429"
-    ],
-    "cvename": [
-      "CVE-2007-6227"
-    ],
-    "bid": [
-      "26666"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-11-30",
-    "entry": "2007-12-12",
-    "modified": "2007-12-14"
-  }
+	"vid": "30f5ca1d-a90b-11dc-bf13-0211060005df",
+	"topic": "qemu -- Translation Block Local Denial of Service Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"lt": "0.9.0_4"
+				},
+				{
+					"lt": "0.9.0s.20070802_1",
+					"ge": "0.9.0s.20070101*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/26666/discuss\">\n\t  <p>QEMU is prone to a local denial-of-service vulnerability\n\t    because it fails to perform adequate boundary checks when\n\t    handling user-supplied input.</p>\n\t  <p>Attackers can exploit this issue to cause denial-of-service\n\t    conditions. Given the nature of the issue, attackers may also be\n\t    able to execute arbitrary code, but this has not been confirmed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.securityfocus.com/archive/1/484429"
+		],
+		"cvename": [
+			"CVE-2007-6227"
+		],
+		"bid": [
+			"26666"
+		]
+	},
+	"dates": {
+		"discovery": "2007-11-30",
+		"entry": "2007-12-12",
+		"modified": "2007-12-14"
+	}
 }

@@ -1,40 +1,40 @@
 {
-  "vid": "739bb51d-7e82-11d8-9645-0020ed76ef5a",
-  "topic": "racoon security association deletion vulnerability",
-  "affects": [
-    {
-      "name": [
-        "racoon"
-      ],
-      "range": [
-        {
-          "lt": "20040116a"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A remote attacker may use specially crafted IKE/ISAKMP\n\t  messages to cause racoon to delete security associations.\n\t  This could result in denial-of-service or possibly cause\n\t  sensitive traffic to be transmitted in plaintext, depending\n\t  upon configuration.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0164"
-    ],
-    "mlist": [
-      {
-        "text": "http://www.securityfocus.com/archive/1/349756",
-        "msgid": "20040113213940.GA1727@hzeroseven.org"
-      }
-    ],
-    "bid": [
-      "9416",
-      "9417"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-01-13",
-    "entry": "2004-03-25",
-    "modified": "2004-03-29"
-  }
+	"vid": "739bb51d-7e82-11d8-9645-0020ed76ef5a",
+	"topic": "racoon security association deletion vulnerability",
+	"affects": [
+		{
+			"name": [
+				"racoon"
+			],
+			"range": [
+				{
+					"lt": "20040116a"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A remote attacker may use specially crafted IKE/ISAKMP\n\t  messages to cause racoon to delete security associations.\n\t  This could result in denial-of-service or possibly cause\n\t  sensitive traffic to be transmitted in plaintext, depending\n\t  upon configuration.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0164"
+		],
+		"mlist": [
+			{
+				"text": "http://www.securityfocus.com/archive/1/349756",
+				"msgid": "20040113213940.GA1727@hzeroseven.org"
+			}
+		],
+		"bid": [
+			"9416",
+			"9417"
+		]
+	},
+	"dates": {
+		"discovery": "2004-01-13",
+		"entry": "2004-03-25",
+		"modified": "2004-03-29"
+	}
 }

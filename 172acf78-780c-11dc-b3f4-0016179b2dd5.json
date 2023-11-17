@@ -1,36 +1,36 @@
 {
-  "vid": "172acf78-780c-11dc-b3f4-0016179b2dd5",
-  "topic": "png -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "png"
-      ],
-      "range": [
-        {
-          "lt": "1.2.22"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/27093/\">\n\t  <p>Some vulnerabilities have been reported in libpng, which can be\n\t    exploited by malicious people to cause a DoS (Denial of\n\t    Service).</p>\n\t  <p>Certain errors within libpng, including a logical NOT instead of a\n\t    bitwise NOT in pngtrtran.c, an error in the 16bit cheap transparency\n\t    extension, and an incorrect use of sizeof() may be exploited to\n\t    crash an application using the library.</p>\n\t  <p>Various out-of-bounds read errors exist within the functions\n\t    png_handle_pCAL(), png_handle_sCAL(), png_push_read_tEXt(),\n\t    png_handle_iTXt(), and png_handle_ztXt(), which may be exploited by\n\t    exploited to crash an application using the library.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://secunia.com/advisories/27130/\">\n\t  <p>The vulnerability is caused due to an off-by-one error within\n\t     the ICC profile chunk handling, which potentially can be\n\t     exploited to crash an application using the library.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/27093/",
-      "http://secunia.com/advisories/27130/"
-    ],
-    "cvename": [
-      "CVE-2007-5267",
-      "CVE-2007-5266",
-      "CVE-2007-5268",
-      "CVE-2007-5269"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-10-08",
-    "entry": "2007-10-11"
-  }
+	"vid": "172acf78-780c-11dc-b3f4-0016179b2dd5",
+	"topic": "png -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"png"
+			],
+			"range": [
+				{
+					"lt": "1.2.22"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/27093/\">\n\t  <p>Some vulnerabilities have been reported in libpng, which can be\n\t    exploited by malicious people to cause a DoS (Denial of\n\t    Service).</p>\n\t  <p>Certain errors within libpng, including a logical NOT instead of a\n\t    bitwise NOT in pngtrtran.c, an error in the 16bit cheap transparency\n\t    extension, and an incorrect use of sizeof() may be exploited to\n\t    crash an application using the library.</p>\n\t  <p>Various out-of-bounds read errors exist within the functions\n\t    png_handle_pCAL(), png_handle_sCAL(), png_push_read_tEXt(),\n\t    png_handle_iTXt(), and png_handle_ztXt(), which may be exploited by\n\t    exploited to crash an application using the library.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://secunia.com/advisories/27130/\">\n\t  <p>The vulnerability is caused due to an off-by-one error within\n\t     the ICC profile chunk handling, which potentially can be\n\t     exploited to crash an application using the library.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/27093/",
+			"http://secunia.com/advisories/27130/"
+		],
+		"cvename": [
+			"CVE-2007-5267",
+			"CVE-2007-5266",
+			"CVE-2007-5268",
+			"CVE-2007-5269"
+		]
+	},
+	"dates": {
+		"discovery": "2007-10-08",
+		"entry": "2007-10-11"
+	}
 }

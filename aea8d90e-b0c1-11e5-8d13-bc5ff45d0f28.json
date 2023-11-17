@@ -1,46 +1,46 @@
 {
-  "vid": "aea8d90e-b0c1-11e5-8d13-bc5ff45d0f28",
-  "topic": "qemu -- code execution on host machine",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qemu-sbruno",
-        "qemu-user-static"
-      ],
-      "range": [
-        {
-          "lt": "2.4.50.g20150814"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Petr Matousek of Red Hat Inc. reports:</p>\n\t<blockquote cite=\"http://openwall.com/lists/oss-security/2015/06/17/5\">\n\t  <p>Due converting PIO to the new memory read/write api we no longer\n\t    provide separate I/O region lenghts for read and write operations.\n\t    As a result, reading from PIT Mode/Command register will end with\n\t    accessing pit-&gt;channels with invalid index and potentially cause\n\t    memory corruption and/or minor information leak.</p>\n\t  <p>A privileged guest user in a guest with QEMU PIT emulation enabled\n\t    could potentially (tough unlikely) use this flaw to execute\n\t    arbitrary code on the host with the privileges of the hosting QEMU\n\t    process.</p>\n\t  <p>Please note that by default QEMU/KVM guests use in-kernel (KVM) PIT\n\t    emulation and are thus not vulnerable to this issue.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://openwall.com/lists/oss-security/2015/06/17/5",
-      "http://git.qemu.org/?p=qemu.git;a=commit;h=d4862a87e31a51de9eb260f25c9e99a75efe3235",
-      "https://github.com/seanbruno/qemu-bsd-user/commit/d4862a87e31a51de9eb260f25c9e99a75efe3235"
-    ],
-    "cvename": [
-      "CVE-2015-3214"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-17",
-    "entry": "2016-01-01"
-  }
+	"vid": "aea8d90e-b0c1-11e5-8d13-bc5ff45d0f28",
+	"topic": "qemu -- code execution on host machine",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"lt": "2.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"qemu-sbruno",
+				"qemu-user-static"
+			],
+			"range": [
+				{
+					"lt": "2.4.50.g20150814"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Petr Matousek of Red Hat Inc. reports:</p>\n\t<blockquote cite=\"http://openwall.com/lists/oss-security/2015/06/17/5\">\n\t  <p>Due converting PIO to the new memory read/write api we no longer\n\t    provide separate I/O region lenghts for read and write operations.\n\t    As a result, reading from PIT Mode/Command register will end with\n\t    accessing pit-&gt;channels with invalid index and potentially cause\n\t    memory corruption and/or minor information leak.</p>\n\t  <p>A privileged guest user in a guest with QEMU PIT emulation enabled\n\t    could potentially (tough unlikely) use this flaw to execute\n\t    arbitrary code on the host with the privileges of the hosting QEMU\n\t    process.</p>\n\t  <p>Please note that by default QEMU/KVM guests use in-kernel (KVM) PIT\n\t    emulation and are thus not vulnerable to this issue.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://openwall.com/lists/oss-security/2015/06/17/5",
+			"http://git.qemu.org/?p=qemu.git;a=commit;h=d4862a87e31a51de9eb260f25c9e99a75efe3235",
+			"https://github.com/seanbruno/qemu-bsd-user/commit/d4862a87e31a51de9eb260f25c9e99a75efe3235"
+		],
+		"cvename": [
+			"CVE-2015-3214"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-17",
+		"entry": "2016-01-01"
+	}
 }

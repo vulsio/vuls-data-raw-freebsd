@@ -1,43 +1,43 @@
 {
-  "vid": "f40f07aa-c00f-11e7-ac58-b499baebfeaf",
-  "topic": "OpenSSL -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2m,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.1.0g"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20171102.txt\">\n\t  <p>bn_sqrx8x_internal carry bug on x86_64 (CVE-2017-3736)<br/>\n\t    Severity: Moderate<br/>\n\t    There is a carry propagating bug in the x86_64 Montgomery squaring\n\t    procedure. No EC algorithms are affected. Analysis suggests that\n\t    attacks against RSA and DSA as a result of this defect would be\n\t    very difficult to perform and are not believed likely. Attacks\n\t    against DH are considered just feasible (although very difficult)\n\t    because most of the work necessary to deduce information about a\n\t    private key may be performed offline.</p>\n\t  <p>Malformed X.509 IPAddressFamily could cause OOB read (CVE-2017-3735)<br/>\n\t    Severity: Low<br/>\n\t    This issue was previously announced in security advisory\n\t    https://www.openssl.org/news/secadv/20170828.txt, but the fix has\n\t    not previously been included in a release due to its low severity.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20171102.txt"
-    ],
-    "cvename": [
-      "CVE-2017-3735",
-      "CVE-2017-3736"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-11-02",
-    "entry": "2017-11-02"
-  }
+	"vid": "f40f07aa-c00f-11e7-ac58-b499baebfeaf",
+	"topic": "OpenSSL -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2m,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-devel"
+			],
+			"range": [
+				{
+					"lt": "1.1.0g"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20171102.txt\">\n\t  <p>bn_sqrx8x_internal carry bug on x86_64 (CVE-2017-3736)<br/>\n\t    Severity: Moderate<br/>\n\t    There is a carry propagating bug in the x86_64 Montgomery squaring\n\t    procedure. No EC algorithms are affected. Analysis suggests that\n\t    attacks against RSA and DSA as a result of this defect would be\n\t    very difficult to perform and are not believed likely. Attacks\n\t    against DH are considered just feasible (although very difficult)\n\t    because most of the work necessary to deduce information about a\n\t    private key may be performed offline.</p>\n\t  <p>Malformed X.509 IPAddressFamily could cause OOB read (CVE-2017-3735)<br/>\n\t    Severity: Low<br/>\n\t    This issue was previously announced in security advisory\n\t    https://www.openssl.org/news/secadv/20170828.txt, but the fix has\n\t    not previously been included in a release due to its low severity.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20171102.txt"
+		],
+		"cvename": [
+			"CVE-2017-3735",
+			"CVE-2017-3736"
+		]
+	},
+	"dates": {
+		"discovery": "2017-11-02",
+		"entry": "2017-11-02"
+	}
 }

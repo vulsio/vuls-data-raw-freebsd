@@ -1,33 +1,33 @@
 {
-  "vid": "f2217cdf-01e4-11e6-b1ce-002590263bf5",
-  "topic": "go -- remote denial of service",
-  "affects": [
-    {
-      "name": [
-        "go"
-      ],
-      "range": [
-        {
-          "lt": "1.6.1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jason Buberel reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/04/05/2\">\n\t  <p>Go has an infinite loop in several big integer routines that makes\n\t    Go programs vulnerable to remote denial of service attacks. Programs\n\t    using HTTPS client authentication or the Go ssh server libraries are\n\t    both exposed to this vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2016/04/05/2",
-      "https://golang.org/cl/21533"
-    ],
-    "cvename": [
-      "CVE-2016-3959"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-04-05",
-    "entry": "2016-04-14"
-  }
+	"vid": "f2217cdf-01e4-11e6-b1ce-002590263bf5",
+	"topic": "go -- remote denial of service",
+	"affects": [
+		{
+			"name": [
+				"go"
+			],
+			"range": [
+				{
+					"lt": "1.6.1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jason Buberel reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/04/05/2\">\n\t  <p>Go has an infinite loop in several big integer routines that makes\n\t    Go programs vulnerable to remote denial of service attacks. Programs\n\t    using HTTPS client authentication or the Go ssh server libraries are\n\t    both exposed to this vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2016/04/05/2",
+			"https://golang.org/cl/21533"
+		],
+		"cvename": [
+			"CVE-2016-3959"
+		]
+	},
+	"dates": {
+		"discovery": "2016-04-05",
+		"entry": "2016-04-14"
+	}
 }

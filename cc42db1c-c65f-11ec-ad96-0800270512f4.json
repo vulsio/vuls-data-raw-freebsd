@@ -1,53 +1,53 @@
 {
-  "vid": "cc42db1c-c65f-11ec-ad96-0800270512f4",
-  "topic": "redis -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "6.2.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis-devel"
-      ],
-      "range": [
-        {
-          "lt": "7.0.0.20220428"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis62"
-      ],
-      "range": [
-        {
-          "lt": "6.2.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Aviv Yahav reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/7iWUlwtoDqU\">\n\t  <dl>\n\t    <dt>CVE-2022-24735</dt>\n\t    <dd>\n\t      By exploiting weaknesses in the Lua script execution\n\t      environment, an attacker with access to Redis can inject\n\t      Lua code that will execute with the (potentially higher)\n\t      privileges of another Redis user.\n\t    </dd>\n\t    <dt>CVE-2022-24736</dt>\n\t    <dd>\n\t      An attacker attempting to load a specially crafted Lua\n\t      script can cause NULL pointer dereference which will\n\t      result with a crash of the redis-server process.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/redis-db/c/7iWUlwtoDqU"
-    ],
-    "cvename": [
-      "CVE-2022-24735",
-      "CVE-2022-24736"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-27",
-    "entry": "2022-04-27"
-  }
+	"vid": "cc42db1c-c65f-11ec-ad96-0800270512f4",
+	"topic": "redis -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "6.2.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis-devel"
+			],
+			"range": [
+				{
+					"lt": "7.0.0.20220428"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis62"
+			],
+			"range": [
+				{
+					"lt": "6.2.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Aviv Yahav reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/7iWUlwtoDqU\">\n\t  <dl>\n\t    <dt>CVE-2022-24735</dt>\n\t    <dd>\n\t      By exploiting weaknesses in the Lua script execution\n\t      environment, an attacker with access to Redis can inject\n\t      Lua code that will execute with the (potentially higher)\n\t      privileges of another Redis user.\n\t    </dd>\n\t    <dt>CVE-2022-24736</dt>\n\t    <dd>\n\t      An attacker attempting to load a specially crafted Lua\n\t      script can cause NULL pointer dereference which will\n\t      result with a crash of the redis-server process.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/redis-db/c/7iWUlwtoDqU"
+		],
+		"cvename": [
+			"CVE-2022-24735",
+			"CVE-2022-24736"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-27",
+		"entry": "2022-04-27"
+	}
 }

@@ -1,60 +1,60 @@
 {
-  "vid": "f06f20dc-4347-11e5-93ad-002590263bf5",
-  "topic": "qemu, xen-tools -- QEMU leak of uninitialized heap memory in rtl8139 device model",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "le": "0.11.1_20"
-        },
-        {
-          "ge": "0.12",
-          "le": "2.3.0_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qemu-sbruno",
-        "qemu-user-static"
-      ],
-      "range": [
-        {
-          "lt": "2.4.50.g20150814"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.5.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-140.html\">\n\t  <p>The QEMU model of the RTL8139 network card did not sufficiently\n\t    validate inputs in the C+ mode offload emulation. This results in\n\t    uninitialized memory from the QEMU process's heap being leaked to\n\t    the domain as well as to the network.</p>\n\t  <p>A guest may be able to read sensitive host-level data relating to\n\t    itself which resides in the QEMU process.</p>\n\t  <p>Such information may include things such as information relating to\n\t    real devices backing emulated devices or passwords which the host\n\t    administrator does not intend to share with the guest admin.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-140.html",
-      "http://git.qemu.org/?p=qemu.git;a=commit;h=2a3612ccc1fa9cea77bd193afbfe21c77e7e91ef"
-    ],
-    "cvename": [
-      "CVE-2015-5165"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-08-03",
-    "entry": "2015-08-17",
-    "modified": "2015-08-19"
-  }
+	"vid": "f06f20dc-4347-11e5-93ad-002590263bf5",
+	"topic": "qemu, xen-tools -- QEMU leak of uninitialized heap memory in rtl8139 device model",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"le": "0.11.1_20"
+				},
+				{
+					"ge": "0.12",
+					"le": "2.3.0_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"qemu-sbruno",
+				"qemu-user-static"
+			],
+			"range": [
+				{
+					"lt": "2.4.50.g20150814"
+				}
+			]
+		},
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.5.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-140.html\">\n\t  <p>The QEMU model of the RTL8139 network card did not sufficiently\n\t    validate inputs in the C+ mode offload emulation. This results in\n\t    uninitialized memory from the QEMU process's heap being leaked to\n\t    the domain as well as to the network.</p>\n\t  <p>A guest may be able to read sensitive host-level data relating to\n\t    itself which resides in the QEMU process.</p>\n\t  <p>Such information may include things such as information relating to\n\t    real devices backing emulated devices or passwords which the host\n\t    administrator does not intend to share with the guest admin.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-140.html",
+			"http://git.qemu.org/?p=qemu.git;a=commit;h=2a3612ccc1fa9cea77bd193afbfe21c77e7e91ef"
+		],
+		"cvename": [
+			"CVE-2015-5165"
+		]
+	},
+	"dates": {
+		"discovery": "2015-08-03",
+		"entry": "2015-08-17",
+		"modified": "2015-08-19"
+	}
 }

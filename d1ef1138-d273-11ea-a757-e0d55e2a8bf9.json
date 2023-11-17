@@ -1,35 +1,35 @@
 {
-  "vid": "d1ef1138-d273-11ea-a757-e0d55e2a8bf9",
-  "topic": "ark -- directory traversal",
-  "affects": [
-    {
-      "name": [
-        "ark"
-      ],
-      "range": [
-        {
-          "lt": "20.04.2_1"
-        },
-        {
-          "eq": "20.04.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>KDE Project Security Advisory reports:</p>\n\t<blockquote cite=\"https://kde.org/info/security/advisory-20200730-1.txt\">\n\t  <h3>KDE Project Security Advisory</h3>\n\t  <table>\n\t    <tr>\n\t      <td>Title:</td>\n\t      <td>Ark: maliciously crafted archive can install files outside the extraction directory.</td>\n\t    </tr>\n\t    <tr>\n\t      <td>Risk Rating:</td>\n\t      <td>Important</td>\n\t    </tr>\n\t    <tr>\n\t      <td>CVE:</td>\n\t      <td>CVE-2020-16116</td>\n\t    </tr>\n\t    <tr>\n\t      <td>Versions:</td>\n\t      <td>ark &lt;= 20.04.3</td>\n\t    </tr>\n\t    <tr>\n\t      <td>Author:</td>\n\t      <td>Elvis Angelaccio &lt;elvis.angelaccio@kde.org&gt;</td>\n\t    </tr>\n\t    <tr>\n\t      <td>Date:</td>\n\t      <td>30 July 2020</td>\n\t    </tr>\n\t  </table>\n\t  <h3>Overview</h3>\n\t    <p>A maliciously crafted archive with \"../\" in the file paths\n\t\twould install files anywhere in the user's home directory upon extraction.</p>\n\n\t  <h3>Proof of concept</h3>\n\t  <p>For testing, an example of malicious archive can be found at\n\t      https://github.com/jwilk/traversal-archives/releases/download/0/relative2.zip</p>\n\n\t  <h3>Impact</h3>\n\t  <p>Users can unwillingly install files like a modified .bashrc, or a malicious\n\t      script placed in ~/.config/autostart</p>\n\n\t  <h3>Workaround</h3>\n\t  <p>Users should not use the 'Extract' context menu from the Dolphin file manager.\n\t    Before extracting a downloaded archive using the Ark GUI, users should inspect it\n\t      to make sure it doesn't contain entries with \"../\" in the file path.</p>\n\n\t  <h3>Solution</h3>\n\t  <p>Ark 20.08.0 prevents loading of malicious archives and shows a warning message\n\t    to the users.</p>\n\n\t  <p>Alternatively,\n\t    https://invent.kde.org/utilities/ark/-/commit/0df592524fed305d6fbe74ddf8a196bc9ffdb92f\n\t      can be applied to previous releases.</p>\n\n\t  <h3>Credits</h3>\n\t  <p>Thanks to Dominik Penner for finding and reporting this issue and thanks to\n\t    Elvis Angelaccio and Albert Astals Cid for fixing it.</p>\n      </blockquote>\n    "
-  },
-  "references": {
-    "url": [
-      "https://kde.org/info/security/advisory-20200730-1.txt"
-    ],
-    "cvename": [
-      "CVE-2020-16116"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-07-30",
-    "entry": "2020-07-30"
-  }
+	"vid": "d1ef1138-d273-11ea-a757-e0d55e2a8bf9",
+	"topic": "ark -- directory traversal",
+	"affects": [
+		{
+			"name": [
+				"ark"
+			],
+			"range": [
+				{
+					"lt": "20.04.2_1"
+				},
+				{
+					"eq": "20.04.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>KDE Project Security Advisory reports:</p>\n\t<blockquote cite=\"https://kde.org/info/security/advisory-20200730-1.txt\">\n\t  <h3>KDE Project Security Advisory</h3>\n\t  <table>\n\t    <tr>\n\t      <td>Title:</td>\n\t      <td>Ark: maliciously crafted archive can install files outside the extraction directory.</td>\n\t    </tr>\n\t    <tr>\n\t      <td>Risk Rating:</td>\n\t      <td>Important</td>\n\t    </tr>\n\t    <tr>\n\t      <td>CVE:</td>\n\t      <td>CVE-2020-16116</td>\n\t    </tr>\n\t    <tr>\n\t      <td>Versions:</td>\n\t      <td>ark &lt;= 20.04.3</td>\n\t    </tr>\n\t    <tr>\n\t      <td>Author:</td>\n\t      <td>Elvis Angelaccio &lt;elvis.angelaccio@kde.org&gt;</td>\n\t    </tr>\n\t    <tr>\n\t      <td>Date:</td>\n\t      <td>30 July 2020</td>\n\t    </tr>\n\t  </table>\n\t  <h3>Overview</h3>\n\t    <p>A maliciously crafted archive with \"../\" in the file paths\n\t\twould install files anywhere in the user's home directory upon extraction.</p>\n\n\t  <h3>Proof of concept</h3>\n\t  <p>For testing, an example of malicious archive can be found at\n\t      https://github.com/jwilk/traversal-archives/releases/download/0/relative2.zip</p>\n\n\t  <h3>Impact</h3>\n\t  <p>Users can unwillingly install files like a modified .bashrc, or a malicious\n\t      script placed in ~/.config/autostart</p>\n\n\t  <h3>Workaround</h3>\n\t  <p>Users should not use the 'Extract' context menu from the Dolphin file manager.\n\t    Before extracting a downloaded archive using the Ark GUI, users should inspect it\n\t      to make sure it doesn't contain entries with \"../\" in the file path.</p>\n\n\t  <h3>Solution</h3>\n\t  <p>Ark 20.08.0 prevents loading of malicious archives and shows a warning message\n\t    to the users.</p>\n\n\t  <p>Alternatively,\n\t    https://invent.kde.org/utilities/ark/-/commit/0df592524fed305d6fbe74ddf8a196bc9ffdb92f\n\t      can be applied to previous releases.</p>\n\n\t  <h3>Credits</h3>\n\t  <p>Thanks to Dominik Penner for finding and reporting this issue and thanks to\n\t    Elvis Angelaccio and Albert Astals Cid for fixing it.</p>\n      </blockquote>\n    "
+	},
+	"references": {
+		"url": [
+			"https://kde.org/info/security/advisory-20200730-1.txt"
+		],
+		"cvename": [
+			"CVE-2020-16116"
+		]
+	},
+	"dates": {
+		"discovery": "2020-07-30",
+		"entry": "2020-07-30"
+	}
 }

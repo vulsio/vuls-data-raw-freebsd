@@ -1,41 +1,41 @@
 {
-  "vid": "73e9a137-6007-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Denial of service attack against sshd(8)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.0_12",
-          "ge": "10.0"
-        },
-        {
-          "lt": "9.2_15",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.1_22",
-          "ge": "9.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Although OpenSSH is not multithreaded, when OpenSSH is\n\tcompiled with Kerberos support, the Heimdal libraries bring\n\tin the POSIX thread library as a dependency. Due to incorrect\n\tlibrary ordering while linking sshd(8), symbols in the C\n\tlibrary which are shadowed by the POSIX thread library may\n\tnot be resolved correctly at run time.</p>\n\t<p>Note that this problem is specific to the FreeBSD build\n\tsystem and does not affect other operating systems or the\n\tversion of OpenSSH available from the FreeBSD ports tree.</p>\n\t<h1>Impact:</h1>\n\t<p>An incorrectly linked sshd(8) child process may deadlock\n\twhile handling an incoming connection. The connection may\n\tthen time out or be interrupted by the client, leaving the\n\tdeadlocked sshd(8) child process behind. Eventually, the\n\tsshd(8) parent process stops accepting new connections.</p>\n\t<p>An attacker may take advantage of this by repeatedly\n\tconnecting and then dropping the connection after having\n\tbegun, but not completed, the authentication process.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-8475"
-    ],
-    "freebsd_sa": [
-      "SA-14:24.sshd"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-11-04",
-    "entry": "2016-08-11"
-  }
+	"vid": "73e9a137-6007-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Denial of service attack against sshd(8)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.0_12",
+					"ge": "10.0"
+				},
+				{
+					"lt": "9.2_15",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.1_22",
+					"ge": "9.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Although OpenSSH is not multithreaded, when OpenSSH is\n\tcompiled with Kerberos support, the Heimdal libraries bring\n\tin the POSIX thread library as a dependency. Due to incorrect\n\tlibrary ordering while linking sshd(8), symbols in the C\n\tlibrary which are shadowed by the POSIX thread library may\n\tnot be resolved correctly at run time.</p>\n\t<p>Note that this problem is specific to the FreeBSD build\n\tsystem and does not affect other operating systems or the\n\tversion of OpenSSH available from the FreeBSD ports tree.</p>\n\t<h1>Impact:</h1>\n\t<p>An incorrectly linked sshd(8) child process may deadlock\n\twhile handling an incoming connection. The connection may\n\tthen time out or be interrupted by the client, leaving the\n\tdeadlocked sshd(8) child process behind. Eventually, the\n\tsshd(8) parent process stops accepting new connections.</p>\n\t<p>An attacker may take advantage of this by repeatedly\n\tconnecting and then dropping the connection after having\n\tbegun, but not completed, the authentication process.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-8475"
+		],
+		"freebsd_sa": [
+			"SA-14:24.sshd"
+		]
+	},
+	"dates": {
+		"discovery": "2014-11-04",
+		"entry": "2016-08-11"
+	}
 }

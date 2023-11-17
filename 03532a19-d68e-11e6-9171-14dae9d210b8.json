@@ -1,37 +1,37 @@
 {
-  "vid": "03532a19-d68e-11e6-9171-14dae9d210b8",
-  "topic": "lynx -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "lynx"
-      ],
-      "range": [
-        {
-          "lt": "2.8.8.2_5,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Oracle reports:</p>\n\t<blockquote>\n\t  <p>Lynx is vulnerable to POODLE by still supporting vulnerable\n\t    version of SSL. Lynx is also vulnerable to URL attacks by incorrectly\n\t    parsing hostnames ending with an '?'.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://hg.java.net/hg/solaris-userland~gate/file/bc5351dcb9ac/components/lynx/patches/02-init-openssl.patch",
-      "https://hg.java.net/hg/solaris-userland~gate/file/0a979060f73b/components/lynx/patches/05-fix-CVE-2016-9179.patch"
-    ],
-    "cvename": [
-      "CVE-2014-3566",
-      "CVE-2016-9179"
-    ],
-    "freebsd_pr": [
-      "ports/215464"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-10-26",
-    "entry": "2017-01-09"
-  }
+	"vid": "03532a19-d68e-11e6-9171-14dae9d210b8",
+	"topic": "lynx -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"lynx"
+			],
+			"range": [
+				{
+					"lt": "2.8.8.2_5,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Oracle reports:</p>\n\t<blockquote>\n\t  <p>Lynx is vulnerable to POODLE by still supporting vulnerable\n\t    version of SSL. Lynx is also vulnerable to URL attacks by incorrectly\n\t    parsing hostnames ending with an '?'.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://hg.java.net/hg/solaris-userland~gate/file/bc5351dcb9ac/components/lynx/patches/02-init-openssl.patch",
+			"https://hg.java.net/hg/solaris-userland~gate/file/0a979060f73b/components/lynx/patches/05-fix-CVE-2016-9179.patch"
+		],
+		"cvename": [
+			"CVE-2014-3566",
+			"CVE-2016-9179"
+		],
+		"freebsd_pr": [
+			"ports/215464"
+		]
+	},
+	"dates": {
+		"discovery": "2016-10-26",
+		"entry": "2017-01-09"
+	}
 }

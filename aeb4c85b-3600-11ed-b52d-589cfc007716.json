@@ -1,43 +1,43 @@
 {
-  "vid": "aeb4c85b-3600-11ed-b52d-589cfc007716",
-  "topic": "puppetdb -- Potential SQL injection",
-  "affects": [
-    {
-      "name": [
-        "puppetdb6"
-      ],
-      "range": [
-        {
-          "lt": "6.22.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "puppetdb7"
-      ],
-      "range": [
-        {
-          "lt": "7.11.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Puppet reports:</p>\n\t<blockquote cite=\"https://puppet.com/docs/puppetdb/7/release_notes.html#puppetdb-7111\">\n\t  <p>The org.postgresql/postgresql driver has been updated to version 42.4.1 to address CVE-2022-31197, which is an SQL injection risk that according to the CVE report, can only be exploited if an attacker controls the database to the extent that they can adjust relevant tables to have \"malicious\" column names.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2022-31197",
-      "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-r38f-c4h4-hqq2"
-    ],
-    "cvename": [
-      "CVE-2022-31197"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-08-03",
-    "entry": "2022-09-16"
-  }
+	"vid": "aeb4c85b-3600-11ed-b52d-589cfc007716",
+	"topic": "puppetdb -- Potential SQL injection",
+	"affects": [
+		{
+			"name": [
+				"puppetdb6"
+			],
+			"range": [
+				{
+					"lt": "6.22.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"puppetdb7"
+			],
+			"range": [
+				{
+					"lt": "7.11.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Puppet reports:</p>\n\t<blockquote cite=\"https://puppet.com/docs/puppetdb/7/release_notes.html#puppetdb-7111\">\n\t  <p>The org.postgresql/postgresql driver has been updated to version 42.4.1 to address CVE-2022-31197, which is an SQL injection risk that according to the CVE report, can only be exploited if an attacker controls the database to the extent that they can adjust relevant tables to have \"malicious\" column names.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2022-31197",
+			"https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-r38f-c4h4-hqq2"
+		],
+		"cvename": [
+			"CVE-2022-31197"
+		]
+	},
+	"dates": {
+		"discovery": "2022-08-03",
+		"entry": "2022-09-16"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "vid": "9a71953a-474a-11e5-adde-14dae9d210b8",
-  "topic": "libpgf -- use-after-free",
-  "affects": [
-    {
-      "name": [
-        "libpgf"
-      ],
-      "range": [
-        {
-          "le": "6.14.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Pengsu Cheng reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/404\">\n\t  <p>An use-after-free issue in Decoder.cpp was reported to\n\t    upstream. The problem is due to lack of validation of ColorTableSize.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2015/q3/404",
-      "https://sourceforge.net/p/libpgf/code/147/",
-      "https://sourceforge.net/p/libpgf/code/148/"
-    ],
-    "cvename": [
-      "CVE-2015-6673"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-08-08",
-    "entry": "2015-08-20",
-    "modified": "2015-08-26"
-  }
+	"vid": "9a71953a-474a-11e5-adde-14dae9d210b8",
+	"topic": "libpgf -- use-after-free",
+	"affects": [
+		{
+			"name": [
+				"libpgf"
+			],
+			"range": [
+				{
+					"le": "6.14.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Pengsu Cheng reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/404\">\n\t  <p>An use-after-free issue in Decoder.cpp was reported to\n\t    upstream. The problem is due to lack of validation of ColorTableSize.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2015/q3/404",
+			"https://sourceforge.net/p/libpgf/code/147/",
+			"https://sourceforge.net/p/libpgf/code/148/"
+		],
+		"cvename": [
+			"CVE-2015-6673"
+		]
+	},
+	"dates": {
+		"discovery": "2015-08-08",
+		"entry": "2015-08-20",
+		"modified": "2015-08-26"
+	}
 }

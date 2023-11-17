@@ -1,35 +1,35 @@
 {
-  "vid": "fcbf56dd-e667-11de-920a-00248c9b4be7",
-  "topic": "piwik -- php code execution",
-  "affects": [
-    {
-      "name": [
-        "piwik"
-      ],
-      "range": [
-        {
-          "lt": "0.5.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/37649\">\n\t  <p>Stefan Esser has reported a vulnerability in Piwik, which can be\n\t    exploited by malicious people to compromise a vulnerable system.</p>\n\t  <p>The vulnerability is caused due to the core/Cookie.php script using\n\t    \"unserialize()\" with user controlled input. This can be exploited to\n\t    e.g. execute arbitrary PHP code via the \"__wakeup()\" or \"__destruct()\"\n\t    methods of a serialized object passed via an HTTP cookie.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/37649/",
-      "http://www.sektioneins.de/de/advisories/advisory-032009-piwik-cookie-unserialize-vulnerability/index.html",
-      "http://piwik.org/blog/2009/12/piwik-response-to-shocking-news-in-php-exploitation/"
-    ],
-    "cvename": [
-      "CVE-2009-4137"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-12-10",
-    "entry": "2009-12-11",
-    "modified": "2010-05-02"
-  }
+	"vid": "fcbf56dd-e667-11de-920a-00248c9b4be7",
+	"topic": "piwik -- php code execution",
+	"affects": [
+		{
+			"name": [
+				"piwik"
+			],
+			"range": [
+				{
+					"lt": "0.5.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/37649\">\n\t  <p>Stefan Esser has reported a vulnerability in Piwik, which can be\n\t    exploited by malicious people to compromise a vulnerable system.</p>\n\t  <p>The vulnerability is caused due to the core/Cookie.php script using\n\t    \"unserialize()\" with user controlled input. This can be exploited to\n\t    e.g. execute arbitrary PHP code via the \"__wakeup()\" or \"__destruct()\"\n\t    methods of a serialized object passed via an HTTP cookie.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/37649/",
+			"http://www.sektioneins.de/de/advisories/advisory-032009-piwik-cookie-unserialize-vulnerability/index.html",
+			"http://piwik.org/blog/2009/12/piwik-response-to-shocking-news-in-php-exploitation/"
+		],
+		"cvename": [
+			"CVE-2009-4137"
+		]
+	},
+	"dates": {
+		"discovery": "2009-12-10",
+		"entry": "2009-12-11",
+		"modified": "2010-05-02"
+	}
 }

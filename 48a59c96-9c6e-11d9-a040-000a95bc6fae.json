@@ -1,42 +1,42 @@
 {
-  "vid": "48a59c96-9c6e-11d9-a040-000a95bc6fae",
-  "topic": "wine -- information disclosure due to insecure temporary file handling",
-  "affects": [
-    {
-      "name": [
-        "wine"
-      ],
-      "range": [
-        {
-          "lt": "20050310"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Due to insecure temporary file creation in the Wine Windows\n\t  emulator, it is possible for any user to read potentially\n\t  sensitive information from temporary registry files.</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111082537009842\">\n\t  <p>When a Win32 application is launched by wine, wine makes\n\t    a dump of the Windows registry in /tmp with name\n\t    regxxxxyyyy.tmp , where xxxxxx is the pid in hexadecimal\n\t    value of the current wine process and yyyy is an integer\n\t    value usually equal to zero.</p>\n\t  <p>regxxxxyyyy.tmp is created with 0644 (-rw-r--r--)\n\t    permissions.  This could represent a security problem in a\n\t    multi-user environment.  Indeed, any local user could\n\t    access to windows regstry's dump and get sensitive\n\t    information, like passwords and other private data.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.winehq.org/show_bug.cgi?id=2715",
-      "http://www.securitytracker.com/alerts/2005/Mar/1013428.html",
-      "http://www.zone-h.org/advisories/read/id=7300",
-      "http://www.securityfocus.com/bid/12791",
-      "http://xforce.iss.net/xforce/xfdb/19697"
-    ],
-    "cvename": [
-      "CVE-2005-0787"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111082537009842",
-        "msgid": "20050314135701.30231.qmail@www.securityfocus.com"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-03-13",
-    "entry": "2005-03-24"
-  }
+	"vid": "48a59c96-9c6e-11d9-a040-000a95bc6fae",
+	"topic": "wine -- information disclosure due to insecure temporary file handling",
+	"affects": [
+		{
+			"name": [
+				"wine"
+			],
+			"range": [
+				{
+					"lt": "20050310"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Due to insecure temporary file creation in the Wine Windows\n\t  emulator, it is possible for any user to read potentially\n\t  sensitive information from temporary registry files.</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111082537009842\">\n\t  <p>When a Win32 application is launched by wine, wine makes\n\t    a dump of the Windows registry in /tmp with name\n\t    regxxxxyyyy.tmp , where xxxxxx is the pid in hexadecimal\n\t    value of the current wine process and yyyy is an integer\n\t    value usually equal to zero.</p>\n\t  <p>regxxxxyyyy.tmp is created with 0644 (-rw-r--r--)\n\t    permissions.  This could represent a security problem in a\n\t    multi-user environment.  Indeed, any local user could\n\t    access to windows regstry's dump and get sensitive\n\t    information, like passwords and other private data.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.winehq.org/show_bug.cgi?id=2715",
+			"http://www.securitytracker.com/alerts/2005/Mar/1013428.html",
+			"http://www.zone-h.org/advisories/read/id=7300",
+			"http://www.securityfocus.com/bid/12791",
+			"http://xforce.iss.net/xforce/xfdb/19697"
+		],
+		"cvename": [
+			"CVE-2005-0787"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111082537009842",
+				"msgid": "20050314135701.30231.qmail@www.securityfocus.com"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-03-13",
+		"entry": "2005-03-24"
+	}
 }

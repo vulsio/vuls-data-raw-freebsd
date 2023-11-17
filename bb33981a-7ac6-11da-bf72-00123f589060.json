@@ -1,64 +1,64 @@
 {
-  "vid": "bb33981a-7ac6-11da-bf72-00123f589060",
-  "topic": "perl, webmin, usermin -- perl format string integer wrap vulnerability",
-  "affects": [
-    {
-      "name": [
-        "perl"
-      ],
-      "range": [
-        {
-          "lt": "5.6.2",
-          "ge": "5.6.0"
-        },
-        {
-          "lt": "5.8.7_1",
-          "ge": "5.8.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "webmin"
-      ],
-      "range": [
-        {
-          "lt": "1.250"
-        }
-      ]
-    },
-    {
-      "name": [
-        "usermin"
-      ],
-      "range": [
-        {
-          "lt": "1.180"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Perl Development page reports:</p>\n\t<blockquote cite=\"http://dev.perl.org/perl5/news/2005/perl_patches_fix_sprintf_buffer.html\">\n\t  <p>Dyad Security recently released a security advisory explaining how\n\t    in certain cases, a carefully crafted format string passed to\n\t    sprintf can cause a buffer overflow. This buffer overflow can then\n\t    be used by an attacker to execute code on the machine.  This was\n\t    discovered in the context of a design problem with the Webmin\n\t    administration package that allowed a malicious user to pass\n\t    unchecked data into sprintf.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://dev.perl.org/perl5/news/2005/perl_patches_fix_sprintf_buffer.html",
-      "http://www.dyadsecurity.com/perl-0002.html",
-      "http://www.dyadsecurity.com/webmin-0001.html",
-      "http://www.webmin.com/security.html"
-    ],
-    "cvename": [
-      "CVE-2005-3912",
-      "CVE-2005-3962"
-    ],
-    "bid": [
-      "15629"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-09-23",
-    "entry": "2006-02-15"
-  }
+	"vid": "bb33981a-7ac6-11da-bf72-00123f589060",
+	"topic": "perl, webmin, usermin -- perl format string integer wrap vulnerability",
+	"affects": [
+		{
+			"name": [
+				"perl"
+			],
+			"range": [
+				{
+					"lt": "5.6.2",
+					"ge": "5.6.0"
+				},
+				{
+					"lt": "5.8.7_1",
+					"ge": "5.8.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"webmin"
+			],
+			"range": [
+				{
+					"lt": "1.250"
+				}
+			]
+		},
+		{
+			"name": [
+				"usermin"
+			],
+			"range": [
+				{
+					"lt": "1.180"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Perl Development page reports:</p>\n\t<blockquote cite=\"http://dev.perl.org/perl5/news/2005/perl_patches_fix_sprintf_buffer.html\">\n\t  <p>Dyad Security recently released a security advisory explaining how\n\t    in certain cases, a carefully crafted format string passed to\n\t    sprintf can cause a buffer overflow. This buffer overflow can then\n\t    be used by an attacker to execute code on the machine.  This was\n\t    discovered in the context of a design problem with the Webmin\n\t    administration package that allowed a malicious user to pass\n\t    unchecked data into sprintf.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://dev.perl.org/perl5/news/2005/perl_patches_fix_sprintf_buffer.html",
+			"http://www.dyadsecurity.com/perl-0002.html",
+			"http://www.dyadsecurity.com/webmin-0001.html",
+			"http://www.webmin.com/security.html"
+		],
+		"cvename": [
+			"CVE-2005-3912",
+			"CVE-2005-3962"
+		],
+		"bid": [
+			"15629"
+		]
+	},
+	"dates": {
+		"discovery": "2005-09-23",
+		"entry": "2006-02-15"
+	}
 }

@@ -1,39 +1,39 @@
 {
-  "vid": "13d6d997-f455-11dd-8516-001b77d09812",
-  "topic": "sudo -- certain authorized users could run commands as any user",
-  "affects": [
-    {
-      "name": [
-        "sudo"
-      ],
-      "range": [
-        {
-          "lt": "1.6.9.20",
-          "ge": "1.6.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.gratisoft.us/pipermail/sudo-announce/2009-February/000085.html\">\n\t  <p>A bug was introduced in Sudo's group matching code in version\n\t    1.6.9 when support for matching based on the supplemental group\n\t    vector was added.  This bug may allow certain users listed in\n\t    the sudoers file to run a command as a different user than their\n\t    access rule specifies.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2009-0034"
-    ],
-    "mlist": [
-      {
-        "text": "http://www.gratisoft.us/pipermail/sudo-announce/2009-February/000085.html",
-        "msgid": "200902041802.n14I2llS024155@core.courtesan.com"
-      }
-    ],
-    "bid": [
-      "33517"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-02-04",
-    "entry": "2009-02-06"
-  }
+	"vid": "13d6d997-f455-11dd-8516-001b77d09812",
+	"topic": "sudo -- certain authorized users could run commands as any user",
+	"affects": [
+		{
+			"name": [
+				"sudo"
+			],
+			"range": [
+				{
+					"lt": "1.6.9.20",
+					"ge": "1.6.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.gratisoft.us/pipermail/sudo-announce/2009-February/000085.html\">\n\t  <p>A bug was introduced in Sudo's group matching code in version\n\t    1.6.9 when support for matching based on the supplemental group\n\t    vector was added.  This bug may allow certain users listed in\n\t    the sudoers file to run a command as a different user than their\n\t    access rule specifies.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2009-0034"
+		],
+		"mlist": [
+			{
+				"text": "http://www.gratisoft.us/pipermail/sudo-announce/2009-February/000085.html",
+				"msgid": "200902041802.n14I2llS024155@core.courtesan.com"
+			}
+		],
+		"bid": [
+			"33517"
+		]
+	},
+	"dates": {
+		"discovery": "2009-02-04",
+		"entry": "2009-02-06"
+	}
 }

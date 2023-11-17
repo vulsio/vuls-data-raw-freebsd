@@ -1,37 +1,37 @@
 {
-  "vid": "c3fb48cc-a2ff-11ed-8fbc-6cf0490a8c18",
-  "topic": "Spotipy -- Path traversal vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py37-spotipy",
-        "py38-spotipy",
-        "py39-spotipy",
-        "py310-spotipy",
-        "py311-spotipy"
-      ],
-      "range": [
-        {
-          "le": "2.22.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>StÃ©phane Bruckert</p>\n  <blockquote cite=\"https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-q764-g6fm-555v\">\n\t  <p>If a malicious URI is passed to the library, the library can be tricked into performing an operation on a different API endpoint than intended.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23608",
-      "https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-q764-g6fm-555v"
-    ],
-    "cvename": [
-      "CVE-2023-23608"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-01-16",
-    "entry": "2023-02-02"
-  }
+	"vid": "c3fb48cc-a2ff-11ed-8fbc-6cf0490a8c18",
+	"topic": "Spotipy -- Path traversal vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py37-spotipy",
+				"py38-spotipy",
+				"py39-spotipy",
+				"py310-spotipy",
+				"py311-spotipy"
+			],
+			"range": [
+				{
+					"le": "2.22.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>StÃ©phane Bruckert</p>\n  <blockquote cite=\"https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-q764-g6fm-555v\">\n\t  <p>If a malicious URI is passed to the library, the library can be tricked into performing an operation on a different API endpoint than intended.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23608",
+			"https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-q764-g6fm-555v"
+		],
+		"cvename": [
+			"CVE-2023-23608"
+		]
+	},
+	"dates": {
+		"discovery": "2023-01-16",
+		"entry": "2023-02-02"
+	}
 }

@@ -1,48 +1,48 @@
 {
-  "vid": "c01170bf-4990-11da-a1b8-000854d03344",
-  "topic": "lynx -- remote buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "lynx",
-        "ja-lynx"
-      ],
-      "range": [
-        {
-          "lt": "2.8.5_1"
-        },
-        {
-          "lt": "2.8.6d14",
-          "gt": "2.8.6*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "lynx-ssl"
-      ],
-      "range": [
-        {
-          "lt": "2.8.5_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ulf Härnhammar reports:</p>\n\t<blockquote cite=\"http://lists.grok.org.uk/pipermail/full-disclosure/2005-October/038019.html\">\n\t  <p>When Lynx connects to an NNTP server to fetch information\n\t    about the available articles in a newsgroup, it will\n\t    call a function called HTrjis() with the information\n\t    from certain article headers. The function adds missing\n\t    ESC characters to certain data, to support Asian character\n\t    sets. However, it does not check if it writes outside\n\t    of the char array buf, and that causes a remote stack-based\n\t    buffer overflow.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.grok.org.uk/pipermail/full-disclosure/2005-October/038019.html"
-    ],
-    "cvename": [
-      "CVE-2005-3120"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-10-17",
-    "entry": "2005-10-30",
-    "modified": "2006-10-05"
-  }
+	"vid": "c01170bf-4990-11da-a1b8-000854d03344",
+	"topic": "lynx -- remote buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"lynx",
+				"ja-lynx"
+			],
+			"range": [
+				{
+					"lt": "2.8.5_1"
+				},
+				{
+					"lt": "2.8.6d14",
+					"gt": "2.8.6*"
+				}
+			]
+		},
+		{
+			"name": [
+				"lynx-ssl"
+			],
+			"range": [
+				{
+					"lt": "2.8.5_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ulf Härnhammar reports:</p>\n\t<blockquote cite=\"http://lists.grok.org.uk/pipermail/full-disclosure/2005-October/038019.html\">\n\t  <p>When Lynx connects to an NNTP server to fetch information\n\t    about the available articles in a newsgroup, it will\n\t    call a function called HTrjis() with the information\n\t    from certain article headers. The function adds missing\n\t    ESC characters to certain data, to support Asian character\n\t    sets. However, it does not check if it writes outside\n\t    of the char array buf, and that causes a remote stack-based\n\t    buffer overflow.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.grok.org.uk/pipermail/full-disclosure/2005-October/038019.html"
+		],
+		"cvename": [
+			"CVE-2005-3120"
+		]
+	},
+	"dates": {
+		"discovery": "2005-10-17",
+		"entry": "2005-10-30",
+		"modified": "2006-10-05"
+	}
 }

@@ -1,36 +1,36 @@
 {
-  "vid": "951b513a-9f42-436d-888d-2162615d0fe4",
-  "topic": "py-pymatgen -- regular expression denial of service",
-  "affects": [
-    {
-      "name": [
-        "py37-pymatgen",
-        "py38-pymatgen",
-        "py39-pymatgen",
-        "py310-pymatgen",
-        "py311-pymatgen"
-      ],
-      "range": [
-        {
-          "le": "2022.9.21"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32\">\n      <p>An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the pymatgen PyPI package, when an attacker is able to supply arbitrary input to the GaussianInput.from_string method.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32"
-    ],
-    "cvename": [
-      "CVE-2022-42964"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-11-10",
-    "entry": "2023-04-09"
-  }
+	"vid": "951b513a-9f42-436d-888d-2162615d0fe4",
+	"topic": "py-pymatgen -- regular expression denial of service",
+	"affects": [
+		{
+			"name": [
+				"py37-pymatgen",
+				"py38-pymatgen",
+				"py39-pymatgen",
+				"py310-pymatgen",
+				"py311-pymatgen"
+			],
+			"range": [
+				{
+					"le": "2022.9.21"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32\">\n      <p>An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the pymatgen PyPI package, when an attacker is able to supply arbitrary input to the GaussianInput.from_string method.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32"
+		],
+		"cvename": [
+			"CVE-2022-42964"
+		]
+	},
+	"dates": {
+		"discovery": "2022-11-10",
+		"entry": "2023-04-09"
+	}
 }

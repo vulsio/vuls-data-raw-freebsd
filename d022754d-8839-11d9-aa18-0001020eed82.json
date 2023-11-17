@@ -1,104 +1,104 @@
 {
-  "vid": "d022754d-8839-11d9-aa18-0001020eed82",
-  "topic": "mozilla -- insecure temporary directory vulnerability",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.6,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "de-netscape7",
-        "fr-linux-netscape",
-        "fr-netscape7",
-        "ja-linux-netscape",
-        "ja-netscape7",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk1",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-28.html\">\n\t  <p>A predictable name is used for the plugin temporary\n\t    directory. A malicious local user could symlink this to\n\t    the victim's home directory and wait for the victim to run\n\t    Firefox. When Firefox shuts down the victim's directory\n\t    would be erased.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/security/announce/mfsa2005-28.html",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=281284"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-06",
-    "entry": "2005-02-26"
-  }
+	"vid": "d022754d-8839-11d9-aa18-0001020eed82",
+	"topic": "mozilla -- insecure temporary directory vulnerability",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.6,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"de-netscape7",
+				"fr-linux-netscape",
+				"fr-netscape7",
+				"ja-linux-netscape",
+				"ja-netscape7",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk1",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-28.html\">\n\t  <p>A predictable name is used for the plugin temporary\n\t    directory. A malicious local user could symlink this to\n\t    the victim's home directory and wait for the victim to run\n\t    Firefox. When Firefox shuts down the victim's directory\n\t    would be erased.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/security/announce/mfsa2005-28.html",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=281284"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-06",
+		"entry": "2005-02-26"
+	}
 }

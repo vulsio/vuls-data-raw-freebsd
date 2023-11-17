@@ -1,44 +1,44 @@
 {
-  "vid": "6a164d84-2f7f-11d9-a9e7-0001020eed82",
-  "topic": "postgresql-contrib -- insecure temporary file creation",
-  "affects": [
-    {
-      "name": [
-        "postgresql-contrib"
-      ],
-      "range": [
-        {
-          "lt": "7.2.6"
-        },
-        {
-          "lt": "7.3.8",
-          "gt": "7.3.*"
-        },
-        {
-          "lt": "7.4.6",
-          "gt": "7.4.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The make_oidjoins_check script in the PostgreSQL RDBMS has\n\t  insecure handling of temporary files, which could lead to an\n\t  attacker overwriting arbitrary files with the credentials of\n\t  the user running the make_oidjoins_check script.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.postgresql.org/news/234.html",
-      "http://www.trustix.net/errata/2004/0050/"
-    ],
-    "cvename": [
-      "CVE-2004-0977"
-    ],
-    "bid": [
-      "11295"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-10",
-    "entry": "2004-11-06"
-  }
+	"vid": "6a164d84-2f7f-11d9-a9e7-0001020eed82",
+	"topic": "postgresql-contrib -- insecure temporary file creation",
+	"affects": [
+		{
+			"name": [
+				"postgresql-contrib"
+			],
+			"range": [
+				{
+					"lt": "7.2.6"
+				},
+				{
+					"lt": "7.3.8",
+					"gt": "7.3.*"
+				},
+				{
+					"lt": "7.4.6",
+					"gt": "7.4.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The make_oidjoins_check script in the PostgreSQL RDBMS has\n\t  insecure handling of temporary files, which could lead to an\n\t  attacker overwriting arbitrary files with the credentials of\n\t  the user running the make_oidjoins_check script.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.postgresql.org/news/234.html",
+			"http://www.trustix.net/errata/2004/0050/"
+		],
+		"cvename": [
+			"CVE-2004-0977"
+		],
+		"bid": [
+			"11295"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-10",
+		"entry": "2004-11-06"
+	}
 }

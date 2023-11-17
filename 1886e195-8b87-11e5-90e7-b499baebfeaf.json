@@ -1,35 +1,35 @@
 {
-  "vid": "1886e195-8b87-11e5-90e7-b499baebfeaf",
-  "topic": "libpng buffer overflow in png_set_PLTE",
-  "affects": [
-    {
-      "name": [
-        "png"
-      ],
-      "range": [
-        {
-          "lt": "1.6.20"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n      <p>libpng reports:</p>\n      <blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/11/12/2\">\n       <p>CVE for a vulnerability in libpng, all versions, in the\n       png_set_PLTE/png_get_PLTE functions.  These functions failed to check for\n       an out-of-range palette when reading or writing PNG files with a bit_depth\n       less than 8.  Some applications might read the bit depth from the IHDR\n       chunk and allocate memory for a 2^N entry palette, while libpng can return\n       a palette with up to 256 entries even when the bit depth is less than 8.</p>\n      </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2015/11/12/2",
-      "http://www.openwall.com/lists/oss-security/2015/12/03/6"
-    ],
-    "cvename": [
-      "CVE-2015-8126",
-      "CVE-2015-8472"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-11-15",
-    "entry": "2015-11-15",
-    "modified": "2015-12-08"
-  }
+	"vid": "1886e195-8b87-11e5-90e7-b499baebfeaf",
+	"topic": "libpng buffer overflow in png_set_PLTE",
+	"affects": [
+		{
+			"name": [
+				"png"
+			],
+			"range": [
+				{
+					"lt": "1.6.20"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n      <p>libpng reports:</p>\n      <blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/11/12/2\">\n       <p>CVE for a vulnerability in libpng, all versions, in the\n       png_set_PLTE/png_get_PLTE functions.  These functions failed to check for\n       an out-of-range palette when reading or writing PNG files with a bit_depth\n       less than 8.  Some applications might read the bit depth from the IHDR\n       chunk and allocate memory for a 2^N entry palette, while libpng can return\n       a palette with up to 256 entries even when the bit depth is less than 8.</p>\n      </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2015/11/12/2",
+			"http://www.openwall.com/lists/oss-security/2015/12/03/6"
+		],
+		"cvename": [
+			"CVE-2015-8126",
+			"CVE-2015-8472"
+		]
+	},
+	"dates": {
+		"discovery": "2015-11-15",
+		"entry": "2015-11-15",
+		"modified": "2015-12-08"
+	}
 }

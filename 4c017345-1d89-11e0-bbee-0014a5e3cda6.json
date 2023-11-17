@@ -1,36 +1,36 @@
 {
-  "vid": "4c017345-1d89-11e0-bbee-0014a5e3cda6",
-  "topic": "MoinMoin -- cross-site scripting vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "moinmoin"
-      ],
-      "range": [
-        {
-          "lt": "1.9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The MoinMoin developers reports:</p>\n\t<blockquote cite=\"http://hg.moinmo.in/moin/1.9/raw-file/1.9.3/docs/CHANGES\">\n\t  <p>Fix XSS in Despam action (CVE-2010-0828)</p>\n\t</blockquote>\n\t<blockquote cite=\"http://moinmo.in/MoinMoinBugs/1.9.2UnescapedInputForThemeAddMsg\">\n\t  <p>Fix XSS issues</p>\n\t  <ul>\n\t    <li>by escaping template name in messages</li>\n\t    <li>by fixing other places that had similar issues</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://hg.moinmo.in/moin/1.9/raw-file/1.9.3/docs/CHANGES",
-      "http://moinmo.in/MoinMoinBugs/1.9.2UnescapedInputForThemeAddMsg"
-    ],
-    "cvename": [
-      "CVE-2010-0828"
-    ],
-    "bid": [
-      "39110"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-04-05",
-    "entry": "2011-01-11"
-  }
+	"vid": "4c017345-1d89-11e0-bbee-0014a5e3cda6",
+	"topic": "MoinMoin -- cross-site scripting vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"moinmoin"
+			],
+			"range": [
+				{
+					"lt": "1.9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The MoinMoin developers reports:</p>\n\t<blockquote cite=\"http://hg.moinmo.in/moin/1.9/raw-file/1.9.3/docs/CHANGES\">\n\t  <p>Fix XSS in Despam action (CVE-2010-0828)</p>\n\t</blockquote>\n\t<blockquote cite=\"http://moinmo.in/MoinMoinBugs/1.9.2UnescapedInputForThemeAddMsg\">\n\t  <p>Fix XSS issues</p>\n\t  <ul>\n\t    <li>by escaping template name in messages</li>\n\t    <li>by fixing other places that had similar issues</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://hg.moinmo.in/moin/1.9/raw-file/1.9.3/docs/CHANGES",
+			"http://moinmo.in/MoinMoinBugs/1.9.2UnescapedInputForThemeAddMsg"
+		],
+		"cvename": [
+			"CVE-2010-0828"
+		],
+		"bid": [
+			"39110"
+		]
+	},
+	"dates": {
+		"discovery": "2010-04-05",
+		"entry": "2011-01-11"
+	}
 }

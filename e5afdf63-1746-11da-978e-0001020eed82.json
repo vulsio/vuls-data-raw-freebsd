@@ -1,38 +1,38 @@
 {
-  "vid": "e5afdf63-1746-11da-978e-0001020eed82",
-  "topic": "evolution -- remote format string vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "evolution"
-      ],
-      "range": [
-        {
-          "lt": "2.2.3_1",
-          "gt": "1.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A SITIC Vulnerability Advisory reports:</p>\n\t<blockquote cite=\"http://www.sitic.se/eng/advisories_and_recommendations/sa05-001.html\">\n\t  <p>Evolution suffers from several format string bugs when\n\t    handling data from remote sources. These bugs lead to\n\t    crashes or the execution of arbitrary assembly language\n\t    code.</p>\n\t  <ol>\n\t    <li>The first format string bug occurs when viewing the\n\t      full vCard data attached to an e-mail message.</li>\n\t    <li>The second format string bug occurs when displaying\n\t      contact data from remote LDAP servers.</li>\n\t    <li>The third format string bug occurs when displaying\n\t      task list data from remote servers.</li>\n\t    <li>The fourth, and least serious, format string bug\n\t      occurs when the user goes to the Calendars tab to save\n\t      task list data that is vulnerable to problem 3\n\t      above. Other calendar entries that do not come from task\n\t      lists are also affected.</li>\n\t  </ol>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.sitic.se/eng/advisories_and_recommendations/sa05-001.html"
-    ],
-    "cvename": [
-      "CVE-2005-2549",
-      "CVE-2005-2550"
-    ],
-    "bid": [
-      "14532"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-08-10",
-    "entry": "2005-08-27",
-    "modified": "2006-03-24"
-  }
+	"vid": "e5afdf63-1746-11da-978e-0001020eed82",
+	"topic": "evolution -- remote format string vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"evolution"
+			],
+			"range": [
+				{
+					"lt": "2.2.3_1",
+					"gt": "1.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A SITIC Vulnerability Advisory reports:</p>\n\t<blockquote cite=\"http://www.sitic.se/eng/advisories_and_recommendations/sa05-001.html\">\n\t  <p>Evolution suffers from several format string bugs when\n\t    handling data from remote sources. These bugs lead to\n\t    crashes or the execution of arbitrary assembly language\n\t    code.</p>\n\t  <ol>\n\t    <li>The first format string bug occurs when viewing the\n\t      full vCard data attached to an e-mail message.</li>\n\t    <li>The second format string bug occurs when displaying\n\t      contact data from remote LDAP servers.</li>\n\t    <li>The third format string bug occurs when displaying\n\t      task list data from remote servers.</li>\n\t    <li>The fourth, and least serious, format string bug\n\t      occurs when the user goes to the Calendars tab to save\n\t      task list data that is vulnerable to problem 3\n\t      above. Other calendar entries that do not come from task\n\t      lists are also affected.</li>\n\t  </ol>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.sitic.se/eng/advisories_and_recommendations/sa05-001.html"
+		],
+		"cvename": [
+			"CVE-2005-2549",
+			"CVE-2005-2550"
+		],
+		"bid": [
+			"14532"
+		]
+	},
+	"dates": {
+		"discovery": "2005-08-10",
+		"entry": "2005-08-27",
+		"modified": "2006-03-24"
+	}
 }

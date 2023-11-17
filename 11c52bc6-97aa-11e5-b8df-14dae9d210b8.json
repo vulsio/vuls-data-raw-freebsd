@@ -1,75 +1,75 @@
 {
-  "vid": "11c52bc6-97aa-11e5-b8df-14dae9d210b8",
-  "topic": "django -- information leak vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py27-django",
-        "py32-django",
-        "py33-django",
-        "py34-django"
-      ],
-      "range": [
-        {
-          "lt": "1.8.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django18",
-        "py32-django18",
-        "py33-django18",
-        "py34-django18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django17",
-        "py32-django17",
-        "py33-django17",
-        "py34-django17"
-      ],
-      "range": [
-        {
-          "lt": "1.7.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django-devel",
-        "py32-django-devel",
-        "py33-django-devel",
-        "py34-django-devel"
-      ],
-      "range": [
-        {
-          "le": "20150709,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tim Graham reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2015/nov/24/security-releases-issued/\">\n\t  <p>If an application allows users to specify an unvalidated\n\t    format for dates and passes this format to the date filter, e.g. {{\n\t    last_updated|date:user_date_format }}, then a malicious user could\n\t    obtain any secret in the application's settings by specifying a settings\n\t    key instead of a date format. e.g. \"SECRET_KEY\" instead of \"j/m/Y\".</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.djangoproject.com/weblog/2015/nov/24/security-releases-issued/"
-    ],
-    "cvename": [
-      "CVE-2015-8213"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-11-24",
-    "entry": "2015-11-30",
-    "modified": "2015-12-24"
-  }
+	"vid": "11c52bc6-97aa-11e5-b8df-14dae9d210b8",
+	"topic": "django -- information leak vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py27-django",
+				"py32-django",
+				"py33-django",
+				"py34-django"
+			],
+			"range": [
+				{
+					"lt": "1.8.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django18",
+				"py32-django18",
+				"py33-django18",
+				"py34-django18"
+			],
+			"range": [
+				{
+					"lt": "1.8.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django17",
+				"py32-django17",
+				"py33-django17",
+				"py34-django17"
+			],
+			"range": [
+				{
+					"lt": "1.7.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django-devel",
+				"py32-django-devel",
+				"py33-django-devel",
+				"py34-django-devel"
+			],
+			"range": [
+				{
+					"le": "20150709,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tim Graham reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2015/nov/24/security-releases-issued/\">\n\t  <p>If an application allows users to specify an unvalidated\n\t    format for dates and passes this format to the date filter, e.g. {{\n\t    last_updated|date:user_date_format }}, then a malicious user could\n\t    obtain any secret in the application's settings by specifying a settings\n\t    key instead of a date format. e.g. \"SECRET_KEY\" instead of \"j/m/Y\".</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2015/nov/24/security-releases-issued/"
+		],
+		"cvename": [
+			"CVE-2015-8213"
+		]
+	},
+	"dates": {
+		"discovery": "2015-11-24",
+		"entry": "2015-11-30",
+		"modified": "2015-12-24"
+	}
 }

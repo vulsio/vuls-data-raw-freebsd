@@ -1,33 +1,33 @@
 {
-  "vid": "fbca6863-e2ad-11ea-9d39-00a09858faf5",
-  "topic": "textproc/elasticsearch6 -- field disclosure flaw",
-  "affects": [
-    {
-      "name": [
-        "elasticsearch6"
-      ],
-      "range": [
-        {
-          "lt": "6.8.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://discuss.elastic.co/t/elastic-stack-7-9-0-and-6-8-12-security-update/245456\">\n\t<p>A field disclosure flaw was found in Elasticsearch when running\n\t  a scrolling search with Field Level Security. If a user runs\n\t  the same query another more privileged user recently ran,\n\t  the scrolling search can leak fields that should be hidden.\n\t  This could result in an attacker gaining additional permissions\n\t  against a restricted index.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://discuss.elastic.co/t/elastic-stack-7-9-0-and-6-8-12-security-update/245456",
-      "https://github.com/elastic/elasticsearch/pull/39490"
-    ],
-    "cvename": [
-      "CVE-2020-7019"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-08-19",
-    "entry": "2020-08-20"
-  }
+	"vid": "fbca6863-e2ad-11ea-9d39-00a09858faf5",
+	"topic": "textproc/elasticsearch6 -- field disclosure flaw",
+	"affects": [
+		{
+			"name": [
+				"elasticsearch6"
+			],
+			"range": [
+				{
+					"lt": "6.8.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://discuss.elastic.co/t/elastic-stack-7-9-0-and-6-8-12-security-update/245456\">\n\t<p>A field disclosure flaw was found in Elasticsearch when running\n\t  a scrolling search with Field Level Security. If a user runs\n\t  the same query another more privileged user recently ran,\n\t  the scrolling search can leak fields that should be hidden.\n\t  This could result in an attacker gaining additional permissions\n\t  against a restricted index.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://discuss.elastic.co/t/elastic-stack-7-9-0-and-6-8-12-security-update/245456",
+			"https://github.com/elastic/elasticsearch/pull/39490"
+		],
+		"cvename": [
+			"CVE-2020-7019"
+		]
+	},
+	"dates": {
+		"discovery": "2020-08-19",
+		"entry": "2020-08-20"
+	}
 }

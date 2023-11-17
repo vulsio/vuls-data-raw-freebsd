@@ -1,45 +1,45 @@
 {
-  "vid": "8d65aa3b-31ce-11ec-8c32-a14e8e520dc7",
-  "topic": "mailman -- brute-force vuln on list admin password, and CSRF vuln in releases before 2.1.35",
-  "affects": [
-    {
-      "name": [
-        "mailman"
-      ],
-      "range": [
-        {
-          "lt": "2.1.35"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mailman-with-htdig"
-      ],
-      "range": [
-        {
-          "lt": "2.1.35"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://bazaar.launchpad.net/~mailman-coders/mailman/2.1/view/1873/NEWS#L8\">\n\t  <p>A potential for for a list member to carry out an off-line brute\n\t    force attack to obtain the list admin password has been reported by\n\t    Andre Protas, Richard Cloke and Andy Nuttall of Apple. This is\n\t    fixed.</p>\n\t  <p>A CSRF attack via the user options page could allow takeover of a\n\t      users account. This is fixed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bazaar.launchpad.net/~mailman-coders/mailman/2.1/view/1873/NEWS#L8",
-      "https://bugs.launchpad.net/mailman/+bug/1947639",
-      "https://bugs.launchpad.net/mailman/+bug/1947640"
-    ],
-    "cvename": [
-      "CVE-2021-42096",
-      "CVE-2021-42097"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-10-18",
-    "entry": "2021-10-20"
-  }
+	"vid": "8d65aa3b-31ce-11ec-8c32-a14e8e520dc7",
+	"topic": "mailman -- brute-force vuln on list admin password, and CSRF vuln in releases before 2.1.35",
+	"affects": [
+		{
+			"name": [
+				"mailman"
+			],
+			"range": [
+				{
+					"lt": "2.1.35"
+				}
+			]
+		},
+		{
+			"name": [
+				"mailman-with-htdig"
+			],
+			"range": [
+				{
+					"lt": "2.1.35"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://bazaar.launchpad.net/~mailman-coders/mailman/2.1/view/1873/NEWS#L8\">\n\t  <p>A potential for for a list member to carry out an off-line brute\n\t    force attack to obtain the list admin password has been reported by\n\t    Andre Protas, Richard Cloke and Andy Nuttall of Apple. This is\n\t    fixed.</p>\n\t  <p>A CSRF attack via the user options page could allow takeover of a\n\t      users account. This is fixed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bazaar.launchpad.net/~mailman-coders/mailman/2.1/view/1873/NEWS#L8",
+			"https://bugs.launchpad.net/mailman/+bug/1947639",
+			"https://bugs.launchpad.net/mailman/+bug/1947640"
+		],
+		"cvename": [
+			"CVE-2021-42096",
+			"CVE-2021-42097"
+		]
+	},
+	"dates": {
+		"discovery": "2021-10-18",
+		"entry": "2021-10-20"
+	}
 }

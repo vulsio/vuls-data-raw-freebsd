@@ -1,44 +1,44 @@
 {
-  "vid": "3761df02-0f9c-11e0-becc-0022156e8794",
-  "topic": "php -- NULL byte poisoning",
-  "affects": [
-    {
-      "name": [
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "5.3.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php52"
-      ],
-      "range": [
-        {
-          "lt": "5.2.17_12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PHP-specific version of NULL-byte poisoning was briefly\n\t  described by ShAnKaR:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/archive/1/445788/100/0/threaded\">\n\t  <p>Poison NULL byte vulnerability for perl CGI applications\n\t    was described in\n\t    <a href=\"http://artofhacking.com/files/phrack/phrack55/P55-07.TXT\">[1]</a>.\n\t    ShAnKaR noted, that same vulnerability also affects\n\t    different PHP applications.</p>\n\t</blockquote>\n\t<p>PHP developers report that branch 5.3 received a fix:</p>\n\t<blockquote cite=\"http://www.php.net/releases/5_3_4.php\">\n\t  <p>Paths with NULL in them (foo\\0bar.txt) are now considered\n\t    as invalid (CVE-2006-7243).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.securityfocus.com/archive/1/archive/1/445788/100/0/threaded",
-      "http://artofhacking.com/files/phrack/phrack55/P55-07.TXT"
-    ],
-    "cvename": [
-      "CVE-2006-7243"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-12-10",
-    "entry": "2011-01-13",
-    "modified": "2012-11-25"
-  }
+	"vid": "3761df02-0f9c-11e0-becc-0022156e8794",
+	"topic": "php -- NULL byte poisoning",
+	"affects": [
+		{
+			"name": [
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "5.3.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"php52"
+			],
+			"range": [
+				{
+					"lt": "5.2.17_12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PHP-specific version of NULL-byte poisoning was briefly\n\t  described by ShAnKaR:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/archive/1/445788/100/0/threaded\">\n\t  <p>Poison NULL byte vulnerability for perl CGI applications\n\t    was described in\n\t    <a href=\"http://artofhacking.com/files/phrack/phrack55/P55-07.TXT\">[1]</a>.\n\t    ShAnKaR noted, that same vulnerability also affects\n\t    different PHP applications.</p>\n\t</blockquote>\n\t<p>PHP developers report that branch 5.3 received a fix:</p>\n\t<blockquote cite=\"http://www.php.net/releases/5_3_4.php\">\n\t  <p>Paths with NULL in them (foo\\0bar.txt) are now considered\n\t    as invalid (CVE-2006-7243).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.securityfocus.com/archive/1/archive/1/445788/100/0/threaded",
+			"http://artofhacking.com/files/phrack/phrack55/P55-07.TXT"
+		],
+		"cvename": [
+			"CVE-2006-7243"
+		]
+	},
+	"dates": {
+		"discovery": "2010-12-10",
+		"entry": "2011-01-13",
+		"modified": "2012-11-25"
+	}
 }

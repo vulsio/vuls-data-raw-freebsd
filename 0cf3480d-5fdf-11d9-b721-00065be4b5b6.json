@@ -1,43 +1,43 @@
 {
-  "vid": "0cf3480d-5fdf-11d9-b721-00065be4b5b6",
-  "topic": "helvis -- arbitrary file deletion problem",
-  "affects": [
-    {
-      "name": [
-        "ko-helvis"
-      ],
-      "range": [
-        {
-          "le": "1.8h2_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "helvis"
-      ],
-      "range": [
-        {
-          "le": "1.8h2_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The setuid root elvprsv utility, used to preserve\n\t recovery helvis files, can be abused by local users to delete\n\twith root privileges.</p>\n\t<p>The problem is that elvprsv deletes files when it thinks they\n\thave become corrupt. When elvprsv is pointed to a normal file then\n\tit will almost always think the file is corrupt and deletes it.\n\tThis behavior may be exploited by local attackers to delete critical\n\tfiles.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://people.freebsd.org/~niels/ports/korean/helvis/issues.txt"
-    ],
-    "cvename": [
-      "CVE-2005-0120"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-11-24",
-    "entry": "2005-01-10",
-    "modified": "2005-01-19"
-  }
+	"vid": "0cf3480d-5fdf-11d9-b721-00065be4b5b6",
+	"topic": "helvis -- arbitrary file deletion problem",
+	"affects": [
+		{
+			"name": [
+				"ko-helvis"
+			],
+			"range": [
+				{
+					"le": "1.8h2_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"helvis"
+			],
+			"range": [
+				{
+					"le": "1.8h2_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The setuid root elvprsv utility, used to preserve\n\t recovery helvis files, can be abused by local users to delete\n\twith root privileges.</p>\n\t<p>The problem is that elvprsv deletes files when it thinks they\n\thave become corrupt. When elvprsv is pointed to a normal file then\n\tit will almost always think the file is corrupt and deletes it.\n\tThis behavior may be exploited by local attackers to delete critical\n\tfiles.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://people.freebsd.org/~niels/ports/korean/helvis/issues.txt"
+		],
+		"cvename": [
+			"CVE-2005-0120"
+		]
+	},
+	"dates": {
+		"discovery": "2004-11-24",
+		"entry": "2005-01-10",
+		"modified": "2005-01-19"
+	}
 }

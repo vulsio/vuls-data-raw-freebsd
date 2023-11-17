@@ -1,45 +1,45 @@
 {
-  "vid": "06a6b2cf-484b-11d9-813c-00065be4b5b6",
-  "topic": "mysql -- ALTER MERGE denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mysql-server"
-      ],
-      "range": [
-        {
-          "le": "3.23.58_3"
-        },
-        {
-          "lt": "4.0.21",
-          "ge": "4.*"
-        },
-        {
-          "lt": "4.1.1",
-          "ge": "4.1.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t <p>Dean Ellis reported a denial of service vulnerability in the MySQL\n\t   server:</p>\n\t <blockquote cite=\"http://bugs.mysql.com/bug.php?id=4017\">\n\t   <p> Multiple threads ALTERing the same (or different) MERGE tables to\n\t     change the UNION eventually crash the server or hang the individual\n\t     threads.</p>\n\t </blockquote>\n\t <p>Note that a script demonstrating the problem is included in the\n\t   MySQL bug report. Attackers that have control of a MySQL account can\n\t   easily use a modified version of that script during an attack.</p>\n       "
-  },
-  "references": {
-    "url": [
-      "http://bugs.mysql.com/bug.php?id=2408",
-      "http://rhn.redhat.com/errata/RHSA-2004-611.html"
-    ],
-    "cvename": [
-      "CVE-2004-0837"
-    ],
-    "bid": [
-      "11357"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-01-15",
-    "entry": "2004-12-16",
-    "modified": "2005-03-15"
-  }
+	"vid": "06a6b2cf-484b-11d9-813c-00065be4b5b6",
+	"topic": "mysql -- ALTER MERGE denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mysql-server"
+			],
+			"range": [
+				{
+					"le": "3.23.58_3"
+				},
+				{
+					"lt": "4.0.21",
+					"ge": "4.*"
+				},
+				{
+					"lt": "4.1.1",
+					"ge": "4.1.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t <p>Dean Ellis reported a denial of service vulnerability in the MySQL\n\t   server:</p>\n\t <blockquote cite=\"http://bugs.mysql.com/bug.php?id=4017\">\n\t   <p> Multiple threads ALTERing the same (or different) MERGE tables to\n\t     change the UNION eventually crash the server or hang the individual\n\t     threads.</p>\n\t </blockquote>\n\t <p>Note that a script demonstrating the problem is included in the\n\t   MySQL bug report. Attackers that have control of a MySQL account can\n\t   easily use a modified version of that script during an attack.</p>\n       "
+	},
+	"references": {
+		"url": [
+			"http://bugs.mysql.com/bug.php?id=2408",
+			"http://rhn.redhat.com/errata/RHSA-2004-611.html"
+		],
+		"cvename": [
+			"CVE-2004-0837"
+		],
+		"bid": [
+			"11357"
+		]
+	},
+	"dates": {
+		"discovery": "2004-01-15",
+		"entry": "2004-12-16",
+		"modified": "2005-03-15"
+	}
 }

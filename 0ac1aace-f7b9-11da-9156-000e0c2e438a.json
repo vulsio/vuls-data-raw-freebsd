@@ -1,49 +1,49 @@
 {
-  "vid": "0ac1aace-f7b9-11da-9156-000e0c2e438a",
-  "topic": "ypserv -- Inoperative access controls in ypserv",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.3_30",
-          "ge": "5.3"
-        },
-        {
-          "lt": "5.4_15",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.5_1",
-          "ge": "5.5"
-        },
-        {
-          "lt": "6.0_8",
-          "ge": "6.0"
-        },
-        {
-          "lt": "6.1_1",
-          "ge": "6.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description</h1>\n\t<p>There are two documented methods of restricting access to\n\t NIS maps through ypserv(8): through the use of the\n\t /var/yp/securenets file, and through the /etc/hosts.allow file.\n\t While both mechanisms are implemented in the server, a change\n\t in the build process caused the \"securenets\" access restrictions\n\t to be inadvertantly disabled.</p>\n\t<h1>Impact</h1>\n\t<p>ypserv(8) will not load or process any of the networks or\n\t  hosts specified in the /var/yp/securenets file, rendering\n\t  those access controls ineffective.</p>\n\t<h1>Workaround</h1>\n\t<p>One possible workaround is to use /etc/hosts.allow for access\n\t  control, as shown by examples in that file.</p>\n\t<p>Another workaround is to use a firewall (e.g., ipfw(4),\n\t  ipf(4), or pf(4)) to limit access to RPC functions from\n\t  untrusted systems or networks, but due to the complexities of\n\t  RPC, it might be difficult to create a set of firewall rules\n\t  which accomplish this without blocking all access to the\n\t  machine in question.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2006-2655"
-    ],
-    "freebsd_sa": [
-      "SA-06:15.ypserv"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-05-31",
-    "entry": "2006-06-09"
-  }
+	"vid": "0ac1aace-f7b9-11da-9156-000e0c2e438a",
+	"topic": "ypserv -- Inoperative access controls in ypserv",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.3_30",
+					"ge": "5.3"
+				},
+				{
+					"lt": "5.4_15",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.5_1",
+					"ge": "5.5"
+				},
+				{
+					"lt": "6.0_8",
+					"ge": "6.0"
+				},
+				{
+					"lt": "6.1_1",
+					"ge": "6.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description</h1>\n\t<p>There are two documented methods of restricting access to\n\t NIS maps through ypserv(8): through the use of the\n\t /var/yp/securenets file, and through the /etc/hosts.allow file.\n\t While both mechanisms are implemented in the server, a change\n\t in the build process caused the \"securenets\" access restrictions\n\t to be inadvertantly disabled.</p>\n\t<h1>Impact</h1>\n\t<p>ypserv(8) will not load or process any of the networks or\n\t  hosts specified in the /var/yp/securenets file, rendering\n\t  those access controls ineffective.</p>\n\t<h1>Workaround</h1>\n\t<p>One possible workaround is to use /etc/hosts.allow for access\n\t  control, as shown by examples in that file.</p>\n\t<p>Another workaround is to use a firewall (e.g., ipfw(4),\n\t  ipf(4), or pf(4)) to limit access to RPC functions from\n\t  untrusted systems or networks, but due to the complexities of\n\t  RPC, it might be difficult to create a set of firewall rules\n\t  which accomplish this without blocking all access to the\n\t  machine in question.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2006-2655"
+		],
+		"freebsd_sa": [
+			"SA-06:15.ypserv"
+		]
+	},
+	"dates": {
+		"discovery": "2006-05-31",
+		"entry": "2006-06-09"
+	}
 }

@@ -1,49 +1,49 @@
 {
-  "vid": "76e0bb86-b4cb-11eb-b9c9-6cc21735f730",
-  "topic": "PostgreSQL -- Memory disclosure in partitioned-table UPDATE ... RETURNING",
-  "affects": [
-    {
-      "name": [
-        "postgresql13-server"
-      ],
-      "range": [
-        {
-          "lt": "13.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql12-server"
-      ],
-      "range": [
-        {
-          "lt": "12.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql11-server"
-      ],
-      "range": [
-        {
-          "lt": "11.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2021-32029/\">\n\t  <p>\n\t    Using an UPDATE ... RETURNING on a purpose-crafted partitioned\n\t    table, an attacker can read arbitrary bytes of server memory. In the\n\t    default configuration, any authenticated database user can create\n\t    prerequisite objects and complete this attack at will. A user\n\t    lacking the CREATE and TEMPORARY privileges on all databases and the\n\t    CREATE privilege on all schemas typically cannot use this attack at\n\t    will.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.postgresql.org/support/security/CVE-2021-32029/"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-05-13",
-    "entry": "2021-05-14"
-  }
+	"vid": "76e0bb86-b4cb-11eb-b9c9-6cc21735f730",
+	"topic": "PostgreSQL -- Memory disclosure in partitioned-table UPDATE ... RETURNING",
+	"affects": [
+		{
+			"name": [
+				"postgresql13-server"
+			],
+			"range": [
+				{
+					"lt": "13.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql12-server"
+			],
+			"range": [
+				{
+					"lt": "12.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql11-server"
+			],
+			"range": [
+				{
+					"lt": "11.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2021-32029/\">\n\t  <p>\n\t    Using an UPDATE ... RETURNING on a purpose-crafted partitioned\n\t    table, an attacker can read arbitrary bytes of server memory. In the\n\t    default configuration, any authenticated database user can create\n\t    prerequisite objects and complete this attack at will. A user\n\t    lacking the CREATE and TEMPORARY privileges on all databases and the\n\t    CREATE privilege on all schemas typically cannot use this attack at\n\t    will.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.postgresql.org/support/security/CVE-2021-32029/"
+		]
+	},
+	"dates": {
+		"discovery": "2021-05-13",
+		"entry": "2021-05-14"
+	}
 }

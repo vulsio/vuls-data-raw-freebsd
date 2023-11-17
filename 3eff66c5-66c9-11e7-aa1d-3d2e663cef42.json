@@ -1,49 +1,49 @@
 {
-  "vid": "3eff66c5-66c9-11e7-aa1d-3d2e663cef42",
-  "topic": "node.js -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "8.1.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node4"
-      ],
-      "range": [
-        {
-          "lt": "4.8.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node6"
-      ],
-      "range": [
-        {
-          "lt": "6.11.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Updates are now available for all active Node.js release lines as\n\t  well as the 7.x line. These include the fix for the high severity\n\t  vulnerability identified in the initial announcement, one additional\n\t  lower priority Node.js vulnerability in the 4.x release line, as well\n\t  as some lower priority fixes for Node.js dependencies across the\n\t  current release lines.</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/july-2017-security-releases/\">\n\t  <h2>Constant Hashtable Seeds (CVE pending)</h2>\n\t  <p>Node.js was susceptible to hash flooding remote DoS attacks as the\n\t    HashTable seed was constant across a given released version of\n\t    Node.js. This was a result of building with V8 snapshots enabled by\n\t    default which caused the initially randomized seed to be overwritten\n\t    on startup. Thanks to Jann Horn of Google Project Zero for reporting\n\t    this vulnerability.</p>\n\t  <p>This is a high severity vulnerability and applies to all active\n\t    release lines (4.x, 6.x, 8.x) as well as the 7.x line.</p>\n\t  <h2>http.get with numeric authorization options creates uninitialized\n\t    buffers</h2>\n\t  <p>Application code that allows the auth field of the options object\n\t    used with http.get() to be set to a number can result in an\n\t    uninitialized buffer being created/used as the authentication\n\t    string.</p>\n\t  <p>This is a low severity defect and only applies to the 4.x release\n\t    line.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/july-2017-security-releases/"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-06-27",
-    "entry": "2017-07-12"
-  }
+	"vid": "3eff66c5-66c9-11e7-aa1d-3d2e663cef42",
+	"topic": "node.js -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "8.1.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"node4"
+			],
+			"range": [
+				{
+					"lt": "4.8.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"node6"
+			],
+			"range": [
+				{
+					"lt": "6.11.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Updates are now available for all active Node.js release lines as\n\t  well as the 7.x line. These include the fix for the high severity\n\t  vulnerability identified in the initial announcement, one additional\n\t  lower priority Node.js vulnerability in the 4.x release line, as well\n\t  as some lower priority fixes for Node.js dependencies across the\n\t  current release lines.</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/july-2017-security-releases/\">\n\t  <h2>Constant Hashtable Seeds (CVE pending)</h2>\n\t  <p>Node.js was susceptible to hash flooding remote DoS attacks as the\n\t    HashTable seed was constant across a given released version of\n\t    Node.js. This was a result of building with V8 snapshots enabled by\n\t    default which caused the initially randomized seed to be overwritten\n\t    on startup. Thanks to Jann Horn of Google Project Zero for reporting\n\t    this vulnerability.</p>\n\t  <p>This is a high severity vulnerability and applies to all active\n\t    release lines (4.x, 6.x, 8.x) as well as the 7.x line.</p>\n\t  <h2>http.get with numeric authorization options creates uninitialized\n\t    buffers</h2>\n\t  <p>Application code that allows the auth field of the options object\n\t    used with http.get() to be set to a number can result in an\n\t    uninitialized buffer being created/used as the authentication\n\t    string.</p>\n\t  <p>This is a low severity defect and only applies to the 4.x release\n\t    line.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/july-2017-security-releases/"
+		]
+	},
+	"dates": {
+		"discovery": "2017-06-27",
+		"entry": "2017-07-12"
+	}
 }

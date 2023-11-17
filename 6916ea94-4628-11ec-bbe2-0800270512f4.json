@@ -1,85 +1,85 @@
 {
-  "vid": "6916ea94-4628-11ec-bbe2-0800270512f4",
-  "topic": "rubygem-date -- Regular Expression Denial of Service Vunlerability of Date Parsing Methods",
-  "affects": [
-    {
-      "name": [
-        "ruby"
-      ],
-      "range": [
-        {
-          "lt": "2.6.9,1",
-          "ge": "2.6.0,1"
-        },
-        {
-          "lt": "2.7.5,1",
-          "ge": "2.7.0,1"
-        },
-        {
-          "lt": "3.0.3,1",
-          "ge": "3.0.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby26"
-      ],
-      "range": [
-        {
-          "lt": "2.6.9,1",
-          "ge": "2.6.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby27"
-      ],
-      "range": [
-        {
-          "lt": "2.7.5,1",
-          "ge": "2.7.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby30"
-      ],
-      "range": [
-        {
-          "lt": "3.0.3,1",
-          "ge": "3.0.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-date"
-      ],
-      "range": [
-        {
-          "lt": "3.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stanislav Valkanov reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817/\">\n\t  <p>\n\t    Date's parsing methods including <code>Date.parse</code>\n\t    are using Regexps internally, some of which are vulnerable\n\t    against regular expression denial of service. Applications\n\t    and libraries that apply such methods to untrusted input\n\t    may be affected.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817/"
-    ],
-    "cvename": [
-      "CVE-2021-41817"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-11-15",
-    "entry": "2021-11-15",
-    "modified": "2021-11-24"
-  }
+	"vid": "6916ea94-4628-11ec-bbe2-0800270512f4",
+	"topic": "rubygem-date -- Regular Expression Denial of Service Vunlerability of Date Parsing Methods",
+	"affects": [
+		{
+			"name": [
+				"ruby"
+			],
+			"range": [
+				{
+					"lt": "2.6.9,1",
+					"ge": "2.6.0,1"
+				},
+				{
+					"lt": "2.7.5,1",
+					"ge": "2.7.0,1"
+				},
+				{
+					"lt": "3.0.3,1",
+					"ge": "3.0.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby26"
+			],
+			"range": [
+				{
+					"lt": "2.6.9,1",
+					"ge": "2.6.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby27"
+			],
+			"range": [
+				{
+					"lt": "2.7.5,1",
+					"ge": "2.7.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby30"
+			],
+			"range": [
+				{
+					"lt": "3.0.3,1",
+					"ge": "3.0.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-date"
+			],
+			"range": [
+				{
+					"lt": "3.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stanislav Valkanov reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817/\">\n\t  <p>\n\t    Date's parsing methods including <code>Date.parse</code>\n\t    are using Regexps internally, some of which are vulnerable\n\t    against regular expression denial of service. Applications\n\t    and libraries that apply such methods to untrusted input\n\t    may be affected.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817/"
+		],
+		"cvename": [
+			"CVE-2021-41817"
+		]
+	},
+	"dates": {
+		"discovery": "2021-11-15",
+		"entry": "2021-11-15",
+		"modified": "2021-11-24"
+	}
 }

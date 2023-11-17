@@ -1,33 +1,33 @@
 {
-  "vid": "f6447303-9ec9-11da-b410-000e0c2e438a",
-  "topic": "heartbeat -- insecure temporary file creation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "heartbeat"
-      ],
-      "range": [
-        {
-          "lt": "1.2.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Eric Romang reports a temporary file creation vulnerability\n\t  within heartbeat.  The vulnerability is caused by hardcoded\n\t  temporary file usage.  This can cause an attacker to create\n\t  an arbitrary symlink causing the application to overwrite the\n\t  symlinked file with the permissions of the user executing the\n\t  application.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.zataz.net/adviso/heartbeat-06272005.txt"
-    ],
-    "cvename": [
-      "CAN-2005-2231"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-12",
-    "entry": "2006-02-16",
-    "modified": "2006-04-16"
-  }
+	"vid": "f6447303-9ec9-11da-b410-000e0c2e438a",
+	"topic": "heartbeat -- insecure temporary file creation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"heartbeat"
+			],
+			"range": [
+				{
+					"lt": "1.2.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Eric Romang reports a temporary file creation vulnerability\n\t  within heartbeat.  The vulnerability is caused by hardcoded\n\t  temporary file usage.  This can cause an attacker to create\n\t  an arbitrary symlink causing the application to overwrite the\n\t  symlinked file with the permissions of the user executing the\n\t  application.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.zataz.net/adviso/heartbeat-06272005.txt"
+		],
+		"cvename": [
+			"CAN-2005-2231"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-12",
+		"entry": "2006-02-16",
+		"modified": "2006-04-16"
+	}
 }

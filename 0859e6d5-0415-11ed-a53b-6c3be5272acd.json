@@ -1,84 +1,84 @@
 {
-  "vid": "0859e6d5-0415-11ed-a53b-6c3be5272acd",
-  "topic": "Grafana -- OAuth Account Takeover",
-  "affects": [
-    {
-      "name": [
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "8.3.10",
-          "ge": "5.3.0"
-        },
-        {
-          "lt": "8.4.10",
-          "ge": "8.4.0"
-        },
-        {
-          "lt": "8.5.9",
-          "ge": "8.5.0"
-        },
-        {
-          "lt": "9.0.3",
-          "ge": "9.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana7"
-      ],
-      "range": [
-        {
-          "ge": "7.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana8"
-      ],
-      "range": [
-        {
-          "lt": "8.3.10",
-          "ge": "8.3.0"
-        },
-        {
-          "lt": "8.4.10",
-          "ge": "8.4.0"
-        },
-        {
-          "lt": "8.5.9",
-          "ge": "8.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.0.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/07/14/grafana-v9-0-3-8-5-9-8-4-10-and-8-3-10-released-with-high-severity-security-fix/\">\n\t  <p>It is possible for a malicious user who has authorization to log into a Grafana instance via a configured OAuth IdP to take over an existing Grafana account under some conditions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/grafana/grafana/security/advisories/GHSA-mx47-6497-3fv2"
-    ],
-    "cvename": [
-      "CVE-2022-31107"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-06-27",
-    "entry": "2022-07-15"
-  }
+	"vid": "0859e6d5-0415-11ed-a53b-6c3be5272acd",
+	"topic": "Grafana -- OAuth Account Takeover",
+	"affects": [
+		{
+			"name": [
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "8.3.10",
+					"ge": "5.3.0"
+				},
+				{
+					"lt": "8.4.10",
+					"ge": "8.4.0"
+				},
+				{
+					"lt": "8.5.9",
+					"ge": "8.5.0"
+				},
+				{
+					"lt": "9.0.3",
+					"ge": "9.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana7"
+			],
+			"range": [
+				{
+					"ge": "7.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana8"
+			],
+			"range": [
+				{
+					"lt": "8.3.10",
+					"ge": "8.3.0"
+				},
+				{
+					"lt": "8.4.10",
+					"ge": "8.4.0"
+				},
+				{
+					"lt": "8.5.9",
+					"ge": "8.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.0.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/07/14/grafana-v9-0-3-8-5-9-8-4-10-and-8-3-10-released-with-high-severity-security-fix/\">\n\t  <p>It is possible for a malicious user who has authorization to log into a Grafana instance via a configured OAuth IdP to take over an existing Grafana account under some conditions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/grafana/grafana/security/advisories/GHSA-mx47-6497-3fv2"
+		],
+		"cvename": [
+			"CVE-2022-31107"
+		]
+	},
+	"dates": {
+		"discovery": "2022-06-27",
+		"entry": "2022-07-15"
+	}
 }

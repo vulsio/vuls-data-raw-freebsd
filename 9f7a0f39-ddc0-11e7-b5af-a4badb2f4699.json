@@ -1,43 +1,43 @@
 {
-  "vid": "9f7a0f39-ddc0-11e7-b5af-a4badb2f4699",
-  "topic": "FreeBSD -- OpenSSL multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.1_6",
-          "ge": "11.1"
-        },
-        {
-          "lt": "10.4_5",
-          "ge": "10.4"
-        },
-        {
-          "lt": "10.3_26",
-          "ge": "10.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Invoking SSL_read()/SSL_write() while in an error state\n\tcauses data to be passed without being decrypted/encrypted\n\tdirectly from the SSL/TLS record layer.</p>\n\t<p>In order to exploit this issue an application bug would\n\thave to be present that resulted in a call to\n\tSSL_read()/SSL_write() being issued after having already\n\treceived a fatal error. [CVE-2017-3737]</p>\n\t<p>There is an overflow bug in the x86_64 Montgomery\n\tmultiplication procedure used in exponentiation with 1024-bit\n\tmoduli. This only affects processors that support the AVX2\n\tbut not ADX extensions like Intel Haswell (4th generation).\n\t[CVE-2017-3738] This bug only affects FreeBSD 11.x.</p>\n\t<h1>Impact:</h1>\n\t<p>Applications with incorrect error handling may inappropriately\n\tpass unencrypted data. [CVE-2017-3737]</p>\n\t<p>Mishandling of carry propagation will produce incorrect\n\toutput, and make it easier for a remote attacker to obtain\n\tsensitive private-key information. No EC algorithms are\n\taffected and analysis suggests that attacks against RSA and\n\tDSA as a result of this defect would be very difficult to\n\tperform and are not believed likely.</p>\n\t<p>Attacks against DH1024 are considered just feasible\n\t(although very difficult) because most of the work necessary\n\tto deduce information about a private key may be performed\n\toffline. The amount of resources required for such an attack\n\twould be very significant and likely only accessible to a\n\tlimited number of attackers. However, for an attack on TLS\n\tto be meaningful, the server would have to share the DH1024\n\tprivate key among multiple clients, which is no longer an\n\toption since CVE-2016-0701. [CVE-2017-3738]</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-0701",
-      "CVE-2017-3737",
-      "CVE-2017-3738"
-    ],
-    "freebsd_sa": [
-      "SA-17:12.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-12-09",
-    "entry": "2017-12-10"
-  }
+	"vid": "9f7a0f39-ddc0-11e7-b5af-a4badb2f4699",
+	"topic": "FreeBSD -- OpenSSL multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.1_6",
+					"ge": "11.1"
+				},
+				{
+					"lt": "10.4_5",
+					"ge": "10.4"
+				},
+				{
+					"lt": "10.3_26",
+					"ge": "10.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Invoking SSL_read()/SSL_write() while in an error state\n\tcauses data to be passed without being decrypted/encrypted\n\tdirectly from the SSL/TLS record layer.</p>\n\t<p>In order to exploit this issue an application bug would\n\thave to be present that resulted in a call to\n\tSSL_read()/SSL_write() being issued after having already\n\treceived a fatal error. [CVE-2017-3737]</p>\n\t<p>There is an overflow bug in the x86_64 Montgomery\n\tmultiplication procedure used in exponentiation with 1024-bit\n\tmoduli. This only affects processors that support the AVX2\n\tbut not ADX extensions like Intel Haswell (4th generation).\n\t[CVE-2017-3738] This bug only affects FreeBSD 11.x.</p>\n\t<h1>Impact:</h1>\n\t<p>Applications with incorrect error handling may inappropriately\n\tpass unencrypted data. [CVE-2017-3737]</p>\n\t<p>Mishandling of carry propagation will produce incorrect\n\toutput, and make it easier for a remote attacker to obtain\n\tsensitive private-key information. No EC algorithms are\n\taffected and analysis suggests that attacks against RSA and\n\tDSA as a result of this defect would be very difficult to\n\tperform and are not believed likely.</p>\n\t<p>Attacks against DH1024 are considered just feasible\n\t(although very difficult) because most of the work necessary\n\tto deduce information about a private key may be performed\n\toffline. The amount of resources required for such an attack\n\twould be very significant and likely only accessible to a\n\tlimited number of attackers. However, for an attack on TLS\n\tto be meaningful, the server would have to share the DH1024\n\tprivate key among multiple clients, which is no longer an\n\toption since CVE-2016-0701. [CVE-2017-3738]</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-0701",
+			"CVE-2017-3737",
+			"CVE-2017-3738"
+		],
+		"freebsd_sa": [
+			"SA-17:12.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2017-12-09",
+		"entry": "2017-12-10"
+	}
 }

@@ -1,38 +1,38 @@
 {
-  "vid": "79818ef9-2d10-11e2-9160-00262d5ed8ee",
-  "topic": "typo3 -- Multiple vulnerabilities in TYPO3 Core",
-  "affects": [
-    {
-      "name": [
-        "typo3"
-      ],
-      "range": [
-        {
-          "lt": "4.5.21",
-          "ge": "4.5.0"
-        },
-        {
-          "lt": "4.6.14",
-          "ge": "4.6.0"
-        },
-        {
-          "lt": "4.7.6",
-          "ge": "4.7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Typo Security Team reports:</p>\n\t<blockquote cite=\"http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-005/\">\n\t  <p>TYPO3 Backend History Module - Due to missing encoding of user\n\t    input, the history module is susceptible to SQL Injection and\n\t    Cross-Site Scripting. A valid backend login is required to exploit\n\t    this vulnerability. Credits go to Thomas Worm who discovered and\n\t    reported the issue.</p>\n\t  <p>TYPO3 Backend API - Failing to properly HTML-encode user input the\n\t    tree render API (TCA-Tree) is susceptible to Cross-Site Scripting.\n\t    TYPO3 Versions below 6.0 does not make us of this API, thus is not\n\t    exploitable, if no third party extension is installed which uses\n\t    this API. A valid backend login is required to exploit this\n\t    vulnerability. Credits go to Richard Brain who discovered and\n\t    reported the issue.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-005/"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-11-08",
-    "entry": "2012-11-12"
-  }
+	"vid": "79818ef9-2d10-11e2-9160-00262d5ed8ee",
+	"topic": "typo3 -- Multiple vulnerabilities in TYPO3 Core",
+	"affects": [
+		{
+			"name": [
+				"typo3"
+			],
+			"range": [
+				{
+					"lt": "4.5.21",
+					"ge": "4.5.0"
+				},
+				{
+					"lt": "4.6.14",
+					"ge": "4.6.0"
+				},
+				{
+					"lt": "4.7.6",
+					"ge": "4.7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Typo Security Team reports:</p>\n\t<blockquote cite=\"http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-005/\">\n\t  <p>TYPO3 Backend History Module - Due to missing encoding of user\n\t    input, the history module is susceptible to SQL Injection and\n\t    Cross-Site Scripting. A valid backend login is required to exploit\n\t    this vulnerability. Credits go to Thomas Worm who discovered and\n\t    reported the issue.</p>\n\t  <p>TYPO3 Backend API - Failing to properly HTML-encode user input the\n\t    tree render API (TCA-Tree) is susceptible to Cross-Site Scripting.\n\t    TYPO3 Versions below 6.0 does not make us of this API, thus is not\n\t    exploitable, if no third party extension is installed which uses\n\t    this API. A valid backend login is required to exploit this\n\t    vulnerability. Credits go to Richard Brain who discovered and\n\t    reported the issue.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-005/"
+		]
+	},
+	"dates": {
+		"discovery": "2012-11-08",
+		"entry": "2012-11-12"
+	}
 }

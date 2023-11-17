@@ -1,35 +1,35 @@
 {
-  "vid": "4aae54be-ba4d-11e6-ae1b-002590263bf5",
-  "topic": "xen-kernel -- x86 HVM: Overflow of sh_ctxt->seg_reg[]",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-187.html\">\n\t  <p>x86 HVM guests running with shadow paging use a subset of the x86\n\t    emulator to handle the guest writing to its own pagetables. There\n\t    are situations a guest can provoke which result in exceeding the\n\t    space allocated for internal state.</p>\n\t  <p>A malicious HVM guest administrator can cause Xen to fail a bug\n\t    check, causing a denial of service to the host.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xenbits.xen.org/xsa/advisory-187.html"
-    ],
-    "cvename": [
-      "CVE-2016-7094"
-    ],
-    "freebsd_pr": [
-      "ports/214936"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-09-08",
-    "entry": "2016-12-04"
-  }
+	"vid": "4aae54be-ba4d-11e6-ae1b-002590263bf5",
+	"topic": "xen-kernel -- x86 HVM: Overflow of sh_ctxt->seg_reg[]",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-187.html\">\n\t  <p>x86 HVM guests running with shadow paging use a subset of the x86\n\t    emulator to handle the guest writing to its own pagetables. There\n\t    are situations a guest can provoke which result in exceeding the\n\t    space allocated for internal state.</p>\n\t  <p>A malicious HVM guest administrator can cause Xen to fail a bug\n\t    check, causing a denial of service to the host.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xenbits.xen.org/xsa/advisory-187.html"
+		],
+		"cvename": [
+			"CVE-2016-7094"
+		],
+		"freebsd_pr": [
+			"ports/214936"
+		]
+	},
+	"dates": {
+		"discovery": "2016-09-08",
+		"entry": "2016-12-04"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "vid": "47aa4343-44fa-11e5-9daa-14dae9d210b8",
-  "topic": "mod_jk -- information disclosure",
-  "affects": [
-    {
-      "name": [
-        "ap22-mod_jk",
-        "ap24-mod_jk"
-      ],
-      "range": [
-        {
-          "lt": "1.2.41,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NIST reports:</p>\n\t<blockquote cite=\"http://www.cvedetails.com/cve/CVE-2014-8111/\">\n\t  <p>Apache Tomcat Connectors (mod_jk) before 1.2.41 ignores\n\t    JkUnmount rules for subtrees of previous JkMount rules, which allows\n\t    remote attackers to access otherwise restricted artifacts via\n\t    unspecified vectors. </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mail-archive.com/users@tomcat.apache.org/msg118949.html",
-      "http://readlist.com/lists/tomcat.apache.org/users/27/135512.html",
-      "http://www.cvedetails.com/cve/CVE-2014-8111/"
-    ],
-    "cvename": [
-      "CVE-2014-8111"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-01-15",
-    "entry": "2015-08-17"
-  }
+	"vid": "47aa4343-44fa-11e5-9daa-14dae9d210b8",
+	"topic": "mod_jk -- information disclosure",
+	"affects": [
+		{
+			"name": [
+				"ap22-mod_jk",
+				"ap24-mod_jk"
+			],
+			"range": [
+				{
+					"lt": "1.2.41,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NIST reports:</p>\n\t<blockquote cite=\"http://www.cvedetails.com/cve/CVE-2014-8111/\">\n\t  <p>Apache Tomcat Connectors (mod_jk) before 1.2.41 ignores\n\t    JkUnmount rules for subtrees of previous JkMount rules, which allows\n\t    remote attackers to access otherwise restricted artifacts via\n\t    unspecified vectors. </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mail-archive.com/users@tomcat.apache.org/msg118949.html",
+			"http://readlist.com/lists/tomcat.apache.org/users/27/135512.html",
+			"http://www.cvedetails.com/cve/CVE-2014-8111/"
+		],
+		"cvename": [
+			"CVE-2014-8111"
+		]
+	},
+	"dates": {
+		"discovery": "2015-01-15",
+		"entry": "2015-08-17"
+	}
 }

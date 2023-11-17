@@ -1,40 +1,40 @@
 {
-  "vid": "964161cd-6715-11da-99f6-00123ffe8333",
-  "topic": "ffmpeg -- libavcodec buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ffmpeg"
-      ],
-      "range": [
-        {
-          "lt": "0.4.9.p1_4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ffmpeg-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.4.9.c.2005120600"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17892/\">\n\t  <p>Simon Kilvington has reported a vulnerability in\n\t    FFmpeg libavcodec, which can be exploited by malicious\n\t    people to cause a DoS (Denial of Service) and\n\t    potentially to compromise a user's system.</p>\n\t  <p>The vulnerability is caused due to a boundary error\n\t    in the \"avcodec_default_get_buffer()\" function of\n\t    \"utils.c\" in libavcodec. This can be exploited to\n\t    cause a heap-based buffer overflow when a\n\t    specially-crafted 1x1 \".png\" file containing a palette\n\t    is read.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://article.gmane.org/gmane.comp.video.ffmpeg.devel/26558",
-      "http://secunia.com/advisories/17892/"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-11-30",
-    "entry": "2005-12-07"
-  }
+	"vid": "964161cd-6715-11da-99f6-00123ffe8333",
+	"topic": "ffmpeg -- libavcodec buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ffmpeg"
+			],
+			"range": [
+				{
+					"lt": "0.4.9.p1_4"
+				}
+			]
+		},
+		{
+			"name": [
+				"ffmpeg-devel"
+			],
+			"range": [
+				{
+					"lt": "0.4.9.c.2005120600"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17892/\">\n\t  <p>Simon Kilvington has reported a vulnerability in\n\t    FFmpeg libavcodec, which can be exploited by malicious\n\t    people to cause a DoS (Denial of Service) and\n\t    potentially to compromise a user's system.</p>\n\t  <p>The vulnerability is caused due to a boundary error\n\t    in the \"avcodec_default_get_buffer()\" function of\n\t    \"utils.c\" in libavcodec. This can be exploited to\n\t    cause a heap-based buffer overflow when a\n\t    specially-crafted 1x1 \".png\" file containing a palette\n\t    is read.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://article.gmane.org/gmane.comp.video.ffmpeg.devel/26558",
+			"http://secunia.com/advisories/17892/"
+		]
+	},
+	"dates": {
+		"discovery": "2005-11-30",
+		"entry": "2005-12-07"
+	}
 }

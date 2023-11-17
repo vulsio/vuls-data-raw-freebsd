@@ -1,39 +1,39 @@
 {
-  "vid": "27aa2253-4c72-11ec-b6b9-e86a64caca56",
-  "topic": "py-matrix-synapse -- several vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py36-matrix-synapse",
-        "py37-matrix-synapse",
-        "py38-matrix-synapse",
-        "py39-matrix-synapse",
-        "py310-matrix-synapse"
-      ],
-      "range": [
-        {
-          "lt": "1.47.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Matrix developers report:</p>\n\t<blockquote cite=\"https://matrix.org/blog/2021/11/23/synapse-1-47-1-released\">\n\t    <p>This release patches one high severity issue affecting\n    Synapse installations 1.47.0 and earlier using the media repository.\n    An attacker could cause these Synapses to download a remote file\n    and store it in a directory outside the media repository.</p>\n      <p>Note that:</p>\n    <ul>\n      <li>This only affects homeservers using Synapse's built-in media\n      repository, as opposed to synapse-s3-storage-provider or\n      matrix-media-repo.</li>\n      <li>Attackers cannot control the exact name or destination of the\n      stored file.</li>\n    </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://matrix.org/blog/2021/11/23/synapse-1-47-1-released"
-    ],
-    "cvename": [
-      "CVE-2021-41281"
-    ],
-    "freebsd_pr": [
-      "ports/259994"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-11-18",
-    "entry": "2021-11-23"
-  }
+	"vid": "27aa2253-4c72-11ec-b6b9-e86a64caca56",
+	"topic": "py-matrix-synapse -- several vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py36-matrix-synapse",
+				"py37-matrix-synapse",
+				"py38-matrix-synapse",
+				"py39-matrix-synapse",
+				"py310-matrix-synapse"
+			],
+			"range": [
+				{
+					"lt": "1.47.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matrix developers report:</p>\n\t<blockquote cite=\"https://matrix.org/blog/2021/11/23/synapse-1-47-1-released\">\n\t    <p>This release patches one high severity issue affecting\n    Synapse installations 1.47.0 and earlier using the media repository.\n    An attacker could cause these Synapses to download a remote file\n    and store it in a directory outside the media repository.</p>\n      <p>Note that:</p>\n    <ul>\n      <li>This only affects homeservers using Synapse's built-in media\n      repository, as opposed to synapse-s3-storage-provider or\n      matrix-media-repo.</li>\n      <li>Attackers cannot control the exact name or destination of the\n      stored file.</li>\n    </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://matrix.org/blog/2021/11/23/synapse-1-47-1-released"
+		],
+		"cvename": [
+			"CVE-2021-41281"
+		],
+		"freebsd_pr": [
+			"ports/259994"
+		]
+	},
+	"dates": {
+		"discovery": "2021-11-18",
+		"entry": "2021-11-23"
+	}
 }

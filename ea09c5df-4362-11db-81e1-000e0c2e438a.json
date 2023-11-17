@@ -1,69 +1,69 @@
 {
-  "vid": "ea09c5df-4362-11db-81e1-000e0c2e438a",
-  "topic": "php -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php4",
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "4.4.4"
-        },
-        {
-          "lt": "5.1.5",
-          "ge": "5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php4-cli",
-        "php5-cli",
-        "php4-cgi",
-        "php5-cgi",
-        "php4-dtc",
-        "php5-dtc",
-        "php4-horde",
-        "php5-horde",
-        "php4-nms",
-        "php5-nms",
-        "mod_php4",
-        "mod_php5"
-      ],
-      "range": [
-        {
-          "lt": "4.4.4"
-        },
-        {
-          "lt": "5.1.5",
-          "ge": "5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PHP development team reports:</p>\n\t<blockquote cite=\"http://www.php.net/release_5_1_5.php\">\n\t  <ul>\n\t    <li>Added missing safe_mode/open_basedir checks inside the\n\t      error_log(), file_exists(), imap_open() and imap_reopen()\n\t      functions.</li>\n\t    <li>Fixed overflows inside str_repeat() and wordwrap()\n\t      functions on 64bit systems.</li>\n\t    <li>Fixed possible open_basedir/safe_mode bypass in cURL\n\t      extension and with realpath cache.</li>\n\t    <li>Fixed overflow in GD extension on invalid GIF\n\t      images.</li>\n\t    <li>Fixed a buffer overflow inside sscanf() function.</li>\n\t    <li>Fixed an out of bounds read inside stripos()\n\t      function.</li>\n\t    <li>Fixed memory_limit restriction on 64 bit system.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.php.net/release_4_4_4.php",
-      "http://www.php.net/release_5_1_5.php"
-    ],
-    "cvename": [
-      "CVE-2006-4481",
-      "CVE-2006-4482",
-      "CVE-2006-4483",
-      "CVE-2006-4484",
-      "CVE-2006-4485",
-      "CVE-2006-4486"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-08-18",
-    "entry": "2006-09-13",
-    "modified": "2014-03-28"
-  }
+	"vid": "ea09c5df-4362-11db-81e1-000e0c2e438a",
+	"topic": "php -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php4",
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "4.4.4"
+				},
+				{
+					"lt": "5.1.5",
+					"ge": "5"
+				}
+			]
+		},
+		{
+			"name": [
+				"php4-cli",
+				"php5-cli",
+				"php4-cgi",
+				"php5-cgi",
+				"php4-dtc",
+				"php5-dtc",
+				"php4-horde",
+				"php5-horde",
+				"php4-nms",
+				"php5-nms",
+				"mod_php4",
+				"mod_php5"
+			],
+			"range": [
+				{
+					"lt": "4.4.4"
+				},
+				{
+					"lt": "5.1.5",
+					"ge": "5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PHP development team reports:</p>\n\t<blockquote cite=\"http://www.php.net/release_5_1_5.php\">\n\t  <ul>\n\t    <li>Added missing safe_mode/open_basedir checks inside the\n\t      error_log(), file_exists(), imap_open() and imap_reopen()\n\t      functions.</li>\n\t    <li>Fixed overflows inside str_repeat() and wordwrap()\n\t      functions on 64bit systems.</li>\n\t    <li>Fixed possible open_basedir/safe_mode bypass in cURL\n\t      extension and with realpath cache.</li>\n\t    <li>Fixed overflow in GD extension on invalid GIF\n\t      images.</li>\n\t    <li>Fixed a buffer overflow inside sscanf() function.</li>\n\t    <li>Fixed an out of bounds read inside stripos()\n\t      function.</li>\n\t    <li>Fixed memory_limit restriction on 64 bit system.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.php.net/release_4_4_4.php",
+			"http://www.php.net/release_5_1_5.php"
+		],
+		"cvename": [
+			"CVE-2006-4481",
+			"CVE-2006-4482",
+			"CVE-2006-4483",
+			"CVE-2006-4484",
+			"CVE-2006-4485",
+			"CVE-2006-4486"
+		]
+	},
+	"dates": {
+		"discovery": "2006-08-18",
+		"entry": "2006-09-13",
+		"modified": "2014-03-28"
+	}
 }

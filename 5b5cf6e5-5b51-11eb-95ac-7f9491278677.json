@@ -1,49 +1,49 @@
 {
-  "vid": "5b5cf6e5-5b51-11eb-95ac-7f9491278677",
-  "topic": "dnsmasq -- DNS cache poisoning, and DNSSEC buffer overflow, vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "dnsmasq"
-      ],
-      "range": [
-        {
-          "lt": "2.83"
-        }
-      ]
-    },
-    {
-      "name": [
-        "dnsmasq-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.83"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon Kelley reports:</p>\n\t<blockquote cite=\"http://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2021q1/014599.html\">\n\t  <p>\n\t    There are broadly two sets of problems. The first is subtle errors\n\t    in dnsmasq's protections against the chronic weakness of the DNS\n\t    protocol to cache-poisoning attacks; the Birthday attack, Kaminsky,\n\t    etc.[...]\n\t  </p>\n\t  <p>\n\t    the second set of errors is a good old fashioned buffer overflow in\n\t    dnsmasq's DNSSEC code. If DNSSEC validation is enabled, an\n\t    installation is at risk.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2021q1/014599.html",
-      "https://www.jsof-tech.com/disclosures/dnspooq/"
-    ],
-    "cvename": [
-      "CVE-2020-25684",
-      "CVE-2020-25685",
-      "CVE-2020-25686",
-      "CVE-2020-25681",
-      "CVE-2020-25682",
-      "CVE-2020-25683",
-      "CVE-2020-25687"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-09-16",
-    "entry": "2021-01-20"
-  }
+	"vid": "5b5cf6e5-5b51-11eb-95ac-7f9491278677",
+	"topic": "dnsmasq -- DNS cache poisoning, and DNSSEC buffer overflow, vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"dnsmasq"
+			],
+			"range": [
+				{
+					"lt": "2.83"
+				}
+			]
+		},
+		{
+			"name": [
+				"dnsmasq-devel"
+			],
+			"range": [
+				{
+					"lt": "2.83"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon Kelley reports:</p>\n\t<blockquote cite=\"http://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2021q1/014599.html\">\n\t  <p>\n\t    There are broadly two sets of problems. The first is subtle errors\n\t    in dnsmasq's protections against the chronic weakness of the DNS\n\t    protocol to cache-poisoning attacks; the Birthday attack, Kaminsky,\n\t    etc.[...]\n\t  </p>\n\t  <p>\n\t    the second set of errors is a good old fashioned buffer overflow in\n\t    dnsmasq's DNSSEC code. If DNSSEC validation is enabled, an\n\t    installation is at risk.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2021q1/014599.html",
+			"https://www.jsof-tech.com/disclosures/dnspooq/"
+		],
+		"cvename": [
+			"CVE-2020-25684",
+			"CVE-2020-25685",
+			"CVE-2020-25686",
+			"CVE-2020-25681",
+			"CVE-2020-25682",
+			"CVE-2020-25683",
+			"CVE-2020-25687"
+		]
+	},
+	"dates": {
+		"discovery": "2020-09-16",
+		"entry": "2021-01-20"
+	}
 }

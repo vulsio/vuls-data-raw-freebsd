@@ -1,33 +1,33 @@
 {
-  "vid": "b02c1d80-e1bb-11d9-b875-0001020eed82",
-  "topic": "trac -- file upload/download vulnerability",
-  "affects": [
-    {
-      "name": [
-        "trac"
-      ],
-      "range": [
-        {
-          "lt": "0.8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stefan Esser reports:</p>\n\t<blockquote cite=\"http://www.hardened-php.net/advisory-012005.php\">\n\t  <p>Trac's wiki and ticket systems allows to add attachments\n\t    to wiki entries and bug tracker tickets. These attachments\n\t    are stored within directories that are determined by the\n\t    id of the corresponding ticket or wiki entry.</p>\n\t  <p>Due to a missing validation of the id parameter it is\n\t    possible for an attacker to supply arbitrary paths to the\n\t    upload and attachment viewer scripts. This means that a\n\t    potential attacker can retrieve any file accessible by the\n\t    webserver user.</p>\n\t  <p>Additionally it is possible to upload arbitrary files (up\n\t    to a configured file length) to any place the webserver\n\t    has write access too.</p>\n\t  <p>For obvious reasons this can lead to the execution of\n\t    arbitrary code if it possible to upload files to the\n\t    document root or it's subdirectories. One example of a\n\t    configuration would be f.e.  running Trac and\n\t    s9y/wordpress with writeable content directories on the\n\t    same webserver.</p>\n\t  <p>Another potential usage of this exploit would be to abuse\n\t    Trac powered webservers as storage for f.e. torrent\n\t    files.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.hardened-php.net/advisory-012005.php",
-      "http://projects.edgewall.com/trac/wiki/ChangeLog"
-    ],
-    "bid": [
-      "13990"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-20",
-    "entry": "2005-06-20"
-  }
+	"vid": "b02c1d80-e1bb-11d9-b875-0001020eed82",
+	"topic": "trac -- file upload/download vulnerability",
+	"affects": [
+		{
+			"name": [
+				"trac"
+			],
+			"range": [
+				{
+					"lt": "0.8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stefan Esser reports:</p>\n\t<blockquote cite=\"http://www.hardened-php.net/advisory-012005.php\">\n\t  <p>Trac's wiki and ticket systems allows to add attachments\n\t    to wiki entries and bug tracker tickets. These attachments\n\t    are stored within directories that are determined by the\n\t    id of the corresponding ticket or wiki entry.</p>\n\t  <p>Due to a missing validation of the id parameter it is\n\t    possible for an attacker to supply arbitrary paths to the\n\t    upload and attachment viewer scripts. This means that a\n\t    potential attacker can retrieve any file accessible by the\n\t    webserver user.</p>\n\t  <p>Additionally it is possible to upload arbitrary files (up\n\t    to a configured file length) to any place the webserver\n\t    has write access too.</p>\n\t  <p>For obvious reasons this can lead to the execution of\n\t    arbitrary code if it possible to upload files to the\n\t    document root or it's subdirectories. One example of a\n\t    configuration would be f.e.  running Trac and\n\t    s9y/wordpress with writeable content directories on the\n\t    same webserver.</p>\n\t  <p>Another potential usage of this exploit would be to abuse\n\t    Trac powered webservers as storage for f.e. torrent\n\t    files.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.hardened-php.net/advisory-012005.php",
+			"http://projects.edgewall.com/trac/wiki/ChangeLog"
+		],
+		"bid": [
+			"13990"
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-20",
+		"entry": "2005-06-20"
+	}
 }

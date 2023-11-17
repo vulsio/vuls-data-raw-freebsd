@@ -1,46 +1,46 @@
 {
-  "vid": "486aff57-9ecd-11da-b410-000e0c2e438a",
-  "topic": "postgresql -- character conversion and tsearch2 vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "postgresql"
-      ],
-      "range": [
-        {
-          "lt": "7.2.8",
-          "ge": "7.2.0"
-        },
-        {
-          "lt": "7.3.10",
-          "ge": "7.3.0"
-        },
-        {
-          "lt": "7.4.8",
-          "ge": "7.4.0"
-        },
-        {
-          "lt": "8.0.3",
-          "ge": "8.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The postgresql development team reports:</p>\n\t  <blockquote cite=\"http://www.postgresql.org/about/news.315\">\n\t    <p>The more severe of the two errors is that the functions\n\t      that support client-to-server character set conversion\n\t      can be called from SQL commands by unprivileged users,\n\t      but these functions are not designed to be safe against\n\t      malicious choices of argument values.  This problem exists\n\t      in PostgreSQL 7.3.* through 8.0.*.  The recommended fix is\n\t      to disable public EXECUTE access for these functions.  This\n\t      does not affect normal usage of the functions for character\n\t      set conversion, but it will prevent misuse.</p>\n\t    <p>The other error is that the contrib/tsearch2 module\n\t      misdeclares several functions as returning type \"internal\"\n\t      when they do not have any \"internal\" argument.  This breaks\n\t      the type safety of \"internal\" by allowing users to\n\t      construct SQL commands that invoke other functions accepting\n\t      \"internal\" arguments.  The consequences of this have not been\n\t      investigated in detail, but it is certainly at least possible\n\t      to crash the backend.</p>\n\t  </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.postgresql.org/about/news.315"
-    ],
-    "cvename": [
-      "CAN-2005-1409",
-      "CAN-2005-1410"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-02",
-    "entry": "2006-02-16"
-  }
+	"vid": "486aff57-9ecd-11da-b410-000e0c2e438a",
+	"topic": "postgresql -- character conversion and tsearch2 vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"postgresql"
+			],
+			"range": [
+				{
+					"lt": "7.2.8",
+					"ge": "7.2.0"
+				},
+				{
+					"lt": "7.3.10",
+					"ge": "7.3.0"
+				},
+				{
+					"lt": "7.4.8",
+					"ge": "7.4.0"
+				},
+				{
+					"lt": "8.0.3",
+					"ge": "8.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The postgresql development team reports:</p>\n\t  <blockquote cite=\"http://www.postgresql.org/about/news.315\">\n\t    <p>The more severe of the two errors is that the functions\n\t      that support client-to-server character set conversion\n\t      can be called from SQL commands by unprivileged users,\n\t      but these functions are not designed to be safe against\n\t      malicious choices of argument values.  This problem exists\n\t      in PostgreSQL 7.3.* through 8.0.*.  The recommended fix is\n\t      to disable public EXECUTE access for these functions.  This\n\t      does not affect normal usage of the functions for character\n\t      set conversion, but it will prevent misuse.</p>\n\t    <p>The other error is that the contrib/tsearch2 module\n\t      misdeclares several functions as returning type \"internal\"\n\t      when they do not have any \"internal\" argument.  This breaks\n\t      the type safety of \"internal\" by allowing users to\n\t      construct SQL commands that invoke other functions accepting\n\t      \"internal\" arguments.  The consequences of this have not been\n\t      investigated in detail, but it is certainly at least possible\n\t      to crash the backend.</p>\n\t  </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.postgresql.org/about/news.315"
+		],
+		"cvename": [
+			"CAN-2005-1409",
+			"CAN-2005-1410"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-02",
+		"entry": "2006-02-16"
+	}
 }

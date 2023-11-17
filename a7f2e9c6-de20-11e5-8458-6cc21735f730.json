@@ -1,32 +1,32 @@
 {
-  "vid": "a7f2e9c6-de20-11e5-8458-6cc21735f730",
-  "topic": "xerces-c3 -- Parser Crashes on Malformed Input",
-  "affects": [
-    {
-      "name": [
-        "xerces-c3"
-      ],
-      "range": [
-        {
-          "lt": "3.1.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://xerces.apache.org/xerces-c/secadv/CVE-2016-0729.txt\">\n\t  <p>The Xerces-C XML parser mishandles certain kinds of malformed input\n\t  documents, resulting in buffer overflows during processing and error\n\t  reporting. The overflows can manifest as a segmentation fault or as\n\t  memory corruption during a parse operation.  The bugs allow for a\n\t  denial of service attack in many applications by an unauthenticated\n\t  attacker, and could conceivably result in remote code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xerces.apache.org/xerces-c/secadv/CVE-2016-0729.txt"
-    ],
-    "cvename": [
-      "CVE-2016-0729"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-25",
-    "entry": "2016-02-28"
-  }
+	"vid": "a7f2e9c6-de20-11e5-8458-6cc21735f730",
+	"topic": "xerces-c3 -- Parser Crashes on Malformed Input",
+	"affects": [
+		{
+			"name": [
+				"xerces-c3"
+			],
+			"range": [
+				{
+					"lt": "3.1.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://xerces.apache.org/xerces-c/secadv/CVE-2016-0729.txt\">\n\t  <p>The Xerces-C XML parser mishandles certain kinds of malformed input\n\t  documents, resulting in buffer overflows during processing and error\n\t  reporting. The overflows can manifest as a segmentation fault or as\n\t  memory corruption during a parse operation.  The bugs allow for a\n\t  denial of service attack in many applications by an unauthenticated\n\t  attacker, and could conceivably result in remote code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xerces.apache.org/xerces-c/secadv/CVE-2016-0729.txt"
+		],
+		"cvename": [
+			"CVE-2016-0729"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-25",
+		"entry": "2016-02-28"
+	}
 }

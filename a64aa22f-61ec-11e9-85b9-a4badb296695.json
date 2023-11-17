@@ -1,45 +1,45 @@
 {
-  "vid": "a64aa22f-61ec-11e9-85b9-a4badb296695",
-  "topic": "dovecot -- json encoder crash",
-  "affects": [
-    {
-      "name": [
-        "dovecot"
-      ],
-      "range": [
-        {
-          "lt": "2.3.5.2",
-          "ge": "2.3.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "dovecot2"
-      ],
-      "range": [
-        {
-          "lt": "2.3.5.2",
-          "ge": "2.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2019-April/000407.html\">\n\t  <p>* CVE-2019-10691: Trying to login with 8bit username containing\n      invalid UTF8 input causes auth process to crash if auth policy is\n      enabled. This could be used rather easily to cause a DoS. Similar\n      crash also happens during mail delivery when using invalid UTF8 in\n      From or Subject header when OX push notification driver is used.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://dovecot.org/pipermail/dovecot-news/2019-April/000407.html"
-    ],
-    "cvename": [
-      "CVE-2019-10691"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-04-09",
-    "entry": "2019-04-18",
-    "modified": "2019-05-26"
-  }
+	"vid": "a64aa22f-61ec-11e9-85b9-a4badb296695",
+	"topic": "dovecot -- json encoder crash",
+	"affects": [
+		{
+			"name": [
+				"dovecot"
+			],
+			"range": [
+				{
+					"lt": "2.3.5.2",
+					"ge": "2.3.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"dovecot2"
+			],
+			"range": [
+				{
+					"lt": "2.3.5.2",
+					"ge": "2.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2019-April/000407.html\">\n\t  <p>* CVE-2019-10691: Trying to login with 8bit username containing\n      invalid UTF8 input causes auth process to crash if auth policy is\n      enabled. This could be used rather easily to cause a DoS. Similar\n      crash also happens during mail delivery when using invalid UTF8 in\n      From or Subject header when OX push notification driver is used.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://dovecot.org/pipermail/dovecot-news/2019-April/000407.html"
+		],
+		"cvename": [
+			"CVE-2019-10691"
+		]
+	},
+	"dates": {
+		"discovery": "2019-04-09",
+		"entry": "2019-04-18",
+		"modified": "2019-05-26"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "c651c898-e90d-11e1-b230-0024e830109b",
-  "topic": "libotr -- buffer overflows",
-  "affects": [
-    {
-      "name": [
-        "libotr"
-      ],
-      "range": [
-        {
-          "lt": "3.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OTR developers report:</p>\n\t<blockquote cite=\"http://lists.cypherpunks.ca/pipermail/otr-dev/2012-July/001347.html\">\n\t  <p>The otrl_base64_otr_decode() function and similar functions within OTR\n\t  suffer from buffer overflows in the case of malformed input;\n\t  specifically if a message of the format of \"?OTR:===.\" is received\n\t  then a zero-byte allocation is performed without a similar correlation\n\t  between the subsequent base64 decoding write, as such it becomes\n\t  possible to write between zero and three bytes incorrectly to the\n\t  heap, albeit only with a value of '='.</p>\n\t  <p>Because this code path is highly utilized, specifically in the\n\t  reception of instant messages over pidgin or similar, this\n\t  vulnerability is considered severe even though in many platforms and\n\t  circumstances the bug would yield an unexploitable state and result\n\t  simply in denial of service.</p>\n\t  <p>The developers of OTR promptly fixed the errors and users of OTR are\n\t  advised to upgrade the software at the next release cycle.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.cypherpunks.ca/pipermail/otr-dev/2012-July/001347.html"
-    ],
-    "cvename": [
-      "CVE-2012-3461"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-07-27",
-    "entry": "2012-08-18"
-  }
+	"vid": "c651c898-e90d-11e1-b230-0024e830109b",
+	"topic": "libotr -- buffer overflows",
+	"affects": [
+		{
+			"name": [
+				"libotr"
+			],
+			"range": [
+				{
+					"lt": "3.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OTR developers report:</p>\n\t<blockquote cite=\"http://lists.cypherpunks.ca/pipermail/otr-dev/2012-July/001347.html\">\n\t  <p>The otrl_base64_otr_decode() function and similar functions within OTR\n\t  suffer from buffer overflows in the case of malformed input;\n\t  specifically if a message of the format of \"?OTR:===.\" is received\n\t  then a zero-byte allocation is performed without a similar correlation\n\t  between the subsequent base64 decoding write, as such it becomes\n\t  possible to write between zero and three bytes incorrectly to the\n\t  heap, albeit only with a value of '='.</p>\n\t  <p>Because this code path is highly utilized, specifically in the\n\t  reception of instant messages over pidgin or similar, this\n\t  vulnerability is considered severe even though in many platforms and\n\t  circumstances the bug would yield an unexploitable state and result\n\t  simply in denial of service.</p>\n\t  <p>The developers of OTR promptly fixed the errors and users of OTR are\n\t  advised to upgrade the software at the next release cycle.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.cypherpunks.ca/pipermail/otr-dev/2012-July/001347.html"
+		],
+		"cvename": [
+			"CVE-2012-3461"
+		]
+	},
+	"dates": {
+		"discovery": "2012-07-27",
+		"entry": "2012-08-18"
+	}
 }

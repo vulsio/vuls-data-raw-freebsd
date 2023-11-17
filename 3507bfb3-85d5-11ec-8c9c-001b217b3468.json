@@ -1,55 +1,55 @@
 {
-  "vid": "3507bfb3-85d5-11ec-8c9c-001b217b3468",
-  "topic": "Gitlab -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "14.7.1",
-          "ge": "14.7.0"
-        },
-        {
-          "lt": "14.6.4",
-          "ge": "14.6.0"
-        },
-        {
-          "lt": "14.5.4",
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/02/03/security-release-gitlab-14-7-1-released/\">\n\t  <p>Arbitrary POST requests via special HTML attributes in Jupyter Notebooks</p>\n\t  <p>DNS Rebinding vulnerability in Irker IRC Gateway integration</p>\n\t  <p>Missing certificate validation for external CI services</p>\n\t  <p>Blind SSRF Through Project Import</p>\n\t  <p>Open redirect vulnerability in Jira Integration</p>\n\t  <p>Issue link was disclosing the linked issue</p>\n\t  <p>Service desk email accessible by project non-members</p>\n\t  <p>Authenticated users can search other users by their private email</p>\n\t  <p>\"External status checks\" can be accepted by users below developer access if the user is either author or assignee of the target merge request</p>\n\t  <p>Deleting packages in bulk from package registries may cause table locks</p>\n\t  <p>Autocomplete enabled on specific pages</p>\n\t  <p>Possible SSRF due to not blocking shared address space</p>\n\t  <p>System notes reveals private project path when Issue is moved to a public project</p>\n\t  <p>Timeout for pages using Markdown</p>\n\t  <p>Certain branch names could not be protected</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2022/02/03/security-release-gitlab-14-7-1-released/"
-    ],
-    "cvename": [
-      "CVE-2022-0427",
-      "CVE-2022-0425",
-      "CVE-2022-0123",
-      "CVE-2022-0136",
-      "CVE-2022-0283",
-      "CVE-2022-0390",
-      "CVE-2022-0373",
-      "CVE-2022-0371",
-      "CVE-2021-39943",
-      "CVE-2022-0477",
-      "CVE-2022-0167",
-      "CVE-2022-0249",
-      "CVE-2022-0344",
-      "CVE-2022-0488",
-      "CVE-2021-39931"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-02-03",
-    "entry": "2022-02-04"
-  }
+	"vid": "3507bfb3-85d5-11ec-8c9c-001b217b3468",
+	"topic": "Gitlab -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "14.7.1",
+					"ge": "14.7.0"
+				},
+				{
+					"lt": "14.6.4",
+					"ge": "14.6.0"
+				},
+				{
+					"lt": "14.5.4",
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/02/03/security-release-gitlab-14-7-1-released/\">\n\t  <p>Arbitrary POST requests via special HTML attributes in Jupyter Notebooks</p>\n\t  <p>DNS Rebinding vulnerability in Irker IRC Gateway integration</p>\n\t  <p>Missing certificate validation for external CI services</p>\n\t  <p>Blind SSRF Through Project Import</p>\n\t  <p>Open redirect vulnerability in Jira Integration</p>\n\t  <p>Issue link was disclosing the linked issue</p>\n\t  <p>Service desk email accessible by project non-members</p>\n\t  <p>Authenticated users can search other users by their private email</p>\n\t  <p>\"External status checks\" can be accepted by users below developer access if the user is either author or assignee of the target merge request</p>\n\t  <p>Deleting packages in bulk from package registries may cause table locks</p>\n\t  <p>Autocomplete enabled on specific pages</p>\n\t  <p>Possible SSRF due to not blocking shared address space</p>\n\t  <p>System notes reveals private project path when Issue is moved to a public project</p>\n\t  <p>Timeout for pages using Markdown</p>\n\t  <p>Certain branch names could not be protected</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2022/02/03/security-release-gitlab-14-7-1-released/"
+		],
+		"cvename": [
+			"CVE-2022-0427",
+			"CVE-2022-0425",
+			"CVE-2022-0123",
+			"CVE-2022-0136",
+			"CVE-2022-0283",
+			"CVE-2022-0390",
+			"CVE-2022-0373",
+			"CVE-2022-0371",
+			"CVE-2021-39943",
+			"CVE-2022-0477",
+			"CVE-2022-0167",
+			"CVE-2022-0249",
+			"CVE-2022-0344",
+			"CVE-2022-0488",
+			"CVE-2021-39931"
+		]
+	},
+	"dates": {
+		"discovery": "2022-02-03",
+		"entry": "2022-02-04"
+	}
 }

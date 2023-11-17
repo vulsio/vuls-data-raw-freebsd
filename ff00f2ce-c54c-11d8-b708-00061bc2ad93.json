@@ -1,34 +1,34 @@
 {
-  "vid": "ff00f2ce-c54c-11d8-b708-00061bc2ad93",
-  "topic": "XFree86 opens a chooserFd TCP socket even when DisplayManager.requestPort is 0",
-  "affects": [
-    {
-      "name": [
-        "xorg-clients"
-      ],
-      "range": [
-        {
-          "eq": "6.7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>When the IPv6 code was added to xdm a critical\n\t  test to disable xdmcp was accidentally removed.  This\n\t  caused xdm to create the chooser socket regardless if\n\t  DisplayManager.requestPort was disabled in xdm-config\n\t  or not.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.xfree86.org/show_bug.cgi?id=1376",
-      "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=124900"
-    ],
-    "cvename": [
-      "CVE-2004-0419"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-05-19",
-    "entry": "2004-06-28",
-    "modified": "2004-06-28"
-  }
+	"vid": "ff00f2ce-c54c-11d8-b708-00061bc2ad93",
+	"topic": "XFree86 opens a chooserFd TCP socket even when DisplayManager.requestPort is 0",
+	"affects": [
+		{
+			"name": [
+				"xorg-clients"
+			],
+			"range": [
+				{
+					"eq": "6.7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>When the IPv6 code was added to xdm a critical\n\t  test to disable xdmcp was accidentally removed.  This\n\t  caused xdm to create the chooser socket regardless if\n\t  DisplayManager.requestPort was disabled in xdm-config\n\t  or not.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.xfree86.org/show_bug.cgi?id=1376",
+			"https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=124900"
+		],
+		"cvename": [
+			"CVE-2004-0419"
+		]
+	},
+	"dates": {
+		"discovery": "2004-05-19",
+		"entry": "2004-06-28",
+		"modified": "2004-06-28"
+	}
 }

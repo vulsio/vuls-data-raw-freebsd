@@ -1,33 +1,33 @@
 {
-  "vid": "2bab995f-36d4-11ea-9dad-002590acae31",
-  "topic": "Template::Toolkit -- Directory traversal on write",
-  "affects": [
-    {
-      "name": [
-        "p5-Template-Toolkit"
-      ],
-      "range": [
-        {
-          "lt": "3.004"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Art Manion and Will Dormann report:</p>\n\t<blockquote cite=\"https://www.kb.cert.org/vuls/id/619785/\">\n\t  <p>\n\t    By using an older and less-secure form of open(), it is\n\t    possible for untrusted template files to cause reads/writes\n\t    outside of the template directories. This vulnerability is\n\t    a component of the recent Citrix exploit.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.kb.cert.org/vuls/id/619785/",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19781"
-    ],
-    "cvename": [
-      "CVE-2019-19781"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-12-13",
-    "entry": "2020-01-14"
-  }
+	"vid": "2bab995f-36d4-11ea-9dad-002590acae31",
+	"topic": "Template::Toolkit -- Directory traversal on write",
+	"affects": [
+		{
+			"name": [
+				"p5-Template-Toolkit"
+			],
+			"range": [
+				{
+					"lt": "3.004"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Art Manion and Will Dormann report:</p>\n\t<blockquote cite=\"https://www.kb.cert.org/vuls/id/619785/\">\n\t  <p>\n\t    By using an older and less-secure form of open(), it is\n\t    possible for untrusted template files to cause reads/writes\n\t    outside of the template directories. This vulnerability is\n\t    a component of the recent Citrix exploit.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.kb.cert.org/vuls/id/619785/",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19781"
+		],
+		"cvename": [
+			"CVE-2019-19781"
+		]
+	},
+	"dates": {
+		"discovery": "2019-12-13",
+		"entry": "2020-01-14"
+	}
 }

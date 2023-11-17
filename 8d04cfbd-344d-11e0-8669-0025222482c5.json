@@ -1,35 +1,35 @@
 {
-  "vid": "8d04cfbd-344d-11e0-8669-0025222482c5",
-  "topic": "mediawiki -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mediawiki"
-      ],
-      "range": [
-        {
-          "lt": "1.16.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Medawiki reports:</p>\n\t<blockquote cite=\"http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-February/000095.html\">\n\t  <p>An arbitrary script inclusion vulnerability was discovered. The\n\t    vulnerability only allows execution of files with names ending in\n\t    \".php\" which are already present in the local filesystem. Only servers\n\t    running Microsoft Windows and possibly Novell Netware are affected.\n\t    Despite these mitigating factors, all users are advised to upgrade,\n\t    since there is a risk of complete server compromise. MediaWiki 1.8.0\n\t    and later is affected.</p>\n\t  <p>Security researcher mghack discovered a CSS injection\n\t    vulnerability. For Internet Explorer and similar browsers, this is\n\t    equivalent to an XSS vulnerability, that is to say, it allows the\n\t    compromise of wiki user accounts. For other browsers, it allows private\n\t    data such as IP addresses and browsing patterns to be sent to a malicious\n\t    external web server. It affects all versions of MediaWiki. All users are\n\t    advised to upgrade.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.wikimedia.org/show_bug.cgi?id=27094",
-      "https://bugzilla.wikimedia.org/show_bug.cgi?id=27093",
-      "http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_16_2/phase3/RELEASE-NOTES",
-      "http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-February/000095.html"
-    ],
-    "cvename": [
-      "CVE-2011-0047"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-02-01",
-    "entry": "2011-02-09"
-  }
+	"vid": "8d04cfbd-344d-11e0-8669-0025222482c5",
+	"topic": "mediawiki -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mediawiki"
+			],
+			"range": [
+				{
+					"lt": "1.16.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Medawiki reports:</p>\n\t<blockquote cite=\"http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-February/000095.html\">\n\t  <p>An arbitrary script inclusion vulnerability was discovered. The\n\t    vulnerability only allows execution of files with names ending in\n\t    \".php\" which are already present in the local filesystem. Only servers\n\t    running Microsoft Windows and possibly Novell Netware are affected.\n\t    Despite these mitigating factors, all users are advised to upgrade,\n\t    since there is a risk of complete server compromise. MediaWiki 1.8.0\n\t    and later is affected.</p>\n\t  <p>Security researcher mghack discovered a CSS injection\n\t    vulnerability. For Internet Explorer and similar browsers, this is\n\t    equivalent to an XSS vulnerability, that is to say, it allows the\n\t    compromise of wiki user accounts. For other browsers, it allows private\n\t    data such as IP addresses and browsing patterns to be sent to a malicious\n\t    external web server. It affects all versions of MediaWiki. All users are\n\t    advised to upgrade.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.wikimedia.org/show_bug.cgi?id=27094",
+			"https://bugzilla.wikimedia.org/show_bug.cgi?id=27093",
+			"http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_16_2/phase3/RELEASE-NOTES",
+			"http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-February/000095.html"
+		],
+		"cvename": [
+			"CVE-2011-0047"
+		]
+	},
+	"dates": {
+		"discovery": "2011-02-01",
+		"entry": "2011-02-09"
+	}
 }

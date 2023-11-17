@@ -1,56 +1,56 @@
 {
-  "vid": "f95a9005-88ae-11d8-90d1-0020ed76ef5a",
-  "topic": "shmat reference counting bug",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.2_2",
-          "ge": "5.2"
-        },
-        {
-          "lt": "5.1_14",
-          "ge": "5.1"
-        },
-        {
-          "lt": "5.0_20",
-          "ge": "5.0"
-        },
-        {
-          "lt": "4.9_2",
-          "ge": "4.9"
-        },
-        {
-          "lt": "4.8_15",
-          "ge": "4.8"
-        },
-        {
-          "lt": "4.7_25"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A programming error in the <a href=\"http://www.freebsd.org/cgi/man.cgi?query=shmat\">shmat(2)</a> system call can result\n\t  in a shared memory segment's reference count being erroneously\n\t  incremented.</p>\n\t<p>It may be possible to cause a shared memory segment to\n\t  reference unallocated kernel memory, but remain valid.\n\t  This could allow a local attacker to gain read or write\n\t  access to a portion of kernel memory, resulting in sensitive\n\t  information disclosure, bypass of access control mechanisms,\n\t  or privilege escalation.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.pine.nl/press/pine-cert-20040201.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0114"
-    ],
-    "freebsd_sa": [
-      "SA-04:02.shmat"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-02-01",
-    "entry": "2004-04-07",
-    "modified": "2004-05-05"
-  }
+	"vid": "f95a9005-88ae-11d8-90d1-0020ed76ef5a",
+	"topic": "shmat reference counting bug",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.2_2",
+					"ge": "5.2"
+				},
+				{
+					"lt": "5.1_14",
+					"ge": "5.1"
+				},
+				{
+					"lt": "5.0_20",
+					"ge": "5.0"
+				},
+				{
+					"lt": "4.9_2",
+					"ge": "4.9"
+				},
+				{
+					"lt": "4.8_15",
+					"ge": "4.8"
+				},
+				{
+					"lt": "4.7_25"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A programming error in the <a href=\"http://www.freebsd.org/cgi/man.cgi?query=shmat\">shmat(2)</a> system call can result\n\t  in a shared memory segment's reference count being erroneously\n\t  incremented.</p>\n\t<p>It may be possible to cause a shared memory segment to\n\t  reference unallocated kernel memory, but remain valid.\n\t  This could allow a local attacker to gain read or write\n\t  access to a portion of kernel memory, resulting in sensitive\n\t  information disclosure, bypass of access control mechanisms,\n\t  or privilege escalation.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.pine.nl/press/pine-cert-20040201.txt"
+		],
+		"cvename": [
+			"CVE-2004-0114"
+		],
+		"freebsd_sa": [
+			"SA-04:02.shmat"
+		]
+	},
+	"dates": {
+		"discovery": "2004-02-01",
+		"entry": "2004-04-07",
+		"modified": "2004-05-05"
+	}
 }

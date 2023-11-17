@@ -1,42 +1,42 @@
 {
-  "vid": "35aef72c-5c8e-11eb-8309-4ccc6adda413",
-  "topic": "chocolate-doom -- Arbitrary code execution",
-  "affects": [
-    {
-      "name": [
-        "chocolate-doom"
-      ],
-      "range": [
-        {
-          "lt": "3.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "crispy-doom"
-      ],
-      "range": [
-        {
-          "lt": "5.9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Michal Dardas from LogicalTrust reports:</p>\n\t<blockquote cite=\"https://github.com/chocolate-doom/chocolate-doom/issues/1293\">\n\t  <p>\n\t    The server in Chocolate Doom 3.0.0 and Crispy Doom 5.8.0 doesn't validate\n\t    the user-controlled num_players value, leading to a buffer overflow. A\n\t    malicious user can overwrite the server's stack.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/chocolate-doom/chocolate-doom/issues/1293"
-    ],
-    "cvename": [
-      "CVE-2020-14983"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-06-22",
-    "entry": "2021-01-22"
-  }
+	"vid": "35aef72c-5c8e-11eb-8309-4ccc6adda413",
+	"topic": "chocolate-doom -- Arbitrary code execution",
+	"affects": [
+		{
+			"name": [
+				"chocolate-doom"
+			],
+			"range": [
+				{
+					"lt": "3.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"crispy-doom"
+			],
+			"range": [
+				{
+					"lt": "5.9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Michal Dardas from LogicalTrust reports:</p>\n\t<blockquote cite=\"https://github.com/chocolate-doom/chocolate-doom/issues/1293\">\n\t  <p>\n\t    The server in Chocolate Doom 3.0.0 and Crispy Doom 5.8.0 doesn't validate\n\t    the user-controlled num_players value, leading to a buffer overflow. A\n\t    malicious user can overwrite the server's stack.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/chocolate-doom/chocolate-doom/issues/1293"
+		],
+		"cvename": [
+			"CVE-2020-14983"
+		]
+	},
+	"dates": {
+		"discovery": "2020-06-22",
+		"entry": "2021-01-22"
+	}
 }

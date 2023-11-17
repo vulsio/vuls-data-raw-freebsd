@@ -1,53 +1,53 @@
 {
-  "vid": "2523bc76-4f01-11ed-929b-002590f2a714",
-  "topic": "git -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "git"
-      ],
-      "range": [
-        {
-          "lt": "2.38.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "git-lite"
-      ],
-      "range": [
-        {
-          "lt": "2.38.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "git-tiny"
-      ],
-      "range": [
-        {
-          "lt": "2.38.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p/>\n\t<blockquote cite=\"https://lore.kernel.org/git/xmqq4jw1uku5.fsf@gitster.g/T/#u\">\n\t  <h1>This release contains 2 security fixes:</h1>\n\t  <h2>CVE-2022-39253</h2>\n\t  <p>\n\t   When relying on the `--local` clone optimization, Git dereferences\n\t   symbolic links in the source repository before creating hardlinks\n\t   (or copies) of the dereferenced link in the destination repository.\n\t   This can lead to surprising behavior where arbitrary files are\n\t   present in a repository's `$GIT_DIR` when cloning from a malicious\n\t   repository.\n\n\t   Git will no longer dereference symbolic links via the `--local`\n\t   clone mechanism, and will instead refuse to clone repositories that\n\t   have symbolic links present in the `$GIT_DIR/objects` directory.\n\n\t   Additionally, the value of `protocol.file.allow` is changed to be\n\t   \"user\" by default.\n\t  </p>\n\t  <h2>CVE-2022-39260</h2>\n\t  <p>\n\t   An overly-long command string given to `git shell` can result in\n\t   overflow in `split_cmdline()`, leading to arbitrary heap writes and\n\t   remote code execution when `git shell` is exposed and the directory\n\t   `$HOME/git-shell-commands` exists.\n\n\t   `git shell` is taught to refuse interactive commands that are\n\t   longer than 4MiB in size. `split_cmdline()` is hardened to reject\n\t   inputs larger than 2GiB.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lore.kernel.org/git/xmqq4jw1uku5.fsf@gitster.g/T/#u"
-    ],
-    "cvename": [
-      "CVE-2022-39253",
-      "CVE-2022-39260"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-06-09",
-    "entry": "2022-10-18"
-  }
+	"vid": "2523bc76-4f01-11ed-929b-002590f2a714",
+	"topic": "git -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"git"
+			],
+			"range": [
+				{
+					"lt": "2.38.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"git-lite"
+			],
+			"range": [
+				{
+					"lt": "2.38.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"git-tiny"
+			],
+			"range": [
+				{
+					"lt": "2.38.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p/>\n\t<blockquote cite=\"https://lore.kernel.org/git/xmqq4jw1uku5.fsf@gitster.g/T/#u\">\n\t  <h1>This release contains 2 security fixes:</h1>\n\t  <h2>CVE-2022-39253</h2>\n\t  <p>\n\t   When relying on the `--local` clone optimization, Git dereferences\n\t   symbolic links in the source repository before creating hardlinks\n\t   (or copies) of the dereferenced link in the destination repository.\n\t   This can lead to surprising behavior where arbitrary files are\n\t   present in a repository's `$GIT_DIR` when cloning from a malicious\n\t   repository.\n\n\t   Git will no longer dereference symbolic links via the `--local`\n\t   clone mechanism, and will instead refuse to clone repositories that\n\t   have symbolic links present in the `$GIT_DIR/objects` directory.\n\n\t   Additionally, the value of `protocol.file.allow` is changed to be\n\t   \"user\" by default.\n\t  </p>\n\t  <h2>CVE-2022-39260</h2>\n\t  <p>\n\t   An overly-long command string given to `git shell` can result in\n\t   overflow in `split_cmdline()`, leading to arbitrary heap writes and\n\t   remote code execution when `git shell` is exposed and the directory\n\t   `$HOME/git-shell-commands` exists.\n\n\t   `git shell` is taught to refuse interactive commands that are\n\t   longer than 4MiB in size. `split_cmdline()` is hardened to reject\n\t   inputs larger than 2GiB.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lore.kernel.org/git/xmqq4jw1uku5.fsf@gitster.g/T/#u"
+		],
+		"cvename": [
+			"CVE-2022-39253",
+			"CVE-2022-39260"
+		]
+	},
+	"dates": {
+		"discovery": "2022-06-09",
+		"entry": "2022-10-18"
+	}
 }

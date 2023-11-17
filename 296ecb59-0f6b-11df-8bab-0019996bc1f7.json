@@ -1,42 +1,42 @@
 {
-  "vid": "296ecb59-0f6b-11df-8bab-0019996bc1f7",
-  "topic": "squid -- Denial of Service vulnerability in DNS handling",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "2.7.7_3",
-          "ge": "2.7.1"
-        },
-        {
-          "lt": "3.0.23",
-          "ge": "3.0.1"
-        },
-        {
-          "lt": "3.1.0.15_2",
-          "ge": "3.1.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Squid security advisory 2010:1 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2010_1.txt\">\n\t  <p>Due to incorrect data validation Squid is vulnerable to a denial\n\t    of service attack when processing specially crafted DNS packets.</p>\n\t  <p>This problem allows any trusted client or external server who can\n\t    determine the squid receiving port to perform a short-term denial\n\t    of service attack on the Squid service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Advisories/SQUID-2010_1.txt"
-    ],
-    "cvename": [
-      "CVE-2010-0308"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-01-14",
-    "entry": "2010-02-01",
-    "modified": "2010-05-02"
-  }
+	"vid": "296ecb59-0f6b-11df-8bab-0019996bc1f7",
+	"topic": "squid -- Denial of Service vulnerability in DNS handling",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "2.7.7_3",
+					"ge": "2.7.1"
+				},
+				{
+					"lt": "3.0.23",
+					"ge": "3.0.1"
+				},
+				{
+					"lt": "3.1.0.15_2",
+					"ge": "3.1.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Squid security advisory 2010:1 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2010_1.txt\">\n\t  <p>Due to incorrect data validation Squid is vulnerable to a denial\n\t    of service attack when processing specially crafted DNS packets.</p>\n\t  <p>This problem allows any trusted client or external server who can\n\t    determine the squid receiving port to perform a short-term denial\n\t    of service attack on the Squid service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Advisories/SQUID-2010_1.txt"
+		],
+		"cvename": [
+			"CVE-2010-0308"
+		]
+	},
+	"dates": {
+		"discovery": "2010-01-14",
+		"entry": "2010-02-01",
+		"modified": "2010-05-02"
+	}
 }

@@ -1,47 +1,47 @@
 {
-  "vid": "62239968-2f2a-11d9-a9e7-0001020eed82",
-  "topic": "gd -- integer overflow",
-  "affects": [
-    {
-      "name": [
-        "gd",
-        "uk-gd",
-        "ja-gd"
-      ],
-      "range": [
-        {
-          "lt": "2.0.29,1"
-        },
-        {
-          "lt": "2.*,2",
-          "gt": "1.*,2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>infamous41md reports about the GD Graphics Library:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109882489302099\">\n\t  <p>There is an integer overflow when allocating memory in\n\t    the routine that handles loading PNG image files.  This\n\t    later leads to heap data structures being overwritten.  If\n\t    an attacker tricked a user into loading a malicious PNG\n\t    image, they could leverage this into executing arbitrary\n\t    code in the context of the user opening image.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.boutell.com/gd/manual2.0.29.html#whatsnew2.0.29"
-    ],
-    "cvename": [
-      "CVE-2004-0990"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109882489302099",
-        "msgid": "20041025204303.4341d907.infamous41md@hotpop.com"
-      }
-    ],
-    "bid": [
-      "11523"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-26",
-    "entry": "2004-11-05"
-  }
+	"vid": "62239968-2f2a-11d9-a9e7-0001020eed82",
+	"topic": "gd -- integer overflow",
+	"affects": [
+		{
+			"name": [
+				"gd",
+				"uk-gd",
+				"ja-gd"
+			],
+			"range": [
+				{
+					"lt": "2.0.29,1"
+				},
+				{
+					"lt": "2.*,2",
+					"gt": "1.*,2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>infamous41md reports about the GD Graphics Library:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109882489302099\">\n\t  <p>There is an integer overflow when allocating memory in\n\t    the routine that handles loading PNG image files.  This\n\t    later leads to heap data structures being overwritten.  If\n\t    an attacker tricked a user into loading a malicious PNG\n\t    image, they could leverage this into executing arbitrary\n\t    code in the context of the user opening image.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.boutell.com/gd/manual2.0.29.html#whatsnew2.0.29"
+		],
+		"cvename": [
+			"CVE-2004-0990"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109882489302099",
+				"msgid": "20041025204303.4341d907.infamous41md@hotpop.com"
+			}
+		],
+		"bid": [
+			"11523"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-26",
+		"entry": "2004-11-05"
+	}
 }

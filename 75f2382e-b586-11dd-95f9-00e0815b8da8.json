@@ -1,44 +1,44 @@
 {
-  "vid": "75f2382e-b586-11dd-95f9-00e0815b8da8",
-  "topic": "syslog-ng2 -- startup directory leakage in the chroot environment",
-  "affects": [
-    {
-      "name": [
-        "syslog-ng2"
-      ],
-      "range": [
-        {
-          "lt": "2.0.9_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "syslog-ng"
-      ],
-      "range": [
-        {
-          "le": "1.6.12_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Florian Grandel reports:</p>\n\t<blockquote cite=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=505791\">\n\t  <p>I have not had the time to analyze all of syslog-ng code.\n\t    But by reading the code section near the chroot call and looking\n\t    at strace results I believe that syslog-ng does not chdir to the\n\t    chroot jail's location before chrooting into it.</p>\n\t  <p>This opens up ways to work around the chroot jail.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=505791",
-      "http://www.openwall.com/lists/oss-security/2008/11/17/3"
-    ],
-    "cvename": [
-      "CVE-2008-5110"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-11-15",
-    "entry": "2008-11-18",
-    "modified": "2009-07-01"
-  }
+	"vid": "75f2382e-b586-11dd-95f9-00e0815b8da8",
+	"topic": "syslog-ng2 -- startup directory leakage in the chroot environment",
+	"affects": [
+		{
+			"name": [
+				"syslog-ng2"
+			],
+			"range": [
+				{
+					"lt": "2.0.9_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"syslog-ng"
+			],
+			"range": [
+				{
+					"le": "1.6.12_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Florian Grandel reports:</p>\n\t<blockquote cite=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=505791\">\n\t  <p>I have not had the time to analyze all of syslog-ng code.\n\t    But by reading the code section near the chroot call and looking\n\t    at strace results I believe that syslog-ng does not chdir to the\n\t    chroot jail's location before chrooting into it.</p>\n\t  <p>This opens up ways to work around the chroot jail.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=505791",
+			"http://www.openwall.com/lists/oss-security/2008/11/17/3"
+		],
+		"cvename": [
+			"CVE-2008-5110"
+		]
+	},
+	"dates": {
+		"discovery": "2008-11-15",
+		"entry": "2008-11-18",
+		"modified": "2009-07-01"
+	}
 }

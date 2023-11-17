@@ -1,32 +1,32 @@
 {
-  "vid": "9548d6ed-b1da-11ed-b0f4-002590f2a714",
-  "topic": "git -- Local clone-based data exfiltration with non-local transports",
-  "affects": [
-    {
-      "name": [
-        "git"
-      ],
-      "range": [
-        {
-          "lt": "2.39.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>git team reports:</p>\n\t<blockquote cite=\"https://github.com/git/git/security/advisories/GHSA-gw92-x3fm-3g3q\">\n\t  <p>Using a specially-crafted repository, Git can be tricked into using\n\t    its local clone optimization even when using a non-local transport.\n\t    Though Git will abort local clones whose source $GIT_DIR/objects\n\t    directory contains symbolic links (c.f., CVE-2022-39253), the objects\n\t    directory itself may still be a symbolic link.</p>\n\n\t  <p>These two may be combined to include arbitrary files based on known\n\t    paths on the victim's filesystem within the malicious repository's\n\t    working copy, allowing for data exfiltration in a similar manner as\n\t    CVE-2022-39253.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.blog/2023-02-14-git-security-vulnerabilities-announced-3/#cve-2023-22490"
-    ],
-    "cvename": [
-      "CVE-2023-22490"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-02-14",
-    "entry": "2023-02-21"
-  }
+	"vid": "9548d6ed-b1da-11ed-b0f4-002590f2a714",
+	"topic": "git -- Local clone-based data exfiltration with non-local transports",
+	"affects": [
+		{
+			"name": [
+				"git"
+			],
+			"range": [
+				{
+					"lt": "2.39.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>git team reports:</p>\n\t<blockquote cite=\"https://github.com/git/git/security/advisories/GHSA-gw92-x3fm-3g3q\">\n\t  <p>Using a specially-crafted repository, Git can be tricked into using\n\t    its local clone optimization even when using a non-local transport.\n\t    Though Git will abort local clones whose source $GIT_DIR/objects\n\t    directory contains symbolic links (c.f., CVE-2022-39253), the objects\n\t    directory itself may still be a symbolic link.</p>\n\n\t  <p>These two may be combined to include arbitrary files based on known\n\t    paths on the victim's filesystem within the malicious repository's\n\t    working copy, allowing for data exfiltration in a similar manner as\n\t    CVE-2022-39253.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.blog/2023-02-14-git-security-vulnerabilities-announced-3/#cve-2023-22490"
+		],
+		"cvename": [
+			"CVE-2023-22490"
+		]
+	},
+	"dates": {
+		"discovery": "2023-02-14",
+		"entry": "2023-02-21"
+	}
 }

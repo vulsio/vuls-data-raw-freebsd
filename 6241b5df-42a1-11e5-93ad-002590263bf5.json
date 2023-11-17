@@ -1,67 +1,67 @@
 {
-  "vid": "6241b5df-42a1-11e5-93ad-002590263bf5",
-  "topic": "mediawiki -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mediawiki123"
-      ],
-      "range": [
-        {
-          "lt": "1.23.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mediawiki124"
-      ],
-      "range": [
-        {
-          "lt": "1.24.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mediawiki125"
-      ],
-      "range": [
-        {
-          "lt": "1.25.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MediaWiki reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html\">\n\t  <p>Internal review discovered that Special:DeletedContributions did\n\t    not properly protect the IP of autoblocked users. This fix makes\n\t    the functionality of Special:DeletedContributions consistent with\n\t    Special:Contributions and Special:BlockList.</p>\n\t  <p>Internal review discovered that watchlist anti-csrf tokens were not\n\t    being compared in constant time, which could allow various timing\n\t    attacks. This could allow an attacker to modify a user's watchlist\n\t    via csrf</p>\n\t  <p>John Menerick reported that MediaWiki's thumb.php failed to sanitize\n\t    various error messages, resulting in xss.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html",
-      "https://phabricator.wikimedia.org/T106893",
-      "https://phabricator.wikimedia.org/T94116",
-      "https://phabricator.wikimedia.org/T97391",
-      "http://www.openwall.com/lists/oss-security/2015/08/27/6"
-    ],
-    "cvename": [
-      "CVE-2015-6727",
-      "CVE-2013-7444",
-      "CVE-2015-6728",
-      "CVE-2015-6729",
-      "CVE-2015-6730",
-      "CVE-2015-6731",
-      "CVE-2015-6733",
-      "CVE-2015-6734",
-      "CVE-2015-6735",
-      "CVE-2015-6736",
-      "CVE-2015-6737"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-08-10",
-    "entry": "2015-08-14",
-    "modified": "2015-12-24"
-  }
+	"vid": "6241b5df-42a1-11e5-93ad-002590263bf5",
+	"topic": "mediawiki -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mediawiki123"
+			],
+			"range": [
+				{
+					"lt": "1.23.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"mediawiki124"
+			],
+			"range": [
+				{
+					"lt": "1.24.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"mediawiki125"
+			],
+			"range": [
+				{
+					"lt": "1.25.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MediaWiki reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html\">\n\t  <p>Internal review discovered that Special:DeletedContributions did\n\t    not properly protect the IP of autoblocked users. This fix makes\n\t    the functionality of Special:DeletedContributions consistent with\n\t    Special:Contributions and Special:BlockList.</p>\n\t  <p>Internal review discovered that watchlist anti-csrf tokens were not\n\t    being compared in constant time, which could allow various timing\n\t    attacks. This could allow an attacker to modify a user's watchlist\n\t    via csrf</p>\n\t  <p>John Menerick reported that MediaWiki's thumb.php failed to sanitize\n\t    various error messages, resulting in xss.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html",
+			"https://phabricator.wikimedia.org/T106893",
+			"https://phabricator.wikimedia.org/T94116",
+			"https://phabricator.wikimedia.org/T97391",
+			"http://www.openwall.com/lists/oss-security/2015/08/27/6"
+		],
+		"cvename": [
+			"CVE-2015-6727",
+			"CVE-2013-7444",
+			"CVE-2015-6728",
+			"CVE-2015-6729",
+			"CVE-2015-6730",
+			"CVE-2015-6731",
+			"CVE-2015-6733",
+			"CVE-2015-6734",
+			"CVE-2015-6735",
+			"CVE-2015-6736",
+			"CVE-2015-6737"
+		]
+	},
+	"dates": {
+		"discovery": "2015-08-10",
+		"entry": "2015-08-14",
+		"modified": "2015-12-24"
+	}
 }

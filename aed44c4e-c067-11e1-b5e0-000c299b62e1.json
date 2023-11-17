@@ -1,49 +1,49 @@
 {
-  "vid": "aed44c4e-c067-11e1-b5e0-000c299b62e1",
-  "topic": "FreeBSD -- Privilege escalation when returning from kernel",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.4_9",
-          "ge": "7.4"
-        },
-        {
-          "lt": "8.1_12",
-          "ge": "8.1"
-        },
-        {
-          "lt": "8.2_9",
-          "ge": "8.2"
-        },
-        {
-          "lt": "8.3_3",
-          "ge": "8.3"
-        },
-        {
-          "lt": "9.0_3",
-          "ge": "9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-12:04.sysret.asc\">\n\t  <p>FreeBSD/amd64 runs on CPUs from different vendors.  Due to varying\n\t     behaviour of CPUs in 64 bit mode a sanity check of the kernel may be\n\t     insufficient when returning from a system call.</p>\n\t  <p>Successful exploitation of the problem can lead to local kernel privilege\n\t     escalation, kernel data corruption and/or crash.\n\t     To exploit this vulnerability, an attacker must be able to run code with user\n\t     privileges on the target system.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-0217"
-    ],
-    "freebsd_sa": [
-      "SA-12:04.sysret"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-06-12",
-    "entry": "2012-06-27"
-  }
+	"vid": "aed44c4e-c067-11e1-b5e0-000c299b62e1",
+	"topic": "FreeBSD -- Privilege escalation when returning from kernel",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.4_9",
+					"ge": "7.4"
+				},
+				{
+					"lt": "8.1_12",
+					"ge": "8.1"
+				},
+				{
+					"lt": "8.2_9",
+					"ge": "8.2"
+				},
+				{
+					"lt": "8.3_3",
+					"ge": "8.3"
+				},
+				{
+					"lt": "9.0_3",
+					"ge": "9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-12:04.sysret.asc\">\n\t  <p>FreeBSD/amd64 runs on CPUs from different vendors.  Due to varying\n\t     behaviour of CPUs in 64 bit mode a sanity check of the kernel may be\n\t     insufficient when returning from a system call.</p>\n\t  <p>Successful exploitation of the problem can lead to local kernel privilege\n\t     escalation, kernel data corruption and/or crash.\n\t     To exploit this vulnerability, an attacker must be able to run code with user\n\t     privileges on the target system.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-0217"
+		],
+		"freebsd_sa": [
+			"SA-12:04.sysret"
+		]
+	},
+	"dates": {
+		"discovery": "2012-06-12",
+		"entry": "2012-06-27"
+	}
 }

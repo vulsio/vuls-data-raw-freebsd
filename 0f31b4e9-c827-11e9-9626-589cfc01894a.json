@@ -1,42 +1,42 @@
 {
-  "vid": "0f31b4e9-c827-11e9-9626-589cfc01894a",
-  "topic": "Mozilla -- Stored passwords in 'Saved Logins' can be copied without master password entry",
-  "affects": [
-    {
-      "name": [
-        "cliqz"
-      ],
-      "range": [
-        {
-          "lt": "1.28.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "68.0.2,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-19/\">\n\t  <h1>CVE-2019-11733: Stored passwords in 'Saved Logins' can\n\t    be copied without master password entry</h1>\n\t  <p>When a master password is set, it is required to be\n\t    entered again before stored passwords can be accessed in the 'Saved\n\t    Logins' dialog. It was found that locally stored passwords can be\n\t    copied to the clipboard thorough the 'copy password' context menu item\n\t    without re-entering the master password if the master password had\n\t    been previously entered in the same session, allowing for potential\n\t    theft of stored passwords.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2019-24/"
-    ],
-    "cvename": [
-      "CVE-2019-11733"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-14",
-    "entry": "2019-08-28"
-  }
+	"vid": "0f31b4e9-c827-11e9-9626-589cfc01894a",
+	"topic": "Mozilla -- Stored passwords in 'Saved Logins' can be copied without master password entry",
+	"affects": [
+		{
+			"name": [
+				"cliqz"
+			],
+			"range": [
+				{
+					"lt": "1.28.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "68.0.2,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-19/\">\n\t  <h1>CVE-2019-11733: Stored passwords in 'Saved Logins' can\n\t    be copied without master password entry</h1>\n\t  <p>When a master password is set, it is required to be\n\t    entered again before stored passwords can be accessed in the 'Saved\n\t    Logins' dialog. It was found that locally stored passwords can be\n\t    copied to the clipboard thorough the 'copy password' context menu item\n\t    without re-entering the master password if the master password had\n\t    been previously entered in the same session, allowing for potential\n\t    theft of stored passwords.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2019-24/"
+		],
+		"cvename": [
+			"CVE-2019-11733"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-14",
+		"entry": "2019-08-28"
+	}
 }

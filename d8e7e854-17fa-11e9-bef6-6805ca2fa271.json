@@ -1,32 +1,32 @@
 {
-  "vid": "d8e7e854-17fa-11e9-bef6-6805ca2fa271",
-  "topic": "botan2 -- Side channel during ECC key generation",
-  "affects": [
-    {
-      "name": [
-        "botan2"
-      ],
-      "range": [
-        {
-          "lt": "2.9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>botan2 developers reports:</p>\n\t<blockquote cite=\"https://botan.randombit.net/security.html#id1\">\n\t  <p>A timing side channel during ECC key generation could leak information about the\n\t\thigh bits of the secret scalar. Such information allows an attacker to perform a\n\t\tbrute force attack on the key somewhat more efficiently than they would otherwise.\n\t\tFound by Ján Jančár using ECTester.</p>\n\t  <p>Bug introduced in 1.11.20, fixed in 2.9.0</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://botan.randombit.net/security.html#id1"
-    ],
-    "cvename": [
-      "CVE-2018-20187"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-12-17",
-    "entry": "2019-01-27"
-  }
+	"vid": "d8e7e854-17fa-11e9-bef6-6805ca2fa271",
+	"topic": "botan2 -- Side channel during ECC key generation",
+	"affects": [
+		{
+			"name": [
+				"botan2"
+			],
+			"range": [
+				{
+					"lt": "2.9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>botan2 developers reports:</p>\n\t<blockquote cite=\"https://botan.randombit.net/security.html#id1\">\n\t  <p>A timing side channel during ECC key generation could leak information about the\n\t\thigh bits of the secret scalar. Such information allows an attacker to perform a\n\t\tbrute force attack on the key somewhat more efficiently than they would otherwise.\n\t\tFound by Ján Jančár using ECTester.</p>\n\t  <p>Bug introduced in 1.11.20, fixed in 2.9.0</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://botan.randombit.net/security.html#id1"
+		],
+		"cvename": [
+			"CVE-2018-20187"
+		]
+	},
+	"dates": {
+		"discovery": "2018-12-17",
+		"entry": "2019-01-27"
+	}
 }

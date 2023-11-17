@@ -1,40 +1,40 @@
 {
-  "vid": "f6f19735-9245-4918-8a60-87948ebb4907",
-  "topic": "wireshark -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ethereal",
-        "ethereal-lite",
-        "tethereal",
-        "tethereal-lite",
-        "wireshark",
-        "wireshark-lite"
-      ],
-      "range": [
-        {
-          "lt": "1.0.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Vendor reports:</p>\n\t<blockquote cite=\"http://www.wireshark.org/security/wnpa-sec-2009-01.html\">\n\t  <p>On non-Windows systems Wireshark could crash if the HOME\n\t    environment variable contained sprintf-style string formatting\n\t    characters. Wireshark could crash while reading a malformed\n\t    NetScreen snoop file. Wireshark could crash while reading a\n\t    Tektronix K12 text capture file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.wireshark.org/security/wnpa-sec-2009-01.html"
-    ],
-    "cvename": [
-      "CVE-2009-0599",
-      "CVE-2009-0600",
-      "CVE-2009-0601"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-02-06",
-    "entry": "2009-03-22",
-    "modified": "2010-05-02"
-  }
+	"vid": "f6f19735-9245-4918-8a60-87948ebb4907",
+	"topic": "wireshark -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ethereal",
+				"ethereal-lite",
+				"tethereal",
+				"tethereal-lite",
+				"wireshark",
+				"wireshark-lite"
+			],
+			"range": [
+				{
+					"lt": "1.0.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Vendor reports:</p>\n\t<blockquote cite=\"http://www.wireshark.org/security/wnpa-sec-2009-01.html\">\n\t  <p>On non-Windows systems Wireshark could crash if the HOME\n\t    environment variable contained sprintf-style string formatting\n\t    characters. Wireshark could crash while reading a malformed\n\t    NetScreen snoop file. Wireshark could crash while reading a\n\t    Tektronix K12 text capture file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.wireshark.org/security/wnpa-sec-2009-01.html"
+		],
+		"cvename": [
+			"CVE-2009-0599",
+			"CVE-2009-0600",
+			"CVE-2009-0601"
+		]
+	},
+	"dates": {
+		"discovery": "2009-02-06",
+		"entry": "2009-03-22",
+		"modified": "2010-05-02"
+	}
 }

@@ -1,39 +1,39 @@
 {
-  "vid": "6171eb07-d8a9-11e5-b2bd-002590263bf5",
-  "topic": "libsrtp -- DoS via crafted RTP header vulnerability",
-  "affects": [
-    {
-      "name": [
-        "libsrtp"
-      ],
-      "range": [
-        {
-          "lt": "1.5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>libsrtp reports:</p>\n\t<blockquote cite=\"https://github.com/cisco/libsrtp/commit/704a31774db0dd941094fd2b47c21638b8dc3de2\">\n\t  <p>Prevent potential DoS attack due to lack of bounds checking on RTP\n\t    header CSRC count and extension header length. Credit goes to\n\t    Randell Jesup and the Firefox team for reporting this issue.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/cisco/libsrtp/releases/tag/v1.5.3",
-      "https://github.com/cisco/libsrtp/commit/704a31774db0dd941094fd2b47c21638b8dc3de2",
-      "https://github.com/cisco/libsrtp/commit/be95365fbb4788b688cab7af61c65b7989055fb4",
-      "https://github.com/cisco/libsrtp/commit/be06686c8e98cc7bd934e10abb6f5e971d03f8ee",
-      "https://github.com/cisco/libsrtp/commit/cdc69f2acde796a4152a250f869271298abc233f"
-    ],
-    "cvename": [
-      "CVE-2015-6360"
-    ],
-    "freebsd_pr": [
-      "ports/207003"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-11-02",
-    "entry": "2016-02-21"
-  }
+	"vid": "6171eb07-d8a9-11e5-b2bd-002590263bf5",
+	"topic": "libsrtp -- DoS via crafted RTP header vulnerability",
+	"affects": [
+		{
+			"name": [
+				"libsrtp"
+			],
+			"range": [
+				{
+					"lt": "1.5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>libsrtp reports:</p>\n\t<blockquote cite=\"https://github.com/cisco/libsrtp/commit/704a31774db0dd941094fd2b47c21638b8dc3de2\">\n\t  <p>Prevent potential DoS attack due to lack of bounds checking on RTP\n\t    header CSRC count and extension header length. Credit goes to\n\t    Randell Jesup and the Firefox team for reporting this issue.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/cisco/libsrtp/releases/tag/v1.5.3",
+			"https://github.com/cisco/libsrtp/commit/704a31774db0dd941094fd2b47c21638b8dc3de2",
+			"https://github.com/cisco/libsrtp/commit/be95365fbb4788b688cab7af61c65b7989055fb4",
+			"https://github.com/cisco/libsrtp/commit/be06686c8e98cc7bd934e10abb6f5e971d03f8ee",
+			"https://github.com/cisco/libsrtp/commit/cdc69f2acde796a4152a250f869271298abc233f"
+		],
+		"cvename": [
+			"CVE-2015-6360"
+		],
+		"freebsd_pr": [
+			"ports/207003"
+		]
+	},
+	"dates": {
+		"discovery": "2015-11-02",
+		"entry": "2016-02-21"
+	}
 }

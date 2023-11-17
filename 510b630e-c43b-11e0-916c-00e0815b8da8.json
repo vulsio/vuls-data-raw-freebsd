@@ -1,50 +1,50 @@
 {
-  "vid": "510b630e-c43b-11e0-916c-00e0815b8da8",
-  "topic": "isc-dhcp-server -- server halt upon processing certain packets",
-  "affects": [
-    {
-      "name": [
-        "isc-dhcp31-server"
-      ],
-      "range": [
-        {
-          "lt": "3.1.ESV_1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "isc-dhcp41-server"
-      ],
-      "range": [
-        {
-          "lt": "4.1.e_2,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "isc-dhcp42-server"
-      ],
-      "range": [
-        {
-          "lt": "4.2.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"http://www.isc.org/software/dhcp/advisories/cve-2011-2748\">\n\t  <p>A pair of defects cause the server to halt upon processing\n\t    certain packets.  The patch is to properly discard or process\n\t    those packets.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2011-2748",
-      "CVE-2011-2749"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-08-10",
-    "entry": "2011-08-13"
-  }
+	"vid": "510b630e-c43b-11e0-916c-00e0815b8da8",
+	"topic": "isc-dhcp-server -- server halt upon processing certain packets",
+	"affects": [
+		{
+			"name": [
+				"isc-dhcp31-server"
+			],
+			"range": [
+				{
+					"lt": "3.1.ESV_1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"isc-dhcp41-server"
+			],
+			"range": [
+				{
+					"lt": "4.1.e_2,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"isc-dhcp42-server"
+			],
+			"range": [
+				{
+					"lt": "4.2.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"http://www.isc.org/software/dhcp/advisories/cve-2011-2748\">\n\t  <p>A pair of defects cause the server to halt upon processing\n\t    certain packets.  The patch is to properly discard or process\n\t    those packets.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2011-2748",
+			"CVE-2011-2749"
+		]
+	},
+	"dates": {
+		"discovery": "2011-08-10",
+		"entry": "2011-08-13"
+	}
 }

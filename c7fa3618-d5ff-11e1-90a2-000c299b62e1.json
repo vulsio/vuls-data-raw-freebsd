@@ -1,46 +1,46 @@
 {
-  "vid": "c7fa3618-d5ff-11e1-90a2-000c299b62e1",
-  "topic": "isc-dhcp -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "isc-dhcp41-server"
-      ],
-      "range": [
-        {
-          "lt": "4.1.e_5,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "isc-dhcp42-server"
-      ],
-      "range": [
-        {
-          "lt": "4.2.4_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://www.isc.org/announcement/bind-and-dhcp-security-updates-released\">\n\t  <p>An unexpected client identifier parameter can cause the ISC DHCP\n\t     daemon to segmentation fault when running in DHCPv6 mode,\n\t     resulting in a denial of service to further client requests. In\n\t     order to exploit this condition, an attacker must be able to send\n\t     requests to the DHCP server.</p>\n\t  <p>An error in the handling of malformed client identifiers can cause\n\t     a DHCP server running affected versions (see \"Impact\") to enter a\n\t     state where further client requests are not processed and the\n\t     server process loops endlessly, consuming all available CPU\n\t     cycles.\n\t     Under normal circumstances this condition should not be\n\t     triggered, but a non-conforming or malicious client could\n\t     deliberately trigger it in a vulnerable server. In order to\n\t     exploit this condition an attacker must be able to send requests\n\t     to the DHCP server.</p>\n\t  <p>Two memory leaks have been found and fixed in ISC DHCP. Both are\n\t     reproducible when running in DHCPv6 mode (with the -6 command-line\n\t     argument.) The first leak is confirmed to only affect servers\n\t     operating in DHCPv6 mode, but based on initial code analysis the\n\t     second may theoretically affect DHCPv4 servers (though this has\n\t     not been demonstrated.)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://kb.isc.org/article/AA-00714",
-      "https://kb.isc.org/article/AA-00712",
-      "https://kb.isc.org/article/AA-00737"
-    ],
-    "cvename": [
-      "CVE-2012-3570",
-      "CVE-2012-3571",
-      "CVE-2012-3954"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-07-24",
-    "entry": "2012-07-25"
-  }
+	"vid": "c7fa3618-d5ff-11e1-90a2-000c299b62e1",
+	"topic": "isc-dhcp -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"isc-dhcp41-server"
+			],
+			"range": [
+				{
+					"lt": "4.1.e_5,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"isc-dhcp42-server"
+			],
+			"range": [
+				{
+					"lt": "4.2.4_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://www.isc.org/announcement/bind-and-dhcp-security-updates-released\">\n\t  <p>An unexpected client identifier parameter can cause the ISC DHCP\n\t     daemon to segmentation fault when running in DHCPv6 mode,\n\t     resulting in a denial of service to further client requests. In\n\t     order to exploit this condition, an attacker must be able to send\n\t     requests to the DHCP server.</p>\n\t  <p>An error in the handling of malformed client identifiers can cause\n\t     a DHCP server running affected versions (see \"Impact\") to enter a\n\t     state where further client requests are not processed and the\n\t     server process loops endlessly, consuming all available CPU\n\t     cycles.\n\t     Under normal circumstances this condition should not be\n\t     triggered, but a non-conforming or malicious client could\n\t     deliberately trigger it in a vulnerable server. In order to\n\t     exploit this condition an attacker must be able to send requests\n\t     to the DHCP server.</p>\n\t  <p>Two memory leaks have been found and fixed in ISC DHCP. Both are\n\t     reproducible when running in DHCPv6 mode (with the -6 command-line\n\t     argument.) The first leak is confirmed to only affect servers\n\t     operating in DHCPv6 mode, but based on initial code analysis the\n\t     second may theoretically affect DHCPv4 servers (though this has\n\t     not been demonstrated.)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://kb.isc.org/article/AA-00714",
+			"https://kb.isc.org/article/AA-00712",
+			"https://kb.isc.org/article/AA-00737"
+		],
+		"cvename": [
+			"CVE-2012-3570",
+			"CVE-2012-3571",
+			"CVE-2012-3954"
+		]
+	},
+	"dates": {
+		"discovery": "2012-07-24",
+		"entry": "2012-07-25"
+	}
 }

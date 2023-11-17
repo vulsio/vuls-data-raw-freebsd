@@ -1,40 +1,40 @@
 {
-  "vid": "8cbf4d65-af9a-11df-89b8-00151735203a",
-  "topic": "bugzilla -- information disclosure, denial of service",
-  "affects": [
-    {
-      "name": [
-        "bugzilla"
-      ],
-      "range": [
-        {
-          "lt": "3.6.2",
-          "gt": "2.17.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.2.7/\">\n\t  <ul>\n\t    <li>Remote Information Disclosure:\n\t      An unprivileged user is normally not allowed to view\n\t      other users' group membership. But boolean charts\n\t      let the user use group-based pronouns, indirectly\n\t      disclosing group membership. This security fix\n\t      restricts the use of pronouns to groups the user\n\t      belongs to.</li>\n\t    <li>Notification Bypass:\n\t      Normally, when a user is impersonated, he receives\n\t      an email informing him that he is being impersonated,\n\t      containing the identity of the impersonator. However,\n\t      it was possible to impersonate a user without this\n\t      notification being sent.</li>\n\t    <li>Remote Information Disclosure:\n\t      An error message thrown by the \"Reports\" and \"Duplicates\"\n\t      page confirmed the non-existence of products, thus\n\t      allowing users to guess confidential product names.\n\t      (Note that the \"Duplicates\" page was not vulnerable\n\t      in Bugzilla 3.6rc1 and above though.)</li>\n\t    <li>Denial of Service:\n\t      If a comment contained the phrases \"bug X\" or\n\t      \"attachment X\", where X was an integer larger than the\n\t      maximum 32-bit signed integer size, PostgreSQL would\n\t      throw an error, and any page containing that comment would\n\t      not be viewable. On most Bugzillas, any user can enter\n\t      a comment on any bug, so any user could have used this to\n\t      deny access to one or all bugs. Bugzillas running on\n\t      databases other than PostgreSQL are not affected.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=417048",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=450013",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=577139",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=519835",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=583690"
-    ],
-    "cvename": [
-      "CVE-2010-2756",
-      "CVE-2010-2757",
-      "CVE-2010-2758",
-      "CVE-2010-2759"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-08-05",
-    "entry": "2010-08-24"
-  }
+	"vid": "8cbf4d65-af9a-11df-89b8-00151735203a",
+	"topic": "bugzilla -- information disclosure, denial of service",
+	"affects": [
+		{
+			"name": [
+				"bugzilla"
+			],
+			"range": [
+				{
+					"lt": "3.6.2",
+					"gt": "2.17.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.2.7/\">\n\t  <ul>\n\t    <li>Remote Information Disclosure:\n\t      An unprivileged user is normally not allowed to view\n\t      other users' group membership. But boolean charts\n\t      let the user use group-based pronouns, indirectly\n\t      disclosing group membership. This security fix\n\t      restricts the use of pronouns to groups the user\n\t      belongs to.</li>\n\t    <li>Notification Bypass:\n\t      Normally, when a user is impersonated, he receives\n\t      an email informing him that he is being impersonated,\n\t      containing the identity of the impersonator. However,\n\t      it was possible to impersonate a user without this\n\t      notification being sent.</li>\n\t    <li>Remote Information Disclosure:\n\t      An error message thrown by the \"Reports\" and \"Duplicates\"\n\t      page confirmed the non-existence of products, thus\n\t      allowing users to guess confidential product names.\n\t      (Note that the \"Duplicates\" page was not vulnerable\n\t      in Bugzilla 3.6rc1 and above though.)</li>\n\t    <li>Denial of Service:\n\t      If a comment contained the phrases \"bug X\" or\n\t      \"attachment X\", where X was an integer larger than the\n\t      maximum 32-bit signed integer size, PostgreSQL would\n\t      throw an error, and any page containing that comment would\n\t      not be viewable. On most Bugzillas, any user can enter\n\t      a comment on any bug, so any user could have used this to\n\t      deny access to one or all bugs. Bugzillas running on\n\t      databases other than PostgreSQL are not affected.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=417048",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=450013",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=577139",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=519835",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=583690"
+		],
+		"cvename": [
+			"CVE-2010-2756",
+			"CVE-2010-2757",
+			"CVE-2010-2758",
+			"CVE-2010-2759"
+		]
+	},
+	"dates": {
+		"discovery": "2010-08-05",
+		"entry": "2010-08-24"
+	}
 }

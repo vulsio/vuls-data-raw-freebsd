@@ -1,35 +1,35 @@
 {
-  "vid": "8d3bae09-fd28-11e7-95f2-005056925db4",
-  "topic": "unbound -- vulnerability in the processing of wildcard synthesized NSEC records",
-  "affects": [
-    {
-      "name": [
-        "unbound"
-      ],
-      "range": [
-        {
-          "lt": "1.6.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Unbound reports:</p>\n\t<blockquote cite=\"https://unbound.net/downloads/CVE-2017-15105.txt\">\n\t  <p>We discovered a vulnerability in the processing of wildcard synthesized\n\t    NSEC records. While synthesis of NSEC records is allowed by RFC4592,\n\t    these synthesized owner names should not be used in the NSEC processing.\n\t    This does, however, happen in Unbound 1.6.7 and earlier versions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://unbound.net/downloads/CVE-2017-15105.txt"
-    ],
-    "cvename": [
-      "CVE-2017-15105"
-    ],
-    "freebsd_pr": [
-      "ports/225313"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-10-08",
-    "entry": "2018-01-19"
-  }
+	"vid": "8d3bae09-fd28-11e7-95f2-005056925db4",
+	"topic": "unbound -- vulnerability in the processing of wildcard synthesized NSEC records",
+	"affects": [
+		{
+			"name": [
+				"unbound"
+			],
+			"range": [
+				{
+					"lt": "1.6.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Unbound reports:</p>\n\t<blockquote cite=\"https://unbound.net/downloads/CVE-2017-15105.txt\">\n\t  <p>We discovered a vulnerability in the processing of wildcard synthesized\n\t    NSEC records. While synthesis of NSEC records is allowed by RFC4592,\n\t    these synthesized owner names should not be used in the NSEC processing.\n\t    This does, however, happen in Unbound 1.6.7 and earlier versions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://unbound.net/downloads/CVE-2017-15105.txt"
+		],
+		"cvename": [
+			"CVE-2017-15105"
+		],
+		"freebsd_pr": [
+			"ports/225313"
+		]
+	},
+	"dates": {
+		"discovery": "2017-10-08",
+		"entry": "2018-01-19"
+	}
 }

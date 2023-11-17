@@ -1,29 +1,29 @@
 {
-  "vid": "c3610f39-18f1-11ed-9854-641c67a117d8",
-  "topic": "varnish -- Denial of Service Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "varnish7"
-      ],
-      "range": [
-        {
-          "lt": "7.1.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Varnish Cache Project reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00009.html\">\n\t<p>A denial of service attack can be performed against Varnish Cache\n\t  servers by specially formatting the reason phrase of the backend response\n\t  status line. In order to execute an attack, the attacker would have to\n\t  be able to influence the HTTP/1 responses that the Varnish Server\n\t  receives from its configured backends. A successful attack would cause\n\t  the Varnish Server to assert and automatically restart.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://varnish-cache.org/security/VSV00009.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-08-09",
-    "entry": "2022-08-10"
-  }
+	"vid": "c3610f39-18f1-11ed-9854-641c67a117d8",
+	"topic": "varnish -- Denial of Service Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"varnish7"
+			],
+			"range": [
+				{
+					"lt": "7.1.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Varnish Cache Project reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00009.html\">\n\t<p>A denial of service attack can be performed against Varnish Cache\n\t  servers by specially formatting the reason phrase of the backend response\n\t  status line. In order to execute an attack, the attacker would have to\n\t  be able to influence the HTTP/1 responses that the Varnish Server\n\t  receives from its configured backends. A successful attack would cause\n\t  the Varnish Server to assert and automatically restart.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://varnish-cache.org/security/VSV00009.html"
+		]
+	},
+	"dates": {
+		"discovery": "2022-08-09",
+		"entry": "2022-08-10"
+	}
 }

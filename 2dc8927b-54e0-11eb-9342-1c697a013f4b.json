@@ -1,37 +1,37 @@
 {
-  "vid": "2dc8927b-54e0-11eb-9342-1c697a013f4b",
-  "topic": "mantis -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mantis-php72",
-        "mantis-php73",
-        "mantis-php74",
-        "mantis-php80"
-      ],
-      "range": [
-        {
-          "lt": "2.24.4,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mantis 2.24.4 release reports:</p>\n\t<blockquote cite=\"https://mantisbt.org/bugs/changelog_page.php?project=mantisbt&amp;version=2.24.4\">\n\t  <p>Security and maintenance release, addressing 6 CVEs:</p>\n\t  <ul>\n\t    <li>0027726: CVE-2020-29603: disclosure of private project name</li>\n\t    <li>0027727: CVE-2020-29605: disclosure of private issue summary</li>\n\t    <li>0027728: CVE-2020-29604: full disclosure of private issue contents, including bugnotes and attachments</li>\n\t    <li>0027361: Private category can be access/used by a non member of a private project (IDOR)</li>\n\t    <li>0027779: CVE-2020-35571: XSS in helper_ensure_confirmed() calls</li>\n\t    <li>0026794: User Account - Takeover</li>\n\t    <li>0027363: Fixed in version can be changed to a version that doesn't exist</li>\n\t    <li>0027350: When updating an issue, a Viewer user can be set as Reporter</li>\n\t    <li>0027370: CVE-2020-35849: Revisions allow viewing private bugnotes id and summary</li>\n\t    <li>0027495: CVE-2020-28413: SQL injection in the parameter \"access\" on the mc_project_get_users function throught the API SOAP.</li>\n\t    <li>0027444: Printing unsanitized user input in install.php</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28413",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35849"
-    ],
-    "cvename": [
-      "CVE-2020-28413",
-      "CVE-2020-35849"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-11-10",
-    "entry": "2021-03-10"
-  }
+	"vid": "2dc8927b-54e0-11eb-9342-1c697a013f4b",
+	"topic": "mantis -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mantis-php72",
+				"mantis-php73",
+				"mantis-php74",
+				"mantis-php80"
+			],
+			"range": [
+				{
+					"lt": "2.24.4,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mantis 2.24.4 release reports:</p>\n\t<blockquote cite=\"https://mantisbt.org/bugs/changelog_page.php?project=mantisbt&amp;version=2.24.4\">\n\t  <p>Security and maintenance release, addressing 6 CVEs:</p>\n\t  <ul>\n\t    <li>0027726: CVE-2020-29603: disclosure of private project name</li>\n\t    <li>0027727: CVE-2020-29605: disclosure of private issue summary</li>\n\t    <li>0027728: CVE-2020-29604: full disclosure of private issue contents, including bugnotes and attachments</li>\n\t    <li>0027361: Private category can be access/used by a non member of a private project (IDOR)</li>\n\t    <li>0027779: CVE-2020-35571: XSS in helper_ensure_confirmed() calls</li>\n\t    <li>0026794: User Account - Takeover</li>\n\t    <li>0027363: Fixed in version can be changed to a version that doesn't exist</li>\n\t    <li>0027350: When updating an issue, a Viewer user can be set as Reporter</li>\n\t    <li>0027370: CVE-2020-35849: Revisions allow viewing private bugnotes id and summary</li>\n\t    <li>0027495: CVE-2020-28413: SQL injection in the parameter \"access\" on the mc_project_get_users function throught the API SOAP.</li>\n\t    <li>0027444: Printing unsanitized user input in install.php</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28413",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35849"
+		],
+		"cvename": [
+			"CVE-2020-28413",
+			"CVE-2020-35849"
+		]
+	},
+	"dates": {
+		"discovery": "2020-11-10",
+		"entry": "2021-03-10"
+	}
 }

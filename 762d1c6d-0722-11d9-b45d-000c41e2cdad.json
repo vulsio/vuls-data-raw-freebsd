@@ -1,33 +1,33 @@
 {
-  "vid": "762d1c6d-0722-11d9-b45d-000c41e2cdad",
-  "topic": "apache -- apr_uri_parse IPv6 address handling vulnerability",
-  "affects": [
-    {
-      "name": [
-        "apache"
-      ],
-      "range": [
-        {
-          "lt": "2.0.50_3",
-          "ge": "2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache Software Foundation Security Team discovered a\n\t  programming error in the apr-util library function apr_uri_parse.\n\t  When parsing IPv6 literal addresses, it is possible that a\n\t  length is incorrectly calculated to be negative, and this\n\t  value is passed to memcpy.  This may result in an exploitable\n\t  vulnerability on some platforms, including FreeBSD.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://httpd.apache.org"
-    ],
-    "cvename": [
-      "CVE-2004-0786"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-15",
-    "entry": "2004-09-15"
-  }
+	"vid": "762d1c6d-0722-11d9-b45d-000c41e2cdad",
+	"topic": "apache -- apr_uri_parse IPv6 address handling vulnerability",
+	"affects": [
+		{
+			"name": [
+				"apache"
+			],
+			"range": [
+				{
+					"lt": "2.0.50_3",
+					"ge": "2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache Software Foundation Security Team discovered a\n\t  programming error in the apr-util library function apr_uri_parse.\n\t  When parsing IPv6 literal addresses, it is possible that a\n\t  length is incorrectly calculated to be negative, and this\n\t  value is passed to memcpy.  This may result in an exploitable\n\t  vulnerability on some platforms, including FreeBSD.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://httpd.apache.org"
+		],
+		"cvename": [
+			"CVE-2004-0786"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-15",
+		"entry": "2004-09-15"
+	}
 }

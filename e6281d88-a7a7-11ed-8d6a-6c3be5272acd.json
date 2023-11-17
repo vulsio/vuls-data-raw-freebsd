@@ -1,67 +1,67 @@
 {
-  "vid": "e6281d88-a7a7-11ed-8d6a-6c3be5272acd",
-  "topic": "Grafana -- Spoofing originalUrl of snapshots",
-  "affects": [
-    {
-      "name": [
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "8.5.16",
-          "ge": "8.0.0"
-        },
-        {
-          "lt": "9.2.10",
-          "ge": "9.0.0"
-        },
-        {
-          "lt": "9.3.4",
-          "ge": "9.3.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana8"
-      ],
-      "range": [
-        {
-          "lt": "8.5.16",
-          "ge": "8.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.2.10",
-          "ge": "9.0.0"
-        },
-        {
-          "lt": "9.3.4",
-          "ge": "9.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/01/25/grafana-security-releases-new-versions-with-fixes-for-cve-2022-23552-cve-2022-41912-and-cve-2022-39324/\">\n\t  <p>A third-party penetration test of Grafana found a vulnerability\n\t  in the snapshot functionality. The value of the originalUrl parameter\n\t  is automatically generated. The purpose of the presented originalUrl parameter\n\t  is to provide a user who views the snapshot with the possibility to click\n\t  on the <strong>Local Snapshot</strong> button in the Grafana web UI\n\t  and be presented with the dashboard that the snapshot captured. The value\n\t  of the originalUrl parameter can be arbitrarily chosen by a malicious user that\n\t  creates the snapshot. (Note: This can be done by editing the query thanks\n\t  to a web proxy like Burp.)</p>\n\t  <p>We have assessed this vulnerability as having a CVSS score of 6.7 MEDIUM\n\t  (CVSS:6.7/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:L).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/grafana/grafana/security/advisories/GHSA-4724-7jwc-3fpw"
-    ],
-    "cvename": [
-      "CVE-2022-39324"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-01-25",
-    "entry": "2023-02-09"
-  }
+	"vid": "e6281d88-a7a7-11ed-8d6a-6c3be5272acd",
+	"topic": "Grafana -- Spoofing originalUrl of snapshots",
+	"affects": [
+		{
+			"name": [
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "8.5.16",
+					"ge": "8.0.0"
+				},
+				{
+					"lt": "9.2.10",
+					"ge": "9.0.0"
+				},
+				{
+					"lt": "9.3.4",
+					"ge": "9.3.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana8"
+			],
+			"range": [
+				{
+					"lt": "8.5.16",
+					"ge": "8.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.2.10",
+					"ge": "9.0.0"
+				},
+				{
+					"lt": "9.3.4",
+					"ge": "9.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/01/25/grafana-security-releases-new-versions-with-fixes-for-cve-2022-23552-cve-2022-41912-and-cve-2022-39324/\">\n\t  <p>A third-party penetration test of Grafana found a vulnerability\n\t  in the snapshot functionality. The value of the originalUrl parameter\n\t  is automatically generated. The purpose of the presented originalUrl parameter\n\t  is to provide a user who views the snapshot with the possibility to click\n\t  on the <strong>Local Snapshot</strong> button in the Grafana web UI\n\t  and be presented with the dashboard that the snapshot captured. The value\n\t  of the originalUrl parameter can be arbitrarily chosen by a malicious user that\n\t  creates the snapshot. (Note: This can be done by editing the query thanks\n\t  to a web proxy like Burp.)</p>\n\t  <p>We have assessed this vulnerability as having a CVSS score of 6.7 MEDIUM\n\t  (CVSS:6.7/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:L).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/grafana/grafana/security/advisories/GHSA-4724-7jwc-3fpw"
+		],
+		"cvename": [
+			"CVE-2022-39324"
+		]
+	},
+	"dates": {
+		"discovery": "2023-01-25",
+		"entry": "2023-02-09"
+	}
 }

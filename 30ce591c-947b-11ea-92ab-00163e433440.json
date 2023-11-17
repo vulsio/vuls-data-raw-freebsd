@@ -1,41 +1,41 @@
 {
-  "vid": "30ce591c-947b-11ea-92ab-00163e433440",
-  "topic": "FreeBSD -- Insufficient packet length validation in libalias",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.1_5",
-          "ge": "12.1"
-        },
-        {
-          "lt": "11.4_1",
-          "ge": "11.4"
-        },
-        {
-          "lt": "11.3_9",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>libalias(3) packet handlers do not properly validate the packet length before\n\taccessing the protocol headers.  As a result, if a libalias(3) module does\n\tnot properly validate the packet length before accessing the protocol header,\n\tit is possible for an out of bound read or write condition to occur.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious attacker could send specially constructed packets that exploit\n\tthe lack of validation allowing the attacker to read or write memory either\n\tfrom the kernel (for the in-kernel NAT implementation) or from the process\n\tspace for natd (for the userspace implementation).</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2020-7454"
-    ],
-    "freebsd_sa": [
-      "SA-20:12.libalias"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-05-12",
-    "entry": "2020-05-12"
-  }
+	"vid": "30ce591c-947b-11ea-92ab-00163e433440",
+	"topic": "FreeBSD -- Insufficient packet length validation in libalias",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.1_5",
+					"ge": "12.1"
+				},
+				{
+					"lt": "11.4_1",
+					"ge": "11.4"
+				},
+				{
+					"lt": "11.3_9",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>libalias(3) packet handlers do not properly validate the packet length before\n\taccessing the protocol headers.  As a result, if a libalias(3) module does\n\tnot properly validate the packet length before accessing the protocol header,\n\tit is possible for an out of bound read or write condition to occur.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious attacker could send specially constructed packets that exploit\n\tthe lack of validation allowing the attacker to read or write memory either\n\tfrom the kernel (for the in-kernel NAT implementation) or from the process\n\tspace for natd (for the userspace implementation).</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2020-7454"
+		],
+		"freebsd_sa": [
+			"SA-20:12.libalias"
+		]
+	},
+	"dates": {
+		"discovery": "2020-05-12",
+		"entry": "2020-05-12"
+	}
 }

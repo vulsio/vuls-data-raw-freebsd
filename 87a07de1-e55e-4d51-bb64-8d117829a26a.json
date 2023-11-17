@@ -1,35 +1,35 @@
 {
-  "vid": "87a07de1-e55e-4d51-bb64-8d117829a26a",
-  "topic": "mail/dovecot -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "dovecot"
-      ],
-      "range": [
-        {
-          "lt": "2.3.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html\">\n\t  <p>Parsing mails with a large number of MIME parts could\n  have resulted in excessive CPU usage or a crash due to running out of\n  stack memory..</p>\n\t</blockquote>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html\">\n\t  <p>Dovecot's NTLM implementation does not correctly check\n  message buffer size, which leads to reading past allocation which can\n\t    lead to crash</p>\n\t</blockquote>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html\">\n\t  <p>lmtp/submission: Issuing the RCPT command with an\n  address that has the empty quoted string as local-part causes the lmtp\n  service to crash.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html\">\n\t  <p>Dovecot's RPA mechanism implementation accepts\n  zero-length message, which leads to assert-crash later on.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html"
-    ],
-    "cvename": [
-      "CVE-2020-12100",
-      "CVE-2020-12673",
-      "CVE-2020-10967",
-      "CVE-2020-12674"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-04-23",
-    "entry": "2020-08-13"
-  }
+	"vid": "87a07de1-e55e-4d51-bb64-8d117829a26a",
+	"topic": "mail/dovecot -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"dovecot"
+			],
+			"range": [
+				{
+					"lt": "2.3.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html\">\n\t  <p>Parsing mails with a large number of MIME parts could\n  have resulted in excessive CPU usage or a crash due to running out of\n  stack memory..</p>\n\t</blockquote>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html\">\n\t  <p>Dovecot's NTLM implementation does not correctly check\n  message buffer size, which leads to reading past allocation which can\n\t    lead to crash</p>\n\t</blockquote>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html\">\n\t  <p>lmtp/submission: Issuing the RCPT command with an\n  address that has the empty quoted string as local-part causes the lmtp\n  service to crash.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html\">\n\t  <p>Dovecot's RPA mechanism implementation accepts\n  zero-length message, which leads to assert-crash later on.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://dovecot.org/pipermail/dovecot-news/2020-August/000440.html"
+		],
+		"cvename": [
+			"CVE-2020-12100",
+			"CVE-2020-12673",
+			"CVE-2020-10967",
+			"CVE-2020-12674"
+		]
+	},
+	"dates": {
+		"discovery": "2020-04-23",
+		"entry": "2020-08-13"
+	}
 }

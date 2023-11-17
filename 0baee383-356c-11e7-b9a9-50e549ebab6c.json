@@ -1,47 +1,47 @@
 {
-  "vid": "0baee383-356c-11e7-b9a9-50e549ebab6c",
-  "topic": "kauth: Local privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "kdelibs"
-      ],
-      "range": [
-        {
-          "lt": "4.14.30_4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kf5-kauth"
-      ],
-      "range": [
-        {
-          "lt": "5.33.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Albert Astals Cid reports:</p>\n\t<blockquote cite=\"https://www.kde.org/info/security/advisory-20170510-1.txt\">\n\t  <p>KAuth contains a logic flaw in which the service invoking dbus\n\t     is not properly checked.\n\t     This allows spoofing the identity of the caller and with some\n\t     carefully crafted calls can lead to gaining root from an\n\t     unprivileged account.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.kde.org/info/security/advisory-20170510-1.txt"
-    ],
-    "cvename": [
-      "CVE-2017-8422"
-    ],
-    "mlist": [
-      {
-        "text": "http://www.openwall.com/lists/oss-security/2017/05/10/3"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2017-05-10",
-    "entry": "2017-05-10"
-  }
+	"vid": "0baee383-356c-11e7-b9a9-50e549ebab6c",
+	"topic": "kauth: Local privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"kdelibs"
+			],
+			"range": [
+				{
+					"lt": "4.14.30_4"
+				}
+			]
+		},
+		{
+			"name": [
+				"kf5-kauth"
+			],
+			"range": [
+				{
+					"lt": "5.33.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Albert Astals Cid reports:</p>\n\t<blockquote cite=\"https://www.kde.org/info/security/advisory-20170510-1.txt\">\n\t  <p>KAuth contains a logic flaw in which the service invoking dbus\n\t     is not properly checked.\n\t     This allows spoofing the identity of the caller and with some\n\t     carefully crafted calls can lead to gaining root from an\n\t     unprivileged account.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.kde.org/info/security/advisory-20170510-1.txt"
+		],
+		"cvename": [
+			"CVE-2017-8422"
+		],
+		"mlist": [
+			{
+				"text": "http://www.openwall.com/lists/oss-security/2017/05/10/3"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2017-05-10",
+		"entry": "2017-05-10"
+	}
 }

@@ -1,38 +1,38 @@
 {
-  "vid": "8a3ece40-3315-11da-a263-0001020eed82",
-  "topic": "picasm -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "picasm"
-      ],
-      "range": [
-        {
-          "lt": "1.12c"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Shaun Colley reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111661253517089\">\n\t  <p>When generating error and warning messages, picasm copies\n\t    strings into fixed length buffers without bounds\n\t    checking.</p>\n\t  <p>If an attacker could trick a user into assembling a\n\t    source file with a malformed 'error' directive, arbitrary\n\t    code could be executed with the privileges of the user.\n\t    This could result in full system compromise.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-1679"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111661253517089",
-        "msgid": "c522a35a0505200807744163c4@mail.gmail.com"
-      }
-    ],
-    "bid": [
-      "13698"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-20",
-    "entry": "2005-10-02"
-  }
+	"vid": "8a3ece40-3315-11da-a263-0001020eed82",
+	"topic": "picasm -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"picasm"
+			],
+			"range": [
+				{
+					"lt": "1.12c"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Shaun Colley reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111661253517089\">\n\t  <p>When generating error and warning messages, picasm copies\n\t    strings into fixed length buffers without bounds\n\t    checking.</p>\n\t  <p>If an attacker could trick a user into assembling a\n\t    source file with a malformed 'error' directive, arbitrary\n\t    code could be executed with the privileges of the user.\n\t    This could result in full system compromise.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-1679"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111661253517089",
+				"msgid": "c522a35a0505200807744163c4@mail.gmail.com"
+			}
+		],
+		"bid": [
+			"13698"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-20",
+		"entry": "2005-10-02"
+	}
 }

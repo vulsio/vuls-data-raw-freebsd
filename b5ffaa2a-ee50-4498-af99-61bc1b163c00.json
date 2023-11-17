@@ -1,41 +1,41 @@
 {
-  "vid": "b5ffaa2a-ee50-4498-af99-61bc1b163c00",
-  "topic": "leafnode -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "leafnode"
-      ],
-      "range": [
-        {
-          "lt": "1.11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://leafnode.sourceforge.net/leafnode-SA-2005-02.txt\">\n\t  <p>A vulnerability was found in the fetchnews program (the NNTP\n\t    client) that may under some circumstances cause a wait for input\n\t    that never arrives, fetchnews \"hangs\". [...]</p>\n\t  <p>As only one fetchnews program can run at a time, subsequently\n\t    started fetchnews and texpire programs will terminate. [...]</p>\n\t  <p>Upgrade your leafnode package to version 1.11.3.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://leafnode.sourceforge.net/leafnode-SA-2005-02.txt"
-    ],
-    "cvename": [
-      "CVE-2005-1911"
-    ],
-    "freebsd_pr": [
-      "ports/82056"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=vulnwatch&m=111827180929063",
-        "msgid": "20050608215155.GB27234@merlin.emma.line.org"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-08",
-    "entry": "2005-06-09"
-  }
+	"vid": "b5ffaa2a-ee50-4498-af99-61bc1b163c00",
+	"topic": "leafnode -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"leafnode"
+			],
+			"range": [
+				{
+					"lt": "1.11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://leafnode.sourceforge.net/leafnode-SA-2005-02.txt\">\n\t  <p>A vulnerability was found in the fetchnews program (the NNTP\n\t    client) that may under some circumstances cause a wait for input\n\t    that never arrives, fetchnews \"hangs\". [...]</p>\n\t  <p>As only one fetchnews program can run at a time, subsequently\n\t    started fetchnews and texpire programs will terminate. [...]</p>\n\t  <p>Upgrade your leafnode package to version 1.11.3.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://leafnode.sourceforge.net/leafnode-SA-2005-02.txt"
+		],
+		"cvename": [
+			"CVE-2005-1911"
+		],
+		"freebsd_pr": [
+			"ports/82056"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=vulnwatch&m=111827180929063",
+				"msgid": "20050608215155.GB27234@merlin.emma.line.org"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-08",
+		"entry": "2005-06-09"
+	}
 }

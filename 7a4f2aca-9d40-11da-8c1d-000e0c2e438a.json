@@ -1,35 +1,35 @@
 {
-  "vid": "7a4f2aca-9d40-11da-8c1d-000e0c2e438a",
-  "topic": "FreeBSD -- Local kernel memory disclosure",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.0_4",
-          "ge": "6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem description:</p>\n\t<p>A buffer allocated from the kernel stack may not be completely\n\t  initialized before being copied to userland. [CVE-2006-0379]</p>\n\t<p>A logic error in computing a buffer length may allow too much\n\t  data to be copied into userland. [CVE-2006-0380]</p>\n\t<p>Impact:</p>\n\t<p>Portions of kernel memory may be disclosed to local users.\n\t  Such memory might contain sensitive information, such as\n\t  portions of the file cache or terminal buffers.  This\n\t  information might be directly useful, or it might be\n\t  leveraged to obtain elevated privileges in some way.\tFor\n\t  example, a terminal buffer might include a user-entered\n\t  password.</p>\n\t<p>Workaround:</p>\n\t<p>No workaround is available.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2006-0379",
-      "CVE-2006-0380"
-    ],
-    "freebsd_sa": [
-      "SA-06:06.kmem"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-01-25",
-    "entry": "2006-02-14",
-    "modified": "2016-08-09"
-  }
+	"vid": "7a4f2aca-9d40-11da-8c1d-000e0c2e438a",
+	"topic": "FreeBSD -- Local kernel memory disclosure",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.0_4",
+					"ge": "6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem description:</p>\n\t<p>A buffer allocated from the kernel stack may not be completely\n\t  initialized before being copied to userland. [CVE-2006-0379]</p>\n\t<p>A logic error in computing a buffer length may allow too much\n\t  data to be copied into userland. [CVE-2006-0380]</p>\n\t<p>Impact:</p>\n\t<p>Portions of kernel memory may be disclosed to local users.\n\t  Such memory might contain sensitive information, such as\n\t  portions of the file cache or terminal buffers.  This\n\t  information might be directly useful, or it might be\n\t  leveraged to obtain elevated privileges in some way.\tFor\n\t  example, a terminal buffer might include a user-entered\n\t  password.</p>\n\t<p>Workaround:</p>\n\t<p>No workaround is available.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2006-0379",
+			"CVE-2006-0380"
+		],
+		"freebsd_sa": [
+			"SA-06:06.kmem"
+		]
+	},
+	"dates": {
+		"discovery": "2006-01-25",
+		"entry": "2006-02-14",
+		"modified": "2016-08-09"
+	}
 }

@@ -1,53 +1,53 @@
 {
-  "vid": "3cb6f059-c69d-11db-9f82-000e0c2e438a",
-  "topic": "bind -- Multiple Denial of Service vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "named"
-      ],
-      "range": [
-        {
-          "lt": "9.3.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.2_1",
-          "ge": "6.2"
-        },
-        {
-          "lt": "6.1_13",
-          "ge": "6.1"
-        },
-        {
-          "lt": "5.5_11",
-          "ge": "5.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A type * (ANY) query response containing multiple RRsets can\n\t  trigger an assertion failure.</p>\n\t<p>Certain recursive queries can cause the nameserver to crash\n\t  by using memory which has already been freed.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker sending a type * (ANY) query to an\n\t  authoritative DNS server for a DNSSEC signed zone can cause\n\t  the named(8) daemon to exit, resulting in a Denial of\n\t  Service.</p>\n\t<p>A remote attacker sending recursive queries can cause the\n\t  nameserver to crash, resulting in a Denial of Service.</p>\n\t<h1>Workaround:</h1>\n\t<p>There is no workaround available, but systems which are not\n\t  authoritative servers for DNSSEC signed zones are not\n\t  affected by the first issue; and systems which do not permit\n\t  untrusted users to perform recursive DNS resolution are not\n\t  affected by the second issue.  Note that the default\n\t  configuration for named(8) in FreeBSD allows local access\n\t  only (which on many systems is equivalent to refusing access\n\t  to untrusted users).</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2007-0493",
-      "CVE-2007-0494"
-    ],
-    "freebsd_sa": [
-      "SA-07:02.bind"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-02-09",
-    "entry": "2007-02-27",
-    "modified": "2016-08-09"
-  }
+	"vid": "3cb6f059-c69d-11db-9f82-000e0c2e438a",
+	"topic": "bind -- Multiple Denial of Service vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"named"
+			],
+			"range": [
+				{
+					"lt": "9.3.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.2_1",
+					"ge": "6.2"
+				},
+				{
+					"lt": "6.1_13",
+					"ge": "6.1"
+				},
+				{
+					"lt": "5.5_11",
+					"ge": "5.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A type * (ANY) query response containing multiple RRsets can\n\t  trigger an assertion failure.</p>\n\t<p>Certain recursive queries can cause the nameserver to crash\n\t  by using memory which has already been freed.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker sending a type * (ANY) query to an\n\t  authoritative DNS server for a DNSSEC signed zone can cause\n\t  the named(8) daemon to exit, resulting in a Denial of\n\t  Service.</p>\n\t<p>A remote attacker sending recursive queries can cause the\n\t  nameserver to crash, resulting in a Denial of Service.</p>\n\t<h1>Workaround:</h1>\n\t<p>There is no workaround available, but systems which are not\n\t  authoritative servers for DNSSEC signed zones are not\n\t  affected by the first issue; and systems which do not permit\n\t  untrusted users to perform recursive DNS resolution are not\n\t  affected by the second issue.  Note that the default\n\t  configuration for named(8) in FreeBSD allows local access\n\t  only (which on many systems is equivalent to refusing access\n\t  to untrusted users).</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2007-0493",
+			"CVE-2007-0494"
+		],
+		"freebsd_sa": [
+			"SA-07:02.bind"
+		]
+	},
+	"dates": {
+		"discovery": "2007-02-09",
+		"entry": "2007-02-27",
+		"modified": "2016-08-09"
+	}
 }

@@ -1,46 +1,46 @@
 {
-  "vid": "56f4b3a6-c82c-11e0-a498-00215c6a37bb",
-  "topic": "Samba -- cross site scripting and request forgery vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "samba34"
-      ],
-      "range": [
-        {
-          "lt": "3.4.14",
-          "gt": "3.4.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba35"
-      ],
-      "range": [
-        {
-          "lt": "3.5.10",
-          "gt": "3.5.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Samba security advisory reports:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2011-2522\">\n\t  <p>All current released versions of Samba are vulnerable to a\n\t    cross-site request forgery in the Samba Web Administration Tool\n\t    (SWAT).  By tricking a user who is authenticated with SWAT into\n\t    clicking a manipulated URL on a different web page, it is\n\t    possible to manipulate SWAT.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2011-2694\">\n\t  <p>All current released versions of Samba are vulnerable to a\n\t    cross-site scripting issue in the Samba Web Administration Tool\n\t    (SWAT). On the \"Change Password\" field, it is possible to insert\n\t    arbitrary content into the \"user\" field.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2011-2522",
-      "CVE-2011-2694"
-    ],
-    "bid": [
-      "48901",
-      "48899"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-07-27",
-    "entry": "2011-08-16"
-  }
+	"vid": "56f4b3a6-c82c-11e0-a498-00215c6a37bb",
+	"topic": "Samba -- cross site scripting and request forgery vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"samba34"
+			],
+			"range": [
+				{
+					"lt": "3.4.14",
+					"gt": "3.4.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba35"
+			],
+			"range": [
+				{
+					"lt": "3.5.10",
+					"gt": "3.5.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Samba security advisory reports:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2011-2522\">\n\t  <p>All current released versions of Samba are vulnerable to a\n\t    cross-site request forgery in the Samba Web Administration Tool\n\t    (SWAT).  By tricking a user who is authenticated with SWAT into\n\t    clicking a manipulated URL on a different web page, it is\n\t    possible to manipulate SWAT.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2011-2694\">\n\t  <p>All current released versions of Samba are vulnerable to a\n\t    cross-site scripting issue in the Samba Web Administration Tool\n\t    (SWAT). On the \"Change Password\" field, it is possible to insert\n\t    arbitrary content into the \"user\" field.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2011-2522",
+			"CVE-2011-2694"
+		],
+		"bid": [
+			"48901",
+			"48899"
+		]
+	},
+	"dates": {
+		"discovery": "2011-07-27",
+		"entry": "2011-08-16"
+	}
 }

@@ -1,29 +1,29 @@
 {
-  "vid": "4ae135f7-85cd-4c32-ad94-358271b31f7f",
-  "topic": "zeek -- potential denial of service issues",
-  "affects": [
-    {
-      "name": [
-        "zeek"
-      ],
-      "range": [
-        {
-          "lt": "3.0.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jon Siwek of Corelight reports:</p>\n\t<blockquote cite=\"https://raw.githubusercontent.com/zeek/zeek/9dda3602a760f00d9532c6314ea79108106033fa/NEWS\">\n\t  <p>This release addresses the following security issues:</p>\n\t  <ul>\n\t  <li>\n\t  Potential Denial of Service due to memory leak in DNS\n\t  TSIG message parsing. </li>\n\t  <li>\n\t  Potential Denial of Service due to memory leak (or assertion\n\t  when compiling with assertions enabled) when receiving a\n\t  second SSH KEX message after a first. </li>\n\t  <li>\n\t  Potential Denial of Service due to buffer read overflow\n\t  and/or memory leaks in Kerberos analyzer.  The buffer\n\t  read overflow could occur when the Kerberos message\n\t  indicates it contains an IPv6 address, but does not send\n\t  enough data to parse out a full IPv6 address.  A memory\n\t  leak could occur when processing KRB_KDC_REQ KRB_KDC_REP\n\t  messages for message types that do not match a known/expected\n\t  type. </li>\n\t  <li>\n\t  Potential Denial of Service when sending many zero-length\n\t  SSL/TLS certificate data.  Such messages underwent the\n\t  full Zeek file analysis treatment which is expensive (and\n\t  meaninguless here) compared to how cheaply one can \"create\"\n\t  or otherwise indicate many zero-length contained in an\n\t  SSL message. </li>\n\t  <li>\n\t  Potential Denial of Service due to buffer read overflow\n\t  in SMB transaction data string handling.  The length of\n\t  strings being parsed from SMB messages was trusted to be\n\t  whatever the message claimed instead of the actual length\n\t  of data found in the message. </li>\n\t  <li>\n\t  Potential Denial of Service due to null pointer dereference\n\t  in FTP ADAT Base64 decoding. </li>\n\t  <li>\n\t  Potential Denial of Service due buffer read overflow in\n\t  FTP analyzer word/whitespace handling.  This typically\n\t  won't be a problem in most default deployments of Zeek\n\t  since the FTP analyzer receives data from a ContentLine\n\t  (NVT) support analyzer which first null-terminates the\n\t  buffer used for further FTP parsing. </li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/zeek/zeek/blob/9dda3602a760f00d9532c6314ea79108106033fa/NEWS"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-02-25",
-    "entry": "2020-03-15"
-  }
+	"vid": "4ae135f7-85cd-4c32-ad94-358271b31f7f",
+	"topic": "zeek -- potential denial of service issues",
+	"affects": [
+		{
+			"name": [
+				"zeek"
+			],
+			"range": [
+				{
+					"lt": "3.0.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jon Siwek of Corelight reports:</p>\n\t<blockquote cite=\"https://raw.githubusercontent.com/zeek/zeek/9dda3602a760f00d9532c6314ea79108106033fa/NEWS\">\n\t  <p>This release addresses the following security issues:</p>\n\t  <ul>\n\t  <li>\n\t  Potential Denial of Service due to memory leak in DNS\n\t  TSIG message parsing. </li>\n\t  <li>\n\t  Potential Denial of Service due to memory leak (or assertion\n\t  when compiling with assertions enabled) when receiving a\n\t  second SSH KEX message after a first. </li>\n\t  <li>\n\t  Potential Denial of Service due to buffer read overflow\n\t  and/or memory leaks in Kerberos analyzer.  The buffer\n\t  read overflow could occur when the Kerberos message\n\t  indicates it contains an IPv6 address, but does not send\n\t  enough data to parse out a full IPv6 address.  A memory\n\t  leak could occur when processing KRB_KDC_REQ KRB_KDC_REP\n\t  messages for message types that do not match a known/expected\n\t  type. </li>\n\t  <li>\n\t  Potential Denial of Service when sending many zero-length\n\t  SSL/TLS certificate data.  Such messages underwent the\n\t  full Zeek file analysis treatment which is expensive (and\n\t  meaninguless here) compared to how cheaply one can \"create\"\n\t  or otherwise indicate many zero-length contained in an\n\t  SSL message. </li>\n\t  <li>\n\t  Potential Denial of Service due to buffer read overflow\n\t  in SMB transaction data string handling.  The length of\n\t  strings being parsed from SMB messages was trusted to be\n\t  whatever the message claimed instead of the actual length\n\t  of data found in the message. </li>\n\t  <li>\n\t  Potential Denial of Service due to null pointer dereference\n\t  in FTP ADAT Base64 decoding. </li>\n\t  <li>\n\t  Potential Denial of Service due buffer read overflow in\n\t  FTP analyzer word/whitespace handling.  This typically\n\t  won't be a problem in most default deployments of Zeek\n\t  since the FTP analyzer receives data from a ContentLine\n\t  (NVT) support analyzer which first null-terminates the\n\t  buffer used for further FTP parsing. </li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/zeek/zeek/blob/9dda3602a760f00d9532c6314ea79108106033fa/NEWS"
+		]
+	},
+	"dates": {
+		"discovery": "2020-02-25",
+		"entry": "2020-03-15"
+	}
 }

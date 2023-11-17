@@ -1,35 +1,35 @@
 {
-  "vid": "0838733d-1698-11dc-a197-0011098b2f36",
-  "topic": "wordpress -- XMLRPC SQL Injection",
-  "affects": [
-    {
-      "name": [
-        "wordpress",
-        "de-wordpress",
-        "zh-wordpress"
-      ],
-      "range": [
-        {
-          "lt": "2.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/25552/\">\n\t  <p>Slappter has discovered a vulnerability in WordPress, which can\n\t    be exploited by malicious users to conduct SQL injection\n\t    attacks.</p>\n\t  <p>Input passed to the \"wp.suggestCategories\" method in xmlrpc.php\n\t    is not properly sanitised before being used in SQL queries.  This\n\t    can be exploited to manipulate SQL queries by injecting arbitrary\n\t    SQL code.</p>\n\t  <p>Successful exploitation allows e.g. retrieving usernames and\n\t    password hashes, but requires valid user credentials and knowledge\n\t    of the database table prefix.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/25552/"
-    ],
-    "bid": [
-      "24344"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-06-06",
-    "entry": "2007-06-09",
-    "modified": "2007-06-24"
-  }
+	"vid": "0838733d-1698-11dc-a197-0011098b2f36",
+	"topic": "wordpress -- XMLRPC SQL Injection",
+	"affects": [
+		{
+			"name": [
+				"wordpress",
+				"de-wordpress",
+				"zh-wordpress"
+			],
+			"range": [
+				{
+					"lt": "2.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/25552/\">\n\t  <p>Slappter has discovered a vulnerability in WordPress, which can\n\t    be exploited by malicious users to conduct SQL injection\n\t    attacks.</p>\n\t  <p>Input passed to the \"wp.suggestCategories\" method in xmlrpc.php\n\t    is not properly sanitised before being used in SQL queries.  This\n\t    can be exploited to manipulate SQL queries by injecting arbitrary\n\t    SQL code.</p>\n\t  <p>Successful exploitation allows e.g. retrieving usernames and\n\t    password hashes, but requires valid user credentials and knowledge\n\t    of the database table prefix.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/25552/"
+		],
+		"bid": [
+			"24344"
+		]
+	},
+	"dates": {
+		"discovery": "2007-06-06",
+		"entry": "2007-06-09",
+		"modified": "2007-06-24"
+	}
 }

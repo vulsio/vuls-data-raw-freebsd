@@ -1,44 +1,44 @@
 {
-  "vid": "73f53712-d028-11db-8c07-0211d85f11fb",
-  "topic": "ktorrent -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ktorrent"
-      ],
-      "range": [
-        {
-          "lt": "2.1.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ktorrent-devel"
-      ],
-      "range": [
-        {
-          "lt": "20070311"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Two problems have been found in KTorrent:</p>\n\t<ul>\n\t  <li>KTorrent does not properly sanitize file names to filter\n\t    out \"..\" components, so it's possible for an attacker to create\n\t    a malicious torrent in order to overwrite arbitrary files within\n\t    the filesystem.</li>\n\t  <li>Messages with invalid chunk indexes aren't rejected.</li>\n\t</ul>\n      "
-  },
-  "references": {
-    "url": [
-      "http://ktorrent.org/forum/viewtopic.php?t=1401"
-    ],
-    "cvename": [
-      "CVE-2007-1384",
-      "CVE-2007-1385"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-03-09",
-    "entry": "2007-03-11",
-    "modified": "2007-03-14"
-  }
+	"vid": "73f53712-d028-11db-8c07-0211d85f11fb",
+	"topic": "ktorrent -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ktorrent"
+			],
+			"range": [
+				{
+					"lt": "2.1.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"ktorrent-devel"
+			],
+			"range": [
+				{
+					"lt": "20070311"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Two problems have been found in KTorrent:</p>\n\t<ul>\n\t  <li>KTorrent does not properly sanitize file names to filter\n\t    out \"..\" components, so it's possible for an attacker to create\n\t    a malicious torrent in order to overwrite arbitrary files within\n\t    the filesystem.</li>\n\t  <li>Messages with invalid chunk indexes aren't rejected.</li>\n\t</ul>\n      "
+	},
+	"references": {
+		"url": [
+			"http://ktorrent.org/forum/viewtopic.php?t=1401"
+		],
+		"cvename": [
+			"CVE-2007-1384",
+			"CVE-2007-1385"
+		]
+	},
+	"dates": {
+		"discovery": "2007-03-09",
+		"entry": "2007-03-11",
+		"modified": "2007-03-14"
+	}
 }

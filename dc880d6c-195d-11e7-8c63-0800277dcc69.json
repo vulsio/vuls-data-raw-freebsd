@@ -1,79 +1,79 @@
 {
-  "vid": "dc880d6c-195d-11e7-8c63-0800277dcc69",
-  "topic": "django -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py27-django",
-        "py33-django",
-        "py34-django",
-        "py35-django",
-        "py36-django"
-      ],
-      "range": [
-        {
-          "lt": "1.8.18"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django18",
-        "py33-django18",
-        "py34-django18",
-        "py35-django18",
-        "py36-django18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.18"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django19",
-        "py33-django19",
-        "py34-django19",
-        "py35-django19",
-        "py36-django19"
-      ],
-      "range": [
-        {
-          "lt": "1.9.13"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django110",
-        "py33-django110",
-        "py34-django110",
-        "py35-django110",
-        "py36-django110"
-      ],
-      "range": [
-        {
-          "lt": "1.10.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django team reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2017/apr/04/security-releases/\">\n\t  <p>These release addresses two security issues detailed below. We\n\t    encourage all users of Django to upgrade as soon as possible.</p>\n\t<ul>\n\t<li>Open redirect and possible XSS attack via user-supplied numeric\n\t    redirect URLs</li>\n\t  <li>Open redirect vulnerability in django.views.static.serve()</li>\n\t </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.djangoproject.com/weblog/2017/apr/04/security-releases/"
-    ],
-    "cvename": [
-      "CVE-2017-7233",
-      "CVE-2017-7234"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-04",
-    "entry": "2017-04-04"
-  }
+	"vid": "dc880d6c-195d-11e7-8c63-0800277dcc69",
+	"topic": "django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py27-django",
+				"py33-django",
+				"py34-django",
+				"py35-django",
+				"py36-django"
+			],
+			"range": [
+				{
+					"lt": "1.8.18"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django18",
+				"py33-django18",
+				"py34-django18",
+				"py35-django18",
+				"py36-django18"
+			],
+			"range": [
+				{
+					"lt": "1.8.18"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django19",
+				"py33-django19",
+				"py34-django19",
+				"py35-django19",
+				"py36-django19"
+			],
+			"range": [
+				{
+					"lt": "1.9.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django110",
+				"py33-django110",
+				"py34-django110",
+				"py35-django110",
+				"py36-django110"
+			],
+			"range": [
+				{
+					"lt": "1.10.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django team reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2017/apr/04/security-releases/\">\n\t  <p>These release addresses two security issues detailed below. We\n\t    encourage all users of Django to upgrade as soon as possible.</p>\n\t<ul>\n\t<li>Open redirect and possible XSS attack via user-supplied numeric\n\t    redirect URLs</li>\n\t  <li>Open redirect vulnerability in django.views.static.serve()</li>\n\t </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2017/apr/04/security-releases/"
+		],
+		"cvename": [
+			"CVE-2017-7233",
+			"CVE-2017-7234"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-04",
+		"entry": "2017-04-04"
+	}
 }

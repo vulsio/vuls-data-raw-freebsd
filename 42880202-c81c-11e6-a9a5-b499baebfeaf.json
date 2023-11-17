@@ -1,33 +1,33 @@
 {
-  "vid": "42880202-c81c-11e6-a9a5-b499baebfeaf",
-  "topic": "cURL -- buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.52",
-          "ge": "7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/vuln-7.51.0.html\">\n\t  <h2>printf floating point buffer overflow</h2>\n\t  <p>libcurl's implementation of the printf() functions triggers a\n\t    buffer overflow when doing a large floating point output. The bug\n\t    occurs when the conversion outputs more than 255 bytes.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/vuln-7.51.0.html"
-    ],
-    "cvename": [
-      "CVE-2016-9586"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-12-21",
-    "entry": "2016-12-22"
-  }
+	"vid": "42880202-c81c-11e6-a9a5-b499baebfeaf",
+	"topic": "cURL -- buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.52",
+					"ge": "7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/vuln-7.51.0.html\">\n\t  <h2>printf floating point buffer overflow</h2>\n\t  <p>libcurl's implementation of the printf() functions triggers a\n\t    buffer overflow when doing a large floating point output. The bug\n\t    occurs when the conversion outputs more than 255 bytes.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/vuln-7.51.0.html"
+		],
+		"cvename": [
+			"CVE-2016-9586"
+		]
+	},
+	"dates": {
+		"discovery": "2016-12-21",
+		"entry": "2016-12-22"
+	}
 }

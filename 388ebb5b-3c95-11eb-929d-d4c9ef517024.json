@@ -1,42 +1,42 @@
 {
-  "vid": "388ebb5b-3c95-11eb-929d-d4c9ef517024",
-  "topic": "Unbound/NSD -- Denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "unbound"
-      ],
-      "range": [
-        {
-          "lt": "1.13.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "nsd"
-      ],
-      "range": [
-        {
-          "lt": "4.3.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NLNetLabs reports:</p>\n\t<blockquote cite=\"https://nlnetlabs.nl/downloads/unbound/CVE-2020-28935.txt\">\n\t  <p>Unbound and NSD when writing the PID file would not check if an\n\t    existing file was a symlink. This could allow for a local symlink \\\n\t    attack if an attacker has access to the user Unbound/NSD runs as.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nlnetlabs.nl/downloads/unbound/CVE-2020-28935.txt"
-    ],
-    "cvename": [
-      "CVE-2020-28935"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-12-01",
-    "entry": "2020-12-12"
-  }
+	"vid": "388ebb5b-3c95-11eb-929d-d4c9ef517024",
+	"topic": "Unbound/NSD -- Denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"unbound"
+			],
+			"range": [
+				{
+					"lt": "1.13.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"nsd"
+			],
+			"range": [
+				{
+					"lt": "4.3.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NLNetLabs reports:</p>\n\t<blockquote cite=\"https://nlnetlabs.nl/downloads/unbound/CVE-2020-28935.txt\">\n\t  <p>Unbound and NSD when writing the PID file would not check if an\n\t    existing file was a symlink. This could allow for a local symlink \\\n\t    attack if an attacker has access to the user Unbound/NSD runs as.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nlnetlabs.nl/downloads/unbound/CVE-2020-28935.txt"
+		],
+		"cvename": [
+			"CVE-2020-28935"
+		]
+	},
+	"dates": {
+		"discovery": "2020-12-01",
+		"entry": "2020-12-12"
+	}
 }

@@ -1,38 +1,38 @@
 {
-  "vid": "5198ef84-4fdc-11df-83fb-0015587e2cc1",
-  "topic": "cacti -- SQL injection and command execution vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "cacti"
-      ],
-      "range": [
-        {
-          "le": "0.8.7e4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Bonsai information security reports:</p>\n\t<blockquote cite=\"http://www.bonsai-sec.com/en/research/vulnerability.php\">\n\t  <p>A Vulnerability has been discovered in Cacti, which\n\t    can be exploited by any user to conduct SQL Injection\n\t    attacks. Input passed via the \"export_item_id\" parameter\n\t    to \"templates_export.php\" script is not properly sanitized\n\t    before being used in a SQL query.</p>\n\t</blockquote>\n\t  <p>The same source also reported a command execution\n\t    vulnerability. This second issue can be exploited by\n\t    Cacti users who have the rights to modify device or\n\t    graph configurations.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.bonsai-sec.com/en/research/vulnerabilities/cacti-os-command-injection-0105.php",
-      "http://www.bonsai-sec.com/en/research/vulnerabilities/cacti-sql-injection-0104.php",
-      "http://www.debian.org/security/2010/dsa-2039"
-    ],
-    "cvename": [
-      "CVE-2010-1431"
-    ],
-    "freebsd_pr": [
-      "ports/146021"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-04-21",
-    "entry": "2010-04-24",
-    "modified": "2013-06-16"
-  }
+	"vid": "5198ef84-4fdc-11df-83fb-0015587e2cc1",
+	"topic": "cacti -- SQL injection and command execution vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"cacti"
+			],
+			"range": [
+				{
+					"le": "0.8.7e4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Bonsai information security reports:</p>\n\t<blockquote cite=\"http://www.bonsai-sec.com/en/research/vulnerability.php\">\n\t  <p>A Vulnerability has been discovered in Cacti, which\n\t    can be exploited by any user to conduct SQL Injection\n\t    attacks. Input passed via the \"export_item_id\" parameter\n\t    to \"templates_export.php\" script is not properly sanitized\n\t    before being used in a SQL query.</p>\n\t</blockquote>\n\t  <p>The same source also reported a command execution\n\t    vulnerability. This second issue can be exploited by\n\t    Cacti users who have the rights to modify device or\n\t    graph configurations.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.bonsai-sec.com/en/research/vulnerabilities/cacti-os-command-injection-0105.php",
+			"http://www.bonsai-sec.com/en/research/vulnerabilities/cacti-sql-injection-0104.php",
+			"http://www.debian.org/security/2010/dsa-2039"
+		],
+		"cvename": [
+			"CVE-2010-1431"
+		],
+		"freebsd_pr": [
+			"ports/146021"
+		]
+	},
+	"dates": {
+		"discovery": "2010-04-21",
+		"entry": "2010-04-24",
+		"modified": "2013-06-16"
+	}
 }

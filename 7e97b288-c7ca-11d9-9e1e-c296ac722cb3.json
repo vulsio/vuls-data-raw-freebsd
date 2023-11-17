@@ -1,33 +1,33 @@
 {
-  "vid": "7e97b288-c7ca-11d9-9e1e-c296ac722cb3",
-  "topic": "squid -- DNS lookup spoofing vulnerability",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "2.5.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The squid patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE9-dns_query\">\n\t  <p>Malicious users may spoof DNS lookups if the DNS client UDP port\n\t    (random, assigned by OS as startup) is unfiltered and your network\n\t    is not protected from IP spoofing.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE9-dns_reply",
-      "http://secunia.com/advisories/15294"
-    ],
-    "cvename": [
-      "CVE-2005-1519"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-11",
-    "entry": "2005-05-19"
-  }
+	"vid": "7e97b288-c7ca-11d9-9e1e-c296ac722cb3",
+	"topic": "squid -- DNS lookup spoofing vulnerability",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "2.5.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The squid patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE9-dns_query\">\n\t  <p>Malicious users may spoof DNS lookups if the DNS client UDP port\n\t    (random, assigned by OS as startup) is unfiltered and your network\n\t    is not protected from IP spoofing.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE9-dns_reply",
+			"http://secunia.com/advisories/15294"
+		],
+		"cvename": [
+			"CVE-2005-1519"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-11",
+		"entry": "2005-05-19"
+	}
 }

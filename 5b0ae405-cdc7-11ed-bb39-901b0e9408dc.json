@@ -1,43 +1,43 @@
 {
-  "vid": "5b0ae405-cdc7-11ed-bb39-901b0e9408dc",
-  "topic": "Matrix clients -- Prototype pollution in matrix-js-sdk",
-  "affects": [
-    {
-      "name": [
-        "element-web"
-      ],
-      "range": [
-        {
-          "lt": "1.11.26"
-        }
-      ]
-    },
-    {
-      "name": [
-        "cinny"
-      ],
-      "range": [
-        {
-          "le": "2.2.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Matrix developers report:</p>\n\t<blockquote cite=\"https://matrix.org/blog/2023/03/28/security-releases-matrix-js-sdk-24-0-0-and-matrix-react-sdk-3-69-0\">\n\t  <p>Today we are issuing security releases of matrix-js-sdk and matrix-react-sdk\n\t  to patch a pair of High severity vulnerabilities (CVE-2023-28427 /\n\t  GHSA-mwq8-fjpf-c2gr for matrix-js-sdk and CVE-2023-28103 / GHSA-6g43-88cp-w5gv\n\t  for matrix-react-sdk).</p>\n\t  <p>The issues involve prototype pollution via events containing special strings\n\t  in key locations, which can temporarily disrupt normal functioning of matrix-js-sdk\n\t  and matrix-react-sdk, potentially impacting the consumer's ability to process data\n\t  safely.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://matrix.org/blog/2023/03/28/security-releases-matrix-js-sdk-24-0-0-and-matrix-react-sdk-3-69-0"
-    ],
-    "cvename": [
-      "CVE-2023-28103",
-      "CVE-2023-28427"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-03-28",
-    "entry": "2023-03-29"
-  }
+	"vid": "5b0ae405-cdc7-11ed-bb39-901b0e9408dc",
+	"topic": "Matrix clients -- Prototype pollution in matrix-js-sdk",
+	"affects": [
+		{
+			"name": [
+				"element-web"
+			],
+			"range": [
+				{
+					"lt": "1.11.26"
+				}
+			]
+		},
+		{
+			"name": [
+				"cinny"
+			],
+			"range": [
+				{
+					"le": "2.2.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matrix developers report:</p>\n\t<blockquote cite=\"https://matrix.org/blog/2023/03/28/security-releases-matrix-js-sdk-24-0-0-and-matrix-react-sdk-3-69-0\">\n\t  <p>Today we are issuing security releases of matrix-js-sdk and matrix-react-sdk\n\t  to patch a pair of High severity vulnerabilities (CVE-2023-28427 /\n\t  GHSA-mwq8-fjpf-c2gr for matrix-js-sdk and CVE-2023-28103 / GHSA-6g43-88cp-w5gv\n\t  for matrix-react-sdk).</p>\n\t  <p>The issues involve prototype pollution via events containing special strings\n\t  in key locations, which can temporarily disrupt normal functioning of matrix-js-sdk\n\t  and matrix-react-sdk, potentially impacting the consumer's ability to process data\n\t  safely.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://matrix.org/blog/2023/03/28/security-releases-matrix-js-sdk-24-0-0-and-matrix-react-sdk-3-69-0"
+		],
+		"cvename": [
+			"CVE-2023-28103",
+			"CVE-2023-28427"
+		]
+	},
+	"dates": {
+		"discovery": "2023-03-28",
+		"entry": "2023-03-29"
+	}
 }

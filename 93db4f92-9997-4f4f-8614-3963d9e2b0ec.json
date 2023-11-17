@@ -1,36 +1,36 @@
 {
-  "vid": "93db4f92-9997-4f4f-8614-3963d9e2b0ec",
-  "topic": "py-slixmpp -- incomplete SSL certificate validation",
-  "affects": [
-    {
-      "name": [
-        "py37-slixmpp",
-        "py38-slixmpp",
-        "py39-slixmpp",
-        "py310-slixmpp",
-        "py311-slixmpp"
-      ],
-      "range": [
-        {
-          "lt": "1.8.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f\">\n      <p>Slixmpp before 1.8.3 lacks SSL Certificate hostname validation in XMLStream, allowing an attacker to pose as any server in the eyes of Slixmpp.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f"
-    ],
-    "cvename": [
-      "CVE-2022-45197"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-12-25",
-    "entry": "2023-04-09"
-  }
+	"vid": "93db4f92-9997-4f4f-8614-3963d9e2b0ec",
+	"topic": "py-slixmpp -- incomplete SSL certificate validation",
+	"affects": [
+		{
+			"name": [
+				"py37-slixmpp",
+				"py38-slixmpp",
+				"py39-slixmpp",
+				"py310-slixmpp",
+				"py311-slixmpp"
+			],
+			"range": [
+				{
+					"lt": "1.8.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f\">\n      <p>Slixmpp before 1.8.3 lacks SSL Certificate hostname validation in XMLStream, allowing an attacker to pose as any server in the eyes of Slixmpp.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f"
+		],
+		"cvename": [
+			"CVE-2022-45197"
+		]
+	},
+	"dates": {
+		"discovery": "2022-12-25",
+		"entry": "2023-04-09"
+	}
 }

@@ -1,50 +1,50 @@
 {
-  "vid": "e329550b-54f7-11db-a5ae-00508d6a62df",
-  "topic": "php -- _ecalloc Integer Overflow Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "5.1.6_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php5-cli",
-        "php5-cgi",
-        "php5-dtc",
-        "php5-horde",
-        "php5-nms",
-        "mod_php5"
-      ],
-      "range": [
-        {
-          "lt": "5.1.6_1",
-          "ge": "5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stefan Esser reports:</p>\n\t<blockquote cite=\"http://www.hardened-php.net/advisory_092006.133.html\">\n\t  <p>The PHP 5 branch of the PHP source code lacks the\n\t    protection against possible integer overflows inside\n\t    ecalloc() that is present in the PHP 4 branch and also for\n\t    several years part of our Hardening-Patch and our new\n\t    Suhosin-Patch.</p>\n\t  <p>It was discovered that such an integer overflow can be\n\t    triggered when user input is passed to the unserialize()\n\t    function. Earlier vulnerabilities in PHP's unserialize()\n\t    that were also discovered by one of our audits in December\n\t    2004 are unrelated to the newly discovered flaw, but they\n\t    have shown, that the unserialize() function is exposed to\n\t    user-input in many popular PHP applications.  Examples for\n\t    applications that use the content of COOKIE variables with\n\t    unserialize() are phpBB and Serendipity.</p>\n\t  <p>The successful exploitation of this integer overflow will\n\t    result in arbitrary code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.hardened-php.net/advisory_092006.133.html",
-      "http://secunia.com/advisories/22280/"
-    ],
-    "cvename": [
-      "CVE-2006-4812"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-09-30",
-    "entry": "2006-10-06",
-    "modified": "2013-04-01"
-  }
+	"vid": "e329550b-54f7-11db-a5ae-00508d6a62df",
+	"topic": "php -- _ecalloc Integer Overflow Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "5.1.6_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"php5-cli",
+				"php5-cgi",
+				"php5-dtc",
+				"php5-horde",
+				"php5-nms",
+				"mod_php5"
+			],
+			"range": [
+				{
+					"lt": "5.1.6_1",
+					"ge": "5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stefan Esser reports:</p>\n\t<blockquote cite=\"http://www.hardened-php.net/advisory_092006.133.html\">\n\t  <p>The PHP 5 branch of the PHP source code lacks the\n\t    protection against possible integer overflows inside\n\t    ecalloc() that is present in the PHP 4 branch and also for\n\t    several years part of our Hardening-Patch and our new\n\t    Suhosin-Patch.</p>\n\t  <p>It was discovered that such an integer overflow can be\n\t    triggered when user input is passed to the unserialize()\n\t    function. Earlier vulnerabilities in PHP's unserialize()\n\t    that were also discovered by one of our audits in December\n\t    2004 are unrelated to the newly discovered flaw, but they\n\t    have shown, that the unserialize() function is exposed to\n\t    user-input in many popular PHP applications.  Examples for\n\t    applications that use the content of COOKIE variables with\n\t    unserialize() are phpBB and Serendipity.</p>\n\t  <p>The successful exploitation of this integer overflow will\n\t    result in arbitrary code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.hardened-php.net/advisory_092006.133.html",
+			"http://secunia.com/advisories/22280/"
+		],
+		"cvename": [
+			"CVE-2006-4812"
+		]
+	},
+	"dates": {
+		"discovery": "2006-09-30",
+		"entry": "2006-10-06",
+		"modified": "2013-04-01"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "81b4c118-c586-11e4-8495-6805ca0b3d42",
-  "topic": "phpMyAdmin -- Risk of BREACH attack due to reflected parameter",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "4.3.11.1",
-          "ge": "4.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2015-1.php\">\n\t  <p>Risk of BREACH attack due to reflected parameter.</p>\n\t  <p>With a large number of crafted requests it was possible to infer\n\t    the CSRF token by a BREACH attack.</p>\n\t  <p>Mitigation factor: this vulnerability can only be exploited in\n\t    the presence of another vulnerability that allows the attacker to\n\t    inject JavaScript into victim's browser.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2015-1.php"
-    ],
-    "cvename": [
-      "CVE-2015-2206"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-03-04",
-    "entry": "2015-03-08"
-  }
+	"vid": "81b4c118-c586-11e4-8495-6805ca0b3d42",
+	"topic": "phpMyAdmin -- Risk of BREACH attack due to reflected parameter",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "4.3.11.1",
+					"ge": "4.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2015-1.php\">\n\t  <p>Risk of BREACH attack due to reflected parameter.</p>\n\t  <p>With a large number of crafted requests it was possible to infer\n\t    the CSRF token by a BREACH attack.</p>\n\t  <p>Mitigation factor: this vulnerability can only be exploited in\n\t    the presence of another vulnerability that allows the attacker to\n\t    inject JavaScript into victim's browser.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2015-1.php"
+		],
+		"cvename": [
+			"CVE-2015-2206"
+		]
+	},
+	"dates": {
+		"discovery": "2015-03-04",
+		"entry": "2015-03-08"
+	}
 }

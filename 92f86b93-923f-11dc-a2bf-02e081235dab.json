@@ -1,30 +1,30 @@
 {
-  "vid": "92f86b93-923f-11dc-a2bf-02e081235dab",
-  "topic": "net-snmp -- denial of service via GETBULK request",
-  "affects": [
-    {
-      "name": [
-        "net-snmp"
-      ],
-      "range": [
-        {
-          "lt": "5.3.1_7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5846\">\n\t  <p>The SNMP agent (snmp_agent.c) in net-snmp before 5.4.1\n\t    allows remote attackers to cause a denial of service (CPU\n\t    and memory consumption) via a GETBULK request with a large\n\t    max-repeaters value.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2007-5846"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-11-06",
-    "entry": "2007-11-13",
-    "modified": "2007-11-14"
-  }
+	"vid": "92f86b93-923f-11dc-a2bf-02e081235dab",
+	"topic": "net-snmp -- denial of service via GETBULK request",
+	"affects": [
+		{
+			"name": [
+				"net-snmp"
+			],
+			"range": [
+				{
+					"lt": "5.3.1_7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>CVE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5846\">\n\t  <p>The SNMP agent (snmp_agent.c) in net-snmp before 5.4.1\n\t    allows remote attackers to cause a denial of service (CPU\n\t    and memory consumption) via a GETBULK request with a large\n\t    max-repeaters value.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2007-5846"
+		]
+	},
+	"dates": {
+		"discovery": "2007-11-06",
+		"entry": "2007-11-13",
+		"modified": "2007-11-14"
+	}
 }

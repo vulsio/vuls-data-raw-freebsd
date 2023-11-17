@@ -1,44 +1,44 @@
 {
-  "vid": "27a70a01-5f6c-11da-8d54-000cf18bbe54",
-  "topic": "ghostscript -- insecure temporary file creation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ghostscript-gnu",
-        "ghostscript-gnu-nox11"
-      ],
-      "range": [
-        {
-          "lt": "7.07_14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ghostscript-afpl",
-        "ghostscript-afpl-nox11"
-      ],
-      "range": [
-        {
-          "lt": "8.53_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"http://www.securityfocus.com/bid/11285/discuss\">\n\t  <p>Ghostscript is affected by an insecure temporary file\n\t    creation vulnerability. This issue is likely due\n\t    to a design error that causes the application to fail\n\t    to verify the existence of a file before writing to it.</p>\n\n\t  <p>An attacker may leverage this issue to overwrite\n\t    arbitrary files with the privileges of an unsuspecting\n\t    user that activates the vulnerable application.\n\t    Reportedly this issue is unlikely to facilitate\n\t    privilege escalation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0967"
-    ],
-    "bid": [
-      "11285"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-19",
-    "entry": "2005-11-27"
-  }
+	"vid": "27a70a01-5f6c-11da-8d54-000cf18bbe54",
+	"topic": "ghostscript -- insecure temporary file creation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ghostscript-gnu",
+				"ghostscript-gnu-nox11"
+			],
+			"range": [
+				{
+					"lt": "7.07_14"
+				}
+			]
+		},
+		{
+			"name": [
+				"ghostscript-afpl",
+				"ghostscript-afpl-nox11"
+			],
+			"range": [
+				{
+					"lt": "8.53_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"http://www.securityfocus.com/bid/11285/discuss\">\n\t  <p>Ghostscript is affected by an insecure temporary file\n\t    creation vulnerability. This issue is likely due\n\t    to a design error that causes the application to fail\n\t    to verify the existence of a file before writing to it.</p>\n\n\t  <p>An attacker may leverage this issue to overwrite\n\t    arbitrary files with the privileges of an unsuspecting\n\t    user that activates the vulnerable application.\n\t    Reportedly this issue is unlikely to facilitate\n\t    privilege escalation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0967"
+		],
+		"bid": [
+			"11285"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-19",
+		"entry": "2005-11-27"
+	}
 }

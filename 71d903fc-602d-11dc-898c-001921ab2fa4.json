@@ -1,59 +1,59 @@
 {
-  "vid": "71d903fc-602d-11dc-898c-001921ab2fa4",
-  "topic": "php -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "5.2.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php4"
-      ],
-      "range": [
-        {
-          "lt": "4.4.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PHP development team reports:</p>\n\t<blockquote cite=\"http://www.php.net/releases/5_2_4.php\">\n\t  <p>Security Enhancements and Fixes in PHP 5.2.4:</p>\n\t  <ul>\n\t    <li>Fixed a floating point exception inside wordwrap() (Reported\n\t    by Mattias Bengtsson)</li>\n\t    <li>Fixed several integer overflows inside the GD extension\n\t    (Reported by Mattias Bengtsson)</li>\n\t    <li>Fixed size calculation in chunk_split() (Reported by Gerhard\n\t    Wagner)</li>\n\t    <li>Fixed integer overflow in str[c]spn(). (Reported by Mattias\n\t    Bengtsson)</li>\n\t    <li>Fixed money_format() not to accept multiple %i or %n tokens.\n\t    (Reported by Stanislav Malyshev)</li>\n\t    <li>Fixed zend_alter_ini_entry() memory_limit interruption\n\t    vulnerability. (Reported by Stefan Esser)</li>\n\t    <li>Fixed INFILE LOCAL option handling with MySQL extensions not\n\t    to be allowed when open_basedir or safe_mode is active. (Reported\n\t    by Mattias Bengtsson)</li>\n\t    <li>Fixed session.save_path and error_log values to be checked\n\t    against open_basedir and safe_mode (CVE-2007-3378) (Reported by\n\t    Maksymilian Arciemowicz)</li>\n\t    <li>Fixed a possible invalid read in glob() win32 implementation\n\t    (CVE-2007-3806) (Reported by shinnai)</li>\n\t    <li>Fixed a possible buffer overflow in php_openssl_make_REQ\n\t    (Reported by zatanzlatan at hotbrev dot com)</li>\n\t    <li>Fixed an open_basedir bypass inside glob() function (Reported\n\t    by dr at peytz dot dk)</li>\n\t    <li>Fixed a possible open_basedir bypass inside session extension\n\t    when the session file is a symlink (Reported by c dot i dot morris\n\t    at durham dot ac dot uk)</li>\n\t    <li>Improved fix for MOPB-03-2007.</li>\n\t    <li>Corrected fix for CVE-2007-2872.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.php.net/releases/4_4_8.php",
-      "http://www.php.net/releases/5_2_4.php",
-      "http://secunia.com/advisories/26642"
-    ],
-    "cvename": [
-      "CVE-2007-2872",
-      "CVE-2007-3378",
-      "CVE-2007-3806",
-      "CVE-2007-3996",
-      "CVE-2007-3997",
-      "CVE-2007-3998",
-      "CVE-2007-4652",
-      "CVE-2007-4657",
-      "CVE-2007-4658",
-      "CVE-2007-4659",
-      "CVE-2007-4660",
-      "CVE-2007-4661",
-      "CVE-2007-4662",
-      "CVE-2007-4663",
-      "CVE-2007-4670"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-08-30",
-    "entry": "2007-09-11",
-    "modified": "2008-01-14"
-  }
+	"vid": "71d903fc-602d-11dc-898c-001921ab2fa4",
+	"topic": "php -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "5.2.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"php4"
+			],
+			"range": [
+				{
+					"lt": "4.4.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PHP development team reports:</p>\n\t<blockquote cite=\"http://www.php.net/releases/5_2_4.php\">\n\t  <p>Security Enhancements and Fixes in PHP 5.2.4:</p>\n\t  <ul>\n\t    <li>Fixed a floating point exception inside wordwrap() (Reported\n\t    by Mattias Bengtsson)</li>\n\t    <li>Fixed several integer overflows inside the GD extension\n\t    (Reported by Mattias Bengtsson)</li>\n\t    <li>Fixed size calculation in chunk_split() (Reported by Gerhard\n\t    Wagner)</li>\n\t    <li>Fixed integer overflow in str[c]spn(). (Reported by Mattias\n\t    Bengtsson)</li>\n\t    <li>Fixed money_format() not to accept multiple %i or %n tokens.\n\t    (Reported by Stanislav Malyshev)</li>\n\t    <li>Fixed zend_alter_ini_entry() memory_limit interruption\n\t    vulnerability. (Reported by Stefan Esser)</li>\n\t    <li>Fixed INFILE LOCAL option handling with MySQL extensions not\n\t    to be allowed when open_basedir or safe_mode is active. (Reported\n\t    by Mattias Bengtsson)</li>\n\t    <li>Fixed session.save_path and error_log values to be checked\n\t    against open_basedir and safe_mode (CVE-2007-3378) (Reported by\n\t    Maksymilian Arciemowicz)</li>\n\t    <li>Fixed a possible invalid read in glob() win32 implementation\n\t    (CVE-2007-3806) (Reported by shinnai)</li>\n\t    <li>Fixed a possible buffer overflow in php_openssl_make_REQ\n\t    (Reported by zatanzlatan at hotbrev dot com)</li>\n\t    <li>Fixed an open_basedir bypass inside glob() function (Reported\n\t    by dr at peytz dot dk)</li>\n\t    <li>Fixed a possible open_basedir bypass inside session extension\n\t    when the session file is a symlink (Reported by c dot i dot morris\n\t    at durham dot ac dot uk)</li>\n\t    <li>Improved fix for MOPB-03-2007.</li>\n\t    <li>Corrected fix for CVE-2007-2872.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.php.net/releases/4_4_8.php",
+			"http://www.php.net/releases/5_2_4.php",
+			"http://secunia.com/advisories/26642"
+		],
+		"cvename": [
+			"CVE-2007-2872",
+			"CVE-2007-3378",
+			"CVE-2007-3806",
+			"CVE-2007-3996",
+			"CVE-2007-3997",
+			"CVE-2007-3998",
+			"CVE-2007-4652",
+			"CVE-2007-4657",
+			"CVE-2007-4658",
+			"CVE-2007-4659",
+			"CVE-2007-4660",
+			"CVE-2007-4661",
+			"CVE-2007-4662",
+			"CVE-2007-4663",
+			"CVE-2007-4670"
+		]
+	},
+	"dates": {
+		"discovery": "2007-08-30",
+		"entry": "2007-09-11",
+		"modified": "2008-01-14"
+	}
 }

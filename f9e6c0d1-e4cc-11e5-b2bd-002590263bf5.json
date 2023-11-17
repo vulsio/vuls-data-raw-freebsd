@@ -1,79 +1,79 @@
 {
-  "vid": "f9e6c0d1-e4cc-11e5-b2bd-002590263bf5",
-  "topic": "django -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py27-django",
-        "py32-django",
-        "py33-django",
-        "py34-django",
-        "py35-django"
-      ],
-      "range": [
-        {
-          "lt": "1.8.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django18",
-        "py32-django18",
-        "py33-django18",
-        "py34-django18",
-        "py35-django18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django19",
-        "py32-django19",
-        "py33-django19",
-        "py34-django19",
-        "py35-django19"
-      ],
-      "range": [
-        {
-          "lt": "1.9.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django-devel",
-        "py32-django-devel",
-        "py33-django-devel",
-        "py34-django-devel",
-        "py35-django-devel"
-      ],
-      "range": [
-        {
-          "le": "20150709,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tim Graham reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2015/nov/24/security-releases-issued/\">\n\t  <p>Malicious redirect and possible XSS attack via user-supplied\n\t    redirect URLs containing basic auth</p>\n\t  <p>User enumeration through timing difference on password hasher work\n\t    factor upgrade</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.djangoproject.com/weblog/2016/mar/01/security-releases/"
-    ],
-    "cvename": [
-      "CVE-2016-2512",
-      "CVE-2016-2513"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-01",
-    "entry": "2016-03-08"
-  }
+	"vid": "f9e6c0d1-e4cc-11e5-b2bd-002590263bf5",
+	"topic": "django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py27-django",
+				"py32-django",
+				"py33-django",
+				"py34-django",
+				"py35-django"
+			],
+			"range": [
+				{
+					"lt": "1.8.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django18",
+				"py32-django18",
+				"py33-django18",
+				"py34-django18",
+				"py35-django18"
+			],
+			"range": [
+				{
+					"lt": "1.8.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django19",
+				"py32-django19",
+				"py33-django19",
+				"py34-django19",
+				"py35-django19"
+			],
+			"range": [
+				{
+					"lt": "1.9.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django-devel",
+				"py32-django-devel",
+				"py33-django-devel",
+				"py34-django-devel",
+				"py35-django-devel"
+			],
+			"range": [
+				{
+					"le": "20150709,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tim Graham reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2015/nov/24/security-releases-issued/\">\n\t  <p>Malicious redirect and possible XSS attack via user-supplied\n\t    redirect URLs containing basic auth</p>\n\t  <p>User enumeration through timing difference on password hasher work\n\t    factor upgrade</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2016/mar/01/security-releases/"
+		],
+		"cvename": [
+			"CVE-2016-2512",
+			"CVE-2016-2513"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-01",
+		"entry": "2016-03-08"
+	}
 }

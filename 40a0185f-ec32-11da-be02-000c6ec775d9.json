@@ -1,34 +1,34 @@
 {
-  "vid": "40a0185f-ec32-11da-be02-000c6ec775d9",
-  "topic": "drupal -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "drupal"
-      ],
-      "range": [
-        {
-          "lt": "4.6.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Drupal team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/65357\">\n\t  <p>Vulnerability: SQL injection</p>\n\t  <p>A security vulnerability in the database layer allowed\n\t    certain queries to be submitted to the database without\n\t    going through Drupal's query sanitizer.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/65409\">\n\t  <p>Vulnerability: Execution of arbitrary files</p>\n\t  <p>Certain -- alas, typical -- configurations of Apache\n\t    allows execution of carefully named arbitrary scripts in\n\t    the files directory. Drupal now will attempt to\n\t    automatically create a .htaccess file in your \"files\"\n\t    directory to protect you.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://drupal.org/node/65357",
-      "http://drupal.org/node/65409"
-    ],
-    "cvename": [
-      "CVE-2006-2742",
-      "CVE-2006-2743"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-05-18",
-    "entry": "2006-06-05"
-  }
+	"vid": "40a0185f-ec32-11da-be02-000c6ec775d9",
+	"topic": "drupal -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"drupal"
+			],
+			"range": [
+				{
+					"lt": "4.6.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Drupal team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/65357\">\n\t  <p>Vulnerability: SQL injection</p>\n\t  <p>A security vulnerability in the database layer allowed\n\t    certain queries to be submitted to the database without\n\t    going through Drupal's query sanitizer.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://drupal.org/node/65409\">\n\t  <p>Vulnerability: Execution of arbitrary files</p>\n\t  <p>Certain -- alas, typical -- configurations of Apache\n\t    allows execution of carefully named arbitrary scripts in\n\t    the files directory. Drupal now will attempt to\n\t    automatically create a .htaccess file in your \"files\"\n\t    directory to protect you.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://drupal.org/node/65357",
+			"http://drupal.org/node/65409"
+		],
+		"cvename": [
+			"CVE-2006-2742",
+			"CVE-2006-2743"
+		]
+	},
+	"dates": {
+		"discovery": "2006-05-18",
+		"entry": "2006-06-05"
+	}
 }

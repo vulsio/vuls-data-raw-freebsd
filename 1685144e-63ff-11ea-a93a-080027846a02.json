@@ -1,62 +1,62 @@
 {
-  "vid": "1685144e-63ff-11ea-a93a-080027846a02",
-  "topic": "Django -- potential SQL injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py27-django111",
-        "py35-django111",
-        "py36-django111",
-        "py37-django111",
-        "py38-django111"
-      ],
-      "range": [
-        {
-          "lt": "1.11.29"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py35-django22",
-        "py36-django22",
-        "py37-django22",
-        "py38-django22"
-      ],
-      "range": [
-        {
-          "lt": "2.2.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py36-django30",
-        "py37-django30",
-        "py38-django30"
-      ],
-      "range": [
-        {
-          "lt": "3.0.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE CVE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9402\">\n\t  <p>Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4\n\t    allows SQL Injection if untrusted data is used as a tolerance parameter\n\t    in GIS functions and aggregates on Oracle. By passing a suitably crafted\n\t    tolerance to GIS functions and aggregates on Oracle, it was possible to\n\t    break escaping and inject malicious SQL.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9402",
-      "https://www.djangoproject.com/weblog/2020/mar/04/security-releases/"
-    ],
-    "cvename": [
-      "CVE-2020-9402"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-02-25",
-    "entry": "2020-03-12"
-  }
+	"vid": "1685144e-63ff-11ea-a93a-080027846a02",
+	"topic": "Django -- potential SQL injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py27-django111",
+				"py35-django111",
+				"py36-django111",
+				"py37-django111",
+				"py38-django111"
+			],
+			"range": [
+				{
+					"lt": "1.11.29"
+				}
+			]
+		},
+		{
+			"name": [
+				"py35-django22",
+				"py36-django22",
+				"py37-django22",
+				"py38-django22"
+			],
+			"range": [
+				{
+					"lt": "2.2.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"py36-django30",
+				"py37-django30",
+				"py38-django30"
+			],
+			"range": [
+				{
+					"lt": "3.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE CVE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9402\">\n\t  <p>Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4\n\t    allows SQL Injection if untrusted data is used as a tolerance parameter\n\t    in GIS functions and aggregates on Oracle. By passing a suitably crafted\n\t    tolerance to GIS functions and aggregates on Oracle, it was possible to\n\t    break escaping and inject malicious SQL.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9402",
+			"https://www.djangoproject.com/weblog/2020/mar/04/security-releases/"
+		],
+		"cvename": [
+			"CVE-2020-9402"
+		]
+	},
+	"dates": {
+		"discovery": "2020-02-25",
+		"entry": "2020-03-12"
+	}
 }

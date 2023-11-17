@@ -1,29 +1,29 @@
 {
-  "vid": "9d6a48a7-4dad-11ea-8a1d-7085c25400ea",
-  "topic": "grub2-bhyve -- multiple privilege escalations",
-  "affects": [
-    {
-      "name": [
-        "grub2-bhyve"
-      ],
-      "range": [
-        {
-          "lt": "0.40_8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Reno Robert reports:</p>\n\t<!-- No public blog entry yet but I'm sure he'll publish one soon. -->\n\t<blockquote cite=\"https://www.voidsecurity.in/\">\n\t  <p>FreeBSD uses a two-process model for running a VM. For booting non-FreeBSD\n\t  guests, a modified grub-emu is used (grub-bhyve). Grub-bhyve executes command\n\t  from guest grub.cfg file. This is a security problem because grub was never\n\t  written to handle inputs from OS as untrusted. In the current design, grub\n\t  and guest OS works across trust boundaries. This exposes a grub to untrusted\n\t  inputs from guest.\n\t  </p>\n\t  <p>grub-bhyve (emu) is built without SDL graphics support which reduces lot of\n\t  gfx attack surface, however font loading code is still accessible. Guest can\n\t  provide arbitrary font file, which is parsed by grub-bhyve running as root.\n\t  </p>\n\t  <p>In grub-core/font/font.c, <code>read_section_as_string()</code> allocates\n\t  <code>section-&gt;length + 1</code> bytes of memory.  However, untrusted\n\t  <code>section-&gt;length</code> is an unsigned 32-bit number, and the result can\n\t  overflow to <code>malloc(0)</code>.  This can result in a controlled buffer\n\t  overflow via the 'loadfont' command in a guest VM grub2.cfg, eventually leading\n\t  to privilege escalation from guest to host.\n\t  </p>\n\t</blockquote>\n\t<p>Reno Robert also reports:</p>\n\t<!-- No public blog entry yet but I'm sure he'll publish one soon. -->\n\t<blockquote cite=\"https://www.voidsecurity.in/\">\n\t  <p>GRUB supports commands to read and write addresses of choice.  In\n\t  grub-bhyve, these commands provide a way to write to arbitrary virtual\n\t  addresses within the grub-bhyve process.  This is another way for a guest\n\t  grub2.cfg, run by the host, to eventually escalate privileges.\n\t  </p>\n\t</blockquote>\n\t<p>These vulnerabilities are mitigated by disabling the 'loadfont', 'write_dword',\n\t  'read_dword', 'inl', 'outl', and other width variants of the same functionality in\n\t  grub2-bhyve.\n\t</p>\n\t<p>There is also work in progress to sandbox the grub-bhyve utility such that\n\t  an escaped guest ends up with nobody:nobody in a Capsium sandbox.  It is not\n\t  included in 0.40_8.\n\t</p>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.voidsecurity.in/"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-12-09",
-    "entry": "2020-02-12"
-  }
+	"vid": "9d6a48a7-4dad-11ea-8a1d-7085c25400ea",
+	"topic": "grub2-bhyve -- multiple privilege escalations",
+	"affects": [
+		{
+			"name": [
+				"grub2-bhyve"
+			],
+			"range": [
+				{
+					"lt": "0.40_8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Reno Robert reports:</p>\n\t<!-- No public blog entry yet but I'm sure he'll publish one soon. -->\n\t<blockquote cite=\"https://www.voidsecurity.in/\">\n\t  <p>FreeBSD uses a two-process model for running a VM. For booting non-FreeBSD\n\t  guests, a modified grub-emu is used (grub-bhyve). Grub-bhyve executes command\n\t  from guest grub.cfg file. This is a security problem because grub was never\n\t  written to handle inputs from OS as untrusted. In the current design, grub\n\t  and guest OS works across trust boundaries. This exposes a grub to untrusted\n\t  inputs from guest.\n\t  </p>\n\t  <p>grub-bhyve (emu) is built without SDL graphics support which reduces lot of\n\t  gfx attack surface, however font loading code is still accessible. Guest can\n\t  provide arbitrary font file, which is parsed by grub-bhyve running as root.\n\t  </p>\n\t  <p>In grub-core/font/font.c, <code>read_section_as_string()</code> allocates\n\t  <code>section-&gt;length + 1</code> bytes of memory.  However, untrusted\n\t  <code>section-&gt;length</code> is an unsigned 32-bit number, and the result can\n\t  overflow to <code>malloc(0)</code>.  This can result in a controlled buffer\n\t  overflow via the 'loadfont' command in a guest VM grub2.cfg, eventually leading\n\t  to privilege escalation from guest to host.\n\t  </p>\n\t</blockquote>\n\t<p>Reno Robert also reports:</p>\n\t<!-- No public blog entry yet but I'm sure he'll publish one soon. -->\n\t<blockquote cite=\"https://www.voidsecurity.in/\">\n\t  <p>GRUB supports commands to read and write addresses of choice.  In\n\t  grub-bhyve, these commands provide a way to write to arbitrary virtual\n\t  addresses within the grub-bhyve process.  This is another way for a guest\n\t  grub2.cfg, run by the host, to eventually escalate privileges.\n\t  </p>\n\t</blockquote>\n\t<p>These vulnerabilities are mitigated by disabling the 'loadfont', 'write_dword',\n\t  'read_dword', 'inl', 'outl', and other width variants of the same functionality in\n\t  grub2-bhyve.\n\t</p>\n\t<p>There is also work in progress to sandbox the grub-bhyve utility such that\n\t  an escaped guest ends up with nobody:nobody in a Capsium sandbox.  It is not\n\t  included in 0.40_8.\n\t</p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.voidsecurity.in/"
+		]
+	},
+	"dates": {
+		"discovery": "2019-12-09",
+		"entry": "2020-02-12"
+	}
 }

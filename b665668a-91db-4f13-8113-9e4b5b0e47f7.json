@@ -1,41 +1,41 @@
 {
-  "vid": "b665668a-91db-4f13-8113-9e4b5b0e47f7",
-  "topic": "jenkins -- remote code execution via unsafe deserialization",
-  "affects": [
-    {
-      "name": [
-        "jenkins"
-      ],
-      "range": [
-        {
-          "lt": "1.638"
-        }
-      ]
-    },
-    {
-      "name": [
-        "jenkins-lts"
-      ],
-      "range": [
-        {
-          "lt": "1.625.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jenkins Developers report:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-11-11\">\n\t  <p>Unsafe deserialization allows unauthenticated remote attackers to\n\t    run arbitrary code on the Jenkins master.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-11-11",
-      "https://jenkins-ci.org/content/mitigating-unauthenticated-remote-code-execution-0-day-jenkins-cli",
-      "http://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#thefix"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-11-06",
-    "entry": "2015-11-11"
-  }
+	"vid": "b665668a-91db-4f13-8113-9e4b5b0e47f7",
+	"topic": "jenkins -- remote code execution via unsafe deserialization",
+	"affects": [
+		{
+			"name": [
+				"jenkins"
+			],
+			"range": [
+				{
+					"lt": "1.638"
+				}
+			]
+		},
+		{
+			"name": [
+				"jenkins-lts"
+			],
+			"range": [
+				{
+					"lt": "1.625.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jenkins Developers report:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-11-11\">\n\t  <p>Unsafe deserialization allows unauthenticated remote attackers to\n\t    run arbitrary code on the Jenkins master.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-11-11",
+			"https://jenkins-ci.org/content/mitigating-unauthenticated-remote-code-execution-0-day-jenkins-cli",
+			"http://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#thefix"
+		]
+	},
+	"dates": {
+		"discovery": "2015-11-06",
+		"entry": "2015-11-11"
+	}
 }

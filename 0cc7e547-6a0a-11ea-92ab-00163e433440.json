@@ -1,37 +1,37 @@
 {
-  "vid": "0cc7e547-6a0a-11ea-92ab-00163e433440",
-  "topic": "FreeBSD -- Incorrect user-controlled pointer use in epair",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.1_3",
-          "ge": "12.1"
-        },
-        {
-          "lt": "11.3_7",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Incorrect use of a potentially user-controlled pointer in the kernel\n\tallowed vnet jailed users to panic the system and potentially execute\n\taribitrary code in the kernel.</p>\n\t<h1>Impact:</h1>\n\t<p>Users with root level access (or the PRIV_NET_IFCREATE privilege)\n\tcan panic the system, or potentially escape the jail or execute\n\tarbitrary code with kernel priviliges.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2020-7452"
-    ],
-    "freebsd_sa": [
-      "SA-20:07.epair"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-03-19",
-    "entry": "2020-03-19"
-  }
+	"vid": "0cc7e547-6a0a-11ea-92ab-00163e433440",
+	"topic": "FreeBSD -- Incorrect user-controlled pointer use in epair",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.1_3",
+					"ge": "12.1"
+				},
+				{
+					"lt": "11.3_7",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Incorrect use of a potentially user-controlled pointer in the kernel\n\tallowed vnet jailed users to panic the system and potentially execute\n\taribitrary code in the kernel.</p>\n\t<h1>Impact:</h1>\n\t<p>Users with root level access (or the PRIV_NET_IFCREATE privilege)\n\tcan panic the system, or potentially escape the jail or execute\n\tarbitrary code with kernel priviliges.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2020-7452"
+		],
+		"freebsd_sa": [
+			"SA-20:07.epair"
+		]
+	},
+	"dates": {
+		"discovery": "2020-03-19",
+		"entry": "2020-03-19"
+	}
 }

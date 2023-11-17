@@ -1,41 +1,41 @@
 {
-  "vid": "0844632f-5e78-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- integer overflow in IP_MSFILTER",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "9.1_6",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_3",
-          "ge": "8.4"
-        },
-        {
-          "lt": "8.3_10",
-          "ge": "8.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem Description:</p>\n\t<p>An integer overflow in computing the size of a temporary\n\t  buffer can result in a buffer which is too small for the requested\n\t  operation.</p>\n\t<p>Impact:</p>\n\t<p>An unprivileged process can read or write pages of memory\n\t  which belong to the kernel.  These may lead to exposure of sensitive\n\t  information or allow privilege escalation.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2013-3077"
-    ],
-    "freebsd_sa": [
-      "SA-13:09.ip_multicast"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-08-22",
-    "entry": "2016-08-09"
-  }
+	"vid": "0844632f-5e78-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- integer overflow in IP_MSFILTER",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "9.1_6",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_3",
+					"ge": "8.4"
+				},
+				{
+					"lt": "8.3_10",
+					"ge": "8.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem Description:</p>\n\t<p>An integer overflow in computing the size of a temporary\n\t  buffer can result in a buffer which is too small for the requested\n\t  operation.</p>\n\t<p>Impact:</p>\n\t<p>An unprivileged process can read or write pages of memory\n\t  which belong to the kernel.  These may lead to exposure of sensitive\n\t  information or allow privilege escalation.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2013-3077"
+		],
+		"freebsd_sa": [
+			"SA-13:09.ip_multicast"
+		]
+	},
+	"dates": {
+		"discovery": "2013-08-22",
+		"entry": "2016-08-09"
+	}
 }

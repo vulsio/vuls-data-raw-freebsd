@@ -1,33 +1,33 @@
 {
-  "vid": "74ded00e-6007-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Buffer overflow in stdio",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.1_1",
-          "ge": "10.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A programming error in the standard I/O library's\n\t__sflush() function could erroneously adjust the buffered\n\tstream's internal state even when no write actually occurred\n\tin the case when write(2) system call returns an error.</p>\n\t<h1>Impact:</h1>\n\t<p>The accounting mismatch would accumulate, if the caller\n\tdoes not check for stream status and will eventually lead\n\tto a heap buffer overflow.</p>\n\t<p>Such overflows may lead to data corruption or the execution\n\tof arbitrary code at the privilege level of the calling\n\tprogram.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-8611"
-    ],
-    "freebsd_sa": [
-      "SA-14:27.stdio"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-12-10",
-    "entry": "2016-08-11"
-  }
+	"vid": "74ded00e-6007-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Buffer overflow in stdio",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.1_1",
+					"ge": "10.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A programming error in the standard I/O library's\n\t__sflush() function could erroneously adjust the buffered\n\tstream's internal state even when no write actually occurred\n\tin the case when write(2) system call returns an error.</p>\n\t<h1>Impact:</h1>\n\t<p>The accounting mismatch would accumulate, if the caller\n\tdoes not check for stream status and will eventually lead\n\tto a heap buffer overflow.</p>\n\t<p>Such overflows may lead to data corruption or the execution\n\tof arbitrary code at the privilege level of the calling\n\tprogram.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-8611"
+		],
+		"freebsd_sa": [
+			"SA-14:27.stdio"
+		]
+	},
+	"dates": {
+		"discovery": "2014-12-10",
+		"entry": "2016-08-11"
+	}
 }

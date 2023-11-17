@@ -1,32 +1,32 @@
 {
-  "vid": "7b35a77a-0151-11e7-ae1b-002590263bf5",
-  "topic": "ikiwiki -- authentication bypass vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ikiwiki"
-      ],
-      "range": [
-        {
-          "lt": "3.20170111"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ikiwiki reports:</p>\n\t<blockquote cite=\"https://ikiwiki.info/security/#index48h2\">\n\t  <p>The ikiwiki maintainers discovered further flaws similar to\n\t    CVE-2016-9646 in the passwordauth plugin's use of\n\t    CGI::FormBuilder, with a more serious impact:</p>\n\t  <p>An attacker who can log in to a site with a password can log in as\n\t    a different and potentially more privileged user.</p>\n\t  <p>An attacker who can create a new account can set arbitrary fields\n\t    in the user database for that account</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://ikiwiki.info/security/#index48h2"
-    ],
-    "cvename": [
-      "CVE-2017-0356"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-01-11",
-    "entry": "2017-03-05"
-  }
+	"vid": "7b35a77a-0151-11e7-ae1b-002590263bf5",
+	"topic": "ikiwiki -- authentication bypass vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ikiwiki"
+			],
+			"range": [
+				{
+					"lt": "3.20170111"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ikiwiki reports:</p>\n\t<blockquote cite=\"https://ikiwiki.info/security/#index48h2\">\n\t  <p>The ikiwiki maintainers discovered further flaws similar to\n\t    CVE-2016-9646 in the passwordauth plugin's use of\n\t    CGI::FormBuilder, with a more serious impact:</p>\n\t  <p>An attacker who can log in to a site with a password can log in as\n\t    a different and potentially more privileged user.</p>\n\t  <p>An attacker who can create a new account can set arbitrary fields\n\t    in the user database for that account</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://ikiwiki.info/security/#index48h2"
+		],
+		"cvename": [
+			"CVE-2017-0356"
+		]
+	},
+	"dates": {
+		"discovery": "2017-01-11",
+		"entry": "2017-03-05"
+	}
 }

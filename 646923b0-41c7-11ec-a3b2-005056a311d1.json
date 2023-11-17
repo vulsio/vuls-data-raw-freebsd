@@ -1,66 +1,66 @@
 {
-  "vid": "646923b0-41c7-11ec-a3b2-005056a311d1",
-  "topic": "samba -- Multiple Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "samba413"
-      ],
-      "range": [
-        {
-          "lt": "4.13.14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba414"
-      ],
-      "range": [
-        {
-          "lt": "4.14.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba415"
-      ],
-      "range": [
-        {
-          "lt": "4.15.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/history/security.html\">\n\t  <ul>\n\t  <li>CVE-2020-25717: A user in an AD Domain could become root on domain\n\t      members.</li>\n\t  <li>CVE-2020-25718: Samba AD DC did not correctly sandbox Kerberos\n\t      tickets issued by an RODC.</li>\n\t  <li>CVE-2020-25719: Samba AD DC did not always rely on the SID and PAC\n\t      in Kerberos tickets.</li>\n\t  <li>CVE-2020-25721: Kerberos acceptors need easy access to stable\n\t      AD identifiers (eg objectSid).</li>\n\t  <li>CVE-2020-25722: Samba AD DC did not do sufficient access and\n\t      conformance checking of data stored.</li>\n\t  <li>CVE-2016-2124: SMB1 client connections can be downgraded to plaintext\n\t      authentication.</li>\n\t  <li>CVE-2021-3738: Use after free in Samba AD DC RPC server.</li>\n\t  <li>CVE-2021-23192: Subsequent DCE/RPC fragment injection vulnerability.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.samba.org/samba/security/CVE-2020-25717.html",
-      "https://www.samba.org/samba/security/CVE-2020-25718.html",
-      "https://www.samba.org/samba/security/CVE-2020-25719.html",
-      "https://www.samba.org/samba/security/CVE-2020-25721.html",
-      "https://www.samba.org/samba/security/CVE-2020-25722.html",
-      "https://www.samba.org/samba/security/CVE-2016-2124.html",
-      "https://www.samba.org/samba/security/CVE-2021-3738.html",
-      "https://www.samba.org/samba/security/CVE-2021-23192.html"
-    ],
-    "cvename": [
-      "CVE-2020-25717",
-      "CVE-2020-25718",
-      "CVE-2020-25719",
-      "CVE-2020-25721",
-      "CVE-2020-25722",
-      "CVE-2016-2124",
-      "CVE-2021-3738",
-      "CVE-2021-23192"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-11-10",
-    "entry": "2021-11-10"
-  }
+	"vid": "646923b0-41c7-11ec-a3b2-005056a311d1",
+	"topic": "samba -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"samba413"
+			],
+			"range": [
+				{
+					"lt": "4.13.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba414"
+			],
+			"range": [
+				{
+					"lt": "4.14.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba415"
+			],
+			"range": [
+				{
+					"lt": "4.15.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/history/security.html\">\n\t  <ul>\n\t  <li>CVE-2020-25717: A user in an AD Domain could become root on domain\n\t      members.</li>\n\t  <li>CVE-2020-25718: Samba AD DC did not correctly sandbox Kerberos\n\t      tickets issued by an RODC.</li>\n\t  <li>CVE-2020-25719: Samba AD DC did not always rely on the SID and PAC\n\t      in Kerberos tickets.</li>\n\t  <li>CVE-2020-25721: Kerberos acceptors need easy access to stable\n\t      AD identifiers (eg objectSid).</li>\n\t  <li>CVE-2020-25722: Samba AD DC did not do sufficient access and\n\t      conformance checking of data stored.</li>\n\t  <li>CVE-2016-2124: SMB1 client connections can be downgraded to plaintext\n\t      authentication.</li>\n\t  <li>CVE-2021-3738: Use after free in Samba AD DC RPC server.</li>\n\t  <li>CVE-2021-23192: Subsequent DCE/RPC fragment injection vulnerability.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.samba.org/samba/security/CVE-2020-25717.html",
+			"https://www.samba.org/samba/security/CVE-2020-25718.html",
+			"https://www.samba.org/samba/security/CVE-2020-25719.html",
+			"https://www.samba.org/samba/security/CVE-2020-25721.html",
+			"https://www.samba.org/samba/security/CVE-2020-25722.html",
+			"https://www.samba.org/samba/security/CVE-2016-2124.html",
+			"https://www.samba.org/samba/security/CVE-2021-3738.html",
+			"https://www.samba.org/samba/security/CVE-2021-23192.html"
+		],
+		"cvename": [
+			"CVE-2020-25717",
+			"CVE-2020-25718",
+			"CVE-2020-25719",
+			"CVE-2020-25721",
+			"CVE-2020-25722",
+			"CVE-2016-2124",
+			"CVE-2021-3738",
+			"CVE-2021-23192"
+		]
+	},
+	"dates": {
+		"discovery": "2021-11-10",
+		"entry": "2021-11-10"
+	}
 }

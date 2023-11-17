@@ -1,32 +1,32 @@
 {
-  "vid": "cf0fb426-3f96-11d8-b096-0020ed76ef5a",
-  "topic": "ProFTPD ASCII translation bug resulting in remote root compromise",
-  "affects": [
-    {
-      "name": [
-        "proftpd"
-      ],
-      "range": [
-        {
-          "lt": "1.2.8_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A buffer overflow exists in the ProFTPD code that handles\n\t  translation of newline characters during ASCII-mode file\n\t  uploads.  An attacker may exploit this buffer overflow by\n\t  uploading a specially crafted file, resulting in code\n\t  execution and ultimately a remote root compromise.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xforce.iss.net/xforce/alerts/id/154"
-    ],
-    "cvename": [
-      "CVE-2003-0831"
-    ]
-  },
-  "dates": {
-    "discovery": "2003-09-23",
-    "entry": "2004-01-05"
-  }
+	"vid": "cf0fb426-3f96-11d8-b096-0020ed76ef5a",
+	"topic": "ProFTPD ASCII translation bug resulting in remote root compromise",
+	"affects": [
+		{
+			"name": [
+				"proftpd"
+			],
+			"range": [
+				{
+					"lt": "1.2.8_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A buffer overflow exists in the ProFTPD code that handles\n\t  translation of newline characters during ASCII-mode file\n\t  uploads.  An attacker may exploit this buffer overflow by\n\t  uploading a specially crafted file, resulting in code\n\t  execution and ultimately a remote root compromise.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xforce.iss.net/xforce/alerts/id/154"
+		],
+		"cvename": [
+			"CVE-2003-0831"
+		]
+	},
+	"dates": {
+		"discovery": "2003-09-23",
+		"entry": "2004-01-05"
+	}
 }

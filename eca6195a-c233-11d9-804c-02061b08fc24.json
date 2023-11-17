@@ -1,123 +1,123 @@
 {
-  "vid": "eca6195a-c233-11d9-804c-02061b08fc24",
-  "topic": "mozilla -- code execution via javascript: IconURL vulnerability",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.4,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.8,2"
-        },
-        {
-          "ge": "1.8.*,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.8"
-        },
-        {
-          "ge": "1.8.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "de-netscape7",
-        "fr-linux-netscape",
-        "fr-netscape7",
-        "ja-linux-netscape",
-        "ja-netscape7",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk1",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-42.html\">\n\t  <p>Two vulnerabilities have been discovered in Firefox,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks and compromise a user's\n\t    system.</p>\n\t  <ol>\n\t    <li>The problem is that \"IFRAME\" JavaScript URLs are not\n\t      properly protected from being executed in context of\n\t      another URL in the history list. This can be exploited\n\t      to execute arbitrary HTML and script code in a user's\n\t      browser session in context of an arbitrary site.</li>\n\t    <li>Input passed to the \"IconURL\" parameter in\n\t      \"InstallTrigger.install()\" is not properly verified\n\t      before being used. This can be exploited to execute\n\t      arbitrary JavaScript code with escalated privileges via\n\t      a specially crafted JavaScript URL.</li>\n\t  </ol>\n\t  <p>Successful exploitation requires that the site is allowed\n\t    to install software (default sites are\n\t    \"update.mozilla.org\" and \"addons.mozilla.org\").</p>\n\t  <p>A combination of vulnerability 1 and 2 can be exploited\n\t    to execute arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/security/announce/mfsa2005-42.html"
-    ],
-    "cvename": [
-      "CVE-2005-1476",
-      "CVE-2005-1477"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-08",
-    "entry": "2005-05-11"
-  }
+	"vid": "eca6195a-c233-11d9-804c-02061b08fc24",
+	"topic": "mozilla -- code execution via javascript: IconURL vulnerability",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.8,2"
+				},
+				{
+					"ge": "1.8.*,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.8"
+				},
+				{
+					"ge": "1.8.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"de-netscape7",
+				"fr-linux-netscape",
+				"fr-netscape7",
+				"ja-linux-netscape",
+				"ja-netscape7",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk1",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-42.html\">\n\t  <p>Two vulnerabilities have been discovered in Firefox,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks and compromise a user's\n\t    system.</p>\n\t  <ol>\n\t    <li>The problem is that \"IFRAME\" JavaScript URLs are not\n\t      properly protected from being executed in context of\n\t      another URL in the history list. This can be exploited\n\t      to execute arbitrary HTML and script code in a user's\n\t      browser session in context of an arbitrary site.</li>\n\t    <li>Input passed to the \"IconURL\" parameter in\n\t      \"InstallTrigger.install()\" is not properly verified\n\t      before being used. This can be exploited to execute\n\t      arbitrary JavaScript code with escalated privileges via\n\t      a specially crafted JavaScript URL.</li>\n\t  </ol>\n\t  <p>Successful exploitation requires that the site is allowed\n\t    to install software (default sites are\n\t    \"update.mozilla.org\" and \"addons.mozilla.org\").</p>\n\t  <p>A combination of vulnerability 1 and 2 can be exploited\n\t    to execute arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/security/announce/mfsa2005-42.html"
+		],
+		"cvename": [
+			"CVE-2005-1476",
+			"CVE-2005-1477"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-08",
+		"entry": "2005-05-11"
+	}
 }

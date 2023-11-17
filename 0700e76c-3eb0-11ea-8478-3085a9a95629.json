@@ -1,43 +1,43 @@
 {
-  "vid": "0700e76c-3eb0-11ea-8478-3085a9a95629",
-  "topic": "Pillow -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py27-pillow",
-        "py35-pillow",
-        "py36-pillow",
-        "py37-pillow",
-        "py38-pillow"
-      ],
-      "range": [
-        {
-          "lt": "6.2.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Pillow developers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.io/en/stable/releasenotes/6.2.2.html\">\n\t  <p>\n\t    This release addresses several security problems, as well as\n\t    addressing CVE-2019-19911.\n\t  </p><p>\n\t    CVE-2019-19911 is regarding FPX images. If an image reports that it\n\t    has a large number of bands, a large amount of resources will be\n\t    used when trying to process the image. This is fixed by limiting the\n\t    number of bands to those usable by Pillow.\n\t  </p><p>\n\t    Buffer overruns were found when processing an SGI, PCX or FLI image.\n\t    Checks have been added to prevent this.\n\t  </p><p>\n\t    Overflow checks have been added when calculating the size of a\n\t    memory block to be reallocated in the processing of a TIFF image.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://pillow.readthedocs.io/en/stable/releasenotes/6.2.2.html"
-    ],
-    "cvename": [
-      "CVE-2019-19911",
-      "CVE-2020-5310",
-      "CVE-2020-5311",
-      "CVE-2020-5312",
-      "CVE-2020-5313"
-    ],
-    "freebsd_pr": [
-      "ports/243336"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-12-19",
-    "entry": "2020-01-24"
-  }
+	"vid": "0700e76c-3eb0-11ea-8478-3085a9a95629",
+	"topic": "Pillow -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py27-pillow",
+				"py35-pillow",
+				"py36-pillow",
+				"py37-pillow",
+				"py38-pillow"
+			],
+			"range": [
+				{
+					"lt": "6.2.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Pillow developers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.io/en/stable/releasenotes/6.2.2.html\">\n\t  <p>\n\t    This release addresses several security problems, as well as\n\t    addressing CVE-2019-19911.\n\t  </p><p>\n\t    CVE-2019-19911 is regarding FPX images. If an image reports that it\n\t    has a large number of bands, a large amount of resources will be\n\t    used when trying to process the image. This is fixed by limiting the\n\t    number of bands to those usable by Pillow.\n\t  </p><p>\n\t    Buffer overruns were found when processing an SGI, PCX or FLI image.\n\t    Checks have been added to prevent this.\n\t  </p><p>\n\t    Overflow checks have been added when calculating the size of a\n\t    memory block to be reallocated in the processing of a TIFF image.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://pillow.readthedocs.io/en/stable/releasenotes/6.2.2.html"
+		],
+		"cvename": [
+			"CVE-2019-19911",
+			"CVE-2020-5310",
+			"CVE-2020-5311",
+			"CVE-2020-5312",
+			"CVE-2020-5313"
+		],
+		"freebsd_pr": [
+			"ports/243336"
+		]
+	},
+	"dates": {
+		"discovery": "2019-12-19",
+		"entry": "2020-01-24"
+	}
 }

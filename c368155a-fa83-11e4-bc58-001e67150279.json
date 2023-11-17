@@ -1,35 +1,35 @@
 {
-  "vid": "c368155a-fa83-11e4-bc58-001e67150279",
-  "topic": "rubygem-redcarpet -- XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rubygem-redcarpet"
-      ],
-      "range": [
-        {
-          "lt": "3.2.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Daniel LeCheminant reports:</p>\n\t<blockquote cite=\"https://hackerone.com/reports/46916\">\n\t  <p>When markdown is being presented as HTML, there seems to be a\n\t    strange interaction between _ and @ that lets an attacker insert\n\t    malicious tags.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://hackerone.com/reports/46916",
-      "http://danlec.com/blog/bug-in-sundown-and-redcarpet"
-    ],
-    "mlist": [
-      {
-        "text": "http://openwall.com/lists/oss-security/2015/04/07/11"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2015-04-07",
-    "entry": "2015-05-14"
-  }
+	"vid": "c368155a-fa83-11e4-bc58-001e67150279",
+	"topic": "rubygem-redcarpet -- XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rubygem-redcarpet"
+			],
+			"range": [
+				{
+					"lt": "3.2.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Daniel LeCheminant reports:</p>\n\t<blockquote cite=\"https://hackerone.com/reports/46916\">\n\t  <p>When markdown is being presented as HTML, there seems to be a\n\t    strange interaction between _ and @ that lets an attacker insert\n\t    malicious tags.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://hackerone.com/reports/46916",
+			"http://danlec.com/blog/bug-in-sundown-and-redcarpet"
+		],
+		"mlist": [
+			{
+				"text": "http://openwall.com/lists/oss-security/2015/04/07/11"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2015-04-07",
+		"entry": "2015-05-14"
+	}
 }

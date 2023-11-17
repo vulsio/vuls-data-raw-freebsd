@@ -1,36 +1,36 @@
 {
-  "vid": "00ec1be1-22bb-11e6-9ead-6805ca0b3d42",
-  "topic": "phpmyadmin -- XSS and sensitive data leakage",
-  "affects": [
-    {
-      "name": [
-        "phpmyadmin"
-      ],
-      "range": [
-        {
-          "lt": "4.6.2",
-          "ge": "4.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpmyadmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-14/\">\n\t  <h2>Description</h2>\n\t  <p>Because user SQL queries are part of the URL, sensitive\n\t    information made as part of a user query can be exposed by\n\t    clicking on external links to attackers monitoring user GET\n\t    query parameters or included in the webserver logs.</p>\n\t  <h2>Severity</h2>\n\t  <p>We consider this to be non-critical.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-16/\">\n\t  <h2>Description</h2>\n\t  <p>A specially crafted attack could allow for special HTML\n\t    characters to be passed as URL encoded values and displayed\n\t    back as special characters in the page.</p>\n\t  <h2>Severity</h2>\n\t  <p>We consider this to be non-critical.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2016-14/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-16/"
-    ],
-    "cvename": [
-      "CVE-2016-5097",
-      "CVE-2016-5099"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-25",
-    "entry": "2016-05-25",
-    "modified": "2016-05-26"
-  }
+	"vid": "00ec1be1-22bb-11e6-9ead-6805ca0b3d42",
+	"topic": "phpmyadmin -- XSS and sensitive data leakage",
+	"affects": [
+		{
+			"name": [
+				"phpmyadmin"
+			],
+			"range": [
+				{
+					"lt": "4.6.2",
+					"ge": "4.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpmyadmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-14/\">\n\t  <h2>Description</h2>\n\t  <p>Because user SQL queries are part of the URL, sensitive\n\t    information made as part of a user query can be exposed by\n\t    clicking on external links to attackers monitoring user GET\n\t    query parameters or included in the webserver logs.</p>\n\t  <h2>Severity</h2>\n\t  <p>We consider this to be non-critical.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-16/\">\n\t  <h2>Description</h2>\n\t  <p>A specially crafted attack could allow for special HTML\n\t    characters to be passed as URL encoded values and displayed\n\t    back as special characters in the page.</p>\n\t  <h2>Severity</h2>\n\t  <p>We consider this to be non-critical.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2016-14/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-16/"
+		],
+		"cvename": [
+			"CVE-2016-5097",
+			"CVE-2016-5099"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-25",
+		"entry": "2016-05-25",
+		"modified": "2016-05-26"
+	}
 }

@@ -1,44 +1,44 @@
 {
-  "vid": "c599f95c-8ee5-11e7-8be8-001999f8d30b",
-  "topic": "asterisk -- Unauthorized data disclosure and shell access command injection in app_minivm",
-  "affects": [
-    {
-      "name": [
-        "asterisk11"
-      ],
-      "range": [
-        {
-          "lt": "11.25.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.17.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>AST-2017-005 - A change was made to the strict RTP\n\t  support in the RTP stack to better tolerate late media\n\t  when a reinvite occurs. When combined with the symmetric\n\t  RTP support this introduced an avenue where media could\n\t  be hijacked. Instead of only learning a new address when\n\t  expected the new code allowed a new source address to be\n\t  learned at all times.</p>\n\t  <p>AST-2017-006 - The app_minivm module has an \"externnotify\"\n\t  program configuration option that is executed by the\n\t  MinivmNotify dialplan application. The application uses\n\t  the caller-id name and number as part of a built string\n\t  passed to the OS shell for interpretation and execution.\n\t  Since the caller-id name and number can come from an\n\t  untrusted source, a crafted caller-id name or number\n\t  allows an arbitrary shell command injection.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://downloads.asterisk.org/pub/security/AST-2017-005.html",
-      "https://downloads.asterisk.org/pub/security/AST-2017-006.html"
-    ],
-    "cvename": [
-      "CVE-2017-14099",
-      "CVE-2017-14100"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-08-31",
-    "entry": "2017-09-01"
-  }
+	"vid": "c599f95c-8ee5-11e7-8be8-001999f8d30b",
+	"topic": "asterisk -- Unauthorized data disclosure and shell access command injection in app_minivm",
+	"affects": [
+		{
+			"name": [
+				"asterisk11"
+			],
+			"range": [
+				{
+					"lt": "11.25.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.17.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>AST-2017-005 - A change was made to the strict RTP\n\t  support in the RTP stack to better tolerate late media\n\t  when a reinvite occurs. When combined with the symmetric\n\t  RTP support this introduced an avenue where media could\n\t  be hijacked. Instead of only learning a new address when\n\t  expected the new code allowed a new source address to be\n\t  learned at all times.</p>\n\t  <p>AST-2017-006 - The app_minivm module has an \"externnotify\"\n\t  program configuration option that is executed by the\n\t  MinivmNotify dialplan application. The application uses\n\t  the caller-id name and number as part of a built string\n\t  passed to the OS shell for interpretation and execution.\n\t  Since the caller-id name and number can come from an\n\t  untrusted source, a crafted caller-id name or number\n\t  allows an arbitrary shell command injection.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://downloads.asterisk.org/pub/security/AST-2017-005.html",
+			"https://downloads.asterisk.org/pub/security/AST-2017-006.html"
+		],
+		"cvename": [
+			"CVE-2017-14099",
+			"CVE-2017-14100"
+		]
+	},
+	"dates": {
+		"discovery": "2017-08-31",
+		"entry": "2017-09-01"
+	}
 }

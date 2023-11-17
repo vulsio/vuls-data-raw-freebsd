@@ -1,60 +1,60 @@
 {
-  "vid": "3eb2c100-738b-11e0-89f4-001e90d46635",
-  "topic": "Postfix -- memory corruption vulnerability",
-  "affects": [
-    {
-      "name": [
-        "postfix",
-        "postfix-base"
-      ],
-      "range": [
-        {
-          "lt": "2.8.3,1",
-          "ge": "2.8.*,1"
-        },
-        {
-          "lt": "2.7.4,1",
-          "ge": "2.7.*,1"
-        },
-        {
-          "lt": "2.6.10,1",
-          "ge": "2.6.*,1"
-        },
-        {
-          "lt": "2.5.13,2",
-          "ge": "2.5.*,2"
-        },
-        {
-          "le": "2.4.16,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postfix-current",
-        "postfix-current-base"
-      ],
-      "range": [
-        {
-          "lt": "2.9.20110501,4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Postfix SMTP server has a memory corruption error, when the\n\t  Cyrus SASL library is used with authentication mechanisms other\n\t  than PLAIN and LOGIN (ANONYMOUS is not affected, but should not\n\t  be used for other reasons).  This memory corruption is known to\n\t  result in a program crash (SIGSEV).</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.postfix.org/CVE-2011-1720.html"
-    ],
-    "cvename": [
-      "CVE-2011-1720"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-05-09",
-    "entry": "2011-05-09"
-  }
+	"vid": "3eb2c100-738b-11e0-89f4-001e90d46635",
+	"topic": "Postfix -- memory corruption vulnerability",
+	"affects": [
+		{
+			"name": [
+				"postfix",
+				"postfix-base"
+			],
+			"range": [
+				{
+					"lt": "2.8.3,1",
+					"ge": "2.8.*,1"
+				},
+				{
+					"lt": "2.7.4,1",
+					"ge": "2.7.*,1"
+				},
+				{
+					"lt": "2.6.10,1",
+					"ge": "2.6.*,1"
+				},
+				{
+					"lt": "2.5.13,2",
+					"ge": "2.5.*,2"
+				},
+				{
+					"le": "2.4.16,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"postfix-current",
+				"postfix-current-base"
+			],
+			"range": [
+				{
+					"lt": "2.9.20110501,4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Postfix SMTP server has a memory corruption error, when the\n\t  Cyrus SASL library is used with authentication mechanisms other\n\t  than PLAIN and LOGIN (ANONYMOUS is not affected, but should not\n\t  be used for other reasons).  This memory corruption is known to\n\t  result in a program crash (SIGSEV).</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.postfix.org/CVE-2011-1720.html"
+		],
+		"cvename": [
+			"CVE-2011-1720"
+		]
+	},
+	"dates": {
+		"discovery": "2011-05-09",
+		"entry": "2011-05-09"
+	}
 }

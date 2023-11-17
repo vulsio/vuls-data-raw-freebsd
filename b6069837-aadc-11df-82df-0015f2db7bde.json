@@ -1,33 +1,33 @@
 {
-  "vid": "b6069837-aadc-11df-82df-0015f2db7bde",
-  "topic": "OpenTTD -- Denial of service (server) via infinite loop",
-  "affects": [
-    {
-      "name": [
-        "openttd"
-      ],
-      "range": [
-        {
-          "lt": "1.0.3",
-          "ge": "1.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenTTD Team reports:</p>\n\t<blockquote cite=\"http://security.openttd.org/en/CVE-2010-2534\">\n\t  <p>When multiple commands are queued (at the server) for execution\n\t    in the next game tick and an client joins the server can get into\n\t    an infinite loop. With the default settings triggering this bug\n\t    is difficult (if not impossible), however the larger value of\n\t    the \"frame_freq\" setting is easier it is to trigger the bug.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://security.openttd.org/en/CVE-2010-2534"
-    ],
-    "cvename": [
-      "CVE-2010-2534"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-06-27",
-    "entry": "2010-08-22"
-  }
+	"vid": "b6069837-aadc-11df-82df-0015f2db7bde",
+	"topic": "OpenTTD -- Denial of service (server) via infinite loop",
+	"affects": [
+		{
+			"name": [
+				"openttd"
+			],
+			"range": [
+				{
+					"lt": "1.0.3",
+					"ge": "1.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenTTD Team reports:</p>\n\t<blockquote cite=\"http://security.openttd.org/en/CVE-2010-2534\">\n\t  <p>When multiple commands are queued (at the server) for execution\n\t    in the next game tick and an client joins the server can get into\n\t    an infinite loop. With the default settings triggering this bug\n\t    is difficult (if not impossible), however the larger value of\n\t    the \"frame_freq\" setting is easier it is to trigger the bug.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://security.openttd.org/en/CVE-2010-2534"
+		],
+		"cvename": [
+			"CVE-2010-2534"
+		]
+	},
+	"dates": {
+		"discovery": "2010-06-27",
+		"entry": "2010-08-22"
+	}
 }

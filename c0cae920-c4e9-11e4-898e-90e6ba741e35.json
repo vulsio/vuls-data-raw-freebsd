@@ -1,33 +1,33 @@
 {
-  "vid": "c0cae920-c4e9-11e4-898e-90e6ba741e35",
-  "topic": "mono -- TLS bugs",
-  "affects": [
-    {
-      "name": [
-        "mono"
-      ],
-      "range": [
-        {
-          "lt": "3.10.1"
-        },
-        {
-          "lt": "3.12.1",
-          "ge": "3.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mono project reports:</p>\n\t<blockquote cite=\"http://www.mono-project.com/docs/about-mono/vulnerabilities/#tls-bugs\">\n\t  <p>Mono’s implementation of the SSL/TLS stack failed to check the order of the handshake messages. Which would allow various attacks on the protocol to succeed. Details of this vulnerability are discussed in <a href=\"https://www.smacktls.com/#skip\">SKIP-TLS post</a>.</p>\n\t  <p>Mono’s implementation of SSL/TLS also contained support for the weak EXPORT cyphers and was susceptible to the <a href=\"https://www.smacktls.com/#freak\">FREAK</a> attack.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mono-project.com/docs/about-mono/vulnerabilities/#tls-bugs"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-03-06",
-    "entry": "2015-03-07"
-  }
+	"vid": "c0cae920-c4e9-11e4-898e-90e6ba741e35",
+	"topic": "mono -- TLS bugs",
+	"affects": [
+		{
+			"name": [
+				"mono"
+			],
+			"range": [
+				{
+					"lt": "3.10.1"
+				},
+				{
+					"lt": "3.12.1",
+					"ge": "3.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mono project reports:</p>\n\t<blockquote cite=\"http://www.mono-project.com/docs/about-mono/vulnerabilities/#tls-bugs\">\n\t  <p>Mono’s implementation of the SSL/TLS stack failed to check the order of the handshake messages. Which would allow various attacks on the protocol to succeed. Details of this vulnerability are discussed in <a href=\"https://www.smacktls.com/#skip\">SKIP-TLS post</a>.</p>\n\t  <p>Mono’s implementation of SSL/TLS also contained support for the weak EXPORT cyphers and was susceptible to the <a href=\"https://www.smacktls.com/#freak\">FREAK</a> attack.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mono-project.com/docs/about-mono/vulnerabilities/#tls-bugs"
+		]
+	},
+	"dates": {
+		"discovery": "2015-03-06",
+		"entry": "2015-03-07"
+	}
 }

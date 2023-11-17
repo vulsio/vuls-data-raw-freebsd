@@ -1,45 +1,45 @@
 {
-  "vid": "0a5cf6d8-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- SCTP SCTP_SS_VALUE kernel memory corruption and disclosure",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.1_5",
-          "ge": "10.1"
-        },
-        {
-          "lt": "10.0_17",
-          "ge": "10.0"
-        },
-        {
-          "lt": "9.3_9",
-          "ge": "9.3"
-        },
-        {
-          "lt": "8.4_23",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to insufficient validation of the SCTP stream ID,\n\twhich serves as an array index, a local unprivileged attacker\n\tcan read or write 16-bits of kernel memory.</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged process can read or modify 16-bits of\n\tmemory which belongs to the kernel. This may lead to\n\texposure of sensitive information or allow privilege\n\tescalation.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-8612"
-    ],
-    "freebsd_sa": [
-      "SA-15:02.kmem"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-01-27",
-    "entry": "2016-08-11"
-  }
+	"vid": "0a5cf6d8-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- SCTP SCTP_SS_VALUE kernel memory corruption and disclosure",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.1_5",
+					"ge": "10.1"
+				},
+				{
+					"lt": "10.0_17",
+					"ge": "10.0"
+				},
+				{
+					"lt": "9.3_9",
+					"ge": "9.3"
+				},
+				{
+					"lt": "8.4_23",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to insufficient validation of the SCTP stream ID,\n\twhich serves as an array index, a local unprivileged attacker\n\tcan read or write 16-bits of kernel memory.</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged process can read or modify 16-bits of\n\tmemory which belongs to the kernel. This may lead to\n\texposure of sensitive information or allow privilege\n\tescalation.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-8612"
+		],
+		"freebsd_sa": [
+			"SA-15:02.kmem"
+		]
+	},
+	"dates": {
+		"discovery": "2015-01-27",
+		"entry": "2016-08-11"
+	}
 }

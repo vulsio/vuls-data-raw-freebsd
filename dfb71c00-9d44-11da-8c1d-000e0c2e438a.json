@@ -1,38 +1,38 @@
 {
-  "vid": "dfb71c00-9d44-11da-8c1d-000e0c2e438a",
-  "topic": "FreeBSD -- Infinite loop in SACK handling",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.4_11",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.3_26",
-          "ge": "5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem description:</p>\n\t<p>When insufficient memory is available to handle an\n\t  incoming selective acknowledgement, the TCP/IP stack may\n\t  enter an infinite loop.</p>\n\t<p>Impact:</p>\n\t<p>By opening a TCP connection and sending a carefully crafted\n\t  series of packets, an attacker may be able to cause a denial\n\t  of service.</p>\n\t<p>Workaround:</p>\n\t<p>On FreeBSD 5.4, the net.inet.tcp.sack.enable sysctl can be used to\n\t  disable the use of SACK:</p>\n\t<p># sysctl net.inet.tcp.sack.enable=0</p>\n\t<p>No workaround is available for FreeBSD 5.3.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2006-0433"
-    ],
-    "freebsd_sa": [
-      "SA-06:08.sack"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-02-01",
-    "entry": "2006-02-14",
-    "modified": "2016-08-09"
-  }
+	"vid": "dfb71c00-9d44-11da-8c1d-000e0c2e438a",
+	"topic": "FreeBSD -- Infinite loop in SACK handling",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.4_11",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.3_26",
+					"ge": "5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem description:</p>\n\t<p>When insufficient memory is available to handle an\n\t  incoming selective acknowledgement, the TCP/IP stack may\n\t  enter an infinite loop.</p>\n\t<p>Impact:</p>\n\t<p>By opening a TCP connection and sending a carefully crafted\n\t  series of packets, an attacker may be able to cause a denial\n\t  of service.</p>\n\t<p>Workaround:</p>\n\t<p>On FreeBSD 5.4, the net.inet.tcp.sack.enable sysctl can be used to\n\t  disable the use of SACK:</p>\n\t<p># sysctl net.inet.tcp.sack.enable=0</p>\n\t<p>No workaround is available for FreeBSD 5.3.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2006-0433"
+		],
+		"freebsd_sa": [
+			"SA-06:08.sack"
+		]
+	},
+	"dates": {
+		"discovery": "2006-02-01",
+		"entry": "2006-02-14",
+		"modified": "2016-08-09"
+	}
 }

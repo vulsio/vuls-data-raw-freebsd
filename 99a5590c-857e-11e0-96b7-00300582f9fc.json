@@ -1,37 +1,37 @@
 {
-  "vid": "99a5590c-857e-11e0-96b7-00300582f9fc",
-  "topic": "Apache APR -- DoS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "apr1"
-      ],
-      "range": [
-        {
-          "lt": "1.4.5.1.3.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache Portable Runtime Project reports:</p>\n\t<blockquote cite=\"http://www.apache.org/dist/apr/CHANGES-APR-1.4\">\n\t  <p>A flaw was discovered in the apr_fnmatch() function in the\n\t    Apache Portable Runtime (APR) library 1.4.4 (or any backported\n\t    versions that contained the upstream fix for CVE-2011-0419).\n\t    This could cause httpd workers to enter a hung state (100% CPU\n\t    utilization).</p>\n\t  <p>apr-util 1.3.11 could cause crashes with httpd's\n\t    mod_authnz_ldap in some situations.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.apache.org/dist/apr/Announcement1.x.html",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-1928"
-    ],
-    "cvename": [
-      "CVE-2011-1928",
-      "CVE-2011-0419"
-    ],
-    "bid": [
-      "47929"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-05-19",
-    "entry": "2011-05-23"
-  }
+	"vid": "99a5590c-857e-11e0-96b7-00300582f9fc",
+	"topic": "Apache APR -- DoS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"apr1"
+			],
+			"range": [
+				{
+					"lt": "1.4.5.1.3.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache Portable Runtime Project reports:</p>\n\t<blockquote cite=\"http://www.apache.org/dist/apr/CHANGES-APR-1.4\">\n\t  <p>A flaw was discovered in the apr_fnmatch() function in the\n\t    Apache Portable Runtime (APR) library 1.4.4 (or any backported\n\t    versions that contained the upstream fix for CVE-2011-0419).\n\t    This could cause httpd workers to enter a hung state (100% CPU\n\t    utilization).</p>\n\t  <p>apr-util 1.3.11 could cause crashes with httpd's\n\t    mod_authnz_ldap in some situations.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.apache.org/dist/apr/Announcement1.x.html",
+			"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-1928"
+		],
+		"cvename": [
+			"CVE-2011-1928",
+			"CVE-2011-0419"
+		],
+		"bid": [
+			"47929"
+		]
+	},
+	"dates": {
+		"discovery": "2011-05-19",
+		"entry": "2011-05-23"
+	}
 }

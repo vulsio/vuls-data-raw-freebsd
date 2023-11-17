@@ -1,66 +1,66 @@
 {
-  "vid": "bd1ab7a5-0e01-11e5-9976-a0f3c100ae18",
-  "topic": "tidy -- heap-buffer-overflow",
-  "affects": [
-    {
-      "name": [
-        "tidy4"
-      ],
-      "range": [
-        {
-          "le": "20000804_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tidy-devel"
-      ],
-      "range": [
-        {
-          "le": "090315.c_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tidy-lib"
-      ],
-      "range": [
-        {
-          "le": "090315.c_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tidy-html5"
-      ],
-      "range": [
-        {
-          "lt": "4.9.31"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Geoff McLane reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q2/633\">\n\t  <p>tidy is affected by a write out of bounds when processing malformed html files.</p>\n\t  <p>This issue could be abused on server side applications that use php-tidy extension with user input.</p>\n\t  <p>The issue was confirmed, analyzed, and fixed by the tidy5 maintainer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/htacg/tidy-html5/issues/217",
-      "http://seclists.org/oss-sec/2015/q2/633",
-      "http://seclists.org/oss-sec/2015/q3/116"
-    ],
-    "cvename": [
-      "CVE-2015-5522",
-      "CVE-2015-5523"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-03",
-    "entry": "2015-06-08",
-    "modified": "2015-07-15"
-  }
+	"vid": "bd1ab7a5-0e01-11e5-9976-a0f3c100ae18",
+	"topic": "tidy -- heap-buffer-overflow",
+	"affects": [
+		{
+			"name": [
+				"tidy4"
+			],
+			"range": [
+				{
+					"le": "20000804_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"tidy-devel"
+			],
+			"range": [
+				{
+					"le": "090315.c_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"tidy-lib"
+			],
+			"range": [
+				{
+					"le": "090315.c_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"tidy-html5"
+			],
+			"range": [
+				{
+					"lt": "4.9.31"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Geoff McLane reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q2/633\">\n\t  <p>tidy is affected by a write out of bounds when processing malformed html files.</p>\n\t  <p>This issue could be abused on server side applications that use php-tidy extension with user input.</p>\n\t  <p>The issue was confirmed, analyzed, and fixed by the tidy5 maintainer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/htacg/tidy-html5/issues/217",
+			"http://seclists.org/oss-sec/2015/q2/633",
+			"http://seclists.org/oss-sec/2015/q3/116"
+		],
+		"cvename": [
+			"CVE-2015-5522",
+			"CVE-2015-5523"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-03",
+		"entry": "2015-06-08",
+		"modified": "2015-07-15"
+	}
 }

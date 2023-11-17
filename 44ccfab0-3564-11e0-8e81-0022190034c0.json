@@ -1,37 +1,37 @@
 {
-  "vid": "44ccfab0-3564-11e0-8e81-0022190034c0",
-  "topic": "exim -- local privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "exim",
-        "exim-ldap",
-        "exim-ldap2",
-        "exim-mysql",
-        "exim-postgresql",
-        "exim-sa-exim"
-      ],
-      "range": [
-        {
-          "lt": "4.74"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>exim.org reports:</p>\n\t<blockquote cite=\"ftp://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.74\">\n\t  <p>CVE-2011-0017 - check return value of setuid/setgid. This is a\n\t    privilege escalation vulnerability whereby the Exim run-time user\n\t    can cause root to append content of the attacker's choosing to\n\t    arbitrary files.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "ftp://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.74"
-    ],
-    "cvename": [
-      "CVE-2011-0017"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-01-31",
-    "entry": "2011-02-10"
-  }
+	"vid": "44ccfab0-3564-11e0-8e81-0022190034c0",
+	"topic": "exim -- local privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"exim",
+				"exim-ldap",
+				"exim-ldap2",
+				"exim-mysql",
+				"exim-postgresql",
+				"exim-sa-exim"
+			],
+			"range": [
+				{
+					"lt": "4.74"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>exim.org reports:</p>\n\t<blockquote cite=\"ftp://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.74\">\n\t  <p>CVE-2011-0017 - check return value of setuid/setgid. This is a\n\t    privilege escalation vulnerability whereby the Exim run-time user\n\t    can cause root to append content of the attacker's choosing to\n\t    arbitrary files.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"ftp://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.74"
+		],
+		"cvename": [
+			"CVE-2011-0017"
+		]
+	},
+	"dates": {
+		"discovery": "2011-01-31",
+		"entry": "2011-02-10"
+	}
 }

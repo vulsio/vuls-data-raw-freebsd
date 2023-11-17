@@ -1,33 +1,33 @@
 {
-  "vid": "30cb4522-b94d-11e0-8182-485d60cb5385",
-  "topic": "libsoup -- unintentionally allow access to entire local filesystem",
-  "affects": [
-    {
-      "name": [
-        "libsoup"
-      ],
-      "range": [
-        {
-          "lt": "2.32.2_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Dan Winship reports:</p>\n\t<blockquote cite=\"http://mail.gnome.org/archives/ftp-release-list/2011-July/msg00176.html\">\n\t  <p>Fixed a security hole that caused some SoupServer users to\n\t    unintentionally allow accessing the entire local filesystem when\n\t    they thought they were only providing access to a single\n\t    directory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://mail.gnome.org/archives/ftp-release-list/2011-July/msg00176.html",
-      "https://bugzilla.gnome.org/show_bug.cgi?id=653258"
-    ],
-    "cvename": [
-      "CVE-2011-2054"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-06-23",
-    "entry": "2011-07-28"
-  }
+	"vid": "30cb4522-b94d-11e0-8182-485d60cb5385",
+	"topic": "libsoup -- unintentionally allow access to entire local filesystem",
+	"affects": [
+		{
+			"name": [
+				"libsoup"
+			],
+			"range": [
+				{
+					"lt": "2.32.2_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Dan Winship reports:</p>\n\t<blockquote cite=\"http://mail.gnome.org/archives/ftp-release-list/2011-July/msg00176.html\">\n\t  <p>Fixed a security hole that caused some SoupServer users to\n\t    unintentionally allow accessing the entire local filesystem when\n\t    they thought they were only providing access to a single\n\t    directory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://mail.gnome.org/archives/ftp-release-list/2011-July/msg00176.html",
+			"https://bugzilla.gnome.org/show_bug.cgi?id=653258"
+		],
+		"cvename": [
+			"CVE-2011-2054"
+		]
+	},
+	"dates": {
+		"discovery": "2011-06-23",
+		"entry": "2011-07-28"
+	}
 }

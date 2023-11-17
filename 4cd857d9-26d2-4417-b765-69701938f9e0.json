@@ -1,32 +1,32 @@
 {
-  "vid": "4cd857d9-26d2-4417-b765-69701938f9e0",
-  "topic": "libraw -- denial of service and remote code execution",
-  "affects": [
-    {
-      "name": [
-        "libraw"
-      ],
-      "range": [
-        {
-          "lt": "0.18.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>libraw developers report:</p>\n\t<blockquote cite=\"https://github.com/LibRaw/LibRaw/issues/99\">\n\t  <p>A Stack-based Buffer Overflow was discovered in xtrans_interpolate in internal/dcraw_common.cpp in LibRaw before 0.18.3. It could allow a remote denial of service or code execution attack.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/LibRaw/LibRaw/issues/99"
-    ],
-    "cvename": [
-      "CVE-2017-14265"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-11",
-    "entry": "2017-09-26"
-  }
+	"vid": "4cd857d9-26d2-4417-b765-69701938f9e0",
+	"topic": "libraw -- denial of service and remote code execution",
+	"affects": [
+		{
+			"name": [
+				"libraw"
+			],
+			"range": [
+				{
+					"lt": "0.18.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>libraw developers report:</p>\n\t<blockquote cite=\"https://github.com/LibRaw/LibRaw/issues/99\">\n\t  <p>A Stack-based Buffer Overflow was discovered in xtrans_interpolate in internal/dcraw_common.cpp in LibRaw before 0.18.3. It could allow a remote denial of service or code execution attack.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/LibRaw/LibRaw/issues/99"
+		],
+		"cvename": [
+			"CVE-2017-14265"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-11",
+		"entry": "2017-09-26"
+	}
 }

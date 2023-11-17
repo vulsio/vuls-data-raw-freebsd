@@ -1,43 +1,43 @@
 {
-  "vid": "b7cff5a9-31cc-11e8-8f07-b499baebfeaf",
-  "topic": "OpenSSL -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2o,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.1.0h"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20180327.txt\">\n\t  <ul><li>Constructed ASN.1 types with a recursive definition could\n\t      exceed the stack (CVE-2018-0739)<br/>\n\t      Constructed ASN.1 types with a recursive definition (such as can be\n\t      found in PKCS7) could eventually exceed the stack given malicious input\n\t      with excessive recursion. This could result in a Denial Of Service\n\t      attack. There are no such structures used within SSL/TLS that come from\n\t      untrusted sources so this is considered safe.</li>\n\t    <li>rsaz_1024_mul_avx2 overflow bug on x86_64 (CVE-2017-3738)<br/>\n\t      There is an overflow bug in the AVX2 Montgomery multiplication\n\t      procedure\tused in exponentiation with 1024-bit moduli. This only\n\t      affects processors that support the AVX2 but not ADX extensions\n\t      like Intel Haswell (4th generation).</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20180327.txt"
-    ],
-    "cvename": [
-      "CVE-2018-0739",
-      "CVE-2017-3738"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-03-27",
-    "entry": "2018-03-27"
-  }
+	"vid": "b7cff5a9-31cc-11e8-8f07-b499baebfeaf",
+	"topic": "OpenSSL -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2o,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-devel"
+			],
+			"range": [
+				{
+					"lt": "1.1.0h"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20180327.txt\">\n\t  <ul><li>Constructed ASN.1 types with a recursive definition could\n\t      exceed the stack (CVE-2018-0739)<br/>\n\t      Constructed ASN.1 types with a recursive definition (such as can be\n\t      found in PKCS7) could eventually exceed the stack given malicious input\n\t      with excessive recursion. This could result in a Denial Of Service\n\t      attack. There are no such structures used within SSL/TLS that come from\n\t      untrusted sources so this is considered safe.</li>\n\t    <li>rsaz_1024_mul_avx2 overflow bug on x86_64 (CVE-2017-3738)<br/>\n\t      There is an overflow bug in the AVX2 Montgomery multiplication\n\t      procedure\tused in exponentiation with 1024-bit moduli. This only\n\t      affects processors that support the AVX2 but not ADX extensions\n\t      like Intel Haswell (4th generation).</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20180327.txt"
+		],
+		"cvename": [
+			"CVE-2018-0739",
+			"CVE-2017-3738"
+		]
+	},
+	"dates": {
+		"discovery": "2018-03-27",
+		"entry": "2018-03-27"
+	}
 }

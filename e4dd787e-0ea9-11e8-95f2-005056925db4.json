@@ -1,32 +1,32 @@
 {
-  "vid": "e4dd787e-0ea9-11e8-95f2-005056925db4",
-  "topic": "libtorrent -- remote DoS",
-  "affects": [
-    {
-      "name": [
-        "libtorrent"
-      ],
-      "range": [
-        {
-          "lt": "0.13.6_5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>X-cela reports:</p>\n\t<blockquote cite=\"https://github.com/rakshasa/libtorrent/pull/99\">\n\t  <p>Calls into build_benocde that use %zu could crash on 64 bit\n\t    machines due to the size change of size_t. Someone can force\n\t    READ_ENC_IA to fail allowing an internal_error to be thrown\n\t    and bring down the client.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/rakshasa/libtorrent/pull/99"
-    ],
-    "freebsd_pr": [
-      "ports/224664"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-01",
-    "entry": "2018-02-10"
-  }
+	"vid": "e4dd787e-0ea9-11e8-95f2-005056925db4",
+	"topic": "libtorrent -- remote DoS",
+	"affects": [
+		{
+			"name": [
+				"libtorrent"
+			],
+			"range": [
+				{
+					"lt": "0.13.6_5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>X-cela reports:</p>\n\t<blockquote cite=\"https://github.com/rakshasa/libtorrent/pull/99\">\n\t  <p>Calls into build_benocde that use %zu could crash on 64 bit\n\t    machines due to the size change of size_t. Someone can force\n\t    READ_ENC_IA to fail allowing an internal_error to be thrown\n\t    and bring down the client.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/rakshasa/libtorrent/pull/99"
+		],
+		"freebsd_pr": [
+			"ports/224664"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-01",
+		"entry": "2018-02-10"
+	}
 }

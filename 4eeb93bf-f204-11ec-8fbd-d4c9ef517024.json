@@ -1,52 +1,52 @@
 {
-  "vid": "4eeb93bf-f204-11ec-8fbd-d4c9ef517024",
-  "topic": "OpenSSL -- Command injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.1.1p,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-devel"
-      ],
-      "range": [
-        {
-          "lt": "3.0.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-quictls"
-      ],
-      "range": [
-        {
-          "lt": "3.0.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20220621.txt\">\n\t  <p>Circumstances where the c_rehash script does not properly\n\t    sanitise shell metacharacters to prevent command injection were\n\t    found by code review.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20220621.txt"
-    ],
-    "cvename": [
-      "CVE-2022-2068"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-06-21",
-    "entry": "2022-06-22"
-  }
+	"vid": "4eeb93bf-f204-11ec-8fbd-d4c9ef517024",
+	"topic": "OpenSSL -- Command injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.1.1p,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-devel"
+			],
+			"range": [
+				{
+					"lt": "3.0.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-quictls"
+			],
+			"range": [
+				{
+					"lt": "3.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20220621.txt\">\n\t  <p>Circumstances where the c_rehash script does not properly\n\t    sanitise shell metacharacters to prevent command injection were\n\t    found by code review.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20220621.txt"
+		],
+		"cvename": [
+			"CVE-2022-2068"
+		]
+	},
+	"dates": {
+		"discovery": "2022-06-21",
+		"entry": "2022-06-22"
+	}
 }

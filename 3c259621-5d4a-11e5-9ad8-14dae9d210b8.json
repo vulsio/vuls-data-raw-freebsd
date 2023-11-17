@@ -1,32 +1,32 @@
 {
-  "vid": "3c259621-5d4a-11e5-9ad8-14dae9d210b8",
-  "topic": "openslp -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openslp"
-      ],
-      "range": [
-        {
-          "lt": "2.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Qinghao Tang reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/559\">\n\t  <p>The function ParseExtension() in openslp 1.2.1 contains\n\t    vulnerability: an attacker can cause a denial of service\n\t    (infinite loop) via a packet with crafted \"nextoffset\"\n\t    value and \"extid\" value.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2015/q3/559"
-    ],
-    "cvename": [
-      "CVE-2015-5155"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-09-16",
-    "entry": "2015-09-17"
-  }
+	"vid": "3c259621-5d4a-11e5-9ad8-14dae9d210b8",
+	"topic": "openslp -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openslp"
+			],
+			"range": [
+				{
+					"lt": "2.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Qinghao Tang reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/559\">\n\t  <p>The function ParseExtension() in openslp 1.2.1 contains\n\t    vulnerability: an attacker can cause a denial of service\n\t    (infinite loop) via a packet with crafted \"nextoffset\"\n\t    value and \"extid\" value.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2015/q3/559"
+		],
+		"cvename": [
+			"CVE-2015-5155"
+		]
+	},
+	"dates": {
+		"discovery": "2015-09-16",
+		"entry": "2015-09-17"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "65847d9d-7f3e-11ec-8624-b42e991fc52e",
-  "topic": "mustache - Possible Remote Code Execution",
-  "affects": [
-    {
-      "name": [
-        "phpmustache"
-      ],
-      "range": [
-        {
-          "lt": "2.14.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>huntr.dev reports:</p>\n\t<blockquote cite=\"https://huntr.dev/bounties/a5f5a988-aa52-4443-839d-299a63f44fb7/\">\n\t  <p>In Mustache.php v2.0.0 through v2.14.0, Sections tag can\n\t    lead to arbitrary php code execution even if\n\t    strict_callables is true when section value is\n\t    controllable.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-0323"
-    ],
-    "cvename": [
-      "CVE-2022-0323"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-01-20",
-    "entry": "2022-01-27"
-  }
+	"vid": "65847d9d-7f3e-11ec-8624-b42e991fc52e",
+	"topic": "mustache - Possible Remote Code Execution",
+	"affects": [
+		{
+			"name": [
+				"phpmustache"
+			],
+			"range": [
+				{
+					"lt": "2.14.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>huntr.dev reports:</p>\n\t<blockquote cite=\"https://huntr.dev/bounties/a5f5a988-aa52-4443-839d-299a63f44fb7/\">\n\t  <p>In Mustache.php v2.0.0 through v2.14.0, Sections tag can\n\t    lead to arbitrary php code execution even if\n\t    strict_callables is true when section value is\n\t    controllable.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-0323"
+		],
+		"cvename": [
+			"CVE-2022-0323"
+		]
+	},
+	"dates": {
+		"discovery": "2022-01-20",
+		"entry": "2022-01-27"
+	}
 }

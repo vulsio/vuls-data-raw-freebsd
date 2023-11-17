@@ -1,29 +1,29 @@
 {
-  "vid": "debbb39c-fdb3-11d9-a30d-00b0d09acbfc",
-  "topic": "nbsmtp -- format string vulnerability",
-  "affects": [
-    {
-      "name": [
-        "nbsmtp"
-      ],
-      "range": [
-        {
-          "lt": "0.99_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>When nbsmtp is executed in debug mode, server messages\n\twill be printed to stdout and logged via syslog. Syslog is\n\tused insecurely and user-supplied format characters are\n\tdirectly fed to the syslog function, which results in a\n\tformat string vulnerability.</p>\n\t<p>Under some circumstances, an SMTP server may be able to\n\tabuse this vulnerability in order to alter the nbsmtp\n\tprocess and execute malicious code.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://people.freebsd.org/~niels/issues/nbsmtp-20050726.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-25",
-    "entry": "2005-08-01"
-  }
+	"vid": "debbb39c-fdb3-11d9-a30d-00b0d09acbfc",
+	"topic": "nbsmtp -- format string vulnerability",
+	"affects": [
+		{
+			"name": [
+				"nbsmtp"
+			],
+			"range": [
+				{
+					"lt": "0.99_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>When nbsmtp is executed in debug mode, server messages\n\twill be printed to stdout and logged via syslog. Syslog is\n\tused insecurely and user-supplied format characters are\n\tdirectly fed to the syslog function, which results in a\n\tformat string vulnerability.</p>\n\t<p>Under some circumstances, an SMTP server may be able to\n\tabuse this vulnerability in order to alter the nbsmtp\n\tprocess and execute malicious code.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://people.freebsd.org/~niels/issues/nbsmtp-20050726.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-25",
+		"entry": "2005-08-01"
+	}
 }

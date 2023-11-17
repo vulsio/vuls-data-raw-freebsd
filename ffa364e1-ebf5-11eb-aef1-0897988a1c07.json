@@ -1,44 +1,44 @@
 {
-  "vid": "ffa364e1-ebf5-11eb-aef1-0897988a1c07",
-  "topic": "asterisk -- Remote Crash Vulnerability in PJSIP channel driver",
-  "affects": [
-    {
-      "name": [
-        "asterisk16"
-      ],
-      "range": [
-        {
-          "lt": "16.19.1",
-          "ge": "16.17.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk18"
-      ],
-      "range": [
-        {
-          "lt": "18.5.1",
-          "ge": "18.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When Asterisk receives a re-INVITE without SDP after\n\t  having sent a BYE request a crash will occur. This occurs\n\t  due to the Asterisk channel no longer being present while\n\t  code assumes it is.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://downloads.asterisk.org/pub/security/AST-2021-007.html"
-    ],
-    "cvename": [
-      "CVE-2021-31878"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-04-06",
-    "entry": "2021-07-23"
-  }
+	"vid": "ffa364e1-ebf5-11eb-aef1-0897988a1c07",
+	"topic": "asterisk -- Remote Crash Vulnerability in PJSIP channel driver",
+	"affects": [
+		{
+			"name": [
+				"asterisk16"
+			],
+			"range": [
+				{
+					"lt": "16.19.1",
+					"ge": "16.17.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk18"
+			],
+			"range": [
+				{
+					"lt": "18.5.1",
+					"ge": "18.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When Asterisk receives a re-INVITE without SDP after\n\t  having sent a BYE request a crash will occur. This occurs\n\t  due to the Asterisk channel no longer being present while\n\t  code assumes it is.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://downloads.asterisk.org/pub/security/AST-2021-007.html"
+		],
+		"cvename": [
+			"CVE-2021-31878"
+		]
+	},
+	"dates": {
+		"discovery": "2021-04-06",
+		"entry": "2021-07-23"
+	}
 }

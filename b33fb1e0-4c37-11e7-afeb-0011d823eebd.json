@@ -1,29 +1,29 @@
 {
-  "vid": "b33fb1e0-4c37-11e7-afeb-0011d823eebd",
-  "topic": "GnuTLS -- Denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "gnutls"
-      ],
-      "range": [
-        {
-          "lt": "3.5.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The GnuTLS project reports:</p>\n\t<blockquote cite=\"https://gnutls.org/security.html#GNUTLS-SA-2017-4\">\n\t  <p>It was found using the TLS fuzzer tools that decoding a status\n\t    response TLS extension with valid contents could lead to a crash\n\t    due to a null pointer dereference. The issue affects GnuTLS server\n\t    applications.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://gnutls.org/security.html#GNUTLS-SA-2017-4"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-06-07",
-    "entry": "2017-06-08"
-  }
+	"vid": "b33fb1e0-4c37-11e7-afeb-0011d823eebd",
+	"topic": "GnuTLS -- Denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"gnutls"
+			],
+			"range": [
+				{
+					"lt": "3.5.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The GnuTLS project reports:</p>\n\t<blockquote cite=\"https://gnutls.org/security.html#GNUTLS-SA-2017-4\">\n\t  <p>It was found using the TLS fuzzer tools that decoding a status\n\t    response TLS extension with valid contents could lead to a crash\n\t    due to a null pointer dereference. The issue affects GnuTLS server\n\t    applications.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://gnutls.org/security.html#GNUTLS-SA-2017-4"
+		]
+	},
+	"dates": {
+		"discovery": "2017-06-07",
+		"entry": "2017-06-08"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "83350009-881e-11e5-ab94-002590263bf5",
-  "topic": "xen-kernel -- Long latency populate-on-demand operation is not preemptible",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.5.1_1",
-          "ge": "3.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-150.html\">\n\t  <p>When running an HVM domain in Populate-on-Demand mode, Xen would\n\t    sometimes search the domain for memory to reclaim, in response to\n\t    demands for population of other pages in the same domain. This\n\t    search runs without preemption.  The guest can, by suitable\n\t    arrangement of its memory contents, create a situation where this\n\t    search is a time-consuming linear scan of the guest's address\n\t    space.</p>\n\t  <p>A malicious HVM guest administrator can cause a denial of service.\n\t    Specifically, prevent use of a physical CPU for a significant\n\t    period.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-150.html"
-    ],
-    "cvename": [
-      "CVE-2015-7970"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-29",
-    "entry": "2015-11-11"
-  }
+	"vid": "83350009-881e-11e5-ab94-002590263bf5",
+	"topic": "xen-kernel -- Long latency populate-on-demand operation is not preemptible",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.5.1_1",
+					"ge": "3.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-150.html\">\n\t  <p>When running an HVM domain in Populate-on-Demand mode, Xen would\n\t    sometimes search the domain for memory to reclaim, in response to\n\t    demands for population of other pages in the same domain. This\n\t    search runs without preemption.  The guest can, by suitable\n\t    arrangement of its memory contents, create a situation where this\n\t    search is a time-consuming linear scan of the guest's address\n\t    space.</p>\n\t  <p>A malicious HVM guest administrator can cause a denial of service.\n\t    Specifically, prevent use of a physical CPU for a significant\n\t    period.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-150.html"
+		],
+		"cvename": [
+			"CVE-2015-7970"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-29",
+		"entry": "2015-11-11"
+	}
 }

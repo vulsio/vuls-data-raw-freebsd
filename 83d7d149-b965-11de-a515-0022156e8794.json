@@ -1,35 +1,35 @@
 {
-  "vid": "83d7d149-b965-11de-a515-0022156e8794",
-  "topic": "Enhanced cTorrent -- stack-based overflow",
-  "affects": [
-    {
-      "name": [
-        "ctorrent"
-      ],
-      "range": [
-        {
-          "lt": "3.3.2_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Securityfocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/34584\">\n\t  <p>cTorrent and dTorrent are prone to a remote buffer-overflow\n\t    vulnerability because the software fails to properly\n\t    bounds-check user-supplied input before copying it to an\n\t    insufficiently sized memory buffer.</p>\n\t  <p>Successful exploits allow remote attackers to execute\n\t    arbitrary machine code in the context of a vulnerable\n\t    application. Failed exploit attempts will likely result in\n\t    denial-of-service conditions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://sourceforge.net/tracker/?func=detail&aid=2782875&group_id=202532&atid=981959"
-    ],
-    "cvename": [
-      "CVE-2009-1759"
-    ],
-    "bid": [
-      "34584"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-10-15",
-    "entry": "2009-10-28"
-  }
+	"vid": "83d7d149-b965-11de-a515-0022156e8794",
+	"topic": "Enhanced cTorrent -- stack-based overflow",
+	"affects": [
+		{
+			"name": [
+				"ctorrent"
+			],
+			"range": [
+				{
+					"lt": "3.3.2_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Securityfocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/34584\">\n\t  <p>cTorrent and dTorrent are prone to a remote buffer-overflow\n\t    vulnerability because the software fails to properly\n\t    bounds-check user-supplied input before copying it to an\n\t    insufficiently sized memory buffer.</p>\n\t  <p>Successful exploits allow remote attackers to execute\n\t    arbitrary machine code in the context of a vulnerable\n\t    application. Failed exploit attempts will likely result in\n\t    denial-of-service conditions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://sourceforge.net/tracker/?func=detail&aid=2782875&group_id=202532&atid=981959"
+		],
+		"cvename": [
+			"CVE-2009-1759"
+		],
+		"bid": [
+			"34584"
+		]
+	},
+	"dates": {
+		"discovery": "2009-10-15",
+		"entry": "2009-10-28"
+	}
 }

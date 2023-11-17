@@ -1,42 +1,42 @@
 {
-  "vid": "76b085e2-9d33-11e7-9260-000c292ee6b8",
-  "topic": "Apache -- HTTP OPTIONS method can leak server memory",
-  "affects": [
-    {
-      "name": [
-        "apache24"
-      ],
-      "range": [
-        {
-          "lt": "2.4.27_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22"
-      ],
-      "range": [
-        {
-          "lt": "2.2.34_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Fuzzing Project reports:</p>\n\t<blockquote cite=\"https://blog.fuzzing-project.org/60-Optionsbleed-HTTP-OPTIONS-method-can-leak-Apaches-server-memory.html\">\n\t  <p>Apache httpd allows remote attackers to read secret data from\n\t    process memory if the Limit directive can be set in a user's\n\t    .htaccess file, or if httpd.conf has certain misconfigurations,\n\t    aka Optionsbleed. This affects the Apache HTTP Server through\n\t    2.2.34 and 2.4.x through 2.4.27. The attacker sends an\n\t    unauthenticated OPTIONS HTTP request when attempting to read\n\t    secret data.  This is a use-after-free issue and thus secret data\n\t    is not always sent, and the specific data depends on many factors\n\t    including configuration. Exploitation with .htaccess can be\n\t    blocked with a patch to the ap_limit_section function in\n\t    server/core.c.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2017-9798"
-    ],
-    "cvename": [
-      "CVE-2017-9798"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-18",
-    "entry": "2017-09-19"
-  }
+	"vid": "76b085e2-9d33-11e7-9260-000c292ee6b8",
+	"topic": "Apache -- HTTP OPTIONS method can leak server memory",
+	"affects": [
+		{
+			"name": [
+				"apache24"
+			],
+			"range": [
+				{
+					"lt": "2.4.27_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22"
+			],
+			"range": [
+				{
+					"lt": "2.2.34_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Fuzzing Project reports:</p>\n\t<blockquote cite=\"https://blog.fuzzing-project.org/60-Optionsbleed-HTTP-OPTIONS-method-can-leak-Apaches-server-memory.html\">\n\t  <p>Apache httpd allows remote attackers to read secret data from\n\t    process memory if the Limit directive can be set in a user's\n\t    .htaccess file, or if httpd.conf has certain misconfigurations,\n\t    aka Optionsbleed. This affects the Apache HTTP Server through\n\t    2.2.34 and 2.4.x through 2.4.27. The attacker sends an\n\t    unauthenticated OPTIONS HTTP request when attempting to read\n\t    secret data.  This is a use-after-free issue and thus secret data\n\t    is not always sent, and the specific data depends on many factors\n\t    including configuration. Exploitation with .htaccess can be\n\t    blocked with a patch to the ap_limit_section function in\n\t    server/core.c.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2017-9798"
+		],
+		"cvename": [
+			"CVE-2017-9798"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-18",
+		"entry": "2017-09-19"
+	}
 }

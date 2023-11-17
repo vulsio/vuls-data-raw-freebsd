@@ -1,42 +1,42 @@
 {
-  "vid": "68c1f75b-8824-11e2-9996-c48508086173",
-  "topic": "perl -- denial of service via algorithmic complexity attack on hashing routines",
-  "affects": [
-    {
-      "name": [
-        "perl",
-        "perl-threaded"
-      ],
-      "range": [
-        {
-          "lt": "5.12.4_5"
-        },
-        {
-          "lt": "5.14.2_3",
-          "ge": "5.14.0"
-        },
-        {
-          "lt": "5.16.2_1",
-          "ge": "5.16.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Perl developers report:</p>\n\t<blockquote cite=\"http://www.nntp.perl.org/group/perl.perl5.porters/2013/03/msg199755.html\">\n\t  <p>In order to prevent an algorithmic complexity attack\n\t    against its hashing mechanism, perl will sometimes\n\t    recalculate keys and redistribute the contents of a hash.\n\t    This mechanism has made perl robust against attacks that\n\t    have been demonstrated against other systems.</p>\n\t  <p>Research by Yves Orton has recently uncovered a flaw in\n\t    the rehashing code which can result in pathological\n\t    behavior.  This flaw could be exploited to carry out a\n\t    denial of service attack against code that uses arbitrary\n\t    user input as hash keys.</p>\n\t  <p>Because using user-provided strings as hash keys is a\n\t    very common operation, we urge users of perl to update their\n\t    perl executable as soon as possible.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.nntp.perl.org/group/perl.perl5.porters/2013/03/msg199755.html"
-    ],
-    "cvename": [
-      "CVE-2013-1667"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-03-04",
-    "entry": "2013-03-10",
-    "modified": "2016-08-22"
-  }
+	"vid": "68c1f75b-8824-11e2-9996-c48508086173",
+	"topic": "perl -- denial of service via algorithmic complexity attack on hashing routines",
+	"affects": [
+		{
+			"name": [
+				"perl",
+				"perl-threaded"
+			],
+			"range": [
+				{
+					"lt": "5.12.4_5"
+				},
+				{
+					"lt": "5.14.2_3",
+					"ge": "5.14.0"
+				},
+				{
+					"lt": "5.16.2_1",
+					"ge": "5.16.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Perl developers report:</p>\n\t<blockquote cite=\"http://www.nntp.perl.org/group/perl.perl5.porters/2013/03/msg199755.html\">\n\t  <p>In order to prevent an algorithmic complexity attack\n\t    against its hashing mechanism, perl will sometimes\n\t    recalculate keys and redistribute the contents of a hash.\n\t    This mechanism has made perl robust against attacks that\n\t    have been demonstrated against other systems.</p>\n\t  <p>Research by Yves Orton has recently uncovered a flaw in\n\t    the rehashing code which can result in pathological\n\t    behavior.  This flaw could be exploited to carry out a\n\t    denial of service attack against code that uses arbitrary\n\t    user input as hash keys.</p>\n\t  <p>Because using user-provided strings as hash keys is a\n\t    very common operation, we urge users of perl to update their\n\t    perl executable as soon as possible.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.nntp.perl.org/group/perl.perl5.porters/2013/03/msg199755.html"
+		],
+		"cvename": [
+			"CVE-2013-1667"
+		]
+	},
+	"dates": {
+		"discovery": "2013-03-04",
+		"entry": "2013-03-10",
+		"modified": "2016-08-22"
+	}
 }

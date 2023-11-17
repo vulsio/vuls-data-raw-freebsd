@@ -1,33 +1,33 @@
 {
-  "vid": "25b78f04-59c8-11e4-b711-6805ca0b3d42",
-  "topic": "phpMyAdmin -- XSS vulnerabilities in SQL debug output and server monitor page.",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "4.2.10.1",
-          "ge": "4.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-12.php\">\n\t  <p>With a crafted database or table name it is possible to\n\t    trigger an XSS in SQL debug output when enabled and in\n\t    server monitor page when viewing and analysing executed\n\t    queries.</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t    is logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    pages. Moreover, debugging SQL is a developer option which\n\t    is disabled by default and expected to be disabled in\n\t    production environments.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-12.php"
-    ],
-    "cvename": [
-      "CVE-2014-8326"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-10-21",
-    "entry": "2014-10-22"
-  }
+	"vid": "25b78f04-59c8-11e4-b711-6805ca0b3d42",
+	"topic": "phpMyAdmin -- XSS vulnerabilities in SQL debug output and server monitor page.",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "4.2.10.1",
+					"ge": "4.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-12.php\">\n\t  <p>With a crafted database or table name it is possible to\n\t    trigger an XSS in SQL debug output when enabled and in\n\t    server monitor page when viewing and analysing executed\n\t    queries.</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t    is logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    pages. Moreover, debugging SQL is a developer option which\n\t    is disabled by default and expected to be disabled in\n\t    production environments.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-12.php"
+		],
+		"cvename": [
+			"CVE-2014-8326"
+		]
+	},
+	"dates": {
+		"discovery": "2014-10-21",
+		"entry": "2014-10-22"
+	}
 }

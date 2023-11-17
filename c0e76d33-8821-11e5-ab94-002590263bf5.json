@@ -1,33 +1,33 @@
 {
-  "vid": "c0e76d33-8821-11e5-ab94-002590263bf5",
-  "topic": "xen-tools -- populate-on-demand balloon size inaccuracy can crash guests",
-  "affects": [
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.5.1_2",
-          "ge": "3.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-153.html\">\n\t  <p>Guests configured with PoD might be unstable, especially under\n\t    load. In an affected guest, an unprivileged guest user might be\n\t    able to cause a guest crash, perhaps simply by applying load so\n\t    as to cause heavy memory pressure within the guest.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-153.html"
-    ],
-    "cvename": [
-      "CVE-2015-7972"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-29",
-    "entry": "2015-11-11"
-  }
+	"vid": "c0e76d33-8821-11e5-ab94-002590263bf5",
+	"topic": "xen-tools -- populate-on-demand balloon size inaccuracy can crash guests",
+	"affects": [
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.5.1_2",
+					"ge": "3.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-153.html\">\n\t  <p>Guests configured with PoD might be unstable, especially under\n\t    load. In an affected guest, an unprivileged guest user might be\n\t    able to cause a guest crash, perhaps simply by applying load so\n\t    as to cause heavy memory pressure within the guest.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-153.html"
+		],
+		"cvename": [
+			"CVE-2015-7972"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-29",
+		"entry": "2015-11-11"
+	}
 }

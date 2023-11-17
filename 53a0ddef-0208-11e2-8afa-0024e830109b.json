@@ -1,59 +1,59 @@
 {
-  "vid": "53a0ddef-0208-11e2-8afa-0024e830109b",
-  "topic": "dns/bind9* -- Several vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "bind99"
-      ],
-      "range": [
-        {
-          "lt": "9.9.1.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind98"
-      ],
-      "range": [
-        {
-          "lt": "9.8.3.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind97"
-      ],
-      "range": [
-        {
-          "lt": "9.7.6.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind96"
-      ],
-      "range": [
-        {
-          "lt": "9.6.3.1.ESV.R7.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-00788\">\n\t  <p>Prevents a crash when queried for a record whose RDATA exceeds\n\t     65535 bytes.</p>\n\t  <p>Prevents a crash when validating caused by using \"Bad cache\" data\n\t     before it has been initialized.</p>\n\t  <p>ISC_QUEUE handling for recursive clients was updated to address\n\t     a race condition that could cause a memory leak. This rarely\n\t     occurred with UDP clients, but could be a significant problem\n\t     for a server handling a steady rate of TCP queries.</p>\n\t  <p>A condition has been corrected where improper handling of\n\t     zero-length RDATA could cause undesirable behavior, including\n\t     termination of the named process.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      ""
-    ]
-  },
-  "dates": {
-    "discovery": "2012-09-12",
-    "entry": "2012-09-18"
-  }
+	"vid": "53a0ddef-0208-11e2-8afa-0024e830109b",
+	"topic": "dns/bind9* -- Several vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"bind99"
+			],
+			"range": [
+				{
+					"lt": "9.9.1.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind98"
+			],
+			"range": [
+				{
+					"lt": "9.8.3.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind97"
+			],
+			"range": [
+				{
+					"lt": "9.7.6.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind96"
+			],
+			"range": [
+				{
+					"lt": "9.6.3.1.ESV.R7.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-00788\">\n\t  <p>Prevents a crash when queried for a record whose RDATA exceeds\n\t     65535 bytes.</p>\n\t  <p>Prevents a crash when validating caused by using \"Bad cache\" data\n\t     before it has been initialized.</p>\n\t  <p>ISC_QUEUE handling for recursive clients was updated to address\n\t     a race condition that could cause a memory leak. This rarely\n\t     occurred with UDP clients, but could be a significant problem\n\t     for a server handling a steady rate of TCP queries.</p>\n\t  <p>A condition has been corrected where improper handling of\n\t     zero-length RDATA could cause undesirable behavior, including\n\t     termination of the named process.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			""
+		]
+	},
+	"dates": {
+		"discovery": "2012-09-12",
+		"entry": "2012-09-18"
+	}
 }

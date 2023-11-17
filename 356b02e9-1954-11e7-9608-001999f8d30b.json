@@ -1,30 +1,30 @@
 {
-  "vid": "356b02e9-1954-11e7-9608-001999f8d30b",
-  "topic": "asterisk -- Buffer overflow in CDR's set user",
-  "affects": [
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.14.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>No size checking is done when setting the user field\n\t  on a CDR. Thus, it is possible for someone to use an\n\t  arbitrarily large string and write past the end of the\n\t  user field storage buffer. This allows the possibility\n\t  of remote code injection.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2017-001.html",
-      "https://issues.asterisk.org/jira/browse/ASTERISK-26897"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-03-27",
-    "entry": "2017-04-04"
-  }
+	"vid": "356b02e9-1954-11e7-9608-001999f8d30b",
+	"topic": "asterisk -- Buffer overflow in CDR's set user",
+	"affects": [
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.14.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>No size checking is done when setting the user field\n\t  on a CDR. Thus, it is possible for someone to use an\n\t  arbitrarily large string and write past the end of the\n\t  user field storage buffer. This allows the possibility\n\t  of remote code injection.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2017-001.html",
+			"https://issues.asterisk.org/jira/browse/ASTERISK-26897"
+		]
+	},
+	"dates": {
+		"discovery": "2017-03-27",
+		"entry": "2017-04-04"
+	}
 }

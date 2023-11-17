@@ -1,63 +1,63 @@
 {
-  "vid": "96a21236-707b-11eb-96d8-d4c9ef517024",
-  "topic": "OpenSSL -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.1.1j,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-devel"
-      ],
-      "range": [
-        {
-          "lt": "3.0.0.a12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "12.2_10",
-          "ge": "12.2"
-        },
-        {
-          "lt": "11.4_13",
-          "ge": "11.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20210216.txt\">\n\t  <p>Null pointer deref in X509_issuer_and_serial_hash()\n\t    CVE-2021-23841<br/>(Moderate) The OpenSSL public API function\n\t    X509_issuer_and_serial_hash() attempts to create a unique hash\n\t    value based on the issuer and serial number data contained within\n\t    an X509 certificate. However it fails to correctly handle any errors\n\t    that may occur while parsing the issuer field (which might occur if\n\t    the issuer field is maliciously constructed). This may subsequently\n\t    result in a NULL pointer deref and a crash leading to a potential\n\t    denial of service attack.</p>\n\t  <p>Integer overflow in CipherUpdate CVE-2021-23840<br/>(Low)\n\t    Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate\n\t    may overflow the output length argument in some cases where the\n\t    input length is close to the maximum permissable length for an\n\t    integer on the platform. In such cases the return value from the\n\t    function call will be 1 (indicating success), but the output length\n\t    value will be negative. This could cause applications to behave\n\t    incorrectly or crash.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20210216.txt"
-    ],
-    "cvename": [
-      "CVE-2021-23841",
-      "CVE-2021-23840",
-      "CVE-2021-23839"
-    ],
-    "freebsd_sa": [
-      "SA-21:17.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-02-16",
-    "entry": "2021-02-16",
-    "modified": "2021-08-25"
-  }
+	"vid": "96a21236-707b-11eb-96d8-d4c9ef517024",
+	"topic": "OpenSSL -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.1.1j,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-devel"
+			],
+			"range": [
+				{
+					"lt": "3.0.0.a12"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "12.2_10",
+					"ge": "12.2"
+				},
+				{
+					"lt": "11.4_13",
+					"ge": "11.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20210216.txt\">\n\t  <p>Null pointer deref in X509_issuer_and_serial_hash()\n\t    CVE-2021-23841<br/>(Moderate) The OpenSSL public API function\n\t    X509_issuer_and_serial_hash() attempts to create a unique hash\n\t    value based on the issuer and serial number data contained within\n\t    an X509 certificate. However it fails to correctly handle any errors\n\t    that may occur while parsing the issuer field (which might occur if\n\t    the issuer field is maliciously constructed). This may subsequently\n\t    result in a NULL pointer deref and a crash leading to a potential\n\t    denial of service attack.</p>\n\t  <p>Integer overflow in CipherUpdate CVE-2021-23840<br/>(Low)\n\t    Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate\n\t    may overflow the output length argument in some cases where the\n\t    input length is close to the maximum permissable length for an\n\t    integer on the platform. In such cases the return value from the\n\t    function call will be 1 (indicating success), but the output length\n\t    value will be negative. This could cause applications to behave\n\t    incorrectly or crash.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20210216.txt"
+		],
+		"cvename": [
+			"CVE-2021-23841",
+			"CVE-2021-23840",
+			"CVE-2021-23839"
+		],
+		"freebsd_sa": [
+			"SA-21:17.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2021-02-16",
+		"entry": "2021-02-16",
+		"modified": "2021-08-25"
+	}
 }

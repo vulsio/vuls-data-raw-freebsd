@@ -1,32 +1,32 @@
 {
-  "vid": "6d554d6e-5638-11eb-9d36-5404a68ad561",
-  "topic": "wavpack -- integer overflow in pack_utils.c",
-  "affects": [
-    {
-      "name": [
-        "wavpack"
-      ],
-      "range": [
-        {
-          "lt": "5.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The wavpack project reports:</p>\n\t<blockquote cite=\"https://github.com/dbry/WavPack/blob/733616993d53cc1f9a7ffb88a858447ba51eb0ee/ChangeLog\">\n\t  <p>src/pack_utils.c\n\t    - issue #91: fix integer overflows resulting in buffer overruns (CVE-2020-35738)\n\t    - sanitize configuration parameters better (improves clarity and aids debugging)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/dbry/WavPack/blob/733616993d53cc1f9a7ffb88a858447ba51eb0ee/ChangeLog"
-    ],
-    "cvename": [
-      "CVE-2020-35738"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-12-29",
-    "entry": "2021-01-14"
-  }
+	"vid": "6d554d6e-5638-11eb-9d36-5404a68ad561",
+	"topic": "wavpack -- integer overflow in pack_utils.c",
+	"affects": [
+		{
+			"name": [
+				"wavpack"
+			],
+			"range": [
+				{
+					"lt": "5.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The wavpack project reports:</p>\n\t<blockquote cite=\"https://github.com/dbry/WavPack/blob/733616993d53cc1f9a7ffb88a858447ba51eb0ee/ChangeLog\">\n\t  <p>src/pack_utils.c\n\t    - issue #91: fix integer overflows resulting in buffer overruns (CVE-2020-35738)\n\t    - sanitize configuration parameters better (improves clarity and aids debugging)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/dbry/WavPack/blob/733616993d53cc1f9a7ffb88a858447ba51eb0ee/ChangeLog"
+		],
+		"cvename": [
+			"CVE-2020-35738"
+		]
+	},
+	"dates": {
+		"discovery": "2020-12-29",
+		"entry": "2021-01-14"
+	}
 }

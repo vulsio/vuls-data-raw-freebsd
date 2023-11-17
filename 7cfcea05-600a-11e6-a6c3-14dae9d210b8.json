@@ -1,49 +1,49 @@
 {
-  "vid": "7cfcea05-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Multiple ntp vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.3_5",
-          "ge": "10.3"
-        },
-        {
-          "lt": "10.2_19",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_36",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_44",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Multiple vulnerabilities have been discovered in the NTP\n\tsuite:</p>\n\t<p>The fix for Sec 3007 in ntp-4.2.8p7 contained a bug that\n\tcould cause ntpd to crash. [CVE-2016-4957, Reported by\n\tNicolas Edet of Cisco]</p>\n\t<p>An attacker who knows the origin timestamp and can send\n\ta spoofed packet containing a CRYPTO-NAK to an ephemeral\n\tpeer target before any other response is sent can demobilize\n\tthat association. [CVE-2016-4953, Reported by Miroslav\n\tLichvar of Red Hat]</p>\n\t<p>An attacker who is able to spoof packets with correct\n\torigin timestamps from enough servers before the expected\n\tresponse packets arrive at the target machine can affect\n\tsome peer variables and, for example, cause a false leap\n\tindication to be set. [CVE-2016-4954, Reported by Jakub\n\tProkes of Red Hat]</p>\n\t<p>An attacker who is able to spoof a packet with a correct\n\torigin timestamp before the expected response packet arrives\n\tat the target machine can send a CRYPTO_NAK or a bad MAC\n\tand cause the association's peer variables to be cleared.\n\tIf this can be done often enough, it will prevent that\n\tassociation from working. [CVE-2016-4955, Reported by\n\tMiroslav Lichvar of Red Hat]</p>\n\t<p>The fix for NtpBug2978 does not cover broadcast associations,\n\tso broadcast clients can be triggered to flip into interleave\n\tmode. [CVE-2016-4956, Reported by Miroslav Lichvar of Red\n\tHat.]</p>\n\t<h1>Impact:</h1>\n\t<p>Malicious remote attackers may be able to break time\n\tsynchronization, or cause the ntpd(8) daemon to crash.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-4953",
-      "CVE-2016-4954",
-      "CVE-2016-4955",
-      "CVE-2016-4956",
-      "CVE-2016-4957"
-    ],
-    "freebsd_sa": [
-      "SA-16:24.ntp"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-06-04",
-    "entry": "2016-08-11"
-  }
+	"vid": "7cfcea05-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Multiple ntp vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.3_5",
+					"ge": "10.3"
+				},
+				{
+					"lt": "10.2_19",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_36",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_44",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Multiple vulnerabilities have been discovered in the NTP\n\tsuite:</p>\n\t<p>The fix for Sec 3007 in ntp-4.2.8p7 contained a bug that\n\tcould cause ntpd to crash. [CVE-2016-4957, Reported by\n\tNicolas Edet of Cisco]</p>\n\t<p>An attacker who knows the origin timestamp and can send\n\ta spoofed packet containing a CRYPTO-NAK to an ephemeral\n\tpeer target before any other response is sent can demobilize\n\tthat association. [CVE-2016-4953, Reported by Miroslav\n\tLichvar of Red Hat]</p>\n\t<p>An attacker who is able to spoof packets with correct\n\torigin timestamps from enough servers before the expected\n\tresponse packets arrive at the target machine can affect\n\tsome peer variables and, for example, cause a false leap\n\tindication to be set. [CVE-2016-4954, Reported by Jakub\n\tProkes of Red Hat]</p>\n\t<p>An attacker who is able to spoof a packet with a correct\n\torigin timestamp before the expected response packet arrives\n\tat the target machine can send a CRYPTO_NAK or a bad MAC\n\tand cause the association's peer variables to be cleared.\n\tIf this can be done often enough, it will prevent that\n\tassociation from working. [CVE-2016-4955, Reported by\n\tMiroslav Lichvar of Red Hat]</p>\n\t<p>The fix for NtpBug2978 does not cover broadcast associations,\n\tso broadcast clients can be triggered to flip into interleave\n\tmode. [CVE-2016-4956, Reported by Miroslav Lichvar of Red\n\tHat.]</p>\n\t<h1>Impact:</h1>\n\t<p>Malicious remote attackers may be able to break time\n\tsynchronization, or cause the ntpd(8) daemon to crash.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-4953",
+			"CVE-2016-4954",
+			"CVE-2016-4955",
+			"CVE-2016-4956",
+			"CVE-2016-4957"
+		],
+		"freebsd_sa": [
+			"SA-16:24.ntp"
+		]
+	},
+	"dates": {
+		"discovery": "2016-06-04",
+		"entry": "2016-08-11"
+	}
 }

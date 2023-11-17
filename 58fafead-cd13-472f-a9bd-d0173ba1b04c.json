@@ -1,33 +1,33 @@
 {
-  "vid": "58fafead-cd13-472f-a9bd-d0173ba1b04c",
-  "topic": "libofx -- exploitable buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "libofx"
-      ],
-      "range": [
-        {
-          "le": "0.9.11_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Talos developers report:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/100828\">\n\t  <p>An exploitable buffer overflow vulnerability exists in the tag parsing functionality of LibOFX 0.9.11. A specially crafted OFX file can cause a write out of bounds resulting in a buffer overflow on the stack. An attacker can construct a malicious OFX file to trigger this vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.securityfocus.com/bid/100828",
-      "https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0317"
-    ],
-    "cvename": [
-      "CVE-2017-2816"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-13",
-    "entry": "2017-09-27"
-  }
+	"vid": "58fafead-cd13-472f-a9bd-d0173ba1b04c",
+	"topic": "libofx -- exploitable buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"libofx"
+			],
+			"range": [
+				{
+					"le": "0.9.11_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Talos developers report:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/100828\">\n\t  <p>An exploitable buffer overflow vulnerability exists in the tag parsing functionality of LibOFX 0.9.11. A specially crafted OFX file can cause a write out of bounds resulting in a buffer overflow on the stack. An attacker can construct a malicious OFX file to trigger this vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.securityfocus.com/bid/100828",
+			"https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0317"
+		],
+		"cvename": [
+			"CVE-2017-2816"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-13",
+		"entry": "2017-09-27"
+	}
 }

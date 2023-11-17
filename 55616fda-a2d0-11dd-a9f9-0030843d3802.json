@@ -1,30 +1,30 @@
 {
-  "vid": "55616fda-a2d0-11dd-a9f9-0030843d3802",
-  "topic": "openx -- sql injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openx"
-      ],
-      "range": [
-        {
-          "lt": "2.6.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/32114/\">\n\t  <p>OpenX can be exploited by malicious people to conduct SQL injection\n\t    attacks.</p>\n\t  <p>Input passed to the \"bannerid\" parameter in www/delivery/ac.php is\n\t    not properly sanitised before being used in SQL queries. This can be\n\t    exploited to manipulate SQL queries by injecting arbitrary SQL\n\t    code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/32114/",
-      "http://blog.openx.org/10/openx-security-update/"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-10-03",
-    "entry": "2008-10-25"
-  }
+	"vid": "55616fda-a2d0-11dd-a9f9-0030843d3802",
+	"topic": "openx -- sql injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openx"
+			],
+			"range": [
+				{
+					"lt": "2.6.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/32114/\">\n\t  <p>OpenX can be exploited by malicious people to conduct SQL injection\n\t    attacks.</p>\n\t  <p>Input passed to the \"bannerid\" parameter in www/delivery/ac.php is\n\t    not properly sanitised before being used in SQL queries. This can be\n\t    exploited to manipulate SQL queries by injecting arbitrary SQL\n\t    code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/32114/",
+			"http://blog.openx.org/10/openx-security-update/"
+		]
+	},
+	"dates": {
+		"discovery": "2008-10-03",
+		"entry": "2008-10-25"
+	}
 }

@@ -1,29 +1,29 @@
 {
-  "vid": "79bbec7e-8141-11e7-b5af-a4badb2f4699",
-  "topic": "FreeRadius -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "freeradius3"
-      ],
-      "range": [
-        {
-          "lt": "3.0.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Guido Vranken reports:</p>\n\t<blockquote cite=\"http://freeradius.org/security/fuzzer-2017.html\">\n\t  <p>Multiple vulnerabilities found via fuzzing:\n\t    FR-GV-201 (v2,v3) Read / write overflow in make_secret()\n\t    FR-GV-202 (v2) Write overflow in rad_coalesce()\n\t    FR-GV-203 (v2) DHCP - Memory leak in decode_tlv()\n\t    FR-GV-204 (v2) DHCP - Memory leak in fr_dhcp_decode()\n\t    FR-GV-205 (v2) DHCP - Buffer over-read in fr_dhcp_decode_options()\n\t    FR-GV-206 (v2,v3) DHCP - Read overflow when decoding option 63\n\t    FR-GV-207 (v2) Zero-length malloc in data2vp()\n\t    FR-GV-301 (v3) Write overflow in data2vp_wimax()\n\t    FR-GV-302 (v3) Infinite loop and memory exhaustion with 'concat' attributes\n\t    FR-GV-303 (v3) DHCP - Infinite read in dhcp_attr2vp()\n\t    FR-GV-304 (v3) DHCP - Buffer over-read in fr_dhcp_decode_suboptions()\n\t    FR-GV-305 (v3) Decode 'signed' attributes correctly\n\t    FR-AD-001 (v2,v3) Use strncmp() instead of memcmp() for string data\n\t    FR-AD-002 (v3) String lifetime issues in rlm_python\n\t    FR-AD-003 (v3) Incorrect statement length passed into sqlite3_prepare</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://freeradius.org/security/fuzzer-2017.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-06-17",
-    "entry": "2017-08-14"
-  }
+	"vid": "79bbec7e-8141-11e7-b5af-a4badb2f4699",
+	"topic": "FreeRadius -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"freeradius3"
+			],
+			"range": [
+				{
+					"lt": "3.0.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Guido Vranken reports:</p>\n\t<blockquote cite=\"http://freeradius.org/security/fuzzer-2017.html\">\n\t  <p>Multiple vulnerabilities found via fuzzing:\n\t    FR-GV-201 (v2,v3) Read / write overflow in make_secret()\n\t    FR-GV-202 (v2) Write overflow in rad_coalesce()\n\t    FR-GV-203 (v2) DHCP - Memory leak in decode_tlv()\n\t    FR-GV-204 (v2) DHCP - Memory leak in fr_dhcp_decode()\n\t    FR-GV-205 (v2) DHCP - Buffer over-read in fr_dhcp_decode_options()\n\t    FR-GV-206 (v2,v3) DHCP - Read overflow when decoding option 63\n\t    FR-GV-207 (v2) Zero-length malloc in data2vp()\n\t    FR-GV-301 (v3) Write overflow in data2vp_wimax()\n\t    FR-GV-302 (v3) Infinite loop and memory exhaustion with 'concat' attributes\n\t    FR-GV-303 (v3) DHCP - Infinite read in dhcp_attr2vp()\n\t    FR-GV-304 (v3) DHCP - Buffer over-read in fr_dhcp_decode_suboptions()\n\t    FR-GV-305 (v3) Decode 'signed' attributes correctly\n\t    FR-AD-001 (v2,v3) Use strncmp() instead of memcmp() for string data\n\t    FR-AD-002 (v3) String lifetime issues in rlm_python\n\t    FR-AD-003 (v3) Incorrect statement length passed into sqlite3_prepare</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://freeradius.org/security/fuzzer-2017.html"
+		]
+	},
+	"dates": {
+		"discovery": "2017-06-17",
+		"entry": "2017-08-14"
+	}
 }

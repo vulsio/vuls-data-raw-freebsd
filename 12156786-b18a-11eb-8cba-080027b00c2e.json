@@ -1,44 +1,44 @@
 {
-  "vid": "12156786-b18a-11eb-8cba-080027b00c2e",
-  "topic": "cyrus-imapd -- Remote authenticated users could bypass intended access restrictions on certain server annotations.",
-  "affects": [
-    {
-      "name": [
-        "cyrus-imapd34"
-      ],
-      "range": [
-        {
-          "lt": "3.4.1",
-          "ge": "3.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "cyrus-imapd32"
-      ],
-      "range": [
-        {
-          "lt": "3.2.7",
-          "ge": "3.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Cyrus IMAP 3.4.1 Release Notes states:</p>\n\t<blockquote cite=\"https://www.cyrusimap.org/imap/download/release-notes/3.4/x/3.4.1.html\">\n\t  <p>Fixed CVE-2021-32056: Remote authenticated users could bypass intended access restrictions on certain server annotations. Additionally, a long-standing bug in replication did not allow server annotations to be replicated. Combining these two bugs, a remote authenticated user could stall replication, requiring administrator intervention.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32056"
-    ],
-    "cvename": [
-      "CVE-2021-32056"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-05-05",
-    "entry": "2021-05-10"
-  }
+	"vid": "12156786-b18a-11eb-8cba-080027b00c2e",
+	"topic": "cyrus-imapd -- Remote authenticated users could bypass intended access restrictions on certain server annotations.",
+	"affects": [
+		{
+			"name": [
+				"cyrus-imapd34"
+			],
+			"range": [
+				{
+					"lt": "3.4.1",
+					"ge": "3.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"cyrus-imapd32"
+			],
+			"range": [
+				{
+					"lt": "3.2.7",
+					"ge": "3.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Cyrus IMAP 3.4.1 Release Notes states:</p>\n\t<blockquote cite=\"https://www.cyrusimap.org/imap/download/release-notes/3.4/x/3.4.1.html\">\n\t  <p>Fixed CVE-2021-32056: Remote authenticated users could bypass intended access restrictions on certain server annotations. Additionally, a long-standing bug in replication did not allow server annotations to be replicated. Combining these two bugs, a remote authenticated user could stall replication, requiring administrator intervention.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32056"
+		],
+		"cvename": [
+			"CVE-2021-32056"
+		]
+	},
+	"dates": {
+		"discovery": "2021-05-05",
+		"entry": "2021-05-10"
+	}
 }

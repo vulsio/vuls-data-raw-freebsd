@@ -1,39 +1,39 @@
 {
-  "vid": "86526ba4-53c8-11db-8f1a-000a48049292",
-  "topic": "phpbb -- NULL byte injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpbb",
-        "zh-phpbb-tw"
-      ],
-      "range": [
-        {
-          "lt": "2.0.22"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/22188/\">\n\t  <p>ShAnKaR has discovered a vulnerability in phpBB, which can\n\t    be exploited by malicious users to compromise a vulnerable\n\t    system.</p>\n\t  <p>Input passed to the \"avatar_path\" parameter in\n\t    admin/admin_board.php is not properly sanitised before\n\t    being used as a configuration variable to store avatar\n\t    images. This can be exploited to upload and execute\n\t    arbitrary PHP code by changing \"avatar_path\" to a file with\n\t    a trailing NULL byte.</p>\n\t  <p>Successful exploitation requires privileges to the\n\t    administration section.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/22188/",
-      "http://xforce.iss.net/xforce/xfdb/28884",
-      "http://www.security.nnov.ru/Odocument221.html"
-    ],
-    "cvename": [
-      "CVE-2006-4758"
-    ],
-    "bid": [
-      "20347"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-09-12",
-    "entry": "2006-10-04",
-    "modified": "2006-12-24"
-  }
+	"vid": "86526ba4-53c8-11db-8f1a-000a48049292",
+	"topic": "phpbb -- NULL byte injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpbb",
+				"zh-phpbb-tw"
+			],
+			"range": [
+				{
+					"lt": "2.0.22"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/22188/\">\n\t  <p>ShAnKaR has discovered a vulnerability in phpBB, which can\n\t    be exploited by malicious users to compromise a vulnerable\n\t    system.</p>\n\t  <p>Input passed to the \"avatar_path\" parameter in\n\t    admin/admin_board.php is not properly sanitised before\n\t    being used as a configuration variable to store avatar\n\t    images. This can be exploited to upload and execute\n\t    arbitrary PHP code by changing \"avatar_path\" to a file with\n\t    a trailing NULL byte.</p>\n\t  <p>Successful exploitation requires privileges to the\n\t    administration section.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/22188/",
+			"http://xforce.iss.net/xforce/xfdb/28884",
+			"http://www.security.nnov.ru/Odocument221.html"
+		],
+		"cvename": [
+			"CVE-2006-4758"
+		],
+		"bid": [
+			"20347"
+		]
+	},
+	"dates": {
+		"discovery": "2006-09-12",
+		"entry": "2006-10-04",
+		"modified": "2006-12-24"
+	}
 }

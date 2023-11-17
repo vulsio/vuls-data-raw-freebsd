@@ -1,48 +1,48 @@
 {
-  "vid": "884fced7-7f1c-11dd-a66a-0019666436c2",
-  "topic": "wordpress -- remote privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "wordpress",
-        "de-wordpress",
-        "wordpress-mu"
-      ],
-      "range": [
-        {
-          "lt": "2.6.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "zh-wordpress"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Wordpress development team reports:</p>\n\t<blockquote cite=\"http://wordpress.org/development/2008/09/wordpress-262/\">\n\t  <p>With open registration enabled, it is possible in WordPress\n\t    versions 2.6.1 and earlier to craft a username such that it\n\t    will allow resetting another users password to a randomly\n\t    generated password.  The randomly generated password is not\n\t    disclosed to the attacker, so this problem by itself is annoying\n\t    but not a security exploit. However, this attack coupled with a\n\t    weakness in the random number seeding in mt_rand() could be used\n\t    to predict the randomly generated password.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://wordpress.org/development/2008/09/wordpress-262/"
-    ],
-    "cvename": [
-      "CVE-2008-4107"
-    ],
-    "bid": [
-      "31068"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-09-08",
-    "entry": "2008-10-22",
-    "modified": "2010-05-12"
-  }
+	"vid": "884fced7-7f1c-11dd-a66a-0019666436c2",
+	"topic": "wordpress -- remote privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"wordpress",
+				"de-wordpress",
+				"wordpress-mu"
+			],
+			"range": [
+				{
+					"lt": "2.6.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"zh-wordpress"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Wordpress development team reports:</p>\n\t<blockquote cite=\"http://wordpress.org/development/2008/09/wordpress-262/\">\n\t  <p>With open registration enabled, it is possible in WordPress\n\t    versions 2.6.1 and earlier to craft a username such that it\n\t    will allow resetting another users password to a randomly\n\t    generated password.  The randomly generated password is not\n\t    disclosed to the attacker, so this problem by itself is annoying\n\t    but not a security exploit. However, this attack coupled with a\n\t    weakness in the random number seeding in mt_rand() could be used\n\t    to predict the randomly generated password.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://wordpress.org/development/2008/09/wordpress-262/"
+		],
+		"cvename": [
+			"CVE-2008-4107"
+		],
+		"bid": [
+			"31068"
+		]
+	},
+	"dates": {
+		"discovery": "2008-09-08",
+		"entry": "2008-10-22",
+		"modified": "2010-05-12"
+	}
 }

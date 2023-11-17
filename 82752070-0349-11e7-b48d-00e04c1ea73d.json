@@ -1,44 +1,44 @@
 {
-  "vid": "82752070-0349-11e7-b48d-00e04c1ea73d",
-  "topic": "wordpress -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "wordpress"
-      ],
-      "range": [
-        {
-          "lt": "4.7.3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-wordpress",
-        "ja-wordpress",
-        "ru-wordpress",
-        "zh-wordpress-zh_CN",
-        "zh-wordpress-zh_TW"
-      ],
-      "range": [
-        {
-          "lt": "4.7.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/\">\n\t\t<p>WordPress versions 4.7.2 and earlier are affected by six security issues.</p>\n\t\t<ul>\n\t\t<li>Cross-site scripting (XSS) via media file metadata.</li>\n\t\t<li>Control characters can trick redirect URL validation.</li>\n\t\t<li>Unintended files can be deleted by administrators using the\n\t\t\tplugin deletion functionality.</li>\n\t\t<li>Cross-site scripting (XSS) via video URL in YouTube embeds.</li>\n\t\t<li>Cross-site scripting (XSS) via taxonomy term names.</li>\n\t\t<li>Cross-site request forgery (CSRF) in Press This leading to\n\t\t\texcessive use of server resources.</li>\n\t</ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2017/03/07/3",
-      "https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-03-07",
-    "entry": "2017-03-07"
-  }
+	"vid": "82752070-0349-11e7-b48d-00e04c1ea73d",
+	"topic": "wordpress -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"wordpress"
+			],
+			"range": [
+				{
+					"lt": "4.7.3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-wordpress",
+				"ja-wordpress",
+				"ru-wordpress",
+				"zh-wordpress-zh_CN",
+				"zh-wordpress-zh_TW"
+			],
+			"range": [
+				{
+					"lt": "4.7.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/\">\n\t\t<p>WordPress versions 4.7.2 and earlier are affected by six security issues.</p>\n\t\t<ul>\n\t\t<li>Cross-site scripting (XSS) via media file metadata.</li>\n\t\t<li>Control characters can trick redirect URL validation.</li>\n\t\t<li>Unintended files can be deleted by administrators using the\n\t\t\tplugin deletion functionality.</li>\n\t\t<li>Cross-site scripting (XSS) via video URL in YouTube embeds.</li>\n\t\t<li>Cross-site scripting (XSS) via taxonomy term names.</li>\n\t\t<li>Cross-site request forgery (CSRF) in Press This leading to\n\t\t\texcessive use of server resources.</li>\n\t</ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2017/03/07/3",
+			"https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/"
+		]
+	},
+	"dates": {
+		"discovery": "2017-03-07",
+		"entry": "2017-03-07"
+	}
 }

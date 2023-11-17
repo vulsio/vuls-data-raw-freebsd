@@ -1,35 +1,35 @@
 {
-  "vid": "53252879-cf11-11e5-805c-5453ed2e2b49",
-  "topic": "py-pillow -- Buffer overflow in TIFF decoding code",
-  "affects": [
-    {
-      "name": [
-        "py27-pillow",
-        "py33-pillow",
-        "py34-pillow",
-        "py35-pillow"
-      ],
-      "range": [
-        {
-          "lt": "2.9.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Pillow maintainers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.org/en/3.1.x/releasenotes/3.1.1.html\">\n\t  <p>Pillow 3.1.0 and earlier when linked against libtiff &gt;= 4.0.0 on\n\t    x64 may overflow a buffer when reading a specially crafted tiff\n\t    file.</p>\n\t  <p>Specifically, libtiff &gt;= 4.0.0 changed the return type of\n\t    TIFFScanlineSize from int32 to machine dependent int32|64. If the\n\t    scanline is sized so that it overflows an int32, it may be\n\t    interpreted as a negative number, which will then pass the size check\n\t    in TiffDecode.c line 236. To do this, the logical scanline size has\n\t    to be &gt; 2gb, and for the test file, the allocated buffer size is 64k\n\t    against a roughly 4gb scan line size. Any image data over 64k is\n\t    written over the heap, causing a segfault.</p>\n\t  <p>This issue was found by security researcher FourOne.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/python-pillow/Pillow/commit/6dcbf5bd96b717c58d7b642949da8d323099928e"
-    ],
-    "cvename": [
-      "CVE-2016-0740"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-04",
-    "entry": "2016-02-09"
-  }
+	"vid": "53252879-cf11-11e5-805c-5453ed2e2b49",
+	"topic": "py-pillow -- Buffer overflow in TIFF decoding code",
+	"affects": [
+		{
+			"name": [
+				"py27-pillow",
+				"py33-pillow",
+				"py34-pillow",
+				"py35-pillow"
+			],
+			"range": [
+				{
+					"lt": "2.9.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Pillow maintainers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.org/en/3.1.x/releasenotes/3.1.1.html\">\n\t  <p>Pillow 3.1.0 and earlier when linked against libtiff &gt;= 4.0.0 on\n\t    x64 may overflow a buffer when reading a specially crafted tiff\n\t    file.</p>\n\t  <p>Specifically, libtiff &gt;= 4.0.0 changed the return type of\n\t    TIFFScanlineSize from int32 to machine dependent int32|64. If the\n\t    scanline is sized so that it overflows an int32, it may be\n\t    interpreted as a negative number, which will then pass the size check\n\t    in TiffDecode.c line 236. To do this, the logical scanline size has\n\t    to be &gt; 2gb, and for the test file, the allocated buffer size is 64k\n\t    against a roughly 4gb scan line size. Any image data over 64k is\n\t    written over the heap, causing a segfault.</p>\n\t  <p>This issue was found by security researcher FourOne.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/python-pillow/Pillow/commit/6dcbf5bd96b717c58d7b642949da8d323099928e"
+		],
+		"cvename": [
+			"CVE-2016-0740"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-04",
+		"entry": "2016-02-09"
+	}
 }

@@ -1,72 +1,72 @@
 {
-  "vid": "731cdeaa-3564-11e5-9970-14dae9d210b8",
-  "topic": "bind -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "bind910"
-      ],
-      "range": [
-        {
-          "lt": "9.10.2P3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind99"
-      ],
-      "range": [
-        {
-          "lt": "9.9.7P2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind910-base",
-        "bind99-base"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "9.3_21",
-          "ge": "9.3"
-        },
-        {
-          "lt": "8.4_35",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01272/\">\n\t  <p>An error in the handling of TKEY queries can be exploited\n\t    by an attacker for use as a denial-of-service vector, as a constructed\n\t    packet can use the defect to trigger a REQUIRE assertion failure,\n\t    causing BIND to exit.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://kb.isc.org/article/AA-01272/"
-    ],
-    "cvename": [
-      "CVE-2015-5477"
-    ],
-    "freebsd_sa": [
-      "SA-15:17.bind"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-07-21",
-    "entry": "2015-07-28",
-    "modified": "2016-08-09"
-  }
+	"vid": "731cdeaa-3564-11e5-9970-14dae9d210b8",
+	"topic": "bind -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"bind910"
+			],
+			"range": [
+				{
+					"lt": "9.10.2P3"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind99"
+			],
+			"range": [
+				{
+					"lt": "9.9.7P2"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind910-base",
+				"bind99-base"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "9.3_21",
+					"ge": "9.3"
+				},
+				{
+					"lt": "8.4_35",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01272/\">\n\t  <p>An error in the handling of TKEY queries can be exploited\n\t    by an attacker for use as a denial-of-service vector, as a constructed\n\t    packet can use the defect to trigger a REQUIRE assertion failure,\n\t    causing BIND to exit.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://kb.isc.org/article/AA-01272/"
+		],
+		"cvename": [
+			"CVE-2015-5477"
+		],
+		"freebsd_sa": [
+			"SA-15:17.bind"
+		]
+	},
+	"dates": {
+		"discovery": "2015-07-21",
+		"entry": "2015-07-28",
+		"modified": "2016-08-09"
+	}
 }

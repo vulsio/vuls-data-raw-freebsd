@@ -1,35 +1,35 @@
 {
-  "vid": "72fccfdf-2061-11e5-a4a5-002590263bf5",
-  "topic": "ansible -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ansible"
-      ],
-      "range": [
-        {
-          "lt": "1.9.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ansible, Inc. reports:</p>\n\t<blockquote cite=\"http://www.ansible.com/security\">\n\t  <p>Ensure that hostnames match certificate names when using HTTPS -\n\t    resolved in Ansible 1.9.2</p>\n\t  <p>Improper symlink handling in zone, jail, and chroot connection\n\t    plugins could lead to escape from confined environment - resolved\n\t    in Ansible 1.9.2</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.ansible.com/security",
-      "https://raw.githubusercontent.com/ansible/ansible/v1.9.2-1/CHANGELOG.md"
-    ],
-    "cvename": [
-      "CVE-2015-3908",
-      "CVE-2015-6240"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-25",
-    "entry": "2015-07-02",
-    "modified": "2015-08-18"
-  }
+	"vid": "72fccfdf-2061-11e5-a4a5-002590263bf5",
+	"topic": "ansible -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ansible"
+			],
+			"range": [
+				{
+					"lt": "1.9.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ansible, Inc. reports:</p>\n\t<blockquote cite=\"http://www.ansible.com/security\">\n\t  <p>Ensure that hostnames match certificate names when using HTTPS -\n\t    resolved in Ansible 1.9.2</p>\n\t  <p>Improper symlink handling in zone, jail, and chroot connection\n\t    plugins could lead to escape from confined environment - resolved\n\t    in Ansible 1.9.2</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.ansible.com/security",
+			"https://raw.githubusercontent.com/ansible/ansible/v1.9.2-1/CHANGELOG.md"
+		],
+		"cvename": [
+			"CVE-2015-3908",
+			"CVE-2015-6240"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-25",
+		"entry": "2015-07-02",
+		"modified": "2015-08-18"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "1d33cdee-7f6b-11e7-a9b5-3debb10a6871",
-  "topic": "Mercurial -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mercurial"
-      ],
-      "range": [
-        {
-          "lt": "4.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mercurial Release Notes:</p>\n\t<blockquote cite=\"https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29\">\n\t  <p>CVE-2017-1000115</p>\n\t  <p>Mercurial's symlink auditing was incomplete prior to 4.3, and could be\n\t    abused to write to files outside the repository.</p>\n\t  <p>CVE-2017-1000116</p>\n\t  <p>Mercurial was not sanitizing hostnames passed to ssh, allowing shell\n\t    injection attacks on clients by specifying a hostname starting with\n\t    -oProxyCommand. This is also present in Git (CVE-2017-1000117) and\n\t    Subversion (CVE-2017-9800), so please patch those tools as well if you\n\t    have them installed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29"
-    ],
-    "cvename": [
-      "CVE-2017-1000115",
-      "CVE-2017-1000116"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-08-10",
-    "entry": "2017-08-12"
-  }
+	"vid": "1d33cdee-7f6b-11e7-a9b5-3debb10a6871",
+	"topic": "Mercurial -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mercurial"
+			],
+			"range": [
+				{
+					"lt": "4.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mercurial Release Notes:</p>\n\t<blockquote cite=\"https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29\">\n\t  <p>CVE-2017-1000115</p>\n\t  <p>Mercurial's symlink auditing was incomplete prior to 4.3, and could be\n\t    abused to write to files outside the repository.</p>\n\t  <p>CVE-2017-1000116</p>\n\t  <p>Mercurial was not sanitizing hostnames passed to ssh, allowing shell\n\t    injection attacks on clients by specifying a hostname starting with\n\t    -oProxyCommand. This is also present in Git (CVE-2017-1000117) and\n\t    Subversion (CVE-2017-9800), so please patch those tools as well if you\n\t    have them installed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29"
+		],
+		"cvename": [
+			"CVE-2017-1000115",
+			"CVE-2017-1000116"
+		]
+	},
+	"dates": {
+		"discovery": "2017-08-10",
+		"entry": "2017-08-12"
+	}
 }

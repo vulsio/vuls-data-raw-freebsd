@@ -1,51 +1,51 @@
 {
-  "vid": "10d73529-7f4b-11e4-af66-00215af774f0",
-  "topic": "unbound -- can be tricked into following an endless series of delegations, this consumes a lot of resources",
-  "affects": [
-    {
-      "name": [
-        "unbound"
-      ],
-      "range": [
-        {
-          "lt": "1.5.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.0_14",
-          "ge": "10.0"
-        },
-        {
-          "lt": "10.1_2",
-          "ge": "10.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Unbound developer reports:</p>\n\t<blockquote cite=\"http://unbound.net/downloads/CVE-2014-8602.txt\">\n\t  <p>The resolver can be tricked into following an endless series of\n\t    delegations, this consumes a lot of resources.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://unbound.net/downloads/CVE-2014-8602.txt"
-    ],
-    "cvename": [
-      "CVE-2014-8602"
-    ],
-    "freebsd_sa": [
-      "SA-14:30.unbound"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-12-08",
-    "entry": "2014-12-09",
-    "modified": "2016-08-09"
-  }
+	"vid": "10d73529-7f4b-11e4-af66-00215af774f0",
+	"topic": "unbound -- can be tricked into following an endless series of delegations, this consumes a lot of resources",
+	"affects": [
+		{
+			"name": [
+				"unbound"
+			],
+			"range": [
+				{
+					"lt": "1.5.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.0_14",
+					"ge": "10.0"
+				},
+				{
+					"lt": "10.1_2",
+					"ge": "10.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Unbound developer reports:</p>\n\t<blockquote cite=\"http://unbound.net/downloads/CVE-2014-8602.txt\">\n\t  <p>The resolver can be tricked into following an endless series of\n\t    delegations, this consumes a lot of resources.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://unbound.net/downloads/CVE-2014-8602.txt"
+		],
+		"cvename": [
+			"CVE-2014-8602"
+		],
+		"freebsd_sa": [
+			"SA-14:30.unbound"
+		]
+	},
+	"dates": {
+		"discovery": "2014-12-08",
+		"entry": "2014-12-09",
+		"modified": "2016-08-09"
+	}
 }

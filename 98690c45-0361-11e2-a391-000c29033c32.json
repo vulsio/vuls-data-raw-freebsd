@@ -1,71 +1,71 @@
 {
-  "vid": "98690c45-0361-11e2-a391-000c29033c32",
-  "topic": "ImageMagick and GraphicsMagick -- DoS via specially crafted PNG file",
-  "affects": [
-    {
-      "name": [
-        "ImageMagick"
-      ],
-      "range": [
-        {
-          "le": "6.7.8.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ImageMagick-nox11"
-      ],
-      "range": [
-        {
-          "le": "6.7.8.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "GraphicsMagick"
-      ],
-      "range": [
-        {
-          "ge": "1.3.0",
-          "le": "1.3.16"
-        }
-      ]
-    },
-    {
-      "name": [
-        "GraphicsMagick-nox11"
-      ],
-      "range": [
-        {
-          "ge": "1.3.0",
-          "le": "1.3.16"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Kurt Seifried reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=844105\">\n\t  <p>There is an issue in ImageMagick that is also present in\n\t    GraphicsMagick. CVE-2011-3026 deals with libpng memory\n\t    allocation, and limitations have been added so that a bad PNG\n\t    can't cause the system to allocate a lot of memory and a\n\t    denial of service. However on further investigation of\n\t    ImageMagick, Tom Lane found that PNG malloc function\n\t    (Magick_png_malloc) in turn calls AcquireMagickMemory with an\n\t    improper size argument.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=844105",
-      "http://secunia.com/advisories/50090",
-      "http://xforce.iss.net/xforce/xfdb/77259",
-      "http://osvdb.org/show/osvdb/84323"
-    ],
-    "cvename": [
-      "CVE-2012-3438"
-    ],
-    "bid": [
-      "54716"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-07-28",
-    "entry": "2012-09-20",
-    "modified": "2014-04-30"
-  }
+	"vid": "98690c45-0361-11e2-a391-000c29033c32",
+	"topic": "ImageMagick and GraphicsMagick -- DoS via specially crafted PNG file",
+	"affects": [
+		{
+			"name": [
+				"ImageMagick"
+			],
+			"range": [
+				{
+					"le": "6.7.8.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"ImageMagick-nox11"
+			],
+			"range": [
+				{
+					"le": "6.7.8.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"GraphicsMagick"
+			],
+			"range": [
+				{
+					"ge": "1.3.0",
+					"le": "1.3.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"GraphicsMagick-nox11"
+			],
+			"range": [
+				{
+					"ge": "1.3.0",
+					"le": "1.3.16"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Kurt Seifried reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=844105\">\n\t  <p>There is an issue in ImageMagick that is also present in\n\t    GraphicsMagick. CVE-2011-3026 deals with libpng memory\n\t    allocation, and limitations have been added so that a bad PNG\n\t    can't cause the system to allocate a lot of memory and a\n\t    denial of service. However on further investigation of\n\t    ImageMagick, Tom Lane found that PNG malloc function\n\t    (Magick_png_malloc) in turn calls AcquireMagickMemory with an\n\t    improper size argument.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=844105",
+			"http://secunia.com/advisories/50090",
+			"http://xforce.iss.net/xforce/xfdb/77259",
+			"http://osvdb.org/show/osvdb/84323"
+		],
+		"cvename": [
+			"CVE-2012-3438"
+		],
+		"bid": [
+			"54716"
+		]
+	},
+	"dates": {
+		"discovery": "2012-07-28",
+		"entry": "2012-09-20",
+		"modified": "2014-04-30"
+	}
 }

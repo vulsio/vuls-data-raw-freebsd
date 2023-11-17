@@ -1,37 +1,37 @@
 {
-  "vid": "c0a269d5-3d16-11d9-8818-008088034841",
-  "topic": "Cyrus IMAPd -- FETCH command out of bounds memory corruption",
-  "affects": [
-    {
-      "name": [
-        "cyrus-imapd"
-      ],
-      "range": [
-        {
-          "lt": "2.1.17"
-        },
-        {
-          "ge": "2.2.*",
-          "le": "2.2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The argument parser of the fetch command suffers a bug very\n\t  similiar to the partial command problem. Arguments like\n\t  \"body[p\", \"binary[p\" or \"binary[p\" will be wrongly detected\n\t  and the bufferposition can point outside of the allocated\n\t  buffer for the rest of the parsing process. When the parser\n\t  triggers the PARSE_PARTIAL macro after such a malformed\n\t  argument was received this can lead to a similiar one byte\n\t  memory corruption and allows remote code execution, when the\n\t  heap layout was successfully controlled by the attacker.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://security.e-matters.de/advisories/152004.html"
-    ],
-    "cvename": [
-      "CVE-2004-1013"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-11-06",
-    "entry": "2004-11-22",
-    "modified": "2004-11-24"
-  }
+	"vid": "c0a269d5-3d16-11d9-8818-008088034841",
+	"topic": "Cyrus IMAPd -- FETCH command out of bounds memory corruption",
+	"affects": [
+		{
+			"name": [
+				"cyrus-imapd"
+			],
+			"range": [
+				{
+					"lt": "2.1.17"
+				},
+				{
+					"ge": "2.2.*",
+					"le": "2.2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The argument parser of the fetch command suffers a bug very\n\t  similiar to the partial command problem. Arguments like\n\t  \"body[p\", \"binary[p\" or \"binary[p\" will be wrongly detected\n\t  and the bufferposition can point outside of the allocated\n\t  buffer for the rest of the parsing process. When the parser\n\t  triggers the PARSE_PARTIAL macro after such a malformed\n\t  argument was received this can lead to a similiar one byte\n\t  memory corruption and allows remote code execution, when the\n\t  heap layout was successfully controlled by the attacker.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://security.e-matters.de/advisories/152004.html"
+		],
+		"cvename": [
+			"CVE-2004-1013"
+		]
+	},
+	"dates": {
+		"discovery": "2004-11-06",
+		"entry": "2004-11-22",
+		"modified": "2004-11-24"
+	}
 }

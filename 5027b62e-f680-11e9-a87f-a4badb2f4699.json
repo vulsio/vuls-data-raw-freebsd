@@ -1,41 +1,41 @@
 {
-  "vid": "5027b62e-f680-11e9-a87f-a4badb2f4699",
-  "topic": "FreeBSD -- kernel memory disclosure from /dev/midistat",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.0_10",
-          "ge": "12.0"
-        },
-        {
-          "lt": "11.3_3",
-          "ge": "11.3"
-        },
-        {
-          "lt": "11.2_14",
-          "ge": "11.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The kernel driver for /dev/midistat implements a handler\n\tfor read(2). This handler is not thread-safe, and a\n\tmulti-threaded program can exploit races in the handler to\n\tcause it to copy out kernel memory outside the boundaries\n\tof midistat's data buffer.</p>\n\t<h1>Impact:</h1>\n\t<p>The races allow a program to read kernel memory within\n\ta 4GB window centered at midistat's data buffer. The buffer\n\tis allocated each time the device is opened, so an attacker\n\tis not limited to a static 4GB region of memory.</p>\n\t<p>On 32-bit platforms, an attempt to trigger the race may\n\tcause a page fault in kernel mode, leading to a panic.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-5612"
-    ],
-    "freebsd_sa": [
-      "SA-19:23.midi"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-20",
-    "entry": "2019-10-24"
-  }
+	"vid": "5027b62e-f680-11e9-a87f-a4badb2f4699",
+	"topic": "FreeBSD -- kernel memory disclosure from /dev/midistat",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.0_10",
+					"ge": "12.0"
+				},
+				{
+					"lt": "11.3_3",
+					"ge": "11.3"
+				},
+				{
+					"lt": "11.2_14",
+					"ge": "11.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The kernel driver for /dev/midistat implements a handler\n\tfor read(2). This handler is not thread-safe, and a\n\tmulti-threaded program can exploit races in the handler to\n\tcause it to copy out kernel memory outside the boundaries\n\tof midistat's data buffer.</p>\n\t<h1>Impact:</h1>\n\t<p>The races allow a program to read kernel memory within\n\ta 4GB window centered at midistat's data buffer. The buffer\n\tis allocated each time the device is opened, so an attacker\n\tis not limited to a static 4GB region of memory.</p>\n\t<p>On 32-bit platforms, an attempt to trigger the race may\n\tcause a page fault in kernel mode, leading to a panic.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-5612"
+		],
+		"freebsd_sa": [
+			"SA-19:23.midi"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-20",
+		"entry": "2019-10-24"
+	}
 }

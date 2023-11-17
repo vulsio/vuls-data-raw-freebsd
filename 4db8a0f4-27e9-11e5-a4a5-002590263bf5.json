@@ -1,33 +1,33 @@
 {
-  "vid": "4db8a0f4-27e9-11e5-a4a5-002590263bf5",
-  "topic": "xen-tools -- PCI MSI mask bits inadvertently exposed to guests",
-  "affects": [
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.5.0_6",
-          "ge": "3.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-129.html\">\n\t  <p>The mask bits optionally available in the PCI MSI capability\n\t    structure are used by the hypervisor to occasionally suppress\n\t    interrupt delivery.  Unprivileged guests were, however, nevertheless\n\t    allowed direct control of these bits.</p>\n\t  <p>Interrupts may be observed by Xen at unexpected times, which may\n\t    lead to a host crash and therefore a Denial of Service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-129.html"
-    ],
-    "cvename": [
-      "CVE-2015-4104"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-02",
-    "entry": "2015-07-11"
-  }
+	"vid": "4db8a0f4-27e9-11e5-a4a5-002590263bf5",
+	"topic": "xen-tools -- PCI MSI mask bits inadvertently exposed to guests",
+	"affects": [
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.5.0_6",
+					"ge": "3.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-129.html\">\n\t  <p>The mask bits optionally available in the PCI MSI capability\n\t    structure are used by the hypervisor to occasionally suppress\n\t    interrupt delivery.  Unprivileged guests were, however, nevertheless\n\t    allowed direct control of these bits.</p>\n\t  <p>Interrupts may be observed by Xen at unexpected times, which may\n\t    lead to a host crash and therefore a Denial of Service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-129.html"
+		],
+		"cvename": [
+			"CVE-2015-4104"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-02",
+		"entry": "2015-07-11"
+	}
 }

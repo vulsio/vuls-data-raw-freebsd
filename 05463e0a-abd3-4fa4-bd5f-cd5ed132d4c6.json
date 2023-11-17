@@ -1,118 +1,118 @@
 {
-  "vid": "05463e0a-abd3-4fa4-bd5f-cd5ed132d4c6",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "69.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "waterfox"
-      ],
-      "range": [
-        {
-          "lt": "56.2.14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey",
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.53.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox-esr"
-      ],
-      "range": [
-        {
-          "lt": "68.1.0,1",
-          "ge": "61.0,1"
-        },
-        {
-          "lt": "60.9.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "68.1.0,2",
-          "ge": "61.0,2"
-        },
-        {
-          "lt": "60.9.0,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libxul",
-        "thunderbird",
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "68.1.0",
-          "ge": "61.0"
-        },
-        {
-          "lt": "60.9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-25/\">\n\t  <p>CVE-2019-11751: Malicious code execution through command line parameters</p>\n\t  <p>CVE-2019-11746: Use-after-free while manipulating video</p>\n\t  <p>CVE-2019-11744: XSS by breaking out of title and textarea elements using innerHTML</p>\n\t  <p>CVE-2019-11742: Same-origin policy violation with SVG filters and canvas to steal cross-origin images</p>\n\t  <p>CVE-2019-11736: File manipulation and privilege escalation in Mozilla Maintenance Service</p>\n\t  <p>CVE-2019-11753: Privilege escalation with Mozilla Maintenance Service in custom Firefox installation location</p>\n\t  <p>CVE-2019-11752: Use-after-free while extracting a key value in IndexedDB</p>\n\t  <p>CVE-2019-9812: Sandbox escape through Firefox Sync</p>\n\t  <p>CVE-2019-11741: Isolate addons.mozilla.org and accounts.firefox.com</p>\n\t  <p>CVE-2019-11743: Cross-origin access to unload event attributes</p>\n\t  <p>CVE-2019-11748: Persistence of WebRTC permissions in a third party context</p>\n\t  <p>CVE-2019-11749: Camera information available without prompting using getUserMedia</p>\n\t  <p>CVE-2019-5849: Out-of-bounds read in Skia</p>\n\t  <p>CVE-2019-11750: Type confusion in Spidermonkey</p>\n\t  <p>CVE-2019-11737: Content security policy directives ignore port and path if host is a wildcard</p>\n\t  <p>CVE-2019-11738: Content security policy bypass through hash-based sources in directives</p>\n\t  <p>CVE-2019-11747: 'Forget about this site' removes sites from pre-loaded HSTS list</p>\n\t  <p>CVE-2019-11734: Memory safety bugs fixed in Firefox 69</p>\n\t  <p>CVE-2019-11735: Memory safety bugs fixed in Firefox 69 and Firefox ESR 68.1</p>\n\t  <p>CVE-2019-11740: Memory safety bugs fixed in Firefox 69, Firefox ESR 68.1, and Firefox ESR 60.9</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2019-25/",
-      "https://www.mozilla.org/security/advisories/mfsa2019-26/",
-      "https://www.mozilla.org/security/advisories/mfsa2019-27/"
-    ],
-    "cvename": [
-      "CVE-2019-11734",
-      "CVE-2019-11735",
-      "CVE-2019-11736",
-      "CVE-2019-11737",
-      "CVE-2019-11738",
-      "CVE-2019-11740",
-      "CVE-2019-11741",
-      "CVE-2019-11742",
-      "CVE-2019-11743",
-      "CVE-2019-11744",
-      "CVE-2019-11746",
-      "CVE-2019-11747",
-      "CVE-2019-11748",
-      "CVE-2019-11749",
-      "CVE-2019-11750",
-      "CVE-2019-11751",
-      "CVE-2019-11752",
-      "CVE-2019-11753",
-      "CVE-2019-5849",
-      "CVE-2019-9812"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-09-03",
-    "entry": "2019-09-03"
-  }
+	"vid": "05463e0a-abd3-4fa4-bd5f-cd5ed132d4c6",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "69.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"waterfox"
+			],
+			"range": [
+				{
+					"lt": "56.2.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey",
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.53.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox-esr"
+			],
+			"range": [
+				{
+					"lt": "68.1.0,1",
+					"ge": "61.0,1"
+				},
+				{
+					"lt": "60.9.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "68.1.0,2",
+					"ge": "61.0,2"
+				},
+				{
+					"lt": "60.9.0,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"libxul",
+				"thunderbird",
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "68.1.0",
+					"ge": "61.0"
+				},
+				{
+					"lt": "60.9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-25/\">\n\t  <p>CVE-2019-11751: Malicious code execution through command line parameters</p>\n\t  <p>CVE-2019-11746: Use-after-free while manipulating video</p>\n\t  <p>CVE-2019-11744: XSS by breaking out of title and textarea elements using innerHTML</p>\n\t  <p>CVE-2019-11742: Same-origin policy violation with SVG filters and canvas to steal cross-origin images</p>\n\t  <p>CVE-2019-11736: File manipulation and privilege escalation in Mozilla Maintenance Service</p>\n\t  <p>CVE-2019-11753: Privilege escalation with Mozilla Maintenance Service in custom Firefox installation location</p>\n\t  <p>CVE-2019-11752: Use-after-free while extracting a key value in IndexedDB</p>\n\t  <p>CVE-2019-9812: Sandbox escape through Firefox Sync</p>\n\t  <p>CVE-2019-11741: Isolate addons.mozilla.org and accounts.firefox.com</p>\n\t  <p>CVE-2019-11743: Cross-origin access to unload event attributes</p>\n\t  <p>CVE-2019-11748: Persistence of WebRTC permissions in a third party context</p>\n\t  <p>CVE-2019-11749: Camera information available without prompting using getUserMedia</p>\n\t  <p>CVE-2019-5849: Out-of-bounds read in Skia</p>\n\t  <p>CVE-2019-11750: Type confusion in Spidermonkey</p>\n\t  <p>CVE-2019-11737: Content security policy directives ignore port and path if host is a wildcard</p>\n\t  <p>CVE-2019-11738: Content security policy bypass through hash-based sources in directives</p>\n\t  <p>CVE-2019-11747: 'Forget about this site' removes sites from pre-loaded HSTS list</p>\n\t  <p>CVE-2019-11734: Memory safety bugs fixed in Firefox 69</p>\n\t  <p>CVE-2019-11735: Memory safety bugs fixed in Firefox 69 and Firefox ESR 68.1</p>\n\t  <p>CVE-2019-11740: Memory safety bugs fixed in Firefox 69, Firefox ESR 68.1, and Firefox ESR 60.9</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2019-25/",
+			"https://www.mozilla.org/security/advisories/mfsa2019-26/",
+			"https://www.mozilla.org/security/advisories/mfsa2019-27/"
+		],
+		"cvename": [
+			"CVE-2019-11734",
+			"CVE-2019-11735",
+			"CVE-2019-11736",
+			"CVE-2019-11737",
+			"CVE-2019-11738",
+			"CVE-2019-11740",
+			"CVE-2019-11741",
+			"CVE-2019-11742",
+			"CVE-2019-11743",
+			"CVE-2019-11744",
+			"CVE-2019-11746",
+			"CVE-2019-11747",
+			"CVE-2019-11748",
+			"CVE-2019-11749",
+			"CVE-2019-11750",
+			"CVE-2019-11751",
+			"CVE-2019-11752",
+			"CVE-2019-11753",
+			"CVE-2019-5849",
+			"CVE-2019-9812"
+		]
+	},
+	"dates": {
+		"discovery": "2019-09-03",
+		"entry": "2019-09-03"
+	}
 }

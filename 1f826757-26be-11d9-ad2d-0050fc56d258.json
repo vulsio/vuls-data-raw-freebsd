@@ -1,35 +1,35 @@
 {
-  "vid": "1f826757-26be-11d9-ad2d-0050fc56d258",
-  "topic": "rssh -- format string vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rssh"
-      ],
-      "range": [
-        {
-          "le": "2.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>There is a format string bug in rssh that enables an attacker\n\t  to execute arbitrary code from an account configured to use\n\t  rssh.  On FreeBSD it is only possible to compromise the rssh\n\t  running account, not root.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.pizzashack.org/rssh/security.shtml"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109855982425122",
-        "msgid": "20041023084829.GA16819@sophic.org"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-23",
-    "entry": "2004-10-25"
-  }
+	"vid": "1f826757-26be-11d9-ad2d-0050fc56d258",
+	"topic": "rssh -- format string vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rssh"
+			],
+			"range": [
+				{
+					"le": "2.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>There is a format string bug in rssh that enables an attacker\n\t  to execute arbitrary code from an account configured to use\n\t  rssh.  On FreeBSD it is only possible to compromise the rssh\n\t  running account, not root.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.pizzashack.org/rssh/security.shtml"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109855982425122",
+				"msgid": "20041023084829.GA16819@sophic.org"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-23",
+		"entry": "2004-10-25"
+	}
 }

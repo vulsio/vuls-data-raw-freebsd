@@ -1,56 +1,56 @@
 {
-  "vid": "1d56cfc5-3970-11eb-929d-d4c9ef517024",
-  "topic": "OpenSSL -- NULL pointer de-reference",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.1.1i,1",
-          "ge": "1.0.2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "12.2_2",
-          "ge": "12.2"
-        },
-        {
-          "lt": "12.1_12",
-          "ge": "12.1"
-        },
-        {
-          "lt": "11.4_6",
-          "ge": "11.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20201208.txt\">\n\t  <p>EDIPARTYNAME NULL pointer de-reference (High)</p>\n\t  <p>The X.509 GeneralName type is a generic type for representing\n\t    different types of names. One of those name types is known as\n\t    EDIPartyName. OpenSSL provides a function GENERAL_NAME_cmp which\n\t    compares different instances of a GENERAL_NAME to see if they\n\t    are equal or not. This function behaves incorrectly when both\n\t    GENERAL_NAMEs contain an EDIPARTYNAME. A NULL pointer\n\t    dereference and a crash may occur leading to a possible denial\n\t    of service attack.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20201208.txt"
-    ],
-    "cvename": [
-      "CVE-2020-1971"
-    ],
-    "freebsd_sa": [
-      "SA-20:33.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-12-08",
-    "entry": "2020-12-08",
-    "modified": "2020-12-15"
-  }
+	"vid": "1d56cfc5-3970-11eb-929d-d4c9ef517024",
+	"topic": "OpenSSL -- NULL pointer de-reference",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.1.1i,1",
+					"ge": "1.0.2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "12.2_2",
+					"ge": "12.2"
+				},
+				{
+					"lt": "12.1_12",
+					"ge": "12.1"
+				},
+				{
+					"lt": "11.4_6",
+					"ge": "11.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20201208.txt\">\n\t  <p>EDIPARTYNAME NULL pointer de-reference (High)</p>\n\t  <p>The X.509 GeneralName type is a generic type for representing\n\t    different types of names. One of those name types is known as\n\t    EDIPartyName. OpenSSL provides a function GENERAL_NAME_cmp which\n\t    compares different instances of a GENERAL_NAME to see if they\n\t    are equal or not. This function behaves incorrectly when both\n\t    GENERAL_NAMEs contain an EDIPARTYNAME. A NULL pointer\n\t    dereference and a crash may occur leading to a possible denial\n\t    of service attack.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20201208.txt"
+		],
+		"cvename": [
+			"CVE-2020-1971"
+		],
+		"freebsd_sa": [
+			"SA-20:33.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2020-12-08",
+		"entry": "2020-12-08",
+		"modified": "2020-12-15"
+	}
 }

@@ -1,38 +1,38 @@
 {
-  "vid": "f5f00804-a03b-11e1-a284-0023ae8e59f0",
-  "topic": "inspircd -- buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "inspircd"
-      ],
-      "range": [
-        {
-          "lt": "1.2.9",
-          "ge": "1.2"
-        },
-        {
-          "lt": "2.0.5_2",
-          "ge": "2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>InspIRCd reports:</p>\n\t<blockquote cite=\"http://inspircd.github.com/\">\n\t  <p>InspIRCd contains a heap corruption vulnerability that exists in the\n\t    dns.cpp code. The res[] buffer is allocated on the heap and can be\n\t    overflowed. The res[] buffer can be exploited during its deallocation.\n\t    The number of overflowed bytes can be controlled with DNS compression\n\t    features.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://inspircd.github.com/"
-    ],
-    "cvename": [
-      "CVE-2012-1836"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-03-19",
-    "entry": "2012-05-17",
-    "modified": "2012-06-21"
-  }
+	"vid": "f5f00804-a03b-11e1-a284-0023ae8e59f0",
+	"topic": "inspircd -- buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"inspircd"
+			],
+			"range": [
+				{
+					"lt": "1.2.9",
+					"ge": "1.2"
+				},
+				{
+					"lt": "2.0.5_2",
+					"ge": "2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>InspIRCd reports:</p>\n\t<blockquote cite=\"http://inspircd.github.com/\">\n\t  <p>InspIRCd contains a heap corruption vulnerability that exists in the\n\t    dns.cpp code. The res[] buffer is allocated on the heap and can be\n\t    overflowed. The res[] buffer can be exploited during its deallocation.\n\t    The number of overflowed bytes can be controlled with DNS compression\n\t    features.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://inspircd.github.com/"
+		],
+		"cvename": [
+			"CVE-2012-1836"
+		]
+	},
+	"dates": {
+		"discovery": "2012-03-19",
+		"entry": "2012-05-17",
+		"modified": "2012-06-21"
+	}
 }

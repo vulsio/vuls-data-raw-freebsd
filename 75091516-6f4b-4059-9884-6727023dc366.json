@@ -1,57 +1,57 @@
 {
-  "vid": "75091516-6f4b-4059-9884-6727023dc366",
-  "topic": "NSS -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "nss",
-        "linux-c6-nss"
-      ],
-      "range": [
-        {
-          "lt": "3.21"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "44.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.41"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-07/\">\n\t  <p>Security researcher Hanno Böck reported that calculations\n\t    with mp_div and mp_exptmod in Network Security Services\n\t    (NSS) can produce wrong results in some circumstances. These\n\t    functions are used within NSS for a variety of cryptographic\n\t    division functions, leading to potential cryptographic\n\t    weaknesses.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-15/\">\n\t  <p>Mozilla developer Eric Rescorla reported that a failed\n\t    allocation during DHE and ECDHE handshakes would lead to a\n\t    use-after-free vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2016-07/",
-      "https://www.mozilla.org/security/advisories/mfsa2016-15/",
-      "https://hg.mozilla.org/projects/nss/rev/a555bf0fc23a",
-      "https://hg.mozilla.org/projects/nss/rev/a245a4ccd354"
-    ],
-    "cvename": [
-      "CVE-2016-1938",
-      "CVE-2016-1978"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-26",
-    "entry": "2016-03-08"
-  }
+	"vid": "75091516-6f4b-4059-9884-6727023dc366",
+	"topic": "NSS -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"nss",
+				"linux-c6-nss"
+			],
+			"range": [
+				{
+					"lt": "3.21"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "44.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.41"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-07/\">\n\t  <p>Security researcher Hanno Böck reported that calculations\n\t    with mp_div and mp_exptmod in Network Security Services\n\t    (NSS) can produce wrong results in some circumstances. These\n\t    functions are used within NSS for a variety of cryptographic\n\t    division functions, leading to potential cryptographic\n\t    weaknesses.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-15/\">\n\t  <p>Mozilla developer Eric Rescorla reported that a failed\n\t    allocation during DHE and ECDHE handshakes would lead to a\n\t    use-after-free vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2016-07/",
+			"https://www.mozilla.org/security/advisories/mfsa2016-15/",
+			"https://hg.mozilla.org/projects/nss/rev/a555bf0fc23a",
+			"https://hg.mozilla.org/projects/nss/rev/a245a4ccd354"
+		],
+		"cvename": [
+			"CVE-2016-1938",
+			"CVE-2016-1978"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-26",
+		"entry": "2016-03-08"
+	}
 }

@@ -1,38 +1,38 @@
 {
-  "vid": "c9c252f5-2def-11e6-ae88-002590263bf5",
-  "topic": "expat -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "expat"
-      ],
-      "range": [
-        {
-          "lt": "2.1.1_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Sebastian Pipping reports:</p>\n\t<blockquote cite=\"https://sourceforge.net/p/expat/code_git/ci/07cc2fcacf81b32b2e06aa918df51756525240c0/\">\n\t  <p>CVE-2012-6702 -- Resolve troublesome internal call to srand that\n\t    was introduced with Expat 2.1.0 when addressing CVE-2012-0876\n\t    (issue #496)</p>\n\t  <p>CVE-2016-5300 -- Use more entropy for hash initialization than the\n\t    original fix to CVE-2012-0876.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://sourceforge.net/p/expat/code_git/ci/07cc2fcacf81b32b2e06aa918df51756525240c0/",
-      "http://www.openwall.com/lists/oss-security/2016/03/18/3"
-    ],
-    "cvename": [
-      "CVE-2012-6702",
-      "CVE-2016-5300"
-    ],
-    "freebsd_pr": [
-      "ports/210155"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-18",
-    "entry": "2016-06-09",
-    "modified": "2016-11-06"
-  }
+	"vid": "c9c252f5-2def-11e6-ae88-002590263bf5",
+	"topic": "expat -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"expat"
+			],
+			"range": [
+				{
+					"lt": "2.1.1_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Sebastian Pipping reports:</p>\n\t<blockquote cite=\"https://sourceforge.net/p/expat/code_git/ci/07cc2fcacf81b32b2e06aa918df51756525240c0/\">\n\t  <p>CVE-2012-6702 -- Resolve troublesome internal call to srand that\n\t    was introduced with Expat 2.1.0 when addressing CVE-2012-0876\n\t    (issue #496)</p>\n\t  <p>CVE-2016-5300 -- Use more entropy for hash initialization than the\n\t    original fix to CVE-2012-0876.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://sourceforge.net/p/expat/code_git/ci/07cc2fcacf81b32b2e06aa918df51756525240c0/",
+			"http://www.openwall.com/lists/oss-security/2016/03/18/3"
+		],
+		"cvename": [
+			"CVE-2012-6702",
+			"CVE-2016-5300"
+		],
+		"freebsd_pr": [
+			"ports/210155"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-18",
+		"entry": "2016-06-09",
+		"modified": "2016-11-06"
+	}
 }

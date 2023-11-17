@@ -1,34 +1,34 @@
 {
-  "vid": "f7e8d2ca-410e-40b2-8748-3abd021e44a9",
-  "topic": "xtrlock -- X display locking bypass",
-  "affects": [
-    {
-      "name": [
-        "xtrlock"
-      ],
-      "range": [
-        {
-          "lt": "2.0.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The X display locking program <code>xtrlock</code> contains\n\t  an integer overflow bug.  It is possible for an attacker with\n\t  physical access to the system to bypass the display lock.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.debian.org/security/2005/dsa-649",
-      "http://xforce.iss.net/xforce/xfdb/18991",
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=278191"
-    ],
-    "cvename": [
-      "CVE-2005-0079"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-25",
-    "entry": "2005-06-01"
-  }
+	"vid": "f7e8d2ca-410e-40b2-8748-3abd021e44a9",
+	"topic": "xtrlock -- X display locking bypass",
+	"affects": [
+		{
+			"name": [
+				"xtrlock"
+			],
+			"range": [
+				{
+					"lt": "2.0.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X display locking program <code>xtrlock</code> contains\n\t  an integer overflow bug.  It is possible for an attacker with\n\t  physical access to the system to bypass the display lock.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.debian.org/security/2005/dsa-649",
+			"http://xforce.iss.net/xforce/xfdb/18991",
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=278191"
+		],
+		"cvename": [
+			"CVE-2005-0079"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-25",
+		"entry": "2005-06-01"
+	}
 }

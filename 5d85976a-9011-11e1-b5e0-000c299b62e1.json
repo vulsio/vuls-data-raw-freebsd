@@ -1,33 +1,33 @@
 {
-  "vid": "5d85976a-9011-11e1-b5e0-000c299b62e1",
-  "topic": "net-snmp -- Remote DoS",
-  "affects": [
-    {
-      "name": [
-        "net-snmp"
-      ],
-      "range": [
-        {
-          "lt": "5.7.1_7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Red Hat Security Response Team reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=815813\">\n\t  <p>An array index error, leading to out-of heap-based buffer read flaw was\n\t     found in the way the net-snmp agent performed lookups in the\n\t     extension table.  When certain MIB subtrees were handled by the\n\t     extend directive, a remote attacker (having read privileges to the\n\t     subntree) could use this flaw to cause a denial of service condition\n\t     via an SNMP GET request involving a non-existent extension table\n\t     entry.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=815813",
-      "http://www.openwall.com/lists/oss-security/2012/04/26/2"
-    ],
-    "cvename": [
-      "CVE-2012-2141"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-04-26",
-    "entry": "2012-04-27"
-  }
+	"vid": "5d85976a-9011-11e1-b5e0-000c299b62e1",
+	"topic": "net-snmp -- Remote DoS",
+	"affects": [
+		{
+			"name": [
+				"net-snmp"
+			],
+			"range": [
+				{
+					"lt": "5.7.1_7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Red Hat Security Response Team reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=815813\">\n\t  <p>An array index error, leading to out-of heap-based buffer read flaw was\n\t     found in the way the net-snmp agent performed lookups in the\n\t     extension table.  When certain MIB subtrees were handled by the\n\t     extend directive, a remote attacker (having read privileges to the\n\t     subntree) could use this flaw to cause a denial of service condition\n\t     via an SNMP GET request involving a non-existent extension table\n\t     entry.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=815813",
+			"http://www.openwall.com/lists/oss-security/2012/04/26/2"
+		],
+		"cvename": [
+			"CVE-2012-2141"
+		]
+	},
+	"dates": {
+		"discovery": "2012-04-26",
+		"entry": "2012-04-27"
+	}
 }

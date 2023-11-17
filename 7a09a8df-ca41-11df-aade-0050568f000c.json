@@ -1,39 +1,39 @@
 {
-  "vid": "7a09a8df-ca41-11df-aade-0050568f000c",
-  "topic": "FreeBSD -- Lost mbuf flag resulting in data corruption",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.1_13",
-          "ge": "7.1"
-        },
-        {
-          "lt": "7.3_2",
-          "ge": "7.3"
-        },
-        {
-          "lt": "8.0_4",
-          "ge": "8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The read-only flag is not correctly copied when a mbuf buffer\n\t  reference is duplicated. When the sendfile(2) system call is used to\n\t  transmit data over the loopback interface, this can result in the\n\t  backing pages for the transmitted file being modified, causing data\n\t  corruption.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-10:07.mbuf"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-07-13",
-    "entry": "2010-10-24",
-    "modified": "2016-08-09"
-  }
+	"vid": "7a09a8df-ca41-11df-aade-0050568f000c",
+	"topic": "FreeBSD -- Lost mbuf flag resulting in data corruption",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.1_13",
+					"ge": "7.1"
+				},
+				{
+					"lt": "7.3_2",
+					"ge": "7.3"
+				},
+				{
+					"lt": "8.0_4",
+					"ge": "8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The read-only flag is not correctly copied when a mbuf buffer\n\t  reference is duplicated. When the sendfile(2) system call is used to\n\t  transmit data over the loopback interface, this can result in the\n\t  backing pages for the transmitted file being modified, causing data\n\t  corruption.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-10:07.mbuf"
+		]
+	},
+	"dates": {
+		"discovery": "2010-07-13",
+		"entry": "2010-10-24",
+		"modified": "2016-08-09"
+	}
 }

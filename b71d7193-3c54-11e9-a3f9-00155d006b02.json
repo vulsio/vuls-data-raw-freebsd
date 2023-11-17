@@ -1,64 +1,64 @@
 {
-  "vid": "b71d7193-3c54-11e9-a3f9-00155d006b02",
-  "topic": "Node.js -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "11.10.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node10"
-      ],
-      "range": [
-        {
-          "lt": "10.15.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node8"
-      ],
-      "range": [
-        {
-          "lt": "8.15.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node6"
-      ],
-      "range": [
-        {
-          "lt": "6.17.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/february-2019-security-releases/\">\n\t  <p>Updates are now available for all active Node.js release lines. In addition to fixes for security flaws in Node.js, they also include upgrades of Node.js 6 and 8 to OpenSSL 1.0.2r which contains a fix for a moderate severity security vulnerability.</p>\n\t  <p>For these releases, we have decided to withhold the fix for the Misinterpretation of Input (CWE-115) flaw mentioned in the original announcement. This flaw is very low severity and we are not satisfied that we had a complete and stable fix ready for release. We will be seeking to address this flaw via alternate mechanisms in the near future. In addition, we have introduced an additional CVE for a change in Node.js 6 that we have decided to classify as a Denial of Service (CWE-400) flaw.</p>\n\t  <p>We recommend that all Node.js users upgrade to a version listed below as soon as possible.</p>\n\t  <h1>OpenSSL: 0-byte record padding oracle (CVE-2019-1559)</h1>\n\t  <p>OpenSSL 1.0.2r contains a fix for CVE-2019-1559 and is included in the releases for Node.js versions 6 and 8 only. Node.js 10 and 11 are not impacted by this vulnerability as they use newer versions of OpenSSL which do not contain the flaw.</p>\n\t  <p>Under certain circumstances, a TLS server can be forced to respond differently to a client if a zero-byte record is received with an invalid padding compared to a zero-byte record with an invalid MAC. This can be used as the basis of a padding oracle attack to decrypt data.</p>\n\t  <p>Only TLS connections using certain ciphersuites executing under certain conditions are exploitable. We are currently unable to determine whether the use of OpenSSL in Node.js exposes this vulnerability. We are taking a cautionary approach and recommend the same for users. For more information, see the advisory and a detailed write-up by the reporters of the vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/february-2019-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2019-5737",
-      "CVE-2019-5739",
-      "CVE-2019-1559"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-02-28",
-    "entry": "2019-03-03"
-  }
+	"vid": "b71d7193-3c54-11e9-a3f9-00155d006b02",
+	"topic": "Node.js -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "11.10.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"node10"
+			],
+			"range": [
+				{
+					"lt": "10.15.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"node8"
+			],
+			"range": [
+				{
+					"lt": "8.15.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"node6"
+			],
+			"range": [
+				{
+					"lt": "6.17.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/february-2019-security-releases/\">\n\t  <p>Updates are now available for all active Node.js release lines. In addition to fixes for security flaws in Node.js, they also include upgrades of Node.js 6 and 8 to OpenSSL 1.0.2r which contains a fix for a moderate severity security vulnerability.</p>\n\t  <p>For these releases, we have decided to withhold the fix for the Misinterpretation of Input (CWE-115) flaw mentioned in the original announcement. This flaw is very low severity and we are not satisfied that we had a complete and stable fix ready for release. We will be seeking to address this flaw via alternate mechanisms in the near future. In addition, we have introduced an additional CVE for a change in Node.js 6 that we have decided to classify as a Denial of Service (CWE-400) flaw.</p>\n\t  <p>We recommend that all Node.js users upgrade to a version listed below as soon as possible.</p>\n\t  <h1>OpenSSL: 0-byte record padding oracle (CVE-2019-1559)</h1>\n\t  <p>OpenSSL 1.0.2r contains a fix for CVE-2019-1559 and is included in the releases for Node.js versions 6 and 8 only. Node.js 10 and 11 are not impacted by this vulnerability as they use newer versions of OpenSSL which do not contain the flaw.</p>\n\t  <p>Under certain circumstances, a TLS server can be forced to respond differently to a client if a zero-byte record is received with an invalid padding compared to a zero-byte record with an invalid MAC. This can be used as the basis of a padding oracle attack to decrypt data.</p>\n\t  <p>Only TLS connections using certain ciphersuites executing under certain conditions are exploitable. We are currently unable to determine whether the use of OpenSSL in Node.js exposes this vulnerability. We are taking a cautionary approach and recommend the same for users. For more information, see the advisory and a detailed write-up by the reporters of the vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/february-2019-security-releases/"
+		],
+		"cvename": [
+			"CVE-2019-5737",
+			"CVE-2019-5739",
+			"CVE-2019-1559"
+		]
+	},
+	"dates": {
+		"discovery": "2019-02-28",
+		"entry": "2019-03-03"
+	}
 }

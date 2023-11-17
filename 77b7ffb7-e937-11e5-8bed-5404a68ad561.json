@@ -1,29 +1,29 @@
 {
-  "vid": "77b7ffb7-e937-11e5-8bed-5404a68ad561",
-  "topic": "jpgraph2 -- XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "jpgraph2"
-      ],
-      "range": [
-        {
-          "lt": "3.0.7_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Martin Barbella reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/archive/1/508586/100/0/threaded\">\n\t  <p>JpGraph is an object oriented library for PHP that can be used to create\n\t    various types of graphs which also contains support for client side\n\t    image maps.\n\n\t    The GetURLArguments function for the JpGraph's Graph class does not\n\t    properly sanitize the names of get and post variables, leading to a\n\t    cross site scripting vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.securityfocus.com/archive/1/archive/1/508586/100/0/threaded"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-12-22",
-    "entry": "2016-03-13"
-  }
+	"vid": "77b7ffb7-e937-11e5-8bed-5404a68ad561",
+	"topic": "jpgraph2 -- XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"jpgraph2"
+			],
+			"range": [
+				{
+					"lt": "3.0.7_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Martin Barbella reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/archive/1/508586/100/0/threaded\">\n\t  <p>JpGraph is an object oriented library for PHP that can be used to create\n\t    various types of graphs which also contains support for client side\n\t    image maps.\n\n\t    The GetURLArguments function for the JpGraph's Graph class does not\n\t    properly sanitize the names of get and post variables, leading to a\n\t    cross site scripting vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.securityfocus.com/archive/1/archive/1/508586/100/0/threaded"
+		]
+	},
+	"dates": {
+		"discovery": "2009-12-22",
+		"entry": "2016-03-13"
+	}
 }

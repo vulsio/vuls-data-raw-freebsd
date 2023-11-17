@@ -1,45 +1,45 @@
 {
-  "vid": "a4eb38ea-cc06-11e8-ada4-408d5cf35399",
-  "topic": "tinc -- Buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "tinc"
-      ],
-      "range": [
-        {
-          "lt": "1.0.35"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tinc-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.1pre17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>tinc-vpn.org reports:</p>\n\t<blockquote cite=\"http://www.tinc-vpn.org/news/\">\n\t  <p>The authentication protocol allows an oracle attack that could\npotentially be exploited.</p>\n\t  <p>If a man-in-the-middle has intercepted the TCP connection it\nmight be able to force plaintext UDP packets between two nodes for up to\na PingInterval period.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.tinc-vpn.org/git/browse?p=tinc;a=commit;h=d3297fbd3b8c8c8a4661f5bbf89aca5cacba8b5a",
-      "https://www.tinc-vpn.org/git/browse?p=tinc;a=commit;h=e97943b7cc9c851ae36f5a41e2b6102faa74193f"
-    ],
-    "cvename": [
-      "CVE-2018-16737",
-      "CVE-2018-16738",
-      "CVE-2018-16758"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-10-08",
-    "entry": "2018-10-09"
-  }
+	"vid": "a4eb38ea-cc06-11e8-ada4-408d5cf35399",
+	"topic": "tinc -- Buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"tinc"
+			],
+			"range": [
+				{
+					"lt": "1.0.35"
+				}
+			]
+		},
+		{
+			"name": [
+				"tinc-devel"
+			],
+			"range": [
+				{
+					"lt": "1.1pre17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>tinc-vpn.org reports:</p>\n\t<blockquote cite=\"http://www.tinc-vpn.org/news/\">\n\t  <p>The authentication protocol allows an oracle attack that could\npotentially be exploited.</p>\n\t  <p>If a man-in-the-middle has intercepted the TCP connection it\nmight be able to force plaintext UDP packets between two nodes for up to\na PingInterval period.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.tinc-vpn.org/git/browse?p=tinc;a=commit;h=d3297fbd3b8c8c8a4661f5bbf89aca5cacba8b5a",
+			"https://www.tinc-vpn.org/git/browse?p=tinc;a=commit;h=e97943b7cc9c851ae36f5a41e2b6102faa74193f"
+		],
+		"cvename": [
+			"CVE-2018-16737",
+			"CVE-2018-16738",
+			"CVE-2018-16758"
+		]
+	},
+	"dates": {
+		"discovery": "2018-10-08",
+		"entry": "2018-10-09"
+	}
 }

@@ -1,62 +1,62 @@
 {
-  "vid": "7a8b6170-a889-11ed-bbae-6cc21735f730",
-  "topic": "PostgreSQL server -- Client memory disclosure when connecting, with Kerberos, to modified server.",
-  "affects": [
-    {
-      "name": [
-        "postgresql15-client"
-      ],
-      "range": [
-        {
-          "lt": "15.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql14-client"
-      ],
-      "range": [
-        {
-          "lt": "14.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql13-client"
-      ],
-      "range": [
-        {
-          "lt": "13.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql12-client"
-      ],
-      "range": [
-        {
-          "lt": "12.14"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PostgreSQL Project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2022-41862/\">\n\t  <p>\n\t    A modified, unauthenticated server can send an\n\t    unterminated string during the establishment of Kerberos\n\t    transport encryption. When a libpq client application\n\t    has a Kerberos credential cache and doesn't explicitly\n\t    disable option gssencmode, a server can cause libpq to\n\t    over-read and report an error message containing\n\t    uninitialized bytes from and following its receive\n\t    buffer. If libpq's caller somehow makes that message\n\t    accessible to the attacker, this achieves a disclosure\n\t    of the over-read bytes. We have not confirmed or ruled\n\t    out viability of attacks that arrange for a crash or for\n\t    presence of notable, confidential information in\n\t    disclosed bytes.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.postgresql.org/support/security/CVE-2022-41862/"
-    ],
-    "cvename": [
-      "CVE-2022-41862"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-02-09",
-    "entry": "2023-02-09"
-  }
+	"vid": "7a8b6170-a889-11ed-bbae-6cc21735f730",
+	"topic": "PostgreSQL server -- Client memory disclosure when connecting, with Kerberos, to modified server.",
+	"affects": [
+		{
+			"name": [
+				"postgresql15-client"
+			],
+			"range": [
+				{
+					"lt": "15.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql14-client"
+			],
+			"range": [
+				{
+					"lt": "14.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql13-client"
+			],
+			"range": [
+				{
+					"lt": "13.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql12-client"
+			],
+			"range": [
+				{
+					"lt": "12.14"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PostgreSQL Project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2022-41862/\">\n\t  <p>\n\t    A modified, unauthenticated server can send an\n\t    unterminated string during the establishment of Kerberos\n\t    transport encryption. When a libpq client application\n\t    has a Kerberos credential cache and doesn't explicitly\n\t    disable option gssencmode, a server can cause libpq to\n\t    over-read and report an error message containing\n\t    uninitialized bytes from and following its receive\n\t    buffer. If libpq's caller somehow makes that message\n\t    accessible to the attacker, this achieves a disclosure\n\t    of the over-read bytes. We have not confirmed or ruled\n\t    out viability of attacks that arrange for a crash or for\n\t    presence of notable, confidential information in\n\t    disclosed bytes.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.postgresql.org/support/security/CVE-2022-41862/"
+		],
+		"cvename": [
+			"CVE-2022-41862"
+		]
+	},
+	"dates": {
+		"discovery": "2023-02-09",
+		"entry": "2023-02-09"
+	}
 }

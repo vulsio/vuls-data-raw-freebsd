@@ -1,89 +1,89 @@
 {
-  "vid": "7fcf1727-be71-11db-b2ec-000c6ec775d9",
-  "topic": "php -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php5-imap",
-        "php5-odbc",
-        "php5-session",
-        "php5-shmop",
-        "php5-sqlite",
-        "php5-wddx",
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "5.2.1_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php4-odbc",
-        "php4-session",
-        "php4-shmop",
-        "php4-wddx",
-        "php4"
-      ],
-      "range": [
-        {
-          "lt": "4.4.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_php4-twig",
-        "mod_php4",
-        "mod_php5",
-        "mod_php",
-        "php4-cgi",
-        "php4-cli",
-        "php4-dtc",
-        "php4-horde",
-        "php4-nms",
-        "php5-cgi",
-        "php5-cli",
-        "php5-dtc",
-        "php5-horde",
-        "php5-nms"
-      ],
-      "range": [
-        {
-          "lt": "4.4.5",
-          "ge": "4"
-        },
-        {
-          "lt": "5.2.1_2",
-          "ge": "5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Multiple vulnerabilities have been found in PHP, including:\n\t  buffer overflows, stack overflows, format string, and\n\t  information disclosure vulnerabilities.</p>\n\t<p>The session extension contained <code>safe_mode</code> and\n\t  <code>open_basedir</code> bypasses, but the FreeBSD Security\n\t  Officer does not consider these real security\n\t  vulnerabilities, since <code>safe_mode</code> and\n\t  <code>open_basedir</code> are insecure by design and should\n\t  not be relied upon.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/24089/",
-      "http://www.php.net/releases/4_4_5.php",
-      "http://www.php.net/releases/5_2_1.php"
-    ],
-    "cvename": [
-      "CVE-2007-0905",
-      "CVE-2007-0906",
-      "CVE-2007-0907",
-      "CVE-2007-0908",
-      "CVE-2007-0909",
-      "CVE-2007-0910",
-      "CVE-2007-0988"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-02-09",
-    "entry": "2007-02-17",
-    "modified": "2013-04-01"
-  }
+	"vid": "7fcf1727-be71-11db-b2ec-000c6ec775d9",
+	"topic": "php -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php5-imap",
+				"php5-odbc",
+				"php5-session",
+				"php5-shmop",
+				"php5-sqlite",
+				"php5-wddx",
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "5.2.1_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"php4-odbc",
+				"php4-session",
+				"php4-shmop",
+				"php4-wddx",
+				"php4"
+			],
+			"range": [
+				{
+					"lt": "4.4.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_php4-twig",
+				"mod_php4",
+				"mod_php5",
+				"mod_php",
+				"php4-cgi",
+				"php4-cli",
+				"php4-dtc",
+				"php4-horde",
+				"php4-nms",
+				"php5-cgi",
+				"php5-cli",
+				"php5-dtc",
+				"php5-horde",
+				"php5-nms"
+			],
+			"range": [
+				{
+					"lt": "4.4.5",
+					"ge": "4"
+				},
+				{
+					"lt": "5.2.1_2",
+					"ge": "5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Multiple vulnerabilities have been found in PHP, including:\n\t  buffer overflows, stack overflows, format string, and\n\t  information disclosure vulnerabilities.</p>\n\t<p>The session extension contained <code>safe_mode</code> and\n\t  <code>open_basedir</code> bypasses, but the FreeBSD Security\n\t  Officer does not consider these real security\n\t  vulnerabilities, since <code>safe_mode</code> and\n\t  <code>open_basedir</code> are insecure by design and should\n\t  not be relied upon.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/24089/",
+			"http://www.php.net/releases/4_4_5.php",
+			"http://www.php.net/releases/5_2_1.php"
+		],
+		"cvename": [
+			"CVE-2007-0905",
+			"CVE-2007-0906",
+			"CVE-2007-0907",
+			"CVE-2007-0908",
+			"CVE-2007-0909",
+			"CVE-2007-0910",
+			"CVE-2007-0988"
+		]
+	},
+	"dates": {
+		"discovery": "2007-02-09",
+		"entry": "2007-02-17",
+		"modified": "2013-04-01"
+	}
 }

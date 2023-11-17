@@ -1,82 +1,82 @@
 {
-  "vid": "3b4a6982-0b24-11da-bc08-0001020eed82",
-  "topic": "libgadu -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gaim",
-        "ja-gaim",
-        "ko-gaim",
-        "ru-gaim"
-      ],
-      "range": [
-        {
-          "lt": "1.4.0_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kdenetwork"
-      ],
-      "range": [
-        {
-          "lt": "3.4.2",
-          "gt": "3.2.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "pl-ekg"
-      ],
-      "range": [
-        {
-          "lt": "1.6r3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "centericq"
-      ],
-      "range": [
-        {
-          "lt": "4.21.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Wojtek Kaniewski reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=112198499417250\">\n\t  <p>Multiple vulnerabilities have been found in libgadu, a\n\t    library for handling Gadu-Gadu instant messaging\n\t    protocol. It is a part of ekg, a Gadu-Gadu client, but is\n\t    widely used in other clients. Also some of the user\n\t    contributed scripts were found to behave in an insecure\n\t    manner.</p>\n\t  <ul>\n\t    <li>integer overflow in libgadu (CVE-2005-1852) that could\n\t      be triggered by an incomming message and lead to\n\t      application crash and/or remote code execution</li>\n\t    <li>insecure file creation (CVE-2005-1850) and shell\n\t      command injection (CVE-2005-1851) in other user\n\t      contributed scripts (discovered by Marcin Owsiany and\n\t      Wojtek Kaniewski)</li>\n\t    <li>several signedness errors in libgadu that could be\n\t      triggered by an incomming network data or an application\n\t      passing invalid user input to the library</li>\n\t    <li>memory alignment errors in libgadu that could be\n\t      triggered by an incomming message and lead to bus errors\n\t      on architectures like SPARC</li>\n\t    <li>endianness errors in libgadu that could cause invalid\n\t      behaviour of applications on big-endian\n\t      architectures</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://gaim.sourceforge.net/security/?id=20",
-      "http://www.kde.org/info/security/advisory-20050721-1.txt"
-    ],
-    "cvename": [
-      "CVE-2005-1850",
-      "CVE-2005-1851",
-      "CVE-2005-1852",
-      "CVE-2005-2369",
-      "CVE-2005-2370",
-      "CVE-2005-2448"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112198499417250",
-        "msgid": "42DFF06F.7060005@toxygen.net"
-      }
-    ],
-    "bid": [
-      "14345"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-21",
-    "entry": "2005-08-12",
-    "modified": "2005-10-23"
-  }
+	"vid": "3b4a6982-0b24-11da-bc08-0001020eed82",
+	"topic": "libgadu -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gaim",
+				"ja-gaim",
+				"ko-gaim",
+				"ru-gaim"
+			],
+			"range": [
+				{
+					"lt": "1.4.0_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"kdenetwork"
+			],
+			"range": [
+				{
+					"lt": "3.4.2",
+					"gt": "3.2.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"pl-ekg"
+			],
+			"range": [
+				{
+					"lt": "1.6r3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"centericq"
+			],
+			"range": [
+				{
+					"lt": "4.21.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Wojtek Kaniewski reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=112198499417250\">\n\t  <p>Multiple vulnerabilities have been found in libgadu, a\n\t    library for handling Gadu-Gadu instant messaging\n\t    protocol. It is a part of ekg, a Gadu-Gadu client, but is\n\t    widely used in other clients. Also some of the user\n\t    contributed scripts were found to behave in an insecure\n\t    manner.</p>\n\t  <ul>\n\t    <li>integer overflow in libgadu (CVE-2005-1852) that could\n\t      be triggered by an incomming message and lead to\n\t      application crash and/or remote code execution</li>\n\t    <li>insecure file creation (CVE-2005-1850) and shell\n\t      command injection (CVE-2005-1851) in other user\n\t      contributed scripts (discovered by Marcin Owsiany and\n\t      Wojtek Kaniewski)</li>\n\t    <li>several signedness errors in libgadu that could be\n\t      triggered by an incomming network data or an application\n\t      passing invalid user input to the library</li>\n\t    <li>memory alignment errors in libgadu that could be\n\t      triggered by an incomming message and lead to bus errors\n\t      on architectures like SPARC</li>\n\t    <li>endianness errors in libgadu that could cause invalid\n\t      behaviour of applications on big-endian\n\t      architectures</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://gaim.sourceforge.net/security/?id=20",
+			"http://www.kde.org/info/security/advisory-20050721-1.txt"
+		],
+		"cvename": [
+			"CVE-2005-1850",
+			"CVE-2005-1851",
+			"CVE-2005-1852",
+			"CVE-2005-2369",
+			"CVE-2005-2370",
+			"CVE-2005-2448"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112198499417250",
+				"msgid": "42DFF06F.7060005@toxygen.net"
+			}
+		],
+		"bid": [
+			"14345"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-21",
+		"entry": "2005-08-12",
+		"modified": "2005-10-23"
+	}
 }

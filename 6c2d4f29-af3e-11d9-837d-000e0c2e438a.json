@@ -1,44 +1,44 @@
 {
-  "vid": "6c2d4f29-af3e-11d9-837d-000e0c2e438a",
-  "topic": "gld -- format string and buffer overflow vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gld"
-      ],
-      "range": [
-        {
-          "lt": "1.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gld has been found vulnerable to multiple buffer overflows as\n\t  well as multiple format string vulnerabilities.</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111339935903880\">\n\t  <p>An attacker could exploit this vulnerability to execute\n\t    arbitrary code with the permissions of the user running Gld,\n\t    the default user being root.</p>\n\t</blockquote>\n\t<p>The FreeBSD port defaults to running gld as the root user.\n\t  The risk of exploitation can be minimized by making gld\n\t  listen on the loopback address only, or configure it to only\n\t  accept connections from trusted smtp servers.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-1099",
-      "CVE-2005-1100"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111339935903880",
-        "msgid": "20050412004111.562AC7A890E@ws4-4.us4.outblaze.com"
-      },
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111342432325670",
-        "msgid": "20050413174736.20947.qmail@www.securityfocus.com"
-      }
-    ],
-    "bid": [
-      "13129",
-      "13133"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-04-12",
-    "entry": "2005-04-19"
-  }
+	"vid": "6c2d4f29-af3e-11d9-837d-000e0c2e438a",
+	"topic": "gld -- format string and buffer overflow vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gld"
+			],
+			"range": [
+				{
+					"lt": "1.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gld has been found vulnerable to multiple buffer overflows as\n\t  well as multiple format string vulnerabilities.</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111339935903880\">\n\t  <p>An attacker could exploit this vulnerability to execute\n\t    arbitrary code with the permissions of the user running Gld,\n\t    the default user being root.</p>\n\t</blockquote>\n\t<p>The FreeBSD port defaults to running gld as the root user.\n\t  The risk of exploitation can be minimized by making gld\n\t  listen on the loopback address only, or configure it to only\n\t  accept connections from trusted smtp servers.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-1099",
+			"CVE-2005-1100"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111339935903880",
+				"msgid": "20050412004111.562AC7A890E@ws4-4.us4.outblaze.com"
+			},
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111342432325670",
+				"msgid": "20050413174736.20947.qmail@www.securityfocus.com"
+			}
+		],
+		"bid": [
+			"13129",
+			"13133"
+		]
+	},
+	"dates": {
+		"discovery": "2005-04-12",
+		"entry": "2005-04-19"
+	}
 }

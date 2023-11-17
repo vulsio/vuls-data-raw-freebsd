@@ -1,38 +1,38 @@
 {
-  "vid": "6aa956fb-d97f-11e6-a071-001e67f15f5a",
-  "topic": "RabbitMQ -- Authentication vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rabbitmq"
-      ],
-      "range": [
-        {
-          "lt": "3.5.8",
-          "ge": "3.0.0"
-        },
-        {
-          "lt": "3.6.6",
-          "ge": "3.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Pivotal.io reports:</p>\n\t<blockquote cite=\"https://pivotal.io/security/cve-2016-9877\">\n\t<p>MQTT (MQ Telemetry Transport) connection authentication with a\n\t  username/password pair succeeds if an existing username is\n\t  provided but the password is omitted from the connection\n\t  request. Connections that use TLS with a client-provided\n\t  certificate are not affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://pivotal.io/security/cve-2016-9877",
-      "https://github.com/rabbitmq/rabbitmq-server/releases/tag/rabbitmq_v3_6_6"
-    ],
-    "cvename": [
-      "CVE-2016-9877"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-12-06",
-    "entry": "2017-01-15"
-  }
+	"vid": "6aa956fb-d97f-11e6-a071-001e67f15f5a",
+	"topic": "RabbitMQ -- Authentication vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rabbitmq"
+			],
+			"range": [
+				{
+					"lt": "3.5.8",
+					"ge": "3.0.0"
+				},
+				{
+					"lt": "3.6.6",
+					"ge": "3.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Pivotal.io reports:</p>\n\t<blockquote cite=\"https://pivotal.io/security/cve-2016-9877\">\n\t<p>MQTT (MQ Telemetry Transport) connection authentication with a\n\t  username/password pair succeeds if an existing username is\n\t  provided but the password is omitted from the connection\n\t  request. Connections that use TLS with a client-provided\n\t  certificate are not affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://pivotal.io/security/cve-2016-9877",
+			"https://github.com/rabbitmq/rabbitmq-server/releases/tag/rabbitmq_v3_6_6"
+		],
+		"cvename": [
+			"CVE-2016-9877"
+		]
+	},
+	"dates": {
+		"discovery": "2016-12-06",
+		"entry": "2017-01-15"
+	}
 }

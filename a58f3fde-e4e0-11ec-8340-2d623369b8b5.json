@@ -1,54 +1,54 @@
 {
-  "vid": "a58f3fde-e4e0-11ec-8340-2d623369b8b5",
-  "topic": "e2fsprogs -- out-of-bounds read/write vulnerability",
-  "affects": [
-    {
-      "name": [
-        "e2fsprogs"
-      ],
-      "range": [
-        {
-          "lt": "1.46.5_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "e2fsprogs-nobootfsck"
-      ],
-      "range": [
-        {
-          "lt": "1.46.5_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "e2fsprogs-roothardlinks"
-      ],
-      "range": [
-        {
-          "lt": "1.46.5_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Nils Bars reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=2068113\">\n\t  <p>\n\t    During the processing of [a specially fuzzed disk image], an\n\t    out-of-bounds write is triggered and causes a segmentation fault\n\t    (SIGSEGV).\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2068113",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
-      "https://lore.kernel.org/linux-ext4/20220421173148.20193-1-lczerner@redhat.com/T/#u"
-    ],
-    "cvename": [
-      "CVE-2022-1304"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-03-24",
-    "entry": "2022-06-05"
-  }
+	"vid": "a58f3fde-e4e0-11ec-8340-2d623369b8b5",
+	"topic": "e2fsprogs -- out-of-bounds read/write vulnerability",
+	"affects": [
+		{
+			"name": [
+				"e2fsprogs"
+			],
+			"range": [
+				{
+					"lt": "1.46.5_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"e2fsprogs-nobootfsck"
+			],
+			"range": [
+				{
+					"lt": "1.46.5_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"e2fsprogs-roothardlinks"
+			],
+			"range": [
+				{
+					"lt": "1.46.5_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Nils Bars reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=2068113\">\n\t  <p>\n\t    During the processing of [a specially fuzzed disk image], an\n\t    out-of-bounds write is triggered and causes a segmentation fault\n\t    (SIGSEGV).\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=2068113",
+			"https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
+			"https://lore.kernel.org/linux-ext4/20220421173148.20193-1-lczerner@redhat.com/T/#u"
+		],
+		"cvename": [
+			"CVE-2022-1304"
+		]
+	},
+	"dates": {
+		"discovery": "2022-03-24",
+		"entry": "2022-06-05"
+	}
 }

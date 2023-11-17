@@ -1,32 +1,32 @@
 {
-  "vid": "b46f3a1e-a052-11de-a649-000c2955660f",
-  "topic": "xapian-omega -- cross-site scripting vulnerability",
-  "affects": [
-    {
-      "name": [
-        "xapian-omega"
-      ],
-      "range": [
-        {
-          "lt": "1.0.16"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Olly Betts reports:</p>\n\t<blockquote cite=\"http://lists.xapian.org/pipermail/xapian-discuss/2009-September/007115.html\">\n\t  <p>There's a cross-site scripting issue in Omega - exception\n\t    messages don't currently get HTML entities escaped, but can\n\t    contain CGI parameter values in some cases.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.xapian.org/pipermail/xapian-discuss/2009-September/007115.html"
-    ],
-    "cvename": [
-      "CVE-2009-2947"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-09-09",
-    "entry": "2009-09-13"
-  }
+	"vid": "b46f3a1e-a052-11de-a649-000c2955660f",
+	"topic": "xapian-omega -- cross-site scripting vulnerability",
+	"affects": [
+		{
+			"name": [
+				"xapian-omega"
+			],
+			"range": [
+				{
+					"lt": "1.0.16"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Olly Betts reports:</p>\n\t<blockquote cite=\"http://lists.xapian.org/pipermail/xapian-discuss/2009-September/007115.html\">\n\t  <p>There's a cross-site scripting issue in Omega - exception\n\t    messages don't currently get HTML entities escaped, but can\n\t    contain CGI parameter values in some cases.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.xapian.org/pipermail/xapian-discuss/2009-September/007115.html"
+		],
+		"cvename": [
+			"CVE-2009-2947"
+		]
+	},
+	"dates": {
+		"discovery": "2009-09-09",
+		"entry": "2009-09-13"
+	}
 }

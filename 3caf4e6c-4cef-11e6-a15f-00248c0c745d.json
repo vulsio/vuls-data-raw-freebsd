@@ -1,44 +1,44 @@
 {
-  "vid": "3caf4e6c-4cef-11e6-a15f-00248c0c745d",
-  "topic": "typo3 -- Missing access check in Extbase",
-  "affects": [
-    {
-      "name": [
-        "typo3"
-      ],
-      "range": [
-        {
-          "lt": "7.6.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "typo3-lts"
-      ],
-      "range": [
-        {
-          "lt": "6.2.24"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>TYPO3 reports:</p>\n\t<blockquote cite=\"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-013/\">\n\t  <p>Extbase request handling fails to implement a proper access check for\n    requested controller/ action combinations, which makes it possible for an\n    attacker to execute arbitrary Extbase actions by crafting a special request. To\n    successfully exploit this vulnerability, an attacker must have access to at\n    least one Extbase plugin or module action in a TYPO3 installation. The missing\n    access check inevitably leads to information disclosure or remote code\n    execution, depending on the action that an attacker is able to execute.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-013/",
-      "https://wiki.typo3.org/TYPO3_CMS_7.6.8",
-      "https://wiki.typo3.org/TYPO3_CMS_6.2.24"
-    ],
-    "cvename": [
-      "CVE-2016-5091"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-24",
-    "entry": "2016-07-18"
-  }
+	"vid": "3caf4e6c-4cef-11e6-a15f-00248c0c745d",
+	"topic": "typo3 -- Missing access check in Extbase",
+	"affects": [
+		{
+			"name": [
+				"typo3"
+			],
+			"range": [
+				{
+					"lt": "7.6.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"typo3-lts"
+			],
+			"range": [
+				{
+					"lt": "6.2.24"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>TYPO3 reports:</p>\n\t<blockquote cite=\"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-013/\">\n\t  <p>Extbase request handling fails to implement a proper access check for\n    requested controller/ action combinations, which makes it possible for an\n    attacker to execute arbitrary Extbase actions by crafting a special request. To\n    successfully exploit this vulnerability, an attacker must have access to at\n    least one Extbase plugin or module action in a TYPO3 installation. The missing\n    access check inevitably leads to information disclosure or remote code\n    execution, depending on the action that an attacker is able to execute.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-013/",
+			"https://wiki.typo3.org/TYPO3_CMS_7.6.8",
+			"https://wiki.typo3.org/TYPO3_CMS_6.2.24"
+		],
+		"cvename": [
+			"CVE-2016-5091"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-24",
+		"entry": "2016-07-18"
+	}
 }

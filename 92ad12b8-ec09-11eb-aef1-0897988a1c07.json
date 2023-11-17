@@ -1,32 +1,32 @@
 {
-  "vid": "92ad12b8-ec09-11eb-aef1-0897988a1c07",
-  "topic": "pjsip -- Race condition in SSL socket server",
-  "affects": [
-    {
-      "name": [
-        "pjsip"
-      ],
-      "range": [
-        {
-          "lt": "2.11.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>pjsip reports:</p>\n\t<blockquote cite=\"https://github.com/pjsip/pjproject/security/advisories\">\n\t  <p>There are a couple of issues found in the SSL socket:</p>\n\t  <ul>\n\t    <li>A race condition between callback and destroy, due to the accepted socket having no group lock.</li>\n\t    <li>SSL socket parent/listener may get destroyed during handshake.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/pjsip/pjproject/security/advisories/GHSA-cv8x-p47p-99wr"
-    ],
-    "cvename": [
-      "CVE-2021-32686"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-07-23",
-    "entry": "2021-07-23"
-  }
+	"vid": "92ad12b8-ec09-11eb-aef1-0897988a1c07",
+	"topic": "pjsip -- Race condition in SSL socket server",
+	"affects": [
+		{
+			"name": [
+				"pjsip"
+			],
+			"range": [
+				{
+					"lt": "2.11.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>pjsip reports:</p>\n\t<blockquote cite=\"https://github.com/pjsip/pjproject/security/advisories\">\n\t  <p>There are a couple of issues found in the SSL socket:</p>\n\t  <ul>\n\t    <li>A race condition between callback and destroy, due to the accepted socket having no group lock.</li>\n\t    <li>SSL socket parent/listener may get destroyed during handshake.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/pjsip/pjproject/security/advisories/GHSA-cv8x-p47p-99wr"
+		],
+		"cvename": [
+			"CVE-2021-32686"
+		]
+	},
+	"dates": {
+		"discovery": "2021-07-23",
+		"entry": "2021-07-23"
+	}
 }

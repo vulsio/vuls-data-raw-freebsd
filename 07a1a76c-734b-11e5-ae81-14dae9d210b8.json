@@ -1,54 +1,54 @@
 {
-  "vid": "07a1a76c-734b-11e5-ae81-14dae9d210b8",
-  "topic": "mbedTLS/PolarSSL -- DoS and possible remote code execution",
-  "affects": [
-    {
-      "name": [
-        "polarssl"
-      ],
-      "range": [
-        {
-          "lt": "1.2.17",
-          "ge": "1.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "polarssl13"
-      ],
-      "range": [
-        {
-          "lt": "1.3.14",
-          "ge": "1.3.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mbedtls"
-      ],
-      "range": [
-        {
-          "lt": "2.1.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ARM Limited reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2015-01\">\n\t  <p>When the client creates its ClientHello message, due to\n\t    insufficient bounds checking it can overflow the heap-based buffer\n\t    containing the message while writing some extensions. Two extensions in\n\t    particular could be used by a remote attacker to trigger the overflow:\n\t    the session ticket extension and the server name indication (SNI)\n\t    extension.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2015-01"
-    ],
-    "cvename": [
-      "CVE-2015-5291"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-05",
-    "entry": "2015-10-15"
-  }
+	"vid": "07a1a76c-734b-11e5-ae81-14dae9d210b8",
+	"topic": "mbedTLS/PolarSSL -- DoS and possible remote code execution",
+	"affects": [
+		{
+			"name": [
+				"polarssl"
+			],
+			"range": [
+				{
+					"lt": "1.2.17",
+					"ge": "1.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"polarssl13"
+			],
+			"range": [
+				{
+					"lt": "1.3.14",
+					"ge": "1.3.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"mbedtls"
+			],
+			"range": [
+				{
+					"lt": "2.1.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ARM Limited reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2015-01\">\n\t  <p>When the client creates its ClientHello message, due to\n\t    insufficient bounds checking it can overflow the heap-based buffer\n\t    containing the message while writing some extensions. Two extensions in\n\t    particular could be used by a remote attacker to trigger the overflow:\n\t    the session ticket extension and the server name indication (SNI)\n\t    extension.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2015-01"
+		],
+		"cvename": [
+			"CVE-2015-5291"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-05",
+		"entry": "2015-10-15"
+	}
 }

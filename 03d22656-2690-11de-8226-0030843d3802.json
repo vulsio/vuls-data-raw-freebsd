@@ -1,36 +1,36 @@
 {
-  "vid": "03d22656-2690-11de-8226-0030843d3802",
-  "topic": "drupal6-cck -- cross-site scripting",
-  "affects": [
-    {
-      "name": [
-        "drupal6-cck"
-      ],
-      "range": [
-        {
-          "lt": "2.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Drupal CCK plugin developer reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/406520\">\n\t  <p>The Node reference and User reference sub-modules, which\n\t    are part of the Content Construction Kit (CCK) project, lets\n\t    administrators define node fields that are references to other\n\t    nodes or to users. When displaying a node edit form, the\n\t    titles of candidate referenced nodes or names of candidate\n\t    referenced users are not properly filtered, allowing malicious\n\t    users to inject arbitrary code on those pages. Such a cross\n\t    site scripting (XSS) attack may lead to a malicious user\n\t    gaining full administrative access.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://drupal.org/node/406520"
-    ],
-    "cvename": [
-      "CVE-2009-1069"
-    ],
-    "bid": [
-      "34172"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-03-23",
-    "entry": "2009-04-11",
-    "modified": "2010-05-02"
-  }
+	"vid": "03d22656-2690-11de-8226-0030843d3802",
+	"topic": "drupal6-cck -- cross-site scripting",
+	"affects": [
+		{
+			"name": [
+				"drupal6-cck"
+			],
+			"range": [
+				{
+					"lt": "2.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Drupal CCK plugin developer reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/406520\">\n\t  <p>The Node reference and User reference sub-modules, which\n\t    are part of the Content Construction Kit (CCK) project, lets\n\t    administrators define node fields that are references to other\n\t    nodes or to users. When displaying a node edit form, the\n\t    titles of candidate referenced nodes or names of candidate\n\t    referenced users are not properly filtered, allowing malicious\n\t    users to inject arbitrary code on those pages. Such a cross\n\t    site scripting (XSS) attack may lead to a malicious user\n\t    gaining full administrative access.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://drupal.org/node/406520"
+		],
+		"cvename": [
+			"CVE-2009-1069"
+		],
+		"bid": [
+			"34172"
+		]
+	},
+	"dates": {
+		"discovery": "2009-03-23",
+		"entry": "2009-04-11",
+		"modified": "2010-05-02"
+	}
 }

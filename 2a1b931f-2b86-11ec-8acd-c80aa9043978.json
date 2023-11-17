@@ -1,35 +1,35 @@
 {
-  "vid": "2a1b931f-2b86-11ec-8acd-c80aa9043978",
-  "topic": "OpenSSH -- OpenSSH 6.2 through 8.7 failed to correctly initialise supplemental groups when executing an AuthorizedKeysCommand or AuthorizedPrincipalsCommand",
-  "affects": [
-    {
-      "name": [
-        "openssh-portable",
-        "openssh-portable-hpn",
-        "openssh-portable-gssapi"
-      ],
-      "range": [
-        {
-          "lt": "8.7.p1_2,1",
-          "ge": "6.2.p1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenBSD Project reports:</p>\n\t<blockquote cite=\"https://www.openssh.com/txt/release-8.8\">\n\t    <p>\n\t\tsshd(8) from OpenSSH 6.2 through 8.7 failed to correctly initialise\n\t\tsupplemental groups when executing an AuthorizedKeysCommand or\n\t\tAuthorizedPrincipalsCommand, where a AuthorizedKeysCommandUser or\n\t\tAuthorizedPrincipalsCommandUser directive has been set to run the\n\t\tcommand as a different user. Instead these commands would inherit\n\t\tthe groups that sshd(8) was started with.\n\t    </p>\n\t    <p>\n\t\tDepending on system configuration, inherited groups may allow\n\t\tAuthorizedKeysCommand/AuthorizedPrincipalsCommand helper programs to\n\t\tgain unintended privilege.\n\t    </p>\n\t    <p>\n\t\tNeither AuthorizedKeysCommand nor AuthorizedPrincipalsCommand are\n\t\tenabled by default in sshd_config(5).\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssh.com/txt/release-8.8"
-    ],
-    "cvename": [
-      "CVE-2021-41617"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-09-26",
-    "entry": "2021-10-12"
-  }
+	"vid": "2a1b931f-2b86-11ec-8acd-c80aa9043978",
+	"topic": "OpenSSH -- OpenSSH 6.2 through 8.7 failed to correctly initialise supplemental groups when executing an AuthorizedKeysCommand or AuthorizedPrincipalsCommand",
+	"affects": [
+		{
+			"name": [
+				"openssh-portable",
+				"openssh-portable-hpn",
+				"openssh-portable-gssapi"
+			],
+			"range": [
+				{
+					"lt": "8.7.p1_2,1",
+					"ge": "6.2.p1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenBSD Project reports:</p>\n\t<blockquote cite=\"https://www.openssh.com/txt/release-8.8\">\n\t    <p>\n\t\tsshd(8) from OpenSSH 6.2 through 8.7 failed to correctly initialise\n\t\tsupplemental groups when executing an AuthorizedKeysCommand or\n\t\tAuthorizedPrincipalsCommand, where a AuthorizedKeysCommandUser or\n\t\tAuthorizedPrincipalsCommandUser directive has been set to run the\n\t\tcommand as a different user. Instead these commands would inherit\n\t\tthe groups that sshd(8) was started with.\n\t    </p>\n\t    <p>\n\t\tDepending on system configuration, inherited groups may allow\n\t\tAuthorizedKeysCommand/AuthorizedPrincipalsCommand helper programs to\n\t\tgain unintended privilege.\n\t    </p>\n\t    <p>\n\t\tNeither AuthorizedKeysCommand nor AuthorizedPrincipalsCommand are\n\t\tenabled by default in sshd_config(5).\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssh.com/txt/release-8.8"
+		],
+		"cvename": [
+			"CVE-2021-41617"
+		]
+	},
+	"dates": {
+		"discovery": "2021-09-26",
+		"entry": "2021-10-12"
+	}
 }

@@ -1,29 +1,29 @@
 {
-  "vid": "855cd9fa-c452-11da-8bff-000ae42e9b93",
-  "topic": "pubcookie-login-server -- cross site scripting vulnerability",
-  "affects": [
-    {
-      "name": [
-        "pubcookie-login-server"
-      ],
-      "range": [
-        {
-          "lt": "3.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Nathan Dors of the Pubcookie Project reports:</p>\n\t<blockquote cite=\"\">\n\t  <p> Multiple non-persistent XSS vulnerabilities were found\n\t    in the Pubcookie login server's compiled binary \"index.cgi\"\n\t    CGI program. The CGI program mishandles untrusted data when\n\t    printing responses to the browser. This makes the program\n\t    vulnerable to carefully crafted requests containing script\n\t    or HTML. If an attacker can lure an unsuspecting user to\n\t    visit carefully staged content, the attacker can use it to\n\t    redirect the user to his or her local Pubcookie login page\n\t    and attempt to exploit the XSS vulnerabilities.</p>\n\t  <p> These vulnerabilities are classified as *critical* due\n\t    to the nature and purpose of the Pubcookie login server for\n\t    user authentication and Web Single Sign-on (SSO). Specific\n\t    threats include:</p>\n\t  <ul>\n\t    <li>An attacker who injects malicious script through the\n\t      vulnerabilities might steal senstive user data including\n\t      a user's authentication credentials (usernames and\n\t      passwords);</li>\n\t    <li>An attacker who injects malicious script through the\n\t      vulnerabilities might steal private Pubcookie data\n\t      including a user's authentication assertion (\"granting\")\n\t      cookies and SSO (\"login\") session cookies;</li>\n\t    <li>An attacker who injects HTML tags through the\n\t      vulnerabilities might deface a site's Pubcookie login page\n\t      for a single visit by a single user (i.e. a non-persistent\n\t      defacement).</li>\n\t  </ul>\n\t  <p>At the heart of these threats lies a violation of the\n\t    user's trust in the Pubcookie login server.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cert_vu": [
-      "337585"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-03-06",
-    "entry": "2006-04-05"
-  }
+	"vid": "855cd9fa-c452-11da-8bff-000ae42e9b93",
+	"topic": "pubcookie-login-server -- cross site scripting vulnerability",
+	"affects": [
+		{
+			"name": [
+				"pubcookie-login-server"
+			],
+			"range": [
+				{
+					"lt": "3.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Nathan Dors of the Pubcookie Project reports:</p>\n\t<blockquote cite=\"\">\n\t  <p> Multiple non-persistent XSS vulnerabilities were found\n\t    in the Pubcookie login server's compiled binary \"index.cgi\"\n\t    CGI program. The CGI program mishandles untrusted data when\n\t    printing responses to the browser. This makes the program\n\t    vulnerable to carefully crafted requests containing script\n\t    or HTML. If an attacker can lure an unsuspecting user to\n\t    visit carefully staged content, the attacker can use it to\n\t    redirect the user to his or her local Pubcookie login page\n\t    and attempt to exploit the XSS vulnerabilities.</p>\n\t  <p> These vulnerabilities are classified as *critical* due\n\t    to the nature and purpose of the Pubcookie login server for\n\t    user authentication and Web Single Sign-on (SSO). Specific\n\t    threats include:</p>\n\t  <ul>\n\t    <li>An attacker who injects malicious script through the\n\t      vulnerabilities might steal senstive user data including\n\t      a user's authentication credentials (usernames and\n\t      passwords);</li>\n\t    <li>An attacker who injects malicious script through the\n\t      vulnerabilities might steal private Pubcookie data\n\t      including a user's authentication assertion (\"granting\")\n\t      cookies and SSO (\"login\") session cookies;</li>\n\t    <li>An attacker who injects HTML tags through the\n\t      vulnerabilities might deface a site's Pubcookie login page\n\t      for a single visit by a single user (i.e. a non-persistent\n\t      defacement).</li>\n\t  </ul>\n\t  <p>At the heart of these threats lies a violation of the\n\t    user's trust in the Pubcookie login server.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cert_vu": [
+			"337585"
+		]
+	},
+	"dates": {
+		"discovery": "2006-03-06",
+		"entry": "2006-04-05"
+	}
 }

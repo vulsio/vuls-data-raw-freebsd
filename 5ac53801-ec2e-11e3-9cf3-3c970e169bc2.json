@@ -1,73 +1,73 @@
 {
-  "vid": "5ac53801-ec2e-11e3-9cf3-3c970e169bc2",
-  "topic": "OpenSSL -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1_13",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mingw32-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1h",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "8.4_12",
-          "ge": "8.0"
-        },
-        {
-          "lt": "9.1_15",
-          "ge": "9.1"
-        },
-        {
-          "lt": "9.2_8",
-          "ge": "9.2"
-        },
-        {
-          "lt": "10.0_5",
-          "ge": "10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL Project reports:</p>\n\t<blockquote cite=\"http://www.openssl.org/news/secadv_20140605.txt\">\n\t  <p>An attacker using a carefully crafted handshake can force\n\t    the use of weak keying material in OpenSSL SSL/TLS clients\n\t    and servers. This can be exploited by a Man-in-the-middle\n\t    (MITM) attack where the attacker can decrypt and modify\n\t    traffic from the attacked client and server. [CVE-2014-0224]</p>\n\t  <p>By sending an invalid DTLS handshake to an OpenSSL DTLS\n\t    client the code can be made to recurse eventually crashing\n\t    in a DoS attack. [CVE-2014-0221]</p>\n\t  <p>A buffer overrun attack can be triggered by sending invalid\n\t    DTLS fragments to an OpenSSL DTLS client or server. This is\n\t    potentially exploitable to run arbitrary code on a vulnerable\n\t    client or server. [CVE-2014-0195]</p>\n\t  <p>OpenSSL TLS clients enabling anonymous ECDH ciphersuites are\n\t    subject to a denial of service attack. [CVE-2014-3470]</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openssl.org/news/secadv_20140605.txt"
-    ],
-    "cvename": [
-      "CVE-2014-0195",
-      "CVE-2014-0221",
-      "CVE-2014-0224",
-      "CVE-2014-3470"
-    ],
-    "freebsd_sa": [
-      "SA-14:14.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-06-05",
-    "entry": "2014-06-05"
-  }
+	"vid": "5ac53801-ec2e-11e3-9cf3-3c970e169bc2",
+	"topic": "OpenSSL -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1_13",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mingw32-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1h",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "8.4_12",
+					"ge": "8.0"
+				},
+				{
+					"lt": "9.1_15",
+					"ge": "9.1"
+				},
+				{
+					"lt": "9.2_8",
+					"ge": "9.2"
+				},
+				{
+					"lt": "10.0_5",
+					"ge": "10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL Project reports:</p>\n\t<blockquote cite=\"http://www.openssl.org/news/secadv_20140605.txt\">\n\t  <p>An attacker using a carefully crafted handshake can force\n\t    the use of weak keying material in OpenSSL SSL/TLS clients\n\t    and servers. This can be exploited by a Man-in-the-middle\n\t    (MITM) attack where the attacker can decrypt and modify\n\t    traffic from the attacked client and server. [CVE-2014-0224]</p>\n\t  <p>By sending an invalid DTLS handshake to an OpenSSL DTLS\n\t    client the code can be made to recurse eventually crashing\n\t    in a DoS attack. [CVE-2014-0221]</p>\n\t  <p>A buffer overrun attack can be triggered by sending invalid\n\t    DTLS fragments to an OpenSSL DTLS client or server. This is\n\t    potentially exploitable to run arbitrary code on a vulnerable\n\t    client or server. [CVE-2014-0195]</p>\n\t  <p>OpenSSL TLS clients enabling anonymous ECDH ciphersuites are\n\t    subject to a denial of service attack. [CVE-2014-3470]</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openssl.org/news/secadv_20140605.txt"
+		],
+		"cvename": [
+			"CVE-2014-0195",
+			"CVE-2014-0221",
+			"CVE-2014-0224",
+			"CVE-2014-3470"
+		],
+		"freebsd_sa": [
+			"SA-14:14.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2014-06-05",
+		"entry": "2014-06-05"
+	}
 }

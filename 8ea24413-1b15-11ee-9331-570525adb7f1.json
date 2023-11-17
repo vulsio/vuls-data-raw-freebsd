@@ -1,30 +1,30 @@
 {
-  "vid": "8ea24413-1b15-11ee-9331-570525adb7f1",
-  "topic": "gitea -- avoid open HTTP redirects",
-  "affects": [
-    {
-      "name": [
-        "gitea"
-      ],
-      "range": [
-        {
-          "lt": "1.19.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Gitea team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/25143\">\n\t  <p>If redirect_to parameter has set value starting with\n\t    \\\\example.com redirect will be created with header Location:\n\t    /\\\\example.com that will redirect to example.com domain.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.gitea.io/2023/07/gitea-1.19.4-is-released/",
-      "https://github.com/go-gitea/gitea/releases/tag/v1.19.4"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-06-08",
-    "entry": "2023-07-05"
-  }
+	"vid": "8ea24413-1b15-11ee-9331-570525adb7f1",
+	"topic": "gitea -- avoid open HTTP redirects",
+	"affects": [
+		{
+			"name": [
+				"gitea"
+			],
+			"range": [
+				{
+					"lt": "1.19.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Gitea team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/25143\">\n\t  <p>If redirect_to parameter has set value starting with\n\t    \\\\example.com redirect will be created with header Location:\n\t    /\\\\example.com that will redirect to example.com domain.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.gitea.io/2023/07/gitea-1.19.4-is-released/",
+			"https://github.com/go-gitea/gitea/releases/tag/v1.19.4"
+		]
+	},
+	"dates": {
+		"discovery": "2023-06-08",
+		"entry": "2023-07-05"
+	}
 }

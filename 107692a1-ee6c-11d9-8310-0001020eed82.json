@@ -1,47 +1,47 @@
 {
-  "vid": "107692a1-ee6c-11d9-8310-0001020eed82",
-  "topic": "acroread -- insecure temporary file creation",
-  "affects": [
-    {
-      "name": [
-        "acroread4",
-        "acroread5"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "acroread"
-      ],
-      "range": [
-        {
-          "lt": "7.0.0"
-        },
-        {
-          "lt": "7.0.0,1",
-          "gt": "5.*,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia Research reports:</p>\n\t<blockquote cite=\"http://secunia.com/secunia_research/2005-6/advisory/\">\n\t  <p>Secunia has discovered a security issue in Adobe Reader\n\t    for Linux, which can be exploited by malicious, local\n\t    users to gain knowledge of sensitive information.</p>\n\t  <p>The problem is caused due to temporary files being\n\t    created with permissions based on a user's umask in the\n\t    \"/tmp\" folder under certain circumstances when documents\n\t    are opened.</p>\n\t  <p>Successful exploitation allows an unprivileged user to\n\t    read arbitrary users' documents.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/secunia_research/2005-6/advisory/"
-    ],
-    "cvename": [
-      "CVE-2005-1912"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-29",
-    "entry": "2005-07-06"
-  }
+	"vid": "107692a1-ee6c-11d9-8310-0001020eed82",
+	"topic": "acroread -- insecure temporary file creation",
+	"affects": [
+		{
+			"name": [
+				"acroread4",
+				"acroread5"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"acroread"
+			],
+			"range": [
+				{
+					"lt": "7.0.0"
+				},
+				{
+					"lt": "7.0.0,1",
+					"gt": "5.*,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia Research reports:</p>\n\t<blockquote cite=\"http://secunia.com/secunia_research/2005-6/advisory/\">\n\t  <p>Secunia has discovered a security issue in Adobe Reader\n\t    for Linux, which can be exploited by malicious, local\n\t    users to gain knowledge of sensitive information.</p>\n\t  <p>The problem is caused due to temporary files being\n\t    created with permissions based on a user's umask in the\n\t    \"/tmp\" folder under certain circumstances when documents\n\t    are opened.</p>\n\t  <p>Successful exploitation allows an unprivileged user to\n\t    read arbitrary users' documents.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/secunia_research/2005-6/advisory/"
+		],
+		"cvename": [
+			"CVE-2005-1912"
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-29",
+		"entry": "2005-07-06"
+	}
 }

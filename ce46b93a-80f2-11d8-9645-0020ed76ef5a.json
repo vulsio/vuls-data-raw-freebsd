@@ -1,38 +1,38 @@
 {
-  "vid": "ce46b93a-80f2-11d8-9645-0020ed76ef5a",
-  "topic": "Buffer overflows and format string bugs in Emil",
-  "affects": [
-    {
-      "name": [
-        "emil"
-      ],
-      "range": [
-        {
-          "le": "2.1b9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ulf Härnhammar reports multiple buffer overflows in\n\t  Emil, some of which are triggered during the parsing\n\t  of attachment filenames.  In addition, some format string bugs\n\t  are present in the error reporting code.</p>\n\t<p>Depending upon local configuration, these vulnerabilities\n\t  may be exploited using specially crafted messages in order\n\t  to execute arbitrary code running with the privileges of\n\t  the user invoking Emil.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.debian.org/security/2004/dsa-468"
-    ],
-    "cvename": [
-      "CVE-2004-0152",
-      "CVE-2004-0153"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.netsys.com/pipermail/full-disclosure/2004-March/019325.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-03-24",
-    "entry": "2004-03-28"
-  }
+	"vid": "ce46b93a-80f2-11d8-9645-0020ed76ef5a",
+	"topic": "Buffer overflows and format string bugs in Emil",
+	"affects": [
+		{
+			"name": [
+				"emil"
+			],
+			"range": [
+				{
+					"le": "2.1b9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ulf Härnhammar reports multiple buffer overflows in\n\t  Emil, some of which are triggered during the parsing\n\t  of attachment filenames.  In addition, some format string bugs\n\t  are present in the error reporting code.</p>\n\t<p>Depending upon local configuration, these vulnerabilities\n\t  may be exploited using specially crafted messages in order\n\t  to execute arbitrary code running with the privileges of\n\t  the user invoking Emil.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.debian.org/security/2004/dsa-468"
+		],
+		"cvename": [
+			"CVE-2004-0152",
+			"CVE-2004-0153"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.netsys.com/pipermail/full-disclosure/2004-March/019325.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-03-24",
+		"entry": "2004-03-28"
+	}
 }

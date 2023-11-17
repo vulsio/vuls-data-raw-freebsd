@@ -1,37 +1,37 @@
 {
-  "vid": "2ad25820-c71a-4e6c-bb99-770c66fe496d",
-  "topic": "py-Scrapy -- credentials leak vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py37-Scrapy",
-        "py38-Scrapy",
-        "py39-Scrapy",
-        "py310-Scrapy",
-        "py311-Scrapy"
-      ],
-      "range": [
-        {
-          "lt": "1.8.3"
-        },
-        {
-          "lt": "2.6.2",
-          "ge": "2.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-9x8m-2xpf-crp3\">\n      <p>When the built-in HTTP proxy downloader middleware processes a request with `proxy` metadata, and that `proxy` metadata includes proxy credentials, the built-in HTTP proxy downloader middleware sets the `Proxy-Authentication` header, but only if that header is not already set.</p>\n      <p>There are third-party proxy-rotation downloader middlewares that set different `proxy` metadata every time they process a request.</p>\n      <p>Because of request retries and redirects, the same request can be processed by downloader middlewares more than once, including both the built-in HTTP proxy downloader middleware and any third-party proxy-rotation downloader middleware.</p>\n      <p>These third-party proxy-rotation downloader middlewares could change the `proxy` metadata of a request to a new value, but fail to remove the `Proxy-Authentication` header from the previous value of the `proxy` metadata, causing the credentials of one proxy to be leaked to a different proxy.</p>\n      <p>If you rotate proxies from different proxy providers, and any of those proxies requires credentials, you are affected, unless you are handling proxy rotation as described under **Workarounds** below.</p>\n      <p>If you use a third-party downloader middleware for proxy rotation, the same applies to that downloader middleware, and installing a patched version of Scrapy may not be enough;</p>\n      <p>patching that downloader middlware may be necessary as well.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-9x8m-2xpf-crp3"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-07-29",
-    "entry": "2023-08-31"
-  }
+	"vid": "2ad25820-c71a-4e6c-bb99-770c66fe496d",
+	"topic": "py-Scrapy -- credentials leak vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py37-Scrapy",
+				"py38-Scrapy",
+				"py39-Scrapy",
+				"py310-Scrapy",
+				"py311-Scrapy"
+			],
+			"range": [
+				{
+					"lt": "1.8.3"
+				},
+				{
+					"lt": "2.6.2",
+					"ge": "2.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-9x8m-2xpf-crp3\">\n      <p>When the built-in HTTP proxy downloader middleware processes a request with `proxy` metadata, and that `proxy` metadata includes proxy credentials, the built-in HTTP proxy downloader middleware sets the `Proxy-Authentication` header, but only if that header is not already set.</p>\n      <p>There are third-party proxy-rotation downloader middlewares that set different `proxy` metadata every time they process a request.</p>\n      <p>Because of request retries and redirects, the same request can be processed by downloader middlewares more than once, including both the built-in HTTP proxy downloader middleware and any third-party proxy-rotation downloader middleware.</p>\n      <p>These third-party proxy-rotation downloader middlewares could change the `proxy` metadata of a request to a new value, but fail to remove the `Proxy-Authentication` header from the previous value of the `proxy` metadata, causing the credentials of one proxy to be leaked to a different proxy.</p>\n      <p>If you rotate proxies from different proxy providers, and any of those proxies requires credentials, you are affected, unless you are handling proxy rotation as described under **Workarounds** below.</p>\n      <p>If you use a third-party downloader middleware for proxy rotation, the same applies to that downloader middleware, and installing a patched version of Scrapy may not be enough;</p>\n      <p>patching that downloader middlware may be necessary as well.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-9x8m-2xpf-crp3"
+		]
+	},
+	"dates": {
+		"discovery": "2022-07-29",
+		"entry": "2023-08-31"
+	}
 }

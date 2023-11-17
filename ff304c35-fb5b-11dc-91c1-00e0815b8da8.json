@@ -1,43 +1,43 @@
 {
-  "vid": "ff304c35-fb5b-11dc-91c1-00e0815b8da8",
-  "topic": "silc -- pkcs_decode buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "silc-irssi-client",
-        "silc-client"
-      ],
-      "range": [
-        {
-          "lt": "1.1.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "silc-server"
-      ],
-      "range": [
-        {
-          "lt": "1.1.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Core Security Technologies reports:</p>\n\t<blockquote cite=\"http://www.coresecurity.com/?action=item&amp;id=2206\">\n\t  <p>A remote buffer overflow vulnerability found in a library\n\t    used by both the SILC server and client to process\n\t    packets containing cryptographic material may allow an\n\t    un-authenticated client to executearbitrary code on the\n\t    server with the privileges of the user account running the\n\t    server, or a malicious SILC server to compromise client\n\t    systems and execute arbitrary code with the privileges of\n\t    the user account running the SILC client program.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.coresecurity.com/?action=item&id=2206"
-    ],
-    "bid": [
-      "28373"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-03-25",
-    "entry": "2008-03-26"
-  }
+	"vid": "ff304c35-fb5b-11dc-91c1-00e0815b8da8",
+	"topic": "silc -- pkcs_decode buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"silc-irssi-client",
+				"silc-client"
+			],
+			"range": [
+				{
+					"lt": "1.1.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"silc-server"
+			],
+			"range": [
+				{
+					"lt": "1.1.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Core Security Technologies reports:</p>\n\t<blockquote cite=\"http://www.coresecurity.com/?action=item&amp;id=2206\">\n\t  <p>A remote buffer overflow vulnerability found in a library\n\t    used by both the SILC server and client to process\n\t    packets containing cryptographic material may allow an\n\t    un-authenticated client to executearbitrary code on the\n\t    server with the privileges of the user account running the\n\t    server, or a malicious SILC server to compromise client\n\t    systems and execute arbitrary code with the privileges of\n\t    the user account running the SILC client program.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.coresecurity.com/?action=item&id=2206"
+		],
+		"bid": [
+			"28373"
+		]
+	},
+	"dates": {
+		"discovery": "2008-03-25",
+		"entry": "2008-03-26"
+	}
 }

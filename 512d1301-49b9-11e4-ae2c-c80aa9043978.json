@@ -1,34 +1,34 @@
 {
-  "vid": "512d1301-49b9-11e4-ae2c-c80aa9043978",
-  "topic": "bash -- remote code execution",
-  "affects": [
-    {
-      "name": [
-        "bash",
-        "bash-static"
-      ],
-      "range": [
-        {
-          "lt": "4.3.25_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Note that this is different than the public \"Shellshock\"\n\t  issue.</p>\n\t<p>Specially crafted environment variables could lead to remote\n\t  arbitrary code execution.  This was fixed in bash 4.3.27, however\n\t  the port was patched with a mitigation in 4.3.25_2.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lcamtuf.blogspot.com/2014/09/bash-bug-apply-unofficial-patch-now.html"
-    ],
-    "cvename": [
-      "CVE-2014-6277",
-      "CVE-2014-6278"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-09-27",
-    "entry": "2014-10-01"
-  }
+	"vid": "512d1301-49b9-11e4-ae2c-c80aa9043978",
+	"topic": "bash -- remote code execution",
+	"affects": [
+		{
+			"name": [
+				"bash",
+				"bash-static"
+			],
+			"range": [
+				{
+					"lt": "4.3.25_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Note that this is different than the public \"Shellshock\"\n\t  issue.</p>\n\t<p>Specially crafted environment variables could lead to remote\n\t  arbitrary code execution.  This was fixed in bash 4.3.27, however\n\t  the port was patched with a mitigation in 4.3.25_2.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lcamtuf.blogspot.com/2014/09/bash-bug-apply-unofficial-patch-now.html"
+		],
+		"cvename": [
+			"CVE-2014-6277",
+			"CVE-2014-6278"
+		]
+	},
+	"dates": {
+		"discovery": "2014-09-27",
+		"entry": "2014-10-01"
+	}
 }

@@ -1,53 +1,53 @@
 {
-  "vid": "c9d2e361-32fb-11db-a6e2-000e0c2e438a",
-  "topic": "sppp -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "4.11_20"
-        },
-        {
-          "lt": "5.3_32",
-          "ge": "5.3"
-        },
-        {
-          "lt": "5.4_17",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.5_3",
-          "ge": "5.5"
-        },
-        {
-          "lt": "6.0_10",
-          "ge": "6.0"
-        },
-        {
-          "lt": "6.1_4",
-          "ge": "6.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description</h1>\n\t<p>While processing Link Control Protocol (LCP) configuration\n\t  options received from the remote host, sppp(4) fails to\n\t  correctly validate option lengths.  This may result in data\n\t  being read or written beyond the allocated kernel memory\n\t  buffer.</p>\n\t<h1>Impact</h1>\n\t<p>An attacker able to send LCP packets, including the remote\n\t  end of a sppp(4) connection, can cause the FreeBSD kernel to\n\t  panic.  Such an attacker may also be able to obtain\n\t  sensitive information or gain elevated privileges.</p>\n\t<h1>Workaround</h1>\n\t<p>No workaround is available, but systems which do not use sppp(4) are\n\t  not vulnerable.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2006-4304"
-    ],
-    "freebsd_sa": [
-      "SA-06:18.ppp"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-08-23",
-    "entry": "2006-08-23",
-    "modified": "2006-08-30"
-  }
+	"vid": "c9d2e361-32fb-11db-a6e2-000e0c2e438a",
+	"topic": "sppp -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "4.11_20"
+				},
+				{
+					"lt": "5.3_32",
+					"ge": "5.3"
+				},
+				{
+					"lt": "5.4_17",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.5_3",
+					"ge": "5.5"
+				},
+				{
+					"lt": "6.0_10",
+					"ge": "6.0"
+				},
+				{
+					"lt": "6.1_4",
+					"ge": "6.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description</h1>\n\t<p>While processing Link Control Protocol (LCP) configuration\n\t  options received from the remote host, sppp(4) fails to\n\t  correctly validate option lengths.  This may result in data\n\t  being read or written beyond the allocated kernel memory\n\t  buffer.</p>\n\t<h1>Impact</h1>\n\t<p>An attacker able to send LCP packets, including the remote\n\t  end of a sppp(4) connection, can cause the FreeBSD kernel to\n\t  panic.  Such an attacker may also be able to obtain\n\t  sensitive information or gain elevated privileges.</p>\n\t<h1>Workaround</h1>\n\t<p>No workaround is available, but systems which do not use sppp(4) are\n\t  not vulnerable.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2006-4304"
+		],
+		"freebsd_sa": [
+			"SA-06:18.ppp"
+		]
+	},
+	"dates": {
+		"discovery": "2006-08-23",
+		"entry": "2006-08-23",
+		"modified": "2006-08-30"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "5a35bc56-7027-11e4-a4a3-001999f8d30b",
-  "topic": "yii -- Remote arbitrary PHP code execution",
-  "affects": [
-    {
-      "name": [
-        "yii"
-      ],
-      "range": [
-        {
-          "lt": "1.1.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Yii PHP Framework developers report:</p>\n\t<blockquote cite=\"http://www.yiiframework.com/news/78/yii-1-1-15-is-released-security-fix/\">\n\t  <p>We are releasing Yii 1.1.15 to fix a security issue\n\t  found in 1.1.14. We urge all 1.1.14 users to upgrade their\n\t  Yii to this latest release. Note that the issue only\n\t  affects 1.1.14. All previous releases are not affected.\n\t  Upgrading to this release from 1.1.14 is very safe and\n\t  will not break your existing code.</p>\n\t  <p>The vulnerability is in the CDetailView widget. When\n\t  a Yii application uses this widget and configures the\n\t  \"value\" property of a CDetailView attribute using end\n\t  user inputs, it may allow attackers to potentially execute\n\t  arbitrary PHP scripts on the server. We are not showing\n\t  how to exploit it here to allow users to upgrade before\n\t  details about the exploit become publicly known. To our\n\t  knowledge the details of this issue are only known to\n\t  core team members.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.yiiframework.com/news/78/yii-1-1-15-is-released-security-fix"
-    ],
-    "cvename": [
-      "CVE-2014-4672"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-07-03",
-    "entry": "2014-11-19"
-  }
+	"vid": "5a35bc56-7027-11e4-a4a3-001999f8d30b",
+	"topic": "yii -- Remote arbitrary PHP code execution",
+	"affects": [
+		{
+			"name": [
+				"yii"
+			],
+			"range": [
+				{
+					"lt": "1.1.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Yii PHP Framework developers report:</p>\n\t<blockquote cite=\"http://www.yiiframework.com/news/78/yii-1-1-15-is-released-security-fix/\">\n\t  <p>We are releasing Yii 1.1.15 to fix a security issue\n\t  found in 1.1.14. We urge all 1.1.14 users to upgrade their\n\t  Yii to this latest release. Note that the issue only\n\t  affects 1.1.14. All previous releases are not affected.\n\t  Upgrading to this release from 1.1.14 is very safe and\n\t  will not break your existing code.</p>\n\t  <p>The vulnerability is in the CDetailView widget. When\n\t  a Yii application uses this widget and configures the\n\t  \"value\" property of a CDetailView attribute using end\n\t  user inputs, it may allow attackers to potentially execute\n\t  arbitrary PHP scripts on the server. We are not showing\n\t  how to exploit it here to allow users to upgrade before\n\t  details about the exploit become publicly known. To our\n\t  knowledge the details of this issue are only known to\n\t  core team members.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.yiiframework.com/news/78/yii-1-1-15-is-released-security-fix"
+		],
+		"cvename": [
+			"CVE-2014-4672"
+		]
+	},
+	"dates": {
+		"discovery": "2014-07-03",
+		"entry": "2014-11-19"
+	}
 }

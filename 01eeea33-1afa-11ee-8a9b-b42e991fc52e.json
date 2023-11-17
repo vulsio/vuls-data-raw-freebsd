@@ -1,33 +1,33 @@
 {
-  "vid": "01eeea33-1afa-11ee-8a9b-b42e991fc52e",
-  "topic": "phpldapadmin -- XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpldapadmin-php80",
-        "phpldapadmin-php81"
-      ],
-      "range": [
-        {
-          "lt": "1.2.6.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"https://bugs.launchpad.net/ubuntu/+source/phpldapadmin/+bug/1906474\">\n\t  <p>An XSS issue has been discovered in phpLDAPadmin before 1.2.6.2\n\tthat allows users to store malicious values that may be executed\n\tby other users at a later time via get_request in lib/function.php.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2020-35132"
-    ],
-    "cvename": [
-      "CVE-2020-35132"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-12-11",
-    "entry": "2023-07-05"
-  }
+	"vid": "01eeea33-1afa-11ee-8a9b-b42e991fc52e",
+	"topic": "phpldapadmin -- XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpldapadmin-php80",
+				"phpldapadmin-php81"
+			],
+			"range": [
+				{
+					"lt": "1.2.6.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"https://bugs.launchpad.net/ubuntu/+source/phpldapadmin/+bug/1906474\">\n\t  <p>An XSS issue has been discovered in phpLDAPadmin before 1.2.6.2\n\tthat allows users to store malicious values that may be executed\n\tby other users at a later time via get_request in lib/function.php.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2020-35132"
+		],
+		"cvename": [
+			"CVE-2020-35132"
+		]
+	},
+	"dates": {
+		"discovery": "2020-12-11",
+		"entry": "2023-07-05"
+	}
 }

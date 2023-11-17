@@ -1,29 +1,29 @@
 {
-  "vid": "fab87bff-3ce5-11e7-bf9d-001999f8d30b",
-  "topic": "asterisk -- Memory exhaustion on short SCCP packets",
-  "affects": [
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.15.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>A remote memory exhaustion can be triggered by sending\n\t  an SCCP packet to Asterisk system with \"chan_skinny\"\n\t  enabled that is larger than the length of the SCCP header\n\t  but smaller than the packet length specified in the header.\n\t  The loop that reads the rest of the packet doesn't detect\n\t  that the call to read() returned end-of-file before the\n\t  expected number of bytes and continues infinitely. The\n\t  \"partial data\" message logging in that tight loop causes\n\t  Asterisk to exhaust all available memory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2017-004.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-13",
-    "entry": "2017-05-19"
-  }
+	"vid": "fab87bff-3ce5-11e7-bf9d-001999f8d30b",
+	"topic": "asterisk -- Memory exhaustion on short SCCP packets",
+	"affects": [
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.15.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>A remote memory exhaustion can be triggered by sending\n\t  an SCCP packet to Asterisk system with \"chan_skinny\"\n\t  enabled that is larger than the length of the SCCP header\n\t  but smaller than the packet length specified in the header.\n\t  The loop that reads the rest of the packet doesn't detect\n\t  that the call to read() returned end-of-file before the\n\t  expected number of bytes and continues infinitely. The\n\t  \"partial data\" message logging in that tight loop causes\n\t  Asterisk to exhaust all available memory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2017-004.html"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-13",
+		"entry": "2017-05-19"
+	}
 }

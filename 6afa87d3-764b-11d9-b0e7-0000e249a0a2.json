@@ -1,47 +1,47 @@
 {
-  "vid": "6afa87d3-764b-11d9-b0e7-0000e249a0a2",
-  "topic": "python -- SimpleXMLRPCServer.py allows unrestricted traversal",
-  "affects": [
-    {
-      "name": [
-        "python",
-        "python+ipv6"
-      ],
-      "range": [
-        {
-          "lt": "2.2.3_7",
-          "ge": "2.2"
-        },
-        {
-          "lt": "2.3.4_4",
-          "ge": "2.3"
-        },
-        {
-          "lt": "2.4_1",
-          "ge": "2.4"
-        },
-        {
-          "lt": "2.5.a0.20050129_1",
-          "ge": "2.5.a0.20050129"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>According to Python Security Advisory PSF-2005-001,</p>\n\t<blockquote cite=\"http://www.python.org/security/PSF-2005-001/\">\n\t  <p>The Python development team has discovered a flaw in\n\t    the <code>SimpleXMLRPCServer</code> library module which\n\t    can give remote attackers access to internals of the\n\t    registered object or its module or possibly other modules.\n\t    The flaw only affects Python XML-RPC servers that use the\n\t    <code>register_instance()</code> method to register an object\n\t    without a <code>_dispatch()</code> method.\tServers using\n\t    only <code>register_function()</code> are not affected.</p>\n\t  <p>On vulnerable XML-RPC servers, a remote attacker may\n\t    be able to view or modify globals of the module(s)\n\t    containing the registered instance's class(es), potentially\n\t    leading to data loss or arbitrary code execution.  If the\n\t    registered object is a module, the danger is particularly\n\t    serious.  For example, if the registered module imports\n\t    the <code>os</code> module, an attacker could invoke the\n\t    <code>os.system()</code> function.</p>\n\t</blockquote>\n\t<p><strong>Note:</strong> This vulnerability affects your\n\t  system only if you're running\n\t  <code>SimpleXMLRPCServer</code>-based server.  This isn't\n\t  harmful at all if you don't run any internet server written\n\t  in Python or your server doesn't serve in XML-RPC protocol.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.python.org/security/PSF-2005-001/"
-    ],
-    "cvename": [
-      "CVE-2005-0089"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-03",
-    "entry": "2005-02-03",
-    "modified": "2006-10-08"
-  }
+	"vid": "6afa87d3-764b-11d9-b0e7-0000e249a0a2",
+	"topic": "python -- SimpleXMLRPCServer.py allows unrestricted traversal",
+	"affects": [
+		{
+			"name": [
+				"python",
+				"python+ipv6"
+			],
+			"range": [
+				{
+					"lt": "2.2.3_7",
+					"ge": "2.2"
+				},
+				{
+					"lt": "2.3.4_4",
+					"ge": "2.3"
+				},
+				{
+					"lt": "2.4_1",
+					"ge": "2.4"
+				},
+				{
+					"lt": "2.5.a0.20050129_1",
+					"ge": "2.5.a0.20050129"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>According to Python Security Advisory PSF-2005-001,</p>\n\t<blockquote cite=\"http://www.python.org/security/PSF-2005-001/\">\n\t  <p>The Python development team has discovered a flaw in\n\t    the <code>SimpleXMLRPCServer</code> library module which\n\t    can give remote attackers access to internals of the\n\t    registered object or its module or possibly other modules.\n\t    The flaw only affects Python XML-RPC servers that use the\n\t    <code>register_instance()</code> method to register an object\n\t    without a <code>_dispatch()</code> method.\tServers using\n\t    only <code>register_function()</code> are not affected.</p>\n\t  <p>On vulnerable XML-RPC servers, a remote attacker may\n\t    be able to view or modify globals of the module(s)\n\t    containing the registered instance's class(es), potentially\n\t    leading to data loss or arbitrary code execution.  If the\n\t    registered object is a module, the danger is particularly\n\t    serious.  For example, if the registered module imports\n\t    the <code>os</code> module, an attacker could invoke the\n\t    <code>os.system()</code> function.</p>\n\t</blockquote>\n\t<p><strong>Note:</strong> This vulnerability affects your\n\t  system only if you're running\n\t  <code>SimpleXMLRPCServer</code>-based server.  This isn't\n\t  harmful at all if you don't run any internet server written\n\t  in Python or your server doesn't serve in XML-RPC protocol.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.python.org/security/PSF-2005-001/"
+		],
+		"cvename": [
+			"CVE-2005-0089"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-03",
+		"entry": "2005-02-03",
+		"modified": "2006-10-08"
+	}
 }

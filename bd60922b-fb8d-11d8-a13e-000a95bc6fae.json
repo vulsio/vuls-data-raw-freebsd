@@ -1,36 +1,36 @@
 {
-  "vid": "bd60922b-fb8d-11d8-a13e-000a95bc6fae",
-  "topic": "krb5 -- ASN.1 decoder denial-of-service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "krb5"
-      ],
-      "range": [
-        {
-          "ge": "1.2.2",
-          "le": "1.3.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>An advisory published by the MIT Kerberos team says:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-003-asn1.txt\">\n\t  <p>The ASN.1 decoder library in the MIT Kerberos 5 distribution\n\t    is vulnerable to a denial-of-service attack causing an infinite\n\t    loop in the decoder.  The KDC is vulnerable to this attack.</p>\n\t  <p>An unauthenticated remote attacker can cause a KDC or application\n\t    server to hang inside an infinite loop.</p>\n\t  <p>An attacker impersonating a legitimate KDC or application\n\t    server may cause a client program to hang inside an infinite\n\t    loop.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-003-asn1.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0644"
-    ],
-    "cert_vu": [
-      "550464"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-31",
-    "entry": "2004-08-31"
-  }
+	"vid": "bd60922b-fb8d-11d8-a13e-000a95bc6fae",
+	"topic": "krb5 -- ASN.1 decoder denial-of-service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"krb5"
+			],
+			"range": [
+				{
+					"ge": "1.2.2",
+					"le": "1.3.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>An advisory published by the MIT Kerberos team says:</p>\n\t<blockquote cite=\"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-003-asn1.txt\">\n\t  <p>The ASN.1 decoder library in the MIT Kerberos 5 distribution\n\t    is vulnerable to a denial-of-service attack causing an infinite\n\t    loop in the decoder.  The KDC is vulnerable to this attack.</p>\n\t  <p>An unauthenticated remote attacker can cause a KDC or application\n\t    server to hang inside an infinite loop.</p>\n\t  <p>An attacker impersonating a legitimate KDC or application\n\t    server may cause a client program to hang inside an infinite\n\t    loop.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-003-asn1.txt"
+		],
+		"cvename": [
+			"CVE-2004-0644"
+		],
+		"cert_vu": [
+			"550464"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-31",
+		"entry": "2004-08-31"
+	}
 }

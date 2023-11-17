@@ -1,31 +1,31 @@
 {
-  "vid": "150e4548-8950-11dd-a6fe-0030843d3802",
-  "topic": "phpmyadmin -- Cross-Site Scripting Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "2.11.9.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/Advisories/31974/\">\n\t  <p>An error exists in the \"PMA_escapeJsString()\" function in\n\t    libraries/js_escape.lib.php, which can be exploited to bypass\n\t    certain filters and execute arbitrary HTML and script code in a\n\t    user's browser session in context of an affected site when e.g.\n\t    Microsoft Internet Explorer is used.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/Advisories/31974/",
-      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-8"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-09-23",
-    "entry": "2008-09-23",
-    "modified": "2008-10-03"
-  }
+	"vid": "150e4548-8950-11dd-a6fe-0030843d3802",
+	"topic": "phpmyadmin -- Cross-Site Scripting Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "2.11.9.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/Advisories/31974/\">\n\t  <p>An error exists in the \"PMA_escapeJsString()\" function in\n\t    libraries/js_escape.lib.php, which can be exploited to bypass\n\t    certain filters and execute arbitrary HTML and script code in a\n\t    user's browser session in context of an affected site when e.g.\n\t    Microsoft Internet Explorer is used.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/Advisories/31974/",
+			"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-8"
+		]
+	},
+	"dates": {
+		"discovery": "2008-09-23",
+		"entry": "2008-09-23",
+		"modified": "2008-10-03"
+	}
 }

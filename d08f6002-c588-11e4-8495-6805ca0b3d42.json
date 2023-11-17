@@ -1,46 +1,46 @@
 {
-  "vid": "d08f6002-c588-11e4-8495-6805ca0b3d42",
-  "topic": "rt -- Remote DoS, Information disclosure and Session Hijackingvulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "rt42"
-      ],
-      "range": [
-        {
-          "lt": "4.2.10",
-          "ge": "4.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rt40"
-      ],
-      "range": [
-        {
-          "lt": "4.0.23",
-          "ge": "4.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Best Practical reports:</p>\n\t<blockquote cite=\"http://blog.bestpractical.com/2015/02/security-vulnerabilities-in-rt.html\">\n\t  <p>RT 3.0.0 and above, if running on Perl 5.14.0 or higher,\n\t    are vulnerable to a remote denial-of-service via the email\n\t    gateway; any installation which accepts mail from untrusted\n\t    sources is vulnerable, regardless of the permissions\n\t    configuration inside RT. This denial-of-service may\n\t    encompass both CPU and disk usage, depending on RT's logging\n\t    configuration. This vulnerability is assigned\n\t    CVE-2014-9472.</p>\n\t  <p>RT 3.8.8 and above are vulnerable to an information\n\t    disclosure attack which may reveal RSS feeds URLs, and thus\n\t    ticket data; this vulnerability is assigned\n\t    CVE-2015-1165. RSS feed URLs can also be leveraged to\n\t    perform session hijacking, allowing a user with the URL to\n\t    log in as the user that created the feed; this vulnerability\n\t    is assigned CVE-2015-1464.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://blog.bestpractical.com/2015/02/security-vulnerabilities-in-rt.html"
-    ],
-    "cvename": [
-      "CVE-2014-9472",
-      "CVE-2015-1165",
-      "CVE-2015-1464"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-02-26",
-    "entry": "2015-03-08"
-  }
+	"vid": "d08f6002-c588-11e4-8495-6805ca0b3d42",
+	"topic": "rt -- Remote DoS, Information disclosure and Session Hijackingvulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"rt42"
+			],
+			"range": [
+				{
+					"lt": "4.2.10",
+					"ge": "4.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"rt40"
+			],
+			"range": [
+				{
+					"lt": "4.0.23",
+					"ge": "4.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Best Practical reports:</p>\n\t<blockquote cite=\"http://blog.bestpractical.com/2015/02/security-vulnerabilities-in-rt.html\">\n\t  <p>RT 3.0.0 and above, if running on Perl 5.14.0 or higher,\n\t    are vulnerable to a remote denial-of-service via the email\n\t    gateway; any installation which accepts mail from untrusted\n\t    sources is vulnerable, regardless of the permissions\n\t    configuration inside RT. This denial-of-service may\n\t    encompass both CPU and disk usage, depending on RT's logging\n\t    configuration. This vulnerability is assigned\n\t    CVE-2014-9472.</p>\n\t  <p>RT 3.8.8 and above are vulnerable to an information\n\t    disclosure attack which may reveal RSS feeds URLs, and thus\n\t    ticket data; this vulnerability is assigned\n\t    CVE-2015-1165. RSS feed URLs can also be leveraged to\n\t    perform session hijacking, allowing a user with the URL to\n\t    log in as the user that created the feed; this vulnerability\n\t    is assigned CVE-2015-1464.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://blog.bestpractical.com/2015/02/security-vulnerabilities-in-rt.html"
+		],
+		"cvename": [
+			"CVE-2014-9472",
+			"CVE-2015-1165",
+			"CVE-2015-1464"
+		]
+	},
+	"dates": {
+		"discovery": "2015-02-26",
+		"entry": "2015-03-08"
+	}
 }

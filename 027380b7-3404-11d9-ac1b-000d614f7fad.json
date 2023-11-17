@@ -1,33 +1,33 @@
 {
-  "vid": "027380b7-3404-11d9-ac1b-000d614f7fad",
-  "topic": "hafiye -- lack of terminal escape sequence filtering",
-  "affects": [
-    {
-      "name": [
-        "hafiye"
-      ],
-      "range": [
-        {
-          "lt": "1.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A siyahsapka.org advisory reads:</p>\n\t<blockquote cite=\"http://deicide.siyahsapka.org/hafiye_esc.txt\">\n\t  <p>Hafiye-1.0 doesnt filter the payload when printing it to\n\t    the terminal.  A malicious attacker can send packets with\n\t    escape sequence payloads to exploit this vulnerability.</p>\n\t  <p>If Hafiye has been started with -n packet count option ,\n\t    the vulnerability could allow remote code execution.  For\n\t    remote code execution the victim must press Enter after\n\t    program exit.</p>\n\t</blockquote>\n\t<p>Note that it appears that this bug can only be exploited in\n\t  conjunction with a terminal emulator that honors the\n\t  appropriate escape sequences.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://deicide.siyahsapka.org/hafiye_esc.txt",
-      "http://www.enderunix.org/hafiye/"
-    ],
-    "freebsd_pr": [
-      "ports/70978"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-23",
-    "entry": "2004-11-11"
-  }
+	"vid": "027380b7-3404-11d9-ac1b-000d614f7fad",
+	"topic": "hafiye -- lack of terminal escape sequence filtering",
+	"affects": [
+		{
+			"name": [
+				"hafiye"
+			],
+			"range": [
+				{
+					"lt": "1.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A siyahsapka.org advisory reads:</p>\n\t<blockquote cite=\"http://deicide.siyahsapka.org/hafiye_esc.txt\">\n\t  <p>Hafiye-1.0 doesnt filter the payload when printing it to\n\t    the terminal.  A malicious attacker can send packets with\n\t    escape sequence payloads to exploit this vulnerability.</p>\n\t  <p>If Hafiye has been started with -n packet count option ,\n\t    the vulnerability could allow remote code execution.  For\n\t    remote code execution the victim must press Enter after\n\t    program exit.</p>\n\t</blockquote>\n\t<p>Note that it appears that this bug can only be exploited in\n\t  conjunction with a terminal emulator that honors the\n\t  appropriate escape sequences.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://deicide.siyahsapka.org/hafiye_esc.txt",
+			"http://www.enderunix.org/hafiye/"
+		],
+		"freebsd_pr": [
+			"ports/70978"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-23",
+		"entry": "2004-11-11"
+	}
 }

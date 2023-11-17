@@ -1,80 +1,80 @@
 {
-  "vid": "dd7aa4f1-102f-11d9-8a8a-000c41e2cdad",
-  "topic": "php -- memory_limit related vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mod_php4-twig",
-        "php4",
-        "php4-cgi",
-        "php4-cli",
-        "php4-dtc",
-        "php4-horde",
-        "php4-nms"
-      ],
-      "range": [
-        {
-          "le": "4.3.7_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_php4"
-      ],
-      "range": [
-        {
-          "le": "4.3.7_3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php5",
-        "php5-cgi",
-        "php5-cli"
-      ],
-      "range": [
-        {
-          "le": "5.0.0.r3_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_php5"
-      ],
-      "range": [
-        {
-          "le": "5.0.0.r3_2,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stefan Esser of e-matters discovered a condition within PHP\n\t  that may lead to remote execution of arbitrary code.\tThe\n\t  memory_limit facility is used to notify functions when memory\n\t  contraints have been met. Under certain conditions, the entry\n\t  into this facility is able to interrupt functions such as\n\t  zend_hash_init() at locations not suitable for interruption.\n\t  The result would leave these functions in a vulnerable state.</p>\n\t<blockquote cite=\"http://security.e-matters.de/advisories/112004.html\">\n\t  <p>An attacker that is able to trigger the memory_limit abort\n\t    within zend_hash_init() and is additionally able to control\n\t    the heap before the HashTable itself is allocated, is able to\n\t    supply his own HashTable destructor pointer. [...]</p>\n\t  <p>All mentioned places outside of the extensions are quite easy\n\t    to exploit, because the memory allocation up to those places\n\t    is deterministic and quite static throughout different PHP\n\t    versions. [...]</p>\n\t  <p>Because the exploit itself consist of supplying an arbitrary\n\t    destructor pointer this bug is exploitable on any platform.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://security.e-matters.de/advisories/112004.html"
-    ],
-    "cvename": [
-      "CVE-2004-0594"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=108981780109154",
-        "msgid": "20040713225329.GA26865@e-matters.de"
-      }
-    ],
-    "bid": [
-      "10725"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-07-07",
-    "entry": "2004-09-27",
-    "modified": "2004-10-02"
-  }
+	"vid": "dd7aa4f1-102f-11d9-8a8a-000c41e2cdad",
+	"topic": "php -- memory_limit related vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mod_php4-twig",
+				"php4",
+				"php4-cgi",
+				"php4-cli",
+				"php4-dtc",
+				"php4-horde",
+				"php4-nms"
+			],
+			"range": [
+				{
+					"le": "4.3.7_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_php4"
+			],
+			"range": [
+				{
+					"le": "4.3.7_3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"php5",
+				"php5-cgi",
+				"php5-cli"
+			],
+			"range": [
+				{
+					"le": "5.0.0.r3_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_php5"
+			],
+			"range": [
+				{
+					"le": "5.0.0.r3_2,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stefan Esser of e-matters discovered a condition within PHP\n\t  that may lead to remote execution of arbitrary code.\tThe\n\t  memory_limit facility is used to notify functions when memory\n\t  contraints have been met. Under certain conditions, the entry\n\t  into this facility is able to interrupt functions such as\n\t  zend_hash_init() at locations not suitable for interruption.\n\t  The result would leave these functions in a vulnerable state.</p>\n\t<blockquote cite=\"http://security.e-matters.de/advisories/112004.html\">\n\t  <p>An attacker that is able to trigger the memory_limit abort\n\t    within zend_hash_init() and is additionally able to control\n\t    the heap before the HashTable itself is allocated, is able to\n\t    supply his own HashTable destructor pointer. [...]</p>\n\t  <p>All mentioned places outside of the extensions are quite easy\n\t    to exploit, because the memory allocation up to those places\n\t    is deterministic and quite static throughout different PHP\n\t    versions. [...]</p>\n\t  <p>Because the exploit itself consist of supplying an arbitrary\n\t    destructor pointer this bug is exploitable on any platform.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://security.e-matters.de/advisories/112004.html"
+		],
+		"cvename": [
+			"CVE-2004-0594"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=108981780109154",
+				"msgid": "20040713225329.GA26865@e-matters.de"
+			}
+		],
+		"bid": [
+			"10725"
+		]
+	},
+	"dates": {
+		"discovery": "2004-07-07",
+		"entry": "2004-09-27",
+		"modified": "2004-10-02"
+	}
 }

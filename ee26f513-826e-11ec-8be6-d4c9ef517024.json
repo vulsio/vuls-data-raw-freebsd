@@ -1,43 +1,43 @@
 {
-  "vid": "ee26f513-826e-11ec-8be6-d4c9ef517024",
-  "topic": "Rust -- Race condition enabling symlink following",
-  "affects": [
-    {
-      "name": [
-        "rust"
-      ],
-      "range": [
-        {
-          "lt": "1.58.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rust-nightly"
-      ],
-      "range": [
-        {
-          "lt": "1.60.0.20220202"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"https://blog.rust-lang.org/2022/01/20/cve-2022-21658.html\">\n\t  <p>The Rust Security Response WG was notified that the\n\t    std::fs::remove_dir_all standard library function is vulnerable to a\n\t    race condition enabling symlink following (CWE-363). An attacker could\n\t    use this security issue to trick a privileged program into deleting\n\t    files and directories the attacker couldn't otherwise access or\n\t    delete.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.rust-lang.org/2022/01/20/cve-2022-21658.html"
-    ],
-    "cvename": [
-      "CVE-2022-21658"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-01-20",
-    "entry": "2022-01-31",
-    "modified": "2022-02-03"
-  }
+	"vid": "ee26f513-826e-11ec-8be6-d4c9ef517024",
+	"topic": "Rust -- Race condition enabling symlink following",
+	"affects": [
+		{
+			"name": [
+				"rust"
+			],
+			"range": [
+				{
+					"lt": "1.58.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"rust-nightly"
+			],
+			"range": [
+				{
+					"lt": "1.60.0.20220202"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"https://blog.rust-lang.org/2022/01/20/cve-2022-21658.html\">\n\t  <p>The Rust Security Response WG was notified that the\n\t    std::fs::remove_dir_all standard library function is vulnerable to a\n\t    race condition enabling symlink following (CWE-363). An attacker could\n\t    use this security issue to trick a privileged program into deleting\n\t    files and directories the attacker couldn't otherwise access or\n\t    delete.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.rust-lang.org/2022/01/20/cve-2022-21658.html"
+		],
+		"cvename": [
+			"CVE-2022-21658"
+		]
+	},
+	"dates": {
+		"discovery": "2022-01-20",
+		"entry": "2022-01-31",
+		"modified": "2022-02-03"
+	}
 }

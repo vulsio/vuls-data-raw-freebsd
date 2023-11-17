@@ -1,52 +1,52 @@
 {
-  "vid": "e59fed96-60da-11ee-9102-000c29de725b",
-  "topic": "mediawiki -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mediawiki135"
-      ],
-      "range": [
-        {
-          "lt": "1.35.13"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mediawiki139"
-      ],
-      "range": [
-        {
-          "lt": "1.39.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mediawiki140"
-      ],
-      "range": [
-        {
-          "lt": "1.40.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mediawikwi reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/BRWOWACCHMYRIS7JRTT6XD44X3362MVL/\">\n\t  <p>(T264765, CVE-2023-PENDING) SECURITY: Users without correct permission\n\t    are incorrectly shown MediaWiki:Missing-revision-permission.</p>\n\t  <p>(T333050, CVE-2023-PENDING) SECURITY: Fix infinite loop for\n\t    self-redirects with variants conversion.</p>\n\t  <p>(T340217, CVE-2023-PENDING) SECURITY: Vector 2022: Numerous unescaped\n\t    messages leading to potential XSS.</p>\n\t  <p>(T340220, CVE-2023-PENDING) SECURITY: Vector 2022: vector-intro-page\n\t    message is assumed to yield a valid title.</p>\n\t  <p>(T340221, CVE-2023-PENDING) SECURITY: XSS via\n\t    'youhavenewmessagesmanyusers' and 'youhavenewmessages' messages.</p>\n\t  <p>(T341529, CVE-2023-PENDING) SECURITY: diff-multi-sameuser (\"X\n\t    intermediate revisions by the same user not shown\") ignores username\n\t    suppression.</p>\n\t  <p>(T341565, CVE-2023-3550) SECURITY: Stored XSS when uploading crafted XML\n\t    file to Special:Upload (non-standard configuration).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/BRWOWACCHMYRIS7JRTT6XD44X3362MVL/"
-    ],
-    "cvename": [
-      "CVE-2023-3550"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-09-01",
-    "entry": "2023-10-02"
-  }
+	"vid": "e59fed96-60da-11ee-9102-000c29de725b",
+	"topic": "mediawiki -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mediawiki135"
+			],
+			"range": [
+				{
+					"lt": "1.35.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"mediawiki139"
+			],
+			"range": [
+				{
+					"lt": "1.39.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"mediawiki140"
+			],
+			"range": [
+				{
+					"lt": "1.40.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mediawikwi reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/BRWOWACCHMYRIS7JRTT6XD44X3362MVL/\">\n\t  <p>(T264765, CVE-2023-PENDING) SECURITY: Users without correct permission\n\t    are incorrectly shown MediaWiki:Missing-revision-permission.</p>\n\t  <p>(T333050, CVE-2023-PENDING) SECURITY: Fix infinite loop for\n\t    self-redirects with variants conversion.</p>\n\t  <p>(T340217, CVE-2023-PENDING) SECURITY: Vector 2022: Numerous unescaped\n\t    messages leading to potential XSS.</p>\n\t  <p>(T340220, CVE-2023-PENDING) SECURITY: Vector 2022: vector-intro-page\n\t    message is assumed to yield a valid title.</p>\n\t  <p>(T340221, CVE-2023-PENDING) SECURITY: XSS via\n\t    'youhavenewmessagesmanyusers' and 'youhavenewmessages' messages.</p>\n\t  <p>(T341529, CVE-2023-PENDING) SECURITY: diff-multi-sameuser (\"X\n\t    intermediate revisions by the same user not shown\") ignores username\n\t    suppression.</p>\n\t  <p>(T341565, CVE-2023-3550) SECURITY: Stored XSS when uploading crafted XML\n\t    file to Special:Upload (non-standard configuration).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/BRWOWACCHMYRIS7JRTT6XD44X3362MVL/"
+		],
+		"cvename": [
+			"CVE-2023-3550"
+		]
+	},
+	"dates": {
+		"discovery": "2023-09-01",
+		"entry": "2023-10-02"
+	}
 }

@@ -1,40 +1,40 @@
 {
-  "vid": "3d6be69b-d365-11e6-a071-001e67f15f5a",
-  "topic": "Irssi -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "irssi"
-      ],
-      "range": [
-        {
-          "lt": "0.8.21"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_01.txt\">\n\t  <p>Five vulnerabilities have been located in Irssi</p>\n\t  <ul>\n\t    <li>A NULL pointer dereference in the nickcmp function found by\n\t      Joseph Bisch. (CWE-690)</li>\n\t    <li>Use after free when receiving invalid nick message (Issue #466,\n\t      CWE-146)</li>\n\t    <li>Out of bounds read in certain incomplete control codes found\n\t      by Joseph Bisch. (CWE-126)</li>\n\t    <li>Out of bounds read in certain incomplete character sequences\n\t      found by Hanno Böck and independently by J. Bisch. (CWE-126)</li>\n\t    <li>Out of bounds read when Printing the value '%['. Found by\n\t      Hanno Böck. (CWE-126)</li>\n\t  </ul>\n\t  <p>These issues may result in denial of service (remote crash).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://irssi.org/security/irssi_sa_2017_01.txt"
-    ],
-    "cvename": [
-      "CVE-2017-5193",
-      "CVE-2017-5194",
-      "CVE-2017-5195",
-      "CVE-2017-5196",
-      "CVE-2017-5356"
-    ],
-    "freebsd_pr": [
-      "ports/215800"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-01-03",
-    "entry": "2017-01-05",
-    "modified": "2017-01-15"
-  }
+	"vid": "3d6be69b-d365-11e6-a071-001e67f15f5a",
+	"topic": "Irssi -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"irssi"
+			],
+			"range": [
+				{
+					"lt": "0.8.21"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_01.txt\">\n\t  <p>Five vulnerabilities have been located in Irssi</p>\n\t  <ul>\n\t    <li>A NULL pointer dereference in the nickcmp function found by\n\t      Joseph Bisch. (CWE-690)</li>\n\t    <li>Use after free when receiving invalid nick message (Issue #466,\n\t      CWE-146)</li>\n\t    <li>Out of bounds read in certain incomplete control codes found\n\t      by Joseph Bisch. (CWE-126)</li>\n\t    <li>Out of bounds read in certain incomplete character sequences\n\t      found by Hanno Böck and independently by J. Bisch. (CWE-126)</li>\n\t    <li>Out of bounds read when Printing the value '%['. Found by\n\t      Hanno Böck. (CWE-126)</li>\n\t  </ul>\n\t  <p>These issues may result in denial of service (remote crash).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://irssi.org/security/irssi_sa_2017_01.txt"
+		],
+		"cvename": [
+			"CVE-2017-5193",
+			"CVE-2017-5194",
+			"CVE-2017-5195",
+			"CVE-2017-5196",
+			"CVE-2017-5356"
+		],
+		"freebsd_pr": [
+			"ports/215800"
+		]
+	},
+	"dates": {
+		"discovery": "2017-01-03",
+		"entry": "2017-01-05",
+		"modified": "2017-01-15"
+	}
 }

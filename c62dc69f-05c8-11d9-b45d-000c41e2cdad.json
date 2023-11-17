@@ -1,68 +1,68 @@
 {
-  "vid": "c62dc69f-05c8-11d9-b45d-000c41e2cdad",
-  "topic": "openoffice -- document disclosure",
-  "affects": [
-    {
-      "name": [
-        "openoffice",
-        "ar-openoffice",
-        "ca-openoffice",
-        "cs-openoffice",
-        "de-openoffice",
-        "dk-openoffice",
-        "el-openoffice",
-        "es-openoffice",
-        "et-openoffice",
-        "fi-openoffice",
-        "fr-openoffice",
-        "gr-openoffice",
-        "hu-openoffice",
-        "it-openoffice",
-        "ja-openoffice",
-        "ko-openoffice",
-        "nl-openoffice",
-        "pl-openoffice",
-        "pt-openoffice",
-        "pt_BR-openoffice",
-        "ru-openoffice",
-        "se-openoffice",
-        "sk-openoffice",
-        "sl-openoffice-SI",
-        "tr-openoffice",
-        "zh-openoffice-CN",
-        "zh-openoffice-TW"
-      ],
-      "range": [
-        {
-          "lt": "1.1.2_1"
-        },
-        {
-          "ge": "2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenOffice creates a working directory in /tmp on startup,\n\t  and uses this directory to temporarily store document\n\t  content.  However, the permissions of the created directory\n\t  may allow other user on the system to read these files,\n\t  potentially exposing information the user likely assumed was\n\t  inaccessible.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openoffice.org/issues/show_bug.cgi?id=33357",
-      "http://securitytracker.com/alerts/2004/Sep/1011205.html"
-    ],
-    "cvename": [
-      "CVE-2004-0752"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109483308421566",
-        "msgid": "20040910152759.7739.qmail@www.securityfocus.com"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-24",
-    "entry": "2004-09-14"
-  }
+	"vid": "c62dc69f-05c8-11d9-b45d-000c41e2cdad",
+	"topic": "openoffice -- document disclosure",
+	"affects": [
+		{
+			"name": [
+				"openoffice",
+				"ar-openoffice",
+				"ca-openoffice",
+				"cs-openoffice",
+				"de-openoffice",
+				"dk-openoffice",
+				"el-openoffice",
+				"es-openoffice",
+				"et-openoffice",
+				"fi-openoffice",
+				"fr-openoffice",
+				"gr-openoffice",
+				"hu-openoffice",
+				"it-openoffice",
+				"ja-openoffice",
+				"ko-openoffice",
+				"nl-openoffice",
+				"pl-openoffice",
+				"pt-openoffice",
+				"pt_BR-openoffice",
+				"ru-openoffice",
+				"se-openoffice",
+				"sk-openoffice",
+				"sl-openoffice-SI",
+				"tr-openoffice",
+				"zh-openoffice-CN",
+				"zh-openoffice-TW"
+			],
+			"range": [
+				{
+					"lt": "1.1.2_1"
+				},
+				{
+					"ge": "2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenOffice creates a working directory in /tmp on startup,\n\t  and uses this directory to temporarily store document\n\t  content.  However, the permissions of the created directory\n\t  may allow other user on the system to read these files,\n\t  potentially exposing information the user likely assumed was\n\t  inaccessible.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openoffice.org/issues/show_bug.cgi?id=33357",
+			"http://securitytracker.com/alerts/2004/Sep/1011205.html"
+		],
+		"cvename": [
+			"CVE-2004-0752"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109483308421566",
+				"msgid": "20040910152759.7739.qmail@www.securityfocus.com"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-24",
+		"entry": "2004-09-14"
+	}
 }

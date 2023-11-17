@@ -1,42 +1,42 @@
 {
-  "vid": "4f15ca7b-23ae-11eb-9f59-1c1b0d9ea7e6",
-  "topic": "Apache OpenOffice -- Unrestricted actions leads to arbitrary code execution in crafted documents",
-  "affects": [
-    {
-      "name": [
-        "apache-openoffice"
-      ],
-      "range": [
-        {
-          "lt": "4.1.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache-openoffice-devel"
-      ],
-      "range": [
-        {
-          "lt": "4.2.1602022694,4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache Openofffice project reports:</p>\n\t<blockquote cite=\"https://www.openoffice.org/security/cves/CVE-2020-13958.html\">\n\t  <h1>CVE-2020-13958 Unrestricted actions leads to arbitrary code execution in crafted documents</h1>\n\t  <h2>Description</h2>\n\t  <p>A vulnerability in Apache OpenOffice scripting events allows an attacker to construct documents containing hyperlinks pointing to an executable on the target users file system. These hyperlinks can be triggered unconditionally. In fixed versions no internal protocol may be called from the document event handler and other hyperlinks require a control-click.</p>\n\t  <h2>Severity: Low</h2>\n\t  <p>There are no known exploits of this vulnerability.<br/>A proof-of-concept demonstration exists.</p>\n\t  <p>Thanks to the reporter for discovering this issue.</p>\n\t  <h2>Acknowledgments</h2>\n\t  <p>The Apache OpenOffice Security Team would like to thank Imre Rad for discovering and reporting this attack vector.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openoffice.org/security/cves/CVE-2020-13958.html"
-    ],
-    "cvename": [
-      "CVE-2020-13958"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-04-28",
-    "entry": "2020-11-10"
-  }
+	"vid": "4f15ca7b-23ae-11eb-9f59-1c1b0d9ea7e6",
+	"topic": "Apache OpenOffice -- Unrestricted actions leads to arbitrary code execution in crafted documents",
+	"affects": [
+		{
+			"name": [
+				"apache-openoffice"
+			],
+			"range": [
+				{
+					"lt": "4.1.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache-openoffice-devel"
+			],
+			"range": [
+				{
+					"lt": "4.2.1602022694,4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache Openofffice project reports:</p>\n\t<blockquote cite=\"https://www.openoffice.org/security/cves/CVE-2020-13958.html\">\n\t  <h1>CVE-2020-13958 Unrestricted actions leads to arbitrary code execution in crafted documents</h1>\n\t  <h2>Description</h2>\n\t  <p>A vulnerability in Apache OpenOffice scripting events allows an attacker to construct documents containing hyperlinks pointing to an executable on the target users file system. These hyperlinks can be triggered unconditionally. In fixed versions no internal protocol may be called from the document event handler and other hyperlinks require a control-click.</p>\n\t  <h2>Severity: Low</h2>\n\t  <p>There are no known exploits of this vulnerability.<br/>A proof-of-concept demonstration exists.</p>\n\t  <p>Thanks to the reporter for discovering this issue.</p>\n\t  <h2>Acknowledgments</h2>\n\t  <p>The Apache OpenOffice Security Team would like to thank Imre Rad for discovering and reporting this attack vector.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openoffice.org/security/cves/CVE-2020-13958.html"
+		],
+		"cvename": [
+			"CVE-2020-13958"
+		]
+	},
+	"dates": {
+		"discovery": "2020-04-28",
+		"entry": "2020-11-10"
+	}
 }

@@ -1,44 +1,44 @@
 {
-  "vid": "7a1ab8d4-35c1-11de-9672-0030843d3802",
-  "topic": "drupal -- cross site scripting",
-  "affects": [
-    {
-      "name": [
-        "drupal5"
-      ],
-      "range": [
-        {
-          "lt": "5.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/449078\">\n\t  <p>When outputting user-supplied data Drupal strips potentially\n\t    dangerous HTML attributes and tags or escapes characters which have a\n\t    special meaning in HTML. This output filtering secures the site\n\t    against cross site scripting attacks via user input.</p>\n\t  <p>Certain byte sequences that are valid in the UTF-8 specification\n\t    are potentially dangerous when interpreted as UTF-7. Internet Explorer\n\t    6 and 7 may decode these characters as UTF-7 if they appear before the\n\t    meta http-equiv=\"Content-Type\" tag that specifies the page content\n\t    as UTF-8, despite the fact that Drupal also sends a real HTTP header\n\t    specifying the content as UTF-8. This behaviour enables malicious\n\t    users to insert and execute Javascript in the context of the website\n\t    if site visitors are allowed to post content.</p>\n\t  <p>In addition, Drupal core also has a very limited information\n\t    disclosure vulnerability under very specific conditions. If a user is\n\t    tricked into visiting the site via a specially crafted URL and then\n\t    submits a form (such as the search box) from that page, the\n\t    information in their form submission may be directed to a third-party\n\t    site determined by the URL and thus disclosed to the third party. The\n\t    third party site may then execute a CSRF attack against the submitted\n\t    form.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://drupal.org/node/449078"
-    ],
-    "cvename": [
-      "CVE-2009-1575",
-      "CVE-2009-1576"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-04-30",
-    "entry": "2009-04-30",
-    "modified": "2010-05-02"
-  }
+	"vid": "7a1ab8d4-35c1-11de-9672-0030843d3802",
+	"topic": "drupal -- cross site scripting",
+	"affects": [
+		{
+			"name": [
+				"drupal5"
+			],
+			"range": [
+				{
+					"lt": "5.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/449078\">\n\t  <p>When outputting user-supplied data Drupal strips potentially\n\t    dangerous HTML attributes and tags or escapes characters which have a\n\t    special meaning in HTML. This output filtering secures the site\n\t    against cross site scripting attacks via user input.</p>\n\t  <p>Certain byte sequences that are valid in the UTF-8 specification\n\t    are potentially dangerous when interpreted as UTF-7. Internet Explorer\n\t    6 and 7 may decode these characters as UTF-7 if they appear before the\n\t    meta http-equiv=\"Content-Type\" tag that specifies the page content\n\t    as UTF-8, despite the fact that Drupal also sends a real HTTP header\n\t    specifying the content as UTF-8. This behaviour enables malicious\n\t    users to insert and execute Javascript in the context of the website\n\t    if site visitors are allowed to post content.</p>\n\t  <p>In addition, Drupal core also has a very limited information\n\t    disclosure vulnerability under very specific conditions. If a user is\n\t    tricked into visiting the site via a specially crafted URL and then\n\t    submits a form (such as the search box) from that page, the\n\t    information in their form submission may be directed to a third-party\n\t    site determined by the URL and thus disclosed to the third party. The\n\t    third party site may then execute a CSRF attack against the submitted\n\t    form.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://drupal.org/node/449078"
+		],
+		"cvename": [
+			"CVE-2009-1575",
+			"CVE-2009-1576"
+		]
+	},
+	"dates": {
+		"discovery": "2009-04-30",
+		"entry": "2009-04-30",
+		"modified": "2010-05-02"
+	}
 }

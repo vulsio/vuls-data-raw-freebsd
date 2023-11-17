@@ -1,33 +1,33 @@
 {
-  "vid": "7862213c-5152-11e9-8b26-a4badb296695",
-  "topic": "dovecot -- Buffer overflow reading extension header",
-  "affects": [
-    {
-      "name": [
-        "dovecot"
-      ],
-      "range": [
-        {
-          "lt": "2.3.5.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2019-7524\">\n\t  <p>Vulnerability Details:\nWhen reading FTS or POP3-UIDL header from dovecot index, the input\nbuffer size is not bound, and data is copied to target structure causing\nstack overflow.\n\nRisk:\nThis can be used for local root privilege escalation or executing\narbitrary code in dovecot process context. This requires ability to\ndirectly modify dovecot indexes.\nSteps to reproduce:\nProduce dovecot.index.log entry that creates an FTS header which has\nmore than 12 bytes of data.\nTrigger dovecot indexer-worker or run doveadm index.\nDovecot will crash.\n\nMitigations:\nSince 2.3.0 dovecot has been compiled with stack smash protection, ASLR,\nread-only GOT tables and other techniques that make exploiting this bug\nmuch harder.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=2019-7524",
-      "https://dovecot.org/list/dovecot-news/2019-March/000401.html"
-    ],
-    "cvename": [
-      "CVE-2019-7524"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-02-05",
-    "entry": "2019-03-28"
-  }
+	"vid": "7862213c-5152-11e9-8b26-a4badb296695",
+	"topic": "dovecot -- Buffer overflow reading extension header",
+	"affects": [
+		{
+			"name": [
+				"dovecot"
+			],
+			"range": [
+				{
+					"lt": "2.3.5.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2019-7524\">\n\t  <p>Vulnerability Details:\nWhen reading FTS or POP3-UIDL header from dovecot index, the input\nbuffer size is not bound, and data is copied to target structure causing\nstack overflow.\n\nRisk:\nThis can be used for local root privilege escalation or executing\narbitrary code in dovecot process context. This requires ability to\ndirectly modify dovecot indexes.\nSteps to reproduce:\nProduce dovecot.index.log entry that creates an FTS header which has\nmore than 12 bytes of data.\nTrigger dovecot indexer-worker or run doveadm index.\nDovecot will crash.\n\nMitigations:\nSince 2.3.0 dovecot has been compiled with stack smash protection, ASLR,\nread-only GOT tables and other techniques that make exploiting this bug\nmuch harder.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2019-7524",
+			"https://dovecot.org/list/dovecot-news/2019-March/000401.html"
+		],
+		"cvename": [
+			"CVE-2019-7524"
+		]
+	},
+	"dates": {
+		"discovery": "2019-02-05",
+		"entry": "2019-03-28"
+	}
 }

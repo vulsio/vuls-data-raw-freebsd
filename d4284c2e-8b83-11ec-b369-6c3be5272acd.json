@@ -1,52 +1,52 @@
 {
-  "vid": "d4284c2e-8b83-11ec-b369-6c3be5272acd",
-  "topic": "Grafana -- CSRF",
-  "affects": [
-    {
-      "name": [
-        "grafana6"
-      ],
-      "range": [
-        {
-          "ge": "6.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana7"
-      ],
-      "range": [
-        {
-          "lt": "7.5.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana8"
-      ],
-      "range": [
-        {
-          "lt": "8.3.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/02/08/grafana-7.5.15-and-8.3.5-released-with-moderate-severity-security-fixes/\">\n\t  <p>On Jan. 18, security researchers <a href=\"https://twitter.com/jub0bs\">@jub0bs</a> and <a href=\"https://twitter.com/theabrahack\">@abrahack</a> contacted Grafana to <a href=\"https://jub0bs.com/posts/2022-02-08-cve-2022-21703-writeup/\">disclose a CSRF vulnerability</a> which allows anonymous attackers to elevate their privileges by mounting cross-origin attacks against authenticated high-privilege Grafana users (for example, Editors or Admins). An attacker can exploit this vulnerability for privilege escalation by tricking an authenticated user into inviting the attacker as a new user with high privileges. We believe that this vulnerability is rated at CVSS 6.8 (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://grafana.com/blog/2022/02/08/grafana-7.5.15-and-8.3.5-released-with-moderate-severity-security-fixes/"
-    ],
-    "cvename": [
-      "CVE-2022-21703"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-01-18",
-    "entry": "2022-02-12"
-  }
+	"vid": "d4284c2e-8b83-11ec-b369-6c3be5272acd",
+	"topic": "Grafana -- CSRF",
+	"affects": [
+		{
+			"name": [
+				"grafana6"
+			],
+			"range": [
+				{
+					"ge": "6.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana7"
+			],
+			"range": [
+				{
+					"lt": "7.5.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana8"
+			],
+			"range": [
+				{
+					"lt": "8.3.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/02/08/grafana-7.5.15-and-8.3.5-released-with-moderate-severity-security-fixes/\">\n\t  <p>On Jan. 18, security researchers <a href=\"https://twitter.com/jub0bs\">@jub0bs</a> and <a href=\"https://twitter.com/theabrahack\">@abrahack</a> contacted Grafana to <a href=\"https://jub0bs.com/posts/2022-02-08-cve-2022-21703-writeup/\">disclose a CSRF vulnerability</a> which allows anonymous attackers to elevate their privileges by mounting cross-origin attacks against authenticated high-privilege Grafana users (for example, Editors or Admins). An attacker can exploit this vulnerability for privilege escalation by tricking an authenticated user into inviting the attacker as a new user with high privileges. We believe that this vulnerability is rated at CVSS 6.8 (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://grafana.com/blog/2022/02/08/grafana-7.5.15-and-8.3.5-released-with-moderate-severity-security-fixes/"
+		],
+		"cvename": [
+			"CVE-2022-21703"
+		]
+	},
+	"dates": {
+		"discovery": "2022-01-18",
+		"entry": "2022-02-12"
+	}
 }

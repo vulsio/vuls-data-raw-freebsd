@@ -1,168 +1,168 @@
 {
-  "vid": "57325ecf-facc-11e4-968f-b888e347c638",
-  "topic": "dcraw -- integer overflow condition",
-  "affects": [
-    {
-      "name": [
-        "cinepaint"
-      ],
-      "range": [
-        {
-          "ge": "0.22.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "darktable"
-      ],
-      "range": [
-        {
-          "lt": "1.6.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "dcraw"
-      ],
-      "range": [
-        {
-          "lt": "9.26",
-          "ge": "7.00"
-        }
-      ]
-    },
-    {
-      "name": [
-        "dcraw-m"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "exact-image"
-      ],
-      "range": [
-        {
-          "lt": "0.9.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "flphoto"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "freeimage"
-      ],
-      "range": [
-        {
-          "lt": "3.16.0_1",
-          "ge": "3.13.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kodi"
-      ],
-      "range": [
-        {
-          "lt": "14.2_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libraw"
-      ],
-      "range": [
-        {
-          "lt": "0.16.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "lightzone"
-      ],
-      "range": [
-        {
-          "lt": "4.1.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netpbm"
-      ],
-      "range": [
-        {
-          "lt": "10.35.96"
-        }
-      ]
-    },
-    {
-      "name": [
-        "opengtl"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rawstudio"
-      ],
-      "range": [
-        {
-          "lt": "2.0_11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ufraw"
-      ],
-      "range": [
-        {
-          "lt": "0.21"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ocert reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2015-006.html\">\n\t  <p>The dcraw tool, as well as several other projects re-using its\n\t     code, suffers from an integer overflow condition which lead to a\n\t     buffer overflow.</p>\n\t  <p>The vulnerability concerns the 'len' variable, parsed without\n\t     validation from opened images, used in the ljpeg_start()\n\t     function.</p>\n\t  <p>A maliciously crafted raw image file can be used to trigger the\n\t     vulnerability, causing a Denial of Service condition.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.ocert.org/advisories/ocert-2015-006.html",
-      "https://github.com/rawstudio/rawstudio/commit/983bda1f0fa5fa86884381208274198a620f006e",
-      "https://github.com/LibRaw/LibRaw/commit/4606c28f494a750892c5c1ac7903e62dd1c6fdb5",
-      "https://sourceforge.net/p/netpbm/code/2512/"
-    ],
-    "cvename": [
-      "CVE-2015-3885"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-04-24",
-    "entry": "2015-05-15",
-    "modified": "2016-01-08"
-  }
+	"vid": "57325ecf-facc-11e4-968f-b888e347c638",
+	"topic": "dcraw -- integer overflow condition",
+	"affects": [
+		{
+			"name": [
+				"cinepaint"
+			],
+			"range": [
+				{
+					"ge": "0.22.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"darktable"
+			],
+			"range": [
+				{
+					"lt": "1.6.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"dcraw"
+			],
+			"range": [
+				{
+					"lt": "9.26",
+					"ge": "7.00"
+				}
+			]
+		},
+		{
+			"name": [
+				"dcraw-m"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"exact-image"
+			],
+			"range": [
+				{
+					"lt": "0.9.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"flphoto"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"freeimage"
+			],
+			"range": [
+				{
+					"lt": "3.16.0_1",
+					"ge": "3.13.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"kodi"
+			],
+			"range": [
+				{
+					"lt": "14.2_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"libraw"
+			],
+			"range": [
+				{
+					"lt": "0.16.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"lightzone"
+			],
+			"range": [
+				{
+					"lt": "4.1.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"netpbm"
+			],
+			"range": [
+				{
+					"lt": "10.35.96"
+				}
+			]
+		},
+		{
+			"name": [
+				"opengtl"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"rawstudio"
+			],
+			"range": [
+				{
+					"lt": "2.0_11"
+				}
+			]
+		},
+		{
+			"name": [
+				"ufraw"
+			],
+			"range": [
+				{
+					"lt": "0.21"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ocert reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2015-006.html\">\n\t  <p>The dcraw tool, as well as several other projects re-using its\n\t     code, suffers from an integer overflow condition which lead to a\n\t     buffer overflow.</p>\n\t  <p>The vulnerability concerns the 'len' variable, parsed without\n\t     validation from opened images, used in the ljpeg_start()\n\t     function.</p>\n\t  <p>A maliciously crafted raw image file can be used to trigger the\n\t     vulnerability, causing a Denial of Service condition.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.ocert.org/advisories/ocert-2015-006.html",
+			"https://github.com/rawstudio/rawstudio/commit/983bda1f0fa5fa86884381208274198a620f006e",
+			"https://github.com/LibRaw/LibRaw/commit/4606c28f494a750892c5c1ac7903e62dd1c6fdb5",
+			"https://sourceforge.net/p/netpbm/code/2512/"
+		],
+		"cvename": [
+			"CVE-2015-3885"
+		]
+	},
+	"dates": {
+		"discovery": "2015-04-24",
+		"entry": "2015-05-15",
+		"modified": "2016-01-08"
+	}
 }

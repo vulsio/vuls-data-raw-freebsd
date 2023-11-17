@@ -1,33 +1,33 @@
 {
-  "vid": "2184ccad-1a10-11e5-b43d-002590263bf5",
-  "topic": "logstash -- Remote command execution in Logstash zabbix and nagios_nsca outputs",
-  "affects": [
-    {
-      "name": [
-        "logstash"
-      ],
-      "range": [
-        {
-          "lt": "1.4.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/blog/logstash-1-4-2\">\n\t  <p>The vulnerability impacts deployments that use the either the\n\t    zabbix or the nagios_nsca outputs. In these cases, an attacker\n\t    with an ability to send crafted events to any source of data for\n\t    Logstash could execute operating system commands with the\n\t    permissions of the Logstash process.</p>\n\t  <p>Deployments that do not use the zabbix or the nagios_nsca outputs\n\t    are not vulnerable and do not need to upgrade for this reason.</p>\n\t  <p>We have added this vulnerability to our CVE page and are working\n\t    on filling out the CVE.</p>\n\t  <p>We would like to thank Jan Karwowski and Danila Borisiuk for\n\t    reporting the issue and working with us on the resolution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.elastic.co/blog/logstash-1-4-2",
-      "https://www.elastic.co/community/security"
-    ],
-    "cvename": [
-      "CVE-2014-4326"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-06-24",
-    "entry": "2015-06-24"
-  }
+	"vid": "2184ccad-1a10-11e5-b43d-002590263bf5",
+	"topic": "logstash -- Remote command execution in Logstash zabbix and nagios_nsca outputs",
+	"affects": [
+		{
+			"name": [
+				"logstash"
+			],
+			"range": [
+				{
+					"lt": "1.4.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/blog/logstash-1-4-2\">\n\t  <p>The vulnerability impacts deployments that use the either the\n\t    zabbix or the nagios_nsca outputs. In these cases, an attacker\n\t    with an ability to send crafted events to any source of data for\n\t    Logstash could execute operating system commands with the\n\t    permissions of the Logstash process.</p>\n\t  <p>Deployments that do not use the zabbix or the nagios_nsca outputs\n\t    are not vulnerable and do not need to upgrade for this reason.</p>\n\t  <p>We have added this vulnerability to our CVE page and are working\n\t    on filling out the CVE.</p>\n\t  <p>We would like to thank Jan Karwowski and Danila Borisiuk for\n\t    reporting the issue and working with us on the resolution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.elastic.co/blog/logstash-1-4-2",
+			"https://www.elastic.co/community/security"
+		],
+		"cvename": [
+			"CVE-2014-4326"
+		]
+	},
+	"dates": {
+		"discovery": "2014-06-24",
+		"entry": "2015-06-24"
+	}
 }

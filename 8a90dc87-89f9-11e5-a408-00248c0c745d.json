@@ -1,29 +1,29 @@
 {
-  "vid": "8a90dc87-89f9-11e5-a408-00248c0c745d",
-  "topic": "PHPmailer -- SMTP injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpmailer"
-      ],
-      "range": [
-        {
-          "lt": "5.2.14"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PHPMailer changelog reports:</p>\n\t<blockquote cite=\"https://github.com/PHPMailer/PHPMailer/blob/v5.2.14/changelog.md\">\n\t  <p>Fix vulnerability that allowed email addresses with\n\t    line breaks (valid in RFC5322) to pass to SMTP, permitting\n\t    message injection at the SMTP level. Mitigated in both\n\t    the address validator and in the lower-level SMTP class.\n\t    Thanks to Takeshi Terada.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/PHPMailer/PHPMailer/blob/v5.2.14/changelog.md"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-11-05",
-    "entry": "2015-12-03"
-  }
+	"vid": "8a90dc87-89f9-11e5-a408-00248c0c745d",
+	"topic": "PHPmailer -- SMTP injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpmailer"
+			],
+			"range": [
+				{
+					"lt": "5.2.14"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PHPMailer changelog reports:</p>\n\t<blockquote cite=\"https://github.com/PHPMailer/PHPMailer/blob/v5.2.14/changelog.md\">\n\t  <p>Fix vulnerability that allowed email addresses with\n\t    line breaks (valid in RFC5322) to pass to SMTP, permitting\n\t    message injection at the SMTP level. Mitigated in both\n\t    the address validator and in the lower-level SMTP class.\n\t    Thanks to Takeshi Terada.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/PHPMailer/PHPMailer/blob/v5.2.14/changelog.md"
+		]
+	},
+	"dates": {
+		"discovery": "2015-11-05",
+		"entry": "2015-12-03"
+	}
 }

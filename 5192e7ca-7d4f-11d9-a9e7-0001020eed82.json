@@ -1,33 +1,33 @@
 {
-  "vid": "5192e7ca-7d4f-11d9-a9e7-0001020eed82",
-  "topic": "mod_python -- information leakage vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mod_python"
-      ],
-      "range": [
-        {
-          "lt": "2.7.11"
-        },
-        {
-          "lt": "3.1.4",
-          "gt": "3.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mark J Cox reports:</p>\n\t<blockquote>\n\t  <p>Graham Dumpleton discovered a flaw which can affect\n\t    anyone using the publisher handle of the Apache Software\n\t    Foundation mod_python. The publisher handle lets you\n\t    publish objects inside modules to make them callable via\n\t    URL. The flaw allows a carefully crafted URL to obtain\n\t    extra information that should not be visible (information\n\t    leak).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-0088"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-30",
-    "entry": "2005-02-13"
-  }
+	"vid": "5192e7ca-7d4f-11d9-a9e7-0001020eed82",
+	"topic": "mod_python -- information leakage vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mod_python"
+			],
+			"range": [
+				{
+					"lt": "2.7.11"
+				},
+				{
+					"lt": "3.1.4",
+					"gt": "3.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mark J Cox reports:</p>\n\t<blockquote>\n\t  <p>Graham Dumpleton discovered a flaw which can affect\n\t    anyone using the publisher handle of the Apache Software\n\t    Foundation mod_python. The publisher handle lets you\n\t    publish objects inside modules to make them callable via\n\t    URL. The flaw allows a carefully crafted URL to obtain\n\t    extra information that should not be visible (information\n\t    leak).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-0088"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-30",
+		"entry": "2005-02-13"
+	}
 }

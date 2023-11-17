@@ -1,46 +1,46 @@
 {
-  "vid": "0274a9f1-0759-11da-bc08-0001020eed82",
-  "topic": "postnuke -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "postnuke"
-      ],
-      "range": [
-        {
-          "lt": "0.760"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Postnuke Security Announcementss reports of the following\n\t  vulnerabilities:</p>\n\t<blockquote cite=\"http://news.postnuke.com/Article2691.html\">\n\t  <ul>\n\t    <li>missing input validation within /modules/Messages/readpmsg.php</li>\n\t    <li>possible path disclosure within /user.php</li>\n\t    <li>possible path disclosure within /modules/News/article.php</li>\n\t    <li>possible remote code injection within /includes/pnMod.php</li>\n\t    <li>possible cross-site-scripting in /index.php</li>\n\t  </ul>\n\t</blockquote>\n\t<blockquote cite=\"http://news.postnuke.com/Article2699.html\">\n\t  <ul>\n\t    <li>remote code injection via xml rpc library</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/15450/",
-      "http://news.postnuke.com/Article2691.html",
-      "http://news.postnuke.com/Article2699.html"
-    ],
-    "cvename": [
-      "CVE-2005-1621",
-      "CVE-2005-1695",
-      "CVE-2005-1696",
-      "CVE-2005-1698",
-      "CVE-2005-1777",
-      "CVE-2005-1778",
-      "CVE-2005-1921"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111721364707520",
-        "msgid": "20050527223753.21735.qmail@www.securityfocus.com"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-27",
-    "entry": "2005-08-08"
-  }
+	"vid": "0274a9f1-0759-11da-bc08-0001020eed82",
+	"topic": "postnuke -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"postnuke"
+			],
+			"range": [
+				{
+					"lt": "0.760"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Postnuke Security Announcementss reports of the following\n\t  vulnerabilities:</p>\n\t<blockquote cite=\"http://news.postnuke.com/Article2691.html\">\n\t  <ul>\n\t    <li>missing input validation within /modules/Messages/readpmsg.php</li>\n\t    <li>possible path disclosure within /user.php</li>\n\t    <li>possible path disclosure within /modules/News/article.php</li>\n\t    <li>possible remote code injection within /includes/pnMod.php</li>\n\t    <li>possible cross-site-scripting in /index.php</li>\n\t  </ul>\n\t</blockquote>\n\t<blockquote cite=\"http://news.postnuke.com/Article2699.html\">\n\t  <ul>\n\t    <li>remote code injection via xml rpc library</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/15450/",
+			"http://news.postnuke.com/Article2691.html",
+			"http://news.postnuke.com/Article2699.html"
+		],
+		"cvename": [
+			"CVE-2005-1621",
+			"CVE-2005-1695",
+			"CVE-2005-1696",
+			"CVE-2005-1698",
+			"CVE-2005-1777",
+			"CVE-2005-1778",
+			"CVE-2005-1921"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111721364707520",
+				"msgid": "20050527223753.21735.qmail@www.securityfocus.com"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-27",
+		"entry": "2005-08-08"
+	}
 }

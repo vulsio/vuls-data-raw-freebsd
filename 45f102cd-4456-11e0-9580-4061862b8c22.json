@@ -1,130 +1,130 @@
 {
-  "vid": "45f102cd-4456-11e0-9580-4061862b8c22",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "3.6.14,1",
-          "gt": "3.6.*,1"
-        },
-        {
-          "lt": "3.5.17,1",
-          "gt": "3.5.*,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libxul"
-      ],
-      "range": [
-        {
-          "lt": "1.9.2.14",
-          "gt": "1.9.2.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "3.6.14,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox-devel"
-      ],
-      "range": [
-        {
-          "lt": "3.5.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.0.12",
-          "gt": "2.0.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "3.1.8",
-          "ge": "3.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.0.12",
-          "gt": "2.0.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "3.1.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2011-01 Miscellaneous memory safety hazards (rv:1.9.2.14/ 1.9.1.17)</p>\n\t  <p>MFSA 2011-02 Recursive eval call causes confirm dialogs to evaluate to true</p>\n\t  <p>MFSA 2011-03 Use-after-free error in JSON.stringify</p>\n\t  <p>MFSA 2011-04 Buffer overflow in JavaScript upvarMap</p>\n\t  <p>MFSA 2011-05 Buffer overflow in JavaScript atom map</p>\n\t  <p>MFSA 2011-06 Use-after-free error using Web Workers</p>\n\t  <p>MFSA 2011-07 Memory corruption during text run construction (Windows)</p>\n\t  <p>MFSA 2011-08 ParanoidFragmentSink allows javascript: URLs in chrome documents</p>\n\t  <p>MFSA 2011-09 Crash caused by corrupted JPEG image</p>\n\t  <p>MFSA 2011-10 CSRF risk with plugins and 307 redirects</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-01.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-02.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-03.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-04.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-05.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-06.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-07.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-08.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-09.html",
-      "https://www.mozilla.org/security/announce/2011/mfsa2011-10.html"
-    ],
-    "cvename": [
-      "CVE-2010-1585",
-      "CVE-2011-0051",
-      "CVE-2011-0053",
-      "CVE-2011-0054",
-      "CVE-2011-0055",
-      "CVE-2011-0056",
-      "CVE-2011-0057",
-      "CVE-2011-0058",
-      "CVE-2011-0059",
-      "CVE-2011-0061",
-      "CVE-2011-0062"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-03-01",
-    "entry": "2011-03-01"
-  }
+	"vid": "45f102cd-4456-11e0-9580-4061862b8c22",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "3.6.14,1",
+					"gt": "3.6.*,1"
+				},
+				{
+					"lt": "3.5.17,1",
+					"gt": "3.5.*,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"libxul"
+			],
+			"range": [
+				{
+					"lt": "1.9.2.14",
+					"gt": "1.9.2.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "3.6.14,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox-devel"
+			],
+			"range": [
+				{
+					"lt": "3.5.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.0.12",
+					"gt": "2.0.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "3.1.8",
+					"ge": "3.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.0.12",
+					"gt": "2.0.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "3.1.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2011-01 Miscellaneous memory safety hazards (rv:1.9.2.14/ 1.9.1.17)</p>\n\t  <p>MFSA 2011-02 Recursive eval call causes confirm dialogs to evaluate to true</p>\n\t  <p>MFSA 2011-03 Use-after-free error in JSON.stringify</p>\n\t  <p>MFSA 2011-04 Buffer overflow in JavaScript upvarMap</p>\n\t  <p>MFSA 2011-05 Buffer overflow in JavaScript atom map</p>\n\t  <p>MFSA 2011-06 Use-after-free error using Web Workers</p>\n\t  <p>MFSA 2011-07 Memory corruption during text run construction (Windows)</p>\n\t  <p>MFSA 2011-08 ParanoidFragmentSink allows javascript: URLs in chrome documents</p>\n\t  <p>MFSA 2011-09 Crash caused by corrupted JPEG image</p>\n\t  <p>MFSA 2011-10 CSRF risk with plugins and 307 redirects</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-01.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-02.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-03.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-04.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-05.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-06.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-07.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-08.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-09.html",
+			"https://www.mozilla.org/security/announce/2011/mfsa2011-10.html"
+		],
+		"cvename": [
+			"CVE-2010-1585",
+			"CVE-2011-0051",
+			"CVE-2011-0053",
+			"CVE-2011-0054",
+			"CVE-2011-0055",
+			"CVE-2011-0056",
+			"CVE-2011-0057",
+			"CVE-2011-0058",
+			"CVE-2011-0059",
+			"CVE-2011-0061",
+			"CVE-2011-0062"
+		]
+	},
+	"dates": {
+		"discovery": "2011-03-01",
+		"entry": "2011-03-01"
+	}
 }

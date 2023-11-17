@@ -1,43 +1,43 @@
 {
-  "vid": "6f5192f5-75a7-11ed-83c0-411d43ce7fe4",
-  "topic": "go -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "go118"
-      ],
-      "range": [
-        {
-          "lt": "1.18.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "go119"
-      ],
-      "range": [
-        {
-          "lt": "1.19.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/56694\">\n\t  <p>os, net/http: avoid escapes from os.DirFS and http.Dir on Windows</p>\n\t  <p>The os.DirFS function and http.Dir type provide access to a\n\t   tree of files rooted at a given directory. These functions\n\t   permitted access to Windows device files under that root. For\n\t   example, os.DirFS(\"C:/tmp\").Open(\"COM1\") would open the COM1 device.\n\t   Both os.DirFS and http.Dir only provide read-only filesystem access.</p>\n\t  <p>In addition, on Windows, an os.DirFS for the directory \\(the root\n\t   of the current drive) can permit a maliciously crafted path to escape\n\t   from the drive and access any path on the system.</p>\n\t  <p>The behavior of os.DirFS(\"\") has changed. Previously, an empty root\n\t   was treated equivalently to \"/\", so os.DirFS(\"\").Open(\"tmp\") would\n\t   open the path \"/tmp\". This now returns an error.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/56350\">\n\t  <p>net/http: limit canonical header cache by bytes, not entries</p>\n\t  <p>An attacker can cause excessive memory growth in a Go server\n\t    accepting HTTP/2 requests. HTTP/2 server connections contain a\n\t    cache of HTTP header keys sent by the client. While the total number\n\t    of entries in this cache is capped, an attacker sending very large\n\t    keys can cause the server to allocate approximately 64 MiB per open\n\t    connection.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/golang-dev/c/G9Jj4cO4Gpk/m/kOkLVG6TAgAJ"
-    ],
-    "cvename": [
-      "CVE-2022-41720",
-      "CVE-2022-41717"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-10-20",
-    "entry": "2022-12-06"
-  }
+	"vid": "6f5192f5-75a7-11ed-83c0-411d43ce7fe4",
+	"topic": "go -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"go118"
+			],
+			"range": [
+				{
+					"lt": "1.18.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"go119"
+			],
+			"range": [
+				{
+					"lt": "1.19.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/56694\">\n\t  <p>os, net/http: avoid escapes from os.DirFS and http.Dir on Windows</p>\n\t  <p>The os.DirFS function and http.Dir type provide access to a\n\t   tree of files rooted at a given directory. These functions\n\t   permitted access to Windows device files under that root. For\n\t   example, os.DirFS(\"C:/tmp\").Open(\"COM1\") would open the COM1 device.\n\t   Both os.DirFS and http.Dir only provide read-only filesystem access.</p>\n\t  <p>In addition, on Windows, an os.DirFS for the directory \\(the root\n\t   of the current drive) can permit a maliciously crafted path to escape\n\t   from the drive and access any path on the system.</p>\n\t  <p>The behavior of os.DirFS(\"\") has changed. Previously, an empty root\n\t   was treated equivalently to \"/\", so os.DirFS(\"\").Open(\"tmp\") would\n\t   open the path \"/tmp\". This now returns an error.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/56350\">\n\t  <p>net/http: limit canonical header cache by bytes, not entries</p>\n\t  <p>An attacker can cause excessive memory growth in a Go server\n\t    accepting HTTP/2 requests. HTTP/2 server connections contain a\n\t    cache of HTTP header keys sent by the client. While the total number\n\t    of entries in this cache is capped, an attacker sending very large\n\t    keys can cause the server to allocate approximately 64 MiB per open\n\t    connection.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/golang-dev/c/G9Jj4cO4Gpk/m/kOkLVG6TAgAJ"
+		],
+		"cvename": [
+			"CVE-2022-41720",
+			"CVE-2022-41717"
+		]
+	},
+	"dates": {
+		"discovery": "2022-10-20",
+		"entry": "2022-12-06"
+	}
 }

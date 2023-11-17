@@ -1,45 +1,45 @@
 {
-  "vid": "66e4dc99-28b3-11ea-8dde-08002728f74c",
-  "topic": "rack -- information leak / session hijack vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rubygem-rack"
-      ],
-      "range": [
-        {
-          "lt": "2.0.8,3",
-          "ge": "2.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-rack16"
-      ],
-      "range": [
-        {
-          "lt": "1.6.12",
-          "ge": "1.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>National Vulnerability Database:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2019-16782\">\n\t  <p>There's a possible information leak / session hijack vulnerability in\n\t    Rack (RubyGem rack). This vulnerability is patched in versions 1.6.12\n\t    and 2.0.8. Attackers may be able to find and hijack sessions by using\n\t    timing attacks targeting the session id. Session ids are usually stored\n\t    and indexed in a database that uses some kind of scheme for speeding up\n\t    lookups of that session id. By carefully measuring the amount of time\n\t    it takes to look up a session, an attacker may be able to find a valid\n\t    session id and hijack the session. The session id itself may be\n\t    generated randomly, but the way the session is indexed by the backing\n\t    store does not use a secure comparison.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2019-16782",
-      "https://github.com/rack/rack/blob/master/CHANGELOG.md"
-    ],
-    "cvename": [
-      "CVE-2019-16782"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-12-08",
-    "entry": "2019-12-29"
-  }
+	"vid": "66e4dc99-28b3-11ea-8dde-08002728f74c",
+	"topic": "rack -- information leak / session hijack vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rubygem-rack"
+			],
+			"range": [
+				{
+					"lt": "2.0.8,3",
+					"ge": "2.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-rack16"
+			],
+			"range": [
+				{
+					"lt": "1.6.12",
+					"ge": "1.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>National Vulnerability Database:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2019-16782\">\n\t  <p>There's a possible information leak / session hijack vulnerability in\n\t    Rack (RubyGem rack). This vulnerability is patched in versions 1.6.12\n\t    and 2.0.8. Attackers may be able to find and hijack sessions by using\n\t    timing attacks targeting the session id. Session ids are usually stored\n\t    and indexed in a database that uses some kind of scheme for speeding up\n\t    lookups of that session id. By carefully measuring the amount of time\n\t    it takes to look up a session, an attacker may be able to find a valid\n\t    session id and hijack the session. The session id itself may be\n\t    generated randomly, but the way the session is indexed by the backing\n\t    store does not use a secure comparison.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2019-16782",
+			"https://github.com/rack/rack/blob/master/CHANGELOG.md"
+		],
+		"cvename": [
+			"CVE-2019-16782"
+		]
+	},
+	"dates": {
+		"discovery": "2019-12-08",
+		"entry": "2019-12-29"
+	}
 }

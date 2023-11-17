@@ -1,39 +1,39 @@
 {
-  "vid": "169f422f-bd88-11d9-a281-02e018374e71",
-  "topic": "groff -- groffer uses temporary files unsafely",
-  "affects": [
-    {
-      "name": [
-        "ja-groff"
-      ],
-      "range": [
-        {
-          "lt": "1.18.1_8",
-          "ge": "1.18"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The groffer script in the groff package 1.18 and later versions\n\t  allows local users to overwrite files via a symlink attack\n\t  on temporary files.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=278265"
-    ],
-    "cvename": [
-      "CVE-2004-0969"
-    ],
-    "freebsd_pr": [
-      "ports/80671"
-    ],
-    "bid": [
-      "11287"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-30",
-    "entry": "2005-05-09"
-  }
+	"vid": "169f422f-bd88-11d9-a281-02e018374e71",
+	"topic": "groff -- groffer uses temporary files unsafely",
+	"affects": [
+		{
+			"name": [
+				"ja-groff"
+			],
+			"range": [
+				{
+					"lt": "1.18.1_8",
+					"ge": "1.18"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The groffer script in the groff package 1.18 and later versions\n\t  allows local users to overwrite files via a symlink attack\n\t  on temporary files.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=278265"
+		],
+		"cvename": [
+			"CVE-2004-0969"
+		],
+		"freebsd_pr": [
+			"ports/80671"
+		],
+		"bid": [
+			"11287"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-30",
+		"entry": "2005-05-09"
+	}
 }

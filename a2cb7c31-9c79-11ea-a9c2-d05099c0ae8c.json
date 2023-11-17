@@ -1,56 +1,56 @@
 {
-  "vid": "a2cb7c31-9c79-11ea-a9c2-d05099c0ae8c",
-  "topic": "unbound -- mutliple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "unbound"
-      ],
-      "range": [
-        {
-          "lt": "1.10.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "12.1_7",
-          "ge": "12.1"
-        },
-        {
-          "lt": "11.4_1",
-          "ge": "11.4"
-        },
-        {
-          "lt": "11.3_11",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NLNetLabs reports:</p>\n\t<blockquote cite=\"https://lists.nlnetlabs.nl/pipermail/unbound-users/2020-May/006833.html\">\n\t  <p>This release fixes CVE-2020-12662 and CVE-2020-12663.</p>\n\t  <p>Bug Fixes:</p>\n\t  <ul>\n\t    <li>CVE-2020-12662 Unbound can be tricked into\n\t      amplifying an incoming query into a large\n\t      number of queries directed to a target.</li>\n\t    <li>CVE-2020-12663 Malformed answers from\n\t      upstream name servers can be used to make\n\t      Unbound unresponsive.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.nlnetlabs.nl/pipermail/unbound-users/2020-May/006833.html"
-    ],
-    "cvename": [
-      "CVE-2020-12662",
-      "CVE-2020-12663"
-    ],
-    "freebsd_sa": [
-      "SA-20:19.unbound"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-05-19",
-    "entry": "2020-05-22",
-    "modified": "2020-07-10"
-  }
+	"vid": "a2cb7c31-9c79-11ea-a9c2-d05099c0ae8c",
+	"topic": "unbound -- mutliple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"unbound"
+			],
+			"range": [
+				{
+					"lt": "1.10.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "12.1_7",
+					"ge": "12.1"
+				},
+				{
+					"lt": "11.4_1",
+					"ge": "11.4"
+				},
+				{
+					"lt": "11.3_11",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NLNetLabs reports:</p>\n\t<blockquote cite=\"https://lists.nlnetlabs.nl/pipermail/unbound-users/2020-May/006833.html\">\n\t  <p>This release fixes CVE-2020-12662 and CVE-2020-12663.</p>\n\t  <p>Bug Fixes:</p>\n\t  <ul>\n\t    <li>CVE-2020-12662 Unbound can be tricked into\n\t      amplifying an incoming query into a large\n\t      number of queries directed to a target.</li>\n\t    <li>CVE-2020-12663 Malformed answers from\n\t      upstream name servers can be used to make\n\t      Unbound unresponsive.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.nlnetlabs.nl/pipermail/unbound-users/2020-May/006833.html"
+		],
+		"cvename": [
+			"CVE-2020-12662",
+			"CVE-2020-12663"
+		],
+		"freebsd_sa": [
+			"SA-20:19.unbound"
+		]
+	},
+	"dates": {
+		"discovery": "2020-05-19",
+		"entry": "2020-05-22",
+		"modified": "2020-07-10"
+	}
 }

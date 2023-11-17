@@ -1,37 +1,37 @@
 {
-  "vid": "072a53e0-0397-11dd-bd06-0017319806e7",
-  "topic": "postfix-policyd-weight -- working directory symlink vulnerability",
-  "affects": [
-    {
-      "name": [
-        "postfix-policyd-weight"
-      ],
-      "range": [
-        {
-          "lt": "0.1.14.17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>postfix-policyd-weight does not check for symlink for its working\n\t  directory.  If the working directory is not already setup by the\n\t  super root, an unprivileged user can link it to another directories\n\t  in the system.  This results in ownership/permission changes on the\n\t  target directory.</p>\n      "
-  },
-  "references": {
-    "mlist": [
-      {
-        "text": "http://article.gmane.org/gmane.mail.postfix.policyd-weight/815"
-      },
-      {
-        "text": "http://article.gmane.org/gmane.mail.postfix.policyd-weight/823"
-      }
-    ],
-    "bid": [
-      "28480"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-03-24",
-    "entry": "2008-04-06"
-  }
+	"vid": "072a53e0-0397-11dd-bd06-0017319806e7",
+	"topic": "postfix-policyd-weight -- working directory symlink vulnerability",
+	"affects": [
+		{
+			"name": [
+				"postfix-policyd-weight"
+			],
+			"range": [
+				{
+					"lt": "0.1.14.17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>postfix-policyd-weight does not check for symlink for its working\n\t  directory.  If the working directory is not already setup by the\n\t  super root, an unprivileged user can link it to another directories\n\t  in the system.  This results in ownership/permission changes on the\n\t  target directory.</p>\n      "
+	},
+	"references": {
+		"mlist": [
+			{
+				"text": "http://article.gmane.org/gmane.mail.postfix.policyd-weight/815"
+			},
+			{
+				"text": "http://article.gmane.org/gmane.mail.postfix.policyd-weight/823"
+			}
+		],
+		"bid": [
+			"28480"
+		]
+	},
+	"dates": {
+		"discovery": "2008-03-24",
+		"entry": "2008-04-06"
+	}
 }

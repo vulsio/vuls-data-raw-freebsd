@@ -1,39 +1,39 @@
 {
-  "vid": "bf1d9331-21b6-11e5-86ff-14dae9d210b8",
-  "topic": "cups-filters -- texttopdf integer overflow",
-  "affects": [
-    {
-      "name": [
-        "cups-filters"
-      ],
-      "range": [
-        {
-          "lt": "1.0.71"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stefan Cornelius from Red Hat reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/07/03/2\">\n\t  <p>An integer overflow flaw leading to a heap-based buffer overflow was\n\t    discovered in the way the texttopdf utility of cups-filter processed\n\t    print jobs with a specially crafted line size. An attacker being able\n\t    to submit print jobs could exploit this flaw to crash texttopdf or,\n\t    possibly, execute arbitrary code with the privileges of the 'lp' user.</p>\n\t</blockquote>\n\t<p>Tim Waugh reports:</p>\n\t<blockquote cite=\"http://bzr.linuxfoundation.org/loggerhead/openprinting/cups-filters/revision/7365\">\n\t  <p>The Page allocation is moved into textcommon.c, where it does all the\n\t    necessary checking: lower-bounds for CVE-2015-3258 and upper-bounds\n\t    for CVE-2015-3259 due to integer overflows for the calloc() call\n\t    initializing Page[0] and the memset() call in texttopdf.c's\n\t    WritePage() function zeroing the entire array.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://access.redhat.com/security/cve/CVE-2015-3279",
-      "http://bzr.linuxfoundation.org/loggerhead/openprinting/cups-filters/revision/7365"
-    ],
-    "cvename": [
-      "CVE-2015-3279"
-    ],
-    "mlist": [
-      {
-        "text": "http://osdir.com/ml/opensource-software-security/2015-07/msg00021.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2015-07-03",
-    "entry": "2015-07-03",
-    "modified": "2015-07-07"
-  }
+	"vid": "bf1d9331-21b6-11e5-86ff-14dae9d210b8",
+	"topic": "cups-filters -- texttopdf integer overflow",
+	"affects": [
+		{
+			"name": [
+				"cups-filters"
+			],
+			"range": [
+				{
+					"lt": "1.0.71"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stefan Cornelius from Red Hat reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/07/03/2\">\n\t  <p>An integer overflow flaw leading to a heap-based buffer overflow was\n\t    discovered in the way the texttopdf utility of cups-filter processed\n\t    print jobs with a specially crafted line size. An attacker being able\n\t    to submit print jobs could exploit this flaw to crash texttopdf or,\n\t    possibly, execute arbitrary code with the privileges of the 'lp' user.</p>\n\t</blockquote>\n\t<p>Tim Waugh reports:</p>\n\t<blockquote cite=\"http://bzr.linuxfoundation.org/loggerhead/openprinting/cups-filters/revision/7365\">\n\t  <p>The Page allocation is moved into textcommon.c, where it does all the\n\t    necessary checking: lower-bounds for CVE-2015-3258 and upper-bounds\n\t    for CVE-2015-3259 due to integer overflows for the calloc() call\n\t    initializing Page[0] and the memset() call in texttopdf.c's\n\t    WritePage() function zeroing the entire array.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://access.redhat.com/security/cve/CVE-2015-3279",
+			"http://bzr.linuxfoundation.org/loggerhead/openprinting/cups-filters/revision/7365"
+		],
+		"cvename": [
+			"CVE-2015-3279"
+		],
+		"mlist": [
+			{
+				"text": "http://osdir.com/ml/opensource-software-security/2015-07/msg00021.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2015-07-03",
+		"entry": "2015-07-03",
+		"modified": "2015-07-07"
+	}
 }

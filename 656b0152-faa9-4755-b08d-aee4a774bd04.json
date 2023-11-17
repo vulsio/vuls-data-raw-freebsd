@@ -1,29 +1,29 @@
 {
-  "vid": "656b0152-faa9-4755-b08d-aee4a774bd04",
-  "topic": "zeek -- potential DoS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "zeek"
-      ],
-      "range": [
-        {
-          "lt": "5.0.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v5.0.2\">\n\t<p> Fix a possible overflow and crash in the ICMP analyzer\n\twhen receiving a specially crafted packet. </p>\n\t<p> Fix a possible overflow and crash in the IRC analyzer\n\twhen receiving a specially crafted packet. </p>\n\t<p> Fix a possible overflow and crash in the SMB analyzer\n\twhen receiving a specially crafted packet. </p>\n\t<p> Fix two possible crashes when converting IP headers for\n\toutput via the raw_packet event. </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/zeek/zeek/releases/tag/v5.0.2"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-09-19",
-    "entry": "2022-09-19"
-  }
+	"vid": "656b0152-faa9-4755-b08d-aee4a774bd04",
+	"topic": "zeek -- potential DoS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"zeek"
+			],
+			"range": [
+				{
+					"lt": "5.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v5.0.2\">\n\t<p> Fix a possible overflow and crash in the ICMP analyzer\n\twhen receiving a specially crafted packet. </p>\n\t<p> Fix a possible overflow and crash in the IRC analyzer\n\twhen receiving a specially crafted packet. </p>\n\t<p> Fix a possible overflow and crash in the SMB analyzer\n\twhen receiving a specially crafted packet. </p>\n\t<p> Fix two possible crashes when converting IP headers for\n\toutput via the raw_packet event. </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/zeek/zeek/releases/tag/v5.0.2"
+		]
+	},
+	"dates": {
+		"discovery": "2022-09-19",
+		"entry": "2022-09-19"
+	}
 }

@@ -1,36 +1,36 @@
 {
-  "vid": "1cae628c-3569-11e0-8e81-0022190034c0",
-  "topic": "rubygem-mail -- Remote Arbitrary Shell Command Injection Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rubygem-mail"
-      ],
-      "range": [
-        {
-          "lt": "2.2.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/43077/\">\n\t  <p>Input passed via an email from address is not properly sanitised\n\t    in the \"deliver()\" function (lib/mail/network/delivery_methods/sendmail.rb)\n\t    before being used as a command line argument. This can be exploited\n\t    to inject arbitrary shell commands.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/43077/",
-      "http://groups.google.com/group/mail-ruby/browse_thread/thread/e93bbd05706478dd?pli=1"
-    ],
-    "cvename": [
-      "CVE-2011-0739"
-    ],
-    "bid": [
-      "46021"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-01-25",
-    "entry": "2011-02-10"
-  }
+	"vid": "1cae628c-3569-11e0-8e81-0022190034c0",
+	"topic": "rubygem-mail -- Remote Arbitrary Shell Command Injection Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rubygem-mail"
+			],
+			"range": [
+				{
+					"lt": "2.2.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/43077/\">\n\t  <p>Input passed via an email from address is not properly sanitised\n\t    in the \"deliver()\" function (lib/mail/network/delivery_methods/sendmail.rb)\n\t    before being used as a command line argument. This can be exploited\n\t    to inject arbitrary shell commands.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/43077/",
+			"http://groups.google.com/group/mail-ruby/browse_thread/thread/e93bbd05706478dd?pli=1"
+		],
+		"cvename": [
+			"CVE-2011-0739"
+		],
+		"bid": [
+			"46021"
+		]
+	},
+	"dates": {
+		"discovery": "2011-01-25",
+		"entry": "2011-02-10"
+	}
 }

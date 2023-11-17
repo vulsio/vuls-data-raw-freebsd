@@ -1,53 +1,53 @@
 {
-  "vid": "1d3a2737-7eb7-11d9-acf7-000854d03344",
-  "topic": "unace -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "unace"
-      ],
-      "range": [
-        {
-          "lt": "1.2b_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-unace"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ulf Härnhammar reports:</p>\n\t<ul>\n\t  <li>There are buffer overflows when extracting, testing or\n\t    listing specially prepared ACE archives.</li>\n\t  <li>There are directory traversal bugs when extracting ACE\n\t    archives.</li>\n\t  <li>There are also buffer overflows when dealing with long\n\t    (&gt;17000 characters) command line arguments.</li>\n\t</ul>\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/14359/\">\n\t  <p>The vulnerabilities have been confirmed in version 1.2b.\n\t    One of the buffer overflow vulnerabilities have also been\n\t    reported in version 2.04, 2.2 and 2.5. Other versions may\n\t    also be affected.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/14359/"
-    ],
-    "cvename": [
-      "CVE-2005-0160",
-      "CVE-2005-0161"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=110911451613135",
-        "msgid": "1109113175.421bb95705d42@webmail.uu.se"
-      }
-    ],
-    "cert_vu": [
-      "215006"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-14",
-    "entry": "2005-02-22",
-    "modified": "2006-09-26"
-  }
+	"vid": "1d3a2737-7eb7-11d9-acf7-000854d03344",
+	"topic": "unace -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"unace"
+			],
+			"range": [
+				{
+					"lt": "1.2b_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-unace"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ulf Härnhammar reports:</p>\n\t<ul>\n\t  <li>There are buffer overflows when extracting, testing or\n\t    listing specially prepared ACE archives.</li>\n\t  <li>There are directory traversal bugs when extracting ACE\n\t    archives.</li>\n\t  <li>There are also buffer overflows when dealing with long\n\t    (&gt;17000 characters) command line arguments.</li>\n\t</ul>\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/14359/\">\n\t  <p>The vulnerabilities have been confirmed in version 1.2b.\n\t    One of the buffer overflow vulnerabilities have also been\n\t    reported in version 2.04, 2.2 and 2.5. Other versions may\n\t    also be affected.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/14359/"
+		],
+		"cvename": [
+			"CVE-2005-0160",
+			"CVE-2005-0161"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=110911451613135",
+				"msgid": "1109113175.421bb95705d42@webmail.uu.se"
+			}
+		],
+		"cert_vu": [
+			"215006"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-14",
+		"entry": "2005-02-22",
+		"modified": "2006-09-26"
+	}
 }

@@ -1,109 +1,109 @@
 {
-  "vid": "cd81806c-26e7-4d4a-8425-02724a2f48af",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "61.0_1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "waterfox"
-      ],
-      "range": [
-        {
-          "lt": "56.2.1.19_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey",
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.49.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox-esr"
-      ],
-      "range": [
-        {
-          "lt": "60.1.0_1,1",
-          "ge": "60.0,1"
-        },
-        {
-          "lt": "52.9.0_1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "52.9.0,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libxul",
-        "thunderbird",
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "52.9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/\">\n\t  <p>CVE-2018-12359: Buffer overflow using computed size of canvas element</p>\n\t  <p>CVE-2018-12360: Use-after-free when using focus()</p>\n\t  <p>CVE-2018-12361: Integer overflow in SwizzleData</p>\n\t  <p>CVE-2018-12358: Same-origin bypass using service worker and redirection</p>\n\t  <p>CVE-2018-12362: Integer overflow in SSSE3 scaler</p>\n\t  <p>CVE-2018-5156: Media recorder segmentation fault when track type is changed during capture</p>\n\t  <p>CVE-2018-12363: Use-after-free when appending DOM nodes</p>\n\t  <p>CVE-2018-12364: CSRF attacks through 307 redirects and NPAPI plugins</p>\n\t  <p>CVE-2018-12365: Compromised IPC child process can list local filenames</p>\n\t  <p>CVE-2018-12371: Integer overflow in Skia library during edge builder allocation</p>\n\t  <p>CVE-2018-12366: Invalid data handling during QCMS transformations</p>\n\t  <p>CVE-2018-12367: Timing attack mitigation of PerformanceNavigationTiming</p>\n\t  <p>CVE-2018-12368: No warning when opening executable SettingContent-ms files</p>\n\t  <p>CVE-2018-12369: WebExtension security permission checks bypassed by embedded experiments</p>\n\t  <p>CVE-2018-12370: SameSite cookie protections bypassed when exiting Reader View</p>\n\t  <p>CVE-2018-5186: Memory safety bugs fixed in Firefox 61</p>\n\t  <p>CVE-2018-5187: Memory safety bugs fixed in Firefox 60 and Firefox ESR 60.1</p>\n\t  <p>CVE-2018-5188: Memory safety bugs fixed in Firefox 60, Firefox ESR 60.1, and Firefox ESR 52.9</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/",
-      "https://www.mozilla.org/en-US/security/advisories/mfsa2018-16/",
-      "https://www.mozilla.org/en-US/security/advisories/mfsa2018-17/"
-    ],
-    "cvename": [
-      "CVE-2018-5156",
-      "CVE-2018-5186",
-      "CVE-2018-5187",
-      "CVE-2018-5188",
-      "CVE-2018-12358",
-      "CVE-2018-12359",
-      "CVE-2018-12360",
-      "CVE-2018-12361",
-      "CVE-2018-12362",
-      "CVE-2018-12363",
-      "CVE-2018-12364",
-      "CVE-2018-12365",
-      "CVE-2018-12366",
-      "CVE-2018-12367",
-      "CVE-2018-12368",
-      "CVE-2018-12369",
-      "CVE-2018-12370",
-      "CVE-2018-12371"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-06-26",
-    "entry": "2018-06-26",
-    "modified": "2018-07-07"
-  }
+	"vid": "cd81806c-26e7-4d4a-8425-02724a2f48af",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "61.0_1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"waterfox"
+			],
+			"range": [
+				{
+					"lt": "56.2.1.19_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey",
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.49.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox-esr"
+			],
+			"range": [
+				{
+					"lt": "60.1.0_1,1",
+					"ge": "60.0,1"
+				},
+				{
+					"lt": "52.9.0_1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "52.9.0,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"libxul",
+				"thunderbird",
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "52.9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/\">\n\t  <p>CVE-2018-12359: Buffer overflow using computed size of canvas element</p>\n\t  <p>CVE-2018-12360: Use-after-free when using focus()</p>\n\t  <p>CVE-2018-12361: Integer overflow in SwizzleData</p>\n\t  <p>CVE-2018-12358: Same-origin bypass using service worker and redirection</p>\n\t  <p>CVE-2018-12362: Integer overflow in SSSE3 scaler</p>\n\t  <p>CVE-2018-5156: Media recorder segmentation fault when track type is changed during capture</p>\n\t  <p>CVE-2018-12363: Use-after-free when appending DOM nodes</p>\n\t  <p>CVE-2018-12364: CSRF attacks through 307 redirects and NPAPI plugins</p>\n\t  <p>CVE-2018-12365: Compromised IPC child process can list local filenames</p>\n\t  <p>CVE-2018-12371: Integer overflow in Skia library during edge builder allocation</p>\n\t  <p>CVE-2018-12366: Invalid data handling during QCMS transformations</p>\n\t  <p>CVE-2018-12367: Timing attack mitigation of PerformanceNavigationTiming</p>\n\t  <p>CVE-2018-12368: No warning when opening executable SettingContent-ms files</p>\n\t  <p>CVE-2018-12369: WebExtension security permission checks bypassed by embedded experiments</p>\n\t  <p>CVE-2018-12370: SameSite cookie protections bypassed when exiting Reader View</p>\n\t  <p>CVE-2018-5186: Memory safety bugs fixed in Firefox 61</p>\n\t  <p>CVE-2018-5187: Memory safety bugs fixed in Firefox 60 and Firefox ESR 60.1</p>\n\t  <p>CVE-2018-5188: Memory safety bugs fixed in Firefox 60, Firefox ESR 60.1, and Firefox ESR 52.9</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/",
+			"https://www.mozilla.org/en-US/security/advisories/mfsa2018-16/",
+			"https://www.mozilla.org/en-US/security/advisories/mfsa2018-17/"
+		],
+		"cvename": [
+			"CVE-2018-5156",
+			"CVE-2018-5186",
+			"CVE-2018-5187",
+			"CVE-2018-5188",
+			"CVE-2018-12358",
+			"CVE-2018-12359",
+			"CVE-2018-12360",
+			"CVE-2018-12361",
+			"CVE-2018-12362",
+			"CVE-2018-12363",
+			"CVE-2018-12364",
+			"CVE-2018-12365",
+			"CVE-2018-12366",
+			"CVE-2018-12367",
+			"CVE-2018-12368",
+			"CVE-2018-12369",
+			"CVE-2018-12370",
+			"CVE-2018-12371"
+		]
+	},
+	"dates": {
+		"discovery": "2018-06-26",
+		"entry": "2018-06-26",
+		"modified": "2018-07-07"
+	}
 }

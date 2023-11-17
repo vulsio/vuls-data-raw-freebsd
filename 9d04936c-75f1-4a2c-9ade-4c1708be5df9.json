@@ -1,180 +1,180 @@
 {
-  "vid": "9d04936c-75f1-4a2c-9ade-4c1708be5df9",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "nspr"
-      ],
-      "range": [
-        {
-          "lt": "4.10.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-nspr"
-      ],
-      "range": [
-        {
-          "lt": "4.10.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "nss"
-      ],
-      "range": [
-        {
-          "lt": "3.20.1",
-          "ge": "3.20"
-        },
-        {
-          "lt": "3.19.4",
-          "ge": "3.19.3"
-        },
-        {
-          "lt": "3.19.2.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "42.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "42.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.39"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.39"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox-esr"
-      ],
-      "range": [
-        {
-          "lt": "38.4.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libxul"
-      ],
-      "range": [
-        {
-          "lt": "38.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "38.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "38.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/\">\n\t  <p>MFSA 2015-133 NSS and NSPR memory corruption issues</p>\n\t  <p>MFSA 2015-132 Mixed content WebSocket policy bypass\n\t    through workers</p>\n\t  <p>MFSA 2015-131 Vulnerabilities found through code\n\t    inspection</p>\n\t  <p>MFSA 2015-130 JavaScript garbage collection crash with\n\t    Java applet</p>\n\t  <p>MFSA 2015-129 Certain escaped characters in host of\n\t    Location-header are being treated as non-escaped</p>\n\t  <p>MFSA 2015-128 Memory corruption in libjar through zip\n\t    files</p>\n\t  <p>MFSA 2015-127 CORS preflight is bypassed when\n\t    non-standard Content-Type headers are received</p>\n\t  <p>MFSA 2015-126 Crash when accessing HTML tables with\n\t    accessibility tools on OS X</p>\n\t  <p>MFSA 2015-125 XSS attack through intents on Firefox for\n\t    Android</p>\n\t  <p>MFSA 2015-124 Android intents can be used on Firefox for\n\t    Android to open privileged files</p>\n\t  <p>MFSA 2015-123 Buffer overflow during image interactions\n\t    in canvas</p>\n\t  <p>MFSA 2015-122 Trailing whitespace in IP address hostnames\n\t    can bypass same-origin policy</p>\n\t  <p>MFSA 2015-121 Disabling scripts in Add-on SDK panels has\n\t    no effect</p>\n\t  <p>MFSA 2015-120 Reading sensitive profile files through\n\t    local HTML file on Android</p>\n\t  <p>MFSA 2015-119 Firefox for Android addressbar can be\n\t    removed after fullscreen mode</p>\n\t  <p>MFSA 2015-118 CSP bypass due to permissive Reader mode\n\t    whitelist</p>\n\t  <p>MFSA 2015-117 Information disclosure through NTLM\n\t    authentication</p>\n\t  <p>MFSA 2015-116 Miscellaneous memory safety hazards\n\t    (rv:42.0 / rv:38.4)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2015-116/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-117/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-118/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-119/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-120/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-121/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-122/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-123/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-124/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-125/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-126/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-127/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-128/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-129/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-130/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-131/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-132/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-133/"
-    ],
-    "cvename": [
-      "CVE-2015-4513",
-      "CVE-2015-4514",
-      "CVE-2015-4515",
-      "CVE-2015-4518",
-      "CVE-2015-7181",
-      "CVE-2015-7182",
-      "CVE-2015-7183",
-      "CVE-2015-7185",
-      "CVE-2015-7186",
-      "CVE-2015-7187",
-      "CVE-2015-7188",
-      "CVE-2015-7189",
-      "CVE-2015-7190",
-      "CVE-2015-7191",
-      "CVE-2015-7192",
-      "CVE-2015-7193",
-      "CVE-2015-7194",
-      "CVE-2015-7195",
-      "CVE-2015-7196",
-      "CVE-2015-7197",
-      "CVE-2015-7198",
-      "CVE-2015-7199",
-      "CVE-2015-7200"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-11-03",
-    "entry": "2015-11-19",
-    "modified": "2016-04-13"
-  }
+	"vid": "9d04936c-75f1-4a2c-9ade-4c1708be5df9",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"nspr"
+			],
+			"range": [
+				{
+					"lt": "4.10.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-nspr"
+			],
+			"range": [
+				{
+					"lt": "4.10.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"nss"
+			],
+			"range": [
+				{
+					"lt": "3.20.1",
+					"ge": "3.20"
+				},
+				{
+					"lt": "3.19.4",
+					"ge": "3.19.3"
+				},
+				{
+					"lt": "3.19.2.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "42.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "42.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.39"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.39"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox-esr"
+			],
+			"range": [
+				{
+					"lt": "38.4.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"libxul"
+			],
+			"range": [
+				{
+					"lt": "38.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "38.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "38.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/\">\n\t  <p>MFSA 2015-133 NSS and NSPR memory corruption issues</p>\n\t  <p>MFSA 2015-132 Mixed content WebSocket policy bypass\n\t    through workers</p>\n\t  <p>MFSA 2015-131 Vulnerabilities found through code\n\t    inspection</p>\n\t  <p>MFSA 2015-130 JavaScript garbage collection crash with\n\t    Java applet</p>\n\t  <p>MFSA 2015-129 Certain escaped characters in host of\n\t    Location-header are being treated as non-escaped</p>\n\t  <p>MFSA 2015-128 Memory corruption in libjar through zip\n\t    files</p>\n\t  <p>MFSA 2015-127 CORS preflight is bypassed when\n\t    non-standard Content-Type headers are received</p>\n\t  <p>MFSA 2015-126 Crash when accessing HTML tables with\n\t    accessibility tools on OS X</p>\n\t  <p>MFSA 2015-125 XSS attack through intents on Firefox for\n\t    Android</p>\n\t  <p>MFSA 2015-124 Android intents can be used on Firefox for\n\t    Android to open privileged files</p>\n\t  <p>MFSA 2015-123 Buffer overflow during image interactions\n\t    in canvas</p>\n\t  <p>MFSA 2015-122 Trailing whitespace in IP address hostnames\n\t    can bypass same-origin policy</p>\n\t  <p>MFSA 2015-121 Disabling scripts in Add-on SDK panels has\n\t    no effect</p>\n\t  <p>MFSA 2015-120 Reading sensitive profile files through\n\t    local HTML file on Android</p>\n\t  <p>MFSA 2015-119 Firefox for Android addressbar can be\n\t    removed after fullscreen mode</p>\n\t  <p>MFSA 2015-118 CSP bypass due to permissive Reader mode\n\t    whitelist</p>\n\t  <p>MFSA 2015-117 Information disclosure through NTLM\n\t    authentication</p>\n\t  <p>MFSA 2015-116 Miscellaneous memory safety hazards\n\t    (rv:42.0 / rv:38.4)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2015-116/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-117/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-118/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-119/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-120/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-121/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-122/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-123/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-124/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-125/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-126/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-127/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-128/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-129/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-130/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-131/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-132/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-133/"
+		],
+		"cvename": [
+			"CVE-2015-4513",
+			"CVE-2015-4514",
+			"CVE-2015-4515",
+			"CVE-2015-4518",
+			"CVE-2015-7181",
+			"CVE-2015-7182",
+			"CVE-2015-7183",
+			"CVE-2015-7185",
+			"CVE-2015-7186",
+			"CVE-2015-7187",
+			"CVE-2015-7188",
+			"CVE-2015-7189",
+			"CVE-2015-7190",
+			"CVE-2015-7191",
+			"CVE-2015-7192",
+			"CVE-2015-7193",
+			"CVE-2015-7194",
+			"CVE-2015-7195",
+			"CVE-2015-7196",
+			"CVE-2015-7197",
+			"CVE-2015-7198",
+			"CVE-2015-7199",
+			"CVE-2015-7200"
+		]
+	},
+	"dates": {
+		"discovery": "2015-11-03",
+		"entry": "2015-11-19",
+		"modified": "2016-04-13"
+	}
 }

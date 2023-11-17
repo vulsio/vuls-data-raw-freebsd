@@ -1,33 +1,33 @@
 {
-  "vid": "0519db18-cf15-11e5-805c-5453ed2e2b49",
-  "topic": "py-pillow -- Integer overflow in Resample.c",
-  "affects": [
-    {
-      "name": [
-        "py27-pillow",
-        "py33-pillow",
-        "py34-pillow",
-        "py35-pillow"
-      ],
-      "range": [
-        {
-          "lt": "2.9.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Pillow maintainers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.org/en/3.1.x/releasenotes/3.1.1.html\">\n\t  <p>If a large value was passed into the new size for an image, it is\n\t    possible to overflow an int32 value passed into malloc, leading the\n\t    malloc’d buffer to be undersized. These allocations are followed by\n\t    a loop that writes out of bounds. This can lead to corruption on\n\t    the heap of the Python process with attacker controlled float\n\t    data.</p>\n\t  <p>This issue was found by Ned Williamson.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/python-pillow/Pillow/commit/41fae6d9e2da741d2c5464775c7f1a609ea03798",
-      "https://github.com/python-pillow/Pillow/issues/1710"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-05",
-    "entry": "2016-02-09"
-  }
+	"vid": "0519db18-cf15-11e5-805c-5453ed2e2b49",
+	"topic": "py-pillow -- Integer overflow in Resample.c",
+	"affects": [
+		{
+			"name": [
+				"py27-pillow",
+				"py33-pillow",
+				"py34-pillow",
+				"py35-pillow"
+			],
+			"range": [
+				{
+					"lt": "2.9.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Pillow maintainers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.org/en/3.1.x/releasenotes/3.1.1.html\">\n\t  <p>If a large value was passed into the new size for an image, it is\n\t    possible to overflow an int32 value passed into malloc, leading the\n\t    malloc’d buffer to be undersized. These allocations are followed by\n\t    a loop that writes out of bounds. This can lead to corruption on\n\t    the heap of the Python process with attacker controlled float\n\t    data.</p>\n\t  <p>This issue was found by Ned Williamson.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/python-pillow/Pillow/commit/41fae6d9e2da741d2c5464775c7f1a609ea03798",
+			"https://github.com/python-pillow/Pillow/issues/1710"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-05",
+		"entry": "2016-02-09"
+	}
 }

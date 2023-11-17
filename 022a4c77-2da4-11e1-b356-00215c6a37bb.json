@@ -1,67 +1,67 @@
 {
-  "vid": "022a4c77-2da4-11e1-b356-00215c6a37bb",
-  "topic": "proftpd -- arbitrary code execution vulnerability with chroot",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.3_9",
-          "ge": "7.3"
-        },
-        {
-          "lt": "7.4_5",
-          "ge": "7.4"
-        },
-        {
-          "lt": "8.1_6",
-          "ge": "8.1"
-        },
-        {
-          "lt": "8.2_5",
-          "ge": "8.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "proftpd",
-        "proftpd-mysql"
-      ],
-      "range": [
-        {
-          "lt": "1.3.3g_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "proftpd-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.3.3.r4_3,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The FreeBSD security advisory FreeBSD-SA-11:07.chroot reports:</p>\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-11:07.chroot.asc\">\n\t  <p>If ftpd is configured to place a user in a chroot environment,\n\t    then an attacker who can log in as that user may be able to run\n\t    arbitrary code(...).</p>\n\t</blockquote>\n\t<p>Proftpd shares the same problem of a similar nature.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/fulldisclosure/2011/Nov/452"
-    ],
-    "freebsd_sa": [
-      "SA-11:07.chroot"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-11-30",
-    "entry": "2011-12-23",
-    "modified": "2012-01-29"
-  }
+	"vid": "022a4c77-2da4-11e1-b356-00215c6a37bb",
+	"topic": "proftpd -- arbitrary code execution vulnerability with chroot",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.3_9",
+					"ge": "7.3"
+				},
+				{
+					"lt": "7.4_5",
+					"ge": "7.4"
+				},
+				{
+					"lt": "8.1_6",
+					"ge": "8.1"
+				},
+				{
+					"lt": "8.2_5",
+					"ge": "8.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"proftpd",
+				"proftpd-mysql"
+			],
+			"range": [
+				{
+					"lt": "1.3.3g_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"proftpd-devel"
+			],
+			"range": [
+				{
+					"lt": "1.3.3.r4_3,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The FreeBSD security advisory FreeBSD-SA-11:07.chroot reports:</p>\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-11:07.chroot.asc\">\n\t  <p>If ftpd is configured to place a user in a chroot environment,\n\t    then an attacker who can log in as that user may be able to run\n\t    arbitrary code(...).</p>\n\t</blockquote>\n\t<p>Proftpd shares the same problem of a similar nature.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/fulldisclosure/2011/Nov/452"
+		],
+		"freebsd_sa": [
+			"SA-11:07.chroot"
+		]
+	},
+	"dates": {
+		"discovery": "2011-11-30",
+		"entry": "2011-12-23",
+		"modified": "2012-01-29"
+	}
 }

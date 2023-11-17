@@ -1,137 +1,137 @@
 {
-  "vid": "2c2d1c39-1396-459a-91f5-ca03ee7c64c6",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "43.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "43.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.40"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.40"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox-esr"
-      ],
-      "range": [
-        {
-          "lt": "38.5.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libxul"
-      ],
-      "range": [
-        {
-          "lt": "38.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "38.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "38.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/\">\n\t  <p>MFSA 2015-134 Miscellaneous memory safety hazards\n\t    (rv:43.0 / rv:38.5)</p>\n\t  <p>MFSA 2015-135 Crash with JavaScript variable assignment\n\t    with unboxed objects</p>\n\t  <p>MFSA 2015-136 Same-origin policy violation using\n\t    perfomance.getEntries and history navigation</p>\n\t  <p>MFSA 2015-137 Firefox allows for control characters to be\n\t    set in cookies</p>\n\t  <p>MFSA 2015-138 Use-after-free in WebRTC when datachannel\n\t    is used after being destroyed</p>\n\t  <p>MFSA 2015-139 Integer overflow allocating extremely large\n\t    textures</p>\n\t  <p>MFSA 2015-140 Cross-origin information leak through web\n\t    workers error events</p>\n\t  <p>MFSA 2015-141 Hash in data URI is incorrectly parsed</p>\n\t  <p>MFSA 2015-142 DOS due to malformed frames in HTTP/2</p>\n\t  <p>MFSA 2015-143 Linux file chooser crashes on malformed\n\t    images due to flaws in Jasper library</p>\n\t  <p>MFSA 2015-144 Buffer overflows found through code\n\t    inspection</p>\n\t  <p>MFSA 2015-145 Underflow through code inspection</p>\n\t  <p>MFSA 2015-146 Integer overflow in MP4 playback in 64-bit\n\t    versions</p>\n\t  <p>MFSA 2015-147 Integer underflow and buffer overflow\n\t    processing MP4 metadata in libstagefright</p>\n\t  <p>MFSA 2015-148 Privilege escalation vulnerabilities in\n\t    WebExtension APIs</p>\n\t  <p>MFSA 2015-149 Cross-site reading attack through data and\n\t    view-source URIs</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2015-134/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-135/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-136/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-137/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-138/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-139/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-140/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-141/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-142/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-143/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-144/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-145/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-146/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-147/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-148/",
-      "https://www.mozilla.org/security/advisories/mfsa2015-149/"
-    ],
-    "cvename": [
-      "CVE-2015-7201",
-      "CVE-2015-7202",
-      "CVE-2015-7203",
-      "CVE-2015-7204",
-      "CVE-2015-7205",
-      "CVE-2015-7207",
-      "CVE-2015-7208",
-      "CVE-2015-7210",
-      "CVE-2015-7211",
-      "CVE-2015-7212",
-      "CVE-2015-7213",
-      "CVE-2015-7214",
-      "CVE-2015-7215",
-      "CVE-2015-7216",
-      "CVE-2015-7217",
-      "CVE-2015-7218",
-      "CVE-2015-7219",
-      "CVE-2015-7220",
-      "CVE-2015-7221",
-      "CVE-2015-7222",
-      "CVE-2015-7223"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-15",
-    "entry": "2015-12-15"
-  }
+	"vid": "2c2d1c39-1396-459a-91f5-ca03ee7c64c6",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "43.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "43.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.40"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.40"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox-esr"
+			],
+			"range": [
+				{
+					"lt": "38.5.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"libxul"
+			],
+			"range": [
+				{
+					"lt": "38.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "38.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "38.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/\">\n\t  <p>MFSA 2015-134 Miscellaneous memory safety hazards\n\t    (rv:43.0 / rv:38.5)</p>\n\t  <p>MFSA 2015-135 Crash with JavaScript variable assignment\n\t    with unboxed objects</p>\n\t  <p>MFSA 2015-136 Same-origin policy violation using\n\t    perfomance.getEntries and history navigation</p>\n\t  <p>MFSA 2015-137 Firefox allows for control characters to be\n\t    set in cookies</p>\n\t  <p>MFSA 2015-138 Use-after-free in WebRTC when datachannel\n\t    is used after being destroyed</p>\n\t  <p>MFSA 2015-139 Integer overflow allocating extremely large\n\t    textures</p>\n\t  <p>MFSA 2015-140 Cross-origin information leak through web\n\t    workers error events</p>\n\t  <p>MFSA 2015-141 Hash in data URI is incorrectly parsed</p>\n\t  <p>MFSA 2015-142 DOS due to malformed frames in HTTP/2</p>\n\t  <p>MFSA 2015-143 Linux file chooser crashes on malformed\n\t    images due to flaws in Jasper library</p>\n\t  <p>MFSA 2015-144 Buffer overflows found through code\n\t    inspection</p>\n\t  <p>MFSA 2015-145 Underflow through code inspection</p>\n\t  <p>MFSA 2015-146 Integer overflow in MP4 playback in 64-bit\n\t    versions</p>\n\t  <p>MFSA 2015-147 Integer underflow and buffer overflow\n\t    processing MP4 metadata in libstagefright</p>\n\t  <p>MFSA 2015-148 Privilege escalation vulnerabilities in\n\t    WebExtension APIs</p>\n\t  <p>MFSA 2015-149 Cross-site reading attack through data and\n\t    view-source URIs</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2015-134/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-135/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-136/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-137/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-138/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-139/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-140/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-141/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-142/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-143/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-144/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-145/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-146/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-147/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-148/",
+			"https://www.mozilla.org/security/advisories/mfsa2015-149/"
+		],
+		"cvename": [
+			"CVE-2015-7201",
+			"CVE-2015-7202",
+			"CVE-2015-7203",
+			"CVE-2015-7204",
+			"CVE-2015-7205",
+			"CVE-2015-7207",
+			"CVE-2015-7208",
+			"CVE-2015-7210",
+			"CVE-2015-7211",
+			"CVE-2015-7212",
+			"CVE-2015-7213",
+			"CVE-2015-7214",
+			"CVE-2015-7215",
+			"CVE-2015-7216",
+			"CVE-2015-7217",
+			"CVE-2015-7218",
+			"CVE-2015-7219",
+			"CVE-2015-7220",
+			"CVE-2015-7221",
+			"CVE-2015-7222",
+			"CVE-2015-7223"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-15",
+		"entry": "2015-12-15"
+	}
 }

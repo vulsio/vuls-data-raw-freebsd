@@ -1,32 +1,32 @@
 {
-  "vid": "1986449a-8b74-40fa-b7cc-0d8def8aad65",
-  "topic": "openvpn -- denial of service: malicious authenticated \"tap\" client can deplete server virtual memory",
-  "affects": [
-    {
-      "name": [
-        "openvpn"
-      ],
-      "range": [
-        {
-          "lt": "2.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>James Yonan reports:</p>\n\t<blockquote cite=\"http://openvpn.net/changelog.html\">\n\t  <p>A malicious [authenticated] client in \"dev tap\"\n\t    ethernet bridging mode could theoretically flood the server\n\t    with packets appearing to come from hundreds of thousands\n\t    of different MAC addresses, causing the OpenVPN process to\n\t    deplete system virtual memory as it expands its internal\n\t    routing table.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://openvpn.net/changelog.html"
-    ],
-    "cvename": [
-      "CVE-2005-2533"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-27",
-    "entry": "2005-08-19"
-  }
+	"vid": "1986449a-8b74-40fa-b7cc-0d8def8aad65",
+	"topic": "openvpn -- denial of service: malicious authenticated \"tap\" client can deplete server virtual memory",
+	"affects": [
+		{
+			"name": [
+				"openvpn"
+			],
+			"range": [
+				{
+					"lt": "2.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>James Yonan reports:</p>\n\t<blockquote cite=\"http://openvpn.net/changelog.html\">\n\t  <p>A malicious [authenticated] client in \"dev tap\"\n\t    ethernet bridging mode could theoretically flood the server\n\t    with packets appearing to come from hundreds of thousands\n\t    of different MAC addresses, causing the OpenVPN process to\n\t    deplete system virtual memory as it expands its internal\n\t    routing table.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://openvpn.net/changelog.html"
+		],
+		"cvename": [
+			"CVE-2005-2533"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-27",
+		"entry": "2005-08-19"
+	}
 }

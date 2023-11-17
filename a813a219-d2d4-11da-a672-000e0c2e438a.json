@@ -1,46 +1,46 @@
 {
-  "vid": "a813a219-d2d4-11da-a672-000e0c2e438a",
-  "topic": "zgv, xzgv -- heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "zgv"
-      ],
-      "range": [
-        {
-          "lt": "5.9_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xzgv"
-      ],
-      "range": [
-        {
-          "lt": "0.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gentoo reports:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200604-10.xml\">\n\t  <p>Andrea Barisani of Gentoo Linux discovered xzgv and zgv\n\t    allocate insufficient memory when rendering images with\n\t    more than 3 output components, such as images using the\n\t    YCCK or CMYK colour space.\tWhen xzgv or zgv attempt to\n\t    render the image, data from the image overruns a heap\n\t    allocated buffer.</p>\n\t  <p>An attacker may be able to construct a malicious image that\n\t    executes arbitrary code with the permissions of the xzgv or\n\t    zgv user when attempting to render the image.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.gentoo.org/security/en/glsa/glsa-200604-10.xml"
-    ],
-    "cvename": [
-      "CVE-2006-1060"
-    ],
-    "bid": [
-      "17409"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-04-21",
-    "entry": "2006-04-23",
-    "modified": "2010-03-22"
-  }
+	"vid": "a813a219-d2d4-11da-a672-000e0c2e438a",
+	"topic": "zgv, xzgv -- heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"zgv"
+			],
+			"range": [
+				{
+					"lt": "5.9_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xzgv"
+			],
+			"range": [
+				{
+					"lt": "0.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gentoo reports:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200604-10.xml\">\n\t  <p>Andrea Barisani of Gentoo Linux discovered xzgv and zgv\n\t    allocate insufficient memory when rendering images with\n\t    more than 3 output components, such as images using the\n\t    YCCK or CMYK colour space.\tWhen xzgv or zgv attempt to\n\t    render the image, data from the image overruns a heap\n\t    allocated buffer.</p>\n\t  <p>An attacker may be able to construct a malicious image that\n\t    executes arbitrary code with the permissions of the xzgv or\n\t    zgv user when attempting to render the image.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.gentoo.org/security/en/glsa/glsa-200604-10.xml"
+		],
+		"cvename": [
+			"CVE-2006-1060"
+		],
+		"bid": [
+			"17409"
+		]
+	},
+	"dates": {
+		"discovery": "2006-04-21",
+		"entry": "2006-04-23",
+		"modified": "2010-03-22"
+	}
 }

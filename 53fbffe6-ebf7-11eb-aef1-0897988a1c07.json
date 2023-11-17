@@ -1,52 +1,52 @@
 {
-  "vid": "53fbffe6-ebf7-11eb-aef1-0897988a1c07",
-  "topic": "asterisk -- pjproject/pjsip: crash when SSL socket destroyed during handshake",
-  "affects": [
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.38.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk16"
-      ],
-      "range": [
-        {
-          "lt": "16.19.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk18"
-      ],
-      "range": [
-        {
-          "lt": "18.5.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>Depending on the timing, it's possible for Asterisk to\n\t  crash when using a TLS connection if the underlying socket\n\t  parent/listener gets destroyed during the handshake.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://downloads.asterisk.org/pub/security/AST-2021-009.html"
-    ],
-    "cvename": [
-      "CVE-2021-32686"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-05-05",
-    "entry": "2021-07-23"
-  }
+	"vid": "53fbffe6-ebf7-11eb-aef1-0897988a1c07",
+	"topic": "asterisk -- pjproject/pjsip: crash when SSL socket destroyed during handshake",
+	"affects": [
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.38.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk16"
+			],
+			"range": [
+				{
+					"lt": "16.19.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk18"
+			],
+			"range": [
+				{
+					"lt": "18.5.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>Depending on the timing, it's possible for Asterisk to\n\t  crash when using a TLS connection if the underlying socket\n\t  parent/listener gets destroyed during the handshake.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://downloads.asterisk.org/pub/security/AST-2021-009.html"
+		],
+		"cvename": [
+			"CVE-2021-32686"
+		]
+	},
+	"dates": {
+		"discovery": "2021-05-05",
+		"entry": "2021-07-23"
+	}
 }

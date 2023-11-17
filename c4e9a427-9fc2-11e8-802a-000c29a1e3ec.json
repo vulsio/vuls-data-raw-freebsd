@@ -1,60 +1,60 @@
 {
-  "vid": "c4e9a427-9fc2-11e8-802a-000c29a1e3ec",
-  "topic": "samba -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "samba46"
-      ],
-      "range": [
-        {
-          "lt": "4.6.16"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba47"
-      ],
-      "range": [
-        {
-          "lt": "4.7.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba48"
-      ],
-      "range": [
-        {
-          "lt": "4.8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The samba project reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-1139.html\">\n\t  <p>Samba releases 4.7.0 to 4.8.3 (inclusive) contain an error which\n\t  allows authentication using NTLMv1 over an SMB1 transport (either\n\t  directory or via NETLOGON SamLogon calls from a member server), even\n\t  when NTLMv1 is explicitly disabled on the server.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-1140.html\">\n\t  <p>Missing input sanitization checks on some of the input parameters to\n\t  LDB database layer cause the LDAP server and DNS server to crash when\n\t  following a NULL pointer.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-10858.html\">\n\t  <p>Samba releases 3.2.0 to 4.8.3 (inclusive) contain an error in\n\t  libsmbclient that could allow a malicious server to overwrite\n\t  client heap memory by returning an extra long filename in a directory\n\t  listing.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-10918.html\">\n\t  <p>Missing database output checks on the returned directory attributes\n\t  from the LDB database layer cause the DsCrackNames call in the DRSUAPI\n\t  server to crash when following a NULL pointer.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-10919.html\">\n\t  <p>All versions of the Samba Active Directory LDAP server from 4.0.0\n\t  onwards are vulnerable to the disclosure of confidential attribute\n\t  values, both of attributes where the schema SEARCH_FLAG_CONFIDENTIAL\n\t  (0x80) searchFlags bit and where an explicit Access Control Entry has\n\t  been specified on the ntSecurityDescriptor.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.samba.org/samba/security/CVE-2018-1139.html",
-      "https://www.samba.org/samba/security/CVE-2018-1140.html",
-      "https://www.samba.org/samba/security/CVE-2018-10858.html",
-      "https://www.samba.org/samba/security/CVE-2018-10918.html",
-      "https://www.samba.org/samba/security/CVE-2018-10919.html"
-    ],
-    "cvename": [
-      "CVE-2018-1139",
-      "CVE-2018-1140",
-      "CVE-2018-10858",
-      "CVE-2018-10918",
-      "CVE-2018-10919"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-08-14",
-    "entry": "2018-08-14"
-  }
+	"vid": "c4e9a427-9fc2-11e8-802a-000c29a1e3ec",
+	"topic": "samba -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"samba46"
+			],
+			"range": [
+				{
+					"lt": "4.6.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba47"
+			],
+			"range": [
+				{
+					"lt": "4.7.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba48"
+			],
+			"range": [
+				{
+					"lt": "4.8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The samba project reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-1139.html\">\n\t  <p>Samba releases 4.7.0 to 4.8.3 (inclusive) contain an error which\n\t  allows authentication using NTLMv1 over an SMB1 transport (either\n\t  directory or via NETLOGON SamLogon calls from a member server), even\n\t  when NTLMv1 is explicitly disabled on the server.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-1140.html\">\n\t  <p>Missing input sanitization checks on some of the input parameters to\n\t  LDB database layer cause the LDAP server and DNS server to crash when\n\t  following a NULL pointer.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-10858.html\">\n\t  <p>Samba releases 3.2.0 to 4.8.3 (inclusive) contain an error in\n\t  libsmbclient that could allow a malicious server to overwrite\n\t  client heap memory by returning an extra long filename in a directory\n\t  listing.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-10918.html\">\n\t  <p>Missing database output checks on the returned directory attributes\n\t  from the LDB database layer cause the DsCrackNames call in the DRSUAPI\n\t  server to crash when following a NULL pointer.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2018-10919.html\">\n\t  <p>All versions of the Samba Active Directory LDAP server from 4.0.0\n\t  onwards are vulnerable to the disclosure of confidential attribute\n\t  values, both of attributes where the schema SEARCH_FLAG_CONFIDENTIAL\n\t  (0x80) searchFlags bit and where an explicit Access Control Entry has\n\t  been specified on the ntSecurityDescriptor.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.samba.org/samba/security/CVE-2018-1139.html",
+			"https://www.samba.org/samba/security/CVE-2018-1140.html",
+			"https://www.samba.org/samba/security/CVE-2018-10858.html",
+			"https://www.samba.org/samba/security/CVE-2018-10918.html",
+			"https://www.samba.org/samba/security/CVE-2018-10919.html"
+		],
+		"cvename": [
+			"CVE-2018-1139",
+			"CVE-2018-1140",
+			"CVE-2018-10858",
+			"CVE-2018-10918",
+			"CVE-2018-10919"
+		]
+	},
+	"dates": {
+		"discovery": "2018-08-14",
+		"entry": "2018-08-14"
+	}
 }

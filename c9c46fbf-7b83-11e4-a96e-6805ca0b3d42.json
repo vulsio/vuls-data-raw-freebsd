@@ -1,35 +1,35 @@
 {
-  "vid": "c9c46fbf-7b83-11e4-a96e-6805ca0b3d42",
-  "topic": "phpMyAdmin -- XSS and DoS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "4.2.13.1",
-          "ge": "4.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-17.php\">\n\t  <p>DoS vulnerability with long passwords.</p>\n\t  <p>With very long passwords it was possible to initiate a\n\t    denial of service attack on phpMyAdmin.</p>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t  <p>This vulnerability can be mitigated by configuring\n\t    throttling in the webserver.</p>\n\t</blockquote>\n\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-18.php\">\n\t  <p>XSS vulnerability in redirection mechanism.</p>\n\t  <p>With a crafted URL it was possible to trigger an XSS in\n\t    the redirection mechanism in phpMyAdmin.</p>\n\t  <p>We consider this vulnerability to be non critical.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-17.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-18.php"
-    ],
-    "cvename": [
-      "CVE-2014-9218",
-      "CVE-2014-9219"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-12-03",
-    "entry": "2014-12-04"
-  }
+	"vid": "c9c46fbf-7b83-11e4-a96e-6805ca0b3d42",
+	"topic": "phpMyAdmin -- XSS and DoS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "4.2.13.1",
+					"ge": "4.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-17.php\">\n\t  <p>DoS vulnerability with long passwords.</p>\n\t  <p>With very long passwords it was possible to initiate a\n\t    denial of service attack on phpMyAdmin.</p>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t  <p>This vulnerability can be mitigated by configuring\n\t    throttling in the webserver.</p>\n\t</blockquote>\n\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-18.php\">\n\t  <p>XSS vulnerability in redirection mechanism.</p>\n\t  <p>With a crafted URL it was possible to trigger an XSS in\n\t    the redirection mechanism in phpMyAdmin.</p>\n\t  <p>We consider this vulnerability to be non critical.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-17.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-18.php"
+		],
+		"cvename": [
+			"CVE-2014-9218",
+			"CVE-2014-9219"
+		]
+	},
+	"dates": {
+		"discovery": "2014-12-03",
+		"entry": "2014-12-04"
+	}
 }

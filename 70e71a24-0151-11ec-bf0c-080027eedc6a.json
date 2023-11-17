@@ -1,33 +1,33 @@
 {
-  "vid": "70e71a24-0151-11ec-bf0c-080027eedc6a",
-  "topic": "bouncycastle15 -- bcrypt password checking vulnerability",
-  "affects": [
-    {
-      "name": [
-        "bouncycastle15"
-      ],
-      "range": [
-        {
-          "lt": "1.67",
-          "ge": "1.65"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Bouncy Castle team reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28052\">\n\t  <p>\n\t    The OpenBSDBCrypt.checkPassword utility method compared incorrect\n\t    data when checking the password, allowing incorrect passwords to\n\t    indicate they were matching with previously hashed ones that were\n\t    different.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28052"
-    ],
-    "cvename": [
-      "CVE-2020-28052"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-11-02",
-    "entry": "2021-08-20"
-  }
+	"vid": "70e71a24-0151-11ec-bf0c-080027eedc6a",
+	"topic": "bouncycastle15 -- bcrypt password checking vulnerability",
+	"affects": [
+		{
+			"name": [
+				"bouncycastle15"
+			],
+			"range": [
+				{
+					"lt": "1.67",
+					"ge": "1.65"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Bouncy Castle team reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28052\">\n\t  <p>\n\t    The OpenBSDBCrypt.checkPassword utility method compared incorrect\n\t    data when checking the password, allowing incorrect passwords to\n\t    indicate they were matching with previously hashed ones that were\n\t    different.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28052"
+		],
+		"cvename": [
+			"CVE-2020-28052"
+		]
+	},
+	"dates": {
+		"discovery": "2020-11-02",
+		"entry": "2021-08-20"
+	}
 }

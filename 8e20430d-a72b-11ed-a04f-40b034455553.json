@@ -1,32 +1,32 @@
 {
-  "vid": "8e20430d-a72b-11ed-a04f-40b034455553",
-  "topic": "MinIO -- unprivileged users can create service accounts for admin users",
-  "affects": [
-    {
-      "name": [
-        "minio"
-      ],
-      "range": [
-        {
-          "lt": "2022.04.12.06.55.35"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MinIO reports:</p>\n\t<blockquote cite=\"https://github.com/minio/minio/security/advisories/GHSA-2j69-jjmg-534q\">\n\t  <p>\n\t      A security issue was found where an unprivileged user is\n\t      able to create service accounts for root or other admin\n\t      users and then is able to assume their access policies\n\t      via the generated credentials.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/minio/minio/security/advisories/GHSA-2j69-jjmg-534q"
-    ],
-    "cvename": [
-      "CVE-2022-24842"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-11",
-    "entry": "2023-02-13"
-  }
+	"vid": "8e20430d-a72b-11ed-a04f-40b034455553",
+	"topic": "MinIO -- unprivileged users can create service accounts for admin users",
+	"affects": [
+		{
+			"name": [
+				"minio"
+			],
+			"range": [
+				{
+					"lt": "2022.04.12.06.55.35"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MinIO reports:</p>\n\t<blockquote cite=\"https://github.com/minio/minio/security/advisories/GHSA-2j69-jjmg-534q\">\n\t  <p>\n\t      A security issue was found where an unprivileged user is\n\t      able to create service accounts for root or other admin\n\t      users and then is able to assume their access policies\n\t      via the generated credentials.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/minio/minio/security/advisories/GHSA-2j69-jjmg-534q"
+		],
+		"cvename": [
+			"CVE-2022-24842"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-11",
+		"entry": "2023-02-13"
+	}
 }

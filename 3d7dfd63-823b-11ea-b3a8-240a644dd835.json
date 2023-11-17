@@ -1,37 +1,37 @@
 {
-  "vid": "3d7dfd63-823b-11ea-b3a8-240a644dd835",
-  "topic": "Client/server denial of service when handling AES-CTR ciphers",
-  "affects": [
-    {
-      "name": [
-        "libssh"
-      ],
-      "range": [
-        {
-          "lt": "0.8.9",
-          "ge": "0.8.0"
-        },
-        {
-          "lt": "0.9.4",
-          "ge": "0.9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The libssh team reports (originally reported by Yasheng Yang from\n\tGoogle):</p>\n\t<blockquote cite=\"https://www.libssh.org/security/advisories/CVE-2020-1730.txt\">\n\t  <p>A malicious client or server could crash the counterpart implemented\n\t  with libssh AES-CTR ciphers are used and don't get fully initialized. It\n\t  will crash when it tries to cleanup the AES-CTR ciphers when closing the\n\t  connection.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.libssh.org/security/advisories/CVE-2020-1730.txt\""
-    ],
-    "cvename": [
-      "CVE-2020-1730"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-01-25",
-    "entry": "2020-04-19"
-  }
+	"vid": "3d7dfd63-823b-11ea-b3a8-240a644dd835",
+	"topic": "Client/server denial of service when handling AES-CTR ciphers",
+	"affects": [
+		{
+			"name": [
+				"libssh"
+			],
+			"range": [
+				{
+					"lt": "0.8.9",
+					"ge": "0.8.0"
+				},
+				{
+					"lt": "0.9.4",
+					"ge": "0.9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The libssh team reports (originally reported by Yasheng Yang from\n\tGoogle):</p>\n\t<blockquote cite=\"https://www.libssh.org/security/advisories/CVE-2020-1730.txt\">\n\t  <p>A malicious client or server could crash the counterpart implemented\n\t  with libssh AES-CTR ciphers are used and don't get fully initialized. It\n\t  will crash when it tries to cleanup the AES-CTR ciphers when closing the\n\t  connection.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.libssh.org/security/advisories/CVE-2020-1730.txt\""
+		],
+		"cvename": [
+			"CVE-2020-1730"
+		]
+	},
+	"dates": {
+		"discovery": "2020-01-25",
+		"entry": "2020-04-19"
+	}
 }

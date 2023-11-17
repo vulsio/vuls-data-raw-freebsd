@@ -1,33 +1,33 @@
 {
-  "vid": "80e846ff-27eb-11e5-a4a5-002590263bf5",
-  "topic": "xen-kernel -- GNTTABOP_swap_grant_ref operation misbehavior",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.5.0_3",
-          "ge": "4.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-134.html\">\n\t  <p>With the introduction of version 2 grant table operations, a\n\t    version check became necessary for most grant table related\n\t    hypercalls.  The GNTTABOP_swap_grant_ref call was lacking such a\n\t    check.  As a result, the subsequent code behaved as if version 2 was\n\t    in use, when a guest issued this hypercall without a prior\n\t    GNTTABOP_setup_table or GNTTABOP_set_version.</p>\n\t  <p>The effect is a possible NULL pointer dereferences.  However, this\n\t    cannot be exploited to elevate privileges of the attacking domain,\n\t    as the maximum memory address that can be wrongly accessed this way\n\t    is bounded to far below the start of hypervisor memory.</p>\n\t  <p>Malicious or buggy guest domain kernels can mount a denial of\n\t    service attack which, if successful, can affect the whole system.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-134.html"
-    ],
-    "cvename": [
-      "CVE-2015-4163"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-11",
-    "entry": "2015-07-11"
-  }
+	"vid": "80e846ff-27eb-11e5-a4a5-002590263bf5",
+	"topic": "xen-kernel -- GNTTABOP_swap_grant_ref operation misbehavior",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.5.0_3",
+					"ge": "4.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-134.html\">\n\t  <p>With the introduction of version 2 grant table operations, a\n\t    version check became necessary for most grant table related\n\t    hypercalls.  The GNTTABOP_swap_grant_ref call was lacking such a\n\t    check.  As a result, the subsequent code behaved as if version 2 was\n\t    in use, when a guest issued this hypercall without a prior\n\t    GNTTABOP_setup_table or GNTTABOP_set_version.</p>\n\t  <p>The effect is a possible NULL pointer dereferences.  However, this\n\t    cannot be exploited to elevate privileges of the attacking domain,\n\t    as the maximum memory address that can be wrongly accessed this way\n\t    is bounded to far below the start of hypervisor memory.</p>\n\t  <p>Malicious or buggy guest domain kernels can mount a denial of\n\t    service attack which, if successful, can affect the whole system.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-134.html"
+		],
+		"cvename": [
+			"CVE-2015-4163"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-11",
+		"entry": "2015-07-11"
+	}
 }

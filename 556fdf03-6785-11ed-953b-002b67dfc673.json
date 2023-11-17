@@ -1,100 +1,100 @@
 {
-  "vid": "556fdf03-6785-11ed-953b-002b67dfc673",
-  "topic": "Tomcat -- Request Smuggling",
-  "affects": [
-    {
-      "name": [
-        "tomcat"
-      ],
-      "range": [
-        {
-          "lt": "8.5.83",
-          "ge": "8.5.0"
-        },
-        {
-          "lt": "9.0.68",
-          "ge": "9.0.0-M1"
-        },
-        {
-          "lt": "10.0.27",
-          "ge": "10.0.0-M1"
-        },
-        {
-          "lt": "10.1.1",
-          "ge": "10.1.0-M1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat85"
-      ],
-      "range": [
-        {
-          "lt": "8.5.83",
-          "ge": "8.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat9"
-      ],
-      "range": [
-        {
-          "lt": "9.0.68",
-          "ge": "9.0.0-M1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat10"
-      ],
-      "range": [
-        {
-          "lt": "10.0.27",
-          "ge": "10.0.0-M1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat101"
-      ],
-      "range": [
-        {
-          "lt": "10.1.1",
-          "ge": "10.1.0-M1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat-devel"
-      ],
-      "range": [
-        {
-          "lt": "10.1.1",
-          "ge": "10.1.0-M1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Apache Tomcat reports:</p>\n\t<blockquote cite=\"https://lists.apache.org/thread/zzcxzvqfdqn515zfs3dxb7n8gty589sq\">\n\t  <p>\n\t  If Tomcat was configured to ignore invalid HTTP headers via setting rejectIllegalHeader to false (the default for 8.5.x only), Tomcat did not reject a request containing an invalid Content-Length header making a request smuggling attack possible if Tomcat was located behind a reverse proxy that also failed to reject the request with the invalid header.\n\t  </p>\n\t  <p>The CVSS score for this vulnerability is 7.5 High</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2022-42252"
-    ],
-    "cvename": [
-      "CVE-2022-42252"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-10-31",
-    "entry": "2022-11-18"
-  }
+	"vid": "556fdf03-6785-11ed-953b-002b67dfc673",
+	"topic": "Tomcat -- Request Smuggling",
+	"affects": [
+		{
+			"name": [
+				"tomcat"
+			],
+			"range": [
+				{
+					"lt": "8.5.83",
+					"ge": "8.5.0"
+				},
+				{
+					"lt": "9.0.68",
+					"ge": "9.0.0-M1"
+				},
+				{
+					"lt": "10.0.27",
+					"ge": "10.0.0-M1"
+				},
+				{
+					"lt": "10.1.1",
+					"ge": "10.1.0-M1"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat85"
+			],
+			"range": [
+				{
+					"lt": "8.5.83",
+					"ge": "8.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat9"
+			],
+			"range": [
+				{
+					"lt": "9.0.68",
+					"ge": "9.0.0-M1"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat10"
+			],
+			"range": [
+				{
+					"lt": "10.0.27",
+					"ge": "10.0.0-M1"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat101"
+			],
+			"range": [
+				{
+					"lt": "10.1.1",
+					"ge": "10.1.0-M1"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat-devel"
+			],
+			"range": [
+				{
+					"lt": "10.1.1",
+					"ge": "10.1.0-M1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Apache Tomcat reports:</p>\n\t<blockquote cite=\"https://lists.apache.org/thread/zzcxzvqfdqn515zfs3dxb7n8gty589sq\">\n\t  <p>\n\t  If Tomcat was configured to ignore invalid HTTP headers via setting rejectIllegalHeader to false (the default for 8.5.x only), Tomcat did not reject a request containing an invalid Content-Length header making a request smuggling attack possible if Tomcat was located behind a reverse proxy that also failed to reject the request with the invalid header.\n\t  </p>\n\t  <p>The CVSS score for this vulnerability is 7.5 High</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2022-42252"
+		],
+		"cvename": [
+			"CVE-2022-42252"
+		]
+	},
+	"dates": {
+		"discovery": "2022-10-31",
+		"entry": "2022-11-18"
+	}
 }

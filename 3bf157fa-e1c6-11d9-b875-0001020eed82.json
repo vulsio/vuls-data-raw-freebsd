@@ -1,39 +1,39 @@
 {
-  "vid": "3bf157fa-e1c6-11d9-b875-0001020eed82",
-  "topic": "sudo -- local race condition vulnerability",
-  "affects": [
-    {
-      "name": [
-        "sudo"
-      ],
-      "range": [
-        {
-          "lt": "1.6.8.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Todd C. Miller reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111928183431376\">\n\t  <p>A race condition in Sudo's command pathname handling\n\t    prior to Sudo version 1.6.8p9 that could allow a user with\n\t    Sudo privileges to run arbitrary commands.</p>\n\t  <p>Exploitation of the bug requires that the user be allowed\n\t    to run one or more commands via Sudo and be able to create\n\t    symbolic links in the filesystem.  Furthermore, a sudoers\n\t    entry giving another user access to the ALL pseudo-command\n\t    must follow the user's sudoers entry for the race to\n\t    exist.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-1993"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111928183431376",
-        "msgid": "200506201424.j5KEOhQI024645@xerxes.courtesan.com"
-      }
-    ],
-    "bid": [
-      "13993"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-20",
-    "entry": "2005-06-20",
-    "modified": "2005-11-14"
-  }
+	"vid": "3bf157fa-e1c6-11d9-b875-0001020eed82",
+	"topic": "sudo -- local race condition vulnerability",
+	"affects": [
+		{
+			"name": [
+				"sudo"
+			],
+			"range": [
+				{
+					"lt": "1.6.8.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Todd C. Miller reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111928183431376\">\n\t  <p>A race condition in Sudo's command pathname handling\n\t    prior to Sudo version 1.6.8p9 that could allow a user with\n\t    Sudo privileges to run arbitrary commands.</p>\n\t  <p>Exploitation of the bug requires that the user be allowed\n\t    to run one or more commands via Sudo and be able to create\n\t    symbolic links in the filesystem.  Furthermore, a sudoers\n\t    entry giving another user access to the ALL pseudo-command\n\t    must follow the user's sudoers entry for the race to\n\t    exist.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-1993"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111928183431376",
+				"msgid": "200506201424.j5KEOhQI024645@xerxes.courtesan.com"
+			}
+		],
+		"bid": [
+			"13993"
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-20",
+		"entry": "2005-06-20",
+		"modified": "2005-11-14"
+	}
 }

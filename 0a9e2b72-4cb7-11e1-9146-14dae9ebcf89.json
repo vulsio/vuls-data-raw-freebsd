@@ -1,109 +1,109 @@
 {
-  "vid": "0a9e2b72-4cb7-11e1-9146-14dae9ebcf89",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "10.0,1",
-          "gt": "4.0,1"
-        },
-        {
-          "lt": "3.6.26",
-          "ge": "3.6.*,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "10.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "10.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "10.0",
-          "gt": "4.0"
-        },
-        {
-          "lt": "3.1.18",
-          "gt": "3.1.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2012-01 Miscellaneous memory safety hazards (rv:10.0/\n\t    rv:1.9.2.26)</p>\n\t  <p>MFSA 2012-02 Overly permissive IPv6 literal syntax</p>\n\t  <p>MFSA 2012-03 iframe element exposed across domains via name\n\t    attribute</p>\n\t  <p>MFSA 2012-04 Child nodes from nsDOMAttribute still accessible\n\t    after removal of nodes</p>\n\t  <p>MFSA 2012-05 Frame scripts calling into untrusted objects bypass\n\t    security checks</p>\n\t  <p>MFSA 2012-06 Uninitialized memory appended when encoding icon\n\t    images may cause information disclosure</p>\n\t  <p>MFSA 2012-07 Potential Memory Corruption When Decoding Ogg Vorbis\n\t    files</p>\n\t  <p>MFSA 2012-08 Crash with malformed embedded XSLT stylesheets</p>\n\t  <p>MFSA 2012-09 Firefox Recovery Key.html is saved with unsafe\n\t    permission</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-01.html",
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-02.html",
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-03.html",
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-04.html",
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-05.html",
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-06.html",
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-07.html",
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-08.html",
-      "http://www.mozilla.org/security/announce/2012/mfsa2012-09.html"
-    ],
-    "cvename": [
-      "CVE-2012-0442",
-      "CVE-2012-0443",
-      "CVE-2011-3670",
-      "CVE-2012-0445",
-      "CVE-2011-3659",
-      "CVE-2012-0446",
-      "CVE-2012-0447",
-      "CVE-2012-0449",
-      "CVE-2012-0450"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-01-31",
-    "entry": "2012-02-01",
-    "modified": "2012-03-18"
-  }
+	"vid": "0a9e2b72-4cb7-11e1-9146-14dae9ebcf89",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "10.0,1",
+					"gt": "4.0,1"
+				},
+				{
+					"lt": "3.6.26",
+					"ge": "3.6.*,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "10.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "10.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "10.0",
+					"gt": "4.0"
+				},
+				{
+					"lt": "3.1.18",
+					"gt": "3.1.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/known-vulnerabilities/\">\n\t  <p>MFSA 2012-01 Miscellaneous memory safety hazards (rv:10.0/\n\t    rv:1.9.2.26)</p>\n\t  <p>MFSA 2012-02 Overly permissive IPv6 literal syntax</p>\n\t  <p>MFSA 2012-03 iframe element exposed across domains via name\n\t    attribute</p>\n\t  <p>MFSA 2012-04 Child nodes from nsDOMAttribute still accessible\n\t    after removal of nodes</p>\n\t  <p>MFSA 2012-05 Frame scripts calling into untrusted objects bypass\n\t    security checks</p>\n\t  <p>MFSA 2012-06 Uninitialized memory appended when encoding icon\n\t    images may cause information disclosure</p>\n\t  <p>MFSA 2012-07 Potential Memory Corruption When Decoding Ogg Vorbis\n\t    files</p>\n\t  <p>MFSA 2012-08 Crash with malformed embedded XSLT stylesheets</p>\n\t  <p>MFSA 2012-09 Firefox Recovery Key.html is saved with unsafe\n\t    permission</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-01.html",
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-02.html",
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-03.html",
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-04.html",
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-05.html",
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-06.html",
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-07.html",
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-08.html",
+			"http://www.mozilla.org/security/announce/2012/mfsa2012-09.html"
+		],
+		"cvename": [
+			"CVE-2012-0442",
+			"CVE-2012-0443",
+			"CVE-2011-3670",
+			"CVE-2012-0445",
+			"CVE-2011-3659",
+			"CVE-2012-0446",
+			"CVE-2012-0447",
+			"CVE-2012-0449",
+			"CVE-2012-0450"
+		]
+	},
+	"dates": {
+		"discovery": "2012-01-31",
+		"entry": "2012-02-01",
+		"modified": "2012-03-18"
+	}
 }

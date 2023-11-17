@@ -1,39 +1,39 @@
 {
-  "vid": "c28ee9cd-916e-4dcf-8ed3-e97e5846db6c",
-  "topic": "typo3 -- Cross-Site Scripting Vulnerability in TYPO3 Core",
-  "affects": [
-    {
-      "name": [
-        "typo3"
-      ],
-      "range": [
-        {
-          "lt": "4.5.17",
-          "ge": "4.5"
-        },
-        {
-          "lt": "4.6.10",
-          "ge": "4.6"
-        },
-        {
-          "lt": "4.7.2",
-          "ge": "4.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Typo3 Security Report (TYPO3-CORE-SA-2012-003):</p>\n\t<blockquote cite=\"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-003/\">\n\t  <p>TYPO3 bundles and uses an external JavaScript and Flash Upload Library\n\t    called swfupload. TYPO3 can be configured to use this Flash uploader.\n\t\tInput passed via the \"movieName\" parameter to swfupload.swf is not\n\t\tproperly sanitised before being used in a call to\n\t\t\"ExternalInterface.call()\". This can be exploited to execute arbitrary\n\t\tscript code in a user's browser session in context of an affected site.\n\t\tThe existance of the swfupload library is sufficient to be vulnerable\n\t\tto the reported problem.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/49780/",
-      "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-003/"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-07-04",
-    "entry": "2012-07-06"
-  }
+	"vid": "c28ee9cd-916e-4dcf-8ed3-e97e5846db6c",
+	"topic": "typo3 -- Cross-Site Scripting Vulnerability in TYPO3 Core",
+	"affects": [
+		{
+			"name": [
+				"typo3"
+			],
+			"range": [
+				{
+					"lt": "4.5.17",
+					"ge": "4.5"
+				},
+				{
+					"lt": "4.6.10",
+					"ge": "4.6"
+				},
+				{
+					"lt": "4.7.2",
+					"ge": "4.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Typo3 Security Report (TYPO3-CORE-SA-2012-003):</p>\n\t<blockquote cite=\"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-003/\">\n\t  <p>TYPO3 bundles and uses an external JavaScript and Flash Upload Library\n\t    called swfupload. TYPO3 can be configured to use this Flash uploader.\n\t\tInput passed via the \"movieName\" parameter to swfupload.swf is not\n\t\tproperly sanitised before being used in a call to\n\t\t\"ExternalInterface.call()\". This can be exploited to execute arbitrary\n\t\tscript code in a user's browser session in context of an affected site.\n\t\tThe existance of the swfupload library is sufficient to be vulnerable\n\t\tto the reported problem.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/49780/",
+			"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-003/"
+		]
+	},
+	"dates": {
+		"discovery": "2012-07-04",
+		"entry": "2012-07-06"
+	}
 }

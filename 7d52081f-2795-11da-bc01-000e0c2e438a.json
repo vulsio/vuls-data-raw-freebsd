@@ -1,38 +1,38 @@
 {
-  "vid": "7d52081f-2795-11da-bc01-000e0c2e438a",
-  "topic": "squirrelmail -- _$POST variable handling allows for various attacks",
-  "affects": [
-    {
-      "name": [
-        "squirrelmail",
-        "ja-squirrelmail"
-      ],
-      "range": [
-        {
-          "lt": "1.4.5",
-          "ge": "1.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Squirrelmail Advisory reports:</p>\n\t<blockquote cite=\"http://www.squirrelmail.org/security/issue/2005-07-13\">\n\t  <p>An extract($_POST) was done in options_identities.php which\n\t    allowed for an attacker to set random variables in that\n\t    file.  This could lead to the reading (and possible\n\t    writing) of other people's preferences, cross site scripting\n\t    or writing files in webserver-writable locations.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squirrelmail.org/security/issue/2005-07-13"
-    ],
-    "cvename": [
-      "CVE-2005-2095"
-    ],
-    "bid": [
-      "14254"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-13",
-    "entry": "2005-09-17",
-    "modified": "2005-09-19"
-  }
+	"vid": "7d52081f-2795-11da-bc01-000e0c2e438a",
+	"topic": "squirrelmail -- _$POST variable handling allows for various attacks",
+	"affects": [
+		{
+			"name": [
+				"squirrelmail",
+				"ja-squirrelmail"
+			],
+			"range": [
+				{
+					"lt": "1.4.5",
+					"ge": "1.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Squirrelmail Advisory reports:</p>\n\t<blockquote cite=\"http://www.squirrelmail.org/security/issue/2005-07-13\">\n\t  <p>An extract($_POST) was done in options_identities.php which\n\t    allowed for an attacker to set random variables in that\n\t    file.  This could lead to the reading (and possible\n\t    writing) of other people's preferences, cross site scripting\n\t    or writing files in webserver-writable locations.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squirrelmail.org/security/issue/2005-07-13"
+		],
+		"cvename": [
+			"CVE-2005-2095"
+		],
+		"bid": [
+			"14254"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-13",
+		"entry": "2005-09-17",
+		"modified": "2005-09-19"
+	}
 }

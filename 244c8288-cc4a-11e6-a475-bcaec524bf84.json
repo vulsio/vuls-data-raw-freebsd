@@ -1,34 +1,34 @@
 {
-  "vid": "244c8288-cc4a-11e6-a475-bcaec524bf84",
-  "topic": "upnp -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "upnp"
-      ],
-      "range": [
-        {
-          "lt": "1.6.21"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Matthew Garett reports:</p>\n\t<blockquote cite=\"https://twitter.com/mjg59/status/755062278513319936\">\n\t  <p>Reported this to upstream 8 months ago without response,\n\t    so: libupnp's default behaviour allows anyone to write to your\n\t    filesystem. Seriously. Find a device running a libupnp based server\n\t    (Shodan says there's rather a lot), and POST a file to /testfile.\n\t    Then GET /testfile ... and yeah if the server is running as root\n\t    (it is) and is using / as the web root (probably not, but maybe)\n\t    this gives full host fs access.</p>\n\t</blockquote>\n\t<p>Scott Tenaglia reports:</p>\n\t<blockquote cite=\"https://sourceforge.net/p/pupnp/bugs/133/\">\n\t  <p>There is a heap buffer overflow vulnerability in the\n\t    create_url_list function in upnp/src/gena/gena_device.c.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://twitter.com/mjg59/status/755062278513319936",
-      "https://sourceforge.net/p/pupnp/bugs/133/"
-    ],
-    "cvename": [
-      "CVE-2016-6255",
-      "CVE-2016-8863"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-23",
-    "entry": "2016-12-27"
-  }
+	"vid": "244c8288-cc4a-11e6-a475-bcaec524bf84",
+	"topic": "upnp -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"upnp"
+			],
+			"range": [
+				{
+					"lt": "1.6.21"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matthew Garett reports:</p>\n\t<blockquote cite=\"https://twitter.com/mjg59/status/755062278513319936\">\n\t  <p>Reported this to upstream 8 months ago without response,\n\t    so: libupnp's default behaviour allows anyone to write to your\n\t    filesystem. Seriously. Find a device running a libupnp based server\n\t    (Shodan says there's rather a lot), and POST a file to /testfile.\n\t    Then GET /testfile ... and yeah if the server is running as root\n\t    (it is) and is using / as the web root (probably not, but maybe)\n\t    this gives full host fs access.</p>\n\t</blockquote>\n\t<p>Scott Tenaglia reports:</p>\n\t<blockquote cite=\"https://sourceforge.net/p/pupnp/bugs/133/\">\n\t  <p>There is a heap buffer overflow vulnerability in the\n\t    create_url_list function in upnp/src/gena/gena_device.c.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://twitter.com/mjg59/status/755062278513319936",
+			"https://sourceforge.net/p/pupnp/bugs/133/"
+		],
+		"cvename": [
+			"CVE-2016-6255",
+			"CVE-2016-8863"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-23",
+		"entry": "2016-12-27"
+	}
 }

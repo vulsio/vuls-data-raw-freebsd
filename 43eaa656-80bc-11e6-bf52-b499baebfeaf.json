@@ -1,93 +1,93 @@
 {
-  "vid": "43eaa656-80bc-11e6-bf52-b499baebfeaf",
-  "topic": "OpenSSL -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.1.0_1",
-          "ge": "1.1.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2i,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1e_11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.3_8",
-          "ge": "10.3"
-        },
-        {
-          "lt": "10.2_21",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_38",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_46",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSSL reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20160922.txt\">\n\t  <p>High: OCSP Status Request extension unbounded memory growth</p>\n\t  <p>SSL_peek() hang on empty record</p>\n\t  <p>SWEET32 Mitigation</p>\n\t  <p>OOB write in MDC2_Update()</p>\n\t  <p>Malformed SHA512 ticket DoS</p>\n\t  <p>OOB write in BN_bn2dec()</p>\n\t  <p>OOB read in TS_OBJ_print_bio()</p>\n\t  <p>Pointer arithmetic undefined behaviour</p>\n\t  <p>Constant time flag not preserved in DSA signing</p>\n\t  <p>DTLS buffered message DoS</p>\n\t  <p>DTLS replay protection DoS</p>\n\t  <p>Certificate message OOB reads</p>\n\t  <p>Excessive allocation of memory in tls_get_message_header()</p>\n\t  <p>Excessive allocation of memory in dtls1_preprocess_fragment()</p>\n\t  <p>NB: LibreSSL is only affected by CVE-2016-6304</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20160922.txt"
-    ],
-    "cvename": [
-      "CVE-2016-6304",
-      "CVE-2016-6305",
-      "CVE-2016-2183",
-      "CVE-2016-6303",
-      "CVE-2016-6302",
-      "CVE-2016-2182",
-      "CVE-2016-2180",
-      "CVE-2016-2177",
-      "CVE-2016-2178",
-      "CVE-2016-2179",
-      "CVE-2016-2181",
-      "CVE-2016-6306",
-      "CVE-2016-6307",
-      "CVE-2016-6308"
-    ],
-    "freebsd_sa": [
-      "SA-16:26.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-09-22",
-    "entry": "2016-09-22",
-    "modified": "2016-10-11"
-  }
+	"vid": "43eaa656-80bc-11e6-bf52-b499baebfeaf",
+	"topic": "OpenSSL -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl-devel"
+			],
+			"range": [
+				{
+					"lt": "1.1.0_1",
+					"ge": "1.1.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2i,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1e_11"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.3_8",
+					"ge": "10.3"
+				},
+				{
+					"lt": "10.2_21",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_38",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_46",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSSL reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20160922.txt\">\n\t  <p>High: OCSP Status Request extension unbounded memory growth</p>\n\t  <p>SSL_peek() hang on empty record</p>\n\t  <p>SWEET32 Mitigation</p>\n\t  <p>OOB write in MDC2_Update()</p>\n\t  <p>Malformed SHA512 ticket DoS</p>\n\t  <p>OOB write in BN_bn2dec()</p>\n\t  <p>OOB read in TS_OBJ_print_bio()</p>\n\t  <p>Pointer arithmetic undefined behaviour</p>\n\t  <p>Constant time flag not preserved in DSA signing</p>\n\t  <p>DTLS buffered message DoS</p>\n\t  <p>DTLS replay protection DoS</p>\n\t  <p>Certificate message OOB reads</p>\n\t  <p>Excessive allocation of memory in tls_get_message_header()</p>\n\t  <p>Excessive allocation of memory in dtls1_preprocess_fragment()</p>\n\t  <p>NB: LibreSSL is only affected by CVE-2016-6304</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20160922.txt"
+		],
+		"cvename": [
+			"CVE-2016-6304",
+			"CVE-2016-6305",
+			"CVE-2016-2183",
+			"CVE-2016-6303",
+			"CVE-2016-6302",
+			"CVE-2016-2182",
+			"CVE-2016-2180",
+			"CVE-2016-2177",
+			"CVE-2016-2178",
+			"CVE-2016-2179",
+			"CVE-2016-2181",
+			"CVE-2016-6306",
+			"CVE-2016-6307",
+			"CVE-2016-6308"
+		],
+		"freebsd_sa": [
+			"SA-16:26.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2016-09-22",
+		"entry": "2016-09-22",
+		"modified": "2016-10-11"
+	}
 }

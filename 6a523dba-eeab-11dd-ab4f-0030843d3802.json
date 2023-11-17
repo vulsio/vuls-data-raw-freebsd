@@ -1,36 +1,36 @@
 {
-  "vid": "6a523dba-eeab-11dd-ab4f-0030843d3802",
-  "topic": "moinmoin -- multiple cross site scripting vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "moinmoin"
-      ],
-      "range": [
-        {
-          "lt": "1.8.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33593/\">\n\t  <p>Input passed to multiple parameters in action/AttachFile.py is not\n\t    properly sanitised before being returned to the user. This can be\n\t    exploited to execute arbitrary HTML and script code in a user's\n\t    browser session in the context of an affected site.</p>\n\t  <p>Certain input passed to security/antispam.py is not properly\n\t    sanitised before being returned to the user. This can be exploited to\n\t    execute arbitrary HTML and script code in a user's browser session in\n\t    the context of an affected site.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/33593/",
-      "http://hg.moinmo.in/moin/1.8/file/c76d50dac855",
-      "http://hg.moinmo.in/moin/1.8/rev/89b91bf87dad",
-      "http://moinmo.in/SecurityFixes#moin1.8.1"
-    ],
-    "cvename": [
-      "CVE-2009-0260",
-      "CVE-2009-0312"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-01-21",
-    "entry": "2009-01-30"
-  }
+	"vid": "6a523dba-eeab-11dd-ab4f-0030843d3802",
+	"topic": "moinmoin -- multiple cross site scripting vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"moinmoin"
+			],
+			"range": [
+				{
+					"lt": "1.8.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33593/\">\n\t  <p>Input passed to multiple parameters in action/AttachFile.py is not\n\t    properly sanitised before being returned to the user. This can be\n\t    exploited to execute arbitrary HTML and script code in a user's\n\t    browser session in the context of an affected site.</p>\n\t  <p>Certain input passed to security/antispam.py is not properly\n\t    sanitised before being returned to the user. This can be exploited to\n\t    execute arbitrary HTML and script code in a user's browser session in\n\t    the context of an affected site.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/33593/",
+			"http://hg.moinmo.in/moin/1.8/file/c76d50dac855",
+			"http://hg.moinmo.in/moin/1.8/rev/89b91bf87dad",
+			"http://moinmo.in/SecurityFixes#moin1.8.1"
+		],
+		"cvename": [
+			"CVE-2009-0260",
+			"CVE-2009-0312"
+		]
+	},
+	"dates": {
+		"discovery": "2009-01-21",
+		"entry": "2009-01-30"
+	}
 }

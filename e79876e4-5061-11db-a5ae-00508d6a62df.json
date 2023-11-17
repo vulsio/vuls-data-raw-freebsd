@@ -1,32 +1,32 @@
 {
-  "vid": "e79876e4-5061-11db-a5ae-00508d6a62df",
-  "topic": "punbb -- NULL byte injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "punbb"
-      ],
-      "range": [
-        {
-          "lt": "1.2.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>CVE Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2006-4759\">\n\t  <p>PunBB 1.2.12 does not properly handle an avatar directory\n\t    pathname ending in %00, which allows remote authenticated\n\t    administrative users to upload arbitrary files and execute\n\t    code, as demonstrated by a query to admin_options.php with\n\t    an avatars_dir parameter ending in %00. NOTE: this issue\n\t    was originally disputed by the vendor, but the dispute was\n\t    withdrawn on 20060926.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://forums.punbb.org/viewtopic.php?id=13255"
-    ],
-    "cvename": [
-      "CVE-2006-4759"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-09-13",
-    "entry": "2006-09-30"
-  }
+	"vid": "e79876e4-5061-11db-a5ae-00508d6a62df",
+	"topic": "punbb -- NULL byte injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"punbb"
+			],
+			"range": [
+				{
+					"lt": "1.2.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>CVE Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2006-4759\">\n\t  <p>PunBB 1.2.12 does not properly handle an avatar directory\n\t    pathname ending in %00, which allows remote authenticated\n\t    administrative users to upload arbitrary files and execute\n\t    code, as demonstrated by a query to admin_options.php with\n\t    an avatars_dir parameter ending in %00. NOTE: this issue\n\t    was originally disputed by the vendor, but the dispute was\n\t    withdrawn on 20060926.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://forums.punbb.org/viewtopic.php?id=13255"
+		],
+		"cvename": [
+			"CVE-2006-4759"
+		]
+	},
+	"dates": {
+		"discovery": "2006-09-13",
+		"entry": "2006-09-30"
+	}
 }

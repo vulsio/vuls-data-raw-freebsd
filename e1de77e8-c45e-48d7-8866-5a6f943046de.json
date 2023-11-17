@@ -1,29 +1,29 @@
 {
-  "vid": "e1de77e8-c45e-48d7-8866-5a6f943046de",
-  "topic": "SquirrelMail -- post-authentication remote code execution",
-  "affects": [
-    {
-      "name": [
-        "squirrelmail"
-      ],
-      "range": [
-        {
-          "lt": "20170705"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SquirrelMail developers report:</p>\n\t<blockquote cite=\"http://seclists.org/fulldisclosure/2017/Apr/81\">\n\t  <p>SquirrelMail 1.4.22 (and other versions before 20170427_0200-SVN)\n\t  allows post-authentication remote code execution via a sendmail.cf\n\t  file that is mishandled in a popen call. It's possible to exploit this\n\t  vulnerability to execute arbitrary shell commands on the remote\n\t  server.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7692"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-19",
-    "entry": "2017-08-22"
-  }
+	"vid": "e1de77e8-c45e-48d7-8866-5a6f943046de",
+	"topic": "SquirrelMail -- post-authentication remote code execution",
+	"affects": [
+		{
+			"name": [
+				"squirrelmail"
+			],
+			"range": [
+				{
+					"lt": "20170705"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SquirrelMail developers report:</p>\n\t<blockquote cite=\"http://seclists.org/fulldisclosure/2017/Apr/81\">\n\t  <p>SquirrelMail 1.4.22 (and other versions before 20170427_0200-SVN)\n\t  allows post-authentication remote code execution via a sendmail.cf\n\t  file that is mishandled in a popen call. It's possible to exploit this\n\t  vulnerability to execute arbitrary shell commands on the remote\n\t  server.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7692"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-19",
+		"entry": "2017-08-22"
+	}
 }

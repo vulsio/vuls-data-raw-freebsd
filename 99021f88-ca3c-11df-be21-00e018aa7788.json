@@ -1,32 +1,32 @@
 {
-  "vid": "99021f88-ca3c-11df-be21-00e018aa7788",
-  "topic": "phpmyfaq -- cross site scripting vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "phpmyfaq"
-      ],
-      "range": [
-        {
-          "lt": "2.6.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyFAQ project reports:</p>\n\t<blockquote cite=\"http://www.phpmyfaq.de/advisory_2010-09-28.php\">\n\t  <p>The phpMyFAQ Team has learned of a security issue that has been\n\t    discovered in phpMyFAQ 2.6.x: phpMyFAQ doesn't sanitize\n\t    some variables in different pages correctly. With a\n\t    properly crafted URL it is e.g.  possible to inject\n\t    JavaScript code into the output of a page, which could\n\t    result in the leakage of domain cookies (f.e. session\n\t    identifiers)..</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyfaq.de/advisory_2010-09-28.php"
-    ],
-    "freebsd_pr": [
-      "ports/151055"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-09-28",
-    "entry": "2010-10-02"
-  }
+	"vid": "99021f88-ca3c-11df-be21-00e018aa7788",
+	"topic": "phpmyfaq -- cross site scripting vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpmyfaq"
+			],
+			"range": [
+				{
+					"lt": "2.6.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyFAQ project reports:</p>\n\t<blockquote cite=\"http://www.phpmyfaq.de/advisory_2010-09-28.php\">\n\t  <p>The phpMyFAQ Team has learned of a security issue that has been\n\t    discovered in phpMyFAQ 2.6.x: phpMyFAQ doesn't sanitize\n\t    some variables in different pages correctly. With a\n\t    properly crafted URL it is e.g.  possible to inject\n\t    JavaScript code into the output of a page, which could\n\t    result in the leakage of domain cookies (f.e. session\n\t    identifiers)..</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyfaq.de/advisory_2010-09-28.php"
+		],
+		"freebsd_pr": [
+			"ports/151055"
+		]
+	},
+	"dates": {
+		"discovery": "2010-09-28",
+		"entry": "2010-10-02"
+	}
 }

@@ -1,41 +1,41 @@
 {
-  "vid": "2c8a84d9-5bee-11db-a5ae-00508d6a62df",
-  "topic": "vtiger -- multiple remote file inclusion vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "vtiger"
-      ],
-      "range": [
-        {
-          "lt": "5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Dedi Dwianto a.k.a the_day reports:</p>\n\t<blockquote cite=\"http://www.milw0rm.com/exploits/2508\">\n\t  <p>Input passed to the \"$calpath\" parameter in update.php is\n\t    not properly verified before being used. This can be\n\t    exploited to execute arbitrary PHP code by including files\n\t    from local or external resources.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://advisories.echo.or.id/adv/adv54-theday-2006.txt"
-    ],
-    "cvename": [
-      "CVE-2006-5289"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=116049557032343",
-        "msgid": "20061009094328.15530.qmail@securityfocus.com"
-      }
-    ],
-    "bid": [
-      "20435"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-10-09",
-    "entry": "2006-10-15"
-  }
+	"vid": "2c8a84d9-5bee-11db-a5ae-00508d6a62df",
+	"topic": "vtiger -- multiple remote file inclusion vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"vtiger"
+			],
+			"range": [
+				{
+					"lt": "5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Dedi Dwianto a.k.a the_day reports:</p>\n\t<blockquote cite=\"http://www.milw0rm.com/exploits/2508\">\n\t  <p>Input passed to the \"$calpath\" parameter in update.php is\n\t    not properly verified before being used. This can be\n\t    exploited to execute arbitrary PHP code by including files\n\t    from local or external resources.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://advisories.echo.or.id/adv/adv54-theday-2006.txt"
+		],
+		"cvename": [
+			"CVE-2006-5289"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=116049557032343",
+				"msgid": "20061009094328.15530.qmail@securityfocus.com"
+			}
+		],
+		"bid": [
+			"20435"
+		]
+	},
+	"dates": {
+		"discovery": "2006-10-09",
+		"entry": "2006-10-15"
+	}
 }

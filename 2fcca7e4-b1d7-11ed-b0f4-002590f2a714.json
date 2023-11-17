@@ -1,32 +1,32 @@
 {
-  "vid": "2fcca7e4-b1d7-11ed-b0f4-002590f2a714",
-  "topic": "git -- Heap overflow in `git archive`, `git log --format` leading to RCE",
-  "affects": [
-    {
-      "name": [
-        "git"
-      ],
-      "range": [
-        {
-          "lt": "2.39.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The git team reports:</p>\n\t<blockquote cite=\"https://github.com/git/git/security/advisories/GHSA-475x-2q3q-hvwq\">\n\t  <p>git log has the ability to display commits using an arbitrary\n\t    format with its --format specifiers. This functionality is also\n\t    exposed to git archive via the export-subst gitattribute.</p>\n\t  <p>When processing the padding operators (e.g., %&lt;(, %&lt;|(,\n\t    %&gt;(, %&gt;&gt;(, or %&gt;&lt;( ), an integer overflow can occur in\n\t    pretty.c::format_and_pad_commit() where a size_t is improperly\n\t    stored as an int, and then added as an offset to a subsequent\n\t    memcpy() call.</p>\n\t  <p>This overflow can be triggered directly by a user running a\n\t    command which invokes the commit formatting machinery (e.g., git\n\t    log --format=...). It may also be triggered indirectly through\n\t    git archive via the export-subst mechanism, which expands format\n\t    specifiers inside of files within the repository during a git\n\t    archive.</p>\n\t  <p>This integer overflow can result in arbitrary heap writes, which\n\t    may result in remote code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.blog/2023-01-17-git-security-vulnerabilities-announced-2/#cve-2022-41903"
-    ],
-    "cvename": [
-      "CVE-2022-41903"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-01-17",
-    "entry": "2023-02-21"
-  }
+	"vid": "2fcca7e4-b1d7-11ed-b0f4-002590f2a714",
+	"topic": "git -- Heap overflow in `git archive`, `git log --format` leading to RCE",
+	"affects": [
+		{
+			"name": [
+				"git"
+			],
+			"range": [
+				{
+					"lt": "2.39.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The git team reports:</p>\n\t<blockquote cite=\"https://github.com/git/git/security/advisories/GHSA-475x-2q3q-hvwq\">\n\t  <p>git log has the ability to display commits using an arbitrary\n\t    format with its --format specifiers. This functionality is also\n\t    exposed to git archive via the export-subst gitattribute.</p>\n\t  <p>When processing the padding operators (e.g., %&lt;(, %&lt;|(,\n\t    %&gt;(, %&gt;&gt;(, or %&gt;&lt;( ), an integer overflow can occur in\n\t    pretty.c::format_and_pad_commit() where a size_t is improperly\n\t    stored as an int, and then added as an offset to a subsequent\n\t    memcpy() call.</p>\n\t  <p>This overflow can be triggered directly by a user running a\n\t    command which invokes the commit formatting machinery (e.g., git\n\t    log --format=...). It may also be triggered indirectly through\n\t    git archive via the export-subst mechanism, which expands format\n\t    specifiers inside of files within the repository during a git\n\t    archive.</p>\n\t  <p>This integer overflow can result in arbitrary heap writes, which\n\t    may result in remote code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.blog/2023-01-17-git-security-vulnerabilities-announced-2/#cve-2022-41903"
+		],
+		"cvename": [
+			"CVE-2022-41903"
+		]
+	},
+	"dates": {
+		"discovery": "2023-01-17",
+		"entry": "2023-02-21"
+	}
 }

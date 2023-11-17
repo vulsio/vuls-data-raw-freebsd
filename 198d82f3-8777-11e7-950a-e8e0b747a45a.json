@@ -1,33 +1,33 @@
 {
-  "vid": "198d82f3-8777-11e7-950a-e8e0b747a45a",
-  "topic": "dnsdist -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "dnsdist"
-      ],
-      "range": [
-        {
-          "lt": "1.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PowerDNS Security Advisory reports:</p>\n\t<blockquote cite=\"https://dnsdist.org/security-advisories/index.html\">\n\t  <p>The first issue can lead to a denial of service on 32-bit if a backend\n\t     sends crafted answers, and the second to an alteration of dnsdist's ACL\n\t     if the API is enabled, writable and an authenticated user is tricked\n\t     into visiting a crafted website.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://dnsdist.org/security-advisories/index.html"
-    ],
-    "cvename": [
-      "CVE-2016-7069",
-      "CVE-2017-7557"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-08-21",
-    "entry": "2017-08-22"
-  }
+	"vid": "198d82f3-8777-11e7-950a-e8e0b747a45a",
+	"topic": "dnsdist -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"dnsdist"
+			],
+			"range": [
+				{
+					"lt": "1.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PowerDNS Security Advisory reports:</p>\n\t<blockquote cite=\"https://dnsdist.org/security-advisories/index.html\">\n\t  <p>The first issue can lead to a denial of service on 32-bit if a backend\n\t     sends crafted answers, and the second to an alteration of dnsdist's ACL\n\t     if the API is enabled, writable and an authenticated user is tricked\n\t     into visiting a crafted website.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://dnsdist.org/security-advisories/index.html"
+		],
+		"cvename": [
+			"CVE-2016-7069",
+			"CVE-2017-7557"
+		]
+	},
+	"dates": {
+		"discovery": "2017-08-21",
+		"entry": "2017-08-22"
+	}
 }

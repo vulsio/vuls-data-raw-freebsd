@@ -1,33 +1,33 @@
 {
-  "vid": "60ab0e93-c60b-11e5-bf36-6805ca0b3d42",
-  "topic": "phpmyadmin -- Unsafe generation of XSRF/CSRF token",
-  "affects": [
-    {
-      "name": [
-        "phpmyadmin"
-      ],
-      "range": [
-        {
-          "lt": "4.5.4",
-          "ge": "4.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-2/\">\n\t  <p>The XSRF/CSRF token is generated with a weak algorithm\n\t    using functions that do not return cryptographically secure\n\t    values.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2016-2/"
-    ],
-    "cvename": [
-      "CVE-2016-2039"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-28",
-    "entry": "2016-01-28"
-  }
+	"vid": "60ab0e93-c60b-11e5-bf36-6805ca0b3d42",
+	"topic": "phpmyadmin -- Unsafe generation of XSRF/CSRF token",
+	"affects": [
+		{
+			"name": [
+				"phpmyadmin"
+			],
+			"range": [
+				{
+					"lt": "4.5.4",
+					"ge": "4.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-2/\">\n\t  <p>The XSRF/CSRF token is generated with a weak algorithm\n\t    using functions that do not return cryptographically secure\n\t    values.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2016-2/"
+		],
+		"cvename": [
+			"CVE-2016-2039"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-28",
+		"entry": "2016-01-28"
+	}
 }

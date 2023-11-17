@@ -1,43 +1,43 @@
 {
-  "vid": "a1360138-d446-11ec-8ea1-10c37b4ac2ea",
-  "topic": "go -- syscall.Faccessat checks wrong group on Linux",
-  "affects": [
-    {
-      "name": [
-        "go"
-      ],
-      "range": [
-        {
-          "lt": "1.18.2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "go117"
-      ],
-      "range": [
-        {
-          "lt": "1.17.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/52313\">\n\t  <p>When called with a non-zero flags parameter, the\n\t    syscall.Faccessat function could incorrectly report that a\n\t    file is accessible. This bug only occurs on Linux systems.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/golang/go/issues/52313",
-      "https://groups.google.com/g/golang-dev/c/CPU3TB6d4oY"
-    ],
-    "cvename": [
-      "CVE-2022-29526"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-12",
-    "entry": "2022-05-15"
-  }
+	"vid": "a1360138-d446-11ec-8ea1-10c37b4ac2ea",
+	"topic": "go -- syscall.Faccessat checks wrong group on Linux",
+	"affects": [
+		{
+			"name": [
+				"go"
+			],
+			"range": [
+				{
+					"lt": "1.18.2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"go117"
+			],
+			"range": [
+				{
+					"lt": "1.17.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/52313\">\n\t  <p>When called with a non-zero flags parameter, the\n\t    syscall.Faccessat function could incorrectly report that a\n\t    file is accessible. This bug only occurs on Linux systems.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/golang/go/issues/52313",
+			"https://groups.google.com/g/golang-dev/c/CPU3TB6d4oY"
+		],
+		"cvename": [
+			"CVE-2022-29526"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-12",
+		"entry": "2022-05-15"
+	}
 }

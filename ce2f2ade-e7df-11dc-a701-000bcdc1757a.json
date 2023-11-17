@@ -1,36 +1,36 @@
 {
-  "vid": "ce2f2ade-e7df-11dc-a701-000bcdc1757a",
-  "topic": "phpmyadmin -- SQL injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "2.11.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A phpMyAdmin security announcement report:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-1\">\n\t  <p>phpMyAdmin used the $_REQUEST superglobal as a source for\n\t    its parameters, instead of $_GET and $_POST. This means that\n\t    on most servers, a cookie with the same name as one of\n\t    phpMyAdmin's parameters can interfere.</p>\n\t  <p>Another application could set a cookie for the root path\n\t    \"/\" with a \"sql_query\" name, therefore overriding the\n\t    user-submitted sql_query because by default, the $_REQUEST\n\t    superglobal imports first GET, then POST then COOKIE data.</p>\n\t  <h3>Mitigation factor</h3>\n\t  <p>An attacker must trick the victim into visiting a page on\n\t    the same web server where he has placed code that creates\n\t    a malicious cookie.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-1"
-    ],
-    "cvename": [
-      "CVE-2008-1149"
-    ],
-    "bid": [
-      "28068"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-03-01",
-    "entry": "2008-03-04",
-    "modified": "2010-05-12"
-  }
+	"vid": "ce2f2ade-e7df-11dc-a701-000bcdc1757a",
+	"topic": "phpmyadmin -- SQL injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "2.11.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A phpMyAdmin security announcement report:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-1\">\n\t  <p>phpMyAdmin used the $_REQUEST superglobal as a source for\n\t    its parameters, instead of $_GET and $_POST. This means that\n\t    on most servers, a cookie with the same name as one of\n\t    phpMyAdmin's parameters can interfere.</p>\n\t  <p>Another application could set a cookie for the root path\n\t    \"/\" with a \"sql_query\" name, therefore overriding the\n\t    user-submitted sql_query because by default, the $_REQUEST\n\t    superglobal imports first GET, then POST then COOKIE data.</p>\n\t  <h3>Mitigation factor</h3>\n\t  <p>An attacker must trick the victim into visiting a page on\n\t    the same web server where he has placed code that creates\n\t    a malicious cookie.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-1"
+		],
+		"cvename": [
+			"CVE-2008-1149"
+		],
+		"bid": [
+			"28068"
+		]
+	},
+	"dates": {
+		"discovery": "2008-03-01",
+		"entry": "2008-03-04",
+		"modified": "2010-05-12"
+	}
 }

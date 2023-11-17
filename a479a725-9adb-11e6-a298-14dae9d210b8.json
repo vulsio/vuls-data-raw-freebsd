@@ -1,31 +1,31 @@
 {
-  "vid": "a479a725-9adb-11e6-a298-14dae9d210b8",
-  "topic": "FreeBSD -- bhyve - privilege escalation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "11.0_2",
-          "ge": "11.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>An unchecked array reference in the VGA device emulation\n\tcode could potentially allow guests access to the heap of\n\tthe bhyve process. Since the bhyve process is running as\n\troot, this may allow guests to obtain full control of the\n\thosts they are running on.</p>\n\t<h1>Impact:</h1>\n\t<p>For bhyve virtual machines with the \"fbuf\" framebuffer\n\tdevice configured, if exploited, a malicious guest could\n\tobtain full access to not just the host system, but to other\n\tvirtual machines running on the system.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-16:32.bhyve"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-10-25",
-    "entry": "2016-10-25",
-    "modified": "2016-10-25"
-  }
+	"vid": "a479a725-9adb-11e6-a298-14dae9d210b8",
+	"topic": "FreeBSD -- bhyve - privilege escalation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "11.0_2",
+					"ge": "11.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>An unchecked array reference in the VGA device emulation\n\tcode could potentially allow guests access to the heap of\n\tthe bhyve process. Since the bhyve process is running as\n\troot, this may allow guests to obtain full control of the\n\thosts they are running on.</p>\n\t<h1>Impact:</h1>\n\t<p>For bhyve virtual machines with the \"fbuf\" framebuffer\n\tdevice configured, if exploited, a malicious guest could\n\tobtain full access to not just the host system, but to other\n\tvirtual machines running on the system.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-16:32.bhyve"
+		]
+	},
+	"dates": {
+		"discovery": "2016-10-25",
+		"entry": "2016-10-25",
+		"modified": "2016-10-25"
+	}
 }

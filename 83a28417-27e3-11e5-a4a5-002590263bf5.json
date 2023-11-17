@@ -1,32 +1,32 @@
 {
-  "vid": "83a28417-27e3-11e5-a4a5-002590263bf5",
-  "topic": "xen-kernel -- Hypervisor memory corruption due to x86 emulator flaw",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.5.0_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-123.html\">\n\t  <p>Instructions with register operands ignore eventual segment\n\t    overrides encoded for them. Due to an insufficiently conditional\n\t    assignment such a bogus segment override can, however, corrupt a\n\t    pointer used subsequently to store the result of the instruction.</p>\n\t  <p>A malicious guest might be able to read sensitive data relating to\n\t    other guests, or to cause denial of service on the host. Arbitrary\n\t    code execution, and therefore privilege escalation, cannot be\n\t    excluded.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-123.html"
-    ],
-    "cvename": [
-      "CVE-2015-2151"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-03-10",
-    "entry": "2015-07-11"
-  }
+	"vid": "83a28417-27e3-11e5-a4a5-002590263bf5",
+	"topic": "xen-kernel -- Hypervisor memory corruption due to x86 emulator flaw",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.5.0_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-123.html\">\n\t  <p>Instructions with register operands ignore eventual segment\n\t    overrides encoded for them. Due to an insufficiently conditional\n\t    assignment such a bogus segment override can, however, corrupt a\n\t    pointer used subsequently to store the result of the instruction.</p>\n\t  <p>A malicious guest might be able to read sensitive data relating to\n\t    other guests, or to cause denial of service on the host. Arbitrary\n\t    code execution, and therefore privilege escalation, cannot be\n\t    excluded.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-123.html"
+		],
+		"cvename": [
+			"CVE-2015-2151"
+		]
+	},
+	"dates": {
+		"discovery": "2015-03-10",
+		"entry": "2015-07-11"
+	}
 }

@@ -1,44 +1,44 @@
 {
-  "vid": "bb4e9a44-dff2-11dd-a765-0030843d3802",
-  "topic": "mysql -- renaming of arbitrary tables by authenticated users",
-  "affects": [
-    {
-      "name": [
-        "mysql-server"
-      ],
-      "range": [
-        {
-          "lt": "4.1.23",
-          "ge": "4.1"
-        },
-        {
-          "lt": "5.0.42",
-          "ge": "5.0"
-        },
-        {
-          "lt": "5.1.18",
-          "ge": "5.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MySQL reports:</p>\n\t<blockquote cite=\"http://dev.mysql.com/doc/refman/4.1/en/news-4-1-23.html\">\n\t  <p>The requirement of the DROP privilege for RENAME TABLE was not\n\t    enforced.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.mysql.com/bug.php?id=27515"
-    ],
-    "cvename": [
-      "CVE-2007-2691"
-    ],
-    "bid": [
-      "24016"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-05-14",
-    "entry": "2009-01-11"
-  }
+	"vid": "bb4e9a44-dff2-11dd-a765-0030843d3802",
+	"topic": "mysql -- renaming of arbitrary tables by authenticated users",
+	"affects": [
+		{
+			"name": [
+				"mysql-server"
+			],
+			"range": [
+				{
+					"lt": "4.1.23",
+					"ge": "4.1"
+				},
+				{
+					"lt": "5.0.42",
+					"ge": "5.0"
+				},
+				{
+					"lt": "5.1.18",
+					"ge": "5.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MySQL reports:</p>\n\t<blockquote cite=\"http://dev.mysql.com/doc/refman/4.1/en/news-4-1-23.html\">\n\t  <p>The requirement of the DROP privilege for RENAME TABLE was not\n\t    enforced.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.mysql.com/bug.php?id=27515"
+		],
+		"cvename": [
+			"CVE-2007-2691"
+		],
+		"bid": [
+			"24016"
+		]
+	},
+	"dates": {
+		"discovery": "2007-05-14",
+		"entry": "2009-01-11"
+	}
 }

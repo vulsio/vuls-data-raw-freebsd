@@ -1,41 +1,41 @@
 {
-  "vid": "6e04048b-6007-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- ktrace kernel memory disclosure",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "9.2_7",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.1_14",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_11",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to an overlooked merge to -STABLE branches, the size\n\tfor page fault kernel trace entries was set incorrectly.</p>\n\t<h1>Impact:</h1>\n\t<p>A user who can enable kernel process tracing could end\n\tup reading the contents of kernel memory.</p>\n\t<p>Such memory might contain sensitive information, such\n\tas portions of the file cache or terminal buffers. This\n\tinformation might be directly useful, or it might be leveraged\n\tto obtain elevated privileges in some way; for example, a\n\tterminal buffer might include a user-entered password.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-3873"
-    ],
-    "freebsd_sa": [
-      "SA-14:12.ktrace"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-06-03",
-    "entry": "2016-08-11"
-  }
+	"vid": "6e04048b-6007-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- ktrace kernel memory disclosure",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "9.2_7",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.1_14",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_11",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to an overlooked merge to -STABLE branches, the size\n\tfor page fault kernel trace entries was set incorrectly.</p>\n\t<h1>Impact:</h1>\n\t<p>A user who can enable kernel process tracing could end\n\tup reading the contents of kernel memory.</p>\n\t<p>Such memory might contain sensitive information, such\n\tas portions of the file cache or terminal buffers. This\n\tinformation might be directly useful, or it might be leveraged\n\tto obtain elevated privileges in some way; for example, a\n\tterminal buffer might include a user-entered password.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-3873"
+		],
+		"freebsd_sa": [
+			"SA-14:12.ktrace"
+		]
+	},
+	"dates": {
+		"discovery": "2014-06-03",
+		"entry": "2016-08-11"
+	}
 }

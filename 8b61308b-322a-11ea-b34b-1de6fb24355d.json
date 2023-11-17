@@ -1,33 +1,33 @@
 {
-  "vid": "8b61308b-322a-11ea-b34b-1de6fb24355d",
-  "topic": "e2fsprogs -- rehash.c/pass 3a mutate_name() code execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "e2fsprogs"
-      ],
-      "range": [
-        {
-          "lt": "1.45.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Lilith of Cisco Talos reports:</p>\n\t<blockquote cite=\"https://talosintelligence.com/vulnerability_reports/TALOS-2019-0973\">\n\t  <p>\n\t    A code execution vulnerability exists in the directory rehashing\n\t    functionality of E2fsprogs e2fsck 1.45.4. A specially crafted ext4\n\t    directory can cause an out-of-bounds write on the stack, resulting\n\t    in code execution. An attacker can corrupt a partition to trigger\n\t    this vulnerability.\n\t  </p>\n\t</blockquote>\n\t<p>Theodore Y. Ts'o reports:</p>\n\t<blockquote cite=\"http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.45.5\">\n\t  <p>\n\t    E2fsprogs 1.45.5 [...:] Fix a potential out of bounds write when\n\t    checking a maliciously corrupted file system. This is probably not\n\t    exploitable on 64-bit platforms, but may be exploitable on 32-bit\n\t    binaries depending on how the compiler lays out the stack variables.\n\t    (Addresses CVE-2019-5188)\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://talosintelligence.com/vulnerability_reports/TALOS-2019-0973",
-      "http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.45.5"
-    ],
-    "cvename": [
-      "CVE-2019-5188"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-12-18",
-    "entry": "2020-01-08"
-  }
+	"vid": "8b61308b-322a-11ea-b34b-1de6fb24355d",
+	"topic": "e2fsprogs -- rehash.c/pass 3a mutate_name() code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"e2fsprogs"
+			],
+			"range": [
+				{
+					"lt": "1.45.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Lilith of Cisco Talos reports:</p>\n\t<blockquote cite=\"https://talosintelligence.com/vulnerability_reports/TALOS-2019-0973\">\n\t  <p>\n\t    A code execution vulnerability exists in the directory rehashing\n\t    functionality of E2fsprogs e2fsck 1.45.4. A specially crafted ext4\n\t    directory can cause an out-of-bounds write on the stack, resulting\n\t    in code execution. An attacker can corrupt a partition to trigger\n\t    this vulnerability.\n\t  </p>\n\t</blockquote>\n\t<p>Theodore Y. Ts'o reports:</p>\n\t<blockquote cite=\"http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.45.5\">\n\t  <p>\n\t    E2fsprogs 1.45.5 [...:] Fix a potential out of bounds write when\n\t    checking a maliciously corrupted file system. This is probably not\n\t    exploitable on 64-bit platforms, but may be exploitable on 32-bit\n\t    binaries depending on how the compiler lays out the stack variables.\n\t    (Addresses CVE-2019-5188)\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://talosintelligence.com/vulnerability_reports/TALOS-2019-0973",
+			"http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.45.5"
+		],
+		"cvename": [
+			"CVE-2019-5188"
+		]
+	},
+	"dates": {
+		"discovery": "2019-12-18",
+		"entry": "2020-01-08"
+	}
 }

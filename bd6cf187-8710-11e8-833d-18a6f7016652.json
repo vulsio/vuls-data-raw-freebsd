@@ -1,37 +1,37 @@
 {
-  "vid": "bd6cf187-8710-11e8-833d-18a6f7016652",
-  "topic": "qutebrowser -- Remote code execution due to CSRF",
-  "affects": [
-    {
-      "name": [
-        "qutebrowser"
-      ],
-      "range": [
-        {
-          "lt": "1.4.1",
-          "ge": "1.4.0"
-        },
-        {
-          "lt": "1.3.3_1",
-          "ge": "1.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>qutebrowser team reports:</p>\n\t<blockquote cite=\"https://blog.qutebrowser.org/cve-2018-10895-remote-code-execution-due-to-csrf-in-qutebrowser.html\">\n\t  <p>Due to a CSRF vulnerability affecting the qute://settings page,\n\t    it was possible for websites to modify qutebrowser settings.\n\t    Via settings like editor.command, this possibly allowed websites\n\t    to execute arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2018/q3/29"
-    ],
-    "cvename": [
-      "CVE-2018-10895"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-07-11",
-    "entry": "2018-07-14"
-  }
+	"vid": "bd6cf187-8710-11e8-833d-18a6f7016652",
+	"topic": "qutebrowser -- Remote code execution due to CSRF",
+	"affects": [
+		{
+			"name": [
+				"qutebrowser"
+			],
+			"range": [
+				{
+					"lt": "1.4.1",
+					"ge": "1.4.0"
+				},
+				{
+					"lt": "1.3.3_1",
+					"ge": "1.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>qutebrowser team reports:</p>\n\t<blockquote cite=\"https://blog.qutebrowser.org/cve-2018-10895-remote-code-execution-due-to-csrf-in-qutebrowser.html\">\n\t  <p>Due to a CSRF vulnerability affecting the qute://settings page,\n\t    it was possible for websites to modify qutebrowser settings.\n\t    Via settings like editor.command, this possibly allowed websites\n\t    to execute arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2018/q3/29"
+		],
+		"cvename": [
+			"CVE-2018-10895"
+		]
+	},
+	"dates": {
+		"discovery": "2018-07-11",
+		"entry": "2018-07-14"
+	}
 }

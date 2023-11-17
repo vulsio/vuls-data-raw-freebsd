@@ -1,34 +1,34 @@
 {
-  "vid": "abef280d-d829-11e2-b71c-8c705af55518",
-  "topic": "FreeBSD -- Privilege escalation via mmap",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "9.1_4",
-          "ge": "9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-13%3a06.mmap.asc\">\n\t  <p>Due to insufficient permission checks in the virtual memory\n\t    system, a tracing process (such as a debugger) may be able to\n\t    modify portions of the traced process's address space to which\n\t    the traced process itself does not have write access.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2013-2171"
-    ],
-    "freebsd_sa": [
-      "SA-13:06.mmap"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-06-18",
-    "entry": "2013-06-18",
-    "modified": "2016-08-09"
-  }
+	"vid": "abef280d-d829-11e2-b71c-8c705af55518",
+	"topic": "FreeBSD -- Privilege escalation via mmap",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "9.1_4",
+					"ge": "9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-13%3a06.mmap.asc\">\n\t  <p>Due to insufficient permission checks in the virtual memory\n\t    system, a tracing process (such as a debugger) may be able to\n\t    modify portions of the traced process's address space to which\n\t    the traced process itself does not have write access.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2013-2171"
+		],
+		"freebsd_sa": [
+			"SA-13:06.mmap"
+		]
+	},
+	"dates": {
+		"discovery": "2013-06-18",
+		"entry": "2013-06-18",
+		"modified": "2016-08-09"
+	}
 }

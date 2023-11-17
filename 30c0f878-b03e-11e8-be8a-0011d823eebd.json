@@ -1,36 +1,36 @@
 {
-  "vid": "30c0f878-b03e-11e8-be8a-0011d823eebd",
-  "topic": "Ghostscript -- arbitrary code execution",
-  "affects": [
-    {
-      "name": [
-        "ghostscript9-agpl-base",
-        "ghostscript9-agpl-x11"
-      ],
-      "range": [
-        {
-          "lt": "9.24"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>CERT reports:</p>\n\t<blockquote cite=\"https://www.kb.cert.org/vuls/id/332928\">\n\t  <p>Ghostscript contains an optional -dSAFER option, which is supposed\n\t    to prevent unsafe PostScript operations. Multiple PostScript\n\t    operations bypass the protections provided by -dSAFER, which can\n\t    allow an attacker to execute arbitrary commands with arbitrary\n\t    arguments. This vulnerability can also be exploited in applications\n\t    that leverage Ghostscript, such as ImageMagick, GraphicsMagick,\n\t    evince, Okular, Nautilus, and others.</p>\n\t  <p>Exploit code for this vulnerability is publicly available.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.kb.cert.org/vuls/id/332928"
-    ],
-    "cvename": [
-      "CVE-2018-15908",
-      "CVE-2018-15909",
-      "CVE-2018-15910",
-      "CVE-2018-15911"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-08-21",
-    "entry": "2018-09-04"
-  }
+	"vid": "30c0f878-b03e-11e8-be8a-0011d823eebd",
+	"topic": "Ghostscript -- arbitrary code execution",
+	"affects": [
+		{
+			"name": [
+				"ghostscript9-agpl-base",
+				"ghostscript9-agpl-x11"
+			],
+			"range": [
+				{
+					"lt": "9.24"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>CERT reports:</p>\n\t<blockquote cite=\"https://www.kb.cert.org/vuls/id/332928\">\n\t  <p>Ghostscript contains an optional -dSAFER option, which is supposed\n\t    to prevent unsafe PostScript operations. Multiple PostScript\n\t    operations bypass the protections provided by -dSAFER, which can\n\t    allow an attacker to execute arbitrary commands with arbitrary\n\t    arguments. This vulnerability can also be exploited in applications\n\t    that leverage Ghostscript, such as ImageMagick, GraphicsMagick,\n\t    evince, Okular, Nautilus, and others.</p>\n\t  <p>Exploit code for this vulnerability is publicly available.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.kb.cert.org/vuls/id/332928"
+		],
+		"cvename": [
+			"CVE-2018-15908",
+			"CVE-2018-15909",
+			"CVE-2018-15910",
+			"CVE-2018-15911"
+		]
+	},
+	"dates": {
+		"discovery": "2018-08-21",
+		"entry": "2018-09-04"
+	}
 }

@@ -1,61 +1,61 @@
 {
-  "vid": "14a37474-1383-11e0-8a58-00215c6a37bb",
-  "topic": "django -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py23-django",
-        "py24-django",
-        "py25-django",
-        "py26-django",
-        "py27-django",
-        "py30-django",
-        "py31-django"
-      ],
-      "range": [
-        {
-          "lt": "1.2.4",
-          "gt": "1.2"
-        },
-        {
-          "lt": "1.1.3",
-          "gt": "1.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py23-django-devel",
-        "py24-django-devel",
-        "py25-django-devel",
-        "py26-django-devel",
-        "py27-django-devel",
-        "py30-django-devel",
-        "py31-django-devel"
-      ],
-      "range": [
-        {
-          "lt": "15032,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django project reports:</p>\n\t<blockquote cite=\"http://www.djangoproject.com/weblog/2010/dec/22/security/\">\n\t  <p>Today the Django team is issuing multiple releases\n\t    -- Django 1.2.4, Django 1.1.3 and Django 1.3 beta 1 --\n\t    to remedy two security issues reported to us. All users\n\t    of affected versions of Django are urged to upgrade\n\t    immediately.</p>\n\t  <h3>Information leakage in Django administrative interface</h3>\n\t  <p>The Django administrative interface, django.contrib.admin\n\t    supports filtering of displayed lists of objects by fields\n\t    on the corresponding models, including across database-level\n\t    relationships. This is implemented by passing lookup arguments\n\t    in the querystring portion of the URL, and options on the\n\t    ModelAdmin class allow developers to specify particular\n\t    fields or relationships which will generate automatic links\n\t    for filtering.</p>\n\t  <h3>Denial-of-service attack in password-reset mechanism</h3>\n\t  <p>Django's bundled authentication framework,\n\t    django.contrib.auth, offers views which allow users to\n\t    reset a forgotten password. The reset mechanism involves\n\t    generating a one-time token composed from the user's ID,\n\t    the timestamp of the reset request converted to a base36\n\t    integer, and a hash derived from the user's current password\n\t    hash (which will change once the reset is complete, thus\n\t    invalidating the token).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=665373",
-      "http://secunia.com/advisories/42715/"
-    ],
-    "bid": [
-      "45562",
-      "45563"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-12-22",
-    "entry": "2010-12-29"
-  }
+	"vid": "14a37474-1383-11e0-8a58-00215c6a37bb",
+	"topic": "django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py23-django",
+				"py24-django",
+				"py25-django",
+				"py26-django",
+				"py27-django",
+				"py30-django",
+				"py31-django"
+			],
+			"range": [
+				{
+					"lt": "1.2.4",
+					"gt": "1.2"
+				},
+				{
+					"lt": "1.1.3",
+					"gt": "1.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"py23-django-devel",
+				"py24-django-devel",
+				"py25-django-devel",
+				"py26-django-devel",
+				"py27-django-devel",
+				"py30-django-devel",
+				"py31-django-devel"
+			],
+			"range": [
+				{
+					"lt": "15032,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django project reports:</p>\n\t<blockquote cite=\"http://www.djangoproject.com/weblog/2010/dec/22/security/\">\n\t  <p>Today the Django team is issuing multiple releases\n\t    -- Django 1.2.4, Django 1.1.3 and Django 1.3 beta 1 --\n\t    to remedy two security issues reported to us. All users\n\t    of affected versions of Django are urged to upgrade\n\t    immediately.</p>\n\t  <h3>Information leakage in Django administrative interface</h3>\n\t  <p>The Django administrative interface, django.contrib.admin\n\t    supports filtering of displayed lists of objects by fields\n\t    on the corresponding models, including across database-level\n\t    relationships. This is implemented by passing lookup arguments\n\t    in the querystring portion of the URL, and options on the\n\t    ModelAdmin class allow developers to specify particular\n\t    fields or relationships which will generate automatic links\n\t    for filtering.</p>\n\t  <h3>Denial-of-service attack in password-reset mechanism</h3>\n\t  <p>Django's bundled authentication framework,\n\t    django.contrib.auth, offers views which allow users to\n\t    reset a forgotten password. The reset mechanism involves\n\t    generating a one-time token composed from the user's ID,\n\t    the timestamp of the reset request converted to a base36\n\t    integer, and a hash derived from the user's current password\n\t    hash (which will change once the reset is complete, thus\n\t    invalidating the token).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=665373",
+			"http://secunia.com/advisories/42715/"
+		],
+		"bid": [
+			"45562",
+			"45563"
+		]
+	},
+	"dates": {
+		"discovery": "2010-12-22",
+		"entry": "2010-12-29"
+	}
 }

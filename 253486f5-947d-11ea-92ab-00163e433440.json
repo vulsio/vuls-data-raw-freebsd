@@ -1,33 +1,33 @@
 {
-  "vid": "253486f5-947d-11ea-92ab-00163e433440",
-  "topic": "FreeBSD -- Improper checking in SCTP-AUTH shared key update",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "11.3_9",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The SCTP layer does improper checking when an application tries to update\n\ta shared key.  Therefore an unprivileged local user can trigger a use-after-\n\tfree situation, for example by specific sequences of updating shared keys and\n\tclosing the SCTP association.</p>\n\t<h1>Impact:</h1>\n\t<p>Triggering the use-after-free situation may result in unintended kernel\n\tbehaviour including a kernel panic.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-15878"
-    ],
-    "freebsd_sa": [
-      "SA-20:14.sctp"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-09-19",
-    "entry": "2020-05-12"
-  }
+	"vid": "253486f5-947d-11ea-92ab-00163e433440",
+	"topic": "FreeBSD -- Improper checking in SCTP-AUTH shared key update",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "11.3_9",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The SCTP layer does improper checking when an application tries to update\n\ta shared key.  Therefore an unprivileged local user can trigger a use-after-\n\tfree situation, for example by specific sequences of updating shared keys and\n\tclosing the SCTP association.</p>\n\t<h1>Impact:</h1>\n\t<p>Triggering the use-after-free situation may result in unintended kernel\n\tbehaviour including a kernel panic.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-15878"
+		],
+		"freebsd_sa": [
+			"SA-20:14.sctp"
+		]
+	},
+	"dates": {
+		"discovery": "2019-09-19",
+		"entry": "2020-05-12"
+	}
 }

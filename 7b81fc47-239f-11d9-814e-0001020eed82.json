@@ -1,45 +1,45 @@
 {
-  "vid": "7b81fc47-239f-11d9-814e-0001020eed82",
-  "topic": "apache2 -- SSL remote DoS",
-  "affects": [
-    {
-      "name": [
-        "apache"
-      ],
-      "range": [
-        {
-          "lt": "2.0.51",
-          "gt": "2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache HTTP Server 2.0.51 release notes report that the\n\t  following issues have been fixed:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=apache-httpd-announce&amp;m=109527608022322\">\n\t  <p>A segfault in mod_ssl which can be triggered by a\n\t    malicious remote server, if proxying to SSL servers has\n\t    been configured.  [CAN-2004-0751]</p>\n\t  <p>A potential infinite loop in mod_ssl which could be\n\t    triggered given particular timing of a connection\n\t    abort.  [CAN-2004-0748]</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://nagoya.apache.org/bugzilla/show_bug.cgi?id=29964",
-      "http://nagoya.apache.org/bugzilla/show_bug.cgi?id=30134"
-    ],
-    "cvename": [
-      "CVE-2004-0748",
-      "CVE-2004-0751"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=apache-httpd-announce&m=109527608022322",
-        "msgid": "029f01c49b54$dec30f20$1500a8c0@Cougar"
-      }
-    ],
-    "bid": [
-      "11094",
-      "11154"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-07-07",
-    "entry": "2004-10-21"
-  }
+	"vid": "7b81fc47-239f-11d9-814e-0001020eed82",
+	"topic": "apache2 -- SSL remote DoS",
+	"affects": [
+		{
+			"name": [
+				"apache"
+			],
+			"range": [
+				{
+					"lt": "2.0.51",
+					"gt": "2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache HTTP Server 2.0.51 release notes report that the\n\t  following issues have been fixed:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=apache-httpd-announce&amp;m=109527608022322\">\n\t  <p>A segfault in mod_ssl which can be triggered by a\n\t    malicious remote server, if proxying to SSL servers has\n\t    been configured.  [CAN-2004-0751]</p>\n\t  <p>A potential infinite loop in mod_ssl which could be\n\t    triggered given particular timing of a connection\n\t    abort.  [CAN-2004-0748]</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://nagoya.apache.org/bugzilla/show_bug.cgi?id=29964",
+			"http://nagoya.apache.org/bugzilla/show_bug.cgi?id=30134"
+		],
+		"cvename": [
+			"CVE-2004-0748",
+			"CVE-2004-0751"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=apache-httpd-announce&m=109527608022322",
+				"msgid": "029f01c49b54$dec30f20$1500a8c0@Cougar"
+			}
+		],
+		"bid": [
+			"11094",
+			"11154"
+		]
+	},
+	"dates": {
+		"discovery": "2004-07-07",
+		"entry": "2004-10-21"
+	}
 }

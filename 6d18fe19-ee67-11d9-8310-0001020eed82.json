@@ -1,45 +1,45 @@
 {
-  "vid": "6d18fe19-ee67-11d9-8310-0001020eed82",
-  "topic": "clamav -- MS-Expand file handling DoS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "clamav"
-      ],
-      "range": [
-        {
-          "lt": "0.86"
-        }
-      ]
-    },
-    {
-      "name": [
-        "clamav-devel"
-      ],
-      "range": [
-        {
-          "lt": "20050620"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>An iDEFENSE Security Advisory reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=112006402411598\">\n\t  <p>Remote exploitation of an input validation error in Clam\n\t    AntiVirus ClamAV allows attackers to cause a denial of\n\t    service condition.</p>\n\t  <p>The vulnerability specifically exists due to improper\n\t    behavior during exceptional conditions.</p>\n\t  <p>Successful exploitation allows attackers to exhaust file\n\t    descriptors pool and memory. Anti-virus detection\n\t    functionality will fail if there is no file descriptors\n\t    available with which to open files. Remote exploitation\n\t    can be achieved by sending a malicious file in an e-mail\n\t    message or during an HTTP session.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-1922"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112006402411598",
-        "msgid": "FB24803D1DF2A34FA59FC157B77C97050462A3AC@IDSERV04.idef.com"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-29",
-    "entry": "2005-07-06"
-  }
+	"vid": "6d18fe19-ee67-11d9-8310-0001020eed82",
+	"topic": "clamav -- MS-Expand file handling DoS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"clamav"
+			],
+			"range": [
+				{
+					"lt": "0.86"
+				}
+			]
+		},
+		{
+			"name": [
+				"clamav-devel"
+			],
+			"range": [
+				{
+					"lt": "20050620"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>An iDEFENSE Security Advisory reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=112006402411598\">\n\t  <p>Remote exploitation of an input validation error in Clam\n\t    AntiVirus ClamAV allows attackers to cause a denial of\n\t    service condition.</p>\n\t  <p>The vulnerability specifically exists due to improper\n\t    behavior during exceptional conditions.</p>\n\t  <p>Successful exploitation allows attackers to exhaust file\n\t    descriptors pool and memory. Anti-virus detection\n\t    functionality will fail if there is no file descriptors\n\t    available with which to open files. Remote exploitation\n\t    can be achieved by sending a malicious file in an e-mail\n\t    message or during an HTTP session.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-1922"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112006402411598",
+				"msgid": "FB24803D1DF2A34FA59FC157B77C97050462A3AC@IDSERV04.idef.com"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-29",
+		"entry": "2005-07-06"
+	}
 }

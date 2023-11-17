@@ -1,52 +1,52 @@
 {
-  "vid": "baf37cd2-8351-11e1-894e-00215c6a37bb",
-  "topic": "samba -- \"root\" credential remote code execution",
-  "affects": [
-    {
-      "name": [
-        "samba34"
-      ],
-      "range": [
-        {
-          "lt": "3.4.16",
-          "gt": "3.4.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba35"
-      ],
-      "range": [
-        {
-          "lt": "3.5.14",
-          "gt": "3.5.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba36"
-      ],
-      "range": [
-        {
-          "lt": "3.6.4",
-          "gt": "3.6.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Samba development team reports:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2012-1182\">\n\t  <p>Samba versions 3.6.3 and all versions previous to this\n\t    are affected by a vulnerability that allows remote code\n\t    execution as the \"root\" user from an anonymous connection.</p>\n\t  <p>As this does not require an authenticated connection it\n\t    is the most serious vulnerability possible in a program,\n\t    and users and vendors are encouraged to patch their Samba\n\t    installations immediately.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-1182"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-04-10",
-    "entry": "2012-04-10"
-  }
+	"vid": "baf37cd2-8351-11e1-894e-00215c6a37bb",
+	"topic": "samba -- \"root\" credential remote code execution",
+	"affects": [
+		{
+			"name": [
+				"samba34"
+			],
+			"range": [
+				{
+					"lt": "3.4.16",
+					"gt": "3.4.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba35"
+			],
+			"range": [
+				{
+					"lt": "3.5.14",
+					"gt": "3.5.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba36"
+			],
+			"range": [
+				{
+					"lt": "3.6.4",
+					"gt": "3.6.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Samba development team reports:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2012-1182\">\n\t  <p>Samba versions 3.6.3 and all versions previous to this\n\t    are affected by a vulnerability that allows remote code\n\t    execution as the \"root\" user from an anonymous connection.</p>\n\t  <p>As this does not require an authenticated connection it\n\t    is the most serious vulnerability possible in a program,\n\t    and users and vendors are encouraged to patch their Samba\n\t    installations immediately.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-1182"
+		]
+	},
+	"dates": {
+		"discovery": "2012-04-10",
+		"entry": "2012-04-10"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "4bb56d2f-a5b0-11ea-a860-08002728f74c",
-  "topic": "nghttp2 -- DoS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "nghttp2",
-        "libnghttp2"
-      ],
-      "range": [
-        {
-          "lt": "1.41.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>nghttp2 security advisories:</p>\n\t<blockquote cite=\"https://github.com/nghttp2/nghttp2/security/advisories/GHSA-q5wr-xfw9-q7xr\">\n\t  <p>The overly large HTTP/2 SETTINGS frame payload causes denial of service.</p>\n\t  <p>The proof of concept attack involves a malicious client constructing a\n\t    SETTINGS frame with a length of 14,400 bytes (2400 individual settings\n\t    entries) over and over again. The attack causes the CPU to spike at 100%.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-q5wr-xfw9-q7xr"
-    ],
-    "cvename": [
-      "CVE-2020-11080"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-06-02",
-    "entry": "2020-06-03"
-  }
+	"vid": "4bb56d2f-a5b0-11ea-a860-08002728f74c",
+	"topic": "nghttp2 -- DoS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"nghttp2",
+				"libnghttp2"
+			],
+			"range": [
+				{
+					"lt": "1.41.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>nghttp2 security advisories:</p>\n\t<blockquote cite=\"https://github.com/nghttp2/nghttp2/security/advisories/GHSA-q5wr-xfw9-q7xr\">\n\t  <p>The overly large HTTP/2 SETTINGS frame payload causes denial of service.</p>\n\t  <p>The proof of concept attack involves a malicious client constructing a\n\t    SETTINGS frame with a length of 14,400 bytes (2400 individual settings\n\t    entries) over and over again. The attack causes the CPU to spike at 100%.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/nghttp2/nghttp2/security/advisories/GHSA-q5wr-xfw9-q7xr"
+		],
+		"cvename": [
+			"CVE-2020-11080"
+		]
+	},
+	"dates": {
+		"discovery": "2020-06-02",
+		"entry": "2020-06-03"
+	}
 }

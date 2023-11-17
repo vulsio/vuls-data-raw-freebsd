@@ -1,53 +1,53 @@
 {
-  "vid": "c2d1693b-73cb-11e9-a1c7-b499baebfeaf",
-  "topic": "PHP -- Multiple vulnerabilities in EXIF module",
-  "affects": [
-    {
-      "name": [
-        "php71-exif"
-      ],
-      "range": [
-        {
-          "lt": "7.1.28"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php72-exif"
-      ],
-      "range": [
-        {
-          "lt": "7.2.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php73-exif"
-      ],
-      "range": [
-        {
-          "lt": "7.3.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PHP project reports:</p>\n\t<blockquote cite=\"https://www.php.net/ChangeLog-7.php\">\n\t  <p>Heap-buffer-overflow in php_ifd_get32s (CVE-2019-11034)</p>\n\t  <p>Heap-buffer-overflow in exif_iif_add_value (CVE-2019-11035)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.php.net/ChangeLog-7.php"
-    ],
-    "cvename": [
-      "CVE-2019-11034",
-      "CVE-2019-11035"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-04-04",
-    "entry": "2019-05-11"
-  }
+	"vid": "c2d1693b-73cb-11e9-a1c7-b499baebfeaf",
+	"topic": "PHP -- Multiple vulnerabilities in EXIF module",
+	"affects": [
+		{
+			"name": [
+				"php71-exif"
+			],
+			"range": [
+				{
+					"lt": "7.1.28"
+				}
+			]
+		},
+		{
+			"name": [
+				"php72-exif"
+			],
+			"range": [
+				{
+					"lt": "7.2.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"php73-exif"
+			],
+			"range": [
+				{
+					"lt": "7.3.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PHP project reports:</p>\n\t<blockquote cite=\"https://www.php.net/ChangeLog-7.php\">\n\t  <p>Heap-buffer-overflow in php_ifd_get32s (CVE-2019-11034)</p>\n\t  <p>Heap-buffer-overflow in exif_iif_add_value (CVE-2019-11035)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.php.net/ChangeLog-7.php"
+		],
+		"cvename": [
+			"CVE-2019-11034",
+			"CVE-2019-11035"
+		]
+	},
+	"dates": {
+		"discovery": "2019-04-04",
+		"entry": "2019-05-11"
+	}
 }

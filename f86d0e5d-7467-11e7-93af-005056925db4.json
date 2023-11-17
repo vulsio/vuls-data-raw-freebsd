@@ -1,33 +1,33 @@
 {
-  "vid": "f86d0e5d-7467-11e7-93af-005056925db4",
-  "topic": "Cacti -- Cross-site scripting (XSS) vulnerability in auth_profile.php",
-  "affects": [
-    {
-      "name": [
-        "cacti"
-      ],
-      "range": [
-        {
-          "eq": "1.1.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>kimiizhang reports:</p>\n\t<blockquote cite=\"https://github.com/Cacti/cacti/issues/867\">\n\t  <p>Cross-site scripting (XSS) vulnerability in auth_profile.php in Cacti\n\t    1.1.13 allows remote authenticated users to inject arbitrary web script\n\t    or HTML via specially crafted HTTP Referer headers.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/Cacti/cacti/issues/867",
-      "https://www.cacti.net/release_notes.php?version=1.1.14"
-    ],
-    "cvename": [
-      "CVE-2017-11691"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-07-20",
-    "entry": "2017-07-29"
-  }
+	"vid": "f86d0e5d-7467-11e7-93af-005056925db4",
+	"topic": "Cacti -- Cross-site scripting (XSS) vulnerability in auth_profile.php",
+	"affects": [
+		{
+			"name": [
+				"cacti"
+			],
+			"range": [
+				{
+					"eq": "1.1.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>kimiizhang reports:</p>\n\t<blockquote cite=\"https://github.com/Cacti/cacti/issues/867\">\n\t  <p>Cross-site scripting (XSS) vulnerability in auth_profile.php in Cacti\n\t    1.1.13 allows remote authenticated users to inject arbitrary web script\n\t    or HTML via specially crafted HTTP Referer headers.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/Cacti/cacti/issues/867",
+			"https://www.cacti.net/release_notes.php?version=1.1.14"
+		],
+		"cvename": [
+			"CVE-2017-11691"
+		]
+	},
+	"dates": {
+		"discovery": "2017-07-20",
+		"entry": "2017-07-29"
+	}
 }

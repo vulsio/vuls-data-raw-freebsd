@@ -1,55 +1,55 @@
 {
-  "vid": "28bb6ee5-9b5c-11e6-b799-19bef72f4b7c",
-  "topic": "node.js -- ares_create_query single byte out of buffer write",
-  "affects": [
-    {
-      "name": [
-        "node010"
-      ],
-      "range": [
-        {
-          "lt": "0.10.48"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node012"
-      ],
-      "range": [
-        {
-          "lt": "0.12.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node4"
-      ],
-      "range": [
-        {
-          "lt": "4.6.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js has released new versions containing the following security fix:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/october-2016-security-releases/\">\n\t  <p>The following releases all contain fixes for CVE-2016-5180 \"ares_create_query single\n\t    byte out of buffer write\": Node.js v0.10.48 (Maintenance), Node.js v0.12.17 (Maintenance),\n\tNode.js v4.6.1 (LTS \"Argon\")\n\t  </p>\n\t  <p>While this is not a critical update, all users of these release lines should upgrade at\n\t\ttheir earliest convenience.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/october-2016-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2016-5180"
-    ],
-    "freebsd_pr": [
-      "ports/213800"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-10-18",
-    "entry": "2016-10-26"
-  }
+	"vid": "28bb6ee5-9b5c-11e6-b799-19bef72f4b7c",
+	"topic": "node.js -- ares_create_query single byte out of buffer write",
+	"affects": [
+		{
+			"name": [
+				"node010"
+			],
+			"range": [
+				{
+					"lt": "0.10.48"
+				}
+			]
+		},
+		{
+			"name": [
+				"node012"
+			],
+			"range": [
+				{
+					"lt": "0.12.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"node4"
+			],
+			"range": [
+				{
+					"lt": "4.6.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js has released new versions containing the following security fix:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/october-2016-security-releases/\">\n\t  <p>The following releases all contain fixes for CVE-2016-5180 \"ares_create_query single\n\t    byte out of buffer write\": Node.js v0.10.48 (Maintenance), Node.js v0.12.17 (Maintenance),\n\tNode.js v4.6.1 (LTS \"Argon\")\n\t  </p>\n\t  <p>While this is not a critical update, all users of these release lines should upgrade at\n\t\ttheir earliest convenience.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/october-2016-security-releases/"
+		],
+		"cvename": [
+			"CVE-2016-5180"
+		],
+		"freebsd_pr": [
+			"ports/213800"
+		]
+	},
+	"dates": {
+		"discovery": "2016-10-18",
+		"entry": "2016-10-26"
+	}
 }

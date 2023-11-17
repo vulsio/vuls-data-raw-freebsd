@@ -1,36 +1,36 @@
 {
-  "vid": "e25566d5-6d3f-11d8-83a4-000a95bc6fae",
-  "topic": "multiple buffer overflows in xboing",
-  "affects": [
-    {
-      "name": [
-        "xboing"
-      ],
-      "range": [
-        {
-          "lt": "2.4_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Steve Kemp reports (in a Debian bug submission):</p>\n\t<blockquote cite=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=174924\">\n\t  <p>Due to improper bounds checking it is possible for a\n\t    malicious user to gain a shell with membership group\n\t    'games'.  (The binary is installed setgid games).</p>\n\t  <p>Environmental variables are used without being bounds-checked\n\t    in any way, from the source code:</p>\n<pre>\nhighscore.c:\n   /* Use the environment variable if it exists */\n   if ((str = getenv(\"XBOING_SCORE_FILE\")) != NULL)\n\tstrcpy(filename, str);\n   else\n\tstrcpy(filename, HIGH_SCORE_FILE);\n\nmisc.c:\n    if ((ptr = getenv(\"HOME\")) != NULL)\n\t(void) strcpy(dest, ptr);\n</pre>\n\t<p>Neither of these checks are boundschecked, and will allow\n\t  arbitary shell code to be run.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=174924"
-    ],
-    "cvename": [
-      "CVE-2004-0149"
-    ],
-    "bid": [
-      "9764"
-    ]
-  },
-  "dates": {
-    "discovery": "2003-01-01",
-    "entry": "2004-03-05",
-    "modified": "2004-03-29"
-  }
+	"vid": "e25566d5-6d3f-11d8-83a4-000a95bc6fae",
+	"topic": "multiple buffer overflows in xboing",
+	"affects": [
+		{
+			"name": [
+				"xboing"
+			],
+			"range": [
+				{
+					"lt": "2.4_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Steve Kemp reports (in a Debian bug submission):</p>\n\t<blockquote cite=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=174924\">\n\t  <p>Due to improper bounds checking it is possible for a\n\t    malicious user to gain a shell with membership group\n\t    'games'.  (The binary is installed setgid games).</p>\n\t  <p>Environmental variables are used without being bounds-checked\n\t    in any way, from the source code:</p>\n<pre>\nhighscore.c:\n   /* Use the environment variable if it exists */\n   if ((str = getenv(\"XBOING_SCORE_FILE\")) != NULL)\n\tstrcpy(filename, str);\n   else\n\tstrcpy(filename, HIGH_SCORE_FILE);\n\nmisc.c:\n    if ((ptr = getenv(\"HOME\")) != NULL)\n\t(void) strcpy(dest, ptr);\n</pre>\n\t<p>Neither of these checks are boundschecked, and will allow\n\t  arbitary shell code to be run.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=174924"
+		],
+		"cvename": [
+			"CVE-2004-0149"
+		],
+		"bid": [
+			"9764"
+		]
+	},
+	"dates": {
+		"discovery": "2003-01-01",
+		"entry": "2004-03-05",
+		"modified": "2004-03-29"
+	}
 }

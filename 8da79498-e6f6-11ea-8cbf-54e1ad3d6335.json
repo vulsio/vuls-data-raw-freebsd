@@ -1,33 +1,33 @@
 {
-  "vid": "8da79498-e6f6-11ea-8cbf-54e1ad3d6335",
-  "topic": "libX11 -- Doublefree in locale handlng code",
-  "affects": [
-    {
-      "name": [
-        "libX11"
-      ],
-      "range": [
-        {
-          "lt": "1.6.12,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2020-August/003056.html\">\n\t  <p>There is an integer overflow and a double free vulnerability in\n\t    the way LibX11 handles locales. The integer overflow is a necessary\n\t    precursor to the double free.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.x.org/archives/xorg-announce/2020-August/003056.html"
-    ],
-    "cvename": [
-      "CVE-2020-14363"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-08-25",
-    "entry": "2020-08-25",
-    "modified": "2020-11-15"
-  }
+	"vid": "8da79498-e6f6-11ea-8cbf-54e1ad3d6335",
+	"topic": "libX11 -- Doublefree in locale handlng code",
+	"affects": [
+		{
+			"name": [
+				"libX11"
+			],
+			"range": [
+				{
+					"lt": "1.6.12,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2020-August/003056.html\">\n\t  <p>There is an integer overflow and a double free vulnerability in\n\t    the way LibX11 handles locales. The integer overflow is a necessary\n\t    precursor to the double free.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.x.org/archives/xorg-announce/2020-August/003056.html"
+		],
+		"cvename": [
+			"CVE-2020-14363"
+		]
+	},
+	"dates": {
+		"discovery": "2020-08-25",
+		"entry": "2020-08-25",
+		"modified": "2020-11-15"
+	}
 }

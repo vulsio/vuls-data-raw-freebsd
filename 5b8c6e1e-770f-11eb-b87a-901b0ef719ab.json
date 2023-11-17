@@ -1,37 +1,37 @@
 {
-  "vid": "5b8c6e1e-770f-11eb-b87a-901b0ef719ab",
-  "topic": "FreeBSD -- Xen grant mapping error handling issues",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.2_4",
-          "ge": "12.2"
-        },
-        {
-          "lt": "11.4_8",
-          "ge": "11.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Grant mapping operations often occur in batch hypercalls, where a\n\tnumber of operations are done in a single hypercall, the success or\n\tfailure of each one reported to the backend driver, and the backend\n\tdriver then loops over the results, performing follow-up actions\n\tbased on the success or failure of each operation.</p>\n\t<p>Unfortunately, when running in HVM/PVH mode, the FreeBSD backend\n\tdrivers mishandle this: Some errors are ignored, effectively implying\n\ttheir success from the success of related batch elements. In other\n\tcases, errors resulting from one batch element lead to further batch\n\telements not being inspected, and hence successful ones to not be\n\tpossible to properly unmap upon error recovery.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious or buggy frontend driver may be able to cause resource\n\tleaks in the domain running the corresponding backend driver.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2021-26932"
-    ],
-    "freebsd_sa": [
-      "SA-21:06.xen"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-02-24",
-    "entry": "2021-02-25"
-  }
+	"vid": "5b8c6e1e-770f-11eb-b87a-901b0ef719ab",
+	"topic": "FreeBSD -- Xen grant mapping error handling issues",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.2_4",
+					"ge": "12.2"
+				},
+				{
+					"lt": "11.4_8",
+					"ge": "11.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Grant mapping operations often occur in batch hypercalls, where a\n\tnumber of operations are done in a single hypercall, the success or\n\tfailure of each one reported to the backend driver, and the backend\n\tdriver then loops over the results, performing follow-up actions\n\tbased on the success or failure of each operation.</p>\n\t<p>Unfortunately, when running in HVM/PVH mode, the FreeBSD backend\n\tdrivers mishandle this: Some errors are ignored, effectively implying\n\ttheir success from the success of related batch elements. In other\n\tcases, errors resulting from one batch element lead to further batch\n\telements not being inspected, and hence successful ones to not be\n\tpossible to properly unmap upon error recovery.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious or buggy frontend driver may be able to cause resource\n\tleaks in the domain running the corresponding backend driver.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2021-26932"
+		],
+		"freebsd_sa": [
+			"SA-21:06.xen"
+		]
+	},
+	"dates": {
+		"discovery": "2021-02-24",
+		"entry": "2021-02-25"
+	}
 }

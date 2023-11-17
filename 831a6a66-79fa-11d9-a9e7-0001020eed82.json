@@ -1,44 +1,44 @@
 {
-  "vid": "831a6a66-79fa-11d9-a9e7-0001020eed82",
-  "topic": "ethereal -- multiple protocol dissectors vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ethereal",
-        "ethereal-lite",
-        "tethereal",
-        "tethereal-lite"
-      ],
-      "range": [
-        {
-          "lt": "0.10.9",
-          "ge": "0.8.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>An Ethreal Security Advisories reports:</p>\n\t<blockquote cite=\"http://www.ethereal.com/appnotes/enpa-sa-00017.html\">\n\t  <p>Issues have been discovered in the following protocol\n\t    dissectors:</p>\n\t  <ul>\n\t    <li>The COPS dissector could go into an infinite\n\t      loop. CVE: CAN-2005-0006</li>\n\t    <li>The DLSw dissector could cause an assertion. CVE:\n\t      CAN-2005-0007</li>\n\t    <li>The DNP dissector could cause memory corruption. CVE:\n\t      CAN-2005-0008</li>\n\t    <li>The Gnutella dissector could cuase an assertion. CVE:\n\t      CAN-2005-0009</li>\n\t    <li>The MMSE dissector could free statically-allocated\n\t      memory. CVE: CAN-2005-0010</li>\n\t    <li>The X11 dissector is vulnerable to a string buffer\n\t      overflow. CVE: CAN-2005-0084</li>\n\t  </ul>\n\t  <p>Impact: It may be possible to make Ethereal crash or run\n\t    arbitrary code by injecting a purposefully malformed\n\t    packet onto the wire or by convincing someone to read a\n\t    malformed packet trace file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.ethereal.com/appnotes/enpa-sa-00017.html"
-    ],
-    "cvename": [
-      "CVE-2005-0006",
-      "CVE-2005-0007",
-      "CVE-2005-0008",
-      "CVE-2005-0009",
-      "CVE-2005-0010",
-      "CVE-2005-0084"
-    ],
-    "bid": [
-      "12326"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-18",
-    "entry": "2005-02-08"
-  }
+	"vid": "831a6a66-79fa-11d9-a9e7-0001020eed82",
+	"topic": "ethereal -- multiple protocol dissectors vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ethereal",
+				"ethereal-lite",
+				"tethereal",
+				"tethereal-lite"
+			],
+			"range": [
+				{
+					"lt": "0.10.9",
+					"ge": "0.8.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>An Ethreal Security Advisories reports:</p>\n\t<blockquote cite=\"http://www.ethereal.com/appnotes/enpa-sa-00017.html\">\n\t  <p>Issues have been discovered in the following protocol\n\t    dissectors:</p>\n\t  <ul>\n\t    <li>The COPS dissector could go into an infinite\n\t      loop. CVE: CAN-2005-0006</li>\n\t    <li>The DLSw dissector could cause an assertion. CVE:\n\t      CAN-2005-0007</li>\n\t    <li>The DNP dissector could cause memory corruption. CVE:\n\t      CAN-2005-0008</li>\n\t    <li>The Gnutella dissector could cuase an assertion. CVE:\n\t      CAN-2005-0009</li>\n\t    <li>The MMSE dissector could free statically-allocated\n\t      memory. CVE: CAN-2005-0010</li>\n\t    <li>The X11 dissector is vulnerable to a string buffer\n\t      overflow. CVE: CAN-2005-0084</li>\n\t  </ul>\n\t  <p>Impact: It may be possible to make Ethereal crash or run\n\t    arbitrary code by injecting a purposefully malformed\n\t    packet onto the wire or by convincing someone to read a\n\t    malformed packet trace file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.ethereal.com/appnotes/enpa-sa-00017.html"
+		],
+		"cvename": [
+			"CVE-2005-0006",
+			"CVE-2005-0007",
+			"CVE-2005-0008",
+			"CVE-2005-0009",
+			"CVE-2005-0010",
+			"CVE-2005-0084"
+		],
+		"bid": [
+			"12326"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-18",
+		"entry": "2005-02-08"
+	}
 }

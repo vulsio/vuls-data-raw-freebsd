@@ -1,36 +1,36 @@
 {
-  "vid": "31001c6b-63e7-11e7-85aa-a4badb2f4699",
-  "topic": "irssi -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "irssi"
-      ],
-      "range": [
-        {
-          "lt": "1.0.4,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_07.txt\">\n\t  <p>When receiving messages with invalid time stamps, Irssi\n\t    would try to dereference a NULL pointer.</p>\n\t  <p>While updating the internal nick list, Irssi may\n\t    incorrectly use the GHashTable interface and free the nick while\n\t    updating it. This will then result in use-after-free conditions on each\n\t    access of the hash table.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://irssi.org/security/irssi_sa_2017_07.txt"
-    ],
-    "cvename": [
-      "CVE-2017-10965",
-      "CVE-2017-10966"
-    ],
-    "freebsd_pr": [
-      "ports/220544"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-07-05",
-    "entry": "2017-07-08"
-  }
+	"vid": "31001c6b-63e7-11e7-85aa-a4badb2f4699",
+	"topic": "irssi -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"irssi"
+			],
+			"range": [
+				{
+					"lt": "1.0.4,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_07.txt\">\n\t  <p>When receiving messages with invalid time stamps, Irssi\n\t    would try to dereference a NULL pointer.</p>\n\t  <p>While updating the internal nick list, Irssi may\n\t    incorrectly use the GHashTable interface and free the nick while\n\t    updating it. This will then result in use-after-free conditions on each\n\t    access of the hash table.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://irssi.org/security/irssi_sa_2017_07.txt"
+		],
+		"cvename": [
+			"CVE-2017-10965",
+			"CVE-2017-10966"
+		],
+		"freebsd_pr": [
+			"ports/220544"
+		]
+	},
+	"dates": {
+		"discovery": "2017-07-05",
+		"entry": "2017-07-08"
+	}
 }

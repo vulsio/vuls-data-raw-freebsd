@@ -1,36 +1,36 @@
 {
-  "vid": "a264b1b0-5726-11e2-9483-14dae938ec40",
-  "topic": "moinmoin -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "moinmoin"
-      ],
-      "range": [
-        {
-          "lt": "1.9.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MoinMoin developers report the following vulnerabilities\n\t  as fixed in version 1.9.6:</p>\n\t<blockquote cite=\"http://hg.moinmo.in/moin/1.9/raw-file/1.9.6/docs/CHANGES\">\n\t  <ul>\n\t    <li>remote code execution vulnerability in\n\t      twikidraw/anywikidraw action,</li>\n\t    <li>path traversal vulnerability in AttachFile action,</li>\n\t    <li>XSS issue, escape page name in rss link.</li>\n\t  </ul>\n\t</blockquote>\n\t<p>CVE entries at MITRE furher clarify:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-6081\">\n\t  <p>Multiple unrestricted file upload vulnerabilities in the\n\t    (1) twikidraw (action/twikidraw.py) and (2) anywikidraw\n\t    (action/anywikidraw.py) actions in MoinMoin before 1.9.6\n\t    allow remote authenticated users with write permissions to\n\t    execute arbitrary code by uploading a file with an\n\t    executable extension, then accessing it via a direct request\n\t    to the file in an unspecified directory, as exploited in the\n\t    wild in July 2012.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-6080\">\n\t  <p>Directory traversal vulnerability in the\n\t    _do_attachment_move function in the AttachFile action\n\t    (action/AttachFile.py) in MoinMoin 1.9.3 through 1.9.5\n\t    allows remote attackers to overwrite arbitrary files via a\n\t    .. (dot dot) in a file name.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-6082\">\n\t  <p>Cross-site scripting (XSS) vulnerability in the rsslink\n\t    function in theme/__init__.py in MoinMoin 1.9.5 allows\n\t    remote attackers to inject arbitrary web script or HTML\n\t    via the page name in a rss link.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://hg.moinmo.in/moin/1.9/raw-file/1.9.6/docs/CHANGES",
-      "http://www.debian.org/security/2012/dsa-2593"
-    ],
-    "cvename": [
-      "CVE-2012-6081",
-      "CVE-2012-6080",
-      "CVE-2012-6082"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-12-29",
-    "entry": "2013-01-05",
-    "modified": "2013-01-06"
-  }
+	"vid": "a264b1b0-5726-11e2-9483-14dae938ec40",
+	"topic": "moinmoin -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"moinmoin"
+			],
+			"range": [
+				{
+					"lt": "1.9.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MoinMoin developers report the following vulnerabilities\n\t  as fixed in version 1.9.6:</p>\n\t<blockquote cite=\"http://hg.moinmo.in/moin/1.9/raw-file/1.9.6/docs/CHANGES\">\n\t  <ul>\n\t    <li>remote code execution vulnerability in\n\t      twikidraw/anywikidraw action,</li>\n\t    <li>path traversal vulnerability in AttachFile action,</li>\n\t    <li>XSS issue, escape page name in rss link.</li>\n\t  </ul>\n\t</blockquote>\n\t<p>CVE entries at MITRE furher clarify:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-6081\">\n\t  <p>Multiple unrestricted file upload vulnerabilities in the\n\t    (1) twikidraw (action/twikidraw.py) and (2) anywikidraw\n\t    (action/anywikidraw.py) actions in MoinMoin before 1.9.6\n\t    allow remote authenticated users with write permissions to\n\t    execute arbitrary code by uploading a file with an\n\t    executable extension, then accessing it via a direct request\n\t    to the file in an unspecified directory, as exploited in the\n\t    wild in July 2012.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-6080\">\n\t  <p>Directory traversal vulnerability in the\n\t    _do_attachment_move function in the AttachFile action\n\t    (action/AttachFile.py) in MoinMoin 1.9.3 through 1.9.5\n\t    allows remote attackers to overwrite arbitrary files via a\n\t    .. (dot dot) in a file name.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-6082\">\n\t  <p>Cross-site scripting (XSS) vulnerability in the rsslink\n\t    function in theme/__init__.py in MoinMoin 1.9.5 allows\n\t    remote attackers to inject arbitrary web script or HTML\n\t    via the page name in a rss link.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://hg.moinmo.in/moin/1.9/raw-file/1.9.6/docs/CHANGES",
+			"http://www.debian.org/security/2012/dsa-2593"
+		],
+		"cvename": [
+			"CVE-2012-6081",
+			"CVE-2012-6080",
+			"CVE-2012-6082"
+		]
+	},
+	"dates": {
+		"discovery": "2012-12-29",
+		"entry": "2013-01-05",
+		"modified": "2013-01-06"
+	}
 }

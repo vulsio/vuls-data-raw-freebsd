@@ -1,33 +1,33 @@
 {
-  "vid": "ae6ec9b8-2f43-4d02-8129-c6a3a53ef09d",
-  "topic": "xview -- multiple buffer overflows in xv_parse_one",
-  "affects": [
-    {
-      "name": [
-        "xview"
-      ],
-      "range": [
-        {
-          "lt": "3.2.1_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Debian Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-672\">\n\t  <p>Erik Sjölund discovered that programs linked against xview\n\t    are vulnerable to a number of buffer overflows in the XView\n\t    library. When the overflow is triggered in a program which\n\t    is installed setuid root a malicious user could perhaps\n\t    execute arbitrary code as privileged user.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.debian.org/security/2005/dsa-672",
-      "http://xforce.iss.net/xforce/xfdb/19271"
-    ],
-    "cvename": [
-      "CVE-2005-0076"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-09",
-    "entry": "2005-06-01"
-  }
+	"vid": "ae6ec9b8-2f43-4d02-8129-c6a3a53ef09d",
+	"topic": "xview -- multiple buffer overflows in xv_parse_one",
+	"affects": [
+		{
+			"name": [
+				"xview"
+			],
+			"range": [
+				{
+					"lt": "3.2.1_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Debian Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-672\">\n\t  <p>Erik Sjölund discovered that programs linked against xview\n\t    are vulnerable to a number of buffer overflows in the XView\n\t    library. When the overflow is triggered in a program which\n\t    is installed setuid root a malicious user could perhaps\n\t    execute arbitrary code as privileged user.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.debian.org/security/2005/dsa-672",
+			"http://xforce.iss.net/xforce/xfdb/19271"
+		],
+		"cvename": [
+			"CVE-2005-0076"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-09",
+		"entry": "2005-06-01"
+	}
 }

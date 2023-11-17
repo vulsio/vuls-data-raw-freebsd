@@ -1,34 +1,34 @@
 {
-  "vid": "f70f8860-e8ee-11d9-b875-0001020eed82",
-  "topic": "kernel -- ipfw packet matching errors with address tables",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.4_3",
-          "ge": "5.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description</h1>\n\t<p>The ipfw tables lookup code caches the result of the last\n\t  query.  The kernel may process multiple packets\n\t  concurrently, performing several concurrent table lookups.\n\t  Due to an insufficient locking, a cached result can become\n\t  corrupted that could cause some addresses to be incorrectly\n\t  matched against a lookup table.</p>\n\t<h1>Impact</h1>\n\t<p>When lookup tables are used with ipfw, packets may on very\n\t  rare occasions incorrectly match a lookup table.  This could\n\t  result in a packet being treated contrary to the defined\n\t  packet filtering ruleset. For example, a packet may be\n\t  allowed to pass through when it should have been\n\t  discarded.</p>\n\t<p>The problem can only occur on Symmetric Multi-Processor\n\t  (SMP) systems, or on Uni Processor (UP) systems with the\n\t  PREEMPTION kernel option enabled (not the default).</p>\n\t<h1>Workaround</h1>\n\t<p>a) Do not use lookup tables.</p>\n\t<p>OR</p>\n\t<p>b) Disable concurrent processing of packets in the network\n\t  stack by setting the \"debug.mpsafenet=0\" tunable:</p>\n\t<p># echo \"debug.mpsafenet=0\" &lt;&lt; /boot/loader.conf</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-2019"
-    ],
-    "freebsd_sa": [
-      "SA-05:13.ipfw"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-29",
-    "entry": "2005-06-29",
-    "modified": "2005-07-06"
-  }
+	"vid": "f70f8860-e8ee-11d9-b875-0001020eed82",
+	"topic": "kernel -- ipfw packet matching errors with address tables",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.4_3",
+					"ge": "5.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description</h1>\n\t<p>The ipfw tables lookup code caches the result of the last\n\t  query.  The kernel may process multiple packets\n\t  concurrently, performing several concurrent table lookups.\n\t  Due to an insufficient locking, a cached result can become\n\t  corrupted that could cause some addresses to be incorrectly\n\t  matched against a lookup table.</p>\n\t<h1>Impact</h1>\n\t<p>When lookup tables are used with ipfw, packets may on very\n\t  rare occasions incorrectly match a lookup table.  This could\n\t  result in a packet being treated contrary to the defined\n\t  packet filtering ruleset. For example, a packet may be\n\t  allowed to pass through when it should have been\n\t  discarded.</p>\n\t<p>The problem can only occur on Symmetric Multi-Processor\n\t  (SMP) systems, or on Uni Processor (UP) systems with the\n\t  PREEMPTION kernel option enabled (not the default).</p>\n\t<h1>Workaround</h1>\n\t<p>a) Do not use lookup tables.</p>\n\t<p>OR</p>\n\t<p>b) Disable concurrent processing of packets in the network\n\t  stack by setting the \"debug.mpsafenet=0\" tunable:</p>\n\t<p># echo \"debug.mpsafenet=0\" &lt;&lt; /boot/loader.conf</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-2019"
+		],
+		"freebsd_sa": [
+			"SA-05:13.ipfw"
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-29",
+		"entry": "2005-06-29",
+		"modified": "2005-07-06"
+	}
 }

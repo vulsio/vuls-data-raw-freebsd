@@ -1,33 +1,33 @@
 {
-  "vid": "5c9a2769-5ade-11db-a5ae-00508d6a62df",
-  "topic": "google-earth -- heap overflow in the KML engine",
-  "affects": [
-    {
-      "name": [
-        "google-earth"
-      ],
-      "range": [
-        {
-          "lt": "4.0.2414"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>JAAScois reports:</p>\n\t<p>While processing KML/KMZ data Google Earth fails to verify\n\t  its size prior to copying it into a fixed-sized buffer.\n\t  This can be exploited as a buffer-overflow vulnerability to\n\t  cause the application to crash and/or to execute arbitrary\n\t  code.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.jaascois.com/exploits/18602024/"
-    ],
-    "bid": [
-      "20464"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-10-10",
-    "entry": "2006-10-14",
-    "modified": "2007-04-13"
-  }
+	"vid": "5c9a2769-5ade-11db-a5ae-00508d6a62df",
+	"topic": "google-earth -- heap overflow in the KML engine",
+	"affects": [
+		{
+			"name": [
+				"google-earth"
+			],
+			"range": [
+				{
+					"lt": "4.0.2414"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>JAAScois reports:</p>\n\t<p>While processing KML/KMZ data Google Earth fails to verify\n\t  its size prior to copying it into a fixed-sized buffer.\n\t  This can be exploited as a buffer-overflow vulnerability to\n\t  cause the application to crash and/or to execute arbitrary\n\t  code.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.jaascois.com/exploits/18602024/"
+		],
+		"bid": [
+			"20464"
+		]
+	},
+	"dates": {
+		"discovery": "2006-10-10",
+		"entry": "2006-10-14",
+		"modified": "2007-04-13"
+	}
 }

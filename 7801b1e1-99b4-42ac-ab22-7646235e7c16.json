@@ -1,33 +1,33 @@
 {
-  "vid": "7801b1e1-99b4-42ac-ab22-7646235e7c16",
-  "topic": "aacplusenc -- denial of service",
-  "affects": [
-    {
-      "name": [
-        "aacplusenc"
-      ],
-      "range": [
-        {
-          "le": "0.17.5_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gentoo developers report:</p>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/09/07/aacplusenc-null-pointer-dereference-in-deletebitbuffer-bitbuffer-c/\">\n\t  <p>DeleteBitBuffer in libbitbuf/bitbuffer.c in mp4tools aacplusenc 0.17.5 allows remote attackers to cause a denial of service (invalid memory write, SEGV on unknown address 0x000000000030, and application crash) or possibly have unspecified other impact via a crafted .wav file, aka a NULL pointer dereference.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blogs.gentoo.org/ago/2017/09/07/aacplusenc-null-pointer-dereference-in-deletebitbuffer-bitbuffer-c/",
-      "https://github.com/teknoraver/aacplusenc/issues/1"
-    ],
-    "cvename": [
-      "CVE-2017-14181"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-07",
-    "entry": "2017-09-25"
-  }
+	"vid": "7801b1e1-99b4-42ac-ab22-7646235e7c16",
+	"topic": "aacplusenc -- denial of service",
+	"affects": [
+		{
+			"name": [
+				"aacplusenc"
+			],
+			"range": [
+				{
+					"le": "0.17.5_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gentoo developers report:</p>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/09/07/aacplusenc-null-pointer-dereference-in-deletebitbuffer-bitbuffer-c/\">\n\t  <p>DeleteBitBuffer in libbitbuf/bitbuffer.c in mp4tools aacplusenc 0.17.5 allows remote attackers to cause a denial of service (invalid memory write, SEGV on unknown address 0x000000000030, and application crash) or possibly have unspecified other impact via a crafted .wav file, aka a NULL pointer dereference.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blogs.gentoo.org/ago/2017/09/07/aacplusenc-null-pointer-dereference-in-deletebitbuffer-bitbuffer-c/",
+			"https://github.com/teknoraver/aacplusenc/issues/1"
+		],
+		"cvename": [
+			"CVE-2017-14181"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-07",
+		"entry": "2017-09-25"
+	}
 }

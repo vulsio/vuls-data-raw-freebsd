@@ -1,45 +1,45 @@
 {
-  "vid": "ecedde1c-5128-11dd-a4e1-0030843d3802",
-  "topic": "drupal -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "drupal5"
-      ],
-      "range": [
-        {
-          "lt": "5.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/280571\">\n\t  <p>Free tagging taxonomy terms can be used to insert arbitrary script\n\t    and HTML code (cross site scripting or XSS) on node preview pages. A\n\t    successful exploit requires that the victim selects a term containing\n\t    script code and chooses to preview the node. This issue affects Drupal\n\t    6.x only. Some values from OpenID providers are output without being\n\t    properly escaped, allowing malicious providers to insert arbitrary script\n\t    and HTML code (XSS) into user pages. This issue affects Drupal 6.x only.\n\t    filter_xss_admin() has been hardened to prevent use of the object HTML\n\t    tag in administrator input.</p>\n\t  <p>Translated strings (5.x, 6.x) and OpenID identities (6.x) are\n\t    immediately deleted upon accessing a properly formatted URL, making\n\t    such deletion vulnerable to cross site request forgeries (CSRF). This\n\t    may lead to unintended deletion of translated strings or OpenID\n\t    identities when a sufficiently privileged user visits a page or site\n\t    created by a malicious person.</p>\n\t  <p>When contributed modules such as Workflow NG terminate the current\n\t    request during a login event, user module is not able to regenerate\n\t    the user's session. This may lead to a session fixation attack, when a\n\t    malicious user is able to control another users' initial session ID.\n\t    As the session is not regenerated, the malicious user may use the\n\t    'fixed' session ID after the victim authenticates and will have the\n\t    same access. This issue affects both Drupal 5 and Drupal 6.</p>\n\t  <p>Schema API uses an inappropriate placeholder for 'numeric' fields\n\t    enabling SQL injection when user-supplied data is used for such\n\t    fields.This issue affects Drupal 6 only.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://drupal.org/node/280571",
-      "http://secunia.com/advisories/31028/"
-    ],
-    "cvename": [
-      "CVE-2008-3218",
-      "CVE-2008-3221"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-07-09",
-    "entry": "2008-07-13",
-    "modified": "2010-05-12"
-  }
+	"vid": "ecedde1c-5128-11dd-a4e1-0030843d3802",
+	"topic": "drupal -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"drupal5"
+			],
+			"range": [
+				{
+					"lt": "5.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/280571\">\n\t  <p>Free tagging taxonomy terms can be used to insert arbitrary script\n\t    and HTML code (cross site scripting or XSS) on node preview pages. A\n\t    successful exploit requires that the victim selects a term containing\n\t    script code and chooses to preview the node. This issue affects Drupal\n\t    6.x only. Some values from OpenID providers are output without being\n\t    properly escaped, allowing malicious providers to insert arbitrary script\n\t    and HTML code (XSS) into user pages. This issue affects Drupal 6.x only.\n\t    filter_xss_admin() has been hardened to prevent use of the object HTML\n\t    tag in administrator input.</p>\n\t  <p>Translated strings (5.x, 6.x) and OpenID identities (6.x) are\n\t    immediately deleted upon accessing a properly formatted URL, making\n\t    such deletion vulnerable to cross site request forgeries (CSRF). This\n\t    may lead to unintended deletion of translated strings or OpenID\n\t    identities when a sufficiently privileged user visits a page or site\n\t    created by a malicious person.</p>\n\t  <p>When contributed modules such as Workflow NG terminate the current\n\t    request during a login event, user module is not able to regenerate\n\t    the user's session. This may lead to a session fixation attack, when a\n\t    malicious user is able to control another users' initial session ID.\n\t    As the session is not regenerated, the malicious user may use the\n\t    'fixed' session ID after the victim authenticates and will have the\n\t    same access. This issue affects both Drupal 5 and Drupal 6.</p>\n\t  <p>Schema API uses an inappropriate placeholder for 'numeric' fields\n\t    enabling SQL injection when user-supplied data is used for such\n\t    fields.This issue affects Drupal 6 only.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://drupal.org/node/280571",
+			"http://secunia.com/advisories/31028/"
+		],
+		"cvename": [
+			"CVE-2008-3218",
+			"CVE-2008-3221"
+		]
+	},
+	"dates": {
+		"discovery": "2008-07-09",
+		"entry": "2008-07-13",
+		"modified": "2010-05-12"
+	}
 }

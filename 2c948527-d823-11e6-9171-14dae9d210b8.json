@@ -1,49 +1,49 @@
 {
-  "vid": "2c948527-d823-11e6-9171-14dae9d210b8",
-  "topic": "FreeBSD -- OpenSSH multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssh-portable"
-      ],
-      "range": [
-        {
-          "lt": "7.3.p1_5,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.0_7",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.3_16",
-          "ge": "10.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The ssh-agent(1) agent supports loading a PKCS#11 module\n\tfrom outside a trusted whitelist. An attacker can request\n\tloading of a PKCS#11 module across forwarded agent-socket.\n\t[CVE-2016-10009]</p>\n\t<p>When privilege separation is disabled, forwarded Unix\n\tdomain sockets would be created by sshd(8) with the privileges\n\tof 'root' instead of the authenticated user. [CVE-2016-10010]</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker who have control of a forwarded\n\tagent-socket on a remote system and have the ability to\n\twrite files on the system running ssh-agent(1) agent can\n\trun arbitrary code under the same user credential. Because\n\tthe attacker must already have some control on both systems,\n\tit is relatively hard to exploit this vulnerability in a\n\tpractical attack. [CVE-2016-10009]</p>\n\t<p>When privilege separation is disabled (on FreeBSD,\n\tprivilege separation is enabled by default and has to be\n\texplicitly disabled), an authenticated attacker can potentially\n\tgain root privileges on systems running OpenSSH server.\n\t[CVE-2016-10010]</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-10009",
-      "CVE-2016-10010"
-    ],
-    "freebsd_sa": [
-      "SA-17:01.openssh"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-01-11",
-    "entry": "2017-01-11",
-    "modified": "2017-01-13"
-  }
+	"vid": "2c948527-d823-11e6-9171-14dae9d210b8",
+	"topic": "FreeBSD -- OpenSSH multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssh-portable"
+			],
+			"range": [
+				{
+					"lt": "7.3.p1_5,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.0_7",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.3_16",
+					"ge": "10.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The ssh-agent(1) agent supports loading a PKCS#11 module\n\tfrom outside a trusted whitelist. An attacker can request\n\tloading of a PKCS#11 module across forwarded agent-socket.\n\t[CVE-2016-10009]</p>\n\t<p>When privilege separation is disabled, forwarded Unix\n\tdomain sockets would be created by sshd(8) with the privileges\n\tof 'root' instead of the authenticated user. [CVE-2016-10010]</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker who have control of a forwarded\n\tagent-socket on a remote system and have the ability to\n\twrite files on the system running ssh-agent(1) agent can\n\trun arbitrary code under the same user credential. Because\n\tthe attacker must already have some control on both systems,\n\tit is relatively hard to exploit this vulnerability in a\n\tpractical attack. [CVE-2016-10009]</p>\n\t<p>When privilege separation is disabled (on FreeBSD,\n\tprivilege separation is enabled by default and has to be\n\texplicitly disabled), an authenticated attacker can potentially\n\tgain root privileges on systems running OpenSSH server.\n\t[CVE-2016-10010]</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-10009",
+			"CVE-2016-10010"
+		],
+		"freebsd_sa": [
+			"SA-17:01.openssh"
+		]
+	},
+	"dates": {
+		"discovery": "2017-01-11",
+		"entry": "2017-01-11",
+		"modified": "2017-01-13"
+	}
 }

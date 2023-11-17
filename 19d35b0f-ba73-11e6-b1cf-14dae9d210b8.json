@@ -1,50 +1,50 @@
 {
-  "vid": "19d35b0f-ba73-11e6-b1cf-14dae9d210b8",
-  "topic": "ImageMagick -- heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ImageMagick",
-        "ImageMagick-nox11"
-      ],
-      "range": [
-        {
-          "lt": "6.9.6.4,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ImageMagick7",
-        "ImageMagick7-nox11"
-      ],
-      "range": [
-        {
-          "lt": "7.0.3.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Bastien Roucaries reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2016/q4/413\">\n\t  <p>Imagemagick before 3cbfb163cff9e5b8cdeace8312e9bfee810ed02b\n\t    suffer from a heap overflow in WaveletDenoiseImage(). This problem is\n\t    easily trigerrable from a Perl script.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2016/q4/413",
-      "https://github.com/ImageMagick/ImageMagick/issues/296"
-    ],
-    "cvename": [
-      "CVE-2016-9298"
-    ],
-    "freebsd_pr": [
-      "ports/214517",
-      "ports/214511",
-      "ports/214520"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-13",
-    "entry": "2016-12-04"
-  }
+	"vid": "19d35b0f-ba73-11e6-b1cf-14dae9d210b8",
+	"topic": "ImageMagick -- heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ImageMagick",
+				"ImageMagick-nox11"
+			],
+			"range": [
+				{
+					"lt": "6.9.6.4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ImageMagick7",
+				"ImageMagick7-nox11"
+			],
+			"range": [
+				{
+					"lt": "7.0.3.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Bastien Roucaries reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2016/q4/413\">\n\t  <p>Imagemagick before 3cbfb163cff9e5b8cdeace8312e9bfee810ed02b\n\t    suffer from a heap overflow in WaveletDenoiseImage(). This problem is\n\t    easily trigerrable from a Perl script.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2016/q4/413",
+			"https://github.com/ImageMagick/ImageMagick/issues/296"
+		],
+		"cvename": [
+			"CVE-2016-9298"
+		],
+		"freebsd_pr": [
+			"ports/214517",
+			"ports/214511",
+			"ports/214520"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-13",
+		"entry": "2016-12-04"
+	}
 }

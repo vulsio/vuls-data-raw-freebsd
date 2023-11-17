@@ -1,29 +1,29 @@
 {
-  "vid": "e426eda9-dae1-11e4-8107-94de806b0af9",
-  "topic": "Dulwich -- Remote code execution",
-  "affects": [
-    {
-      "name": [
-        "py27-dulwich"
-      ],
-      "range": [
-        {
-          "lt": "0.9.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0838\">\n\t  <p>Buffer overflow in the C implementation of the apply_delta\n\t    function in _pack.c in Dulwich before 0.9.9 allows remote\n\t    attackers to execute arbitrary code via a crafted pack file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2015-0838"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-01-07",
-    "entry": "2015-04-17"
-  }
+	"vid": "e426eda9-dae1-11e4-8107-94de806b0af9",
+	"topic": "Dulwich -- Remote code execution",
+	"affects": [
+		{
+			"name": [
+				"py27-dulwich"
+			],
+			"range": [
+				{
+					"lt": "0.9.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0838\">\n\t  <p>Buffer overflow in the C implementation of the apply_delta\n\t    function in _pack.c in Dulwich before 0.9.9 allows remote\n\t    attackers to execute arbitrary code via a crafted pack file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2015-0838"
+		]
+	},
+	"dates": {
+		"discovery": "2015-01-07",
+		"entry": "2015-04-17"
+	}
 }

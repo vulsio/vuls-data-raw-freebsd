@@ -1,40 +1,40 @@
 {
-  "vid": "7afc5e56-156d-11e8-95f2-005056925db4",
-  "topic": "irssi -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "irssi"
-      ],
-      "range": [
-        {
-          "lt": "1.1.1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2018_02.txt\">\n\t  <p>Use after free when server is disconnected during netsplits.\n\t    Found by Joseph Bisch.</p>\n\t  <p>Use after free when SASL messages are received in unexpected order.\n\t    Found by Joseph Bisch.</p>\n\t  <p>Null pointer dereference when an “empty” nick has been observed by\n\t    Irssi. Found by Joseph Bisch.</p>\n\t  <p>When the number of windows exceed the available space, Irssi would\n\t    crash due to Null pointer dereference. Found by Joseph Bisch.</p>\n\t  <p>Certain nick names could result in out of bounds access when printing\n\t    theme strings. Found by Oss-Fuzz.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://irssi.org/security/irssi_sa_2018_02.txt"
-    ],
-    "cvename": [
-      "CVE-2018-7054",
-      "CVE-2018-7053",
-      "CVE-2018-7052",
-      "CVE-2018-7051",
-      "CVE-2018-7050"
-    ],
-    "freebsd_pr": [
-      "ports/226001"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-02-15",
-    "entry": "2018-02-19",
-    "modified": "2018-02-22"
-  }
+	"vid": "7afc5e56-156d-11e8-95f2-005056925db4",
+	"topic": "irssi -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"irssi"
+			],
+			"range": [
+				{
+					"lt": "1.1.1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2018_02.txt\">\n\t  <p>Use after free when server is disconnected during netsplits.\n\t    Found by Joseph Bisch.</p>\n\t  <p>Use after free when SASL messages are received in unexpected order.\n\t    Found by Joseph Bisch.</p>\n\t  <p>Null pointer dereference when an “empty” nick has been observed by\n\t    Irssi. Found by Joseph Bisch.</p>\n\t  <p>When the number of windows exceed the available space, Irssi would\n\t    crash due to Null pointer dereference. Found by Joseph Bisch.</p>\n\t  <p>Certain nick names could result in out of bounds access when printing\n\t    theme strings. Found by Oss-Fuzz.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://irssi.org/security/irssi_sa_2018_02.txt"
+		],
+		"cvename": [
+			"CVE-2018-7054",
+			"CVE-2018-7053",
+			"CVE-2018-7052",
+			"CVE-2018-7051",
+			"CVE-2018-7050"
+		],
+		"freebsd_pr": [
+			"ports/226001"
+		]
+	},
+	"dates": {
+		"discovery": "2018-02-15",
+		"entry": "2018-02-19",
+		"modified": "2018-02-22"
+	}
 }

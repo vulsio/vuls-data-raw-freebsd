@@ -1,49 +1,49 @@
 {
-  "vid": "927743d4-5ca9-11d9-a9e7-0001020eed82",
-  "topic": "up-imapproxy -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "up-imapproxy"
-      ],
-      "range": [
-        {
-          "lt": "1.2.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "pop3proxy"
-      ],
-      "range": [
-        {
-          "le": "1.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Timo Sirainen reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109995749510773\">\n\t  <p>There are various bugs in up-imapproxy which can crash\n\t    it. Since up-imapproxy runs in a single process with each\n\t    connection handled in a separate thread, any crash kills\n\t    all the connections and stops listening for new ones.</p>\n\t  <p>In 64bit systems it might be possible to make it leak\n\t    data (mails, passwords, ..) from other connections to\n\t    attacker's connection. However I don't think up-imapproxy\n\t    actually works in any 64bit system so this is just a\n\t    theoretical problem.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-1035"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109995749510773",
-        "msgid": "1099851138.3716.3.camel@hurina"
-      }
-    ],
-    "bid": [
-      "11630"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-11-17",
-    "entry": "2005-01-02",
-    "modified": "2008-02-27"
-  }
+	"vid": "927743d4-5ca9-11d9-a9e7-0001020eed82",
+	"topic": "up-imapproxy -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"up-imapproxy"
+			],
+			"range": [
+				{
+					"lt": "1.2.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"pop3proxy"
+			],
+			"range": [
+				{
+					"le": "1.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Timo Sirainen reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109995749510773\">\n\t  <p>There are various bugs in up-imapproxy which can crash\n\t    it. Since up-imapproxy runs in a single process with each\n\t    connection handled in a separate thread, any crash kills\n\t    all the connections and stops listening for new ones.</p>\n\t  <p>In 64bit systems it might be possible to make it leak\n\t    data (mails, passwords, ..) from other connections to\n\t    attacker's connection. However I don't think up-imapproxy\n\t    actually works in any 64bit system so this is just a\n\t    theoretical problem.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-1035"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109995749510773",
+				"msgid": "1099851138.3716.3.camel@hurina"
+			}
+		],
+		"bid": [
+			"11630"
+		]
+	},
+	"dates": {
+		"discovery": "2004-11-17",
+		"entry": "2005-01-02",
+		"modified": "2008-02-27"
+	}
 }

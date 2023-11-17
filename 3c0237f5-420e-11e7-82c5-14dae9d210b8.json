@@ -1,40 +1,40 @@
 {
-  "vid": "3c0237f5-420e-11e7-82c5-14dae9d210b8",
-  "topic": "FreeBSD -- Multiple vulnerabilities of ntp",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.0_9",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.3_18",
-          "ge": "10.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A vulnerability was discovered in the NTP server's parsing\n\tof configuration directives. [CVE-2017-6464]</p>\n\t<p>A vulnerability was found in NTP, in the parsing of\n\tpackets from the DPTS Clock. [CVE-2017-6462]</p>\n\t<p>A vulnerability was discovered in the NTP server's parsing\n\tof configuration directives. [CVE-2017-6463]</p>\n\t<p>A vulnerability was found in NTP, affecting the origin\n\ttimestamp check function. [CVE-2016-9042]</p>\n\t<h1>Impact:</h1>\n\t<p>A remote, authenticated attacker could cause ntpd to\n\tcrash by sending a crafted message. [CVE-2017-6463,\n\tCVE-2017-6464]</p>\n\t<p>A malicious device could send crafted messages, causing\n\tntpd to crash. [CVE-2017-6462]</p>\n\t<p>An attacker able to spoof messages from all of the\n\tconfigured peers could send crafted packets to ntpd, causing\n\tlater replies from those peers to be discarded, resulting\n\tin denial of service. [CVE-2016-9042]</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-9042",
-      "CVE-2017-6462",
-      "CVE-2017-6463",
-      "CVE-2017-6464"
-    ],
-    "freebsd_sa": [
-      "SA-17:03.ntp"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-12",
-    "entry": "2017-05-26"
-  }
+	"vid": "3c0237f5-420e-11e7-82c5-14dae9d210b8",
+	"topic": "FreeBSD -- Multiple vulnerabilities of ntp",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.0_9",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.3_18",
+					"ge": "10.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A vulnerability was discovered in the NTP server's parsing\n\tof configuration directives. [CVE-2017-6464]</p>\n\t<p>A vulnerability was found in NTP, in the parsing of\n\tpackets from the DPTS Clock. [CVE-2017-6462]</p>\n\t<p>A vulnerability was discovered in the NTP server's parsing\n\tof configuration directives. [CVE-2017-6463]</p>\n\t<p>A vulnerability was found in NTP, affecting the origin\n\ttimestamp check function. [CVE-2016-9042]</p>\n\t<h1>Impact:</h1>\n\t<p>A remote, authenticated attacker could cause ntpd to\n\tcrash by sending a crafted message. [CVE-2017-6463,\n\tCVE-2017-6464]</p>\n\t<p>A malicious device could send crafted messages, causing\n\tntpd to crash. [CVE-2017-6462]</p>\n\t<p>An attacker able to spoof messages from all of the\n\tconfigured peers could send crafted packets to ntpd, causing\n\tlater replies from those peers to be discarded, resulting\n\tin denial of service. [CVE-2016-9042]</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-9042",
+			"CVE-2017-6462",
+			"CVE-2017-6463",
+			"CVE-2017-6464"
+		],
+		"freebsd_sa": [
+			"SA-17:03.ntp"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-12",
+		"entry": "2017-05-26"
+	}
 }

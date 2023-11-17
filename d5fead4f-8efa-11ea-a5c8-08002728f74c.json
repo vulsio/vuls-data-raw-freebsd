@@ -1,40 +1,40 @@
 {
-  "vid": "d5fead4f-8efa-11ea-a5c8-08002728f74c",
-  "topic": "Wagtail -- potential timing attack vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py35-wagtail",
-        "py36-wagtail",
-        "py37-wagtail",
-        "py38-wagtail"
-      ],
-      "range": [
-        {
-          "lt": "2.7.3"
-        },
-        {
-          "lt": "2.8.2",
-          "ge": "2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Wagtail release notes:</p>\n\t<blockquote cite=\"https://docs.wagtail.io/en/latest/releases/2.8.2.html\">\n\t  <p>CVE-2020-11037: Potential timing attack on password-protected private pages</p>\n\t  <p>This release addresses a potential timing attack on pages or documents\n\t    that have been protected with a shared password through Wagtail's\n\t    \"Privacy\" controls. This password check is performed through a\n\t    character-by-character string comparison, and so an attacker who is\n\t    able to measure the time taken by this check to a high degree of\n\t    accuracy could potentially use timing differences to gain knowledge of\n\t    the password. (This is understood to be feasible on a local network, but\n\t    not on the public internet.)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.wagtail.io/en/latest/releases/2.8.2.html",
-      "https://github.com/wagtail/wagtail/security/advisories/GHSA-jjjr-3jcw-f8v6"
-    ],
-    "cvename": [
-      "CVE-2020-11037"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-05-04",
-    "entry": "2020-05-05"
-  }
+	"vid": "d5fead4f-8efa-11ea-a5c8-08002728f74c",
+	"topic": "Wagtail -- potential timing attack vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py35-wagtail",
+				"py36-wagtail",
+				"py37-wagtail",
+				"py38-wagtail"
+			],
+			"range": [
+				{
+					"lt": "2.7.3"
+				},
+				{
+					"lt": "2.8.2",
+					"ge": "2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Wagtail release notes:</p>\n\t<blockquote cite=\"https://docs.wagtail.io/en/latest/releases/2.8.2.html\">\n\t  <p>CVE-2020-11037: Potential timing attack on password-protected private pages</p>\n\t  <p>This release addresses a potential timing attack on pages or documents\n\t    that have been protected with a shared password through Wagtail's\n\t    \"Privacy\" controls. This password check is performed through a\n\t    character-by-character string comparison, and so an attacker who is\n\t    able to measure the time taken by this check to a high degree of\n\t    accuracy could potentially use timing differences to gain knowledge of\n\t    the password. (This is understood to be feasible on a local network, but\n\t    not on the public internet.)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.wagtail.io/en/latest/releases/2.8.2.html",
+			"https://github.com/wagtail/wagtail/security/advisories/GHSA-jjjr-3jcw-f8v6"
+		],
+		"cvename": [
+			"CVE-2020-11037"
+		]
+	},
+	"dates": {
+		"discovery": "2020-05-04",
+		"entry": "2020-05-05"
+	}
 }

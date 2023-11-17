@@ -1,38 +1,38 @@
 {
-  "vid": "27d39055-b61b-11ec-9ebc-1c697aa5a594",
-  "topic": "FreeBSD -- Potential jail escape vulnerabilities in netmap",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "13.0_11",
-          "ge": "13.0"
-        },
-        {
-          "lt": "12.3_5",
-          "ge": "12.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The total size of the user-provided nmreq to nmreq_copyin() was\n\tfirst computed and then trusted during the copyin.  This\n\ttime-of-check to time-of-use bug could lead to kernel memory\n\tcorruption.  [CVE-2022-23084]</p>\n\t<p>A user-provided integer option was passed to nmreq_copyin() without\n\tchecking if it would overflow.  This insufficient bounds checking\n\tcould lead to kernel memory corruption.  [CVE-2022-23085]</p>\n\t<h1>Impact:</h1>\n\t<p>On systems configured to include netmap in their devfs_ruleset, a\n\tprivileged process running in a jail can affect the host\n\tenvironment.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2022-23084",
-      "CVE-2022-23085"
-    ],
-    "freebsd_sa": [
-      "SA-22:04.netmap"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-06",
-    "entry": "2022-04-07"
-  }
+	"vid": "27d39055-b61b-11ec-9ebc-1c697aa5a594",
+	"topic": "FreeBSD -- Potential jail escape vulnerabilities in netmap",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "13.0_11",
+					"ge": "13.0"
+				},
+				{
+					"lt": "12.3_5",
+					"ge": "12.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The total size of the user-provided nmreq to nmreq_copyin() was\n\tfirst computed and then trusted during the copyin.  This\n\ttime-of-check to time-of-use bug could lead to kernel memory\n\tcorruption.  [CVE-2022-23084]</p>\n\t<p>A user-provided integer option was passed to nmreq_copyin() without\n\tchecking if it would overflow.  This insufficient bounds checking\n\tcould lead to kernel memory corruption.  [CVE-2022-23085]</p>\n\t<h1>Impact:</h1>\n\t<p>On systems configured to include netmap in their devfs_ruleset, a\n\tprivileged process running in a jail can affect the host\n\tenvironment.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2022-23084",
+			"CVE-2022-23085"
+		],
+		"freebsd_sa": [
+			"SA-22:04.netmap"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-06",
+		"entry": "2022-04-07"
+	}
 }

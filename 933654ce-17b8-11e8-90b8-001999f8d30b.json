@@ -1,35 +1,35 @@
 {
-  "vid": "933654ce-17b8-11e8-90b8-001999f8d30b",
-  "topic": "asterisk -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.19.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>AST-2018-004 - When processing a SUBSCRIBE request the\n\t  res_pjsip_pubsub module stores the accepted formats present\n\t  in the Accept headers of the request. This code did not\n\t  limit the number of headers it processed despite having\n\t  a fixed limit of 32. If more than 32 Accept headers were\n\t  present the code would write outside of its memory and\n\t  cause a crash.</p>\n\t  <p>AST-2018-005 - A crash occurs when a number of\n\t  authenticated INVITE messages are sent over TCP or TLS\n\t  and then the connection is suddenly closed. This issue\n\t  leads to a segmentation fault.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://downloads.asterisk.org/pub/security/AST-2018-004.html",
-      "https://downloads.asterisk.org/pub/security/AST-2018-005.html"
-    ],
-    "cvename": [
-      "CVE-2018-7284",
-      "CVE-2018-7286"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-02-21",
-    "entry": "2018-02-22",
-    "modified": "2018-06-12"
-  }
+	"vid": "933654ce-17b8-11e8-90b8-001999f8d30b",
+	"topic": "asterisk -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.19.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>AST-2018-004 - When processing a SUBSCRIBE request the\n\t  res_pjsip_pubsub module stores the accepted formats present\n\t  in the Accept headers of the request. This code did not\n\t  limit the number of headers it processed despite having\n\t  a fixed limit of 32. If more than 32 Accept headers were\n\t  present the code would write outside of its memory and\n\t  cause a crash.</p>\n\t  <p>AST-2018-005 - A crash occurs when a number of\n\t  authenticated INVITE messages are sent over TCP or TLS\n\t  and then the connection is suddenly closed. This issue\n\t  leads to a segmentation fault.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://downloads.asterisk.org/pub/security/AST-2018-004.html",
+			"https://downloads.asterisk.org/pub/security/AST-2018-005.html"
+		],
+		"cvename": [
+			"CVE-2018-7284",
+			"CVE-2018-7286"
+		]
+	},
+	"dates": {
+		"discovery": "2018-02-21",
+		"entry": "2018-02-22",
+		"modified": "2018-06-12"
+	}
 }

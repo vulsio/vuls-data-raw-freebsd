@@ -1,68 +1,68 @@
 {
-  "vid": "96d84238-b500-490b-b6aa-2b77090a0410",
-  "topic": "xorg-server -- Overlay Window Use-After-Free",
-  "affects": [
-    {
-      "name": [
-        "xorg-server",
-        "xephyr",
-        "xorg-vfbserver"
-      ],
-      "range": [
-        {
-          "lt": "21.1.8,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xorg-nestserver"
-      ],
-      "range": [
-        {
-          "lt": "21.1.8,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xwayland"
-      ],
-      "range": [
-        {
-          "lt": "23.1.1,1",
-          "ge": "23.0.0,1"
-        },
-        {
-          "lt": "22.1.9,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xwayland-devel"
-      ],
-      "range": [
-        {
-          "lt": "21.0.99.1.439"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The X.Org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2023-March/003374.html\">\n\t  <ul>\n\t    <li>ZDI-CAN-19866/CVE-2023-1393: X.Org Server Overlay Window Use-After-Free\n\t    Local Privilege Escalation Vulnerability\n\n\t    <p>If a client explicitly destroys the compositor overlay window (aka COW),\n\t    the Xserver would leave a dangling pointer to that window in the CompScreen\n\t    structure, which will trigger a use-after-free later.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.x.org/archives/xorg-announce/2023-March/003374.html"
-    ],
-    "cvename": [
-      "CVE-2023-1393"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-03-29",
-    "entry": "2023-03-29"
-  }
+	"vid": "96d84238-b500-490b-b6aa-2b77090a0410",
+	"topic": "xorg-server -- Overlay Window Use-After-Free",
+	"affects": [
+		{
+			"name": [
+				"xorg-server",
+				"xephyr",
+				"xorg-vfbserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.8,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-nestserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.8,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland"
+			],
+			"range": [
+				{
+					"lt": "23.1.1,1",
+					"ge": "23.0.0,1"
+				},
+				{
+					"lt": "22.1.9,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland-devel"
+			],
+			"range": [
+				{
+					"lt": "21.0.99.1.439"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X.Org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2023-March/003374.html\">\n\t  <ul>\n\t    <li>ZDI-CAN-19866/CVE-2023-1393: X.Org Server Overlay Window Use-After-Free\n\t    Local Privilege Escalation Vulnerability\n\n\t    <p>If a client explicitly destroys the compositor overlay window (aka COW),\n\t    the Xserver would leave a dangling pointer to that window in the CompScreen\n\t    structure, which will trigger a use-after-free later.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.x.org/archives/xorg-announce/2023-March/003374.html"
+		],
+		"cvename": [
+			"CVE-2023-1393"
+		]
+	},
+	"dates": {
+		"discovery": "2023-03-29",
+		"entry": "2023-03-29"
+	}
 }

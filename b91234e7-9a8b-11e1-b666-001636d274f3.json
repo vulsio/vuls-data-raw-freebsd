@@ -1,43 +1,43 @@
 {
-  "vid": "b91234e7-9a8b-11e1-b666-001636d274f3",
-  "topic": "NVIDIA UNIX driver -- access to arbitrary system memory",
-  "affects": [
-    {
-      "name": [
-        "nvidia-driver"
-      ],
-      "range": [
-        {
-          "lt": "295.71",
-          "gt": "173.14.35_2"
-        },
-        {
-          "lt": "173.14.35",
-          "gt": "96.43.20_3"
-        },
-        {
-          "lt": "96.43.20_2",
-          "gt": "71.86.15_3"
-        },
-        {
-          "lt": "71.86.15_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NVIDIA Unix security team reports:</p>\n\t<blockquote cite=\"http://nvidia.custhelp.com/app/answers/detail/a_id/3109\">\n\t  <p>Security vulnerability CVE-2012-0946 in the NVIDIA UNIX driver\n\t    was disclosed to NVIDIA on March 20th, 2012.  The vulnerability\n\t    makes it possible for an attacker who has read and write access\n\t    to the GPU device nodes to reconfigure GPUs to gain access to\n\t    arbitrary system memory.  NVIDIA is not aware of any reports of\n\t    this vulnerability, outside of the disclosure which was made\n\t    privately to NVIDIA.</p>\n\t  <p>NVIDIA has identified the root cause of the vulnerability and\n\t    has released updated drivers which close it.  [NVIDIA encourages]\n\t    all users with Geforce 8 or newer, G80 Quadro or newer, and all\n\t    Tesla GPUs to update their drivers to 295.40 or later.</p>\n\t</blockquote>\n\t<p>Later, it was additionally discovered that similar exploit could\n\t  be achieved through remapping of VGA window:</p>\n\t<blockquote cite=\"http://nvidia.custhelp.com/app/answers/detail/a_id/3140\">\n\t  <p>NVIDIA received notification of a security exploit that uses\n\t    NVIDIA UNIX device files to map and program registers to redirect\n\t    the VGA window.  Through the VGA window, the exploit can access\n\t    any region of physical system memory.  This arbitrary memory\n\t    access can be further exploited, for example, to escalate user\n\t    privileges.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-0946",
-      "CVE-2012-4225"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-03-20",
-    "entry": "2012-05-10",
-    "modified": "2012-09-12"
-  }
+	"vid": "b91234e7-9a8b-11e1-b666-001636d274f3",
+	"topic": "NVIDIA UNIX driver -- access to arbitrary system memory",
+	"affects": [
+		{
+			"name": [
+				"nvidia-driver"
+			],
+			"range": [
+				{
+					"lt": "295.71",
+					"gt": "173.14.35_2"
+				},
+				{
+					"lt": "173.14.35",
+					"gt": "96.43.20_3"
+				},
+				{
+					"lt": "96.43.20_2",
+					"gt": "71.86.15_3"
+				},
+				{
+					"lt": "71.86.15_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NVIDIA Unix security team reports:</p>\n\t<blockquote cite=\"http://nvidia.custhelp.com/app/answers/detail/a_id/3109\">\n\t  <p>Security vulnerability CVE-2012-0946 in the NVIDIA UNIX driver\n\t    was disclosed to NVIDIA on March 20th, 2012.  The vulnerability\n\t    makes it possible for an attacker who has read and write access\n\t    to the GPU device nodes to reconfigure GPUs to gain access to\n\t    arbitrary system memory.  NVIDIA is not aware of any reports of\n\t    this vulnerability, outside of the disclosure which was made\n\t    privately to NVIDIA.</p>\n\t  <p>NVIDIA has identified the root cause of the vulnerability and\n\t    has released updated drivers which close it.  [NVIDIA encourages]\n\t    all users with Geforce 8 or newer, G80 Quadro or newer, and all\n\t    Tesla GPUs to update their drivers to 295.40 or later.</p>\n\t</blockquote>\n\t<p>Later, it was additionally discovered that similar exploit could\n\t  be achieved through remapping of VGA window:</p>\n\t<blockquote cite=\"http://nvidia.custhelp.com/app/answers/detail/a_id/3140\">\n\t  <p>NVIDIA received notification of a security exploit that uses\n\t    NVIDIA UNIX device files to map and program registers to redirect\n\t    the VGA window.  Through the VGA window, the exploit can access\n\t    any region of physical system memory.  This arbitrary memory\n\t    access can be further exploited, for example, to escalate user\n\t    privileges.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-0946",
+			"CVE-2012-4225"
+		]
+	},
+	"dates": {
+		"discovery": "2012-03-20",
+		"entry": "2012-05-10",
+		"modified": "2012-09-12"
+	}
 }

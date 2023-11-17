@@ -1,53 +1,53 @@
 {
-  "vid": "65d16342-3ec8-11e0-9df7-001c42d23634",
-  "topic": "asterisk -- Exploitable Stack and Heap Array Overflows",
-  "affects": [
-    {
-      "name": [
-        "asterisk14"
-      ],
-      "range": [
-        {
-          "lt": "1.4.39.2",
-          "gt": "1.4.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk16"
-      ],
-      "range": [
-        {
-          "lt": "1.6.2.16.2",
-          "gt": "1.6.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.2.4",
-          "gt": "1.8.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk Development Team reports:</p>\n\t<blockquote cite=\"http://lists.digium.com/pipermail/asterisk-announce/2011-February/000302.html\">\n\t  <p>The releases of Asterisk 1.4.39.2, 1.6.1.22, 1.6.2.16.2, and\n\t    1.8.2.4 resolve an issue that when decoding UDPTL packets, multiple\n\t    heap based arrays can be made to overflow by specially\n\t    crafted packets. Systems configured for T.38 pass through or\n\t    termination are vulnerable. The issue and resolution are described\n\t    in the AST-2011-002 security advisory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2011-002.html",
-      "http://secunia.com/advisories/43429/"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-02-21",
-    "entry": "2011-02-22"
-  }
+	"vid": "65d16342-3ec8-11e0-9df7-001c42d23634",
+	"topic": "asterisk -- Exploitable Stack and Heap Array Overflows",
+	"affects": [
+		{
+			"name": [
+				"asterisk14"
+			],
+			"range": [
+				{
+					"lt": "1.4.39.2",
+					"gt": "1.4.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk16"
+			],
+			"range": [
+				{
+					"lt": "1.6.2.16.2",
+					"gt": "1.6.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk18"
+			],
+			"range": [
+				{
+					"lt": "1.8.2.4",
+					"gt": "1.8.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk Development Team reports:</p>\n\t<blockquote cite=\"http://lists.digium.com/pipermail/asterisk-announce/2011-February/000302.html\">\n\t  <p>The releases of Asterisk 1.4.39.2, 1.6.1.22, 1.6.2.16.2, and\n\t    1.8.2.4 resolve an issue that when decoding UDPTL packets, multiple\n\t    heap based arrays can be made to overflow by specially\n\t    crafted packets. Systems configured for T.38 pass through or\n\t    termination are vulnerable. The issue and resolution are described\n\t    in the AST-2011-002 security advisory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2011-002.html",
+			"http://secunia.com/advisories/43429/"
+		]
+	},
+	"dates": {
+		"discovery": "2011-02-21",
+		"entry": "2011-02-22"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "vid": "e69af246-0ae2-11e5-90e4-d050996490d0",
-  "topic": "pcre -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "pcre"
-      ],
-      "range": [
-        {
-          "lt": "8.37_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Venustech ADLAB reports:</p>\n\t<blockquote cite=\"https://bugs.exim.org/show_bug.cgi?id=1636\">\n\t  <p>PCRE library is prone to a vulnerability which leads\n\t    to Heap Overflow. During the compilation of a malformed\n\t    regular expression, more data is written on the malloced\n\t    block than the expected size output by compile_regex.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://bugs.exim.org/show_bug.cgi?id=1638\">\n\t  <p>PCRE library is prone to a vulnerability which leads to\n\t    Stack Overflow. Without enough bound checking inside\n\t    match(), the stack memory could be overflowed via a\n\t    crafted regular expression.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugs.exim.org/show_bug.cgi?id=1636",
-      "https://bugs.exim.org/show_bug.cgi?id=1638"
-    ],
-    "cvename": [
-      "CVE-2015-3210",
-      "CVE-2015-3217"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-05-29",
-    "entry": "2015-06-04",
-    "modified": "2015-06-07"
-  }
+	"vid": "e69af246-0ae2-11e5-90e4-d050996490d0",
+	"topic": "pcre -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"pcre"
+			],
+			"range": [
+				{
+					"lt": "8.37_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Venustech ADLAB reports:</p>\n\t<blockquote cite=\"https://bugs.exim.org/show_bug.cgi?id=1636\">\n\t  <p>PCRE library is prone to a vulnerability which leads\n\t    to Heap Overflow. During the compilation of a malformed\n\t    regular expression, more data is written on the malloced\n\t    block than the expected size output by compile_regex.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://bugs.exim.org/show_bug.cgi?id=1638\">\n\t  <p>PCRE library is prone to a vulnerability which leads to\n\t    Stack Overflow. Without enough bound checking inside\n\t    match(), the stack memory could be overflowed via a\n\t    crafted regular expression.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugs.exim.org/show_bug.cgi?id=1636",
+			"https://bugs.exim.org/show_bug.cgi?id=1638"
+		],
+		"cvename": [
+			"CVE-2015-3210",
+			"CVE-2015-3217"
+		]
+	},
+	"dates": {
+		"discovery": "2015-05-29",
+		"entry": "2015-06-04",
+		"modified": "2015-06-07"
+	}
 }

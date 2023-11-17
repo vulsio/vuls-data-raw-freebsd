@@ -1,82 +1,82 @@
 {
-  "vid": "6c1de144-056f-11ee-8e16-6c3be5272acd",
-  "topic": "Grafana -- Broken access control: viewer can send test alerts",
-  "affects": [
-    {
-      "name": [
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "8.5.26",
-          "ge": "8.0.0"
-        },
-        {
-          "lt": "9.2.19",
-          "ge": "9.0.0"
-        },
-        {
-          "lt": "9.3.15",
-          "ge": "9.3.0"
-        },
-        {
-          "lt": "9.4.12",
-          "ge": "9.4.0"
-        },
-        {
-          "lt": "9.5.3",
-          "ge": "9.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana8"
-      ],
-      "range": [
-        {
-          "lt": "8.5.26",
-          "ge": "8.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.2.19"
-        },
-        {
-          "lt": "9.3.15",
-          "ge": "9.3.0"
-        },
-        {
-          "lt": "9.4.12",
-          "ge": "9.4.0"
-        },
-        {
-          "lt": "9.5.3",
-          "ge": "9.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/06/06/grafana-security-release-new-grafana-versions-with-security-fixes-for-cve-2023-2183-and-cve-2023-2801/\">\n\t  <p>Grafana can allow an attacker in the <strong>Viewer</strong> role\n\t  to send alerts by <strong>API Alert - Test</strong>. This option,\n\t  however, is not available in the user panel UI for the Viewer role.\n\t  </p>\n\t  <p>The CVSS score for this vulnerability is 4.1 Medium\n\t  (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:N/A:N).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://grafana.com/security/security-advisories/cve-2023-2183/"
-    ],
-    "cvename": [
-      "CVE-2023-2183"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-06-06",
-    "entry": "2023-06-07"
-  }
+	"vid": "6c1de144-056f-11ee-8e16-6c3be5272acd",
+	"topic": "Grafana -- Broken access control: viewer can send test alerts",
+	"affects": [
+		{
+			"name": [
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "8.5.26",
+					"ge": "8.0.0"
+				},
+				{
+					"lt": "9.2.19",
+					"ge": "9.0.0"
+				},
+				{
+					"lt": "9.3.15",
+					"ge": "9.3.0"
+				},
+				{
+					"lt": "9.4.12",
+					"ge": "9.4.0"
+				},
+				{
+					"lt": "9.5.3",
+					"ge": "9.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana8"
+			],
+			"range": [
+				{
+					"lt": "8.5.26",
+					"ge": "8.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.2.19"
+				},
+				{
+					"lt": "9.3.15",
+					"ge": "9.3.0"
+				},
+				{
+					"lt": "9.4.12",
+					"ge": "9.4.0"
+				},
+				{
+					"lt": "9.5.3",
+					"ge": "9.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/06/06/grafana-security-release-new-grafana-versions-with-security-fixes-for-cve-2023-2183-and-cve-2023-2801/\">\n\t  <p>Grafana can allow an attacker in the <strong>Viewer</strong> role\n\t  to send alerts by <strong>API Alert - Test</strong>. This option,\n\t  however, is not available in the user panel UI for the Viewer role.\n\t  </p>\n\t  <p>The CVSS score for this vulnerability is 4.1 Medium\n\t  (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:N/A:N).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://grafana.com/security/security-advisories/cve-2023-2183/"
+		],
+		"cvename": [
+			"CVE-2023-2183"
+		]
+	},
+	"dates": {
+		"discovery": "2023-06-06",
+		"entry": "2023-06-07"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "40194e1c-6d89-11ea-8082-80ee73419af3",
-  "topic": "rubygem-json -- Unsafe Objection Creation Vulnerability in JSON (Additional fix)",
-  "affects": [
-    {
-      "name": [
-        "rubygem-json"
-      ],
-      "range": [
-        {
-          "lt": "2.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2020/03/19/json-dos-cve-2020-10663/\">\n\t  <p>When parsing certain JSON documents, the json gem (including the\n\t    one bundled with Ruby) can be coerced into creating arbitrary objects\n\t    in the target system.</p>\n\t  <p>This is the same issue as CVE-2013-0269. The previous fix was incomplete,\n\t     which addressed JSON.parse(user_input), but didn’t address some other\n\t     styles of JSON parsing including JSON(user_input) and\n\t     JSON.parse(user_input, nil).</p>\n\t  <p>See CVE-2013-0269 in detail. Note that the issue was exploitable to\n\t    cause a Denial of Service by creating many garbage-uncollectable\n\t    Symbol objects, but this kind of attack is no longer valid because\n\t    Symbol objects are now garbage-collectable. However, creating arbitrary\n\t    bjects may cause severe security consequences depending upon the\n\t    application code.</p>\n\t  <p>Please update the json gem to version 2.3.0 or later. You can use\n\t     gem update json to update it. If you are using bundler, please add\n\t     gem \"json\", \"&gt;= 2.3.0\" to your Gemfile.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2020/03/19/json-dos-cve-2020-10663/"
-    ],
-    "cvename": [
-      "CVE-2020-10663"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-03-19",
-    "entry": "2020-03-26",
-    "modified": "2020-04-02"
-  }
+	"vid": "40194e1c-6d89-11ea-8082-80ee73419af3",
+	"topic": "rubygem-json -- Unsafe Objection Creation Vulnerability in JSON (Additional fix)",
+	"affects": [
+		{
+			"name": [
+				"rubygem-json"
+			],
+			"range": [
+				{
+					"lt": "2.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2020/03/19/json-dos-cve-2020-10663/\">\n\t  <p>When parsing certain JSON documents, the json gem (including the\n\t    one bundled with Ruby) can be coerced into creating arbitrary objects\n\t    in the target system.</p>\n\t  <p>This is the same issue as CVE-2013-0269. The previous fix was incomplete,\n\t     which addressed JSON.parse(user_input), but didn’t address some other\n\t     styles of JSON parsing including JSON(user_input) and\n\t     JSON.parse(user_input, nil).</p>\n\t  <p>See CVE-2013-0269 in detail. Note that the issue was exploitable to\n\t    cause a Denial of Service by creating many garbage-uncollectable\n\t    Symbol objects, but this kind of attack is no longer valid because\n\t    Symbol objects are now garbage-collectable. However, creating arbitrary\n\t    bjects may cause severe security consequences depending upon the\n\t    application code.</p>\n\t  <p>Please update the json gem to version 2.3.0 or later. You can use\n\t     gem update json to update it. If you are using bundler, please add\n\t     gem \"json\", \"&gt;= 2.3.0\" to your Gemfile.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2020/03/19/json-dos-cve-2020-10663/"
+		],
+		"cvename": [
+			"CVE-2020-10663"
+		]
+	},
+	"dates": {
+		"discovery": "2020-03-19",
+		"entry": "2020-03-26",
+		"modified": "2020-04-02"
+	}
 }

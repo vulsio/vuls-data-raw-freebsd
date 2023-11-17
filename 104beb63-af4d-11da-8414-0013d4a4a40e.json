@@ -1,37 +1,37 @@
 {
-  "vid": "104beb63-af4d-11da-8414-0013d4a4a40e",
-  "topic": "mplayer -- heap overflow in the ASF demuxer",
-  "affects": [
-    {
-      "name": [
-        "mplayer",
-        "mplayer-gtk",
-        "mplayer-esound",
-        "mplayer-gtk-esound"
-      ],
-      "range": [
-        {
-          "lt": "0.99.7_11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mplayer team reports:</p>\n\t<blockquote cite=\"http://www.mplayerhq.hu/design7/news.html#vuln13\">\n\t  <p>A potential buffer overflow was found in the ASF demuxer.\n\t    Arbitrary remote code execution is possible (under the user ID\n\t    running the player) when streaming an ASF file from a malicious\n\t    server or local code execution (under the user ID running the\n\t    player) if a malicious ASF file is played locally.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mplayerhq.hu/design7/news.html#vuln13",
-      "http://secunia.com/advisories/18718",
-      "http://bugs.gentoo.org/show_bug.cgi?id=122029"
-    ],
-    "cvename": [
-      "CVE-2006-0579"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-02-15",
-    "entry": "2006-03-09"
-  }
+	"vid": "104beb63-af4d-11da-8414-0013d4a4a40e",
+	"topic": "mplayer -- heap overflow in the ASF demuxer",
+	"affects": [
+		{
+			"name": [
+				"mplayer",
+				"mplayer-gtk",
+				"mplayer-esound",
+				"mplayer-gtk-esound"
+			],
+			"range": [
+				{
+					"lt": "0.99.7_11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mplayer team reports:</p>\n\t<blockquote cite=\"http://www.mplayerhq.hu/design7/news.html#vuln13\">\n\t  <p>A potential buffer overflow was found in the ASF demuxer.\n\t    Arbitrary remote code execution is possible (under the user ID\n\t    running the player) when streaming an ASF file from a malicious\n\t    server or local code execution (under the user ID running the\n\t    player) if a malicious ASF file is played locally.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mplayerhq.hu/design7/news.html#vuln13",
+			"http://secunia.com/advisories/18718",
+			"http://bugs.gentoo.org/show_bug.cgi?id=122029"
+		],
+		"cvename": [
+			"CVE-2006-0579"
+		]
+	},
+	"dates": {
+		"discovery": "2006-02-15",
+		"entry": "2006-03-09"
+	}
 }

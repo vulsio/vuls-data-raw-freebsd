@@ -1,35 +1,35 @@
 {
-  "vid": "b495af21-9e10-11ea-9e83-0cc47ac16c9d",
-  "topic": "qmail -- 64 bit integer overflows with possible remote code execution on large SMTP requests",
-  "affects": [
-    {
-      "name": [
-        "netqmail-tls"
-      ],
-      "range": [
-        {
-          "le": "1.06.20160918_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Georgi Guninski writes:</p>\n\t<blockquote cite=\"http://www.guninski.com/where_do_you_want_billg_to_go_today_4.html\">\n\t  <p>There are several issues with qmail on 64 bit platforms - classical integer overflow, pointer with signed index and signedness problem (not counting the memory consumtion dos, which just helps).</p>\n\t  <p>Update: the problem with the signed index is exploitable on Freebsd 5.4 amd64 wih a lot of virtual memory.</p>\n\t</blockquote>\n\t<p>The national vulnerability database summarizes:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2005-1513\">\n\t  <p>Integer overflow in the stralloc_readyplus function in qmail, when running on 64 bit platforms with a large amount of virtual memory, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a large SMTP request.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.guninski.com/where_do_you_want_billg_to_go_today_4.html",
-      "https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt"
-    ],
-    "cvename": [
-      "CVE-2005-1513",
-      "CVE-2005-1514",
-      "CVE-2005-1515"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-06",
-    "entry": "2005-05-11"
-  }
+	"vid": "b495af21-9e10-11ea-9e83-0cc47ac16c9d",
+	"topic": "qmail -- 64 bit integer overflows with possible remote code execution on large SMTP requests",
+	"affects": [
+		{
+			"name": [
+				"netqmail-tls"
+			],
+			"range": [
+				{
+					"le": "1.06.20160918_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Georgi Guninski writes:</p>\n\t<blockquote cite=\"http://www.guninski.com/where_do_you_want_billg_to_go_today_4.html\">\n\t  <p>There are several issues with qmail on 64 bit platforms - classical integer overflow, pointer with signed index and signedness problem (not counting the memory consumtion dos, which just helps).</p>\n\t  <p>Update: the problem with the signed index is exploitable on Freebsd 5.4 amd64 wih a lot of virtual memory.</p>\n\t</blockquote>\n\t<p>The national vulnerability database summarizes:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2005-1513\">\n\t  <p>Integer overflow in the stralloc_readyplus function in qmail, when running on 64 bit platforms with a large amount of virtual memory, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a large SMTP request.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.guninski.com/where_do_you_want_billg_to_go_today_4.html",
+			"https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt"
+		],
+		"cvename": [
+			"CVE-2005-1513",
+			"CVE-2005-1514",
+			"CVE-2005-1515"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-06",
+		"entry": "2005-05-11"
+	}
 }

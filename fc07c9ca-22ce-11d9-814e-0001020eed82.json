@@ -1,34 +1,34 @@
 {
-  "vid": "fc07c9ca-22ce-11d9-814e-0001020eed82",
-  "topic": "phpmyadmin -- remote command execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin",
-        "phpmyadmin"
-      ],
-      "range": [
-        {
-          "lt": "2.6.0.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>From the phpMyAdmin 2.6.0p2 release notes:</p>\n\t<blockquote cite=\"http://sourceforge.net/project/shownotes.php?release_id=274709\">\n\t  <p>If PHP is not running in safe mode, a problem in the\n\t    MIME-based transformation system (with an \"external\"\n\t    transformation) allows to execute any command with the\n\t    privileges of the web server's user.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://sourceforge.net/project/shownotes.php?release_id=274709",
-      "http://sourceforge.net/tracker/index.php?func=detail&aid=1044864&group_id=23067&atid=377408"
-    ],
-    "bid": [
-      "11391"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-11",
-    "entry": "2004-10-20"
-  }
+	"vid": "fc07c9ca-22ce-11d9-814e-0001020eed82",
+	"topic": "phpmyadmin -- remote command execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin",
+				"phpmyadmin"
+			],
+			"range": [
+				{
+					"lt": "2.6.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>From the phpMyAdmin 2.6.0p2 release notes:</p>\n\t<blockquote cite=\"http://sourceforge.net/project/shownotes.php?release_id=274709\">\n\t  <p>If PHP is not running in safe mode, a problem in the\n\t    MIME-based transformation system (with an \"external\"\n\t    transformation) allows to execute any command with the\n\t    privileges of the web server's user.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://sourceforge.net/project/shownotes.php?release_id=274709",
+			"http://sourceforge.net/tracker/index.php?func=detail&aid=1044864&group_id=23067&atid=377408"
+		],
+		"bid": [
+			"11391"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-11",
+		"entry": "2004-10-20"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "94268da0-8118-11e4-a180-001999f8d30b",
-  "topic": "asterisk -- Remote Crash Vulnerability in WebSocket Server",
-  "affects": [
-    {
-      "name": [
-        "asterisk11"
-      ],
-      "range": [
-        {
-          "lt": "11.14.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When handling a WebSocket frame the res_http_websocket\n\t  module dynamically changes the size of the memory used\n\t  to allow the provided payload to fit. If a payload length\n\t  of zero was received the code would incorrectly attempt\n\t  to resize to zero. This operation would succeed and end\n\t  up freeing the memory but be treated as a failure. When\n\t  the session was subsequently torn down this memory would\n\t  get freed yet again causing a crash.</p>\n\t  <p>Users of the WebSocket functionality also did not take\n\t  into account that provided text frames are not guaranteed\n\t  to be NULL terminated. This has been fixed in chan_sip\n\t  and chan_pjsip in the applicable versions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2014-019.html"
-    ],
-    "cvename": [
-      "CVE-2014-9374"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-10-30",
-    "entry": "2014-12-11",
-    "modified": "2015-01-29"
-  }
+	"vid": "94268da0-8118-11e4-a180-001999f8d30b",
+	"topic": "asterisk -- Remote Crash Vulnerability in WebSocket Server",
+	"affects": [
+		{
+			"name": [
+				"asterisk11"
+			],
+			"range": [
+				{
+					"lt": "11.14.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When handling a WebSocket frame the res_http_websocket\n\t  module dynamically changes the size of the memory used\n\t  to allow the provided payload to fit. If a payload length\n\t  of zero was received the code would incorrectly attempt\n\t  to resize to zero. This operation would succeed and end\n\t  up freeing the memory but be treated as a failure. When\n\t  the session was subsequently torn down this memory would\n\t  get freed yet again causing a crash.</p>\n\t  <p>Users of the WebSocket functionality also did not take\n\t  into account that provided text frames are not guaranteed\n\t  to be NULL terminated. This has been fixed in chan_sip\n\t  and chan_pjsip in the applicable versions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2014-019.html"
+		],
+		"cvename": [
+			"CVE-2014-9374"
+		]
+	},
+	"dates": {
+		"discovery": "2014-10-30",
+		"entry": "2014-12-11",
+		"modified": "2015-01-29"
+	}
 }

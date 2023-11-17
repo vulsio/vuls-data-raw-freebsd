@@ -1,34 +1,34 @@
 {
-  "vid": "4910d161-58a4-11e5-9ad8-14dae9d210b8",
-  "topic": "openldap -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openldap-server"
-      ],
-      "range": [
-        {
-          "lt": "2.4.42_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Denis Andzakovic reports:</p>\n\t<blockquote cite=\"http://www.openldap.org/its/index.cgi/Software%20Bugs?id=8240\">\n\t  <p>By sending a crafted packet, an attacker may cause the\n\t    OpenLDAP server to reach an assert(9 9 statement, crashing the daemon.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openldap.org/its/index.cgi/Software%20Bugs?id=8240",
-      "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=commit;h=6fe51a9ab04fd28bbc171da3cf12f1c1040d6629"
-    ],
-    "cvename": [
-      "CVE-2015-6908"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-09-09",
-    "entry": "2015-09-12",
-    "modified": "2015-09-13"
-  }
+	"vid": "4910d161-58a4-11e5-9ad8-14dae9d210b8",
+	"topic": "openldap -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openldap-server"
+			],
+			"range": [
+				{
+					"lt": "2.4.42_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Denis Andzakovic reports:</p>\n\t<blockquote cite=\"http://www.openldap.org/its/index.cgi/Software%20Bugs?id=8240\">\n\t  <p>By sending a crafted packet, an attacker may cause the\n\t    OpenLDAP server to reach an assert(9 9 statement, crashing the daemon.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openldap.org/its/index.cgi/Software%20Bugs?id=8240",
+			"http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=commit;h=6fe51a9ab04fd28bbc171da3cf12f1c1040d6629"
+		],
+		"cvename": [
+			"CVE-2015-6908"
+		]
+	},
+	"dates": {
+		"discovery": "2015-09-09",
+		"entry": "2015-09-12",
+		"modified": "2015-09-13"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "ee7bdf7f-11bb-4eea-b054-c692ab848c20",
-  "topic": "OpenSMTPD -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "opensmtpd"
-      ],
-      "range": [
-        {
-          "lt": "5.7.2,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSMTPD developers report:</p>\n\t<blockquote cite=\"https://www.opensmtpd.org/announces/release-5.7.2.txt\">\n\t  <p>an oversight in the portable version of fgetln() that allows\n\t    attackers to read and write out-of-bounds memory</p>\n\t  <p>multiple denial-of-service vulnerabilities that allow local users\n\t    to kill or hang OpenSMTPD</p>\n\t  <p>a stack-based buffer overflow that allows local users to crash\n\t    OpenSMTPD, or execute arbitrary code as the non-chrooted _smtpd\n\t    user</p>\n\t  <p>a hardlink attack (or race-conditioned symlink attack) that allows\n\t    local users to unset the chflags() of arbitrary files</p>\n\t  <p>a hardlink attack that allows local users to read the first line of\n\t    arbitrary files (for example, root's hash from /etc/master.passwd)\n\t    </p>\n\t  <p>a denial-of-service vulnerability that allows remote attackers to\n\t    fill OpenSMTPD's queue or mailbox hard-disk partition</p>\n\t  <p>an out-of-bounds memory read that allows remote attackers to crash\n\t    OpenSMTPD, or leak information and defeat the ASLR protection</p>\n\t  <p>a use-after-free vulnerability that allows remote attackers to\n\t    crash OpenSMTPD, or execute arbitrary code as the non-chrooted\n\t    _smtpd user</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.opensmtpd.org/announces/release-5.7.2.txt"
-    ],
-    "cvename": [
-      "CVE-2015-7687"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-02",
-    "entry": "2015-10-04",
-    "modified": "2015-10-06"
-  }
+	"vid": "ee7bdf7f-11bb-4eea-b054-c692ab848c20",
+	"topic": "OpenSMTPD -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"opensmtpd"
+			],
+			"range": [
+				{
+					"lt": "5.7.2,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSMTPD developers report:</p>\n\t<blockquote cite=\"https://www.opensmtpd.org/announces/release-5.7.2.txt\">\n\t  <p>an oversight in the portable version of fgetln() that allows\n\t    attackers to read and write out-of-bounds memory</p>\n\t  <p>multiple denial-of-service vulnerabilities that allow local users\n\t    to kill or hang OpenSMTPD</p>\n\t  <p>a stack-based buffer overflow that allows local users to crash\n\t    OpenSMTPD, or execute arbitrary code as the non-chrooted _smtpd\n\t    user</p>\n\t  <p>a hardlink attack (or race-conditioned symlink attack) that allows\n\t    local users to unset the chflags() of arbitrary files</p>\n\t  <p>a hardlink attack that allows local users to read the first line of\n\t    arbitrary files (for example, root's hash from /etc/master.passwd)\n\t    </p>\n\t  <p>a denial-of-service vulnerability that allows remote attackers to\n\t    fill OpenSMTPD's queue or mailbox hard-disk partition</p>\n\t  <p>an out-of-bounds memory read that allows remote attackers to crash\n\t    OpenSMTPD, or leak information and defeat the ASLR protection</p>\n\t  <p>a use-after-free vulnerability that allows remote attackers to\n\t    crash OpenSMTPD, or execute arbitrary code as the non-chrooted\n\t    _smtpd user</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.opensmtpd.org/announces/release-5.7.2.txt"
+		],
+		"cvename": [
+			"CVE-2015-7687"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-02",
+		"entry": "2015-10-04",
+		"modified": "2015-10-06"
+	}
 }

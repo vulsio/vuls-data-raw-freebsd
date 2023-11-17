@@ -1,33 +1,33 @@
 {
-  "vid": "ddecde18-e33b-11e7-a293-54e1ad3d6335",
-  "topic": "libXcursor -- integer overflow that can lead to heap buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "libXcursor"
-      ],
-      "range": [
-        {
-          "lt": "1.1.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The freedesktop.org project reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2017/q4/339\">\n\t  <p>It is possible to trigger heap overflows due to an integer\n\t    overflow while parsing images and a signedness issue while\n\t    parsing comments.</p>\n\t  <p>The integer overflow occurs because the chosen limit 0x10000\n\t    for dimensions is too large for 32 bit systems, because each pixel\n\t    takes 4 bytes. Properly chosen values allow an overflow which in\n\t    turn will lead to less allocated memory than needed for subsequent\n\t    reads.</p>\n\t  <p>The signedness bug is triggered by reading the length of a comment\n\t    as unsigned int, but casting it to int when calling the function\n\t    XcursorCommentCreate. Turning length into a negative value allows\n\t    the check against XCURSOR_COMMENT_MAX_LEN to pass, and the following\n\t    addition of sizeof (XcursorComment) + 1 makes it possible to\n\t    allocate less memory than needed for subsequent reads.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2017/q4/339",
-      "https://cgit.freedesktop.org/xorg/lib/libXcursor/commit/?id=4794b5dd34688158fb51a2943032569d3780c4b8"
-    ],
-    "cvename": [
-      "CVE-2017-16612"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-11-28",
-    "entry": "2017-12-17"
-  }
+	"vid": "ddecde18-e33b-11e7-a293-54e1ad3d6335",
+	"topic": "libXcursor -- integer overflow that can lead to heap buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"libXcursor"
+			],
+			"range": [
+				{
+					"lt": "1.1.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The freedesktop.org project reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2017/q4/339\">\n\t  <p>It is possible to trigger heap overflows due to an integer\n\t    overflow while parsing images and a signedness issue while\n\t    parsing comments.</p>\n\t  <p>The integer overflow occurs because the chosen limit 0x10000\n\t    for dimensions is too large for 32 bit systems, because each pixel\n\t    takes 4 bytes. Properly chosen values allow an overflow which in\n\t    turn will lead to less allocated memory than needed for subsequent\n\t    reads.</p>\n\t  <p>The signedness bug is triggered by reading the length of a comment\n\t    as unsigned int, but casting it to int when calling the function\n\t    XcursorCommentCreate. Turning length into a negative value allows\n\t    the check against XCURSOR_COMMENT_MAX_LEN to pass, and the following\n\t    addition of sizeof (XcursorComment) + 1 makes it possible to\n\t    allocate less memory than needed for subsequent reads.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2017/q4/339",
+			"https://cgit.freedesktop.org/xorg/lib/libXcursor/commit/?id=4794b5dd34688158fb51a2943032569d3780c4b8"
+		],
+		"cvename": [
+			"CVE-2017-16612"
+		]
+	},
+	"dates": {
+		"discovery": "2017-11-28",
+		"entry": "2017-12-17"
+	}
 }

@@ -1,29 +1,29 @@
 {
-  "vid": "c5bd8a25-99a6-11e9-a598-f079596b62f9",
-  "topic": "expat2 -- Fix extraction of namespace prefixes from XML names",
-  "affects": [
-    {
-      "name": [
-        "expat"
-      ],
-      "range": [
-        {
-          "lt": "2.2.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>expat project reports:</p>\n\t<blockquote cite=\"https://github.com/libexpat/libexpat/blob/R_2_2_7/expat/Changes\">\n\t  <p>\n\t    XML names with multiple colons could end up in the\n\t    wrong namespace, and take a high amount of RAM and CPU\n\t    resources while processing, opening the door to\n\t    use for denial-of-service attacks\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/libexpat/libexpat/blob/R_2_2_7/expat/Changes"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-06-19",
-    "entry": "2019-09-16"
-  }
+	"vid": "c5bd8a25-99a6-11e9-a598-f079596b62f9",
+	"topic": "expat2 -- Fix extraction of namespace prefixes from XML names",
+	"affects": [
+		{
+			"name": [
+				"expat"
+			],
+			"range": [
+				{
+					"lt": "2.2.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>expat project reports:</p>\n\t<blockquote cite=\"https://github.com/libexpat/libexpat/blob/R_2_2_7/expat/Changes\">\n\t  <p>\n\t    XML names with multiple colons could end up in the\n\t    wrong namespace, and take a high amount of RAM and CPU\n\t    resources while processing, opening the door to\n\t    use for denial-of-service attacks\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/libexpat/libexpat/blob/R_2_2_7/expat/Changes"
+		]
+	},
+	"dates": {
+		"discovery": "2019-06-19",
+		"entry": "2019-09-16"
+	}
 }

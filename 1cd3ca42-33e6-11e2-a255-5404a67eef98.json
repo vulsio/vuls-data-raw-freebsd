@@ -1,30 +1,30 @@
 {
-  "vid": "1cd3ca42-33e6-11e2-a255-5404a67eef98",
-  "topic": "lighttpd -- remote DoS in header parsing",
-  "affects": [
-    {
-      "name": [
-        "lighttpd"
-      ],
-      "range": [
-        {
-          "lt": "1.4.32",
-          "gt": "1.4.30"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Lighttpd security advisory reports:</p>\n\t<blockquote cite=\"http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2012_01.txt\">\n\t  <p>Certain Connection header values will trigger an endless loop, for example:\n\t    \"Connection: TE,,Keep-Alive\"</p>\n\t  <p>On receiving such value, lighttpd will enter an endless loop,\n\t    detecting an empty token but not incrementing the current string\n\t    position, and keep reading the ',' again and again.</p>\n\t  <p>This bug was introduced in 1.4.31, when we fixed an \"invalid read\"\n\t    bug (it would try to read the byte before the string if it started\n\t    with ',', although the value wasn't actually used).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-5533"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-11-17",
-    "entry": "2012-11-21"
-  }
+	"vid": "1cd3ca42-33e6-11e2-a255-5404a67eef98",
+	"topic": "lighttpd -- remote DoS in header parsing",
+	"affects": [
+		{
+			"name": [
+				"lighttpd"
+			],
+			"range": [
+				{
+					"lt": "1.4.32",
+					"gt": "1.4.30"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Lighttpd security advisory reports:</p>\n\t<blockquote cite=\"http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2012_01.txt\">\n\t  <p>Certain Connection header values will trigger an endless loop, for example:\n\t    \"Connection: TE,,Keep-Alive\"</p>\n\t  <p>On receiving such value, lighttpd will enter an endless loop,\n\t    detecting an empty token but not incrementing the current string\n\t    position, and keep reading the ',' again and again.</p>\n\t  <p>This bug was introduced in 1.4.31, when we fixed an \"invalid read\"\n\t    bug (it would try to read the byte before the string if it started\n\t    with ',', although the value wasn't actually used).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-5533"
+		]
+	},
+	"dates": {
+		"discovery": "2012-11-17",
+		"entry": "2012-11-21"
+	}
 }

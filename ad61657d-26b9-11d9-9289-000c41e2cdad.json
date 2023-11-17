@@ -1,42 +1,42 @@
 {
-  "vid": "ad61657d-26b9-11d9-9289-000c41e2cdad",
-  "topic": "gaim -- Content-Length header denial-of-service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "gaim",
-        "ja-gaim",
-        "ko-gaim",
-        "ru-gaim"
-      ],
-      "range": [
-        {
-          "lt": "0.82"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gaim"
-      ],
-      "range": [
-        {
-          "gt": "20030000"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Sean <q>infamous42md</q> reports:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=6\">\n\t  <p>When a remote server provides a large \"content-length\"\n\t    header value, Gaim will attempt to allocate a buffer to\n\t    store the content, however this allocation attempt will\n\t    cause Gaim to crash if the length exceeds the amount of\n\t    possible memory. This happens when reading profile\n\t    information on some protocols. It also happens when smiley\n\t    themes are installed via drag and drop.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://gaim.sourceforge.net/security/?id=6"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-26",
-    "entry": "2004-10-25"
-  }
+	"vid": "ad61657d-26b9-11d9-9289-000c41e2cdad",
+	"topic": "gaim -- Content-Length header denial-of-service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"gaim",
+				"ja-gaim",
+				"ko-gaim",
+				"ru-gaim"
+			],
+			"range": [
+				{
+					"lt": "0.82"
+				}
+			]
+		},
+		{
+			"name": [
+				"gaim"
+			],
+			"range": [
+				{
+					"gt": "20030000"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Sean <q>infamous42md</q> reports:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=6\">\n\t  <p>When a remote server provides a large \"content-length\"\n\t    header value, Gaim will attempt to allocate a buffer to\n\t    store the content, however this allocation attempt will\n\t    cause Gaim to crash if the length exceeds the amount of\n\t    possible memory. This happens when reading profile\n\t    information on some protocols. It also happens when smiley\n\t    themes are installed via drag and drop.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://gaim.sourceforge.net/security/?id=6"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-26",
+		"entry": "2004-10-25"
+	}
 }

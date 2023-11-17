@@ -1,48 +1,48 @@
 {
-  "vid": "d5b6d151-1887-11e8-94f7-9c5c8e75236a",
-  "topic": "squid -- Vulnerable to Denial of Service attack",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "3.5.27_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "squid-devel"
-      ],
-      "range": [
-        {
-          "lt": "4.0.23"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Louis Dion-Marcil reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2018_1.txt\">\n\t  <p>Due to incorrect pointer handling Squid is vulnerable to denial\n\t    of service attack when processing ESI responses.</p>\n\t  <p>This problem allows a remote server delivering certain ESI\n\t    response syntax to trigger a denial of service for all clients\n\t    accessing the Squid service.</p>\n\t  <p>Due to unrelated changes Squid-3.5 has become vulnerable to some\n\t    regular ESI server responses also triggering this issue.</p>\n\t  <p>This problem is limited to the Squid custom ESI parser.\n\t    Squid built to use libxml2 or libexpat XML parsers do not have\n\t    this problem.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2018_2.txt\">\n\t  <p>Due to incorrect pointer handling Squid is vulnerable to denial\n\t    of service attack when processing ESI responses or downloading\n\t    intermediate CA certificates.</p>\n\t  <p>This problem allows a remote client delivering certain HTTP\n\t    requests in conjunction with certain trusted server responses to\n\t    trigger a denial of service for all clients accessing the Squid\n\t    service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Advisories/SQUID-2018_1.txt",
-      "http://www.squid-cache.org/Advisories/SQUID-2018_2.txt",
-      "https://www.debian.org/security/2018/dsa-4122"
-    ],
-    "cvename": [
-      "CVE-2018-1000024",
-      "CVE-2018-1000027"
-    ],
-    "freebsd_pr": [
-      "ports/226138"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-12-13",
-    "entry": "2018-02-23"
-  }
+	"vid": "d5b6d151-1887-11e8-94f7-9c5c8e75236a",
+	"topic": "squid -- Vulnerable to Denial of Service attack",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "3.5.27_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"squid-devel"
+			],
+			"range": [
+				{
+					"lt": "4.0.23"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Louis Dion-Marcil reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2018_1.txt\">\n\t  <p>Due to incorrect pointer handling Squid is vulnerable to denial\n\t    of service attack when processing ESI responses.</p>\n\t  <p>This problem allows a remote server delivering certain ESI\n\t    response syntax to trigger a denial of service for all clients\n\t    accessing the Squid service.</p>\n\t  <p>Due to unrelated changes Squid-3.5 has become vulnerable to some\n\t    regular ESI server responses also triggering this issue.</p>\n\t  <p>This problem is limited to the Squid custom ESI parser.\n\t    Squid built to use libxml2 or libexpat XML parsers do not have\n\t    this problem.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2018_2.txt\">\n\t  <p>Due to incorrect pointer handling Squid is vulnerable to denial\n\t    of service attack when processing ESI responses or downloading\n\t    intermediate CA certificates.</p>\n\t  <p>This problem allows a remote client delivering certain HTTP\n\t    requests in conjunction with certain trusted server responses to\n\t    trigger a denial of service for all clients accessing the Squid\n\t    service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Advisories/SQUID-2018_1.txt",
+			"http://www.squid-cache.org/Advisories/SQUID-2018_2.txt",
+			"https://www.debian.org/security/2018/dsa-4122"
+		],
+		"cvename": [
+			"CVE-2018-1000024",
+			"CVE-2018-1000027"
+		],
+		"freebsd_pr": [
+			"ports/226138"
+		]
+	},
+	"dates": {
+		"discovery": "2017-12-13",
+		"entry": "2018-02-23"
+	}
 }

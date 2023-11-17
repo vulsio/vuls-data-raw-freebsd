@@ -1,32 +1,32 @@
 {
-  "vid": "58a738d4-57af-11ee-8c58-b42e991fc52e",
-  "topic": "libwebp heap buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "tor-browser"
-      ],
-      "range": [
-        {
-          "lt": "12.5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>chrome-cve-admin@google.com reports:</p>\n\t<blockquote cite=\"https://adamcaudill.com/2023/09/14/whose-cve-is-it-anyway/\">\n\t  <p>Heap buffer overflow in WebP in Google Chrome prior to 116.0.5845.187\n\tallowed a remote attacker to perform an out of bounds memory write\n\tvia a crafted HTML page.  (Chromium security severity: Critical)\n\tThe Tor browser is based on Firefox and GeckoView and uses also\n\tlibwep so it is affected by this bug.\n\t</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2023-4863"
-    ],
-    "cvename": [
-      "CVE-2023-4863"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-09-12",
-    "entry": "2023-09-20"
-  }
+	"vid": "58a738d4-57af-11ee-8c58-b42e991fc52e",
+	"topic": "libwebp heap buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"tor-browser"
+			],
+			"range": [
+				{
+					"lt": "12.5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>chrome-cve-admin@google.com reports:</p>\n\t<blockquote cite=\"https://adamcaudill.com/2023/09/14/whose-cve-is-it-anyway/\">\n\t  <p>Heap buffer overflow in WebP in Google Chrome prior to 116.0.5845.187\n\tallowed a remote attacker to perform an out of bounds memory write\n\tvia a crafted HTML page.  (Chromium security severity: Critical)\n\tThe Tor browser is based on Firefox and GeckoView and uses also\n\tlibwep so it is affected by this bug.\n\t</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-4863"
+		],
+		"cvename": [
+			"CVE-2023-4863"
+		]
+	},
+	"dates": {
+		"discovery": "2023-09-12",
+		"entry": "2023-09-20"
+	}
 }

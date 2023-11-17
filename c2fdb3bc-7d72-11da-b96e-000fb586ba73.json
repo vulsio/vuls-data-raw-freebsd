@@ -1,29 +1,29 @@
 {
-  "vid": "c2fdb3bc-7d72-11da-b96e-000fb586ba73",
-  "topic": "rxvt-unicode -- restore permissions on tty devices",
-  "affects": [
-    {
-      "name": [
-        "rxvt-unicode"
-      ],
-      "range": [
-        {
-          "lt": "6.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A rxvt-unicode changelog reports:</p>\n\t<blockquote cite=\"http://dist.schmorp.de/rxvt-unicode/Changes\">\n\t  <p>SECURITY FIX: on systems using openpty, permissions were\n\t    not correctly updated on the tty device and were left as\n\t    world-readable and world-writable (likely in original rxvt,\n\t    too), and were not restored properly. Affected are only\n\t    systems where non-unix ptys were used (such as most BSDs).\n\t    Found, patched and debugged by Ryan Beasley.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://dist.schmorp.de/rxvt-unicode/Changes"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-12-31",
-    "entry": "2006-01-04"
-  }
+	"vid": "c2fdb3bc-7d72-11da-b96e-000fb586ba73",
+	"topic": "rxvt-unicode -- restore permissions on tty devices",
+	"affects": [
+		{
+			"name": [
+				"rxvt-unicode"
+			],
+			"range": [
+				{
+					"lt": "6.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A rxvt-unicode changelog reports:</p>\n\t<blockquote cite=\"http://dist.schmorp.de/rxvt-unicode/Changes\">\n\t  <p>SECURITY FIX: on systems using openpty, permissions were\n\t    not correctly updated on the tty device and were left as\n\t    world-readable and world-writable (likely in original rxvt,\n\t    too), and were not restored properly. Affected are only\n\t    systems where non-unix ptys were used (such as most BSDs).\n\t    Found, patched and debugged by Ryan Beasley.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://dist.schmorp.de/rxvt-unicode/Changes"
+		]
+	},
+	"dates": {
+		"discovery": "2005-12-31",
+		"entry": "2006-01-04"
+	}
 }

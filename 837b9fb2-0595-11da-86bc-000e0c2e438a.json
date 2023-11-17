@@ -1,48 +1,48 @@
 {
-  "vid": "837b9fb2-0595-11da-86bc-000e0c2e438a",
-  "topic": "zlib -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "linux_base-suse"
-      ],
-      "range": [
-        {
-          "lt": "9.3_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.4_6",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.3_20",
-          "ge": "5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem description</h1>\n\t<p>A fixed-size buffer is used in the decompression of data\n\t  streams.  Due to erronous analysis performed when zlib was\n\t  written, this buffer, which was belived to be sufficiently\n\t  large to handle any possible input stream, is in fact too\n\t  small.</p>\n\t<h1>Impact</h1>\n\t<p>A carefully constructed compressed data stream can result in\n\t  zlib overwriting some data structures.  This may cause\n\t  applications to halt, resulting in a denial of service; or\n\t  it may result in an attacker gaining elevated privileges.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-1849"
-    ],
-    "freebsd_sa": [
-      "SA-05:18.zlib"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-27",
-    "entry": "2005-08-05",
-    "modified": "2005-09-24"
-  }
+	"vid": "837b9fb2-0595-11da-86bc-000e0c2e438a",
+	"topic": "zlib -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"linux_base-suse"
+			],
+			"range": [
+				{
+					"lt": "9.3_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.4_6",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.3_20",
+					"ge": "5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem description</h1>\n\t<p>A fixed-size buffer is used in the decompression of data\n\t  streams.  Due to erronous analysis performed when zlib was\n\t  written, this buffer, which was belived to be sufficiently\n\t  large to handle any possible input stream, is in fact too\n\t  small.</p>\n\t<h1>Impact</h1>\n\t<p>A carefully constructed compressed data stream can result in\n\t  zlib overwriting some data structures.  This may cause\n\t  applications to halt, resulting in a denial of service; or\n\t  it may result in an attacker gaining elevated privileges.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-1849"
+		],
+		"freebsd_sa": [
+			"SA-05:18.zlib"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-27",
+		"entry": "2005-08-05",
+		"modified": "2005-09-24"
+	}
 }

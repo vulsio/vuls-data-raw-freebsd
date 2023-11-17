@@ -1,48 +1,48 @@
 {
-  "vid": "6b1d8a39-ddb3-11e5-8fa8-14dae9d210b8",
-  "topic": "django -- regression in permissions model",
-  "affects": [
-    {
-      "name": [
-        "py27-django19",
-        "py33-django19",
-        "py34-django19",
-        "py35-django19"
-      ],
-      "range": [
-        {
-          "lt": "1.9.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django-devel",
-        "py33-django-devel",
-        "py34-django-devel",
-        "py35-django-devel"
-      ],
-      "range": [
-        {
-          "le": "20150709,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tim Graham reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2016/feb/01/releases-192-and-189/\">\n\t  <p>User with \"change\" but not \"add\" permission can create\n\t    objects for ModelAdmin’s with save_as=True</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.djangoproject.com/weblog/2016/feb/01/releases-192-and-189/"
-    ],
-    "cvename": [
-      "CVE-2016-2048"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-01",
-    "entry": "2016-02-28"
-  }
+	"vid": "6b1d8a39-ddb3-11e5-8fa8-14dae9d210b8",
+	"topic": "django -- regression in permissions model",
+	"affects": [
+		{
+			"name": [
+				"py27-django19",
+				"py33-django19",
+				"py34-django19",
+				"py35-django19"
+			],
+			"range": [
+				{
+					"lt": "1.9.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django-devel",
+				"py33-django-devel",
+				"py34-django-devel",
+				"py35-django-devel"
+			],
+			"range": [
+				{
+					"le": "20150709,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tim Graham reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2016/feb/01/releases-192-and-189/\">\n\t  <p>User with \"change\" but not \"add\" permission can create\n\t    objects for ModelAdmin’s with save_as=True</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2016/feb/01/releases-192-and-189/"
+		],
+		"cvename": [
+			"CVE-2016-2048"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-01",
+		"entry": "2016-02-28"
+	}
 }

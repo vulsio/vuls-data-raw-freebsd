@@ -1,40 +1,40 @@
 {
-  "vid": "daf045d7-b211-11dd-a987-000c29ca8953",
-  "topic": "net-snmp -- DoS for SNMP agent via crafted GETBULK request",
-  "affects": [
-    {
-      "name": [
-        "net-snmp"
-      ],
-      "range": [
-        {
-          "lt": "5.4.2.1",
-          "gt": "5.4"
-        },
-        {
-          "lt": "5.3.2.3",
-          "gt": "5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Wes Hardaker reports through sourceforge.net forum:</p>\n\t<blockquote cite=\"http://sourceforge.net/forum/forum.php?forum_id=882903\">\n\t  <p>SECURITY ISSUE: A bug in the getbulk handling code could\n\t    let anyone with even minimal access crash the agent. If you\n\t    have open access to your snmp agents (bad bad bad; stop doing\n\t    that!) or if you don't trust everyone that does have access to\n\t    your agents you should updated immediately to prevent\n\t    potential denial of service attacks.</p>\n\t</blockquote>\n\t<p>Description at cve.mitre.org additionally clarifies:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4309\">\n\t  <p>Integer overflow in the netsnmp_create_subtree_cache\n\t    function in agent/snmp_agent.c in net-snmp 5.4 before\n\t    5.4.2.1, 5.3 before 5.3.2.3, and 5.2 before 5.2.5.1 allows\n\t    remote attackers to cause a denial of service (crash) via\n\t    a crafted SNMP GETBULK request, which triggers a heap-based\n\t    buffer overflow, related to the number of responses or\n\t    repeats.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://sourceforge.net/forum/forum.php?forum_id=882903",
-      "http://www.openwall.com/lists/oss-security/2008/10/31/1",
-      "http://net-snmp.svn.sourceforge.net/viewvc/net-snmp/tags/Ext-5-2-5-1/net-snmp/agent/snmp_agent.c?r1=17271&r2=17272&pathrev=17272"
-    ],
-    "cvename": [
-      "CVE-2008-4309"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-10-12",
-    "entry": "2008-11-14",
-    "modified": "2009-03-23"
-  }
+	"vid": "daf045d7-b211-11dd-a987-000c29ca8953",
+	"topic": "net-snmp -- DoS for SNMP agent via crafted GETBULK request",
+	"affects": [
+		{
+			"name": [
+				"net-snmp"
+			],
+			"range": [
+				{
+					"lt": "5.4.2.1",
+					"gt": "5.4"
+				},
+				{
+					"lt": "5.3.2.3",
+					"gt": "5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Wes Hardaker reports through sourceforge.net forum:</p>\n\t<blockquote cite=\"http://sourceforge.net/forum/forum.php?forum_id=882903\">\n\t  <p>SECURITY ISSUE: A bug in the getbulk handling code could\n\t    let anyone with even minimal access crash the agent. If you\n\t    have open access to your snmp agents (bad bad bad; stop doing\n\t    that!) or if you don't trust everyone that does have access to\n\t    your agents you should updated immediately to prevent\n\t    potential denial of service attacks.</p>\n\t</blockquote>\n\t<p>Description at cve.mitre.org additionally clarifies:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4309\">\n\t  <p>Integer overflow in the netsnmp_create_subtree_cache\n\t    function in agent/snmp_agent.c in net-snmp 5.4 before\n\t    5.4.2.1, 5.3 before 5.3.2.3, and 5.2 before 5.2.5.1 allows\n\t    remote attackers to cause a denial of service (crash) via\n\t    a crafted SNMP GETBULK request, which triggers a heap-based\n\t    buffer overflow, related to the number of responses or\n\t    repeats.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://sourceforge.net/forum/forum.php?forum_id=882903",
+			"http://www.openwall.com/lists/oss-security/2008/10/31/1",
+			"http://net-snmp.svn.sourceforge.net/viewvc/net-snmp/tags/Ext-5-2-5-1/net-snmp/agent/snmp_agent.c?r1=17271&r2=17272&pathrev=17272"
+		],
+		"cvename": [
+			"CVE-2008-4309"
+		]
+	},
+	"dates": {
+		"discovery": "2008-10-12",
+		"entry": "2008-11-14",
+		"modified": "2009-03-23"
+	}
 }

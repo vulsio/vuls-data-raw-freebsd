@@ -1,64 +1,64 @@
 {
-  "vid": "66dbb2ee-99b8-45b2-bb3e-640caea67a60",
-  "topic": "leafnode -- fetchnews denial-of-service triggered by transmission abort/timeout",
-  "affects": [
-    {
-      "name": [
-        "leafnode"
-      ],
-      "range": [
-        {
-          "lt": "1.11.2",
-          "ge": "1.9.48"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t <p>When an upstream server aborts the transmission or stops sending\n\t   data after the fetchnews program has requested an article header\n\t   or body, fetchnews may crash, without querying further servers\n\t   that are configured. This can prevent articles from being fetched.\n\t</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://leafnode.sourceforge.net/leafnode-SA-2005-01.txt",
-      "http://www.frsirt.com/english/advisories/2005/0468",
-      "http://secunia.com/advisories/15252"
-    ],
-    "cvename": [
-      "CVE-2005-1453"
-    ],
-    "freebsd_pr": [
-      "ports/80663"
-    ],
-    "mlist": [
-      {
-        "text": "http://sourceforge.net/mailarchive/forum.php?thread_id=7186974&forum_id=10210",
-        "msgid": "20050504152311.GA25593@merlin.emma.line.org"
-      },
-      {
-        "text": "http://article.gmane.org/gmane.network.leafnode.announce/52",
-        "msgid": "20050504152311.GA25593@merlin.emma.line.org"
-      },
-      {
-        "text": "http://www.dt.e-technik.uni-dortmund.de/pipermail/leafnode-list/2005q2/000900.html",
-        "msgid": "20050504152311.GA25593@merlin.emma.line.org"
-      },
-      {
-        "text": "http://www.fredi.de/maillist/msg00111.html",
-        "msgid": "20050504152311.GA25593@merlin.emma.line.org"
-      },
-      {
-        "text": "http://archives.neohapsis.com/archives/vulnwatch/2005-q2/0037.html",
-        "msgid": "20050504152311.GA25593@merlin.emma.line.org"
-      }
-    ],
-    "bid": [
-      "13489",
-      "13492"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-04",
-    "entry": "2005-05-13"
-  }
+	"vid": "66dbb2ee-99b8-45b2-bb3e-640caea67a60",
+	"topic": "leafnode -- fetchnews denial-of-service triggered by transmission abort/timeout",
+	"affects": [
+		{
+			"name": [
+				"leafnode"
+			],
+			"range": [
+				{
+					"lt": "1.11.2",
+					"ge": "1.9.48"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t <p>When an upstream server aborts the transmission or stops sending\n\t   data after the fetchnews program has requested an article header\n\t   or body, fetchnews may crash, without querying further servers\n\t   that are configured. This can prevent articles from being fetched.\n\t</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://leafnode.sourceforge.net/leafnode-SA-2005-01.txt",
+			"http://www.frsirt.com/english/advisories/2005/0468",
+			"http://secunia.com/advisories/15252"
+		],
+		"cvename": [
+			"CVE-2005-1453"
+		],
+		"freebsd_pr": [
+			"ports/80663"
+		],
+		"mlist": [
+			{
+				"text": "http://sourceforge.net/mailarchive/forum.php?thread_id=7186974&forum_id=10210",
+				"msgid": "20050504152311.GA25593@merlin.emma.line.org"
+			},
+			{
+				"text": "http://article.gmane.org/gmane.network.leafnode.announce/52",
+				"msgid": "20050504152311.GA25593@merlin.emma.line.org"
+			},
+			{
+				"text": "http://www.dt.e-technik.uni-dortmund.de/pipermail/leafnode-list/2005q2/000900.html",
+				"msgid": "20050504152311.GA25593@merlin.emma.line.org"
+			},
+			{
+				"text": "http://www.fredi.de/maillist/msg00111.html",
+				"msgid": "20050504152311.GA25593@merlin.emma.line.org"
+			},
+			{
+				"text": "http://archives.neohapsis.com/archives/vulnwatch/2005-q2/0037.html",
+				"msgid": "20050504152311.GA25593@merlin.emma.line.org"
+			}
+		],
+		"bid": [
+			"13489",
+			"13492"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-04",
+		"entry": "2005-05-13"
+	}
 }

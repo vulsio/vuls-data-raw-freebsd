@@ -1,55 +1,55 @@
 {
-  "vid": "38bdf10e-2293-11e0-bfa4-001676740879",
-  "topic": "tor -- remote code execution and crash",
-  "affects": [
-    {
-      "name": [
-        "tor"
-      ],
-      "range": [
-        {
-          "lt": "0.2.1.29"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tor-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.2.2.21.a"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Tor Project reports:</p>\n\t<blockquote cite=\"http://archives.seul.org/or/announce/Jan-2011/msg00000.html\">\n\t  <p>A remote heap overflow vulnerability that can allow remote\n\t    code execution. Other fixes address a variety of assert and crash\n\t    bugs, most of which we think are hard to exploit remotely.\n\t    All Tor users should upgrade.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://gitweb.torproject.org/tor.git/blob/release-0.2.1:/ChangeLog",
-      "https://gitweb.torproject.org/tor.git/blob/release-0.2.2:/ChangeLog"
-    ],
-    "cvename": [
-      "CVE-2011-0427"
-    ],
-    "freebsd_pr": [
-      "ports/154099"
-    ],
-    "mlist": [
-      {
-        "text": "http://archives.seul.org/or/announce/Jan-2011/msg00000.html",
-        "msgid": "20110117155813.GG3300@moria.seul.org"
-      }
-    ],
-    "bid": [
-      "45832"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-01-15",
-    "entry": "2011-01-17"
-  }
+	"vid": "38bdf10e-2293-11e0-bfa4-001676740879",
+	"topic": "tor -- remote code execution and crash",
+	"affects": [
+		{
+			"name": [
+				"tor"
+			],
+			"range": [
+				{
+					"lt": "0.2.1.29"
+				}
+			]
+		},
+		{
+			"name": [
+				"tor-devel"
+			],
+			"range": [
+				{
+					"lt": "0.2.2.21.a"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Tor Project reports:</p>\n\t<blockquote cite=\"http://archives.seul.org/or/announce/Jan-2011/msg00000.html\">\n\t  <p>A remote heap overflow vulnerability that can allow remote\n\t    code execution. Other fixes address a variety of assert and crash\n\t    bugs, most of which we think are hard to exploit remotely.\n\t    All Tor users should upgrade.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://gitweb.torproject.org/tor.git/blob/release-0.2.1:/ChangeLog",
+			"https://gitweb.torproject.org/tor.git/blob/release-0.2.2:/ChangeLog"
+		],
+		"cvename": [
+			"CVE-2011-0427"
+		],
+		"freebsd_pr": [
+			"ports/154099"
+		],
+		"mlist": [
+			{
+				"text": "http://archives.seul.org/or/announce/Jan-2011/msg00000.html",
+				"msgid": "20110117155813.GG3300@moria.seul.org"
+			}
+		],
+		"bid": [
+			"45832"
+		]
+	},
+	"dates": {
+		"discovery": "2011-01-15",
+		"entry": "2011-01-17"
+	}
 }

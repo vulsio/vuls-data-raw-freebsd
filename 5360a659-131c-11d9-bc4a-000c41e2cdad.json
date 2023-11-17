@@ -1,107 +1,107 @@
 {
-  "vid": "5360a659-131c-11d9-bc4a-000c41e2cdad",
-  "topic": "mozilla -- hostname spoofing bug",
-  "affects": [
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "0.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "firefox",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "lt": "0.9.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-netscape7",
-        "fr-netscape7",
-        "ja-netscape7",
-        "netscape7",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "le": "7.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla-gtk1",
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "fr-linux-netscape",
-        "ja-linux-netscape",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>When processing URIs that contain an unqualified host name--\n\t  specifically, a domain name of only one component--\n\t  Mozilla will perform matching against the first component\n\t  of the domain name in SSL certificates.  In other words, in\n\t  some situations, a certificate issued to \"www.example.com\"\n\t  will be accepted as matching \"www\".</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugzilla.mozilla.org/show_bug.cgi?id=234058"
-    ],
-    "cvename": [
-      "CVE-2004-0765"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-02-12",
-    "entry": "2004-09-30"
-  }
+	"vid": "5360a659-131c-11d9-bc4a-000c41e2cdad",
+	"topic": "mozilla -- hostname spoofing bug",
+	"affects": [
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "0.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"firefox",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"lt": "0.9.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-netscape7",
+				"fr-netscape7",
+				"ja-netscape7",
+				"netscape7",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"le": "7.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla-gtk1",
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"fr-linux-netscape",
+				"ja-linux-netscape",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>When processing URIs that contain an unqualified host name--\n\t  specifically, a domain name of only one component--\n\t  Mozilla will perform matching against the first component\n\t  of the domain name in SSL certificates.  In other words, in\n\t  some situations, a certificate issued to \"www.example.com\"\n\t  will be accepted as matching \"www\".</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugzilla.mozilla.org/show_bug.cgi?id=234058"
+		],
+		"cvename": [
+			"CVE-2004-0765"
+		]
+	},
+	"dates": {
+		"discovery": "2004-02-12",
+		"entry": "2004-09-30"
+	}
 }

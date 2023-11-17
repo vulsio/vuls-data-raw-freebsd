@@ -1,39 +1,39 @@
 {
-  "vid": "4b172278-3f46-11de-becb-001cc0377035",
-  "topic": "pango -- integer overflow",
-  "affects": [
-    {
-      "name": [
-        "pango",
-        "linux-pango",
-        "linux-f8-pango",
-        "linux-f10-pango"
-      ],
-      "range": [
-        {
-          "lt": "1.24"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2009-001.html\">\n\t  <p>Pango suffers from a multiplicative integer overflow which\n\t    may lead to a potentially exploitable, heap overflow depending\n\t    on the calling conditions.</p>\n\t  <p>For example, this vulnerability is remotely reachable in Firefox\n\t    by creating an overly large document.location value but only results\n\t    in a process-terminating, allocation error (denial of service).</p>\n\t  <p>The affected function is pango_glyph_string_set_size. An overflow\n\t    check when doubling the size neglects the overflow possible on the\n\t    subsequent allocation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/35021/"
-    ],
-    "cvename": [
-      "CVE-2009-1194"
-    ],
-    "bid": [
-      "34870"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-02-22",
-    "entry": "2009-05-13",
-    "modified": "2009-10-01"
-  }
+	"vid": "4b172278-3f46-11de-becb-001cc0377035",
+	"topic": "pango -- integer overflow",
+	"affects": [
+		{
+			"name": [
+				"pango",
+				"linux-pango",
+				"linux-f8-pango",
+				"linux-f10-pango"
+			],
+			"range": [
+				{
+					"lt": "1.24"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2009-001.html\">\n\t  <p>Pango suffers from a multiplicative integer overflow which\n\t    may lead to a potentially exploitable, heap overflow depending\n\t    on the calling conditions.</p>\n\t  <p>For example, this vulnerability is remotely reachable in Firefox\n\t    by creating an overly large document.location value but only results\n\t    in a process-terminating, allocation error (denial of service).</p>\n\t  <p>The affected function is pango_glyph_string_set_size. An overflow\n\t    check when doubling the size neglects the overflow possible on the\n\t    subsequent allocation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/35021/"
+		],
+		"cvename": [
+			"CVE-2009-1194"
+		],
+		"bid": [
+			"34870"
+		]
+	},
+	"dates": {
+		"discovery": "2009-02-22",
+		"entry": "2009-05-13",
+		"modified": "2009-10-01"
+	}
 }

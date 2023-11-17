@@ -1,38 +1,38 @@
 {
-  "vid": "89d4ed09-c3d7-11e5-b5fe-002590263bf5",
-  "topic": "privoxy -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "privoxy"
-      ],
-      "range": [
-        {
-          "lt": "3.0.22"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Privoxy Developers reports:</p>\n\t<blockquote cite=\"http://www.privoxy.org/3.0.22/user-manual/whatsnew.html\">\n\t  <p>Fixed a memory leak when rejecting client connections due to the\n\t    socket limit being reached (CID 66382). This affected Privoxy 3.0.21\n\t    when compiled with IPv6 support (on most platforms this is the\n\t    default).</p>\n\t  <p>Fixed an immediate-use-after-free bug (CID 66394) and two\n\t    additional unconfirmed use-after-free complaints made by Coverity\n\t    scan (CID 66391, CID 66376).</p>\n\t</blockquote>\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1201\">\n\t  <p>Privoxy before 3.0.22 allows remote attackers to cause a denial\n\t    of service (file descriptor consumption) via unspecified vectors.\n\t    </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.privoxy.org/3.0.22/user-manual/whatsnew.html",
-      "http://www.openwall.com/lists/oss-security/2015/01/11/1"
-    ],
-    "cvename": [
-      "CVE-2015-1030",
-      "CVE-2015-1031",
-      "CVE-2015-1201"
-    ],
-    "freebsd_pr": [
-      "ports/195468"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-01-10",
-    "entry": "2016-01-26"
-  }
+	"vid": "89d4ed09-c3d7-11e5-b5fe-002590263bf5",
+	"topic": "privoxy -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"privoxy"
+			],
+			"range": [
+				{
+					"lt": "3.0.22"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Privoxy Developers reports:</p>\n\t<blockquote cite=\"http://www.privoxy.org/3.0.22/user-manual/whatsnew.html\">\n\t  <p>Fixed a memory leak when rejecting client connections due to the\n\t    socket limit being reached (CID 66382). This affected Privoxy 3.0.21\n\t    when compiled with IPv6 support (on most platforms this is the\n\t    default).</p>\n\t  <p>Fixed an immediate-use-after-free bug (CID 66394) and two\n\t    additional unconfirmed use-after-free complaints made by Coverity\n\t    scan (CID 66391, CID 66376).</p>\n\t</blockquote>\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1201\">\n\t  <p>Privoxy before 3.0.22 allows remote attackers to cause a denial\n\t    of service (file descriptor consumption) via unspecified vectors.\n\t    </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.privoxy.org/3.0.22/user-manual/whatsnew.html",
+			"http://www.openwall.com/lists/oss-security/2015/01/11/1"
+		],
+		"cvename": [
+			"CVE-2015-1030",
+			"CVE-2015-1031",
+			"CVE-2015-1201"
+		],
+		"freebsd_pr": [
+			"ports/195468"
+		]
+	},
+	"dates": {
+		"discovery": "2015-01-10",
+		"entry": "2016-01-26"
+	}
 }

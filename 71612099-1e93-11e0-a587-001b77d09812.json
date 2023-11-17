@@ -1,43 +1,43 @@
 {
-  "vid": "71612099-1e93-11e0-a587-001b77d09812",
-  "topic": "subversion -- multiple DoS",
-  "affects": [
-    {
-      "name": [
-        "subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.6.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion-freebsd"
-      ],
-      "range": [
-        {
-          "lt": "1.6.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Entry for CVE-2010-4539 says:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4539\">\n\t  <p>The walk function in repos.c in the mod_dav_svn module\n\t    for the Apache HTTP Server, as distributed in Apache\n\t    Subversion before 1.6.15, allows remote authenticated\n\t    users to cause a denial of service (NULL pointer\n\t    dereference and daemon crash) via vectors that trigger\n\t    the walking of SVNParentPath collections.</p>\n\t</blockquote>\n\t<p>Entry for CVE-2010-4644 says:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4644\">\n\t  <p>Multiple memory leaks in rev_hunt.c in Apache Subversion\n\t    before 1.6.15 allow remote authenticated users to cause\n\t    a denial of service (memory consumption and daemon crash)\n\t    via the -g option to the blame command.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2010-4539",
-      "CVE-2010-4644"
-    ],
-    "bid": [
-      "45655"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-01-02",
-    "entry": "2011-01-13"
-  }
+	"vid": "71612099-1e93-11e0-a587-001b77d09812",
+	"topic": "subversion -- multiple DoS",
+	"affects": [
+		{
+			"name": [
+				"subversion"
+			],
+			"range": [
+				{
+					"lt": "1.6.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion-freebsd"
+			],
+			"range": [
+				{
+					"lt": "1.6.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Entry for CVE-2010-4539 says:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4539\">\n\t  <p>The walk function in repos.c in the mod_dav_svn module\n\t    for the Apache HTTP Server, as distributed in Apache\n\t    Subversion before 1.6.15, allows remote authenticated\n\t    users to cause a denial of service (NULL pointer\n\t    dereference and daemon crash) via vectors that trigger\n\t    the walking of SVNParentPath collections.</p>\n\t</blockquote>\n\t<p>Entry for CVE-2010-4644 says:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4644\">\n\t  <p>Multiple memory leaks in rev_hunt.c in Apache Subversion\n\t    before 1.6.15 allow remote authenticated users to cause\n\t    a denial of service (memory consumption and daemon crash)\n\t    via the -g option to the blame command.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2010-4539",
+			"CVE-2010-4644"
+		],
+		"bid": [
+			"45655"
+		]
+	},
+	"dates": {
+		"discovery": "2011-01-02",
+		"entry": "2011-01-13"
+	}
 }

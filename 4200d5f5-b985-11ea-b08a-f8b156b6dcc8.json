@@ -1,34 +1,34 @@
 {
-  "vid": "4200d5f5-b985-11ea-b08a-f8b156b6dcc8",
-  "topic": "libvorbis -- two vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libvorbis"
-      ],
-      "range": [
-        {
-          "lt": "1.3.6_1,3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Two vulnerabilities were fixed in the upstream repository:</p>\n\t<ul>\n\t  <li>The bark_noise_hybridmp function allows remote attackers\n\t    to cause a denial of service (out-of-bounds access and\n\t    application crash) or possibly have unspecified other\n\t    impact via a crafted file.</li>\n\t  <li>mapping0_forward does not validate the number of\n\t    channels, which allows remote attackers to cause a denial\n\t    of service (heap-based buffer overflow or over-read) or\n\t    possibly have unspecified other impact via a crafted\n\t    file.</li>\n\t</ul>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openwall.com/lists/oss-security/2017/09/21/2",
-      "https://gitlab.xiph.org/xiph/vorbis/-/issues/2335"
-    ],
-    "cvename": [
-      "CVE-2017-14160",
-      "CVE-2018-10392"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-21",
-    "entry": "2020-06-28"
-  }
+	"vid": "4200d5f5-b985-11ea-b08a-f8b156b6dcc8",
+	"topic": "libvorbis -- two vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libvorbis"
+			],
+			"range": [
+				{
+					"lt": "1.3.6_1,3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Two vulnerabilities were fixed in the upstream repository:</p>\n\t<ul>\n\t  <li>The bark_noise_hybridmp function allows remote attackers\n\t    to cause a denial of service (out-of-bounds access and\n\t    application crash) or possibly have unspecified other\n\t    impact via a crafted file.</li>\n\t  <li>mapping0_forward does not validate the number of\n\t    channels, which allows remote attackers to cause a denial\n\t    of service (heap-based buffer overflow or over-read) or\n\t    possibly have unspecified other impact via a crafted\n\t    file.</li>\n\t</ul>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openwall.com/lists/oss-security/2017/09/21/2",
+			"https://gitlab.xiph.org/xiph/vorbis/-/issues/2335"
+		],
+		"cvename": [
+			"CVE-2017-14160",
+			"CVE-2018-10392"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-21",
+		"entry": "2020-06-28"
+	}
 }

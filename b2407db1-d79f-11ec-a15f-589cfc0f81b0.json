@@ -1,47 +1,47 @@
 {
-  "vid": "b2407db1-d79f-11ec-a15f-589cfc0f81b0",
-  "topic": "clamav -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "clamav"
-      ],
-      "range": [
-        {
-          "lt": "0.104.3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "clamav-lts"
-      ],
-      "range": [
-        {
-          "lt": "0.103.6,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The ClamAV project reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2022/05/clamav-01050-01043-01036-released.html\">\n\t  <p>Fixed a possible double-free vulnerability in the OLE2 file\n\t    parser. Issue affects versions 0.104.0 through 0.104.2. Issue\n\t    identified by OSS-Fuzz.</p>\n\t  <p>Fixed a possible infinite loop vulnerability in the CHM file\n\t    parser. Issue affects versions 0.104.0 through 0.104.2 and LTS\n\t    version 0.103.5 and prior versions. Thank you to Michał Dardas\n\t    for reporting this issue.</p>\n\t  <p>Fixed a possible NULL-pointer dereference crash in the scan\n\t    verdict cache check. Issue affects versions 0.103.4, 0.103.5,\n\t    0.104.1, and 0.104.2. Thank you to Alexander Patrakov and\n\t    Antoine Gatineau for reporting this issue.</p>\n\t  <p>Fixed a possible infinite loop vulnerability in the TIFF file\n\t    parser. Issue affects versions 0.104.0 through 0.104.2 and LTS\n\t    version 0.103.5 and prior versions. The issue only occurs if the\n\t    \"--alert-broken-media\" ClamScan option is enabled. For ClamD,\n\t    the affected option is \"AlertBrokenMedia yes\", and for libclamav\n\t    it is the \"CL_SCAN_HEURISTIC_BROKEN_MEDIA\" scan option. Thank\n\t    you to Michał Dardas for reporting this issue.</p>\n\t  <p>Fixed a possible memory leak in the HTML file parser /\n\t    Javascript normalizer. Issue affects versions 0.104.0 through\n\t    0.104.2 and LTS version 0.103.5 and prior versions. Thank you to\n\t    Michał Dardas for reporting this issue.</p>\n\t  <p>Fixed a possible multi-byte heap buffer overflow write\n\t    vulnerability in the signature database load module. The fix was\n\t    to update the vendored regex library to the latest version.\n\t    Issue affects versions 0.104.0 through 0.104.2 and LTS version\n\t    0.103.5 and prior versions. Thank you to Michał Dardas for\n\t    reporting this issue.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.clamav.net/2022/05/clamav-01050-01043-01036-released.html#more"
-    ],
-    "cvename": [
-      "CVE-2022-20803",
-      "CVE-2022-20770",
-      "CVE-2022-20796",
-      "CVE-2022-20771",
-      "CVE-2022-20785",
-      "CVE-2022-20792"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-05-04",
-    "entry": "2022-05-19"
-  }
+	"vid": "b2407db1-d79f-11ec-a15f-589cfc0f81b0",
+	"topic": "clamav -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"clamav"
+			],
+			"range": [
+				{
+					"lt": "0.104.3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"clamav-lts"
+			],
+			"range": [
+				{
+					"lt": "0.103.6,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The ClamAV project reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2022/05/clamav-01050-01043-01036-released.html\">\n\t  <p>Fixed a possible double-free vulnerability in the OLE2 file\n\t    parser. Issue affects versions 0.104.0 through 0.104.2. Issue\n\t    identified by OSS-Fuzz.</p>\n\t  <p>Fixed a possible infinite loop vulnerability in the CHM file\n\t    parser. Issue affects versions 0.104.0 through 0.104.2 and LTS\n\t    version 0.103.5 and prior versions. Thank you to Michał Dardas\n\t    for reporting this issue.</p>\n\t  <p>Fixed a possible NULL-pointer dereference crash in the scan\n\t    verdict cache check. Issue affects versions 0.103.4, 0.103.5,\n\t    0.104.1, and 0.104.2. Thank you to Alexander Patrakov and\n\t    Antoine Gatineau for reporting this issue.</p>\n\t  <p>Fixed a possible infinite loop vulnerability in the TIFF file\n\t    parser. Issue affects versions 0.104.0 through 0.104.2 and LTS\n\t    version 0.103.5 and prior versions. The issue only occurs if the\n\t    \"--alert-broken-media\" ClamScan option is enabled. For ClamD,\n\t    the affected option is \"AlertBrokenMedia yes\", and for libclamav\n\t    it is the \"CL_SCAN_HEURISTIC_BROKEN_MEDIA\" scan option. Thank\n\t    you to Michał Dardas for reporting this issue.</p>\n\t  <p>Fixed a possible memory leak in the HTML file parser /\n\t    Javascript normalizer. Issue affects versions 0.104.0 through\n\t    0.104.2 and LTS version 0.103.5 and prior versions. Thank you to\n\t    Michał Dardas for reporting this issue.</p>\n\t  <p>Fixed a possible multi-byte heap buffer overflow write\n\t    vulnerability in the signature database load module. The fix was\n\t    to update the vendored regex library to the latest version.\n\t    Issue affects versions 0.104.0 through 0.104.2 and LTS version\n\t    0.103.5 and prior versions. Thank you to Michał Dardas for\n\t    reporting this issue.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.clamav.net/2022/05/clamav-01050-01043-01036-released.html#more"
+		],
+		"cvename": [
+			"CVE-2022-20803",
+			"CVE-2022-20770",
+			"CVE-2022-20796",
+			"CVE-2022-20771",
+			"CVE-2022-20785",
+			"CVE-2022-20792"
+		]
+	},
+	"dates": {
+		"discovery": "2022-05-04",
+		"entry": "2022-05-19"
+	}
 }

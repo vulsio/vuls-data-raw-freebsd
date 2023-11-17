@@ -1,72 +1,72 @@
 {
-  "vid": "1c27a706-e3aa-11e8-b77a-6cc21735f730",
-  "topic": "PostgreSQL -- SQL injection in pg_upgrade and pg_dump",
-  "affects": [
-    {
-      "name": [
-        "postgresql10-server"
-      ],
-      "range": [
-        {
-          "lt": "10.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql96-server"
-      ],
-      "range": [
-        {
-          "lt": "9.6.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql95-server"
-      ],
-      "range": [
-        {
-          "lt": "9.5.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql94-server"
-      ],
-      "range": [
-        {
-          "lt": "9.4.20"
-        }
-      ]
-    },
-    {
-      "name": [
-        "postgresql93-server"
-      ],
-      "range": [
-        {
-          "lt": "9.3.25"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1878/\">\n\t  <p>CVE-2018-16850: SQL injection in pg_upgrade and pg_dump,\n\t  via CREATE TRIGGER ... REFERENCING.</p>\n\t  <p>Using a purpose-crafted trigger definition, an attacker can run\n\t  arbitrary SQL statements with superuser privileges when a superuser\n\t  runs pg_upgrade on the database or during a pg_dump dump/restore\n\t  cycle. This attack requires a CREATE privilege on some non-temporary\n\t  schema or a TRIGGER privilege on a table. This is exploitable in the\n\t  default PostgreSQL configuration, where all users have CREATE\n\t  privilege on public schema.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.postgresql.org/about/news/1905/"
-    ],
-    "cvename": [
-      "CVE-2018-16850"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-08",
-    "entry": "2018-11-08"
-  }
+	"vid": "1c27a706-e3aa-11e8-b77a-6cc21735f730",
+	"topic": "PostgreSQL -- SQL injection in pg_upgrade and pg_dump",
+	"affects": [
+		{
+			"name": [
+				"postgresql10-server"
+			],
+			"range": [
+				{
+					"lt": "10.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql96-server"
+			],
+			"range": [
+				{
+					"lt": "9.6.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql95-server"
+			],
+			"range": [
+				{
+					"lt": "9.5.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql94-server"
+			],
+			"range": [
+				{
+					"lt": "9.4.20"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql93-server"
+			],
+			"range": [
+				{
+					"lt": "9.3.25"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/about/news/1878/\">\n\t  <p>CVE-2018-16850: SQL injection in pg_upgrade and pg_dump,\n\t  via CREATE TRIGGER ... REFERENCING.</p>\n\t  <p>Using a purpose-crafted trigger definition, an attacker can run\n\t  arbitrary SQL statements with superuser privileges when a superuser\n\t  runs pg_upgrade on the database or during a pg_dump dump/restore\n\t  cycle. This attack requires a CREATE privilege on some non-temporary\n\t  schema or a TRIGGER privilege on a table. This is exploitable in the\n\t  default PostgreSQL configuration, where all users have CREATE\n\t  privilege on public schema.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.postgresql.org/about/news/1905/"
+		],
+		"cvename": [
+			"CVE-2018-16850"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-08",
+		"entry": "2018-11-08"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "7844789a-9b1f-11ed-9a3f-b42e991fc52e",
-  "topic": "net/krill -- DoS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "krill"
-      ],
-      "range": [
-        {
-          "lt": "0.12.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0158\">\n\t<p>\n\t\tNLnet Labs Krill supports direct access to the RRDP repository\n\t\tcontent through its built-in web server at the \"/rrdp\" endpoint.\n\t\tPrior to 0.12.1 a direct query for any existing directory under\n\t\t\"/rrdp/\", rather than an RRDP file such as \"/rrdp/notification.xml\"\n\t\tas would be expected, causes Krill to crash. If the built-in \"/rrdp\"\n\t\tendpoint is exposed directly to the internet, then malicious remote\n\t\tparties can cause the publication server to crash. The repository\n\t\tcontent is not affected by this, but the availability of the server\n\t\tand repository can cause issues if this attack is persistent and is\n\t\tnot mitigated. .\n\t</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0158"
-    ],
-    "cvename": [
-      "CVE-2023-0158"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-01-10",
-    "entry": "2023-01-23"
-  }
+	"vid": "7844789a-9b1f-11ed-9a3f-b42e991fc52e",
+	"topic": "net/krill -- DoS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"krill"
+			],
+			"range": [
+				{
+					"lt": "0.12.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0158\">\n\t<p>\n\t\tNLnet Labs Krill supports direct access to the RRDP repository\n\t\tcontent through its built-in web server at the \"/rrdp\" endpoint.\n\t\tPrior to 0.12.1 a direct query for any existing directory under\n\t\t\"/rrdp/\", rather than an RRDP file such as \"/rrdp/notification.xml\"\n\t\tas would be expected, causes Krill to crash. If the built-in \"/rrdp\"\n\t\tendpoint is exposed directly to the internet, then malicious remote\n\t\tparties can cause the publication server to crash. The repository\n\t\tcontent is not affected by this, but the availability of the server\n\t\tand repository can cause issues if this attack is persistent and is\n\t\tnot mitigated. .\n\t</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0158"
+		],
+		"cvename": [
+			"CVE-2023-0158"
+		]
+	},
+	"dates": {
+		"discovery": "2023-01-10",
+		"entry": "2023-01-23"
+	}
 }

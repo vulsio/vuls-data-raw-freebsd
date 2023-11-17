@@ -1,35 +1,35 @@
 {
-  "vid": "38c76fcf-1744-11da-978e-0001020eed82",
-  "topic": "pam_ldap -- authentication bypass vulnerability",
-  "affects": [
-    {
-      "name": [
-        "pam_ldap"
-      ],
-      "range": [
-        {
-          "lt": "1.8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Luke Howard reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=166163\">\n\t  <p>If a pam_ldap client authenticates against an LDAP server\n\t    that returns a passwordPolicyResponse control, but omits\n\t    the optional \"error\" field of the\n\t    PasswordPolicyResponseValue, then the LDAP authentication\n\t    result will be ignored and the authentication step will\n\t    always succeed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=166163"
-    ],
-    "cvename": [
-      "CVE-2005-2641"
-    ],
-    "cert_vu": [
-      "778916"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-08-22",
-    "entry": "2005-08-27"
-  }
+	"vid": "38c76fcf-1744-11da-978e-0001020eed82",
+	"topic": "pam_ldap -- authentication bypass vulnerability",
+	"affects": [
+		{
+			"name": [
+				"pam_ldap"
+			],
+			"range": [
+				{
+					"lt": "1.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Luke Howard reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=166163\">\n\t  <p>If a pam_ldap client authenticates against an LDAP server\n\t    that returns a passwordPolicyResponse control, but omits\n\t    the optional \"error\" field of the\n\t    PasswordPolicyResponseValue, then the LDAP authentication\n\t    result will be ignored and the authentication step will\n\t    always succeed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=166163"
+		],
+		"cvename": [
+			"CVE-2005-2641"
+		],
+		"cert_vu": [
+			"778916"
+		]
+	},
+	"dates": {
+		"discovery": "2005-08-22",
+		"entry": "2005-08-27"
+	}
 }

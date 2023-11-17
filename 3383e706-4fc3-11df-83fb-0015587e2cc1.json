@@ -1,40 +1,40 @@
 {
-  "vid": "3383e706-4fc3-11df-83fb-0015587e2cc1",
-  "topic": "tomcat -- information disclosure vulnerability",
-  "affects": [
-    {
-      "name": [
-        "tomcat"
-      ],
-      "range": [
-        {
-          "lt": "5.5.30",
-          "gt": "5.5.0"
-        },
-        {
-          "lt": "6.0.27",
-          "gt": "6.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache software foundation reports:</p>\n\t<blockquote cite=\"http://seclists.org/bugtraq/2010/Apr/200\">\n\t  <p>The \"WWW-Authenticate\" header for BASIC and DIGEST\n\t    authentication includes a realm name. If a &lt;realm-name&gt;\n\t    element is specified for the application in web.xml it\n\t    will be used. However, a &lt;realm-name&gt; is not\n\t    specified then Tomcat will generate one.</p>\n\t    <p>In some circumstances this can expose the local\n\t    hostname or IP address of the machine running Tomcat.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/bugtraq/2010/Apr/200"
-    ],
-    "cvename": [
-      "CVE-2010-1157"
-    ],
-    "freebsd_pr": [
-      "ports/146022"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-04-22",
-    "entry": "2010-04-24"
-  }
+	"vid": "3383e706-4fc3-11df-83fb-0015587e2cc1",
+	"topic": "tomcat -- information disclosure vulnerability",
+	"affects": [
+		{
+			"name": [
+				"tomcat"
+			],
+			"range": [
+				{
+					"lt": "5.5.30",
+					"gt": "5.5.0"
+				},
+				{
+					"lt": "6.0.27",
+					"gt": "6.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache software foundation reports:</p>\n\t<blockquote cite=\"http://seclists.org/bugtraq/2010/Apr/200\">\n\t  <p>The \"WWW-Authenticate\" header for BASIC and DIGEST\n\t    authentication includes a realm name. If a &lt;realm-name&gt;\n\t    element is specified for the application in web.xml it\n\t    will be used. However, a &lt;realm-name&gt; is not\n\t    specified then Tomcat will generate one.</p>\n\t    <p>In some circumstances this can expose the local\n\t    hostname or IP address of the machine running Tomcat.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/bugtraq/2010/Apr/200"
+		],
+		"cvename": [
+			"CVE-2010-1157"
+		],
+		"freebsd_pr": [
+			"ports/146022"
+		]
+	},
+	"dates": {
+		"discovery": "2010-04-22",
+		"entry": "2010-04-24"
+	}
 }

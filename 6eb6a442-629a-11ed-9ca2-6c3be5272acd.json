@@ -1,59 +1,59 @@
 {
-  "vid": "6eb6a442-629a-11ed-9ca2-6c3be5272acd",
-  "topic": "Grafana -- Privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "8.5.15",
-          "ge": "8.0.0"
-        },
-        {
-          "lt": "9.2.4",
-          "ge": "9.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana8"
-      ],
-      "range": [
-        {
-          "lt": "8.5.15",
-          "ge": "8.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.2.4",
-          "ge": "9.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/11/08/security-release-new-versions-of-grafana-with-critical-and-moderate-fixes-for-cve-2022-39328-cve-2022-39307-and-cve-2022-39306/\">\n\t  <p>Grafana admins can invite other members to the organization they are\n\t  an admin for. When admins add members to the organization, non existing users\n\t  get an email invite, existing members are added directly to the organization.\n\t  When an invite link is sent, it allows users to sign up with whatever\n\t  username/email address the user chooses and become a member of the organization.\n\t  </p>\n\t  <p>The CVSS score for this vulnerability is 6.4 Moderate</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/grafana/grafana/security/advisories/GHSA-2x6g-h2hg-rq84"
-    ],
-    "cvename": [
-      "CVE-2022-39306"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-10-24",
-    "entry": "2022-11-12"
-  }
+	"vid": "6eb6a442-629a-11ed-9ca2-6c3be5272acd",
+	"topic": "Grafana -- Privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "8.5.15",
+					"ge": "8.0.0"
+				},
+				{
+					"lt": "9.2.4",
+					"ge": "9.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana8"
+			],
+			"range": [
+				{
+					"lt": "8.5.15",
+					"ge": "8.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.2.4",
+					"ge": "9.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2022/11/08/security-release-new-versions-of-grafana-with-critical-and-moderate-fixes-for-cve-2022-39328-cve-2022-39307-and-cve-2022-39306/\">\n\t  <p>Grafana admins can invite other members to the organization they are\n\t  an admin for. When admins add members to the organization, non existing users\n\t  get an email invite, existing members are added directly to the organization.\n\t  When an invite link is sent, it allows users to sign up with whatever\n\t  username/email address the user chooses and become a member of the organization.\n\t  </p>\n\t  <p>The CVSS score for this vulnerability is 6.4 Moderate</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/grafana/grafana/security/advisories/GHSA-2x6g-h2hg-rq84"
+		],
+		"cvename": [
+			"CVE-2022-39306"
+		]
+	},
+	"dates": {
+		"discovery": "2022-10-24",
+		"entry": "2022-11-12"
+	}
 }

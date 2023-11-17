@@ -1,33 +1,33 @@
 {
-  "vid": "304409c3-c3ef-11e0-8aa5-485d60cb5385",
-  "topic": "libXfont -- possible local privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "libXfont"
-      ],
-      "range": [
-        {
-          "lt": "1.4.4_1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tomas Hoger reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=725760\">\n\t  <p>The compress/ LZW decompress implentation does not correctly\n\t    handle compressed streams that contain code words that were not\n\t    yet added to the decompression table.  This may lead to\n\t    arbitrary memory corruption.  Successfull exploitation may\n\t    possible lead to a local privilege escalation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=725760"
-    ],
-    "cvename": [
-      "CVE-2011-2895"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-07-26",
-    "entry": "2011-08-11",
-    "modified": "2012-03-13"
-  }
+	"vid": "304409c3-c3ef-11e0-8aa5-485d60cb5385",
+	"topic": "libXfont -- possible local privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"libXfont"
+			],
+			"range": [
+				{
+					"lt": "1.4.4_1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tomas Hoger reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=725760\">\n\t  <p>The compress/ LZW decompress implentation does not correctly\n\t    handle compressed streams that contain code words that were not\n\t    yet added to the decompression table.  This may lead to\n\t    arbitrary memory corruption.  Successfull exploitation may\n\t    possible lead to a local privilege escalation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=725760"
+		],
+		"cvename": [
+			"CVE-2011-2895"
+		]
+	},
+	"dates": {
+		"discovery": "2011-07-26",
+		"entry": "2011-08-11",
+		"modified": "2012-03-13"
+	}
 }

@@ -1,54 +1,54 @@
 {
-  "vid": "60129efe-656d-11e9-8e67-206a8a720317",
-  "topic": "FreeBSD -- EAP-pwd side-channel attack",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "12.0_3",
-          "ge": "12.0"
-        },
-        {
-          "lt": "11.2_9",
-          "ge": "11.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "wpa_supplicant"
-      ],
-      "range": [
-        {
-          "lt": "2.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "hostapd"
-      ],
-      "range": [
-        {
-          "lt": "2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Potential side channel attacks in the SAE implementations used\n\tby both hostapd and wpa_supplicant (see CVE-2019-9494 and VU#871675).\n\tEAP-pwd uses a similar design for deriving PWE from the password and\n\twhile a specific attack against EAP-pwd is not yet known to be tested,\n\tthere is no reason to believe that the EAP-pwd implementation would\n\tbe immune against the type of cache attack that was identified for the\n\tSAE implementation. Since the EAP-pwd implementation in hostapd (EAP\n\tserver) and wpa_supplicant (EAP peer) does not support MODP groups,\n\tthe timing attack described against SAE is not applicable for the\n\tEAP-pwd implementation.</p>\n\t<p>See\n\thttps://w1.fi/security/2019-2/eap-pwd-side-channel-attack.txt\n\tfor a detailed description of the bug.</p>\n\t<h1>Impact:</h1>\n\t<p>All wpa_supplicant and hostapd versions with EAP-pwd support\n\t(CONFIG_EAP_PWD=y in the build configuration and EAP-pwd being enabled\n\tin the runtime configuration).</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-9495"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-04-10",
-    "entry": "2019-04-23"
-  }
+	"vid": "60129efe-656d-11e9-8e67-206a8a720317",
+	"topic": "FreeBSD -- EAP-pwd side-channel attack",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "12.0_3",
+					"ge": "12.0"
+				},
+				{
+					"lt": "11.2_9",
+					"ge": "11.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"wpa_supplicant"
+			],
+			"range": [
+				{
+					"lt": "2.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"hostapd"
+			],
+			"range": [
+				{
+					"lt": "2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Potential side channel attacks in the SAE implementations used\n\tby both hostapd and wpa_supplicant (see CVE-2019-9494 and VU#871675).\n\tEAP-pwd uses a similar design for deriving PWE from the password and\n\twhile a specific attack against EAP-pwd is not yet known to be tested,\n\tthere is no reason to believe that the EAP-pwd implementation would\n\tbe immune against the type of cache attack that was identified for the\n\tSAE implementation. Since the EAP-pwd implementation in hostapd (EAP\n\tserver) and wpa_supplicant (EAP peer) does not support MODP groups,\n\tthe timing attack described against SAE is not applicable for the\n\tEAP-pwd implementation.</p>\n\t<p>See\n\thttps://w1.fi/security/2019-2/eap-pwd-side-channel-attack.txt\n\tfor a detailed description of the bug.</p>\n\t<h1>Impact:</h1>\n\t<p>All wpa_supplicant and hostapd versions with EAP-pwd support\n\t(CONFIG_EAP_PWD=y in the build configuration and EAP-pwd being enabled\n\tin the runtime configuration).</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-9495"
+		]
+	},
+	"dates": {
+		"discovery": "2019-04-10",
+		"entry": "2019-04-23"
+	}
 }

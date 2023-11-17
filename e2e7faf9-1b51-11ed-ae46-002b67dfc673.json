@@ -1,89 +1,89 @@
 {
-  "vid": "e2e7faf9-1b51-11ed-ae46-002b67dfc673",
-  "topic": "Tomcat -- XSS in examples web application",
-  "affects": [
-    {
-      "name": [
-        "tomcat"
-      ],
-      "range": [
-        {
-          "lt": "8.5.81",
-          "ge": "8.5.50"
-        },
-        {
-          "lt": "9.0.64",
-          "ge": "9.0.30"
-        },
-        {
-          "lt": "10.0.22",
-          "ge": "10.0.0-M1"
-        },
-        {
-          "lt": "10.1.0-M16",
-          "ge": "10.1.0-M1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat85"
-      ],
-      "range": [
-        {
-          "lt": "8.5.81",
-          "ge": "8.5.50"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat9"
-      ],
-      "range": [
-        {
-          "lt": "9.0.64",
-          "ge": "9.0.30"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat10"
-      ],
-      "range": [
-        {
-          "lt": "10.0.22",
-          "ge": "10.0.0-M1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat-devel"
-      ],
-      "range": [
-        {
-          "lt": "10.1.0-M16",
-          "ge": "10.1.0-M1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Apache Tomcat reports:</p>\n\t<blockquote cite=\"https://lists.apache.org/thread/k04zk0nq6w57m72w5gb0r6z9ryhmvr4k\">\n\t  <p>The Form authentication example in the examples web application displayed user provided data without filtering, exposing a XSS vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34305"
-    ],
-    "cvename": [
-      "CVE-2022-34305"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-06-22",
-    "entry": "2022-08-14"
-  }
+	"vid": "e2e7faf9-1b51-11ed-ae46-002b67dfc673",
+	"topic": "Tomcat -- XSS in examples web application",
+	"affects": [
+		{
+			"name": [
+				"tomcat"
+			],
+			"range": [
+				{
+					"lt": "8.5.81",
+					"ge": "8.5.50"
+				},
+				{
+					"lt": "9.0.64",
+					"ge": "9.0.30"
+				},
+				{
+					"lt": "10.0.22",
+					"ge": "10.0.0-M1"
+				},
+				{
+					"lt": "10.1.0-M16",
+					"ge": "10.1.0-M1"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat85"
+			],
+			"range": [
+				{
+					"lt": "8.5.81",
+					"ge": "8.5.50"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat9"
+			],
+			"range": [
+				{
+					"lt": "9.0.64",
+					"ge": "9.0.30"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat10"
+			],
+			"range": [
+				{
+					"lt": "10.0.22",
+					"ge": "10.0.0-M1"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat-devel"
+			],
+			"range": [
+				{
+					"lt": "10.1.0-M16",
+					"ge": "10.1.0-M1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Apache Tomcat reports:</p>\n\t<blockquote cite=\"https://lists.apache.org/thread/k04zk0nq6w57m72w5gb0r6z9ryhmvr4k\">\n\t  <p>The Form authentication example in the examples web application displayed user provided data without filtering, exposing a XSS vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34305"
+		],
+		"cvename": [
+			"CVE-2022-34305"
+		]
+	},
+	"dates": {
+		"discovery": "2022-06-22",
+		"entry": "2022-08-14"
+	}
 }

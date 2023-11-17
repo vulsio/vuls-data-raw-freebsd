@@ -1,35 +1,35 @@
 {
-  "vid": "edd201a5-8fc3-11e2-b131-000c299b62e1",
-  "topic": "piwigo -- CSRF/Path Traversal",
-  "affects": [
-    {
-      "name": [
-        "piwigo"
-      ],
-      "range": [
-        {
-          "lt": "2.4.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>High-Tech Bridge Security Research Lab reports:</p>\n\t<blockquote cite=\"http://piwigo.org/releases/2.4.7\">\n\t  <p>The CSRF vulnerability exists due to insufficient verification of the\n\t     HTTP request origin in \"/admin.php\" script. A remote attacker can trick\n\t     a logged-in administrator to visit a specially crafted webpage and\n\t     create arbitrary PHP file on the remote server.</p>\n\t  <p>The path traversal vulnerability exists due to insufficient filtration\n\t     of user-supplied input in \"dl\" HTTP GET parameter passed to\n\t     \"/install.php\" script. The script is present on the system after\n\t     installation by default, and can be accessed by attacker without any\n\t     restrictions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://piwigo.org/bugs/view.php?id=0002843",
-      "http://piwigo.org/bugs/view.php?id=0002844",
-      "http://dl.packetstormsecurity.net/1302-exploits/piwigo246-traversalxsrf.txt"
-    ],
-    "cvename": [
-      "CVE-2013-1468",
-      "CVE-2013-1469"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-02-06",
-    "entry": "2013-03-18"
-  }
+	"vid": "edd201a5-8fc3-11e2-b131-000c299b62e1",
+	"topic": "piwigo -- CSRF/Path Traversal",
+	"affects": [
+		{
+			"name": [
+				"piwigo"
+			],
+			"range": [
+				{
+					"lt": "2.4.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>High-Tech Bridge Security Research Lab reports:</p>\n\t<blockquote cite=\"http://piwigo.org/releases/2.4.7\">\n\t  <p>The CSRF vulnerability exists due to insufficient verification of the\n\t     HTTP request origin in \"/admin.php\" script. A remote attacker can trick\n\t     a logged-in administrator to visit a specially crafted webpage and\n\t     create arbitrary PHP file on the remote server.</p>\n\t  <p>The path traversal vulnerability exists due to insufficient filtration\n\t     of user-supplied input in \"dl\" HTTP GET parameter passed to\n\t     \"/install.php\" script. The script is present on the system after\n\t     installation by default, and can be accessed by attacker without any\n\t     restrictions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://piwigo.org/bugs/view.php?id=0002843",
+			"http://piwigo.org/bugs/view.php?id=0002844",
+			"http://dl.packetstormsecurity.net/1302-exploits/piwigo246-traversalxsrf.txt"
+		],
+		"cvename": [
+			"CVE-2013-1468",
+			"CVE-2013-1469"
+		]
+	},
+	"dates": {
+		"discovery": "2013-02-06",
+		"entry": "2013-03-18"
+	}
 }

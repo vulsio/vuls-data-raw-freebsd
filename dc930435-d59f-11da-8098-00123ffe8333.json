@@ -1,34 +1,34 @@
 {
-  "vid": "dc930435-d59f-11da-8098-00123ffe8333",
-  "topic": "amaya -- Attribute Value Buffer Overflow Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "amaya"
-      ],
-      "range": [
-        {
-          "lt": "9.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19670/\">\n\t  <p>Amaya have two vulnerabilities, which can be exploited by\n\t    malicious people to compromise a user's system.</p>\n\t  <p>The vulnerabilities are caused due to boundary errors within the\n\t    parsing of various attribute values. This can be exploited to cause\n\t    stack-based buffer overflows when a user opens a specially crafted\n\t    HTML document containing certain tags with overly long attribute\n\t    values.</p>\n\t  <p>Successful exploitation allows execution of arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://morph3us.org/advisories/20060412-amaya-94.txt",
-      "http://morph3us.org/advisories/20060412-amaya-94-2.txt",
-      "http://secunia.com/advisories/19670/"
-    ],
-    "cvename": [
-      "CVE-2006-1900"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-04-14",
-    "entry": "2006-04-27"
-  }
+	"vid": "dc930435-d59f-11da-8098-00123ffe8333",
+	"topic": "amaya -- Attribute Value Buffer Overflow Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"amaya"
+			],
+			"range": [
+				{
+					"lt": "9.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19670/\">\n\t  <p>Amaya have two vulnerabilities, which can be exploited by\n\t    malicious people to compromise a user's system.</p>\n\t  <p>The vulnerabilities are caused due to boundary errors within the\n\t    parsing of various attribute values. This can be exploited to cause\n\t    stack-based buffer overflows when a user opens a specially crafted\n\t    HTML document containing certain tags with overly long attribute\n\t    values.</p>\n\t  <p>Successful exploitation allows execution of arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://morph3us.org/advisories/20060412-amaya-94.txt",
+			"http://morph3us.org/advisories/20060412-amaya-94-2.txt",
+			"http://secunia.com/advisories/19670/"
+		],
+		"cvename": [
+			"CVE-2006-1900"
+		]
+	},
+	"dates": {
+		"discovery": "2006-04-14",
+		"entry": "2006-04-27"
+	}
 }

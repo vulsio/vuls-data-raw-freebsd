@@ -1,107 +1,107 @@
 {
-  "vid": "0592f49f-b3b8-4260-b648-d1718762656c",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "68.0_4,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "waterfox"
-      ],
-      "range": [
-        {
-          "lt": "56.2.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey",
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.53.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox-esr"
-      ],
-      "range": [
-        {
-          "lt": "60.8.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "60.8.0,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libxul",
-        "thunderbird",
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "60.8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-21/\">\n\t  <p>CVE-2019-9811: Sandbox escape via installation of malicious language pack</p>\n\t  <p>CVE-2019-11711: Script injection within domain through inner window reuse</p>\n\t  <p>CVE-2019-11712: Cross-origin POST requests can be made with NPAPI plugins by following 308 redirects</p>\n\t  <p>CVE-2019-11713: Use-after-free with HTTP/2 cached stream</p>\n\t  <p>CVE-2019-11714: NeckoChild can trigger crash when accessed off of main thread</p>\n\t  <p>CVE-2019-11729: Empty or malformed p256-ECDH public keys may trigger a segmentation fault</p>\n\t  <p>CVE-2019-11715: HTML parsing error can contribute to content XSS</p>\n\t  <p>CVE-2019-11716: globalThis not enumerable until accessed</p>\n\t  <p>CVE-2019-11717: Caret character improperly escaped in origins</p>\n\t  <p>CVE-2019-11718: Activity Stream writes unsanitized content to innerHTML</p>\n\t  <p>CVE-2019-11719: Out-of-bounds read when importing curve25519 private key</p>\n\t  <p>CVE-2019-11720: Character encoding XSS vulnerability</p>\n\t  <p>CVE-2019-11721: Domain spoofing through unicode latin 'kra' character</p>\n\t  <p>CVE-2019-11730: Same-origin policy treats all files in a directory as having the same-origin</p>\n\t  <p>CVE-2019-11723: Cookie leakage during add-on fetching across private browsing boundaries</p>\n\t  <p>CVE-2019-11724: Retired site input.mozilla.org has remote troubleshooting permissions</p>\n\t  <p>CVE-2019-11725: Websocket resources bypass safebrowsing protections</p>\n\t  <p>CVE-2019-11727: PKCS#1 v1.5 signatures can be used for TLS 1.3</p>\n\t  <p>CVE-2019-11728: Port scanning through Alt-Svc header</p>\n\t  <p>CVE-2019-11710: Memory safety bugs fixed in Firefox 68</p>\n\t  <p>CVE-2019-11709: Memory safety bugs fixed in Firefox 68 and Firefox ESR 60.8</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2019-21/",
-      "https://www.mozilla.org/security/advisories/mfsa2019-22/"
-    ],
-    "cvename": [
-      "CVE-2019-11709",
-      "CVE-2019-11710",
-      "CVE-2019-11711",
-      "CVE-2019-11712",
-      "CVE-2019-11713",
-      "CVE-2019-11714",
-      "CVE-2019-11715",
-      "CVE-2019-11716",
-      "CVE-2019-11717",
-      "CVE-2019-11718",
-      "CVE-2019-11719",
-      "CVE-2019-11720",
-      "CVE-2019-11721",
-      "CVE-2019-11723",
-      "CVE-2019-11724",
-      "CVE-2019-11725",
-      "CVE-2019-11727",
-      "CVE-2019-11728",
-      "CVE-2019-11729",
-      "CVE-2019-11730",
-      "CVE-2019-9811"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-07-09",
-    "entry": "2019-07-09",
-    "modified": "2019-07-23"
-  }
+	"vid": "0592f49f-b3b8-4260-b648-d1718762656c",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "68.0_4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"waterfox"
+			],
+			"range": [
+				{
+					"lt": "56.2.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey",
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.53.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox-esr"
+			],
+			"range": [
+				{
+					"lt": "60.8.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "60.8.0,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"libxul",
+				"thunderbird",
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "60.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2019-21/\">\n\t  <p>CVE-2019-9811: Sandbox escape via installation of malicious language pack</p>\n\t  <p>CVE-2019-11711: Script injection within domain through inner window reuse</p>\n\t  <p>CVE-2019-11712: Cross-origin POST requests can be made with NPAPI plugins by following 308 redirects</p>\n\t  <p>CVE-2019-11713: Use-after-free with HTTP/2 cached stream</p>\n\t  <p>CVE-2019-11714: NeckoChild can trigger crash when accessed off of main thread</p>\n\t  <p>CVE-2019-11729: Empty or malformed p256-ECDH public keys may trigger a segmentation fault</p>\n\t  <p>CVE-2019-11715: HTML parsing error can contribute to content XSS</p>\n\t  <p>CVE-2019-11716: globalThis not enumerable until accessed</p>\n\t  <p>CVE-2019-11717: Caret character improperly escaped in origins</p>\n\t  <p>CVE-2019-11718: Activity Stream writes unsanitized content to innerHTML</p>\n\t  <p>CVE-2019-11719: Out-of-bounds read when importing curve25519 private key</p>\n\t  <p>CVE-2019-11720: Character encoding XSS vulnerability</p>\n\t  <p>CVE-2019-11721: Domain spoofing through unicode latin 'kra' character</p>\n\t  <p>CVE-2019-11730: Same-origin policy treats all files in a directory as having the same-origin</p>\n\t  <p>CVE-2019-11723: Cookie leakage during add-on fetching across private browsing boundaries</p>\n\t  <p>CVE-2019-11724: Retired site input.mozilla.org has remote troubleshooting permissions</p>\n\t  <p>CVE-2019-11725: Websocket resources bypass safebrowsing protections</p>\n\t  <p>CVE-2019-11727: PKCS#1 v1.5 signatures can be used for TLS 1.3</p>\n\t  <p>CVE-2019-11728: Port scanning through Alt-Svc header</p>\n\t  <p>CVE-2019-11710: Memory safety bugs fixed in Firefox 68</p>\n\t  <p>CVE-2019-11709: Memory safety bugs fixed in Firefox 68 and Firefox ESR 60.8</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2019-21/",
+			"https://www.mozilla.org/security/advisories/mfsa2019-22/"
+		],
+		"cvename": [
+			"CVE-2019-11709",
+			"CVE-2019-11710",
+			"CVE-2019-11711",
+			"CVE-2019-11712",
+			"CVE-2019-11713",
+			"CVE-2019-11714",
+			"CVE-2019-11715",
+			"CVE-2019-11716",
+			"CVE-2019-11717",
+			"CVE-2019-11718",
+			"CVE-2019-11719",
+			"CVE-2019-11720",
+			"CVE-2019-11721",
+			"CVE-2019-11723",
+			"CVE-2019-11724",
+			"CVE-2019-11725",
+			"CVE-2019-11727",
+			"CVE-2019-11728",
+			"CVE-2019-11729",
+			"CVE-2019-11730",
+			"CVE-2019-9811"
+		]
+	},
+	"dates": {
+		"discovery": "2019-07-09",
+		"entry": "2019-07-09",
+		"modified": "2019-07-23"
+	}
 }

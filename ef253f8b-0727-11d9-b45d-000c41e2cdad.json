@@ -1,113 +1,113 @@
 {
-  "vid": "ef253f8b-0727-11d9-b45d-000c41e2cdad",
-  "topic": "xpm -- image decoding vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "agenda-snow-libs",
-        "linux_base",
-        "open-motif-devel",
-        "mupad",
-        "zh-cle_base"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libXpm"
-      ],
-      "range": [
-        {
-          "lt": "3.5.1_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "XFree86-libraries"
-      ],
-      "range": [
-        {
-          "lt": "4.4.0_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xorg-libraries"
-      ],
-      "range": [
-        {
-          "lt": "6.7.0_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "lesstif"
-      ],
-      "range": [
-        {
-          "lt": "0.93.96,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xpm"
-      ],
-      "range": [
-        {
-          "lt": "3.4k_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-openmotif"
-      ],
-      "range": [
-        {
-          "lt": "2.2.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "open-motif"
-      ],
-      "range": [
-        {
-          "lt": "2.2.3_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Chris Evans discovered several vulnerabilities in the libXpm\n\t  image decoder:</p>\n\t<ul>\n\t  <li>A stack-based buffer overflow in xpmParseColors</li>\n\t  <li>An integer overflow in xpmParseColors</li>\n\t  <li>A stack-based buffer overflow in ParsePixels and\n\t    ParseAndPutPixels</li>\n\t</ul>\n\t<p>The X11R6.8.1 release announcement reads:</p>\n\t<blockquote cite=\"http://freedesktop.org/pipermail/xorg/2004-September/003172.html\">\n\t  <p>This version is purely a security release, addressing\n\t    multiple integer and stack overflows in libXpm, the X\n\t    Pixmap library; all known versions of X (both XFree86\n\t    and X.Org) are affected, so all users of X are strongly\n\t    encouraged to upgrade.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://freedesktop.org/pipermail/xorg/2004-September/003172.html",
-      "http://scary.beasts.org/security/CESA-2004-003.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0687",
-      "CVE-2004-0688"
-    ],
-    "cert_vu": [
-      "537878",
-      "882750"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-15",
-    "entry": "2004-09-15",
-    "modified": "2005-01-03"
-  }
+	"vid": "ef253f8b-0727-11d9-b45d-000c41e2cdad",
+	"topic": "xpm -- image decoding vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"agenda-snow-libs",
+				"linux_base",
+				"open-motif-devel",
+				"mupad",
+				"zh-cle_base"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"libXpm"
+			],
+			"range": [
+				{
+					"lt": "3.5.1_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"XFree86-libraries"
+			],
+			"range": [
+				{
+					"lt": "4.4.0_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-libraries"
+			],
+			"range": [
+				{
+					"lt": "6.7.0_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"lesstif"
+			],
+			"range": [
+				{
+					"lt": "0.93.96,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"xpm"
+			],
+			"range": [
+				{
+					"lt": "3.4k_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-openmotif"
+			],
+			"range": [
+				{
+					"lt": "2.2.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"open-motif"
+			],
+			"range": [
+				{
+					"lt": "2.2.3_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Chris Evans discovered several vulnerabilities in the libXpm\n\t  image decoder:</p>\n\t<ul>\n\t  <li>A stack-based buffer overflow in xpmParseColors</li>\n\t  <li>An integer overflow in xpmParseColors</li>\n\t  <li>A stack-based buffer overflow in ParsePixels and\n\t    ParseAndPutPixels</li>\n\t</ul>\n\t<p>The X11R6.8.1 release announcement reads:</p>\n\t<blockquote cite=\"http://freedesktop.org/pipermail/xorg/2004-September/003172.html\">\n\t  <p>This version is purely a security release, addressing\n\t    multiple integer and stack overflows in libXpm, the X\n\t    Pixmap library; all known versions of X (both XFree86\n\t    and X.Org) are affected, so all users of X are strongly\n\t    encouraged to upgrade.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://freedesktop.org/pipermail/xorg/2004-September/003172.html",
+			"http://scary.beasts.org/security/CESA-2004-003.txt"
+		],
+		"cvename": [
+			"CVE-2004-0687",
+			"CVE-2004-0688"
+		],
+		"cert_vu": [
+			"537878",
+			"882750"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-15",
+		"entry": "2004-09-15",
+		"modified": "2005-01-03"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "0e575ed3-0764-11dc-a80b-0016179b2dd5",
-  "topic": "squirrelmail -- Cross site scripting in HTML filter",
-  "affects": [
-    {
-      "name": [
-        "squirrelmail"
-      ],
-      "range": [
-        {
-          "lt": "1.4.9a",
-          "ge": "1.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The SquirrelMail developers report:</p>\n\t<blockquote cite=\"http://www.squirrelmail.org/security/issue/2007-05-09\">\n\t  <p>Multiple cross-site scripting (XSS) vulnerabilities in the HTML\n\t    filter in SquirrelMail 1.4.0 through 1.4.9a allow remote attackers\n\t    to inject arbitrary web script or HTML via the (1) data: URI in an\n\t    HTML e-mail attachment or (2) various non-ASCII character sets that\n\t    are not properly filtered when viewed with Microsoft Internet\n\t    Explorer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squirrelmail.org/security/issue/2007-05-09"
-    ],
-    "cvename": [
-      "CVE-2007-1262"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-05-09",
-    "entry": "2007-05-21"
-  }
+	"vid": "0e575ed3-0764-11dc-a80b-0016179b2dd5",
+	"topic": "squirrelmail -- Cross site scripting in HTML filter",
+	"affects": [
+		{
+			"name": [
+				"squirrelmail"
+			],
+			"range": [
+				{
+					"lt": "1.4.9a",
+					"ge": "1.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The SquirrelMail developers report:</p>\n\t<blockquote cite=\"http://www.squirrelmail.org/security/issue/2007-05-09\">\n\t  <p>Multiple cross-site scripting (XSS) vulnerabilities in the HTML\n\t    filter in SquirrelMail 1.4.0 through 1.4.9a allow remote attackers\n\t    to inject arbitrary web script or HTML via the (1) data: URI in an\n\t    HTML e-mail attachment or (2) various non-ASCII character sets that\n\t    are not properly filtered when viewed with Microsoft Internet\n\t    Explorer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squirrelmail.org/security/issue/2007-05-09"
+		],
+		"cvename": [
+			"CVE-2007-1262"
+		]
+	},
+	"dates": {
+		"discovery": "2007-05-09",
+		"entry": "2007-05-21"
+	}
 }

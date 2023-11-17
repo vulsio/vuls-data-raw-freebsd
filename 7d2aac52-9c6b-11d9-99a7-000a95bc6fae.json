@@ -1,125 +1,125 @@
 {
-  "vid": "7d2aac52-9c6b-11d9-99a7-000a95bc6fae",
-  "topic": "mozilla -- heap buffer overflow in GIF image processing",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "thunderbird",
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.6,2"
-        },
-        {
-          "ge": "1.8.*,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.6"
-        },
-        {
-          "ge": "1.8.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "de-netscape7",
-        "fr-linux-netscape",
-        "fr-netscape7",
-        "ja-linux-netscape",
-        "ja-netscape7",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk1",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory states:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-31.html\">\n\t  <p>An <em>(sic)</em> GIF processing error when parsing the\n\t    obsolete Netscape extension 2 can lead to an exploitable\n\t    heap overrun, allowing an attacker to run arbitrary code on\n\t    the user's machine.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/security/announce/mfsa2005-30.html",
-      "http://xforce.iss.net/xforce/alerts/id/191",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=285595"
-    ],
-    "cvename": [
-      "CVE-2005-0399"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-03-10",
-    "entry": "2005-03-24"
-  }
+	"vid": "7d2aac52-9c6b-11d9-99a7-000a95bc6fae",
+	"topic": "mozilla -- heap buffer overflow in GIF image processing",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"thunderbird",
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.6,2"
+				},
+				{
+					"ge": "1.8.*,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.6"
+				},
+				{
+					"ge": "1.8.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"de-netscape7",
+				"fr-linux-netscape",
+				"fr-netscape7",
+				"ja-linux-netscape",
+				"ja-netscape7",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk1",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory states:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-31.html\">\n\t  <p>An <em>(sic)</em> GIF processing error when parsing the\n\t    obsolete Netscape extension 2 can lead to an exploitable\n\t    heap overrun, allowing an attacker to run arbitrary code on\n\t    the user's machine.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/security/announce/mfsa2005-30.html",
+			"http://xforce.iss.net/xforce/alerts/id/191",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=285595"
+		],
+		"cvename": [
+			"CVE-2005-0399"
+		]
+	},
+	"dates": {
+		"discovery": "2005-03-10",
+		"entry": "2005-03-24"
+	}
 }

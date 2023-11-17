@@ -1,32 +1,32 @@
 {
-  "vid": "3042c33a-f237-11df-9d02-0018fe623f2b",
-  "topic": "openssl -- TLS extension parsing race condition",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.0_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSSL Team reports:</p>\n\t<blockquote cite=\"http://openssl.org/news/secadv_20101116.txt\">\n\t  <p>Rob Hulswit has found a flaw in the OpenSSL TLS server extension\n\t    code parsing which on affected servers can be exploited in a buffer\n\t    overrun attack.</p>\n\t  <p>Any OpenSSL based TLS server is vulnerable if it is multi-threaded\n\t    and uses OpenSSL's internal caching mechanism. Servers that are\n\t    multi-process and/or disable internal session caching are NOT\n\t    affected.</p>\n\t  <p>In particular the Apache HTTP server (which never uses OpenSSL\n\t    internal caching) and Stunnel (which includes its own workaround)\n\t    are NOT affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://openssl.org/news/secadv_20101116.txt"
-    ],
-    "cvename": [
-      "CVE-2010-3864"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-10-08",
-    "entry": "2010-11-17"
-  }
+	"vid": "3042c33a-f237-11df-9d02-0018fe623f2b",
+	"topic": "openssl -- TLS extension parsing race condition",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.0_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSSL Team reports:</p>\n\t<blockquote cite=\"http://openssl.org/news/secadv_20101116.txt\">\n\t  <p>Rob Hulswit has found a flaw in the OpenSSL TLS server extension\n\t    code parsing which on affected servers can be exploited in a buffer\n\t    overrun attack.</p>\n\t  <p>Any OpenSSL based TLS server is vulnerable if it is multi-threaded\n\t    and uses OpenSSL's internal caching mechanism. Servers that are\n\t    multi-process and/or disable internal session caching are NOT\n\t    affected.</p>\n\t  <p>In particular the Apache HTTP server (which never uses OpenSSL\n\t    internal caching) and Stunnel (which includes its own workaround)\n\t    are NOT affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://openssl.org/news/secadv_20101116.txt"
+		],
+		"cvename": [
+			"CVE-2010-3864"
+		]
+	},
+	"dates": {
+		"discovery": "2010-10-08",
+		"entry": "2010-11-17"
+	}
 }

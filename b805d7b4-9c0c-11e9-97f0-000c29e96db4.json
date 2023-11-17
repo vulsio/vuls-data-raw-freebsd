@@ -1,59 +1,59 @@
 {
-  "vid": "b805d7b4-9c0c-11e9-97f0-000c29e96db4",
-  "topic": "Django -- Incorrect HTTP detection with reverse-proxy connecting via HTTPS",
-  "affects": [
-    {
-      "name": [
-        "py27-django111",
-        "py35-django111",
-        "py36-django111",
-        "py37-django111"
-      ],
-      "range": [
-        {
-          "lt": "1.11.22"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py35-django21",
-        "py36-django21",
-        "py37-django21"
-      ],
-      "range": [
-        {
-          "lt": "2.1.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py35-django22",
-        "py36-django22",
-        "py37-django22"
-      ],
-      "range": [
-        {
-          "lt": "2.2.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django security releases issued:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2019/jul/01/security-releases/\">\n\t  <p>When deployed behind a reverse-proxy connecting to Django via HTTPS,\n\t    django.http.HttpRequest.scheme would incorrectly detect client requests\n\t    made via HTTP as using HTTPS. This entails incorrect results for is_secure(),\n\t    and build_absolute_uri(), and that HTTP requests would not be redirected to\n\t    HTTPS in accordance with SECURE_SSL_REDIRECT.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.djangoproject.com/weblog/2019/jul/01/security-releases/"
-    ],
-    "cvename": [
-      "CVE-2019-12781"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-07-01",
-    "entry": "2019-07-01"
-  }
+	"vid": "b805d7b4-9c0c-11e9-97f0-000c29e96db4",
+	"topic": "Django -- Incorrect HTTP detection with reverse-proxy connecting via HTTPS",
+	"affects": [
+		{
+			"name": [
+				"py27-django111",
+				"py35-django111",
+				"py36-django111",
+				"py37-django111"
+			],
+			"range": [
+				{
+					"lt": "1.11.22"
+				}
+			]
+		},
+		{
+			"name": [
+				"py35-django21",
+				"py36-django21",
+				"py37-django21"
+			],
+			"range": [
+				{
+					"lt": "2.1.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"py35-django22",
+				"py36-django22",
+				"py37-django22"
+			],
+			"range": [
+				{
+					"lt": "2.2.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django security releases issued:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2019/jul/01/security-releases/\">\n\t  <p>When deployed behind a reverse-proxy connecting to Django via HTTPS,\n\t    django.http.HttpRequest.scheme would incorrectly detect client requests\n\t    made via HTTP as using HTTPS. This entails incorrect results for is_secure(),\n\t    and build_absolute_uri(), and that HTTP requests would not be redirected to\n\t    HTTPS in accordance with SECURE_SSL_REDIRECT.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2019/jul/01/security-releases/"
+		],
+		"cvename": [
+			"CVE-2019-12781"
+		]
+	},
+	"dates": {
+		"discovery": "2019-07-01",
+		"entry": "2019-07-01"
+	}
 }

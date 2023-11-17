@@ -1,56 +1,56 @@
 {
-  "vid": "04422df1-40d8-11ed-9be7-454b1dd82c64",
-  "topic": "Gitlab -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "15.4.1",
-          "ge": "15.4.0"
-        },
-        {
-          "lt": "15.3.4",
-          "ge": "15.3.0"
-        },
-        {
-          "lt": "15.2.5",
-          "ge": "9.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/09/29/security-release-gitlab-15-4-1-released/\">\n\t  <p>Denial of Service via cloning an issue</p>\n\t  <p>Arbitrary PUT request as victim user through Sentry error list</p>\n\t  <p>Content injection via External Status Checks</p>\n\t  <p>Project maintainers can access Datadog API Key from logs</p>\n\t  <p>Unsafe serialization of Json data could lead to sensitive data leakage</p>\n\t  <p>Import bug allows importing of private local git repos</p>\n\t  <p>Maintainer can leak Github access tokens by changing integration URL (even after 15.2.1 patch)</p>\n\t  <p>Unauthorized users able to create issues in any project</p>\n\t  <p>Bypass group IP restriction on Dependency Proxy</p>\n\t  <p>Healthcheck endpoint allow list can be bypassed when accessed over HTTP in an HTTPS enabled system</p>\n\t  <p>Disclosure of Todo details to guest users</p>\n\t  <p>A user's primary email may be disclosed through group member events webhooks</p>\n\t  <p>Content manipulation due to branch/tag name confusion with the default branch name</p>\n\t  <p>Leakage of email addresses in WebHook logs</p>\n\t  <p>Specially crafted output makes job logs inaccessible</p>\n\t  <p>Enforce editing approval rules on project level</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2022/09/29/security-release-gitlab-15-4-1-released/"
-    ],
-    "cvename": [
-      "CVE-2022-3283",
-      "CVE-2022-3060",
-      "CVE-2022-2904",
-      "CVE-2022-3018",
-      "CVE-2022-3291",
-      "CVE-2022-3067",
-      "CVE-2022-2882",
-      "CVE-2022-3066",
-      "CVE-2022-3286",
-      "CVE-2022-3285",
-      "CVE-2022-3330",
-      "CVE-2022-3351",
-      "CVE-2022-3288",
-      "CVE-2022-3293",
-      "CVE-2022-3279",
-      "CVE-2022-3325"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-09-29",
-    "entry": "2022-09-30"
-  }
+	"vid": "04422df1-40d8-11ed-9be7-454b1dd82c64",
+	"topic": "Gitlab -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "15.4.1",
+					"ge": "15.4.0"
+				},
+				{
+					"lt": "15.3.4",
+					"ge": "15.3.0"
+				},
+				{
+					"lt": "15.2.5",
+					"ge": "9.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/09/29/security-release-gitlab-15-4-1-released/\">\n\t  <p>Denial of Service via cloning an issue</p>\n\t  <p>Arbitrary PUT request as victim user through Sentry error list</p>\n\t  <p>Content injection via External Status Checks</p>\n\t  <p>Project maintainers can access Datadog API Key from logs</p>\n\t  <p>Unsafe serialization of Json data could lead to sensitive data leakage</p>\n\t  <p>Import bug allows importing of private local git repos</p>\n\t  <p>Maintainer can leak Github access tokens by changing integration URL (even after 15.2.1 patch)</p>\n\t  <p>Unauthorized users able to create issues in any project</p>\n\t  <p>Bypass group IP restriction on Dependency Proxy</p>\n\t  <p>Healthcheck endpoint allow list can be bypassed when accessed over HTTP in an HTTPS enabled system</p>\n\t  <p>Disclosure of Todo details to guest users</p>\n\t  <p>A user's primary email may be disclosed through group member events webhooks</p>\n\t  <p>Content manipulation due to branch/tag name confusion with the default branch name</p>\n\t  <p>Leakage of email addresses in WebHook logs</p>\n\t  <p>Specially crafted output makes job logs inaccessible</p>\n\t  <p>Enforce editing approval rules on project level</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2022/09/29/security-release-gitlab-15-4-1-released/"
+		],
+		"cvename": [
+			"CVE-2022-3283",
+			"CVE-2022-3060",
+			"CVE-2022-2904",
+			"CVE-2022-3018",
+			"CVE-2022-3291",
+			"CVE-2022-3067",
+			"CVE-2022-2882",
+			"CVE-2022-3066",
+			"CVE-2022-3286",
+			"CVE-2022-3285",
+			"CVE-2022-3330",
+			"CVE-2022-3351",
+			"CVE-2022-3288",
+			"CVE-2022-3293",
+			"CVE-2022-3279",
+			"CVE-2022-3325"
+		]
+	},
+	"dates": {
+		"discovery": "2022-09-29",
+		"entry": "2022-09-30"
+	}
 }

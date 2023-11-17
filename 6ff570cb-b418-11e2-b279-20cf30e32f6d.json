@@ -1,29 +1,29 @@
 {
-  "vid": "6ff570cb-b418-11e2-b279-20cf30e32f6d",
-  "topic": "strongSwan -- ECDSA signature verification issue",
-  "affects": [
-    {
-      "name": [
-        "strongswan"
-      ],
-      "range": [
-        {
-          "lt": "5.0.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>strongSwan security team reports:</p>\n\t<blockquote cite=\"http://www.strongswan.org/blog/2013/04/30/strongswan-5.0.4-released-%28cve-2013-2944%29.html\">\n\t  <p>If the openssl plugin is used for ECDSA signature verification an empty,\n\t    zeroed or otherwise invalid signature is handled as a legitimate one.\n\t    Both IKEv1 and IKEv2 are affected.</p>\n\t  <p>Affected are only installations that have enabled and loaded the OpenSSL\n\t    crypto backend (--enable-openssl). Builds using the default crypto backends\n\t    are not affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2013-2944"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-04-30",
-    "entry": "2013-05-03"
-  }
+	"vid": "6ff570cb-b418-11e2-b279-20cf30e32f6d",
+	"topic": "strongSwan -- ECDSA signature verification issue",
+	"affects": [
+		{
+			"name": [
+				"strongswan"
+			],
+			"range": [
+				{
+					"lt": "5.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>strongSwan security team reports:</p>\n\t<blockquote cite=\"http://www.strongswan.org/blog/2013/04/30/strongswan-5.0.4-released-%28cve-2013-2944%29.html\">\n\t  <p>If the openssl plugin is used for ECDSA signature verification an empty,\n\t    zeroed or otherwise invalid signature is handled as a legitimate one.\n\t    Both IKEv1 and IKEv2 are affected.</p>\n\t  <p>Affected are only installations that have enabled and loaded the OpenSSL\n\t    crypto backend (--enable-openssl). Builds using the default crypto backends\n\t    are not affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2013-2944"
+		]
+	},
+	"dates": {
+		"discovery": "2013-04-30",
+		"entry": "2013-05-03"
+	}
 }

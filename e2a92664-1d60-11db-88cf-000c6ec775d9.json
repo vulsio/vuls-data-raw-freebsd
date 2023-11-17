@@ -1,118 +1,118 @@
 {
-  "vid": "e2a92664-1d60-11db-88cf-000c6ec775d9",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.5.0.5,1"
-        },
-        {
-          "lt": "2.0_1,1",
-          "gt": "2.*,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.5.0.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox-devel"
-      ],
-      "range": [
-        {
-          "lt": "3.0.a2006.07.26"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey",
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "1.0.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "thunderbird",
-        "linux-thunderbird",
-        "mozilla-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "1.5.0.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla",
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports of multiple\n\t  issues.  Several of which can be used to run arbitrary code\n\t  with the privilege of the user running the program.</p>\n\t<blockquote cite=\"http://www.mozilla.org/projects/security/known-vulnerabilities.html#seamonkey1.0.3\">\n\t  <ul>\n\t    <li>MFSA 2006-56 chrome: scheme loading remote content</li>\n\t    <li>MFSA 2006-55 Crashes with evidence of memory corruption\n\t      (rv:1.8.0.5)</li>\n\t    <li>MFSA 2006-54 XSS with\n\t      XPCNativeWrapper(window).Function(...)</li>\n\t    <li>MFSA 2006-53 UniversalBrowserRead privilege escalation</li>\n\t    <li>MFSA 2006-52 PAC privilege escalation using\n\t      Function.prototype.call</li>\n\t    <li>MFSA 2006-51 Privilege escalation using named-functions\n\t      and redefined \"new Object()\"</li>\n\t    <li>MFSA 2006-50 JavaScript engine vulnerabilities</li>\n\t    <li>MFSA 2006-49 Heap buffer overwrite on malformed VCard</li>\n\t    <li>MFSA 2006-48 JavaScript new Function race condition</li>\n\t    <li>MFSA 2006-47 Native DOM methods can be hijacked across\n\t      domains</li>\n\t    <li>MFSA 2006-46 Memory corruption with simultaneous events</li>\n\t    <li>MFSA 2006-45 Javascript navigator Object Vulnerability</li>\n\t    <li>MFSA 2006-44 Code execution through deleted frame\n\t      reference</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/projects/security/known-vulnerabilities.html#seamonkey1.0.3",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-44.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-45.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-46.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-47.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-48.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-49.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-50.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-51.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-52.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-53.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-54.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-55.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-56.html"
-    ],
-    "cvename": [
-      "CVE-2006-3113",
-      "CVE-2006-3677",
-      "CVE-2006-3801",
-      "CVE-2006-3802",
-      "CVE-2006-3803",
-      "CVE-2006-3804",
-      "CVE-2006-3805",
-      "CVE-2006-3806",
-      "CVE-2006-3807",
-      "CVE-2006-3808",
-      "CVE-2006-3809",
-      "CVE-2006-3810",
-      "CVE-2006-3811",
-      "CVE-2006-3812"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-07-25",
-    "entry": "2006-07-27",
-    "modified": "2006-11-02"
-  }
+	"vid": "e2a92664-1d60-11db-88cf-000c6ec775d9",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.5.0.5,1"
+				},
+				{
+					"lt": "2.0_1,1",
+					"gt": "2.*,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.5.0.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox-devel"
+			],
+			"range": [
+				{
+					"lt": "3.0.a2006.07.26"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey",
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "1.0.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"thunderbird",
+				"linux-thunderbird",
+				"mozilla-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "1.5.0.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla",
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory reports of multiple\n\t  issues.  Several of which can be used to run arbitrary code\n\t  with the privilege of the user running the program.</p>\n\t<blockquote cite=\"http://www.mozilla.org/projects/security/known-vulnerabilities.html#seamonkey1.0.3\">\n\t  <ul>\n\t    <li>MFSA 2006-56 chrome: scheme loading remote content</li>\n\t    <li>MFSA 2006-55 Crashes with evidence of memory corruption\n\t      (rv:1.8.0.5)</li>\n\t    <li>MFSA 2006-54 XSS with\n\t      XPCNativeWrapper(window).Function(...)</li>\n\t    <li>MFSA 2006-53 UniversalBrowserRead privilege escalation</li>\n\t    <li>MFSA 2006-52 PAC privilege escalation using\n\t      Function.prototype.call</li>\n\t    <li>MFSA 2006-51 Privilege escalation using named-functions\n\t      and redefined \"new Object()\"</li>\n\t    <li>MFSA 2006-50 JavaScript engine vulnerabilities</li>\n\t    <li>MFSA 2006-49 Heap buffer overwrite on malformed VCard</li>\n\t    <li>MFSA 2006-48 JavaScript new Function race condition</li>\n\t    <li>MFSA 2006-47 Native DOM methods can be hijacked across\n\t      domains</li>\n\t    <li>MFSA 2006-46 Memory corruption with simultaneous events</li>\n\t    <li>MFSA 2006-45 Javascript navigator Object Vulnerability</li>\n\t    <li>MFSA 2006-44 Code execution through deleted frame\n\t      reference</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/projects/security/known-vulnerabilities.html#seamonkey1.0.3",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-44.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-45.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-46.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-47.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-48.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-49.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-50.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-51.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-52.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-53.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-54.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-55.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-56.html"
+		],
+		"cvename": [
+			"CVE-2006-3113",
+			"CVE-2006-3677",
+			"CVE-2006-3801",
+			"CVE-2006-3802",
+			"CVE-2006-3803",
+			"CVE-2006-3804",
+			"CVE-2006-3805",
+			"CVE-2006-3806",
+			"CVE-2006-3807",
+			"CVE-2006-3808",
+			"CVE-2006-3809",
+			"CVE-2006-3810",
+			"CVE-2006-3811",
+			"CVE-2006-3812"
+		]
+	},
+	"dates": {
+		"discovery": "2006-07-25",
+		"entry": "2006-07-27",
+		"modified": "2006-11-02"
+	}
 }

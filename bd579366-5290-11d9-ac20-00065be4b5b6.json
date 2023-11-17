@@ -1,41 +1,41 @@
 {
-  "vid": "bd579366-5290-11d9-ac20-00065be4b5b6",
-  "topic": "greed -- insecure GRX file processing",
-  "affects": [
-    {
-      "name": [
-        "greed"
-      ],
-      "range": [
-        {
-          "le": "0.81p"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A buffer overflow vulnerability has been detected in the greed\n\tURL handling code. This bug can especially be a problem when greed is\n\tused to process GRX (GetRight) files that originate from untrusted\n\tsources.</p>\n\t<p>The bug finder, Manigandan Radhakrishnan, gave the following\n\t  description:</p>\n\t<blockquote cite=\"http://tigger.uic.edu/~jlongs2/holes/greed.txt\">\n\t  <p>Here are the bugs. First, in main.c, DownloadLoop() uses strcat()\n\t    to copy an input filename to the end of a 128-byte COMMAND array.\n\t    Second, DownloadLoop() passes the input filename to system() without\n\t    checking for special characters such as semicolons.</p></blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://tigger.uic.edu/~jlongs2/holes/greed.txt",
-      "http://secunia.com/advisories/13534/"
-    ],
-    "cvename": [
-      "CVE-2004-1273",
-      "CVE-2004-1274"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110321888413132",
-        "msgid": "653D74053BA6F54A81ED83DCF969DF08CFA2AA@pivxes1.pivx.com"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-12-15",
-    "entry": "2005-01-03",
-    "modified": "2005-01-13"
-  }
+	"vid": "bd579366-5290-11d9-ac20-00065be4b5b6",
+	"topic": "greed -- insecure GRX file processing",
+	"affects": [
+		{
+			"name": [
+				"greed"
+			],
+			"range": [
+				{
+					"le": "0.81p"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A buffer overflow vulnerability has been detected in the greed\n\tURL handling code. This bug can especially be a problem when greed is\n\tused to process GRX (GetRight) files that originate from untrusted\n\tsources.</p>\n\t<p>The bug finder, Manigandan Radhakrishnan, gave the following\n\t  description:</p>\n\t<blockquote cite=\"http://tigger.uic.edu/~jlongs2/holes/greed.txt\">\n\t  <p>Here are the bugs. First, in main.c, DownloadLoop() uses strcat()\n\t    to copy an input filename to the end of a 128-byte COMMAND array.\n\t    Second, DownloadLoop() passes the input filename to system() without\n\t    checking for special characters such as semicolons.</p></blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://tigger.uic.edu/~jlongs2/holes/greed.txt",
+			"http://secunia.com/advisories/13534/"
+		],
+		"cvename": [
+			"CVE-2004-1273",
+			"CVE-2004-1274"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110321888413132",
+				"msgid": "653D74053BA6F54A81ED83DCF969DF08CFA2AA@pivxes1.pivx.com"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-12-15",
+		"entry": "2005-01-03",
+		"modified": "2005-01-13"
+	}
 }

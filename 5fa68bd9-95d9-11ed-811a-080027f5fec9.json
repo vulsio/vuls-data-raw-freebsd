@@ -1,63 +1,63 @@
 {
-  "vid": "5fa68bd9-95d9-11ed-811a-080027f5fec9",
-  "topic": "redis -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "7.0.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis-devel"
-      ],
-      "range": [
-        {
-          "lt": "7.0.8.20230116"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis62"
-      ],
-      "range": [
-        {
-          "lt": "6.2.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis6"
-      ],
-      "range": [
-        {
-          "lt": "6.0.17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Redis core team reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/releases/tag/7.0.8\">\n\t  <dl>\n\t    <dt>CVE-2022-35977</dt>\n\t    <dd>\n\t      Integer overflow in the Redis SETRANGE and SORT/SORT_RO\n\t      commands can drive Redis to OOM panic.\n\t    </dd>\n\t    <dt>CVE-2023-22458</dt>\n\t    <dd>\n\t      Integer overflow in the Redis HRANDFIELD and ZRANDMEMBER\n\t      commands can lead to denial-of-service.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/redis/redis/releases/tag/7.0.8"
-    ],
-    "cvename": [
-      "CVE-2022-35977",
-      "CVE-2023-22458"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-01-16",
-    "entry": "2023-01-16"
-  }
+	"vid": "5fa68bd9-95d9-11ed-811a-080027f5fec9",
+	"topic": "redis -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "7.0.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis-devel"
+			],
+			"range": [
+				{
+					"lt": "7.0.8.20230116"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis62"
+			],
+			"range": [
+				{
+					"lt": "6.2.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis6"
+			],
+			"range": [
+				{
+					"lt": "6.0.17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Redis core team reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/releases/tag/7.0.8\">\n\t  <dl>\n\t    <dt>CVE-2022-35977</dt>\n\t    <dd>\n\t      Integer overflow in the Redis SETRANGE and SORT/SORT_RO\n\t      commands can drive Redis to OOM panic.\n\t    </dd>\n\t    <dt>CVE-2023-22458</dt>\n\t    <dd>\n\t      Integer overflow in the Redis HRANDFIELD and ZRANDMEMBER\n\t      commands can lead to denial-of-service.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/redis/redis/releases/tag/7.0.8"
+		],
+		"cvename": [
+			"CVE-2022-35977",
+			"CVE-2023-22458"
+		]
+	},
+	"dates": {
+		"discovery": "2023-01-16",
+		"entry": "2023-01-16"
+	}
 }

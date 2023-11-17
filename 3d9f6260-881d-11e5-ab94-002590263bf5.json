@@ -1,33 +1,33 @@
 {
-  "vid": "3d9f6260-881d-11e5-ab94-002590263bf5",
-  "topic": "xen-kernel -- Uncontrolled creation of large page mappings by PV guests",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.5.1_1",
-          "ge": "3.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-148.html\">\n\t  <p>The code to validate level 2 page table entries is bypassed when\n\t    certain conditions are satisfied. This means that a PV guest can\n\t    create writable mappings using super page mappings. Such writable\n\t    mappings can violate Xen intended invariants for pages which Xen is\n\t    supposed to keep read-only. This is possible even if the\n\t    \"allowsuperpage\" command line option is not used.</p>\n\t  <p>Malicious PV guest administrators can escalate privilege so as to\n\t    control the whole system.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-148.html"
-    ],
-    "cvename": [
-      "CVE-2015-7835"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-29",
-    "entry": "2015-11-11"
-  }
+	"vid": "3d9f6260-881d-11e5-ab94-002590263bf5",
+	"topic": "xen-kernel -- Uncontrolled creation of large page mappings by PV guests",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.5.1_1",
+					"ge": "3.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-148.html\">\n\t  <p>The code to validate level 2 page table entries is bypassed when\n\t    certain conditions are satisfied. This means that a PV guest can\n\t    create writable mappings using super page mappings. Such writable\n\t    mappings can violate Xen intended invariants for pages which Xen is\n\t    supposed to keep read-only. This is possible even if the\n\t    \"allowsuperpage\" command line option is not used.</p>\n\t  <p>Malicious PV guest administrators can escalate privilege so as to\n\t    control the whole system.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-148.html"
+		],
+		"cvename": [
+			"CVE-2015-7835"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-29",
+		"entry": "2015-11-11"
+	}
 }

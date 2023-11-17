@@ -1,53 +1,53 @@
 {
-  "vid": "3a408f6f-9c52-11d8-9366-0020ed76ef5a",
-  "topic": "libpng denial-of-service",
-  "affects": [
-    {
-      "name": [
-        "linux-png"
-      ],
-      "range": [
-        {
-          "le": "1.0.14_3"
-        },
-        {
-          "ge": "1.2",
-          "le": "1.2.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "png"
-      ],
-      "range": [
-        {
-          "lt": "1.2.5_4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Steve Grubb reports a buffer read overrun in\n\t  libpng's png_format_buffer function.\tA specially\n\t  constructed PNG image processed by an application using\n\t  libpng may trigger the buffer read overrun and possibly\n\t  result in an application crash.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=120508",
-      "http://rhn.redhat.com/errata/RHSA-2004-181.html",
-      "http://secunia.com/advisories/11505",
-      "http://www.osvdb.org/5726"
-    ],
-    "cvename": [
-      "CVE-2004-0421"
-    ],
-    "bid": [
-      "10244"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-04-29",
-    "entry": "2004-05-02",
-    "modified": "2004-08-12"
-  }
+	"vid": "3a408f6f-9c52-11d8-9366-0020ed76ef5a",
+	"topic": "libpng denial-of-service",
+	"affects": [
+		{
+			"name": [
+				"linux-png"
+			],
+			"range": [
+				{
+					"le": "1.0.14_3"
+				},
+				{
+					"ge": "1.2",
+					"le": "1.2.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"png"
+			],
+			"range": [
+				{
+					"lt": "1.2.5_4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Steve Grubb reports a buffer read overrun in\n\t  libpng's png_format_buffer function.\tA specially\n\t  constructed PNG image processed by an application using\n\t  libpng may trigger the buffer read overrun and possibly\n\t  result in an application crash.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=120508",
+			"http://rhn.redhat.com/errata/RHSA-2004-181.html",
+			"http://secunia.com/advisories/11505",
+			"http://www.osvdb.org/5726"
+		],
+		"cvename": [
+			"CVE-2004-0421"
+		],
+		"bid": [
+			"10244"
+		]
+	},
+	"dates": {
+		"discovery": "2004-04-29",
+		"entry": "2004-05-02",
+		"modified": "2004-08-12"
+	}
 }

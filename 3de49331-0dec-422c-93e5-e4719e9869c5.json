@@ -1,34 +1,34 @@
 {
-  "vid": "3de49331-0dec-422c-93e5-e4719e9869c5",
-  "topic": "openvpn -- potential denial-of-service on servers in TCP mode",
-  "affects": [
-    {
-      "name": [
-        "openvpn"
-      ],
-      "range": [
-        {
-          "lt": "2.0.4",
-          "ge": "2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>James Yonan reports:</p>\n\t<blockquote cite=\"http://openvpn.net/changelog.html\">\n\t  <p>If the TCP server accept() call returns an error status, the\n\t    resulting exception handler may attempt to indirect through a NULL\n\t    pointer, causing a segfault.  Affects all OpenVPN 2.0 versions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://openvpn.net/changelog.html"
-    ],
-    "cvename": [
-      "CVE-2005-3409"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-11-01",
-    "entry": "2005-11-01",
-    "modified": "2005-11-04"
-  }
+	"vid": "3de49331-0dec-422c-93e5-e4719e9869c5",
+	"topic": "openvpn -- potential denial-of-service on servers in TCP mode",
+	"affects": [
+		{
+			"name": [
+				"openvpn"
+			],
+			"range": [
+				{
+					"lt": "2.0.4",
+					"ge": "2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>James Yonan reports:</p>\n\t<blockquote cite=\"http://openvpn.net/changelog.html\">\n\t  <p>If the TCP server accept() call returns an error status, the\n\t    resulting exception handler may attempt to indirect through a NULL\n\t    pointer, causing a segfault.  Affects all OpenVPN 2.0 versions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://openvpn.net/changelog.html"
+		],
+		"cvename": [
+			"CVE-2005-3409"
+		]
+	},
+	"dates": {
+		"discovery": "2005-11-01",
+		"entry": "2005-11-01",
+		"modified": "2005-11-04"
+	}
 }

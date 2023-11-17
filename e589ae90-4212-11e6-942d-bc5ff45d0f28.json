@@ -1,32 +1,32 @@
 {
-  "vid": "e589ae90-4212-11e6-942d-bc5ff45d0f28",
-  "topic": "xen-tools -- Unsanitised driver domain input in libxl device handling",
-  "affects": [
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.7.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-178.html\">\n\t  <p>libxl's device-handling code freely uses and trusts information\n\t    from the backend directories in xenstore.</p>\n\t  <p>A malicious driver domain can deny service to management tools.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-178.html"
-    ],
-    "cvename": [
-      "CVE-2016-4963"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-06-02",
-    "entry": "2016-07-04"
-  }
+	"vid": "e589ae90-4212-11e6-942d-bc5ff45d0f28",
+	"topic": "xen-tools -- Unsanitised driver domain input in libxl device handling",
+	"affects": [
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.7.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-178.html\">\n\t  <p>libxl's device-handling code freely uses and trusts information\n\t    from the backend directories in xenstore.</p>\n\t  <p>A malicious driver domain can deny service to management tools.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-178.html"
+		],
+		"cvename": [
+			"CVE-2016-4963"
+		]
+	},
+	"dates": {
+		"discovery": "2016-06-02",
+		"entry": "2016-07-04"
+	}
 }

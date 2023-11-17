@@ -1,36 +1,36 @@
 {
-  "vid": "d9fe59ea-1940-11e8-9eb8-5404a68ad561",
-  "topic": "cvs -- Remote code execution via ssh command injection",
-  "affects": [
-    {
-      "name": [
-        "cvs"
-      ],
-      "range": [
-        {
-          "lt": "1.20120905_5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Hank Leininger reports:</p>\n\t<blockquote cite=\"http://lists.nongnu.org/archive/html/bug-cvs/2017-08/msg00000.html\">\n\t  <p>Bugs in Git, Subversion, and Mercurial were just announced and patched\n\t     which allowed arbitrary local command execution if a malicious name was\n\t     used for the remote server, such as starting with - to pass options to\n\t     the ssh client:\n\t     git clone ssh://-oProxyCommand=some-command...\n\t     CVS has a similar problem with the -d option:</p>\n\t  <p>Tested vanilla CVS 1.12.13, and Gentoo CVS 1.12.12-r11.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.nongnu.org/archive/html/bug-cvs/2017-08/msg00000.html",
-      "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=871810#10"
-    ],
-    "cvename": [
-      "CVE-2017-12836"
-    ],
-    "freebsd_pr": [
-      "ports/226088"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-08-10",
-    "entry": "2018-02-24"
-  }
+	"vid": "d9fe59ea-1940-11e8-9eb8-5404a68ad561",
+	"topic": "cvs -- Remote code execution via ssh command injection",
+	"affects": [
+		{
+			"name": [
+				"cvs"
+			],
+			"range": [
+				{
+					"lt": "1.20120905_5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Hank Leininger reports:</p>\n\t<blockquote cite=\"http://lists.nongnu.org/archive/html/bug-cvs/2017-08/msg00000.html\">\n\t  <p>Bugs in Git, Subversion, and Mercurial were just announced and patched\n\t     which allowed arbitrary local command execution if a malicious name was\n\t     used for the remote server, such as starting with - to pass options to\n\t     the ssh client:\n\t     git clone ssh://-oProxyCommand=some-command...\n\t     CVS has a similar problem with the -d option:</p>\n\t  <p>Tested vanilla CVS 1.12.13, and Gentoo CVS 1.12.12-r11.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.nongnu.org/archive/html/bug-cvs/2017-08/msg00000.html",
+			"https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=871810#10"
+		],
+		"cvename": [
+			"CVE-2017-12836"
+		],
+		"freebsd_pr": [
+			"ports/226088"
+		]
+	},
+	"dates": {
+		"discovery": "2017-08-10",
+		"entry": "2018-02-24"
+	}
 }

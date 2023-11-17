@@ -1,48 +1,48 @@
 {
-  "vid": "f414d69f-e43d-11ec-9ea4-001b217b3468",
-  "topic": "Gitlab -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "15.0.1",
-          "ge": "15.0.0"
-        },
-        {
-          "lt": "14.10.4",
-          "ge": "14.10.0"
-        },
-        {
-          "lt": "14.9.5",
-          "ge": "11.10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/06/01/critical-security-release-gitlab-15-0-1-released/\">\n\t  <p>Account take over via SCIM email change</p>\n\t  <p>Stored XSS in Jira integration</p>\n\t  <p>Quick action commands susceptible to XSS</p>\n\t  <p>IP allowlist bypass when using Trigger tokens</p>\n\t  <p>IP allowlist bypass when using Project Deploy Tokens</p>\n\t  <p>Improper authorization in the Interactive Web Terminal</p>\n\t  <p>Subgroup member can list members of parent group</p>\n\t  <p>Group member lock bypass</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2022/06/01/critical-security-release-gitlab-15-0-1-released/"
-    ],
-    "cvename": [
-      "CVE-2022-1680",
-      "CVE-2022-1940",
-      "CVE-2022-1948",
-      "CVE-2022-1935",
-      "CVE-2022-1936",
-      "CVE-2022-1944",
-      "CVE-2022-1821",
-      "CVE-2022-1783"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-06-01",
-    "entry": "2022-06-04"
-  }
+	"vid": "f414d69f-e43d-11ec-9ea4-001b217b3468",
+	"topic": "Gitlab -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "15.0.1",
+					"ge": "15.0.0"
+				},
+				{
+					"lt": "14.10.4",
+					"ge": "14.10.0"
+				},
+				{
+					"lt": "14.9.5",
+					"ge": "11.10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/06/01/critical-security-release-gitlab-15-0-1-released/\">\n\t  <p>Account take over via SCIM email change</p>\n\t  <p>Stored XSS in Jira integration</p>\n\t  <p>Quick action commands susceptible to XSS</p>\n\t  <p>IP allowlist bypass when using Trigger tokens</p>\n\t  <p>IP allowlist bypass when using Project Deploy Tokens</p>\n\t  <p>Improper authorization in the Interactive Web Terminal</p>\n\t  <p>Subgroup member can list members of parent group</p>\n\t  <p>Group member lock bypass</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2022/06/01/critical-security-release-gitlab-15-0-1-released/"
+		],
+		"cvename": [
+			"CVE-2022-1680",
+			"CVE-2022-1940",
+			"CVE-2022-1948",
+			"CVE-2022-1935",
+			"CVE-2022-1936",
+			"CVE-2022-1944",
+			"CVE-2022-1821",
+			"CVE-2022-1783"
+		]
+	},
+	"dates": {
+		"discovery": "2022-06-01",
+		"entry": "2022-06-04"
+	}
 }

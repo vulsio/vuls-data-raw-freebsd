@@ -1,39 +1,39 @@
 {
-  "vid": "803879e9-4195-11e7-9b08-080027ef73ec",
-  "topic": "OpenEXR -- multiple remote code execution and denial of service vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "OpenEXR"
-      ],
-      "range": [
-        {
-          "lt": "2.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Brandon Perry reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2017/05/12/5\">\n\t  <p>[There] is a zip file of EXR images that cause segmentation faults in the OpenEXR library (tested against 2.2.0).</p>\n\t  <ul>\n\t    <li>CVE-2017-9110\n\t      In OpenEXR 2.2.0, an invalid read of size 2 in the hufDecode function in ImfHuf.cpp could cause the application to crash.</li>\n\t    <li>CVE-2017-9111\n\t      In OpenEXR 2.2.0, an invalid write of size 8 in the storeSSE function in ImfOptimizedPixelReading.h could cause the application to crash or execute arbitrary code.</li>\n\t    <li>CVE-2017-9112\n\t      In OpenEXR 2.2.0, an invalid read of size 1 in the getBits function in ImfHuf.cpp could cause the application to crash.</li>\n\t    <li>CVE-2017-9113\n\t      In OpenEXR 2.2.0, an invalid write of size 1 in the bufferedReadPixels function in ImfInputFile.cpp could cause the application to crash or execute arbitrary code.</li>\n\t    <li>CVE-2017-9114\n\t      In OpenEXR 2.2.0, an invalid read of size 1 in the refill function in ImfFastHuf.cpp could cause the application to crash.</li>\n\t    <li>CVE-2017-9115\n\t      In OpenEXR 2.2.0, an invalid write of size 2 in the = operator function in half.h could cause the application to crash or execute arbitrary code.</li>\n\t    <li>CVE-2017-9116\n\t      In OpenEXR 2.2.0, an invalid read of size 1 in the uncompress function in ImfZip.cpp could cause the application to crash.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2017/05/12/5",
-      "https://github.com/openexr/openexr/issues/232"
-    ],
-    "cvename": [
-      "CVE-2017-9110",
-      "CVE-2017-9111",
-      "CVE-2017-9112",
-      "CVE-2017-9113",
-      "CVE-2017-9114",
-      "CVE-2017-9115",
-      "CVE-2017-9116"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-01-12",
-    "entry": "2017-05-25"
-  }
+	"vid": "803879e9-4195-11e7-9b08-080027ef73ec",
+	"topic": "OpenEXR -- multiple remote code execution and denial of service vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"OpenEXR"
+			],
+			"range": [
+				{
+					"lt": "2.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Brandon Perry reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2017/05/12/5\">\n\t  <p>[There] is a zip file of EXR images that cause segmentation faults in the OpenEXR library (tested against 2.2.0).</p>\n\t  <ul>\n\t    <li>CVE-2017-9110\n\t      In OpenEXR 2.2.0, an invalid read of size 2 in the hufDecode function in ImfHuf.cpp could cause the application to crash.</li>\n\t    <li>CVE-2017-9111\n\t      In OpenEXR 2.2.0, an invalid write of size 8 in the storeSSE function in ImfOptimizedPixelReading.h could cause the application to crash or execute arbitrary code.</li>\n\t    <li>CVE-2017-9112\n\t      In OpenEXR 2.2.0, an invalid read of size 1 in the getBits function in ImfHuf.cpp could cause the application to crash.</li>\n\t    <li>CVE-2017-9113\n\t      In OpenEXR 2.2.0, an invalid write of size 1 in the bufferedReadPixels function in ImfInputFile.cpp could cause the application to crash or execute arbitrary code.</li>\n\t    <li>CVE-2017-9114\n\t      In OpenEXR 2.2.0, an invalid read of size 1 in the refill function in ImfFastHuf.cpp could cause the application to crash.</li>\n\t    <li>CVE-2017-9115\n\t      In OpenEXR 2.2.0, an invalid write of size 2 in the = operator function in half.h could cause the application to crash or execute arbitrary code.</li>\n\t    <li>CVE-2017-9116\n\t      In OpenEXR 2.2.0, an invalid read of size 1 in the uncompress function in ImfZip.cpp could cause the application to crash.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2017/05/12/5",
+			"https://github.com/openexr/openexr/issues/232"
+		],
+		"cvename": [
+			"CVE-2017-9110",
+			"CVE-2017-9111",
+			"CVE-2017-9112",
+			"CVE-2017-9113",
+			"CVE-2017-9114",
+			"CVE-2017-9115",
+			"CVE-2017-9116"
+		]
+	},
+	"dates": {
+		"discovery": "2017-01-12",
+		"entry": "2017-05-25"
+	}
 }

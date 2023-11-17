@@ -1,32 +1,32 @@
 {
-  "vid": "478d4102-2319-4026-b3b2-a57c48f159ac",
-  "topic": "ansible -- information disclosure flaw",
-  "affects": [
-    {
-      "name": [
-        "ansible"
-      ],
-      "range": [
-        {
-          "le": "2.2.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ansible developers report:</p>\n\t<blockquote cite=\"https://github.com/ansible/ansible/issues/22505\">\n\t  <p>Ansible versions 2.2.3 and earlier are vulnerable to an information disclosure flaw due to the interaction of call back plugins and the no_log directive where the information may not be sanitized properly.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/ansible/ansible/issues/22505"
-    ],
-    "cvename": [
-      "CVE-2017-7473"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-07-21",
-    "entry": "2017-09-25"
-  }
+	"vid": "478d4102-2319-4026-b3b2-a57c48f159ac",
+	"topic": "ansible -- information disclosure flaw",
+	"affects": [
+		{
+			"name": [
+				"ansible"
+			],
+			"range": [
+				{
+					"le": "2.2.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ansible developers report:</p>\n\t<blockquote cite=\"https://github.com/ansible/ansible/issues/22505\">\n\t  <p>Ansible versions 2.2.3 and earlier are vulnerable to an information disclosure flaw due to the interaction of call back plugins and the no_log directive where the information may not be sanitized properly.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/ansible/ansible/issues/22505"
+		],
+		"cvename": [
+			"CVE-2017-7473"
+		]
+	},
+	"dates": {
+		"discovery": "2017-07-21",
+		"entry": "2017-09-25"
+	}
 }

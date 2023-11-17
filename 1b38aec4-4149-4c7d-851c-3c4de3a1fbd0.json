@@ -1,40 +1,40 @@
 {
-  "vid": "1b38aec4-4149-4c7d-851c-3c4de3a1fbd0",
-  "topic": "py39-setuptools -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py39-setuptools"
-      ],
-      "range": [
-        {
-          "lt": "44.1.1_1"
-        },
-        {
-          "lt": "58.5.3_3",
-          "ge": "57.0.0"
-        },
-        {
-          "lt": "63.1.0_1",
-          "ge": "62.1.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>SCH227 reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579\">\n      <p>Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects.</p>\n      <p>Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`.</p>\n      <p>This has been patched in version 65.5.1. The patch backported to the revision 63.1.0_1.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579"
-    ],
-    "cvename": [
-      "CVE-2022-40897"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-12-23",
-    "entry": "2023-04-09"
-  }
+	"vid": "1b38aec4-4149-4c7d-851c-3c4de3a1fbd0",
+	"topic": "py39-setuptools -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py39-setuptools"
+			],
+			"range": [
+				{
+					"lt": "44.1.1_1"
+				},
+				{
+					"lt": "58.5.3_3",
+					"ge": "57.0.0"
+				},
+				{
+					"lt": "63.1.0_1",
+					"ge": "62.1.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>SCH227 reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579\">\n      <p>Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects.</p>\n      <p>Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`.</p>\n      <p>This has been patched in version 65.5.1. The patch backported to the revision 63.1.0_1.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579"
+		],
+		"cvename": [
+			"CVE-2022-40897"
+		]
+	},
+	"dates": {
+		"discovery": "2022-12-23",
+		"entry": "2023-04-09"
+	}
 }

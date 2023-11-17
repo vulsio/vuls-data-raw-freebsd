@@ -1,35 +1,35 @@
 {
-  "vid": "ebffe27a-f48c-11d8-9837-000c41e2cdad",
-  "topic": "qt -- image loader vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "qt"
-      ],
-      "range": [
-        {
-          "lt": "3.3.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Qt contains several vulnerabilities related to image\n\t  loading, including possible crashes when loading corrupt\n\t  GIF, BMP, or JPEG images.  Most seriously, Chris Evans\n\t  reports that the BMP crash is actually due to a heap\n\t  buffer overflow.  It is believed that an attacker may be\n\t  able to construct a BMP image that could cause a Qt-using\n\t  application to execute arbitrary code when it is loaded.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.trolltech.com/developer/changes/changes-3.3.3.html",
-      "http://scary.beasts.org/security/CESA-2004-004.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0691",
-      "CVE-2004-0692",
-      "CVE-2004-0693"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-11",
-    "entry": "2004-08-22"
-  }
+	"vid": "ebffe27a-f48c-11d8-9837-000c41e2cdad",
+	"topic": "qt -- image loader vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"qt"
+			],
+			"range": [
+				{
+					"lt": "3.3.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Qt contains several vulnerabilities related to image\n\t  loading, including possible crashes when loading corrupt\n\t  GIF, BMP, or JPEG images.  Most seriously, Chris Evans\n\t  reports that the BMP crash is actually due to a heap\n\t  buffer overflow.  It is believed that an attacker may be\n\t  able to construct a BMP image that could cause a Qt-using\n\t  application to execute arbitrary code when it is loaded.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.trolltech.com/developer/changes/changes-3.3.3.html",
+			"http://scary.beasts.org/security/CESA-2004-004.txt"
+		],
+		"cvename": [
+			"CVE-2004-0691",
+			"CVE-2004-0692",
+			"CVE-2004-0693"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-11",
+		"entry": "2004-08-22"
+	}
 }

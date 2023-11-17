@@ -1,36 +1,36 @@
 {
-  "vid": "47bdabcf-3cf9-11da-baa2-0004614cc33d",
-  "topic": "gallery2 -- file disclosure vulnerability",
-  "affects": [
-    {
-      "name": [
-        "gallery2"
-      ],
-      "range": [
-        {
-          "lt": "2.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Michael Dipper wrote:</p>\n\t<blockquote cite=\"http://dipper.info/security/20051012/\">\n\t  <p>A vulnerability has been discovered in gallery,\n\t    which allows remote users unauthorized access to files\n\t    on the webserver.</p>\n\t  <p>A remote user accessing gallery over the web may use\n\t    specially crafted HTTP parameters to access arbitrary\n\t    files located on the webserver. All files readable by\n\t    the webserver process are subject to disclosure.\n\t    The vulnerability is *not* restricted to the webserver's\n\t    document root but extends to the whole server file space.</p>\n\t  <p>The vulnerability may be used by any anonymous user,\n\t    there is no login to the application required.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://dipper.info/security/20051012/"
-    ],
-    "cvename": [
-      "CVE-2005-3251"
-    ],
-    "bid": [
-      "15108"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-10-12",
-    "entry": "2005-10-15",
-    "modified": "2005-11-08"
-  }
+	"vid": "47bdabcf-3cf9-11da-baa2-0004614cc33d",
+	"topic": "gallery2 -- file disclosure vulnerability",
+	"affects": [
+		{
+			"name": [
+				"gallery2"
+			],
+			"range": [
+				{
+					"lt": "2.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Michael Dipper wrote:</p>\n\t<blockquote cite=\"http://dipper.info/security/20051012/\">\n\t  <p>A vulnerability has been discovered in gallery,\n\t    which allows remote users unauthorized access to files\n\t    on the webserver.</p>\n\t  <p>A remote user accessing gallery over the web may use\n\t    specially crafted HTTP parameters to access arbitrary\n\t    files located on the webserver. All files readable by\n\t    the webserver process are subject to disclosure.\n\t    The vulnerability is *not* restricted to the webserver's\n\t    document root but extends to the whole server file space.</p>\n\t  <p>The vulnerability may be used by any anonymous user,\n\t    there is no login to the application required.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://dipper.info/security/20051012/"
+		],
+		"cvename": [
+			"CVE-2005-3251"
+		],
+		"bid": [
+			"15108"
+		]
+	},
+	"dates": {
+		"discovery": "2005-10-12",
+		"entry": "2005-10-15",
+		"modified": "2005-11-08"
+	}
 }

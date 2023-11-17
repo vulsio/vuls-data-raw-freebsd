@@ -1,51 +1,51 @@
 {
-  "vid": "78f2e491-312d-11ee-85f2-bd89b893fcb4",
-  "topic": "go -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "go119"
-      ],
-      "range": [
-        {
-          "lt": "1.19.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "go120"
-      ],
-      "range": [
-        {
-          "lt": "1.20.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://groups.google.com/u/1/g/golang-announce/c/X0b6CsSAaYI\">\n\t  <p>crypto/tls: restrict RSA keys in certificates to &lt;= 8192 bits</p>\n\t  <p>Extremely large RSA keys in certificate chains can cause\n\t  a client/server to expend significant CPU time verifying\n\t  signatures. Limit this by restricting the size of RSA keys\n\t  transmitted during handshakes to &lt;= 8192 bits. </p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/60374\">\n\t  <p>net/http: insufficient sanitization of Host header</p>\n\t  <p>The HTTP/1 client did not fully validate the contents of\n\t   the Host header. A maliciously crafted Host header could\n\t   inject additional headers or entire requests. The HTTP/1\n\t   client now refuses to send requests containing an\n\t   invalid Request.Host or Request.URL.Host value.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/60167\">\n\t  <p>cmd/go: cgo code injection</p>\n\t  <p>The go command may generate unexpected code at build\n\t   time when using cgo. This may result in unexpected\n\t   behavior when running a go program which uses cgo.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/60272\">\n\t  <p>runtime: unexpected behavior of setuid/setgid binaries</p>\n\t  <p>The Go runtime didn't act any differently when a binary\n\t  had the setuid/setgid bit set. On Unix platforms, if a\n\t  setuid/setgid binary was executed with standard I/O file\n\t  descriptors closed, opening any files could result in\n\t  unexpected content being read/written with elevated\n\t  prilieges. Similarly if a setuid/setgid program was\n\t  terminated, either via panic or signal, it could leak the\n\t  contents of its registers.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/60305\">\n\t  <p>cmd/go: improper sanitization of LDFLAGS</p>\n\t  <p>The go command may execute arbitrary code at build time\n\t  when using cgo. This may occur when running \"go get\" on a\n\t  malicious module, or when running any other command which\n\t  builds untrusted code. This is can by triggered by linker\n\t  flags, specified via a \"#cgo LDFLAGS\" directive.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/59720\">\n\t  <p>html/template: improper sanitization of CSS values</p>\n\t  <p>\n\t    Angle brackets (&lt;&gt;) were not considered dangerous\n\t    characters when inserted into CSS contexts. Templates\n\t    containing multiple actions separated by a '/' character\n\t    could result in unexpectedly closing the CSS context and\n\t    allowing for injection of unexpected HMTL, if executed\n\t    with untrusted input.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/59721\">\n\t  <p>html/template: improper handling of JavaScript whitespace</p>\n\t  <p>\n\t    Not all valid JavaScript whitespace characters were\n\t    considered to be whitespace. Templates containing\n\t    whitespace characters outside of the character set\n\t    \"\\t\\n\\f\\r\\u0020\\u2028\\u2029\" in JavaScript contexts that\n\t    also contain actions may not be properly sanitized\n\t    during execution.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/59722\">\n\t  <p>html/template: improper handling of empty HTML attributes</p>\n\t  <p>\n\t    Templates containing actions in unquoted HTML attributes\n\t    (e.g. \"attr={{.}}\") executed with empty input could\n\t    result in output that would have unexpected results when\n\t    parsed due to HTML normalization rules. This may allow\n\t    injection of arbitrary attributes into tags.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/u/1/g/golang-announce/c/X0b6CsSAaYI",
-      "https://groups.google.com/u/1/g/golang-announce/c/2q13H6LEEx0",
-      "https://groups.google.com/u/1/g/golang-announce/c/q5135a9d924",
-      "https://groups.google.com/u/1/g/golang-announce/c/MEb0UyuSMsU"
-    ],
-    "cvename": [
-      "CVE-2023-29406",
-      "CVE-2023-29402",
-      "CVE-2023-29403",
-      "CVE-2023-29404",
-      "CVE-2023-24539",
-      "CVE-2023-24540",
-      "CVE-2023-29400"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-04-27",
-    "entry": "2023-08-02"
-  }
+	"vid": "78f2e491-312d-11ee-85f2-bd89b893fcb4",
+	"topic": "go -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"go119"
+			],
+			"range": [
+				{
+					"lt": "1.19.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"go120"
+			],
+			"range": [
+				{
+					"lt": "1.20.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://groups.google.com/u/1/g/golang-announce/c/X0b6CsSAaYI\">\n\t  <p>crypto/tls: restrict RSA keys in certificates to &lt;= 8192 bits</p>\n\t  <p>Extremely large RSA keys in certificate chains can cause\n\t  a client/server to expend significant CPU time verifying\n\t  signatures. Limit this by restricting the size of RSA keys\n\t  transmitted during handshakes to &lt;= 8192 bits. </p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/60374\">\n\t  <p>net/http: insufficient sanitization of Host header</p>\n\t  <p>The HTTP/1 client did not fully validate the contents of\n\t   the Host header. A maliciously crafted Host header could\n\t   inject additional headers or entire requests. The HTTP/1\n\t   client now refuses to send requests containing an\n\t   invalid Request.Host or Request.URL.Host value.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/60167\">\n\t  <p>cmd/go: cgo code injection</p>\n\t  <p>The go command may generate unexpected code at build\n\t   time when using cgo. This may result in unexpected\n\t   behavior when running a go program which uses cgo.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/60272\">\n\t  <p>runtime: unexpected behavior of setuid/setgid binaries</p>\n\t  <p>The Go runtime didn't act any differently when a binary\n\t  had the setuid/setgid bit set. On Unix platforms, if a\n\t  setuid/setgid binary was executed with standard I/O file\n\t  descriptors closed, opening any files could result in\n\t  unexpected content being read/written with elevated\n\t  prilieges. Similarly if a setuid/setgid program was\n\t  terminated, either via panic or signal, it could leak the\n\t  contents of its registers.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/60305\">\n\t  <p>cmd/go: improper sanitization of LDFLAGS</p>\n\t  <p>The go command may execute arbitrary code at build time\n\t  when using cgo. This may occur when running \"go get\" on a\n\t  malicious module, or when running any other command which\n\t  builds untrusted code. This is can by triggered by linker\n\t  flags, specified via a \"#cgo LDFLAGS\" directive.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/59720\">\n\t  <p>html/template: improper sanitization of CSS values</p>\n\t  <p>\n\t    Angle brackets (&lt;&gt;) were not considered dangerous\n\t    characters when inserted into CSS contexts. Templates\n\t    containing multiple actions separated by a '/' character\n\t    could result in unexpectedly closing the CSS context and\n\t    allowing for injection of unexpected HMTL, if executed\n\t    with untrusted input.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/59721\">\n\t  <p>html/template: improper handling of JavaScript whitespace</p>\n\t  <p>\n\t    Not all valid JavaScript whitespace characters were\n\t    considered to be whitespace. Templates containing\n\t    whitespace characters outside of the character set\n\t    \"\\t\\n\\f\\r\\u0020\\u2028\\u2029\" in JavaScript contexts that\n\t    also contain actions may not be properly sanitized\n\t    during execution.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/59722\">\n\t  <p>html/template: improper handling of empty HTML attributes</p>\n\t  <p>\n\t    Templates containing actions in unquoted HTML attributes\n\t    (e.g. \"attr={{.}}\") executed with empty input could\n\t    result in output that would have unexpected results when\n\t    parsed due to HTML normalization rules. This may allow\n\t    injection of arbitrary attributes into tags.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/u/1/g/golang-announce/c/X0b6CsSAaYI",
+			"https://groups.google.com/u/1/g/golang-announce/c/2q13H6LEEx0",
+			"https://groups.google.com/u/1/g/golang-announce/c/q5135a9d924",
+			"https://groups.google.com/u/1/g/golang-announce/c/MEb0UyuSMsU"
+		],
+		"cvename": [
+			"CVE-2023-29406",
+			"CVE-2023-29402",
+			"CVE-2023-29403",
+			"CVE-2023-29404",
+			"CVE-2023-24539",
+			"CVE-2023-24540",
+			"CVE-2023-29400"
+		]
+	},
+	"dates": {
+		"discovery": "2023-04-27",
+		"entry": "2023-08-02"
+	}
 }

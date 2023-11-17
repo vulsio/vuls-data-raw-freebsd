@@ -1,38 +1,38 @@
 {
-  "vid": "e0ab1773-07c1-46c6-9170-4c5e81c00927",
-  "topic": "curl -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.60.0",
-          "ge": "7.14.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>curl security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2018-16839: SASL password overflow via integer overflow</p>\n\t  <p>libcurl contains a buffer overrun in the SASL authentication code.</p>\n\t  <p>The internal function Curl_auth_create_plain_message fails to\n\t    correctly verify that the passed in lengths for name and password\n\t    aren't too long, then calculates a buffer size to allocate.</p>\n\t  <p>On systems with a 32 bit size_t, the math to calculate the buffer size\n\t    triggers an integer overflow when the user name length exceeds 2GB\n\t    (2^31 bytes). This integer overflow usually causes a very small buffer\n\t    to actually get allocated instead of the intended very huge one, making\n\t    the use of that buffer end up in a heap buffer overflow.</p>\n\t  <p>This bug is very similar to CVE-2017-14618.</p>\n\t  <p>It affects curl 7.33.0 to 7.61.1.</p>\n\t  <p>CVE-2018-16840: use-after-free in handle close</p>\n\t  <p>libcurl contains a heap use-after-free flaw in code related to closing\n\t    an easy handle.</p>\n\t  <p>When closing and cleaning up an \"easy\" handle in the Curl_close()\n\t    function, the library code first frees a struct (without nulling the\n\t    pointer) and might then subsequently erroneously write to a struct\n\t    field within that already freed struct.</p>\n\t  <p>It affects curl 7.59.0 to 7.61.1.</p>\n\t  <p>CVE-2018-16842: warning message out-of-buffer read</p>\n\t  <p>curl contains a heap out of buffer read vulnerability.</p>\n\t  <p>The command line tool has a generic function for displaying warning\n\t    and informational messages to stderr for various situations. For\n\t    example if an unknown command line argument is used, or passed to it in\n\t    a \"config\" file.</p>\n\t  <p>This display function formats the output to wrap at 80 columns. The\n\t    wrap logic is however flawed, so if a single word in the message is\n\t    itself longer than 80 bytes the buffer arithmetic calculates the\n\t    remainder wrong and will end up reading behind the end of the buffer.\n\t    This could lead to information disclosure or crash.</p>\n\t  <p>This vulnerability could lead to a security issue if used in this or\n\t    similar situations:</p>\n\t  <p>1. a server somewhere uses the curl command line to run something</p>\n\t  <p>2. if it fails, it shows stderr to the user</p>\n\t  <p>3. the server takes user input for parts of its command line input</p>\n\t  <p>4. user provides something overly long that triggers this crash</p>\n\t  <p>5. the stderr output may now contain user memory contents that wasn't\n\t    meant to be available</p>\n\t  <p>It affects curl 7.14.1 to 7.61.1.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/security.html",
-      "https://curl.haxx.se/docs/CVE-2018-16839.html",
-      "https://curl.haxx.se/docs/CVE-2018-16840.html",
-      "https://curl.haxx.se/docs/CVE-2018-16842.html"
-    ],
-    "cvename": [
-      "CVE-2018-16839",
-      "CVE-2018-16840",
-      "CVE-2018-16842"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-10-31",
-    "entry": "2018-11-01"
-  }
+	"vid": "e0ab1773-07c1-46c6-9170-4c5e81c00927",
+	"topic": "curl -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.60.0",
+					"ge": "7.14.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>curl security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2018-16839: SASL password overflow via integer overflow</p>\n\t  <p>libcurl contains a buffer overrun in the SASL authentication code.</p>\n\t  <p>The internal function Curl_auth_create_plain_message fails to\n\t    correctly verify that the passed in lengths for name and password\n\t    aren't too long, then calculates a buffer size to allocate.</p>\n\t  <p>On systems with a 32 bit size_t, the math to calculate the buffer size\n\t    triggers an integer overflow when the user name length exceeds 2GB\n\t    (2^31 bytes). This integer overflow usually causes a very small buffer\n\t    to actually get allocated instead of the intended very huge one, making\n\t    the use of that buffer end up in a heap buffer overflow.</p>\n\t  <p>This bug is very similar to CVE-2017-14618.</p>\n\t  <p>It affects curl 7.33.0 to 7.61.1.</p>\n\t  <p>CVE-2018-16840: use-after-free in handle close</p>\n\t  <p>libcurl contains a heap use-after-free flaw in code related to closing\n\t    an easy handle.</p>\n\t  <p>When closing and cleaning up an \"easy\" handle in the Curl_close()\n\t    function, the library code first frees a struct (without nulling the\n\t    pointer) and might then subsequently erroneously write to a struct\n\t    field within that already freed struct.</p>\n\t  <p>It affects curl 7.59.0 to 7.61.1.</p>\n\t  <p>CVE-2018-16842: warning message out-of-buffer read</p>\n\t  <p>curl contains a heap out of buffer read vulnerability.</p>\n\t  <p>The command line tool has a generic function for displaying warning\n\t    and informational messages to stderr for various situations. For\n\t    example if an unknown command line argument is used, or passed to it in\n\t    a \"config\" file.</p>\n\t  <p>This display function formats the output to wrap at 80 columns. The\n\t    wrap logic is however flawed, so if a single word in the message is\n\t    itself longer than 80 bytes the buffer arithmetic calculates the\n\t    remainder wrong and will end up reading behind the end of the buffer.\n\t    This could lead to information disclosure or crash.</p>\n\t  <p>This vulnerability could lead to a security issue if used in this or\n\t    similar situations:</p>\n\t  <p>1. a server somewhere uses the curl command line to run something</p>\n\t  <p>2. if it fails, it shows stderr to the user</p>\n\t  <p>3. the server takes user input for parts of its command line input</p>\n\t  <p>4. user provides something overly long that triggers this crash</p>\n\t  <p>5. the stderr output may now contain user memory contents that wasn't\n\t    meant to be available</p>\n\t  <p>It affects curl 7.14.1 to 7.61.1.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/security.html",
+			"https://curl.haxx.se/docs/CVE-2018-16839.html",
+			"https://curl.haxx.se/docs/CVE-2018-16840.html",
+			"https://curl.haxx.se/docs/CVE-2018-16842.html"
+		],
+		"cvename": [
+			"CVE-2018-16839",
+			"CVE-2018-16840",
+			"CVE-2018-16842"
+		]
+	},
+	"dates": {
+		"discovery": "2018-10-31",
+		"entry": "2018-11-01"
+	}
 }

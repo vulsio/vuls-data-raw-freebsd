@@ -1,49 +1,49 @@
 {
-  "vid": "3ec8f43b-e8ef-11d9-b875-0001020eed82",
-  "topic": "kernel -- TCP connection stall denial of service",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.4_3",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.3_17",
-          "ge": "5.0"
-        },
-        {
-          "lt": "4.11_11",
-          "ge": "4.11"
-        },
-        {
-          "lt": "4.10_16"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description</h1>\n\t<p>Two problems have been discovered in the FreeBSD TCP stack.</p>\n\t<p>First, when a TCP packets containing a timestamp is\n\t  received, inadequate checking of sequence numbers is\n\t  performed, allowing an attacker to artificially increase the\n\t  internal \"recent\" timestamp for a connection.</p>\n\t<p>Second, a TCP packet with the SYN flag set is accepted for\n\t  established connections, allowing an attacker to overwrite\n\t  certain TCP options.</p>\n\t<h1>Impact</h1>\n\t<p>Using either of the two problems an attacker with knowledge\n\t  of the local and remote IP and port numbers associated with\n\t  a connection can cause a denial of service situation by\n\t  stalling the TCP connection. The stalled TCP connection my\n\t  be closed after some time by the other host.</p>\n\t<h1>Workaround</h1>\n\t<p>In some cases it may be possible to defend against these\n\t  attacks by blocking the attack packets using a firewall.\n\t  Packets used to effect either of these attacks would have\n\t  spoofed source IP addresses.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-0356",
-      "CVE-2005-2068"
-    ],
-    "freebsd_sa": [
-      "SA-05:15.tcp"
-    ],
-    "cert_vu": [
-      "637934"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-29",
-    "entry": "2005-06-29",
-    "modified": "2016-08-09"
-  }
+	"vid": "3ec8f43b-e8ef-11d9-b875-0001020eed82",
+	"topic": "kernel -- TCP connection stall denial of service",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.4_3",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.3_17",
+					"ge": "5.0"
+				},
+				{
+					"lt": "4.11_11",
+					"ge": "4.11"
+				},
+				{
+					"lt": "4.10_16"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description</h1>\n\t<p>Two problems have been discovered in the FreeBSD TCP stack.</p>\n\t<p>First, when a TCP packets containing a timestamp is\n\t  received, inadequate checking of sequence numbers is\n\t  performed, allowing an attacker to artificially increase the\n\t  internal \"recent\" timestamp for a connection.</p>\n\t<p>Second, a TCP packet with the SYN flag set is accepted for\n\t  established connections, allowing an attacker to overwrite\n\t  certain TCP options.</p>\n\t<h1>Impact</h1>\n\t<p>Using either of the two problems an attacker with knowledge\n\t  of the local and remote IP and port numbers associated with\n\t  a connection can cause a denial of service situation by\n\t  stalling the TCP connection. The stalled TCP connection my\n\t  be closed after some time by the other host.</p>\n\t<h1>Workaround</h1>\n\t<p>In some cases it may be possible to defend against these\n\t  attacks by blocking the attack packets using a firewall.\n\t  Packets used to effect either of these attacks would have\n\t  spoofed source IP addresses.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-0356",
+			"CVE-2005-2068"
+		],
+		"freebsd_sa": [
+			"SA-05:15.tcp"
+		],
+		"cert_vu": [
+			"637934"
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-29",
+		"entry": "2005-06-29",
+		"modified": "2016-08-09"
+	}
 }

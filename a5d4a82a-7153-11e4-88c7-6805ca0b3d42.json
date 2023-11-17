@@ -1,39 +1,39 @@
 {
-  "vid": "a5d4a82a-7153-11e4-88c7-6805ca0b3d42",
-  "topic": "phpMyAdmin -- XSS and information disclosure vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "4.2.12",
-          "ge": "4.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-13.php\">\n\t  <ul>\n\t    <li>With a crafted database, table or column name it is\n\t      possible to trigger an XSS attack in the table browse\n\t      page.</li>\n\t    <li>With a crafted ENUM value it is possible to trigger\n\t      XSS attacks in the table print view and zoom search\n\t      pages.</li>\n\t    <li>With a crafted value for font size it is possible to\n\t      trigger an XSS attack in the home page.</li>\n\t  </ul>\n\t  <p>These vulnerabilities can be triggered only by someone\n\t    who is logged in to phpMyAdmin, as the usual token\n\t    protection prevents non-logged-in users from accessing the\n\t    required pages. Moreover, exploitation of the XSS\n\t    vulnerability related to the font size requires forgery of\n\t    the pma_fontsize cookie.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-14.php\">\n\t  <p> In the GIS editor feature, a parameter specifying the\n\t    geometry type was not correcly validated, opening the door\n\t    to a local file inclusion attack.</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t    is logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-15.php\">\n\t  <p>With a crafted file name it is possible to trigger an\n\t    XSS in the error reporting page.</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t    is logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-16.php\">\n\t  <p>In the error reporting feature, a parameter specifying\n\t    the file was not correctly validated, allowing the\n\t    attacker to derive the line count of an arbitrary file</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t    is logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    page.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-13.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-14.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-15.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-16.php"
-    ],
-    "cvename": [
-      "CVE-2014-8958",
-      "CVE-2014-8959",
-      "CVE-2014-8960",
-      "CVE-2014-8961"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-11-20",
-    "entry": "2014-11-21"
-  }
+	"vid": "a5d4a82a-7153-11e4-88c7-6805ca0b3d42",
+	"topic": "phpMyAdmin -- XSS and information disclosure vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "4.2.12",
+					"ge": "4.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-13.php\">\n\t  <ul>\n\t    <li>With a crafted database, table or column name it is\n\t      possible to trigger an XSS attack in the table browse\n\t      page.</li>\n\t    <li>With a crafted ENUM value it is possible to trigger\n\t      XSS attacks in the table print view and zoom search\n\t      pages.</li>\n\t    <li>With a crafted value for font size it is possible to\n\t      trigger an XSS attack in the home page.</li>\n\t  </ul>\n\t  <p>These vulnerabilities can be triggered only by someone\n\t    who is logged in to phpMyAdmin, as the usual token\n\t    protection prevents non-logged-in users from accessing the\n\t    required pages. Moreover, exploitation of the XSS\n\t    vulnerability related to the font size requires forgery of\n\t    the pma_fontsize cookie.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-14.php\">\n\t  <p> In the GIS editor feature, a parameter specifying the\n\t    geometry type was not correcly validated, opening the door\n\t    to a local file inclusion attack.</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t    is logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-15.php\">\n\t  <p>With a crafted file name it is possible to trigger an\n\t    XSS in the error reporting page.</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t    is logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-16.php\">\n\t  <p>In the error reporting feature, a parameter specifying\n\t    the file was not correctly validated, allowing the\n\t    attacker to derive the line count of an arbitrary file</p>\n\t  <p>This vulnerability can be triggered only by someone who\n\t    is logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    page.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-13.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-14.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-15.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-16.php"
+		],
+		"cvename": [
+			"CVE-2014-8958",
+			"CVE-2014-8959",
+			"CVE-2014-8960",
+			"CVE-2014-8961"
+		]
+	},
+	"dates": {
+		"discovery": "2014-11-20",
+		"entry": "2014-11-21"
+	}
 }

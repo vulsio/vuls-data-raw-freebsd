@@ -1,43 +1,43 @@
 {
-  "vid": "1d651770-f4f5-11eb-ba49-001b217b3468",
-  "topic": "Gitlab -- Gitlab",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "14.1.2",
-          "ge": "14.1.0"
-        },
-        {
-          "lt": "14.0.7",
-          "ge": "14.0.0"
-        },
-        {
-          "lt": "13.12.9",
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2021/08/03/security-release-gitlab-14-1-2-released/\">\n\t  <p>Stored XSS in Mermaid when viewing Markdown files</p>\n\t  <p>Stored XSS in default branch name</p>\n\t  <p>Perform Git actions with an impersonation token even if impersonation is disabled</p>\n\t  <p>Tag and branch name confusion allows Developer to access protected CI variables</p>\n\t  <p>New subscriptions generate OAuth tokens on an incorrect OAuth client application</p>\n\t  <p>Ability to list and delete impersonation tokens for your own user</p>\n\t  <p>Pipelines page is partially visible for users that have no right to see CI/CD</p>\n\t  <p>Improper email validation on an invite URL</p>\n\t  <p>Unauthorised user was able to add meta data upon issue creation</p>\n\t  <p>Unauthorized user can trigger deployment to a protected environment</p>\n\t  <p>Guest in private project can see CI/CD Analytics</p>\n\t  <p>Guest users can create issues for Sentry errors and track their status</p>\n\t  <p>Private user email disclosure via group invitation</p>\n\t  <p>Projects are allowed to add members with email address domain that should be blocked by group settings</p>\n\t  <p>Misleading username could lead to impersonation in using SSH Certificates</p>\n\t  <p>Unauthorized user is able to access and view project vulnerability reports</p>\n\t  <p>Denial of service in repository caused by malformed commit author</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2021/08/03/security-release-gitlab-14-1-2-released/"
-    ],
-    "cvename": [
-      "CVE-2021-22237",
-      "CVE-2021-22236",
-      "CVE-2021-22239"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-08-03",
-    "entry": "2021-08-04"
-  }
+	"vid": "1d651770-f4f5-11eb-ba49-001b217b3468",
+	"topic": "Gitlab -- Gitlab",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "14.1.2",
+					"ge": "14.1.0"
+				},
+				{
+					"lt": "14.0.7",
+					"ge": "14.0.0"
+				},
+				{
+					"lt": "13.12.9",
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2021/08/03/security-release-gitlab-14-1-2-released/\">\n\t  <p>Stored XSS in Mermaid when viewing Markdown files</p>\n\t  <p>Stored XSS in default branch name</p>\n\t  <p>Perform Git actions with an impersonation token even if impersonation is disabled</p>\n\t  <p>Tag and branch name confusion allows Developer to access protected CI variables</p>\n\t  <p>New subscriptions generate OAuth tokens on an incorrect OAuth client application</p>\n\t  <p>Ability to list and delete impersonation tokens for your own user</p>\n\t  <p>Pipelines page is partially visible for users that have no right to see CI/CD</p>\n\t  <p>Improper email validation on an invite URL</p>\n\t  <p>Unauthorised user was able to add meta data upon issue creation</p>\n\t  <p>Unauthorized user can trigger deployment to a protected environment</p>\n\t  <p>Guest in private project can see CI/CD Analytics</p>\n\t  <p>Guest users can create issues for Sentry errors and track their status</p>\n\t  <p>Private user email disclosure via group invitation</p>\n\t  <p>Projects are allowed to add members with email address domain that should be blocked by group settings</p>\n\t  <p>Misleading username could lead to impersonation in using SSH Certificates</p>\n\t  <p>Unauthorized user is able to access and view project vulnerability reports</p>\n\t  <p>Denial of service in repository caused by malformed commit author</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2021/08/03/security-release-gitlab-14-1-2-released/"
+		],
+		"cvename": [
+			"CVE-2021-22237",
+			"CVE-2021-22236",
+			"CVE-2021-22239"
+		]
+	},
+	"dates": {
+		"discovery": "2021-08-03",
+		"entry": "2021-08-04"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "12d1b5a6-e39d-11e5-9f77-5453ed2e2b49",
-  "topic": "websvn -- reflected cross-site scripting",
-  "affects": [
-    {
-      "name": [
-        "websvn"
-      ],
-      "range": [
-        {
-          "lt": "2.3.3_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Sebastien Delafond reports:</p>\n\t<blockquote cite=\"https://lists.debian.org/debian-security-announce/2016/msg00060.html\">\n\t  <p>Jakub Palaczynski discovered that websvn, a web viewer for\n\t  Subversion repositories, does not correctly sanitize user-supplied\n\t  input, which allows a remote user to run reflected cross-site\n\t  scripting attacks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.debian.org/debian-security-announce/2016/msg00060.html",
-      "http://seclists.org/fulldisclosure/2016/Feb/99"
-    ],
-    "cvename": [
-      "CVE-2016-2511"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-22",
-    "entry": "2016-03-06"
-  }
+	"vid": "12d1b5a6-e39d-11e5-9f77-5453ed2e2b49",
+	"topic": "websvn -- reflected cross-site scripting",
+	"affects": [
+		{
+			"name": [
+				"websvn"
+			],
+			"range": [
+				{
+					"lt": "2.3.3_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Sebastien Delafond reports:</p>\n\t<blockquote cite=\"https://lists.debian.org/debian-security-announce/2016/msg00060.html\">\n\t  <p>Jakub Palaczynski discovered that websvn, a web viewer for\n\t  Subversion repositories, does not correctly sanitize user-supplied\n\t  input, which allows a remote user to run reflected cross-site\n\t  scripting attacks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.debian.org/debian-security-announce/2016/msg00060.html",
+			"http://seclists.org/fulldisclosure/2016/Feb/99"
+		],
+		"cvename": [
+			"CVE-2016-2511"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-22",
+		"entry": "2016-03-06"
+	}
 }

@@ -1,39 +1,39 @@
 {
-  "vid": "ad08d14b-ca3d-11df-aade-0050568f000c",
-  "topic": "FreeBSD -- Improper environment sanitization in rtld(1)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.1_9",
-          "ge": "7.1"
-        },
-        {
-          "lt": "7.2_5",
-          "ge": "7.2"
-        },
-        {
-          "lt": "8.0_1",
-          "ge": "8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When running setuid programs rtld will normally remove potentially\n\t  dangerous environment variables. Due to recent changes in FreeBSD\n\t  environment variable handling code, a corrupt environment may\n\t  result in attempts to unset environment variables failing.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-09:16.rtld"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-12-03",
-    "entry": "2010-10-24",
-    "modified": "2016-08-09"
-  }
+	"vid": "ad08d14b-ca3d-11df-aade-0050568f000c",
+	"topic": "FreeBSD -- Improper environment sanitization in rtld(1)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.1_9",
+					"ge": "7.1"
+				},
+				{
+					"lt": "7.2_5",
+					"ge": "7.2"
+				},
+				{
+					"lt": "8.0_1",
+					"ge": "8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>When running setuid programs rtld will normally remove potentially\n\t  dangerous environment variables. Due to recent changes in FreeBSD\n\t  environment variable handling code, a corrupt environment may\n\t  result in attempts to unset environment variables failing.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-09:16.rtld"
+		]
+	},
+	"dates": {
+		"discovery": "2009-12-03",
+		"entry": "2010-10-24",
+		"modified": "2016-08-09"
+	}
 }

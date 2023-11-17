@@ -1,52 +1,52 @@
 {
-  "vid": "96b2d4db-ddd2-11ed-b6ea-080027f5fec9",
-  "topic": "redis -- HINCRBYFLOAT can be used to crash a redis-server process",
-  "affects": [
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "7.0.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis62"
-      ],
-      "range": [
-        {
-          "lt": "6.2.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis6"
-      ],
-      "range": [
-        {
-          "lt": "6.0.19"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Redis core team reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/security/advisories/GHSA-hjv8-vjf6-wcr6\">\n\t  <p>\n\t    Authenticated users can use the HINCRBYFLOAT command to\n\t    create an invalid hash field that may later crash Redis on\n\t    access.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/redis/redis/security/advisories/GHSA-hjv8-vjf6-wcr6"
-    ],
-    "cvename": [
-      "CVE-2023-28856"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-04-17",
-    "entry": "2023-05-08"
-  }
+	"vid": "96b2d4db-ddd2-11ed-b6ea-080027f5fec9",
+	"topic": "redis -- HINCRBYFLOAT can be used to crash a redis-server process",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "7.0.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis62"
+			],
+			"range": [
+				{
+					"lt": "6.2.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis6"
+			],
+			"range": [
+				{
+					"lt": "6.0.19"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Redis core team reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/security/advisories/GHSA-hjv8-vjf6-wcr6\">\n\t  <p>\n\t    Authenticated users can use the HINCRBYFLOAT command to\n\t    create an invalid hash field that may later crash Redis on\n\t    access.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/redis/redis/security/advisories/GHSA-hjv8-vjf6-wcr6"
+		],
+		"cvename": [
+			"CVE-2023-28856"
+		]
+	},
+	"dates": {
+		"discovery": "2023-04-17",
+		"entry": "2023-05-08"
+	}
 }

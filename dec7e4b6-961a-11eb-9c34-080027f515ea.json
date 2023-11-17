@@ -1,55 +1,55 @@
 {
-  "vid": "dec7e4b6-961a-11eb-9c34-080027f515ea",
-  "topic": "ruby -- XML round-trip vulnerability in REXML",
-  "affects": [
-    {
-      "name": [
-        "ruby"
-      ],
-      "range": [
-        {
-          "lt": "2.5.9,1",
-          "ge": "2.5.0,1"
-        },
-        {
-          "lt": "2.6.7,1",
-          "ge": "2.6.0,1"
-        },
-        {
-          "lt": "2.7.3,1",
-          "ge": "2.7.0,1"
-        },
-        {
-          "lt": "3.0.1,1",
-          "ge": "3.0.0.p1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-rexml"
-      ],
-      "range": [
-        {
-          "lt": "3.2.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Juho Nurminen  reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/\">\n\t  <p>\n\t    When parsing and serializing a crafted XML document, REXML gem\n\t    (including the one bundled with Ruby) can create a wrong XML\n\t    document whose structure is different from the original one.\n\t    The impact of this issue highly depends on context, but it may\n\t    lead to a vulnerability in some programs that are using REXML.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/"
-    ],
-    "cvename": [
-      "CVE-2021-28965"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-04-05",
-    "entry": "2021-04-05"
-  }
+	"vid": "dec7e4b6-961a-11eb-9c34-080027f515ea",
+	"topic": "ruby -- XML round-trip vulnerability in REXML",
+	"affects": [
+		{
+			"name": [
+				"ruby"
+			],
+			"range": [
+				{
+					"lt": "2.5.9,1",
+					"ge": "2.5.0,1"
+				},
+				{
+					"lt": "2.6.7,1",
+					"ge": "2.6.0,1"
+				},
+				{
+					"lt": "2.7.3,1",
+					"ge": "2.7.0,1"
+				},
+				{
+					"lt": "3.0.1,1",
+					"ge": "3.0.0.p1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-rexml"
+			],
+			"range": [
+				{
+					"lt": "3.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Juho Nurminen  reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/\">\n\t  <p>\n\t    When parsing and serializing a crafted XML document, REXML gem\n\t    (including the one bundled with Ruby) can create a wrong XML\n\t    document whose structure is different from the original one.\n\t    The impact of this issue highly depends on context, but it may\n\t    lead to a vulnerability in some programs that are using REXML.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/"
+		],
+		"cvename": [
+			"CVE-2021-28965"
+		]
+	},
+	"dates": {
+		"discovery": "2021-04-05",
+		"entry": "2021-04-05"
+	}
 }

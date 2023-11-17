@@ -1,39 +1,39 @@
 {
-  "vid": "74ff10f6-520f-11db-8f1a-000a48049292",
-  "topic": "cscope -- Buffer Overflow Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "cscope"
-      ],
-      "range": [
-        {
-          "lt": "15.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21601\">\n\t  <p>Will Drewry has reported some vulnerabilities in Cscope,\n\t    which potentially can be exploited by malicious people to\n\t    compromise a vulnerable system.</p>\n\t  <p>Various boundary errors within the parsing of file lists\n\t    or the expansion of environment variables can be exploited\n\t    to cause stack-based buffer overflows when parsing\n\t    specially crafted \"cscope.lists\" files or directories.</p>\n\t  <p>A boundary error within the parsing of command line\n\t    arguments can be exploited to cause a stack-based buffer\n\t    overflow when supplying an overly long \"reffile\" argument.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/21601",
-      "http://sourceforge.net/mailarchive/forum.php?thread_id=30266760&forum_id=33500",
-      "http://sourceforge.net/mailarchive/forum.php?thread_id=30266761&forum_id=33500"
-    ],
-    "cvename": [
-      "CVE-2006-4262"
-    ],
-    "bid": [
-      "19686",
-      "19687"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-08-20",
-    "entry": "2006-10-02",
-    "modified": "2006-10-11"
-  }
+	"vid": "74ff10f6-520f-11db-8f1a-000a48049292",
+	"topic": "cscope -- Buffer Overflow Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"cscope"
+			],
+			"range": [
+				{
+					"lt": "15.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21601\">\n\t  <p>Will Drewry has reported some vulnerabilities in Cscope,\n\t    which potentially can be exploited by malicious people to\n\t    compromise a vulnerable system.</p>\n\t  <p>Various boundary errors within the parsing of file lists\n\t    or the expansion of environment variables can be exploited\n\t    to cause stack-based buffer overflows when parsing\n\t    specially crafted \"cscope.lists\" files or directories.</p>\n\t  <p>A boundary error within the parsing of command line\n\t    arguments can be exploited to cause a stack-based buffer\n\t    overflow when supplying an overly long \"reffile\" argument.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/21601",
+			"http://sourceforge.net/mailarchive/forum.php?thread_id=30266760&forum_id=33500",
+			"http://sourceforge.net/mailarchive/forum.php?thread_id=30266761&forum_id=33500"
+		],
+		"cvename": [
+			"CVE-2006-4262"
+		],
+		"bid": [
+			"19686",
+			"19687"
+		]
+	},
+	"dates": {
+		"discovery": "2006-08-20",
+		"entry": "2006-10-02",
+		"modified": "2006-10-11"
+	}
 }

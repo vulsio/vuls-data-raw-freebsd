@@ -1,119 +1,119 @@
 {
-  "vid": "a81746a1-c2c7-11d9-89f7-02061b08fc24",
-  "topic": "mozilla -- \"Wrapped\" javascript: urls bypass security checks",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.4,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.8,2"
-        },
-        {
-          "ge": "1.8.*,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.8"
-        },
-        {
-          "ge": "1.8.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "de-netscape7",
-        "fr-linux-netscape",
-        "fr-netscape7",
-        "ja-linux-netscape",
-        "ja-netscape7",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk1",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-43.html\">\n\t  <p>Some security checks intended to prevent script injection\n\t    were incorrect and could be bypassed by wrapping a\n\t    javascript: url in the view-source:\n\t    pseudo-protocol. Michael Krax demonstrated that a variant\n\t    of his <a href=\"http://www.mozilla.org/security/announce/mfsa2005-37.html\">favicon</a>\n\t    exploit could still execute arbitrary code, and the same\n\t    technique could also be used to perform cross-site\n\t    scripting.</p>\n\t  <p>Georgi Guninski demonstrated the same flaw wrapping\n\t    javascript: urls with the jar: pseudo-protocol.</p>\n\t  <p>L. David Baron discovered a nested variant that defeated\n\t    checks in the script security manager.</p>\n\t  <p><strong>Workaround:</strong> Disable Javascript</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/security/announce/mfsa2005-43.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-11",
-    "entry": "2005-05-12"
-  }
+	"vid": "a81746a1-c2c7-11d9-89f7-02061b08fc24",
+	"topic": "mozilla -- \"Wrapped\" javascript: urls bypass security checks",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.8,2"
+				},
+				{
+					"ge": "1.8.*,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.8"
+				},
+				{
+					"ge": "1.8.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"de-netscape7",
+				"fr-linux-netscape",
+				"fr-netscape7",
+				"ja-linux-netscape",
+				"ja-netscape7",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk1",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-43.html\">\n\t  <p>Some security checks intended to prevent script injection\n\t    were incorrect and could be bypassed by wrapping a\n\t    javascript: url in the view-source:\n\t    pseudo-protocol. Michael Krax demonstrated that a variant\n\t    of his <a href=\"http://www.mozilla.org/security/announce/mfsa2005-37.html\">favicon</a>\n\t    exploit could still execute arbitrary code, and the same\n\t    technique could also be used to perform cross-site\n\t    scripting.</p>\n\t  <p>Georgi Guninski demonstrated the same flaw wrapping\n\t    javascript: urls with the jar: pseudo-protocol.</p>\n\t  <p>L. David Baron discovered a nested variant that defeated\n\t    checks in the script security manager.</p>\n\t  <p><strong>Workaround:</strong> Disable Javascript</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/security/announce/mfsa2005-43.html"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-11",
+		"entry": "2005-05-12"
+	}
 }

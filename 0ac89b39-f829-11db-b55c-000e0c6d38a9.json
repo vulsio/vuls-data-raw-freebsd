@@ -1,45 +1,45 @@
 {
-  "vid": "0ac89b39-f829-11db-b55c-000e0c6d38a9",
-  "topic": "qemu -- several vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.9.0_1"
-        },
-        {
-          "lt": "0.9.0s.20070405_3",
-          "ge": "0.9.0s.20070101*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Debian Security Team reports:</p>\n\t<blockquote cite=\"http://lists.debian.org/debian-security-announce/debian-security-announce-2007/msg00040.html\">\n\t  <p>Several vulnerabilities have been discovered in the QEMU processor\n\t    emulator, which may lead to the execution of arbitrary code or\n\t    denial of service. The Common Vulnerabilities and Exposures project\n\t    identifies the following problems:</p>\n\t  <p>CVE-2007-1320<br/>Tavis Ormandy discovered that a memory management\n\t    routine of the Cirrus video driver performs insufficient bounds\n\t    checking, which might allow the execution of arbitrary code through\n\t    a heap overflow.</p>\n\t  <p>CVE-2007-1321<br/>Tavis Ormandy discovered that the NE2000 network\n\t    driver and the socket code perform insufficient input validation,\n\t    which might allow the execution of arbitrary code through a heap\n\t    overflow.</p>\n\t  <p>CVE-2007-1322<br/>Tavis Ormandy discovered that the \"icebp\"\n\t    instruction can be abused to terminate the emulation, resulting in\n\t    denial of service.</p>\n\t  <p>CVE-2007-1323<br/>Tavis Ormandy discovered that the NE2000 network\n\t    driver and the socket code perform insufficient input validation,\n\t    which might allow the execution of arbitrary code through a heap\n\t    overflow.</p>\n\t  <p>CVE-2007-1366<br/>Tavis Ormandy discovered that the \"aam\"\n\t    instruction can be abused to crash qemu through a division by zero,\n\t    resulting in denial of service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2007-1320",
-      "CVE-2007-1321",
-      "CVE-2007-1322",
-      "CVE-2007-1323",
-      "CVE-2007-1366"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.debian.org/debian-security-announce/debian-security-announce-2007/msg00040.html",
-        "msgid": "20070501100313.GA4074@galadriel.inutil.org"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2007-05-01",
-    "entry": "2007-05-01",
-    "modified": "2007-05-02"
-  }
+	"vid": "0ac89b39-f829-11db-b55c-000e0c6d38a9",
+	"topic": "qemu -- several vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"lt": "0.9.0_1"
+				},
+				{
+					"lt": "0.9.0s.20070405_3",
+					"ge": "0.9.0s.20070101*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Debian Security Team reports:</p>\n\t<blockquote cite=\"http://lists.debian.org/debian-security-announce/debian-security-announce-2007/msg00040.html\">\n\t  <p>Several vulnerabilities have been discovered in the QEMU processor\n\t    emulator, which may lead to the execution of arbitrary code or\n\t    denial of service. The Common Vulnerabilities and Exposures project\n\t    identifies the following problems:</p>\n\t  <p>CVE-2007-1320<br/>Tavis Ormandy discovered that a memory management\n\t    routine of the Cirrus video driver performs insufficient bounds\n\t    checking, which might allow the execution of arbitrary code through\n\t    a heap overflow.</p>\n\t  <p>CVE-2007-1321<br/>Tavis Ormandy discovered that the NE2000 network\n\t    driver and the socket code perform insufficient input validation,\n\t    which might allow the execution of arbitrary code through a heap\n\t    overflow.</p>\n\t  <p>CVE-2007-1322<br/>Tavis Ormandy discovered that the \"icebp\"\n\t    instruction can be abused to terminate the emulation, resulting in\n\t    denial of service.</p>\n\t  <p>CVE-2007-1323<br/>Tavis Ormandy discovered that the NE2000 network\n\t    driver and the socket code perform insufficient input validation,\n\t    which might allow the execution of arbitrary code through a heap\n\t    overflow.</p>\n\t  <p>CVE-2007-1366<br/>Tavis Ormandy discovered that the \"aam\"\n\t    instruction can be abused to crash qemu through a division by zero,\n\t    resulting in denial of service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2007-1320",
+			"CVE-2007-1321",
+			"CVE-2007-1322",
+			"CVE-2007-1323",
+			"CVE-2007-1366"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.debian.org/debian-security-announce/debian-security-announce-2007/msg00040.html",
+				"msgid": "20070501100313.GA4074@galadriel.inutil.org"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2007-05-01",
+		"entry": "2007-05-01",
+		"modified": "2007-05-02"
+	}
 }

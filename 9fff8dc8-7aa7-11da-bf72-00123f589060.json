@@ -1,134 +1,134 @@
 {
-  "vid": "9fff8dc8-7aa7-11da-bf72-00123f589060",
-  "topic": "apache -- mod_imap cross-site scripting flaw",
-  "affects": [
-    {
-      "name": [
-        "apache"
-      ],
-      "range": [
-        {
-          "lt": "1.3.34_3",
-          "ge": "1.3"
-        },
-        {
-          "lt": "2.0.55_2",
-          "ge": "2.0.35"
-        },
-        {
-          "lt": "2.1.9_3",
-          "ge": "2.1"
-        },
-        {
-          "lt": "2.2.0_3",
-          "ge": "2.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+mod_perl"
-      ],
-      "range": [
-        {
-          "lt": "1.3.34_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache_fp"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+ipv6"
-      ],
-      "range": [
-        {
-          "lt": "1.3.37"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ru-apache"
-      ],
-      "range": [
-        {
-          "lt": "1.3.34+30.22_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ru-apache+mod_ssl"
-      ],
-      "range": [
-        {
-          "lt": "1.3.34+30.22+2.8.25_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+ssl"
-      ],
-      "range": [
-        {
-          "lt": "1.3.33.1.55_2",
-          "ge": "1.3.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+mod_ssl",
-        "apache+mod_ssl+ipv6",
-        "apache+mod_ssl+mod_accel",
-        "apache+mod_ssl+mod_accel+ipv6",
-        "apache+mod_ssl+mod_accel+mod_deflate",
-        "apache+mod_ssl+mod_accel+mod_deflate+ipv6",
-        "apache+mod_ssl+mod_deflate",
-        "apache+mod_ssl+mod_deflate+ipv6",
-        "apache+mod_ssl+mod_snmp",
-        "apache+mod_ssl+mod_snmp+mod_accel",
-        "apache+mod_ssl+mod_snmp+mod_accel+ipv6",
-        "apache+mod_ssl+mod_snmp+mod_deflate",
-        "apache+mod_ssl+mod_snmp+mod_deflate+ipv6",
-        "apache+mod_ssl+mod_snmp+mod_accel+mod_deflate+ipv6"
-      ],
-      "range": [
-        {
-          "lt": "1.3.34+2.8.25_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache HTTP Server Project reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_13.html\">\n\t  <p>A flaw in mod_imap when using the Referer directive with\n\t    image maps. In certain site configurations a remote\n\t    attacker could perform a cross-site scripting attack if a\n\t    victim can be forced to visit a malicious URL using\n\t    certain web browsers.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.apacheweek.com/features/security-13",
-      "http://www.apacheweek.com/features/security-20"
-    ],
-    "cvename": [
-      "CVE-2005-3352"
-    ],
-    "bid": [
-      "15834"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-11-01",
-    "entry": "2006-01-01",
-    "modified": "2009-01-23"
-  }
+	"vid": "9fff8dc8-7aa7-11da-bf72-00123f589060",
+	"topic": "apache -- mod_imap cross-site scripting flaw",
+	"affects": [
+		{
+			"name": [
+				"apache"
+			],
+			"range": [
+				{
+					"lt": "1.3.34_3",
+					"ge": "1.3"
+				},
+				{
+					"lt": "2.0.55_2",
+					"ge": "2.0.35"
+				},
+				{
+					"lt": "2.1.9_3",
+					"ge": "2.1"
+				},
+				{
+					"lt": "2.2.0_3",
+					"ge": "2.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+mod_perl"
+			],
+			"range": [
+				{
+					"lt": "1.3.34_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache_fp"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+ipv6"
+			],
+			"range": [
+				{
+					"lt": "1.3.37"
+				}
+			]
+		},
+		{
+			"name": [
+				"ru-apache"
+			],
+			"range": [
+				{
+					"lt": "1.3.34+30.22_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ru-apache+mod_ssl"
+			],
+			"range": [
+				{
+					"lt": "1.3.34+30.22+2.8.25_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+ssl"
+			],
+			"range": [
+				{
+					"lt": "1.3.33.1.55_2",
+					"ge": "1.3.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+mod_ssl",
+				"apache+mod_ssl+ipv6",
+				"apache+mod_ssl+mod_accel",
+				"apache+mod_ssl+mod_accel+ipv6",
+				"apache+mod_ssl+mod_accel+mod_deflate",
+				"apache+mod_ssl+mod_accel+mod_deflate+ipv6",
+				"apache+mod_ssl+mod_deflate",
+				"apache+mod_ssl+mod_deflate+ipv6",
+				"apache+mod_ssl+mod_snmp",
+				"apache+mod_ssl+mod_snmp+mod_accel",
+				"apache+mod_ssl+mod_snmp+mod_accel+ipv6",
+				"apache+mod_ssl+mod_snmp+mod_deflate",
+				"apache+mod_ssl+mod_snmp+mod_deflate+ipv6",
+				"apache+mod_ssl+mod_snmp+mod_accel+mod_deflate+ipv6"
+			],
+			"range": [
+				{
+					"lt": "1.3.34+2.8.25_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache HTTP Server Project reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_13.html\">\n\t  <p>A flaw in mod_imap when using the Referer directive with\n\t    image maps. In certain site configurations a remote\n\t    attacker could perform a cross-site scripting attack if a\n\t    victim can be forced to visit a malicious URL using\n\t    certain web browsers.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.apacheweek.com/features/security-13",
+			"http://www.apacheweek.com/features/security-20"
+		],
+		"cvename": [
+			"CVE-2005-3352"
+		],
+		"bid": [
+			"15834"
+		]
+	},
+	"dates": {
+		"discovery": "2005-11-01",
+		"entry": "2006-01-01",
+		"modified": "2009-01-23"
+	}
 }

@@ -1,52 +1,52 @@
 {
-  "vid": "e289f7fd-88ac-11d8-90d1-0020ed76ef5a",
-  "topic": "many out-of-sequence TCP packets denial-of-service",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.2.1_2",
-          "ge": "5.2"
-        },
-        {
-          "lt": "5.1_15",
-          "ge": "5.0"
-        },
-        {
-          "lt": "4.9_3",
-          "ge": "4.9"
-        },
-        {
-          "lt": "4.8_16",
-          "ge": "4.8"
-        },
-        {
-          "lt": "4.7_26"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>FreeBSD does not limit the number of TCP segments that\n\tmay be held in a reassembly queue.  A remote attacker may\n\tconduct a low-bandwidth denial-of-service attack against\n\ta machine providing services based on TCP (there are many\n\tsuch services, including HTTP, SMTP, and FTP).\tBy sending\n\tmany out-of-sequence TCP segments, the attacker can cause\n\tthe target machine to consume all available memory buffers\n\t(``mbufs''), likely leading to a system crash.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.idefense.com/application/poi/display?id=78&type=vulnerabilities"
-    ],
-    "cvename": [
-      "CVE-2004-0171"
-    ],
-    "freebsd_sa": [
-      "SA-04:04.tcp"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-02-18",
-    "entry": "2004-04-07",
-    "modified": "2004-05-05"
-  }
+	"vid": "e289f7fd-88ac-11d8-90d1-0020ed76ef5a",
+	"topic": "many out-of-sequence TCP packets denial-of-service",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.2.1_2",
+					"ge": "5.2"
+				},
+				{
+					"lt": "5.1_15",
+					"ge": "5.0"
+				},
+				{
+					"lt": "4.9_3",
+					"ge": "4.9"
+				},
+				{
+					"lt": "4.8_16",
+					"ge": "4.8"
+				},
+				{
+					"lt": "4.7_26"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>FreeBSD does not limit the number of TCP segments that\n\tmay be held in a reassembly queue.  A remote attacker may\n\tconduct a low-bandwidth denial-of-service attack against\n\ta machine providing services based on TCP (there are many\n\tsuch services, including HTTP, SMTP, and FTP).\tBy sending\n\tmany out-of-sequence TCP segments, the attacker can cause\n\tthe target machine to consume all available memory buffers\n\t(``mbufs''), likely leading to a system crash.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.idefense.com/application/poi/display?id=78&type=vulnerabilities"
+		],
+		"cvename": [
+			"CVE-2004-0171"
+		],
+		"freebsd_sa": [
+			"SA-04:04.tcp"
+		]
+	},
+	"dates": {
+		"discovery": "2004-02-18",
+		"entry": "2004-04-07",
+		"modified": "2004-05-05"
+	}
 }

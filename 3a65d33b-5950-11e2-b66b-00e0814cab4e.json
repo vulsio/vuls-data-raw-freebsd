@@ -1,29 +1,29 @@
 {
-  "vid": "3a65d33b-5950-11e2-b66b-00e0814cab4e",
-  "topic": "jenkins -- HTTP access to the server to retrieve the master cryptographic key",
-  "affects": [
-    {
-      "name": [
-        "jenkins"
-      ],
-      "range": [
-        {
-          "lt": "1.498"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jenkins Security Advisory reports:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2013-01-04\">\n\t  <p>This advisory announces a security vulnerability that was found\n\t     in Jenkins core.</p>\n\t  <p>An attacker can then use this master cryptographic key to mount\n\t     remote code execution attack against the Jenkins master, or\n\t     impersonate arbitrary users in making REST API calls.</p>\n\t  <p>There are several factors that mitigate some of these problems\n\t     that may apply to specific installations.</p>\n\t    <ul>\n\t      <li>The particular attack vector is only applicable on Jenkins\n\t\t  instances that have slaves attached to them, and allow\n\t\t  anonymous read access.</li>\n\t      <li>Jenkins allows users to re-generate the API tokens. Those\n\t\t  re-generated API tokens cannot be impersonated by the\n\t\t  attacker.</li>\n\t    </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2013-01-04"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-01-04",
-    "entry": "2013-01-08"
-  }
+	"vid": "3a65d33b-5950-11e2-b66b-00e0814cab4e",
+	"topic": "jenkins -- HTTP access to the server to retrieve the master cryptographic key",
+	"affects": [
+		{
+			"name": [
+				"jenkins"
+			],
+			"range": [
+				{
+					"lt": "1.498"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jenkins Security Advisory reports:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2013-01-04\">\n\t  <p>This advisory announces a security vulnerability that was found\n\t     in Jenkins core.</p>\n\t  <p>An attacker can then use this master cryptographic key to mount\n\t     remote code execution attack against the Jenkins master, or\n\t     impersonate arbitrary users in making REST API calls.</p>\n\t  <p>There are several factors that mitigate some of these problems\n\t     that may apply to specific installations.</p>\n\t    <ul>\n\t      <li>The particular attack vector is only applicable on Jenkins\n\t\t  instances that have slaves attached to them, and allow\n\t\t  anonymous read access.</li>\n\t      <li>Jenkins allows users to re-generate the API tokens. Those\n\t\t  re-generated API tokens cannot be impersonated by the\n\t\t  attacker.</li>\n\t    </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2013-01-04"
+		]
+	},
+	"dates": {
+		"discovery": "2013-01-04",
+		"entry": "2013-01-08"
+	}
 }

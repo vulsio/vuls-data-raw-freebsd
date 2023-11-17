@@ -1,41 +1,41 @@
 {
-  "vid": "b8ee7a81-a879-4358-9b30-7dd1bd4c14b1",
-  "topic": "libevent -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libevent",
-        "libevent2",
-        "linux-c6-libevent2",
-        "linux-c7-libevent"
-      ],
-      "range": [
-        {
-          "lt": "2.1.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Debian Security reports:</p>\n\t<blockquote cite=\"https://security-tracker.debian.org/tracker/DSA-3789-1\">\n\t  <p>CVE-2016-10195: The name_parse function in evdns.c in\n\t    libevent before 2.1.6-beta allows remote attackers to have\n\t    unspecified impact via vectors involving the label_len\n\t    variable, which triggers an out-of-bounds stack read.</p>\n\t  <p>CVE-2016-10196: Stack-based buffer overflow in the\n\t    evutil_parse_sockaddr_port function in evutil.c in libevent\n\t    before 2.1.6-beta allows attackers to cause a denial of\n\t    service (segmentation fault) via vectors involving a long\n\t    string in brackets in the ip_as_string argument.</p>\n\t  <p>CVE-2016-10197: The search_make_new function in evdns.c\n\t    in libevent before 2.1.6-beta allows attackers to cause a\n\t    denial of service (out-of-bounds read) via an empty\n\t    hostname.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2017/01/31/17",
-      "https://github.com/libevent/libevent/issues/317",
-      "https://github.com/libevent/libevent/issues/318",
-      "https://github.com/libevent/libevent/issues/332",
-      "https://github.com/libevent/libevent/issues/335"
-    ],
-    "cvename": [
-      "CVE-2016-10195",
-      "CVE-2016-10196",
-      "CVE-2016-10197"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-01-31",
-    "entry": "2017-04-19"
-  }
+	"vid": "b8ee7a81-a879-4358-9b30-7dd1bd4c14b1",
+	"topic": "libevent -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libevent",
+				"libevent2",
+				"linux-c6-libevent2",
+				"linux-c7-libevent"
+			],
+			"range": [
+				{
+					"lt": "2.1.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Debian Security reports:</p>\n\t<blockquote cite=\"https://security-tracker.debian.org/tracker/DSA-3789-1\">\n\t  <p>CVE-2016-10195: The name_parse function in evdns.c in\n\t    libevent before 2.1.6-beta allows remote attackers to have\n\t    unspecified impact via vectors involving the label_len\n\t    variable, which triggers an out-of-bounds stack read.</p>\n\t  <p>CVE-2016-10196: Stack-based buffer overflow in the\n\t    evutil_parse_sockaddr_port function in evutil.c in libevent\n\t    before 2.1.6-beta allows attackers to cause a denial of\n\t    service (segmentation fault) via vectors involving a long\n\t    string in brackets in the ip_as_string argument.</p>\n\t  <p>CVE-2016-10197: The search_make_new function in evdns.c\n\t    in libevent before 2.1.6-beta allows attackers to cause a\n\t    denial of service (out-of-bounds read) via an empty\n\t    hostname.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2017/01/31/17",
+			"https://github.com/libevent/libevent/issues/317",
+			"https://github.com/libevent/libevent/issues/318",
+			"https://github.com/libevent/libevent/issues/332",
+			"https://github.com/libevent/libevent/issues/335"
+		],
+		"cvename": [
+			"CVE-2016-10195",
+			"CVE-2016-10196",
+			"CVE-2016-10197"
+		]
+	},
+	"dates": {
+		"discovery": "2017-01-31",
+		"entry": "2017-04-19"
+	}
 }

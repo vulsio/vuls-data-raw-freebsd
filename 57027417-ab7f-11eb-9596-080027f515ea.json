@@ -1,32 +1,32 @@
 {
-  "vid": "57027417-ab7f-11eb-9596-080027f515ea",
-  "topic": "RDoc -- command injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rubygem-rdoc"
-      ],
-      "range": [
-        {
-          "lt": "6.3.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Alexandr Savca reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc/\">\n\t  <p>\n\t    RDoc used to call Kernel#open to open a local file. If a Ruby project\n\t    has a file whose name starts with | and ends with tags, the command\n\t    following the pipe character is executed. A malicious Ruby project\n\t    could exploit it to run an arbitrary command execution against a user\n\t    who attempts to run rdoc command.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc/"
-    ],
-    "cvename": [
-      "CVE-2021-31799"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-05-02",
-    "entry": "2021-05-02"
-  }
+	"vid": "57027417-ab7f-11eb-9596-080027f515ea",
+	"topic": "RDoc -- command injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rubygem-rdoc"
+			],
+			"range": [
+				{
+					"lt": "6.3.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Alexandr Savca reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc/\">\n\t  <p>\n\t    RDoc used to call Kernel#open to open a local file. If a Ruby project\n\t    has a file whose name starts with | and ends with tags, the command\n\t    following the pipe character is executed. A malicious Ruby project\n\t    could exploit it to run an arbitrary command execution against a user\n\t    who attempts to run rdoc command.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc/"
+		],
+		"cvename": [
+			"CVE-2021-31799"
+		]
+	},
+	"dates": {
+		"discovery": "2021-05-02",
+		"entry": "2021-05-02"
+	}
 }

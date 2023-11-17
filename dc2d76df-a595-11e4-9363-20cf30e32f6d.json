@@ -1,33 +1,33 @@
 {
-  "vid": "dc2d76df-a595-11e4-9363-20cf30e32f6d",
-  "topic": "Bugzilla multiple security issues",
-  "affects": [
-    {
-      "name": [
-        "bugzilla44"
-      ],
-      "range": [
-        {
-          "lt": "4.4.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Bugzilla Security Advisory</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/4.0.15/\">\n\t  <h5>Command Injection</h5>\n\t  <p>Some code in Bugzilla does not properly utilize 3 arguments form\n\t    for open() and it is possible for an account with editcomponents\n\t    permissions to inject commands into product names and other\n\t    attributes.</p>\n\t  <h5>Information Leak</h5>\n\t  <p>Using the WebServices API, a user can possibly execute imported\n\t    functions from other non-WebService modules. A whitelist has now\n\t    been added that lists explicit methods that can be executed via the\n\t    API.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=1079065",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=1090275"
-    ],
-    "cvename": [
-      "CVE-2014-8630"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-01-21",
-    "entry": "2015-01-26"
-  }
+	"vid": "dc2d76df-a595-11e4-9363-20cf30e32f6d",
+	"topic": "Bugzilla multiple security issues",
+	"affects": [
+		{
+			"name": [
+				"bugzilla44"
+			],
+			"range": [
+				{
+					"lt": "4.4.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Bugzilla Security Advisory</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/4.0.15/\">\n\t  <h5>Command Injection</h5>\n\t  <p>Some code in Bugzilla does not properly utilize 3 arguments form\n\t    for open() and it is possible for an account with editcomponents\n\t    permissions to inject commands into product names and other\n\t    attributes.</p>\n\t  <h5>Information Leak</h5>\n\t  <p>Using the WebServices API, a user can possibly execute imported\n\t    functions from other non-WebService modules. A whitelist has now\n\t    been added that lists explicit methods that can be executed via the\n\t    API.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=1079065",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=1090275"
+		],
+		"cvename": [
+			"CVE-2014-8630"
+		]
+	},
+	"dates": {
+		"discovery": "2015-01-21",
+		"entry": "2015-01-26"
+	}
 }

@@ -1,44 +1,44 @@
 {
-  "vid": "854c2afb-4424-11ed-af97-adcabf310f9b",
-  "topic": "go -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "go118"
-      ],
-      "range": [
-        {
-          "lt": "1.18.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "go119"
-      ],
-      "range": [
-        {
-          "lt": "1.19.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/54853\">\n\t  <p>archive/tar: unbounded memory consumption when reading\n\t    headers</p>\n\t  <p>Reader.Read did not set a limit on the maximum size of\n\t    file headers. A maliciously crafted archive could cause\n\t    Read to allocate unbounded amounts of memory, potentially\n\t    causing resource exhaustion or panics. Reader.Read now\n\t    limits the maximum size of header blocks to 1 MiB.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/54663\">\n\t  <p>net/http/httputil: ReverseProxy should not forward\n\t    unparseable query parameters</p>\n\t  <p>Requests forwarded by ReverseProxy included the raw\n\t    query parameters from the inbound request, including\n\t    unparseable parameters rejected by net/http. This could\n\t    permit query parameter smuggling when a Go proxy\n\t    forwards a parameter with an unparseable value.</p>\n\t  <p>ReverseProxy will now sanitize the query parameters in\n\t    the forwarded query when the outbound request's Form\n\t    field is set after the ReverseProxy.Director function\n\t    returns, indicating that the proxy has parsed the query\n\t    parameters. Proxies which do not parse query parameters\n\t    continue to forward the original query parameters\n\t    unchanged.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/55949\">\n\t  <p>regexp/syntax: limit memory used by parsing regexps</p>\n\t  <p>The parsed regexp representation is linear in the size\n\t    of the input, but in some cases the constant factor can be\n\t    as high as 40,000, making relatively small regexps consume\n\t    much larger amounts of memory.</p>\n\t  <p>Each regexp being parsed is now limited to a 256 MB\n\t    memory footprint. Regular expressions whose\n\t    representation would use more space than that are now\n\t    rejected. Normal use of regular expressions is\n\t    unaffected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/golang-announce/c/xtuG5faxtaU/m/jEhlI_5WBgAJ"
-    ],
-    "cvename": [
-      "CVE-2022-2879",
-      "CVE-2022-2880",
-      "CVE-2022-41715"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-10-04",
-    "entry": "2022-10-04"
-  }
+	"vid": "854c2afb-4424-11ed-af97-adcabf310f9b",
+	"topic": "go -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"go118"
+			],
+			"range": [
+				{
+					"lt": "1.18.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"go119"
+			],
+			"range": [
+				{
+					"lt": "1.19.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/54853\">\n\t  <p>archive/tar: unbounded memory consumption when reading\n\t    headers</p>\n\t  <p>Reader.Read did not set a limit on the maximum size of\n\t    file headers. A maliciously crafted archive could cause\n\t    Read to allocate unbounded amounts of memory, potentially\n\t    causing resource exhaustion or panics. Reader.Read now\n\t    limits the maximum size of header blocks to 1 MiB.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/54663\">\n\t  <p>net/http/httputil: ReverseProxy should not forward\n\t    unparseable query parameters</p>\n\t  <p>Requests forwarded by ReverseProxy included the raw\n\t    query parameters from the inbound request, including\n\t    unparseable parameters rejected by net/http. This could\n\t    permit query parameter smuggling when a Go proxy\n\t    forwards a parameter with an unparseable value.</p>\n\t  <p>ReverseProxy will now sanitize the query parameters in\n\t    the forwarded query when the outbound request's Form\n\t    field is set after the ReverseProxy.Director function\n\t    returns, indicating that the proxy has parsed the query\n\t    parameters. Proxies which do not parse query parameters\n\t    continue to forward the original query parameters\n\t    unchanged.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/55949\">\n\t  <p>regexp/syntax: limit memory used by parsing regexps</p>\n\t  <p>The parsed regexp representation is linear in the size\n\t    of the input, but in some cases the constant factor can be\n\t    as high as 40,000, making relatively small regexps consume\n\t    much larger amounts of memory.</p>\n\t  <p>Each regexp being parsed is now limited to a 256 MB\n\t    memory footprint. Regular expressions whose\n\t    representation would use more space than that are now\n\t    rejected. Normal use of regular expressions is\n\t    unaffected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/golang-announce/c/xtuG5faxtaU/m/jEhlI_5WBgAJ"
+		],
+		"cvename": [
+			"CVE-2022-2879",
+			"CVE-2022-2880",
+			"CVE-2022-41715"
+		]
+	},
+	"dates": {
+		"discovery": "2022-10-04",
+		"entry": "2022-10-04"
+	}
 }

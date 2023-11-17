@@ -1,29 +1,29 @@
 {
-  "vid": "d846af5b-00f4-11e2-b6d0-00e0814cab4e",
-  "topic": "jenkins -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "jenkins"
-      ],
-      "range": [
-        {
-          "lt": "1.482"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jenkins Security Advisory reports:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2012-09-17\">\n\t  <p>This advisory announces security vulnerabilities that were found\n\t    in Jenkins core and several plugins.</p>\n\t  <ol>\n\t    <li>The first vulnerability in Jenkins core allows unprivileged\n\t      users to insert data into Jenkins master, which can lead to\n\t      remote code execution. For this vulnerability to be exploited,\n\t      the attacker must have an HTTP access to a Jenkins master, and\n\t      he must have a read access to Jenkins.</li>\n\t    <li>The second vulnerability in Jenkins core is a cross-site\n\t      scripting vulnerability. This allows an attacker to craft an URL\n\t      that points to Jenkins, and if a legitimate user clicks this link,\n\t      and the attacker will be able to hijack the user session.</li>\n\t    <li>The third vulnerability is a cross-site scripting vulnerability\n\t      in the Violations plugin</li>\n\t    <li>The fourth vulnerability is a cross-site scripting vulnerability\n\t      in The Continuous Integration Game plugin</li>\n\t  </ol>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2012-09-17"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-09-17",
-    "entry": "2012-09-17"
-  }
+	"vid": "d846af5b-00f4-11e2-b6d0-00e0814cab4e",
+	"topic": "jenkins -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"jenkins"
+			],
+			"range": [
+				{
+					"lt": "1.482"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jenkins Security Advisory reports:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2012-09-17\">\n\t  <p>This advisory announces security vulnerabilities that were found\n\t    in Jenkins core and several plugins.</p>\n\t  <ol>\n\t    <li>The first vulnerability in Jenkins core allows unprivileged\n\t      users to insert data into Jenkins master, which can lead to\n\t      remote code execution. For this vulnerability to be exploited,\n\t      the attacker must have an HTTP access to a Jenkins master, and\n\t      he must have a read access to Jenkins.</li>\n\t    <li>The second vulnerability in Jenkins core is a cross-site\n\t      scripting vulnerability. This allows an attacker to craft an URL\n\t      that points to Jenkins, and if a legitimate user clicks this link,\n\t      and the attacker will be able to hijack the user session.</li>\n\t    <li>The third vulnerability is a cross-site scripting vulnerability\n\t      in the Violations plugin</li>\n\t    <li>The fourth vulnerability is a cross-site scripting vulnerability\n\t      in The Continuous Integration Game plugin</li>\n\t  </ol>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2012-09-17"
+		]
+	},
+	"dates": {
+		"discovery": "2012-09-17",
+		"entry": "2012-09-17"
+	}
 }

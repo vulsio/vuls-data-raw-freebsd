@@ -1,37 +1,37 @@
 {
-  "vid": "800e8bd5-3acb-11dd-8842-001302a18722",
-  "topic": "xorg -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "xorg-server"
-      ],
-      "range": [
-        {
-          "lt": "1.4.2,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Matthieu Herrb of X.Org reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/xorg/2008-June/036026.html\">\n\t  <p>Several vulnerabilities have been found in the server-side code\n\t    of some extensions in the X Window System. Improper validation of\n\t    client-provided data can cause data corruption.</p>\n\t  <p>Exploiting these overflows will crash the X server or,\n\t    under certain circumstances allow the execution of arbitray machine\n\t    code.</p>\n\t  <p>When the X server is running with root privileges (which is the case\n\t    for the Xorg server and for most kdrive based servers), these\n\t    vulnerabilities can thus also be used to raise privileges.</p>\n\t  <p>All these vulnerabilities, to be exploited successfully, require either\n\t    an already established connection to a running X server (and normally\n\t    running X servers are only accepting authenticated connections), or a\n\t    shell access with a valid user on the machine where the vulnerable\n\t    server is installed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.freedesktop.org/archives/xorg/2008-June/036026.html",
-      "http://secunia.com/advisories/30627/"
-    ],
-    "cvename": [
-      "CVE-2008-1377",
-      "CVE-2008-1379",
-      "CVE-2008-2360",
-      "CVE-2008-2361",
-      "CVE-2008-2362"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-06-11",
-    "entry": "2008-06-15"
-  }
+	"vid": "800e8bd5-3acb-11dd-8842-001302a18722",
+	"topic": "xorg -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"xorg-server"
+			],
+			"range": [
+				{
+					"lt": "1.4.2,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matthieu Herrb of X.Org reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/xorg/2008-June/036026.html\">\n\t  <p>Several vulnerabilities have been found in the server-side code\n\t    of some extensions in the X Window System. Improper validation of\n\t    client-provided data can cause data corruption.</p>\n\t  <p>Exploiting these overflows will crash the X server or,\n\t    under certain circumstances allow the execution of arbitray machine\n\t    code.</p>\n\t  <p>When the X server is running with root privileges (which is the case\n\t    for the Xorg server and for most kdrive based servers), these\n\t    vulnerabilities can thus also be used to raise privileges.</p>\n\t  <p>All these vulnerabilities, to be exploited successfully, require either\n\t    an already established connection to a running X server (and normally\n\t    running X servers are only accepting authenticated connections), or a\n\t    shell access with a valid user on the machine where the vulnerable\n\t    server is installed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.freedesktop.org/archives/xorg/2008-June/036026.html",
+			"http://secunia.com/advisories/30627/"
+		],
+		"cvename": [
+			"CVE-2008-1377",
+			"CVE-2008-1379",
+			"CVE-2008-2360",
+			"CVE-2008-2361",
+			"CVE-2008-2362"
+		]
+	},
+	"dates": {
+		"discovery": "2008-06-11",
+		"entry": "2008-06-15"
+	}
 }

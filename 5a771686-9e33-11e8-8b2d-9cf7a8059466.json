@@ -1,34 +1,34 @@
 {
-  "vid": "5a771686-9e33-11e8-8b2d-9cf7a8059466",
-  "topic": "chicken -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "chicken"
-      ],
-      "range": [
-        {
-          "lt": "4.13.0,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>CHICKEN reports:</p>\n\t<blockquote cite=\"https://code.call-cc.org/releases/4.13.0/NEWS\">\n\t  <ul>\n\t    <li>CVE-2017-6949: Unchecked malloc() call in SRFI-4\n\t    constructors when allocating in non-GC memory, resulting\n\t    in potential 1-word buffer overrun and/or segfault</li>\n\t    <li>CVE-2017-9334: \"length\" crashes on improper lists</li>\n\t    <li>CVE-2017-11343: The randomization factor of the symbol\n\t    table was set before the random seed was set, causing it\n\t    to have a fixed value on many platforms</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://code.call-cc.org/releases/4.13.0/NEWS"
-    ],
-    "cvename": [
-      "CVE-2017-6949",
-      "CVE-2017-9334",
-      "CVE-2017-11343"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-03-16",
-    "entry": "2018-08-12"
-  }
+	"vid": "5a771686-9e33-11e8-8b2d-9cf7a8059466",
+	"topic": "chicken -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"chicken"
+			],
+			"range": [
+				{
+					"lt": "4.13.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>CHICKEN reports:</p>\n\t<blockquote cite=\"https://code.call-cc.org/releases/4.13.0/NEWS\">\n\t  <ul>\n\t    <li>CVE-2017-6949: Unchecked malloc() call in SRFI-4\n\t    constructors when allocating in non-GC memory, resulting\n\t    in potential 1-word buffer overrun and/or segfault</li>\n\t    <li>CVE-2017-9334: \"length\" crashes on improper lists</li>\n\t    <li>CVE-2017-11343: The randomization factor of the symbol\n\t    table was set before the random seed was set, causing it\n\t    to have a fixed value on many platforms</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://code.call-cc.org/releases/4.13.0/NEWS"
+		],
+		"cvename": [
+			"CVE-2017-6949",
+			"CVE-2017-9334",
+			"CVE-2017-11343"
+		]
+	},
+	"dates": {
+		"discovery": "2017-03-16",
+		"entry": "2018-08-12"
+	}
 }

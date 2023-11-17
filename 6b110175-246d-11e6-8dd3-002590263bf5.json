@@ -1,65 +1,65 @@
 {
-  "vid": "6b110175-246d-11e6-8dd3-002590263bf5",
-  "topic": "php -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php70-gd",
-        "php70-intl"
-      ],
-      "range": [
-        {
-          "lt": "7.0.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56",
-        "php56-gd"
-      ],
-      "range": [
-        {
-          "lt": "5.6.22"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php55",
-        "php55-gd",
-        "php55-phar"
-      ],
-      "range": [
-        {
-          "lt": "5.5.36"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PHP Group reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.5.36\">\n\t  <ul><li>Core:\n\t  <ul>\n\t    <li>Fixed bug #72114 (Integer underflow / arbitrary null write in\n\t      fread/gzread). (CVE-2016-5096) (PHP 5.5/5.6 only)</li>\n\t    <li>Fixed bug #72135 (Integer Overflow in php_html_entities).\n\t      (CVE-2016-5094) (PHP 5.5/5.6 only)</li>\n\t  </ul></li>\n\t  <li>GD:\n\t  <ul>\n\t    <li>Fixed bug #72227 (imagescale out-of-bounds read).\n\t      (CVE-2013-7456)</li>\n\t  </ul></li>\n\t  <li>Intl:\n\t  <ul>\n\t    <li>Fixed bug #72241 (get_icu_value_internal out-of-bounds read).\n\t      (CVE-2016-5093)</li>\n\t  </ul></li>\n\t  <li>Phar:\n\t  <ul>\n\t    <li>Fixed bug #71331 (Uninitialized pointer in\n\t      phar_make_dirstream()). (CVE-2016-4343) (PHP 5.5 only)</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://php.net/ChangeLog-7.php#7.0.7",
-      "http://php.net/ChangeLog-5.php#5.6.22",
-      "http://php.net/ChangeLog-5.php#5.5.36"
-    ],
-    "cvename": [
-      "CVE-2016-5096",
-      "CVE-2016-5094",
-      "CVE-2013-7456",
-      "CVE-2016-5093",
-      "CVE-2016-4343"
-    ],
-    "freebsd_pr": [
-      "ports/209779"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-26",
-    "entry": "2016-05-28"
-  }
+	"vid": "6b110175-246d-11e6-8dd3-002590263bf5",
+	"topic": "php -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php70-gd",
+				"php70-intl"
+			],
+			"range": [
+				{
+					"lt": "7.0.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56",
+				"php56-gd"
+			],
+			"range": [
+				{
+					"lt": "5.6.22"
+				}
+			]
+		},
+		{
+			"name": [
+				"php55",
+				"php55-gd",
+				"php55-phar"
+			],
+			"range": [
+				{
+					"lt": "5.5.36"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PHP Group reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.5.36\">\n\t  <ul><li>Core:\n\t  <ul>\n\t    <li>Fixed bug #72114 (Integer underflow / arbitrary null write in\n\t      fread/gzread). (CVE-2016-5096) (PHP 5.5/5.6 only)</li>\n\t    <li>Fixed bug #72135 (Integer Overflow in php_html_entities).\n\t      (CVE-2016-5094) (PHP 5.5/5.6 only)</li>\n\t  </ul></li>\n\t  <li>GD:\n\t  <ul>\n\t    <li>Fixed bug #72227 (imagescale out-of-bounds read).\n\t      (CVE-2013-7456)</li>\n\t  </ul></li>\n\t  <li>Intl:\n\t  <ul>\n\t    <li>Fixed bug #72241 (get_icu_value_internal out-of-bounds read).\n\t      (CVE-2016-5093)</li>\n\t  </ul></li>\n\t  <li>Phar:\n\t  <ul>\n\t    <li>Fixed bug #71331 (Uninitialized pointer in\n\t      phar_make_dirstream()). (CVE-2016-4343) (PHP 5.5 only)</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://php.net/ChangeLog-7.php#7.0.7",
+			"http://php.net/ChangeLog-5.php#5.6.22",
+			"http://php.net/ChangeLog-5.php#5.5.36"
+		],
+		"cvename": [
+			"CVE-2016-5096",
+			"CVE-2016-5094",
+			"CVE-2013-7456",
+			"CVE-2016-5093",
+			"CVE-2016-4343"
+		],
+		"freebsd_pr": [
+			"ports/209779"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-26",
+		"entry": "2016-05-28"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "805603a1-3e7a-11df-a5a1-0050568452ac",
-  "topic": "dojo -- cross-site scripting and other vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "dojo"
-      ],
-      "range": [
-        {
-          "lt": "1.4.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Dojo Toolkit team reports:</p>\n\t<blockquote cite=\"http://dojotoolkit.org/blog/post/dylan/2010/03/dojo-security-advisory/\">\n\t  <p>Some PHP files did not properly escape input.</p>\n\t  <p>Some files could operate like \"open redirects\". A bad actor\n\t    could form an URL that looks like it came from a trusted\n\t    site, but the user would be redirected or load content from\n\t    the bad actor's site.</p>\n\t  <p>A file exposed a more serious cross-site scripting\n\t    vulnerability with the possibility of executing code on the\n\t    domain where the file exists.</p>\n\t  <p>The Dojo build process defaulted to copying over tests and\n\t    demos, which are normally not needed and just increased the\n\t    number of files that could be targets of attacks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://dojotoolkit.org/blog/post/dylan/2010/03/dojo-security-advisory/",
-      "http://osdir.com/ml/bugtraq.security/2010-03/msg00133.html",
-      "http://packetstormsecurity.org/1003-exploits/dojo-xss.txt",
-      "http://secunia.com/advisories/38964",
-      "http://www.gdssecurity.com/l/b/2010/03/12/multiple-dom-based-xss-in-dojo-toolkit-sdk/"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-03-11",
-    "entry": "2010-04-06"
-  }
+	"vid": "805603a1-3e7a-11df-a5a1-0050568452ac",
+	"topic": "dojo -- cross-site scripting and other vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"dojo"
+			],
+			"range": [
+				{
+					"lt": "1.4.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Dojo Toolkit team reports:</p>\n\t<blockquote cite=\"http://dojotoolkit.org/blog/post/dylan/2010/03/dojo-security-advisory/\">\n\t  <p>Some PHP files did not properly escape input.</p>\n\t  <p>Some files could operate like \"open redirects\". A bad actor\n\t    could form an URL that looks like it came from a trusted\n\t    site, but the user would be redirected or load content from\n\t    the bad actor's site.</p>\n\t  <p>A file exposed a more serious cross-site scripting\n\t    vulnerability with the possibility of executing code on the\n\t    domain where the file exists.</p>\n\t  <p>The Dojo build process defaulted to copying over tests and\n\t    demos, which are normally not needed and just increased the\n\t    number of files that could be targets of attacks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://dojotoolkit.org/blog/post/dylan/2010/03/dojo-security-advisory/",
+			"http://osdir.com/ml/bugtraq.security/2010-03/msg00133.html",
+			"http://packetstormsecurity.org/1003-exploits/dojo-xss.txt",
+			"http://secunia.com/advisories/38964",
+			"http://www.gdssecurity.com/l/b/2010/03/12/multiple-dom-based-xss-in-dojo-toolkit-sdk/"
+		]
+	},
+	"dates": {
+		"discovery": "2010-03-11",
+		"entry": "2010-04-06"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "262b92fe-81c8-11e1-8899-001ec9578670",
-  "topic": "png -- memory corruption/possible remote code execution",
-  "affects": [
-    {
-      "name": [
-        "png",
-        "linux-f10-png"
-      ],
-      "range": [
-        {
-          "lt": "1.4.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PNG project reports:</p>\n\t<blockquote cite=\"http://www.libpng.org/pub/png/libpng.html\">\n\t  <p>libpng fails to correctly handle malloc() failures for text\n\t    chunks (in png_set_text_2()), which can lead to memory\n\t    corruption and the possibility of remote code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.libpng.org/pub/png/libpng.html"
-    ],
-    "cvename": [
-      "CVE-2011-3048"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-03-29",
-    "entry": "2012-04-08"
-  }
+	"vid": "262b92fe-81c8-11e1-8899-001ec9578670",
+	"topic": "png -- memory corruption/possible remote code execution",
+	"affects": [
+		{
+			"name": [
+				"png",
+				"linux-f10-png"
+			],
+			"range": [
+				{
+					"lt": "1.4.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PNG project reports:</p>\n\t<blockquote cite=\"http://www.libpng.org/pub/png/libpng.html\">\n\t  <p>libpng fails to correctly handle malloc() failures for text\n\t    chunks (in png_set_text_2()), which can lead to memory\n\t    corruption and the possibility of remote code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.libpng.org/pub/png/libpng.html"
+		],
+		"cvename": [
+			"CVE-2011-3048"
+		]
+	},
+	"dates": {
+		"discovery": "2012-03-29",
+		"entry": "2012-04-08"
+	}
 }

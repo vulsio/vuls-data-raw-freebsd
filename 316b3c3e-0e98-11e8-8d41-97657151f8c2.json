@@ -1,29 +1,29 @@
 {
-  "vid": "316b3c3e-0e98-11e8-8d41-97657151f8c2",
-  "topic": "exim -- a buffer overflow vulnerability, remote code execution",
-  "affects": [
-    {
-      "name": [
-        "exim"
-      ],
-      "range": [
-        {
-          "lt": "4.90.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Exim developers report:</p>\n\t<blockquote cite=\"https://exim.org/static/doc/security/CVE-2018-6789.txt\">\n\t  <p>There is a buffer overflow in base64d(), if some pre-conditions are met.\nUsing a handcrafted message, remote code execution seems to be possible.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://exim.org/static/doc/security/CVE-2018-6789.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-02-05",
-    "entry": "2018-02-10"
-  }
+	"vid": "316b3c3e-0e98-11e8-8d41-97657151f8c2",
+	"topic": "exim -- a buffer overflow vulnerability, remote code execution",
+	"affects": [
+		{
+			"name": [
+				"exim"
+			],
+			"range": [
+				{
+					"lt": "4.90.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Exim developers report:</p>\n\t<blockquote cite=\"https://exim.org/static/doc/security/CVE-2018-6789.txt\">\n\t  <p>There is a buffer overflow in base64d(), if some pre-conditions are met.\nUsing a handcrafted message, remote code execution seems to be possible.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://exim.org/static/doc/security/CVE-2018-6789.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2018-02-05",
+		"entry": "2018-02-10"
+	}
 }

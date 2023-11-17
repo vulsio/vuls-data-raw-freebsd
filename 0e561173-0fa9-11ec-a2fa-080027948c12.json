@@ -1,40 +1,40 @@
 {
-  "vid": "0e561173-0fa9-11ec-a2fa-080027948c12",
-  "topic": "Python -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "python36"
-      ],
-      "range": [
-        {
-          "lt": "3.6.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "python37"
-      ],
-      "range": [
-        {
-          "lt": "3.7.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/3.6/whatsnew/changelog.html#changelog\">\n\t  <p>bpo-44394: Update the vendored copy of libexpat to 2.4.1 (from 2.2.8) to get the\n\t    fix for the CVE-2013-0340 \"Billion Laughs\" vulnerability. This copy is most used\n\t    on Windows and macOS.</p>\n\t  <p>bpo-43124: Made the internal putcmd function in smtplib sanitize input for\n\t    presence of \\r and \\n characters to avoid (unlikely) command injection.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.python.org/3.6/whatsnew/changelog.html#changelog",
-      "https://docs.python.org/3.7/whatsnew/changelog.html#changelog"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-08-30",
-    "entry": "2021-09-07"
-  }
+	"vid": "0e561173-0fa9-11ec-a2fa-080027948c12",
+	"topic": "Python -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"python36"
+			],
+			"range": [
+				{
+					"lt": "3.6.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"python37"
+			],
+			"range": [
+				{
+					"lt": "3.7.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/3.6/whatsnew/changelog.html#changelog\">\n\t  <p>bpo-44394: Update the vendored copy of libexpat to 2.4.1 (from 2.2.8) to get the\n\t    fix for the CVE-2013-0340 \"Billion Laughs\" vulnerability. This copy is most used\n\t    on Windows and macOS.</p>\n\t  <p>bpo-43124: Made the internal putcmd function in smtplib sanitize input for\n\t    presence of \\r and \\n characters to avoid (unlikely) command injection.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.python.org/3.6/whatsnew/changelog.html#changelog",
+			"https://docs.python.org/3.7/whatsnew/changelog.html#changelog"
+		]
+	},
+	"dates": {
+		"discovery": "2021-08-30",
+		"entry": "2021-09-07"
+	}
 }

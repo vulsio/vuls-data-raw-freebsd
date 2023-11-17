@@ -1,99 +1,99 @@
 {
-  "vid": "6bd2773c-cf1a-11ed-bd44-080027f5fec9",
-  "topic": "rubygem-time -- ReDoS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ruby"
-      ],
-      "range": [
-        {
-          "lt": "2.7.8,1",
-          "ge": "2.7.0,1"
-        },
-        {
-          "lt": "3.0.6,1",
-          "ge": "3.0.0,1"
-        },
-        {
-          "lt": "3.1.4,1",
-          "ge": "3.1.0,1"
-        },
-        {
-          "lt": "3.2.2,1",
-          "ge": "3.2.0.p1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby27"
-      ],
-      "range": [
-        {
-          "lt": "2.7.8,1",
-          "ge": "2.7.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby30"
-      ],
-      "range": [
-        {
-          "lt": "3.0.6,1",
-          "ge": "3.0.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby31"
-      ],
-      "range": [
-        {
-          "lt": "3.1.4,1",
-          "ge": "3.1.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby32"
-      ],
-      "range": [
-        {
-          "lt": "3.2.2,1",
-          "ge": "3.2.0.p1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-time"
-      ],
-      "range": [
-        {
-          "lt": "0.2.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ooooooo_q reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2023/03/30/redos-in-time-cve-2023-28756/\">\n\t  <p>\n\t    The Time parser mishandles invalid strings that have\n\t    specific characters. It causes an increase in execution\n\t    time for parsing strings to Time objects.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2023/03/30/redos-in-time-cve-2023-28756/"
-    ],
-    "cvename": [
-      "CVE-2023-28756"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-03-30",
-    "entry": "2023-03-30"
-  }
+	"vid": "6bd2773c-cf1a-11ed-bd44-080027f5fec9",
+	"topic": "rubygem-time -- ReDoS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ruby"
+			],
+			"range": [
+				{
+					"lt": "2.7.8,1",
+					"ge": "2.7.0,1"
+				},
+				{
+					"lt": "3.0.6,1",
+					"ge": "3.0.0,1"
+				},
+				{
+					"lt": "3.1.4,1",
+					"ge": "3.1.0,1"
+				},
+				{
+					"lt": "3.2.2,1",
+					"ge": "3.2.0.p1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby27"
+			],
+			"range": [
+				{
+					"lt": "2.7.8,1",
+					"ge": "2.7.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby30"
+			],
+			"range": [
+				{
+					"lt": "3.0.6,1",
+					"ge": "3.0.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby31"
+			],
+			"range": [
+				{
+					"lt": "3.1.4,1",
+					"ge": "3.1.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby32"
+			],
+			"range": [
+				{
+					"lt": "3.2.2,1",
+					"ge": "3.2.0.p1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-time"
+			],
+			"range": [
+				{
+					"lt": "0.2.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ooooooo_q reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2023/03/30/redos-in-time-cve-2023-28756/\">\n\t  <p>\n\t    The Time parser mishandles invalid strings that have\n\t    specific characters. It causes an increase in execution\n\t    time for parsing strings to Time objects.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2023/03/30/redos-in-time-cve-2023-28756/"
+		],
+		"cvename": [
+			"CVE-2023-28756"
+		]
+	},
+	"dates": {
+		"discovery": "2023-03-30",
+		"entry": "2023-03-30"
+	}
 }

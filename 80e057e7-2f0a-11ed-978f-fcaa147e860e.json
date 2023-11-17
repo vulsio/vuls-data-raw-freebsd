@@ -1,62 +1,62 @@
 {
-  "vid": "80e057e7-2f0a-11ed-978f-fcaa147e860e",
-  "topic": "Python -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "python37"
-      ],
-      "range": [
-        {
-          "lt": "3.7.14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "python38"
-      ],
-      "range": [
-        {
-          "lt": "3.8.14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "python39"
-      ],
-      "range": [
-        {
-          "lt": "3.9.14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "python310"
-      ],
-      "range": [
-        {
-          "lt": "3.10.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/release/3.7.14/whatsnew/changelog.html#changelog\">\n\t  <p>gh-95778: Converting between int and str in bases other than 2 (binary), 4, 8 (octal),\n\t    16 (hexadecimal), or 32 such as base 10 (decimal) now raises a ValueError if the number\n\t    of digits in string form is above a limit to avoid potential denial of service attacks\n\t    due to the algorithmic complexity.</p>\n\t  <p>gh-87389: http.server: Fix an open redirection vulnerability in the HTTP server when\n\t    an URI path starts with //. Vulnerability discovered, and initial fix proposed, by\n\t    Hamza Avvan.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.python.org/release/3.7.14/whatsnew/changelog.html#changelog"
-    ],
-    "cvename": [
-      "CVE-2020-10735"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-03-20",
-    "entry": "2022-09-08"
-  }
+	"vid": "80e057e7-2f0a-11ed-978f-fcaa147e860e",
+	"topic": "Python -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"python37"
+			],
+			"range": [
+				{
+					"lt": "3.7.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"python38"
+			],
+			"range": [
+				{
+					"lt": "3.8.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"python39"
+			],
+			"range": [
+				{
+					"lt": "3.9.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"python310"
+			],
+			"range": [
+				{
+					"lt": "3.10.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/release/3.7.14/whatsnew/changelog.html#changelog\">\n\t  <p>gh-95778: Converting between int and str in bases other than 2 (binary), 4, 8 (octal),\n\t    16 (hexadecimal), or 32 such as base 10 (decimal) now raises a ValueError if the number\n\t    of digits in string form is above a limit to avoid potential denial of service attacks\n\t    due to the algorithmic complexity.</p>\n\t  <p>gh-87389: http.server: Fix an open redirection vulnerability in the HTTP server when\n\t    an URI path starts with //. Vulnerability discovered, and initial fix proposed, by\n\t    Hamza Avvan.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.python.org/release/3.7.14/whatsnew/changelog.html#changelog"
+		],
+		"cvename": [
+			"CVE-2020-10735"
+		]
+	},
+	"dates": {
+		"discovery": "2020-03-20",
+		"entry": "2022-09-08"
+	}
 }

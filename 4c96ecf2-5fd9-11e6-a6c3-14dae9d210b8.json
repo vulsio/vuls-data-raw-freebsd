@@ -1,45 +1,45 @@
 {
-  "vid": "4c96ecf2-5fd9-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- bsnmpd remote denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "9.2_3",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.1_10",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_7",
-          "ge": "8.4"
-        },
-        {
-          "lt": "8.3_14",
-          "ge": "8.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem Description:</p>\n\t<p>The bsnmpd(8) daemon is prone to a stack-based\n\t  buffer-overflow when it has received a specifically crafted\n\t  GETBULK PDU request.</p>\n\t<p>Impact:</p>\n\t<p>This issue could be exploited to execute arbitrary code in\n\t  the context of the service daemon, or crash the service daemon, causing\n\t  a denial-of-service.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-1452"
-    ],
-    "freebsd_sa": [
-      "SA-14:01.bsnmpd"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-01-14",
-    "entry": "2016-08-11"
-  }
+	"vid": "4c96ecf2-5fd9-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- bsnmpd remote denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "9.2_3",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.1_10",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_7",
+					"ge": "8.4"
+				},
+				{
+					"lt": "8.3_14",
+					"ge": "8.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem Description:</p>\n\t<p>The bsnmpd(8) daemon is prone to a stack-based\n\t  buffer-overflow when it has received a specifically crafted\n\t  GETBULK PDU request.</p>\n\t<p>Impact:</p>\n\t<p>This issue could be exploited to execute arbitrary code in\n\t  the context of the service daemon, or crash the service daemon, causing\n\t  a denial-of-service.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-1452"
+		],
+		"freebsd_sa": [
+			"SA-14:01.bsnmpd"
+		]
+	},
+	"dates": {
+		"discovery": "2014-01-14",
+		"entry": "2016-08-11"
+	}
 }

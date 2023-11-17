@@ -1,92 +1,92 @@
 {
-  "vid": "8305e215-1080-11e5-8ba2-000c2980a9f3",
-  "topic": "openssl -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mingw32-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2b",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1e_6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libressl"
-      ],
-      "range": [
-        {
-          "lt": "2.1.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.1_12",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_16",
-          "ge": "9.3"
-        },
-        {
-          "lt": "8.4_30",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL team reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv_20150611.txt\">\n\t  <ul>\n\t    <li>Missing DHE man-in-the-middle protection (Logjam)\n\t      (CVE-2015-4000)</li>\n\t    <li>Malformed ECParameters causes infinite loop (CVE-2015-1788)</li>\n\t    <li>Exploitable out-of-bounds read in X509_cmp_time\n\t      (CVE-2015-1789)</li>\n\t    <li>PKCS#7 crash with missing EnvelopedContent (CVE-2015-1790)</li>\n\t    <li>CMS verify infinite loop with unknown hash function\n\t      (CVE-2015-1792)</li>\n\t    <li>Race condition handling NewSessionTicket (CVE-2015-1791)</li>\n\t    <li>Invalid free in DTLS (CVE-2014-8176)</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv_20150611.txt"
-    ],
-    "cvename": [
-      "CVE-2014-8176",
-      "CVE-2015-1788",
-      "CVE-2015-1789",
-      "CVE-2015-1790",
-      "CVE-2015-1791",
-      "CVE-2015-1792",
-      "CVE-2015-4000"
-    ],
-    "freebsd_sa": [
-      "SA-15:10.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-11",
-    "entry": "2015-06-11",
-    "modified": "2016-08-09"
-  }
+	"vid": "8305e215-1080-11e5-8ba2-000c2980a9f3",
+	"topic": "openssl -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mingw32-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2b",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1e_6"
+				}
+			]
+		},
+		{
+			"name": [
+				"libressl"
+			],
+			"range": [
+				{
+					"lt": "2.1.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.1_12",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_16",
+					"ge": "9.3"
+				},
+				{
+					"lt": "8.4_30",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL team reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv_20150611.txt\">\n\t  <ul>\n\t    <li>Missing DHE man-in-the-middle protection (Logjam)\n\t      (CVE-2015-4000)</li>\n\t    <li>Malformed ECParameters causes infinite loop (CVE-2015-1788)</li>\n\t    <li>Exploitable out-of-bounds read in X509_cmp_time\n\t      (CVE-2015-1789)</li>\n\t    <li>PKCS#7 crash with missing EnvelopedContent (CVE-2015-1790)</li>\n\t    <li>CMS verify infinite loop with unknown hash function\n\t      (CVE-2015-1792)</li>\n\t    <li>Race condition handling NewSessionTicket (CVE-2015-1791)</li>\n\t    <li>Invalid free in DTLS (CVE-2014-8176)</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv_20150611.txt"
+		],
+		"cvename": [
+			"CVE-2014-8176",
+			"CVE-2015-1788",
+			"CVE-2015-1789",
+			"CVE-2015-1790",
+			"CVE-2015-1791",
+			"CVE-2015-1792",
+			"CVE-2015-4000"
+		],
+		"freebsd_sa": [
+			"SA-15:10.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-11",
+		"entry": "2015-06-11",
+		"modified": "2016-08-09"
+	}
 }

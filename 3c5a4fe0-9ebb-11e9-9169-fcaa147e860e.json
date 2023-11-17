@@ -1,51 +1,51 @@
 {
-  "vid": "3c5a4fe0-9ebb-11e9-9169-fcaa147e860e",
-  "topic": "mediawiki -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mediawiki131"
-      ],
-      "range": [
-        {
-          "lt": "1.31.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mediawiki132"
-      ],
-      "range": [
-        {
-          "lt": "1.32.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mediawiki reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-June/000230.html\">\n\t  <p>Security fixes:\n\t    T197279, CVE-2019-12468: Directly POSTing to Special:ChangeEmail would allow\n\t    for bypassing reauthentication, allowing for potential account takeover.\n\t    T204729, CVE-2019-12473: Passing invalid titles to the API could cause a DoS\n\t    by querying the entire `watchlist` table.\n\t    T207603, CVE-2019-12471: Loading user JavaScript from a non-existent account\n\t    allows anyone to create the account, and XSS the users' loading that script.\n\t    T208881: blacklist CSS var().\n\t    T199540, CVE-2019-12472: It is possible to bypass the limits on IP range\n\t    blocks (`$wgBlockCIDRLimit`) by using the API.\n\t    T212118, CVE-2019-12474: Privileged API responses that include whether a\n\t    recent change has been patrolled may be cached publicly.\n\t    T209794, CVE-2019-12467: A spammer can use Special:ChangeEmail to send out\n\t    spam with no rate limiting or ability to block them.\n\t    T25227, CVE-2019-12466: An account can be logged out without using a token(CRRF)\n\t    T222036, CVE-2019-12469: Exposed suppressed username or log in Special:EditTags.\n\t    T222038, CVE-2019-12470: Exposed suppressed log in RevisionDelete page.\n\t    T221739, CVE-2019-11358: Fix potential XSS in jQuery.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-June/000230.html"
-    ],
-    "cvename": [
-      "CVE-2019-11358",
-      "CVE-2019-12466",
-      "CVE-2019-12467",
-      "CVE-2019-12468",
-      "CVE-2019-12469",
-      "CVE-2019-12470",
-      "CVE-2019-12471",
-      "CVE-2019-12472",
-      "CVE-2019-12473",
-      "CVE-2019-12474"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-04-23",
-    "entry": "2019-07-05"
-  }
+	"vid": "3c5a4fe0-9ebb-11e9-9169-fcaa147e860e",
+	"topic": "mediawiki -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mediawiki131"
+			],
+			"range": [
+				{
+					"lt": "1.31.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"mediawiki132"
+			],
+			"range": [
+				{
+					"lt": "1.32.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mediawiki reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-June/000230.html\">\n\t  <p>Security fixes:\n\t    T197279, CVE-2019-12468: Directly POSTing to Special:ChangeEmail would allow\n\t    for bypassing reauthentication, allowing for potential account takeover.\n\t    T204729, CVE-2019-12473: Passing invalid titles to the API could cause a DoS\n\t    by querying the entire `watchlist` table.\n\t    T207603, CVE-2019-12471: Loading user JavaScript from a non-existent account\n\t    allows anyone to create the account, and XSS the users' loading that script.\n\t    T208881: blacklist CSS var().\n\t    T199540, CVE-2019-12472: It is possible to bypass the limits on IP range\n\t    blocks (`$wgBlockCIDRLimit`) by using the API.\n\t    T212118, CVE-2019-12474: Privileged API responses that include whether a\n\t    recent change has been patrolled may be cached publicly.\n\t    T209794, CVE-2019-12467: A spammer can use Special:ChangeEmail to send out\n\t    spam with no rate limiting or ability to block them.\n\t    T25227, CVE-2019-12466: An account can be logged out without using a token(CRRF)\n\t    T222036, CVE-2019-12469: Exposed suppressed username or log in Special:EditTags.\n\t    T222038, CVE-2019-12470: Exposed suppressed log in RevisionDelete page.\n\t    T221739, CVE-2019-11358: Fix potential XSS in jQuery.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-June/000230.html"
+		],
+		"cvename": [
+			"CVE-2019-11358",
+			"CVE-2019-12466",
+			"CVE-2019-12467",
+			"CVE-2019-12468",
+			"CVE-2019-12469",
+			"CVE-2019-12470",
+			"CVE-2019-12471",
+			"CVE-2019-12472",
+			"CVE-2019-12473",
+			"CVE-2019-12474"
+		]
+	},
+	"dates": {
+		"discovery": "2019-04-23",
+		"entry": "2019-07-05"
+	}
 }

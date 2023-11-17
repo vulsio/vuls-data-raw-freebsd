@@ -1,30 +1,30 @@
 {
-  "vid": "6900e6f1-4a79-11e5-9ad8-14dae9d210b8",
-  "topic": "pcre -- heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "pcre"
-      ],
-      "range": [
-        {
-          "lt": "8.37_4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Guanxing Wen reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/295\">\n\t  <p>PCRE library is prone to a vulnerability which leads to\n\t    Heap Overflow.\n\t    During the compilation of a malformed regular expression, more data is\n\t    written on the malloced block than the expected size output by\n\t    compile_regex().\n\t    The Heap Overflow vulnerability is caused by the following regular\n\t    expression.</p>\n\t    <p>/(?J:(?|(:(?|(?'R')(\\z(?|(?'R')(\\k'R')|((?'R')))k'R')|((?'R')))H'Ak'Rf)|s(?'R')))/</p>\n\t    <p>A dry run of this particular regular expression with pcretest will\n\t    reports \"double free or corruption (!prev)\".\n\t    But it is actually a heap overflow problem.\n\t    The overflow only affects pcre 8.x branch, pcre2 branch is not affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2015/q3/295",
-      "https://bugs.exim.org/show_bug.cgi?id=1672"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-08-21",
-    "entry": "2015-08-24"
-  }
+	"vid": "6900e6f1-4a79-11e5-9ad8-14dae9d210b8",
+	"topic": "pcre -- heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"pcre"
+			],
+			"range": [
+				{
+					"lt": "8.37_4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Guanxing Wen reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/295\">\n\t  <p>PCRE library is prone to a vulnerability which leads to\n\t    Heap Overflow.\n\t    During the compilation of a malformed regular expression, more data is\n\t    written on the malloced block than the expected size output by\n\t    compile_regex().\n\t    The Heap Overflow vulnerability is caused by the following regular\n\t    expression.</p>\n\t    <p>/(?J:(?|(:(?|(?'R')(\\z(?|(?'R')(\\k'R')|((?'R')))k'R')|((?'R')))H'Ak'Rf)|s(?'R')))/</p>\n\t    <p>A dry run of this particular regular expression with pcretest will\n\t    reports \"double free or corruption (!prev)\".\n\t    But it is actually a heap overflow problem.\n\t    The overflow only affects pcre 8.x branch, pcre2 branch is not affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2015/q3/295",
+			"https://bugs.exim.org/show_bug.cgi?id=1672"
+		]
+	},
+	"dates": {
+		"discovery": "2015-08-21",
+		"entry": "2015-08-24"
+	}
 }

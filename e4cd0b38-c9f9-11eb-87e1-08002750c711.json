@@ -1,34 +1,34 @@
 {
-  "vid": "e4cd0b38-c9f9-11eb-87e1-08002750c711",
-  "topic": "cacti -- SQL Injection was possible due to incorrect validation order",
-  "affects": [
-    {
-      "name": [
-        "cacti"
-      ],
-      "range": [
-        {
-          "lt": "1.2.17",
-          "ge": "1.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Cati team reports:</p>\n\t<blockquote cite=\"https://github.com/Cacti/cacti/issues/4022\">\n\t  <p>Due to a lack of validation, data_debug.php can be the source of a SQL injection.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/Cacti/cacti/issues/4022"
-    ],
-    "cvename": [
-      "CVE-2020-35701"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-12-24",
-    "entry": "2021-06-10",
-    "modified": "2021-06-24"
-  }
+	"vid": "e4cd0b38-c9f9-11eb-87e1-08002750c711",
+	"topic": "cacti -- SQL Injection was possible due to incorrect validation order",
+	"affects": [
+		{
+			"name": [
+				"cacti"
+			],
+			"range": [
+				{
+					"lt": "1.2.17",
+					"ge": "1.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Cati team reports:</p>\n\t<blockquote cite=\"https://github.com/Cacti/cacti/issues/4022\">\n\t  <p>Due to a lack of validation, data_debug.php can be the source of a SQL injection.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/Cacti/cacti/issues/4022"
+		],
+		"cvename": [
+			"CVE-2020-35701"
+		]
+	},
+	"dates": {
+		"discovery": "2020-12-24",
+		"entry": "2021-06-10",
+		"modified": "2021-06-24"
+	}
 }

@@ -1,40 +1,40 @@
 {
-  "vid": "3f6d6181-79b2-4d33-bb1e-5d3f9df0c1d1",
-  "topic": "py39-redis -- can send response data to the client of an unrelated request",
-  "affects": [
-    {
-      "name": [
-        "py39-redis"
-      ],
-      "range": [
-        {
-          "lt": "4.3.6"
-        },
-        {
-          "lt": "4.4.3",
-          "ge": "4.4.0"
-        },
-        {
-          "lt": "4.5.3",
-          "ge": "4.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>drago-balto reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h\">\n      <p>redis-py before 4.5.3, as used in ChatGPT and other products, leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a pipeline operation), and can send response data to the client of an unrelated request in an off-by-one manner.</p>\n      <p>The fixed versions for this CVE Record are 4.3.6, 4.4.3, and 4.5.3, but [are believed to be incomplete](https://github.com/redis/redis-py/issues/2665).</p>\n      <p>CVE-2023-28859 has been assigned the issues caused by the incomplete fixes.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h"
-    ],
-    "cvename": [
-      "CVE-2023-28858"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-03-26",
-    "entry": "2023-04-09"
-  }
+	"vid": "3f6d6181-79b2-4d33-bb1e-5d3f9df0c1d1",
+	"topic": "py39-redis -- can send response data to the client of an unrelated request",
+	"affects": [
+		{
+			"name": [
+				"py39-redis"
+			],
+			"range": [
+				{
+					"lt": "4.3.6"
+				},
+				{
+					"lt": "4.4.3",
+					"ge": "4.4.0"
+				},
+				{
+					"lt": "4.5.3",
+					"ge": "4.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>drago-balto reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h\">\n      <p>redis-py before 4.5.3, as used in ChatGPT and other products, leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a pipeline operation), and can send response data to the client of an unrelated request in an off-by-one manner.</p>\n      <p>The fixed versions for this CVE Record are 4.3.6, 4.4.3, and 4.5.3, but [are believed to be incomplete](https://github.com/redis/redis-py/issues/2665).</p>\n      <p>CVE-2023-28859 has been assigned the issues caused by the incomplete fixes.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h"
+		],
+		"cvename": [
+			"CVE-2023-28858"
+		]
+	},
+	"dates": {
+		"discovery": "2023-03-26",
+		"entry": "2023-04-09"
+	}
 }

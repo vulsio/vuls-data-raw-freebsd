@@ -1,54 +1,54 @@
 {
-  "vid": "4ca5894c-f7f1-11ea-8ff8-0022489ad614",
-  "topic": "Node.js -- September 2020 Security Releases",
-  "affects": [
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "14.11.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node12"
-      ],
-      "range": [
-        {
-          "lt": "12.18.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node10"
-      ],
-      "range": [
-        {
-          "lt": "10.22.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/\">\n\t  <p>Updates are now available for v10,x, v12.x and v14.x Node.js release lines for the following issues.</p>\n\t  <h1>HTTP Request Smuggling due to CR-to-Hyphen conversion (High) (CVE-2020-8201)</h1>\n\t  <p>Affected Node.js versions converted carriage returns in HTTP request headers to a hyphen before parsing. This can lead to HTTP Request Smuggling as it is a non-standard interpretation of the header.</p>\n\t  <p>Impacts:</p>\n\t  <ul>\n\t    <li>All versions of the 14.x and 12.x releases line</li>\n\t  </ul>\n\t  <h1>Denial of Service by resource exhaustion CWE-400 due to unfinished HTTP/1.1 requests (Critical) (CVE-2020-8251)</h1>\n\t  <p>Node.js is vulnerable to HTTP denial of service (DOS) attacks based on delayed requests submission which can make the server unable to accept new connections. The fix a new http.Server option called requestTimeout with a default value of 0 which means it is disabled by default. This should be set when Node.js is used as an edge server, for more details refer to the documentation.</p>\n\t  <p>Impacts:</p>\n\t  <ul>\n\t    <li>All versions of the 14.x release line</li>\n\t  </ul>\n\t  <h1>fs.realpath.native on may cause buffer overflow (Medium) (CVE-2020-8252)</h1>\n\t  <p>libuv's realpath implementation incorrectly determined the buffer size which can result in a buffer overflow if the resolved path is longer than 256 bytes.</p>\n\t  <p>Impacts:</p>\n\t  <ul>\n\t    <li>All versions of the 10.x release line</li>\n\t    <li>All versions of the 12.x release line</li>\n\t    <li>All versions of the 14.x release line before 14.9.0</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2020-8201",
-      "CVE-2020-8251",
-      "CVE-2020-8252"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-09-08",
-    "entry": "2020-09-16"
-  }
+	"vid": "4ca5894c-f7f1-11ea-8ff8-0022489ad614",
+	"topic": "Node.js -- September 2020 Security Releases",
+	"affects": [
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "14.11.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node12"
+			],
+			"range": [
+				{
+					"lt": "12.18.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"node10"
+			],
+			"range": [
+				{
+					"lt": "10.22.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/\">\n\t  <p>Updates are now available for v10,x, v12.x and v14.x Node.js release lines for the following issues.</p>\n\t  <h1>HTTP Request Smuggling due to CR-to-Hyphen conversion (High) (CVE-2020-8201)</h1>\n\t  <p>Affected Node.js versions converted carriage returns in HTTP request headers to a hyphen before parsing. This can lead to HTTP Request Smuggling as it is a non-standard interpretation of the header.</p>\n\t  <p>Impacts:</p>\n\t  <ul>\n\t    <li>All versions of the 14.x and 12.x releases line</li>\n\t  </ul>\n\t  <h1>Denial of Service by resource exhaustion CWE-400 due to unfinished HTTP/1.1 requests (Critical) (CVE-2020-8251)</h1>\n\t  <p>Node.js is vulnerable to HTTP denial of service (DOS) attacks based on delayed requests submission which can make the server unable to accept new connections. The fix a new http.Server option called requestTimeout with a default value of 0 which means it is disabled by default. This should be set when Node.js is used as an edge server, for more details refer to the documentation.</p>\n\t  <p>Impacts:</p>\n\t  <ul>\n\t    <li>All versions of the 14.x release line</li>\n\t  </ul>\n\t  <h1>fs.realpath.native on may cause buffer overflow (Medium) (CVE-2020-8252)</h1>\n\t  <p>libuv's realpath implementation incorrectly determined the buffer size which can result in a buffer overflow if the resolved path is longer than 256 bytes.</p>\n\t  <p>Impacts:</p>\n\t  <ul>\n\t    <li>All versions of the 10.x release line</li>\n\t    <li>All versions of the 12.x release line</li>\n\t    <li>All versions of the 14.x release line before 14.9.0</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/"
+		],
+		"cvename": [
+			"CVE-2020-8201",
+			"CVE-2020-8251",
+			"CVE-2020-8252"
+		]
+	},
+	"dates": {
+		"discovery": "2020-09-08",
+		"entry": "2020-09-16"
+	}
 }

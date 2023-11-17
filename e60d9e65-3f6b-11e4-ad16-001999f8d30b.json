@@ -1,31 +1,31 @@
 {
-  "vid": "e60d9e65-3f6b-11e4-ad16-001999f8d30b",
-  "topic": "asterisk -- Remotely triggered crash",
-  "affects": [
-    {
-      "name": [
-        "asterisk11"
-      ],
-      "range": [
-        {
-          "lt": "11.12.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/security\">\n\t  <p>When an out of call message - delivered by either the\n\t    SIP or PJSIP channel driver or the XMPP stack - is handled\n\t    in Asterisk, a crash can occur if the channel servicing\n\t    the message is sent into the ReceiveFax dialplan application\n\t    while using the res_fax_spandsp module.</p>\n\t  <p>Note that this crash does not occur when using the\n\t    res_fax_digium module.  While this crash technically\n\t    occurs due to a configuration issue, as attempting to\n\t    receive a fax from a channel driver that only contains\n\t    textual information will never succeed, the likelihood\n\t    of having it occur is sufficiently high as to warrant\n\t    this advisory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2014-010.pdf",
-      "https://issues.asterisk.org/jira/browse/ASTERISK-24301",
-      "https://www.asterisk.org/security"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-09-05",
-    "entry": "2014-09-18"
-  }
+	"vid": "e60d9e65-3f6b-11e4-ad16-001999f8d30b",
+	"topic": "asterisk -- Remotely triggered crash",
+	"affects": [
+		{
+			"name": [
+				"asterisk11"
+			],
+			"range": [
+				{
+					"lt": "11.12.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/security\">\n\t  <p>When an out of call message - delivered by either the\n\t    SIP or PJSIP channel driver or the XMPP stack - is handled\n\t    in Asterisk, a crash can occur if the channel servicing\n\t    the message is sent into the ReceiveFax dialplan application\n\t    while using the res_fax_spandsp module.</p>\n\t  <p>Note that this crash does not occur when using the\n\t    res_fax_digium module.  While this crash technically\n\t    occurs due to a configuration issue, as attempting to\n\t    receive a fax from a channel driver that only contains\n\t    textual information will never succeed, the likelihood\n\t    of having it occur is sufficiently high as to warrant\n\t    this advisory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2014-010.pdf",
+			"https://issues.asterisk.org/jira/browse/ASTERISK-24301",
+			"https://www.asterisk.org/security"
+		]
+	},
+	"dates": {
+		"discovery": "2014-09-05",
+		"entry": "2014-09-18"
+	}
 }

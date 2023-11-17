@@ -1,32 +1,32 @@
 {
-  "vid": "3ae078ca-c7eb-11e6-ae1b-002590263bf5",
-  "topic": "xen-kernel -- x86 PV guests may be able to mask interrupts",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-202.html\">\n\t  <p>Certain PV guest kernel operations (page table writes in\n\t    particular) need emulation, and use Xen's general x86 instruction\n\t    emulator. This allows a malicious guest kernel which asynchronously\n\t    modifies its instruction stream to effect the clearing of EFLAGS.IF\n\t    from the state used to return to guest context.</p>\n\t  <p>A malicious guest kernel administrator can cause a host hang or\n\t    crash, resulting in a Denial of Service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xenbits.xen.org/xsa/advisory-202.html"
-    ],
-    "cvename": [
-      "CVE-2016-10024"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-12-21",
-    "entry": "2016-12-22"
-  }
+	"vid": "3ae078ca-c7eb-11e6-ae1b-002590263bf5",
+	"topic": "xen-kernel -- x86 PV guests may be able to mask interrupts",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.7.1_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-202.html\">\n\t  <p>Certain PV guest kernel operations (page table writes in\n\t    particular) need emulation, and use Xen's general x86 instruction\n\t    emulator. This allows a malicious guest kernel which asynchronously\n\t    modifies its instruction stream to effect the clearing of EFLAGS.IF\n\t    from the state used to return to guest context.</p>\n\t  <p>A malicious guest kernel administrator can cause a host hang or\n\t    crash, resulting in a Denial of Service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xenbits.xen.org/xsa/advisory-202.html"
+		],
+		"cvename": [
+			"CVE-2016-10024"
+		]
+	},
+	"dates": {
+		"discovery": "2016-12-21",
+		"entry": "2016-12-22"
+	}
 }

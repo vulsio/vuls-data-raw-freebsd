@@ -1,36 +1,36 @@
 {
-  "vid": "5555120d-ba4d-11e6-ae1b-002590263bf5",
-  "topic": "xen-kernel -- guest 32-bit ELF symbol table load leaking host data",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1",
-          "ge": "4.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-194.html\">\n\t  <p>Along with their main kernel binary, unprivileged guests may\n\t    arrange to have their Xen environment load (kernel) symbol tables\n\t    for their use. The ELF image metadata created for this purpose has a\n\t    few unused bytes when the symbol table binary is in 32-bit ELF\n\t    format. These unused bytes were not properly cleared during symbol\n\t    table loading.</p>\n\t  <p>A malicious unprivileged guest may be able to obtain sensitive\n\t    information from the host.</p>\n\t  <p>The information leak is small and not under the control of the\n\t    guest, so effectively exploiting this vulnerability is probably\n\t    difficult.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xenbits.xen.org/xsa/advisory-194.html"
-    ],
-    "cvename": [
-      "CVE-2016-9384"
-    ],
-    "freebsd_pr": [
-      "ports/214936"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-22",
-    "entry": "2016-12-04"
-  }
+	"vid": "5555120d-ba4d-11e6-ae1b-002590263bf5",
+	"topic": "xen-kernel -- guest 32-bit ELF symbol table load leaking host data",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.7.1",
+					"ge": "4.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-194.html\">\n\t  <p>Along with their main kernel binary, unprivileged guests may\n\t    arrange to have their Xen environment load (kernel) symbol tables\n\t    for their use. The ELF image metadata created for this purpose has a\n\t    few unused bytes when the symbol table binary is in 32-bit ELF\n\t    format. These unused bytes were not properly cleared during symbol\n\t    table loading.</p>\n\t  <p>A malicious unprivileged guest may be able to obtain sensitive\n\t    information from the host.</p>\n\t  <p>The information leak is small and not under the control of the\n\t    guest, so effectively exploiting this vulnerability is probably\n\t    difficult.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xenbits.xen.org/xsa/advisory-194.html"
+		],
+		"cvename": [
+			"CVE-2016-9384"
+		],
+		"freebsd_pr": [
+			"ports/214936"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-22",
+		"entry": "2016-12-04"
+	}
 }

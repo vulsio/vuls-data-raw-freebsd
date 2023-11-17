@@ -1,39 +1,39 @@
 {
-  "vid": "1d96305d-6ae6-11dd-91d5-000c29d47fd7",
-  "topic": "Bugzilla -- Directory Traversal in importxml.pl",
-  "affects": [
-    {
-      "name": [
-        "bugzilla",
-        "ja-bugzilla"
-      ],
-      "range": [
-        {
-          "lt": "2.22.4",
-          "ge": "2.22.1"
-        },
-        {
-          "lt": "3.0.4",
-          "ge": "3.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/2.22.4/\">\n\t  <p>When importing bugs using importxml.pl, the --attach_path\n\t    option can be specified, pointing to the directory where\n\t    attachments to import are stored. If the XML file being\n\t    read by importxml.pl contains a malicious</p>\n\t  <pre>../relative_path/to/local_file</pre>\n\t  <p>node, the script follows this relative path and attaches the\n\t    local file pointed by it to the bug, making the file public.\n\t    The security fix makes sure the relative path is always\n\t    ignored.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=437169"
-    ],
-    "cvename": [
-      "CVE-2008-4437"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-06-03",
-    "entry": "2008-08-15",
-    "modified": "2010-05-12"
-  }
+	"vid": "1d96305d-6ae6-11dd-91d5-000c29d47fd7",
+	"topic": "Bugzilla -- Directory Traversal in importxml.pl",
+	"affects": [
+		{
+			"name": [
+				"bugzilla",
+				"ja-bugzilla"
+			],
+			"range": [
+				{
+					"lt": "2.22.4",
+					"ge": "2.22.1"
+				},
+				{
+					"lt": "3.0.4",
+					"ge": "3.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/2.22.4/\">\n\t  <p>When importing bugs using importxml.pl, the --attach_path\n\t    option can be specified, pointing to the directory where\n\t    attachments to import are stored. If the XML file being\n\t    read by importxml.pl contains a malicious</p>\n\t  <pre>../relative_path/to/local_file</pre>\n\t  <p>node, the script follows this relative path and attaches the\n\t    local file pointed by it to the bug, making the file public.\n\t    The security fix makes sure the relative path is always\n\t    ignored.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=437169"
+		],
+		"cvename": [
+			"CVE-2008-4437"
+		]
+	},
+	"dates": {
+		"discovery": "2008-06-03",
+		"entry": "2008-08-15",
+		"modified": "2010-05-12"
+	}
 }

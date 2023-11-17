@@ -1,42 +1,42 @@
 {
-  "vid": "5e257b0d-e466-11ed-834b-6c3be5272acd",
-  "topic": "Grafana -- Exposure of sensitive information to an unauthorized actor",
-  "affects": [
-    {
-      "name": [
-        "grafana",
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.2.17",
-          "ge": "9.1.0"
-        },
-        {
-          "lt": "9.3.13",
-          "ge": "9.3.0"
-        },
-        {
-          "lt": "9.4.9",
-          "ge": "9.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/04/26/grafana-security-release-new-versions-of-grafana-with-security-fixes-for-cve-2023-28119-and-cve-2023-1387/\">\n\t  <p>When setting up Grafana, there is an option to enable\n\t  <a href=\"https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/jwt/\">\n\t  JWT authentication</a>. Enabling this will allow users to authenticate towards\n\t  the Grafana instance with a special header (default <code>X-JWT-Assertion</code>\n\t  ).</p>\n\t  <p>In Grafana, there is an additional way to authenticate using JWT called\n\t  <a href=\"https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/jwt/#url-login\">\n\t  URL login</a> where the token is passed as a query parameter.</p>\n\t  <p>When using this option, a JWT token is passed to the data source as a header,\n\t  which leads to exposure of sensitive information to an unauthorized party.</p>\n\t  <p>The CVSS score for this vulnerability is 4.2 Medium</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://grafana.com/security/security-advisories/cve-2023-1387/"
-    ],
-    "cvename": [
-      "CVE-2023-1387"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-04-26",
-    "entry": "2023-04-26"
-  }
+	"vid": "5e257b0d-e466-11ed-834b-6c3be5272acd",
+	"topic": "Grafana -- Exposure of sensitive information to an unauthorized actor",
+	"affects": [
+		{
+			"name": [
+				"grafana",
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.2.17",
+					"ge": "9.1.0"
+				},
+				{
+					"lt": "9.3.13",
+					"ge": "9.3.0"
+				},
+				{
+					"lt": "9.4.9",
+					"ge": "9.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/04/26/grafana-security-release-new-versions-of-grafana-with-security-fixes-for-cve-2023-28119-and-cve-2023-1387/\">\n\t  <p>When setting up Grafana, there is an option to enable\n\t  <a href=\"https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/jwt/\">\n\t  JWT authentication</a>. Enabling this will allow users to authenticate towards\n\t  the Grafana instance with a special header (default <code>X-JWT-Assertion</code>\n\t  ).</p>\n\t  <p>In Grafana, there is an additional way to authenticate using JWT called\n\t  <a href=\"https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/jwt/#url-login\">\n\t  URL login</a> where the token is passed as a query parameter.</p>\n\t  <p>When using this option, a JWT token is passed to the data source as a header,\n\t  which leads to exposure of sensitive information to an unauthorized party.</p>\n\t  <p>The CVSS score for this vulnerability is 4.2 Medium</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://grafana.com/security/security-advisories/cve-2023-1387/"
+		],
+		"cvename": [
+			"CVE-2023-1387"
+		]
+	},
+	"dates": {
+		"discovery": "2023-04-26",
+		"entry": "2023-04-26"
+	}
 }

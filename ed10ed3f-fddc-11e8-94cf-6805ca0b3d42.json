@@ -1,35 +1,35 @@
 {
-  "vid": "ed10ed3f-fddc-11e8-94cf-6805ca0b3d42",
-  "topic": "phpMyAdmin -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin",
-        "phpMyAdmin-php56",
-        "phpMyAdmin-php70",
-        "phpMyAdmin-php71",
-        "phpMyAdmin-php72"
-      ],
-      "range": [
-        {
-          "lt": "4.8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2018-6/\">\n\t  <h3>Summary</h3>\n\t  <p>Local file inclusion through transformation feature</p>\n\t  <h3>Description</h3>\n\t  <p>A flaw has been found where an attacker can exploit\n\t    phpMyAdmin to leak the contents of a local file. The\n\t    attacker must have access to the phpMyAdmin Configuration\n\t    Storage tables, although these can easily be created in any\n\t    database to which the attacker has access. An attacker must\n\t    have valid credentials to log in to phpMyAdmin; this\n\t    vulnerability does not allow an attacker to circumvent the\n\t    login system.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be severe.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2018-7/\">\n\t  <h3>Summary</h3>\n\t  <p>XSRF/CSRF vulnerability in phpMyAdmin</p>\n\t  <h3>Description</h3>\n\t  <p>By deceiving a user to click on a crafted URL, it is\n\t    possible to perform harmful SQL operations such as renaming\n\t    databases, creating new tables/routines, deleting designer\n\t    pages, adding/deleting users, updating user passwords,\n\t    killing SQL processes, etc.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be of moderate severity.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2018-8/\">\n\t  <h3>Summary</h3>\n\t  <p>XSS vulnerability in navigation tree</p>\n\t  <h3>Description</h3>\n\t  <p>A Cross-Site Scripting vulnerability was found in the\n\t    navigation tree, where an attacker can deliver a payload to\n\t    a user through a specially-crafted database/table name.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this attack to be of moderate severity.</p>\n\t  <h3>Mitigation factor</h3>\n\t  <p>The stored XSS vulnerabilities can be triggered only by\n\t    someone who logged in to phpMyAdmin, as the usual token\n\t    protection prevents non-logged-in users from accessing the\n\t    required forms.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2018-6/",
-      "https://www.phpmyadmin.net/security/PMASA-2018-7/",
-      "https://www.phpmyadmin.net/security/PMASA-2018-8/"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-12-11",
-    "entry": "2018-12-12"
-  }
+	"vid": "ed10ed3f-fddc-11e8-94cf-6805ca0b3d42",
+	"topic": "phpMyAdmin -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin",
+				"phpMyAdmin-php56",
+				"phpMyAdmin-php70",
+				"phpMyAdmin-php71",
+				"phpMyAdmin-php72"
+			],
+			"range": [
+				{
+					"lt": "4.8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2018-6/\">\n\t  <h3>Summary</h3>\n\t  <p>Local file inclusion through transformation feature</p>\n\t  <h3>Description</h3>\n\t  <p>A flaw has been found where an attacker can exploit\n\t    phpMyAdmin to leak the contents of a local file. The\n\t    attacker must have access to the phpMyAdmin Configuration\n\t    Storage tables, although these can easily be created in any\n\t    database to which the attacker has access. An attacker must\n\t    have valid credentials to log in to phpMyAdmin; this\n\t    vulnerability does not allow an attacker to circumvent the\n\t    login system.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be severe.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2018-7/\">\n\t  <h3>Summary</h3>\n\t  <p>XSRF/CSRF vulnerability in phpMyAdmin</p>\n\t  <h3>Description</h3>\n\t  <p>By deceiving a user to click on a crafted URL, it is\n\t    possible to perform harmful SQL operations such as renaming\n\t    databases, creating new tables/routines, deleting designer\n\t    pages, adding/deleting users, updating user passwords,\n\t    killing SQL processes, etc.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be of moderate severity.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2018-8/\">\n\t  <h3>Summary</h3>\n\t  <p>XSS vulnerability in navigation tree</p>\n\t  <h3>Description</h3>\n\t  <p>A Cross-Site Scripting vulnerability was found in the\n\t    navigation tree, where an attacker can deliver a payload to\n\t    a user through a specially-crafted database/table name.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this attack to be of moderate severity.</p>\n\t  <h3>Mitigation factor</h3>\n\t  <p>The stored XSS vulnerabilities can be triggered only by\n\t    someone who logged in to phpMyAdmin, as the usual token\n\t    protection prevents non-logged-in users from accessing the\n\t    required forms.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2018-6/",
+			"https://www.phpmyadmin.net/security/PMASA-2018-7/",
+			"https://www.phpmyadmin.net/security/PMASA-2018-8/"
+		]
+	},
+	"dates": {
+		"discovery": "2018-12-11",
+		"entry": "2018-12-12"
+	}
 }

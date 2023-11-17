@@ -1,33 +1,33 @@
 {
-  "vid": "bd98066d-4ea4-11eb-b412-e86a64caca56",
-  "topic": "mail/dovecot -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "dovecot"
-      ],
-      "range": [
-        {
-          "lt": "2.3.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2021-January/000450.html\">\n\t  <p>When imap hibernation is active, an attacker can cause Dovecot to\n\t    discover file system directory structure and access other users'\n\t    emails using specially crafted command.\n\t    The attacker must have valid credentials to access the\n\t    mail server.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2021-January/000451.html\">\n\t  <p>Mail delivery / parsing crashed when the 10 000th MIME part was\n\t    message/rfc822 (or if parent was multipart/digest). This happened\n\t    due to earlier MIME parsing changes for CVE-2020-12100.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://dovecot.org/pipermail/dovecot-news/2021-January/000448.html"
-    ],
-    "cvename": [
-      "CVE-2020-24386",
-      "CVE-2020-25275"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-08-17",
-    "entry": "2021-01-04"
-  }
+	"vid": "bd98066d-4ea4-11eb-b412-e86a64caca56",
+	"topic": "mail/dovecot -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"dovecot"
+			],
+			"range": [
+				{
+					"lt": "2.3.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2021-January/000450.html\">\n\t  <p>When imap hibernation is active, an attacker can cause Dovecot to\n\t    discover file system directory structure and access other users'\n\t    emails using specially crafted command.\n\t    The attacker must have valid credentials to access the\n\t    mail server.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot-news/2021-January/000451.html\">\n\t  <p>Mail delivery / parsing crashed when the 10 000th MIME part was\n\t    message/rfc822 (or if parent was multipart/digest). This happened\n\t    due to earlier MIME parsing changes for CVE-2020-12100.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://dovecot.org/pipermail/dovecot-news/2021-January/000448.html"
+		],
+		"cvename": [
+			"CVE-2020-24386",
+			"CVE-2020-25275"
+		]
+	},
+	"dates": {
+		"discovery": "2020-08-17",
+		"entry": "2021-01-04"
+	}
 }

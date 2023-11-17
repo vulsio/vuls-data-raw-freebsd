@@ -1,109 +1,109 @@
 {
-  "vid": "3897a2f8-1d57-11d9-bc4a-000c41e2cdad",
-  "topic": "tiff -- multiple integer overflows",
-  "affects": [
-    {
-      "name": [
-        "tiff"
-      ],
-      "range": [
-        {
-          "le": "3.6.1_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-tiff"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "pdflib",
-        "pdflib-perl"
-      ],
-      "range": [
-        {
-          "lt": "6.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gdal"
-      ],
-      "range": [
-        {
-          "lt": "1.2.1_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ivtools"
-      ],
-      "range": [
-        {
-          "lt": "1.2.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "paraview"
-      ],
-      "range": [
-        {
-          "lt": "2.4.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "fractorama"
-      ],
-      "range": [
-        {
-          "lt": "1.6.7_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "iv",
-        "ja-iv",
-        "ja-libimg"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Dmitry V. Levin discovered numerous integer overflow bugs in\n\t  libtiff.  Most of these bugs are related to memory management,\n\t  and are believed to be exploitable for arbitrary code\n\t  execution.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.idefense.com/application/poi/display?id=173&type=vulnerabilities"
-    ],
-    "cvename": [
-      "CVE-2004-0886"
-    ],
-    "cert_vu": [
-      "687568"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-13",
-    "entry": "2004-10-13",
-    "modified": "2006-06-08"
-  }
+	"vid": "3897a2f8-1d57-11d9-bc4a-000c41e2cdad",
+	"topic": "tiff -- multiple integer overflows",
+	"affects": [
+		{
+			"name": [
+				"tiff"
+			],
+			"range": [
+				{
+					"le": "3.6.1_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-tiff"
+			],
+			"range": [
+				{
+					"lt": "3.6.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"pdflib",
+				"pdflib-perl"
+			],
+			"range": [
+				{
+					"lt": "6.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"gdal"
+			],
+			"range": [
+				{
+					"lt": "1.2.1_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"ivtools"
+			],
+			"range": [
+				{
+					"lt": "1.2.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"paraview"
+			],
+			"range": [
+				{
+					"lt": "2.4.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"fractorama"
+			],
+			"range": [
+				{
+					"lt": "1.6.7_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"iv",
+				"ja-iv",
+				"ja-libimg"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Dmitry V. Levin discovered numerous integer overflow bugs in\n\t  libtiff.  Most of these bugs are related to memory management,\n\t  and are believed to be exploitable for arbitrary code\n\t  execution.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.idefense.com/application/poi/display?id=173&type=vulnerabilities"
+		],
+		"cvename": [
+			"CVE-2004-0886"
+		],
+		"cert_vu": [
+			"687568"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-13",
+		"entry": "2004-10-13",
+		"modified": "2006-06-08"
+	}
 }

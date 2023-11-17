@@ -1,37 +1,37 @@
 {
-  "vid": "c73305ae-8cd7-11d9-9873-000a95bc6fae",
-  "topic": "realplayer -- remote heap overflow",
-  "affects": [
-    {
-      "name": [
-        "linux-realplayer"
-      ],
-      "range": [
-        {
-          "le": "10.0.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Two exploits have been identified in the Linux RealPlayer client.\n\t   RealNetworks states:</p>\n\t<blockquote cite=\"http://service.real.com/help/faq/security/050224_player/EN/\">\n\t  <p>RealNetworks, Inc. has addressed recently discovered\n\t     security vulnerabilities that offered the potential for\n\t     an attacker to run arbitrary or malicious code on a\n\t     customer's machine. RealNetworks has received no reports\n\t     of machines compromised as a result of the now-remedied\n\t     vulnerabilities. RealNetworks takes all security\n\t     vulnerabilities very seriously.</p>\n\t  <p>The specific exploits were:</p>\n\t  <ul>\n\t    <li><strong>Exploit 1:</strong> To fashion a malicious WAV\n\t      file to cause a buffer overflow which could have allowed\n\t      an attacker to execute arbitrary code on a customer's\n\t      machine.</li>\n\t    <li><strong>Exploit 2:</strong> To fashion a malicious\n\t      SMIL file to cause a buffer overflow which could have\n\t      allowed an attacker to execute arbitrary code on a\n\t      customer's machine.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://service.real.com/help/faq/security/050224_player/EN/"
-    ],
-    "cvename": [
-      "CVE-2005-0611"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=vulnwatch&m=110977858619314"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-03-01",
-    "entry": "2005-03-04"
-  }
+	"vid": "c73305ae-8cd7-11d9-9873-000a95bc6fae",
+	"topic": "realplayer -- remote heap overflow",
+	"affects": [
+		{
+			"name": [
+				"linux-realplayer"
+			],
+			"range": [
+				{
+					"le": "10.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Two exploits have been identified in the Linux RealPlayer client.\n\t   RealNetworks states:</p>\n\t<blockquote cite=\"http://service.real.com/help/faq/security/050224_player/EN/\">\n\t  <p>RealNetworks, Inc. has addressed recently discovered\n\t     security vulnerabilities that offered the potential for\n\t     an attacker to run arbitrary or malicious code on a\n\t     customer's machine. RealNetworks has received no reports\n\t     of machines compromised as a result of the now-remedied\n\t     vulnerabilities. RealNetworks takes all security\n\t     vulnerabilities very seriously.</p>\n\t  <p>The specific exploits were:</p>\n\t  <ul>\n\t    <li><strong>Exploit 1:</strong> To fashion a malicious WAV\n\t      file to cause a buffer overflow which could have allowed\n\t      an attacker to execute arbitrary code on a customer's\n\t      machine.</li>\n\t    <li><strong>Exploit 2:</strong> To fashion a malicious\n\t      SMIL file to cause a buffer overflow which could have\n\t      allowed an attacker to execute arbitrary code on a\n\t      customer's machine.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://service.real.com/help/faq/security/050224_player/EN/"
+		],
+		"cvename": [
+			"CVE-2005-0611"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=vulnwatch&m=110977858619314"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-03-01",
+		"entry": "2005-03-04"
+	}
 }

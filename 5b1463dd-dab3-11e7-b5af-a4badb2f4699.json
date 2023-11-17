@@ -1,37 +1,37 @@
 {
-  "vid": "5b1463dd-dab3-11e7-b5af-a4badb2f4699",
-  "topic": "FreeBSD -- POSIX shm allows jails to access global namespace",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.4_3",
-          "ge": "10.4"
-        },
-        {
-          "lt": "10.3_24",
-          "ge": "10.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Named paths are globally scoped, meaning a process located\n\tin one jail can read and modify the content of POSIX shared\n\tmemory objects created by a process in another jail or the\n\thost system.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious user that has access to a jailed system is\n\table to abuse shared memory by injecting malicious content\n\tin the shared memory region. This memory region might be\n\texecuted by applications trusting the shared memory, like\n\tSquid.</p>\n\t<p>This issue could lead to a Denial of Service or local\n\tprivilege escalation.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2017-1087"
-    ],
-    "freebsd_sa": [
-      "SA-17:09.shm"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-11-15",
-    "entry": "2017-12-06"
-  }
+	"vid": "5b1463dd-dab3-11e7-b5af-a4badb2f4699",
+	"topic": "FreeBSD -- POSIX shm allows jails to access global namespace",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.4_3",
+					"ge": "10.4"
+				},
+				{
+					"lt": "10.3_24",
+					"ge": "10.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Named paths are globally scoped, meaning a process located\n\tin one jail can read and modify the content of POSIX shared\n\tmemory objects created by a process in another jail or the\n\thost system.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious user that has access to a jailed system is\n\table to abuse shared memory by injecting malicious content\n\tin the shared memory region. This memory region might be\n\texecuted by applications trusting the shared memory, like\n\tSquid.</p>\n\t<p>This issue could lead to a Denial of Service or local\n\tprivilege escalation.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2017-1087"
+		],
+		"freebsd_sa": [
+			"SA-17:09.shm"
+		]
+	},
+	"dates": {
+		"discovery": "2017-11-15",
+		"entry": "2017-12-06"
+	}
 }

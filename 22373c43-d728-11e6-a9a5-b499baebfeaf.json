@@ -1,121 +1,121 @@
 {
-  "vid": "22373c43-d728-11e6-a9a5-b499baebfeaf",
-  "topic": "MySQL -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mariadb55-client",
-        "mariadb55-server"
-      ],
-      "range": [
-        {
-          "lt": "5.5.52"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mariadb100-client",
-        "mariadb100-server"
-      ],
-      "range": [
-        {
-          "lt": "10.0.28"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mariadb101-client",
-        "mariadb101-server"
-      ],
-      "range": [
-        {
-          "lt": "10.1.18"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mysql55-client",
-        "mysql55-server"
-      ],
-      "range": [
-        {
-          "lt": "5.5.52"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mysql56-client",
-        "mysql56-server"
-      ],
-      "range": [
-        {
-          "lt": "5.6.33"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mysql57-client",
-        "mysql57-server"
-      ],
-      "range": [
-        {
-          "lt": "5.7.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "percona55-client",
-        "percona55-server"
-      ],
-      "range": [
-        {
-          "lt": "5.5.51.38.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "percona56-client",
-        "percona56-server"
-      ],
-      "range": [
-        {
-          "lt": "5.6.32.78.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The MySQL project reports:</p>\n\t<blockquote cite=\"http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html#AppendixMSQL\">\n\t  <ul>\n\t    <li>CVE-2016-3492: Remote security vulnerability in 'Server: Optimizer'\n\t      sub component.</li>\n\t    <li>CVE-2016-5616, CVE-2016-6663: Race condition allows local users with\n\t      certain permissions to gain privileges by leveraging use of my_copystat\n\t      by REPAIR TABLE to repair a MyISAM table.</li>\n\t    <li>CVE-2016-5617, CVE-2016-6664: mysqld_safe, when using file-based\n\t      logging, allows local users with access to the mysql account to gain\n\t      root privileges via a symlink attack on error logs and possibly other\n\t      files.</li>\n\t    <li>CVE-2016-5624: Remote security vulnerability in 'Server: DML' sub\n\t      component.</li>\n\t    <li>CVE-2016-5626: Remote security vulnerability in 'Server: GIS' sub\n\t      component.</li>\n\t    <li>CVE-2016-5629: Remote security vulnerability in 'Server: Federated'\n\t      sub component.</li>\n\t    <li>CVE-2016-8283: Remote security vulnerability in 'Server: Types' sub\n\t      component.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html#AppendixMSQL",
-      "https://mariadb.com/kb/en/mariadb/mariadb-10028-release-notes/",
-      "https://mariadb.com/kb/en/mariadb/mariadb-5552-release-notes/",
-      "https://mariadb.com/kb/en/mariadb/mariadb-10118-release-notes/"
-    ],
-    "cvename": [
-      "CVE-2016-3492",
-      "CVE-2016-5616",
-      "CVE-2016-5617",
-      "CVE-2016-5624",
-      "CVE-2016-5626",
-      "CVE-2016-5629",
-      "CVE-2016-6663",
-      "CVE-2016-6664",
-      "CVE-2016-8283"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-09-13",
-    "entry": "2017-01-14"
-  }
+	"vid": "22373c43-d728-11e6-a9a5-b499baebfeaf",
+	"topic": "MySQL -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mariadb55-client",
+				"mariadb55-server"
+			],
+			"range": [
+				{
+					"lt": "5.5.52"
+				}
+			]
+		},
+		{
+			"name": [
+				"mariadb100-client",
+				"mariadb100-server"
+			],
+			"range": [
+				{
+					"lt": "10.0.28"
+				}
+			]
+		},
+		{
+			"name": [
+				"mariadb101-client",
+				"mariadb101-server"
+			],
+			"range": [
+				{
+					"lt": "10.1.18"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql55-client",
+				"mysql55-server"
+			],
+			"range": [
+				{
+					"lt": "5.5.52"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql56-client",
+				"mysql56-server"
+			],
+			"range": [
+				{
+					"lt": "5.6.33"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql57-client",
+				"mysql57-server"
+			],
+			"range": [
+				{
+					"lt": "5.7.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"percona55-client",
+				"percona55-server"
+			],
+			"range": [
+				{
+					"lt": "5.5.51.38.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"percona56-client",
+				"percona56-server"
+			],
+			"range": [
+				{
+					"lt": "5.6.32.78.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The MySQL project reports:</p>\n\t<blockquote cite=\"http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html#AppendixMSQL\">\n\t  <ul>\n\t    <li>CVE-2016-3492: Remote security vulnerability in 'Server: Optimizer'\n\t      sub component.</li>\n\t    <li>CVE-2016-5616, CVE-2016-6663: Race condition allows local users with\n\t      certain permissions to gain privileges by leveraging use of my_copystat\n\t      by REPAIR TABLE to repair a MyISAM table.</li>\n\t    <li>CVE-2016-5617, CVE-2016-6664: mysqld_safe, when using file-based\n\t      logging, allows local users with access to the mysql account to gain\n\t      root privileges via a symlink attack on error logs and possibly other\n\t      files.</li>\n\t    <li>CVE-2016-5624: Remote security vulnerability in 'Server: DML' sub\n\t      component.</li>\n\t    <li>CVE-2016-5626: Remote security vulnerability in 'Server: GIS' sub\n\t      component.</li>\n\t    <li>CVE-2016-5629: Remote security vulnerability in 'Server: Federated'\n\t      sub component.</li>\n\t    <li>CVE-2016-8283: Remote security vulnerability in 'Server: Types' sub\n\t      component.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html#AppendixMSQL",
+			"https://mariadb.com/kb/en/mariadb/mariadb-10028-release-notes/",
+			"https://mariadb.com/kb/en/mariadb/mariadb-5552-release-notes/",
+			"https://mariadb.com/kb/en/mariadb/mariadb-10118-release-notes/"
+		],
+		"cvename": [
+			"CVE-2016-3492",
+			"CVE-2016-5616",
+			"CVE-2016-5617",
+			"CVE-2016-5624",
+			"CVE-2016-5626",
+			"CVE-2016-5629",
+			"CVE-2016-6663",
+			"CVE-2016-6664",
+			"CVE-2016-8283"
+		]
+	},
+	"dates": {
+		"discovery": "2016-09-13",
+		"entry": "2017-01-14"
+	}
 }

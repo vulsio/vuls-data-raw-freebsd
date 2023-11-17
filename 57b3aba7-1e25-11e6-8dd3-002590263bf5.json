@@ -1,56 +1,56 @@
 {
-  "vid": "57b3aba7-1e25-11e6-8dd3-002590263bf5",
-  "topic": "expat -- denial of service vulnerability on malformed input",
-  "affects": [
-    {
-      "name": [
-        "expat"
-      ],
-      "range": [
-        {
-          "lt": "2.1.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-expat"
-      ],
-      "range": [
-        {
-          "lt": "2.0.1_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c7-expat"
-      ],
-      "range": [
-        {
-          "lt": "2.1.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gustavo Grieco reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/05/17/12\">\n\t  <p>The Expat XML parser mishandles certain kinds of malformed input\n\t    documents, resulting in buffer overflows during processing and error\n\t    reporting. The overflows can manifest as a segmentation fault or as\n\t    memory corruption during a parse operation. The bugs allow for a\n\t    denial of service attack in many applications by an unauthenticated\n\t    attacker, and could conceivably result in remote code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2016/05/17/12"
-    ],
-    "cvename": [
-      "CVE-2016-0718"
-    ],
-    "freebsd_pr": [
-      "ports/209360"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-17",
-    "entry": "2016-05-20",
-    "modified": "2016-11-30"
-  }
+	"vid": "57b3aba7-1e25-11e6-8dd3-002590263bf5",
+	"topic": "expat -- denial of service vulnerability on malformed input",
+	"affects": [
+		{
+			"name": [
+				"expat"
+			],
+			"range": [
+				{
+					"lt": "2.1.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-expat"
+			],
+			"range": [
+				{
+					"lt": "2.0.1_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c7-expat"
+			],
+			"range": [
+				{
+					"lt": "2.1.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gustavo Grieco reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/05/17/12\">\n\t  <p>The Expat XML parser mishandles certain kinds of malformed input\n\t    documents, resulting in buffer overflows during processing and error\n\t    reporting. The overflows can manifest as a segmentation fault or as\n\t    memory corruption during a parse operation. The bugs allow for a\n\t    denial of service attack in many applications by an unauthenticated\n\t    attacker, and could conceivably result in remote code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2016/05/17/12"
+		],
+		"cvename": [
+			"CVE-2016-0718"
+		],
+		"freebsd_pr": [
+			"ports/209360"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-17",
+		"entry": "2016-05-20",
+		"modified": "2016-11-30"
+	}
 }

@@ -1,84 +1,84 @@
 {
-  "vid": "4548ec97-4d38-11ec-a539-0800270512f4",
-  "topic": "rubygem-cgi -- cookie prefix spoofing in CGI::Cookie.parse",
-  "affects": [
-    {
-      "name": [
-        "ruby"
-      ],
-      "range": [
-        {
-          "lt": "2.6.9,1",
-          "ge": "2.6.0,1"
-        },
-        {
-          "lt": "2.7.5,1",
-          "ge": "2.7.0,1"
-        },
-        {
-          "lt": "3.0.3,1",
-          "ge": "3.0.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby26"
-      ],
-      "range": [
-        {
-          "lt": "2.6.9,1",
-          "ge": "2.6.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby27"
-      ],
-      "range": [
-        {
-          "lt": "2.7.5,1",
-          "ge": "2.7.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby30"
-      ],
-      "range": [
-        {
-          "lt": "3.0.3,1",
-          "ge": "3.0.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-cgi"
-      ],
-      "range": [
-        {
-          "lt": "0.3.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ooooooo_q reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/\">\n\t  <p>\n\t    The old versions of <code>CGI::Cookie.parse</code> applied\n\t    URL decoding to cookie names. An attacker could exploit\n\t    this vulnerability to spoof security prefixes in cookie\n\t    names, which may be able to trick a vulnerable\n\t    application.\n\t  </p>\n\t  <p>\n\t    By this fix, <code>CGI::Cookie.parse</code> no longer\n\t    decodes cookie names. Note that this is an incompatibility\n\t    if cookie names that you are using include\n\t    non-alphanumeric characters that are URL-encoded.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/"
-    ],
-    "cvename": [
-      "CVE-2021-41819"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-11-24",
-    "entry": "2021-11-24"
-  }
+	"vid": "4548ec97-4d38-11ec-a539-0800270512f4",
+	"topic": "rubygem-cgi -- cookie prefix spoofing in CGI::Cookie.parse",
+	"affects": [
+		{
+			"name": [
+				"ruby"
+			],
+			"range": [
+				{
+					"lt": "2.6.9,1",
+					"ge": "2.6.0,1"
+				},
+				{
+					"lt": "2.7.5,1",
+					"ge": "2.7.0,1"
+				},
+				{
+					"lt": "3.0.3,1",
+					"ge": "3.0.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby26"
+			],
+			"range": [
+				{
+					"lt": "2.6.9,1",
+					"ge": "2.6.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby27"
+			],
+			"range": [
+				{
+					"lt": "2.7.5,1",
+					"ge": "2.7.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby30"
+			],
+			"range": [
+				{
+					"lt": "3.0.3,1",
+					"ge": "3.0.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-cgi"
+			],
+			"range": [
+				{
+					"lt": "0.3.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ooooooo_q reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/\">\n\t  <p>\n\t    The old versions of <code>CGI::Cookie.parse</code> applied\n\t    URL decoding to cookie names. An attacker could exploit\n\t    this vulnerability to spoof security prefixes in cookie\n\t    names, which may be able to trick a vulnerable\n\t    application.\n\t  </p>\n\t  <p>\n\t    By this fix, <code>CGI::Cookie.parse</code> no longer\n\t    decodes cookie names. Note that this is an incompatibility\n\t    if cookie names that you are using include\n\t    non-alphanumeric characters that are URL-encoded.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/"
+		],
+		"cvename": [
+			"CVE-2021-41819"
+		]
+	},
+	"dates": {
+		"discovery": "2021-11-24",
+		"entry": "2021-11-24"
+	}
 }

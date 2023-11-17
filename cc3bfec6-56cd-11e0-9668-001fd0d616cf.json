@@ -1,29 +1,29 @@
 {
-  "vid": "cc3bfec6-56cd-11e0-9668-001fd0d616cf",
-  "topic": "php -- crash on crafted tag in exif",
-  "affects": [
-    {
-      "name": [
-        "php5-exif"
-      ],
-      "range": [
-        {
-          "lt": "5.3.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>US-CERT/NIST reports:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0708\">\n\t  <p>exif.c in the Exif extension in PHP before 5.3.6 on 64-bit platforms\n\t    performs an incorrect cast, which allows remote attackers to cause a\n\t    denial of service (application crash) via an image with a crafted\n\t    Image File Directory (IFD) that triggers a buffer over-read.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2011-0708"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-03-20",
-    "entry": "2011-03-25"
-  }
+	"vid": "cc3bfec6-56cd-11e0-9668-001fd0d616cf",
+	"topic": "php -- crash on crafted tag in exif",
+	"affects": [
+		{
+			"name": [
+				"php5-exif"
+			],
+			"range": [
+				{
+					"lt": "5.3.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>US-CERT/NIST reports:</p>\n\t<blockquote cite=\"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0708\">\n\t  <p>exif.c in the Exif extension in PHP before 5.3.6 on 64-bit platforms\n\t    performs an incorrect cast, which allows remote attackers to cause a\n\t    denial of service (application crash) via an image with a crafted\n\t    Image File Directory (IFD) that triggers a buffer over-read.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2011-0708"
+		]
+	},
+	"dates": {
+		"discovery": "2011-03-20",
+		"entry": "2011-03-25"
+	}
 }

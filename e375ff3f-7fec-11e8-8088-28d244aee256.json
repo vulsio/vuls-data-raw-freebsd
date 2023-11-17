@@ -1,45 +1,45 @@
 {
-  "vid": "e375ff3f-7fec-11e8-8088-28d244aee256",
-  "topic": "expat -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "expat"
-      ],
-      "range": [
-        {
-          "lt": "2.2.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libwww"
-      ],
-      "range": [
-        {
-          "lt": "5.4.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9063\">\n\t  <p>An integer overflow during the parsing of XML using the Expat library.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9233\">\n\t  <p>XML External Entity vulnerability in libexpat 2.2.0 and earlier (Expat\n\t    XML Parser Library) allows attackers to put the parser in an infinite\n\t    loop using a malformed external entity definition from an external DTD.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9063",
-      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9233",
-      "https://libexpat.github.io/doc/cve-2017-9233/"
-    ],
-    "cvename": [
-      "CVE-2016-9063",
-      "CVE-2017-9233"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-10-27",
-    "entry": "2018-07-05"
-  }
+	"vid": "e375ff3f-7fec-11e8-8088-28d244aee256",
+	"topic": "expat -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"expat"
+			],
+			"range": [
+				{
+					"lt": "2.2.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"libwww"
+			],
+			"range": [
+				{
+					"lt": "5.4.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9063\">\n\t  <p>An integer overflow during the parsing of XML using the Expat library.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9233\">\n\t  <p>XML External Entity vulnerability in libexpat 2.2.0 and earlier (Expat\n\t    XML Parser Library) allows attackers to put the parser in an infinite\n\t    loop using a malformed external entity definition from an external DTD.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9063",
+			"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9233",
+			"https://libexpat.github.io/doc/cve-2017-9233/"
+		],
+		"cvename": [
+			"CVE-2016-9063",
+			"CVE-2017-9233"
+		]
+	},
+	"dates": {
+		"discovery": "2016-10-27",
+		"entry": "2018-07-05"
+	}
 }

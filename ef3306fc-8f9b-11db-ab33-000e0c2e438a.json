@@ -1,62 +1,62 @@
 {
-  "vid": "ef3306fc-8f9b-11db-ab33-000e0c2e438a",
-  "topic": "bind9 -- Denial of Service in named(8)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.1_6",
-          "ge": "6.1"
-        },
-        {
-          "lt": "6.0_11",
-          "ge": "6.0"
-        },
-        {
-          "lt": "5.5_4",
-          "ge": "5.5"
-        },
-        {
-          "lt": "5.4_18",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.3_33",
-          "ge": "5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind9"
-      ],
-      "range": [
-        {
-          "lt": "9.3.2.1",
-          "ge": "9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description</h1>\n\t<p>For a recursive DNS server, a remote attacker sending enough\n\t  recursive queries for the replies to arrive after all the\n\t  interested clients have left the recursion queue will trigger\n\t  an INSIST failure in the named(8) daemon.  Also for a\n\t  recursive DNS server, an assertion failure can occur when\n\t  processing a query whose reply will contain more than one\n\t  SIG(covered) RRset.</p>\n\t<p>For an authoritative DNS server serving a RFC 2535 DNSSEC\n\t  zone which is queried for the SIG records where there are\n\t  multiple SIG(covered) RRsets (e.g. a zone apex), named(8)\n\t  will trigger an assertion failure when it tries to construct\n\t  the response.</p>\n\t<h1>Impact</h1>\n\t<p>An attacker who can perform recursive lookups on a DNS server\n\t  and is able to send a sufficiently large number of recursive\n\t  queries, or is able to get the DNS server to return more than\n\t  one SIG(covered) RRsets can stop the functionality of the DNS\n\t  service.</p>\n\t<p>An attacker querying an authoritative DNS server serving a\n\t  RFC 2535 DNSSEC zone may be able to crash the DNS server.</p>\n\t<h1>Workaround</h1>\n\t<p>A possible workaround is to only allow trusted clients to\n\t  perform recursive queries.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2006-4095",
-      "CVE-2006-4096"
-    ],
-    "freebsd_sa": [
-      "SA-06:20.bind"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-09-06",
-    "entry": "2006-12-19",
-    "modified": "2016-08-09"
-  }
+	"vid": "ef3306fc-8f9b-11db-ab33-000e0c2e438a",
+	"topic": "bind9 -- Denial of Service in named(8)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.1_6",
+					"ge": "6.1"
+				},
+				{
+					"lt": "6.0_11",
+					"ge": "6.0"
+				},
+				{
+					"lt": "5.5_4",
+					"ge": "5.5"
+				},
+				{
+					"lt": "5.4_18",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.3_33",
+					"ge": "5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind9"
+			],
+			"range": [
+				{
+					"lt": "9.3.2.1",
+					"ge": "9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description</h1>\n\t<p>For a recursive DNS server, a remote attacker sending enough\n\t  recursive queries for the replies to arrive after all the\n\t  interested clients have left the recursion queue will trigger\n\t  an INSIST failure in the named(8) daemon.  Also for a\n\t  recursive DNS server, an assertion failure can occur when\n\t  processing a query whose reply will contain more than one\n\t  SIG(covered) RRset.</p>\n\t<p>For an authoritative DNS server serving a RFC 2535 DNSSEC\n\t  zone which is queried for the SIG records where there are\n\t  multiple SIG(covered) RRsets (e.g. a zone apex), named(8)\n\t  will trigger an assertion failure when it tries to construct\n\t  the response.</p>\n\t<h1>Impact</h1>\n\t<p>An attacker who can perform recursive lookups on a DNS server\n\t  and is able to send a sufficiently large number of recursive\n\t  queries, or is able to get the DNS server to return more than\n\t  one SIG(covered) RRsets can stop the functionality of the DNS\n\t  service.</p>\n\t<p>An attacker querying an authoritative DNS server serving a\n\t  RFC 2535 DNSSEC zone may be able to crash the DNS server.</p>\n\t<h1>Workaround</h1>\n\t<p>A possible workaround is to only allow trusted clients to\n\t  perform recursive queries.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2006-4095",
+			"CVE-2006-4096"
+		],
+		"freebsd_sa": [
+			"SA-06:20.bind"
+		]
+	},
+	"dates": {
+		"discovery": "2006-09-06",
+		"entry": "2006-12-19",
+		"modified": "2016-08-09"
+	}
 }

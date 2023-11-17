@@ -1,49 +1,49 @@
 {
-  "vid": "dd943fbb-d0fe-11df-95a8-00219b0fc4d8",
-  "topic": "apr -- multiple vunerabilities",
-  "affects": [
-    {
-      "name": [
-        "apr1"
-      ],
-      "range": [
-        {
-          "lt": "1.4.2.1.3.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apr0"
-      ],
-      "range": [
-        {
-          "lt": "0.9.19.0.9.19"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/41701\">\n\t  <p>Multiple vulnerabilities have been reported in APR-util, which can\n\t    be exploited by malicious people to cause a DoS (Denial of\n\t    Service).</p>\n\t  <p>Two XML parsing vulnerabilities exist in the bundled version of\n\t    expat.</p>\n\t  <p>An error within the \"apr_brigade_split_line()\" function in\n\t    buckets/apr_brigade.c can be exploited to cause high memory\n\t    consumption.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.apache.org/dist/apr/CHANGES-APR-UTIL-1.3",
-      "http://secunia.com/advisories/41701"
-    ],
-    "cvename": [
-      "CVE-2009-3560",
-      "CVE-2009-3720",
-      "CVE-2010-1623"
-    ],
-    "bid": [
-      "43673"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-10-02",
-    "entry": "2010-10-06",
-    "modified": "2010-10-20"
-  }
+	"vid": "dd943fbb-d0fe-11df-95a8-00219b0fc4d8",
+	"topic": "apr -- multiple vunerabilities",
+	"affects": [
+		{
+			"name": [
+				"apr1"
+			],
+			"range": [
+				{
+					"lt": "1.4.2.1.3.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"apr0"
+			],
+			"range": [
+				{
+					"lt": "0.9.19.0.9.19"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/41701\">\n\t  <p>Multiple vulnerabilities have been reported in APR-util, which can\n\t    be exploited by malicious people to cause a DoS (Denial of\n\t    Service).</p>\n\t  <p>Two XML parsing vulnerabilities exist in the bundled version of\n\t    expat.</p>\n\t  <p>An error within the \"apr_brigade_split_line()\" function in\n\t    buckets/apr_brigade.c can be exploited to cause high memory\n\t    consumption.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.apache.org/dist/apr/CHANGES-APR-UTIL-1.3",
+			"http://secunia.com/advisories/41701"
+		],
+		"cvename": [
+			"CVE-2009-3560",
+			"CVE-2009-3720",
+			"CVE-2010-1623"
+		],
+		"bid": [
+			"43673"
+		]
+	},
+	"dates": {
+		"discovery": "2010-10-02",
+		"entry": "2010-10-06",
+		"modified": "2010-10-20"
+	}
 }

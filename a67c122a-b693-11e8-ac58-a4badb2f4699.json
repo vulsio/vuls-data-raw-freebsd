@@ -1,41 +1,41 @@
 {
-  "vid": "a67c122a-b693-11e8-ac58-a4badb2f4699",
-  "topic": "FreeBSD -- Improper ELF header parsing",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "11.2_3",
-          "ge": "11.2"
-        },
-        {
-          "lt": "11.1_14",
-          "ge": "11.1"
-        },
-        {
-          "lt": "10.4_12",
-          "ge": "10.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Insufficient validation was performed in the ELF header\n\tparser, and malformed or otherwise invalid ELF binaries\n\twere not rejected as they should be.</p>\n\t<h1>Impact:</h1>\n\t<p>Execution of a malicious ELF binary may result in a\n\tkernel crash or may disclose kernel memory.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2018-6924"
-    ],
-    "freebsd_sa": [
-      "SA-18:12.elf"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-09-12",
-    "entry": "2018-09-12"
-  }
+	"vid": "a67c122a-b693-11e8-ac58-a4badb2f4699",
+	"topic": "FreeBSD -- Improper ELF header parsing",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "11.2_3",
+					"ge": "11.2"
+				},
+				{
+					"lt": "11.1_14",
+					"ge": "11.1"
+				},
+				{
+					"lt": "10.4_12",
+					"ge": "10.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Insufficient validation was performed in the ELF header\n\tparser, and malformed or otherwise invalid ELF binaries\n\twere not rejected as they should be.</p>\n\t<h1>Impact:</h1>\n\t<p>Execution of a malicious ELF binary may result in a\n\tkernel crash or may disclose kernel memory.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2018-6924"
+		],
+		"freebsd_sa": [
+			"SA-18:12.elf"
+		]
+	},
+	"dates": {
+		"discovery": "2018-09-12",
+		"entry": "2018-09-12"
+	}
 }

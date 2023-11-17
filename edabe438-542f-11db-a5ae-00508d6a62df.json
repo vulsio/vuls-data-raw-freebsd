@@ -1,78 +1,78 @@
 {
-  "vid": "edabe438-542f-11db-a5ae-00508d6a62df",
-  "topic": "php -- open_basedir Race Condition Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "php4",
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "4.4.4_1"
-        },
-        {
-          "lt": "5.1.6_2",
-          "ge": "5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php-suhosin"
-      ],
-      "range": [
-        {
-          "lt": "0.9.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php4-cli",
-        "php5-cli",
-        "php4-cgi",
-        "php5-cgi",
-        "php4-dtc",
-        "php5-dtc",
-        "php4-horde",
-        "php5-horde",
-        "php4-nms",
-        "php5-nms",
-        "mod_php4",
-        "mod_php5"
-      ],
-      "range": [
-        {
-          "lt": "4.4.4_1",
-          "ge": "4"
-        },
-        {
-          "lt": "5.1.6_2",
-          "ge": "5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stefan Esser reports:</p>\n\t<blockquote cite=\"http://www.hardened-php.net/advisory_082006.132.html\">\n\t  <p>PHP's open_basedir feature is meant to disallow scripts to\n\t    access files outside a set of configured base directories.\n\t    The checks for this are placed within PHP functions dealing\n\t    with files before the actual open call is performed.</p>\n\t  <p>Obviously there is a little span of time between the check\n\t    and the actual open call. During this time span the checked\n\t    path could have been altered and point to a file that is\n\t    forbidden to be accessed due to open_basedir restrictions.</p>\n\t  <p>Because the open_basedir restrictions often not call PHP\n\t    functions but 3rd party library functions to actually open\n\t    the file it is impossible to close this time span in a\n\t    general way. It would only be possible to close it when PHP\n\t    handles the actual opening on it's own.</p>\n\t  <p>While it seems hard to change the path during this little\n\t    time span it is very simple with the use of the symlink()\n\t    function combined with a little trick. PHP's symlink()\n\t    function ensures that source and target of the symlink\n\t    operation are allowed by open_basedir restrictions (and\n\t    safe_mode). However it is possible to point a symlink to\n\t    any file by the use of mkdir(), unlink() and at least two\n\t    symlinks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.hardened-php.net/advisory_082006.132.html",
-      "http://secunia.com/advisories/22235/"
-    ],
-    "cvename": [
-      "CVE-2006-5178"
-    ],
-    "bid": [
-      "20326"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-10-02",
-    "entry": "2006-10-05",
-    "modified": "2013-04-01"
-  }
+	"vid": "edabe438-542f-11db-a5ae-00508d6a62df",
+	"topic": "php -- open_basedir Race Condition Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"php4",
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "4.4.4_1"
+				},
+				{
+					"lt": "5.1.6_2",
+					"ge": "5"
+				}
+			]
+		},
+		{
+			"name": [
+				"php-suhosin"
+			],
+			"range": [
+				{
+					"lt": "0.9.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"php4-cli",
+				"php5-cli",
+				"php4-cgi",
+				"php5-cgi",
+				"php4-dtc",
+				"php5-dtc",
+				"php4-horde",
+				"php5-horde",
+				"php4-nms",
+				"php5-nms",
+				"mod_php4",
+				"mod_php5"
+			],
+			"range": [
+				{
+					"lt": "4.4.4_1",
+					"ge": "4"
+				},
+				{
+					"lt": "5.1.6_2",
+					"ge": "5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stefan Esser reports:</p>\n\t<blockquote cite=\"http://www.hardened-php.net/advisory_082006.132.html\">\n\t  <p>PHP's open_basedir feature is meant to disallow scripts to\n\t    access files outside a set of configured base directories.\n\t    The checks for this are placed within PHP functions dealing\n\t    with files before the actual open call is performed.</p>\n\t  <p>Obviously there is a little span of time between the check\n\t    and the actual open call. During this time span the checked\n\t    path could have been altered and point to a file that is\n\t    forbidden to be accessed due to open_basedir restrictions.</p>\n\t  <p>Because the open_basedir restrictions often not call PHP\n\t    functions but 3rd party library functions to actually open\n\t    the file it is impossible to close this time span in a\n\t    general way. It would only be possible to close it when PHP\n\t    handles the actual opening on it's own.</p>\n\t  <p>While it seems hard to change the path during this little\n\t    time span it is very simple with the use of the symlink()\n\t    function combined with a little trick. PHP's symlink()\n\t    function ensures that source and target of the symlink\n\t    operation are allowed by open_basedir restrictions (and\n\t    safe_mode). However it is possible to point a symlink to\n\t    any file by the use of mkdir(), unlink() and at least two\n\t    symlinks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.hardened-php.net/advisory_082006.132.html",
+			"http://secunia.com/advisories/22235/"
+		],
+		"cvename": [
+			"CVE-2006-5178"
+		],
+		"bid": [
+			"20326"
+		]
+	},
+	"dates": {
+		"discovery": "2006-10-02",
+		"entry": "2006-10-05",
+		"modified": "2013-04-01"
+	}
 }

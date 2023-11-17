@@ -1,62 +1,62 @@
 {
-  "vid": "889e35f4-f6a0-11e8-82dc-fcaa147e860e",
-  "topic": "moodle -- Login CSRF vulnerability",
-  "affects": [
-    {
-      "name": [
-        "moodle31"
-      ],
-      "range": [
-        {
-          "lt": "3.1.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "moodle33"
-      ],
-      "range": [
-        {
-          "lt": "3.3.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "moodle34"
-      ],
-      "range": [
-        {
-          "lt": "3.4.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "moodle35"
-      ],
-      "range": [
-        {
-          "lt": "3.5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n       <p>moodle reports:</p>\n       <blockquote cite=\"https://moodle.org/mod/forum/discuss.php?d=378731\">\n\t  <p>The login form is not protected by a token to prevent login cross-site\n\t  request forgery.</p>\n       </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://moodle.org/mod/forum/discuss.php?d=378731"
-    ],
-    "cvename": [
-      "CVE-2018-16854"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-06",
-    "entry": "2018-12-03"
-  }
+	"vid": "889e35f4-f6a0-11e8-82dc-fcaa147e860e",
+	"topic": "moodle -- Login CSRF vulnerability",
+	"affects": [
+		{
+			"name": [
+				"moodle31"
+			],
+			"range": [
+				{
+					"lt": "3.1.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"moodle33"
+			],
+			"range": [
+				{
+					"lt": "3.3.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"moodle34"
+			],
+			"range": [
+				{
+					"lt": "3.4.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"moodle35"
+			],
+			"range": [
+				{
+					"lt": "3.5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>moodle reports:</p>\n       <blockquote cite=\"https://moodle.org/mod/forum/discuss.php?d=378731\">\n\t  <p>The login form is not protected by a token to prevent login cross-site\n\t  request forgery.</p>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://moodle.org/mod/forum/discuss.php?d=378731"
+		],
+		"cvename": [
+			"CVE-2018-16854"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-06",
+		"entry": "2018-12-03"
+	}
 }

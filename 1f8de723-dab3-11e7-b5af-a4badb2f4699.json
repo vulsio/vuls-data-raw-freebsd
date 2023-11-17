@@ -1,46 +1,46 @@
 {
-  "vid": "1f8de723-dab3-11e7-b5af-a4badb2f4699",
-  "topic": "FreeBSD -- WPA2 protocol vulnerability",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.1_2",
-          "ge": "11.1"
-        },
-        {
-          "lt": "11.0_13",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.4_1",
-          "ge": "10.4"
-        },
-        {
-          "lt": "10.3_22",
-          "ge": "10.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A vulnerability was found in how a number of implementations\n\tcan be triggered to reconfigure WPA/WPA2/RSN keys (TK, GTK,\n\tor IGTK) by replaying a specific frame that is used to\n\tmanage the keys.</p>\n\t<h1>Impact:</h1>\n\t<p>Such reinstallation of the encryption key can result in\n\ttwo different types of vulnerabilities: disabling replay\n\tprotection and significantly reducing the security of\n\tencryption to the point of allowing frames to be decrypted\n\tor some parts of the keys to be determined by an attacker\n\tdepending on which cipher is used.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2017-1307",
-      "CVE-2017-1308"
-    ],
-    "freebsd_sa": [
-      "SA-17:07.wpa"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-10-16",
-    "entry": "2017-12-06"
-  }
+	"vid": "1f8de723-dab3-11e7-b5af-a4badb2f4699",
+	"topic": "FreeBSD -- WPA2 protocol vulnerability",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.1_2",
+					"ge": "11.1"
+				},
+				{
+					"lt": "11.0_13",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.4_1",
+					"ge": "10.4"
+				},
+				{
+					"lt": "10.3_22",
+					"ge": "10.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A vulnerability was found in how a number of implementations\n\tcan be triggered to reconfigure WPA/WPA2/RSN keys (TK, GTK,\n\tor IGTK) by replaying a specific frame that is used to\n\tmanage the keys.</p>\n\t<h1>Impact:</h1>\n\t<p>Such reinstallation of the encryption key can result in\n\ttwo different types of vulnerabilities: disabling replay\n\tprotection and significantly reducing the security of\n\tencryption to the point of allowing frames to be decrypted\n\tor some parts of the keys to be determined by an attacker\n\tdepending on which cipher is used.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2017-1307",
+			"CVE-2017-1308"
+		],
+		"freebsd_sa": [
+			"SA-17:07.wpa"
+		]
+	},
+	"dates": {
+		"discovery": "2017-10-16",
+		"entry": "2017-12-06"
+	}
 }

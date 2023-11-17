@@ -1,33 +1,33 @@
 {
-  "vid": "3cb88bb2-67a6-11d8-80e3-0020ed76ef5a",
-  "topic": "mailman XSS in admin script",
-  "affects": [
-    {
-      "name": [
-        "mailman"
-      ],
-      "range": [
-        {
-          "lt": "2.1.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Dirk Mueller reports:</p>\n\t  <blockquote><p>I've found a cross-site scripting\n\t   vulnerability in the admin interface of mailman 2.1.3 that\n\t   allows, under certain circumstances, for anyone to retrieve\n\t   the (valid) session cookie.</p></blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://mail.python.org/pipermail/mailman-announce/2003-December/000066.html",
-      "http://xforce.iss.net/xforce/xfdb/14121"
-    ],
-    "cvename": [
-      "CVE-2003-0965"
-    ]
-  },
-  "dates": {
-    "discovery": "2003-12-31",
-    "entry": "2004-02-25"
-  }
+	"vid": "3cb88bb2-67a6-11d8-80e3-0020ed76ef5a",
+	"topic": "mailman XSS in admin script",
+	"affects": [
+		{
+			"name": [
+				"mailman"
+			],
+			"range": [
+				{
+					"lt": "2.1.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Dirk Mueller reports:</p>\n\t  <blockquote><p>I've found a cross-site scripting\n\t   vulnerability in the admin interface of mailman 2.1.3 that\n\t   allows, under certain circumstances, for anyone to retrieve\n\t   the (valid) session cookie.</p></blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://mail.python.org/pipermail/mailman-announce/2003-December/000066.html",
+			"http://xforce.iss.net/xforce/xfdb/14121"
+		],
+		"cvename": [
+			"CVE-2003-0965"
+		]
+	},
+	"dates": {
+		"discovery": "2003-12-31",
+		"entry": "2004-02-25"
+	}
 }

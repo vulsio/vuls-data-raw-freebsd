@@ -1,36 +1,36 @@
 {
-  "vid": "9ee72858-4159-11e5-93ad-002590263bf5",
-  "topic": "froxlor -- database password information leak",
-  "affects": [
-    {
-      "name": [
-        "froxlor"
-      ],
-      "range": [
-        {
-          "lt": "0.9.33.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>oss-security-list@demlak.de reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/238\">\n\t  <p>An unauthenticated remote attacker is able to get the database\n\t    password via webaccess due to wrong file permissions of the /logs/\n\t    folder in froxlor version 0.9.33.1 and earlier. The plain SQL\n\t    password and username may be stored in the /logs/sql-error.log file.\n\t    This directory is publicly reachable under the default\n\t    configuration/setup.</p>\n\t</blockquote>\n\t<p>Note that froxlor 0.9.33.2 prevents future logging of passwords but\n\t  does not retroactively remove passwords already logged.  Michael\n\t  Kaufmann, the Froxlor lead developer reports:</p>\n\t<blockquote cite=\"http://forum.froxlor.org/index.php/topic/13054-important-bugfix-release-09332/#entry30025\">\n\t  <p>Removing all .log files from the directory should do the job,\n\t    alternatively just use the class.ConfigIO.php from Github</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2015/q3/238",
-      "https://forum.froxlor.org/index.php/topic/13054-important-bugfix-release-09332/"
-    ],
-    "cvename": [
-      "CVE-2015-5959"
-    ],
-    "freebsd_pr": [
-      "ports/202262"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-07-29",
-    "entry": "2015-08-13"
-  }
+	"vid": "9ee72858-4159-11e5-93ad-002590263bf5",
+	"topic": "froxlor -- database password information leak",
+	"affects": [
+		{
+			"name": [
+				"froxlor"
+			],
+			"range": [
+				{
+					"lt": "0.9.33.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>oss-security-list@demlak.de reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/238\">\n\t  <p>An unauthenticated remote attacker is able to get the database\n\t    password via webaccess due to wrong file permissions of the /logs/\n\t    folder in froxlor version 0.9.33.1 and earlier. The plain SQL\n\t    password and username may be stored in the /logs/sql-error.log file.\n\t    This directory is publicly reachable under the default\n\t    configuration/setup.</p>\n\t</blockquote>\n\t<p>Note that froxlor 0.9.33.2 prevents future logging of passwords but\n\t  does not retroactively remove passwords already logged.  Michael\n\t  Kaufmann, the Froxlor lead developer reports:</p>\n\t<blockquote cite=\"http://forum.froxlor.org/index.php/topic/13054-important-bugfix-release-09332/#entry30025\">\n\t  <p>Removing all .log files from the directory should do the job,\n\t    alternatively just use the class.ConfigIO.php from Github</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2015/q3/238",
+			"https://forum.froxlor.org/index.php/topic/13054-important-bugfix-release-09332/"
+		],
+		"cvename": [
+			"CVE-2015-5959"
+		],
+		"freebsd_pr": [
+			"ports/202262"
+		]
+	},
+	"dates": {
+		"discovery": "2015-07-29",
+		"entry": "2015-08-13"
+	}
 }

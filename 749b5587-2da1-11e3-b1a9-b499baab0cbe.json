@@ -1,33 +1,33 @@
 {
-  "vid": "749b5587-2da1-11e3-b1a9-b499baab0cbe",
-  "topic": "gnupg -- possible infinite recursion in the compressed packet parser",
-  "affects": [
-    {
-      "name": [
-        "gnupg"
-      ],
-      "range": [
-        {
-          "lt": "1.4.15"
-        },
-        {
-          "lt": "2.0.22",
-          "ge": "2.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Werner Koch reports:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000333.html\">\n\t  <p>Special crafted input data may be used to cause a denial of service\nagainst GPG (GnuPG's OpenPGP part) and some other OpenPGP\nimplementations.  All systems using GPG to process incoming data are\naffected..</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2013-4402"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-10-05",
-    "entry": "2013-10-05"
-  }
+	"vid": "749b5587-2da1-11e3-b1a9-b499baab0cbe",
+	"topic": "gnupg -- possible infinite recursion in the compressed packet parser",
+	"affects": [
+		{
+			"name": [
+				"gnupg"
+			],
+			"range": [
+				{
+					"lt": "1.4.15"
+				},
+				{
+					"lt": "2.0.22",
+					"ge": "2.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Werner Koch reports:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000333.html\">\n\t  <p>Special crafted input data may be used to cause a denial of service\nagainst GPG (GnuPG's OpenPGP part) and some other OpenPGP\nimplementations.  All systems using GPG to process incoming data are\naffected..</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2013-4402"
+		]
+	},
+	"dates": {
+		"discovery": "2013-10-05",
+		"entry": "2013-10-05"
+	}
 }

@@ -1,95 +1,95 @@
 {
-  "vid": "fdbe9aec-118b-11ee-908a-6c3be5272acd",
-  "topic": "Grafana -- Account takeover / authentication bypass",
-  "affects": [
-    {
-      "name": [
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "8.5.27",
-          "ge": "6.7.0"
-        },
-        {
-          "lt": "9.2.20",
-          "ge": "9.0.0"
-        },
-        {
-          "lt": "9.3.16",
-          "ge": "9.3.0"
-        },
-        {
-          "lt": "9.4.13",
-          "ge": "9.4.0"
-        },
-        {
-          "lt": "9.5.5",
-          "ge": "9.5.0"
-        },
-        {
-          "lt": "10.0.1",
-          "ge": "10.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana8"
-      ],
-      "range": [
-        {
-          "lt": "8.5.27"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.2.20"
-        },
-        {
-          "lt": "9.3.16",
-          "ge": "9.3.0"
-        },
-        {
-          "lt": "9.4.13",
-          "ge": "9.4.0"
-        },
-        {
-          "lt": "9.5.5",
-          "ge": "9.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana10"
-      ],
-      "range": [
-        {
-          "lt": "10.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/06/22/grafana-security-release-for-cve-2023-3128/\">\n\t  <p>Grafana validates Azure Active Directory accounts based on the email claim.\n\t  On Azure AD, the profile email field is not unique across Azure AD tenants.\n\t  This can enable a Grafana account takeover and authentication bypass when\n\t  Azure AD OAuth is configured with a multi-tenant Azure AD OAuth application.\n\t  </p>\n\t  <p>The CVSS score for this vulnerability is 9.4 Critical.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://grafana.com/security/security-advisories/cve-2023-3128"
-    ],
-    "cvename": [
-      "CVE-2023-3128"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-06-22",
-    "entry": "2023-06-23"
-  }
+	"vid": "fdbe9aec-118b-11ee-908a-6c3be5272acd",
+	"topic": "Grafana -- Account takeover / authentication bypass",
+	"affects": [
+		{
+			"name": [
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "8.5.27",
+					"ge": "6.7.0"
+				},
+				{
+					"lt": "9.2.20",
+					"ge": "9.0.0"
+				},
+				{
+					"lt": "9.3.16",
+					"ge": "9.3.0"
+				},
+				{
+					"lt": "9.4.13",
+					"ge": "9.4.0"
+				},
+				{
+					"lt": "9.5.5",
+					"ge": "9.5.0"
+				},
+				{
+					"lt": "10.0.1",
+					"ge": "10.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana8"
+			],
+			"range": [
+				{
+					"lt": "8.5.27"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.2.20"
+				},
+				{
+					"lt": "9.3.16",
+					"ge": "9.3.0"
+				},
+				{
+					"lt": "9.4.13",
+					"ge": "9.4.0"
+				},
+				{
+					"lt": "9.5.5",
+					"ge": "9.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana10"
+			],
+			"range": [
+				{
+					"lt": "10.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/06/22/grafana-security-release-for-cve-2023-3128/\">\n\t  <p>Grafana validates Azure Active Directory accounts based on the email claim.\n\t  On Azure AD, the profile email field is not unique across Azure AD tenants.\n\t  This can enable a Grafana account takeover and authentication bypass when\n\t  Azure AD OAuth is configured with a multi-tenant Azure AD OAuth application.\n\t  </p>\n\t  <p>The CVSS score for this vulnerability is 9.4 Critical.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://grafana.com/security/security-advisories/cve-2023-3128"
+		],
+		"cvename": [
+			"CVE-2023-3128"
+		]
+	},
+	"dates": {
+		"discovery": "2023-06-22",
+		"entry": "2023-06-23"
+	}
 }

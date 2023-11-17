@@ -1,33 +1,33 @@
 {
-  "vid": "4d4caee0-b939-11dd-a578-0030843d3802",
-  "topic": "streamripper -- multiple buffer overflows",
-  "affects": [
-    {
-      "name": [
-        "streamripper"
-      ],
-      "range": [
-        {
-          "lt": "1.64.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/secunia_research/2008-50/\">\n\t  <p>A boundary error exists within http_parse_sc_header() in lib/http.c\n\t    when parsing an overly long HTTP header starting with \"Zwitterion v\".</p>\n\t  <p>A boundary error exists within http_get_pls() in lib/http.c when\n\t    parsing a specially crafted pls playlist containing an overly long\n\t    entry.</p>\n\t  <p>A boundary error exists within http_get_m3u() in lib/http.c when\n\t    parsing a specially crafted m3u playlist containing an overly long\n\t    \"File\" entry.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/secunia_research/2008-50/",
-      "http://streamripper.cvs.sourceforge.net/viewvc/streamripper/sripper_1x/CHANGES?revision=1.196"
-    ],
-    "cvename": [
-      "CVE-2008-4829"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-11-05",
-    "entry": "2008-11-23"
-  }
+	"vid": "4d4caee0-b939-11dd-a578-0030843d3802",
+	"topic": "streamripper -- multiple buffer overflows",
+	"affects": [
+		{
+			"name": [
+				"streamripper"
+			],
+			"range": [
+				{
+					"lt": "1.64.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/secunia_research/2008-50/\">\n\t  <p>A boundary error exists within http_parse_sc_header() in lib/http.c\n\t    when parsing an overly long HTTP header starting with \"Zwitterion v\".</p>\n\t  <p>A boundary error exists within http_get_pls() in lib/http.c when\n\t    parsing a specially crafted pls playlist containing an overly long\n\t    entry.</p>\n\t  <p>A boundary error exists within http_get_m3u() in lib/http.c when\n\t    parsing a specially crafted m3u playlist containing an overly long\n\t    \"File\" entry.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/secunia_research/2008-50/",
+			"http://streamripper.cvs.sourceforge.net/viewvc/streamripper/sripper_1x/CHANGES?revision=1.196"
+		],
+		"cvename": [
+			"CVE-2008-4829"
+		]
+	},
+	"dates": {
+		"discovery": "2008-11-05",
+		"entry": "2008-11-23"
+	}
 }

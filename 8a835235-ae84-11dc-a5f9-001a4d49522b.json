@@ -1,51 +1,51 @@
 {
-  "vid": "8a835235-ae84-11dc-a5f9-001a4d49522b",
-  "topic": "wireshark -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "wireshark",
-        "wireshark-lite",
-        "ethereal",
-        "ethereal-lite",
-        "tethereal",
-        "tethereal-lite"
-      ],
-      "range": [
-        {
-          "lt": "0.99.7",
-          "ge": "0.8.16"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Wireshark team reports of multiple vulnerabilities:</p>\n\t<blockquote cite=\"http://www.wireshark.org/security/wnpa-sec-2007-03.html\">\n\t  <ul>\n\t    <li>Wireshark could crash when reading an MP3 file.</li>\n\t    <li>Beyond Security discovered that Wireshark could loop\n\t      excessively while reading a malformed DNP packet.</li>\n\t    <li>Stefan Esser discovered a buffer overflow in the SSL\n\t      dissector.</li>\n\t    <li>The ANSI MAP dissector could be susceptible to a\n\t      buffer overflow on some platforms.</li>\n\t    <li>The Firebird/Interbase dissector could go into an\n\t      infinite loop or crash.</li>\n\t    <li>The NCP dissector could cause a crash.</li>\n\t    <li>The HTTP dissector could crash on some systems while\n\t      decoding chunked messages.</li>\n\t    <li>The MEGACO dissector could enter a large loop and\n\t      consume system resources.</li>\n\t    <li>The DCP ETSI dissector could enter a large loop and\n\t      consume system resources.</li>\n\t    <li>Fabiodds discovered a buffer overflow in the iSeries\n\t      (OS/400) Communication trace file parser.</li>\n\t    <li>The PPP dissector could overflow a buffer.</li>\n\t    <li>The Bluetooth SDP dissector could go into an infinite\n\t      loop.</li>\n\t    <li>A malformed RPC Portmap packet could cause a\n\t      crash.</li>\n\t    <li>The IPv6 dissector could loop excessively.</li>\n\t    <li>The USB dissector could loop excessively or crash.</li>\n\t    <li>The SMB dissector could crash.</li>\n\t    <li>The RPL dissector could go into an infinite loop.</li>\n\t    <li>The WiMAX dissector could crash due to unaligned\n\t      access on some platforms.</li>\n\t    <li>The CIP dissector could attempt to allocate a huge\n\t      amount of memory and crash.</li>\n\t  </ul>\n\n\t  <h2>Impact</h2>\n\n\t  <p>It may be possible to make Wireshark or Ethereal crash or\n\t    use up available memory by injecting a purposefully\n\t    malformed packet onto the wire or by convincing someone to\n\t    read a malformed packet trace file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.wireshark.org/security/wnpa-sec-2007-03.html"
-    ],
-    "cvename": [
-      "CVE-2007-6112",
-      "CVE-2007-6113",
-      "CVE-2007-6114",
-      "CVE-2007-6115",
-      "CVE-2007-6117",
-      "CVE-2007-6118",
-      "CVE-2007-6120",
-      "CVE-2007-6121",
-      "CVE-2007-6438",
-      "CVE-2007-6439",
-      "CVE-2007-6441",
-      "CVE-2007-6450",
-      "CVE-2007-6451"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-12-19",
-    "entry": "2007-12-19",
-    "modified": "2007-12-22"
-  }
+	"vid": "8a835235-ae84-11dc-a5f9-001a4d49522b",
+	"topic": "wireshark -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"wireshark",
+				"wireshark-lite",
+				"ethereal",
+				"ethereal-lite",
+				"tethereal",
+				"tethereal-lite"
+			],
+			"range": [
+				{
+					"lt": "0.99.7",
+					"ge": "0.8.16"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Wireshark team reports of multiple vulnerabilities:</p>\n\t<blockquote cite=\"http://www.wireshark.org/security/wnpa-sec-2007-03.html\">\n\t  <ul>\n\t    <li>Wireshark could crash when reading an MP3 file.</li>\n\t    <li>Beyond Security discovered that Wireshark could loop\n\t      excessively while reading a malformed DNP packet.</li>\n\t    <li>Stefan Esser discovered a buffer overflow in the SSL\n\t      dissector.</li>\n\t    <li>The ANSI MAP dissector could be susceptible to a\n\t      buffer overflow on some platforms.</li>\n\t    <li>The Firebird/Interbase dissector could go into an\n\t      infinite loop or crash.</li>\n\t    <li>The NCP dissector could cause a crash.</li>\n\t    <li>The HTTP dissector could crash on some systems while\n\t      decoding chunked messages.</li>\n\t    <li>The MEGACO dissector could enter a large loop and\n\t      consume system resources.</li>\n\t    <li>The DCP ETSI dissector could enter a large loop and\n\t      consume system resources.</li>\n\t    <li>Fabiodds discovered a buffer overflow in the iSeries\n\t      (OS/400) Communication trace file parser.</li>\n\t    <li>The PPP dissector could overflow a buffer.</li>\n\t    <li>The Bluetooth SDP dissector could go into an infinite\n\t      loop.</li>\n\t    <li>A malformed RPC Portmap packet could cause a\n\t      crash.</li>\n\t    <li>The IPv6 dissector could loop excessively.</li>\n\t    <li>The USB dissector could loop excessively or crash.</li>\n\t    <li>The SMB dissector could crash.</li>\n\t    <li>The RPL dissector could go into an infinite loop.</li>\n\t    <li>The WiMAX dissector could crash due to unaligned\n\t      access on some platforms.</li>\n\t    <li>The CIP dissector could attempt to allocate a huge\n\t      amount of memory and crash.</li>\n\t  </ul>\n\n\t  <h2>Impact</h2>\n\n\t  <p>It may be possible to make Wireshark or Ethereal crash or\n\t    use up available memory by injecting a purposefully\n\t    malformed packet onto the wire or by convincing someone to\n\t    read a malformed packet trace file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.wireshark.org/security/wnpa-sec-2007-03.html"
+		],
+		"cvename": [
+			"CVE-2007-6112",
+			"CVE-2007-6113",
+			"CVE-2007-6114",
+			"CVE-2007-6115",
+			"CVE-2007-6117",
+			"CVE-2007-6118",
+			"CVE-2007-6120",
+			"CVE-2007-6121",
+			"CVE-2007-6438",
+			"CVE-2007-6439",
+			"CVE-2007-6441",
+			"CVE-2007-6450",
+			"CVE-2007-6451"
+		]
+	},
+	"dates": {
+		"discovery": "2007-12-19",
+		"entry": "2007-12-19",
+		"modified": "2007-12-22"
+	}
 }

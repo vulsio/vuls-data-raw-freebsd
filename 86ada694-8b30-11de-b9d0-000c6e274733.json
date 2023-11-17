@@ -1,32 +1,32 @@
 {
-  "vid": "86ada694-8b30-11de-b9d0-000c6e274733",
-  "topic": "memcached -- memcached stats maps Information Disclosure Weakness",
-  "affects": [
-    {
-      "name": [
-        "memcached"
-      ],
-      "range": [
-        {
-          "lt": "1.2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/34915/\">\n\t  <p>A weakness has been reported in memcached, which can be exploited\n\t    by malicious people to disclose system information.</p>\n\t  <p>The weakness is caused due to the application disclosing the\n\t    content of /proc/self/maps if a stats maps command is received.\n\t    This can be exploited to disclose e.g. the addresses of allocated\n\t    memory regions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/34915/"
-    ],
-    "cvename": [
-      "CVE-2009-1255"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-04-29",
-    "entry": "2009-08-17"
-  }
+	"vid": "86ada694-8b30-11de-b9d0-000c6e274733",
+	"topic": "memcached -- memcached stats maps Information Disclosure Weakness",
+	"affects": [
+		{
+			"name": [
+				"memcached"
+			],
+			"range": [
+				{
+					"lt": "1.2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/34915/\">\n\t  <p>A weakness has been reported in memcached, which can be exploited\n\t    by malicious people to disclose system information.</p>\n\t  <p>The weakness is caused due to the application disclosing the\n\t    content of /proc/self/maps if a stats maps command is received.\n\t    This can be exploited to disclose e.g. the addresses of allocated\n\t    memory regions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/34915/"
+		],
+		"cvename": [
+			"CVE-2009-1255"
+		]
+	},
+	"dates": {
+		"discovery": "2009-04-29",
+		"entry": "2009-08-17"
+	}
 }

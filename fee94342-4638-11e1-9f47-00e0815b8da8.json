@@ -1,45 +1,45 @@
 {
-  "vid": "fee94342-4638-11e1-9f47-00e0815b8da8",
-  "topic": "FreeBSD -- errors handling corrupt compress file in compress(1) and gzip(1)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.3_7",
-          "ge": "7.3"
-        },
-        {
-          "lt": "7.4_3",
-          "ge": "7.4"
-        },
-        {
-          "lt": "8.1_5",
-          "ge": "8.1"
-        },
-        {
-          "lt": "8.2_3",
-          "ge": "8.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-11:04.compress.asc\">\n\t<h1>Problem Description:</h1>\n\t<p>The code used to decompress a file created by compress(1) does not\n\t  do sufficient boundary checks on compressed code words, allowing\n\t  reference beyond the decompression table, which may result in a\n\t  stack overflow or an infinite loop when the decompressor encounters\n\t  a corrupted file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2011-2895"
-    ],
-    "freebsd_sa": [
-      "SA-11:04.compress"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-09-28",
-    "entry": "2012-01-29"
-  }
+	"vid": "fee94342-4638-11e1-9f47-00e0815b8da8",
+	"topic": "FreeBSD -- errors handling corrupt compress file in compress(1) and gzip(1)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.3_7",
+					"ge": "7.3"
+				},
+				{
+					"lt": "7.4_3",
+					"ge": "7.4"
+				},
+				{
+					"lt": "8.1_5",
+					"ge": "8.1"
+				},
+				{
+					"lt": "8.2_3",
+					"ge": "8.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-11:04.compress.asc\">\n\t<h1>Problem Description:</h1>\n\t<p>The code used to decompress a file created by compress(1) does not\n\t  do sufficient boundary checks on compressed code words, allowing\n\t  reference beyond the decompression table, which may result in a\n\t  stack overflow or an infinite loop when the decompressor encounters\n\t  a corrupted file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2011-2895"
+		],
+		"freebsd_sa": [
+			"SA-11:04.compress"
+		]
+	},
+	"dates": {
+		"discovery": "2011-09-28",
+		"entry": "2012-01-29"
+	}
 }

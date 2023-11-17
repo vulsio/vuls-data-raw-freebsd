@@ -1,34 +1,34 @@
 {
-  "vid": "d44129d6-b22e-4e9c-b200-6a46e8bd3e60",
-  "topic": "libsamplerate -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libsamplerate",
-        "linux-c6-libsamplerate",
-        "linux-c7-libsamplerate"
-      ],
-      "range": [
-        {
-          "lt": "0.1.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-7697\">\n\t  <p>In libsamplerate before 0.1.9, a buffer over-read\n\t    occurs in the calc_output_single function in src_sinc.c\n\t    via a crafted audio file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/erikd/libsamplerate/commit/c3b66186656d"
-    ],
-    "cvename": [
-      "CVE-2017-7697"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-11",
-    "entry": "2017-04-20"
-  }
+	"vid": "d44129d6-b22e-4e9c-b200-6a46e8bd3e60",
+	"topic": "libsamplerate -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libsamplerate",
+				"linux-c6-libsamplerate",
+				"linux-c7-libsamplerate"
+			],
+			"range": [
+				{
+					"lt": "0.1.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-7697\">\n\t  <p>In libsamplerate before 0.1.9, a buffer over-read\n\t    occurs in the calc_output_single function in src_sinc.c\n\t    via a crafted audio file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/erikd/libsamplerate/commit/c3b66186656d"
+		],
+		"cvename": [
+			"CVE-2017-7697"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-11",
+		"entry": "2017-04-20"
+	}
 }

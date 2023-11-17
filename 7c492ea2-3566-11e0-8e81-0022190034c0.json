@@ -1,47 +1,47 @@
 {
-  "vid": "7c492ea2-3566-11e0-8e81-0022190034c0",
-  "topic": "plone -- Remote Security Bypass",
-  "affects": [
-    {
-      "name": [
-        "plone"
-      ],
-      "range": [
-        {
-          "lt": "3",
-          "ge": "2.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "plone3"
-      ],
-      "range": [
-        {
-          "ge": "3",
-          "le": "3.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Plone developer reports:</p>\n\t<blockquote cite=\"http://plone.org/products/plone/security/advisories/cve-2011-0720\">\n\t  <p>This is an escalation of privileges attack that can be used by\n\t    anonymous users to gain access to a Plone site's administration\n\t    controls, view unpublished content, create new content and modify a\n\t    site's skin.  The sandbox protecting access to the underlying\n\t    system is still in place, and it does not grant access to other\n\t    applications running on the same Zope instance.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://plone.org/products/plone/security/advisories/cve-2011-0720"
-    ],
-    "cvename": [
-      "CVE-2011-0720"
-    ],
-    "bid": [
-      "46102"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-02-02",
-    "entry": "2011-02-10"
-  }
+	"vid": "7c492ea2-3566-11e0-8e81-0022190034c0",
+	"topic": "plone -- Remote Security Bypass",
+	"affects": [
+		{
+			"name": [
+				"plone"
+			],
+			"range": [
+				{
+					"lt": "3",
+					"ge": "2.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"plone3"
+			],
+			"range": [
+				{
+					"ge": "3",
+					"le": "3.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Plone developer reports:</p>\n\t<blockquote cite=\"http://plone.org/products/plone/security/advisories/cve-2011-0720\">\n\t  <p>This is an escalation of privileges attack that can be used by\n\t    anonymous users to gain access to a Plone site's administration\n\t    controls, view unpublished content, create new content and modify a\n\t    site's skin.  The sandbox protecting access to the underlying\n\t    system is still in place, and it does not grant access to other\n\t    applications running on the same Zope instance.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://plone.org/products/plone/security/advisories/cve-2011-0720"
+		],
+		"cvename": [
+			"CVE-2011-0720"
+		],
+		"bid": [
+			"46102"
+		]
+	},
+	"dates": {
+		"discovery": "2011-02-02",
+		"entry": "2011-02-10"
+	}
 }

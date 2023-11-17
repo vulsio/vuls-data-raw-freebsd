@@ -1,296 +1,296 @@
 {
-  "vid": "b6402385-533b-11e6-a7bd-14dae9d210b8",
-  "topic": "php -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php55"
-      ],
-      "range": [
-        {
-          "lt": "5.5.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56"
-      ],
-      "range": [
-        {
-          "lt": "5.6.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-curl"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php55-bz2"
-      ],
-      "range": [
-        {
-          "lt": "5.5.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-bz2"
-      ],
-      "range": [
-        {
-          "lt": "5.6.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-bz2"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php55-exif"
-      ],
-      "range": [
-        {
-          "lt": "5.5.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-exif"
-      ],
-      "range": [
-        {
-          "lt": "5.6.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-exif"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php55-gd"
-      ],
-      "range": [
-        {
-          "lt": "5.5.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-gd"
-      ],
-      "range": [
-        {
-          "lt": "5.6.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-gd"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-mcrypt"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php55-odbc"
-      ],
-      "range": [
-        {
-          "lt": "5.5.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-odbc"
-      ],
-      "range": [
-        {
-          "lt": "5.6.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-odbc"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php55-snmp"
-      ],
-      "range": [
-        {
-          "lt": "5.5.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-snmp"
-      ],
-      "range": [
-        {
-          "lt": "5.6.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-snmp"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php55-xmlrpc"
-      ],
-      "range": [
-        {
-          "lt": "5.5.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-xmlrpc"
-      ],
-      "range": [
-        {
-          "lt": "5.6.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-xmlrpc"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php55-zip"
-      ],
-      "range": [
-        {
-          "lt": "5.5.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-zip"
-      ],
-      "range": [
-        {
-          "lt": "5.6.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-zip"
-      ],
-      "range": [
-        {
-          "lt": "7.0.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://www.php.net/ChangeLog-5.php#5.5.38\">\n\t  <ul>\n\t    <li><p>Fixed bug #69975 (PHP segfaults when accessing nvarchar(max) defined columns)</p></li>\n\t    <li><p>Fixed bug #72479 (Use After Free Vulnerability in SNMP with GC and unserialize()).</p></li>\n\t    <li><p>Fixed bug #72512 (gdImageTrueColorToPaletteBody allows arbitrary write/read access).</p></li>\n\t    <li><p>Fixed bug #72519 (imagegif/output out-of-bounds access).</p></li>\n\t    <li><p>Fixed bug #72520 (Stack-based buffer overflow vulnerability in php_stream_zip_opener).</p></li>\n\t    <li><p>Fixed bug #72533 (locale_accept_from_http out-of-bounds access).</p></li>\n\t    <li><p>Fixed bug #72541 (size_t overflow lead to heap corruption).</p></li>\n\t    <li><p>Fixed bug #72551, bug #72552 (Incorrect casting from size_t to int lead to heap overflow in mdecrypt_generic).</p></li>\n\t    <li><p>Fixed bug #72558 (Integer overflow error within _gdContributionsAlloc()).</p></li>\n\t    <li><p>Fixed bug #72573 (HTTP_PROXY is improperly trusted by some PHP libraries and applications).</p></li>\n\t    <li><p>Fixed bug #72603 (Out of bound read in exif_process_IFD_in_MAKERNOTE).</p></li>\n\t    <li><p>Fixed bug #72606 (heap-buffer-overflow (write) simplestring_addn simplestring.c).</p></li>\n\t    <li><p>Fixed bug #72613 (Inadequate error handling in bzread()).</p></li>\n\t    <li><p>Fixed bug #72618 (NULL Pointer Dereference in exif_process_user_comment).</p></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.php.net/ChangeLog-5.php#5.5.38",
-      "http://www.php.net/ChangeLog-5.php#5.6.24",
-      "http://www.php.net/ChangeLog-7.php#7.0.8",
-      "http://seclists.org/oss-sec/2016/q3/121"
-    ],
-    "cvename": [
-      "CVE-2015-8879",
-      "CVE-2016-5385",
-      "CVE-2016-5399",
-      "CVE-2016-6288",
-      "CVE-2016-6289",
-      "CVE-2016-6290",
-      "CVE-2016-6291",
-      "CVE-2016-6292",
-      "CVE-2016-6294",
-      "CVE-2016-6295",
-      "CVE-2016-6296",
-      "CVE-2016-6297"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-07-21",
-    "entry": "2016-07-26"
-  }
+	"vid": "b6402385-533b-11e6-a7bd-14dae9d210b8",
+	"topic": "php -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php55"
+			],
+			"range": [
+				{
+					"lt": "5.5.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56"
+			],
+			"range": [
+				{
+					"lt": "5.6.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-curl"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php55-bz2"
+			],
+			"range": [
+				{
+					"lt": "5.5.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-bz2"
+			],
+			"range": [
+				{
+					"lt": "5.6.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-bz2"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php55-exif"
+			],
+			"range": [
+				{
+					"lt": "5.5.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-exif"
+			],
+			"range": [
+				{
+					"lt": "5.6.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-exif"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php55-gd"
+			],
+			"range": [
+				{
+					"lt": "5.5.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-gd"
+			],
+			"range": [
+				{
+					"lt": "5.6.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-gd"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-mcrypt"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php55-odbc"
+			],
+			"range": [
+				{
+					"lt": "5.5.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-odbc"
+			],
+			"range": [
+				{
+					"lt": "5.6.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-odbc"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php55-snmp"
+			],
+			"range": [
+				{
+					"lt": "5.5.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-snmp"
+			],
+			"range": [
+				{
+					"lt": "5.6.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-snmp"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php55-xmlrpc"
+			],
+			"range": [
+				{
+					"lt": "5.5.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-xmlrpc"
+			],
+			"range": [
+				{
+					"lt": "5.6.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-xmlrpc"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"php55-zip"
+			],
+			"range": [
+				{
+					"lt": "5.5.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-zip"
+			],
+			"range": [
+				{
+					"lt": "5.6.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-zip"
+			],
+			"range": [
+				{
+					"lt": "7.0.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://www.php.net/ChangeLog-5.php#5.5.38\">\n\t  <ul>\n\t    <li><p>Fixed bug #69975 (PHP segfaults when accessing nvarchar(max) defined columns)</p></li>\n\t    <li><p>Fixed bug #72479 (Use After Free Vulnerability in SNMP with GC and unserialize()).</p></li>\n\t    <li><p>Fixed bug #72512 (gdImageTrueColorToPaletteBody allows arbitrary write/read access).</p></li>\n\t    <li><p>Fixed bug #72519 (imagegif/output out-of-bounds access).</p></li>\n\t    <li><p>Fixed bug #72520 (Stack-based buffer overflow vulnerability in php_stream_zip_opener).</p></li>\n\t    <li><p>Fixed bug #72533 (locale_accept_from_http out-of-bounds access).</p></li>\n\t    <li><p>Fixed bug #72541 (size_t overflow lead to heap corruption).</p></li>\n\t    <li><p>Fixed bug #72551, bug #72552 (Incorrect casting from size_t to int lead to heap overflow in mdecrypt_generic).</p></li>\n\t    <li><p>Fixed bug #72558 (Integer overflow error within _gdContributionsAlloc()).</p></li>\n\t    <li><p>Fixed bug #72573 (HTTP_PROXY is improperly trusted by some PHP libraries and applications).</p></li>\n\t    <li><p>Fixed bug #72603 (Out of bound read in exif_process_IFD_in_MAKERNOTE).</p></li>\n\t    <li><p>Fixed bug #72606 (heap-buffer-overflow (write) simplestring_addn simplestring.c).</p></li>\n\t    <li><p>Fixed bug #72613 (Inadequate error handling in bzread()).</p></li>\n\t    <li><p>Fixed bug #72618 (NULL Pointer Dereference in exif_process_user_comment).</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.php.net/ChangeLog-5.php#5.5.38",
+			"http://www.php.net/ChangeLog-5.php#5.6.24",
+			"http://www.php.net/ChangeLog-7.php#7.0.8",
+			"http://seclists.org/oss-sec/2016/q3/121"
+		],
+		"cvename": [
+			"CVE-2015-8879",
+			"CVE-2016-5385",
+			"CVE-2016-5399",
+			"CVE-2016-6288",
+			"CVE-2016-6289",
+			"CVE-2016-6290",
+			"CVE-2016-6291",
+			"CVE-2016-6292",
+			"CVE-2016-6294",
+			"CVE-2016-6295",
+			"CVE-2016-6296",
+			"CVE-2016-6297"
+		]
+	},
+	"dates": {
+		"discovery": "2016-07-21",
+		"entry": "2016-07-26"
+	}
 }

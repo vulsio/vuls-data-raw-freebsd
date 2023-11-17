@@ -1,48 +1,48 @@
 {
-  "vid": "046fedd1-bd01-11e5-bbf4-5404a68ad561",
-  "topic": "ffmpeg -- remote attacker can access local files",
-  "affects": [
-    {
-      "name": [
-        "ffmpeg"
-      ],
-      "range": [
-        {
-          "lt": "2.8.5,1",
-          "gt": "2.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mplayer",
-        "mencoder"
-      ],
-      "range": [
-        {
-          "lt": "1.2.r20151219_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Arch Linux reports:</p>\n\t<blockquote cite=\"https://bugs.archlinux.org/task/47738\">\n\t  <p>ffmpeg has a vulnerability in the current version that allows the\n\t    attacker to create a specially crafted video file, downloading which\n\t    will send files from a user PC to a remote attacker server. The\n\t    attack does not even require the user to open that file — for\n\t    example, KDE Dolphin thumbnail generation is enough.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ffmpeg.org/security.html"
-    ],
-    "cvename": [
-      "CVE-2016-1897",
-      "CVE-2016-1898"
-    ],
-    "freebsd_pr": [
-      "ports/206282"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-13",
-    "entry": "2016-01-17"
-  }
+	"vid": "046fedd1-bd01-11e5-bbf4-5404a68ad561",
+	"topic": "ffmpeg -- remote attacker can access local files",
+	"affects": [
+		{
+			"name": [
+				"ffmpeg"
+			],
+			"range": [
+				{
+					"lt": "2.8.5,1",
+					"gt": "2.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mplayer",
+				"mencoder"
+			],
+			"range": [
+				{
+					"lt": "1.2.r20151219_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Arch Linux reports:</p>\n\t<blockquote cite=\"https://bugs.archlinux.org/task/47738\">\n\t  <p>ffmpeg has a vulnerability in the current version that allows the\n\t    attacker to create a specially crafted video file, downloading which\n\t    will send files from a user PC to a remote attacker server. The\n\t    attack does not even require the user to open that file — for\n\t    example, KDE Dolphin thumbnail generation is enough.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ffmpeg.org/security.html"
+		],
+		"cvename": [
+			"CVE-2016-1897",
+			"CVE-2016-1898"
+		],
+		"freebsd_pr": [
+			"ports/206282"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-13",
+		"entry": "2016-01-17"
+	}
 }

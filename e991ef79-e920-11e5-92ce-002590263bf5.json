@@ -1,42 +1,42 @@
 {
-  "vid": "e991ef79-e920-11e5-92ce-002590263bf5",
-  "topic": "php5 -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php55-phar",
-        "php55-wddx"
-      ],
-      "range": [
-        {
-          "lt": "5.5.33"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-phar",
-        "php56-wddx"
-      ],
-      "range": [
-        {
-          "lt": "5.6.19"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PHP Group reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.6.19\">\n\t  <ul><li>Phar:\n\t  <ul>\n\t    <li>Fixed bug #71498 (Out-of-Bound Read in phar_parse_zipfile()).\n\t      </li>\n\t  </ul></li>\n\t  <li>WDDX:\n\t  <ul>\n\t    <li>Fixed bug #71587 (Use-After-Free / Double-Free in WDDX\n\t      Deserialize).</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://php.net/ChangeLog-5.php#5.6.19",
-      "http://php.net/ChangeLog-5.php#5.5.33"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-03",
-    "entry": "2016-03-13"
-  }
+	"vid": "e991ef79-e920-11e5-92ce-002590263bf5",
+	"topic": "php5 -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php55-phar",
+				"php55-wddx"
+			],
+			"range": [
+				{
+					"lt": "5.5.33"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-phar",
+				"php56-wddx"
+			],
+			"range": [
+				{
+					"lt": "5.6.19"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PHP Group reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.6.19\">\n\t  <ul><li>Phar:\n\t  <ul>\n\t    <li>Fixed bug #71498 (Out-of-Bound Read in phar_parse_zipfile()).\n\t      </li>\n\t  </ul></li>\n\t  <li>WDDX:\n\t  <ul>\n\t    <li>Fixed bug #71587 (Use-After-Free / Double-Free in WDDX\n\t      Deserialize).</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://php.net/ChangeLog-5.php#5.6.19",
+			"http://php.net/ChangeLog-5.php#5.5.33"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-03",
+		"entry": "2016-03-13"
+	}
 }

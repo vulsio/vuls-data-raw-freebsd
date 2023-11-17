@@ -1,32 +1,32 @@
 {
-  "vid": "a73aba9a-effe-11e6-ae1b-002590263bf5",
-  "topic": "xen-tools -- oob access in cirrus bitblt copy",
-  "affects": [
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-208.html\">\n\t  <p>When doing bitblt copy backwards, qemu should negate the blit\n\t    width. This avoids an oob access before the start of video\n\t    memory.</p>\n\t  <p>A malicious guest administrator can cause an out of bounds memory\n\t    access, possibly leading to information disclosure or privilege\n\t    escalation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-208.html"
-    ],
-    "cvename": [
-      "CVE-2017-2615"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-02-10",
-    "entry": "2017-02-11"
-  }
+	"vid": "a73aba9a-effe-11e6-ae1b-002590263bf5",
+	"topic": "xen-tools -- oob access in cirrus bitblt copy",
+	"affects": [
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.7.1_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-208.html\">\n\t  <p>When doing bitblt copy backwards, qemu should negate the blit\n\t    width. This avoids an oob access before the start of video\n\t    memory.</p>\n\t  <p>A malicious guest administrator can cause an out of bounds memory\n\t    access, possibly leading to information disclosure or privilege\n\t    escalation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-208.html"
+		],
+		"cvename": [
+			"CVE-2017-2615"
+		]
+	},
+	"dates": {
+		"discovery": "2017-02-10",
+		"entry": "2017-02-11"
+	}
 }

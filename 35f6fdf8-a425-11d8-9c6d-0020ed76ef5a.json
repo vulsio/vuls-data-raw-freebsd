@@ -1,49 +1,49 @@
 {
-  "vid": "35f6fdf8-a425-11d8-9c6d-0020ed76ef5a",
-  "topic": "Cyrus IMAP pre-authentication heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "cyrus-imapd"
-      ],
-      "range": [
-        {
-          "lt": "2.0.17"
-        },
-        {
-          "lt": "2.1.11",
-          "ge": "2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>In December 2002, Timo Sirainen reported:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=103886607825605\">\n\t  <p>Cyrus IMAP server has a remotely exploitable pre-login\n\t    buffer overflow. [...] Note that you don't have to log in\n\t    before exploiting this, and since Cyrus\n\t    runs everything under one UID, it's possible to read every\n\t    user's mail in the system.</p>\n\t</blockquote>\n\t<p>It is unknown whether this vulnerability is exploitable for code\n\t  execution on FreeBSD systems.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2002-1580"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=103886607825605",
-        "msgid": "20021202175606.GA26254@irccrew.org"
-      },
-      {
-        "text": "http://asg.web.cmu.edu/archive/message.php?mailbox=archive.info-cyrus&msg=19349"
-      }
-    ],
-    "bid": [
-      "6298"
-    ],
-    "cert_vu": [
-      "740169"
-    ]
-  },
-  "dates": {
-    "discovery": "2002-12-02",
-    "entry": "2004-05-12",
-    "modified": "2004-06-27"
-  }
+	"vid": "35f6fdf8-a425-11d8-9c6d-0020ed76ef5a",
+	"topic": "Cyrus IMAP pre-authentication heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"cyrus-imapd"
+			],
+			"range": [
+				{
+					"lt": "2.0.17"
+				},
+				{
+					"lt": "2.1.11",
+					"ge": "2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>In December 2002, Timo Sirainen reported:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=103886607825605\">\n\t  <p>Cyrus IMAP server has a remotely exploitable pre-login\n\t    buffer overflow. [...] Note that you don't have to log in\n\t    before exploiting this, and since Cyrus\n\t    runs everything under one UID, it's possible to read every\n\t    user's mail in the system.</p>\n\t</blockquote>\n\t<p>It is unknown whether this vulnerability is exploitable for code\n\t  execution on FreeBSD systems.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2002-1580"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=103886607825605",
+				"msgid": "20021202175606.GA26254@irccrew.org"
+			},
+			{
+				"text": "http://asg.web.cmu.edu/archive/message.php?mailbox=archive.info-cyrus&msg=19349"
+			}
+		],
+		"bid": [
+			"6298"
+		],
+		"cert_vu": [
+			"740169"
+		]
+	},
+	"dates": {
+		"discovery": "2002-12-02",
+		"entry": "2004-05-12",
+		"modified": "2004-06-27"
+	}
 }

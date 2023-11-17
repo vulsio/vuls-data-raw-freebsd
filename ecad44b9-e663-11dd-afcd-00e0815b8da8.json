@@ -1,38 +1,38 @@
 {
-  "vid": "ecad44b9-e663-11dd-afcd-00e0815b8da8",
-  "topic": "git -- gitweb privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "git"
-      ],
-      "range": [
-        {
-          "lt": "1.6.0.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Git maintainers report:</p>\n\t<blockquote cite=\"http://marc.info/?l=git&amp;m=122975564100860&amp;w=2\">\n\t  <p>gitweb has a possible local privilege escalation\n\t    bug that allows a malicious repository owner to run a command\n\t    of his choice by specifying diff.external configuration\n\t    variable in his repository and running a crafted gitweb\n\t    query.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kernel.org/pub/software/scm/git/docs/RelNotes-1.6.0.6.txt"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.info/?l=git&m=122975564100860&w=2",
-        "msgid": "7vhc4z1gys.fsf@gitster.siamese.dyndns.org"
-      }
-    ],
-    "bid": [
-      "32967"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-12-20",
-    "entry": "2009-01-19"
-  }
+	"vid": "ecad44b9-e663-11dd-afcd-00e0815b8da8",
+	"topic": "git -- gitweb privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"git"
+			],
+			"range": [
+				{
+					"lt": "1.6.0.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Git maintainers report:</p>\n\t<blockquote cite=\"http://marc.info/?l=git&amp;m=122975564100860&amp;w=2\">\n\t  <p>gitweb has a possible local privilege escalation\n\t    bug that allows a malicious repository owner to run a command\n\t    of his choice by specifying diff.external configuration\n\t    variable in his repository and running a crafted gitweb\n\t    query.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kernel.org/pub/software/scm/git/docs/RelNotes-1.6.0.6.txt"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.info/?l=git&m=122975564100860&w=2",
+				"msgid": "7vhc4z1gys.fsf@gitster.siamese.dyndns.org"
+			}
+		],
+		"bid": [
+			"32967"
+		]
+	},
+	"dates": {
+		"discovery": "2008-12-20",
+		"entry": "2009-01-19"
+	}
 }

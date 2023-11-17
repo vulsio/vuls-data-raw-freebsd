@@ -1,43 +1,43 @@
 {
-  "vid": "cc9043cf-7f7a-426e-b2cc-8d1980618113",
-  "topic": "ruby -- Heap Overflow in Floating Point Parsing",
-  "affects": [
-    {
-      "name": [
-        "ruby19"
-      ],
-      "range": [
-        {
-          "lt": "1.9.3.484,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby20"
-      ],
-      "range": [
-        {
-          "lt": "2.0.0.353,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ruby developers report:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2013/11/22/heap-overflow-in-floating-point-parsing-cve-2013-4164/\">\n\t  <p>Any time a string is converted to a floating point value, a\n\t    specially crafted string can cause a heap overflow. This can lead\n\t    to a denial of service attack via segmentation faults and possibly\n\t    arbitrary code execution. Any program that converts input of\n\t    unknown origin to floating point values (especially common when\n\t    accepting JSON) are vulnerable.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2013/11/22/ruby-1-9-3-p484-is-released/",
-      "https://www.ruby-lang.org/en/news/2013/11/22/ruby-2-0-0-p353-is-released/"
-    ],
-    "cvename": [
-      "CVE-2013-4164"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-11-22",
-    "entry": "2013-11-23"
-  }
+	"vid": "cc9043cf-7f7a-426e-b2cc-8d1980618113",
+	"topic": "ruby -- Heap Overflow in Floating Point Parsing",
+	"affects": [
+		{
+			"name": [
+				"ruby19"
+			],
+			"range": [
+				{
+					"lt": "1.9.3.484,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby20"
+			],
+			"range": [
+				{
+					"lt": "2.0.0.353,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ruby developers report:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2013/11/22/heap-overflow-in-floating-point-parsing-cve-2013-4164/\">\n\t  <p>Any time a string is converted to a floating point value, a\n\t    specially crafted string can cause a heap overflow. This can lead\n\t    to a denial of service attack via segmentation faults and possibly\n\t    arbitrary code execution. Any program that converts input of\n\t    unknown origin to floating point values (especially common when\n\t    accepting JSON) are vulnerable.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2013/11/22/ruby-1-9-3-p484-is-released/",
+			"https://www.ruby-lang.org/en/news/2013/11/22/ruby-2-0-0-p353-is-released/"
+		],
+		"cvename": [
+			"CVE-2013-4164"
+		]
+	},
+	"dates": {
+		"discovery": "2013-11-22",
+		"entry": "2013-11-23"
+	}
 }

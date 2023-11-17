@@ -1,40 +1,40 @@
 {
-  "vid": "3f09ca29-0e48-11e4-b17a-6805ca0b3d42",
-  "topic": "phpMyAdmin -- multiple XSS vulnerabilities, missing validation",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "4.2.6",
-          "ge": "4.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-4.php\">\n\t  <p>Self-XSS due to unescaped HTML output in database\n\t    structure page.</p>\n\t  <p>With a crafted table comment, it is possible to trigger\n\t    an XSS in database structure page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-5.php\">\n\t  <p>Self-XSS due to unescaped HTML output in database\n\t    triggers page.</p>\n\t  <p>When navigating into the database triggers page, it is\n\t    possible to trigger an XSS with a crafted trigger\n\t    name.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-6.php\">\n\t  <p>Multiple XSS in AJAX confirmation messages.</p>\n\t  <p>With a crafted column name it is possible to trigger an\n\t    XSS when dropping the column in table structure page. With\n\t    a crafted table name it is possible to trigger an XSS when\n\t    dropping or truncating the table in table operations\n\t    page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-7.php\">\n\t  <p>Access for an unprivileged user to MySQL user list.</p>\n\t  <p>An unpriviledged user could view the MySQL user list and\n\t    manipulate the tabs displayed in phpMyAdmin for them.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-4.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-5.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-6.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-7.php"
-    ],
-    "cvename": [
-      "CVE-2014-4954",
-      "CVE-2014-4955",
-      "CVE-2014-4986",
-      "CVE-2014-4987"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-07-18",
-    "entry": "2014-07-18",
-    "modified": "2014-07-20"
-  }
+	"vid": "3f09ca29-0e48-11e4-b17a-6805ca0b3d42",
+	"topic": "phpMyAdmin -- multiple XSS vulnerabilities, missing validation",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "4.2.6",
+					"ge": "4.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-4.php\">\n\t  <p>Self-XSS due to unescaped HTML output in database\n\t    structure page.</p>\n\t  <p>With a crafted table comment, it is possible to trigger\n\t    an XSS in database structure page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-5.php\">\n\t  <p>Self-XSS due to unescaped HTML output in database\n\t    triggers page.</p>\n\t  <p>When navigating into the database triggers page, it is\n\t    possible to trigger an XSS with a crafted trigger\n\t    name.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-6.php\">\n\t  <p>Multiple XSS in AJAX confirmation messages.</p>\n\t  <p>With a crafted column name it is possible to trigger an\n\t    XSS when dropping the column in table structure page. With\n\t    a crafted table name it is possible to trigger an XSS when\n\t    dropping or truncating the table in table operations\n\t    page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-7.php\">\n\t  <p>Access for an unprivileged user to MySQL user list.</p>\n\t  <p>An unpriviledged user could view the MySQL user list and\n\t    manipulate the tabs displayed in phpMyAdmin for them.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-4.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-5.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-6.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-7.php"
+		],
+		"cvename": [
+			"CVE-2014-4954",
+			"CVE-2014-4955",
+			"CVE-2014-4986",
+			"CVE-2014-4987"
+		]
+	},
+	"dates": {
+		"discovery": "2014-07-18",
+		"entry": "2014-07-18",
+		"modified": "2014-07-20"
+	}
 }

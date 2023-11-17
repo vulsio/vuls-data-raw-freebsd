@@ -1,35 +1,35 @@
 {
-  "vid": "85e19dff-e606-11d8-9b0a-000347a4fa7d",
-  "topic": "ripMIME -- decoding bug allowing content filter bypass",
-  "affects": [
-    {
-      "name": [
-        "ripmime"
-      ],
-      "range": [
-        {
-          "lt": "1.3.2.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ripMIME may prematurely terminate decoding Base64 encoded\n\t  messages when it encounters multiple blank lines or other\n\t  non-standard Base64 constructs.  Virus scanning and content\n\t  filtering tools that use ripMIME may therefore be\n\t  bypassed.</p>\n\t<p>The ripMIME CHANGELOG file says:</p>\n\t<blockquote cite=\"http://www.pldaniels.com/ripmime/CHANGELOG\">\n\t  <p>There's viruses going around exploiting the ability to\n\t    hide the majority of their data in an attachment by using\n\t    blank lines and other tricks to make scanning systems\n\t    prematurely terminate their base64 decoding.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.osvdb.org/8287",
-      "http://www.pldaniels.com/ripmime/CHANGELOG",
-      "http://secunia.com/advisories/12201",
-      "http://xforce.iss.net/xforce/xfdb/16867"
-    ],
-    "bid": [
-      "10848"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-07-30",
-    "entry": "2004-08-27"
-  }
+	"vid": "85e19dff-e606-11d8-9b0a-000347a4fa7d",
+	"topic": "ripMIME -- decoding bug allowing content filter bypass",
+	"affects": [
+		{
+			"name": [
+				"ripmime"
+			],
+			"range": [
+				{
+					"lt": "1.3.2.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ripMIME may prematurely terminate decoding Base64 encoded\n\t  messages when it encounters multiple blank lines or other\n\t  non-standard Base64 constructs.  Virus scanning and content\n\t  filtering tools that use ripMIME may therefore be\n\t  bypassed.</p>\n\t<p>The ripMIME CHANGELOG file says:</p>\n\t<blockquote cite=\"http://www.pldaniels.com/ripmime/CHANGELOG\">\n\t  <p>There's viruses going around exploiting the ability to\n\t    hide the majority of their data in an attachment by using\n\t    blank lines and other tricks to make scanning systems\n\t    prematurely terminate their base64 decoding.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.osvdb.org/8287",
+			"http://www.pldaniels.com/ripmime/CHANGELOG",
+			"http://secunia.com/advisories/12201",
+			"http://xforce.iss.net/xforce/xfdb/16867"
+		],
+		"bid": [
+			"10848"
+		]
+	},
+	"dates": {
+		"discovery": "2004-07-30",
+		"entry": "2004-08-27"
+	}
 }

@@ -1,41 +1,41 @@
 {
-  "vid": "93f8e0ff-f33d-11e8-be46-0019dbb15b3f",
-  "topic": "payara -- Default typing issue in Jackson Databind",
-  "affects": [
-    {
-      "name": [
-        "payara"
-      ],
-      "range": [
-        {
-          "eq": "4.1.2.181.3"
-        },
-        {
-          "eq": "4.1.2.182"
-        },
-        {
-          "eq": "5.181.3"
-        },
-        {
-          "eq": "5.182"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7489\">\n\t  <p>FasterXML jackson-databind before 2.8.11.1 and 2.9.x before\n\t    2.9.5 allows unauthenticated remote code execution because of\n\t    an incomplete fix for the CVE-2017-7525 deserialization flaw.\n\t    This is exploitable by sending maliciously crafted JSON input\n\t    to the readValue method of the ObjectMapper, bypassing a\n\t    blacklist that is ineffective if the c3p0 libraries are\n\t    available in the classpath.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7489"
-    ],
-    "cvename": [
-      "CVE-2018-7489"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-02-26",
-    "entry": "2018-11-28"
-  }
+	"vid": "93f8e0ff-f33d-11e8-be46-0019dbb15b3f",
+	"topic": "payara -- Default typing issue in Jackson Databind",
+	"affects": [
+		{
+			"name": [
+				"payara"
+			],
+			"range": [
+				{
+					"eq": "4.1.2.181.3"
+				},
+				{
+					"eq": "4.1.2.182"
+				},
+				{
+					"eq": "5.181.3"
+				},
+				{
+					"eq": "5.182"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7489\">\n\t  <p>FasterXML jackson-databind before 2.8.11.1 and 2.9.x before\n\t    2.9.5 allows unauthenticated remote code execution because of\n\t    an incomplete fix for the CVE-2017-7525 deserialization flaw.\n\t    This is exploitable by sending maliciously crafted JSON input\n\t    to the readValue method of the ObjectMapper, bypassing a\n\t    blacklist that is ineffective if the c3p0 libraries are\n\t    available in the classpath.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7489"
+		],
+		"cvename": [
+			"CVE-2018-7489"
+		]
+	},
+	"dates": {
+		"discovery": "2018-02-26",
+		"entry": "2018-11-28"
+	}
 }

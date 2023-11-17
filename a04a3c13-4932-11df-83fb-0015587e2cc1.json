@@ -1,38 +1,38 @@
 {
-  "vid": "a04a3c13-4932-11df-83fb-0015587e2cc1",
-  "topic": "ejabberd -- queue overload denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ejabberd"
-      ],
-      "range": [
-        {
-          "lt": "2.1.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Red Hat security response team reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2010/01/29/1\">\n\t  <p>A remotely exploitable DoS from XMPP client to ejabberd\n\t    server via too many \"client2server\" messages (causing the\n\t    message queue on the server to get overloaded, leading\n\t    to server crash) has been found.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/38337",
-      "http://support.process-one.net/browse/EJAB-1173",
-      "http://www.openwall.com/lists/oss-security/2010/01/29/1",
-      "http://xforce.iss.net/xforce/xfdb/56025"
-    ],
-    "cvename": [
-      "CVE-2010-0305"
-    ],
-    "bid": [
-      "38003"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-01-29",
-    "entry": "2010-04-19"
-  }
+	"vid": "a04a3c13-4932-11df-83fb-0015587e2cc1",
+	"topic": "ejabberd -- queue overload denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ejabberd"
+			],
+			"range": [
+				{
+					"lt": "2.1.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Red Hat security response team reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2010/01/29/1\">\n\t  <p>A remotely exploitable DoS from XMPP client to ejabberd\n\t    server via too many \"client2server\" messages (causing the\n\t    message queue on the server to get overloaded, leading\n\t    to server crash) has been found.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/38337",
+			"http://support.process-one.net/browse/EJAB-1173",
+			"http://www.openwall.com/lists/oss-security/2010/01/29/1",
+			"http://xforce.iss.net/xforce/xfdb/56025"
+		],
+		"cvename": [
+			"CVE-2010-0305"
+		],
+		"bid": [
+			"38003"
+		]
+	},
+	"dates": {
+		"discovery": "2010-01-29",
+		"entry": "2010-04-19"
+	}
 }

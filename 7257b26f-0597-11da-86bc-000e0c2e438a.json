@@ -1,37 +1,37 @@
 {
-  "vid": "7257b26f-0597-11da-86bc-000e0c2e438a",
-  "topic": "devfs -- ruleset bypass",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.4_5",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.3_19",
-          "ge": "5.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem description</h1>\n\t<p>Due to insufficient parameter checking of the node type\n\t  during device creation, any user can expose hidden device\n\t  nodes on devfs mounted file systems within their jail.\n\t  Device nodes will be created in the jail with their normal\n\t  default access permissions.</p>\n\t<h1>Impact</h1>\n\t<p>Jailed processes can get access to restricted resources on\n\t  the host system.  For jailed processes running with superuser\n\t  privileges this implies access to all devices on the system.\n\t  This level of access can lead to information leakage and\n\t  privilege escalation.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-2218"
-    ],
-    "freebsd_sa": [
-      "SA-05:17.devfs"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-20",
-    "entry": "2005-08-05"
-  }
+	"vid": "7257b26f-0597-11da-86bc-000e0c2e438a",
+	"topic": "devfs -- ruleset bypass",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.4_5",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.3_19",
+					"ge": "5.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem description</h1>\n\t<p>Due to insufficient parameter checking of the node type\n\t  during device creation, any user can expose hidden device\n\t  nodes on devfs mounted file systems within their jail.\n\t  Device nodes will be created in the jail with their normal\n\t  default access permissions.</p>\n\t<h1>Impact</h1>\n\t<p>Jailed processes can get access to restricted resources on\n\t  the host system.  For jailed processes running with superuser\n\t  privileges this implies access to all devices on the system.\n\t  This level of access can lead to information leakage and\n\t  privilege escalation.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-2218"
+		],
+		"freebsd_sa": [
+			"SA-05:17.devfs"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-20",
+		"entry": "2005-08-05"
+	}
 }

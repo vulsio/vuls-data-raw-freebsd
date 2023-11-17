@@ -1,32 +1,32 @@
 {
-  "vid": "6193b3f6-548c-11eb-ba01-206a8a720317",
-  "topic": "sudo -- Potential information leak in sudoedit",
-  "affects": [
-    {
-      "name": [
-        "sudo"
-      ],
-      "range": [
-        {
-          "lt": "1.9.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n       <p>Todd C. Miller reports:</p>\n       <blockquote cite=\"https://www.sudo.ws/stable.html#1.9.5\">\n\t <p>A potential information leak in sudoedit that could be used to\n\t    test for the existence of directories not normally accessible to\n\t    the user in certain circumstances. When creating a new file,\n\t    sudoedit checks to make sure the parent directory of the new file\n\t    exists before running the editor. However, a race condition exists\n\t    if the invoking user can replace (or create) the parent directory.\n\t    If a symbolic link is created in place of the parent directory,\n\t    sudoedit will run the editor as long as the target of the link\n\t    exists.If the target of the link does not exist, an error message\n\t    will be displayed. The race condition can be used to test for the\n\t    existence of an arbitrary directory. However, it _cannot_ be used\n\t    to write to an arbitrary location.</p>\n       </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.sudo.ws/stable.html#1.9.5"
-    ],
-    "cvename": [
-      "CVE-2021-23239"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-01-11",
-    "entry": "2021-01-11"
-  }
+	"vid": "6193b3f6-548c-11eb-ba01-206a8a720317",
+	"topic": "sudo -- Potential information leak in sudoedit",
+	"affects": [
+		{
+			"name": [
+				"sudo"
+			],
+			"range": [
+				{
+					"lt": "1.9.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Todd C. Miller reports:</p>\n       <blockquote cite=\"https://www.sudo.ws/stable.html#1.9.5\">\n\t <p>A potential information leak in sudoedit that could be used to\n\t    test for the existence of directories not normally accessible to\n\t    the user in certain circumstances. When creating a new file,\n\t    sudoedit checks to make sure the parent directory of the new file\n\t    exists before running the editor. However, a race condition exists\n\t    if the invoking user can replace (or create) the parent directory.\n\t    If a symbolic link is created in place of the parent directory,\n\t    sudoedit will run the editor as long as the target of the link\n\t    exists.If the target of the link does not exist, an error message\n\t    will be displayed. The race condition can be used to test for the\n\t    existence of an arbitrary directory. However, it _cannot_ be used\n\t    to write to an arbitrary location.</p>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.sudo.ws/stable.html#1.9.5"
+		],
+		"cvename": [
+			"CVE-2021-23239"
+		]
+	},
+	"dates": {
+		"discovery": "2021-01-11",
+		"entry": "2021-01-11"
+	}
 }

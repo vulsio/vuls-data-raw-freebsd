@@ -1,33 +1,33 @@
 {
-  "vid": "eb2845c4-43ce-11eb-aba5-00a09858faf5",
-  "topic": "postsrsd -- Denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "postsrsd"
-      ],
-      "range": [
-        {
-          "lt": "1.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>postsrsd developer reports:</p>\n\t<blockquote cite=\"https://github.com/roehling/postsrsd/commit/4733fb11f6bec6524bb8518c5e1a699288c26bac\">\n\t  <p>PostSRSd could be tricked into consuming a lot of CPU time with\n\t    an SRS address that has an excessively long time stamp tag.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/roehling/postsrsd/commit/4733fb11f6bec6524bb8518c5e1a699288c26bac",
-      "https://github.com/roehling/postsrsd/releases/tag/1.10"
-    ],
-    "cvename": [
-      "CVE-2020-35573"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-12-12",
-    "entry": "2020-12-21"
-  }
+	"vid": "eb2845c4-43ce-11eb-aba5-00a09858faf5",
+	"topic": "postsrsd -- Denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"postsrsd"
+			],
+			"range": [
+				{
+					"lt": "1.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>postsrsd developer reports:</p>\n\t<blockquote cite=\"https://github.com/roehling/postsrsd/commit/4733fb11f6bec6524bb8518c5e1a699288c26bac\">\n\t  <p>PostSRSd could be tricked into consuming a lot of CPU time with\n\t    an SRS address that has an excessively long time stamp tag.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/roehling/postsrsd/commit/4733fb11f6bec6524bb8518c5e1a699288c26bac",
+			"https://github.com/roehling/postsrsd/releases/tag/1.10"
+		],
+		"cvename": [
+			"CVE-2020-35573"
+		]
+	},
+	"dates": {
+		"discovery": "2020-12-12",
+		"entry": "2020-12-21"
+	}
 }

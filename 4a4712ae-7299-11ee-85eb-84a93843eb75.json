@@ -1,52 +1,52 @@
 {
-  "vid": "4a4712ae-7299-11ee-85eb-84a93843eb75",
-  "topic": "OpenSSL -- potential loss of confidentiality",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "3.0.12,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl31"
-      ],
-      "range": [
-        {
-          "lt": "3.1.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-quictls"
-      ],
-      "range": [
-        {
-          "lt": "3.0.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SO-AND-SO reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20231024.txt\">\n\t  <p>Moderate severity: A bug has been identified in the processing\n\t    of key and initialisation vector (IV) lengths. This can lead to\n\t    potential truncation or overruns during the initialisation of\n\t    some symmetric ciphers.</p>\n\t</blockquote>\n\t"
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20231024.txt"
-    ],
-    "cvename": [
-      "CVE-2023-5363"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-10-24",
-    "entry": "2023-10-24"
-  }
+	"vid": "4a4712ae-7299-11ee-85eb-84a93843eb75",
+	"topic": "OpenSSL -- potential loss of confidentiality",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "3.0.12,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl31"
+			],
+			"range": [
+				{
+					"lt": "3.1.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-quictls"
+			],
+			"range": [
+				{
+					"lt": "3.0.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SO-AND-SO reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20231024.txt\">\n\t  <p>Moderate severity: A bug has been identified in the processing\n\t    of key and initialisation vector (IV) lengths. This can lead to\n\t    potential truncation or overruns during the initialisation of\n\t    some symmetric ciphers.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20231024.txt"
+		],
+		"cvename": [
+			"CVE-2023-5363"
+		]
+	},
+	"dates": {
+		"discovery": "2023-10-24",
+		"entry": "2023-10-24"
+	}
 }

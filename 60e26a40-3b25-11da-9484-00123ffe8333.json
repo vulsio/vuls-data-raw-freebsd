@@ -1,95 +1,95 @@
 {
-  "vid": "60e26a40-3b25-11da-9484-00123ffe8333",
-  "topic": "openssl -- potential SSL 2.0 rollback",
-  "affects": [
-    {
-      "name": [
-        "openssl",
-        "openssl-overwrite-base"
-      ],
-      "range": [
-        {
-          "le": "0.9.7g"
-        },
-        {
-          "ge": "0.9.8",
-          "le": "0.9.8_1"
-        },
-        {
-          "ge": "0.9.*_20050325",
-          "le": "0.9.*_20051011"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-beta",
-        "openssl-beta-overwrite-base"
-      ],
-      "range": [
-        {
-          "le": "0.9.8_1"
-        },
-        {
-          "ge": "0.9.*_20050325",
-          "le": "0.9.*_20051011"
-        }
-      ]
-    },
-    {
-      "name": [
-        "compat5x-alpha",
-        "compat5x-amd64",
-        "compat5x-i386",
-        "compat5x-sparc64"
-      ],
-      "range": [
-        {
-          "lt": "5.4.0.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "4.10_19"
-        },
-        {
-          "lt": "4.11_13",
-          "ge": "4.11"
-        },
-        {
-          "lt": "5.3_23",
-          "ge": "5.3"
-        },
-        {
-          "lt": "5.4_8",
-          "ge": "5.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Vulnerability:</p>\n\t<blockquote cite=\"http://www.openssl.org/news/secadv_20051011.txt\">\n\t  <p>Such applications are affected if they use the option\n\t    SSL_OP_MSIE_SSLV2_RSA_PADDING.  This option is implied by use of\n\t    SSL_OP_ALL, which is intended to work around various bugs in\n\t    third-party software that might prevent interoperability.  The\n\t    SSL_OP_MSIE_SSLV2_RSA_PADDING option disables a verification step in\n\t    the SSL 2.0 server supposed to prevent active protocol-version\n\t    rollback attacks.  With this verification step disabled, an attacker\n\t    acting as a \"man in the middle\" can force a client and a server to\n\t    negotiate the SSL 2.0 protocol even if these parties both support\n\t    SSL 3.0 or TLS 1.0.  The SSL 2.0 protocol is known to have severe\n\t    cryptographic weaknesses and is supported as a fallback only.</p>\n\t  <p>Applications using neither SSL_OP_MSIE_SSLV2_RSA_PADDING nor\n\t    SSL_OP_ALL are not affected.  Also, applications that disable\n\t    use of SSL 2.0 are not affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openssl.org/news/secadv_20051011.txt"
-    ],
-    "cvename": [
-      "CVE-2005-2969"
-    ],
-    "freebsd_sa": [
-      "SA-05:21.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-10-11",
-    "entry": "2005-10-12",
-    "modified": "2005-10-25"
-  }
+	"vid": "60e26a40-3b25-11da-9484-00123ffe8333",
+	"topic": "openssl -- potential SSL 2.0 rollback",
+	"affects": [
+		{
+			"name": [
+				"openssl",
+				"openssl-overwrite-base"
+			],
+			"range": [
+				{
+					"le": "0.9.7g"
+				},
+				{
+					"ge": "0.9.8",
+					"le": "0.9.8_1"
+				},
+				{
+					"ge": "0.9.*_20050325",
+					"le": "0.9.*_20051011"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-beta",
+				"openssl-beta-overwrite-base"
+			],
+			"range": [
+				{
+					"le": "0.9.8_1"
+				},
+				{
+					"ge": "0.9.*_20050325",
+					"le": "0.9.*_20051011"
+				}
+			]
+		},
+		{
+			"name": [
+				"compat5x-alpha",
+				"compat5x-amd64",
+				"compat5x-i386",
+				"compat5x-sparc64"
+			],
+			"range": [
+				{
+					"lt": "5.4.0.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "4.10_19"
+				},
+				{
+					"lt": "4.11_13",
+					"ge": "4.11"
+				},
+				{
+					"lt": "5.3_23",
+					"ge": "5.3"
+				},
+				{
+					"lt": "5.4_8",
+					"ge": "5.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Vulnerability:</p>\n\t<blockquote cite=\"http://www.openssl.org/news/secadv_20051011.txt\">\n\t  <p>Such applications are affected if they use the option\n\t    SSL_OP_MSIE_SSLV2_RSA_PADDING.  This option is implied by use of\n\t    SSL_OP_ALL, which is intended to work around various bugs in\n\t    third-party software that might prevent interoperability.  The\n\t    SSL_OP_MSIE_SSLV2_RSA_PADDING option disables a verification step in\n\t    the SSL 2.0 server supposed to prevent active protocol-version\n\t    rollback attacks.  With this verification step disabled, an attacker\n\t    acting as a \"man in the middle\" can force a client and a server to\n\t    negotiate the SSL 2.0 protocol even if these parties both support\n\t    SSL 3.0 or TLS 1.0.  The SSL 2.0 protocol is known to have severe\n\t    cryptographic weaknesses and is supported as a fallback only.</p>\n\t  <p>Applications using neither SSL_OP_MSIE_SSLV2_RSA_PADDING nor\n\t    SSL_OP_ALL are not affected.  Also, applications that disable\n\t    use of SSL 2.0 are not affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openssl.org/news/secadv_20051011.txt"
+		],
+		"cvename": [
+			"CVE-2005-2969"
+		],
+		"freebsd_sa": [
+			"SA-05:21.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2005-10-11",
+		"entry": "2005-10-12",
+		"modified": "2005-10-25"
+	}
 }

@@ -1,79 +1,79 @@
 {
-  "vid": "8e887b71-d769-11e4-b1c2-20cf30e32f6d",
-  "topic": "subversion -- DoS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mod_dav_svn"
-      ],
-      "range": [
-        {
-          "lt": "1.7.20",
-          "ge": "1.5.0"
-        },
-        {
-          "lt": "1.8.13",
-          "ge": "1.8.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion16"
-      ],
-      "range": [
-        {
-          "lt": "1.7.20",
-          "ge": "1.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion17"
-      ],
-      "range": [
-        {
-          "lt": "1.7.20",
-          "ge": "1.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.7.20",
-          "ge": "1.0.0"
-        },
-        {
-          "lt": "1.8.13",
-          "ge": "1.8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion Project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/\">\n\t  <p>Subversion HTTP servers with FSFS repositories are vulnerable to a remotely\n\t   triggerable excessive memory use with certain REPORT requests.</p>\n\t  <p>Subversion mod_dav_svn and svnserve are vulnerable to a remotely triggerable\n\t    assertion DoS vulnerability for certain requests with dynamically evaluated\n\t    revision numbers.</p>\n\t  <p>Subversion HTTP servers allow spoofing svn:author property values for new\n\t    revisions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://subversion.apache.org/security/",
-      "http://subversion.apache.org/security/CVE-2015-0202-advisory.txt",
-      "http://subversion.apache.org/security/CVE-2015-0248-advisory.txt",
-      "http://subversion.apache.org/security/CVE-2015-0251-advisory.txt"
-    ],
-    "cvename": [
-      "CVE-2015-0202",
-      "CVE-2015-0248",
-      "CVE-2015-0251"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-03-31",
-    "entry": "2015-03-31"
-  }
+	"vid": "8e887b71-d769-11e4-b1c2-20cf30e32f6d",
+	"topic": "subversion -- DoS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mod_dav_svn"
+			],
+			"range": [
+				{
+					"lt": "1.7.20",
+					"ge": "1.5.0"
+				},
+				{
+					"lt": "1.8.13",
+					"ge": "1.8.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion16"
+			],
+			"range": [
+				{
+					"lt": "1.7.20",
+					"ge": "1.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion17"
+			],
+			"range": [
+				{
+					"lt": "1.7.20",
+					"ge": "1.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion"
+			],
+			"range": [
+				{
+					"lt": "1.7.20",
+					"ge": "1.0.0"
+				},
+				{
+					"lt": "1.8.13",
+					"ge": "1.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion Project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/\">\n\t  <p>Subversion HTTP servers with FSFS repositories are vulnerable to a remotely\n\t   triggerable excessive memory use with certain REPORT requests.</p>\n\t  <p>Subversion mod_dav_svn and svnserve are vulnerable to a remotely triggerable\n\t    assertion DoS vulnerability for certain requests with dynamically evaluated\n\t    revision numbers.</p>\n\t  <p>Subversion HTTP servers allow spoofing svn:author property values for new\n\t    revisions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://subversion.apache.org/security/",
+			"http://subversion.apache.org/security/CVE-2015-0202-advisory.txt",
+			"http://subversion.apache.org/security/CVE-2015-0248-advisory.txt",
+			"http://subversion.apache.org/security/CVE-2015-0251-advisory.txt"
+		],
+		"cvename": [
+			"CVE-2015-0202",
+			"CVE-2015-0248",
+			"CVE-2015-0251"
+		]
+	},
+	"dates": {
+		"discovery": "2015-03-31",
+		"entry": "2015-03-31"
+	}
 }

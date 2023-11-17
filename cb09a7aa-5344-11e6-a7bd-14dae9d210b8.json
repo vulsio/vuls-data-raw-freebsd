@@ -1,34 +1,34 @@
 {
-  "vid": "cb09a7aa-5344-11e6-a7bd-14dae9d210b8",
-  "topic": "xercesi-c3 -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "xerces-c3"
-      ],
-      "range": [
-        {
-          "lt": "3.1.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Apache reports:</p>\n\t<blockquote cite=\"https://xerces.apache.org/xerces-c/secadv/CVE-2016-4463.txt\">\n\t  <p>The Xerces-C XML parser fails to successfully parse a\n\t    DTD that is deeply nested, and this causes a stack overflow, which\n\t    makes a denial of service attack against many applications possible\n\t    by an unauthenticated attacker.</p>\n\t  <p>Also, CVE-2016-2099: Use-after-free vulnerability in\n\t    validators/DTD/DTDScanner.cpp in Apache Xerces C++ 3.1.3 and earlier\n\t    allows context-dependent attackers to have unspecified impact via an\n\t    invalid character in an XML document.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xerces.apache.org/xerces-c/secadv/CVE-2016-4463.txt",
-      "http://www.openwall.com/lists/oss-security/2016/05/09/7"
-    ],
-    "cvename": [
-      "CVE-2016-2099",
-      "CVE-2016-4463"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-09",
-    "entry": "2016-07-26"
-  }
+	"vid": "cb09a7aa-5344-11e6-a7bd-14dae9d210b8",
+	"topic": "xercesi-c3 -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"xerces-c3"
+			],
+			"range": [
+				{
+					"lt": "3.1.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Apache reports:</p>\n\t<blockquote cite=\"https://xerces.apache.org/xerces-c/secadv/CVE-2016-4463.txt\">\n\t  <p>The Xerces-C XML parser fails to successfully parse a\n\t    DTD that is deeply nested, and this causes a stack overflow, which\n\t    makes a denial of service attack against many applications possible\n\t    by an unauthenticated attacker.</p>\n\t  <p>Also, CVE-2016-2099: Use-after-free vulnerability in\n\t    validators/DTD/DTDScanner.cpp in Apache Xerces C++ 3.1.3 and earlier\n\t    allows context-dependent attackers to have unspecified impact via an\n\t    invalid character in an XML document.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xerces.apache.org/xerces-c/secadv/CVE-2016-4463.txt",
+			"http://www.openwall.com/lists/oss-security/2016/05/09/7"
+		],
+		"cvename": [
+			"CVE-2016-2099",
+			"CVE-2016-4463"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-09",
+		"entry": "2016-07-26"
+	}
 }

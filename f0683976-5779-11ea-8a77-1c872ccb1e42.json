@@ -1,35 +1,35 @@
 {
-  "vid": "f0683976-5779-11ea-8a77-1c872ccb1e42",
-  "topic": "OpenSMTPd -- LPE and RCE in OpenSMTPD's default install",
-  "affects": [
-    {
-      "name": [
-        "opensmtpd"
-      ],
-      "range": [
-        {
-          "lt": "6.6.4,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSMTPD developers reports:</p>\n\t<blockquote cite=\"https://opensmtpd.org/security.html\">\n\t  <p>An out of bounds read in smtpd allows an attacker to inject arbitrary\n\t    commands into the envelope file which are then executed as root.\n\t    Separately, missing privilege revocation in smtpctl allows arbitrary\n\t    commands to be run with the _smtpq group.</p>\n\t  <p>An unprivileged local attacker can read the first line of an arbitrary\n\t    file (for example, root's password hash in /etc/master.passwd) or the\n\t    entire contents of another user's file (if this file and\n\t    /var/spool/smtpd/ are on the same filesystem).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openwall.com/lists/oss-security/2020/02/24/4",
-      "https://www.openwall.com/lists/oss-security/2020/02/24/5"
-    ],
-    "cvename": [
-      "CVE-2020-8793",
-      "CVE-2020-8794"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-02-22",
-    "entry": "2020-02-24",
-    "modified": "2020-02-27"
-  }
+	"vid": "f0683976-5779-11ea-8a77-1c872ccb1e42",
+	"topic": "OpenSMTPd -- LPE and RCE in OpenSMTPD's default install",
+	"affects": [
+		{
+			"name": [
+				"opensmtpd"
+			],
+			"range": [
+				{
+					"lt": "6.6.4,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSMTPD developers reports:</p>\n\t<blockquote cite=\"https://opensmtpd.org/security.html\">\n\t  <p>An out of bounds read in smtpd allows an attacker to inject arbitrary\n\t    commands into the envelope file which are then executed as root.\n\t    Separately, missing privilege revocation in smtpctl allows arbitrary\n\t    commands to be run with the _smtpq group.</p>\n\t  <p>An unprivileged local attacker can read the first line of an arbitrary\n\t    file (for example, root's password hash in /etc/master.passwd) or the\n\t    entire contents of another user's file (if this file and\n\t    /var/spool/smtpd/ are on the same filesystem).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openwall.com/lists/oss-security/2020/02/24/4",
+			"https://www.openwall.com/lists/oss-security/2020/02/24/5"
+		],
+		"cvename": [
+			"CVE-2020-8793",
+			"CVE-2020-8794"
+		]
+	},
+	"dates": {
+		"discovery": "2020-02-22",
+		"entry": "2020-02-24",
+		"modified": "2020-02-27"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "0512b761-70fb-40d3-9954-aa4565528fa8",
-  "topic": "kstars -- exploitable set-user-ID application fliccd",
-  "affects": [
-    {
-      "name": [
-        "kdeedu"
-      ],
-      "range": [
-        {
-          "lt": "3.3.2_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A KDE Security Advisory explains:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20050215-1.txt\">\n\t  <h1>Overview</h1>\n\t  <p>KStars includes support for the Instrument Neutral\n\t    Distributed Interface (INDI). The build system of this\n\t    extra 3rd party software contained an installation hook to\n\t    install fliccd (part of INDI) as SUID root\n\t    application.</p>\n\t  <p>Erik Sjölund discovered that the code contains several\n\t    vulnerabilities that allow stack based buffer\n\t    overflows.</p>\n\t  <h1>Impact</h1>\n\t  <p>If the fliccd binary is installed as suid root, it\n\t    enables root privilege escalation for local users, or, if\n\t    the daemon is actually running (which it does not by\n\t    default) and is running as root, remote root privilege\n\t    escalation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kde.org/info/security/advisory-20050215-1.txt"
-    ],
-    "cvename": [
-      "CVE-2005-0011"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-05",
-    "entry": "2005-06-17"
-  }
+	"vid": "0512b761-70fb-40d3-9954-aa4565528fa8",
+	"topic": "kstars -- exploitable set-user-ID application fliccd",
+	"affects": [
+		{
+			"name": [
+				"kdeedu"
+			],
+			"range": [
+				{
+					"lt": "3.3.2_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A KDE Security Advisory explains:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20050215-1.txt\">\n\t  <h1>Overview</h1>\n\t  <p>KStars includes support for the Instrument Neutral\n\t    Distributed Interface (INDI). The build system of this\n\t    extra 3rd party software contained an installation hook to\n\t    install fliccd (part of INDI) as SUID root\n\t    application.</p>\n\t  <p>Erik Sjölund discovered that the code contains several\n\t    vulnerabilities that allow stack based buffer\n\t    overflows.</p>\n\t  <h1>Impact</h1>\n\t  <p>If the fliccd binary is installed as suid root, it\n\t    enables root privilege escalation for local users, or, if\n\t    the daemon is actually running (which it does not by\n\t    default) and is running as root, remote root privilege\n\t    escalation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kde.org/info/security/advisory-20050215-1.txt"
+		],
+		"cvename": [
+			"CVE-2005-0011"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-05",
+		"entry": "2005-06-17"
+	}
 }

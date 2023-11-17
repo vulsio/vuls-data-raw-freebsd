@@ -1,81 +1,81 @@
 {
-  "vid": "3fbf9db2-658b-11d9-abad-000a95bc6fae",
-  "topic": "mozilla -- heap overflow in NNTP handler",
-  "affects": [
-    {
-      "name": [
-        "de-netscape7",
-        "fr-netscape7",
-        "ja-netscape7",
-        "netscape7",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla-gtk1",
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.5,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "fr-linux-netscape",
-        "ja-linux-netscape",
-        "linux-netscape",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-gtk2",
-        "mozilla-gtk"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Maurycy Prodeus reports a critical vulnerability in\n\t  Mozilla-based browsers:</p>\n\t<blockquote cite=\"http://isec.pl/vulnerabilities/isec-0020-mozilla.txt\">\n\t  <p>Mozilla browser supports NNTP urls. Remote side is able to\n\t    trigger  news:// connection to any server. I found a flaw in\n\t    NNTP handling code which may cause heap overflow and allow\n\t    remote attacker to execute arbitrary code on client\n\t    machine.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://isec.pl/vulnerabilities/isec-0020-mozilla.txt"
-    ],
-    "cvename": [
-      "CVE-2004-1316"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110436284718949",
-        "msgid": "Pine.LNX.4.44.0412292228440.19239-200000@isec.pl"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-12-29",
-    "entry": "2005-01-13"
-  }
+	"vid": "3fbf9db2-658b-11d9-abad-000a95bc6fae",
+	"topic": "mozilla -- heap overflow in NNTP handler",
+	"affects": [
+		{
+			"name": [
+				"de-netscape7",
+				"fr-netscape7",
+				"ja-netscape7",
+				"netscape7",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla-gtk1",
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.5,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"fr-linux-netscape",
+				"ja-linux-netscape",
+				"linux-netscape",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-gtk2",
+				"mozilla-gtk"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Maurycy Prodeus reports a critical vulnerability in\n\t  Mozilla-based browsers:</p>\n\t<blockquote cite=\"http://isec.pl/vulnerabilities/isec-0020-mozilla.txt\">\n\t  <p>Mozilla browser supports NNTP urls. Remote side is able to\n\t    trigger  news:// connection to any server. I found a flaw in\n\t    NNTP handling code which may cause heap overflow and allow\n\t    remote attacker to execute arbitrary code on client\n\t    machine.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://isec.pl/vulnerabilities/isec-0020-mozilla.txt"
+		],
+		"cvename": [
+			"CVE-2004-1316"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110436284718949",
+				"msgid": "Pine.LNX.4.44.0412292228440.19239-200000@isec.pl"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-12-29",
+		"entry": "2005-01-13"
+	}
 }

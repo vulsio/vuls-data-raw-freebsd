@@ -1,49 +1,49 @@
 {
-  "vid": "59a0af97-dbd4-11e5-8fa8-14dae9d210b8",
-  "topic": "drupal -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.38"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal7"
-      ],
-      "range": [
-        {
-          "lt": "7.43"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal8"
-      ],
-      "range": [
-        {
-          "lt": "8.0.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/SA-CORE-2016-001\">\n\t  <ul>\n\t  <li><p>File upload access bypass and denial of service (File\n\t    module - Drupal 7 and 8 - Moderately Critical)</p></li>\n\t  <li><p>Brute force amplification attacks via XML-RPC (XML-RPC\n\t    server - Drupal 6 and 7 - Moderately Critical)</p></li>\n\t  <li><p>Open redirect via path manipulation (Base system -\n\t    Drupal 6, 7 and 8 - Moderately Critical) </p></li>\n\t  <li><p>Form API ignores access restrictions on submit buttons\n\t    (Form API - Drupal 6 - Critical)</p></li>\n\t  <li><p>HTTP header injection using line breaks (Base system -\n\t    Drupal 6 - Moderately Critical)</p></li>\n\t  <li><p>Open redirect via double-encoded 'destination'\n\t    parameter (Base system - Drupal 6 - Moderately Critical)</p></li>\n\t  <li><p>Reflected file download vulnerability (System module -\n\t    Drupal 6 and 7 - Moderately Critical)</p></li>\n\t  <li><p>Saving user accounts can sometimes grant the user all\n\t    roles (User module - Drupal 6 and 7 - Less Critical)</p></li>\n\t  <li><p>Email address can be matched to an account (User module\n\t    - Drupal 7 and 8 - Less Critical)</p></li>\n\t  <li><p>Session data truncation can lead to unserialization of\n\t    user provided data (Base system - Drupal 6 - Less Critical)</p></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.drupal.org/SA-CORE-2016-001"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-24",
-    "entry": "2016-02-25"
-  }
+	"vid": "59a0af97-dbd4-11e5-8fa8-14dae9d210b8",
+	"topic": "drupal -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal7"
+			],
+			"range": [
+				{
+					"lt": "7.43"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal8"
+			],
+			"range": [
+				{
+					"lt": "8.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/SA-CORE-2016-001\">\n\t  <ul>\n\t  <li><p>File upload access bypass and denial of service (File\n\t    module - Drupal 7 and 8 - Moderately Critical)</p></li>\n\t  <li><p>Brute force amplification attacks via XML-RPC (XML-RPC\n\t    server - Drupal 6 and 7 - Moderately Critical)</p></li>\n\t  <li><p>Open redirect via path manipulation (Base system -\n\t    Drupal 6, 7 and 8 - Moderately Critical) </p></li>\n\t  <li><p>Form API ignores access restrictions on submit buttons\n\t    (Form API - Drupal 6 - Critical)</p></li>\n\t  <li><p>HTTP header injection using line breaks (Base system -\n\t    Drupal 6 - Moderately Critical)</p></li>\n\t  <li><p>Open redirect via double-encoded 'destination'\n\t    parameter (Base system - Drupal 6 - Moderately Critical)</p></li>\n\t  <li><p>Reflected file download vulnerability (System module -\n\t    Drupal 6 and 7 - Moderately Critical)</p></li>\n\t  <li><p>Saving user accounts can sometimes grant the user all\n\t    roles (User module - Drupal 6 and 7 - Less Critical)</p></li>\n\t  <li><p>Email address can be matched to an account (User module\n\t    - Drupal 7 and 8 - Less Critical)</p></li>\n\t  <li><p>Session data truncation can lead to unserialization of\n\t    user provided data (Base system - Drupal 6 - Less Critical)</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.drupal.org/SA-CORE-2016-001"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-24",
+		"entry": "2016-02-25"
+	}
 }

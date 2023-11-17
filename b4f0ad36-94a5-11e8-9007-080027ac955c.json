@@ -1,53 +1,53 @@
 {
-  "vid": "b4f0ad36-94a5-11e8-9007-080027ac955c",
-  "topic": "mailman -- content spoofing with invalid list names in web UI",
-  "affects": [
-    {
-      "name": [
-        "mailman"
-      ],
-      "range": [
-        {
-          "lt": "2.1.28"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mailman-with-htdig"
-      ],
-      "range": [
-        {
-          "lt": "2.1.28"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ja-mailman"
-      ],
-      "range": [
-        {
-          "lt": "2.1.14.j7_6,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://bugs.launchpad.net/mailman/+bug/1780874\">\n\t  <p>A URL with a very long text listname such as</p>\n\t  <pre>http://www.example.com/mailman/listinfo/This_is_a_long_string_with_some_phishing_text</pre>\n\t    <p>will echo the text in the \"No such list\" error response. This can be used to make a potential victim think the phishing text comes from a trusted site.</p>\n\t    <p>This issue was discovered by Hammad Qureshi.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugs.launchpad.net/mailman/+bug/1780874",
-      "https://mail.python.org/pipermail/mailman-announce/2018-July/000241.html"
-    ],
-    "cvename": [
-      "CVE-2018-13796"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-07-09",
-    "entry": "2018-07-31"
-  }
+	"vid": "b4f0ad36-94a5-11e8-9007-080027ac955c",
+	"topic": "mailman -- content spoofing with invalid list names in web UI",
+	"affects": [
+		{
+			"name": [
+				"mailman"
+			],
+			"range": [
+				{
+					"lt": "2.1.28"
+				}
+			]
+		},
+		{
+			"name": [
+				"mailman-with-htdig"
+			],
+			"range": [
+				{
+					"lt": "2.1.28"
+				}
+			]
+		},
+		{
+			"name": [
+				"ja-mailman"
+			],
+			"range": [
+				{
+					"lt": "2.1.14.j7_6,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://bugs.launchpad.net/mailman/+bug/1780874\">\n\t  <p>A URL with a very long text listname such as</p>\n\t  <pre>http://www.example.com/mailman/listinfo/This_is_a_long_string_with_some_phishing_text</pre>\n\t    <p>will echo the text in the \"No such list\" error response. This can be used to make a potential victim think the phishing text comes from a trusted site.</p>\n\t    <p>This issue was discovered by Hammad Qureshi.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugs.launchpad.net/mailman/+bug/1780874",
+			"https://mail.python.org/pipermail/mailman-announce/2018-July/000241.html"
+		],
+		"cvename": [
+			"CVE-2018-13796"
+		]
+	},
+	"dates": {
+		"discovery": "2018-07-09",
+		"entry": "2018-07-31"
+	}
 }

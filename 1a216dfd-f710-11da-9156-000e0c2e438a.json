@@ -1,33 +1,33 @@
 {
-  "vid": "1a216dfd-f710-11da-9156-000e0c2e438a",
-  "topic": "freeradius -- authentication bypass vulnerability",
-  "affects": [
-    {
-      "name": [
-        "freeradius"
-      ],
-      "range": [
-        {
-          "gt": "1.0.0",
-          "le": "1.1.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The freeradius development team reports:</p>\n\t<blockquote cite=\"http://www.freeradius.org/security.html\">\n\t  <p>A validation issue exists with the EAP-MSCHAPv2 module\n\t    in all versions from 1.0.0 (where the module first\n\t    appeared) to 1.1.0. Insufficient input validation was being\n\t    done in the EAP-MSCHAPv2 state machine.  A malicious\n\t    attacker could manipulate their EAP-MSCHAPv2 client state\n\t    machine to potentially convince the server to bypass\n\t    authentication checks.  This bypassing could also result\n\t    in the server crashing</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2006-1354"
-    ],
-    "bid": [
-      "17293"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-06-03",
-    "entry": "2006-06-08"
-  }
+	"vid": "1a216dfd-f710-11da-9156-000e0c2e438a",
+	"topic": "freeradius -- authentication bypass vulnerability",
+	"affects": [
+		{
+			"name": [
+				"freeradius"
+			],
+			"range": [
+				{
+					"gt": "1.0.0",
+					"le": "1.1.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The freeradius development team reports:</p>\n\t<blockquote cite=\"http://www.freeradius.org/security.html\">\n\t  <p>A validation issue exists with the EAP-MSCHAPv2 module\n\t    in all versions from 1.0.0 (where the module first\n\t    appeared) to 1.1.0. Insufficient input validation was being\n\t    done in the EAP-MSCHAPv2 state machine.  A malicious\n\t    attacker could manipulate their EAP-MSCHAPv2 client state\n\t    machine to potentially convince the server to bypass\n\t    authentication checks.  This bypassing could also result\n\t    in the server crashing</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2006-1354"
+		],
+		"bid": [
+			"17293"
+		]
+	},
+	"dates": {
+		"discovery": "2006-06-03",
+		"entry": "2006-06-08"
+	}
 }

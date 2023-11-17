@@ -1,32 +1,32 @@
 {
-  "vid": "5804b9d4-a959-11e4-9363-20cf30e32f6d",
-  "topic": "apache24 -- several vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "apache24"
-      ],
-      "range": [
-        {
-          "lt": "2.4.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://www.apache.org/dist/httpd/Announcement2.4.html\">\n\t  <p>mod_proxy_fcgi: Fix a potential crash due to buffer over-read,\n\t    with response headers' size above 8K.</p>\n\t  <p>mod_cache: Avoid a crash when Content-Type has an empty value. PR 56924.</p>\n\t  <p>mod_lua: Fix handling of the Require line when a LuaAuthzProvider is used\n\t    in multiple Require directives with different arguments. PR57204.</p>\n\t  <p>core: HTTP trailers could be used to replace HTTP headers late during\n\t    request processing, potentially undoing or otherwise confusing modules\n\t    that examined or modified request headers earlier. Adds \"MergeTrailers\"\n\t    directive to restore legacy behavior.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-3583",
-      "CVE-2014-3581",
-      "CVE-2014-8109",
-      "CVE-2013-5704"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-01-29",
-    "entry": "2015-01-31"
-  }
+	"vid": "5804b9d4-a959-11e4-9363-20cf30e32f6d",
+	"topic": "apache24 -- several vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"apache24"
+			],
+			"range": [
+				{
+					"lt": "2.4.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://www.apache.org/dist/httpd/Announcement2.4.html\">\n\t  <p>mod_proxy_fcgi: Fix a potential crash due to buffer over-read,\n\t    with response headers' size above 8K.</p>\n\t  <p>mod_cache: Avoid a crash when Content-Type has an empty value. PR 56924.</p>\n\t  <p>mod_lua: Fix handling of the Require line when a LuaAuthzProvider is used\n\t    in multiple Require directives with different arguments. PR57204.</p>\n\t  <p>core: HTTP trailers could be used to replace HTTP headers late during\n\t    request processing, potentially undoing or otherwise confusing modules\n\t    that examined or modified request headers earlier. Adds \"MergeTrailers\"\n\t    directive to restore legacy behavior.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-3583",
+			"CVE-2014-3581",
+			"CVE-2014-8109",
+			"CVE-2013-5704"
+		]
+	},
+	"dates": {
+		"discovery": "2015-01-29",
+		"entry": "2015-01-31"
+	}
 }

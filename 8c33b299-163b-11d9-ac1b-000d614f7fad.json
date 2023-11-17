@@ -1,38 +1,38 @@
 {
-  "vid": "8c33b299-163b-11d9-ac1b-000d614f7fad",
-  "topic": "getmail -- symlink vulnerability during maildir delivery",
-  "affects": [
-    {
-      "name": [
-        "getmail"
-      ],
-      "range": [
-        {
-          "lt": "3.2.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>David Watson reports a symlink vulnerability in getmail.\n\t  If run as root (not the recommended mode of operation), a\n\t  local user may be able to cause getmail to write files in\n\t  arbitrary directories via a symlink attack on subdirectories\n\t  of the maildir.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0881"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109571883130372",
-        "msgid": "200409191532.38997.baikie@ehwat.freeserve.co.uk"
-      }
-    ],
-    "bid": [
-      "11224"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-19",
-    "entry": "2004-10-04"
-  }
+	"vid": "8c33b299-163b-11d9-ac1b-000d614f7fad",
+	"topic": "getmail -- symlink vulnerability during maildir delivery",
+	"affects": [
+		{
+			"name": [
+				"getmail"
+			],
+			"range": [
+				{
+					"lt": "3.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>David Watson reports a symlink vulnerability in getmail.\n\t  If run as root (not the recommended mode of operation), a\n\t  local user may be able to cause getmail to write files in\n\t  arbitrary directories via a symlink attack on subdirectories\n\t  of the maildir.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0881"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109571883130372",
+				"msgid": "200409191532.38997.baikie@ehwat.freeserve.co.uk"
+			}
+		],
+		"bid": [
+			"11224"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-19",
+		"entry": "2004-10-04"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "7695b0af-958f-11ec-9aa3-4ccc6adda413",
-  "topic": "cryptopp -- ElGamal implementation allows plaintext recovery",
-  "affects": [
-    {
-      "name": [
-        "cryptopp"
-      ],
-      "range": [
-        {
-          "lt": "8.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Crypto++ 8.6 release notes reports:</p>\n\t<blockquote cite=\"https://www.cryptopp.com/release860.html\">\n\t  <p>The ElGamal implementation in Crypto++ through 8.5 allows plaintext\n\t    recovery because, during interaction between two cryptographic\n\t    libraries, a certain dangerous combination of the prime defined by\n\t    the receiver's public key, the generator defined by the receiver's\n\t    public key, and the sender's ephemeral exponents can lead to a\n\t    cross-configuration attack against OpenPGP.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2021-40530"
-    ],
-    "cvename": [
-      "CVE-2021-40530"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-09-06",
-    "entry": "2022-02-24"
-  }
+	"vid": "7695b0af-958f-11ec-9aa3-4ccc6adda413",
+	"topic": "cryptopp -- ElGamal implementation allows plaintext recovery",
+	"affects": [
+		{
+			"name": [
+				"cryptopp"
+			],
+			"range": [
+				{
+					"lt": "8.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Crypto++ 8.6 release notes reports:</p>\n\t<blockquote cite=\"https://www.cryptopp.com/release860.html\">\n\t  <p>The ElGamal implementation in Crypto++ through 8.5 allows plaintext\n\t    recovery because, during interaction between two cryptographic\n\t    libraries, a certain dangerous combination of the prime defined by\n\t    the receiver's public key, the generator defined by the receiver's\n\t    public key, and the sender's ephemeral exponents can lead to a\n\t    cross-configuration attack against OpenPGP.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2021-40530"
+		],
+		"cvename": [
+			"CVE-2021-40530"
+		]
+	},
+	"dates": {
+		"discovery": "2021-09-06",
+		"entry": "2022-02-24"
+	}
 }

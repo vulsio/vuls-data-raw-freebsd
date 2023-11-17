@@ -1,45 +1,45 @@
 {
-  "vid": "b088bf48-da3b-11da-93e0-00123ffe8333",
-  "topic": "clamav -- Freshclam HTTP Header Buffer Overflow Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "clamav"
-      ],
-      "range": [
-        {
-          "lt": "0.88.2",
-          "ge": "0.80"
-        }
-      ]
-    },
-    {
-      "name": [
-        "clamav-devel"
-      ],
-      "range": [
-        {
-          "lt": "20060502",
-          "ge": "20040826"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19880/\">\n\t  <p>A vulnerability has been reported in ClamAV, which can be\n\t    exploited by malicious people to cause a DoS (Denial of Service)\n\t    and potentially to compromise a vulnerable system.</p>\n\t  <p>The vulnerability is caused due to a boundary error within the\n\t    HTTP client in the Freshclam command line utility. This can be\n\t    exploited to cause a stack-based buffer overflow when the HTTP\n\t    headers received from a web server exceeds 8KB.</p>\n\t  <p>Successful exploitation requires that Freshclam is used to\n\t    download virus signature updates from a malicious mirror web\n\t    server e.g. via DNS poisoning.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.clamav.net/security/0.88.2.html",
-      "http://secunia.com/advisories/19880/"
-    ],
-    "cvename": [
-      "CVE-2006-1989"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-05-01",
-    "entry": "2006-05-03"
-  }
+	"vid": "b088bf48-da3b-11da-93e0-00123ffe8333",
+	"topic": "clamav -- Freshclam HTTP Header Buffer Overflow Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"clamav"
+			],
+			"range": [
+				{
+					"lt": "0.88.2",
+					"ge": "0.80"
+				}
+			]
+		},
+		{
+			"name": [
+				"clamav-devel"
+			],
+			"range": [
+				{
+					"lt": "20060502",
+					"ge": "20040826"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19880/\">\n\t  <p>A vulnerability has been reported in ClamAV, which can be\n\t    exploited by malicious people to cause a DoS (Denial of Service)\n\t    and potentially to compromise a vulnerable system.</p>\n\t  <p>The vulnerability is caused due to a boundary error within the\n\t    HTTP client in the Freshclam command line utility. This can be\n\t    exploited to cause a stack-based buffer overflow when the HTTP\n\t    headers received from a web server exceeds 8KB.</p>\n\t  <p>Successful exploitation requires that Freshclam is used to\n\t    download virus signature updates from a malicious mirror web\n\t    server e.g. via DNS poisoning.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.clamav.net/security/0.88.2.html",
+			"http://secunia.com/advisories/19880/"
+		],
+		"cvename": [
+			"CVE-2006-1989"
+		]
+	},
+	"dates": {
+		"discovery": "2006-05-01",
+		"entry": "2006-05-03"
+	}
 }

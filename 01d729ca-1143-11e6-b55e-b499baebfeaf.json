@@ -1,99 +1,99 @@
 {
-  "vid": "01d729ca-1143-11e6-b55e-b499baebfeaf",
-  "topic": "OpenSSL -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2_11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1e_8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libressl"
-      ],
-      "range": [
-        {
-          "lt": "2.3.4",
-          "ge": "2.3.0"
-        },
-        {
-          "lt": "2.2.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libressl-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.3.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.3_2",
-          "ge": "10.3"
-        },
-        {
-          "lt": "10.2_16",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_33",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_41",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSSL reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20160503.txt\">\n\t  <p>Memory corruption in the ASN.1 encoder</p>\n\t  <p>Padding oracle in AES-NI CBC MAC check</p>\n\t  <p>EVP_EncodeUpdate overflow</p>\n\t  <p>EVP_EncryptUpdate overflow</p>\n\t  <p>ASN.1 BIO excessive memory allocation</p>\n\t  <p>EBCDIC overread (OpenSSL only)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20160503.txt",
-      "https://marc.info/?l=openbsd-tech&m=146228598730414"
-    ],
-    "cvename": [
-      "CVE-2016-2105",
-      "CVE-2016-2106",
-      "CVE-2016-2107",
-      "CVE-2016-2108",
-      "CVE-2016-2109",
-      "CVE-2016-2176"
-    ],
-    "freebsd_sa": [
-      "SA-16:17.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-03",
-    "entry": "2016-05-03",
-    "modified": "2016-08-09"
-  }
+	"vid": "01d729ca-1143-11e6-b55e-b499baebfeaf",
+	"topic": "OpenSSL -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2_11"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1e_8"
+				}
+			]
+		},
+		{
+			"name": [
+				"libressl"
+			],
+			"range": [
+				{
+					"lt": "2.3.4",
+					"ge": "2.3.0"
+				},
+				{
+					"lt": "2.2.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"libressl-devel"
+			],
+			"range": [
+				{
+					"lt": "2.3.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.3_2",
+					"ge": "10.3"
+				},
+				{
+					"lt": "10.2_16",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_33",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_41",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSSL reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20160503.txt\">\n\t  <p>Memory corruption in the ASN.1 encoder</p>\n\t  <p>Padding oracle in AES-NI CBC MAC check</p>\n\t  <p>EVP_EncodeUpdate overflow</p>\n\t  <p>EVP_EncryptUpdate overflow</p>\n\t  <p>ASN.1 BIO excessive memory allocation</p>\n\t  <p>EBCDIC overread (OpenSSL only)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20160503.txt",
+			"https://marc.info/?l=openbsd-tech&m=146228598730414"
+		],
+		"cvename": [
+			"CVE-2016-2105",
+			"CVE-2016-2106",
+			"CVE-2016-2107",
+			"CVE-2016-2108",
+			"CVE-2016-2109",
+			"CVE-2016-2176"
+		],
+		"freebsd_sa": [
+			"SA-16:17.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-03",
+		"entry": "2016-05-03",
+		"modified": "2016-08-09"
+	}
 }

@@ -1,44 +1,44 @@
 {
-  "vid": "54075861-a95a-11e5-8b40-20cf30e32f6d",
-  "topic": "Bugzilla security issues",
-  "affects": [
-    {
-      "name": [
-        "bugzilla44"
-      ],
-      "range": [
-        {
-          "lt": "4.4.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bugzilla50"
-      ],
-      "range": [
-        {
-          "lt": "5.0.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Bugzilla Security Advisory</p>\n\t<blockquote cite=\"https://www.bugzilla.org/security/4.2.15/\">\n\t  <p>During the generation of a dependency graph, the code for\n\t    the HTML image map is generated locally if a local dot\n\t    installation is used. With escaped HTML characters in a bug\n\t    summary, it is possible to inject unfiltered HTML code in\n\t    the map file which the CreateImagemap function generates.\n\t    This could be used for a cross-site scripting attack.</p>\n\t  <p>If an external HTML page contains a &lt;script&gt; element with\n\t    its src attribute pointing to a buglist in CSV format, some\n\t    web browsers incorrectly try to parse the CSV file as valid\n\t    JavaScript code. As the buglist is generated based on the\n\t    privileges of the user logged into Bugzilla, the external\n\t    page could collect confidential data contained in the CSV\n\t    file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=1221518",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=1232785"
-    ],
-    "cvename": [
-      "CVE-2015-8508",
-      "CVE-2015-8509"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-22",
-    "entry": "2015-12-23"
-  }
+	"vid": "54075861-a95a-11e5-8b40-20cf30e32f6d",
+	"topic": "Bugzilla security issues",
+	"affects": [
+		{
+			"name": [
+				"bugzilla44"
+			],
+			"range": [
+				{
+					"lt": "4.4.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"bugzilla50"
+			],
+			"range": [
+				{
+					"lt": "5.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Bugzilla Security Advisory</p>\n\t<blockquote cite=\"https://www.bugzilla.org/security/4.2.15/\">\n\t  <p>During the generation of a dependency graph, the code for\n\t    the HTML image map is generated locally if a local dot\n\t    installation is used. With escaped HTML characters in a bug\n\t    summary, it is possible to inject unfiltered HTML code in\n\t    the map file which the CreateImagemap function generates.\n\t    This could be used for a cross-site scripting attack.</p>\n\t  <p>If an external HTML page contains a &lt;script&gt; element with\n\t    its src attribute pointing to a buglist in CSV format, some\n\t    web browsers incorrectly try to parse the CSV file as valid\n\t    JavaScript code. As the buglist is generated based on the\n\t    privileges of the user logged into Bugzilla, the external\n\t    page could collect confidential data contained in the CSV\n\t    file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=1221518",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=1232785"
+		],
+		"cvename": [
+			"CVE-2015-8508",
+			"CVE-2015-8509"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-22",
+		"entry": "2015-12-23"
+	}
 }

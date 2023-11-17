@@ -1,39 +1,39 @@
 {
-  "vid": "f682a506-df7c-11e5-81e4-6805ca0b3d42",
-  "topic": "phpmyadmin -- multiple XSS and a man-in-the-middle vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpmyadmin"
-      ],
-      "range": [
-        {
-          "lt": "4.5.5.1",
-          "ge": "4.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-10/\">\n\t  <p>XSS vulnerability in SQL parser.</p>\n\t  <p>Using a crafted SQL query, it is possible to trigger an XSS\n\t    attack through the SQL query page.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-11/\">\n\t  <p>Multiple XSS vulnerabilities.</p>\n\t  <p>By sending a specially crafted URL as part of the HOST\n\t    header, it is possible to trigger an XSS attack.</p>\n\t  <p>A weakness was found that allows an XSS attack with Internet\n\t    Explorer versions older than 8 and Safari on Windows using a\n\t    specially crafted URL.</p>\n\t  <p>Using a crafted SQL query, it is possible to trigger an XSS\n\t    attack through the SQL query page.</p>\n\t  <p>Using a crafted parameter value, it is possible to trigger\n\t    an XSS attack in user accounts page.</p>\n\t  <p>Using a crafted parameter value, it is possible to trigger\n\t    an XSS attack in zoom search page.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-12/\">\n\t  <p>Multiple XSS vulnerabilities.</p>\n\t  <p>With a crafted table/column name it is possible to trigger\n\t    an XSS attack in the database normalization page.</p>\n\t  <p>With a crafted parameter it is possible to trigger an XSS\n\t    attack in the database structure page.</p>\n\t  <p>With a crafted parameter it is possible to trigger an XSS\n\t    attack in central columns page.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-13/\">\n\t  <p>Vulnerability allowing man-in-the-middle attack on API\n\t    call to GitHub.</p>\n\t  <p>A vulnerability in the API call to GitHub can be exploited\n\t    to perform a man-in-the-middle attack.</p>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2016-10/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-11/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-12/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-13/"
-    ],
-    "cvename": [
-      "CVE-2016-2559",
-      "CVE-2016-2560",
-      "CVE-2016-2561",
-      "CVE-2016-2562"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-29",
-    "entry": "2016-03-01"
-  }
+	"vid": "f682a506-df7c-11e5-81e4-6805ca0b3d42",
+	"topic": "phpmyadmin -- multiple XSS and a man-in-the-middle vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpmyadmin"
+			],
+			"range": [
+				{
+					"lt": "4.5.5.1",
+					"ge": "4.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-10/\">\n\t  <p>XSS vulnerability in SQL parser.</p>\n\t  <p>Using a crafted SQL query, it is possible to trigger an XSS\n\t    attack through the SQL query page.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-11/\">\n\t  <p>Multiple XSS vulnerabilities.</p>\n\t  <p>By sending a specially crafted URL as part of the HOST\n\t    header, it is possible to trigger an XSS attack.</p>\n\t  <p>A weakness was found that allows an XSS attack with Internet\n\t    Explorer versions older than 8 and Safari on Windows using a\n\t    specially crafted URL.</p>\n\t  <p>Using a crafted SQL query, it is possible to trigger an XSS\n\t    attack through the SQL query page.</p>\n\t  <p>Using a crafted parameter value, it is possible to trigger\n\t    an XSS attack in user accounts page.</p>\n\t  <p>Using a crafted parameter value, it is possible to trigger\n\t    an XSS attack in zoom search page.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-12/\">\n\t  <p>Multiple XSS vulnerabilities.</p>\n\t  <p>With a crafted table/column name it is possible to trigger\n\t    an XSS attack in the database normalization page.</p>\n\t  <p>With a crafted parameter it is possible to trigger an XSS\n\t    attack in the database structure page.</p>\n\t  <p>With a crafted parameter it is possible to trigger an XSS\n\t    attack in central columns page.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-13/\">\n\t  <p>Vulnerability allowing man-in-the-middle attack on API\n\t    call to GitHub.</p>\n\t  <p>A vulnerability in the API call to GitHub can be exploited\n\t    to perform a man-in-the-middle attack.</p>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2016-10/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-11/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-12/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-13/"
+		],
+		"cvename": [
+			"CVE-2016-2559",
+			"CVE-2016-2560",
+			"CVE-2016-2561",
+			"CVE-2016-2562"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-29",
+		"entry": "2016-03-01"
+	}
 }

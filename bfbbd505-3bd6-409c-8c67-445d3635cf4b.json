@@ -1,33 +1,33 @@
 {
-  "vid": "bfbbd505-3bd6-409c-8c67-445d3635cf4b",
-  "topic": "xli -- integer overflows in image size calculations",
-  "affects": [
-    {
-      "name": [
-        "xli"
-      ],
-      "range": [
-        {
-          "le": "1.17.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tavis Ormandy discovered several integer overflows in xli's\n\t  image size handling.\tA maliciously crafted image may be able\n\t  to cause a heap buffer overflow and execute arbitrary code.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.gentoo.org/show_bug.cgi?id=79762",
-      "http://pantransit.reptiles.org/prog/xli/CHANGES"
-    ],
-    "cvename": [
-      "CVE-2005-0639"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-08",
-    "entry": "2005-06-03"
-  }
+	"vid": "bfbbd505-3bd6-409c-8c67-445d3635cf4b",
+	"topic": "xli -- integer overflows in image size calculations",
+	"affects": [
+		{
+			"name": [
+				"xli"
+			],
+			"range": [
+				{
+					"le": "1.17.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tavis Ormandy discovered several integer overflows in xli's\n\t  image size handling.\tA maliciously crafted image may be able\n\t  to cause a heap buffer overflow and execute arbitrary code.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.gentoo.org/show_bug.cgi?id=79762",
+			"http://pantransit.reptiles.org/prog/xli/CHANGES"
+		],
+		"cvename": [
+			"CVE-2005-0639"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-08",
+		"entry": "2005-06-03"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "vid": "3dd7eb58-80ae-11db-b4ec-000854d03344",
-  "topic": "gtar -- GNUTYPE_NAMES directory traversal vulnerability",
-  "affects": [
-    {
-      "name": [
-        "gtar"
-      ],
-      "range": [
-        {
-          "lt": "1.16_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Teemu Salmela reports:</p>\n\t<blockquote cite=\"http://archives.neohapsis.com/archives/fulldisclosure/2006-11/0344.html\">\n\t  <p>There is a tar record type, called GNUTYPE_NAMES (an\n\t    obsolete GNU extension), that allows the creation of\n\t    symbolic links pointing to arbitrary locations in the\n\t    filesystem, which makes it possible to create/overwrite\n\t    arbitrary files.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://archives.neohapsis.com/archives/fulldisclosure/2006-11/0344.html"
-    ],
-    "cvename": [
-      "CVE-2006-6097"
-    ],
-    "bid": [
-      "21235"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-11-21",
-    "entry": "2006-11-30"
-  }
+	"vid": "3dd7eb58-80ae-11db-b4ec-000854d03344",
+	"topic": "gtar -- GNUTYPE_NAMES directory traversal vulnerability",
+	"affects": [
+		{
+			"name": [
+				"gtar"
+			],
+			"range": [
+				{
+					"lt": "1.16_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Teemu Salmela reports:</p>\n\t<blockquote cite=\"http://archives.neohapsis.com/archives/fulldisclosure/2006-11/0344.html\">\n\t  <p>There is a tar record type, called GNUTYPE_NAMES (an\n\t    obsolete GNU extension), that allows the creation of\n\t    symbolic links pointing to arbitrary locations in the\n\t    filesystem, which makes it possible to create/overwrite\n\t    arbitrary files.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://archives.neohapsis.com/archives/fulldisclosure/2006-11/0344.html"
+		],
+		"cvename": [
+			"CVE-2006-6097"
+		],
+		"bid": [
+			"21235"
+		]
+	},
+	"dates": {
+		"discovery": "2006-11-21",
+		"entry": "2006-11-30"
+	}
 }

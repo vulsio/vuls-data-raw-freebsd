@@ -1,52 +1,52 @@
 {
-  "vid": "3d0eeef8-0cf9-11e8-99b0-d017c2987f9a",
-  "topic": "Mailman -- Cross-site scripting (XSS) vulnerability in the web UI",
-  "affects": [
-    {
-      "name": [
-        "mailman"
-      ],
-      "range": [
-        {
-          "lt": "2.1.26"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mailman-with-htdig"
-      ],
-      "range": [
-        {
-          "lt": "2.1.26"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ja-mailman"
-      ],
-      "range": [
-        {
-          "le": "2.1.14.j7_3,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://www.mail-archive.com/mailman-users@python.org/msg70478.html\">\n\t  <p>An XSS vulnerability in the user options CGI could allow a crafted URL\n\t     to execute arbitrary javascript in a user's browser. A related issue\n\t     could expose information on a user's options page without requiring\n\t     login.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mail-archive.com/mailman-users@python.org/msg70478.html"
-    ],
-    "cvename": [
-      "CVE-2018-5950"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-01-20",
-    "entry": "2018-02-08"
-  }
+	"vid": "3d0eeef8-0cf9-11e8-99b0-d017c2987f9a",
+	"topic": "Mailman -- Cross-site scripting (XSS) vulnerability in the web UI",
+	"affects": [
+		{
+			"name": [
+				"mailman"
+			],
+			"range": [
+				{
+					"lt": "2.1.26"
+				}
+			]
+		},
+		{
+			"name": [
+				"mailman-with-htdig"
+			],
+			"range": [
+				{
+					"lt": "2.1.26"
+				}
+			]
+		},
+		{
+			"name": [
+				"ja-mailman"
+			],
+			"range": [
+				{
+					"le": "2.1.14.j7_3,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://www.mail-archive.com/mailman-users@python.org/msg70478.html\">\n\t  <p>An XSS vulnerability in the user options CGI could allow a crafted URL\n\t     to execute arbitrary javascript in a user's browser. A related issue\n\t     could expose information on a user's options page without requiring\n\t     login.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mail-archive.com/mailman-users@python.org/msg70478.html"
+		],
+		"cvename": [
+			"CVE-2018-5950"
+		]
+	},
+	"dates": {
+		"discovery": "2018-01-20",
+		"entry": "2018-02-08"
+	}
 }

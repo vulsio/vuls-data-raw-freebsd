@@ -1,73 +1,73 @@
 {
-  "vid": "da690355-1159-11d9-bc4a-000c41e2cdad",
-  "topic": "mozilla -- vCard stack buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "0.7.3_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2_2,2"
-        },
-        {
-          "lt": "1.8.a3_1,2",
-          "ge": "1.8.a,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla-gtk1"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Georgi Guninski discovered a stack buffer overflow which\n\t  may be triggered when viewing email messages with vCard\n\t  attachments.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugzilla.mozilla.org/show_bug.cgi?id=257314"
-    ],
-    "cvename": [
-      "CVE-2004-0903"
-    ],
-    "cert_vu": [
-      "414240"
-    ],
-    "us_cert_ta": [
-      "TA04-261A"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-13",
-    "entry": "2004-09-28",
-    "modified": "2004-09-30"
-  }
+	"vid": "da690355-1159-11d9-bc4a-000c41e2cdad",
+	"topic": "mozilla -- vCard stack buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "0.7.3_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.2_2,2"
+				},
+				{
+					"lt": "1.8.a3_1,2",
+					"ge": "1.8.a,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla-gtk1"
+			],
+			"range": [
+				{
+					"lt": "1.7.2_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Georgi Guninski discovered a stack buffer overflow which\n\t  may be triggered when viewing email messages with vCard\n\t  attachments.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugzilla.mozilla.org/show_bug.cgi?id=257314"
+		],
+		"cvename": [
+			"CVE-2004-0903"
+		],
+		"cert_vu": [
+			"414240"
+		],
+		"us_cert_ta": [
+			"TA04-261A"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-13",
+		"entry": "2004-09-28",
+		"modified": "2004-09-30"
+	}
 }

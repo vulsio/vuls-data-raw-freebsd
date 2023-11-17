@@ -1,33 +1,33 @@
 {
-  "vid": "0871d18b-9638-11e3-a371-6805ca0b3d42",
-  "topic": "phpMyAdmin -- Self-XSS due to unescaped HTML output in import.",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "4.1.7",
-          "ge": "3.3.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-1.php\">\n\t  <p> When importing a file with crafted filename, it is\n\t    possible to trigger an XSS.  We consider this vulnerability\n\t    to be non critical.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2014-1.php"
-    ],
-    "cvename": [
-      "CVE-2014-1879"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-02-15",
-    "entry": "2014-02-15"
-  }
+	"vid": "0871d18b-9638-11e3-a371-6805ca0b3d42",
+	"topic": "phpMyAdmin -- Self-XSS due to unescaped HTML output in import.",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "4.1.7",
+					"ge": "3.3.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2014-1.php\">\n\t  <p> When importing a file with crafted filename, it is\n\t    possible to trigger an XSS.  We consider this vulnerability\n\t    to be non critical.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2014-1.php"
+		],
+		"cvename": [
+			"CVE-2014-1879"
+		]
+	},
+	"dates": {
+		"discovery": "2014-02-15",
+		"entry": "2014-02-15"
+	}
 }

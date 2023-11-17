@@ -1,36 +1,36 @@
 {
-  "vid": "949c470e-528f-11d9-ac20-00065be4b5b6",
-  "topic": "golddig -- local buffer overflow vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "golddig"
-      ],
-      "range": [
-        {
-          "le": "2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Two buffer overflow vulnerabilities where detected. Both issues can\n\t  be used by local users to gain group games privileges on affected\n\t  systems.</p>\n\t<p>The first overflow exists in the map name handling and can be\n\t  triggered when a very long name is given to the program during\n\t  command-line execution</p>\n\t<p>The second overflow exists in the username processing while writing\n\t  the players score to disk. Excessivly long usernames, set via the USER\n\t  environment variable, are stored without any length checks in a memory\n\t  buffer.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-0121"
-    ],
-    "mlist": [
-      {
-        "text": "http://docs.FreeBSD.org/cgi/mid.cgi?200412021055.iB2AtweU067125",
-        "msgid": "200412021055.iB2AtweU067125@repoman.freebsd.org"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-11-11",
-    "entry": "2005-01-03",
-    "modified": "2005-01-19"
-  }
+	"vid": "949c470e-528f-11d9-ac20-00065be4b5b6",
+	"topic": "golddig -- local buffer overflow vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"golddig"
+			],
+			"range": [
+				{
+					"le": "2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Two buffer overflow vulnerabilities where detected. Both issues can\n\t  be used by local users to gain group games privileges on affected\n\t  systems.</p>\n\t<p>The first overflow exists in the map name handling and can be\n\t  triggered when a very long name is given to the program during\n\t  command-line execution</p>\n\t<p>The second overflow exists in the username processing while writing\n\t  the players score to disk. Excessivly long usernames, set via the USER\n\t  environment variable, are stored without any length checks in a memory\n\t  buffer.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-0121"
+		],
+		"mlist": [
+			{
+				"text": "http://docs.FreeBSD.org/cgi/mid.cgi?200412021055.iB2AtweU067125",
+				"msgid": "200412021055.iB2AtweU067125@repoman.freebsd.org"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-11-11",
+		"entry": "2005-01-03",
+		"modified": "2005-01-19"
+	}
 }

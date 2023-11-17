@@ -1,33 +1,33 @@
 {
-  "vid": "5a39a22e-5478-11db-8f1a-000a48049292",
-  "topic": "mono -- \"System.CodeDom.Compiler\" Insecure Temporary Creation",
-  "affects": [
-    {
-      "name": [
-        "mono"
-      ],
-      "range": [
-        {
-          "lt": "1.1.13.8.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Sebastian Krahmer reports:</p>\n\t<blockquote cite=\"http://www.ubuntu.com/usn/usn-357-1\">\n\t  <p>Sebastian Krahmer of the SuSE security team discovered\n\t    that the System.CodeDom.Compiler classes used temporary\n\t    files in an insecure way. This could allow a symbolic link\n\t    attack to create or overwrite arbitrary files with the\n\t    privileges of the user invoking the program. Under some\n\t    circumstances, a local attacker could also exploit this to\n\t    inject arbitrary code into running Mono processes.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.ubuntu.com/usn/usn-357-1",
-      "http://secunia.com/advisories/22237/"
-    ],
-    "cvename": [
-      "CVE-2006-5072"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-10-04",
-    "entry": "2006-10-05"
-  }
+	"vid": "5a39a22e-5478-11db-8f1a-000a48049292",
+	"topic": "mono -- \"System.CodeDom.Compiler\" Insecure Temporary Creation",
+	"affects": [
+		{
+			"name": [
+				"mono"
+			],
+			"range": [
+				{
+					"lt": "1.1.13.8.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Sebastian Krahmer reports:</p>\n\t<blockquote cite=\"http://www.ubuntu.com/usn/usn-357-1\">\n\t  <p>Sebastian Krahmer of the SuSE security team discovered\n\t    that the System.CodeDom.Compiler classes used temporary\n\t    files in an insecure way. This could allow a symbolic link\n\t    attack to create or overwrite arbitrary files with the\n\t    privileges of the user invoking the program. Under some\n\t    circumstances, a local attacker could also exploit this to\n\t    inject arbitrary code into running Mono processes.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.ubuntu.com/usn/usn-357-1",
+			"http://secunia.com/advisories/22237/"
+		],
+		"cvename": [
+			"CVE-2006-5072"
+		]
+	},
+	"dates": {
+		"discovery": "2006-10-04",
+		"entry": "2006-10-05"
+	}
 }

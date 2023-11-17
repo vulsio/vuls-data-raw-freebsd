@@ -1,44 +1,44 @@
 {
-  "vid": "5f0dd349-40a2-11ea-8d8c-005056a311d1",
-  "topic": "samba -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "samba410"
-      ],
-      "range": [
-        {
-          "lt": "4.10.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba411"
-      ],
-      "range": [
-        {
-          "lt": "4.11.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/history/samba-4.10.12.html\">\n\t  <p>CVE-2019-14902</p>\n\t  <p>The implementation of ACL inheritance in the Samba AD DC was not complete,\n\t     and so absent a 'full-sync' replication, ACLs could get out of sync between\n\t    domain controllers.</p>\n\t  <p>CVE-2019-14907</p>\n\t  <p>When processing untrusted string input Samba can read past the end of the\n\t     allocated buffer when printing a \"Conversion error\" message to the logs.</p>\n\t  <p>CVE-2019-19344</p>\n\t  <p>During DNS zone scavenging (of expired dynamic entries) there is a read of\n\t     memory after it has been freed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.samba.org/samba/history/samba-4.10.12.html"
-    ],
-    "cvename": [
-      "CVE-2019-14902",
-      "CVE-2019-14907",
-      "CVE-2019-19344"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-01-14",
-    "entry": "2020-01-27"
-  }
+	"vid": "5f0dd349-40a2-11ea-8d8c-005056a311d1",
+	"topic": "samba -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"samba410"
+			],
+			"range": [
+				{
+					"lt": "4.10.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba411"
+			],
+			"range": [
+				{
+					"lt": "4.11.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/history/samba-4.10.12.html\">\n\t  <p>CVE-2019-14902</p>\n\t  <p>The implementation of ACL inheritance in the Samba AD DC was not complete,\n\t     and so absent a 'full-sync' replication, ACLs could get out of sync between\n\t    domain controllers.</p>\n\t  <p>CVE-2019-14907</p>\n\t  <p>When processing untrusted string input Samba can read past the end of the\n\t     allocated buffer when printing a \"Conversion error\" message to the logs.</p>\n\t  <p>CVE-2019-19344</p>\n\t  <p>During DNS zone scavenging (of expired dynamic entries) there is a read of\n\t     memory after it has been freed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.samba.org/samba/history/samba-4.10.12.html"
+		],
+		"cvename": [
+			"CVE-2019-14902",
+			"CVE-2019-14907",
+			"CVE-2019-19344"
+		]
+	},
+	"dates": {
+		"discovery": "2020-01-14",
+		"entry": "2020-01-27"
+	}
 }

@@ -1,41 +1,41 @@
 {
-  "vid": "2c5b9cd7-f7e6-11ea-88f8-901b0ef719ab",
-  "topic": "FreeBSD -- bhyve privilege escalation via VMCS access",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.1_10",
-          "ge": "12.1"
-        },
-        {
-          "lt": "11.4_4",
-          "ge": "11.4"
-        },
-        {
-          "lt": "11.3_14",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>AMD and Intel CPUs support hardware virtualization using specialized data\n\tstructures that control various aspects of guest operation.  These are the\n\tVirtual Machine Control Structure (VMCS) on Intel CPUs, and the Virtual\n\tMachine Control Block (VMCB) on AMD CPUs.  Insufficient access controls allow\n\troot users, including those running in a jail, to change these data\n\tstructures.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker with host root access (including to a jailed bhyve instance) can\n\tuse this vulnerability to achieve kernel code execution.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2020-24718"
-    ],
-    "freebsd_sa": [
-      "SA-20:28.bhyve_vmcs"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-09-15",
-    "entry": "2020-09-16"
-  }
+	"vid": "2c5b9cd7-f7e6-11ea-88f8-901b0ef719ab",
+	"topic": "FreeBSD -- bhyve privilege escalation via VMCS access",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.1_10",
+					"ge": "12.1"
+				},
+				{
+					"lt": "11.4_4",
+					"ge": "11.4"
+				},
+				{
+					"lt": "11.3_14",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>AMD and Intel CPUs support hardware virtualization using specialized data\n\tstructures that control various aspects of guest operation.  These are the\n\tVirtual Machine Control Structure (VMCS) on Intel CPUs, and the Virtual\n\tMachine Control Block (VMCB) on AMD CPUs.  Insufficient access controls allow\n\troot users, including those running in a jail, to change these data\n\tstructures.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker with host root access (including to a jailed bhyve instance) can\n\tuse this vulnerability to achieve kernel code execution.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2020-24718"
+		],
+		"freebsd_sa": [
+			"SA-20:28.bhyve_vmcs"
+		]
+	},
+	"dates": {
+		"discovery": "2020-09-15",
+		"entry": "2020-09-16"
+	}
 }

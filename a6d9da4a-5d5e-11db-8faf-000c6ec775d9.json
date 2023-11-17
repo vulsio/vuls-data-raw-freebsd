@@ -1,39 +1,39 @@
 {
-  "vid": "a6d9da4a-5d5e-11db-8faf-000c6ec775d9",
-  "topic": "NVIDIA UNIX driver -- arbitrary root code execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "nvidia-driver"
-      ],
-      "range": [
-        {
-          "lt": "1.0.8776",
-          "ge": "1.0.8762"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Rapid7 reports:</p>\n\t<blockquote cite=\"http://www.rapid7.com/advisories/R7-0025.jsp\">\n\t  <p>The NVIDIA Binary Graphics Driver for Linux is vulnerable\n\t    to a buffer overflow that allows an attacker to run\n\t    arbitrary code as root. This bug can be exploited both\n\t    locally or remotely (via a remote X client or an X client\n\t    which visits a malicious web page).  A working\n\t    proof-of-concept root exploit is included with this\n\t    advisory.</p>\n\t  <p>The NVIDIA drivers for Solaris and FreeBSD are also\n\t    likely to be vulnerable.</p>\n\t</blockquote>\n\t<p>Disabling Render acceleration in the \"nvidia\" driver, via\n\t  the \"RenderAccel\" X configuration option, can be used as a\n\t  workaround for this issue.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://nvidia.custhelp.com/cgi-bin/nvidia.cfg/php/enduser/std_adp.php?p_faqid=1971",
-      "http://secunia.com/advisories/22419/",
-      "http://www.rapid7.com/advisories/R7-0025.jsp"
-    ],
-    "cvename": [
-      "CVE-2006-5379"
-    ],
-    "cert_vu": [
-      "147252"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-10-16",
-    "entry": "2006-10-16",
-    "modified": "2006-10-21"
-  }
+	"vid": "a6d9da4a-5d5e-11db-8faf-000c6ec775d9",
+	"topic": "NVIDIA UNIX driver -- arbitrary root code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"nvidia-driver"
+			],
+			"range": [
+				{
+					"lt": "1.0.8776",
+					"ge": "1.0.8762"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Rapid7 reports:</p>\n\t<blockquote cite=\"http://www.rapid7.com/advisories/R7-0025.jsp\">\n\t  <p>The NVIDIA Binary Graphics Driver for Linux is vulnerable\n\t    to a buffer overflow that allows an attacker to run\n\t    arbitrary code as root. This bug can be exploited both\n\t    locally or remotely (via a remote X client or an X client\n\t    which visits a malicious web page).  A working\n\t    proof-of-concept root exploit is included with this\n\t    advisory.</p>\n\t  <p>The NVIDIA drivers for Solaris and FreeBSD are also\n\t    likely to be vulnerable.</p>\n\t</blockquote>\n\t<p>Disabling Render acceleration in the \"nvidia\" driver, via\n\t  the \"RenderAccel\" X configuration option, can be used as a\n\t  workaround for this issue.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://nvidia.custhelp.com/cgi-bin/nvidia.cfg/php/enduser/std_adp.php?p_faqid=1971",
+			"http://secunia.com/advisories/22419/",
+			"http://www.rapid7.com/advisories/R7-0025.jsp"
+		],
+		"cvename": [
+			"CVE-2006-5379"
+		],
+		"cert_vu": [
+			"147252"
+		]
+	},
+	"dates": {
+		"discovery": "2006-10-16",
+		"entry": "2006-10-16",
+		"modified": "2006-10-21"
+	}
 }

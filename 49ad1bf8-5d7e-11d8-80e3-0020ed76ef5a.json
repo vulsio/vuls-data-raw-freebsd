@@ -1,29 +1,29 @@
 {
-  "vid": "49ad1bf8-5d7e-11d8-80e3-0020ed76ef5a",
-  "topic": "ChiTeX/ChiLaTeX unsafe set-user-id root",
-  "affects": [
-    {
-      "name": [
-        "zh-chitex"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Niels Heinen reports that ChiTeX installs set-user-id root\n\t  executables that invoked system(3) without setting up the\n\t  environment, trivially allowing local root compromise.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.freebsd.org/cgi/mid.cgi?200303251301.h2PD1m9Y053389"
-    ]
-  },
-  "dates": {
-    "discovery": "2003-04-25",
-    "entry": "2004-02-12"
-  }
+	"vid": "49ad1bf8-5d7e-11d8-80e3-0020ed76ef5a",
+	"topic": "ChiTeX/ChiLaTeX unsafe set-user-id root",
+	"affects": [
+		{
+			"name": [
+				"zh-chitex"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Niels Heinen reports that ChiTeX installs set-user-id root\n\t  executables that invoked system(3) without setting up the\n\t  environment, trivially allowing local root compromise.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.freebsd.org/cgi/mid.cgi?200303251301.h2PD1m9Y053389"
+		]
+	},
+	"dates": {
+		"discovery": "2003-04-25",
+		"entry": "2004-02-12"
+	}
 }

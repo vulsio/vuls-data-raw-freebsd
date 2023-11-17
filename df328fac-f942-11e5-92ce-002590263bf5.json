@@ -1,33 +1,33 @@
 {
-  "vid": "df328fac-f942-11e5-92ce-002590263bf5",
-  "topic": "py-djblets -- Self-XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py27-djblets",
-        "py32-djblets",
-        "py33-djblets",
-        "py34-djblets",
-        "py35-djblets"
-      ],
-      "range": [
-        {
-          "lt": "0.9.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Djblets Release Notes reports:</p>\n\t<blockquote cite=\"https://www.reviewboard.org/docs/releasenotes/djblets/0.9.2/\">\n\t  <p>A recently-discovered vulnerability in the datagrid templates allows an\n\t    attacker to generate a URL to any datagrid page containing malicious code\n\t    in a column sorting value. If the user visits that URL and then clicks\n\t    that column, the code will execute.</p>\n\t  <p>The cause of the vulnerability was due to a template not escaping\n\t    user-provided values.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.reviewboard.org/docs/releasenotes/djblets/0.9.2/"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-01",
-    "entry": "2016-04-03"
-  }
+	"vid": "df328fac-f942-11e5-92ce-002590263bf5",
+	"topic": "py-djblets -- Self-XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py27-djblets",
+				"py32-djblets",
+				"py33-djblets",
+				"py34-djblets",
+				"py35-djblets"
+			],
+			"range": [
+				{
+					"lt": "0.9.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Djblets Release Notes reports:</p>\n\t<blockquote cite=\"https://www.reviewboard.org/docs/releasenotes/djblets/0.9.2/\">\n\t  <p>A recently-discovered vulnerability in the datagrid templates allows an\n\t    attacker to generate a URL to any datagrid page containing malicious code\n\t    in a column sorting value. If the user visits that URL and then clicks\n\t    that column, the code will execute.</p>\n\t  <p>The cause of the vulnerability was due to a template not escaping\n\t    user-provided values.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.reviewboard.org/docs/releasenotes/djblets/0.9.2/"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-01",
+		"entry": "2016-04-03"
+	}
 }

@@ -1,45 +1,45 @@
 {
-  "vid": "416ca0f4-3fe0-11e9-bbdd-6805ca0b3d42",
-  "topic": "rt -- XSS via jQuery",
-  "affects": [
-    {
-      "name": [
-        "rt42"
-      ],
-      "range": [
-        {
-          "lt": "4.2.16",
-          "ge": "4.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rt44"
-      ],
-      "range": [
-        {
-          "lt": "4.4.4",
-          "ge": "4.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>BestPractical reports:</p>\n\t<blockquote cite=\"https://docs.bestpractical.com/release-notes/rt/4.4.4\">\n\n\t  <p>The version of jQuery used in RT 4.2 and 4.4 has a\n\t    Cross-site Scripting (XSS) vulnerability when using\n\t    cross-domain Ajax requests. This vulnerability is assigned\n\t    <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-9251\">CVE-2015-9251</a>. RT\n\t    does not use this jQuery feature so it is not directly\n\t    vulnerable. jQuery version 1.12 no longer receives official\n\t    updates, however a fix was posted with recommendations for\n\t    applications to patch locally, so RT will follow this\n\t    recommendation and ship with a patched version.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.bestpractical.com/release-notes/rt/4.4.4",
-      "https://docs.bestpractical.com/release-notes/rt/4.2.16"
-    ],
-    "cvename": [
-      "CVE-2015-9251"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-03-05",
-    "entry": "2019-03-06"
-  }
+	"vid": "416ca0f4-3fe0-11e9-bbdd-6805ca0b3d42",
+	"topic": "rt -- XSS via jQuery",
+	"affects": [
+		{
+			"name": [
+				"rt42"
+			],
+			"range": [
+				{
+					"lt": "4.2.16",
+					"ge": "4.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"rt44"
+			],
+			"range": [
+				{
+					"lt": "4.4.4",
+					"ge": "4.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>BestPractical reports:</p>\n\t<blockquote cite=\"https://docs.bestpractical.com/release-notes/rt/4.4.4\">\n\n\t  <p>The version of jQuery used in RT 4.2 and 4.4 has a\n\t    Cross-site Scripting (XSS) vulnerability when using\n\t    cross-domain Ajax requests. This vulnerability is assigned\n\t    <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-9251\">CVE-2015-9251</a>. RT\n\t    does not use this jQuery feature so it is not directly\n\t    vulnerable. jQuery version 1.12 no longer receives official\n\t    updates, however a fix was posted with recommendations for\n\t    applications to patch locally, so RT will follow this\n\t    recommendation and ship with a patched version.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.bestpractical.com/release-notes/rt/4.4.4",
+			"https://docs.bestpractical.com/release-notes/rt/4.2.16"
+		],
+		"cvename": [
+			"CVE-2015-9251"
+		]
+	},
+	"dates": {
+		"discovery": "2019-03-05",
+		"entry": "2019-03-06"
+	}
 }

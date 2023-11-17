@@ -1,70 +1,70 @@
 {
-  "vid": "8c773d7f-6cbb-11e2-b242-c8600054b392",
-  "topic": "mysql/mariadb/percona server -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mysql-server"
-      ],
-      "range": [
-        {
-          "lt": "5.1.67",
-          "ge": "5.1"
-        },
-        {
-          "lt": "5.5.29",
-          "ge": "5.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mariadb-server"
-      ],
-      "range": [
-        {
-          "lt": "5.3.12",
-          "ge": "5.3"
-        },
-        {
-          "lt": "5.5.29",
-          "ge": "5.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "percona-server"
-      ],
-      "range": [
-        {
-          "lt": "5.5.29.29.4",
-          "ge": "5.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ORACLE reports:</p>\n\t<blockquote cite=\"http://www.oracle.com/technetwork/topics/security/cpujan2013-1515902.html\">\n\t  <p>Multiple SQL injection vulnerabilities in the replication code</p>\n\t  <p>Stack-based buffer overflow</p>\n\t  <p>Heap-based buffer overflow</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://mariadb.atlassian.net/browse/MDEV-4029",
-      "https://mariadb.atlassian.net/browse/MDEV-MDEV-729",
-      "https://mariadb.atlassian.net/browse/MDEV-MDEV-729",
-      "http://www.mysqlperformanceblog.com/2013/01/23/announcing-percona-server-5-5-29-29-4/"
-    ],
-    "cvename": [
-      "CVE-2012-4414",
-      "CVE-2012-5611",
-      "CVE-2012-5612",
-      "CVE-2012-5615",
-      "CVE-2012-5627"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-12-01",
-    "entry": "2013-02-01"
-  }
+	"vid": "8c773d7f-6cbb-11e2-b242-c8600054b392",
+	"topic": "mysql/mariadb/percona server -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mysql-server"
+			],
+			"range": [
+				{
+					"lt": "5.1.67",
+					"ge": "5.1"
+				},
+				{
+					"lt": "5.5.29",
+					"ge": "5.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"mariadb-server"
+			],
+			"range": [
+				{
+					"lt": "5.3.12",
+					"ge": "5.3"
+				},
+				{
+					"lt": "5.5.29",
+					"ge": "5.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"percona-server"
+			],
+			"range": [
+				{
+					"lt": "5.5.29.29.4",
+					"ge": "5.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ORACLE reports:</p>\n\t<blockquote cite=\"http://www.oracle.com/technetwork/topics/security/cpujan2013-1515902.html\">\n\t  <p>Multiple SQL injection vulnerabilities in the replication code</p>\n\t  <p>Stack-based buffer overflow</p>\n\t  <p>Heap-based buffer overflow</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://mariadb.atlassian.net/browse/MDEV-4029",
+			"https://mariadb.atlassian.net/browse/MDEV-MDEV-729",
+			"https://mariadb.atlassian.net/browse/MDEV-MDEV-729",
+			"http://www.mysqlperformanceblog.com/2013/01/23/announcing-percona-server-5-5-29-29-4/"
+		],
+		"cvename": [
+			"CVE-2012-4414",
+			"CVE-2012-5611",
+			"CVE-2012-5612",
+			"CVE-2012-5615",
+			"CVE-2012-5627"
+		]
+	},
+	"dates": {
+		"discovery": "2012-12-01",
+		"entry": "2013-02-01"
+	}
 }

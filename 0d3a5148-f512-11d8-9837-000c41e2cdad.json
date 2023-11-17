@@ -1,41 +1,41 @@
 {
-  "vid": "0d3a5148-f512-11d8-9837-000c41e2cdad",
-  "topic": "SpamAssassin -- denial-of-service in tokenize_headers",
-  "affects": [
-    {
-      "name": [
-        "p5-Mail-SpamAssassin"
-      ],
-      "range": [
-        {
-          "lt": "2.64"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>According to the SpamAssassin 2.64 release announcement:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=spamassassin-announce&amp;m=109168121628767\">\n\t  <p>Security fix prevents a denial of service attack open\n\t    to certain malformed messages; this DoS affects all\n\t    SpamAssassin 2.5x and 2.6x versions to date.</p>\n\t</blockquote>\n\t<p>The issue appears to be triggered by overly long message\n\t  headers.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://search.cpan.org/src/JMASON/Mail-SpamAssassin-2.64/Changes"
-    ],
-    "cvename": [
-      "CVE-2004-0796"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=spamassassin-announce&m=109168121628767"
-      }
-    ],
-    "bid": [
-      "10957"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-04",
-    "entry": "2004-08-23",
-    "modified": "2004-08-28"
-  }
+	"vid": "0d3a5148-f512-11d8-9837-000c41e2cdad",
+	"topic": "SpamAssassin -- denial-of-service in tokenize_headers",
+	"affects": [
+		{
+			"name": [
+				"p5-Mail-SpamAssassin"
+			],
+			"range": [
+				{
+					"lt": "2.64"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>According to the SpamAssassin 2.64 release announcement:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=spamassassin-announce&amp;m=109168121628767\">\n\t  <p>Security fix prevents a denial of service attack open\n\t    to certain malformed messages; this DoS affects all\n\t    SpamAssassin 2.5x and 2.6x versions to date.</p>\n\t</blockquote>\n\t<p>The issue appears to be triggered by overly long message\n\t  headers.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://search.cpan.org/src/JMASON/Mail-SpamAssassin-2.64/Changes"
+		],
+		"cvename": [
+			"CVE-2004-0796"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=spamassassin-announce&m=109168121628767"
+			}
+		],
+		"bid": [
+			"10957"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-04",
+		"entry": "2004-08-23",
+		"modified": "2004-08-28"
+	}
 }

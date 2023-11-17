@@ -1,33 +1,33 @@
 {
-  "vid": "f358de71-bf64-11dc-928b-0016179b2dd5",
-  "topic": "maradns -- CNAME record resource rotation denial of service",
-  "affects": [
-    {
-      "name": [
-        "maradns"
-      ],
-      "range": [
-        {
-          "lt": "1.2.12.08"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/28329\">\n\t  <p>A vulnerability has been reported in MaraDNS, which can be\n\t    exploited by malicious people to cause a Denial of Service.</p>\n\t  <p>The vulnerability is caused due to an error within the handling of\n\t    certain DNS packets. This can be exploited to cause a resource\n\t    rotation by sending specially crafted DNS packets, which cause an\n\t    authoritative CNAME record to not resolve, resulting in a Denial of\n\t    Sevices.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://maradns.blogspot.com/2007/08/maradns-update-all-versions.html",
-      "http://secunia.com/advisories/28329"
-    ],
-    "cvename": [
-      "CVE-2008-0061"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-01-04",
-    "entry": "2008-01-10"
-  }
+	"vid": "f358de71-bf64-11dc-928b-0016179b2dd5",
+	"topic": "maradns -- CNAME record resource rotation denial of service",
+	"affects": [
+		{
+			"name": [
+				"maradns"
+			],
+			"range": [
+				{
+					"lt": "1.2.12.08"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/28329\">\n\t  <p>A vulnerability has been reported in MaraDNS, which can be\n\t    exploited by malicious people to cause a Denial of Service.</p>\n\t  <p>The vulnerability is caused due to an error within the handling of\n\t    certain DNS packets. This can be exploited to cause a resource\n\t    rotation by sending specially crafted DNS packets, which cause an\n\t    authoritative CNAME record to not resolve, resulting in a Denial of\n\t    Sevices.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://maradns.blogspot.com/2007/08/maradns-update-all-versions.html",
+			"http://secunia.com/advisories/28329"
+		],
+		"cvename": [
+			"CVE-2008-0061"
+		]
+	},
+	"dates": {
+		"discovery": "2008-01-04",
+		"entry": "2008-01-10"
+	}
 }

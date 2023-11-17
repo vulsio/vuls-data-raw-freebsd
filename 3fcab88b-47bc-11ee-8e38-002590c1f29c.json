@@ -1,41 +1,41 @@
 {
-  "vid": "3fcab88b-47bc-11ee-8e38-002590c1f29c",
-  "topic": "FreeBSD -- GELI silently omits the keyfile if read from stdin",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "13.1_6",
-          "ge": "13.1"
-        },
-        {
-          "lt": "12.4_1",
-          "ge": "12.4"
-        },
-        {
-          "lt": "12.3_11",
-          "ge": "12.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When GELI reads a key file from a standard input, it doesn't store it\n\tanywhere.  If the user tries to initialize multiple providers at once,\n\tfor the second and subsequent devices the standard input stream will be\n\talready empty.  In this case, GELI silently uses a NULL key as the user\n\tkey file.  If the user used only a key file without a user passphrase,\n\tthe master key was encrypted with an empty key file.  This might not be\n\tnoticed if the devices were also decrypted in a batch operation.</p>\n\t<h1>Impact:</h1>\n\t<p>Some GELI providers might be silently encrypted with a NULL key\n\tfile.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2023-0751"
-    ],
-    "freebsd_sa": [
-      "SA-23:01.geli"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-02-08",
-    "entry": "2023-08-31"
-  }
+	"vid": "3fcab88b-47bc-11ee-8e38-002590c1f29c",
+	"topic": "FreeBSD -- GELI silently omits the keyfile if read from stdin",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "13.1_6",
+					"ge": "13.1"
+				},
+				{
+					"lt": "12.4_1",
+					"ge": "12.4"
+				},
+				{
+					"lt": "12.3_11",
+					"ge": "12.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>When GELI reads a key file from a standard input, it doesn't store it\n\tanywhere.  If the user tries to initialize multiple providers at once,\n\tfor the second and subsequent devices the standard input stream will be\n\talready empty.  In this case, GELI silently uses a NULL key as the user\n\tkey file.  If the user used only a key file without a user passphrase,\n\tthe master key was encrypted with an empty key file.  This might not be\n\tnoticed if the devices were also decrypted in a batch operation.</p>\n\t<h1>Impact:</h1>\n\t<p>Some GELI providers might be silently encrypted with a NULL key\n\tfile.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2023-0751"
+		],
+		"freebsd_sa": [
+			"SA-23:01.geli"
+		]
+	},
+	"dates": {
+		"discovery": "2023-02-08",
+		"entry": "2023-08-31"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "vid": "4ce3c20b-124b-11de-a964-0030843d3802",
-  "topic": "phppgadmin -- directory traversal with register_globals enabled",
-  "affects": [
-    {
-      "name": [
-        "phppgadmin"
-      ],
-      "range": [
-        {
-          "lt": "4.2.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33014\">\n\t  <p>Dun has discovered a vulnerability in phpPgAdmin, which can be\n\t    exploited by malicious people to disclose sensitive information.</p>\n\t  <p>Input passed via the \"_language\" parameter to libraries/lib.inc.php\n\t    is not properly sanitised before being used to include files. This can\n\t    be exploited to include arbitrary files from local resources via\n\t    directory traversal attacks and URL-encoded NULL bytes.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/33014"
-    ],
-    "cvename": [
-      "CVE-2008-5587"
-    ],
-    "bid": [
-      "32670"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-12-08",
-    "entry": "2009-03-16"
-  }
+	"vid": "4ce3c20b-124b-11de-a964-0030843d3802",
+	"topic": "phppgadmin -- directory traversal with register_globals enabled",
+	"affects": [
+		{
+			"name": [
+				"phppgadmin"
+			],
+			"range": [
+				{
+					"lt": "4.2.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33014\">\n\t  <p>Dun has discovered a vulnerability in phpPgAdmin, which can be\n\t    exploited by malicious people to disclose sensitive information.</p>\n\t  <p>Input passed via the \"_language\" parameter to libraries/lib.inc.php\n\t    is not properly sanitised before being used to include files. This can\n\t    be exploited to include arbitrary files from local resources via\n\t    directory traversal attacks and URL-encoded NULL bytes.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/33014"
+		],
+		"cvename": [
+			"CVE-2008-5587"
+		],
+		"bid": [
+			"32670"
+		]
+	},
+	"dates": {
+		"discovery": "2008-12-08",
+		"entry": "2009-03-16"
+	}
 }

@@ -1,36 +1,36 @@
 {
-  "vid": "bcf27002-94c3-11d9-a9e0-0001020eed82",
-  "topic": "grip -- CDDB response multiple matches buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "grip"
-      ],
-      "range": [
-        {
-          "lt": "3.2.0_7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Joseph VanAndel reports that grip is vulnerability to a\n\t  buffer overflow vulnerability when receiving more than 16\n\t  CDDB responses.  This could lead to a crash in grip and\n\t  potentially execution arbitrary code.</p>\n\t<p>A workaround is to disable CDDB lookups.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://sourceforge.net/tracker/index.php?func=detail&aid=834724&group_id=3714&atid=103714"
-    ],
-    "cvename": [
-      "CVE-2005-0706"
-    ],
-    "bid": [
-      "12770"
-    ]
-  },
-  "dates": {
-    "discovery": "2003-11-02",
-    "entry": "2005-03-14",
-    "modified": "2005-03-18"
-  }
+	"vid": "bcf27002-94c3-11d9-a9e0-0001020eed82",
+	"topic": "grip -- CDDB response multiple matches buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"grip"
+			],
+			"range": [
+				{
+					"lt": "3.2.0_7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Joseph VanAndel reports that grip is vulnerability to a\n\t  buffer overflow vulnerability when receiving more than 16\n\t  CDDB responses.  This could lead to a crash in grip and\n\t  potentially execution arbitrary code.</p>\n\t<p>A workaround is to disable CDDB lookups.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://sourceforge.net/tracker/index.php?func=detail&aid=834724&group_id=3714&atid=103714"
+		],
+		"cvename": [
+			"CVE-2005-0706"
+		],
+		"bid": [
+			"12770"
+		]
+	},
+	"dates": {
+		"discovery": "2003-11-02",
+		"entry": "2005-03-14",
+		"modified": "2005-03-18"
+	}
 }

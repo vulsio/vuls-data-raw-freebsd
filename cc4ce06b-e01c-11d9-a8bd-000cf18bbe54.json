@@ -1,36 +1,36 @@
 {
-  "vid": "cc4ce06b-e01c-11d9-a8bd-000cf18bbe54",
-  "topic": "p5-Mail-SpamAssassin -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "p5-Mail-SpamAssassin"
-      ],
-      "range": [
-        {
-          "lt": "3.0.4",
-          "ge": "3.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Apache SpamAssassin Security Team reports:</p>\n\t<blockquote cite=\"http://mail-archives.apache.org/mod_mbox/spamassassin-announce/200506.mbox/%3c17072.35054.586017.822288@proton.pathname.com%3e\">\n\t  <p>Apache SpamAssassin 3.0.4 was recently released, and\n\t    fixes a denial of service vulnerability in versions 3.0.1, 3.0.2,\n\t    and 3.0.3.\tThe vulnerability allows certain misformatted\n\t    long message headers to cause spam checking to\n\t    take a very long time.</p>\n\t  <p>While the exploit has yet to be seen in the wild,\n\t    we are concerned that there may be attempts to abuse\n\t    the vulnerability in the future.  Therefore, we strongly\n\t    recommend all users of these versions upgrade to\n\t    Apache SpamAssassin 3.0.4 as soon as possible.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-1266"
-    ],
-    "mlist": [
-      {
-        "text": "http://mail-archives.apache.org/mod_mbox/spamassassin-announce/200506.mbox/%3c17072.35054.586017.822288@proton.pathname.com%3e",
-        "msgid": "c17072.35054.586017.822288@proton.pathname.com"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-15",
-    "entry": "2005-06-18"
-  }
+	"vid": "cc4ce06b-e01c-11d9-a8bd-000cf18bbe54",
+	"topic": "p5-Mail-SpamAssassin -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"p5-Mail-SpamAssassin"
+			],
+			"range": [
+				{
+					"lt": "3.0.4",
+					"ge": "3.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Apache SpamAssassin Security Team reports:</p>\n\t<blockquote cite=\"http://mail-archives.apache.org/mod_mbox/spamassassin-announce/200506.mbox/%3c17072.35054.586017.822288@proton.pathname.com%3e\">\n\t  <p>Apache SpamAssassin 3.0.4 was recently released, and\n\t    fixes a denial of service vulnerability in versions 3.0.1, 3.0.2,\n\t    and 3.0.3.\tThe vulnerability allows certain misformatted\n\t    long message headers to cause spam checking to\n\t    take a very long time.</p>\n\t  <p>While the exploit has yet to be seen in the wild,\n\t    we are concerned that there may be attempts to abuse\n\t    the vulnerability in the future.  Therefore, we strongly\n\t    recommend all users of these versions upgrade to\n\t    Apache SpamAssassin 3.0.4 as soon as possible.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-1266"
+		],
+		"mlist": [
+			{
+				"text": "http://mail-archives.apache.org/mod_mbox/spamassassin-announce/200506.mbox/%3c17072.35054.586017.822288@proton.pathname.com%3e",
+				"msgid": "c17072.35054.586017.822288@proton.pathname.com"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-15",
+		"entry": "2005-06-18"
+	}
 }

@@ -1,119 +1,119 @@
 {
-  "vid": "33922b84-5f09-11ee-b63d-0897988a1c07",
-  "topic": "Remote Code Execution via web-accessible composer",
-  "affects": [
-    {
-      "name": [
-        "php80-composer"
-      ],
-      "range": [
-        {
-          "lt": "1.10.27"
-        },
-        {
-          "lt": "2.6.4",
-          "gt": "2.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php81-composer"
-      ],
-      "range": [
-        {
-          "lt": "1.10.27"
-        },
-        {
-          "lt": "2.6.4",
-          "gt": "2.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php82-composer"
-      ],
-      "range": [
-        {
-          "lt": "1.10.27"
-        },
-        {
-          "lt": "2.6.4",
-          "gt": "2.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php83-composer"
-      ],
-      "range": [
-        {
-          "lt": "1.10.27"
-        },
-        {
-          "lt": "2.6.4",
-          "gt": "2.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php80-composer2"
-      ],
-      "range": [
-        {
-          "lt": "2.6.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php81-composer2"
-      ],
-      "range": [
-        {
-          "lt": "2.6.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php82-composer2"
-      ],
-      "range": [
-        {
-          "lt": "2.6.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php83-composer2"
-      ],
-      "range": [
-        {
-          "lt": "2.6.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Composer project reports:</p>\n\t<blockquote cite=\"https://github.com/composer/composer/security/advisories/GHSA-jm6m-4632-36hf\">\n\t  <p>Description: Users publishing a composer.phar to a\n\t  public web-accessible server where the composer.phar can\n\t  be executed as a php file may be impacted if PHP also has\n\t  register_argc_argv enabled in php.ini.</p>\n\t  <p>Workaround: Make sure register_argc_argv is disabled\n\t  in php.ini, and avoid publishing composer.phar to the web\n\t  as this really should not happen.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/composer/composer/security/advisories/GHSA-jm6m-4632-36hf"
-    ],
-    "cvename": [
-      "CVE-2023-43655"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-09-29",
-    "entry": "2023-09-29",
-    "modified": "2023-09-30"
-  }
+	"vid": "33922b84-5f09-11ee-b63d-0897988a1c07",
+	"topic": "Remote Code Execution via web-accessible composer",
+	"affects": [
+		{
+			"name": [
+				"php80-composer"
+			],
+			"range": [
+				{
+					"lt": "1.10.27"
+				},
+				{
+					"lt": "2.6.4",
+					"gt": "2.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"php81-composer"
+			],
+			"range": [
+				{
+					"lt": "1.10.27"
+				},
+				{
+					"lt": "2.6.4",
+					"gt": "2.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"php82-composer"
+			],
+			"range": [
+				{
+					"lt": "1.10.27"
+				},
+				{
+					"lt": "2.6.4",
+					"gt": "2.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"php83-composer"
+			],
+			"range": [
+				{
+					"lt": "1.10.27"
+				},
+				{
+					"lt": "2.6.4",
+					"gt": "2.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"php80-composer2"
+			],
+			"range": [
+				{
+					"lt": "2.6.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"php81-composer2"
+			],
+			"range": [
+				{
+					"lt": "2.6.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"php82-composer2"
+			],
+			"range": [
+				{
+					"lt": "2.6.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"php83-composer2"
+			],
+			"range": [
+				{
+					"lt": "2.6.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Composer project reports:</p>\n\t<blockquote cite=\"https://github.com/composer/composer/security/advisories/GHSA-jm6m-4632-36hf\">\n\t  <p>Description: Users publishing a composer.phar to a\n\t  public web-accessible server where the composer.phar can\n\t  be executed as a php file may be impacted if PHP also has\n\t  register_argc_argv enabled in php.ini.</p>\n\t  <p>Workaround: Make sure register_argc_argv is disabled\n\t  in php.ini, and avoid publishing composer.phar to the web\n\t  as this really should not happen.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/composer/composer/security/advisories/GHSA-jm6m-4632-36hf"
+		],
+		"cvename": [
+			"CVE-2023-43655"
+		]
+	},
+	"dates": {
+		"discovery": "2023-09-29",
+		"entry": "2023-09-29",
+		"modified": "2023-09-30"
+	}
 }

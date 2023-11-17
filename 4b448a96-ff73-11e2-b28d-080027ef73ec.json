@@ -1,44 +1,44 @@
 {
-  "vid": "4b448a96-ff73-11e2-b28d-080027ef73ec",
-  "topic": "PuTTY -- Four security holes in versions before 0.63",
-  "affects": [
-    {
-      "name": [
-        "putty"
-      ],
-      "range": [
-        {
-          "lt": "0.63"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon Tatham reports:</p>\n\t<blockquote cite=\"http://lists.tartarus.org/pipermail/putty-announce/2013/000018.html\">\n\t  <p>This [0.63] release fixes multiple security holes in previous versions of\n\t    PuTTY, which can allow an SSH-2 server to make PuTTY overrun or\n\t    underrun buffers and crash. [...]\n\t  </p><p>\n\t    These vulnerabilities can be triggered before host key verification,\n\t    which means that you are not even safe if you trust the server you\n\t    <em>think</em> you're connecting to, since it could be spoofed over the\n\t    network and the host key check would not detect this before the attack\n\t    could take place.\n\t  </p><p>\n\t    Additionally, when PuTTY authenticated with a user's private key, the\n\t    private key or information equivalent to it was accidentally kept in\n\t    PuTTY's memory for the rest of its run, where it could be retrieved by\n\t    other processes reading PuTTY's memory, or written out to swap files\n\t    or crash dumps. This release fixes that as well.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-modmul.html",
-      "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-bignum-division-by-zero.html",
-      "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/private-key-not-wiped.html",
-      "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-signature-stringlen.html"
-    ],
-    "cvename": [
-      "CVE-2013-4206",
-      "CVE-2013-4207",
-      "CVE-2013-4208",
-      "CVE-2013-4852"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.tartarus.org/pipermail/putty-announce/2013/000018.html",
-        "msgid": "E1V6lUs-0007kP-40@atreus.tartarus.org"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2013-07-08",
-    "entry": "2013-08-07"
-  }
+	"vid": "4b448a96-ff73-11e2-b28d-080027ef73ec",
+	"topic": "PuTTY -- Four security holes in versions before 0.63",
+	"affects": [
+		{
+			"name": [
+				"putty"
+			],
+			"range": [
+				{
+					"lt": "0.63"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon Tatham reports:</p>\n\t<blockquote cite=\"http://lists.tartarus.org/pipermail/putty-announce/2013/000018.html\">\n\t  <p>This [0.63] release fixes multiple security holes in previous versions of\n\t    PuTTY, which can allow an SSH-2 server to make PuTTY overrun or\n\t    underrun buffers and crash. [...]\n\t  </p><p>\n\t    These vulnerabilities can be triggered before host key verification,\n\t    which means that you are not even safe if you trust the server you\n\t    <em>think</em> you're connecting to, since it could be spoofed over the\n\t    network and the host key check would not detect this before the attack\n\t    could take place.\n\t  </p><p>\n\t    Additionally, when PuTTY authenticated with a user's private key, the\n\t    private key or information equivalent to it was accidentally kept in\n\t    PuTTY's memory for the rest of its run, where it could be retrieved by\n\t    other processes reading PuTTY's memory, or written out to swap files\n\t    or crash dumps. This release fixes that as well.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-modmul.html",
+			"http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-bignum-division-by-zero.html",
+			"http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/private-key-not-wiped.html",
+			"http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-signature-stringlen.html"
+		],
+		"cvename": [
+			"CVE-2013-4206",
+			"CVE-2013-4207",
+			"CVE-2013-4208",
+			"CVE-2013-4852"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.tartarus.org/pipermail/putty-announce/2013/000018.html",
+				"msgid": "E1V6lUs-0007kP-40@atreus.tartarus.org"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2013-07-08",
+		"entry": "2013-08-07"
+	}
 }

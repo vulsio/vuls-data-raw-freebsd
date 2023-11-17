@@ -1,29 +1,29 @@
 {
-  "vid": "032643d7-0ba7-11ec-a689-080027e50e6d",
-  "topic": "Python -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "python39"
-      ],
-      "range": [
-        {
-          "lt": "3.9.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/release/3.9.7/whatsnew/changelog.html\">\n\t  <p>bpo-42278: Replaced usage of tempfile.mktemp() with TemporaryDirectory to avoid\n\t    a potential race condition.</p>\n\t  <p>bpo-41180: Add auditing events to the marshal module, and stop raising\n\t    code.__init__ events for every unmarshalled code object. Directly instantiated\n\t    code objects will continue to raise an event, and audit event handlers should\n\t    inspect or collect the raw marshal data. This reduces a significant performance\n\t    overhead when loading from .pyc files.</p>\n\t  <p>bpo-44394: Update the vendored copy of libexpat to 2.4.1 (from 2.2.8) to get the\n\t    fix for the CVE-2013-0340 \"Billion Laughs\" vulnerability. This copy is most used\n\t    on Windows and macOS.</p>\n\t  <p>bpo-43124: Made the internal putcmd function in smtplib sanitize input for\n\t    presence of \\r and \\n characters to avoid (unlikely) command injection.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.python.org/release/3.9.7/whatsnew/changelog.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-08-30",
-    "entry": "2021-09-02"
-  }
+	"vid": "032643d7-0ba7-11ec-a689-080027e50e6d",
+	"topic": "Python -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"python39"
+			],
+			"range": [
+				{
+					"lt": "3.9.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/release/3.9.7/whatsnew/changelog.html\">\n\t  <p>bpo-42278: Replaced usage of tempfile.mktemp() with TemporaryDirectory to avoid\n\t    a potential race condition.</p>\n\t  <p>bpo-41180: Add auditing events to the marshal module, and stop raising\n\t    code.__init__ events for every unmarshalled code object. Directly instantiated\n\t    code objects will continue to raise an event, and audit event handlers should\n\t    inspect or collect the raw marshal data. This reduces a significant performance\n\t    overhead when loading from .pyc files.</p>\n\t  <p>bpo-44394: Update the vendored copy of libexpat to 2.4.1 (from 2.2.8) to get the\n\t    fix for the CVE-2013-0340 \"Billion Laughs\" vulnerability. This copy is most used\n\t    on Windows and macOS.</p>\n\t  <p>bpo-43124: Made the internal putcmd function in smtplib sanitize input for\n\t    presence of \\r and \\n characters to avoid (unlikely) command injection.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.python.org/release/3.9.7/whatsnew/changelog.html"
+		]
+	},
+	"dates": {
+		"discovery": "2021-08-30",
+		"entry": "2021-09-02"
+	}
 }

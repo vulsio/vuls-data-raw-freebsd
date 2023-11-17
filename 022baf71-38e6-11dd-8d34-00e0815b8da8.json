@@ -1,29 +1,29 @@
 {
-  "vid": "022baf71-38e6-11dd-8d34-00e0815b8da8",
-  "topic": "Courier Authentication Library -- SQL Injection",
-  "affects": [
-    {
-      "name": [
-        "courier-authlib"
-      ],
-      "range": [
-        {
-          "lt": "0.60.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30591/\">\n\t  <p>A vulnerability has been reported in the Courier Authentication\n\t    Library, which can be exploited by malicious people to conduct SQL\n\t    injection attacks.</p>\n\t  <p>Input passed via e.g. the username to the library is not properly\n\t    sanitised before being used in SQL queries. This can be exploited to\n\t    manipulate SQL queries by injecting arbitrary SQL code and e.g.\n\t    potentially bypass authentication.</p>\n\t  <p>Successful exploitation requires that a MySQL database is used for\n\t    authentication and that a Non-Latin character set is selected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/30591/"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-06-10",
-    "entry": "2008-06-13"
-  }
+	"vid": "022baf71-38e6-11dd-8d34-00e0815b8da8",
+	"topic": "Courier Authentication Library -- SQL Injection",
+	"affects": [
+		{
+			"name": [
+				"courier-authlib"
+			],
+			"range": [
+				{
+					"lt": "0.60.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30591/\">\n\t  <p>A vulnerability has been reported in the Courier Authentication\n\t    Library, which can be exploited by malicious people to conduct SQL\n\t    injection attacks.</p>\n\t  <p>Input passed via e.g. the username to the library is not properly\n\t    sanitised before being used in SQL queries. This can be exploited to\n\t    manipulate SQL queries by injecting arbitrary SQL code and e.g.\n\t    potentially bypass authentication.</p>\n\t  <p>Successful exploitation requires that a MySQL database is used for\n\t    authentication and that a Non-Latin character set is selected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/30591/"
+		]
+	},
+	"dates": {
+		"discovery": "2008-06-10",
+		"entry": "2008-06-13"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "1cd0c17a-17c0-11ed-91a5-080027f5fec9",
-  "topic": "gnutls -- double free vulnerability",
-  "affects": [
-    {
-      "name": [
-        "gnutls"
-      ],
-      "range": [
-        {
-          "lt": "3.7.7",
-          "ge": "3.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The GnuTLS project reports:</p>\n\t<blockquote cite=\"https://www.gnutls.org/security-new.html#GNUTLS-SA-2022-07-07\">\n\t  <p>\n\t    When gnutls_pkcs7_verify cannot verify signature against\n\t    given trust list, it starts creating a chain of\n\t    certificates starting from identified signer up to known\n\t    root. During the creation of this chain the signer\n\t    certificate gets freed which results in double free when\n\t    the same signer certificate is freed at the end of the\n\t    algorithm.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.gnutls.org/security-new.html#GNUTLS-SA-2022-07-07"
-    ],
-    "cvename": [
-      "CVE-2022-2509"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-07-07",
-    "entry": "2022-08-09"
-  }
+	"vid": "1cd0c17a-17c0-11ed-91a5-080027f5fec9",
+	"topic": "gnutls -- double free vulnerability",
+	"affects": [
+		{
+			"name": [
+				"gnutls"
+			],
+			"range": [
+				{
+					"lt": "3.7.7",
+					"ge": "3.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The GnuTLS project reports:</p>\n\t<blockquote cite=\"https://www.gnutls.org/security-new.html#GNUTLS-SA-2022-07-07\">\n\t  <p>\n\t    When gnutls_pkcs7_verify cannot verify signature against\n\t    given trust list, it starts creating a chain of\n\t    certificates starting from identified signer up to known\n\t    root. During the creation of this chain the signer\n\t    certificate gets freed which results in double free when\n\t    the same signer certificate is freed at the end of the\n\t    algorithm.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.gnutls.org/security-new.html#GNUTLS-SA-2022-07-07"
+		],
+		"cvename": [
+			"CVE-2022-2509"
+		]
+	},
+	"dates": {
+		"discovery": "2022-07-07",
+		"entry": "2022-08-09"
+	}
 }

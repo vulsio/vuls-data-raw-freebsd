@@ -1,44 +1,44 @@
 {
-  "vid": "84ca56be-e1de-11e8-bcfd-00e04c1ea73d",
-  "topic": "NGINX -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "nginx"
-      ],
-      "range": [
-        {
-          "lt": "1.14.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "nginx-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.15.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NGINX Team reports:</p>\n\t<blockquote cite=\"http://nginx.org/en/security_advisories.html\">\n\t  <p>Two security issues were identified in nginx HTTP/2 implementation,\n\t    which might cause excessive memory consumption (CVE-2018-16843)\n\t    and CPU usage (CVE-2018-16844).</p>\n\t  <p>The issues affect nginx compiled with the ngx_http_v2_module (not\n\t    compiled by default) if the \"http2\" option of the \"listen\" directive is\n\t    used in a configuration file.</p>\n\t  <p>A security issue was identified in the ngx_http_mp4_module, which might\n\t    allow an attacker to cause infinite loop in a worker process, cause a\n\t    worker process crash, or might result in worker process memory\n\t    isclosure by using a specially crafted mp4 file (CVE-2018-16845).</p>\n\t  <p>The issue only affects nginx if it is built with the ngx_http_mp4_module\n\t    (the module is not built by default) and the \"mp4\" directive is used in\n\t    the configuration file.  Further, the attack is only possible if an\n\t    attacker is able to trigger processing of a specially crafted mp4 file\n\t    with the ngx_http_mp4_module. </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://nginx.org/en/security_advisories.html"
-    ],
-    "cvename": [
-      "CVE-2018-16843",
-      "CVE-2018-16844",
-      "CVE-2018-16845"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-06",
-    "entry": "2018-11-06"
-  }
+	"vid": "84ca56be-e1de-11e8-bcfd-00e04c1ea73d",
+	"topic": "NGINX -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"nginx"
+			],
+			"range": [
+				{
+					"lt": "1.14.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"nginx-devel"
+			],
+			"range": [
+				{
+					"lt": "1.15.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NGINX Team reports:</p>\n\t<blockquote cite=\"http://nginx.org/en/security_advisories.html\">\n\t  <p>Two security issues were identified in nginx HTTP/2 implementation,\n\t    which might cause excessive memory consumption (CVE-2018-16843)\n\t    and CPU usage (CVE-2018-16844).</p>\n\t  <p>The issues affect nginx compiled with the ngx_http_v2_module (not\n\t    compiled by default) if the \"http2\" option of the \"listen\" directive is\n\t    used in a configuration file.</p>\n\t  <p>A security issue was identified in the ngx_http_mp4_module, which might\n\t    allow an attacker to cause infinite loop in a worker process, cause a\n\t    worker process crash, or might result in worker process memory\n\t    isclosure by using a specially crafted mp4 file (CVE-2018-16845).</p>\n\t  <p>The issue only affects nginx if it is built with the ngx_http_mp4_module\n\t    (the module is not built by default) and the \"mp4\" directive is used in\n\t    the configuration file.  Further, the attack is only possible if an\n\t    attacker is able to trigger processing of a specially crafted mp4 file\n\t    with the ngx_http_mp4_module. </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://nginx.org/en/security_advisories.html"
+		],
+		"cvename": [
+			"CVE-2018-16843",
+			"CVE-2018-16844",
+			"CVE-2018-16845"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-06",
+		"entry": "2018-11-06"
+	}
 }

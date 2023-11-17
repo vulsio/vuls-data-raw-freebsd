@@ -1,41 +1,41 @@
 {
-  "vid": "10720fe8-51e0-11e1-91c1-00215c6a37bb",
-  "topic": "drupal -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.23"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal7"
-      ],
-      "range": [
-        {
-          "lt": "7.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Drupal development team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/1425084\">\n\t  <h3>Cross Site Request Forgery vulnerability in Aggregator\n\t    module</h3>\n\t  <p>CVE: CVE-2012-0826</p>\n\t  <p>An XSRF vulnerability can force an aggregator feed to update.\n\t    Since some services are rate-limited (e.g. Twitter limits\n\t    requests to 150 per hour) this could lead to a denial of\n\t    service.</p>\n\t  <p>This issue affects Drupal 6.x and 7.x.</p>\n\t  <h3>OpenID not verifying signed attributes in SREG and AX</h3>\n\t  <p>CVE: CVE-2012-0825</p>\n\t  <p>A group of security researchers identified a flaw in how some\n\t    OpenID relying parties implement Attribute Exchange (AX).  Not\n\t    verifying that attributes being passed through AX have been\n\t    signed could allow an attacker to modify users' information.</p>\n\t  <p>This issue affects Drupal 6.x and 7.x.</p>\n\t  <h3>Access bypass in File module</h3>\n\t  <p>CVE: CVE-2012-0827</p>\n\t  <p>When using private files in combination with certain field\n\t    access modules, the File module will allow users to download\n\t    the file even if they do not have access to view the field it\n\t    was attached to.</p>\n\t  <p>This issue affects Drupal 7.x only.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-0825",
-      "CVE-2012-0826",
-      "CVE-2012-0827"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-02-01",
-    "entry": "2012-02-07"
-  }
+	"vid": "10720fe8-51e0-11e1-91c1-00215c6a37bb",
+	"topic": "drupal -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.23"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal7"
+			],
+			"range": [
+				{
+					"lt": "7.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Drupal development team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/1425084\">\n\t  <h3>Cross Site Request Forgery vulnerability in Aggregator\n\t    module</h3>\n\t  <p>CVE: CVE-2012-0826</p>\n\t  <p>An XSRF vulnerability can force an aggregator feed to update.\n\t    Since some services are rate-limited (e.g. Twitter limits\n\t    requests to 150 per hour) this could lead to a denial of\n\t    service.</p>\n\t  <p>This issue affects Drupal 6.x and 7.x.</p>\n\t  <h3>OpenID not verifying signed attributes in SREG and AX</h3>\n\t  <p>CVE: CVE-2012-0825</p>\n\t  <p>A group of security researchers identified a flaw in how some\n\t    OpenID relying parties implement Attribute Exchange (AX).  Not\n\t    verifying that attributes being passed through AX have been\n\t    signed could allow an attacker to modify users' information.</p>\n\t  <p>This issue affects Drupal 6.x and 7.x.</p>\n\t  <h3>Access bypass in File module</h3>\n\t  <p>CVE: CVE-2012-0827</p>\n\t  <p>When using private files in combination with certain field\n\t    access modules, the File module will allow users to download\n\t    the file even if they do not have access to view the field it\n\t    was attached to.</p>\n\t  <p>This issue affects Drupal 7.x only.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-0825",
+			"CVE-2012-0826",
+			"CVE-2012-0827"
+		]
+	},
+	"dates": {
+		"discovery": "2012-02-01",
+		"entry": "2012-02-07"
+	}
 }

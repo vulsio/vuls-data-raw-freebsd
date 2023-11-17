@@ -1,33 +1,33 @@
 {
-  "vid": "739329c8-d8f0-11dc-ac2f-0016d325a0ed",
-  "topic": "ikiwiki -- javascript insertion via uris",
-  "affects": [
-    {
-      "name": [
-        "ikiwiki"
-      ],
-      "range": [
-        {
-          "lt": "2.32.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The ikiwiki development team reports:</p>\n\t<blockquote cite=\"http://ikiwiki.info/security/#index30h2\">\n\t  <p>The htmlscrubber did not block javascript in uris.  This was\n\t  fixed by adding a whitelist of valid uri types, which does not\n\t  include javascript.  Some urls specifyable by the meta plugin\n\t  could also theoretically have been used to inject javascript; this\n\t  was also blocked.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://ikiwiki.info/security/#index30h2"
-    ],
-    "cvename": [
-      "CVE-2008-0808"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-02-10",
-    "entry": "2008-02-11",
-    "modified": "2010-05-12"
-  }
+	"vid": "739329c8-d8f0-11dc-ac2f-0016d325a0ed",
+	"topic": "ikiwiki -- javascript insertion via uris",
+	"affects": [
+		{
+			"name": [
+				"ikiwiki"
+			],
+			"range": [
+				{
+					"lt": "2.32.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The ikiwiki development team reports:</p>\n\t<blockquote cite=\"http://ikiwiki.info/security/#index30h2\">\n\t  <p>The htmlscrubber did not block javascript in uris.  This was\n\t  fixed by adding a whitelist of valid uri types, which does not\n\t  include javascript.  Some urls specifyable by the meta plugin\n\t  could also theoretically have been used to inject javascript; this\n\t  was also blocked.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://ikiwiki.info/security/#index30h2"
+		],
+		"cvename": [
+			"CVE-2008-0808"
+		]
+	},
+	"dates": {
+		"discovery": "2008-02-10",
+		"entry": "2008-02-11",
+		"modified": "2010-05-12"
+	}
 }

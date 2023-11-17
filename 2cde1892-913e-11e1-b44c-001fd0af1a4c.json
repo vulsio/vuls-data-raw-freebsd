@@ -1,44 +1,44 @@
 {
-  "vid": "2cde1892-913e-11e1-b44c-001fd0af1a4c",
-  "topic": "php -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php53"
-      ],
-      "range": [
-        {
-          "lt": "5.3.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "5.3.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t  <p>php development team reports:</p>\n\t  <blockquote cite=\"http://www.php.net/archive/2012.php#id2012-04-26-1\">\n\t    <p>Security Enhancements for both PHP 5.3.11 and PHP 5.4.1:</p>\n\t    <ul>\n\t      <li>Insufficient validating of upload name leading to corrupted $_FILES indices. (CVE-2012-1172) </li>\n\t      <li>Add open_basedir checks to readline_write_history and readline_read_history.</li>\n\t    </ul>\n\t    <p>Security Enhancements for both PHP 5.3.11 only:</p>\n\t    <ul>\n\t      <li>Regression in magic_quotes_gpc fix for CVE-2012-0831.</li>\n\t    </ul>\n\t  </blockquote>\n\t"
-  },
-  "references": {
-    "url": [
-      "http://www.php.net/archive/2012.php#id2012-04-26-1"
-    ],
-    "cvename": [
-      "CVE-2012-0831",
-      "CVE-2012-1172"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-03-01",
-    "entry": "2012-04-28",
-    "modified": "2012-05-04"
-  }
+	"vid": "2cde1892-913e-11e1-b44c-001fd0af1a4c",
+	"topic": "php -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php53"
+			],
+			"range": [
+				{
+					"lt": "5.3.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "5.3.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t  <p>php development team reports:</p>\n\t  <blockquote cite=\"http://www.php.net/archive/2012.php#id2012-04-26-1\">\n\t    <p>Security Enhancements for both PHP 5.3.11 and PHP 5.4.1:</p>\n\t    <ul>\n\t      <li>Insufficient validating of upload name leading to corrupted $_FILES indices. (CVE-2012-1172) </li>\n\t      <li>Add open_basedir checks to readline_write_history and readline_read_history.</li>\n\t    </ul>\n\t    <p>Security Enhancements for both PHP 5.3.11 only:</p>\n\t    <ul>\n\t      <li>Regression in magic_quotes_gpc fix for CVE-2012-0831.</li>\n\t    </ul>\n\t  </blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"http://www.php.net/archive/2012.php#id2012-04-26-1"
+		],
+		"cvename": [
+			"CVE-2012-0831",
+			"CVE-2012-1172"
+		]
+	},
+	"dates": {
+		"discovery": "2012-03-01",
+		"entry": "2012-04-28",
+		"modified": "2012-05-04"
+	}
 }

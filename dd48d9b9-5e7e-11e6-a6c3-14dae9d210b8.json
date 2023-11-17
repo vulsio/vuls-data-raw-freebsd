@@ -1,41 +1,41 @@
 {
-  "vid": "dd48d9b9-5e7e-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Kernel memory disclosure in sctp(4)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "9.1_6",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_3",
-          "ge": "8.4"
-        },
-        {
-          "lt": "8.3_10",
-          "ge": "8.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem Description:</p>\n\t<p>When initializing the SCTP state cookie being sent in INIT-ACK chunks,\n\t  a buffer allocated from the kernel stack is not completely initialized.</p>\n\t<p>Impact:</p>\n\t<p>Fragments of kernel memory may be included in SCTP packets and\n\t  transmitted over the network.  For each SCTP session, there are two\n\t  separate instances in which a 4-byte fragment may be transmitted.</p>\n\t<p>This memory might contain sensitive information, such as portions of the\n\t  file cache or terminal buffers.  This information might be directly\n\t  useful, or it might be leveraged to obtain elevated privileges in\n\t  some way.  For example, a terminal buffer might include a user-entered\n\t  password.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2013-5209"
-    ],
-    "freebsd_sa": [
-      "SA-13:10.sctp"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-08-22",
-    "entry": "2016-08-09"
-  }
+	"vid": "dd48d9b9-5e7e-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Kernel memory disclosure in sctp(4)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "9.1_6",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_3",
+					"ge": "8.4"
+				},
+				{
+					"lt": "8.3_10",
+					"ge": "8.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem Description:</p>\n\t<p>When initializing the SCTP state cookie being sent in INIT-ACK chunks,\n\t  a buffer allocated from the kernel stack is not completely initialized.</p>\n\t<p>Impact:</p>\n\t<p>Fragments of kernel memory may be included in SCTP packets and\n\t  transmitted over the network.  For each SCTP session, there are two\n\t  separate instances in which a 4-byte fragment may be transmitted.</p>\n\t<p>This memory might contain sensitive information, such as portions of the\n\t  file cache or terminal buffers.  This information might be directly\n\t  useful, or it might be leveraged to obtain elevated privileges in\n\t  some way.  For example, a terminal buffer might include a user-entered\n\t  password.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2013-5209"
+		],
+		"freebsd_sa": [
+			"SA-13:10.sctp"
+		]
+	},
+	"dates": {
+		"discovery": "2013-08-22",
+		"entry": "2016-08-09"
+	}
 }

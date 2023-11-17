@@ -1,43 +1,43 @@
 {
-  "vid": "313da7dc-763b-11df-bcce-0018f3e2eb82",
-  "topic": "tiff -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "tiff"
-      ],
-      "range": [
-        {
-          "lt": "3.9.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-tiff"
-      ],
-      "range": [
-        {
-          "lt": "3.9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Kevin Finisterre reports:</p>\n\t<blockquote cite=\"http://support.apple.com/kb/HT4196\">\n\t  <p>Multiple integer overflows in the handling of TIFF files may\n\t    result in a heap buffer overflow. Opening a maliciously crafted\n\t    TIFF file may lead to an unexpected application termination or\n\t    arbitrary code execution. The issues are addressed through\n\t    improved bounds checking. Credit to Kevin Finisterre of\n\t    digitalmunition.com for reporting these issues.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.remotesensing.org/libtiff/v3.9.3.html",
-      "http://support.apple.com/kb/HT4196"
-    ],
-    "cvename": [
-      "CVE-2010-1411"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-04-15",
-    "entry": "2010-06-12"
-  }
+	"vid": "313da7dc-763b-11df-bcce-0018f3e2eb82",
+	"topic": "tiff -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"tiff"
+			],
+			"range": [
+				{
+					"lt": "3.9.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-tiff"
+			],
+			"range": [
+				{
+					"lt": "3.9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Kevin Finisterre reports:</p>\n\t<blockquote cite=\"http://support.apple.com/kb/HT4196\">\n\t  <p>Multiple integer overflows in the handling of TIFF files may\n\t    result in a heap buffer overflow. Opening a maliciously crafted\n\t    TIFF file may lead to an unexpected application termination or\n\t    arbitrary code execution. The issues are addressed through\n\t    improved bounds checking. Credit to Kevin Finisterre of\n\t    digitalmunition.com for reporting these issues.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.remotesensing.org/libtiff/v3.9.3.html",
+			"http://support.apple.com/kb/HT4196"
+		],
+		"cvename": [
+			"CVE-2010-1411"
+		]
+	},
+	"dates": {
+		"discovery": "2010-04-15",
+		"entry": "2010-06-12"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "0bfcae0b-947f-11ea-92ab-00163e433440",
-  "topic": "FreeBSD -- Insufficient cryptodev MAC key length check",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.1_5",
-          "ge": "12.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Requests to create cryptography sessions using a MAC did not validate the\n\tuser-supplied MAC key length.  The cryptodev module allocates a buffer whose\n\tsize is this user-suppled length.</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged process can trigger a kernel panic.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-15879"
-    ],
-    "freebsd_sa": [
-      "SA-20:15.cryptodev"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-01-20",
-    "entry": "2020-05-12"
-  }
+	"vid": "0bfcae0b-947f-11ea-92ab-00163e433440",
+	"topic": "FreeBSD -- Insufficient cryptodev MAC key length check",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.1_5",
+					"ge": "12.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Requests to create cryptography sessions using a MAC did not validate the\n\tuser-supplied MAC key length.  The cryptodev module allocates a buffer whose\n\tsize is this user-suppled length.</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged process can trigger a kernel panic.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-15879"
+		],
+		"freebsd_sa": [
+			"SA-20:15.cryptodev"
+		]
+	},
+	"dates": {
+		"discovery": "2020-01-20",
+		"entry": "2020-05-12"
+	}
 }

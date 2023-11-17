@@ -1,37 +1,37 @@
 {
-  "vid": "fd8bac56-c444-11e1-864b-001cc0877741",
-  "topic": "phpList -- SQL injection and XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phplist"
-      ],
-      "range": [
-        {
-          "le": "2.10.17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Zero Science Lab reports:</p>\n\t<blockquote cite=\"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2012-5081.php\">\n\t  <p>Input passed via the parameter 'sortby' is not properly\n\t    sanitised before being returned to the user or used in SQL queries.\n\t    This can be exploited to manipulate SQL queries by injecting\n\t    arbitrary SQL code. The param 'num' is vulnerable to a XSS issue\n\t    where the attacker can execute arbitrary HTML and script code in\n\t    a user's browser session in context of an affected site.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phplist.com/?lid=567",
-      "http://www.zeroscience.mk/en/vulnerabilities/ZSL-2012-5081.php"
-    ],
-    "cvename": [
-      "CVE-2012-2740",
-      "CVE-2012-2741"
-    ],
-    "bid": [
-      "52657"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-03-21",
-    "entry": "2012-07-02"
-  }
+	"vid": "fd8bac56-c444-11e1-864b-001cc0877741",
+	"topic": "phpList -- SQL injection and XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phplist"
+			],
+			"range": [
+				{
+					"le": "2.10.17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Zero Science Lab reports:</p>\n\t<blockquote cite=\"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2012-5081.php\">\n\t  <p>Input passed via the parameter 'sortby' is not properly\n\t    sanitised before being returned to the user or used in SQL queries.\n\t    This can be exploited to manipulate SQL queries by injecting\n\t    arbitrary SQL code. The param 'num' is vulnerable to a XSS issue\n\t    where the attacker can execute arbitrary HTML and script code in\n\t    a user's browser session in context of an affected site.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phplist.com/?lid=567",
+			"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2012-5081.php"
+		],
+		"cvename": [
+			"CVE-2012-2740",
+			"CVE-2012-2741"
+		],
+		"bid": [
+			"52657"
+		]
+	},
+	"dates": {
+		"discovery": "2012-03-21",
+		"entry": "2012-07-02"
+	}
 }

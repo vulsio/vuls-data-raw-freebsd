@@ -1,44 +1,44 @@
 {
-  "vid": "89ff45e3-1a57-11e4-bebd-000c2980a9f3",
-  "topic": "samba -- remote code execution",
-  "affects": [
-    {
-      "name": [
-        "samba4"
-      ],
-      "range": [
-        {
-          "lt": "4.0.21",
-          "ge": "4.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba41"
-      ],
-      "range": [
-        {
-          "lt": "4.1.11",
-          "ge": "4.1.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Samba developers report:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2014-3560\">\n\t  <p>A malicious browser can send packets that may overwrite the heap of\n\t    the target nmbd NetBIOS name services daemon. It may be possible to\n\t    use this to generate a remote code execution vulnerability as the\n\t    superuser (root).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.samba.org/samba/security/CVE-2014-3560"
-    ],
-    "cvename": [
-      "CVE-2014-3560"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-07-31",
-    "entry": "2014-08-02"
-  }
+	"vid": "89ff45e3-1a57-11e4-bebd-000c2980a9f3",
+	"topic": "samba -- remote code execution",
+	"affects": [
+		{
+			"name": [
+				"samba4"
+			],
+			"range": [
+				{
+					"lt": "4.0.21",
+					"ge": "4.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba41"
+			],
+			"range": [
+				{
+					"lt": "4.1.11",
+					"ge": "4.1.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Samba developers report:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2014-3560\">\n\t  <p>A malicious browser can send packets that may overwrite the heap of\n\t    the target nmbd NetBIOS name services daemon. It may be possible to\n\t    use this to generate a remote code execution vulnerability as the\n\t    superuser (root).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.samba.org/samba/security/CVE-2014-3560"
+		],
+		"cvename": [
+			"CVE-2014-3560"
+		]
+	},
+	"dates": {
+		"discovery": "2014-07-31",
+		"entry": "2014-08-02"
+	}
 }

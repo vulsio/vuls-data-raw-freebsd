@@ -1,37 +1,37 @@
 {
-  "vid": "d9b01c08-59b3-11de-828e-00e0815b8da8",
-  "topic": "git -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "git"
-      ],
-      "range": [
-        {
-          "lt": "1.6.3.2_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/35338/discuss\">\n\t  <p>Git is prone to a denial-of-service vulnerability because it\n\t    fails to properly handle some client requests.</p>\n\t  <p>Attackers can exploit this issue to cause a daemon process to\n\t    enter an infinite loop. Repeated exploits may consume excessive\n\t    system resources, resulting in a denial of service condition.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.redhat.com/archives/fedora-security-list/2009-June/msg00000.html",
-      "http://article.gmane.org/gmane.comp.version-control.git/120724"
-    ],
-    "cvename": [
-      "CVE-2009-2108"
-    ],
-    "bid": [
-      "35338"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-06-04",
-    "entry": "2009-06-15",
-    "modified": "2010-05-02"
-  }
+	"vid": "d9b01c08-59b3-11de-828e-00e0815b8da8",
+	"topic": "git -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"git"
+			],
+			"range": [
+				{
+					"lt": "1.6.3.2_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/35338/discuss\">\n\t  <p>Git is prone to a denial-of-service vulnerability because it\n\t    fails to properly handle some client requests.</p>\n\t  <p>Attackers can exploit this issue to cause a daemon process to\n\t    enter an infinite loop. Repeated exploits may consume excessive\n\t    system resources, resulting in a denial of service condition.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.redhat.com/archives/fedora-security-list/2009-June/msg00000.html",
+			"http://article.gmane.org/gmane.comp.version-control.git/120724"
+		],
+		"cvename": [
+			"CVE-2009-2108"
+		],
+		"bid": [
+			"35338"
+		]
+	},
+	"dates": {
+		"discovery": "2009-06-04",
+		"entry": "2009-06-15",
+		"modified": "2010-05-02"
+	}
 }

@@ -1,48 +1,48 @@
 {
-  "vid": "070b5b22-6d74-11dd-aa18-0030843d3802",
-  "topic": "drupal -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "drupal5"
-      ],
-      "range": [
-        {
-          "lt": "5.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/295053\">\n\t  <p>A bug in the output filter employed by Drupal makes it possible\n\t    for malicious users to insert script code into pages (cross site\n\t    scripting or XSS). A bug in the private filesystem trusts the MIME\n\t    type sent by the browser, enabling malicious users with the ability\n\t    to upload files to execute cross site scripting attacks.</p>\n\t  <p>The BlogAPI module does not validate the extension of uploaded\n\t    files, enabling users with the \"administer content with blog api\"\n\t    permission to upload harmful files.  This bug affects both Drupal\n\t    5.x and 6.x.</p>\n\t  <p>Drupal forms contain a token to protect against cross site\n\t    request forgeries (CSRF). The token may not be validated properly\n\t    for cached forms and forms containing AHAH elements. This bug\n\t    affects Drupal 6.x.</p>\n\t  <p>User access rules can be added or deleted upon accessing a\n\t    properly formatted URL, making such modifications vulnerable to\n\t    cross site request forgeries (CSRF). This may lead to unintended\n\t    addition or deletion of an access rule when a sufficiently\n\t    privileged user visits a page or site created by a malicious\n\t    person. This bug affects both Drupal 5.x and 6.x.</p>\n\t  <p>The Upload module in Drupal 6 contains privilege escalation\n\t    vulnerabilities for users with the \"upload files\" permission. This\n\t    can lead to users being able to edit nodes which they are normally\n\t    not allowed to, delete any file to which the webserver has\n\t    sufficient rights, and download attachments of nodes to which they\n\t    have no access. Harmful files may also be uploaded via cross site\n\t    request forgeries (CSRF). These bugs affect Drupal 6.x.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/31462/"
-    ],
-    "cvename": [
-      "CVE-2008-3740",
-      "CVE-2008-3741",
-      "CVE-2008-3742",
-      "CVE-2008-3743",
-      "CVE-2008-3744",
-      "CVE-2008-3745"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-08-13",
-    "entry": "2008-08-18",
-    "modified": "2010-05-12"
-  }
+	"vid": "070b5b22-6d74-11dd-aa18-0030843d3802",
+	"topic": "drupal -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"drupal5"
+			],
+			"range": [
+				{
+					"lt": "5.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/295053\">\n\t  <p>A bug in the output filter employed by Drupal makes it possible\n\t    for malicious users to insert script code into pages (cross site\n\t    scripting or XSS). A bug in the private filesystem trusts the MIME\n\t    type sent by the browser, enabling malicious users with the ability\n\t    to upload files to execute cross site scripting attacks.</p>\n\t  <p>The BlogAPI module does not validate the extension of uploaded\n\t    files, enabling users with the \"administer content with blog api\"\n\t    permission to upload harmful files.  This bug affects both Drupal\n\t    5.x and 6.x.</p>\n\t  <p>Drupal forms contain a token to protect against cross site\n\t    request forgeries (CSRF). The token may not be validated properly\n\t    for cached forms and forms containing AHAH elements. This bug\n\t    affects Drupal 6.x.</p>\n\t  <p>User access rules can be added or deleted upon accessing a\n\t    properly formatted URL, making such modifications vulnerable to\n\t    cross site request forgeries (CSRF). This may lead to unintended\n\t    addition or deletion of an access rule when a sufficiently\n\t    privileged user visits a page or site created by a malicious\n\t    person. This bug affects both Drupal 5.x and 6.x.</p>\n\t  <p>The Upload module in Drupal 6 contains privilege escalation\n\t    vulnerabilities for users with the \"upload files\" permission. This\n\t    can lead to users being able to edit nodes which they are normally\n\t    not allowed to, delete any file to which the webserver has\n\t    sufficient rights, and download attachments of nodes to which they\n\t    have no access. Harmful files may also be uploaded via cross site\n\t    request forgeries (CSRF). These bugs affect Drupal 6.x.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/31462/"
+		],
+		"cvename": [
+			"CVE-2008-3740",
+			"CVE-2008-3741",
+			"CVE-2008-3742",
+			"CVE-2008-3743",
+			"CVE-2008-3744",
+			"CVE-2008-3745"
+		]
+	},
+	"dates": {
+		"discovery": "2008-08-13",
+		"entry": "2008-08-18",
+		"modified": "2010-05-12"
+	}
 }

@@ -1,41 +1,41 @@
 {
-  "vid": "1db1ed59-af07-11d8-acb9-000d610a3b12",
-  "topic": "buffer cache invalidation implementation issues",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.2_8",
-          "ge": "5.0"
-        },
-        {
-          "lt": "4.9_9",
-          "ge": "4.9"
-        },
-        {
-          "lt": "4.8_22",
-          "ge": "4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Programming errors in the implementation of the msync(2)\n\t  system call involving the MS_INVALIDATE operation lead to\n\t  cache consistency problems between the virtual memory system\n\t  and on-disk contents.</p>\n\n\t<p>In some situations, a user with read access to a file may\n\t  be able to prevent changes to that file from being committed\n\t  to disk.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0435"
-    ],
-    "freebsd_sa": [
-      "SA-04:11.msync"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-04-24",
-    "entry": "2004-05-26"
-  }
+	"vid": "1db1ed59-af07-11d8-acb9-000d610a3b12",
+	"topic": "buffer cache invalidation implementation issues",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.2_8",
+					"ge": "5.0"
+				},
+				{
+					"lt": "4.9_9",
+					"ge": "4.9"
+				},
+				{
+					"lt": "4.8_22",
+					"ge": "4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Programming errors in the implementation of the msync(2)\n\t  system call involving the MS_INVALIDATE operation lead to\n\t  cache consistency problems between the virtual memory system\n\t  and on-disk contents.</p>\n\n\t<p>In some situations, a user with read access to a file may\n\t  be able to prevent changes to that file from being committed\n\t  to disk.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0435"
+		],
+		"freebsd_sa": [
+			"SA-04:11.msync"
+		]
+	},
+	"dates": {
+		"discovery": "2004-04-24",
+		"entry": "2004-05-26"
+	}
 }

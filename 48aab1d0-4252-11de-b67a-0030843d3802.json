@@ -1,35 +1,35 @@
 {
-  "vid": "48aab1d0-4252-11de-b67a-0030843d3802",
-  "topic": "libwmf -- integer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "libwmf"
-      ],
-      "range": [
-        {
-          "lt": "0.2.8.4_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/20921\">\n\t  <p>infamous41md has reported a vulnerability in libwmf, which\n\t    potentially can be exploited by malicious people to compromise an\n\t    application using the vulnerable library.</p>\n\t  <p>The vulnerability is caused due to an integer overflow error when\n\t    allocating memory based on a value taken directly from a WMF file\n\t    without performing any checks. This can be exploited to cause a\n\t    heap-based buffer overflow when a specially crafted WMF file is\n\t    processed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/20921/"
-    ],
-    "cvename": [
-      "CVE-2006-3376"
-    ],
-    "bid": [
-      "18751"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-07-03",
-    "entry": "2009-05-16"
-  }
+	"vid": "48aab1d0-4252-11de-b67a-0030843d3802",
+	"topic": "libwmf -- integer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"libwmf"
+			],
+			"range": [
+				{
+					"lt": "0.2.8.4_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/20921\">\n\t  <p>infamous41md has reported a vulnerability in libwmf, which\n\t    potentially can be exploited by malicious people to compromise an\n\t    application using the vulnerable library.</p>\n\t  <p>The vulnerability is caused due to an integer overflow error when\n\t    allocating memory based on a value taken directly from a WMF file\n\t    without performing any checks. This can be exploited to cause a\n\t    heap-based buffer overflow when a specially crafted WMF file is\n\t    processed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/20921/"
+		],
+		"cvename": [
+			"CVE-2006-3376"
+		],
+		"bid": [
+			"18751"
+		]
+	},
+	"dates": {
+		"discovery": "2006-07-03",
+		"entry": "2009-05-16"
+	}
 }

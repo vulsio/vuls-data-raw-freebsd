@@ -1,32 +1,32 @@
 {
-  "vid": "279e5f4b-d823-11e2-928e-08002798f6ff",
-  "topic": "apache-xml-security-c -- heap overflow",
-  "affects": [
-    {
-      "name": [
-        "apache-xml-security-c"
-      ],
-      "range": [
-        {
-          "lt": "1.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://santuario.apache.org/secadv.data/CVE-2013-2156.txt\">\n\t  <p>A heap overflow exists in the processing of the PrefixList\n\t  attribute optionally used in conjunction with Exclusive\n\t  Canonicalization, potentially allowing arbitary code execution.\n\t  If verification of the signature occurs prior to actual evaluation of a\n\t  signing key, this could be exploited by an unauthenticated attacker.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://santuario.apache.org/secadv.data/CVE-2013-2156.txt"
-    ],
-    "cvename": [
-      "CVE-2013-2156"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-06-18",
-    "entry": "2013-06-18"
-  }
+	"vid": "279e5f4b-d823-11e2-928e-08002798f6ff",
+	"topic": "apache-xml-security-c -- heap overflow",
+	"affects": [
+		{
+			"name": [
+				"apache-xml-security-c"
+			],
+			"range": [
+				{
+					"lt": "1.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://santuario.apache.org/secadv.data/CVE-2013-2156.txt\">\n\t  <p>A heap overflow exists in the processing of the PrefixList\n\t  attribute optionally used in conjunction with Exclusive\n\t  Canonicalization, potentially allowing arbitary code execution.\n\t  If verification of the signature occurs prior to actual evaluation of a\n\t  signing key, this could be exploited by an unauthenticated attacker.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://santuario.apache.org/secadv.data/CVE-2013-2156.txt"
+		],
+		"cvename": [
+			"CVE-2013-2156"
+		]
+	},
+	"dates": {
+		"discovery": "2013-06-18",
+		"entry": "2013-06-18"
+	}
 }

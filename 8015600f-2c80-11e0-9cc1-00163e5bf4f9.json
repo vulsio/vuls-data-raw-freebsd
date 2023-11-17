@@ -1,35 +1,35 @@
 {
-  "vid": "8015600f-2c80-11e0-9cc1-00163e5bf4f9",
-  "topic": "maradns -- denial of service when resolving a long DNS hostname",
-  "affects": [
-    {
-      "name": [
-        "maradns"
-      ],
-      "range": [
-        {
-          "lt": "1.4.06"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MaraDNS developer Sam Trenholme reports:</p>\n\t<blockquote cite=\"http://samiam.org/blog/20110129.html\">\n\t  <p>... a mistake in allocating an array of integers, allocating it\n\t    in bytes instead of sizeof(int) units. This resulted in a buffer\n\t    being too small, allowing it to be overwritten. The impact of this\n\t    programming error is that MaraDNS can be crashed by sending\n\t    MaraDNS a single \"packet of death\". Since the data placed in the\n\t    overwritten array cannot be remotely controlled (it is a list of\n\t    increasing integers), there is no way to increase privileges\n\t    exploiting this bug.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=610834"
-    ],
-    "cvename": [
-      "CVE-2011-0520"
-    ],
-    "bid": [
-      "45966"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-01-23",
-    "entry": "2011-01-31"
-  }
+	"vid": "8015600f-2c80-11e0-9cc1-00163e5bf4f9",
+	"topic": "maradns -- denial of service when resolving a long DNS hostname",
+	"affects": [
+		{
+			"name": [
+				"maradns"
+			],
+			"range": [
+				{
+					"lt": "1.4.06"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MaraDNS developer Sam Trenholme reports:</p>\n\t<blockquote cite=\"http://samiam.org/blog/20110129.html\">\n\t  <p>... a mistake in allocating an array of integers, allocating it\n\t    in bytes instead of sizeof(int) units. This resulted in a buffer\n\t    being too small, allowing it to be overwritten. The impact of this\n\t    programming error is that MaraDNS can be crashed by sending\n\t    MaraDNS a single \"packet of death\". Since the data placed in the\n\t    overwritten array cannot be remotely controlled (it is a list of\n\t    increasing integers), there is no way to increase privileges\n\t    exploiting this bug.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=610834"
+		],
+		"cvename": [
+			"CVE-2011-0520"
+		],
+		"bid": [
+			"45966"
+		]
+	},
+	"dates": {
+		"discovery": "2011-01-23",
+		"entry": "2011-01-31"
+	}
 }

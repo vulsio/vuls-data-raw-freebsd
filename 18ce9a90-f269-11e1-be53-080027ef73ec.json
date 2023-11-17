@@ -1,30 +1,30 @@
 {
-  "vid": "18ce9a90-f269-11e1-be53-080027ef73ec",
-  "topic": "fetchmail -- chosen plaintext attack against SSL CBC initialization vectors",
-  "affects": [
-    {
-      "name": [
-        "fetchmail"
-      ],
-      "range": [
-        {
-          "lt": "6.3.22",
-          "ge": "6.3.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2012-01.txt\">\n\t  <p>Fetchmail version 6.3.9 enabled \"all SSL workarounds\" (SSL_OP_ALL)\n\t    which contains a switch to disable a countermeasure against certain\n\t    attacks against block ciphers that permit guessing the\n\t    initialization vectors, providing that an attacker can make the\n\t    application (fetchmail) encrypt some data for him -- which is not\n\t    easily the case.</p>\n\t  <p>Stream ciphers (such as RC4) are unaffected.</p>\n\t  <p>Credits to Apple Product Security for reporting this.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2011-3389"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-01-19",
-    "entry": "2012-08-30"
-  }
+	"vid": "18ce9a90-f269-11e1-be53-080027ef73ec",
+	"topic": "fetchmail -- chosen plaintext attack against SSL CBC initialization vectors",
+	"affects": [
+		{
+			"name": [
+				"fetchmail"
+			],
+			"range": [
+				{
+					"lt": "6.3.22",
+					"ge": "6.3.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2012-01.txt\">\n\t  <p>Fetchmail version 6.3.9 enabled \"all SSL workarounds\" (SSL_OP_ALL)\n\t    which contains a switch to disable a countermeasure against certain\n\t    attacks against block ciphers that permit guessing the\n\t    initialization vectors, providing that an attacker can make the\n\t    application (fetchmail) encrypt some data for him -- which is not\n\t    easily the case.</p>\n\t  <p>Stream ciphers (such as RC4) are unaffected.</p>\n\t  <p>Credits to Apple Product Security for reporting this.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2011-3389"
+		]
+	},
+	"dates": {
+		"discovery": "2012-01-19",
+		"entry": "2012-08-30"
+	}
 }

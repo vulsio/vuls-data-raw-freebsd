@@ -1,32 +1,32 @@
 {
-  "vid": "b4051b52-58fa-11e2-853b-00262d5ed8ee",
-  "topic": "rubygem-rails -- SQL injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rubygem-rails"
-      ],
-      "range": [
-        {
-          "lt": "3.2.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ruby on Rails team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/DCNTNp_qjFM\">\n\t  <p>There is a SQL injection vulnerability in Active Record in ALL\n\t     versions. Due to the way dynamic finders in Active Record extract\n\t     options from method parameters, a method parameter can mistakenly\n\t     be used as a scope. Carefully crafted requests can use the scope\n\t     to inject arbitrary SQL.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/DCNTNp_qjFM"
-    ],
-    "cvename": [
-      "CVE-2012-5664"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-01-02",
-    "entry": "2013-01-07"
-  }
+	"vid": "b4051b52-58fa-11e2-853b-00262d5ed8ee",
+	"topic": "rubygem-rails -- SQL injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rubygem-rails"
+			],
+			"range": [
+				{
+					"lt": "3.2.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ruby on Rails team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/DCNTNp_qjFM\">\n\t  <p>There is a SQL injection vulnerability in Active Record in ALL\n\t     versions. Due to the way dynamic finders in Active Record extract\n\t     options from method parameters, a method parameter can mistakenly\n\t     be used as a scope. Carefully crafted requests can use the scope\n\t     to inject arbitrary SQL.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/DCNTNp_qjFM"
+		],
+		"cvename": [
+			"CVE-2012-5664"
+		]
+	},
+	"dates": {
+		"discovery": "2013-01-02",
+		"entry": "2013-01-07"
+	}
 }

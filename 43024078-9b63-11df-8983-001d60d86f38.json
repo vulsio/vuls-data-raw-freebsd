@@ -1,39 +1,39 @@
 {
-  "vid": "43024078-9b63-11df-8983-001d60d86f38",
-  "topic": "libmspack -- infinite loop denial of service",
-  "affects": [
-    {
-      "name": [
-        "libmspack"
-      ],
-      "range": [
-        {
-          "le": "0.0.20060920"
-        }
-      ]
-    },
-    {
-      "name": [
-        "cabextract"
-      ],
-      "range": [
-        {
-          "lt": "1.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>There is a denial of service vulnerability in libmspack.  The\n\t  libmspack code is built into cabextract, so it is also\n\t  vulnerable.</p>\n\t<p>Secunia reports:</p>\n      <blockquote cite=\"http://secunia.com/advisories/40719/\">\n\t<p>The vulnerability is caused due to an error when copying data\n\t  from an uncompressed block (block type 0) and can be exploited\n\t  to trigger an infinite loop by tricking an application using the\n\t  library into processing specially crafted MS-ZIP archives.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/40719/"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-07-26",
-    "entry": "2010-07-30"
-  }
+	"vid": "43024078-9b63-11df-8983-001d60d86f38",
+	"topic": "libmspack -- infinite loop denial of service",
+	"affects": [
+		{
+			"name": [
+				"libmspack"
+			],
+			"range": [
+				{
+					"le": "0.0.20060920"
+				}
+			]
+		},
+		{
+			"name": [
+				"cabextract"
+			],
+			"range": [
+				{
+					"lt": "1.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>There is a denial of service vulnerability in libmspack.  The\n\t  libmspack code is built into cabextract, so it is also\n\t  vulnerable.</p>\n\t<p>Secunia reports:</p>\n      <blockquote cite=\"http://secunia.com/advisories/40719/\">\n\t<p>The vulnerability is caused due to an error when copying data\n\t  from an uncompressed block (block type 0) and can be exploited\n\t  to trigger an infinite loop by tricking an application using the\n\t  library into processing specially crafted MS-ZIP archives.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/40719/"
+		]
+	},
+	"dates": {
+		"discovery": "2010-07-26",
+		"entry": "2010-07-30"
+	}
 }

@@ -1,40 +1,40 @@
 {
-  "vid": "a8d8713e-dc83-11da-a22b-000c6ec775d9",
-  "topic": "mysql50-server -- COM_TABLE_DUMP arbitrary code execution",
-  "affects": [
-    {
-      "name": [
-        "mysql-server"
-      ],
-      "range": [
-        {
-          "lt": "5.0.21",
-          "gt": "5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stefano Di Paola reports:</p>\n\t<blockquote cite=\"http://www.wisec.it/vulns.php?page=8\">\n\t  <p>An authenticated user could remotely execute arbitrary\n\t    commands by taking advantage of a stack overflow.</p>\n\t  <p>To take advantage of these flaws an attacker should have\n\t    direct access to MySQL server communication layer (port\n\t    3306 or unix socket).  But if used in conjuction with some\n\t    web application flaws (i.e. php code injection) an\n\t    attacker could use socket programming (i.e. php sockets)\n\t    to gain access to that layer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.wisec.it/vulns.php?page=8",
-      "http://dev.mysql.com/doc/refman/5.0/en/news-5-0-21.html"
-    ],
-    "cvename": [
-      "CVE-2006-1518"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=114659633220473",
-        "msgid": "1146577257.5679.217.camel@first"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2006-05-02",
-    "entry": "2006-05-06"
-  }
+	"vid": "a8d8713e-dc83-11da-a22b-000c6ec775d9",
+	"topic": "mysql50-server -- COM_TABLE_DUMP arbitrary code execution",
+	"affects": [
+		{
+			"name": [
+				"mysql-server"
+			],
+			"range": [
+				{
+					"lt": "5.0.21",
+					"gt": "5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stefano Di Paola reports:</p>\n\t<blockquote cite=\"http://www.wisec.it/vulns.php?page=8\">\n\t  <p>An authenticated user could remotely execute arbitrary\n\t    commands by taking advantage of a stack overflow.</p>\n\t  <p>To take advantage of these flaws an attacker should have\n\t    direct access to MySQL server communication layer (port\n\t    3306 or unix socket).  But if used in conjuction with some\n\t    web application flaws (i.e. php code injection) an\n\t    attacker could use socket programming (i.e. php sockets)\n\t    to gain access to that layer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.wisec.it/vulns.php?page=8",
+			"http://dev.mysql.com/doc/refman/5.0/en/news-5-0-21.html"
+		],
+		"cvename": [
+			"CVE-2006-1518"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=114659633220473",
+				"msgid": "1146577257.5679.217.camel@first"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2006-05-02",
+		"entry": "2006-05-06"
+	}
 }

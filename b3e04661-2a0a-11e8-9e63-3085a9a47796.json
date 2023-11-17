@@ -1,32 +1,32 @@
 {
-  "vid": "b3e04661-2a0a-11e8-9e63-3085a9a47796",
-  "topic": "slurm-wlm -- SQL Injection attacks against SlurmDBD",
-  "affects": [
-    {
-      "name": [
-        "slurm-wlm"
-      ],
-      "range": [
-        {
-          "lt": "17.02.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SchedMD reports:</p>\n\t<blockquote cite=\"https://lists.schedmd.com/pipermail/slurm-announce/2018/000006.html\">\n\t  <p>Several issues were discovered with incomplete sanitization of\n\t     user-provided text strings, which could potentially lead to SQL\n\t     injection attacks against SlurmDBD itself. Such exploits could lead to a\n\t     loss of accounting data, or escalation of user privileges on the cluster.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2018-7033"
-    ],
-    "cvename": [
-      "CVE-2018-7033"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-03-15",
-    "entry": "2018-03-17"
-  }
+	"vid": "b3e04661-2a0a-11e8-9e63-3085a9a47796",
+	"topic": "slurm-wlm -- SQL Injection attacks against SlurmDBD",
+	"affects": [
+		{
+			"name": [
+				"slurm-wlm"
+			],
+			"range": [
+				{
+					"lt": "17.02.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SchedMD reports:</p>\n\t<blockquote cite=\"https://lists.schedmd.com/pipermail/slurm-announce/2018/000006.html\">\n\t  <p>Several issues were discovered with incomplete sanitization of\n\t     user-provided text strings, which could potentially lead to SQL\n\t     injection attacks against SlurmDBD itself. Such exploits could lead to a\n\t     loss of accounting data, or escalation of user privileges on the cluster.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2018-7033"
+		],
+		"cvename": [
+			"CVE-2018-7033"
+		]
+	},
+	"dates": {
+		"discovery": "2018-03-15",
+		"entry": "2018-03-17"
+	}
 }

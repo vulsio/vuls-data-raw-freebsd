@@ -1,127 +1,127 @@
 {
-  "vid": "ab9c559e-115a-11d9-bc4a-000c41e2cdad",
-  "topic": "mozilla -- BMP decoder vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "0.7.3_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "firefox",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "linux-phoenix",
-        "phoenix",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "lt": "0.9.3_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-netscape7",
-        "fr-netscape7",
-        "ja-netscape7",
-        "netscape7",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "le": "7.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla-gtk1"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2_2,2"
-        },
-        {
-          "lt": "1.8.a3_1,2",
-          "ge": "1.8.a,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk",
-        "mozilla-gtk2",
-        "mozilla-thunderbird",
-        "linux-netscape",
-        "de-linux-netscape",
-        "fr-linux-netscape",
-        "ja-linux-netscape"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gael Delalleau discovered several integer overflows in\n\t  Mozilla's BMP decoder that can result in denial-of-service or\n\t  arbitrary code execution.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugzilla.mozilla.org/show_bug.cgi?id=255067"
-    ],
-    "cvename": [
-      "CVE-2004-0904"
-    ],
-    "cert_vu": [
-      "847200"
-    ],
-    "us_cert_ta": [
-      "TA04-261A"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-13",
-    "entry": "2004-09-28",
-    "modified": "2004-09-30"
-  }
+	"vid": "ab9c559e-115a-11d9-bc4a-000c41e2cdad",
+	"topic": "mozilla -- BMP decoder vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "0.7.3_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"firefox",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"linux-phoenix",
+				"phoenix",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"lt": "0.9.3_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-netscape7",
+				"fr-netscape7",
+				"ja-netscape7",
+				"netscape7",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"le": "7.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla-gtk1"
+			],
+			"range": [
+				{
+					"lt": "1.7.2_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.2_2,2"
+				},
+				{
+					"lt": "1.8.a3_1,2",
+					"ge": "1.8.a,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk",
+				"mozilla-gtk2",
+				"mozilla-thunderbird",
+				"linux-netscape",
+				"de-linux-netscape",
+				"fr-linux-netscape",
+				"ja-linux-netscape"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gael Delalleau discovered several integer overflows in\n\t  Mozilla's BMP decoder that can result in denial-of-service or\n\t  arbitrary code execution.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugzilla.mozilla.org/show_bug.cgi?id=255067"
+		],
+		"cvename": [
+			"CVE-2004-0904"
+		],
+		"cert_vu": [
+			"847200"
+		],
+		"us_cert_ta": [
+			"TA04-261A"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-13",
+		"entry": "2004-09-28",
+		"modified": "2004-09-30"
+	}
 }

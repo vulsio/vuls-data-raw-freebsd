@@ -1,65 +1,65 @@
 {
-  "vid": "ca5d3272-59e3-11e2-853b-00262d5ed8ee",
-  "topic": "rubygem-rails -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "rubygem-rails"
-      ],
-      "range": [
-        {
-          "lt": "3.2.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-actionpack"
-      ],
-      "range": [
-        {
-          "lt": "3.2.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-activerecord"
-      ],
-      "range": [
-        {
-          "lt": "3.2.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-activesupport"
-      ],
-      "range": [
-        {
-          "lt": "3.2.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ruby on Rails team reports:</p>\n\t<blockquote cite=\"http://weblog.rubyonrails.org/2013/1/8/Rails-3-2-11-3-1-10-3-0-19-and-2-3-15-have-been-released/\">\n\t  <p>Two high-risk vulnerabilities have been discovered:</p>\n\t  <p>(CVE-2013-0155) There is a vulnerability when Active Record is\n\t     used in conjunction with JSON parameter parsing.</p>\n\t  <p>Due to the way Active Record interprets parameters in combination\n\t     with the way that JSON parameters are parsed, it is possible for an\n\t     attacker to issue unexpected database queries with \"IS NULL\" or\n\t     empty \"WHERE\" clauses. This issue does not let an attacker insert\n\t     arbitrary values into an SQL query, however they can cause the\n\t     query to check for NULL or eliminate a WHERE clause when most users\n\t     would not expect it.</p>\n\t  <p>(CVE-2013-0156) There are multiple weaknesses in the parameter\n\t     parsing code for Ruby on Rails which allows attackers to bypass\n\t     authentication systems, inject arbitrary SQL, inject and execute\n\t     arbitrary code, or perform a DoS attack on a Rails application.</p>\n\t  <p>The parameter parsing code of Ruby on Rails allows applications to\n\t     automatically cast values from strings to certain data types.\n\t     Unfortunately the type casting code supported certain conversions\n\t     which were not suitable for performing on user-provided data\n\t     including creating Symbols and parsing YAML. These unsuitable\n\t     conversions can be used by an attacker to compromise a Rails\n\t     application.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://weblog.rubyonrails.org/2013/1/8/Rails-3-2-11-3-1-10-3-0-19-and-2-3-15-have-been-released/",
-      "https://groups.google.com/forum/?fromgroups#!topic/rubyonrails-security/t1WFuuQyavI",
-      "https://groups.google.com/forum/?fromgroups#!topic/rubyonrails-security/61bkgvnSGTQ"
-    ],
-    "cvename": [
-      "CVE-2013-0155",
-      "CVE-2013-0156"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-01-08",
-    "entry": "2013-01-08"
-  }
+	"vid": "ca5d3272-59e3-11e2-853b-00262d5ed8ee",
+	"topic": "rubygem-rails -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"rubygem-rails"
+			],
+			"range": [
+				{
+					"lt": "3.2.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-actionpack"
+			],
+			"range": [
+				{
+					"lt": "3.2.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-activerecord"
+			],
+			"range": [
+				{
+					"lt": "3.2.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-activesupport"
+			],
+			"range": [
+				{
+					"lt": "3.2.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ruby on Rails team reports:</p>\n\t<blockquote cite=\"http://weblog.rubyonrails.org/2013/1/8/Rails-3-2-11-3-1-10-3-0-19-and-2-3-15-have-been-released/\">\n\t  <p>Two high-risk vulnerabilities have been discovered:</p>\n\t  <p>(CVE-2013-0155) There is a vulnerability when Active Record is\n\t     used in conjunction with JSON parameter parsing.</p>\n\t  <p>Due to the way Active Record interprets parameters in combination\n\t     with the way that JSON parameters are parsed, it is possible for an\n\t     attacker to issue unexpected database queries with \"IS NULL\" or\n\t     empty \"WHERE\" clauses. This issue does not let an attacker insert\n\t     arbitrary values into an SQL query, however they can cause the\n\t     query to check for NULL or eliminate a WHERE clause when most users\n\t     would not expect it.</p>\n\t  <p>(CVE-2013-0156) There are multiple weaknesses in the parameter\n\t     parsing code for Ruby on Rails which allows attackers to bypass\n\t     authentication systems, inject arbitrary SQL, inject and execute\n\t     arbitrary code, or perform a DoS attack on a Rails application.</p>\n\t  <p>The parameter parsing code of Ruby on Rails allows applications to\n\t     automatically cast values from strings to certain data types.\n\t     Unfortunately the type casting code supported certain conversions\n\t     which were not suitable for performing on user-provided data\n\t     including creating Symbols and parsing YAML. These unsuitable\n\t     conversions can be used by an attacker to compromise a Rails\n\t     application.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://weblog.rubyonrails.org/2013/1/8/Rails-3-2-11-3-1-10-3-0-19-and-2-3-15-have-been-released/",
+			"https://groups.google.com/forum/?fromgroups#!topic/rubyonrails-security/t1WFuuQyavI",
+			"https://groups.google.com/forum/?fromgroups#!topic/rubyonrails-security/61bkgvnSGTQ"
+		],
+		"cvename": [
+			"CVE-2013-0155",
+			"CVE-2013-0156"
+		]
+	},
+	"dates": {
+		"discovery": "2013-01-08",
+		"entry": "2013-01-08"
+	}
 }

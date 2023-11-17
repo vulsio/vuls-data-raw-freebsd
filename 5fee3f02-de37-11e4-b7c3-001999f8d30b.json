@@ -1,52 +1,52 @@
 {
-  "vid": "5fee3f02-de37-11e4-b7c3-001999f8d30b",
-  "topic": "asterisk -- TLS Certificate Common name NULL byte exploit",
-  "affects": [
-    {
-      "name": [
-        "asterisk"
-      ],
-      "range": [
-        {
-          "lt": "1.8.32.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk11"
-      ],
-      "range": [
-        {
-          "lt": "11.17.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.3.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When Asterisk registers to a SIP TLS device and and\n\t  verifies the server, Asterisk will accept signed certificates\n\t  that match a common name other than the one Asterisk is\n\t  expecting if the signed certificate has a common name\n\t  containing a null byte after the portion of the common\n\t  name that Asterisk expected. For example, if Asterisk is\n\t  trying to register to www.domain.com, Asterisk will accept\n\t  certificates of the form\n\t  www.domain.com\\x00www.someotherdomain.com</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2015-003.html"
-    ],
-    "cvename": [
-      "CVE-2015-3008"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-04-04",
-    "entry": "2015-04-08"
-  }
+	"vid": "5fee3f02-de37-11e4-b7c3-001999f8d30b",
+	"topic": "asterisk -- TLS Certificate Common name NULL byte exploit",
+	"affects": [
+		{
+			"name": [
+				"asterisk"
+			],
+			"range": [
+				{
+					"lt": "1.8.32.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk11"
+			],
+			"range": [
+				{
+					"lt": "11.17.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.3.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>When Asterisk registers to a SIP TLS device and and\n\t  verifies the server, Asterisk will accept signed certificates\n\t  that match a common name other than the one Asterisk is\n\t  expecting if the signed certificate has a common name\n\t  containing a null byte after the portion of the common\n\t  name that Asterisk expected. For example, if Asterisk is\n\t  trying to register to www.domain.com, Asterisk will accept\n\t  certificates of the form\n\t  www.domain.com\\x00www.someotherdomain.com</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2015-003.html"
+		],
+		"cvename": [
+			"CVE-2015-3008"
+		]
+	},
+	"dates": {
+		"discovery": "2015-04-04",
+		"entry": "2015-04-08"
+	}
 }

@@ -1,44 +1,44 @@
 {
-  "vid": "3fcb70a4-e22d-11ea-98b2-080027846a02",
-  "topic": "Python -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "python37"
-      ],
-      "range": [
-        {
-          "lt": "3.7.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "python36"
-      ],
-      "range": [
-        {
-          "lt": "3.6.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n       <p>Python reports:</p>\n       <blockquote cite=\"https://docs.python.org/release/3.7.9/whatsnew/changelog.html#changelog\">\n\t  <p>bpo-29778: Ensure python3.dll is loaded from correct locations when\n\t    Python is embedded (CVE-2020-15523).</p>\n\t  <p>bpo-41004: CVE-2020-14422: The __hash__() methods of ipaddress.IPv4Interface\n\t    and ipaddress.IPv6Interface incorrectly generated constant hash values\n\t    of 32 and 128 respectively. This resulted in always causing hash collisions.\n\t    The fix uses hash() to generate hash values for the tuple of (address, mask\n\t    length, network address).</p>\n\t  <p>bpo-39603: Prevent http header injection by rejecting control characters\n\t    in http.client.putrequest(...).</p>\n       </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.python.org/release/3.7.9/whatsnew/changelog.html#changelog",
-      "https://docs.python.org/release/3.6.12/whatsnew/changelog.html#changelog"
-    ],
-    "cvename": [
-      "CVE-2020-14422",
-      "CVE-2020-15523"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-06-17",
-    "entry": "2020-08-19"
-  }
+	"vid": "3fcb70a4-e22d-11ea-98b2-080027846a02",
+	"topic": "Python -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"python37"
+			],
+			"range": [
+				{
+					"lt": "3.7.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"python36"
+			],
+			"range": [
+				{
+					"lt": "3.6.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Python reports:</p>\n       <blockquote cite=\"https://docs.python.org/release/3.7.9/whatsnew/changelog.html#changelog\">\n\t  <p>bpo-29778: Ensure python3.dll is loaded from correct locations when\n\t    Python is embedded (CVE-2020-15523).</p>\n\t  <p>bpo-41004: CVE-2020-14422: The __hash__() methods of ipaddress.IPv4Interface\n\t    and ipaddress.IPv6Interface incorrectly generated constant hash values\n\t    of 32 and 128 respectively. This resulted in always causing hash collisions.\n\t    The fix uses hash() to generate hash values for the tuple of (address, mask\n\t    length, network address).</p>\n\t  <p>bpo-39603: Prevent http header injection by rejecting control characters\n\t    in http.client.putrequest(...).</p>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.python.org/release/3.7.9/whatsnew/changelog.html#changelog",
+			"https://docs.python.org/release/3.6.12/whatsnew/changelog.html#changelog"
+		],
+		"cvename": [
+			"CVE-2020-14422",
+			"CVE-2020-15523"
+		]
+	},
+	"dates": {
+		"discovery": "2020-06-17",
+		"entry": "2020-08-19"
+	}
 }

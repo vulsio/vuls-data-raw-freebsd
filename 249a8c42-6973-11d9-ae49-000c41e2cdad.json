@@ -1,55 +1,55 @@
 {
-  "vid": "249a8c42-6973-11d9-ae49-000c41e2cdad",
-  "topic": "zgv -- exploitable heap overflows",
-  "affects": [
-    {
-      "name": [
-        "zgv"
-      ],
-      "range": [
-        {
-          "lt": "5.8_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xzgv"
-      ],
-      "range": [
-        {
-          "lt": "0.8_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>infamous41md reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109886210702781\">\n\t  <p>zgv uses malloc() frequently to allocate memory for storing\n\t    image data.  When calculating how much to allocate, user\n\t    supplied data from image headers is multiplied and/or added\n\t    without any checks for arithmetic overflows.  We can\n\t    overflow numerous calculations, and cause small buffers to\n\t    be allocated.  Then we can overflow the buffer, and\n\t    eventually execute code.  There are a total of\n\t    11 overflows that are exploitable to execute arbitrary\n\t    code.</p>\n\t</blockquote>\n\t<p>These bugs exist in both zgv and xzgv.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://rus.members.beeb.net/xzgv.html",
-      "http://www.svgalib.org/rus/zgv/",
-      "http://www.idefense.com/application/poi/display?id=160&type=vulnerabilities&flashstatus=false"
-    ],
-    "cvename": [
-      "CVE-2004-0994"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109886210702781",
-        "msgid": "20041025210717.2799d9c1.infamous41md@hotpop.com"
-      },
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109898111915661",
-        "msgid": "20041027233907.A3678@netdirect.ca"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-26",
-    "entry": "2005-01-18",
-    "modified": "2005-01-21"
-  }
+	"vid": "249a8c42-6973-11d9-ae49-000c41e2cdad",
+	"topic": "zgv -- exploitable heap overflows",
+	"affects": [
+		{
+			"name": [
+				"zgv"
+			],
+			"range": [
+				{
+					"lt": "5.8_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xzgv"
+			],
+			"range": [
+				{
+					"lt": "0.8_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>infamous41md reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109886210702781\">\n\t  <p>zgv uses malloc() frequently to allocate memory for storing\n\t    image data.  When calculating how much to allocate, user\n\t    supplied data from image headers is multiplied and/or added\n\t    without any checks for arithmetic overflows.  We can\n\t    overflow numerous calculations, and cause small buffers to\n\t    be allocated.  Then we can overflow the buffer, and\n\t    eventually execute code.  There are a total of\n\t    11 overflows that are exploitable to execute arbitrary\n\t    code.</p>\n\t</blockquote>\n\t<p>These bugs exist in both zgv and xzgv.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://rus.members.beeb.net/xzgv.html",
+			"http://www.svgalib.org/rus/zgv/",
+			"http://www.idefense.com/application/poi/display?id=160&type=vulnerabilities&flashstatus=false"
+		],
+		"cvename": [
+			"CVE-2004-0994"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109886210702781",
+				"msgid": "20041025210717.2799d9c1.infamous41md@hotpop.com"
+			},
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109898111915661",
+				"msgid": "20041027233907.A3678@netdirect.ca"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-26",
+		"entry": "2005-01-18",
+		"modified": "2005-01-21"
+	}
 }

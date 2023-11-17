@@ -1,41 +1,41 @@
 {
-  "vid": "de2fab2d-0a37-11dc-aae2-00304881ac9a",
-  "topic": "FreeType 2 -- Heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "freetype2"
-      ],
-      "range": [
-        {
-          "lt": "2.2.1_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n  <blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2754\">\n    <p>Integer signedness error in truetype/ttgload.c in Freetype 2.3.4 and\n      earlier might allow remote attackers to execute arbitrary code via a\n      crafted TTF image with a negative n_points value, which leads to an\n      integer overflow and heap-based buffer overflow.</p>\n  </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2754",
-      "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=240200"
-    ],
-    "cvename": [
-      "CVE-2007-2754"
-    ],
-    "freebsd_pr": [
-      "ports/112769"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.gnu.org/archive/html/freetype-devel/2007-04/msg00041.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2007-04-27",
-    "entry": "2007-05-24"
-  }
+	"vid": "de2fab2d-0a37-11dc-aae2-00304881ac9a",
+	"topic": "FreeType 2 -- Heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"freetype2"
+			],
+			"range": [
+				{
+					"lt": "2.2.1_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n  <blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2754\">\n    <p>Integer signedness error in truetype/ttgload.c in Freetype 2.3.4 and\n      earlier might allow remote attackers to execute arbitrary code via a\n      crafted TTF image with a negative n_points value, which leads to an\n      integer overflow and heap-based buffer overflow.</p>\n  </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2754",
+			"https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=240200"
+		],
+		"cvename": [
+			"CVE-2007-2754"
+		],
+		"freebsd_pr": [
+			"ports/112769"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.gnu.org/archive/html/freetype-devel/2007-04/msg00041.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2007-04-27",
+		"entry": "2007-05-24"
+	}
 }

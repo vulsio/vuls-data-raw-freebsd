@@ -1,36 +1,36 @@
 {
-  "vid": "60f8fe7b-3cfb-11da-baa2-0004614cc33d",
-  "topic": "WebCalendar -- remote file inclusion vulnerability",
-  "affects": [
-    {
-      "name": [
-        "WebCalendar"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>WebCalendar is proven vulnerable to a remote file inclusion\n\t  vulnerability.  The send_reminders.php does not properly\n\t  verify the \"includedir\" parameter, giving remote attackers\n\t  the possibility to include local and remote files.  These\n\t  files can be used by the attacker to gain access to the\n\t  system.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://sourceforge.net/forum/forum.php?thread_id=1342085&forum_id=11587"
-    ],
-    "cvename": [
-      "CVE-2005-2717"
-    ],
-    "bid": [
-      "14651"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-08-26",
-    "entry": "2005-10-15",
-    "modified": "2005-11-08"
-  }
+	"vid": "60f8fe7b-3cfb-11da-baa2-0004614cc33d",
+	"topic": "WebCalendar -- remote file inclusion vulnerability",
+	"affects": [
+		{
+			"name": [
+				"WebCalendar"
+			],
+			"range": [
+				{
+					"lt": "1.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>WebCalendar is proven vulnerable to a remote file inclusion\n\t  vulnerability.  The send_reminders.php does not properly\n\t  verify the \"includedir\" parameter, giving remote attackers\n\t  the possibility to include local and remote files.  These\n\t  files can be used by the attacker to gain access to the\n\t  system.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://sourceforge.net/forum/forum.php?thread_id=1342085&forum_id=11587"
+		],
+		"cvename": [
+			"CVE-2005-2717"
+		],
+		"bid": [
+			"14651"
+		]
+	},
+	"dates": {
+		"discovery": "2005-08-26",
+		"entry": "2005-10-15",
+		"modified": "2005-11-08"
+	}
 }

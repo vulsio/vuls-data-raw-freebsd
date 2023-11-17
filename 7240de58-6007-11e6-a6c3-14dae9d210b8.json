@@ -1,46 +1,46 @@
 {
-  "vid": "7240de58-6007-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Kernel memory disclosure in control messages and SCTP",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.0_7",
-          "ge": "10.0"
-        },
-        {
-          "lt": "9.2_10",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.1_17",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_14",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Buffer between control message header and data may not\n\tbe completely initialized before being copied to userland.\n\t[CVE-2014-3952]</p>\n\t<p>Three SCTP cmsgs, SCTP_SNDRCV, SCTP_EXTRCV and SCTP_RCVINFO,\n\thave implicit padding that may not be completely initialized\n\tbefore being copied to userland. In addition, three SCTP\n\tnotifications, SCTP_PEER_ADDR_CHANGE, SCTP_REMOTE_ERROR and\n\tSCTP_AUTHENTICATION_EVENT, have padding in the returning\n\tdata structure that may not be completely initialized before\n\tbeing copied to userland. [CVE-2014-3953]</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged local process may be able to retrieve\n\tportion of kernel memory.</p>\n\t<p>For the generic control message, the process may be able\n\tto retrieve a maximum of 4 bytes of kernel memory.</p>\n\t<p>For SCTP, the process may be able to retrieve 2 bytes\n\tof kernel memory for all three control messages, plus 92\n\tbytes for SCTP_SNDRCV and 76 bytes for SCTP_EXTRCV. If the\n\tlocal process is permitted to receive SCTP notification, a\n\tmaximum of 112 bytes of kernel memory may be returned to\n\tuserland.</p>\n\t<p>This information might be directly useful, or it might\n\tbe leveraged to obtain elevated privileges in some way. For\n\texample, a terminal buffer might include a user-entered\n\tpassword.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-3952",
-      "CVE-2014-3953"
-    ],
-    "freebsd_sa": [
-      "SA-14:17.kmem"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-07-08",
-    "entry": "2016-08-11"
-  }
+	"vid": "7240de58-6007-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Kernel memory disclosure in control messages and SCTP",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.0_7",
+					"ge": "10.0"
+				},
+				{
+					"lt": "9.2_10",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.1_17",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_14",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Buffer between control message header and data may not\n\tbe completely initialized before being copied to userland.\n\t[CVE-2014-3952]</p>\n\t<p>Three SCTP cmsgs, SCTP_SNDRCV, SCTP_EXTRCV and SCTP_RCVINFO,\n\thave implicit padding that may not be completely initialized\n\tbefore being copied to userland. In addition, three SCTP\n\tnotifications, SCTP_PEER_ADDR_CHANGE, SCTP_REMOTE_ERROR and\n\tSCTP_AUTHENTICATION_EVENT, have padding in the returning\n\tdata structure that may not be completely initialized before\n\tbeing copied to userland. [CVE-2014-3953]</p>\n\t<h1>Impact:</h1>\n\t<p>An unprivileged local process may be able to retrieve\n\tportion of kernel memory.</p>\n\t<p>For the generic control message, the process may be able\n\tto retrieve a maximum of 4 bytes of kernel memory.</p>\n\t<p>For SCTP, the process may be able to retrieve 2 bytes\n\tof kernel memory for all three control messages, plus 92\n\tbytes for SCTP_SNDRCV and 76 bytes for SCTP_EXTRCV. If the\n\tlocal process is permitted to receive SCTP notification, a\n\tmaximum of 112 bytes of kernel memory may be returned to\n\tuserland.</p>\n\t<p>This information might be directly useful, or it might\n\tbe leveraged to obtain elevated privileges in some way. For\n\texample, a terminal buffer might include a user-entered\n\tpassword.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-3952",
+			"CVE-2014-3953"
+		],
+		"freebsd_sa": [
+			"SA-14:17.kmem"
+		]
+	},
+	"dates": {
+		"discovery": "2014-07-08",
+		"entry": "2016-08-11"
+	}
 }

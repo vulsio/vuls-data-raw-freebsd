@@ -1,43 +1,43 @@
 {
-  "vid": "c329712a-6b5b-11dd-9d79-001fc61c2a55",
-  "topic": "ruby -- multiple vulnerabilities in safe level",
-  "affects": [
-    {
-      "name": [
-        "ruby",
-        "ruby+pthreads",
-        "ruby+pthreads+oniguruma",
-        "ruby+oniguruma"
-      ],
-      "range": [
-        {
-          "lt": "1.8.6.287,1",
-          "ge": "1.8.*,1"
-        },
-        {
-          "lt": "1.9.1.0,1",
-          "ge": "1.9.*,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The official ruby site reports:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2008/08/08/multiple-vulnerabilities-in-ruby/\">\n\t  <p>Several vulnerabilities in safe level have been discovereds:.</p>\n\t  <ul>\n\t    <li>untrace_var is permitted at safe level 4;</li>\n\t    <li>$PROGRAM_NAME may be modified at safe level 4;</li>\n\t    <li>insecure methods may be called at safe level 1-3;</li>\n\t    <li>syslog operations are permitted at safe level 4;</li>\n\t    <li>dl doesn't check taintness, so it could allow attackers\n\t      to call dangerous functions.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.ruby-lang.org/en/news/2008/08/08/multiple-vulnerabilities-in-ruby/"
-    ],
-    "cvename": [
-      "CVE-2008-3655",
-      "CVE-2008-3656",
-      "CVE-2008-3905"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-08-08",
-    "entry": "2008-08-16",
-    "modified": "2010-05-12"
-  }
+	"vid": "c329712a-6b5b-11dd-9d79-001fc61c2a55",
+	"topic": "ruby -- multiple vulnerabilities in safe level",
+	"affects": [
+		{
+			"name": [
+				"ruby",
+				"ruby+pthreads",
+				"ruby+pthreads+oniguruma",
+				"ruby+oniguruma"
+			],
+			"range": [
+				{
+					"lt": "1.8.6.287,1",
+					"ge": "1.8.*,1"
+				},
+				{
+					"lt": "1.9.1.0,1",
+					"ge": "1.9.*,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The official ruby site reports:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2008/08/08/multiple-vulnerabilities-in-ruby/\">\n\t  <p>Several vulnerabilities in safe level have been discovereds:.</p>\n\t  <ul>\n\t    <li>untrace_var is permitted at safe level 4;</li>\n\t    <li>$PROGRAM_NAME may be modified at safe level 4;</li>\n\t    <li>insecure methods may be called at safe level 1-3;</li>\n\t    <li>syslog operations are permitted at safe level 4;</li>\n\t    <li>dl doesn't check taintness, so it could allow attackers\n\t      to call dangerous functions.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.ruby-lang.org/en/news/2008/08/08/multiple-vulnerabilities-in-ruby/"
+		],
+		"cvename": [
+			"CVE-2008-3655",
+			"CVE-2008-3656",
+			"CVE-2008-3905"
+		]
+	},
+	"dates": {
+		"discovery": "2008-08-08",
+		"entry": "2008-08-16",
+		"modified": "2010-05-12"
+	}
 }

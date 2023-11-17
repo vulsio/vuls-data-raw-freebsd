@@ -1,39 +1,39 @@
 {
-  "vid": "339fbbc1-4d23-11db-b48d-00508d6a62df",
-  "topic": "freeciv -- Packet Parsing Denial of Service Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "freeciv",
-        "freeciv-gtk",
-        "freeciv-gtk2",
-        "freeciv-nox11"
-      ],
-      "range": [
-        {
-          "lt": "2.0.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19120/\">\n\t  <p>Luigi Auriemma has reported a vulnerability in Freeciv, which\n\t    can be exploited by malicious people to cause a DoS (Denial of\n\t    Service).</p>\n\t  <p>The vulnerability is caused due to an error within the\n\t    handling of the packet length in \"common/packets.c\". This can\n\t    be exploited to crash the Freeciv server via a specially-\n\t    crafted packet with the size set to \"0xffff\".</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/19120/",
-      "http://aluigi.altervista.org/adv/freecivdos-adv.txt"
-    ],
-    "cvename": [
-      "CVE-2006-0047"
-    ],
-    "bid": [
-      "16975"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-03-06",
-    "entry": "2006-09-26"
-  }
+	"vid": "339fbbc1-4d23-11db-b48d-00508d6a62df",
+	"topic": "freeciv -- Packet Parsing Denial of Service Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"freeciv",
+				"freeciv-gtk",
+				"freeciv-gtk2",
+				"freeciv-nox11"
+			],
+			"range": [
+				{
+					"lt": "2.0.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19120/\">\n\t  <p>Luigi Auriemma has reported a vulnerability in Freeciv, which\n\t    can be exploited by malicious people to cause a DoS (Denial of\n\t    Service).</p>\n\t  <p>The vulnerability is caused due to an error within the\n\t    handling of the packet length in \"common/packets.c\". This can\n\t    be exploited to crash the Freeciv server via a specially-\n\t    crafted packet with the size set to \"0xffff\".</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/19120/",
+			"http://aluigi.altervista.org/adv/freecivdos-adv.txt"
+		],
+		"cvename": [
+			"CVE-2006-0047"
+		],
+		"bid": [
+			"16975"
+		]
+	},
+	"dates": {
+		"discovery": "2006-03-06",
+		"entry": "2006-09-26"
+	}
 }

@@ -1,52 +1,52 @@
 {
-  "vid": "d3324c55-3f11-11e4-ad16-001999f8d30b",
-  "topic": "squid -- Buffer overflow in SNMP processing",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "3.4.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "squid32"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "squid33"
-      ],
-      "range": [
-        {
-          "lt": "3.3.13_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The squid-cache project reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2014_3.txt\">\n\t  <p>Due to incorrect buffer management Squid can be caused\n\t  by an attacker to write outside its allocated SNMP buffer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Advisories/SQUID-2014_3.txt"
-    ],
-    "cvename": [
-      "CVE-2014-6270"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-09-15",
-    "entry": "2014-09-18"
-  }
+	"vid": "d3324c55-3f11-11e4-ad16-001999f8d30b",
+	"topic": "squid -- Buffer overflow in SNMP processing",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "3.4.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"squid32"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"squid33"
+			],
+			"range": [
+				{
+					"lt": "3.3.13_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The squid-cache project reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2014_3.txt\">\n\t  <p>Due to incorrect buffer management Squid can be caused\n\t  by an attacker to write outside its allocated SNMP buffer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Advisories/SQUID-2014_3.txt"
+		],
+		"cvename": [
+			"CVE-2014-6270"
+		]
+	},
+	"dates": {
+		"discovery": "2014-09-15",
+		"entry": "2014-09-18"
+	}
 }

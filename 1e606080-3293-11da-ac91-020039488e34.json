@@ -1,29 +1,29 @@
 {
-  "vid": "1e606080-3293-11da-ac91-020039488e34",
-  "topic": "uim -- privilege escalation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ja-uim"
-      ],
-      "range": [
-        {
-          "lt": "0.4.9.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The uim developers reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/uim/2005-September/001346.html\">\n\t  <p>Masanari Yamamoto discovered that incorrect use\n\t    of environment variables in uim. This bug causes\n\t    privilege escalation if setuid/setgid applications\n\t    was linked to libuim.</p>\n\t  <p>This bug appears in 'immodule for Qt' enabled Qt.\n\t    (Normal Qt is also safe.) In some distribution,\n\t    mlterm is also an setuid/setgid application.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.freedesktop.org/archives/uim/2005-September/001346.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-09-28",
-    "entry": "2005-10-01"
-  }
+	"vid": "1e606080-3293-11da-ac91-020039488e34",
+	"topic": "uim -- privilege escalation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ja-uim"
+			],
+			"range": [
+				{
+					"lt": "0.4.9.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The uim developers reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/uim/2005-September/001346.html\">\n\t  <p>Masanari Yamamoto discovered that incorrect use\n\t    of environment variables in uim. This bug causes\n\t    privilege escalation if setuid/setgid applications\n\t    was linked to libuim.</p>\n\t  <p>This bug appears in 'immodule for Qt' enabled Qt.\n\t    (Normal Qt is also safe.) In some distribution,\n\t    mlterm is also an setuid/setgid application.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.freedesktop.org/archives/uim/2005-September/001346.html"
+		]
+	},
+	"dates": {
+		"discovery": "2005-09-28",
+		"entry": "2005-10-01"
+	}
 }

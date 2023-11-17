@@ -1,35 +1,35 @@
 {
-  "vid": "72a5579e-c765-11e9-8052-0028f8d09152",
-  "topic": "h2o -- multiple HTTP/2 vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "h2o-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.3.0.b2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jonathon Loomey of Netflix reports:</p>\n\t<blockquote cite=\"https://www.kb.cert.org/vuls/id/605641/\">\n\t  <p>HTTP/2 implementations do not robustly handle abnormal traffic and resource exhaustion</p>\n\t  <p>Recently, a series of DoS attack vulnerabilities have been reported on a broad range of HTTP/2 stacks. Among the vulnerabilities, H2O is exposed to the following:</p>\n\t  <ul>\n      <li>CVE-2019-9512 \"Ping Flood\": The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both, potentially leading to a denial of service.</li>\n      <li>CVE-2019-9514 \"Reset Flood\": The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both, potentially leading to a denial of service.</li>\n      <li>CVE-2019-9515 \"Settings Flood\": The attacker sends a stream of SETTINGS frames to the peer. Since the RFC requires that the peer reply with one acknowledgement per SETTINGS frame, an empty SETTINGS frame is almost equivalent in behavior to a ping. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both, potentially leading to a denial of service.</li>\n    </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/h2o/h2o/issues/2090",
-      "https://www.kb.cert.org/vuls/id/605641/"
-    ],
-    "cvename": [
-      "CVE-2019-9512",
-      "CVE-2019-9514",
-      "CVE-2019-9515"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-13",
-    "entry": "2019-08-25"
-  }
+	"vid": "72a5579e-c765-11e9-8052-0028f8d09152",
+	"topic": "h2o -- multiple HTTP/2 vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"h2o-devel"
+			],
+			"range": [
+				{
+					"lt": "2.3.0.b2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jonathon Loomey of Netflix reports:</p>\n\t<blockquote cite=\"https://www.kb.cert.org/vuls/id/605641/\">\n\t  <p>HTTP/2 implementations do not robustly handle abnormal traffic and resource exhaustion</p>\n\t  <p>Recently, a series of DoS attack vulnerabilities have been reported on a broad range of HTTP/2 stacks. Among the vulnerabilities, H2O is exposed to the following:</p>\n\t  <ul>\n      <li>CVE-2019-9512 \"Ping Flood\": The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both, potentially leading to a denial of service.</li>\n      <li>CVE-2019-9514 \"Reset Flood\": The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both, potentially leading to a denial of service.</li>\n      <li>CVE-2019-9515 \"Settings Flood\": The attacker sends a stream of SETTINGS frames to the peer. Since the RFC requires that the peer reply with one acknowledgement per SETTINGS frame, an empty SETTINGS frame is almost equivalent in behavior to a ping. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both, potentially leading to a denial of service.</li>\n    </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/h2o/h2o/issues/2090",
+			"https://www.kb.cert.org/vuls/id/605641/"
+		],
+		"cvename": [
+			"CVE-2019-9512",
+			"CVE-2019-9514",
+			"CVE-2019-9515"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-13",
+		"entry": "2019-08-25"
+	}
 }

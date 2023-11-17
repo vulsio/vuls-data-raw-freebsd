@@ -1,47 +1,47 @@
 {
-  "vid": "6b771fe2-b84e-11e5-92f9-485d605f4717",
-  "topic": "php -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php55",
-        "php55-gd",
-        "php55-wddx",
-        "php55-xmlrpc"
-      ],
-      "range": [
-        {
-          "lt": "5.5.31"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56",
-        "php56-gd",
-        "php56-soap",
-        "php56-wddx",
-        "php56-xmlrpc"
-      ],
-      "range": [
-        {
-          "lt": "5.6.17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://www.php.net/ChangeLog-5.php#5.5.31\">\n\t  <ul><li>Core:\n\t  <ul>\n\t  <li>Fixed bug #70755 (fpm_log.c memory leak and buffer overflow).</li>\n\t  </ul></li>\n\t  <li>GD:\n\t  <ul>\n\t  <li>Fixed bug #70976 (Memory Read via gdImageRotateInterpolated Array\n\t      Index Out of Bounds).</li>\n\t  </ul></li>\n\t  <li>SOAP:\n\t  <ul>\n\t  <li>Fixed bug #70900 (SoapClient systematic out of memory error).</li>\n\t  </ul></li>\n\t  <li>Wddx\n\t  <ul>\n\t  <li>Fixed bug #70661 (Use After Free Vulnerability in WDDX Packet\n\t      Deserialization).</li>\n\t  <li>Fixed bug #70741 (Session WDDX Packet Deserialization Type\n\t      Confusion Vulnerability).</li>\n\t  </ul></li>\n\t  <li>XMLRPC:\n\t  <ul>\n\t  <li>Fixed bug #70728 (Type Confusion Vulnerability in\n\t      PHP_to_XMLRPC_worker()).</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.php.net/ChangeLog-5.php#5.5.31",
-      "http://www.php.net/ChangeLog-5.php#5.6.17"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-07",
-    "entry": "2016-01-11"
-  }
+	"vid": "6b771fe2-b84e-11e5-92f9-485d605f4717",
+	"topic": "php -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php55",
+				"php55-gd",
+				"php55-wddx",
+				"php55-xmlrpc"
+			],
+			"range": [
+				{
+					"lt": "5.5.31"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56",
+				"php56-gd",
+				"php56-soap",
+				"php56-wddx",
+				"php56-xmlrpc"
+			],
+			"range": [
+				{
+					"lt": "5.6.17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://www.php.net/ChangeLog-5.php#5.5.31\">\n\t  <ul><li>Core:\n\t  <ul>\n\t  <li>Fixed bug #70755 (fpm_log.c memory leak and buffer overflow).</li>\n\t  </ul></li>\n\t  <li>GD:\n\t  <ul>\n\t  <li>Fixed bug #70976 (Memory Read via gdImageRotateInterpolated Array\n\t      Index Out of Bounds).</li>\n\t  </ul></li>\n\t  <li>SOAP:\n\t  <ul>\n\t  <li>Fixed bug #70900 (SoapClient systematic out of memory error).</li>\n\t  </ul></li>\n\t  <li>Wddx\n\t  <ul>\n\t  <li>Fixed bug #70661 (Use After Free Vulnerability in WDDX Packet\n\t      Deserialization).</li>\n\t  <li>Fixed bug #70741 (Session WDDX Packet Deserialization Type\n\t      Confusion Vulnerability).</li>\n\t  </ul></li>\n\t  <li>XMLRPC:\n\t  <ul>\n\t  <li>Fixed bug #70728 (Type Confusion Vulnerability in\n\t      PHP_to_XMLRPC_worker()).</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.php.net/ChangeLog-5.php#5.5.31",
+			"http://www.php.net/ChangeLog-5.php#5.6.17"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-07",
+		"entry": "2016-01-11"
+	}
 }

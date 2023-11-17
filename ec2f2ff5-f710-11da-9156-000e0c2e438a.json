@@ -1,33 +1,33 @@
 {
-  "vid": "ec2f2ff5-f710-11da-9156-000e0c2e438a",
-  "topic": "freeradius -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "freeradius"
-      ],
-      "range": [
-        {
-          "ge": "1.0.0",
-          "le": "1.0.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The freeradious development team reports:</p>\n\t<blockquote cite=\"http://www.freeradius.org/security.html\">\n\t  <p>Multiple issues exist with version 1.0.4, and all prior\n\t    versions of the server.  Externally exploitable\n\t    vulnerabilities exist only for sites that use the\n\t    rlm_sqlcounter module.  Those sites may be vulnerable to\n\t    SQL injection attacks, similar to the issues noted below.\n\t    All sites that have not deployed the rlm_sqlcounter module\n\t    are not vulnerable to external exploits.</p>\n\t  <p>The issues are:<br/>\n\t    SQL Injection attack in the rlm_sqlcounter module.<br/>\n\t    Buffer overflow in the rlm_sqlcounter module, that may cause\n\t    a server crash. <br/>\n\t    Buffer overflow while expanding %t, that may cause a server\n\t    crash.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-4744"
-    ],
-    "bid": [
-      "17171"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-09-09",
-    "entry": "2006-06-08"
-  }
+	"vid": "ec2f2ff5-f710-11da-9156-000e0c2e438a",
+	"topic": "freeradius -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"freeradius"
+			],
+			"range": [
+				{
+					"ge": "1.0.0",
+					"le": "1.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The freeradious development team reports:</p>\n\t<blockquote cite=\"http://www.freeradius.org/security.html\">\n\t  <p>Multiple issues exist with version 1.0.4, and all prior\n\t    versions of the server.  Externally exploitable\n\t    vulnerabilities exist only for sites that use the\n\t    rlm_sqlcounter module.  Those sites may be vulnerable to\n\t    SQL injection attacks, similar to the issues noted below.\n\t    All sites that have not deployed the rlm_sqlcounter module\n\t    are not vulnerable to external exploits.</p>\n\t  <p>The issues are:<br/>\n\t    SQL Injection attack in the rlm_sqlcounter module.<br/>\n\t    Buffer overflow in the rlm_sqlcounter module, that may cause\n\t    a server crash. <br/>\n\t    Buffer overflow while expanding %t, that may cause a server\n\t    crash.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-4744"
+		],
+		"bid": [
+			"17171"
+		]
+	},
+	"dates": {
+		"discovery": "2005-09-09",
+		"entry": "2006-06-08"
+	}
 }

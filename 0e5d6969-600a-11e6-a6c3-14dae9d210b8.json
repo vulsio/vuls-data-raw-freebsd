@@ -1,41 +1,41 @@
 {
-  "vid": "0e5d6969-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- rpcbind(8) remote denial of service [REVISED]",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.2_5",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_22",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_28",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>In rpcbind(8), netbuf structures are copied directly,\n\twhich would result in two netbuf structures that reference\n\tto one shared address buffer. When one of the two netbuf\n\tstructures is freed, access to the other netbuf structure\n\twould result in an undefined result that may crash the\n\trpcbind(8) daemon.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker who can send specifically crafted\n\tpackets to the rpcbind(8) daemon can cause it to crash,\n\tresulting in a denial of service condition.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2015-7236"
-    ],
-    "freebsd_sa": [
-      "SA-15:24.rpcbind"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-09-29",
-    "entry": "2016-08-11"
-  }
+	"vid": "0e5d6969-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- rpcbind(8) remote denial of service [REVISED]",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.2_5",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_22",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_28",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>In rpcbind(8), netbuf structures are copied directly,\n\twhich would result in two netbuf structures that reference\n\tto one shared address buffer. When one of the two netbuf\n\tstructures is freed, access to the other netbuf structure\n\twould result in an undefined result that may crash the\n\trpcbind(8) daemon.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker who can send specifically crafted\n\tpackets to the rpcbind(8) daemon can cause it to crash,\n\tresulting in a denial of service condition.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2015-7236"
+		],
+		"freebsd_sa": [
+			"SA-15:24.rpcbind"
+		]
+	},
+	"dates": {
+		"discovery": "2015-09-29",
+		"entry": "2016-08-11"
+	}
 }

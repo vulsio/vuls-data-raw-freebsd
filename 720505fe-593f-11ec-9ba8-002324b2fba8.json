@@ -1,34 +1,34 @@
 {
-  "vid": "720505fe-593f-11ec-9ba8-002324b2fba8",
-  "topic": "go -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "go"
-      ],
-      "range": [
-        {
-          "lt": "1.17.5,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n  <blockquote cite=\"https://github.com/golang/go/issues/50058\">\n\t  <p>net/http: limit growth of header canonicalization cache. An\n\t    attacker can cause unbounded memory growth in a Go server accepting\n\t    HTTP/2 requests.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/50057\">\n\t  <p>syscall: don’t close fd 0 on ForkExec error. When a Go program\n\t    running on a Unix system is out of file descriptors and calls\n\t    syscall.ForkExec (including indirectly by using the os/exec\n\t    package), syscall.ForkExec can close file descriptor 0 as it fails.\n\t    If this happens (or can be provoked) repeatedly, it can result in\n\t    misdirected I/O such as writing network traffic intended for one\n\t    connection to a different connection, or content intended for one\n\t    file to a different one.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/golang/go/issues/50058",
-      "https://github.com/golang/go/issues/50057"
-    ],
-    "cvename": [
-      "CVE-2021-44716",
-      "CVE-2021-44717"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-12-08",
-    "entry": "2021-12-09"
-  }
+	"vid": "720505fe-593f-11ec-9ba8-002324b2fba8",
+	"topic": "go -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"go"
+			],
+			"range": [
+				{
+					"lt": "1.17.5,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n  <blockquote cite=\"https://github.com/golang/go/issues/50058\">\n\t  <p>net/http: limit growth of header canonicalization cache. An\n\t    attacker can cause unbounded memory growth in a Go server accepting\n\t    HTTP/2 requests.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/50057\">\n\t  <p>syscall: don’t close fd 0 on ForkExec error. When a Go program\n\t    running on a Unix system is out of file descriptors and calls\n\t    syscall.ForkExec (including indirectly by using the os/exec\n\t    package), syscall.ForkExec can close file descriptor 0 as it fails.\n\t    If this happens (or can be provoked) repeatedly, it can result in\n\t    misdirected I/O such as writing network traffic intended for one\n\t    connection to a different connection, or content intended for one\n\t    file to a different one.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/golang/go/issues/50058",
+			"https://github.com/golang/go/issues/50057"
+		],
+		"cvename": [
+			"CVE-2021-44716",
+			"CVE-2021-44717"
+		]
+	},
+	"dates": {
+		"discovery": "2021-12-08",
+		"entry": "2021-12-09"
+	}
 }

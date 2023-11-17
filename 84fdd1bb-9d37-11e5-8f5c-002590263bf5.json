@@ -1,36 +1,36 @@
 {
-  "vid": "84fdd1bb-9d37-11e5-8f5c-002590263bf5",
-  "topic": "passenger -- client controlled header overwriting",
-  "affects": [
-    {
-      "name": [
-        "rubygem-passenger"
-      ],
-      "range": [
-        {
-          "lt": "5.0.22",
-          "ge": "5.0.0"
-        },
-        {
-          "lt": "4.0.60"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Daniel Knoppel reports:</p>\n\t<blockquote cite=\"https://blog.phusion.nl/2015/12/07/cve-2015-7519/\">\n\t  <p>It was discovered by the SUSE security team that it was possible,\n\t    in some cases, for clients to overwrite headers set by the server,\n\t    resulting in a medium level security issue. CVE-2015-7519 has been\n\t    assigned to this issue.</p>\n\t  <p>Affected use-cases:</p>\n\t  <p>Header overwriting may occur if all of the following conditions are met:</p>\n\t  <ul>\n\t    <li>Apache integration mode, or standalone+builtin engine without\n\t      a filtering proxy</li>\n\t    <li>Ruby or Python applications only (Passenger 5); or any\n\t      application (Passenger 4)</li>\n\t    <li>The app depends on a request header containing a dash (-)</li>\n\t    <li>The header is supposed to be trusted (set by the server)</li>\n\t    <li>The client correctly guesses the header name</li>\n\t  </ul>\n\t  <p>This vulnerability has been fixed by filtering out client headers\n\t    that do not consist of alphanumeric/dash characters (Nginx already\n\t    did this, so Passenger+Nginx was not affected). If your application\n\t    depends on headers that don't conform to this, you can add a\n\t    workaround in Apache specifically for those to convert them to a\n\t    dash-based format.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.phusion.nl/2015/12/07/cve-2015-7519/"
-    ],
-    "cvename": [
-      "CVE-2015-7519"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-07",
-    "entry": "2015-12-07"
-  }
+	"vid": "84fdd1bb-9d37-11e5-8f5c-002590263bf5",
+	"topic": "passenger -- client controlled header overwriting",
+	"affects": [
+		{
+			"name": [
+				"rubygem-passenger"
+			],
+			"range": [
+				{
+					"lt": "5.0.22",
+					"ge": "5.0.0"
+				},
+				{
+					"lt": "4.0.60"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Daniel Knoppel reports:</p>\n\t<blockquote cite=\"https://blog.phusion.nl/2015/12/07/cve-2015-7519/\">\n\t  <p>It was discovered by the SUSE security team that it was possible,\n\t    in some cases, for clients to overwrite headers set by the server,\n\t    resulting in a medium level security issue. CVE-2015-7519 has been\n\t    assigned to this issue.</p>\n\t  <p>Affected use-cases:</p>\n\t  <p>Header overwriting may occur if all of the following conditions are met:</p>\n\t  <ul>\n\t    <li>Apache integration mode, or standalone+builtin engine without\n\t      a filtering proxy</li>\n\t    <li>Ruby or Python applications only (Passenger 5); or any\n\t      application (Passenger 4)</li>\n\t    <li>The app depends on a request header containing a dash (-)</li>\n\t    <li>The header is supposed to be trusted (set by the server)</li>\n\t    <li>The client correctly guesses the header name</li>\n\t  </ul>\n\t  <p>This vulnerability has been fixed by filtering out client headers\n\t    that do not consist of alphanumeric/dash characters (Nginx already\n\t    did this, so Passenger+Nginx was not affected). If your application\n\t    depends on headers that don't conform to this, you can add a\n\t    workaround in Apache specifically for those to convert them to a\n\t    dash-based format.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.phusion.nl/2015/12/07/cve-2015-7519/"
+		],
+		"cvename": [
+			"CVE-2015-7519"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-07",
+		"entry": "2015-12-07"
+	}
 }

@@ -1,40 +1,40 @@
 {
-  "vid": "17efbe19-4e72-426a-8016-2b4e001c1378",
-  "topic": "py-wagtail -- stored XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py37-wagtail",
-        "py38-wagtail",
-        "py39-wagtail",
-        "py310-wagtail",
-        "py311-wagtail"
-      ],
-      "range": [
-        {
-          "lt": "4.1.4"
-        },
-        {
-          "lt": "4.2.2",
-          "ge": "4.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-5286-f2rf-35c2\">\n      <p>A stored cross-site scripting (XSS) vulnerability exists on ModelAdmin views within the Wagtail admin interface.</p>\n      <p>A user with a limited-permission editor account for the Wagtail admin could potentially craft pages and documents that, when viewed by a user with higher privileges, could perform actions with that user's credentials.</p>\n      <p>The vulnerability is not exploitable by an ordinary site visitor without access to the Wagtail admin, and only affects sites with ModelAdmin enabled.</p>\n      <p>For page, the vulnerability is in the \"Choose a parent page\" ModelAdmin view, available when managing pages via ModelAdmin.</p>\n      <p>For documents, the vulnerability is in the ModelAdmin Inspect view when displaying document fields.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-5286-f2rf-35c2"
-    ],
-    "cvename": [
-      "CVE-2023-28836"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-04-03",
-    "entry": "2023-08-31"
-  }
+	"vid": "17efbe19-4e72-426a-8016-2b4e001c1378",
+	"topic": "py-wagtail -- stored XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py37-wagtail",
+				"py38-wagtail",
+				"py39-wagtail",
+				"py310-wagtail",
+				"py311-wagtail"
+			],
+			"range": [
+				{
+					"lt": "4.1.4"
+				},
+				{
+					"lt": "4.2.2",
+					"ge": "4.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-5286-f2rf-35c2\">\n      <p>A stored cross-site scripting (XSS) vulnerability exists on ModelAdmin views within the Wagtail admin interface.</p>\n      <p>A user with a limited-permission editor account for the Wagtail admin could potentially craft pages and documents that, when viewed by a user with higher privileges, could perform actions with that user's credentials.</p>\n      <p>The vulnerability is not exploitable by an ordinary site visitor without access to the Wagtail admin, and only affects sites with ModelAdmin enabled.</p>\n      <p>For page, the vulnerability is in the \"Choose a parent page\" ModelAdmin view, available when managing pages via ModelAdmin.</p>\n      <p>For documents, the vulnerability is in the ModelAdmin Inspect view when displaying document fields.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-5286-f2rf-35c2"
+		],
+		"cvename": [
+			"CVE-2023-28836"
+		]
+	},
+	"dates": {
+		"discovery": "2023-04-03",
+		"entry": "2023-08-31"
+	}
 }

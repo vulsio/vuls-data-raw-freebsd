@@ -1,60 +1,60 @@
 {
-  "vid": "0b8d7194-ca88-11e3-9d8d-c80aa9043978",
-  "topic": "OpenSSL -- Remote Data Injection / DoS",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1_11",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mingw32-openssl"
-      ],
-      "range": [
-        {
-          "ge": "1.0.1",
-          "le": "1.0.1g"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.0_2",
-          "ge": "10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Applications that use SSL_MODE_RELEASE_BUFFERS, such as nginx, are\n\t  prone to a race condition which may allow a remote attacker to\n\t  inject random data into other connections.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "https://rt.openssl.org/Ticket/Display.html?id=2167",
-      "http://www.tedunangst.com/flak/post/analysis-of-openssl-freelist-reuse"
-    ],
-    "cvename": [
-      "CVE-2010-5298"
-    ],
-    "freebsd_sa": [
-      "SA-14:09.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-02-09",
-    "entry": "2014-04-23",
-    "modified": "2016-08-09"
-  }
+	"vid": "0b8d7194-ca88-11e3-9d8d-c80aa9043978",
+	"topic": "OpenSSL -- Remote Data Injection / DoS",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1_11",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mingw32-openssl"
+			],
+			"range": [
+				{
+					"ge": "1.0.1",
+					"le": "1.0.1g"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.0_2",
+					"ge": "10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Applications that use SSL_MODE_RELEASE_BUFFERS, such as nginx, are\n\t  prone to a race condition which may allow a remote attacker to\n\t  inject random data into other connections.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://rt.openssl.org/Ticket/Display.html?id=2167",
+			"http://www.tedunangst.com/flak/post/analysis-of-openssl-freelist-reuse"
+		],
+		"cvename": [
+			"CVE-2010-5298"
+		],
+		"freebsd_sa": [
+			"SA-14:09.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2010-02-09",
+		"entry": "2014-04-23",
+		"modified": "2016-08-09"
+	}
 }

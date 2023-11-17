@@ -1,37 +1,37 @@
 {
-  "vid": "ab437561-47c0-11ee-8e38-002590c1f29c",
-  "topic": "FreeBSD -- bhyve privileged guest escape via fwctl",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "13.2_2",
-          "ge": "13.2"
-        },
-        {
-          "lt": "13.1_9",
-          "ge": "13.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The fwctl driver implements a state machine which is executed when\n\tthe guest accesses certain x86 I/O ports.  The interface lets the guest\n\tcopy a string into a buffer resident in the bhyve process' memory.  A\n\tbug in the state machine implementation can result in a buffer\n\toverflowing when copying this string.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious, privileged software running in a guest VM can exploit\n\tthe buffer overflow to achieve code execution on the host in the bhyve\n\tuserspace process, which typically runs as root.  Note that bhyve runs\n\tin a Capsicum sandbox, so malicious code is constrained by the\n\tcapabilities available to the bhyve process.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2023-3494"
-    ],
-    "freebsd_sa": [
-      "SA-23:07.bhyve"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-08-01",
-    "entry": "2023-08-31"
-  }
+	"vid": "ab437561-47c0-11ee-8e38-002590c1f29c",
+	"topic": "FreeBSD -- bhyve privileged guest escape via fwctl",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "13.2_2",
+					"ge": "13.2"
+				},
+				{
+					"lt": "13.1_9",
+					"ge": "13.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The fwctl driver implements a state machine which is executed when\n\tthe guest accesses certain x86 I/O ports.  The interface lets the guest\n\tcopy a string into a buffer resident in the bhyve process' memory.  A\n\tbug in the state machine implementation can result in a buffer\n\toverflowing when copying this string.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious, privileged software running in a guest VM can exploit\n\tthe buffer overflow to achieve code execution on the host in the bhyve\n\tuserspace process, which typically runs as root.  Note that bhyve runs\n\tin a Capsicum sandbox, so malicious code is constrained by the\n\tcapabilities available to the bhyve process.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2023-3494"
+		],
+		"freebsd_sa": [
+			"SA-23:07.bhyve"
+		]
+	},
+	"dates": {
+		"discovery": "2023-08-01",
+		"entry": "2023-08-31"
+	}
 }

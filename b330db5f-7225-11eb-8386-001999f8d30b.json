@@ -1,55 +1,55 @@
 {
-  "vid": "b330db5f-7225-11eb-8386-001999f8d30b",
-  "topic": "asterisk -- Remote crash in res_pjsip_diversion",
-  "affects": [
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.38.2",
-          "ge": "13.38.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk16"
-      ],
-      "range": [
-        {
-          "lt": "16.16.1",
-          "ge": "16.15.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk18"
-      ],
-      "range": [
-        {
-          "lt": "18.2.1",
-          "ge": "18.1.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>If a registered user is tricked into dialing a malicious\n\t  number that sends lots of 181 responses to Asterisk, each\n\t  one will cause a 181 to be sent back to the original\n\t  caller with an increasing number of entries in the\n\t  \"Supported\" header. Eventually the number of entries in\n\t  the header exceeds the size of the entry array and causes\n\t  a crash.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://downloads.asterisk.org/pub/security/AST-2021-001.html"
-    ],
-    "cvename": [
-      "CVE-2020-35776"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-01-04",
-    "entry": "2021-02-18"
-  }
+	"vid": "b330db5f-7225-11eb-8386-001999f8d30b",
+	"topic": "asterisk -- Remote crash in res_pjsip_diversion",
+	"affects": [
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.38.2",
+					"ge": "13.38.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk16"
+			],
+			"range": [
+				{
+					"lt": "16.16.1",
+					"ge": "16.15.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk18"
+			],
+			"range": [
+				{
+					"lt": "18.2.1",
+					"ge": "18.1.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>If a registered user is tricked into dialing a malicious\n\t  number that sends lots of 181 responses to Asterisk, each\n\t  one will cause a 181 to be sent back to the original\n\t  caller with an increasing number of entries in the\n\t  \"Supported\" header. Eventually the number of entries in\n\t  the header exceeds the size of the entry array and causes\n\t  a crash.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://downloads.asterisk.org/pub/security/AST-2021-001.html"
+		],
+		"cvename": [
+			"CVE-2020-35776"
+		]
+	},
+	"dates": {
+		"discovery": "2021-01-04",
+		"entry": "2021-02-18"
+	}
 }

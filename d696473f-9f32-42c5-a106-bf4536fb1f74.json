@@ -1,49 +1,49 @@
 {
-  "vid": "d696473f-9f32-42c5-a106-bf4536fb1f74",
-  "topic": "Django -- information leakage",
-  "affects": [
-    {
-      "name": [
-        "py27-django111",
-        "py34-django111",
-        "py35-django111",
-        "py36-django111"
-      ],
-      "range": [
-        {
-          "lt": "1.11.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django20",
-        "py34-django20",
-        "py35-django20",
-        "py36-django20"
-      ],
-      "range": [
-        {
-          "lt": "2.0.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django release notes:</p>\n\t<blockquote cite=\"https://docs.djangoproject.com/en/1.11/releases/1.11.10/\">\n\t  <p>CVE-2018-6188: Information leakage in AuthenticationForm</p>\n\t  <p>A regression in Django 1.11.8 made AuthenticationForm run its\n\t    confirm_login_allowed() method even if an incorrect password is entered.\n\t    This can leak information about a user, depending on what messages\n\t    confirm_login_allowed() raises. If confirm_login_allowed() isn't\n\t    overridden, an attacker enter an arbitrary username and see if that user\n\t    has been set to is_active=False. If confirm_login_allowed() is\n\t    overridden, more sensitive details could be leaked.</p>\n\t  <p>This issue is fixed with the caveat that AuthenticationForm can no\n\t    longer raise the \"This account is inactive.\" error if the authentication\n\t    backend rejects inactive users (the default authentication backend,\n\t    ModelBackend, has done that since Django 1.10). This issue will be\n\t    revisited for Django 2.1 as a fix to address the caveat will likely be too\n\t    invasive for inclusion in older versions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.djangoproject.com/en/1.11/releases/1.11.10/",
-      "https://docs.djangoproject.com/en/2.0/releases/2.0.2/"
-    ],
-    "cvename": [
-      "CVE-2018-6188"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-02-01",
-    "entry": "2018-02-02"
-  }
+	"vid": "d696473f-9f32-42c5-a106-bf4536fb1f74",
+	"topic": "Django -- information leakage",
+	"affects": [
+		{
+			"name": [
+				"py27-django111",
+				"py34-django111",
+				"py35-django111",
+				"py36-django111"
+			],
+			"range": [
+				{
+					"lt": "1.11.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django20",
+				"py34-django20",
+				"py35-django20",
+				"py36-django20"
+			],
+			"range": [
+				{
+					"lt": "2.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django release notes:</p>\n\t<blockquote cite=\"https://docs.djangoproject.com/en/1.11/releases/1.11.10/\">\n\t  <p>CVE-2018-6188: Information leakage in AuthenticationForm</p>\n\t  <p>A regression in Django 1.11.8 made AuthenticationForm run its\n\t    confirm_login_allowed() method even if an incorrect password is entered.\n\t    This can leak information about a user, depending on what messages\n\t    confirm_login_allowed() raises. If confirm_login_allowed() isn't\n\t    overridden, an attacker enter an arbitrary username and see if that user\n\t    has been set to is_active=False. If confirm_login_allowed() is\n\t    overridden, more sensitive details could be leaked.</p>\n\t  <p>This issue is fixed with the caveat that AuthenticationForm can no\n\t    longer raise the \"This account is inactive.\" error if the authentication\n\t    backend rejects inactive users (the default authentication backend,\n\t    ModelBackend, has done that since Django 1.10). This issue will be\n\t    revisited for Django 2.1 as a fix to address the caveat will likely be too\n\t    invasive for inclusion in older versions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.djangoproject.com/en/1.11/releases/1.11.10/",
+			"https://docs.djangoproject.com/en/2.0/releases/2.0.2/"
+		],
+		"cvename": [
+			"CVE-2018-6188"
+		]
+	},
+	"dates": {
+		"discovery": "2018-02-01",
+		"entry": "2018-02-02"
+	}
 }

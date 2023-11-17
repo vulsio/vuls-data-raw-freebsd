@@ -1,43 +1,43 @@
 {
-  "vid": "75231c63-f6a2-499d-8e27-787773bda284",
-  "topic": "bugzilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "bugzilla",
-        "ja-bugzilla"
-      ],
-      "range": [
-        {
-          "lt": "2.22.3",
-          "ge": "2.20.*"
-        },
-        {
-          "lt": "3.0.1",
-          "ge": "3.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/2.20.4/\">\n\t  <p>This advisory covers three security issues that have recently been\n\t    fixed in the Bugzilla code:</p>\n\t  <ul>\n\t    <li>A possible cross-site scripting (XSS) vulnerability when filing\n\t      bugs using the guided form.</li>\n\t    <li>When using email_in.pl, insufficiently escaped data may be\n\t      passed to sendmail.</li>\n\t    <li>Users using the WebService interface may access Bugzilla's\n\t      time-tracking fields even if they normally cannot see them.</li>\n\t  </ul>\n\t  <p>We strongly advise that 2.20.x and 2.22.x users should upgrade to\n\t    2.20.5 and 2.22.3 respectively. 3.0 users, and users of 2.18.x or\n\t    below, should upgrade to 3.0.1.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.bugzilla.org/security/2.20.4/"
-    ],
-    "cvename": [
-      "CVE-2007-4538",
-      "CVE-2007-4539",
-      "CVE-2007-4543"
-    ],
-    "bid": [
-      "25425"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-08-23",
-    "entry": "2007-09-21"
-  }
+	"vid": "75231c63-f6a2-499d-8e27-787773bda284",
+	"topic": "bugzilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"bugzilla",
+				"ja-bugzilla"
+			],
+			"range": [
+				{
+					"lt": "2.22.3",
+					"ge": "2.20.*"
+				},
+				{
+					"lt": "3.0.1",
+					"ge": "3.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/2.20.4/\">\n\t  <p>This advisory covers three security issues that have recently been\n\t    fixed in the Bugzilla code:</p>\n\t  <ul>\n\t    <li>A possible cross-site scripting (XSS) vulnerability when filing\n\t      bugs using the guided form.</li>\n\t    <li>When using email_in.pl, insufficiently escaped data may be\n\t      passed to sendmail.</li>\n\t    <li>Users using the WebService interface may access Bugzilla's\n\t      time-tracking fields even if they normally cannot see them.</li>\n\t  </ul>\n\t  <p>We strongly advise that 2.20.x and 2.22.x users should upgrade to\n\t    2.20.5 and 2.22.3 respectively. 3.0 users, and users of 2.18.x or\n\t    below, should upgrade to 3.0.1.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.bugzilla.org/security/2.20.4/"
+		],
+		"cvename": [
+			"CVE-2007-4538",
+			"CVE-2007-4539",
+			"CVE-2007-4543"
+		],
+		"bid": [
+			"25425"
+		]
+	},
+	"dates": {
+		"discovery": "2007-08-23",
+		"entry": "2007-09-21"
+	}
 }

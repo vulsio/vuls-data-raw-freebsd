@@ -1,34 +1,34 @@
 {
-  "vid": "f8d3689e-6770-11dc-8be8-02e0185f8d72",
-  "topic": "bugzilla -- \"createmailregexp\" security bypass vulnerability",
-  "affects": [
-    {
-      "name": [
-        "bugzilla"
-      ],
-      "range": [
-        {
-          "lt": "3.0.2",
-          "ge": "3.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Bugzilla development team reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.0.1/\">\n\t  <p>Bugzilla::WebService::User::offer_account_by_email does\n\t    not check the \"createemailregexp\" parameter, and thus\n\t    allows users to create accounts who would normally be\n\t    denied account creation.  The \"emailregexp\" parameter is\n\t    still checked.  If you do not have the SOAP::Lite Perl\n\t    module installed on your Bugzilla system, your system is\n\t    not vulnerable (because the Bugzilla WebService will not\n\t    be enabled).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.bugzilla.org/security/3.0.1/"
-    ],
-    "cvename": [
-      "CVE-2007-5038"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-09-18",
-    "entry": "2007-09-20",
-    "modified": "2010-05-12"
-  }
+	"vid": "f8d3689e-6770-11dc-8be8-02e0185f8d72",
+	"topic": "bugzilla -- \"createmailregexp\" security bypass vulnerability",
+	"affects": [
+		{
+			"name": [
+				"bugzilla"
+			],
+			"range": [
+				{
+					"lt": "3.0.2",
+					"ge": "3.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Bugzilla development team reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.0.1/\">\n\t  <p>Bugzilla::WebService::User::offer_account_by_email does\n\t    not check the \"createemailregexp\" parameter, and thus\n\t    allows users to create accounts who would normally be\n\t    denied account creation.  The \"emailregexp\" parameter is\n\t    still checked.  If you do not have the SOAP::Lite Perl\n\t    module installed on your Bugzilla system, your system is\n\t    not vulnerable (because the Bugzilla WebService will not\n\t    be enabled).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.bugzilla.org/security/3.0.1/"
+		],
+		"cvename": [
+			"CVE-2007-5038"
+		]
+	},
+	"dates": {
+		"discovery": "2007-09-18",
+		"entry": "2007-09-20",
+		"modified": "2010-05-12"
+	}
 }

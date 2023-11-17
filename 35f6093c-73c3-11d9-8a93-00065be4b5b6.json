@@ -1,33 +1,33 @@
 {
-  "vid": "35f6093c-73c3-11d9-8a93-00065be4b5b6",
-  "topic": "newsgrab -- directory traversal vulnerability",
-  "affects": [
-    {
-      "name": [
-        "newsgrab"
-      ],
-      "range": [
-        {
-          "le": "0.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n     <p>The newsgrab script creates files by using the names provided\n     in the newsgroup messages in a perl open() call.  This is done\n     without performing any security checks to prevent a\n     directory traversal. A specially crafted newsgroup message\n     could cause newsgrab to drop an attachment anywhere on the\n     file system using the permissions of the user running the\n     script.</p>\n    "
-  },
-  "references": {
-    "url": [
-      "http://people.freebsd.org/~niels/issues/newsgrab-20050114.txt",
-      "http://sourceforge.net/project/shownotes.php?release_id=300562"
-    ],
-    "cvename": [
-      "CVE-2005-0153"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-18",
-    "entry": "2005-02-01"
-  }
+	"vid": "35f6093c-73c3-11d9-8a93-00065be4b5b6",
+	"topic": "newsgrab -- directory traversal vulnerability",
+	"affects": [
+		{
+			"name": [
+				"newsgrab"
+			],
+			"range": [
+				{
+					"le": "0.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n     <p>The newsgrab script creates files by using the names provided\n     in the newsgroup messages in a perl open() call.  This is done\n     without performing any security checks to prevent a\n     directory traversal. A specially crafted newsgroup message\n     could cause newsgrab to drop an attachment anywhere on the\n     file system using the permissions of the user running the\n     script.</p>\n    "
+	},
+	"references": {
+		"url": [
+			"http://people.freebsd.org/~niels/issues/newsgrab-20050114.txt",
+			"http://sourceforge.net/project/shownotes.php?release_id=300562"
+		],
+		"cvename": [
+			"CVE-2005-0153"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-18",
+		"entry": "2005-02-01"
+	}
 }

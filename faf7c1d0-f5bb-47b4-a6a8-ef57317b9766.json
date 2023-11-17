@@ -1,98 +1,98 @@
 {
-  "vid": "faf7c1d0-f5bb-47b4-a6a8-ef57317b9766",
-  "topic": "ffmpeg -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ffmpeg"
-      ],
-      "range": [
-        {
-          "lt": "5.1.3,1",
-          "ge": "5.1,1"
-        },
-        {
-          "lt": "5.0.3,1",
-          "ge": "5.0,1"
-        },
-        {
-          "lt": "4.4.4,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ffmpeg4"
-      ],
-      "range": [
-        {
-          "lt": "4.4.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "avidemux"
-      ],
-      "range": [
-        {
-          "le": "2.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "emby-server",
-        "emby-server-devel"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "handbrake"
-      ],
-      "range": [
-        {
-          "lt": "1.6.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mythtv",
-        "mythtv-frontend"
-      ],
-      "range": [
-        {
-          "le": "33.0,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-3109\">\n\t  <p>An issue was discovered in the FFmpeg package, where\n\t  vp3_decode_frame in libavcodec/vp3.c lacks check of the\n\t  return value of av_malloc() and will cause a null pointer\n\t  dereference, impacting availability.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-3341\">\n\t  <p>A null pointer dereference issue was discovered in\n\t  'FFmpeg' in decode_main_header() function of\n\t  libavformat/nutdec.c file. The flaw occurs because the\n\t  function lacks check of the return value of\n\t  avformat_new_stream() and triggers the null pointer\n\t  dereference error, causing an application to crash.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-3964\">\n\t  <p>A vulnerability classified as problematic has been found\n\t  in ffmpeg. This affects an unknown part of the file\n\t  libavcodec/rpzaenc.c of the component QuickTime RPZA Video\n\t  Encoder. The manipulation of the argument y_size leads to\n\t  out-of-bounds read. It is possible to initiate the attack\n\t  remotely. The name of the patch is\n\t  92f9b28ed84a77138105475beba16c146bdaf984. It is recommended\n\t  to apply a patch to fix this issue. The associated\n\t  identifier of this vulnerability is VDB-213543.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/2cdddcd6ec90c7a248ffe792d85faa4d89eab9f7",
-      "https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/481e81be1271ac9a0124ee615700390c2371bd89",
-      "https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/1eb002596e3761d88de4aeea3158692b82fb6307",
-      "https://ffmpeg.org/security.html"
-    ],
-    "cvename": [
-      "CVE-2022-3109",
-      "CVE-2022-3341",
-      "CVE-2022-3964"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-11-12",
-    "entry": "2023-04-07",
-    "modified": "2023-04-10"
-  }
+	"vid": "faf7c1d0-f5bb-47b4-a6a8-ef57317b9766",
+	"topic": "ffmpeg -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ffmpeg"
+			],
+			"range": [
+				{
+					"lt": "5.1.3,1",
+					"ge": "5.1,1"
+				},
+				{
+					"lt": "5.0.3,1",
+					"ge": "5.0,1"
+				},
+				{
+					"lt": "4.4.4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ffmpeg4"
+			],
+			"range": [
+				{
+					"lt": "4.4.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"avidemux"
+			],
+			"range": [
+				{
+					"le": "2.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"emby-server",
+				"emby-server-devel"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"handbrake"
+			],
+			"range": [
+				{
+					"lt": "1.6.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"mythtv",
+				"mythtv-frontend"
+			],
+			"range": [
+				{
+					"le": "33.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-3109\">\n\t  <p>An issue was discovered in the FFmpeg package, where\n\t  vp3_decode_frame in libavcodec/vp3.c lacks check of the\n\t  return value of av_malloc() and will cause a null pointer\n\t  dereference, impacting availability.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-3341\">\n\t  <p>A null pointer dereference issue was discovered in\n\t  'FFmpeg' in decode_main_header() function of\n\t  libavformat/nutdec.c file. The flaw occurs because the\n\t  function lacks check of the return value of\n\t  avformat_new_stream() and triggers the null pointer\n\t  dereference error, causing an application to crash.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-3964\">\n\t  <p>A vulnerability classified as problematic has been found\n\t  in ffmpeg. This affects an unknown part of the file\n\t  libavcodec/rpzaenc.c of the component QuickTime RPZA Video\n\t  Encoder. The manipulation of the argument y_size leads to\n\t  out-of-bounds read. It is possible to initiate the attack\n\t  remotely. The name of the patch is\n\t  92f9b28ed84a77138105475beba16c146bdaf984. It is recommended\n\t  to apply a patch to fix this issue. The associated\n\t  identifier of this vulnerability is VDB-213543.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/2cdddcd6ec90c7a248ffe792d85faa4d89eab9f7",
+			"https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/481e81be1271ac9a0124ee615700390c2371bd89",
+			"https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/1eb002596e3761d88de4aeea3158692b82fb6307",
+			"https://ffmpeg.org/security.html"
+		],
+		"cvename": [
+			"CVE-2022-3109",
+			"CVE-2022-3341",
+			"CVE-2022-3964"
+		]
+	},
+	"dates": {
+		"discovery": "2022-11-12",
+		"entry": "2023-04-07",
+		"modified": "2023-04-10"
+	}
 }

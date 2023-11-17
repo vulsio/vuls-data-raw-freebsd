@@ -1,32 +1,32 @@
 {
-  "vid": "9a8fecef-92c0-11df-b140-0015f2db7bde",
-  "topic": "vte -- Classic terminal title set+query attack",
-  "affects": [
-    {
-      "name": [
-        "vte"
-      ],
-      "range": [
-        {
-          "lt": "0.24.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Kees Cook reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/512388\">\n\t  <p>Janne Snabb discovered that applications using VTE, such as\n\t     gnome-terminal, did not correctly filter window and icon title\n\t     request escape codes. If a user were tricked into viewing\n\t     specially crafted output in their terminal, a remote attacker\n\t     could execute arbitrary commands with user privileges.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.securityfocus.com/archive/1/512388"
-    ],
-    "cvename": [
-      "CVE-2010-2713"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-07-15",
-    "entry": "2010-07-18"
-  }
+	"vid": "9a8fecef-92c0-11df-b140-0015f2db7bde",
+	"topic": "vte -- Classic terminal title set+query attack",
+	"affects": [
+		{
+			"name": [
+				"vte"
+			],
+			"range": [
+				{
+					"lt": "0.24.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Kees Cook reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/archive/1/512388\">\n\t  <p>Janne Snabb discovered that applications using VTE, such as\n\t     gnome-terminal, did not correctly filter window and icon title\n\t     request escape codes. If a user were tricked into viewing\n\t     specially crafted output in their terminal, a remote attacker\n\t     could execute arbitrary commands with user privileges.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.securityfocus.com/archive/1/512388"
+		],
+		"cvename": [
+			"CVE-2010-2713"
+		]
+	},
+	"dates": {
+		"discovery": "2010-07-15",
+		"entry": "2010-07-18"
+	}
 }

@@ -1,145 +1,145 @@
 {
-  "vid": "5d72701a-f601-11d9-bcd1-02061b08fc24",
-  "topic": "firefox & mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.5,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.9,2"
-        },
-        {
-          "ge": "1.8.*,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.9"
-        },
-        {
-          "ge": "1.8.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "de-netscape7",
-        "fr-linux-netscape",
-        "fr-netscape7",
-        "ja-linux-netscape",
-        "ja-netscape7",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk1",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mozilla Foundation reports of multiple security\n\t  vulnerabilities in Firefox and Mozilla:</p>\n\t<blockquote cite=\"http://www.mozilla.org/projects/security/known-vulnerabilities.html\">\n\t  <ul>\n\t    <li><em>MFSA 2005-56</em> Code execution through shared function\n\t      objects</li>\n\t    <li><em>MFSA 2005-55</em> XHTML node spoofing</li>\n\t    <li><em>MFSA 2005-54</em> Javascript prompt origin spoofing</li>\n\t    <li><em>MFSA 2005-53</em> Standalone applications can run arbitrary\n\t      code through the browser</li>\n\t    <li><em>MFSA 2005-52</em> Same origin violation: frame calling\n\t      top.focus()</li>\n\t    <li><em>MFSA 2005-51</em> The return of frame-injection\n\t      spoofing</li>\n\t    <li><em>MFSA 2005-50</em> Possibly exploitable crash in\n\t      InstallVersion.compareTo()</li>\n\t    <li><em>MFSA 2005-49</em> Script injection from Firefox sidebar\n\t      panel using data:</li>\n\t    <li><em>MFSA 2005-48</em> Same-origin violation with InstallTrigger\n\t      callback</li>\n\t    <li><em>MFSA 2005-47</em> Code execution via \"Set as\n\t      Wallpaper\"</li>\n\t    <li><em>MFSA 2005-46</em> XBL scripts ran even when Javascript\n\t      disabled</li>\n\t    <li><em>MFSA 2005-45</em> Content-generated event\n\t      vulnerabilities</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/projects/security/known-vulnerabilities.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-45.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-46.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-47.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-48.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-49.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-50.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-51.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-52.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-53.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-54.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-55.html",
-      "http://www.mozilla.org/security/announce/mfsa2005-56.html"
-    ],
-    "cvename": [
-      "CVE-2005-1937",
-      "CVE-2005-2260",
-      "CVE-2005-2261",
-      "CVE-2005-2262",
-      "CVE-2005-2263",
-      "CVE-2005-2264",
-      "CVE-2005-2265",
-      "CVE-2005-2266",
-      "CVE-2005-2267",
-      "CVE-2005-2268",
-      "CVE-2005-2269",
-      "CVE-2005-2270"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-12",
-    "entry": "2005-07-16"
-  }
+	"vid": "5d72701a-f601-11d9-bcd1-02061b08fc24",
+	"topic": "firefox & mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.5,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.9,2"
+				},
+				{
+					"ge": "1.8.*,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.9"
+				},
+				{
+					"ge": "1.8.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"de-netscape7",
+				"fr-linux-netscape",
+				"fr-netscape7",
+				"ja-linux-netscape",
+				"ja-netscape7",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk1",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mozilla Foundation reports of multiple security\n\t  vulnerabilities in Firefox and Mozilla:</p>\n\t<blockquote cite=\"http://www.mozilla.org/projects/security/known-vulnerabilities.html\">\n\t  <ul>\n\t    <li><em>MFSA 2005-56</em> Code execution through shared function\n\t      objects</li>\n\t    <li><em>MFSA 2005-55</em> XHTML node spoofing</li>\n\t    <li><em>MFSA 2005-54</em> Javascript prompt origin spoofing</li>\n\t    <li><em>MFSA 2005-53</em> Standalone applications can run arbitrary\n\t      code through the browser</li>\n\t    <li><em>MFSA 2005-52</em> Same origin violation: frame calling\n\t      top.focus()</li>\n\t    <li><em>MFSA 2005-51</em> The return of frame-injection\n\t      spoofing</li>\n\t    <li><em>MFSA 2005-50</em> Possibly exploitable crash in\n\t      InstallVersion.compareTo()</li>\n\t    <li><em>MFSA 2005-49</em> Script injection from Firefox sidebar\n\t      panel using data:</li>\n\t    <li><em>MFSA 2005-48</em> Same-origin violation with InstallTrigger\n\t      callback</li>\n\t    <li><em>MFSA 2005-47</em> Code execution via \"Set as\n\t      Wallpaper\"</li>\n\t    <li><em>MFSA 2005-46</em> XBL scripts ran even when Javascript\n\t      disabled</li>\n\t    <li><em>MFSA 2005-45</em> Content-generated event\n\t      vulnerabilities</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/projects/security/known-vulnerabilities.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-45.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-46.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-47.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-48.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-49.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-50.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-51.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-52.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-53.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-54.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-55.html",
+			"http://www.mozilla.org/security/announce/mfsa2005-56.html"
+		],
+		"cvename": [
+			"CVE-2005-1937",
+			"CVE-2005-2260",
+			"CVE-2005-2261",
+			"CVE-2005-2262",
+			"CVE-2005-2263",
+			"CVE-2005-2264",
+			"CVE-2005-2265",
+			"CVE-2005-2266",
+			"CVE-2005-2267",
+			"CVE-2005-2268",
+			"CVE-2005-2269",
+			"CVE-2005-2270"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-12",
+		"entry": "2005-07-16"
+	}
 }

@@ -1,36 +1,36 @@
 {
-  "vid": "ce680f0a-eea6-11e1-8bd8-0022156e8794",
-  "topic": "squidclamav -- cross-site scripting in default virus warning pages",
-  "affects": [
-    {
-      "name": [
-        "squidclamav"
-      ],
-      "range": [
-        {
-          "lt": "5.8"
-        },
-        {
-          "lt": "6.7",
-          "ge": "6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SquidClamav developers report:</p>\n\t<blockquote cite=\"http://squidclamav.darold.net/news.html\">\n\t  <p>This release fix several security issues by escaping CGI\n\t  parameters.</p>\n\t</blockquote>\n\t<p>Prior to versions 6.7 and 5.8, CGI script clwarn.cgi was not\n\tproperly sanitizing input variables, so they could be used to\n\tinject arbitrary strings to the generated page, leading\n\tto the cross-site scripting attacks.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://squidclamav.darold.net/news.html"
-    ],
-    "cvename": [
-      "CVE-2012-4667"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-07-24",
-    "entry": "2012-08-25"
-  }
+	"vid": "ce680f0a-eea6-11e1-8bd8-0022156e8794",
+	"topic": "squidclamav -- cross-site scripting in default virus warning pages",
+	"affects": [
+		{
+			"name": [
+				"squidclamav"
+			],
+			"range": [
+				{
+					"lt": "5.8"
+				},
+				{
+					"lt": "6.7",
+					"ge": "6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SquidClamav developers report:</p>\n\t<blockquote cite=\"http://squidclamav.darold.net/news.html\">\n\t  <p>This release fix several security issues by escaping CGI\n\t  parameters.</p>\n\t</blockquote>\n\t<p>Prior to versions 6.7 and 5.8, CGI script clwarn.cgi was not\n\tproperly sanitizing input variables, so they could be used to\n\tinject arbitrary strings to the generated page, leading\n\tto the cross-site scripting attacks.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://squidclamav.darold.net/news.html"
+		],
+		"cvename": [
+			"CVE-2012-4667"
+		]
+	},
+	"dates": {
+		"discovery": "2012-07-24",
+		"entry": "2012-08-25"
+	}
 }

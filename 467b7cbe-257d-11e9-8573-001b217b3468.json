@@ -1,64 +1,64 @@
 {
-  "vid": "467b7cbe-257d-11e9-8573-001b217b3468",
-  "topic": "Gitlab -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "11.7.3",
-          "ge": "11.7.0"
-        },
-        {
-          "lt": "11.6.8",
-          "ge": "11.6.0"
-        },
-        {
-          "lt": "11.5.10",
-          "ge": "0.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2019/01/31/security-release-gitlab-11-dot-7-dot-3-released/\">\n\t  <p>Remote Command Execution via GitLab Pages</p>\n\t  <p>Covert Redirect to Steal GitHub/Bitbucket Tokens</p>\n\t  <p>Remote Mirror Branches Leaked by Git Transfer Refs</p>\n\t  <p>Denial of Service with Markdown</p>\n\t  <p>Guests Can View List of Group Merge Requests</p>\n\t  <p>Guest Can View Merge Request Titles via System Notes</p>\n\t  <p>Persistent XSS via KaTeX</p>\n\t  <p>Emails Sent to Unauthorized Users</p>\n\t  <p>Hyperlink Injection in Notification Emails</p>\n\t  <p>Unauthorized Access to LFS Objects</p>\n\t  <p>Trigger Token Exposure</p>\n\t  <p>Upgrade Rails to 5.0.7.1 and 4.2.11</p>\n\t  <p>Contributed Project Information Visible in Private Profile</p>\n\t  <p>Imported Project Retains Prior Visibility Setting</p>\n\t  <p>Error disclosure on Project Import</p>\n\t  <p>Persistent XSS in User Status</p>\n\t  <p>Last Commit Status Leaked to Guest Users</p>\n\t  <p>Mitigations for IDN Homograph and RTLO Attacks</p>\n\t  <p>Access to Internal Wiki When External Wiki Enabled</p>\n\t  <p>User Can Comment on Locked Project Issues</p>\n\t  <p>Unauthorized Reaction Emojis by Guest Users</p>\n\t  <p>User Retains Project Role After Removal from Private Group</p>\n\t  <p>GitHub Token Leaked to Maintainers</p>\n\t  <p>Unauthenticated Blind SSRF in Jira Integration</p>\n\t  <p>Unauthorized Access to Group Membership</p>\n\t  <p>Validate SAML Response in Group SAML SSO</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/2019/01/31/security-release-gitlab-11-dot-7-dot-3-released/"
-    ],
-    "cvename": [
-      "CVE-2019-6783",
-      "CVE-2019-6788",
-      "CVE-2019-6785",
-      "CVE-2019-6790",
-      "CVE-2019-6997",
-      "CVE-2019-6784",
-      "CVE-2019-6789",
-      "CVE-2019-6781",
-      "CVE-2019-6786",
-      "CVE-2019-6787",
-      "CVE-2018-16476",
-      "CVE-2019-6782",
-      "CVE-2019-6791",
-      "CVE-2019-6792",
-      "CVE-2019-6796",
-      "CVE-2019-6794",
-      "CVE-2019-6795",
-      "CVE-2019-6960",
-      "CVE-2019-6995",
-      "CVE-2019-7176",
-      "CVE-2019-7155",
-      "CVE-2019-6797",
-      "CVE-2019-6793",
-      "CVE-2019-6996"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-01-31",
-    "entry": "2019-01-31"
-  }
+	"vid": "467b7cbe-257d-11e9-8573-001b217b3468",
+	"topic": "Gitlab -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "11.7.3",
+					"ge": "11.7.0"
+				},
+				{
+					"lt": "11.6.8",
+					"ge": "11.6.0"
+				},
+				{
+					"lt": "11.5.10",
+					"ge": "0.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2019/01/31/security-release-gitlab-11-dot-7-dot-3-released/\">\n\t  <p>Remote Command Execution via GitLab Pages</p>\n\t  <p>Covert Redirect to Steal GitHub/Bitbucket Tokens</p>\n\t  <p>Remote Mirror Branches Leaked by Git Transfer Refs</p>\n\t  <p>Denial of Service with Markdown</p>\n\t  <p>Guests Can View List of Group Merge Requests</p>\n\t  <p>Guest Can View Merge Request Titles via System Notes</p>\n\t  <p>Persistent XSS via KaTeX</p>\n\t  <p>Emails Sent to Unauthorized Users</p>\n\t  <p>Hyperlink Injection in Notification Emails</p>\n\t  <p>Unauthorized Access to LFS Objects</p>\n\t  <p>Trigger Token Exposure</p>\n\t  <p>Upgrade Rails to 5.0.7.1 and 4.2.11</p>\n\t  <p>Contributed Project Information Visible in Private Profile</p>\n\t  <p>Imported Project Retains Prior Visibility Setting</p>\n\t  <p>Error disclosure on Project Import</p>\n\t  <p>Persistent XSS in User Status</p>\n\t  <p>Last Commit Status Leaked to Guest Users</p>\n\t  <p>Mitigations for IDN Homograph and RTLO Attacks</p>\n\t  <p>Access to Internal Wiki When External Wiki Enabled</p>\n\t  <p>User Can Comment on Locked Project Issues</p>\n\t  <p>Unauthorized Reaction Emojis by Guest Users</p>\n\t  <p>User Retains Project Role After Removal from Private Group</p>\n\t  <p>GitHub Token Leaked to Maintainers</p>\n\t  <p>Unauthenticated Blind SSRF in Jira Integration</p>\n\t  <p>Unauthorized Access to Group Membership</p>\n\t  <p>Validate SAML Response in Group SAML SSO</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/2019/01/31/security-release-gitlab-11-dot-7-dot-3-released/"
+		],
+		"cvename": [
+			"CVE-2019-6783",
+			"CVE-2019-6788",
+			"CVE-2019-6785",
+			"CVE-2019-6790",
+			"CVE-2019-6997",
+			"CVE-2019-6784",
+			"CVE-2019-6789",
+			"CVE-2019-6781",
+			"CVE-2019-6786",
+			"CVE-2019-6787",
+			"CVE-2018-16476",
+			"CVE-2019-6782",
+			"CVE-2019-6791",
+			"CVE-2019-6792",
+			"CVE-2019-6796",
+			"CVE-2019-6794",
+			"CVE-2019-6795",
+			"CVE-2019-6960",
+			"CVE-2019-6995",
+			"CVE-2019-7176",
+			"CVE-2019-7155",
+			"CVE-2019-6797",
+			"CVE-2019-6793",
+			"CVE-2019-6996"
+		]
+	},
+	"dates": {
+		"discovery": "2019-01-31",
+		"entry": "2019-01-31"
+	}
 }

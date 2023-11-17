@@ -1,36 +1,36 @@
 {
-  "vid": "bce1f76d-82d0-11de-88ea-001a4d49522b",
-  "topic": "subversion -- heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "subversion",
-        "subversion-freebsd",
-        "p5-subversion",
-        "py-subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.6.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Subversion Security Advisory reports:</p>\n\t<blockquote cite=\"http://subversion.tigris.org/security/CVE-2009-2411-advisory.txt\">\n\t  <p>Subversion clients and servers have multiple heap\n\t    overflow issues in the parsing of binary deltas.  This is\n\t    related to an allocation vulnerability in the APR library\n\t    used by Subversion.</p>\n\t  <p>Clients with commit access to a vulnerable server can\n\t    cause a remote heap overflow; servers can cause a heap\n\t    overflow on vulnerable clients that try to do a checkout\n\t    or update.</p>\n\t  <p>This can lead to a DoS (an exploit has been tested) and\n\t    to arbitrary code execution (no exploit tested, but the\n\t    possibility is clear).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://subversion.tigris.org/security/CVE-2009-2411-advisory.txt"
-    ],
-    "cvename": [
-      "CVE-2009-2411"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-08-06",
-    "entry": "2009-08-06",
-    "modified": "2009-08-07"
-  }
+	"vid": "bce1f76d-82d0-11de-88ea-001a4d49522b",
+	"topic": "subversion -- heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"subversion",
+				"subversion-freebsd",
+				"p5-subversion",
+				"py-subversion"
+			],
+			"range": [
+				{
+					"lt": "1.6.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Subversion Security Advisory reports:</p>\n\t<blockquote cite=\"http://subversion.tigris.org/security/CVE-2009-2411-advisory.txt\">\n\t  <p>Subversion clients and servers have multiple heap\n\t    overflow issues in the parsing of binary deltas.  This is\n\t    related to an allocation vulnerability in the APR library\n\t    used by Subversion.</p>\n\t  <p>Clients with commit access to a vulnerable server can\n\t    cause a remote heap overflow; servers can cause a heap\n\t    overflow on vulnerable clients that try to do a checkout\n\t    or update.</p>\n\t  <p>This can lead to a DoS (an exploit has been tested) and\n\t    to arbitrary code execution (no exploit tested, but the\n\t    possibility is clear).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://subversion.tigris.org/security/CVE-2009-2411-advisory.txt"
+		],
+		"cvename": [
+			"CVE-2009-2411"
+		]
+	},
+	"dates": {
+		"discovery": "2009-08-06",
+		"entry": "2009-08-06",
+		"modified": "2009-08-07"
+	}
 }

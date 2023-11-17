@@ -1,36 +1,36 @@
 {
-  "vid": "b4d94fa0-6e38-11d9-9e1e-c296ac722cb3",
-  "topic": "squid -- possible cache-poisoning via malformed HTTP responses",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "2.5.7_9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The squid patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-header_parsing\">\n\t  <p>This patch makes Squid considerably stricter while\n\t    parsing the HTTP protocol.</p>\n\t  <ol>\n\t    <li>A Content-length header should only appear once in a\n\t      valid request or response. Multiple Content-length\n\t      headers, in conjunction with specially crafted requests,\n\t      may allow Squid's cache to be poisoned with bad content\n\t      in certain situations.</li>\n\t    <li>CR characters is only allowed as part of the CR NL\n\t      line terminator, not alone. This to ensure that all\n\t      involved agrees on the structure of HTTP headers.</li>\n\t    <li>Rejects requests/responses that have whitespace in an\n\t      HTTP header name.</li>\n\t  </ol>\n\t</blockquote>\n\t<p>To enable these strict parsing rules, update to at least\n\t  squid-2.5.7_9 and specify <code>relaxed_header_parser\n\t  off</code> in squid.conf.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-header_parsing"
-    ],
-    "cvename": [
-      "CVE-2005-0174"
-    ],
-    "cert_vu": [
-      "768702"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-24",
-    "entry": "2005-01-24",
-    "modified": "2006-01-02"
-  }
+	"vid": "b4d94fa0-6e38-11d9-9e1e-c296ac722cb3",
+	"topic": "squid -- possible cache-poisoning via malformed HTTP responses",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "2.5.7_9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The squid patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-header_parsing\">\n\t  <p>This patch makes Squid considerably stricter while\n\t    parsing the HTTP protocol.</p>\n\t  <ol>\n\t    <li>A Content-length header should only appear once in a\n\t      valid request or response. Multiple Content-length\n\t      headers, in conjunction with specially crafted requests,\n\t      may allow Squid's cache to be poisoned with bad content\n\t      in certain situations.</li>\n\t    <li>CR characters is only allowed as part of the CR NL\n\t      line terminator, not alone. This to ensure that all\n\t      involved agrees on the structure of HTTP headers.</li>\n\t    <li>Rejects requests/responses that have whitespace in an\n\t      HTTP header name.</li>\n\t  </ol>\n\t</blockquote>\n\t<p>To enable these strict parsing rules, update to at least\n\t  squid-2.5.7_9 and specify <code>relaxed_header_parser\n\t  off</code> in squid.conf.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-header_parsing"
+		],
+		"cvename": [
+			"CVE-2005-0174"
+		],
+		"cert_vu": [
+			"768702"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-24",
+		"entry": "2005-01-24",
+		"modified": "2006-01-02"
+	}
 }

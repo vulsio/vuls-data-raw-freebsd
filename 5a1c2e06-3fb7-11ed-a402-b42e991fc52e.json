@@ -1,32 +1,32 @@
 {
-  "vid": "5a1c2e06-3fb7-11ed-a402-b42e991fc52e",
-  "topic": "unbound -- Non-Responsive Delegation Attack",
-  "affects": [
-    {
-      "name": [
-        "unbound"
-      ],
-      "range": [
-        {
-          "lt": "1.16.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n      <p>\n\tA vulnerability named 'Non-Responsive Delegation Attack'\n\t(NRDelegation Attack) has been discovered in various DNS\n\tresolving software. The NRDelegation Attack works by having\n\ta malicious delegation with a considerable number of non\n\tresponsive nameservers. The attack starts by querying a\n\tresolver for a record that relies on those unresponsive\n\tnameservers. The attack can cause a resolver to spend a lot\n\tof time/resources resolving records under a malicious\n\tdelegation point where a considerable number of unresponsive\n\tNS records reside. It can trigger high CPU usage in some\n\tresolver implementations that continually look in the cache\n\tfor resolved NS records in that delegation.\n      </p>\n\t<blockquote cite=\"https://www.cvedetails.com/cve/CVE-2022-3204\">\n\t  <p>.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nlnetlabs.nl/downloads/unbound/CVE-2022-3204.txt"
-    ],
-    "cvename": [
-      "CVE-2022-3204"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-09-26",
-    "entry": "2022-09-29"
-  }
+	"vid": "5a1c2e06-3fb7-11ed-a402-b42e991fc52e",
+	"topic": "unbound -- Non-Responsive Delegation Attack",
+	"affects": [
+		{
+			"name": [
+				"unbound"
+			],
+			"range": [
+				{
+					"lt": "1.16.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n      <p>\n\tA vulnerability named 'Non-Responsive Delegation Attack'\n\t(NRDelegation Attack) has been discovered in various DNS\n\tresolving software. The NRDelegation Attack works by having\n\ta malicious delegation with a considerable number of non\n\tresponsive nameservers. The attack starts by querying a\n\tresolver for a record that relies on those unresponsive\n\tnameservers. The attack can cause a resolver to spend a lot\n\tof time/resources resolving records under a malicious\n\tdelegation point where a considerable number of unresponsive\n\tNS records reside. It can trigger high CPU usage in some\n\tresolver implementations that continually look in the cache\n\tfor resolved NS records in that delegation.\n      </p>\n\t<blockquote cite=\"https://www.cvedetails.com/cve/CVE-2022-3204\">\n\t  <p>.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nlnetlabs.nl/downloads/unbound/CVE-2022-3204.txt"
+		],
+		"cvename": [
+			"CVE-2022-3204"
+		]
+	},
+	"dates": {
+		"discovery": "2022-09-26",
+		"entry": "2022-09-29"
+	}
 }

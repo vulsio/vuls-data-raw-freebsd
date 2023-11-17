@@ -1,46 +1,46 @@
 {
-  "vid": "e7dcd69d-8ee6-11e6-a590-14dae9d210b8",
-  "topic": "FreeBSD -- Multiple portsnap vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.0_1",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.3_10",
-          "ge": "10.3"
-        },
-        {
-          "lt": "10.2_23",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_40",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_48",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Flaws in portsnap's verification of downloaded tar files\n\tallows additional files to be included without causing the\n\tverification to fail. Portsnap may then use or execute these\n\tfiles.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can conduct man in the middle attack on\n\tthe network at the time when portsnap is run can cause\n\tportsnap to execute arbitrary commands under the credentials\n\tof the user who runs portsnap, typically root.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-16:30.portsnap"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-10-10",
-    "entry": "2016-10-10"
-  }
+	"vid": "e7dcd69d-8ee6-11e6-a590-14dae9d210b8",
+	"topic": "FreeBSD -- Multiple portsnap vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.0_1",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.3_10",
+					"ge": "10.3"
+				},
+				{
+					"lt": "10.2_23",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_40",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_48",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Flaws in portsnap's verification of downloaded tar files\n\tallows additional files to be included without causing the\n\tverification to fail. Portsnap may then use or execute these\n\tfiles.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can conduct man in the middle attack on\n\tthe network at the time when portsnap is run can cause\n\tportsnap to execute arbitrary commands under the credentials\n\tof the user who runs portsnap, typically root.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-16:30.portsnap"
+		]
+	},
+	"dates": {
+		"discovery": "2016-10-10",
+		"entry": "2016-10-10"
+	}
 }

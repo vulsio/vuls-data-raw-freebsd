@@ -1,38 +1,38 @@
 {
-  "vid": "0f99a30c-7b4b-11ed-9168-080027f5fec9",
-  "topic": "curl -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.86.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Daniel Stenberg reports:</p>\n\t<blockquote cite=\"https://curl.se/docs/security.html\">\n\t  <dl>\n\t    <dt>CVE-2022-32221: POST following PUT confusion</dt>\n\t    <dd>\n\t      When doing HTTP(S) transfers, libcurl might erroneously\n\t      use the read callback\n\t      (<code>CURLOPT_READFUNCTION</code>) to ask for data to\n\t      send, even when the <code>CURLOPT_POSTFIELDS</code>\n\t      option has been set, if the same handle previously was\n\t      used to issue a <code>PUT</code> request which used that\n\t      callback. This flaw may surprise the application and\n\t      cause it to misbehave and either send off the wrong data\n\t      or use memory after free or similar in the subsequent\n\t      <code>POST</code> request. The problem exists in the\n\t      logic for a reused handle when it is changed from a PUT\n\t      to a POST.\n\t    </dd>\n\t    <dt>CVE-2022-35260: .netrc parser out-of-bounds access</dt>\n\t    <dd>\n\t      curl can be told to parse a .netrc file for\n\t      credentials. If that file ends in a line with\n\t      consecutive non-white space letters and no newline, curl\n\t      could read past the end of the stack-based buffer, and\n\t      if the read works, write a zero byte possibly beyond its\n\t      boundary. This will in most cases cause a segfault or\n\t      similar, but circumstances might also cause different\n\t      outcomes. If a malicious user can provide a custom netrc\n\t      file to an application or otherwise affect its contents,\n\t      this flaw could be used as denial-of-service.\n\t    </dd>\n\t    <dt>CVE-2022-42915: HTTP proxy double-free</dt>\n\t    <dd>\n\t      f curl is told to use an HTTP proxy for a transfer with\n\t      a non-HTTP(S) URL, it sets up the connection to the\n\t      remote server by issuing a CONNECT request to the proxy,\n\t      and then tunnels the rest of protocol through. An HTTP\n\t      proxy might refuse this request (HTTP proxies often only\n\t      allow outgoing connections to specific port numbers,\n\t      like 443 for HTTPS) and instead return a non-200\n\t      response code to the client. Due to flaws in the\n\t      error/cleanup handling, this could trigger a double-free\n\t      in curl if one of the following schemes were used in the\n\t      URL for the transfer: dict, gopher, gophers, ldap,\n\t      ldaps, rtmp, rtmps, telnet\n\t    </dd>\n\t    <dt>CVE-2022-42916: HSTS bypass via IDN</dt>\n\t    <dd>\n\t      curl's HSTS check could be bypassed to trick it to keep\n\t      using HTTP. Using its HSTS support, curl can be\n\t      instructed to use HTTPS directly instead of using an\n\t      insecure clear-text HTTP step even when HTTP is provided\n\t      in the URL. This mechanism could be bypassed if the host\n\t      name in the given URL uses IDN characters that get\n\t      replaced to ASCII counterparts as part of the IDN\n\t      conversion. Like using the character UTF-8 U+3002\n\t      (IDEOGRAPHIC FULL STOP) instead of the common ASCII full\n\t      stop (U+002E) .. Like this: http://curl。se。\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.se/docs/CVE-2022-32221.html",
-      "https://curl.se/docs/CVE-2022-35260.html",
-      "https://curl.se/docs/CVE-2022-42915.html",
-      "https://curl.se/docs/CVE-2022-42916.html"
-    ],
-    "cvename": [
-      "CVE-2022-32221",
-      "CVE-2022-35260",
-      "CVE-2022-42915",
-      "CVE-2022-42916"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-10-26",
-    "entry": "2022-12-14"
-  }
+	"vid": "0f99a30c-7b4b-11ed-9168-080027f5fec9",
+	"topic": "curl -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.86.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Daniel Stenberg reports:</p>\n\t<blockquote cite=\"https://curl.se/docs/security.html\">\n\t  <dl>\n\t    <dt>CVE-2022-32221: POST following PUT confusion</dt>\n\t    <dd>\n\t      When doing HTTP(S) transfers, libcurl might erroneously\n\t      use the read callback\n\t      (<code>CURLOPT_READFUNCTION</code>) to ask for data to\n\t      send, even when the <code>CURLOPT_POSTFIELDS</code>\n\t      option has been set, if the same handle previously was\n\t      used to issue a <code>PUT</code> request which used that\n\t      callback. This flaw may surprise the application and\n\t      cause it to misbehave and either send off the wrong data\n\t      or use memory after free or similar in the subsequent\n\t      <code>POST</code> request. The problem exists in the\n\t      logic for a reused handle when it is changed from a PUT\n\t      to a POST.\n\t    </dd>\n\t    <dt>CVE-2022-35260: .netrc parser out-of-bounds access</dt>\n\t    <dd>\n\t      curl can be told to parse a .netrc file for\n\t      credentials. If that file ends in a line with\n\t      consecutive non-white space letters and no newline, curl\n\t      could read past the end of the stack-based buffer, and\n\t      if the read works, write a zero byte possibly beyond its\n\t      boundary. This will in most cases cause a segfault or\n\t      similar, but circumstances might also cause different\n\t      outcomes. If a malicious user can provide a custom netrc\n\t      file to an application or otherwise affect its contents,\n\t      this flaw could be used as denial-of-service.\n\t    </dd>\n\t    <dt>CVE-2022-42915: HTTP proxy double-free</dt>\n\t    <dd>\n\t      f curl is told to use an HTTP proxy for a transfer with\n\t      a non-HTTP(S) URL, it sets up the connection to the\n\t      remote server by issuing a CONNECT request to the proxy,\n\t      and then tunnels the rest of protocol through. An HTTP\n\t      proxy might refuse this request (HTTP proxies often only\n\t      allow outgoing connections to specific port numbers,\n\t      like 443 for HTTPS) and instead return a non-200\n\t      response code to the client. Due to flaws in the\n\t      error/cleanup handling, this could trigger a double-free\n\t      in curl if one of the following schemes were used in the\n\t      URL for the transfer: dict, gopher, gophers, ldap,\n\t      ldaps, rtmp, rtmps, telnet\n\t    </dd>\n\t    <dt>CVE-2022-42916: HSTS bypass via IDN</dt>\n\t    <dd>\n\t      curl's HSTS check could be bypassed to trick it to keep\n\t      using HTTP. Using its HSTS support, curl can be\n\t      instructed to use HTTPS directly instead of using an\n\t      insecure clear-text HTTP step even when HTTP is provided\n\t      in the URL. This mechanism could be bypassed if the host\n\t      name in the given URL uses IDN characters that get\n\t      replaced to ASCII counterparts as part of the IDN\n\t      conversion. Like using the character UTF-8 U+3002\n\t      (IDEOGRAPHIC FULL STOP) instead of the common ASCII full\n\t      stop (U+002E) .. Like this: http://curl。se。\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.se/docs/CVE-2022-32221.html",
+			"https://curl.se/docs/CVE-2022-35260.html",
+			"https://curl.se/docs/CVE-2022-42915.html",
+			"https://curl.se/docs/CVE-2022-42916.html"
+		],
+		"cvename": [
+			"CVE-2022-32221",
+			"CVE-2022-35260",
+			"CVE-2022-42915",
+			"CVE-2022-42916"
+		]
+	},
+	"dates": {
+		"discovery": "2022-10-26",
+		"entry": "2022-12-14"
+	}
 }

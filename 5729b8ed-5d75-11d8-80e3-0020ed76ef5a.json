@@ -1,37 +1,37 @@
 {
-  "vid": "5729b8ed-5d75-11d8-80e3-0020ed76ef5a",
-  "topic": "rsync buffer overflow in server mode",
-  "affects": [
-    {
-      "name": [
-        "rsync"
-      ],
-      "range": [
-        {
-          "lt": "2.5.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>When rsync is run in server mode, a buffer overflow could\n\t  allow a remote attacker to execute arbitrary code with the\n\t  privileges of the rsync server.  Anonymous rsync servers are\n\t  at the highest risk.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://rsync.samba.org/#security"
-    ],
-    "cvename": [
-      "CVE-2003-0962"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.samba.org/archive/rsync-announce/2003/000011.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2003-12-04",
-    "entry": "2004-02-12"
-  }
+	"vid": "5729b8ed-5d75-11d8-80e3-0020ed76ef5a",
+	"topic": "rsync buffer overflow in server mode",
+	"affects": [
+		{
+			"name": [
+				"rsync"
+			],
+			"range": [
+				{
+					"lt": "2.5.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>When rsync is run in server mode, a buffer overflow could\n\t  allow a remote attacker to execute arbitrary code with the\n\t  privileges of the rsync server.  Anonymous rsync servers are\n\t  at the highest risk.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://rsync.samba.org/#security"
+		],
+		"cvename": [
+			"CVE-2003-0962"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.samba.org/archive/rsync-announce/2003/000011.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2003-12-04",
+		"entry": "2004-02-12"
+	}
 }

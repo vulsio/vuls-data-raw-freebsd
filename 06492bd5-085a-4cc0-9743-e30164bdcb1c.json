@@ -1,36 +1,36 @@
 {
-  "vid": "06492bd5-085a-4cc0-9743-e30164bdcb1c",
-  "topic": "py-flask-security -- user redirect to arbitrary URL vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py37-flask-security",
-        "py38-flask-security",
-        "py39-flask-security",
-        "py310-flask-security",
-        "py311-flask-security"
-      ],
-      "range": [
-        {
-          "le": "3.0.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>Snyk reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7\">\n      <p>This affects all versions of package Flask-Security.</p>\n      <p>When using the `get_post_logout_redirect` and `get_post_login_redirect` functions, it is possible to bypass URL validation and redirect a user to an arbitrary URL by providing multiple back slashes such as `\\\\\\evil.com/path`.</p>\n      <p>This vulnerability is only exploitable if an alternative WSGI server other than Werkzeug is used, or the default behaviour of Werkzeug is modified using `'autocorrect_location_header=False`.</p>\n      <p>**Note:** Flask-Security is not maintained anymore.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7"
-    ],
-    "cvename": [
-      "CVE-2021-23385"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-08-02",
-    "entry": "2023-08-31"
-  }
+	"vid": "06492bd5-085a-4cc0-9743-e30164bdcb1c",
+	"topic": "py-flask-security -- user redirect to arbitrary URL vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py37-flask-security",
+				"py38-flask-security",
+				"py39-flask-security",
+				"py310-flask-security",
+				"py311-flask-security"
+			],
+			"range": [
+				{
+					"le": "3.0.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>Snyk reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7\">\n      <p>This affects all versions of package Flask-Security.</p>\n      <p>When using the `get_post_logout_redirect` and `get_post_login_redirect` functions, it is possible to bypass URL validation and redirect a user to an arbitrary URL by providing multiple back slashes such as `\\\\\\evil.com/path`.</p>\n      <p>This vulnerability is only exploitable if an alternative WSGI server other than Werkzeug is used, or the default behaviour of Werkzeug is modified using `'autocorrect_location_header=False`.</p>\n      <p>**Note:** Flask-Security is not maintained anymore.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7"
+		],
+		"cvename": [
+			"CVE-2021-23385"
+		]
+	},
+	"dates": {
+		"discovery": "2022-08-02",
+		"entry": "2023-08-31"
+	}
 }

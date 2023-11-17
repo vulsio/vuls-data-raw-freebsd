@@ -1,38 +1,38 @@
 {
-  "vid": "df587aa2-b5a5-11e5-9728-002590263bf5",
-  "topic": "dhcpcd -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "dhcpcd"
-      ],
-      "range": [
-        {
-          "lt": "6.10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Nico Golde reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/01/07/3\">\n\t  <p>heap overflow via malformed dhcp responses later in print_option\n\t    (via dhcp_envoption1) due to incorrect option length values.\n\t    Exploitation is non-trivial, but I'd love to be proven wrong.</p>\n\t  <p>invalid read/crash via malformed dhcp responses. not exploitable\n\t    beyond DoS as far as I can judge.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://roy.marples.name/projects/dhcpcd/info/76a1609352263bd9def1300d7ba990679571fa30",
-      "http://roy.marples.name/projects/dhcpcd/info/595883e2a431f65d8fabf33059aa4689cca17403",
-      "http://www.openwall.com/lists/oss-security/2016/01/07/3"
-    ],
-    "cvename": [
-      "CVE-2016-1503",
-      "CVE-2016-1504"
-    ],
-    "freebsd_pr": [
-      "ports/206015"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-04",
-    "entry": "2016-01-08"
-  }
+	"vid": "df587aa2-b5a5-11e5-9728-002590263bf5",
+	"topic": "dhcpcd -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"dhcpcd"
+			],
+			"range": [
+				{
+					"lt": "6.10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Nico Golde reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2016/01/07/3\">\n\t  <p>heap overflow via malformed dhcp responses later in print_option\n\t    (via dhcp_envoption1) due to incorrect option length values.\n\t    Exploitation is non-trivial, but I'd love to be proven wrong.</p>\n\t  <p>invalid read/crash via malformed dhcp responses. not exploitable\n\t    beyond DoS as far as I can judge.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://roy.marples.name/projects/dhcpcd/info/76a1609352263bd9def1300d7ba990679571fa30",
+			"http://roy.marples.name/projects/dhcpcd/info/595883e2a431f65d8fabf33059aa4689cca17403",
+			"http://www.openwall.com/lists/oss-security/2016/01/07/3"
+		],
+		"cvename": [
+			"CVE-2016-1503",
+			"CVE-2016-1504"
+		],
+		"freebsd_pr": [
+			"ports/206015"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-04",
+		"entry": "2016-01-08"
+	}
 }

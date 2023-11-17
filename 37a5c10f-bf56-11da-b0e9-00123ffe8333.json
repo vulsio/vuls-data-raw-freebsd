@@ -1,34 +1,34 @@
 {
-  "vid": "37a5c10f-bf56-11da-b0e9-00123ffe8333",
-  "topic": "freeradius -- EAP-MSCHAPv2 Authentication Bypass",
-  "affects": [
-    {
-      "name": [
-        "freeradius"
-      ],
-      "range": [
-        {
-          "lt": "1.1.1",
-          "ge": "1.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Freeradius Security Contact reports:</p>\n\t<blockquote cite=\"http://www.freeradius.org/security.html#1.1.0\">\n\t  <p>Insufficient input validation was being done in the\n\t    EAP-MSCHAPv2 state machine. A malicious attacker could\n\t    manipulate their EAP-MSCHAPv2 client state machine to\n\t    potentially convince the server to bypass authentication\n\t    checks. This bypassing could also result in the server\n\t    crashing.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.freeradius.org/security.html#1.1.0",
-      "http://secunia.com/advisories/19300/"
-    ],
-    "cvename": [
-      "CVE-2006-1354"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-03-21",
-    "entry": "2006-03-29"
-  }
+	"vid": "37a5c10f-bf56-11da-b0e9-00123ffe8333",
+	"topic": "freeradius -- EAP-MSCHAPv2 Authentication Bypass",
+	"affects": [
+		{
+			"name": [
+				"freeradius"
+			],
+			"range": [
+				{
+					"lt": "1.1.1",
+					"ge": "1.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Freeradius Security Contact reports:</p>\n\t<blockquote cite=\"http://www.freeradius.org/security.html#1.1.0\">\n\t  <p>Insufficient input validation was being done in the\n\t    EAP-MSCHAPv2 state machine. A malicious attacker could\n\t    manipulate their EAP-MSCHAPv2 client state machine to\n\t    potentially convince the server to bypass authentication\n\t    checks. This bypassing could also result in the server\n\t    crashing.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.freeradius.org/security.html#1.1.0",
+			"http://secunia.com/advisories/19300/"
+		],
+		"cvename": [
+			"CVE-2006-1354"
+		]
+	},
+	"dates": {
+		"discovery": "2006-03-21",
+		"entry": "2006-03-29"
+	}
 }

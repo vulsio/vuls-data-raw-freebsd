@@ -1,37 +1,37 @@
 {
-  "vid": "38f2e3a0-b61e-11ec-9ebc-1c697aa5a594",
-  "topic": "FreeBSD -- zlib compression out-of-bounds write",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "13.0_11",
-          "ge": "13.0"
-        },
-        {
-          "lt": "12.3_5",
-          "ge": "12.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Certain inputs can cause zlib's compression routine to overwrite an\n\tinternal buffer with compressed data.  This issue may require the use\n\tof uncommon or non-default compression parameters.</p>\n\t<h1>Impact:</h1>\n\t<p>The out-of-bounds write may result in memory corruption and an\n\tapplication crash or kernel panic.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2018-25032"
-    ],
-    "freebsd_sa": [
-      "SA-22:08.zlib"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-06",
-    "entry": "2022-04-07"
-  }
+	"vid": "38f2e3a0-b61e-11ec-9ebc-1c697aa5a594",
+	"topic": "FreeBSD -- zlib compression out-of-bounds write",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "13.0_11",
+					"ge": "13.0"
+				},
+				{
+					"lt": "12.3_5",
+					"ge": "12.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Certain inputs can cause zlib's compression routine to overwrite an\n\tinternal buffer with compressed data.  This issue may require the use\n\tof uncommon or non-default compression parameters.</p>\n\t<h1>Impact:</h1>\n\t<p>The out-of-bounds write may result in memory corruption and an\n\tapplication crash or kernel panic.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2018-25032"
+		],
+		"freebsd_sa": [
+			"SA-22:08.zlib"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-06",
+		"entry": "2022-04-07"
+	}
 }

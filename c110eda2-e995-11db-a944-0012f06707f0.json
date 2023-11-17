@@ -1,40 +1,40 @@
 {
-  "vid": "c110eda2-e995-11db-a944-0012f06707f0",
-  "topic": "freeradius -- EAP-TTLS Tunnel Memory Leak Remote DOS Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "freeradius",
-        "freeradius-mysql"
-      ],
-      "range": [
-        {
-          "le": "1.1.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The freeradius development team reports:</p>\n\t<blockquote cite=\"http://www.freeradius.org/security.html\">\n\t  <p>A malicious 802.1x supplicant could send malformed Diameter format\n\t     attributes inside of an EAP-TTLS tunnel. The server would reject\n\t     the authentication request, but would leak one VALUE_PAIR data\n\t     structure, of approximately 300 bytes. If an attacker performed\n\t     the attack many times (e.g. thousands or more over a period of\n\t     minutes to hours), the server could leak megabytes of memory,\n\t     potentially leading to an \"out of memory\" condition, and early\n\t     process exit.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.freeradius.org/security.html"
-    ],
-    "cvename": [
-      "CVE-2005-1455",
-      "CVE-2005-1454",
-      "CVE-2007-2028",
-      "CVE-2005-4745"
-    ],
-    "bid": [
-      "23466"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-04-10",
-    "entry": "2007-04-13",
-    "modified": "2010-05-12"
-  }
+	"vid": "c110eda2-e995-11db-a944-0012f06707f0",
+	"topic": "freeradius -- EAP-TTLS Tunnel Memory Leak Remote DOS Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"freeradius",
+				"freeradius-mysql"
+			],
+			"range": [
+				{
+					"le": "1.1.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The freeradius development team reports:</p>\n\t<blockquote cite=\"http://www.freeradius.org/security.html\">\n\t  <p>A malicious 802.1x supplicant could send malformed Diameter format\n\t     attributes inside of an EAP-TTLS tunnel. The server would reject\n\t     the authentication request, but would leak one VALUE_PAIR data\n\t     structure, of approximately 300 bytes. If an attacker performed\n\t     the attack many times (e.g. thousands or more over a period of\n\t     minutes to hours), the server could leak megabytes of memory,\n\t     potentially leading to an \"out of memory\" condition, and early\n\t     process exit.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.freeradius.org/security.html"
+		],
+		"cvename": [
+			"CVE-2005-1455",
+			"CVE-2005-1454",
+			"CVE-2007-2028",
+			"CVE-2005-4745"
+		],
+		"bid": [
+			"23466"
+		]
+	},
+	"dates": {
+		"discovery": "2007-04-10",
+		"entry": "2007-04-13",
+		"modified": "2010-05-12"
+	}
 }

@@ -1,102 +1,102 @@
 {
-  "vid": "6e6a6b8a-2fde-11d9-b3a2-0050fc56d258",
-  "topic": "apache mod_include buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "apache"
-      ],
-      "range": [
-        {
-          "lt": "1.3.33"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+mod_ssl"
-      ],
-      "range": [
-        {
-          "lt": "1.3.32+2.8.21_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+mod_ssl+ipv6"
-      ],
-      "range": [
-        {
-          "lt": "1.3.32+2.8.21_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+mod_perl"
-      ],
-      "range": [
-        {
-          "le": "1.3.31"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+ipv6"
-      ],
-      "range": [
-        {
-          "lt": "1.3.33"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+ssl"
-      ],
-      "range": [
-        {
-          "le": "1.3.29.1.55"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ru-apache"
-      ],
-      "range": [
-        {
-          "lt": "1.3.33+30.21"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ru-apache+mod_ssl"
-      ],
-      "range": [
-        {
-          "lt": "1.3.33+30.21+2.8.22"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>There is a buffer overflow in a function used by mod_include\n\t  that may enable a local user to gain privileges of a httpd\n\t  child.  Only users that are able to create SSI documents can\n\t  take advantage of that vulnerability.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.securitylab.ru/48807.html"
-    ],
-    "cvename": [
-      "CVE-2004-0940"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-22",
-    "entry": "2004-11-06"
-  }
+	"vid": "6e6a6b8a-2fde-11d9-b3a2-0050fc56d258",
+	"topic": "apache mod_include buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"apache"
+			],
+			"range": [
+				{
+					"lt": "1.3.33"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+mod_ssl"
+			],
+			"range": [
+				{
+					"lt": "1.3.32+2.8.21_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+mod_ssl+ipv6"
+			],
+			"range": [
+				{
+					"lt": "1.3.32+2.8.21_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+mod_perl"
+			],
+			"range": [
+				{
+					"le": "1.3.31"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+ipv6"
+			],
+			"range": [
+				{
+					"lt": "1.3.33"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+ssl"
+			],
+			"range": [
+				{
+					"le": "1.3.29.1.55"
+				}
+			]
+		},
+		{
+			"name": [
+				"ru-apache"
+			],
+			"range": [
+				{
+					"lt": "1.3.33+30.21"
+				}
+			]
+		},
+		{
+			"name": [
+				"ru-apache+mod_ssl"
+			],
+			"range": [
+				{
+					"lt": "1.3.33+30.21+2.8.22"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>There is a buffer overflow in a function used by mod_include\n\t  that may enable a local user to gain privileges of a httpd\n\t  child.  Only users that are able to create SSI documents can\n\t  take advantage of that vulnerability.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.securitylab.ru/48807.html"
+		],
+		"cvename": [
+			"CVE-2004-0940"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-22",
+		"entry": "2004-11-06"
+	}
 }

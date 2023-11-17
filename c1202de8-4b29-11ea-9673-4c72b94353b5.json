@@ -1,42 +1,42 @@
 {
-  "vid": "c1202de8-4b29-11ea-9673-4c72b94353b5",
-  "topic": "NGINX -- HTTP request smuggling",
-  "affects": [
-    {
-      "name": [
-        "nginx"
-      ],
-      "range": [
-        {
-          "lt": "1.16.1_11,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "nginx-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.17.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NGINX Team reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20372\">\n\t  <p>NGINX before 1.17.7, with certain error_page configurations, allows HTTP\n\t    request smuggling, as demonstrated by the ability of an attacker to read\n\t    unauthorized web pages in environments where NGINX is being fronted by a\n\t    load balancer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20372"
-    ],
-    "cvename": [
-      "CVE-2019-20372"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-12-10",
-    "entry": "2020-02-09"
-  }
+	"vid": "c1202de8-4b29-11ea-9673-4c72b94353b5",
+	"topic": "NGINX -- HTTP request smuggling",
+	"affects": [
+		{
+			"name": [
+				"nginx"
+			],
+			"range": [
+				{
+					"lt": "1.16.1_11,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"nginx-devel"
+			],
+			"range": [
+				{
+					"lt": "1.17.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NGINX Team reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20372\">\n\t  <p>NGINX before 1.17.7, with certain error_page configurations, allows HTTP\n\t    request smuggling, as demonstrated by the ability of an attacker to read\n\t    unauthorized web pages in environments where NGINX is being fronted by a\n\t    load balancer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20372"
+		],
+		"cvename": [
+			"CVE-2019-20372"
+		]
+	},
+	"dates": {
+		"discovery": "2019-12-10",
+		"entry": "2020-02-09"
+	}
 }

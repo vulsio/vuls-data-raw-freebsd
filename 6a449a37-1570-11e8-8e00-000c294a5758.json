@@ -1,32 +1,32 @@
 {
-  "vid": "6a449a37-1570-11e8-8e00-000c294a5758",
-  "topic": "strongswan - Insufficient input validation in RSASSA-PSS signature parser",
-  "affects": [
-    {
-      "name": [
-        "strongswan"
-      ],
-      "range": [
-        {
-          "eq": "5.6.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Strongswan Release Notes reports:</p>\n\t<blockquote cite=\"https://github.com/strongswan/strongswan/blob/master/NEWS\">\n\t  <p>Fixed a DoS vulnerability in the parser for PKCS#1 RSASSA-PSS signatures that\n\t    was caused by insufficient input validation.  One of the configurable\n\t    parameters in algorithm identifier structures for RSASSA-PSS signatures is the\n\t    mask generation function (MGF).  Only MGF1 is currently specified for this\n\t    purpose.  However, this in turn takes itself a parameter that specifies the\n\t    underlying hash function.  strongSwan's parser did not correctly handle the\n\t    case of this parameter being absent, causing an undefined data read.\n\t    his vulnerability has been registered as CVE-2018-6459.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/strongswan/strongswan/commit/40da179f28b768ffcf6ff7e2f68675eb44806668"
-    ],
-    "cvename": [
-      "CVE-2018-6459"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-01-31",
-    "entry": "2018-02-19"
-  }
+	"vid": "6a449a37-1570-11e8-8e00-000c294a5758",
+	"topic": "strongswan - Insufficient input validation in RSASSA-PSS signature parser",
+	"affects": [
+		{
+			"name": [
+				"strongswan"
+			],
+			"range": [
+				{
+					"eq": "5.6.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Strongswan Release Notes reports:</p>\n\t<blockquote cite=\"https://github.com/strongswan/strongswan/blob/master/NEWS\">\n\t  <p>Fixed a DoS vulnerability in the parser for PKCS#1 RSASSA-PSS signatures that\n\t    was caused by insufficient input validation.  One of the configurable\n\t    parameters in algorithm identifier structures for RSASSA-PSS signatures is the\n\t    mask generation function (MGF).  Only MGF1 is currently specified for this\n\t    purpose.  However, this in turn takes itself a parameter that specifies the\n\t    underlying hash function.  strongSwan's parser did not correctly handle the\n\t    case of this parameter being absent, causing an undefined data read.\n\t    his vulnerability has been registered as CVE-2018-6459.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/strongswan/strongswan/commit/40da179f28b768ffcf6ff7e2f68675eb44806668"
+		],
+		"cvename": [
+			"CVE-2018-6459"
+		]
+	},
+	"dates": {
+		"discovery": "2018-01-31",
+		"entry": "2018-02-19"
+	}
 }

@@ -1,55 +1,55 @@
 {
-  "vid": "a7a4e96c-ba50-11e5-9728-002590263bf5",
-  "topic": "kibana4 -- XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "kibana4",
-        "kibana41"
-      ],
-      "range": [
-        {
-          "lt": "4.1.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kibana42"
-      ],
-      "range": [
-        {
-          "lt": "4.2.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kibana43"
-      ],
-      "range": [
-        {
-          "lt": "4.3.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/blog/kibana-4-3-1-and-4-2-2-and-4-1-4\">\n\t  <p>Fixes XSS vulnerability (CVE pending) - Thanks to Vladimir Ivanov\n\t    for responsibly reporting.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.elastic.co/blog/kibana-4-3-1-and-4-2-2-and-4-1-4"
-    ],
-    "freebsd_pr": [
-      "ports/205961",
-      "ports/205962",
-      "ports/205963"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-17",
-    "entry": "2016-01-13"
-  }
+	"vid": "a7a4e96c-ba50-11e5-9728-002590263bf5",
+	"topic": "kibana4 -- XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"kibana4",
+				"kibana41"
+			],
+			"range": [
+				{
+					"lt": "4.1.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"kibana42"
+			],
+			"range": [
+				{
+					"lt": "4.2.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"kibana43"
+			],
+			"range": [
+				{
+					"lt": "4.3.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/blog/kibana-4-3-1-and-4-2-2-and-4-1-4\">\n\t  <p>Fixes XSS vulnerability (CVE pending) - Thanks to Vladimir Ivanov\n\t    for responsibly reporting.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.elastic.co/blog/kibana-4-3-1-and-4-2-2-and-4-1-4"
+		],
+		"freebsd_pr": [
+			"ports/205961",
+			"ports/205962",
+			"ports/205963"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-17",
+		"entry": "2016-01-13"
+	}
 }

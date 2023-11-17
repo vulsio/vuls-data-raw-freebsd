@@ -1,49 +1,49 @@
 {
-  "vid": "eab964f8-d632-11ea-9172-4c72b94353b5",
-  "topic": "typo3 -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "typo3-9-php72",
-        "typo3-9-php73",
-        "typo3-9-php74"
-      ],
-      "range": [
-        {
-          "lt": "9.5.20"
-        }
-      ]
-    },
-    {
-      "name": [
-        "typo3-10-php72",
-        "typo3-10-php73",
-        "typo3-10-php74"
-      ],
-      "range": [
-        {
-          "lt": "10.4.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Typo3 Team reports:</p>\n\t<blockquote cite=\"https://typo3.org/article/typo3-1046-and-9520-security-releases-published\">\n\t  <p>In case an attacker manages to generate a valid cryptographic message authentication\n\t    code (HMAC-SHA1) - either by using a different existing vulnerability or in case the\n\t    internal encryptionKey was exposed - it is possible to retrieve arbitrary files of a\n\t    TYPO3 installation. This includes the possibility to fetch typo3conf/LocalConfiguration.php\n\t    which again contains the encryptionKey as well as credentials of the database management\n\t    system being used.\n\t    In case a database server is directly accessible either via internet or in a shared hosting\n\t    network, this allows to completely retrieve, manipulate or delete database contents.\n\t    This includes creating an administration user account - which can be used to trigger remote\n\t    code execution by injecting custom extensions.</p>\n\t  <p>It has been discovered that an internal verification mechanism can be used to generate\n\t    arbitrary checksums. This allows to inject arbitrary data having a valid cryptographic\n\t    message authentication code (HMAC-SHA1) and can lead to various attack chains as described\n\t    below.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://typo3.org/article/typo3-1046-and-9520-security-releases-published",
-      "https://typo3.org/security/advisory/typo3-core-sa-2020-007",
-      "https://typo3.org/security/advisory/typo3-core-sa-2020-008"
-    ],
-    "cvename": [
-      "CVE-2020-15098",
-      "CVE-2020-15099"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-07-28",
-    "entry": "2020-08-04"
-  }
+	"vid": "eab964f8-d632-11ea-9172-4c72b94353b5",
+	"topic": "typo3 -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"typo3-9-php72",
+				"typo3-9-php73",
+				"typo3-9-php74"
+			],
+			"range": [
+				{
+					"lt": "9.5.20"
+				}
+			]
+		},
+		{
+			"name": [
+				"typo3-10-php72",
+				"typo3-10-php73",
+				"typo3-10-php74"
+			],
+			"range": [
+				{
+					"lt": "10.4.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Typo3 Team reports:</p>\n\t<blockquote cite=\"https://typo3.org/article/typo3-1046-and-9520-security-releases-published\">\n\t  <p>In case an attacker manages to generate a valid cryptographic message authentication\n\t    code (HMAC-SHA1) - either by using a different existing vulnerability or in case the\n\t    internal encryptionKey was exposed - it is possible to retrieve arbitrary files of a\n\t    TYPO3 installation. This includes the possibility to fetch typo3conf/LocalConfiguration.php\n\t    which again contains the encryptionKey as well as credentials of the database management\n\t    system being used.\n\t    In case a database server is directly accessible either via internet or in a shared hosting\n\t    network, this allows to completely retrieve, manipulate or delete database contents.\n\t    This includes creating an administration user account - which can be used to trigger remote\n\t    code execution by injecting custom extensions.</p>\n\t  <p>It has been discovered that an internal verification mechanism can be used to generate\n\t    arbitrary checksums. This allows to inject arbitrary data having a valid cryptographic\n\t    message authentication code (HMAC-SHA1) and can lead to various attack chains as described\n\t    below.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://typo3.org/article/typo3-1046-and-9520-security-releases-published",
+			"https://typo3.org/security/advisory/typo3-core-sa-2020-007",
+			"https://typo3.org/security/advisory/typo3-core-sa-2020-008"
+		],
+		"cvename": [
+			"CVE-2020-15098",
+			"CVE-2020-15099"
+		]
+	},
+	"dates": {
+		"discovery": "2020-07-28",
+		"entry": "2020-08-04"
+	}
 }

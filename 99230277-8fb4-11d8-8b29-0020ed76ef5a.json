@@ -1,29 +1,29 @@
 {
-  "vid": "99230277-8fb4-11d8-8b29-0020ed76ef5a",
-  "topic": "ident2 double byte buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "ident2"
-      ],
-      "range": [
-        {
-          "le": "1.04"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jack of RaptureSecurity reported a double byte buffer\n\t  overflow in ident2. The bug may allow a remote attacker to\n\t  execute arbitrary code within the context of the ident2\n\t  daemon.  The daemon typically runs as user-ID `nobody', but\n\t  with group-ID `wheel'.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0408"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-04-15",
-    "entry": "2004-04-23"
-  }
+	"vid": "99230277-8fb4-11d8-8b29-0020ed76ef5a",
+	"topic": "ident2 double byte buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"ident2"
+			],
+			"range": [
+				{
+					"le": "1.04"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jack of RaptureSecurity reported a double byte buffer\n\t  overflow in ident2. The bug may allow a remote attacker to\n\t  execute arbitrary code within the context of the ident2\n\t  daemon.  The daemon typically runs as user-ID `nobody', but\n\t  with group-ID `wheel'.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0408"
+		]
+	},
+	"dates": {
+		"discovery": "2004-04-15",
+		"entry": "2004-04-23"
+	}
 }

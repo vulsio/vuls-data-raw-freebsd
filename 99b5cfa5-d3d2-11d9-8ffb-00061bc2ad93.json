@@ -1,34 +1,34 @@
 {
-  "vid": "99b5cfa5-d3d2-11d9-8ffb-00061bc2ad93",
-  "topic": "yamt -- buffer overflow and directory traversal issues",
-  "affects": [
-    {
-      "name": [
-        "yamt"
-      ],
-      "range": [
-        {
-          "lt": "0.5_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stanislav Brabec discovered errors in yamt's path name\n\t  handling that lead to buffer overflows and directory traversal\n\t  issues.  When processing a file with a maliciously crafted ID3\n\t  tag, yamt might overwrite arbitrary files or possibly execute\n\t  arbitrary code.</p>\n\t<p>The SuSE package ChangeLog contains:</p>\n\t<blockquote>\n\t  <ul>\n\t    <li>Several security fixes (#49337):</li>\n\t    <li>directory traversal in rename</li>\n\t    <li>directory traversal in sort</li>\n\t    <li>buffer overflow in sort</li>\n\t    <li>buffer overflow in rename</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://rpmfind.net/linux/RPM/suse/updates/8.2/i386/rpm/i586/yamt-0.5-1277.i586.html",
-      "ftp://ftp.suse.com/pub/suse/i386/update/8.2/rpm/src/yamt-0.5-1277.src.rpm"
-    ],
-    "cvename": [
-      "CVE-2005-1846",
-      "CVE-2005-1847"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-20",
-    "entry": "2005-06-03"
-  }
+	"vid": "99b5cfa5-d3d2-11d9-8ffb-00061bc2ad93",
+	"topic": "yamt -- buffer overflow and directory traversal issues",
+	"affects": [
+		{
+			"name": [
+				"yamt"
+			],
+			"range": [
+				{
+					"lt": "0.5_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stanislav Brabec discovered errors in yamt's path name\n\t  handling that lead to buffer overflows and directory traversal\n\t  issues.  When processing a file with a maliciously crafted ID3\n\t  tag, yamt might overwrite arbitrary files or possibly execute\n\t  arbitrary code.</p>\n\t<p>The SuSE package ChangeLog contains:</p>\n\t<blockquote>\n\t  <ul>\n\t    <li>Several security fixes (#49337):</li>\n\t    <li>directory traversal in rename</li>\n\t    <li>directory traversal in sort</li>\n\t    <li>buffer overflow in sort</li>\n\t    <li>buffer overflow in rename</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://rpmfind.net/linux/RPM/suse/updates/8.2/i386/rpm/i586/yamt-0.5-1277.i586.html",
+			"ftp://ftp.suse.com/pub/suse/i386/update/8.2/rpm/src/yamt-0.5-1277.src.rpm"
+		],
+		"cvename": [
+			"CVE-2005-1846",
+			"CVE-2005-1847"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-20",
+		"entry": "2005-06-03"
+	}
 }

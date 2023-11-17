@@ -1,36 +1,36 @@
 {
-  "vid": "76b5068c-8436-11eb-9469-080027f515ea",
-  "topic": "OpenSSH -- Double-free memory corruption in ssh-agent",
-  "affects": [
-    {
-      "name": [
-        "openssh-portable",
-        "openssh-portable-hpn",
-        "openssh-portable-gssapi"
-      ],
-      "range": [
-        {
-          "lt": "8.4.p1_4,1",
-          "ge": "8.2.p1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenBSD Project reports:</p>\n\t<blockquote cite=\"https://www.openssh.com/txt/release-8.5\">\n\t  <p>\n\t    ssh-agent(1): fixed a double-free memory corruption that was\n\t    introduced in OpenSSH 8.2 . We treat all such memory faults as\n\t    potentially exploitable. This bug could be reached by an attacker\n\t    with access to the agent socket.\n\t  </p>\n\t  <p>\n\t    On modern operating systems where the OS can provide information\n\t    about the user identity connected to a socket, OpenSSH ssh-agent\n\t    and sshd limit agent socket access only to the originating user\n\t    and root. Additional mitigation may be afforded by the system's\n\t    malloc(3)/free(3) implementation, if it detects double-free\n\t    conditions.\n\t  </p>\n\t  <p>\n\t    The most likely scenario for exploitation is a user forwarding an\n\t    agent either to an account shared with a malicious user or to a\n\t    host with an attacker holding root access.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssh.com/txt/release-8.5"
-    ],
-    "cvename": [
-      "CVE-2021-28041"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-03-03",
-    "entry": "2021-03-13",
-    "modified": "2021-04-20"
-  }
+	"vid": "76b5068c-8436-11eb-9469-080027f515ea",
+	"topic": "OpenSSH -- Double-free memory corruption in ssh-agent",
+	"affects": [
+		{
+			"name": [
+				"openssh-portable",
+				"openssh-portable-hpn",
+				"openssh-portable-gssapi"
+			],
+			"range": [
+				{
+					"lt": "8.4.p1_4,1",
+					"ge": "8.2.p1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenBSD Project reports:</p>\n\t<blockquote cite=\"https://www.openssh.com/txt/release-8.5\">\n\t  <p>\n\t    ssh-agent(1): fixed a double-free memory corruption that was\n\t    introduced in OpenSSH 8.2 . We treat all such memory faults as\n\t    potentially exploitable. This bug could be reached by an attacker\n\t    with access to the agent socket.\n\t  </p>\n\t  <p>\n\t    On modern operating systems where the OS can provide information\n\t    about the user identity connected to a socket, OpenSSH ssh-agent\n\t    and sshd limit agent socket access only to the originating user\n\t    and root. Additional mitigation may be afforded by the system's\n\t    malloc(3)/free(3) implementation, if it detects double-free\n\t    conditions.\n\t  </p>\n\t  <p>\n\t    The most likely scenario for exploitation is a user forwarding an\n\t    agent either to an account shared with a malicious user or to a\n\t    host with an attacker holding root access.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssh.com/txt/release-8.5"
+		],
+		"cvename": [
+			"CVE-2021-28041"
+		]
+	},
+	"dates": {
+		"discovery": "2021-03-03",
+		"entry": "2021-03-13",
+		"modified": "2021-04-20"
+	}
 }

@@ -1,52 +1,52 @@
 {
-  "vid": "f96044a2-7df9-414b-9f6b-6e5b85d06c86",
-  "topic": "Rails -- Active Job vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rubygem-activejob4"
-      ],
-      "range": [
-        {
-          "lt": "4.2.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-activejob5"
-      ],
-      "range": [
-        {
-          "lt": "5.1.6.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rubygem-activejob50"
-      ],
-      "range": [
-        {
-          "lt": "5.0.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ruby on Rails blog:</p>\n\t<blockquote cite=\"https://weblog.rubyonrails.org/2018/11/27/Rails-4-2-5-0-5-1-5-2-have-been-released/\">\n\t  <p>Rails 4.2.11, 5.0.7.1, 5.1.6.1 and 5.2.1.1 have been released! These\n\t    contain the following important security fixes, and it is recommended\n\t    that users upgrade as soon as possible</p>\n\t  <p>CVE-2018-16476 Broken Access Control vulnerability in Active Job:\n\t    Carefully crafted user input can cause Active Job to deserialize it\n\t    using GlobalId and allow an attacker to have access to information that\n\t    they should not have.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://weblog.rubyonrails.org/2018/11/27/Rails-4-2-5-0-5-1-5-2-have-been-released/"
-    ],
-    "cvename": [
-      "CVE-2018-16476"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-27",
-    "entry": "2018-12-02"
-  }
+	"vid": "f96044a2-7df9-414b-9f6b-6e5b85d06c86",
+	"topic": "Rails -- Active Job vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rubygem-activejob4"
+			],
+			"range": [
+				{
+					"lt": "4.2.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-activejob5"
+			],
+			"range": [
+				{
+					"lt": "5.1.6.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"rubygem-activejob50"
+			],
+			"range": [
+				{
+					"lt": "5.0.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ruby on Rails blog:</p>\n\t<blockquote cite=\"https://weblog.rubyonrails.org/2018/11/27/Rails-4-2-5-0-5-1-5-2-have-been-released/\">\n\t  <p>Rails 4.2.11, 5.0.7.1, 5.1.6.1 and 5.2.1.1 have been released! These\n\t    contain the following important security fixes, and it is recommended\n\t    that users upgrade as soon as possible</p>\n\t  <p>CVE-2018-16476 Broken Access Control vulnerability in Active Job:\n\t    Carefully crafted user input can cause Active Job to deserialize it\n\t    using GlobalId and allow an attacker to have access to information that\n\t    they should not have.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://weblog.rubyonrails.org/2018/11/27/Rails-4-2-5-0-5-1-5-2-have-been-released/"
+		],
+		"cvename": [
+			"CVE-2018-16476"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-27",
+		"entry": "2018-12-02"
+	}
 }

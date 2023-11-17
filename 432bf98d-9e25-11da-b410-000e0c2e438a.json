@@ -1,32 +1,32 @@
 {
-  "vid": "432bf98d-9e25-11da-b410-000e0c2e438a",
-  "topic": "kpdf -- heap based buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "kdegraphics"
-      ],
-      "range": [
-        {
-          "lt": "3.5.1_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The KDE team reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20060202-1.txt\">\n\t  <p>kpdf, the KDE pdf viewer, shares code with xpdf. xpdf\n\t    contains a heap based buffer overflow in the splash\n\t    rasterizer engine that can crash kpdf or even execute\n\t    arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kde.org/info/security/advisory-20060202-1.txt"
-    ],
-    "cvename": [
-      "CVE-2006-0301"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-02-02",
-    "entry": "2006-02-15"
-  }
+	"vid": "432bf98d-9e25-11da-b410-000e0c2e438a",
+	"topic": "kpdf -- heap based buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"kdegraphics"
+			],
+			"range": [
+				{
+					"lt": "3.5.1_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The KDE team reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20060202-1.txt\">\n\t  <p>kpdf, the KDE pdf viewer, shares code with xpdf. xpdf\n\t    contains a heap based buffer overflow in the splash\n\t    rasterizer engine that can crash kpdf or even execute\n\t    arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kde.org/info/security/advisory-20060202-1.txt"
+		],
+		"cvename": [
+			"CVE-2006-0301"
+		]
+	},
+	"dates": {
+		"discovery": "2006-02-02",
+		"entry": "2006-02-15"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "07718e2b-d29d-11e5-a95f-b499baebfeaf",
-  "topic": "nghttp2 -- Out of memory in nghttpd, nghttp, and libnghttp2_asio",
-  "affects": [
-    {
-      "name": [
-        "nghttp2"
-      ],
-      "range": [
-        {
-          "lt": "1.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Nghttp2 reports:</p>\n\t<blockquote cite=\"https://nghttp2.org/blog/2016/02/11/nghttp2-v1-7-1/\">\n\t  <p>Out of memory in nghttpd, nghttp, and libnghttp2_asio applications\n\t   due to unlimited incoming HTTP header fields.</p>\n\t  <p>nghttpd, nghttp, and libnghttp2_asio applications do not limit the memory usage\n\t   for the incoming HTTP header field. If peer sends specially crafted HTTP/2\n\t   HEADERS frames and CONTINUATION frames, they will crash with out of memory\n\t   error.</p>\n\t  <p>Note that libnghttp2 itself is not affected by this vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://nghttp2.org/blog/2016/02/11/nghttp2-v1-7-1/"
-    ],
-    "cvename": [
-      "CVE-2016-1544"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-03",
-    "entry": "2016-02-13"
-  }
+	"vid": "07718e2b-d29d-11e5-a95f-b499baebfeaf",
+	"topic": "nghttp2 -- Out of memory in nghttpd, nghttp, and libnghttp2_asio",
+	"affects": [
+		{
+			"name": [
+				"nghttp2"
+			],
+			"range": [
+				{
+					"lt": "1.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Nghttp2 reports:</p>\n\t<blockquote cite=\"https://nghttp2.org/blog/2016/02/11/nghttp2-v1-7-1/\">\n\t  <p>Out of memory in nghttpd, nghttp, and libnghttp2_asio applications\n\t   due to unlimited incoming HTTP header fields.</p>\n\t  <p>nghttpd, nghttp, and libnghttp2_asio applications do not limit the memory usage\n\t   for the incoming HTTP header field. If peer sends specially crafted HTTP/2\n\t   HEADERS frames and CONTINUATION frames, they will crash with out of memory\n\t   error.</p>\n\t  <p>Note that libnghttp2 itself is not affected by this vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://nghttp2.org/blog/2016/02/11/nghttp2-v1-7-1/"
+		],
+		"cvename": [
+			"CVE-2016-1544"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-03",
+		"entry": "2016-02-13"
+	}
 }

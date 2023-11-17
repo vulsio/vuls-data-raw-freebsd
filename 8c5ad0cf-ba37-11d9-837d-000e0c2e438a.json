@@ -1,35 +1,35 @@
 {
-  "vid": "8c5ad0cf-ba37-11d9-837d-000e0c2e438a",
-  "topic": "rsnapshot -- local privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "rsnapshot"
-      ],
-      "range": [
-        {
-          "lt": "1.1.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>An rsnapshot Advisory reports:</p>\n\t<blockquote cite=\"http://www.rsnapshot.org/security/2005/001.html\">\n\t  <p>The copy_symlink() subroutine in rsnapshot incorrectly\n\t    changes file ownership on the files pointed to by symlinks,\n\t    not on the symlinks themselves. This would allow, under\n\t    certain circumstances, an arbitrary user to take ownership\n\t    of a file on the main filesystem.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.rsnapshot.org/security/2005/001.html"
-    ],
-    "cvename": [
-      "CVE-2005-1064"
-    ],
-    "bid": [
-      "13095"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-04-10",
-    "entry": "2005-05-01"
-  }
+	"vid": "8c5ad0cf-ba37-11d9-837d-000e0c2e438a",
+	"topic": "rsnapshot -- local privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"rsnapshot"
+			],
+			"range": [
+				{
+					"lt": "1.1.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>An rsnapshot Advisory reports:</p>\n\t<blockquote cite=\"http://www.rsnapshot.org/security/2005/001.html\">\n\t  <p>The copy_symlink() subroutine in rsnapshot incorrectly\n\t    changes file ownership on the files pointed to by symlinks,\n\t    not on the symlinks themselves. This would allow, under\n\t    certain circumstances, an arbitrary user to take ownership\n\t    of a file on the main filesystem.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.rsnapshot.org/security/2005/001.html"
+		],
+		"cvename": [
+			"CVE-2005-1064"
+		],
+		"bid": [
+			"13095"
+		]
+	},
+	"dates": {
+		"discovery": "2005-04-10",
+		"entry": "2005-05-01"
+	}
 }

@@ -1,39 +1,39 @@
 {
-  "vid": "6ae7cef2-a6ae-11dc-95e6-000c29c5647f",
-  "topic": "jetty -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "jetty"
-      ],
-      "range": [
-        {
-          "lt": "6.1.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5613\">\n\t  <p>Cross-site scripting (XSS) vulnerability in Dump Servlet in\n\t    Mortbay Jetty before 6.1.6rc1 allows remote attackers to inject\n\t    arbitrary web script or HTML via unspecified parameters and\n\t    cookies.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5614\">\n\t  <p>Mortbay Jetty before 6.1.6rc1 does not properly handle \"certain\n\t    quote sequences\" in HTML cookie parameters, which allows remote\n\t    attackers to hijack browser sessions via unspecified vectors.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5615\">\n\t  <p>CRLF injection vulnerability in Mortbay Jetty before 6.1.6rc0\n\t    allows remote attackers to inject arbitrary HTTP headers and\n\t    conduct HTTP response splitting attacks via unspecified vectors.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://svn.codehaus.org/jetty/jetty/trunk/VERSION.txt"
-    ],
-    "cvename": [
-      "CVE-2007-5613",
-      "CVE-2007-5614",
-      "CVE-2007-5615"
-    ],
-    "cert_vu": [
-      "237888",
-      "212984",
-      "438616"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-12-05",
-    "entry": "2007-12-10"
-  }
+	"vid": "6ae7cef2-a6ae-11dc-95e6-000c29c5647f",
+	"topic": "jetty -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"jetty"
+			],
+			"range": [
+				{
+					"lt": "6.1.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5613\">\n\t  <p>Cross-site scripting (XSS) vulnerability in Dump Servlet in\n\t    Mortbay Jetty before 6.1.6rc1 allows remote attackers to inject\n\t    arbitrary web script or HTML via unspecified parameters and\n\t    cookies.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5614\">\n\t  <p>Mortbay Jetty before 6.1.6rc1 does not properly handle \"certain\n\t    quote sequences\" in HTML cookie parameters, which allows remote\n\t    attackers to hijack browser sessions via unspecified vectors.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5615\">\n\t  <p>CRLF injection vulnerability in Mortbay Jetty before 6.1.6rc0\n\t    allows remote attackers to inject arbitrary HTTP headers and\n\t    conduct HTTP response splitting attacks via unspecified vectors.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://svn.codehaus.org/jetty/jetty/trunk/VERSION.txt"
+		],
+		"cvename": [
+			"CVE-2007-5613",
+			"CVE-2007-5614",
+			"CVE-2007-5615"
+		],
+		"cert_vu": [
+			"237888",
+			"212984",
+			"438616"
+		]
+	},
+	"dates": {
+		"discovery": "2007-12-05",
+		"entry": "2007-12-10"
+	}
 }

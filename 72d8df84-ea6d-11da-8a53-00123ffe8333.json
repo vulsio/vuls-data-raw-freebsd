@@ -1,33 +1,33 @@
 {
-  "vid": "72d8df84-ea6d-11da-8a53-00123ffe8333",
-  "topic": "cscope -- buffer overflow vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "cscope"
-      ],
-      "range": [
-        {
-          "lt": "15.5_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jason Duell reports:</p>\n\t<blockquote cite=\"http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1064875&amp;group_id=4664&amp;atid=104664\">\n\t  <p>Cscope contains an alarming number of buffer overflow\n\t    vulnerabilities. By a rough count, there are at least 48 places\n\t    where we blindly sprintf() a file name into a fixed-length buffer\n\t    of size PATHLEN without checking to see if the file's name\n\t    is &lt;= PATHLEN. We do similar things with environment variable\n\t    values.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://sourceforge.net/tracker/index.php?func=detail&aid=1064875&group_id=4664&atid=104664",
-      "http://secunia.com/advisories/13237"
-    ],
-    "cvename": [
-      "CVE-2004-2541"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-11-11",
-    "entry": "2006-05-23"
-  }
+	"vid": "72d8df84-ea6d-11da-8a53-00123ffe8333",
+	"topic": "cscope -- buffer overflow vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"cscope"
+			],
+			"range": [
+				{
+					"lt": "15.5_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jason Duell reports:</p>\n\t<blockquote cite=\"http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1064875&amp;group_id=4664&amp;atid=104664\">\n\t  <p>Cscope contains an alarming number of buffer overflow\n\t    vulnerabilities. By a rough count, there are at least 48 places\n\t    where we blindly sprintf() a file name into a fixed-length buffer\n\t    of size PATHLEN without checking to see if the file's name\n\t    is &lt;= PATHLEN. We do similar things with environment variable\n\t    values.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://sourceforge.net/tracker/index.php?func=detail&aid=1064875&group_id=4664&atid=104664",
+			"http://secunia.com/advisories/13237"
+		],
+		"cvename": [
+			"CVE-2004-2541"
+		]
+	},
+	"dates": {
+		"discovery": "2004-11-11",
+		"entry": "2006-05-23"
+	}
 }

@@ -1,29 +1,29 @@
 {
-  "vid": "1ab7357f-a3c2-406a-89fb-fd00e49a71b5",
-  "topic": "zeek -- potential DoS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "zeek"
-      ],
-      "range": [
-        {
-          "lt": "5.0.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v5.0.9\">\n\t  <p> A specially-crafted series of FTP packets with a CMD\n\t  command with a large path followed by a very large number\n\t  of replies could cause Zeek to spend a long time processing\n\t  the data. </p>\n\t  <p> A specially-crafted with a truncated header can cause\n\t  Zeek to overflow memory and potentially crash. </p>\n\t  <p> A specially-crafted series of SMTP packets can cause\n\t  Zeek to generate a very large number of events and take\n\t  a long time to process them. </p>\n\t  <p> A specially-crafted series of POP3 packets containing\n\t  MIME data can cause Zeek to spend a long time dealing\n\t  with each individual file ID. </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/zeek/zeek/releases/tag/v5.0.9"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-05-19",
-    "entry": "2023-05-19"
-  }
+	"vid": "1ab7357f-a3c2-406a-89fb-fd00e49a71b5",
+	"topic": "zeek -- potential DoS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"zeek"
+			],
+			"range": [
+				{
+					"lt": "5.0.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v5.0.9\">\n\t  <p> A specially-crafted series of FTP packets with a CMD\n\t  command with a large path followed by a very large number\n\t  of replies could cause Zeek to spend a long time processing\n\t  the data. </p>\n\t  <p> A specially-crafted with a truncated header can cause\n\t  Zeek to overflow memory and potentially crash. </p>\n\t  <p> A specially-crafted series of SMTP packets can cause\n\t  Zeek to generate a very large number of events and take\n\t  a long time to process them. </p>\n\t  <p> A specially-crafted series of POP3 packets containing\n\t  MIME data can cause Zeek to spend a long time dealing\n\t  with each individual file ID. </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/zeek/zeek/releases/tag/v5.0.9"
+		]
+	},
+	"dates": {
+		"discovery": "2023-05-19",
+		"entry": "2023-05-19"
+	}
 }

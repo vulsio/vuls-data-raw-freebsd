@@ -1,43 +1,43 @@
 {
-  "vid": "f2d6a5e1-26b9-11d9-9289-000c41e2cdad",
-  "topic": "gaim -- MSN denial-of-service vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gaim",
-        "ja-gaim",
-        "ko-gaim",
-        "ru-gaim"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gaim"
-      ],
-      "range": [
-        {
-          "gt": "20030000"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Gaim team discovered denial-of-service vulnerabilities in\n\t  the MSN protocol handler:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=7\">\n\t  <p>After accepting a file transfer request, Gaim will attempt\n\t    to allocate a buffer of a size equal to the entire filesize,\n\t    this allocation attempt will cause Gaim to crash if the size\n\t    exceeds the amount of available memory.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=8\">\n\t  <p>Gaim allocates a buffer for the payload of each message\n\t    received based on the size field in the header of the\n\t    message. A malicious peer could specify an invalid size that\n\t    exceeds the amount of available memory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://gaim.sourceforge.net/security/?id=7",
-      "http://gaim.sourceforge.net/security/?id=8"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-19",
-    "entry": "2004-10-25"
-  }
+	"vid": "f2d6a5e1-26b9-11d9-9289-000c41e2cdad",
+	"topic": "gaim -- MSN denial-of-service vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gaim",
+				"ja-gaim",
+				"ko-gaim",
+				"ru-gaim"
+			],
+			"range": [
+				{
+					"lt": "1.0.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"gaim"
+			],
+			"range": [
+				{
+					"gt": "20030000"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Gaim team discovered denial-of-service vulnerabilities in\n\t  the MSN protocol handler:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=7\">\n\t  <p>After accepting a file transfer request, Gaim will attempt\n\t    to allocate a buffer of a size equal to the entire filesize,\n\t    this allocation attempt will cause Gaim to crash if the size\n\t    exceeds the amount of available memory.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=8\">\n\t  <p>Gaim allocates a buffer for the payload of each message\n\t    received based on the size field in the header of the\n\t    message. A malicious peer could specify an invalid size that\n\t    exceeds the amount of available memory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://gaim.sourceforge.net/security/?id=7",
+			"http://gaim.sourceforge.net/security/?id=8"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-19",
+		"entry": "2004-10-25"
+	}
 }

@@ -1,57 +1,57 @@
 {
-  "vid": "8657eedd-b423-11ec-9559-001b217b3468",
-  "topic": "Gitlab -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "14.9.2",
-          "ge": "14.9.0"
-        },
-        {
-          "lt": "14.8.5",
-          "ge": "14.8.0"
-        },
-        {
-          "lt": "14.7.7",
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/03/31/critical-security-release-gitlab-14-9-2-released/\">\n\t  <p>Static passwords inadvertently set during OmniAuth-based registration</p>\n\t  <p>Stored XSS in notes</p>\n\t  <p>Stored XSS on Multi-word milestone reference</p>\n\t  <p>Denial of service caused by a specially crafted RDoc file</p>\n\t  <p>GitLab Pages access tokens can be reused on multiple domains</p>\n\t  <p>GitLab Pages uses default (disabled) server Timeouts and a weak TCP Keep-Alive timeout</p>\n\t  <p>Incorrect include in pipeline definition exposes masked CI variables in UI</p>\n\t  <p>Regular expression denial of service in release asset link</p>\n\t  <p>Latest Commit details from private projects leaked to guest users via Merge Requests</p>\n\t  <p>CI/CD analytics are available even when public pipelines are disabled</p>\n\t  <p>Absence of limit for the number of tags that can be added to a runner can cause performance issues</p>\n\t  <p>Client DoS through rendering crafted comments</p>\n\t  <p>Blind SSRF Through Repository Mirroring</p>\n\t  <p>Bypass of branch restriction in Asana integration</p>\n\t  <p>Readable approval rules by Guest user</p>\n\t  <p>Redact InvalidURIError error messages</p>\n\t  <p>Project import maps members' created_by_id users based on source user ID</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2022/03/31/critical-security-release-gitlab-14-9-2-released/"
-    ],
-    "cvename": [
-      "CVE-2022-1162",
-      "CVE-2022-1175",
-      "CVE-2022-1190",
-      "CVE-2022-1185",
-      "CVE-2022-1148",
-      "CVE-2022-1121",
-      "CVE-2022-1120",
-      "CVE-2022-1100",
-      "CVE-2022-1193",
-      "CVE-2022-1105",
-      "CVE-2022-1099",
-      "CVE-2022-1174",
-      "CVE-2022-1188",
-      "CVE-2022-0740",
-      "CVE-2022-1189",
-      "CVE-2022-1157",
-      "CVE-2022-1111"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-03-31",
-    "entry": "2022-04-04"
-  }
+	"vid": "8657eedd-b423-11ec-9559-001b217b3468",
+	"topic": "Gitlab -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "14.9.2",
+					"ge": "14.9.0"
+				},
+				{
+					"lt": "14.8.5",
+					"ge": "14.8.0"
+				},
+				{
+					"lt": "14.7.7",
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/03/31/critical-security-release-gitlab-14-9-2-released/\">\n\t  <p>Static passwords inadvertently set during OmniAuth-based registration</p>\n\t  <p>Stored XSS in notes</p>\n\t  <p>Stored XSS on Multi-word milestone reference</p>\n\t  <p>Denial of service caused by a specially crafted RDoc file</p>\n\t  <p>GitLab Pages access tokens can be reused on multiple domains</p>\n\t  <p>GitLab Pages uses default (disabled) server Timeouts and a weak TCP Keep-Alive timeout</p>\n\t  <p>Incorrect include in pipeline definition exposes masked CI variables in UI</p>\n\t  <p>Regular expression denial of service in release asset link</p>\n\t  <p>Latest Commit details from private projects leaked to guest users via Merge Requests</p>\n\t  <p>CI/CD analytics are available even when public pipelines are disabled</p>\n\t  <p>Absence of limit for the number of tags that can be added to a runner can cause performance issues</p>\n\t  <p>Client DoS through rendering crafted comments</p>\n\t  <p>Blind SSRF Through Repository Mirroring</p>\n\t  <p>Bypass of branch restriction in Asana integration</p>\n\t  <p>Readable approval rules by Guest user</p>\n\t  <p>Redact InvalidURIError error messages</p>\n\t  <p>Project import maps members' created_by_id users based on source user ID</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2022/03/31/critical-security-release-gitlab-14-9-2-released/"
+		],
+		"cvename": [
+			"CVE-2022-1162",
+			"CVE-2022-1175",
+			"CVE-2022-1190",
+			"CVE-2022-1185",
+			"CVE-2022-1148",
+			"CVE-2022-1121",
+			"CVE-2022-1120",
+			"CVE-2022-1100",
+			"CVE-2022-1193",
+			"CVE-2022-1105",
+			"CVE-2022-1099",
+			"CVE-2022-1174",
+			"CVE-2022-1188",
+			"CVE-2022-0740",
+			"CVE-2022-1189",
+			"CVE-2022-1157",
+			"CVE-2022-1111"
+		]
+	},
+	"dates": {
+		"discovery": "2022-03-31",
+		"entry": "2022-04-04"
+	}
 }

@@ -1,37 +1,37 @@
 {
-  "vid": "fefcd340-624f-11ee-8e38-002590c1f29c",
-  "topic": "FreeBSD -- msdosfs data disclosure",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "13.2_4",
-          "ge": "13.2"
-        },
-        {
-          "lt": "12.4_6",
-          "ge": "12.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>In certain cases using the truncate or ftruncate system call\n\tto extend a file size populates the additional space in the file\n\twith unallocated data from the underlying disk device, rather than\n\tzero bytes.</p>\n\t<h1>Impact:</h1>\n\t<p>A user with write access to files on a msdosfs file system may\n\tbe able to read unintended data (for example, from a previously\n\tdeleted file).</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2023-5368"
-    ],
-    "freebsd_sa": [
-      "SA-23:12.msdosfs"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-10-03",
-    "entry": "2023-10-04"
-  }
+	"vid": "fefcd340-624f-11ee-8e38-002590c1f29c",
+	"topic": "FreeBSD -- msdosfs data disclosure",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "13.2_4",
+					"ge": "13.2"
+				},
+				{
+					"lt": "12.4_6",
+					"ge": "12.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>In certain cases using the truncate or ftruncate system call\n\tto extend a file size populates the additional space in the file\n\twith unallocated data from the underlying disk device, rather than\n\tzero bytes.</p>\n\t<h1>Impact:</h1>\n\t<p>A user with write access to files on a msdosfs file system may\n\tbe able to read unintended data (for example, from a previously\n\tdeleted file).</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2023-5368"
+		],
+		"freebsd_sa": [
+			"SA-23:12.msdosfs"
+		]
+	},
+	"dates": {
+		"discovery": "2023-10-03",
+		"entry": "2023-10-04"
+	}
 }

@@ -1,48 +1,48 @@
 {
-  "vid": "70140f20-6007-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Multiple vulnerabilities in file(1) and libmagic(3)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.0_6",
-          "ge": "10.0"
-        },
-        {
-          "lt": "9.2_9",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.1_16",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_13",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A specifically crafted Composite Document File (CDF)\n\tfile can trigger an out-of-bounds read or an invalid pointer\n\tdereference. [CVE-2012-1571]</p>\n\t<p>A flaw in regular expression in the awk script detector\n\tmakes use of multiple wildcards with unlimited repetitions.\n\t[CVE-2013-7345]</p>\n\t<p>A malicious input file could trigger infinite recursion\n\tin libmagic(3). [CVE-2014-1943]</p>\n\t<p>A specifically crafted Portable Executable (PE) can\n\ttrigger out-of-bounds read. [CVE-2014-2270]</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can cause file(1) or any other applications\n\tusing the libmagic(3) library to be run on a maliciously\n\tconstructed input can the application to crash or consume\n\texcessive CPU resources, resulting in a denial-of-service.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-1571",
-      "CVE-2013-7345",
-      "CVE-2014-1943",
-      "CVE-2014-2270"
-    ],
-    "freebsd_sa": [
-      "SA-14:16.file"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-06-24",
-    "entry": "2016-08-11"
-  }
+	"vid": "70140f20-6007-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Multiple vulnerabilities in file(1) and libmagic(3)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.0_6",
+					"ge": "10.0"
+				},
+				{
+					"lt": "9.2_9",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.1_16",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_13",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A specifically crafted Composite Document File (CDF)\n\tfile can trigger an out-of-bounds read or an invalid pointer\n\tdereference. [CVE-2012-1571]</p>\n\t<p>A flaw in regular expression in the awk script detector\n\tmakes use of multiple wildcards with unlimited repetitions.\n\t[CVE-2013-7345]</p>\n\t<p>A malicious input file could trigger infinite recursion\n\tin libmagic(3). [CVE-2014-1943]</p>\n\t<p>A specifically crafted Portable Executable (PE) can\n\ttrigger out-of-bounds read. [CVE-2014-2270]</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can cause file(1) or any other applications\n\tusing the libmagic(3) library to be run on a maliciously\n\tconstructed input can the application to crash or consume\n\texcessive CPU resources, resulting in a denial-of-service.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-1571",
+			"CVE-2013-7345",
+			"CVE-2014-1943",
+			"CVE-2014-2270"
+		],
+		"freebsd_sa": [
+			"SA-14:16.file"
+		]
+	},
+	"dates": {
+		"discovery": "2014-06-24",
+		"entry": "2016-08-11"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "a3b10c9b-99d9-11ed-aa55-d05099fed512",
-  "topic": "shells/fish -- arbitrary code execution via git",
-  "affects": [
-    {
-      "name": [
-        "fish"
-      ],
-      "range": [
-        {
-          "lt": "3.4.0",
-          "ge": "3.1.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Peter Ammon reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-20001\">\n\t<p>\n\t\tfish is a command line shell. fish version 3.1.0 through\n\t\tversion 3.3.1 is vulnerable to arbitrary code execution.\n\t\tgit repositories can contain per-repository\n\t\tconfiguration that change the behavior of git, including\n\t\trunning arbitrary commands. When using the default\n\t\tconfiguration of fish, changing to a directory\n\t\tautomatically runs git commands in order to display\n\t\tinformation about the current repository in the prompt.\n\t\tIf an attacker can convince a user to change their\n\t\tcurrent directory into one controlled by the attacker,\n\t\tsuch as on a shared file system or extracted archive,\n\t\tfish will run arbitrary commands under the attacker's\n\t\tcontrol. This problem has been fixed in fish 3.4.0. Note\n\t\tthat running git in these directories, including using\n\t\tthe git tab completion, remains a potential trigger for\n\t\tthis issue. As a workaround, remove the\n\t\tfish_git_prompt function from the prompt.\n\t    </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20001"
-    ],
-    "cvename": [
-      "CVE-2022-20001"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-12-26",
-    "entry": "2023-01-21"
-  }
+	"vid": "a3b10c9b-99d9-11ed-aa55-d05099fed512",
+	"topic": "shells/fish -- arbitrary code execution via git",
+	"affects": [
+		{
+			"name": [
+				"fish"
+			],
+			"range": [
+				{
+					"lt": "3.4.0",
+					"ge": "3.1.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Peter Ammon reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-20001\">\n\t<p>\n\t\tfish is a command line shell. fish version 3.1.0 through\n\t\tversion 3.3.1 is vulnerable to arbitrary code execution.\n\t\tgit repositories can contain per-repository\n\t\tconfiguration that change the behavior of git, including\n\t\trunning arbitrary commands. When using the default\n\t\tconfiguration of fish, changing to a directory\n\t\tautomatically runs git commands in order to display\n\t\tinformation about the current repository in the prompt.\n\t\tIf an attacker can convince a user to change their\n\t\tcurrent directory into one controlled by the attacker,\n\t\tsuch as on a shared file system or extracted archive,\n\t\tfish will run arbitrary commands under the attacker's\n\t\tcontrol. This problem has been fixed in fish 3.4.0. Note\n\t\tthat running git in these directories, including using\n\t\tthe git tab completion, remains a potential trigger for\n\t\tthis issue. As a workaround, remove the\n\t\tfish_git_prompt function from the prompt.\n\t    </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20001"
+		],
+		"cvename": [
+			"CVE-2022-20001"
+		]
+	},
+	"dates": {
+		"discovery": "2021-12-26",
+		"entry": "2023-01-21"
+	}
 }

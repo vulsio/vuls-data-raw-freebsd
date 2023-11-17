@@ -1,58 +1,58 @@
 {
-  "vid": "e387834a-17ef-11e6-9947-7054d2909b71",
-  "topic": "jenkins -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "jenkins"
-      ],
-      "range": [
-        {
-          "le": "2.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "jenkins2"
-      ],
-      "range": [
-        {
-          "le": "2.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "jenkins-lts"
-      ],
-      "range": [
-        {
-          "le": "1.651.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-05-11\">\n\t  <h1>Description</h1>\n\t  <h5>SECURITY-170 / CVE-2016-3721</h5>\n\t  <p>Arbitrary build parameters are passed to build scripts as environment variables</p>\n\t  <h5>SECURITY-243 / CVE-2016-3722</h5>\n\t  <p>Malicious users with multiple user accounts can prevent other users from logging in</p>\n\t  <h5>SECURITY-250 / CVE-2016-3723</h5>\n\t  <p>Information on installed plugins exposed via API</p>\n\t  <h5>SECURITY-266 / CVE-2016-3724</h5>\n\t  <p>Encrypted secrets (e.g. passwords) were leaked to users with permission to read configuration</p>\n\t  <h5>SECURITY-273 / CVE-2016-3725</h5>\n\t  <p>Regular users can trigger download of update site metadata</p>\n\t  <h5>SECURITY-276 / CVE-2016-3726</h5>\n\t  <p>Open redirect to scheme-relative URLs</p>\n\t  <h5>SECURITY-281 / CVE-2016-3727</h5>\n\t  <p>Granting the permission to read node configurations allows access to overall system configuration</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-05-11"
-    ],
-    "cvename": [
-      "CVE-2016-3721",
-      "CVE-2016-3722",
-      "CVE-2016-3723",
-      "CVE-2016-3724",
-      "CVE-2016-3725",
-      "CVE-2016-3726",
-      "CVE-2016-3727"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-11",
-    "entry": "2016-05-12"
-  }
+	"vid": "e387834a-17ef-11e6-9947-7054d2909b71",
+	"topic": "jenkins -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"jenkins"
+			],
+			"range": [
+				{
+					"le": "2.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"jenkins2"
+			],
+			"range": [
+				{
+					"le": "2.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"jenkins-lts"
+			],
+			"range": [
+				{
+					"le": "1.651.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-05-11\">\n\t  <h1>Description</h1>\n\t  <h5>SECURITY-170 / CVE-2016-3721</h5>\n\t  <p>Arbitrary build parameters are passed to build scripts as environment variables</p>\n\t  <h5>SECURITY-243 / CVE-2016-3722</h5>\n\t  <p>Malicious users with multiple user accounts can prevent other users from logging in</p>\n\t  <h5>SECURITY-250 / CVE-2016-3723</h5>\n\t  <p>Information on installed plugins exposed via API</p>\n\t  <h5>SECURITY-266 / CVE-2016-3724</h5>\n\t  <p>Encrypted secrets (e.g. passwords) were leaked to users with permission to read configuration</p>\n\t  <h5>SECURITY-273 / CVE-2016-3725</h5>\n\t  <p>Regular users can trigger download of update site metadata</p>\n\t  <h5>SECURITY-276 / CVE-2016-3726</h5>\n\t  <p>Open redirect to scheme-relative URLs</p>\n\t  <h5>SECURITY-281 / CVE-2016-3727</h5>\n\t  <p>Granting the permission to read node configurations allows access to overall system configuration</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-05-11"
+		],
+		"cvename": [
+			"CVE-2016-3721",
+			"CVE-2016-3722",
+			"CVE-2016-3723",
+			"CVE-2016-3724",
+			"CVE-2016-3725",
+			"CVE-2016-3726",
+			"CVE-2016-3727"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-11",
+		"entry": "2016-05-12"
+	}
 }

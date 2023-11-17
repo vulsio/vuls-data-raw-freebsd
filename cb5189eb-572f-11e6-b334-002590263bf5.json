@@ -1,36 +1,36 @@
 {
-  "vid": "cb5189eb-572f-11e6-b334-002590263bf5",
-  "topic": "libidn -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libidn"
-      ],
-      "range": [
-        {
-          "lt": "1.33"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon Josefsson reports:</p>\n\t<blockquote cite=\"https://lists.gnu.org/archive/html/help-libidn/2016-07/msg00009.html\">\n\t  <p>libidn: Fix out-of-bounds stack read in idna_to_ascii_4i.</p>\n\t  <p>idn: Solve out-of-bounds-read when reading one zero byte as input.\n\t    Also replaced fgets with getline.</p>\n\t  <p>libidn: stringprep_utf8_nfkc_normalize reject invalid UTF-8. It was\n\t    always documented to only accept UTF-8 data, but now it doesn't\n\t    crash when presented with such data.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.gnu.org/archive/html/help-libidn/2016-07/msg00009.html",
-      "http://www.openwall.com/lists/oss-security/2016/07/21/4"
-    ],
-    "cvename": [
-      "CVE-2016-6261",
-      "CVE-2015-8948",
-      "CVE-2016-6262",
-      "CVE-2016-6263"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-07-20",
-    "entry": "2016-07-31"
-  }
+	"vid": "cb5189eb-572f-11e6-b334-002590263bf5",
+	"topic": "libidn -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libidn"
+			],
+			"range": [
+				{
+					"lt": "1.33"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon Josefsson reports:</p>\n\t<blockquote cite=\"https://lists.gnu.org/archive/html/help-libidn/2016-07/msg00009.html\">\n\t  <p>libidn: Fix out-of-bounds stack read in idna_to_ascii_4i.</p>\n\t  <p>idn: Solve out-of-bounds-read when reading one zero byte as input.\n\t    Also replaced fgets with getline.</p>\n\t  <p>libidn: stringprep_utf8_nfkc_normalize reject invalid UTF-8. It was\n\t    always documented to only accept UTF-8 data, but now it doesn't\n\t    crash when presented with such data.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.gnu.org/archive/html/help-libidn/2016-07/msg00009.html",
+			"http://www.openwall.com/lists/oss-security/2016/07/21/4"
+		],
+		"cvename": [
+			"CVE-2016-6261",
+			"CVE-2015-8948",
+			"CVE-2016-6262",
+			"CVE-2016-6263"
+		]
+	},
+	"dates": {
+		"discovery": "2016-07-20",
+		"entry": "2016-07-31"
+	}
 }

@@ -1,81 +1,81 @@
 {
-  "vid": "04cc7bd2-3686-11e7-aa64-080027ef73ec",
-  "topic": "OpenVPN -- two remote denial-of-service vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openvpn"
-      ],
-      "range": [
-        {
-          "lt": "2.3.15"
-        },
-        {
-          "lt": "2.4.2",
-          "ge": "2.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openvpn23"
-      ],
-      "range": [
-        {
-          "lt": "2.3.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openvpn-mbedtls"
-      ],
-      "range": [
-        {
-          "lt": "2.4.2",
-          "ge": "2.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openvpn-polarssl"
-      ],
-      "range": [
-        {
-          "lt": "2.3.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openvpn23-polarssl"
-      ],
-      "range": [
-        {
-          "lt": "2.3.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Samuli Seppänen reports:</p>\n\t<blockquote cite=\"https://openvpn.net/index.php/open-source/downloads.html\">\n\t  <p>OpenVPN v2.4.0 was audited for security vulnerabilities independently by\n\t    Quarkslabs (funded by OSTIF) and Cryptography Engineering (funded by\n\t    Private Internet Access) between December 2016 and April 2017. The\n\t    primary findings were two remote denial-of-service vulnerabilities.\n\t    Fixes to them have been backported to v2.3.15.</p>\n\t  <p>An authenticated client can do the 'three way handshake'\n\t    (P_HARD_RESET, P_HARD_RESET, P_CONTROL), where the P_CONTROL packet\n\t    is the first that is allowed to carry payload. If that payload is\n\t    too big, the OpenVPN server process will stop running due to an\n\t    ASSERT() exception. That is also the reason why servers using\n\t    tls-auth/tls-crypt are protected against this attack - the P_CONTROL\n\t    packet is only accepted if it contains the session ID we specified,\n\t    with a valid HMAC (challenge-response). (CVE-2017-7478)</p>\n\t  <p>An authenticated client can cause the server's the packet-id\n\t    counter to roll over, which would lead the server process to hit an\n\t    ASSERT() and stop running. To make the server hit the ASSERT(), the\n\t    client must first cause the server to send it 2^32 packets (at least\n\t    196 GB).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://openvpn.net/index.php/open-source/downloads.html",
-      "https://community.openvpn.net/openvpn/wiki/QuarkslabAndCryptographyEngineerAudits",
-      "https://ostif.org/?p=870&preview=true",
-      "https://www.privateinternetaccess.com/blog/2017/05/openvpn-2-4-2-fixes-critical-issues-discovered-openvpn-audit-reports/"
-    ],
-    "cvename": [
-      "CVE-2017-7478",
-      "CVE-2017-7479"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-05-10",
-    "entry": "2017-05-11"
-  }
+	"vid": "04cc7bd2-3686-11e7-aa64-080027ef73ec",
+	"topic": "OpenVPN -- two remote denial-of-service vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openvpn"
+			],
+			"range": [
+				{
+					"lt": "2.3.15"
+				},
+				{
+					"lt": "2.4.2",
+					"ge": "2.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"openvpn23"
+			],
+			"range": [
+				{
+					"lt": "2.3.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"openvpn-mbedtls"
+			],
+			"range": [
+				{
+					"lt": "2.4.2",
+					"ge": "2.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"openvpn-polarssl"
+			],
+			"range": [
+				{
+					"lt": "2.3.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"openvpn23-polarssl"
+			],
+			"range": [
+				{
+					"lt": "2.3.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Samuli Seppänen reports:</p>\n\t<blockquote cite=\"https://openvpn.net/index.php/open-source/downloads.html\">\n\t  <p>OpenVPN v2.4.0 was audited for security vulnerabilities independently by\n\t    Quarkslabs (funded by OSTIF) and Cryptography Engineering (funded by\n\t    Private Internet Access) between December 2016 and April 2017. The\n\t    primary findings were two remote denial-of-service vulnerabilities.\n\t    Fixes to them have been backported to v2.3.15.</p>\n\t  <p>An authenticated client can do the 'three way handshake'\n\t    (P_HARD_RESET, P_HARD_RESET, P_CONTROL), where the P_CONTROL packet\n\t    is the first that is allowed to carry payload. If that payload is\n\t    too big, the OpenVPN server process will stop running due to an\n\t    ASSERT() exception. That is also the reason why servers using\n\t    tls-auth/tls-crypt are protected against this attack - the P_CONTROL\n\t    packet is only accepted if it contains the session ID we specified,\n\t    with a valid HMAC (challenge-response). (CVE-2017-7478)</p>\n\t  <p>An authenticated client can cause the server's the packet-id\n\t    counter to roll over, which would lead the server process to hit an\n\t    ASSERT() and stop running. To make the server hit the ASSERT(), the\n\t    client must first cause the server to send it 2^32 packets (at least\n\t    196 GB).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://openvpn.net/index.php/open-source/downloads.html",
+			"https://community.openvpn.net/openvpn/wiki/QuarkslabAndCryptographyEngineerAudits",
+			"https://ostif.org/?p=870&preview=true",
+			"https://www.privateinternetaccess.com/blog/2017/05/openvpn-2-4-2-fixes-critical-issues-discovered-openvpn-audit-reports/"
+		],
+		"cvename": [
+			"CVE-2017-7478",
+			"CVE-2017-7479"
+		]
+	},
+	"dates": {
+		"discovery": "2017-05-10",
+		"entry": "2017-05-11"
+	}
 }

@@ -1,34 +1,34 @@
 {
-  "vid": "7ca2a709-103b-11dc-8e82-00001cd613f9",
-  "topic": "findutils -- GNU locate heap buffer overrun",
-  "affects": [
-    {
-      "name": [
-        "findutils"
-      ],
-      "range": [
-        {
-          "lt": "4.2.31"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>James Youngman reports:</p>\n\t<blockquote cite=\"http://lists.gnu.org/archive/html/bug-findutils/2007-06/msg00000.html\">\n\t  <p>When GNU locate reads filenames from an old-format locate database,\n\t    they are read into a fixed-length buffer allocated on the heap.\n\t    Filenames longer than the 1026-byte buffer can cause a buffer\n\t    overrun.  The overrunning data can be chosen by any person able to\n\t    control the names of filenames created on the local system.  This\n\t    will normally include all local users, but in many cases also remote\n\t    users (for example in the case of FTP servers allowing uploads).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2007-2452"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.gnu.org/archive/html/bug-findutils/2007-06/msg00000.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2007-05-30",
-    "entry": "2007-06-01"
-  }
+	"vid": "7ca2a709-103b-11dc-8e82-00001cd613f9",
+	"topic": "findutils -- GNU locate heap buffer overrun",
+	"affects": [
+		{
+			"name": [
+				"findutils"
+			],
+			"range": [
+				{
+					"lt": "4.2.31"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>James Youngman reports:</p>\n\t<blockquote cite=\"http://lists.gnu.org/archive/html/bug-findutils/2007-06/msg00000.html\">\n\t  <p>When GNU locate reads filenames from an old-format locate database,\n\t    they are read into a fixed-length buffer allocated on the heap.\n\t    Filenames longer than the 1026-byte buffer can cause a buffer\n\t    overrun.  The overrunning data can be chosen by any person able to\n\t    control the names of filenames created on the local system.  This\n\t    will normally include all local users, but in many cases also remote\n\t    users (for example in the case of FTP servers allowing uploads).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2007-2452"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.gnu.org/archive/html/bug-findutils/2007-06/msg00000.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2007-05-30",
+		"entry": "2007-06-01"
+	}
 }

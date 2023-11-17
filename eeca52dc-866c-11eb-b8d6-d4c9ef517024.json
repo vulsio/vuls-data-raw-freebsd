@@ -1,30 +1,30 @@
 {
-  "vid": "eeca52dc-866c-11eb-b8d6-d4c9ef517024",
-  "topic": "LibreSSL -- use-after-free",
-  "affects": [
-    {
-      "name": [
-        "libressl"
-      ],
-      "range": [
-        {
-          "lt": "3.2.4_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenBSD reports:</p>\n\t<blockquote cite=\"https://marc.info/?l=openbsd-announce&amp;m=161582456312832&amp;w=2\">\n\t  <p>A TLS client using session resumption may cause a use-after-free.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://marc.info/?l=openbsd-announce&m=161582456312832&w=2",
-      "https://ftp.openbsd.org/pub/OpenBSD/patches/6.8/common/017_libssl.patch.sig"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-03-15",
-    "entry": "2021-03-16"
-  }
+	"vid": "eeca52dc-866c-11eb-b8d6-d4c9ef517024",
+	"topic": "LibreSSL -- use-after-free",
+	"affects": [
+		{
+			"name": [
+				"libressl"
+			],
+			"range": [
+				{
+					"lt": "3.2.4_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenBSD reports:</p>\n\t<blockquote cite=\"https://marc.info/?l=openbsd-announce&amp;m=161582456312832&amp;w=2\">\n\t  <p>A TLS client using session resumption may cause a use-after-free.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://marc.info/?l=openbsd-announce&m=161582456312832&w=2",
+			"https://ftp.openbsd.org/pub/OpenBSD/patches/6.8/common/017_libssl.patch.sig"
+		]
+	},
+	"dates": {
+		"discovery": "2021-03-15",
+		"entry": "2021-03-16"
+	}
 }

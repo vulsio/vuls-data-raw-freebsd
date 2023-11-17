@@ -1,33 +1,33 @@
 {
-  "vid": "06f931c0-0be0-11e7-b4bf-5404a68ad561",
-  "topic": "irssi -- use-after-free potential code execution",
-  "affects": [
-    {
-      "name": [
-        "irssi"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2,1",
-          "gt": "0.8.21,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The irssi project reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_03.txt\">\n\t  <p>Use after free while producing list of netjoins (CWE-416).\n       This issue was found and reported to us by APic.\n       This issue usually leads to segmentation faults.\n       Targeted code execution should be difficult.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://irssi.org/security/irssi_sa_2017_03.txt"
-    ],
-    "cvename": [
-      "CVE-2017-7191"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-03-11",
-    "entry": "2017-03-18"
-  }
+	"vid": "06f931c0-0be0-11e7-b4bf-5404a68ad561",
+	"topic": "irssi -- use-after-free potential code execution",
+	"affects": [
+		{
+			"name": [
+				"irssi"
+			],
+			"range": [
+				{
+					"lt": "1.0.2,1",
+					"gt": "0.8.21,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The irssi project reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_03.txt\">\n\t  <p>Use after free while producing list of netjoins (CWE-416).\n       This issue was found and reported to us by APic.\n       This issue usually leads to segmentation faults.\n       Targeted code execution should be difficult.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://irssi.org/security/irssi_sa_2017_03.txt"
+		],
+		"cvename": [
+			"CVE-2017-7191"
+		]
+	},
+	"dates": {
+		"discovery": "2017-03-11",
+		"entry": "2017-03-18"
+	}
 }

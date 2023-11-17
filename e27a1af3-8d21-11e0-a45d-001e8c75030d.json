@@ -1,41 +1,41 @@
 {
-  "vid": "e27a1af3-8d21-11e0-a45d-001e8c75030d",
-  "topic": "Subversion -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.6.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion-freebsd"
-      ],
-      "range": [
-        {
-          "lt": "1.6.17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion team reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2011-1752-advisory.txt\">\n\t  <p>Subversion's mod_dav_svn Apache HTTPD server module will\n\t    dereference a NULL pointer if asked to deliver baselined WebDAV\n\t    resources.</p>\n\t  <p>This can lead to a DoS.  An exploit has been tested, and tools\n\t    or users have been observed triggering this problem in the\n\t    wild.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2011-1783-advisory.txt\">\n\t  <p>Subversion's mod_dav_svn Apache HTTPD server module may in\n\t    certain scenarios enter a logic loop which does not exit and\n\t    which allocates memory in each iteration, ultimately exhausting\n\t    all the available memory on the server.</p>\n\t  <p>This can lead to a DoS.  There are no known instances of this\n\t    problem being observed in the wild, but an exploit has been\n\t    tested.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2011-1921-advisory.txt\">\n\t  <p>Subversion's mod_dav_svn Apache HTTPD server module may leak to\n\t    remote users the file contents of files configured to be\n\t    unreadable by those users.</p>\n\t  <p>There are no known instances of this problem being observed in\n\t    the wild, but an exploit has been tested.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2011-1752",
-      "CVE-2011-1783",
-      "CVE-2011-1921"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-05-28",
-    "entry": "2011-06-02"
-  }
+	"vid": "e27a1af3-8d21-11e0-a45d-001e8c75030d",
+	"topic": "Subversion -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"subversion"
+			],
+			"range": [
+				{
+					"lt": "1.6.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion-freebsd"
+			],
+			"range": [
+				{
+					"lt": "1.6.17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion team reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2011-1752-advisory.txt\">\n\t  <p>Subversion's mod_dav_svn Apache HTTPD server module will\n\t    dereference a NULL pointer if asked to deliver baselined WebDAV\n\t    resources.</p>\n\t  <p>This can lead to a DoS.  An exploit has been tested, and tools\n\t    or users have been observed triggering this problem in the\n\t    wild.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2011-1783-advisory.txt\">\n\t  <p>Subversion's mod_dav_svn Apache HTTPD server module may in\n\t    certain scenarios enter a logic loop which does not exit and\n\t    which allocates memory in each iteration, ultimately exhausting\n\t    all the available memory on the server.</p>\n\t  <p>This can lead to a DoS.  There are no known instances of this\n\t    problem being observed in the wild, but an exploit has been\n\t    tested.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2011-1921-advisory.txt\">\n\t  <p>Subversion's mod_dav_svn Apache HTTPD server module may leak to\n\t    remote users the file contents of files configured to be\n\t    unreadable by those users.</p>\n\t  <p>There are no known instances of this problem being observed in\n\t    the wild, but an exploit has been tested.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2011-1752",
+			"CVE-2011-1783",
+			"CVE-2011-1921"
+		]
+	},
+	"dates": {
+		"discovery": "2011-05-28",
+		"entry": "2011-06-02"
+	}
 }

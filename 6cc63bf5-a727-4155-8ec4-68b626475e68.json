@@ -1,64 +1,64 @@
 {
-  "vid": "6cc63bf5-a727-4155-8ec4-68b626475e68",
-  "topic": "xorg-server -- Security issue in the X server",
-  "affects": [
-    {
-      "name": [
-        "xorg-server",
-        "xephyr",
-        "xorg-vfbserver"
-      ],
-      "range": [
-        {
-          "lt": "21.1.7,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xorg-nestserver"
-      ],
-      "range": [
-        {
-          "lt": "21.1.7,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xwayland"
-      ],
-      "range": [
-        {
-          "lt": "22.1.8,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xwayland-devel"
-      ],
-      "range": [
-        {
-          "lt": "21.0.99.1.386"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2023-February/003320.html\">\n\t  <ul>\n\t    <li>CVE-2023-0494/ZDI-CAN-19596: X.Org Server DeepCopyPointerClasses\n\t    use-after-free\n\n\t    <p>A dangling pointer in DeepCopyPointerClasses can be exploited by\n\t    ProcXkbSetDeviceInfo() and ProcXkbGetDeviceInfo() to read/write into\n\t    freed memory.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.x.org/archives/xorg-announce/2023-February/003320.html"
-    ],
-    "cvename": [
-      "CVE-2023-0494"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-02-07",
-    "entry": "2023-02-08"
-  }
+	"vid": "6cc63bf5-a727-4155-8ec4-68b626475e68",
+	"topic": "xorg-server -- Security issue in the X server",
+	"affects": [
+		{
+			"name": [
+				"xorg-server",
+				"xephyr",
+				"xorg-vfbserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.7,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-nestserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.7,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland"
+			],
+			"range": [
+				{
+					"lt": "22.1.8,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland-devel"
+			],
+			"range": [
+				{
+					"lt": "21.0.99.1.386"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2023-February/003320.html\">\n\t  <ul>\n\t    <li>CVE-2023-0494/ZDI-CAN-19596: X.Org Server DeepCopyPointerClasses\n\t    use-after-free\n\n\t    <p>A dangling pointer in DeepCopyPointerClasses can be exploited by\n\t    ProcXkbSetDeviceInfo() and ProcXkbGetDeviceInfo() to read/write into\n\t    freed memory.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.x.org/archives/xorg-announce/2023-February/003320.html"
+		],
+		"cvename": [
+			"CVE-2023-0494"
+		]
+	},
+	"dates": {
+		"discovery": "2023-02-07",
+		"entry": "2023-02-08"
+	}
 }

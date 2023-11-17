@@ -1,35 +1,35 @@
 {
-  "vid": "556d2286-5a51-11e6-a6c3-14dae9d210b8",
-  "topic": "gd -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gd"
-      ],
-      "range": [
-        {
-          "lt": "2.2.3,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Pierre Joye reports:</p>\n\t<blockquote cite=\"https://github.com/libgd/libgd/releases/tag/gd-2.2.3\">\n\t  <ul>\n\t  <li><p>fix php bug 72339, Integer Overflow in _gd2GetHeader\n\t    (CVE-2016-5766)</p></li>\n\t  <li><p>gd: Buffer over-read issue when parsing crafted TGA\n\t    file (CVE-2016-6132)</p></li>\n\t  <li><p>Integer overflow error within _gdContributionsAlloc()\n\t    (CVE-2016-6207)</p></li>\n\t  <li><p>fix php bug 72494, invalid color index not handled, can\n\t    lead to crash ( CVE-2016-6128)</p></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/libgd/libgd/releases/tag/gd-2.2.3"
-    ],
-    "cvename": [
-      "CVE-2016-5766",
-      "CVE-2016-6132",
-      "CVE-2016-6207",
-      "CVE-2016-6128"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-07-21",
-    "entry": "2016-08-04"
-  }
+	"vid": "556d2286-5a51-11e6-a6c3-14dae9d210b8",
+	"topic": "gd -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gd"
+			],
+			"range": [
+				{
+					"lt": "2.2.3,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Pierre Joye reports:</p>\n\t<blockquote cite=\"https://github.com/libgd/libgd/releases/tag/gd-2.2.3\">\n\t  <ul>\n\t  <li><p>fix php bug 72339, Integer Overflow in _gd2GetHeader\n\t    (CVE-2016-5766)</p></li>\n\t  <li><p>gd: Buffer over-read issue when parsing crafted TGA\n\t    file (CVE-2016-6132)</p></li>\n\t  <li><p>Integer overflow error within _gdContributionsAlloc()\n\t    (CVE-2016-6207)</p></li>\n\t  <li><p>fix php bug 72494, invalid color index not handled, can\n\t    lead to crash ( CVE-2016-6128)</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/libgd/libgd/releases/tag/gd-2.2.3"
+		],
+		"cvename": [
+			"CVE-2016-5766",
+			"CVE-2016-6132",
+			"CVE-2016-6207",
+			"CVE-2016-6128"
+		]
+	},
+	"dates": {
+		"discovery": "2016-07-21",
+		"entry": "2016-08-04"
+	}
 }

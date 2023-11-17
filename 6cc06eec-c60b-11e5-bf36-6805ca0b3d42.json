@@ -1,33 +1,33 @@
 {
-  "vid": "6cc06eec-c60b-11e5-bf36-6805ca0b3d42",
-  "topic": "phpmyadmin -- Multiple XSS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "phpmyadmin"
-      ],
-      "range": [
-        {
-          "lt": "4.5.4",
-          "ge": "4.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-3/\">\n\t  <ul>\n\t    <li>With a crafted table name it is possible to trigger\n\t      an XSS attack in the database search page.</li>\n\t    <li>With a crafted SET value or a crafted search query, it\n\t      is possible to trigger an XSS attacks in the zoom search\n\t      page.</li>\n\t    <li>With a crafted hostname header, it is possible to\n\t      trigger an XSS attacks in the home page.</li>\n\t  </ul>\n\t  <p>We consider these vulnerabilities to be non-critical.</p>\n\t  <p>These vulnerabilities can be triggered only by someone\n\t    who is logged in to phpMyAdmin, as the usual token\n\t    protection prevents non-logged-in users from accessing the\n\t    required pages.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2016-3/"
-    ],
-    "cvename": [
-      "CVE-2016-2040"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-28",
-    "entry": "2016-01-28"
-  }
+	"vid": "6cc06eec-c60b-11e5-bf36-6805ca0b3d42",
+	"topic": "phpmyadmin -- Multiple XSS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpmyadmin"
+			],
+			"range": [
+				{
+					"lt": "4.5.4",
+					"ge": "4.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-3/\">\n\t  <ul>\n\t    <li>With a crafted table name it is possible to trigger\n\t      an XSS attack in the database search page.</li>\n\t    <li>With a crafted SET value or a crafted search query, it\n\t      is possible to trigger an XSS attacks in the zoom search\n\t      page.</li>\n\t    <li>With a crafted hostname header, it is possible to\n\t      trigger an XSS attacks in the home page.</li>\n\t  </ul>\n\t  <p>We consider these vulnerabilities to be non-critical.</p>\n\t  <p>These vulnerabilities can be triggered only by someone\n\t    who is logged in to phpMyAdmin, as the usual token\n\t    protection prevents non-logged-in users from accessing the\n\t    required pages.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2016-3/"
+		],
+		"cvename": [
+			"CVE-2016-2040"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-28",
+		"entry": "2016-01-28"
+	}
 }

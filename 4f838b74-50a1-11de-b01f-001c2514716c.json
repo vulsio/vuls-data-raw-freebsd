@@ -1,43 +1,43 @@
 {
-  "vid": "4f838b74-50a1-11de-b01f-001c2514716c",
-  "topic": "dokuwiki -- Local File Inclusion with register_globals on",
-  "affects": [
-    {
-      "name": [
-        "dokuwiki"
-      ],
-      "range": [
-        {
-          "lt": "20090214_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "dokuwiki-devel"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>DokuWiki reports:</p>\n\t<blockquote cite=\"http://bugs.splitbrain.org/index.php?do=details&amp;task_id=1700\">\n\t  <p>A security hole was discovered which allows an attacker\n\t    to include arbitrary files located on the attacked DokuWiki\n\t    installation. The included file is executed in the PHP context.\n\t    This can be escalated by introducing malicious code through\n\t    uploading file via the media manager or placing PHP code in\n\t    editable pages.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.splitbrain.org/index.php?do=details&task_id=1700"
-    ],
-    "cvename": [
-      "CVE-2009-1960"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-05-26",
-    "entry": "2009-06-04",
-    "modified": "2010-05-02"
-  }
+	"vid": "4f838b74-50a1-11de-b01f-001c2514716c",
+	"topic": "dokuwiki -- Local File Inclusion with register_globals on",
+	"affects": [
+		{
+			"name": [
+				"dokuwiki"
+			],
+			"range": [
+				{
+					"lt": "20090214_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"dokuwiki-devel"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>DokuWiki reports:</p>\n\t<blockquote cite=\"http://bugs.splitbrain.org/index.php?do=details&amp;task_id=1700\">\n\t  <p>A security hole was discovered which allows an attacker\n\t    to include arbitrary files located on the attacked DokuWiki\n\t    installation. The included file is executed in the PHP context.\n\t    This can be escalated by introducing malicious code through\n\t    uploading file via the media manager or placing PHP code in\n\t    editable pages.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.splitbrain.org/index.php?do=details&task_id=1700"
+		],
+		"cvename": [
+			"CVE-2009-1960"
+		]
+	},
+	"dates": {
+		"discovery": "2009-05-26",
+		"entry": "2009-06-04",
+		"modified": "2010-05-02"
+	}
 }

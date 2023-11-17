@@ -1,51 +1,51 @@
 {
-  "vid": "6a2cfcdc-9dea-11e6-a298-14dae9d210b8",
-  "topic": "FreeBSD -- OpenSSH Remote Denial of Service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openssh-portable"
-      ],
-      "range": [
-        {
-          "lt": "7.3p1_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.0_3",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.3_12",
-          "ge": "10.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When processing the SSH_MSG_KEXINIT message, the server\n\tcould allocate up to a few hundreds of megabytes of memory\n\tper each connection, before any authentication take place.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker may be able to cause a SSH server to\n\tallocate an excessive amount of memory. Note that the default\n\tMaxStartups setting on FreeBSD will limit the effectiveness\n\tof this attack.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2016/q4/191"
-    ],
-    "cvename": [
-      "CVE-2016-8858"
-    ],
-    "freebsd_sa": [
-      "SA-16:33.openssh"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-10-19",
-    "entry": "2016-10-29",
-    "modified": "2016-11-02"
-  }
+	"vid": "6a2cfcdc-9dea-11e6-a298-14dae9d210b8",
+	"topic": "FreeBSD -- OpenSSH Remote Denial of Service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openssh-portable"
+			],
+			"range": [
+				{
+					"lt": "7.3p1_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.0_3",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.3_12",
+					"ge": "10.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>When processing the SSH_MSG_KEXINIT message, the server\n\tcould allocate up to a few hundreds of megabytes of memory\n\tper each connection, before any authentication take place.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker may be able to cause a SSH server to\n\tallocate an excessive amount of memory. Note that the default\n\tMaxStartups setting on FreeBSD will limit the effectiveness\n\tof this attack.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2016/q4/191"
+		],
+		"cvename": [
+			"CVE-2016-8858"
+		],
+		"freebsd_sa": [
+			"SA-16:33.openssh"
+		]
+	},
+	"dates": {
+		"discovery": "2016-10-19",
+		"entry": "2016-10-29",
+		"modified": "2016-11-02"
+	}
 }

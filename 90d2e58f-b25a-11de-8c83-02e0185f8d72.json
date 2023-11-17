@@ -1,35 +1,35 @@
 {
-  "vid": "90d2e58f-b25a-11de-8c83-02e0185f8d72",
-  "topic": "FreeBSD -- kqueue pipe race conditions",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.4_7",
-          "ge": "6.3"
-        },
-        {
-          "lt": "6.3_13",
-          "ge": "6.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description</h1>\n\t<p>A race condition exists in the pipe close() code relating\n\t  to kqueues, causing use-after-free for kernel memory, which\n\t  may lead to an exploitable NULL pointer vulnerability in the\n\t  kernel, kernel memory corruption, and other unpredictable\n\t  results.</p>\n\t<h1>Impact:</h1>\n\t<p>Successful exploitation of the race condition can lead to\n\t  local kernel privilege escalation, kernel data corruption\n\t  and/or crash.</p>\n\t<p>To exploit this vulnerability, an attacker must be able to\n\t  run code on the target system.</p>\n\t<h1>Workaround</h1>\n\t<p>An errata notice, FreeBSD-EN-09:05.null has been released\n\t  simultaneously to this advisory, and contains a kernel patch\n\t  implementing a workaround for a more broad class of\n\t  vulnerabilities.  However, prior to those changes, no\n\t  workaround is available.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-09:13.pipe"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-10-02",
-    "entry": "2009-10-06",
-    "modified": "2016-08-09"
-  }
+	"vid": "90d2e58f-b25a-11de-8c83-02e0185f8d72",
+	"topic": "FreeBSD -- kqueue pipe race conditions",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.4_7",
+					"ge": "6.3"
+				},
+				{
+					"lt": "6.3_13",
+					"ge": "6.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description</h1>\n\t<p>A race condition exists in the pipe close() code relating\n\t  to kqueues, causing use-after-free for kernel memory, which\n\t  may lead to an exploitable NULL pointer vulnerability in the\n\t  kernel, kernel memory corruption, and other unpredictable\n\t  results.</p>\n\t<h1>Impact:</h1>\n\t<p>Successful exploitation of the race condition can lead to\n\t  local kernel privilege escalation, kernel data corruption\n\t  and/or crash.</p>\n\t<p>To exploit this vulnerability, an attacker must be able to\n\t  run code on the target system.</p>\n\t<h1>Workaround</h1>\n\t<p>An errata notice, FreeBSD-EN-09:05.null has been released\n\t  simultaneously to this advisory, and contains a kernel patch\n\t  implementing a workaround for a more broad class of\n\t  vulnerabilities.  However, prior to those changes, no\n\t  workaround is available.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-09:13.pipe"
+		]
+	},
+	"dates": {
+		"discovery": "2009-10-02",
+		"entry": "2009-10-06",
+		"modified": "2016-08-09"
+	}
 }

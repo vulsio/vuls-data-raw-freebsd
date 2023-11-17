@@ -1,34 +1,34 @@
 {
-  "vid": "e1cb9dc9-daa9-44db-adde-e94d900e2f7f",
-  "topic": "cacti -- Cross Site Scripting issue",
-  "affects": [
-    {
-      "name": [
-        "cacti"
-      ],
-      "range": [
-        {
-          "lt": "1.1.26"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>cacti developers report:</p>\n\t<blockquote cite=\" https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd\">\n\t  <p>The file include/global_session.php in Cacti 1.1.25 has XSS related to (1) the URI or (2) the refresh page.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.securitytracker.com/id/1039569",
-      "https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd",
-      "https://github.com/Cacti/cacti/issues/1010"
-    ],
-    "cvename": [
-      "CVE-2017-15194"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-10-10",
-    "entry": "2017-10-19"
-  }
+	"vid": "e1cb9dc9-daa9-44db-adde-e94d900e2f7f",
+	"topic": "cacti -- Cross Site Scripting issue",
+	"affects": [
+		{
+			"name": [
+				"cacti"
+			],
+			"range": [
+				{
+					"lt": "1.1.26"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cacti developers report:</p>\n\t<blockquote cite=\" https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd\">\n\t  <p>The file include/global_session.php in Cacti 1.1.25 has XSS related to (1) the URI or (2) the refresh page.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.securitytracker.com/id/1039569",
+			"https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd",
+			"https://github.com/Cacti/cacti/issues/1010"
+		],
+		"cvename": [
+			"CVE-2017-15194"
+		]
+	},
+	"dates": {
+		"discovery": "2017-10-10",
+		"entry": "2017-10-19"
+	}
 }

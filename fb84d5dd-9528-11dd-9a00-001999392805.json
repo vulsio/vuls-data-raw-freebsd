@@ -1,36 +1,36 @@
 {
-  "vid": "fb84d5dd-9528-11dd-9a00-001999392805",
-  "topic": "opera -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "opera",
-        "linux-opera"
-      ],
-      "range": [
-        {
-          "lt": "9.60"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Opera reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/901/\">\n\t  <p>If a malicious page redirects Opera to a specially crafted\n\t    address (URL), it can cause Opera to crash. Given sufficient\n\t    address content, the crash could cause execution of code\n\t    controlled by the attacking page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/902/\">\n\t  <p>Once a Java applet has been cached, if a page can predict the\n\t    cache path for that applet, it can load the applet from the\n\t    cache, causing it to run in the context of the local machine.\n\t    This allows it to read other cache files on the computer or\n\t    perform other normally more restrictive actions. These files\n\t    could contain sensitive information, which could then be sent\n\t    to the attacker.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.opera.com/support/search/view/901/",
-      "http://www.opera.com/support/search/view/902/"
-    ],
-    "cvename": [
-      "CVE-2008-4695",
-      "CVE-2008-4694"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-10-04",
-    "entry": "2008-10-10",
-    "modified": "2010-05-12"
-  }
+	"vid": "fb84d5dd-9528-11dd-9a00-001999392805",
+	"topic": "opera -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"opera",
+				"linux-opera"
+			],
+			"range": [
+				{
+					"lt": "9.60"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Opera reports:</p>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/901/\">\n\t  <p>If a malicious page redirects Opera to a specially crafted\n\t    address (URL), it can cause Opera to crash. Given sufficient\n\t    address content, the crash could cause execution of code\n\t    controlled by the attacking page.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.opera.com/support/search/view/902/\">\n\t  <p>Once a Java applet has been cached, if a page can predict the\n\t    cache path for that applet, it can load the applet from the\n\t    cache, causing it to run in the context of the local machine.\n\t    This allows it to read other cache files on the computer or\n\t    perform other normally more restrictive actions. These files\n\t    could contain sensitive information, which could then be sent\n\t    to the attacker.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.opera.com/support/search/view/901/",
+			"http://www.opera.com/support/search/view/902/"
+		],
+		"cvename": [
+			"CVE-2008-4695",
+			"CVE-2008-4694"
+		]
+	},
+	"dates": {
+		"discovery": "2008-10-04",
+		"entry": "2008-10-10",
+		"modified": "2010-05-12"
+	}
 }

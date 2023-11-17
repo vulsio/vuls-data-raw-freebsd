@@ -1,35 +1,35 @@
 {
-  "vid": "004d8c23-c710-11e8-98c7-000c29434208",
-  "topic": "Django -- password hash disclosure",
-  "affects": [
-    {
-      "name": [
-        "py34-django21",
-        "py35-django21",
-        "py36-django21",
-        "py37-django21"
-      ],
-      "range": [
-        {
-          "lt": "2.1.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django release notes:</p>\n\t<blockquote cite=\"https://docs.djangoproject.com/en/2.1/releases/2.1.2/\">\n\t  <p>CVE-2018-16984: Password hash disclosure to \"view only\" admin users</p>\n\t  <p>If an admin user has the change permission to the user model, only part\n\t    of the password hash is displayed in the change form. Admin users with the\n\t    view (but not change) permission to the user model were displayed the entire\n\t    hash. While it's typically infeasible to reverse a strong password hash, if\n\t    your site uses weaker password hashing algorithms such as MD5 or SHA1, it\n\t    could be a problem.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.djangoproject.com/en/2.1/releases/2.1.2/"
-    ],
-    "cvename": [
-      "CVE-2018-16984"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-10-02",
-    "entry": "2018-10-03"
-  }
+	"vid": "004d8c23-c710-11e8-98c7-000c29434208",
+	"topic": "Django -- password hash disclosure",
+	"affects": [
+		{
+			"name": [
+				"py34-django21",
+				"py35-django21",
+				"py36-django21",
+				"py37-django21"
+			],
+			"range": [
+				{
+					"lt": "2.1.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django release notes:</p>\n\t<blockquote cite=\"https://docs.djangoproject.com/en/2.1/releases/2.1.2/\">\n\t  <p>CVE-2018-16984: Password hash disclosure to \"view only\" admin users</p>\n\t  <p>If an admin user has the change permission to the user model, only part\n\t    of the password hash is displayed in the change form. Admin users with the\n\t    view (but not change) permission to the user model were displayed the entire\n\t    hash. While it's typically infeasible to reverse a strong password hash, if\n\t    your site uses weaker password hashing algorithms such as MD5 or SHA1, it\n\t    could be a problem.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.djangoproject.com/en/2.1/releases/2.1.2/"
+		],
+		"cvename": [
+			"CVE-2018-16984"
+		]
+	},
+	"dates": {
+		"discovery": "2018-10-02",
+		"entry": "2018-10-03"
+	}
 }

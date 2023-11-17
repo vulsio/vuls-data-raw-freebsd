@@ -1,119 +1,119 @@
 {
-  "vid": "a6427195-c2c7-11d9-89f7-02061b08fc24",
-  "topic": "mozilla -- privilege escalation via non-DOM property overrides",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.4,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.8,2"
-        },
-        {
-          "ge": "1.8.*,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.8"
-        },
-        {
-          "ge": "1.8.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "de-netscape7",
-        "fr-linux-netscape",
-        "fr-netscape7",
-        "ja-linux-netscape",
-        "ja-netscape7",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk1",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-44.html\">\n\t  <p>Additional checks were added to make sure Javascript eval\n\t    and Script objects are run with the privileges of the\n\t    context that created them, not the potentially elevated\n\t    privilege of the context calling them in order to protect\n\t    against an additional variant of <a href=\"http://www.mozilla.org/security/announce/mfsa2005-41.html\">MFSA\n\t    2005-41</a>.</p>\n\t</blockquote>\n\t<p>The Mozilla Foundation Security Advisory MFSA 2005-41\n\t  reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-41.html\">\n\t  <p>moz_bug_r_a4 reported several exploits giving an attacker\n\t    the ability to install malicious code or steal data,\n\t    requiring only that the user do commonplace actions like\n\t    click on a link or open the context menu.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/security/announce/mfsa2005-44.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-11",
-    "entry": "2005-05-12"
-  }
+	"vid": "a6427195-c2c7-11d9-89f7-02061b08fc24",
+	"topic": "mozilla -- privilege escalation via non-DOM property overrides",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.8,2"
+				},
+				{
+					"ge": "1.8.*,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.8"
+				},
+				{
+					"ge": "1.8.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"de-netscape7",
+				"fr-linux-netscape",
+				"fr-netscape7",
+				"ja-linux-netscape",
+				"ja-netscape7",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk1",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-44.html\">\n\t  <p>Additional checks were added to make sure Javascript eval\n\t    and Script objects are run with the privileges of the\n\t    context that created them, not the potentially elevated\n\t    privilege of the context calling them in order to protect\n\t    against an additional variant of <a href=\"http://www.mozilla.org/security/announce/mfsa2005-41.html\">MFSA\n\t    2005-41</a>.</p>\n\t</blockquote>\n\t<p>The Mozilla Foundation Security Advisory MFSA 2005-41\n\t  reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-41.html\">\n\t  <p>moz_bug_r_a4 reported several exploits giving an attacker\n\t    the ability to install malicious code or steal data,\n\t    requiring only that the user do commonplace actions like\n\t    click on a link or open the context menu.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/security/announce/mfsa2005-44.html"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-11",
+		"entry": "2005-05-12"
+	}
 }

@@ -1,55 +1,55 @@
 {
-  "vid": "e4644df8-e7da-11e5-829d-c80aa9043978",
-  "topic": "openssh -- command injection when X11Forwarding is enabled",
-  "affects": [
-    {
-      "name": [
-        "openssh-portable"
-      ],
-      "range": [
-        {
-          "lt": "7.2.p2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.2_14",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_31",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_39",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSH project reports:</p>\n\t<blockquote cite=\"http://www.openssh.com/txt/x11fwd.adv\">\n\t  <p>Missing sanitisation of untrusted input allows an\n\t    authenticated user who is able to request X11 forwarding\n\t    to inject commands to xauth(1).\n\t  </p>\n\t  <p>Injection of xauth commands grants the ability to read\n\t    arbitrary files under the authenticated user's privilege,\n\t    Other xauth commands allow limited information leakage,\n\t    file overwrite, port probing and generally expose xauth(1),\n\t    which was not written with a hostile user in mind, as an\n\t    attack surface.\n\t  </p>\n\t  <p>Mitigation:</p>\n\t  <p>Set X11Forwarding=no in sshd_config. This is the default.</p>\n\t  <p>For authorized_keys that specify a \"command\" restriction,\n\t    also set the \"restrict\" (available in OpenSSH &gt;=7.2) or\n\t    \"no-x11-forwarding\" restrictions.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openssh.com/txt/x11fwd.adv"
-    ],
-    "cvename": [
-      "CVE-2016-3115"
-    ],
-    "freebsd_sa": [
-      "SA-16:14.openssh"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-11",
-    "entry": "2016-03-11",
-    "modified": "2016-08-09"
-  }
+	"vid": "e4644df8-e7da-11e5-829d-c80aa9043978",
+	"topic": "openssh -- command injection when X11Forwarding is enabled",
+	"affects": [
+		{
+			"name": [
+				"openssh-portable"
+			],
+			"range": [
+				{
+					"lt": "7.2.p2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.2_14",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_31",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_39",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSH project reports:</p>\n\t<blockquote cite=\"http://www.openssh.com/txt/x11fwd.adv\">\n\t  <p>Missing sanitisation of untrusted input allows an\n\t    authenticated user who is able to request X11 forwarding\n\t    to inject commands to xauth(1).\n\t  </p>\n\t  <p>Injection of xauth commands grants the ability to read\n\t    arbitrary files under the authenticated user's privilege,\n\t    Other xauth commands allow limited information leakage,\n\t    file overwrite, port probing and generally expose xauth(1),\n\t    which was not written with a hostile user in mind, as an\n\t    attack surface.\n\t  </p>\n\t  <p>Mitigation:</p>\n\t  <p>Set X11Forwarding=no in sshd_config. This is the default.</p>\n\t  <p>For authorized_keys that specify a \"command\" restriction,\n\t    also set the \"restrict\" (available in OpenSSH &gt;=7.2) or\n\t    \"no-x11-forwarding\" restrictions.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openssh.com/txt/x11fwd.adv"
+		],
+		"cvename": [
+			"CVE-2016-3115"
+		],
+		"freebsd_sa": [
+			"SA-16:14.openssh"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-11",
+		"entry": "2016-03-11",
+		"modified": "2016-08-09"
+	}
 }

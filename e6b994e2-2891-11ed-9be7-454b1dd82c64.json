@@ -1,52 +1,52 @@
 {
-  "vid": "e6b994e2-2891-11ed-9be7-454b1dd82c64",
-  "topic": "Gitlab -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "15.3.2",
-          "ge": "15.3.0"
-        },
-        {
-          "lt": "15.2.4",
-          "ge": "15.2.0"
-        },
-        {
-          "lt": "15.1.6",
-          "ge": "10.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/08/30/critical-security-release-gitlab-15-3-2-released/\">\n\t  <p>Remote Command Execution via GitHub import</p>\n\t  <p>Stored XSS via labels color</p>\n\t  <p>Content injection via Incidents Timeline description</p>\n\t  <p>Lack of length validation in Snippets leads to Denial of Service</p>\n\t  <p>Group IP allow-list not fully respected by the Package Registry</p>\n\t  <p>Abusing Gitaly.GetTreeEntries calls leads to denial of service</p>\n\t  <p>Arbitrary HTTP Requests Possible in .ipynb Notebook with Malicious Form Tags</p>\n\t  <p>Regular Expression Denial of Service via special crafted input</p>\n\t  <p>Information Disclosure via Arbitrary GFM references rendered in Incident Timeline Events</p>\n\t  <p>Regex backtracking through the Commit message field</p>\n\t  <p>Read repository content via LivePreview feature</p>\n\t  <p>Denial of Service via the Create branch API</p>\n\t  <p>Denial of Service via Issue preview</p>\n\t  <p>IDOR in Zentao integration leaked issue details</p>\n\t  <p>Brute force attack may guess a password even when 2FA is enabled</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2022/08/30/critical-security-release-gitlab-15-3-2-released/"
-    ],
-    "cvename": [
-      "CVE-2022-2992",
-      "CVE-2022-2865",
-      "CVE-2022-2527",
-      "CVE-2022-2592",
-      "CVE-2022-2533",
-      "CVE-2022-2455",
-      "CVE-2022-2428",
-      "CVE-2022-2908",
-      "CVE-2022-2630",
-      "CVE-2022-2931",
-      "CVE-2022-2907",
-      "CVE-2022-3031"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-08-30",
-    "entry": "2022-08-30"
-  }
+	"vid": "e6b994e2-2891-11ed-9be7-454b1dd82c64",
+	"topic": "Gitlab -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "15.3.2",
+					"ge": "15.3.0"
+				},
+				{
+					"lt": "15.2.4",
+					"ge": "15.2.0"
+				},
+				{
+					"lt": "15.1.6",
+					"ge": "10.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/08/30/critical-security-release-gitlab-15-3-2-released/\">\n\t  <p>Remote Command Execution via GitHub import</p>\n\t  <p>Stored XSS via labels color</p>\n\t  <p>Content injection via Incidents Timeline description</p>\n\t  <p>Lack of length validation in Snippets leads to Denial of Service</p>\n\t  <p>Group IP allow-list not fully respected by the Package Registry</p>\n\t  <p>Abusing Gitaly.GetTreeEntries calls leads to denial of service</p>\n\t  <p>Arbitrary HTTP Requests Possible in .ipynb Notebook with Malicious Form Tags</p>\n\t  <p>Regular Expression Denial of Service via special crafted input</p>\n\t  <p>Information Disclosure via Arbitrary GFM references rendered in Incident Timeline Events</p>\n\t  <p>Regex backtracking through the Commit message field</p>\n\t  <p>Read repository content via LivePreview feature</p>\n\t  <p>Denial of Service via the Create branch API</p>\n\t  <p>Denial of Service via Issue preview</p>\n\t  <p>IDOR in Zentao integration leaked issue details</p>\n\t  <p>Brute force attack may guess a password even when 2FA is enabled</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2022/08/30/critical-security-release-gitlab-15-3-2-released/"
+		],
+		"cvename": [
+			"CVE-2022-2992",
+			"CVE-2022-2865",
+			"CVE-2022-2527",
+			"CVE-2022-2592",
+			"CVE-2022-2533",
+			"CVE-2022-2455",
+			"CVE-2022-2428",
+			"CVE-2022-2908",
+			"CVE-2022-2630",
+			"CVE-2022-2931",
+			"CVE-2022-2907",
+			"CVE-2022-3031"
+		]
+	},
+	"dates": {
+		"discovery": "2022-08-30",
+		"entry": "2022-08-30"
+	}
 }

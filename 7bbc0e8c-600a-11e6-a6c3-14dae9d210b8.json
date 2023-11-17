@@ -1,45 +1,45 @@
 {
-  "vid": "7bbc0e8c-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Buffer overflow in keyboard driver",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.3_3",
-          "ge": "10.3"
-        },
-        {
-          "lt": "10.2_17",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_34",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_42",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Incorrect signedness comparison in the ioctl(2) handler\n\tallows a malicious local user to overwrite a portion of the\n\tkernel memory.</p>\n\t<h1>Impact:</h1>\n\t<p>A local user may crash the kernel, read a portion of\n\tkernel memory and execute arbitrary code in kernel context.\n\tThe result of executing an arbitrary kernel code is privilege\n\tescalation.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-1886"
-    ],
-    "freebsd_sa": [
-      "SA-16:18.atkbd"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-17",
-    "entry": "2016-08-11"
-  }
+	"vid": "7bbc0e8c-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Buffer overflow in keyboard driver",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.3_3",
+					"ge": "10.3"
+				},
+				{
+					"lt": "10.2_17",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_34",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_42",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Incorrect signedness comparison in the ioctl(2) handler\n\tallows a malicious local user to overwrite a portion of the\n\tkernel memory.</p>\n\t<h1>Impact:</h1>\n\t<p>A local user may crash the kernel, read a portion of\n\tkernel memory and execute arbitrary code in kernel context.\n\tThe result of executing an arbitrary kernel code is privilege\n\tescalation.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-1886"
+		],
+		"freebsd_sa": [
+			"SA-16:18.atkbd"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-17",
+		"entry": "2016-08-11"
+	}
 }

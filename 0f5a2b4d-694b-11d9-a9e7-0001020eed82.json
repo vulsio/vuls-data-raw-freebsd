@@ -1,46 +1,46 @@
 {
-  "vid": "0f5a2b4d-694b-11d9-a9e7-0001020eed82",
-  "topic": "awstats -- remote command execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "awstats"
-      ],
-      "range": [
-        {
-          "lt": "6.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>An iDEFENSE Security Advisory  reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=full-disclosure&amp;m=110600949323439\">\n\t  <p>Remote exploitation of an input validation vulnerability\n\t    in AWStats allows attackers to execute arbitrary commands\n\t    under the privileges of the web server.</p>\n\t  <p>The problem specifically exists when the application is\n\t    running as a CGI script on a web server. The \"configdir\"\n\t    parameter contains unfiltered user-supplied data that is\n\t    utilized in a call to the Perl routine open()...</p>\n\t  <p>Successful exploitation allows remote attackers to\n\t    execute arbitrary commands under the privileges of the web\n\t    server. This can lead to further compromise as it provides\n\t    remote attackers with local access.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://awstats.sourceforge.net/docs/awstats_changelog.txt",
-      "http://www.idefense.com/application/poi/display?id=185&type=vulnerabilities&flashstatus=false"
-    ],
-    "cvename": [
-      "CVE-2005-0116"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=110600949323439",
-        "msgid": "FB24803D1DF2A34FA59FC157B77C970503C8B20C@idserv04.idef.com"
-      }
-    ],
-    "bid": [
-      "12270"
-    ],
-    "cert_vu": [
-      "272296"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-21",
-    "entry": "2005-01-18",
-    "modified": "2005-02-23"
-  }
+	"vid": "0f5a2b4d-694b-11d9-a9e7-0001020eed82",
+	"topic": "awstats -- remote command execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"awstats"
+			],
+			"range": [
+				{
+					"lt": "6.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>An iDEFENSE Security Advisory  reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=full-disclosure&amp;m=110600949323439\">\n\t  <p>Remote exploitation of an input validation vulnerability\n\t    in AWStats allows attackers to execute arbitrary commands\n\t    under the privileges of the web server.</p>\n\t  <p>The problem specifically exists when the application is\n\t    running as a CGI script on a web server. The \"configdir\"\n\t    parameter contains unfiltered user-supplied data that is\n\t    utilized in a call to the Perl routine open()...</p>\n\t  <p>Successful exploitation allows remote attackers to\n\t    execute arbitrary commands under the privileges of the web\n\t    server. This can lead to further compromise as it provides\n\t    remote attackers with local access.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://awstats.sourceforge.net/docs/awstats_changelog.txt",
+			"http://www.idefense.com/application/poi/display?id=185&type=vulnerabilities&flashstatus=false"
+		],
+		"cvename": [
+			"CVE-2005-0116"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=110600949323439",
+				"msgid": "FB24803D1DF2A34FA59FC157B77C970503C8B20C@idserv04.idef.com"
+			}
+		],
+		"bid": [
+			"12270"
+		],
+		"cert_vu": [
+			"272296"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-21",
+		"entry": "2005-01-18",
+		"modified": "2005-02-23"
+	}
 }

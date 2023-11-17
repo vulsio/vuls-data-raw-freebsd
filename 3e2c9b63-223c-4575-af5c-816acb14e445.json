@@ -1,50 +1,50 @@
 {
-  "vid": "3e2c9b63-223c-4575-af5c-816acb14e445",
-  "topic": "rdesktop - critical - Remote Code Execution",
-  "affects": [
-    {
-      "name": [
-        "rdesktop"
-      ],
-      "range": [
-        {
-          "lt": "1.8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"https://github.com/rdesktop/rdesktop/releases/tag/v1.8.4\">\n\t  <ul>\n\t    <li>Fix memory corruption in process_bitmap_data - CVE-2018-8794\n\t      </li>\n\t    <li>Fix remote code execution in process_bitmap_data - CVE-2018-8795\n\t      </li>\n\t    <li>Fix remote code execution in process_plane - CVE-2018-8797\n\t      </li>\n\t    <li>Fix Denial of Service in mcs_recv_connect_response - CVE-2018-20175\n\t      </li>\n\t    <li>Fix Denial of Service in mcs_parse_domain_params - CVE-2018-20175\n\t      </li>\n\t    <li>Fix Denial of Service in sec_parse_crypt_info - CVE-2018-20176\n\t      </li>\n\t    <li>Fix Denial of Service in sec_recv - CVE-2018-20176\n\t      </li>\n\t    <li>Fix minor information leak in rdpdr_process - CVE-2018-8791\n\t      </li>\n\t    <li>Fix Denial of Service in cssp_read_tsrequest - CVE-2018-8792\n\t      </li>\n\t    <li>Fix remote code execution in cssp_read_tsrequest - CVE-2018-8793\n\t      </li>\n\t    <li>Fix Denial of Service in process_bitmap_data - CVE-2018-8796\n\t      </li>\n\t    <li>Fix minor information leak in rdpsnd_process_ping - CVE-2018-8798\n\t      </li>\n\t    <li>Fix Denial of Service in process_secondary_order - CVE-2018-8799\n\t      </li>\n\t    <li>Fix remote code execution in in ui_clip_handle_data - CVE-2018-8800\n\t      </li>\n\t    <li>Fix major information leak in ui_clip_handle_data - CVE-2018-20174\n\t      </li>\n\t    <li>Fix memory corruption in rdp_in_unistr - CVE-2018-20177\n\t      </li>\n\t    <li>Fix Denial of Service in process_demand_active - CVE-2018-20178\n\t      </li>\n\t    <li>Fix remote code execution in lspci_process - CVE-2018-20179\n\t      </li>\n\t    <li>Fix remote code execution in rdpsnddbg_process - CVE-2018-20180\n\t      </li>\n\t    <li>Fix remote code execution in seamless_process - CVE-2018-20181\n\t      </li>\n\t    <li>Fix remote code execution in seamless_process_line - CVE-2018-20182\n\t      </li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/rdesktop/rdesktop/releases/tag/v1.8.4"
-    ],
-    "cvename": [
-      "CVE-2018-20175",
-      "CVE-2018-20176",
-      "CVE-2018-8791",
-      "CVE-2018-8792",
-      "CVE-2018-8793",
-      "CVE-2018-8794",
-      "CVE-2018-8795",
-      "CVE-2018-8796",
-      "CVE-2018-8797",
-      "CVE-2018-8798",
-      "CVE-2018-8799",
-      "CVE-2018-8800",
-      "CVE-2018-20174",
-      "CVE-2018-20177",
-      "CVE-2018-20178",
-      "CVE-2018-20179",
-      "CVE-2018-20180",
-      "CVE-2018-20181",
-      "CVE-2018-20182"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-01-02",
-    "entry": "2019-02-22"
-  }
+	"vid": "3e2c9b63-223c-4575-af5c-816acb14e445",
+	"topic": "rdesktop - critical - Remote Code Execution",
+	"affects": [
+		{
+			"name": [
+				"rdesktop"
+			],
+			"range": [
+				{
+					"lt": "1.8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"https://github.com/rdesktop/rdesktop/releases/tag/v1.8.4\">\n\t  <ul>\n\t    <li>Fix memory corruption in process_bitmap_data - CVE-2018-8794\n\t      </li>\n\t    <li>Fix remote code execution in process_bitmap_data - CVE-2018-8795\n\t      </li>\n\t    <li>Fix remote code execution in process_plane - CVE-2018-8797\n\t      </li>\n\t    <li>Fix Denial of Service in mcs_recv_connect_response - CVE-2018-20175\n\t      </li>\n\t    <li>Fix Denial of Service in mcs_parse_domain_params - CVE-2018-20175\n\t      </li>\n\t    <li>Fix Denial of Service in sec_parse_crypt_info - CVE-2018-20176\n\t      </li>\n\t    <li>Fix Denial of Service in sec_recv - CVE-2018-20176\n\t      </li>\n\t    <li>Fix minor information leak in rdpdr_process - CVE-2018-8791\n\t      </li>\n\t    <li>Fix Denial of Service in cssp_read_tsrequest - CVE-2018-8792\n\t      </li>\n\t    <li>Fix remote code execution in cssp_read_tsrequest - CVE-2018-8793\n\t      </li>\n\t    <li>Fix Denial of Service in process_bitmap_data - CVE-2018-8796\n\t      </li>\n\t    <li>Fix minor information leak in rdpsnd_process_ping - CVE-2018-8798\n\t      </li>\n\t    <li>Fix Denial of Service in process_secondary_order - CVE-2018-8799\n\t      </li>\n\t    <li>Fix remote code execution in in ui_clip_handle_data - CVE-2018-8800\n\t      </li>\n\t    <li>Fix major information leak in ui_clip_handle_data - CVE-2018-20174\n\t      </li>\n\t    <li>Fix memory corruption in rdp_in_unistr - CVE-2018-20177\n\t      </li>\n\t    <li>Fix Denial of Service in process_demand_active - CVE-2018-20178\n\t      </li>\n\t    <li>Fix remote code execution in lspci_process - CVE-2018-20179\n\t      </li>\n\t    <li>Fix remote code execution in rdpsnddbg_process - CVE-2018-20180\n\t      </li>\n\t    <li>Fix remote code execution in seamless_process - CVE-2018-20181\n\t      </li>\n\t    <li>Fix remote code execution in seamless_process_line - CVE-2018-20182\n\t      </li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/rdesktop/rdesktop/releases/tag/v1.8.4"
+		],
+		"cvename": [
+			"CVE-2018-20175",
+			"CVE-2018-20176",
+			"CVE-2018-8791",
+			"CVE-2018-8792",
+			"CVE-2018-8793",
+			"CVE-2018-8794",
+			"CVE-2018-8795",
+			"CVE-2018-8796",
+			"CVE-2018-8797",
+			"CVE-2018-8798",
+			"CVE-2018-8799",
+			"CVE-2018-8800",
+			"CVE-2018-20174",
+			"CVE-2018-20177",
+			"CVE-2018-20178",
+			"CVE-2018-20179",
+			"CVE-2018-20180",
+			"CVE-2018-20181",
+			"CVE-2018-20182"
+		]
+	},
+	"dates": {
+		"discovery": "2019-01-02",
+		"entry": "2019-02-22"
+	}
 }

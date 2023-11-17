@@ -1,32 +1,32 @@
 {
-  "vid": "af2745c0-c3e0-11dd-a721-0030843d3802",
-  "topic": "mantis -- php code execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mantis"
-      ],
-      "range": [
-        {
-          "lt": "1.1.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/32314/\">\n\t  <p>EgiX has discovered a vulnerability in Mantis, which can be\n\t    exploited by malicious users to compromise a vulnerable system.</p>\n\t  <p>Input passed to the \"sort\" parameter in manage_proj_page.php is not\n\t    properly sanitised before being used in a \"create_function()\" call.\n\t    This can be exploited to execute arbitrary PHP code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/32314/"
-    ],
-    "cvename": [
-      "CVE-2008-4687"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-10-17",
-    "entry": "2008-12-06"
-  }
+	"vid": "af2745c0-c3e0-11dd-a721-0030843d3802",
+	"topic": "mantis -- php code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mantis"
+			],
+			"range": [
+				{
+					"lt": "1.1.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/32314/\">\n\t  <p>EgiX has discovered a vulnerability in Mantis, which can be\n\t    exploited by malicious users to compromise a vulnerable system.</p>\n\t  <p>Input passed to the \"sort\" parameter in manage_proj_page.php is not\n\t    properly sanitised before being used in a \"create_function()\" call.\n\t    This can be exploited to execute arbitrary PHP code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/32314/"
+		],
+		"cvename": [
+			"CVE-2008-4687"
+		]
+	},
+	"dates": {
+		"discovery": "2008-10-17",
+		"entry": "2008-12-06"
+	}
 }

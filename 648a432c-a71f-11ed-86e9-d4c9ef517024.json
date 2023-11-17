@@ -1,58 +1,58 @@
 {
-  "vid": "648a432c-a71f-11ed-86e9-d4c9ef517024",
-  "topic": "OpenSSL -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.1.1t,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-devel"
-      ],
-      "range": [
-        {
-          "lt": "3.0.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-quictls"
-      ],
-      "range": [
-        {
-          "lt": "3.0.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20230207.txt\">\n\t  <p>X.400 address type confusion in X.509 GeneralName (CVE-2023-0286) (High):\n\t    There is a type confusion vulnerability relating to X.400 address processing\n\t    inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but\n\t    the public structure definition for GENERAL_NAME incorrectly specified the type\n\t    of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by\n\t    the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an\n\t    ASN1_STRING.</p>\n\t  <p>Timing Oracle in RSA Decryption (CVE-2022-4304) (Moderate):\n\t    A timing based side channel exists in the OpenSSL RSA Decryption implementation\n\t    which could be sufficient to recover a plaintext across a network in a\n\t    Bleichenbacher style attack. To achieve a successful decryption an attacker\n\t    would have to be able to send a very large number of trial messages for\n\t    decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5,\n\t    RSA-OEAP and RSASVE.</p>\n\t  <p>X.509 Name Constraints Read Buffer Overflow (CVE-2022-4203) (Moderate):\n\t    A read buffer overrun can be triggered in X.509 certificate verification,\n\t    specifically in name constraint checking. Note that this occurs\n\t    after certificate chain signature verification and requires either a\n\t    CA to have signed the malicious certificate or for the application to\n\t    continue certificate verification despite failure to construct a path\n\t    to a trusted issuer.</p>\n\t  <p>Use-after-free following BIO_new_NDEF (CVE-2023-0215) (Moderate):\n\t    The public API function BIO_new_NDEF is a helper function used for streaming\n\t    ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the\n\t    SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by\n\t    end user applications.</p>\n\t  <p>Double free after calling PEM_read_bio_ex (CVE-2022-4450) (Moderate):\n\t    The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and\n\t    decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data.\n\t    If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are\n\t    populated with pointers to buffers containing the relevant decoded data. The\n\t    caller is responsible for freeing those buffers. It is possible to construct a\n\t    PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex()\n\t    will return a failure code but will populate the header argument with a pointer\n\t    to a buffer that has already been freed. If the caller also frees this buffer\n\t    then a double free will occur. This will most likely lead to a crash. This\n\t    could be exploited by an attacker who has the ability to supply malicious PEM\n\t    files for parsing to achieve a denial of service attack.</p>\n\t  <p>Invalid pointer dereference in d2i_PKCS7 functions (CVE-2023-0216) (Moderate):\n\t    An invalid pointer dereference on read can be triggered when an\n\t    application tries to load malformed PKCS7 data with the\n\t    d2i_PKCS7(), d2i_PKCS7_bio() or d2i_PKCS7_fp() functions.</p>\n\t  <p>NULL dereference validating DSA public key (CVE-2023-0217) (Moderate):\n\t    An invalid pointer dereference on read can be triggered when an\n\t    application tries to check a malformed DSA public key by the\n\t    EVP_PKEY_public_check() function. This will most likely lead\n\t    to an application crash. This function can be called on public\n\t    keys supplied from untrusted sources which could allow an attacker\n\t    to cause a denial of service attack.</p>\n\t  <p>NULL dereference during PKCS7 data verification (CVE-2023-0401) (Moderate):\n\t    A NULL pointer can be dereferenced when signatures are being\n\t    verified on PKCS7 signed or signedAndEnveloped data. In case the hash\n\t    algorithm used for the signature is known to the OpenSSL library but\n\t    the implementation of the hash algorithm is not available the digest\n\t    initialization will fail. There is a missing check for the return\n\t    value from the initialization function which later leads to invalid\n\t    usage of the digest API most likely leading to a crash.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20230207.txt"
-    ],
-    "cvename": [
-      "CVE-2023-0286",
-      "CVE-2022-4304",
-      "CVE-2022-4203",
-      "CVE-2023-0215",
-      "CVE-2022-4450",
-      "CVE-2023-0216",
-      "CVE-2023-0401"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-02-07",
-    "entry": "2023-02-07"
-  }
+	"vid": "648a432c-a71f-11ed-86e9-d4c9ef517024",
+	"topic": "OpenSSL -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.1.1t,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-devel"
+			],
+			"range": [
+				{
+					"lt": "3.0.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-quictls"
+			],
+			"range": [
+				{
+					"lt": "3.0.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20230207.txt\">\n\t  <p>X.400 address type confusion in X.509 GeneralName (CVE-2023-0286) (High):\n\t    There is a type confusion vulnerability relating to X.400 address processing\n\t    inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but\n\t    the public structure definition for GENERAL_NAME incorrectly specified the type\n\t    of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by\n\t    the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an\n\t    ASN1_STRING.</p>\n\t  <p>Timing Oracle in RSA Decryption (CVE-2022-4304) (Moderate):\n\t    A timing based side channel exists in the OpenSSL RSA Decryption implementation\n\t    which could be sufficient to recover a plaintext across a network in a\n\t    Bleichenbacher style attack. To achieve a successful decryption an attacker\n\t    would have to be able to send a very large number of trial messages for\n\t    decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5,\n\t    RSA-OEAP and RSASVE.</p>\n\t  <p>X.509 Name Constraints Read Buffer Overflow (CVE-2022-4203) (Moderate):\n\t    A read buffer overrun can be triggered in X.509 certificate verification,\n\t    specifically in name constraint checking. Note that this occurs\n\t    after certificate chain signature verification and requires either a\n\t    CA to have signed the malicious certificate or for the application to\n\t    continue certificate verification despite failure to construct a path\n\t    to a trusted issuer.</p>\n\t  <p>Use-after-free following BIO_new_NDEF (CVE-2023-0215) (Moderate):\n\t    The public API function BIO_new_NDEF is a helper function used for streaming\n\t    ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the\n\t    SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by\n\t    end user applications.</p>\n\t  <p>Double free after calling PEM_read_bio_ex (CVE-2022-4450) (Moderate):\n\t    The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and\n\t    decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data.\n\t    If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are\n\t    populated with pointers to buffers containing the relevant decoded data. The\n\t    caller is responsible for freeing those buffers. It is possible to construct a\n\t    PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex()\n\t    will return a failure code but will populate the header argument with a pointer\n\t    to a buffer that has already been freed. If the caller also frees this buffer\n\t    then a double free will occur. This will most likely lead to a crash. This\n\t    could be exploited by an attacker who has the ability to supply malicious PEM\n\t    files for parsing to achieve a denial of service attack.</p>\n\t  <p>Invalid pointer dereference in d2i_PKCS7 functions (CVE-2023-0216) (Moderate):\n\t    An invalid pointer dereference on read can be triggered when an\n\t    application tries to load malformed PKCS7 data with the\n\t    d2i_PKCS7(), d2i_PKCS7_bio() or d2i_PKCS7_fp() functions.</p>\n\t  <p>NULL dereference validating DSA public key (CVE-2023-0217) (Moderate):\n\t    An invalid pointer dereference on read can be triggered when an\n\t    application tries to check a malformed DSA public key by the\n\t    EVP_PKEY_public_check() function. This will most likely lead\n\t    to an application crash. This function can be called on public\n\t    keys supplied from untrusted sources which could allow an attacker\n\t    to cause a denial of service attack.</p>\n\t  <p>NULL dereference during PKCS7 data verification (CVE-2023-0401) (Moderate):\n\t    A NULL pointer can be dereferenced when signatures are being\n\t    verified on PKCS7 signed or signedAndEnveloped data. In case the hash\n\t    algorithm used for the signature is known to the OpenSSL library but\n\t    the implementation of the hash algorithm is not available the digest\n\t    initialization will fail. There is a missing check for the return\n\t    value from the initialization function which later leads to invalid\n\t    usage of the digest API most likely leading to a crash.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20230207.txt"
+		],
+		"cvename": [
+			"CVE-2023-0286",
+			"CVE-2022-4304",
+			"CVE-2022-4203",
+			"CVE-2023-0215",
+			"CVE-2022-4450",
+			"CVE-2023-0216",
+			"CVE-2023-0401"
+		]
+	},
+	"dates": {
+		"discovery": "2023-02-07",
+		"entry": "2023-02-07"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "2a3bc6ac-e7c6-11e7-a90b-001999f8d30b",
-  "topic": "asterisk -- Crash in PJSIP resource when missing a contact header",
-  "affects": [
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.18.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>A select set of SIP messages create a dialog in Asterisk.\n\t  Those SIP messages must contain a contact header. For\n\t  those messages, if the header was not present and using\n\t  the PJSIP channel driver, it would cause Asterisk to\n\t  crash. The severity of this vulnerability is somewhat\n\t  mitigated if authentication is enabled. If authentication\n\t  is enabled a user would have to first be authorized before\n\t  reaching the crash point.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://downloads.asterisk.org/pub/security/AST-2017-014.html"
-    ],
-    "cvename": [
-      "CVE-2017-17850"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-12-12",
-    "entry": "2017-12-23"
-  }
+	"vid": "2a3bc6ac-e7c6-11e7-a90b-001999f8d30b",
+	"topic": "asterisk -- Crash in PJSIP resource when missing a contact header",
+	"affects": [
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.18.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories\">\n\t  <p>A select set of SIP messages create a dialog in Asterisk.\n\t  Those SIP messages must contain a contact header. For\n\t  those messages, if the header was not present and using\n\t  the PJSIP channel driver, it would cause Asterisk to\n\t  crash. The severity of this vulnerability is somewhat\n\t  mitigated if authentication is enabled. If authentication\n\t  is enabled a user would have to first be authorized before\n\t  reaching the crash point.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://downloads.asterisk.org/pub/security/AST-2017-014.html"
+		],
+		"cvename": [
+			"CVE-2017-17850"
+		]
+	},
+	"dates": {
+		"discovery": "2017-12-12",
+		"entry": "2017-12-23"
+	}
 }

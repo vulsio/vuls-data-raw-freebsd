@@ -1,33 +1,33 @@
 {
-  "vid": "311e4b1c-f8ee-11e6-9940-b499baebfeaf",
-  "topic": "cURL -- ocsp status validation error",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.53.0",
-          "ge": "7.52.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20170222.html\">\n\t  <p>SSL_VERIFYSTATUS ignored<br/>\n\t    curl and libcurl support \"OCSP stapling\", also known as the TLS\n\t    Certificate Status Request extension (using the\n\t    CURLOPT_SSL_VERIFYSTATUS option). When telling curl to use this\n\t    feature, it uses that TLS extension to ask for a fresh proof of\n\t    the server's certificate's validity. If the server doesn't support\n\t    the extension, or fails to provide said proof, curl is expected to\n\t    return an error.<br/>\n\t    Due to a coding mistake, the code that checks for a test success or\n\t    failure, ends up always thinking there's valid proof, even when\n\t    there is none or if the server doesn't support the TLS extension in\n\t    question. Contrary to how it used to function and contrary to how\n\t    this feature is documented to work.<br/>\n\t    This could lead to users not detecting when a server's certificate\n\t    goes invalid or otherwise be mislead that the server is in a better\n\t    shape than it is in reality.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/adv_20170222.html"
-    ],
-    "cvename": [
-      "CVE-2017-2629"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-02-22",
-    "entry": "2017-02-22"
-  }
+	"vid": "311e4b1c-f8ee-11e6-9940-b499baebfeaf",
+	"topic": "cURL -- ocsp status validation error",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.53.0",
+					"ge": "7.52.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20170222.html\">\n\t  <p>SSL_VERIFYSTATUS ignored<br/>\n\t    curl and libcurl support \"OCSP stapling\", also known as the TLS\n\t    Certificate Status Request extension (using the\n\t    CURLOPT_SSL_VERIFYSTATUS option). When telling curl to use this\n\t    feature, it uses that TLS extension to ask for a fresh proof of\n\t    the server's certificate's validity. If the server doesn't support\n\t    the extension, or fails to provide said proof, curl is expected to\n\t    return an error.<br/>\n\t    Due to a coding mistake, the code that checks for a test success or\n\t    failure, ends up always thinking there's valid proof, even when\n\t    there is none or if the server doesn't support the TLS extension in\n\t    question. Contrary to how it used to function and contrary to how\n\t    this feature is documented to work.<br/>\n\t    This could lead to users not detecting when a server's certificate\n\t    goes invalid or otherwise be mislead that the server is in a better\n\t    shape than it is in reality.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/adv_20170222.html"
+		],
+		"cvename": [
+			"CVE-2017-2629"
+		]
+	},
+	"dates": {
+		"discovery": "2017-02-22",
+		"entry": "2017-02-22"
+	}
 }

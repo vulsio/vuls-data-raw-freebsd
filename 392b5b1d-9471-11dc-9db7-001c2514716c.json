@@ -1,32 +1,32 @@
 {
-  "vid": "392b5b1d-9471-11dc-9db7-001c2514716c",
-  "topic": "php -- multiple security vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "5.2.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PHP project reports:</p>\n\t<blockquote cite=\"http://www.php.net/releases/5_2_5.php\">\n\t  <p>Security Enhancements and Fixes in PHP 5.2.5:</p>\n\t  <ul>\n\t    <li>Fixed dl() to only accept filenames. Reported by Laurent\n\t      Gaffie.</li>\n\t    <li>Fixed dl() to limit argument size to MAXPATHLEN (CVE-2007-4887).\n\t      Reported by Laurent Gaffie.</li>\n\t    <li>Fixed htmlentities/htmlspecialchars not to accept partial\n\t      multibyte sequences. Reported by Rasmus Lerdorf</li>\n\t    <li>Fixed possible triggering of buffer overflows inside glibc\n\t      implementations of the fnmatch(), setlocale() and glob()\n\t      functions.  Reported by Laurent Gaffie.</li>\n\t    <li>Fixed \"mail.force_extra_parameters\" php.ini directive not to be\n\t      modifiable in .htaccess due to the security implications. Reported\n\t      by SecurityReason.</li>\n\t    <li>Fixed bug #42869 (automatic session id insertion adds sessions\n\t      id to non-local forms).</li>\n\t    <li>Fixed bug #41561 (Values set with php_admin_* in httpd.conf can\n\t      be overwritten with ini_set()).</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2007-4887"
-    ],
-    "bid": [
-      "26403"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-11-08",
-    "entry": "2007-11-16"
-  }
+	"vid": "392b5b1d-9471-11dc-9db7-001c2514716c",
+	"topic": "php -- multiple security vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "5.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PHP project reports:</p>\n\t<blockquote cite=\"http://www.php.net/releases/5_2_5.php\">\n\t  <p>Security Enhancements and Fixes in PHP 5.2.5:</p>\n\t  <ul>\n\t    <li>Fixed dl() to only accept filenames. Reported by Laurent\n\t      Gaffie.</li>\n\t    <li>Fixed dl() to limit argument size to MAXPATHLEN (CVE-2007-4887).\n\t      Reported by Laurent Gaffie.</li>\n\t    <li>Fixed htmlentities/htmlspecialchars not to accept partial\n\t      multibyte sequences. Reported by Rasmus Lerdorf</li>\n\t    <li>Fixed possible triggering of buffer overflows inside glibc\n\t      implementations of the fnmatch(), setlocale() and glob()\n\t      functions.  Reported by Laurent Gaffie.</li>\n\t    <li>Fixed \"mail.force_extra_parameters\" php.ini directive not to be\n\t      modifiable in .htaccess due to the security implications. Reported\n\t      by SecurityReason.</li>\n\t    <li>Fixed bug #42869 (automatic session id insertion adds sessions\n\t      id to non-local forms).</li>\n\t    <li>Fixed bug #41561 (Values set with php_admin_* in httpd.conf can\n\t      be overwritten with ini_set()).</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2007-4887"
+		],
+		"bid": [
+			"26403"
+		]
+	},
+	"dates": {
+		"discovery": "2007-11-08",
+		"entry": "2007-11-16"
+	}
 }

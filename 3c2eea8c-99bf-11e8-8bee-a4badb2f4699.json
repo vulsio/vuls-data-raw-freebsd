@@ -1,41 +1,41 @@
 {
-  "vid": "3c2eea8c-99bf-11e8-8bee-a4badb2f4699",
-  "topic": "FreeBSD -- Resource exhaustion in TCP reassembly",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "11.2_1",
-          "ge": "11.2"
-        },
-        {
-          "lt": "11.1_12",
-          "ge": "11.1"
-        },
-        {
-          "lt": "10.4_10",
-          "ge": "10.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>One of the data structures that holds TCP segments uses\n\tan inefficient algorithm to reassemble the data. This causes\n\tthe CPU time spent on segment processing to grow linearly\n\twith the number of segments in the reassembly queue.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who has the ability to send TCP traffic to\n\ta victim system can degrade the victim system's network\n\tperformance and/or consume excessive CPU by exploiting the\n\tinefficiency of TCP reassembly handling, with relatively\n\tsmall bandwidth cost.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2018-6922"
-    ],
-    "freebsd_sa": [
-      "SA-18:08.tcp"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-08-06",
-    "entry": "2018-08-06"
-  }
+	"vid": "3c2eea8c-99bf-11e8-8bee-a4badb2f4699",
+	"topic": "FreeBSD -- Resource exhaustion in TCP reassembly",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "11.2_1",
+					"ge": "11.2"
+				},
+				{
+					"lt": "11.1_12",
+					"ge": "11.1"
+				},
+				{
+					"lt": "10.4_10",
+					"ge": "10.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>One of the data structures that holds TCP segments uses\n\tan inefficient algorithm to reassemble the data. This causes\n\tthe CPU time spent on segment processing to grow linearly\n\twith the number of segments in the reassembly queue.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who has the ability to send TCP traffic to\n\ta victim system can degrade the victim system's network\n\tperformance and/or consume excessive CPU by exploiting the\n\tinefficiency of TCP reassembly handling, with relatively\n\tsmall bandwidth cost.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2018-6922"
+		],
+		"freebsd_sa": [
+			"SA-18:08.tcp"
+		]
+	},
+	"dates": {
+		"discovery": "2018-08-06",
+		"entry": "2018-08-06"
+	}
 }

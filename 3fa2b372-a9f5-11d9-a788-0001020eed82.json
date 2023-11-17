@@ -1,38 +1,38 @@
 {
-  "vid": "3fa2b372-a9f5-11d9-a788-0001020eed82",
-  "topic": "gaim -- remote DoS on receiving malformed HTML",
-  "affects": [
-    {
-      "name": [
-        "gaim",
-        "ja-gaim",
-        "ko-gaim",
-        "ru-gaim"
-      ],
-      "range": [
-        {
-          "lt": "1.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The GAIM team reports:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=13\">\n\t  <p>The gaim_markup_strip_html function in Gaim 1.2.0, and\n\t    possibly earlier versions, allows remote attackers to\n\t    cause a denial of service (application crash) via a string\n\t    that contains malformed HTML, which causes an\n\t    out-of-bounds read.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://gaim.sourceforge.net/security/?id=13"
-    ],
-    "cvename": [
-      "CVE-2005-0965"
-    ],
-    "bid": [
-      "12999"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-04-02",
-    "entry": "2005-04-10"
-  }
+	"vid": "3fa2b372-a9f5-11d9-a788-0001020eed82",
+	"topic": "gaim -- remote DoS on receiving malformed HTML",
+	"affects": [
+		{
+			"name": [
+				"gaim",
+				"ja-gaim",
+				"ko-gaim",
+				"ru-gaim"
+			],
+			"range": [
+				{
+					"lt": "1.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The GAIM team reports:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=13\">\n\t  <p>The gaim_markup_strip_html function in Gaim 1.2.0, and\n\t    possibly earlier versions, allows remote attackers to\n\t    cause a denial of service (application crash) via a string\n\t    that contains malformed HTML, which causes an\n\t    out-of-bounds read.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://gaim.sourceforge.net/security/?id=13"
+		],
+		"cvename": [
+			"CVE-2005-0965"
+		],
+		"bid": [
+			"12999"
+		]
+	},
+	"dates": {
+		"discovery": "2005-04-02",
+		"entry": "2005-04-10"
+	}
 }

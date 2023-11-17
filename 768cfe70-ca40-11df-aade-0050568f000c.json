@@ -1,47 +1,47 @@
 {
-  "vid": "768cfe70-ca40-11df-aade-0050568f000c",
-  "topic": "FreeBSD -- OPIE off-by-one stack overflow",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.4_10",
-          "ge": "6.4"
-        },
-        {
-          "lt": "7.1_12",
-          "ge": "7.1"
-        },
-        {
-          "lt": "7.2_8",
-          "ge": "7.2"
-        },
-        {
-          "lt": "7.3_1",
-          "ge": "7.3"
-        },
-        {
-          "lt": "8.0_3",
-          "ge": "8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A programming error in the OPIE library could allow an off-by-one\n\t  buffer overflow to write a single zero byte beyond the end of an\n\t  on-stack buffer.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-10:05.opie"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-05-27",
-    "entry": "2010-10-24",
-    "modified": "2016-08-09"
-  }
+	"vid": "768cfe70-ca40-11df-aade-0050568f000c",
+	"topic": "FreeBSD -- OPIE off-by-one stack overflow",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.4_10",
+					"ge": "6.4"
+				},
+				{
+					"lt": "7.1_12",
+					"ge": "7.1"
+				},
+				{
+					"lt": "7.2_8",
+					"ge": "7.2"
+				},
+				{
+					"lt": "7.3_1",
+					"ge": "7.3"
+				},
+				{
+					"lt": "8.0_3",
+					"ge": "8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A programming error in the OPIE library could allow an off-by-one\n\t  buffer overflow to write a single zero byte beyond the end of an\n\t  on-stack buffer.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-10:05.opie"
+		]
+	},
+	"dates": {
+		"discovery": "2010-05-27",
+		"entry": "2010-10-24",
+		"modified": "2016-08-09"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "51358314-bec8-11e5-82cd-bcaec524bf84",
-  "topic": "claws-mail -- no bounds checking on the output buffer in conv_jistoeuc, conv_euctojis, conv_sjistoeuc",
-  "affects": [
-    {
-      "name": [
-        "claws-mail"
-      ],
-      "range": [
-        {
-          "lt": "3.13.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>DrWhax reports:</p>\n\t<blockquote cite=\"http://www.thewildbeast.co.uk/claws-mail/bugzilla/show_bug.cgi?id=3557\">\n\t  <p>So in codeconv.c there is a function for Japanese character set\n\t    conversion called conv_jistoeuc().  There is no bounds checking on\n\t    the output buffer, which is created on the stack with alloca()\n\t    Bug can be triggered by sending an email to TAILS_luser@riseup.net\n\t    or whatever.\n\n\t    Since my C is completely rusty, you might be able to make a better\n\t    judgment on the severity of this issue. Marking critical for now.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://security-tracker.debian.org/tracker/CVE-2015-8614"
-    ],
-    "cvename": [
-      "CVE-2015-8614"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-11-04",
-    "entry": "2016-01-19"
-  }
+	"vid": "51358314-bec8-11e5-82cd-bcaec524bf84",
+	"topic": "claws-mail -- no bounds checking on the output buffer in conv_jistoeuc, conv_euctojis, conv_sjistoeuc",
+	"affects": [
+		{
+			"name": [
+				"claws-mail"
+			],
+			"range": [
+				{
+					"lt": "3.13.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>DrWhax reports:</p>\n\t<blockquote cite=\"http://www.thewildbeast.co.uk/claws-mail/bugzilla/show_bug.cgi?id=3557\">\n\t  <p>So in codeconv.c there is a function for Japanese character set\n\t    conversion called conv_jistoeuc().  There is no bounds checking on\n\t    the output buffer, which is created on the stack with alloca()\n\t    Bug can be triggered by sending an email to TAILS_luser@riseup.net\n\t    or whatever.\n\n\t    Since my C is completely rusty, you might be able to make a better\n\t    judgment on the severity of this issue. Marking critical for now.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://security-tracker.debian.org/tracker/CVE-2015-8614"
+		],
+		"cvename": [
+			"CVE-2015-8614"
+		]
+	},
+	"dates": {
+		"discovery": "2015-11-04",
+		"entry": "2016-01-19"
+	}
 }

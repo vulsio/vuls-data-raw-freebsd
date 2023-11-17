@@ -1,34 +1,34 @@
 {
-  "vid": "48e83187-b6e9-11e6-b6cf-5453ed2e2b49",
-  "topic": "p7zip -- Null pointer dereference",
-  "affects": [
-    {
-      "name": [
-        "p7zip"
-      ],
-      "range": [
-        {
-          "lt": "15.14_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9296\">\n\t  <p>A null pointer dereference bug affects the 16.02 and many old\n\t    versions of p7zip. A lack of null pointer check for the variable\n\t    <code>folders.PackPositions</code> in function\n\t    <code>CInArchive::ReadAndDecodePackedStreams</code>, as used in\n\t    the 7z.so library and in 7z applications, will cause a crash and a\n\t    denial of service when decoding malformed 7z files.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://sourceforge.net/p/p7zip/discussion/383043/thread/648d34db/",
-      "https://sourceforge.net/p/p7zip/bugs/185/",
-      "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9296"
-    ],
-    "cvename": [
-      "CVE-2016-9296"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-07-17",
-    "entry": "2016-11-30"
-  }
+	"vid": "48e83187-b6e9-11e6-b6cf-5453ed2e2b49",
+	"topic": "p7zip -- Null pointer dereference",
+	"affects": [
+		{
+			"name": [
+				"p7zip"
+			],
+			"range": [
+				{
+					"lt": "15.14_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9296\">\n\t  <p>A null pointer dereference bug affects the 16.02 and many old\n\t    versions of p7zip. A lack of null pointer check for the variable\n\t    <code>folders.PackPositions</code> in function\n\t    <code>CInArchive::ReadAndDecodePackedStreams</code>, as used in\n\t    the 7z.so library and in 7z applications, will cause a crash and a\n\t    denial of service when decoding malformed 7z files.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://sourceforge.net/p/p7zip/discussion/383043/thread/648d34db/",
+			"https://sourceforge.net/p/p7zip/bugs/185/",
+			"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9296"
+		],
+		"cvename": [
+			"CVE-2016-9296"
+		]
+	},
+	"dates": {
+		"discovery": "2016-07-17",
+		"entry": "2016-11-30"
+	}
 }

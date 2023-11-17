@@ -1,31 +1,31 @@
 {
-  "vid": "77e2e631-e742-11e3-9a25-5404a6a6412c",
-  "topic": "mumble -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mumble"
-      ],
-      "range": [
-        {
-          "lt": "1.2.6",
-          "ge": "1.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mumble reports:</p>\n\t<blockquote cite=\"http://blog.mumble.info/mumble-1-2-6/\">\n\t  <p>SVG images with local file references could trigger client DoS</p>\n\t  <p>The Mumble client did not properly HTML-escape some external strings\n\t    before using them in a rich-text (HTML) context.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://mumble.info/security/Mumble-SA-2014-005.txt",
-      "http://mumble.info/security/Mumble-SA-2014-006.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-04-16",
-    "entry": "2014-05-29"
-  }
+	"vid": "77e2e631-e742-11e3-9a25-5404a6a6412c",
+	"topic": "mumble -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mumble"
+			],
+			"range": [
+				{
+					"lt": "1.2.6",
+					"ge": "1.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mumble reports:</p>\n\t<blockquote cite=\"http://blog.mumble.info/mumble-1-2-6/\">\n\t  <p>SVG images with local file references could trigger client DoS</p>\n\t  <p>The Mumble client did not properly HTML-escape some external strings\n\t    before using them in a rich-text (HTML) context.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://mumble.info/security/Mumble-SA-2014-005.txt",
+			"http://mumble.info/security/Mumble-SA-2014-006.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2014-04-16",
+		"entry": "2014-05-29"
+	}
 }

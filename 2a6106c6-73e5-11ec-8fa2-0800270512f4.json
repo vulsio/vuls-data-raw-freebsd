@@ -1,42 +1,42 @@
 {
-  "vid": "2a6106c6-73e5-11ec-8fa2-0800270512f4",
-  "topic": "clamav -- invalid pointer read that may cause a crash",
-  "affects": [
-    {
-      "name": [
-        "clamav"
-      ],
-      "range": [
-        {
-          "lt": "0.104.2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "clamav-lts"
-      ],
-      "range": [
-        {
-          "lt": "0.103.5,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Laurent Delosieres reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2022/01/clamav-01035-and-01042-security-patch.html\">\n\t  <p>\n\t    Fix for invalid pointer read that may cause a crash. This issue affects\n\t    0.104.1, 0.103.4 and prior when ClamAV is compiled with libjson-c and the\n\t    <code>CL_SCAN_GENERAL_COLLECT_METADATA</code> scan option\n\t    (the <code>clamscan --gen-json</code> option) is enabled.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.clamav.net/2022/01/clamav-01035-and-01042-security-patch.html"
-    ],
-    "cvename": [
-      "CVE-2022-20698"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-01-12",
-    "entry": "2022-01-12"
-  }
+	"vid": "2a6106c6-73e5-11ec-8fa2-0800270512f4",
+	"topic": "clamav -- invalid pointer read that may cause a crash",
+	"affects": [
+		{
+			"name": [
+				"clamav"
+			],
+			"range": [
+				{
+					"lt": "0.104.2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"clamav-lts"
+			],
+			"range": [
+				{
+					"lt": "0.103.5,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Laurent Delosieres reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2022/01/clamav-01035-and-01042-security-patch.html\">\n\t  <p>\n\t    Fix for invalid pointer read that may cause a crash. This issue affects\n\t    0.104.1, 0.103.4 and prior when ClamAV is compiled with libjson-c and the\n\t    <code>CL_SCAN_GENERAL_COLLECT_METADATA</code> scan option\n\t    (the <code>clamscan --gen-json</code> option) is enabled.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.clamav.net/2022/01/clamav-01035-and-01042-security-patch.html"
+		],
+		"cvename": [
+			"CVE-2022-20698"
+		]
+	},
+	"dates": {
+		"discovery": "2022-01-12",
+		"entry": "2022-01-12"
+	}
 }

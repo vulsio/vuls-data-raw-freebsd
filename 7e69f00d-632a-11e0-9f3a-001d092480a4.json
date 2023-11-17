@@ -1,42 +1,42 @@
 {
-  "vid": "7e69f00d-632a-11e0-9f3a-001d092480a4",
-  "topic": "isc-dhcp-client -- dhclient does not strip or escape shell meta-characters",
-  "affects": [
-    {
-      "name": [
-        "isc-dhcp31-client"
-      ],
-      "range": [
-        {
-          "lt": "3.1.ESV_1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "isc-dhcp41-client"
-      ],
-      "range": [
-        {
-          "lt": "4.1.e,2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"http://www.isc.org/software/dhcp/advisories/cve-2011-0997\">\n\t  <p>ISC dhclient did not strip or escape certain shell meta-characters\n\t    in responses from the dhcp server (like hostname) before passing the\n\t    responses on to dhclient-script. Depending on the script and OS,\n\t    this can result in execution of exploit code on the client.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2011-0997"
-    ],
-    "cert_vu": [
-      "107886"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-04-05",
-    "entry": "2011-04-10"
-  }
+	"vid": "7e69f00d-632a-11e0-9f3a-001d092480a4",
+	"topic": "isc-dhcp-client -- dhclient does not strip or escape shell meta-characters",
+	"affects": [
+		{
+			"name": [
+				"isc-dhcp31-client"
+			],
+			"range": [
+				{
+					"lt": "3.1.ESV_1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"isc-dhcp41-client"
+			],
+			"range": [
+				{
+					"lt": "4.1.e,2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"http://www.isc.org/software/dhcp/advisories/cve-2011-0997\">\n\t  <p>ISC dhclient did not strip or escape certain shell meta-characters\n\t    in responses from the dhcp server (like hostname) before passing the\n\t    responses on to dhclient-script. Depending on the script and OS,\n\t    this can result in execution of exploit code on the client.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2011-0997"
+		],
+		"cert_vu": [
+			"107886"
+		]
+	},
+	"dates": {
+		"discovery": "2011-04-05",
+		"entry": "2011-04-10"
+	}
 }

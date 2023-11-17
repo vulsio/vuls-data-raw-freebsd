@@ -1,32 +1,32 @@
 {
-  "vid": "880552c4-f63f-11eb-9d56-7186043316e9",
-  "topic": "go -- net/http: panic due to racy read of persistConn after handler panic",
-  "affects": [
-    {
-      "name": [
-        "go"
-      ],
-      "range": [
-        {
-          "lt": "1.16.7,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/46866\">\n\t  <p>A net/http/httputil ReverseProxy can panic due to a race\n\t  condition if its Handler aborts with ErrAbortHandler, for\n\t  example due to an error in copying the response body. An\n\t  attacker might be able to force the conditions leading to\n\t  the race condition.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/golang/go/issues/46866"
-    ],
-    "cvename": [
-      "CVE-2021-36221"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-06-21",
-    "entry": "2021-08-05"
-  }
+	"vid": "880552c4-f63f-11eb-9d56-7186043316e9",
+	"topic": "go -- net/http: panic due to racy read of persistConn after handler panic",
+	"affects": [
+		{
+			"name": [
+				"go"
+			],
+			"range": [
+				{
+					"lt": "1.16.7,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/46866\">\n\t  <p>A net/http/httputil ReverseProxy can panic due to a race\n\t  condition if its Handler aborts with ErrAbortHandler, for\n\t  example due to an error in copying the response body. An\n\t  attacker might be able to force the conditions leading to\n\t  the race condition.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/golang/go/issues/46866"
+		],
+		"cvename": [
+			"CVE-2021-36221"
+		]
+	},
+	"dates": {
+		"discovery": "2021-06-21",
+		"entry": "2021-08-05"
+	}
 }

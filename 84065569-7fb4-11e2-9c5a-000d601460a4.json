@@ -1,33 +1,33 @@
 {
-  "vid": "84065569-7fb4-11e2-9c5a-000d601460a4",
-  "topic": "otrs -- XSS vulnerability could lead to remote code execution",
-  "affects": [
-    {
-      "name": [
-        "otrs"
-      ],
-      "range": [
-        {
-          "lt": "3.1.11",
-          "ge": "3.1.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OTRS Project reports:</p>\n\t<blockquote cite=\"http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2012-03\">\n\t  <p>This advisory covers vulnerabilities discovered in the OTRS core\n\t  system. This is a variance of the XSS vulnerability, where an attacker\n\t  could send a specially prepared HTML email to OTRS which would cause\n\t  JavaScript code to be executed in your browser while displaying the\n\t  email. In this case this is achieved by using javascript source\n\t  attributes with whitespaces.</p>\n\t  <p>Affected by this vulnerability are all releases of OTRS 2.4.x up to\n\t  and including 2.4.14, 3.0.x up to and including 3.0.16 and 3.1.x up to\n\t  and including 3.1.10.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2012-03"
-    ],
-    "cvename": [
-      "CVE-2012-4751"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-10-16",
-    "entry": "2013-02-25"
-  }
+	"vid": "84065569-7fb4-11e2-9c5a-000d601460a4",
+	"topic": "otrs -- XSS vulnerability could lead to remote code execution",
+	"affects": [
+		{
+			"name": [
+				"otrs"
+			],
+			"range": [
+				{
+					"lt": "3.1.11",
+					"ge": "3.1.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OTRS Project reports:</p>\n\t<blockquote cite=\"http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2012-03\">\n\t  <p>This advisory covers vulnerabilities discovered in the OTRS core\n\t  system. This is a variance of the XSS vulnerability, where an attacker\n\t  could send a specially prepared HTML email to OTRS which would cause\n\t  JavaScript code to be executed in your browser while displaying the\n\t  email. In this case this is achieved by using javascript source\n\t  attributes with whitespaces.</p>\n\t  <p>Affected by this vulnerability are all releases of OTRS 2.4.x up to\n\t  and including 2.4.14, 3.0.x up to and including 3.0.16 and 3.1.x up to\n\t  and including 3.1.10.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2012-03"
+		],
+		"cvename": [
+			"CVE-2012-4751"
+		]
+	},
+	"dates": {
+		"discovery": "2012-10-16",
+		"entry": "2013-02-25"
+	}
 }

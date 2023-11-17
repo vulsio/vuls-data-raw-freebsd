@@ -1,65 +1,65 @@
 {
-  "vid": "ebd84c96-dd7e-11e4-854e-3c970e169bc2",
-  "topic": "ntp -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ntp"
-      ],
-      "range": [
-        {
-          "lt": "4.2.8p2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ntp-devel"
-      ],
-      "range": [
-        {
-          "lt": "4.3.14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.1_9",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_13",
-          "ge": "9.3"
-        },
-        {
-          "lt": "8.4_27",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ntp.org reports:</p>\n\t<blockquote cite=\"http://archive.ntp.org/ntp4/ChangeLog-stable\">\n\t  <ul>\n\t    <li>[Sec 2779] ntpd accepts unauthenticated packets\n\t      with symmetric key crypto.</li>\n\t    <li>[Sec 2781] Authentication doesn't protect symmetric\n\t      associations against DoS attacks.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://archive.ntp.org/ntp4/ChangeLog-stable"
-    ],
-    "cvename": [
-      "CVE-2015-1798",
-      "CVE-2015-1799"
-    ],
-    "freebsd_sa": [
-      "SA-15:07.ntp"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-04-07",
-    "entry": "2015-04-07"
-  }
+	"vid": "ebd84c96-dd7e-11e4-854e-3c970e169bc2",
+	"topic": "ntp -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ntp"
+			],
+			"range": [
+				{
+					"lt": "4.2.8p2"
+				}
+			]
+		},
+		{
+			"name": [
+				"ntp-devel"
+			],
+			"range": [
+				{
+					"lt": "4.3.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.1_9",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_13",
+					"ge": "9.3"
+				},
+				{
+					"lt": "8.4_27",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ntp.org reports:</p>\n\t<blockquote cite=\"http://archive.ntp.org/ntp4/ChangeLog-stable\">\n\t  <ul>\n\t    <li>[Sec 2779] ntpd accepts unauthenticated packets\n\t      with symmetric key crypto.</li>\n\t    <li>[Sec 2781] Authentication doesn't protect symmetric\n\t      associations against DoS attacks.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://archive.ntp.org/ntp4/ChangeLog-stable"
+		],
+		"cvename": [
+			"CVE-2015-1798",
+			"CVE-2015-1799"
+		],
+		"freebsd_sa": [
+			"SA-15:07.ntp"
+		]
+	},
+	"dates": {
+		"discovery": "2015-04-07",
+		"entry": "2015-04-07"
+	}
 }

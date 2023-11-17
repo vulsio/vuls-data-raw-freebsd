@@ -1,32 +1,32 @@
 {
-  "vid": "9908a1cc-35ad-424d-be0b-7e56abd5931a",
-  "topic": "sympa -- Denial of service caused by malformed CSRF token",
-  "affects": [
-    {
-      "name": [
-        "sympa"
-      ],
-      "range": [
-        {
-          "lt": "6.2.54"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Javier Moreno discovered a vulnerability in Sympa web\n\t   interface that can cause denial of service (DoS) attack.</p>\n\t<p>By submitting requests with malformed parameters, this\n\t   flaw allows to create junk files in Sympa's directory\n\t   for temporary files. And particularly by tampering token\n\t   to prevent CSRF, it allows to originate exessive\n\t   notification messages to listmasters.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "https://sympa-community.github.io/security/2020-001.html"
-    ],
-    "cvename": [
-      "CVE-2020-9369"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-02-24",
-    "entry": "2020-05-22"
-  }
+	"vid": "9908a1cc-35ad-424d-be0b-7e56abd5931a",
+	"topic": "sympa -- Denial of service caused by malformed CSRF token",
+	"affects": [
+		{
+			"name": [
+				"sympa"
+			],
+			"range": [
+				{
+					"lt": "6.2.54"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Javier Moreno discovered a vulnerability in Sympa web\n\t   interface that can cause denial of service (DoS) attack.</p>\n\t<p>By submitting requests with malformed parameters, this\n\t   flaw allows to create junk files in Sympa's directory\n\t   for temporary files. And particularly by tampering token\n\t   to prevent CSRF, it allows to originate exessive\n\t   notification messages to listmasters.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://sympa-community.github.io/security/2020-001.html"
+		],
+		"cvename": [
+			"CVE-2020-9369"
+		]
+	},
+	"dates": {
+		"discovery": "2020-02-24",
+		"entry": "2020-05-22"
+	}
 }

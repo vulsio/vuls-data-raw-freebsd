@@ -1,39 +1,39 @@
 {
-  "vid": "57bb5e3d-3c4f-11e5-a4d4-001e8c75030d",
-  "topic": "subversion -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.8.14",
-          "ge": "1.8.0"
-        },
-        {
-          "lt": "1.7.21",
-          "ge": "1.7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion reports:</p>\n\t<blockquote cite=\"http://svn.haxx.se/dev/archive-2015-08/0024.shtml\">\n\t  <p>CVE-2015-3184:<br/>\n\t     Subversion's mod_authz_svn does not properly restrict anonymous access\n\t     in some mixed anonymous/authenticated environments when\n\t     using Apache httpd 2.4.</p>\n\t  <p>CVE-2015-3187:<br/>\n\t     Subversion servers, both httpd and svnserve, will reveal some\n\t     paths that should be hidden by path-based authz.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://subversion.apache.org/security/CVE-2015-3184-advisory.txt",
-      "http://subversion.apache.org/security/CVE-2015-3187-advisory.txt"
-    ],
-    "cvename": [
-      "CVE-2015-3184",
-      "CVE-2015-3187"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-07-27",
-    "entry": "2015-08-06"
-  }
+	"vid": "57bb5e3d-3c4f-11e5-a4d4-001e8c75030d",
+	"topic": "subversion -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"subversion"
+			],
+			"range": [
+				{
+					"lt": "1.8.14",
+					"ge": "1.8.0"
+				},
+				{
+					"lt": "1.7.21",
+					"ge": "1.7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion reports:</p>\n\t<blockquote cite=\"http://svn.haxx.se/dev/archive-2015-08/0024.shtml\">\n\t  <p>CVE-2015-3184:<br/>\n\t     Subversion's mod_authz_svn does not properly restrict anonymous access\n\t     in some mixed anonymous/authenticated environments when\n\t     using Apache httpd 2.4.</p>\n\t  <p>CVE-2015-3187:<br/>\n\t     Subversion servers, both httpd and svnserve, will reveal some\n\t     paths that should be hidden by path-based authz.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://subversion.apache.org/security/CVE-2015-3184-advisory.txt",
+			"http://subversion.apache.org/security/CVE-2015-3187-advisory.txt"
+		],
+		"cvename": [
+			"CVE-2015-3184",
+			"CVE-2015-3187"
+		]
+	},
+	"dates": {
+		"discovery": "2015-07-27",
+		"entry": "2015-08-06"
+	}
 }

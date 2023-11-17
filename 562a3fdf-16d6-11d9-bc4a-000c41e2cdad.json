@@ -1,69 +1,69 @@
 {
-  "vid": "562a3fdf-16d6-11d9-bc4a-000c41e2cdad",
-  "topic": "php -- vulnerability in RFC 1867 file upload processing",
-  "affects": [
-    {
-      "name": [
-        "php4",
-        "php4-cgi"
-      ],
-      "range": [
-        {
-          "le": "4.3.8_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_php4"
-      ],
-      "range": [
-        {
-          "le": "4.3.8_2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php5",
-        "php5-cgi"
-      ],
-      "range": [
-        {
-          "le": "5.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_php5"
-      ],
-      "range": [
-        {
-          "le": "5.0.1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stefano Di Paola discovered an issue with PHP that\n\t  could allow someone to upload a file to any directory\n\t  writeable by the httpd process. Any sanitizing performed on\n\t  the prepended directory path is ignored. This bug can only\n\t  be triggered if the $_FILES element name contains an\n\t  underscore.</p>\n      "
-  },
-  "references": {
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109534848430404",
-        "msgid": "1095268057.2818.20.camel@localhost"
-      },
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109648426331965",
-        "msgid": "1096478151.3220.6.camel@localhost"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-15",
-    "entry": "2004-09-15",
-    "modified": "2004-10-12"
-  }
+	"vid": "562a3fdf-16d6-11d9-bc4a-000c41e2cdad",
+	"topic": "php -- vulnerability in RFC 1867 file upload processing",
+	"affects": [
+		{
+			"name": [
+				"php4",
+				"php4-cgi"
+			],
+			"range": [
+				{
+					"le": "4.3.8_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_php4"
+			],
+			"range": [
+				{
+					"le": "4.3.8_2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"php5",
+				"php5-cgi"
+			],
+			"range": [
+				{
+					"le": "5.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_php5"
+			],
+			"range": [
+				{
+					"le": "5.0.1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stefano Di Paola discovered an issue with PHP that\n\t  could allow someone to upload a file to any directory\n\t  writeable by the httpd process. Any sanitizing performed on\n\t  the prepended directory path is ignored. This bug can only\n\t  be triggered if the $_FILES element name contains an\n\t  underscore.</p>\n      "
+	},
+	"references": {
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109534848430404",
+				"msgid": "1095268057.2818.20.camel@localhost"
+			},
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109648426331965",
+				"msgid": "1096478151.3220.6.camel@localhost"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-15",
+		"entry": "2004-09-15",
+		"modified": "2004-10-12"
+	}
 }

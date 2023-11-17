@@ -1,78 +1,78 @@
 {
-  "vid": "4c9159ea-d4c9-11eb-aeee-8c164582fbac",
-  "topic": "Ansible -- Templating engine bug",
-  "affects": [
-    {
-      "name": [
-        "py36-ansible-core",
-        "py37-ansible-core",
-        "py38-ansible-core",
-        "py39-ansible-core"
-      ],
-      "range": [
-        {
-          "lt": "2.11.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py36-ansible-base",
-        "py37-ansible-base",
-        "py38-ansible-base",
-        "py39-ansible-base"
-      ],
-      "range": [
-        {
-          "lt": "2.10.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py36-ansible2",
-        "py37-ansible2",
-        "py38-ansible2",
-        "py39-ansible2"
-      ],
-      "range": [
-        {
-          "lt": "2.9.23"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py36-ansible",
-        "py37-ansible",
-        "py38-ansible",
-        "py39-ansible"
-      ],
-      "range": [
-        {
-          "lt": "2.9.23"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ansible developers report:</p>\n\t<blockquote cite=\"https://github.com/ansible/ansible/blob/stable-2.11/changelogs/CHANGELOG-v2.11.rst#security-fixes\">\n\t  <p>Templating engine fix for not preserving usnafe status\n\t    when trying to preserve newlines.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/ansible/ansible/blob/stable-2.11/changelogs/CHANGELOG-v2.11.rst#security-fixes",
-      "https://github.com/ansible/ansible/blob/stable-2.10/changelogs/CHANGELOG-v2.10.rst#security-fixes",
-      "https://github.com/ansible/ansible/pull/74960",
-      "https://groups.google.com/g/ansible-announce/c/tmIgD1DpZJg"
-    ],
-    "cvename": [
-      "CVE-2021-3583"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-06-10",
-    "entry": "2021-06-24",
-    "modified": "2021-06-25"
-  }
+	"vid": "4c9159ea-d4c9-11eb-aeee-8c164582fbac",
+	"topic": "Ansible -- Templating engine bug",
+	"affects": [
+		{
+			"name": [
+				"py36-ansible-core",
+				"py37-ansible-core",
+				"py38-ansible-core",
+				"py39-ansible-core"
+			],
+			"range": [
+				{
+					"lt": "2.11.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"py36-ansible-base",
+				"py37-ansible-base",
+				"py38-ansible-base",
+				"py39-ansible-base"
+			],
+			"range": [
+				{
+					"lt": "2.10.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"py36-ansible2",
+				"py37-ansible2",
+				"py38-ansible2",
+				"py39-ansible2"
+			],
+			"range": [
+				{
+					"lt": "2.9.23"
+				}
+			]
+		},
+		{
+			"name": [
+				"py36-ansible",
+				"py37-ansible",
+				"py38-ansible",
+				"py39-ansible"
+			],
+			"range": [
+				{
+					"lt": "2.9.23"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ansible developers report:</p>\n\t<blockquote cite=\"https://github.com/ansible/ansible/blob/stable-2.11/changelogs/CHANGELOG-v2.11.rst#security-fixes\">\n\t  <p>Templating engine fix for not preserving usnafe status\n\t    when trying to preserve newlines.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/ansible/ansible/blob/stable-2.11/changelogs/CHANGELOG-v2.11.rst#security-fixes",
+			"https://github.com/ansible/ansible/blob/stable-2.10/changelogs/CHANGELOG-v2.10.rst#security-fixes",
+			"https://github.com/ansible/ansible/pull/74960",
+			"https://groups.google.com/g/ansible-announce/c/tmIgD1DpZJg"
+		],
+		"cvename": [
+			"CVE-2021-3583"
+		]
+	},
+	"dates": {
+		"discovery": "2021-06-10",
+		"entry": "2021-06-24",
+		"modified": "2021-06-25"
+	}
 }

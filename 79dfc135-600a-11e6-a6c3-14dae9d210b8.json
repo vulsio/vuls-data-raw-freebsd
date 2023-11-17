@@ -1,41 +1,41 @@
 {
-  "vid": "79dfc135-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- TCP MD5 signature denial of service",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.2_9",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_26",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_33",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A programming error in processing a TCP connection with\n\tboth TCP_MD5SIG and TCP_NOOPT socket options may lead to\n\tkernel crash.</p>\n\t<h1>Impact:</h1>\n\t<p>A local attacker can crash the kernel, resulting in a\n\tdenial-of-service.</p>\n\t<p>A remote attack is theoretically possible, if server has\n\ta listening socket with TCP_NOOPT set, and server is either\n\tout of SYN cache entries, or SYN cache is disabled by\n\tconfiguration.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-1882"
-    ],
-    "freebsd_sa": [
-      "SA-16:05.tcp"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-14",
-    "entry": "2016-08-11"
-  }
+	"vid": "79dfc135-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- TCP MD5 signature denial of service",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.2_9",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_26",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_33",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A programming error in processing a TCP connection with\n\tboth TCP_MD5SIG and TCP_NOOPT socket options may lead to\n\tkernel crash.</p>\n\t<h1>Impact:</h1>\n\t<p>A local attacker can crash the kernel, resulting in a\n\tdenial-of-service.</p>\n\t<p>A remote attack is theoretically possible, if server has\n\ta listening socket with TCP_NOOPT set, and server is either\n\tout of SYN cache entries, or SYN cache is disabled by\n\tconfiguration.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-1882"
+		],
+		"freebsd_sa": [
+			"SA-16:05.tcp"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-14",
+		"entry": "2016-08-11"
+	}
 }

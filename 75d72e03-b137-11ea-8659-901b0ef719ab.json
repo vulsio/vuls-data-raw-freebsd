@@ -1,33 +1,33 @@
 {
-  "vid": "75d72e03-b137-11ea-8659-901b0ef719ab",
-  "topic": "BIND -- Remote Denial of Service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "bind916"
-      ],
-      "range": [
-        {
-          "lt": "9.16.4",
-          "ge": "9.16.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/docs/cve-2020-8618\">\n\t  <p>An assertion check in BIND (that is meant to prevent going beyond\n\t    the end of a buffer when processing incoming data) can be\n\t    incorrectly triggered by a large response during zone transfer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://kb.isc.org/docs/cve-2020-8618"
-    ],
-    "cvename": [
-      "CVE-2020-8618"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-06-17",
-    "entry": "2020-06-18"
-  }
+	"vid": "75d72e03-b137-11ea-8659-901b0ef719ab",
+	"topic": "BIND -- Remote Denial of Service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"bind916"
+			],
+			"range": [
+				{
+					"lt": "9.16.4",
+					"ge": "9.16.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/docs/cve-2020-8618\">\n\t  <p>An assertion check in BIND (that is meant to prevent going beyond\n\t    the end of a buffer when processing incoming data) can be\n\t    incorrectly triggered by a large response during zone transfer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://kb.isc.org/docs/cve-2020-8618"
+		],
+		"cvename": [
+			"CVE-2020-8618"
+		]
+	},
+	"dates": {
+		"discovery": "2020-06-17",
+		"entry": "2020-06-18"
+	}
 }

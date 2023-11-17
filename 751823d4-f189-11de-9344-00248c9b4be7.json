@@ -1,43 +1,43 @@
 {
-  "vid": "751823d4-f189-11de-9344-00248c9b4be7",
-  "topic": "drupal -- multiple cross-site scripting",
-  "affects": [
-    {
-      "name": [
-        "drupal5"
-      ],
-      "range": [
-        {
-          "lt": "5.21"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Drupal Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/661586\">\n\t  <p>The Contact module does not correctly handle certain user input\n\t    when displaying category information. Users privileged to create\n\t    contact categories can insert arbitrary HTML and script code into the\n\t    contact module administration page. Such a cross-site scripting attack\n\t    may lead to the malicious user gaining administrative access.</p>\n\t  <p>The Menu module does not correctly handle certain user input when\n\t    displaying the menu administration overview. Users privileged to\n\t    create new menus can insert arbitrary HTML and script code into the\n\t    menu module administration page. Such a cross-site scripting attack\n\t    may lead to the malicious user gaining administrative access.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://drupal.org/node/661586"
-    ],
-    "cvename": [
-      "CVE-2009-4370"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-12-16",
-    "entry": "2009-12-25",
-    "modified": "2010-05-02"
-  }
+	"vid": "751823d4-f189-11de-9344-00248c9b4be7",
+	"topic": "drupal -- multiple cross-site scripting",
+	"affects": [
+		{
+			"name": [
+				"drupal5"
+			],
+			"range": [
+				{
+					"lt": "5.21"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Drupal Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/661586\">\n\t  <p>The Contact module does not correctly handle certain user input\n\t    when displaying category information. Users privileged to create\n\t    contact categories can insert arbitrary HTML and script code into the\n\t    contact module administration page. Such a cross-site scripting attack\n\t    may lead to the malicious user gaining administrative access.</p>\n\t  <p>The Menu module does not correctly handle certain user input when\n\t    displaying the menu administration overview. Users privileged to\n\t    create new menus can insert arbitrary HTML and script code into the\n\t    menu module administration page. Such a cross-site scripting attack\n\t    may lead to the malicious user gaining administrative access.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://drupal.org/node/661586"
+		],
+		"cvename": [
+			"CVE-2009-4370"
+		]
+	},
+	"dates": {
+		"discovery": "2009-12-16",
+		"entry": "2009-12-25",
+		"modified": "2010-05-02"
+	}
 }

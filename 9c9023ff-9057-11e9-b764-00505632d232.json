@@ -1,30 +1,30 @@
 {
-  "vid": "9c9023ff-9057-11e9-b764-00505632d232",
-  "topic": "netatalk3 -- remote code execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "netatalk3"
-      ],
-      "range": [
-        {
-          "lt": "3.1.12,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NIST reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2018-1160\">\n\t  <p>Netatalk before 3.1.12 is vulnerable to an out of bounds write in dsi_opensess.c. This is due to lack of bounds checking on attacker controlled data. A remote unauthenticated attacker can leverage this vulnerability to achieve arbitrary code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2018-1160",
-      "https://medium.com/tenable-techblog/exploiting-an-18-year-old-bug-b47afe54172"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-10",
-    "entry": "2019-06-16"
-  }
+	"vid": "9c9023ff-9057-11e9-b764-00505632d232",
+	"topic": "netatalk3 -- remote code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"netatalk3"
+			],
+			"range": [
+				{
+					"lt": "3.1.12,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NIST reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2018-1160\">\n\t  <p>Netatalk before 3.1.12 is vulnerable to an out of bounds write in dsi_opensess.c. This is due to lack of bounds checking on attacker controlled data. A remote unauthenticated attacker can leverage this vulnerability to achieve arbitrary code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2018-1160",
+			"https://medium.com/tenable-techblog/exploiting-an-18-year-old-bug-b47afe54172"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-10",
+		"entry": "2019-06-16"
+	}
 }

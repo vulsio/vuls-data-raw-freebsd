@@ -1,48 +1,48 @@
 {
-  "vid": "97edf5ab-b319-11d9-837d-000e0c2e438a",
-  "topic": "junkbuster -- heap corruption vulnerability and configuration modification vulnerability",
-  "affects": [
-    {
-      "name": [
-        "junkbuster"
-      ],
-      "range": [
-        {
-          "lt": "2.0.2_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "junkbuster-zlib"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Debian advisory reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-713\">\n\t  <p>James Ranson discovered that an attacker can modify the\n\t    referrer setting with a carefully crafted URL by accidently\n\t    overwriting a global variable.</p>\n\t  <p>Tavis Ormandy from the Gentoo Security Team discovered\n\t    several heap corruptions due to inconsistent use of an\n\t    internal function that can crash the daemon or possibly\n\t    lead to the execution of arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.debian.org/security/2005/dsa-713",
-      "http://www.gentoo.org/security/en/glsa/glsa-200504-11.xml"
-    ],
-    "cvename": [
-      "CVE-2005-1108",
-      "CVE-2005-1109"
-    ],
-    "bid": [
-      "13146",
-      "13147"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-04-13",
-    "entry": "2005-04-22"
-  }
+	"vid": "97edf5ab-b319-11d9-837d-000e0c2e438a",
+	"topic": "junkbuster -- heap corruption vulnerability and configuration modification vulnerability",
+	"affects": [
+		{
+			"name": [
+				"junkbuster"
+			],
+			"range": [
+				{
+					"lt": "2.0.2_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"junkbuster-zlib"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Debian advisory reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-713\">\n\t  <p>James Ranson discovered that an attacker can modify the\n\t    referrer setting with a carefully crafted URL by accidently\n\t    overwriting a global variable.</p>\n\t  <p>Tavis Ormandy from the Gentoo Security Team discovered\n\t    several heap corruptions due to inconsistent use of an\n\t    internal function that can crash the daemon or possibly\n\t    lead to the execution of arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.debian.org/security/2005/dsa-713",
+			"http://www.gentoo.org/security/en/glsa/glsa-200504-11.xml"
+		],
+		"cvename": [
+			"CVE-2005-1108",
+			"CVE-2005-1109"
+		],
+		"bid": [
+			"13146",
+			"13147"
+		]
+	},
+	"dates": {
+		"discovery": "2005-04-13",
+		"entry": "2005-04-22"
+	}
 }

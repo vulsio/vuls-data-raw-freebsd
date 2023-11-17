@@ -1,73 +1,73 @@
 {
-  "vid": "fe93803c-883f-11e8-9f0c-001b216d295b",
-  "topic": "Several Security Defects in the Bouncy Castle Crypto APIs",
-  "affects": [
-    {
-      "name": [
-        "bouncycastle"
-      ],
-      "range": [
-        {
-          "lt": "1.60"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bouncycastle15"
-      ],
-      "range": [
-        {
-          "lt": "1.60"
-        }
-      ]
-    },
-    {
-      "name": [
-        "puppetserver"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "puppetserver5"
-      ],
-      "range": [
-        {
-          "lt": "5.3.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "puppetserver6"
-      ],
-      "range": [
-        {
-          "lt": "6.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Legion of the Bouncy Castle reports:</p>\n\t<blockquote cite=\"https://www.bouncycastle.org/latest_releases.html\">\n\t  <p>Release 1.60 is now available for download.</p>\n\t  <p>CVE-2018-1000180: issue around primality tests for RSA key pair\n\t     generation if done using only the low-level API.</p>\n\t  <p>CVE-2018-1000613: lack of class checking in deserialization\n\t     of XMSS/XMSS^MT private keys with BDS state information.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.bouncycastle.org/latest_releases.html"
-    ],
-    "cvename": [
-      "CVE-2018-1000180",
-      "CVE-2018-1000613"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-06-30",
-    "entry": "2018-07-15"
-  }
+	"vid": "fe93803c-883f-11e8-9f0c-001b216d295b",
+	"topic": "Several Security Defects in the Bouncy Castle Crypto APIs",
+	"affects": [
+		{
+			"name": [
+				"bouncycastle"
+			],
+			"range": [
+				{
+					"lt": "1.60"
+				}
+			]
+		},
+		{
+			"name": [
+				"bouncycastle15"
+			],
+			"range": [
+				{
+					"lt": "1.60"
+				}
+			]
+		},
+		{
+			"name": [
+				"puppetserver"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"puppetserver5"
+			],
+			"range": [
+				{
+					"lt": "5.3.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"puppetserver6"
+			],
+			"range": [
+				{
+					"lt": "6.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Legion of the Bouncy Castle reports:</p>\n\t<blockquote cite=\"https://www.bouncycastle.org/latest_releases.html\">\n\t  <p>Release 1.60 is now available for download.</p>\n\t  <p>CVE-2018-1000180: issue around primality tests for RSA key pair\n\t     generation if done using only the low-level API.</p>\n\t  <p>CVE-2018-1000613: lack of class checking in deserialization\n\t     of XMSS/XMSS^MT private keys with BDS state information.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.bouncycastle.org/latest_releases.html"
+		],
+		"cvename": [
+			"CVE-2018-1000180",
+			"CVE-2018-1000613"
+		]
+	},
+	"dates": {
+		"discovery": "2018-06-30",
+		"entry": "2018-07-15"
+	}
 }

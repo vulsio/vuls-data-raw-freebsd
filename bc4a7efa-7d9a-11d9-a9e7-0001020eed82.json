@@ -1,38 +1,38 @@
 {
-  "vid": "bc4a7efa-7d9a-11d9-a9e7-0001020eed82",
-  "topic": "ngircd -- format string vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ngircd"
-      ],
-      "range": [
-        {
-          "lt": "0.8.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A No System Group security advisory reports that ngircd is\n\t  vulnerable to a format string vulnerability in the\n\t  <code>Log_Resolver()</code> function of log.c, if IDENT\n\t  support is enabled.  This could allow a remote attacker to\n\t  execute arbitrary code with the permissions of the ngircd\n\t  daemon, which is <q>root</q> by default.</p>\n\t<p><strong>Note:</strong> By default the FreeBSD ngircd port\n\t  does not enable IDENT support.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-0226"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110746413108183",
-        "msgid": "20050203020909.21785.qmail@www.securityfocus.com"
-      }
-    ],
-    "bid": [
-      "12434"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-03",
-    "entry": "2005-02-13"
-  }
+	"vid": "bc4a7efa-7d9a-11d9-a9e7-0001020eed82",
+	"topic": "ngircd -- format string vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ngircd"
+			],
+			"range": [
+				{
+					"lt": "0.8.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A No System Group security advisory reports that ngircd is\n\t  vulnerable to a format string vulnerability in the\n\t  <code>Log_Resolver()</code> function of log.c, if IDENT\n\t  support is enabled.  This could allow a remote attacker to\n\t  execute arbitrary code with the permissions of the ngircd\n\t  daemon, which is <q>root</q> by default.</p>\n\t<p><strong>Note:</strong> By default the FreeBSD ngircd port\n\t  does not enable IDENT support.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-0226"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110746413108183",
+				"msgid": "20050203020909.21785.qmail@www.securityfocus.com"
+			}
+		],
+		"bid": [
+			"12434"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-03",
+		"entry": "2005-02-13"
+	}
 }

@@ -1,34 +1,34 @@
 {
-  "vid": "930def19-3e05-11ec-9ba8-002324b2fba8",
-  "topic": "go -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "go"
-      ],
-      "range": [
-        {
-          "lt": "1.17.3,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/48990\">\n\t  <p>debug/macho fails out when loading a file that contains a dynamic\n\t    symbol table command that indicates a larger number of symbols than\n\t    exist in the loaded symbol table.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/48085\">\n\t  <p>Previously, opening a zip with (*Reader).Open could result in a\n\t    panic if the zip contained a file whose name was exclusively made up\n\t    of slash characters or \"..\" path elements. Open could also panic if\n\t    passed the empty string directly as an argument.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/golang/go/issues/48990",
-      "https://github.com/golang/go/issues/48085"
-    ],
-    "cvename": [
-      "CVE-2021-41771",
-      "CVE-2021-41772"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-11-04",
-    "entry": "2021-11-05"
-  }
+	"vid": "930def19-3e05-11ec-9ba8-002324b2fba8",
+	"topic": "go -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"go"
+			],
+			"range": [
+				{
+					"lt": "1.17.3,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/48990\">\n\t  <p>debug/macho fails out when loading a file that contains a dynamic\n\t    symbol table command that indicates a larger number of symbols than\n\t    exist in the loaded symbol table.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/48085\">\n\t  <p>Previously, opening a zip with (*Reader).Open could result in a\n\t    panic if the zip contained a file whose name was exclusively made up\n\t    of slash characters or \"..\" path elements. Open could also panic if\n\t    passed the empty string directly as an argument.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/golang/go/issues/48990",
+			"https://github.com/golang/go/issues/48085"
+		],
+		"cvename": [
+			"CVE-2021-41771",
+			"CVE-2021-41772"
+		]
+	},
+	"dates": {
+		"discovery": "2021-11-04",
+		"entry": "2021-11-05"
+	}
 }

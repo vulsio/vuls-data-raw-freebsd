@@ -1,34 +1,34 @@
 {
-  "vid": "f4bf713f-6ac7-4b76-8980-47bf90c5419f",
-  "topic": "memcached -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "memcached"
-      ],
-      "range": [
-        {
-          "lt": "1.4.33"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Cisco Talos reports:</p>\n\t<blockquote cite=\"http://blog.talosintel.com/2016/10/memcached-vulnerabilities.html\">\n\t  <p>Multiple integer overflow vulnerabilities exist within Memcached\n\t    that could be exploited to achieve remote code execution on the\n\t    targeted system. These vulnerabilities manifest in various Memcached\n\t    functions that are used in inserting, appending, prepending, or\n\t    modifying key-value data pairs. Systems which also have Memcached\n\t    compiled with support for SASL authentication are also vulnerable to\n\t    a third flaw due to how Memcached handles SASL authentication\n\t    commands.</p>\n\t  <p>An attacker could exploit these vulnerabilities by sending a\n\t    specifically crafted Memcached command to the targeted server.\n\t    Additionally, these vulnerabilities could also be exploited to leak\n\t    sensitive process information which an attacker could use to bypass\n\t    common exploitation mitigations, such as ASLR, and can be triggered\n\t    multiple times. This enables reliable exploitation which makes these\n\t    vulnerabilities severe.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://blog.talosintel.com/2016/10/memcached-vulnerabilities.html"
-    ],
-    "cvename": [
-      "CVE-2016-8704",
-      "CVE-2016-8705",
-      "CVE-2016-8706"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-10-31",
-    "entry": "2016-11-02"
-  }
+	"vid": "f4bf713f-6ac7-4b76-8980-47bf90c5419f",
+	"topic": "memcached -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"memcached"
+			],
+			"range": [
+				{
+					"lt": "1.4.33"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Cisco Talos reports:</p>\n\t<blockquote cite=\"http://blog.talosintel.com/2016/10/memcached-vulnerabilities.html\">\n\t  <p>Multiple integer overflow vulnerabilities exist within Memcached\n\t    that could be exploited to achieve remote code execution on the\n\t    targeted system. These vulnerabilities manifest in various Memcached\n\t    functions that are used in inserting, appending, prepending, or\n\t    modifying key-value data pairs. Systems which also have Memcached\n\t    compiled with support for SASL authentication are also vulnerable to\n\t    a third flaw due to how Memcached handles SASL authentication\n\t    commands.</p>\n\t  <p>An attacker could exploit these vulnerabilities by sending a\n\t    specifically crafted Memcached command to the targeted server.\n\t    Additionally, these vulnerabilities could also be exploited to leak\n\t    sensitive process information which an attacker could use to bypass\n\t    common exploitation mitigations, such as ASLR, and can be triggered\n\t    multiple times. This enables reliable exploitation which makes these\n\t    vulnerabilities severe.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://blog.talosintel.com/2016/10/memcached-vulnerabilities.html"
+		],
+		"cvename": [
+			"CVE-2016-8704",
+			"CVE-2016-8705",
+			"CVE-2016-8706"
+		]
+	},
+	"dates": {
+		"discovery": "2016-10-31",
+		"entry": "2016-11-02"
+	}
 }

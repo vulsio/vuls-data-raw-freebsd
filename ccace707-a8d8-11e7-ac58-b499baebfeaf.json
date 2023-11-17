@@ -1,32 +1,32 @@
 {
-  "vid": "ccace707-a8d8-11e7-ac58-b499baebfeaf",
-  "topic": "cURL -- out of bounds read",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.56.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20171004.html\">\n\t  <p>FTP PWD response parser out of bounds read</p>\n\t  <p>libcurl may read outside of a heap allocated buffer when doing FTP.</p>\n\t  <p>When libcurl connects to an FTP server and successfully logs in\n\t    (anonymous or not), it asks the server for the current directory with\n\t    the PWD command. The server then responds with a 257 response containing\n\t    the path, inside double quotes. The returned path name is then kept by\n\t    libcurl for subsequent uses.</p>\n\t  <p>Due to a flaw in the string parser for this directory name, a directory\n\t    name passed like this but without a closing double quote would lead to\n\t    libcurl not adding a trailing NUL byte to the buffer holding the name.\n\t    When libcurl would then later access the string, it could read beyond\n\t    the allocated heap buffer and crash or wrongly access data beyond the\n\t    buffer, thinking it was part of the path.</p>\n\t  <p>A malicious server could abuse this fact and effectively prevent\n\t    libcurl-based clients to work with it - the PWD command is always issued\n\t    on new FTP connections and the mistake has a high chance of causing a\n\t    segfault.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/adv_20171004.html"
-    ],
-    "cvename": [
-      "CVE-2017-1000254"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-10-04",
-    "entry": "2017-10-04"
-  }
+	"vid": "ccace707-a8d8-11e7-ac58-b499baebfeaf",
+	"topic": "cURL -- out of bounds read",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.56.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20171004.html\">\n\t  <p>FTP PWD response parser out of bounds read</p>\n\t  <p>libcurl may read outside of a heap allocated buffer when doing FTP.</p>\n\t  <p>When libcurl connects to an FTP server and successfully logs in\n\t    (anonymous or not), it asks the server for the current directory with\n\t    the PWD command. The server then responds with a 257 response containing\n\t    the path, inside double quotes. The returned path name is then kept by\n\t    libcurl for subsequent uses.</p>\n\t  <p>Due to a flaw in the string parser for this directory name, a directory\n\t    name passed like this but without a closing double quote would lead to\n\t    libcurl not adding a trailing NUL byte to the buffer holding the name.\n\t    When libcurl would then later access the string, it could read beyond\n\t    the allocated heap buffer and crash or wrongly access data beyond the\n\t    buffer, thinking it was part of the path.</p>\n\t  <p>A malicious server could abuse this fact and effectively prevent\n\t    libcurl-based clients to work with it - the PWD command is always issued\n\t    on new FTP connections and the mistake has a high chance of causing a\n\t    segfault.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/adv_20171004.html"
+		],
+		"cvename": [
+			"CVE-2017-1000254"
+		]
+	},
+	"dates": {
+		"discovery": "2017-10-04",
+		"entry": "2017-10-04"
+	}
 }

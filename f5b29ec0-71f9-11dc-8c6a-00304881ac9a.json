@@ -1,36 +1,36 @@
 {
-  "vid": "f5b29ec0-71f9-11dc-8c6a-00304881ac9a",
-  "topic": "ImageMagick -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ImageMagick",
-        "ImageMagick-nox11"
-      ],
-      "range": [
-        {
-          "lt": "6.3.5.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Multiple vulnerabilities have been discovered in ImageMagick.</p>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4985\">\n\t  <p>ImageMagick before 6.3.5-9 allows context-dependent attackers\n\t    to cause a denial of service via a crafted image file that\n\t    triggers (1) an infinite loop in the ReadDCMImage function,\n\t    related to ReadBlobByte function calls; or (2) an infinite\n\t    loop in the ReadXCFImage function, related to ReadBlobMSBLong\n\t    function calls.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4986\">\n\t  <p>Multiple integer overflows in ImageMagick before 6.3.5-9\n\t    allow context-dependent attackers to execute arbitrary code\n\t    via a crafted (1) .dcm, (2) .dib, (3) .xbm, (4) .xcf, or (5)\n\t    .xwd image file, which triggers a heap-based buffer overflow.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4987\">\n\t  <p>Off-by-one error in the ReadBlobString function in blob.c in\n\t    ImageMagick before 6.3.5-9 allows context-dependent attackers\n\t    to execute arbitrary code via a crafted image file, which\n\t    triggers the writing of a '\\0' character to an out-of-bounds\n\t    address.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4988\">\n\t  <p>Sign extension error in the ReadDIBImage function in\n\t    ImageMagick before 6.3.5-9 allows context-dependent attackers\n\t    to execute arbitrary code via a crafted width value in an\n\t    image file, which triggers an integer overflow and a\n\t    heap-based buffer overflow.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://studio.imagemagick.org/pipermail/magick-announce/2007-September/000037.html"
-    ],
-    "cvename": [
-      "CVE-2007-4985",
-      "CVE-2007-4986",
-      "CVE-2007-4987",
-      "CVE-2007-4988"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-09-19",
-    "entry": "2007-10-10"
-  }
+	"vid": "f5b29ec0-71f9-11dc-8c6a-00304881ac9a",
+	"topic": "ImageMagick -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ImageMagick",
+				"ImageMagick-nox11"
+			],
+			"range": [
+				{
+					"lt": "6.3.5.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Multiple vulnerabilities have been discovered in ImageMagick.</p>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4985\">\n\t  <p>ImageMagick before 6.3.5-9 allows context-dependent attackers\n\t    to cause a denial of service via a crafted image file that\n\t    triggers (1) an infinite loop in the ReadDCMImage function,\n\t    related to ReadBlobByte function calls; or (2) an infinite\n\t    loop in the ReadXCFImage function, related to ReadBlobMSBLong\n\t    function calls.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4986\">\n\t  <p>Multiple integer overflows in ImageMagick before 6.3.5-9\n\t    allow context-dependent attackers to execute arbitrary code\n\t    via a crafted (1) .dcm, (2) .dib, (3) .xbm, (4) .xcf, or (5)\n\t    .xwd image file, which triggers a heap-based buffer overflow.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4987\">\n\t  <p>Off-by-one error in the ReadBlobString function in blob.c in\n\t    ImageMagick before 6.3.5-9 allows context-dependent attackers\n\t    to execute arbitrary code via a crafted image file, which\n\t    triggers the writing of a '\\0' character to an out-of-bounds\n\t    address.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4988\">\n\t  <p>Sign extension error in the ReadDIBImage function in\n\t    ImageMagick before 6.3.5-9 allows context-dependent attackers\n\t    to execute arbitrary code via a crafted width value in an\n\t    image file, which triggers an integer overflow and a\n\t    heap-based buffer overflow.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://studio.imagemagick.org/pipermail/magick-announce/2007-September/000037.html"
+		],
+		"cvename": [
+			"CVE-2007-4985",
+			"CVE-2007-4986",
+			"CVE-2007-4987",
+			"CVE-2007-4988"
+		]
+	},
+	"dates": {
+		"discovery": "2007-09-19",
+		"entry": "2007-10-10"
+	}
 }

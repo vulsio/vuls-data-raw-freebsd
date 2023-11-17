@@ -1,43 +1,43 @@
 {
-  "vid": "3b7c7f6c-7102-11d8-873f-0020ed76ef5a",
-  "topic": "wu-ftpd ftpaccess `restricted-uid'/`restricted-gid' directive may be bypassed",
-  "affects": [
-    {
-      "name": [
-        "wu-ftpd"
-      ],
-      "range": [
-        {
-          "le": "2.6.2_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "wu-ftpd+ipv6"
-      ],
-      "range": [
-        {
-          "le": "2.6.2_5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Glenn Stewart reports a bug in wu-ftpd's ftpaccess\n\t  `restricted-uid'/`restricted-gid' directives:</p>\n\t<blockquote>\n\t  <p>Users can get around the restriction to their home\n\t    directory by issuing a simple chmod command on their home\n\t    directory. On the next ftp log in, the user will have '/'\n\t    as their root directory.</p>\n\t</blockquote>\n\t<p>Matt Zimmerman discovered that the cause of the bug was a\n\t  missing check for a restricted user within a code path that\n\t  is executed only when a certain error is encountered.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0148"
-    ],
-    "bid": [
-      "9832"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-02-17",
-    "entry": "2004-03-08",
-    "modified": "2004-03-29"
-  }
+	"vid": "3b7c7f6c-7102-11d8-873f-0020ed76ef5a",
+	"topic": "wu-ftpd ftpaccess `restricted-uid'/`restricted-gid' directive may be bypassed",
+	"affects": [
+		{
+			"name": [
+				"wu-ftpd"
+			],
+			"range": [
+				{
+					"le": "2.6.2_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"wu-ftpd+ipv6"
+			],
+			"range": [
+				{
+					"le": "2.6.2_5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Glenn Stewart reports a bug in wu-ftpd's ftpaccess\n\t  `restricted-uid'/`restricted-gid' directives:</p>\n\t<blockquote>\n\t  <p>Users can get around the restriction to their home\n\t    directory by issuing a simple chmod command on their home\n\t    directory. On the next ftp log in, the user will have '/'\n\t    as their root directory.</p>\n\t</blockquote>\n\t<p>Matt Zimmerman discovered that the cause of the bug was a\n\t  missing check for a restricted user within a code path that\n\t  is executed only when a certain error is encountered.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0148"
+		],
+		"bid": [
+			"9832"
+		]
+	},
+	"dates": {
+		"discovery": "2004-02-17",
+		"entry": "2004-03-08",
+		"modified": "2004-03-29"
+	}
 }

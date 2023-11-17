@@ -1,36 +1,36 @@
 {
-  "vid": "c848059a-318b-11ec-aa15-0800270512f4",
-  "topic": "fail2ban -- possible RCE vulnerability in mailing action using mailutils",
-  "affects": [
-    {
-      "name": [
-        "py36-fail2ban",
-        "py37-fail2ban",
-        "py38-fail2ban",
-        "py39-fail2ban",
-        "py310-fail2ban"
-      ],
-      "range": [
-        {
-          "lt": "0.11.2_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jakub Żoczek reports:</p>\n\t<blockquote cite=\"https://github.com/fail2ban/fail2ban/security/advisories/GHSA-m985-3f3v-cwmm\">\n\t  <p>\n\t    Command <code>mail</code> from mailutils package used in mail actions\n\t    like <code>mail-whois</code> can execute command if unescaped sequences\n\t    (<code>\\n~</code>) are available in \"foreign\" input (for instance in\n\t    whois output).\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/fail2ban/fail2ban/security/advisories/GHSA-m985-3f3v-cwmm"
-    ],
-    "cvename": [
-      "CVE-2021-32749"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-07-16",
-    "entry": "2021-10-28"
-  }
+	"vid": "c848059a-318b-11ec-aa15-0800270512f4",
+	"topic": "fail2ban -- possible RCE vulnerability in mailing action using mailutils",
+	"affects": [
+		{
+			"name": [
+				"py36-fail2ban",
+				"py37-fail2ban",
+				"py38-fail2ban",
+				"py39-fail2ban",
+				"py310-fail2ban"
+			],
+			"range": [
+				{
+					"lt": "0.11.2_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jakub Żoczek reports:</p>\n\t<blockquote cite=\"https://github.com/fail2ban/fail2ban/security/advisories/GHSA-m985-3f3v-cwmm\">\n\t  <p>\n\t    Command <code>mail</code> from mailutils package used in mail actions\n\t    like <code>mail-whois</code> can execute command if unescaped sequences\n\t    (<code>\\n~</code>) are available in \"foreign\" input (for instance in\n\t    whois output).\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/fail2ban/fail2ban/security/advisories/GHSA-m985-3f3v-cwmm"
+		],
+		"cvename": [
+			"CVE-2021-32749"
+		]
+	},
+	"dates": {
+		"discovery": "2021-07-16",
+		"entry": "2021-10-28"
+	}
 }

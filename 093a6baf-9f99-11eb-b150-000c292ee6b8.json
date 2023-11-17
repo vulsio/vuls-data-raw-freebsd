@@ -1,33 +1,33 @@
 {
-  "vid": "093a6baf-9f99-11eb-b150-000c292ee6b8",
-  "topic": "Consul -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "consul"
-      ],
-      "range": [
-        {
-          "lt": "1.9.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Hashicorp reports:</p>\n\t<blockquote cite=\"https://github.com/hashicorp/consul/releases/tag/v1.9.5\">\n\t  <p>Add content-type headers to raw KV responses to prevent XSS attacks\n\t  (CVE-2020-25864).  audit-logging: Parse endpoint URL to prevent\n\t  requests from bypassing the audit log (CVE-2021-28156).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/hashicorp/consul/releases/tag/v1.9.5"
-    ],
-    "cvename": [
-      "CVE-2020-25864",
-      "CVE-2021-28156"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-04-15",
-    "entry": "2021-04-17"
-  }
+	"vid": "093a6baf-9f99-11eb-b150-000c292ee6b8",
+	"topic": "Consul -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"consul"
+			],
+			"range": [
+				{
+					"lt": "1.9.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Hashicorp reports:</p>\n\t<blockquote cite=\"https://github.com/hashicorp/consul/releases/tag/v1.9.5\">\n\t  <p>Add content-type headers to raw KV responses to prevent XSS attacks\n\t  (CVE-2020-25864).  audit-logging: Parse endpoint URL to prevent\n\t  requests from bypassing the audit log (CVE-2021-28156).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/hashicorp/consul/releases/tag/v1.9.5"
+		],
+		"cvename": [
+			"CVE-2020-25864",
+			"CVE-2021-28156"
+		]
+	},
+	"dates": {
+		"discovery": "2021-04-15",
+		"entry": "2021-04-17"
+	}
 }

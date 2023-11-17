@@ -1,37 +1,37 @@
 {
-  "vid": "b31f7029-817c-4c1f-b7d3-252de5283393",
-  "topic": "py-suds -- vulnerable to symlink attacks",
-  "affects": [
-    {
-      "name": [
-        "py37-suds",
-        "py38-suds",
-        "py39-suds",
-        "py310-suds",
-        "py311-suds"
-      ],
-      "range": [
-        {
-          "lt": "1.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>SUSE reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2013-32\">\n      <p>cache.py in Suds 0.4, when tempdir is set to None, allows local users to redirect SOAP queries and possibly have other unspecified impact via a symlink attack on a cache file with a predictable name in /tmp/suds/.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/PYSEC-2013-32"
-    ],
-    "cvename": [
-      "CVE-2013-2217"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-09-23",
-    "entry": "2023-04-09",
-    "modified": "2023-07-08"
-  }
+	"vid": "b31f7029-817c-4c1f-b7d3-252de5283393",
+	"topic": "py-suds -- vulnerable to symlink attacks",
+	"affects": [
+		{
+			"name": [
+				"py37-suds",
+				"py38-suds",
+				"py39-suds",
+				"py310-suds",
+				"py311-suds"
+			],
+			"range": [
+				{
+					"lt": "1.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>SUSE reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2013-32\">\n      <p>cache.py in Suds 0.4, when tempdir is set to None, allows local users to redirect SOAP queries and possibly have other unspecified impact via a symlink attack on a cache file with a predictable name in /tmp/suds/.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/PYSEC-2013-32"
+		],
+		"cvename": [
+			"CVE-2013-2217"
+		]
+	},
+	"dates": {
+		"discovery": "2013-09-23",
+		"entry": "2023-04-09",
+		"modified": "2023-07-08"
+	}
 }

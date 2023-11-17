@@ -1,69 +1,69 @@
 {
-  "vid": "2a86f45a-fc3c-11e8-a414-00155d006b02",
-  "topic": "node.js -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "node6"
-      ],
-      "range": [
-        {
-          "lt": "6.15.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node8"
-      ],
-      "range": [
-        {
-          "lt": "8.14.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node10"
-      ],
-      "range": [
-        {
-          "lt": "10.14.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "11.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/\">\n\t  <p>Updates are now available for all active Node.js release lines. These include fixes for the vulnerabilities identified in the initial announcement. They also include upgrades of Node.js 6 and 8 to OpenSSL 1.0.2q, and upgrades of Node.js 10 and 11 to OpenSSL 1.1.0j.</p>\n\t  <p>We recommend that all Node.js users upgrade to a version listed below as soon as possible.</p>\n\t  <h1>Debugger port 5858 listens on any interface by default (CVE-2018-12120)</h1>\n\t  <p>All versions of Node.js 6 are vulnerable and the severity is HIGH. When the debugger is enabled with <code>node --debug</code> or <code>node debug</code>, it listens to port 5858 on all interfaces by default. This may allow remote computers to attach to the debug port and evaluate arbitrary JavaScript. The default interface is now localhost. It has always been possible to start the debugger on a specific interface, such as <code>node --debug=localhost</code>. The debugger was removed in Node.js 8 and replaced with the inspector, so no versions from 8 and later are vulnerable.</p>\n\t  <h1>Denial of Service with large HTTP headers (CVE-2018-12121)</h1>\n\t  <p>All versions of 6 and later are vulnerable and the severity is HIGH. By using a combination of many requests with maximum sized headers (almost 80 KB per connection), and carefully timed completion of the headers, it is possible to cause the HTTP server to abort from heap allocation failure. Attack potential is mitigated by the use of a load balancer or other proxy layer.</p>\n\t  <p>The total size of HTTP headers received by Node.js now must not exceed 8192 bytes.</p>\n\t  <h1>\"Slowloris\" HTTP Denial of Service (CVE-2018-12122)</h1>\n\t  <p>All versions of Node.js 6 and later are vulnerable and the severity is LOW. An attacker can cause a Denial of Service (DoS) by sending headers very slowly keeping HTTP or HTTPS connections and associated resources alive for a long period of time. Attack potential is mitigated by the use of a load balancer or other proxy layer.</p>\n\t  <p>A timeout of 40 seconds now applies to servers receiving HTTP headers. This value can be adjusted with <code>server.headersTimeout</code>. Where headers are not completely received within this period, the socket is destroyed on the next received chunk. In conjunction with <code>server.setTimeout()</code>, this aids in protecting against excessive resource retention and possible Denial of Service.</p>\n\t  <h1>Hostname spoofing in URL parser for javascript protocol (CVE-2018-12123)</h1>\n\t  <p>All versions of Node.js 6 and later are vulnerable and the severity is LOW. If a Node.js application is using <code>url.parse()</code> to determine the URL hostname, that hostname can be spoofed by using a mixed case \"javascript:\" (e.g. \"javAscript:\") protocol (other protocols are not affected). If security decisions are made about the URL based on the hostname, they may be incorrect.</p>\n\t  <h1>HTTP request splitting (CVE-2018-12116)</h1>\n\t  <p>Node.js 6 and 8 are vulnerable and the severity is MEDIUM. If Node.js can be convinced to use unsanitized user-provided Unicode data for the <code>path</code> option of an HTTP request, then data can be provided which will trigger a second, unexpected, and user-defined HTTP request to made to the same server.</p>\n\t  <h1>OpenSSL Timing vulnerability in ECDSA signature generation (CVE-2018-0735)</h1>\n\t  <p>The OpenSSL ECDSA signature algorithm has been shown to be vulnerable to a timing side-channel attack. An attacker could use variations in the signing algorithm to recover the private key.</p>\n\t  <h1>OpenSSL Timing vulnerability in DSA signature generation (CVE-2018-0734)</h1>\n\t  <p>The OpenSSL DSA signature algorithm has been shown to be vulnerable to a timing side-channel attack. An attacker could use variations in the signing algorithm to recover the private key.</p>\n\t  <h1>OpenSSL Microarchitecture timing vulnerability in ECC scalar multiplication (CVE-2018-5407)</h1>\n\t  <p>OpenSSL ECC scalar multiplication, used in e.g. ECDSA and ECDH, has been shown to be vulnerable to a microarchitecture timing side-channel attack. An attacker with sufficient access to mount local timing attacks during ECDSA signature generation could recover the private key.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2018-12120",
-      "CVE-2018-12121",
-      "CVE-2018-12122",
-      "CVE-2018-12123",
-      "CVE-2018-12116",
-      "CVE-2018-0735",
-      "CVE-2018-0734",
-      "CVE-2018-5407"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-27",
-    "entry": "2018-12-10"
-  }
+	"vid": "2a86f45a-fc3c-11e8-a414-00155d006b02",
+	"topic": "node.js -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"node6"
+			],
+			"range": [
+				{
+					"lt": "6.15.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node8"
+			],
+			"range": [
+				{
+					"lt": "8.14.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node10"
+			],
+			"range": [
+				{
+					"lt": "10.14.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "11.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/\">\n\t  <p>Updates are now available for all active Node.js release lines. These include fixes for the vulnerabilities identified in the initial announcement. They also include upgrades of Node.js 6 and 8 to OpenSSL 1.0.2q, and upgrades of Node.js 10 and 11 to OpenSSL 1.1.0j.</p>\n\t  <p>We recommend that all Node.js users upgrade to a version listed below as soon as possible.</p>\n\t  <h1>Debugger port 5858 listens on any interface by default (CVE-2018-12120)</h1>\n\t  <p>All versions of Node.js 6 are vulnerable and the severity is HIGH. When the debugger is enabled with <code>node --debug</code> or <code>node debug</code>, it listens to port 5858 on all interfaces by default. This may allow remote computers to attach to the debug port and evaluate arbitrary JavaScript. The default interface is now localhost. It has always been possible to start the debugger on a specific interface, such as <code>node --debug=localhost</code>. The debugger was removed in Node.js 8 and replaced with the inspector, so no versions from 8 and later are vulnerable.</p>\n\t  <h1>Denial of Service with large HTTP headers (CVE-2018-12121)</h1>\n\t  <p>All versions of 6 and later are vulnerable and the severity is HIGH. By using a combination of many requests with maximum sized headers (almost 80 KB per connection), and carefully timed completion of the headers, it is possible to cause the HTTP server to abort from heap allocation failure. Attack potential is mitigated by the use of a load balancer or other proxy layer.</p>\n\t  <p>The total size of HTTP headers received by Node.js now must not exceed 8192 bytes.</p>\n\t  <h1>\"Slowloris\" HTTP Denial of Service (CVE-2018-12122)</h1>\n\t  <p>All versions of Node.js 6 and later are vulnerable and the severity is LOW. An attacker can cause a Denial of Service (DoS) by sending headers very slowly keeping HTTP or HTTPS connections and associated resources alive for a long period of time. Attack potential is mitigated by the use of a load balancer or other proxy layer.</p>\n\t  <p>A timeout of 40 seconds now applies to servers receiving HTTP headers. This value can be adjusted with <code>server.headersTimeout</code>. Where headers are not completely received within this period, the socket is destroyed on the next received chunk. In conjunction with <code>server.setTimeout()</code>, this aids in protecting against excessive resource retention and possible Denial of Service.</p>\n\t  <h1>Hostname spoofing in URL parser for javascript protocol (CVE-2018-12123)</h1>\n\t  <p>All versions of Node.js 6 and later are vulnerable and the severity is LOW. If a Node.js application is using <code>url.parse()</code> to determine the URL hostname, that hostname can be spoofed by using a mixed case \"javascript:\" (e.g. \"javAscript:\") protocol (other protocols are not affected). If security decisions are made about the URL based on the hostname, they may be incorrect.</p>\n\t  <h1>HTTP request splitting (CVE-2018-12116)</h1>\n\t  <p>Node.js 6 and 8 are vulnerable and the severity is MEDIUM. If Node.js can be convinced to use unsanitized user-provided Unicode data for the <code>path</code> option of an HTTP request, then data can be provided which will trigger a second, unexpected, and user-defined HTTP request to made to the same server.</p>\n\t  <h1>OpenSSL Timing vulnerability in ECDSA signature generation (CVE-2018-0735)</h1>\n\t  <p>The OpenSSL ECDSA signature algorithm has been shown to be vulnerable to a timing side-channel attack. An attacker could use variations in the signing algorithm to recover the private key.</p>\n\t  <h1>OpenSSL Timing vulnerability in DSA signature generation (CVE-2018-0734)</h1>\n\t  <p>The OpenSSL DSA signature algorithm has been shown to be vulnerable to a timing side-channel attack. An attacker could use variations in the signing algorithm to recover the private key.</p>\n\t  <h1>OpenSSL Microarchitecture timing vulnerability in ECC scalar multiplication (CVE-2018-5407)</h1>\n\t  <p>OpenSSL ECC scalar multiplication, used in e.g. ECDSA and ECDH, has been shown to be vulnerable to a microarchitecture timing side-channel attack. An attacker with sufficient access to mount local timing attacks during ECDSA signature generation could recover the private key.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/"
+		],
+		"cvename": [
+			"CVE-2018-12120",
+			"CVE-2018-12121",
+			"CVE-2018-12122",
+			"CVE-2018-12123",
+			"CVE-2018-12116",
+			"CVE-2018-0735",
+			"CVE-2018-0734",
+			"CVE-2018-5407"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-27",
+		"entry": "2018-12-10"
+	}
 }

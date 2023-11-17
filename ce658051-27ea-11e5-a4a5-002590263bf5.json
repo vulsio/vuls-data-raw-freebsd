@@ -1,33 +1,33 @@
 {
-  "vid": "ce658051-27ea-11e5-a4a5-002590263bf5",
-  "topic": "xen-kernel -- Information leak through XEN_DOMCTL_gettscinfo",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.5.0_3",
-          "ge": "4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-132.html\">\n\t  <p>The handler for XEN_DOMCTL_gettscinfo failed to initialize a\n\t    padding field subsequently copied to guest memory.</p>\n\t  <p>A similar leak existed in XEN_SYSCTL_getdomaininfolist, which is\n\t    being addressed here regardless of that operation being declared\n\t    unsafe for disaggregation by XSA-77.</p>\n\t  <p>Malicious or buggy stub domain kernels or tool stacks otherwise\n\t    living outside of Domain0 may be able to read sensitive data\n\t    relating to the hypervisor or other guests not under the control of\n\t    that domain.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-132.html"
-    ],
-    "cvename": [
-      "CVE-2015-3340"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-04-20",
-    "entry": "2015-07-11"
-  }
+	"vid": "ce658051-27ea-11e5-a4a5-002590263bf5",
+	"topic": "xen-kernel -- Information leak through XEN_DOMCTL_gettscinfo",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.5.0_3",
+					"ge": "4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-132.html\">\n\t  <p>The handler for XEN_DOMCTL_gettscinfo failed to initialize a\n\t    padding field subsequently copied to guest memory.</p>\n\t  <p>A similar leak existed in XEN_SYSCTL_getdomaininfolist, which is\n\t    being addressed here regardless of that operation being declared\n\t    unsafe for disaggregation by XSA-77.</p>\n\t  <p>Malicious or buggy stub domain kernels or tool stacks otherwise\n\t    living outside of Domain0 may be able to read sensitive data\n\t    relating to the hypervisor or other guests not under the control of\n\t    that domain.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-132.html"
+		],
+		"cvename": [
+			"CVE-2015-3340"
+		]
+	},
+	"dates": {
+		"discovery": "2015-04-20",
+		"entry": "2015-07-11"
+	}
 }

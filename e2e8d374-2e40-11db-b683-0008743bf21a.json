@@ -1,44 +1,44 @@
 {
-  "vid": "e2e8d374-2e40-11db-b683-0008743bf21a",
-  "topic": "horde -- Phishing and Cross-Site Scripting Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "horde"
-      ],
-      "range": [
-        {
-          "le": "3.1.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "imp"
-      ],
-      "range": [
-        {
-          "le": "4.1.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21500/\">\n\t  <p>Some vulnerabilities have been reported in Horde, which\n\t    can be exploited by malicious people to conduct phishing\n\t    and cross-site scripting attacks.</p>\n\t  <ol>\n\t    <li>Input passed to the \"url\" parameter in index.php isn't\n\t      properly verified before it is being used to include an\n\t      arbitrary web site in a frameset. This can e.g. be\n\t      exploited to trick a user into believing certain\n\t      malicious content is served from a trusted web site.</li>\n\t    <li>Some unspecified input passed in index.php isn't\n\t      properly sanitised before being returned to the user.\n\t      This can be exploited to execute arbitrary HTML and\n\t      script code in a user's browser session in context of an\n\t      affected site.</li>\n\t  </ol>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/21500/",
-      "http://lists.horde.org/archives/announce/2006/000292.html"
-    ],
-    "bid": [
-      "19557",
-      "19544"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-08-17",
-    "entry": "2006-08-17"
-  }
+	"vid": "e2e8d374-2e40-11db-b683-0008743bf21a",
+	"topic": "horde -- Phishing and Cross-Site Scripting Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"horde"
+			],
+			"range": [
+				{
+					"le": "3.1.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"imp"
+			],
+			"range": [
+				{
+					"le": "4.1.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21500/\">\n\t  <p>Some vulnerabilities have been reported in Horde, which\n\t    can be exploited by malicious people to conduct phishing\n\t    and cross-site scripting attacks.</p>\n\t  <ol>\n\t    <li>Input passed to the \"url\" parameter in index.php isn't\n\t      properly verified before it is being used to include an\n\t      arbitrary web site in a frameset. This can e.g. be\n\t      exploited to trick a user into believing certain\n\t      malicious content is served from a trusted web site.</li>\n\t    <li>Some unspecified input passed in index.php isn't\n\t      properly sanitised before being returned to the user.\n\t      This can be exploited to execute arbitrary HTML and\n\t      script code in a user's browser session in context of an\n\t      affected site.</li>\n\t  </ol>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/21500/",
+			"http://lists.horde.org/archives/announce/2006/000292.html"
+		],
+		"bid": [
+			"19557",
+			"19544"
+		]
+	},
+	"dates": {
+		"discovery": "2006-08-17",
+		"entry": "2006-08-17"
+	}
 }

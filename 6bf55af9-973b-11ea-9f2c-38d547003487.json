@@ -1,49 +1,49 @@
 {
-  "vid": "6bf55af9-973b-11ea-9f2c-38d547003487",
-  "topic": "salt -- multiple vulnerabilities in salt-master process",
-  "affects": [
-    {
-      "name": [
-        "py27-salt",
-        "py32-salt",
-        "py33-salt",
-        "py34-salt",
-        "py35-salt",
-        "py36-salt",
-        "py37-salt",
-        "py38-salt"
-      ],
-      "range": [
-        {
-          "lt": "2019.2.4"
-        },
-        {
-          "lt": "3000.2",
-          "ge": "3000"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>F-Secure reports:</p>\n\t<blockquote cite=\"https://labs.f-secure.com/advisories/saltstack-authorization-bypass\">\n\t  <h3>CVE-2020-11651 - Authentication bypass vulnerabilities</h3>\n\t  <p>The ClearFuncs class processes unauthenticated requests and\n\t    unintentionally exposes the _send_pub() method, which can be used to\n\t    queue messages directly on the master publish server. Such messages\n\t    can be used to trigger minions to run arbitrary commands as root.</p>\n\t  <p>The ClearFuncs class also exposes the method _prep_auth_info(),\n\t    which returns the \"root key\" used to authenticate commands from the\n\t    local root user on the master server. This \"root key\" can then be\n\t    used to remotely call administrative commands on the master server.\n\t    This unintentional exposure provides a remote un-authenticated\n\t    attacker with root-equivalent access to the salt master.</p>\n\t  <p/>\n\t  <h3>CVE-2020-11652 - Directory traversal vulnerabilities</h3>\n\t  <p>The wheel module contains commands used to read and write files\n\t    under specific directory paths. The inputs to these functions are\n\t    concatenated with the target directory and the resulting path is not\n\t    canonicalized, leading to an escape of the intended path restriction.</p>\n\t  <p>The get_token() method of the salt.tokens.localfs class (which is\n\t    exposed to unauthenticated requests by the ClearFuncs class) fails\n\t    to sanitize the token input parameter which is then used as a\n\t    filename, allowing insertion of \"..\" path elements and thus reading\n\t    of files outside of the intended directory. The only restriction is\n\t    that the file has to be deserializable by salt.payload.Serial.loads().</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2020-11651",
-      "https://nvd.nist.gov/vuln/detail/CVE-2020-11652",
-      "https://docs.saltstack.com/en/latest/topics/releases/2019.2.4.html",
-      "https://labs.f-secure.com/advisories/saltstack-authorization-bypass",
-      "https://blog.f-secure.com/new-vulnerabilities-make-exposed-salt-hosts-easy-targets/",
-      "https://www.tenable.com/blog/cve-2020-11651-cve-2020-11652-critical-salt-framework-vulnerabilities-exploited-in-the-wild"
-    ],
-    "cvename": [
-      "CVE-2020-11651",
-      "CVE-2020-11652"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-04-30",
-    "entry": "2020-05-16"
-  }
+	"vid": "6bf55af9-973b-11ea-9f2c-38d547003487",
+	"topic": "salt -- multiple vulnerabilities in salt-master process",
+	"affects": [
+		{
+			"name": [
+				"py27-salt",
+				"py32-salt",
+				"py33-salt",
+				"py34-salt",
+				"py35-salt",
+				"py36-salt",
+				"py37-salt",
+				"py38-salt"
+			],
+			"range": [
+				{
+					"lt": "2019.2.4"
+				},
+				{
+					"lt": "3000.2",
+					"ge": "3000"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>F-Secure reports:</p>\n\t<blockquote cite=\"https://labs.f-secure.com/advisories/saltstack-authorization-bypass\">\n\t  <h3>CVE-2020-11651 - Authentication bypass vulnerabilities</h3>\n\t  <p>The ClearFuncs class processes unauthenticated requests and\n\t    unintentionally exposes the _send_pub() method, which can be used to\n\t    queue messages directly on the master publish server. Such messages\n\t    can be used to trigger minions to run arbitrary commands as root.</p>\n\t  <p>The ClearFuncs class also exposes the method _prep_auth_info(),\n\t    which returns the \"root key\" used to authenticate commands from the\n\t    local root user on the master server. This \"root key\" can then be\n\t    used to remotely call administrative commands on the master server.\n\t    This unintentional exposure provides a remote un-authenticated\n\t    attacker with root-equivalent access to the salt master.</p>\n\t  <p/>\n\t  <h3>CVE-2020-11652 - Directory traversal vulnerabilities</h3>\n\t  <p>The wheel module contains commands used to read and write files\n\t    under specific directory paths. The inputs to these functions are\n\t    concatenated with the target directory and the resulting path is not\n\t    canonicalized, leading to an escape of the intended path restriction.</p>\n\t  <p>The get_token() method of the salt.tokens.localfs class (which is\n\t    exposed to unauthenticated requests by the ClearFuncs class) fails\n\t    to sanitize the token input parameter which is then used as a\n\t    filename, allowing insertion of \"..\" path elements and thus reading\n\t    of files outside of the intended directory. The only restriction is\n\t    that the file has to be deserializable by salt.payload.Serial.loads().</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2020-11651",
+			"https://nvd.nist.gov/vuln/detail/CVE-2020-11652",
+			"https://docs.saltstack.com/en/latest/topics/releases/2019.2.4.html",
+			"https://labs.f-secure.com/advisories/saltstack-authorization-bypass",
+			"https://blog.f-secure.com/new-vulnerabilities-make-exposed-salt-hosts-easy-targets/",
+			"https://www.tenable.com/blog/cve-2020-11651-cve-2020-11652-critical-salt-framework-vulnerabilities-exploited-in-the-wild"
+		],
+		"cvename": [
+			"CVE-2020-11651",
+			"CVE-2020-11652"
+		]
+	},
+	"dates": {
+		"discovery": "2020-04-30",
+		"entry": "2020-05-16"
+	}
 }

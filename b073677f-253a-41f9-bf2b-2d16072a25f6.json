@@ -1,29 +1,29 @@
 {
-  "vid": "b073677f-253a-41f9-bf2b-2d16072a25f6",
-  "topic": "minio -- MITM attack",
-  "affects": [
-    {
-      "name": [
-        "minio"
-      ],
-      "range": [
-        {
-          "lt": "2021.03.17.02.33.02"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>minio developer report:</p>\n\t<blockquote cite=\"https://github.com/minio/minio/security/advisories/GHSA-xr7r-7gpj-5pgp\">\n\t  <p>\n\t    This is a security issue because it enables MITM modification of\n\t    request bodies that are meant to have integrity guaranteed by chunk\n\t    signatures.\n\t  </p>\n\t  <p>\n\t    In a PUT request using aws-chunked encoding, MinIO ordinarily\n\t    verifies signatures at the end of a chunk. This check can be skipped\n\t    if the client sends a false chunk size that is much greater than the\n\t    actual data sent: the server accepts and completes the request\n\t    without ever reaching the end of the chunk + thereby without ever\n\t    checking the chunk signature.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/minio/minio/security/advisories/GHSA-xr7r-7gpj-5pgp"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-03-17",
-    "entry": "2021-03-17"
-  }
+	"vid": "b073677f-253a-41f9-bf2b-2d16072a25f6",
+	"topic": "minio -- MITM attack",
+	"affects": [
+		{
+			"name": [
+				"minio"
+			],
+			"range": [
+				{
+					"lt": "2021.03.17.02.33.02"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>minio developer report:</p>\n\t<blockquote cite=\"https://github.com/minio/minio/security/advisories/GHSA-xr7r-7gpj-5pgp\">\n\t  <p>\n\t    This is a security issue because it enables MITM modification of\n\t    request bodies that are meant to have integrity guaranteed by chunk\n\t    signatures.\n\t  </p>\n\t  <p>\n\t    In a PUT request using aws-chunked encoding, MinIO ordinarily\n\t    verifies signatures at the end of a chunk. This check can be skipped\n\t    if the client sends a false chunk size that is much greater than the\n\t    actual data sent: the server accepts and completes the request\n\t    without ever reaching the end of the chunk + thereby without ever\n\t    checking the chunk signature.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/minio/minio/security/advisories/GHSA-xr7r-7gpj-5pgp"
+		]
+	},
+	"dates": {
+		"discovery": "2021-03-17",
+		"entry": "2021-03-17"
+	}
 }

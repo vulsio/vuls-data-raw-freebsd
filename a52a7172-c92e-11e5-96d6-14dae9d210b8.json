@@ -1,30 +1,30 @@
 {
-  "vid": "a52a7172-c92e-11e5-96d6-14dae9d210b8",
-  "topic": "socat -- diffie hellman parameter was not prime",
-  "affects": [
-    {
-      "name": [
-        "socat"
-      ],
-      "range": [
-        {
-          "lt": "1.7.3.1",
-          "ge": "1.7.2.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>socat reports:</p>\n\t<blockquote cite=\"http://www.dest-unreach.org/socat/contrib/socat-secadv7.html\">\n\t  <p>In the OpenSSL address implementation the hard coded 1024\n\t    bit DH p parameter was not prime. The effective cryptographic strength\n\t    of a key exchange using these parameters was weaker than the one one\n\t    could get by using a prime p. Moreover, since there is no indication of\n\t    how these parameters were chosen, the existence of a trapdoor that makes\n\t    possible for an eavesdropper to recover the shared secret from a key\n\t    exchange that uses them cannot be ruled out.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.dest-unreach.org/socat/contrib/socat-secadv7.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-01",
-    "entry": "2016-02-01"
-  }
+	"vid": "a52a7172-c92e-11e5-96d6-14dae9d210b8",
+	"topic": "socat -- diffie hellman parameter was not prime",
+	"affects": [
+		{
+			"name": [
+				"socat"
+			],
+			"range": [
+				{
+					"lt": "1.7.3.1",
+					"ge": "1.7.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>socat reports:</p>\n\t<blockquote cite=\"http://www.dest-unreach.org/socat/contrib/socat-secadv7.html\">\n\t  <p>In the OpenSSL address implementation the hard coded 1024\n\t    bit DH p parameter was not prime. The effective cryptographic strength\n\t    of a key exchange using these parameters was weaker than the one one\n\t    could get by using a prime p. Moreover, since there is no indication of\n\t    how these parameters were chosen, the existence of a trapdoor that makes\n\t    possible for an eavesdropper to recover the shared secret from a key\n\t    exchange that uses them cannot be ruled out.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.dest-unreach.org/socat/contrib/socat-secadv7.html"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-01",
+		"entry": "2016-02-01"
+	}
 }

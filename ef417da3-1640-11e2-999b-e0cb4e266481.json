@@ -1,35 +1,35 @@
 {
-  "vid": "ef417da3-1640-11e2-999b-e0cb4e266481",
-  "topic": "phpMyAdmin -- Multiple XSS due to unescaped HTML output in Trigger, Procedure and Event pages and Fetching the version information from a non-SSL site is vulnerable to a MITM attack",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "3.5.3",
-          "ge": "3.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2012-6.php\">\n\t  <p>When creating/modifying a trigger, event or procedure\n\t   with a crafted name, it is possible to trigger an XSS.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2012-7.php\">\n\t  <p>To display information about the current phpMyAdmin\n\t   version on the main page, a piece of JavaScript is fetched\n\t   from the phpmyadmin.net website in non-SSL mode. A\n\t   man-in-the-middle could modify this script on the wire to\n\t   cause mischief.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2012-6.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2012-7.php"
-    ],
-    "cvename": [
-      "CVE-2012-5339",
-      "CVE-2012-5368"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-10-08",
-    "entry": "2012-10-14"
-  }
+	"vid": "ef417da3-1640-11e2-999b-e0cb4e266481",
+	"topic": "phpMyAdmin -- Multiple XSS due to unescaped HTML output in Trigger, Procedure and Event pages and Fetching the version information from a non-SSL site is vulnerable to a MITM attack",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "3.5.3",
+					"ge": "3.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2012-6.php\">\n\t  <p>When creating/modifying a trigger, event or procedure\n\t   with a crafted name, it is possible to trigger an XSS.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2012-7.php\">\n\t  <p>To display information about the current phpMyAdmin\n\t   version on the main page, a piece of JavaScript is fetched\n\t   from the phpmyadmin.net website in non-SSL mode. A\n\t   man-in-the-middle could modify this script on the wire to\n\t   cause mischief.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2012-6.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2012-7.php"
+		],
+		"cvename": [
+			"CVE-2012-5339",
+			"CVE-2012-5368"
+		]
+	},
+	"dates": {
+		"discovery": "2012-10-08",
+		"entry": "2012-10-14"
+	}
 }

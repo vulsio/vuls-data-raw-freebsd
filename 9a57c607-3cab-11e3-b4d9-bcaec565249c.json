@@ -1,37 +1,37 @@
 {
-  "vid": "9a57c607-3cab-11e3-b4d9-bcaec565249c",
-  "topic": "xorg-server -- use-after-free",
-  "affects": [
-    {
-      "name": [
-        "xorg-server"
-      ],
-      "range": [
-        {
-          "lt": "1.7.7_11",
-          "ge": "1.7.0"
-        },
-        {
-          "lt": "1.12.4_4",
-          "ge": "1.12.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Alan Coopersmith reports:</p>\n\t<blockquote cite=\"http://lists.x.org/archives/xorg-announce/2013-October/002332.html\">\n\t  <p>Pedro Ribeiro (pedrib at gmail.com) reported an issue to the X.Org\n\t    security team in which an authenticated X client can cause an X\n\t    server to use memory after it was freed, potentially leading to\n\t    crash and/or memory corruption.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.x.org/archives/xorg-announce/2013-October/002332.html"
-    ],
-    "cvename": [
-      "CVE-2013-4396"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-10-08",
-    "entry": "2013-10-24"
-  }
+	"vid": "9a57c607-3cab-11e3-b4d9-bcaec565249c",
+	"topic": "xorg-server -- use-after-free",
+	"affects": [
+		{
+			"name": [
+				"xorg-server"
+			],
+			"range": [
+				{
+					"lt": "1.7.7_11",
+					"ge": "1.7.0"
+				},
+				{
+					"lt": "1.12.4_4",
+					"ge": "1.12.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Alan Coopersmith reports:</p>\n\t<blockquote cite=\"http://lists.x.org/archives/xorg-announce/2013-October/002332.html\">\n\t  <p>Pedro Ribeiro (pedrib at gmail.com) reported an issue to the X.Org\n\t    security team in which an authenticated X client can cause an X\n\t    server to use memory after it was freed, potentially leading to\n\t    crash and/or memory corruption.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.x.org/archives/xorg-announce/2013-October/002332.html"
+		],
+		"cvename": [
+			"CVE-2013-4396"
+		]
+	},
+	"dates": {
+		"discovery": "2013-10-08",
+		"entry": "2013-10-24"
+	}
 }

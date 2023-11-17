@@ -1,36 +1,36 @@
 {
-  "vid": "8b812395-c739-11e8-ab5b-9c5c8e75236a",
-  "topic": "clamav -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "clamav"
-      ],
-      "range": [
-        {
-          "lt": "0.100.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p> Joel Esler reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2018/10/clamav-01002-has-been-released.html\">\n\t  <ul>\n\t    <li>CVE-2018-15378:\n\t      <ul>\n\t\t<li>Vulnerability in ClamAV's MEW unpacking feature that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.</li>\n\t\t<li>Reported by Secunia Research at Flexera.</li>\n\t      </ul>\n\t    </li>\n\t    <li>Fix for a 2-byte buffer over-read bug in ClamAV&amp;s PDF parsing code.\n\t      <ul>\n\t\t<li>Reported by Alex Gaynor.</li>\n\t      </ul>\n\t    </li>\n\t    <li>CVE-2018-14680:\n\t      <ul>\n\t\t<li>An issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. It does not reject blank CHM filenames.</li>\n\t      </ul>\n\t    </li>\n\t    <li>CVE-2018-14681:\n\t      <ul>\n\t\t<li>An issue was discovered in kwajd_read_headers in mspack/kwajd.c in libmspack before 0.7alpha. Bad KWAJ file header extensions could cause a one or two byte overwrite.</li>\n\t      </ul>\n\t    </li>\n\t    <li>CVE-2018-14682:\n\t      <ul>\n\t\t<li>An issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. There is an off-by-one error in the TOLOWER() macro for CHM decompression. Additionally, 0.100.2 reverted 0.100.1's patch for CVE-2018-14679, and applied libmspack's version of the fix in its place.</li>\n\t      </ul>\n\t    </li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.clamav.net/2018/10/clamav-01002-has-been-released.html"
-    ],
-    "cvename": [
-      "CVE-2018-15378",
-      "CVE-2018-14680",
-      "CVE-2018-14681",
-      "CVE-2018-14682"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-10-03",
-    "entry": "2018-10-03",
-    "modified": "2020-06-24"
-  }
+	"vid": "8b812395-c739-11e8-ab5b-9c5c8e75236a",
+	"topic": "clamav -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"clamav"
+			],
+			"range": [
+				{
+					"lt": "0.100.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p> Joel Esler reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2018/10/clamav-01002-has-been-released.html\">\n\t  <ul>\n\t    <li>CVE-2018-15378:\n\t      <ul>\n\t\t<li>Vulnerability in ClamAV's MEW unpacking feature that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.</li>\n\t\t<li>Reported by Secunia Research at Flexera.</li>\n\t      </ul>\n\t    </li>\n\t    <li>Fix for a 2-byte buffer over-read bug in ClamAV&amp;s PDF parsing code.\n\t      <ul>\n\t\t<li>Reported by Alex Gaynor.</li>\n\t      </ul>\n\t    </li>\n\t    <li>CVE-2018-14680:\n\t      <ul>\n\t\t<li>An issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. It does not reject blank CHM filenames.</li>\n\t      </ul>\n\t    </li>\n\t    <li>CVE-2018-14681:\n\t      <ul>\n\t\t<li>An issue was discovered in kwajd_read_headers in mspack/kwajd.c in libmspack before 0.7alpha. Bad KWAJ file header extensions could cause a one or two byte overwrite.</li>\n\t      </ul>\n\t    </li>\n\t    <li>CVE-2018-14682:\n\t      <ul>\n\t\t<li>An issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. There is an off-by-one error in the TOLOWER() macro for CHM decompression. Additionally, 0.100.2 reverted 0.100.1's patch for CVE-2018-14679, and applied libmspack's version of the fix in its place.</li>\n\t      </ul>\n\t    </li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.clamav.net/2018/10/clamav-01002-has-been-released.html"
+		],
+		"cvename": [
+			"CVE-2018-15378",
+			"CVE-2018-14680",
+			"CVE-2018-14681",
+			"CVE-2018-14682"
+		]
+	},
+	"dates": {
+		"discovery": "2018-10-03",
+		"entry": "2018-10-03",
+		"modified": "2020-06-24"
+	}
 }

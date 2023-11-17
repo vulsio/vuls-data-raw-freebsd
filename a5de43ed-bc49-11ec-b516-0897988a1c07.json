@@ -1,42 +1,42 @@
 {
-  "vid": "a5de43ed-bc49-11ec-b516-0897988a1c07",
-  "topic": "Asterisk -- func_odbc: Possible SQL Injection",
-  "affects": [
-    {
-      "name": [
-        "asterisk16"
-      ],
-      "range": [
-        {
-          "lt": "16.25.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk18"
-      ],
-      "range": [
-        {
-          "lt": "18.11.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories/\">\n\t  <p>Some databases can use backslashes to escape certain\n\t  characters, such as backticks. If input is provided to\n\t  func_odbc which includes backslashes it is possible for\n\t  func_odbc to construct a broken SQL query and the SQL\n\t  query to fail.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://downloads.asterisk.org/pub/security/AST-2022-003.html"
-    ],
-    "cvename": [
-      "CVE-2022-26651"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-14",
-    "entry": "2022-04-14"
-  }
+	"vid": "a5de43ed-bc49-11ec-b516-0897988a1c07",
+	"topic": "Asterisk -- func_odbc: Possible SQL Injection",
+	"affects": [
+		{
+			"name": [
+				"asterisk16"
+			],
+			"range": [
+				{
+					"lt": "16.25.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk18"
+			],
+			"range": [
+				{
+					"lt": "18.11.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/downloads/security-advisories/\">\n\t  <p>Some databases can use backslashes to escape certain\n\t  characters, such as backticks. If input is provided to\n\t  func_odbc which includes backslashes it is possible for\n\t  func_odbc to construct a broken SQL query and the SQL\n\t  query to fail.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://downloads.asterisk.org/pub/security/AST-2022-003.html"
+		],
+		"cvename": [
+			"CVE-2022-26651"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-14",
+		"entry": "2022-04-14"
+	}
 }

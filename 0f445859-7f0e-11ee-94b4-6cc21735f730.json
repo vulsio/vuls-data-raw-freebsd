@@ -1,47 +1,47 @@
 {
-  "vid": "0f445859-7f0e-11ee-94b4-6cc21735f730",
-  "topic": "postgresql-server -- Buffer overrun from integer overflow in array modification",
-  "affects": [
-    {
-      "name": [
-        "postgresql-server"
-      ],
-      "range": [
-        {
-          "lt": "16.1"
-        },
-        {
-          "lt": "15.5"
-        },
-        {
-          "lt": "14.10"
-        },
-        {
-          "lt": "13.13"
-        },
-        {
-          "lt": "12.17"
-        },
-        {
-          "lt": "11.22"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PostgreSQL Project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2023-5869/\">\n\t  <p>\n\t    While modifying certain SQL array values, missing\n\t    overflow checks let authenticated database users write\n\t    arbitrary bytes to a memory area that facilitates\n\t    arbitrary code execution. Missing overflow checks also\n\t    let authenticated database users read a wide area of\n\t    server memory. The CVE-2021-32027 fix covered some\n\t    attacks of this description, but it missed others.\n\t  </p>\n\t</blockquote>\n\t"
-  },
-  "references": {
-    "url": [
-      "https://www.postgresql.org/support/security/CVE-2023-5869/"
-    ],
-    "cvename": [
-      "CVE-2023-5869"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-11-09",
-    "entry": "2023-11-09"
-  }
+	"vid": "0f445859-7f0e-11ee-94b4-6cc21735f730",
+	"topic": "postgresql-server -- Buffer overrun from integer overflow in array modification",
+	"affects": [
+		{
+			"name": [
+				"postgresql-server"
+			],
+			"range": [
+				{
+					"lt": "16.1"
+				},
+				{
+					"lt": "15.5"
+				},
+				{
+					"lt": "14.10"
+				},
+				{
+					"lt": "13.13"
+				},
+				{
+					"lt": "12.17"
+				},
+				{
+					"lt": "11.22"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PostgreSQL Project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2023-5869/\">\n\t  <p>\n\t    While modifying certain SQL array values, missing\n\t    overflow checks let authenticated database users write\n\t    arbitrary bytes to a memory area that facilitates\n\t    arbitrary code execution. Missing overflow checks also\n\t    let authenticated database users read a wide area of\n\t    server memory. The CVE-2021-32027 fix covered some\n\t    attacks of this description, but it missed others.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.postgresql.org/support/security/CVE-2023-5869/"
+		],
+		"cvename": [
+			"CVE-2023-5869"
+		]
+	},
+	"dates": {
+		"discovery": "2023-11-09",
+		"entry": "2023-11-09"
+	}
 }

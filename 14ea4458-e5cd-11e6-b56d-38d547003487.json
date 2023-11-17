@@ -1,50 +1,50 @@
 {
-  "vid": "14ea4458-e5cd-11e6-b56d-38d547003487",
-  "topic": "wordpress -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "wordpress"
-      ],
-      "range": [
-        {
-          "lt": "4.7.2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-wordpress",
-        "ja-wordpress",
-        "ru-wordpress",
-        "zh-wordpress-zh_CN",
-        "zh-wordpress-zh_TW"
-      ],
-      "range": [
-        {
-          "lt": "4.7.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Aaron D. Campbell reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/\">\n\t  <p>WordPress versions 4.7.1 and earlier are affected by three security\n\t    issues:</p>\n\t  <ul>\n\t    <li>The user interface for assigning taxonomy terms in Press This is\n\t      shown to users who do not have permissions to use it.</li>\n\t    <li>WP_Query is vulnerable to a SQL injection (SQLi) when passing\n\t      unsafe data. WordPress core is not directly vulnerable to this\n\t      issue, but we’ve added hardening to prevent plugins and\n\t      themes from accidentally causing a vulnerability.</li>\n\t    <li>A cross-site scripting (XSS) vulnerability was discovered in the\n\t      posts list table.</li>\n\t    <li>An unauthenticated privilege escalation vulnerability was\n\t      discovered in a REST API endpoint.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2017/01/28/5",
-      "https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/",
-      "https://make.wordpress.org/core/2017/02/01/disclosure-of-additional-security-fix-in-wordpress-4-7-2/"
-    ],
-    "cvename": [
-      "CVE-2017-5610",
-      "CVE-2017-5611",
-      "CVE-2017-5612"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-01-26",
-    "entry": "2017-01-29"
-  }
+	"vid": "14ea4458-e5cd-11e6-b56d-38d547003487",
+	"topic": "wordpress -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"wordpress"
+			],
+			"range": [
+				{
+					"lt": "4.7.2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-wordpress",
+				"ja-wordpress",
+				"ru-wordpress",
+				"zh-wordpress-zh_CN",
+				"zh-wordpress-zh_TW"
+			],
+			"range": [
+				{
+					"lt": "4.7.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Aaron D. Campbell reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/\">\n\t  <p>WordPress versions 4.7.1 and earlier are affected by three security\n\t    issues:</p>\n\t  <ul>\n\t    <li>The user interface for assigning taxonomy terms in Press This is\n\t      shown to users who do not have permissions to use it.</li>\n\t    <li>WP_Query is vulnerable to a SQL injection (SQLi) when passing\n\t      unsafe data. WordPress core is not directly vulnerable to this\n\t      issue, but we’ve added hardening to prevent plugins and\n\t      themes from accidentally causing a vulnerability.</li>\n\t    <li>A cross-site scripting (XSS) vulnerability was discovered in the\n\t      posts list table.</li>\n\t    <li>An unauthenticated privilege escalation vulnerability was\n\t      discovered in a REST API endpoint.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2017/01/28/5",
+			"https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/",
+			"https://make.wordpress.org/core/2017/02/01/disclosure-of-additional-security-fix-in-wordpress-4-7-2/"
+		],
+		"cvename": [
+			"CVE-2017-5610",
+			"CVE-2017-5611",
+			"CVE-2017-5612"
+		]
+	},
+	"dates": {
+		"discovery": "2017-01-26",
+		"entry": "2017-01-29"
+	}
 }

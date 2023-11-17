@@ -1,36 +1,36 @@
 {
-  "vid": "72da8af6-7c75-11d9-8cc5-000854d03344",
-  "topic": "enscript -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "enscript-a4",
-        "enscript-letter",
-        "enscript-letterdj"
-      ],
-      "range": [
-        {
-          "lt": "1.6.4_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Erik Sjölund discovered several issues in enscript:\n\t  it suffers from several buffer overflows, quotes and shell\n\t  escape characters are insufficiently sanitized in filenames,\n\t  and it supported taking input from an arbitrary command\n\t  pipe, with unwanted side effects.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.gentoo.org/security/en/glsa/glsa-200502-03.xml"
-    ],
-    "cvename": [
-      "CVE-2004-1184",
-      "CVE-2004-1185",
-      "CVE-2004-1186"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-02",
-    "entry": "2005-02-11"
-  }
+	"vid": "72da8af6-7c75-11d9-8cc5-000854d03344",
+	"topic": "enscript -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"enscript-a4",
+				"enscript-letter",
+				"enscript-letterdj"
+			],
+			"range": [
+				{
+					"lt": "1.6.4_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Erik Sjölund discovered several issues in enscript:\n\t  it suffers from several buffer overflows, quotes and shell\n\t  escape characters are insufficiently sanitized in filenames,\n\t  and it supported taking input from an arbitrary command\n\t  pipe, with unwanted side effects.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.gentoo.org/security/en/glsa/glsa-200502-03.xml"
+		],
+		"cvename": [
+			"CVE-2004-1184",
+			"CVE-2004-1185",
+			"CVE-2004-1186"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-02",
+		"entry": "2005-02-11"
+	}
 }

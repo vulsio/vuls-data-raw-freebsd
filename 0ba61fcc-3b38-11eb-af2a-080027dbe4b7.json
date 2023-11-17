@@ -1,36 +1,36 @@
 {
-  "vid": "0ba61fcc-3b38-11eb-af2a-080027dbe4b7",
-  "topic": "glpi -- SQL Injection in Search API",
-  "affects": [
-    {
-      "name": [
-        "glpi"
-      ],
-      "range": [
-        {
-          "gt": "9.1"
-        },
-        {
-          "lt": "9.5.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE Corporation reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15226\">\n\t  <p>In GLPI before version 9.5.2, there is a SQL Injection in the API's search function. Not only is it possible to break the SQL syntax, but it is also possible to utilise a UNION SELECT query to reflect sensitive information such as the current database version, or database user. The most likely scenario for this vulnerability is with someone who has an API account to the system. The issue is patched in version 9.5.2. A proof-of-concept with technical details is available in the linked advisory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/glpi-project/glpi/commit/3dc4475c56b241ad659cc5c7cb5fb65727409cf0",
-      "https://github.com/glpi-project/glpi/security/advisories/GHSA-jwpv-7m4h-5gvc"
-    ],
-    "cvename": [
-      "CVE-2020-15226"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-06-25",
-    "entry": "2020-06-25"
-  }
+	"vid": "0ba61fcc-3b38-11eb-af2a-080027dbe4b7",
+	"topic": "glpi -- SQL Injection in Search API",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"gt": "9.1"
+				},
+				{
+					"lt": "9.5.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE Corporation reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15226\">\n\t  <p>In GLPI before version 9.5.2, there is a SQL Injection in the API's search function. Not only is it possible to break the SQL syntax, but it is also possible to utilise a UNION SELECT query to reflect sensitive information such as the current database version, or database user. The most likely scenario for this vulnerability is with someone who has an API account to the system. The issue is patched in version 9.5.2. A proof-of-concept with technical details is available in the linked advisory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/glpi-project/glpi/commit/3dc4475c56b241ad659cc5c7cb5fb65727409cf0",
+			"https://github.com/glpi-project/glpi/security/advisories/GHSA-jwpv-7m4h-5gvc"
+		],
+		"cvename": [
+			"CVE-2020-15226"
+		]
+	},
+	"dates": {
+		"discovery": "2020-06-25",
+		"entry": "2020-06-25"
+	}
 }

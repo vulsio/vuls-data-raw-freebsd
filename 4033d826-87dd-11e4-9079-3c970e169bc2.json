@@ -1,36 +1,36 @@
 {
-  "vid": "4033d826-87dd-11e4-9079-3c970e169bc2",
-  "topic": "ntp -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ntp",
-        "ntp-devel"
-      ],
-      "range": [
-        {
-          "lt": "4.2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/852879\">\n\t  <p>The Network Time Protocol (NTP) provides networked\n\t    systems with a way to synchronize time for various\n\t    services and applications. ntpd version 4.2.7 and\n\t    previous versions allow attackers to overflow several\n\t    buffers in a way that may allow malicious code to\n\t    be executed. ntp-keygen prior to version 4.2.7p230\n\t    also uses a non-cryptographic random number generator\n\t    when generating symmetric keys.</p>\n\t  <p>The buffer overflow vulnerabilities in ntpd may\n\t    allow a remote unauthenticated attacker to execute\n\t    arbitrary malicious code with the privilege level\n\t    of the ntpd process. The weak default key and\n\t    non-cryptographic random number generator in\n\t    ntp-keygen may allow an attacker to gain\n\t    information regarding the integrity checking\n\t    and authentication encryption schemes.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kb.cert.org/vuls/id/852879"
-    ],
-    "cvename": [
-      "CVE-2014-9293",
-      "CVE-2014-9294",
-      "CVE-2014-9295",
-      "CVE-2014-9296"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-12-19",
-    "entry": "2014-12-20"
-  }
+	"vid": "4033d826-87dd-11e4-9079-3c970e169bc2",
+	"topic": "ntp -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ntp",
+				"ntp-devel"
+			],
+			"range": [
+				{
+					"lt": "4.2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/852879\">\n\t  <p>The Network Time Protocol (NTP) provides networked\n\t    systems with a way to synchronize time for various\n\t    services and applications. ntpd version 4.2.7 and\n\t    previous versions allow attackers to overflow several\n\t    buffers in a way that may allow malicious code to\n\t    be executed. ntp-keygen prior to version 4.2.7p230\n\t    also uses a non-cryptographic random number generator\n\t    when generating symmetric keys.</p>\n\t  <p>The buffer overflow vulnerabilities in ntpd may\n\t    allow a remote unauthenticated attacker to execute\n\t    arbitrary malicious code with the privilege level\n\t    of the ntpd process. The weak default key and\n\t    non-cryptographic random number generator in\n\t    ntp-keygen may allow an attacker to gain\n\t    information regarding the integrity checking\n\t    and authentication encryption schemes.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kb.cert.org/vuls/id/852879"
+		],
+		"cvename": [
+			"CVE-2014-9293",
+			"CVE-2014-9294",
+			"CVE-2014-9295",
+			"CVE-2014-9296"
+		]
+	},
+	"dates": {
+		"discovery": "2014-12-19",
+		"entry": "2014-12-20"
+	}
 }

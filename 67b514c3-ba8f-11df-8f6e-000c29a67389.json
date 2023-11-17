@@ -1,33 +1,33 @@
 {
-  "vid": "67b514c3-ba8f-11df-8f6e-000c29a67389",
-  "topic": "sudo -- Flaw in Runas group matching",
-  "affects": [
-    {
-      "name": [
-        "sudo"
-      ],
-      "range": [
-        {
-          "lt": "1.7.4.4",
-          "ge": "1.7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.sudo.ws/sudo/alerts/runas_group.html\">\n\t  <p>Beginning with sudo version 1.7.0 it has been possible to grant\n\t    permission to run a command using a specified group via sudo -g\n\t    option (run as group). A flaw exists in the logic that matches\n\t    Runas groups in the sudoers file when the -u option is also\n\t    specified (run as user). This flaw results in a positive match for\n\t    the user specified via -u so long as the group specified via -g\n\t    is allowed by the sudoers file.</p>\n\t  <p>Exploitation of the flaw requires that Sudo be configured with\n\t    sudoers entries that contain a Runas group. Entries that do not\n\t    contain a Runas group, or only contain a Runas user are not\n\t    affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.sudo.ws/sudo/alerts/runas_group.html"
-    ],
-    "cvename": [
-      "CVE-2010-2956"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-09-07",
-    "entry": "2010-09-07"
-  }
+	"vid": "67b514c3-ba8f-11df-8f6e-000c29a67389",
+	"topic": "sudo -- Flaw in Runas group matching",
+	"affects": [
+		{
+			"name": [
+				"sudo"
+			],
+			"range": [
+				{
+					"lt": "1.7.4.4",
+					"ge": "1.7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.sudo.ws/sudo/alerts/runas_group.html\">\n\t  <p>Beginning with sudo version 1.7.0 it has been possible to grant\n\t    permission to run a command using a specified group via sudo -g\n\t    option (run as group). A flaw exists in the logic that matches\n\t    Runas groups in the sudoers file when the -u option is also\n\t    specified (run as user). This flaw results in a positive match for\n\t    the user specified via -u so long as the group specified via -g\n\t    is allowed by the sudoers file.</p>\n\t  <p>Exploitation of the flaw requires that Sudo be configured with\n\t    sudoers entries that contain a Runas group. Entries that do not\n\t    contain a Runas group, or only contain a Runas user are not\n\t    affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.sudo.ws/sudo/alerts/runas_group.html"
+		],
+		"cvename": [
+			"CVE-2010-2956"
+		]
+	},
+	"dates": {
+		"discovery": "2010-09-07",
+		"entry": "2010-09-07"
+	}
 }

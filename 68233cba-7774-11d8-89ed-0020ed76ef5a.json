@@ -1,66 +1,66 @@
 {
-  "vid": "68233cba-7774-11d8-89ed-0020ed76ef5a",
-  "topic": "OpenSSL ChangeCipherSpec denial-of-service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openssl",
-        "openssl-beta"
-      ],
-      "range": [
-        {
-          "lt": "0.9.7d"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "4.8_17",
-          "ge": "4.0"
-        },
-        {
-          "lt": "4.9_4",
-          "ge": "4.9"
-        },
-        {
-          "lt": "5.1_16",
-          "ge": "5.0"
-        },
-        {
-          "lt": "5.2.1_3",
-          "ge": "5.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A remote attacker could cause an application using OpenSSL to\n\t  crash by performing a specially crafted SSL/TLS handshake.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openssl.org/news/secadv_20040317.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0079"
-    ],
-    "freebsd_sa": [
-      "SA-04:05.openssl"
-    ],
-    "bid": [
-      "9899"
-    ],
-    "cert_vu": [
-      "288574"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-03-17",
-    "entry": "2004-03-17",
-    "modified": "2004-05-05"
-  }
+	"vid": "68233cba-7774-11d8-89ed-0020ed76ef5a",
+	"topic": "OpenSSL ChangeCipherSpec denial-of-service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openssl",
+				"openssl-beta"
+			],
+			"range": [
+				{
+					"lt": "0.9.7d"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "4.8_17",
+					"ge": "4.0"
+				},
+				{
+					"lt": "4.9_4",
+					"ge": "4.9"
+				},
+				{
+					"lt": "5.1_16",
+					"ge": "5.0"
+				},
+				{
+					"lt": "5.2.1_3",
+					"ge": "5.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A remote attacker could cause an application using OpenSSL to\n\t  crash by performing a specially crafted SSL/TLS handshake.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openssl.org/news/secadv_20040317.txt"
+		],
+		"cvename": [
+			"CVE-2004-0079"
+		],
+		"freebsd_sa": [
+			"SA-04:05.openssl"
+		],
+		"bid": [
+			"9899"
+		],
+		"cert_vu": [
+			"288574"
+		]
+	},
+	"dates": {
+		"discovery": "2004-03-17",
+		"entry": "2004-03-17",
+		"modified": "2004-05-05"
+	}
 }

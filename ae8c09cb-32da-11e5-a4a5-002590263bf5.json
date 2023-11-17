@@ -1,36 +1,36 @@
 {
-  "vid": "ae8c09cb-32da-11e5-a4a5-002590263bf5",
-  "topic": "elasticsearch -- directory traversal attack via snapshot API",
-  "affects": [
-    {
-      "name": [
-        "elasticsearch"
-      ],
-      "range": [
-        {
-          "lt": "1.6.1",
-          "ge": "1.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/community/security\">\n\t  <p>Vulnerability Summary: Elasticsearch versions from 1.0.0 to 1.6.0\n\t    are vulnerable to a directory traversal attack.</p>\n\t  <p>Remediation Summary: Users should upgrade to 1.6.1 or later, or\n\t    constrain access to the snapshot API to trusted sources.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.elastic.co/community/security"
-    ],
-    "cvename": [
-      "CVE-2015-5531"
-    ],
-    "freebsd_pr": [
-      "ports/201834"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-07-16",
-    "entry": "2015-08-05"
-  }
+	"vid": "ae8c09cb-32da-11e5-a4a5-002590263bf5",
+	"topic": "elasticsearch -- directory traversal attack via snapshot API",
+	"affects": [
+		{
+			"name": [
+				"elasticsearch"
+			],
+			"range": [
+				{
+					"lt": "1.6.1",
+					"ge": "1.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/community/security\">\n\t  <p>Vulnerability Summary: Elasticsearch versions from 1.0.0 to 1.6.0\n\t    are vulnerable to a directory traversal attack.</p>\n\t  <p>Remediation Summary: Users should upgrade to 1.6.1 or later, or\n\t    constrain access to the snapshot API to trusted sources.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.elastic.co/community/security"
+		],
+		"cvename": [
+			"CVE-2015-5531"
+		],
+		"freebsd_pr": [
+			"ports/201834"
+		]
+	},
+	"dates": {
+		"discovery": "2015-07-16",
+		"entry": "2015-08-05"
+	}
 }

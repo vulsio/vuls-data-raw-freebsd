@@ -1,32 +1,32 @@
 {
-  "vid": "f00acdec-b59f-11e8-805d-001e2a3f778d",
-  "topic": "X11 Session -- SDDM allows unauthorised unlocking",
-  "affects": [
-    {
-      "name": [
-        "sddm"
-      ],
-      "range": [
-        {
-          "lt": "0.17.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2018-14345\">\n\t<p>An issue was discovered in SDDM through 0.17.0. If configured with ReuseSession=true, the password is not checked for users with an already existing session. Any user with access to the system D-Bus can therefore unlock any graphical session.</p>\n\t</blockquote>\n\t<p>The default configuration of SDDM on FreeBSD is not affected, since it has ReuseSession=false.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.suse.com/security/cve/CVE-2018-14345/"
-    ],
-    "cvename": [
-      "CVE-2018-14345"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-08-13",
-    "entry": "2018-09-11"
-  }
+	"vid": "f00acdec-b59f-11e8-805d-001e2a3f778d",
+	"topic": "X11 Session -- SDDM allows unauthorised unlocking",
+	"affects": [
+		{
+			"name": [
+				"sddm"
+			],
+			"range": [
+				{
+					"lt": "0.17.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2018-14345\">\n\t<p>An issue was discovered in SDDM through 0.17.0. If configured with ReuseSession=true, the password is not checked for users with an already existing session. Any user with access to the system D-Bus can therefore unlock any graphical session.</p>\n\t</blockquote>\n\t<p>The default configuration of SDDM on FreeBSD is not affected, since it has ReuseSession=false.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.suse.com/security/cve/CVE-2018-14345/"
+		],
+		"cvename": [
+			"CVE-2018-14345"
+		]
+	},
+	"dates": {
+		"discovery": "2018-08-13",
+		"entry": "2018-09-11"
+	}
 }

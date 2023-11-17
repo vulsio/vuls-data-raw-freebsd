@@ -1,33 +1,33 @@
 {
-  "vid": "26e1c48a-9fa7-11df-81b5-00e0814cab4e",
-  "topic": "Piwik -- Local File Inclusion Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "piwik"
-      ],
-      "range": [
-        {
-          "lt": "0.6.3",
-          "gt": "0.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Piwik versions 0.6 through 0.6.3 are vulnerable to arbitrary,\n\t  remote file inclusion using a directory traversal pattern infinite\n\t  a crafted request for a data renderer.</p>\n\t<blockquote cite=\"http://secunia.com/advisories/40703\">\n\t  <p>A vulnerability has been reported in Piwik, which can before\n\t    exploited by malicious people to disclose potentially\n\t    sensitive information.  Input passed to unspecified parameters\n\t    when requesting a data renderer is not properly verified before\n\t    being used to include files. This can be exploited to includes\n\t    arbitrary files from local resources via directory traversal\n\t    attacks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/40703"
-    ],
-    "cvename": [
-      "CVE-2010-2786"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-07-28",
-    "entry": "2010-08-04"
-  }
+	"vid": "26e1c48a-9fa7-11df-81b5-00e0814cab4e",
+	"topic": "Piwik -- Local File Inclusion Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"piwik"
+			],
+			"range": [
+				{
+					"lt": "0.6.3",
+					"gt": "0.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Piwik versions 0.6 through 0.6.3 are vulnerable to arbitrary,\n\t  remote file inclusion using a directory traversal pattern infinite\n\t  a crafted request for a data renderer.</p>\n\t<blockquote cite=\"http://secunia.com/advisories/40703\">\n\t  <p>A vulnerability has been reported in Piwik, which can before\n\t    exploited by malicious people to disclose potentially\n\t    sensitive information.  Input passed to unspecified parameters\n\t    when requesting a data renderer is not properly verified before\n\t    being used to include files. This can be exploited to includes\n\t    arbitrary files from local resources via directory traversal\n\t    attacks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/40703"
+		],
+		"cvename": [
+			"CVE-2010-2786"
+		]
+	},
+	"dates": {
+		"discovery": "2010-07-28",
+		"entry": "2010-08-04"
+	}
 }

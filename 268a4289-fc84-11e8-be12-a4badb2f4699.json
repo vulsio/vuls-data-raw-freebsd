@@ -1,33 +1,33 @@
 {
-  "vid": "268a4289-fc84-11e8-be12-a4badb2f4699",
-  "topic": "FreeBSD -- Multiple vulnerabilities in NFS server code",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.2_5",
-          "ge": "11.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Insufficient and improper checking in the NFS server\n\tcode could cause a denial of service or possibly remote\n\tcode execution via a specially crafted network packet.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker could cause the NFS server to crash,\n\tresulting in a denial of service, or possibly execute\n\tarbitrary code on the server.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2018-1715"
-    ],
-    "freebsd_sa": [
-      "SA-18:13.nfs"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-27",
-    "entry": "2018-12-10"
-  }
+	"vid": "268a4289-fc84-11e8-be12-a4badb2f4699",
+	"topic": "FreeBSD -- Multiple vulnerabilities in NFS server code",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.2_5",
+					"ge": "11.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Insufficient and improper checking in the NFS server\n\tcode could cause a denial of service or possibly remote\n\tcode execution via a specially crafted network packet.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker could cause the NFS server to crash,\n\tresulting in a denial of service, or possibly execute\n\tarbitrary code on the server.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2018-1715"
+		],
+		"freebsd_sa": [
+			"SA-18:13.nfs"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-27",
+		"entry": "2018-12-10"
+	}
 }

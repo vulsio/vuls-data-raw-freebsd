@@ -1,43 +1,43 @@
 {
-  "vid": "dbd1f627-c43b-11e9-a923-9c5c8e75236a",
-  "topic": "clamav -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "clamav"
-      ],
-      "range": [
-        {
-          "lt": "0.101.4,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "clamav-milter"
-      ],
-      "range": [
-        {
-          "lt": "0.101.4,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Micah Snyder reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2019/08/clamav-01014-security-patch-release-has.html\">\n\t  <ul>\n\t    <li>An out of bounds write was possible within ClamAV&amp;s NSIS bzip2 library when attempting decompression in cases where the number of selectors exceeded the max limit set by the library (CVE-2019-12900). The issue has been resolved by respecting that limit.</li>\n\t    <li> The zip bomb vulnerability mitigated in 0.101.3 has been assigned the CVE identifier CVE-2019-12625. Unfortunately, a workaround for the zip-bomb mitigation was immediately identified. To remediate the zip-bomb scan time issue, a scan time limit has been introduced in 0.101.4. This limit now resolves ClamAV's vulnerability to CVE-2019-12625.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.clamav.net/2019/08/clamav-01014-security-patch-release-has.html"
-    ],
-    "cvename": [
-      "CVE-2019-12625",
-      "CVE-2019-12900"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-21",
-    "entry": "2019-08-21"
-  }
+	"vid": "dbd1f627-c43b-11e9-a923-9c5c8e75236a",
+	"topic": "clamav -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"clamav"
+			],
+			"range": [
+				{
+					"lt": "0.101.4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"clamav-milter"
+			],
+			"range": [
+				{
+					"lt": "0.101.4,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Micah Snyder reports:</p>\n\t<blockquote cite=\"https://blog.clamav.net/2019/08/clamav-01014-security-patch-release-has.html\">\n\t  <ul>\n\t    <li>An out of bounds write was possible within ClamAV&amp;s NSIS bzip2 library when attempting decompression in cases where the number of selectors exceeded the max limit set by the library (CVE-2019-12900). The issue has been resolved by respecting that limit.</li>\n\t    <li> The zip bomb vulnerability mitigated in 0.101.3 has been assigned the CVE identifier CVE-2019-12625. Unfortunately, a workaround for the zip-bomb mitigation was immediately identified. To remediate the zip-bomb scan time issue, a scan time limit has been introduced in 0.101.4. This limit now resolves ClamAV's vulnerability to CVE-2019-12625.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.clamav.net/2019/08/clamav-01014-security-patch-release-has.html"
+		],
+		"cvename": [
+			"CVE-2019-12625",
+			"CVE-2019-12900"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-21",
+		"entry": "2019-08-21"
+	}
 }

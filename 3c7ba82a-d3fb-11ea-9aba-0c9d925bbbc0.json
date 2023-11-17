@@ -1,82 +1,82 @@
 {
-  "vid": "3c7ba82a-d3fb-11ea-9aba-0c9d925bbbc0",
-  "topic": "xorg-server -- Pixel Data Uninitialized Memory Information Disclosure",
-  "affects": [
-    {
-      "name": [
-        "xorg-server"
-      ],
-      "range": [
-        {
-          "lt": "1.20.8_3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xephyr"
-      ],
-      "range": [
-        {
-          "lt": "1.20.8_3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xorg-vfbserver"
-      ],
-      "range": [
-        {
-          "lt": "1.20.8_3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xorg-nestserver"
-      ],
-      "range": [
-        {
-          "lt": "1.20.8_3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xwayland"
-      ],
-      "range": [
-        {
-          "lt": "1.20.8_3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xorg-dmx"
-      ],
-      "range": [
-        {
-          "lt": "1.20.8_3,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2020-July/003051.html\">\n\t  <p>Allocation for pixmap data in AllocatePixmap() does not initialize\n\t    the memory in xserver, it leads to leak uninitialize heap memory to\n\t    clients. When the X server runs with elevated privileges.</p>\n\t  <p>This flaw can lead to ASLR bypass, which when combined with other\n\t    flaws (known/unknown) could lead to lead to privilege elevation in\n\t    the client.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.x.org/archives/xorg-announce/2020-July/003051.html"
-    ],
-    "cvename": [
-      "CVE-2020-14347"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-07-31",
-    "entry": "2020-08-01"
-  }
+	"vid": "3c7ba82a-d3fb-11ea-9aba-0c9d925bbbc0",
+	"topic": "xorg-server -- Pixel Data Uninitialized Memory Information Disclosure",
+	"affects": [
+		{
+			"name": [
+				"xorg-server"
+			],
+			"range": [
+				{
+					"lt": "1.20.8_3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xephyr"
+			],
+			"range": [
+				{
+					"lt": "1.20.8_3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-vfbserver"
+			],
+			"range": [
+				{
+					"lt": "1.20.8_3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-nestserver"
+			],
+			"range": [
+				{
+					"lt": "1.20.8_3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland"
+			],
+			"range": [
+				{
+					"lt": "1.20.8_3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-dmx"
+			],
+			"range": [
+				{
+					"lt": "1.20.8_3,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X.org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2020-July/003051.html\">\n\t  <p>Allocation for pixmap data in AllocatePixmap() does not initialize\n\t    the memory in xserver, it leads to leak uninitialize heap memory to\n\t    clients. When the X server runs with elevated privileges.</p>\n\t  <p>This flaw can lead to ASLR bypass, which when combined with other\n\t    flaws (known/unknown) could lead to lead to privilege elevation in\n\t    the client.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.x.org/archives/xorg-announce/2020-July/003051.html"
+		],
+		"cvename": [
+			"CVE-2020-14347"
+		]
+	},
+	"dates": {
+		"discovery": "2020-07-31",
+		"entry": "2020-08-01"
+	}
 }

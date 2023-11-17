@@ -1,41 +1,41 @@
 {
-  "vid": "a6d5d4c1-0564-11ec-b69d-4062311215d5",
-  "topic": "FreeBSD -- Missing error handling in bhyve(8) device models",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "13.0_4",
-          "ge": "13.0"
-        },
-        {
-          "lt": "12.2_10",
-          "ge": "12.2"
-        },
-        {
-          "lt": "11.4_13",
-          "ge": "11.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Certain VirtIO-based device models failed to handle errors when fetching\n\tI/O descriptors.  Such errors could be triggered by a malicious guest.\n\tAs a result, the device model code could be tricked into operating on\n\tuninitialized I/O vectors, leading to memory corruption.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious guest may be able to crash the bhyve process.  It may be\n\tpossible to exploit the memory corruption bugs to achieve arbitrary code\n\texecution in the bhyve process.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2021-29631"
-    ],
-    "freebsd_sa": [
-      "SA-21:13.bhyve"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-08-24",
-    "entry": "2021-08-25"
-  }
+	"vid": "a6d5d4c1-0564-11ec-b69d-4062311215d5",
+	"topic": "FreeBSD -- Missing error handling in bhyve(8) device models",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "13.0_4",
+					"ge": "13.0"
+				},
+				{
+					"lt": "12.2_10",
+					"ge": "12.2"
+				},
+				{
+					"lt": "11.4_13",
+					"ge": "11.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Certain VirtIO-based device models failed to handle errors when fetching\n\tI/O descriptors.  Such errors could be triggered by a malicious guest.\n\tAs a result, the device model code could be tricked into operating on\n\tuninitialized I/O vectors, leading to memory corruption.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious guest may be able to crash the bhyve process.  It may be\n\tpossible to exploit the memory corruption bugs to achieve arbitrary code\n\texecution in the bhyve process.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2021-29631"
+		],
+		"freebsd_sa": [
+			"SA-21:13.bhyve"
+		]
+	},
+	"dates": {
+		"discovery": "2021-08-24",
+		"entry": "2021-08-25"
+	}
 }

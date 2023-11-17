@@ -1,36 +1,36 @@
 {
-  "vid": "52bbc7e8-f13c-11e3-bc09-bcaec565249c",
-  "topic": "dbus -- local DoS",
-  "affects": [
-    {
-      "name": [
-        "dbus"
-      ],
-      "range": [
-        {
-          "lt": "1.8.4",
-          "ge": "1.8.0"
-        },
-        {
-          "lt": "1.6.20"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon MvVittie reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/dbus/2014-June/016220.html\">\n\t  <p>Alban Crequy at Collabora Ltd. discovered and fixed a\n\t    denial-of-service flaw in dbus-daemon, part of the reference\n\t    implementation of D-Bus.  Additionally, in highly unusual\n\t    environments the same flaw could lead to a side channel between\n\t    processes that should not be able to communicate.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.freedesktop.org/archives/dbus/2014-June/016220.html"
-    ],
-    "cvename": [
-      "CVE-2014-3477"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-06-10",
-    "entry": "2014-06-14"
-  }
+	"vid": "52bbc7e8-f13c-11e3-bc09-bcaec565249c",
+	"topic": "dbus -- local DoS",
+	"affects": [
+		{
+			"name": [
+				"dbus"
+			],
+			"range": [
+				{
+					"lt": "1.8.4",
+					"ge": "1.8.0"
+				},
+				{
+					"lt": "1.6.20"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon MvVittie reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/dbus/2014-June/016220.html\">\n\t  <p>Alban Crequy at Collabora Ltd. discovered and fixed a\n\t    denial-of-service flaw in dbus-daemon, part of the reference\n\t    implementation of D-Bus.  Additionally, in highly unusual\n\t    environments the same flaw could lead to a side channel between\n\t    processes that should not be able to communicate.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.freedesktop.org/archives/dbus/2014-June/016220.html"
+		],
+		"cvename": [
+			"CVE-2014-3477"
+		]
+	},
+	"dates": {
+		"discovery": "2014-06-10",
+		"entry": "2014-06-14"
+	}
 }

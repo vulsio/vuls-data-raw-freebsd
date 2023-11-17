@@ -1,45 +1,45 @@
 {
-  "vid": "92fd40eb-c458-11da-9c79-00123ffe8333",
-  "topic": "samba -- Exposure of machine account credentials in winbind log files",
-  "affects": [
-    {
-      "name": [
-        "samba"
-      ],
-      "range": [
-        {
-          "lt": "3.0.22,1",
-          "ge": "3.0.21a,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ja-samba"
-      ],
-      "range": [
-        {
-          "lt": "3.0.22,1",
-          "ge": "3.0.21a,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Samba Security Advisory:</p>\n\t<blockquote cite=\"http://us1.samba.org/samba/security/CAN-2006-1059.html\">\n\t  <p>The machine trust account password is the secret\n\t    shared between a domain controller and a specific\n\t    member server. Access to the member server machine\n\t    credentials allows an attacker to impersonate the\n\t    server in the domain and gain access to additional\n\t    information regarding domain users and groups.</p>\n\t  <p>The winbindd daemon writes the clear text of server's\n\t    machine credentials to its log file at level 5.\n\t    The winbindd log files are world readable by default\n\t    and often log files are requested on open mailing\n\t    lists as tools used to debug server misconfigurations.</p>\n\t  <p>This affects servers configured to use domain or\n\t    ads security and possibly Samba domain controllers\n\t    as well (if configured to use winbindd).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://us1.samba.org/samba/security/CAN-2006-1059.html",
-      "http://secunia.com/advisories/19455/"
-    ],
-    "cvename": [
-      "CVE-2006-1059"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-03-30",
-    "entry": "2006-04-05"
-  }
+	"vid": "92fd40eb-c458-11da-9c79-00123ffe8333",
+	"topic": "samba -- Exposure of machine account credentials in winbind log files",
+	"affects": [
+		{
+			"name": [
+				"samba"
+			],
+			"range": [
+				{
+					"lt": "3.0.22,1",
+					"ge": "3.0.21a,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ja-samba"
+			],
+			"range": [
+				{
+					"lt": "3.0.22,1",
+					"ge": "3.0.21a,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Samba Security Advisory:</p>\n\t<blockquote cite=\"http://us1.samba.org/samba/security/CAN-2006-1059.html\">\n\t  <p>The machine trust account password is the secret\n\t    shared between a domain controller and a specific\n\t    member server. Access to the member server machine\n\t    credentials allows an attacker to impersonate the\n\t    server in the domain and gain access to additional\n\t    information regarding domain users and groups.</p>\n\t  <p>The winbindd daemon writes the clear text of server's\n\t    machine credentials to its log file at level 5.\n\t    The winbindd log files are world readable by default\n\t    and often log files are requested on open mailing\n\t    lists as tools used to debug server misconfigurations.</p>\n\t  <p>This affects servers configured to use domain or\n\t    ads security and possibly Samba domain controllers\n\t    as well (if configured to use winbindd).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://us1.samba.org/samba/security/CAN-2006-1059.html",
+			"http://secunia.com/advisories/19455/"
+		],
+		"cvename": [
+			"CVE-2006-1059"
+		]
+	},
+	"dates": {
+		"discovery": "2006-03-30",
+		"entry": "2006-04-05"
+	}
 }

@@ -1,37 +1,37 @@
 {
-  "vid": "653606e9-f6ac-11dd-94d9-0030843d3802",
-  "topic": "typo3 -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "typo3"
-      ],
-      "range": [
-        {
-          "lt": "4.2.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33617/\">\n\t  <p>Some vulnerabilities have been reported in Typo3, which can be\n\t    exploited by malicious people to bypass certain security restrictions,\n\t    conduct cross-site scripting and session fixation attacks, and\n\t    compromise a vulnerable system.</p>\n\t  <p>The \"Install tool\" system extension uses insufficiently random\n\t    entropy sources to generate an encryption key, resulting in weak\n\t    security.</p>\n\t  <p>The authentication library does not properly invalidate supplied\n\t    session tokens, which can be exploited to hijack a user's\n\t    session.</p>\n\t  <p>Certain unspecified input passed to the \"Indexed Search Engine\"\n\t    system extension is not properly sanitised before being used to invoke\n\t    commands. This can be exploited to inject and execute arbitrary shell\n\t    commands.</p>\n\t  <p>Input passed via the name and content of files to the \"Indexed Search\n\t    Engine\" system extension is not properly sanitised before being returned\n\t    to the user. This can be exploited to execute arbitrary HTML and script\n\t    code in a user's browser session in context of an affected site.</p>\n\t  <p>Certain unspecified input passed to the Workspace module is not\n\t    properly sanitised before being returned to the user. This can be\n\t    exploited to execute arbitrary HTML and script code in a user's\n\t    browser session in context of an affected site.</p>\n\t  <p>Note: It is also reported that certain unspecified input passed to\n\t    test scripts of the \"ADOdb\" system extension is not properly sanitised\n\t    before being returned to the user. This can be exploited to execute\n\t    arbitrary HTML and script code in a user's browser session in context\n\t    of an affected website.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/33617/",
-      "http://typo3.org/teams/security/security-bulletins/typo3-sa-2009-001/"
-    ],
-    "cvename": [
-      "CVE-2009-0255",
-      "CVE-2009-0256",
-      "CVE-2009-0257",
-      "CVE-2009-0258"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-02-07",
-    "entry": "2009-02-09",
-    "modified": "2013-06-19"
-  }
+	"vid": "653606e9-f6ac-11dd-94d9-0030843d3802",
+	"topic": "typo3 -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"typo3"
+			],
+			"range": [
+				{
+					"lt": "4.2.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33617/\">\n\t  <p>Some vulnerabilities have been reported in Typo3, which can be\n\t    exploited by malicious people to bypass certain security restrictions,\n\t    conduct cross-site scripting and session fixation attacks, and\n\t    compromise a vulnerable system.</p>\n\t  <p>The \"Install tool\" system extension uses insufficiently random\n\t    entropy sources to generate an encryption key, resulting in weak\n\t    security.</p>\n\t  <p>The authentication library does not properly invalidate supplied\n\t    session tokens, which can be exploited to hijack a user's\n\t    session.</p>\n\t  <p>Certain unspecified input passed to the \"Indexed Search Engine\"\n\t    system extension is not properly sanitised before being used to invoke\n\t    commands. This can be exploited to inject and execute arbitrary shell\n\t    commands.</p>\n\t  <p>Input passed via the name and content of files to the \"Indexed Search\n\t    Engine\" system extension is not properly sanitised before being returned\n\t    to the user. This can be exploited to execute arbitrary HTML and script\n\t    code in a user's browser session in context of an affected site.</p>\n\t  <p>Certain unspecified input passed to the Workspace module is not\n\t    properly sanitised before being returned to the user. This can be\n\t    exploited to execute arbitrary HTML and script code in a user's\n\t    browser session in context of an affected site.</p>\n\t  <p>Note: It is also reported that certain unspecified input passed to\n\t    test scripts of the \"ADOdb\" system extension is not properly sanitised\n\t    before being returned to the user. This can be exploited to execute\n\t    arbitrary HTML and script code in a user's browser session in context\n\t    of an affected website.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/33617/",
+			"http://typo3.org/teams/security/security-bulletins/typo3-sa-2009-001/"
+		],
+		"cvename": [
+			"CVE-2009-0255",
+			"CVE-2009-0256",
+			"CVE-2009-0257",
+			"CVE-2009-0258"
+		]
+	},
+	"dates": {
+		"discovery": "2009-02-07",
+		"entry": "2009-02-09",
+		"modified": "2013-06-19"
+	}
 }

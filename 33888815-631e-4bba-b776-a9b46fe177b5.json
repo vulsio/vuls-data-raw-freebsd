@@ -1,34 +1,34 @@
 {
-  "vid": "33888815-631e-4bba-b776-a9b46fe177b5",
-  "topic": "phpmyfaq -- multiple issues",
-  "affects": [
-    {
-      "name": [
-        "phpmyfaq"
-      ],
-      "range": [
-        {
-          "le": "2.9.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>phpmyfaq developers report:</p>\n\t<blockquote cite=\"https://www.exploit-db.com/exploits/42761/\">\n\t  <p>Cross-site scripting (XSS) vulnerability in inc/PMF/Faq.php in phpMyFAQ through 2.9.8 allows remote attackers to inject arbitrary web script or HTML via the Questions field in an \"Add New FAQ\" action.</p>\n\t  <p>Cross-site scripting (XSS) vulnerability in phpMyFAQ through 2.9.8 allows remote attackers to inject arbitrary web script or HTML via the \"Title of your FAQ\" field in the Configuration Module.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.exploit-db.com/exploits/42761/",
-      "https://github.com/thorsten/phpMyFAQ/commit/30b0025e19bd95ba28f4eff4d259671e7bb6bb86"
-    ],
-    "cvename": [
-      "CVE-2017-14618",
-      "CVE-2017-14619"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-20",
-    "entry": "2017-09-29"
-  }
+	"vid": "33888815-631e-4bba-b776-a9b46fe177b5",
+	"topic": "phpmyfaq -- multiple issues",
+	"affects": [
+		{
+			"name": [
+				"phpmyfaq"
+			],
+			"range": [
+				{
+					"le": "2.9.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>phpmyfaq developers report:</p>\n\t<blockquote cite=\"https://www.exploit-db.com/exploits/42761/\">\n\t  <p>Cross-site scripting (XSS) vulnerability in inc/PMF/Faq.php in phpMyFAQ through 2.9.8 allows remote attackers to inject arbitrary web script or HTML via the Questions field in an \"Add New FAQ\" action.</p>\n\t  <p>Cross-site scripting (XSS) vulnerability in phpMyFAQ through 2.9.8 allows remote attackers to inject arbitrary web script or HTML via the \"Title of your FAQ\" field in the Configuration Module.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.exploit-db.com/exploits/42761/",
+			"https://github.com/thorsten/phpMyFAQ/commit/30b0025e19bd95ba28f4eff4d259671e7bb6bb86"
+		],
+		"cvename": [
+			"CVE-2017-14618",
+			"CVE-2017-14619"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-20",
+		"entry": "2017-09-29"
+	}
 }

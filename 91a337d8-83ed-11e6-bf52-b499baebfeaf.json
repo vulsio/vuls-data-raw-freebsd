@@ -1,78 +1,78 @@
 {
-  "vid": "91a337d8-83ed-11e6-bf52-b499baebfeaf",
-  "topic": "OpenSSL -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2j,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openssl-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.1.0b"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libressl"
-      ],
-      "range": [
-        {
-          "lt": "2.4.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libressl-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.4.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.0_1",
-          "ge": "11.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSSL reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20160926.txt\">\n\t  <p>Critical vulnerability in OpenSSL 1.1.0a<br/>\n\t    Fix Use After Free for large message sizes (CVE-2016-6309)</p>\n\t  <p>Moderate vulnerability in OpenSSL 1.0.2i<br/>\n\t    Missing CRL sanity check (CVE-2016-7052)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20160926.txt"
-    ],
-    "cvename": [
-      "CVE-2016-6309",
-      "CVE-2016-7052"
-    ],
-    "freebsd_sa": [
-      "SA-16:27.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-09-26",
-    "entry": "2016-09-26",
-    "modified": "2016-10-10"
-  }
+	"vid": "91a337d8-83ed-11e6-bf52-b499baebfeaf",
+	"topic": "OpenSSL -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2j,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-devel"
+			],
+			"range": [
+				{
+					"lt": "1.1.0b"
+				}
+			]
+		},
+		{
+			"name": [
+				"libressl"
+			],
+			"range": [
+				{
+					"lt": "2.4.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"libressl-devel"
+			],
+			"range": [
+				{
+					"lt": "2.4.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.0_1",
+					"ge": "11.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSSL reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20160926.txt\">\n\t  <p>Critical vulnerability in OpenSSL 1.1.0a<br/>\n\t    Fix Use After Free for large message sizes (CVE-2016-6309)</p>\n\t  <p>Moderate vulnerability in OpenSSL 1.0.2i<br/>\n\t    Missing CRL sanity check (CVE-2016-7052)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20160926.txt"
+		],
+		"cvename": [
+			"CVE-2016-6309",
+			"CVE-2016-7052"
+		],
+		"freebsd_sa": [
+			"SA-16:27.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2016-09-26",
+		"entry": "2016-09-26",
+		"modified": "2016-10-10"
+	}
 }

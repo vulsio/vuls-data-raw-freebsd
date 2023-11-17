@@ -1,161 +1,161 @@
 {
-  "vid": "84630f4a-cd8c-11da-b7b9-000c6ec775d9",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.8,1"
-        },
-        {
-          "lt": "1.5.0.2,1",
-          "gt": "1.5.*,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.5.0.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.13,2"
-        },
-        {
-          "ge": "1.8.*,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.13"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey",
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "thunderbird",
-        "mozilla-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "1.5.0.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports of multiple\n\t  issues.  Several of which can be used to run arbitrary code\n\t  with the privilege of the user running the program.</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/\">\n\t  <ul>\n\t    <li>MFSA 2006-29 Spoofing with translucent windows</li>\n\t    <li>MFSA 2006-28 Security check of js_ValueToFunctionObject() can be circumvented</li>\n\t    <li>MFSA 2006-26 Mail Multiple Information Disclosure</li>\n\t    <li>MFSA 2006-25 Privilege escalation through Print Preview</li>\n\t    <li>MFSA 2006-24 Privilege escalation using crypto.generateCRMFRequest</li>\n\t    <li>MFSA 2006-23 File stealing by changing input type</li>\n\t    <li>MFSA 2006-22 CSS Letter-Spacing Heap Overflow Vulnerability</li>\n\t    <li>MFSA 2006-20 Crashes with evidence of memory corruption (rv:1.8.0.2)</li>\n\t    <li>MFSA 2006-19 Cross-site scripting using .valueOf.call()</li>\n\t    <li>MFSA 2006-18 Mozilla Firefox Tag Order Vulnerability</li>\n\t    <li>MFSA 2006-17 cross-site scripting through window.controllers</li>\n\t    <li>MFSA 2006-16 Accessing XBL compilation scope via valueOf.call()</li>\n\t    <li>MFSA 2006-15 Privilege escalation using a JavaScript function's cloned parent</li>\n\t    <li>MFSA 2006-14 Privilege escalation via XBL.method.eval</li>\n\t    <li>MFSA 2006-13 Downloading executables with \"Save Image As...\"</li>\n\t    <li>MFSA 2006-12 Secure-site spoof (requires security warning dialog)</li>\n\t    <li>MFSA 2006-11 Crashes with evidence of memory corruption (rv:1.8)</li>\n\t    <li>MFSA 2006-10 JavaScript garbage-collection hazard audit</li>\n\t    <li>MFSA 2006-09 Cross-site JavaScript injection using event handlers</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-09.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-10.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-11.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-12.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-13.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-14.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-15.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-16.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-17.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-18.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-19.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-20.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-22.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-23.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-25.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-26.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-28.html",
-      "http://www.mozilla.org/security/announce/2006/mfsa2006-29.html",
-      "http://www.zerodayinitiative.com/advisories/ZDI-06-010.html"
-    ],
-    "cvename": [
-      "CVE-2006-0749",
-      "CVE-2006-1045",
-      "CVE-2006-1529",
-      "CVE-2006-1530",
-      "CVE-2006-1531",
-      "CVE-2006-1723",
-      "CVE-2006-1724",
-      "CVE-2006-1725",
-      "CVE-2006-1726",
-      "CVE-2006-1727",
-      "CVE-2006-1728",
-      "CVE-2006-1729",
-      "CVE-2006-1730",
-      "CVE-2006-1731",
-      "CVE-2006-1732",
-      "CVE-2006-1733",
-      "CVE-2006-1734",
-      "CVE-2006-1735",
-      "CVE-2006-1736",
-      "CVE-2006-1737",
-      "CVE-2006-1738",
-      "CVE-2006-1739",
-      "CVE-2006-1740",
-      "CVE-2006-1741",
-      "CVE-2006-1742",
-      "CVE-2006-1790"
-    ],
-    "cert_vu": [
-      "179014",
-      "252324",
-      "329500",
-      "350262",
-      "488774",
-      "736934",
-      "813230",
-      "842094",
-      "932734",
-      "935556",
-      "968814"
-    ],
-    "us_cert_ta": [
-      "TA06-107A"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-04-13",
-    "entry": "2006-04-16",
-    "modified": "2006-04-27"
-  }
+	"vid": "84630f4a-cd8c-11da-b7b9-000c6ec775d9",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.8,1"
+				},
+				{
+					"lt": "1.5.0.2,1",
+					"gt": "1.5.*,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.5.0.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.13,2"
+				},
+				{
+					"ge": "1.8.*,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey",
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"thunderbird",
+				"mozilla-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "1.5.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory reports of multiple\n\t  issues.  Several of which can be used to run arbitrary code\n\t  with the privilege of the user running the program.</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/\">\n\t  <ul>\n\t    <li>MFSA 2006-29 Spoofing with translucent windows</li>\n\t    <li>MFSA 2006-28 Security check of js_ValueToFunctionObject() can be circumvented</li>\n\t    <li>MFSA 2006-26 Mail Multiple Information Disclosure</li>\n\t    <li>MFSA 2006-25 Privilege escalation through Print Preview</li>\n\t    <li>MFSA 2006-24 Privilege escalation using crypto.generateCRMFRequest</li>\n\t    <li>MFSA 2006-23 File stealing by changing input type</li>\n\t    <li>MFSA 2006-22 CSS Letter-Spacing Heap Overflow Vulnerability</li>\n\t    <li>MFSA 2006-20 Crashes with evidence of memory corruption (rv:1.8.0.2)</li>\n\t    <li>MFSA 2006-19 Cross-site scripting using .valueOf.call()</li>\n\t    <li>MFSA 2006-18 Mozilla Firefox Tag Order Vulnerability</li>\n\t    <li>MFSA 2006-17 cross-site scripting through window.controllers</li>\n\t    <li>MFSA 2006-16 Accessing XBL compilation scope via valueOf.call()</li>\n\t    <li>MFSA 2006-15 Privilege escalation using a JavaScript function's cloned parent</li>\n\t    <li>MFSA 2006-14 Privilege escalation via XBL.method.eval</li>\n\t    <li>MFSA 2006-13 Downloading executables with \"Save Image As...\"</li>\n\t    <li>MFSA 2006-12 Secure-site spoof (requires security warning dialog)</li>\n\t    <li>MFSA 2006-11 Crashes with evidence of memory corruption (rv:1.8)</li>\n\t    <li>MFSA 2006-10 JavaScript garbage-collection hazard audit</li>\n\t    <li>MFSA 2006-09 Cross-site JavaScript injection using event handlers</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-09.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-10.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-11.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-12.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-13.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-14.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-15.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-16.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-17.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-18.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-19.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-20.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-22.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-23.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-25.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-26.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-28.html",
+			"http://www.mozilla.org/security/announce/2006/mfsa2006-29.html",
+			"http://www.zerodayinitiative.com/advisories/ZDI-06-010.html"
+		],
+		"cvename": [
+			"CVE-2006-0749",
+			"CVE-2006-1045",
+			"CVE-2006-1529",
+			"CVE-2006-1530",
+			"CVE-2006-1531",
+			"CVE-2006-1723",
+			"CVE-2006-1724",
+			"CVE-2006-1725",
+			"CVE-2006-1726",
+			"CVE-2006-1727",
+			"CVE-2006-1728",
+			"CVE-2006-1729",
+			"CVE-2006-1730",
+			"CVE-2006-1731",
+			"CVE-2006-1732",
+			"CVE-2006-1733",
+			"CVE-2006-1734",
+			"CVE-2006-1735",
+			"CVE-2006-1736",
+			"CVE-2006-1737",
+			"CVE-2006-1738",
+			"CVE-2006-1739",
+			"CVE-2006-1740",
+			"CVE-2006-1741",
+			"CVE-2006-1742",
+			"CVE-2006-1790"
+		],
+		"cert_vu": [
+			"179014",
+			"252324",
+			"329500",
+			"350262",
+			"488774",
+			"736934",
+			"813230",
+			"842094",
+			"932734",
+			"935556",
+			"968814"
+		],
+		"us_cert_ta": [
+			"TA06-107A"
+		]
+	},
+	"dates": {
+		"discovery": "2006-04-13",
+		"entry": "2006-04-16",
+		"modified": "2006-04-27"
+	}
 }

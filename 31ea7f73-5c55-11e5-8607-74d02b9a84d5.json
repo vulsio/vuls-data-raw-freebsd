@@ -1,32 +1,32 @@
 {
-  "vid": "31ea7f73-5c55-11e5-8607-74d02b9a84d5",
-  "topic": "h2o -- directory traversal vulnerability",
-  "affects": [
-    {
-      "name": [
-        "h2o"
-      ],
-      "range": [
-        {
-          "lt": "1.4.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Yakuzo reports:</p>\n\t<blockquote cite=\"https://h2o.examp1e.net/vulnerabilities.html\">\n\t  <p>H2O (up to version 1.4.4 / 1.5.0-beta1) contains a flaw in its URL\n\t    normalization logic.</p>\n\t  <p>When file.dir directive is used, this flaw\n\t    allows a remote attacker to retrieve arbitrary files that exist\n\t    outside the directory specified by the directive.</p>\n\t  <p>H2O version 1.4.5 and version 1.5.0-beta2 have been released\n\t    to address this vulnerability.</p>\n\t  <p>Users are advised to upgrade their servers immediately.</p>\n\t  <p>The vulnerability was reported by: Yusuke OSUMI.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5638"
-    ],
-    "cvename": [
-      "CVE-2015-5638"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-09-14",
-    "entry": "2015-09-16"
-  }
+	"vid": "31ea7f73-5c55-11e5-8607-74d02b9a84d5",
+	"topic": "h2o -- directory traversal vulnerability",
+	"affects": [
+		{
+			"name": [
+				"h2o"
+			],
+			"range": [
+				{
+					"lt": "1.4.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Yakuzo reports:</p>\n\t<blockquote cite=\"https://h2o.examp1e.net/vulnerabilities.html\">\n\t  <p>H2O (up to version 1.4.4 / 1.5.0-beta1) contains a flaw in its URL\n\t    normalization logic.</p>\n\t  <p>When file.dir directive is used, this flaw\n\t    allows a remote attacker to retrieve arbitrary files that exist\n\t    outside the directory specified by the directive.</p>\n\t  <p>H2O version 1.4.5 and version 1.5.0-beta2 have been released\n\t    to address this vulnerability.</p>\n\t  <p>Users are advised to upgrade their servers immediately.</p>\n\t  <p>The vulnerability was reported by: Yusuke OSUMI.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5638"
+		],
+		"cvename": [
+			"CVE-2015-5638"
+		]
+	},
+	"dates": {
+		"discovery": "2015-09-14",
+		"entry": "2015-09-16"
+	}
 }

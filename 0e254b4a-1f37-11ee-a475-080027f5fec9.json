@@ -1,62 +1,62 @@
 {
-  "vid": "0e254b4a-1f37-11ee-a475-080027f5fec9",
-  "topic": "redis -- Heap overflow in the cjson and cmsgpack libraries",
-  "affects": [
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "7.0.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis-devel"
-      ],
-      "range": [
-        {
-          "lt": "7.0.12.20230710"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis62"
-      ],
-      "range": [
-        {
-          "lt": "6.2.13"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis60"
-      ],
-      "range": [
-        {
-          "lt": "6.0.20"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Redis core team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/JDjKS0GubsQ\">\n\t  <p>\n\t     A specially crafted Lua script executing in Redis can\n\t     trigger a heap overflow in the cjson and cmsgpack\n\t     libraries, and result in heap corruption and potentially\n\t     remote code execution.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
-    ],
-    "cvename": [
-      "CVE-2022-24834"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-07-10",
-    "entry": "2023-07-10"
-  }
+	"vid": "0e254b4a-1f37-11ee-a475-080027f5fec9",
+	"topic": "redis -- Heap overflow in the cjson and cmsgpack libraries",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "7.0.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis-devel"
+			],
+			"range": [
+				{
+					"lt": "7.0.12.20230710"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis62"
+			],
+			"range": [
+				{
+					"lt": "6.2.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis60"
+			],
+			"range": [
+				{
+					"lt": "6.0.20"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Redis core team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/JDjKS0GubsQ\">\n\t  <p>\n\t     A specially crafted Lua script executing in Redis can\n\t     trigger a heap overflow in the cjson and cmsgpack\n\t     libraries, and result in heap corruption and potentially\n\t     remote code execution.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
+		],
+		"cvename": [
+			"CVE-2022-24834"
+		]
+	},
+	"dates": {
+		"discovery": "2023-07-10",
+		"entry": "2023-07-10"
+	}
 }

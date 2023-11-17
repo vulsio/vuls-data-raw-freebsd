@@ -1,89 +1,89 @@
 {
-  "vid": "06ed6a49-bad4-11ec-9cfe-0800270512f4",
-  "topic": "Ruby -- Buffer overrun in String-to-Float conversion",
-  "affects": [
-    {
-      "name": [
-        "ruby"
-      ],
-      "range": [
-        {
-          "lt": "2.7.6,1",
-          "ge": "2.7.0,1"
-        },
-        {
-          "lt": "3.0.4,1",
-          "ge": "3.0.0,1"
-        },
-        {
-          "lt": "3.1.2,1",
-          "ge": "3.1.0,1"
-        },
-        {
-          "lt": "3.2.0.p1_1,1",
-          "ge": "3.2.0.p1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby27"
-      ],
-      "range": [
-        {
-          "lt": "2.7.6,1",
-          "ge": "2.7.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby30"
-      ],
-      "range": [
-        {
-          "lt": "3.0.4,1",
-          "ge": "3.0.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby31"
-      ],
-      "range": [
-        {
-          "lt": "3.1.2,1",
-          "ge": "3.1.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby32"
-      ],
-      "range": [
-        {
-          "lt": "3.2.0.p1_1,1",
-          "ge": "3.2.0.p1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>piao reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2022/04/12/buffer-overrun-in-string-to-float-cve-2022-28739/\">\n\t  <p>\n\t    Due to a bug in an internal function that converts a String\n\t    to a Float, some convertion methods like <code>Kernel#Float</code>\n\t    and <code>String#to_f</code> could cause buffer over-read.\n\t    A typical consequence is a process termination due to\n\t    segmentation fault, but in a limited circumstances, it may\n\t    be exploitable for illegal memory read.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2022/04/12/buffer-overrun-in-string-to-float-cve-2022-28739/"
-    ],
-    "cvename": [
-      "CVE-2022-28739"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-12",
-    "entry": "2022-04-13"
-  }
+	"vid": "06ed6a49-bad4-11ec-9cfe-0800270512f4",
+	"topic": "Ruby -- Buffer overrun in String-to-Float conversion",
+	"affects": [
+		{
+			"name": [
+				"ruby"
+			],
+			"range": [
+				{
+					"lt": "2.7.6,1",
+					"ge": "2.7.0,1"
+				},
+				{
+					"lt": "3.0.4,1",
+					"ge": "3.0.0,1"
+				},
+				{
+					"lt": "3.1.2,1",
+					"ge": "3.1.0,1"
+				},
+				{
+					"lt": "3.2.0.p1_1,1",
+					"ge": "3.2.0.p1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby27"
+			],
+			"range": [
+				{
+					"lt": "2.7.6,1",
+					"ge": "2.7.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby30"
+			],
+			"range": [
+				{
+					"lt": "3.0.4,1",
+					"ge": "3.0.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby31"
+			],
+			"range": [
+				{
+					"lt": "3.1.2,1",
+					"ge": "3.1.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby32"
+			],
+			"range": [
+				{
+					"lt": "3.2.0.p1_1,1",
+					"ge": "3.2.0.p1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>piao reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2022/04/12/buffer-overrun-in-string-to-float-cve-2022-28739/\">\n\t  <p>\n\t    Due to a bug in an internal function that converts a String\n\t    to a Float, some convertion methods like <code>Kernel#Float</code>\n\t    and <code>String#to_f</code> could cause buffer over-read.\n\t    A typical consequence is a process termination due to\n\t    segmentation fault, but in a limited circumstances, it may\n\t    be exploitable for illegal memory read.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2022/04/12/buffer-overrun-in-string-to-float-cve-2022-28739/"
+		],
+		"cvename": [
+			"CVE-2022-28739"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-12",
+		"entry": "2022-04-13"
+	}
 }

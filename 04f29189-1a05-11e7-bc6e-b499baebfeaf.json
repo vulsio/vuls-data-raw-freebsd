@@ -1,34 +1,34 @@
 {
-  "vid": "04f29189-1a05-11e7-bc6e-b499baebfeaf",
-  "topic": "cURL -- potential memory disclosure",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.53.1_1",
-          "ge": "6.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20170403.html\">\n\t  <p>There were two bugs in curl's parser for the command line option\n\t    --write-out (or -w for short) that would skip the end of string\n\t    zero byte if the string ended in a % (percent) or \\ (backslash),\n\t    and it would read beyond that buffer in the heap memory and it\n\t    could then potentially output pieces of that memory to the\n\t    terminal or the target file etc..</p>\n\t  <p>This flaw only exists in the command line tool.</p>\n\t  <p>We are not aware of any exploit of this flaw.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/adv_20170403.html"
-    ],
-    "cvename": [
-      "CVE-2017-7407"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-03",
-    "entry": "2017-04-05",
-    "modified": "2017-04-06"
-  }
+	"vid": "04f29189-1a05-11e7-bc6e-b499baebfeaf",
+	"topic": "cURL -- potential memory disclosure",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.53.1_1",
+					"ge": "6.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20170403.html\">\n\t  <p>There were two bugs in curl's parser for the command line option\n\t    --write-out (or -w for short) that would skip the end of string\n\t    zero byte if the string ended in a % (percent) or \\ (backslash),\n\t    and it would read beyond that buffer in the heap memory and it\n\t    could then potentially output pieces of that memory to the\n\t    terminal or the target file etc..</p>\n\t  <p>This flaw only exists in the command line tool.</p>\n\t  <p>We are not aware of any exploit of this flaw.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/adv_20170403.html"
+		],
+		"cvename": [
+			"CVE-2017-7407"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-03",
+		"entry": "2017-04-05",
+		"modified": "2017-04-06"
+	}
 }

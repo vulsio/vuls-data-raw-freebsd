@@ -1,40 +1,40 @@
 {
-  "vid": "eeae6cce-d05c-11d9-9aed-000e0c2e438a",
-  "topic": "mysql-server -- insecure temporary file creation",
-  "affects": [
-    {
-      "name": [
-        "mysql-server"
-      ],
-      "range": [
-        {
-          "lt": "4.1.12",
-          "gt": "4.1"
-        },
-        {
-          "lt": "5.0.6",
-          "gt": "5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Zataz advisory reports that MySQL contains a security\n\t  flaw which could allow a malicious local user to inject\n\t  arbitrary SQL commands during the initial database creation\n\t  process.</p>\n\t<p>The problem lies in the mysql_install_db script which\n\t  creates temporary files based on the PID used by the\n\t  script.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.zataz.net/adviso/mysql-05172005.txt"
-    ],
-    "cvename": [
-      "CVE-2005-1636"
-    ],
-    "bid": [
-      "13660"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-07",
-    "entry": "2005-07-09"
-  }
+	"vid": "eeae6cce-d05c-11d9-9aed-000e0c2e438a",
+	"topic": "mysql-server -- insecure temporary file creation",
+	"affects": [
+		{
+			"name": [
+				"mysql-server"
+			],
+			"range": [
+				{
+					"lt": "4.1.12",
+					"gt": "4.1"
+				},
+				{
+					"lt": "5.0.6",
+					"gt": "5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Zataz advisory reports that MySQL contains a security\n\t  flaw which could allow a malicious local user to inject\n\t  arbitrary SQL commands during the initial database creation\n\t  process.</p>\n\t<p>The problem lies in the mysql_install_db script which\n\t  creates temporary files based on the PID used by the\n\t  script.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.zataz.net/adviso/mysql-05172005.txt"
+		],
+		"cvename": [
+			"CVE-2005-1636"
+		],
+		"bid": [
+			"13660"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-07",
+		"entry": "2005-07-09"
+	}
 }

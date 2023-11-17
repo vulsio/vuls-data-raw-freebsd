@@ -1,71 +1,71 @@
 {
-  "vid": "01a197ca-67f1-11e7-a266-28924a333806",
-  "topic": "evince and atril -- command injection vulnerability in CBT handler",
-  "affects": [
-    {
-      "name": [
-        "evince"
-      ],
-      "range": [
-        {
-          "le": "3.24.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "evince-lite"
-      ],
-      "range": [
-        {
-          "le": "3.24.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "atril"
-      ],
-      "range": [
-        {
-          "lt": "1.18.1"
-        },
-        {
-          "lt": "1.19.1",
-          "ge": "1.19.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "atril-lite"
-      ],
-      "range": [
-        {
-          "lt": "1.18.1"
-        },
-        {
-          "lt": "1.19.1",
-          "ge": "1.19.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>GNOME reports:</p>\n\t<blockquote cite=\"https://bugzilla.gnome.org/show_bug.cgi?id=784630\">\n\t  <p>The comic book backend in evince 3.24.0 (and earlier) is vulnerable to a command injection bug that can be used to execute arbitrary commands when a CBT file is opened.</p>\n\t  <p>The same vulnerability affects atril, the Evince fork.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.gnome.org/show_bug.cgi?id=784630",
-      "https://github.com/mate-desktop/atril/issues/257"
-    ],
-    "cvename": [
-      "CVE-2017-1000083"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-07-06",
-    "entry": "2017-07-13"
-  }
+	"vid": "01a197ca-67f1-11e7-a266-28924a333806",
+	"topic": "evince and atril -- command injection vulnerability in CBT handler",
+	"affects": [
+		{
+			"name": [
+				"evince"
+			],
+			"range": [
+				{
+					"le": "3.24.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"evince-lite"
+			],
+			"range": [
+				{
+					"le": "3.24.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"atril"
+			],
+			"range": [
+				{
+					"lt": "1.18.1"
+				},
+				{
+					"lt": "1.19.1",
+					"ge": "1.19.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"atril-lite"
+			],
+			"range": [
+				{
+					"lt": "1.18.1"
+				},
+				{
+					"lt": "1.19.1",
+					"ge": "1.19.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GNOME reports:</p>\n\t<blockquote cite=\"https://bugzilla.gnome.org/show_bug.cgi?id=784630\">\n\t  <p>The comic book backend in evince 3.24.0 (and earlier) is vulnerable to a command injection bug that can be used to execute arbitrary commands when a CBT file is opened.</p>\n\t  <p>The same vulnerability affects atril, the Evince fork.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.gnome.org/show_bug.cgi?id=784630",
+			"https://github.com/mate-desktop/atril/issues/257"
+		],
+		"cvename": [
+			"CVE-2017-1000083"
+		]
+	},
+	"dates": {
+		"discovery": "2017-07-06",
+		"entry": "2017-07-13"
+	}
 }

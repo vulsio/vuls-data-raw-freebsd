@@ -1,33 +1,33 @@
 {
-  "vid": "713c3913-8c2b-11d9-b58c-0001020eed82",
-  "topic": "ImageMagick -- format string vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ImageMagick",
-        "ImageMagick-nox11"
-      ],
-      "range": [
-        {
-          "lt": "6.2.0.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tavis Ormandy reports:</p>\n\t<blockquote>\n\t  <p>magemagick-6.2.0-3 fixes an potential issue handling\n\t    malformed filenames, the flaw may affect webapps or\n\t    scripts that use the imagemagick utilities for image\n\t    processing, or applications linked with libMagick.</p>\n\t</blockquote>\n\t<p>This vulnerability could crash ImageMagick or potentially\n\t  lead to the execution of arbitrary code with the permissions\n\t  of the user running ImageMagick.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.ubuntulinux.org/support/documentation/usn/usn-90-1"
-    ],
-    "cvename": [
-      "CVE-2005-0397"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-03-02",
-    "entry": "2005-03-03"
-  }
+	"vid": "713c3913-8c2b-11d9-b58c-0001020eed82",
+	"topic": "ImageMagick -- format string vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ImageMagick",
+				"ImageMagick-nox11"
+			],
+			"range": [
+				{
+					"lt": "6.2.0.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tavis Ormandy reports:</p>\n\t<blockquote>\n\t  <p>magemagick-6.2.0-3 fixes an potential issue handling\n\t    malformed filenames, the flaw may affect webapps or\n\t    scripts that use the imagemagick utilities for image\n\t    processing, or applications linked with libMagick.</p>\n\t</blockquote>\n\t<p>This vulnerability could crash ImageMagick or potentially\n\t  lead to the execution of arbitrary code with the permissions\n\t  of the user running ImageMagick.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.ubuntulinux.org/support/documentation/usn/usn-90-1"
+		],
+		"cvename": [
+			"CVE-2005-0397"
+		]
+	},
+	"dates": {
+		"discovery": "2005-03-02",
+		"entry": "2005-03-03"
+	}
 }

@@ -1,45 +1,45 @@
 {
-  "vid": "fc2a9541-8893-11ec-9d01-80ee73419af3",
-  "topic": "xrdp -- privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "xrdp"
-      ],
-      "range": [
-        {
-          "lt": "0.9.18.1,1",
-          "ge": "0.9.17,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xrdp-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.9.18.1,1",
-          "ge": "0.9.17,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>xrdp project reports:</p>\n\t<blockquote cite=\"https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-8h98-h426-xf32\">\n\t  <p>An integer underflow leading to a heap overflow in the sesman server allows any unauthenticated attacker which is accessible to a sesman server (listens by default on localhost when installing xrdp, but can be remote if configured otherwise) to execute code as root.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-8h98-h426-xf32"
-    ],
-    "cvename": [
-      "CVE-2022-23613"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-01-23",
-    "entry": "2022-02-08",
-    "modified": "2022-02-15"
-  }
+	"vid": "fc2a9541-8893-11ec-9d01-80ee73419af3",
+	"topic": "xrdp -- privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"xrdp"
+			],
+			"range": [
+				{
+					"lt": "0.9.18.1,1",
+					"ge": "0.9.17,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xrdp-devel"
+			],
+			"range": [
+				{
+					"lt": "0.9.18.1,1",
+					"ge": "0.9.17,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>xrdp project reports:</p>\n\t<blockquote cite=\"https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-8h98-h426-xf32\">\n\t  <p>An integer underflow leading to a heap overflow in the sesman server allows any unauthenticated attacker which is accessible to a sesman server (listens by default on localhost when installing xrdp, but can be remote if configured otherwise) to execute code as root.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-8h98-h426-xf32"
+		],
+		"cvename": [
+			"CVE-2022-23613"
+		]
+	},
+	"dates": {
+		"discovery": "2022-01-23",
+		"entry": "2022-02-08",
+		"modified": "2022-02-15"
+	}
 }

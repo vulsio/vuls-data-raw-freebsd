@@ -1,57 +1,57 @@
 {
-  "vid": "7f5ccb1d-439b-11e1-bc16-0023ae8e59f0",
-  "topic": "tomcat -- Denial of Service",
-  "affects": [
-    {
-      "name": [
-        "tomcat"
-      ],
-      "range": [
-        {
-          "lt": "5.5.35",
-          "gt": "5.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat"
-      ],
-      "range": [
-        {
-          "lt": "6.0.34",
-          "gt": "6.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat"
-      ],
-      "range": [
-        {
-          "lt": "7.0.23",
-          "gt": "7.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Tomcat security team reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-5.html#Fixed_in_Apache_Tomcat_5.5.35\">\n\t  <p>Analysis of the recent hash collision vulnerability identified\n\t    unrelated inefficiencies with Apache Tomcat's handling of large\n\t    numbers of parameters and parameter values.  These inefficiencies\n\t    could allow an attacker, via a specially crafted request, to\n\t    cause large amounts of CPU to be used which in turn could create\n\t    a denial of service.  The issue was addressed by modifying the\n\t    Tomcat parameter handling code to efficiently process large\n\t    numbers of parameters and parameter values.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://tomcat.apache.org/security-5.html#Fixed_in_Apache_Tomcat_5.5.35",
-      "http://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.34",
-      "http://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.23"
-    ],
-    "cvename": [
-      "CVE-2012-0022"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-10-21",
-    "entry": "2012-01-17"
-  }
+	"vid": "7f5ccb1d-439b-11e1-bc16-0023ae8e59f0",
+	"topic": "tomcat -- Denial of Service",
+	"affects": [
+		{
+			"name": [
+				"tomcat"
+			],
+			"range": [
+				{
+					"lt": "5.5.35",
+					"gt": "5.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat"
+			],
+			"range": [
+				{
+					"lt": "6.0.34",
+					"gt": "6.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat"
+			],
+			"range": [
+				{
+					"lt": "7.0.23",
+					"gt": "7.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Tomcat security team reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-5.html#Fixed_in_Apache_Tomcat_5.5.35\">\n\t  <p>Analysis of the recent hash collision vulnerability identified\n\t    unrelated inefficiencies with Apache Tomcat's handling of large\n\t    numbers of parameters and parameter values.  These inefficiencies\n\t    could allow an attacker, via a specially crafted request, to\n\t    cause large amounts of CPU to be used which in turn could create\n\t    a denial of service.  The issue was addressed by modifying the\n\t    Tomcat parameter handling code to efficiently process large\n\t    numbers of parameters and parameter values.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://tomcat.apache.org/security-5.html#Fixed_in_Apache_Tomcat_5.5.35",
+			"http://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.34",
+			"http://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.23"
+		],
+		"cvename": [
+			"CVE-2012-0022"
+		]
+	},
+	"dates": {
+		"discovery": "2011-10-21",
+		"entry": "2012-01-17"
+	}
 }

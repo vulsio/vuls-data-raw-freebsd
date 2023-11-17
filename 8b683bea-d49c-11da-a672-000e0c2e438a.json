@@ -1,35 +1,35 @@
 {
-  "vid": "8b683bea-d49c-11da-a672-000e0c2e438a",
-  "topic": "asterisk -- denial of service vulnerability, local system access",
-  "affects": [
-    {
-      "name": [
-        "asterisk"
-      ],
-      "range": [
-        {
-          "lt": "1.2.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Emmanouel Kellenis reports a denial of service vulnerability\n\t  within asterisk.  The vulnerability is caused by a buffer\n\t  overflow in \"format_jpeg.c\".\tA large JPEG image could\n\t  trigger this bug, potentially allowing a local attacker to\n\t  execute arbitrary code.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.cipher.org.uk/index.php?p=advisories/Asterisk_Codec_Integer_Overflow_07-04-2006.advisory"
-    ],
-    "cvename": [
-      "CVE-2006-1827"
-    ],
-    "bid": [
-      "17561"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-04-07",
-    "entry": "2006-04-25"
-  }
+	"vid": "8b683bea-d49c-11da-a672-000e0c2e438a",
+	"topic": "asterisk -- denial of service vulnerability, local system access",
+	"affects": [
+		{
+			"name": [
+				"asterisk"
+			],
+			"range": [
+				{
+					"lt": "1.2.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Emmanouel Kellenis reports a denial of service vulnerability\n\t  within asterisk.  The vulnerability is caused by a buffer\n\t  overflow in \"format_jpeg.c\".\tA large JPEG image could\n\t  trigger this bug, potentially allowing a local attacker to\n\t  execute arbitrary code.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.cipher.org.uk/index.php?p=advisories/Asterisk_Codec_Integer_Overflow_07-04-2006.advisory"
+		],
+		"cvename": [
+			"CVE-2006-1827"
+		],
+		"bid": [
+			"17561"
+		]
+	},
+	"dates": {
+		"discovery": "2006-04-07",
+		"entry": "2006-04-25"
+	}
 }

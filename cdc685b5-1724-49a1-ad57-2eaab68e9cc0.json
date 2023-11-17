@@ -1,54 +1,54 @@
 {
-  "vid": "cdc685b5-1724-49a1-ad57-2eaab68e9cc0",
-  "topic": "py-pygments -- multiple DoS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py37-pygments",
-        "py38-pygments",
-        "py39-pygments",
-        "py310-pygments",
-        "py311-pygments"
-      ],
-      "range": [
-        {
-          "lt": "2.7.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py37-pygments-25",
-        "py38-pygments-25",
-        "py39-pygments-25",
-        "py310-pygments-25",
-        "py311-pygments-25"
-      ],
-      "range": [
-        {
-          "lt": "2.7.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>Red Hat reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2021-140\">\n      <p>An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the \"exception\" keyword.</p>\n    </blockquote>\n    <p>Ben Caller reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2021-141\">\n      <p>In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions.</p>\n      <p>Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS.</p>\n      <p>By crafting malicious input, an attacker can cause a denial of service.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/PYSEC-2021-140",
-      "https://osv.dev/vulnerability/GHSA-9w8r-397f-prfh",
-      "https://osv.dev/vulnerability/PYSEC-2021-141",
-      "https://osv.dev/vulnerability/GHSA-pq64-v7f5-gqh8"
-    ],
-    "cvename": [
-      "CVE-2021-20270",
-      "CVE-2021-27291"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-03-17",
-    "entry": "2023-08-31"
-  }
+	"vid": "cdc685b5-1724-49a1-ad57-2eaab68e9cc0",
+	"topic": "py-pygments -- multiple DoS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py37-pygments",
+				"py38-pygments",
+				"py39-pygments",
+				"py310-pygments",
+				"py311-pygments"
+			],
+			"range": [
+				{
+					"lt": "2.7.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"py37-pygments-25",
+				"py38-pygments-25",
+				"py39-pygments-25",
+				"py310-pygments-25",
+				"py311-pygments-25"
+			],
+			"range": [
+				{
+					"lt": "2.7.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>Red Hat reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2021-140\">\n      <p>An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the \"exception\" keyword.</p>\n    </blockquote>\n    <p>Ben Caller reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2021-141\">\n      <p>In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions.</p>\n      <p>Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS.</p>\n      <p>By crafting malicious input, an attacker can cause a denial of service.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/PYSEC-2021-140",
+			"https://osv.dev/vulnerability/GHSA-9w8r-397f-prfh",
+			"https://osv.dev/vulnerability/PYSEC-2021-141",
+			"https://osv.dev/vulnerability/GHSA-pq64-v7f5-gqh8"
+		],
+		"cvename": [
+			"CVE-2021-20270",
+			"CVE-2021-27291"
+		]
+	},
+	"dates": {
+		"discovery": "2021-03-17",
+		"entry": "2023-08-31"
+	}
 }

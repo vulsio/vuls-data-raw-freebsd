@@ -1,32 +1,32 @@
 {
-  "vid": "209f0d75-4b5c-11dc-a6cd-000fb5066b20",
-  "topic": "flyspray -- authentication bypass",
-  "affects": [
-    {
-      "name": [
-        "flyspray"
-      ],
-      "range": [
-        {
-          "lt": "0.9.9.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Flyspray Project reports:</p>\n\t<blockquote cite=\"http://www.flyspray.org/fsa:1\">\n\t  <p>Flyspray authentication system can be bypassed by sending a\n\t    carefully crafted post request.</p>\n\t  <p>To be vulnerable, PHP configuration directive output_buffering\n\t    has to be disabled or set to a low value.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.flyspray.org/fsa:1"
-    ],
-    "cvename": [
-      "CVE-2007-1788"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-03-13",
-    "entry": "2007-09-19"
-  }
+	"vid": "209f0d75-4b5c-11dc-a6cd-000fb5066b20",
+	"topic": "flyspray -- authentication bypass",
+	"affects": [
+		{
+			"name": [
+				"flyspray"
+			],
+			"range": [
+				{
+					"lt": "0.9.9.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Flyspray Project reports:</p>\n\t<blockquote cite=\"http://www.flyspray.org/fsa:1\">\n\t  <p>Flyspray authentication system can be bypassed by sending a\n\t    carefully crafted post request.</p>\n\t  <p>To be vulnerable, PHP configuration directive output_buffering\n\t    has to be disabled or set to a low value.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.flyspray.org/fsa:1"
+		],
+		"cvename": [
+			"CVE-2007-1788"
+		]
+	},
+	"dates": {
+		"discovery": "2007-03-13",
+		"entry": "2007-09-19"
+	}
 }

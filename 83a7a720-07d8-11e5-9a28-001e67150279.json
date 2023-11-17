@@ -1,36 +1,36 @@
 {
-  "vid": "83a7a720-07d8-11e5-9a28-001e67150279",
-  "topic": "rest-client -- session fixation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rubygem-rest-client"
-      ],
-      "range": [
-        {
-          "lt": "1.6.7_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Andy Brody reports:</p>\n\t<blockquote cite=\"https://github.com/rest-client/rest-client/issues/369\">\n\t  <p>When Ruby rest-client processes an HTTP redirection response,\n\t    it blindly passes along the values from any Set-Cookie headers to the\n\t    redirection target, regardless of domain, path, or expiration.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/rest-client/rest-client/issues/369"
-    ],
-    "cvename": [
-      "CVE-2015-1820"
-    ],
-    "freebsd_pr": [
-      "ports/200504"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-03-24",
-    "entry": "2015-05-31",
-    "modified": "2015-09-28"
-  }
+	"vid": "83a7a720-07d8-11e5-9a28-001e67150279",
+	"topic": "rest-client -- session fixation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rubygem-rest-client"
+			],
+			"range": [
+				{
+					"lt": "1.6.7_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Andy Brody reports:</p>\n\t<blockquote cite=\"https://github.com/rest-client/rest-client/issues/369\">\n\t  <p>When Ruby rest-client processes an HTTP redirection response,\n\t    it blindly passes along the values from any Set-Cookie headers to the\n\t    redirection target, regardless of domain, path, or expiration.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/rest-client/rest-client/issues/369"
+		],
+		"cvename": [
+			"CVE-2015-1820"
+		],
+		"freebsd_pr": [
+			"ports/200504"
+		]
+	},
+	"dates": {
+		"discovery": "2015-03-24",
+		"entry": "2015-05-31",
+		"modified": "2015-09-28"
+	}
 }

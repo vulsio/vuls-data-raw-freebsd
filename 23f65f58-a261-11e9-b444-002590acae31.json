@@ -1,30 +1,30 @@
 {
-  "vid": "23f65f58-a261-11e9-b444-002590acae31",
-  "topic": "GnuPG -- denial of service",
-  "affects": [
-    {
-      "name": [
-        "gnupg"
-      ],
-      "range": [
-        {
-          "lt": "2.2.17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>From the GnuPG 2.2.17 changelog:</p>\n\t<blockquote cite=\"https://dev.gnupg.org/T4606\">\n\t  <p>gpg: Ignore all key-signatures received from keyservers.  This\n   change is required to mitigate a DoS due to keys flooded with\n   faked key-signatures.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://dev.gnupg.org/T4606",
-      "https://dev.gnupg.org/T4607"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-07-03",
-    "entry": "2019-07-09"
-  }
+	"vid": "23f65f58-a261-11e9-b444-002590acae31",
+	"topic": "GnuPG -- denial of service",
+	"affects": [
+		{
+			"name": [
+				"gnupg"
+			],
+			"range": [
+				{
+					"lt": "2.2.17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>From the GnuPG 2.2.17 changelog:</p>\n\t<blockquote cite=\"https://dev.gnupg.org/T4606\">\n\t  <p>gpg: Ignore all key-signatures received from keyservers.  This\n   change is required to mitigate a DoS due to keys flooded with\n   faked key-signatures.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://dev.gnupg.org/T4606",
+			"https://dev.gnupg.org/T4607"
+		]
+	},
+	"dates": {
+		"discovery": "2019-07-03",
+		"entry": "2019-07-09"
+	}
 }

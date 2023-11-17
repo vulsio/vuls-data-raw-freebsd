@@ -1,48 +1,48 @@
 {
-  "vid": "3686917b-164d-11e6-94fa-002590263bf5",
-  "topic": "wordpress -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "wordpress"
-      ],
-      "range": [
-        {
-          "lt": "4.5.2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-wordpress",
-        "ja-wordpress",
-        "ru-wordpress",
-        "zh-wordpress-zh_CN",
-        "zh-wordpress-zh_TW"
-      ],
-      "range": [
-        {
-          "lt": "4.5.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Helen Hou-Sandi reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2016/05/wordpress-4-5-2/\">\n\t  <p>WordPress 4.5.2 is now available. This is a security release for\n\t    all previous versions and we strongly encourage you to update your\n\t    sites immediately.</p>\n\t  <p>WordPress versions 4.5.1 and earlier are affected by a SOME\n\t    vulnerability through Plupload, the third-party library WordPress\n\t    uses for uploading files. WordPress versions 4.2 through 4.5.1 are\n\t    vulnerable to reflected XSS using specially crafted URIs through\n\t    MediaElement.js, the third-party library used for media players.\n\t    MediaElement.js and Plupload have also released updates fixing\n\t    these issues.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://wordpress.org/news/2016/05/wordpress-4-5-2/",
-      "http://www.openwall.com/lists/oss-security/2016/05/07/7"
-    ],
-    "cvename": [
-      "CVE-2016-4566",
-      "CVE-2016-4567"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-06",
-    "entry": "2016-05-10"
-  }
+	"vid": "3686917b-164d-11e6-94fa-002590263bf5",
+	"topic": "wordpress -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"wordpress"
+			],
+			"range": [
+				{
+					"lt": "4.5.2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-wordpress",
+				"ja-wordpress",
+				"ru-wordpress",
+				"zh-wordpress-zh_CN",
+				"zh-wordpress-zh_TW"
+			],
+			"range": [
+				{
+					"lt": "4.5.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Helen Hou-Sandi reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2016/05/wordpress-4-5-2/\">\n\t  <p>WordPress 4.5.2 is now available. This is a security release for\n\t    all previous versions and we strongly encourage you to update your\n\t    sites immediately.</p>\n\t  <p>WordPress versions 4.5.1 and earlier are affected by a SOME\n\t    vulnerability through Plupload, the third-party library WordPress\n\t    uses for uploading files. WordPress versions 4.2 through 4.5.1 are\n\t    vulnerable to reflected XSS using specially crafted URIs through\n\t    MediaElement.js, the third-party library used for media players.\n\t    MediaElement.js and Plupload have also released updates fixing\n\t    these issues.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://wordpress.org/news/2016/05/wordpress-4-5-2/",
+			"http://www.openwall.com/lists/oss-security/2016/05/07/7"
+		],
+		"cvename": [
+			"CVE-2016-4566",
+			"CVE-2016-4567"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-06",
+		"entry": "2016-05-10"
+	}
 }

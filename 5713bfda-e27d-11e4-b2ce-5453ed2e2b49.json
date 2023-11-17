@@ -1,56 +1,56 @@
 {
-  "vid": "5713bfda-e27d-11e4-b2ce-5453ed2e2b49",
-  "topic": "qt4-imageformats, qt4-gui, qt5-gui -- Multiple Vulnerabilities in Qt Image Format Handling",
-  "affects": [
-    {
-      "name": [
-        "qt4-imageformats"
-      ],
-      "range": [
-        {
-          "lt": "4.8.6_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qt4-gui"
-      ],
-      "range": [
-        {
-          "lt": "4.8.6_5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qt5-gui"
-      ],
-      "range": [
-        {
-          "lt": "5.4.1_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Richard J. Moore reports:</p>\n\t<blockquote cite=\"http://lists.qt-project.org/pipermail/announce/2015-April/000067.html\">\n\t  <p>Due to two recent vulnerabilities identified in the built-in image\n\t  format handling code, it was decided that this area required further\n\t  testing to determine if further issues remained. Fuzzing using\n\t  afl-fuzz located a number of issues in the handling of BMP, ICO and\n\t  GIF files. The issues exposed included denial of service and buffer\n\t  overflows leading to heap corruption. It is possible the latter could\n\t  be used to perform remote code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2015-1858",
-      "CVE-2015-1859",
-      "CVE-2015-1860"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.qt-project.org/pipermail/announce/2015-April/000067.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2015-04-12",
-    "entry": "2015-04-14"
-  }
+	"vid": "5713bfda-e27d-11e4-b2ce-5453ed2e2b49",
+	"topic": "qt4-imageformats, qt4-gui, qt5-gui -- Multiple Vulnerabilities in Qt Image Format Handling",
+	"affects": [
+		{
+			"name": [
+				"qt4-imageformats"
+			],
+			"range": [
+				{
+					"lt": "4.8.6_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"qt4-gui"
+			],
+			"range": [
+				{
+					"lt": "4.8.6_5"
+				}
+			]
+		},
+		{
+			"name": [
+				"qt5-gui"
+			],
+			"range": [
+				{
+					"lt": "5.4.1_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Richard J. Moore reports:</p>\n\t<blockquote cite=\"http://lists.qt-project.org/pipermail/announce/2015-April/000067.html\">\n\t  <p>Due to two recent vulnerabilities identified in the built-in image\n\t  format handling code, it was decided that this area required further\n\t  testing to determine if further issues remained. Fuzzing using\n\t  afl-fuzz located a number of issues in the handling of BMP, ICO and\n\t  GIF files. The issues exposed included denial of service and buffer\n\t  overflows leading to heap corruption. It is possible the latter could\n\t  be used to perform remote code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2015-1858",
+			"CVE-2015-1859",
+			"CVE-2015-1860"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.qt-project.org/pipermail/announce/2015-April/000067.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2015-04-12",
+		"entry": "2015-04-14"
+	}
 }

@@ -1,108 +1,108 @@
 {
-  "vid": "68222076-010b-11da-bc08-0001020eed82",
-  "topic": "tiff -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "tiff"
-      ],
-      "range": [
-        {
-          "lt": "3.7.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-tiff"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "pdflib",
-        "pdflib-perl"
-      ],
-      "range": [
-        {
-          "lt": "6.0.1_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gdal"
-      ],
-      "range": [
-        {
-          "lt": "1.2.1_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ivtools"
-      ],
-      "range": [
-        {
-          "lt": "1.2.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "paraview"
-      ],
-      "range": [
-        {
-          "lt": "2.4.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "fractorama"
-      ],
-      "range": [
-        {
-          "lt": "1.6.7_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "iv",
-        "ja-iv",
-        "ja-libimg"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Gentoo Linux Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200505-07.xml\">\n\t  <p>Tavis Ormandy of the Gentoo Linux Security Audit Team\n\t    discovered a stack based buffer overflow in the libTIFF\n\t    library when reading a TIFF image with a malformed\n\t    BitsPerSample tag.</p>\n\t  <p>Successful exploitation would require the victim to open\n\t    a specially crafted TIFF image, resulting in the execution\n\t    of arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugzilla.remotesensing.org/show_bug.cgi?id=843",
-      "http://www.gentoo.org/security/en/glsa/glsa-200505-07.xml",
-      "http://www.remotesensing.org/libtiff/v3.7.3.html"
-    ],
-    "cvename": [
-      "CVE-2005-1544"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-10",
-    "entry": "2005-07-30",
-    "modified": "2006-06-08"
-  }
+	"vid": "68222076-010b-11da-bc08-0001020eed82",
+	"topic": "tiff -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"tiff"
+			],
+			"range": [
+				{
+					"lt": "3.7.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-tiff"
+			],
+			"range": [
+				{
+					"lt": "3.6.1_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"pdflib",
+				"pdflib-perl"
+			],
+			"range": [
+				{
+					"lt": "6.0.1_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"gdal"
+			],
+			"range": [
+				{
+					"lt": "1.2.1_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"ivtools"
+			],
+			"range": [
+				{
+					"lt": "1.2.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"paraview"
+			],
+			"range": [
+				{
+					"lt": "2.4.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"fractorama"
+			],
+			"range": [
+				{
+					"lt": "1.6.7_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"iv",
+				"ja-iv",
+				"ja-libimg"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Gentoo Linux Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200505-07.xml\">\n\t  <p>Tavis Ormandy of the Gentoo Linux Security Audit Team\n\t    discovered a stack based buffer overflow in the libTIFF\n\t    library when reading a TIFF image with a malformed\n\t    BitsPerSample tag.</p>\n\t  <p>Successful exploitation would require the victim to open\n\t    a specially crafted TIFF image, resulting in the execution\n\t    of arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugzilla.remotesensing.org/show_bug.cgi?id=843",
+			"http://www.gentoo.org/security/en/glsa/glsa-200505-07.xml",
+			"http://www.remotesensing.org/libtiff/v3.7.3.html"
+		],
+		"cvename": [
+			"CVE-2005-1544"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-10",
+		"entry": "2005-07-30",
+		"modified": "2006-06-08"
+	}
 }

@@ -1,34 +1,34 @@
 {
-  "vid": "06a5abd4-6bc2-11eb-b292-90e2baa3bafc",
-  "topic": "mod_dav_svn -- server crash",
-  "affects": [
-    {
-      "name": [
-        "mod_dav_svn"
-      ],
-      "range": [
-        {
-          "ge": "1.9.0",
-          "le": "1.10.6"
-        },
-        {
-          "ge": "1.11.0",
-          "le": "1.14.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"https://subversion.apache.org/security/CVE-2020-17525-advisory.txt\">\n\t<p>Subversion's mod_authz_svn module will crash if the server is using\n\t   in-repository authz rules with the AuthzSVNReposRelativeAccessFile\n\t   option and a client sends a request for a non-existing repository URL.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://subversion.apache.org/security/CVE-2020-17525-advisory.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-01-29",
-    "entry": "2021-02-10"
-  }
+	"vid": "06a5abd4-6bc2-11eb-b292-90e2baa3bafc",
+	"topic": "mod_dav_svn -- server crash",
+	"affects": [
+		{
+			"name": [
+				"mod_dav_svn"
+			],
+			"range": [
+				{
+					"ge": "1.9.0",
+					"le": "1.10.6"
+				},
+				{
+					"ge": "1.11.0",
+					"le": "1.14.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"https://subversion.apache.org/security/CVE-2020-17525-advisory.txt\">\n\t<p>Subversion's mod_authz_svn module will crash if the server is using\n\t   in-repository authz rules with the AuthzSVNReposRelativeAccessFile\n\t   option and a client sends a request for a non-existing repository URL.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://subversion.apache.org/security/CVE-2020-17525-advisory.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2021-01-29",
+		"entry": "2021-02-10"
+	}
 }

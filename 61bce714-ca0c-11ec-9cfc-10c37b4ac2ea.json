@@ -1,46 +1,46 @@
 {
-  "vid": "61bce714-ca0c-11ec-9cfc-10c37b4ac2ea",
-  "topic": "go -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "go"
-      ],
-      "range": [
-        {
-          "lt": "1.18.1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "go117"
-      ],
-      "range": [
-        {
-          "lt": "1.17.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/51853\">\n\t  <p>encoding/pem: fix stack overflow in Decode.</p>\n\t  <p>A large (more than 5 MB) PEM input can cause a stack\n\t    overflow in Decode, leading the program to crash.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/52075\">\n\t  <p>crypto/elliptic: tolerate all oversized scalars in generic\n\t    P-256.</p>\n\t  <p>A crafted scalar input longer than 32 bytes can\n\t    cause P256().ScalarMult or P256().ScalarBaseMult to panic.\n\t    Indirect uses through crypto/ecdsa and crypto/tls are\n\t    unaffected. amd64, arm64, ppc64le, and s390x are\n\t    unaffected.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/51759\">\n\t  <p>crypto/x509: non-compliant certificates can cause a panic\n\t    in Verify on macOS in Go 1.18.</p>\n\t  <p>Verifying certificate chains containing certificates\n\t    which are not compliant with RFC 5280 causes\n\t    Certificate.Verify to panic on macOS. These chains can be\n\t    delivered through TLS and can cause a crypto/tls or\n\t    net/http client to crash.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/golang/go/issues/51853",
-      "https://github.com/golang/go/issues/52075",
-      "https://github.com/golang/go/issues/51759"
-    ],
-    "cvename": [
-      "CVE-2022-24675",
-      "CVE-2022-28327",
-      "CVE-2022-27536"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-12",
-    "entry": "2022-05-02"
-  }
+	"vid": "61bce714-ca0c-11ec-9cfc-10c37b4ac2ea",
+	"topic": "go -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"go"
+			],
+			"range": [
+				{
+					"lt": "1.18.1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"go117"
+			],
+			"range": [
+				{
+					"lt": "1.17.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/51853\">\n\t  <p>encoding/pem: fix stack overflow in Decode.</p>\n\t  <p>A large (more than 5 MB) PEM input can cause a stack\n\t    overflow in Decode, leading the program to crash.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/52075\">\n\t  <p>crypto/elliptic: tolerate all oversized scalars in generic\n\t    P-256.</p>\n\t  <p>A crafted scalar input longer than 32 bytes can\n\t    cause P256().ScalarMult or P256().ScalarBaseMult to panic.\n\t    Indirect uses through crypto/ecdsa and crypto/tls are\n\t    unaffected. amd64, arm64, ppc64le, and s390x are\n\t    unaffected.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/51759\">\n\t  <p>crypto/x509: non-compliant certificates can cause a panic\n\t    in Verify on macOS in Go 1.18.</p>\n\t  <p>Verifying certificate chains containing certificates\n\t    which are not compliant with RFC 5280 causes\n\t    Certificate.Verify to panic on macOS. These chains can be\n\t    delivered through TLS and can cause a crypto/tls or\n\t    net/http client to crash.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/golang/go/issues/51853",
+			"https://github.com/golang/go/issues/52075",
+			"https://github.com/golang/go/issues/51759"
+		],
+		"cvename": [
+			"CVE-2022-24675",
+			"CVE-2022-28327",
+			"CVE-2022-27536"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-12",
+		"entry": "2022-05-02"
+	}
 }

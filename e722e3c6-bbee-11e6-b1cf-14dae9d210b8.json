@@ -1,45 +1,45 @@
 {
-  "vid": "e722e3c6-bbee-11e6-b1cf-14dae9d210b8",
-  "topic": "FreeBSD -- bhyve(8) virtual machine escape",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.0_4",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.3_13",
-          "ge": "10.3"
-        },
-        {
-          "lt": "10.2_26",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_43",
-          "ge": "10.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The bounds checking of accesses to guest memory greater\n\tthan 4GB by device emulations is subject to integer\n\toverflow.</p>\n\t<h1>Impact:</h1>\n\t<p>For a bhyve virtual machine with more than 3GB of guest\n\tmemory configured, a malicious guest could craft device\n\tdescriptors that could give it access to the heap of the\n\tbhyve process. Since the bhyve process is running as root,\n\tthis may allow guests to obtain full control of the hosts\n\tthey're running on.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-1889"
-    ],
-    "freebsd_sa": [
-      "SA-16:38.bhyve"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-12-06",
-    "entry": "2016-12-06"
-  }
+	"vid": "e722e3c6-bbee-11e6-b1cf-14dae9d210b8",
+	"topic": "FreeBSD -- bhyve(8) virtual machine escape",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.0_4",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.3_13",
+					"ge": "10.3"
+				},
+				{
+					"lt": "10.2_26",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_43",
+					"ge": "10.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The bounds checking of accesses to guest memory greater\n\tthan 4GB by device emulations is subject to integer\n\toverflow.</p>\n\t<h1>Impact:</h1>\n\t<p>For a bhyve virtual machine with more than 3GB of guest\n\tmemory configured, a malicious guest could craft device\n\tdescriptors that could give it access to the heap of the\n\tbhyve process. Since the bhyve process is running as root,\n\tthis may allow guests to obtain full control of the hosts\n\tthey're running on.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-1889"
+		],
+		"freebsd_sa": [
+			"SA-16:38.bhyve"
+		]
+	},
+	"dates": {
+		"discovery": "2016-12-06",
+		"entry": "2016-12-06"
+	}
 }

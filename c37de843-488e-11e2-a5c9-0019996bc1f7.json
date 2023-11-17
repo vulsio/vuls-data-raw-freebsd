@@ -1,46 +1,46 @@
 {
-  "vid": "c37de843-488e-11e2-a5c9-0019996bc1f7",
-  "topic": "squid -- denial of service",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "2.7.9_4"
-        },
-        {
-          "lt": "3.1.23",
-          "ge": "3.1"
-        },
-        {
-          "lt": "3.2.6",
-          "ge": "3.2"
-        },
-        {
-          "lt": "3.3.0.3",
-          "ge": "3.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Squid developers report:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2012_1.txt\">\n\t  <p>Due to missing input validation Squid cachemgr.cgi tool\n\t  is vulnerable to a denial of service attack when processing\n\t  specially crafted requests.</p>\n\t  <p>This problem allows any client able to reach the\n\t  cachemgr.cgi to perform a denial of service attack on the\n\t  service host.</p>\n\t  <p>The nature of the attack may cause secondary effects\n\t  through resource consumption on the host server.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Advisories/SQUID-2012_1.txt"
-    ],
-    "cvename": [
-      "CVE-2012-5643",
-      "CVE-2013-0189"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-12-17",
-    "entry": "2012-12-28",
-    "modified": "2013-05-02"
-  }
+	"vid": "c37de843-488e-11e2-a5c9-0019996bc1f7",
+	"topic": "squid -- denial of service",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "2.7.9_4"
+				},
+				{
+					"lt": "3.1.23",
+					"ge": "3.1"
+				},
+				{
+					"lt": "3.2.6",
+					"ge": "3.2"
+				},
+				{
+					"lt": "3.3.0.3",
+					"ge": "3.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Squid developers report:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2012_1.txt\">\n\t  <p>Due to missing input validation Squid cachemgr.cgi tool\n\t  is vulnerable to a denial of service attack when processing\n\t  specially crafted requests.</p>\n\t  <p>This problem allows any client able to reach the\n\t  cachemgr.cgi to perform a denial of service attack on the\n\t  service host.</p>\n\t  <p>The nature of the attack may cause secondary effects\n\t  through resource consumption on the host server.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Advisories/SQUID-2012_1.txt"
+		],
+		"cvename": [
+			"CVE-2012-5643",
+			"CVE-2013-0189"
+		]
+	},
+	"dates": {
+		"discovery": "2012-12-17",
+		"entry": "2012-12-28",
+		"modified": "2013-05-02"
+	}
 }

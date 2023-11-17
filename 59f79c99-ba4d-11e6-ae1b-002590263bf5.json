@@ -1,36 +1,36 @@
 {
-  "vid": "59f79c99-ba4d-11e6-ae1b-002590263bf5",
-  "topic": "xen-tools -- delimiter injection vulnerabilities in pygrub",
-  "affects": [
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-198.html\">\n\t  <p>pygrub, the boot loader emulator, fails to quote (or sanity check)\n\t    its results when reporting them to its caller.</p>\n\t  <p>A malicious guest administrator can obtain the contents of\n\t    sensitive host files (an information leak). Additionally, a\n\t    malicious guest administrator can cause files on the host to be\n\t    removed, causing a denial of service. In some unusual host\n\t    configurations, ability to remove certain files may be usable for\n\t    privilege escalation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xenbits.xen.org/xsa/advisory-198.html"
-    ],
-    "cvename": [
-      "CVE-2016-9379",
-      "CVE-2016-9380"
-    ],
-    "freebsd_pr": [
-      "ports/214936"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-22",
-    "entry": "2016-12-04"
-  }
+	"vid": "59f79c99-ba4d-11e6-ae1b-002590263bf5",
+	"topic": "xen-tools -- delimiter injection vulnerabilities in pygrub",
+	"affects": [
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-198.html\">\n\t  <p>pygrub, the boot loader emulator, fails to quote (or sanity check)\n\t    its results when reporting them to its caller.</p>\n\t  <p>A malicious guest administrator can obtain the contents of\n\t    sensitive host files (an information leak). Additionally, a\n\t    malicious guest administrator can cause files on the host to be\n\t    removed, causing a denial of service. In some unusual host\n\t    configurations, ability to remove certain files may be usable for\n\t    privilege escalation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xenbits.xen.org/xsa/advisory-198.html"
+		],
+		"cvename": [
+			"CVE-2016-9379",
+			"CVE-2016-9380"
+		],
+		"freebsd_pr": [
+			"ports/214936"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-22",
+		"entry": "2016-12-04"
+	}
 }

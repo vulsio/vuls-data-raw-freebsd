@@ -1,32 +1,32 @@
 {
-  "vid": "2991178f-cbe8-11ed-956f-7054d21a9e2a",
-  "topic": "py39-Elixir -- weak use of cryptography",
-  "affects": [
-    {
-      "name": [
-        "py39-Elixir"
-      ],
-      "range": [
-        {
-          "le": "0.8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>Red Hat Security Response Team reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2012-13\">\n      <p>Elixir 0.8.0 uses Blowfish in CFB mode without constructing a unique initialization vector (IV), which makes it easier for context-dependent users to obtain sensitive information and decrypt the database.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/PYSEC-2012-13"
-    ],
-    "cvename": [
-      "CVE-2012-2146"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-08-26",
-    "entry": "2023-03-26"
-  }
+	"vid": "2991178f-cbe8-11ed-956f-7054d21a9e2a",
+	"topic": "py39-Elixir -- weak use of cryptography",
+	"affects": [
+		{
+			"name": [
+				"py39-Elixir"
+			],
+			"range": [
+				{
+					"le": "0.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>Red Hat Security Response Team reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2012-13\">\n      <p>Elixir 0.8.0 uses Blowfish in CFB mode without constructing a unique initialization vector (IV), which makes it easier for context-dependent users to obtain sensitive information and decrypt the database.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/PYSEC-2012-13"
+		],
+		"cvename": [
+			"CVE-2012-2146"
+		]
+	},
+	"dates": {
+		"discovery": "2012-08-26",
+		"entry": "2023-03-26"
+	}
 }

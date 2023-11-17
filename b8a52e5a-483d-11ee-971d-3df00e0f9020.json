@@ -1,37 +1,37 @@
 {
-  "vid": "b8a52e5a-483d-11ee-971d-3df00e0f9020",
-  "topic": "Borg (Backup) -- flaw in cryptographic authentication scheme in Borg allowed an attacker to fake archives and indirectly cause backup data loss.",
-  "affects": [
-    {
-      "name": [
-        "py37-borgbackup",
-        "py38-borgbackup",
-        "py39-borgbackup",
-        "py310-borgbackup",
-        "py311-borgbackup",
-        "py312-borgbackup"
-      ],
-      "range": [
-        {
-          "lt": "1.2.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Thomas Waldmann reports:</p>\n\t<blockquote cite=\"https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811\">\n\t  <p>A flaw in the cryptographic authentication scheme in Borg allowed an attacker to fake archives and potentially indirectly cause backup data loss in the repository.</p>\n\t  <p>The attack requires an attacker to be able to</p>\n\t  <ul><li>insert files (with no additional headers) into backups</li>\n\t    <li>gain write access to the repository</li></ul>\n\t  <p>This vulnerability does not disclose plaintext to the attacker, nor does it affect the authenticity of existing archives.  Creating plausible fake archives may be feasible for empty or small archives, but is unlikely for large archives.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811"
-    ],
-    "cvename": [
-      "CVE-2023-36811"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-06-13",
-    "entry": "2023-08-31"
-  }
+	"vid": "b8a52e5a-483d-11ee-971d-3df00e0f9020",
+	"topic": "Borg (Backup) -- flaw in cryptographic authentication scheme in Borg allowed an attacker to fake archives and indirectly cause backup data loss.",
+	"affects": [
+		{
+			"name": [
+				"py37-borgbackup",
+				"py38-borgbackup",
+				"py39-borgbackup",
+				"py310-borgbackup",
+				"py311-borgbackup",
+				"py312-borgbackup"
+			],
+			"range": [
+				{
+					"lt": "1.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Thomas Waldmann reports:</p>\n\t<blockquote cite=\"https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811\">\n\t  <p>A flaw in the cryptographic authentication scheme in Borg allowed an attacker to fake archives and potentially indirectly cause backup data loss in the repository.</p>\n\t  <p>The attack requires an attacker to be able to</p>\n\t  <ul><li>insert files (with no additional headers) into backups</li>\n\t    <li>gain write access to the repository</li></ul>\n\t  <p>This vulnerability does not disclose plaintext to the attacker, nor does it affect the authenticity of existing archives.  Creating plausible fake archives may be feasible for empty or small archives, but is unlikely for large archives.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811"
+		],
+		"cvename": [
+			"CVE-2023-36811"
+		]
+	},
+	"dates": {
+		"discovery": "2023-06-13",
+		"entry": "2023-08-31"
+	}
 }

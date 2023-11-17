@@ -1,32 +1,32 @@
 {
-  "vid": "21f12de8-b1db-11ed-b0f4-002590f2a714",
-  "topic": "git -- \"git apply\" overwriting paths outside the working tree",
-  "affects": [
-    {
-      "name": [
-        "git"
-      ],
-      "range": [
-        {
-          "lt": "2.39.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>git team reports:</p>\n\t<blockquote cite=\"https://github.com/git/git/security/advisories/GHSA-r87m-v37r-cwfh\">\n\t  <p>By feeding a crafted input to \"git apply\", a path outside the\n\t    working tree can be overwritten as the user who is running \"git\n\t    apply\".</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.blog/2023-02-14-git-security-vulnerabilities-announced-3/#cve-2023-23946"
-    ],
-    "cvename": [
-      "CVE-2023-23946"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-02-14",
-    "entry": "2023-02-21"
-  }
+	"vid": "21f12de8-b1db-11ed-b0f4-002590f2a714",
+	"topic": "git -- \"git apply\" overwriting paths outside the working tree",
+	"affects": [
+		{
+			"name": [
+				"git"
+			],
+			"range": [
+				{
+					"lt": "2.39.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>git team reports:</p>\n\t<blockquote cite=\"https://github.com/git/git/security/advisories/GHSA-r87m-v37r-cwfh\">\n\t  <p>By feeding a crafted input to \"git apply\", a path outside the\n\t    working tree can be overwritten as the user who is running \"git\n\t    apply\".</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.blog/2023-02-14-git-security-vulnerabilities-announced-3/#cve-2023-23946"
+		],
+		"cvename": [
+			"CVE-2023-23946"
+		]
+	},
+	"dates": {
+		"discovery": "2023-02-14",
+		"entry": "2023-02-21"
+	}
 }

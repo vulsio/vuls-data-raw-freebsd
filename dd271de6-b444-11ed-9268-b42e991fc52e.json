@@ -1,32 +1,32 @@
 {
-  "vid": "dd271de6-b444-11ed-9268-b42e991fc52e",
-  "topic": "freerdp -- clients using the `/video` command line switch might read uninitialized data",
-  "affects": [
-    {
-      "name": [
-        "freerdp"
-      ],
-      "range": [
-        {
-          "lt": "2.8.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE reports:</p>\n      <blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-39283\">\n\t<p>\n\t  All FreeRDP based clients when using the `/video`\n\t  command line switch might read uninitialized data, decode\n\t  it as audio/video and display the result. FreeRDP based\n\t  server implementations are not affected.\n\t</p>\n      </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-6cf9-3328-qrvh"
-    ],
-    "cvename": [
-      "CVE-2022-39283"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-10-13",
-    "entry": "2023-02-24"
-  }
+	"vid": "dd271de6-b444-11ed-9268-b42e991fc52e",
+	"topic": "freerdp -- clients using the `/video` command line switch might read uninitialized data",
+	"affects": [
+		{
+			"name": [
+				"freerdp"
+			],
+			"range": [
+				{
+					"lt": "2.8.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE reports:</p>\n      <blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-39283\">\n\t<p>\n\t  All FreeRDP based clients when using the `/video`\n\t  command line switch might read uninitialized data, decode\n\t  it as audio/video and display the result. FreeRDP based\n\t  server implementations are not affected.\n\t</p>\n      </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-6cf9-3328-qrvh"
+		],
+		"cvename": [
+			"CVE-2022-39283"
+		]
+	},
+	"dates": {
+		"discovery": "2022-10-13",
+		"entry": "2023-02-24"
+	}
 }

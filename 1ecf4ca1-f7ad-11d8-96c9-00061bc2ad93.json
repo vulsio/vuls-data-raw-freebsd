@@ -1,36 +1,36 @@
 {
-  "vid": "1ecf4ca1-f7ad-11d8-96c9-00061bc2ad93",
-  "topic": "moinmoin -- ACL group bypass",
-  "affects": [
-    {
-      "name": [
-        "moinmoin"
-      ],
-      "range": [
-        {
-          "lt": "1.2.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The moinmoin package contains two bugs with ACLs and anonymous\n\t  users.  Both bugs may permit anonymous users to gain access to\n\t  administrative functions; for example the delete function.</p>\n\t<p>There is no known workaround, the vulnerability exists regardless\n\t  if a site is using ACLs or not.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.osvdb.org/8194",
-      "http://www.osvdb.org/8195",
-      "http://security.gentoo.org/glsa/glsa-200408-25.xml",
-      "http://secunia.com/advisories/11832"
-    ],
-    "bid": [
-      "10805",
-      "10801"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-07-21",
-    "entry": "2004-08-26"
-  }
+	"vid": "1ecf4ca1-f7ad-11d8-96c9-00061bc2ad93",
+	"topic": "moinmoin -- ACL group bypass",
+	"affects": [
+		{
+			"name": [
+				"moinmoin"
+			],
+			"range": [
+				{
+					"lt": "1.2.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The moinmoin package contains two bugs with ACLs and anonymous\n\t  users.  Both bugs may permit anonymous users to gain access to\n\t  administrative functions; for example the delete function.</p>\n\t<p>There is no known workaround, the vulnerability exists regardless\n\t  if a site is using ACLs or not.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.osvdb.org/8194",
+			"http://www.osvdb.org/8195",
+			"http://security.gentoo.org/glsa/glsa-200408-25.xml",
+			"http://secunia.com/advisories/11832"
+		],
+		"bid": [
+			"10805",
+			"10801"
+		]
+	},
+	"dates": {
+		"discovery": "2004-07-21",
+		"entry": "2004-08-26"
+	}
 }

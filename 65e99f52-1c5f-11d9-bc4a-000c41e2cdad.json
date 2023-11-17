@@ -1,40 +1,40 @@
 {
-  "vid": "65e99f52-1c5f-11d9-bc4a-000c41e2cdad",
-  "topic": "squid -- SNMP module denial-of-service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "2.5.7"
-        },
-        {
-          "lt": "3.0.7",
-          "ge": "3.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Squid-2.5 patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE6-SNMP_core_dump\">\n\t  <p>If a certain malformed SNMP request is received squid\n\t    restarts with a Segmentation Fault error.</p>\n\t</blockquote>\n\t<p>This only affects squid installations where SNMP is\n\t  explicitly enabled via \"make config\". As a workaround,\n\t  SNMP can be disabled by defining \"snmp_port 0\" in\n\t  squid.conf.</p>\n\t<p>Squid security advisory SQUID-2008:1 explains that Squid-3 versions\n\t  up to and including Squid-3.0.STABLE6 are affected by this error,\n\t  too.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.idefense.com/application/poi/display?id=152&type=vulnerabilities",
-      "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE6-SNMP_core_dump",
-      "http://www.squid-cache.org/Advisories/SQUID-2004_3.txt",
-      "http://www.squid-cache.org/Advisories/SQUID-2008_1.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0918"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-29",
-    "entry": "2004-10-12",
-    "modified": "2008-06-28"
-  }
+	"vid": "65e99f52-1c5f-11d9-bc4a-000c41e2cdad",
+	"topic": "squid -- SNMP module denial-of-service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "2.5.7"
+				},
+				{
+					"lt": "3.0.7",
+					"ge": "3.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Squid-2.5 patches page notes:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE6-SNMP_core_dump\">\n\t  <p>If a certain malformed SNMP request is received squid\n\t    restarts with a Segmentation Fault error.</p>\n\t</blockquote>\n\t<p>This only affects squid installations where SNMP is\n\t  explicitly enabled via \"make config\". As a workaround,\n\t  SNMP can be disabled by defining \"snmp_port 0\" in\n\t  squid.conf.</p>\n\t<p>Squid security advisory SQUID-2008:1 explains that Squid-3 versions\n\t  up to and including Squid-3.0.STABLE6 are affected by this error,\n\t  too.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.idefense.com/application/poi/display?id=152&type=vulnerabilities",
+			"http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE6-SNMP_core_dump",
+			"http://www.squid-cache.org/Advisories/SQUID-2004_3.txt",
+			"http://www.squid-cache.org/Advisories/SQUID-2008_1.txt"
+		],
+		"cvename": [
+			"CVE-2004-0918"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-29",
+		"entry": "2004-10-12",
+		"modified": "2008-06-28"
+	}
 }

@@ -1,45 +1,45 @@
 {
-  "vid": "d8fbf13a-6215-11db-a59e-0211d85f11fb",
-  "topic": "kdelibs -- integer overflow in khtml",
-  "affects": [
-    {
-      "name": [
-        "kdelibs",
-        "kdelibs-nocups"
-      ],
-      "range": [
-        {
-          "lt": "3.5.4_4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qt",
-        "qt-copy"
-      ],
-      "range": [
-        {
-          "lt": "3.3.6_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Red Hat reports:</p>\n\t<blockquote cite=\"http://rhn.redhat.com/errata/RHSA-2006-0720.html\">\n\t  <p>An integer overflow flaw was found in the way Qt handled pixmap\n\t    images. The KDE khtml library uses Qt in such a way that untrusted\n\t    parameters could be passed to Qt, triggering the overflow.\n\t    An attacker could for example create a malicious web page that when\n\t    viewed by a victim in the Konqueror browser would cause Konqueror\n\t    to crash or possibly execute arbitrary code with the privileges of\n\t    the victim.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=210742",
-      "http://rhn.redhat.com/errata/RHSA-2006-0720.html"
-    ],
-    "cvename": [
-      "CVE-2006-4811"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-10-14",
-    "entry": "2006-10-22"
-  }
+	"vid": "d8fbf13a-6215-11db-a59e-0211d85f11fb",
+	"topic": "kdelibs -- integer overflow in khtml",
+	"affects": [
+		{
+			"name": [
+				"kdelibs",
+				"kdelibs-nocups"
+			],
+			"range": [
+				{
+					"lt": "3.5.4_4"
+				}
+			]
+		},
+		{
+			"name": [
+				"qt",
+				"qt-copy"
+			],
+			"range": [
+				{
+					"lt": "3.3.6_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Red Hat reports:</p>\n\t<blockquote cite=\"http://rhn.redhat.com/errata/RHSA-2006-0720.html\">\n\t  <p>An integer overflow flaw was found in the way Qt handled pixmap\n\t    images. The KDE khtml library uses Qt in such a way that untrusted\n\t    parameters could be passed to Qt, triggering the overflow.\n\t    An attacker could for example create a malicious web page that when\n\t    viewed by a victim in the Konqueror browser would cause Konqueror\n\t    to crash or possibly execute arbitrary code with the privileges of\n\t    the victim.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=210742",
+			"http://rhn.redhat.com/errata/RHSA-2006-0720.html"
+		],
+		"cvename": [
+			"CVE-2006-4811"
+		]
+	},
+	"dates": {
+		"discovery": "2006-10-14",
+		"entry": "2006-10-22"
+	}
 }

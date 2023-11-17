@@ -1,35 +1,35 @@
 {
-  "vid": "1709084d-4d21-11db-b48d-00508d6a62df",
-  "topic": "plans -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "plans"
-      ],
-      "range": [
-        {
-          "lt": "6.7.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15854/\">\n\t  <p>A vulnerability has been reported in Plans, which can be\n\t    exploited by malicious people to conduct SQL injection\n\t    attacks.</p>\n\t  <p>Input passed to the \"evt_id\" parameter in \"plans.cgi\"\n\t    isn't properly sanitised before being used in a SQL query.\n\t    This can be exploited to manipulate SQL queries by\n\t    injecting arbitrary SQL code.</p>\n\t  <p>Successful exploitation requires that SQL database\n\t    support has been enabled in \"plans_config.pl\" (the default\n\t    setting is flat files).</p>\n\t</blockquote>\n\t<blockquote cite=\"http://secunia.com/advisories/15167/\">\n\t  <p>Some vulnerabilities have been reported in Plans, which\n\t    can be exploited by malicious people to conduct cross-site\n\t    scripting attacks or gain knowledge of sensitive\n\t    information.</p>\n\t  <p>Input passed to various unspecified parameters is not\n\t    properly sanitised before being returned to users. This\n\t    can be exploited to execute arbitrary HTML and script code\n\t    in a user's browser session in context of a vulnerable\n\t    site.</p>\n\t  <p>An unspecified error can be exploited to gain knowledge\n\t    of the MySQL password.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/15167/",
-      "http://secunia.com/advisories/15854/",
-      "http://planscalendar.com/forum/viewtopic.php?t=660"
-    ],
-    "bid": [
-      "14069"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-04-28",
-    "entry": "2006-09-26",
-    "modified": "2006-10-15"
-  }
+	"vid": "1709084d-4d21-11db-b48d-00508d6a62df",
+	"topic": "plans -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"plans"
+			],
+			"range": [
+				{
+					"lt": "6.7.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/15854/\">\n\t  <p>A vulnerability has been reported in Plans, which can be\n\t    exploited by malicious people to conduct SQL injection\n\t    attacks.</p>\n\t  <p>Input passed to the \"evt_id\" parameter in \"plans.cgi\"\n\t    isn't properly sanitised before being used in a SQL query.\n\t    This can be exploited to manipulate SQL queries by\n\t    injecting arbitrary SQL code.</p>\n\t  <p>Successful exploitation requires that SQL database\n\t    support has been enabled in \"plans_config.pl\" (the default\n\t    setting is flat files).</p>\n\t</blockquote>\n\t<blockquote cite=\"http://secunia.com/advisories/15167/\">\n\t  <p>Some vulnerabilities have been reported in Plans, which\n\t    can be exploited by malicious people to conduct cross-site\n\t    scripting attacks or gain knowledge of sensitive\n\t    information.</p>\n\t  <p>Input passed to various unspecified parameters is not\n\t    properly sanitised before being returned to users. This\n\t    can be exploited to execute arbitrary HTML and script code\n\t    in a user's browser session in context of a vulnerable\n\t    site.</p>\n\t  <p>An unspecified error can be exploited to gain knowledge\n\t    of the MySQL password.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/15167/",
+			"http://secunia.com/advisories/15854/",
+			"http://planscalendar.com/forum/viewtopic.php?t=660"
+		],
+		"bid": [
+			"14069"
+		]
+	},
+	"dates": {
+		"discovery": "2005-04-28",
+		"entry": "2006-09-26",
+		"modified": "2006-10-15"
+	}
 }

@@ -1,113 +1,113 @@
 {
-  "vid": "5aefc41e-d304-4ec8-8c82-824f84f08244",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "60.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "waterfox"
-      ],
-      "range": [
-        {
-          "lt": "56.1.0_18"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey",
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.49.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox-esr"
-      ],
-      "range": [
-        {
-          "lt": "52.8.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "52.8.0,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libxul",
-        "thunderbird",
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "52.8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-11/\">\n\t  <p>CVE-2018-5183: Backport critical security fixes in Skia</p>\n\t  <p>CVE-2018-5154: Use-after-free with SVG animations and clip paths</p>\n\t  <p>CVE-2018-5155: Use-after-free with SVG animations and text paths</p>\n\t  <p>CVE-2018-5157: Same-origin bypass of PDF Viewer to view protected PDF files</p>\n\t  <p>CVE-2018-5158: Malicious PDF can inject JavaScript into PDF Viewer</p>\n\t  <p>CVE-2018-5159: Integer overflow and out-of-bounds write in Skia</p>\n\t  <p>CVE-2018-5160: Uninitialized memory use by WebRTC encoder</p>\n\t  <p>CVE-2018-5152: WebExtensions information leak through webRequest API</p>\n\t  <p>CVE-2018-5153: Out-of-bounds read in mixed content websocket messages</p>\n\t  <p>CVE-2018-5163: Replacing cached data in JavaScript Start-up Bytecode Cache</p>\n\t  <p>CVE-2018-5164: CSP not applied to all multipart content sent with multipart/x-mixed-replace</p>\n\t  <p>CVE-2018-5166: WebExtension host permission bypass through filterReponseData</p>\n\t  <p>CVE-2018-5167: Improper linkification of chrome: and javascript: content in web console and JavaScript debugger</p>\n\t  <p>CVE-2018-5168: Lightweight themes can be installed without user interaction</p>\n\t  <p>CVE-2018-5169: Dragging and dropping link text onto home button can set home page to include chrome pages</p>\n\t  <p>CVE-2018-5172: Pasted script from clipboard can run in the Live Bookmarks page or PDF viewer</p>\n\t  <p>CVE-2018-5173: File name spoofing of Downloads panel with Unicode characters</p>\n\t  <p>CVE-2018-5174: Windows Defender SmartScreen UI runs with less secure behavior for downloaded files in Windows 10 April 2018 Update</p>\n\t  <p>CVE-2018-5175: Universal CSP bypass on sites using strict-dynamic in their policies</p>\n\t  <p>CVE-2018-5176: JSON Viewer script injection</p>\n\t  <p>CVE-2018-5177: Buffer overflow in XSLT during number formatting</p>\n\t  <p>CVE-2018-5165: Checkbox for enabling Flash protected mode is inverted in 32-bit Firefox</p>\n\t  <p>CVE-2018-5178: Buffer overflow during UTF-8 to Unicode string conversion through legacy extension</p>\n\t  <p>CVE-2018-5180: heap-use-after-free in mozilla::WebGLContext::DrawElementsInstanced</p>\n\t  <p>CVE-2018-5181: Local file can be displayed in noopener tab through drag and drop of hyperlink</p>\n\t  <p>CVE-2018-5182: Local file can be displayed from hyperlink dragged and dropped on addressbar</p>\n\t  <p>CVE-2018-5151: Memory safety bugs fixed in Firefox 60</p>\n\t  <p>CVE-2018-5150: Memory safety bugs fixed in Firefox 60 and Firefox ESR 52.8</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2018-11/",
-      "https://www.mozilla.org/security/advisories/mfsa2018-12/"
-    ],
-    "cvename": [
-      "CVE-2018-5150",
-      "CVE-2018-5151",
-      "CVE-2018-5152",
-      "CVE-2018-5153",
-      "CVE-2018-5154",
-      "CVE-2018-5155",
-      "CVE-2018-5157",
-      "CVE-2018-5158",
-      "CVE-2018-5159",
-      "CVE-2018-5160",
-      "CVE-2018-5163",
-      "CVE-2018-5164",
-      "CVE-2018-5165",
-      "CVE-2018-5166",
-      "CVE-2018-5167",
-      "CVE-2018-5168",
-      "CVE-2018-5169",
-      "CVE-2018-5172",
-      "CVE-2018-5173",
-      "CVE-2018-5174",
-      "CVE-2018-5175",
-      "CVE-2018-5176",
-      "CVE-2018-5177",
-      "CVE-2018-5178",
-      "CVE-2018-5180",
-      "CVE-2018-5181",
-      "CVE-2018-5182",
-      "CVE-2018-5183"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-05-09",
-    "entry": "2018-05-09"
-  }
+	"vid": "5aefc41e-d304-4ec8-8c82-824f84f08244",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "60.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"waterfox"
+			],
+			"range": [
+				{
+					"lt": "56.1.0_18"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey",
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.49.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox-esr"
+			],
+			"range": [
+				{
+					"lt": "52.8.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "52.8.0,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"libxul",
+				"thunderbird",
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "52.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2018-11/\">\n\t  <p>CVE-2018-5183: Backport critical security fixes in Skia</p>\n\t  <p>CVE-2018-5154: Use-after-free with SVG animations and clip paths</p>\n\t  <p>CVE-2018-5155: Use-after-free with SVG animations and text paths</p>\n\t  <p>CVE-2018-5157: Same-origin bypass of PDF Viewer to view protected PDF files</p>\n\t  <p>CVE-2018-5158: Malicious PDF can inject JavaScript into PDF Viewer</p>\n\t  <p>CVE-2018-5159: Integer overflow and out-of-bounds write in Skia</p>\n\t  <p>CVE-2018-5160: Uninitialized memory use by WebRTC encoder</p>\n\t  <p>CVE-2018-5152: WebExtensions information leak through webRequest API</p>\n\t  <p>CVE-2018-5153: Out-of-bounds read in mixed content websocket messages</p>\n\t  <p>CVE-2018-5163: Replacing cached data in JavaScript Start-up Bytecode Cache</p>\n\t  <p>CVE-2018-5164: CSP not applied to all multipart content sent with multipart/x-mixed-replace</p>\n\t  <p>CVE-2018-5166: WebExtension host permission bypass through filterReponseData</p>\n\t  <p>CVE-2018-5167: Improper linkification of chrome: and javascript: content in web console and JavaScript debugger</p>\n\t  <p>CVE-2018-5168: Lightweight themes can be installed without user interaction</p>\n\t  <p>CVE-2018-5169: Dragging and dropping link text onto home button can set home page to include chrome pages</p>\n\t  <p>CVE-2018-5172: Pasted script from clipboard can run in the Live Bookmarks page or PDF viewer</p>\n\t  <p>CVE-2018-5173: File name spoofing of Downloads panel with Unicode characters</p>\n\t  <p>CVE-2018-5174: Windows Defender SmartScreen UI runs with less secure behavior for downloaded files in Windows 10 April 2018 Update</p>\n\t  <p>CVE-2018-5175: Universal CSP bypass on sites using strict-dynamic in their policies</p>\n\t  <p>CVE-2018-5176: JSON Viewer script injection</p>\n\t  <p>CVE-2018-5177: Buffer overflow in XSLT during number formatting</p>\n\t  <p>CVE-2018-5165: Checkbox for enabling Flash protected mode is inverted in 32-bit Firefox</p>\n\t  <p>CVE-2018-5178: Buffer overflow during UTF-8 to Unicode string conversion through legacy extension</p>\n\t  <p>CVE-2018-5180: heap-use-after-free in mozilla::WebGLContext::DrawElementsInstanced</p>\n\t  <p>CVE-2018-5181: Local file can be displayed in noopener tab through drag and drop of hyperlink</p>\n\t  <p>CVE-2018-5182: Local file can be displayed from hyperlink dragged and dropped on addressbar</p>\n\t  <p>CVE-2018-5151: Memory safety bugs fixed in Firefox 60</p>\n\t  <p>CVE-2018-5150: Memory safety bugs fixed in Firefox 60 and Firefox ESR 52.8</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2018-11/",
+			"https://www.mozilla.org/security/advisories/mfsa2018-12/"
+		],
+		"cvename": [
+			"CVE-2018-5150",
+			"CVE-2018-5151",
+			"CVE-2018-5152",
+			"CVE-2018-5153",
+			"CVE-2018-5154",
+			"CVE-2018-5155",
+			"CVE-2018-5157",
+			"CVE-2018-5158",
+			"CVE-2018-5159",
+			"CVE-2018-5160",
+			"CVE-2018-5163",
+			"CVE-2018-5164",
+			"CVE-2018-5165",
+			"CVE-2018-5166",
+			"CVE-2018-5167",
+			"CVE-2018-5168",
+			"CVE-2018-5169",
+			"CVE-2018-5172",
+			"CVE-2018-5173",
+			"CVE-2018-5174",
+			"CVE-2018-5175",
+			"CVE-2018-5176",
+			"CVE-2018-5177",
+			"CVE-2018-5178",
+			"CVE-2018-5180",
+			"CVE-2018-5181",
+			"CVE-2018-5182",
+			"CVE-2018-5183"
+		]
+	},
+	"dates": {
+		"discovery": "2018-05-09",
+		"entry": "2018-05-09"
+	}
 }

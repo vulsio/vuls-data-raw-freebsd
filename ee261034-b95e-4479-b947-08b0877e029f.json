@@ -1,52 +1,52 @@
 {
-  "vid": "ee261034-b95e-4479-b947-08b0877e029f",
-  "topic": "php72 -- use of freed hash key",
-  "affects": [
-    {
-      "name": [
-        "php72"
-      ],
-      "range": [
-        {
-          "lt": "7.2.33"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php73"
-      ],
-      "range": [
-        {
-          "lt": "7.3.21"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php74"
-      ],
-      "range": [
-        {
-          "lt": "7.4.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>grigoritchy at gmail dot com reports:</p>\n\t<blockquote cite=\"https://bugs.php.net/bug.php?id=79797\">\n\t  <p>The phar_parse_zipfile function had use-after-free\n\t  vulnerability because of mishandling of the actual_alias\n\t  variable.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7068"
-    ],
-    "cvename": [
-      "CVE-2020-7068"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-07-06",
-    "entry": "2020-08-27"
-  }
+	"vid": "ee261034-b95e-4479-b947-08b0877e029f",
+	"topic": "php72 -- use of freed hash key",
+	"affects": [
+		{
+			"name": [
+				"php72"
+			],
+			"range": [
+				{
+					"lt": "7.2.33"
+				}
+			]
+		},
+		{
+			"name": [
+				"php73"
+			],
+			"range": [
+				{
+					"lt": "7.3.21"
+				}
+			]
+		},
+		{
+			"name": [
+				"php74"
+			],
+			"range": [
+				{
+					"lt": "7.4.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>grigoritchy at gmail dot com reports:</p>\n\t<blockquote cite=\"https://bugs.php.net/bug.php?id=79797\">\n\t  <p>The phar_parse_zipfile function had use-after-free\n\t  vulnerability because of mishandling of the actual_alias\n\t  variable.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7068"
+		],
+		"cvename": [
+			"CVE-2020-7068"
+		]
+	},
+	"dates": {
+		"discovery": "2020-07-06",
+		"entry": "2020-08-27"
+	}
 }

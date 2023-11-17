@@ -1,36 +1,36 @@
 {
-  "vid": "3c957a3e-2978-11e1-89b4-001ec9578670",
-  "topic": "typo3 -- Remote Code Execution",
-  "affects": [
-    {
-      "name": [
-        "typo3"
-      ],
-      "range": [
-        {
-          "lt": "4.6.2",
-          "ge": "4.6"
-        },
-        {
-          "lt": "4.5.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The typo3 security team reports:</p>\n\t<blockquote cite=\"http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2011-004/\">\n\t  <p>A crafted request to a vulnerable TYPO3 installation will allow\n\t    an attacker to load PHP code from an external source and to\n\t    execute it on the TYPO3 installation.</p>\n\t  <p>This is caused by a PHP file, which is part of the workspaces\n\t    system extension, that does not validate passed arguments.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2011-004/"
-    ],
-    "cvename": [
-      "CVE-2011-4614"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-12-16",
-    "entry": "2011-12-18"
-  }
+	"vid": "3c957a3e-2978-11e1-89b4-001ec9578670",
+	"topic": "typo3 -- Remote Code Execution",
+	"affects": [
+		{
+			"name": [
+				"typo3"
+			],
+			"range": [
+				{
+					"lt": "4.6.2",
+					"ge": "4.6"
+				},
+				{
+					"lt": "4.5.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The typo3 security team reports:</p>\n\t<blockquote cite=\"http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2011-004/\">\n\t  <p>A crafted request to a vulnerable TYPO3 installation will allow\n\t    an attacker to load PHP code from an external source and to\n\t    execute it on the TYPO3 installation.</p>\n\t  <p>This is caused by a PHP file, which is part of the workspaces\n\t    system extension, that does not validate passed arguments.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2011-004/"
+		],
+		"cvename": [
+			"CVE-2011-4614"
+		]
+	},
+	"dates": {
+		"discovery": "2011-12-16",
+		"entry": "2011-12-18"
+	}
 }

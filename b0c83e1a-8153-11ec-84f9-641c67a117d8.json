@@ -1,44 +1,44 @@
 {
-  "vid": "b0c83e1a-8153-11ec-84f9-641c67a117d8",
-  "topic": "varnish -- Request Smuggling Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "varnish6"
-      ],
-      "range": [
-        {
-          "lt": "6.6.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "varnish4"
-      ],
-      "range": [
-        {
-          "lt": "4.1.11r6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Varnish Cache Project reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00008.html\">\n\t  <p>A request smuggling attack can be performed on HTTP/1 connections on\n\t    Varnish Cache servers. The smuggled request would be treated as an additional\n\t    request by the Varnish server, go through normal VCL processing, and injected\n\t    as a spurious response on the client connection.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://varnish-cache.org/security/VSV00008.html",
-      "https://docs.varnish-software.com/security/VSV00008/",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23959"
-    ],
-    "cvename": [
-      "CVE-2022-23959"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-01-25",
-    "entry": "2022-01-29"
-  }
+	"vid": "b0c83e1a-8153-11ec-84f9-641c67a117d8",
+	"topic": "varnish -- Request Smuggling Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"varnish6"
+			],
+			"range": [
+				{
+					"lt": "6.6.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"varnish4"
+			],
+			"range": [
+				{
+					"lt": "4.1.11r6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Varnish Cache Project reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00008.html\">\n\t  <p>A request smuggling attack can be performed on HTTP/1 connections on\n\t    Varnish Cache servers. The smuggled request would be treated as an additional\n\t    request by the Varnish server, go through normal VCL processing, and injected\n\t    as a spurious response on the client connection.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://varnish-cache.org/security/VSV00008.html",
+			"https://docs.varnish-software.com/security/VSV00008/",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23959"
+		],
+		"cvename": [
+			"CVE-2022-23959"
+		]
+	},
+	"dates": {
+		"discovery": "2022-01-25",
+		"entry": "2022-01-29"
+	}
 }

@@ -1,31 +1,31 @@
 {
-  "vid": "9c1cea79-548a-11da-b53f-0004614cc33d",
-  "topic": "phpSysInfo -- \"register_globals\" emulation layer overwrite vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpSysInfo"
-      ],
-      "range": [
-        {
-          "lt": "2.5.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17441/\">\n\t  <p>Christopher Kunz has reported a vulnerability in\n\t    phpSysInfo, which can be exploited by malicious people\n\t    to manipulate certain information.</p>\n\t  <p>The vulnerability is caused due to an error in\n\t    the \"register_globals\" emulation layer where certain\n\t    arrays used by the system can be overwritten.  This can be\n\t    exploited to execute arbitrary HTML and script code in\n\t    a user's browser session and include arbitrary files from\n\t    local resources.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.hardened-php.net/advisory_222005.81.html",
-      "http://secunia.com/advisories/17441/"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-11-10",
-    "entry": "2005-11-13",
-    "modified": "2005-12-25"
-  }
+	"vid": "9c1cea79-548a-11da-b53f-0004614cc33d",
+	"topic": "phpSysInfo -- \"register_globals\" emulation layer overwrite vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpSysInfo"
+			],
+			"range": [
+				{
+					"lt": "2.5.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17441/\">\n\t  <p>Christopher Kunz has reported a vulnerability in\n\t    phpSysInfo, which can be exploited by malicious people\n\t    to manipulate certain information.</p>\n\t  <p>The vulnerability is caused due to an error in\n\t    the \"register_globals\" emulation layer where certain\n\t    arrays used by the system can be overwritten.  This can be\n\t    exploited to execute arbitrary HTML and script code in\n\t    a user's browser session and include arbitrary files from\n\t    local resources.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.hardened-php.net/advisory_222005.81.html",
+			"http://secunia.com/advisories/17441/"
+		]
+	},
+	"dates": {
+		"discovery": "2005-11-10",
+		"entry": "2005-11-13",
+		"modified": "2005-12-25"
+	}
 }

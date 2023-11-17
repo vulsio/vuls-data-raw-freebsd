@@ -1,46 +1,46 @@
 {
-  "vid": "69bfc852-9bd0-11e2-a7be-8c705af55518",
-  "topic": "FreeBSD -- OpenSSL multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "8.3_7",
-          "ge": "8.3"
-        },
-        {
-          "lt": "9.0_7",
-          "ge": "9.0"
-        },
-        {
-          "lt": "9.1_2",
-          "ge": "9.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-13:03.openssl.asc\">\n\t  <p>A flaw in the OpenSSL handling of OCSP response\n\t    verification could be exploited to cause a denial of\n\t    service attack.</p>\n\t  <p>OpenSSL has a weakness in the handling of CBC\n\t    ciphersuites in SSL, TLS and DTLS. The weakness could reveal\n\t    plaintext in a timing attack.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openssl.org/news/secadv_20130205.txt"
-    ],
-    "cvename": [
-      "CVE-2013-0166",
-      "CVE-2013-0169"
-    ],
-    "freebsd_sa": [
-      "SA-13:03.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-04-02",
-    "entry": "2013-04-02",
-    "modified": "2016-08-09"
-  }
+	"vid": "69bfc852-9bd0-11e2-a7be-8c705af55518",
+	"topic": "FreeBSD -- OpenSSL multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "8.3_7",
+					"ge": "8.3"
+				},
+				{
+					"lt": "9.0_7",
+					"ge": "9.0"
+				},
+				{
+					"lt": "9.1_2",
+					"ge": "9.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-13:03.openssl.asc\">\n\t  <p>A flaw in the OpenSSL handling of OCSP response\n\t    verification could be exploited to cause a denial of\n\t    service attack.</p>\n\t  <p>OpenSSL has a weakness in the handling of CBC\n\t    ciphersuites in SSL, TLS and DTLS. The weakness could reveal\n\t    plaintext in a timing attack.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openssl.org/news/secadv_20130205.txt"
+		],
+		"cvename": [
+			"CVE-2013-0166",
+			"CVE-2013-0169"
+		],
+		"freebsd_sa": [
+			"SA-13:03.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2013-04-02",
+		"entry": "2013-04-02",
+		"modified": "2016-08-09"
+	}
 }

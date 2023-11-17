@@ -1,29 +1,29 @@
 {
-  "vid": "7a425536-74f7-4ce4-9768-0079a9d44d11",
-  "topic": "zeek -- potential DoS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "zeek"
-      ],
-      "range": [
-        {
-          "lt": "5.0.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v5.0.6\">\n\t  <p> Receiving DNS responses from async DNS requests (via\n\t  the lookup_addr, etc BIF methods) with the TTL set to\n\t  zero could cause the DNS manager to eventually stop being\n\t  able to make new requests. </p>\n\t  <p> Specially-crafted FTP packets with excessively long\n\t  usernames, passwords, or other fields could cause log\n\t  writes to use large amounts of disk space. </p>\n\t  <p> The find_all and find_all_ordered BIF methods could\n\t  take extremely large amounts of time to process incoming\n\t  data depending on the size of the input. </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/zeek/zeek/releases/tag/v5.0.7"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-02-21",
-    "entry": "2023-02-21"
-  }
+	"vid": "7a425536-74f7-4ce4-9768-0079a9d44d11",
+	"topic": "zeek -- potential DoS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"zeek"
+			],
+			"range": [
+				{
+					"lt": "5.0.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v5.0.6\">\n\t  <p> Receiving DNS responses from async DNS requests (via\n\t  the lookup_addr, etc BIF methods) with the TTL set to\n\t  zero could cause the DNS manager to eventually stop being\n\t  able to make new requests. </p>\n\t  <p> Specially-crafted FTP packets with excessively long\n\t  usernames, passwords, or other fields could cause log\n\t  writes to use large amounts of disk space. </p>\n\t  <p> The find_all and find_all_ordered BIF methods could\n\t  take extremely large amounts of time to process incoming\n\t  data depending on the size of the input. </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/zeek/zeek/releases/tag/v5.0.7"
+		]
+	},
+	"dates": {
+		"discovery": "2023-02-21",
+		"entry": "2023-02-21"
+	}
 }

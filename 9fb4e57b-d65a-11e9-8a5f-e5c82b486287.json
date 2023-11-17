@@ -1,36 +1,36 @@
 {
-  "vid": "9fb4e57b-d65a-11e9-8a5f-e5c82b486287",
-  "topic": "curl -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.66.0",
-          "ge": "7.19.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>curl security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2019-5481: FTP-KRB double-free</p>\n\t  <p>libcurl can be told to use kerberos over FTP to a server, as set with\n\t    the CURLOPT_KRBLEVEL option.</p>\n\t  <p>During such kerberos FTP data transfer, the server sends data to curl\n\t    in blocks with the 32 bit size of each block first and then that amount\n\t    of data immediately following.</p>\n\t  <p>A malicious or just broken server can claim to send a very large block\n\t    and if by doing that it makes curl's subsequent call to realloc() to\n\t    fail, curl would then misbehave in the exit path and double-free the\n\t    memory.</p>\n\t  <p>In practical terms, an up to 4 GB memory area may very well be fine to\n\t    allocate on a modern 64 bit system but on 32 bit systems it will fail.</p>\n\t  <p>Kerberos FTP is a rarely used protocol with curl. Also, Kerberos\n\t    authentication is usually only attempted and used with servers that the\n\t    client has a previous association with.</p>\n\t  <p>CVE-2019-5482: TFTP small blocksize heap buffer overflow</p>\n\t  <p>libcurl contains a heap buffer overflow in the function\n\t    (tftp_receive_packet()) that receives data from a TFTP server. It can\n\t    call recvfrom() with the default size for the buffer rather than with\n\t    the size that was used to allocate it. Thus, the content that might\n\t    overwrite the heap memory is controlled by the server.</p>\n\t  <p>This flaw is only triggered if the TFTP server sends an OACK without\n\t    the BLKSIZE option, when a BLKSIZE smaller than 512 bytes was requested\n\t    by the TFTP client. OACK is a TFTP extension and is not used by all\n\t    TFTP servers.</p>\n\t  <p>Users choosing a smaller block size than default should be rare as the\n\t    primary use case for changing the size is to make it larger.</p>\n\t  <p>It is rare for users to use TFTP across the Internet. It is most\n\t    commonly used within local networks. TFTP as a protocol is always\n\t    inherently insecure.</p>\n\t  <p>This issue was introduced by the add of the TFTP BLKSIZE option\n\t    handling. It was previously incompletely fixed by an almost identical\n\t    issue called CVE-2019-5436.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/security.html",
-      "https://curl.haxx.se/docs/CVE-2019-5481.html",
-      "https://curl.haxx.se/docs/CVE-2019-5482.html"
-    ],
-    "cvename": [
-      "CVE-2019-5481",
-      "CVE-2019-5482"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-09-11",
-    "entry": "2019-09-14"
-  }
+	"vid": "9fb4e57b-d65a-11e9-8a5f-e5c82b486287",
+	"topic": "curl -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.66.0",
+					"ge": "7.19.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>curl security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2019-5481: FTP-KRB double-free</p>\n\t  <p>libcurl can be told to use kerberos over FTP to a server, as set with\n\t    the CURLOPT_KRBLEVEL option.</p>\n\t  <p>During such kerberos FTP data transfer, the server sends data to curl\n\t    in blocks with the 32 bit size of each block first and then that amount\n\t    of data immediately following.</p>\n\t  <p>A malicious or just broken server can claim to send a very large block\n\t    and if by doing that it makes curl's subsequent call to realloc() to\n\t    fail, curl would then misbehave in the exit path and double-free the\n\t    memory.</p>\n\t  <p>In practical terms, an up to 4 GB memory area may very well be fine to\n\t    allocate on a modern 64 bit system but on 32 bit systems it will fail.</p>\n\t  <p>Kerberos FTP is a rarely used protocol with curl. Also, Kerberos\n\t    authentication is usually only attempted and used with servers that the\n\t    client has a previous association with.</p>\n\t  <p>CVE-2019-5482: TFTP small blocksize heap buffer overflow</p>\n\t  <p>libcurl contains a heap buffer overflow in the function\n\t    (tftp_receive_packet()) that receives data from a TFTP server. It can\n\t    call recvfrom() with the default size for the buffer rather than with\n\t    the size that was used to allocate it. Thus, the content that might\n\t    overwrite the heap memory is controlled by the server.</p>\n\t  <p>This flaw is only triggered if the TFTP server sends an OACK without\n\t    the BLKSIZE option, when a BLKSIZE smaller than 512 bytes was requested\n\t    by the TFTP client. OACK is a TFTP extension and is not used by all\n\t    TFTP servers.</p>\n\t  <p>Users choosing a smaller block size than default should be rare as the\n\t    primary use case for changing the size is to make it larger.</p>\n\t  <p>It is rare for users to use TFTP across the Internet. It is most\n\t    commonly used within local networks. TFTP as a protocol is always\n\t    inherently insecure.</p>\n\t  <p>This issue was introduced by the add of the TFTP BLKSIZE option\n\t    handling. It was previously incompletely fixed by an almost identical\n\t    issue called CVE-2019-5436.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/security.html",
+			"https://curl.haxx.se/docs/CVE-2019-5481.html",
+			"https://curl.haxx.se/docs/CVE-2019-5482.html"
+		],
+		"cvename": [
+			"CVE-2019-5481",
+			"CVE-2019-5482"
+		]
+	},
+	"dates": {
+		"discovery": "2019-09-11",
+		"entry": "2019-09-14"
+	}
 }

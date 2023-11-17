@@ -1,40 +1,40 @@
 {
-  "vid": "4c52ec3c-86f3-11ea-b5b4-641c67a117d8",
-  "topic": "py-bleach -- regular expression denial-of-service",
-  "affects": [
-    {
-      "name": [
-        "py27-bleach",
-        "py35-bleach",
-        "py36-bleach",
-        "py37-bleach",
-        "py38-bleach"
-      ],
-      "range": [
-        {
-          "lt": "3.1.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Bleach developers reports:</p>\n\t<blockquote cite=\"https://github.com/mozilla/bleach/security/advisories/GHSA-vqhp-cxgc-6wmm\">\n\t  <p>bleach.clean behavior parsing style attributes could result in a\n\t    regular expression denial of service (ReDoS).</p>\n\t  <p>Calls to bleach.clean with an allowed tag with an allowed style\n\t    attribute are vulnerable to ReDoS. For example, bleach.clean(...,\n\t    attributes={'a': ['style']}).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/mozilla/bleach/security/advisories/GHSA-vqhp-cxgc-6wmm",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=1623633"
-    ],
-    "cvename": [
-      "CVE-2020-6817"
-    ],
-    "freebsd_pr": [
-      "ports/245943"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-03-09",
-    "entry": "2020-04-26"
-  }
+	"vid": "4c52ec3c-86f3-11ea-b5b4-641c67a117d8",
+	"topic": "py-bleach -- regular expression denial-of-service",
+	"affects": [
+		{
+			"name": [
+				"py27-bleach",
+				"py35-bleach",
+				"py36-bleach",
+				"py37-bleach",
+				"py38-bleach"
+			],
+			"range": [
+				{
+					"lt": "3.1.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Bleach developers reports:</p>\n\t<blockquote cite=\"https://github.com/mozilla/bleach/security/advisories/GHSA-vqhp-cxgc-6wmm\">\n\t  <p>bleach.clean behavior parsing style attributes could result in a\n\t    regular expression denial of service (ReDoS).</p>\n\t  <p>Calls to bleach.clean with an allowed tag with an allowed style\n\t    attribute are vulnerable to ReDoS. For example, bleach.clean(...,\n\t    attributes={'a': ['style']}).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/mozilla/bleach/security/advisories/GHSA-vqhp-cxgc-6wmm",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=1623633"
+		],
+		"cvename": [
+			"CVE-2020-6817"
+		],
+		"freebsd_pr": [
+			"ports/245943"
+		]
+	},
+	"dates": {
+		"discovery": "2019-03-09",
+		"entry": "2020-04-26"
+	}
 }

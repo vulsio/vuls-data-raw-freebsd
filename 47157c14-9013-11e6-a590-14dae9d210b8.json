@@ -1,59 +1,59 @@
 {
-  "vid": "47157c14-9013-11e6-a590-14dae9d210b8",
-  "topic": "mupdf -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mupdf"
-      ],
-      "range": [
-        {
-          "lt": "1.9a_1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "llpp"
-      ],
-      "range": [
-        {
-          "lt": "22_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "zathura-pdf-mupdf"
-      ],
-      "range": [
-        {
-          "lt": "0.3.0_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tobias Kortkamp reports:</p>\n\t<blockquote cite=\"http://openbsd-archive.7691.n7.nabble.com/mupdf-CVE-2016-6525-amp-CVE-2016-6265-td302904.html\">\n\t  <p>Heap-based buffer overflow in the pdf_load_mesh_params\n\t    function in pdf/pdf-shade.c in MuPDF allows remote attackers to cause a\n\t    denial of service (crash) or execute arbitrary code via a large decode\n\t    array.</p>\n\t<p>Use-after-free vulnerability in the pdf_load_xref function in\n\t    pdf/pdf-xref.c in MuPDF allows remote attackers to cause a denial of\n\t    service (crash) via a crafted PDF file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://openbsd-archive.7691.n7.nabble.com/mupdf-CVE-2016-6525-amp-CVE-2016-6265-td302904.html",
-      "http://bugs.ghostscript.com/show_bug.cgi?id=696941",
-      "http://bugs.ghostscript.com/show_bug.cgi?id=696954"
-    ],
-    "cvename": [
-      "CVE-2016-6525",
-      "CVE-2016-6265"
-    ],
-    "freebsd_pr": [
-      "ports/212207"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-08-27",
-    "entry": "2016-10-12",
-    "modified": "2016-10-18"
-  }
+	"vid": "47157c14-9013-11e6-a590-14dae9d210b8",
+	"topic": "mupdf -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mupdf"
+			],
+			"range": [
+				{
+					"lt": "1.9a_1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"llpp"
+			],
+			"range": [
+				{
+					"lt": "22_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"zathura-pdf-mupdf"
+			],
+			"range": [
+				{
+					"lt": "0.3.0_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tobias Kortkamp reports:</p>\n\t<blockquote cite=\"http://openbsd-archive.7691.n7.nabble.com/mupdf-CVE-2016-6525-amp-CVE-2016-6265-td302904.html\">\n\t  <p>Heap-based buffer overflow in the pdf_load_mesh_params\n\t    function in pdf/pdf-shade.c in MuPDF allows remote attackers to cause a\n\t    denial of service (crash) or execute arbitrary code via a large decode\n\t    array.</p>\n\t<p>Use-after-free vulnerability in the pdf_load_xref function in\n\t    pdf/pdf-xref.c in MuPDF allows remote attackers to cause a denial of\n\t    service (crash) via a crafted PDF file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://openbsd-archive.7691.n7.nabble.com/mupdf-CVE-2016-6525-amp-CVE-2016-6265-td302904.html",
+			"http://bugs.ghostscript.com/show_bug.cgi?id=696941",
+			"http://bugs.ghostscript.com/show_bug.cgi?id=696954"
+		],
+		"cvename": [
+			"CVE-2016-6525",
+			"CVE-2016-6265"
+		],
+		"freebsd_pr": [
+			"ports/212207"
+		]
+	},
+	"dates": {
+		"discovery": "2016-08-27",
+		"entry": "2016-10-12",
+		"modified": "2016-10-18"
+	}
 }

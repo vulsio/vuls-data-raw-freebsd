@@ -1,46 +1,46 @@
 {
-  "vid": "42cbd1e8-b152-11e5-9728-002590263bf5",
-  "topic": "qemu -- denial of service vulnerability in virtio-net support",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.4.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qemu-sbruno",
-        "qemu-user-static"
-      ],
-      "range": [
-        {
-          "lt": "2.5.50.g20151224"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/09/18/5\">\n\t  <p>Qemu emulator built with the Virtual Network Device(virtio-net)\n\t    support is vulnerable to a DoS issue. It could occur while receiving\n\t    large packets over the tuntap/macvtap interfaces and when guest's\n\t    virtio-net driver did not support big/mergeable receive buffers.</p>\n\t  <p>An attacker on the local network could use this flaw to disable\n\t    guest's networking by sending a large number of jumbo frames to the\n\t    guest, exhausting all receive buffers and thus leading to a DoS\n\t    situation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2015/09/18/5",
-      "http://git.qemu.org/?p=qemu.git;a=commit;h=696317f1895e836d53b670c7b77b7be93302ba08",
-      "https://github.com/seanbruno/qemu-bsd-user/commit/0cf33fb6b49a19de32859e2cdc6021334f448fb3"
-    ],
-    "cvename": [
-      "CVE-2015-7295"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-09-18",
-    "entry": "2016-01-02"
-  }
+	"vid": "42cbd1e8-b152-11e5-9728-002590263bf5",
+	"topic": "qemu -- denial of service vulnerability in virtio-net support",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"lt": "2.4.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"qemu-sbruno",
+				"qemu-user-static"
+			],
+			"range": [
+				{
+					"lt": "2.5.50.g20151224"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/09/18/5\">\n\t  <p>Qemu emulator built with the Virtual Network Device(virtio-net)\n\t    support is vulnerable to a DoS issue. It could occur while receiving\n\t    large packets over the tuntap/macvtap interfaces and when guest's\n\t    virtio-net driver did not support big/mergeable receive buffers.</p>\n\t  <p>An attacker on the local network could use this flaw to disable\n\t    guest's networking by sending a large number of jumbo frames to the\n\t    guest, exhausting all receive buffers and thus leading to a DoS\n\t    situation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2015/09/18/5",
+			"http://git.qemu.org/?p=qemu.git;a=commit;h=696317f1895e836d53b670c7b77b7be93302ba08",
+			"https://github.com/seanbruno/qemu-bsd-user/commit/0cf33fb6b49a19de32859e2cdc6021334f448fb3"
+		],
+		"cvename": [
+			"CVE-2015-7295"
+		]
+	},
+	"dates": {
+		"discovery": "2015-09-18",
+		"entry": "2016-01-02"
+	}
 }

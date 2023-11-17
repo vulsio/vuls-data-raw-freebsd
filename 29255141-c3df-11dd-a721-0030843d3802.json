@@ -1,35 +1,35 @@
 {
-  "vid": "29255141-c3df-11dd-a721-0030843d3802",
-  "topic": "mantis -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mantis"
-      ],
-      "range": [
-        {
-          "lt": "1.1.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30270/\">\n\t  <p>Some vulnerabilities have been reported in Mantis, which can be\n\t    exploited by malicious users to compromise a vulnerable system and\n\t    malicious people to conduct cross-site scripting and request forgery\n\t    attacks.</p>\n\t  <p>Input passed to the \"filter_target\" parameter in\n\t    return_dynamic_filters.php is not properly sanitised before being\n\t    returned to a user. This can be exploited to execute arbitrary HTML\n\t    and script code in a user's browser session in context of an affected\n\t    site.</p>\n\t  <p>A vulnerability is caused due to the application allowing users to\n\t    perform certain actions via HTTP requests without performing any\n\t    validity checks to verify the request. This can be exploited to e.g.\n\t    add a new user with administrative privileges by enticing a logged-in\n\t    administrator to visit a malicious site.</p>\n\t  <p>Input passed to the \"value\" parameter in adm_config_set.php is not\n\t    properly sanitised before being used in an \"eval()\" statement. This\n\t    can be exploited to e.g. execute arbitrary PHP commands via a\n\t    specially crafted request.</p>\n\t  <p>Input passed to the \"language\" parameter in account_prefs_update.php\n\t    is not properly verified before being used to include files. This\n\t    can be exploited to include arbitrary files from local\n\t    resources.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/30270/"
-    ],
-    "cvename": [
-      "CVE-2008-2276",
-      "CVE-2008-3331",
-      "CVE-2008-3332",
-      "CVE-2008-3333"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-05-15",
-    "entry": "2008-12-06"
-  }
+	"vid": "29255141-c3df-11dd-a721-0030843d3802",
+	"topic": "mantis -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mantis"
+			],
+			"range": [
+				{
+					"lt": "1.1.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30270/\">\n\t  <p>Some vulnerabilities have been reported in Mantis, which can be\n\t    exploited by malicious users to compromise a vulnerable system and\n\t    malicious people to conduct cross-site scripting and request forgery\n\t    attacks.</p>\n\t  <p>Input passed to the \"filter_target\" parameter in\n\t    return_dynamic_filters.php is not properly sanitised before being\n\t    returned to a user. This can be exploited to execute arbitrary HTML\n\t    and script code in a user's browser session in context of an affected\n\t    site.</p>\n\t  <p>A vulnerability is caused due to the application allowing users to\n\t    perform certain actions via HTTP requests without performing any\n\t    validity checks to verify the request. This can be exploited to e.g.\n\t    add a new user with administrative privileges by enticing a logged-in\n\t    administrator to visit a malicious site.</p>\n\t  <p>Input passed to the \"value\" parameter in adm_config_set.php is not\n\t    properly sanitised before being used in an \"eval()\" statement. This\n\t    can be exploited to e.g. execute arbitrary PHP commands via a\n\t    specially crafted request.</p>\n\t  <p>Input passed to the \"language\" parameter in account_prefs_update.php\n\t    is not properly verified before being used to include files. This\n\t    can be exploited to include arbitrary files from local\n\t    resources.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/30270/"
+		],
+		"cvename": [
+			"CVE-2008-2276",
+			"CVE-2008-3331",
+			"CVE-2008-3332",
+			"CVE-2008-3333"
+		]
+	},
+	"dates": {
+		"discovery": "2008-05-15",
+		"entry": "2008-12-06"
+	}
 }

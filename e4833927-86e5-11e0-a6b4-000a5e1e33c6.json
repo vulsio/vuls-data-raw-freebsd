@@ -1,33 +1,33 @@
 {
-  "vid": "e4833927-86e5-11e0-a6b4-000a5e1e33c6",
-  "topic": "Erlang -- ssh library uses a weak random number generator",
-  "affects": [
-    {
-      "name": [
-        "erlang"
-      ],
-      "range": [
-        {
-          "lt": "r14b03"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>US-CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/178990\">\n\t  <p>The Erlang/OTP ssh library implements a number of\n\t    cryptographic operations that depend on cryptographically\n\t    strong random numbers.  Unfortunately the RNG used by the\n\t    library is not cryptographically strong, and is further\n\t    weakened by the use of predictable seed material.  The RNG\n\t    (Wichman-Hill) is not mixed with an entropy source.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.erlang.org/download/otp_src_R14B03.readme",
-      "https://github.com/erlang/otp/commit/f228601de45c5b53241b103af6616453c50885a5"
-    ],
-    "cvename": [
-      "CVE-2011-0766"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-05-25",
-    "entry": "2011-05-25"
-  }
+	"vid": "e4833927-86e5-11e0-a6b4-000a5e1e33c6",
+	"topic": "Erlang -- ssh library uses a weak random number generator",
+	"affects": [
+		{
+			"name": [
+				"erlang"
+			],
+			"range": [
+				{
+					"lt": "r14b03"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>US-CERT reports:</p>\n\t<blockquote cite=\"http://www.kb.cert.org/vuls/id/178990\">\n\t  <p>The Erlang/OTP ssh library implements a number of\n\t    cryptographic operations that depend on cryptographically\n\t    strong random numbers.  Unfortunately the RNG used by the\n\t    library is not cryptographically strong, and is further\n\t    weakened by the use of predictable seed material.  The RNG\n\t    (Wichman-Hill) is not mixed with an entropy source.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.erlang.org/download/otp_src_R14B03.readme",
+			"https://github.com/erlang/otp/commit/f228601de45c5b53241b103af6616453c50885a5"
+		],
+		"cvename": [
+			"CVE-2011-0766"
+		]
+	},
+	"dates": {
+		"discovery": "2011-05-25",
+		"entry": "2011-05-25"
+	}
 }

@@ -1,45 +1,45 @@
 {
-  "vid": "3837f462-5d6b-11d8-80e3-0020ed76ef5a",
-  "topic": "Buffer overflows in XFree86 servers",
-  "affects": [
-    {
-      "name": [
-        "XFree86-Server"
-      ],
-      "range": [
-        {
-          "le": "4.3.0_13"
-        },
-        {
-          "ge": "4.3.99",
-          "le": "4.3.99.15_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A number of buffer overflows were recently discovered in\n\t  XFree86, prompted by initial discoveries by iDEFENSE.  These\n\t  buffer overflows are present in the font alias handling.  An\n\t  attacker with authenticated access to a running X server may\n\t  exploit these vulnerabilities to obtain root privileges on\n\t  the machine running the X server.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.idefense.com/application/poi/display?id=72",
-      "http://www.idefense.com/application/poi/display?id=73"
-    ],
-    "cvename": [
-      "CVE-2004-0083",
-      "CVE-2004-0084",
-      "CVE-2004-0106"
-    ],
-    "bid": [
-      "9636",
-      "9652",
-      "9655"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-02-10",
-    "entry": "2004-02-12",
-    "modified": "2004-03-29"
-  }
+	"vid": "3837f462-5d6b-11d8-80e3-0020ed76ef5a",
+	"topic": "Buffer overflows in XFree86 servers",
+	"affects": [
+		{
+			"name": [
+				"XFree86-Server"
+			],
+			"range": [
+				{
+					"le": "4.3.0_13"
+				},
+				{
+					"ge": "4.3.99",
+					"le": "4.3.99.15_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A number of buffer overflows were recently discovered in\n\t  XFree86, prompted by initial discoveries by iDEFENSE.  These\n\t  buffer overflows are present in the font alias handling.  An\n\t  attacker with authenticated access to a running X server may\n\t  exploit these vulnerabilities to obtain root privileges on\n\t  the machine running the X server.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.idefense.com/application/poi/display?id=72",
+			"http://www.idefense.com/application/poi/display?id=73"
+		],
+		"cvename": [
+			"CVE-2004-0083",
+			"CVE-2004-0084",
+			"CVE-2004-0106"
+		],
+		"bid": [
+			"9636",
+			"9652",
+			"9655"
+		]
+	},
+	"dates": {
+		"discovery": "2004-02-10",
+		"entry": "2004-02-12",
+		"modified": "2004-03-29"
+	}
 }

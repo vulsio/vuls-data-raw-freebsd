@@ -1,45 +1,45 @@
 {
-  "vid": "9aecb94c-c1ad-11e3-a5ac-001b21614864",
-  "topic": "cURL -- inappropriate GSSAPI delegation",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "ge": "7.10.6",
-          "le": "7.21.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-f10-curl"
-      ],
-      "range": [
-        {
-          "ge": "7.10.6",
-          "le": "7.21.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>cURL reports:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20110623.html\">\n\t  <p>When doing GSSAPI authentication, libcurl unconditionally performs\n\t    credential delegation. This hands the server a copy of the client's\n\t    security credentials, allowing the server to impersonate the client\n\t    to any other using the same GSSAPI mechanism.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://curl.haxx.se/docs/adv_20110623.html"
-    ],
-    "cvename": [
-      "CVE-2011-2192"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-06-23",
-    "entry": "2014-04-11",
-    "modified": "2014-04-30"
-  }
+	"vid": "9aecb94c-c1ad-11e3-a5ac-001b21614864",
+	"topic": "cURL -- inappropriate GSSAPI delegation",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"ge": "7.10.6",
+					"le": "7.21.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-f10-curl"
+			],
+			"range": [
+				{
+					"ge": "7.10.6",
+					"le": "7.21.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cURL reports:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20110623.html\">\n\t  <p>When doing GSSAPI authentication, libcurl unconditionally performs\n\t    credential delegation. This hands the server a copy of the client's\n\t    security credentials, allowing the server to impersonate the client\n\t    to any other using the same GSSAPI mechanism.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://curl.haxx.se/docs/adv_20110623.html"
+		],
+		"cvename": [
+			"CVE-2011-2192"
+		]
+	},
+	"dates": {
+		"discovery": "2011-06-23",
+		"entry": "2014-04-11",
+		"modified": "2014-04-30"
+	}
 }

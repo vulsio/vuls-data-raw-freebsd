@@ -1,38 +1,38 @@
 {
-  "vid": "863f95d3-3df1-11dc-b3d3-0016179b2dd5",
-  "topic": "mutt -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mutt",
-        "mutt-lite",
-        "ja-mutt",
-        "zh-mutt"
-      ],
-      "range": [
-        {
-          "lt": "1.4.2.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Securityfocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/24192/\">\n\t  <p>Mutt is prone to a local buffer-overflow vulnerability\n\t    because it fails to properly bounds-check user-supplied\n\t    input before using it in a memory copy operation.\n\t    An attacker can exploit this issue to execute arbitrary\n\t    code with the with the privileges of the victim.  Failed\n\t    exploit attempts will result in a denial of service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.redhat.com/support/errata/RHSA-2007-0386.html"
-    ],
-    "cvename": [
-      "CVE-2007-2683"
-    ],
-    "bid": [
-      "24192"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-05-28",
-    "entry": "2007-07-29"
-  }
+	"vid": "863f95d3-3df1-11dc-b3d3-0016179b2dd5",
+	"topic": "mutt -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mutt",
+				"mutt-lite",
+				"ja-mutt",
+				"zh-mutt"
+			],
+			"range": [
+				{
+					"lt": "1.4.2.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Securityfocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/24192/\">\n\t  <p>Mutt is prone to a local buffer-overflow vulnerability\n\t    because it fails to properly bounds-check user-supplied\n\t    input before using it in a memory copy operation.\n\t    An attacker can exploit this issue to execute arbitrary\n\t    code with the with the privileges of the victim.  Failed\n\t    exploit attempts will result in a denial of service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.redhat.com/support/errata/RHSA-2007-0386.html"
+		],
+		"cvename": [
+			"CVE-2007-2683"
+		],
+		"bid": [
+			"24192"
+		]
+	},
+	"dates": {
+		"discovery": "2007-05-28",
+		"entry": "2007-07-29"
+	}
 }

@@ -1,45 +1,45 @@
 {
-  "vid": "4b09378e-addb-11dd-a578-0030843d3802",
-  "topic": "vlc -- cue processing stack overflow",
-  "affects": [
-    {
-      "name": [
-        "vlc"
-      ],
-      "range": [
-        {
-          "lt": "0.8.6.i_2,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "vlc-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.9.6,3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The VLC Team reports:</p>\n\t<blockquote cite=\"http://www.videolan.org/security/sa0810.html\">\n\t  <p>The VLC media player contains a stack overflow vulnerability\n\t    while parsing malformed cue files.  The vulnerability may be\n\t    exploited by a (remote) attacker to execute arbitrary code in\n\t    the context of VLC media player.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.videolan.org/security/sa0810.html",
-      "http://www.trapkit.de/advisories/TKADV2008-012.txt"
-    ],
-    "cvename": [
-      "CVE-2008-5032",
-      "CVE-2008-5036"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-11-05",
-    "entry": "2008-11-08",
-    "modified": "2010-05-02"
-  }
+	"vid": "4b09378e-addb-11dd-a578-0030843d3802",
+	"topic": "vlc -- cue processing stack overflow",
+	"affects": [
+		{
+			"name": [
+				"vlc"
+			],
+			"range": [
+				{
+					"lt": "0.8.6.i_2,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"vlc-devel"
+			],
+			"range": [
+				{
+					"lt": "0.9.6,3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The VLC Team reports:</p>\n\t<blockquote cite=\"http://www.videolan.org/security/sa0810.html\">\n\t  <p>The VLC media player contains a stack overflow vulnerability\n\t    while parsing malformed cue files.  The vulnerability may be\n\t    exploited by a (remote) attacker to execute arbitrary code in\n\t    the context of VLC media player.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.videolan.org/security/sa0810.html",
+			"http://www.trapkit.de/advisories/TKADV2008-012.txt"
+		],
+		"cvename": [
+			"CVE-2008-5032",
+			"CVE-2008-5036"
+		]
+	},
+	"dates": {
+		"discovery": "2008-11-05",
+		"entry": "2008-11-08",
+		"modified": "2010-05-02"
+	}
 }

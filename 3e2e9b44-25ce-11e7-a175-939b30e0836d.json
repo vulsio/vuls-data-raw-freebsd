@@ -1,33 +1,33 @@
 {
-  "vid": "3e2e9b44-25ce-11e7-a175-939b30e0836d",
-  "topic": "cURL -- TLS session resumption client cert bypass (again)",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.54.0",
-          "ge": "7.52.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>cURL security advisory:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20170419.html\">\n\t  <p>libcurl would attempt to resume a TLS session even if the client\n\t    certificate had changed. That is unacceptable since a server by\n\t    specification is allowed to skip the client certificate check on\n\t    resume, and may instead use the old identity which was established\n\t    by the previous certificate (or no certificate).</p>\n\t  <p>libcurl supports by default the use of TLS session id/ticket to\n\t    resume previous TLS sessions to speed up subsequent TLS handshakes.\n\t    They are used when for any reason an existing TLS connection\n\t    couldn't be kept alive to make the next handshake faster.</p>\n\t  <p>This flaw is a regression and identical to CVE-2016-5419 reported\n\t    on August 3rd 2016, but affecting a different version range.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/adv_20170419.html"
-    ],
-    "cvename": [
-      "CVE-2017-7468"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-19",
-    "entry": "2017-04-20"
-  }
+	"vid": "3e2e9b44-25ce-11e7-a175-939b30e0836d",
+	"topic": "cURL -- TLS session resumption client cert bypass (again)",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.54.0",
+					"ge": "7.52.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cURL security advisory:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20170419.html\">\n\t  <p>libcurl would attempt to resume a TLS session even if the client\n\t    certificate had changed. That is unacceptable since a server by\n\t    specification is allowed to skip the client certificate check on\n\t    resume, and may instead use the old identity which was established\n\t    by the previous certificate (or no certificate).</p>\n\t  <p>libcurl supports by default the use of TLS session id/ticket to\n\t    resume previous TLS sessions to speed up subsequent TLS handshakes.\n\t    They are used when for any reason an existing TLS connection\n\t    couldn't be kept alive to make the next handshake faster.</p>\n\t  <p>This flaw is a regression and identical to CVE-2016-5419 reported\n\t    on August 3rd 2016, but affecting a different version range.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/adv_20170419.html"
+		],
+		"cvename": [
+			"CVE-2017-7468"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-19",
+		"entry": "2017-04-20"
+	}
 }

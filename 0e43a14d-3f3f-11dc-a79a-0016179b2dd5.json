@@ -1,86 +1,86 @@
 {
-  "vid": "0e43a14d-3f3f-11dc-a79a-0016179b2dd5",
-  "topic": "xpdf -- stack based buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "xpdf"
-      ],
-      "range": [
-        {
-          "lt": "3.02_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kdegraphics"
-      ],
-      "range": [
-        {
-          "lt": "3.5.7_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "cups-base"
-      ],
-      "range": [
-        {
-          "lt": "1.2.11_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gpdf"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "pdftohtml"
-      ],
-      "range": [
-        {
-          "lt": "0.39_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "poppler"
-      ],
-      "range": [
-        {
-          "lt": "0.5.9_4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The KDE Team reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20070730-1.txt\">\n\t  <p>kpdf, the KDE pdf viewer, shares code with xpdf. xpdf contains\n\t    a vulnerability that can cause a stack based buffer overflow\n\t    via a PDF file that exploits an integer overflow in\n\t    StreamPredictor::StreamPredictor(). Remotely supplied\n\t    pdf files can be used to disrupt the kpdf  viewer on\n\t    the client machine and possibly execute arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kde.org/info/security/advisory-20070730-1.txt"
-    ],
-    "cvename": [
-      "CVE-2007-3387"
-    ],
-    "bid": [
-      "25124"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-07-30",
-    "entry": "2007-07-31",
-    "modified": "2009-04-29"
-  }
+	"vid": "0e43a14d-3f3f-11dc-a79a-0016179b2dd5",
+	"topic": "xpdf -- stack based buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"xpdf"
+			],
+			"range": [
+				{
+					"lt": "3.02_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"kdegraphics"
+			],
+			"range": [
+				{
+					"lt": "3.5.7_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"cups-base"
+			],
+			"range": [
+				{
+					"lt": "1.2.11_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"gpdf"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"pdftohtml"
+			],
+			"range": [
+				{
+					"lt": "0.39_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"poppler"
+			],
+			"range": [
+				{
+					"lt": "0.5.9_4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The KDE Team reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20070730-1.txt\">\n\t  <p>kpdf, the KDE pdf viewer, shares code with xpdf. xpdf contains\n\t    a vulnerability that can cause a stack based buffer overflow\n\t    via a PDF file that exploits an integer overflow in\n\t    StreamPredictor::StreamPredictor(). Remotely supplied\n\t    pdf files can be used to disrupt the kpdf  viewer on\n\t    the client machine and possibly execute arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kde.org/info/security/advisory-20070730-1.txt"
+		],
+		"cvename": [
+			"CVE-2007-3387"
+		],
+		"bid": [
+			"25124"
+		]
+	},
+	"dates": {
+		"discovery": "2007-07-30",
+		"entry": "2007-07-31",
+		"modified": "2009-04-29"
+	}
 }

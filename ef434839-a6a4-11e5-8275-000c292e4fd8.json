@@ -1,101 +1,101 @@
 {
-  "vid": "ef434839-a6a4-11e5-8275-000c292e4fd8",
-  "topic": "samba -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "samba36"
-      ],
-      "range": [
-        {
-          "lt": "3.6.25_2",
-          "ge": "3.6.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba4"
-      ],
-      "range": [
-        {
-          "ge": "4.0.0",
-          "le": "4.0.26"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba41"
-      ],
-      "range": [
-        {
-          "lt": "4.1.22",
-          "ge": "4.1.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba42"
-      ],
-      "range": [
-        {
-          "lt": "4.2.7",
-          "ge": "4.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba43"
-      ],
-      "range": [
-        {
-          "lt": "4.3.3",
-          "ge": "4.3.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ldb"
-      ],
-      "range": [
-        {
-          "lt": "1.1.24",
-          "ge": "1.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Samba team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/latest_news.html#4.3.3\">\n\t  <p>[CVE-2015-3223] Malicious request can cause Samba LDAP server to hang, spinning using CPU.</p>\n\t  <p>[CVE-2015-5330] Malicious request can cause Samba LDAP server\n\t     to return uninitialized memory that should not be part of the reply.</p>\n\t  <p>[CVE-2015-5296] Requesting encryption should also request\n\t     signing when setting up the connection to protect against man-in-the-middle attacks.</p>\n\t  <p>[CVE-2015-5299] A missing access control check in the VFS\n\t     shadow_copy2 module could allow unauthorized users to access snapshots.</p>\n\t  <p>[CVE-2015-7540] Malicious request can cause Samba LDAP server to return crash.</p>\n\t  <p>[CVE-2015-8467] Samba can expose Windows DCs to MS15-096\n\t     Denial of service via the creation of multiple machine accounts(The Microsoft issue is CVE-2015-2535).</p>\n\t  <p>[CVE-2015-5252] Insufficient symlink verification could allow data access outside share path.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.samba.org/samba/security/CVE-2015-3223.html",
-      "https://www.samba.org/samba/security/CVE-2015-5252.html",
-      "https://www.samba.org/samba/security/CVE-2015-5296.html",
-      "https://www.samba.org/samba/security/CVE-2015-5299.html",
-      "https://www.samba.org/samba/security/CVE-2015-5330.html",
-      "https://www.samba.org/samba/security/CVE-2015-7540.html",
-      "https://www.samba.org/samba/security/CVE-2015-8467.html"
-    ],
-    "cvename": [
-      "CVE-2015-3223",
-      "CVE-2015-5252",
-      "CVE-2015-5296",
-      "CVE-2015-5299",
-      "CVE-2015-5330",
-      "CVE-2015-7540",
-      "CVE-2015-8467"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-16",
-    "entry": "2015-12-19",
-    "modified": "2016-02-05"
-  }
+	"vid": "ef434839-a6a4-11e5-8275-000c292e4fd8",
+	"topic": "samba -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"samba36"
+			],
+			"range": [
+				{
+					"lt": "3.6.25_2",
+					"ge": "3.6.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba4"
+			],
+			"range": [
+				{
+					"ge": "4.0.0",
+					"le": "4.0.26"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba41"
+			],
+			"range": [
+				{
+					"lt": "4.1.22",
+					"ge": "4.1.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba42"
+			],
+			"range": [
+				{
+					"lt": "4.2.7",
+					"ge": "4.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba43"
+			],
+			"range": [
+				{
+					"lt": "4.3.3",
+					"ge": "4.3.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"ldb"
+			],
+			"range": [
+				{
+					"lt": "1.1.24",
+					"ge": "1.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Samba team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/latest_news.html#4.3.3\">\n\t  <p>[CVE-2015-3223] Malicious request can cause Samba LDAP server to hang, spinning using CPU.</p>\n\t  <p>[CVE-2015-5330] Malicious request can cause Samba LDAP server\n\t     to return uninitialized memory that should not be part of the reply.</p>\n\t  <p>[CVE-2015-5296] Requesting encryption should also request\n\t     signing when setting up the connection to protect against man-in-the-middle attacks.</p>\n\t  <p>[CVE-2015-5299] A missing access control check in the VFS\n\t     shadow_copy2 module could allow unauthorized users to access snapshots.</p>\n\t  <p>[CVE-2015-7540] Malicious request can cause Samba LDAP server to return crash.</p>\n\t  <p>[CVE-2015-8467] Samba can expose Windows DCs to MS15-096\n\t     Denial of service via the creation of multiple machine accounts(The Microsoft issue is CVE-2015-2535).</p>\n\t  <p>[CVE-2015-5252] Insufficient symlink verification could allow data access outside share path.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.samba.org/samba/security/CVE-2015-3223.html",
+			"https://www.samba.org/samba/security/CVE-2015-5252.html",
+			"https://www.samba.org/samba/security/CVE-2015-5296.html",
+			"https://www.samba.org/samba/security/CVE-2015-5299.html",
+			"https://www.samba.org/samba/security/CVE-2015-5330.html",
+			"https://www.samba.org/samba/security/CVE-2015-7540.html",
+			"https://www.samba.org/samba/security/CVE-2015-8467.html"
+		],
+		"cvename": [
+			"CVE-2015-3223",
+			"CVE-2015-5252",
+			"CVE-2015-5296",
+			"CVE-2015-5299",
+			"CVE-2015-5330",
+			"CVE-2015-7540",
+			"CVE-2015-8467"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-16",
+		"entry": "2015-12-19",
+		"modified": "2016-02-05"
+	}
 }

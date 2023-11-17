@@ -1,49 +1,49 @@
 {
-  "vid": "729c4a9f-6007-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Denial of Service in TCP packet processing",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.0_9",
-          "ge": "10.0"
-        },
-        {
-          "lt": "9.3_2",
-          "ge": "9.3"
-        },
-        {
-          "lt": "9.2_12",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.1_19",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_16",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When a segment with the SYN flag for an already existing\n\tconnection arrives, the TCP stack tears down the connection,\n\tbypassing a check that the sequence number in the segment\n\tis in the expected window.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who has the ability to spoof IP traffic can\n\ttear down a TCP connection by sending only 2 packets, if\n\tthey know both TCP port numbers. In case one of the two\n\tport numbers is unknown, a successful attack requires less\n\tthan 2**17 packets spoofed, which can be generated within\n\tless than a second on a decent connection to the Internet.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0230"
-    ],
-    "freebsd_sa": [
-      "SA-14:19.tcp"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-09-16",
-    "entry": "2016-08-11"
-  }
+	"vid": "729c4a9f-6007-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Denial of Service in TCP packet processing",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.0_9",
+					"ge": "10.0"
+				},
+				{
+					"lt": "9.3_2",
+					"ge": "9.3"
+				},
+				{
+					"lt": "9.2_12",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.1_19",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_16",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>When a segment with the SYN flag for an already existing\n\tconnection arrives, the TCP stack tears down the connection,\n\tbypassing a check that the sequence number in the segment\n\tis in the expected window.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who has the ability to spoof IP traffic can\n\ttear down a TCP connection by sending only 2 packets, if\n\tthey know both TCP port numbers. In case one of the two\n\tport numbers is unknown, a successful attack requires less\n\tthan 2**17 packets spoofed, which can be generated within\n\tless than a second on a decent connection to the Internet.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0230"
+		],
+		"freebsd_sa": [
+			"SA-14:19.tcp"
+		]
+	},
+	"dates": {
+		"discovery": "2014-09-16",
+		"entry": "2016-08-11"
+	}
 }

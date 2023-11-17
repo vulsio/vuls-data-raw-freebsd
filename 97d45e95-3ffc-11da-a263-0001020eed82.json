@@ -1,34 +1,34 @@
 {
-  "vid": "97d45e95-3ffc-11da-a263-0001020eed82",
-  "topic": "snort -- Back Orifice preprocessor buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "snort"
-      ],
-      "range": [
-        {
-          "lt": "2.4.3",
-          "ge": "2.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jennifer Steffens reports:</p>\n\t<blockquote cite=\"http://www.snort.org/pub-bin/snortnews.cgi#99\">\n\t  <p>The Back Orifice preprocessor contains a stack-based\n\t    buffer overflow. This vulnerability could be leveraged by\n\t    an attacker to execute code remotely on a Snort sensor\n\t    where the Back Orifice preprocessor is enabled. However,\n\t    there are a number of factors that make remote code\n\t    execution difficult to achieve across different builds of\n\t    Snort on different platforms, even on the same platform\n\t    with different compiler versions, and it is more likely\n\t    that an attacker could use the vulnerability as a denial\n\t    of service attack.</p>\n\t  <p>The Back Orifice preprocessor can be disabled by\n\t    commenting out the line \"preprocessor bo\" in\n\t    snort.conf. This can be done in any text editor using the\n\t    following procedure:</p>\n\t  <ol>\n\t    <li>Locate the line \"preprocessor bo\"</li>\n\t    <li>Comment out this line by preceding it with a hash\n\t      (#). The new line will look like \"#preprocessor bo\"</li>\n\t    <li>Save the file</li>\n\t    <li>Restart snort</li>\n\t  </ol>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.snort.org/pub-bin/snortnews.cgi#99",
-      "http://xforce.iss.net/xforce/alerts/id/207"
-    ],
-    "cert_vu": [
-      "175500"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-10-18",
-    "entry": "2005-10-18"
-  }
+	"vid": "97d45e95-3ffc-11da-a263-0001020eed82",
+	"topic": "snort -- Back Orifice preprocessor buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"snort"
+			],
+			"range": [
+				{
+					"lt": "2.4.3",
+					"ge": "2.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jennifer Steffens reports:</p>\n\t<blockquote cite=\"http://www.snort.org/pub-bin/snortnews.cgi#99\">\n\t  <p>The Back Orifice preprocessor contains a stack-based\n\t    buffer overflow. This vulnerability could be leveraged by\n\t    an attacker to execute code remotely on a Snort sensor\n\t    where the Back Orifice preprocessor is enabled. However,\n\t    there are a number of factors that make remote code\n\t    execution difficult to achieve across different builds of\n\t    Snort on different platforms, even on the same platform\n\t    with different compiler versions, and it is more likely\n\t    that an attacker could use the vulnerability as a denial\n\t    of service attack.</p>\n\t  <p>The Back Orifice preprocessor can be disabled by\n\t    commenting out the line \"preprocessor bo\" in\n\t    snort.conf. This can be done in any text editor using the\n\t    following procedure:</p>\n\t  <ol>\n\t    <li>Locate the line \"preprocessor bo\"</li>\n\t    <li>Comment out this line by preceding it with a hash\n\t      (#). The new line will look like \"#preprocessor bo\"</li>\n\t    <li>Save the file</li>\n\t    <li>Restart snort</li>\n\t  </ol>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.snort.org/pub-bin/snortnews.cgi#99",
+			"http://xforce.iss.net/xforce/alerts/id/207"
+		],
+		"cert_vu": [
+			"175500"
+		]
+	},
+	"dates": {
+		"discovery": "2005-10-18",
+		"entry": "2005-10-18"
+	}
 }

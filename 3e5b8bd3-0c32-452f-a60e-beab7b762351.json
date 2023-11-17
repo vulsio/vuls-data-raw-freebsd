@@ -1,30 +1,30 @@
 {
-  "vid": "3e5b8bd3-0c32-452f-a60e-beab7b762351",
-  "topic": "transmission-daemon -- vulnerable to dns rebinding attacks",
-  "affects": [
-    {
-      "name": [
-        "transmission-daemon"
-      ],
-      "range": [
-        {
-          "le": "2.92_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Google Project Zero reports:</p>\n\t<blockquote cite=\"https://bugs.chromium.org/p/project-zero/issues/detail?id=1447\">\n\t  <p>The transmission bittorrent client uses a client/server\n\t    architecture, the user interface is the client which communicates\n\t    to the worker daemon using JSON RPC requests.</p>\n\t  <p>As with all HTTP RPC schemes like this, any website can send\n\t    requests to the daemon listening on localhost with XMLHttpRequest(),\n\t    but the theory is they will be ignored because clients must prove\n\t    they can read and set a specific header, X-Transmission-Session-Id.\n\t    Unfortunately, this design doesn't work because of an attack called\n\t    \"DNS rebinding\". Any website can simply create a dns name that they\n\t    are authorized to communicate with, and then make it resolve to\n\t    localhost.</p>\n\t  <p>Exploitation is simple, you could set script-torrent-done-enabled\n\t    and run any command, or set download-dir to /home/user/ and then\n\t    upload a torrent for .bashrc.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugs.chromium.org/p/project-zero/issues/detail?id=1447",
-      "https://github.com/transmission/transmission/pull/468"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-11-30",
-    "entry": "2018-01-14"
-  }
+	"vid": "3e5b8bd3-0c32-452f-a60e-beab7b762351",
+	"topic": "transmission-daemon -- vulnerable to dns rebinding attacks",
+	"affects": [
+		{
+			"name": [
+				"transmission-daemon"
+			],
+			"range": [
+				{
+					"le": "2.92_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Google Project Zero reports:</p>\n\t<blockquote cite=\"https://bugs.chromium.org/p/project-zero/issues/detail?id=1447\">\n\t  <p>The transmission bittorrent client uses a client/server\n\t    architecture, the user interface is the client which communicates\n\t    to the worker daemon using JSON RPC requests.</p>\n\t  <p>As with all HTTP RPC schemes like this, any website can send\n\t    requests to the daemon listening on localhost with XMLHttpRequest(),\n\t    but the theory is they will be ignored because clients must prove\n\t    they can read and set a specific header, X-Transmission-Session-Id.\n\t    Unfortunately, this design doesn't work because of an attack called\n\t    \"DNS rebinding\". Any website can simply create a dns name that they\n\t    are authorized to communicate with, and then make it resolve to\n\t    localhost.</p>\n\t  <p>Exploitation is simple, you could set script-torrent-done-enabled\n\t    and run any command, or set download-dir to /home/user/ and then\n\t    upload a torrent for .bashrc.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugs.chromium.org/p/project-zero/issues/detail?id=1447",
+			"https://github.com/transmission/transmission/pull/468"
+		]
+	},
+	"dates": {
+		"discovery": "2017-11-30",
+		"entry": "2018-01-14"
+	}
 }

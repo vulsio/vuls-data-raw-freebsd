@@ -1,46 +1,46 @@
 {
-  "vid": "10a6d0aa-0b1c-11e5-bb90-002590263bf5",
-  "topic": "libzmq4 -- V3 protocol handler vulnerable to downgrade attacks",
-  "affects": [
-    {
-      "name": [
-        "libzmq4"
-      ],
-      "range": [
-        {
-          "lt": "4.0.6",
-          "ge": "4.0.0"
-        },
-        {
-          "lt": "4.1.1",
-          "ge": "4.1.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Pieter Hintjens reports:</p>\n\t<blockquote cite=\"https://github.com/zeromq/libzmq/issues/1273\">\n\t  <p>It is easy to bypass the security mechanism in 4.1.0 and 4.0.5 by\n\t    sending a ZMTP v2 or earlier header. The library accepts such\n\t    connections without applying its security mechanism.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/zeromq/libzmq/issues/1273"
-    ],
-    "cvename": [
-      "CVE-2014-9721"
-    ],
-    "freebsd_pr": [
-      "ports/200502"
-    ],
-    "mlist": [
-      {
-        "text": "http://www.openwall.com/lists/oss-security/2015/05/07/8"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2014-12-04",
-    "entry": "2015-06-10",
-    "modified": "2015-09-28"
-  }
+	"vid": "10a6d0aa-0b1c-11e5-bb90-002590263bf5",
+	"topic": "libzmq4 -- V3 protocol handler vulnerable to downgrade attacks",
+	"affects": [
+		{
+			"name": [
+				"libzmq4"
+			],
+			"range": [
+				{
+					"lt": "4.0.6",
+					"ge": "4.0.0"
+				},
+				{
+					"lt": "4.1.1",
+					"ge": "4.1.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Pieter Hintjens reports:</p>\n\t<blockquote cite=\"https://github.com/zeromq/libzmq/issues/1273\">\n\t  <p>It is easy to bypass the security mechanism in 4.1.0 and 4.0.5 by\n\t    sending a ZMTP v2 or earlier header. The library accepts such\n\t    connections without applying its security mechanism.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/zeromq/libzmq/issues/1273"
+		],
+		"cvename": [
+			"CVE-2014-9721"
+		],
+		"freebsd_pr": [
+			"ports/200502"
+		],
+		"mlist": [
+			{
+				"text": "http://www.openwall.com/lists/oss-security/2015/05/07/8"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2014-12-04",
+		"entry": "2015-06-10",
+		"modified": "2015-09-28"
+	}
 }

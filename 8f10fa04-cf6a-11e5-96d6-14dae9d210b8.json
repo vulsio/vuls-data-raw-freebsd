@@ -1,58 +1,58 @@
 {
-  "vid": "8f10fa04-cf6a-11e5-96d6-14dae9d210b8",
-  "topic": "graphite2 -- code execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "graphite2"
-      ],
-      "range": [
-        {
-          "lt": "1.3.5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "silgraphite"
-      ],
-      "range": [
-        {
-          "lt": "2.3.1_4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "38.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Talos reports:</p>\n\t<blockquote cite=\"http://blog.talosintel.com/2016/02/vulnerability-spotlight-libgraphite.html\">\n\t  <ul>\n\t  <li><p>An exploitable denial of service vulnerability exists\n\t    in the font handling of Libgraphite. A specially crafted font can cause\n\t    an out-of-bounds read potentially resulting in an information leak or\n\t    denial of service.</p></li>\n\t  <li><p>A specially crafted font can cause a buffer overflow\n\t    resulting in potential code execution.</p></li>\n\t  <li><p>An exploitable NULL pointer dereference exists in the\n\t    bidirectional font handling functionality of Libgraphite. A specially\n\t    crafted font can cause a NULL pointer dereference resulting in a\n\t    crash.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://blog.talosintel.com/2016/02/vulnerability-spotlight-libgraphite.html",
-      "http://www.talosintel.com/reports/TALOS-2016-0061/",
-      "https://www.mozilla.org/security/advisories/mfsa2016-14/"
-    ],
-    "cvename": [
-      "CVE-2016-1521",
-      "CVE-2016-1522",
-      "CVE-2016-1523",
-      "CVE-2016-1526"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-05",
-    "entry": "2016-02-09",
-    "modified": "2016-03-08"
-  }
+	"vid": "8f10fa04-cf6a-11e5-96d6-14dae9d210b8",
+	"topic": "graphite2 -- code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"graphite2"
+			],
+			"range": [
+				{
+					"lt": "1.3.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"silgraphite"
+			],
+			"range": [
+				{
+					"lt": "2.3.1_4"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "38.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Talos reports:</p>\n\t<blockquote cite=\"http://blog.talosintel.com/2016/02/vulnerability-spotlight-libgraphite.html\">\n\t  <ul>\n\t  <li><p>An exploitable denial of service vulnerability exists\n\t    in the font handling of Libgraphite. A specially crafted font can cause\n\t    an out-of-bounds read potentially resulting in an information leak or\n\t    denial of service.</p></li>\n\t  <li><p>A specially crafted font can cause a buffer overflow\n\t    resulting in potential code execution.</p></li>\n\t  <li><p>An exploitable NULL pointer dereference exists in the\n\t    bidirectional font handling functionality of Libgraphite. A specially\n\t    crafted font can cause a NULL pointer dereference resulting in a\n\t    crash.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://blog.talosintel.com/2016/02/vulnerability-spotlight-libgraphite.html",
+			"http://www.talosintel.com/reports/TALOS-2016-0061/",
+			"https://www.mozilla.org/security/advisories/mfsa2016-14/"
+		],
+		"cvename": [
+			"CVE-2016-1521",
+			"CVE-2016-1522",
+			"CVE-2016-1523",
+			"CVE-2016-1526"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-05",
+		"entry": "2016-02-09",
+		"modified": "2016-03-08"
+	}
 }

@@ -1,48 +1,48 @@
 {
-  "vid": "a8de962a-cf15-11e5-805c-5453ed2e2b49",
-  "topic": "py-imaging, py-pillow -- Buffer overflow in PCD decoder",
-  "affects": [
-    {
-      "name": [
-        "py27-pillow",
-        "py33-pillow",
-        "py34-pillow",
-        "py35-pillow"
-      ],
-      "range": [
-        {
-          "lt": "2.9.0_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-imaging"
-      ],
-      "range": [
-        {
-          "lt": "1.1.7_6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Pillow maintainers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.org/en/3.1.x/releasenotes/3.1.1.html\">\n\t  <p>In all versions of Pillow, dating back at least to the last PIL\n\t    1.1.7 release, PcdDecode.c has a buffer overflow error.</p>\n\t  <p>The state.buffer for PcdDecode.c is allocated based on a 3 bytes\n\t    per pixel sizing, where PcdDecode.c wrote into the buffer assuming\n\t    4 bytes per pixel. This writes 768 bytes beyond the end of the\n\t    buffer into other Python object storage. In some cases, this causes\n\t    a segfault, in others an internal Python malloc error.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/python-pillow/Pillow/commit/ae453aa18b66af54e7ff716f4ccb33adca60afd4",
-      "https://github.com/python-pillow/Pillow/issues/568"
-    ],
-    "mlist": [
-      {
-        "text": "http://openwall.com/lists/oss-security/2016/02/02/5"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-02",
-    "entry": "2016-02-09"
-  }
+	"vid": "a8de962a-cf15-11e5-805c-5453ed2e2b49",
+	"topic": "py-imaging, py-pillow -- Buffer overflow in PCD decoder",
+	"affects": [
+		{
+			"name": [
+				"py27-pillow",
+				"py33-pillow",
+				"py34-pillow",
+				"py35-pillow"
+			],
+			"range": [
+				{
+					"lt": "2.9.0_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-imaging"
+			],
+			"range": [
+				{
+					"lt": "1.1.7_6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Pillow maintainers report:</p>\n\t<blockquote cite=\"https://pillow.readthedocs.org/en/3.1.x/releasenotes/3.1.1.html\">\n\t  <p>In all versions of Pillow, dating back at least to the last PIL\n\t    1.1.7 release, PcdDecode.c has a buffer overflow error.</p>\n\t  <p>The state.buffer for PcdDecode.c is allocated based on a 3 bytes\n\t    per pixel sizing, where PcdDecode.c wrote into the buffer assuming\n\t    4 bytes per pixel. This writes 768 bytes beyond the end of the\n\t    buffer into other Python object storage. In some cases, this causes\n\t    a segfault, in others an internal Python malloc error.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/python-pillow/Pillow/commit/ae453aa18b66af54e7ff716f4ccb33adca60afd4",
+			"https://github.com/python-pillow/Pillow/issues/568"
+		],
+		"mlist": [
+			{
+				"text": "http://openwall.com/lists/oss-security/2016/02/02/5"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-02",
+		"entry": "2016-02-09"
+	}
 }

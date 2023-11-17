@@ -1,34 +1,34 @@
 {
-  "vid": "887eb570-27d3-11ee-adba-c80aa9043978",
-  "topic": "OpenSSH -- remote code execution via a forwarded agent socket",
-  "affects": [
-    {
-      "name": [
-        "openssh-portable",
-        "openssh-portable-hpn",
-        "openssh-portable-gssapi"
-      ],
-      "range": [
-        {
-          "lt": "9.3.p2,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSSH project reports:</p>\n\t<blockquote cite=\"https://www.openssh.com/txt/release-9.3p2\">\n\t    <p>Fix CVE-2023-38408 - a condition where specific libaries loaded via\n\t    ssh-agent(1)'s PKCS#11 support could be abused to achieve remote\n\t    code execution via a forwarded agent socket if the following\n\t    conditions are met:\n\n\t    * Exploitation requires the presence of specific libraries on\n      the victim system.\n\t    * Remote exploitation requires that the agent was forwarded\n      to an attacker-controlled system.\n\n\t    Exploitation can also be prevented by starting ssh-agent(1) with an\n\t    empty PKCS#11/FIDO allowlist (ssh-agent -P '') or by configuring\n\t    an allowlist that contains only specific provider libraries.\n\n\t    This vulnerability was discovered and demonstrated to be exploitable\n\t    by the Qualys Security Advisory team.\n\t</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssh.com/txt/release-9.3p2"
-    ],
-    "cvename": [
-      "CVE-2023-38408"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-07-19",
-    "entry": "2023-07-21"
-  }
+	"vid": "887eb570-27d3-11ee-adba-c80aa9043978",
+	"topic": "OpenSSH -- remote code execution via a forwarded agent socket",
+	"affects": [
+		{
+			"name": [
+				"openssh-portable",
+				"openssh-portable-hpn",
+				"openssh-portable-gssapi"
+			],
+			"range": [
+				{
+					"lt": "9.3.p2,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSSH project reports:</p>\n\t<blockquote cite=\"https://www.openssh.com/txt/release-9.3p2\">\n\t    <p>Fix CVE-2023-38408 - a condition where specific libaries loaded via\n\t    ssh-agent(1)'s PKCS#11 support could be abused to achieve remote\n\t    code execution via a forwarded agent socket if the following\n\t    conditions are met:\n\n\t    * Exploitation requires the presence of specific libraries on\n      the victim system.\n\t    * Remote exploitation requires that the agent was forwarded\n      to an attacker-controlled system.\n\n\t    Exploitation can also be prevented by starting ssh-agent(1) with an\n\t    empty PKCS#11/FIDO allowlist (ssh-agent -P '') or by configuring\n\t    an allowlist that contains only specific provider libraries.\n\n\t    This vulnerability was discovered and demonstrated to be exploitable\n\t    by the Qualys Security Advisory team.\n\t</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssh.com/txt/release-9.3p2"
+		],
+		"cvename": [
+			"CVE-2023-38408"
+		]
+	},
+	"dates": {
+		"discovery": "2023-07-19",
+		"entry": "2023-07-21"
+	}
 }

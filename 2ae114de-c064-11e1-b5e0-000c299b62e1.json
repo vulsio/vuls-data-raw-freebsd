@@ -1,53 +1,53 @@
 {
-  "vid": "2ae114de-c064-11e1-b5e0-000c299b62e1",
-  "topic": "FreeBSD -- OpenSSL multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.4_8",
-          "ge": "7.4"
-        },
-        {
-          "lt": "8.1_10",
-          "ge": "8.1"
-        },
-        {
-          "lt": "8.2_8",
-          "ge": "8.2"
-        },
-        {
-          "lt": "8.3_2",
-          "ge": "8.3"
-        },
-        {
-          "lt": "9.0_2",
-          "ge": "9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-12:01.openssl.asc\">\n\t  <p>OpenSSL fails to clear the bytes used as block cipher padding in SSL 3.0\n\t     records when operating as a client or a server that accept SSL 3.0\n\t     handshakes.  As a result, in each record, up to 15 bytes of uninitialized\n\t     memory may be sent, encrypted, to the SSL peer.  This could include\n\t     sensitive contents of previously freed memory. [CVE-2011-4576]</p>\n\t  <p>OpenSSL support for handshake restarts for server gated cryptography (SGC)\n\t     can be used in a denial-of-service attack. [CVE-2011-4619]</p>\n\t  <p>If an application uses OpenSSL's certificate policy checking when\n\t     verifying X509 certificates, by enabling the X509_V_FLAG_POLICY_CHECK\n\t     flag, a policy check failure can lead to a double-free. [CVE-2011-4109]</p>\n\t  <p>A weakness in the OpenSSL PKCS #7 code can be exploited using\n\t     Bleichenbacher's attack on PKCS #1 v1.5 RSA padding also known as the\n\t     million message attack (MMA). [CVE-2012-0884]</p>\n\t  <p>The asn1_d2i_read_bio() function, used by the d2i_*_bio and d2i_*_fp\n\t     functions, in OpenSSL contains multiple integer errors that can cause\n\t     memory corruption when parsing encoded ASN.1 data.  This error can occur\n\t     on systems that parse untrusted ASN.1 data, such as X.509 certificates\n\t     or RSA public keys. [CVE-2012-2110]</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2011-4576",
-      "CVE-2011-4619",
-      "CVE-2011-4109",
-      "CVE-2012-0884",
-      "CVE-2012-2110"
-    ],
-    "freebsd_sa": [
-      "SA-12:01.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-05-03",
-    "entry": "2012-06-27"
-  }
+	"vid": "2ae114de-c064-11e1-b5e0-000c299b62e1",
+	"topic": "FreeBSD -- OpenSSL multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.4_8",
+					"ge": "7.4"
+				},
+				{
+					"lt": "8.1_10",
+					"ge": "8.1"
+				},
+				{
+					"lt": "8.2_8",
+					"ge": "8.2"
+				},
+				{
+					"lt": "8.3_2",
+					"ge": "8.3"
+				},
+				{
+					"lt": "9.0_2",
+					"ge": "9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-12:01.openssl.asc\">\n\t  <p>OpenSSL fails to clear the bytes used as block cipher padding in SSL 3.0\n\t     records when operating as a client or a server that accept SSL 3.0\n\t     handshakes.  As a result, in each record, up to 15 bytes of uninitialized\n\t     memory may be sent, encrypted, to the SSL peer.  This could include\n\t     sensitive contents of previously freed memory. [CVE-2011-4576]</p>\n\t  <p>OpenSSL support for handshake restarts for server gated cryptography (SGC)\n\t     can be used in a denial-of-service attack. [CVE-2011-4619]</p>\n\t  <p>If an application uses OpenSSL's certificate policy checking when\n\t     verifying X509 certificates, by enabling the X509_V_FLAG_POLICY_CHECK\n\t     flag, a policy check failure can lead to a double-free. [CVE-2011-4109]</p>\n\t  <p>A weakness in the OpenSSL PKCS #7 code can be exploited using\n\t     Bleichenbacher's attack on PKCS #1 v1.5 RSA padding also known as the\n\t     million message attack (MMA). [CVE-2012-0884]</p>\n\t  <p>The asn1_d2i_read_bio() function, used by the d2i_*_bio and d2i_*_fp\n\t     functions, in OpenSSL contains multiple integer errors that can cause\n\t     memory corruption when parsing encoded ASN.1 data.  This error can occur\n\t     on systems that parse untrusted ASN.1 data, such as X.509 certificates\n\t     or RSA public keys. [CVE-2012-2110]</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2011-4576",
+			"CVE-2011-4619",
+			"CVE-2011-4109",
+			"CVE-2012-0884",
+			"CVE-2012-2110"
+		],
+		"freebsd_sa": [
+			"SA-12:01.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2012-05-03",
+		"entry": "2012-06-27"
+	}
 }

@@ -1,34 +1,34 @@
 {
-  "vid": "4b478274-47a0-11ec-bd24-6c3be5272acd",
-  "topic": "Grafana -- XSS",
-  "affects": [
-    {
-      "name": [
-        "grafana8",
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "8.2.3",
-          "ge": "8.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2021/11/03/grafana-8.2.3-released-with-medium-severity-security-fix-cve-2021-41174-grafana-xss/\">\n\t  <p>If an attacker is able to convince a victim to visit a URL referencing a vulnerable page, arbitrary JavaScript content may be executed within the context of the victim’s browser.</p>\n\t  <p>The user visiting the malicious link must be unauthenticated, and the link must be for a page that contains the login button in the menu bar.</p>\n\t  <p>There are two ways an unauthenticated user can open a page in Grafana that contains the login button:</p>\n\t  <ul>\n\t    <li>Anonymous authentication is enabled. This means all pages in Grafana would be open for the attack.</li>\n\t    <li>The link is to an unauthenticated page. The following pages are vulnerable:\n\t      <ul>\n\t\t<li><code>/dashboard-solo/snapshot/*</code></li>\n\t\t<li><code>/dashboard/snapshot/*</code></li>\n\t\t<li><code>/invite/:code</code></li>\n\t      </ul>\n\t    </li>\n\t  </ul>\n\t  <p>The url has to be crafted to exploit AngularJS rendering and contain the interpolation binding for AngularJS expressions. AngularJS uses double curly braces for interpolation binding: <code>{{ }}</code></p>\n\t  <p>An example of an expression would be: <code>{{constructor.constructor(‘alert(1)’)()}}</code>. This can be included in the link URL like this:</p>\n\t  <p><a href=\"https://play.grafana.org/dashboard/snapshot/%7B%7Bconstructor.constructor('alert(1)')()%7D%7D?orgId=1\">https://play.grafana.org/dashboard/snapshot/%7B%7Bconstructor.constructor('alert(1)')()%7D%7D?orgId=1</a></p>\n\t  <p>When the user follows the link and the page renders, the login button will contain the original link with a query parameter to force a redirect to the login page. The URL is not validated, and the AngularJS rendering engine will execute the JavaScript expression contained in the URL.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://grafana.com/blog/2021/11/03/grafana-8.2.3-released-with-medium-severity-security-fix-cve-2021-41174-grafana-xss/"
-    ],
-    "cvename": [
-      "CVE-2021-41174"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-10-21",
-    "entry": "2021-12-11"
-  }
+	"vid": "4b478274-47a0-11ec-bd24-6c3be5272acd",
+	"topic": "Grafana -- XSS",
+	"affects": [
+		{
+			"name": [
+				"grafana8",
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "8.2.3",
+					"ge": "8.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2021/11/03/grafana-8.2.3-released-with-medium-severity-security-fix-cve-2021-41174-grafana-xss/\">\n\t  <p>If an attacker is able to convince a victim to visit a URL referencing a vulnerable page, arbitrary JavaScript content may be executed within the context of the victim’s browser.</p>\n\t  <p>The user visiting the malicious link must be unauthenticated, and the link must be for a page that contains the login button in the menu bar.</p>\n\t  <p>There are two ways an unauthenticated user can open a page in Grafana that contains the login button:</p>\n\t  <ul>\n\t    <li>Anonymous authentication is enabled. This means all pages in Grafana would be open for the attack.</li>\n\t    <li>The link is to an unauthenticated page. The following pages are vulnerable:\n\t      <ul>\n\t\t<li><code>/dashboard-solo/snapshot/*</code></li>\n\t\t<li><code>/dashboard/snapshot/*</code></li>\n\t\t<li><code>/invite/:code</code></li>\n\t      </ul>\n\t    </li>\n\t  </ul>\n\t  <p>The url has to be crafted to exploit AngularJS rendering and contain the interpolation binding for AngularJS expressions. AngularJS uses double curly braces for interpolation binding: <code>{{ }}</code></p>\n\t  <p>An example of an expression would be: <code>{{constructor.constructor(‘alert(1)’)()}}</code>. This can be included in the link URL like this:</p>\n\t  <p><a href=\"https://play.grafana.org/dashboard/snapshot/%7B%7Bconstructor.constructor('alert(1)')()%7D%7D?orgId=1\">https://play.grafana.org/dashboard/snapshot/%7B%7Bconstructor.constructor('alert(1)')()%7D%7D?orgId=1</a></p>\n\t  <p>When the user follows the link and the page renders, the login button will contain the original link with a query parameter to force a redirect to the login page. The URL is not validated, and the AngularJS rendering engine will execute the JavaScript expression contained in the URL.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://grafana.com/blog/2021/11/03/grafana-8.2.3-released-with-medium-severity-security-fix-cve-2021-41174-grafana-xss/"
+		],
+		"cvename": [
+			"CVE-2021-41174"
+		]
+	},
+	"dates": {
+		"discovery": "2021-10-21",
+		"entry": "2021-12-11"
+	}
 }

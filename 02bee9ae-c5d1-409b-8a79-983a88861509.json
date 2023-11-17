@@ -1,33 +1,33 @@
 {
-  "vid": "02bee9ae-c5d1-409b-8a79-983a88861509",
-  "topic": "libraw -- Out-of-bounds Read",
-  "affects": [
-    {
-      "name": [
-        "libraw"
-      ],
-      "range": [
-        {
-          "le": "0.18.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>libraw developers report:</p>\n\t<blockquote cite=\"https://github.com/LibRaw/LibRaw/commit/d13e8f6d1e987b7491182040a188c16a395f1d21\">\n\t  <p>In LibRaw through 0.18.4, an out of bounds read flaw related to kodak_65000_load_raw has been reported in dcraw/dcraw.c and internal/dcraw_common.cpp. An attacker could possibly exploit this flaw to disclose potentially sensitive memory or cause an application crash.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/LibRaw/LibRaw/commit/d13e8f6d1e987b7491182040a188c16a395f1d21",
-      "https://github.com/LibRaw/LibRaw/issues/101"
-    ],
-    "cvename": [
-      "CVE-2017-14608"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-20",
-    "entry": "2017-09-28"
-  }
+	"vid": "02bee9ae-c5d1-409b-8a79-983a88861509",
+	"topic": "libraw -- Out-of-bounds Read",
+	"affects": [
+		{
+			"name": [
+				"libraw"
+			],
+			"range": [
+				{
+					"le": "0.18.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>libraw developers report:</p>\n\t<blockquote cite=\"https://github.com/LibRaw/LibRaw/commit/d13e8f6d1e987b7491182040a188c16a395f1d21\">\n\t  <p>In LibRaw through 0.18.4, an out of bounds read flaw related to kodak_65000_load_raw has been reported in dcraw/dcraw.c and internal/dcraw_common.cpp. An attacker could possibly exploit this flaw to disclose potentially sensitive memory or cause an application crash.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/LibRaw/LibRaw/commit/d13e8f6d1e987b7491182040a188c16a395f1d21",
+			"https://github.com/LibRaw/LibRaw/issues/101"
+		],
+		"cvename": [
+			"CVE-2017-14608"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-20",
+		"entry": "2017-09-28"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "39a30e0a-0c34-431b-9dce-b87cab02412a",
-  "topic": "Sanitize -- XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rubygem-sanitize"
-      ],
-      "range": [
-        {
-          "lt": "2.6.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Sanitize release:</p>\n\t<blockquote cite=\"https://github.com/rgrove/sanitize/releases\">\n\t  <p>Fixed an HTML injection vulnerability that could allow XSS.</p>\n\t  <p>When Sanitize &lt;= 4.6.2 is used in combination with libxml2 &gt;= 2.9.2,\n\t    a specially crafted HTML fragment can cause libxml2 to generate\n\t    improperly escaped output, allowing non-whitelisted attributes to be\n\t    used on whitelisted elements.</p>\n\t  <p>Sanitize now performs additional escaping on affected attributes to\n\t  prevent this.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/rgrove/sanitize/releases",
-      "https://github.com/rgrove/sanitize/issues/176"
-    ],
-    "cvename": [
-      "CVE-2018-3740"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-03-19",
-    "entry": "2018-03-21"
-  }
+	"vid": "39a30e0a-0c34-431b-9dce-b87cab02412a",
+	"topic": "Sanitize -- XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rubygem-sanitize"
+			],
+			"range": [
+				{
+					"lt": "2.6.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Sanitize release:</p>\n\t<blockquote cite=\"https://github.com/rgrove/sanitize/releases\">\n\t  <p>Fixed an HTML injection vulnerability that could allow XSS.</p>\n\t  <p>When Sanitize &lt;= 4.6.2 is used in combination with libxml2 &gt;= 2.9.2,\n\t    a specially crafted HTML fragment can cause libxml2 to generate\n\t    improperly escaped output, allowing non-whitelisted attributes to be\n\t    used on whitelisted elements.</p>\n\t  <p>Sanitize now performs additional escaping on affected attributes to\n\t  prevent this.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/rgrove/sanitize/releases",
+			"https://github.com/rgrove/sanitize/issues/176"
+		],
+		"cvename": [
+			"CVE-2018-3740"
+		]
+	},
+	"dates": {
+		"discovery": "2018-03-19",
+		"entry": "2018-03-21"
+	}
 }

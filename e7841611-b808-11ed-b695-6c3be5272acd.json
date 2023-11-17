@@ -1,65 +1,65 @@
 {
-  "vid": "e7841611-b808-11ed-b695-6c3be5272acd",
-  "topic": "Grafana -- Stored XSS in TraceView panel",
-  "affects": [
-    {
-      "name": [
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "8.5.21"
-        },
-        {
-          "lt": "9.2.13",
-          "ge": "9.0.0"
-        },
-        {
-          "lt": "9.3.8",
-          "ge": "9.3.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana8"
-      ],
-      "range": [
-        {
-          "lt": "8.5.21"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.2.13",
-          "ge": "9.0.0"
-        },
-        {
-          "lt": "9.3.8",
-          "ge": "9.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/02/28/grafana-security-release-new-versions-with-security-fixes-for-cve-2023-0594-cve-2023-0507-and-cve-2023-22462/\">\n\t  <p>During an internal audit of Grafana on January 30, a member\n\t  of the engineering team found a stored XSS vulnerability affecting\n\t  the <code>TraceView</code> panel.</p>\n\t  <p>The stored XSS vulnerability was possible because the value of a span’s\n\t  attributes/resources were not properly sanitized, and this will be rendered\n\t  when the span’s attributes/resources are expanded.</p>\n\t  <p>The CVSS score for this vulnerability is 7.3 High\n\t  (CVSS:7.3/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://grafana.com/blog/2023/02/28/grafana-security-release-new-versions-with-security-fixes-for-cve-2023-0594-cve-2023-0507-and-cve-2023-22462/"
-    ],
-    "cvename": [
-      "CVE-2023-0594"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-01-30",
-    "entry": "2023-03-01"
-  }
+	"vid": "e7841611-b808-11ed-b695-6c3be5272acd",
+	"topic": "Grafana -- Stored XSS in TraceView panel",
+	"affects": [
+		{
+			"name": [
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "8.5.21"
+				},
+				{
+					"lt": "9.2.13",
+					"ge": "9.0.0"
+				},
+				{
+					"lt": "9.3.8",
+					"ge": "9.3.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana8"
+			],
+			"range": [
+				{
+					"lt": "8.5.21"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.2.13",
+					"ge": "9.0.0"
+				},
+				{
+					"lt": "9.3.8",
+					"ge": "9.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/02/28/grafana-security-release-new-versions-with-security-fixes-for-cve-2023-0594-cve-2023-0507-and-cve-2023-22462/\">\n\t  <p>During an internal audit of Grafana on January 30, a member\n\t  of the engineering team found a stored XSS vulnerability affecting\n\t  the <code>TraceView</code> panel.</p>\n\t  <p>The stored XSS vulnerability was possible because the value of a span’s\n\t  attributes/resources were not properly sanitized, and this will be rendered\n\t  when the span’s attributes/resources are expanded.</p>\n\t  <p>The CVSS score for this vulnerability is 7.3 High\n\t  (CVSS:7.3/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://grafana.com/blog/2023/02/28/grafana-security-release-new-versions-with-security-fixes-for-cve-2023-0594-cve-2023-0507-and-cve-2023-22462/"
+		],
+		"cvename": [
+			"CVE-2023-0594"
+		]
+	},
+	"dates": {
+		"discovery": "2023-01-30",
+		"entry": "2023-03-01"
+	}
 }

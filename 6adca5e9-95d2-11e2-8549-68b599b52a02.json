@@ -1,44 +1,44 @@
 {
-  "vid": "6adca5e9-95d2-11e2-8549-68b599b52a02",
-  "topic": "firebird -- Remote Stack Buffer Overflow",
-  "affects": [
-    {
-      "name": [
-        "firebird25-server"
-      ],
-      "range": [
-        {
-          "ge": "2.5.0",
-          "le": "2.5.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firebird21-server"
-      ],
-      "range": [
-        {
-          "ge": "2.1.0",
-          "le": "2.1.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Firebird Project reports:</p>\n\t<blockquote cite=\"http://tracker.firebirdsql.org/browse/CORE-4058\">\n\t  <p>The FirebirdSQL server is vulnerable to a stack buffer overflow\n\t     that can be triggered when an unauthenticated user sends a\n\t     specially crafted packet. The  result can lead to remote code\n\t     execution as the user which runs the FirebirdSQL server.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://gist.github.com/zeroSteiner/85daef257831d904479c"
-    ],
-    "cvename": [
-      "CVE-2013-2492"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-01-31",
-    "entry": "2013-03-06"
-  }
+	"vid": "6adca5e9-95d2-11e2-8549-68b599b52a02",
+	"topic": "firebird -- Remote Stack Buffer Overflow",
+	"affects": [
+		{
+			"name": [
+				"firebird25-server"
+			],
+			"range": [
+				{
+					"ge": "2.5.0",
+					"le": "2.5.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"firebird21-server"
+			],
+			"range": [
+				{
+					"ge": "2.1.0",
+					"le": "2.1.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Firebird Project reports:</p>\n\t<blockquote cite=\"http://tracker.firebirdsql.org/browse/CORE-4058\">\n\t  <p>The FirebirdSQL server is vulnerable to a stack buffer overflow\n\t     that can be triggered when an unauthenticated user sends a\n\t     specially crafted packet. The  result can lead to remote code\n\t     execution as the user which runs the FirebirdSQL server.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://gist.github.com/zeroSteiner/85daef257831d904479c"
+		],
+		"cvename": [
+			"CVE-2013-2492"
+		]
+	},
+	"dates": {
+		"discovery": "2013-01-31",
+		"entry": "2013-03-06"
+	}
 }

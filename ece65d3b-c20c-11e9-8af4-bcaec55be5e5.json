@@ -1,42 +1,42 @@
 {
-  "vid": "ece65d3b-c20c-11e9-8af4-bcaec55be5e5",
-  "topic": "webmin -- unauthenticated remote code execution",
-  "affects": [
-    {
-      "name": [
-        "webmin"
-      ],
-      "range": [
-        {
-          "lt": "1.930"
-        }
-      ]
-    },
-    {
-      "name": [
-        "usermin"
-      ],
-      "range": [
-        {
-          "lt": "1.780"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Joe Cooper reports:</p>\n\t<blockquote cite=\"https://virtualmin.com/node/66890\">\n\t  <p>I've rolled out Webmin version 1.930 and Usermin version 1.780\n\t  for all repositories. This release includes several security\n\t  fixes, including one potentially serious one caused by malicious\n\t  code inserted into Webmin and Usermin at some point on our build\n\t  infrastructure. We're still investigating how and when, but the\n\t  exploitable code has never existed in our github repositories, so\n\t  we've rebuilt from git source on new infrastructure (and checked\n\t  to be sure the result does not contain the malicious code).</p>\n\n\t  <p>I don't have a changelog for these releases yet, but I wanted\n\t  to announce them immediately due to the severity of this issue.\n\t  To exploit the malicious code, your Webmin installation must have\n\t  Webmin -&gt; Webmin Configuration -&gt; Authentication -&gt; Password\n\t  expiry policy set to Prompt users with expired passwords to enter\n\t  a new one. This option is not set by default, but if it is set,\n\t  it allows remote code execution.</p>\n\n\t  <p>This release addresses CVE-2019-15107, which was disclosed\n\t  earlier today. It also addresses a handful of XSS issues that we\n\t  were notified about, and a bounty was awarded to the researcher\n\t  (a different one) who found them.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://virtualmin.com/node/66890"
-    ],
-    "cvename": [
-      "CVE-2019-15107"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-17",
-    "entry": "2019-08-17"
-  }
+	"vid": "ece65d3b-c20c-11e9-8af4-bcaec55be5e5",
+	"topic": "webmin -- unauthenticated remote code execution",
+	"affects": [
+		{
+			"name": [
+				"webmin"
+			],
+			"range": [
+				{
+					"lt": "1.930"
+				}
+			]
+		},
+		{
+			"name": [
+				"usermin"
+			],
+			"range": [
+				{
+					"lt": "1.780"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Joe Cooper reports:</p>\n\t<blockquote cite=\"https://virtualmin.com/node/66890\">\n\t  <p>I've rolled out Webmin version 1.930 and Usermin version 1.780\n\t  for all repositories. This release includes several security\n\t  fixes, including one potentially serious one caused by malicious\n\t  code inserted into Webmin and Usermin at some point on our build\n\t  infrastructure. We're still investigating how and when, but the\n\t  exploitable code has never existed in our github repositories, so\n\t  we've rebuilt from git source on new infrastructure (and checked\n\t  to be sure the result does not contain the malicious code).</p>\n\n\t  <p>I don't have a changelog for these releases yet, but I wanted\n\t  to announce them immediately due to the severity of this issue.\n\t  To exploit the malicious code, your Webmin installation must have\n\t  Webmin -&gt; Webmin Configuration -&gt; Authentication -&gt; Password\n\t  expiry policy set to Prompt users with expired passwords to enter\n\t  a new one. This option is not set by default, but if it is set,\n\t  it allows remote code execution.</p>\n\n\t  <p>This release addresses CVE-2019-15107, which was disclosed\n\t  earlier today. It also addresses a handful of XSS issues that we\n\t  were notified about, and a bounty was awarded to the researcher\n\t  (a different one) who found them.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://virtualmin.com/node/66890"
+		],
+		"cvename": [
+			"CVE-2019-15107"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-17",
+		"entry": "2019-08-17"
+	}
 }

@@ -1,38 +1,38 @@
 {
-  "vid": "33edcc56-83f2-11ea-92ab-00163e433440",
-  "topic": "FreeBSD -- ipfw invalid mbuf handling",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.1_4",
-          "ge": "12.1"
-        },
-        {
-          "lt": "11.3_8",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Incomplete packet data validation may result in accessing\n\tout-of-bounds memory (CVE-2019-5614) or may access memory after it has\n\tbeen freed (CVE-2019-15874).</p>\n\t<h1>Impact:</h1>\n\t<p>Access to out of bounds or freed mbuf data can lead to a kernel panic or\n\tother unpredictable results.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-5614",
-      "CVE-2019-15874"
-    ],
-    "freebsd_sa": [
-      "SA-20:10.ipfw"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-04-21",
-    "entry": "2020-04-21"
-  }
+	"vid": "33edcc56-83f2-11ea-92ab-00163e433440",
+	"topic": "FreeBSD -- ipfw invalid mbuf handling",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.1_4",
+					"ge": "12.1"
+				},
+				{
+					"lt": "11.3_8",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Incomplete packet data validation may result in accessing\n\tout-of-bounds memory (CVE-2019-5614) or may access memory after it has\n\tbeen freed (CVE-2019-15874).</p>\n\t<h1>Impact:</h1>\n\t<p>Access to out of bounds or freed mbuf data can lead to a kernel panic or\n\tother unpredictable results.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-5614",
+			"CVE-2019-15874"
+		],
+		"freebsd_sa": [
+			"SA-20:10.ipfw"
+		]
+	},
+	"dates": {
+		"discovery": "2020-04-21",
+		"entry": "2020-04-21"
+	}
 }

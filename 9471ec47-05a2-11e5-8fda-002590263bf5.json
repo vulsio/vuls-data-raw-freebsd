@@ -1,37 +1,37 @@
 {
-  "vid": "9471ec47-05a2-11e5-8fda-002590263bf5",
-  "topic": "proxychains-ng -- current path as the first directory for the library search path",
-  "affects": [
-    {
-      "name": [
-        "proxychains-ng"
-      ],
-      "range": [
-        {
-          "lt": "4.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mamoru TASAKA reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q2/430\">\n\t  <p>proxychains4 sets LD_PRELOAD to dlopen libproxychains4.so\n\t    and execvp() the arbitrary command user has specified.\n\t    proxychains4 sets the current directory as the first path\n\t    to search libproxychains4.so</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2015-3887"
-    ],
-    "mlist": [
-      {
-        "text": "http://openwall.com/lists/oss-security/2015/05/12/6"
-      },
-      {
-        "text": "http://seclists.org/oss-sec/2015/q2/430"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2015-05-11",
-    "entry": "2015-05-29"
-  }
+	"vid": "9471ec47-05a2-11e5-8fda-002590263bf5",
+	"topic": "proxychains-ng -- current path as the first directory for the library search path",
+	"affects": [
+		{
+			"name": [
+				"proxychains-ng"
+			],
+			"range": [
+				{
+					"lt": "4.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mamoru TASAKA reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q2/430\">\n\t  <p>proxychains4 sets LD_PRELOAD to dlopen libproxychains4.so\n\t    and execvp() the arbitrary command user has specified.\n\t    proxychains4 sets the current directory as the first path\n\t    to search libproxychains4.so</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2015-3887"
+		],
+		"mlist": [
+			{
+				"text": "http://openwall.com/lists/oss-security/2015/05/12/6"
+			},
+			{
+				"text": "http://seclists.org/oss-sec/2015/q2/430"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2015-05-11",
+		"entry": "2015-05-29"
+	}
 }

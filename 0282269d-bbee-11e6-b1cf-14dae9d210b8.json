@@ -1,50 +1,50 @@
 {
-  "vid": "0282269d-bbee-11e6-b1cf-14dae9d210b8",
-  "topic": "FreeBSD -- link_ntoa(3) buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.0_5",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.3_14",
-          "ge": "10.3"
-        },
-        {
-          "lt": "10.2_27",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_44",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_52",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A specially crafted argument can trigger a static buffer\n\toverflow in the library, with possibility to rewrite following\n\tstatic buffers that belong to other library functions.</p>\n\t<h1>Impact:</h1>\n\t<p>Due to very limited use of the function in the existing\n\tapplications, and limited length of the overflow, exploitation\n\tof the vulnerability does not seem feasible. None of the\n\tutilities and daemons in the base system are known to be\n\tvulnerable. However, careful review of third party software\n\tthat may use the function was not performed.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-6559"
-    ],
-    "freebsd_sa": [
-      "SA-16:37.libc"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-12-06",
-    "entry": "2016-12-06",
-    "modified": "2016-12-08"
-  }
+	"vid": "0282269d-bbee-11e6-b1cf-14dae9d210b8",
+	"topic": "FreeBSD -- link_ntoa(3) buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.0_5",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.3_14",
+					"ge": "10.3"
+				},
+				{
+					"lt": "10.2_27",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_44",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_52",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A specially crafted argument can trigger a static buffer\n\toverflow in the library, with possibility to rewrite following\n\tstatic buffers that belong to other library functions.</p>\n\t<h1>Impact:</h1>\n\t<p>Due to very limited use of the function in the existing\n\tapplications, and limited length of the overflow, exploitation\n\tof the vulnerability does not seem feasible. None of the\n\tutilities and daemons in the base system are known to be\n\tvulnerable. However, careful review of third party software\n\tthat may use the function was not performed.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-6559"
+		],
+		"freebsd_sa": [
+			"SA-16:37.libc"
+		]
+	},
+	"dates": {
+		"discovery": "2016-12-06",
+		"entry": "2016-12-06",
+		"modified": "2016-12-08"
+	}
 }

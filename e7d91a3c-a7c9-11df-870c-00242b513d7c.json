@@ -1,33 +1,33 @@
 {
-  "vid": "e7d91a3c-a7c9-11df-870c-00242b513d7c",
-  "topic": "vlc -- invalid id3v2 tags may lead to invalid memory dereferencing",
-  "affects": [
-    {
-      "name": [
-        "vlc"
-      ],
-      "range": [
-        {
-          "lt": "1.1.2_1,3",
-          "gt": "0.9.0,3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>VideoLAN project reports:</p>\n\t<blockquote cite=\"http://www.videolan.org/security/sa1004.html\">\n\t  <p>VLC fails to perform sufficient input validation when trying to\n\t    extract some meta-informations about input media through ID3v2\n\t    tags. In the failure case, VLC attempt dereference an invalid\n\t    memory address, and a crash will ensure.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.videolan.org/security/sa1004.html"
-    ],
-    "cvename": [
-      "CVE-2010-2937"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-07-29",
-    "entry": "2010-08-14"
-  }
+	"vid": "e7d91a3c-a7c9-11df-870c-00242b513d7c",
+	"topic": "vlc -- invalid id3v2 tags may lead to invalid memory dereferencing",
+	"affects": [
+		{
+			"name": [
+				"vlc"
+			],
+			"range": [
+				{
+					"lt": "1.1.2_1,3",
+					"gt": "0.9.0,3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>VideoLAN project reports:</p>\n\t<blockquote cite=\"http://www.videolan.org/security/sa1004.html\">\n\t  <p>VLC fails to perform sufficient input validation when trying to\n\t    extract some meta-informations about input media through ID3v2\n\t    tags. In the failure case, VLC attempt dereference an invalid\n\t    memory address, and a crash will ensure.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.videolan.org/security/sa1004.html"
+		],
+		"cvename": [
+			"CVE-2010-2937"
+		]
+	},
+	"dates": {
+		"discovery": "2010-07-29",
+		"entry": "2010-08-14"
+	}
 }

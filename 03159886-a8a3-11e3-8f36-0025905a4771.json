@@ -1,47 +1,47 @@
 {
-  "vid": "03159886-a8a3-11e3-8f36-0025905a4771",
-  "topic": "asterisk -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "asterisk11"
-      ],
-      "range": [
-        {
-          "lt": "11.8.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.26.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/security\">\n\t  <p>Stack Overflow in HTTP Processing of Cookie Headers. Sending a HTTP\n\t    request that is handled by Asterisk with a large number of Cookie\n\t    headers could overflow the stack. You could even exhaust memory if you\n\t    sent an unlimited number of headers in the request.</p>\n\t  <p>Denial of Service Through File Descriptor Exhaustion with chan_sip\n\t    Session-Timers. An attacker can use all available file descriptors\n\t    using SIP INVITE requests. Asterisk will respond with code 400, 420,\n\t    or 422 for INVITEs meeting this criteria.\n\t    Each INVITE meeting these conditions will leak a channel and several\n\t    file descriptors. The file descriptors cannot be released without\n\t    restarting Asterisk which may allow intrusion detection systems to be\n\t    bypassed by sending the requests slowly.</p>\n\t  <p>Remote Crash Vulnerability in PJSIP channel driver. A remotely\n\t    exploitable crash vulnerability exists in the PJSIP channel driver if\n\t    the \"qualify_frequency\" configuration option is enabled on an AOR and\n\t    the remote SIP server challenges for authentication of the resulting\n\t    OPTIONS request. The response handling code wrongly assumes that a\n\t    PJSIP endpoint will always be associated with an outgoing request which\n\t    is incorrect.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2014-001.pdf",
-      "http://downloads.asterisk.org/pub/security/AST-2014-002.pdf",
-      "http://downloads.asterisk.org/pub/security/AST-2014-003.pdf",
-      "https://www.asterisk.org/security"
-    ],
-    "cvename": [
-      "CVE-2014-2286",
-      "CVE-2014-2287",
-      "CVE-2014-2288"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-03-10",
-    "entry": "2014-03-10"
-  }
+	"vid": "03159886-a8a3-11e3-8f36-0025905a4771",
+	"topic": "asterisk -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"asterisk11"
+			],
+			"range": [
+				{
+					"lt": "11.8.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk18"
+			],
+			"range": [
+				{
+					"lt": "1.8.26.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"https://www.asterisk.org/security\">\n\t  <p>Stack Overflow in HTTP Processing of Cookie Headers. Sending a HTTP\n\t    request that is handled by Asterisk with a large number of Cookie\n\t    headers could overflow the stack. You could even exhaust memory if you\n\t    sent an unlimited number of headers in the request.</p>\n\t  <p>Denial of Service Through File Descriptor Exhaustion with chan_sip\n\t    Session-Timers. An attacker can use all available file descriptors\n\t    using SIP INVITE requests. Asterisk will respond with code 400, 420,\n\t    or 422 for INVITEs meeting this criteria.\n\t    Each INVITE meeting these conditions will leak a channel and several\n\t    file descriptors. The file descriptors cannot be released without\n\t    restarting Asterisk which may allow intrusion detection systems to be\n\t    bypassed by sending the requests slowly.</p>\n\t  <p>Remote Crash Vulnerability in PJSIP channel driver. A remotely\n\t    exploitable crash vulnerability exists in the PJSIP channel driver if\n\t    the \"qualify_frequency\" configuration option is enabled on an AOR and\n\t    the remote SIP server challenges for authentication of the resulting\n\t    OPTIONS request. The response handling code wrongly assumes that a\n\t    PJSIP endpoint will always be associated with an outgoing request which\n\t    is incorrect.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2014-001.pdf",
+			"http://downloads.asterisk.org/pub/security/AST-2014-002.pdf",
+			"http://downloads.asterisk.org/pub/security/AST-2014-003.pdf",
+			"https://www.asterisk.org/security"
+		],
+		"cvename": [
+			"CVE-2014-2286",
+			"CVE-2014-2287",
+			"CVE-2014-2288"
+		]
+	},
+	"dates": {
+		"discovery": "2014-03-10",
+		"entry": "2014-03-10"
+	}
 }

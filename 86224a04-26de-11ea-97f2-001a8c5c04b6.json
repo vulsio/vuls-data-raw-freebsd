@@ -1,36 +1,36 @@
 {
-  "vid": "86224a04-26de-11ea-97f2-001a8c5c04b6",
-  "topic": "cacti -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "cacti"
-      ],
-      "range": [
-        {
-          "lt": "1.2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The cacti developers reports:</p>\n\t<blockquote cite=\"https://github.com/Cacti/cacti/releases/tag/release%2F1.2.8\">\n\t  <p>\n\t    When viewing graphs, some input variables are not properly checked\n\t    (SQL injection possible).\n\t  </p>\n\t  <p>\n\t    Multiple instances of lib/functions.php are affected by unsafe\n\t    deserialization of user-controlled data to populate arrays. An\n\t    authenticated attacker could use this to influence object data\n\t    values and control actions taken by Cacti or potentially cause\n\t    memory corruption in the PHP module.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/Cacti/cacti/releases/tag/release%2F1.2.8"
-    ],
-    "cvename": [
-      "CVE-2019-17357",
-      "CVE-2019-17358"
-    ],
-    "freebsd_pr": [
-      "ports/242834"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-10-12",
-    "entry": "2020-01-06"
-  }
+	"vid": "86224a04-26de-11ea-97f2-001a8c5c04b6",
+	"topic": "cacti -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"cacti"
+			],
+			"range": [
+				{
+					"lt": "1.2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The cacti developers reports:</p>\n\t<blockquote cite=\"https://github.com/Cacti/cacti/releases/tag/release%2F1.2.8\">\n\t  <p>\n\t    When viewing graphs, some input variables are not properly checked\n\t    (SQL injection possible).\n\t  </p>\n\t  <p>\n\t    Multiple instances of lib/functions.php are affected by unsafe\n\t    deserialization of user-controlled data to populate arrays. An\n\t    authenticated attacker could use this to influence object data\n\t    values and control actions taken by Cacti or potentially cause\n\t    memory corruption in the PHP module.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/Cacti/cacti/releases/tag/release%2F1.2.8"
+		],
+		"cvename": [
+			"CVE-2019-17357",
+			"CVE-2019-17358"
+		],
+		"freebsd_pr": [
+			"ports/242834"
+		]
+	},
+	"dates": {
+		"discovery": "2019-10-12",
+		"entry": "2020-01-06"
+	}
 }

@@ -1,41 +1,41 @@
 {
-  "vid": "4d3d4f64-f680-11e9-a87f-a4badb2f4699",
-  "topic": "FreeBSD -- IPv6 remote Denial-of-Service",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.0_10",
-          "ge": "12.0"
-        },
-        {
-          "lt": "11.3_3",
-          "ge": "11.3"
-        },
-        {
-          "lt": "11.2_14",
-          "ge": "11.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due do a missing check in the code of m_pulldown(9) data\n\treturned may not be contiguous as requested by the caller.</p>\n\t<h1>Impact:</h1>\n\t<p>Extra checks in the IPv6 code catch the error condition\n\tand trigger a kernel panic leading to a remote DoS\n\t(denial-of-service) attack with certain Ethernet interfaces.\n\tAt this point it is unknown if any other than the IPv6 code\n\tpaths can trigger a similar condition.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-5611"
-    ],
-    "freebsd_sa": [
-      "SA-19:22.mbuf"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-20",
-    "entry": "2019-10-24"
-  }
+	"vid": "4d3d4f64-f680-11e9-a87f-a4badb2f4699",
+	"topic": "FreeBSD -- IPv6 remote Denial-of-Service",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.0_10",
+					"ge": "12.0"
+				},
+				{
+					"lt": "11.3_3",
+					"ge": "11.3"
+				},
+				{
+					"lt": "11.2_14",
+					"ge": "11.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due do a missing check in the code of m_pulldown(9) data\n\treturned may not be contiguous as requested by the caller.</p>\n\t<h1>Impact:</h1>\n\t<p>Extra checks in the IPv6 code catch the error condition\n\tand trigger a kernel panic leading to a remote DoS\n\t(denial-of-service) attack with certain Ethernet interfaces.\n\tAt this point it is unknown if any other than the IPv6 code\n\tpaths can trigger a similar condition.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-5611"
+		],
+		"freebsd_sa": [
+			"SA-19:22.mbuf"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-20",
+		"entry": "2019-10-24"
+	}
 }

@@ -1,50 +1,50 @@
 {
-  "vid": "8cfb6f42-d2b0-11da-a672-000e0c2e438a",
-  "topic": "p5-DBI -- insecure temporary file creation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "p5-DBI-137"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "p5-DBI"
-      ],
-      "range": [
-        {
-          "lt": "1.37_1"
-        },
-        {
-          "lt": "1.48",
-          "ge": "1.38"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Javier Fernández-Sanguino Peña reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-658\">\n\t  <p>The DBI library, the Perl5 database interface, creates a\n\t    temporary PID file in an insecure manner.  This can be\n\t    exploited by a malicious user to overwrite arbitrary files\n\t    owned by the person executing the parts of the library.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.debian.org/security/2005/dsa-658"
-    ],
-    "cvename": [
-      "CAN-2005-0077"
-    ],
-    "bid": [
-      "12360"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-25",
-    "entry": "2006-04-23",
-    "modified": "2006-05-11"
-  }
+	"vid": "8cfb6f42-d2b0-11da-a672-000e0c2e438a",
+	"topic": "p5-DBI -- insecure temporary file creation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"p5-DBI-137"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"p5-DBI"
+			],
+			"range": [
+				{
+					"lt": "1.37_1"
+				},
+				{
+					"lt": "1.48",
+					"ge": "1.38"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Javier Fernández-Sanguino Peña reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-658\">\n\t  <p>The DBI library, the Perl5 database interface, creates a\n\t    temporary PID file in an insecure manner.  This can be\n\t    exploited by a malicious user to overwrite arbitrary files\n\t    owned by the person executing the parts of the library.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.debian.org/security/2005/dsa-658"
+		],
+		"cvename": [
+			"CAN-2005-0077"
+		],
+		"bid": [
+			"12360"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-25",
+		"entry": "2006-04-23",
+		"modified": "2006-05-11"
+	}
 }

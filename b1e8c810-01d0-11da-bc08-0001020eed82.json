@@ -1,37 +1,37 @@
 {
-  "vid": "b1e8c810-01d0-11da-bc08-0001020eed82",
-  "topic": "sylpheed -- MIME-encoded file name buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "sylpheed",
-        "sylpheed-gtk2",
-        "sylpheed-claws"
-      ],
-      "range": [
-        {
-          "lt": "1.0.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Sylpheed is vulnerable to a buffer overflow when displaying\n\t  emails with attachments that have MIME-encoded file names.\n\t  This could be used by a remote attacker to crash sylpheed\n\t  potentially allowing execution of arbitrary code with the\n\t  permissions of the user running sylpheed.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://sylpheed.good-day.net/changelog.html.en"
-    ],
-    "cvename": [
-      "CVE-2005-0926"
-    ],
-    "bid": [
-      "12934"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-03-29",
-    "entry": "2005-07-31"
-  }
+	"vid": "b1e8c810-01d0-11da-bc08-0001020eed82",
+	"topic": "sylpheed -- MIME-encoded file name buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"sylpheed",
+				"sylpheed-gtk2",
+				"sylpheed-claws"
+			],
+			"range": [
+				{
+					"lt": "1.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Sylpheed is vulnerable to a buffer overflow when displaying\n\t  emails with attachments that have MIME-encoded file names.\n\t  This could be used by a remote attacker to crash sylpheed\n\t  potentially allowing execution of arbitrary code with the\n\t  permissions of the user running sylpheed.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://sylpheed.good-day.net/changelog.html.en"
+		],
+		"cvename": [
+			"CVE-2005-0926"
+		],
+		"bid": [
+			"12934"
+		]
+	},
+	"dates": {
+		"discovery": "2005-03-29",
+		"entry": "2005-07-31"
+	}
 }

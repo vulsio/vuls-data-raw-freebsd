@@ -1,36 +1,36 @@
 {
-  "vid": "29edd807-438d-11d9-8bb9-00065be4b5b6",
-  "topic": "mysql -- FTS request denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mysql-server"
-      ],
-      "range": [
-        {
-          "lt": "4.0.21",
-          "ge": "4.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t <p>A special crafted MySQL FTS request can cause the server to crash.\n\t Malicious MySQL users can abuse this bug in a denial of service\n\t attack against systems running an affected MySQL daemon.</p>\n\t <p>Note that because this bug is related to the parsing of requests,\n\t it may happen that this bug is triggered accidently by a user when he\n\t or she makes a typo.</p>\n       "
-  },
-  "references": {
-    "url": [
-      "http://bugs.mysql.com/bug.php?id=3870"
-    ],
-    "cvename": [
-      "CVE-2004-0956"
-    ],
-    "bid": [
-      "11432"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-03-23",
-    "entry": "2004-12-16"
-  }
+	"vid": "29edd807-438d-11d9-8bb9-00065be4b5b6",
+	"topic": "mysql -- FTS request denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mysql-server"
+			],
+			"range": [
+				{
+					"lt": "4.0.21",
+					"ge": "4.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t <p>A special crafted MySQL FTS request can cause the server to crash.\n\t Malicious MySQL users can abuse this bug in a denial of service\n\t attack against systems running an affected MySQL daemon.</p>\n\t <p>Note that because this bug is related to the parsing of requests,\n\t it may happen that this bug is triggered accidently by a user when he\n\t or she makes a typo.</p>\n       "
+	},
+	"references": {
+		"url": [
+			"http://bugs.mysql.com/bug.php?id=3870"
+		],
+		"cvename": [
+			"CVE-2004-0956"
+		],
+		"bid": [
+			"11432"
+		]
+	},
+	"dates": {
+		"discovery": "2004-03-23",
+		"entry": "2004-12-16"
+	}
 }

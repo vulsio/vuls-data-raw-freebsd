@@ -1,33 +1,33 @@
 {
-  "vid": "cbe1a0f9-27e9-11e5-a4a5-002590263bf5",
-  "topic": "xen-tools -- Guest triggerable qemu MSI-X pass-through error messages",
-  "affects": [
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.5.0_6",
-          "ge": "3.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-130.html\">\n\t  <p>Device model code dealing with guest PCI MSI-X interrupt management\n\t    activities logs messages on certain (supposedly) invalid guest\n\t    operations.</p>\n\t  <p>A buggy or malicious guest repeatedly invoking such operations may\n\t    result in the host disk to fill up, possibly leading to a Denial of\n\t    Service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-130.html"
-    ],
-    "cvename": [
-      "CVE-2015-4105"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-02",
-    "entry": "2015-07-11"
-  }
+	"vid": "cbe1a0f9-27e9-11e5-a4a5-002590263bf5",
+	"topic": "xen-tools -- Guest triggerable qemu MSI-X pass-through error messages",
+	"affects": [
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.5.0_6",
+					"ge": "3.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-130.html\">\n\t  <p>Device model code dealing with guest PCI MSI-X interrupt management\n\t    activities logs messages on certain (supposedly) invalid guest\n\t    operations.</p>\n\t  <p>A buggy or malicious guest repeatedly invoking such operations may\n\t    result in the host disk to fill up, possibly leading to a Denial of\n\t    Service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-130.html"
+		],
+		"cvename": [
+			"CVE-2015-4105"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-02",
+		"entry": "2015-07-11"
+	}
 }

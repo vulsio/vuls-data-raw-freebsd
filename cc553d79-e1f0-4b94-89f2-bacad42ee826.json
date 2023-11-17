@@ -1,30 +1,30 @@
 {
-  "vid": "cc553d79-e1f0-4b94-89f2-bacad42ee826",
-  "topic": "mosquitto -- NULL pointer dereference",
-  "affects": [
-    {
-      "name": [
-        "mosquitto"
-      ],
-      "range": [
-        {
-          "lt": "2.0.10",
-          "ge": "2.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Roger Light reports:</p>\n\t<blockquote cite=\"https://github.com/eclipse/mosquitto/blob/d5ecd9f5aa98d42e7549eea09a71a23eef241f31/ChangeLog.txt\">\n\t  <p>If an authenticated client connected with MQTT v5 sent\n\t  a malformed CONNACK message to the broker a NULL pointer\n\t  dereference occurred, most likely resulting in a\n\t  segfault.</p>\n\t  <p>(Note: a CVE is referenced in the github commit but it\n\t  appears to be for a python-bleach vulnerability so it is\n\t  not included here.)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/eclipse/mosquitto/blob/d5ecd9f5aa98d42e7549eea09a71a23eef241f31/ChangeLog.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-04-10",
-    "entry": "2021-07-24"
-  }
+	"vid": "cc553d79-e1f0-4b94-89f2-bacad42ee826",
+	"topic": "mosquitto -- NULL pointer dereference",
+	"affects": [
+		{
+			"name": [
+				"mosquitto"
+			],
+			"range": [
+				{
+					"lt": "2.0.10",
+					"ge": "2.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Roger Light reports:</p>\n\t<blockquote cite=\"https://github.com/eclipse/mosquitto/blob/d5ecd9f5aa98d42e7549eea09a71a23eef241f31/ChangeLog.txt\">\n\t  <p>If an authenticated client connected with MQTT v5 sent\n\t  a malformed CONNACK message to the broker a NULL pointer\n\t  dereference occurred, most likely resulting in a\n\t  segfault.</p>\n\t  <p>(Note: a CVE is referenced in the github commit but it\n\t  appears to be for a python-bleach vulnerability so it is\n\t  not included here.)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/eclipse/mosquitto/blob/d5ecd9f5aa98d42e7549eea09a71a23eef241f31/ChangeLog.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2021-04-10",
+		"entry": "2021-07-24"
+	}
 }

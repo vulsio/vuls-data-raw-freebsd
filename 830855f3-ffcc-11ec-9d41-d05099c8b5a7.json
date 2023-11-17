@@ -1,32 +1,32 @@
 {
-  "vid": "830855f3-ffcc-11ec-9d41-d05099c8b5a7",
-  "topic": "mat2 -- directory traversal/arbitrary file read during ZIP file processing",
-  "affects": [
-    {
-      "name": [
-        "mat2"
-      ],
-      "range": [
-        {
-          "lt": "0.13.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-35410\">\n\t  <p>\n\t    mat2 (aka metadata anonymisation toolkit) before 0.13.0 allows ../\n\t    directory traversal during the ZIP archive cleaning process. This\n\t    primarily affects mat2 web instances, in which clients could obtain\n\t    sensitive information via a crafted archive.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-35410"
-    ],
-    "cvename": [
-      "CVE-2022-35410"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-07-08",
-    "entry": "2022-07-10"
-  }
+	"vid": "830855f3-ffcc-11ec-9d41-d05099c8b5a7",
+	"topic": "mat2 -- directory traversal/arbitrary file read during ZIP file processing",
+	"affects": [
+		{
+			"name": [
+				"mat2"
+			],
+			"range": [
+				{
+					"lt": "0.13.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-35410\">\n\t  <p>\n\t    mat2 (aka metadata anonymisation toolkit) before 0.13.0 allows ../\n\t    directory traversal during the ZIP archive cleaning process. This\n\t    primarily affects mat2 web instances, in which clients could obtain\n\t    sensitive information via a crafted archive.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-35410"
+		],
+		"cvename": [
+			"CVE-2022-35410"
+		]
+	},
+	"dates": {
+		"discovery": "2022-07-08",
+		"entry": "2022-07-10"
+	}
 }

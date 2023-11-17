@@ -1,55 +1,55 @@
 {
-  "vid": "11fcfa8f-ac64-11ea-9dab-000d3ab229d6",
-  "topic": "Node.js -- June 2020 Security Releases",
-  "affects": [
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "14.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node12"
-      ],
-      "range": [
-        {
-          "lt": "12.18.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node10"
-      ],
-      "range": [
-        {
-          "lt": "10.21.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/june-2020-security-releases/\">\n\t  <p>Updates are now available for all supported Node.js release lines for the following issues.</p>\n    <h1>TLS session reuse can lead to host certificate verification bypass (High) (CVE-2020-8172)</h1>\n    <p>The 'session' event could be emitted before the 'secureConnect' event. It should not be, because the\n      connection may fail to be authorized. If it was saved an authorized connection could be established\n      later with the session ticket. Note that the https agent caches sessions, so is vulnerable to this.</p>\n    <p>The 'session' event will now only be emitted after the 'secureConnect' event, and only for authorized\n      connections.</p>\n    <h1>HTTP/2 Large Settings Frame DoS (Low) (CVE-2020-11080)</h1>\n    <p>Receiving unreasonably large HTTP/2 SETTINGS frames can consume 100% CPU to process all the settings,\n      blocking all other activities until complete.</p>\n    <p>The HTTP/2 session frame is limited to 32 settings by default. This can be configured if necessary\n      using the maxSettings option.</p>\n    <h1>napi_get_value_string_*() allows various kinds of memory corruption (High) (CVE-2020-8174)</h1>\n    <p>Calling napi_get_value_string_latin1(), napi_get_value_string_utf8(), or napi_get_value_string_utf16()\n      with a non-NULL buf, and a bufsize of 0 will cause the entire string value to be written to buf,\n      probably overrunning the length of the buffer.</p>\n    <p>A exploit has not been reported and it may be difficult but the following is suggested:</p>\n    <ul>\n      <li>All users of LTS Node.js versions should update to the versions announced in this security post.\n\tThis will address the issue for any non pre-built add-on.</li>\n      <li>Maintainers who support EOL Node.js versions and/or build against a version of Node.js that did not\n\tsupport N-API internally should update to use the new versions of node-addon-api 1.x and 2.x that\n\twill be released soon after this announcement.</li>\n    </ul>\n    <h1>ICU-20958 Prevent SEGV_MAPERR in append (High) (CVE-2020-10531)</h1>\n    <p>An issue was discovered in International Components for Unicode (ICU) for C/C++ through 66.1. An\n      integer overflow, leading to a heap-based buffer overflow, exists in the UnicodeString::doAppend()\n      function in common/unistr.cpp.</p>\n    <p>Fix was applied to 10.x in an abundance of caution, even though there is no known way to trigger the\n      overflow in 10.x.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/june-2020-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2020-8174",
-      "CVE-2020-8172",
-      "CVE-2020-10531",
-      "CVE-2020-11080"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-06-02",
-    "entry": "2020-06-12"
-  }
+	"vid": "11fcfa8f-ac64-11ea-9dab-000d3ab229d6",
+	"topic": "Node.js -- June 2020 Security Releases",
+	"affects": [
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "14.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node12"
+			],
+			"range": [
+				{
+					"lt": "12.18.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node10"
+			],
+			"range": [
+				{
+					"lt": "10.21.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/june-2020-security-releases/\">\n\t  <p>Updates are now available for all supported Node.js release lines for the following issues.</p>\n    <h1>TLS session reuse can lead to host certificate verification bypass (High) (CVE-2020-8172)</h1>\n    <p>The 'session' event could be emitted before the 'secureConnect' event. It should not be, because the\n      connection may fail to be authorized. If it was saved an authorized connection could be established\n      later with the session ticket. Note that the https agent caches sessions, so is vulnerable to this.</p>\n    <p>The 'session' event will now only be emitted after the 'secureConnect' event, and only for authorized\n      connections.</p>\n    <h1>HTTP/2 Large Settings Frame DoS (Low) (CVE-2020-11080)</h1>\n    <p>Receiving unreasonably large HTTP/2 SETTINGS frames can consume 100% CPU to process all the settings,\n      blocking all other activities until complete.</p>\n    <p>The HTTP/2 session frame is limited to 32 settings by default. This can be configured if necessary\n      using the maxSettings option.</p>\n    <h1>napi_get_value_string_*() allows various kinds of memory corruption (High) (CVE-2020-8174)</h1>\n    <p>Calling napi_get_value_string_latin1(), napi_get_value_string_utf8(), or napi_get_value_string_utf16()\n      with a non-NULL buf, and a bufsize of 0 will cause the entire string value to be written to buf,\n      probably overrunning the length of the buffer.</p>\n    <p>A exploit has not been reported and it may be difficult but the following is suggested:</p>\n    <ul>\n      <li>All users of LTS Node.js versions should update to the versions announced in this security post.\n\tThis will address the issue for any non pre-built add-on.</li>\n      <li>Maintainers who support EOL Node.js versions and/or build against a version of Node.js that did not\n\tsupport N-API internally should update to use the new versions of node-addon-api 1.x and 2.x that\n\twill be released soon after this announcement.</li>\n    </ul>\n    <h1>ICU-20958 Prevent SEGV_MAPERR in append (High) (CVE-2020-10531)</h1>\n    <p>An issue was discovered in International Components for Unicode (ICU) for C/C++ through 66.1. An\n      integer overflow, leading to a heap-based buffer overflow, exists in the UnicodeString::doAppend()\n      function in common/unistr.cpp.</p>\n    <p>Fix was applied to 10.x in an abundance of caution, even though there is no known way to trigger the\n      overflow in 10.x.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/june-2020-security-releases/"
+		],
+		"cvename": [
+			"CVE-2020-8174",
+			"CVE-2020-8172",
+			"CVE-2020-10531",
+			"CVE-2020-11080"
+		]
+	},
+	"dates": {
+		"discovery": "2020-06-02",
+		"entry": "2020-06-12"
+	}
 }

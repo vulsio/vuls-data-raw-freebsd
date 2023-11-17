@@ -1,34 +1,34 @@
 {
-  "vid": "f59af308-07f3-11ea-8c56-f8b156b6dcc8",
-  "topic": "GNU cpio -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gcpio"
-      ],
-      "range": [
-        {
-          "lt": "2.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Sergey Poznyakoff reports:</p>\n\t<blockquote cite=\"https://lists.gnu.org/archive/html/bug-cpio/2019-11/msg00000.html\">\n\t  <p>This stable release fixes several potential vulnerabilities</p>\n\t  <p>CVE-2015-1197: cpio, when using the --no-absolute-filenames\n\t    option, allows local users to write to arbitrary files\n\t    via a symlink attack on a file in an archive.</p>\n\t  <p>CVE-2016-2037: The cpio_safer_name_suffix function in\n\t    util.c allows remote attackers to cause a denial of service\n\t    (out-of-bounds write) via a crafted cpio file.</p>\n\t  <p>CVE-2019-14866: Improper input validation when writing\n\t    tar header fields leads to unexpected tar generation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.gnu.org/archive/html/bug-cpio/2019-11/msg00000.html"
-    ],
-    "cvename": [
-      "CVE-2015-1197",
-      "CVE-2016-2037",
-      "CVE-2019-14866"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-11-06",
-    "entry": "2019-11-15"
-  }
+	"vid": "f59af308-07f3-11ea-8c56-f8b156b6dcc8",
+	"topic": "GNU cpio -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gcpio"
+			],
+			"range": [
+				{
+					"lt": "2.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Sergey Poznyakoff reports:</p>\n\t<blockquote cite=\"https://lists.gnu.org/archive/html/bug-cpio/2019-11/msg00000.html\">\n\t  <p>This stable release fixes several potential vulnerabilities</p>\n\t  <p>CVE-2015-1197: cpio, when using the --no-absolute-filenames\n\t    option, allows local users to write to arbitrary files\n\t    via a symlink attack on a file in an archive.</p>\n\t  <p>CVE-2016-2037: The cpio_safer_name_suffix function in\n\t    util.c allows remote attackers to cause a denial of service\n\t    (out-of-bounds write) via a crafted cpio file.</p>\n\t  <p>CVE-2019-14866: Improper input validation when writing\n\t    tar header fields leads to unexpected tar generation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.gnu.org/archive/html/bug-cpio/2019-11/msg00000.html"
+		],
+		"cvename": [
+			"CVE-2015-1197",
+			"CVE-2016-2037",
+			"CVE-2019-14866"
+		]
+	},
+	"dates": {
+		"discovery": "2019-11-06",
+		"entry": "2019-11-15"
+	}
 }

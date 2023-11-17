@@ -1,32 +1,32 @@
 {
-  "vid": "b22b016b-b633-11e5-83ef-14dae9d210b8",
-  "topic": "librsync -- collision vulnerability",
-  "affects": [
-    {
-      "name": [
-        "librsync"
-      ],
-      "range": [
-        {
-          "lt": "1.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Michael Samuel reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2014/07/28/1\">\n\t  <p>librsync before 1.0.0 uses a truncated MD4 checksum to\n\t    match blocks, which makes it easier for remote attackers to modify\n\t    transmitted data via a birthday attack.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2014/07/28/1"
-    ],
-    "cvename": [
-      "CVE-2014-8242"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-07-28",
-    "entry": "2016-01-08"
-  }
+	"vid": "b22b016b-b633-11e5-83ef-14dae9d210b8",
+	"topic": "librsync -- collision vulnerability",
+	"affects": [
+		{
+			"name": [
+				"librsync"
+			],
+			"range": [
+				{
+					"lt": "1.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Michael Samuel reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2014/07/28/1\">\n\t  <p>librsync before 1.0.0 uses a truncated MD4 checksum to\n\t    match blocks, which makes it easier for remote attackers to modify\n\t    transmitted data via a birthday attack.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2014/07/28/1"
+		],
+		"cvename": [
+			"CVE-2014-8242"
+		]
+	},
+	"dates": {
+		"discovery": "2014-07-28",
+		"entry": "2016-01-08"
+	}
 }

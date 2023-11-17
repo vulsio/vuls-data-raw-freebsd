@@ -1,33 +1,33 @@
 {
-  "vid": "8469d41c-a960-11e4-b18e-bcaec55be5e5",
-  "topic": "rabbitmq -- Security issues in management plugin",
-  "affects": [
-    {
-      "name": [
-        "rabbitmq"
-      ],
-      "range": [
-        {
-          "lt": "3.4.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The RabbitMQ project reports:</p>\n\t<blockquote cite=\"http://www.rabbitmq.com/news.html#2015-01-08T10:14:05+0100\">\n\t  <p>Some user-controllable content was not properly HTML-escaped\n\t  before being presented to a user in the management web UI:</p>\n\t  <ul>\n\t    <li>When a user unqueued a message from the management UI,\n\t    message details (header names, arguments, etc.) were displayed\n\t    unescaped. An attacker could publish a specially crafted\n\t    message to add content or execute arbitrary Javascript code on\n\t    behalf of a user, if this user unqueued the message from the\n\t    management UI.</li>\n\t    <li>When viewing policies, their name was displayed unescaped.\n\t    An attacker could create a policy with a specially crafted name\n\t    to add content or execute arbitrary Javascript code on behalf\n\t    of a user who is viewing policies.</li>\n\t    <li>When listing connected AMQP network clients, client details\n\t    such as its version were displayed unescaped. An attacker could\n\t    use a client with a specially crafted version field to add\n\t    content or execute arbitrary Javascript code on behalf of a\n\t    user who is viewing connected clients.</li>\n\t  </ul>\n\t  <p>In all cases, the attacker needs a valid user account on the\n\t  targeted RabbitMQ cluster.</p>\n\t  <p>Furthermore, some admin-controllable content was not properly\n\t  escaped:</p>\n\t  <ul>\n\t    <li>user names;</li>\n\t    <li>the cluster name.</li>\n\t  </ul>\n\t  <p>Likewise, an attacker could add content or execute arbitrary\n\t  Javascript code on behalf of a user using the management web UI.\n\t  However, the attacker must be an administrator on the RabbitMQ\n\t  cluster, thus a trusted user.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.rabbitmq.com/news.html#2015-01-08T10:14:05+0100",
-      "http://www.rabbitmq.com/release-notes/README-3.4.3.txt"
-    ],
-    "cvename": [
-      "CVE-2015-0862"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-01-08",
-    "entry": "2015-01-31"
-  }
+	"vid": "8469d41c-a960-11e4-b18e-bcaec55be5e5",
+	"topic": "rabbitmq -- Security issues in management plugin",
+	"affects": [
+		{
+			"name": [
+				"rabbitmq"
+			],
+			"range": [
+				{
+					"lt": "3.4.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The RabbitMQ project reports:</p>\n\t<blockquote cite=\"http://www.rabbitmq.com/news.html#2015-01-08T10:14:05+0100\">\n\t  <p>Some user-controllable content was not properly HTML-escaped\n\t  before being presented to a user in the management web UI:</p>\n\t  <ul>\n\t    <li>When a user unqueued a message from the management UI,\n\t    message details (header names, arguments, etc.) were displayed\n\t    unescaped. An attacker could publish a specially crafted\n\t    message to add content or execute arbitrary Javascript code on\n\t    behalf of a user, if this user unqueued the message from the\n\t    management UI.</li>\n\t    <li>When viewing policies, their name was displayed unescaped.\n\t    An attacker could create a policy with a specially crafted name\n\t    to add content or execute arbitrary Javascript code on behalf\n\t    of a user who is viewing policies.</li>\n\t    <li>When listing connected AMQP network clients, client details\n\t    such as its version were displayed unescaped. An attacker could\n\t    use a client with a specially crafted version field to add\n\t    content or execute arbitrary Javascript code on behalf of a\n\t    user who is viewing connected clients.</li>\n\t  </ul>\n\t  <p>In all cases, the attacker needs a valid user account on the\n\t  targeted RabbitMQ cluster.</p>\n\t  <p>Furthermore, some admin-controllable content was not properly\n\t  escaped:</p>\n\t  <ul>\n\t    <li>user names;</li>\n\t    <li>the cluster name.</li>\n\t  </ul>\n\t  <p>Likewise, an attacker could add content or execute arbitrary\n\t  Javascript code on behalf of a user using the management web UI.\n\t  However, the attacker must be an administrator on the RabbitMQ\n\t  cluster, thus a trusted user.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.rabbitmq.com/news.html#2015-01-08T10:14:05+0100",
+			"http://www.rabbitmq.com/release-notes/README-3.4.3.txt"
+		],
+		"cvename": [
+			"CVE-2015-0862"
+		]
+	},
+	"dates": {
+		"discovery": "2015-01-08",
+		"entry": "2015-01-31"
+	}
 }

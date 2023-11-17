@@ -1,33 +1,33 @@
 {
-  "vid": "61480a9a-22b2-11d9-814e-0001020eed82",
-  "topic": "cabextract -- insecure directory handling",
-  "affects": [
-    {
-      "name": [
-        "cabextract"
-      ],
-      "range": [
-        {
-          "lt": "1.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>cabextract has insufficient checks for file names that\n\t  contain <q>../</q>.  This can cause files to be extracted to\n\t  the parent directory.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kyz.uklinux.net/cabextract.php#changes"
-    ],
-    "cvename": [
-      "CVE-2004-0916"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-18",
-    "entry": "2004-10-20",
-    "modified": "2004-10-22"
-  }
+	"vid": "61480a9a-22b2-11d9-814e-0001020eed82",
+	"topic": "cabextract -- insecure directory handling",
+	"affects": [
+		{
+			"name": [
+				"cabextract"
+			],
+			"range": [
+				{
+					"lt": "1.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cabextract has insufficient checks for file names that\n\t  contain <q>../</q>.  This can cause files to be extracted to\n\t  the parent directory.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kyz.uklinux.net/cabextract.php#changes"
+		],
+		"cvename": [
+			"CVE-2004-0916"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-18",
+		"entry": "2004-10-20",
+		"modified": "2004-10-22"
+	}
 }

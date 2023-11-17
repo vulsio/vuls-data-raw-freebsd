@@ -1,41 +1,41 @@
 {
-  "vid": "6025d173-4279-11ea-b184-f8b156ac3ff9",
-  "topic": "FreeBSD -- kernel stack data disclosure",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.1_2",
-          "ge": "12.1"
-        },
-        {
-          "lt": "12.0_13",
-          "ge": "12.0"
-        },
-        {
-          "lt": "11.3_6",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to incorrect initialization of a stack data structure, up to 20\n\tbytes of kernel data stored previously stored on the stack will be\n\texposed to a crashing user process.</p>\n\t<h1>Impact:</h1>\n\t<p>Sensitive kernel data may be disclosed.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-15875"
-    ],
-    "freebsd_sa": [
-      "SA-20:03.thrmisc"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-01-28",
-    "entry": "2020-01-29"
-  }
+	"vid": "6025d173-4279-11ea-b184-f8b156ac3ff9",
+	"topic": "FreeBSD -- kernel stack data disclosure",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.1_2",
+					"ge": "12.1"
+				},
+				{
+					"lt": "12.0_13",
+					"ge": "12.0"
+				},
+				{
+					"lt": "11.3_6",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to incorrect initialization of a stack data structure, up to 20\n\tbytes of kernel data stored previously stored on the stack will be\n\texposed to a crashing user process.</p>\n\t<h1>Impact:</h1>\n\t<p>Sensitive kernel data may be disclosed.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-15875"
+		],
+		"freebsd_sa": [
+			"SA-20:03.thrmisc"
+		]
+	},
+	"dates": {
+		"discovery": "2020-01-28",
+		"entry": "2020-01-29"
+	}
 }

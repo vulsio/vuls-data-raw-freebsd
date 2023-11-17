@@ -1,33 +1,33 @@
 {
-  "vid": "0f798bd6-8325-11ea-9a78-08002728f74c",
-  "topic": "libntlm -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "libntlm"
-      ],
-      "range": [
-        {
-          "lt": "1.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2019-17455\">\n\t  <p>Libntlm through 1.5 relies on a fixed buffer size for\n\t    tSmbNtlmAuthRequest, tSmbNtlmAuthChallenge, and tSmbNtlmAuthResponse\n\t    read and write operations, as demonstrated by a stack-based buffer\n\t    over-read in buildSmbNtlmAuthRequest in smbutil.c for a crafted NTLM\n\t    request.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://gitlab.com/jas/libntlm/-/issues/2",
-      "https://nvd.nist.gov/vuln/detail/CVE-2019-17455"
-    ],
-    "cvename": [
-      "CVE-2019-17455"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-10-08",
-    "entry": "2020-04-21"
-  }
+	"vid": "0f798bd6-8325-11ea-9a78-08002728f74c",
+	"topic": "libntlm -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"libntlm"
+			],
+			"range": [
+				{
+					"lt": "1.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2019-17455\">\n\t  <p>Libntlm through 1.5 relies on a fixed buffer size for\n\t    tSmbNtlmAuthRequest, tSmbNtlmAuthChallenge, and tSmbNtlmAuthResponse\n\t    read and write operations, as demonstrated by a stack-based buffer\n\t    over-read in buildSmbNtlmAuthRequest in smbutil.c for a crafted NTLM\n\t    request.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://gitlab.com/jas/libntlm/-/issues/2",
+			"https://nvd.nist.gov/vuln/detail/CVE-2019-17455"
+		],
+		"cvename": [
+			"CVE-2019-17455"
+		]
+	},
+	"dates": {
+		"discovery": "2019-10-08",
+		"entry": "2020-04-21"
+	}
 }

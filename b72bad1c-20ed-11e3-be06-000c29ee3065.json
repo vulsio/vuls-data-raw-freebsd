@@ -1,42 +1,42 @@
 {
-  "vid": "b72bad1c-20ed-11e3-be06-000c29ee3065",
-  "topic": "FreeBSD -- Cross-mount links between nullfs(5) mounts",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "9.1_7",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_4",
-          "ge": "8.4"
-        },
-        {
-          "lt": "8.3_11",
-          "ge": "8.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem Description:</p>\n\t<p>The nullfs(5) implementation of the VOP_LINK(9) VFS\n\t  operation does not check whether the source and target of\n\t  the link are both in the same nullfs instance.  It is\n\t  therefore possible to create a hardlink from a location in\n\t  one nullfs instance to a file in another, as long as the\n\t  underlying (source) filesystem is the same.</p>\n\t<p>Impact:</p>\n\t<p>If multiple nullfs views into the same filesystem are\n\t  mounted in different locations, a user with read access to\n\t  one of these views and write access to another will be able\n\t  to create a hard link from the latter to a file in the\n\t  former, even though they are, from the user's perspective,\n\t  different filesystems.  The user may thereby gain write\n\t  access to files which are nominally on a read-only\n\t  filesystem.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2013-5710"
-    ],
-    "freebsd_sa": [
-      "SA-13:13.nullfs"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-09-10",
-    "entry": "2013-09-19",
-    "modified": "2016-08-09"
-  }
+	"vid": "b72bad1c-20ed-11e3-be06-000c29ee3065",
+	"topic": "FreeBSD -- Cross-mount links between nullfs(5) mounts",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "9.1_7",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_4",
+					"ge": "8.4"
+				},
+				{
+					"lt": "8.3_11",
+					"ge": "8.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem Description:</p>\n\t<p>The nullfs(5) implementation of the VOP_LINK(9) VFS\n\t  operation does not check whether the source and target of\n\t  the link are both in the same nullfs instance.  It is\n\t  therefore possible to create a hardlink from a location in\n\t  one nullfs instance to a file in another, as long as the\n\t  underlying (source) filesystem is the same.</p>\n\t<p>Impact:</p>\n\t<p>If multiple nullfs views into the same filesystem are\n\t  mounted in different locations, a user with read access to\n\t  one of these views and write access to another will be able\n\t  to create a hard link from the latter to a file in the\n\t  former, even though they are, from the user's perspective,\n\t  different filesystems.  The user may thereby gain write\n\t  access to files which are nominally on a read-only\n\t  filesystem.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2013-5710"
+		],
+		"freebsd_sa": [
+			"SA-13:13.nullfs"
+		]
+	},
+	"dates": {
+		"discovery": "2013-09-10",
+		"entry": "2013-09-19",
+		"modified": "2016-08-09"
+	}
 }

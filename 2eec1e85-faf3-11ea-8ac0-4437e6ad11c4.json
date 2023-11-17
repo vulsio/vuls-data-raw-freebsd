@@ -1,36 +1,36 @@
 {
-  "vid": "2eec1e85-faf3-11ea-8ac0-4437e6ad11c4",
-  "topic": "tt-rss -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "tt-rss"
-      ],
-      "range": [
-        {
-          "lt": "g20200919"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>tt-rss project reports:</p>\n\t<blockquote cite=\"https://community.tt-rss.org/t/heads-up-several-vulnerabilities-fixed/3799\">\n\t  <p>The cached_url feature mishandles JavaScript inside an SVG document.</p>\n\t  <p>imgproxy in plugins/af_proxy_http/init.php mishandles $_REQUEST[\"url\"] in an error message.</p>\n\t  <p>It does not validate all URLs before requesting them.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://community.tt-rss.org/t/replace-php-gettext/2889\">\n\t  <p>Allows remote attackers to execute arbitrary PHP code via a crafted plural forms header.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://community.tt-rss.org/t/heads-up-several-vulnerabilities-fixed/3799",
-      "https://community.tt-rss.org/t/replace-php-gettext/2889"
-    ],
-    "cvename": [
-      "CVE-2020-25789",
-      "CVE-2020-25788",
-      "CVE-2020-25787",
-      "CVE-2016-6175"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-09-15",
-    "entry": "2020-09-20"
-  }
+	"vid": "2eec1e85-faf3-11ea-8ac0-4437e6ad11c4",
+	"topic": "tt-rss -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"tt-rss"
+			],
+			"range": [
+				{
+					"lt": "g20200919"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>tt-rss project reports:</p>\n\t<blockquote cite=\"https://community.tt-rss.org/t/heads-up-several-vulnerabilities-fixed/3799\">\n\t  <p>The cached_url feature mishandles JavaScript inside an SVG document.</p>\n\t  <p>imgproxy in plugins/af_proxy_http/init.php mishandles $_REQUEST[\"url\"] in an error message.</p>\n\t  <p>It does not validate all URLs before requesting them.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://community.tt-rss.org/t/replace-php-gettext/2889\">\n\t  <p>Allows remote attackers to execute arbitrary PHP code via a crafted plural forms header.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://community.tt-rss.org/t/heads-up-several-vulnerabilities-fixed/3799",
+			"https://community.tt-rss.org/t/replace-php-gettext/2889"
+		],
+		"cvename": [
+			"CVE-2020-25789",
+			"CVE-2020-25788",
+			"CVE-2020-25787",
+			"CVE-2016-6175"
+		]
+	},
+	"dates": {
+		"discovery": "2020-09-15",
+		"entry": "2020-09-20"
+	}
 }

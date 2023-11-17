@@ -1,32 +1,32 @@
 {
-  "vid": "950b2d60-f2a9-11e5-b4a9-ac220bdcec59",
-  "topic": "activemq -- Web Console Clickjacking",
-  "affects": [
-    {
-      "name": [
-        "activemq"
-      ],
-      "range": [
-        {
-          "lt": "5.13.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Michael Furman reports:</p>\n\t<blockquote cite=\"http://activemq.apache.org/security-advisories.data/CVE-2016-0734-announcement.txt\">\n\t  <p>The web based administration console does not set the\n\t    X-Frame-Options header in HTTP responses. This allows the console to be embedded\n\t    in a frame or iframe which could then be used to cause a user to perform an\n\t    unintended action in the console.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://activemq.apache.org/security-advisories.data/CVE-2016-0734-announcement.txt"
-    ],
-    "cvename": [
-      "CVE-2016-0734"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-10",
-    "entry": "2016-03-25"
-  }
+	"vid": "950b2d60-f2a9-11e5-b4a9-ac220bdcec59",
+	"topic": "activemq -- Web Console Clickjacking",
+	"affects": [
+		{
+			"name": [
+				"activemq"
+			],
+			"range": [
+				{
+					"lt": "5.13.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Michael Furman reports:</p>\n\t<blockquote cite=\"http://activemq.apache.org/security-advisories.data/CVE-2016-0734-announcement.txt\">\n\t  <p>The web based administration console does not set the\n\t    X-Frame-Options header in HTTP responses. This allows the console to be embedded\n\t    in a frame or iframe which could then be used to cause a user to perform an\n\t    unintended action in the console.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://activemq.apache.org/security-advisories.data/CVE-2016-0734-announcement.txt"
+		],
+		"cvename": [
+			"CVE-2016-0734"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-10",
+		"entry": "2016-03-25"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "vid": "0163b498-af54-11d9-acd0-000854d03344",
-  "topic": "axel -- remote buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "axel"
-      ],
-      "range": [
-        {
-          "lt": "1.0a_4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Debian Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-706\">\n\t  <p>Ulf Härnhammar from the Debian Security Audit Project\n\t  discovered a buffer overflow in axel, a light download\n\t  accelerator.\tWhen reading remote input the program did\n\t  not check if a part of the input can overflow a buffer\n\t  and maybe trigger the execution of arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.debian.org/security/2005/dsa-706"
-    ],
-    "cvename": [
-      "CVE-2005-0390"
-    ],
-    "bid": [
-      "13059"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-04-16",
-    "entry": "2005-04-17"
-  }
+	"vid": "0163b498-af54-11d9-acd0-000854d03344",
+	"topic": "axel -- remote buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"axel"
+			],
+			"range": [
+				{
+					"lt": "1.0a_4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Debian Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2005/dsa-706\">\n\t  <p>Ulf Härnhammar from the Debian Security Audit Project\n\t  discovered a buffer overflow in axel, a light download\n\t  accelerator.\tWhen reading remote input the program did\n\t  not check if a part of the input can overflow a buffer\n\t  and maybe trigger the execution of arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.debian.org/security/2005/dsa-706"
+		],
+		"cvename": [
+			"CVE-2005-0390"
+		],
+		"bid": [
+			"13059"
+		]
+	},
+	"dates": {
+		"discovery": "2005-04-16",
+		"entry": "2005-04-17"
+	}
 }

@@ -1,57 +1,57 @@
 {
-  "vid": "f74dc01b-0e83-11da-bc08-0001020eed82",
-  "topic": "acroread -- plug-in buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "acroread"
-      ],
-      "range": [
-        {
-          "lt": "7.0.1"
-        },
-        {
-          "lt": "7.0.1,1",
-          "gt": "5.*,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "acroread4",
-        "acroread5"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "acroread7"
-      ],
-      "range": [
-        {
-          "lt": "7.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Adobe Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.adobe.com/support/techdocs/321644.html\">\n\t  <p>The identified vulnerability is a buffer overflow within\n\t    a core application plug-in, which is part of Adobe Acrobat\n\t    and Adobe Reader. If a malicious file were opened it could\n\t    trigger a buffer overflow as the file is being loaded into\n\t    Adobe Acrobat and Adobe Reader. A buffer overflow can\n\t    cause the application to crash and increase the risk of\n\t    malicious code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.adobe.com/support/techdocs/321644.html"
-    ],
-    "cvename": [
-      "CVE-2005-2470"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-08-16",
-    "entry": "2005-08-16"
-  }
+	"vid": "f74dc01b-0e83-11da-bc08-0001020eed82",
+	"topic": "acroread -- plug-in buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"acroread"
+			],
+			"range": [
+				{
+					"lt": "7.0.1"
+				},
+				{
+					"lt": "7.0.1,1",
+					"gt": "5.*,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"acroread4",
+				"acroread5"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"acroread7"
+			],
+			"range": [
+				{
+					"lt": "7.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Adobe Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.adobe.com/support/techdocs/321644.html\">\n\t  <p>The identified vulnerability is a buffer overflow within\n\t    a core application plug-in, which is part of Adobe Acrobat\n\t    and Adobe Reader. If a malicious file were opened it could\n\t    trigger a buffer overflow as the file is being loaded into\n\t    Adobe Acrobat and Adobe Reader. A buffer overflow can\n\t    cause the application to crash and increase the risk of\n\t    malicious code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.adobe.com/support/techdocs/321644.html"
+		],
+		"cvename": [
+			"CVE-2005-2470"
+		]
+	},
+	"dates": {
+		"discovery": "2005-08-16",
+		"entry": "2005-08-16"
+	}
 }

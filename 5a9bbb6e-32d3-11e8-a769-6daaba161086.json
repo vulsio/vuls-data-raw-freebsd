@@ -1,65 +1,65 @@
 {
-  "vid": "5a9bbb6e-32d3-11e8-a769-6daaba161086",
-  "topic": "node.js -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "node4"
-      ],
-      "range": [
-        {
-          "lt": "4.9.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node6"
-      ],
-      "range": [
-        {
-          "lt": "6.14.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node8"
-      ],
-      "range": [
-        {
-          "lt": "8.11.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "9.10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/\">\n\t  <h1>Node.js Inspector DNS rebinding vulnerability (CVE-2018-7160)</h1>\n\t  <p>Node.js 6.x and later include a debugger protocol (also known as \"inspector\") that can be activated by the --inspect and related command line flags. This debugger service was vulnerable to a DNS rebinding attack which could be exploited to perform remote code execution.</p>\n\t  <h1>'path' module regular expression denial of service (CVE-2018-7158)</h1>\n\t  <p>The 'path' module in the Node.js 4.x release line contains a potential regular expression denial of service (ReDoS) vector. The code in question was replaced in Node.js 6.x and later so this vulnerability only impacts all versions of Node.js 4.x.</p>\n\t  <h1>Spaces in HTTP Content-Length header values are ignored (CVE-2018-7159)</h1>\n\t  <p>The HTTP parser in all current versions of Node.js ignores spaces in the Content-Length header, allowing input such as Content-Length: 1 2 to be interpreted as having a value of 12. The HTTP specification does not allow for spaces in the Content-Length value and the Node.js HTTP parser has been brought into line on this particular difference.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2018-7158",
-      "CVE-2018-7159",
-      "CVE-2018-7160"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-03-21",
-    "entry": "2018-03-28",
-    "modified": "2018-03-28"
-  }
+	"vid": "5a9bbb6e-32d3-11e8-a769-6daaba161086",
+	"topic": "node.js -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"node4"
+			],
+			"range": [
+				{
+					"lt": "4.9.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node6"
+			],
+			"range": [
+				{
+					"lt": "6.14.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node8"
+			],
+			"range": [
+				{
+					"lt": "8.11.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "9.10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/\">\n\t  <h1>Node.js Inspector DNS rebinding vulnerability (CVE-2018-7160)</h1>\n\t  <p>Node.js 6.x and later include a debugger protocol (also known as \"inspector\") that can be activated by the --inspect and related command line flags. This debugger service was vulnerable to a DNS rebinding attack which could be exploited to perform remote code execution.</p>\n\t  <h1>'path' module regular expression denial of service (CVE-2018-7158)</h1>\n\t  <p>The 'path' module in the Node.js 4.x release line contains a potential regular expression denial of service (ReDoS) vector. The code in question was replaced in Node.js 6.x and later so this vulnerability only impacts all versions of Node.js 4.x.</p>\n\t  <h1>Spaces in HTTP Content-Length header values are ignored (CVE-2018-7159)</h1>\n\t  <p>The HTTP parser in all current versions of Node.js ignores spaces in the Content-Length header, allowing input such as Content-Length: 1 2 to be interpreted as having a value of 12. The HTTP specification does not allow for spaces in the Content-Length value and the Node.js HTTP parser has been brought into line on this particular difference.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/"
+		],
+		"cvename": [
+			"CVE-2018-7158",
+			"CVE-2018-7159",
+			"CVE-2018-7160"
+		]
+	},
+	"dates": {
+		"discovery": "2018-03-21",
+		"entry": "2018-03-28",
+		"modified": "2018-03-28"
+	}
 }

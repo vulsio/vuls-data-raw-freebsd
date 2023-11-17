@@ -1,88 +1,88 @@
 {
-  "vid": "03175e62-5494-11e4-9cc1-bc5ff4fb5e7b",
-  "topic": "OpenSSL -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1_16",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mingw32-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1j",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1e_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "8.4_17",
-          "ge": "8.4"
-        },
-        {
-          "lt": "9.1_20",
-          "ge": "9.1"
-        },
-        {
-          "lt": "9.2_13",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.3_3",
-          "ge": "9.3"
-        },
-        {
-          "lt": "10.0_10",
-          "ge": "10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL Project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv_20141015.txt\">\n\t  <p>A flaw in the DTLS SRTP extension parsing code allows an\n\t    attacker, who sends a carefully crafted handshake message,\n\t    to cause OpenSSL to fail to free up to 64k of memory causing\n\t    a memory leak. This could be exploited in a Denial Of Service\n\t    attack. This issue affects OpenSSL 1.0.1 server implementations\n\t    for both SSL/TLS and DTLS regardless of whether SRTP is used\n\t    or configured. Implementations of OpenSSL that have been\n\t    compiled with OPENSSL_NO_SRTP defined are not affected.\n\t    [CVE-2014-3513].</p>\n\t  <p>When an OpenSSL SSL/TLS/DTLS server receives a session\n\t    ticket the integrity of that ticket is first verified.\n\t    In the event of a session ticket integrity check failing,\n\t    OpenSSL will fail to free memory causing a memory leak.\n\t    By sending a large number of invalid session tickets an\n\t    attacker could exploit this issue in a Denial Of Service\n\t    attack. [CVE-2014-3567].</p>\n\t  <p>OpenSSL has added support for TLS_FALLBACK_SCSV to allow\n\t    applications to block the ability for a MITM attacker to\n\t    force a protocol downgrade.</p>\n\t  <p>Some client applications (such as browsers) will reconnect\n\t    using a downgraded protocol to work around interoperability\n\t    bugs in older servers. This could be exploited by an active\n\t    man-in-the-middle to downgrade connections to SSL 3.0 even\n\t    if both sides of the connection support higher protocols.\n\t    SSL 3.0 contains a number of weaknesses including POODLE\n\t    [CVE-2014-3566].</p>\n\t  <p>When OpenSSL is configured with \"no-ssl3\" as a build option,\n\t    servers could accept and complete a SSL 3.0 handshake, and\n\t    clients could be configured to send them. [CVE-2014-3568].</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv_20141015.txt"
-    ],
-    "cvename": [
-      "CVE-2014-3513",
-      "CVE-2014-3566",
-      "CVE-2014-3567",
-      "CVE-2014-3568"
-    ],
-    "freebsd_sa": [
-      "SA-14:23.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-10-15",
-    "entry": "2014-10-15",
-    "modified": "2016-08-09"
-  }
+	"vid": "03175e62-5494-11e4-9cc1-bc5ff4fb5e7b",
+	"topic": "OpenSSL -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1_16",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mingw32-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1j",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1e_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "8.4_17",
+					"ge": "8.4"
+				},
+				{
+					"lt": "9.1_20",
+					"ge": "9.1"
+				},
+				{
+					"lt": "9.2_13",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.3_3",
+					"ge": "9.3"
+				},
+				{
+					"lt": "10.0_10",
+					"ge": "10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL Project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv_20141015.txt\">\n\t  <p>A flaw in the DTLS SRTP extension parsing code allows an\n\t    attacker, who sends a carefully crafted handshake message,\n\t    to cause OpenSSL to fail to free up to 64k of memory causing\n\t    a memory leak. This could be exploited in a Denial Of Service\n\t    attack. This issue affects OpenSSL 1.0.1 server implementations\n\t    for both SSL/TLS and DTLS regardless of whether SRTP is used\n\t    or configured. Implementations of OpenSSL that have been\n\t    compiled with OPENSSL_NO_SRTP defined are not affected.\n\t    [CVE-2014-3513].</p>\n\t  <p>When an OpenSSL SSL/TLS/DTLS server receives a session\n\t    ticket the integrity of that ticket is first verified.\n\t    In the event of a session ticket integrity check failing,\n\t    OpenSSL will fail to free memory causing a memory leak.\n\t    By sending a large number of invalid session tickets an\n\t    attacker could exploit this issue in a Denial Of Service\n\t    attack. [CVE-2014-3567].</p>\n\t  <p>OpenSSL has added support for TLS_FALLBACK_SCSV to allow\n\t    applications to block the ability for a MITM attacker to\n\t    force a protocol downgrade.</p>\n\t  <p>Some client applications (such as browsers) will reconnect\n\t    using a downgraded protocol to work around interoperability\n\t    bugs in older servers. This could be exploited by an active\n\t    man-in-the-middle to downgrade connections to SSL 3.0 even\n\t    if both sides of the connection support higher protocols.\n\t    SSL 3.0 contains a number of weaknesses including POODLE\n\t    [CVE-2014-3566].</p>\n\t  <p>When OpenSSL is configured with \"no-ssl3\" as a build option,\n\t    servers could accept and complete a SSL 3.0 handshake, and\n\t    clients could be configured to send them. [CVE-2014-3568].</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv_20141015.txt"
+		],
+		"cvename": [
+			"CVE-2014-3513",
+			"CVE-2014-3566",
+			"CVE-2014-3567",
+			"CVE-2014-3568"
+		],
+		"freebsd_sa": [
+			"SA-14:23.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2014-10-15",
+		"entry": "2014-10-15",
+		"modified": "2016-08-09"
+	}
 }

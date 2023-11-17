@@ -1,32 +1,32 @@
 {
-  "vid": "093584f2-3f14-11e6-b3c8-14dae9d210b8",
-  "topic": "libtorrent-rasterbar -- denial of service",
-  "affects": [
-    {
-      "name": [
-        "libtorrent-rasterbar"
-      ],
-      "range": [
-        {
-          "lt": "1.1.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Brandon Perry reports:</p>\n\t<blockquote cite=\"https://github.com/arvidn/libtorrent/issues/780\">\n\t  <p>The parse_chunk_header function in libtorrent before 1.1.1\n\t    allows remote attackers to cause a denial of service (crash) via a\n\t    crafted (1) HTTP response or possibly a (2) UPnP broadcast.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/arvidn/libtorrent/issues/780"
-    ],
-    "cvename": [
-      "CVE-2016-5301"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-06-03",
-    "entry": "2016-06-30"
-  }
+	"vid": "093584f2-3f14-11e6-b3c8-14dae9d210b8",
+	"topic": "libtorrent-rasterbar -- denial of service",
+	"affects": [
+		{
+			"name": [
+				"libtorrent-rasterbar"
+			],
+			"range": [
+				{
+					"lt": "1.1.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Brandon Perry reports:</p>\n\t<blockquote cite=\"https://github.com/arvidn/libtorrent/issues/780\">\n\t  <p>The parse_chunk_header function in libtorrent before 1.1.1\n\t    allows remote attackers to cause a denial of service (crash) via a\n\t    crafted (1) HTTP response or possibly a (2) UPnP broadcast.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/arvidn/libtorrent/issues/780"
+		],
+		"cvename": [
+			"CVE-2016-5301"
+		]
+	},
+	"dates": {
+		"discovery": "2016-06-03",
+		"entry": "2016-06-30"
+	}
 }

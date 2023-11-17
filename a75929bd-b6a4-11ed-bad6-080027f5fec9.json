@@ -1,47 +1,47 @@
 {
-  "vid": "a75929bd-b6a4-11ed-bad6-080027f5fec9",
-  "topic": "emacs -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "emacs",
-        "emacs-canna",
-        "emacs-nox"
-      ],
-      "range": [
-        {
-          "lt": "28.2_3,3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "emacs-devel",
-        "emacs-devel-nox"
-      ],
-      "range": [
-        {
-          "lt": "30.0.50.20230101,3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Xi Lu reports:</p>\n\t<blockquote cite=\"https://www.debian.org/security/2023/dsa-5360\">\n\t  <dl>\n\t    <dt>CVE-2022-48337</dt>\n\t    <dd>\n\t      GNU Emacs through 28.2 allows attackers to execute\n\t      commands via shell metacharacters in the name of a\n\t      source-code file, because lib-src/etags.c uses the\n\t      system C library function in its implementation of the\n\t      etags program. For example, a victim may use the\n\t      \"etags -u *\" command (suggested in the etags\n\t      documentation) in a situation where the current working\n\t      directory has contents that depend on untrusted input.\n\t    </dd>\n\t    <dt>CVE-2022-48338</dt>\n\t    <dd>\n\t      An issue was discovered in GNU Emacs through 28.2. In\n\t      ruby-mode.el, the ruby-find-library-file function has a\n\t      local command injection vulnerability. The\n\t      ruby-find-library-file function is an interactive\n\t      function, and bound to C-c C-f. Inside the function, the\n\t      external command gem is called through\n\t      shell-command-to-string, but the feature-name parameters\n\t      are not escaped. Thus, malicious Ruby source files may\n\t      cause commands to be executed.\n\t    </dd>\n\t    <dt>CVE-2022-48339</dt>\n\t    <dd>\n\t      An issue was discovered in GNU Emacs through\n\t      28.2. htmlfontify.el has a command injection\n\t      vulnerability. In the hfy-istext-command function, the\n\t      parameter file and parameter srcdir come from external\n\t      input, and parameters are not escaped. If a file name or\n\t      directory name contains shell metacharacters, code may\n\t      be executed.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.debian.org/security/2023/dsa-5360"
-    ],
-    "cvename": [
-      "CVE-2022-48337",
-      "CVE-2022-48338",
-      "CVE-2022-48339"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-12-06",
-    "entry": "2023-02-27"
-  }
+	"vid": "a75929bd-b6a4-11ed-bad6-080027f5fec9",
+	"topic": "emacs -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"emacs",
+				"emacs-canna",
+				"emacs-nox"
+			],
+			"range": [
+				{
+					"lt": "28.2_3,3"
+				}
+			]
+		},
+		{
+			"name": [
+				"emacs-devel",
+				"emacs-devel-nox"
+			],
+			"range": [
+				{
+					"lt": "30.0.50.20230101,3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Xi Lu reports:</p>\n\t<blockquote cite=\"https://www.debian.org/security/2023/dsa-5360\">\n\t  <dl>\n\t    <dt>CVE-2022-48337</dt>\n\t    <dd>\n\t      GNU Emacs through 28.2 allows attackers to execute\n\t      commands via shell metacharacters in the name of a\n\t      source-code file, because lib-src/etags.c uses the\n\t      system C library function in its implementation of the\n\t      etags program. For example, a victim may use the\n\t      \"etags -u *\" command (suggested in the etags\n\t      documentation) in a situation where the current working\n\t      directory has contents that depend on untrusted input.\n\t    </dd>\n\t    <dt>CVE-2022-48338</dt>\n\t    <dd>\n\t      An issue was discovered in GNU Emacs through 28.2. In\n\t      ruby-mode.el, the ruby-find-library-file function has a\n\t      local command injection vulnerability. The\n\t      ruby-find-library-file function is an interactive\n\t      function, and bound to C-c C-f. Inside the function, the\n\t      external command gem is called through\n\t      shell-command-to-string, but the feature-name parameters\n\t      are not escaped. Thus, malicious Ruby source files may\n\t      cause commands to be executed.\n\t    </dd>\n\t    <dt>CVE-2022-48339</dt>\n\t    <dd>\n\t      An issue was discovered in GNU Emacs through\n\t      28.2. htmlfontify.el has a command injection\n\t      vulnerability. In the hfy-istext-command function, the\n\t      parameter file and parameter srcdir come from external\n\t      input, and parameters are not escaped. If a file name or\n\t      directory name contains shell metacharacters, code may\n\t      be executed.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.debian.org/security/2023/dsa-5360"
+		],
+		"cvename": [
+			"CVE-2022-48337",
+			"CVE-2022-48338",
+			"CVE-2022-48339"
+		]
+	},
+	"dates": {
+		"discovery": "2022-12-06",
+		"entry": "2023-02-27"
+	}
 }

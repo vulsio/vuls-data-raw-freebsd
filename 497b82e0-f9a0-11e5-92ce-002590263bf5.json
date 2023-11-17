@@ -1,35 +1,35 @@
 {
-  "vid": "497b82e0-f9a0-11e5-92ce-002590263bf5",
-  "topic": "pcre -- heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "pcre"
-      ],
-      "range": [
-        {
-          "lt": "8.38_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1283\">\n\t  <p>The pcre_compile2 function in pcre_compile.c in PCRE 8.38\n\t    mishandles the /((?:F?+(?:^(?(R)a+\\\"){99}-))(?J)(?'R'(?'R'&lt;((?'RR'(?'R'\\){97)?J)?J)(?'R'(?'R'\\){99|(:(?|(?'R')(\\k'R')|((?'R')))H'R'R)(H'R))))))/\n\t    pattern and related patterns with named subgroups, which allows\n\t    remote attackers to cause a denial of service (heap-based buffer\n\t    overflow) or possibly have unspecified other impact via a crafted\n\t    regular expression, as demonstrated by a JavaScript RegExp object\n\t    encountered by Konqueror.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugs.exim.org/show_bug.cgi?id=1767"
-    ],
-    "cvename": [
-      "CVE-2016-1283"
-    ],
-    "freebsd_pr": [
-      "ports/208260"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-27",
-    "entry": "2016-04-03"
-  }
+	"vid": "497b82e0-f9a0-11e5-92ce-002590263bf5",
+	"topic": "pcre -- heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"pcre"
+			],
+			"range": [
+				{
+					"lt": "8.38_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1283\">\n\t  <p>The pcre_compile2 function in pcre_compile.c in PCRE 8.38\n\t    mishandles the /((?:F?+(?:^(?(R)a+\\\"){99}-))(?J)(?'R'(?'R'&lt;((?'RR'(?'R'\\){97)?J)?J)(?'R'(?'R'\\){99|(:(?|(?'R')(\\k'R')|((?'R')))H'R'R)(H'R))))))/\n\t    pattern and related patterns with named subgroups, which allows\n\t    remote attackers to cause a denial of service (heap-based buffer\n\t    overflow) or possibly have unspecified other impact via a crafted\n\t    regular expression, as demonstrated by a JavaScript RegExp object\n\t    encountered by Konqueror.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugs.exim.org/show_bug.cgi?id=1767"
+		],
+		"cvename": [
+			"CVE-2016-1283"
+		],
+		"freebsd_pr": [
+			"ports/208260"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-27",
+		"entry": "2016-04-03"
+	}
 }

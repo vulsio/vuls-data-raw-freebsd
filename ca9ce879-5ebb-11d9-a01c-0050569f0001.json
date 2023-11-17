@@ -1,51 +1,51 @@
 {
-  "vid": "ca9ce879-5ebb-11d9-a01c-0050569f0001",
-  "topic": "exim -- two buffer overflow vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "exim",
-        "exim-ldap",
-        "exim-ldap2",
-        "exim-mysql",
-        "exim-postgresql",
-        "exim-sa-exim"
-      ],
-      "range": [
-        {
-          "lt": "4.43+28_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>1. The function host_aton() can overflow a buffer\n\t   if it is presented with an illegal IPv6 address\n\t   that has more than 8 components.</p>\n\t<p>2. The second report described a buffer overflow\n\t   in the function spa_base64_to_bits(), which is part\n\t   of the code for SPA authentication.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-0021",
-      "CVE-2005-0022"
-    ],
-    "mlist": [
-      {
-        "text": "http://www.exim.org/mail-archives/exim-announce/2005/msg00000.html",
-        "msgid": "Pine.SOC.4.61.0501041452540.1114@draco.cus.cam.ac.uk"
-      },
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110573573800377",
-        "msgid": "1CE07882ECEE894CA2D5A89B8DEBC4011CFDE5@porgy.admin.idefense.com"
-      }
-    ],
-    "bid": [
-      "12185",
-      "12188",
-      "12268"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-05",
-    "entry": "2005-01-05",
-    "modified": "2005-01-18"
-  }
+	"vid": "ca9ce879-5ebb-11d9-a01c-0050569f0001",
+	"topic": "exim -- two buffer overflow vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"exim",
+				"exim-ldap",
+				"exim-ldap2",
+				"exim-mysql",
+				"exim-postgresql",
+				"exim-sa-exim"
+			],
+			"range": [
+				{
+					"lt": "4.43+28_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>1. The function host_aton() can overflow a buffer\n\t   if it is presented with an illegal IPv6 address\n\t   that has more than 8 components.</p>\n\t<p>2. The second report described a buffer overflow\n\t   in the function spa_base64_to_bits(), which is part\n\t   of the code for SPA authentication.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-0021",
+			"CVE-2005-0022"
+		],
+		"mlist": [
+			{
+				"text": "http://www.exim.org/mail-archives/exim-announce/2005/msg00000.html",
+				"msgid": "Pine.SOC.4.61.0501041452540.1114@draco.cus.cam.ac.uk"
+			},
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110573573800377",
+				"msgid": "1CE07882ECEE894CA2D5A89B8DEBC4011CFDE5@porgy.admin.idefense.com"
+			}
+		],
+		"bid": [
+			"12185",
+			"12188",
+			"12268"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-05",
+		"entry": "2005-01-05",
+		"modified": "2005-01-18"
+	}
 }

@@ -1,42 +1,42 @@
 {
-  "vid": "1999a215-fc6b-11e8-8a95-ac1f6b67e138",
-  "topic": "couchdb -- administrator privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "couchdb"
-      ],
-      "range": [
-        {
-          "lt": "2.3.0,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "couchdb2"
-      ],
-      "range": [
-        {
-          "lt": "2.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Apache CouchDB PMC reports:</p>\n\t<blockquote cite=\"https://lists.apache.org/thread.html/...\">\n\t  <p>Database Administrator could achieve privilege escalation to\n\t  the account that CouchDB runs under, by abusing insufficient validation\n\t  in the HTTP API, escaping security controls implemented in previous\n\t  releases.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://docs.couchdb.org/en/stable/cve/2018-17188.html"
-    ],
-    "cvename": [
-      "CVE-2018-17188"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-12-01",
-    "entry": "2018-12-13"
-  }
+	"vid": "1999a215-fc6b-11e8-8a95-ac1f6b67e138",
+	"topic": "couchdb -- administrator privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"couchdb"
+			],
+			"range": [
+				{
+					"lt": "2.3.0,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"couchdb2"
+			],
+			"range": [
+				{
+					"lt": "2.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Apache CouchDB PMC reports:</p>\n\t<blockquote cite=\"https://lists.apache.org/thread.html/...\">\n\t  <p>Database Administrator could achieve privilege escalation to\n\t  the account that CouchDB runs under, by abusing insufficient validation\n\t  in the HTTP API, escaping security controls implemented in previous\n\t  releases.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://docs.couchdb.org/en/stable/cve/2018-17188.html"
+		],
+		"cvename": [
+			"CVE-2018-17188"
+		]
+	},
+	"dates": {
+		"discovery": "2018-12-01",
+		"entry": "2018-12-13"
+	}
 }

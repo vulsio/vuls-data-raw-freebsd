@@ -1,80 +1,80 @@
 {
-  "vid": "4c8d1d72-9b38-11e5-aece-d050996490d0",
-  "topic": "openssl -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2_5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mingw32-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2e",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1e_7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.2_8",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_25",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_31",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20151203.txt\">\n\t  <ol>\n\t    <li>BN_mod_exp may produce incorrect results on x86_64\n\t      (CVE-2015-3193)</li>\n\t    <li>Certificate verify crash with missing PSS parameter\n\t      (CVE-2015-3194)</li>\n\t    <li>X509_ATTRIBUTE memory leak (CVE-2015-3195)</li>\n\t    <li>Race condition handling PSK identify hint\n\t      (CVE-2015-3196)</li>\n\t    <li>Anon DH ServerKeyExchange with 0 p parameter\n\t      (CVE-2015-1794)</li>\n\t  </ol>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20151203.txt"
-    ],
-    "cvename": [
-      "CVE-2015-1794",
-      "CVE-2015-3193",
-      "CVE-2015-3194",
-      "CVE-2015-3195",
-      "CVE-2015-3196"
-    ],
-    "freebsd_sa": [
-      "SA-15:26.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-03",
-    "entry": "2015-12-05",
-    "modified": "2016-08-09"
-  }
+	"vid": "4c8d1d72-9b38-11e5-aece-d050996490d0",
+	"topic": "openssl -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2_5"
+				}
+			]
+		},
+		{
+			"name": [
+				"mingw32-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2e",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1e_7"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.2_8",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_25",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_31",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20151203.txt\">\n\t  <ol>\n\t    <li>BN_mod_exp may produce incorrect results on x86_64\n\t      (CVE-2015-3193)</li>\n\t    <li>Certificate verify crash with missing PSS parameter\n\t      (CVE-2015-3194)</li>\n\t    <li>X509_ATTRIBUTE memory leak (CVE-2015-3195)</li>\n\t    <li>Race condition handling PSK identify hint\n\t      (CVE-2015-3196)</li>\n\t    <li>Anon DH ServerKeyExchange with 0 p parameter\n\t      (CVE-2015-1794)</li>\n\t  </ol>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20151203.txt"
+		],
+		"cvename": [
+			"CVE-2015-1794",
+			"CVE-2015-3193",
+			"CVE-2015-3194",
+			"CVE-2015-3195",
+			"CVE-2015-3196"
+		],
+		"freebsd_sa": [
+			"SA-15:26.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-03",
+		"entry": "2015-12-05",
+		"modified": "2016-08-09"
+	}
 }

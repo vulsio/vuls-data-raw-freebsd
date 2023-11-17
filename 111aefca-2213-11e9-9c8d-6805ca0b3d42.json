@@ -1,34 +1,34 @@
 {
-  "vid": "111aefca-2213-11e9-9c8d-6805ca0b3d42",
-  "topic": "phpMyAdmin -- File disclosure and SQL injection",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin",
-        "phpMyAdmin-php56",
-        "phpMyAdmin-php70",
-        "phpMyAdmin-php71",
-        "phpMyAdmin-php72"
-      ],
-      "range": [
-        {
-          "lt": "4.8.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2019-1/\">\n\t  <h3>Summary</h3>\n\t  <p>Arbitrary file read vulnerability</p>\n\t  <h3>Description</h3>\n\t  <p>When <code>AllowArbitraryServer</code> configuration set\n\t    to <code>true</code>, with the use of a rogue MySQL server,\n\t    an attacker can read any file on the server that the web\n\t    server's user can access.</p>\n\t  <p>phpMyadmin attempts to block the use of <code>LOAD DATA\n\t    INFILE</code>, but due to a <a href=\"https://bugs.php.net/bug.php?id=77496\">bug in PHP</a>,\n\t    this check is not honored. Additionally, when using the\n\t    'mysql' extension, <a href=\"http://php.net/manual/en/mysql.configuration.php#ini.mysql.allow-local-infile\">mysql.allow_local_infile</a>\n\t    is enabled by default. Both of these conditions allow the\n\t    attack to occur.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be critical.</p>\n\t  <h3>Mitigation factor</h3>\n\t  <p>This attack can be mitigated by setting the\n\t    `AllowArbitraryServer` configuration directive to false\n\t    (which is the default value).</p>\n\t  <h3>Affected Versions</h3>\n\t  <p>phpMyAdmin versions from at least 4.0 through 4.8.4 are\n\t    affected</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2019-2/\">\n\t  <h3>Summary</h3>\n\t  <p>SQL injection in Designer feature</p>\n\t  <h3>Description</h3>\n\t  <p>A vulnerability was reported where a specially crafted\n\t    username can be used to trigger an SQL injection attack\n\t    through the designer feature.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t  <h3>Affected Versions</h3>\n\t  <p>phpMyAdmin versions from 4.5.0 through 4.8.4 are affected</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2019-1/",
-      "https://www.phpmyadmin.net/security/PMASA-2019-2/"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-01-21",
-    "entry": "2019-01-27"
-  }
+	"vid": "111aefca-2213-11e9-9c8d-6805ca0b3d42",
+	"topic": "phpMyAdmin -- File disclosure and SQL injection",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin",
+				"phpMyAdmin-php56",
+				"phpMyAdmin-php70",
+				"phpMyAdmin-php71",
+				"phpMyAdmin-php72"
+			],
+			"range": [
+				{
+					"lt": "4.8.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2019-1/\">\n\t  <h3>Summary</h3>\n\t  <p>Arbitrary file read vulnerability</p>\n\t  <h3>Description</h3>\n\t  <p>When <code>AllowArbitraryServer</code> configuration set\n\t    to <code>true</code>, with the use of a rogue MySQL server,\n\t    an attacker can read any file on the server that the web\n\t    server's user can access.</p>\n\t  <p>phpMyadmin attempts to block the use of <code>LOAD DATA\n\t    INFILE</code>, but due to a <a href=\"https://bugs.php.net/bug.php?id=77496\">bug in PHP</a>,\n\t    this check is not honored. Additionally, when using the\n\t    'mysql' extension, <a href=\"http://php.net/manual/en/mysql.configuration.php#ini.mysql.allow-local-infile\">mysql.allow_local_infile</a>\n\t    is enabled by default. Both of these conditions allow the\n\t    attack to occur.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be critical.</p>\n\t  <h3>Mitigation factor</h3>\n\t  <p>This attack can be mitigated by setting the\n\t    `AllowArbitraryServer` configuration directive to false\n\t    (which is the default value).</p>\n\t  <h3>Affected Versions</h3>\n\t  <p>phpMyAdmin versions from at least 4.0 through 4.8.4 are\n\t    affected</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2019-2/\">\n\t  <h3>Summary</h3>\n\t  <p>SQL injection in Designer feature</p>\n\t  <h3>Description</h3>\n\t  <p>A vulnerability was reported where a specially crafted\n\t    username can be used to trigger an SQL injection attack\n\t    through the designer feature.</p>\n\t  <h3>Severity</h3>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t  <h3>Affected Versions</h3>\n\t  <p>phpMyAdmin versions from 4.5.0 through 4.8.4 are affected</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2019-1/",
+			"https://www.phpmyadmin.net/security/PMASA-2019-2/"
+		]
+	},
+	"dates": {
+		"discovery": "2019-01-21",
+		"entry": "2019-01-27"
+	}
 }

@@ -1,34 +1,34 @@
 {
-  "vid": "f154a3c7-f7f4-11df-b617-00e0815b8da8",
-  "topic": "isc-dhcp-server -- Empty link-address denial of service",
-  "affects": [
-    {
-      "name": [
-        "isc-dhcp41-server"
-      ],
-      "range": [
-        {
-          "lt": "4.1.2",
-          "ge": "4.1.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"http://www.isc.org/software/dhcp/advisories/cve-2010-3611\">\n\t  <p>If the server receives a DHCPv6 packet containing one or more\n\t    Relay-Forward messages, and none of them supply an address in the\n\t    Relay-Forward link-address field, then the server will crash. This\n\t    can be used as a single packet crash attack vector.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.isc.org/software/dhcp/advisories/cve-2010-3611",
-      "http://www.kb.cert.org/vuls/id/102047"
-    ],
-    "cvename": [
-      "CVE-2010-3611"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-11-02",
-    "entry": "2010-11-24"
-  }
+	"vid": "f154a3c7-f7f4-11df-b617-00e0815b8da8",
+	"topic": "isc-dhcp-server -- Empty link-address denial of service",
+	"affects": [
+		{
+			"name": [
+				"isc-dhcp41-server"
+			],
+			"range": [
+				{
+					"lt": "4.1.2",
+					"ge": "4.1.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"http://www.isc.org/software/dhcp/advisories/cve-2010-3611\">\n\t  <p>If the server receives a DHCPv6 packet containing one or more\n\t    Relay-Forward messages, and none of them supply an address in the\n\t    Relay-Forward link-address field, then the server will crash. This\n\t    can be used as a single packet crash attack vector.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.isc.org/software/dhcp/advisories/cve-2010-3611",
+			"http://www.kb.cert.org/vuls/id/102047"
+		],
+		"cvename": [
+			"CVE-2010-3611"
+		]
+	},
+	"dates": {
+		"discovery": "2010-11-02",
+		"entry": "2010-11-24"
+	}
 }

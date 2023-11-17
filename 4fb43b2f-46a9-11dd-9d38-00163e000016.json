@@ -1,41 +1,41 @@
 {
-  "vid": "4fb43b2f-46a9-11dd-9d38-00163e000016",
-  "topic": "FreeType 2 -- Multiple Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "freetype2"
-      ],
-      "range": [
-        {
-          "lt": "2.3.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30600\">\n\t  <ul>\n\t    <li>An integer overflow error exists in the processing of PFB font\n\t    files. This can be exploited to cause a heap-based buffer overflow\n\t    via a PFB file containing a specially crafted \"Private\" dictionary\n\t    table.</li>\n\t    <li>An error in the processing of PFB font files can be exploited\n\t    to trigger the \"free()\" of memory areas that are not allocated on\n\t    the heap.</li>\n\t    <li>An off-by-one error exists in the processing of PFB font files.\n\t    This can be exploited to cause a one-byte heap-based buffer\n\t    overflow via a specially crafted PFB file.</li>\n\t    <li>An off-by-one error exists in the implementation of the \"SHC\"\n\t    instruction while processing TTF files. This can be exploited to\n\t    cause a one-byte heap-based buffer overflow via a specially crafted\n\t    TTF file.</li>\n\t  </ul>\n\t  <p>Successful exploitation of the vulnerabilities may allow execution\n\t  of arbitrary code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/30600",
-      "http://sourceforge.net/project/shownotes.php?release_id=605780"
-    ],
-    "cvename": [
-      "CVE-2008-1806",
-      "CVE-2008-1807",
-      "CVE-2008-1808"
-    ],
-    "bid": [
-      "29637",
-      "29639",
-      "29640",
-      "29641"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-06-10",
-    "entry": "2008-07-03"
-  }
+	"vid": "4fb43b2f-46a9-11dd-9d38-00163e000016",
+	"topic": "FreeType 2 -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"freetype2"
+			],
+			"range": [
+				{
+					"lt": "2.3.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30600\">\n\t  <ul>\n\t    <li>An integer overflow error exists in the processing of PFB font\n\t    files. This can be exploited to cause a heap-based buffer overflow\n\t    via a PFB file containing a specially crafted \"Private\" dictionary\n\t    table.</li>\n\t    <li>An error in the processing of PFB font files can be exploited\n\t    to trigger the \"free()\" of memory areas that are not allocated on\n\t    the heap.</li>\n\t    <li>An off-by-one error exists in the processing of PFB font files.\n\t    This can be exploited to cause a one-byte heap-based buffer\n\t    overflow via a specially crafted PFB file.</li>\n\t    <li>An off-by-one error exists in the implementation of the \"SHC\"\n\t    instruction while processing TTF files. This can be exploited to\n\t    cause a one-byte heap-based buffer overflow via a specially crafted\n\t    TTF file.</li>\n\t  </ul>\n\t  <p>Successful exploitation of the vulnerabilities may allow execution\n\t  of arbitrary code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/30600",
+			"http://sourceforge.net/project/shownotes.php?release_id=605780"
+		],
+		"cvename": [
+			"CVE-2008-1806",
+			"CVE-2008-1807",
+			"CVE-2008-1808"
+		],
+		"bid": [
+			"29637",
+			"29639",
+			"29640",
+			"29641"
+		]
+	},
+	"dates": {
+		"discovery": "2008-06-10",
+		"entry": "2008-07-03"
+	}
 }

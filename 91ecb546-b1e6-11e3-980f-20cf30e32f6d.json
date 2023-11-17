@@ -1,86 +1,86 @@
 {
-  "vid": "91ecb546-b1e6-11e3-980f-20cf30e32f6d",
-  "topic": "apache -- several vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "apache24"
-      ],
-      "range": [
-        {
-          "lt": "2.4.9",
-          "gt": "2.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22"
-      ],
-      "range": [
-        {
-          "lt": "2.2.27",
-          "gt": "2.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22-event-mpm"
-      ],
-      "range": [
-        {
-          "lt": "2.2.27",
-          "gt": "2.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22-itk-mpm"
-      ],
-      "range": [
-        {
-          "lt": "2.2.27",
-          "gt": "2.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22-peruser-mpm"
-      ],
-      "range": [
-        {
-          "lt": "2.2.27",
-          "gt": "2.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22-worker-mpm"
-      ],
-      "range": [
-        {
-          "lt": "2.2.27",
-          "gt": "2.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://www.apache.org/dist/httpd/CHANGES_2.2.27\">\n\t  <p>Clean up cookie logging with fewer redundant string parsing passes.\n\t    Log only cookies with a value assignment. Prevents segfaults when\n\t    logging truncated cookies.</p>\n\t  <p>mod_dav: Keep track of length of cdata properly when removing leading\n\t    spaces. Eliminates a potential denial of service from specifically\n\t    crafted DAV WRITE requests.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-0098",
-      "CVE-2013-6438"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-02-25",
-    "entry": "2014-03-22"
-  }
+	"vid": "91ecb546-b1e6-11e3-980f-20cf30e32f6d",
+	"topic": "apache -- several vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"apache24"
+			],
+			"range": [
+				{
+					"lt": "2.4.9",
+					"gt": "2.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22"
+			],
+			"range": [
+				{
+					"lt": "2.2.27",
+					"gt": "2.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22-event-mpm"
+			],
+			"range": [
+				{
+					"lt": "2.2.27",
+					"gt": "2.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22-itk-mpm"
+			],
+			"range": [
+				{
+					"lt": "2.2.27",
+					"gt": "2.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22-peruser-mpm"
+			],
+			"range": [
+				{
+					"lt": "2.2.27",
+					"gt": "2.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22-worker-mpm"
+			],
+			"range": [
+				{
+					"lt": "2.2.27",
+					"gt": "2.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://www.apache.org/dist/httpd/CHANGES_2.2.27\">\n\t  <p>Clean up cookie logging with fewer redundant string parsing passes.\n\t    Log only cookies with a value assignment. Prevents segfaults when\n\t    logging truncated cookies.</p>\n\t  <p>mod_dav: Keep track of length of cdata properly when removing leading\n\t    spaces. Eliminates a potential denial of service from specifically\n\t    crafted DAV WRITE requests.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-0098",
+			"CVE-2013-6438"
+		]
+	},
+	"dates": {
+		"discovery": "2014-02-25",
+		"entry": "2014-03-22"
+	}
 }

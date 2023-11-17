@@ -1,57 +1,57 @@
 {
-  "vid": "6f0529e2-2e82-11e6-b2ec-b499baebfeaf",
-  "topic": "OpenSSL -- vulnerability in DSA signing",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2_13"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libressl"
-      ],
-      "range": [
-        {
-          "lt": "2.2.9"
-        },
-        {
-          "lt": "2.3.6",
-          "ge": "2.3.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libressl-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.4.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL team reports:</p>\n\t<blockquote cite=\"https://git.openssl.org/?p=openssl.git;a=commit;h=399944622df7bd81af62e67ea967c470534090e2\">\n\t  <p>Operations in the DSA signing algorithm should run in constant time\n\t    in order to avoid side channel attacks. A flaw in the OpenSSL DSA\n\t    implementation means that a non-constant time codepath is followed for\n\t    certain operations. This has been demonstrated through a cache-timing\n\t    attack to be sufficient for an attacker to recover the private DSA key.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://git.openssl.org/?p=openssl.git;a=commit;h=399944622df7bd81af62e67ea967c470534090e2"
-    ],
-    "cvename": [
-      "CVE-2016-2178"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-06-09",
-    "entry": "2016-06-09",
-    "modified": "2016-12-20"
-  }
+	"vid": "6f0529e2-2e82-11e6-b2ec-b499baebfeaf",
+	"topic": "OpenSSL -- vulnerability in DSA signing",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2_13"
+				}
+			]
+		},
+		{
+			"name": [
+				"libressl"
+			],
+			"range": [
+				{
+					"lt": "2.2.9"
+				},
+				{
+					"lt": "2.3.6",
+					"ge": "2.3.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"libressl-devel"
+			],
+			"range": [
+				{
+					"lt": "2.4.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL team reports:</p>\n\t<blockquote cite=\"https://git.openssl.org/?p=openssl.git;a=commit;h=399944622df7bd81af62e67ea967c470534090e2\">\n\t  <p>Operations in the DSA signing algorithm should run in constant time\n\t    in order to avoid side channel attacks. A flaw in the OpenSSL DSA\n\t    implementation means that a non-constant time codepath is followed for\n\t    certain operations. This has been demonstrated through a cache-timing\n\t    attack to be sufficient for an attacker to recover the private DSA key.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://git.openssl.org/?p=openssl.git;a=commit;h=399944622df7bd81af62e67ea967c470534090e2"
+		],
+		"cvename": [
+			"CVE-2016-2178"
+		]
+	},
+	"dates": {
+		"discovery": "2016-06-09",
+		"entry": "2016-06-09",
+		"modified": "2016-12-20"
+	}
 }

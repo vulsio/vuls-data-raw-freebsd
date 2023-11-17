@@ -1,32 +1,32 @@
 {
-  "vid": "e3ec8b30-757b-11ec-922f-654747404482",
-  "topic": "Prosody XMPP server advisory 2022-01-13",
-  "affects": [
-    {
-      "name": [
-        "prosody"
-      ],
-      "range": [
-        {
-          "lt": "0.11.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Prosody teaM reports:</p>\n\t<blockquote cite=\"https://prosody.im/security/advisory_20220113/\">\n\t  <p>It was discovered that an internal Prosody library to load XML based on\n\t  does not properly restrict the XML features allowed in parsed\n\t  XML data. Given suitable attacker input, this results in expansion of\n\t  recursive entity references from DTDs (CWE-776). In addition,\n\t  depending on the libexpat version used, it may also allow injections\n\t  using XML External Entity References (CWE-611).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://prosody.im/security/advisory_20220113/"
-    ],
-    "cvename": [
-      "CVE-2022-0217"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-01-10",
-    "entry": "2022-01-14"
-  }
+	"vid": "e3ec8b30-757b-11ec-922f-654747404482",
+	"topic": "Prosody XMPP server advisory 2022-01-13",
+	"affects": [
+		{
+			"name": [
+				"prosody"
+			],
+			"range": [
+				{
+					"lt": "0.11.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Prosody teaM reports:</p>\n\t<blockquote cite=\"https://prosody.im/security/advisory_20220113/\">\n\t  <p>It was discovered that an internal Prosody library to load XML based on\n\t  does not properly restrict the XML features allowed in parsed\n\t  XML data. Given suitable attacker input, this results in expansion of\n\t  recursive entity references from DTDs (CWE-776). In addition,\n\t  depending on the libexpat version used, it may also allow injections\n\t  using XML External Entity References (CWE-611).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://prosody.im/security/advisory_20220113/"
+		],
+		"cvename": [
+			"CVE-2022-0217"
+		]
+	},
+	"dates": {
+		"discovery": "2022-01-10",
+		"entry": "2022-01-14"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "2220827b-c732-11ec-b272-901b0e934d69",
-  "topic": "hiredis -- integer/buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "hiredis"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>hiredis maintainers report:</p>\n\t<blockquote cite=\"https://github.com/redis/hiredis/security/advisories/GHSA-hfm9-39pp-55p2\">\n\t  <p>\n\t    Hiredis is vulnurable to integer overflow if provided maliciously crafted or corrupted RESP mult-bulk protocol data.\n\n\t    When parsing multi-bulk (array-like) replies, hiredis fails to check if count * sizeof(redisReply*) can be represented in SIZE_MAX. If it can not, and the calloc() call doesn't itself make this check, it would result in a short allocation and subsequent buffer overflow.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32765",
-      "https://github.com/redis/hiredis/security/advisories/GHSA-hfm9-39pp-55p2"
-    ],
-    "cvename": [
-      "CVE-2021-32765"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-10-04",
-    "entry": "2022-04-29"
-  }
+	"vid": "2220827b-c732-11ec-b272-901b0e934d69",
+	"topic": "hiredis -- integer/buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"hiredis"
+			],
+			"range": [
+				{
+					"lt": "1.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>hiredis maintainers report:</p>\n\t<blockquote cite=\"https://github.com/redis/hiredis/security/advisories/GHSA-hfm9-39pp-55p2\">\n\t  <p>\n\t    Hiredis is vulnurable to integer overflow if provided maliciously crafted or corrupted RESP mult-bulk protocol data.\n\n\t    When parsing multi-bulk (array-like) replies, hiredis fails to check if count * sizeof(redisReply*) can be represented in SIZE_MAX. If it can not, and the calloc() call doesn't itself make this check, it would result in a short allocation and subsequent buffer overflow.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32765",
+			"https://github.com/redis/hiredis/security/advisories/GHSA-hfm9-39pp-55p2"
+		],
+		"cvename": [
+			"CVE-2021-32765"
+		]
+	},
+	"dates": {
+		"discovery": "2021-10-04",
+		"entry": "2022-04-29"
+	}
 }

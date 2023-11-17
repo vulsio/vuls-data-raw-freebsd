@@ -1,41 +1,41 @@
 {
-  "vid": "aecee357-739e-11e1-a883-001cc0a36e12",
-  "topic": "gnutls -- possible overflow/Denial of service vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gnutls"
-      ],
-      "range": [
-        {
-          "lt": "2.12.18"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gnutls-devel"
-      ],
-      "range": [
-        {
-          "lt": "3.0.15",
-          "gt": "2.99"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mu Dynamics, Inc. reports:</p>\n\t<blockquote cite=\"http://article.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/5959\">\n\t  <p>The block cipher decryption logic in GnuTLS assumed that a\n\t    record containing any data which was a multiple of the block\n\t    size was valid for further decryption processing, leading to\n\t    a heap corruption vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-1573"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-03-20",
-    "entry": "2012-03-21",
-    "modified": "2012-03-24"
-  }
+	"vid": "aecee357-739e-11e1-a883-001cc0a36e12",
+	"topic": "gnutls -- possible overflow/Denial of service vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gnutls"
+			],
+			"range": [
+				{
+					"lt": "2.12.18"
+				}
+			]
+		},
+		{
+			"name": [
+				"gnutls-devel"
+			],
+			"range": [
+				{
+					"lt": "3.0.15",
+					"gt": "2.99"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mu Dynamics, Inc. reports:</p>\n\t<blockquote cite=\"http://article.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/5959\">\n\t  <p>The block cipher decryption logic in GnuTLS assumed that a\n\t    record containing any data which was a multiple of the block\n\t    size was valid for further decryption processing, leading to\n\t    a heap corruption vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-1573"
+		]
+	},
+	"dates": {
+		"discovery": "2012-03-20",
+		"entry": "2012-03-21",
+		"modified": "2012-03-24"
+	}
 }

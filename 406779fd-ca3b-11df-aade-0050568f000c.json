@@ -1,47 +1,47 @@
 {
-  "vid": "406779fd-ca3b-11df-aade-0050568f000c",
-  "topic": "FreeBSD -- SSL protocol flaw",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.3_14",
-          "ge": "6.3"
-        },
-        {
-          "lt": "6.4_8",
-          "ge": "6.4"
-        },
-        {
-          "lt": "7.1_9",
-          "ge": "7.1"
-        },
-        {
-          "lt": "7.2_5",
-          "ge": "7.2"
-        },
-        {
-          "lt": "8.0_1",
-          "ge": "8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The SSL version 3 and TLS protocols support session\n\t  renegotiation without cryptographically tying the new\n\t  session parameters to the old parameters.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-09:15.ssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-12-03",
-    "entry": "2010-10-24",
-    "modified": "2016-08-09"
-  }
+	"vid": "406779fd-ca3b-11df-aade-0050568f000c",
+	"topic": "FreeBSD -- SSL protocol flaw",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.3_14",
+					"ge": "6.3"
+				},
+				{
+					"lt": "6.4_8",
+					"ge": "6.4"
+				},
+				{
+					"lt": "7.1_9",
+					"ge": "7.1"
+				},
+				{
+					"lt": "7.2_5",
+					"ge": "7.2"
+				},
+				{
+					"lt": "8.0_1",
+					"ge": "8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The SSL version 3 and TLS protocols support session\n\t  renegotiation without cryptographically tying the new\n\t  session parameters to the old parameters.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-09:15.ssl"
+		]
+	},
+	"dates": {
+		"discovery": "2009-12-03",
+		"entry": "2010-10-24",
+		"modified": "2016-08-09"
+	}
 }

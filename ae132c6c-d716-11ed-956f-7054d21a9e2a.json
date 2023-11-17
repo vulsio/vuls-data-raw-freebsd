@@ -1,46 +1,46 @@
 {
-  "vid": "ae132c6c-d716-11ed-956f-7054d21a9e2a",
-  "topic": "py-tensorflow -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py37-tensorflow",
-        "py38-tensorflow",
-        "py39-tensorflow",
-        "py310-tensorflow",
-        "py311-tensorflow"
-      ],
-      "range": [
-        {
-          "lt": "2.8.4"
-        },
-        {
-          "lt": "2.9.3",
-          "ge": "2.9.0"
-        },
-        {
-          "lt": "2.10.1",
-          "ge": "2.10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>Kang Hong Jin, Neophytos Christou, 刘力源 and Pattarakrit Rattankul report:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc\">\n      <p>Another instance of CVE-2022-35935, where `SobolSample` is vulnerable to a denial of service via assumed scalar inputs, was found and fixed.</p>\n    </blockquote>\n    <p>Pattarakrit Rattankul reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m\">\n      <p>Another instance of CVE-2022-35991, where `TensorListScatter` and `TensorListScatterV2` crash via non scalar inputs in`element_shape`, was found in eager mode and fixed.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc",
-      "https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m"
-    ],
-    "cvename": [
-      "CVE-2022-35935",
-      "CVE-2022-35991"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-11-21",
-    "entry": "2023-04-09"
-  }
+	"vid": "ae132c6c-d716-11ed-956f-7054d21a9e2a",
+	"topic": "py-tensorflow -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py37-tensorflow",
+				"py38-tensorflow",
+				"py39-tensorflow",
+				"py310-tensorflow",
+				"py311-tensorflow"
+			],
+			"range": [
+				{
+					"lt": "2.8.4"
+				},
+				{
+					"lt": "2.9.3",
+					"ge": "2.9.0"
+				},
+				{
+					"lt": "2.10.1",
+					"ge": "2.10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>Kang Hong Jin, Neophytos Christou, 刘力源 and Pattarakrit Rattankul report:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc\">\n      <p>Another instance of CVE-2022-35935, where `SobolSample` is vulnerable to a denial of service via assumed scalar inputs, was found and fixed.</p>\n    </blockquote>\n    <p>Pattarakrit Rattankul reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m\">\n      <p>Another instance of CVE-2022-35991, where `TensorListScatter` and `TensorListScatterV2` crash via non scalar inputs in`element_shape`, was found in eager mode and fixed.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc",
+			"https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m"
+		],
+		"cvename": [
+			"CVE-2022-35935",
+			"CVE-2022-35991"
+		]
+	},
+	"dates": {
+		"discovery": "2022-11-21",
+		"entry": "2023-04-09"
+	}
 }

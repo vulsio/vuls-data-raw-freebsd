@@ -1,39 +1,39 @@
 {
-  "vid": "1c2a9d76-9d98-43c3-8f5d-8c059b104d99",
-  "topic": "jenkins -- multiple issues",
-  "affects": [
-    {
-      "name": [
-        "jenkins"
-      ],
-      "range": [
-        {
-          "lt": "2.89"
-        }
-      ]
-    },
-    {
-      "name": [
-        "jenkins-lts"
-      ],
-      "range": [
-        {
-          "lt": "2.73.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jenkins developers report:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/99574\">\n\t  <p>Jenkins stores metadata related to people, which encompasses actual user accounts, as well as users appearing in SCM, in directories corresponding to the user ID on disk. These directories used the user ID for their name without additional escaping. This potentially resulted in a number of problems.</p>\n\t  <p>Autocompletion suggestions for text fields were not escaped, resulting in a persisted cross-site scripting vulnerability if the source for the suggestions allowed specifying text that includes HTML metacharacters like less-than and greater-than characters.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://jenkins.io/security/advisory/2017-11-08/"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-11-08",
-    "entry": "2017-11-09"
-  }
+	"vid": "1c2a9d76-9d98-43c3-8f5d-8c059b104d99",
+	"topic": "jenkins -- multiple issues",
+	"affects": [
+		{
+			"name": [
+				"jenkins"
+			],
+			"range": [
+				{
+					"lt": "2.89"
+				}
+			]
+		},
+		{
+			"name": [
+				"jenkins-lts"
+			],
+			"range": [
+				{
+					"lt": "2.73.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jenkins developers report:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/99574\">\n\t  <p>Jenkins stores metadata related to people, which encompasses actual user accounts, as well as users appearing in SCM, in directories corresponding to the user ID on disk. These directories used the user ID for their name without additional escaping. This potentially resulted in a number of problems.</p>\n\t  <p>Autocompletion suggestions for text fields were not escaped, resulting in a persisted cross-site scripting vulnerability if the source for the suggestions allowed specifying text that includes HTML metacharacters like less-than and greater-than characters.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://jenkins.io/security/advisory/2017-11-08/"
+		]
+	},
+	"dates": {
+		"discovery": "2017-11-08",
+		"entry": "2017-11-09"
+	}
 }

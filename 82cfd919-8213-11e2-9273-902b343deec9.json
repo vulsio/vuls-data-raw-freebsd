@@ -1,32 +1,32 @@
 {
-  "vid": "82cfd919-8213-11e2-9273-902b343deec9",
-  "topic": "sudo -- Potential bypass of tty_tickets constraints",
-  "affects": [
-    {
-      "name": [
-        "sudo"
-      ],
-      "range": [
-        {
-          "lt": "1.8.6.p7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.sudo.ws/sudo/alerts/tty_tickets.html\">\n\t  <p>A (potentially malicious) program run by a user with sudo access\n\t    may be able to bypass the \"tty_ticket\" constraints. In order for\n\t    this to succeed there must exist on the machine a terminal device\n\t    that the user has previously authenticated themselves on via sudo\n\t    within the last time stamp timeout (5 minutes by default).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.sudo.ws/sudo/alerts/tty_tickets.html"
-    ],
-    "cvename": [
-      "CVE-2013-1776"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-02-27",
-    "entry": "2013-03-01"
-  }
+	"vid": "82cfd919-8213-11e2-9273-902b343deec9",
+	"topic": "sudo -- Potential bypass of tty_tickets constraints",
+	"affects": [
+		{
+			"name": [
+				"sudo"
+			],
+			"range": [
+				{
+					"lt": "1.8.6.p7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.sudo.ws/sudo/alerts/tty_tickets.html\">\n\t  <p>A (potentially malicious) program run by a user with sudo access\n\t    may be able to bypass the \"tty_ticket\" constraints. In order for\n\t    this to succeed there must exist on the machine a terminal device\n\t    that the user has previously authenticated themselves on via sudo\n\t    within the last time stamp timeout (5 minutes by default).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.sudo.ws/sudo/alerts/tty_tickets.html"
+		],
+		"cvename": [
+			"CVE-2013-1776"
+		]
+	},
+	"dates": {
+		"discovery": "2013-02-27",
+		"entry": "2013-03-01"
+	}
 }

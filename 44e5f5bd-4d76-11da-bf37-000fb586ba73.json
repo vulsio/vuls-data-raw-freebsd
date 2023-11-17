@@ -1,29 +1,29 @@
 {
-  "vid": "44e5f5bd-4d76-11da-bf37-000fb586ba73",
-  "topic": "pear-PEAR -- PEAR installer arbitrary code execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "pear-PEAR"
-      ],
-      "range": [
-        {
-          "lt": "1.4.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gregory Beaver reports:</p>\n\t<blockquote cite=\"http://pear.php.net/advisory-20051104.txt\">\n\t  <p>A standard feature of the PEAR installer implemented in\n\t    all versions of PEAR can lead to the execution of\n\t    arbitrary PHP code upon running the \"pear\" command\n\t    or loading the Web/Gtk frontend.</p>\n\t  <p>To be vulnerable, a user must explicitly install a\n\t    publicly released malicious package using the PEAR\n\t    installer, or explicitly install a package that depends on\n\t    a malicious package.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://pear.php.net/advisory-20051104.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-11-01",
-    "entry": "2005-11-04"
-  }
+	"vid": "44e5f5bd-4d76-11da-bf37-000fb586ba73",
+	"topic": "pear-PEAR -- PEAR installer arbitrary code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"pear-PEAR"
+			],
+			"range": [
+				{
+					"lt": "1.4.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gregory Beaver reports:</p>\n\t<blockquote cite=\"http://pear.php.net/advisory-20051104.txt\">\n\t  <p>A standard feature of the PEAR installer implemented in\n\t    all versions of PEAR can lead to the execution of\n\t    arbitrary PHP code upon running the \"pear\" command\n\t    or loading the Web/Gtk frontend.</p>\n\t  <p>To be vulnerable, a user must explicitly install a\n\t    publicly released malicious package using the PEAR\n\t    installer, or explicitly install a package that depends on\n\t    a malicious package.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://pear.php.net/advisory-20051104.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2005-11-01",
+		"entry": "2005-11-04"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "vid": "56f0f11e-ba4d-11e6-ae1b-002590263bf5",
-  "topic": "xen-kernel -- x86 64-bit bit test instruction emulation broken",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-195.html\">\n\t  <p>The x86 instructions BT, BTC, BTR, and BTS, when used with a\n\t    destination memory operand and a source register rather than an\n\t    immediate operand, access a memory location offset from that\n\t    specified by the memory operand as specified by the high bits of\n\t    the register source.</p>\n\t  <p>A malicious guest can modify arbitrary memory, allowing for\n\t    arbitrary code execution (and therefore privilege escalation\n\t    affecting the whole host), a crash of the host (leading to a DoS),\n\t    or information leaks. The vulnerability is sometimes exploitable\n\t    by unprivileged guest user processes.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xenbits.xen.org/xsa/advisory-195.html"
-    ],
-    "cvename": [
-      "CVE-2016-9383"
-    ],
-    "freebsd_pr": [
-      "ports/214936"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-22",
-    "entry": "2016-12-04"
-  }
+	"vid": "56f0f11e-ba4d-11e6-ae1b-002590263bf5",
+	"topic": "xen-kernel -- x86 64-bit bit test instruction emulation broken",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-195.html\">\n\t  <p>The x86 instructions BT, BTC, BTR, and BTS, when used with a\n\t    destination memory operand and a source register rather than an\n\t    immediate operand, access a memory location offset from that\n\t    specified by the memory operand as specified by the high bits of\n\t    the register source.</p>\n\t  <p>A malicious guest can modify arbitrary memory, allowing for\n\t    arbitrary code execution (and therefore privilege escalation\n\t    affecting the whole host), a crash of the host (leading to a DoS),\n\t    or information leaks. The vulnerability is sometimes exploitable\n\t    by unprivileged guest user processes.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xenbits.xen.org/xsa/advisory-195.html"
+		],
+		"cvename": [
+			"CVE-2016-9383"
+		],
+		"freebsd_pr": [
+			"ports/214936"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-22",
+		"entry": "2016-12-04"
+	}
 }

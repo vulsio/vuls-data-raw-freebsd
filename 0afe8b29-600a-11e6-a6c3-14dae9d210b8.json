@@ -1,41 +1,41 @@
 {
-  "vid": "0afe8b29-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Integer overflow in IGMP protocol",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.1_9",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_13",
-          "ge": "9.3"
-        },
-        {
-          "lt": "8.4_27",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>An integer overflow in computing the size of IGMPv3 data\n\tbuffer can result in a buffer which is too small for the\n\trequested operation.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can send specifically crafted IGMP packets\n\tcould cause a denial of service situation by causing the\n\tkernel to crash.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2015-1414"
-    ],
-    "freebsd_sa": [
-      "SA-15:04.igmp"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-02-25",
-    "entry": "2016-08-11"
-  }
+	"vid": "0afe8b29-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Integer overflow in IGMP protocol",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.1_9",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_13",
+					"ge": "9.3"
+				},
+				{
+					"lt": "8.4_27",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>An integer overflow in computing the size of IGMPv3 data\n\tbuffer can result in a buffer which is too small for the\n\trequested operation.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can send specifically crafted IGMP packets\n\tcould cause a denial of service situation by causing the\n\tkernel to crash.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2015-1414"
+		],
+		"freebsd_sa": [
+			"SA-15:04.igmp"
+		]
+	},
+	"dates": {
+		"discovery": "2015-02-25",
+		"entry": "2016-08-11"
+	}
 }

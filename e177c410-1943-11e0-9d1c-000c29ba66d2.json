@@ -1,34 +1,34 @@
 {
-  "vid": "e177c410-1943-11e0-9d1c-000c29ba66d2",
-  "topic": "mediawiki -- Clickjacking vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mediawiki"
-      ],
-      "range": [
-        {
-          "lt": "1.16.1",
-          "gt": "1.16"
-        },
-        {
-          "lt": "1.15.5_1",
-          "gt": "1.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Clickjacking vulnerabilities:</p>\n\t<blockquote cite=\"https://bugzilla.wikimedia.org/show_bug.cgi?id=26561\">\n\t  <p>Clickjacking is a type of vulnerability discovered in 2008, which\n\t    is similar to CSRF. The attack involves displaying the target webpage\n\t    in a iframe embedded in a malicious website. Using CSS, the submit button\n\t    of the form on the targeit webpage is made invisible, and then overlaid\n\t    with some button or link on the malicious website that encourages\n\t    the user to click on it.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.wikimedia.org/show_bug.cgi?id=26561"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-01-04",
-    "entry": "2011-01-06"
-  }
+	"vid": "e177c410-1943-11e0-9d1c-000c29ba66d2",
+	"topic": "mediawiki -- Clickjacking vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mediawiki"
+			],
+			"range": [
+				{
+					"lt": "1.16.1",
+					"gt": "1.16"
+				},
+				{
+					"lt": "1.15.5_1",
+					"gt": "1.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Clickjacking vulnerabilities:</p>\n\t<blockquote cite=\"https://bugzilla.wikimedia.org/show_bug.cgi?id=26561\">\n\t  <p>Clickjacking is a type of vulnerability discovered in 2008, which\n\t    is similar to CSRF. The attack involves displaying the target webpage\n\t    in a iframe embedded in a malicious website. Using CSS, the submit button\n\t    of the form on the targeit webpage is made invisible, and then overlaid\n\t    with some button or link on the malicious website that encourages\n\t    the user to click on it.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.wikimedia.org/show_bug.cgi?id=26561"
+		]
+	},
+	"dates": {
+		"discovery": "2011-01-04",
+		"entry": "2011-01-06"
+	}
 }

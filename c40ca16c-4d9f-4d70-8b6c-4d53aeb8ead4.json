@@ -1,33 +1,33 @@
 {
-  "vid": "c40ca16c-4d9f-4d70-8b6c-4d53aeb8ead4",
-  "topic": "cURL -- uninitialized random vulnerability",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.52.1",
-          "ge": "7.52.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Project curl Security Advisory:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20161223.html\">\n\t  <p>libcurl's (new) internal function that returns a good 32bit\n\t    random value was implemented poorly and overwrote the pointer\n\t    instead of writing the value into the buffer the pointer\n\t    pointed to.</p>\n\t  <p>This random value is used to generate nonces for Digest and\n\t    NTLM authentication, for generating boundary strings in HTTP\n\t    formposts and more. Having a weak or virtually non-existent\n\t    random there makes these operations vulnerable.</p>\n\t  <p>This function is brand new in 7.52.0 and is the result of an\n\t    overhaul to make sure libcurl uses strong random as much as\n\t    possible - provided by the backend TLS crypto libraries when\n\t    present. The faulty function was introduced in this commit.</p>\n\t  <p>We are not aware of any exploit of this flaw.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/adv_20161223.html"
-    ],
-    "cvename": [
-      "CVE-2016-9594"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-12-23",
-    "entry": "2016-12-24"
-  }
+	"vid": "c40ca16c-4d9f-4d70-8b6c-4d53aeb8ead4",
+	"topic": "cURL -- uninitialized random vulnerability",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.52.1",
+					"ge": "7.52.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Project curl Security Advisory:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/adv_20161223.html\">\n\t  <p>libcurl's (new) internal function that returns a good 32bit\n\t    random value was implemented poorly and overwrote the pointer\n\t    instead of writing the value into the buffer the pointer\n\t    pointed to.</p>\n\t  <p>This random value is used to generate nonces for Digest and\n\t    NTLM authentication, for generating boundary strings in HTTP\n\t    formposts and more. Having a weak or virtually non-existent\n\t    random there makes these operations vulnerable.</p>\n\t  <p>This function is brand new in 7.52.0 and is the result of an\n\t    overhaul to make sure libcurl uses strong random as much as\n\t    possible - provided by the backend TLS crypto libraries when\n\t    present. The faulty function was introduced in this commit.</p>\n\t  <p>We are not aware of any exploit of this flaw.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/adv_20161223.html"
+		],
+		"cvename": [
+			"CVE-2016-9594"
+		]
+	},
+	"dates": {
+		"discovery": "2016-12-23",
+		"entry": "2016-12-24"
+	}
 }

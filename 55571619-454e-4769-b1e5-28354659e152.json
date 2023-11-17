@@ -1,29 +1,29 @@
 {
-  "vid": "55571619-454e-4769-b1e5-28354659e152",
-  "topic": "bro -- invalid memory access or heap buffer over-read",
-  "affects": [
-    {
-      "name": [
-        "bro"
-      ],
-      "range": [
-        {
-          "lt": "2.6.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jon Siwek of Corelight reports:</p>\n\t<blockquote cite=\"https://raw.githubusercontent.com/zeek/zeek/3b5a9f88ece1d274edee897837e280ef751bde94/NEWS\">\n\t  <p>This is a security patch release to address a potential\n\t  Denial of Service vulnerability:</p>\n\t  <ul>\n\t  <li>\n\t  The NTLM analyzer did not properly handle AV Pair sequences\n\t  that were either empty or unterminated, resulting in\n\t  invalid memory access or heap buffer over-read.  The NTLM\n\t  analyzer is enabled by default and used in the analysis\n\t  of SMB, DCE/RPC, and GSSAPI protocols.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://raw.githubusercontent.com/zeek/zeek/3b5a9f88ece1d274edee897837e280ef751bde94/NEWS"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-28",
-    "entry": "2019-09-17"
-  }
+	"vid": "55571619-454e-4769-b1e5-28354659e152",
+	"topic": "bro -- invalid memory access or heap buffer over-read",
+	"affects": [
+		{
+			"name": [
+				"bro"
+			],
+			"range": [
+				{
+					"lt": "2.6.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jon Siwek of Corelight reports:</p>\n\t<blockquote cite=\"https://raw.githubusercontent.com/zeek/zeek/3b5a9f88ece1d274edee897837e280ef751bde94/NEWS\">\n\t  <p>This is a security patch release to address a potential\n\t  Denial of Service vulnerability:</p>\n\t  <ul>\n\t  <li>\n\t  The NTLM analyzer did not properly handle AV Pair sequences\n\t  that were either empty or unterminated, resulting in\n\t  invalid memory access or heap buffer over-read.  The NTLM\n\t  analyzer is enabled by default and used in the analysis\n\t  of SMB, DCE/RPC, and GSSAPI protocols.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://raw.githubusercontent.com/zeek/zeek/3b5a9f88ece1d274edee897837e280ef751bde94/NEWS"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-28",
+		"entry": "2019-09-17"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "f4c54b81-bcc8-11eb-a7a6-080027f515ea",
-  "topic": "binutils -- excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
-  "affects": [
-    {
-      "name": [
-        "binutils"
-      ],
-      "range": [
-        {
-          "lt": "2.33.1_5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Hao Wang reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487\">\n\t  <p>\n\t    There's a flaw in the BFD library of binutils in versions before 2.36.\n\t    An attacker who supplies a crafted file to an application linked with BFD,\n\t    and using the DWARF functionality, could cause an impact to system\n\t    availability by way of excessive memory consumption.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://sourceware.org/bugzilla/show_bug.cgi?id=26946"
-    ],
-    "cvename": [
-      "CVE-2021-3487"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-11-25",
-    "entry": "2021-08-13"
-  }
+	"vid": "f4c54b81-bcc8-11eb-a7a6-080027f515ea",
+	"topic": "binutils -- excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
+	"affects": [
+		{
+			"name": [
+				"binutils"
+			],
+			"range": [
+				{
+					"lt": "2.33.1_5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Hao Wang reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487\">\n\t  <p>\n\t    There's a flaw in the BFD library of binutils in versions before 2.36.\n\t    An attacker who supplies a crafted file to an application linked with BFD,\n\t    and using the DWARF functionality, could cause an impact to system\n\t    availability by way of excessive memory consumption.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://sourceware.org/bugzilla/show_bug.cgi?id=26946"
+		],
+		"cvename": [
+			"CVE-2021-3487"
+		]
+	},
+	"dates": {
+		"discovery": "2020-11-25",
+		"entry": "2021-08-13"
+	}
 }

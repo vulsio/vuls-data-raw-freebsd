@@ -1,48 +1,48 @@
 {
-  "vid": "aaab03be-932d-11e7-92d8-4b26fc968492",
-  "topic": "Django -- possible XSS in traceback section of technical 500 debug page",
-  "affects": [
-    {
-      "name": [
-        "py27-django110",
-        "py34-django110",
-        "py35-django110",
-        "py36-django110"
-      ],
-      "range": [
-        {
-          "lt": "1.10.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django111",
-        "py34-django111",
-        "py35-django111",
-        "py36-django111"
-      ],
-      "range": [
-        {
-          "lt": "1.11.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django blog:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2017/sep/05/security-releases/\">\n\t  <p>In older versions, HTML autoescaping was disabled in a portion of the template\n\t    for the technical 500 debug page. Given the right circumstances, this allowed a\n\t    cross-site scripting attack. This vulnerability shouldn't affect most production\n\t    sites since you shouldn't run with DEBUG = True (which makes this page accessible)\n\t    in your production settings.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.djangoproject.com/weblog/2017/sep/05/security-releases/"
-    ],
-    "cvename": [
-      "CVE-2017-12794"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-05",
-    "entry": "2017-09-06"
-  }
+	"vid": "aaab03be-932d-11e7-92d8-4b26fc968492",
+	"topic": "Django -- possible XSS in traceback section of technical 500 debug page",
+	"affects": [
+		{
+			"name": [
+				"py27-django110",
+				"py34-django110",
+				"py35-django110",
+				"py36-django110"
+			],
+			"range": [
+				{
+					"lt": "1.10.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django111",
+				"py34-django111",
+				"py35-django111",
+				"py36-django111"
+			],
+			"range": [
+				{
+					"lt": "1.11.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django blog:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2017/sep/05/security-releases/\">\n\t  <p>In older versions, HTML autoescaping was disabled in a portion of the template\n\t    for the technical 500 debug page. Given the right circumstances, this allowed a\n\t    cross-site scripting attack. This vulnerability shouldn't affect most production\n\t    sites since you shouldn't run with DEBUG = True (which makes this page accessible)\n\t    in your production settings.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2017/sep/05/security-releases/"
+		],
+		"cvename": [
+			"CVE-2017-12794"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-05",
+		"entry": "2017-09-06"
+	}
 }

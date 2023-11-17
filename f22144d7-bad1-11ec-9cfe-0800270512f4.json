@@ -1,74 +1,74 @@
 {
-  "vid": "f22144d7-bad1-11ec-9cfe-0800270512f4",
-  "topic": "Ruby -- Double free in Regexp compilation",
-  "affects": [
-    {
-      "name": [
-        "ruby"
-      ],
-      "range": [
-        {
-          "lt": "3.0.4,1",
-          "ge": "3.0.0,1"
-        },
-        {
-          "lt": "3.1.2,1",
-          "ge": "3.1.0,1"
-        },
-        {
-          "lt": "3.2.0.p1_1,1",
-          "ge": "3.2.0.p1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby30"
-      ],
-      "range": [
-        {
-          "lt": "3.0.4,1",
-          "ge": "3.0.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby31"
-      ],
-      "range": [
-        {
-          "lt": "3.1.2,1",
-          "ge": "3.1.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ruby32"
-      ],
-      "range": [
-        {
-          "lt": "3.2.0.p1_1,1",
-          "ge": "3.2.0.p1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>piao reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2022/04/12/double-free-in-regexp-compilation-cve-2022-28738/\">\n\t  <p>\n\t    Due to a bug in the Regexp compilation process, creating\n\t    a Regexp object with a crafted source string could cause\n\t    the same memory to be freed twice. This is known as a\n\t    \"double free\" vulnerability. Note that, in general, it\n\t    is considered unsafe to create and use a Regexp object\n\t    generated from untrusted input. In this case, however,\n\t    following a comprehensive assessment, we treat this issue\n\t    as a vulnerability.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.ruby-lang.org/en/news/2022/04/12/double-free-in-regexp-compilation-cve-2022-28738/"
-    ],
-    "cvename": [
-      "CVE-2022-28738"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-12",
-    "entry": "2022-04-13"
-  }
+	"vid": "f22144d7-bad1-11ec-9cfe-0800270512f4",
+	"topic": "Ruby -- Double free in Regexp compilation",
+	"affects": [
+		{
+			"name": [
+				"ruby"
+			],
+			"range": [
+				{
+					"lt": "3.0.4,1",
+					"ge": "3.0.0,1"
+				},
+				{
+					"lt": "3.1.2,1",
+					"ge": "3.1.0,1"
+				},
+				{
+					"lt": "3.2.0.p1_1,1",
+					"ge": "3.2.0.p1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby30"
+			],
+			"range": [
+				{
+					"lt": "3.0.4,1",
+					"ge": "3.0.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby31"
+			],
+			"range": [
+				{
+					"lt": "3.1.2,1",
+					"ge": "3.1.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby32"
+			],
+			"range": [
+				{
+					"lt": "3.2.0.p1_1,1",
+					"ge": "3.2.0.p1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>piao reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2022/04/12/double-free-in-regexp-compilation-cve-2022-28738/\">\n\t  <p>\n\t    Due to a bug in the Regexp compilation process, creating\n\t    a Regexp object with a crafted source string could cause\n\t    the same memory to be freed twice. This is known as a\n\t    \"double free\" vulnerability. Note that, in general, it\n\t    is considered unsafe to create and use a Regexp object\n\t    generated from untrusted input. In this case, however,\n\t    following a comprehensive assessment, we treat this issue\n\t    as a vulnerability.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2022/04/12/double-free-in-regexp-compilation-cve-2022-28738/"
+		],
+		"cvename": [
+			"CVE-2022-28738"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-12",
+		"entry": "2022-04-13"
+	}
 }

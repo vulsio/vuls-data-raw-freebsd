@@ -1,36 +1,36 @@
 {
-  "vid": "92268205-1947-11d9-bc4a-000c41e2cdad",
-  "topic": "cyrus-sasl -- dynamic library loading and set-user-ID applications",
-  "affects": [
-    {
-      "name": [
-        "cyrus-sasl"
-      ],
-      "range": [
-        {
-          "le": "1.5.28_3"
-        },
-        {
-          "ge": "2.*",
-          "le": "2.1.19"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Cyrus SASL library, libsasl, contains functions which\n\t  may load dynamic libraries.  These libraries may be loaded\n\t  from the path specified by the environmental variable\n\t  SASL_PATH, which in some situations may be fully controlled\n\t  by a local attacker.\tThus, if a set-user-ID application\n\t  (such as chsh) utilizes libsasl, it may be possible for a\n\t  local attacker to gain superuser privileges.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.andrew.cmu.edu/cgi-bin/cvsweb.cgi/src/sasl/lib/common.c#rev1.104"
-    ],
-    "cvename": [
-      "CVE-2004-0884"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-22",
-    "entry": "2004-10-08"
-  }
+	"vid": "92268205-1947-11d9-bc4a-000c41e2cdad",
+	"topic": "cyrus-sasl -- dynamic library loading and set-user-ID applications",
+	"affects": [
+		{
+			"name": [
+				"cyrus-sasl"
+			],
+			"range": [
+				{
+					"le": "1.5.28_3"
+				},
+				{
+					"ge": "2.*",
+					"le": "2.1.19"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Cyrus SASL library, libsasl, contains functions which\n\t  may load dynamic libraries.  These libraries may be loaded\n\t  from the path specified by the environmental variable\n\t  SASL_PATH, which in some situations may be fully controlled\n\t  by a local attacker.\tThus, if a set-user-ID application\n\t  (such as chsh) utilizes libsasl, it may be possible for a\n\t  local attacker to gain superuser privileges.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.andrew.cmu.edu/cgi-bin/cvsweb.cgi/src/sasl/lib/common.c#rev1.104"
+		],
+		"cvename": [
+			"CVE-2004-0884"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-22",
+		"entry": "2004-10-08"
+	}
 }

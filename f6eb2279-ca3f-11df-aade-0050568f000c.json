@@ -1,31 +1,31 @@
 {
-  "vid": "f6eb2279-ca3f-11df-aade-0050568f000c",
-  "topic": "FreeBSD -- Insufficient environment sanitization in jail(8)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "8.0_3",
-          "ge": "8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The jail(8) utility does not change the current working directory\n\t  while imprisoning. The current working directory can be accessed by\n\t  its descendants.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-10:04.jail"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-05-27",
-    "entry": "2010-10-24",
-    "modified": "2016-08-09"
-  }
+	"vid": "f6eb2279-ca3f-11df-aade-0050568f000c",
+	"topic": "FreeBSD -- Insufficient environment sanitization in jail(8)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "8.0_3",
+					"ge": "8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The jail(8) utility does not change the current working directory\n\t  while imprisoning. The current working directory can be accessed by\n\t  its descendants.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-10:04.jail"
+		]
+	},
+	"dates": {
+		"discovery": "2010-05-27",
+		"entry": "2010-10-24",
+		"modified": "2016-08-09"
+	}
 }

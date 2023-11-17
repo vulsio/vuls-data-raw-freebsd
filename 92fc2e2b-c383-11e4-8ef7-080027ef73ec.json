@@ -1,32 +1,32 @@
 {
-  "vid": "92fc2e2b-c383-11e4-8ef7-080027ef73ec",
-  "topic": "PuTTY -- fails to scrub private keys from memory after use",
-  "affects": [
-    {
-      "name": [
-        "putty"
-      ],
-      "range": [
-        {
-          "lt": "0.64"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon Tatham reports:</p>\n\t<blockquote cite=\"http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/private-key-not-wiped-2.html\">\n\t  <p>When PuTTY has sensitive data in memory and has no further need for\n\t    it, it should wipe the data out of its memory, in case malware later\n\t    gains access to the PuTTY process or the memory is swapped out to\n\t    disk or written into a crash dump file. An obvious example of this\n\t    is the password typed during SSH login; other examples include\n\t    obsolete session keys, public-key passphrases, and the private\n\t    halves of public keys.</p>\n\t    <p>PuTTY 0.63 and earlier versions, after loading a private key\n\t      from a disk file, mistakenly leak a memory buffer containing a\n\t      copy of the private key, in the function ssh2_load_userkey. The\n\t      companion function ssh2_save_userkey (only called by PuTTYgen) can\n\t      also leak a copy, but only in the case where the file it tried to\n\t      save to could not be created.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/private-key-not-wiped-2.html"
-    ],
-    "cvename": [
-      "CVE-2015-2157"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-02-28",
-    "entry": "2015-03-05"
-  }
+	"vid": "92fc2e2b-c383-11e4-8ef7-080027ef73ec",
+	"topic": "PuTTY -- fails to scrub private keys from memory after use",
+	"affects": [
+		{
+			"name": [
+				"putty"
+			],
+			"range": [
+				{
+					"lt": "0.64"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon Tatham reports:</p>\n\t<blockquote cite=\"http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/private-key-not-wiped-2.html\">\n\t  <p>When PuTTY has sensitive data in memory and has no further need for\n\t    it, it should wipe the data out of its memory, in case malware later\n\t    gains access to the PuTTY process or the memory is swapped out to\n\t    disk or written into a crash dump file. An obvious example of this\n\t    is the password typed during SSH login; other examples include\n\t    obsolete session keys, public-key passphrases, and the private\n\t    halves of public keys.</p>\n\t    <p>PuTTY 0.63 and earlier versions, after loading a private key\n\t      from a disk file, mistakenly leak a memory buffer containing a\n\t      copy of the private key, in the function ssh2_load_userkey. The\n\t      companion function ssh2_save_userkey (only called by PuTTYgen) can\n\t      also leak a copy, but only in the case where the file it tried to\n\t      save to could not be created.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/private-key-not-wiped-2.html"
+		],
+		"cvename": [
+			"CVE-2015-2157"
+		]
+	},
+	"dates": {
+		"discovery": "2015-02-28",
+		"entry": "2015-03-05"
+	}
 }

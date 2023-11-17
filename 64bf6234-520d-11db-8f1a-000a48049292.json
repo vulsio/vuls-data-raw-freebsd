@@ -1,37 +1,37 @@
 {
-  "vid": "64bf6234-520d-11db-8f1a-000a48049292",
-  "topic": "gnutls -- RSA Signature Forgery Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "gnutls",
-        "gnutls-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.4.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21937\">\n\t  <p>A vulnerability has been reported in GnuTLS, which can be\n\t    exploited by malicious people to bypass certain security\n\t    restrictions.</p>\n\t  <p>The vulnerability is caused due to an error in the\n\t    verification of certain signatures. If a RSA key with\n\t    exponent 3 is used, it may be possible to forge PKCS #1\n\t    v1.5 signatures signed with that key.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/21937",
-      "http://lists.gnupg.org/pipermail/gnutls-dev/2006-September/001205.html"
-    ],
-    "cvename": [
-      "CVE-2006-4790"
-    ],
-    "bid": [
-      "20027"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-09-08",
-    "entry": "2006-10-02"
-  }
+	"vid": "64bf6234-520d-11db-8f1a-000a48049292",
+	"topic": "gnutls -- RSA Signature Forgery Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"gnutls",
+				"gnutls-devel"
+			],
+			"range": [
+				{
+					"lt": "1.4.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21937\">\n\t  <p>A vulnerability has been reported in GnuTLS, which can be\n\t    exploited by malicious people to bypass certain security\n\t    restrictions.</p>\n\t  <p>The vulnerability is caused due to an error in the\n\t    verification of certain signatures. If a RSA key with\n\t    exponent 3 is used, it may be possible to forge PKCS #1\n\t    v1.5 signatures signed with that key.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/21937",
+			"http://lists.gnupg.org/pipermail/gnutls-dev/2006-September/001205.html"
+		],
+		"cvename": [
+			"CVE-2006-4790"
+		],
+		"bid": [
+			"20027"
+		]
+	},
+	"dates": {
+		"discovery": "2006-09-08",
+		"entry": "2006-10-02"
+	}
 }

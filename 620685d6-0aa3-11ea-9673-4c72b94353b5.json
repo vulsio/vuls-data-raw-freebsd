@@ -1,33 +1,33 @@
 {
-  "vid": "620685d6-0aa3-11ea-9673-4c72b94353b5",
-  "topic": "squid -- Vulnerable to HTTP Digest Authentication",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "4.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Squid Team reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2019_11.txt\">\n\t  <p>Problem Description: Due to incorrect data management Squid is\n\t    vulnerable to a information disclosure when processing HTTP Digest\n\t    Authentication.</p>\n\t  <p>Severity: Nonce tokens contain the raw byte value of a pointer which sits\n\t    within heap memory allocation. This information reduces ASLR protections\n\t    and may aid attackers isolating memory areas to target for remote code\n\t    execution attacks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Advisories/SQUID-2019_11.txt",
-      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-18679"
-    ],
-    "cvename": [
-      "CVE-2019-18679"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-11-05",
-    "entry": "2019-11-19"
-  }
+	"vid": "620685d6-0aa3-11ea-9673-4c72b94353b5",
+	"topic": "squid -- Vulnerable to HTTP Digest Authentication",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "4.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Squid Team reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2019_11.txt\">\n\t  <p>Problem Description: Due to incorrect data management Squid is\n\t    vulnerable to a information disclosure when processing HTTP Digest\n\t    Authentication.</p>\n\t  <p>Severity: Nonce tokens contain the raw byte value of a pointer which sits\n\t    within heap memory allocation. This information reduces ASLR protections\n\t    and may aid attackers isolating memory areas to target for remote code\n\t    execution attacks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Advisories/SQUID-2019_11.txt",
+			"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-18679"
+		],
+		"cvename": [
+			"CVE-2019-18679"
+		]
+	},
+	"dates": {
+		"discovery": "2019-11-05",
+		"entry": "2019-11-19"
+	}
 }

@@ -1,29 +1,29 @@
 {
-  "vid": "ee50726e-0319-11e6-aa86-001999f8d30b",
-  "topic": "asterisk -- Long Contact URIs in REGISTER requests can crash Asterisk",
-  "affects": [
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.8.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>Asterisk may crash when processing an incoming REGISTER\n\t  request if that REGISTER contains a Contact header with\n\t  a lengthy URI.</p>\n\t  <p>This crash will only happen for requests that pass\n\t  authentication. Unauthenticated REGISTER requests will\n\t  not result in a crash occurring.</p>\n\t  <p>This vulnerability only affects Asterisk when using\n\t  PJSIP as its SIP stack. The chan_sip module does not have\n\t  this problem.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2016-004.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-19",
-    "entry": "2016-04-15"
-  }
+	"vid": "ee50726e-0319-11e6-aa86-001999f8d30b",
+	"topic": "asterisk -- Long Contact URIs in REGISTER requests can crash Asterisk",
+	"affects": [
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.8.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>Asterisk may crash when processing an incoming REGISTER\n\t  request if that REGISTER contains a Contact header with\n\t  a lengthy URI.</p>\n\t  <p>This crash will only happen for requests that pass\n\t  authentication. Unauthenticated REGISTER requests will\n\t  not result in a crash occurring.</p>\n\t  <p>This vulnerability only affects Asterisk when using\n\t  PJSIP as its SIP stack. The chan_sip module does not have\n\t  this problem.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2016-004.html"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-19",
+		"entry": "2016-04-15"
+	}
 }

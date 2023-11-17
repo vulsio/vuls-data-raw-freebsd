@@ -1,49 +1,49 @@
 {
-  "vid": "10968dfd-a687-11e6-b2d3-60a44ce6887b",
-  "topic": "gitlab -- Directory traversal via \"import/export\" feature",
-  "affects": [
-    {
-      "name": [
-        "gitlab"
-      ],
-      "range": [
-        {
-          "ge": "8.10.0",
-          "le": "8.10.12"
-        },
-        {
-          "ge": "8.11.0",
-          "le": "8.11.9"
-        },
-        {
-          "ge": "8.12.0",
-          "le": "8.12.7"
-        },
-        {
-          "ge": "8.13.0",
-          "le": "8.13.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>GitLab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2016/11/02/cve-2016-9086-patches/\">\n\t<p>The import/export feature did not properly check for symbolic links\n\t   in user-provided archives and therefore it was possible for an\n\t   authenticated user to retrieve the contents of any file\n\t   accessible to the GitLab service account. This included\n\t   sensitive files such as those that contain secret tokens used\n\t   by the GitLab service to authenticate users.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/2016/11/02/cve-2016-9086-patches/"
-    ],
-    "cvename": [
-      "CVE-2016-9086"
-    ],
-    "freebsd_pr": [
-      "ports/214360"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-02",
-    "entry": "2016-11-09",
-    "modified": "2017-05-18"
-  }
+	"vid": "10968dfd-a687-11e6-b2d3-60a44ce6887b",
+	"topic": "gitlab -- Directory traversal via \"import/export\" feature",
+	"affects": [
+		{
+			"name": [
+				"gitlab"
+			],
+			"range": [
+				{
+					"ge": "8.10.0",
+					"le": "8.10.12"
+				},
+				{
+					"ge": "8.11.0",
+					"le": "8.11.9"
+				},
+				{
+					"ge": "8.12.0",
+					"le": "8.12.7"
+				},
+				{
+					"ge": "8.13.0",
+					"le": "8.13.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GitLab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2016/11/02/cve-2016-9086-patches/\">\n\t<p>The import/export feature did not properly check for symbolic links\n\t   in user-provided archives and therefore it was possible for an\n\t   authenticated user to retrieve the contents of any file\n\t   accessible to the GitLab service account. This included\n\t   sensitive files such as those that contain secret tokens used\n\t   by the GitLab service to authenticate users.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/2016/11/02/cve-2016-9086-patches/"
+		],
+		"cvename": [
+			"CVE-2016-9086"
+		],
+		"freebsd_pr": [
+			"ports/214360"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-02",
+		"entry": "2016-11-09",
+		"modified": "2017-05-18"
+	}
 }

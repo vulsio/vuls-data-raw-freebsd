@@ -1,112 +1,112 @@
 {
-  "vid": "7d08e608-5e95-11e6-b334-002590263bf5",
-  "topic": "BIND,Knot,NSD,PowerDNS -- denial over service via oversized zone transfers",
-  "affects": [
-    {
-      "name": [
-        "bind99"
-      ],
-      "range": [
-        {
-          "le": "9.9.9P2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind910"
-      ],
-      "range": [
-        {
-          "le": "9.10.4P2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind911"
-      ],
-      "range": [
-        {
-          "le": "9.11.0.b2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind9-devel"
-      ],
-      "range": [
-        {
-          "le": "9.12.0.a.2016.11.02"
-        }
-      ]
-    },
-    {
-      "name": [
-        "knot",
-        "knot1"
-      ],
-      "range": [
-        {
-          "lt": "1.6.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "knot2"
-      ],
-      "range": [
-        {
-          "lt": "2.3.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "nsd"
-      ],
-      "range": [
-        {
-          "lt": "4.1.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "powerdns"
-      ],
-      "range": [
-        {
-          "lt": "4.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01390\">\n\t  <p>DNS protocols were designed with the assumption that a certain\n\t    amount of trust could be presumed between the operators of primary\n\t    and secondary servers for a given zone. However, in current\n\t    practice some organizations have scenarios which require them to\n\t    accept zone data from sources that are not fully trusted (for\n\t    example: providers of secondary name service). A party who is\n\t    allowed to feed data into a zone (e.g. by AXFR, IXFR, or Dynamic DNS\n\t    updates) can overwhelm the server which is accepting data by\n\t    intentionally or accidentally exhausting that server's memory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://kb.isc.org/article/AA-01390"
-    ],
-    "cvename": [
-      "CVE-2016-6170",
-      "CVE-2016-6171",
-      "CVE-2016-6172",
-      "CVE-2016-6173"
-    ],
-    "mlist": [
-      {
-        "text": "http://www.openwall.com/lists/oss-security/2016/07/06/4"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2016-07-06",
-    "entry": "2016-08-10",
-    "modified": "2017-04-24"
-  }
+	"vid": "7d08e608-5e95-11e6-b334-002590263bf5",
+	"topic": "BIND,Knot,NSD,PowerDNS -- denial over service via oversized zone transfers",
+	"affects": [
+		{
+			"name": [
+				"bind99"
+			],
+			"range": [
+				{
+					"le": "9.9.9P2"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind910"
+			],
+			"range": [
+				{
+					"le": "9.10.4P2"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind911"
+			],
+			"range": [
+				{
+					"le": "9.11.0.b2"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind9-devel"
+			],
+			"range": [
+				{
+					"le": "9.12.0.a.2016.11.02"
+				}
+			]
+		},
+		{
+			"name": [
+				"knot",
+				"knot1"
+			],
+			"range": [
+				{
+					"lt": "1.6.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"knot2"
+			],
+			"range": [
+				{
+					"lt": "2.3.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"nsd"
+			],
+			"range": [
+				{
+					"lt": "4.1.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"powerdns"
+			],
+			"range": [
+				{
+					"lt": "4.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://kb.isc.org/article/AA-01390\">\n\t  <p>DNS protocols were designed with the assumption that a certain\n\t    amount of trust could be presumed between the operators of primary\n\t    and secondary servers for a given zone. However, in current\n\t    practice some organizations have scenarios which require them to\n\t    accept zone data from sources that are not fully trusted (for\n\t    example: providers of secondary name service). A party who is\n\t    allowed to feed data into a zone (e.g. by AXFR, IXFR, or Dynamic DNS\n\t    updates) can overwhelm the server which is accepting data by\n\t    intentionally or accidentally exhausting that server's memory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://kb.isc.org/article/AA-01390"
+		],
+		"cvename": [
+			"CVE-2016-6170",
+			"CVE-2016-6171",
+			"CVE-2016-6172",
+			"CVE-2016-6173"
+		],
+		"mlist": [
+			{
+				"text": "http://www.openwall.com/lists/oss-security/2016/07/06/4"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2016-07-06",
+		"entry": "2016-08-10",
+		"modified": "2017-04-24"
+	}
 }

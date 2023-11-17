@@ -1,33 +1,33 @@
 {
-  "vid": "f4876dd4-9ca8-11e8-aa17-0011d823eebd",
-  "topic": "mbed TLS -- plaintext recovery vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mbedtls"
-      ],
-      "range": [
-        {
-          "lt": "2.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon Butcher reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-02\">\n\t  <ul>\n\t    <li>When using a CBC based ciphersuite, a remote attacker can\n\t      partially recover the plaintext.</li>\n\t    <li>When using a CBC based ciphersuite, an attacker with the\n\t      ability to execute arbitrary code on the machine under attack\n\t      can partially recover the plaintext by use of cache based\n\t      side-channels.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-02"
-    ],
-    "cvename": [
-      "CVE-2018-0497",
-      "CVE-2018-0498"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-07-24",
-    "entry": "2018-08-10"
-  }
+	"vid": "f4876dd4-9ca8-11e8-aa17-0011d823eebd",
+	"topic": "mbed TLS -- plaintext recovery vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mbedtls"
+			],
+			"range": [
+				{
+					"lt": "2.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon Butcher reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-02\">\n\t  <ul>\n\t    <li>When using a CBC based ciphersuite, a remote attacker can\n\t      partially recover the plaintext.</li>\n\t    <li>When using a CBC based ciphersuite, an attacker with the\n\t      ability to execute arbitrary code on the machine under attack\n\t      can partially recover the plaintext by use of cache based\n\t      side-channels.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-02"
+		],
+		"cvename": [
+			"CVE-2018-0497",
+			"CVE-2018-0498"
+		]
+	},
+	"dates": {
+		"discovery": "2018-07-24",
+		"entry": "2018-08-10"
+	}
 }

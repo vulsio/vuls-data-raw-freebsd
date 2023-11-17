@@ -1,56 +1,56 @@
 {
-  "vid": "85eb4e46-cf16-11e5-840f-485d605f4717",
-  "topic": "php -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "php55",
-        "php55-phar",
-        "php55-wddx"
-      ],
-      "range": [
-        {
-          "lt": "5.5.32"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56",
-        "php56-phar",
-        "php56-wddx"
-      ],
-      "range": [
-        {
-          "lt": "5.6.18"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.6.18\">\n\t  <ul><li>Core:\n\t  <ul>\n\t    <li>Fixed bug #71039 (exec functions ignore length but look for NULL\n\t      termination).</li>\n\t    <li>Fixed bug #71323 (Output of stream_get_meta_data can be\n\t      falsified by its input).</li>\n\t    <li>Fixed bug #71459 (Integer overflow in iptcembed()).</li>\n\t  </ul></li>\n\t  <li>PCRE:\n\t  <ul>\n\t    <li>Upgraded bundled PCRE library to 8.38.(CVE-2015-8383,\n\t      CVE-2015-8386, CVE-2015-8387, CVE-2015-8389, CVE-2015-8390,\n\t      CVE-2015-8391, CVE-2015-8393, CVE-2015-8394)</li>\n\t  </ul></li>\n\t  <li>Phar:\n\t  <ul>\n\t    <li>Fixed bug #71354 (Heap corruption in tar/zip/phar parser).</li>\n\t    <li>Fixed bug #71391 (NULL Pointer Dereference in\n\t      phar_tar_setupmetadata()).</li>\n\t    <li>Fixed bug #71488 (Stack overflow when decompressing tar\n\t      archives). (CVE-2016-2554)</li>\n\t  </ul></li>\n\t  <li>WDDX:\n\t  <ul>\n\t    <li>Fixed bug #71335 (Type Confusion in WDDX Packet\n\t      Deserialization).</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://php.net/ChangeLog-5.php#5.6.18",
-      "http://php.net/ChangeLog-5.php#5.5.32"
-    ],
-    "cvename": [
-      "CVE-2015-8383",
-      "CVE-2015-8386",
-      "CVE-2015-8387",
-      "CVE-2015-8389",
-      "CVE-2015-8390",
-      "CVE-2015-8391",
-      "CVE-2015-8393",
-      "CVE-2015-8394",
-      "CVE-2016-2554"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-04",
-    "entry": "2016-02-09",
-    "modified": "2016-03-13"
-  }
+	"vid": "85eb4e46-cf16-11e5-840f-485d605f4717",
+	"topic": "php -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php55",
+				"php55-phar",
+				"php55-wddx"
+			],
+			"range": [
+				{
+					"lt": "5.5.32"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56",
+				"php56-phar",
+				"php56-wddx"
+			],
+			"range": [
+				{
+					"lt": "5.6.18"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PHP reports:</p>\n\t<blockquote cite=\"http://php.net/ChangeLog-5.php#5.6.18\">\n\t  <ul><li>Core:\n\t  <ul>\n\t    <li>Fixed bug #71039 (exec functions ignore length but look for NULL\n\t      termination).</li>\n\t    <li>Fixed bug #71323 (Output of stream_get_meta_data can be\n\t      falsified by its input).</li>\n\t    <li>Fixed bug #71459 (Integer overflow in iptcembed()).</li>\n\t  </ul></li>\n\t  <li>PCRE:\n\t  <ul>\n\t    <li>Upgraded bundled PCRE library to 8.38.(CVE-2015-8383,\n\t      CVE-2015-8386, CVE-2015-8387, CVE-2015-8389, CVE-2015-8390,\n\t      CVE-2015-8391, CVE-2015-8393, CVE-2015-8394)</li>\n\t  </ul></li>\n\t  <li>Phar:\n\t  <ul>\n\t    <li>Fixed bug #71354 (Heap corruption in tar/zip/phar parser).</li>\n\t    <li>Fixed bug #71391 (NULL Pointer Dereference in\n\t      phar_tar_setupmetadata()).</li>\n\t    <li>Fixed bug #71488 (Stack overflow when decompressing tar\n\t      archives). (CVE-2016-2554)</li>\n\t  </ul></li>\n\t  <li>WDDX:\n\t  <ul>\n\t    <li>Fixed bug #71335 (Type Confusion in WDDX Packet\n\t      Deserialization).</li>\n\t  </ul></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://php.net/ChangeLog-5.php#5.6.18",
+			"http://php.net/ChangeLog-5.php#5.5.32"
+		],
+		"cvename": [
+			"CVE-2015-8383",
+			"CVE-2015-8386",
+			"CVE-2015-8387",
+			"CVE-2015-8389",
+			"CVE-2015-8390",
+			"CVE-2015-8391",
+			"CVE-2015-8393",
+			"CVE-2015-8394",
+			"CVE-2016-2554"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-04",
+		"entry": "2016-02-09",
+		"modified": "2016-03-13"
+	}
 }

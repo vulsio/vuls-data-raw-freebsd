@@ -1,40 +1,40 @@
 {
-  "vid": "29dd0065-81fa-11d9-a9e7-0001020eed82",
-  "topic": "kdelibs -- insecure temporary file creation",
-  "affects": [
-    {
-      "name": [
-        "kdelibs",
-        "ja-kdelibs"
-      ],
-      "range": [
-        {
-          "lt": "3.3.2_5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Davide Madrisan reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110814653804757\">\n\t  <p>The `dcopidlng' script in the KDE library package\n\t    (kdelibs-3.3.2/dcop/dcopidlng/dcopidlng) creates temporary\n\t    files in a unsecure manner.</p>\n\t</blockquote>\n\t<p><strong>Note:</strong> dcopidlng is only used at build\n\t  time, so only users installing KDE are vulnerable, not users\n\t  already running KDE.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.kde.org/show_bug.cgi?id=97608"
-    ],
-    "cvename": [
-      "CVE-2005-0365"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110814653804757",
-        "msgid": "200502110916.48921.davide.madrisan@qilinux.it"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-21",
-    "entry": "2005-02-18",
-    "modified": "2005-02-20"
-  }
+	"vid": "29dd0065-81fa-11d9-a9e7-0001020eed82",
+	"topic": "kdelibs -- insecure temporary file creation",
+	"affects": [
+		{
+			"name": [
+				"kdelibs",
+				"ja-kdelibs"
+			],
+			"range": [
+				{
+					"lt": "3.3.2_5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Davide Madrisan reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110814653804757\">\n\t  <p>The `dcopidlng' script in the KDE library package\n\t    (kdelibs-3.3.2/dcop/dcopidlng/dcopidlng) creates temporary\n\t    files in a unsecure manner.</p>\n\t</blockquote>\n\t<p><strong>Note:</strong> dcopidlng is only used at build\n\t  time, so only users installing KDE are vulnerable, not users\n\t  already running KDE.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.kde.org/show_bug.cgi?id=97608"
+		],
+		"cvename": [
+			"CVE-2005-0365"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110814653804757",
+				"msgid": "200502110916.48921.davide.madrisan@qilinux.it"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-21",
+		"entry": "2005-02-18",
+		"modified": "2005-02-20"
+	}
 }

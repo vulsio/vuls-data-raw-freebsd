@@ -1,44 +1,44 @@
 {
-  "vid": "4f7c6af3-6a2c-4ead-8453-04e509688d45",
-  "topic": "salt -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py27-salt",
-        "py32-salt",
-        "py33-salt",
-        "py34-salt",
-        "py35-salt",
-        "py36-salt",
-        "py37-salt"
-      ],
-      "range": [
-        {
-          "lt": "2017.7.8"
-        },
-        {
-          "lt": "2018.3.3",
-          "ge": "2018.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SaltStack reports:</p>\n\t<blockquote cite=\"https://docs.saltstack.com/en/latest/topics/releases/2018.3.3.html\">\n\t  <p>Remote command execution and incorrect access control when using\n\t    salt-api.</p>\n\t  <p>Directory traversal vulnerability when using salt-api. Allows an\n\t    attacker to determine what files exist on a server when querying\n\t    /run or /events.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.saltstack.com/en/latest/topics/releases/2018.3.3.html",
-      "https://docs.saltstack.com/en/2017.7/topics/releases/2017.7.8.html"
-    ],
-    "cvename": [
-      "CVE-2018-15751",
-      "CVE-2018-15750"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-10-24",
-    "entry": "2018-10-27"
-  }
+	"vid": "4f7c6af3-6a2c-4ead-8453-04e509688d45",
+	"topic": "salt -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py27-salt",
+				"py32-salt",
+				"py33-salt",
+				"py34-salt",
+				"py35-salt",
+				"py36-salt",
+				"py37-salt"
+			],
+			"range": [
+				{
+					"lt": "2017.7.8"
+				},
+				{
+					"lt": "2018.3.3",
+					"ge": "2018.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SaltStack reports:</p>\n\t<blockquote cite=\"https://docs.saltstack.com/en/latest/topics/releases/2018.3.3.html\">\n\t  <p>Remote command execution and incorrect access control when using\n\t    salt-api.</p>\n\t  <p>Directory traversal vulnerability when using salt-api. Allows an\n\t    attacker to determine what files exist on a server when querying\n\t    /run or /events.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.saltstack.com/en/latest/topics/releases/2018.3.3.html",
+			"https://docs.saltstack.com/en/2017.7/topics/releases/2017.7.8.html"
+		],
+		"cvename": [
+			"CVE-2018-15751",
+			"CVE-2018-15750"
+		]
+	},
+	"dates": {
+		"discovery": "2018-10-24",
+		"entry": "2018-10-27"
+	}
 }

@@ -1,36 +1,36 @@
 {
-  "vid": "c7ccc33f-7d31-11d9-a9e7-0001020eed82",
-  "topic": "mailman -- directory traversal vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mailman",
-        "ja-mailman"
-      ],
-      "range": [
-        {
-          "lt": "2.1.5_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A directory traversal vulnerability in mailman allow remote\n\t  attackers to read arbitrary files due to inadequate input\n\t  sanitizing.  This could, among other things, lead remote\n\t  attackers to gaining access to the mailman configuration\n\t  database (which contains subscriber email addresses and\n\t  passwords) or to the mail archives for private lists.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-0202"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=110797575304304",
-        "msgid": "20050209181502.GA26136@grok.org.uk"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-02",
-    "entry": "2005-02-12"
-  }
+	"vid": "c7ccc33f-7d31-11d9-a9e7-0001020eed82",
+	"topic": "mailman -- directory traversal vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mailman",
+				"ja-mailman"
+			],
+			"range": [
+				{
+					"lt": "2.1.5_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A directory traversal vulnerability in mailman allow remote\n\t  attackers to read arbitrary files due to inadequate input\n\t  sanitizing.  This could, among other things, lead remote\n\t  attackers to gaining access to the mailman configuration\n\t  database (which contains subscriber email addresses and\n\t  passwords) or to the mail archives for private lists.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-0202"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=full-disclosure&m=110797575304304",
+				"msgid": "20050209181502.GA26136@grok.org.uk"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-02",
+		"entry": "2005-02-12"
+	}
 }

@@ -1,36 +1,36 @@
 {
-  "vid": "096ab080-907c-11ec-bb14-002324b2fba8",
-  "topic": "go -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "go"
-      ],
-      "range": [
-        {
-          "lt": "1.17.7,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/50974\">\n\t  <p>crypto/elliptic: fix IsOnCurve for big.Int values that are not\n\t    valid coordinates</p>\n\t  <p>Some big.Int values that are not valid field elements (negative or\n\t    overflowing) might cause Curve.IsOnCurve to incorrectly return true.\n\t    Operating on those values may cause a panic or an invalid curve\n\t    operation. Note that Unmarshal will never return such values.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/50699\">\n\t  <p>math/big: prevent large memory consumption in Rat.SetString</p>\n\t  <p>An attacker can cause unbounded memory growth in a program using\n\t    (*Rat).SetString due to an unhandled overflow.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/35671\">\n\t  <p>cmd/go: prevent branches from materializing into versions</p>\n\t  <p>A branch whose name resembles a version tag (such as \"v1.0.0\" or\n\t    \"subdir/v2.0.0-dev\") can be considered a valid version by the go\n\t    command. Materializing versions from branches might be unexpected\n\t    and bypass ACLs that limit the creation of tags but not branches.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/golang/go/issues/50974",
-      "https://github.com/golang/go/issues/50699",
-      "https://github.com/golang/go/issues/35671"
-    ],
-    "cvename": [
-      "CVE-2022-23806",
-      "CVE-2022-23772",
-      "CVE-2022-23773"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-02-10",
-    "entry": "2022-02-18"
-  }
+	"vid": "096ab080-907c-11ec-bb14-002324b2fba8",
+	"topic": "go -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"go"
+			],
+			"range": [
+				{
+					"lt": "1.17.7,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/50974\">\n\t  <p>crypto/elliptic: fix IsOnCurve for big.Int values that are not\n\t    valid coordinates</p>\n\t  <p>Some big.Int values that are not valid field elements (negative or\n\t    overflowing) might cause Curve.IsOnCurve to incorrectly return true.\n\t    Operating on those values may cause a panic or an invalid curve\n\t    operation. Note that Unmarshal will never return such values.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/50699\">\n\t  <p>math/big: prevent large memory consumption in Rat.SetString</p>\n\t  <p>An attacker can cause unbounded memory growth in a program using\n\t    (*Rat).SetString due to an unhandled overflow.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/golang/go/issues/35671\">\n\t  <p>cmd/go: prevent branches from materializing into versions</p>\n\t  <p>A branch whose name resembles a version tag (such as \"v1.0.0\" or\n\t    \"subdir/v2.0.0-dev\") can be considered a valid version by the go\n\t    command. Materializing versions from branches might be unexpected\n\t    and bypass ACLs that limit the creation of tags but not branches.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/golang/go/issues/50974",
+			"https://github.com/golang/go/issues/50699",
+			"https://github.com/golang/go/issues/35671"
+		],
+		"cvename": [
+			"CVE-2022-23806",
+			"CVE-2022-23772",
+			"CVE-2022-23773"
+		]
+	},
+	"dates": {
+		"discovery": "2022-02-10",
+		"entry": "2022-02-18"
+	}
 }

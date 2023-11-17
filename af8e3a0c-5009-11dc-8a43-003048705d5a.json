@@ -1,33 +1,33 @@
 {
-  "vid": "af8e3a0c-5009-11dc-8a43-003048705d5a",
-  "topic": "rsync -- off by one stack overflow",
-  "affects": [
-    {
-      "name": [
-        "rsync"
-      ],
-      "range": [
-        {
-          "lt": "2.6.9_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>BugTraq reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/25336/discuss\">\n\t  <p>The rsync utility is prone to an off-by-one buffer-overflow\n\t    vulnerability. This issue is due to a failure of the application\n\t    to properly bounds-check user-supplied input.</p>\n\t  <p>Successfully exploiting this issue may allow arbitrary\n\t    code-execution in the context of the affected utility.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2007-4091"
-    ],
-    "bid": [
-      "25336"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-08-15",
-    "entry": "2007-08-21",
-    "modified": "2007-08-23"
-  }
+	"vid": "af8e3a0c-5009-11dc-8a43-003048705d5a",
+	"topic": "rsync -- off by one stack overflow",
+	"affects": [
+		{
+			"name": [
+				"rsync"
+			],
+			"range": [
+				{
+					"lt": "2.6.9_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>BugTraq reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/25336/discuss\">\n\t  <p>The rsync utility is prone to an off-by-one buffer-overflow\n\t    vulnerability. This issue is due to a failure of the application\n\t    to properly bounds-check user-supplied input.</p>\n\t  <p>Successfully exploiting this issue may allow arbitrary\n\t    code-execution in the context of the affected utility.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2007-4091"
+		],
+		"bid": [
+			"25336"
+		]
+	},
+	"dates": {
+		"discovery": "2007-08-15",
+		"entry": "2007-08-21",
+		"modified": "2007-08-23"
+	}
 }

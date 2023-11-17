@@ -1,91 +1,91 @@
 {
-  "vid": "4cdfe875-e8d6-11e1-bea0-002354ed89bc",
-  "topic": "Wireshark -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "wireshark"
-      ],
-      "range": [
-        {
-          "lt": "1.8.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "wireshark-lite"
-      ],
-      "range": [
-        {
-          "lt": "1.8.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tshark"
-      ],
-      "range": [
-        {
-          "lt": "1.8.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tshark-lite"
-      ],
-      "range": [
-        {
-          "lt": "1.8.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Wireshark reports:</p>\n\t<blockquote cite=\"http://www.wireshark.org/docs/relnotes/wireshark-1.8.2.html\">\n\t  <p>It may be possible to make Wireshark crash by injecting a\n\t    malformed packet onto the wire or by convincing someone to read a\n\t    malformed packet trace file.</p>\n\t  <p>It may be possible to make Wireshark consume excessive CPU\n\t    resources by injecting a malformed packet onto the wire or by\n\t    convincing someone to read a malformed packet trace file.</p>\n\t  <p>The PPP dissector could crash.</p>\n\t  <p>The NFS dissector could use excessive amounts of CPU.</p>\n\t  <p>The DCP ETSI dissector could trigger a zero division.</p>\n\t  <p>The MongoDB dissector could go into a large loop.</p>\n\t  <p>The XTP dissector could go into an infinite loop.</p>\n\t  <p>The ERF dissector could overflow a buffer.</p>\n\t  <p>The AFP dissector could go into a large loop.</p>\n\t  <p>The RTPS2 dissector could overflow a buffer.</p>\n\t  <p>The GSM RLC MAC dissector could overflow a buffer.</p>\n\t  <p>The CIP dissector could exhaust system memory.</p>\n\t  <p>The STUN dissector could crash.</p>\n\t  <p>The EtherCAT Mailbox dissector could abort.</p>\n\t  <p>The CTDB dissector could go into a large loop.</p>\n\t  <p>The pcap-ng file parser could trigger a zero division.</p>\n\t  <p>The Ixia IxVeriWave file parser could overflow a buffer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.wireshark.org/security/wnpa-sec-2012-11.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-12.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-13.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-14.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-15.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-16.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-17.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-18.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-19.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-20.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-21.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-22.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-23.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-24.html",
-      "http://www.wireshark.org/security/wnpa-sec-2012-25.html"
-    ],
-    "cvename": [
-      "CVE-2012-4048",
-      "CVE-2012-4049",
-      "CVE-2012-4285",
-      "CVE-2012-4286",
-      "CVE-2012-4287",
-      "CVE-2012-4288",
-      "CVE-2012-4289",
-      "CVE-2012-4290",
-      "CVE-2012-4291",
-      "CVE-2012-4292",
-      "CVE-2012-4293",
-      "CVE-2012-4294",
-      "CVE-2012-4295",
-      "CVE-2012-4296",
-      "CVE-2012-4297",
-      "CVE-2012-4298"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-07-22",
-    "entry": "2012-08-18"
-  }
+	"vid": "4cdfe875-e8d6-11e1-bea0-002354ed89bc",
+	"topic": "Wireshark -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"wireshark"
+			],
+			"range": [
+				{
+					"lt": "1.8.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"wireshark-lite"
+			],
+			"range": [
+				{
+					"lt": "1.8.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"tshark"
+			],
+			"range": [
+				{
+					"lt": "1.8.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"tshark-lite"
+			],
+			"range": [
+				{
+					"lt": "1.8.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Wireshark reports:</p>\n\t<blockquote cite=\"http://www.wireshark.org/docs/relnotes/wireshark-1.8.2.html\">\n\t  <p>It may be possible to make Wireshark crash by injecting a\n\t    malformed packet onto the wire or by convincing someone to read a\n\t    malformed packet trace file.</p>\n\t  <p>It may be possible to make Wireshark consume excessive CPU\n\t    resources by injecting a malformed packet onto the wire or by\n\t    convincing someone to read a malformed packet trace file.</p>\n\t  <p>The PPP dissector could crash.</p>\n\t  <p>The NFS dissector could use excessive amounts of CPU.</p>\n\t  <p>The DCP ETSI dissector could trigger a zero division.</p>\n\t  <p>The MongoDB dissector could go into a large loop.</p>\n\t  <p>The XTP dissector could go into an infinite loop.</p>\n\t  <p>The ERF dissector could overflow a buffer.</p>\n\t  <p>The AFP dissector could go into a large loop.</p>\n\t  <p>The RTPS2 dissector could overflow a buffer.</p>\n\t  <p>The GSM RLC MAC dissector could overflow a buffer.</p>\n\t  <p>The CIP dissector could exhaust system memory.</p>\n\t  <p>The STUN dissector could crash.</p>\n\t  <p>The EtherCAT Mailbox dissector could abort.</p>\n\t  <p>The CTDB dissector could go into a large loop.</p>\n\t  <p>The pcap-ng file parser could trigger a zero division.</p>\n\t  <p>The Ixia IxVeriWave file parser could overflow a buffer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.wireshark.org/security/wnpa-sec-2012-11.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-12.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-13.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-14.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-15.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-16.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-17.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-18.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-19.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-20.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-21.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-22.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-23.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-24.html",
+			"http://www.wireshark.org/security/wnpa-sec-2012-25.html"
+		],
+		"cvename": [
+			"CVE-2012-4048",
+			"CVE-2012-4049",
+			"CVE-2012-4285",
+			"CVE-2012-4286",
+			"CVE-2012-4287",
+			"CVE-2012-4288",
+			"CVE-2012-4289",
+			"CVE-2012-4290",
+			"CVE-2012-4291",
+			"CVE-2012-4292",
+			"CVE-2012-4293",
+			"CVE-2012-4294",
+			"CVE-2012-4295",
+			"CVE-2012-4296",
+			"CVE-2012-4297",
+			"CVE-2012-4298"
+		]
+	},
+	"dates": {
+		"discovery": "2012-07-22",
+		"entry": "2012-08-18"
+	}
 }

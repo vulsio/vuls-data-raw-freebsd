@@ -1,42 +1,42 @@
 {
-  "vid": "da5c4072-8082-11dd-9c8c-001c2514716c",
-  "topic": "clamav -- CHM Processing Denial of Service",
-  "affects": [
-    {
-      "name": [
-        "clamav"
-      ],
-      "range": [
-        {
-          "lt": "0.94"
-        }
-      ]
-    },
-    {
-      "name": [
-        "clamav-devel"
-      ],
-      "range": [
-        {
-          "lt": "20080902"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Hanno Boeck reports:</p>\n\t<blockquote cite=\"http://int21.de/cve/CVE-2008-1389-clamav-chd.html\">\n\t  <p>A fuzzing test showed weakness in the chm parser of\n\t    clamav, which can possibly be exploited.  The clamav\n\t    team has disabled the chm module in older versions\n\t    though freshclam updates and has released 0.94 with\n\t    a fixed parser.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://wwws.clamav.net/bugzilla/show_bug.cgi?id=1089"
-    ],
-    "cvename": [
-      "CVE-2008-1389"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-07-09",
-    "entry": "2008-09-12"
-  }
+	"vid": "da5c4072-8082-11dd-9c8c-001c2514716c",
+	"topic": "clamav -- CHM Processing Denial of Service",
+	"affects": [
+		{
+			"name": [
+				"clamav"
+			],
+			"range": [
+				{
+					"lt": "0.94"
+				}
+			]
+		},
+		{
+			"name": [
+				"clamav-devel"
+			],
+			"range": [
+				{
+					"lt": "20080902"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Hanno Boeck reports:</p>\n\t<blockquote cite=\"http://int21.de/cve/CVE-2008-1389-clamav-chd.html\">\n\t  <p>A fuzzing test showed weakness in the chm parser of\n\t    clamav, which can possibly be exploited.  The clamav\n\t    team has disabled the chm module in older versions\n\t    though freshclam updates and has released 0.94 with\n\t    a fixed parser.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://wwws.clamav.net/bugzilla/show_bug.cgi?id=1089"
+		],
+		"cvename": [
+			"CVE-2008-1389"
+		]
+	},
+	"dates": {
+		"discovery": "2008-07-09",
+		"entry": "2008-09-12"
+	}
 }

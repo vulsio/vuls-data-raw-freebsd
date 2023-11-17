@@ -1,43 +1,43 @@
 {
-  "vid": "a9c5e89d-2d15-11ec-8363-0022489ad614",
-  "topic": "Node.js -- October 2021 Security Releases",
-  "affects": [
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "16.11.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node14"
-      ],
-      "range": [
-        {
-          "lt": "14.18.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/oct-2021-security-releases/\">\n\t  <h1>HTTP Request Smuggling due to spaced in headers (Medium)(CVE-2021-22959)</h1>\n\t  <p>The http parser accepts requests with a space (SP) right after the header name before the colon. This can lead to HTTP Request Smuggling (HRS).</p>\n\t  <h1>HTTP Request Smuggling when parsing the body (Medium)(CVE-2021-22960)</h1>\n\t  <p>The parse ignores chunk extensions when parsing the body of chunked requests. This leads to HTTP Request Smuggling (HRS) under certain conditions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/oct-2021-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2021-22959",
-      "CVE-2021-22960"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-10-12",
-    "entry": "2021-10-14"
-  }
+	"vid": "a9c5e89d-2d15-11ec-8363-0022489ad614",
+	"topic": "Node.js -- October 2021 Security Releases",
+	"affects": [
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "16.11.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"node14"
+			],
+			"range": [
+				{
+					"lt": "14.18.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/oct-2021-security-releases/\">\n\t  <h1>HTTP Request Smuggling due to spaced in headers (Medium)(CVE-2021-22959)</h1>\n\t  <p>The http parser accepts requests with a space (SP) right after the header name before the colon. This can lead to HTTP Request Smuggling (HRS).</p>\n\t  <h1>HTTP Request Smuggling when parsing the body (Medium)(CVE-2021-22960)</h1>\n\t  <p>The parse ignores chunk extensions when parsing the body of chunked requests. This leads to HTTP Request Smuggling (HRS) under certain conditions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/oct-2021-security-releases/"
+		],
+		"cvename": [
+			"CVE-2021-22959",
+			"CVE-2021-22960"
+		]
+	},
+	"dates": {
+		"discovery": "2021-10-12",
+		"entry": "2021-10-14"
+	}
 }

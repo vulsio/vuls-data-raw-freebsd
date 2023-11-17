@@ -1,34 +1,34 @@
 {
-  "vid": "0309c898-3aed-11eb-af2a-080027dbe4b7",
-  "topic": "glpi -- Improve encryption algorithm",
-  "affects": [
-    {
-      "name": [
-        "glpi"
-      ],
-      "range": [
-        {
-          "lt": "9.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE Corporation reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11031\">\n\t  <p>In GLPI before version 9.5.0, the encryption algorithm used is insecure. The security of the data encrypted relies on the password used, if a user sets a weak/predictable password, an attacker could decrypt data. This is fixed in version 9.5.0 by using a more secure encryption library. The library chosen is sodium.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/glpi-project/glpi/security/advisories/GHSA-7xwm-4vjr-jvqh",
-      "https://github.com/glpi-project/glpi/commit/f1ae6c8481e5c19a6f1801a5548cada45702e01a#diff-b5d0ee8c97c7abd7e3fa29b9a27d1780",
-      "https://github.com/glpi-project/glpi/commit/f1ae6c8481e5c19a6f1801a5548cada45702e01a#diff-b5d0ee8c97c7abd7e3fa29b9a27d1780"
-    ],
-    "cvename": [
-      "CVE-2020-11031"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-03-30",
-    "entry": "2020-03-30"
-  }
+	"vid": "0309c898-3aed-11eb-af2a-080027dbe4b7",
+	"topic": "glpi -- Improve encryption algorithm",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "9.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE Corporation reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11031\">\n\t  <p>In GLPI before version 9.5.0, the encryption algorithm used is insecure. The security of the data encrypted relies on the password used, if a user sets a weak/predictable password, an attacker could decrypt data. This is fixed in version 9.5.0 by using a more secure encryption library. The library chosen is sodium.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/glpi-project/glpi/security/advisories/GHSA-7xwm-4vjr-jvqh",
+			"https://github.com/glpi-project/glpi/commit/f1ae6c8481e5c19a6f1801a5548cada45702e01a#diff-b5d0ee8c97c7abd7e3fa29b9a27d1780",
+			"https://github.com/glpi-project/glpi/commit/f1ae6c8481e5c19a6f1801a5548cada45702e01a#diff-b5d0ee8c97c7abd7e3fa29b9a27d1780"
+		],
+		"cvename": [
+			"CVE-2020-11031"
+		]
+	},
+	"dates": {
+		"discovery": "2020-03-30",
+		"entry": "2020-03-30"
+	}
 }

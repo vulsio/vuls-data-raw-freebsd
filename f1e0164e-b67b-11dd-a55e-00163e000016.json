@@ -1,35 +1,35 @@
 {
-  "vid": "f1e0164e-b67b-11dd-a55e-00163e000016",
-  "topic": "libxml2 -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libxml2"
-      ],
-      "range": [
-        {
-          "lt": "2.6.32_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/Advisories/32773/\">\n\t  <p>Two vulnerabilities have been reported in Libxml2, which can be\n\t    exploited by malicious people to cause a DoS (Denial of Service) or\n\t    to potentially compromise an application using the library.</p>\n\t  <p>1) An integer overflow error in the \"xmlSAX2Characters()\" function\n\t    can be exploited to trigger a memory corruption via a specially</p>\n\t  <p>Successful exploitation may allow execution of arbitrary code, but\n\t    requires e.g. that the user is tricked into processing an overly\n\t    large XML file (2GB or more).</p>\n\t  <p>2) An integer overflow error in the \"xmlBufferResize()\" function\n\t    can be exploited to trigger the execution of an infinite loop.\n\t    The vulnerabilities are reported in version 2.7.2.</p>\n\t  <p>Other versions may also be affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=470466",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=470480",
-      "http://secunia.com/Advisories/32773/"
-    ],
-    "cvename": [
-      "CVE-2008-4225",
-      "CVE-2008-4226"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-11-18",
-    "entry": "2008-11-19"
-  }
+	"vid": "f1e0164e-b67b-11dd-a55e-00163e000016",
+	"topic": "libxml2 -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libxml2"
+			],
+			"range": [
+				{
+					"lt": "2.6.32_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/Advisories/32773/\">\n\t  <p>Two vulnerabilities have been reported in Libxml2, which can be\n\t    exploited by malicious people to cause a DoS (Denial of Service) or\n\t    to potentially compromise an application using the library.</p>\n\t  <p>1) An integer overflow error in the \"xmlSAX2Characters()\" function\n\t    can be exploited to trigger a memory corruption via a specially</p>\n\t  <p>Successful exploitation may allow execution of arbitrary code, but\n\t    requires e.g. that the user is tricked into processing an overly\n\t    large XML file (2GB or more).</p>\n\t  <p>2) An integer overflow error in the \"xmlBufferResize()\" function\n\t    can be exploited to trigger the execution of an infinite loop.\n\t    The vulnerabilities are reported in version 2.7.2.</p>\n\t  <p>Other versions may also be affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=470466",
+			"https://bugzilla.redhat.com/show_bug.cgi?id=470480",
+			"http://secunia.com/Advisories/32773/"
+		],
+		"cvename": [
+			"CVE-2008-4225",
+			"CVE-2008-4226"
+		]
+	},
+	"dates": {
+		"discovery": "2008-11-18",
+		"entry": "2008-11-19"
+	}
 }

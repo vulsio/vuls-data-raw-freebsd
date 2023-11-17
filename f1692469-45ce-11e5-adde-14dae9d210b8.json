@@ -1,36 +1,36 @@
 {
-  "vid": "f1692469-45ce-11e5-adde-14dae9d210b8",
-  "topic": "jasper -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "jasper"
-      ],
-      "range": [
-        {
-          "lt": "1.900.1_16"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Martin Prpic reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=1254242#c0\">\n\t  <p>A double free flaw was found in the way JasPer's\n\t    jasper_image_stop_load() function parsed certain JPEG 2000 image files.\n\t    A specially crafted file could cause an application using JasPer to\n\t    crash.</p>\n\t</blockquote>\n\t<p>Feist Josselin reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/408\">\n\t  <p>A new use-after-free was found in Jasper JPEG-200. The\n\t    use-after-free appears in the function mif_process_cmpt of the\n\t    src/libjasper/mif/mif_cod.c file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=1254242#c0",
-      "http://seclists.org/oss-sec/2015/q3/366",
-      "http://seclists.org/oss-sec/2015/q3/408"
-    ],
-    "cvename": [
-      "CVE-2015-5203",
-      "CVE-2015-5221"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-08-17",
-    "entry": "2015-08-18",
-    "modified": "2016-02-24"
-  }
+	"vid": "f1692469-45ce-11e5-adde-14dae9d210b8",
+	"topic": "jasper -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"jasper"
+			],
+			"range": [
+				{
+					"lt": "1.900.1_16"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Martin Prpic reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=1254242#c0\">\n\t  <p>A double free flaw was found in the way JasPer's\n\t    jasper_image_stop_load() function parsed certain JPEG 2000 image files.\n\t    A specially crafted file could cause an application using JasPer to\n\t    crash.</p>\n\t</blockquote>\n\t<p>Feist Josselin reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/408\">\n\t  <p>A new use-after-free was found in Jasper JPEG-200. The\n\t    use-after-free appears in the function mif_process_cmpt of the\n\t    src/libjasper/mif/mif_cod.c file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=1254242#c0",
+			"http://seclists.org/oss-sec/2015/q3/366",
+			"http://seclists.org/oss-sec/2015/q3/408"
+		],
+		"cvename": [
+			"CVE-2015-5203",
+			"CVE-2015-5221"
+		]
+	},
+	"dates": {
+		"discovery": "2015-08-17",
+		"entry": "2015-08-18",
+		"modified": "2016-02-24"
+	}
 }

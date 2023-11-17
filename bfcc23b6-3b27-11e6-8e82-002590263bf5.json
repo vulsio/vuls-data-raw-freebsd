@@ -1,58 +1,58 @@
 {
-  "vid": "bfcc23b6-3b27-11e6-8e82-002590263bf5",
-  "topic": "wordpress -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "wordpress"
-      ],
-      "range": [
-        {
-          "lt": "4.5.3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-wordpress",
-        "ja-wordpress",
-        "ru-wordpress",
-        "zh-wordpress-zh_CN",
-        "zh-wordpress-zh_TW"
-      ],
-      "range": [
-        {
-          "lt": "4.5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Adam Silverstein reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2016/06/wordpress-4-5-3/\">\n\t  <p>WordPress 4.5.3 is now available. This is a security release for\n\t    all previous versions and we strongly encourage you to update your\n\t    sites immediately.</p>\n\t  <p>WordPress versions 4.5.2 and earlier are affected by several\n\t    security issues: redirect bypass in the customizer, reported by\n\t    Yassine Aboukir; two different XSS problems via attachment names,\n\t    reported by Jouko Pynnönenand Divyesh Prajapati; revision history\n\t    information disclosure, reported independently by John Blackbourn\n\t    from the WordPress security team and by Dan Moen from the Wordfence\n\t    Research Team; oEmbed denial of service reported by Jennifer Dodd\n\t    from Automattic; unauthorized category removal from a post, reported\n\t    by David Herrera from Alley Interactive; password change via stolen\n\t    cookie, reported by Michael Adams from the WordPress security team;\n\t    and some less secure sanitize_file_name edge cases reported by Peter\n\t    Westwood of the WordPress security team.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://wordpress.org/news/2016/06/wordpress-4-5-3/",
-      "http://www.openwall.com/lists/oss-security/2016/06/23/9"
-    ],
-    "cvename": [
-      "CVE-2016-5832",
-      "CVE-2016-5833",
-      "CVE-2016-5834",
-      "CVE-2016-5835",
-      "CVE-2016-5836",
-      "CVE-2016-5837",
-      "CVE-2016-5838",
-      "CVE-2016-5839"
-    ],
-    "freebsd_pr": [
-      "ports/210480",
-      "ports/210581"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-06-18",
-    "entry": "2016-06-25"
-  }
+	"vid": "bfcc23b6-3b27-11e6-8e82-002590263bf5",
+	"topic": "wordpress -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"wordpress"
+			],
+			"range": [
+				{
+					"lt": "4.5.3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-wordpress",
+				"ja-wordpress",
+				"ru-wordpress",
+				"zh-wordpress-zh_CN",
+				"zh-wordpress-zh_TW"
+			],
+			"range": [
+				{
+					"lt": "4.5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Adam Silverstein reports:</p>\n\t<blockquote cite=\"https://wordpress.org/news/2016/06/wordpress-4-5-3/\">\n\t  <p>WordPress 4.5.3 is now available. This is a security release for\n\t    all previous versions and we strongly encourage you to update your\n\t    sites immediately.</p>\n\t  <p>WordPress versions 4.5.2 and earlier are affected by several\n\t    security issues: redirect bypass in the customizer, reported by\n\t    Yassine Aboukir; two different XSS problems via attachment names,\n\t    reported by Jouko Pynnönenand Divyesh Prajapati; revision history\n\t    information disclosure, reported independently by John Blackbourn\n\t    from the WordPress security team and by Dan Moen from the Wordfence\n\t    Research Team; oEmbed denial of service reported by Jennifer Dodd\n\t    from Automattic; unauthorized category removal from a post, reported\n\t    by David Herrera from Alley Interactive; password change via stolen\n\t    cookie, reported by Michael Adams from the WordPress security team;\n\t    and some less secure sanitize_file_name edge cases reported by Peter\n\t    Westwood of the WordPress security team.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://wordpress.org/news/2016/06/wordpress-4-5-3/",
+			"http://www.openwall.com/lists/oss-security/2016/06/23/9"
+		],
+		"cvename": [
+			"CVE-2016-5832",
+			"CVE-2016-5833",
+			"CVE-2016-5834",
+			"CVE-2016-5835",
+			"CVE-2016-5836",
+			"CVE-2016-5837",
+			"CVE-2016-5838",
+			"CVE-2016-5839"
+		],
+		"freebsd_pr": [
+			"ports/210480",
+			"ports/210581"
+		]
+	},
+	"dates": {
+		"discovery": "2016-06-18",
+		"entry": "2016-06-25"
+	}
 }

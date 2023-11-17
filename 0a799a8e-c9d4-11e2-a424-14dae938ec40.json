@@ -1,31 +1,31 @@
 {
-  "vid": "0a799a8e-c9d4-11e2-a424-14dae938ec40",
-  "topic": "irc/bitchx -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "BitchX"
-      ],
-      "range": [
-        {
-          "lt": "1.2.*,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>bannedit reports:</p>\n\t<blockquote cite=\"http://www.cvedetails.com/cve/CVE-2007-4584/\">\n\t  <p>Stack-based buffer overflow in BitchX 1.1 Final allows remote IRC\n\t    servers to execute arbitrary code via a long string in a MODE\n\t    command, related to the p_mode variable.</p>\n\t</blockquote>\n\t<p>Nico Golde reports:</p>\n\t<blockquote cite=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=449149\">\n\t  <p>There is a security issue in ircii-pana in bitchx' hostname\n\t    command.  The e_hostname function (commands.c) uses tmpnam to\n\t    create a temporary file which is known to be insecure.</p>\n\t</blockquote>\n\t<p>Chris reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/27556\">\n\t  <p>Chris has reported a vulnerability in the Cypress script for\n\t    BitchX, which can be exploited by malicious people to disclose\n\t    potentially sensitive information or to compromise a vulnerable\n\t    system.</p>\n\n\t  <p>The vulnerability is caused due to malicious code being present\n\t    in the modules/mdop.m file.  This can be exploited to disclose the\n\t    content of various system files or to execute arbitrary shell\n\t    commands.</p>\n\n\t  <p>Successful exploitation allows execution of arbitrary code, but\n\t    requires the control of the \"lsyn.webhop.net\" domain.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2007-4584",
-      "CVE-2007-5839",
-      "CVE-2007-5922"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-08-28",
-    "entry": "2013-05-31"
-  }
+	"vid": "0a799a8e-c9d4-11e2-a424-14dae938ec40",
+	"topic": "irc/bitchx -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"BitchX"
+			],
+			"range": [
+				{
+					"lt": "1.2.*,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>bannedit reports:</p>\n\t<blockquote cite=\"http://www.cvedetails.com/cve/CVE-2007-4584/\">\n\t  <p>Stack-based buffer overflow in BitchX 1.1 Final allows remote IRC\n\t    servers to execute arbitrary code via a long string in a MODE\n\t    command, related to the p_mode variable.</p>\n\t</blockquote>\n\t<p>Nico Golde reports:</p>\n\t<blockquote cite=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=449149\">\n\t  <p>There is a security issue in ircii-pana in bitchx' hostname\n\t    command.  The e_hostname function (commands.c) uses tmpnam to\n\t    create a temporary file which is known to be insecure.</p>\n\t</blockquote>\n\t<p>Chris reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/27556\">\n\t  <p>Chris has reported a vulnerability in the Cypress script for\n\t    BitchX, which can be exploited by malicious people to disclose\n\t    potentially sensitive information or to compromise a vulnerable\n\t    system.</p>\n\n\t  <p>The vulnerability is caused due to malicious code being present\n\t    in the modules/mdop.m file.  This can be exploited to disclose the\n\t    content of various system files or to execute arbitrary shell\n\t    commands.</p>\n\n\t  <p>Successful exploitation allows execution of arbitrary code, but\n\t    requires the control of the \"lsyn.webhop.net\" domain.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2007-4584",
+			"CVE-2007-5839",
+			"CVE-2007-5922"
+		]
+	},
+	"dates": {
+		"discovery": "2007-08-28",
+		"entry": "2013-05-31"
+	}
 }

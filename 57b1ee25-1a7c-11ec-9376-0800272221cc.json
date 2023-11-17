@@ -1,34 +1,34 @@
 {
-  "vid": "57b1ee25-1a7c-11ec-9376-0800272221cc",
-  "topic": "libssh -- possible heap-buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "libssh"
-      ],
-      "range": [
-        {
-          "ge": "0.9.1",
-          "le": "0.9.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>libssh security advisories:</p>\n\t<blockquote cite=\"https://www.libssh.org/security/advisories/CVE-2021-3634.txt\">\n\t  <p>The SSH protocol keeps track of two shared secrets during the lifetime\n\t    of the session. One of them is called `secret_hash` and and the other\n\t    `session_id`. Initially, both of them are the same, but after key\n\t    re-exchange, previous `session_id` is kept and used as an input to new\n\t    `secret_hash`.</p>\n\t  <p>Historically, both of these buffers had shared length variable, which\n\t    worked as long as these buffers were same. But the key re-exchange\n\t    operation can also change the key exchange method, which can be based on\n\t    hash of different size, eventually creating `secret_hash` of different\n\t    size than the `session_id` has.</p>\n\t  <p>This becomes an issue when the `session_id` memory is zeroized or when\n\t    it is used again during second key re-exchange.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.libssh.org/security/advisories/CVE-2021-3634.txt",
-      "https://www.libssh.org/2021/08/26/libssh-0-9-6-security-release/"
-    ],
-    "cvename": [
-      "CVE-2021-3634"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-08-26",
-    "entry": "2021-09-21"
-  }
+	"vid": "57b1ee25-1a7c-11ec-9376-0800272221cc",
+	"topic": "libssh -- possible heap-buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"libssh"
+			],
+			"range": [
+				{
+					"ge": "0.9.1",
+					"le": "0.9.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>libssh security advisories:</p>\n\t<blockquote cite=\"https://www.libssh.org/security/advisories/CVE-2021-3634.txt\">\n\t  <p>The SSH protocol keeps track of two shared secrets during the lifetime\n\t    of the session. One of them is called `secret_hash` and and the other\n\t    `session_id`. Initially, both of them are the same, but after key\n\t    re-exchange, previous `session_id` is kept and used as an input to new\n\t    `secret_hash`.</p>\n\t  <p>Historically, both of these buffers had shared length variable, which\n\t    worked as long as these buffers were same. But the key re-exchange\n\t    operation can also change the key exchange method, which can be based on\n\t    hash of different size, eventually creating `secret_hash` of different\n\t    size than the `session_id` has.</p>\n\t  <p>This becomes an issue when the `session_id` memory is zeroized or when\n\t    it is used again during second key re-exchange.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.libssh.org/security/advisories/CVE-2021-3634.txt",
+			"https://www.libssh.org/2021/08/26/libssh-0-9-6-security-release/"
+		],
+		"cvename": [
+			"CVE-2021-3634"
+		]
+	},
+	"dates": {
+		"discovery": "2021-08-26",
+		"entry": "2021-09-21"
+	}
 }

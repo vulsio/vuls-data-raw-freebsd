@@ -1,41 +1,41 @@
 {
-  "vid": "aed343b4-5480-11da-b579-001125afbed7",
-  "topic": "Macromedia flash player -- swf file handling arbitrary code",
-  "affects": [
-    {
-      "name": [
-        "linux-flashplugin6"
-      ],
-      "range": [
-        {
-          "le": "6.0r79_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-flashplugin7"
-      ],
-      "range": [
-        {
-          "lt": "7.0r61"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17430/\">\n\t  <p>A vulnerability has been reported in Macromedia\n\t    Flash Player, which can be exploited by malicious\n\t    people to compromise a user's system.</p>\n\t  <p>The vulnerability is caused due to missing validation\n\t    of the frame type identifier that is read from\n\t    a SWF file.  This value is used as an index in Flash.ocx\n\t    to reference an array of function pointers.  This can be\n\t    exploited via a specially crafted SWF file to cause\n\t    the index to reference memory that is under the attacker's\n\t    control, which causes Flash Player to use attacker\n\t    supplied values as function pointers.</p>\n\t  <p>Successful exploitation allows execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.macromedia.com/devnet/security/security_zone/mpsb05-07.html",
-      "http://secunia.com/advisories/17430/",
-      "http://www.eeye.com/html/research/advisories/AD20051104.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-06-27",
-    "entry": "2005-11-13"
-  }
+	"vid": "aed343b4-5480-11da-b579-001125afbed7",
+	"topic": "Macromedia flash player -- swf file handling arbitrary code",
+	"affects": [
+		{
+			"name": [
+				"linux-flashplugin6"
+			],
+			"range": [
+				{
+					"le": "6.0r79_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-flashplugin7"
+			],
+			"range": [
+				{
+					"lt": "7.0r61"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/17430/\">\n\t  <p>A vulnerability has been reported in Macromedia\n\t    Flash Player, which can be exploited by malicious\n\t    people to compromise a user's system.</p>\n\t  <p>The vulnerability is caused due to missing validation\n\t    of the frame type identifier that is read from\n\t    a SWF file.  This value is used as an index in Flash.ocx\n\t    to reference an array of function pointers.  This can be\n\t    exploited via a specially crafted SWF file to cause\n\t    the index to reference memory that is under the attacker's\n\t    control, which causes Flash Player to use attacker\n\t    supplied values as function pointers.</p>\n\t  <p>Successful exploitation allows execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.macromedia.com/devnet/security/security_zone/mpsb05-07.html",
+			"http://secunia.com/advisories/17430/",
+			"http://www.eeye.com/html/research/advisories/AD20051104.html"
+		]
+	},
+	"dates": {
+		"discovery": "2005-06-27",
+		"entry": "2005-11-13"
+	}
 }

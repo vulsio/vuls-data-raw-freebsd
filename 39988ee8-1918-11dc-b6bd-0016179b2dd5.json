@@ -1,33 +1,33 @@
 {
-  "vid": "39988ee8-1918-11dc-b6bd-0016179b2dd5",
-  "topic": "cups -- Incomplete SSL Negotiation Denial of Service",
-  "affects": [
-    {
-      "name": [
-        "cups-base"
-      ],
-      "range": [
-        {
-          "lt": "1.2.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/24517/\">\n\t  <p>CUPS is not using multiple workers to handle connections.\n\t    This can be exploited to stop CUPS from accepting new connections\n\t    by starting but never completing an SSL negotiation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/24517/",
-      "http://security.gentoo.org/glsa/glsa-200703-28.xml"
-    ],
-    "cvename": [
-      "CVE-2007-0720"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-05-05",
-    "entry": "2007-06-12"
-  }
+	"vid": "39988ee8-1918-11dc-b6bd-0016179b2dd5",
+	"topic": "cups -- Incomplete SSL Negotiation Denial of Service",
+	"affects": [
+		{
+			"name": [
+				"cups-base"
+			],
+			"range": [
+				{
+					"lt": "1.2.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/24517/\">\n\t  <p>CUPS is not using multiple workers to handle connections.\n\t    This can be exploited to stop CUPS from accepting new connections\n\t    by starting but never completing an SSL negotiation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/24517/",
+			"http://security.gentoo.org/glsa/glsa-200703-28.xml"
+		],
+		"cvename": [
+			"CVE-2007-0720"
+		]
+	},
+	"dates": {
+		"discovery": "2007-05-05",
+		"entry": "2007-06-12"
+	}
 }

@@ -1,41 +1,41 @@
 {
-  "vid": "0bb55a18-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Denial of Service with IPv6 Router Advertisements",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.1_9",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_13",
-          "ge": "9.3"
-        },
-        {
-          "lt": "8.4_27",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The Neighbor Discover Protocol allows a local router to\n\tadvertise a suggested Current Hop Limit value of a link,\n\twhich will replace Current Hop Limit on an interface connected\n\tto the link on the FreeBSD system.</p>\n\t<h1>Impact:</h1>\n\t<p>When the Current Hop Limit (similar to IPv4's TTL) is\n\tsmall, IPv6 packets may get dropped before they reached\n\ttheir destinations.</p>\n\t<p>By sending specifically crafted Router Advertisement\n\tpackets, an attacker on the local network can cause the\n\tFreeBSD system to lose the ability to communicate with\n\tanother IPv6 node on a different network.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2015-2923"
-    ],
-    "freebsd_sa": [
-      "SA-15:09.ipv6"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-04-07",
-    "entry": "2016-08-11"
-  }
+	"vid": "0bb55a18-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Denial of Service with IPv6 Router Advertisements",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.1_9",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_13",
+					"ge": "9.3"
+				},
+				{
+					"lt": "8.4_27",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The Neighbor Discover Protocol allows a local router to\n\tadvertise a suggested Current Hop Limit value of a link,\n\twhich will replace Current Hop Limit on an interface connected\n\tto the link on the FreeBSD system.</p>\n\t<h1>Impact:</h1>\n\t<p>When the Current Hop Limit (similar to IPv4's TTL) is\n\tsmall, IPv6 packets may get dropped before they reached\n\ttheir destinations.</p>\n\t<p>By sending specifically crafted Router Advertisement\n\tpackets, an attacker on the local network can cause the\n\tFreeBSD system to lose the ability to communicate with\n\tanother IPv6 node on a different network.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2015-2923"
+		],
+		"freebsd_sa": [
+			"SA-15:09.ipv6"
+		]
+	},
+	"dates": {
+		"discovery": "2015-04-07",
+		"entry": "2016-08-11"
+	}
 }

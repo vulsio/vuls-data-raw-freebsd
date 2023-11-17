@@ -1,33 +1,33 @@
 {
-  "vid": "cd7e260a-6bff-11d9-a5df-00065be4b5b6",
-  "topic": "newsgrab -- insecure file and directory creation",
-  "affects": [
-    {
-      "name": [
-        "newsgrab"
-      ],
-      "range": [
-        {
-          "le": "0.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n     <p>The newsgrab script uses insecure permissions during the\n     creation of the local output directory and downloaded files.</p>\n     <p>After a file is created, permissions on it are set using the mode\n     value of the newsgroup posting. This can potentially be a problem\n     when the mode is not restrictive enough. In addition, the output\n     directory is created with world writable permissions allowing other\n     users to drop symlinks or other files at that location.</p>\n    "
-  },
-  "references": {
-    "url": [
-      "http://people.freebsd.org/~niels/issues/newsgrab-20050114.txt",
-      "http://sourceforge.net/project/shownotes.php?release_id=300562"
-    ],
-    "cvename": [
-      "CVE-2005-0154"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-01-18",
-    "entry": "2005-02-01"
-  }
+	"vid": "cd7e260a-6bff-11d9-a5df-00065be4b5b6",
+	"topic": "newsgrab -- insecure file and directory creation",
+	"affects": [
+		{
+			"name": [
+				"newsgrab"
+			],
+			"range": [
+				{
+					"le": "0.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n     <p>The newsgrab script uses insecure permissions during the\n     creation of the local output directory and downloaded files.</p>\n     <p>After a file is created, permissions on it are set using the mode\n     value of the newsgroup posting. This can potentially be a problem\n     when the mode is not restrictive enough. In addition, the output\n     directory is created with world writable permissions allowing other\n     users to drop symlinks or other files at that location.</p>\n    "
+	},
+	"references": {
+		"url": [
+			"http://people.freebsd.org/~niels/issues/newsgrab-20050114.txt",
+			"http://sourceforge.net/project/shownotes.php?release_id=300562"
+		],
+		"cvename": [
+			"CVE-2005-0154"
+		]
+	},
+	"dates": {
+		"discovery": "2005-01-18",
+		"entry": "2005-02-01"
+	}
 }

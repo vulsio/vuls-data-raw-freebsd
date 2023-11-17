@@ -1,65 +1,65 @@
 {
-  "vid": "18974c8a-1fbd-11d9-814e-0001020eed82",
-  "topic": "apache13-modssl -- format string vulnerability in proxy support",
-  "affects": [
-    {
-      "name": [
-        "apache+mod_ssl"
-      ],
-      "range": [
-        {
-          "lt": "1.3.31+2.8.19"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache+mod_ssl+ipv6"
-      ],
-      "range": [
-        {
-          "lt": "1.3.31+2.8.19"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ru-apache+mod_ssl"
-      ],
-      "range": [
-        {
-          "lt": "1.3.31+30.20+2.8.19"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A OpenPKG Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.openpkg.org/security/OpenPKG-SA-2004.032-apache.html\">\n\t  <p>Triggered by a report to Packet Storm from Virulent, a\n\t    format string vulnerability was found in mod_ssl, the\n\t    Apache SSL/TLS interface to OpenSSL, version (up to and\n\t    including) 2.8.18 for Apache 1.3.  The mod_ssl in Apache\n\t    2.x is not affected.  The vulnerability could be\n\t    exploitable if Apache is used as a proxy for HTTPS URLs\n\t    and the attacker established a own specially prepared DNS\n\t    and origin server environment.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openpkg.org/security/OpenPKG-SA-2004.032-apache.html",
-      "http://packetstormsecurity.org/0407-advisories/modsslFormat.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0700"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=apache-modssl&m=109001100906749",
-        "msgid": "20040716204207.GA45678@engelschall.com"
-      }
-    ],
-    "bid": [
-      "10736"
-    ],
-    "cert_vu": [
-      "303448"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-07-16",
-    "entry": "2004-10-17"
-  }
+	"vid": "18974c8a-1fbd-11d9-814e-0001020eed82",
+	"topic": "apache13-modssl -- format string vulnerability in proxy support",
+	"affects": [
+		{
+			"name": [
+				"apache+mod_ssl"
+			],
+			"range": [
+				{
+					"lt": "1.3.31+2.8.19"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache+mod_ssl+ipv6"
+			],
+			"range": [
+				{
+					"lt": "1.3.31+2.8.19"
+				}
+			]
+		},
+		{
+			"name": [
+				"ru-apache+mod_ssl"
+			],
+			"range": [
+				{
+					"lt": "1.3.31+30.20+2.8.19"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A OpenPKG Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.openpkg.org/security/OpenPKG-SA-2004.032-apache.html\">\n\t  <p>Triggered by a report to Packet Storm from Virulent, a\n\t    format string vulnerability was found in mod_ssl, the\n\t    Apache SSL/TLS interface to OpenSSL, version (up to and\n\t    including) 2.8.18 for Apache 1.3.  The mod_ssl in Apache\n\t    2.x is not affected.  The vulnerability could be\n\t    exploitable if Apache is used as a proxy for HTTPS URLs\n\t    and the attacker established a own specially prepared DNS\n\t    and origin server environment.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openpkg.org/security/OpenPKG-SA-2004.032-apache.html",
+			"http://packetstormsecurity.org/0407-advisories/modsslFormat.txt"
+		],
+		"cvename": [
+			"CVE-2004-0700"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=apache-modssl&m=109001100906749",
+				"msgid": "20040716204207.GA45678@engelschall.com"
+			}
+		],
+		"bid": [
+			"10736"
+		],
+		"cert_vu": [
+			"303448"
+		]
+	},
+	"dates": {
+		"discovery": "2004-07-16",
+		"entry": "2004-10-17"
+	}
 }

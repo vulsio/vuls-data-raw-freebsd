@@ -1,43 +1,43 @@
 {
-  "vid": "54a69cf7-b2ef-11e4-b1f1-bcaec565249c",
-  "topic": "xorg-server -- Information leak in the XkbSetGeometry request of X servers.",
-  "affects": [
-    {
-      "name": [
-        "xorg-server"
-      ],
-      "range": [
-        {
-          "lt": "1.14.7_2,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "xorg-server"
-      ],
-      "range": [
-        {
-          "lt": "1.16.4,1",
-          "ge": "1.15.0,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Peter Hutterer reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/xorg/2015-February/057158.html\">\n\t  <p>Olivier Fourdan from Red Hat has discovered a protocol handling\n\t    issue in the way the X server code base handles the XkbSetGeometry\n\t    request.</p>\n\t  <p>The issue stems from the server trusting the client to send valid\n\t    string lengths in the request data. A malicious client with string\n\t    lengths exceeding the request length can cause the server to copy\n\t    adjacent memory data into the XKB structs. This data is then\n\t    available to the client via the XkbGetGeometry request. The\n\t    data length is at least up to 64k, it is possible to obtain\n\t    more data by chaining strings, each string length is then\n\t    determined by whatever happens to be in that 16-bit region of\n\t    memory.</p>\n\t  <p>A similarly crafted request can likely cause the X server\n\t    to crash.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.freedesktop.org/archives/xorg/2015-February/057158.html"
-    ],
-    "cvename": [
-      "CVE-2015-0255"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-02-10",
-    "entry": "2015-02-12"
-  }
+	"vid": "54a69cf7-b2ef-11e4-b1f1-bcaec565249c",
+	"topic": "xorg-server -- Information leak in the XkbSetGeometry request of X servers.",
+	"affects": [
+		{
+			"name": [
+				"xorg-server"
+			],
+			"range": [
+				{
+					"lt": "1.14.7_2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-server"
+			],
+			"range": [
+				{
+					"lt": "1.16.4,1",
+					"ge": "1.15.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Peter Hutterer reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/xorg/2015-February/057158.html\">\n\t  <p>Olivier Fourdan from Red Hat has discovered a protocol handling\n\t    issue in the way the X server code base handles the XkbSetGeometry\n\t    request.</p>\n\t  <p>The issue stems from the server trusting the client to send valid\n\t    string lengths in the request data. A malicious client with string\n\t    lengths exceeding the request length can cause the server to copy\n\t    adjacent memory data into the XKB structs. This data is then\n\t    available to the client via the XkbGetGeometry request. The\n\t    data length is at least up to 64k, it is possible to obtain\n\t    more data by chaining strings, each string length is then\n\t    determined by whatever happens to be in that 16-bit region of\n\t    memory.</p>\n\t  <p>A similarly crafted request can likely cause the X server\n\t    to crash.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.freedesktop.org/archives/xorg/2015-February/057158.html"
+		],
+		"cvename": [
+			"CVE-2015-0255"
+		]
+	},
+	"dates": {
+		"discovery": "2015-02-10",
+		"entry": "2015-02-12"
+	}
 }

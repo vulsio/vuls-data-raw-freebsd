@@ -1,52 +1,52 @@
 {
-  "vid": "2dc764fa-40c0-11dc-aeac-02e0185f8d72",
-  "topic": "FreeBSD -- Buffer overflow in tcpdump(1)",
-  "affects": [
-    {
-      "name": [
-        "tcpdump"
-      ],
-      "range": [
-        {
-          "lt": "3.9.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.2_7",
-          "ge": "6.2"
-        },
-        {
-          "lt": "6.1_19",
-          "ge": "6.1"
-        },
-        {
-          "lt": "5.5_15",
-          "ge": "5.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>An un-checked return value in the BGP dissector code can\n\t  result in an integer overflow.  This value is used in\n\t  subsequent buffer management operations, resulting in a stack\n\t  based buffer overflow under certain circumstances.</p>\n\t<h1>Impact:</h1>\n\t<p>By crafting malicious BGP packets, an attacker could exploit\n\t  this vulnerability to execute code or crash the tcpdump\n\t  process on the target system.  This code would be executed in\n\t  the context of the user running tcpdump(1).  It should be\n\t  noted that tcpdump(1) requires privileges in order to open live\n\t  network interfaces.</p>\n\t<h1>Workaround:</h1>\n\t<p>No workaround is available.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2007-3798"
-    ],
-    "freebsd_sa": [
-      "SA-07:06.tcpdump"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-08-01",
-    "entry": "2007-08-02",
-    "modified": "2016-08-09"
-  }
+	"vid": "2dc764fa-40c0-11dc-aeac-02e0185f8d72",
+	"topic": "FreeBSD -- Buffer overflow in tcpdump(1)",
+	"affects": [
+		{
+			"name": [
+				"tcpdump"
+			],
+			"range": [
+				{
+					"lt": "3.9.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.2_7",
+					"ge": "6.2"
+				},
+				{
+					"lt": "6.1_19",
+					"ge": "6.1"
+				},
+				{
+					"lt": "5.5_15",
+					"ge": "5.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>An un-checked return value in the BGP dissector code can\n\t  result in an integer overflow.  This value is used in\n\t  subsequent buffer management operations, resulting in a stack\n\t  based buffer overflow under certain circumstances.</p>\n\t<h1>Impact:</h1>\n\t<p>By crafting malicious BGP packets, an attacker could exploit\n\t  this vulnerability to execute code or crash the tcpdump\n\t  process on the target system.  This code would be executed in\n\t  the context of the user running tcpdump(1).  It should be\n\t  noted that tcpdump(1) requires privileges in order to open live\n\t  network interfaces.</p>\n\t<h1>Workaround:</h1>\n\t<p>No workaround is available.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2007-3798"
+		],
+		"freebsd_sa": [
+			"SA-07:06.tcpdump"
+		]
+	},
+	"dates": {
+		"discovery": "2007-08-01",
+		"entry": "2007-08-02",
+		"modified": "2016-08-09"
+	}
 }

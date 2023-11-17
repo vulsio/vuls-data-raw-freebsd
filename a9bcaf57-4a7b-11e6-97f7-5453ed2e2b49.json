@@ -1,32 +1,32 @@
 {
-  "vid": "a9bcaf57-4a7b-11e6-97f7-5453ed2e2b49",
-  "topic": "p7zip -- heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "p7zip"
-      ],
-      "range": [
-        {
-          "lt": "15.14_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Cisco Talos reports:</p>\n\t<blockquote cite=\"http://www.talosintelligence.com/reports/TALOS-2016-0093/\">\n\t  <p>An exploitable heap overflow vulnerability exists in the\n\t  NArchive::NHfs::CHandler::ExtractZlibFile method functionality of\n\t  7zip that can lead to arbitrary code execution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://blog.talosintel.com/2016/05/multiple-7-zip-vulnerabilities.html"
-    ],
-    "cvename": [
-      "CVE-2016-2334"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-11",
-    "entry": "2016-07-15"
-  }
+	"vid": "a9bcaf57-4a7b-11e6-97f7-5453ed2e2b49",
+	"topic": "p7zip -- heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"p7zip"
+			],
+			"range": [
+				{
+					"lt": "15.14_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Cisco Talos reports:</p>\n\t<blockquote cite=\"http://www.talosintelligence.com/reports/TALOS-2016-0093/\">\n\t  <p>An exploitable heap overflow vulnerability exists in the\n\t  NArchive::NHfs::CHandler::ExtractZlibFile method functionality of\n\t  7zip that can lead to arbitrary code execution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://blog.talosintel.com/2016/05/multiple-7-zip-vulnerabilities.html"
+		],
+		"cvename": [
+			"CVE-2016-2334"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-11",
+		"entry": "2016-07-15"
+	}
 }

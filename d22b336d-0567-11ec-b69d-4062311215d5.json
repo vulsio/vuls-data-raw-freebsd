@@ -1,41 +1,41 @@
 {
-  "vid": "d22b336d-0567-11ec-b69d-4062311215d5",
-  "topic": "FreeBSD -- libfetch out of bounds read",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "13.0_4",
-          "ge": "13.0"
-        },
-        {
-          "lt": "12.2_10",
-          "ge": "12.2"
-        },
-        {
-          "lt": "11.4_13",
-          "ge": "11.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The passive mode in FTP communication allows an out of boundary read while\n\tlibfetch uses strtol to parse the relevant numbers into address bytes.  It\n\tdoes not check if the line ends prematurely.  If it does, the for-loop\n\tcondition checks for *p == '\\0' one byte too late because p++ was already\n\tperformed.</p>\n\t<h1>Impact:</h1>\n\t<p>The connection buffer size can be controlled by a malicious FTP server\n\tbecause the size is increased until a newline is encountered (or no more\n\tcharacters are read).  This also allows to move the buffer into more\n\tinteresting areas within the address space, potentially parsing relevant\n\tnumbers for the attacker.  Since these bytes become available to the server\n\tin form of a new TCP connection to a constructed port number or even part of\n\tthe IPv6 address this is a potential information leak.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2021-36159"
-    ],
-    "freebsd_sa": [
-      "SA-21:15.libfetch"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-08-24",
-    "entry": "2021-08-25"
-  }
+	"vid": "d22b336d-0567-11ec-b69d-4062311215d5",
+	"topic": "FreeBSD -- libfetch out of bounds read",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "13.0_4",
+					"ge": "13.0"
+				},
+				{
+					"lt": "12.2_10",
+					"ge": "12.2"
+				},
+				{
+					"lt": "11.4_13",
+					"ge": "11.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The passive mode in FTP communication allows an out of boundary read while\n\tlibfetch uses strtol to parse the relevant numbers into address bytes.  It\n\tdoes not check if the line ends prematurely.  If it does, the for-loop\n\tcondition checks for *p == '\\0' one byte too late because p++ was already\n\tperformed.</p>\n\t<h1>Impact:</h1>\n\t<p>The connection buffer size can be controlled by a malicious FTP server\n\tbecause the size is increased until a newline is encountered (or no more\n\tcharacters are read).  This also allows to move the buffer into more\n\tinteresting areas within the address space, potentially parsing relevant\n\tnumbers for the attacker.  Since these bytes become available to the server\n\tin form of a new TCP connection to a constructed port number or even part of\n\tthe IPv6 address this is a potential information leak.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2021-36159"
+		],
+		"freebsd_sa": [
+			"SA-21:15.libfetch"
+		]
+	},
+	"dates": {
+		"discovery": "2021-08-24",
+		"entry": "2021-08-25"
+	}
 }

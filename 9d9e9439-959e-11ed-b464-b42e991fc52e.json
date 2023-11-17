@@ -1,34 +1,34 @@
 {
-  "vid": "9d9e9439-959e-11ed-b464-b42e991fc52e",
-  "topic": "security/keycloak -- Multiple possible DoS attacks",
-  "affects": [
-    {
-      "name": [
-        "keycloak"
-      ],
-      "range": [
-        {
-          "lt": "20.0.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>CIRCL reports:</p>\n\t<blockquote cite=\"https://cve.circl.lu/cve/CVE-2022-41966\">\n\t    <ul>\n\t      <li>CVE-2022-41966: XStream serializes Java objects to XML\n\t      and back again.\n\t      Versions prior to 1.4.20 may allow a remote attacker\n\t      to terminate the application with a stack\n\t      overflow error, resulting in a denial of\n\t      service only via manipulation the\n\t      processed input stream.\n\t      </li>\n\t      <li>CVE-2022-40151: If the parser is running on user\n\t      supplied input, an attacker may supply content that\n\t      causes the parser to crash by stackoverflow. This\n\t      effect may support a denial of service attack.\n\t      </li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40151",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-41966"
-    ],
-    "cvename": [
-      "CVE-2022-40151",
-      "CVE-2022-41966"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-09-07",
-    "entry": "2023-01-16"
-  }
+	"vid": "9d9e9439-959e-11ed-b464-b42e991fc52e",
+	"topic": "security/keycloak -- Multiple possible DoS attacks",
+	"affects": [
+		{
+			"name": [
+				"keycloak"
+			],
+			"range": [
+				{
+					"lt": "20.0.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>CIRCL reports:</p>\n\t<blockquote cite=\"https://cve.circl.lu/cve/CVE-2022-41966\">\n\t    <ul>\n\t      <li>CVE-2022-41966: XStream serializes Java objects to XML\n\t      and back again.\n\t      Versions prior to 1.4.20 may allow a remote attacker\n\t      to terminate the application with a stack\n\t      overflow error, resulting in a denial of\n\t      service only via manipulation the\n\t      processed input stream.\n\t      </li>\n\t      <li>CVE-2022-40151: If the parser is running on user\n\t      supplied input, an attacker may supply content that\n\t      causes the parser to crash by stackoverflow. This\n\t      effect may support a denial of service attack.\n\t      </li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40151",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-41966"
+		],
+		"cvename": [
+			"CVE-2022-40151",
+			"CVE-2022-41966"
+		]
+	},
+	"dates": {
+		"discovery": "2022-09-07",
+		"entry": "2023-01-16"
+	}
 }

@@ -1,36 +1,36 @@
 {
-  "vid": "1c0def84-5fb1-11db-b2e9-0008c79fa3d2",
-  "topic": "asterisk -- remote heap overwrite vulnerability",
-  "affects": [
-    {
-      "name": [
-        "asterisk",
-        "asterisk-bristuff"
-      ],
-      "range": [
-        {
-          "lt": "1.2.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Adam Boileau of Security-Assessment.com reports:</p>\n\t<blockquote cite=\"http://www.security-assessment.com/files/advisories/Asterisk_remote_heap_overflow.pdf\">\n\t  <p>The Asterisk Skinny channel driver for Cisco SCCP phones\n\t    (chan_skinny.so) incorrectly validates a length value in\n\t    the packet header.\tAn integer wrap-around leads to heap\n\t    overwrite, and arbitrary remote code execution as root.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.security-assessment.com/files/advisories/Asterisk_remote_heap_overflow.pdf"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=116121567530170",
-        "msgid": "4536A2F2.2020902@security-assessment.com"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2006-10-17",
-    "entry": "2006-10-20"
-  }
+	"vid": "1c0def84-5fb1-11db-b2e9-0008c79fa3d2",
+	"topic": "asterisk -- remote heap overwrite vulnerability",
+	"affects": [
+		{
+			"name": [
+				"asterisk",
+				"asterisk-bristuff"
+			],
+			"range": [
+				{
+					"lt": "1.2.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Adam Boileau of Security-Assessment.com reports:</p>\n\t<blockquote cite=\"http://www.security-assessment.com/files/advisories/Asterisk_remote_heap_overflow.pdf\">\n\t  <p>The Asterisk Skinny channel driver for Cisco SCCP phones\n\t    (chan_skinny.so) incorrectly validates a length value in\n\t    the packet header.\tAn integer wrap-around leads to heap\n\t    overwrite, and arbitrary remote code execution as root.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.security-assessment.com/files/advisories/Asterisk_remote_heap_overflow.pdf"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=116121567530170",
+				"msgid": "4536A2F2.2020902@security-assessment.com"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2006-10-17",
+		"entry": "2006-10-20"
+	}
 }

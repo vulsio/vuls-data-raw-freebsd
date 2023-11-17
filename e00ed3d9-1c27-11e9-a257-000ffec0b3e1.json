@@ -1,39 +1,39 @@
 {
-  "vid": "e00ed3d9-1c27-11e9-a257-000ffec0b3e1",
-  "topic": "drupal -- Drupal core - Arbitrary PHP code execution",
-  "affects": [
-    {
-      "name": [
-        "drupal7"
-      ],
-      "range": [
-        {
-          "lt": "7.63"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal8"
-      ],
-      "range": [
-        {
-          "lt": "8.6.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/sa-core-2019-002\">\n\t  <p>A remote code execution vulnerability exists in PHP's built-in\n\tphar stream wrapper when performing file operations on an untrusted phar:// URI.</p>\n\t  <p>Some Drupal code (core, contrib, and custom) may be performing file operations on\n\tinsufficiently validated user input, thereby being exposed to this vulnerability.</p>\n\t  <p>This vulnerability is mitigated by the fact that such code paths typically require\n\taccess to an administrative permission or an atypical configuration.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.drupal.org/SA-CORE-2018-006"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-01-16",
-    "entry": "2019-01-19"
-  }
+	"vid": "e00ed3d9-1c27-11e9-a257-000ffec0b3e1",
+	"topic": "drupal -- Drupal core - Arbitrary PHP code execution",
+	"affects": [
+		{
+			"name": [
+				"drupal7"
+			],
+			"range": [
+				{
+					"lt": "7.63"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal8"
+			],
+			"range": [
+				{
+					"lt": "8.6.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Drupal Security Team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/sa-core-2019-002\">\n\t  <p>A remote code execution vulnerability exists in PHP's built-in\n\tphar stream wrapper when performing file operations on an untrusted phar:// URI.</p>\n\t  <p>Some Drupal code (core, contrib, and custom) may be performing file operations on\n\tinsufficiently validated user input, thereby being exposed to this vulnerability.</p>\n\t  <p>This vulnerability is mitigated by the fact that such code paths typically require\n\taccess to an administrative permission or an atypical configuration.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.drupal.org/SA-CORE-2018-006"
+		]
+	},
+	"dates": {
+		"discovery": "2019-01-16",
+		"entry": "2019-01-19"
+	}
 }

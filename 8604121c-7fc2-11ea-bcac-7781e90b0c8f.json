@@ -1,56 +1,56 @@
 {
-  "vid": "8604121c-7fc2-11ea-bcac-7781e90b0c8f",
-  "topic": "openvpn -- illegal client float can break VPN session for other users",
-  "affects": [
-    {
-      "name": [
-        "openvpn"
-      ],
-      "range": [
-        {
-          "lt": "2.4.8_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openvpn-mbedtls"
-      ],
-      "range": [
-        {
-          "lt": "2.4.8_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openvpn-devel"
-      ],
-      "range": [
-        {
-          "lt": "202016"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Lev Stipakov and Gert Doering report:</p>\n\t<blockquote cite=\"https://github.com/OpenVPN/openvpn/commit/f7b318f811bb43c0d3aa7f337ec6242ed2c33881\">\n\t  <p>There is a time frame between allocating peer-id and initializing data\n\t    channel key (which is performed on receiving push request or on async\n\t    push-reply) in which the existing peer-id float checks do not work right.</p>\n\t  <p>If a \"rogue\" data channel packet arrives during that time frame from\n\t    another address and with same peer-id, this would cause client to float\n\t    to that new address.</p>\n\t  <p>The net effect of this behaviour is that the VPN session for the\n\t    \"victim client\" is broken. Since the \"attacker client\" does not have\n\t    suitable keys, it can not inject or steal VPN traffic from the other\n\t    session. The time window is small and it can not be used to attack\n\t    a specific client's session, unless some other way is found to make it\n\t    disconnect and reconnect first.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/OpenVPN/openvpn/commit/f7b318f811bb43c0d3aa7f337ec6242ed2c33881",
-      "https://sourceforge.net/p/openvpn/openvpn/ci/f7b318f811bb43c0d3aa7f337ec6242ed2c33881/",
-      "https://www.mail-archive.com/openvpn-devel@lists.sourceforge.net/msg19720.html",
-      "https://community.openvpn.net/openvpn/ticket/1272",
-      "https://patchwork.openvpn.net/patch/1077/"
-    ],
-    "cvename": [
-      "CVE-2020-11810"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-04-13",
-    "entry": "2020-04-16"
-  }
+	"vid": "8604121c-7fc2-11ea-bcac-7781e90b0c8f",
+	"topic": "openvpn -- illegal client float can break VPN session for other users",
+	"affects": [
+		{
+			"name": [
+				"openvpn"
+			],
+			"range": [
+				{
+					"lt": "2.4.8_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"openvpn-mbedtls"
+			],
+			"range": [
+				{
+					"lt": "2.4.8_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"openvpn-devel"
+			],
+			"range": [
+				{
+					"lt": "202016"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Lev Stipakov and Gert Doering report:</p>\n\t<blockquote cite=\"https://github.com/OpenVPN/openvpn/commit/f7b318f811bb43c0d3aa7f337ec6242ed2c33881\">\n\t  <p>There is a time frame between allocating peer-id and initializing data\n\t    channel key (which is performed on receiving push request or on async\n\t    push-reply) in which the existing peer-id float checks do not work right.</p>\n\t  <p>If a \"rogue\" data channel packet arrives during that time frame from\n\t    another address and with same peer-id, this would cause client to float\n\t    to that new address.</p>\n\t  <p>The net effect of this behaviour is that the VPN session for the\n\t    \"victim client\" is broken. Since the \"attacker client\" does not have\n\t    suitable keys, it can not inject or steal VPN traffic from the other\n\t    session. The time window is small and it can not be used to attack\n\t    a specific client's session, unless some other way is found to make it\n\t    disconnect and reconnect first.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/OpenVPN/openvpn/commit/f7b318f811bb43c0d3aa7f337ec6242ed2c33881",
+			"https://sourceforge.net/p/openvpn/openvpn/ci/f7b318f811bb43c0d3aa7f337ec6242ed2c33881/",
+			"https://www.mail-archive.com/openvpn-devel@lists.sourceforge.net/msg19720.html",
+			"https://community.openvpn.net/openvpn/ticket/1272",
+			"https://patchwork.openvpn.net/patch/1077/"
+		],
+		"cvename": [
+			"CVE-2020-11810"
+		]
+	},
+	"dates": {
+		"discovery": "2020-04-13",
+		"entry": "2020-04-16"
+	}
 }

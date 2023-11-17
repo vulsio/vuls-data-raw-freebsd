@@ -1,52 +1,52 @@
 {
-  "vid": "0fa15e08-92ec-11e1-a94a-00215c6a37bb",
-  "topic": "samba -- incorrect permission checks vulnerability",
-  "affects": [
-    {
-      "name": [
-        "samba34"
-      ],
-      "range": [
-        {
-          "lt": "3.4.17",
-          "gt": "3.4.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba35"
-      ],
-      "range": [
-        {
-          "lt": "3.5.15",
-          "gt": "3.5.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba36"
-      ],
-      "range": [
-        {
-          "lt": "3.6.5",
-          "gt": "3.6.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Samba project reports:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2012-2111\">\n\t  <p>Samba versions 3.4.x to 3.6.4 inclusive are affected\n\t    by a vulnerability that allows arbitrary users to modify\n\t    privileges on a file server.</p>\n\t  <p>Security checks were incorrectly applied to the Local\n\t    Security Authority (LSA) remote proceedure calls (RPC)\n\t    CreateAccount, OpenAccount, AddAccountRights and\n\t    RemoveAccountRights allowing any authenticated user\n\t    to modify the privileges database.</p>\n\t  <p>This is a serious error, as it means that authenticated\n\t    users can connect to the LSA and grant themselves the\n\t    \"take ownership\" privilege. This privilege is used by the\n\t    smbd file server to grant the ability to change ownership\n\t    of a file or directory which means users could take ownership\n\t    of files or directories they do not own.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-2111"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-04-30",
-    "entry": "2012-04-30"
-  }
+	"vid": "0fa15e08-92ec-11e1-a94a-00215c6a37bb",
+	"topic": "samba -- incorrect permission checks vulnerability",
+	"affects": [
+		{
+			"name": [
+				"samba34"
+			],
+			"range": [
+				{
+					"lt": "3.4.17",
+					"gt": "3.4.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba35"
+			],
+			"range": [
+				{
+					"lt": "3.5.15",
+					"gt": "3.5.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba36"
+			],
+			"range": [
+				{
+					"lt": "3.6.5",
+					"gt": "3.6.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Samba project reports:</p>\n\t<blockquote cite=\"http://www.samba.org/samba/security/CVE-2012-2111\">\n\t  <p>Samba versions 3.4.x to 3.6.4 inclusive are affected\n\t    by a vulnerability that allows arbitrary users to modify\n\t    privileges on a file server.</p>\n\t  <p>Security checks were incorrectly applied to the Local\n\t    Security Authority (LSA) remote proceedure calls (RPC)\n\t    CreateAccount, OpenAccount, AddAccountRights and\n\t    RemoveAccountRights allowing any authenticated user\n\t    to modify the privileges database.</p>\n\t  <p>This is a serious error, as it means that authenticated\n\t    users can connect to the LSA and grant themselves the\n\t    \"take ownership\" privilege. This privilege is used by the\n\t    smbd file server to grant the ability to change ownership\n\t    of a file or directory which means users could take ownership\n\t    of files or directories they do not own.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-2111"
+		]
+	},
+	"dates": {
+		"discovery": "2012-04-30",
+		"entry": "2012-04-30"
+	}
 }

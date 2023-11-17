@@ -1,32 +1,32 @@
 {
-  "vid": "6fb521b0-d388-11e3-a790-000c2980a9f3",
-  "topic": "strongswan -- Remote Authentication Bypass",
-  "affects": [
-    {
-      "name": [
-        "strongswan"
-      ],
-      "range": [
-        {
-          "lt": "5.1.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>strongSwan developers report:</p>\n\t<blockquote cite=\"www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-(cve-2014-2338).html\">\n\t  <p>Remote attackers are able to bypass authentication by rekeying an\n\t    IKE_SA during (1) initiation or (2) re-authentication, which\n\t    triggers the IKE_SA state to be set to established.</p>\n\t  <p>Only installations that actively initiate or re-authenticate IKEv2\n\t    IKE_SAs are affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-%28cve-2014-2338%29.html"
-    ],
-    "cvename": [
-      "CVE-2014-2338"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-03-12",
-    "entry": "2014-05-04"
-  }
+	"vid": "6fb521b0-d388-11e3-a790-000c2980a9f3",
+	"topic": "strongswan -- Remote Authentication Bypass",
+	"affects": [
+		{
+			"name": [
+				"strongswan"
+			],
+			"range": [
+				{
+					"lt": "5.1.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>strongSwan developers report:</p>\n\t<blockquote cite=\"www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-(cve-2014-2338).html\">\n\t  <p>Remote attackers are able to bypass authentication by rekeying an\n\t    IKE_SA during (1) initiation or (2) re-authentication, which\n\t    triggers the IKE_SA state to be set to established.</p>\n\t  <p>Only installations that actively initiate or re-authenticate IKEv2\n\t    IKE_SAs are affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-%28cve-2014-2338%29.html"
+		],
+		"cvename": [
+			"CVE-2014-2338"
+		]
+	},
+	"dates": {
+		"discovery": "2014-03-12",
+		"entry": "2014-05-04"
+	}
 }

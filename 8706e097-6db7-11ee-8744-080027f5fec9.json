@@ -1,62 +1,62 @@
 {
-  "vid": "8706e097-6db7-11ee-8744-080027f5fec9",
-  "topic": "redis -- Possible bypassing Unix socket permissions",
-  "affects": [
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "7.2.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis-devel"
-      ],
-      "range": [
-        {
-          "lt": "7.2.2.20231018"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis70"
-      ],
-      "range": [
-        {
-          "lt": "7.0.14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis62"
-      ],
-      "range": [
-        {
-          "lt": "6.2.14"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Redis core team  reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/r81pHa-dcI8\">\n\t  <p>\n\t    The wrong order of listen(2) and chmod(2) calls creates a\n\t    race condition that can be used by another process to\n\t    bypass desired Unix socket permissions on startup.\n\t  </p>\n\t</blockquote>\n\t"
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/redis-db/c/r81pHa-dcI8"
-    ],
-    "cvename": [
-      "CVE-2023-45145"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-10-18",
-    "entry": "2023-10-18"
-  }
+	"vid": "8706e097-6db7-11ee-8744-080027f5fec9",
+	"topic": "redis -- Possible bypassing Unix socket permissions",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "7.2.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis-devel"
+			],
+			"range": [
+				{
+					"lt": "7.2.2.20231018"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis70"
+			],
+			"range": [
+				{
+					"lt": "7.0.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis62"
+			],
+			"range": [
+				{
+					"lt": "6.2.14"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Redis core team  reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/r81pHa-dcI8\">\n\t  <p>\n\t    The wrong order of listen(2) and chmod(2) calls creates a\n\t    race condition that can be used by another process to\n\t    bypass desired Unix socket permissions on startup.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/redis-db/c/r81pHa-dcI8"
+		],
+		"cvename": [
+			"CVE-2023-45145"
+		]
+	},
+	"dates": {
+		"discovery": "2023-10-18",
+		"entry": "2023-10-18"
+	}
 }

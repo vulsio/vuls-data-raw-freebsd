@@ -1,33 +1,33 @@
 {
-  "vid": "696053c6-0f50-11df-a628-001517351c22",
-  "topic": "bugzilla -- information leak",
-  "affects": [
-    {
-      "name": [
-        "bugzilla"
-      ],
-      "range": [
-        {
-          "lt": "3.4.5",
-          "gt": "3.3.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.0.10/\">\n\t  <p>When moving a bug from one product to another, an intermediate\n\t    page is displayed letting you select the groups the bug should\n\t    be restricted to in the new product. However, a regression in\n\t    the 3.4.x series made it ignore all groups which are not\n\t    available in both products. As a workaround, you had to move\n\t    the bug to the new product first and then restrict it to the\n\t    desired groups, in two distinct steps, which could make the bug\n\t    temporarily public.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.bugzilla.org/security/3.0.10/"
-    ],
-    "cvename": [
-      "CVE-2009-3387"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-01-31",
-    "entry": "2010-02-01"
-  }
+	"vid": "696053c6-0f50-11df-a628-001517351c22",
+	"topic": "bugzilla -- information leak",
+	"affects": [
+		{
+			"name": [
+				"bugzilla"
+			],
+			"range": [
+				{
+					"lt": "3.4.5",
+					"gt": "3.3.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/3.0.10/\">\n\t  <p>When moving a bug from one product to another, an intermediate\n\t    page is displayed letting you select the groups the bug should\n\t    be restricted to in the new product. However, a regression in\n\t    the 3.4.x series made it ignore all groups which are not\n\t    available in both products. As a workaround, you had to move\n\t    the bug to the new product first and then restrict it to the\n\t    desired groups, in two distinct steps, which could make the bug\n\t    temporarily public.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.bugzilla.org/security/3.0.10/"
+		],
+		"cvename": [
+			"CVE-2009-3387"
+		]
+	},
+	"dates": {
+		"discovery": "2010-01-31",
+		"entry": "2010-02-01"
+	}
 }

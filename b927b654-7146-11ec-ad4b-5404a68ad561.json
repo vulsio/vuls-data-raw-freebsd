@@ -1,33 +1,33 @@
 {
-  "vid": "b927b654-7146-11ec-ad4b-5404a68ad561",
-  "topic": "uriparser -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "uriparser"
-      ],
-      "range": [
-        {
-          "lt": "0.9.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Upstream project reports:</p>\n\t<blockquote cite=\"https://github.com/uriparser/uriparser/blob/uriparser-0.9.6/ChangeLog\">\n\t  <p>Fix a bug affecting both uriNormalizeSyntax* and uriMakeOwner*\n\t     functions where the text range in .hostText would not be duped using\n\t     malloc but remain unchanged (and hence \"not owned\") for URIs with\n\t     an IPv4 or IPv6 address hostname; depending on how an application\n\t     uses uriparser, this could lead the application into a use-after-free\n\t     situation.\n\t     As the second half, fix uriFreeUriMembers* functions that would not\n\t     free .hostText memory for URIs with an IPv4 or IPv6 address host;\n\t     also, calling uriFreeUriMembers* multiple times on a URI of this\n\t     very nature would result in trying to free pointers to stack\n\t     (rather than heap) memory.\n\t     Fix functions uriNormalizeSyntax* for out-of-memory situations\n\t     (i.e. malloc returning NULL) for URIs containing empty segments\n\t     (any of user info, host text, query, or fragment) where previously\n\t     pointers to stack (rather than heap) memory were freed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/uriparser/uriparser/blob/uriparser-0.9.6/ChangeLog"
-    ],
-    "cvename": [
-      "CVE-2021-46141",
-      "CVE-2021-46142"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-01-06",
-    "entry": "2022-01-09"
-  }
+	"vid": "b927b654-7146-11ec-ad4b-5404a68ad561",
+	"topic": "uriparser -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"uriparser"
+			],
+			"range": [
+				{
+					"lt": "0.9.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Upstream project reports:</p>\n\t<blockquote cite=\"https://github.com/uriparser/uriparser/blob/uriparser-0.9.6/ChangeLog\">\n\t  <p>Fix a bug affecting both uriNormalizeSyntax* and uriMakeOwner*\n\t     functions where the text range in .hostText would not be duped using\n\t     malloc but remain unchanged (and hence \"not owned\") for URIs with\n\t     an IPv4 or IPv6 address hostname; depending on how an application\n\t     uses uriparser, this could lead the application into a use-after-free\n\t     situation.\n\t     As the second half, fix uriFreeUriMembers* functions that would not\n\t     free .hostText memory for URIs with an IPv4 or IPv6 address host;\n\t     also, calling uriFreeUriMembers* multiple times on a URI of this\n\t     very nature would result in trying to free pointers to stack\n\t     (rather than heap) memory.\n\t     Fix functions uriNormalizeSyntax* for out-of-memory situations\n\t     (i.e. malloc returning NULL) for URIs containing empty segments\n\t     (any of user info, host text, query, or fragment) where previously\n\t     pointers to stack (rather than heap) memory were freed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/uriparser/uriparser/blob/uriparser-0.9.6/ChangeLog"
+		],
+		"cvename": [
+			"CVE-2021-46141",
+			"CVE-2021-46142"
+		]
+	},
+	"dates": {
+		"discovery": "2022-01-06",
+		"entry": "2022-01-09"
+	}
 }

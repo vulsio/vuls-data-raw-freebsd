@@ -1,38 +1,38 @@
 {
-  "vid": "6e33f4ab-efed-11d9-8310-0001020eed82",
-  "topic": "bugzilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "bugzilla",
-        "ja-bugzilla"
-      ],
-      "range": [
-        {
-          "lt": "2.18.2",
-          "ge": "2.17.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/2.18.1/\">\n\t  <p>Any user can change any flag on any bug, even if they\n\t    don't have access to that bug, or even if they can't\n\t    normally make bug changes. This also allows them to expose\n\t    the summary of a bug.</p>\n\t  <p>Bugs are inserted into the database before they are\n\t    marked as private, in Bugzilla code. Thus, MySQL\n\t    replication can lag in between the time that the bug is\n\t    inserted and when it is marked as private (usually less\n\t    than a second). If replication lags at this point, the bug\n\t    summary will be accessible to all users until replication\n\t    catches up.  Also, on a very slow machine, there may be a\n\t    pause longer than a second that allows users to see the\n\t    title of the newly-filed bug.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.bugzilla.org/security/2.18.1/",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=292544",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=293159"
-    ],
-    "cvename": [
-      "CVE-2005-2173",
-      "CVE-2005-2174"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-07",
-    "entry": "2005-07-08",
-    "modified": "2005-07-18"
-  }
+	"vid": "6e33f4ab-efed-11d9-8310-0001020eed82",
+	"topic": "bugzilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"bugzilla",
+				"ja-bugzilla"
+			],
+			"range": [
+				{
+					"lt": "2.18.2",
+					"ge": "2.17.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Bugzilla Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.bugzilla.org/security/2.18.1/\">\n\t  <p>Any user can change any flag on any bug, even if they\n\t    don't have access to that bug, or even if they can't\n\t    normally make bug changes. This also allows them to expose\n\t    the summary of a bug.</p>\n\t  <p>Bugs are inserted into the database before they are\n\t    marked as private, in Bugzilla code. Thus, MySQL\n\t    replication can lag in between the time that the bug is\n\t    inserted and when it is marked as private (usually less\n\t    than a second). If replication lags at this point, the bug\n\t    summary will be accessible to all users until replication\n\t    catches up.  Also, on a very slow machine, there may be a\n\t    pause longer than a second that allows users to see the\n\t    title of the newly-filed bug.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.bugzilla.org/security/2.18.1/",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=292544",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=293159"
+		],
+		"cvename": [
+			"CVE-2005-2173",
+			"CVE-2005-2174"
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-07",
+		"entry": "2005-07-08",
+		"modified": "2005-07-18"
+	}
 }

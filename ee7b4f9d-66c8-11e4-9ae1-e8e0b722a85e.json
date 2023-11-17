@@ -1,32 +1,32 @@
 {
-  "vid": "ee7b4f9d-66c8-11e4-9ae1-e8e0b722a85e",
-  "topic": "wget -- path traversal vulnerability in recursive FTP mode",
-  "affects": [
-    {
-      "name": [
-        "wget"
-      ],
-      "range": [
-        {
-          "lt": "1.16"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4877\">\n\t  <p>Absolute path traversal vulnerability in GNU Wget before\n\t  1.16, when recursion is enabled, allows remote FTP servers\n\t  to write to arbitrary files, and consequently execute\n\t  arbitrary code, via a LIST response that references the same\n\t  filename within two entries, one of which indicates that the\n\t  filename is for a symlink. </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-4877"
-    ],
-    "cert_vu": [
-      "685996"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-10-27",
-    "entry": "2014-11-08"
-  }
+	"vid": "ee7b4f9d-66c8-11e4-9ae1-e8e0b722a85e",
+	"topic": "wget -- path traversal vulnerability in recursive FTP mode",
+	"affects": [
+		{
+			"name": [
+				"wget"
+			],
+			"range": [
+				{
+					"lt": "1.16"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4877\">\n\t  <p>Absolute path traversal vulnerability in GNU Wget before\n\t  1.16, when recursion is enabled, allows remote FTP servers\n\t  to write to arbitrary files, and consequently execute\n\t  arbitrary code, via a LIST response that references the same\n\t  filename within two entries, one of which indicates that the\n\t  filename is for a symlink. </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-4877"
+		],
+		"cert_vu": [
+			"685996"
+		]
+	},
+	"dates": {
+		"discovery": "2014-10-27",
+		"entry": "2014-11-08"
+	}
 }

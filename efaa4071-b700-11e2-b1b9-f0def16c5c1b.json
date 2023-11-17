@@ -1,55 +1,55 @@
 {
-  "vid": "efaa4071-b700-11e2-b1b9-f0def16c5c1b",
-  "topic": "nginx -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "nginx"
-      ],
-      "range": [
-        {
-          "ge": "1.2.0,1",
-          "le": "1.2.8,1"
-        },
-        {
-          "lt": "1.4.1,1",
-          "ge": "1.3.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "nginx-devel"
-      ],
-      "range": [
-        {
-          "ge": "1.1.4",
-          "le": "1.2.8"
-        },
-        {
-          "lt": "1.5.0",
-          "ge": "1.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n       <p>The nginx project reports:</p>\n       <blockquote cite=\"http://nginx.org/en/security_advisories.html\">\n\t<p>A stack-based buffer overflow might occur in a worker process\n\t  process while handling a specially crafted request, potentially\n\t  resulting in arbitrary code execution. [CVE-2013-2028]</p>\n\t<p>A security problem related to CVE-2013-2028 was identified,\n\t  affecting some previous nginx versions if proxy_pass to\n\t  untrusted upstream HTTP servers is used.</p>\n\t<p>The problem may lead to a denial of service or a disclosure of a\n\t  worker process memory on a specially crafted response from an\n\t  upstream proxied server. [CVE-2013-2070]</p>\n       </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://mailman.nginx.org/pipermail/nginx-announce/2013/000114.html",
-      "http://mailman.nginx.org/pipermail/nginx-announce/2013/000112.html"
-    ],
-    "cvename": [
-      "CVE-2013-2028",
-      "CVE-2013-2070"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-05-07",
-    "entry": "2013-05-07",
-    "modified": "2013-05-16"
-  }
+	"vid": "efaa4071-b700-11e2-b1b9-f0def16c5c1b",
+	"topic": "nginx -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"nginx"
+			],
+			"range": [
+				{
+					"ge": "1.2.0,1",
+					"le": "1.2.8,1"
+				},
+				{
+					"lt": "1.4.1,1",
+					"ge": "1.3.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"nginx-devel"
+			],
+			"range": [
+				{
+					"ge": "1.1.4",
+					"le": "1.2.8"
+				},
+				{
+					"lt": "1.5.0",
+					"ge": "1.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>The nginx project reports:</p>\n       <blockquote cite=\"http://nginx.org/en/security_advisories.html\">\n\t<p>A stack-based buffer overflow might occur in a worker process\n\t  process while handling a specially crafted request, potentially\n\t  resulting in arbitrary code execution. [CVE-2013-2028]</p>\n\t<p>A security problem related to CVE-2013-2028 was identified,\n\t  affecting some previous nginx versions if proxy_pass to\n\t  untrusted upstream HTTP servers is used.</p>\n\t<p>The problem may lead to a denial of service or a disclosure of a\n\t  worker process memory on a specially crafted response from an\n\t  upstream proxied server. [CVE-2013-2070]</p>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://mailman.nginx.org/pipermail/nginx-announce/2013/000114.html",
+			"http://mailman.nginx.org/pipermail/nginx-announce/2013/000112.html"
+		],
+		"cvename": [
+			"CVE-2013-2028",
+			"CVE-2013-2070"
+		]
+	},
+	"dates": {
+		"discovery": "2013-05-07",
+		"entry": "2013-05-07",
+		"modified": "2013-05-16"
+	}
 }

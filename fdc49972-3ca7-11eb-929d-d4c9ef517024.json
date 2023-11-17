@@ -1,34 +1,34 @@
 {
-  "vid": "fdc49972-3ca7-11eb-929d-d4c9ef517024",
-  "topic": "p11-kit -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "p11-kit"
-      ],
-      "range": [
-        {
-          "lt": "0.23.22"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The p11-glue project reports:</p>\n\t<blockquote cite=\"https://lists.freedesktop.org/archives/p11-glue/2020-December/000712.html\">\n\t  <p>CVE-2020-29363: Out-of-bounds write in\n\t    p11_rpc_buffer_get_byte_array_value function<br/>A heap-based buffer\n\t    overflow has been discovered in the RPC protocol used by p11-kit\n\t    server/remote commands and the client library. When the remote\n\t    entity supplies a serialized byte array in a CK_ATTRIBUTE, the\n\t    receiving entity may not allocate sufficient length for the buffer\n\t    to store the deserialized value.</p>\n\t  <p>CVE-2020-29362: Out-of-bounds read in p11_rpc_buffer_get_byte_array\n\t    function<br/>A heap-based buffer over-read has been discovered in\n\t    the RPC protocol used by thep11-kit server/remote commands and the\n\t    client library. When the remote entity supplies a byte array through\n\t    a serialized PKCS#11 function call, the receiving entity may allow\n\t    the reading of up to 4 bytes of memory past the heap\n\t    allocation.</p>\n\t  <p>CVE-2020-29361: Integer overflow when allocating memory for arrays\n\t    of attributes and object identifiers<br/>Multiple integer overflows\n\t    have been discovered in the array allocations in the p11-kit library\n\t    and the p11-kit list command, where overflow checks are missing\n\t    before calling realloc or calloc.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.freedesktop.org/archives/p11-glue/2020-December/000712.html"
-    ],
-    "cvename": [
-      "CVE-2020-29361",
-      "CVE-2020-29362",
-      "CVE-2020-29363"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-12-12",
-    "entry": "2020-12-12"
-  }
+	"vid": "fdc49972-3ca7-11eb-929d-d4c9ef517024",
+	"topic": "p11-kit -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"p11-kit"
+			],
+			"range": [
+				{
+					"lt": "0.23.22"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The p11-glue project reports:</p>\n\t<blockquote cite=\"https://lists.freedesktop.org/archives/p11-glue/2020-December/000712.html\">\n\t  <p>CVE-2020-29363: Out-of-bounds write in\n\t    p11_rpc_buffer_get_byte_array_value function<br/>A heap-based buffer\n\t    overflow has been discovered in the RPC protocol used by p11-kit\n\t    server/remote commands and the client library. When the remote\n\t    entity supplies a serialized byte array in a CK_ATTRIBUTE, the\n\t    receiving entity may not allocate sufficient length for the buffer\n\t    to store the deserialized value.</p>\n\t  <p>CVE-2020-29362: Out-of-bounds read in p11_rpc_buffer_get_byte_array\n\t    function<br/>A heap-based buffer over-read has been discovered in\n\t    the RPC protocol used by thep11-kit server/remote commands and the\n\t    client library. When the remote entity supplies a byte array through\n\t    a serialized PKCS#11 function call, the receiving entity may allow\n\t    the reading of up to 4 bytes of memory past the heap\n\t    allocation.</p>\n\t  <p>CVE-2020-29361: Integer overflow when allocating memory for arrays\n\t    of attributes and object identifiers<br/>Multiple integer overflows\n\t    have been discovered in the array allocations in the p11-kit library\n\t    and the p11-kit list command, where overflow checks are missing\n\t    before calling realloc or calloc.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.freedesktop.org/archives/p11-glue/2020-December/000712.html"
+		],
+		"cvename": [
+			"CVE-2020-29361",
+			"CVE-2020-29362",
+			"CVE-2020-29363"
+		]
+	},
+	"dates": {
+		"discovery": "2020-12-12",
+		"entry": "2020-12-12"
+	}
 }

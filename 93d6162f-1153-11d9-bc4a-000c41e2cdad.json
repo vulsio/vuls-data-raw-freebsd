@@ -1,92 +1,92 @@
 {
-  "vid": "93d6162f-1153-11d9-bc4a-000c41e2cdad",
-  "topic": "mozilla -- multiple heap buffer overflows",
-  "affects": [
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "0.7.3_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "0.9.3_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2_2,2"
-        },
-        {
-          "lt": "1.8.a3_1,2",
-          "ge": "1.8.a,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla-gtk1"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Several heap buffer overflows were discovered and fixed in the\n\t  most recent versions of Mozilla, Firefox, and Thunderbird.\n\t  These overflows may occur when:</p>\n\t<ul>\n\t  <li>Using the \"Send Page\" function.</li>\n\t  <li>Checking mail on a malicious POP3 server.</li>\n\t  <li>Processing non-ASCII URLs.</li>\n\t</ul>\n\t<p>Each of these vulnerabilities may be exploited for remote\n\t  code execution.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugzilla.mozilla.org/show_bug.cgi?id=258005",
-      "http://bugzilla.mozilla.org/show_bug.cgi?id=245066",
-      "http://bugzilla.mozilla.org/show_bug.cgi?id=226669",
-      "http://bugzilla.mozilla.org/show_bug.cgi?id=256316"
-    ],
-    "cvename": [
-      "CVE-2004-0902"
-    ],
-    "us_cert_ta": [
-      "TA04-261A"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-09-13",
-    "entry": "2004-09-28"
-  }
+	"vid": "93d6162f-1153-11d9-bc4a-000c41e2cdad",
+	"topic": "mozilla -- multiple heap buffer overflows",
+	"affects": [
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "0.7.3_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "0.9.3_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.2_2,2"
+				},
+				{
+					"lt": "1.8.a3_1,2",
+					"ge": "1.8.a,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla-gtk1"
+			],
+			"range": [
+				{
+					"lt": "1.7.2_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Several heap buffer overflows were discovered and fixed in the\n\t  most recent versions of Mozilla, Firefox, and Thunderbird.\n\t  These overflows may occur when:</p>\n\t<ul>\n\t  <li>Using the \"Send Page\" function.</li>\n\t  <li>Checking mail on a malicious POP3 server.</li>\n\t  <li>Processing non-ASCII URLs.</li>\n\t</ul>\n\t<p>Each of these vulnerabilities may be exploited for remote\n\t  code execution.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugzilla.mozilla.org/show_bug.cgi?id=258005",
+			"http://bugzilla.mozilla.org/show_bug.cgi?id=245066",
+			"http://bugzilla.mozilla.org/show_bug.cgi?id=226669",
+			"http://bugzilla.mozilla.org/show_bug.cgi?id=256316"
+		],
+		"cvename": [
+			"CVE-2004-0902"
+		],
+		"us_cert_ta": [
+			"TA04-261A"
+		]
+	},
+	"dates": {
+		"discovery": "2004-09-13",
+		"entry": "2004-09-28"
+	}
 }

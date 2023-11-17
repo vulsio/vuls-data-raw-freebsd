@@ -1,35 +1,35 @@
 {
-  "vid": "50ac2e96-ba4d-11e6-ae1b-002590263bf5",
-  "topic": "xen-kernel -- x86 null segments not always treated as unusable",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-191.html\">\n\t  <p>The Xen x86 emulator erroneously failed to consider the unusability\n\t    of segments when performing memory accesses.</p>\n\t  <p> The intended behaviour is as follows: The user data segment (%ds,\n\t    %es, %fs and %gs) selectors may be NULL in 32-bit to prevent access.\n\t    In 64-bit, NULL has a special meaning for user segments, and there\n\t    is no way of preventing access. However, in both 32-bit and 64-bit,\n\t    a NULL LDT system segment is intended to prevent access.</p>\n\t  <p>On Intel hardware, loading a NULL selector zeros the base as well\n\t    as most attributes, but sets the limit field to its largest possible\n\t    value. On AMD hardware, loading a NULL selector zeros the attributes,\n\t    leaving the stale base and limit intact.</p>\n\t  <p>Xen may erroneously permit the access using unexpected base/limit\n\t    values.</p>\n\t  <p>Ability to exploit this vulnerability on Intel is easy, but on AMD\n\t    depends in a complicated way on how the guest kernel manages LDTs.\n\t    </p>\n\t  <p>An unprivileged guest user program may be able to elevate its\n\t      privilege to that of the guest operating system.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xenbits.xen.org/xsa/advisory-191.html"
-    ],
-    "cvename": [
-      "CVE-2016-9386"
-    ],
-    "freebsd_pr": [
-      "ports/214936"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-22",
-    "entry": "2016-12-04"
-  }
+	"vid": "50ac2e96-ba4d-11e6-ae1b-002590263bf5",
+	"topic": "xen-kernel -- x86 null segments not always treated as unusable",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-191.html\">\n\t  <p>The Xen x86 emulator erroneously failed to consider the unusability\n\t    of segments when performing memory accesses.</p>\n\t  <p> The intended behaviour is as follows: The user data segment (%ds,\n\t    %es, %fs and %gs) selectors may be NULL in 32-bit to prevent access.\n\t    In 64-bit, NULL has a special meaning for user segments, and there\n\t    is no way of preventing access. However, in both 32-bit and 64-bit,\n\t    a NULL LDT system segment is intended to prevent access.</p>\n\t  <p>On Intel hardware, loading a NULL selector zeros the base as well\n\t    as most attributes, but sets the limit field to its largest possible\n\t    value. On AMD hardware, loading a NULL selector zeros the attributes,\n\t    leaving the stale base and limit intact.</p>\n\t  <p>Xen may erroneously permit the access using unexpected base/limit\n\t    values.</p>\n\t  <p>Ability to exploit this vulnerability on Intel is easy, but on AMD\n\t    depends in a complicated way on how the guest kernel manages LDTs.\n\t    </p>\n\t  <p>An unprivileged guest user program may be able to elevate its\n\t      privilege to that of the guest operating system.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xenbits.xen.org/xsa/advisory-191.html"
+		],
+		"cvename": [
+			"CVE-2016-9386"
+		],
+		"freebsd_pr": [
+			"ports/214936"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-22",
+		"entry": "2016-12-04"
+	}
 }

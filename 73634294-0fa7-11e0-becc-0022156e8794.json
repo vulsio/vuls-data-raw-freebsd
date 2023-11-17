@@ -1,42 +1,42 @@
 {
-  "vid": "73634294-0fa7-11e0-becc-0022156e8794",
-  "topic": "php -- open_basedir bypass",
-  "affects": [
-    {
-      "name": [
-        "php5"
-      ],
-      "range": [
-        {
-          "lt": "5.3.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php52"
-      ],
-      "range": [
-        {
-          "lt": "5.2.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3436\">\n\t  <p>fopen_wrappers.c in PHP 5.3.x through 5.3.3 might allow\n\t    remote attackers to bypass open_basedir restrictions via\n\t    vectors related to the length of a filename.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2010-3436"
-    ],
-    "bid": [
-      "44723"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-12-10",
-    "entry": "2011-01-13"
-  }
+	"vid": "73634294-0fa7-11e0-becc-0022156e8794",
+	"topic": "php -- open_basedir bypass",
+	"affects": [
+		{
+			"name": [
+				"php5"
+			],
+			"range": [
+				{
+					"lt": "5.3.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"php52"
+			],
+			"range": [
+				{
+					"lt": "5.2.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MITRE reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3436\">\n\t  <p>fopen_wrappers.c in PHP 5.3.x through 5.3.3 might allow\n\t    remote attackers to bypass open_basedir restrictions via\n\t    vectors related to the length of a filename.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2010-3436"
+		],
+		"bid": [
+			"44723"
+		]
+	},
+	"dates": {
+		"discovery": "2010-12-10",
+		"entry": "2011-01-13"
+	}
 }

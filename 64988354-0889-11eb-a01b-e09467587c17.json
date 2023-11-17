@@ -1,58 +1,58 @@
 {
-  "vid": "64988354-0889-11eb-a01b-e09467587c17",
-  "topic": "chromium -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "chromium"
-      ],
-      "range": [
-        {
-          "lt": "86.0.4240.75"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Chrome releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2020/10/stable-channel-update-for-desktop.html\">\n\t  <p>This release contains 35 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1127322] Critical CVE-2020-15967: Use after free in payments.\n\t      Reported by Man Yue Mo of GitHub Security Lab on 2020-09-11</li>\n\t    <li>[1126424] High CVE-2020-15968: Use after free in Blink.\n\t      Reported by Anonymous on 2020-09-09</li>\n\t    <li>[1124659] High CVE-2020-15969: Use after free in WebRTC.\n\t      Reported by Anonymous on 2020-09-03</li>\n\t    <li>[1108299] High CVE-2020-15970: Use after free in NFC. Reported\n\t      by Man Yue Mo of GitHub Security Lab on 2020-07-22</li>\n\t    <li>[1114062] High CVE-2020-15971: Use after free in printing.\n\t      Reported by Jun Kokatsu, Microsoft Browser Vulnerability Research on\n\t      2020-08-07</li>\n\t    <li>[1115901] High CVE-2020-15972: Use after free in audio.\n\t      Reported by Anonymous on 2020-08-13</li>\n\t    <li>[1133671] High CVE-2020-15990: Use after free in autofill.\n\t      Reported by Rong Jian and Guang Gong of Alpha Lab, Qihoo 360 on\n\t      2020-09-30</li>\n\t    <li>[1133688] High CVE-2020-15991: Use after free in password\n\t      manager. Reported by Rong Jian and Guang Gong of Alpha Lab, Qihoo\n\t      360 on 2020-09-30</li>\n\t    <li>[1106890] Medium CVE-2020-15973: Insufficient policy\n\t      enforcement in extensions. Reported by David Erceg on\n\t      2020-07-17</li>\n\t    <li>[1104103] Medium CVE-2020-15974: Integer overflow in Blink.\n\t      Reported by Juno Im (junorouse) of Theori on 2020-07-10</li>\n\t    <li>[1110800] Medium CVE-2020-15975: Integer overflow in\n\t      SwiftShader. Reported by Anonymous on 2020-07-29</li>\n\t    <li>[1123522] Medium CVE-2020-15976: Use after free in WebXR.\n\t      Reported by YoungJoo Lee (@ashuu_lee) of Raon Whitehat on\n\t      2020-08-31</li>\n\t    <li>[1083278] Medium CVE-2020-6557: Inappropriate implementation\n\t      in networking. Reported by Matthias Gierlings and Marcus Brinkmann\n\t      (NDS Ruhr-University Bochum) on 2020-05-15</li>\n\t    <li>[1097724] Medium CVE-2020-15977: Insufficient data validation\n\t      in dialogs. Reported by Narendra Bhati (@imnarendrabhati) on\n\t      2020-06-22</li>\n\t    <li>[1116280] Medium CVE-2020-15978: Insufficient data validation\n\t      in navigation. Reported by Luan Herrera (@lbherrera_) on\n\t      2020-08-14</li>\n\t    <li>[1127319] Medium CVE-2020-15979: Inappropriate implementation\n\t      in V8. Reported by Avihay Cohen (@SeraphicAlgorithms) on\n\t      2020-09-11</li>\n\t    <li>[1092453] Medium CVE-2020-15980: Insufficient policy\n\t      enforcement in Intents. Reported by Yongke Wang (@Rudykewang) and\n\t      Aryb1n (@aryb1n) of Tencent Security Xuanwu Lab on 2020-06-08</li>\n\t    <li>[1123023] Medium CVE-2020-15981: Out of bounds read in audio.\n\t      Reported by Christoph Guttandin on 2020-08-28</li>\n\t    <li>[1039882] Medium CVE-2020-15982: Side-channel information\n\t      leakage in cache. Reported by Luan Herrera (@lbherrera_) on\n\t      2020-01-07</li>\n\t    <li>[1076786] Medium CVE-2020-15983: Insufficient data validation\n\t      in webUI. Reported by Jun Kokatsu, Microsoft Browser Vulnerability\n\t      Research on 2020-04-30</li>\n\t    <li>[1080395] Medium CVE-2020-15984: Insufficient policy\n\t      enforcement in Omnibox. Reported by Rayyan Bijoora on\n\t      2020-05-07</li>\n\t    <li>[1099276] Medium CVE-2020-15985: Inappropriate implementation\n\t      in Blink. Reported by Abdulrahman Alqabandi, Microsoft Browser\n\t      Vulnerability Research on 2020-06-25</li>\n\t    <li>[1100247] Medium CVE-2020-15986: Integer overflow in media.\n\t      Reported by Mark Brand of Google Project Zero on 2020-06-29</li>\n\t    <li>[1127774] Medium CVE-2020-15987: Use after free in WebRTC.\n\t      Reported by Philipp Hancke on 2020-09-14</li>\n\t    <li>[1110195] Medium CVE-2020-15992: Insufficient policy\n\t      enforcement in networking. Reported by Alison Huffman, Microsoft\n\t      Browser Vulnerability Research on 2020-07-28</li>\n\t    <li>[1092518] Low CVE-2020-15988: Insufficient policy enforcement\n\t      in downloads. Reported by Samuel Attard on 2020-06-08</li>\n\t    <li>[1108351] Low CVE-2020-15989: Uninitialized Use in PDFium.\n\t      Reported by Gareth Evans (Microsoft) on 2020-07-22</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://chromereleases.googleblog.com/2020/10/stable-channel-update-for-desktop.html"
-    ],
-    "cvename": [
-      "CVE-2020-6557",
-      "CVE-2020-15967",
-      "CVE-2020-15968",
-      "CVE-2020-15969",
-      "CVE-2020-15970",
-      "CVE-2020-15971",
-      "CVE-2020-15972",
-      "CVE-2020-15973",
-      "CVE-2020-15974",
-      "CVE-2020-15975",
-      "CVE-2020-15976",
-      "CVE-2020-15977",
-      "CVE-2020-15978",
-      "CVE-2020-15979",
-      "CVE-2020-15980",
-      "CVE-2020-15981",
-      "CVE-2020-15982",
-      "CVE-2020-15983",
-      "CVE-2020-15984",
-      "CVE-2020-15985",
-      "CVE-2020-15986",
-      "CVE-2020-15987",
-      "CVE-2020-15988",
-      "CVE-2020-15989",
-      "CVE-2020-15990",
-      "CVE-2020-15991",
-      "CVE-2020-15992"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-10-06",
-    "entry": "2020-10-07"
-  }
+	"vid": "64988354-0889-11eb-a01b-e09467587c17",
+	"topic": "chromium -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "86.0.4240.75"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Chrome releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2020/10/stable-channel-update-for-desktop.html\">\n\t  <p>This release contains 35 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1127322] Critical CVE-2020-15967: Use after free in payments.\n\t      Reported by Man Yue Mo of GitHub Security Lab on 2020-09-11</li>\n\t    <li>[1126424] High CVE-2020-15968: Use after free in Blink.\n\t      Reported by Anonymous on 2020-09-09</li>\n\t    <li>[1124659] High CVE-2020-15969: Use after free in WebRTC.\n\t      Reported by Anonymous on 2020-09-03</li>\n\t    <li>[1108299] High CVE-2020-15970: Use after free in NFC. Reported\n\t      by Man Yue Mo of GitHub Security Lab on 2020-07-22</li>\n\t    <li>[1114062] High CVE-2020-15971: Use after free in printing.\n\t      Reported by Jun Kokatsu, Microsoft Browser Vulnerability Research on\n\t      2020-08-07</li>\n\t    <li>[1115901] High CVE-2020-15972: Use after free in audio.\n\t      Reported by Anonymous on 2020-08-13</li>\n\t    <li>[1133671] High CVE-2020-15990: Use after free in autofill.\n\t      Reported by Rong Jian and Guang Gong of Alpha Lab, Qihoo 360 on\n\t      2020-09-30</li>\n\t    <li>[1133688] High CVE-2020-15991: Use after free in password\n\t      manager. Reported by Rong Jian and Guang Gong of Alpha Lab, Qihoo\n\t      360 on 2020-09-30</li>\n\t    <li>[1106890] Medium CVE-2020-15973: Insufficient policy\n\t      enforcement in extensions. Reported by David Erceg on\n\t      2020-07-17</li>\n\t    <li>[1104103] Medium CVE-2020-15974: Integer overflow in Blink.\n\t      Reported by Juno Im (junorouse) of Theori on 2020-07-10</li>\n\t    <li>[1110800] Medium CVE-2020-15975: Integer overflow in\n\t      SwiftShader. Reported by Anonymous on 2020-07-29</li>\n\t    <li>[1123522] Medium CVE-2020-15976: Use after free in WebXR.\n\t      Reported by YoungJoo Lee (@ashuu_lee) of Raon Whitehat on\n\t      2020-08-31</li>\n\t    <li>[1083278] Medium CVE-2020-6557: Inappropriate implementation\n\t      in networking. Reported by Matthias Gierlings and Marcus Brinkmann\n\t      (NDS Ruhr-University Bochum) on 2020-05-15</li>\n\t    <li>[1097724] Medium CVE-2020-15977: Insufficient data validation\n\t      in dialogs. Reported by Narendra Bhati (@imnarendrabhati) on\n\t      2020-06-22</li>\n\t    <li>[1116280] Medium CVE-2020-15978: Insufficient data validation\n\t      in navigation. Reported by Luan Herrera (@lbherrera_) on\n\t      2020-08-14</li>\n\t    <li>[1127319] Medium CVE-2020-15979: Inappropriate implementation\n\t      in V8. Reported by Avihay Cohen (@SeraphicAlgorithms) on\n\t      2020-09-11</li>\n\t    <li>[1092453] Medium CVE-2020-15980: Insufficient policy\n\t      enforcement in Intents. Reported by Yongke Wang (@Rudykewang) and\n\t      Aryb1n (@aryb1n) of Tencent Security Xuanwu Lab on 2020-06-08</li>\n\t    <li>[1123023] Medium CVE-2020-15981: Out of bounds read in audio.\n\t      Reported by Christoph Guttandin on 2020-08-28</li>\n\t    <li>[1039882] Medium CVE-2020-15982: Side-channel information\n\t      leakage in cache. Reported by Luan Herrera (@lbherrera_) on\n\t      2020-01-07</li>\n\t    <li>[1076786] Medium CVE-2020-15983: Insufficient data validation\n\t      in webUI. Reported by Jun Kokatsu, Microsoft Browser Vulnerability\n\t      Research on 2020-04-30</li>\n\t    <li>[1080395] Medium CVE-2020-15984: Insufficient policy\n\t      enforcement in Omnibox. Reported by Rayyan Bijoora on\n\t      2020-05-07</li>\n\t    <li>[1099276] Medium CVE-2020-15985: Inappropriate implementation\n\t      in Blink. Reported by Abdulrahman Alqabandi, Microsoft Browser\n\t      Vulnerability Research on 2020-06-25</li>\n\t    <li>[1100247] Medium CVE-2020-15986: Integer overflow in media.\n\t      Reported by Mark Brand of Google Project Zero on 2020-06-29</li>\n\t    <li>[1127774] Medium CVE-2020-15987: Use after free in WebRTC.\n\t      Reported by Philipp Hancke on 2020-09-14</li>\n\t    <li>[1110195] Medium CVE-2020-15992: Insufficient policy\n\t      enforcement in networking. Reported by Alison Huffman, Microsoft\n\t      Browser Vulnerability Research on 2020-07-28</li>\n\t    <li>[1092518] Low CVE-2020-15988: Insufficient policy enforcement\n\t      in downloads. Reported by Samuel Attard on 2020-06-08</li>\n\t    <li>[1108351] Low CVE-2020-15989: Uninitialized Use in PDFium.\n\t      Reported by Gareth Evans (Microsoft) on 2020-07-22</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2020/10/stable-channel-update-for-desktop.html"
+		],
+		"cvename": [
+			"CVE-2020-6557",
+			"CVE-2020-15967",
+			"CVE-2020-15968",
+			"CVE-2020-15969",
+			"CVE-2020-15970",
+			"CVE-2020-15971",
+			"CVE-2020-15972",
+			"CVE-2020-15973",
+			"CVE-2020-15974",
+			"CVE-2020-15975",
+			"CVE-2020-15976",
+			"CVE-2020-15977",
+			"CVE-2020-15978",
+			"CVE-2020-15979",
+			"CVE-2020-15980",
+			"CVE-2020-15981",
+			"CVE-2020-15982",
+			"CVE-2020-15983",
+			"CVE-2020-15984",
+			"CVE-2020-15985",
+			"CVE-2020-15986",
+			"CVE-2020-15987",
+			"CVE-2020-15988",
+			"CVE-2020-15989",
+			"CVE-2020-15990",
+			"CVE-2020-15991",
+			"CVE-2020-15992"
+		]
+	},
+	"dates": {
+		"discovery": "2020-10-06",
+		"entry": "2020-10-07"
+	}
 }

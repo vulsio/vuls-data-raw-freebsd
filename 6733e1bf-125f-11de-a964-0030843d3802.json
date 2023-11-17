@@ -1,36 +1,36 @@
 {
-  "vid": "6733e1bf-125f-11de-a964-0030843d3802",
-  "topic": "ffmpeg -- 4xm processing memory corruption vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ffmpeg"
-      ],
-      "range": [
-        {
-          "lt": "2008.07.27_9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33711/\">\n\t  <p>Tobias Klein has reported a vulnerability in FFmpeg, which\n\t    potentially can be exploited by malicious people to compromise an\n\t    application using the library.</p>\n\t  <p>The vulnerability is caused due to a signedness error within the\n\t    \"fourxm_read_header()\" function in libavformat/4xm.c. This can be\n\t    exploited to corrupt arbitrary memory via a specially crafted 4xm\n\t    file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/33711/",
-      "http://trapkit.de/advisories/TKADV2009-004.txt"
-    ],
-    "cvename": [
-      "CVE-2009-0385"
-    ],
-    "bid": [
-      "33502"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-01-28",
-    "entry": "2009-03-16"
-  }
+	"vid": "6733e1bf-125f-11de-a964-0030843d3802",
+	"topic": "ffmpeg -- 4xm processing memory corruption vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ffmpeg"
+			],
+			"range": [
+				{
+					"lt": "2008.07.27_9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/33711/\">\n\t  <p>Tobias Klein has reported a vulnerability in FFmpeg, which\n\t    potentially can be exploited by malicious people to compromise an\n\t    application using the library.</p>\n\t  <p>The vulnerability is caused due to a signedness error within the\n\t    \"fourxm_read_header()\" function in libavformat/4xm.c. This can be\n\t    exploited to corrupt arbitrary memory via a specially crafted 4xm\n\t    file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/33711/",
+			"http://trapkit.de/advisories/TKADV2009-004.txt"
+		],
+		"cvename": [
+			"CVE-2009-0385"
+		],
+		"bid": [
+			"33502"
+		]
+	},
+	"dates": {
+		"discovery": "2009-01-28",
+		"entry": "2009-03-16"
+	}
 }

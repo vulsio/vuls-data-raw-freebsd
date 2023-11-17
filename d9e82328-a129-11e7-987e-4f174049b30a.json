@@ -1,40 +1,40 @@
 {
-  "vid": "d9e82328-a129-11e7-987e-4f174049b30a",
-  "topic": "perl -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "perl5"
-      ],
-      "range": [
-        {
-          "lt": "5.24.3",
-          "ge": "5.24.0"
-        },
-        {
-          "lt": "5.26.1",
-          "ge": "5.26.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SO-AND-SO reports:</p>\n\t<blockquote cite=\"https://metacpan.org/changes/release/SHAY/perl-5.26.1#Security\">\n\t  <p>CVE-2017-12814: $ENV{$key} stack buffer overflow on Windows</p>\n\t  <p>A possible stack buffer overflow in the %ENV code on Windows has been\n\t    fixed by removing the buffer completely since it was superfluous anyway.</p>\n\t  <p>CVE-2017-12837: Heap buffer overflow in regular expression compiler</p>\n\t  <p>Compiling certain regular expression patterns with the case-insensitive\n\t    modifier could cause a heap buffer overflow and crash perl. This has now\n\t    been fixed.</p>\n\t  <p>CVE-2017-12883: Buffer over-read in regular expression parser</p>\n\t  <p>For certain types of syntax error in a regular expression pattern, the\n\t    error message could either contain the contents of a random, possibly\n\t    large, chunk of memory, or could crash perl. This has now been fixed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://metacpan.org/changes/release/SHAY/perl-5.24.3",
-      "https://metacpan.org/changes/release/SHAY/perl-5.26.1"
-    ],
-    "cvename": [
-      "CVE-2017-12814",
-      "CVE-2017-12837",
-      "CVE-2017-12883"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-09-19",
-    "entry": "2017-09-24"
-  }
+	"vid": "d9e82328-a129-11e7-987e-4f174049b30a",
+	"topic": "perl -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"perl5"
+			],
+			"range": [
+				{
+					"lt": "5.24.3",
+					"ge": "5.24.0"
+				},
+				{
+					"lt": "5.26.1",
+					"ge": "5.26.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SO-AND-SO reports:</p>\n\t<blockquote cite=\"https://metacpan.org/changes/release/SHAY/perl-5.26.1#Security\">\n\t  <p>CVE-2017-12814: $ENV{$key} stack buffer overflow on Windows</p>\n\t  <p>A possible stack buffer overflow in the %ENV code on Windows has been\n\t    fixed by removing the buffer completely since it was superfluous anyway.</p>\n\t  <p>CVE-2017-12837: Heap buffer overflow in regular expression compiler</p>\n\t  <p>Compiling certain regular expression patterns with the case-insensitive\n\t    modifier could cause a heap buffer overflow and crash perl. This has now\n\t    been fixed.</p>\n\t  <p>CVE-2017-12883: Buffer over-read in regular expression parser</p>\n\t  <p>For certain types of syntax error in a regular expression pattern, the\n\t    error message could either contain the contents of a random, possibly\n\t    large, chunk of memory, or could crash perl. This has now been fixed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://metacpan.org/changes/release/SHAY/perl-5.24.3",
+			"https://metacpan.org/changes/release/SHAY/perl-5.26.1"
+		],
+		"cvename": [
+			"CVE-2017-12814",
+			"CVE-2017-12837",
+			"CVE-2017-12883"
+		]
+	},
+	"dates": {
+		"discovery": "2017-09-19",
+		"entry": "2017-09-24"
+	}
 }

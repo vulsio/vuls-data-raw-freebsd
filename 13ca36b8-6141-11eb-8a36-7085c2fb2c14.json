@@ -1,29 +1,29 @@
 {
-  "vid": "13ca36b8-6141-11eb-8a36-7085c2fb2c14",
-  "topic": "pngcheck -- Buffer-overrun vulnerability",
-  "affects": [
-    {
-      "name": [
-        "pngcheck"
-      ],
-      "range": [
-        {
-          "lt": "3.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The libpng project reports:</p>\n\t<blockquote cite=\"http://www.libpng.org/pub/png/apps/pngcheck.html\">\n\t  <p>pngcheck versions 3.0.0 and earlier have a pair of buffer-overrun\n\t    bugs related to the sPLT and PPLT chunks (the latter is a MNG-only\n\t    chunk, but it gets noticed even in PNG files if the -s option is used).\n\t    Both bugs are fixed in version 3.0.1, released on 24 January 2021.\n\t    Again, while all known vulnerabilities are fixed in this version,\n\t    the code is quite crufty, so it would be safest to assume there are\n\t    still some problems hidden in there. As always, use at your own risk.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.libpng.org/pub/png/apps/pngcheck.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-01-24",
-    "entry": "2021-01-28"
-  }
+	"vid": "13ca36b8-6141-11eb-8a36-7085c2fb2c14",
+	"topic": "pngcheck -- Buffer-overrun vulnerability",
+	"affects": [
+		{
+			"name": [
+				"pngcheck"
+			],
+			"range": [
+				{
+					"lt": "3.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The libpng project reports:</p>\n\t<blockquote cite=\"http://www.libpng.org/pub/png/apps/pngcheck.html\">\n\t  <p>pngcheck versions 3.0.0 and earlier have a pair of buffer-overrun\n\t    bugs related to the sPLT and PPLT chunks (the latter is a MNG-only\n\t    chunk, but it gets noticed even in PNG files if the -s option is used).\n\t    Both bugs are fixed in version 3.0.1, released on 24 January 2021.\n\t    Again, while all known vulnerabilities are fixed in this version,\n\t    the code is quite crufty, so it would be safest to assume there are\n\t    still some problems hidden in there. As always, use at your own risk.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.libpng.org/pub/png/apps/pngcheck.html"
+		]
+	},
+	"dates": {
+		"discovery": "2021-01-24",
+		"entry": "2021-01-28"
+	}
 }

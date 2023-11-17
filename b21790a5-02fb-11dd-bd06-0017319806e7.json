@@ -1,29 +1,29 @@
 {
-  "vid": "b21790a5-02fb-11dd-bd06-0017319806e7",
-  "topic": "powerdns-recursor -- DNS cache poisoning",
-  "affects": [
-    {
-      "name": [
-        "powerdns-recursor"
-      ],
-      "range": [
-        {
-          "lt": "3.1.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>If the system random number generator can be predicted by its\n\t  past output, then an attacker may spoof Recursor to accept mallicious\n\t  data.  This leads to DNS cache poisoning and client redirection.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://doc.powerdns.com/security-policy.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-03-31",
-    "entry": "2008-04-05"
-  }
+	"vid": "b21790a5-02fb-11dd-bd06-0017319806e7",
+	"topic": "powerdns-recursor -- DNS cache poisoning",
+	"affects": [
+		{
+			"name": [
+				"powerdns-recursor"
+			],
+			"range": [
+				{
+					"lt": "3.1.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>If the system random number generator can be predicted by its\n\t  past output, then an attacker may spoof Recursor to accept mallicious\n\t  data.  This leads to DNS cache poisoning and client redirection.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://doc.powerdns.com/security-policy.html"
+		]
+	},
+	"dates": {
+		"discovery": "2008-03-31",
+		"entry": "2008-04-05"
+	}
 }

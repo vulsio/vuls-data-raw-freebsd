@@ -1,34 +1,34 @@
 {
-  "vid": "f04f840d-0840-11ea-8d66-75d3253ef913",
-  "topic": "libidn2 -- roundtrip check vulnerability",
-  "affects": [
-    {
-      "name": [
-        "libidn2"
-      ],
-      "range": [
-        {
-          "lt": "2.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>CVE list:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12290\">\n\t  <p>GNU libidn2 before 2.2.0 fails to perform the roundtrip checks\n\t    specified in RFC3490 Section 4.2 when converting A-labels to U-labels.\n\t    This makes it possible in some circumstances for one domain to\n\t    impersonate another. By creating a malicious domain that matches a\n\t    target domain except for the inclusion of certain punycoded Unicode\n\t    characters (that would be discarded when converted first to a Unicode\n\t    label and then back to an ASCII label), arbitrary domains can be\n\t    impersonated.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://gitlab.com/libidn/libidn2/blob/master/NEWS",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12290"
-    ],
-    "cvename": [
-      "CVE-2019-12290"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-11-14",
-    "entry": "2019-11-18",
-    "modified": "2020-06-24"
-  }
+	"vid": "f04f840d-0840-11ea-8d66-75d3253ef913",
+	"topic": "libidn2 -- roundtrip check vulnerability",
+	"affects": [
+		{
+			"name": [
+				"libidn2"
+			],
+			"range": [
+				{
+					"lt": "2.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>CVE list:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12290\">\n\t  <p>GNU libidn2 before 2.2.0 fails to perform the roundtrip checks\n\t    specified in RFC3490 Section 4.2 when converting A-labels to U-labels.\n\t    This makes it possible in some circumstances for one domain to\n\t    impersonate another. By creating a malicious domain that matches a\n\t    target domain except for the inclusion of certain punycoded Unicode\n\t    characters (that would be discarded when converted first to a Unicode\n\t    label and then back to an ASCII label), arbitrary domains can be\n\t    impersonated.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://gitlab.com/libidn/libidn2/blob/master/NEWS",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12290"
+		],
+		"cvename": [
+			"CVE-2019-12290"
+		]
+	},
+	"dates": {
+		"discovery": "2019-11-14",
+		"entry": "2019-11-18",
+		"modified": "2020-06-24"
+	}
 }

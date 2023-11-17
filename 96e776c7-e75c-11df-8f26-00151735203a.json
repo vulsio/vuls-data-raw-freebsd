@@ -1,35 +1,35 @@
 {
-  "vid": "96e776c7-e75c-11df-8f26-00151735203a",
-  "topic": "OTRS -- Multiple XSS and denial of service vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "otrs"
-      ],
-      "range": [
-        {
-          "lt": "2.4.9",
-          "gt": "2.3.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OTRS Security Advisory reports:</p>\n\t<blockquote cite=\"http://otrs.org/advisory/OSA-2010-02-en/\">\n\t  <ul>\n\t    <li>Multiple Cross Site Scripting issues:\n\t      Missing HTML quoting allows authenticated agents or\n\t      customers to inject HTML tags. This vulnerability\n\t      allows an attacker to inject script code into the OTRS\n\t      web-interface which will be loaded and executed\n\t      in the browsers of system users.</li>\n\t    <li>Possible Denial of Service Attack:\n\t      Perl's regular expressions consume 100% CPU time\n\t      on the server if an agent or customer views an affected\n\t      article.  To exploit this vulnerability the malicious user\n\t      needs to send extremely large HTML emails to your\n\t      system address.</li>\n\t  </ul>\n\t</blockquote>\n\t<blockquote cite=\"http://otrs.org/advisory/OSA-2010-03-en/\">\n\t  <p>AgentTicketZoom is vulnerable to XSS attacks from HTML e-mails:</p>\n\t  <p>Whenever a customer sends an HTML e-mail and RichText is enabled\n\t    in OTRS, javascript contained in the email can do everything\n\t    in the OTRS agent interface that the agent himself could do.</p>\n\t  <p>Most relevant is that this type of exploit can be used in such\n\t    a way that the agent won't even detect he is being exploited.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://otrs.org/advisory/OSA-2010-02-en/",
-      "http://otrs.org/advisory/OSA-2010-03-en/"
-    ],
-    "cvename": [
-      "CVE-2010-2080",
-      "CVE-2010-4071"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-09-15",
-    "entry": "2010-11-03"
-  }
+	"vid": "96e776c7-e75c-11df-8f26-00151735203a",
+	"topic": "OTRS -- Multiple XSS and denial of service vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"otrs"
+			],
+			"range": [
+				{
+					"lt": "2.4.9",
+					"gt": "2.3.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OTRS Security Advisory reports:</p>\n\t<blockquote cite=\"http://otrs.org/advisory/OSA-2010-02-en/\">\n\t  <ul>\n\t    <li>Multiple Cross Site Scripting issues:\n\t      Missing HTML quoting allows authenticated agents or\n\t      customers to inject HTML tags. This vulnerability\n\t      allows an attacker to inject script code into the OTRS\n\t      web-interface which will be loaded and executed\n\t      in the browsers of system users.</li>\n\t    <li>Possible Denial of Service Attack:\n\t      Perl's regular expressions consume 100% CPU time\n\t      on the server if an agent or customer views an affected\n\t      article.  To exploit this vulnerability the malicious user\n\t      needs to send extremely large HTML emails to your\n\t      system address.</li>\n\t  </ul>\n\t</blockquote>\n\t<blockquote cite=\"http://otrs.org/advisory/OSA-2010-03-en/\">\n\t  <p>AgentTicketZoom is vulnerable to XSS attacks from HTML e-mails:</p>\n\t  <p>Whenever a customer sends an HTML e-mail and RichText is enabled\n\t    in OTRS, javascript contained in the email can do everything\n\t    in the OTRS agent interface that the agent himself could do.</p>\n\t  <p>Most relevant is that this type of exploit can be used in such\n\t    a way that the agent won't even detect he is being exploited.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://otrs.org/advisory/OSA-2010-02-en/",
+			"http://otrs.org/advisory/OSA-2010-03-en/"
+		],
+		"cvename": [
+			"CVE-2010-2080",
+			"CVE-2010-4071"
+		]
+	},
+	"dates": {
+		"discovery": "2010-09-15",
+		"entry": "2010-11-03"
+	}
 }

@@ -1,29 +1,29 @@
 {
-  "vid": "b10d1afa-6087-11ed-8c5e-641c67a117d8",
-  "topic": "varnish -- Request Smuggling Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "varnish7"
-      ],
-      "range": [
-        {
-          "lt": "7.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Varnish Cache Project reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00010.html\">\n      <p>A request smuggling attack can be performed on Varnish Cache servers by\n\t requesting that certain headers are made hop-by-hop, preventing the\n\t Varnish Cache servers from forwarding critical headers to the backend.\n\t Among the headers that can be filtered this way are both Content-Length\n\t and Host, making it possible for an attacker to both break the HTTP/1\n\t protocol framing, and bypass request to host routing in VCL.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://varnish-cache.org/security/VSV00010.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-11-08",
-    "entry": "2022-11-09"
-  }
+	"vid": "b10d1afa-6087-11ed-8c5e-641c67a117d8",
+	"topic": "varnish -- Request Smuggling Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"varnish7"
+			],
+			"range": [
+				{
+					"lt": "7.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Varnish Cache Project reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00010.html\">\n      <p>A request smuggling attack can be performed on Varnish Cache servers by\n\t requesting that certain headers are made hop-by-hop, preventing the\n\t Varnish Cache servers from forwarding critical headers to the backend.\n\t Among the headers that can be filtered this way are both Content-Length\n\t and Host, making it possible for an attacker to both break the HTTP/1\n\t protocol framing, and bypass request to host routing in VCL.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://varnish-cache.org/security/VSV00010.html"
+		]
+	},
+	"dates": {
+		"discovery": "2022-11-08",
+		"entry": "2022-11-09"
+	}
 }

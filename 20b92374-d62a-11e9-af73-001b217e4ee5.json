@@ -1,34 +1,34 @@
 {
-  "vid": "20b92374-d62a-11e9-af73-001b217e4ee5",
-  "topic": "ISC KEA -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "kea"
-      ],
-      "range": [
-        {
-          "lt": "1.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Internet Systems Consortium, Inc. reports:</p>\n\t<blockquote cite=\"https://gitlab.isc.org/isc-projects/kea/issues\">\n\t  <p>A packet containing a malformed DUID can cause the kea-dhcp6 server to terminate (CVE-2019-6472) [Medium]</p>\n\t  <p>An invalid hostname option can cause the kea-dhcp4 server to terminate (CVE-2019-6473) [Medium]</p>\n\t  <p>An oversight when validating incoming client requests can lead to a situation where the Kea server<br/>\n\t    will exit when trying to restart (CVE-2019-6474) [Medium]</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://gitlab.isc.org/isc-projects/kea/issues"
-    ],
-    "cvename": [
-      "CVE-2019-6472",
-      "CVE-2019-6473",
-      "CVE-2019-6474"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-28",
-    "entry": "2019-09-20"
-  }
+	"vid": "20b92374-d62a-11e9-af73-001b217e4ee5",
+	"topic": "ISC KEA -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"kea"
+			],
+			"range": [
+				{
+					"lt": "1.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Internet Systems Consortium, Inc. reports:</p>\n\t<blockquote cite=\"https://gitlab.isc.org/isc-projects/kea/issues\">\n\t  <p>A packet containing a malformed DUID can cause the kea-dhcp6 server to terminate (CVE-2019-6472) [Medium]</p>\n\t  <p>An invalid hostname option can cause the kea-dhcp4 server to terminate (CVE-2019-6473) [Medium]</p>\n\t  <p>An oversight when validating incoming client requests can lead to a situation where the Kea server<br/>\n\t    will exit when trying to restart (CVE-2019-6474) [Medium]</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://gitlab.isc.org/isc-projects/kea/issues"
+		],
+		"cvename": [
+			"CVE-2019-6472",
+			"CVE-2019-6473",
+			"CVE-2019-6474"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-28",
+		"entry": "2019-09-20"
+	}
 }

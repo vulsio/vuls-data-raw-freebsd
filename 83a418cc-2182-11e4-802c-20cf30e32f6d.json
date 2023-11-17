@@ -1,61 +1,61 @@
 {
-  "vid": "83a418cc-2182-11e4-802c-20cf30e32f6d",
-  "topic": "subversion -- several vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "subversion16"
-      ],
-      "range": [
-        {
-          "lt": "1.7.18",
-          "ge": "1.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion17"
-      ],
-      "range": [
-        {
-          "lt": "1.7.18",
-          "ge": "1.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.7.18",
-          "ge": "1.0.0"
-        },
-        {
-          "lt": "1.8.10",
-          "ge": "1.8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion Project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2014-3522-advisory.txt\">\n\t  <p>Using the Serf RA layer of Subversion for HTTPS uses the apr_fnmatch API\n\t    to handle matching wildcards in certificate Common Names and Subject\n\t    Alternate Names.  However, apr_fnmatch is not designed for this purpose.\n\t    Instead it is designed to behave like common shell globbing.  In particular\n\t    this means that '*' is not limited to a single label within a hostname\n\t    (i.e. it will match '.').  But even further apr_fnmatch supports '?' and\n\t    character classes (neither of which are part of the RFCs defining how\n\t    certificate validation works).</p>\n\t  <p>Subversion stores cached credentials by an MD5 hash based on the URL and\n\t    the authentication realm of the server the credentials are cached for.\n\t    MD5 has been shown to be subject to chosen plaintext hash collisions.\n\t    This means it may be possible to generate an authentication realm which\n\t    results in the same MD5 hash for a different URL.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://subversion.apache.org/security/CVE-2014-3522-advisory.txt",
-      "http://subversion.apache.org/security/CVE-2014-3528-advisory.txt"
-    ],
-    "cvename": [
-      "CVE-2014-3522",
-      "CVE-2014-3528"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-08-06",
-    "entry": "2014-08-11"
-  }
+	"vid": "83a418cc-2182-11e4-802c-20cf30e32f6d",
+	"topic": "subversion -- several vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"subversion16"
+			],
+			"range": [
+				{
+					"lt": "1.7.18",
+					"ge": "1.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion17"
+			],
+			"range": [
+				{
+					"lt": "1.7.18",
+					"ge": "1.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion"
+			],
+			"range": [
+				{
+					"lt": "1.7.18",
+					"ge": "1.0.0"
+				},
+				{
+					"lt": "1.8.10",
+					"ge": "1.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion Project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2014-3522-advisory.txt\">\n\t  <p>Using the Serf RA layer of Subversion for HTTPS uses the apr_fnmatch API\n\t    to handle matching wildcards in certificate Common Names and Subject\n\t    Alternate Names.  However, apr_fnmatch is not designed for this purpose.\n\t    Instead it is designed to behave like common shell globbing.  In particular\n\t    this means that '*' is not limited to a single label within a hostname\n\t    (i.e. it will match '.').  But even further apr_fnmatch supports '?' and\n\t    character classes (neither of which are part of the RFCs defining how\n\t    certificate validation works).</p>\n\t  <p>Subversion stores cached credentials by an MD5 hash based on the URL and\n\t    the authentication realm of the server the credentials are cached for.\n\t    MD5 has been shown to be subject to chosen plaintext hash collisions.\n\t    This means it may be possible to generate an authentication realm which\n\t    results in the same MD5 hash for a different URL.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://subversion.apache.org/security/CVE-2014-3522-advisory.txt",
+			"http://subversion.apache.org/security/CVE-2014-3528-advisory.txt"
+		],
+		"cvename": [
+			"CVE-2014-3522",
+			"CVE-2014-3528"
+		]
+	},
+	"dates": {
+		"discovery": "2014-08-06",
+		"entry": "2014-08-11"
+	}
 }

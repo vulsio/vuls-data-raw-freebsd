@@ -1,45 +1,45 @@
 {
-  "vid": "d9867f50-54d0-11dc-b80b-0016179b2dd5",
-  "topic": "claws-mail -- POP3 Format String Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "claws-mail",
-        "sylpheed-claws"
-      ],
-      "range": [
-        {
-          "lt": "2.10.0_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "sylpheed2"
-      ],
-      "range": [
-        {
-          "lt": "2.4.4_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/26550/\">\n\t  <p>A format string error in the \"inc_put_error()\" function in\n\t    src/inc.c when displaying a POP3 server's error response can\n\t    be exploited via specially crafted POP3 server replies containing\n\t    format specifiers.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary code,\n\t    but requires that the user is tricked into connecting to a malicious\n\t    POP3 server.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/26550/",
-      "http://secunia.com/secunia_research/2007-70/advisory/"
-    ],
-    "cvename": [
-      "CVE-2007-2958"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-08-24",
-    "entry": "2007-08-27",
-    "modified": "2010-05-12"
-  }
+	"vid": "d9867f50-54d0-11dc-b80b-0016179b2dd5",
+	"topic": "claws-mail -- POP3 Format String Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"claws-mail",
+				"sylpheed-claws"
+			],
+			"range": [
+				{
+					"lt": "2.10.0_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"sylpheed2"
+			],
+			"range": [
+				{
+					"lt": "2.4.4_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Secunia Advisory reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/26550/\">\n\t  <p>A format string error in the \"inc_put_error()\" function in\n\t    src/inc.c when displaying a POP3 server's error response can\n\t    be exploited via specially crafted POP3 server replies containing\n\t    format specifiers.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary code,\n\t    but requires that the user is tricked into connecting to a malicious\n\t    POP3 server.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/26550/",
+			"http://secunia.com/secunia_research/2007-70/advisory/"
+		],
+		"cvename": [
+			"CVE-2007-2958"
+		]
+	},
+	"dates": {
+		"discovery": "2007-08-24",
+		"entry": "2007-08-27",
+		"modified": "2010-05-12"
+	}
 }

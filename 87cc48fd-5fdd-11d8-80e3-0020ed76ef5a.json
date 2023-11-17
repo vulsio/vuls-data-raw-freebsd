@@ -1,32 +1,32 @@
 {
-  "vid": "87cc48fd-5fdd-11d8-80e3-0020ed76ef5a",
-  "topic": "mnGoSearch buffer overflow in UdmDocToTextBuf()",
-  "affects": [
-    {
-      "name": [
-        "mnogosearch"
-      ],
-      "range": [
-        {
-          "lt": "3.2.15",
-          "ge": "3.2.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jedi/Sector One &lt;j@pureftpd.org&gt; reported the following\n\t  on the full-disclosure list:</p>\n\t<blockquote>\n\t  <p>Every document is stored in multiple parts according to\n\t    its sections (description, body, etc) in databases. And\n\t    when the content has to be sent to the client,\n\t    UdmDocToTextBuf() concatenates those parts together and\n\t    skips metadata.</p>\n\t  <p>Unfortunately, that function lacks bounds checking and\n\t    a buffer overflow can be triggered by indexing a large\n\t    enough document.</p>\n\t  <p>'len' is fixed to 10K [in UdmDocToTextBuf] in searchd.c\n\t    . S-&gt;val length depends on the length of the original\n\t    document and on the indexer settings (the sample\n\t    configuration file has low limits that work around the\n\t    bug, though).</p>\n\t  <p>Exploitation should be easy, moreover textbuf points to\n\t  the stack.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "mlist": [
-      {
-        "text": "http://lists.netsys.com/pipermail/full-disclosure/2004-February/017366.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-02-15",
-    "entry": "2004-02-15"
-  }
+	"vid": "87cc48fd-5fdd-11d8-80e3-0020ed76ef5a",
+	"topic": "mnGoSearch buffer overflow in UdmDocToTextBuf()",
+	"affects": [
+		{
+			"name": [
+				"mnogosearch"
+			],
+			"range": [
+				{
+					"lt": "3.2.15",
+					"ge": "3.2.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jedi/Sector One &lt;j@pureftpd.org&gt; reported the following\n\t  on the full-disclosure list:</p>\n\t<blockquote>\n\t  <p>Every document is stored in multiple parts according to\n\t    its sections (description, body, etc) in databases. And\n\t    when the content has to be sent to the client,\n\t    UdmDocToTextBuf() concatenates those parts together and\n\t    skips metadata.</p>\n\t  <p>Unfortunately, that function lacks bounds checking and\n\t    a buffer overflow can be triggered by indexing a large\n\t    enough document.</p>\n\t  <p>'len' is fixed to 10K [in UdmDocToTextBuf] in searchd.c\n\t    . S-&gt;val length depends on the length of the original\n\t    document and on the indexer settings (the sample\n\t    configuration file has low limits that work around the\n\t    bug, though).</p>\n\t  <p>Exploitation should be easy, moreover textbuf points to\n\t  the stack.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"mlist": [
+			{
+				"text": "http://lists.netsys.com/pipermail/full-disclosure/2004-February/017366.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-02-15",
+		"entry": "2004-02-15"
+	}
 }

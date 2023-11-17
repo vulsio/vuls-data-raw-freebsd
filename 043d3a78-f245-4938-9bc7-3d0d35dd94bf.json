@@ -1,87 +1,87 @@
 {
-  "vid": "043d3a78-f245-4938-9bc7-3d0d35dd94bf",
-  "topic": "wordpress -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "zh-wordpress-zh_CN"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "zh-wordpress-zh_TW"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-wordpress"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ja-wordpress"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ru-wordpress"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "wordpress"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The wordpress development team reports:</p>\n\t<blockquote cite=\"http://wordpress.org/news/2013/09/wordpress-3-6-1/\">\n\t  <ul>\n\t    <li>Block unsafe PHP unserialization that could occur in limited\n\t      situations and setups, which can lead to remote code\n\t      execution.</li>\n\t    <li>Prevent a user with an Author role, using a specially crafted\n\t      request, from being able to create a post \"written by\" another\n\t      user.</li>\n\t    <li>Fix insufficient input validation that could result in\n\t      redirecting or leading a user to another website.</li>\n\t  </ul>\n\t<p>Additionally, we've adjusted security restrictions around file\n\t  uploads to mitigate the potential for cross-site scripting.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://wordpress.org/news/2013/09/wordpress-3-6-1/"
-    ],
-    "cvename": [
-      "CVE-2013-4338",
-      "CVE-2013-4339",
-      "CVE-2013-4340",
-      "CVE-2013-5738",
-      "CVE-2013-5739"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-09-11",
-    "entry": "2013-10-19",
-    "modified": "2014-04-30"
-  }
+	"vid": "043d3a78-f245-4938-9bc7-3d0d35dd94bf",
+	"topic": "wordpress -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"zh-wordpress-zh_CN"
+			],
+			"range": [
+				{
+					"lt": "3.6.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"zh-wordpress-zh_TW"
+			],
+			"range": [
+				{
+					"lt": "3.6.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-wordpress"
+			],
+			"range": [
+				{
+					"lt": "3.6.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ja-wordpress"
+			],
+			"range": [
+				{
+					"lt": "3.6.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ru-wordpress"
+			],
+			"range": [
+				{
+					"lt": "3.6.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"wordpress"
+			],
+			"range": [
+				{
+					"lt": "3.6.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The wordpress development team reports:</p>\n\t<blockquote cite=\"http://wordpress.org/news/2013/09/wordpress-3-6-1/\">\n\t  <ul>\n\t    <li>Block unsafe PHP unserialization that could occur in limited\n\t      situations and setups, which can lead to remote code\n\t      execution.</li>\n\t    <li>Prevent a user with an Author role, using a specially crafted\n\t      request, from being able to create a post \"written by\" another\n\t      user.</li>\n\t    <li>Fix insufficient input validation that could result in\n\t      redirecting or leading a user to another website.</li>\n\t  </ul>\n\t<p>Additionally, we've adjusted security restrictions around file\n\t  uploads to mitigate the potential for cross-site scripting.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://wordpress.org/news/2013/09/wordpress-3-6-1/"
+		],
+		"cvename": [
+			"CVE-2013-4338",
+			"CVE-2013-4339",
+			"CVE-2013-4340",
+			"CVE-2013-5738",
+			"CVE-2013-5739"
+		]
+	},
+	"dates": {
+		"discovery": "2013-09-11",
+		"entry": "2013-10-19",
+		"modified": "2014-04-30"
+	}
 }

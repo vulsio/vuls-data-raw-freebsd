@@ -1,48 +1,48 @@
 {
-  "vid": "b77b5646-a778-11e7-ac58-b499baebfeaf",
-  "topic": "dnsmasq -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "dnsmasq"
-      ],
-      "range": [
-        {
-          "lt": "2.78,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "dnsmasq-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.78"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Google Project Zero reports:</p>\n\t<blockquote cite=\"https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html\">\n\t  <ul>\n\t    <li>CVE-2017-14491: Heap based overflow (2 bytes). Before 2.76 and this\n\t      commit overflow was unrestricted.</li>\n\t    <li>CVE-2017-14492: Heap based overflow.</li>\n\t    <li>CVE-2017-14493: Stack Based overflow.</li>\n\t    <li>CVE-2017-14494: Information Leak</li>\n\t    <li>CVE-2017-14495: Lack of free()</li>\n\t    <li>CVE-2017-14496: Invalid boundary checks. Integer underflow leading\n\t       to a huge memcpy.</li>\n\t    <li>CVE-2017-13704: Crash on large DNS query</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html"
-    ],
-    "cvename": [
-      "CVE-2017-14491",
-      "CVE-2017-14492",
-      "CVE-2017-14493",
-      "CVE-2017-14494",
-      "CVE-2017-14495",
-      "CVE-2017-14496",
-      "CVE-2017-13704"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-10-02",
-    "entry": "2017-10-02"
-  }
+	"vid": "b77b5646-a778-11e7-ac58-b499baebfeaf",
+	"topic": "dnsmasq -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"dnsmasq"
+			],
+			"range": [
+				{
+					"lt": "2.78,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"dnsmasq-devel"
+			],
+			"range": [
+				{
+					"lt": "2.78"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Google Project Zero reports:</p>\n\t<blockquote cite=\"https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html\">\n\t  <ul>\n\t    <li>CVE-2017-14491: Heap based overflow (2 bytes). Before 2.76 and this\n\t      commit overflow was unrestricted.</li>\n\t    <li>CVE-2017-14492: Heap based overflow.</li>\n\t    <li>CVE-2017-14493: Stack Based overflow.</li>\n\t    <li>CVE-2017-14494: Information Leak</li>\n\t    <li>CVE-2017-14495: Lack of free()</li>\n\t    <li>CVE-2017-14496: Invalid boundary checks. Integer underflow leading\n\t       to a huge memcpy.</li>\n\t    <li>CVE-2017-13704: Crash on large DNS query</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html"
+		],
+		"cvename": [
+			"CVE-2017-14491",
+			"CVE-2017-14492",
+			"CVE-2017-14493",
+			"CVE-2017-14494",
+			"CVE-2017-14495",
+			"CVE-2017-14496",
+			"CVE-2017-13704"
+		]
+	},
+	"dates": {
+		"discovery": "2017-10-02",
+		"entry": "2017-10-02"
+	}
 }

@@ -1,53 +1,53 @@
 {
-  "vid": "1edae47e-1cdd-11ea-8c2a-08002743b791",
-  "topic": "samba -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "samba48"
-      ],
-      "range": [
-        {
-          "ge": "4.8.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba410"
-      ],
-      "range": [
-        {
-          "lt": "4.10.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba411"
-      ],
-      "range": [
-        {
-          "lt": "4.11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/history/samba-4.10.11.html\">\n\t  <p>CVE-2019-14861:</p>\n\t  <p>An authenticated user can crash the DCE/RPC DNS management server by creating records with matching the zone name.</p>\n\t  <p>CVE-2019-14870:</p>\n\t  <p>The DelegationNotAllowed Kerberos feature restriction was not being applied when processing protocol transition requests (S4U2Self), in the AD DC KDC.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.samba.org/samba/history/samba-4.10.11.html"
-    ],
-    "cvename": [
-      "CVE-2019-14861",
-      "CVE-2019-14870"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-12-10",
-    "entry": "2019-12-12"
-  }
+	"vid": "1edae47e-1cdd-11ea-8c2a-08002743b791",
+	"topic": "samba -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"samba48"
+			],
+			"range": [
+				{
+					"ge": "4.8.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba410"
+			],
+			"range": [
+				{
+					"lt": "4.10.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba411"
+			],
+			"range": [
+				{
+					"lt": "4.11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Samba Team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/history/samba-4.10.11.html\">\n\t  <p>CVE-2019-14861:</p>\n\t  <p>An authenticated user can crash the DCE/RPC DNS management server by creating records with matching the zone name.</p>\n\t  <p>CVE-2019-14870:</p>\n\t  <p>The DelegationNotAllowed Kerberos feature restriction was not being applied when processing protocol transition requests (S4U2Self), in the AD DC KDC.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.samba.org/samba/history/samba-4.10.11.html"
+		],
+		"cvename": [
+			"CVE-2019-14861",
+			"CVE-2019-14870"
+		]
+	},
+	"dates": {
+		"discovery": "2019-12-10",
+		"entry": "2019-12-12"
+	}
 }

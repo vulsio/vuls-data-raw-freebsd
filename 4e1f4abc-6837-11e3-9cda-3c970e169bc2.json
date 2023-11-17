@@ -1,33 +1,33 @@
 {
-  "vid": "4e1f4abc-6837-11e3-9cda-3c970e169bc2",
-  "topic": "cURL library -- cert name check ignore with GnuTLS",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.33.0_2",
-          "ge": "7.21.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>cURL project reports:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20131217.html\">\n\t  <p>libcurl is vulnerable to a case of missing out the checking\n\t    of the certificate CN or SAN name field when the digital\n\t    signature verification is turned off.</p>\n\t  <p>libcurl offers two separate and independent options for\n\t    verifying a server's TLS certificate. CURLOPT_SSL_VERIFYPEER\n\t    and CURLOPT_SSL_VERIFYHOST. The first one tells libcurl to\n\t    verify the trust chain using a CA cert bundle, while the\n\t    second tells libcurl to make sure that the name fields in\n\t    the server certificate meets the criteria. Both options are\n\t    enabled by default.</p>\n\t  <p>This flaw had the effect that when an application disabled\n\t    CURLOPT_SSL_VERIFYPEER, libcurl mistakenly also skipped the\n\t    CURLOPT_SSL_VERIFYHOST check. Applications can disable\n\t    CURLOPT_SSL_VERIFYPEER and still achieve security by doing\n\t    the check on its own using other means.</p>\n\t  <p>The curl command line tool is not affected by this problem\n\t    as it either enables both options or disables both at the\n\t    same time.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://curl.haxx.se/docs/adv_20131217.html"
-    ],
-    "cvename": [
-      "CVE-2013-6422"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-12-17",
-    "entry": "2013-12-18"
-  }
+	"vid": "4e1f4abc-6837-11e3-9cda-3c970e169bc2",
+	"topic": "cURL library -- cert name check ignore with GnuTLS",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.33.0_2",
+					"ge": "7.21.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cURL project reports:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20131217.html\">\n\t  <p>libcurl is vulnerable to a case of missing out the checking\n\t    of the certificate CN or SAN name field when the digital\n\t    signature verification is turned off.</p>\n\t  <p>libcurl offers two separate and independent options for\n\t    verifying a server's TLS certificate. CURLOPT_SSL_VERIFYPEER\n\t    and CURLOPT_SSL_VERIFYHOST. The first one tells libcurl to\n\t    verify the trust chain using a CA cert bundle, while the\n\t    second tells libcurl to make sure that the name fields in\n\t    the server certificate meets the criteria. Both options are\n\t    enabled by default.</p>\n\t  <p>This flaw had the effect that when an application disabled\n\t    CURLOPT_SSL_VERIFYPEER, libcurl mistakenly also skipped the\n\t    CURLOPT_SSL_VERIFYHOST check. Applications can disable\n\t    CURLOPT_SSL_VERIFYPEER and still achieve security by doing\n\t    the check on its own using other means.</p>\n\t  <p>The curl command line tool is not affected by this problem\n\t    as it either enables both options or disables both at the\n\t    same time.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://curl.haxx.se/docs/adv_20131217.html"
+		],
+		"cvename": [
+			"CVE-2013-6422"
+		]
+	},
+	"dates": {
+		"discovery": "2013-12-17",
+		"entry": "2013-12-18"
+	}
 }

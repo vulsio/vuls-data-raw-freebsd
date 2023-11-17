@@ -1,40 +1,40 @@
 {
-  "vid": "396ee517-a607-11d9-ac72-000bdb1444a4",
-  "topic": "horde -- Horde Page Title Cross-Site Scripting Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "horde",
-        "horde-php5"
-      ],
-      "range": [
-        {
-          "lt": "3.0.4",
-          "gt": "3.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia Advisory: SA14730</p>\n\t<blockquote cite=\"http://secunia.com/advisories/14730\">\n\t  <p>A vulnerability has been reported in Horde, which can be\n\t     exploited by malicious people to conduct cross-site scripting\n\t     attacks.</p>\n\t  <p>Input passed when setting the parent frame's page title via\n\t     JavaScript is not properly sanitised before being returned to\n\t     the user. This can be exploited to execute arbitrary HTML and\n\t     script code in a user's browser session in context of an affected\n\t     site.</p>\n\t  <p>The vulnerability has been reported in version 3.0.4-RC2. Prior\n\t     versions may also be affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://cvs.horde.org/diff.php/horde/docs/CHANGES?r1=1.515.2.49&r2=1.515.2.93&ty=h"
-    ],
-    "cvename": [
-      "CVE-2005-0961"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.horde.org/archives/announce/2005/000176.html",
-        "msgid": "20050329111028.6A112117243@neo.wg.de"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-03-29",
-    "entry": "2005-04-05"
-  }
+	"vid": "396ee517-a607-11d9-ac72-000bdb1444a4",
+	"topic": "horde -- Horde Page Title Cross-Site Scripting Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"horde",
+				"horde-php5"
+			],
+			"range": [
+				{
+					"lt": "3.0.4",
+					"gt": "3.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia Advisory: SA14730</p>\n\t<blockquote cite=\"http://secunia.com/advisories/14730\">\n\t  <p>A vulnerability has been reported in Horde, which can be\n\t     exploited by malicious people to conduct cross-site scripting\n\t     attacks.</p>\n\t  <p>Input passed when setting the parent frame's page title via\n\t     JavaScript is not properly sanitised before being returned to\n\t     the user. This can be exploited to execute arbitrary HTML and\n\t     script code in a user's browser session in context of an affected\n\t     site.</p>\n\t  <p>The vulnerability has been reported in version 3.0.4-RC2. Prior\n\t     versions may also be affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://cvs.horde.org/diff.php/horde/docs/CHANGES?r1=1.515.2.49&r2=1.515.2.93&ty=h"
+		],
+		"cvename": [
+			"CVE-2005-0961"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.horde.org/archives/announce/2005/000176.html",
+				"msgid": "20050329111028.6A112117243@neo.wg.de"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-03-29",
+		"entry": "2005-04-05"
+	}
 }

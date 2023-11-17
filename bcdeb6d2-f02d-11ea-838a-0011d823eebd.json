@@ -1,29 +1,29 @@
 {
-  "vid": "bcdeb6d2-f02d-11ea-838a-0011d823eebd",
-  "topic": "Mbed TLS -- Local side channel attack on RSA and static Diffie-Hellman",
-  "affects": [
-    {
-      "name": [
-        "mbedtls"
-      ],
-      "range": [
-        {
-          "lt": "2.16.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Manuel Pégourié-Gonnard reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-09-2\">\n\t  <p>An attacker with access to precise enough timing and memory access\n\t    information (typically an untrusted operating system attacking a\n\t    secure enclave such as SGX or the TrustZone secure world) can\n\t    recover the private keys used in RSA or static (finite-field)\n\t    Diffie-Hellman operations.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-09-2"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-09-01",
-    "entry": "2020-09-06"
-  }
+	"vid": "bcdeb6d2-f02d-11ea-838a-0011d823eebd",
+	"topic": "Mbed TLS -- Local side channel attack on RSA and static Diffie-Hellman",
+	"affects": [
+		{
+			"name": [
+				"mbedtls"
+			],
+			"range": [
+				{
+					"lt": "2.16.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Manuel Pégourié-Gonnard reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-09-2\">\n\t  <p>An attacker with access to precise enough timing and memory access\n\t    information (typically an untrusted operating system attacking a\n\t    secure enclave such as SGX or the TrustZone secure world) can\n\t    recover the private keys used in RSA or static (finite-field)\n\t    Diffie-Hellman operations.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-09-2"
+		]
+	},
+	"dates": {
+		"discovery": "2020-09-01",
+		"entry": "2020-09-06"
+	}
 }

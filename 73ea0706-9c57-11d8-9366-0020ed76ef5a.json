@@ -1,32 +1,32 @@
 {
-  "vid": "73ea0706-9c57-11d8-9366-0020ed76ef5a",
-  "topic": "rsync path traversal issue",
-  "affects": [
-    {
-      "name": [
-        "rsync"
-      ],
-      "range": [
-        {
-          "lt": "2.6.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>When running rsync in daemon mode, no checks were made\n\t  to prevent clients from writing outside of a module's\n\t`path' setting.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://rsync.samba.org/#security_apr04"
-    ],
-    "cvename": [
-      "CVE-2004-0426"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-04-26",
-    "entry": "2004-05-02"
-  }
+	"vid": "73ea0706-9c57-11d8-9366-0020ed76ef5a",
+	"topic": "rsync path traversal issue",
+	"affects": [
+		{
+			"name": [
+				"rsync"
+			],
+			"range": [
+				{
+					"lt": "2.6.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>When running rsync in daemon mode, no checks were made\n\t  to prevent clients from writing outside of a module's\n\t`path' setting.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://rsync.samba.org/#security_apr04"
+		],
+		"cvename": [
+			"CVE-2004-0426"
+		]
+	},
+	"dates": {
+		"discovery": "2004-04-26",
+		"entry": "2004-05-02"
+	}
 }

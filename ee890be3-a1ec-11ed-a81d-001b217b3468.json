@@ -1,44 +1,44 @@
 {
-  "vid": "ee890be3-a1ec-11ed-a81d-001b217b3468",
-  "topic": "Gitlab -- Multiple Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "15.8.1",
-          "ge": "15.8.0"
-        },
-        {
-          "lt": "15.7.6",
-          "ge": "15.7.0"
-        },
-        {
-          "lt": "15.6.7",
-          "ge": "12.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2023/01/31/security-release-gitlab-15-8-1-released/\">\n\t  <p>Denial of Service via arbitrarily large Issue descriptions</p>\n\t  <p>CSRF via file upload allows an attacker to take over a repository</p>\n\t  <p>Sidekiq background job DoS by uploading malicious CI job artifact zips</p>\n\t  <p>Sidekiq background job DoS by uploading a malicious Helm package</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2023/01/31/security-release-gitlab-15-8-1-released/"
-    ],
-    "cvename": [
-      "CVE-2022-3411",
-      "CVE-2022-4138",
-      "CVE-2022-3759",
-      "CVE-2023-0518"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-01-31",
-    "entry": "2023-02-01"
-  }
+	"vid": "ee890be3-a1ec-11ed-a81d-001b217b3468",
+	"topic": "Gitlab -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "15.8.1",
+					"ge": "15.8.0"
+				},
+				{
+					"lt": "15.7.6",
+					"ge": "15.7.0"
+				},
+				{
+					"lt": "15.6.7",
+					"ge": "12.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2023/01/31/security-release-gitlab-15-8-1-released/\">\n\t  <p>Denial of Service via arbitrarily large Issue descriptions</p>\n\t  <p>CSRF via file upload allows an attacker to take over a repository</p>\n\t  <p>Sidekiq background job DoS by uploading malicious CI job artifact zips</p>\n\t  <p>Sidekiq background job DoS by uploading a malicious Helm package</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2023/01/31/security-release-gitlab-15-8-1-released/"
+		],
+		"cvename": [
+			"CVE-2022-3411",
+			"CVE-2022-4138",
+			"CVE-2022-3759",
+			"CVE-2023-0518"
+		]
+	},
+	"dates": {
+		"discovery": "2023-01-31",
+		"entry": "2023-02-01"
+	}
 }

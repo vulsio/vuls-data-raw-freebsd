@@ -1,32 +1,32 @@
 {
-  "vid": "ffc80e58-0dcb-11ea-9673-4c72b94353b5",
-  "topic": "unbound -- parsing vulnerability",
-  "affects": [
-    {
-      "name": [
-        "unbound"
-      ],
-      "range": [
-        {
-          "lt": "1.9.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Unbound Security Advisories:</p>\n\t<blockquote cite=\"https://nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-ipsec-module\">\n\t  <p>Recent versions of Unbound contain a vulnerability that can cause shell\n\t    code execution after receiving a specially crafted answer. This issue\n\t    can only be triggered if unbound was compiled with --enable-ipsecmod\n\t    support, and ipsecmod is enabled and used in the configuration.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-ipsec-module"
-    ],
-    "cvename": [
-      "CVE-2019-18934"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-11-19",
-    "entry": "2019-11-23"
-  }
+	"vid": "ffc80e58-0dcb-11ea-9673-4c72b94353b5",
+	"topic": "unbound -- parsing vulnerability",
+	"affects": [
+		{
+			"name": [
+				"unbound"
+			],
+			"range": [
+				{
+					"lt": "1.9.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Unbound Security Advisories:</p>\n\t<blockquote cite=\"https://nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-ipsec-module\">\n\t  <p>Recent versions of Unbound contain a vulnerability that can cause shell\n\t    code execution after receiving a specially crafted answer. This issue\n\t    can only be triggered if unbound was compiled with --enable-ipsecmod\n\t    support, and ipsecmod is enabled and used in the configuration.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-ipsec-module"
+		],
+		"cvename": [
+			"CVE-2019-18934"
+		]
+	},
+	"dates": {
+		"discovery": "2019-11-19",
+		"entry": "2019-11-23"
+	}
 }

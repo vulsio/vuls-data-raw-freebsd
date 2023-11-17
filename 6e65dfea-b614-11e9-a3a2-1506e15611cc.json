@@ -1,66 +1,66 @@
 {
-  "vid": "6e65dfea-b614-11e9-a3a2-1506e15611cc",
-  "topic": "Django -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py27-django111",
-        "py35-django111",
-        "py36-django111",
-        "py37-django111"
-      ],
-      "range": [
-        {
-          "lt": "1.11.23"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django21",
-        "py35-django21",
-        "py36-django21",
-        "py37-django21"
-      ],
-      "range": [
-        {
-          "lt": "2.1.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django22",
-        "py35-django22",
-        "py36-django22",
-        "py37-django22"
-      ],
-      "range": [
-        {
-          "lt": "2.2.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django release notes:</p>\n\t<blockquote cite=\"https://docs.djangoproject.com/en/1.11/releases/1.11.23/\">\n\t  <p>CVE-2019-14232: Denial-of-service possibility in\n\t    django.utils.text.Truncator</p>\n\t  <p>If django.utils.text.Truncator's chars() and words() methods were\n\t    passed the html=True argument, they were extremely slow to evaluate\n\t    certain inputs due to a catastrophic backtracking vulnerability in a\n\t    regular expression. The chars() and words() methods are used to\n\t    implement the truncatechars_html and truncatewords_html template\n\t    filters, which were thus vulnerable</p>\n\t  <p>The regular expressions used by Truncator have been simplified in\n\t    order to avoid potential backtracking issues. As a consequence, trailing\n\t    punctuation may now at times be included in the truncated output.</p>\n\t  <p>CVE-2019-14233: Denial-of-service possibility in strip_tags()</p>\n\t  <p>Due to the behavior of the underlying HTMLParser,\n\t    django.utils.html.strip_tags() would be extremely slow to evaluate\n\t    certain inputs containing large sequences of nested incomplete HTML\n\t    entities. The strip_tags() method is used to implement the corresponding\n\t    striptags template filter, which was thus also vulnerable.</p>\n\t  <p>strip_tags() now avoids recursive calls to HTMLParser when progress\n\t    removing tags, but necessarily incomplete HTML entities, stops being\n\t    made.</p>\n\t  <p>Remember that absolutely NO guarantee is provided about the results of\n\t    strip_tags() being HTML safe. So NEVER mark safe the result of a\n\t    strip_tags() call without escaping it first, for example with\n\t    django.utils.html.escape().</p>\n\t  <p>CVE-2019-14234: SQL injection possibility in key and index lookups for\n\t    JSONField/HStoreField</p>\n\t  <p>Key and index lookups for JSONField and key lookups for HStoreField\n\t    were subject to SQL injection, using a suitably crafted dictionary,\n\t    with dictionary expansion, as the **kwargs passed to QuerySet.filter().</p>\n\t  <p>CVE-2019-14235: Potential memory exhaustion in\n\t    django.utils.encoding.uri_to_iri()</p>\n\t  <p>If passed certain inputs, django.utils.encoding.uri_to_iri() could lead\n\t    to significant memory usage due to excessive recursion when\n\t    re-percent-encoding invalid UTF-8 octet sequences.</p>\n\t  <p>uri_to_iri() now avoids recursion when re-percent-encoding invalid\n\t    UTF-8 octet sequences.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.djangoproject.com/en/1.11/releases/1.11.23/",
-      "https://docs.djangoproject.com/en/2.1/releases/2.1.11/",
-      "https://docs.djangoproject.com/en/2.2/releases/2.2.4/"
-    ],
-    "cvename": [
-      "CVE-2019-14232",
-      "CVE-2019-14233",
-      "CVE-2019-14234",
-      "CVE-2019-14235"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-08-01",
-    "entry": "2019-08-03"
-  }
+	"vid": "6e65dfea-b614-11e9-a3a2-1506e15611cc",
+	"topic": "Django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py27-django111",
+				"py35-django111",
+				"py36-django111",
+				"py37-django111"
+			],
+			"range": [
+				{
+					"lt": "1.11.23"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django21",
+				"py35-django21",
+				"py36-django21",
+				"py37-django21"
+			],
+			"range": [
+				{
+					"lt": "2.1.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django22",
+				"py35-django22",
+				"py36-django22",
+				"py37-django22"
+			],
+			"range": [
+				{
+					"lt": "2.2.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django release notes:</p>\n\t<blockquote cite=\"https://docs.djangoproject.com/en/1.11/releases/1.11.23/\">\n\t  <p>CVE-2019-14232: Denial-of-service possibility in\n\t    django.utils.text.Truncator</p>\n\t  <p>If django.utils.text.Truncator's chars() and words() methods were\n\t    passed the html=True argument, they were extremely slow to evaluate\n\t    certain inputs due to a catastrophic backtracking vulnerability in a\n\t    regular expression. The chars() and words() methods are used to\n\t    implement the truncatechars_html and truncatewords_html template\n\t    filters, which were thus vulnerable</p>\n\t  <p>The regular expressions used by Truncator have been simplified in\n\t    order to avoid potential backtracking issues. As a consequence, trailing\n\t    punctuation may now at times be included in the truncated output.</p>\n\t  <p>CVE-2019-14233: Denial-of-service possibility in strip_tags()</p>\n\t  <p>Due to the behavior of the underlying HTMLParser,\n\t    django.utils.html.strip_tags() would be extremely slow to evaluate\n\t    certain inputs containing large sequences of nested incomplete HTML\n\t    entities. The strip_tags() method is used to implement the corresponding\n\t    striptags template filter, which was thus also vulnerable.</p>\n\t  <p>strip_tags() now avoids recursive calls to HTMLParser when progress\n\t    removing tags, but necessarily incomplete HTML entities, stops being\n\t    made.</p>\n\t  <p>Remember that absolutely NO guarantee is provided about the results of\n\t    strip_tags() being HTML safe. So NEVER mark safe the result of a\n\t    strip_tags() call without escaping it first, for example with\n\t    django.utils.html.escape().</p>\n\t  <p>CVE-2019-14234: SQL injection possibility in key and index lookups for\n\t    JSONField/HStoreField</p>\n\t  <p>Key and index lookups for JSONField and key lookups for HStoreField\n\t    were subject to SQL injection, using a suitably crafted dictionary,\n\t    with dictionary expansion, as the **kwargs passed to QuerySet.filter().</p>\n\t  <p>CVE-2019-14235: Potential memory exhaustion in\n\t    django.utils.encoding.uri_to_iri()</p>\n\t  <p>If passed certain inputs, django.utils.encoding.uri_to_iri() could lead\n\t    to significant memory usage due to excessive recursion when\n\t    re-percent-encoding invalid UTF-8 octet sequences.</p>\n\t  <p>uri_to_iri() now avoids recursion when re-percent-encoding invalid\n\t    UTF-8 octet sequences.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.djangoproject.com/en/1.11/releases/1.11.23/",
+			"https://docs.djangoproject.com/en/2.1/releases/2.1.11/",
+			"https://docs.djangoproject.com/en/2.2/releases/2.2.4/"
+		],
+		"cvename": [
+			"CVE-2019-14232",
+			"CVE-2019-14233",
+			"CVE-2019-14234",
+			"CVE-2019-14235"
+		]
+	},
+	"dates": {
+		"discovery": "2019-08-01",
+		"entry": "2019-08-03"
+	}
 }

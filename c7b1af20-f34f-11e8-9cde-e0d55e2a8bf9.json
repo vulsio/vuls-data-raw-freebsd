@@ -1,32 +1,32 @@
 {
-  "vid": "c7b1af20-f34f-11e8-9cde-e0d55e2a8bf9",
-  "topic": "messagelib -- HTML email can open browser window automatically",
-  "affects": [
-    {
-      "name": [
-        "messagelib"
-      ],
-      "range": [
-        {
-          "lt": "18.08.3_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Albert Astals Cid reports:</p>\n\t<blockquote cite=\"https://www.kde.org/info/security/advisory-20181128-1.txt\">\n\t  <p>messagelib is the library used by KMail to display emails.</p>\n\t  <p>messagelib by default displays emails as plain text, but gives the user\n\t    an option to \"Prefer HTML to plain text\" in the settings and if that option\n\t  is not enabled there is way to enable HTML display when an email contains HTML.</p>\n\t  <p>Some HTML emails can trick messagelib into opening a new browser window when\n\t    displaying said email as HTML.</p>\n\t  <p>This happens even if the option to allow the HTML emails to access\n\t    remote servers is disabled in KMail settings.</p>\n\t  <p>This means that the owners of the servers referred in the email can see\n\t    in their access logs your IP address.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.kde.org/info/security/advisory-20181128-1.txt"
-    ],
-    "cvename": [
-      "CVE-2018-19516"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-28",
-    "entry": "2018-11-28"
-  }
+	"vid": "c7b1af20-f34f-11e8-9cde-e0d55e2a8bf9",
+	"topic": "messagelib -- HTML email can open browser window automatically",
+	"affects": [
+		{
+			"name": [
+				"messagelib"
+			],
+			"range": [
+				{
+					"lt": "18.08.3_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Albert Astals Cid reports:</p>\n\t<blockquote cite=\"https://www.kde.org/info/security/advisory-20181128-1.txt\">\n\t  <p>messagelib is the library used by KMail to display emails.</p>\n\t  <p>messagelib by default displays emails as plain text, but gives the user\n\t    an option to \"Prefer HTML to plain text\" in the settings and if that option\n\t  is not enabled there is way to enable HTML display when an email contains HTML.</p>\n\t  <p>Some HTML emails can trick messagelib into opening a new browser window when\n\t    displaying said email as HTML.</p>\n\t  <p>This happens even if the option to allow the HTML emails to access\n\t    remote servers is disabled in KMail settings.</p>\n\t  <p>This means that the owners of the servers referred in the email can see\n\t    in their access logs your IP address.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.kde.org/info/security/advisory-20181128-1.txt"
+		],
+		"cvename": [
+			"CVE-2018-19516"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-28",
+		"entry": "2018-11-28"
+	}
 }

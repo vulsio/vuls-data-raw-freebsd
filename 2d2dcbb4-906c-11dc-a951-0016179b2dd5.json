@@ -1,35 +1,35 @@
 {
-  "vid": "2d2dcbb4-906c-11dc-a951-0016179b2dd5",
-  "topic": "phpmyadmin -- cross-site scripting vulnerability",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "2.11.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The DigiTrust Group reports:</p>\n\t<blockquote cite=\"http://www.digitrustgroup.com/advisories/tdg-advisory071108a.html\">\n\t  <p>When creating a new database, a malicious user can use a\n\t    client-side Web proxy to place malicious code in the db parameter of\n\t    the POST request. Since db_create.php does not properly sanitize\n\t    user-supplied input, an administrator could face a persistent XSS\n\t    attack when the database names are displayed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.digitrustgroup.com/advisories/tdg-advisory071108a.html",
-      "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-7"
-    ],
-    "cvename": [
-      "CVE-2007-5976",
-      "CVE-2007-5977"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-11-11",
-    "entry": "2007-11-11",
-    "modified": "2010-05-12"
-  }
+	"vid": "2d2dcbb4-906c-11dc-a951-0016179b2dd5",
+	"topic": "phpmyadmin -- cross-site scripting vulnerability",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "2.11.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The DigiTrust Group reports:</p>\n\t<blockquote cite=\"http://www.digitrustgroup.com/advisories/tdg-advisory071108a.html\">\n\t  <p>When creating a new database, a malicious user can use a\n\t    client-side Web proxy to place malicious code in the db parameter of\n\t    the POST request. Since db_create.php does not properly sanitize\n\t    user-supplied input, an administrator could face a persistent XSS\n\t    attack when the database names are displayed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.digitrustgroup.com/advisories/tdg-advisory071108a.html",
+			"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-7"
+		],
+		"cvename": [
+			"CVE-2007-5976",
+			"CVE-2007-5977"
+		]
+	},
+	"dates": {
+		"discovery": "2007-11-11",
+		"entry": "2007-11-11",
+		"modified": "2010-05-12"
+	}
 }

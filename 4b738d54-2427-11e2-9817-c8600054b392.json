@@ -1,48 +1,48 @@
 {
-  "vid": "4b738d54-2427-11e2-9817-c8600054b392",
-  "topic": "RT -- Multiple Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "rt40"
-      ],
-      "range": [
-        {
-          "lt": "4.0.8",
-          "ge": "4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "rt38"
-      ],
-      "range": [
-        {
-          "lt": "3.8.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>BestPractical report:</p>\n\t<blockquote cite=\"http://blog.bestpractical.com/2012/10/security-vulnerabilities-in-rt.html\">\n\t  <p>All versions of RT are vulnerable to an email header injection\n\t    attack. Users with ModifySelf or AdminUser can cause RT to add\n\t    arbitrary headers or content to outgoing mail. Depending on the\n\t    scrips that are configured, this may be be leveraged for information\n\t    leakage or phishing.</p>\n\t  <p>RT 4.0.0 and above and RTFM 2.0.0 and above contain a vulnerability\n\t    due to lack of proper rights checking, allowing any privileged user\n\t    to create Articles in any class.</p>\n\t  <p>All versions of RT with cross-site-request forgery (CSRF)\n\t    protection (RT 3.8.12 and above, RT 4.0.6 and above, and any\n\t    instances running the security patches released 2012-05-22) contain\n\t    a vulnerability which incorrectly allows though CSRF requests which\n\t    toggle ticket bookmarks.</p>\n\t  <p>All versions of RT are vulnerable to a confused deputy attack on\n\t    the user. While not strictly a CSRF attack, users who are not logged\n\t    in who are tricked into following a malicious link may, after\n\t    supplying their credentials, be subject to an attack which leverages\n\t    their credentials to modify arbitrary state. While users who were\n\t    logged in would have observed the CSRF protection page, users who\n\t    were not logged in receive no such warning due to the intervening\n\t    login process. RT has been extended to notify users of pending\n\t    actions during the login process.</p>\n\t  <p>RT 3.8.0 and above are susceptible to a number of vulnerabilities\n\t    concerning improper signing or encryption of messages using GnuPG;\n\t    if GnuPG is not enabled, none of the following affect you.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://blog.bestpractical.com/2012/10/security-vulnerabilities-in-rt.html"
-    ],
-    "cvename": [
-      "CVE-2012-4730",
-      "CVE-2012-4731",
-      "CVE-2012-4732",
-      "CVE-2012-4734",
-      "CVE-2012-4735",
-      "CVE-2012-4884"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-10-26",
-    "entry": "2012-11-01"
-  }
+	"vid": "4b738d54-2427-11e2-9817-c8600054b392",
+	"topic": "RT -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"rt40"
+			],
+			"range": [
+				{
+					"lt": "4.0.8",
+					"ge": "4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"rt38"
+			],
+			"range": [
+				{
+					"lt": "3.8.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>BestPractical report:</p>\n\t<blockquote cite=\"http://blog.bestpractical.com/2012/10/security-vulnerabilities-in-rt.html\">\n\t  <p>All versions of RT are vulnerable to an email header injection\n\t    attack. Users with ModifySelf or AdminUser can cause RT to add\n\t    arbitrary headers or content to outgoing mail. Depending on the\n\t    scrips that are configured, this may be be leveraged for information\n\t    leakage or phishing.</p>\n\t  <p>RT 4.0.0 and above and RTFM 2.0.0 and above contain a vulnerability\n\t    due to lack of proper rights checking, allowing any privileged user\n\t    to create Articles in any class.</p>\n\t  <p>All versions of RT with cross-site-request forgery (CSRF)\n\t    protection (RT 3.8.12 and above, RT 4.0.6 and above, and any\n\t    instances running the security patches released 2012-05-22) contain\n\t    a vulnerability which incorrectly allows though CSRF requests which\n\t    toggle ticket bookmarks.</p>\n\t  <p>All versions of RT are vulnerable to a confused deputy attack on\n\t    the user. While not strictly a CSRF attack, users who are not logged\n\t    in who are tricked into following a malicious link may, after\n\t    supplying their credentials, be subject to an attack which leverages\n\t    their credentials to modify arbitrary state. While users who were\n\t    logged in would have observed the CSRF protection page, users who\n\t    were not logged in receive no such warning due to the intervening\n\t    login process. RT has been extended to notify users of pending\n\t    actions during the login process.</p>\n\t  <p>RT 3.8.0 and above are susceptible to a number of vulnerabilities\n\t    concerning improper signing or encryption of messages using GnuPG;\n\t    if GnuPG is not enabled, none of the following affect you.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://blog.bestpractical.com/2012/10/security-vulnerabilities-in-rt.html"
+		],
+		"cvename": [
+			"CVE-2012-4730",
+			"CVE-2012-4731",
+			"CVE-2012-4732",
+			"CVE-2012-4734",
+			"CVE-2012-4735",
+			"CVE-2012-4884"
+		]
+	},
+	"dates": {
+		"discovery": "2012-10-26",
+		"entry": "2012-11-01"
+	}
 }

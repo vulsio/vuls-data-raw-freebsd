@@ -1,41 +1,41 @@
 {
-  "vid": "45298931-b3bf-11dd-80f8-001cc0377035",
-  "topic": "gnutls -- X.509 certificate chain validation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "gnutls"
-      ],
-      "range": [
-        {
-          "lt": "2.4.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/32232/discuss\">\n\t  <p>GnuTLS is prone to a security-bypass vulnerability because the\n\t    application fails to properly validate chained X.509 certificates.\n\t    Successfully exploiting this issue allows attackers to perform\n\t    man-in-the-middle attacks by impersonating trusted servers.\n\t    Unsuspecting users may be under a false sense of security that can\n\t    aid attackers in launching further attacks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.gnu.org/software/gnutls/security.html"
-    ],
-    "cvename": [
-      "CVE-2008-4989"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.gnu.org/archive/html/gnutls-devel/2008-11/msg00017.html",
-        "msgid": "4918143A.3050103@gmx.net"
-      }
-    ],
-    "bid": [
-      "32232"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-11-10",
-    "entry": "2008-11-16"
-  }
+	"vid": "45298931-b3bf-11dd-80f8-001cc0377035",
+	"topic": "gnutls -- X.509 certificate chain validation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"gnutls"
+			],
+			"range": [
+				{
+					"lt": "2.4.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/32232/discuss\">\n\t  <p>GnuTLS is prone to a security-bypass vulnerability because the\n\t    application fails to properly validate chained X.509 certificates.\n\t    Successfully exploiting this issue allows attackers to perform\n\t    man-in-the-middle attacks by impersonating trusted servers.\n\t    Unsuspecting users may be under a false sense of security that can\n\t    aid attackers in launching further attacks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.gnu.org/software/gnutls/security.html"
+		],
+		"cvename": [
+			"CVE-2008-4989"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.gnu.org/archive/html/gnutls-devel/2008-11/msg00017.html",
+				"msgid": "4918143A.3050103@gmx.net"
+			}
+		],
+		"bid": [
+			"32232"
+		]
+	},
+	"dates": {
+		"discovery": "2008-11-10",
+		"entry": "2008-11-16"
+	}
 }

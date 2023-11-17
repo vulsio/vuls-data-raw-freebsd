@@ -1,33 +1,33 @@
 {
-  "vid": "adccefd1-7080-11e6-a2cb-c80aa9043978",
-  "topic": "openssh -- sshd -- remote valid user discovery and PAM /bin/login attack",
-  "affects": [
-    {
-      "name": [
-        "openssh-portable"
-      ],
-      "range": [
-        {
-          "lt": "7.3.p1,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSH project reports:</p>\n\t<blockquote cite=\"http://www.openssh.com/txt/release-7.3\">\n\t  <p>* sshd(8): Mitigate timing differences in password authentication\n\t    that could be used to discern valid from invalid account names\n\t    when long passwords were sent and particular password hashing\n\t    algorithms are in use on the server. CVE-2016-6210, reported by\n\t    EddieEzra.Harari at verint.com\n\t  </p>\n\t  <p> * sshd(8): (portable only) Ignore PAM environment vars when\n\t    UseLogin=yes. If PAM is configured to read user-specified\n\t    environment variables and UseLogin=yes in sshd_config, then a\n\t    hostile local user may attack /bin/login via LD_PRELOAD or\n\t    similar environment variables set via PAM. CVE-2015-8325,\n\t    found by Shayan Sadigh.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openssh.com/txt/release-7.3"
-    ],
-    "cvename": [
-      "CVE-2016-6210",
-      "CVE-2015-8325"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-08-01",
-    "entry": "2016-09-01"
-  }
+	"vid": "adccefd1-7080-11e6-a2cb-c80aa9043978",
+	"topic": "openssh -- sshd -- remote valid user discovery and PAM /bin/login attack",
+	"affects": [
+		{
+			"name": [
+				"openssh-portable"
+			],
+			"range": [
+				{
+					"lt": "7.3.p1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSH project reports:</p>\n\t<blockquote cite=\"http://www.openssh.com/txt/release-7.3\">\n\t  <p>* sshd(8): Mitigate timing differences in password authentication\n\t    that could be used to discern valid from invalid account names\n\t    when long passwords were sent and particular password hashing\n\t    algorithms are in use on the server. CVE-2016-6210, reported by\n\t    EddieEzra.Harari at verint.com\n\t  </p>\n\t  <p> * sshd(8): (portable only) Ignore PAM environment vars when\n\t    UseLogin=yes. If PAM is configured to read user-specified\n\t    environment variables and UseLogin=yes in sshd_config, then a\n\t    hostile local user may attack /bin/login via LD_PRELOAD or\n\t    similar environment variables set via PAM. CVE-2015-8325,\n\t    found by Shayan Sadigh.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openssh.com/txt/release-7.3"
+		],
+		"cvename": [
+			"CVE-2016-6210",
+			"CVE-2015-8325"
+		]
+	},
+	"dates": {
+		"discovery": "2016-08-01",
+		"entry": "2016-09-01"
+	}
 }

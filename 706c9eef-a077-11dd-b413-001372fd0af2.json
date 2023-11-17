@@ -1,43 +1,43 @@
 {
-  "vid": "706c9eef-a077-11dd-b413-001372fd0af2",
-  "topic": "drupal -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "drupal5"
-      ],
-      "range": [
-        {
-          "lt": "5.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/324824\">\n\t  <p>On a server configured for IP-based virtual hosts, Drupal may be\n\t    caused to include and execute specifically named files outside\n\t    of its root directory.  This bug affects both Drupal 5 and\n\t    Drupal 6.</p>\n\t  <p>The title of book pages is not always properly escaped, enabling\n\t    users with the \"create book content\" permission or the\n\t    permission to edit any node in the book hierarchy to insert\n\t    arbitrary HTML and script code into pages. Such a Cross site\n\t    scripting attack may lead to the attacker gaining administrator\n\t    access. This bug affects Drupal 6.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://drupal.org/node/324824"
-    ],
-    "cvename": [
-      "CVE-2008-6170"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-10-22",
-    "entry": "2008-10-22",
-    "modified": "2010-05-12"
-  }
+	"vid": "706c9eef-a077-11dd-b413-001372fd0af2",
+	"topic": "drupal -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"drupal5"
+			],
+			"range": [
+				{
+					"lt": "5.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/324824\">\n\t  <p>On a server configured for IP-based virtual hosts, Drupal may be\n\t    caused to include and execute specifically named files outside\n\t    of its root directory.  This bug affects both Drupal 5 and\n\t    Drupal 6.</p>\n\t  <p>The title of book pages is not always properly escaped, enabling\n\t    users with the \"create book content\" permission or the\n\t    permission to edit any node in the book hierarchy to insert\n\t    arbitrary HTML and script code into pages. Such a Cross site\n\t    scripting attack may lead to the attacker gaining administrator\n\t    access. This bug affects Drupal 6.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://drupal.org/node/324824"
+		],
+		"cvename": [
+			"CVE-2008-6170"
+		]
+	},
+	"dates": {
+		"discovery": "2008-10-22",
+		"entry": "2008-10-22",
+		"modified": "2010-05-12"
+	}
 }

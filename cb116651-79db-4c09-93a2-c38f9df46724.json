@@ -1,75 +1,75 @@
 {
-  "vid": "cb116651-79db-4c09-93a2-c38f9df46724",
-  "topic": "django -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py27-django",
-        "py33-django",
-        "py34-django",
-        "py35-django"
-      ],
-      "range": [
-        {
-          "lt": "1.8.16"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django18",
-        "py33-django18",
-        "py34-django18",
-        "py35-django18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.16"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django19",
-        "py33-django19",
-        "py34-django19",
-        "py35-django19"
-      ],
-      "range": [
-        {
-          "lt": "1.9.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py27-django110",
-        "py33-django110",
-        "py34-django110",
-        "py35-django110"
-      ],
-      "range": [
-        {
-          "lt": "1.10.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Django project reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2016/nov/01/security-releases/\">\n\t  <p>Today the Django team released Django 1.10.3, Django 1.9.11,\n\t    and 1.8.16.  These releases addresses two security issues\n\t    detailed below. We encourage all users of Django to upgrade\n\t    as soon as possible.</p>\n\t  <ul>\n\t    <li>User with hardcoded password created when running tests on Oracle</li>\n\t    <li>DNS rebinding vulnerability when DEBUG=True</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.djangoproject.com/weblog/2016/nov/01/security-releases/"
-    ],
-    "cvename": [
-      "CVE-2016-9013",
-      "CVE-2016-9014"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-01",
-    "entry": "2016-11-02"
-  }
+	"vid": "cb116651-79db-4c09-93a2-c38f9df46724",
+	"topic": "django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py27-django",
+				"py33-django",
+				"py34-django",
+				"py35-django"
+			],
+			"range": [
+				{
+					"lt": "1.8.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django18",
+				"py33-django18",
+				"py34-django18",
+				"py35-django18"
+			],
+			"range": [
+				{
+					"lt": "1.8.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django19",
+				"py33-django19",
+				"py34-django19",
+				"py35-django19"
+			],
+			"range": [
+				{
+					"lt": "1.9.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"py27-django110",
+				"py33-django110",
+				"py34-django110",
+				"py35-django110"
+			],
+			"range": [
+				{
+					"lt": "1.10.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Django project reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2016/nov/01/security-releases/\">\n\t  <p>Today the Django team released Django 1.10.3, Django 1.9.11,\n\t    and 1.8.16.  These releases addresses two security issues\n\t    detailed below. We encourage all users of Django to upgrade\n\t    as soon as possible.</p>\n\t  <ul>\n\t    <li>User with hardcoded password created when running tests on Oracle</li>\n\t    <li>DNS rebinding vulnerability when DEBUG=True</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2016/nov/01/security-releases/"
+		],
+		"cvename": [
+			"CVE-2016-9013",
+			"CVE-2016-9014"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-01",
+		"entry": "2016-11-02"
+	}
 }

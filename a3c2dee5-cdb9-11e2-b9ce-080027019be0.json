@@ -1,32 +1,32 @@
 {
-  "vid": "a3c2dee5-cdb9-11e2-b9ce-080027019be0",
-  "topic": "telepathy-gabble -- TLS verification bypass",
-  "affects": [
-    {
-      "name": [
-        "telepathy-gabble"
-      ],
-      "range": [
-        {
-          "lt": "0.16.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon McVittie reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/telepathy/2013-May/006449.html\">\n\t  <p>This release fixes a man-in-the-middle attack.</p>\n\t  <p>If you use an unencrypted connection to a \"legacy Jabber\"\n\t     (pre-XMPP) server, this version of Gabble will not connect\n\t     until you make one of these configuration changes:</p>\n\t  <p>. upgrade the server software to something that supports XMPP 1.0; or</p>\n\t  <p>. use an encrypted \"old SSL\" connection, typically on port 5223\n\t     (old-ssl); or</p>\n\t  <p>. turn off \"Encryption required (TLS/SSL)\" (require-encryption).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.freedesktop.org/archives/telepathy/2013-May/006449.html"
-    ],
-    "cvename": [
-      "CVE-2013-1431"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-05-27",
-    "entry": "2013-06-05"
-  }
+	"vid": "a3c2dee5-cdb9-11e2-b9ce-080027019be0",
+	"topic": "telepathy-gabble -- TLS verification bypass",
+	"affects": [
+		{
+			"name": [
+				"telepathy-gabble"
+			],
+			"range": [
+				{
+					"lt": "0.16.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon McVittie reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/telepathy/2013-May/006449.html\">\n\t  <p>This release fixes a man-in-the-middle attack.</p>\n\t  <p>If you use an unencrypted connection to a \"legacy Jabber\"\n\t     (pre-XMPP) server, this version of Gabble will not connect\n\t     until you make one of these configuration changes:</p>\n\t  <p>. upgrade the server software to something that supports XMPP 1.0; or</p>\n\t  <p>. use an encrypted \"old SSL\" connection, typically on port 5223\n\t     (old-ssl); or</p>\n\t  <p>. turn off \"Encryption required (TLS/SSL)\" (require-encryption).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.freedesktop.org/archives/telepathy/2013-May/006449.html"
+		],
+		"cvename": [
+			"CVE-2013-1431"
+		]
+	},
+	"dates": {
+		"discovery": "2013-05-27",
+		"entry": "2013-06-05"
+	}
 }

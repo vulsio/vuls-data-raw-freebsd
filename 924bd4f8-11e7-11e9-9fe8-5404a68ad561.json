@@ -1,29 +1,29 @@
 {
-  "vid": "924bd4f8-11e7-11e9-9fe8-5404a68ad561",
-  "topic": "uriparser -- Out-of-bounds read",
-  "affects": [
-    {
-      "name": [
-        "uriparser"
-      ],
-      "range": [
-        {
-          "lt": "0.9.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Upstream project reports:</p>\n\t<blockquote cite=\"https://github.com/uriparser/uriparser/blob/uriparser-0.9.1/ChangeLog\">\n\t  <p>Out-of-bounds read in uriParse*Ex* for incomplete URIs with IPv6\n\t     addresses with embedded IPv4 address, e.g. \"//[::44.1\";\n\t     mitigated if passed parameter afterLast points to readable memory\n\t     containing a '\\0' byte.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/uriparser/uriparser/blob/uriparser-0.9.1/ChangeLog"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-01-02",
-    "entry": "2019-01-06"
-  }
+	"vid": "924bd4f8-11e7-11e9-9fe8-5404a68ad561",
+	"topic": "uriparser -- Out-of-bounds read",
+	"affects": [
+		{
+			"name": [
+				"uriparser"
+			],
+			"range": [
+				{
+					"lt": "0.9.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Upstream project reports:</p>\n\t<blockquote cite=\"https://github.com/uriparser/uriparser/blob/uriparser-0.9.1/ChangeLog\">\n\t  <p>Out-of-bounds read in uriParse*Ex* for incomplete URIs with IPv6\n\t     addresses with embedded IPv4 address, e.g. \"//[::44.1\";\n\t     mitigated if passed parameter afterLast points to readable memory\n\t     containing a '\\0' byte.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/uriparser/uriparser/blob/uriparser-0.9.1/ChangeLog"
+		]
+	},
+	"dates": {
+		"discovery": "2019-01-02",
+		"entry": "2019-01-06"
+	}
 }

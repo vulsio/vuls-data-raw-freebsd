@@ -1,33 +1,33 @@
 {
-  "vid": "845f8430-d0ee-4134-ae35-480a3e139b8a",
-  "topic": "py39-joblib -- arbitrary code execution",
-  "affects": [
-    {
-      "name": [
-        "py39-joblib"
-      ],
-      "range": [
-        {
-          "lt": "1.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>jimlinntu reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2022-288\">\n      <p>The package joblib from 0 and before 1.2.0 are vulnerable to Arbitrary Code Execution via the pre_dispatch flag in Parallel() class due to the eval() statement.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/PYSEC-2022-288",
-      "https://osv.dev/vulnerability/GHSA-6hrg-qmvc-2xh8"
-    ],
-    "cvename": [
-      "CVE-2022-21797"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-09-26",
-    "entry": "2023-04-09"
-  }
+	"vid": "845f8430-d0ee-4134-ae35-480a3e139b8a",
+	"topic": "py39-joblib -- arbitrary code execution",
+	"affects": [
+		{
+			"name": [
+				"py39-joblib"
+			],
+			"range": [
+				{
+					"lt": "1.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>jimlinntu reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/PYSEC-2022-288\">\n      <p>The package joblib from 0 and before 1.2.0 are vulnerable to Arbitrary Code Execution via the pre_dispatch flag in Parallel() class due to the eval() statement.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/PYSEC-2022-288",
+			"https://osv.dev/vulnerability/GHSA-6hrg-qmvc-2xh8"
+		],
+		"cvename": [
+			"CVE-2022-21797"
+		]
+	},
+	"dates": {
+		"discovery": "2022-09-26",
+		"entry": "2023-04-09"
+	}
 }

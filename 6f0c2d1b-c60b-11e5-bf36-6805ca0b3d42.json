@@ -1,33 +1,33 @@
 {
-  "vid": "6f0c2d1b-c60b-11e5-bf36-6805ca0b3d42",
-  "topic": "phpmyadmin -- Insecure password generation in JavaScript",
-  "affects": [
-    {
-      "name": [
-        "phpmyadmin"
-      ],
-      "range": [
-        {
-          "lt": "4.5.4",
-          "ge": "4.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-4/\">\n\t  <p>Password suggestion functionality uses Math.random()\n\t    which does not provide cryptographically secure random\n\t    numbers.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2016-4/"
-    ],
-    "cvename": [
-      "CVE-2016-1927"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-28",
-    "entry": "2016-01-28"
-  }
+	"vid": "6f0c2d1b-c60b-11e5-bf36-6805ca0b3d42",
+	"topic": "phpmyadmin -- Insecure password generation in JavaScript",
+	"affects": [
+		{
+			"name": [
+				"phpmyadmin"
+			],
+			"range": [
+				{
+					"lt": "4.5.4",
+					"ge": "4.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-4/\">\n\t  <p>Password suggestion functionality uses Math.random()\n\t    which does not provide cryptographically secure random\n\t    numbers.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2016-4/"
+		],
+		"cvename": [
+			"CVE-2016-1927"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-28",
+		"entry": "2016-01-28"
+	}
 }

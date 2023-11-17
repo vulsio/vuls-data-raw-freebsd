@@ -1,42 +1,42 @@
 {
-  "vid": "fffa9257-3c17-11db-86ab-00123ffe8333",
-  "topic": "mailman -- Multiple Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mailman",
-        "ja-mailman",
-        "mailman-with-htdig"
-      ],
-      "range": [
-        {
-          "lt": "2.1.9.r1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21732/\">\n\t  <p>Mailman can be exploited by malicious people to conduct cross-site\n\t    scripting and phishing attacks, and cause a DoS (Denial of\n\t    Service).</p>\n\t  <p>1) An error in the logging functionality can be exploited to\n\t    inject a spoofed log message into the error log via a specially\n\t    crafted URL.</p>\n\t  <p>Successful exploitation may trick an administrator into visiting\n\t    a malicious web site.</p>\n\t  <p>2) An error in the processing of malformed headers which does not\n\t    follow the RFC 2231 standard can be exploited to cause a DoS\n\t    (Denial of Service).</p>\n\t  <p>3) Some unspecified input isn't properly sanitised before being\n\t    returned to the user. This can be exploited to execute arbitrary\n\t    HTML and script code in a user's browser session in context of an\n\t    affected site.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/21732/",
-      "http://sourceforge.net/project/shownotes.php?group_id=103&release_id=444295"
-    ],
-    "cvename": [
-      "CVE-2006-2191",
-      "CVE-2006-2941",
-      "CVE-2006-3636",
-      "CVE-2006-4624"
-    ],
-    "bid": [
-      "19831"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-06-09",
-    "entry": "2006-09-04",
-    "modified": "2006-10-04"
-  }
+	"vid": "fffa9257-3c17-11db-86ab-00123ffe8333",
+	"topic": "mailman -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mailman",
+				"ja-mailman",
+				"mailman-with-htdig"
+			],
+			"range": [
+				{
+					"lt": "2.1.9.r1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21732/\">\n\t  <p>Mailman can be exploited by malicious people to conduct cross-site\n\t    scripting and phishing attacks, and cause a DoS (Denial of\n\t    Service).</p>\n\t  <p>1) An error in the logging functionality can be exploited to\n\t    inject a spoofed log message into the error log via a specially\n\t    crafted URL.</p>\n\t  <p>Successful exploitation may trick an administrator into visiting\n\t    a malicious web site.</p>\n\t  <p>2) An error in the processing of malformed headers which does not\n\t    follow the RFC 2231 standard can be exploited to cause a DoS\n\t    (Denial of Service).</p>\n\t  <p>3) Some unspecified input isn't properly sanitised before being\n\t    returned to the user. This can be exploited to execute arbitrary\n\t    HTML and script code in a user's browser session in context of an\n\t    affected site.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/21732/",
+			"http://sourceforge.net/project/shownotes.php?group_id=103&release_id=444295"
+		],
+		"cvename": [
+			"CVE-2006-2191",
+			"CVE-2006-2941",
+			"CVE-2006-3636",
+			"CVE-2006-4624"
+		],
+		"bid": [
+			"19831"
+		]
+	},
+	"dates": {
+		"discovery": "2006-06-09",
+		"entry": "2006-09-04",
+		"modified": "2006-10-04"
+	}
 }

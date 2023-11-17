@@ -1,64 +1,64 @@
 {
-  "vid": "0765de84-a6c1-11e4-a0c1-c485083ca99c",
-  "topic": "glibc -- gethostbyname buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "linux_base-c6"
-      ],
-      "range": [
-        {
-          "lt": "6.6_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux_base-f10"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-devtools"
-      ],
-      "range": [
-        {
-          "lt": "6.6_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-f10-devtools"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Robert Krátký reports:</p>\n\t<blockquote cite=\"https://access.redhat.com/discussions/1332403\">\n\t  <p>\n\t    GHOST is a 'buffer overflow' bug affecting the gethostbyname() and\n\t    gethostbyname2() function calls in the glibc library. This\n\t    vulnerability allows a remote attacker that is able to make an\n\t    application call to either of these functions to execute arbitrary\n\t    code with the permissions of the user running the application.\n\t    The gethostbyname() function calls are used for DNS resolving, which\n\t    is a very common event. To exploit this vulnerability, an attacker\n\t    must trigger a buffer overflow by supplying an invalid hostname\n\t    argument to an application that performs a DNS resolution.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://access.redhat.com/articles/1332213",
-      "http://www.openwall.com/lists/oss-security/2015/01/27/9"
-    ],
-    "cvename": [
-      "CVE-2015-0235"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-01-27",
-    "entry": "2015-01-28",
-    "modified": "2015-02-02"
-  }
+	"vid": "0765de84-a6c1-11e4-a0c1-c485083ca99c",
+	"topic": "glibc -- gethostbyname buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"linux_base-c6"
+			],
+			"range": [
+				{
+					"lt": "6.6_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux_base-f10"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-devtools"
+			],
+			"range": [
+				{
+					"lt": "6.6_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-f10-devtools"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Robert Krátký reports:</p>\n\t<blockquote cite=\"https://access.redhat.com/discussions/1332403\">\n\t  <p>\n\t    GHOST is a 'buffer overflow' bug affecting the gethostbyname() and\n\t    gethostbyname2() function calls in the glibc library. This\n\t    vulnerability allows a remote attacker that is able to make an\n\t    application call to either of these functions to execute arbitrary\n\t    code with the permissions of the user running the application.\n\t    The gethostbyname() function calls are used for DNS resolving, which\n\t    is a very common event. To exploit this vulnerability, an attacker\n\t    must trigger a buffer overflow by supplying an invalid hostname\n\t    argument to an application that performs a DNS resolution.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://access.redhat.com/articles/1332213",
+			"http://www.openwall.com/lists/oss-security/2015/01/27/9"
+		],
+		"cvename": [
+			"CVE-2015-0235"
+		]
+	},
+	"dates": {
+		"discovery": "2015-01-27",
+		"entry": "2015-01-28",
+		"modified": "2015-02-02"
+	}
 }

@@ -1,48 +1,48 @@
 {
-  "vid": "7b1a4a27-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- Multiple OpenSSL vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.2_13",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_30",
-          "ge": "10.1"
-        },
-        {
-          "lt": "9.3_38",
-          "ge": "9.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>A cross-protocol attack was discovered that could lead\n\tto decryption of TLS sessions by using a server supporting\n\tSSLv2 and EXPORT cipher suites as a Bleichenbacher RSA\n\tpadding oracle. Note that traffic between clients and\n\tnon-vulnerable servers can be decrypted provided another\n\tserver supporting SSLv2 and EXPORT ciphers (even with a\n\tdifferent protocol such as SMTP, IMAP or POP3) shares the\n\tRSA keys of the non-vulnerable server. This vulnerability\n\tis known as DROWN. [CVE-2016-0800]</p>\n\t<p>A double free bug was discovered when OpenSSL parses\n\tmalformed DSA private keys and could lead to a DoS attack\n\tor memory corruption for applications that receive DSA\n\tprivate keys from untrusted sources. This scenario is\n\tconsidered rare. [CVE-2016-0705]</p>\n\t<p>The SRP user database lookup method SRP_VBASE_get_by_user\n\thad confusing memory management semantics; the returned\n\tpointer was sometimes newly allocated, and sometimes owned\n\tby the callee. The calling code has no way of distinguishing\n\tthese two cases. [CVE-2016-0798]</p>\n\t<p>In the BN_hex2bn function, the number of hex digits is\n\tcalculated using an int value |i|. Later |bn_expand| is\n\tcalled with a value of |i * 4|. For large values of |i|\n\tthis can result in |bn_expand| not allocating any memory\n\tbecause |i * 4| is negative. This can leave the internal\n\tBIGNUM data field as NULL leading to a subsequent NULL\n\tpointer dereference. For very large values of |i|, the\n\tcalculation |i * 4| could be a positive value smaller than\n\t|i|. In this case memory is allocated to the internal BIGNUM\n\tdata field, but it is insufficiently sized leading to heap\n\tcorruption. A similar issue exists in BN_dec2bn. This could\n\thave security consequences if BN_hex2bn/BN_dec2bn is ever\n\tcalled by user applications with very large untrusted hex/dec\n\tdata. This is anticipated to be a rare occurrence.\n\t[CVE-2016-0797]</p>\n\t<p>The internal |fmtstr| function used in processing a \"%s\"\n\tformatted string in the BIO_*printf functions could overflow\n\twhile calculating the length of a string and cause an\n\tout-of-bounds read when printing very long strings.\n\t[CVE-2016-0799]</p>\n\t<p>A side-channel attack was found which makes use of\n\tcache-bank conflicts on the Intel Sandy-Bridge microarchitecture\n\twhich could lead to the recovery of RSA keys. [CVE-2016-0702]</p>\n\t<p>s2_srvr.c did not enforce that clear-key-length is 0 for\n\tnon-export ciphers. If clear-key bytes are present for these\n\tciphers, they displace encrypted-key bytes. [CVE-2016-0703]</p>\n\t<p>s2_srvr.c overwrites the wrong bytes in the master key\n\twhen applying Bleichenbacher protection for export cipher\n\tsuites. [CVE-2016-0704]</p>\n\t<h1>Impact:</h1>\n\t<p>Servers that have SSLv2 protocol enabled are vulnerable\n\tto the \"DROWN\" attack which allows a remote attacker to\n\tfast attack many recorded TLS connections made to the server,\n\teven when the client did not make any SSLv2 connections\n\tthemselves.</p>\n\t<p>An attacker who can supply malformed DSA private keys\n\tto OpenSSL applications may be able to cause memory corruption\n\twhich would lead to a Denial of Service condition.\n\t[CVE-2016-0705]</p>\n\t<p>An attacker connecting with an invalid username can cause\n\tmemory leak, which could eventually lead to a Denial of\n\tService condition. [CVE-2016-0798]</p>\n\t<p>An attacker who can inject malformed data into an\n\tapplication may be able to cause memory corruption which\n\twould lead to a Denial of Service condition. [CVE-2016-0797,\n\tCVE-2016-0799]</p>\n\t<p>A local attacker who has control of code in a thread\n\trunning on the same hyper-threaded core as the victim thread\n\twhich is performing decryptions could recover RSA keys.\n\t[CVE-2016-0702]</p>\n\t<p>An eavesdropper who can intercept SSLv2 handshake can\n\tconduct an efficient divide-and-conquer key recovery attack\n\tand use the server as an oracle to determine the SSLv2\n\tmaster-key, using only 16 connections to the server and\n\tnegligible computation. [CVE-2016-0703]</p>\n\t<p>An attacker can use the Bleichenbacher oracle, which\n\tenables more efficient variant of the DROWN attack.\n\t[CVE-2016-0704]</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2016-0702",
-      "CVE-2016-0703",
-      "CVE-2016-0704",
-      "CVE-2016-0705",
-      "CVE-2016-0797",
-      "CVE-2016-0798",
-      "CVE-2016-0799",
-      "CVE-2016-0800"
-    ],
-    "freebsd_sa": [
-      "SA-16:12.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-10",
-    "entry": "2016-08-11"
-  }
+	"vid": "7b1a4a27-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- Multiple OpenSSL vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.2_13",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_30",
+					"ge": "10.1"
+				},
+				{
+					"lt": "9.3_38",
+					"ge": "9.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>A cross-protocol attack was discovered that could lead\n\tto decryption of TLS sessions by using a server supporting\n\tSSLv2 and EXPORT cipher suites as a Bleichenbacher RSA\n\tpadding oracle. Note that traffic between clients and\n\tnon-vulnerable servers can be decrypted provided another\n\tserver supporting SSLv2 and EXPORT ciphers (even with a\n\tdifferent protocol such as SMTP, IMAP or POP3) shares the\n\tRSA keys of the non-vulnerable server. This vulnerability\n\tis known as DROWN. [CVE-2016-0800]</p>\n\t<p>A double free bug was discovered when OpenSSL parses\n\tmalformed DSA private keys and could lead to a DoS attack\n\tor memory corruption for applications that receive DSA\n\tprivate keys from untrusted sources. This scenario is\n\tconsidered rare. [CVE-2016-0705]</p>\n\t<p>The SRP user database lookup method SRP_VBASE_get_by_user\n\thad confusing memory management semantics; the returned\n\tpointer was sometimes newly allocated, and sometimes owned\n\tby the callee. The calling code has no way of distinguishing\n\tthese two cases. [CVE-2016-0798]</p>\n\t<p>In the BN_hex2bn function, the number of hex digits is\n\tcalculated using an int value |i|. Later |bn_expand| is\n\tcalled with a value of |i * 4|. For large values of |i|\n\tthis can result in |bn_expand| not allocating any memory\n\tbecause |i * 4| is negative. This can leave the internal\n\tBIGNUM data field as NULL leading to a subsequent NULL\n\tpointer dereference. For very large values of |i|, the\n\tcalculation |i * 4| could be a positive value smaller than\n\t|i|. In this case memory is allocated to the internal BIGNUM\n\tdata field, but it is insufficiently sized leading to heap\n\tcorruption. A similar issue exists in BN_dec2bn. This could\n\thave security consequences if BN_hex2bn/BN_dec2bn is ever\n\tcalled by user applications with very large untrusted hex/dec\n\tdata. This is anticipated to be a rare occurrence.\n\t[CVE-2016-0797]</p>\n\t<p>The internal |fmtstr| function used in processing a \"%s\"\n\tformatted string in the BIO_*printf functions could overflow\n\twhile calculating the length of a string and cause an\n\tout-of-bounds read when printing very long strings.\n\t[CVE-2016-0799]</p>\n\t<p>A side-channel attack was found which makes use of\n\tcache-bank conflicts on the Intel Sandy-Bridge microarchitecture\n\twhich could lead to the recovery of RSA keys. [CVE-2016-0702]</p>\n\t<p>s2_srvr.c did not enforce that clear-key-length is 0 for\n\tnon-export ciphers. If clear-key bytes are present for these\n\tciphers, they displace encrypted-key bytes. [CVE-2016-0703]</p>\n\t<p>s2_srvr.c overwrites the wrong bytes in the master key\n\twhen applying Bleichenbacher protection for export cipher\n\tsuites. [CVE-2016-0704]</p>\n\t<h1>Impact:</h1>\n\t<p>Servers that have SSLv2 protocol enabled are vulnerable\n\tto the \"DROWN\" attack which allows a remote attacker to\n\tfast attack many recorded TLS connections made to the server,\n\teven when the client did not make any SSLv2 connections\n\tthemselves.</p>\n\t<p>An attacker who can supply malformed DSA private keys\n\tto OpenSSL applications may be able to cause memory corruption\n\twhich would lead to a Denial of Service condition.\n\t[CVE-2016-0705]</p>\n\t<p>An attacker connecting with an invalid username can cause\n\tmemory leak, which could eventually lead to a Denial of\n\tService condition. [CVE-2016-0798]</p>\n\t<p>An attacker who can inject malformed data into an\n\tapplication may be able to cause memory corruption which\n\twould lead to a Denial of Service condition. [CVE-2016-0797,\n\tCVE-2016-0799]</p>\n\t<p>A local attacker who has control of code in a thread\n\trunning on the same hyper-threaded core as the victim thread\n\twhich is performing decryptions could recover RSA keys.\n\t[CVE-2016-0702]</p>\n\t<p>An eavesdropper who can intercept SSLv2 handshake can\n\tconduct an efficient divide-and-conquer key recovery attack\n\tand use the server as an oracle to determine the SSLv2\n\tmaster-key, using only 16 connections to the server and\n\tnegligible computation. [CVE-2016-0703]</p>\n\t<p>An attacker can use the Bleichenbacher oracle, which\n\tenables more efficient variant of the DROWN attack.\n\t[CVE-2016-0704]</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2016-0702",
+			"CVE-2016-0703",
+			"CVE-2016-0704",
+			"CVE-2016-0705",
+			"CVE-2016-0797",
+			"CVE-2016-0798",
+			"CVE-2016-0799",
+			"CVE-2016-0800"
+		],
+		"freebsd_sa": [
+			"SA-16:12.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-10",
+		"entry": "2016-08-11"
+	}
 }

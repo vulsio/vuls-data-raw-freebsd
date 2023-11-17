@@ -1,108 +1,108 @@
 {
-  "vid": "cbfde1cd-87eb-11d9-aa18-0001020eed82",
-  "topic": "mozilla -- arbitrary code execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.6,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla",
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "de-netscape7",
-        "fr-linux-netscape",
-        "fr-netscape7",
-        "ja-linux-netscape",
-        "ja-netscape7",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk1",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-27.html\">\n\t  <p>Plugins (such as flash) can be used to load privileged\n\t    content into a frame. Once loaded various spoofs can be\n\t    applied to get the user to interact with the privileged\n\t    content. Michael Krax's \"Fireflashing\" example\n\t    demonstrates that an attacker can open about:config in a\n\t    frame, hide it with an opacity setting, and if the\n\t    attacker can get the victim to click at a particular spot\n\t    (design some kind of simple game) you could toggle boolean\n\t    preferences, some of which would make further attacks\n\t    easier.</p>\n\t  <p>The \"firescrolling\" example demonstrates arbitrary code\n\t    execution (in this case downloading a file) by convincing\n\t    the user to scroll twice.</p>\n\t</blockquote>\n\t<p><strong>Workaround:</strong> Disable JavaScript.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mikx.de/fireflashing/",
-      "http://www.mikx.de/firescrolling/",
-      "http://www.mozilla.org/security/announce/mfsa2005-27.html"
-    ],
-    "cvename": [
-      "CVE-2005-0527"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-24",
-    "entry": "2005-02-26"
-  }
+	"vid": "cbfde1cd-87eb-11d9-aa18-0001020eed82",
+	"topic": "mozilla -- arbitrary code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.6,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla",
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"de-netscape7",
+				"fr-linux-netscape",
+				"fr-netscape7",
+				"ja-linux-netscape",
+				"ja-netscape7",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk1",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-27.html\">\n\t  <p>Plugins (such as flash) can be used to load privileged\n\t    content into a frame. Once loaded various spoofs can be\n\t    applied to get the user to interact with the privileged\n\t    content. Michael Krax's \"Fireflashing\" example\n\t    demonstrates that an attacker can open about:config in a\n\t    frame, hide it with an opacity setting, and if the\n\t    attacker can get the victim to click at a particular spot\n\t    (design some kind of simple game) you could toggle boolean\n\t    preferences, some of which would make further attacks\n\t    easier.</p>\n\t  <p>The \"firescrolling\" example demonstrates arbitrary code\n\t    execution (in this case downloading a file) by convincing\n\t    the user to scroll twice.</p>\n\t</blockquote>\n\t<p><strong>Workaround:</strong> Disable JavaScript.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mikx.de/fireflashing/",
+			"http://www.mikx.de/firescrolling/",
+			"http://www.mozilla.org/security/announce/mfsa2005-27.html"
+		],
+		"cvename": [
+			"CVE-2005-0527"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-24",
+		"entry": "2005-02-26"
+	}
 }

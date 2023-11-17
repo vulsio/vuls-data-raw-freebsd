@@ -1,37 +1,37 @@
 {
-  "vid": "4872d9a7-4128-11dc-bdb0-0016179b2dd5",
-  "topic": "joomla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "joomla"
-      ],
-      "range": [
-        {
-          "lt": "1.0.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Secunia Advisory reports:</p>\n\t  <p>joomla can be exploited to conduct session fixation\n\t    attacks, cross-site scripting attacks or HTTP response\n\t    splitting attacks.</p>\n\t  <p>Certain unspecified input passed in com_search, com_content and\n\t    mod_login is not properly sanitised before being returned to a\n\t    user.  This can be exploited to execute arbitrary HTML and script\n\t    code in a user's browser session in context of an affected\n\t    site.</p>\n\t  <p>Input passed to the url parameter is not properly sanitised\n\t    before being returned to the user.\tThis can be exploited to insert\n\t    arbitrary HTTP headers, which will be included in a response sent\n\t    to the user, allowing for execution of arbitrary HTML and script\n\t    code in a user's browser session in context of an affected\n\t    site.</p>\n\t  <p>An error exists in the handling of sessions and can be exploited\n\t    to hijack another user's session by tricking the user into logging\n\t    in after following a specially crafted link.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.joomla.org/content/view/3677/1/",
-      "http://secunia.com/advisories/26239/"
-    ],
-    "cvename": [
-      "CVE-2007-4188",
-      "CVE-2007-4189",
-      "CVE-2007-4190",
-      "CVE-2007-5577"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-07-30",
-    "entry": "2007-08-02",
-    "modified": "2010-05-12"
-  }
+	"vid": "4872d9a7-4128-11dc-bdb0-0016179b2dd5",
+	"topic": "joomla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"joomla"
+			],
+			"range": [
+				{
+					"lt": "1.0.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Secunia Advisory reports:</p>\n\t  <p>joomla can be exploited to conduct session fixation\n\t    attacks, cross-site scripting attacks or HTTP response\n\t    splitting attacks.</p>\n\t  <p>Certain unspecified input passed in com_search, com_content and\n\t    mod_login is not properly sanitised before being returned to a\n\t    user.  This can be exploited to execute arbitrary HTML and script\n\t    code in a user's browser session in context of an affected\n\t    site.</p>\n\t  <p>Input passed to the url parameter is not properly sanitised\n\t    before being returned to the user.\tThis can be exploited to insert\n\t    arbitrary HTTP headers, which will be included in a response sent\n\t    to the user, allowing for execution of arbitrary HTML and script\n\t    code in a user's browser session in context of an affected\n\t    site.</p>\n\t  <p>An error exists in the handling of sessions and can be exploited\n\t    to hijack another user's session by tricking the user into logging\n\t    in after following a specially crafted link.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.joomla.org/content/view/3677/1/",
+			"http://secunia.com/advisories/26239/"
+		],
+		"cvename": [
+			"CVE-2007-4188",
+			"CVE-2007-4189",
+			"CVE-2007-4190",
+			"CVE-2007-5577"
+		]
+	},
+	"dates": {
+		"discovery": "2007-07-30",
+		"entry": "2007-08-02",
+		"modified": "2010-05-12"
+	}
 }

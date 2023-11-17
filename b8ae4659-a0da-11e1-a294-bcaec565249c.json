@@ -1,44 +1,44 @@
 {
-  "vid": "b8ae4659-a0da-11e1-a294-bcaec565249c",
-  "topic": "libxml2 -- An off-by-one out-of-bounds write by XPointer",
-  "affects": [
-    {
-      "name": [
-        "libxml2"
-      ],
-      "range": [
-        {
-          "lt": "2.7.8_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-f10-libxml2"
-      ],
-      "range": [
-        {
-          "lt": "2.7.8_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Google chrome team reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.com/2012/05/stable-channel-update.html\">\n\t  <p>An off-by-one out-of-bounds write flaw was found in the way libxml, a library\n\t    for providing XML and HTML support, evaluated certain XPointer parts (XPointer\n\t    is used by libxml to include only the part from the returned XML document, that\n\t    can be accessed using the XPath expression given with the XPointer). A remote\n\t    attacker could provide a specially-crafted XML file, which once opened in an\n\t    application, linked against libxml, would lead to that application crash, or,\n\t    potentially arbitrary code execution with the privileges of the user running\n\t    the application.</p>\n\t  <p>Note: The flaw to be exploited requires the particular application, linked\n\t    against libxml, to use the XPointer evaluation functionality.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://googlechromereleases.blogspot.com/2012/05/stable-channel-update.html",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-3102"
-    ],
-    "cvename": [
-      "CVE-2011-3202"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-05-15",
-    "entry": "2012-05-18",
-    "modified": "2014-04-30"
-  }
+	"vid": "b8ae4659-a0da-11e1-a294-bcaec565249c",
+	"topic": "libxml2 -- An off-by-one out-of-bounds write by XPointer",
+	"affects": [
+		{
+			"name": [
+				"libxml2"
+			],
+			"range": [
+				{
+					"lt": "2.7.8_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-f10-libxml2"
+			],
+			"range": [
+				{
+					"lt": "2.7.8_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Google chrome team reports:</p>\n\t<blockquote cite=\"http://googlechromereleases.blogspot.com/2012/05/stable-channel-update.html\">\n\t  <p>An off-by-one out-of-bounds write flaw was found in the way libxml, a library\n\t    for providing XML and HTML support, evaluated certain XPointer parts (XPointer\n\t    is used by libxml to include only the part from the returned XML document, that\n\t    can be accessed using the XPath expression given with the XPointer). A remote\n\t    attacker could provide a specially-crafted XML file, which once opened in an\n\t    application, linked against libxml, would lead to that application crash, or,\n\t    potentially arbitrary code execution with the privileges of the user running\n\t    the application.</p>\n\t  <p>Note: The flaw to be exploited requires the particular application, linked\n\t    against libxml, to use the XPointer evaluation functionality.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://googlechromereleases.blogspot.com/2012/05/stable-channel-update.html",
+			"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-3102"
+		],
+		"cvename": [
+			"CVE-2011-3202"
+		]
+	},
+	"dates": {
+		"discovery": "2012-05-15",
+		"entry": "2012-05-18",
+		"modified": "2014-04-30"
+	}
 }

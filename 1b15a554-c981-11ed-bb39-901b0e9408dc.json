@@ -1,32 +1,32 @@
 {
-  "vid": "1b15a554-c981-11ed-bb39-901b0e9408dc",
-  "topic": "tailscale -- security vulnerability in Tailscale SSH",
-  "affects": [
-    {
-      "name": [
-        "tailscale"
-      ],
-      "range": [
-        {
-          "lt": "1.38.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tailscale team reports:</p>\n\t<blockquote cite=\"https://tailscale.com/security-bulletins/#ts-2023-003\">\n\t  <p>A vulnerability identified in the implementation of Tailscale SSH in FreeBSD\n\t  allowed commands to be run with a higher privilege group ID than that specified\n\t  by Tailscale SSH access rules.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://tailscale.com/security-bulletins/#ts-2023-003"
-    ],
-    "cvename": [
-      "CVE-2023-28436"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-03-22",
-    "entry": "2023-03-23"
-  }
+	"vid": "1b15a554-c981-11ed-bb39-901b0e9408dc",
+	"topic": "tailscale -- security vulnerability in Tailscale SSH",
+	"affects": [
+		{
+			"name": [
+				"tailscale"
+			],
+			"range": [
+				{
+					"lt": "1.38.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tailscale team reports:</p>\n\t<blockquote cite=\"https://tailscale.com/security-bulletins/#ts-2023-003\">\n\t  <p>A vulnerability identified in the implementation of Tailscale SSH in FreeBSD\n\t  allowed commands to be run with a higher privilege group ID than that specified\n\t  by Tailscale SSH access rules.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://tailscale.com/security-bulletins/#ts-2023-003"
+		],
+		"cvename": [
+			"CVE-2023-28436"
+		]
+	},
+	"dates": {
+		"discovery": "2023-03-22",
+		"entry": "2023-03-23"
+	}
 }

@@ -1,30 +1,30 @@
 {
-  "vid": "3149ab1c-c8b9-11de-b87b-0011098ad87f",
-  "topic": "vlc -- stack overflow in MPA, AVI and ASF demuxer",
-  "affects": [
-    {
-      "name": [
-        "vlc"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2",
-          "ge": "0.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>VideoLAN reports:</p>\n\t<blockquote cite=\"http://www.videolan.org/security/sa0901.html\">\n\t  <p>When parsing a MP4, ASF or AVI file with an overly deep box\n\t    structure, a stack overflow might occur. It would overwrite the\n\t    return address and thus redirect the execution flow.</p>\n\t  <p>If successful, a malicious third party could trigger execution\n\t    of arbitrary code within the context of the VLC media player.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.videolan.org/security/sa0901.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-09-14",
-    "entry": "2009-11-03"
-  }
+	"vid": "3149ab1c-c8b9-11de-b87b-0011098ad87f",
+	"topic": "vlc -- stack overflow in MPA, AVI and ASF demuxer",
+	"affects": [
+		{
+			"name": [
+				"vlc"
+			],
+			"range": [
+				{
+					"lt": "1.0.2",
+					"ge": "0.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>VideoLAN reports:</p>\n\t<blockquote cite=\"http://www.videolan.org/security/sa0901.html\">\n\t  <p>When parsing a MP4, ASF or AVI file with an overly deep box\n\t    structure, a stack overflow might occur. It would overwrite the\n\t    return address and thus redirect the execution flow.</p>\n\t  <p>If successful, a malicious third party could trigger execution\n\t    of arbitrary code within the context of the VLC media player.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.videolan.org/security/sa0901.html"
+		]
+	},
+	"dates": {
+		"discovery": "2009-09-14",
+		"entry": "2009-11-03"
+	}
 }

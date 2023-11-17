@@ -1,41 +1,41 @@
 {
-  "vid": "655ee1ec-511b-11dd-80ba-000bcdf0a03b",
-  "topic": "FreeBSD -- DNS cache poisoning",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.3_3",
-          "ge": "6.3"
-        },
-        {
-          "lt": "7.0_3",
-          "ge": "7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The BIND DNS implementation does not randomize the UDP source\n\t  port when doing remote queries, and the query id alone does\n\t  not provide adequate randomization.</p>\n\t<h1>Impact:</h1>\n\t<p>The lack of source port randomization reduces the amount of\n\t  data the attacker needs to guess in order to successfully\n\t  execute a DNS cache poisoning attack.  This allows the\n\t  attacker to influence or control the results of DNS queries\n\t  being returned to users from target systems.</p>\n\t<h1>Workaround:</h1>\n\t<p>Limiting the group of machines that can do recursive queries\n\t  on the DNS server will make it more difficult, but not\n\t  impossible, for this vulnerability to be exploited.</p>\n\t<p>To limit the machines able to perform recursive queries, add an ACL in\n\t  named.conf and limit recursion like the following:</p>\n\t<pre>acl example-acl {</pre>\n\t<pre>   192.0.2.0/24;</pre>\n\t<pre>};</pre>\n\t<pre>options {</pre>\n\t<pre>\trecursion yes;</pre>\n\t<pre>\tallow-recursion { example-acl; };</pre>\n\t<pre>};</pre>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2008-1447"
-    ],
-    "freebsd_sa": [
-      "SA-08:06.bind"
-    ],
-    "cert_vu": [
-      "800113"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-07-08",
-    "entry": "2008-07-13",
-    "modified": "2016-08-09"
-  }
+	"vid": "655ee1ec-511b-11dd-80ba-000bcdf0a03b",
+	"topic": "FreeBSD -- DNS cache poisoning",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.3_3",
+					"ge": "6.3"
+				},
+				{
+					"lt": "7.0_3",
+					"ge": "7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The BIND DNS implementation does not randomize the UDP source\n\t  port when doing remote queries, and the query id alone does\n\t  not provide adequate randomization.</p>\n\t<h1>Impact:</h1>\n\t<p>The lack of source port randomization reduces the amount of\n\t  data the attacker needs to guess in order to successfully\n\t  execute a DNS cache poisoning attack.  This allows the\n\t  attacker to influence or control the results of DNS queries\n\t  being returned to users from target systems.</p>\n\t<h1>Workaround:</h1>\n\t<p>Limiting the group of machines that can do recursive queries\n\t  on the DNS server will make it more difficult, but not\n\t  impossible, for this vulnerability to be exploited.</p>\n\t<p>To limit the machines able to perform recursive queries, add an ACL in\n\t  named.conf and limit recursion like the following:</p>\n\t<pre>acl example-acl {</pre>\n\t<pre>   192.0.2.0/24;</pre>\n\t<pre>};</pre>\n\t<pre>options {</pre>\n\t<pre>\trecursion yes;</pre>\n\t<pre>\tallow-recursion { example-acl; };</pre>\n\t<pre>};</pre>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2008-1447"
+		],
+		"freebsd_sa": [
+			"SA-08:06.bind"
+		],
+		"cert_vu": [
+			"800113"
+		]
+	},
+	"dates": {
+		"discovery": "2008-07-08",
+		"entry": "2008-07-13",
+		"modified": "2016-08-09"
+	}
 }

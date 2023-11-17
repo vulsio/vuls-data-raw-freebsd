@@ -1,41 +1,41 @@
 {
-  "vid": "62f2182c-5f7a-11ea-abb7-001b217b3468",
-  "topic": "Gitlab -- Multiple Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "12.8.2",
-          "ge": "12.8.0"
-        },
-        {
-          "lt": "12.7.7",
-          "ge": "12.7.0"
-        },
-        {
-          "lt": "12.6.8",
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2020/03/04/gitlab-12-dot-8-dot-2-released/\">\n\t  <p>Directory Traversal to Arbitrary File Read</p>\n\t  <p>Account Takeover Through Expired Link</p>\n\t  <p>Server Side Request Forgery Through Deprecated Service</p>\n\t  <p>Group Two-Factor Authentication Requirement Bypass</p>\n\t  <p>Stored XSS in Merge Request Pages</p>\n\t  <p>Stored XSS in Merge Request Submission Form</p>\n\t  <p>Stored XSS in File View</p>\n\t  <p>Stored XSS in Grafana Integration</p>\n\t  <p>Contribution Analytics Exposed to Non-members</p>\n\t  <p>Incorrect Access Control in Docker Registry via Deploy Tokens</p>\n\t  <p>Denial of Service via Permission Checks</p>\n\t  <p>Denial of Service in Design For Public Issue</p>\n\t  <p>Incorrect Access Control via LFS Import</p>\n\t  <p>Unescaped HTML in Header</p>\n\t  <p>Private Merge Request Titles Leaked via Widget</p>\n\t  <p>Project Namespace Exposed via Vulnerability Feedback Endpoint</p>\n\t  <p>Denial of Service Through Recursive Requests</p>\n\t  <p>Project Authorization Not Being Updated</p>\n\t  <p>Incorrect Permission Level For Group Invites</p>\n\t  <p>Disclosure of Private Group Epic Information</p>\n\t  <p>User IP Address Exposed via Badge images</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2020/03/04/gitlab-12-dot-8-dot-2-released/"
-    ],
-    "cvename": [
-      "CVE-2020-8113"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-03-04",
-    "entry": "2020-03-06"
-  }
+	"vid": "62f2182c-5f7a-11ea-abb7-001b217b3468",
+	"topic": "Gitlab -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "12.8.2",
+					"ge": "12.8.0"
+				},
+				{
+					"lt": "12.7.7",
+					"ge": "12.7.0"
+				},
+				{
+					"lt": "12.6.8",
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2020/03/04/gitlab-12-dot-8-dot-2-released/\">\n\t  <p>Directory Traversal to Arbitrary File Read</p>\n\t  <p>Account Takeover Through Expired Link</p>\n\t  <p>Server Side Request Forgery Through Deprecated Service</p>\n\t  <p>Group Two-Factor Authentication Requirement Bypass</p>\n\t  <p>Stored XSS in Merge Request Pages</p>\n\t  <p>Stored XSS in Merge Request Submission Form</p>\n\t  <p>Stored XSS in File View</p>\n\t  <p>Stored XSS in Grafana Integration</p>\n\t  <p>Contribution Analytics Exposed to Non-members</p>\n\t  <p>Incorrect Access Control in Docker Registry via Deploy Tokens</p>\n\t  <p>Denial of Service via Permission Checks</p>\n\t  <p>Denial of Service in Design For Public Issue</p>\n\t  <p>Incorrect Access Control via LFS Import</p>\n\t  <p>Unescaped HTML in Header</p>\n\t  <p>Private Merge Request Titles Leaked via Widget</p>\n\t  <p>Project Namespace Exposed via Vulnerability Feedback Endpoint</p>\n\t  <p>Denial of Service Through Recursive Requests</p>\n\t  <p>Project Authorization Not Being Updated</p>\n\t  <p>Incorrect Permission Level For Group Invites</p>\n\t  <p>Disclosure of Private Group Epic Information</p>\n\t  <p>User IP Address Exposed via Badge images</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2020/03/04/gitlab-12-dot-8-dot-2-released/"
+		],
+		"cvename": [
+			"CVE-2020-8113"
+		]
+	},
+	"dates": {
+		"discovery": "2020-03-04",
+		"entry": "2020-03-06"
+	}
 }

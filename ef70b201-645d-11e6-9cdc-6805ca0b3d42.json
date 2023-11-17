@@ -1,85 +1,85 @@
 {
-  "vid": "ef70b201-645d-11e6-9cdc-6805ca0b3d42",
-  "topic": "phpmyadmin -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "phpmyadmin"
-      ],
-      "range": [
-        {
-          "lt": "4.6.4",
-          "ge": "4.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpmyadmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-29/\">\n\t  <p>Weakness with cookie encryption</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-30/\">\n\t  <p>Multiple XSS vulnerabilities</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-31/\">\n\t  <p>Multiple XSS vulnerabilities</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-32/\">\n\t  <p>PHP code injection</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-33/\">\n\t  <p>Full path disclosure</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-34/\">\n\t  <p>SQL injection attack</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-35/\">\n\t  <p>Local file exposure</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-36/\">\n\t  <p>Local file exposure through symlinks with\n\t    UploadDir</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-37/\">\n\t  <p>Path traversal with SaveDir and UploadDir</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-38/\">\n\t  <p>Multiple XSS vulnerabilities</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-39/\">\n\t  <p>SQL injection attack</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-40/\">\n\t  <p>SQL injection attack</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-41/\">\n\t  <p>Denial of service (DOS) attack in transformation\n\t    feature</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-42/\">\n\t  <p>SQL injection attack as control user</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-43/\">\n\t  <p>Unvalidated data passed to unserialize()</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-45/\">\n\t  <p>DOS attack with forced persistent connections</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-46/\">\n\t  <p>Denial of service (DOS) attack by for loops</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-47/\">\n\t  <p>IPv6 and proxy server IP-based authentication rule\n\t    circumvention</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-48/\">\n\t  <p>Detect if user is logged in</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-49/\">\n\t  <p>Bypass URL redirect protection</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-50/\">\n\t  <p>Referrer leak in url.php</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-51/\">\n\t  <p>Reflected File Download attack</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-52/\">\n\t  <p>ArbitraryServerRegexp bypass</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-53/\">\n\t  <p>Denial of service (DOS) attack by changing password to a\n\t    very long string</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-54/\">\n\t  <p>Remote code execution vulnerability when run as CGI</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-55/\">\n\t  <h3>Summary</h3>\n\t  <p>Denial of service (DOS) attack with dbase extension</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-56/\">\n\t  <p>Remote code execution vulnerability when PHP is running\n\t    with dbase extension</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2016-29/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-30/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-31/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-32/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-33/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-34/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-35/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-36/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-37/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-38/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-39/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-40/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-41/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-42/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-43/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-45/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-46/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-47/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-48/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-49/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-50/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-51/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-52/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-53/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-54/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-55/",
-      "https://www.phpmyadmin.net/security/PMASA-2016-56/"
-    ],
-    "cvename": [
-      "CVE-2016-6606",
-      "CVE-2016-6607",
-      "CVE-2016-6608",
-      "CVE-2016-6609",
-      "CVE-2016-6610",
-      "CVE-2016-6611",
-      "CVE-2016-6612",
-      "CVE-2016-6613",
-      "CVE-2016-6614",
-      "CVE-2016-6615",
-      "CVE-2016-6616",
-      "CVE-2016-6617",
-      "CVE-2016-6618",
-      "CVE-2016-6619",
-      "CVE-2016-6620",
-      "CVE-2016-6622",
-      "CVE-2016-6623",
-      "CVE-2016-6624",
-      "CVE-2016-6625",
-      "CVE-2016-6626",
-      "CVE-2016-6627",
-      "CVE-2016-6628",
-      "CVE-2016-6629",
-      "CVE-2016-6630",
-      "CVE-2016-6631",
-      "CVE-2016-6632",
-      "CVE-2016-6633"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-08-17",
-    "entry": "2016-08-17"
-  }
+	"vid": "ef70b201-645d-11e6-9cdc-6805ca0b3d42",
+	"topic": "phpmyadmin -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpmyadmin"
+			],
+			"range": [
+				{
+					"lt": "4.6.4",
+					"ge": "4.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpmyadmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-29/\">\n\t  <p>Weakness with cookie encryption</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-30/\">\n\t  <p>Multiple XSS vulnerabilities</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-31/\">\n\t  <p>Multiple XSS vulnerabilities</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-32/\">\n\t  <p>PHP code injection</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-33/\">\n\t  <p>Full path disclosure</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-34/\">\n\t  <p>SQL injection attack</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-35/\">\n\t  <p>Local file exposure</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-36/\">\n\t  <p>Local file exposure through symlinks with\n\t    UploadDir</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-37/\">\n\t  <p>Path traversal with SaveDir and UploadDir</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-38/\">\n\t  <p>Multiple XSS vulnerabilities</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-39/\">\n\t  <p>SQL injection attack</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-40/\">\n\t  <p>SQL injection attack</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-41/\">\n\t  <p>Denial of service (DOS) attack in transformation\n\t    feature</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-42/\">\n\t  <p>SQL injection attack as control user</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-43/\">\n\t  <p>Unvalidated data passed to unserialize()</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-45/\">\n\t  <p>DOS attack with forced persistent connections</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-46/\">\n\t  <p>Denial of service (DOS) attack by for loops</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-47/\">\n\t  <p>IPv6 and proxy server IP-based authentication rule\n\t    circumvention</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-48/\">\n\t  <p>Detect if user is logged in</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-49/\">\n\t  <p>Bypass URL redirect protection</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-50/\">\n\t  <p>Referrer leak in url.php</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-51/\">\n\t  <p>Reflected File Download attack</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-52/\">\n\t  <p>ArbitraryServerRegexp bypass</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-53/\">\n\t  <p>Denial of service (DOS) attack by changing password to a\n\t    very long string</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-54/\">\n\t  <p>Remote code execution vulnerability when run as CGI</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-55/\">\n\t  <h3>Summary</h3>\n\t  <p>Denial of service (DOS) attack with dbase extension</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-56/\">\n\t  <p>Remote code execution vulnerability when PHP is running\n\t    with dbase extension</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2016-29/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-30/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-31/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-32/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-33/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-34/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-35/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-36/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-37/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-38/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-39/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-40/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-41/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-42/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-43/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-45/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-46/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-47/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-48/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-49/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-50/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-51/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-52/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-53/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-54/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-55/",
+			"https://www.phpmyadmin.net/security/PMASA-2016-56/"
+		],
+		"cvename": [
+			"CVE-2016-6606",
+			"CVE-2016-6607",
+			"CVE-2016-6608",
+			"CVE-2016-6609",
+			"CVE-2016-6610",
+			"CVE-2016-6611",
+			"CVE-2016-6612",
+			"CVE-2016-6613",
+			"CVE-2016-6614",
+			"CVE-2016-6615",
+			"CVE-2016-6616",
+			"CVE-2016-6617",
+			"CVE-2016-6618",
+			"CVE-2016-6619",
+			"CVE-2016-6620",
+			"CVE-2016-6622",
+			"CVE-2016-6623",
+			"CVE-2016-6624",
+			"CVE-2016-6625",
+			"CVE-2016-6626",
+			"CVE-2016-6627",
+			"CVE-2016-6628",
+			"CVE-2016-6629",
+			"CVE-2016-6630",
+			"CVE-2016-6631",
+			"CVE-2016-6632",
+			"CVE-2016-6633"
+		]
+	},
+	"dates": {
+		"discovery": "2016-08-17",
+		"entry": "2016-08-17"
+	}
 }

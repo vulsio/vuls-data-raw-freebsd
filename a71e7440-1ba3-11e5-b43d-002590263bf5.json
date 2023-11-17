@@ -1,43 +1,43 @@
 {
-  "vid": "a71e7440-1ba3-11e5-b43d-002590263bf5",
-  "topic": "elasticsearch -- directory traversal attack with site plugins",
-  "affects": [
-    {
-      "name": [
-        "elasticsearch"
-      ],
-      "range": [
-        {
-          "lt": "1.4.5"
-        },
-        {
-          "lt": "1.5.2",
-          "ge": "1.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/community/security\">\n\t  <p>Vulnerability Summary: All Elasticsearch versions prior to 1.5.2\n\t    and 1.4.5 are vulnerable to a directory traversal attack that allows\n\t    an attacker to retrieve files from the server running Elasticsearch\n\t    when one or more site plugins are installed, or when Windows is the\n\t    server OS.</p>\n\t  <p>Remediation Summary: Users should upgrade to 1.4.5 or 1.5.2. Users\n\t    that do not want to upgrade can address the vulnerability by\n\t    disabling site plugins. See the CVE description for additional\n\t    options.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.elastic.co/community/security",
-      "https://www.elastic.co/blog/elasticsearch-1-5-2-and-1-4-5-released",
-      "https://www.exploit-db.com/exploits/37054/",
-      "https://packetstormsecurity.com/files/131646/Elasticsearch-Directory-Traversal.html",
-      "http://www.securityfocus.com/archive/1/535385"
-    ],
-    "cvename": [
-      "CVE-2015-3337"
-    ],
-    "bid": [
-      "74353"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-04-27",
-    "entry": "2015-06-26"
-  }
+	"vid": "a71e7440-1ba3-11e5-b43d-002590263bf5",
+	"topic": "elasticsearch -- directory traversal attack with site plugins",
+	"affects": [
+		{
+			"name": [
+				"elasticsearch"
+			],
+			"range": [
+				{
+					"lt": "1.4.5"
+				},
+				{
+					"lt": "1.5.2",
+					"ge": "1.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/community/security\">\n\t  <p>Vulnerability Summary: All Elasticsearch versions prior to 1.5.2\n\t    and 1.4.5 are vulnerable to a directory traversal attack that allows\n\t    an attacker to retrieve files from the server running Elasticsearch\n\t    when one or more site plugins are installed, or when Windows is the\n\t    server OS.</p>\n\t  <p>Remediation Summary: Users should upgrade to 1.4.5 or 1.5.2. Users\n\t    that do not want to upgrade can address the vulnerability by\n\t    disabling site plugins. See the CVE description for additional\n\t    options.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.elastic.co/community/security",
+			"https://www.elastic.co/blog/elasticsearch-1-5-2-and-1-4-5-released",
+			"https://www.exploit-db.com/exploits/37054/",
+			"https://packetstormsecurity.com/files/131646/Elasticsearch-Directory-Traversal.html",
+			"http://www.securityfocus.com/archive/1/535385"
+		],
+		"cvename": [
+			"CVE-2015-3337"
+		],
+		"bid": [
+			"74353"
+		]
+	},
+	"dates": {
+		"discovery": "2015-04-27",
+		"entry": "2015-06-26"
+	}
 }

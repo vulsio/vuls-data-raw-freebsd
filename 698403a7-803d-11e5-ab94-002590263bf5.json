@@ -1,32 +1,32 @@
 {
-  "vid": "698403a7-803d-11e5-ab94-002590263bf5",
-  "topic": "codeigniter -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "codeigniter"
-      ],
-      "range": [
-        {
-          "lt": "2.2.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The CodeIgniter changelog reports:</p>\n\t<blockquote cite=\"https://codeigniter.com/userguide2/changelog.html\">\n\t  <p>Fixed an XSS attack vector in Security Library method\n\t    xss_clean().</p>\n\t  <p>Changed Config Library method base_url() to fallback to\n\t    ``$_SERVER['SERVER_ADDR']`` in order to avoid Host header\n\t    injections.</p>\n\t  <p>Changed CAPTCHA Helper to try to use the operating system's PRNG\n\t    first.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://codeigniter.com/userguide2/changelog.html"
-    ],
-    "freebsd_pr": [
-      "ports/203403"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-31",
-    "entry": "2015-11-01"
-  }
+	"vid": "698403a7-803d-11e5-ab94-002590263bf5",
+	"topic": "codeigniter -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"codeigniter"
+			],
+			"range": [
+				{
+					"lt": "2.2.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The CodeIgniter changelog reports:</p>\n\t<blockquote cite=\"https://codeigniter.com/userguide2/changelog.html\">\n\t  <p>Fixed an XSS attack vector in Security Library method\n\t    xss_clean().</p>\n\t  <p>Changed Config Library method base_url() to fallback to\n\t    ``$_SERVER['SERVER_ADDR']`` in order to avoid Host header\n\t    injections.</p>\n\t  <p>Changed CAPTCHA Helper to try to use the operating system's PRNG\n\t    first.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://codeigniter.com/userguide2/changelog.html"
+		],
+		"freebsd_pr": [
+			"ports/203403"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-31",
+		"entry": "2015-11-01"
+	}
 }

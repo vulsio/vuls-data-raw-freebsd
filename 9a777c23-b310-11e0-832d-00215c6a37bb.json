@@ -1,33 +1,33 @@
 {
-  "vid": "9a777c23-b310-11e0-832d-00215c6a37bb",
-  "topic": "rsync -- incremental recursion memory corruption vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rsync"
-      ],
-      "range": [
-        {
-          "lt": "3.0.8",
-          "gt": "3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>rsync development team reports:</p>\n\t<blockquote cite=\"http://rsync.samba.org/ftp/rsync/src/rsync-3.0.8-NEWS\">\n\t  <p>Fixed a data-corruption issue when preserving hard-links\n\t    without preserving file ownership, and doing deletions either\n\t    before or during the transfer (CVE-2011-1097).  This\n\t    fixes some assert errors in the hard-linking code, and some\n\t    potential failed checksums (via -c) that should have matched.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.samba.org/show_bug.cgi?id=7936"
-    ],
-    "cvename": [
-      "CVE-2011-1097"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-04-08",
-    "entry": "2011-07-20"
-  }
+	"vid": "9a777c23-b310-11e0-832d-00215c6a37bb",
+	"topic": "rsync -- incremental recursion memory corruption vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rsync"
+			],
+			"range": [
+				{
+					"lt": "3.0.8",
+					"gt": "3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>rsync development team reports:</p>\n\t<blockquote cite=\"http://rsync.samba.org/ftp/rsync/src/rsync-3.0.8-NEWS\">\n\t  <p>Fixed a data-corruption issue when preserving hard-links\n\t    without preserving file ownership, and doing deletions either\n\t    before or during the transfer (CVE-2011-1097).  This\n\t    fixes some assert errors in the hard-linking code, and some\n\t    potential failed checksums (via -c) that should have matched.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.samba.org/show_bug.cgi?id=7936"
+		],
+		"cvename": [
+			"CVE-2011-1097"
+		]
+	},
+	"dates": {
+		"discovery": "2011-04-08",
+		"entry": "2011-07-20"
+	}
 }

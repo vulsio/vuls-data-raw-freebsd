@@ -1,55 +1,55 @@
 {
-  "vid": "2b386075-1d9c-11e8-b6aa-4ccc6adda413",
-  "topic": "libsndfile -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libsndfile",
-        "linux-c6-libsndfile",
-        "linux-c7-libsndfile"
-      ],
-      "range": [
-        {
-          "lt": "1.0.28_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Agostino Sarubbo, Gentoo reports:</p>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-flac_buffer_copy-flac-c/\">\n\t  <p>CVE-2017-8361 (Medium): The flac_buffer_copy function in flac.c in\n\t    libsndfile 1.0.28 allows remote attackers to cause a denial of service\n\t    (buffer overflow and application crash) or possibly have unspecified\n\t    other impact via a crafted audio file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-invalid-memory-read-in-flac_buffer_copy-flac-c/\">\n\t  <p>CVE-2017-8362 (Medium): The flac_buffer_copy function in flac.c in\n\t    libsndfile 1.0.28 allows remote attackers to cause a denial of service\n\t    (invalid read and application crash) via a crafted audio file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-heap-based-buffer-overflow-in-flac_buffer_copy-flac-c/\">\n\t  <p>CVE-2017-8363 (Medium): The flac_buffer_copy function in flac.c in\n\t    libsndfile 1.0.28 allows remote attackers to cause a denial of service\n\t    (heap-based buffer over-read and application crash) via a crafted audio\n\t    file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-i2les_array-pcm-c/\">\n\t  <p>CVE-2017-8365 (Medium): The i2les_array function in pcm.c in libsndfile\n\t    1.0.28 allows remote attackers to cause a denial of service (buffer\n\t    over-read and application crash) via a crafted audio file.</p>\n\t</blockquote>\n\t<p>manxorist on Github reports:</p>\n\t<blockquote cite=\"https://github.com/erikd/libsndfile/issues/292\">\n\t  <p>CVE-2017-12562 (High): Heap-based Buffer Overflow in the\n\t    psf_binheader_writef function in common.c in libsndfile through\n\t    1.0.28 allows remote attackers to cause a denial of service\n\t    (application crash) or possibly have unspecified other impact.</p>\n\t</blockquote>\n\t<p>Xin-Jiang on Github reports:</p>\n\t<blockquote cite=\"https://github.com/erikd/libsndfile/issues/318\">\n\t  <p>CVE-2017-14634 (Medium): In libsndfile 1.0.28, a divide-by-zero\n\t    error exists in the function double64_init() in double64.c, which\n\t    may lead to DoS when playing a crafted audio file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-flac_buffer_copy-flac-c/",
-      "https://github.com/erikd/libsndfile/issues/232",
-      "https://github.com/erikd/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3",
-      "https://blogs.gentoo.org/ago/2017/04/29/libsndfile-invalid-memory-read-in-flac_buffer_copy-flac-c/",
-      "https://github.com/erikd/libsndfile/issues/231",
-      "https://github.com/erikd/libsndfile/commit/ef1dbb2df1c0e741486646de40bd638a9c4cd808",
-      "https://blogs.gentoo.org/ago/2017/04/29/libsndfile-heap-based-buffer-overflow-in-flac_buffer_copy-flac-c/",
-      "https://github.com/erikd/libsndfile/issues/233",
-      "https://github.com/erikd/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3",
-      "https://github.com/erikd/libsndfile/commit/cd7da8dbf6ee4310d21d9e44b385d6797160d9e8",
-      "https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-i2les_array-pcm-c/",
-      "https://github.com/erikd/libsndfile/issues/230",
-      "https://github.com/erikd/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3",
-      "https://github.com/erikd/libsndfile/issues/292/",
-      "https://github.com/erikd/libsndfile/commit/cf7a8182c2642c50f1cf90dddea9ce96a8bad2e8",
-      "https://github.com/erikd/libsndfile/issues/318",
-      "https://github.com/erikd/libsndfile/commit/85c877d5072866aadbe8ed0c3e0590fbb5e16788"
-    ],
-    "cvename": [
-      "CVE-2017-8361",
-      "CVE-2017-8362",
-      "CVE-2017-8363",
-      "CVE-2017-8365",
-      "CVE-2017-12562",
-      "CVE-2017-14634"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-12",
-    "entry": "2018-03-01"
-  }
+	"vid": "2b386075-1d9c-11e8-b6aa-4ccc6adda413",
+	"topic": "libsndfile -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libsndfile",
+				"linux-c6-libsndfile",
+				"linux-c7-libsndfile"
+			],
+			"range": [
+				{
+					"lt": "1.0.28_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Agostino Sarubbo, Gentoo reports:</p>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-flac_buffer_copy-flac-c/\">\n\t  <p>CVE-2017-8361 (Medium): The flac_buffer_copy function in flac.c in\n\t    libsndfile 1.0.28 allows remote attackers to cause a denial of service\n\t    (buffer overflow and application crash) or possibly have unspecified\n\t    other impact via a crafted audio file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-invalid-memory-read-in-flac_buffer_copy-flac-c/\">\n\t  <p>CVE-2017-8362 (Medium): The flac_buffer_copy function in flac.c in\n\t    libsndfile 1.0.28 allows remote attackers to cause a denial of service\n\t    (invalid read and application crash) via a crafted audio file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-heap-based-buffer-overflow-in-flac_buffer_copy-flac-c/\">\n\t  <p>CVE-2017-8363 (Medium): The flac_buffer_copy function in flac.c in\n\t    libsndfile 1.0.28 allows remote attackers to cause a denial of service\n\t    (heap-based buffer over-read and application crash) via a crafted audio\n\t    file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-i2les_array-pcm-c/\">\n\t  <p>CVE-2017-8365 (Medium): The i2les_array function in pcm.c in libsndfile\n\t    1.0.28 allows remote attackers to cause a denial of service (buffer\n\t    over-read and application crash) via a crafted audio file.</p>\n\t</blockquote>\n\t<p>manxorist on Github reports:</p>\n\t<blockquote cite=\"https://github.com/erikd/libsndfile/issues/292\">\n\t  <p>CVE-2017-12562 (High): Heap-based Buffer Overflow in the\n\t    psf_binheader_writef function in common.c in libsndfile through\n\t    1.0.28 allows remote attackers to cause a denial of service\n\t    (application crash) or possibly have unspecified other impact.</p>\n\t</blockquote>\n\t<p>Xin-Jiang on Github reports:</p>\n\t<blockquote cite=\"https://github.com/erikd/libsndfile/issues/318\">\n\t  <p>CVE-2017-14634 (Medium): In libsndfile 1.0.28, a divide-by-zero\n\t    error exists in the function double64_init() in double64.c, which\n\t    may lead to DoS when playing a crafted audio file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-flac_buffer_copy-flac-c/",
+			"https://github.com/erikd/libsndfile/issues/232",
+			"https://github.com/erikd/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3",
+			"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-invalid-memory-read-in-flac_buffer_copy-flac-c/",
+			"https://github.com/erikd/libsndfile/issues/231",
+			"https://github.com/erikd/libsndfile/commit/ef1dbb2df1c0e741486646de40bd638a9c4cd808",
+			"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-heap-based-buffer-overflow-in-flac_buffer_copy-flac-c/",
+			"https://github.com/erikd/libsndfile/issues/233",
+			"https://github.com/erikd/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3",
+			"https://github.com/erikd/libsndfile/commit/cd7da8dbf6ee4310d21d9e44b385d6797160d9e8",
+			"https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-i2les_array-pcm-c/",
+			"https://github.com/erikd/libsndfile/issues/230",
+			"https://github.com/erikd/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3",
+			"https://github.com/erikd/libsndfile/issues/292/",
+			"https://github.com/erikd/libsndfile/commit/cf7a8182c2642c50f1cf90dddea9ce96a8bad2e8",
+			"https://github.com/erikd/libsndfile/issues/318",
+			"https://github.com/erikd/libsndfile/commit/85c877d5072866aadbe8ed0c3e0590fbb5e16788"
+		],
+		"cvename": [
+			"CVE-2017-8361",
+			"CVE-2017-8362",
+			"CVE-2017-8363",
+			"CVE-2017-8365",
+			"CVE-2017-12562",
+			"CVE-2017-14634"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-12",
+		"entry": "2018-03-01"
+	}
 }

@@ -1,36 +1,36 @@
 {
-  "vid": "2a4a112a-7c1b-11e5-bd77-0800275369e2",
-  "topic": "lldpd -- Buffer overflow/Denial of service",
-  "affects": [
-    {
-      "name": [
-        "lldpd"
-      ],
-      "range": [
-        {
-          "lt": "0.7.19",
-          "ge": "0.5.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The lldpd developer Vincent Bernat reports:</p>\n\t<blockquote cite=\"https://github.com/vincentbernat/lldpd/raw/0.7.19/NEWS\">\n\t  <p>A buffer overflow may allow arbitrary code execution\n\t    only if hardening was disabled.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/vincentbernat/lldpd/commit/793526f8884455f43daecd0a2c46772388417a00\">\n\t  <p>Malformed packets should not make lldpd crash. Ensure we can\n\t    handle them by not using assert() in this part.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/vincentbernat/lldpd/raw/0.7.19/NEWS",
-      "http://www.openwall.com/lists/oss-security/2015/10/30/2"
-    ],
-    "cvename": [
-      "CVE-2015-8011",
-      "CVE-2015-8012"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-04",
-    "entry": "2015-10-26",
-    "modified": "2015-11-10"
-  }
+	"vid": "2a4a112a-7c1b-11e5-bd77-0800275369e2",
+	"topic": "lldpd -- Buffer overflow/Denial of service",
+	"affects": [
+		{
+			"name": [
+				"lldpd"
+			],
+			"range": [
+				{
+					"lt": "0.7.19",
+					"ge": "0.5.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The lldpd developer Vincent Bernat reports:</p>\n\t<blockquote cite=\"https://github.com/vincentbernat/lldpd/raw/0.7.19/NEWS\">\n\t  <p>A buffer overflow may allow arbitrary code execution\n\t    only if hardening was disabled.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/vincentbernat/lldpd/commit/793526f8884455f43daecd0a2c46772388417a00\">\n\t  <p>Malformed packets should not make lldpd crash. Ensure we can\n\t    handle them by not using assert() in this part.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/vincentbernat/lldpd/raw/0.7.19/NEWS",
+			"http://www.openwall.com/lists/oss-security/2015/10/30/2"
+		],
+		"cvename": [
+			"CVE-2015-8011",
+			"CVE-2015-8012"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-04",
+		"entry": "2015-10-26",
+		"modified": "2015-11-10"
+	}
 }

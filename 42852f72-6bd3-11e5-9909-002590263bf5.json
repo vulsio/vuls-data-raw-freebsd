@@ -1,30 +1,30 @@
 {
-  "vid": "42852f72-6bd3-11e5-9909-002590263bf5",
-  "topic": "OpenSMTPD -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "opensmtpd"
-      ],
-      "range": [
-        {
-          "lt": "5.7.3,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSMTPD developers report:</p>\n\t<blockquote cite=\"https://www.opensmtpd.org/announces/release-5.7.3.txt\">\n\t  <p>fix an mda buffer truncation bug which allows a user to create\n\t    forward files that pass session checks but fail delivery later down\n\t    the chain, within the user mda</p>\n\t  <p>fix remote buffer overflow in unprivileged pony process</p>\n\t  <p>reworked offline enqueue to better protect against hardlink\n\t    attacks</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2015/10/04/2",
-      "https://www.opensmtpd.org/announces/release-5.7.3.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-04",
-    "entry": "2015-10-06"
-  }
+	"vid": "42852f72-6bd3-11e5-9909-002590263bf5",
+	"topic": "OpenSMTPD -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"opensmtpd"
+			],
+			"range": [
+				{
+					"lt": "5.7.3,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSMTPD developers report:</p>\n\t<blockquote cite=\"https://www.opensmtpd.org/announces/release-5.7.3.txt\">\n\t  <p>fix an mda buffer truncation bug which allows a user to create\n\t    forward files that pass session checks but fail delivery later down\n\t    the chain, within the user mda</p>\n\t  <p>fix remote buffer overflow in unprivileged pony process</p>\n\t  <p>reworked offline enqueue to better protect against hardlink\n\t    attacks</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2015/10/04/2",
+			"https://www.opensmtpd.org/announces/release-5.7.3.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-04",
+		"entry": "2015-10-06"
+	}
 }

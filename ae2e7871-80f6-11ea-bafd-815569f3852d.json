@@ -1,83 +1,83 @@
 {
-  "vid": "ae2e7871-80f6-11ea-bafd-815569f3852d",
-  "topic": "ansible - Vault password leak from temporary file",
-  "affects": [
-    {
-      "name": [
-        "ansible"
-      ],
-      "range": [
-        {
-          "lt": "2.8.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ansible27"
-      ],
-      "range": [
-        {
-          "lt": "2.7.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ansible26"
-      ],
-      "range": [
-        {
-          "lt": "2.7.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ansible25"
-      ],
-      "range": [
-        {
-          "lt": "2.7.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ansible24"
-      ],
-      "range": [
-        {
-          "lt": "2.7.17"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ansible23"
-      ],
-      "range": [
-        {
-          "lt": "2.7.17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Borja Tarraso reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1740\">\n\t<p>A flaw was found in Ansible Engine when using Ansible Vault for editing\n\t  encrypted files. When a user executes \"ansible-vault edit\", another user\n\t  on the same computer can read the old and new secret, as it is created in\n\t  a temporary file with mkstemp and the returned file descriptor is closed\n\t  and the method write_data is called to write the existing secret in the\n\t  file. This method will delete the file before recreating it insecurely.\n\t  All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1740",
-      "https://github.com/ansible/ansible/issues/67798"
-    ],
-    "cvename": [
-      "CVE-2020-1740"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-02-12",
-    "entry": "2020-04-17"
-  }
+	"vid": "ae2e7871-80f6-11ea-bafd-815569f3852d",
+	"topic": "ansible - Vault password leak from temporary file",
+	"affects": [
+		{
+			"name": [
+				"ansible"
+			],
+			"range": [
+				{
+					"lt": "2.8.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"ansible27"
+			],
+			"range": [
+				{
+					"lt": "2.7.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"ansible26"
+			],
+			"range": [
+				{
+					"lt": "2.7.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"ansible25"
+			],
+			"range": [
+				{
+					"lt": "2.7.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"ansible24"
+			],
+			"range": [
+				{
+					"lt": "2.7.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"ansible23"
+			],
+			"range": [
+				{
+					"lt": "2.7.17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Borja Tarraso reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1740\">\n\t<p>A flaw was found in Ansible Engine when using Ansible Vault for editing\n\t  encrypted files. When a user executes \"ansible-vault edit\", another user\n\t  on the same computer can read the old and new secret, as it is created in\n\t  a temporary file with mkstemp and the returned file descriptor is closed\n\t  and the method write_data is called to write the existing secret in the\n\t  file. This method will delete the file before recreating it insecurely.\n\t  All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1740",
+			"https://github.com/ansible/ansible/issues/67798"
+		],
+		"cvename": [
+			"CVE-2020-1740"
+		]
+	},
+	"dates": {
+		"discovery": "2020-02-12",
+		"entry": "2020-04-17"
+	}
 }

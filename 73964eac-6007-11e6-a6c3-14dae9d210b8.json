@@ -1,45 +1,45 @@
 {
-  "vid": "73964eac-6007-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- memory leak in sandboxed namei lookup",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "10.0_10",
-          "ge": "10.0"
-        },
-        {
-          "lt": "9.3_3",
-          "ge": "9.3"
-        },
-        {
-          "lt": "9.2_13",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.1_20",
-          "ge": "9.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The namei facility will leak a small amount of kernel\n\tmemory every time a sandboxed process looks up a nonexistent\n\tpath name.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker that can cause a sandboxed process\n\t(for instance, a web server) to look up a large number of\n\tnonexistent path names can cause memory exhaustion.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2014-3711"
-    ],
-    "freebsd_sa": [
-      "SA-14:22.namei"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-10-21",
-    "entry": "2016-08-11"
-  }
+	"vid": "73964eac-6007-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- memory leak in sandboxed namei lookup",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "10.0_10",
+					"ge": "10.0"
+				},
+				{
+					"lt": "9.3_3",
+					"ge": "9.3"
+				},
+				{
+					"lt": "9.2_13",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.1_20",
+					"ge": "9.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The namei facility will leak a small amount of kernel\n\tmemory every time a sandboxed process looks up a nonexistent\n\tpath name.</p>\n\t<h1>Impact:</h1>\n\t<p>A remote attacker that can cause a sandboxed process\n\t(for instance, a web server) to look up a large number of\n\tnonexistent path names can cause memory exhaustion.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2014-3711"
+		],
+		"freebsd_sa": [
+			"SA-14:22.namei"
+		]
+	},
+	"dates": {
+		"discovery": "2014-10-21",
+		"entry": "2016-08-11"
+	}
 }

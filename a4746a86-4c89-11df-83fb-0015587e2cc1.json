@@ -1,42 +1,42 @@
 {
-  "vid": "a4746a86-4c89-11df-83fb-0015587e2cc1",
-  "topic": "e107 -- code execution and XSS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "e107"
-      ],
-      "range": [
-        {
-          "lt": "0.7.20"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia Research reported two vulnerabilities in e107:</p>\n\t<p>The first problem affects installations that have the\n\t  Content Manager plugin enabled. This plugin does not\n\t  sanitize the \"content_heading\" parameter correctly and\n\t  is therefore vulnerable to a cross site scripting attack.</p>\n\t<p>The second vulnerability is related to the avatar upload\n\t  functionality. Images containing PHP code can be uploaded\n\t  and executed.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://e107.org/comment.php?comment.news.864",
-      "http://secunia.com/secunia_research/2010-43/",
-      "http://secunia.com/secunia_research/2010-44/",
-      "http://xforce.iss.net/xforce/xfdb/57932"
-    ],
-    "cvename": [
-      "CVE-2010-0996",
-      "CVE-2010-0997"
-    ],
-    "freebsd_pr": [
-      "ports/145885"
-    ],
-    "bid": [
-      "39540"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-04-15",
-    "entry": "2010-04-20"
-  }
+	"vid": "a4746a86-4c89-11df-83fb-0015587e2cc1",
+	"topic": "e107 -- code execution and XSS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"e107"
+			],
+			"range": [
+				{
+					"lt": "0.7.20"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia Research reported two vulnerabilities in e107:</p>\n\t<p>The first problem affects installations that have the\n\t  Content Manager plugin enabled. This plugin does not\n\t  sanitize the \"content_heading\" parameter correctly and\n\t  is therefore vulnerable to a cross site scripting attack.</p>\n\t<p>The second vulnerability is related to the avatar upload\n\t  functionality. Images containing PHP code can be uploaded\n\t  and executed.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://e107.org/comment.php?comment.news.864",
+			"http://secunia.com/secunia_research/2010-43/",
+			"http://secunia.com/secunia_research/2010-44/",
+			"http://xforce.iss.net/xforce/xfdb/57932"
+		],
+		"cvename": [
+			"CVE-2010-0996",
+			"CVE-2010-0997"
+		],
+		"freebsd_pr": [
+			"ports/145885"
+		],
+		"bid": [
+			"39540"
+		]
+	},
+	"dates": {
+		"discovery": "2010-04-15",
+		"entry": "2010-04-20"
+	}
 }

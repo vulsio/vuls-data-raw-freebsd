@@ -1,47 +1,47 @@
 {
-  "vid": "2823048d-9f8f-11ec-8c9c-001b217b3468",
-  "topic": "Gitlab -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab-ce"
-      ],
-      "range": [
-        {
-          "lt": "14.8.2",
-          "ge": "14.8.0"
-        },
-        {
-          "lt": "14.7.4",
-          "ge": "14.7.0"
-        },
-        {
-          "lt": "14.6.5",
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/02/25/critical-security-release-gitlab-14-8-2-released/\">\n\t  <p>Runner registration token disclosure through Quick Actions</p>\n\t  <p>Unprivileged users can add other users to groups through an API endpoint</p>\n\t  <p>Inaccurate display of Snippet contents can be potentially misleading to users</p>\n\t  <p>Environment variables can be leaked via the sendmail delivery method</p>\n\t  <p>Unauthenticated user enumeration on GraphQL API</p>\n\t  <p>Adding a mirror with SSH credentials can leak password</p>\n\t  <p>Denial of Service via user comments</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/releases/2022/02/25/critical-security-release-gitlab-14-8-2-released/"
-    ],
-    "cvename": [
-      "CVE-2022-0735",
-      "CVE-2022-0549",
-      "CVE-2022-0751",
-      "CVE-2022-0741",
-      "CVE-2021-4191",
-      "CVE-2022-0738",
-      "CVE-2022-0489"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-02-25",
-    "entry": "2022-03-09"
-  }
+	"vid": "2823048d-9f8f-11ec-8c9c-001b217b3468",
+	"topic": "Gitlab -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "14.8.2",
+					"ge": "14.8.0"
+				},
+				{
+					"lt": "14.7.4",
+					"ge": "14.7.0"
+				},
+				{
+					"lt": "14.6.5",
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2022/02/25/critical-security-release-gitlab-14-8-2-released/\">\n\t  <p>Runner registration token disclosure through Quick Actions</p>\n\t  <p>Unprivileged users can add other users to groups through an API endpoint</p>\n\t  <p>Inaccurate display of Snippet contents can be potentially misleading to users</p>\n\t  <p>Environment variables can be leaked via the sendmail delivery method</p>\n\t  <p>Unauthenticated user enumeration on GraphQL API</p>\n\t  <p>Adding a mirror with SSH credentials can leak password</p>\n\t  <p>Denial of Service via user comments</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2022/02/25/critical-security-release-gitlab-14-8-2-released/"
+		],
+		"cvename": [
+			"CVE-2022-0735",
+			"CVE-2022-0549",
+			"CVE-2022-0751",
+			"CVE-2022-0741",
+			"CVE-2021-4191",
+			"CVE-2022-0738",
+			"CVE-2022-0489"
+		]
+	},
+	"dates": {
+		"discovery": "2022-02-25",
+		"entry": "2022-03-09"
+	}
 }

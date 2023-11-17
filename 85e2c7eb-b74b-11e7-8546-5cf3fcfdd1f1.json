@@ -1,40 +1,40 @@
 {
-  "vid": "85e2c7eb-b74b-11e7-8546-5cf3fcfdd1f1",
-  "topic": "irssi -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "irssi"
-      ],
-      "range": [
-        {
-          "lt": "1.0.5,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_10.txt\">\n\t  <p>When installing themes with unterminated colour formatting\n\t  sequences, Irssi may access data beyond the end of the string.</p>\n\t  <p>While waiting for the channel synchronisation, Irssi may\n\t  incorrectly fail to remove destroyed channels from the query list,\n\t  resulting in use after free conditions when updating the state later\n\t  on.</p>\n\t  <p>Certain incorrectly formatted DCC CTCP messages could cause NULL\n\t  pointer dereference.</p>\n\t  <p>Overlong nicks or targets may result in a NULL pointer dereference\n\t  while splitting the message.</p>\n\t  <p>In certain cases Irssi may fail to verify that a Safe channel ID\n\t  is long enough, causing reads beyond the end of the string.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://irssi.org/security/irssi_sa_2017_10.txt"
-    ],
-    "cvename": [
-      "CVE-2017-15721",
-      "CVE-2017-15722",
-      "CVE-2017-15723",
-      "CVE-2017-15227",
-      "CVE-2017-15228"
-    ],
-    "freebsd_pr": [
-      "ports/223169"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-10-10",
-    "entry": "2017-10-22",
-    "modified": "2017-12-31"
-  }
+	"vid": "85e2c7eb-b74b-11e7-8546-5cf3fcfdd1f1",
+	"topic": "irssi -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"irssi"
+			],
+			"range": [
+				{
+					"lt": "1.0.5,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2017_10.txt\">\n\t  <p>When installing themes with unterminated colour formatting\n\t  sequences, Irssi may access data beyond the end of the string.</p>\n\t  <p>While waiting for the channel synchronisation, Irssi may\n\t  incorrectly fail to remove destroyed channels from the query list,\n\t  resulting in use after free conditions when updating the state later\n\t  on.</p>\n\t  <p>Certain incorrectly formatted DCC CTCP messages could cause NULL\n\t  pointer dereference.</p>\n\t  <p>Overlong nicks or targets may result in a NULL pointer dereference\n\t  while splitting the message.</p>\n\t  <p>In certain cases Irssi may fail to verify that a Safe channel ID\n\t  is long enough, causing reads beyond the end of the string.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://irssi.org/security/irssi_sa_2017_10.txt"
+		],
+		"cvename": [
+			"CVE-2017-15721",
+			"CVE-2017-15722",
+			"CVE-2017-15723",
+			"CVE-2017-15227",
+			"CVE-2017-15228"
+		],
+		"freebsd_pr": [
+			"ports/223169"
+		]
+	},
+	"dates": {
+		"discovery": "2017-10-10",
+		"entry": "2017-10-22",
+		"modified": "2017-12-31"
+	}
 }

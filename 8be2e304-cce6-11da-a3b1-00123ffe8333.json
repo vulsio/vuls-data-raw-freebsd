@@ -1,39 +1,39 @@
 {
-  "vid": "8be2e304-cce6-11da-a3b1-00123ffe8333",
-  "topic": "mailman -- Private Archive Script Cross-Site Scripting",
-  "affects": [
-    {
-      "name": [
-        "mailman",
-        "ja-mailman",
-        "mailman-with-htdig"
-      ],
-      "range": [
-        {
-          "lt": "2.1.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19558/\">\n\t  <p>A vulnerability has been reported in Mailman, which can be\n\t    exploited by malicious people to conduct cross-site scripting\n\t    attacks.</p>\n\t  <p>Unspecified input passed to the private archive script is not\n\t    properly sanitised before being returned to users. This can be\n\t    exploited to execute arbitrary HTML and script code in a user's\n\t    browser session in context of a vulnerable site.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/19558/"
-    ],
-    "cvename": [
-      "CVE-2006-1712"
-    ],
-    "mlist": [
-      {
-        "text": "http://mail.python.org/pipermail/mailman-announce/2006-April/000084.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2006-04-07",
-    "entry": "2006-04-16"
-  }
+	"vid": "8be2e304-cce6-11da-a3b1-00123ffe8333",
+	"topic": "mailman -- Private Archive Script Cross-Site Scripting",
+	"affects": [
+		{
+			"name": [
+				"mailman",
+				"ja-mailman",
+				"mailman-with-htdig"
+			],
+			"range": [
+				{
+					"lt": "2.1.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19558/\">\n\t  <p>A vulnerability has been reported in Mailman, which can be\n\t    exploited by malicious people to conduct cross-site scripting\n\t    attacks.</p>\n\t  <p>Unspecified input passed to the private archive script is not\n\t    properly sanitised before being returned to users. This can be\n\t    exploited to execute arbitrary HTML and script code in a user's\n\t    browser session in context of a vulnerable site.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/19558/"
+		],
+		"cvename": [
+			"CVE-2006-1712"
+		],
+		"mlist": [
+			{
+				"text": "http://mail.python.org/pipermail/mailman-announce/2006-April/000084.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2006-04-07",
+		"entry": "2006-04-16"
+	}
 }

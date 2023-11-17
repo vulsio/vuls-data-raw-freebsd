@@ -1,52 +1,52 @@
 {
-  "vid": "c01a25f5-8f20-11da-8c1d-000e0c2e438a",
-  "topic": "texindex -- temporary file privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.0_2",
-          "ge": "6.0"
-        },
-        {
-          "lt": "5.4_9",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.3_24",
-          "ge": "5.3"
-        },
-        {
-          "lt": "4.11_14",
-          "ge": "4.11"
-        },
-        {
-          "lt": "4.10_20",
-          "ge": "4.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem description</p>\n\t<p>The \"sort_offline\" function used by texindex(1) employs the\n\t  \"maketempname\" function, which produces predictable file names\n\t  and fails to validate that the paths do not exist.</p>\n\t<p>Impact</p>\n\t<p>These predictable temporary file names are problematic because\n\t  they allow an attacker to take advantage of a race condition in\n\t  order to execute a symlink attack, which could enable them to\n\t  overwrite files on the system in the context of the user running\n\t  the texindex(1) utility.</p>\n\t<p>Workaround</p>\n\t<p>No workaround is available, but the problematic code is only\n\t  executed if the input file being processed is 500kB or more in\n\t  length; as a result, users working with documents of less than\n\t  several hundred pages are very unlikely to be affected.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CAN-2005-3011"
-    ],
-    "freebsd_sa": [
-      "SA-06:01.texindex"
-    ],
-    "bid": [
-      "14854"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-01-11",
-    "entry": "2006-01-27"
-  }
+	"vid": "c01a25f5-8f20-11da-8c1d-000e0c2e438a",
+	"topic": "texindex -- temporary file privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.0_2",
+					"ge": "6.0"
+				},
+				{
+					"lt": "5.4_9",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.3_24",
+					"ge": "5.3"
+				},
+				{
+					"lt": "4.11_14",
+					"ge": "4.11"
+				},
+				{
+					"lt": "4.10_20",
+					"ge": "4.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem description</p>\n\t<p>The \"sort_offline\" function used by texindex(1) employs the\n\t  \"maketempname\" function, which produces predictable file names\n\t  and fails to validate that the paths do not exist.</p>\n\t<p>Impact</p>\n\t<p>These predictable temporary file names are problematic because\n\t  they allow an attacker to take advantage of a race condition in\n\t  order to execute a symlink attack, which could enable them to\n\t  overwrite files on the system in the context of the user running\n\t  the texindex(1) utility.</p>\n\t<p>Workaround</p>\n\t<p>No workaround is available, but the problematic code is only\n\t  executed if the input file being processed is 500kB or more in\n\t  length; as a result, users working with documents of less than\n\t  several hundred pages are very unlikely to be affected.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CAN-2005-3011"
+		],
+		"freebsd_sa": [
+			"SA-06:01.texindex"
+		],
+		"bid": [
+			"14854"
+		]
+	},
+	"dates": {
+		"discovery": "2006-01-11",
+		"entry": "2006-01-27"
+	}
 }

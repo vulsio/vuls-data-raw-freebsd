@@ -1,35 +1,35 @@
 {
-  "vid": "523bb0b7-ba4d-11e6-ae1b-002590263bf5",
-  "topic": "xen-kernel -- x86 task switch to VM86 mode mis-handled",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-192.html\">\n\t  <p>LDTR, just like TR, is purely a protected mode facility. Hence even\n\t    when switching to a VM86 mode task, LDTR loading needs to follow\n\t    protected mode semantics. This was violated by the code.</p>\n\t  <p>On SVM (AMD hardware): a malicious unprivileged guest process can\n\t    escalate its privilege to that of the guest operating system.</p>\n\t  <p>On both SVM and VMX (Intel hardware): a malicious unprivileged\n\t    guest process can crash the guest.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xenbits.xen.org/xsa/advisory-192.html"
-    ],
-    "cvename": [
-      "CVE-2016-9382"
-    ],
-    "freebsd_pr": [
-      "ports/214936"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-22",
-    "entry": "2016-12-04"
-  }
+	"vid": "523bb0b7-ba4d-11e6-ae1b-002590263bf5",
+	"topic": "xen-kernel -- x86 task switch to VM86 mode mis-handled",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-192.html\">\n\t  <p>LDTR, just like TR, is purely a protected mode facility. Hence even\n\t    when switching to a VM86 mode task, LDTR loading needs to follow\n\t    protected mode semantics. This was violated by the code.</p>\n\t  <p>On SVM (AMD hardware): a malicious unprivileged guest process can\n\t    escalate its privilege to that of the guest operating system.</p>\n\t  <p>On both SVM and VMX (Intel hardware): a malicious unprivileged\n\t    guest process can crash the guest.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xenbits.xen.org/xsa/advisory-192.html"
+		],
+		"cvename": [
+			"CVE-2016-9382"
+		],
+		"freebsd_pr": [
+			"ports/214936"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-22",
+		"entry": "2016-12-04"
+	}
 }

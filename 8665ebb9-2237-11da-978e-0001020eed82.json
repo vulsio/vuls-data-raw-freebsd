@@ -1,139 +1,139 @@
 {
-  "vid": "8665ebb9-2237-11da-978e-0001020eed82",
-  "topic": "firefox & mozilla -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.6_5,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.11_1,2"
-        },
-        {
-          "lt": "1.8.b1_5,2",
-          "ge": "1.8.*,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-mozillafirebird",
-        "el-linux-mozillafirebird",
-        "ja-linux-mozillafirebird-gtk1",
-        "ja-mozillafirebird-gtk2",
-        "linux-mozillafirebird",
-        "ru-linux-mozillafirebird",
-        "zhCN-linux-mozillafirebird",
-        "zhTW-linux-mozillafirebird"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "de-linux-netscape",
-        "de-netscape7",
-        "fr-linux-netscape",
-        "fr-netscape7",
-        "ja-linux-netscape",
-        "ja-netscape7",
-        "linux-netscape",
-        "linux-phoenix",
-        "mozilla+ipv6",
-        "mozilla-embedded",
-        "mozilla-firebird",
-        "mozilla-gtk1",
-        "mozilla-gtk2",
-        "mozilla-gtk",
-        "mozilla-thunderbird",
-        "phoenix",
-        "pt_BR-netscape7"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tom Ferris reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=full-disclosure&amp;m=112624614008387\">\n\t  <p>A buffer overflow vulnerability exists within Firefox\n\t    version 1.0.6 and all other prior versions which allows\n\t    for an attacker to remotely execute arbitrary code on an\n\t    affected host.</p>\n\t  <p>The problem seems to be when a hostname which has all\n\t    dashes causes the NormalizeIDN call in\n\t    nsStandardURL::BuildNormalizedSpec to return true, but is\n\t    sets encHost to an empty string.  Meaning, Firefox appends\n\t    0 to approxLen and then appends the long string of dashes\n\t    to the buffer instead.</p>\n\t</blockquote>\n\t<p><strong>Note:</strong> It is possible to disable IDN\n\t  support as a workaround to protect against this buffer\n\t  overflow. How to do this is described on the <em><a href=\"http://www.mozilla.org/security/idn.html\">What Firefox\n\t  and Mozilla users should know about the IDN buffer overflow\n\t  security issue</a></em> web page.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://marc.theaimsgroup.com/?l=full-disclosure&m=112624614008387",
-      "http://www.mozilla.org/security/idn.html",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=307259",
-      "http://www.mozilla.org/security/announce/mfsa2005-57.html"
-    ],
-    "cvename": [
-      "CVE-2005-2871"
-    ],
-    "bid": [
-      "14784"
-    ],
-    "cert_vu": [
-      "573857"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-09-08",
-    "entry": "2005-09-10",
-    "modified": "2005-10-26"
-  }
+	"vid": "8665ebb9-2237-11da-978e-0001020eed82",
+	"topic": "firefox & mozilla -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.6_5,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.11_1,2"
+				},
+				{
+					"lt": "1.8.b1_5,2",
+					"ge": "1.8.*,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-mozillafirebird",
+				"el-linux-mozillafirebird",
+				"ja-linux-mozillafirebird-gtk1",
+				"ja-mozillafirebird-gtk2",
+				"linux-mozillafirebird",
+				"ru-linux-mozillafirebird",
+				"zhCN-linux-mozillafirebird",
+				"zhTW-linux-mozillafirebird"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"de-linux-netscape",
+				"de-netscape7",
+				"fr-linux-netscape",
+				"fr-netscape7",
+				"ja-linux-netscape",
+				"ja-netscape7",
+				"linux-netscape",
+				"linux-phoenix",
+				"mozilla+ipv6",
+				"mozilla-embedded",
+				"mozilla-firebird",
+				"mozilla-gtk1",
+				"mozilla-gtk2",
+				"mozilla-gtk",
+				"mozilla-thunderbird",
+				"phoenix",
+				"pt_BR-netscape7"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tom Ferris reports:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=full-disclosure&amp;m=112624614008387\">\n\t  <p>A buffer overflow vulnerability exists within Firefox\n\t    version 1.0.6 and all other prior versions which allows\n\t    for an attacker to remotely execute arbitrary code on an\n\t    affected host.</p>\n\t  <p>The problem seems to be when a hostname which has all\n\t    dashes causes the NormalizeIDN call in\n\t    nsStandardURL::BuildNormalizedSpec to return true, but is\n\t    sets encHost to an empty string.  Meaning, Firefox appends\n\t    0 to approxLen and then appends the long string of dashes\n\t    to the buffer instead.</p>\n\t</blockquote>\n\t<p><strong>Note:</strong> It is possible to disable IDN\n\t  support as a workaround to protect against this buffer\n\t  overflow. How to do this is described on the <em><a href=\"http://www.mozilla.org/security/idn.html\">What Firefox\n\t  and Mozilla users should know about the IDN buffer overflow\n\t  security issue</a></em> web page.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://marc.theaimsgroup.com/?l=full-disclosure&m=112624614008387",
+			"http://www.mozilla.org/security/idn.html",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=307259",
+			"http://www.mozilla.org/security/announce/mfsa2005-57.html"
+		],
+		"cvename": [
+			"CVE-2005-2871"
+		],
+		"bid": [
+			"14784"
+		],
+		"cert_vu": [
+			"573857"
+		]
+	},
+	"dates": {
+		"discovery": "2005-09-08",
+		"entry": "2005-09-10",
+		"modified": "2005-10-26"
+	}
 }

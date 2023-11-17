@@ -1,29 +1,29 @@
 {
-  "vid": "c3600a64-64ea-11ea-bdff-e0d55e2a8bf9",
-  "topic": "Okular -- Local binary execution via action links",
-  "affects": [
-    {
-      "name": [
-        "okular"
-      ],
-      "range": [
-        {
-          "lt": "19.12.3_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Albert Astals Cid:</p>\n\t<blockquote cite=\"https://kde.org/info/security/advisory-20200312-1.txt\">\n\t  <p>Okular can be tricked into executing local binaries via specially crafted\n\t    PDF files.</p>\n\t  <p>This binary execution can require almost no user interaction.</p>\n\t  <p>   No parameters can be passed to those local binaries.</p>\n\t  <p>We have not been able to identify any binary that will cause actual damage,\n\t    be it in the hardware or software level, when run without parameters.</p>\n\n\t  <p>We remain relatively confident that for this issue to do any actual damage,\nit has to run a binary specially crafted. That binary must have been deployed\nto the user system via another method, be it the user downloading it directly\nas an email attachment, webpage download, etc. or by the system being already\ncompromised.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://kde.org/info/security/advisory-20200312-1.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-03-12",
-    "entry": "2020-03-13"
-  }
+	"vid": "c3600a64-64ea-11ea-bdff-e0d55e2a8bf9",
+	"topic": "Okular -- Local binary execution via action links",
+	"affects": [
+		{
+			"name": [
+				"okular"
+			],
+			"range": [
+				{
+					"lt": "19.12.3_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Albert Astals Cid:</p>\n\t<blockquote cite=\"https://kde.org/info/security/advisory-20200312-1.txt\">\n\t  <p>Okular can be tricked into executing local binaries via specially crafted\n\t    PDF files.</p>\n\t  <p>This binary execution can require almost no user interaction.</p>\n\t  <p>   No parameters can be passed to those local binaries.</p>\n\t  <p>We have not been able to identify any binary that will cause actual damage,\n\t    be it in the hardware or software level, when run without parameters.</p>\n\n\t  <p>We remain relatively confident that for this issue to do any actual damage,\nit has to run a binary specially crafted. That binary must have been deployed\nto the user system via another method, be it the user downloading it directly\nas an email attachment, webpage download, etc. or by the system being already\ncompromised.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://kde.org/info/security/advisory-20200312-1.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2020-03-12",
+		"entry": "2020-03-13"
+	}
 }

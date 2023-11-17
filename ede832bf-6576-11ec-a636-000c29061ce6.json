@@ -1,33 +1,33 @@
 {
-  "vid": "ede832bf-6576-11ec-a636-000c29061ce6",
-  "topic": "OpenDMARC - Remote denial of service",
-  "affects": [
-    {
-      "name": [
-        "opendmarc"
-      ],
-      "range": [
-        {
-          "lt": "1.4.2",
-          "ge": "1.4.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenDMARC 1.4.1 and 1.4.1.1 will dereference a NULL pointer when\n\tencountering a multi-value From: header field. A remote attacker can\n\tsend a specially crafted message resulting in a denial of service.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/trusteddomainproject/OpenDMARC/issues/179"
-    ],
-    "cvename": [
-      "CVE-2021-34555"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-06-09",
-    "entry": "2021-12-30"
-  }
+	"vid": "ede832bf-6576-11ec-a636-000c29061ce6",
+	"topic": "OpenDMARC - Remote denial of service",
+	"affects": [
+		{
+			"name": [
+				"opendmarc"
+			],
+			"range": [
+				{
+					"lt": "1.4.2",
+					"ge": "1.4.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenDMARC 1.4.1 and 1.4.1.1 will dereference a NULL pointer when\n\tencountering a multi-value From: header field. A remote attacker can\n\tsend a specially crafted message resulting in a denial of service.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/trusteddomainproject/OpenDMARC/issues/179"
+		],
+		"cvename": [
+			"CVE-2021-34555"
+		]
+	},
+	"dates": {
+		"discovery": "2021-06-09",
+		"entry": "2021-12-30"
+	}
 }

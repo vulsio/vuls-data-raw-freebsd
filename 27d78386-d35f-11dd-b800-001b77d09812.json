@@ -1,44 +1,44 @@
 {
-  "vid": "27d78386-d35f-11dd-b800-001b77d09812",
-  "topic": "awstats -- multiple XSS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "awstats"
-      ],
-      "range": [
-        {
-          "lt": "6.9,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "awstats-devel"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31519\">\n\t  <p>Morgan Todd has discovered a vulnerability in AWStats,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks.</p>\n\t  <p>Input passed in the URL to awstats.pl is not properly\n\t    sanitised before being returned to the user. This can be\n\t    exploited to execute arbitrary HTML and script code in a\n\t    user's browser session in context of an affected site.</p>\n\t  <p>Successful exploitation requires that the application is\n\t    running as a CGI script.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/31519",
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=495432"
-    ],
-    "cvename": [
-      "CVE-2008-3714",
-      "CVE-2008-5080"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-03-12",
-    "entry": "2009-01-04"
-  }
+	"vid": "27d78386-d35f-11dd-b800-001b77d09812",
+	"topic": "awstats -- multiple XSS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"awstats"
+			],
+			"range": [
+				{
+					"lt": "6.9,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"awstats-devel"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31519\">\n\t  <p>Morgan Todd has discovered a vulnerability in AWStats,\n\t    which can be exploited by malicious people to conduct\n\t    cross-site scripting attacks.</p>\n\t  <p>Input passed in the URL to awstats.pl is not properly\n\t    sanitised before being returned to the user. This can be\n\t    exploited to execute arbitrary HTML and script code in a\n\t    user's browser session in context of an affected site.</p>\n\t  <p>Successful exploitation requires that the application is\n\t    running as a CGI script.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/31519",
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=495432"
+		],
+		"cvename": [
+			"CVE-2008-3714",
+			"CVE-2008-5080"
+		]
+	},
+	"dates": {
+		"discovery": "2008-03-12",
+		"entry": "2009-01-04"
+	}
 }

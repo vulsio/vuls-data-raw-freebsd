@@ -1,30 +1,30 @@
 {
-  "vid": "31952117-3d17-11d9-8818-008088034841",
-  "topic": "Cyrus IMAPd -- APPEND command uses undefined programming construct",
-  "affects": [
-    {
-      "name": [
-        "cyrus-imapd"
-      ],
-      "range": [
-        {
-          "ge": "2.2.7",
-          "le": "2.2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>To support MULTIAPPENDS the cmd_append handler uses the\n\t  global stage array. This array is one of the things that gets\n\t  destructed when the fatal() function is triggered. When the\n\t  Cyrus IMAP code adds new entries to this array this is done\n\t  with the help of the postfix increment operator in combination\n\t  with memory allocation functions. The increment is performed\n\t  on a global variable counting the number of allocated\n\t  stages. Because the memory allocation function can fail and\n\t  therefore internally call fatal() this construct is undefined\n\t  arcording to ANSI C. This means that it is not clearly defined\n\t  if the numstage counter is already increased when fatal() is\n\t  called or not. While older gcc versions increase the counter\n\t  after the memory allocation function has returned, on newer\n\t  gcc versions (3.x) the counter gets actually increased\n\t  before. In such a case the stage destructing process will try\n\t  to free an uninitialised and maybe attacker supplied\n\t  pointer. Which again could lead to remote code\n\t  execution. (Because it is hard for an attacker to let the\n\t  memory allocation functions fail in the right moment no PoC\n\t  code for this problem was designed)</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://security.e-matters.de/advisories/152004.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-11-06",
-    "entry": "2004-11-22"
-  }
+	"vid": "31952117-3d17-11d9-8818-008088034841",
+	"topic": "Cyrus IMAPd -- APPEND command uses undefined programming construct",
+	"affects": [
+		{
+			"name": [
+				"cyrus-imapd"
+			],
+			"range": [
+				{
+					"ge": "2.2.7",
+					"le": "2.2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>To support MULTIAPPENDS the cmd_append handler uses the\n\t  global stage array. This array is one of the things that gets\n\t  destructed when the fatal() function is triggered. When the\n\t  Cyrus IMAP code adds new entries to this array this is done\n\t  with the help of the postfix increment operator in combination\n\t  with memory allocation functions. The increment is performed\n\t  on a global variable counting the number of allocated\n\t  stages. Because the memory allocation function can fail and\n\t  therefore internally call fatal() this construct is undefined\n\t  arcording to ANSI C. This means that it is not clearly defined\n\t  if the numstage counter is already increased when fatal() is\n\t  called or not. While older gcc versions increase the counter\n\t  after the memory allocation function has returned, on newer\n\t  gcc versions (3.x) the counter gets actually increased\n\t  before. In such a case the stage destructing process will try\n\t  to free an uninitialised and maybe attacker supplied\n\t  pointer. Which again could lead to remote code\n\t  execution. (Because it is hard for an attacker to let the\n\t  memory allocation functions fail in the right moment no PoC\n\t  code for this problem was designed)</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://security.e-matters.de/advisories/152004.html"
+		]
+	},
+	"dates": {
+		"discovery": "2004-11-06",
+		"entry": "2004-11-22"
+	}
 }

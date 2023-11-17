@@ -1,56 +1,56 @@
 {
-  "vid": "0792e7a7-8e37-11d8-90d1-0020ed76ef5a",
-  "topic": "CVS path validation errors",
-  "affects": [
-    {
-      "name": [
-        "cvs+ipv6"
-      ],
-      "range": [
-        {
-          "le": "1.11.5_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.2.1_5",
-          "ge": "5.2"
-        },
-        {
-          "lt": "4.9_5",
-          "ge": "4.9"
-        },
-        {
-          "lt": "4.8_18",
-          "ge": "4.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Two programming errors were discovered in which path names\n\t  handled by CVS were not properly validated.  In one case,\n\t  the CVS client accepts absolute path names from the server\n\t  when determining which files to update.  In another case,\n\t  the CVS server accepts relative path names from the client\n\t  when determining which files to transmit, including those\n\t  containing references to parent directories (`../').</p>\n\t<p>These programming errors generally only have a security\n\t  impact when dealing with remote CVS repositories.</p>\n\t<p>A malicious CVS server may cause a CVS client to overwrite\n\t  arbitrary files on the client's system.</p>\n\t<p>A CVS client may request RCS files from a remote system\n\t  other than those in the repository specified by $CVSROOT.\n\t  These RCS files need not be part of any CVS repository\n\t  themselves.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://ccvs.cvshome.org/servlets/NewsItemView?newsID=102"
-    ],
-    "cvename": [
-      "CVE-2004-0180",
-      "CVE-2004-0405"
-    ],
-    "freebsd_sa": [
-      "SA-04:07.cvs"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-04-14",
-    "entry": "2004-04-14",
-    "modified": "2004-05-05"
-  }
+	"vid": "0792e7a7-8e37-11d8-90d1-0020ed76ef5a",
+	"topic": "CVS path validation errors",
+	"affects": [
+		{
+			"name": [
+				"cvs+ipv6"
+			],
+			"range": [
+				{
+					"le": "1.11.5_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.2.1_5",
+					"ge": "5.2"
+				},
+				{
+					"lt": "4.9_5",
+					"ge": "4.9"
+				},
+				{
+					"lt": "4.8_18",
+					"ge": "4.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Two programming errors were discovered in which path names\n\t  handled by CVS were not properly validated.  In one case,\n\t  the CVS client accepts absolute path names from the server\n\t  when determining which files to update.  In another case,\n\t  the CVS server accepts relative path names from the client\n\t  when determining which files to transmit, including those\n\t  containing references to parent directories (`../').</p>\n\t<p>These programming errors generally only have a security\n\t  impact when dealing with remote CVS repositories.</p>\n\t<p>A malicious CVS server may cause a CVS client to overwrite\n\t  arbitrary files on the client's system.</p>\n\t<p>A CVS client may request RCS files from a remote system\n\t  other than those in the repository specified by $CVSROOT.\n\t  These RCS files need not be part of any CVS repository\n\t  themselves.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://ccvs.cvshome.org/servlets/NewsItemView?newsID=102"
+		],
+		"cvename": [
+			"CVE-2004-0180",
+			"CVE-2004-0405"
+		],
+		"freebsd_sa": [
+			"SA-04:07.cvs"
+		]
+	},
+	"dates": {
+		"discovery": "2004-04-14",
+		"entry": "2004-04-14",
+		"modified": "2004-05-05"
+	}
 }

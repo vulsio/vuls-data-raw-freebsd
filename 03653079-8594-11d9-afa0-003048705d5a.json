@@ -1,34 +1,34 @@
 {
-  "vid": "03653079-8594-11d9-afa0-003048705d5a",
-  "topic": "phpbb -- multiple information disclosure vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "phpbb"
-      ],
-      "range": [
-        {
-          "lt": "2.0.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>psoTFX reports:</p>\n\t<blockquote cite=\"http://www.phpbb.com/phpBB/viewtopic.php?f=14&amp;t=265423\">\n\t  <p>phpBB Group are pleased to announce the release of phpBB\n\t    2.0.12 the \"Horray for Furrywood\" release. This release\n\t    addresses a number of bugs and a couple of potential\n\t    exploits.  [...] one of the potential exploits addressed\n\t    in this release could be serious in certain situations and\n\t    thus we urge all users, as always, to upgrade to this\n\t    release as soon as possible. Mostly this release is\n\t    concerned with eliminating disclosures of information\n\t    which while useful in debug situations may allow third\n\t    parties to gain information which could be used to do harm\n\t    via unknown or unfixed exploits in this or other\n\t    applications.</p>\n\t</blockquote>\n\t<p>The ChangeLog for phpBB 2.0.12 states:</p>\n\t<blockquote cite=\"http://www.phpbb.com/support/documents.php?mode=changelog\">\n\t  <ul>\n\t    <li>Prevented full path display on critical messages</li>\n\t    <li>Fixed full path disclosure in username handling caused\n\t      by a PHP 4.3.10 bug - <strong>AnthraX101</strong></li>\n\t    <li>Added exclude list to unsetting globals (if\n\t      register_globals is on) -\n\t      <strong>SpoofedExistence</strong></li>\n\t    <li>Fixed arbitrary file disclosure vulnerability in avatar\n\t      handling functions - <strong>AnthraX101</strong></li>\n\t    <li>Fixed arbitrary file unlink vulnerability in avatar\n\t      handling functions - <strong>AnthraX101</strong></li>\n\t    <li>Fixed path disclosure bug in search.php caused by a\n\t      PHP 4.3.10 bug (related to AnthraX101's discovery)</li>\n\t    <li>Fixed path disclosure bug in viewtopic.php caused by\n\t      a PHP 4.3.10 bug - <strong>matrix_killer</strong></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpbb.com/support/documents.php?mode=changelog",
-      "http://www.phpbb.com/phpBB/viewtopic.php?f=14&t=265423"
-    ],
-    "freebsd_pr": [
-      "ports/77943"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-22",
-    "entry": "2005-02-23",
-    "modified": "2005-02-25"
-  }
+	"vid": "03653079-8594-11d9-afa0-003048705d5a",
+	"topic": "phpbb -- multiple information disclosure vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpbb"
+			],
+			"range": [
+				{
+					"lt": "2.0.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>psoTFX reports:</p>\n\t<blockquote cite=\"http://www.phpbb.com/phpBB/viewtopic.php?f=14&amp;t=265423\">\n\t  <p>phpBB Group are pleased to announce the release of phpBB\n\t    2.0.12 the \"Horray for Furrywood\" release. This release\n\t    addresses a number of bugs and a couple of potential\n\t    exploits.  [...] one of the potential exploits addressed\n\t    in this release could be serious in certain situations and\n\t    thus we urge all users, as always, to upgrade to this\n\t    release as soon as possible. Mostly this release is\n\t    concerned with eliminating disclosures of information\n\t    which while useful in debug situations may allow third\n\t    parties to gain information which could be used to do harm\n\t    via unknown or unfixed exploits in this or other\n\t    applications.</p>\n\t</blockquote>\n\t<p>The ChangeLog for phpBB 2.0.12 states:</p>\n\t<blockquote cite=\"http://www.phpbb.com/support/documents.php?mode=changelog\">\n\t  <ul>\n\t    <li>Prevented full path display on critical messages</li>\n\t    <li>Fixed full path disclosure in username handling caused\n\t      by a PHP 4.3.10 bug - <strong>AnthraX101</strong></li>\n\t    <li>Added exclude list to unsetting globals (if\n\t      register_globals is on) -\n\t      <strong>SpoofedExistence</strong></li>\n\t    <li>Fixed arbitrary file disclosure vulnerability in avatar\n\t      handling functions - <strong>AnthraX101</strong></li>\n\t    <li>Fixed arbitrary file unlink vulnerability in avatar\n\t      handling functions - <strong>AnthraX101</strong></li>\n\t    <li>Fixed path disclosure bug in search.php caused by a\n\t      PHP 4.3.10 bug (related to AnthraX101's discovery)</li>\n\t    <li>Fixed path disclosure bug in viewtopic.php caused by\n\t      a PHP 4.3.10 bug - <strong>matrix_killer</strong></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpbb.com/support/documents.php?mode=changelog",
+			"http://www.phpbb.com/phpBB/viewtopic.php?f=14&t=265423"
+		],
+		"freebsd_pr": [
+			"ports/77943"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-22",
+		"entry": "2005-02-23",
+		"modified": "2005-02-25"
+	}
 }

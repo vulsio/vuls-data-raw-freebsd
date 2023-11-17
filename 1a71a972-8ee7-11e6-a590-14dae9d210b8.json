@@ -1,42 +1,42 @@
 {
-  "vid": "1a71a972-8ee7-11e6-a590-14dae9d210b8",
-  "topic": "FreeBSD -- Multiple libarchive vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.0_1",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.3_10",
-          "ge": "10.3"
-        },
-        {
-          "lt": "10.2_23",
-          "ge": "10.2"
-        },
-        {
-          "lt": "10.1_40",
-          "ge": "10.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Flaws in libarchive's handling of symlinks and hard links\n\tallow overwriting files outside the extraction directory,\n\tor permission changes to a directory outside the extraction\n\tdirectory.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can control freebsd-update's or portsnap's\n\tinput to tar(1) can change file content or permissions on\n\tfiles outside of the update tool's working sandbox.</p>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-16:31.libarchive"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-10-05",
-    "entry": "2016-10-10"
-  }
+	"vid": "1a71a972-8ee7-11e6-a590-14dae9d210b8",
+	"topic": "FreeBSD -- Multiple libarchive vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.0_1",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.3_10",
+					"ge": "10.3"
+				},
+				{
+					"lt": "10.2_23",
+					"ge": "10.2"
+				},
+				{
+					"lt": "10.1_40",
+					"ge": "10.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Flaws in libarchive's handling of symlinks and hard links\n\tallow overwriting files outside the extraction directory,\n\tor permission changes to a directory outside the extraction\n\tdirectory.</p>\n\t<h1>Impact:</h1>\n\t<p>An attacker who can control freebsd-update's or portsnap's\n\tinput to tar(1) can change file content or permissions on\n\tfiles outside of the update tool's working sandbox.</p>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-16:31.libarchive"
+		]
+	},
+	"dates": {
+		"discovery": "2016-10-05",
+		"entry": "2016-10-10"
+	}
 }

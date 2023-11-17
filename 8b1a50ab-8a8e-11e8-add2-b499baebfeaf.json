@@ -1,33 +1,33 @@
 {
-  "vid": "8b1a50ab-8a8e-11e8-add2-b499baebfeaf",
-  "topic": "Apache httpd -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "apache24"
-      ],
-      "range": [
-        {
-          "lt": "2.4.34"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache project reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <ul>\n\t    <li>DoS for HTTP/2 connections by crafted requests\n\t      (CVE-2018-1333). By specially crafting HTTP/2 requests, workers\n\t      would be allocated 60 seconds longer than necessary, leading to\n\t      worker exhaustion and a denial of service. (low)</li>\n\t    <li>mod_md, DoS via Coredumps on specially crafted requests\n\t      (CVE-2018-8011). By specially crafting HTTP requests, the mod_md\n\t      challenge handler would dereference a NULL pointer and cause the\n\t      child process to segfault. This could be used to DoS the server.\n\t      (moderate)</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://httpd.apache.org/security/vulnerabilities_24.html"
-    ],
-    "cvename": [
-      "CVE-2018-1333",
-      "CVE-2018-8011"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-07-18",
-    "entry": "2018-07-18"
-  }
+	"vid": "8b1a50ab-8a8e-11e8-add2-b499baebfeaf",
+	"topic": "Apache httpd -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"apache24"
+			],
+			"range": [
+				{
+					"lt": "2.4.34"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache project reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <ul>\n\t    <li>DoS for HTTP/2 connections by crafted requests\n\t      (CVE-2018-1333). By specially crafting HTTP/2 requests, workers\n\t      would be allocated 60 seconds longer than necessary, leading to\n\t      worker exhaustion and a denial of service. (low)</li>\n\t    <li>mod_md, DoS via Coredumps on specially crafted requests\n\t      (CVE-2018-8011). By specially crafting HTTP requests, the mod_md\n\t      challenge handler would dereference a NULL pointer and cause the\n\t      child process to segfault. This could be used to DoS the server.\n\t      (moderate)</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://httpd.apache.org/security/vulnerabilities_24.html"
+		],
+		"cvename": [
+			"CVE-2018-1333",
+			"CVE-2018-8011"
+		]
+	},
+	"dates": {
+		"discovery": "2018-07-18",
+		"entry": "2018-07-18"
+	}
 }

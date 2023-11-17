@@ -1,42 +1,42 @@
 {
-  "vid": "c9c14242-6843-11dc-82b6-02e0185f8d72",
-  "topic": "mediawiki -- cross site scripting vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mediawiki"
-      ],
-      "range": [
-        {
-          "lt": "1.10.2",
-          "gt": "1.10.0"
-        },
-        {
-          "lt": "1.9.4",
-          "gt": "1.9.0"
-        },
-        {
-          "lt": "1.8.5",
-          "gt": "1.8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The MediaWiki development team reports:</p>\n\t<blockquote cite=\"http://lists.wikimedia.org/pipermail/mediawiki-announce/2007-September/000067.html\">\n\t  <p>A possible HTML/XSS injection vector in the API\n\t    pretty-printing mode has been found and fixed.</p>\n\t  <p>The vulnerability may be worked around in an unfixed version\n\t    by simply disabling the API interface if it is not in use, by\n\t    adding this to LocalSettings.php:</p>\n\t  <p>$wgEnableAPI = false;</p>\n\t  <p>(This is the default setting in 1.8.x.)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.wikimedia.org/pipermail/mediawiki-announce/2007-September/000067.html"
-    ],
-    "cvename": [
-      "CVE-2007-4828"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-09-10",
-    "entry": "2007-09-21",
-    "modified": "2007-10-10"
-  }
+	"vid": "c9c14242-6843-11dc-82b6-02e0185f8d72",
+	"topic": "mediawiki -- cross site scripting vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mediawiki"
+			],
+			"range": [
+				{
+					"lt": "1.10.2",
+					"gt": "1.10.0"
+				},
+				{
+					"lt": "1.9.4",
+					"gt": "1.9.0"
+				},
+				{
+					"lt": "1.8.5",
+					"gt": "1.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The MediaWiki development team reports:</p>\n\t<blockquote cite=\"http://lists.wikimedia.org/pipermail/mediawiki-announce/2007-September/000067.html\">\n\t  <p>A possible HTML/XSS injection vector in the API\n\t    pretty-printing mode has been found and fixed.</p>\n\t  <p>The vulnerability may be worked around in an unfixed version\n\t    by simply disabling the API interface if it is not in use, by\n\t    adding this to LocalSettings.php:</p>\n\t  <p>$wgEnableAPI = false;</p>\n\t  <p>(This is the default setting in 1.8.x.)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.wikimedia.org/pipermail/mediawiki-announce/2007-September/000067.html"
+		],
+		"cvename": [
+			"CVE-2007-4828"
+		]
+	},
+	"dates": {
+		"discovery": "2007-09-10",
+		"entry": "2007-09-21",
+		"modified": "2007-10-10"
+	}
 }

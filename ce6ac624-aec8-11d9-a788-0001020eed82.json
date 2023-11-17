@@ -1,44 +1,44 @@
 {
-  "vid": "ce6ac624-aec8-11d9-a788-0001020eed82",
-  "topic": "firefox -- PLUGINSPAGE privileged javascript execution",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "1.0.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-34.html\">\n\t  <p>When a webpage requires a plugin that is not installed\n\t    the user can click to launch the Plugin Finder Service\n\t    (PFS) to find an appropriate plugin. If the service does\n\t    not have an appropriate plugin the EMBED tag is checked\n\t    for a PLUGINSPAGE attribute, and if one is found the PFS\n\t    dialog will contain a \"manual install\" button that will\n\t    load the PLUGINSPAGE url.</p>\n\t  <p>Omar Khan reported that if the PLUGINSPAGE attribute\n\t    contains a javascript: url then pressing the button could\n\t    launch arbitrary code capable of stealing local data or\n\t    installing malicious code.</p>\n\t  <p>Doron Rosenberg reported a variant that injects script by\n\t    appending it to a malformed URL of any protocol.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mozilla.org/security/announce/mfsa2005-34.html",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=288556",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=289171"
-    ],
-    "cvename": [
-      "CVE-2005-0752"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-03-31",
-    "entry": "2005-04-16"
-  }
+	"vid": "ce6ac624-aec8-11d9-a788-0001020eed82",
+	"topic": "firefox -- PLUGINSPAGE privileged javascript execution",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "1.0.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A Mozilla Foundation Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.mozilla.org/security/announce/mfsa2005-34.html\">\n\t  <p>When a webpage requires a plugin that is not installed\n\t    the user can click to launch the Plugin Finder Service\n\t    (PFS) to find an appropriate plugin. If the service does\n\t    not have an appropriate plugin the EMBED tag is checked\n\t    for a PLUGINSPAGE attribute, and if one is found the PFS\n\t    dialog will contain a \"manual install\" button that will\n\t    load the PLUGINSPAGE url.</p>\n\t  <p>Omar Khan reported that if the PLUGINSPAGE attribute\n\t    contains a javascript: url then pressing the button could\n\t    launch arbitrary code capable of stealing local data or\n\t    installing malicious code.</p>\n\t  <p>Doron Rosenberg reported a variant that injects script by\n\t    appending it to a malformed URL of any protocol.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mozilla.org/security/announce/mfsa2005-34.html",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=288556",
+			"https://bugzilla.mozilla.org/show_bug.cgi?id=289171"
+		],
+		"cvename": [
+			"CVE-2005-0752"
+		]
+	},
+	"dates": {
+		"discovery": "2005-03-31",
+		"entry": "2005-04-16"
+	}
 }

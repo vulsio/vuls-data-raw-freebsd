@@ -1,46 +1,46 @@
 {
-  "vid": "76700d2f-d959-11ea-b53c-d4c9ef517024",
-  "topic": "Apache httpd -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "apache24"
-      ],
-      "range": [
-        {
-          "lt": "2.4.46"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_http2"
-      ],
-      "range": [
-        {
-          "lt": "1.15.14"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache httpd projec reports:</p>\n\t<blockquote cite=\"https://downloads.apache.org/httpd/CHANGES_2.4.46\">\n\t  <ul>\n\t    <li>mod_http2: Important:  Push Diary Crash on Specifically\n\t      Crafted HTTP/2 Header (CVE-2020-9490)<br/>\n\t      A specially crafted value for the 'Cache-Digest' header in a HTTP/2\n\t      request would result in a crash when the server actually tries to\n\t      HTTP/2 PUSH a resource afterwards.</li>\n\t    <li>mod_proxy_uwsgi: Moderate: mod_proxy_uwsgi buffer overflow\n\t      (CVE-2020-11984)<br/>\n\t      info disclosure and possible RCE</li>\n\t    <li>mod_http2: Moderate: Push Diary Crash on Specifically Crafted\n\t      HTTP/2 Header (CVE-2020-11993)<br/>\n\t      When trace/debug was enabled for the HTTP/2 module and on certain\n\t      traffic edge patterns, logging statements were made on the wrong\n\t      connection, causing concurrent use of memory pools.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://downloads.apache.org/httpd/CHANGES_2.4.46",
-      "https://httpd.apache.org/security/vulnerabilities_24.html"
-    ],
-    "cvename": [
-      "CVE-2020-9490",
-      "CVE-2020-11984",
-      "CVE-2020-11993"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-08-07",
-    "entry": "2020-08-08",
-    "modified": "2020-08-08"
-  }
+	"vid": "76700d2f-d959-11ea-b53c-d4c9ef517024",
+	"topic": "Apache httpd -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"apache24"
+			],
+			"range": [
+				{
+					"lt": "2.4.46"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_http2"
+			],
+			"range": [
+				{
+					"lt": "1.15.14"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache httpd projec reports:</p>\n\t<blockquote cite=\"https://downloads.apache.org/httpd/CHANGES_2.4.46\">\n\t  <ul>\n\t    <li>mod_http2: Important:  Push Diary Crash on Specifically\n\t      Crafted HTTP/2 Header (CVE-2020-9490)<br/>\n\t      A specially crafted value for the 'Cache-Digest' header in a HTTP/2\n\t      request would result in a crash when the server actually tries to\n\t      HTTP/2 PUSH a resource afterwards.</li>\n\t    <li>mod_proxy_uwsgi: Moderate: mod_proxy_uwsgi buffer overflow\n\t      (CVE-2020-11984)<br/>\n\t      info disclosure and possible RCE</li>\n\t    <li>mod_http2: Moderate: Push Diary Crash on Specifically Crafted\n\t      HTTP/2 Header (CVE-2020-11993)<br/>\n\t      When trace/debug was enabled for the HTTP/2 module and on certain\n\t      traffic edge patterns, logging statements were made on the wrong\n\t      connection, causing concurrent use of memory pools.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://downloads.apache.org/httpd/CHANGES_2.4.46",
+			"https://httpd.apache.org/security/vulnerabilities_24.html"
+		],
+		"cvename": [
+			"CVE-2020-9490",
+			"CVE-2020-11984",
+			"CVE-2020-11993"
+		]
+	},
+	"dates": {
+		"discovery": "2020-08-07",
+		"entry": "2020-08-08",
+		"modified": "2020-08-08"
+	}
 }

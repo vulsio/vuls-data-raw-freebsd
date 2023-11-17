@@ -1,34 +1,34 @@
 {
-  "vid": "a47af810-3a17-11e1-a1be-00e0815b8da8",
-  "topic": "spamdyke -- STARTTLS Plaintext Injection Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "spamdyke"
-      ],
-      "range": [
-        {
-          "lt": "4.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/47435/\">\n\t  <p>The vulnerability is caused due to the TLS implementation not\n\t    properly clearing transport layer buffers when upgrading from\n\t    plaintext to ciphertext after receiving the \"STARTTLS\" command.\n\t    This can be exploited to insert arbitrary plaintext data (e.g.\n\t    SMTP commands) during the plaintext phase, which will then be\n\t    executed after upgrading to the TLS ciphertext phase.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/47435/",
-      "http://www.spamdyke.org/documentation/Changelog.txt"
-    ],
-    "cvename": [
-      "CVE-2012-0070"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-01-04",
-    "entry": "2012-01-08",
-    "modified": "2012-01-23"
-  }
+	"vid": "a47af810-3a17-11e1-a1be-00e0815b8da8",
+	"topic": "spamdyke -- STARTTLS Plaintext Injection Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"spamdyke"
+			],
+			"range": [
+				{
+					"lt": "4.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/47435/\">\n\t  <p>The vulnerability is caused due to the TLS implementation not\n\t    properly clearing transport layer buffers when upgrading from\n\t    plaintext to ciphertext after receiving the \"STARTTLS\" command.\n\t    This can be exploited to insert arbitrary plaintext data (e.g.\n\t    SMTP commands) during the plaintext phase, which will then be\n\t    executed after upgrading to the TLS ciphertext phase.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/47435/",
+			"http://www.spamdyke.org/documentation/Changelog.txt"
+		],
+		"cvename": [
+			"CVE-2012-0070"
+		]
+	},
+	"dates": {
+		"discovery": "2012-01-04",
+		"entry": "2012-01-08",
+		"modified": "2012-01-23"
+	}
 }

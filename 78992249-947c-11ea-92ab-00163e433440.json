@@ -1,41 +1,41 @@
 {
-  "vid": "78992249-947c-11ea-92ab-00163e433440",
-  "topic": "FreeBSD -- Memory disclosure vulnerability in libalias",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.1_5",
-          "ge": "12.1"
-        },
-        {
-          "lt": "11.4_1",
-          "ge": "11.4"
-        },
-        {
-          "lt": "11.3_9",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The FTP packet handler in libalias incorrectly calculates some packet\n\tlengths.  This may result in disclosing small amounts of memory from the\n\tkernel (for the in-kernel NAT implementation) or from the process space for\n\tnatd (for the userspace implementation).</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious attacker could send specially constructed packets that exploit the\n\terroneous calculation allowing the attacker to disclose small amount of memory\n\teither from the kernel (for the in-kernel NAT implementation) or from the\n\tprocess space for natd (for the userspace implementation).</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2020-7455"
-    ],
-    "freebsd_sa": [
-      "SA-20:13.libalias"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-05-12",
-    "entry": "2020-05-12"
-  }
+	"vid": "78992249-947c-11ea-92ab-00163e433440",
+	"topic": "FreeBSD -- Memory disclosure vulnerability in libalias",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.1_5",
+					"ge": "12.1"
+				},
+				{
+					"lt": "11.4_1",
+					"ge": "11.4"
+				},
+				{
+					"lt": "11.3_9",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The FTP packet handler in libalias incorrectly calculates some packet\n\tlengths.  This may result in disclosing small amounts of memory from the\n\tkernel (for the in-kernel NAT implementation) or from the process space for\n\tnatd (for the userspace implementation).</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious attacker could send specially constructed packets that exploit the\n\terroneous calculation allowing the attacker to disclose small amount of memory\n\teither from the kernel (for the in-kernel NAT implementation) or from the\n\tprocess space for natd (for the userspace implementation).</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2020-7455"
+		],
+		"freebsd_sa": [
+			"SA-20:13.libalias"
+		]
+	},
+	"dates": {
+		"discovery": "2020-05-12",
+		"entry": "2020-05-12"
+	}
 }

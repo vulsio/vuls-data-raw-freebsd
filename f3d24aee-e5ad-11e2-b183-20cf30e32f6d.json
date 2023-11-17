@@ -1,76 +1,76 @@
 {
-  "vid": "f3d24aee-e5ad-11e2-b183-20cf30e32f6d",
-  "topic": "apache22 -- several vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "apache22"
-      ],
-      "range": [
-        {
-          "lt": "2.2.25",
-          "gt": "2.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22-event-mpm"
-      ],
-      "range": [
-        {
-          "lt": "2.2.25",
-          "gt": "2.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22-itk-mpm"
-      ],
-      "range": [
-        {
-          "lt": "2.2.25",
-          "gt": "2.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22-peruser-mpm"
-      ],
-      "range": [
-        {
-          "lt": "2.2.25",
-          "gt": "2.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache22-worker-mpm"
-      ],
-      "range": [
-        {
-          "lt": "2.2.25",
-          "gt": "2.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://www.apache.org/dist/httpd/CHANGES_2.2.25\">\n\t  <p>The mod_rewrite module in the Apache HTTP Server 2.2.x before\n\t    2.2.25 writes data to a log file without sanitizing\n\t    non-printable characters, which might allow remote attackers to\n\t    execute arbitrary commands via an HTTP request containing an\n\t    escape sequence for a terminal emulator.</p>\n\t  <p>mod_dav: Sending a MERGE request against a URI handled by\n\t    mod_dav_svn with the source href (sent as part of the request\n\t    body as XML) pointing to a URI that is not configured for DAV\n\t    will trigger a segfault.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2013-1862",
-      "CVE-2013-1896"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-06-21",
-    "entry": "2013-07-05",
-    "modified": "2013-07-10"
-  }
+	"vid": "f3d24aee-e5ad-11e2-b183-20cf30e32f6d",
+	"topic": "apache22 -- several vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"apache22"
+			],
+			"range": [
+				{
+					"lt": "2.2.25",
+					"gt": "2.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22-event-mpm"
+			],
+			"range": [
+				{
+					"lt": "2.2.25",
+					"gt": "2.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22-itk-mpm"
+			],
+			"range": [
+				{
+					"lt": "2.2.25",
+					"gt": "2.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22-peruser-mpm"
+			],
+			"range": [
+				{
+					"lt": "2.2.25",
+					"gt": "2.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache22-worker-mpm"
+			],
+			"range": [
+				{
+					"lt": "2.2.25",
+					"gt": "2.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Apache HTTP SERVER PROJECT reports:</h1>\n\t<blockquote cite=\"http://www.apache.org/dist/httpd/CHANGES_2.2.25\">\n\t  <p>The mod_rewrite module in the Apache HTTP Server 2.2.x before\n\t    2.2.25 writes data to a log file without sanitizing\n\t    non-printable characters, which might allow remote attackers to\n\t    execute arbitrary commands via an HTTP request containing an\n\t    escape sequence for a terminal emulator.</p>\n\t  <p>mod_dav: Sending a MERGE request against a URI handled by\n\t    mod_dav_svn with the source href (sent as part of the request\n\t    body as XML) pointing to a URI that is not configured for DAV\n\t    will trigger a segfault.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2013-1862",
+			"CVE-2013-1896"
+		]
+	},
+	"dates": {
+		"discovery": "2013-06-21",
+		"entry": "2013-07-05",
+		"modified": "2013-07-10"
+	}
 }

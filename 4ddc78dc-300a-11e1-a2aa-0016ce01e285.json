@@ -1,60 +1,60 @@
 {
-  "vid": "4ddc78dc-300a-11e1-a2aa-0016ce01e285",
-  "topic": "krb5-appl -- telnetd code execution vulnerability",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.3_9",
-          "ge": "7.3"
-        },
-        {
-          "lt": "7.4_5",
-          "ge": "7.4"
-        },
-        {
-          "lt": "8.1_7",
-          "ge": "8.1"
-        },
-        {
-          "lt": "8.2_5",
-          "ge": "8.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "krb5-appl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The MIT Kerberos Team reports:</p>\n\t<blockquote cite=\"http://security.FreeBSD.org/advisories/FreeBSD-SA-11:08.telnetd.asc\">\n\t  <p>When an encryption key is supplied via the TELNET protocol,\n\t    its length is not validated before the key is copied into a\n\t    fixed-size buffer. Also see MITKRB5-SA-2011-008.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://security.FreeBSD.org/advisories/FreeBSD-SA-11:08.telnetd.asc",
-      "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-008.txt"
-    ],
-    "cvename": [
-      "CVE-2011-4862"
-    ],
-    "freebsd_sa": [
-      "SA-11:08.telnetd"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-12-23",
-    "entry": "2011-12-26",
-    "modified": "2012-01-29"
-  }
+	"vid": "4ddc78dc-300a-11e1-a2aa-0016ce01e285",
+	"topic": "krb5-appl -- telnetd code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.3_9",
+					"ge": "7.3"
+				},
+				{
+					"lt": "7.4_5",
+					"ge": "7.4"
+				},
+				{
+					"lt": "8.1_7",
+					"ge": "8.1"
+				},
+				{
+					"lt": "8.2_5",
+					"ge": "8.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"krb5-appl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The MIT Kerberos Team reports:</p>\n\t<blockquote cite=\"http://security.FreeBSD.org/advisories/FreeBSD-SA-11:08.telnetd.asc\">\n\t  <p>When an encryption key is supplied via the TELNET protocol,\n\t    its length is not validated before the key is copied into a\n\t    fixed-size buffer. Also see MITKRB5-SA-2011-008.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://security.FreeBSD.org/advisories/FreeBSD-SA-11:08.telnetd.asc",
+			"http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-008.txt"
+		],
+		"cvename": [
+			"CVE-2011-4862"
+		],
+		"freebsd_sa": [
+			"SA-11:08.telnetd"
+		]
+	},
+	"dates": {
+		"discovery": "2011-12-23",
+		"entry": "2011-12-26",
+		"modified": "2012-01-29"
+	}
 }

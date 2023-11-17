@@ -1,35 +1,35 @@
 {
-  "vid": "c6e31869-f99f-11e4-9f91-6805ca0b3d42",
-  "topic": "phpMyAdmin -- XSRF and man-in-the-middle vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "4.4.6.1",
-          "ge": "4.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2015-2.php\">\n\t  <p>XSRF/CSRF vulnerability in phpMyAdmin setup.</p>\n\t  <p>By deceiving a user to click on a crafted URL, it is\n\t    possible to alter the configuration file being generated\n\t    with phpMyAdmin setup.</p>\n\t  <p>This vulnerability only affects the configuration file\n\t    generation process and does not affect the effective\n\t    configuration file. Moreover, the configuration file being\n\t    generated is at risk only during the period when it's\n\t    writable.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2015-3.php\">\n\t  <p> Vulnerability allowing man-in-the-middle attack on API\n\t    call to GitHub.</p>\n\t  <p>A vulnerability in the API call to GitHub can be\n\t    exploited to perform a man-in-the-middle attack.</p>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2015-2.php",
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2015-3.php"
-    ],
-    "cvename": [
-      "CVE-2015-3902",
-      "CVE-2015-3903"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-05-13",
-    "entry": "2015-05-13"
-  }
+	"vid": "c6e31869-f99f-11e4-9f91-6805ca0b3d42",
+	"topic": "phpMyAdmin -- XSRF and man-in-the-middle vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "4.4.6.1",
+					"ge": "4.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2015-2.php\">\n\t  <p>XSRF/CSRF vulnerability in phpMyAdmin setup.</p>\n\t  <p>By deceiving a user to click on a crafted URL, it is\n\t    possible to alter the configuration file being generated\n\t    with phpMyAdmin setup.</p>\n\t  <p>This vulnerability only affects the configuration file\n\t    generation process and does not affect the effective\n\t    configuration file. Moreover, the configuration file being\n\t    generated is at risk only during the period when it's\n\t    writable.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2015-3.php\">\n\t  <p> Vulnerability allowing man-in-the-middle attack on API\n\t    call to GitHub.</p>\n\t  <p>A vulnerability in the API call to GitHub can be\n\t    exploited to perform a man-in-the-middle attack.</p>\n\t  <p>We consider this vulnerability to be serious.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2015-2.php",
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2015-3.php"
+		],
+		"cvename": [
+			"CVE-2015-3902",
+			"CVE-2015-3903"
+		]
+	},
+	"dates": {
+		"discovery": "2015-05-13",
+		"entry": "2015-05-13"
+	}
 }

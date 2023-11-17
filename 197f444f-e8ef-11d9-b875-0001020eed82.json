@@ -1,59 +1,59 @@
 {
-  "vid": "197f444f-e8ef-11d9-b875-0001020eed82",
-  "topic": "bzip2 -- denial of service and permission race vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.4_3",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.3_17",
-          "ge": "5.0"
-        },
-        {
-          "lt": "4.11_11",
-          "ge": "4.11"
-        },
-        {
-          "lt": "4.10_16"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bzip2"
-      ],
-      "range": [
-        {
-          "lt": "1.0.3_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description</h1>\n\t<p>Two problems have been discovered relating to the\n\t  extraction of bzip2-compressed files.  First, a carefully\n\t  constructed invalid bzip2 archive can cause bzip2 to enter\n\t  an infinite loop.  Second, when creating a new file, bzip2\n\t  closes the file before setting its permissions.</p>\n\t<h1>Impact</h1>\n\t<p>The first problem can cause bzip2 to extract a bzip2\n\t  archive to an infinitely large file.\tIf bzip2 is used in\n\t  automated processing of untrusted files this could be\n\t  exploited by an attacker to create an denial-of-service\n\t  situation by exhausting disk space or by consuming all\n\t  available cpu time.</p>\n\t<p>The second problem can allow a local attacker to change the\n\t  permissions of local files owned by the user executing bzip2\n\t  providing that they have write access to the directory in\n\t  which the file is being extracted.</p>\n\t<h1>Workaround</h1>\n\t<p>Do not uncompress bzip2 archives from untrusted sources and\n\t  do not uncompress files in directories where untrusted users\n\t  have write access.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://scary.beasts.org/security/CESA-2005-002.txt"
-    ],
-    "cvename": [
-      "CVE-2005-0953",
-      "CVE-2005-1260"
-    ],
-    "freebsd_sa": [
-      "SA-05:14.bzip2"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-03-30",
-    "entry": "2005-06-29",
-    "modified": "2016-08-09"
-  }
+	"vid": "197f444f-e8ef-11d9-b875-0001020eed82",
+	"topic": "bzip2 -- denial of service and permission race vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.4_3",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.3_17",
+					"ge": "5.0"
+				},
+				{
+					"lt": "4.11_11",
+					"ge": "4.11"
+				},
+				{
+					"lt": "4.10_16"
+				}
+			]
+		},
+		{
+			"name": [
+				"bzip2"
+			],
+			"range": [
+				{
+					"lt": "1.0.3_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description</h1>\n\t<p>Two problems have been discovered relating to the\n\t  extraction of bzip2-compressed files.  First, a carefully\n\t  constructed invalid bzip2 archive can cause bzip2 to enter\n\t  an infinite loop.  Second, when creating a new file, bzip2\n\t  closes the file before setting its permissions.</p>\n\t<h1>Impact</h1>\n\t<p>The first problem can cause bzip2 to extract a bzip2\n\t  archive to an infinitely large file.\tIf bzip2 is used in\n\t  automated processing of untrusted files this could be\n\t  exploited by an attacker to create an denial-of-service\n\t  situation by exhausting disk space or by consuming all\n\t  available cpu time.</p>\n\t<p>The second problem can allow a local attacker to change the\n\t  permissions of local files owned by the user executing bzip2\n\t  providing that they have write access to the directory in\n\t  which the file is being extracted.</p>\n\t<h1>Workaround</h1>\n\t<p>Do not uncompress bzip2 archives from untrusted sources and\n\t  do not uncompress files in directories where untrusted users\n\t  have write access.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://scary.beasts.org/security/CESA-2005-002.txt"
+		],
+		"cvename": [
+			"CVE-2005-0953",
+			"CVE-2005-1260"
+		],
+		"freebsd_sa": [
+			"SA-05:14.bzip2"
+		]
+	},
+	"dates": {
+		"discovery": "2005-03-30",
+		"entry": "2005-06-29",
+		"modified": "2016-08-09"
+	}
 }

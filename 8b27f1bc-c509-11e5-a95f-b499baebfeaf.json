@@ -1,34 +1,34 @@
 {
-  "vid": "8b27f1bc-c509-11e5-a95f-b499baebfeaf",
-  "topic": "curl -- Credentials not checked",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.47.0",
-          "ge": "7.10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20160127A.html\">\n\t  <p>libcurl will reuse NTLM-authenticated proxy connections\n\t    without properly making sure that the connection was\n\t    authenticated with the same credentials as set for this\n\t    transfer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://curl.haxx.se/docs/adv_20160127A.html"
-    ],
-    "cvename": [
-      "CVE-2016-0755"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-27",
-    "entry": "2016-01-27",
-    "modified": "2017-02-06"
-  }
+	"vid": "8b27f1bc-c509-11e5-a95f-b499baebfeaf",
+	"topic": "curl -- Credentials not checked",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.47.0",
+					"ge": "7.10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The cURL project reports:</p>\n\t<blockquote cite=\"http://curl.haxx.se/docs/adv_20160127A.html\">\n\t  <p>libcurl will reuse NTLM-authenticated proxy connections\n\t    without properly making sure that the connection was\n\t    authenticated with the same credentials as set for this\n\t    transfer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://curl.haxx.se/docs/adv_20160127A.html"
+		],
+		"cvename": [
+			"CVE-2016-0755"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-27",
+		"entry": "2016-01-27",
+		"modified": "2017-02-06"
+	}
 }

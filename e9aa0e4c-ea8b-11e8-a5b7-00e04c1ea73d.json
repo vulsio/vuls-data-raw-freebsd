@@ -1,45 +1,45 @@
 {
-  "vid": "e9aa0e4c-ea8b-11e8-a5b7-00e04c1ea73d",
-  "topic": "powerdns-recursor -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "powerdns-recursor"
-      ],
-      "range": [
-        {
-          "lt": "4.1.7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "powerdns-recursor40"
-      ],
-      "range": [
-        {
-          "lt": "4.0.9"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>powerdns Team reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/recursor/changelog/4.1.html\">\n\t  <p>CVE-2018-10851: An issue has been found in PowerDNS Recursor allowing\n\t    a malicious authoritative server to cause a memory leak by sending specially\n\t    crafted records. The issue is due to the fact that some memory is allocated\n\t    before the parsing and is not always properly released if the record is malformed.\n\t    When the PowerDNS Recursor is run inside a supervisor like supervisord or systemd,\n\t    an out-of-memory crash will lead to an automatic restart, limiting the impact to\n\t    a somewhat degraded service.</p>\n\t  <p>CVE-2018-14626: An issue has been found in PowerDNS Recursor allowing a remote\n\t    user to craft a DNS query that will cause an answer without DNSSEC records to be\n\t    inserted into the packet cache and be returned to clients asking for DNSSEC\n\t    records, thus hiding the presence of DNSSEC signatures for a specific qname and\n\t    qtype. For a DNSSEC-signed domain, this means that clients performing DNSSEC\n\t    validation by themselves might consider the answer to be bogus until it expires\n\t    from the packet cache, leading to a denial of service.</p>\n\t  <p>CVE-2018-14644: An issue has been found in PowerDNS Recursor where a remote attacker\n\t    sending a DNS query for a meta-type like OPT can lead to a zone being wrongly cached\n\t    as failing DNSSEC validation. It only arises if the parent zone is signed, and all\n\t    the authoritative servers for that parent zone answer with FORMERR to a query for at\n\t    least one of the meta-types. As a result, subsequent queries from clients requesting\n\t    DNSSEC validation will be answered with a ServFail.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://doc.powerdns.com/recursor/changelog/4.1.html"
-    ],
-    "cvename": [
-      "CVE-2018-10851",
-      "CVE-2018-14626",
-      "CVE-2018-14644"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-06",
-    "entry": "2018-11-17",
-    "modified": "2018-11-19"
-  }
+	"vid": "e9aa0e4c-ea8b-11e8-a5b7-00e04c1ea73d",
+	"topic": "powerdns-recursor -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"powerdns-recursor"
+			],
+			"range": [
+				{
+					"lt": "4.1.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"powerdns-recursor40"
+			],
+			"range": [
+				{
+					"lt": "4.0.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>powerdns Team reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/recursor/changelog/4.1.html\">\n\t  <p>CVE-2018-10851: An issue has been found in PowerDNS Recursor allowing\n\t    a malicious authoritative server to cause a memory leak by sending specially\n\t    crafted records. The issue is due to the fact that some memory is allocated\n\t    before the parsing and is not always properly released if the record is malformed.\n\t    When the PowerDNS Recursor is run inside a supervisor like supervisord or systemd,\n\t    an out-of-memory crash will lead to an automatic restart, limiting the impact to\n\t    a somewhat degraded service.</p>\n\t  <p>CVE-2018-14626: An issue has been found in PowerDNS Recursor allowing a remote\n\t    user to craft a DNS query that will cause an answer without DNSSEC records to be\n\t    inserted into the packet cache and be returned to clients asking for DNSSEC\n\t    records, thus hiding the presence of DNSSEC signatures for a specific qname and\n\t    qtype. For a DNSSEC-signed domain, this means that clients performing DNSSEC\n\t    validation by themselves might consider the answer to be bogus until it expires\n\t    from the packet cache, leading to a denial of service.</p>\n\t  <p>CVE-2018-14644: An issue has been found in PowerDNS Recursor where a remote attacker\n\t    sending a DNS query for a meta-type like OPT can lead to a zone being wrongly cached\n\t    as failing DNSSEC validation. It only arises if the parent zone is signed, and all\n\t    the authoritative servers for that parent zone answer with FORMERR to a query for at\n\t    least one of the meta-types. As a result, subsequent queries from clients requesting\n\t    DNSSEC validation will be answered with a ServFail.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://doc.powerdns.com/recursor/changelog/4.1.html"
+		],
+		"cvename": [
+			"CVE-2018-10851",
+			"CVE-2018-14626",
+			"CVE-2018-14644"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-06",
+		"entry": "2018-11-17",
+		"modified": "2018-11-19"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "293f40a0-ffa1-11e8-b258-0011d823eebd",
-  "topic": "Mbed TLS -- Local timing attack on RSA decryption",
-  "affects": [
-    {
-      "name": [
-        "mbedtls"
-      ],
-      "range": [
-        {
-          "lt": "2.14.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Janos Follath reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-03\">\n\t  <p>An attacker who can run code on the same machine that is\n\t    performing an RSA decryption can potentially recover the plaintext\n\t    through a Bleichenbacher-like oracle.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-03"
-    ],
-    "cvename": [
-      "CVE-2018-19608"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-28",
-    "entry": "2018-12-14"
-  }
+	"vid": "293f40a0-ffa1-11e8-b258-0011d823eebd",
+	"topic": "Mbed TLS -- Local timing attack on RSA decryption",
+	"affects": [
+		{
+			"name": [
+				"mbedtls"
+			],
+			"range": [
+				{
+					"lt": "2.14.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Janos Follath reports:</p>\n\t<blockquote cite=\"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-03\">\n\t  <p>An attacker who can run code on the same machine that is\n\t    performing an RSA decryption can potentially recover the plaintext\n\t    through a Bleichenbacher-like oracle.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2018-03"
+		],
+		"cvename": [
+			"CVE-2018-19608"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-28",
+		"entry": "2018-12-14"
+	}
 }

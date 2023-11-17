@@ -1,33 +1,33 @@
 {
-  "vid": "e6a7636a-02d0-11e4-88b6-080027671656",
-  "topic": "dbus -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "dbus"
-      ],
-      "range": [
-        {
-          "lt": "1.8.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon McVittie reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/dbus/2014-July/016235.html\">\n\t  <p>Alban Crequy at Collabora Ltd. discovered a bug in dbus-daemon's\n\t    support for file descriptor passing. A malicious process could\n\t    force system services or user applications to be disconnected\n\t    from the D-Bus system bus by sending them a message containing\n\t    a file descriptor, then causing that file descriptor to exceed\n\t    the kernel's maximum recursion depth (itself introduced to fix\n\t    a DoS) before dbus-daemon forwards the message to the victim\n\t    process. Most services and applications exit when disconnected\n\t    from the system bus, leading to a denial of service.</p>\n\t  <p>Additionally, Alban discovered that bug fd.o#79694, a bug\n\t    previously reported by Alejandro Martínez Suárez which was n\n\t    believed to be security flaw, could be used for a similar denial\n\t    of service, by causing dbus-daemon to attempt to forward invalid\n\t    file descriptors to a victim process when file descriptors become\n\t    associated with the wrong message.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.freedesktop.org/archives/dbus/2014-July/016235.html"
-    ],
-    "cvename": [
-      "CVE-2014-3532",
-      "CVE-2014-3533"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-07-02",
-    "entry": "2014-07-03"
-  }
+	"vid": "e6a7636a-02d0-11e4-88b6-080027671656",
+	"topic": "dbus -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"dbus"
+			],
+			"range": [
+				{
+					"lt": "1.8.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon McVittie reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/archives/dbus/2014-July/016235.html\">\n\t  <p>Alban Crequy at Collabora Ltd. discovered a bug in dbus-daemon's\n\t    support for file descriptor passing. A malicious process could\n\t    force system services or user applications to be disconnected\n\t    from the D-Bus system bus by sending them a message containing\n\t    a file descriptor, then causing that file descriptor to exceed\n\t    the kernel's maximum recursion depth (itself introduced to fix\n\t    a DoS) before dbus-daemon forwards the message to the victim\n\t    process. Most services and applications exit when disconnected\n\t    from the system bus, leading to a denial of service.</p>\n\t  <p>Additionally, Alban discovered that bug fd.o#79694, a bug\n\t    previously reported by Alejandro Martínez Suárez which was n\n\t    believed to be security flaw, could be used for a similar denial\n\t    of service, by causing dbus-daemon to attempt to forward invalid\n\t    file descriptors to a victim process when file descriptors become\n\t    associated with the wrong message.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.freedesktop.org/archives/dbus/2014-July/016235.html"
+		],
+		"cvename": [
+			"CVE-2014-3532",
+			"CVE-2014-3533"
+		]
+	},
+	"dates": {
+		"discovery": "2014-07-02",
+		"entry": "2014-07-03"
+	}
 }

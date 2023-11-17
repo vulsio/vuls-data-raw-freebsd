@@ -1,49 +1,49 @@
 {
-  "vid": "60cb2055-b1b8-11e5-9728-002590263bf5",
-  "topic": "qemu -- denial of service vulnerability in USB EHCI emulation support",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qemu-sbruno",
-        "qemu-user-static"
-      ],
-      "range": [
-        {
-          "lt": "2.5.50.g20151224"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/12/14/9\">\n\t  <p>Qemu emulator built with the USB EHCI emulation support is\n\t    vulnerable to an infinite loop issue. It occurs during communication\n\t    between host controller interface(EHCI) and a respective device\n\t    driver. These two communicate via a isochronous transfer descriptor\n\t    list(iTD) and an infinite loop unfolds if there is a closed loop in\n\t    this list.</p>\n\t  <p>A privileges user inside guest could use this flaw to consume\n\t    excessive CPU cycles &amp; resources on the host.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2015/12/14/9",
-      "http://git.qemu.org/?p=qemu.git;a=commit;h=156a2e4dbffa85997636a7a39ef12da6f1b40254",
-      "https://github.com/seanbruno/qemu-bsd-user/commit/156a2e4dbffa85997636a7a39ef12da6f1b40254"
-    ],
-    "cvename": [
-      "CVE-2015-8558"
-    ],
-    "freebsd_pr": [
-      "ports/205814"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-14",
-    "entry": "2016-01-03"
-  }
+	"vid": "60cb2055-b1b8-11e5-9728-002590263bf5",
+	"topic": "qemu -- denial of service vulnerability in USB EHCI emulation support",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"lt": "2.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"qemu-sbruno",
+				"qemu-user-static"
+			],
+			"range": [
+				{
+					"lt": "2.5.50.g20151224"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/12/14/9\">\n\t  <p>Qemu emulator built with the USB EHCI emulation support is\n\t    vulnerable to an infinite loop issue. It occurs during communication\n\t    between host controller interface(EHCI) and a respective device\n\t    driver. These two communicate via a isochronous transfer descriptor\n\t    list(iTD) and an infinite loop unfolds if there is a closed loop in\n\t    this list.</p>\n\t  <p>A privileges user inside guest could use this flaw to consume\n\t    excessive CPU cycles &amp; resources on the host.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2015/12/14/9",
+			"http://git.qemu.org/?p=qemu.git;a=commit;h=156a2e4dbffa85997636a7a39ef12da6f1b40254",
+			"https://github.com/seanbruno/qemu-bsd-user/commit/156a2e4dbffa85997636a7a39ef12da6f1b40254"
+		],
+		"cvename": [
+			"CVE-2015-8558"
+		],
+		"freebsd_pr": [
+			"ports/205814"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-14",
+		"entry": "2016-01-03"
+	}
 }

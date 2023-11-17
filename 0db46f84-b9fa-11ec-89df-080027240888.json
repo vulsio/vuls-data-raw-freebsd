@@ -1,61 +1,61 @@
 {
-  "vid": "0db46f84-b9fa-11ec-89df-080027240888",
-  "topic": "Django -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py37-django22",
-        "py38-django22",
-        "py39-django22",
-        "py310-django22"
-      ],
-      "range": [
-        {
-          "lt": "2.2.28"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py37-django32",
-        "py38-django32",
-        "py39-django32",
-        "py310-django32"
-      ],
-      "range": [
-        {
-          "lt": "3.2.13"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py38-django40",
-        "py39-django40",
-        "py310-django40"
-      ],
-      "range": [
-        {
-          "lt": "4.0.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django Release  reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2022/apr/11/security-releases/\">\n\t  <p>CVE-2022-28346: Potential SQL injection in QuerySet.annotate(), aggregate(), and extra().</p>\n\t  <p>CVE-2022-28347: Potential SQL injection via QuerySet.explain(**options) on PostgreSQL.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.djangoproject.com/weblog/2022/apr/11/security-releases/"
-    ],
-    "cvename": [
-      "CVE-2022-28346",
-      "CVE-2022-28347"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-02",
-    "entry": "2022-04-12"
-  }
+	"vid": "0db46f84-b9fa-11ec-89df-080027240888",
+	"topic": "Django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py37-django22",
+				"py38-django22",
+				"py39-django22",
+				"py310-django22"
+			],
+			"range": [
+				{
+					"lt": "2.2.28"
+				}
+			]
+		},
+		{
+			"name": [
+				"py37-django32",
+				"py38-django32",
+				"py39-django32",
+				"py310-django32"
+			],
+			"range": [
+				{
+					"lt": "3.2.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"py38-django40",
+				"py39-django40",
+				"py310-django40"
+			],
+			"range": [
+				{
+					"lt": "4.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django Release  reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2022/apr/11/security-releases/\">\n\t  <p>CVE-2022-28346: Potential SQL injection in QuerySet.annotate(), aggregate(), and extra().</p>\n\t  <p>CVE-2022-28347: Potential SQL injection via QuerySet.explain(**options) on PostgreSQL.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2022/apr/11/security-releases/"
+		],
+		"cvename": [
+			"CVE-2022-28346",
+			"CVE-2022-28347"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-02",
+		"entry": "2022-04-12"
+	}
 }

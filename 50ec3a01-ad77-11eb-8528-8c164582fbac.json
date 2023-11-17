@@ -1,64 +1,64 @@
 {
-  "vid": "50ec3a01-ad77-11eb-8528-8c164582fbac",
-  "topic": "Ansible -- Insecure Temporary File",
-  "affects": [
-    {
-      "name": [
-        "py36-ansible",
-        "py37-ansible",
-        "py38-ansible",
-        "py39-ansible",
-        "py36-ansible27"
-      ],
-      "range": [
-        {
-          "ge": "2.9.0",
-          "le": "2.9.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py37-ansible27",
-        "py38-ansible27",
-        "py39-ansible27"
-      ],
-      "range": [
-        {
-          "ge": "2.7.0",
-          "le": "2.7.18"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py36-ansible28",
-        "py37-ansible28",
-        "py38-ansible28",
-        "py39-ansible28"
-      ],
-      "range": [
-        {
-          "ge": "2.8.0",
-          "le": "2.8.12"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2020-10744\">\n\t<p>\n\t  An incomplete fix was found for the fix of the flaw CVE-2020-1733\n\t  ansible: insecure temporary directory when running become_user from\n\t  become directive. The provided fix is insufficient to prevent the\n\t  race condition on systems using ACLs and FUSE filesystems..\n\t</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2020-10744"
-    ],
-    "cvename": [
-      "CVE-2020-10744"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-05-15",
-    "entry": "2021-05-05"
-  }
+	"vid": "50ec3a01-ad77-11eb-8528-8c164582fbac",
+	"topic": "Ansible -- Insecure Temporary File",
+	"affects": [
+		{
+			"name": [
+				"py36-ansible",
+				"py37-ansible",
+				"py38-ansible",
+				"py39-ansible",
+				"py36-ansible27"
+			],
+			"range": [
+				{
+					"ge": "2.9.0",
+					"le": "2.9.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"py37-ansible27",
+				"py38-ansible27",
+				"py39-ansible27"
+			],
+			"range": [
+				{
+					"ge": "2.7.0",
+					"le": "2.7.18"
+				}
+			]
+		},
+		{
+			"name": [
+				"py36-ansible28",
+				"py37-ansible28",
+				"py38-ansible28",
+				"py39-ansible28"
+			],
+			"range": [
+				{
+					"ge": "2.8.0",
+					"le": "2.8.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2020-10744\">\n\t<p>\n\t  An incomplete fix was found for the fix of the flaw CVE-2020-1733\n\t  ansible: insecure temporary directory when running become_user from\n\t  become directive. The provided fix is insufficient to prevent the\n\t  race condition on systems using ACLs and FUSE filesystems..\n\t</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2020-10744"
+		],
+		"cvename": [
+			"CVE-2020-10744"
+		]
+	},
+	"dates": {
+		"discovery": "2020-05-15",
+		"entry": "2021-05-05"
+	}
 }

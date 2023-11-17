@@ -1,52 +1,52 @@
 {
-  "vid": "652064ef-056f-11ee-8e16-6c3be5272acd",
-  "topic": "Grafana -- Grafana DS proxy race condition",
-  "affects": [
-    {
-      "name": [
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "9.4.12",
-          "ge": "9.4.0"
-        },
-        {
-          "lt": "9.5.3",
-          "ge": "9.5.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.4.12",
-          "ge": "9.4.0"
-        },
-        {
-          "lt": "9.5.3",
-          "ge": "9.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/06/06/grafana-security-release-new-grafana-versions-with-security-fixes-for-cve-2023-2183-and-cve-2023-2801/\">\n\t  <p>We have discovered a vulnerability with Grafana’s data source query\n\t  endpoints that could end up crashing a Grafana instance.</p>\n\t  <p>If you have public dashboards (PD) enabled, we\n\t  are scoring this as a CVSS 7.5 High.</p>\n\t  <p>If you have disabled PD, this vulnerability is still a risk,\n\t  but triggering the issue requires data source read privileges\n\t  and access to the Grafana API through a developer script.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "CVE-2023-2801"
-    ],
-    "cvename": [
-      "CVE-2023-2801"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-06-06",
-    "entry": "2023-06-07"
-  }
+	"vid": "652064ef-056f-11ee-8e16-6c3be5272acd",
+	"topic": "Grafana -- Grafana DS proxy race condition",
+	"affects": [
+		{
+			"name": [
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "9.4.12",
+					"ge": "9.4.0"
+				},
+				{
+					"lt": "9.5.3",
+					"ge": "9.5.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.4.12",
+					"ge": "9.4.0"
+				},
+				{
+					"lt": "9.5.3",
+					"ge": "9.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/06/06/grafana-security-release-new-grafana-versions-with-security-fixes-for-cve-2023-2183-and-cve-2023-2801/\">\n\t  <p>We have discovered a vulnerability with Grafana’s data source query\n\t  endpoints that could end up crashing a Grafana instance.</p>\n\t  <p>If you have public dashboards (PD) enabled, we\n\t  are scoring this as a CVSS 7.5 High.</p>\n\t  <p>If you have disabled PD, this vulnerability is still a risk,\n\t  but triggering the issue requires data source read privileges\n\t  and access to the Grafana API through a developer script.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"CVE-2023-2801"
+		],
+		"cvename": [
+			"CVE-2023-2801"
+		]
+	},
+	"dates": {
+		"discovery": "2023-06-06",
+		"entry": "2023-06-07"
+	}
 }

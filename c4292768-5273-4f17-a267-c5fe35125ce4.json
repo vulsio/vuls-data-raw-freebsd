@@ -1,85 +1,85 @@
 {
-  "vid": "c4292768-5273-4f17-a267-c5fe35125ce4",
-  "topic": "NSS -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "nss"
-      ],
-      "range": [
-        {
-          "lt": "3.21.1",
-          "ge": "3.20"
-        },
-        {
-          "lt": "3.19.2.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-nss"
-      ],
-      "range": [
-        {
-          "lt": "3.21.0_1",
-          "ge": "3.20"
-        },
-        {
-          "lt": "3.19.2.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "45.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "38.7.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.42"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-35/\">\n\t  <p>Security researcher Francis Gabriel reported a heap-based\n\t    buffer overflow in the way the Network Security Services\n\t    (NSS) libraries parsed certain ASN.1 structures. An attacker\n\t    could create a specially-crafted certificate which, when\n\t    parsed by NSS, would cause it to crash or execute arbitrary\n\t    code with the permissions of the user.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-36/\">\n\t  <p>Mozilla developer Tim Taubert used the Address Sanitizer\n\t    tool and software fuzzing to discover a use-after-free\n\t    vulnerability while processing DER encoded keys in the\n\t    Network Security Services (NSS) libraries. The vulnerability\n\t    overwrites the freed memory with zeroes.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2016-35/",
-      "https://www.mozilla.org/security/advisories/mfsa2016-36/",
-      "https://hg.mozilla.org/projects/nss/rev/b9a31471759d",
-      "https://hg.mozilla.org/projects/nss/rev/7033b1193c94"
-    ],
-    "cvename": [
-      "CVE-2016-1950",
-      "CVE-2016-1979"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-08",
-    "entry": "2016-03-08",
-    "modified": "2016-09-05"
-  }
+	"vid": "c4292768-5273-4f17-a267-c5fe35125ce4",
+	"topic": "NSS -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"nss"
+			],
+			"range": [
+				{
+					"lt": "3.21.1",
+					"ge": "3.20"
+				},
+				{
+					"lt": "3.19.2.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-nss"
+			],
+			"range": [
+				{
+					"lt": "3.21.0_1",
+					"ge": "3.20"
+				},
+				{
+					"lt": "3.19.2.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "45.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "38.7.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.42"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-35/\">\n\t  <p>Security researcher Francis Gabriel reported a heap-based\n\t    buffer overflow in the way the Network Security Services\n\t    (NSS) libraries parsed certain ASN.1 structures. An attacker\n\t    could create a specially-crafted certificate which, when\n\t    parsed by NSS, would cause it to crash or execute arbitrary\n\t    code with the permissions of the user.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2016-36/\">\n\t  <p>Mozilla developer Tim Taubert used the Address Sanitizer\n\t    tool and software fuzzing to discover a use-after-free\n\t    vulnerability while processing DER encoded keys in the\n\t    Network Security Services (NSS) libraries. The vulnerability\n\t    overwrites the freed memory with zeroes.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2016-35/",
+			"https://www.mozilla.org/security/advisories/mfsa2016-36/",
+			"https://hg.mozilla.org/projects/nss/rev/b9a31471759d",
+			"https://hg.mozilla.org/projects/nss/rev/7033b1193c94"
+		],
+		"cvename": [
+			"CVE-2016-1950",
+			"CVE-2016-1979"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-08",
+		"entry": "2016-03-08",
+		"modified": "2016-09-05"
+	}
 }

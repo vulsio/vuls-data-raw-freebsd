@@ -1,72 +1,72 @@
 {
-  "vid": "48108fb0-751c-4cbb-8f33-09239ead4b55",
-  "topic": "NSS -- RSA Signature Forgery",
-  "affects": [
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "32.0.3,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "31.1.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.29.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "nss"
-      ],
-      "range": [
-        {
-          "lt": "3.17.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-nss"
-      ],
-      "range": [
-        {
-          "lt": "3.16.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/security/announce/2014/mfsa2014-73.html\">\n\t  <p>Antoine Delignat-Lavaud discovered that NSS is vulnerable\n\t  to a variant of a signature forgery attack previously\n\t  published by Daniel Bleichenbacher.  This is due to lenient\n\t  parsing of ASN.1 values involved in a signature and could\n\t  lead to the forging of RSA certificates.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/announce/2014/mfsa2014-73.html"
-    ],
-    "cvename": [
-      "CVE-2014-1568"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-09-23",
-    "entry": "2014-09-25"
-  }
+	"vid": "48108fb0-751c-4cbb-8f33-09239ead4b55",
+	"topic": "NSS -- RSA Signature Forgery",
+	"affects": [
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "32.0.3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "31.1.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.29.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"nss"
+			],
+			"range": [
+				{
+					"lt": "3.17.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-nss"
+			],
+			"range": [
+				{
+					"lt": "3.16.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mozilla Project reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/security/announce/2014/mfsa2014-73.html\">\n\t  <p>Antoine Delignat-Lavaud discovered that NSS is vulnerable\n\t  to a variant of a signature forgery attack previously\n\t  published by Daniel Bleichenbacher.  This is due to lenient\n\t  parsing of ASN.1 values involved in a signature and could\n\t  lead to the forging of RSA certificates.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/announce/2014/mfsa2014-73.html"
+		],
+		"cvename": [
+			"CVE-2014-1568"
+		]
+	},
+	"dates": {
+		"discovery": "2014-09-23",
+		"entry": "2014-09-25"
+	}
 }

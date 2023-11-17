@@ -1,30 +1,30 @@
 {
-  "vid": "2be7c122-0614-11db-9156-000e0c2e438a",
-  "topic": "hashcash -- heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "hashcash"
-      ],
-      "range": [
-        {
-          "lt": "1.22"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Andreas Seltenreich reports that hashcash is prone to a heap\n\t  overflow vulnerability.  This vulnerability is caused by\n\t  improper checking of memory allocations within the\n\t  \"array_push()\" function.  An attacker could trigger this\n\t  vulnerability by passing a lot of \"-r\" or \"-j\" flags from\n\t  the command line, this only applies when the application is\n\t  configured to allow command line options, or by passing a lot\n\t  of resource names when the application was started with the\n\t  \"-m\" flag set.  This could lead to a Denial or Service or\n\t  could allow remote access to the targeted system.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/20800/",
-      "http://www.hashcash.org/source/CHANGELOG"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-06-27",
-    "entry": "2006-06-27"
-  }
+	"vid": "2be7c122-0614-11db-9156-000e0c2e438a",
+	"topic": "hashcash -- heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"hashcash"
+			],
+			"range": [
+				{
+					"lt": "1.22"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Andreas Seltenreich reports that hashcash is prone to a heap\n\t  overflow vulnerability.  This vulnerability is caused by\n\t  improper checking of memory allocations within the\n\t  \"array_push()\" function.  An attacker could trigger this\n\t  vulnerability by passing a lot of \"-r\" or \"-j\" flags from\n\t  the command line, this only applies when the application is\n\t  configured to allow command line options, or by passing a lot\n\t  of resource names when the application was started with the\n\t  \"-m\" flag set.  This could lead to a Denial or Service or\n\t  could allow remote access to the targeted system.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/20800/",
+			"http://www.hashcash.org/source/CHANGELOG"
+		]
+	},
+	"dates": {
+		"discovery": "2006-06-27",
+		"entry": "2006-06-27"
+	}
 }

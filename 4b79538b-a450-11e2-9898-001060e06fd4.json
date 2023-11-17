@@ -1,42 +1,42 @@
 {
-  "vid": "4b79538b-a450-11e2-9898-001060e06fd4",
-  "topic": "FreeBSD -- Multiple Denial of Service vulnerabilities with named(8)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.4_11",
-          "ge": "7.4"
-        },
-        {
-          "lt": "8.3_5",
-          "ge": "8.3"
-        },
-        {
-          "lt": "9.0_5",
-          "ge": "9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-12:06.bind.asc\">\n\t  <p>The BIND daemon would crash when a query is made on a resource\n\t     record with RDATA that exceeds 65535 bytes.</p>\n\t  <p>The BIND daemon would lock up when a query is made on specific\n\t     combinations of RDATA.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2012-4244",
-      "CVE-2012-5166"
-    ],
-    "freebsd_sa": [
-      "SA-12:06.bind"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-11-22",
-    "entry": "2012-11-24"
-  }
+	"vid": "4b79538b-a450-11e2-9898-001060e06fd4",
+	"topic": "FreeBSD -- Multiple Denial of Service vulnerabilities with named(8)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.4_11",
+					"ge": "7.4"
+				},
+				{
+					"lt": "8.3_5",
+					"ge": "8.3"
+				},
+				{
+					"lt": "9.0_5",
+					"ge": "9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Problem description:</p>\n\t<blockquote cite=\"http://www.freebsd.org/security/advisories/FreeBSD-SA-12:06.bind.asc\">\n\t  <p>The BIND daemon would crash when a query is made on a resource\n\t     record with RDATA that exceeds 65535 bytes.</p>\n\t  <p>The BIND daemon would lock up when a query is made on specific\n\t     combinations of RDATA.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2012-4244",
+			"CVE-2012-5166"
+		],
+		"freebsd_sa": [
+			"SA-12:06.bind"
+		]
+	},
+	"dates": {
+		"discovery": "2012-11-22",
+		"entry": "2012-11-24"
+	}
 }

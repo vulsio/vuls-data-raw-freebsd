@@ -1,42 +1,42 @@
 {
-  "vid": "580cc46b-bb1e-11e3-b144-2c4138874f7d",
-  "topic": "LibYAML input sanitization errors",
-  "affects": [
-    {
-      "name": [
-        "libyaml"
-      ],
-      "range": [
-        {
-          "lt": "0.1.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mingw32-libyaml"
-      ],
-      "range": [
-        {
-          "lt": "0.1.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2014-003.html\">\n\t  <p>The LibYAML project is an open source YAML 1.1 parser and\n\t    emitter written in C.</p>\n\t  <p>The library is affected by a heap-based buffer overflow\n\t    which can lead to arbitrary code execution. The\n\t    vulnerability is caused by lack of proper expansion for the\n\t    string passed to the yaml_parser_scan_uri_escapes()\n\t    function.</p>\n\t  <p>A specially crafted YAML file, with a long sequence of\n\t    percent-encoded characters in a URL, can be used to trigger\n\t    the overflow.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2525"
-    ],
-    "cvename": [
-      "CVE-2014-2525"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-03-11",
-    "entry": "2014-03-26"
-  }
+	"vid": "580cc46b-bb1e-11e3-b144-2c4138874f7d",
+	"topic": "LibYAML input sanitization errors",
+	"affects": [
+		{
+			"name": [
+				"libyaml"
+			],
+			"range": [
+				{
+					"lt": "0.1.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"mingw32-libyaml"
+			],
+			"range": [
+				{
+					"lt": "0.1.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>oCERT reports:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2014-003.html\">\n\t  <p>The LibYAML project is an open source YAML 1.1 parser and\n\t    emitter written in C.</p>\n\t  <p>The library is affected by a heap-based buffer overflow\n\t    which can lead to arbitrary code execution. The\n\t    vulnerability is caused by lack of proper expansion for the\n\t    string passed to the yaml_parser_scan_uri_escapes()\n\t    function.</p>\n\t  <p>A specially crafted YAML file, with a long sequence of\n\t    percent-encoded characters in a URL, can be used to trigger\n\t    the overflow.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2525"
+		],
+		"cvename": [
+			"CVE-2014-2525"
+		]
+	},
+	"dates": {
+		"discovery": "2014-03-11",
+		"entry": "2014-03-26"
+	}
 }

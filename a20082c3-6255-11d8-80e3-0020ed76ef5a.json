@@ -1,34 +1,34 @@
 {
-  "vid": "a20082c3-6255-11d8-80e3-0020ed76ef5a",
-  "topic": "metamail format string bugs and buffer overflows",
-  "affects": [
-    {
-      "name": [
-        "metamail"
-      ],
-      "range": [
-        {
-          "lt": "2.7_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ulf Härnhammar reported four bugs in metamail: two are format\n\t  string bugs and two are buffer overflows.  The bugs are in\n\t  SaveSquirrelFile(), PrintHeader(), and ShareThisHeader().</p>\n\t<p>These vulnerabilities could be triggered by a maliciously\n\t  formatted email message if `metamail' or `splitmail' is used\n\t  to process it, possibly resulting in arbitrary code execution\n\t  with the privileges of the user reading mail.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0104",
-      "CVE-2004-0105"
-    ],
-    "bid": [
-      "9692"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-02-18",
-    "entry": "2004-02-18",
-    "modified": "2004-03-29"
-  }
+	"vid": "a20082c3-6255-11d8-80e3-0020ed76ef5a",
+	"topic": "metamail format string bugs and buffer overflows",
+	"affects": [
+		{
+			"name": [
+				"metamail"
+			],
+			"range": [
+				{
+					"lt": "2.7_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ulf Härnhammar reported four bugs in metamail: two are format\n\t  string bugs and two are buffer overflows.  The bugs are in\n\t  SaveSquirrelFile(), PrintHeader(), and ShareThisHeader().</p>\n\t<p>These vulnerabilities could be triggered by a maliciously\n\t  formatted email message if `metamail' or `splitmail' is used\n\t  to process it, possibly resulting in arbitrary code execution\n\t  with the privileges of the user reading mail.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0104",
+			"CVE-2004-0105"
+		],
+		"bid": [
+			"9692"
+		]
+	},
+	"dates": {
+		"discovery": "2004-02-18",
+		"entry": "2004-02-18",
+		"modified": "2004-03-29"
+	}
 }

@@ -1,50 +1,50 @@
 {
-  "vid": "fdad8a87-7f94-11d9-a9e7-0001020eed82",
-  "topic": "awstats -- arbitrary command execution",
-  "affects": [
-    {
-      "name": [
-        "awstats"
-      ],
-      "range": [
-        {
-          "lt": "6.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Several input validation errors exist in AWStats that allow a\n\t  remote unauthenticated attacker to execute arbitrary commands\n\t  with the priviliges of the web server.  These programming\n\t  errors involve CGI parameters including\n\t  <code>loadplugin</code>, <code>logfile</code>,\n\t  <code>pluginmode</code>, <code>update</code>, and possibly\n\t  others.</p>\n\t<p>Additionally, the <code>debug</code> and other CGI parameters\n\t  may be used to cause AWStats to disclose AWStats and system\n\t  configuration information.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://awstats.sourceforge.net/docs/awstats_changelog.txt",
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=294488",
-      "http://packetstormsecurity.nl/0501-exploits/AWStatsVulnAnalysis.pdf"
-    ],
-    "cvename": [
-      "CVE-2005-0362",
-      "CVE-2005-0363",
-      "CVE-2005-0435",
-      "CVE-2005-0436",
-      "CVE-2005-0437",
-      "CVE-2005-0438"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110840530924124",
-        "msgid": "20050214081040.3370.qmail@www.securityfocus.com"
-      }
-    ],
-    "bid": [
-      "12543",
-      "12545"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-10",
-    "entry": "2005-02-16",
-    "modified": "2005-02-23"
-  }
+	"vid": "fdad8a87-7f94-11d9-a9e7-0001020eed82",
+	"topic": "awstats -- arbitrary command execution",
+	"affects": [
+		{
+			"name": [
+				"awstats"
+			],
+			"range": [
+				{
+					"lt": "6.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Several input validation errors exist in AWStats that allow a\n\t  remote unauthenticated attacker to execute arbitrary commands\n\t  with the priviliges of the web server.  These programming\n\t  errors involve CGI parameters including\n\t  <code>loadplugin</code>, <code>logfile</code>,\n\t  <code>pluginmode</code>, <code>update</code>, and possibly\n\t  others.</p>\n\t<p>Additionally, the <code>debug</code> and other CGI parameters\n\t  may be used to cause AWStats to disclose AWStats and system\n\t  configuration information.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://awstats.sourceforge.net/docs/awstats_changelog.txt",
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=294488",
+			"http://packetstormsecurity.nl/0501-exploits/AWStatsVulnAnalysis.pdf"
+		],
+		"cvename": [
+			"CVE-2005-0362",
+			"CVE-2005-0363",
+			"CVE-2005-0435",
+			"CVE-2005-0436",
+			"CVE-2005-0437",
+			"CVE-2005-0438"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110840530924124",
+				"msgid": "20050214081040.3370.qmail@www.securityfocus.com"
+			}
+		],
+		"bid": [
+			"12543",
+			"12545"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-10",
+		"entry": "2005-02-16",
+		"modified": "2005-02-23"
+	}
 }

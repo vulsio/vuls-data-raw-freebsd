@@ -1,42 +1,42 @@
 {
-  "vid": "a60cc0e4-c7aa-11ed-8a4b-080027f5fec9",
-  "topic": "redis -- specially crafted MSETNX command can lead to denial-of-service",
-  "affects": [
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "7.0.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis-devel"
-      ],
-      "range": [
-        {
-          "lt": "7.0.10.20230320"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Yupeng Yang reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/security/advisories/GHSA-mvmm-4vq6-vw8c\">\n\t  <p>\n\t    Authenticated users can use the MSETNX command to trigger\n\t    a runtime assertion and termination of the Redis server\n\t    process.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/redis/redis/security/advisories/GHSA-mvmm-4vq6-vw8c"
-    ],
-    "cvename": [
-      "CVE-2023-28425"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-03-20",
-    "entry": "2023-03-21"
-  }
+	"vid": "a60cc0e4-c7aa-11ed-8a4b-080027f5fec9",
+	"topic": "redis -- specially crafted MSETNX command can lead to denial-of-service",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "7.0.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis-devel"
+			],
+			"range": [
+				{
+					"lt": "7.0.10.20230320"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Yupeng Yang reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/security/advisories/GHSA-mvmm-4vq6-vw8c\">\n\t  <p>\n\t    Authenticated users can use the MSETNX command to trigger\n\t    a runtime assertion and termination of the Redis server\n\t    process.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/redis/redis/security/advisories/GHSA-mvmm-4vq6-vw8c"
+		],
+		"cvename": [
+			"CVE-2023-28425"
+		]
+	},
+	"dates": {
+		"discovery": "2023-03-20",
+		"entry": "2023-03-21"
+	}
 }

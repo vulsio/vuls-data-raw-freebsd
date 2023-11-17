@@ -1,34 +1,34 @@
 {
-  "vid": "f7eb0b23-7099-11da-a15c-0060084a00e5",
-  "topic": "fetchmail -- null pointer dereference in multidrop mode with headerless email",
-  "affects": [
-    {
-      "name": [
-        "fetchmail"
-      ],
-      "range": [
-        {
-          "lt": "6.3.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The fetchmail team reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2005-03.txt\">\n\t  <p>Fetchmail contains a bug that causes an application crash\n\t    when fetchmail is configured for multidrop mode and the\n\t    upstream mail server sends a message without headers.  As\n\t    fetchmail does not record this message as \"previously fetched\",\n\t    it will crash with the same message if it is re-executed, so it\n\t    cannot make progress. A malicious or broken-into upstream server\n\t    could thus cause a denial of service in fetchmail clients.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.fetchmail.info/fetchmail-SA-2005-03.txt",
-      "http://article.gmane.org/gmane.mail.fetchmail.user/7573",
-      "http://bugs.debian.org/343836"
-    ],
-    "cvename": [
-      "CVE-2005-4348"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-12-19",
-    "entry": "2005-12-19"
-  }
+	"vid": "f7eb0b23-7099-11da-a15c-0060084a00e5",
+	"topic": "fetchmail -- null pointer dereference in multidrop mode with headerless email",
+	"affects": [
+		{
+			"name": [
+				"fetchmail"
+			],
+			"range": [
+				{
+					"lt": "6.3.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The fetchmail team reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2005-03.txt\">\n\t  <p>Fetchmail contains a bug that causes an application crash\n\t    when fetchmail is configured for multidrop mode and the\n\t    upstream mail server sends a message without headers.  As\n\t    fetchmail does not record this message as \"previously fetched\",\n\t    it will crash with the same message if it is re-executed, so it\n\t    cannot make progress. A malicious or broken-into upstream server\n\t    could thus cause a denial of service in fetchmail clients.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.fetchmail.info/fetchmail-SA-2005-03.txt",
+			"http://article.gmane.org/gmane.mail.fetchmail.user/7573",
+			"http://bugs.debian.org/343836"
+		],
+		"cvename": [
+			"CVE-2005-4348"
+		]
+	},
+	"dates": {
+		"discovery": "2005-12-19",
+		"entry": "2005-12-19"
+	}
 }

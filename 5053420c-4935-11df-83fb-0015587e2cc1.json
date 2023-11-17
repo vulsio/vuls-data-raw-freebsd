@@ -1,35 +1,35 @@
 {
-  "vid": "5053420c-4935-11df-83fb-0015587e2cc1",
-  "topic": "mahara -- sql injection vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mahara"
-      ],
-      "range": [
-        {
-          "lt": "1.1.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Debian security team reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2010/dsa-2030\">\n\t<p>It was discovered that mahara, an electronic portfolio,\n\t  weblog, and resume builder is not properly escaping input\n\t  when generating a unique username based on a remote user\n\t  name from a single sign-on application. An attacker can\n\t  use this to compromise the mahara database via crafted\n\t  user names.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.debian.org/security/2010/dsa-2030"
-    ],
-    "cvename": [
-      "CVE-2010-0400"
-    ],
-    "bid": [
-      "39253"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-04-06",
-    "entry": "2010-04-18"
-  }
+	"vid": "5053420c-4935-11df-83fb-0015587e2cc1",
+	"topic": "mahara -- sql injection vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mahara"
+			],
+			"range": [
+				{
+					"lt": "1.1.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Debian security team reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2010/dsa-2030\">\n\t<p>It was discovered that mahara, an electronic portfolio,\n\t  weblog, and resume builder is not properly escaping input\n\t  when generating a unique username based on a remote user\n\t  name from a single sign-on application. An attacker can\n\t  use this to compromise the mahara database via crafted\n\t  user names.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.debian.org/security/2010/dsa-2030"
+		],
+		"cvename": [
+			"CVE-2010-0400"
+		],
+		"bid": [
+			"39253"
+		]
+	},
+	"dates": {
+		"discovery": "2010-04-06",
+		"entry": "2010-04-18"
+	}
 }

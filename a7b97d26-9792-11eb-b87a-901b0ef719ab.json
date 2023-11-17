@@ -1,37 +1,37 @@
 {
-  "vid": "a7b97d26-9792-11eb-b87a-901b0ef719ab",
-  "topic": "FreeBSD -- jail escape possible by mounting over jail root",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.2_6",
-          "ge": "12.2"
-        },
-        {
-          "lt": "11.4_9",
-          "ge": "11.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to a race condition between lookup of \"..\" and remounting a filesystem,\n\ta process running inside a jail might access filesystem hierarchy outside\n\tof jail.</p>\n\t<h1>Impact:</h1>\n\t<p>A process with superuser privileges running inside a jail configured\n\twith the allow.mount permission (not enabled by default) could change the root\n\tdirectory outside of the jail, and thus gain full read and write access\n\tto all files and directories in the system.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2020-25584"
-    ],
-    "freebsd_sa": [
-      "SA-21:10.jail_mount"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-04-06",
-    "entry": "2021-04-07"
-  }
+	"vid": "a7b97d26-9792-11eb-b87a-901b0ef719ab",
+	"topic": "FreeBSD -- jail escape possible by mounting over jail root",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.2_6",
+					"ge": "12.2"
+				},
+				{
+					"lt": "11.4_9",
+					"ge": "11.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to a race condition between lookup of \"..\" and remounting a filesystem,\n\ta process running inside a jail might access filesystem hierarchy outside\n\tof jail.</p>\n\t<h1>Impact:</h1>\n\t<p>A process with superuser privileges running inside a jail configured\n\twith the allow.mount permission (not enabled by default) could change the root\n\tdirectory outside of the jail, and thus gain full read and write access\n\tto all files and directories in the system.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2020-25584"
+		],
+		"freebsd_sa": [
+			"SA-21:10.jail_mount"
+		]
+	},
+	"dates": {
+		"discovery": "2021-04-06",
+		"entry": "2021-04-07"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "vid": "ccd698df-8e20-11d8-90d1-0020ed76ef5a",
-  "topic": "racoon remote denial of service vulnerability (ISAKMP header length field)",
-  "affects": [
-    {
-      "name": [
-        "racoon"
-      ],
-      "range": [
-        {
-          "lt": "20040408a"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>When racoon receives an ISAKMP header, it will attempt to\n\t  allocate sufficient memory for the entire ISAKMP message\n\t  according to the header's length field.  If an attacker\n\t  crafts an ISAKMP header with a ridiculously large value\n\t  in the length field, racoon may exceed operating system\n\t  resource limits and be terminated, resulting in a denial of\n\t  service.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kame.net/dev/cvsweb2.cgi/kame/kame/kame/racoon/isakmp.c.diff?r1=1.180&r2=1.181"
-    ],
-    "cvename": [
-      "CVE-2004-0403"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-03-31",
-    "entry": "2004-04-14"
-  }
+	"vid": "ccd698df-8e20-11d8-90d1-0020ed76ef5a",
+	"topic": "racoon remote denial of service vulnerability (ISAKMP header length field)",
+	"affects": [
+		{
+			"name": [
+				"racoon"
+			],
+			"range": [
+				{
+					"lt": "20040408a"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>When racoon receives an ISAKMP header, it will attempt to\n\t  allocate sufficient memory for the entire ISAKMP message\n\t  according to the header's length field.  If an attacker\n\t  crafts an ISAKMP header with a ridiculously large value\n\t  in the length field, racoon may exceed operating system\n\t  resource limits and be terminated, resulting in a denial of\n\t  service.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kame.net/dev/cvsweb2.cgi/kame/kame/kame/racoon/isakmp.c.diff?r1=1.180&r2=1.181"
+		],
+		"cvename": [
+			"CVE-2004-0403"
+		]
+	},
+	"dates": {
+		"discovery": "2004-03-31",
+		"entry": "2004-04-14"
+	}
 }

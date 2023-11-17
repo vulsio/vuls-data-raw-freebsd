@@ -1,52 +1,52 @@
 {
-  "vid": "5ab9fb2a-23a5-11e0-a835-0003ba02bf30",
-  "topic": "asterisk -- Exploitable Stack Buffer Overflow",
-  "affects": [
-    {
-      "name": [
-        "asterisk14"
-      ],
-      "range": [
-        {
-          "lt": "1.4.39.1",
-          "gt": "1.4.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk16"
-      ],
-      "range": [
-        {
-          "lt": "1.6.2.16.1",
-          "gt": "1.6.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.2.2",
-          "gt": "1.8.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk Development Team reports:</p>\n\t<blockquote cite=\"http://lists.digium.com/pipermail/asterisk-announce/2011-January/000297.html\">\n\t  <p>The releases of Asterisk 1.4.38.1, 1.4.39.1, 1.6.1.21, 1.6.2.15.1,\n\t  1.6.2.16.2, 1.8.1.2, and 1.8.2.1 resolve an issue when forming an\n\t  outgoing SIP request while in pedantic mode, which can cause a stack\n\t  buffer to be made to overflow if supplied with carefully crafted\n\t  caller ID information. The issue and resolution are described in the\n\t  AST-2011-001 security advisory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2011-001.pdf"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-01-18",
-    "entry": "2011-01-19"
-  }
+	"vid": "5ab9fb2a-23a5-11e0-a835-0003ba02bf30",
+	"topic": "asterisk -- Exploitable Stack Buffer Overflow",
+	"affects": [
+		{
+			"name": [
+				"asterisk14"
+			],
+			"range": [
+				{
+					"lt": "1.4.39.1",
+					"gt": "1.4.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk16"
+			],
+			"range": [
+				{
+					"lt": "1.6.2.16.1",
+					"gt": "1.6.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk18"
+			],
+			"range": [
+				{
+					"lt": "1.8.2.2",
+					"gt": "1.8.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk Development Team reports:</p>\n\t<blockquote cite=\"http://lists.digium.com/pipermail/asterisk-announce/2011-January/000297.html\">\n\t  <p>The releases of Asterisk 1.4.38.1, 1.4.39.1, 1.6.1.21, 1.6.2.15.1,\n\t  1.6.2.16.2, 1.8.1.2, and 1.8.2.1 resolve an issue when forming an\n\t  outgoing SIP request while in pedantic mode, which can cause a stack\n\t  buffer to be made to overflow if supplied with carefully crafted\n\t  caller ID information. The issue and resolution are described in the\n\t  AST-2011-001 security advisory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2011-001.pdf"
+		]
+	},
+	"dates": {
+		"discovery": "2011-01-18",
+		"entry": "2011-01-19"
+	}
 }

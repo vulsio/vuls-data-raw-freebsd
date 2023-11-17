@@ -1,57 +1,57 @@
 {
-  "vid": "51436b4c-1250-11dd-bab7-0016179b2dd5",
-  "topic": "postgresql -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "postgresql",
-        "postgresql-server"
-      ],
-      "range": [
-        {
-          "lt": "7.3.21",
-          "ge": "7.3"
-        },
-        {
-          "lt": "7.4.19",
-          "ge": "7.4"
-        },
-        {
-          "lt": "8.0.15",
-          "ge": "8.0"
-        },
-        {
-          "lt": "8.1.11",
-          "ge": "8.1"
-        },
-        {
-          "lt": "8.2.6",
-          "ge": "8.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PostgreSQL developers report:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6600\">\n\t  <p>PostgreSQL allows users to create indexes on the results of\n\t    user-defined functions, known as \"expression indexes\". This provided\n\t    two vulnerabilities to privilege escalation: (1) index functions\n\t    were executed as the superuser and not the table owner during VACUUM\n\t    and ANALYZE, and (2) that SET ROLE and SET SESSION AUTHORIZATION\n\t    were permitted within index functions. Both of these holes have now\n\t    been closed.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4772\">\n\t  <p>PostgreSQL allowed malicious users to initiate a denial-of-service\n\t    by passing certain regular expressions in SQL queries. First, users\n\t    could create infinite loops using some specific regular expressions.\n\t    Second, certain complex regular expressions could consume excessive\n\t    amounts of memory. Third, out-of-range backref numbers could be used\n\t    to crash the backend.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=\">\n\t  <p>DBLink functions combined with local trust or ident authentication\n\t    could be used by a malicious user to gain superuser privileges. This\n\t    issue has been fixed, and does not affect users who have not\n\t    installed DBLink (an optional module), or who are using password\n\t    authentication for local access. This same problem was addressed in\n\t    the previous release cycle, but that patch failed to close all forms\n\t    of the loophole.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.postgresql.org/about/news.905"
-    ],
-    "cvename": [
-      "CVE-2007-6600",
-      "CVE-2007-4772",
-      "CVE-2007-6067",
-      "CVE-2007-4769",
-      "CVE-2007-6601"
-    ],
-    "bid": [
-      "27163"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-01-06",
-    "entry": "2008-04-24"
-  }
+	"vid": "51436b4c-1250-11dd-bab7-0016179b2dd5",
+	"topic": "postgresql -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"postgresql",
+				"postgresql-server"
+			],
+			"range": [
+				{
+					"lt": "7.3.21",
+					"ge": "7.3"
+				},
+				{
+					"lt": "7.4.19",
+					"ge": "7.4"
+				},
+				{
+					"lt": "8.0.15",
+					"ge": "8.0"
+				},
+				{
+					"lt": "8.1.11",
+					"ge": "8.1"
+				},
+				{
+					"lt": "8.2.6",
+					"ge": "8.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PostgreSQL developers report:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6600\">\n\t  <p>PostgreSQL allows users to create indexes on the results of\n\t    user-defined functions, known as \"expression indexes\". This provided\n\t    two vulnerabilities to privilege escalation: (1) index functions\n\t    were executed as the superuser and not the table owner during VACUUM\n\t    and ANALYZE, and (2) that SET ROLE and SET SESSION AUTHORIZATION\n\t    were permitted within index functions. Both of these holes have now\n\t    been closed.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4772\">\n\t  <p>PostgreSQL allowed malicious users to initiate a denial-of-service\n\t    by passing certain regular expressions in SQL queries. First, users\n\t    could create infinite loops using some specific regular expressions.\n\t    Second, certain complex regular expressions could consume excessive\n\t    amounts of memory. Third, out-of-range backref numbers could be used\n\t    to crash the backend.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=\">\n\t  <p>DBLink functions combined with local trust or ident authentication\n\t    could be used by a malicious user to gain superuser privileges. This\n\t    issue has been fixed, and does not affect users who have not\n\t    installed DBLink (an optional module), or who are using password\n\t    authentication for local access. This same problem was addressed in\n\t    the previous release cycle, but that patch failed to close all forms\n\t    of the loophole.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.postgresql.org/about/news.905"
+		],
+		"cvename": [
+			"CVE-2007-6600",
+			"CVE-2007-4772",
+			"CVE-2007-6067",
+			"CVE-2007-4769",
+			"CVE-2007-6601"
+		],
+		"bid": [
+			"27163"
+		]
+	},
+	"dates": {
+		"discovery": "2008-01-06",
+		"entry": "2008-04-24"
+	}
 }

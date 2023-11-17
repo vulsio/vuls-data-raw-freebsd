@@ -1,35 +1,35 @@
 {
-  "vid": "889061af-c427-11d9-ac59-02061b08fc24",
-  "topic": "gaim -- remote crash on some protocols",
-  "affects": [
-    {
-      "name": [
-        "gaim",
-        "ja-gaim",
-        "ko-gaim",
-        "ru-gaim"
-      ],
-      "range": [
-        {
-          "lt": "1.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The GAIM team reports that GAIM is vulnerable to a\n\t  denial-of-service vulnerability which can cause GAIM to\n\t  crash:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/index.php?id=16\">\n\t  <p>It is possible for a remote user to overflow a static\n\t    buffer by sending an IM containing a very large URL\n\t    (greater than 8192 bytes) to the Gaim user. This is not\n\t    possible on all protocols, due to message length\n\t    restrictions. Jabber are SILC are known to be\n\t    vulnerable.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://gaim.sourceforge.net/security/index.php?id=16"
-    ],
-    "cvename": [
-      "CVE-2005-1261"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-10",
-    "entry": "2005-05-14"
-  }
+	"vid": "889061af-c427-11d9-ac59-02061b08fc24",
+	"topic": "gaim -- remote crash on some protocols",
+	"affects": [
+		{
+			"name": [
+				"gaim",
+				"ja-gaim",
+				"ko-gaim",
+				"ru-gaim"
+			],
+			"range": [
+				{
+					"lt": "1.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The GAIM team reports that GAIM is vulnerable to a\n\t  denial-of-service vulnerability which can cause GAIM to\n\t  crash:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/index.php?id=16\">\n\t  <p>It is possible for a remote user to overflow a static\n\t    buffer by sending an IM containing a very large URL\n\t    (greater than 8192 bytes) to the Gaim user. This is not\n\t    possible on all protocols, due to message length\n\t    restrictions. Jabber are SILC are known to be\n\t    vulnerable.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://gaim.sourceforge.net/security/index.php?id=16"
+		],
+		"cvename": [
+			"CVE-2005-1261"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-10",
+		"entry": "2005-05-14"
+	}
 }

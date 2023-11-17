@@ -1,32 +1,32 @@
 {
-  "vid": "b3435b68-9ee8-11e1-997c-002354ed89bc",
-  "topic": "sudo -- netmask vulnerability",
-  "affects": [
-    {
-      "name": [
-        "sudo"
-      ],
-      "range": [
-        {
-          "le": "1.8.4_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.sudo.ws/sudo/alerts/netmask.html\">\n\t  <p>Sudo supports granting access to commands on a per-host basis.\n\t    The host specification may be in the form of a host name, a\n\t    netgroup, an IP address, or an IP network (an IP address with an\n\t    associated netmask).</p>\n\t  <p>When IPv6 support was added to sudo, a bug was introduced that\n\t    caused the IPv6 network matching code to be called when an IPv4\n\t    network address does not match. Depending on the value of the\n\t    uninitialized portion of the IPv6 address, it is possible for the\n\t    IPv4 network number to match when it should not. This bug only\n\t    affects IP network matching and does not affect simple IP address\n\t    matching.</p>\n\t  <p>The reported configuration that exhibited the bug was an\n\t    LDAP-based sudo installation where the sudoRole object contained\n\t    multiple sudoHost entries, each containing a different IPv4\n\t    network. File-based sudoers should be affected as well as the\n\t    same matching code is used.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.sudo.ws/sudo/alerts/netmask.html"
-    ],
-    "cvename": [
-      "CVE-2012-2337"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-05-16",
-    "entry": "2012-05-16"
-  }
+	"vid": "b3435b68-9ee8-11e1-997c-002354ed89bc",
+	"topic": "sudo -- netmask vulnerability",
+	"affects": [
+		{
+			"name": [
+				"sudo"
+			],
+			"range": [
+				{
+					"le": "1.8.4_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Todd Miller reports:</p>\n\t<blockquote cite=\"http://www.sudo.ws/sudo/alerts/netmask.html\">\n\t  <p>Sudo supports granting access to commands on a per-host basis.\n\t    The host specification may be in the form of a host name, a\n\t    netgroup, an IP address, or an IP network (an IP address with an\n\t    associated netmask).</p>\n\t  <p>When IPv6 support was added to sudo, a bug was introduced that\n\t    caused the IPv6 network matching code to be called when an IPv4\n\t    network address does not match. Depending on the value of the\n\t    uninitialized portion of the IPv6 address, it is possible for the\n\t    IPv4 network number to match when it should not. This bug only\n\t    affects IP network matching and does not affect simple IP address\n\t    matching.</p>\n\t  <p>The reported configuration that exhibited the bug was an\n\t    LDAP-based sudo installation where the sudoRole object contained\n\t    multiple sudoHost entries, each containing a different IPv4\n\t    network. File-based sudoers should be affected as well as the\n\t    same matching code is used.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.sudo.ws/sudo/alerts/netmask.html"
+		],
+		"cvename": [
+			"CVE-2012-2337"
+		]
+	},
+	"dates": {
+		"discovery": "2012-05-16",
+		"entry": "2012-05-16"
+	}
 }

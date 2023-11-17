@@ -1,188 +1,188 @@
 {
-  "vid": "f9e3e60b-e650-11d8-9b0a-000347a4fa7d",
-  "topic": "libpng stack-based buffer overflow and other code concerns",
-  "affects": [
-    {
-      "name": [
-        "png"
-      ],
-      "range": [
-        {
-          "le": "1.2.5_7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-png"
-      ],
-      "range": [
-        {
-          "le": "1.0.14_3"
-        },
-        {
-          "ge": "1.2",
-          "le": "1.2.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "0.9.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "0.7.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-mozilla-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2,2"
-        },
-        {
-          "ge": "1.8.a,2",
-          "le": "1.8.a2,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mozilla-gtk1"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape-communicator",
-        "netscape-navigator"
-      ],
-      "range": [
-        {
-          "le": "4.78"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-netscape-communicator",
-        "linux-netscape-navigator",
-        "ko-netscape-navigator-linux",
-        "ko-netscape-communicator-linux",
-        "ja-netscape-communicator-linux",
-        "ja-netscape-navigator-linux"
-      ],
-      "range": [
-        {
-          "le": "4.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "netscape7",
-        "ja-netscape7"
-      ],
-      "range": [
-        {
-          "le": "7.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "pt_BR-netscape7",
-        "fr-netscape7",
-        "de-netscape7"
-      ],
-      "range": [
-        {
-          "le": "7.02"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Chris Evans has discovered multiple vulnerabilities in libpng,\n\t  which can be exploited by malicious people to compromise a\n\t  vulnerable system or cause a DoS (Denial of Service).</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://scary.beasts.org/security/CESA-2004-001.txt",
-      "http://www.osvdb.org/8312",
-      "http://www.osvdb.org/8313",
-      "http://www.osvdb.org/8314",
-      "http://www.osvdb.org/8315",
-      "http://www.osvdb.org/8316",
-      "http://secunia.com/advisories/12219",
-      "http://secunia.com/advisories/12232",
-      "http://bugzilla.mozilla.org/show_bug.cgi?id=251381",
-      "http://dl.sourceforge.net/sourceforge/libpng/ADVISORY.txt"
-    ],
-    "cvename": [
-      "CVE-2004-0597",
-      "CVE-2004-0598",
-      "CVE-2004-0599"
-    ],
-    "mlist": [
-      {
-        "text": "http://www.securityfocus.com/archive/1/370853",
-        "msgid": "Pine.LNX.4.58.0408041840080.20655@sphinx.mythic-beasts.com"
-      }
-    ],
-    "cert_vu": [
-      "388984",
-      "236656",
-      "160448",
-      "477512",
-      "817368",
-      "286464"
-    ],
-    "us_cert_ta": [
-      "TA04-217A"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-04",
-    "entry": "2004-08-04",
-    "modified": "2004-08-15"
-  }
+	"vid": "f9e3e60b-e650-11d8-9b0a-000347a4fa7d",
+	"topic": "libpng stack-based buffer overflow and other code concerns",
+	"affects": [
+		{
+			"name": [
+				"png"
+			],
+			"range": [
+				{
+					"le": "1.2.5_7"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-png"
+			],
+			"range": [
+				{
+					"le": "1.0.14_3"
+				},
+				{
+					"ge": "1.2",
+					"le": "1.2.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "0.9.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"thunderbird"
+			],
+			"range": [
+				{
+					"lt": "0.7.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-mozilla-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla"
+			],
+			"range": [
+				{
+					"lt": "1.7.2,2"
+				},
+				{
+					"ge": "1.8.a,2",
+					"le": "1.8.a2,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"mozilla-gtk1"
+			],
+			"range": [
+				{
+					"lt": "1.7.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape-communicator",
+				"netscape-navigator"
+			],
+			"range": [
+				{
+					"le": "4.78"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-netscape-communicator",
+				"linux-netscape-navigator",
+				"ko-netscape-navigator-linux",
+				"ko-netscape-communicator-linux",
+				"ja-netscape-communicator-linux",
+				"ja-netscape-navigator-linux"
+			],
+			"range": [
+				{
+					"le": "4.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"netscape7",
+				"ja-netscape7"
+			],
+			"range": [
+				{
+					"le": "7.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"pt_BR-netscape7",
+				"fr-netscape7",
+				"de-netscape7"
+			],
+			"range": [
+				{
+					"le": "7.02"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Chris Evans has discovered multiple vulnerabilities in libpng,\n\t  which can be exploited by malicious people to compromise a\n\t  vulnerable system or cause a DoS (Denial of Service).</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://scary.beasts.org/security/CESA-2004-001.txt",
+			"http://www.osvdb.org/8312",
+			"http://www.osvdb.org/8313",
+			"http://www.osvdb.org/8314",
+			"http://www.osvdb.org/8315",
+			"http://www.osvdb.org/8316",
+			"http://secunia.com/advisories/12219",
+			"http://secunia.com/advisories/12232",
+			"http://bugzilla.mozilla.org/show_bug.cgi?id=251381",
+			"http://dl.sourceforge.net/sourceforge/libpng/ADVISORY.txt"
+		],
+		"cvename": [
+			"CVE-2004-0597",
+			"CVE-2004-0598",
+			"CVE-2004-0599"
+		],
+		"mlist": [
+			{
+				"text": "http://www.securityfocus.com/archive/1/370853",
+				"msgid": "Pine.LNX.4.58.0408041840080.20655@sphinx.mythic-beasts.com"
+			}
+		],
+		"cert_vu": [
+			"388984",
+			"236656",
+			"160448",
+			"477512",
+			"817368",
+			"286464"
+		],
+		"us_cert_ta": [
+			"TA04-217A"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-04",
+		"entry": "2004-08-04",
+		"modified": "2004-08-15"
+	}
 }

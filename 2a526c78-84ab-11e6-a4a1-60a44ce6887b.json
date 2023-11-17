@@ -1,54 +1,54 @@
 {
-  "vid": "2a526c78-84ab-11e6-a4a1-60a44ce6887b",
-  "topic": "libgd -- integer overflow which could lead to heap buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "gd"
-      ],
-      "range": [
-        {
-          "le": "2.2.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php70-gd"
-      ],
-      "range": [
-        {
-          "le": "7.0.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php56-gd"
-      ],
-      "range": [
-        {
-          "le": "5.6.26"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n       <p>LibGD reports:</p>\n       <blockquote cite=\"https://github.com/libgd/libgd/issues/308\">\n\t <p>An integer overflow issue was found in function gdImageWebpCtx of file gd_webp.c which could lead to heap buffer overflow.</p>\n       </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/libgd/libgd/issues/308",
-      "https://bugs.php.net/bug.php?id=73003"
-    ],
-    "freebsd_pr": [
-      "ports/213023"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-09-02",
-    "entry": "2016-10-11",
-    "modified": "2016-10-18"
-  }
+	"vid": "2a526c78-84ab-11e6-a4a1-60a44ce6887b",
+	"topic": "libgd -- integer overflow which could lead to heap buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"gd"
+			],
+			"range": [
+				{
+					"le": "2.2.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"php70-gd"
+			],
+			"range": [
+				{
+					"le": "7.0.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"php56-gd"
+			],
+			"range": [
+				{
+					"le": "5.6.26"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>LibGD reports:</p>\n       <blockquote cite=\"https://github.com/libgd/libgd/issues/308\">\n\t <p>An integer overflow issue was found in function gdImageWebpCtx of file gd_webp.c which could lead to heap buffer overflow.</p>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/libgd/libgd/issues/308",
+			"https://bugs.php.net/bug.php?id=73003"
+		],
+		"freebsd_pr": [
+			"ports/213023"
+		]
+	},
+	"dates": {
+		"discovery": "2016-09-02",
+		"entry": "2016-10-11",
+		"modified": "2016-10-18"
+	}
 }

@@ -1,34 +1,34 @@
 {
-  "vid": "0ca24682-3f03-11e6-b3c8-14dae9d210b8",
-  "topic": "openssl -- denial of service",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.2_14"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2177\">\n\t  <p>OpenSSL through 1.0.2h incorrectly uses pointer arithmetic\n\t    for heap-buffer boundary checks, which might allow remote attackers to\n\t    cause a denial of service (integer overflow and application crash) or\n\t    possibly have unspecified other impact by leveraging unexpected malloc\n\t    behavior, related to s3_srvr.c, ssl_sess.c, and t1_lib.c.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2177",
-      "ihttps://bugzilla.redhat.com/show_bug.cgi?id=1341705",
-      "https://www.openssl.org/blog/blog/2016/06/27/undefined-pointer-arithmetic/"
-    ],
-    "cvename": [
-      "CVE-2016-2177"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-06-01",
-    "entry": "2016-06-30"
-  }
+	"vid": "0ca24682-3f03-11e6-b3c8-14dae9d210b8",
+	"topic": "openssl -- denial of service",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.2_14"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2177\">\n\t  <p>OpenSSL through 1.0.2h incorrectly uses pointer arithmetic\n\t    for heap-buffer boundary checks, which might allow remote attackers to\n\t    cause a denial of service (integer overflow and application crash) or\n\t    possibly have unspecified other impact by leveraging unexpected malloc\n\t    behavior, related to s3_srvr.c, ssl_sess.c, and t1_lib.c.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2177",
+			"ihttps://bugzilla.redhat.com/show_bug.cgi?id=1341705",
+			"https://www.openssl.org/blog/blog/2016/06/27/undefined-pointer-arithmetic/"
+		],
+		"cvename": [
+			"CVE-2016-2177"
+		]
+	},
+	"dates": {
+		"discovery": "2016-06-01",
+		"entry": "2016-06-30"
+	}
 }

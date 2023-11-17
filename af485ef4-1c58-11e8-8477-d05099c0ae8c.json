@@ -1,70 +1,70 @@
 {
-  "vid": "af485ef4-1c58-11e8-8477-d05099c0ae8c",
-  "topic": "ntp -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.1_7",
-          "ge": "11.1"
-        },
-        {
-          "lt": "10.4_6",
-          "ge": "10.4"
-        },
-        {
-          "lt": "10.3_27",
-          "ge": "10.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ntp"
-      ],
-      "range": [
-        {
-          "lt": "4.2.8p11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ntp-devel"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Network Time Foundation reports:</p>\n\t<blockquote cite=\"http://support.ntp.org/bin/view/Main/SecurityNotice#February_2018_ntp_4_2_8p11_NTP_S\">\n\t  <p>The NTP Project at Network Time Foundation is releasing ntp-4.2.8p11.</p>\n\t  <p>This release addresses five security issues in ntpd:</p>\n\t  <ul>\n\t    <li>LOW/MEDIUM: Sec 3012 / CVE-2016-1549 / VU#961909: Sybil\n\t      vulnerability: ephemeral association attack</li>\n\t    <li>INFO/MEDIUM: Sec 3412 / CVE-2018-7182 / VU#961909:\n\t      ctl_getitem(): buffer read overrun leads to undefined\n\t      behavior and information leak</li>\n\t    <li>LOW: Sec 3415 / CVE-2018-7170 / VU#961909: Multiple\n\t      authenticated ephemeral associations</li>\n\t    <li>LOW: Sec 3453 / CVE-2018-7184 / VU#961909: Interleaved\n\t      symmetric mode cannot recover from bad state</li>\n\t    <li>LOW/MEDIUM: Sec 3454 / CVE-2018-7185 / VU#961909:\n\t      Unauthenticated packet can reset authenticated interleaved\n\t      association</li>\n\t  </ul>\n\t  <p>one security issue in ntpq:</p>\n\t  <ul>\n\t    <li>MEDIUM: Sec 3414 / CVE-2018-7183 / VU#961909:\n\t      ntpq:decodearr() can write beyond its buffer limit</li>\n\t  </ul>\n\t  <p>and provides over 33 bugfixes and 32 other improvements.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://support.ntp.org/bin/view/Main/SecurityNotice#February_2018_ntp_4_2_8p11_NTP_S"
-    ],
-    "cvename": [
-      "CVE-2016-1549",
-      "CVE-2018-7182",
-      "CVE-2018-7170",
-      "CVE-2018-7184",
-      "CVE-2018-7185",
-      "CVE-2018-7183"
-    ],
-    "freebsd_sa": [
-      "SA-18:02.ntp"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-02-27",
-    "entry": "2018-02-28",
-    "modified": "2018-03-14"
-  }
+	"vid": "af485ef4-1c58-11e8-8477-d05099c0ae8c",
+	"topic": "ntp -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.1_7",
+					"ge": "11.1"
+				},
+				{
+					"lt": "10.4_6",
+					"ge": "10.4"
+				},
+				{
+					"lt": "10.3_27",
+					"ge": "10.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"ntp"
+			],
+			"range": [
+				{
+					"lt": "4.2.8p11"
+				}
+			]
+		},
+		{
+			"name": [
+				"ntp-devel"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Network Time Foundation reports:</p>\n\t<blockquote cite=\"http://support.ntp.org/bin/view/Main/SecurityNotice#February_2018_ntp_4_2_8p11_NTP_S\">\n\t  <p>The NTP Project at Network Time Foundation is releasing ntp-4.2.8p11.</p>\n\t  <p>This release addresses five security issues in ntpd:</p>\n\t  <ul>\n\t    <li>LOW/MEDIUM: Sec 3012 / CVE-2016-1549 / VU#961909: Sybil\n\t      vulnerability: ephemeral association attack</li>\n\t    <li>INFO/MEDIUM: Sec 3412 / CVE-2018-7182 / VU#961909:\n\t      ctl_getitem(): buffer read overrun leads to undefined\n\t      behavior and information leak</li>\n\t    <li>LOW: Sec 3415 / CVE-2018-7170 / VU#961909: Multiple\n\t      authenticated ephemeral associations</li>\n\t    <li>LOW: Sec 3453 / CVE-2018-7184 / VU#961909: Interleaved\n\t      symmetric mode cannot recover from bad state</li>\n\t    <li>LOW/MEDIUM: Sec 3454 / CVE-2018-7185 / VU#961909:\n\t      Unauthenticated packet can reset authenticated interleaved\n\t      association</li>\n\t  </ul>\n\t  <p>one security issue in ntpq:</p>\n\t  <ul>\n\t    <li>MEDIUM: Sec 3414 / CVE-2018-7183 / VU#961909:\n\t      ntpq:decodearr() can write beyond its buffer limit</li>\n\t  </ul>\n\t  <p>and provides over 33 bugfixes and 32 other improvements.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://support.ntp.org/bin/view/Main/SecurityNotice#February_2018_ntp_4_2_8p11_NTP_S"
+		],
+		"cvename": [
+			"CVE-2016-1549",
+			"CVE-2018-7182",
+			"CVE-2018-7170",
+			"CVE-2018-7184",
+			"CVE-2018-7185",
+			"CVE-2018-7183"
+		],
+		"freebsd_sa": [
+			"SA-18:02.ntp"
+		]
+	},
+	"dates": {
+		"discovery": "2018-02-27",
+		"entry": "2018-02-28",
+		"modified": "2018-03-14"
+	}
 }

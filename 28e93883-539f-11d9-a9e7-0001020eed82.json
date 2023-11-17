@@ -1,39 +1,39 @@
 {
-  "vid": "28e93883-539f-11d9-a9e7-0001020eed82",
-  "topic": "acroread5 -- mailListIsPdf() buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "acroread",
-        "acroread4",
-        "acroread5"
-      ],
-      "range": [
-        {
-          "lt": "5.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>An iDEFENSE Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.idefense.com/application/poi/display?id=161&amp;type=vulnerabilities\">\n\t  <p>Remote exploitation of a buffer overflow in version 5.09\n\t    of Adobe Acrobat Reader for Unix could allow for execution\n\t    of arbitrary code.</p>\n\t  <p>The vulnerability specifically exists in a the function\n\t    mailListIsPdf().  This function checks if the input file\n\t    is an email message containing a PDF. It unsafely copies\n\t    user supplied data using strcat into a fixed sized\n\t    buffer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.adobe.com/support/techdocs/331153.html",
-      "http://www.idefense.com/application/poi/display?id=161&type=vulnerabilities"
-    ],
-    "cvename": [
-      "CVE-2004-1152"
-    ],
-    "cert_vu": [
-      "253024"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-14",
-    "entry": "2004-12-21",
-    "modified": "2005-01-06"
-  }
+	"vid": "28e93883-539f-11d9-a9e7-0001020eed82",
+	"topic": "acroread5 -- mailListIsPdf() buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"acroread",
+				"acroread4",
+				"acroread5"
+			],
+			"range": [
+				{
+					"lt": "5.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>An iDEFENSE Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.idefense.com/application/poi/display?id=161&amp;type=vulnerabilities\">\n\t  <p>Remote exploitation of a buffer overflow in version 5.09\n\t    of Adobe Acrobat Reader for Unix could allow for execution\n\t    of arbitrary code.</p>\n\t  <p>The vulnerability specifically exists in a the function\n\t    mailListIsPdf().  This function checks if the input file\n\t    is an email message containing a PDF. It unsafely copies\n\t    user supplied data using strcat into a fixed sized\n\t    buffer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.adobe.com/support/techdocs/331153.html",
+			"http://www.idefense.com/application/poi/display?id=161&type=vulnerabilities"
+		],
+		"cvename": [
+			"CVE-2004-1152"
+		],
+		"cert_vu": [
+			"253024"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-14",
+		"entry": "2004-12-21",
+		"modified": "2005-01-06"
+	}
 }

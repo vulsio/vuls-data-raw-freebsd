@@ -1,33 +1,33 @@
 {
-  "vid": "6540c8f0-dca3-11e5-8fa8-14dae9d210b8",
-  "topic": "pitivi -- code execution",
-  "affects": [
-    {
-      "name": [
-        "pitivi"
-      ],
-      "range": [
-        {
-          "lt": "0.95"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Luke Farone reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/12/23/8\">\n\t  <p>Double-clicking a file in the user's media library with a\n\t    specially-crafted path or filename allows for arbitrary code execution\n\t    with the permissions of the user running Pitivi.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2015/12/23/8",
-      "https://git.gnome.org/browse/pitivi/commit/?id=45a4c84edb3b4343f199bba1c65502e3f49f5bb2"
-    ],
-    "cvename": [
-      "CVE-2015-0855"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-09-13",
-    "entry": "2016-02-26"
-  }
+	"vid": "6540c8f0-dca3-11e5-8fa8-14dae9d210b8",
+	"topic": "pitivi -- code execution",
+	"affects": [
+		{
+			"name": [
+				"pitivi"
+			],
+			"range": [
+				{
+					"lt": "0.95"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Luke Farone reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/12/23/8\">\n\t  <p>Double-clicking a file in the user's media library with a\n\t    specially-crafted path or filename allows for arbitrary code execution\n\t    with the permissions of the user running Pitivi.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2015/12/23/8",
+			"https://git.gnome.org/browse/pitivi/commit/?id=45a4c84edb3b4343f199bba1c65502e3f49f5bb2"
+		],
+		"cvename": [
+			"CVE-2015-0855"
+		]
+	},
+	"dates": {
+		"discovery": "2015-09-13",
+		"entry": "2016-02-26"
+	}
 }

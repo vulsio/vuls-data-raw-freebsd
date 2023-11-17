@@ -1,38 +1,38 @@
 {
-  "vid": "e72a8864-e0bc-11e7-b627-d43d7e971a1b",
-  "topic": "GitLab -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "gitlab"
-      ],
-      "range": [
-        {
-          "ge": "4.2.0",
-          "le": "10.0.6"
-        },
-        {
-          "ge": "10.1.0",
-          "le": "10.1.4"
-        },
-        {
-          "ge": "10.2.0",
-          "le": "10.2.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>GitLab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2017/12/08/gitlab-10-dot-2-dot-4-security-release/\">\n    <h1>User without access to private Wiki can see it on the project page</h1>\n\t  <p>Matthias Burtscher reported that it was possible for a user to see a\n\t  private Wiki on the project page without having the corresponding\n\t  permission.</p>\n    <h1>E-mail address disclosure through member search fields</h1>\n    <p>Hugo Geoffroy reported via HackerOne that it was possible to find out the\n    full e-mail address of any user by brute-forcing the member search\n    field.</p>\n    <h1>Groups API leaks private projects</h1>\n    <p>An internal code review discovered that users were able to list private\n    projects they had no access to by using the Groups API.</p>\n    <h1>Cross-Site Scripting (XSS) possible by editing a comment</h1>\n    <p>Sylvain Heiniger reported via HackerOne that it was possible for\n    arbitrary JavaScript code to be executed when editing a comment.</p>\n    <h1>Issue API allows any user to create a new issue even when issues are\n    restricted or disabled</h1>\n    <p>Mohammad Hasbini reported that any user could create a new issues in a\n    project even when issues were disabled or restricted to team members in the\n    project settings.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://about.gitlab.com/2017/12/08/gitlab-10-dot-2-dot-4-security-release/"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-12-08",
-    "entry": "2017-12-14"
-  }
+	"vid": "e72a8864-e0bc-11e7-b627-d43d7e971a1b",
+	"topic": "GitLab -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab"
+			],
+			"range": [
+				{
+					"ge": "4.2.0",
+					"le": "10.0.6"
+				},
+				{
+					"ge": "10.1.0",
+					"le": "10.1.4"
+				},
+				{
+					"ge": "10.2.0",
+					"le": "10.2.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GitLab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/2017/12/08/gitlab-10-dot-2-dot-4-security-release/\">\n    <h1>User without access to private Wiki can see it on the project page</h1>\n\t  <p>Matthias Burtscher reported that it was possible for a user to see a\n\t  private Wiki on the project page without having the corresponding\n\t  permission.</p>\n    <h1>E-mail address disclosure through member search fields</h1>\n    <p>Hugo Geoffroy reported via HackerOne that it was possible to find out the\n    full e-mail address of any user by brute-forcing the member search\n    field.</p>\n    <h1>Groups API leaks private projects</h1>\n    <p>An internal code review discovered that users were able to list private\n    projects they had no access to by using the Groups API.</p>\n    <h1>Cross-Site Scripting (XSS) possible by editing a comment</h1>\n    <p>Sylvain Heiniger reported via HackerOne that it was possible for\n    arbitrary JavaScript code to be executed when editing a comment.</p>\n    <h1>Issue API allows any user to create a new issue even when issues are\n    restricted or disabled</h1>\n    <p>Mohammad Hasbini reported that any user could create a new issues in a\n    project even when issues were disabled or restricted to team members in the\n    project settings.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/2017/12/08/gitlab-10-dot-2-dot-4-security-release/"
+		]
+	},
+	"dates": {
+		"discovery": "2017-12-08",
+		"entry": "2017-12-14"
+	}
 }

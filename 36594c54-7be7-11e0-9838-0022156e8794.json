@@ -1,40 +1,40 @@
 {
-  "vid": "36594c54-7be7-11e0-9838-0022156e8794",
-  "topic": "Exim -- remote code execution and information disclosure",
-  "affects": [
-    {
-      "name": [
-        "exim"
-      ],
-      "range": [
-        {
-          "lt": "4.76",
-          "ge": "4.70"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Release notes for Exim 4.76 says:</p>\n\t<blockquote cite=\"ftp://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.76\">\n\t  <p>Bugzilla 1106: CVE-2011-1764 - DKIM log line was subject to\n\t    a format-string attack -- SECURITY: remote arbitrary code\n\t    execution.</p>\n\t  <p>DKIM signature header parsing was double-expanded, second\n\t    time unintentionally subject to list matching rules, letting\n\t    the header cause arbitrary Exim lookups (of items which can\n\t    occur in lists, *not* arbitrary string expansion).  This\n\t    allowed for information disclosure.</p>\n\t</blockquote>\n\t<p>Also, impact assessment was redone shortly after the original\n\t  announcement:</p>\n\t<blockquote cite=\"https://lists.exim.org/lurker/message/20110512.102909.8136175a.en.html\">\n\t  <p>Further analysis revealed that the second security was\n\t    more severe than I realised at the time that I wrote the\n\t    announcement.  The second security issue has been assigned\n\t    CVE-2011-1407 and is also a remote code execution flaw.\n\t    For clarity: both issues were introduced with 4.70.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.exim.org/show_bug.cgi?id=1106"
-    ],
-    "cvename": [
-      "CVE-2011-1764",
-      "CVE-2011-1407"
-    ],
-    "mlist": [
-      {
-        "text": "https://lists.exim.org/lurker/message/20110512.102909.8136175a.en.html",
-        "msgid": "20110512102909.GA58484@redoubt.spodhuis.org"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2011-05-10",
-    "entry": "2011-05-14"
-  }
+	"vid": "36594c54-7be7-11e0-9838-0022156e8794",
+	"topic": "Exim -- remote code execution and information disclosure",
+	"affects": [
+		{
+			"name": [
+				"exim"
+			],
+			"range": [
+				{
+					"lt": "4.76",
+					"ge": "4.70"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Release notes for Exim 4.76 says:</p>\n\t<blockquote cite=\"ftp://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.76\">\n\t  <p>Bugzilla 1106: CVE-2011-1764 - DKIM log line was subject to\n\t    a format-string attack -- SECURITY: remote arbitrary code\n\t    execution.</p>\n\t  <p>DKIM signature header parsing was double-expanded, second\n\t    time unintentionally subject to list matching rules, letting\n\t    the header cause arbitrary Exim lookups (of items which can\n\t    occur in lists, *not* arbitrary string expansion).  This\n\t    allowed for information disclosure.</p>\n\t</blockquote>\n\t<p>Also, impact assessment was redone shortly after the original\n\t  announcement:</p>\n\t<blockquote cite=\"https://lists.exim.org/lurker/message/20110512.102909.8136175a.en.html\">\n\t  <p>Further analysis revealed that the second security was\n\t    more severe than I realised at the time that I wrote the\n\t    announcement.  The second security issue has been assigned\n\t    CVE-2011-1407 and is also a remote code execution flaw.\n\t    For clarity: both issues were introduced with 4.70.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.exim.org/show_bug.cgi?id=1106"
+		],
+		"cvename": [
+			"CVE-2011-1764",
+			"CVE-2011-1407"
+		],
+		"mlist": [
+			{
+				"text": "https://lists.exim.org/lurker/message/20110512.102909.8136175a.en.html",
+				"msgid": "20110512102909.GA58484@redoubt.spodhuis.org"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2011-05-10",
+		"entry": "2011-05-14"
+	}
 }

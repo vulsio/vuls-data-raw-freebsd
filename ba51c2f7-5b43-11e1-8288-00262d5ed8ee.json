@@ -1,43 +1,43 @@
 {
-  "vid": "ba51c2f7-5b43-11e1-8288-00262d5ed8ee",
-  "topic": "plib -- remote code execution via buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "torcs"
-      ],
-      "range": [
-        {
-          "lt": "1.3.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "plib"
-      ],
-      "range": [
-        {
-          "le": "1.8.5_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/47297/\">\n\t  <p>A vulnerability has been discovered in PLIB, which can be\n\t    exploited by malicious people to compromise an application using\n\t    the library.</p>\n\t  <p>The vulnerability is caused due to a boundary error within the\n\t    \"ulSetError()\" function (src/util/ulError.cxx) when creating the\n\t    error message, which can be exploited to overflow a static\n\t    buffer.</p>\n\t  <p>Successful exploitation allows the execution of arbitrary code\n\t    but requires that the attacker can e.g. control the content of\n\t    an overly long error message passed to the \"ulSetError()\"\n\t    function.</p>\n\t  <p>The vulnerability is confirmed in version 1.8.5.  Other versions\n\t    may also be affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/47297/",
-      "http://torcs.sourceforge.net/index.php?name=News&file=article&sid=79"
-    ],
-    "cvename": [
-      "CVE-2011-4620"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-12-21",
-    "entry": "2012-02-19"
-  }
+	"vid": "ba51c2f7-5b43-11e1-8288-00262d5ed8ee",
+	"topic": "plib -- remote code execution via buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"torcs"
+			],
+			"range": [
+				{
+					"lt": "1.3.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"plib"
+			],
+			"range": [
+				{
+					"le": "1.8.5_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/47297/\">\n\t  <p>A vulnerability has been discovered in PLIB, which can be\n\t    exploited by malicious people to compromise an application using\n\t    the library.</p>\n\t  <p>The vulnerability is caused due to a boundary error within the\n\t    \"ulSetError()\" function (src/util/ulError.cxx) when creating the\n\t    error message, which can be exploited to overflow a static\n\t    buffer.</p>\n\t  <p>Successful exploitation allows the execution of arbitrary code\n\t    but requires that the attacker can e.g. control the content of\n\t    an overly long error message passed to the \"ulSetError()\"\n\t    function.</p>\n\t  <p>The vulnerability is confirmed in version 1.8.5.  Other versions\n\t    may also be affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/47297/",
+			"http://torcs.sourceforge.net/index.php?name=News&file=article&sid=79"
+		],
+		"cvename": [
+			"CVE-2011-4620"
+		]
+	},
+	"dates": {
+		"discovery": "2011-12-21",
+		"entry": "2012-02-19"
+	}
 }

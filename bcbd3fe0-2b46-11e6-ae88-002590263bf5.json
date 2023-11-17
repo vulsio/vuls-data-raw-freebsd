@@ -1,37 +1,37 @@
 {
-  "vid": "bcbd3fe0-2b46-11e6-ae88-002590263bf5",
-  "topic": "openafs -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openafs"
-      ],
-      "range": [
-        {
-          "lt": "1.6.17"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenAFS development team reports:</p>\n\t<blockquote cite=\"http://www.openafs.org/pages/security/OPENAFS-SA-2016-001.txt\">\n\t  <p>Foreign users can bypass access controls to create groups as\n\t    system:administrators, including in the user namespace and the\n\t    system: namespace.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.openafs.org/pages/security/OPENAFS-SA-2016-002.txt\">\n\t  <p>The contents of uninitialized memory are sent on the wire when\n\t    clients perform certain RPCs.  Depending on the RPC, the information\n\t    leaked may come from kernel memory or userspace.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openafs.org/pages/security/OPENAFS-SA-2016-001.txt",
-      "http://www.openafs.org/pages/security/OPENAFS-SA-2016-002.txt"
-    ],
-    "cvename": [
-      "CVE-2016-2860",
-      "CVE-2016-4536"
-    ],
-    "freebsd_pr": [
-      "ports/209534"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-16",
-    "entry": "2016-06-05"
-  }
+	"vid": "bcbd3fe0-2b46-11e6-ae88-002590263bf5",
+	"topic": "openafs -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openafs"
+			],
+			"range": [
+				{
+					"lt": "1.6.17"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenAFS development team reports:</p>\n\t<blockquote cite=\"http://www.openafs.org/pages/security/OPENAFS-SA-2016-001.txt\">\n\t  <p>Foreign users can bypass access controls to create groups as\n\t    system:administrators, including in the user namespace and the\n\t    system: namespace.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.openafs.org/pages/security/OPENAFS-SA-2016-002.txt\">\n\t  <p>The contents of uninitialized memory are sent on the wire when\n\t    clients perform certain RPCs.  Depending on the RPC, the information\n\t    leaked may come from kernel memory or userspace.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openafs.org/pages/security/OPENAFS-SA-2016-001.txt",
+			"http://www.openafs.org/pages/security/OPENAFS-SA-2016-002.txt"
+		],
+		"cvename": [
+			"CVE-2016-2860",
+			"CVE-2016-4536"
+		],
+		"freebsd_pr": [
+			"ports/209534"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-16",
+		"entry": "2016-06-05"
+	}
 }

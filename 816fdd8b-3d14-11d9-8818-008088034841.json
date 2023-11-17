@@ -1,33 +1,33 @@
 {
-  "vid": "816fdd8b-3d14-11d9-8818-008088034841",
-  "topic": "Cyrus IMAPd -- IMAPMAGICPLUS preauthentification overflow",
-  "affects": [
-    {
-      "name": [
-        "cyrus-imapd"
-      ],
-      "range": [
-        {
-          "ge": "2.2.4",
-          "le": "2.2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>When the option imapmagicplus is activated on a server the\n\t  PROXY and LOGIN commands suffer a standard stack overflow,\n\t  because the username is not checked against a maximum length\n\t  when it is copied into a temporary stack buffer. This bug is\n\t  especially dangerous because it can be triggered before any\n\t  kind of authentification took place.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://security.e-matters.de/advisories/152004.html"
-    ],
-    "cvename": [
-      "CVE-2004-1011"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-11-06",
-    "entry": "2004-11-22"
-  }
+	"vid": "816fdd8b-3d14-11d9-8818-008088034841",
+	"topic": "Cyrus IMAPd -- IMAPMAGICPLUS preauthentification overflow",
+	"affects": [
+		{
+			"name": [
+				"cyrus-imapd"
+			],
+			"range": [
+				{
+					"ge": "2.2.4",
+					"le": "2.2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>When the option imapmagicplus is activated on a server the\n\t  PROXY and LOGIN commands suffer a standard stack overflow,\n\t  because the username is not checked against a maximum length\n\t  when it is copied into a temporary stack buffer. This bug is\n\t  especially dangerous because it can be triggered before any\n\t  kind of authentification took place.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://security.e-matters.de/advisories/152004.html"
+		],
+		"cvename": [
+			"CVE-2004-1011"
+		]
+	},
+	"dates": {
+		"discovery": "2004-11-06",
+		"entry": "2004-11-22"
+	}
 }

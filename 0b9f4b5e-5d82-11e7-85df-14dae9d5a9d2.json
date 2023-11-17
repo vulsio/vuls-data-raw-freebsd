@@ -1,44 +1,44 @@
 {
-  "vid": "0b9f4b5e-5d82-11e7-85df-14dae9d5a9d2",
-  "topic": "tor -- security regression",
-  "affects": [
-    {
-      "name": [
-        "tor"
-      ],
-      "range": [
-        {
-          "lt": "0.3.0.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tor-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.3.1.4.a"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Tor Project reports:</p>\n\t<blockquote cite=\"https://lists.torproject.org/pipermail/tor-announce/2017-June/000133.html\">\n\t  <p>Tor 0.3.0.9 fixes a path selection bug that would allow a client\n\t    to use a guard that was in the same network family as a chosen exit\n\t    relay. This is a security regression; all clients running earlier\n\t    versions of 0.3.0.x or 0.3.1.x should upgrade to 0.3.0.9 or\n\t    0.3.1.4-alpha.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.torproject.org/blog/tor-0309-released-security-update-clients",
-      "https://blog.torproject.org/blog/tor-0314-alpha-released-security-update-clients",
-      "https://lists.torproject.org/pipermail/tor-announce/2017-June/000133.html"
-    ],
-    "cvename": [
-      "CVE-2017-0377"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-06-29",
-    "entry": "2017-06-30"
-  }
+	"vid": "0b9f4b5e-5d82-11e7-85df-14dae9d5a9d2",
+	"topic": "tor -- security regression",
+	"affects": [
+		{
+			"name": [
+				"tor"
+			],
+			"range": [
+				{
+					"lt": "0.3.0.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"tor-devel"
+			],
+			"range": [
+				{
+					"lt": "0.3.1.4.a"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Tor Project reports:</p>\n\t<blockquote cite=\"https://lists.torproject.org/pipermail/tor-announce/2017-June/000133.html\">\n\t  <p>Tor 0.3.0.9 fixes a path selection bug that would allow a client\n\t    to use a guard that was in the same network family as a chosen exit\n\t    relay. This is a security regression; all clients running earlier\n\t    versions of 0.3.0.x or 0.3.1.x should upgrade to 0.3.0.9 or\n\t    0.3.1.4-alpha.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.torproject.org/blog/tor-0309-released-security-update-clients",
+			"https://blog.torproject.org/blog/tor-0314-alpha-released-security-update-clients",
+			"https://lists.torproject.org/pipermail/tor-announce/2017-June/000133.html"
+		],
+		"cvename": [
+			"CVE-2017-0377"
+		]
+	},
+	"dates": {
+		"discovery": "2017-06-29",
+		"entry": "2017-06-30"
+	}
 }

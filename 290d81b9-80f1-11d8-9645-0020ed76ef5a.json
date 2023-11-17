@@ -1,36 +1,36 @@
 {
-  "vid": "290d81b9-80f1-11d8-9645-0020ed76ef5a",
-  "topic": "oftpd denial-of-service vulnerability (PORT command)",
-  "affects": [
-    {
-      "name": [
-        "oftpd"
-      ],
-      "range": [
-        {
-          "lt": "0.3.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Philippe Oechslin reported a denial-of-service vulnerability\n\t  in oftpd.  The oftpd server can be crashed by sending a PORT\n\t  command containing an integer over 8 bits long (over 255).</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.time-travellers.org/oftpd/oftpd-dos.html"
-    ],
-    "cvename": [
-      "CVE-2004-0376"
-    ],
-    "bid": [
-      "9980"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-03-04",
-    "entry": "2004-03-28",
-    "modified": "2004-04-05"
-  }
+	"vid": "290d81b9-80f1-11d8-9645-0020ed76ef5a",
+	"topic": "oftpd denial-of-service vulnerability (PORT command)",
+	"affects": [
+		{
+			"name": [
+				"oftpd"
+			],
+			"range": [
+				{
+					"lt": "0.3.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Philippe Oechslin reported a denial-of-service vulnerability\n\t  in oftpd.  The oftpd server can be crashed by sending a PORT\n\t  command containing an integer over 8 bits long (over 255).</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.time-travellers.org/oftpd/oftpd-dos.html"
+		],
+		"cvename": [
+			"CVE-2004-0376"
+		],
+		"bid": [
+			"9980"
+		]
+	},
+	"dates": {
+		"discovery": "2004-03-04",
+		"entry": "2004-03-28",
+		"modified": "2004-04-05"
+	}
 }

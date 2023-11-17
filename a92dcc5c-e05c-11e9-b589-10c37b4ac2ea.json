@@ -1,42 +1,42 @@
 {
-  "vid": "a92dcc5c-e05c-11e9-b589-10c37b4ac2ea",
-  "topic": "go -- invalid headers are normalized, allowing request smuggling",
-  "affects": [
-    {
-      "name": [
-        "go"
-      ],
-      "range": [
-        {
-          "lt": "1.13.1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "go-devel"
-      ],
-      "range": [
-        {
-          "lt": "g20190925"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/34540\">\n\t  <p>net/http (through net/textproto) used to accept and normalize invalid\n\t    HTTP/1.1 headers with a space before the colon, in violation of RFC 7230.\n\t    If a Go server is used behind a reverse proxy that accepts and forwards\n\t    but doesn't normalize such invalid headers, the reverse proxy and the\n\t    server can interpret the headers differently. This can lead to filter\n\t    bypasses or request smuggling, the latter if requests from separate clients\n\t    are multiplexed onto the same connection by the proxy. Such invalid headers\n\t    are now rejected by Go servers, and passed without normalization to Go\n\t    client applications.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/golang/go/issues/34540"
-    ],
-    "cvename": [
-      "CVE-2019-16276"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-09-25",
-    "entry": "2019-09-26"
-  }
+	"vid": "a92dcc5c-e05c-11e9-b589-10c37b4ac2ea",
+	"topic": "go -- invalid headers are normalized, allowing request smuggling",
+	"affects": [
+		{
+			"name": [
+				"go"
+			],
+			"range": [
+				{
+					"lt": "1.13.1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"go-devel"
+			],
+			"range": [
+				{
+					"lt": "g20190925"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://github.com/golang/go/issues/34540\">\n\t  <p>net/http (through net/textproto) used to accept and normalize invalid\n\t    HTTP/1.1 headers with a space before the colon, in violation of RFC 7230.\n\t    If a Go server is used behind a reverse proxy that accepts and forwards\n\t    but doesn't normalize such invalid headers, the reverse proxy and the\n\t    server can interpret the headers differently. This can lead to filter\n\t    bypasses or request smuggling, the latter if requests from separate clients\n\t    are multiplexed onto the same connection by the proxy. Such invalid headers\n\t    are now rejected by Go servers, and passed without normalization to Go\n\t    client applications.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/golang/go/issues/34540"
+		],
+		"cvename": [
+			"CVE-2019-16276"
+		]
+	},
+	"dates": {
+		"discovery": "2019-09-25",
+		"entry": "2019-09-26"
+	}
 }

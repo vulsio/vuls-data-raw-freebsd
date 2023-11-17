@@ -1,34 +1,34 @@
 {
-  "vid": "36a35d83-c560-11eb-84ab-e0d55e2a8bf9",
-  "topic": "polkit -- local privilege escalation using polkit_system_bus_name_get_creds_sync",
-  "affects": [
-    {
-      "name": [
-        "polkit"
-      ],
-      "range": [
-        {
-          "lt": "0.119"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Cedric Buissart reports:</p>\n\t<blockquote cite=\"https://seclists.org/oss-sec/2021/q2/180\">\n\t  <p>The function <code>polkit_system_bus_name_get_creds_sync</code> is used to get the\n\t  uid and pid of the process requesting the action. It does this by\n\t  sending the unique bus name of the requesting process, which is\n\t  typically something like \":1.96\", to <code>dbus-daemon</code>. These unique names\n\t  are assigned and managed by <code>dbus-daemon</code> and cannot be forged, so this\n\t  is a good way to check the privileges of the requesting process.</p>\n\t  <p>The vulnerability happens when the requesting process disconnects from\n\t  <code>dbus-daemon</code> just before the call to\n\t  <code>polkit_system_bus_name_get_creds_sync</code> starts. In this scenario, the\n\t  unique bus name is no longer valid, so <code>dbus-daemon</code> sends back an error\n\t  reply. This error case is handled in\n\t  <code>polkit_system_bus_name_get_creds_sync</code> by setting the value of the\n\t  <code>error</code> parameter, but it still returns <code>TRUE</code>, rather than <code>FALSE</code>.\n\t  This behavior means that all callers of\n\t  <code>polkit_system_bus_name_get_creds_sync</code> need to carefully check whether\n\t  an error was set. If the calling function forgets to check for errors\n\t  then it will think that the uid of the requesting process is 0 (because\n\t  the <code>AsyncGetBusNameCredsData</code> struct is zero initialized). In other\n\t  words, it will think that the action was requested by a root process,\n\t  and will therefore allow it.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://seclists.org/oss-sec/2021/q2/180",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3560",
-      "https://gitlab.freedesktop.org/polkit/polkit/-/commit/a04d13a"
-    ],
-    "cvename": [
-      "CVE-2021-3560"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-06-03",
-    "entry": "2021-06-04"
-  }
+	"vid": "36a35d83-c560-11eb-84ab-e0d55e2a8bf9",
+	"topic": "polkit -- local privilege escalation using polkit_system_bus_name_get_creds_sync",
+	"affects": [
+		{
+			"name": [
+				"polkit"
+			],
+			"range": [
+				{
+					"lt": "0.119"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Cedric Buissart reports:</p>\n\t<blockquote cite=\"https://seclists.org/oss-sec/2021/q2/180\">\n\t  <p>The function <code>polkit_system_bus_name_get_creds_sync</code> is used to get the\n\t  uid and pid of the process requesting the action. It does this by\n\t  sending the unique bus name of the requesting process, which is\n\t  typically something like \":1.96\", to <code>dbus-daemon</code>. These unique names\n\t  are assigned and managed by <code>dbus-daemon</code> and cannot be forged, so this\n\t  is a good way to check the privileges of the requesting process.</p>\n\t  <p>The vulnerability happens when the requesting process disconnects from\n\t  <code>dbus-daemon</code> just before the call to\n\t  <code>polkit_system_bus_name_get_creds_sync</code> starts. In this scenario, the\n\t  unique bus name is no longer valid, so <code>dbus-daemon</code> sends back an error\n\t  reply. This error case is handled in\n\t  <code>polkit_system_bus_name_get_creds_sync</code> by setting the value of the\n\t  <code>error</code> parameter, but it still returns <code>TRUE</code>, rather than <code>FALSE</code>.\n\t  This behavior means that all callers of\n\t  <code>polkit_system_bus_name_get_creds_sync</code> need to carefully check whether\n\t  an error was set. If the calling function forgets to check for errors\n\t  then it will think that the uid of the requesting process is 0 (because\n\t  the <code>AsyncGetBusNameCredsData</code> struct is zero initialized). In other\n\t  words, it will think that the action was requested by a root process,\n\t  and will therefore allow it.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://seclists.org/oss-sec/2021/q2/180",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3560",
+			"https://gitlab.freedesktop.org/polkit/polkit/-/commit/a04d13a"
+		],
+		"cvename": [
+			"CVE-2021-3560"
+		]
+	},
+	"dates": {
+		"discovery": "2021-06-03",
+		"entry": "2021-06-04"
+	}
 }

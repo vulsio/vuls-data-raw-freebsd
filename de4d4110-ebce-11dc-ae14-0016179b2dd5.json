@@ -1,40 +1,40 @@
 {
-  "vid": "de4d4110-ebce-11dc-ae14-0016179b2dd5",
-  "topic": "mplayer -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mplayer",
-        "mplayer-esound",
-        "mplayer-gtk",
-        "mplayer-gtk2",
-        "mplayer-gtk-esound",
-        "mplayer-gtk2-esound"
-      ],
-      "range": [
-        {
-          "lt": "0.99.11_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Mplayer team reports:</p>\n\t<blockquote cite=\"http://www.mplayerhq.hu/design7/news.html\">\n\t  <p>A buffer overflow was found in the code used to extract album\n\t    titles from CDDB server answers. When parsing answers from the\n\t    CDDB server, the album title is copied into a fixed-size buffer\n\t    with insufficient size checks, which may cause a buffer overflow.\n\t    A malicious database entry could trigger a buffer overflow in the\n\t    program. That can lead to arbitrary code execution with the UID of\n\t    the user running MPlayer.</p>\n\t  <p>A buffer overflow was found in the code used to escape URL\n\t    strings. The code used to skip over IPv6 addresses can be tricked\n\t    into leaving a pointer to a temporary buffer with a non-NULL value;\n\t    this causes the unescape code to reuse the buffer, and may lead to\n\t    a buffer overflow if the old buffer is smaller than required.\n\t    A malicious URL string may be used to trigger a buffer overflow in\n\t    the program, that can lead to arbitrary code execution with the UID\n\t    of the user running MPlayer.</p>\n\t  <p>A buffer overflow was found in the code used to parse MOV file\n\t    headers. The code read some values from the file and used them as\n\t    indexes into as array allocated on the heap without performing any\n\t    boundary check. A malicious file may be used to trigger a buffer\n\t    overflow in the program. That can lead to arbitrary code execution\n\t    with the UID of the user running MPlayer.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/28779"
-    ],
-    "cvename": [
-      "CVE-2008-0485",
-      "CVE-2008-0486",
-      "CVE-2008-0629",
-      "CVE-2008-0630"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-02-05",
-    "entry": "2008-03-06"
-  }
+	"vid": "de4d4110-ebce-11dc-ae14-0016179b2dd5",
+	"topic": "mplayer -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mplayer",
+				"mplayer-esound",
+				"mplayer-gtk",
+				"mplayer-gtk2",
+				"mplayer-gtk-esound",
+				"mplayer-gtk2-esound"
+			],
+			"range": [
+				{
+					"lt": "0.99.11_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Mplayer team reports:</p>\n\t<blockquote cite=\"http://www.mplayerhq.hu/design7/news.html\">\n\t  <p>A buffer overflow was found in the code used to extract album\n\t    titles from CDDB server answers. When parsing answers from the\n\t    CDDB server, the album title is copied into a fixed-size buffer\n\t    with insufficient size checks, which may cause a buffer overflow.\n\t    A malicious database entry could trigger a buffer overflow in the\n\t    program. That can lead to arbitrary code execution with the UID of\n\t    the user running MPlayer.</p>\n\t  <p>A buffer overflow was found in the code used to escape URL\n\t    strings. The code used to skip over IPv6 addresses can be tricked\n\t    into leaving a pointer to a temporary buffer with a non-NULL value;\n\t    this causes the unescape code to reuse the buffer, and may lead to\n\t    a buffer overflow if the old buffer is smaller than required.\n\t    A malicious URL string may be used to trigger a buffer overflow in\n\t    the program, that can lead to arbitrary code execution with the UID\n\t    of the user running MPlayer.</p>\n\t  <p>A buffer overflow was found in the code used to parse MOV file\n\t    headers. The code read some values from the file and used them as\n\t    indexes into as array allocated on the heap without performing any\n\t    boundary check. A malicious file may be used to trigger a buffer\n\t    overflow in the program. That can lead to arbitrary code execution\n\t    with the UID of the user running MPlayer.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/28779"
+		],
+		"cvename": [
+			"CVE-2008-0485",
+			"CVE-2008-0486",
+			"CVE-2008-0629",
+			"CVE-2008-0630"
+		]
+	},
+	"dates": {
+		"discovery": "2008-02-05",
+		"entry": "2008-03-06"
+	}
 }

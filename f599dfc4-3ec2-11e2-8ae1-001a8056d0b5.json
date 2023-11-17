@@ -1,46 +1,46 @@
 {
-  "vid": "f599dfc4-3ec2-11e2-8ae1-001a8056d0b5",
-  "topic": "tomcat -- bypass of security constraints",
-  "affects": [
-    {
-      "name": [
-        "tomcat"
-      ],
-      "range": [
-        {
-          "ge": "6.0.0",
-          "le": "6.0.35"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tomcat7"
-      ],
-      "range": [
-        {
-          "ge": "7.0.0",
-          "le": "7.0.29"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-7.html\">\n\t  <p>When using FORM authentication it was possible to bypass the security\n\t     constraint checks in the FORM authenticator by appending\n\t     \"/j_security_check\" to the end of the URL if some other component\n\t     (such as the Single-Sign-On valve) had called request.setUserPrincipal()\n\t     before the call to FormAuthenticator#authenticate().</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://tomcat.apache.org/security-6.html",
-      "http://tomcat.apache.org/security-7.html"
-    ],
-    "cvename": [
-      "CVE-2012-3546"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-12-04",
-    "entry": "2012-12-04",
-    "modified": "2017-03-18"
-  }
+	"vid": "f599dfc4-3ec2-11e2-8ae1-001a8056d0b5",
+	"topic": "tomcat -- bypass of security constraints",
+	"affects": [
+		{
+			"name": [
+				"tomcat"
+			],
+			"range": [
+				{
+					"ge": "6.0.0",
+					"le": "6.0.35"
+				}
+			]
+		},
+		{
+			"name": [
+				"tomcat7"
+			],
+			"range": [
+				{
+					"ge": "7.0.0",
+					"le": "7.0.29"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache Software Foundation reports:</p>\n\t<blockquote cite=\"http://tomcat.apache.org/security-7.html\">\n\t  <p>When using FORM authentication it was possible to bypass the security\n\t     constraint checks in the FORM authenticator by appending\n\t     \"/j_security_check\" to the end of the URL if some other component\n\t     (such as the Single-Sign-On valve) had called request.setUserPrincipal()\n\t     before the call to FormAuthenticator#authenticate().</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://tomcat.apache.org/security-6.html",
+			"http://tomcat.apache.org/security-7.html"
+		],
+		"cvename": [
+			"CVE-2012-3546"
+		]
+	},
+	"dates": {
+		"discovery": "2012-12-04",
+		"entry": "2012-12-04",
+		"modified": "2017-03-18"
+	}
 }

@@ -1,74 +1,74 @@
 {
-  "vid": "ab3e98d9-8175-11e4-907d-d050992ecde8",
-  "topic": "bind -- denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "bind99",
-        "bind99-base"
-      ],
-      "range": [
-        {
-          "lt": "9.9.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind98",
-        "bind98-base",
-        "bind96",
-        "bind96-base"
-      ],
-      "range": [
-        {
-          "gt": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "9.3_6",
-          "ge": "9.3"
-        },
-        {
-          "lt": "9.2_16",
-          "ge": "9.2"
-        },
-        {
-          "lt": "9.1_23",
-          "ge": "9.1"
-        },
-        {
-          "lt": "8.4_20",
-          "ge": "8.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://www.isc.org/blogs/important-security-advisory-posted/\">\n\t  <p>We have today posted updated versions of 9.9.6 and 9.10.1\n\t    to address a significant security vulnerability in DNS\n\t    resolution. The flaw was discovered by Florian Maury of\n\t    ANSSI, and applies to any recursive resolver that does not\n\t    support a limit on the number of recursions. [<a href=\"http://cert.ssi.gouv.fr/site/CERTFR-2014-AVI-512/index.html\">CERTFR-2014-AVI-512</a>],\n\t    [USCERT <a href=\"www.kb.cert.org/vuls/id/264212\">VU#264212</a>]</p>\n\t  <p>A flaw in delegation handling could be exploited to put named\n\t    into an infinite loop, in which each lookup of a name server\n\t    triggered additional lookups of more name servers.  This has\n\t    been addressed by placing limits on the number of levels of\n\t    recursion named will allow (default 7), and on the number of\n\t    queries that it will send before terminating a recursive query\n\t    (default 50).  The recursion depth limit is configured via the\n\t    max-recursion-depth option, and the query limit via the\n\t    max-recursion-queries option.  For more information, see the\n\t    security advisory at <a href=\"https://kb.isc.org/article/AA-01216/\">https://kb.isc.org/article/AA-01216/</a>.\n\t    <a href=\"https://kb.isc.org/article/AA-01216/\">[CVE-2014-8500]</a>\n\t    [RT #37580]</p>\n\t  <p>In addition, we have also corrected a potential security\n\t    vulnerability in the GeoIP feature in the 9.10.1 release only.\n\t    For more information on this issue, see the security advisory\n\t    at <a href=\"https://kb.isc.org/article/AA-01217\">https://kb.isc.org/article/AA-01217</a>.\n\t    <a href=\"https://kb.isc.org/article/AA-01217\">[CVE-2014-8680]</a></p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.isc.org/blogs/important-security-advisory-posted/"
-    ],
-    "cvename": [
-      "CVE-2014-8500",
-      "CVE-2014-8680"
-    ],
-    "freebsd_sa": [
-      "SA-14:29.bind"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-12-08",
-    "entry": "2014-12-11",
-    "modified": "2016-08-09"
-  }
+	"vid": "ab3e98d9-8175-11e4-907d-d050992ecde8",
+	"topic": "bind -- denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"bind99",
+				"bind99-base"
+			],
+			"range": [
+				{
+					"lt": "9.9.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind98",
+				"bind98-base",
+				"bind96",
+				"bind96-base"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "9.3_6",
+					"ge": "9.3"
+				},
+				{
+					"lt": "9.2_16",
+					"ge": "9.2"
+				},
+				{
+					"lt": "9.1_23",
+					"ge": "9.1"
+				},
+				{
+					"lt": "8.4_20",
+					"ge": "8.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ISC reports:</p>\n\t<blockquote cite=\"https://www.isc.org/blogs/important-security-advisory-posted/\">\n\t  <p>We have today posted updated versions of 9.9.6 and 9.10.1\n\t    to address a significant security vulnerability in DNS\n\t    resolution. The flaw was discovered by Florian Maury of\n\t    ANSSI, and applies to any recursive resolver that does not\n\t    support a limit on the number of recursions. [<a href=\"http://cert.ssi.gouv.fr/site/CERTFR-2014-AVI-512/index.html\">CERTFR-2014-AVI-512</a>],\n\t    [USCERT <a href=\"www.kb.cert.org/vuls/id/264212\">VU#264212</a>]</p>\n\t  <p>A flaw in delegation handling could be exploited to put named\n\t    into an infinite loop, in which each lookup of a name server\n\t    triggered additional lookups of more name servers.  This has\n\t    been addressed by placing limits on the number of levels of\n\t    recursion named will allow (default 7), and on the number of\n\t    queries that it will send before terminating a recursive query\n\t    (default 50).  The recursion depth limit is configured via the\n\t    max-recursion-depth option, and the query limit via the\n\t    max-recursion-queries option.  For more information, see the\n\t    security advisory at <a href=\"https://kb.isc.org/article/AA-01216/\">https://kb.isc.org/article/AA-01216/</a>.\n\t    <a href=\"https://kb.isc.org/article/AA-01216/\">[CVE-2014-8500]</a>\n\t    [RT #37580]</p>\n\t  <p>In addition, we have also corrected a potential security\n\t    vulnerability in the GeoIP feature in the 9.10.1 release only.\n\t    For more information on this issue, see the security advisory\n\t    at <a href=\"https://kb.isc.org/article/AA-01217\">https://kb.isc.org/article/AA-01217</a>.\n\t    <a href=\"https://kb.isc.org/article/AA-01217\">[CVE-2014-8680]</a></p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.isc.org/blogs/important-security-advisory-posted/"
+		],
+		"cvename": [
+			"CVE-2014-8500",
+			"CVE-2014-8680"
+		],
+		"freebsd_sa": [
+			"SA-14:29.bind"
+		]
+	},
+	"dates": {
+		"discovery": "2014-12-08",
+		"entry": "2014-12-11",
+		"modified": "2016-08-09"
+	}
 }

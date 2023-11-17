@@ -1,45 +1,45 @@
 {
-  "vid": "76e2fcce-92d2-11ed-a635-080027f5fec9",
-  "topic": "emacs -- arbitary shell command execution vulnerability of ctags",
-  "affects": [
-    {
-      "name": [
-        "emacs",
-        "emacs-canna",
-        "emacs-nox"
-      ],
-      "range": [
-        {
-          "lt": "28.2_2,3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "emacs-devel",
-        "emacs-devel-nox"
-      ],
-      "range": [
-        {
-          "lt": "30.0.50.202211128,2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>lu4nx reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-45939\">\n\t  <p>\n\t    GNU Emacs through 28.2 allows attackers to execute\n\t    commands via shell metacharacters in the name of a\n\t    source-code file, because lib-src/etags.c uses the system\n\t    C library function in its implementation of the ctags\n\t    program. For example, a victim may use the \"ctags *\"\n\t    command (suggested in the ctags documentation) in a\n\t    situation where the current working directory has contents\n\t    that depend on untrusted input.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nvd.nist.gov/vuln/detail/CVE-2022-45939"
-    ],
-    "cvename": [
-      "CVE-2022-45939"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-11-28",
-    "entry": "2023-01-12"
-  }
+	"vid": "76e2fcce-92d2-11ed-a635-080027f5fec9",
+	"topic": "emacs -- arbitary shell command execution vulnerability of ctags",
+	"affects": [
+		{
+			"name": [
+				"emacs",
+				"emacs-canna",
+				"emacs-nox"
+			],
+			"range": [
+				{
+					"lt": "28.2_2,3"
+				}
+			]
+		},
+		{
+			"name": [
+				"emacs-devel",
+				"emacs-devel-nox"
+			],
+			"range": [
+				{
+					"lt": "30.0.50.202211128,2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>lu4nx reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2022-45939\">\n\t  <p>\n\t    GNU Emacs through 28.2 allows attackers to execute\n\t    commands via shell metacharacters in the name of a\n\t    source-code file, because lib-src/etags.c uses the system\n\t    C library function in its implementation of the ctags\n\t    program. For example, a victim may use the \"ctags *\"\n\t    command (suggested in the ctags documentation) in a\n\t    situation where the current working directory has contents\n\t    that depend on untrusted input.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2022-45939"
+		],
+		"cvename": [
+			"CVE-2022-45939"
+		]
+	},
+	"dates": {
+		"discovery": "2022-11-28",
+		"entry": "2023-01-12"
+	}
 }

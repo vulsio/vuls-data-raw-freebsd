@@ -1,152 +1,152 @@
 {
-  "vid": "57aec168-453e-11e8-8777-b499baebfeaf",
-  "topic": "MySQL -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mariadb55-server"
-      ],
-      "range": [
-        {
-          "lt": "5.5.60"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mariadb100-server"
-      ],
-      "range": [
-        {
-          "lt": "10.0.35"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mariadb101-server"
-      ],
-      "range": [
-        {
-          "lt": "10.1.33"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mariadb102-server"
-      ],
-      "range": [
-        {
-          "lt": "10.2.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mysql55-server"
-      ],
-      "range": [
-        {
-          "lt": "5.5.60"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mysql56-server"
-      ],
-      "range": [
-        {
-          "lt": "5.6.40"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mysql57-server"
-      ],
-      "range": [
-        {
-          "lt": "5.7.22"
-        }
-      ]
-    },
-    {
-      "name": [
-        "percona55-server"
-      ],
-      "range": [
-        {
-          "lt": "5.5.60"
-        }
-      ]
-    },
-    {
-      "name": [
-        "percona56-server"
-      ],
-      "range": [
-        {
-          "lt": "5.6.40"
-        }
-      ]
-    },
-    {
-      "name": [
-        "percona57-server"
-      ],
-      "range": [
-        {
-          "lt": "5.7.22"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Oracle reports:</p>\n\t<blockquote cite=\"http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html\">\n\t  <p>MySQL Multiple Flaws Let Remote Authenticated Users Access and\n\t  Modify Data, Remote and Local Users Deny Service, and Local Users\n\t  Access Data and Gain Elevated Privileges</p>\n\t  <ul>\n\t    <li>A local user can exploit a flaw in the Replication component\n\t      to gain elevated privileges [CVE-2018-2755].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the GIS\n\t      Extension component to cause   denial of service conditions\n\t      [CVE-2018-2805].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the InnoDB\n\t      component to cause denial of service conditions [CVE-2018-2782,\n\t      CVE-2018-2784, CVE-2018-2819].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Security\n\t      Privileges component to cause denial of service conditions\n\t      [CVE-2018-2758, CVE-2018-2818].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the DDL\n\t      component to cause denial of service conditions\n\t      [CVE-2018-2817].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Optimizer\n\t      component to cause denial of service conditions [CVE-2018-2775,\n\t      CVE-2018-2778, CVE-2018-2779, CVE-2018-2780, CVE-2018-2781,\n\t      CVE-2018-2816].</li>\n\t    <li>A remote user can exploit a flaw in the Client programs\n\t      component to cause denial of service conditions [CVE-2018-2761,\n\t      CVE-2018-2773].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the InnoDB\n\t      component to partially modify data and cause denial of service\n\t      conditions [CVE-2018-2786, CVE-2018-2787].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Optimizer\n\t      component to partially modify data and cause denial of service\n\t      conditions [CVE-2018-2812].</li>\n\t    <li>A local user can exploit a flaw in the Cluster ndbcluster/plugin\n\t      component to cause denial of service conditions [CVE-2018-2877].\n\t      </li>\n\t    <li>A remote authenticated user can exploit a flaw in the InnoDB\n\t      component to cause denial of service conditions [CVE-2018-2759,\n\t      CVE-2018-2766, CVE-2018-2777, CVE-2018-2810].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the DML\n\t      component to cause denial of service conditions [CVE-2018-2839].\n\t      </li>\n\t    <li>A remote authenticated user can exploit a flaw in the\n\t      Performance Schema component to cause denial of service conditions\n\t      [CVE-2018-2846].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Pluggable\n\t      Auth component to cause denial of service conditions\n\t      [CVE-2018-2769].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Group\n\t      Replication GCS component to cause denial of service conditions\n\t      [CVE-2018-2776].</li>\n\t    <li>A local user can exploit a flaw in the Connection component to\n\t      cause denial of service conditions [CVE-2018-2762].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Locking\n\t      component to cause denial of service conditions [CVE-2018-2771].\n\t      </li>\n\t    <li>A remote authenticated user can exploit a flaw in the DDL\n\t      component to partially access data [CVE-2018-2813].</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html"
-    ],
-    "cvename": [
-      "CVE-2018-2755",
-      "CVE-2018-2805",
-      "CVE-2018-2782",
-      "CVE-2018-2784",
-      "CVE-2018-2819",
-      "CVE-2018-2758",
-      "CVE-2018-2817",
-      "CVE-2018-2775",
-      "CVE-2018-2780",
-      "CVE-2018-2761",
-      "CVE-2018-2786",
-      "CVE-2018-2787",
-      "CVE-2018-2812",
-      "CVE-2018-2877",
-      "CVE-2018-2759",
-      "CVE-2018-2766",
-      "CVE-2018-2777",
-      "CVE-2018-2810",
-      "CVE-2018-2818",
-      "CVE-2018-2839",
-      "CVE-2018-2778",
-      "CVE-2018-2779",
-      "CVE-2018-2781",
-      "CVE-2018-2816",
-      "CVE-2018-2846",
-      "CVE-2018-2769",
-      "CVE-2018-2776",
-      "CVE-2018-2762",
-      "CVE-2018-2771",
-      "CVE-2018-2813",
-      "CVE-2018-2773"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-04-17",
-    "entry": "2018-04-21"
-  }
+	"vid": "57aec168-453e-11e8-8777-b499baebfeaf",
+	"topic": "MySQL -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mariadb55-server"
+			],
+			"range": [
+				{
+					"lt": "5.5.60"
+				}
+			]
+		},
+		{
+			"name": [
+				"mariadb100-server"
+			],
+			"range": [
+				{
+					"lt": "10.0.35"
+				}
+			]
+		},
+		{
+			"name": [
+				"mariadb101-server"
+			],
+			"range": [
+				{
+					"lt": "10.1.33"
+				}
+			]
+		},
+		{
+			"name": [
+				"mariadb102-server"
+			],
+			"range": [
+				{
+					"lt": "10.2.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql55-server"
+			],
+			"range": [
+				{
+					"lt": "5.5.60"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql56-server"
+			],
+			"range": [
+				{
+					"lt": "5.6.40"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql57-server"
+			],
+			"range": [
+				{
+					"lt": "5.7.22"
+				}
+			]
+		},
+		{
+			"name": [
+				"percona55-server"
+			],
+			"range": [
+				{
+					"lt": "5.5.60"
+				}
+			]
+		},
+		{
+			"name": [
+				"percona56-server"
+			],
+			"range": [
+				{
+					"lt": "5.6.40"
+				}
+			]
+		},
+		{
+			"name": [
+				"percona57-server"
+			],
+			"range": [
+				{
+					"lt": "5.7.22"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Oracle reports:</p>\n\t<blockquote cite=\"http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html\">\n\t  <p>MySQL Multiple Flaws Let Remote Authenticated Users Access and\n\t  Modify Data, Remote and Local Users Deny Service, and Local Users\n\t  Access Data and Gain Elevated Privileges</p>\n\t  <ul>\n\t    <li>A local user can exploit a flaw in the Replication component\n\t      to gain elevated privileges [CVE-2018-2755].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the GIS\n\t      Extension component to cause   denial of service conditions\n\t      [CVE-2018-2805].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the InnoDB\n\t      component to cause denial of service conditions [CVE-2018-2782,\n\t      CVE-2018-2784, CVE-2018-2819].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Security\n\t      Privileges component to cause denial of service conditions\n\t      [CVE-2018-2758, CVE-2018-2818].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the DDL\n\t      component to cause denial of service conditions\n\t      [CVE-2018-2817].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Optimizer\n\t      component to cause denial of service conditions [CVE-2018-2775,\n\t      CVE-2018-2778, CVE-2018-2779, CVE-2018-2780, CVE-2018-2781,\n\t      CVE-2018-2816].</li>\n\t    <li>A remote user can exploit a flaw in the Client programs\n\t      component to cause denial of service conditions [CVE-2018-2761,\n\t      CVE-2018-2773].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the InnoDB\n\t      component to partially modify data and cause denial of service\n\t      conditions [CVE-2018-2786, CVE-2018-2787].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Optimizer\n\t      component to partially modify data and cause denial of service\n\t      conditions [CVE-2018-2812].</li>\n\t    <li>A local user can exploit a flaw in the Cluster ndbcluster/plugin\n\t      component to cause denial of service conditions [CVE-2018-2877].\n\t      </li>\n\t    <li>A remote authenticated user can exploit a flaw in the InnoDB\n\t      component to cause denial of service conditions [CVE-2018-2759,\n\t      CVE-2018-2766, CVE-2018-2777, CVE-2018-2810].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the DML\n\t      component to cause denial of service conditions [CVE-2018-2839].\n\t      </li>\n\t    <li>A remote authenticated user can exploit a flaw in the\n\t      Performance Schema component to cause denial of service conditions\n\t      [CVE-2018-2846].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Pluggable\n\t      Auth component to cause denial of service conditions\n\t      [CVE-2018-2769].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Group\n\t      Replication GCS component to cause denial of service conditions\n\t      [CVE-2018-2776].</li>\n\t    <li>A local user can exploit a flaw in the Connection component to\n\t      cause denial of service conditions [CVE-2018-2762].</li>\n\t    <li>A remote authenticated user can exploit a flaw in the Locking\n\t      component to cause denial of service conditions [CVE-2018-2771].\n\t      </li>\n\t    <li>A remote authenticated user can exploit a flaw in the DDL\n\t      component to partially access data [CVE-2018-2813].</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html"
+		],
+		"cvename": [
+			"CVE-2018-2755",
+			"CVE-2018-2805",
+			"CVE-2018-2782",
+			"CVE-2018-2784",
+			"CVE-2018-2819",
+			"CVE-2018-2758",
+			"CVE-2018-2817",
+			"CVE-2018-2775",
+			"CVE-2018-2780",
+			"CVE-2018-2761",
+			"CVE-2018-2786",
+			"CVE-2018-2787",
+			"CVE-2018-2812",
+			"CVE-2018-2877",
+			"CVE-2018-2759",
+			"CVE-2018-2766",
+			"CVE-2018-2777",
+			"CVE-2018-2810",
+			"CVE-2018-2818",
+			"CVE-2018-2839",
+			"CVE-2018-2778",
+			"CVE-2018-2779",
+			"CVE-2018-2781",
+			"CVE-2018-2816",
+			"CVE-2018-2846",
+			"CVE-2018-2769",
+			"CVE-2018-2776",
+			"CVE-2018-2762",
+			"CVE-2018-2771",
+			"CVE-2018-2813",
+			"CVE-2018-2773"
+		]
+	},
+	"dates": {
+		"discovery": "2018-04-17",
+		"entry": "2018-04-21"
+	}
 }

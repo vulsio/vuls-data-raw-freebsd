@@ -1,37 +1,37 @@
 {
-  "vid": "a32ef450-9781-414b-a944-39f2f61677f2",
-  "topic": "py-cryptography -- allows programmers to misuse an API",
-  "affects": [
-    {
-      "name": [
-        "py37-cryptography",
-        "py38-cryptography",
-        "py39-cryptography",
-        "py310-cryptography",
-        "py311-cryptography"
-      ],
-      "range": [
-        {
-          "lt": "39.0.1",
-          "ge": "1.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>alex reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r\">\n      <p>Previously, `Cipher.update_into` would accept Python objects which implement the buffer protocol, but provide only immutable buffers.</p>\n      <p>This would allow immutable objects (such as `bytes`) to be mutated, thus violating fundamental rules of Python.</p>\n      <p>This is a soundness bug -- it allows programmers to misuse an API, it cannot be exploited by attacker controlled data alone.</p>\n      <p>This now correctly raises an exception.</p>\n      <p>This issue has been present since `update_into` was originally introduced in cryptography 1.8.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r"
-    ],
-    "cvename": [
-      "CVE-2023-23931"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-02-07",
-    "entry": "2023-04-10"
-  }
+	"vid": "a32ef450-9781-414b-a944-39f2f61677f2",
+	"topic": "py-cryptography -- allows programmers to misuse an API",
+	"affects": [
+		{
+			"name": [
+				"py37-cryptography",
+				"py38-cryptography",
+				"py39-cryptography",
+				"py310-cryptography",
+				"py311-cryptography"
+			],
+			"range": [
+				{
+					"lt": "39.0.1",
+					"ge": "1.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>alex reports:</p>\n    <blockquote cite=\"https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r\">\n      <p>Previously, `Cipher.update_into` would accept Python objects which implement the buffer protocol, but provide only immutable buffers.</p>\n      <p>This would allow immutable objects (such as `bytes`) to be mutated, thus violating fundamental rules of Python.</p>\n      <p>This is a soundness bug -- it allows programmers to misuse an API, it cannot be exploited by attacker controlled data alone.</p>\n      <p>This now correctly raises an exception.</p>\n      <p>This issue has been present since `update_into` was originally introduced in cryptography 1.8.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r"
+		],
+		"cvename": [
+			"CVE-2023-23931"
+		]
+	},
+	"dates": {
+		"discovery": "2023-02-07",
+		"entry": "2023-04-10"
+	}
 }

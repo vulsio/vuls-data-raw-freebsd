@@ -1,90 +1,90 @@
 {
-  "vid": "f78eac48-c3d1-4666-8de5-63ceea25a578",
-  "topic": "mozilla -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "firefox"
-      ],
-      "range": [
-        {
-          "lt": "56.0.2_10,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "seamonkey",
-        "linux-seamonkey"
-      ],
-      "range": [
-        {
-          "lt": "2.49.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "firefox-esr"
-      ],
-      "range": [
-        {
-          "lt": "52.5.0,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-firefox"
-      ],
-      "range": [
-        {
-          "lt": "52.5.0,2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "libxul",
-        "thunderbird",
-        "linux-thunderbird"
-      ],
-      "range": [
-        {
-          "lt": "52.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2017-24/\">\n\t  <p>CVE-2017-7828: Use-after-free of PressShell while restyling layout</p>\n\t  <p>CVE-2017-7830: Cross-origin URL information leak through Resource Timing API</p>\n\t  <p>CVE-2017-7831: Information disclosure of exposed properties on JavaScript proxy objects</p>\n\t  <p>CVE-2017-7832: Domain spoofing through use of dotless 'i' character followed by accent markers</p>\n\t  <p>CVE-2017-7833: Domain spoofing with Arabic and Indic vowel marker characters</p>\n\t  <p>CVE-2017-7834: data: URLs opened in new tabs bypass CSP protections</p>\n\t  <p>CVE-2017-7835: Mixed content blocking incorrectly applies with redirects</p>\n\t  <p>CVE-2017-7836: Pingsender dynamically loads libcurl on Linux and OS X</p>\n\t  <p>CVE-2017-7837: SVG loaded as &lt;img&gt; can use meta tags to set cookies</p>\n\t  <p>CVE-2017-7838: Failure of individual decoding of labels in international domain names triggers punycode display of entire IDN</p>\n\t  <p>CVE-2017-7839: Control characters before javascript: URLs defeats self-XSS prevention mechanism</p>\n\t  <p>CVE-2017-7840: Exported bookmarks do not strip script elements from user-supplied tags</p>\n\t  <p>CVE-2017-7842: Referrer Policy is not always respected for &lt;link&gt; elements</p>\n\t  <p>CVE-2017-7827: Memory safety bugs fixed in Firefox 57</p>\n\t  <p>CVE-2017-7826: Memory safety bugs fixed in Firefox 57 and Firefox ESR 52.5</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mozilla.org/security/advisories/mfsa2017-24/",
-      "https://www.mozilla.org/security/advisories/mfsa2017-25/"
-    ],
-    "cvename": [
-      "CVE-2017-7826",
-      "CVE-2017-7827",
-      "CVE-2017-7828",
-      "CVE-2017-7830",
-      "CVE-2017-7831",
-      "CVE-2017-7832",
-      "CVE-2017-7833",
-      "CVE-2017-7834",
-      "CVE-2017-7835",
-      "CVE-2017-7836",
-      "CVE-2017-7837",
-      "CVE-2017-7838",
-      "CVE-2017-7839",
-      "CVE-2017-7840",
-      "CVE-2017-7842"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-11-14",
-    "entry": "2017-11-14"
-  }
+	"vid": "f78eac48-c3d1-4666-8de5-63ceea25a578",
+	"topic": "mozilla -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "56.0.2_10,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"seamonkey",
+				"linux-seamonkey"
+			],
+			"range": [
+				{
+					"lt": "2.49.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox-esr"
+			],
+			"range": [
+				{
+					"lt": "52.5.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-firefox"
+			],
+			"range": [
+				{
+					"lt": "52.5.0,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"libxul",
+				"thunderbird",
+				"linux-thunderbird"
+			],
+			"range": [
+				{
+					"lt": "52.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mozilla Foundation reports:</p>\n\t<blockquote cite=\"https://www.mozilla.org/en-US/security/advisories/mfsa2017-24/\">\n\t  <p>CVE-2017-7828: Use-after-free of PressShell while restyling layout</p>\n\t  <p>CVE-2017-7830: Cross-origin URL information leak through Resource Timing API</p>\n\t  <p>CVE-2017-7831: Information disclosure of exposed properties on JavaScript proxy objects</p>\n\t  <p>CVE-2017-7832: Domain spoofing through use of dotless 'i' character followed by accent markers</p>\n\t  <p>CVE-2017-7833: Domain spoofing with Arabic and Indic vowel marker characters</p>\n\t  <p>CVE-2017-7834: data: URLs opened in new tabs bypass CSP protections</p>\n\t  <p>CVE-2017-7835: Mixed content blocking incorrectly applies with redirects</p>\n\t  <p>CVE-2017-7836: Pingsender dynamically loads libcurl on Linux and OS X</p>\n\t  <p>CVE-2017-7837: SVG loaded as &lt;img&gt; can use meta tags to set cookies</p>\n\t  <p>CVE-2017-7838: Failure of individual decoding of labels in international domain names triggers punycode display of entire IDN</p>\n\t  <p>CVE-2017-7839: Control characters before javascript: URLs defeats self-XSS prevention mechanism</p>\n\t  <p>CVE-2017-7840: Exported bookmarks do not strip script elements from user-supplied tags</p>\n\t  <p>CVE-2017-7842: Referrer Policy is not always respected for &lt;link&gt; elements</p>\n\t  <p>CVE-2017-7827: Memory safety bugs fixed in Firefox 57</p>\n\t  <p>CVE-2017-7826: Memory safety bugs fixed in Firefox 57 and Firefox ESR 52.5</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mozilla.org/security/advisories/mfsa2017-24/",
+			"https://www.mozilla.org/security/advisories/mfsa2017-25/"
+		],
+		"cvename": [
+			"CVE-2017-7826",
+			"CVE-2017-7827",
+			"CVE-2017-7828",
+			"CVE-2017-7830",
+			"CVE-2017-7831",
+			"CVE-2017-7832",
+			"CVE-2017-7833",
+			"CVE-2017-7834",
+			"CVE-2017-7835",
+			"CVE-2017-7836",
+			"CVE-2017-7837",
+			"CVE-2017-7838",
+			"CVE-2017-7839",
+			"CVE-2017-7840",
+			"CVE-2017-7842"
+		]
+	},
+	"dates": {
+		"discovery": "2017-11-14",
+		"entry": "2017-11-14"
+	}
 }

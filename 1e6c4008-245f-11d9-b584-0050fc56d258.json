@@ -1,45 +1,45 @@
 {
-  "vid": "1e6c4008-245f-11d9-b584-0050fc56d258",
-  "topic": "gaim -- buffer overflow in MSN protocol support",
-  "affects": [
-    {
-      "name": [
-        "gaim",
-        "ja-gaim",
-        "ru-gaim"
-      ],
-      "range": [
-        {
-          "ge": "0.79",
-          "le": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gaim"
-      ],
-      "range": [
-        {
-          "gt": "20030000"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Due to a buffer overflow in the MSN protocol support for\n\t  gaim 0.79 to 1.0.1, it is possible for remote clients to do a\n\t  denial-of-service attack on the application.\n\t  This is caused by an unbounded copy operation, which writes\n\t  to the wrong buffer.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://gaim.sourceforge.net/security/?id=9"
-    ],
-    "cvename": [
-      "CVE-2004-0891"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-10-19",
-    "entry": "2004-10-25"
-  }
+	"vid": "1e6c4008-245f-11d9-b584-0050fc56d258",
+	"topic": "gaim -- buffer overflow in MSN protocol support",
+	"affects": [
+		{
+			"name": [
+				"gaim",
+				"ja-gaim",
+				"ru-gaim"
+			],
+			"range": [
+				{
+					"ge": "0.79",
+					"le": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"gaim"
+			],
+			"range": [
+				{
+					"gt": "20030000"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Due to a buffer overflow in the MSN protocol support for\n\t  gaim 0.79 to 1.0.1, it is possible for remote clients to do a\n\t  denial-of-service attack on the application.\n\t  This is caused by an unbounded copy operation, which writes\n\t  to the wrong buffer.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://gaim.sourceforge.net/security/?id=9"
+		],
+		"cvename": [
+			"CVE-2004-0891"
+		]
+	},
+	"dates": {
+		"discovery": "2004-10-19",
+		"entry": "2004-10-25"
+	}
 }

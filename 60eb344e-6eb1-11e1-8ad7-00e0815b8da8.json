@@ -1,32 +1,32 @@
 {
-  "vid": "60eb344e-6eb1-11e1-8ad7-00e0815b8da8",
-  "topic": "OpenSSL -- CMS and S/MIME Bleichenbacher attack",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.0_10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL Team reports:</p>\n\t<blockquote cite=\"http://www.openssl.org/news/secadv_20120312.txt\">\n\t  <p>A weakness in the OpenSSL CMS and PKCS #7 code can be exploited\n\t    using Bleichenbacher's attack on PKCS #1 v1.5 RSA padding\n\t    also known as the million message attack (MMA).</p>\n\t  <p>Only users of CMS, PKCS #7, or S/MIME decryption operations are\n\t    affected. A successful attack needs on average 2^20 messages. In\n\t    practice only automated systems will be affected as humans will\n\t    not be willing to process this many messages.</p>\n\t  <p>SSL/TLS applications are *NOT* affected by this problem since\n\t    the SSL/TLS code does not use the PKCS#7 or CMS decryption\n\t    code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openssl.org/news/secadv_20120312.txt"
-    ],
-    "cvename": [
-      "CVE-2012-0884"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-03-12",
-    "entry": "2012-03-15"
-  }
+	"vid": "60eb344e-6eb1-11e1-8ad7-00e0815b8da8",
+	"topic": "OpenSSL -- CMS and S/MIME Bleichenbacher attack",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.0_10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL Team reports:</p>\n\t<blockquote cite=\"http://www.openssl.org/news/secadv_20120312.txt\">\n\t  <p>A weakness in the OpenSSL CMS and PKCS #7 code can be exploited\n\t    using Bleichenbacher's attack on PKCS #1 v1.5 RSA padding\n\t    also known as the million message attack (MMA).</p>\n\t  <p>Only users of CMS, PKCS #7, or S/MIME decryption operations are\n\t    affected. A successful attack needs on average 2^20 messages. In\n\t    practice only automated systems will be affected as humans will\n\t    not be willing to process this many messages.</p>\n\t  <p>SSL/TLS applications are *NOT* affected by this problem since\n\t    the SSL/TLS code does not use the PKCS#7 or CMS decryption\n\t    code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openssl.org/news/secadv_20120312.txt"
+		],
+		"cvename": [
+			"CVE-2012-0884"
+		]
+	},
+	"dates": {
+		"discovery": "2012-03-12",
+		"entry": "2012-03-15"
+	}
 }

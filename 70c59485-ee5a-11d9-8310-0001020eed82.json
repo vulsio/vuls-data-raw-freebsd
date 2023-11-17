@@ -1,53 +1,53 @@
 {
-  "vid": "70c59485-ee5a-11d9-8310-0001020eed82",
-  "topic": "acroread -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "acroread4",
-        "acroread5"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "acroread"
-      ],
-      "range": [
-        {
-          "lt": "7.0.0"
-        },
-        {
-          "lt": "7.0.0,1",
-          "gt": "5.*,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>An Adobe Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.adobe.com/support/techdocs/329083.html\">\n\t  <p>A vulnerability within Adobe Reader has been\n\t    identified. Under certain circumstances, remote\n\t    exploitation of a buffer overflow in Adobe Reader could\n\t    allow an attacker to execute arbitrary code.</p>\n\t  <p>If exploited, it could allow the execution of arbitrary\n\t    code under the privileges of the local user. Remote\n\t    exploitation is possible if the malicious PDF document is\n\t    sent as an email attachment or if the PDF document is\n\t    accessed via a web link.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.adobe.com/support/techdocs/329083.html"
-    ],
-    "cvename": [
-      "CVE-2005-1625"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112059685332569",
-        "msgid": "FB24803D1DF2A34FA59FC157B77C97050462A5E2@IDSERV04.idef.com"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2005-07-05",
-    "entry": "2005-07-06"
-  }
+	"vid": "70c59485-ee5a-11d9-8310-0001020eed82",
+	"topic": "acroread -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"acroread4",
+				"acroread5"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"acroread"
+			],
+			"range": [
+				{
+					"lt": "7.0.0"
+				},
+				{
+					"lt": "7.0.0,1",
+					"gt": "5.*,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>An Adobe Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.adobe.com/support/techdocs/329083.html\">\n\t  <p>A vulnerability within Adobe Reader has been\n\t    identified. Under certain circumstances, remote\n\t    exploitation of a buffer overflow in Adobe Reader could\n\t    allow an attacker to execute arbitrary code.</p>\n\t  <p>If exploited, it could allow the execution of arbitrary\n\t    code under the privileges of the local user. Remote\n\t    exploitation is possible if the malicious PDF document is\n\t    sent as an email attachment or if the PDF document is\n\t    accessed via a web link.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.adobe.com/support/techdocs/329083.html"
+		],
+		"cvename": [
+			"CVE-2005-1625"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112059685332569",
+				"msgid": "FB24803D1DF2A34FA59FC157B77C97050462A5E2@IDSERV04.idef.com"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2005-07-05",
+		"entry": "2005-07-06"
+	}
 }

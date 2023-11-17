@@ -1,59 +1,59 @@
 {
-  "vid": "4bd33bc5-0cd6-11e0-bfa4-001676740879",
-  "topic": "tor -- remote crash and potential remote code execution",
-  "affects": [
-    {
-      "name": [
-        "tor"
-      ],
-      "range": [
-        {
-          "lt": "0.2.1.28"
-        }
-      ]
-    },
-    {
-      "name": [
-        "tor-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.2.2.20-alpha"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Tor Project reports:</p>\n\t<blockquote cite=\"http://archives.seul.org/or/announce/Dec-2010/msg00000.html\">\n\t  <p>Remotely exploitable bug that could be used to crash instances\n\t    of Tor remotely by overflowing on the heap. Remote-code execution\n\t    hasn't been confirmed, but can't be ruled out. Everyone should\n\t    upgrade.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://gitweb.torproject.org/tor.git/blob/release-0.2.1:/ChangeLog",
-      "https://gitweb.torproject.org/tor.git/blob/release-0.2.2:/ChangeLog"
-    ],
-    "cvename": [
-      "CVE-2010-1676"
-    ],
-    "freebsd_pr": [
-      "ports/153326"
-    ],
-    "mlist": [
-      {
-        "text": "http://archives.seul.org/or/announce/Dec-2010/msg00000.html",
-        "msgid": "20101220135830.GU3300@moria.seul.org"
-      },
-      {
-        "text": "http://archives.seul.org/or/talk/Dec-2010/msg00167.html",
-        "msgid": "20101220141526.GS3255@moria.seul.org"
-      }
-    ],
-    "bid": [
-      "45500"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-12-17",
-    "entry": "2010-12-22"
-  }
+	"vid": "4bd33bc5-0cd6-11e0-bfa4-001676740879",
+	"topic": "tor -- remote crash and potential remote code execution",
+	"affects": [
+		{
+			"name": [
+				"tor"
+			],
+			"range": [
+				{
+					"lt": "0.2.1.28"
+				}
+			]
+		},
+		{
+			"name": [
+				"tor-devel"
+			],
+			"range": [
+				{
+					"lt": "0.2.2.20-alpha"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Tor Project reports:</p>\n\t<blockquote cite=\"http://archives.seul.org/or/announce/Dec-2010/msg00000.html\">\n\t  <p>Remotely exploitable bug that could be used to crash instances\n\t    of Tor remotely by overflowing on the heap. Remote-code execution\n\t    hasn't been confirmed, but can't be ruled out. Everyone should\n\t    upgrade.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://gitweb.torproject.org/tor.git/blob/release-0.2.1:/ChangeLog",
+			"https://gitweb.torproject.org/tor.git/blob/release-0.2.2:/ChangeLog"
+		],
+		"cvename": [
+			"CVE-2010-1676"
+		],
+		"freebsd_pr": [
+			"ports/153326"
+		],
+		"mlist": [
+			{
+				"text": "http://archives.seul.org/or/announce/Dec-2010/msg00000.html",
+				"msgid": "20101220135830.GU3300@moria.seul.org"
+			},
+			{
+				"text": "http://archives.seul.org/or/talk/Dec-2010/msg00167.html",
+				"msgid": "20101220141526.GS3255@moria.seul.org"
+			}
+		],
+		"bid": [
+			"45500"
+		]
+	},
+	"dates": {
+		"discovery": "2010-12-17",
+		"entry": "2010-12-22"
+	}
 }

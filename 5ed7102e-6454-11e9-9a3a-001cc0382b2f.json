@@ -1,35 +1,35 @@
 {
-  "vid": "5ed7102e-6454-11e9-9a3a-001cc0382b2f",
-  "topic": "Ghostscript -- Security bypass vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ghostscript9-agpl-base",
-        "ghostscript9-agpl-x11"
-      ],
-      "range": [
-        {
-          "lt": "9.27"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Cedric Buissart (Red Hat) reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3835\">\n\t  <p>It was found that the superexec operator was available in the\n\t    internal dictionary in ghostscript before 9.27. A specially crafted\n\t    PostScript file could use this flaw in order to, for example, have\n\t    access to the file system outside of the constrains imposed by\n\t    -dSAFER.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3838\">\n\t  <p>It was found that the forceput operator could be extracted from\n\t    the DefineResource method in ghostscript before 9.27. A specially\n\t    crafted PostScript file could use this flaw in order to, for\n\t    example, have access to the file system outside of the constrains\n\t    imposed by -dSAFER.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3835",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3838"
-    ],
-    "cvename": [
-      "CVE-2019-3835",
-      "CVE-2019-3838"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-03-21",
-    "entry": "2019-04-21"
-  }
+	"vid": "5ed7102e-6454-11e9-9a3a-001cc0382b2f",
+	"topic": "Ghostscript -- Security bypass vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ghostscript9-agpl-base",
+				"ghostscript9-agpl-x11"
+			],
+			"range": [
+				{
+					"lt": "9.27"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Cedric Buissart (Red Hat) reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3835\">\n\t  <p>It was found that the superexec operator was available in the\n\t    internal dictionary in ghostscript before 9.27. A specially crafted\n\t    PostScript file could use this flaw in order to, for example, have\n\t    access to the file system outside of the constrains imposed by\n\t    -dSAFER.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3838\">\n\t  <p>It was found that the forceput operator could be extracted from\n\t    the DefineResource method in ghostscript before 9.27. A specially\n\t    crafted PostScript file could use this flaw in order to, for\n\t    example, have access to the file system outside of the constrains\n\t    imposed by -dSAFER.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3835",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3838"
+		],
+		"cvename": [
+			"CVE-2019-3835",
+			"CVE-2019-3838"
+		]
+	},
+	"dates": {
+		"discovery": "2019-03-21",
+		"entry": "2019-04-21"
+	}
 }

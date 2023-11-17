@@ -1,44 +1,44 @@
 {
-  "vid": "76562594-1f19-11db-b7d4-0008743bf21a",
-  "topic": "ruby -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "ruby",
-        "ruby_static"
-      ],
-      "range": [
-        {
-          "lt": "1.8.*",
-          "gt": "1.6.*"
-        },
-        {
-          "lt": "1.8.4_9,1",
-          "gt": "1.8.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21009/\">\n\t  <p>Two vulnerabilities have been reported in Ruby, which can\n\t    be exploited by malicious people to bypass certain security\n\t    restrictions.</p>\n\t  <ol>\n\t    <li>An error in the handling of the \"alias\" functionality\n\t      can be exploited to bypass the safe level protection and\n\t      replace methods called in the trusted level.</li>\n\t    <li>An error caused due to directory operations not being\n\t      properly checked can be exploited to bypass the safe\n\t      level protection and close untainted directory streams.</li>\n\t  </ol>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/21009/",
-      "http://jvn.jp/jp/JVN%2383768862/index.html",
-      "http://jvn.jp/jp/JVN%2313947696/index.html"
-    ],
-    "cvename": [
-      "CVE-2006-3694"
-    ],
-    "bid": [
-      "18944"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-07-12",
-    "entry": "2006-07-29",
-    "modified": "2006-07-30"
-  }
+	"vid": "76562594-1f19-11db-b7d4-0008743bf21a",
+	"topic": "ruby -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"ruby",
+				"ruby_static"
+			],
+			"range": [
+				{
+					"lt": "1.8.*",
+					"gt": "1.6.*"
+				},
+				{
+					"lt": "1.8.4_9,1",
+					"gt": "1.8.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/21009/\">\n\t  <p>Two vulnerabilities have been reported in Ruby, which can\n\t    be exploited by malicious people to bypass certain security\n\t    restrictions.</p>\n\t  <ol>\n\t    <li>An error in the handling of the \"alias\" functionality\n\t      can be exploited to bypass the safe level protection and\n\t      replace methods called in the trusted level.</li>\n\t    <li>An error caused due to directory operations not being\n\t      properly checked can be exploited to bypass the safe\n\t      level protection and close untainted directory streams.</li>\n\t  </ol>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/21009/",
+			"http://jvn.jp/jp/JVN%2383768862/index.html",
+			"http://jvn.jp/jp/JVN%2313947696/index.html"
+		],
+		"cvename": [
+			"CVE-2006-3694"
+		],
+		"bid": [
+			"18944"
+		]
+	},
+	"dates": {
+		"discovery": "2006-07-12",
+		"entry": "2006-07-29",
+		"modified": "2006-07-30"
+	}
 }

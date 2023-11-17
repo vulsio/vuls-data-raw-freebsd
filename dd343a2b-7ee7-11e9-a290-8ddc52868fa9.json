@@ -1,37 +1,37 @@
 {
-  "vid": "dd343a2b-7ee7-11e9-a290-8ddc52868fa9",
-  "topic": "curl -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "curl"
-      ],
-      "range": [
-        {
-          "lt": "7.65.0",
-          "ge": "7.19.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>curl security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2019-5435: Integer overflows in curl_url_set()</p>\n\t  <p>libcurl contains two integer overflows in the curl_url_set()\n\t    function that if triggered, can lead to a too small buffer\n\t    allocation and a subsequent heap buffer overflow.</p>\n\t  <p>The flaws only exist on 32 bit architectures and require\n\t    excessive string input lengths.</p>\n\t  <p>CVE-2019-5436: TFTP receive buffer overflow</p>\n\t  <p>libcurl contains a heap buffer overflow in the function\n\t    (tftp_receive_packet()) that recevives data from a TFTP server. It\n\t    calls recvfrom() with the default size for the buffer rather than\n\t    with the size that was used to allocate it. Thus, the content that\n\t    might overwrite the heap memory is entirely controlled by the server.</p>\n\t  <p>The flaw exists if the user selects to use a \"blksize\" of 504 or\n\t    smaller (default is 512). The smaller size that is used, the larger\n\t    the possible overflow becomes.</p>\n\t  <p>Users chosing a smaller size than default should be rare as the\n\t    primary use case for changing the size is to make it larger.</p>\n\t  <p>It is rare for users to use TFTP across the Internet. It is most\n\t    commonly used within local networks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://curl.haxx.se/docs/security.html",
-      "https://curl.haxx.se/docs/CVE-2019-5435.html",
-      "https://curl.haxx.se/docs/CVE-2019-5436.html"
-    ],
-    "cvename": [
-      "CVE-2019-5435",
-      "CVE-2019-5436"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-05-22",
-    "entry": "2019-05-25",
-    "modified": "2019-05-26"
-  }
+	"vid": "dd343a2b-7ee7-11e9-a290-8ddc52868fa9",
+	"topic": "curl -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "7.65.0",
+					"ge": "7.19.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>curl security problems:</p>\n\t<blockquote cite=\"https://curl.haxx.se/docs/security.html\">\n\t  <p>CVE-2019-5435: Integer overflows in curl_url_set()</p>\n\t  <p>libcurl contains two integer overflows in the curl_url_set()\n\t    function that if triggered, can lead to a too small buffer\n\t    allocation and a subsequent heap buffer overflow.</p>\n\t  <p>The flaws only exist on 32 bit architectures and require\n\t    excessive string input lengths.</p>\n\t  <p>CVE-2019-5436: TFTP receive buffer overflow</p>\n\t  <p>libcurl contains a heap buffer overflow in the function\n\t    (tftp_receive_packet()) that recevives data from a TFTP server. It\n\t    calls recvfrom() with the default size for the buffer rather than\n\t    with the size that was used to allocate it. Thus, the content that\n\t    might overwrite the heap memory is entirely controlled by the server.</p>\n\t  <p>The flaw exists if the user selects to use a \"blksize\" of 504 or\n\t    smaller (default is 512). The smaller size that is used, the larger\n\t    the possible overflow becomes.</p>\n\t  <p>Users chosing a smaller size than default should be rare as the\n\t    primary use case for changing the size is to make it larger.</p>\n\t  <p>It is rare for users to use TFTP across the Internet. It is most\n\t    commonly used within local networks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://curl.haxx.se/docs/security.html",
+			"https://curl.haxx.se/docs/CVE-2019-5435.html",
+			"https://curl.haxx.se/docs/CVE-2019-5436.html"
+		],
+		"cvename": [
+			"CVE-2019-5435",
+			"CVE-2019-5436"
+		]
+	},
+	"dates": {
+		"discovery": "2019-05-22",
+		"entry": "2019-05-25",
+		"modified": "2019-05-26"
+	}
 }

@@ -1,29 +1,29 @@
 {
-  "vid": "22f00553-a09d-11d9-a788-0001020eed82",
-  "topic": "portupgrade -- insecure temporary file handling vulnerability",
-  "affects": [
-    {
-      "name": [
-        "portupgrade"
-      ],
-      "range": [
-        {
-          "lt": "20041226_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon L. Nielsen discovered that portupgrade handles\n\t  temporary files in an insecure manner.  This could allow an\n\t  unprivileged local attacker to execute arbitrary commands or\n\t  overwrite arbitrary files with the permissions of the user\n\t  running portupgrade, typically root, by way of a symlink\n\t  attack.</p>\n\t<p>The following issues exist where the temporary files are\n\t  created, by default in the world writeable directory\n\t  /var/tmp, with the permissions of the user running\n\t  portupgrade:</p>\n\t<ul>\n\t  <li>pkg_fetch download packages with a predictable local\n\t    filename allowing a local attacker to overwrite arbitrary\n\t    local files or potentially replace the downloaded package\n\t    after download but before install with a package with\n\t    malicious content, allowing the attacker to run arbitrary\n\t    commands.</li>\n\t  <li>portupgrade will, when upgrading ports/packages, write\n\t    the old package to a predictable temporary file, allowing\n\t    an attacker to overwrite arbitrary files via a symlink\n\t    attack.</li>\n\t  <li>portupgrade will <q>touch</q> a temporary file\n\t    with a constant filename (pkgdb.fixme) allowing an\n\t    attacker to create arbitrary zero-byte files via a symlink\n\t    attack.</li>\n\t</ul>\n\t<p>A workaround for these issues is to set the\n\t  <code>PKG_TMPDIR</code> environment variable to a directory\n\t  only write-able by the user running portupgrade.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-0610"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-04-12",
-    "entry": "2005-04-12"
-  }
+	"vid": "22f00553-a09d-11d9-a788-0001020eed82",
+	"topic": "portupgrade -- insecure temporary file handling vulnerability",
+	"affects": [
+		{
+			"name": [
+				"portupgrade"
+			],
+			"range": [
+				{
+					"lt": "20041226_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon L. Nielsen discovered that portupgrade handles\n\t  temporary files in an insecure manner.  This could allow an\n\t  unprivileged local attacker to execute arbitrary commands or\n\t  overwrite arbitrary files with the permissions of the user\n\t  running portupgrade, typically root, by way of a symlink\n\t  attack.</p>\n\t<p>The following issues exist where the temporary files are\n\t  created, by default in the world writeable directory\n\t  /var/tmp, with the permissions of the user running\n\t  portupgrade:</p>\n\t<ul>\n\t  <li>pkg_fetch download packages with a predictable local\n\t    filename allowing a local attacker to overwrite arbitrary\n\t    local files or potentially replace the downloaded package\n\t    after download but before install with a package with\n\t    malicious content, allowing the attacker to run arbitrary\n\t    commands.</li>\n\t  <li>portupgrade will, when upgrading ports/packages, write\n\t    the old package to a predictable temporary file, allowing\n\t    an attacker to overwrite arbitrary files via a symlink\n\t    attack.</li>\n\t  <li>portupgrade will <q>touch</q> a temporary file\n\t    with a constant filename (pkgdb.fixme) allowing an\n\t    attacker to create arbitrary zero-byte files via a symlink\n\t    attack.</li>\n\t</ul>\n\t<p>A workaround for these issues is to set the\n\t  <code>PKG_TMPDIR</code> environment variable to a directory\n\t  only write-able by the user running portupgrade.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-0610"
+		]
+	},
+	"dates": {
+		"discovery": "2005-04-12",
+		"entry": "2005-04-12"
+	}
 }

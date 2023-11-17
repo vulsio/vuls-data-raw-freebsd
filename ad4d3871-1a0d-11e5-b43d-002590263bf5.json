@@ -1,45 +1,45 @@
 {
-  "vid": "ad4d3871-1a0d-11e5-b43d-002590263bf5",
-  "topic": "logstash-forwarder and logstash -- susceptibility to POODLE vulnerability",
-  "affects": [
-    {
-      "name": [
-        "logstash-forwarder"
-      ],
-      "range": [
-        {
-          "lt": "0.4.0.20150507"
-        }
-      ]
-    },
-    {
-      "name": [
-        "logstash"
-      ],
-      "range": [
-        {
-          "lt": "1.4.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/blog/logstash-1-4-3-released\">\n\t  <p>The combination of Logstash Forwarder and Lumberjack input (and\n\t    output) was vulnerable to the POODLE attack in SSLv3 protocol. We\n\t    have disabled SSLv3 for this combination and set the minimum version\n\t    to be TLSv1.0. We have added this vulnerability to our CVE page and\n\t    are working on filling out the CVE.</p>\n\t  <p>Thanks to Tray Torrance, Marc Chadwick, and David Arena for\n\t    reporting this.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.elastic.co/blog/logstash-forwarder-0-4-0-released\">\n\t  <p>SSLv3 is no longer supported; TLS 1.0+ is required (compatible\n\t    with Logstash 1.4.2+).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.elastic.co/blog/logstash-1-4-3-released",
-      "https://www.elastic.co/blog/logstash-forwarder-0-4-0-released"
-    ],
-    "freebsd_pr": [
-      "ports/201065",
-      "ports/201065"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-09",
-    "entry": "2015-06-24",
-    "modified": "2015-06-24"
-  }
+	"vid": "ad4d3871-1a0d-11e5-b43d-002590263bf5",
+	"topic": "logstash-forwarder and logstash -- susceptibility to POODLE vulnerability",
+	"affects": [
+		{
+			"name": [
+				"logstash-forwarder"
+			],
+			"range": [
+				{
+					"lt": "0.4.0.20150507"
+				}
+			]
+		},
+		{
+			"name": [
+				"logstash"
+			],
+			"range": [
+				{
+					"lt": "1.4.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Elastic reports:</p>\n\t<blockquote cite=\"https://www.elastic.co/blog/logstash-1-4-3-released\">\n\t  <p>The combination of Logstash Forwarder and Lumberjack input (and\n\t    output) was vulnerable to the POODLE attack in SSLv3 protocol. We\n\t    have disabled SSLv3 for this combination and set the minimum version\n\t    to be TLSv1.0. We have added this vulnerability to our CVE page and\n\t    are working on filling out the CVE.</p>\n\t  <p>Thanks to Tray Torrance, Marc Chadwick, and David Arena for\n\t    reporting this.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.elastic.co/blog/logstash-forwarder-0-4-0-released\">\n\t  <p>SSLv3 is no longer supported; TLS 1.0+ is required (compatible\n\t    with Logstash 1.4.2+).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.elastic.co/blog/logstash-1-4-3-released",
+			"https://www.elastic.co/blog/logstash-forwarder-0-4-0-released"
+		],
+		"freebsd_pr": [
+			"ports/201065",
+			"ports/201065"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-09",
+		"entry": "2015-06-24",
+		"modified": "2015-06-24"
+	}
 }

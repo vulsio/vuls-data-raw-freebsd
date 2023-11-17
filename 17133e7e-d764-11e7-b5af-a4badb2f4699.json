@@ -1,42 +1,42 @@
 {
-  "vid": "17133e7e-d764-11e7-b5af-a4badb2f4699",
-  "topic": "varnish -- information disclosure vulnerability",
-  "affects": [
-    {
-      "name": [
-        "varnish4"
-      ],
-      "range": [
-        {
-          "lt": "4.1.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "varnish5"
-      ],
-      "range": [
-        {
-          "lt": "5.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Varnish reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00002.html\">\n\t  <p>A wrong if statement in the varnishd source code means that\n\t    synthetic objects in stevedores which over-allocate, may leak up to page\n\t    size of data from a malloc(3) memory allocation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://varnish-cache.org/security/VSV00002.html"
-    ],
-    "cvename": [
-      "CVE-2017-8807"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-11-15",
-    "entry": "2017-12-02"
-  }
+	"vid": "17133e7e-d764-11e7-b5af-a4badb2f4699",
+	"topic": "varnish -- information disclosure vulnerability",
+	"affects": [
+		{
+			"name": [
+				"varnish4"
+			],
+			"range": [
+				{
+					"lt": "4.1.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"varnish5"
+			],
+			"range": [
+				{
+					"lt": "5.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Varnish reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00002.html\">\n\t  <p>A wrong if statement in the varnishd source code means that\n\t    synthetic objects in stevedores which over-allocate, may leak up to page\n\t    size of data from a malloc(3) memory allocation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://varnish-cache.org/security/VSV00002.html"
+		],
+		"cvename": [
+			"CVE-2017-8807"
+		]
+	},
+	"dates": {
+		"discovery": "2017-11-15",
+		"entry": "2017-12-02"
+	}
 }

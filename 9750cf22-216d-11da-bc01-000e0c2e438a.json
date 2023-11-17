@@ -1,40 +1,40 @@
 {
-  "vid": "9750cf22-216d-11da-bc01-000e0c2e438a",
-  "topic": "unzip -- permission race vulnerability",
-  "affects": [
-    {
-      "name": [
-        "unzip",
-        "zh-unzip",
-        "ko-unzip"
-      ],
-      "range": [
-        {
-          "lt": "5.52_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Imran Ghory reports a vulnerability within unzip.  The\n\t  vulnerability is caused by a race condition between\n\t  extracting an archive and changing the permissions of the\n\t  extracted files.  This would give an attacker enough time to\n\t  remove a file and hardlink it to another file owned by the\n\t  user running unzip.  When unzip changes the permissions of\n\t  the file it could give the attacker access to files that\n\t  normally would not have been accessible for others.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2005-2475"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112300046224117",
-        "msgid": "7389fc4b05080116031536adf7@mail.gmail.com"
-      }
-    ],
-    "bid": [
-      "14450"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-08-02",
-    "entry": "2005-09-13"
-  }
+	"vid": "9750cf22-216d-11da-bc01-000e0c2e438a",
+	"topic": "unzip -- permission race vulnerability",
+	"affects": [
+		{
+			"name": [
+				"unzip",
+				"zh-unzip",
+				"ko-unzip"
+			],
+			"range": [
+				{
+					"lt": "5.52_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Imran Ghory reports a vulnerability within unzip.  The\n\t  vulnerability is caused by a race condition between\n\t  extracting an archive and changing the permissions of the\n\t  extracted files.  This would give an attacker enough time to\n\t  remove a file and hardlink it to another file owned by the\n\t  user running unzip.  When unzip changes the permissions of\n\t  the file it could give the attacker access to files that\n\t  normally would not have been accessible for others.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2005-2475"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=112300046224117",
+				"msgid": "7389fc4b05080116031536adf7@mail.gmail.com"
+			}
+		],
+		"bid": [
+			"14450"
+		]
+	},
+	"dates": {
+		"discovery": "2005-08-02",
+		"entry": "2005-09-13"
+	}
 }

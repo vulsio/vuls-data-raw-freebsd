@@ -1,55 +1,55 @@
 {
-  "vid": "06f142ff-4df3-11d9-a9e7-0001020eed82",
-  "topic": "wget -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "wget",
-        "wget-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.10.a1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "wgetpro",
-        "wget+ipv6"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jan Minar reports that there exists multiple\n\t  vulnerabilities in wget:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110269474112384\">\n\t  <p>Wget erroneously thinks that the current directory is a\n\t    fair game, and will happily write in any file in and below\n\t    it.  Malicious HTTP response or malicious HTML file can\n\t    redirect wget to a file that is vital to the system, and\n\t    wget will create/append/overwrite it.</p>\n\t  <p>Wget apparently has at least two methods of\n\t    ``sanitizing'' the potentially malicious data it receives\n\t    from the HTTP stream, therefore a malicious redirects can\n\t    pass the check.  We haven't find a way to trick wget into\n\t    writing above the parent directory, which doesn't mean\n\t    it's not possible.</p>\n\t  <p>Malicious HTTP response can overwrite parts of the\n\t    terminal so that the user will not notice anything wrong,\n\t    or will believe the error was not fatal.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.debian.org/261755"
-    ],
-    "cvename": [
-      "CVE-2004-1487",
-      "CVE-2004-1488"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110269474112384",
-        "msgid": "20041209091438.GA15010@kontryhel.haltyr.dyndns.org"
-      }
-    ],
-    "bid": [
-      "11871"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-12-09",
-    "entry": "2004-12-14",
-    "modified": "2005-04-15"
-  }
+	"vid": "06f142ff-4df3-11d9-a9e7-0001020eed82",
+	"topic": "wget -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"wget",
+				"wget-devel"
+			],
+			"range": [
+				{
+					"lt": "1.10.a1"
+				}
+			]
+		},
+		{
+			"name": [
+				"wgetpro",
+				"wget+ipv6"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jan Minar reports that there exists multiple\n\t  vulnerabilities in wget:</p>\n\t<blockquote cite=\"http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110269474112384\">\n\t  <p>Wget erroneously thinks that the current directory is a\n\t    fair game, and will happily write in any file in and below\n\t    it.  Malicious HTTP response or malicious HTML file can\n\t    redirect wget to a file that is vital to the system, and\n\t    wget will create/append/overwrite it.</p>\n\t  <p>Wget apparently has at least two methods of\n\t    ``sanitizing'' the potentially malicious data it receives\n\t    from the HTTP stream, therefore a malicious redirects can\n\t    pass the check.  We haven't find a way to trick wget into\n\t    writing above the parent directory, which doesn't mean\n\t    it's not possible.</p>\n\t  <p>Malicious HTTP response can overwrite parts of the\n\t    terminal so that the user will not notice anything wrong,\n\t    or will believe the error was not fatal.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.debian.org/261755"
+		],
+		"cvename": [
+			"CVE-2004-1487",
+			"CVE-2004-1488"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=110269474112384",
+				"msgid": "20041209091438.GA15010@kontryhel.haltyr.dyndns.org"
+			}
+		],
+		"bid": [
+			"11871"
+		]
+	},
+	"dates": {
+		"discovery": "2004-12-09",
+		"entry": "2004-12-14",
+		"modified": "2005-04-15"
+	}
 }

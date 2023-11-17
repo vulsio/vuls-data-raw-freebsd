@@ -1,36 +1,36 @@
 {
-  "vid": "f1075415-f5e9-11e6-a4e2-5404a68ad561",
-  "topic": "wavpack -- multiple invalid memory reads",
-  "affects": [
-    {
-      "name": [
-        "wavpack"
-      ],
-      "range": [
-        {
-          "lt": "5.1.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>David Bryant reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2017/01/23/4\">\n\t  <p>global buffer overread in read_code / read_words.c</p>\n\t  <p>heap out of bounds read in WriteCaffHeader / caff.c</p>\n\t  <p>heap out of bounds read in unreorder_channels / wvunpack.c</p>\n\t  <p>heap oob read in read_new_config_info / open_utils.c</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2017/01/23/4",
-      "https://github.com/dbry/WavPack/commit/4bc05fc490b66ef2d45b1de26abf1455b486b0dc"
-    ],
-    "cvename": [
-      "CVE-2016-10169",
-      "CVE-2016-10170",
-      "CVE-2016-10171",
-      "CVE-2016-10172"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-01-21",
-    "entry": "2017-02-18"
-  }
+	"vid": "f1075415-f5e9-11e6-a4e2-5404a68ad561",
+	"topic": "wavpack -- multiple invalid memory reads",
+	"affects": [
+		{
+			"name": [
+				"wavpack"
+			],
+			"range": [
+				{
+					"lt": "5.1.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>David Bryant reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2017/01/23/4\">\n\t  <p>global buffer overread in read_code / read_words.c</p>\n\t  <p>heap out of bounds read in WriteCaffHeader / caff.c</p>\n\t  <p>heap out of bounds read in unreorder_channels / wvunpack.c</p>\n\t  <p>heap oob read in read_new_config_info / open_utils.c</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2017/01/23/4",
+			"https://github.com/dbry/WavPack/commit/4bc05fc490b66ef2d45b1de26abf1455b486b0dc"
+		],
+		"cvename": [
+			"CVE-2016-10169",
+			"CVE-2016-10170",
+			"CVE-2016-10171",
+			"CVE-2016-10172"
+		]
+	},
+	"dates": {
+		"discovery": "2017-01-21",
+		"entry": "2017-02-18"
+	}
 }

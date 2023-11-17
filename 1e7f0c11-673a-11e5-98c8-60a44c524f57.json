@@ -1,42 +1,42 @@
 {
-  "vid": "1e7f0c11-673a-11e5-98c8-60a44c524f57",
-  "topic": "otrs -- Scheduler Process ID File Access",
-  "affects": [
-    {
-      "name": [
-        "otrs"
-      ],
-      "range": [
-        {
-          "lt": "3.2.18",
-          "gt": "3.2.*"
-        },
-        {
-          "lt": "3.3.15",
-          "gt": "3.3.*"
-        },
-        {
-          "lt": "4.0.13",
-          "gt": "4.0.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OTRS project reports:</p>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2015-02-scheduler-process-id-file-access/\">\n\t  <p>An attacker with valid LOCAL credentials could access and\n\t     manipulate the process ID file for bin/otrs.schduler.pl from the\n\t     CLI.</p>\n\t  <p>The Proc::Daemon module 0.14 for Perl uses world-writable\n\t     permissions for a file that stores a process ID, which allows local\n\t     users to have an unspecified impact by modifying this file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.otrs.com/security-advisory-2015-02-scheduler-process-id-file-access/"
-    ],
-    "cvename": [
-      "CVE-2015-6842",
-      "CVE-2013-7135"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-09-17",
-    "entry": "2015-09-30"
-  }
+	"vid": "1e7f0c11-673a-11e5-98c8-60a44c524f57",
+	"topic": "otrs -- Scheduler Process ID File Access",
+	"affects": [
+		{
+			"name": [
+				"otrs"
+			],
+			"range": [
+				{
+					"lt": "3.2.18",
+					"gt": "3.2.*"
+				},
+				{
+					"lt": "3.3.15",
+					"gt": "3.3.*"
+				},
+				{
+					"lt": "4.0.13",
+					"gt": "4.0.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OTRS project reports:</p>\n\t<blockquote cite=\"https://www.otrs.com/security-advisory-2015-02-scheduler-process-id-file-access/\">\n\t  <p>An attacker with valid LOCAL credentials could access and\n\t     manipulate the process ID file for bin/otrs.schduler.pl from the\n\t     CLI.</p>\n\t  <p>The Proc::Daemon module 0.14 for Perl uses world-writable\n\t     permissions for a file that stores a process ID, which allows local\n\t     users to have an unspecified impact by modifying this file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.otrs.com/security-advisory-2015-02-scheduler-process-id-file-access/"
+		],
+		"cvename": [
+			"CVE-2015-6842",
+			"CVE-2013-7135"
+		]
+	},
+	"dates": {
+		"discovery": "2015-09-17",
+		"entry": "2015-09-30"
+	}
 }

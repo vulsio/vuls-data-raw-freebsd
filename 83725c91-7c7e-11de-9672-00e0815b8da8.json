@@ -1,71 +1,71 @@
 {
-  "vid": "83725c91-7c7e-11de-9672-00e0815b8da8",
-  "topic": "BIND -- Dynamic update message remote DoS",
-  "affects": [
-    {
-      "name": [
-        "bind9"
-      ],
-      "range": [
-        {
-          "lt": "9.3.6.1.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "bind9-sdb-postgresql",
-        "bind9-sdb-ldap"
-      ],
-      "range": [
-        {
-          "lt": "9.4.3.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.3_12",
-          "ge": "6.3"
-        },
-        {
-          "lt": "6.4_6",
-          "ge": "6.4"
-        },
-        {
-          "lt": "7.1_7",
-          "ge": "7.1"
-        },
-        {
-          "lt": "7.2_3",
-          "ge": "7.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t  <p>When named(8) receives a specially crafted dynamic update\n\t    message an internal assertion check is triggered which causes\n\t    named(8) to exit.</p>\n\t  <p>To trigger the problem, the dynamic update message must contains\n\t    a record of type \"ANY\" and at least one resource record set (RRset)\n\t    for this fully qualified domain name (FQDN) must exist on the\n\t    server.</p>\n\t<h1>Impact:</h1>\n\t  <p>An attacker which can send DNS requests to a nameserver can cause\n\t    it to exit, thus creating a Denial of Service situation.</p>\n\t<h1>Workaround:</h1>\n\t  <p>No generally applicable workaround is available, but some firewalls\n\t    may be able to prevent nsupdate DNS packets from reaching the\n\t    nameserver.</p>\n\t  <p>NOTE WELL: Merely configuring named(8) to ignore dynamic updates\n\t    is NOT sufficient to protect it from this vulnerability.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kb.cert.org/vuls/id/725188",
-      "https://www.isc.org/node/474"
-    ],
-    "cvename": [
-      "CVE-2009-0696"
-    ],
-    "freebsd_sa": [
-      "SA-09:12.bind"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-07-28",
-    "entry": "2009-08-01",
-    "modified": "2009-08-04"
-  }
+	"vid": "83725c91-7c7e-11de-9672-00e0815b8da8",
+	"topic": "BIND -- Dynamic update message remote DoS",
+	"affects": [
+		{
+			"name": [
+				"bind9"
+			],
+			"range": [
+				{
+					"lt": "9.3.6.1.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"bind9-sdb-postgresql",
+				"bind9-sdb-ldap"
+			],
+			"range": [
+				{
+					"lt": "9.4.3.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.3_12",
+					"ge": "6.3"
+				},
+				{
+					"lt": "6.4_6",
+					"ge": "6.4"
+				},
+				{
+					"lt": "7.1_7",
+					"ge": "7.1"
+				},
+				{
+					"lt": "7.2_3",
+					"ge": "7.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t  <p>When named(8) receives a specially crafted dynamic update\n\t    message an internal assertion check is triggered which causes\n\t    named(8) to exit.</p>\n\t  <p>To trigger the problem, the dynamic update message must contains\n\t    a record of type \"ANY\" and at least one resource record set (RRset)\n\t    for this fully qualified domain name (FQDN) must exist on the\n\t    server.</p>\n\t<h1>Impact:</h1>\n\t  <p>An attacker which can send DNS requests to a nameserver can cause\n\t    it to exit, thus creating a Denial of Service situation.</p>\n\t<h1>Workaround:</h1>\n\t  <p>No generally applicable workaround is available, but some firewalls\n\t    may be able to prevent nsupdate DNS packets from reaching the\n\t    nameserver.</p>\n\t  <p>NOTE WELL: Merely configuring named(8) to ignore dynamic updates\n\t    is NOT sufficient to protect it from this vulnerability.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kb.cert.org/vuls/id/725188",
+			"https://www.isc.org/node/474"
+		],
+		"cvename": [
+			"CVE-2009-0696"
+		],
+		"freebsd_sa": [
+			"SA-09:12.bind"
+		]
+	},
+	"dates": {
+		"discovery": "2009-07-28",
+		"entry": "2009-08-01",
+		"modified": "2009-08-04"
+	}
 }

@@ -1,34 +1,34 @@
 {
-  "vid": "70d0d2ec-cb62-11ed-956f-7054d21a9e2a",
-  "topic": "py39-rencode -- infinite loop that could lead to Denial of Service",
-  "affects": [
-    {
-      "name": [
-        "py39-rencode"
-      ],
-      "range": [
-        {
-          "le": "1.0.6_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n    <p>NIST reports:</p>\n    <blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2021-40839\">\n      <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\\x2f\\x7f), enabling a remote attack that consumes CPU and memory.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://osv.dev/vulnerability/PYSEC-2021-345",
-      "https://osv.dev/vulnerability/GHSA-gh8j-2pgf-x458"
-    ],
-    "cvename": [
-      "CVE-2021-40839"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-09-09",
-    "entry": "2023-03-25",
-    "modified": "2023-03-26"
-  }
+	"vid": "70d0d2ec-cb62-11ed-956f-7054d21a9e2a",
+	"topic": "py39-rencode -- infinite loop that could lead to Denial of Service",
+	"affects": [
+		{
+			"name": [
+				"py39-rencode"
+			],
+			"range": [
+				{
+					"le": "1.0.6_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n    <p>NIST reports:</p>\n    <blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2021-40839\">\n      <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\\x2f\\x7f), enabling a remote attack that consumes CPU and memory.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://osv.dev/vulnerability/PYSEC-2021-345",
+			"https://osv.dev/vulnerability/GHSA-gh8j-2pgf-x458"
+		],
+		"cvename": [
+			"CVE-2021-40839"
+		]
+	},
+	"dates": {
+		"discovery": "2021-09-09",
+		"entry": "2023-03-25",
+		"modified": "2023-03-26"
+	}
 }

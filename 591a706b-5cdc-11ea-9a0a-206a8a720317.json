@@ -1,54 +1,54 @@
 {
-  "vid": "591a706b-5cdc-11ea-9a0a-206a8a720317",
-  "topic": "ntp -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "11.3_7",
-          "ge": "11.3"
-        },
-        {
-          "lt": "12.1_3",
-          "ge": "12.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ntp"
-      ],
-      "range": [
-        {
-          "lt": "4.2.8p14"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ntp-devel"
-      ],
-      "range": [
-        {
-          "le": "4.3.99_6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>nwtime.org reports:</p>\n\t<blockquote cite=\"https://support.ntp.org/bin/view/Main/SecurityNotice\">\n\t  <p>Three ntp vulnerabilities, Depending on configuration, may have\n\t    little impact up to termination of the ntpd process.</p>\n\t  <p>NTP Bug 3610:  Process_control() should exit earlier on short\n\t    packets.  On systems that override the default and enable ntpdc\n\t    (mode 7) fuzz testing detected that  a short packet will cause\n\t    ntpd to read uninitialized data.</p>\n\t  <p>NTP Bug 3596:  An unauthenticated unmonitored ntpd is vulnerable\n\t    to attack on IPv4 with highly predictable transmit timestamps. An\n\t    off-path attacker who can query time from the victim's ntp which\n\t    receives time from an unauthenticated time source must be able to\n\t    send from a spoofed IPv4 address of upstream ntp server and and\n\t    the victim must be able to process a large number of packets with\n\t    the spoofed IPv4 address of the upstream server.  After eight or\n\t    more successful attacks in a row the attacker can either modify\n\t    the victim's clock by a small amount or cause ntpd to terminate.\n\t    The attack is especially effective when unusually short poll\n\t    intervals have been configured.</p>\n\t  <p>NTP Bug 3592:  The fix for https://bugs.ntp.org/3445 introduced\n\t    a bug such that a ntp can be prevented from initiating a time\n\t    volley to its peer resulting in a DoS.</p>\n\t  <p>All three NTP bugs may result in DoS or terimation of the ntp\n\t    daemon.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-20:09.ntp"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-05-30",
-    "entry": "2020-03-03"
-  }
+	"vid": "591a706b-5cdc-11ea-9a0a-206a8a720317",
+	"topic": "ntp -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "11.3_7",
+					"ge": "11.3"
+				},
+				{
+					"lt": "12.1_3",
+					"ge": "12.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ntp"
+			],
+			"range": [
+				{
+					"lt": "4.2.8p14"
+				}
+			]
+		},
+		{
+			"name": [
+				"ntp-devel"
+			],
+			"range": [
+				{
+					"le": "4.3.99_6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>nwtime.org reports:</p>\n\t<blockquote cite=\"https://support.ntp.org/bin/view/Main/SecurityNotice\">\n\t  <p>Three ntp vulnerabilities, Depending on configuration, may have\n\t    little impact up to termination of the ntpd process.</p>\n\t  <p>NTP Bug 3610:  Process_control() should exit earlier on short\n\t    packets.  On systems that override the default and enable ntpdc\n\t    (mode 7) fuzz testing detected that  a short packet will cause\n\t    ntpd to read uninitialized data.</p>\n\t  <p>NTP Bug 3596:  An unauthenticated unmonitored ntpd is vulnerable\n\t    to attack on IPv4 with highly predictable transmit timestamps. An\n\t    off-path attacker who can query time from the victim's ntp which\n\t    receives time from an unauthenticated time source must be able to\n\t    send from a spoofed IPv4 address of upstream ntp server and and\n\t    the victim must be able to process a large number of packets with\n\t    the spoofed IPv4 address of the upstream server.  After eight or\n\t    more successful attacks in a row the attacker can either modify\n\t    the victim's clock by a small amount or cause ntpd to terminate.\n\t    The attack is especially effective when unusually short poll\n\t    intervals have been configured.</p>\n\t  <p>NTP Bug 3592:  The fix for https://bugs.ntp.org/3445 introduced\n\t    a bug such that a ntp can be prevented from initiating a time\n\t    volley to its peer resulting in a DoS.</p>\n\t  <p>All three NTP bugs may result in DoS or terimation of the ntp\n\t    daemon.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-20:09.ntp"
+		]
+	},
+	"dates": {
+		"discovery": "2019-05-30",
+		"entry": "2020-03-03"
+	}
 }

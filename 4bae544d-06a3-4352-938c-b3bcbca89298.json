@@ -1,169 +1,169 @@
 {
-  "vid": "4bae544d-06a3-4352-938c-b3bcbca89298",
-  "topic": "ffmpeg -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libav"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gstreamer-ffmpeg"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "handbrake"
-      ],
-      "range": [
-        {
-          "lt": "1.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ffmpeg"
-      ],
-      "range": [
-        {
-          "lt": "2.8.4,1",
-          "ge": "2.8,1"
-        },
-        {
-          "lt": "2.7.4,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ffmpeg26"
-      ],
-      "range": [
-        {
-          "lt": "2.6.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ffmpeg25"
-      ],
-      "range": [
-        {
-          "lt": "2.5.9"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ffmpeg24"
-      ],
-      "range": [
-        {
-          "lt": "2.4.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ffmpeg-devel",
-        "ffmpeg23",
-        "ffmpeg2",
-        "ffmpeg1",
-        "ffmpeg-011",
-        "ffmpeg0"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "avidemux",
-        "avidemux2",
-        "avidemux26"
-      ],
-      "range": [
-        {
-          "le": "2.6.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kodi"
-      ],
-      "range": [
-        {
-          "lt": "16.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mplayer",
-        "mencoder"
-      ],
-      "range": [
-        {
-          "lt": "1.2.r20151219_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mythtv",
-        "mythtv-frontend"
-      ],
-      "range": [
-        {
-          "le": "0.27.5,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "plexhometheater"
-      ],
-      "range": [
-        {
-          "ge": "0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8662\">\n\t  <p>The ff_dwt_decode function in libavcodec/jpeg2000dwt.c in\n\t    FFmpeg before 2.8.4 does not validate the number of\n\t    decomposition levels before proceeding with Discrete Wavelet\n\t    Transform decoding, which allows remote attackers to cause a\n\t    denial of service (out-of-bounds array access) or possibly\n\t    have unspecified other impact via crafted JPEG 2000\n\t    data.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8663\">\n\t  <p>The ff_get_buffer function in libavcodec/utils.c in\n\t    FFmpeg before 2.8.4 preserves width and height values after\n\t    a failure, which allows remote attackers to cause a denial\n\t    of service (out-of-bounds array access) or possibly have\n\t    unspecified other impact via a crafted .mov file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=75422280fbcdfbe9dc56bde5525b4d8b280f1bc5",
-      "https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=abee0a1c60612e8638640a8a3738fffb65e16dbf",
-      "https://ffmpeg.org/security.html"
-    ],
-    "cvename": [
-      "CVE-2015-8662",
-      "CVE-2015-8663"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-20",
-    "entry": "2015-12-28",
-    "modified": "2018-03-25"
-  }
+	"vid": "4bae544d-06a3-4352-938c-b3bcbca89298",
+	"topic": "ffmpeg -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libav"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"gstreamer-ffmpeg"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"handbrake"
+			],
+			"range": [
+				{
+					"lt": "1.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"ffmpeg"
+			],
+			"range": [
+				{
+					"lt": "2.8.4,1",
+					"ge": "2.8,1"
+				},
+				{
+					"lt": "2.7.4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ffmpeg26"
+			],
+			"range": [
+				{
+					"lt": "2.6.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"ffmpeg25"
+			],
+			"range": [
+				{
+					"lt": "2.5.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"ffmpeg24"
+			],
+			"range": [
+				{
+					"lt": "2.4.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"ffmpeg-devel",
+				"ffmpeg23",
+				"ffmpeg2",
+				"ffmpeg1",
+				"ffmpeg-011",
+				"ffmpeg0"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		},
+		{
+			"name": [
+				"avidemux",
+				"avidemux2",
+				"avidemux26"
+			],
+			"range": [
+				{
+					"le": "2.6.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"kodi"
+			],
+			"range": [
+				{
+					"lt": "16.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"mplayer",
+				"mencoder"
+			],
+			"range": [
+				{
+					"lt": "1.2.r20151219_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mythtv",
+				"mythtv-frontend"
+			],
+			"range": [
+				{
+					"le": "0.27.5,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"plexhometheater"
+			],
+			"range": [
+				{
+					"ge": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8662\">\n\t  <p>The ff_dwt_decode function in libavcodec/jpeg2000dwt.c in\n\t    FFmpeg before 2.8.4 does not validate the number of\n\t    decomposition levels before proceeding with Discrete Wavelet\n\t    Transform decoding, which allows remote attackers to cause a\n\t    denial of service (out-of-bounds array access) or possibly\n\t    have unspecified other impact via crafted JPEG 2000\n\t    data.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8663\">\n\t  <p>The ff_get_buffer function in libavcodec/utils.c in\n\t    FFmpeg before 2.8.4 preserves width and height values after\n\t    a failure, which allows remote attackers to cause a denial\n\t    of service (out-of-bounds array access) or possibly have\n\t    unspecified other impact via a crafted .mov file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=75422280fbcdfbe9dc56bde5525b4d8b280f1bc5",
+			"https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=abee0a1c60612e8638640a8a3738fffb65e16dbf",
+			"https://ffmpeg.org/security.html"
+		],
+		"cvename": [
+			"CVE-2015-8662",
+			"CVE-2015-8663"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-20",
+		"entry": "2015-12-28",
+		"modified": "2018-03-25"
+	}
 }

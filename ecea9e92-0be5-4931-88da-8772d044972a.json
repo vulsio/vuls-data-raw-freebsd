@@ -1,32 +1,32 @@
 {
-  "vid": "ecea9e92-0be5-4931-88da-8772d044972a",
-  "topic": "mcollective -- cert valication issue",
-  "affects": [
-    {
-      "name": [
-        "mcollective"
-      ],
-      "range": [
-        {
-          "lt": "2.5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Melissa Stone reports:</p>\n\t<blockquote cite=\"https://groups.google.com/forum/#!topic/puppet-announce/cPykqUXMmK4\">\n\t  <p>The MCollective aes_security public key plugin does not correctly\n\t    validate certs against the CA. By exploiting this vulnerability\n\t    within a race/initialization window, an attacker with local access\n\t    could initiate an unauthorized MCollective client connection with a\n\t    server, and thus control the mcollective plugins running on that\n\t    server. This vulnerability requires a collective be configured to\n\t    use the aes_security plugin. Puppet Enterprise and open source\n\t    MCollective are not configured to use the plugin and are not\n\t    vulnerable by default.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/forum/#!topic/puppet-announce/cPykqUXMmK4"
-    ],
-    "cvename": [
-      "CVE-2014-3251"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-07-09",
-    "entry": "2014-07-21"
-  }
+	"vid": "ecea9e92-0be5-4931-88da-8772d044972a",
+	"topic": "mcollective -- cert valication issue",
+	"affects": [
+		{
+			"name": [
+				"mcollective"
+			],
+			"range": [
+				{
+					"lt": "2.5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Melissa Stone reports:</p>\n\t<blockquote cite=\"https://groups.google.com/forum/#!topic/puppet-announce/cPykqUXMmK4\">\n\t  <p>The MCollective aes_security public key plugin does not correctly\n\t    validate certs against the CA. By exploiting this vulnerability\n\t    within a race/initialization window, an attacker with local access\n\t    could initiate an unauthorized MCollective client connection with a\n\t    server, and thus control the mcollective plugins running on that\n\t    server. This vulnerability requires a collective be configured to\n\t    use the aes_security plugin. Puppet Enterprise and open source\n\t    MCollective are not configured to use the plugin and are not\n\t    vulnerable by default.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/forum/#!topic/puppet-announce/cPykqUXMmK4"
+		],
+		"cvename": [
+			"CVE-2014-3251"
+		]
+	},
+	"dates": {
+		"discovery": "2014-07-09",
+		"entry": "2014-07-21"
+	}
 }

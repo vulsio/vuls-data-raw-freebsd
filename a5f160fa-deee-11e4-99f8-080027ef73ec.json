@@ -1,54 +1,54 @@
 {
-  "vid": "a5f160fa-deee-11e4-99f8-080027ef73ec",
-  "topic": "mailman -- path traversal vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mailman"
-      ],
-      "range": [
-        {
-          "lt": "2.1.20"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mailman-with-htdig"
-      ],
-      "range": [
-        {
-          "lt": "2.1.20"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ja-mailman"
-      ],
-      "range": [
-        {
-          "lt": "2.1.14.j7_2,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://mail.python.org/pipermail/mailman-announce/2015-March/000209.html\">\n\t  <p>A path traversal vulnerability has been discovered and fixed.  This\n\t    vulnerability is only exploitable by a local user on a Mailman\n\t    server where the suggested Exim transport, the Postfix\n\t    postfix_to_mailman.py transport or some other programmatic MTA\n\t    delivery not using aliases is employed.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://mail.python.org/pipermail/mailman-announce/2015-March/000209.html",
-      "https://bugs.launchpad.net/mailman/+bug/1437145"
-    ],
-    "cvename": [
-      "CVE-2015-2775"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-03-27",
-    "entry": "2015-04-09",
-    "modified": "2015-06-17"
-  }
+	"vid": "a5f160fa-deee-11e4-99f8-080027ef73ec",
+	"topic": "mailman -- path traversal vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mailman"
+			],
+			"range": [
+				{
+					"lt": "2.1.20"
+				}
+			]
+		},
+		{
+			"name": [
+				"mailman-with-htdig"
+			],
+			"range": [
+				{
+					"lt": "2.1.20"
+				}
+			]
+		},
+		{
+			"name": [
+				"ja-mailman"
+			],
+			"range": [
+				{
+					"lt": "2.1.14.j7_2,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mark Sapiro reports:</p>\n\t<blockquote cite=\"https://mail.python.org/pipermail/mailman-announce/2015-March/000209.html\">\n\t  <p>A path traversal vulnerability has been discovered and fixed.  This\n\t    vulnerability is only exploitable by a local user on a Mailman\n\t    server where the suggested Exim transport, the Postfix\n\t    postfix_to_mailman.py transport or some other programmatic MTA\n\t    delivery not using aliases is employed.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://mail.python.org/pipermail/mailman-announce/2015-March/000209.html",
+			"https://bugs.launchpad.net/mailman/+bug/1437145"
+		],
+		"cvename": [
+			"CVE-2015-2775"
+		]
+	},
+	"dates": {
+		"discovery": "2015-03-27",
+		"entry": "2015-04-09",
+		"modified": "2015-06-17"
+	}
 }

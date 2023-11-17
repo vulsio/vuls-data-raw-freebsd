@@ -1,35 +1,35 @@
 {
-  "vid": "57facd35-ddf6-11e6-915d-001b3856973b",
-  "topic": "icoutils -- check_offset overflow on 64-bit systems",
-  "affects": [
-    {
-      "name": [
-        "icoutils"
-      ],
-      "range": [
-        {
-          "lt": "0.31.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Choongwoo Han reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2017/q1/38\">\n\t  <p>An exploitable crash exists in the wrestool utility on 64-bit systems\n\t    where the result of subtracting two pointers exceeds the size of int.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2017/q1/38"
-    ],
-    "cvename": [
-      "CVE-2017-5208",
-      "CVE-2017-5331",
-      "CVE-2017-5332",
-      "CVE-2017-5333"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-01-03",
-    "entry": "2017-01-19"
-  }
+	"vid": "57facd35-ddf6-11e6-915d-001b3856973b",
+	"topic": "icoutils -- check_offset overflow on 64-bit systems",
+	"affects": [
+		{
+			"name": [
+				"icoutils"
+			],
+			"range": [
+				{
+					"lt": "0.31.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Choongwoo Han reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2017/q1/38\">\n\t  <p>An exploitable crash exists in the wrestool utility on 64-bit systems\n\t    where the result of subtracting two pointers exceeds the size of int.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2017/q1/38"
+		],
+		"cvename": [
+			"CVE-2017-5208",
+			"CVE-2017-5331",
+			"CVE-2017-5332",
+			"CVE-2017-5333"
+		]
+	},
+	"dates": {
+		"discovery": "2017-01-03",
+		"entry": "2017-01-19"
+	}
 }

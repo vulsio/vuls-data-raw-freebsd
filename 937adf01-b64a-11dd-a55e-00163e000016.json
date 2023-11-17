@@ -1,40 +1,40 @@
 {
-  "vid": "937adf01-b64a-11dd-a55e-00163e000016",
-  "topic": "openfire -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openfire"
-      ],
-      "range": [
-        {
-          "lt": "3.6.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Andreas Kurtz reports:</p>\n\t<blockquote cite=\"http://www.andreas-kurtz.de/advisories/AKADV2008-001-v1.0.txt\">\n\t  <p>The jabber server Openfire (&lt;= version 3.6.0a) contains several\n\t    serious vulnerabilities. Depending on the particular runtime\n\t    environment these issues can potentially even be used by an\n\t    attacker to execute code on operating system level.</p>\n\t  <ol>\n\t  <li>Authentication bypass - This vulnerability provides an attacker\n\t     full access to all functions in the admin webinterface without\n\t     providing any user credentials.  The Tomcat filter which is\n\t     responsible for authentication could be completely\n\t     circumvented.</li>\n\t  <li>SQL injection - It is possible to pass SQL statements to the\n\t     backend database through a SQL injection vulnerability. Depending\n\t     on the particular runtime environment and database permissions it\n\t     is even possible to write files to disk and execute code on\n\t     operating system level.</li>\n\t  <li>Multiple Cross-Site Scripting  - Permits arbitrary insertion\n\t     of HTML- and JavaScript code in login.jsp.  An attacker could\n\t     also manipulate a parameter to specify a destination to which a\n\t     user will be forwarded to after successful authentication.</li>\n\t  </ol>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.andreas-kurtz.de/advisories/AKADV2008-001-v1.0.txt",
-      "http://www.igniterealtime.org/builds/openfire/docs/latest/changelog.html",
-      "http://secunia.com/Advisories/32478/"
-    ],
-    "cvename": [
-      "CVE-2008-6510",
-      "CVE-2008-6511",
-      "CVE-2008-6508",
-      "CVE-2009-1595",
-      "CVE-2008-1728",
-      "CVE-2008-6509"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-11-07",
-    "entry": "2008-11-19",
-    "modified": "2010-05-02"
-  }
+	"vid": "937adf01-b64a-11dd-a55e-00163e000016",
+	"topic": "openfire -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openfire"
+			],
+			"range": [
+				{
+					"lt": "3.6.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Andreas Kurtz reports:</p>\n\t<blockquote cite=\"http://www.andreas-kurtz.de/advisories/AKADV2008-001-v1.0.txt\">\n\t  <p>The jabber server Openfire (&lt;= version 3.6.0a) contains several\n\t    serious vulnerabilities. Depending on the particular runtime\n\t    environment these issues can potentially even be used by an\n\t    attacker to execute code on operating system level.</p>\n\t  <ol>\n\t  <li>Authentication bypass - This vulnerability provides an attacker\n\t     full access to all functions in the admin webinterface without\n\t     providing any user credentials.  The Tomcat filter which is\n\t     responsible for authentication could be completely\n\t     circumvented.</li>\n\t  <li>SQL injection - It is possible to pass SQL statements to the\n\t     backend database through a SQL injection vulnerability. Depending\n\t     on the particular runtime environment and database permissions it\n\t     is even possible to write files to disk and execute code on\n\t     operating system level.</li>\n\t  <li>Multiple Cross-Site Scripting  - Permits arbitrary insertion\n\t     of HTML- and JavaScript code in login.jsp.  An attacker could\n\t     also manipulate a parameter to specify a destination to which a\n\t     user will be forwarded to after successful authentication.</li>\n\t  </ol>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.andreas-kurtz.de/advisories/AKADV2008-001-v1.0.txt",
+			"http://www.igniterealtime.org/builds/openfire/docs/latest/changelog.html",
+			"http://secunia.com/Advisories/32478/"
+		],
+		"cvename": [
+			"CVE-2008-6510",
+			"CVE-2008-6511",
+			"CVE-2008-6508",
+			"CVE-2009-1595",
+			"CVE-2008-1728",
+			"CVE-2008-6509"
+		]
+	},
+	"dates": {
+		"discovery": "2008-11-07",
+		"entry": "2008-11-19",
+		"modified": "2010-05-02"
+	}
 }

@@ -1,42 +1,42 @@
 {
-  "vid": "82b702e0-1907-11e6-857b-00221503d280",
-  "topic": "imagemagick -- buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "ImageMagick",
-        "ImageMagick-nox11"
-      ],
-      "range": [
-        {
-          "lt": "6.9.4.1,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ImageMagick7",
-        "ImageMagick7-nox11"
-      ],
-      "range": [
-        {
-          "lt": "7.0.1.3",
-          "ge": "7.0.0.0.b20150715"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>ImageMagick reports:</p>\n\t<blockquote cite=\"http://legacy.imagemagick.org/script/changelog.php\">\n\t  <p>Fix a buffer overflow in magick/drag.c/DrawStrokePolygon().</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://legacy.imagemagick.org/script/changelog.php"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-05-09",
-    "entry": "2016-05-13"
-  }
+	"vid": "82b702e0-1907-11e6-857b-00221503d280",
+	"topic": "imagemagick -- buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"ImageMagick",
+				"ImageMagick-nox11"
+			],
+			"range": [
+				{
+					"lt": "6.9.4.1,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ImageMagick7",
+				"ImageMagick7-nox11"
+			],
+			"range": [
+				{
+					"lt": "7.0.1.3",
+					"ge": "7.0.0.0.b20150715"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>ImageMagick reports:</p>\n\t<blockquote cite=\"http://legacy.imagemagick.org/script/changelog.php\">\n\t  <p>Fix a buffer overflow in magick/drag.c/DrawStrokePolygon().</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://legacy.imagemagick.org/script/changelog.php"
+		]
+	},
+	"dates": {
+		"discovery": "2016-05-09",
+		"entry": "2016-05-13"
+	}
 }

@@ -1,59 +1,59 @@
 {
-  "vid": "d6d088c9-5064-11ed-bade-080027881239",
-  "topic": "Python -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "python37"
-      ],
-      "range": [
-        {
-          "lt": "3.7.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "python38"
-      ],
-      "range": [
-        {
-          "lt": "3.8.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "python39"
-      ],
-      "range": [
-        {
-          "lt": "3.9.15"
-        }
-      ]
-    },
-    {
-      "name": [
-        "python310"
-      ],
-      "range": [
-        {
-          "lt": "3.10.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/release/3.9.15/whatsnew/changelog.html\">\n\t  <p>gh-97616: Fix multiplying a list by an integer (list *= int): detect\n\t    the integer overflow when the new allocated length is close to the\n\t    maximum size. Issue reported by Jordan Limor. Patch by Victor Stinner.</p>\n\t  <p>gh-97612: Fix a shell code injection vulnerability in the\n\t    get-remote-certificate.py example script. The script no longer uses\n\t    a shell to run openssl commands. Issue reported and initial fix by\n\t    Caleb Shortt. Patch by Victor Stinner.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.python.org/release/3.9.15/whatsnew/changelog.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-09-29",
-    "entry": "2022-10-20"
-  }
+	"vid": "d6d088c9-5064-11ed-bade-080027881239",
+	"topic": "Python -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"python37"
+			],
+			"range": [
+				{
+					"lt": "3.7.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"python38"
+			],
+			"range": [
+				{
+					"lt": "3.8.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"python39"
+			],
+			"range": [
+				{
+					"lt": "3.9.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"python310"
+			],
+			"range": [
+				{
+					"lt": "3.10.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/release/3.9.15/whatsnew/changelog.html\">\n\t  <p>gh-97616: Fix multiplying a list by an integer (list *= int): detect\n\t    the integer overflow when the new allocated length is close to the\n\t    maximum size. Issue reported by Jordan Limor. Patch by Victor Stinner.</p>\n\t  <p>gh-97612: Fix a shell code injection vulnerability in the\n\t    get-remote-certificate.py example script. The script no longer uses\n\t    a shell to run openssl commands. Issue reported and initial fix by\n\t    Caleb Shortt. Patch by Victor Stinner.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.python.org/release/3.9.15/whatsnew/changelog.html"
+		]
+	},
+	"dates": {
+		"discovery": "2022-09-29",
+		"entry": "2022-10-20"
+	}
 }

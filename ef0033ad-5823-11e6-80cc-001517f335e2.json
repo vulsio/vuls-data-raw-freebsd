@@ -1,32 +1,32 @@
 {
-  "vid": "ef0033ad-5823-11e6-80cc-001517f335e2",
-  "topic": "lighttpd - multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "lighttpd"
-      ],
-      "range": [
-        {
-          "lt": "1.4.41"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Lighttpd Project reports:</p>\n\t<blockquote cite=\"http://www.lighttpd.net/2016/7/31/1.4.41/\">\n\t  <p>Security fixes for Lighttpd:</p>\n\t  <ul>\n\t    <li><p>security: encode quoting chars in HTML and XML</p></li>\n\t    <li><p>security: ensure gid != 0 if server.username is set, but not server.groupname</p></li>\n\t    <li><p>security: disable stat_cache if server.follow-symlink = “disable”</p></li>\n\t    <li><p>security: httpoxy defense: do not emit HTTP_PROXY to CGI env</p></li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.lighttpd.net/2016/7/31/1.4.41/"
-    ],
-    "freebsd_pr": [
-      "ports/211495"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-07-31",
-    "entry": "2016-08-03"
-  }
+	"vid": "ef0033ad-5823-11e6-80cc-001517f335e2",
+	"topic": "lighttpd - multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"lighttpd"
+			],
+			"range": [
+				{
+					"lt": "1.4.41"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Lighttpd Project reports:</p>\n\t<blockquote cite=\"http://www.lighttpd.net/2016/7/31/1.4.41/\">\n\t  <p>Security fixes for Lighttpd:</p>\n\t  <ul>\n\t    <li><p>security: encode quoting chars in HTML and XML</p></li>\n\t    <li><p>security: ensure gid != 0 if server.username is set, but not server.groupname</p></li>\n\t    <li><p>security: disable stat_cache if server.follow-symlink = “disable”</p></li>\n\t    <li><p>security: httpoxy defense: do not emit HTTP_PROXY to CGI env</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.lighttpd.net/2016/7/31/1.4.41/"
+		],
+		"freebsd_pr": [
+			"ports/211495"
+		]
+	},
+	"dates": {
+		"discovery": "2016-07-31",
+		"entry": "2016-08-03"
+	}
 }

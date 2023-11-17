@@ -1,32 +1,32 @@
 {
-  "vid": "f6d6308a-f2ec-11e8-b005-6805ca2fa271",
-  "topic": "powerdns-recursor -- Crafted query can cause a denial of service",
-  "affects": [
-    {
-      "name": [
-        "powerdns-recursor"
-      ],
-      "range": [
-        {
-          "lt": "4.1.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>powerdns Team reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/recursor/changelog/4.1.html\">\n\t  <p>CVE-2018-16855: An issue has been found in PowerDNS Recursor where a remote attacker sending a DNS query can trigger an out-of-bounds memory read while computing the hash of the query for a packet cache lookup, possibly leading to a crash. When the PowerDNS Recursor is run inside a supervisor like supervisord or systemd, a crash will lead to an automatic restart, limiting the impact to a somewhat degraded service.</p>\n      </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://doc.powerdns.com/recursor/changelog/4.1.html"
-    ],
-    "cvename": [
-      "CVE-2018-16855"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-11-26",
-    "entry": "2018-12-09"
-  }
+	"vid": "f6d6308a-f2ec-11e8-b005-6805ca2fa271",
+	"topic": "powerdns-recursor -- Crafted query can cause a denial of service",
+	"affects": [
+		{
+			"name": [
+				"powerdns-recursor"
+			],
+			"range": [
+				{
+					"lt": "4.1.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>powerdns Team reports:</p>\n\t<blockquote cite=\"https://doc.powerdns.com/recursor/changelog/4.1.html\">\n\t  <p>CVE-2018-16855: An issue has been found in PowerDNS Recursor where a remote attacker sending a DNS query can trigger an out-of-bounds memory read while computing the hash of the query for a packet cache lookup, possibly leading to a crash. When the PowerDNS Recursor is run inside a supervisor like supervisord or systemd, a crash will lead to an automatic restart, limiting the impact to a somewhat degraded service.</p>\n      </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://doc.powerdns.com/recursor/changelog/4.1.html"
+		],
+		"cvename": [
+			"CVE-2018-16855"
+		]
+	},
+	"dates": {
+		"discovery": "2018-11-26",
+		"entry": "2018-12-09"
+	}
 }

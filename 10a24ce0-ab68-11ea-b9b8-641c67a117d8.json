@@ -1,33 +1,33 @@
 {
-  "vid": "10a24ce0-ab68-11ea-b9b8-641c67a117d8",
-  "topic": "znc -- Authenticated users can trigger an application crash",
-  "affects": [
-    {
-      "name": [
-        "znc"
-      ],
-      "range": [
-        {
-          "lt": "1.8.1",
-          "ge": "1.8.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13775\">\n\t  <p>ZNC 1.8.0 up to 1.8.1-rc1 allows attackers to trigger an application\n\t    crash (with a NULL pointer dereference) if echo-message is not enabled\n\t    and there is no network.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://wiki.znc.in/ChangeLog/1.8.1"
-    ],
-    "cvename": [
-      "CVE-2020-13775"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-06-02",
-    "entry": "2020-06-10"
-  }
+	"vid": "10a24ce0-ab68-11ea-b9b8-641c67a117d8",
+	"topic": "znc -- Authenticated users can trigger an application crash",
+	"affects": [
+		{
+			"name": [
+				"znc"
+			],
+			"range": [
+				{
+					"lt": "1.8.1",
+					"ge": "1.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13775\">\n\t  <p>ZNC 1.8.0 up to 1.8.1-rc1 allows attackers to trigger an application\n\t    crash (with a NULL pointer dereference) if echo-message is not enabled\n\t    and there is no network.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://wiki.znc.in/ChangeLog/1.8.1"
+		],
+		"cvename": [
+			"CVE-2020-13775"
+		]
+	},
+	"dates": {
+		"discovery": "2020-06-02",
+		"entry": "2020-06-10"
+	}
 }

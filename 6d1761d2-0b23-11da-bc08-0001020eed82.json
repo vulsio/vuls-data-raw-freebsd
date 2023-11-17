@@ -1,35 +1,35 @@
 {
-  "vid": "6d1761d2-0b23-11da-bc08-0001020eed82",
-  "topic": "gaim -- AIM/ICQ away message buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "gaim",
-        "ja-gaim",
-        "ko-gaim",
-        "ru-gaim"
-      ],
-      "range": [
-        {
-          "lt": "1.4.0_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The GAIM team reports:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=22\">\n\t  <p>A remote AIM or ICQ user can cause a buffer overflow in\n\t    Gaim by setting an away message containing many AIM\n\t    substitution strings (such as %t or %n).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://gaim.sourceforge.net/security/?id=22"
-    ],
-    "cvename": [
-      "CVE-2005-2103"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-08-09",
-    "entry": "2005-08-12"
-  }
+	"vid": "6d1761d2-0b23-11da-bc08-0001020eed82",
+	"topic": "gaim -- AIM/ICQ away message buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"gaim",
+				"ja-gaim",
+				"ko-gaim",
+				"ru-gaim"
+			],
+			"range": [
+				{
+					"lt": "1.4.0_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The GAIM team reports:</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=22\">\n\t  <p>A remote AIM or ICQ user can cause a buffer overflow in\n\t    Gaim by setting an away message containing many AIM\n\t    substitution strings (such as %t or %n).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://gaim.sourceforge.net/security/?id=22"
+		],
+		"cvename": [
+			"CVE-2005-2103"
+		]
+	},
+	"dates": {
+		"discovery": "2005-08-09",
+		"entry": "2005-08-12"
+	}
 }

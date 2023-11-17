@@ -1,37 +1,37 @@
 {
-  "vid": "14a3b376-b30a-11e9-a87f-a4badb2f4699",
-  "topic": "FreeBSD -- Privilege escalation in cd(4) driver",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.0_7",
-          "ge": "12.0"
-        },
-        {
-          "lt": "11.2_11",
-          "ge": "11.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>To implement one particular ioctl, the Linux emulation\n\tcode used a special interface present in the cd(4) driver\n\twhich allows it to copy subchannel information directly to\n\ta kernel address. This interface was erroneously made\n\taccessible to userland, allowing users with read access to\n\ta cd(4) device to arbitrarily overwrite kernel memory when\n\tsome media is present in the device.</p>\n\t<h1>Impact:</h1>\n\t<p>A user in the operator group can make use of this interface\n\tto gain root privileges on a system with a cd(4) device\n\twhen some media is present in the device.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-5602"
-    ],
-    "freebsd_sa": [
-      "SA-19:11.cd_ioctl"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-07-02",
-    "entry": "2019-07-30"
-  }
+	"vid": "14a3b376-b30a-11e9-a87f-a4badb2f4699",
+	"topic": "FreeBSD -- Privilege escalation in cd(4) driver",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.0_7",
+					"ge": "12.0"
+				},
+				{
+					"lt": "11.2_11",
+					"ge": "11.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>To implement one particular ioctl, the Linux emulation\n\tcode used a special interface present in the cd(4) driver\n\twhich allows it to copy subchannel information directly to\n\ta kernel address. This interface was erroneously made\n\taccessible to userland, allowing users with read access to\n\ta cd(4) device to arbitrarily overwrite kernel memory when\n\tsome media is present in the device.</p>\n\t<h1>Impact:</h1>\n\t<p>A user in the operator group can make use of this interface\n\tto gain root privileges on a system with a cd(4) device\n\twhen some media is present in the device.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-5602"
+		],
+		"freebsd_sa": [
+			"SA-19:11.cd_ioctl"
+		]
+	},
+	"dates": {
+		"discovery": "2019-07-02",
+		"entry": "2019-07-30"
+	}
 }

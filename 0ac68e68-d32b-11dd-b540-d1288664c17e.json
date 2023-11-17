@@ -1,35 +1,35 @@
 {
-  "vid": "0ac68e68-d32b-11dd-b540-d1288664c17e",
-  "topic": "ampache -- insecure temporary file usage",
-  "affects": [
-    {
-      "name": [
-        "ampache"
-      ],
-      "range": [
-        {
-          "lt": "3.4.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31657\">\n\t  <p>A security issue has been reported in Ampache, which can be\n\t    exploited by malicious, local users to perform certain actions\n\t    with escalated privileges.</p>\n\t  <p>The security issue is caused due to the \"gather-messages.sh\"\n\t    script handling temporary files in an insecure manner.\n\t    This can be exploited via symlink attacks to overwrite arbitrary\n\t    files with the privileges of the user running the script.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/31657"
-    ],
-    "cvename": [
-      "CVE-2008-3929"
-    ],
-    "bid": [
-      "30875"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-12-24",
-    "entry": "2008-12-26"
-  }
+	"vid": "0ac68e68-d32b-11dd-b540-d1288664c17e",
+	"topic": "ampache -- insecure temporary file usage",
+	"affects": [
+		{
+			"name": [
+				"ampache"
+			],
+			"range": [
+				{
+					"lt": "3.4.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31657\">\n\t  <p>A security issue has been reported in Ampache, which can be\n\t    exploited by malicious, local users to perform certain actions\n\t    with escalated privileges.</p>\n\t  <p>The security issue is caused due to the \"gather-messages.sh\"\n\t    script handling temporary files in an insecure manner.\n\t    This can be exploited via symlink attacks to overwrite arbitrary\n\t    files with the privileges of the user running the script.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/31657"
+		],
+		"cvename": [
+			"CVE-2008-3929"
+		],
+		"bid": [
+			"30875"
+		]
+	},
+	"dates": {
+		"discovery": "2008-12-24",
+		"entry": "2008-12-26"
+	}
 }

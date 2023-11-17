@@ -1,32 +1,32 @@
 {
-  "vid": "00b296b6-7db1-11e0-96b7-00300582f9fc",
-  "topic": "Apache APR -- DoS vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "apr1"
-      ],
-      "range": [
-        {
-          "lt": "1.4.4.1.3.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Apache Portable Runtime Project reports:</p>\n\t<blockquote cite=\"http://www.apache.org/dist/apr/CHANGES-APR-1.4\">\n\t  <p>Note especially a security fix to APR 1.4.4, excessive CPU\n\t    consumption was possible due to an unconstrained, recursive\n\t    invocation of apr_fnmatch, as apr_fnmatch processed '*' wildcards.\n\t    Reimplement apr_fnmatch() from scratch using a non-recursive\n\t    algorithm now has improved compliance with the fnmatch() spec.\n\t    (William Rowe)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.apache.org/dist/apr/Announcement1.x.html"
-    ],
-    "cvename": [
-      "CVE-2011-0419"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-05-10",
-    "entry": "2011-05-12"
-  }
+	"vid": "00b296b6-7db1-11e0-96b7-00300582f9fc",
+	"topic": "Apache APR -- DoS vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"apr1"
+			],
+			"range": [
+				{
+					"lt": "1.4.4.1.3.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache Portable Runtime Project reports:</p>\n\t<blockquote cite=\"http://www.apache.org/dist/apr/CHANGES-APR-1.4\">\n\t  <p>Note especially a security fix to APR 1.4.4, excessive CPU\n\t    consumption was possible due to an unconstrained, recursive\n\t    invocation of apr_fnmatch, as apr_fnmatch processed '*' wildcards.\n\t    Reimplement apr_fnmatch() from scratch using a non-recursive\n\t    algorithm now has improved compliance with the fnmatch() spec.\n\t    (William Rowe)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.apache.org/dist/apr/Announcement1.x.html"
+		],
+		"cvename": [
+			"CVE-2011-0419"
+		]
+	},
+	"dates": {
+		"discovery": "2011-05-10",
+		"entry": "2011-05-12"
+	}
 }

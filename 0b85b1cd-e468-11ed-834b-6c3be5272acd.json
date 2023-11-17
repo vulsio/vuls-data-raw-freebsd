@@ -1,72 +1,72 @@
 {
-  "vid": "0b85b1cd-e468-11ed-834b-6c3be5272acd",
-  "topic": "Grafana -- Critical vulnerability in golang",
-  "affects": [
-    {
-      "name": [
-        "grafana"
-      ],
-      "range": [
-        {
-          "lt": "8.5.24"
-        },
-        {
-          "lt": "9.2.17",
-          "ge": "9.0.0"
-        },
-        {
-          "lt": "9.3.13",
-          "ge": "9.3.0"
-        },
-        {
-          "lt": "9.4.9",
-          "ge": "9.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana8"
-      ],
-      "range": [
-        {
-          "lt": "8.5.24"
-        }
-      ]
-    },
-    {
-      "name": [
-        "grafana9"
-      ],
-      "range": [
-        {
-          "lt": "9.2.17"
-        },
-        {
-          "lt": "9.3.13",
-          "ge": "9.3.0"
-        },
-        {
-          "lt": "9.4.9",
-          "ge": "9.4.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/04/26/precautionary-patches-for-grafana-released-following-critical-go-vulnerability-cve-2023-24538/\">\n\t  <p>An issue in how go handles backticks (`) with Javascript can lead to\n\t  an injection of arbitrary code into go templates. While Grafana Labs software\n\t  contains potentially vulnerable versions of go, we have not identified any\n\t  exploitable use cases at this time.</p>\n\t  <p>The CVSS score for this vulnerability is 0.0 (adjusted), 9.8 (base).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://grafana.com/blog/2023/04/26/precautionary-patches-for-grafana-released-following-critical-go-vulnerability-cve-2023-24538/"
-    ],
-    "cvename": [
-      "CVE-2023-24538"
-    ]
-  },
-  "dates": {
-    "discovery": "2023-04-19",
-    "entry": "2023-04-26"
-  }
+	"vid": "0b85b1cd-e468-11ed-834b-6c3be5272acd",
+	"topic": "Grafana -- Critical vulnerability in golang",
+	"affects": [
+		{
+			"name": [
+				"grafana"
+			],
+			"range": [
+				{
+					"lt": "8.5.24"
+				},
+				{
+					"lt": "9.2.17",
+					"ge": "9.0.0"
+				},
+				{
+					"lt": "9.3.13",
+					"ge": "9.3.0"
+				},
+				{
+					"lt": "9.4.9",
+					"ge": "9.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana8"
+			],
+			"range": [
+				{
+					"lt": "8.5.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"grafana9"
+			],
+			"range": [
+				{
+					"lt": "9.2.17"
+				},
+				{
+					"lt": "9.3.13",
+					"ge": "9.3.0"
+				},
+				{
+					"lt": "9.4.9",
+					"ge": "9.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Grafana Labs reports:</p>\n\t<blockquote cite=\"https://grafana.com/blog/2023/04/26/precautionary-patches-for-grafana-released-following-critical-go-vulnerability-cve-2023-24538/\">\n\t  <p>An issue in how go handles backticks (`) with Javascript can lead to\n\t  an injection of arbitrary code into go templates. While Grafana Labs software\n\t  contains potentially vulnerable versions of go, we have not identified any\n\t  exploitable use cases at this time.</p>\n\t  <p>The CVSS score for this vulnerability is 0.0 (adjusted), 9.8 (base).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://grafana.com/blog/2023/04/26/precautionary-patches-for-grafana-released-following-critical-go-vulnerability-cve-2023-24538/"
+		],
+		"cvename": [
+			"CVE-2023-24538"
+		]
+	},
+	"dates": {
+		"discovery": "2023-04-19",
+		"entry": "2023-04-26"
+	}
 }

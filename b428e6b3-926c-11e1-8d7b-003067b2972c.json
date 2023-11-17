@@ -1,35 +1,35 @@
 {
-  "vid": "b428e6b3-926c-11e1-8d7b-003067b2972c",
-  "topic": "portupgrade-devel -- lack of distfile checksums",
-  "affects": [
-    {
-      "name": [
-        "portupgrade-devel"
-      ],
-      "range": [
-        {
-          "lt": "0,3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ports security team reports:</p>\n\t<p>The portupgrade-devel port fetched directly from a git\n\t  respository without checking against a known good\n\t  SHA hash. This means that it is possible that packages\n\t  built using this port may not match the one vetted\n\t  by the maintainer. Users are advised to rebuild\n\t  portupgrade-devel from known good sources.</p>\n      "
-  },
-  "references": {
-    "mlist": [
-      {
-        "text": "http://web.archiveorange.com/archive/v/6ETvLYPz7CfFT9tiHKiI"
-      },
-      {
-        "text": "http://www.freebsd.org/cgi/getmsg.cgi?fetch=100677+0+/usr/local/www/db/text/2012/cvs-ports/20120506.cvs-ports"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2012-04-30",
-    "entry": "2012-04-30",
-    "modified": "2012-05-06"
-  }
+	"vid": "b428e6b3-926c-11e1-8d7b-003067b2972c",
+	"topic": "portupgrade-devel -- lack of distfile checksums",
+	"affects": [
+		{
+			"name": [
+				"portupgrade-devel"
+			],
+			"range": [
+				{
+					"lt": "0,3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ports security team reports:</p>\n\t<p>The portupgrade-devel port fetched directly from a git\n\t  respository without checking against a known good\n\t  SHA hash. This means that it is possible that packages\n\t  built using this port may not match the one vetted\n\t  by the maintainer. Users are advised to rebuild\n\t  portupgrade-devel from known good sources.</p>\n      "
+	},
+	"references": {
+		"mlist": [
+			{
+				"text": "http://web.archiveorange.com/archive/v/6ETvLYPz7CfFT9tiHKiI"
+			},
+			{
+				"text": "http://www.freebsd.org/cgi/getmsg.cgi?fetch=100677+0+/usr/local/www/db/text/2012/cvs-ports/20120506.cvs-ports"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2012-04-30",
+		"entry": "2012-04-30",
+		"modified": "2012-05-06"
+	}
 }

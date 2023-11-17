@@ -1,49 +1,49 @@
 {
-  "vid": "46e1ece5-48bd-11e9-9c40-080027ac955c",
-  "topic": "PuTTY -- security fixes in new release",
-  "affects": [
-    {
-      "name": [
-        "putty"
-      ],
-      "range": [
-        {
-          "lt": "0.71"
-        }
-      ]
-    },
-    {
-      "name": [
-        "putty-gtk2"
-      ],
-      "range": [
-        {
-          "lt": "0.71"
-        }
-      ]
-    },
-    {
-      "name": [
-        "putty-nogtk"
-      ],
-      "range": [
-        {
-          "lt": "0.71"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The PuTTY team reports:</p>\n\t<blockquote cite=\"https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html\">\n\t  <p>New in 0.71:</p>\n\t  <ul>\n\t    <li>Security fixes found by an EU-funded bug bounty programme:</li>\n\t    <li>+ a remotely triggerable memory overwrite in RSA key exchange, which can occur before host key verification</li>\n\t    <li>+ potential recycling of random numbers used in cryptography</li>\n\t    <li>+ on Unix, remotely triggerable buffer overflow in any kind of server-to-client forwarding</li>\n\t    <li>+ multiple denial-of-service attacks that can be triggered by writing to the terminal</li>\n\t    <li>Other security enhancements: major rewrite of the crypto code to remove cache and timing side channels.</li>\n\t    <li>User interface changes to protect against fake authentication prompts from a malicious server.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-03-16",
-    "entry": "2019-03-17"
-  }
+	"vid": "46e1ece5-48bd-11e9-9c40-080027ac955c",
+	"topic": "PuTTY -- security fixes in new release",
+	"affects": [
+		{
+			"name": [
+				"putty"
+			],
+			"range": [
+				{
+					"lt": "0.71"
+				}
+			]
+		},
+		{
+			"name": [
+				"putty-gtk2"
+			],
+			"range": [
+				{
+					"lt": "0.71"
+				}
+			]
+		},
+		{
+			"name": [
+				"putty-nogtk"
+			],
+			"range": [
+				{
+					"lt": "0.71"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The PuTTY team reports:</p>\n\t<blockquote cite=\"https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html\">\n\t  <p>New in 0.71:</p>\n\t  <ul>\n\t    <li>Security fixes found by an EU-funded bug bounty programme:</li>\n\t    <li>+ a remotely triggerable memory overwrite in RSA key exchange, which can occur before host key verification</li>\n\t    <li>+ potential recycling of random numbers used in cryptography</li>\n\t    <li>+ on Unix, remotely triggerable buffer overflow in any kind of server-to-client forwarding</li>\n\t    <li>+ multiple denial-of-service attacks that can be triggered by writing to the terminal</li>\n\t    <li>Other security enhancements: major rewrite of the crypto code to remove cache and timing side channels.</li>\n\t    <li>User interface changes to protect against fake authentication prompts from a malicious server.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html"
+		]
+	},
+	"dates": {
+		"discovery": "2019-03-16",
+		"entry": "2019-03-17"
+	}
 }

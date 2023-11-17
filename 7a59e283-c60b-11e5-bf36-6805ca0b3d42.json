@@ -1,33 +1,33 @@
 {
-  "vid": "7a59e283-c60b-11e5-bf36-6805ca0b3d42",
-  "topic": "phpmyadmin -- XSS vulnerability in SQL editor",
-  "affects": [
-    {
-      "name": [
-        "phpmyadmin"
-      ],
-      "range": [
-        {
-          "lt": "4.5.4",
-          "ge": "4.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-9/\">\n\t  <p>With a crafted SQL query, it is possible to trigger an\n\t    XSS attack in the SQL editor.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t  <p>This vulnerability can be triggered only by someone who is\n\t    logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    pages.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.phpmyadmin.net/security/PMASA-2016-9/"
-    ],
-    "cvename": [
-      "CVE-2016-2045"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-01-28",
-    "entry": "2016-01-28"
-  }
+	"vid": "7a59e283-c60b-11e5-bf36-6805ca0b3d42",
+	"topic": "phpmyadmin -- XSS vulnerability in SQL editor",
+	"affects": [
+		{
+			"name": [
+				"phpmyadmin"
+			],
+			"range": [
+				{
+					"lt": "4.5.4",
+					"ge": "4.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"https://www.phpmyadmin.net/security/PMASA-2016-9/\">\n\t  <p>With a crafted SQL query, it is possible to trigger an\n\t    XSS attack in the SQL editor.</p>\n\t  <p>We consider this vulnerability to be non-critical.</p>\n\t  <p>This vulnerability can be triggered only by someone who is\n\t    logged in to phpMyAdmin, as the usual token protection\n\t    prevents non-logged-in users from accessing the required\n\t    pages.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.phpmyadmin.net/security/PMASA-2016-9/"
+		],
+		"cvename": [
+			"CVE-2016-2045"
+		]
+	},
+	"dates": {
+		"discovery": "2016-01-28",
+		"entry": "2016-01-28"
+	}
 }

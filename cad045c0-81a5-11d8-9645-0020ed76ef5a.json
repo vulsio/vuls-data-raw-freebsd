@@ -1,48 +1,48 @@
 {
-  "vid": "cad045c0-81a5-11d8-9645-0020ed76ef5a",
-  "topic": "zebra/quagga denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "zebra"
-      ],
-      "range": [
-        {
-          "lt": "0.93b_7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "quagga"
-      ],
-      "range": [
-        {
-          "lt": "0.96.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A remote attacker could cause zebra/quagga to crash by\n\t  sending a malformed telnet command to their management\n\t  port.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://rhn.redhat.com/errata/RHSA-2003-305.html",
-      "http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=107140"
-    ],
-    "cvename": [
-      "CVE-2003-0858"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.quagga.net/pipermail/quagga-users/2003-November/000906.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2003-11-20",
-    "entry": "2004-03-29"
-  }
+	"vid": "cad045c0-81a5-11d8-9645-0020ed76ef5a",
+	"topic": "zebra/quagga denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"zebra"
+			],
+			"range": [
+				{
+					"lt": "0.93b_7"
+				}
+			]
+		},
+		{
+			"name": [
+				"quagga"
+			],
+			"range": [
+				{
+					"lt": "0.96.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A remote attacker could cause zebra/quagga to crash by\n\t  sending a malformed telnet command to their management\n\t  port.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://rhn.redhat.com/errata/RHSA-2003-305.html",
+			"http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=107140"
+		],
+		"cvename": [
+			"CVE-2003-0858"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.quagga.net/pipermail/quagga-users/2003-November/000906.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2003-11-20",
+		"entry": "2004-03-29"
+	}
 }

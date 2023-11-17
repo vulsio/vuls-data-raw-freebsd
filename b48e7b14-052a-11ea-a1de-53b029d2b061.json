@@ -1,40 +1,40 @@
 {
-  "vid": "b48e7b14-052a-11ea-a1de-53b029d2b061",
-  "topic": "libmad -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libmad"
-      ],
-      "range": [
-        {
-          "lt": "0.15.1b_7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>National Vulnerability Database:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-8372\">\n\t  <p>CVE-2017-8372: The mad_layer_III function in layer3.c in Underbit MAD\n\t    libmad 0.15.1b, if NDEBUG is omitted, allows remote attackers to cause a\n\t    denial of service (assertion failure and application exit) via a crafted\n\t    audio file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-8373\">\n\t  <p>CVE-2017-8373: The mad_layer_III function in layer3.c in Underbit MAD\n\t    libmad 0.15.1b allows remote attackers to cause a denial of service\n\t    (heap-based buffer overflow and application crash) or possibly have\n\t    unspecified other impact via a crafted audio file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-8374\">\n\t  <p>CVE-2017-8374: The mad_bit_skip function in bit.c in Underbit MAD\n\t    libmad 0.15.1b allows remote attackers to cause a denial of service\n\t    (heap-based buffer over-read and application crash) via a crafted audio\n\t    file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=508133#15",
-      "https://nvd.nist.gov/vuln/detail/CVE-2017-8372",
-      "https://nvd.nist.gov/vuln/detail/CVE-2017-8373",
-      "https://nvd.nist.gov/vuln/detail/CVE-2017-8374",
-      "https://blogs.gentoo.org/ago/2017/04/30/libmad-assertion-failure-in-layer3-c/",
-      "https://blogs.gentoo.org/ago/2017/04/30/libmad-heap-based-buffer-overflow-in-mad_layer_iii-layer3-c/",
-      "https://blogs.gentoo.org/ago/2017/04/30/libmad-heap-based-buffer-overflow-in-mad_bit_skip-bit-c/"
-    ],
-    "cvename": [
-      "CVE-2017-8372",
-      "CVE-2017-8373",
-      "CVE-2017-8374"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-30",
-    "entry": "2019-11-13"
-  }
+	"vid": "b48e7b14-052a-11ea-a1de-53b029d2b061",
+	"topic": "libmad -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libmad"
+			],
+			"range": [
+				{
+					"lt": "0.15.1b_7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>National Vulnerability Database:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-8372\">\n\t  <p>CVE-2017-8372: The mad_layer_III function in layer3.c in Underbit MAD\n\t    libmad 0.15.1b, if NDEBUG is omitted, allows remote attackers to cause a\n\t    denial of service (assertion failure and application exit) via a crafted\n\t    audio file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-8373\">\n\t  <p>CVE-2017-8373: The mad_layer_III function in layer3.c in Underbit MAD\n\t    libmad 0.15.1b allows remote attackers to cause a denial of service\n\t    (heap-based buffer overflow and application crash) or possibly have\n\t    unspecified other impact via a crafted audio file.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-8374\">\n\t  <p>CVE-2017-8374: The mad_bit_skip function in bit.c in Underbit MAD\n\t    libmad 0.15.1b allows remote attackers to cause a denial of service\n\t    (heap-based buffer over-read and application crash) via a crafted audio\n\t    file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=508133#15",
+			"https://nvd.nist.gov/vuln/detail/CVE-2017-8372",
+			"https://nvd.nist.gov/vuln/detail/CVE-2017-8373",
+			"https://nvd.nist.gov/vuln/detail/CVE-2017-8374",
+			"https://blogs.gentoo.org/ago/2017/04/30/libmad-assertion-failure-in-layer3-c/",
+			"https://blogs.gentoo.org/ago/2017/04/30/libmad-heap-based-buffer-overflow-in-mad_layer_iii-layer3-c/",
+			"https://blogs.gentoo.org/ago/2017/04/30/libmad-heap-based-buffer-overflow-in-mad_bit_skip-bit-c/"
+		],
+		"cvename": [
+			"CVE-2017-8372",
+			"CVE-2017-8373",
+			"CVE-2017-8374"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-30",
+		"entry": "2019-11-13"
+	}
 }

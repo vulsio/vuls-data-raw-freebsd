@@ -1,55 +1,55 @@
 {
-  "vid": "f7d79fac-cd49-11e4-898f-bcaec565249c",
-  "topic": "libXfont -- BDF parsing issues",
-  "affects": [
-    {
-      "name": [
-        "libXfont"
-      ],
-      "range": [
-        {
-          "lt": "1.5.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-xorg-libs"
-      ],
-      "range": [
-        {
-          "lt": "7.4_4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-f10-xorg-libs"
-      ],
-      "range": [
-        {
-          "lt": "7.4_4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Alan Coopersmith reports:</p>\n\t<blockquote cite=\"http://lists.x.org/archives/xorg-announce/2015-March/002550.html\">\n\t  <p>Ilja van Sprundel, a security researcher with IOActive, has\n\t    discovered an issue in the parsing of BDF font files by libXfont.\n\t    Additional testing by Alan Coopersmith and William Robinet with\n\t    the American Fuzzy Lop (afl) tool uncovered two more issues in\n\t    the parsing of BDF font files.</p>\n\n\t  <p>As libXfont is used by the X server to read font files, and an\n\t    unprivileged user with access to the X server can tell the X\n\t    server to read a given font file from a path of their choosing,\n\t    these vulnerabilities have the potential to allow unprivileged\n\t    users to run code with the privileges of the X server\n\t    (often root access).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.x.org/archives/xorg-announce/2015-March/002550.html"
-    ],
-    "cvename": [
-      "CVE-2015-1802",
-      "CVE-2015-1803",
-      "CVE-2015-1804"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-03-17",
-    "entry": "2015-03-18",
-    "modified": "2016-01-31"
-  }
+	"vid": "f7d79fac-cd49-11e4-898f-bcaec565249c",
+	"topic": "libXfont -- BDF parsing issues",
+	"affects": [
+		{
+			"name": [
+				"libXfont"
+			],
+			"range": [
+				{
+					"lt": "1.5.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-xorg-libs"
+			],
+			"range": [
+				{
+					"lt": "7.4_4"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-f10-xorg-libs"
+			],
+			"range": [
+				{
+					"lt": "7.4_4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Alan Coopersmith reports:</p>\n\t<blockquote cite=\"http://lists.x.org/archives/xorg-announce/2015-March/002550.html\">\n\t  <p>Ilja van Sprundel, a security researcher with IOActive, has\n\t    discovered an issue in the parsing of BDF font files by libXfont.\n\t    Additional testing by Alan Coopersmith and William Robinet with\n\t    the American Fuzzy Lop (afl) tool uncovered two more issues in\n\t    the parsing of BDF font files.</p>\n\n\t  <p>As libXfont is used by the X server to read font files, and an\n\t    unprivileged user with access to the X server can tell the X\n\t    server to read a given font file from a path of their choosing,\n\t    these vulnerabilities have the potential to allow unprivileged\n\t    users to run code with the privileges of the X server\n\t    (often root access).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.x.org/archives/xorg-announce/2015-March/002550.html"
+		],
+		"cvename": [
+			"CVE-2015-1802",
+			"CVE-2015-1803",
+			"CVE-2015-1804"
+		]
+	},
+	"dates": {
+		"discovery": "2015-03-17",
+		"entry": "2015-03-18",
+		"modified": "2016-01-31"
+	}
 }

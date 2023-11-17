@@ -1,37 +1,37 @@
 {
-  "vid": "18e3a5be-81f9-11db-95a2-0012f06707f0",
-  "topic": "ImageMagick -- SGI Image File heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ImageMagick",
-        "ImageMagick-nox11"
-      ],
-      "range": [
-        {
-          "lt": "6.2.9",
-          "ge": "6.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SecurityFocus reports about ImageMagick:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/21185/info\">\n\t  <p>ImageMagick is prone to a remote heap-based buffer-overflow\n\t    vulnerability because the application fails to properly\n\t    bounds-check user-supplied input before copying it to an\n\t    insufficiently sized memory buffer.</p>\n\t  <p>Exploiting this issue allows attackers to execute arbitrary\n\t    machine code in the context of applications that use the\n\t    ImageMagick library.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.securityfocus.com/bid/21185/discuss"
-    ],
-    "cvename": [
-      "CVE-2006-5868"
-    ],
-    "bid": [
-      "21185"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-11-14",
-    "entry": "2006-12-02"
-  }
+	"vid": "18e3a5be-81f9-11db-95a2-0012f06707f0",
+	"topic": "ImageMagick -- SGI Image File heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ImageMagick",
+				"ImageMagick-nox11"
+			],
+			"range": [
+				{
+					"lt": "6.2.9",
+					"ge": "6.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SecurityFocus reports about ImageMagick:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/21185/info\">\n\t  <p>ImageMagick is prone to a remote heap-based buffer-overflow\n\t    vulnerability because the application fails to properly\n\t    bounds-check user-supplied input before copying it to an\n\t    insufficiently sized memory buffer.</p>\n\t  <p>Exploiting this issue allows attackers to execute arbitrary\n\t    machine code in the context of applications that use the\n\t    ImageMagick library.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.securityfocus.com/bid/21185/discuss"
+		],
+		"cvename": [
+			"CVE-2006-5868"
+		],
+		"bid": [
+			"21185"
+		]
+	},
+	"dates": {
+		"discovery": "2006-11-14",
+		"entry": "2006-12-02"
+	}
 }

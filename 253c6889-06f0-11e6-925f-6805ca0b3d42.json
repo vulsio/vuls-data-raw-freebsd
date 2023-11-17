@@ -1,44 +1,44 @@
 {
-  "vid": "253c6889-06f0-11e6-925f-6805ca0b3d42",
-  "topic": "ansible -- use of predictable paths in lxc_container",
-  "affects": [
-    {
-      "name": [
-        "ansible"
-      ],
-      "range": [
-        {
-          "lt": "2.0.2.0",
-          "ge": "2.0.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "ansible1"
-      ],
-      "range": [
-        {
-          "lt": "1.9.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ansible developers report:</p>\n\t<blockquote cite=\"https://github.com/ansible/ansible-modules-extras/pull/1941/commits/8c6fe646ee79f5e55361b885b7efed5bec72d4a4\">\n\t  <p>CVE-2016-3096: do not use predictable paths in lxc_container</p>\n\n\t  <ul>\n\t    <li>do not use a predictable filename for the LXC attach\n\t      script</li>\n\t    <li>don't use predictable filenames for LXC attach script\n\t      logging</li>\n\t    <li>don't set a predictable archive_path</li>\n\t  </ul>\n\n\t  <p>this should prevent symlink attacks which could result\n\t    in</p>\n\n\t  <ul>\n\t    <li>data corruption</li>\n\t    <li>data leakage</li>\n\t    <li>privilege escalation</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/ansible/ansible-modules-extras/pull/1941/commits/8c6fe646ee79f5e55361b885b7efed5bec72d4a4",
-      "https://bugzilla.redhat.com/show_bug.cgi?id=1322925"
-    ],
-    "cvename": [
-      "CVE-2016-3096"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-04-02",
-    "entry": "2016-04-20"
-  }
+	"vid": "253c6889-06f0-11e6-925f-6805ca0b3d42",
+	"topic": "ansible -- use of predictable paths in lxc_container",
+	"affects": [
+		{
+			"name": [
+				"ansible"
+			],
+			"range": [
+				{
+					"lt": "2.0.2.0",
+					"ge": "2.0.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"ansible1"
+			],
+			"range": [
+				{
+					"lt": "1.9.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ansible developers report:</p>\n\t<blockquote cite=\"https://github.com/ansible/ansible-modules-extras/pull/1941/commits/8c6fe646ee79f5e55361b885b7efed5bec72d4a4\">\n\t  <p>CVE-2016-3096: do not use predictable paths in lxc_container</p>\n\n\t  <ul>\n\t    <li>do not use a predictable filename for the LXC attach\n\t      script</li>\n\t    <li>don't use predictable filenames for LXC attach script\n\t      logging</li>\n\t    <li>don't set a predictable archive_path</li>\n\t  </ul>\n\n\t  <p>this should prevent symlink attacks which could result\n\t    in</p>\n\n\t  <ul>\n\t    <li>data corruption</li>\n\t    <li>data leakage</li>\n\t    <li>privilege escalation</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/ansible/ansible-modules-extras/pull/1941/commits/8c6fe646ee79f5e55361b885b7efed5bec72d4a4",
+			"https://bugzilla.redhat.com/show_bug.cgi?id=1322925"
+		],
+		"cvename": [
+			"CVE-2016-3096"
+		]
+	},
+	"dates": {
+		"discovery": "2016-04-02",
+		"entry": "2016-04-20"
+	}
 }

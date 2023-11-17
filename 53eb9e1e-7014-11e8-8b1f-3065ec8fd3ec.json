@@ -1,32 +1,32 @@
 {
-  "vid": "53eb9e1e-7014-11e8-8b1f-3065ec8fd3ec",
-  "topic": "password-store -- GPG parsing vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "password-store"
-      ],
-      "range": [
-        {
-          "lt": "1.7.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jason A. Donenfeld reports:</p>\n\t<blockquote cite=\"https://lists.zx2c4.com/pipermail/password-store/2018-June/003308.html\">\n\t  <p>Markus Brinkmann discovered that [the] parsing of gpg command line\n\t    output with regexes isn't anchored to the beginning of the line,\n\t    which means an attacker can generate a malicious key that simply has\n\t    the verification string as part of its username.</p>\n\t  <p>This has a number of nasty consequences:</p>\n\t  <ul>\n\t    <li>an attacker who manages to write into your ~/.password-store\n\t      and also inject a malicious key into your keyring can replace\n\t      your .gpg-id key and have your passwords encrypted under\n\t      additional keys;</li>\n\t    <li>if you have extensions enabled (disabled by default), an\n\t      attacker who manages to write into your ~/.password-store and\n\t      also inject a malicious key into your keyring can replace your\n\t      extensions and hence execute code.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.zx2c4.com/pipermail/password-store/2018-June/003308.html"
-    ],
-    "cvename": [
-      "CVE-2018-12356"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-06-14",
-    "entry": "2018-06-14"
-  }
+	"vid": "53eb9e1e-7014-11e8-8b1f-3065ec8fd3ec",
+	"topic": "password-store -- GPG parsing vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"password-store"
+			],
+			"range": [
+				{
+					"lt": "1.7.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jason A. Donenfeld reports:</p>\n\t<blockquote cite=\"https://lists.zx2c4.com/pipermail/password-store/2018-June/003308.html\">\n\t  <p>Markus Brinkmann discovered that [the] parsing of gpg command line\n\t    output with regexes isn't anchored to the beginning of the line,\n\t    which means an attacker can generate a malicious key that simply has\n\t    the verification string as part of its username.</p>\n\t  <p>This has a number of nasty consequences:</p>\n\t  <ul>\n\t    <li>an attacker who manages to write into your ~/.password-store\n\t      and also inject a malicious key into your keyring can replace\n\t      your .gpg-id key and have your passwords encrypted under\n\t      additional keys;</li>\n\t    <li>if you have extensions enabled (disabled by default), an\n\t      attacker who manages to write into your ~/.password-store and\n\t      also inject a malicious key into your keyring can replace your\n\t      extensions and hence execute code.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.zx2c4.com/pipermail/password-store/2018-June/003308.html"
+		],
+		"cvename": [
+			"CVE-2018-12356"
+		]
+	},
+	"dates": {
+		"discovery": "2018-06-14",
+		"entry": "2018-06-14"
+	}
 }

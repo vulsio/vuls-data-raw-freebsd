@@ -1,44 +1,44 @@
 {
-  "vid": "689c2bf7-0701-11e3-9a25-002590860428",
-  "topic": "GnuPG and Libgcrypt -- side-channel attack vulnerability",
-  "affects": [
-    {
-      "name": [
-        "libgcrypt"
-      ],
-      "range": [
-        {
-          "lt": "1.5.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-f10-libgcrypt"
-      ],
-      "range": [
-        {
-          "lt": "1.5.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Werner Koch of the GNU project reports:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000329.html\">\n\t  <p>Noteworthy changes in version 1.5.3:</p>\n\t  <p>Mitigate the Yarom/Falkner flush+reload side-channel attack on RSA secret keys...</p>\n\t  <p>Note that Libgcrypt is used by GnuPG 2.x and thus this release fixes the above\n\t    problem. The fix for GnuPG less than 2.0 can be found in the just released GnuPG\n\t    1.4.14.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://eprint.iacr.org/2013/448",
-      "http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000329.html",
-      "http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000330.html"
-    ],
-    "cvename": [
-      "CVE-2013-4242"
-    ]
-  },
-  "dates": {
-    "discovery": "2013-07-18",
-    "entry": "2013-08-17"
-  }
+	"vid": "689c2bf7-0701-11e3-9a25-002590860428",
+	"topic": "GnuPG and Libgcrypt -- side-channel attack vulnerability",
+	"affects": [
+		{
+			"name": [
+				"libgcrypt"
+			],
+			"range": [
+				{
+					"lt": "1.5.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-f10-libgcrypt"
+			],
+			"range": [
+				{
+					"lt": "1.5.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Werner Koch of the GNU project reports:</p>\n\t<blockquote cite=\"http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000329.html\">\n\t  <p>Noteworthy changes in version 1.5.3:</p>\n\t  <p>Mitigate the Yarom/Falkner flush+reload side-channel attack on RSA secret keys...</p>\n\t  <p>Note that Libgcrypt is used by GnuPG 2.x and thus this release fixes the above\n\t    problem. The fix for GnuPG less than 2.0 can be found in the just released GnuPG\n\t    1.4.14.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://eprint.iacr.org/2013/448",
+			"http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000329.html",
+			"http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000330.html"
+		],
+		"cvename": [
+			"CVE-2013-4242"
+		]
+	},
+	"dates": {
+		"discovery": "2013-07-18",
+		"entry": "2013-08-17"
+	}
 }

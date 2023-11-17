@@ -1,33 +1,33 @@
 {
-  "vid": "d51ced72-4212-11e6-942d-bc5ff45d0f28",
-  "topic": "xen-kernel -- x86 shadow pagetables: address width overflow",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.7.0",
-          "ge": "3.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-173.html\">\n\t  <p>In the x86 shadow pagetable code, the guest frame number of a\n\t    superpage mapping is stored in a 32-bit field.  If a shadowed guest\n\t    can cause a superpage mapping of a guest-physical address at or\n\t    above 2^44 to be shadowed, the top bits of the address will be lost,\n\t    causing an assertion failure or NULL dereference later on, in code\n\t    that removes the shadow.</p>\n\t  <p>A HVM guest using shadow pagetables can cause the host to crash.\n\t    </p>\n\t  <p>A PV guest using shadow pagetables (i.e. being migrated) with PV\n\t    superpages enabled (which is not the default) can crash the host, or\n\t    corrupt hypervisor memory, and so a privilege escalation cannot be\n\t    ruled out.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-173.html"
-    ],
-    "cvename": [
-      "CVE-2016-3960"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-04-18",
-    "entry": "2016-07-04"
-  }
+	"vid": "d51ced72-4212-11e6-942d-bc5ff45d0f28",
+	"topic": "xen-kernel -- x86 shadow pagetables: address width overflow",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.7.0",
+					"ge": "3.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-173.html\">\n\t  <p>In the x86 shadow pagetable code, the guest frame number of a\n\t    superpage mapping is stored in a 32-bit field.  If a shadowed guest\n\t    can cause a superpage mapping of a guest-physical address at or\n\t    above 2^44 to be shadowed, the top bits of the address will be lost,\n\t    causing an assertion failure or NULL dereference later on, in code\n\t    that removes the shadow.</p>\n\t  <p>A HVM guest using shadow pagetables can cause the host to crash.\n\t    </p>\n\t  <p>A PV guest using shadow pagetables (i.e. being migrated) with PV\n\t    superpages enabled (which is not the default) can crash the host, or\n\t    corrupt hypervisor memory, and so a privilege escalation cannot be\n\t    ruled out.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-173.html"
+		],
+		"cvename": [
+			"CVE-2016-3960"
+		]
+	},
+	"dates": {
+		"discovery": "2016-04-18",
+		"entry": "2016-07-04"
+	}
 }

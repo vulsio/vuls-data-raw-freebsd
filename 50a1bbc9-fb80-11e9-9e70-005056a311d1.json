@@ -1,56 +1,56 @@
 {
-  "vid": "50a1bbc9-fb80-11e9-9e70-005056a311d1",
-  "topic": "samba -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "samba48"
-      ],
-      "range": [
-        {
-          "le": "4.8.12"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba410"
-      ],
-      "range": [
-        {
-          "lt": "4.10.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba411"
-      ],
-      "range": [
-        {
-          "lt": "4.11.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The samba project reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2019-10218.html\">\n\t  <p>Malicious servers can cause Samba client code to return filenames containing\n\t  path separators to calling code.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2019-14833.html\">\n\t  <p>When the password contains multi-byte (non-ASCII) characters, the check\n\t  password script does not receive the full password string.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2019-14847.html\">\n\t  <p>Users with the \"get changes\" extended access right can crash the AD DC LDAP\n\t  server by requesting an attribute using the range= syntax.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.samba.org/samba/security/CVE-2019-10218.html",
-      "https://www.samba.org/samba/security/CVE-2019-14833.html",
-      "https://www.samba.org/samba/security/CVE-2019-14847.html"
-    ],
-    "cvename": [
-      "CVE-2019-10218",
-      "CVE-2019-14833",
-      "CVE-2019-14847"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-09-29",
-    "entry": "2019-10-29"
-  }
+	"vid": "50a1bbc9-fb80-11e9-9e70-005056a311d1",
+	"topic": "samba -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"samba48"
+			],
+			"range": [
+				{
+					"le": "4.8.12"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba410"
+			],
+			"range": [
+				{
+					"lt": "4.10.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba411"
+			],
+			"range": [
+				{
+					"lt": "4.11.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The samba project reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2019-10218.html\">\n\t  <p>Malicious servers can cause Samba client code to return filenames containing\n\t  path separators to calling code.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2019-14833.html\">\n\t  <p>When the password contains multi-byte (non-ASCII) characters, the check\n\t  password script does not receive the full password string.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2019-14847.html\">\n\t  <p>Users with the \"get changes\" extended access right can crash the AD DC LDAP\n\t  server by requesting an attribute using the range= syntax.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.samba.org/samba/security/CVE-2019-10218.html",
+			"https://www.samba.org/samba/security/CVE-2019-14833.html",
+			"https://www.samba.org/samba/security/CVE-2019-14847.html"
+		],
+		"cvename": [
+			"CVE-2019-10218",
+			"CVE-2019-14833",
+			"CVE-2019-14847"
+		]
+	},
+	"dates": {
+		"discovery": "2019-09-29",
+		"entry": "2019-10-29"
+	}
 }

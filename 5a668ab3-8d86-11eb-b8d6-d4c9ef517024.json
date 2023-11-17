@@ -1,48 +1,48 @@
 {
-  "vid": "5a668ab3-8d86-11eb-b8d6-d4c9ef517024",
-  "topic": "OpenSSL -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.1.1k,1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "12.2_5",
-          "ge": "12.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20210325.txt\">\n\t  <p>High: CA certificate check bypass with X509_V_FLAG_X509_STRICT\n\t    (CVE-2021-3450)<br/>The X509_V_FLAG_X509_STRICT flag enables\n\t    additional security checks of the certificates present in a\n\t    certificate chain. It is not set by default.</p>\n\t  <p>High: NULL pointer deref in signature_algorithms processing\n\t    (CVE-2021-3449)<br/>An OpenSSL TLS server may crash if sent a\n\t    maliciously crafted renegotiation ClientHello message from a client.\n\t    If a TLSv1.2 renegotiation ClientHello omits the\n\t    signature_algorithms extension (where it was present in the initial\n\t    ClientHello), but includes a signature_algorithms_cert extension\n\t    then a NULL pointer dereference will result, leading to a crash and\n\t    a denial of service attack.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/secadv/20210325.txt"
-    ],
-    "cvename": [
-      "CVE-2021-3449",
-      "CVE-2021-3450"
-    ],
-    "freebsd_sa": [
-      "SA-21:07.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-03-25",
-    "entry": "2021-03-26",
-    "modified": "2021-04-07"
-  }
+	"vid": "5a668ab3-8d86-11eb-b8d6-d4c9ef517024",
+	"topic": "OpenSSL -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.1.1k,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "12.2_5",
+					"ge": "12.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20210325.txt\">\n\t  <p>High: CA certificate check bypass with X509_V_FLAG_X509_STRICT\n\t    (CVE-2021-3450)<br/>The X509_V_FLAG_X509_STRICT flag enables\n\t    additional security checks of the certificates present in a\n\t    certificate chain. It is not set by default.</p>\n\t  <p>High: NULL pointer deref in signature_algorithms processing\n\t    (CVE-2021-3449)<br/>An OpenSSL TLS server may crash if sent a\n\t    maliciously crafted renegotiation ClientHello message from a client.\n\t    If a TLSv1.2 renegotiation ClientHello omits the\n\t    signature_algorithms extension (where it was present in the initial\n\t    ClientHello), but includes a signature_algorithms_cert extension\n\t    then a NULL pointer dereference will result, leading to a crash and\n\t    a denial of service attack.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20210325.txt"
+		],
+		"cvename": [
+			"CVE-2021-3449",
+			"CVE-2021-3450"
+		],
+		"freebsd_sa": [
+			"SA-21:07.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2021-03-25",
+		"entry": "2021-03-26",
+		"modified": "2021-04-07"
+	}
 }

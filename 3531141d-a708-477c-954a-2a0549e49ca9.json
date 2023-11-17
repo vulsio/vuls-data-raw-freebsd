@@ -1,42 +1,42 @@
 {
-  "vid": "3531141d-a708-477c-954a-2a0549e49ca9",
-  "topic": "salt -- Maliciously crafted minion IDs can cause unwanted directory traversals on the Salt-master",
-  "affects": [
-    {
-      "name": [
-        "py27-salt",
-        "py32-salt",
-        "py33-salt",
-        "py34-salt",
-        "py35-salt",
-        "py36-salt"
-      ],
-      "range": [
-        {
-          "lt": "2016.11.7"
-        },
-        {
-          "lt": "2017.7.1",
-          "ge": "2017.7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SaltStack reports:</p>\n\t<blockquote cite=\"https://docs.saltstack.com/en/latest/topics/releases/2017.7.1.html\">\n\t  <p>Correct a flaw in minion id validation which could allow certain\n\t    minions to authenticate to a master despite not having the correct\n\t    credentials. To exploit the vulnerability, an attacker must create a\n\t    salt-minion with an ID containing characters that will cause a\n\t    directory traversal.\n\t    Credit for discovering the security flaw goes to: Vernhk@qq.com</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.saltstack.com/en/latest/topics/releases/2017.7.1.html",
-      "https://docs.saltstack.com/en/latest/topics/releases/2016.11.7.html"
-    ],
-    "cvename": [
-      "CVE-2017-12791"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-08-16",
-    "entry": "2017-08-22"
-  }
+	"vid": "3531141d-a708-477c-954a-2a0549e49ca9",
+	"topic": "salt -- Maliciously crafted minion IDs can cause unwanted directory traversals on the Salt-master",
+	"affects": [
+		{
+			"name": [
+				"py27-salt",
+				"py32-salt",
+				"py33-salt",
+				"py34-salt",
+				"py35-salt",
+				"py36-salt"
+			],
+			"range": [
+				{
+					"lt": "2016.11.7"
+				},
+				{
+					"lt": "2017.7.1",
+					"ge": "2017.7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SaltStack reports:</p>\n\t<blockquote cite=\"https://docs.saltstack.com/en/latest/topics/releases/2017.7.1.html\">\n\t  <p>Correct a flaw in minion id validation which could allow certain\n\t    minions to authenticate to a master despite not having the correct\n\t    credentials. To exploit the vulnerability, an attacker must create a\n\t    salt-minion with an ID containing characters that will cause a\n\t    directory traversal.\n\t    Credit for discovering the security flaw goes to: Vernhk@qq.com</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.saltstack.com/en/latest/topics/releases/2017.7.1.html",
+			"https://docs.saltstack.com/en/latest/topics/releases/2016.11.7.html"
+		],
+		"cvename": [
+			"CVE-2017-12791"
+		]
+	},
+	"dates": {
+		"discovery": "2017-08-16",
+		"entry": "2017-08-22"
+	}
 }

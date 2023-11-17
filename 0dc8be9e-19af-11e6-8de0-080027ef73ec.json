@@ -1,40 +1,40 @@
 {
-  "vid": "0dc8be9e-19af-11e6-8de0-080027ef73ec",
-  "topic": "OpenVPN -- Buffer overflow in PAM authentication and DoS through port sharing",
-  "affects": [
-    {
-      "name": [
-        "openvpn"
-      ],
-      "range": [
-        {
-          "lt": "2.3.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openvpn-polarssl"
-      ],
-      "range": [
-        {
-          "lt": "2.3.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Samuli Seppänen reports:</p>\n\t<blockquote cite=\"https://sourceforge.net/p/openvpn/mailman/message/35076507/\">\n\t  <p>OpenVPN 2.3.11 [...] fixes two vulnerabilities: a port-share bug\n\t    with DoS potential and a buffer overflow by user supplied data when\n\t    using pam authentication.[...]</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://sourceforge.net/p/openvpn/mailman/message/35076507/",
-      "https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23#OpenVPN2.3.11"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-03",
-    "entry": "2016-05-14"
-  }
+	"vid": "0dc8be9e-19af-11e6-8de0-080027ef73ec",
+	"topic": "OpenVPN -- Buffer overflow in PAM authentication and DoS through port sharing",
+	"affects": [
+		{
+			"name": [
+				"openvpn"
+			],
+			"range": [
+				{
+					"lt": "2.3.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"openvpn-polarssl"
+			],
+			"range": [
+				{
+					"lt": "2.3.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Samuli Seppänen reports:</p>\n\t<blockquote cite=\"https://sourceforge.net/p/openvpn/mailman/message/35076507/\">\n\t  <p>OpenVPN 2.3.11 [...] fixes two vulnerabilities: a port-share bug\n\t    with DoS potential and a buffer overflow by user supplied data when\n\t    using pam authentication.[...]</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://sourceforge.net/p/openvpn/mailman/message/35076507/",
+			"https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23#OpenVPN2.3.11"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-03",
+		"entry": "2016-05-14"
+	}
 }

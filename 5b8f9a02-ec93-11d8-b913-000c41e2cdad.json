@@ -1,46 +1,46 @@
 {
-  "vid": "5b8f9a02-ec93-11d8-b913-000c41e2cdad",
-  "topic": "gaim remotely exploitable vulnerabilities in MSN component",
-  "affects": [
-    {
-      "name": [
-        "gaim",
-        "ja-gaim",
-        "ko-gaim",
-        "ru-gaim"
-      ],
-      "range": [
-        {
-          "lt": "0.81_1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gaim"
-      ],
-      "range": [
-        {
-          "ge": "20030000"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Sebastian Krahmer discovered several remotely exploitable\n\t  buffer overflow vulnerabilities in the MSN component of\n\t  gaim.</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=0\">\n\t  <p>In two places in the MSN protocol plugins (object.c and\n\t    slp.c), strncpy was used incorrectly; the size of the array\n\t    was not checked before copying to it. Both bugs affect MSN's\n\t    MSNSLP protocol, which is peer-to-peer, so this could\n\t    potentially be easy to exploit.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://gaim.sourceforge.net/security/?id=0"
-    ],
-    "cvename": [
-      "CVE-2004-0500"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-12",
-    "entry": "2004-08-12",
-    "modified": "2004-10-25"
-  }
+	"vid": "5b8f9a02-ec93-11d8-b913-000c41e2cdad",
+	"topic": "gaim remotely exploitable vulnerabilities in MSN component",
+	"affects": [
+		{
+			"name": [
+				"gaim",
+				"ja-gaim",
+				"ko-gaim",
+				"ru-gaim"
+			],
+			"range": [
+				{
+					"lt": "0.81_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"gaim"
+			],
+			"range": [
+				{
+					"ge": "20030000"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Sebastian Krahmer discovered several remotely exploitable\n\t  buffer overflow vulnerabilities in the MSN component of\n\t  gaim.</p>\n\t<blockquote cite=\"http://gaim.sourceforge.net/security/?id=0\">\n\t  <p>In two places in the MSN protocol plugins (object.c and\n\t    slp.c), strncpy was used incorrectly; the size of the array\n\t    was not checked before copying to it. Both bugs affect MSN's\n\t    MSNSLP protocol, which is peer-to-peer, so this could\n\t    potentially be easy to exploit.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://gaim.sourceforge.net/security/?id=0"
+		],
+		"cvename": [
+			"CVE-2004-0500"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-12",
+		"entry": "2004-08-12",
+		"modified": "2004-10-25"
+	}
 }

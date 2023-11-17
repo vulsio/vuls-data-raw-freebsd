@@ -1,41 +1,41 @@
 {
-  "vid": "2544f543-c178-11de-b175-001cc0377035",
-  "topic": "elinks -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "elinks"
-      ],
-      "range": [
-        {
-          "lt": "0.11.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/36574/discuss\">\n\t  <p>ELinks is prone to an off-by-one buffer-overflow vulnerability\n\t    because the application fails to accurately reference the last\n\t    element of a buffer.</p>\n\t  <p>Attackers may leverage this issue to execute arbitrary code in\n\t    the context of the application. Failed attacks will cause\n\t    denial-of-service conditions.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=380347"
-    ],
-    "cvename": [
-      "CVE-2008-7224"
-    ],
-    "mlist": [
-      {
-        "text": "http://linuxfromscratch.org/pipermail/elinks-users/2008-February/001604.html",
-        "msgid": "20080204235429.GA28006@diku.dk"
-      }
-    ],
-    "bid": [
-      "36574"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-07-29",
-    "entry": "2009-10-25"
-  }
+	"vid": "2544f543-c178-11de-b175-001cc0377035",
+	"topic": "elinks -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"elinks"
+			],
+			"range": [
+				{
+					"lt": "0.11.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>SecurityFocus reports:</p>\n\t<blockquote cite=\"http://www.securityfocus.com/bid/36574/discuss\">\n\t  <p>ELinks is prone to an off-by-one buffer-overflow vulnerability\n\t    because the application fails to accurately reference the last\n\t    element of a buffer.</p>\n\t  <p>Attackers may leverage this issue to execute arbitrary code in\n\t    the context of the application. Failed attacks will cause\n\t    denial-of-service conditions.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=380347"
+		],
+		"cvename": [
+			"CVE-2008-7224"
+		],
+		"mlist": [
+			{
+				"text": "http://linuxfromscratch.org/pipermail/elinks-users/2008-February/001604.html",
+				"msgid": "20080204235429.GA28006@diku.dk"
+			}
+		],
+		"bid": [
+			"36574"
+		]
+	},
+	"dates": {
+		"discovery": "2006-07-29",
+		"entry": "2009-10-25"
+	}
 }

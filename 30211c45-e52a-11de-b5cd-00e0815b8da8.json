@@ -1,36 +1,36 @@
 {
-  "vid": "30211c45-e52a-11de-b5cd-00e0815b8da8",
-  "topic": "dovecot -- Insecure directory permissions",
-  "affects": [
-    {
-      "name": [
-        "dovecot"
-      ],
-      "range": [
-        {
-          "lt": "1.2.8",
-          "ge": "1.2.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Dovecot author reports:</p>\n\t<blockquote cite=\"http://www.dovecot.org/list/dovecot-news/2009-November/000143.html\">\n\t  <p>Dovecot v1.2.x had been creating base_dir (and its parents if\n\t    necessary) with 0777 permissions. The base_dir's permissions get\n\t    changed to 0755 automatically at startup, but you may need to\n\t    chmod the parent directories manually.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/37443"
-    ],
-    "cvename": [
-      "CVE-2009-3897"
-    ],
-    "bid": [
-      "37084"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-11-20",
-    "entry": "2009-12-10"
-  }
+	"vid": "30211c45-e52a-11de-b5cd-00e0815b8da8",
+	"topic": "dovecot -- Insecure directory permissions",
+	"affects": [
+		{
+			"name": [
+				"dovecot"
+			],
+			"range": [
+				{
+					"lt": "1.2.8",
+					"ge": "1.2.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Dovecot author reports:</p>\n\t<blockquote cite=\"http://www.dovecot.org/list/dovecot-news/2009-November/000143.html\">\n\t  <p>Dovecot v1.2.x had been creating base_dir (and its parents if\n\t    necessary) with 0777 permissions. The base_dir's permissions get\n\t    changed to 0755 automatically at startup, but you may need to\n\t    chmod the parent directories manually.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/37443"
+		],
+		"cvename": [
+			"CVE-2009-3897"
+		],
+		"bid": [
+			"37084"
+		]
+	},
+	"dates": {
+		"discovery": "2009-11-20",
+		"entry": "2009-12-10"
+	}
 }

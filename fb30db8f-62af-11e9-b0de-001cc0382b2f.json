@@ -1,33 +1,33 @@
 {
-  "vid": "fb30db8f-62af-11e9-b0de-001cc0382b2f",
-  "topic": "GnuTLS -- double free, invalid pointer access",
-  "affects": [
-    {
-      "name": [
-        "gnutls"
-      ],
-      "range": [
-        {
-          "lt": "3.6.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The GnuTLS project reports:</p>\n\t<blockquote cite=\"https://www.gnutls.org/security-new.html#GNUTLS-SA-2019-03-27\">\n\t  <ul>\n\t    <li>Tavis Ormandy from Google Project Zero found a memory\n\t      corruption (double free) vulnerability in the certificate\n\t      verification API. Any client or server application that verifies\n\t      X.509 certificates with GnuTLS 3.5.8 or later is affected.</li>\n\t    <li>It was found using the TLS fuzzer tools that decoding a\n\t      malformed TLS1.3 asynchronous message can cause a server crash\n\t      via an invalid pointer access. The issue affects GnuTLS server\n\t      applications since 3.6.4.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.gnutls.org/security-new.html#GNUTLS-SA-2019-03-27"
-    ],
-    "cvename": [
-      "CVE-2019-3829",
-      "CVE-2019-3836"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-03-27",
-    "entry": "2019-04-19"
-  }
+	"vid": "fb30db8f-62af-11e9-b0de-001cc0382b2f",
+	"topic": "GnuTLS -- double free, invalid pointer access",
+	"affects": [
+		{
+			"name": [
+				"gnutls"
+			],
+			"range": [
+				{
+					"lt": "3.6.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The GnuTLS project reports:</p>\n\t<blockquote cite=\"https://www.gnutls.org/security-new.html#GNUTLS-SA-2019-03-27\">\n\t  <ul>\n\t    <li>Tavis Ormandy from Google Project Zero found a memory\n\t      corruption (double free) vulnerability in the certificate\n\t      verification API. Any client or server application that verifies\n\t      X.509 certificates with GnuTLS 3.5.8 or later is affected.</li>\n\t    <li>It was found using the TLS fuzzer tools that decoding a\n\t      malformed TLS1.3 asynchronous message can cause a server crash\n\t      via an invalid pointer access. The issue affects GnuTLS server\n\t      applications since 3.6.4.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.gnutls.org/security-new.html#GNUTLS-SA-2019-03-27"
+		],
+		"cvename": [
+			"CVE-2019-3829",
+			"CVE-2019-3836"
+		]
+	},
+	"dates": {
+		"discovery": "2019-03-27",
+		"entry": "2019-04-19"
+	}
 }

@@ -1,50 +1,50 @@
 {
-  "vid": "c8174b63-0d3a-11e6-b06e-d43d7eed0ce2",
-  "topic": "subversion -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.9.4",
-          "ge": "1.9.0"
-        },
-        {
-          "lt": "1.8.15",
-          "ge": "1.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.15",
-          "ge": "1.0.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2016-2167-advisory.txt\">\n\t  <p>svnserve, the svn:// protocol server, can optionally use the Cyrus\n\t    SASL library for authentication, integrity protection, and encryption.\n\t    Due to a programming oversight, authentication against Cyrus SASL\n\t    would permit the remote user to specify a realm string which is\n\t    a prefix of the expected realm string.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2016-2168-advisory.txt\">\n\t  <p>Subversion's httpd servers are vulnerable to a remotely triggerable crash\n\t    in the mod_authz_svn module.  The crash can occur during an authorization\n\t    check for a COPY or MOVE request with a specially crafted header value.</p>\n\t  <p>This allows remote attackers to cause a denial of service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://subversion.apache.org/security/CVE-2016-2167-advisory.txt",
-      "http://subversion.apache.org/security/CVE-2016-2168-advisory.txt"
-    ],
-    "cvename": [
-      "CVE-2016-2167",
-      "CVE-2016-2168"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-04-21",
-    "entry": "2016-04-28"
-  }
+	"vid": "c8174b63-0d3a-11e6-b06e-d43d7eed0ce2",
+	"topic": "subversion -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"subversion"
+			],
+			"range": [
+				{
+					"lt": "1.9.4",
+					"ge": "1.9.0"
+				},
+				{
+					"lt": "1.8.15",
+					"ge": "1.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion18"
+			],
+			"range": [
+				{
+					"lt": "1.8.15",
+					"ge": "1.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2016-2167-advisory.txt\">\n\t  <p>svnserve, the svn:// protocol server, can optionally use the Cyrus\n\t    SASL library for authentication, integrity protection, and encryption.\n\t    Due to a programming oversight, authentication against Cyrus SASL\n\t    would permit the remote user to specify a realm string which is\n\t    a prefix of the expected realm string.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2016-2168-advisory.txt\">\n\t  <p>Subversion's httpd servers are vulnerable to a remotely triggerable crash\n\t    in the mod_authz_svn module.  The crash can occur during an authorization\n\t    check for a COPY or MOVE request with a specially crafted header value.</p>\n\t  <p>This allows remote attackers to cause a denial of service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://subversion.apache.org/security/CVE-2016-2167-advisory.txt",
+			"http://subversion.apache.org/security/CVE-2016-2168-advisory.txt"
+		],
+		"cvename": [
+			"CVE-2016-2167",
+			"CVE-2016-2168"
+		]
+	},
+	"dates": {
+		"discovery": "2016-04-21",
+		"entry": "2016-04-28"
+	}
 }

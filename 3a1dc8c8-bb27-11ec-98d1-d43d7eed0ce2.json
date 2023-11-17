@@ -1,76 +1,76 @@
 {
-  "vid": "3a1dc8c8-bb27-11ec-98d1-d43d7eed0ce2",
-  "topic": "Subversion -- Multiple vulnerabilities in server code",
-  "affects": [
-    {
-      "name": [
-        "subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.10.8",
-          "ge": "1.10.0"
-        },
-        {
-          "lt": "1.14.2",
-          "ge": "1.11.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_dav_svn"
-      ],
-      "range": [
-        {
-          "lt": "1.10.8",
-          "ge": "1.10.0"
-        },
-        {
-          "lt": "1.14.2",
-          "ge": "1.11.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion-lts"
-      ],
-      "range": [
-        {
-          "lt": "1.10.8",
-          "ge": "1.10.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_dav_svn-lts"
-      ],
-      "range": [
-        {
-          "lt": "1.10.8",
-          "ge": "1.10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"https://subversion.apache.org/security/CVE-2021-28544-advisory.txt\">\n\t  <p>\n\t    Subversion servers reveal 'copyfrom' paths that should be hidden according\n\t    to configured path-based authorization (authz) rules.  When a node has been\n\t    copied from a protected location, users with access to the copy can see the\n\t    'copyfrom' path of the original.  This also reveals the fact that the node\n\t    was copied.  Only the 'copyfrom' path is revealed; not its contents. Both\n\t    httpd and svnserve servers are vulnerable.\n\t  </p>\n\t</blockquote>\n\t<blockquote cite=\"https://subversion.apache.org/security/CVE-2022-24070-advisory.txt\">\n\t  <p>\n\t    While looking up path-based authorization rules, mod_dav_svn servers\n\t    may attempt to use memory which has already been freed.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://subversion.apache.org/security/CVE-2021-28544-advisory.txt",
-      "https://subversion.apache.org/security/CVE-2022-24070-advisory.txt"
-    ],
-    "cvename": [
-      "CVE-2021-28544",
-      "CVE-2022-24070"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-12",
-    "entry": "2022-04-13"
-  }
+	"vid": "3a1dc8c8-bb27-11ec-98d1-d43d7eed0ce2",
+	"topic": "Subversion -- Multiple vulnerabilities in server code",
+	"affects": [
+		{
+			"name": [
+				"subversion"
+			],
+			"range": [
+				{
+					"lt": "1.10.8",
+					"ge": "1.10.0"
+				},
+				{
+					"lt": "1.14.2",
+					"ge": "1.11.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_dav_svn"
+			],
+			"range": [
+				{
+					"lt": "1.10.8",
+					"ge": "1.10.0"
+				},
+				{
+					"lt": "1.14.2",
+					"ge": "1.11.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion-lts"
+			],
+			"range": [
+				{
+					"lt": "1.10.8",
+					"ge": "1.10.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_dav_svn-lts"
+			],
+			"range": [
+				{
+					"lt": "1.10.8",
+					"ge": "1.10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"https://subversion.apache.org/security/CVE-2021-28544-advisory.txt\">\n\t  <p>\n\t    Subversion servers reveal 'copyfrom' paths that should be hidden according\n\t    to configured path-based authorization (authz) rules.  When a node has been\n\t    copied from a protected location, users with access to the copy can see the\n\t    'copyfrom' path of the original.  This also reveals the fact that the node\n\t    was copied.  Only the 'copyfrom' path is revealed; not its contents. Both\n\t    httpd and svnserve servers are vulnerable.\n\t  </p>\n\t</blockquote>\n\t<blockquote cite=\"https://subversion.apache.org/security/CVE-2022-24070-advisory.txt\">\n\t  <p>\n\t    While looking up path-based authorization rules, mod_dav_svn servers\n\t    may attempt to use memory which has already been freed.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://subversion.apache.org/security/CVE-2021-28544-advisory.txt",
+			"https://subversion.apache.org/security/CVE-2022-24070-advisory.txt"
+		],
+		"cvename": [
+			"CVE-2021-28544",
+			"CVE-2022-24070"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-12",
+		"entry": "2022-04-13"
+	}
 }

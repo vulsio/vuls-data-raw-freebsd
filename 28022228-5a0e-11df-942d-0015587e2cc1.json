@@ -1,33 +1,33 @@
 {
-  "vid": "28022228-5a0e-11df-942d-0015587e2cc1",
-  "topic": "wireshark -- DOCSIS dissector denial of service",
-  "affects": [
-    {
-      "name": [
-        "wireshark"
-      ],
-      "range": [
-        {
-          "le": "1.2.6_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A vulnerability found in the DOCSIS dissector can cause\n\t  Wireshark to crash when a malformed packet trace file is\n\t  opened. This means that an attacker will have to trick a\n\t  victim into opening such a trace file before being able\n\t  to crash the application</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.wireshark.org/security/wnpa-sec-2010-03.html",
-      "http://www.wireshark.org/security/wnpa-sec-2010-04.html"
-    ],
-    "cvename": [
-      "CVE-2010-1455"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-05-05",
-    "entry": "2010-05-07"
-  }
+	"vid": "28022228-5a0e-11df-942d-0015587e2cc1",
+	"topic": "wireshark -- DOCSIS dissector denial of service",
+	"affects": [
+		{
+			"name": [
+				"wireshark"
+			],
+			"range": [
+				{
+					"le": "1.2.6_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A vulnerability found in the DOCSIS dissector can cause\n\t  Wireshark to crash when a malformed packet trace file is\n\t  opened. This means that an attacker will have to trick a\n\t  victim into opening such a trace file before being able\n\t  to crash the application</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.wireshark.org/security/wnpa-sec-2010-03.html",
+			"http://www.wireshark.org/security/wnpa-sec-2010-04.html"
+		],
+		"cvename": [
+			"CVE-2010-1455"
+		]
+	},
+	"dates": {
+		"discovery": "2010-05-05",
+		"entry": "2010-05-07"
+	}
 }

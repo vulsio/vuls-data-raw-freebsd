@@ -1,45 +1,45 @@
 {
-  "vid": "34a3f9b5-dab3-11e7-b5af-a4badb2f4699",
-  "topic": "FreeBSD -- Kernel data leak via ptrace(PT_LWPINFO)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "11.1_4",
-          "ge": "11.1"
-        },
-        {
-          "lt": "11.0_15",
-          "ge": "11.0"
-        },
-        {
-          "lt": "10.4_3",
-          "ge": "10.4"
-        },
-        {
-          "lt": "10.3_24",
-          "ge": "10.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Not all information in the struct ptrace_lwpinfo is\n\trelevant for the state of any thread, and the kernel does\n\tnot fill the irrelevant bytes or short strings. Since the\n\tstructure filled by the kernel is allocated on the kernel\n\tstack and copied to userspace, a leak of information of the\n\tkernel stack of the thread is possible from the debugger.</p>\n\t<h1>Impact:</h1>\n\t<p>Some bytes from the kernel stack of the thread using\n\tptrace(PT_LWPINFO) call can be observed in userspace.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2017-1086"
-    ],
-    "freebsd_sa": [
-      "SA-17:08.ptrace"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-11-15",
-    "entry": "2017-12-06"
-  }
+	"vid": "34a3f9b5-dab3-11e7-b5af-a4badb2f4699",
+	"topic": "FreeBSD -- Kernel data leak via ptrace(PT_LWPINFO)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "11.1_4",
+					"ge": "11.1"
+				},
+				{
+					"lt": "11.0_15",
+					"ge": "11.0"
+				},
+				{
+					"lt": "10.4_3",
+					"ge": "10.4"
+				},
+				{
+					"lt": "10.3_24",
+					"ge": "10.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Not all information in the struct ptrace_lwpinfo is\n\trelevant for the state of any thread, and the kernel does\n\tnot fill the irrelevant bytes or short strings. Since the\n\tstructure filled by the kernel is allocated on the kernel\n\tstack and copied to userspace, a leak of information of the\n\tkernel stack of the thread is possible from the debugger.</p>\n\t<h1>Impact:</h1>\n\t<p>Some bytes from the kernel stack of the thread using\n\tptrace(PT_LWPINFO) call can be observed in userspace.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2017-1086"
+		],
+		"freebsd_sa": [
+			"SA-17:08.ptrace"
+		]
+	},
+	"dates": {
+		"discovery": "2017-11-15",
+		"entry": "2017-12-06"
+	}
 }

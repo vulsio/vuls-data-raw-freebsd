@@ -1,36 +1,36 @@
 {
-  "vid": "673dce46-46d0-11e7-a539-0050569f7e80",
-  "topic": "FreeRADIUS -- TLS resumption authentication bypass",
-  "affects": [
-    {
-      "name": [
-        "freeradius",
-        "freeradius2",
-        "freeradius3"
-      ],
-      "range": [
-        {
-          "lt": "3.0.14"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Stefan Winter reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2017/q2/342\">\n\t  <p>The TLS session cache in FreeRADIUS before 3.0.14 fails to\n\t    reliably prevent resumption of an unauthenticated session, which\n\t    allows remote attackers (such as malicious 802.1X supplicants) to\n\t    bypass authentication via PEAP or TTLS.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://freeradius.org/security.html",
-      "http://seclists.org/oss-sec/2017/q2/342",
-      "http://www.securityfocus.com/bid/98734"
-    ],
-    "cvename": [
-      "CVE-2017-9148"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-02-03",
-    "entry": "2017-06-01"
-  }
+	"vid": "673dce46-46d0-11e7-a539-0050569f7e80",
+	"topic": "FreeRADIUS -- TLS resumption authentication bypass",
+	"affects": [
+		{
+			"name": [
+				"freeradius",
+				"freeradius2",
+				"freeradius3"
+			],
+			"range": [
+				{
+					"lt": "3.0.14"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Stefan Winter reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2017/q2/342\">\n\t  <p>The TLS session cache in FreeRADIUS before 3.0.14 fails to\n\t    reliably prevent resumption of an unauthenticated session, which\n\t    allows remote attackers (such as malicious 802.1X supplicants) to\n\t    bypass authentication via PEAP or TTLS.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://freeradius.org/security.html",
+			"http://seclists.org/oss-sec/2017/q2/342",
+			"http://www.securityfocus.com/bid/98734"
+		],
+		"cvename": [
+			"CVE-2017-9148"
+		]
+	},
+	"dates": {
+		"discovery": "2017-02-03",
+		"entry": "2017-06-01"
+	}
 }

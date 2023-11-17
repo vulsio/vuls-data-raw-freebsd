@@ -1,45 +1,45 @@
 {
-  "vid": "d605edb1-1616-11e5-a000-d050996490d0",
-  "topic": "drupal -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.36"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal7"
-      ],
-      "range": [
-        {
-          "lt": "7.38"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Drupal development team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/SA-CORE-2015-002\">\n\t  <h3>Impersonation (OpenID module - Drupal 6 and 7 - Critical)</h3>\n\t  <p>A vulnerability was found in the OpenID module that allows\n\t    a malicious user to log in as other users on the site,\n\t    including administrators, and hijack their accounts.</p>\n\t  <p>This vulnerability is mitigated by the fact that the victim\n\t    must have an account with an associated OpenID identity from\n\t    a particular set of OpenID providers (including, but not\n\t    limited to, Verisign, LiveJournal, or StackExchange).</p>\n\t  <h3>Open redirect (Field UI module - Drupal 7 - Less critical)</h3>\n\t  <p>The Field UI module uses a \"destinations\" query string parameter\n\t    in URLs to redirect users to new destinations after completing\n\t    an action on a few administration pages. Under certain\n\t    circumstances, malicious users can use this parameter to\n\t    construct a URL that will trick users into being redirected\n\t    to a 3rd party website, thereby exposing the users to potential\n\t    social engineering attacks.</p>\n\t  <p>This vulnerability is mitigated by the fact that only sites\n\t    with the Field UI module enabled are affected.</p>\n\t  <p>Drupal 6 core is not affected, but see the similar advisory\n\t    for the Drupal 6 contributed CCK module:\n\t    <a href=\"https://www.drupal.org/node/2507753\">SA-CONTRIB-2015-126</a></p>\n\t  <h3>Open redirect (Overlay module - Drupal 7 - Less critical)</h3>\n\t  <p>The Overlay module displays administrative pages as a layer\n\t    over the current page (using JavaScript), rather than replacing\n\t    the page in the browser window. The Overlay module does not\n\t    sufficiently validate URLs prior to displaying their contents,\n\t    leading to an open redirect vulnerability.</p>\n\t  <p>This vulnerability is mitigated by the fact that it can only\n\t    be used against site users who have the \"Access the administrative\n\t    overlay\" permission, and that the Overlay module must be enabled.</p>\n\t  <h3>Information disclosure (Render cache system - Drupal 7\n\t    - Less critical)</h3>\n\t  <p>On sites utilizing Drupal 7's render cache system to cache\n\t    content on the site by user role, private content viewed by\n\t    user 1 may be included in the cache and exposed to non-privileged\n\t    users.</p>\n\t  <p>This vulnerability is mitigated by the fact that render caching\n\t    is not used in Drupal 7 core itself (it requires custom code or\n\t    the contributed <a href=\"https://www.drupal.org/project/render_cache\">Render\n\t      Cache</a> module to enable) and that it only affects sites that\n\t    have user 1 browsing the live site. Exposure is also limited if an\n\t    administrative role has been assigned to the user 1 account (which\n\t    is done, for example, by the Standard install profile that ships\n\t    with Drupal core).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.drupal.org/SA-CORE-2015-002"
-    ],
-    "cvename": [
-      "CVE-2015-3231",
-      "CVE-2015-3232",
-      "CVE-2015-3233",
-      "CVE-2015-3234"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-17",
-    "entry": "2015-06-19"
-  }
+	"vid": "d605edb1-1616-11e5-a000-d050996490d0",
+	"topic": "drupal -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.36"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal7"
+			],
+			"range": [
+				{
+					"lt": "7.38"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Drupal development team reports:</p>\n\t<blockquote cite=\"https://www.drupal.org/SA-CORE-2015-002\">\n\t  <h3>Impersonation (OpenID module - Drupal 6 and 7 - Critical)</h3>\n\t  <p>A vulnerability was found in the OpenID module that allows\n\t    a malicious user to log in as other users on the site,\n\t    including administrators, and hijack their accounts.</p>\n\t  <p>This vulnerability is mitigated by the fact that the victim\n\t    must have an account with an associated OpenID identity from\n\t    a particular set of OpenID providers (including, but not\n\t    limited to, Verisign, LiveJournal, or StackExchange).</p>\n\t  <h3>Open redirect (Field UI module - Drupal 7 - Less critical)</h3>\n\t  <p>The Field UI module uses a \"destinations\" query string parameter\n\t    in URLs to redirect users to new destinations after completing\n\t    an action on a few administration pages. Under certain\n\t    circumstances, malicious users can use this parameter to\n\t    construct a URL that will trick users into being redirected\n\t    to a 3rd party website, thereby exposing the users to potential\n\t    social engineering attacks.</p>\n\t  <p>This vulnerability is mitigated by the fact that only sites\n\t    with the Field UI module enabled are affected.</p>\n\t  <p>Drupal 6 core is not affected, but see the similar advisory\n\t    for the Drupal 6 contributed CCK module:\n\t    <a href=\"https://www.drupal.org/node/2507753\">SA-CONTRIB-2015-126</a></p>\n\t  <h3>Open redirect (Overlay module - Drupal 7 - Less critical)</h3>\n\t  <p>The Overlay module displays administrative pages as a layer\n\t    over the current page (using JavaScript), rather than replacing\n\t    the page in the browser window. The Overlay module does not\n\t    sufficiently validate URLs prior to displaying their contents,\n\t    leading to an open redirect vulnerability.</p>\n\t  <p>This vulnerability is mitigated by the fact that it can only\n\t    be used against site users who have the \"Access the administrative\n\t    overlay\" permission, and that the Overlay module must be enabled.</p>\n\t  <h3>Information disclosure (Render cache system - Drupal 7\n\t    - Less critical)</h3>\n\t  <p>On sites utilizing Drupal 7's render cache system to cache\n\t    content on the site by user role, private content viewed by\n\t    user 1 may be included in the cache and exposed to non-privileged\n\t    users.</p>\n\t  <p>This vulnerability is mitigated by the fact that render caching\n\t    is not used in Drupal 7 core itself (it requires custom code or\n\t    the contributed <a href=\"https://www.drupal.org/project/render_cache\">Render\n\t      Cache</a> module to enable) and that it only affects sites that\n\t    have user 1 browsing the live site. Exposure is also limited if an\n\t    administrative role has been assigned to the user 1 account (which\n\t    is done, for example, by the Standard install profile that ships\n\t    with Drupal core).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.drupal.org/SA-CORE-2015-002"
+		],
+		"cvename": [
+			"CVE-2015-3231",
+			"CVE-2015-3232",
+			"CVE-2015-3233",
+			"CVE-2015-3234"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-17",
+		"entry": "2015-06-19"
+	}
 }

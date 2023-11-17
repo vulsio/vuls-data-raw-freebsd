@@ -1,74 +1,74 @@
 {
-  "vid": "7ccd4def-c1be-11e3-9d09-000c2980a9f3",
-  "topic": "OpenSSL -- Local Information Disclosure",
-  "affects": [
-    {
-      "name": [
-        "openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1_10",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mingw32-openssl"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1g",
-          "ge": "1.0.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "8.3_15",
-          "ge": "8.3"
-        },
-        {
-          "lt": "8.4_8",
-          "ge": "8.4"
-        },
-        {
-          "lt": "9.1_11",
-          "ge": "9.1"
-        },
-        {
-          "lt": "9.2_4",
-          "ge": "9.2"
-        },
-        {
-          "lt": "10.0_1",
-          "ge": "10.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>OpenSSL reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/vulnerabilities.html#2014-0076\">\n\t  <p>A flaw in the implementation of Montgomery Ladder Approach would\n\t    create a side-channel that leaks sensitive timing information.</p>\n\t  <p>A local attacker might be able to snoop a signing process and\n\t    might recover the signing key from it.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openssl.org/news/vulnerabilities.html#2014-0076"
-    ],
-    "cvename": [
-      "CVE-2014-0076"
-    ],
-    "freebsd_sa": [
-      "SA-14:06.openssl"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-04-07",
-    "entry": "2014-04-11"
-  }
+	"vid": "7ccd4def-c1be-11e3-9d09-000c2980a9f3",
+	"topic": "OpenSSL -- Local Information Disclosure",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1_10",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mingw32-openssl"
+			],
+			"range": [
+				{
+					"lt": "1.0.1g",
+					"ge": "1.0.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "8.3_15",
+					"ge": "8.3"
+				},
+				{
+					"lt": "8.4_8",
+					"ge": "8.4"
+				},
+				{
+					"lt": "9.1_11",
+					"ge": "9.1"
+				},
+				{
+					"lt": "9.2_4",
+					"ge": "9.2"
+				},
+				{
+					"lt": "10.0_1",
+					"ge": "10.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenSSL reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/vulnerabilities.html#2014-0076\">\n\t  <p>A flaw in the implementation of Montgomery Ladder Approach would\n\t    create a side-channel that leaks sensitive timing information.</p>\n\t  <p>A local attacker might be able to snoop a signing process and\n\t    might recover the signing key from it.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/vulnerabilities.html#2014-0076"
+		],
+		"cvename": [
+			"CVE-2014-0076"
+		],
+		"freebsd_sa": [
+			"SA-14:06.openssl"
+		]
+	},
+	"dates": {
+		"discovery": "2014-04-07",
+		"entry": "2014-04-11"
+	}
 }

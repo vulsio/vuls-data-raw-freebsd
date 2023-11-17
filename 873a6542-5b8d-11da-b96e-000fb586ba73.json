@@ -1,37 +1,37 @@
 {
-  "vid": "873a6542-5b8d-11da-b96e-000fb586ba73",
-  "topic": "horde -- Cross site scripting vulnerabilities in MIME viewers",
-  "affects": [
-    {
-      "name": [
-        "horde",
-        "horde-php5"
-      ],
-      "range": [
-        {
-          "lt": "3.0.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Announce of Horde 3.0.7 (final):</p>\n\t<blockquote cite=\"http://lists.horde.org/archives/announce/2005/000232.html\">\n\t  <p>This [3.0.7] is a security release that fixes cross site\n\t    scripting vulnerabilities in two of Horde's MIME viewers. These\n\t    holes could for example be exploited by an attacker sending\n\t    specially crafted emails to Horde's webmail client IMP. The\n\t    attack could be used to steal users' identity information, taking\n\t    over users' sessions, or changing users' settings.</p>\n\t  <p>As a hotfix the css and tgz MIME drivers can be disabled by\n\t    removing their entries from the\n\t    $mime_drivers_map['horde']['registered'] list in\n\t    horde/config/mime_drivers.php.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://lists.horde.org/archives/announce/2005/000232.html"
-    ],
-    "cvename": [
-      "CVE-2005-3759"
-    ],
-    "bid": [
-      "15535"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-11-22",
-    "entry": "2005-11-22",
-    "modified": "2005-11-26"
-  }
+	"vid": "873a6542-5b8d-11da-b96e-000fb586ba73",
+	"topic": "horde -- Cross site scripting vulnerabilities in MIME viewers",
+	"affects": [
+		{
+			"name": [
+				"horde",
+				"horde-php5"
+			],
+			"range": [
+				{
+					"lt": "3.0.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Announce of Horde 3.0.7 (final):</p>\n\t<blockquote cite=\"http://lists.horde.org/archives/announce/2005/000232.html\">\n\t  <p>This [3.0.7] is a security release that fixes cross site\n\t    scripting vulnerabilities in two of Horde's MIME viewers. These\n\t    holes could for example be exploited by an attacker sending\n\t    specially crafted emails to Horde's webmail client IMP. The\n\t    attack could be used to steal users' identity information, taking\n\t    over users' sessions, or changing users' settings.</p>\n\t  <p>As a hotfix the css and tgz MIME drivers can be disabled by\n\t    removing their entries from the\n\t    $mime_drivers_map['horde']['registered'] list in\n\t    horde/config/mime_drivers.php.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://lists.horde.org/archives/announce/2005/000232.html"
+		],
+		"cvename": [
+			"CVE-2005-3759"
+		],
+		"bid": [
+			"15535"
+		]
+	},
+	"dates": {
+		"discovery": "2005-11-22",
+		"entry": "2005-11-22",
+		"modified": "2005-11-26"
+	}
 }

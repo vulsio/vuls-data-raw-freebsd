@@ -1,37 +1,37 @@
 {
-  "vid": "fe7e322f-522d-11e9-98b5-216e512dad89",
-  "topic": "Jupyter notebook -- open redirect vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py27-notebook",
-        "py35-notebook",
-        "py36-notebook",
-        "py37-notebook"
-      ],
-      "range": [
-        {
-          "lt": "5.7.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jupyter blog:</p>\n\t<blockquote cite=\"https://blog.jupyter.org/open-redirect-vulnerability-in-jupyter-jupyterhub-adf43583f1e4\">\n\t  <p>Login pages tend to take a parameter for redirecting back to a page\n\t    after successful login, e.g. /login?next=/notebooks/mynotebook.ipynb, so\n\t    that you aren't disrupted too much if you try to visit a page, but have\n\t    to authenticate first. An Open Redirect Vulnerability is when a\n\t    malicious person crafts a link pointing to the login page of a trusted\n\t    site, but setting the \"redirect after successful login\" parameter to\n\t    send the user to their own site, instead of a page on the authenticated\n\t    site (the notebook or JupyterHub server), e.g.\n\t    /login?next=http://badwebsite.biz. This doesn't necessarily compromise\n\t    anything immediately, but it enables phishing if users don't notice\n\t    that the domain has changed, e.g. by showing a fake \"re-enter your\n\t    password\" page. Servers generally have to validate the redirect URL to\n\t    avoid this. Both JupyterHub and Notebook already do this, but the\n\t    validation didn't take into account all possible ways to redirect to\n\t    other sites, so some malicious URLs could still be crafted to redirect\n\t    away from the server (the above example does not work in any recent\n\t    version of either package). Only certain browsers (Chrome and Firefox,\n\t    not Safari) could be redirected from the JupyterHub login page, but all\n\t    browsers could be redirected away from a standalone notebook server.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.jupyter.org/open-redirect-vulnerability-in-jupyter-jupyterhub-adf43583f1e4",
-      "https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst"
-    ],
-    "cvename": [
-      "CVE-2019-10255"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-03-28",
-    "entry": "2019-03-29",
-    "modified": "2019-04-06"
-  }
+	"vid": "fe7e322f-522d-11e9-98b5-216e512dad89",
+	"topic": "Jupyter notebook -- open redirect vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py27-notebook",
+				"py35-notebook",
+				"py36-notebook",
+				"py37-notebook"
+			],
+			"range": [
+				{
+					"lt": "5.7.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jupyter blog:</p>\n\t<blockquote cite=\"https://blog.jupyter.org/open-redirect-vulnerability-in-jupyter-jupyterhub-adf43583f1e4\">\n\t  <p>Login pages tend to take a parameter for redirecting back to a page\n\t    after successful login, e.g. /login?next=/notebooks/mynotebook.ipynb, so\n\t    that you aren't disrupted too much if you try to visit a page, but have\n\t    to authenticate first. An Open Redirect Vulnerability is when a\n\t    malicious person crafts a link pointing to the login page of a trusted\n\t    site, but setting the \"redirect after successful login\" parameter to\n\t    send the user to their own site, instead of a page on the authenticated\n\t    site (the notebook or JupyterHub server), e.g.\n\t    /login?next=http://badwebsite.biz. This doesn't necessarily compromise\n\t    anything immediately, but it enables phishing if users don't notice\n\t    that the domain has changed, e.g. by showing a fake \"re-enter your\n\t    password\" page. Servers generally have to validate the redirect URL to\n\t    avoid this. Both JupyterHub and Notebook already do this, but the\n\t    validation didn't take into account all possible ways to redirect to\n\t    other sites, so some malicious URLs could still be crafted to redirect\n\t    away from the server (the above example does not work in any recent\n\t    version of either package). Only certain browsers (Chrome and Firefox,\n\t    not Safari) could be redirected from the JupyterHub login page, but all\n\t    browsers could be redirected away from a standalone notebook server.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.jupyter.org/open-redirect-vulnerability-in-jupyter-jupyterhub-adf43583f1e4",
+			"https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst"
+		],
+		"cvename": [
+			"CVE-2019-10255"
+		]
+	},
+	"dates": {
+		"discovery": "2019-03-28",
+		"entry": "2019-03-29",
+		"modified": "2019-04-06"
+	}
 }

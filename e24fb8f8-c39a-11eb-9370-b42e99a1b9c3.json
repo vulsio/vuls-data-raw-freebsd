@@ -1,52 +1,52 @@
 {
-  "vid": "e24fb8f8-c39a-11eb-9370-b42e99a1b9c3",
-  "topic": "isc-dhcp -- remotely exploitable vulnerability",
-  "affects": [
-    {
-      "name": [
-        "isc-dhcp44-relay"
-      ],
-      "range": [
-        {
-          "lt": "4.4.2-P1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "isc-dhcp44-server"
-      ],
-      "range": [
-        {
-          "lt": "4.4.2-P1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "isc-dhcp44-client"
-      ],
-      "range": [
-        {
-          "lt": "4.4.2-P1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Michael McNally reports:</p>\n\t<blockquote cite=\"https://seclists.org/oss-sec/2021/q2/170\">\n\t  <p>Program code used by the ISC DHCP package to read and parse stored leases</p>\n\t  <p>has a defect that can be exploited by an attacker to cause one of several\n\t     undesirable outcomes</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://kb.isc.org/docs/cve-2021-25217"
-    ],
-    "cvename": [
-      "CVE-2021-25217"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-05-26",
-    "entry": "2021-06-02"
-  }
+	"vid": "e24fb8f8-c39a-11eb-9370-b42e99a1b9c3",
+	"topic": "isc-dhcp -- remotely exploitable vulnerability",
+	"affects": [
+		{
+			"name": [
+				"isc-dhcp44-relay"
+			],
+			"range": [
+				{
+					"lt": "4.4.2-P1"
+				}
+			]
+		},
+		{
+			"name": [
+				"isc-dhcp44-server"
+			],
+			"range": [
+				{
+					"lt": "4.4.2-P1"
+				}
+			]
+		},
+		{
+			"name": [
+				"isc-dhcp44-client"
+			],
+			"range": [
+				{
+					"lt": "4.4.2-P1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Michael McNally reports:</p>\n\t<blockquote cite=\"https://seclists.org/oss-sec/2021/q2/170\">\n\t  <p>Program code used by the ISC DHCP package to read and parse stored leases</p>\n\t  <p>has a defect that can be exploited by an attacker to cause one of several\n\t     undesirable outcomes</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://kb.isc.org/docs/cve-2021-25217"
+		],
+		"cvename": [
+			"CVE-2021-25217"
+		]
+	},
+	"dates": {
+		"discovery": "2021-05-26",
+		"entry": "2021-06-02"
+	}
 }

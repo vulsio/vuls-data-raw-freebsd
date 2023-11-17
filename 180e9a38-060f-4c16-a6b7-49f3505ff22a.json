@@ -1,47 +1,47 @@
 {
-  "vid": "180e9a38-060f-4c16-a6b7-49f3505ff22a",
-  "topic": "kernel -- information disclosure when using HTT",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "5.4_1",
-          "ge": "5.4"
-        },
-        {
-          "lt": "5.3_15",
-          "ge": "5.0"
-        },
-        {
-          "lt": "4.11_9",
-          "ge": "4.11"
-        },
-        {
-          "lt": "4.10_14"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem description and impact</h1>\n\t<p>When running on processors supporting Hyper-Threading Technology, it\n\t  is possible for a malicious thread to monitor the execution of another\n\t  thread.</p>\n\t<p>Information may be disclosed to local users, allowing in many\n\t  cases for privilege escalation.  For example, on a multi-user\n\t  system, it may be possible to steal cryptographic keys used in\n\t  applications such as OpenSSH or SSL-enabled web servers.</p>\n\t<p><strong>NOTE:</strong> Similar problems may exist in other\n\t  simultaneous multithreading implementations, or even some\n\t  systems in the absence of simultaneous multithreading.\n\t  However, current research has only demonstrated this flaw in\n\t  Hyper-Threading Technology, where shared memory caches are\n\t  used.</p>\n\t<h1>Workaround</h1>\n\t<p>Systems not using processors with Hyper-Threading Technology\n\t  support are not affected by this issue.  On systems which are\n\t  affected, the security flaw can be eliminated by setting the\n\t  \"machdep.hlt_logical_cpus\" tunable:</p>\n\t<pre># echo \"machdep.hlt_logical_cpus=1\" &gt;&gt; /boot/loader.conf</pre>\n\t<p>The system must be rebooted in order for tunables to take effect.</p>\n\t<p>Use of this workaround is not recommended on \"dual-core\" systems, as\n\t  this workaround will also disable one of the processor\n\t  cores.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.daemonology.net/hyperthreading-considered-harmful/"
-    ],
-    "cvename": [
-      "CVE-2005-0109"
-    ],
-    "freebsd_sa": [
-      "SA-05:09.htt"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-05-13",
-    "entry": "2005-05-13"
-  }
+	"vid": "180e9a38-060f-4c16-a6b7-49f3505ff22a",
+	"topic": "kernel -- information disclosure when using HTT",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "5.4_1",
+					"ge": "5.4"
+				},
+				{
+					"lt": "5.3_15",
+					"ge": "5.0"
+				},
+				{
+					"lt": "4.11_9",
+					"ge": "4.11"
+				},
+				{
+					"lt": "4.10_14"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem description and impact</h1>\n\t<p>When running on processors supporting Hyper-Threading Technology, it\n\t  is possible for a malicious thread to monitor the execution of another\n\t  thread.</p>\n\t<p>Information may be disclosed to local users, allowing in many\n\t  cases for privilege escalation.  For example, on a multi-user\n\t  system, it may be possible to steal cryptographic keys used in\n\t  applications such as OpenSSH or SSL-enabled web servers.</p>\n\t<p><strong>NOTE:</strong> Similar problems may exist in other\n\t  simultaneous multithreading implementations, or even some\n\t  systems in the absence of simultaneous multithreading.\n\t  However, current research has only demonstrated this flaw in\n\t  Hyper-Threading Technology, where shared memory caches are\n\t  used.</p>\n\t<h1>Workaround</h1>\n\t<p>Systems not using processors with Hyper-Threading Technology\n\t  support are not affected by this issue.  On systems which are\n\t  affected, the security flaw can be eliminated by setting the\n\t  \"machdep.hlt_logical_cpus\" tunable:</p>\n\t<pre># echo \"machdep.hlt_logical_cpus=1\" &gt;&gt; /boot/loader.conf</pre>\n\t<p>The system must be rebooted in order for tunables to take effect.</p>\n\t<p>Use of this workaround is not recommended on \"dual-core\" systems, as\n\t  this workaround will also disable one of the processor\n\t  cores.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.daemonology.net/hyperthreading-considered-harmful/"
+		],
+		"cvename": [
+			"CVE-2005-0109"
+		],
+		"freebsd_sa": [
+			"SA-05:09.htt"
+		]
+	},
+	"dates": {
+		"discovery": "2005-05-13",
+		"entry": "2005-05-13"
+	}
 }

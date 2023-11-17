@@ -1,43 +1,43 @@
 {
-  "vid": "6fea7103-2ea4-11ed-b403-3dae8ac60d3e",
-  "topic": "go -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "go118"
-      ],
-      "range": [
-        {
-          "lt": "1.18.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "go119"
-      ],
-      "range": [
-        {
-          "lt": "1.19.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/54658\">\n\t  <p>net/http: handle server errors after sending GOAWAY</p>\n\t  <p>A closing HTTP/2 server connection could hang forever\n\t    waiting for a clean shutdown that was preempted by a\n\t    subsequent fatal error. This failure mode could be\n\t    exploited to cause a denial of service.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/54385\">\n\t  <p>net/url: JoinPath does not strip relative path components\n\t    in all circumstances</p>\n\t  <p>JoinPath and URL.JoinPath would not remove ../ path\n\t    components appended to a relative path.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/golang-announce/c/x49AQzIVX-s/m/0tgO0pjiBQAJ"
-    ],
-    "cvename": [
-      "CVE-2022-27664",
-      "CVE-2022-32190"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-09-06",
-    "entry": "2022-09-07"
-  }
+	"vid": "6fea7103-2ea4-11ed-b403-3dae8ac60d3e",
+	"topic": "go -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"go118"
+			],
+			"range": [
+				{
+					"lt": "1.18.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"go119"
+			],
+			"range": [
+				{
+					"lt": "1.19.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/54658\">\n\t  <p>net/http: handle server errors after sending GOAWAY</p>\n\t  <p>A closing HTTP/2 server connection could hang forever\n\t    waiting for a clean shutdown that was preempted by a\n\t    subsequent fatal error. This failure mode could be\n\t    exploited to cause a denial of service.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://go.dev/issue/54385\">\n\t  <p>net/url: JoinPath does not strip relative path components\n\t    in all circumstances</p>\n\t  <p>JoinPath and URL.JoinPath would not remove ../ path\n\t    components appended to a relative path.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/golang-announce/c/x49AQzIVX-s/m/0tgO0pjiBQAJ"
+		],
+		"cvename": [
+			"CVE-2022-27664",
+			"CVE-2022-32190"
+		]
+	},
+	"dates": {
+		"discovery": "2022-09-06",
+		"entry": "2022-09-07"
+	}
 }

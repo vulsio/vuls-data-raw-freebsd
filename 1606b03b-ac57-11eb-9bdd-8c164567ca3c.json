@@ -1,45 +1,45 @@
 {
-  "vid": "1606b03b-ac57-11eb-9bdd-8c164567ca3c",
-  "topic": "redis -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "6.0.13",
-          "ge": "6.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis-devel"
-      ],
-      "range": [
-        {
-          "lt": "6.2.3",
-          "ge": "6.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Redis project reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/6GSWzTW0PR8\">\n\t  <dl>\n\t    <dt>Vulnerability in the STRALGO LCS command</dt>\n\t    <dd>\n\t      An integer overflow bug in Redis version 6.0 or newer could be\n\t      exploited using the STRALGO LCS command to corrupt the heap and\n\t      potentially result with remote code execution.\n\t    </dd>\n\t    <dt>Vulnerability in the COPY command for large intsets</dt>\n\t    <dd>\n\t      An integer overflow bug in Redis 6.2 could be exploited to corrupt\n\t      the heap and potentially result with remote code execution.\n\t      The vulnerability involves changing the default set-max-intset-entries\n\t      configuration value, creating a large set key that consists of\n\t      integer values and using the COPY command to duplicate it.\n\t      The integer overflow bug exists in all versions of Redis starting\n\t      with 2.6, where it could result with a corrupted RDB or DUMP payload,\n\t      but not exploited through COPY (which did not exist before 6.2).\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/redis-db/c/6GSWzTW0PR8"
-    ],
-    "cvename": [
-      "CVE-2021-29477",
-      "CVE-2021-29478"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-05-03",
-    "entry": "2021-05-03"
-  }
+	"vid": "1606b03b-ac57-11eb-9bdd-8c164567ca3c",
+	"topic": "redis -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "6.0.13",
+					"ge": "6.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis-devel"
+			],
+			"range": [
+				{
+					"lt": "6.2.3",
+					"ge": "6.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Redis project reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/6GSWzTW0PR8\">\n\t  <dl>\n\t    <dt>Vulnerability in the STRALGO LCS command</dt>\n\t    <dd>\n\t      An integer overflow bug in Redis version 6.0 or newer could be\n\t      exploited using the STRALGO LCS command to corrupt the heap and\n\t      potentially result with remote code execution.\n\t    </dd>\n\t    <dt>Vulnerability in the COPY command for large intsets</dt>\n\t    <dd>\n\t      An integer overflow bug in Redis 6.2 could be exploited to corrupt\n\t      the heap and potentially result with remote code execution.\n\t      The vulnerability involves changing the default set-max-intset-entries\n\t      configuration value, creating a large set key that consists of\n\t      integer values and using the COPY command to duplicate it.\n\t      The integer overflow bug exists in all versions of Redis starting\n\t      with 2.6, where it could result with a corrupted RDB or DUMP payload,\n\t      but not exploited through COPY (which did not exist before 6.2).\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/redis-db/c/6GSWzTW0PR8"
+		],
+		"cvename": [
+			"CVE-2021-29477",
+			"CVE-2021-29478"
+		]
+	},
+	"dates": {
+		"discovery": "2021-05-03",
+		"entry": "2021-05-03"
+	}
 }

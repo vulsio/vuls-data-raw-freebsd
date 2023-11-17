@@ -1,38 +1,38 @@
 {
-  "vid": "a8118db0-cac2-11ec-9288-0800270512f4",
-  "topic": "rainloop -- cross-site-scripting (XSS) vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rainloop-php74",
-        "rainloop-php80",
-        "rainloop-php81",
-        "rainloop-community-php74",
-        "rainloop-community-php80",
-        "rainloop-community-php81"
-      ],
-      "range": [
-        {
-          "lt": "1.16.0_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Simon Scannell reports:</p>\n\t<blockquote cite=\"https://blog.sonarsource.com/rainloop-emails-at-risk-due-to-code-flaw\">\n\t  <p>\n\t    The code vulnerability can be easily exploited by an\n\t    attacker by sending a malicious email to a victim that\n\t    uses RainLoop as a mail client. When the email is viewed\n\t    by the victim, the attacker gains full control over the\n\t    session of the victim and can steal any of their emails,\n\t    including those that contain highly sensitive information\n\t    such as passwords, documents, and password reset links.\n\t  </p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://blog.sonarsource.com/rainloop-emails-at-risk-due-to-code-flaw",
-      "https://github.com/RainLoop/rainloop-webmail/issues/2142"
-    ],
-    "cvename": [
-      "CVE-2022-29360"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-04-19",
-    "entry": "2022-05-03"
-  }
+	"vid": "a8118db0-cac2-11ec-9288-0800270512f4",
+	"topic": "rainloop -- cross-site-scripting (XSS) vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rainloop-php74",
+				"rainloop-php80",
+				"rainloop-php81",
+				"rainloop-community-php74",
+				"rainloop-community-php80",
+				"rainloop-community-php81"
+			],
+			"range": [
+				{
+					"lt": "1.16.0_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Simon Scannell reports:</p>\n\t<blockquote cite=\"https://blog.sonarsource.com/rainloop-emails-at-risk-due-to-code-flaw\">\n\t  <p>\n\t    The code vulnerability can be easily exploited by an\n\t    attacker by sending a malicious email to a victim that\n\t    uses RainLoop as a mail client. When the email is viewed\n\t    by the victim, the attacker gains full control over the\n\t    session of the victim and can steal any of their emails,\n\t    including those that contain highly sensitive information\n\t    such as passwords, documents, and password reset links.\n\t  </p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.sonarsource.com/rainloop-emails-at-risk-due-to-code-flaw",
+			"https://github.com/RainLoop/rainloop-webmail/issues/2142"
+		],
+		"cvename": [
+			"CVE-2022-29360"
+		]
+	},
+	"dates": {
+		"discovery": "2022-04-19",
+		"entry": "2022-05-03"
+	}
 }

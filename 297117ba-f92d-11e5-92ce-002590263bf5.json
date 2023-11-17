@@ -1,37 +1,37 @@
 {
-  "vid": "297117ba-f92d-11e5-92ce-002590263bf5",
-  "topic": "squid -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "3.5.16"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Squid security advisory 2016:3 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2016_3.txt\">\n\t  <p>Due to a buffer overrun Squid pinger binary is vulnerable to\n\t    denial of service or information leak attack when processing\n\t    ICMPv6 packets.</p>\n\t  <p>This bug also permits the server response to manipulate other\n\t    ICMP and ICMPv6 queries processing to cause information leak.</p>\n\t  <p>This bug allows any remote server to perform a denial of service\n\t    attack on the Squid service by crashing the pinger. This may\n\t    affect Squid HTTP routing decisions. In some configurations,\n\t    sub-optimal routing decisions may result in serious service\n\t    degradation or even transaction failures.</p>\n\t  <p>If the system does not contain buffer-overrun protection leading\n\t    to that crash this bug will instead allow attackers to leak\n\t    arbitrary amounts of information from the heap into Squid log\n\t    files. This is of higher importance than usual because the pinger\n\t    process operates with root priviliges.</p>\n\t</blockquote>\n\t<p>Squid security advisory 2016:4 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2016_4.txt\">\n\t  <p>Due to incorrect bounds checking Squid is vulnerable to a denial\n\t    of service attack when processing HTTP responses.</p>\n\t  <p>This problem allows a malicious client script and remote server\n\t    delivering certain unusual HTTP response syntax to trigger a\n\t    denial of service for all clients accessing the Squid service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Advisories/SQUID-2016_3.txt",
-      "http://www.squid-cache.org/Advisories/SQUID-2016_4.txt"
-    ],
-    "cvename": [
-      "CVE-2016-3947",
-      "CVE-2016-3948"
-    ],
-    "freebsd_pr": [
-      "ports/208463"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-03-28",
-    "entry": "2016-04-02"
-  }
+	"vid": "297117ba-f92d-11e5-92ce-002590263bf5",
+	"topic": "squid -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "3.5.16"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Squid security advisory 2016:3 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2016_3.txt\">\n\t  <p>Due to a buffer overrun Squid pinger binary is vulnerable to\n\t    denial of service or information leak attack when processing\n\t    ICMPv6 packets.</p>\n\t  <p>This bug also permits the server response to manipulate other\n\t    ICMP and ICMPv6 queries processing to cause information leak.</p>\n\t  <p>This bug allows any remote server to perform a denial of service\n\t    attack on the Squid service by crashing the pinger. This may\n\t    affect Squid HTTP routing decisions. In some configurations,\n\t    sub-optimal routing decisions may result in serious service\n\t    degradation or even transaction failures.</p>\n\t  <p>If the system does not contain buffer-overrun protection leading\n\t    to that crash this bug will instead allow attackers to leak\n\t    arbitrary amounts of information from the heap into Squid log\n\t    files. This is of higher importance than usual because the pinger\n\t    process operates with root priviliges.</p>\n\t</blockquote>\n\t<p>Squid security advisory 2016:4 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2016_4.txt\">\n\t  <p>Due to incorrect bounds checking Squid is vulnerable to a denial\n\t    of service attack when processing HTTP responses.</p>\n\t  <p>This problem allows a malicious client script and remote server\n\t    delivering certain unusual HTTP response syntax to trigger a\n\t    denial of service for all clients accessing the Squid service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Advisories/SQUID-2016_3.txt",
+			"http://www.squid-cache.org/Advisories/SQUID-2016_4.txt"
+		],
+		"cvename": [
+			"CVE-2016-3947",
+			"CVE-2016-3948"
+		],
+		"freebsd_pr": [
+			"ports/208463"
+		]
+	},
+	"dates": {
+		"discovery": "2016-03-28",
+		"entry": "2016-04-02"
+	}
 }

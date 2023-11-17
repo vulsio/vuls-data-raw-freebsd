@@ -1,32 +1,32 @@
 {
-  "vid": "a4ff3673-d742-4b83-8c2b-3ddafe732034",
-  "topic": "minio -- User privilege escalation",
-  "affects": [
-    {
-      "name": [
-        "minio"
-      ],
-      "range": [
-        {
-          "lt": "2021.12.27.07.23.18"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>minio developers report:</p>\n\t<blockquote cite=\"https://github.com/minio/minio/security/advisories/GHSA-j6jc-jqqc-p6cx\">\n\t  <p>AddUser() API endpoint was exposed to a legacy behavior. i.e it accepts a \"policy\" field</p>\n\t  <p>This API is mainly used to create a user or update a user's password.</p>\n\t  <p>However, a malicious client can hand-craft an HTTP API call that allows for updating Policy for a user and gaining higher privileges.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/minio/minio/security/advisories/GHSA-j6jc-jqqc-p6cx"
-    ],
-    "cvename": [
-      "CVE-2021-43858"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-12-27",
-    "entry": "2021-12-29"
-  }
+	"vid": "a4ff3673-d742-4b83-8c2b-3ddafe732034",
+	"topic": "minio -- User privilege escalation",
+	"affects": [
+		{
+			"name": [
+				"minio"
+			],
+			"range": [
+				{
+					"lt": "2021.12.27.07.23.18"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>minio developers report:</p>\n\t<blockquote cite=\"https://github.com/minio/minio/security/advisories/GHSA-j6jc-jqqc-p6cx\">\n\t  <p>AddUser() API endpoint was exposed to a legacy behavior. i.e it accepts a \"policy\" field</p>\n\t  <p>This API is mainly used to create a user or update a user's password.</p>\n\t  <p>However, a malicious client can hand-craft an HTTP API call that allows for updating Policy for a user and gaining higher privileges.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/minio/minio/security/advisories/GHSA-j6jc-jqqc-p6cx"
+		],
+		"cvename": [
+			"CVE-2021-43858"
+		]
+	},
+	"dates": {
+		"discovery": "2021-12-27",
+		"entry": "2021-12-29"
+	}
 }

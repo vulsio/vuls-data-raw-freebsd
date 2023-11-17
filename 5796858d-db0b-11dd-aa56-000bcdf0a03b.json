@@ -1,38 +1,38 @@
 {
-  "vid": "5796858d-db0b-11dd-aa56-000bcdf0a03b",
-  "topic": "FreeBSD -- arc4random(9) predictable sequence vulnerability",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.3_6",
-          "ge": "6.3"
-        },
-        {
-          "lt": "7.0_6",
-          "ge": "7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>When the arc4random(9) random number generator is\n\t  initialized, there may be inadequate entropy to meet the\n\t  needs of kernel systems which rely on arc4random(9); and it\n\t  may take up to 5 minutes before arc4random(9) is reseeded\n\t  with secure entropy from the Yarrow random number generator.</p>\n\t<h1>Impact:</h1>\n\t<p>All security-related kernel subsystems that rely on a\n\t  quality random number generator are subject to a wide range of\n\t  possible attacks for the 300 seconds after boot or until 64k\n\t  of random data is consumed.  The list includes:</p>\n\t<p>* GEOM ELI providers with onetime keys.  When a provider is\n\t  configured in a way so that it gets attached at the same time\n\t  during boot (e.g. it uses the rc subsystem to initialize) it\n\t  might be possible for an attacker to recover the encrypted\n\t  data.</p>\n\t<p>* GEOM shsec providers.  The GEOM shsec subsytem is used to\n\t  split a shared secret between two providers so that it can be\n\t  recovered when both of them are present.  This is done by\n\t  writing the random sequence to one of providers while\n\t  appending the result of the random sequence on the other host\n\t  to the original data.  If the provider was created within the\n\t  first 300 seconds after booting, it might be possible for an\n\t  attacker to extract the original data with access to only one\n\t  of the two providers between which the secret data is split.</p>\n\t<p>* System processes started early after boot may receive\n\t  predictable IDs.</p>\n\t<p>* The 802.11 network stack uses arc4random(9) to generate\n\t  initial vectors (IV) for WEP encryption when operating in\n\t  client mode and WEP authentication challenges when operating\n\t  in hostap mode, which may be insecure.</p>\n\t<p>* The IPv4, IPv6 and TCP/UDP protocol implementations rely\n\t  on a quality random number generator to produce unpredictable\n\t  IP packet identifiers, initial TCP sequence numbers and\n\t  outgoing port numbers.  During the first 300 seconds after\n\t  booting, it may be easier for an attacker to execute IP\n\t  session hijacking, OS fingerprinting, idle scanning, or in\n\t  some cases DNS cache poisoning and blind TCP data injection\n\t  attacks.</p>\n\t<p>* The kernel RPC code uses arc4random(9) to retrieve\n\t  transaction identifiers, which might make RPC clients\n\t  vulnerable to hijacking attacks.</p>\n\t<h1>Workaround:</h1>\n\t<p>No workaround is available for affected systems.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2008-5162"
-    ],
-    "freebsd_sa": [
-      "SA-08.11.arc4random"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-11-24",
-    "entry": "2009-01-05",
-    "modified": "2016-08-09"
-  }
+	"vid": "5796858d-db0b-11dd-aa56-000bcdf0a03b",
+	"topic": "FreeBSD -- arc4random(9) predictable sequence vulnerability",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.3_6",
+					"ge": "6.3"
+				},
+				{
+					"lt": "7.0_6",
+					"ge": "7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>When the arc4random(9) random number generator is\n\t  initialized, there may be inadequate entropy to meet the\n\t  needs of kernel systems which rely on arc4random(9); and it\n\t  may take up to 5 minutes before arc4random(9) is reseeded\n\t  with secure entropy from the Yarrow random number generator.</p>\n\t<h1>Impact:</h1>\n\t<p>All security-related kernel subsystems that rely on a\n\t  quality random number generator are subject to a wide range of\n\t  possible attacks for the 300 seconds after boot or until 64k\n\t  of random data is consumed.  The list includes:</p>\n\t<p>* GEOM ELI providers with onetime keys.  When a provider is\n\t  configured in a way so that it gets attached at the same time\n\t  during boot (e.g. it uses the rc subsystem to initialize) it\n\t  might be possible for an attacker to recover the encrypted\n\t  data.</p>\n\t<p>* GEOM shsec providers.  The GEOM shsec subsytem is used to\n\t  split a shared secret between two providers so that it can be\n\t  recovered when both of them are present.  This is done by\n\t  writing the random sequence to one of providers while\n\t  appending the result of the random sequence on the other host\n\t  to the original data.  If the provider was created within the\n\t  first 300 seconds after booting, it might be possible for an\n\t  attacker to extract the original data with access to only one\n\t  of the two providers between which the secret data is split.</p>\n\t<p>* System processes started early after boot may receive\n\t  predictable IDs.</p>\n\t<p>* The 802.11 network stack uses arc4random(9) to generate\n\t  initial vectors (IV) for WEP encryption when operating in\n\t  client mode and WEP authentication challenges when operating\n\t  in hostap mode, which may be insecure.</p>\n\t<p>* The IPv4, IPv6 and TCP/UDP protocol implementations rely\n\t  on a quality random number generator to produce unpredictable\n\t  IP packet identifiers, initial TCP sequence numbers and\n\t  outgoing port numbers.  During the first 300 seconds after\n\t  booting, it may be easier for an attacker to execute IP\n\t  session hijacking, OS fingerprinting, idle scanning, or in\n\t  some cases DNS cache poisoning and blind TCP data injection\n\t  attacks.</p>\n\t<p>* The kernel RPC code uses arc4random(9) to retrieve\n\t  transaction identifiers, which might make RPC clients\n\t  vulnerable to hijacking attacks.</p>\n\t<h1>Workaround:</h1>\n\t<p>No workaround is available for affected systems.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2008-5162"
+		],
+		"freebsd_sa": [
+			"SA-08.11.arc4random"
+		]
+	},
+	"dates": {
+		"discovery": "2008-11-24",
+		"entry": "2009-01-05",
+		"modified": "2016-08-09"
+	}
 }

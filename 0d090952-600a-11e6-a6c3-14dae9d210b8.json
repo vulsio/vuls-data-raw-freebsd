@@ -1,33 +1,33 @@
 {
-  "vid": "0d090952-600a-11e6-a6c3-14dae9d210b8",
-  "topic": "FreeBSD -- shell injection vulnerability in patch(1)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "10.1_17",
-          "ge": "10.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to insufficient sanitization of the input patch\n\tstream, it is possible for a patch file to cause patch(1)\n\tto pass certain ed(1) scripts to the ed(1) editor, which\n\twould run commands.</p>\n\t<h1>Impact:</h1>\n\t<p>This issue could be exploited to execute arbitrary\n\tcommands as the user invoking patch(1) against a specially\n\tcrafted patch file, which could be leveraged to obtain\n\televated privileges.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2015-1418"
-    ],
-    "freebsd_sa": [
-      "SA-15:18.bsdpatch"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-08-05",
-    "entry": "2016-08-11"
-  }
+	"vid": "0d090952-600a-11e6-a6c3-14dae9d210b8",
+	"topic": "FreeBSD -- shell injection vulnerability in patch(1)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "10.1_17",
+					"ge": "10.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Due to insufficient sanitization of the input patch\n\tstream, it is possible for a patch file to cause patch(1)\n\tto pass certain ed(1) scripts to the ed(1) editor, which\n\twould run commands.</p>\n\t<h1>Impact:</h1>\n\t<p>This issue could be exploited to execute arbitrary\n\tcommands as the user invoking patch(1) against a specially\n\tcrafted patch file, which could be leveraged to obtain\n\televated privileges.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2015-1418"
+		],
+		"freebsd_sa": [
+			"SA-15:18.bsdpatch"
+		]
+	},
+	"dates": {
+		"discovery": "2015-08-05",
+		"entry": "2016-08-11"
+	}
 }

@@ -1,34 +1,34 @@
 {
-  "vid": "7762d7ad-2e38-41d2-9785-c51f653ba8bd",
-  "topic": "botan2 -- ECDSA side channel",
-  "affects": [
-    {
-      "name": [
-        "botan2"
-      ],
-      "range": [
-        {
-          "lt": "2.7.0",
-          "ge": "2.5.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>botan2 developers report:</p>\n\t<blockquote cite=\"https://botan.randombit.net/security.html#id1\">\n\t  <p>A side channel in the ECDSA signature operation could allow a local attacker to recover the secret key. Found by Keegan Ryan of NCC Group.</p>\n\t  <p>Bug introduced in 2.5.0, fixed in 2.7.0. The 1.10 branch is not affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://botan.randombit.net/security.html#id1",
-      "https://github.com/randombit/botan/pull/1604"
-    ],
-    "cvename": [
-      "CVE-2018-12435"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-06-13",
-    "entry": "2018-08-17"
-  }
+	"vid": "7762d7ad-2e38-41d2-9785-c51f653ba8bd",
+	"topic": "botan2 -- ECDSA side channel",
+	"affects": [
+		{
+			"name": [
+				"botan2"
+			],
+			"range": [
+				{
+					"lt": "2.7.0",
+					"ge": "2.5.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>botan2 developers report:</p>\n\t<blockquote cite=\"https://botan.randombit.net/security.html#id1\">\n\t  <p>A side channel in the ECDSA signature operation could allow a local attacker to recover the secret key. Found by Keegan Ryan of NCC Group.</p>\n\t  <p>Bug introduced in 2.5.0, fixed in 2.7.0. The 1.10 branch is not affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://botan.randombit.net/security.html#id1",
+			"https://github.com/randombit/botan/pull/1604"
+		],
+		"cvename": [
+			"CVE-2018-12435"
+		]
+	},
+	"dates": {
+		"discovery": "2018-06-13",
+		"entry": "2018-08-17"
+	}
 }

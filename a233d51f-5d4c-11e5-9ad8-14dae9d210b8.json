@@ -1,30 +1,30 @@
 {
-  "vid": "a233d51f-5d4c-11e5-9ad8-14dae9d210b8",
-  "topic": "openjpeg -- use-after-free vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openjpeg"
-      ],
-      "range": [
-        {
-          "lt": "2.1.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Feist Josselin reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/550\">\n\t  <p>Use-after-free was found in openjpeg. The vuln is fixed in\n\t    version 2.1.1 and was located in opj_j2k_write_mco function.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2015/q3/550",
-      "https://github.com/uclouvain/openjpeg/issues/563"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-08-14",
-    "entry": "2015-09-17"
-  }
+	"vid": "a233d51f-5d4c-11e5-9ad8-14dae9d210b8",
+	"topic": "openjpeg -- use-after-free vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openjpeg"
+			],
+			"range": [
+				{
+					"lt": "2.1.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Feist Josselin reports:</p>\n\t<blockquote cite=\"http://seclists.org/oss-sec/2015/q3/550\">\n\t  <p>Use-after-free was found in openjpeg. The vuln is fixed in\n\t    version 2.1.1 and was located in opj_j2k_write_mco function.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2015/q3/550",
+			"https://github.com/uclouvain/openjpeg/issues/563"
+		]
+	},
+	"dates": {
+		"discovery": "2015-08-14",
+		"entry": "2015-09-17"
+	}
 }

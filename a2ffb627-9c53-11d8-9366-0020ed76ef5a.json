@@ -1,31 +1,31 @@
 {
-  "vid": "a2ffb627-9c53-11d8-9366-0020ed76ef5a",
-  "topic": "lha buffer overflows and path traversal issues",
-  "affects": [
-    {
-      "name": [
-        "lha"
-      ],
-      "range": [
-        {
-          "lt": "1.14i_4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Ulf Härnhammar discovered several vulnerabilities in\n\t  LHa for UNIX's path name handling code.  Specially constructed\n\t  archive files may cause LHa to overwrite files or\n\t  execute arbitrary code with the privileges of the user\n\t  invoking LHa.  This could be particularly harmful for\n\t  automated systems that might handle archives such as\n\t  virus scanning processes.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2004-0234",
-      "CVE-2004-0235"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-04-29",
-    "entry": "2004-05-02",
-    "modified": "2004-05-03"
-  }
+	"vid": "a2ffb627-9c53-11d8-9366-0020ed76ef5a",
+	"topic": "lha buffer overflows and path traversal issues",
+	"affects": [
+		{
+			"name": [
+				"lha"
+			],
+			"range": [
+				{
+					"lt": "1.14i_4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Ulf Härnhammar discovered several vulnerabilities in\n\t  LHa for UNIX's path name handling code.  Specially constructed\n\t  archive files may cause LHa to overwrite files or\n\t  execute arbitrary code with the privileges of the user\n\t  invoking LHa.  This could be particularly harmful for\n\t  automated systems that might handle archives such as\n\t  virus scanning processes.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2004-0234",
+			"CVE-2004-0235"
+		]
+	},
+	"dates": {
+		"discovery": "2004-04-29",
+		"entry": "2004-05-02",
+		"modified": "2004-05-03"
+	}
 }

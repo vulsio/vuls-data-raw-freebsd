@@ -1,33 +1,33 @@
 {
-  "vid": "ff76f0e0-3f11-11e6-b3c8-14dae9d210b8",
-  "topic": "expat2 -- denial of service",
-  "affects": [
-    {
-      "name": [
-        "expat"
-      ],
-      "range": [
-        {
-          "lt": "2.1.1_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Adam Maris reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=1344251\">\n\t  <p>It was found that original patch for issues CVE-2015-1283\n\t    and CVE-2015-2716 used overflow checks that could be optimized out by\n\t    some compilers applying certain optimization settings, which can cause\n\t    the vulnerability to remain even after applying the patch.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=1344251"
-    ],
-    "cvename": [
-      "CVE-2016-4472"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-06-09",
-    "entry": "2016-06-30",
-    "modified": "2016-11-30"
-  }
+	"vid": "ff76f0e0-3f11-11e6-b3c8-14dae9d210b8",
+	"topic": "expat2 -- denial of service",
+	"affects": [
+		{
+			"name": [
+				"expat"
+			],
+			"range": [
+				{
+					"lt": "2.1.1_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Adam Maris reports:</p>\n\t<blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=1344251\">\n\t  <p>It was found that original patch for issues CVE-2015-1283\n\t    and CVE-2015-2716 used overflow checks that could be optimized out by\n\t    some compilers applying certain optimization settings, which can cause\n\t    the vulnerability to remain even after applying the patch.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=1344251"
+		],
+		"cvename": [
+			"CVE-2016-4472"
+		]
+	},
+	"dates": {
+		"discovery": "2016-06-09",
+		"entry": "2016-06-30",
+		"modified": "2016-11-30"
+	}
 }

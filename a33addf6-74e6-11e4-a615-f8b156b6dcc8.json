@@ -1,45 +1,45 @@
 {
-  "vid": "a33addf6-74e6-11e4-a615-f8b156b6dcc8",
-  "topic": "flac -- Multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "flac"
-      ],
-      "range": [
-        {
-          "lt": "1.3.0_3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-flac"
-      ],
-      "range": [
-        {
-          "lt": "1.2.1_3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Erik de Castro Lopo reports:</p>\n\t<blockquote cite=\"http://lists.xiph.org/pipermail/flac-dev/2014-November/005226.html\">\n\t  <p>Google Security Team member, Michele Spagnuolo, recently\n\t    found two potential problems in the FLAC code base. They are:</p>\n\t  <ul>\n\t  <li>CVE-2014-9028: Heap buffer write overflow.</li>\n\t  <li>CVE-2014-8962: Heap buffer read overflow.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://git.xiph.org/?p=flac.git;a=commit;h=5b3033a2b355068c11fe637e14ac742d273f076e",
-      "https://git.xiph.org/?p=flac.git;a=commit;h=fcf0ba06ae12ccd7c67cee3c8d948df15f946b85"
-    ],
-    "cvename": [
-      "CVE-2014-8962",
-      "CVE-2014-9028"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-11-25",
-    "entry": "2014-11-25",
-    "modified": "2015-07-15"
-  }
+	"vid": "a33addf6-74e6-11e4-a615-f8b156b6dcc8",
+	"topic": "flac -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"flac"
+			],
+			"range": [
+				{
+					"lt": "1.3.0_3"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-flac"
+			],
+			"range": [
+				{
+					"lt": "1.2.1_3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Erik de Castro Lopo reports:</p>\n\t<blockquote cite=\"http://lists.xiph.org/pipermail/flac-dev/2014-November/005226.html\">\n\t  <p>Google Security Team member, Michele Spagnuolo, recently\n\t    found two potential problems in the FLAC code base. They are:</p>\n\t  <ul>\n\t  <li>CVE-2014-9028: Heap buffer write overflow.</li>\n\t  <li>CVE-2014-8962: Heap buffer read overflow.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://git.xiph.org/?p=flac.git;a=commit;h=5b3033a2b355068c11fe637e14ac742d273f076e",
+			"https://git.xiph.org/?p=flac.git;a=commit;h=fcf0ba06ae12ccd7c67cee3c8d948df15f946b85"
+		],
+		"cvename": [
+			"CVE-2014-8962",
+			"CVE-2014-9028"
+		]
+	},
+	"dates": {
+		"discovery": "2014-11-25",
+		"entry": "2014-11-25",
+		"modified": "2015-07-15"
+	}
 }

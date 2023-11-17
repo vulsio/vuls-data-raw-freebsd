@@ -1,38 +1,38 @@
 {
-  "vid": "2f794295-7b69-11dd-80ba-000bcdf0a03b",
-  "topic": "FreeBSD -- Remote kernel panics on IPv6 connections",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "6.3_4",
-          "ge": "6.3"
-        },
-        {
-          "lt": "7.0_4",
-          "ge": "7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>In case of an incoming ICMPv6 'Packet Too Big Message', there\n\t  is an insufficient check on the proposed new MTU for a path to\n\t  the destination.</p>\n\t<h1>Impact:</h1>\n\t<p>When the kernel is configured to process IPv6 packets and has\n\t  active IPv6 TCP sockets, a specifically crafted ICMPv6 'Packet\n\t  Too Big Message' could cause the TCP stack of the kernel to\n\t  panic.</p>\n\t<h1>Workaround:</h1>\n\t<p>Systems without INET6 / IPv6 support are not vulnerable and\n\t  neither are systems which do not listen on any IPv6 TCP sockets\n\t  and have no active IPv6 connections.</p>\n\t<p>Filter ICMPv6 'Packet Too Big Messages' using a firewall, but\n\t  this will at the same time break PMTU support for IPv6\n\t  connections.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2008-3530"
-    ],
-    "freebsd_sa": [
-      "SA-08:09.icmp6"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-09-03",
-    "entry": "2008-09-05",
-    "modified": "2016-08-09"
-  }
+	"vid": "2f794295-7b69-11dd-80ba-000bcdf0a03b",
+	"topic": "FreeBSD -- Remote kernel panics on IPv6 connections",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "6.3_4",
+					"ge": "6.3"
+				},
+				{
+					"lt": "7.0_4",
+					"ge": "7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>In case of an incoming ICMPv6 'Packet Too Big Message', there\n\t  is an insufficient check on the proposed new MTU for a path to\n\t  the destination.</p>\n\t<h1>Impact:</h1>\n\t<p>When the kernel is configured to process IPv6 packets and has\n\t  active IPv6 TCP sockets, a specifically crafted ICMPv6 'Packet\n\t  Too Big Message' could cause the TCP stack of the kernel to\n\t  panic.</p>\n\t<h1>Workaround:</h1>\n\t<p>Systems without INET6 / IPv6 support are not vulnerable and\n\t  neither are systems which do not listen on any IPv6 TCP sockets\n\t  and have no active IPv6 connections.</p>\n\t<p>Filter ICMPv6 'Packet Too Big Messages' using a firewall, but\n\t  this will at the same time break PMTU support for IPv6\n\t  connections.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2008-3530"
+		],
+		"freebsd_sa": [
+			"SA-08:09.icmp6"
+		]
+	},
+	"dates": {
+		"discovery": "2008-09-03",
+		"entry": "2008-09-05",
+		"modified": "2016-08-09"
+	}
 }

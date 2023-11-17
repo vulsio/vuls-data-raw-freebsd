@@ -1,46 +1,46 @@
 {
-  "vid": "0f51f2c9-8956-11dd-a6fe-0030843d3802",
-  "topic": "proftpd -- Long Command Processing Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "proftpd",
-        "proftpd-mysql"
-      ],
-      "range": [
-        {
-          "lt": "1.3.2rc2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "proftpd-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.3.20080922"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31930/\">\n\t  <p>The vulnerability is caused due to the application truncating an\n\t    overly long FTP command, and improperly interpreting the remainder\n\t    string as a new FTP command. This can be exploited to execute\n\t    arbitrary FTP commands with the privileges of another user by e.g.\n\t    tricking the user into following malicious link.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/31930/",
-      "http://bugs.proftpd.org/show_bug.cgi?id=3115"
-    ],
-    "cvename": [
-      "CVE-2008-4242",
-      "CVE-2008-4247"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-09-22",
-    "entry": "2008-09-23",
-    "modified": "2010-05-12"
-  }
+	"vid": "0f51f2c9-8956-11dd-a6fe-0030843d3802",
+	"topic": "proftpd -- Long Command Processing Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"proftpd",
+				"proftpd-mysql"
+			],
+			"range": [
+				{
+					"lt": "1.3.2rc2"
+				}
+			]
+		},
+		{
+			"name": [
+				"proftpd-devel"
+			],
+			"range": [
+				{
+					"lt": "1.3.20080922"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/31930/\">\n\t  <p>The vulnerability is caused due to the application truncating an\n\t    overly long FTP command, and improperly interpreting the remainder\n\t    string as a new FTP command. This can be exploited to execute\n\t    arbitrary FTP commands with the privileges of another user by e.g.\n\t    tricking the user into following malicious link.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/31930/",
+			"http://bugs.proftpd.org/show_bug.cgi?id=3115"
+		],
+		"cvename": [
+			"CVE-2008-4242",
+			"CVE-2008-4247"
+		]
+	},
+	"dates": {
+		"discovery": "2008-09-22",
+		"entry": "2008-09-23",
+		"modified": "2010-05-12"
+	}
 }

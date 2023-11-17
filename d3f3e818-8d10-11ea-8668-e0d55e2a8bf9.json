@@ -1,32 +1,32 @@
 {
-  "vid": "d3f3e818-8d10-11ea-8668-e0d55e2a8bf9",
-  "topic": "taglib -- heap-based buffer over-read via a crafted audio file",
-  "affects": [
-    {
-      "name": [
-        "taglib"
-      ],
-      "range": [
-        {
-          "lt": "1.12.b.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Webin security lab - dbapp security Ltd reports:</p>\n\t<blockquote cite=\"https://seclists.org/fulldisclosure/2018/May/49\">\n\t  <p>The TagLib::Ogg::FLAC::File::scan function in oggflacfile.cpp in TagLib 1.11.1 allows remote attackers to cause information disclosure (heap-based buffer over-read) via a crafted audio file.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://seclists.org/fulldisclosure/2018/May/49"
-    ],
-    "cvename": [
-      "CVE-2018-11439"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-05-28",
-    "entry": "2020-05-03"
-  }
+	"vid": "d3f3e818-8d10-11ea-8668-e0d55e2a8bf9",
+	"topic": "taglib -- heap-based buffer over-read via a crafted audio file",
+	"affects": [
+		{
+			"name": [
+				"taglib"
+			],
+			"range": [
+				{
+					"lt": "1.12.b.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Webin security lab - dbapp security Ltd reports:</p>\n\t<blockquote cite=\"https://seclists.org/fulldisclosure/2018/May/49\">\n\t  <p>The TagLib::Ogg::FLAC::File::scan function in oggflacfile.cpp in TagLib 1.11.1 allows remote attackers to cause information disclosure (heap-based buffer over-read) via a crafted audio file.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://seclists.org/fulldisclosure/2018/May/49"
+		],
+		"cvename": [
+			"CVE-2018-11439"
+		]
+	},
+	"dates": {
+		"discovery": "2018-05-28",
+		"entry": "2020-05-03"
+	}
 }

@@ -1,55 +1,55 @@
 {
-  "vid": "996c219c-bbb1-11e4-88ae-d050992ecde8",
-  "topic": "samba -- Unexpected code execution in smbd",
-  "affects": [
-    {
-      "name": [
-        "samba4"
-      ],
-      "range": [
-        {
-          "lt": "4.0.25",
-          "ge": "4.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba41"
-      ],
-      "range": [
-        {
-          "lt": "4.1.17",
-          "ge": "4.1.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "samba36"
-      ],
-      "range": [
-        {
-          "lt": "3.6.25",
-          "ge": "3.6.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Samba development team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2015-0240\">\n\t  <p>All versions of Samba from 3.5.0 to 4.2.0rc4 are\n\t    vulnerable to an unexpected code execution vulnerability\n\t    in the smbd file server daemon.</p>\n\t  <p>A malicious client could send packets that may set up the\n\t    stack in such a way that the freeing of memory in a\n\t    subsequent anonymous netlogon packet could allow execution\n\t    of arbitrary code. This code would execute with root\n\t    privileges.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.samba.org/samba/security/CVE-2015-0240"
-    ],
-    "cvename": [
-      "CVE-2015-0240"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-02-23",
-    "entry": "2015-02-23"
-  }
+	"vid": "996c219c-bbb1-11e4-88ae-d050992ecde8",
+	"topic": "samba -- Unexpected code execution in smbd",
+	"affects": [
+		{
+			"name": [
+				"samba4"
+			],
+			"range": [
+				{
+					"lt": "4.0.25",
+					"ge": "4.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba41"
+			],
+			"range": [
+				{
+					"lt": "4.1.17",
+					"ge": "4.1.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"samba36"
+			],
+			"range": [
+				{
+					"lt": "3.6.25",
+					"ge": "3.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Samba development team reports:</p>\n\t<blockquote cite=\"https://www.samba.org/samba/security/CVE-2015-0240\">\n\t  <p>All versions of Samba from 3.5.0 to 4.2.0rc4 are\n\t    vulnerable to an unexpected code execution vulnerability\n\t    in the smbd file server daemon.</p>\n\t  <p>A malicious client could send packets that may set up the\n\t    stack in such a way that the freeing of memory in a\n\t    subsequent anonymous netlogon packet could allow execution\n\t    of arbitrary code. This code would execute with root\n\t    privileges.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.samba.org/samba/security/CVE-2015-0240"
+		],
+		"cvename": [
+			"CVE-2015-0240"
+		]
+	},
+	"dates": {
+		"discovery": "2015-02-23",
+		"entry": "2015-02-23"
+	}
 }

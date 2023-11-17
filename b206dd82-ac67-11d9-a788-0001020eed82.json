@@ -1,99 +1,99 @@
 {
-  "vid": "b206dd82-ac67-11d9-a788-0001020eed82",
-  "topic": "openoffice -- DOC document heap overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openoffice",
-        "ar-openoffice",
-        "ca-openoffice",
-        "cs-openoffice",
-        "de-openoffice",
-        "dk-openoffice",
-        "el-openoffice",
-        "es-openoffice",
-        "et-openoffice",
-        "fi-openoffice",
-        "fr-openoffice",
-        "gr-openoffice",
-        "hu-openoffice",
-        "it-openoffice",
-        "ja-openoffice",
-        "ko-openoffice",
-        "nl-openoffice",
-        "pl-openoffice",
-        "pt-openoffice",
-        "pt_BR-openoffice",
-        "ru-openoffice",
-        "se-openoffice",
-        "sk-openoffice",
-        "sl-openoffice-SI",
-        "tr-openoffice",
-        "zh-openoffice-CN",
-        "zh-openoffice-TW",
-        "jp-openoffice",
-        "kr-openoffice",
-        "sl-openoffice-SL",
-        "zh-openoffice",
-        "zh_TW-openoffice"
-      ],
-      "range": [
-        {
-          "lt": "1.1.4_2"
-        },
-        {
-          "gt": "2.*",
-          "le": "2.0.20050406"
-        }
-      ]
-    },
-    {
-      "name": [
-        "openoffice",
-        "ja-openoffice"
-      ],
-      "range": [
-        {
-          "ge": "6.0.a609",
-          "le": "6.0.a638"
-        },
-        {
-          "ge": "641c",
-          "le": "645"
-        },
-        {
-          "eq": "1.1RC4"
-        },
-        {
-          "eq": "1.1rc5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>AD-LAB reports that a heap-based buffer overflow\n\t  vulnerability exists in OpenOffice's handling of DOC\n\t  documents.  When reading a DOC document 16 bit from a 32 bit\n\t  integer is used for memory allocation, but the full 32 bit\n\t  is used for further processing of the document.  This can\n\t  allow an attacker to crash OpenOffice, or potentially\n\t  execute arbitrary code as the user running OpenOffice, by\n\t  tricking an user into opening a specially crafted DOC\n\t  document.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openoffice.org/issues/show_bug.cgi?id=46388"
-    ],
-    "cvename": [
-      "CVE-2005-0941"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111325305109137",
-        "msgid": "20050412000438.17342.qmail@www.securityfocus.com"
-      }
-    ],
-    "bid": [
-      "13092"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-04-11",
-    "entry": "2005-04-13",
-    "modified": "2005-04-20"
-  }
+	"vid": "b206dd82-ac67-11d9-a788-0001020eed82",
+	"topic": "openoffice -- DOC document heap overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openoffice",
+				"ar-openoffice",
+				"ca-openoffice",
+				"cs-openoffice",
+				"de-openoffice",
+				"dk-openoffice",
+				"el-openoffice",
+				"es-openoffice",
+				"et-openoffice",
+				"fi-openoffice",
+				"fr-openoffice",
+				"gr-openoffice",
+				"hu-openoffice",
+				"it-openoffice",
+				"ja-openoffice",
+				"ko-openoffice",
+				"nl-openoffice",
+				"pl-openoffice",
+				"pt-openoffice",
+				"pt_BR-openoffice",
+				"ru-openoffice",
+				"se-openoffice",
+				"sk-openoffice",
+				"sl-openoffice-SI",
+				"tr-openoffice",
+				"zh-openoffice-CN",
+				"zh-openoffice-TW",
+				"jp-openoffice",
+				"kr-openoffice",
+				"sl-openoffice-SL",
+				"zh-openoffice",
+				"zh_TW-openoffice"
+			],
+			"range": [
+				{
+					"lt": "1.1.4_2"
+				},
+				{
+					"gt": "2.*",
+					"le": "2.0.20050406"
+				}
+			]
+		},
+		{
+			"name": [
+				"openoffice",
+				"ja-openoffice"
+			],
+			"range": [
+				{
+					"ge": "6.0.a609",
+					"le": "6.0.a638"
+				},
+				{
+					"ge": "641c",
+					"le": "645"
+				},
+				{
+					"eq": "1.1RC4"
+				},
+				{
+					"eq": "1.1rc5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>AD-LAB reports that a heap-based buffer overflow\n\t  vulnerability exists in OpenOffice's handling of DOC\n\t  documents.  When reading a DOC document 16 bit from a 32 bit\n\t  integer is used for memory allocation, but the full 32 bit\n\t  is used for further processing of the document.  This can\n\t  allow an attacker to crash OpenOffice, or potentially\n\t  execute arbitrary code as the user running OpenOffice, by\n\t  tricking an user into opening a specially crafted DOC\n\t  document.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openoffice.org/issues/show_bug.cgi?id=46388"
+		],
+		"cvename": [
+			"CVE-2005-0941"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=111325305109137",
+				"msgid": "20050412000438.17342.qmail@www.securityfocus.com"
+			}
+		],
+		"bid": [
+			"13092"
+		]
+	},
+	"dates": {
+		"discovery": "2005-04-11",
+		"entry": "2005-04-13",
+		"modified": "2005-04-20"
+	}
 }

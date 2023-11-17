@@ -1,43 +1,43 @@
 {
-  "vid": "e811aaf1-f015-11d8-876f-00902714cc7c",
-  "topic": "Ruby insecure file permissions in the CGI session management",
-  "affects": [
-    {
-      "name": [
-        "ruby"
-      ],
-      "range": [
-        {
-          "lt": "1.6.8.2004.07.26"
-        },
-        {
-          "lt": "1.8.1.2004.07.23",
-          "ge": "1.7.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>According to a Debian Security Advisory:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2004/dsa-537\">\n\t  <p>Andres Salomon noticed a problem in the CGI session\n\t    management of Ruby, an object-oriented scripting language.\n\t    CGI::Session's FileStore (and presumably PStore [...])\n\t    implementations store session information insecurely.\n\t    They simply create files, ignoring permission issues.\n\t    This can lead an attacker who has also shell access to the\n\t    webserver to take over a session.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xforce.iss.net/xforce/xfdb/16996",
-      "http://www.debian.org/security/2004/dsa-537"
-    ],
-    "cvename": [
-      "CVE-2004-0755"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109267579822250&w=2"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-16",
-    "entry": "2004-08-16",
-    "modified": "2004-08-28"
-  }
+	"vid": "e811aaf1-f015-11d8-876f-00902714cc7c",
+	"topic": "Ruby insecure file permissions in the CGI session management",
+	"affects": [
+		{
+			"name": [
+				"ruby"
+			],
+			"range": [
+				{
+					"lt": "1.6.8.2004.07.26"
+				},
+				{
+					"lt": "1.8.1.2004.07.23",
+					"ge": "1.7.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>According to a Debian Security Advisory:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2004/dsa-537\">\n\t  <p>Andres Salomon noticed a problem in the CGI session\n\t    management of Ruby, an object-oriented scripting language.\n\t    CGI::Session's FileStore (and presumably PStore [...])\n\t    implementations store session information insecurely.\n\t    They simply create files, ignoring permission issues.\n\t    This can lead an attacker who has also shell access to the\n\t    webserver to take over a session.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xforce.iss.net/xforce/xfdb/16996",
+			"http://www.debian.org/security/2004/dsa-537"
+		],
+		"cvename": [
+			"CVE-2004-0755"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=109267579822250&w=2"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-16",
+		"entry": "2004-08-16",
+		"modified": "2004-08-28"
+	}
 }

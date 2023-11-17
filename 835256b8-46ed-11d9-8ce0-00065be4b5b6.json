@@ -1,57 +1,57 @@
 {
-  "vid": "835256b8-46ed-11d9-8ce0-00065be4b5b6",
-  "topic": "mysql -- mysql_real_connect buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "mysql-server"
-      ],
-      "range": [
-        {
-          "le": "3.23.58_3"
-        },
-        {
-          "lt": "4.0.21",
-          "ge": "4.*"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mysql-client"
-      ],
-      "range": [
-        {
-          "le": "3.23.58_3"
-        },
-        {
-          "lt": "4.0.21",
-          "ge": "4.*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t <p>The mysql_real_connect function doesn't properly handle DNS replies\n\t   by copying the IP address into a buffer without any length checking.\n\t   A specially crafted DNS reply may therefore be used to cause a buffer\n\t   overflow on affected systems.</p>\n\t <p>Note that whether this issue can be exploitable depends on the\n\t   system library responsible for the gethostbyname function. The bug\n\t   finder, Lukasz Wojtow, explaines this with the following words:</p>\n\t <blockquote cite=\"http://bugs.mysql.com/bug.php?id=4017\">\n\t   <p>In glibc there is a limitation for an IP address to have only 4\n\t     bytes (obviously), but generally speaking the length of the address\n\t     comes with a response for dns query (i know it sounds funny but\n\t     read rfc1035 if you don't believe). This bug can occur on libraries\n\t     where gethostbyname function takes length from dns's response</p>\n\t </blockquote>\n       "
-  },
-  "references": {
-    "url": [
-      "http://bugs.mysql.com/bug.php?id=4017",
-      "http://lists.mysql.com/internals/14726",
-      "http://rhn.redhat.com/errata/RHSA-2004-611.html",
-      "http://www.osvdb.org/displayvuln.php?osvdb_id=10658"
-    ],
-    "cvename": [
-      "CVE-2004-0836"
-    ],
-    "bid": [
-      "10981"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-06-04",
-    "entry": "2004-12-16",
-    "modified": "2005-03-15"
-  }
+	"vid": "835256b8-46ed-11d9-8ce0-00065be4b5b6",
+	"topic": "mysql -- mysql_real_connect buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mysql-server"
+			],
+			"range": [
+				{
+					"le": "3.23.58_3"
+				},
+				{
+					"lt": "4.0.21",
+					"ge": "4.*"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql-client"
+			],
+			"range": [
+				{
+					"le": "3.23.58_3"
+				},
+				{
+					"lt": "4.0.21",
+					"ge": "4.*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t <p>The mysql_real_connect function doesn't properly handle DNS replies\n\t   by copying the IP address into a buffer without any length checking.\n\t   A specially crafted DNS reply may therefore be used to cause a buffer\n\t   overflow on affected systems.</p>\n\t <p>Note that whether this issue can be exploitable depends on the\n\t   system library responsible for the gethostbyname function. The bug\n\t   finder, Lukasz Wojtow, explaines this with the following words:</p>\n\t <blockquote cite=\"http://bugs.mysql.com/bug.php?id=4017\">\n\t   <p>In glibc there is a limitation for an IP address to have only 4\n\t     bytes (obviously), but generally speaking the length of the address\n\t     comes with a response for dns query (i know it sounds funny but\n\t     read rfc1035 if you don't believe). This bug can occur on libraries\n\t     where gethostbyname function takes length from dns's response</p>\n\t </blockquote>\n       "
+	},
+	"references": {
+		"url": [
+			"http://bugs.mysql.com/bug.php?id=4017",
+			"http://lists.mysql.com/internals/14726",
+			"http://rhn.redhat.com/errata/RHSA-2004-611.html",
+			"http://www.osvdb.org/displayvuln.php?osvdb_id=10658"
+		],
+		"cvename": [
+			"CVE-2004-0836"
+		],
+		"bid": [
+			"10981"
+		]
+	},
+	"dates": {
+		"discovery": "2004-06-04",
+		"entry": "2004-12-16",
+		"modified": "2005-03-15"
+	}
 }

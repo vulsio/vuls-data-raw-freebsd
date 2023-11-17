@@ -1,42 +1,42 @@
 {
-  "vid": "abaaecda-ea16-43e2-bad0-d34a9ac576b1",
-  "topic": "Dovecot -- improper input validation",
-  "affects": [
-    {
-      "name": [
-        "dovecot"
-      ],
-      "range": [
-        {
-          "lt": "2.3.7.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "dovecot-pigeonhole"
-      ],
-      "range": [
-        {
-          "lt": "0.5.7.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot/2019-August/116874.html\">\n\t  <p>Vulnerability Details:\n\nIMAP and ManageSieve protocol parsers do not properly handle NUL byte\nwhen scanning data in quoted strings, leading to out of bounds heap\nmemory writes.\n\nRisk:\n\nThis vulnerability allows for out-of-bounds writes to objects stored on\nthe heap up to 8096 bytes in pre-login phase, and 65536 bytes post-login\nphase, allowing sufficiently skilled attacker to perform complicated\nattacks that can lead to leaking private information or remote code\nexecution. Abuse of this bug is very difficult to observe, as it does\nnot necessarily cause a crash. Attempts to abuse this bug are not\ndirectly evident from logs.\n</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://dovecot.org/pipermail/dovecot/2019-August/116874.html"
-    ],
-    "cvename": [
-      "CVE-2019-11500"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-04-13",
-    "entry": "2019-08-28"
-  }
+	"vid": "abaaecda-ea16-43e2-bad0-d34a9ac576b1",
+	"topic": "Dovecot -- improper input validation",
+	"affects": [
+		{
+			"name": [
+				"dovecot"
+			],
+			"range": [
+				{
+					"lt": "2.3.7.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"dovecot-pigeonhole"
+			],
+			"range": [
+				{
+					"lt": "0.5.7.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Aki Tuomi reports:</p>\n\t<blockquote cite=\"https://dovecot.org/pipermail/dovecot/2019-August/116874.html\">\n\t  <p>Vulnerability Details:\n\nIMAP and ManageSieve protocol parsers do not properly handle NUL byte\nwhen scanning data in quoted strings, leading to out of bounds heap\nmemory writes.\n\nRisk:\n\nThis vulnerability allows for out-of-bounds writes to objects stored on\nthe heap up to 8096 bytes in pre-login phase, and 65536 bytes post-login\nphase, allowing sufficiently skilled attacker to perform complicated\nattacks that can lead to leaking private information or remote code\nexecution. Abuse of this bug is very difficult to observe, as it does\nnot necessarily cause a crash. Attempts to abuse this bug are not\ndirectly evident from logs.\n</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://dovecot.org/pipermail/dovecot/2019-August/116874.html"
+		],
+		"cvename": [
+			"CVE-2019-11500"
+		]
+	},
+	"dates": {
+		"discovery": "2019-04-13",
+		"entry": "2019-08-28"
+	}
 }

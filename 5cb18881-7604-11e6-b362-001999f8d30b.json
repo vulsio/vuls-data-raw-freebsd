@@ -1,39 +1,39 @@
 {
-  "vid": "5cb18881-7604-11e6-b362-001999f8d30b",
-  "topic": "asterisk -- RTP Resource Exhaustion",
-  "affects": [
-    {
-      "name": [
-        "asterisk11"
-      ],
-      "range": [
-        {
-          "lt": "11.23.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "asterisk13"
-      ],
-      "range": [
-        {
-          "lt": "13.11.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>The overlap dialing feature in chan_sip allows chan_sip\n\t  to report to a device that the number that has been dialed\n\t  is incomplete and more digits are required. If this\n\t  functionality is used with a device that has performed\n\t  username/password authentication RTP resources are leaked.\n\t  This occurs because the code fails to release the old RTP\n\t  resources before allocating new ones in this scenario.\n\t  If all resources are used then RTP port exhaustion will\n\t  occur and no RTP sessions are able to be set up.</p>\n\t  <p>If overlap dialing support is not needed the \"allowoverlap\"\n\t  option can be set to no. This will stop any usage of the\n\t  scenario which causes the resource exhaustion.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://downloads.asterisk.org/pub/security/AST-2016-007.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-08-05",
-    "entry": "2016-09-08"
-  }
+	"vid": "5cb18881-7604-11e6-b362-001999f8d30b",
+	"topic": "asterisk -- RTP Resource Exhaustion",
+	"affects": [
+		{
+			"name": [
+				"asterisk11"
+			],
+			"range": [
+				{
+					"lt": "11.23.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"asterisk13"
+			],
+			"range": [
+				{
+					"lt": "13.11.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Asterisk project reports:</p>\n\t<blockquote cite=\"http://www.asterisk.org/downloads/security-advisories\">\n\t  <p>The overlap dialing feature in chan_sip allows chan_sip\n\t  to report to a device that the number that has been dialed\n\t  is incomplete and more digits are required. If this\n\t  functionality is used with a device that has performed\n\t  username/password authentication RTP resources are leaked.\n\t  This occurs because the code fails to release the old RTP\n\t  resources before allocating new ones in this scenario.\n\t  If all resources are used then RTP port exhaustion will\n\t  occur and no RTP sessions are able to be set up.</p>\n\t  <p>If overlap dialing support is not needed the \"allowoverlap\"\n\t  option can be set to no. This will stop any usage of the\n\t  scenario which causes the resource exhaustion.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://downloads.asterisk.org/pub/security/AST-2016-007.html"
+		]
+	},
+	"dates": {
+		"discovery": "2016-08-05",
+		"entry": "2016-09-08"
+	}
 }

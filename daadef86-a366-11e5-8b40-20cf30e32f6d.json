@@ -1,76 +1,76 @@
 {
-  "vid": "daadef86-a366-11e5-8b40-20cf30e32f6d",
-  "topic": "subversion -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "subversion17"
-      ],
-      "range": [
-        {
-          "lt": "1.7.22_1",
-          "ge": "1.7.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion18"
-      ],
-      "range": [
-        {
-          "lt": "1.8.15",
-          "ge": "1.8.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "subversion"
-      ],
-      "range": [
-        {
-          "lt": "1.9.3",
-          "ge": "1.9.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mod_dav_svn"
-      ],
-      "range": [
-        {
-          "lt": "1.7.22_1",
-          "ge": "1.7.0"
-        },
-        {
-          "lt": "1.8.15",
-          "ge": "1.8.0"
-        },
-        {
-          "lt": "1.9.3",
-          "ge": "1.9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion Project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/\">\n\t  <p>Remotely triggerable heap overflow and out-of-bounds read caused\n\t    by integer overflow in the svn:// protocol parser.</p>\n\t  <p>Remotely triggerable heap overflow and out-of-bounds read in\n\t    mod_dav_svn caused by integer overflow when parsing skel-encoded\n\t    request bodies.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://subversion.apache.org/security/CVE-2015-5343-advisory.txt",
-      "http://subversion.apache.org/security/CVE-2015-5259-advisory.txt"
-    ],
-    "cvename": [
-      "CVE-2015-5343",
-      "CVE-2015-5259"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-11-14",
-    "entry": "2015-12-15"
-  }
+	"vid": "daadef86-a366-11e5-8b40-20cf30e32f6d",
+	"topic": "subversion -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"subversion17"
+			],
+			"range": [
+				{
+					"lt": "1.7.22_1",
+					"ge": "1.7.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion18"
+			],
+			"range": [
+				{
+					"lt": "1.8.15",
+					"ge": "1.8.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"subversion"
+			],
+			"range": [
+				{
+					"lt": "1.9.3",
+					"ge": "1.9.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"mod_dav_svn"
+			],
+			"range": [
+				{
+					"lt": "1.7.22_1",
+					"ge": "1.7.0"
+				},
+				{
+					"lt": "1.8.15",
+					"ge": "1.8.0"
+				},
+				{
+					"lt": "1.9.3",
+					"ge": "1.9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion Project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/\">\n\t  <p>Remotely triggerable heap overflow and out-of-bounds read caused\n\t    by integer overflow in the svn:// protocol parser.</p>\n\t  <p>Remotely triggerable heap overflow and out-of-bounds read in\n\t    mod_dav_svn caused by integer overflow when parsing skel-encoded\n\t    request bodies.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://subversion.apache.org/security/CVE-2015-5343-advisory.txt",
+			"http://subversion.apache.org/security/CVE-2015-5259-advisory.txt"
+		],
+		"cvename": [
+			"CVE-2015-5343",
+			"CVE-2015-5259"
+		]
+	},
+	"dates": {
+		"discovery": "2015-11-14",
+		"entry": "2015-12-15"
+	}
 }

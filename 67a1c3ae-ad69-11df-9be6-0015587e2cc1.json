@@ -1,29 +1,29 @@
 {
-  "vid": "67a1c3ae-ad69-11df-9be6-0015587e2cc1",
-  "topic": "corkscrew -- buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "corkscrew"
-      ],
-      "range": [
-        {
-          "le": "2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The affected corkscrew versions use sscanf calls without proper\n\t  bounds checking. In the authentication file parsing routine\n\t  this can cause an exploitable buffer overflow condition.\n\t  A similar but issue exists in the server response code but\n\t  appears to be non-exploitable.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://people.freebsd.org/~niels/issues/corkscrew-20100821.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-08-21",
-    "entry": "2010-08-21"
-  }
+	"vid": "67a1c3ae-ad69-11df-9be6-0015587e2cc1",
+	"topic": "corkscrew -- buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"corkscrew"
+			],
+			"range": [
+				{
+					"le": "2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The affected corkscrew versions use sscanf calls without proper\n\t  bounds checking. In the authentication file parsing routine\n\t  this can cause an exploitable buffer overflow condition.\n\t  A similar but issue exists in the server response code but\n\t  appears to be non-exploitable.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://people.freebsd.org/~niels/issues/corkscrew-20100821.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2010-08-21",
+		"entry": "2010-08-21"
+	}
 }

@@ -1,62 +1,62 @@
 {
-  "vid": "002432c8-ef6a-11ea-ba8f-08002728f74c",
-  "topic": "Django -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "py35-django22",
-        "py36-django22",
-        "py37-django22",
-        "py38-django22"
-      ],
-      "range": [
-        {
-          "lt": "2.2.16"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py36-django30",
-        "py37-django30",
-        "py38-django30"
-      ],
-      "range": [
-        {
-          "lt": "3.0.10"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py36-django31",
-        "py37-django31",
-        "py38-django31"
-      ],
-      "range": [
-        {
-          "lt": "3.1.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django Release notes:</p>\n\t<blockquote cite=\"https://docs.djangoproject.com/en/3.1/releases/3.1.1/\">\n\t  <p>CVE-2020-24583: Incorrect permissions on intermediate-level directories\n\t    on Python 3.7+</p>\n\t  <p>On Python 3.7+, FILE_UPLOAD_DIRECTORY_PERMISSIONS mode was not applied\n\t    to intermediate-level directories created in the process of uploading\n\t    files and to intermediate-level collected static directories when using\n\t    the collectstatic management command.</p>\n\t  <p>CVE-2020-24584: Permission escalation in intermediate-level directories\n\t    of the file system cache on Python 3.7+</p>\n\t  <p>On Python 3.7+, the intermediate-level directories of the file system\n\t    cache had the system's standard umask rather than 0o077 (no group or\n\t    others permissions).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.djangoproject.com/en/2.2/releases/2.2.16/",
-      "https://docs.djangoproject.com/en/3.0/releases/3.0.10/",
-      "https://docs.djangoproject.com/en/3.1/releases/3.1.1/"
-    ],
-    "cvename": [
-      "CVE-2020-24583",
-      "CVE-2020-24584"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-09-01",
-    "entry": "2020-09-05"
-  }
+	"vid": "002432c8-ef6a-11ea-ba8f-08002728f74c",
+	"topic": "Django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py35-django22",
+				"py36-django22",
+				"py37-django22",
+				"py38-django22"
+			],
+			"range": [
+				{
+					"lt": "2.2.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"py36-django30",
+				"py37-django30",
+				"py38-django30"
+			],
+			"range": [
+				{
+					"lt": "3.0.10"
+				}
+			]
+		},
+		{
+			"name": [
+				"py36-django31",
+				"py37-django31",
+				"py38-django31"
+			],
+			"range": [
+				{
+					"lt": "3.1.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django Release notes:</p>\n\t<blockquote cite=\"https://docs.djangoproject.com/en/3.1/releases/3.1.1/\">\n\t  <p>CVE-2020-24583: Incorrect permissions on intermediate-level directories\n\t    on Python 3.7+</p>\n\t  <p>On Python 3.7+, FILE_UPLOAD_DIRECTORY_PERMISSIONS mode was not applied\n\t    to intermediate-level directories created in the process of uploading\n\t    files and to intermediate-level collected static directories when using\n\t    the collectstatic management command.</p>\n\t  <p>CVE-2020-24584: Permission escalation in intermediate-level directories\n\t    of the file system cache on Python 3.7+</p>\n\t  <p>On Python 3.7+, the intermediate-level directories of the file system\n\t    cache had the system's standard umask rather than 0o077 (no group or\n\t    others permissions).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.djangoproject.com/en/2.2/releases/2.2.16/",
+			"https://docs.djangoproject.com/en/3.0/releases/3.0.10/",
+			"https://docs.djangoproject.com/en/3.1/releases/3.1.1/"
+		],
+		"cvename": [
+			"CVE-2020-24583",
+			"CVE-2020-24584"
+		]
+	},
+	"dates": {
+		"discovery": "2020-09-01",
+		"entry": "2020-09-05"
+	}
 }

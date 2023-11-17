@@ -1,40 +1,40 @@
 {
-  "vid": "01bb84e2-bd88-11d9-a281-02e018374e71",
-  "topic": "groff -- pic2graph and eqn2graph are vulnerable to symlink attack through temporary files",
-  "affects": [
-    {
-      "name": [
-        "ja-groff"
-      ],
-      "range": [
-        {
-          "lt": "1.18.1_8",
-          "ge": "1.18.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The eqn2graph and pic2graph scripts in groff 1.18.1\n\t  allow local users to overwrite arbitrary files via\n\t  a symlink attack on temporary files.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=286371",
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=286372"
-    ],
-    "cvename": [
-      "CVE-2004-1296"
-    ],
-    "freebsd_pr": [
-      "ports/80671"
-    ],
-    "bid": [
-      "12058"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-12-20",
-    "entry": "2005-05-09"
-  }
+	"vid": "01bb84e2-bd88-11d9-a281-02e018374e71",
+	"topic": "groff -- pic2graph and eqn2graph are vulnerable to symlink attack through temporary files",
+	"affects": [
+		{
+			"name": [
+				"ja-groff"
+			],
+			"range": [
+				{
+					"lt": "1.18.1_8",
+					"ge": "1.18.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The eqn2graph and pic2graph scripts in groff 1.18.1\n\t  allow local users to overwrite arbitrary files via\n\t  a symlink attack on temporary files.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=286371",
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=286372"
+		],
+		"cvename": [
+			"CVE-2004-1296"
+		],
+		"freebsd_pr": [
+			"ports/80671"
+		],
+		"bid": [
+			"12058"
+		]
+	},
+	"dates": {
+		"discovery": "2004-12-20",
+		"entry": "2005-05-09"
+	}
 }

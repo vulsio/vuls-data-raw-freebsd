@@ -1,48 +1,48 @@
 {
-  "vid": "c11629d3-c8ad-11e6-ae1b-002590263bf5",
-  "topic": "vim -- arbitrary command execution",
-  "affects": [
-    {
-      "name": [
-        "vim",
-        "vim-console",
-        "vim-lite"
-      ],
-      "range": [
-        {
-          "lt": "8.0.0056"
-        }
-      ]
-    },
-    {
-      "name": [
-        "neovim"
-      ],
-      "range": [
-        {
-          "lt": "0.1.7"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1248\">\n\t  <p>vim before patch 8.0.0056 does not properly validate values for the\n\t    'filetype', 'syntax' and 'keymap' options, which may result in the\n\t    execution of arbitrary code if a file with a specially crafted\n\t    modeline is opened.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/vim/vim/commit/d0b5138ba4bccff8a744c99836041ef6322ed39a",
-      "https://github.com/neovim/neovim/commit/4fad66fbe637818b6b3d6bc5d21923ba72795040"
-    ],
-    "cvename": [
-      "CVE-2016-1248"
-    ],
-    "bid": [
-      "94478"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-22",
-    "entry": "2016-12-23"
-  }
+	"vid": "c11629d3-c8ad-11e6-ae1b-002590263bf5",
+	"topic": "vim -- arbitrary command execution",
+	"affects": [
+		{
+			"name": [
+				"vim",
+				"vim-console",
+				"vim-lite"
+			],
+			"range": [
+				{
+					"lt": "8.0.0056"
+				}
+			]
+		},
+		{
+			"name": [
+				"neovim"
+			],
+			"range": [
+				{
+					"lt": "0.1.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mitre reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1248\">\n\t  <p>vim before patch 8.0.0056 does not properly validate values for the\n\t    'filetype', 'syntax' and 'keymap' options, which may result in the\n\t    execution of arbitrary code if a file with a specially crafted\n\t    modeline is opened.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/vim/vim/commit/d0b5138ba4bccff8a744c99836041ef6322ed39a",
+			"https://github.com/neovim/neovim/commit/4fad66fbe637818b6b3d6bc5d21923ba72795040"
+		],
+		"cvename": [
+			"CVE-2016-1248"
+		],
+		"bid": [
+			"94478"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-22",
+		"entry": "2016-12-23"
+	}
 }

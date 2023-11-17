@@ -1,45 +1,45 @@
 {
-  "vid": "6a5174bd-c580-11da-9110-00123ffe8333",
-  "topic": "clamav -- Multiple Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "clamav"
-      ],
-      "range": [
-        {
-          "lt": "0.88.1"
-        }
-      ]
-    },
-    {
-      "name": [
-        "clamav-devel"
-      ],
-      "range": [
-        {
-          "le": "20051104_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19534/\">\n\t  <p>Some vulnerabilities have been reported in ClamAV, which\n\t    potentially can be exploited by malicious people to cause a\n\t    DoS (Denial of Service) and compromise a vulnerable system.</p>\n\t  <p>An unspecified integer overflow error exists in the PE header\n\t    parser in \"libclamav/pe.c\". Successful exploitation requires that\n\t    the ArchiveMaxFileSize option is disabled.</p>\n\t  <p>Some format string errors in the logging handling in\n\t    \"shared/output.c\" may be exploited to execute arbitrary code.</p>\n\t  <p>An out-of-bounds memory access error in the \"cli_bitset_test()\"\n\t    function in \"ibclamav/others.c\" may be exploited to cause a\n\t    crash.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/19534/",
-      "http://www.us.debian.org/security/2006/dsa-1024"
-    ],
-    "cvename": [
-      "CVE-2006-1614",
-      "CVE-2006-1615",
-      "CVE-2006-1630"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-04-06",
-    "entry": "2006-04-06"
-  }
+	"vid": "6a5174bd-c580-11da-9110-00123ffe8333",
+	"topic": "clamav -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"clamav"
+			],
+			"range": [
+				{
+					"lt": "0.88.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"clamav-devel"
+			],
+			"range": [
+				{
+					"le": "20051104_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/19534/\">\n\t  <p>Some vulnerabilities have been reported in ClamAV, which\n\t    potentially can be exploited by malicious people to cause a\n\t    DoS (Denial of Service) and compromise a vulnerable system.</p>\n\t  <p>An unspecified integer overflow error exists in the PE header\n\t    parser in \"libclamav/pe.c\". Successful exploitation requires that\n\t    the ArchiveMaxFileSize option is disabled.</p>\n\t  <p>Some format string errors in the logging handling in\n\t    \"shared/output.c\" may be exploited to execute arbitrary code.</p>\n\t  <p>An out-of-bounds memory access error in the \"cli_bitset_test()\"\n\t    function in \"ibclamav/others.c\" may be exploited to cause a\n\t    crash.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/19534/",
+			"http://www.us.debian.org/security/2006/dsa-1024"
+		],
+		"cvename": [
+			"CVE-2006-1614",
+			"CVE-2006-1615",
+			"CVE-2006-1630"
+		]
+	},
+	"dates": {
+		"discovery": "2006-04-06",
+		"entry": "2006-04-06"
+	}
 }

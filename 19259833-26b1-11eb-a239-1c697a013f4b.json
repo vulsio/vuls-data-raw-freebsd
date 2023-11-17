@@ -1,43 +1,43 @@
 {
-  "vid": "19259833-26b1-11eb-a239-1c697a013f4b",
-  "topic": "mantis -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mantis-php72",
-        "mantis-php73",
-        "mantis-php74",
-        "mantis-php80"
-      ],
-      "range": [
-        {
-          "lt": "2.24.3,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mantis 2.24.3 release reports:</p>\n\t<blockquote cite=\"https://mantisbt.org/bugs/changelog_page.php?project=mantisbt&amp;version=2.24.3\">\n\t  <p>This release fixes 3 security issues:</p>\n\t  <ul>\n\t    <li>0027039: CVE-2020-25781: Access to private bug note attachments</li>\n\t    <li>0027275: CVE-2020-25288: HTML Injection on bug_update_page.php</li>\n\t    <li>0027304: CVE-2020-25830: HTML Injection in bug_actiongroup_page.php</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25781",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25288",
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25830"
-    ],
-    "cvename": [
-      "CVE-2020-25781",
-      "CVE-2020-25288",
-      "CVE-2020-25830"
-    ],
-    "freebsd_pr": [
-      "ports/251141"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-09-13",
-    "entry": "2020-11-14",
-    "modified": "2020-11-15"
-  }
+	"vid": "19259833-26b1-11eb-a239-1c697a013f4b",
+	"topic": "mantis -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mantis-php72",
+				"mantis-php73",
+				"mantis-php74",
+				"mantis-php80"
+			],
+			"range": [
+				{
+					"lt": "2.24.3,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mantis 2.24.3 release reports:</p>\n\t<blockquote cite=\"https://mantisbt.org/bugs/changelog_page.php?project=mantisbt&amp;version=2.24.3\">\n\t  <p>This release fixes 3 security issues:</p>\n\t  <ul>\n\t    <li>0027039: CVE-2020-25781: Access to private bug note attachments</li>\n\t    <li>0027275: CVE-2020-25288: HTML Injection on bug_update_page.php</li>\n\t    <li>0027304: CVE-2020-25830: HTML Injection in bug_actiongroup_page.php</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25781",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25288",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25830"
+		],
+		"cvename": [
+			"CVE-2020-25781",
+			"CVE-2020-25288",
+			"CVE-2020-25830"
+		],
+		"freebsd_pr": [
+			"ports/251141"
+		]
+	},
+	"dates": {
+		"discovery": "2020-09-13",
+		"entry": "2020-11-14",
+		"modified": "2020-11-15"
+	}
 }

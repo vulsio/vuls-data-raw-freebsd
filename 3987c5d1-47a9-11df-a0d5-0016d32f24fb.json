@@ -1,43 +1,43 @@
 {
-  "vid": "3987c5d1-47a9-11df-a0d5-0016d32f24fb",
-  "topic": "KDM -- local privilege escalation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "kdebase"
-      ],
-      "range": [
-        {
-          "le": "3.5.10_6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kdebase-workspace"
-      ],
-      "range": [
-        {
-          "le": "4.3.5_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>KDE Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20100413-1.txt\">\n\t  <p>KDM contains a race condition that allows local attackers\n\t    to make arbitrary files on the system world-writeable.\n\t    This can happen while KDM tries to create its control\n\t    socket during user login. A local attacker with a valid\n\t    local account can under certain circumstances make use of\n\t    this vulnerability to execute arbitrary code as root.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.kde.org/info/security/advisory-20100413-1.txt"
-    ],
-    "cvename": [
-      "CVE-2010-0436"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-04-13",
-    "entry": "2010-04-14",
-    "modified": "2010-04-14"
-  }
+	"vid": "3987c5d1-47a9-11df-a0d5-0016d32f24fb",
+	"topic": "KDM -- local privilege escalation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"kdebase"
+			],
+			"range": [
+				{
+					"le": "3.5.10_6"
+				}
+			]
+		},
+		{
+			"name": [
+				"kdebase-workspace"
+			],
+			"range": [
+				{
+					"le": "4.3.5_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>KDE Security Advisory reports:</p>\n\t<blockquote cite=\"http://www.kde.org/info/security/advisory-20100413-1.txt\">\n\t  <p>KDM contains a race condition that allows local attackers\n\t    to make arbitrary files on the system world-writeable.\n\t    This can happen while KDM tries to create its control\n\t    socket during user login. A local attacker with a valid\n\t    local account can under certain circumstances make use of\n\t    this vulnerability to execute arbitrary code as root.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.kde.org/info/security/advisory-20100413-1.txt"
+		],
+		"cvename": [
+			"CVE-2010-0436"
+		]
+	},
+	"dates": {
+		"discovery": "2010-04-13",
+		"entry": "2010-04-14",
+		"modified": "2010-04-14"
+	}
 }

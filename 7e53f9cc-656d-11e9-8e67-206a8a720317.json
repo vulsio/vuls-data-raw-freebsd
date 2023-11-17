@@ -1,54 +1,54 @@
 {
-  "vid": "7e53f9cc-656d-11e9-8e67-206a8a720317",
-  "topic": "FreeBSD -- SAE side-channel attacks",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "12.0_3",
-          "ge": "12.0"
-        },
-        {
-          "lt": "11.2_9",
-          "ge": "11.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "wpa_supplicant"
-      ],
-      "range": [
-        {
-          "lt": "2.8"
-        }
-      ]
-    },
-    {
-      "name": [
-        "hostapd"
-      ],
-      "range": [
-        {
-          "lt": "2.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>Side channel attacks in the SAE implementations used by both\n\thostapd (AP) and wpa_supplicant (infrastructure BSS station/mesh\n\tstation). SAE (Simultaneous Authentication of Equals) is also known\n\tas WPA3-Personal. The discovered side channel attacks may be able to\n\tleak information about the used password based on observable timing\n\tdifferences and cache access patterns. This might result in full\n\tpassword recovery when combined with an offline dictionary attack and\n\tif the password is not strong enough to protect against dictionary\n\tattacks.</p>\n\t<p>See\n\thttps://w1.fi/security/2019-1/sae-side-channel-attacks.txt\n\tfor a detailed description of the bug.</p>\n\t<h1>Impact:</h1>\n\t<p>All wpa_supplicant and hostapd versions with SAE support\n\t(CONFIG_SAE=y in the build configuration and SAE being enabled in\n\tthe runtime configuration).</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2019-9494"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-04-10",
-    "entry": "2019-04-23"
-  }
+	"vid": "7e53f9cc-656d-11e9-8e67-206a8a720317",
+	"topic": "FreeBSD -- SAE side-channel attacks",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "12.0_3",
+					"ge": "12.0"
+				},
+				{
+					"lt": "11.2_9",
+					"ge": "11.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"wpa_supplicant"
+			],
+			"range": [
+				{
+					"lt": "2.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"hostapd"
+			],
+			"range": [
+				{
+					"lt": "2.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>Side channel attacks in the SAE implementations used by both\n\thostapd (AP) and wpa_supplicant (infrastructure BSS station/mesh\n\tstation). SAE (Simultaneous Authentication of Equals) is also known\n\tas WPA3-Personal. The discovered side channel attacks may be able to\n\tleak information about the used password based on observable timing\n\tdifferences and cache access patterns. This might result in full\n\tpassword recovery when combined with an offline dictionary attack and\n\tif the password is not strong enough to protect against dictionary\n\tattacks.</p>\n\t<p>See\n\thttps://w1.fi/security/2019-1/sae-side-channel-attacks.txt\n\tfor a detailed description of the bug.</p>\n\t<h1>Impact:</h1>\n\t<p>All wpa_supplicant and hostapd versions with SAE support\n\t(CONFIG_SAE=y in the build configuration and SAE being enabled in\n\tthe runtime configuration).</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2019-9494"
+		]
+	},
+	"dates": {
+		"discovery": "2019-04-10",
+		"entry": "2019-04-23"
+	}
 }

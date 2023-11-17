@@ -1,54 +1,54 @@
 {
-  "vid": "d7d1cc94-b971-11e7-af3a-f1035dd0da62",
-  "topic": "Node.js -- remote DOS security vulnerability",
-  "affects": [
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "8.8.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node6"
-      ],
-      "range": [
-        {
-          "lt": "6.11.5",
-          "ge": "6.10.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node4"
-      ],
-      "range": [
-        {
-          "lt": "4.8.5",
-          "ge": "4.8.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/oct-2017-dos/\">\n\t  <p>Node.js was susceptible to a remote DoS attack due to a change that came in as part of zlib v1.2.9. In zlib v1.2.9 8 became an invalid value for the windowBits parameter and Node's zlib module will crash or throw an exception (depending on the version)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/oct-2017-dos/"
-    ],
-    "cvename": [
-      "CVE-2017-14919"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-10-17",
-    "entry": "2017-10-25"
-  }
+	"vid": "d7d1cc94-b971-11e7-af3a-f1035dd0da62",
+	"topic": "Node.js -- remote DOS security vulnerability",
+	"affects": [
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "8.8.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node6"
+			],
+			"range": [
+				{
+					"lt": "6.11.5",
+					"ge": "6.10.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"node4"
+			],
+			"range": [
+				{
+					"lt": "4.8.5",
+					"ge": "4.8.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/oct-2017-dos/\">\n\t  <p>Node.js was susceptible to a remote DoS attack due to a change that came in as part of zlib v1.2.9. In zlib v1.2.9 8 became an invalid value for the windowBits parameter and Node's zlib module will crash or throw an exception (depending on the version)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/oct-2017-dos/"
+		],
+		"cvename": [
+			"CVE-2017-14919"
+		]
+	},
+	"dates": {
+		"discovery": "2017-10-17",
+		"entry": "2017-10-25"
+	}
 }

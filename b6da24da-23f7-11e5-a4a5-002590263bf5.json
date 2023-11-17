@@ -1,59 +1,59 @@
 {
-  "vid": "b6da24da-23f7-11e5-a4a5-002590263bf5",
-  "topic": "squid -- client-first SSL-bump does not correctly validate X509 server certificate",
-  "affects": [
-    {
-      "name": [
-        "squid"
-      ],
-      "range": [
-        {
-          "lt": "3.5.4",
-          "ge": "3.5"
-        },
-        {
-          "lt": "3.4.13",
-          "ge": "3.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "squid33"
-      ],
-      "range": [
-        {
-          "lt": "3.3.14",
-          "ge": "3.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "squid32"
-      ],
-      "range": [
-        {
-          "lt": "3.2.14",
-          "ge": "3.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Squid security advisory 2015:1 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2015_1.txt\">\n\t  <p>Squid configured with client-first SSL-bump does not correctly\n\t    validate X509 server certificate domain / hostname fields.</p>\n\t  <p>The bug is important because it allows remote servers to bypass\n\t    client certificate validation. Some attackers may also be able\n\t    to use valid certificates for one domain signed by a global\n\t    Certificate Authority to abuse an unrelated domain.</p>\n\t  <p>However, the bug is exploitable only if you have configured\n\t    Squid to perform SSL Bumping with the \"client-first\" or \"bump\"\n\t    mode of operation.</p>\n\t  <p>Sites that do not use SSL-Bump are not vulnerable.</p>\n\t  <p>All Squid built without SSL support are not vulnerable to the\n\t    problem.</p>\n\t</blockquote>\n\t<p>The FreeBSD port does not use SSL by default and is not vulnerable\n\t  in the default configuration.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.squid-cache.org/Advisories/SQUID-2015_1.txt"
-    ],
-    "cvename": [
-      "CVE-2015-3455"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-05-01",
-    "entry": "2015-07-06"
-  }
+	"vid": "b6da24da-23f7-11e5-a4a5-002590263bf5",
+	"topic": "squid -- client-first SSL-bump does not correctly validate X509 server certificate",
+	"affects": [
+		{
+			"name": [
+				"squid"
+			],
+			"range": [
+				{
+					"lt": "3.5.4",
+					"ge": "3.5"
+				},
+				{
+					"lt": "3.4.13",
+					"ge": "3.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"squid33"
+			],
+			"range": [
+				{
+					"lt": "3.3.14",
+					"ge": "3.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"squid32"
+			],
+			"range": [
+				{
+					"lt": "3.2.14",
+					"ge": "3.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Squid security advisory 2015:1 reports:</p>\n\t<blockquote cite=\"http://www.squid-cache.org/Advisories/SQUID-2015_1.txt\">\n\t  <p>Squid configured with client-first SSL-bump does not correctly\n\t    validate X509 server certificate domain / hostname fields.</p>\n\t  <p>The bug is important because it allows remote servers to bypass\n\t    client certificate validation. Some attackers may also be able\n\t    to use valid certificates for one domain signed by a global\n\t    Certificate Authority to abuse an unrelated domain.</p>\n\t  <p>However, the bug is exploitable only if you have configured\n\t    Squid to perform SSL Bumping with the \"client-first\" or \"bump\"\n\t    mode of operation.</p>\n\t  <p>Sites that do not use SSL-Bump are not vulnerable.</p>\n\t  <p>All Squid built without SSL support are not vulnerable to the\n\t    problem.</p>\n\t</blockquote>\n\t<p>The FreeBSD port does not use SSL by default and is not vulnerable\n\t  in the default configuration.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.squid-cache.org/Advisories/SQUID-2015_1.txt"
+		],
+		"cvename": [
+			"CVE-2015-3455"
+		]
+	},
+	"dates": {
+		"discovery": "2015-05-01",
+		"entry": "2015-07-06"
+	}
 }

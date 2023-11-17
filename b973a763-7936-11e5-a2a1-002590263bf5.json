@@ -1,67 +1,67 @@
 {
-  "vid": "b973a763-7936-11e5-a2a1-002590263bf5",
-  "topic": "mediawiki -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "mediawiki123"
-      ],
-      "range": [
-        {
-          "lt": "1.23.11"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mediawiki124"
-      ],
-      "range": [
-        {
-          "lt": "1.24.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "mediawiki125"
-      ],
-      "range": [
-        {
-          "lt": "1.25.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>MediaWiki reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html\">\n\t  <p>Wikipedia user RobinHood70 reported two issues in the chunked\n\t    upload API. The API failed to correctly stop adding new chunks to\n\t    the upload when the reported size was exceeded (T91203), allowing\n\t    a malicious users to upload add an infinite number of chunks for a\n\t    single file upload. Additionally, a malicious user could upload\n\t    chunks of 1 byte for very large files, potentially creating a very\n\t    large number of files on the server's filesystem (T91205).</p>\n\t  <p>Internal review discovered that it is not possible to throttle file\n\t    uploads.</p>\n\t  <p>Internal review discovered a missing authorization check when\n\t    removing suppression from a revision. This allowed users with the\n\t    'viewsuppressed' user right but not the appropriate\n\t    'suppressrevision' user right to unsuppress revisions.</p>\n\t  <p>Richard Stanway from teamliquid.net reported that thumbnails of PNG\n\t    files generated with ImageMagick contained the local file path in\n\t    the image metadata.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html",
-      "https://phabricator.wikimedia.org/T91203",
-      "https://phabricator.wikimedia.org/T91205",
-      "https://phabricator.wikimedia.org/T91850",
-      "https://phabricator.wikimedia.org/T95589",
-      "https://phabricator.wikimedia.org/T108616",
-      "http://www.openwall.com/lists/oss-security/2015/10/29/14"
-    ],
-    "cvename": [
-      "CVE-2015-8001",
-      "CVE-2015-8002",
-      "CVE-2015-8003",
-      "CVE-2015-8004",
-      "CVE-2015-8005",
-      "CVE-2015-8006",
-      "CVE-2015-8007",
-      "CVE-2015-8008",
-      "CVE-2015-8009"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-10-16",
-    "entry": "2015-10-23",
-    "modified": "2015-12-24"
-  }
+	"vid": "b973a763-7936-11e5-a2a1-002590263bf5",
+	"topic": "mediawiki -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mediawiki123"
+			],
+			"range": [
+				{
+					"lt": "1.23.11"
+				}
+			]
+		},
+		{
+			"name": [
+				"mediawiki124"
+			],
+			"range": [
+				{
+					"lt": "1.24.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"mediawiki125"
+			],
+			"range": [
+				{
+					"lt": "1.25.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>MediaWiki reports:</p>\n\t<blockquote cite=\"https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html\">\n\t  <p>Wikipedia user RobinHood70 reported two issues in the chunked\n\t    upload API. The API failed to correctly stop adding new chunks to\n\t    the upload when the reported size was exceeded (T91203), allowing\n\t    a malicious users to upload add an infinite number of chunks for a\n\t    single file upload. Additionally, a malicious user could upload\n\t    chunks of 1 byte for very large files, potentially creating a very\n\t    large number of files on the server's filesystem (T91205).</p>\n\t  <p>Internal review discovered that it is not possible to throttle file\n\t    uploads.</p>\n\t  <p>Internal review discovered a missing authorization check when\n\t    removing suppression from a revision. This allowed users with the\n\t    'viewsuppressed' user right but not the appropriate\n\t    'suppressrevision' user right to unsuppress revisions.</p>\n\t  <p>Richard Stanway from teamliquid.net reported that thumbnails of PNG\n\t    files generated with ImageMagick contained the local file path in\n\t    the image metadata.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html",
+			"https://phabricator.wikimedia.org/T91203",
+			"https://phabricator.wikimedia.org/T91205",
+			"https://phabricator.wikimedia.org/T91850",
+			"https://phabricator.wikimedia.org/T95589",
+			"https://phabricator.wikimedia.org/T108616",
+			"http://www.openwall.com/lists/oss-security/2015/10/29/14"
+		],
+		"cvename": [
+			"CVE-2015-8001",
+			"CVE-2015-8002",
+			"CVE-2015-8003",
+			"CVE-2015-8004",
+			"CVE-2015-8005",
+			"CVE-2015-8006",
+			"CVE-2015-8007",
+			"CVE-2015-8008",
+			"CVE-2015-8009"
+		]
+	},
+	"dates": {
+		"discovery": "2015-10-16",
+		"entry": "2015-10-23",
+		"modified": "2015-12-24"
+	}
 }

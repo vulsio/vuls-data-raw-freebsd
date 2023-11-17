@@ -1,33 +1,33 @@
 {
-  "vid": "e7002b26-caaa-11e6-a76a-9f7324e5534e",
-  "topic": "exim -- DKIM private key leak",
-  "affects": [
-    {
-      "name": [
-        "exim"
-      ],
-      "range": [
-        {
-          "lt": "4.87.1",
-          "gt": "4.69"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Exim project reports:</p>\n\t<blockquote cite=\"https://exim.org/static/doc/CVE-2016-9963.txt\">\n\t  <p>Exim leaks the private DKIM signing key to the log files.\n\t  Additionally, if the build option EXPERIMENTAL_DSN_INFO=yes is used,\n\t  the key material is included in the bounce message.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://exim.org/static/doc/CVE-2016-9963.txt"
-    ],
-    "cvename": [
-      "CVE-2016-9963"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-12-15",
-    "entry": "2016-12-25"
-  }
+	"vid": "e7002b26-caaa-11e6-a76a-9f7324e5534e",
+	"topic": "exim -- DKIM private key leak",
+	"affects": [
+		{
+			"name": [
+				"exim"
+			],
+			"range": [
+				{
+					"lt": "4.87.1",
+					"gt": "4.69"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Exim project reports:</p>\n\t<blockquote cite=\"https://exim.org/static/doc/CVE-2016-9963.txt\">\n\t  <p>Exim leaks the private DKIM signing key to the log files.\n\t  Additionally, if the build option EXPERIMENTAL_DSN_INFO=yes is used,\n\t  the key material is included in the bounce message.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://exim.org/static/doc/CVE-2016-9963.txt"
+		],
+		"cvename": [
+			"CVE-2016-9963"
+		]
+	},
+	"dates": {
+		"discovery": "2016-12-15",
+		"entry": "2016-12-25"
+	}
 }

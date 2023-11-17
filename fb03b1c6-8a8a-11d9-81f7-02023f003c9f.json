@@ -1,40 +1,40 @@
 {
-  "vid": "fb03b1c6-8a8a-11d9-81f7-02023f003c9f",
-  "topic": "uim -- privilege escalation vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ja-uim"
-      ],
-      "range": [
-        {
-          "lt": "0.4.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The uim developers reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/pipermail/uim/2005-February/000996.html\">\n\t  <p>Takumi ASAKI discovered that uim always trusts environment\n\t    variables.\tBut this is not correct behavior, sometimes environment\n\t    variables shouldn't be trusted. This bug causes privilege escalation\n\t    when libuim is linked against setuid/setgid application. Since GTK+\n\t    prohibits setuid/setgid applications, the bug appears only in\n\t    'immodule for Qt' enabled Qt. (Normal Qt is also safe.)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/13981"
-    ],
-    "cvename": [
-      "CVE-2005-0503"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.freedesktop.org/pipermail/uim/2005-February/000996.html"
-      }
-    ],
-    "bid": [
-      "12604"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-02-21",
-    "entry": "2005-03-01"
-  }
+	"vid": "fb03b1c6-8a8a-11d9-81f7-02023f003c9f",
+	"topic": "uim -- privilege escalation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ja-uim"
+			],
+			"range": [
+				{
+					"lt": "0.4.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The uim developers reports:</p>\n\t<blockquote cite=\"http://lists.freedesktop.org/pipermail/uim/2005-February/000996.html\">\n\t  <p>Takumi ASAKI discovered that uim always trusts environment\n\t    variables.\tBut this is not correct behavior, sometimes environment\n\t    variables shouldn't be trusted. This bug causes privilege escalation\n\t    when libuim is linked against setuid/setgid application. Since GTK+\n\t    prohibits setuid/setgid applications, the bug appears only in\n\t    'immodule for Qt' enabled Qt. (Normal Qt is also safe.)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/13981"
+		],
+		"cvename": [
+			"CVE-2005-0503"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.freedesktop.org/pipermail/uim/2005-February/000996.html"
+			}
+		],
+		"bid": [
+			"12604"
+		]
+	},
+	"dates": {
+		"discovery": "2005-02-21",
+		"entry": "2005-03-01"
+	}
 }

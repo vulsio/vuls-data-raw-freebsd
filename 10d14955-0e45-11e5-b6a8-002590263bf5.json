@@ -1,33 +1,33 @@
 {
-  "vid": "10d14955-0e45-11e5-b6a8-002590263bf5",
-  "topic": "strongswan -- Information Leak Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "strongswan"
-      ],
-      "range": [
-        {
-          "lt": "5.3.2",
-          "ge": "4.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>strongSwan Project reports:</p>\n\t<blockquote cite=\"http://www.strongswan.org/blog/2015/06/08/strongswan-5.3.2-released.html\">\n\t  <p>An information leak vulnerability was fixed that, in certain IKEv2\n\t    setups, allowed rogue servers with a valid certificate accepted by\n\t    the client to trick it into disclosing user credentials (even plain\n\t    passwords if the client accepts EAP-GTC). This was caused because\n\t    constraints against the server's authentication were enforced too\n\t    late. All versions since 4.3.0 are affected.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.strongswan.org/blog/2015/06/08/strongswan-5.3.2-released.html"
-    ],
-    "cvename": [
-      "CVE-2015-4171"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-06-08",
-    "entry": "2015-06-09"
-  }
+	"vid": "10d14955-0e45-11e5-b6a8-002590263bf5",
+	"topic": "strongswan -- Information Leak Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"strongswan"
+			],
+			"range": [
+				{
+					"lt": "5.3.2",
+					"ge": "4.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>strongSwan Project reports:</p>\n\t<blockquote cite=\"http://www.strongswan.org/blog/2015/06/08/strongswan-5.3.2-released.html\">\n\t  <p>An information leak vulnerability was fixed that, in certain IKEv2\n\t    setups, allowed rogue servers with a valid certificate accepted by\n\t    the client to trick it into disclosing user credentials (even plain\n\t    passwords if the client accepts EAP-GTC). This was caused because\n\t    constraints against the server's authentication were enforced too\n\t    late. All versions since 4.3.0 are affected.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.strongswan.org/blog/2015/06/08/strongswan-5.3.2-released.html"
+		],
+		"cvename": [
+			"CVE-2015-4171"
+		]
+	},
+	"dates": {
+		"discovery": "2015-06-08",
+		"entry": "2015-06-09"
+	}
 }

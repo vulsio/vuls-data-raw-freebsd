@@ -1,47 +1,47 @@
 {
-  "vid": "f49ba347-2190-11dd-907c-001c2514716c",
-  "topic": "django -- XSS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py23-django",
-        "py24-django",
-        "py25-django"
-      ],
-      "range": [
-        {
-          "lt": "0.96.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "py23-django-devel",
-        "py24-django-devel",
-        "py25-django-devel"
-      ],
-      "range": [
-        {
-          "lt": "20080511"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Django project reports:</p>\n\t<blockquote cite=\"http://www.djangoproject.com/weblog/2008/may/14/security/\">\n\t  <p>The Django administration application will, when accessed by\n\t    a user who is not sufficiently authenticated, display a login\n\t    form and ask the user to provide the necessary credentials\n\t    before displaying the requested page. This form will be submitted\n\t    to the URL the user attempted to access, by supplying the current\n\t    request path as the value of the form's \"action\" attribute.</p>\n\t  <p>The value of the request path was not being escaped, creating an\n\t    opportunity for a cross-site scripting (XSS) attack by leading a\n\t    user to a URL which contained URL-encoded HTML and/or JavaScript\n\t    in the request path.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.djangoproject.com/weblog/2008/may/14/security/"
-    ],
-    "cvename": [
-      "CVE-2008-2302"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-05-10",
-    "entry": "2008-05-14",
-    "modified": "2010-05-12"
-  }
+	"vid": "f49ba347-2190-11dd-907c-001c2514716c",
+	"topic": "django -- XSS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py23-django",
+				"py24-django",
+				"py25-django"
+			],
+			"range": [
+				{
+					"lt": "0.96.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"py23-django-devel",
+				"py24-django-devel",
+				"py25-django-devel"
+			],
+			"range": [
+				{
+					"lt": "20080511"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django project reports:</p>\n\t<blockquote cite=\"http://www.djangoproject.com/weblog/2008/may/14/security/\">\n\t  <p>The Django administration application will, when accessed by\n\t    a user who is not sufficiently authenticated, display a login\n\t    form and ask the user to provide the necessary credentials\n\t    before displaying the requested page. This form will be submitted\n\t    to the URL the user attempted to access, by supplying the current\n\t    request path as the value of the form's \"action\" attribute.</p>\n\t  <p>The value of the request path was not being escaped, creating an\n\t    opportunity for a cross-site scripting (XSS) attack by leading a\n\t    user to a URL which contained URL-encoded HTML and/or JavaScript\n\t    in the request path.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.djangoproject.com/weblog/2008/may/14/security/"
+		],
+		"cvename": [
+			"CVE-2008-2302"
+		]
+	},
+	"dates": {
+		"discovery": "2008-05-10",
+		"entry": "2008-05-14",
+		"modified": "2010-05-12"
+	}
 }

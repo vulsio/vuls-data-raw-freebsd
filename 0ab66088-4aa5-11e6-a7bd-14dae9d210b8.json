@@ -1,55 +1,55 @@
 {
-  "vid": "0ab66088-4aa5-11e6-a7bd-14dae9d210b8",
-  "topic": "tiff -- buffer overflow",
-  "affects": [
-    {
-      "name": [
-        "tiff"
-      ],
-      "range": [
-        {
-          "lt": "4.0.6_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-c6-tiff"
-      ],
-      "range": [
-        {
-          "lt": "3.9.4_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-f10-tiff"
-      ],
-      "range": [
-        {
-          "ge": "*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Mathias Svensson reports:</p>\n\t<blockquote cite=\"https://github.com/vadz/libtiff/commit/391e77fcd217e78b2c51342ac3ddb7100ecacdd2\">\n\t  <p>potential buffer write overrun in PixarLogDecode() on\n\t    corrupted/unexpected images</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/vadz/libtiff/commit/391e77fcd217e78b2c51342ac3ddb7100ecacdd2"
-    ],
-    "cvename": [
-      "CVE-2016-5314",
-      "CVE-2016-5320",
-      "CVE-2016-5875"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-06-28",
-    "entry": "2016-07-15",
-    "modified": "2016-09-06"
-  }
+	"vid": "0ab66088-4aa5-11e6-a7bd-14dae9d210b8",
+	"topic": "tiff -- buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"tiff"
+			],
+			"range": [
+				{
+					"lt": "4.0.6_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c6-tiff"
+			],
+			"range": [
+				{
+					"lt": "3.9.4_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-f10-tiff"
+			],
+			"range": [
+				{
+					"ge": "*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mathias Svensson reports:</p>\n\t<blockquote cite=\"https://github.com/vadz/libtiff/commit/391e77fcd217e78b2c51342ac3ddb7100ecacdd2\">\n\t  <p>potential buffer write overrun in PixarLogDecode() on\n\t    corrupted/unexpected images</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/vadz/libtiff/commit/391e77fcd217e78b2c51342ac3ddb7100ecacdd2"
+		],
+		"cvename": [
+			"CVE-2016-5314",
+			"CVE-2016-5320",
+			"CVE-2016-5875"
+		]
+	},
+	"dates": {
+		"discovery": "2016-06-28",
+		"entry": "2016-07-15",
+		"modified": "2016-09-06"
+	}
 }

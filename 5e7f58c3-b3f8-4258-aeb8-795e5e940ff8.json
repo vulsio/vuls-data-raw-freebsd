@@ -1,41 +1,41 @@
 {
-  "vid": "5e7f58c3-b3f8-4258-aeb8-795e5e940ff8",
-  "topic": "mplayer heap overflow in http requests",
-  "affects": [
-    {
-      "name": [
-        "mplayer",
-        "mplayer-gtk",
-        "mplayer-esound",
-        "mplayer-gtk-esound"
-      ],
-      "range": [
-        {
-          "lt": "0.92.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A remotely exploitable heap buffer overflow vulnerability was\n\t  found in MPlayer's URL decoding code.  If an attacker can\n\t  cause MPlayer to visit a specially crafted URL, arbitrary code\n\t  execution with the privileges of the user running MPlayer may\n\t  occur.  A `visit' might be caused by social engineering, or a\n\t  malicious web server could use HTTP redirects which MPlayer\n\t  would then process.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.mplayerhq.hu/homepage/design6/news.html"
-    ],
-    "freebsd_pr": [
-      "ports/64974"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=bugtraq&m=108066964709058"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-03-30",
-    "entry": "2004-03-31",
-    "modified": "2004-06-27"
-  }
+	"vid": "5e7f58c3-b3f8-4258-aeb8-795e5e940ff8",
+	"topic": "mplayer heap overflow in http requests",
+	"affects": [
+		{
+			"name": [
+				"mplayer",
+				"mplayer-gtk",
+				"mplayer-esound",
+				"mplayer-gtk-esound"
+			],
+			"range": [
+				{
+					"lt": "0.92.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A remotely exploitable heap buffer overflow vulnerability was\n\t  found in MPlayer's URL decoding code.  If an attacker can\n\t  cause MPlayer to visit a specially crafted URL, arbitrary code\n\t  execution with the privileges of the user running MPlayer may\n\t  occur.  A `visit' might be caused by social engineering, or a\n\t  malicious web server could use HTTP redirects which MPlayer\n\t  would then process.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.mplayerhq.hu/homepage/design6/news.html"
+		],
+		"freebsd_pr": [
+			"ports/64974"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=bugtraq&m=108066964709058"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-03-30",
+		"entry": "2004-03-31",
+		"modified": "2004-06-27"
+	}
 }

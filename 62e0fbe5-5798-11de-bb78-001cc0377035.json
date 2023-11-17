@@ -1,40 +1,40 @@
 {
-  "vid": "62e0fbe5-5798-11de-bb78-001cc0377035",
-  "topic": "ruby -- BigDecimal denial of service vulnerability",
-  "affects": [
-    {
-      "name": [
-        "ruby",
-        "ruby+pthreads",
-        "ruby+pthreads+oniguruma",
-        "ruby+oniguruma"
-      ],
-      "range": [
-        {
-          "lt": "1.8.7.160_1,1",
-          "ge": "1.8.*,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The official ruby site reports:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2009/06/09/dos-vulnerability-in-bigdecimal/\">\n\t  <p>A denial of service (DoS) vulnerability was found on the\n\t    BigDecimal standard library of Ruby. Conversion from BigDecimal\n\t    objects into Float numbers had a problem which enables attackers\n\t    to effectively cause segmentation faults.</p>\n\t  <p>An attacker can cause a denial of service by causing BigDecimal\n\t    to parse an insanely large number, such as:</p>\n\t  <p><code>BigDecimal(\"9E69999999\").to_s(\"F\")</code></p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.ruby-lang.org/en/news/2009/06/09/dos-vulnerability-in-bigdecimal/"
-    ],
-    "cvename": [
-      "CVE-2009-1904"
-    ],
-    "bid": [
-      "35278"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-06-09",
-    "entry": "2009-06-13",
-    "modified": "2010-05-02"
-  }
+	"vid": "62e0fbe5-5798-11de-bb78-001cc0377035",
+	"topic": "ruby -- BigDecimal denial of service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"ruby",
+				"ruby+pthreads",
+				"ruby+pthreads+oniguruma",
+				"ruby+oniguruma"
+			],
+			"range": [
+				{
+					"lt": "1.8.7.160_1,1",
+					"ge": "1.8.*,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The official ruby site reports:</p>\n\t<blockquote cite=\"http://www.ruby-lang.org/en/news/2009/06/09/dos-vulnerability-in-bigdecimal/\">\n\t  <p>A denial of service (DoS) vulnerability was found on the\n\t    BigDecimal standard library of Ruby. Conversion from BigDecimal\n\t    objects into Float numbers had a problem which enables attackers\n\t    to effectively cause segmentation faults.</p>\n\t  <p>An attacker can cause a denial of service by causing BigDecimal\n\t    to parse an insanely large number, such as:</p>\n\t  <p><code>BigDecimal(\"9E69999999\").to_s(\"F\")</code></p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.ruby-lang.org/en/news/2009/06/09/dos-vulnerability-in-bigdecimal/"
+		],
+		"cvename": [
+			"CVE-2009-1904"
+		],
+		"bid": [
+			"35278"
+		]
+	},
+	"dates": {
+		"discovery": "2009-06-09",
+		"entry": "2009-06-13",
+		"modified": "2010-05-02"
+	}
 }

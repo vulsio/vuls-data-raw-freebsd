@@ -1,73 +1,73 @@
 {
-  "vid": "de2bc01f-dc44-11e1-9f4d-002354ed89bc",
-  "topic": "Apache -- Insecure LD_LIBRARY_PATH handling",
-  "affects": [
-    {
-      "name": [
-        "apache"
-      ],
-      "range": [
-        {
-          "le": "2.2.22_5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache-event"
-      ],
-      "range": [
-        {
-          "le": "2.2.22_5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache-itk"
-      ],
-      "range": [
-        {
-          "le": "2.2.22_5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache-peruser"
-      ],
-      "range": [
-        {
-          "le": "2.2.22_5"
-        }
-      ]
-    },
-    {
-      "name": [
-        "apache-worker"
-      ],
-      "range": [
-        {
-          "le": "2.2.22_5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Apache reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <p>Insecure handling of LD_LIBRARY_PATH was found that could lead to\n\t    the current working directory to be searched for DSOs. This could\n\t    allow a local user to execute code as root if an administrator runs\n\t    apachectl from an untrusted directory.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://httpd.apache.org/security/vulnerabilities_24.html",
-      "http://www.apache.org/dist/httpd/CHANGES_2.4.2"
-    ],
-    "cvename": [
-      "CVE-2012-0883"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-03-02",
-    "entry": "2012-08-01"
-  }
+	"vid": "de2bc01f-dc44-11e1-9f4d-002354ed89bc",
+	"topic": "Apache -- Insecure LD_LIBRARY_PATH handling",
+	"affects": [
+		{
+			"name": [
+				"apache"
+			],
+			"range": [
+				{
+					"le": "2.2.22_5"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache-event"
+			],
+			"range": [
+				{
+					"le": "2.2.22_5"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache-itk"
+			],
+			"range": [
+				{
+					"le": "2.2.22_5"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache-peruser"
+			],
+			"range": [
+				{
+					"le": "2.2.22_5"
+				}
+			]
+		},
+		{
+			"name": [
+				"apache-worker"
+			],
+			"range": [
+				{
+					"le": "2.2.22_5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Apache reports:</p>\n\t<blockquote cite=\"http://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <p>Insecure handling of LD_LIBRARY_PATH was found that could lead to\n\t    the current working directory to be searched for DSOs. This could\n\t    allow a local user to execute code as root if an administrator runs\n\t    apachectl from an untrusted directory.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://httpd.apache.org/security/vulnerabilities_24.html",
+			"http://www.apache.org/dist/httpd/CHANGES_2.4.2"
+		],
+		"cvename": [
+			"CVE-2012-0883"
+		]
+	},
+	"dates": {
+		"discovery": "2012-03-02",
+		"entry": "2012-08-01"
+	}
 }

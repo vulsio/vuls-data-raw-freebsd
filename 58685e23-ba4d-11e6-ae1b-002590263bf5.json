@@ -1,35 +1,35 @@
 {
-  "vid": "58685e23-ba4d-11e6-ae1b-002590263bf5",
-  "topic": "xen-tools -- qemu incautious about shared ring processing",
-  "affects": [
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-197.html\">\n\t  <p>The compiler can emit optimizations in qemu which can lead to\n\t    double fetch vulnerabilities. Specifically data on the rings shared\n\t    between qemu and the hypervisor (which the guest under control can\n\t    obtain mappings of) can be fetched twice (during which time the\n\t    guest can alter the contents) possibly leading to arbitrary code\n\t    execution in qemu.</p>\n\t  <p>Malicious administrators can exploit this vulnerability to take\n\t    over the qemu process, elevating its privilege to that of the qemu\n\t    process.</p>\n\t  <p>In a system not using a device model stub domain (or other\n\t    techniques for deprivileging qemu), malicious guest administrators\n\t    can thus elevate their privilege to that of the host.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://xenbits.xen.org/xsa/advisory-197.html"
-    ],
-    "cvename": [
-      "CVE-2016-9381"
-    ],
-    "freebsd_pr": [
-      "ports/214936"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-11-22",
-    "entry": "2016-12-04"
-  }
+	"vid": "58685e23-ba4d-11e6-ae1b-002590263bf5",
+	"topic": "xen-tools -- qemu incautious about shared ring processing",
+	"affects": [
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.7.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"https://xenbits.xen.org/xsa/advisory-197.html\">\n\t  <p>The compiler can emit optimizations in qemu which can lead to\n\t    double fetch vulnerabilities. Specifically data on the rings shared\n\t    between qemu and the hypervisor (which the guest under control can\n\t    obtain mappings of) can be fetched twice (during which time the\n\t    guest can alter the contents) possibly leading to arbitrary code\n\t    execution in qemu.</p>\n\t  <p>Malicious administrators can exploit this vulnerability to take\n\t    over the qemu process, elevating its privilege to that of the qemu\n\t    process.</p>\n\t  <p>In a system not using a device model stub domain (or other\n\t    techniques for deprivileging qemu), malicious guest administrators\n\t    can thus elevate their privilege to that of the host.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://xenbits.xen.org/xsa/advisory-197.html"
+		],
+		"cvename": [
+			"CVE-2016-9381"
+		],
+		"freebsd_pr": [
+			"ports/214936"
+		]
+	},
+	"dates": {
+		"discovery": "2016-11-22",
+		"entry": "2016-12-04"
+	}
 }

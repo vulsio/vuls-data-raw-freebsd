@@ -1,30 +1,30 @@
 {
-  "vid": "96ed277b-60e0-11db-ad2d-0016179b2dd5",
-  "topic": "Serendipity -- XSS Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "serendipity"
-      ],
-      "range": [
-        {
-          "lt": "1.0.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Serendipity Team reports:</p>\n\t<blockquote cite=\"http://blog.s9y.org/archives/147-Serendipity-1.0.2-and-1.1-beta5-released.html\">\n\t  <p>Serendipity failed to correctly sanitize user input on the\n\t    media manager administration page. The content of GET variables\n\t    were written into JavaScript strings. By using standard string\n\t    evasion techniques it was possible to execute arbitrary\n\t    JavaScript.</p>\n\t  <p>Additionally Serendipity dynamically created a HTML form on\n\t    the media manager administration page that contained all\n\t    variables found in the URL as hidden fields. While the variable\n\t    values were correctly escaped it was possible to break out\n\t    by specifying strange variable names.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.hardened-php.net/advisory_112006.136.htmlSerendipity",
-      "http://secunia.com/advisories/22501/"
-    ]
-  },
-  "dates": {
-    "discovery": "2006-10-19",
-    "entry": "2006-10-21"
-  }
+	"vid": "96ed277b-60e0-11db-ad2d-0016179b2dd5",
+	"topic": "Serendipity -- XSS Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"serendipity"
+			],
+			"range": [
+				{
+					"lt": "1.0.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Serendipity Team reports:</p>\n\t<blockquote cite=\"http://blog.s9y.org/archives/147-Serendipity-1.0.2-and-1.1-beta5-released.html\">\n\t  <p>Serendipity failed to correctly sanitize user input on the\n\t    media manager administration page. The content of GET variables\n\t    were written into JavaScript strings. By using standard string\n\t    evasion techniques it was possible to execute arbitrary\n\t    JavaScript.</p>\n\t  <p>Additionally Serendipity dynamically created a HTML form on\n\t    the media manager administration page that contained all\n\t    variables found in the URL as hidden fields. While the variable\n\t    values were correctly escaped it was possible to break out\n\t    by specifying strange variable names.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.hardened-php.net/advisory_112006.136.htmlSerendipity",
+			"http://secunia.com/advisories/22501/"
+		]
+	},
+	"dates": {
+		"discovery": "2006-10-19",
+		"entry": "2006-10-21"
+	}
 }

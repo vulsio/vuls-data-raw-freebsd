@@ -1,39 +1,39 @@
 {
-  "vid": "06ab7724-0fd7-427e-a5ce-fe436302b10c",
-  "topic": "jenkins -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "jenkins"
-      ],
-      "range": [
-        {
-          "le": "2.120"
-        }
-      ]
-    },
-    {
-      "name": [
-        "jenkins-lts"
-      ],
-      "range": [
-        {
-          "le": "2.107.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jenkins developers report:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2018-05-09/\">\n\t  <p>The agent to master security subsystem ensures that the Jenkins\n\t  master is protected from maliciously configured agents. A path\n\t  traversal vulnerability allowed agents to escape whitelisted\n\t  directories to read and write to files they should not be able to\n\t  access.</p>\n\t  <p>Black Duck Hub Plugin's API endpoint was affected by an XML\n\t  External Entity (XXE) processing vulnerability. This allowed an\n\t  attacker with Overall/Read access to have Jenkins parse a maliciously\n\t  crafted file that uses external entities for extraction of secrets\n\t  from the Jenkins master, server-side request forgery, or\n\t  denial-of-service attacks.</p>\n\t  <p>Several other lower severity issues were reported, see reference\n\t  url for details.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://jenkins.io/security/advisory/2018-05-09/"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-05-09",
-    "entry": "2018-05-10"
-  }
+	"vid": "06ab7724-0fd7-427e-a5ce-fe436302b10c",
+	"topic": "jenkins -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"jenkins"
+			],
+			"range": [
+				{
+					"le": "2.120"
+				}
+			]
+		},
+		{
+			"name": [
+				"jenkins-lts"
+			],
+			"range": [
+				{
+					"le": "2.107.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jenkins developers report:</p>\n\t<blockquote cite=\"https://jenkins.io/security/advisory/2018-05-09/\">\n\t  <p>The agent to master security subsystem ensures that the Jenkins\n\t  master is protected from maliciously configured agents. A path\n\t  traversal vulnerability allowed agents to escape whitelisted\n\t  directories to read and write to files they should not be able to\n\t  access.</p>\n\t  <p>Black Duck Hub Plugin's API endpoint was affected by an XML\n\t  External Entity (XXE) processing vulnerability. This allowed an\n\t  attacker with Overall/Read access to have Jenkins parse a maliciously\n\t  crafted file that uses external entities for extraction of secrets\n\t  from the Jenkins master, server-side request forgery, or\n\t  denial-of-service attacks.</p>\n\t  <p>Several other lower severity issues were reported, see reference\n\t  url for details.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://jenkins.io/security/advisory/2018-05-09/"
+		]
+	},
+	"dates": {
+		"discovery": "2018-05-09",
+		"entry": "2018-05-10"
+	}
 }

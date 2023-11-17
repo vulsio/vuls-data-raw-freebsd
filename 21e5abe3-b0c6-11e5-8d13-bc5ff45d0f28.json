@@ -1,46 +1,46 @@
 {
-  "vid": "21e5abe3-b0c6-11e5-8d13-bc5ff45d0f28",
-  "topic": "qemu -- buffer overflow vulnerability in virtio-serial message exchanges",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.4.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "qemu-sbruno",
-        "qemu-user-static"
-      ],
-      "range": [
-        {
-          "lt": "2.4.50.g20150814"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/08/06/3\">\n\t  <p>Qemu emulator built with the virtio-serial vmchannel support is\n\t    vulnerable to a buffer overflow issue. It could occur while\n\t    exchanging virtio control messages between guest and the host.</p>\n\t  <p>A malicious guest could use this flaw to corrupt few bytes of Qemu\n\t    memory area, potentially crashing the Qemu process.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.openwall.com/lists/oss-security/2015/08/06/5",
-      "http://git.qemu.org/?p=qemu.git;a=commit;h=7882080388be5088e72c425b02223c02e6cb4295",
-      "https://github.com/seanbruno/qemu-bsd-user/commit/7882080388be5088e72c425b02223c02e6cb4295"
-    ],
-    "cvename": [
-      "CVE-2015-5745"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-08-06",
-    "entry": "2016-01-01"
-  }
+	"vid": "21e5abe3-b0c6-11e5-8d13-bc5ff45d0f28",
+	"topic": "qemu -- buffer overflow vulnerability in virtio-serial message exchanges",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"lt": "2.4.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"qemu-sbruno",
+				"qemu-user-static"
+			],
+			"range": [
+				{
+					"lt": "2.4.50.g20150814"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Prasad J Pandit, Red Hat Product Security Team, reports:</p>\n\t<blockquote cite=\"http://www.openwall.com/lists/oss-security/2015/08/06/3\">\n\t  <p>Qemu emulator built with the virtio-serial vmchannel support is\n\t    vulnerable to a buffer overflow issue. It could occur while\n\t    exchanging virtio control messages between guest and the host.</p>\n\t  <p>A malicious guest could use this flaw to corrupt few bytes of Qemu\n\t    memory area, potentially crashing the Qemu process.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.openwall.com/lists/oss-security/2015/08/06/5",
+			"http://git.qemu.org/?p=qemu.git;a=commit;h=7882080388be5088e72c425b02223c02e6cb4295",
+			"https://github.com/seanbruno/qemu-bsd-user/commit/7882080388be5088e72c425b02223c02e6cb4295"
+		],
+		"cvename": [
+			"CVE-2015-5745"
+		]
+	},
+	"dates": {
+		"discovery": "2015-08-06",
+		"entry": "2016-01-01"
+	}
 }

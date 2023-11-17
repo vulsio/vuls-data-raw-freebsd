@@ -1,29 +1,29 @@
 {
-  "vid": "2d4076eb-f679-11e9-a87f-a4badb2f4699",
-  "topic": "varnish -- Information Disclosure Vulnerability",
-  "affects": [
-    {
-      "name": [
-        "varnish6"
-      ],
-      "range": [
-        {
-          "lt": "6.3.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Varnish Software reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00004.html#vsv00004\">\n\t  <p>A bug has been discovered in Varnish Cache where we fail to\n\t    clear a pointer between the handling of one client requests and the next\n\t    on the same connection. This can under specific circumstances lead to\n\t    information being leaked from the connection workspace.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://varnish-cache.org/security/VSV00004.html#vsv00004"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-10-21",
-    "entry": "2019-10-24"
-  }
+	"vid": "2d4076eb-f679-11e9-a87f-a4badb2f4699",
+	"topic": "varnish -- Information Disclosure Vulnerability",
+	"affects": [
+		{
+			"name": [
+				"varnish6"
+			],
+			"range": [
+				{
+					"lt": "6.3.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Varnish Software reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00004.html#vsv00004\">\n\t  <p>A bug has been discovered in Varnish Cache where we fail to\n\t    clear a pointer between the handling of one client requests and the next\n\t    on the same connection. This can under specific circumstances lead to\n\t    information being leaked from the connection workspace.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://varnish-cache.org/security/VSV00004.html#vsv00004"
+		]
+	},
+	"dates": {
+		"discovery": "2019-10-21",
+		"entry": "2019-10-24"
+	}
 }

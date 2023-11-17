@@ -1,43 +1,43 @@
 {
-  "vid": "856a6f84-8b30-11de-8062-00e0815b8da8",
-  "topic": "GnuTLS -- improper SSL certificate verification",
-  "affects": [
-    {
-      "name": [
-        "gnutls"
-      ],
-      "range": [
-        {
-          "lt": "2.8.3"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gnutls-devel"
-      ],
-      "range": [
-        {
-          "lt": "2.9.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>GnuTLS reports:</p>\n\t<blockquote cite=\"http://article.gmane.org/gmane.network.gnutls.general/1733\">\n\t  <p>By using a NUL byte in CN/SAN fields, it was possible to fool\n\t    GnuTLS into 1) not printing the entire CN/SAN field value when\n\t    printing a certificate and 2) cause incorrect positive matches\n\t    when matching a hostname against a certificate.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://article.gmane.org/gmane.network.gnutls.general/1733",
-      "http://secunia.com/advisories/36266"
-    ],
-    "cvename": [
-      "CVE-2009-2730"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-08-11",
-    "entry": "2009-08-17"
-  }
+	"vid": "856a6f84-8b30-11de-8062-00e0815b8da8",
+	"topic": "GnuTLS -- improper SSL certificate verification",
+	"affects": [
+		{
+			"name": [
+				"gnutls"
+			],
+			"range": [
+				{
+					"lt": "2.8.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"gnutls-devel"
+			],
+			"range": [
+				{
+					"lt": "2.9.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GnuTLS reports:</p>\n\t<blockquote cite=\"http://article.gmane.org/gmane.network.gnutls.general/1733\">\n\t  <p>By using a NUL byte in CN/SAN fields, it was possible to fool\n\t    GnuTLS into 1) not printing the entire CN/SAN field value when\n\t    printing a certificate and 2) cause incorrect positive matches\n\t    when matching a hostname against a certificate.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://article.gmane.org/gmane.network.gnutls.general/1733",
+			"http://secunia.com/advisories/36266"
+		],
+		"cvename": [
+			"CVE-2009-2730"
+		]
+	},
+	"dates": {
+		"discovery": "2009-08-11",
+		"entry": "2009-08-17"
+	}
 }

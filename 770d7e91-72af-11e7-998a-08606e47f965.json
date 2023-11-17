@@ -1,32 +1,32 @@
 {
-  "vid": "770d7e91-72af-11e7-998a-08606e47f965",
-  "topic": "proftpd -- user chroot escape vulnerability",
-  "affects": [
-    {
-      "name": [
-        "proftpd"
-      ],
-      "range": [
-        {
-          "lt": "1.3.5e"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-7418\">\n\t  <p>ProFTPD ... controls whether the home directory of a user could\n\t     contain a symbolic link through the AllowChrootSymlinks\n\t     configuration option, but checks only the last path component when\n\t     enforcing AllowChrootSymlinks. Attackers with local access could\n\t     bypass the AllowChrootSymlinks control by replacing a path\n\t     component (other than the last one) with a symbolic link.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bugs.proftpd.org/show_bug.cgi?id=4295"
-    ],
-    "cvename": [
-      "CVE-2017-7418"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-03-06",
-    "entry": "2017-07-27"
-  }
+	"vid": "770d7e91-72af-11e7-998a-08606e47f965",
+	"topic": "proftpd -- user chroot escape vulnerability",
+	"affects": [
+		{
+			"name": [
+				"proftpd"
+			],
+			"range": [
+				{
+					"lt": "1.3.5e"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>NVD reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2017-7418\">\n\t  <p>ProFTPD ... controls whether the home directory of a user could\n\t     contain a symbolic link through the AllowChrootSymlinks\n\t     configuration option, but checks only the last path component when\n\t     enforcing AllowChrootSymlinks. Attackers with local access could\n\t     bypass the AllowChrootSymlinks control by replacing a path\n\t     component (other than the last one) with a symbolic link.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bugs.proftpd.org/show_bug.cgi?id=4295"
+		],
+		"cvename": [
+			"CVE-2017-7418"
+		]
+	},
+	"dates": {
+		"discovery": "2017-03-06",
+		"entry": "2017-07-27"
+	}
 }

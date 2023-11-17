@@ -1,35 +1,35 @@
 {
-  "vid": "e6ccaf8a-6c63-11e7-9b01-2047478f2f70",
-  "topic": "strongswan -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "strongswan"
-      ],
-      "range": [
-        {
-          "ge": "4.4.0",
-          "le": "5.5.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>strongSwan security team reports:</p>\n\t<blockquote cite=\"https://www.strongswan.org/blog/2017/05/30/strongswan-5.5.3-released.html\">\n\t  <ul>\n\t    <li>RSA public keys passed to the gmp plugin aren't validated sufficiently\n\t\t  before attempting signature verification, so that invalid input might\n\t      lead to a floating point exception. [CVE-2017-9022]</li>\n\t    <li>ASN.1 CHOICE types are not correctly handled by the ASN.1 parser when\n\t      parsing X.509 certificates with extensions that use such types. This\n\t      could lead to infinite looping of the thread parsing a specifically crafted certificate.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.strongswan.org/blog/2017/05/30/strongswan-vulnerability-(cve-2017-9022).html",
-      "https://www.strongswan.org/blog/2017/05/30/strongswan-vulnerability-(cve-2017-9023).html"
-    ],
-    "cvename": [
-      "CVE-2017-9022",
-      "CVE-2017-9023"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-05-30",
-    "entry": "2017-07-19"
-  }
+	"vid": "e6ccaf8a-6c63-11e7-9b01-2047478f2f70",
+	"topic": "strongswan -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"strongswan"
+			],
+			"range": [
+				{
+					"ge": "4.4.0",
+					"le": "5.5.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>strongSwan security team reports:</p>\n\t<blockquote cite=\"https://www.strongswan.org/blog/2017/05/30/strongswan-5.5.3-released.html\">\n\t  <ul>\n\t    <li>RSA public keys passed to the gmp plugin aren't validated sufficiently\n\t\t  before attempting signature verification, so that invalid input might\n\t      lead to a floating point exception. [CVE-2017-9022]</li>\n\t    <li>ASN.1 CHOICE types are not correctly handled by the ASN.1 parser when\n\t      parsing X.509 certificates with extensions that use such types. This\n\t      could lead to infinite looping of the thread parsing a specifically crafted certificate.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.strongswan.org/blog/2017/05/30/strongswan-vulnerability-(cve-2017-9022).html",
+			"https://www.strongswan.org/blog/2017/05/30/strongswan-vulnerability-(cve-2017-9023).html"
+		],
+		"cvename": [
+			"CVE-2017-9022",
+			"CVE-2017-9023"
+		]
+	},
+	"dates": {
+		"discovery": "2017-05-30",
+		"entry": "2017-07-19"
+	}
 }

@@ -1,45 +1,45 @@
 {
-  "vid": "c174118e-1b11-11ec-9d9d-0022489ad614",
-  "topic": "Node.js -- July 2021 Security Releases",
-  "affects": [
-    {
-      "name": [
-        "node14"
-      ],
-      "range": [
-        {
-          "lt": "14.17.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "16.4.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/july-2021-security-releases/\">\n\t  <h1>libuv upgrade - Out of bounds read (Medium) (CVE-2021-22918)</h1>\n\t  <p>Node.js is vulnerable to out-of-bounds read in libuv's uv__idna_toascii() function which is used to convert strings to ASCII. This is called by Node's dns module's lookup() function and can lead to information disclosures or crashes.</p>\n\t  <h1>Windows installer - Node Installer Local Privilege Escalation (Medium) (CVE-2021-22921)</h1>\n\t  <p>Node.js is vulnerable to local privilege escalation attacks under certain conditions on Windows platforms. More specifically, improper configuration of permissions in the installation directory allows an attacker to perform two different escalation attacks: PATH and DLL hijacking.</p>\n\t  <h1>npm upgrade - ssri Regular Expression Denial of Service (ReDoS) (High) (CVE-2021-27290)</h1>\n\t  <p>This is a vulnerability in the ssri npm module which may be vulnerable to denial of service attacks.</p>\n\t  <h1>npm upgrade - hosted-git-info Regular Expression Denial of Service (ReDoS) (Medium) (CVE-2021-23362)</h1>\n\t  <p>This is a vulnerability in the hosted-git-info npm module which may be vulnerable to denial of service attacks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/july-2021-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2021-22918",
-      "CVE-2021-22921",
-      "CVE-2021-27290",
-      "CVE-2021-23362"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-07-01",
-    "entry": "2021-09-21"
-  }
+	"vid": "c174118e-1b11-11ec-9d9d-0022489ad614",
+	"topic": "Node.js -- July 2021 Security Releases",
+	"affects": [
+		{
+			"name": [
+				"node14"
+			],
+			"range": [
+				{
+					"lt": "14.17.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "16.4.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/july-2021-security-releases/\">\n\t  <h1>libuv upgrade - Out of bounds read (Medium) (CVE-2021-22918)</h1>\n\t  <p>Node.js is vulnerable to out-of-bounds read in libuv's uv__idna_toascii() function which is used to convert strings to ASCII. This is called by Node's dns module's lookup() function and can lead to information disclosures or crashes.</p>\n\t  <h1>Windows installer - Node Installer Local Privilege Escalation (Medium) (CVE-2021-22921)</h1>\n\t  <p>Node.js is vulnerable to local privilege escalation attacks under certain conditions on Windows platforms. More specifically, improper configuration of permissions in the installation directory allows an attacker to perform two different escalation attacks: PATH and DLL hijacking.</p>\n\t  <h1>npm upgrade - ssri Regular Expression Denial of Service (ReDoS) (High) (CVE-2021-27290)</h1>\n\t  <p>This is a vulnerability in the ssri npm module which may be vulnerable to denial of service attacks.</p>\n\t  <h1>npm upgrade - hosted-git-info Regular Expression Denial of Service (ReDoS) (Medium) (CVE-2021-23362)</h1>\n\t  <p>This is a vulnerability in the hosted-git-info npm module which may be vulnerable to denial of service attacks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/july-2021-security-releases/"
+		],
+		"cvename": [
+			"CVE-2021-22918",
+			"CVE-2021-22921",
+			"CVE-2021-27290",
+			"CVE-2021-23362"
+		]
+	},
+	"dates": {
+		"discovery": "2021-07-01",
+		"entry": "2021-09-21"
+	}
 }

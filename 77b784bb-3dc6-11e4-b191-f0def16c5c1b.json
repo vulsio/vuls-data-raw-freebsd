@@ -1,44 +1,44 @@
 {
-  "vid": "77b784bb-3dc6-11e4-b191-f0def16c5c1b",
-  "topic": "nginx -- inject commands into SSL session vulnerability",
-  "affects": [
-    {
-      "name": [
-        "nginx"
-      ],
-      "range": [
-        {
-          "lt": "1.6.2,2",
-          "ge": "0.6.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "nginx-devel"
-      ],
-      "range": [
-        {
-          "lt": "1.7.5",
-          "ge": "0.5.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The nginx project reports:</p>\n\t<blockquote cite=\"http://mailman.nginx.org/pipermail/nginx-announce/2014/000147.html\">\n\t  <p>Security: it was possible to reuse SSL sessions in unrelated contexts\n\t     if a shared SSL session cache or the same TLS session ticket key was\n\t     used for multiple \"server\" blocks (CVE-2014-3616).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://mailman.nginx.org/pipermail/nginx-announce/2014/000147.html"
-    ],
-    "cvename": [
-      "CVE-2014-3616"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-09-16",
-    "entry": "2014-09-16"
-  }
+	"vid": "77b784bb-3dc6-11e4-b191-f0def16c5c1b",
+	"topic": "nginx -- inject commands into SSL session vulnerability",
+	"affects": [
+		{
+			"name": [
+				"nginx"
+			],
+			"range": [
+				{
+					"lt": "1.6.2,2",
+					"ge": "0.6.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"nginx-devel"
+			],
+			"range": [
+				{
+					"lt": "1.7.5",
+					"ge": "0.5.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The nginx project reports:</p>\n\t<blockquote cite=\"http://mailman.nginx.org/pipermail/nginx-announce/2014/000147.html\">\n\t  <p>Security: it was possible to reuse SSL sessions in unrelated contexts\n\t     if a shared SSL session cache or the same TLS session ticket key was\n\t     used for multiple \"server\" blocks (CVE-2014-3616).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://mailman.nginx.org/pipermail/nginx-announce/2014/000147.html"
+		],
+		"cvename": [
+			"CVE-2014-3616"
+		]
+	},
+	"dates": {
+		"discovery": "2014-09-16",
+		"entry": "2014-09-16"
+	}
 }

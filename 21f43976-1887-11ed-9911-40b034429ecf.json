@@ -1,32 +1,32 @@
 {
-  "vid": "21f43976-1887-11ed-9911-40b034429ecf",
-  "topic": "rsync -- client-side arbitrary file write vulnerability",
-  "affects": [
-    {
-      "name": [
-        "rsync"
-      ],
-      "range": [
-        {
-          "lt": "3.2.5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Openwall oss-security reports:</p>\n\t<blockquote cite=\"https://www.openwall.com/lists/oss-security/2022/08/02/1\">\n\t  <p>We have discovered a critical arbitrary file write vulnerability\n\t    in the rsync utility that allows malicious remote servers to write\n\t    arbitrary files inside the directories of connecting peers.\n\t    The server chooses which files/directories are sent to the client.\n\t    Due to the insufficient controls inside the do_server_recv function\n\t    a malicious rysnc server (or Man-in-The-Middle attacker) can\n\t    overwrite arbitrary files in the rsync client target directory and\n\t    subdirectories.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.openwall.com/lists/oss-security/2022/08/02/1"
-    ],
-    "cvename": [
-      "CVE-2022-29154"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-08-02",
-    "entry": "2022-08-10"
-  }
+	"vid": "21f43976-1887-11ed-9911-40b034429ecf",
+	"topic": "rsync -- client-side arbitrary file write vulnerability",
+	"affects": [
+		{
+			"name": [
+				"rsync"
+			],
+			"range": [
+				{
+					"lt": "3.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Openwall oss-security reports:</p>\n\t<blockquote cite=\"https://www.openwall.com/lists/oss-security/2022/08/02/1\">\n\t  <p>We have discovered a critical arbitrary file write vulnerability\n\t    in the rsync utility that allows malicious remote servers to write\n\t    arbitrary files inside the directories of connecting peers.\n\t    The server chooses which files/directories are sent to the client.\n\t    Due to the insufficient controls inside the do_server_recv function\n\t    a malicious rysnc server (or Man-in-The-Middle attacker) can\n\t    overwrite arbitrary files in the rsync client target directory and\n\t    subdirectories.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.openwall.com/lists/oss-security/2022/08/02/1"
+		],
+		"cvename": [
+			"CVE-2022-29154"
+		]
+	},
+	"dates": {
+		"discovery": "2022-08-02",
+		"entry": "2022-08-10"
+	}
 }

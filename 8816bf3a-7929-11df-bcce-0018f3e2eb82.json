@@ -1,44 +1,44 @@
 {
-  "vid": "8816bf3a-7929-11df-bcce-0018f3e2eb82",
-  "topic": "tiff -- Multiple integer overflows",
-  "affects": [
-    {
-      "name": [
-        "tiff"
-      ],
-      "range": [
-        {
-          "lt": "3.9.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-tiff",
-        "linux-f10-tiff"
-      ],
-      "range": [
-        {
-          "lt": "3.9.4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Tielei Wang:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2009-012.html\">\n\t  <p>Multiple integer overflows in inter-color spaces conversion\n\t    tools in libtiff 3.8 through 3.8.2, 3.9, and 4.0 allow\n\t    context-dependent attackers to execute arbitrary code via a\n\t    TIFF image with large (1) width and (2) height values, which\n\t    triggers a heap-based buffer overflow in the (a) cvt_whole_image\n\t    function in tiff2rgba and (b) tiffcvt function in rgb2ycbcr.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.remotesensing.org/libtiff/v3.9.4.html",
-      "http://www.ocert.org/advisories/ocert-2009-012.html"
-    ],
-    "cvename": [
-      "CVE-2009-2347"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-05-22",
-    "entry": "2010-06-16"
-  }
+	"vid": "8816bf3a-7929-11df-bcce-0018f3e2eb82",
+	"topic": "tiff -- Multiple integer overflows",
+	"affects": [
+		{
+			"name": [
+				"tiff"
+			],
+			"range": [
+				{
+					"lt": "3.9.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-tiff",
+				"linux-f10-tiff"
+			],
+			"range": [
+				{
+					"lt": "3.9.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tielei Wang:</p>\n\t<blockquote cite=\"http://www.ocert.org/advisories/ocert-2009-012.html\">\n\t  <p>Multiple integer overflows in inter-color spaces conversion\n\t    tools in libtiff 3.8 through 3.8.2, 3.9, and 4.0 allow\n\t    context-dependent attackers to execute arbitrary code via a\n\t    TIFF image with large (1) width and (2) height values, which\n\t    triggers a heap-based buffer overflow in the (a) cvt_whole_image\n\t    function in tiff2rgba and (b) tiffcvt function in rgb2ycbcr.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.remotesensing.org/libtiff/v3.9.4.html",
+			"http://www.ocert.org/advisories/ocert-2009-012.html"
+		],
+		"cvename": [
+			"CVE-2009-2347"
+		]
+	},
+	"dates": {
+		"discovery": "2009-05-22",
+		"entry": "2010-06-16"
+	}
 }

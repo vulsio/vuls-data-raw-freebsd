@@ -1,67 +1,67 @@
 {
-  "vid": "24eee285-09c7-11da-bc08-0001020eed82",
-  "topic": "xpdf -- disk fill DoS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "xpdf"
-      ],
-      "range": [
-        {
-          "lt": "3.00_7"
-        }
-      ]
-    },
-    {
-      "name": [
-        "kdegraphics"
-      ],
-      "range": [
-        {
-          "lt": "3.4.2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gpdf"
-      ],
-      "range": [
-        {
-          "lt": "2.10.0_2"
-        }
-      ]
-    },
-    {
-      "name": [
-        "cups-base"
-      ],
-      "range": [
-        {
-          "lt": "1.1.23.0_5"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>xpdf is vulnerable to a denial of service vulnerability\n\t  which can cause xpdf to create an infinitely large file,\n\t  thereby filling up the /tmp partition, when opening a\n\t  specially crafted PDF file.</p>\n\t<p>Note that several applications contains an embedded version\n\t  of xpdf, therefor making them the vulnerable to the same\n\t  DoS.\tIn CUPS this vulnerability would cause the pdftops\n\t  filter to crash.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://rhn.redhat.com/errata/RHSA-2005-670.html",
-      "http://www.kde.org/info/security/advisory-20050809-1.txt"
-    ],
-    "cvename": [
-      "CVE-2005-2097"
-    ],
-    "bid": [
-      "14529"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-08-09",
-    "entry": "2005-08-12",
-    "modified": "2005-09-07"
-  }
+	"vid": "24eee285-09c7-11da-bc08-0001020eed82",
+	"topic": "xpdf -- disk fill DoS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"xpdf"
+			],
+			"range": [
+				{
+					"lt": "3.00_7"
+				}
+			]
+		},
+		{
+			"name": [
+				"kdegraphics"
+			],
+			"range": [
+				{
+					"lt": "3.4.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"gpdf"
+			],
+			"range": [
+				{
+					"lt": "2.10.0_2"
+				}
+			]
+		},
+		{
+			"name": [
+				"cups-base"
+			],
+			"range": [
+				{
+					"lt": "1.1.23.0_5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>xpdf is vulnerable to a denial of service vulnerability\n\t  which can cause xpdf to create an infinitely large file,\n\t  thereby filling up the /tmp partition, when opening a\n\t  specially crafted PDF file.</p>\n\t<p>Note that several applications contains an embedded version\n\t  of xpdf, therefor making them the vulnerable to the same\n\t  DoS.\tIn CUPS this vulnerability would cause the pdftops\n\t  filter to crash.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://rhn.redhat.com/errata/RHSA-2005-670.html",
+			"http://www.kde.org/info/security/advisory-20050809-1.txt"
+		],
+		"cvename": [
+			"CVE-2005-2097"
+		],
+		"bid": [
+			"14529"
+		]
+	},
+	"dates": {
+		"discovery": "2005-08-09",
+		"entry": "2005-08-12",
+		"modified": "2005-09-07"
+	}
 }

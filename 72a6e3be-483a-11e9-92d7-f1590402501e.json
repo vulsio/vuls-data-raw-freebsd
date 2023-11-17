@@ -1,41 +1,41 @@
 {
-  "vid": "72a6e3be-483a-11e9-92d7-f1590402501e",
-  "topic": "Jupyter notebook -- cross-site inclusion (XSSI) vulnerability",
-  "affects": [
-    {
-      "name": [
-        "py27-notebook",
-        "py35-notebook",
-        "py36-notebook",
-        "py37-notebook"
-      ],
-      "range": [
-        {
-          "lt": "5.7.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Jupyter notebook Changelog:</p>\n\t<blockquote cite=\"https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst\">\n\t  <p>5.7.6 contains a security fix for a cross-site inclusion (XSSI)\n\t    vulnerability, where files at a known URL could be included in a page\n\t    from an unauthorized website if the user is logged into a Jupyter\n\t    server. The fix involves setting the X-Content-Type-Options: nosniff\n\t    header, and applying CSRF checks previously on all non-GET API requests\n\t    to GET requests to API endpoints and the /files/ endpoint.</p>\n\t  <p>The attacking page is able to access some contents of files when using\n\t    Internet Explorer through script errors, but this has not been\n\t    demonstrated with other browsers. A CVE has been requested for this\n\t    vulnerability.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-auth-prompt-spoofing.html",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-fd-set-overflow.html",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-rng-reuse.html",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-rsa-kex-integer-overflow.html",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-terminal-dos-combining-chars.html",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-terminal-dos-combining-chars-double-width-gtk.html",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-terminal-dos-one-column-cjk.html",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/pscp-unsanitised-server-output.html",
-      "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/side-channels.html"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-03-10",
-    "entry": "2019-03-16"
-  }
+	"vid": "72a6e3be-483a-11e9-92d7-f1590402501e",
+	"topic": "Jupyter notebook -- cross-site inclusion (XSSI) vulnerability",
+	"affects": [
+		{
+			"name": [
+				"py27-notebook",
+				"py35-notebook",
+				"py36-notebook",
+				"py37-notebook"
+			],
+			"range": [
+				{
+					"lt": "5.7.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jupyter notebook Changelog:</p>\n\t<blockquote cite=\"https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst\">\n\t  <p>5.7.6 contains a security fix for a cross-site inclusion (XSSI)\n\t    vulnerability, where files at a known URL could be included in a page\n\t    from an unauthorized website if the user is logged into a Jupyter\n\t    server. The fix involves setting the X-Content-Type-Options: nosniff\n\t    header, and applying CSRF checks previously on all non-GET API requests\n\t    to GET requests to API endpoints and the /files/ endpoint.</p>\n\t  <p>The attacking page is able to access some contents of files when using\n\t    Internet Explorer through script errors, but this has not been\n\t    demonstrated with other browsers. A CVE has been requested for this\n\t    vulnerability.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-auth-prompt-spoofing.html",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-fd-set-overflow.html",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-rng-reuse.html",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-rsa-kex-integer-overflow.html",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-terminal-dos-combining-chars.html",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-terminal-dos-combining-chars-double-width-gtk.html",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-terminal-dos-one-column-cjk.html",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/pscp-unsanitised-server-output.html",
+			"https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/side-channels.html"
+		]
+	},
+	"dates": {
+		"discovery": "2019-03-10",
+		"entry": "2019-03-16"
+	}
 }

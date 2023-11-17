@@ -1,46 +1,46 @@
 {
-  "vid": "be927298-6f97-11de-b444-001372fd0af2",
-  "topic": "drupal -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "drupal5"
-      ],
-      "range": [
-        {
-          "lt": "5.19"
-        }
-      ]
-    },
-    {
-      "name": [
-        "drupal6"
-      ],
-      "range": [
-        {
-          "lt": "6.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Drupal Security Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/507572\">\n\t  <p>Cross-site scripting</p>\n\t  <p>The Forum module does not correctly handle certain arguments\n\t    obtained from the URL.  By enticing a suitably privileged user\n\t    to visit a specially crafted URL, a malicious user is able to\n\t    insert arbitrary HTML and script code into forum pages.  Such a\n\t    cross-site scripting attack may lead to the malicious user\n\t    gaining administrative access.  Wikipedia has more information\n\t    about cross-site scripting (XSS).</p>\n\t  <p>User signatures have no separate input format, they use the\n\t    format of the comment with which they are displayed.  A user\n\t    will no longer be able to edit a comment when an administrator\n\t    changes the comment's input format to a format that is not\n\t    accessible to the user.  However they will still be able to\n\t    modify their signature, which will then be processed by the new\n\t    input format.</p>\n\t  <p>If the new format is very permissive, via their signature, the\n\t    user may be able to insert arbitrary HTML and script code into\n\t    pages or, when the PHP filter is enabled for the new format,\n\t    execute PHP code.  This issue affects Drupal 6.x only.</p>\n\t  <p>When an anonymous user fails to login due to mistyping his\n\t    username or password, and the page he is on contains a sortable\n\t    table, the (incorrect) username and password are included in\n\t    links on the table.  If the user visits these links the password\n\t    may then be leaked to external sites via the HTTP referer.</p>\n\t  <p>In addition, if the anonymous user is enticed to visit the site\n\t    via a specially crafted URL while the Drupal page cache is\n\t    enabled, a malicious user might be able to retrieve the\n\t    (incorrect) username and password from the page cache.</p>\n\t</blockquote>\n     "
-  },
-  "references": {
-    "url": [
-      "http://drupal.org/node/507572",
-      "http://secunia.com/advisories/35681"
-    ],
-    "cvename": [
-      "CVE-2009-2372",
-      "CVE-2009-2374",
-      "CVE-2009-2373"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-07-01",
-    "entry": "2009-07-13",
-    "modified": "2010-05-02"
-  }
+	"vid": "be927298-6f97-11de-b444-001372fd0af2",
+	"topic": "drupal -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"drupal5"
+			],
+			"range": [
+				{
+					"lt": "5.19"
+				}
+			]
+		},
+		{
+			"name": [
+				"drupal6"
+			],
+			"range": [
+				{
+					"lt": "6.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Drupal Security Team reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/507572\">\n\t  <p>Cross-site scripting</p>\n\t  <p>The Forum module does not correctly handle certain arguments\n\t    obtained from the URL.  By enticing a suitably privileged user\n\t    to visit a specially crafted URL, a malicious user is able to\n\t    insert arbitrary HTML and script code into forum pages.  Such a\n\t    cross-site scripting attack may lead to the malicious user\n\t    gaining administrative access.  Wikipedia has more information\n\t    about cross-site scripting (XSS).</p>\n\t  <p>User signatures have no separate input format, they use the\n\t    format of the comment with which they are displayed.  A user\n\t    will no longer be able to edit a comment when an administrator\n\t    changes the comment's input format to a format that is not\n\t    accessible to the user.  However they will still be able to\n\t    modify their signature, which will then be processed by the new\n\t    input format.</p>\n\t  <p>If the new format is very permissive, via their signature, the\n\t    user may be able to insert arbitrary HTML and script code into\n\t    pages or, when the PHP filter is enabled for the new format,\n\t    execute PHP code.  This issue affects Drupal 6.x only.</p>\n\t  <p>When an anonymous user fails to login due to mistyping his\n\t    username or password, and the page he is on contains a sortable\n\t    table, the (incorrect) username and password are included in\n\t    links on the table.  If the user visits these links the password\n\t    may then be leaked to external sites via the HTTP referer.</p>\n\t  <p>In addition, if the anonymous user is enticed to visit the site\n\t    via a specially crafted URL while the Drupal page cache is\n\t    enabled, a malicious user might be able to retrieve the\n\t    (incorrect) username and password from the page cache.</p>\n\t</blockquote>\n     "
+	},
+	"references": {
+		"url": [
+			"http://drupal.org/node/507572",
+			"http://secunia.com/advisories/35681"
+		],
+		"cvename": [
+			"CVE-2009-2372",
+			"CVE-2009-2374",
+			"CVE-2009-2373"
+		]
+	},
+	"dates": {
+		"discovery": "2009-07-01",
+		"entry": "2009-07-13",
+		"modified": "2010-05-02"
+	}
 }

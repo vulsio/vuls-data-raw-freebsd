@@ -1,41 +1,41 @@
 {
-  "vid": "c11ee146-c266-11ea-8659-901b0ef719ab",
-  "topic": "FreeBSD -- IPv6 socket option race condition and use after free",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD-kernel"
-      ],
-      "range": [
-        {
-          "lt": "12.1_7",
-          "ge": "12.1"
-        },
-        {
-          "lt": "11.4_1",
-          "ge": "11.4"
-        },
-        {
-          "lt": "11.3_11",
-          "ge": "11.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>The IPV6_2292PKTOPTIONS set handler was missing synchronization,\n\tso racing accesses could modify freed memory.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious user application could trigger memory corruption, leading\n\tto privilege escalation.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2020-7457"
-    ],
-    "freebsd_sa": [
-      "SA-20:20.ipv6"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-07-09",
-    "entry": "2020-07-10"
-  }
+	"vid": "c11ee146-c266-11ea-8659-901b0ef719ab",
+	"topic": "FreeBSD -- IPv6 socket option race condition and use after free",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "12.1_7",
+					"ge": "12.1"
+				},
+				{
+					"lt": "11.4_1",
+					"ge": "11.4"
+				},
+				{
+					"lt": "11.3_11",
+					"ge": "11.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>The IPV6_2292PKTOPTIONS set handler was missing synchronization,\n\tso racing accesses could modify freed memory.</p>\n\t<h1>Impact:</h1>\n\t<p>A malicious user application could trigger memory corruption, leading\n\tto privilege escalation.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2020-7457"
+		],
+		"freebsd_sa": [
+			"SA-20:20.ipv6"
+		]
+	},
+	"dates": {
+		"discovery": "2020-07-09",
+		"entry": "2020-07-10"
+	}
 }

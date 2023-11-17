@@ -1,40 +1,40 @@
 {
-  "vid": "8338a20f-9573-11d8-9366-0020ed76ef5a",
-  "topic": "xchat remotely exploitable buffer overflow (Socks5)",
-  "affects": [
-    {
-      "name": [
-        "xchat2"
-      ],
-      "range": [
-        {
-          "lt": "2.0.8_2",
-          "ge": "1.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A straightforward stack buffer overflow exists in XChat's\n\t  Socks5 proxy support.</p>\n\t<p>The XChat developers report that `tsifra' discovered this\n\t  issue.</p>\n\t<p>NOTE: XChat Socks5 support is disabled by support in the\n\t  FreeBSD Ports Collection.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xchat.org/files/source/2.0/patches/xc208-fixsocks5.diff"
-    ],
-    "cvename": [
-      "CVE-2004-0409"
-    ],
-    "mlist": [
-      {
-        "text": "http://marc.theaimsgroup.com/?l=xchat-announce&m=108114935507357",
-        "msgid": "20040405171305.04f19c44.zed@xchat.org"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2004-04-05",
-    "entry": "2004-04-23",
-    "modified": "2004-05-03"
-  }
+	"vid": "8338a20f-9573-11d8-9366-0020ed76ef5a",
+	"topic": "xchat remotely exploitable buffer overflow (Socks5)",
+	"affects": [
+		{
+			"name": [
+				"xchat2"
+			],
+			"range": [
+				{
+					"lt": "2.0.8_2",
+					"ge": "1.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A straightforward stack buffer overflow exists in XChat's\n\t  Socks5 proxy support.</p>\n\t<p>The XChat developers report that `tsifra' discovered this\n\t  issue.</p>\n\t<p>NOTE: XChat Socks5 support is disabled by support in the\n\t  FreeBSD Ports Collection.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xchat.org/files/source/2.0/patches/xc208-fixsocks5.diff"
+		],
+		"cvename": [
+			"CVE-2004-0409"
+		],
+		"mlist": [
+			{
+				"text": "http://marc.theaimsgroup.com/?l=xchat-announce&m=108114935507357",
+				"msgid": "20040405171305.04f19c44.zed@xchat.org"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2004-04-05",
+		"entry": "2004-04-23",
+		"modified": "2004-05-03"
+	}
 }

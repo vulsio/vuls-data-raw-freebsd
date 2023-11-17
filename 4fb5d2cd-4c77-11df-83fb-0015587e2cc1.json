@@ -1,41 +1,41 @@
 {
-  "vid": "4fb5d2cd-4c77-11df-83fb-0015587e2cc1",
-  "topic": "png -- libpng decompression denial of service",
-  "affects": [
-    {
-      "name": [
-        "png"
-      ],
-      "range": [
-        {
-          "lt": "1.4.1",
-          "gt": "1.2.43"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>A vulnerability in libpng can result in denial of service\n\t  conditions when a remote attacker tricks a victim to open\n\t  a specially-crafted PNG file.</p>\n\t<p>The PNG project describes the problem in an advisory:</p>\n\t<blockquote cite=\"http://libpng.sourceforge.net/ADVISORY-1.4.1.html\">\n\t  <p>Because of the efficient compression method used in\n\t    Portable Network Graphics (PNG) files, a small PNG file\n\t    can expand tremendously, acting as a \"decompression\n\t    bomb\".</p>\n\t  <p>Malformed PNG chunks can consume a large amount of CPU\n\t    and wall-clock time and large amounts of memory, up to\n\t    all memory available on a system</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://libpng.sourceforge.net/ADVISORY-1.4.1.html",
-      "http://secunia.com/advisories/38774",
-      "http://xforce.iss.net/xforce/xfdb/56661"
-    ],
-    "cvename": [
-      "CVE-2010-0205"
-    ],
-    "bid": [
-      "38478"
-    ],
-    "cert_vu": [
-      "576029"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-02-27",
-    "entry": "2010-04-20"
-  }
+	"vid": "4fb5d2cd-4c77-11df-83fb-0015587e2cc1",
+	"topic": "png -- libpng decompression denial of service",
+	"affects": [
+		{
+			"name": [
+				"png"
+			],
+			"range": [
+				{
+					"lt": "1.4.1",
+					"gt": "1.2.43"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>A vulnerability in libpng can result in denial of service\n\t  conditions when a remote attacker tricks a victim to open\n\t  a specially-crafted PNG file.</p>\n\t<p>The PNG project describes the problem in an advisory:</p>\n\t<blockquote cite=\"http://libpng.sourceforge.net/ADVISORY-1.4.1.html\">\n\t  <p>Because of the efficient compression method used in\n\t    Portable Network Graphics (PNG) files, a small PNG file\n\t    can expand tremendously, acting as a \"decompression\n\t    bomb\".</p>\n\t  <p>Malformed PNG chunks can consume a large amount of CPU\n\t    and wall-clock time and large amounts of memory, up to\n\t    all memory available on a system</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://libpng.sourceforge.net/ADVISORY-1.4.1.html",
+			"http://secunia.com/advisories/38774",
+			"http://xforce.iss.net/xforce/xfdb/56661"
+		],
+		"cvename": [
+			"CVE-2010-0205"
+		],
+		"bid": [
+			"38478"
+		],
+		"cert_vu": [
+			"576029"
+		]
+	},
+	"dates": {
+		"discovery": "2010-02-27",
+		"entry": "2010-04-20"
+	}
 }

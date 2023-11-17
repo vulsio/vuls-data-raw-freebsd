@@ -1,32 +1,32 @@
 {
-  "vid": "aca0d7e0-e38a-11e1-999b-e0cb4e266481",
-  "topic": "phpMyAdmin -- Path disclosure due to missing library",
-  "affects": [
-    {
-      "name": [
-        "phpMyAdmin"
-      ],
-      "range": [
-        {
-          "lt": "3.5.2.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2012-3.php\">\n\t  <p>The show_config_errors.php script does not include a\n\t     library, so an error message shows the full path of this\n\t     file, leading to possible further attacks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.phpmyadmin.net/home_page/security/PMASA-2012-3.php"
-    ],
-    "cvename": [
-      "CVE-2012-4219"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-08-03",
-    "entry": "2012-08-11"
-  }
+	"vid": "aca0d7e0-e38a-11e1-999b-e0cb4e266481",
+	"topic": "phpMyAdmin -- Path disclosure due to missing library",
+	"affects": [
+		{
+			"name": [
+				"phpMyAdmin"
+			],
+			"range": [
+				{
+					"lt": "3.5.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The phpMyAdmin development team reports:</p>\n\t<blockquote cite=\"http://www.phpmyadmin.net/home_page/security/PMASA-2012-3.php\">\n\t  <p>The show_config_errors.php script does not include a\n\t     library, so an error message shows the full path of this\n\t     file, leading to possible further attacks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.phpmyadmin.net/home_page/security/PMASA-2012-3.php"
+		],
+		"cvename": [
+			"CVE-2012-4219"
+		]
+	},
+	"dates": {
+		"discovery": "2012-08-03",
+		"entry": "2012-08-11"
+	}
 }

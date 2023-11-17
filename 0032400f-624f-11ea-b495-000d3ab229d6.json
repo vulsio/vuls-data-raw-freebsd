@@ -1,54 +1,54 @@
 {
-  "vid": "0032400f-624f-11ea-b495-000d3ab229d6",
-  "topic": "Node.js -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "node"
-      ],
-      "range": [
-        {
-          "lt": "13.8.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node12"
-      ],
-      "range": [
-        {
-          "lt": "12.15.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "node10"
-      ],
-      "range": [
-        {
-          "lt": "10.19.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/february-2020-security-releases/\">\n\t  <p>Updates are now available for all active Node.js release lines for the following issues.</p>\n\t  <h1>HTTP request smuggling using malformed Transfer-Encoding header (Critical) (CVE-2019-15605)HTTP request smuggling using malformed Transfer-Encoding header (Critical) (CVE-2019-15605)</h1>\n\t  <p>Affected Node.js versions can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system.</p>\n\t  <h1>HTTP header values do not have trailing OWS trimmed (High) (CVE-2019-15606)</h1>\n\t  <p>Optional whitespace should be trimmed from HTTP header values. Its presence may allow attackers to bypass security checks based on HTTP header values.</p>\n\t  <h1>Remotely trigger an assertion on a TLS server with a malformed certificate string (High) (CVE-2019-15604)</h1>\n\t  <p>Connecting to a NodeJS TLS server with a client certificate that has a type 19 string in its subjectAltName will crash the TLS server if it tries to read the peer certificate.</p>\n\t  <h1>Strict HTTP header parsing (None)</h1>\n\t  <p>Increase the strictness of HTTP header parsing. There are no known vulnerabilities addressed, but lax HTTP parsing has historically been a source of problems. Some commonly used sites are known to generate invalid HTTP headers, a --insecure-http-parser CLI option or insecureHTTPParser http option can be used if necessary for interoperability, but is not recommended.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://nodejs.org/en/blog/vulnerability/february-2020-security-releases/"
-    ],
-    "cvename": [
-      "CVE-2019-15605",
-      "CVE-2019-15606",
-      "CVE-2019-15604"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-02-06",
-    "entry": "2020-03-09"
-  }
+	"vid": "0032400f-624f-11ea-b495-000d3ab229d6",
+	"topic": "Node.js -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"node"
+			],
+			"range": [
+				{
+					"lt": "13.8.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node12"
+			],
+			"range": [
+				{
+					"lt": "12.15.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"node10"
+			],
+			"range": [
+				{
+					"lt": "10.19.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Node.js reports:</p>\n\t<blockquote cite=\"https://nodejs.org/en/blog/vulnerability/february-2020-security-releases/\">\n\t  <p>Updates are now available for all active Node.js release lines for the following issues.</p>\n\t  <h1>HTTP request smuggling using malformed Transfer-Encoding header (Critical) (CVE-2019-15605)HTTP request smuggling using malformed Transfer-Encoding header (Critical) (CVE-2019-15605)</h1>\n\t  <p>Affected Node.js versions can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system.</p>\n\t  <h1>HTTP header values do not have trailing OWS trimmed (High) (CVE-2019-15606)</h1>\n\t  <p>Optional whitespace should be trimmed from HTTP header values. Its presence may allow attackers to bypass security checks based on HTTP header values.</p>\n\t  <h1>Remotely trigger an assertion on a TLS server with a malformed certificate string (High) (CVE-2019-15604)</h1>\n\t  <p>Connecting to a NodeJS TLS server with a client certificate that has a type 19 string in its subjectAltName will crash the TLS server if it tries to read the peer certificate.</p>\n\t  <h1>Strict HTTP header parsing (None)</h1>\n\t  <p>Increase the strictness of HTTP header parsing. There are no known vulnerabilities addressed, but lax HTTP parsing has historically been a source of problems. Some commonly used sites are known to generate invalid HTTP headers, a --insecure-http-parser CLI option or insecureHTTPParser http option can be used if necessary for interoperability, but is not recommended.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://nodejs.org/en/blog/vulnerability/february-2020-security-releases/"
+		],
+		"cvename": [
+			"CVE-2019-15605",
+			"CVE-2019-15606",
+			"CVE-2019-15604"
+		]
+	},
+	"dates": {
+		"discovery": "2020-02-06",
+		"entry": "2020-03-09"
+	}
 }

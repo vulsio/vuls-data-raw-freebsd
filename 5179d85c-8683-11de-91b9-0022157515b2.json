@@ -1,33 +1,33 @@
 {
-  "vid": "5179d85c-8683-11de-91b9-0022157515b2",
-  "topic": "fetchmail -- improper SSL certificate subject verification",
-  "affects": [
-    {
-      "name": [
-        "fetchmail"
-      ],
-      "range": [
-        {
-          "lt": "6.3.11"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2009-01.txt\">\n\t  <p>Moxie Marlinspike demonstrated in July 2009 that some CAs would\n\t    sign certificates that contain embedded NUL characters in the\n\t    Common Name or subjectAltName fields of ITU-T X.509\n\t    certificates.</p>\n\t  <p>Applications that would treat such X.509 strings as\n\t    NUL-terminated C strings (rather than strings that contain an\n\t    explicit length field) would only check the part up to and\n\t    excluding the NUL character, so that certificate names such as\n\t    www.good.example\\0www.bad.example.com would be mistaken as a\n\t    certificate name for www.good.example. fetchmail also had this\n\t    design and implementation flaw.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.fetchmail.info/fetchmail-SA-2009-01.txt"
-    ],
-    "cvename": [
-      "CVE-2009-2666"
-    ]
-  },
-  "dates": {
-    "discovery": "2009-08-06",
-    "entry": "2009-08-11",
-    "modified": "2009-08-13"
-  }
+	"vid": "5179d85c-8683-11de-91b9-0022157515b2",
+	"topic": "fetchmail -- improper SSL certificate subject verification",
+	"affects": [
+		{
+			"name": [
+				"fetchmail"
+			],
+			"range": [
+				{
+					"lt": "6.3.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://www.fetchmail.info/fetchmail-SA-2009-01.txt\">\n\t  <p>Moxie Marlinspike demonstrated in July 2009 that some CAs would\n\t    sign certificates that contain embedded NUL characters in the\n\t    Common Name or subjectAltName fields of ITU-T X.509\n\t    certificates.</p>\n\t  <p>Applications that would treat such X.509 strings as\n\t    NUL-terminated C strings (rather than strings that contain an\n\t    explicit length field) would only check the part up to and\n\t    excluding the NUL character, so that certificate names such as\n\t    www.good.example\\0www.bad.example.com would be mistaken as a\n\t    certificate name for www.good.example. fetchmail also had this\n\t    design and implementation flaw.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.fetchmail.info/fetchmail-SA-2009-01.txt"
+		],
+		"cvename": [
+			"CVE-2009-2666"
+		]
+	},
+	"dates": {
+		"discovery": "2009-08-06",
+		"entry": "2009-08-11",
+		"modified": "2009-08-13"
+	}
 }

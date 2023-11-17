@@ -1,30 +1,30 @@
 {
-  "vid": "98dd7788-3d13-11dc-b3d3-0016179b2dd5",
-  "topic": "drupal -- Cross site request forgeries",
-  "affects": [
-    {
-      "name": [
-        "drupal5"
-      ],
-      "range": [
-        {
-          "lt": "5.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/162360\">\n\t  <p>Several parts in Drupal core are not protected against cross\n\t    site request forgeries due to inproper use of the Forms API,\n\t    or by taking action solely on GET requests. Malicious users are\n\t    able to delete comments and content revisions and disable menu\n\t    items by enticing a privileged users to visit certain URLs while\n\t    the victim is logged-in to the targeted site.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://drupal.org/node/162360",
-      "http://secunia.com/advisories/26224/"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-07-26",
-    "entry": "2007-07-28"
-  }
+	"vid": "98dd7788-3d13-11dc-b3d3-0016179b2dd5",
+	"topic": "drupal -- Cross site request forgeries",
+	"affects": [
+		{
+			"name": [
+				"drupal5"
+			],
+			"range": [
+				{
+					"lt": "5.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Drupal Project reports:</p>\n\t<blockquote cite=\"http://drupal.org/node/162360\">\n\t  <p>Several parts in Drupal core are not protected against cross\n\t    site request forgeries due to inproper use of the Forms API,\n\t    or by taking action solely on GET requests. Malicious users are\n\t    able to delete comments and content revisions and disable menu\n\t    items by enticing a privileged users to visit certain URLs while\n\t    the victim is logged-in to the targeted site.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://drupal.org/node/162360",
+			"http://secunia.com/advisories/26224/"
+		]
+	},
+	"dates": {
+		"discovery": "2007-07-26",
+		"entry": "2007-07-28"
+	}
 }

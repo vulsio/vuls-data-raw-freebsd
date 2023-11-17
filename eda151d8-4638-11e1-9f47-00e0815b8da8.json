@@ -1,43 +1,43 @@
 {
-  "vid": "eda151d8-4638-11e1-9f47-00e0815b8da8",
-  "topic": "FreeBSD -- pam_ssh improperly grants access when user account has unencrypted SSH private keys",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "7.3_9",
-          "ge": "7.3"
-        },
-        {
-          "lt": "7.4_5",
-          "ge": "7.4"
-        },
-        {
-          "lt": "8.1_7",
-          "ge": "8.1"
-        },
-        {
-          "lt": "8.2_5",
-          "ge": "8.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-11:09.pam_ssh.asc\">\n\t<h1>Problem Description:</h1>\n\t<p>The OpenSSL library call used to decrypt private keys ignores the\n\t  passphrase argument if the key is not encrypted.  Because the\n\t  pam_ssh module only checks whether the passphrase provided by the\n\t  user is null, users with unencrypted SSH private keys may\n\t  successfully authenticate themselves by providing a dummy\n\t  passphrase.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "freebsd_sa": [
-      "SA-11:09.pam_ssh"
-    ]
-  },
-  "dates": {
-    "discovery": "2011-12-23",
-    "entry": "2012-01-29",
-    "modified": "2013-06-18"
-  }
+	"vid": "eda151d8-4638-11e1-9f47-00e0815b8da8",
+	"topic": "FreeBSD -- pam_ssh improperly grants access when user account has unencrypted SSH private keys",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "7.3_9",
+					"ge": "7.3"
+				},
+				{
+					"lt": "7.4_5",
+					"ge": "7.4"
+				},
+				{
+					"lt": "8.1_7",
+					"ge": "8.1"
+				},
+				{
+					"lt": "8.2_5",
+					"ge": "8.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"http://security.freebsd.org/advisories/FreeBSD-SA-11:09.pam_ssh.asc\">\n\t<h1>Problem Description:</h1>\n\t<p>The OpenSSL library call used to decrypt private keys ignores the\n\t  passphrase argument if the key is not encrypted.  Because the\n\t  pam_ssh module only checks whether the passphrase provided by the\n\t  user is null, users with unencrypted SSH private keys may\n\t  successfully authenticate themselves by providing a dummy\n\t  passphrase.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"freebsd_sa": [
+			"SA-11:09.pam_ssh"
+		]
+	},
+	"dates": {
+		"discovery": "2011-12-23",
+		"entry": "2012-01-29",
+		"modified": "2013-06-18"
+	}
 }

@@ -1,37 +1,37 @@
 {
-  "vid": "a005aea9-47bb-11ee-8e38-002590c1f29c",
-  "topic": "FreeBSD -- Stack overflow in ping(8)",
-  "affects": [
-    {
-      "name": [
-        "FreeBSD"
-      ],
-      "range": [
-        {
-          "lt": "13.1_5",
-          "ge": "13.1"
-        },
-        {
-          "lt": "12.3_10",
-          "ge": "12.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<h1>Problem Description:</h1>\n\t<p>ping reads raw IP packets from the network to process responses in\n\tthe pr_pack() function.  As part of processing a response ping has to\n\treconstruct the IP header, the ICMP header and if present a \"quoted\n\tpacket,\" which represents the packet that generated an ICMP error.\n\tThe quoted packet again has an IP header and an ICMP header.</p>\n\t<p>The pr_pack() copies received IP and ICMP headers into stack buffers\n\tfor further processing.  In so doing, it fails to take into account the\n\tpossible presence of IP option headers following the IP header in either\n\tthe response or the quoted packet.  When IP options are present,\n\tpr_pack() overflows the destination buffer by up to 40 bytes.</p>\n\t<h1>Impact:</h1>\n\t<p>The memory safety bugs described above can be triggered by a remote\n\thost, causing the ping program to crash.</p>\n\t<p>The ping process runs in a capability mode sandbox on all affected\n\tversions of FreeBSD and is thus very constrained in how it can interact\n\twith the rest of the system at the point where the bug can occur.</p>\n      "
-  },
-  "references": {
-    "cvename": [
-      "CVE-2022-23093"
-    ],
-    "freebsd_sa": [
-      "SA-22:15.ping"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-11-29",
-    "entry": "2023-08-31"
-  }
+	"vid": "a005aea9-47bb-11ee-8e38-002590c1f29c",
+	"topic": "FreeBSD -- Stack overflow in ping(8)",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "13.1_5",
+					"ge": "13.1"
+				},
+				{
+					"lt": "12.3_10",
+					"ge": "12.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>ping reads raw IP packets from the network to process responses in\n\tthe pr_pack() function.  As part of processing a response ping has to\n\treconstruct the IP header, the ICMP header and if present a \"quoted\n\tpacket,\" which represents the packet that generated an ICMP error.\n\tThe quoted packet again has an IP header and an ICMP header.</p>\n\t<p>The pr_pack() copies received IP and ICMP headers into stack buffers\n\tfor further processing.  In so doing, it fails to take into account the\n\tpossible presence of IP option headers following the IP header in either\n\tthe response or the quoted packet.  When IP options are present,\n\tpr_pack() overflows the destination buffer by up to 40 bytes.</p>\n\t<h1>Impact:</h1>\n\t<p>The memory safety bugs described above can be triggered by a remote\n\thost, causing the ping program to crash.</p>\n\t<p>The ping process runs in a capability mode sandbox on all affected\n\tversions of FreeBSD and is thus very constrained in how it can interact\n\twith the rest of the system at the point where the bug can occur.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2022-23093"
+		],
+		"freebsd_sa": [
+			"SA-22:15.ping"
+		]
+	},
+	"dates": {
+		"discovery": "2022-11-29",
+		"entry": "2023-08-31"
+	}
 }

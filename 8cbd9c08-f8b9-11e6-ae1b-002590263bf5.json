@@ -1,32 +1,32 @@
 {
-  "vid": "8cbd9c08-f8b9-11e6-ae1b-002590263bf5",
-  "topic": "xen-tools -- cirrus_bitblt_cputovideo does not check if memory region is safe",
-  "affects": [
-    {
-      "name": [
-        "xen-tools"
-      ],
-      "range": [
-        {
-          "lt": "4.7.1_4"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-209.html\">\n\t  <p>In CIRRUS_BLTMODE_MEMSYSSRC mode the bitblit copy routine\n\t    cirrus_bitblt_cputovideo fails to check whether the specified\n\t    memory region is safe. A malicious guest administrator can cause\n\t    an out of bounds memory write, very likely exploitable as a\n\t    privilege escalation.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-209.html"
-    ],
-    "cvename": [
-      "CVE-2017-2620"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-02-21",
-    "entry": "2017-02-22"
-  }
+	"vid": "8cbd9c08-f8b9-11e6-ae1b-002590263bf5",
+	"topic": "xen-tools -- cirrus_bitblt_cputovideo does not check if memory region is safe",
+	"affects": [
+		{
+			"name": [
+				"xen-tools"
+			],
+			"range": [
+				{
+					"lt": "4.7.1_4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-209.html\">\n\t  <p>In CIRRUS_BLTMODE_MEMSYSSRC mode the bitblit copy routine\n\t    cirrus_bitblt_cputovideo fails to check whether the specified\n\t    memory region is safe. A malicious guest administrator can cause\n\t    an out of bounds memory write, very likely exploitable as a\n\t    privilege escalation.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-209.html"
+		],
+		"cvename": [
+			"CVE-2017-2620"
+		]
+	},
+	"dates": {
+		"discovery": "2017-02-21",
+		"entry": "2017-02-22"
+	}
 }

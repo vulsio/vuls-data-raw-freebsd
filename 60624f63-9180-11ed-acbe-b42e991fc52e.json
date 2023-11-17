@@ -1,32 +1,32 @@
 {
-  "vid": "60624f63-9180-11ed-acbe-b42e991fc52e",
-  "topic": "cassandra3 -- arbitrary code execution",
-  "affects": [
-    {
-      "name": [
-        "cassandra3"
-      ],
-      "range": [
-        {
-          "lt": "3.11.13"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Marcus Eriksson reports:</p>\n\t<blockquote cite=\"https://lists.apache.org/thread/y4nb9s4co34j8hdfmrshyl09lokm7356\">\n\t  <p>\n\t  When running Apache Cassandra with\n\t  the following configuration:\n\t  enable_user_defined_functions: true\n\t  enable_scripted_user_defined_functions: true\n\t  enable_user_defined_functions_threads: false\n\t  it is possible for an attacker to execute arbitrary code on\n\t  the host. The attacker would need to have enough permissions\n\t  to create user defined functions in the cluster to be able\n\t  to exploit this.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.cvedetails.com/cve/CVE-2021-44521"
-    ],
-    "cvename": [
-      "CVE-2021-44521"
-    ]
-  },
-  "dates": {
-    "discovery": "2022-02-11",
-    "entry": "2023-01-11"
-  }
+	"vid": "60624f63-9180-11ed-acbe-b42e991fc52e",
+	"topic": "cassandra3 -- arbitrary code execution",
+	"affects": [
+		{
+			"name": [
+				"cassandra3"
+			],
+			"range": [
+				{
+					"lt": "3.11.13"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Marcus Eriksson reports:</p>\n\t<blockquote cite=\"https://lists.apache.org/thread/y4nb9s4co34j8hdfmrshyl09lokm7356\">\n\t  <p>\n\t  When running Apache Cassandra with\n\t  the following configuration:\n\t  enable_user_defined_functions: true\n\t  enable_scripted_user_defined_functions: true\n\t  enable_user_defined_functions_threads: false\n\t  it is possible for an attacker to execute arbitrary code on\n\t  the host. The attacker would need to have enough permissions\n\t  to create user defined functions in the cluster to be able\n\t  to exploit this.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.cvedetails.com/cve/CVE-2021-44521"
+		],
+		"cvename": [
+			"CVE-2021-44521"
+		]
+	},
+	"dates": {
+		"discovery": "2022-02-11",
+		"entry": "2023-01-11"
+	}
 }

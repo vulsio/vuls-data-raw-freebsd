@@ -1,33 +1,33 @@
 {
-  "vid": "b747b2a9-7be0-11da-8ec4-0002b3b60e4c",
-  "topic": "bogofilter -- heap corruption through excessively long words",
-  "affects": [
-    {
-      "name": [
-        "bogofilter"
-      ],
-      "range": [
-        {
-          "lt": "0.96.3",
-          "ge": "0.96.2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://bogofilter.sourceforge.net/security/bogofilter-SA-2005-02\">\n\t  <p>Bogofilter's/bogolexer's input handling in version 0.96.2 was not\n\t    keeping track of its output buffers properly and could overrun a\n\t    heap buffer if the input contained words whose length exceeded\n\t    16,384 bytes, the size of flex's input buffer. A \"word\" here refers\n\t    to a contiguous run of input octets that was not '_' and did not\n\t    match at least one of ispunct(), iscntrl() or isspace().</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://bogofilter.sourceforge.net/security/bogofilter-SA-2005-02"
-    ],
-    "cvename": [
-      "CVE-2005-4592"
-    ]
-  },
-  "dates": {
-    "discovery": "2005-10-23",
-    "entry": "2006-01-07"
-  }
+	"vid": "b747b2a9-7be0-11da-8ec4-0002b3b60e4c",
+	"topic": "bogofilter -- heap corruption through excessively long words",
+	"affects": [
+		{
+			"name": [
+				"bogofilter"
+			],
+			"range": [
+				{
+					"lt": "0.96.3",
+					"ge": "0.96.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matthias Andree reports:</p>\n\t<blockquote cite=\"http://bogofilter.sourceforge.net/security/bogofilter-SA-2005-02\">\n\t  <p>Bogofilter's/bogolexer's input handling in version 0.96.2 was not\n\t    keeping track of its output buffers properly and could overrun a\n\t    heap buffer if the input contained words whose length exceeded\n\t    16,384 bytes, the size of flex's input buffer. A \"word\" here refers\n\t    to a contiguous run of input octets that was not '_' and did not\n\t    match at least one of ispunct(), iscntrl() or isspace().</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://bogofilter.sourceforge.net/security/bogofilter-SA-2005-02"
+		],
+		"cvename": [
+			"CVE-2005-4592"
+		]
+	},
+	"dates": {
+		"discovery": "2005-10-23",
+		"entry": "2006-01-07"
+	}
 }

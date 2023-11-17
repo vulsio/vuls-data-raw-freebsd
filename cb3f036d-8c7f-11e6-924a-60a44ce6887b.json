@@ -1,40 +1,40 @@
 {
-  "vid": "cb3f036d-8c7f-11e6-924a-60a44ce6887b",
-  "topic": "libvncserver -- multiple security vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "libvncserver"
-      ],
-      "range": [
-        {
-          "lt": "0.9.10"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n       <p>Nicolas Ruff reports:</p>\n       <blockquote cite=\"http://seclists.org/oss-sec/2014/q3/639\">\n\t <p>Integer overflow in MallocFrameBuffer() on client side.</p>\n\t <p>Lack of malloc() return value checking on client side.</p>\n\t <p>Server crash on a very large ClientCutText message.</p>\n\t <p>Server crash when scaling factor is set to zero.</p>\n\t <p>Multiple stack overflows in File Transfer feature.</p>\n       </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://seclists.org/oss-sec/2014/q3/639"
-    ],
-    "cvename": [
-      "CVE-2014-6051",
-      "CVE-2014-6052",
-      "CVE-2014-6053",
-      "CVE-2014-6054",
-      "CVE-2014-6055"
-    ],
-    "freebsd_pr": [
-      "ports/212380"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-09-23",
-    "entry": "2016-10-11",
-    "modified": "2016-10-18"
-  }
+	"vid": "cb3f036d-8c7f-11e6-924a-60a44ce6887b",
+	"topic": "libvncserver -- multiple security vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libvncserver"
+			],
+			"range": [
+				{
+					"lt": "0.9.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Nicolas Ruff reports:</p>\n       <blockquote cite=\"http://seclists.org/oss-sec/2014/q3/639\">\n\t <p>Integer overflow in MallocFrameBuffer() on client side.</p>\n\t <p>Lack of malloc() return value checking on client side.</p>\n\t <p>Server crash on a very large ClientCutText message.</p>\n\t <p>Server crash when scaling factor is set to zero.</p>\n\t <p>Multiple stack overflows in File Transfer feature.</p>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://seclists.org/oss-sec/2014/q3/639"
+		],
+		"cvename": [
+			"CVE-2014-6051",
+			"CVE-2014-6052",
+			"CVE-2014-6053",
+			"CVE-2014-6054",
+			"CVE-2014-6055"
+		],
+		"freebsd_pr": [
+			"ports/212380"
+		]
+	},
+	"dates": {
+		"discovery": "2014-09-23",
+		"entry": "2016-10-11",
+		"modified": "2016-10-18"
+	}
 }

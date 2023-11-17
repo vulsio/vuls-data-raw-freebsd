@@ -1,33 +1,33 @@
 {
-  "vid": "7d2336c2-4607-11e1-9f47-00e0815b8da8",
-  "topic": "spamdyke -- Buffer Overflow Vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "spamdyke"
-      ],
-      "range": [
-        {
-          "lt": "4.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://www.spamdyke.org/documentation/Changelog.txt\">\n\t  <p>Fixed a number of very serious errors in the usage of\n\t    snprintf()/vsnprintf().</p>\n\t  <p>The return value was being used as the length of the string\n\t    printed into the buffer, but the return value really indicates\n\t    the length of the string that *could* be printed if the buffer\n\t    were of infinite size.  Because the returned value could be\n\t    larger than the buffer's size, this meant remotely exploitable\n\t    buffer overflows were possible, depending on spamdyke's\n\t    configuration.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://secunia.com/advisories/47548/",
-      "http://www.spamdyke.org/documentation/Changelog.txt"
-    ],
-    "cvename": [
-      "CVE-2012-0802"
-    ]
-  },
-  "dates": {
-    "discovery": "2012-01-15",
-    "entry": "2012-01-23"
-  }
+	"vid": "7d2336c2-4607-11e1-9f47-00e0815b8da8",
+	"topic": "spamdyke -- Buffer Overflow Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"spamdyke"
+			],
+			"range": [
+				{
+					"lt": "4.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://www.spamdyke.org/documentation/Changelog.txt\">\n\t  <p>Fixed a number of very serious errors in the usage of\n\t    snprintf()/vsnprintf().</p>\n\t  <p>The return value was being used as the length of the string\n\t    printed into the buffer, but the return value really indicates\n\t    the length of the string that *could* be printed if the buffer\n\t    were of infinite size.  Because the returned value could be\n\t    larger than the buffer's size, this meant remotely exploitable\n\t    buffer overflows were possible, depending on spamdyke's\n\t    configuration.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://secunia.com/advisories/47548/",
+			"http://www.spamdyke.org/documentation/Changelog.txt"
+		],
+		"cvename": [
+			"CVE-2012-0802"
+		]
+	},
+	"dates": {
+		"discovery": "2012-01-15",
+		"entry": "2012-01-23"
+	}
 }

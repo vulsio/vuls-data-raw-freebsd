@@ -1,40 +1,40 @@
 {
-  "vid": "23ab5c3e-79c3-11e4-8b1e-d050992ecde8",
-  "topic": "OpenVPN -- denial of service security vulnerability",
-  "affects": [
-    {
-      "name": [
-        "openvpn"
-      ],
-      "range": [
-        {
-          "lt": "2.0.11"
-        },
-        {
-          "lt": "2.2.3",
-          "ge": "2.1.0"
-        },
-        {
-          "lt": "2.3.6",
-          "ge": "2.3.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The OpenVPN project reports:</p>\n\t<blockquote cite=\"https://community.openvpn.net/openvpn/wiki/SecurityAnnouncement-97597e732b\">\n\t  <p>In late November 2014 Dragana Damjanovic notified OpenVPN\n\t    developers of a critical denial of service security vulnerability\n\t    (CVE-2014-8104). The vulnerability allows an tls-authenticated\n\t    client to crash the server by sending a too-short control channel\n\t    packet to the server.  In other words this vulnerability is denial\n\t    of service only.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://community.openvpn.net/openvpn/wiki/SecurityAnnouncement-97597e732b"
-    ],
-    "cvename": [
-      "CVE-2014-8104"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-12-01",
-    "entry": "2014-12-02"
-  }
+	"vid": "23ab5c3e-79c3-11e4-8b1e-d050992ecde8",
+	"topic": "OpenVPN -- denial of service security vulnerability",
+	"affects": [
+		{
+			"name": [
+				"openvpn"
+			],
+			"range": [
+				{
+					"lt": "2.0.11"
+				},
+				{
+					"lt": "2.2.3",
+					"ge": "2.1.0"
+				},
+				{
+					"lt": "2.3.6",
+					"ge": "2.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenVPN project reports:</p>\n\t<blockquote cite=\"https://community.openvpn.net/openvpn/wiki/SecurityAnnouncement-97597e732b\">\n\t  <p>In late November 2014 Dragana Damjanovic notified OpenVPN\n\t    developers of a critical denial of service security vulnerability\n\t    (CVE-2014-8104). The vulnerability allows an tls-authenticated\n\t    client to crash the server by sending a too-short control channel\n\t    packet to the server.  In other words this vulnerability is denial\n\t    of service only.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://community.openvpn.net/openvpn/wiki/SecurityAnnouncement-97597e732b"
+		],
+		"cvename": [
+			"CVE-2014-8104"
+		]
+	},
+	"dates": {
+		"discovery": "2014-12-01",
+		"entry": "2014-12-02"
+	}
 }

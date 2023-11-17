@@ -1,65 +1,65 @@
 {
-  "vid": "36ff7a74-47b1-11e8-a7d6-54e1ad544088",
-  "topic": "chromium -- vulnerability",
-  "affects": [
-    {
-      "name": [
-        "chromium"
-      ],
-      "range": [
-        {
-          "lt": "66.0.3359.117"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2018/04/stable-channel-update-for-desktop.html\">\n\t  <p>62 security fixes in this release:</p>\n\t  <ul>\n\t   <li>[826626] Critical CVE-2018-6085: Use after free in Disk Cache. Reported by Ned Williamson on 2018-03-28</li>\n\t   <li>[827492] Critical CVE-2018-6086: Use after free in Disk Cache. Reported by Ned Williamson on 2018-03-30</li>\n\t   <li>[813876] High CVE-2018-6087: Use after free in WebAssembly. Reported by Anonymous on 2018-02-20</li>\n\t   <li>[822091] High CVE-2018-6088: Use after free in PDFium. Reported by Anonymous on 2018-03-15</li>\n\t   <li>[808838] High CVE-2018-6089: Same origin policy bypass in Service Worker. Reported by Rob Wu on 2018-02-04</li>\n\t   <li>[820913] High CVE-2018-6090: Heap buffer overflow in Skia. Reported by ZhanJia Song on 2018-03-12</li>\n\t   <li>[771933] High CVE-2018-6091: Incorrect handling of plug-ins by Service Worker. Reported by Jun Kokatsu (@shhnjk) on 2017-10-05</li>\n\t   <li>[819869] High CVE-2018-6092: Integer overflow in WebAssembly. Reported by Natalie Silvanovich of Google Project Zero on 2018-03-08</li>\n\t   <li>[780435] Medium CVE-2018-6093: Same origin bypass in Service Worker. Reported by Jun Kokatsu (@shhnjk) on 2017-11-01</li>\n\t   <li>[633030] Medium CVE-2018-6094: Exploit hardening regression in Oilpan. Reported by Chris Rohlf on 2016-08-01</li>\n\t   <li>[637098] Medium CVE-2018-6095: Lack of meaningful user interaction requirement before file upload. Reported by Abdulrahman Alqabandi (@qab) on 2016-08-11</li>\n\t   <li>[776418] Medium CVE-2018-6096: Fullscreen UI spoof. Reported by WenXu Wu of Tencent's Xuanwu Lab on 2017-10-19</li>\n\t   <li>[806162] Medium CVE-2018-6097: Fullscreen UI spoof. Reported by xisigr of Tencent's Xuanwu Lab on 2018-01-26</li>\n\t   <li>[798892] Medium CVE-2018-6098: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-01-03</li>\n\t   <li>[808825] Medium CVE-2018-6099: CORS bypass in ServiceWorker. Reported by Jun Kokatsu (@shhnjk) on 2018-02-03</li>\n\t   <li>[811117] Medium CVE-2018-6100: URL spoof in Omnibox. Reported by Lnyas Zhang on 2018-02-11</li>\n\t   <li>[813540] Medium CVE-2018-6101: Insufficient protection of remote debugging prototol in DevTools . Reported by Rob Wu on 2018-02-19</li>\n\t   <li>[813814] Medium CVE-2018-6102: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-02-20</li>\n\t   <li>[816033] Medium CVE-2018-6103: UI spoof in Permissions. Reported by Khalil Zhani on 2018-02-24</li>\n\t   <li>[820068] Medium CVE-2018-6104: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-03-08</li>\n\t   <li>[803571] Medium CVE-2018-6105: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-01-18</li>\n\t   <li>[805729] Medium CVE-2018-6106: Incorrect handling of promises in V8. Reported by lokihardt of Google Project Zero on 2018-01-25</li>\n\t   <li>[808316] Medium CVE-2018-6107: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-02-02</li>\n\t   <li>[816769] Medium CVE-2018-6108: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-02-27</li>\n\t   <li>[710190] Low CVE-2018-6109: Incorrect handling of files by FileAPI. Reported by Dominik Weber (@DoWeb_) on 2017-04-10</li>\n\t   <li>[777737] Low CVE-2018-6110: Incorrect handling of plaintext files via file:// . Reported by Wenxiang Qian (aka blastxiang) on 2017-10-24</li>\n\t   <li>[780694] Low CVE-2018-6111: Heap-use-after-free in DevTools. Reported by Khalil Zhani on 2017-11-02</li>\n\t   <li>[798096] Low CVE-2018-6112: Incorrect URL handling in DevTools. Reported by Rob Wu on 2017-12-29</li>\n\t   <li>[805900] Low CVE-2018-6113: URL spoof in Navigation. Reported by Khalil Zhani on 2018-01-25</li>\n\t   <li>[811691] Low CVE-2018-6114: CSP bypass. Reported by Lnyas Zhang on 2018-02-13</li>\n\t   <li>[819809] Low CVE-2018-6115: SmartScreen bypass in downloads. Reported by James Feher on 2018-03-07</li>\n\t   <li>[822266] Low CVE-2018-6116: Incorrect low memory handling in WebAssembly. Reported by Jin from Chengdu Security Response Center of Qihoo 360 Technology Co. Ltd. on 2018-03-15</li>\n\t   <li>[822465] Low CVE-2018-6117: Confusing autofill settings. Reported by Spencer Dailey on 2018-03-15</li>\n\t   <li>[822424] Low CVE-2018-6084: Incorrect use of Distributed Objects in Google Software Updater on MacOS. Reported by Ian Beer of Google Project Zero on 2018-03-15</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://chromereleases.googleblog.com/2018/04/stable-channel-update-for-desktop.html"
-    ],
-    "cvename": [
-      "CVE-2018-6085",
-      "CVE-2018-6086",
-      "CVE-2018-6087",
-      "CVE-2018-6088",
-      "CVE-2018-6089",
-      "CVE-2018-6090",
-      "CVE-2018-6091",
-      "CVE-2018-6092",
-      "CVE-2018-6093",
-      "CVE-2018-6094",
-      "CVE-2018-6095",
-      "CVE-2018-6096",
-      "CVE-2018-6097",
-      "CVE-2018-6098",
-      "CVE-2018-6099",
-      "CVE-2018-6100",
-      "CVE-2018-6101",
-      "CVE-2018-6102",
-      "CVE-2018-6103",
-      "CVE-2018-6104",
-      "CVE-2018-6105",
-      "CVE-2018-6106",
-      "CVE-2018-6107",
-      "CVE-2018-6108",
-      "CVE-2018-6109",
-      "CVE-2018-6110",
-      "CVE-2018-6111",
-      "CVE-2018-6112",
-      "CVE-2018-6113",
-      "CVE-2018-6114",
-      "CVE-2018-6115",
-      "CVE-2018-6116",
-      "CVE-2018-6117",
-      "CVE-2018-6084"
-    ]
-  },
-  "dates": {
-    "discovery": "2017-04-10",
-    "entry": "2018-04-24"
-  }
+	"vid": "36ff7a74-47b1-11e8-a7d6-54e1ad544088",
+	"topic": "chromium -- vulnerability",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "66.0.3359.117"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Google Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2018/04/stable-channel-update-for-desktop.html\">\n\t  <p>62 security fixes in this release:</p>\n\t  <ul>\n\t   <li>[826626] Critical CVE-2018-6085: Use after free in Disk Cache. Reported by Ned Williamson on 2018-03-28</li>\n\t   <li>[827492] Critical CVE-2018-6086: Use after free in Disk Cache. Reported by Ned Williamson on 2018-03-30</li>\n\t   <li>[813876] High CVE-2018-6087: Use after free in WebAssembly. Reported by Anonymous on 2018-02-20</li>\n\t   <li>[822091] High CVE-2018-6088: Use after free in PDFium. Reported by Anonymous on 2018-03-15</li>\n\t   <li>[808838] High CVE-2018-6089: Same origin policy bypass in Service Worker. Reported by Rob Wu on 2018-02-04</li>\n\t   <li>[820913] High CVE-2018-6090: Heap buffer overflow in Skia. Reported by ZhanJia Song on 2018-03-12</li>\n\t   <li>[771933] High CVE-2018-6091: Incorrect handling of plug-ins by Service Worker. Reported by Jun Kokatsu (@shhnjk) on 2017-10-05</li>\n\t   <li>[819869] High CVE-2018-6092: Integer overflow in WebAssembly. Reported by Natalie Silvanovich of Google Project Zero on 2018-03-08</li>\n\t   <li>[780435] Medium CVE-2018-6093: Same origin bypass in Service Worker. Reported by Jun Kokatsu (@shhnjk) on 2017-11-01</li>\n\t   <li>[633030] Medium CVE-2018-6094: Exploit hardening regression in Oilpan. Reported by Chris Rohlf on 2016-08-01</li>\n\t   <li>[637098] Medium CVE-2018-6095: Lack of meaningful user interaction requirement before file upload. Reported by Abdulrahman Alqabandi (@qab) on 2016-08-11</li>\n\t   <li>[776418] Medium CVE-2018-6096: Fullscreen UI spoof. Reported by WenXu Wu of Tencent's Xuanwu Lab on 2017-10-19</li>\n\t   <li>[806162] Medium CVE-2018-6097: Fullscreen UI spoof. Reported by xisigr of Tencent's Xuanwu Lab on 2018-01-26</li>\n\t   <li>[798892] Medium CVE-2018-6098: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-01-03</li>\n\t   <li>[808825] Medium CVE-2018-6099: CORS bypass in ServiceWorker. Reported by Jun Kokatsu (@shhnjk) on 2018-02-03</li>\n\t   <li>[811117] Medium CVE-2018-6100: URL spoof in Omnibox. Reported by Lnyas Zhang on 2018-02-11</li>\n\t   <li>[813540] Medium CVE-2018-6101: Insufficient protection of remote debugging prototol in DevTools . Reported by Rob Wu on 2018-02-19</li>\n\t   <li>[813814] Medium CVE-2018-6102: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-02-20</li>\n\t   <li>[816033] Medium CVE-2018-6103: UI spoof in Permissions. Reported by Khalil Zhani on 2018-02-24</li>\n\t   <li>[820068] Medium CVE-2018-6104: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-03-08</li>\n\t   <li>[803571] Medium CVE-2018-6105: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-01-18</li>\n\t   <li>[805729] Medium CVE-2018-6106: Incorrect handling of promises in V8. Reported by lokihardt of Google Project Zero on 2018-01-25</li>\n\t   <li>[808316] Medium CVE-2018-6107: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-02-02</li>\n\t   <li>[816769] Medium CVE-2018-6108: URL spoof in Omnibox. Reported by Khalil Zhani on 2018-02-27</li>\n\t   <li>[710190] Low CVE-2018-6109: Incorrect handling of files by FileAPI. Reported by Dominik Weber (@DoWeb_) on 2017-04-10</li>\n\t   <li>[777737] Low CVE-2018-6110: Incorrect handling of plaintext files via file:// . Reported by Wenxiang Qian (aka blastxiang) on 2017-10-24</li>\n\t   <li>[780694] Low CVE-2018-6111: Heap-use-after-free in DevTools. Reported by Khalil Zhani on 2017-11-02</li>\n\t   <li>[798096] Low CVE-2018-6112: Incorrect URL handling in DevTools. Reported by Rob Wu on 2017-12-29</li>\n\t   <li>[805900] Low CVE-2018-6113: URL spoof in Navigation. Reported by Khalil Zhani on 2018-01-25</li>\n\t   <li>[811691] Low CVE-2018-6114: CSP bypass. Reported by Lnyas Zhang on 2018-02-13</li>\n\t   <li>[819809] Low CVE-2018-6115: SmartScreen bypass in downloads. Reported by James Feher on 2018-03-07</li>\n\t   <li>[822266] Low CVE-2018-6116: Incorrect low memory handling in WebAssembly. Reported by Jin from Chengdu Security Response Center of Qihoo 360 Technology Co. Ltd. on 2018-03-15</li>\n\t   <li>[822465] Low CVE-2018-6117: Confusing autofill settings. Reported by Spencer Dailey on 2018-03-15</li>\n\t   <li>[822424] Low CVE-2018-6084: Incorrect use of Distributed Objects in Google Software Updater on MacOS. Reported by Ian Beer of Google Project Zero on 2018-03-15</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2018/04/stable-channel-update-for-desktop.html"
+		],
+		"cvename": [
+			"CVE-2018-6085",
+			"CVE-2018-6086",
+			"CVE-2018-6087",
+			"CVE-2018-6088",
+			"CVE-2018-6089",
+			"CVE-2018-6090",
+			"CVE-2018-6091",
+			"CVE-2018-6092",
+			"CVE-2018-6093",
+			"CVE-2018-6094",
+			"CVE-2018-6095",
+			"CVE-2018-6096",
+			"CVE-2018-6097",
+			"CVE-2018-6098",
+			"CVE-2018-6099",
+			"CVE-2018-6100",
+			"CVE-2018-6101",
+			"CVE-2018-6102",
+			"CVE-2018-6103",
+			"CVE-2018-6104",
+			"CVE-2018-6105",
+			"CVE-2018-6106",
+			"CVE-2018-6107",
+			"CVE-2018-6108",
+			"CVE-2018-6109",
+			"CVE-2018-6110",
+			"CVE-2018-6111",
+			"CVE-2018-6112",
+			"CVE-2018-6113",
+			"CVE-2018-6114",
+			"CVE-2018-6115",
+			"CVE-2018-6116",
+			"CVE-2018-6117",
+			"CVE-2018-6084"
+		]
+	},
+	"dates": {
+		"discovery": "2017-04-10",
+		"entry": "2018-04-24"
+	}
 }

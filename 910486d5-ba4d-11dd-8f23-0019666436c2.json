@@ -1,38 +1,38 @@
 {
-  "vid": "910486d5-ba4d-11dd-8f23-0019666436c2",
-  "topic": "imlib2 -- XPM processing buffer overflow vulnerability",
-  "affects": [
-    {
-      "name": [
-        "imlib2",
-        "imlib2-nox11"
-      ],
-      "range": [
-        {
-          "lt": "1.4.1.000_1,2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/Advisories/32796/\">\n\t  <p>A vulnerability has been discovered in imlib2, which can\n\t    be exploited by malicious people to potentially compromise\n\t    an application using the library.</p>\n\t  <p>The vulnerability is caused due to a pointer arithmetic\n\t    error within the \"load()\" function provided by the XPM\n\t    loader. This can be exploited to cause a heap-based buffer\n\t    overflow via a specially crafted XPM file.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/Advisories/32796/",
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=505714#15",
-      "http://bugzilla.enlightenment.org/show_bug.cgi?id=547"
-    ],
-    "cvename": [
-      "CVE-2008-5187"
-    ],
-    "bid": [
-      "32371"
-    ]
-  },
-  "dates": {
-    "discovery": "2008-11-20",
-    "entry": "2008-11-24"
-  }
+	"vid": "910486d5-ba4d-11dd-8f23-0019666436c2",
+	"topic": "imlib2 -- XPM processing buffer overflow vulnerability",
+	"affects": [
+		{
+			"name": [
+				"imlib2",
+				"imlib2-nox11"
+			],
+			"range": [
+				{
+					"lt": "1.4.1.000_1,2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/Advisories/32796/\">\n\t  <p>A vulnerability has been discovered in imlib2, which can\n\t    be exploited by malicious people to potentially compromise\n\t    an application using the library.</p>\n\t  <p>The vulnerability is caused due to a pointer arithmetic\n\t    error within the \"load()\" function provided by the XPM\n\t    loader. This can be exploited to cause a heap-based buffer\n\t    overflow via a specially crafted XPM file.</p>\n\t  <p>Successful exploitation may allow execution of arbitrary\n\t    code.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/Advisories/32796/",
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=505714#15",
+			"http://bugzilla.enlightenment.org/show_bug.cgi?id=547"
+		],
+		"cvename": [
+			"CVE-2008-5187"
+		],
+		"bid": [
+			"32371"
+		]
+	},
+	"dates": {
+		"discovery": "2008-11-20",
+		"entry": "2008-11-24"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "vid": "e839ca04-b40d-11e5-9728-002590263bf5",
-  "topic": "xen-kernel -- information leak in legacy x86 FPU/XMM initialization",
-  "affects": [
-    {
-      "name": [
-        "xen-kernel"
-      ],
-      "range": [
-        {
-          "lt": "4.5.2_1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-165.html\">\n\t  <p>When XSAVE/XRSTOR are not in use by Xen to manage guest extended\n\t    register state, the initial values in the FPU stack and XMM\n\t    registers seen by the guest upon first use are those left there by\n\t    the previous user of those registers.</p>\n\t  <p>A malicious domain may be able to leverage this to obtain sensitive\n\t    information such as cryptographic keys from another domain.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://xenbits.xen.org/xsa/advisory-165.html"
-    ],
-    "cvename": [
-      "CVE-2015-8555"
-    ],
-    "freebsd_pr": [
-      "ports/205841"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-12-17",
-    "entry": "2016-01-06"
-  }
+	"vid": "e839ca04-b40d-11e5-9728-002590263bf5",
+	"topic": "xen-kernel -- information leak in legacy x86 FPU/XMM initialization",
+	"affects": [
+		{
+			"name": [
+				"xen-kernel"
+			],
+			"range": [
+				{
+					"lt": "4.5.2_1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Xen Project reports:</p>\n\t<blockquote cite=\"http://xenbits.xen.org/xsa/advisory-165.html\">\n\t  <p>When XSAVE/XRSTOR are not in use by Xen to manage guest extended\n\t    register state, the initial values in the FPU stack and XMM\n\t    registers seen by the guest upon first use are those left there by\n\t    the previous user of those registers.</p>\n\t  <p>A malicious domain may be able to leverage this to obtain sensitive\n\t    information such as cryptographic keys from another domain.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://xenbits.xen.org/xsa/advisory-165.html"
+		],
+		"cvename": [
+			"CVE-2015-8555"
+		],
+		"freebsd_pr": [
+			"ports/205841"
+		]
+	},
+	"dates": {
+		"discovery": "2015-12-17",
+		"entry": "2016-01-06"
+	}
 }

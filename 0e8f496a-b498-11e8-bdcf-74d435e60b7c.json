@@ -1,29 +1,29 @@
 {
-  "vid": "0e8f496a-b498-11e8-bdcf-74d435e60b7c",
-  "topic": "py-asyncssh -- Allows bypass of authentication",
-  "affects": [
-    {
-      "name": [
-        "py-asyncssh"
-      ],
-      "range": [
-        {
-          "lt": "1.12.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>mitre.org Reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7749\">\n\t\t<p>The SSH server implementation of AsyncSSH before 1.12.1 does not properly check\n\t\twhether authentication is completed before processing other requests\n\t\tA customized SSH client can simply skip the authentication step.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7749"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-03-07",
-    "entry": "2018-12-08"
-  }
+	"vid": "0e8f496a-b498-11e8-bdcf-74d435e60b7c",
+	"topic": "py-asyncssh -- Allows bypass of authentication",
+	"affects": [
+		{
+			"name": [
+				"py-asyncssh"
+			],
+			"range": [
+				{
+					"lt": "1.12.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>mitre.org Reports:</p>\n\t<blockquote cite=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7749\">\n\t\t<p>The SSH server implementation of AsyncSSH before 1.12.1 does not properly check\n\t\twhether authentication is completed before processing other requests\n\t\tA customized SSH client can simply skip the authentication step.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7749"
+		]
+	},
+	"dates": {
+		"discovery": "2018-03-07",
+		"entry": "2018-12-08"
+	}
 }

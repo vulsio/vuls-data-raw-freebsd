@@ -1,33 +1,33 @@
 {
-  "vid": "33c05d57-bf6e-11ea-ba1e-0800273f78d3",
-  "topic": "Python -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "python37"
-      ],
-      "range": [
-        {
-          "lt": "3.7.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/3.7/whatsnew/changelog.html#changelog\">\n\t  <p>The AbstractBasicAuthHandler class of the urllib.request module uses an inefficient\n\t    regular expression which can be exploited by an attacker to cause a denial of service.\n\t    Fix the regex to prevent the catastrophic backtracking. Vulnerability reported by Ben\n\t    Caller and Matt Schwager.</p>\n\t  <p>Disallow control characters in hostnames in http.client, addressing CVE-2019-18348.\n\t    Such potentially malicious header injection URLs now cause a InvalidURL to be raised.</p>\n\t  <p>Disallow CR or LF in email.headerregistry.Address arguments to guard against header\n\t    injection attacks.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://docs.python.org/3.7/whatsnew/changelog.html#changelog"
-    ],
-    "cvename": [
-      "CVE-2019-18348",
-      "CVE-2020-8492"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-10-24",
-    "entry": "2020-07-06"
-  }
+	"vid": "33c05d57-bf6e-11ea-ba1e-0800273f78d3",
+	"topic": "Python -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"python37"
+			],
+			"range": [
+				{
+					"lt": "3.7.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Python reports:</p>\n\t<blockquote cite=\"https://docs.python.org/3.7/whatsnew/changelog.html#changelog\">\n\t  <p>The AbstractBasicAuthHandler class of the urllib.request module uses an inefficient\n\t    regular expression which can be exploited by an attacker to cause a denial of service.\n\t    Fix the regex to prevent the catastrophic backtracking. Vulnerability reported by Ben\n\t    Caller and Matt Schwager.</p>\n\t  <p>Disallow control characters in hostnames in http.client, addressing CVE-2019-18348.\n\t    Such potentially malicious header injection URLs now cause a InvalidURL to be raised.</p>\n\t  <p>Disallow CR or LF in email.headerregistry.Address arguments to guard against header\n\t    injection attacks.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://docs.python.org/3.7/whatsnew/changelog.html#changelog"
+		],
+		"cvename": [
+			"CVE-2019-18348",
+			"CVE-2020-8492"
+		]
+	},
+	"dates": {
+		"discovery": "2019-10-24",
+		"entry": "2020-07-06"
+	}
 }

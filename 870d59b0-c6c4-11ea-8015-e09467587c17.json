@@ -1,57 +1,57 @@
 {
-  "vid": "870d59b0-c6c4-11ea-8015-e09467587c17",
-  "topic": "chromium -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "chromium"
-      ],
-      "range": [
-        {
-          "lt": "84.0.4147.89"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop.html\">\n\t  <p>This update contains 38 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1103195] Critical CVE-2020-6510: Heap buffer overflow in\n\t      background fetch. Reported by Leecraso and Guang Gong of 360\n\t      Alpha Lab working with 360 BugCloud on 2020-07-08</li>\n\t    <li>[1074317] High CVE-2020-6511: Side-channel information leakage\n\t      in content security policy. Reported by Mikhail Oblozhikhin on\n\t      2020-04-24</li>\n\t    <li>[1084820] High CVE-2020-6512: Type Confusion in V8. Reported by\n\t      nocma, leogan, cheneyxu of WeChat Open Platform Security Team on\n\t      2020-05-20</li>\n\t    <li>[1091404] High CVE-2020-6513: Heap buffer overflow in PDFium.\n\t      Reported by Aleksandar Nikolic of Cisco Talos on 2020-06-04</li>\n\t    <li>[1076703] High CVE-2020-6514: Inappropriate implementation in\n\t      WebRTC. Reported by Natalie Silvanovich of Google Project Zero on\n\t      2020-04-30</li>\n\t    <li>[1082755] High CVE-2020-6515: Use after free in tab strip.\n\t      Reported by DDV_UA on 2020-05-14</li>\n\t    <li>[1092449] High CVE-2020-6516: Policy bypass in CORS. Reported by\n\t      Yongke Wang(@Rudykewang) and Aryb1n(@aryb1n) of Tencent Security\n\t      Xuanwu Lab on 2020-06-08</li>\n\t    <li>[1095560] High CVE-2020-6517: Heap buffer overflow in history.\n\t      Reported by ZeKai Wu (@hellowuzekai) of Tencent Security Xuanwu\n\t      Lab on 2020-06-16</li>\n\t    <li>[986051] Medium CVE-2020-6518: Use after free in developer\n\t      tools. Reported by David Erceg on 2019-07-20</li>\n\t    <li>[1064676] Medium CVE-2020-6519: Policy bypass in CSP. Reported\n\t      by Gal Weizman (@WeizmanGal) of PerimeterX on 2020-03-25</li>\n\t    <li>[1092274] Medium CVE-2020-6520: Heap buffer overflow in Skia.\n\t     Reported by Zhen Zhou of NSFOCUS Security Team on 2020-06-08</li>\n\t    <li>[1075734] Medium CVE-2020-6521: Side-channel information leakage\n\t      in autofill. Reported by Xu Lin (University of Illinois at\n\t      Chicago), Panagiotis Ilia (University of Illinois at Chicago),\n\t      Jason Polakis (University of Illinois at Chicago) on\n\t      2020-04-27</li>\n\t    <li>[1052093] Medium CVE-2020-6522: Inappropriate implementation in\n\t      external protocol handlers. Reported by Eric Lawrence of Microsoft\n\t      on 2020-02-13</li>\n\t    <li>[1080481] Medium CVE-2020-6523: Out of bounds write in Skia.\n\t      Reported by Liu Wei and Wu Zekai of Tencent Security Xuanwu Lab on\n\t      2020-05-08</li>\n\t    <li>[1081722] Medium CVE-2020-6524: Heap buffer overflow in\n\t      WebAudio. Reported by Sung Ta (@Mipu94) of SEFCOM Lab, Arizona\n\t      State University on 2020-05-12</li>\n\t    <li>[1091670] Medium CVE-2020-6525: Heap buffer overflow in Skia.\n\t      Reported by Zhen Zhou of NSFOCUS Security Team on 2020-06-05</li>\n\t    <li>[1074340] Low CVE-2020-6526: Inappropriate implementation in\n\t      iframe sandbox. Reported by Jonathan Kingston on 2020-04-24</li>\n\t    <li>[992698] Low CVE-2020-6527: Insufficient policy enforcement in\n\t      CSP. Reported by Zhong Zhaochen of andsecurity.cn on\n\t      2019-08-10</li>\n\t    <li>[1063690] Low CVE-2020-6528: Incorrect security UI in basic\n\t      auth. Reported by Rayyan Bijoora on 2020-03-22</li>\n\t    <li>[978779] Low CVE-2020-6529: Inappropriate implementation in\n\t      WebRTC. Reported by kaustubhvats7 on 2019-06-26</li>\n\t    <li>[1016278] Low CVE-2020-6530: Out of bounds memory access in\n\t      developer tools. Reported by myvyang on 2019-10-21</li>\n\t    <li>[1042986] Low CVE-2020-6531: Side-channel information leakage in\n\t      scroll to text. Reported by Jun Kokatsu, Microsoft Browser\n\t      Vulnerability Research on 2020-01-17</li>\n\t    <li>[1069964] Low CVE-2020-6533: Type Confusion in V8. Reported by\n\t      Avihay Cohen @ SeraphicAlgorithms on 2020-04-11</li>\n\t    <li>[1072412] Low CVE-2020-6534: Heap buffer overflow in WebRTC.\n\t      Reported by Anonymous on 2020-04-20</li>\n\t    <li>[1073409] Low CVE-2020-6535: Insufficient data validation in\n\t      WebUI. Reported by Jun Kokatsu, Microsoft Browser Vulnerability\n\t      Research on 2020-04-22</li>\n\t    <li>[1080934] Low CVE-2020-6536: Incorrect security UI in PWAs.\n\t      Reported by Zhiyang Zeng of Tencent security platform department\n\t      on 2020-05-09</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop.html"
-    ],
-    "cvename": [
-      "CVE-2020-6510",
-      "CVE-2020-6511",
-      "CVE-2020-6512",
-      "CVE-2020-6513",
-      "CVE-2020-6514",
-      "CVE-2020-6515",
-      "CVE-2020-6516",
-      "CVE-2020-6517",
-      "CVE-2020-6518",
-      "CVE-2020-6519",
-      "CVE-2020-6520",
-      "CVE-2020-6521",
-      "CVE-2020-6522",
-      "CVE-2020-6523",
-      "CVE-2020-6524",
-      "CVE-2020-6525",
-      "CVE-2020-6526",
-      "CVE-2020-6527",
-      "CVE-2020-6528",
-      "CVE-2020-6529",
-      "CVE-2020-6530",
-      "CVE-2020-6531",
-      "CVE-2020-6533",
-      "CVE-2020-6534",
-      "CVE-2020-6535",
-      "CVE-2020-6536"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-07-14",
-    "entry": "2020-07-15"
-  }
+	"vid": "870d59b0-c6c4-11ea-8015-e09467587c17",
+	"topic": "chromium -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "84.0.4147.89"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Chrome Releases reports:</p>\n\t<blockquote cite=\"https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop.html\">\n\t  <p>This update contains 38 security fixes, including:</p>\n\t  <ul>\n\t    <li>[1103195] Critical CVE-2020-6510: Heap buffer overflow in\n\t      background fetch. Reported by Leecraso and Guang Gong of 360\n\t      Alpha Lab working with 360 BugCloud on 2020-07-08</li>\n\t    <li>[1074317] High CVE-2020-6511: Side-channel information leakage\n\t      in content security policy. Reported by Mikhail Oblozhikhin on\n\t      2020-04-24</li>\n\t    <li>[1084820] High CVE-2020-6512: Type Confusion in V8. Reported by\n\t      nocma, leogan, cheneyxu of WeChat Open Platform Security Team on\n\t      2020-05-20</li>\n\t    <li>[1091404] High CVE-2020-6513: Heap buffer overflow in PDFium.\n\t      Reported by Aleksandar Nikolic of Cisco Talos on 2020-06-04</li>\n\t    <li>[1076703] High CVE-2020-6514: Inappropriate implementation in\n\t      WebRTC. Reported by Natalie Silvanovich of Google Project Zero on\n\t      2020-04-30</li>\n\t    <li>[1082755] High CVE-2020-6515: Use after free in tab strip.\n\t      Reported by DDV_UA on 2020-05-14</li>\n\t    <li>[1092449] High CVE-2020-6516: Policy bypass in CORS. Reported by\n\t      Yongke Wang(@Rudykewang) and Aryb1n(@aryb1n) of Tencent Security\n\t      Xuanwu Lab on 2020-06-08</li>\n\t    <li>[1095560] High CVE-2020-6517: Heap buffer overflow in history.\n\t      Reported by ZeKai Wu (@hellowuzekai) of Tencent Security Xuanwu\n\t      Lab on 2020-06-16</li>\n\t    <li>[986051] Medium CVE-2020-6518: Use after free in developer\n\t      tools. Reported by David Erceg on 2019-07-20</li>\n\t    <li>[1064676] Medium CVE-2020-6519: Policy bypass in CSP. Reported\n\t      by Gal Weizman (@WeizmanGal) of PerimeterX on 2020-03-25</li>\n\t    <li>[1092274] Medium CVE-2020-6520: Heap buffer overflow in Skia.\n\t     Reported by Zhen Zhou of NSFOCUS Security Team on 2020-06-08</li>\n\t    <li>[1075734] Medium CVE-2020-6521: Side-channel information leakage\n\t      in autofill. Reported by Xu Lin (University of Illinois at\n\t      Chicago), Panagiotis Ilia (University of Illinois at Chicago),\n\t      Jason Polakis (University of Illinois at Chicago) on\n\t      2020-04-27</li>\n\t    <li>[1052093] Medium CVE-2020-6522: Inappropriate implementation in\n\t      external protocol handlers. Reported by Eric Lawrence of Microsoft\n\t      on 2020-02-13</li>\n\t    <li>[1080481] Medium CVE-2020-6523: Out of bounds write in Skia.\n\t      Reported by Liu Wei and Wu Zekai of Tencent Security Xuanwu Lab on\n\t      2020-05-08</li>\n\t    <li>[1081722] Medium CVE-2020-6524: Heap buffer overflow in\n\t      WebAudio. Reported by Sung Ta (@Mipu94) of SEFCOM Lab, Arizona\n\t      State University on 2020-05-12</li>\n\t    <li>[1091670] Medium CVE-2020-6525: Heap buffer overflow in Skia.\n\t      Reported by Zhen Zhou of NSFOCUS Security Team on 2020-06-05</li>\n\t    <li>[1074340] Low CVE-2020-6526: Inappropriate implementation in\n\t      iframe sandbox. Reported by Jonathan Kingston on 2020-04-24</li>\n\t    <li>[992698] Low CVE-2020-6527: Insufficient policy enforcement in\n\t      CSP. Reported by Zhong Zhaochen of andsecurity.cn on\n\t      2019-08-10</li>\n\t    <li>[1063690] Low CVE-2020-6528: Incorrect security UI in basic\n\t      auth. Reported by Rayyan Bijoora on 2020-03-22</li>\n\t    <li>[978779] Low CVE-2020-6529: Inappropriate implementation in\n\t      WebRTC. Reported by kaustubhvats7 on 2019-06-26</li>\n\t    <li>[1016278] Low CVE-2020-6530: Out of bounds memory access in\n\t      developer tools. Reported by myvyang on 2019-10-21</li>\n\t    <li>[1042986] Low CVE-2020-6531: Side-channel information leakage in\n\t      scroll to text. Reported by Jun Kokatsu, Microsoft Browser\n\t      Vulnerability Research on 2020-01-17</li>\n\t    <li>[1069964] Low CVE-2020-6533: Type Confusion in V8. Reported by\n\t      Avihay Cohen @ SeraphicAlgorithms on 2020-04-11</li>\n\t    <li>[1072412] Low CVE-2020-6534: Heap buffer overflow in WebRTC.\n\t      Reported by Anonymous on 2020-04-20</li>\n\t    <li>[1073409] Low CVE-2020-6535: Insufficient data validation in\n\t      WebUI. Reported by Jun Kokatsu, Microsoft Browser Vulnerability\n\t      Research on 2020-04-22</li>\n\t    <li>[1080934] Low CVE-2020-6536: Incorrect security UI in PWAs.\n\t      Reported by Zhiyang Zeng of Tencent security platform department\n\t      on 2020-05-09</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop.html"
+		],
+		"cvename": [
+			"CVE-2020-6510",
+			"CVE-2020-6511",
+			"CVE-2020-6512",
+			"CVE-2020-6513",
+			"CVE-2020-6514",
+			"CVE-2020-6515",
+			"CVE-2020-6516",
+			"CVE-2020-6517",
+			"CVE-2020-6518",
+			"CVE-2020-6519",
+			"CVE-2020-6520",
+			"CVE-2020-6521",
+			"CVE-2020-6522",
+			"CVE-2020-6523",
+			"CVE-2020-6524",
+			"CVE-2020-6525",
+			"CVE-2020-6526",
+			"CVE-2020-6527",
+			"CVE-2020-6528",
+			"CVE-2020-6529",
+			"CVE-2020-6530",
+			"CVE-2020-6531",
+			"CVE-2020-6533",
+			"CVE-2020-6534",
+			"CVE-2020-6535",
+			"CVE-2020-6536"
+		]
+	},
+	"dates": {
+		"discovery": "2020-07-14",
+		"entry": "2020-07-15"
+	}
 }

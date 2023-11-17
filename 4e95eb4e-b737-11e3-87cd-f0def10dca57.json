@@ -1,32 +1,32 @@
 {
-  "vid": "4e95eb4e-b737-11e3-87cd-f0def10dca57",
-  "topic": "Icinga -- buffer overflow in classic web interface",
-  "affects": [
-    {
-      "name": [
-        "icinga"
-      ],
-      "range": [
-        {
-          "lt": "1.11.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Icinga Team reports:</p>\n\t<blockquote cite=\"https://git.icinga.org/?p=icinga-core.git;a=commitdiff;h=73285093b71a5551abdaab0a042d3d6bae093b0d\">\n\t  <p>Wrong strlen check against MAX_INPUT_BUFFER without taking '\\0' into account [...]</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2386"
-    ],
-    "cvename": [
-      "CVE-2014-2386"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-02-18",
-    "entry": "2014-03-29"
-  }
+	"vid": "4e95eb4e-b737-11e3-87cd-f0def10dca57",
+	"topic": "Icinga -- buffer overflow in classic web interface",
+	"affects": [
+		{
+			"name": [
+				"icinga"
+			],
+			"range": [
+				{
+					"lt": "1.11.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Icinga Team reports:</p>\n\t<blockquote cite=\"https://git.icinga.org/?p=icinga-core.git;a=commitdiff;h=73285093b71a5551abdaab0a042d3d6bae093b0d\">\n\t  <p>Wrong strlen check against MAX_INPUT_BUFFER without taking '\\0' into account [...]</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2386"
+		],
+		"cvename": [
+			"CVE-2014-2386"
+		]
+	},
+	"dates": {
+		"discovery": "2014-02-18",
+		"entry": "2014-03-29"
+	}
 }

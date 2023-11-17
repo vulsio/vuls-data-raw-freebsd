@@ -1,44 +1,44 @@
 {
-  "vid": "8eb69cd0-c2ec-11eb-b6e7-8c164567ca3c",
-  "topic": "redis -- integer overflow",
-  "affects": [
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "6.0.14",
-          "ge": "6.0.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis-devel"
-      ],
-      "range": [
-        {
-          "lt": "6.2.4",
-          "ge": "6.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Redis development team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/RLTwi1kKsCI\">\n\t  <p>An integer overflow bug in Redis version 6.0 or newer can be\n\t    exploited using the STRALGO LCS command to corrupt the heap and\n\t    potentially result with remote code execution. This is a result\n\t    of an incomplete fix by CVE-2021-29477.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/redis-db/c/RLTwi1kKsCI"
-    ],
-    "cvename": [
-      "CVE-2021-32625"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-06-01",
-    "entry": "2021-06-01"
-  }
+	"vid": "8eb69cd0-c2ec-11eb-b6e7-8c164567ca3c",
+	"topic": "redis -- integer overflow",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "6.0.14",
+					"ge": "6.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis-devel"
+			],
+			"range": [
+				{
+					"lt": "6.2.4",
+					"ge": "6.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Redis development team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/RLTwi1kKsCI\">\n\t  <p>An integer overflow bug in Redis version 6.0 or newer can be\n\t    exploited using the STRALGO LCS command to corrupt the heap and\n\t    potentially result with remote code execution. This is a result\n\t    of an incomplete fix by CVE-2021-29477.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/redis-db/c/RLTwi1kKsCI"
+		],
+		"cvename": [
+			"CVE-2021-32625"
+		]
+	},
+	"dates": {
+		"discovery": "2021-06-01",
+		"entry": "2021-06-01"
+	}
 }

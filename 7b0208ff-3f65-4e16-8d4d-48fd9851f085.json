@@ -1,50 +1,50 @@
 {
-  "vid": "7b0208ff-3f65-4e16-8d4d-48fd9851f085",
-  "topic": "leafnode fetchnews denial-of-service triggered by missing header",
-  "affects": [
-    {
-      "name": [
-        "leafnode"
-      ],
-      "range": [
-        {
-          "ge": "1.9.3",
-          "le": "1.9.41"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Fetchnews could hang when a news article to be downloaded lacked one\n\t  of the mandatory headers. Found by Joshua Crawford.</p>\n      "
-  },
-  "references": {
-    "url": [
-      "http://leafnode.sourceforge.net/leafnode-SA-2003-01.txt"
-    ],
-    "cvename": [
-      "CVE-2003-0744"
-    ],
-    "freebsd_pr": [
-      "ports/53838"
-    ],
-    "mlist": [
-      {
-        "text": "http://sourceforge.net/mailarchive/message.php?msg_id=5975563",
-        "msgid": "20030904011904.GB12350@merlin.emma.line.org"
-      },
-      {
-        "text": "http://article.gmane.org/gmane.network.leafnode.announce/21",
-        "msgid": "20030904011904.GB12350@merlin.emma.line.org"
-      }
-    ],
-    "bid": [
-      "8541"
-    ]
-  },
-  "dates": {
-    "discovery": "2003-06-20",
-    "entry": "2004-05-21",
-    "modified": "2005-05-13"
-  }
+	"vid": "7b0208ff-3f65-4e16-8d4d-48fd9851f085",
+	"topic": "leafnode fetchnews denial-of-service triggered by missing header",
+	"affects": [
+		{
+			"name": [
+				"leafnode"
+			],
+			"range": [
+				{
+					"ge": "1.9.3",
+					"le": "1.9.41"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Fetchnews could hang when a news article to be downloaded lacked one\n\t  of the mandatory headers. Found by Joshua Crawford.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"http://leafnode.sourceforge.net/leafnode-SA-2003-01.txt"
+		],
+		"cvename": [
+			"CVE-2003-0744"
+		],
+		"freebsd_pr": [
+			"ports/53838"
+		],
+		"mlist": [
+			{
+				"text": "http://sourceforge.net/mailarchive/message.php?msg_id=5975563",
+				"msgid": "20030904011904.GB12350@merlin.emma.line.org"
+			},
+			{
+				"text": "http://article.gmane.org/gmane.network.leafnode.announce/21",
+				"msgid": "20030904011904.GB12350@merlin.emma.line.org"
+			}
+		],
+		"bid": [
+			"8541"
+		]
+	},
+	"dates": {
+		"discovery": "2003-06-20",
+		"entry": "2004-05-21",
+		"modified": "2005-05-13"
+	}
 }

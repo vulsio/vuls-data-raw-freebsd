@@ -1,73 +1,73 @@
 {
-  "vid": "f645aa90-a3e8-11e3-a422-3c970e169bc2",
-  "topic": "gnutls -- multiple certificate verification issues",
-  "affects": [
-    {
-      "name": [
-        "gnutls"
-      ],
-      "range": [
-        {
-          "lt": "2.12.23_4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "linux-f10-gnutls"
-      ],
-      "range": [
-        {
-          "lt": "2.12.23_4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gnutls-devel"
-      ],
-      "range": [
-        {
-          "lt": "3.1.22"
-        },
-        {
-          "lt": "3.2.12",
-          "gt": "3.2.0"
-        }
-      ]
-    },
-    {
-      "name": [
-        "gnutls3"
-      ],
-      "range": [
-        {
-          "lt": "3.1.22"
-        },
-        {
-          "lt": "3.2.12",
-          "gt": "3.2.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>GnuTLS project reports:</p>\n\t<blockquote cite=\"http://www.gnutls.org/security.html#GNUTLS-SA-2014-2\">\n\t  <p>A vulnerability was discovered that affects the\n\t    certificate verification functions of all gnutls\n\t    versions. A specially crafted certificate could\n\t    bypass certificate validation checks.  The\n\t    vulnerability was discovered during an audit of\n\t    GnuTLS for Red Hat.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.gnutls.org/security.html#GNUTLS-SA-2014-1\">\n\t  <p>Suman Jana reported a vulnerability that affects\n\t    the certificate verification functions of\n\t    gnutls 2.11.5 and later versions. A version 1\n\t    intermediate certificate will be considered as\n\t    a CA certificate by default (something that\n\t    deviates from the documented behavior).</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.gnutls.org/security.html#GNUTLS-SA-2014-1",
-      "http://www.gnutls.org/security.html#GNUTLS-SA-2014-2"
-    ],
-    "cvename": [
-      "CVE-2014-0092",
-      "CVE-2014-1959"
-    ]
-  },
-  "dates": {
-    "discovery": "2014-03-03",
-    "entry": "2014-03-04",
-    "modified": "2014-04-30"
-  }
+	"vid": "f645aa90-a3e8-11e3-a422-3c970e169bc2",
+	"topic": "gnutls -- multiple certificate verification issues",
+	"affects": [
+		{
+			"name": [
+				"gnutls"
+			],
+			"range": [
+				{
+					"lt": "2.12.23_4"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-f10-gnutls"
+			],
+			"range": [
+				{
+					"lt": "2.12.23_4"
+				}
+			]
+		},
+		{
+			"name": [
+				"gnutls-devel"
+			],
+			"range": [
+				{
+					"lt": "3.1.22"
+				},
+				{
+					"lt": "3.2.12",
+					"gt": "3.2.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"gnutls3"
+			],
+			"range": [
+				{
+					"lt": "3.1.22"
+				},
+				{
+					"lt": "3.2.12",
+					"gt": "3.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GnuTLS project reports:</p>\n\t<blockquote cite=\"http://www.gnutls.org/security.html#GNUTLS-SA-2014-2\">\n\t  <p>A vulnerability was discovered that affects the\n\t    certificate verification functions of all gnutls\n\t    versions. A specially crafted certificate could\n\t    bypass certificate validation checks.  The\n\t    vulnerability was discovered during an audit of\n\t    GnuTLS for Red Hat.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.gnutls.org/security.html#GNUTLS-SA-2014-1\">\n\t  <p>Suman Jana reported a vulnerability that affects\n\t    the certificate verification functions of\n\t    gnutls 2.11.5 and later versions. A version 1\n\t    intermediate certificate will be considered as\n\t    a CA certificate by default (something that\n\t    deviates from the documented behavior).</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.gnutls.org/security.html#GNUTLS-SA-2014-1",
+			"http://www.gnutls.org/security.html#GNUTLS-SA-2014-2"
+		],
+		"cvename": [
+			"CVE-2014-0092",
+			"CVE-2014-1959"
+		]
+	},
+	"dates": {
+		"discovery": "2014-03-03",
+		"entry": "2014-03-04",
+		"modified": "2014-04-30"
+	}
 }

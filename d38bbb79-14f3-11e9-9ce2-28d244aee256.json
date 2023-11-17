@@ -1,36 +1,36 @@
 {
-  "vid": "d38bbb79-14f3-11e9-9ce2-28d244aee256",
-  "topic": "irssi -- Use after free",
-  "affects": [
-    {
-      "name": [
-        "irssi"
-      ],
-      "range": [
-        {
-          "lt": "1.1.2,1",
-          "ge": "1.1.0,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2019_01.txt\">\n\t  <p>Use after free when hidden lines were expired from the scroll\n\t\t  buffer. It may affect the stability of Irssi. (CWE-417, CWE-825)</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://irssi.org/security/irssi_sa_2019_01.txt"
-    ],
-    "cvename": [
-      "CVE-2019-5882"
-    ],
-    "freebsd_pr": [
-      "ports/234798"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-01-09",
-    "entry": "2019-01-10"
-  }
+	"vid": "d38bbb79-14f3-11e9-9ce2-28d244aee256",
+	"topic": "irssi -- Use after free",
+	"affects": [
+		{
+			"name": [
+				"irssi"
+			],
+			"range": [
+				{
+					"lt": "1.1.2,1",
+					"ge": "1.1.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Irssi reports:</p>\n\t<blockquote cite=\"https://irssi.org/security/irssi_sa_2019_01.txt\">\n\t  <p>Use after free when hidden lines were expired from the scroll\n\t\t  buffer. It may affect the stability of Irssi. (CWE-417, CWE-825)</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://irssi.org/security/irssi_sa_2019_01.txt"
+		],
+		"cvename": [
+			"CVE-2019-5882"
+		],
+		"freebsd_pr": [
+			"ports/234798"
+		]
+	},
+	"dates": {
+		"discovery": "2019-01-09",
+		"entry": "2019-01-10"
+	}
 }

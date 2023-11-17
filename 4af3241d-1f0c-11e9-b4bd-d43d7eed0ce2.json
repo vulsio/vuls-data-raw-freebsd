@@ -1,33 +1,33 @@
 {
-  "vid": "4af3241d-1f0c-11e9-b4bd-d43d7eed0ce2",
-  "topic": "www/mod_dav_svn -- Malicious SVN clients can crash mod_dav_svn.",
-  "affects": [
-    {
-      "name": [
-        "mod_dav_svn"
-      ],
-      "range": [
-        {
-          "lt": "1.10.3",
-          "ge": "1.10.0"
-        },
-        {
-          "eq": "1.11.0"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2018-11803-advisory.txt\">\n\t  <p>Malicious SVN clients can trigger a crash in mod_dav_svn by omitting\n\t     the root path from a recursive directory listing request.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://subversion.apache.org/security/CVE-2018-11803-advisory.txt"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-01-23",
-    "entry": "2019-01-23"
-  }
+	"vid": "4af3241d-1f0c-11e9-b4bd-d43d7eed0ce2",
+	"topic": "www/mod_dav_svn -- Malicious SVN clients can crash mod_dav_svn.",
+	"affects": [
+		{
+			"name": [
+				"mod_dav_svn"
+			],
+			"range": [
+				{
+					"lt": "1.10.3",
+					"ge": "1.10.0"
+				},
+				{
+					"eq": "1.11.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Subversion project reports:</p>\n\t<blockquote cite=\"http://subversion.apache.org/security/CVE-2018-11803-advisory.txt\">\n\t  <p>Malicious SVN clients can trigger a crash in mod_dav_svn by omitting\n\t     the root path from a recursive directory listing request.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://subversion.apache.org/security/CVE-2018-11803-advisory.txt"
+		]
+	},
+	"dates": {
+		"discovery": "2019-01-23",
+		"entry": "2019-01-23"
+	}
 }

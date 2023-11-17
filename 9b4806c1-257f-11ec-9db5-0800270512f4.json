@@ -1,69 +1,69 @@
 {
-  "vid": "9b4806c1-257f-11ec-9db5-0800270512f4",
-  "topic": "redis -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "redis-devel"
-      ],
-      "range": [
-        {
-          "lt": "7.0.0.20211005"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis"
-      ],
-      "range": [
-        {
-          "lt": "6.2.6"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis6"
-      ],
-      "range": [
-        {
-          "lt": "6.0.16"
-        }
-      ]
-    },
-    {
-      "name": [
-        "redis5"
-      ],
-      "range": [
-        {
-          "lt": "5.0.14"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The Redis Team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/GS_9L2KCk9g/m/Q7ZN1R1cDAAJ\">\n\t  <dl>\n\t    <dt>CVE-2021-41099</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow handling certain string commands\n\t      and network payloads, when proto-max-bulk-len is manually configured.\n\t    </dd>\n\t    <dt>CVE-2021-32762</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow issue in redis-cli and redis-sentinel\n\t      parsing large multi-bulk replies on some older and less common platforms.\n\t    </dd>\n\t    <dt>CVE-2021-32687</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow with intsets, when set-max-intset-entries\n\t      is manually configured to a non-default, very large value.\n\t    </dd>\n\t    <dt>CVE-2021-32675</dt>\n\t    <dd>\n\t      Denial Of Service when processing RESP request payloads with a large\n\t      number of elements on many connections.\n\t    </dd>\n\t    <dt>CVE-2021-32672</dt>\n\t    <dd>\n\t      Random heap reading issue with Lua Debugger.\n\t    </dd>\n\t    <dt>CVE-2021-32628</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow handling ziplist-encoded data types,\n\t      when configuring a large, non-default value for hash-max-ziplist-entries,\n\t      hash-max-ziplist-value, zset-max-ziplist-entries or zset-max-ziplist-value.\n\t    </dd>\n\t    <dt>CVE-2021-32627</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow issue with streams, when configuring\n\t      a non-default, large value for proto-max-bulk-len and\n\t      client-query-buffer-limit.\n\t    </dd>\n\t    <dt>CVE-2021-32626</dt>\n\t    <dd>\n\t      Specially crafted Lua scripts may result with Heap buffer overflow.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://groups.google.com/g/redis-db/c/GS_9L2KCk9g"
-    ],
-    "cvename": [
-      "CVE-2021-41099",
-      "CVE-2021-32762",
-      "CVE-2021-32687",
-      "CVE-2021-32675",
-      "CVE-2021-32672",
-      "CVE-2021-32628",
-      "CVE-2021-32627",
-      "CVE-2021-32626"
-    ]
-  },
-  "dates": {
-    "discovery": "2021-10-04",
-    "entry": "2021-10-05"
-  }
+	"vid": "9b4806c1-257f-11ec-9db5-0800270512f4",
+	"topic": "redis -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"redis-devel"
+			],
+			"range": [
+				{
+					"lt": "7.0.0.20211005"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "6.2.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis6"
+			],
+			"range": [
+				{
+					"lt": "6.0.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis5"
+			],
+			"range": [
+				{
+					"lt": "5.0.14"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Redis Team reports:</p>\n\t<blockquote cite=\"https://groups.google.com/g/redis-db/c/GS_9L2KCk9g/m/Q7ZN1R1cDAAJ\">\n\t  <dl>\n\t    <dt>CVE-2021-41099</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow handling certain string commands\n\t      and network payloads, when proto-max-bulk-len is manually configured.\n\t    </dd>\n\t    <dt>CVE-2021-32762</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow issue in redis-cli and redis-sentinel\n\t      parsing large multi-bulk replies on some older and less common platforms.\n\t    </dd>\n\t    <dt>CVE-2021-32687</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow with intsets, when set-max-intset-entries\n\t      is manually configured to a non-default, very large value.\n\t    </dd>\n\t    <dt>CVE-2021-32675</dt>\n\t    <dd>\n\t      Denial Of Service when processing RESP request payloads with a large\n\t      number of elements on many connections.\n\t    </dd>\n\t    <dt>CVE-2021-32672</dt>\n\t    <dd>\n\t      Random heap reading issue with Lua Debugger.\n\t    </dd>\n\t    <dt>CVE-2021-32628</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow handling ziplist-encoded data types,\n\t      when configuring a large, non-default value for hash-max-ziplist-entries,\n\t      hash-max-ziplist-value, zset-max-ziplist-entries or zset-max-ziplist-value.\n\t    </dd>\n\t    <dt>CVE-2021-32627</dt>\n\t    <dd>\n\t      Integer to heap buffer overflow issue with streams, when configuring\n\t      a non-default, large value for proto-max-bulk-len and\n\t      client-query-buffer-limit.\n\t    </dd>\n\t    <dt>CVE-2021-32626</dt>\n\t    <dd>\n\t      Specially crafted Lua scripts may result with Heap buffer overflow.\n\t    </dd>\n\t  </dl>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://groups.google.com/g/redis-db/c/GS_9L2KCk9g"
+		],
+		"cvename": [
+			"CVE-2021-41099",
+			"CVE-2021-32762",
+			"CVE-2021-32687",
+			"CVE-2021-32675",
+			"CVE-2021-32672",
+			"CVE-2021-32628",
+			"CVE-2021-32627",
+			"CVE-2021-32626"
+		]
+	},
+	"dates": {
+		"discovery": "2021-10-04",
+		"entry": "2021-10-05"
+	}
 }

@@ -1,33 +1,33 @@
 {
-  "vid": "26c9e8c6-1c99-11d9-814e-0001020eed82",
-  "topic": "sharutils -- buffer overflows",
-  "affects": [
-    {
-      "name": [
-        "sharutils"
-      ],
-      "range": [
-        {
-          "lt": "4.2.1_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>From Gentoo advisory GLSA 200410-01:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200410-01.xml\">\n\t  <p>sharutils contains two buffer overflows.  Ulf Harnhammar\n\t    discovered a buffer overflow in shar.c, where the length\n\t    of data returned by the wc command is not checked.\n\t    Florian Schilhabel discovered another buffer overflow in\n\t    unshar.c.</p>\n\t  <p>An attacker could exploit these vulnerabilities to\n\t    execute arbitrary code as the user running one of the\n\t    sharutils programs.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.gentoo.org/security/en/glsa/glsa-200410-01.xml",
-      "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=265904"
-    ],
-    "bid": [
-      "11298"
-    ]
-  },
-  "dates": {
-    "discovery": "2004-08-15",
-    "entry": "2004-10-13"
-  }
+	"vid": "26c9e8c6-1c99-11d9-814e-0001020eed82",
+	"topic": "sharutils -- buffer overflows",
+	"affects": [
+		{
+			"name": [
+				"sharutils"
+			],
+			"range": [
+				{
+					"lt": "4.2.1_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>From Gentoo advisory GLSA 200410-01:</p>\n\t<blockquote cite=\"http://www.gentoo.org/security/en/glsa/glsa-200410-01.xml\">\n\t  <p>sharutils contains two buffer overflows.  Ulf Harnhammar\n\t    discovered a buffer overflow in shar.c, where the length\n\t    of data returned by the wc command is not checked.\n\t    Florian Schilhabel discovered another buffer overflow in\n\t    unshar.c.</p>\n\t  <p>An attacker could exploit these vulnerabilities to\n\t    execute arbitrary code as the user running one of the\n\t    sharutils programs.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.gentoo.org/security/en/glsa/glsa-200410-01.xml",
+			"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=265904"
+		],
+		"bid": [
+			"11298"
+		]
+	},
+	"dates": {
+		"discovery": "2004-08-15",
+		"entry": "2004-10-13"
+	}
 }

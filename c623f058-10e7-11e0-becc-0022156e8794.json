@@ -1,43 +1,43 @@
 {
-  "vid": "c623f058-10e7-11e0-becc-0022156e8794",
-  "topic": "php-filter -- Denial of Service",
-  "affects": [
-    {
-      "name": [
-        "php5-filter"
-      ],
-      "range": [
-        {
-          "lt": "5.3.4"
-        }
-      ]
-    },
-    {
-      "name": [
-        "php52-filter"
-      ],
-      "range": [
-        {
-          "lt": "5.2.15"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The following DoS condition in filter extension\n\t  was fixed in PHP 5.3.4 and PHP 5.2.15:</p>\n      <blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3710\">\n\t<p>Stack consumption vulnerability in the filter_var\n\t  function in PHP 5.2.x through 5.2.14 and 5.3.x through\n\t  5.3.3, when FILTER_VALIDATE_EMAIL mode is used, allows\n\t  remote attackers to cause a denial of service (memory\n\t  consumption and application crash) via a long e-mail\n\t  address string.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://www.php.net/releases/5_3_4.php",
-      "http://www.php.net/releases/5_2_15.php"
-    ],
-    "cvename": [
-      "CVE-2010-3710"
-    ]
-  },
-  "dates": {
-    "discovery": "2010-12-13",
-    "entry": "2011-01-13"
-  }
+	"vid": "c623f058-10e7-11e0-becc-0022156e8794",
+	"topic": "php-filter -- Denial of Service",
+	"affects": [
+		{
+			"name": [
+				"php5-filter"
+			],
+			"range": [
+				{
+					"lt": "5.3.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"php52-filter"
+			],
+			"range": [
+				{
+					"lt": "5.2.15"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The following DoS condition in filter extension\n\t  was fixed in PHP 5.3.4 and PHP 5.2.15:</p>\n      <blockquote cite=\"http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3710\">\n\t<p>Stack consumption vulnerability in the filter_var\n\t  function in PHP 5.2.x through 5.2.14 and 5.3.x through\n\t  5.3.3, when FILTER_VALIDATE_EMAIL mode is used, allows\n\t  remote attackers to cause a denial of service (memory\n\t  consumption and application crash) via a long e-mail\n\t  address string.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://www.php.net/releases/5_3_4.php",
+			"http://www.php.net/releases/5_2_15.php"
+		],
+		"cvename": [
+			"CVE-2010-3710"
+		]
+	},
+	"dates": {
+		"discovery": "2010-12-13",
+		"entry": "2011-01-13"
+	}
 }

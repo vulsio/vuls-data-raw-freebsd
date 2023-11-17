@@ -1,32 +1,32 @@
 {
-  "vid": "1340fcc1-2953-11e9-bc44-a4badb296695",
-  "topic": "mail/dovecot -- Suitable client certificate can be used to login as other user",
-  "affects": [
-    {
-      "name": [
-        "dovecot"
-      ],
-      "range": [
-        {
-          "lt": "2.3.4.1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Aki Tuomi (Open-Xchange  Oy) reports:</p>\n\t<blockquote cite=\"https://www.mail-archive.com/dovecot@dovecot.org/msg76117.html\">\n\t  <p>Normally Dovecot is configured to authenticate\nimap/pop3/managesieve/submission clients using regular username/password\ncombination. Some installations have also required clients to present a\ntrusted SSL certificate on top of that. It's also possible to configure\nDovecot to take the username from the certificate instead of from the\nuser provided authentication. It's also possible to avoid having a\npassword at all, only trusting the SSL certificate.\n\nIf the provided trusted SSL certificate is missing the username field,\nDovecot should be failing the authentication. However, the earlier\nversions will take the username from the user provided authentication\nfields (e.g. LOGIN command). If there is no additional password\nverification, this allows the attacker to login as anyone else in the\nsystem.\n\nThis affects only installations using:\n\nauth_ssl_require_client_cert = yes\nauth_ssl_username_from_cert = yes\n\nAttacker must also have access to a valid trusted certificate without\nthe ssl_cert_username_field in it. The default is commonName, which\nalmost certainly exists in all certificates. This could happen for\nexample if ssl_cert_username_field is a field that normally doesn't\nexist, and attacker has access to a web server's certificate (and key),\nwhich is signed with the same CA.\n\nAttack can be migitated by having the certificates with proper Extended\nKey Usage, such as 'TLS Web Server' and 'TLS Web Server Client'.\n\nAlso, ssl_cert_username_field setting was ignored with external SMTP\nAUTH, because none of the MTAs (Postfix, Exim) currently send the\ncert_username field. This may have allowed users with trusted\ncertificate to specify any username in the authentication. This does not\napply to Dovecot Submission service.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.mail-archive.com/dovecot@dovecot.org/msg76117.html"
-    ],
-    "cvename": [
-      "CVE-2019-3814"
-    ]
-  },
-  "dates": {
-    "discovery": "2019-01-16",
-    "entry": "2019-02-05"
-  }
+	"vid": "1340fcc1-2953-11e9-bc44-a4badb296695",
+	"topic": "mail/dovecot -- Suitable client certificate can be used to login as other user",
+	"affects": [
+		{
+			"name": [
+				"dovecot"
+			],
+			"range": [
+				{
+					"lt": "2.3.4.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Aki Tuomi (Open-Xchange  Oy) reports:</p>\n\t<blockquote cite=\"https://www.mail-archive.com/dovecot@dovecot.org/msg76117.html\">\n\t  <p>Normally Dovecot is configured to authenticate\nimap/pop3/managesieve/submission clients using regular username/password\ncombination. Some installations have also required clients to present a\ntrusted SSL certificate on top of that. It's also possible to configure\nDovecot to take the username from the certificate instead of from the\nuser provided authentication. It's also possible to avoid having a\npassword at all, only trusting the SSL certificate.\n\nIf the provided trusted SSL certificate is missing the username field,\nDovecot should be failing the authentication. However, the earlier\nversions will take the username from the user provided authentication\nfields (e.g. LOGIN command). If there is no additional password\nverification, this allows the attacker to login as anyone else in the\nsystem.\n\nThis affects only installations using:\n\nauth_ssl_require_client_cert = yes\nauth_ssl_username_from_cert = yes\n\nAttacker must also have access to a valid trusted certificate without\nthe ssl_cert_username_field in it. The default is commonName, which\nalmost certainly exists in all certificates. This could happen for\nexample if ssl_cert_username_field is a field that normally doesn't\nexist, and attacker has access to a web server's certificate (and key),\nwhich is signed with the same CA.\n\nAttack can be migitated by having the certificates with proper Extended\nKey Usage, such as 'TLS Web Server' and 'TLS Web Server Client'.\n\nAlso, ssl_cert_username_field setting was ignored with external SMTP\nAUTH, because none of the MTAs (Postfix, Exim) currently send the\ncert_username field. This may have allowed users with trusted\ncertificate to specify any username in the authentication. This does not\napply to Dovecot Submission service.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.mail-archive.com/dovecot@dovecot.org/msg76117.html"
+		],
+		"cvename": [
+			"CVE-2019-3814"
+		]
+	},
+	"dates": {
+		"discovery": "2019-01-16",
+		"entry": "2019-02-05"
+	}
 }

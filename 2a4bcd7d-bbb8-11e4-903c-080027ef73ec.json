@@ -1,32 +1,32 @@
 {
-  "vid": "2a4bcd7d-bbb8-11e4-903c-080027ef73ec",
-  "topic": "e2fsprogs -- potential buffer overflow in closefs()",
-  "affects": [
-    {
-      "name": [
-        "e2fsprogs"
-      ],
-      "range": [
-        {
-          "lt": "1.42.12_2"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Theodore Ts'o reports:</p>\n\t<blockquote cite=\"http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git/commit/?h=maint&amp;id=49d0fe2a14f2a23da2fe299643379b8c1d37df73\">\n\t  <p>On a carefully crafted filesystem that gets modified through\n\t    tune2fs or debugfs, it is possible to trigger a buffer overrun when\n\t    the file system is closed via closefs().</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git/commit/?h=maint&id=49d0fe2a14f2a23da2fe299643379b8c1d37df73"
-    ],
-    "cvename": [
-      "CVE-2015-1572"
-    ]
-  },
-  "dates": {
-    "discovery": "2015-02-06",
-    "entry": "2015-02-24"
-  }
+	"vid": "2a4bcd7d-bbb8-11e4-903c-080027ef73ec",
+	"topic": "e2fsprogs -- potential buffer overflow in closefs()",
+	"affects": [
+		{
+			"name": [
+				"e2fsprogs"
+			],
+			"range": [
+				{
+					"lt": "1.42.12_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Theodore Ts'o reports:</p>\n\t<blockquote cite=\"http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git/commit/?h=maint&amp;id=49d0fe2a14f2a23da2fe299643379b8c1d37df73\">\n\t  <p>On a carefully crafted filesystem that gets modified through\n\t    tune2fs or debugfs, it is possible to trigger a buffer overrun when\n\t    the file system is closed via closefs().</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git/commit/?h=maint&id=49d0fe2a14f2a23da2fe299643379b8c1d37df73"
+		],
+		"cvename": [
+			"CVE-2015-1572"
+		]
+	},
+	"dates": {
+		"discovery": "2015-02-06",
+		"entry": "2015-02-24"
+	}
 }

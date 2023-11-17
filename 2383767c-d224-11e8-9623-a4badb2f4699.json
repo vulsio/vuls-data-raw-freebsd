@@ -1,37 +1,37 @@
 {
-  "vid": "2383767c-d224-11e8-9623-a4badb2f4699",
-  "topic": "libssh -- authentication bypass vulnerability",
-  "affects": [
-    {
-      "name": [
-        "libssh"
-      ],
-      "range": [
-        {
-          "lt": "0.7.6",
-          "ge": "0.6"
-        },
-        {
-          "lt": "0.8.4",
-          "ge": "0.8"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>gladiac reports:</p>\n\t<blockquote cite=\"https://www.libssh.org/2018/10/16/libssh-0-8-4-and-0-7-6-security-and-bugfix-release/\">\n\t  <p>libssh versions 0.6 and above have an authentication bypass\n\t    vulnerability in the server code. By presenting the server an\n\t    SSH2_MSG_USERAUTH_SUCCESS message in place of the\n\t    SSH2_MSG_USERAUTH_REQUEST message which the server would expect to\n\t    initiate authentication, the attacker could successfully authentciate\n\t    without any credentials.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://www.libssh.org/2018/10/16/libssh-0-8-4-and-0-7-6-security-and-bugfix-release/"
-    ],
-    "cvename": [
-      "CVE-2018-10933"
-    ]
-  },
-  "dates": {
-    "discovery": "2018-10-16",
-    "entry": "2018-10-17"
-  }
+	"vid": "2383767c-d224-11e8-9623-a4badb2f4699",
+	"topic": "libssh -- authentication bypass vulnerability",
+	"affects": [
+		{
+			"name": [
+				"libssh"
+			],
+			"range": [
+				{
+					"lt": "0.7.6",
+					"ge": "0.6"
+				},
+				{
+					"lt": "0.8.4",
+					"ge": "0.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>gladiac reports:</p>\n\t<blockquote cite=\"https://www.libssh.org/2018/10/16/libssh-0-8-4-and-0-7-6-security-and-bugfix-release/\">\n\t  <p>libssh versions 0.6 and above have an authentication bypass\n\t    vulnerability in the server code. By presenting the server an\n\t    SSH2_MSG_USERAUTH_SUCCESS message in place of the\n\t    SSH2_MSG_USERAUTH_REQUEST message which the server would expect to\n\t    initiate authentication, the attacker could successfully authentciate\n\t    without any credentials.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.libssh.org/2018/10/16/libssh-0-8-4-and-0-7-6-security-and-bugfix-release/"
+		],
+		"cvename": [
+			"CVE-2018-10933"
+		]
+	},
+	"dates": {
+		"discovery": "2018-10-16",
+		"entry": "2018-10-17"
+	}
 }

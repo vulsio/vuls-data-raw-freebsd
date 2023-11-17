@@ -1,34 +1,34 @@
 {
-  "vid": "821afaa2-9e9a-11dc-a7e3-0016360406fa",
-  "topic": "liveMedia -- DoS vulnerability",
-  "affects": [
-    {
-      "name": [
-        "liveMedia"
-      ],
-      "range": [
-        {
-          "lt": "2007.11.18,1"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The live555 development team reports:</p>\n\t<blockquote cite=\"http://www.live555.com/liveMedia/public/changelog.txt\">\n\t  <p>Fixed a bounds-checking error in \"parseRTSPRequestString()\"\n\t    caused by an int vs. unsigned problem.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://aluigi.altervista.org/adv/live555x-adv.txt\">\n\t  <p>The function which handles the incoming queries from the\n\t    clients is affected by a vulnerability which allows an attacker\n\t    to crash the server remotely using the smallest RTSP query\n\t    possible to use.</p>\n    </blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://aluigi.altervista.org/adv/live555x-adv.txt",
-      "http://www.live555.com/liveMedia/public/changelog.txt"
-    ],
-    "cvename": [
-      "CVE-2007-6036"
-    ]
-  },
-  "dates": {
-    "discovery": "2007-11-20",
-    "entry": "2007-12-08",
-    "modified": "2007-12-09"
-  }
+	"vid": "821afaa2-9e9a-11dc-a7e3-0016360406fa",
+	"topic": "liveMedia -- DoS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"liveMedia"
+			],
+			"range": [
+				{
+					"lt": "2007.11.18,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The live555 development team reports:</p>\n\t<blockquote cite=\"http://www.live555.com/liveMedia/public/changelog.txt\">\n\t  <p>Fixed a bounds-checking error in \"parseRTSPRequestString()\"\n\t    caused by an int vs. unsigned problem.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://aluigi.altervista.org/adv/live555x-adv.txt\">\n\t  <p>The function which handles the incoming queries from the\n\t    clients is affected by a vulnerability which allows an attacker\n\t    to crash the server remotely using the smallest RTSP query\n\t    possible to use.</p>\n    </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://aluigi.altervista.org/adv/live555x-adv.txt",
+			"http://www.live555.com/liveMedia/public/changelog.txt"
+		],
+		"cvename": [
+			"CVE-2007-6036"
+		]
+	},
+	"dates": {
+		"discovery": "2007-11-20",
+		"entry": "2007-12-08",
+		"modified": "2007-12-09"
+	}
 }

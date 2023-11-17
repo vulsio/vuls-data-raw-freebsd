@@ -1,33 +1,33 @@
 {
-  "vid": "6b3591ea-e2d2-11e5-a6be-5453ed2e2b49",
-  "topic": "libssh -- weak Diffie-Hellman secret generation",
-  "affects": [
-    {
-      "name": [
-        "libssh"
-      ],
-      "range": [
-        {
-          "lt": "0.7.3"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Andreas Schneider reports:</p>\n\t<blockquote cite=\"https://www.libssh.org/2016/02/23/libssh-0-7-3-security-and-bugfix-release/\">\n\t  <p>libssh versions 0.1 and above have a bits/bytes confusion bug and\n\t  generate an abnormally short ephemeral secret for the\n\t  diffie-hellman-group1 and diffie-hellman-group14 key exchange\n\t  methods. The resulting secret is 128 bits long, instead of the\n\t  recommended sizes of 1024 and 2048 bits respectively. There are\n\t  practical algorithms (Baby steps/Giant steps, Pollard’s rho) that can\n\t  solve this problem in O(2^63) operations.</p>\n\t  <p>Both client and server are are vulnerable, pre-authentication.\n\t  This vulnerability could be exploited by an eavesdropper with enough\n\t  resources to decrypt or intercept SSH sessions. The bug was found\n\t  during an internal code review by Aris Adamantiadis of the libssh\n\t  team.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-0739",
-      "https://www.libssh.org/2016/02/23/libssh-0-7-3-security-and-bugfix-release/"
-    ],
-    "cvename": [
-      "CVE-2016-0739"
-    ]
-  },
-  "dates": {
-    "discovery": "2016-02-23",
-    "entry": "2016-03-05"
-  }
+	"vid": "6b3591ea-e2d2-11e5-a6be-5453ed2e2b49",
+	"topic": "libssh -- weak Diffie-Hellman secret generation",
+	"affects": [
+		{
+			"name": [
+				"libssh"
+			],
+			"range": [
+				{
+					"lt": "0.7.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Andreas Schneider reports:</p>\n\t<blockquote cite=\"https://www.libssh.org/2016/02/23/libssh-0-7-3-security-and-bugfix-release/\">\n\t  <p>libssh versions 0.1 and above have a bits/bytes confusion bug and\n\t  generate an abnormally short ephemeral secret for the\n\t  diffie-hellman-group1 and diffie-hellman-group14 key exchange\n\t  methods. The resulting secret is 128 bits long, instead of the\n\t  recommended sizes of 1024 and 2048 bits respectively. There are\n\t  practical algorithms (Baby steps/Giant steps, Pollard’s rho) that can\n\t  solve this problem in O(2^63) operations.</p>\n\t  <p>Both client and server are are vulnerable, pre-authentication.\n\t  This vulnerability could be exploited by an eavesdropper with enough\n\t  resources to decrypt or intercept SSH sessions. The bug was found\n\t  during an internal code review by Aris Adamantiadis of the libssh\n\t  team.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-0739",
+			"https://www.libssh.org/2016/02/23/libssh-0-7-3-security-and-bugfix-release/"
+		],
+		"cvename": [
+			"CVE-2016-0739"
+		]
+	},
+	"dates": {
+		"discovery": "2016-02-23",
+		"entry": "2016-03-05"
+	}
 }

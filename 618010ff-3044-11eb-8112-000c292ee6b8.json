@@ -1,32 +1,32 @@
 {
-  "vid": "618010ff-3044-11eb-8112-000c292ee6b8",
-  "topic": "nomad -- multiple vulnerabilities",
-  "affects": [
-    {
-      "name": [
-        "nomad"
-      ],
-      "range": [
-        {
-          "lt": "0.12.6"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>The HashiCorp team reports:</p>\n\t<blockquote cite=\"https://github.com/hashicorp/nomad/blob/master/CHANGELOG.md\">\n\t  <ul>\n\t    <li>artifact: Fixed a bug where interpolation can be used in the\n\t      artifact destination field to write artifact payloads outside\n\t      the allocation directory.</li>\n\t    <li>template: Fixed a bug where interpolation can be used in the\n\t      template source and destination fields to read or write files\n\t      outside the allocation directory even when disable_file_sandbox\n\t      was set to false (the default).</li>\n\t    <li>template: Fixed a bug where the disable_file_sandbox\n\t      configuration was only respected for the template file function\n\t      and not the template source and destination fields.</li>\n\t  </ul>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "https://github.com/hashicorp/nomad/blob/master/CHANGELOG.md"
-    ],
-    "cvename": [
-      "CVE-2020-27195"
-    ]
-  },
-  "dates": {
-    "discovery": "2020-10-21",
-    "entry": "2020-11-27"
-  }
+	"vid": "618010ff-3044-11eb-8112-000c292ee6b8",
+	"topic": "nomad -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"nomad"
+			],
+			"range": [
+				{
+					"lt": "0.12.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The HashiCorp team reports:</p>\n\t<blockquote cite=\"https://github.com/hashicorp/nomad/blob/master/CHANGELOG.md\">\n\t  <ul>\n\t    <li>artifact: Fixed a bug where interpolation can be used in the\n\t      artifact destination field to write artifact payloads outside\n\t      the allocation directory.</li>\n\t    <li>template: Fixed a bug where interpolation can be used in the\n\t      template source and destination fields to read or write files\n\t      outside the allocation directory even when disable_file_sandbox\n\t      was set to false (the default).</li>\n\t    <li>template: Fixed a bug where the disable_file_sandbox\n\t      configuration was only respected for the template file function\n\t      and not the template source and destination fields.</li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/hashicorp/nomad/blob/master/CHANGELOG.md"
+		],
+		"cvename": [
+			"CVE-2020-27195"
+		]
+	},
+	"dates": {
+		"discovery": "2020-10-21",
+		"entry": "2020-11-27"
+	}
 }

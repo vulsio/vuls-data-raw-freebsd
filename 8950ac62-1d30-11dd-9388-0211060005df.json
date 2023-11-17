@@ -1,42 +1,42 @@
 {
-  "vid": "8950ac62-1d30-11dd-9388-0211060005df",
-  "topic": "qemu -- \"drive_init()\" Disk Format Security Bypass",
-  "affects": [
-    {
-      "name": [
-        "qemu",
-        "qemu-devel"
-      ],
-      "range": [
-        {
-          "lt": "0.9.1_6"
-        },
-        {
-          "lt": "0.9.1s.20080302_6",
-          "ge": "0.9.1s.20070101*"
-        }
-      ]
-    }
-  ],
-  "description": {
-    "xmlns": "http://www.w3.org/1999/xhtml",
-    "text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30111/\">\n\t  <p>A vulnerability has been reported in QEMU, which can be exploited\n\t    by malicious, local users to bypass certain security\n\t    restrictions.</p>\n\t  <p>The vulnerability is caused due to the \"drive_init()\" function\n\t    in vl.c determining the format of a disk from data contained in\n\t    the disk's header. This can be exploited by a malicious user in\n\t    a guest system to e.g. read arbitrary files on the host by\n\t    writing a fake header to a raw formatted disk image.</p>\n\t</blockquote>\n      "
-  },
-  "references": {
-    "url": [
-      "http://secunia.com/advisories/30111/"
-    ],
-    "cvename": [
-      "CVE-2008-2004"
-    ],
-    "mlist": [
-      {
-        "text": "http://lists.gnu.org/archive/html/qemu-devel/2008-04/msg00675.html"
-      }
-    ]
-  },
-  "dates": {
-    "discovery": "2008-04-28",
-    "entry": "2008-05-08"
-  }
+	"vid": "8950ac62-1d30-11dd-9388-0211060005df",
+	"topic": "qemu -- \"drive_init()\" Disk Format Security Bypass",
+	"affects": [
+		{
+			"name": [
+				"qemu",
+				"qemu-devel"
+			],
+			"range": [
+				{
+					"lt": "0.9.1_6"
+				},
+				{
+					"lt": "0.9.1s.20080302_6",
+					"ge": "0.9.1s.20070101*"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Secunia reports:</p>\n\t<blockquote cite=\"http://secunia.com/advisories/30111/\">\n\t  <p>A vulnerability has been reported in QEMU, which can be exploited\n\t    by malicious, local users to bypass certain security\n\t    restrictions.</p>\n\t  <p>The vulnerability is caused due to the \"drive_init()\" function\n\t    in vl.c determining the format of a disk from data contained in\n\t    the disk's header. This can be exploited by a malicious user in\n\t    a guest system to e.g. read arbitrary files on the host by\n\t    writing a fake header to a raw formatted disk image.</p>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"http://secunia.com/advisories/30111/"
+		],
+		"cvename": [
+			"CVE-2008-2004"
+		],
+		"mlist": [
+			{
+				"text": "http://lists.gnu.org/archive/html/qemu-devel/2008-04/msg00675.html"
+			}
+		]
+	},
+	"dates": {
+		"discovery": "2008-04-28",
+		"entry": "2008-05-08"
+	}
 }
