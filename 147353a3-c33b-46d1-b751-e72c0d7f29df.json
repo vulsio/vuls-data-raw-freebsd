@@ -1,0 +1,42 @@
+{
+	"vid": "147353a3-c33b-46d1-b751-e72c0d7f29df",
+	"topic": "electron{25,26} -- use after free in Garbage Collection",
+	"affects": [
+		{
+			"name": [
+				"electron25"
+			],
+			"range": [
+				{
+					"lt": "25.9.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"electron26"
+			],
+			"range": [
+				{
+					"lt": "26.6.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Electron developers report:</p>\n\t<blockquote cite=\"https://github.com/electron/electron/releases/tag/v25.9.6\">\n\t  <p>This update fixes the following vulnerability:</p>\n\t  <ul>\n\t    <li>Security: backported fix for CVE-2023-5997.</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/advisories/GHSA-fggx-frxq-cpx8"
+		],
+		"cvename": [
+			"CVE-2023-5997"
+		]
+	},
+	"dates": {
+		"discovery": "2023-11-22",
+		"entry": "2023-11-22"
+	}
+}
