@@ -1,0 +1,33 @@
+{
+	"vid": "a62c0c50-8aa0-11ee-ac0d-00e0670f2660",
+	"topic": "strongSwan -- vulnerability in charon-tkm",
+	"affects": [
+		{
+			"name": [
+				"strongswan"
+			],
+			"range": [
+				{
+					"lt": "5.9.11_3",
+					"ge": "5.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>strongSwan reports:</p>\n\t<blockquote cite=\"https://www.strongswan.org/blog/2023/11/20/strongswan-vulnerability-(cve-2023-41913).html\">\n\t  <p>A vulnerability in charon-tkm related to processing\n\t     DH public values was discovered in strongSwan\n\t     that can result in a buffer overflow and potentially\n\t     remote code execution. All versions since\n\t     5.3.0 are affected.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.strongswan.org/blog/2023/11/20/strongswan-vulnerability-(cve-2023-41913).html"
+		],
+		"cvename": [
+			"CVE-2023-41913"
+		]
+	},
+	"dates": {
+		"discovery": "2023-11-20",
+		"entry": "2023-11-24"
+	}
+}
