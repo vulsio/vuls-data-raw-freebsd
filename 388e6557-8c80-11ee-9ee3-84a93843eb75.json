@@ -1,0 +1,54 @@
+{
+	"vid": "388e6557-8c80-11ee-9ee3-84a93843eb75",
+	"topic": "MariaDB -- Denial-of-Service vulnerability",
+	"affects": [
+		{
+			"name": [
+				"mariadb105-server"
+			],
+			"range": [
+				{
+					"lt": "10.5.23"
+				}
+			]
+		},
+		{
+			"name": [
+				"mariadb106-server"
+			],
+			"range": [
+				{
+					"lt": "10.6.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"mariadb1011-server"
+			],
+			"range": [
+				{
+					"lt": "10.11.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The MariaDB project reports:</p>\n\t<blockquote cite=\"https://mariadb.com/kb/en/mariadb-10-11-6-release-notes/\">\n\t  <p>Easily exploitable vulnerability allows high privileged attacker\n\t    with network access via multiple protocols to compromise MySQL\n\t    Server. Successful attacks of this vulnerability can result in\n\t    unauthorized ability to cause a hang or frequently repeatable crash\n\t    (complete DOS) of MySQL Server.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://mariadb.com/kb/en/mariadb-10-11-6-release-notes/",
+			"https://mariadb.com/kb/en/mariadb-10-6-16-release-notes/",
+			"https://mariadb.com/kb/en/mariadb-10-5-23-release-notes/"
+		],
+		"cvename": [
+			"CVE-2023-22084"
+		]
+	},
+	"dates": {
+		"discovery": "2023-11-13",
+		"entry": "2023-11-26"
+	}
+}
