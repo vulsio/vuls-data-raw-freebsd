@@ -1,0 +1,42 @@
+{
+	"vid": "f25a34b1-910d-11ee-a1a2-641c67a117d8",
+	"topic": "varnish -- HTTP/2 Rapid Reset Attack",
+	"affects": [
+		{
+			"name": [
+				"varnish7"
+			],
+			"range": [
+				{
+					"lt": "7.4.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"varnish6"
+			],
+			"range": [
+				{
+					"lt": "6.6.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Varnish Cache Project reports:</p>\n\t<blockquote cite=\"https://varnish-cache.org/security/VSV00013.html\">\n\t  <p>A denial of service attack can be performed on Varnish Cache servers\n\tthat have the HTTP/2 protocol turned on. An attacker can create a large\n\tvolume of streams and immediately reset them without ever reaching the\n\tmaximum number of concurrent streams allowed for the session, causing\n\tthe Varnish server to consume unnecessary resources processing requests\n\tfor which the response will not be delivered.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://varnish-cache.org/security/VSV00013.html"
+		],
+		"cvename": [
+			"CVE-2023-44487"
+		]
+	},
+	"dates": {
+		"discovery": "2023-11-13",
+		"entry": "2023-12-02"
+	}
+}
