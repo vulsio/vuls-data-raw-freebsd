@@ -1,0 +1,65 @@
+{
+	"vid": "972568d6-3485-40ab-80ff-994a8aaf9683",
+	"topic": "xorg-server -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"xorg-server",
+				"xephyr",
+				"xorg-vfbserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.10,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-nestserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.10,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland"
+			],
+			"range": [
+				{
+					"lt": "23.2.3,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland-devel"
+			],
+			"range": [
+				{
+					"lt": "21.0.99.1.582"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X.Org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2023-December/003435.html\">\n\t  <ul>\n\t    <li>CVE-2023-6377/ZDI-CAN-22412/ZDI-CAN-22413: X.Org\n\t    server: Out-of-bounds memory write in XKB button actions\n\n\t    <p>A device has XKB button actions for each button on the\n\t    device. When a logical device switch happens (e.g. moving\n\t    from a touchpad to a mouse), the server re-calculates the\n\t    information available on the respective master device\n\t    (typically the Virtual Core Pointer). This re-calculation\n\t    only allocated enough memory for a single XKB action\n\t    rather instead of enough for the newly active physical\n\t    device's number of button. As a result, querying or\n\t    changing the XKB button actions results in out-of-bounds\n\t    memory reads and writes.</p>\n\n\t    <p>This may lead to local privilege escalation if the server is run as root or\n\t    remote code execution (e.g. x11 over ssh).</p></li>\n\n\t    <li>CVE-2023-6478/ZDI-CAN-22561: X.Org server:\n\t    Out-of-bounds memory read in RRChangeOutputProperty and\n\t    RRChangeProviderProperty\n\n\t    <p>This fixes an OOB read and the resulting information disclosure.</p>\n\n\t    <p>Length calculation for the request was clipped to a 32-bit integer. With\n\t    the correct stuff-&gt;nUnits value the expected request size was\n\t    truncated, passing the REQUEST_FIXED_SIZE check.</p>\n\n\t    <p>The server then proceeded with reading at least stuff-&gt;nUnits bytes\n\t    (depending on stuff-&gt;format) from the request and stuffing whatever it\n\t    finds into the property. In the process it would also allocate at least\n\t    stuff-&gt;nUnits bytes, i.e. 4GB.</p></li>\n\t  </ul>\n\t</blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://lists.x.org/archives/xorg-announce/2023-December/003435.html"
+		],
+		"cvename": [
+			"CVE-2023-6377",
+			"CVE-2023-6478"
+		]
+	},
+	"dates": {
+		"discovery": "2023-12-13",
+		"entry": "2023-12-13"
+	}
+}

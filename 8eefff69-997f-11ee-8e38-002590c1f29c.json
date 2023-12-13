@@ -1,0 +1,37 @@
+{
+	"vid": "8eefff69-997f-11ee-8e38-002590c1f29c",
+	"topic": "FreeBSD -- NFS client data corruption and kernel memory disclosure",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "14.0_3",
+					"ge": "14.0"
+				},
+				{
+					"lt": "13.2_8",
+					"ge": "13.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>In FreeBSD 13.2 and 14.0, the NFS client was optimized to improve\n\tthe performance of IO_APPEND writes, that is, writes which add data\n\tto the end of a file and so extend its size.  This uncovered an old\n\tbug in some routines which copy userspace data into the kernel.\n\tThe bug also affects the NFS client's implementation of direct I/O;\n\thowever, this implementation is disabled by default by the\n\tvfs.nfs.nfs_directio_enable sysctl and is only used to handle\n\tsynchronous writes.</p>\n\t<h1>Impact:</h1>\n\t<p>When a program running on an affected system appends data to a\n\tfile via an NFS client mount, the bug can cause the NFS client to\n\tfail to copy in the data to be written but proceed as though the\n\tcopy operation had succeeded.  This means that the data to be written\n\tis instead replaced with whatever data had been in the packet buffer\n\tpreviously.  Thus, an unprivileged user with access to an affected\n\tsystem may abuse the bug to trigger disclosure of sensitive\n\tinformation.  In particular, the leak is limited to data previously\n\tstored in mbufs, which are used for network transmission and\n\treception, and for certain types of inter-process communication.</p>\n\t<p>The bug can also be triggered unintentionally by system\n\tapplications, in which case the data written by the application to an\n\tNFS mount may be corrupted.  Corrupted data is written over the\n\tnetwork to the NFS server, and thus also susceptible to being snooped\n\tby other hosts on the network.</p>\n\t<p>Note that the bug exists only in the NFS client; the version and\n\timplementation of the server has no effect on whether a given system\n\tis affected by the problem.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2023-6660"
+		],
+		"freebsd_sa": [
+			"SA-23:18.nfsclient"
+		]
+	},
+	"dates": {
+		"discovery": "2023-12-12",
+		"entry": "2023-12-13"
+	}
+}
