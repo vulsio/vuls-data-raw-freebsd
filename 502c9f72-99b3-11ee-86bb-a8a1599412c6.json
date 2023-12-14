@@ -1,0 +1,47 @@
+{
+	"vid": "502c9f72-99b3-11ee-86bb-a8a1599412c6",
+	"topic": "chromium -- multiple security fixes",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "120.0.6099.109"
+				}
+			]
+		},
+		{
+			"name": [
+				"ungoogled-chromium"
+			],
+			"range": [
+				{
+					"lt": "120.0.6099.109"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_12.html\">\n\t <p>This update includes 9 security fixes:</p>\n\t <ul>\n\t    <li>[1501326] High CVE-2023-6702: Type Confusion in V8. Reported by Zhiyi Zhang and Zhunki from Codesafe Team of Legendsec at Qi'anxin Group on 2023-11-10</li>\n\t    <li>[1502102] High CVE-2023-6703: Use after free in Blink. Reported by Cassidy Kim(@cassidy6564) on 2023-11-14</li>\n\t    <li>[1504792] High CVE-2023-6704: Use after free in libavif. Reported by Fudan University on 2023-11-23</li>\n\t    <li>[1505708] High CVE-2023-6705: Use after free in WebRTC. Reported by Cassidy Kim(@cassidy6564) on 2023-11-28</li>\n\t    <li>[1500921] High CVE-2023-6706: Use after free in FedCM. Reported by anonymous on 2023-11-09</li>\n\t    <li>[1504036] Medium CVE-2023-6707: Use after free in CSS. Reported by @ginggilBesel on 2023-11-21</li>\n\t </ul>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_12.html"
+		],
+		"cvename": [
+			"CVE-2023-6702",
+			"CVE-2023-6703",
+			"CVE-2023-6704",
+			"CVE-2023-6705",
+			"CVE-2023-6706",
+			"CVE-2023-6707"
+		]
+	},
+	"dates": {
+		"discovery": "2023-12-12",
+		"entry": "2023-12-13"
+	}
+}

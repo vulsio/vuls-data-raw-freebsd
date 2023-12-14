@@ -1,0 +1,48 @@
+{
+	"vid": "e2fb85ce-9a3c-11ee-af26-001b217b3468",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "16.6.2",
+					"ge": "16.6.0"
+				},
+				{
+					"lt": "16.5.4",
+					"ge": "16.5.0"
+				},
+				{
+					"lt": "16.4.4",
+					"ge": "8.17.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2023/12/13/security-release-gitlab-16-6-2-released/\">\n\t  <p>Smartcard authentication allows impersonation of arbitrary user using user's public certificate</p>\n\t  <p>When subgroup is allowed to merge or push to protected branches, subgroup members with the Developer role may gain the ability to push or merge</p>\n\t  <p>The GitLab web interface does not ensure the integrity of information when downloading the source code from installation packages or tags</p>\n\t  <p>Project maintainer can escalate to Project owner using project access token rotate API</p>\n\t  <p>Omission of Double Encoding in File Names Facilitates the Creation of Repositories with Malicious Content</p>\n\t  <p>Unvalidated timeSpent value leads to unable to load issues on Issue board</p>\n\t  <p>Developer can bypass predefined variables via REST API</p>\n\t  <p>Auditor users can create merge requests on projects they don't have access to</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2023/12/13/security-release-gitlab-16-6-2-released/"
+		],
+		"cvename": [
+			"CVE-2023-6680",
+			"CVE-2023-6564",
+			"CVE-2023-6051",
+			"CVE-2023-3907",
+			"CVE-2023-5512",
+			"CVE-2023-3904",
+			"CVE-2023-5061",
+			"CVE-2023-3511"
+		]
+	},
+	"dates": {
+		"discovery": "2023-12-13",
+		"entry": "2023-12-14"
+	}
+}
