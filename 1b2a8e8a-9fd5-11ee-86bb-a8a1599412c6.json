@@ -1,0 +1,42 @@
+{
+	"vid": "1b2a8e8a-9fd5-11ee-86bb-a8a1599412c6",
+	"topic": "chromium -- security fix",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "120.0.6099.129"
+				}
+			]
+		},
+		{
+			"name": [
+				"ungoogled-chromium"
+			],
+			"range": [
+				{
+					"lt": "120.0.6099.129"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_20.html\">\n\t <p>This update includes 1 security fix:</p>\n\t <ul>\n\t    <li>[1513170] High CVE-2023-7024: Heap buffer overflow in WebRTC. Reported by Clément Lecigne and Vlad Stolyarov of Google's Threat Analysis Group on 2023-12-19</li>\n\t </ul>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_20.html"
+		],
+		"cvename": [
+			"CVE-2023-7024"
+		]
+	},
+	"dates": {
+		"discovery": "2023-12-20",
+		"entry": "2023-12-21"
+	}
+}
