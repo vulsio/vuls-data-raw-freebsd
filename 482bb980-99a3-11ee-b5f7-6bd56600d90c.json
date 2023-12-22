@@ -1,0 +1,29 @@
+{
+	"vid": "482bb980-99a3-11ee-b5f7-6bd56600d90c",
+	"topic": "gitea -- missing permission checks",
+	"affects": [
+		{
+			"name": [
+				"gitea"
+			],
+			"range": [
+				{
+					"lt": "1.21.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Gitea team reports:</p>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/28406\">\n\t  <p>Fix missing check</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/go-gitea/gitea/pull/28423\">\n\t  <p>Do some missing checks</p>\n\t</blockquote>\n        <p>By crafting an API request, attackers can access the contents of\n        issues even though the logged-in user does not have access rights to\n        these issues.</p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/go-gitea/gitea/releases/tag/v1.21.2"
+		]
+	},
+	"dates": {
+		"discovery": "2023-08-30",
+		"entry": "2023-09-10"
+	}
+}
