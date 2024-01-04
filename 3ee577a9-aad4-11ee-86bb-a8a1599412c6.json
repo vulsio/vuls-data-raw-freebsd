@@ -1,0 +1,45 @@
+{
+	"vid": "3ee577a9-aad4-11ee-86bb-a8a1599412c6",
+	"topic": "chromium -- multiple security fixes",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "120.0.6099.199"
+				}
+			]
+		},
+		{
+			"name": [
+				"ungoogled-chromium"
+			],
+			"range": [
+				{
+					"lt": "120.0.6099.199"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2024/01/stable-channel-update-for-desktop.html\">\n\t <p>This update includes 6 security fixes:</p>\n\t <ul>\n\t    <li>[1501798] High CVE-2024-0222: Use after free in ANGLE. Reported by Toan (suto) Pham of Qrious Secure on 2023-11-13</li>\n\t    <li>[1505009] High CVE-2024-0223: Heap buffer overflow in ANGLE. Reported by Toan (suto) Pham and Tri Dang of Qrious Secure on 2023-11-24</li>\n\t    <li>[1505086] High CVE-2024-0224: Use after free in WebAudio. Reported by Huang Xilin of Ant Group Light-Year Security Lab on 2023-11-25</li>\n\t    <li>[1506923] High CVE-2024-0225: Use after free in WebGPU. Reported by Anonymous on 2023-12-01</li>\n\t </ul>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2024/01/stable-channel-update-for-desktop.html"
+		],
+		"cvename": [
+			"CVE-2024-0222",
+			"CVE-2024-0223",
+			"CVE-2024-0224",
+			"CVE-2024-0225"
+		]
+	},
+	"dates": {
+		"discovery": "2024-01-03",
+		"entry": "2024-01-04"
+	}
+}
