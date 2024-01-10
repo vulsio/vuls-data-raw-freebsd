@@ -1,0 +1,38 @@
+{
+	"vid": "1f0d0024-ac9c-11ee-8e91-1c697a013f4b",
+	"topic": "mantis -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mantis-php74",
+				"mantis-php80",
+				"mantis-php81",
+				"mantis-php82",
+				"mantis-php83"
+			],
+			"range": [
+				{
+					"lt": "2.25.8,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Mantis 2.25.8 release reports:</p>\n\t<blockquote cite=\"https://mantisbt.org/bugs/changelog_page.php?version_id=370\">\n\t  <p>Security and maintenance release</p>\n\t  <ul>\n\t    <li>0032432: Update guzzlehttp/psr7 to 1.9.1 (CVE-2023-29197)</li>\n\t    <li>0032981: Information Leakage on DokuWiki Integration (CVE-2023-44394)</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29197",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44394"
+		],
+		"cvename": [
+			"CVE-2023-29197",
+			"CVE-2023-44394"
+		]
+	},
+	"dates": {
+		"discovery": "2023-10-14",
+		"entry": "2024-01-06"
+	}
+}

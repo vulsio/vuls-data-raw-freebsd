@@ -1,0 +1,42 @@
+{
+	"vid": "e2f981f1-ad9e-11ee-8b55-4ccc6adda413",
+	"topic": "QtNetwork -- potential buffer overflow",
+	"affects": [
+		{
+			"name": [
+				"qt5-network"
+			],
+			"range": [
+				{
+					"lt": "5.15.12p148_1"
+				}
+			]
+		},
+		{
+			"name": [
+				"qt6-base"
+			],
+			"range": [
+				{
+					"lt": "6.6.1_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Andy Shaw reports:</p>\n\t<blockquote cite=\"https://www.qt.io/blog/security-advisory-potential-integer-overflow-in-qts-http2-implementation\">\n\t  <p>A potential integer overflow has been discovered in Qt's HTTP2\n\t  implementation. If the HTTP2 implementation receives more than 4GiB\n\t  in total headers, or more than 2GiB for any given header pair, then\n\t  the internal buffers may overflow.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.qt.io/blog/security-advisory-potential-integer-overflow-in-qts-http2-implementation"
+		],
+		"cvename": [
+			"CVE-2023-51714"
+		]
+	},
+	"dates": {
+		"discovery": "2023-12-14",
+		"entry": "2024-01-07"
+	}
+}
