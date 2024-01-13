@@ -1,0 +1,45 @@
+{
+	"vid": "4c8c2218-b120-11ee-90ec-001b217b3468",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "16.7.2",
+					"ge": "16.7.0"
+				},
+				{
+					"lt": "16.6.4",
+					"ge": "16.6.0"
+				},
+				{
+					"lt": "16.5.6",
+					"ge": "8.13.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/01/11/critical-security-release-gitlab-16-7-2-released/\">\n\t  <p>Account Takeover via Password Reset without user interactions</p>\n\t  <p>Attacker can abuse Slack/Mattermost integrations to execute slash commands as another user</p>\n\t  <p>Bypass CODEOWNERS approval removal</p>\n\t  <p>Workspaces able to be created under different root namespace</p>\n\t  <p>Commit signature validation ignores headers after signature</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/01/11/critical-security-release-gitlab-16-7-2-released/"
+		],
+		"cvename": [
+			"CVE-2023-7028",
+			"CVE-2023-5356",
+			"CVE-2023-4812",
+			"CVE-2023-6955",
+			"CVE-2023-2030"
+		]
+	},
+	"dates": {
+		"discovery": "2024-01-11",
+		"entry": "2024-01-12"
+	}
+}
