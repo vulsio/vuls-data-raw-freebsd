@@ -1,0 +1,67 @@
+{
+	"vid": "7467c611-b490-11ee-b903-001fc69cd6dc",
+	"topic": "xorg server -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"xorg-server",
+				"xephyr",
+				"xorg-vfbserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.11,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-nextserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.11,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland"
+			],
+			"range": [
+				{
+					"lt": "23.2.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland-devel"
+			],
+			"range": [
+				{
+					"lt": "21.0.99.1.653"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X.Org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg/2024-January/061525.html\">\n\t  <ul>\n\t    <li>CVE-2023-6816: Heap buffer overflow in DeviceFocusEvent\n\t    and ProcXIQueryPointer\n\n\t    <p>Both DeviceFocusEvent and the XIQueryPointer reply contain a bit\n\t    for each logical button currently down. Buttons can be arbitrarily\n\t    mapped to any value up to 255 but the X.Org Server was only\n\t    allocating space for the device's number of buttons,\n\t    leading to a heap overflow if a bigger value was used.</p></li>\n\t    <li>CVE-2024-0229: Reattaching to different master device may lead\n\t    to out-of-bounds memory access\n\n\t    <p>If a device has both a button class and a key class and\n\t    numButtons is zero, we can get an out-of-bounds write due\n\t    to event under-allocation in the DeliverStateNotifyEvent\n\t    function.</p></li>\n\n\t    <li>CVE-2024-21885: Heap buffer overflow in\n\t    XISendDeviceHierarchyEvent\n\n\t    <p>The XISendDeviceHierarchyEvent() function allocates space to\n\t    store up to MAXDEVICES (256) xXIHierarchyInfo structures in info.\n\t    If a device with a given ID was removed and a new device with\n\t    the same ID added both in the same operation,\n\t    the single device ID will lead to two info structures being\n\t    written to info.\n\t    Since this case can occur for every device ID at once,\n\t    a total of two times MAXDEVICES info structures might be written\n\t    to the allocation, leading to a heap buffer overflow.</p></li>\n\n\t    <li>CVE-2024-21886: Heap buffer overflow in DisableDevice\n\n\t    <p>The DisableDevice() function is called whenever an enabled device\n\t    is disabled and it moves the device from the inputInfo.devices\n\t    linked list to the inputInfo.off_devices linked list.\n\t    However, its link/unlink operation has an issue during the recursive\n\t    call to DisableDevice() due to the prev pointer pointing to a\n\t    removed device.\n\t    This issue leads to a length mismatch between the total number of\n\t    devices and the number of device in the list, leading to a heap\n\t    overflow and, possibly, to local privilege escalation.</p></li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://lists.x.org/archives/xorg/2024-January/061525.html"
+		],
+		"cvename": [
+			"CVE-2023-6816",
+			"CVE-2024-0229",
+			"CVE-2024-21885",
+			"CVE-2024-21886"
+		]
+	},
+	"dates": {
+		"discovery": "2024-01-16",
+		"entry": "2024-01-16"
+	}
+}
