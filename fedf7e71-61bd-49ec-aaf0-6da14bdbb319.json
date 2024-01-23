@@ -1,0 +1,29 @@
+{
+	"vid": "fedf7e71-61bd-49ec-aaf0-6da14bdbb319",
+	"topic": "zeek -- potential DoS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"zeek"
+			],
+			"range": [
+				{
+					"lt": "6.0.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v6.0.3\">\n\t  <p>A specially-crafted series of packets containing nested\n\t  MIME entities can cause Zeek to spend large amounts of\n\t  time parsing the entities. </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/zeek/zeek/releases/tag/v6.0.3"
+		]
+	},
+	"dates": {
+		"discovery": "2024-01-22",
+		"entry": "2024-01-22"
+	}
+}
