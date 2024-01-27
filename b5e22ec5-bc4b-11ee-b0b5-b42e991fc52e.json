@@ -1,0 +1,34 @@
+{
+	"vid": "b5e22ec5-bc4b-11ee-b0b5-b42e991fc52e",
+	"topic": "rclone -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"rclone"
+			],
+			"range": [
+				{
+					"lt": "1.65.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Multiple vulnerabilities in ssh and golang</p>\n\t<blockquote cite=\"https://github.com/go-resty/resty/commit/577fed8730d79f583eb48dfc81674164e1fc471e\">\n\t  <ul>\n\t    <li>\n\t      CVE-2023-45286: HTTP request body disclosure in go-resty\n\t      disclosure across requests.\n\t    </li>\n\t    <li>\n\t      CVE-2023-48795: The SSH transport protocol with certain\n\t      OpenSSH extensions, found in OpenSSH before 9.6 and\n\t      other products, allows remote attackers to bypass\n\t      integrity checks.\n\t    </li>\n\t  </ul>\n  </blockquote>\n  "
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-45286",
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-48795"
+		],
+		"cvename": [
+			"CVE-2023-45286",
+			"CVE-2023-48795"
+		]
+	},
+	"dates": {
+		"discovery": "2023-11-28",
+		"entry": "2024-01-26"
+	}
+}
