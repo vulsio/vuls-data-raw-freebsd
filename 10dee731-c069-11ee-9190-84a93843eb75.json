@@ -1,0 +1,77 @@
+{
+	"vid": "10dee731-c069-11ee-9190-84a93843eb75",
+	"topic": "OpenSSL -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "3.0.13,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-quictls"
+			],
+			"range": [
+				{
+					"lt": "3.0.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl31"
+			],
+			"range": [
+				{
+					"lt": "3.1.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl31-quictls"
+			],
+			"range": [
+				{
+					"lt": "3.1.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl32"
+			],
+			"range": [
+				{
+					"lt": "3.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20240125.txt\">\n\t  <p>Excessive time spent checking invalid RSA public keys (CVE-2023-6237)</p>\n\t  <p>PKCS12 Decoding crashes (CVE-2024-0727)</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.openssl.org/news/secadv/20240125.txt",
+			"https://www.openssl.org/news/secadv/20240115.txt",
+			"https://www.openssl.org/news/openssl-3.0-notes.html",
+			"https://www.openssl.org/news/openssl-3.1-notes.html",
+			"https://www.openssl.org/news/openssl-3.2-notes.html"
+		],
+		"cvename": [
+			"CVE-2024-0727",
+			"CVE-2023-6237"
+		]
+	},
+	"dates": {
+		"discovery": "2024-01-30",
+		"entry": "2024-01-31"
+	}
+}
