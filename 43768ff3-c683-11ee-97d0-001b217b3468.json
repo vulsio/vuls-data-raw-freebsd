@@ -1,0 +1,36 @@
+{
+	"vid": "43768ff3-c683-11ee-97d0-001b217b3468",
+	"topic": "Libgit2 -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"libgit2"
+			],
+			"range": [
+				{
+					"lt": "1.7.2",
+					"ge": "1.7.0"
+				},
+				{
+					"lt": "1.6.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Git community reports:</p>\n\t<blockquote cite=\"https://github.com/libgit2/libgit2/releases/tag/v1.7.2\">\n\t  <p>A bug in git_revparse_single is fixed that could have caused the function to enter an infinite loop given well-crafted inputs, potentially causing a Denial of Service attack in the calling application</p>\n\t  <p>A bug in git_revparse_single is fixed that could have caused the function to enter an infinite loop given well-crafted inputs, potentially causing a Denial of Service attack in the calling application</p>\n\t  <p>A bug in the smart transport negotiation could have caused an out-of-bounds read when a remote server did not advertise capabilities</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/libgit2/libgit2/releases/tag/v1.7.2"
+		],
+		"cvename": [
+			"CVE-2024-24577"
+		]
+	},
+	"dates": {
+		"discovery": "2024-02-06",
+		"entry": "2024-02-08"
+	}
+}

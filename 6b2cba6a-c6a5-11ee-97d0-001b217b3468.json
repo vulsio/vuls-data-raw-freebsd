@@ -1,0 +1,44 @@
+{
+	"vid": "6b2cba6a-c6a5-11ee-97d0-001b217b3468",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "16.8.2",
+					"ge": "16.8.0"
+				},
+				{
+					"lt": "16.7.5",
+					"ge": "16.7.0"
+				},
+				{
+					"lt": "16.6.7",
+					"ge": "13.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/02/07/security-release-gitlab-16-8-2-released/\">\n\t  <p>Restrict group access token creation for custom roles</p>\n\t  <p>Project maintainers can bypass group's scan result policy block_branch_modification setting</p>\n\t  <p>ReDoS in CI/CD Pipeline Editor while verifying Pipeline syntax</p>\n\t  <p>Resource exhaustion using GraphQL vulnerabilitiesCountByDay</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/02/07/security-release-gitlab-16-8-2-released/"
+		],
+		"cvename": [
+			"CVE-2024-1250",
+			"CVE-2023-6840",
+			"CVE-2023-6386",
+			"CVE-2024-1066"
+		]
+	},
+	"dates": {
+		"discovery": "2024-02-07",
+		"entry": "2024-02-08"
+	}
+}

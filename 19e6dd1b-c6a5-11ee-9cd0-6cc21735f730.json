@@ -1,0 +1,41 @@
+{
+	"vid": "19e6dd1b-c6a5-11ee-9cd0-6cc21735f730",
+	"topic": "postgresql-server -- non-owner REFRESH MATERIALIZED VIEW CONCURRENTLY executes arbitrary SQL",
+	"affects": [
+		{
+			"name": [
+				"postgresql-server"
+			],
+			"range": [
+				{
+					"lt": "15.6"
+				},
+				{
+					"lt": "14.11"
+				},
+				{
+					"lt": "13.14"
+				},
+				{
+					"lt": "12.18"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PostgreSQL Project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2024-0985/\">\n\t  <p>\n\t    One step of a concurrent refresh command was run under\n\t    weak security restrictions. If a materialized view's\n\t    owner could persuade a superuser or other\n\t    high-privileged user to perform a concurrent refresh on\n\t    that view, the view's owner could control code executed\n\t    with the privileges of the user running REFRESH. The fix\n\t    for the vulnerability makes is so that all\n\t    user-determined code is run as the view's owner, as\n\t    expected.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.postgresql.org/support/security/CVE-2024-0985/"
+		],
+		"cvename": [
+			"CVE-2024-0985"
+		]
+	},
+	"dates": {
+		"discovery": "2024-02-08",
+		"entry": "2024-02-08"
+	}
+}
