@@ -1,0 +1,37 @@
+{
+	"vid": "f161a5ad-c9bd-11ee-b7a7-353f1e043d9a",
+	"topic": "openexr -- Heap Overflow in Scanline Deep Data Parsing",
+	"affects": [
+		{
+			"name": [
+				"openexr"
+			],
+			"range": [
+				{
+					"lt": "3.1.12"
+				},
+				{
+					"lt": "3.2.2",
+					"ge": "3.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Austin Hackers Anonymous report:</p>\n\t<blockquote cite=\"https://takeonme.org/cves/CVE-2023-5841.html\">\n\t  <p>Due to a failure in validating the number of scanline samples of a OpenEXR file containing deep scanline data, Academy Software Foundation OpenEXR image parsing library version 3.2.1 and prior is susceptible to a heap-based buffer overflow vulnerability.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.2.2\">\n\t  <p>[...] it is in a routine that is predominantly used for development and\n\t    testing. It is not likely to appear in production code.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://takeonme.org/cves/CVE-2023-5841.html",
+			"https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.2.2"
+		],
+		"cvename": [
+			"CVE-2023-5841"
+		]
+	},
+	"dates": {
+		"discovery": "2023-10-26",
+		"entry": "2024-02-12"
+	}
+}

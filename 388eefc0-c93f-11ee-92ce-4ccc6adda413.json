@@ -1,0 +1,31 @@
+{
+	"vid": "388eefc0-c93f-11ee-92ce-4ccc6adda413",
+	"topic": "readstat -- Heap buffer overflow in readstat_convert",
+	"affects": [
+		{
+			"name": [
+				"readstat"
+			],
+			"range": [
+				{
+					"lt": "1.1.9"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Google reports:</p>\n\t<blockquote cite=\"https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33991\">\n\t  <p>A heap buffer overflow exists in readstat_convert.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33991",
+			"https://osv.dev/vulnerability/OSV-2021-732",
+			"https://github.com/WizardMac/ReadStat/issues/285"
+		]
+	},
+	"dates": {
+		"discovery": "2021-05-05",
+		"entry": "2024-02-12"
+	}
+}
