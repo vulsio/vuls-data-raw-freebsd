@@ -1,0 +1,33 @@
+{
+	"vid": "cbfc1591-c8c0-11ee-b45a-589cfc0f81b0",
+	"topic": "phpmyfaq -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"phpmyfaq-php81",
+				"phpmyfaq-php82",
+				"phpmyfaq-php83"
+			],
+			"range": [
+				{
+					"lt": "3.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>phpMyFAQ team reports:</p>\n\t<blockquote cite=\"https://www.phpmyfaq.de/security/advisory-2024-02-05\">\n\t  <p>phpMyFAQ doesn't implement sufficient checks to avoid XSS when\n\t    storing on attachments filenames. The 'sharing FAQ' functionality\n\t    allows any unauthenticated actor to misuse the phpMyFAQ application\n\t    to send arbitrary emails to a large range of targets. phpMyFAQ's\n\t    user removal page allows an attacker to spoof another user's\n\t    detail, and in turn make a compelling phishing case for removing\n\t    another user's account.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-7m8g-fprr-47fx",
+			"https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-9hhf-xmcw-r3xg",
+			"https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-6648-6g96-mg35"
+		]
+	},
+	"dates": {
+		"discovery": "2024-02-05",
+		"entry": "2024-02-11"
+	}
+}
