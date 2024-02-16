@@ -1,0 +1,30 @@
+{
+	"vid": "c97a4ecf-cc25-11ee-b0ee-0050569f0b83",
+	"topic": "nginx-devel -- Multiple Vulnerabilities in HTTP/3",
+	"affects": [
+		{
+			"name": [
+				"nginx-devel"
+			],
+			"range": [
+				{
+					"lt": "1.25.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The nginx development team reports:</p>\n\t<blockquote cite=\"http://nginx.org/en/security_advisories.html\">\n\t  <p>When using HTTP/3 a segmentation fault might occur in a\n\t  worker process while processing a specially crafted QUIC session.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"cvename": [
+			"CVE-2024-24989",
+			"CVE-2024-24990"
+		]
+	},
+	"dates": {
+		"discovery": "2024-02-14",
+		"entry": "2024-02-15"
+	}
+}
