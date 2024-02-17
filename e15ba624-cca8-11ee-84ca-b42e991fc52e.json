@@ -1,0 +1,34 @@
+{
+	"vid": "e15ba624-cca8-11ee-84ca-b42e991fc52e",
+	"topic": "powerdns-recursor -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"powerdns-recursor"
+			],
+			"range": [
+				{
+					"lt": "5.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"https://access.redhat.com/security/cve/CVE-2023-50868\">\n\t  <p>CVE-2023-50868: The Closest Encloser Proof aspect of the DNS protocol (in RFC 5155\n\t  when RFC 9276 guidance is skipped) allows remote attackers to cause\n\t  a denial of service (CPU consumption for SHA-1 computations) via\n\t    DNSSEC responses in a random subdomain attack, aka the \"NSEC3\"\n\t  issue.  The RFC 5155 specification implies that an algorithm must\n\t  perform thousands of iterations of a hash function in certain\n\tsituations.</p>\n      <p>CVE-2023-50387: Certain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035,\n      6840, and related RFCs) allow remote attackers to cause a denial\n      of service (CPU consumption) via one or more DNSSEC responses, aka\n      the \"KeyTrap\" issue.  One of the concerns is that, when\n      there is a zone with many DNSKEY and RRSIG records, the protocol\n      specification implies that an algorithm must evaluate all combinations\n\tof DNSKEY and RRSIG records.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-50868",
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-50387"
+		],
+		"cvename": [
+			"CVE-2023-50868",
+			"CVE-2023-50387"
+		]
+	},
+	"dates": {
+		"discovery": "2024-02-14",
+		"entry": "2024-02-16"
+	}
+}

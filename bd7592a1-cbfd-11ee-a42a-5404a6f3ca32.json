@@ -1,0 +1,29 @@
+{
+	"vid": "bd7592a1-cbfd-11ee-a42a-5404a6f3ca32",
+	"topic": "gitea -- Prevent anonymous container access",
+	"affects": [
+		{
+			"name": [
+				"gitea"
+			],
+			"range": [
+				{
+					"lt": "1.21.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <h1>Problem Description:</h1>\n    <p>\n      Even with RequireSignInView enabled, anonymous users can use docker pull\n      to fetch public images.\n    </p>\n      "
+	},
+	"references": {
+		"url": [
+			"https://blog.gitea.com/release-of-1.21.5/"
+		]
+	},
+	"dates": {
+		"discovery": "2024-01-24",
+		"entry": "2024-02-15"
+	}
+}
