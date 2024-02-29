@@ -1,0 +1,32 @@
+{
+	"vid": "02e33cd1-c655-11ee-8613-08002784c58d",
+	"topic": "curl -- OCSP verification bypass with TLS session reuse",
+	"affects": [
+		{
+			"name": [
+				"curl"
+			],
+			"range": [
+				{
+					"lt": "8.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Hiroki Kurosawa reports:</p>\n\t<blockquote cite=\"https://curl.se/docs/CVE-2024-0853.html\">\n\t  <p>\n\t    curl inadvertently kept the SSL session ID for connections\n\t    in its cache even when the verify status (OCSP stapling)\n\t    test failed. A subsequent transfer to the same hostname\n\t    could then succeed if the session ID cache was still\n\t    fresh, which then skipped the verify status check.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://curl.se/docs/CVE-2024-0853.html"
+		],
+		"cvename": [
+			"CVE-2024-0853"
+		]
+	},
+	"dates": {
+		"discovery": "2024-01-31",
+		"entry": "2024-02-28"
+	}
+}
