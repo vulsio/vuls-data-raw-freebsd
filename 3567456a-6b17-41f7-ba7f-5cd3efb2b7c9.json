@@ -1,0 +1,42 @@
+{
+	"vid": "3567456a-6b17-41f7-ba7f-5cd3efb2b7c9",
+	"topic": "electron{27,28} -- Use after free in Mojo",
+	"affects": [
+		{
+			"name": [
+				"electron27"
+			],
+			"range": [
+				{
+					"lt": "27.3.4"
+				}
+			]
+		},
+		{
+			"name": [
+				"electron28"
+			],
+			"range": [
+				{
+					"lt": "28.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Electron developers report:</p>\n\t<blockquote cite=\"https://github.com/electron/electron/releases/tag/v27.3.4\">\n\t  <p>This update fixes the following vulnerability:</p>\n\t  <ul>\n\t    <li>Security: backported fix for CVE-2024-1670.</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/advisories/GHSA-wjv4-j3hc-gxvv"
+		],
+		"cvename": [
+			"CVE-2024-1670"
+		]
+	},
+	"dates": {
+		"discovery": "2024-02-28",
+		"entry": "2024-02-29"
+	}
+}
