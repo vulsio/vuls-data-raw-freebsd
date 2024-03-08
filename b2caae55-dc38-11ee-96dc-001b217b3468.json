@@ -1,0 +1,42 @@
+{
+	"vid": "b2caae55-dc38-11ee-96dc-001b217b3468",
+	"topic": "Gitlab -- Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "16.9.2",
+					"ge": "16.9.0"
+				},
+				{
+					"lt": "16.8.4",
+					"ge": "16.8.0"
+				},
+				{
+					"lt": "16.7.7",
+					"ge": "11.3.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/03/06/security-release-gitlab-16-9-2-released/\">\n\t  <p>Bypassing CODEOWNERS approval allowing to steal protected variables</p>\n\t  <p>Guest with manage group access tokens can rotate and see group access token with owner permissions</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/03/06/security-release-gitlab-16-9-2-released/"
+		],
+		"cvename": [
+			"CVE-2024-0199",
+			"CVE-2024-1299"
+		]
+	},
+	"dates": {
+		"discovery": "2024-03-06",
+		"entry": "2024-03-07"
+	}
+}

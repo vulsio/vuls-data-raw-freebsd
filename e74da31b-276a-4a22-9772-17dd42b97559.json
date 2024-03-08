@@ -1,0 +1,42 @@
+{
+	"vid": "e74da31b-276a-4a22-9772-17dd42b97559",
+	"topic": "electron{27,28} -- vulnerability in libxml2",
+	"affects": [
+		{
+			"name": [
+				"electron27"
+			],
+			"range": [
+				{
+					"lt": "27.3.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"electron28"
+			],
+			"range": [
+				{
+					"lt": "28.2.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Electron developers report:</p>\n\t<blockquote cite=\"https://github.com/electron/electron/releases/tag/v27.3.5\">\n\t  <p>This update fixes the following vulnerability:</p>\n\t  <ul>\n\t    <li>Security: backported fix for CVE-2024-25062.</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/advisories/GHSA-x77r-6xxm-wjmx"
+		],
+		"cvename": [
+			"CVE-2024-25062"
+		]
+	},
+	"dates": {
+		"discovery": "2024-03-06",
+		"entry": "2024-03-07"
+	}
+}
