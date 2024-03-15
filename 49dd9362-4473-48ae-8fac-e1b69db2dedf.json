@@ -1,0 +1,42 @@
+{
+	"vid": "49dd9362-4473-48ae-8fac-e1b69db2dedf",
+	"topic": "electron{27,28} -- Out of bounds memory access in V8",
+	"affects": [
+		{
+			"name": [
+				"electron27"
+			],
+			"range": [
+				{
+					"lt": "27.3.6"
+				}
+			]
+		},
+		{
+			"name": [
+				"electron28"
+			],
+			"range": [
+				{
+					"lt": "28.2.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Electron developers report:</p>\n\t<blockquote cite=\"https://github.com/electron/electron/releases/tag/v27.3.6\">\n\t  <p>This update fixes the following vulnerability:</p>\n\t  <ul>\n\t    <li>Security: backported fix for CVE-2024-2173.</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/advisories/GHSA-6hhg-hj7x-7qv8"
+		],
+		"cvename": [
+			"CVE-2024-2173"
+		]
+	},
+	"dates": {
+		"discovery": "2024-03-13",
+		"entry": "2024-03-14"
+	}
+}
