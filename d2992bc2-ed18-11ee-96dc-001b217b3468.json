@@ -1,0 +1,41 @@
+{
+	"vid": "d2992bc2-ed18-11ee-96dc-001b217b3468",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce"
+			],
+			"range": [
+				{
+					"lt": "16.10.1",
+					"ge": "16.10.0"
+				},
+				{
+					"lt": "16.9.3",
+					"ge": "16.9.0"
+				},
+				{
+					"lt": "16.8.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/03/27/security-release-gitlab-16-10-1-released/\">\n\t  <p>Stored-XSS injected in Wiki page via Banzai pipeline</p>\n\t  <p>DOS using crafted emojis</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/03/27/security-release-gitlab-16-10-1-released/"
+		],
+		"cvename": [
+			"CVE-2023-6371",
+			"CVE-2024-2818"
+		]
+	},
+	"dates": {
+		"discovery": "2024-03-27",
+		"entry": "2024-03-28"
+	}
+}
