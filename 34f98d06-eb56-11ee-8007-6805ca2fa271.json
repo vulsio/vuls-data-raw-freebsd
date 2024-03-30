@@ -1,0 +1,33 @@
+{
+	"vid": "34f98d06-eb56-11ee-8007-6805ca2fa271",
+	"topic": "quiche -- Multiple Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"quiche"
+			],
+			"range": [
+				{
+					"lt": "0.20.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Quiche Releases reports:</p>\n\t<blockquote cite=\"https://github.com/cloudflare/quiche/releases/tag/0.20.1\">\n\t <p>This release includes 2 security fixes:</p>\n\t <ul>\n\t  <li>\n\t\tCVE-2024-1410: Unbounded storage of information related to\n\t\tconnection ID retirement, in quiche. Reported by Marten\n\t\tSeeman (@marten-seeman)\n\t  </li>\n\t  <li>\n\t\tCVE-2024-1765: Unlimited resource allocation by QUIC\n\t\tCRYPTO frames flooding in quiche. Reported by Marten\n\t\tSeeman (@marten-seeman)\n\t  </li>\n\t </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/cloudflare/quiche/releases/tag/0.20.1"
+		],
+		"cvename": [
+			"CVE-2024-1410",
+			"CVE-2024-1765"
+		]
+	},
+	"dates": {
+		"discovery": "2024-03-12",
+		"entry": "2024-03-26"
+	}
+}
