@@ -1,0 +1,56 @@
+{
+	"vid": "57561cfc-f24b-11ee-9730-001fc69cd6dc",
+	"topic": "xorg server -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"xorg-server",
+				"xephyr",
+				"xorg-vfbserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.12,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xorg-nextserver"
+			],
+			"range": [
+				{
+					"lt": "21.1.12,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland"
+			],
+			"range": [
+				{
+					"lt": "23.2.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X.Org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2024-April/003497.html\">\n\t  <ul>\n\t    <li>\n\t      CVE-2024-31080: Heap buffer overread/data leakage in\n\t      ProcXIGetSelectedEvents\n\n\t      <p>The ProcXIGetSelectedEvents() function uses the byte-swapped\n\t      length of the return data for the amount of data to return to\n\t      the client, if the client has a different endianness than\n\t      the X server.</p>\n\t    </li>\n\t    <li>CVE-2024-31081: Heap buffer overread/data leakage in\n\t    ProcXIPassiveGrabDevice\n\n\t    <p>The ProcXIPassiveGrabDevice() function uses the byte-swapped\n\t    length of the return data for the amount of data to return to\n\t    the client, if the client has a different endianness than\n\t    the X server.</p>\n\t    </li>\n\n\t    <li>CVE-2024-31083: User-after-free in ProcRenderAddGlyphs\n\n\t    <p>The ProcRenderAddGlyphs() function calls the AllocateGlyph()\n\t    function to store new glyphs sent by the client to the X server.\n\t    AllocateGlyph() would return a new glyph with refcount=0 and\n\t    a re-used glyph would end up not changing the refcount at all.\n\t    The resulting glyph_new array would thus have multiple entries\n\t    pointing to the same non-refcounted glyphs.\n\n\t    ProcRenderAddGlyphs() may free a glyph, resulting in a\n\t    use-after-free when the same glyph pointer is then later used.</p>\n\t    </li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://lists.x.org/archives/xorg-announce/2024-April/003497.html"
+		],
+		"cvename": [
+			"CVE-2024-31080",
+			"CVE-2024-31081",
+			"CVE-2024-31083"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-03",
+		"entry": "2024-04-04"
+	}
+}
