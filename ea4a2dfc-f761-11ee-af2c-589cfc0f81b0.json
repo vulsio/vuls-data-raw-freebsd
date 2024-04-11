@@ -1,0 +1,52 @@
+{
+	"vid": "ea4a2dfc-f761-11ee-af2c-589cfc0f81b0",
+	"topic": "wordpress -- XSS",
+	"affects": [
+		{
+			"name": [
+				"wordpress",
+				"fr-wordpress-fr_FR"
+			],
+			"range": [
+				{
+					"lt": "6.5.1,1",
+					"ge": "6.5.0,1"
+				},
+				{
+					"lt": "6.4.4,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ru-wordpress-ru_RU",
+				"ja-wordpress-ja",
+				"zh-wordpress-zh_CN",
+				"zh-wordpress-zh_TW",
+				"de-wordpress-de_DE"
+			],
+			"range": [
+				{
+					"lt": "6.5.1",
+					"ge": "6.5.0"
+				},
+				{
+					"lt": "6.4.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Wordpress team reports:</p>\n\t<blockquote cite=\"https://wordpress.org/documentation/wordpress-version/version-6-4-4/\">\n\t  <p>A cross-site scripting (XSS) vulnerability affecting the Avatar block type</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://wordpress.org/documentation/wordpress-version/version-6-4-4/"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-09",
+		"entry": "2024-04-10"
+	}
+}
