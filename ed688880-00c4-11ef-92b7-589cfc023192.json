@@ -1,0 +1,34 @@
+{
+	"vid": "ed688880-00c4-11ef-92b7-589cfc023192",
+	"topic": "GLPI -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.11,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GLPI team reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/releases/tag/10.0.11\">\n\t  <p>GLPI 10.0.11 Changelog</p>\n\t  <ul>\n\t    <li>[SECURITY - moderate] Authenticated SQL Injection (CVE-2023-43813)</li>\n\t    <li>[SECURITY - high] SQL injection through inventory agent request (CVE-2023-46727)</li>\n\t    <li>[SECURITY - high] Remote code execution from LDAP server configuration form on PHP 7.4 (CVE-2023-46726)</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/glpi-project/glpi/releases/tag/10.0.11"
+		],
+		"cvename": [
+			"CVE-2023-43813",
+			"CVE-2023-46727",
+			"CVE-2023-46726"
+		]
+	},
+	"dates": {
+		"discovery": "2023-12-13",
+		"entry": "2024-04-22"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"vid": "bb49f1fa-00da-11ef-92b7-589cfc023192",
+	"topic": "GLPI -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.13,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GLPI team reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/releases/tag/10.0.13\">\n\t  <p>GLPI 10.0.13 Changelog</p>\n\t  <ul>\n\t    <li>[SECURITY - high] SQL Injection in through the search engine (CVE-2024-27096)</li>\n\t    <li>[SECURITY - moderate] Blind SSRF using Arbitrary Object Instantiation (CVE-2024-27098)</li>\n\t    <li>[SECURITY - moderate] Stored XSS in dashboards (CVE-2024-27104)</li>\n\t    <li>[SECURITY - moderate] Reflected XSS in debug mode (CVE-2024-27914)</li>\n\t    <li>[SECURITY - moderate] Sensitive fields access through dropdowns (CVE-2024-27930)</li>\n\t    <li>[SECURITY - moderate] Users emails enumeration (CVE-2024-27937)</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/glpi-project/glpi/releases/tag/10.0.13"
+		],
+		"cvename": [
+			"CVE-2024-27096",
+			"CVE-2024-27098",
+			"CVE-2024-27104",
+			"CVE-2024-27914",
+			"CVE-2024-27930",
+			"CVE-2024-27937"
+		]
+	},
+	"dates": {
+		"discovery": "2024-03-13",
+		"entry": "2024-04-22"
+	}
+}

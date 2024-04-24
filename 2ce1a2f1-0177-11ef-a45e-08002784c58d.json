@@ -1,0 +1,74 @@
+{
+	"vid": "2ce1a2f1-0177-11ef-a45e-08002784c58d",
+	"topic": "ruby -- Arbitrary memory address read vulnerability with Regex search",
+	"affects": [
+		{
+			"name": [
+				"ruby"
+			],
+			"range": [
+				{
+					"lt": "3.1.5,1",
+					"ge": "3.1.0,1"
+				},
+				{
+					"lt": "3.2.4,1",
+					"ge": "3.2.0,1"
+				},
+				{
+					"lt": "3.3.1,1",
+					"ge": "3.3.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby31"
+			],
+			"range": [
+				{
+					"lt": "3.1.5,1",
+					"ge": "3.1.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby32"
+			],
+			"range": [
+				{
+					"lt": "3.2.4,1",
+					"ge": "3.2.0,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"ruby33"
+			],
+			"range": [
+				{
+					"lt": "3.3.1,1",
+					"ge": "3.3.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>sp2ip reports:</p>\n\t<blockquote cite=\"https://www.ruby-lang.org/en/news/2024/04/23/arbitrary-memory-address-read-regexp-cve-2024-27282/\">\n\t  <p>\n\t    If attacker-supplied data is provided to the Ruby regex\n\t    compiler, it is possible to extract arbitrary heap data\n\t    relative to the start of the text, including pointers and\n\t    sensitive strings.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.ruby-lang.org/en/news/2024/04/23/arbitrary-memory-address-read-regexp-cve-2024-27282/"
+		],
+		"cvename": [
+			"CVE-2024-27282"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-23",
+		"entry": "2024-04-23"
+	}
+}

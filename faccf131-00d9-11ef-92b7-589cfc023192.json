@@ -1,0 +1,33 @@
+{
+	"vid": "faccf131-00d9-11ef-92b7-589cfc023192",
+	"topic": "GLPI -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.12,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GLPI team reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/releases/tag/10.0.12\">\n\t  <p>GLPI 10.0.12 Changelog</p>\n\t  <ul>\n\t    <li>[SECURITY - moderate] Reflected XSS in reports pages (CVE-2024-23645)</li>\n\t    <li>[SECURITY - moderate] LDAP Injection during authentication (CVE-2023-51446)</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/glpi-project/glpi/releases/tag/10.0.12"
+		],
+		"cvename": [
+			"CVE-2024-23645",
+			"CVE-2023-51446"
+		]
+	},
+	"dates": {
+		"discovery": "2024-02-01",
+		"entry": "2024-04-22"
+	}
+}
