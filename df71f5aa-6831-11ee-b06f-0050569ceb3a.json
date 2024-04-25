@@ -1,0 +1,33 @@
+{
+	"vid": "df71f5aa-6831-11ee-b06f-0050569ceb3a",
+	"topic": "File deletion through document upload process in GLPI",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.10,1",
+					"ge": "10.0.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>security-advisories@github.com reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/security/advisories/GHSA-hm76-jh96-7j75\">\n\t  <p>GLPI stands for Gestionnaire Libre de Parc Informatique is a Free\n\tAsset and IT Management Software package, that provides ITIL Service\n\tDesk features, licenses tracking and software auditing.  The document\n\tupload process can be diverted to delete some files.  Users are\n\tadvised to upgrade to version 10.0.10.  There are no known workarounds\n\tfor this vulnerability.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-42462"
+		],
+		"cvename": [
+			"CVE-2023-42462"
+		]
+	},
+	"dates": {
+		"discovery": "2023-09-27",
+		"entry": "2023-10-11"
+	}
+}

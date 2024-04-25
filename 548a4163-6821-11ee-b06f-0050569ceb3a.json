@@ -1,0 +1,32 @@
+{
+	"vid": "548a4163-6821-11ee-b06f-0050569ceb3a",
+	"topic": "GLPI vulnerable to SQL injection through Computer Virtual Machine information",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.8,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>security-advisories@github.com reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/releases/tag/10.0.8\">\n\t  <p>GLPI is a free asset and IT management software package.  Starting\n\tin version 0.80 and prior to version 10.0.8, Computer Virtual Machine\n\tform and GLPI inventory request can be used to perform a SQL injection\n\tattack.  Version 10.0.8 has a patch for this issue.  As a workaround,\n\tone may disable native inventory.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-36808"
+		],
+		"cvename": [
+			"CVE-2023-36808"
+		]
+	},
+	"dates": {
+		"discovery": "2023-07-05",
+		"entry": "2023-10-11"
+	}
+}

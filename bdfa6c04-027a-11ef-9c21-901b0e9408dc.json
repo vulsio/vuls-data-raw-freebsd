@@ -1,0 +1,36 @@
+{
+	"vid": "bdfa6c04-027a-11ef-9c21-901b0e9408dc",
+	"topic": "py-matrix-synapse -- weakness in auth chain indexing allows DoS",
+	"affects": [
+		{
+			"name": [
+				"py38-matrix-synapse",
+				"py39-matrix-synapse",
+				"py310-matrix-synapse",
+				"py311-matrix-synapse"
+			],
+			"range": [
+				{
+					"lt": "1.105.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Matrix developers report:</p>\n\t<blockquote cite=\"https://element.io/blog/security-release-synapse-1-105-1/\">\n\t  <p>Weakness in auth chain indexing allows DoS from remote\n\t  room members through disk fill and high CPU usage. (High severity)</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://element.io/blog/security-release-synapse-1-105-1/",
+			"https://github.com/element-hq/synapse/security/advisories/GHSA-3h7q-rfh9-xm4v"
+		],
+		"cvename": [
+			"CVE-2024-31208"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-23",
+		"entry": "2024-04-24"
+	}
+}

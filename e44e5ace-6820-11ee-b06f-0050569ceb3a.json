@@ -1,0 +1,33 @@
+{
+	"vid": "e44e5ace-6820-11ee-b06f-0050569ceb3a",
+	"topic": "GLPI vulnerable to SQL injection via inventory agent request",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.8,1",
+					"ge": "10.0.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>security-advisories@github.com reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/releases/tag/10.0.8\">\n\t  <p>GLPI is a free asset and IT management software package.  Starting\n\tin version 10.0.0 and prior to version 10.0.8, GLPI inventory\n\tendpoint can be used to drive a SQL injection attack.  By default,\n\tGLPI inventory endpoint requires no authentication.  Version 10.0.8\n\thas a patch for this issue.  As a workaround, one may disable native\n\tinventory.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-35924"
+		],
+		"cvename": [
+			"CVE-2023-35924"
+		]
+	},
+	"dates": {
+		"discovery": "2023-07-05",
+		"entry": "2023-10-11"
+	}
+}

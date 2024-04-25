@@ -1,0 +1,33 @@
+{
+	"vid": "ae8b1445-6833-11ee-b06f-0050569ceb3a",
+	"topic": "Privilege Escalation from technician to super-admin in GLPI",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.10,1",
+					"ge": "9.1.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>security-advisories@github.com reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/security/advisories/GHSA-9j8m-7563-8xvr\">\n\t  <p>GLPI stands for Gestionnaire Libre de Parc Informatique is a Free\n\tAsset and IT Management Software package, that provides ITIL Service\n\tDesk features, licenses tracking and software auditing.  A user\n\twith write access to another user can make requests to change the\n\tlatter's password and then take control of their account.\n\tUsers are advised to upgrade to version 10.0.10.  There are no known\n\twork around for this vulnerability.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-41322"
+		],
+		"cvename": [
+			"CVE-2023-41322"
+		]
+	},
+	"dates": {
+		"discovery": "2023-09-27",
+		"entry": "2023-10-11"
+	}
+}

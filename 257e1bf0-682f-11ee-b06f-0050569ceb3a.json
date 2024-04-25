@@ -1,0 +1,33 @@
+{
+	"vid": "257e1bf0-682f-11ee-b06f-0050569ceb3a",
+	"topic": "GLPI vulnerable to SQL injection via dashboard administration",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.9,1",
+					"ge": "9.5.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>security-advisories@github.com reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/releases/tag/10.0.9\">\n\t  <p>GLPI is a Free Asset and IT Management Software package, Data center\n\tmanagement, ITIL Service Desk, licenses tracking and software\n\tauditing.  An administrator can trigger SQL injection via dashboards\n\tadministration.  This vulnerability has been patched in version\n\t10.0.9.\n\t</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2023-37278"
+		],
+		"cvename": [
+			"CVE-2023-37278"
+		]
+	},
+	"dates": {
+		"discovery": "2023-07-13",
+		"entry": "2023-10-11"
+	}
+}
