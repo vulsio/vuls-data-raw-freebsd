@@ -1,0 +1,44 @@
+{
+	"vid": "7a42852d-0347-11ef-9f97-a8a1599412c6",
+	"topic": "chromium -- multiple security fixes",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "124.0.6367.78"
+				}
+			]
+		},
+		{
+			"name": [
+				"ungoogled-chromium"
+			],
+			"range": [
+				{
+					"lt": "124.0.6367.78"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2024/04/stable-channel-update-for-desktop_24.html\">\n\t <p>This update includes 4 security fixes:</p>\n\t <ul>\n\t    <li>[332546345] Critical CVE-2024-4058: Type Confusion in ANGLE. Reported by Toan (suto) Pham and Bao (zx) Pham of Qrious Secure on 2024-04-02</li>\n\t    <li>[333182464] High CVE-2024-4059: Out of bounds read in V8 API. Reported by Eirik on 2024-04-08</li>\n\t    <li>[333420620] High CVE-2024-4060: Use after free in Dawn. Reported by wgslfuzz on 2024-04-09</li>\n\t </ul>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2024/04/stable-channel-update-for-desktop_24.html"
+		],
+		"cvename": [
+			"CVE-2024-4058",
+			"CVE-2024-4059",
+			"CVE-2024-4060"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-24",
+		"entry": "2024-04-25"
+	}
+}
