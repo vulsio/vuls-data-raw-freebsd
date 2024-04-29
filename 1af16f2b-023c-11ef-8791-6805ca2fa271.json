@@ -1,0 +1,32 @@
+{
+	"vid": "1af16f2b-023c-11ef-8791-6805ca2fa271",
+	"topic": "powerdns-recursor -- denial of service",
+	"affects": [
+		{
+			"name": [
+				"powerdns-recursor"
+			],
+			"range": [
+				{
+					"lt": "5.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PowerDNS Team reports:</p>\n\t<blockquote cite=\"https://blog.powerdns.com/2024/04/24/powerdns-recursor-4-8-8-4-9-5-5-0-4-released\">\n\t  <p>PowerDNS Security Advisory 2024-02: if recursive forwarding is configured,\n\t   crafted responses can lead to a denial of service in Recursor</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2024-02.html"
+		],
+		"cvename": [
+			"CVE-2024-25583"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-24",
+		"entry": "2024-04-24"
+	}
+}

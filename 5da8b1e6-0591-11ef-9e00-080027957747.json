@@ -1,0 +1,33 @@
+{
+	"vid": "5da8b1e6-0591-11ef-9e00-080027957747",
+	"topic": "GLPI -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.15,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GLPI team reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/releases/tag/10.0.15\">\n\t  <p>GLPI 10.0.15 Changelog</p>\n\t  <ul>\n\t    <li>[SECURITY - high] Authenticated SQL injection from map search (CVE-2024-31456)</li>\n\t    <li>[SECURITY - high] Account takeover via SQL Injection in saved searches feature (CVE-2024-29889)</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/glpi-project/glpi/releases/tag/10.0.15"
+		],
+		"cvename": [
+			"CVE-2024-31456",
+			"CVE-2024-29889"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-03",
+		"entry": "2024-04-28"
+	}
+}
