@@ -1,0 +1,52 @@
+{
+	"vid": "fbc2c629-0dc5-11ef-9850-001b217b3468",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce",
+				"gitlab-ee"
+			],
+			"range": [
+				{
+					"lt": "16.11.2",
+					"ge": "16.11.0"
+				},
+				{
+					"lt": "16.10.5",
+					"ge": "16.10.0"
+				},
+				{
+					"lt": "16.9.7",
+					"ge": "10.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/05/08/patch-release-gitlab-16-11-2-released/\">\n\t  <p>ReDoS in branch search when using wildcards</p>\n\t  <p>ReDoS in markdown render pipeline</p>\n\t  <p>Redos on Discord integrations</p>\n\t  <p>Redos on Google Chat Integration</p>\n\t  <p>Denial of Service Attack via Pin Menu</p>\n\t  <p>DoS by filtering tags and branches via the API</p>\n\t  <p>MR approval via CSRF in SAML SSO</p>\n\t  <p>Banned user from groups can read issues updates via the api</p>\n\t  <p>Require confirmation before linking JWT identity</p>\n\t  <p>View confidential issues title and description of any public project via export</p>\n\t  <p>SSRF via Github importer</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/05/08/patch-release-gitlab-16-11-2-released/"
+		],
+		"cvename": [
+			"CVE-2024-2878",
+			"CVE-2024-2651",
+			"CVE-2023-6682",
+			"CVE-2023-6688",
+			"CVE-2024-2454",
+			"CVE-2024-4539",
+			"CVE-2024-4597",
+			"CVE-2024-1539",
+			"CVE-2024-1211",
+			"CVE-2024-3976",
+			"CVE-2023-6195"
+		]
+	},
+	"dates": {
+		"discovery": "2024-05-08",
+		"entry": "2024-05-09"
+	}
+}
