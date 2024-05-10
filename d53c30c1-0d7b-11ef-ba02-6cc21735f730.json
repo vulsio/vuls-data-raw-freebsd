@@ -1,0 +1,38 @@
+{
+	"vid": "d53c30c1-0d7b-11ef-ba02-6cc21735f730",
+	"topic": "PostgreSQL server -- Potentially allowing authenicated database users to see data that they shouldn't.",
+	"affects": [
+		{
+			"name": [
+				"postgresql-server"
+			],
+			"range": [
+				{
+					"lt": "16.3"
+				},
+				{
+					"lt": "15.7"
+				},
+				{
+					"lt": "14.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2024-4317/\">\n\t  <p>\n\t    A security vulnerability was found in the system views pg_stats_ext\n\t    and pg_stats_ext_exprs, potentially allowing authenticated database\n\t    users to see data they shouldn't.  If this is of concern in your\n\t    installation, run the SQL script /usr/local/share/postgresql/fix-CVE-2024-4317.sql\n\t    for each of your databases. See the link for details.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.postgresql.org/support/security/CVE-2024-4317/"
+		],
+		"cvename": [
+			"CVE-2024-4317"
+		]
+	},
+	"dates": {
+		"discovery": "2024-05-09",
+		"entry": "2024-05-09"
+	}
+}
