@@ -1,0 +1,42 @@
+{
+	"vid": "d3847eba-114b-11ef-9c21-901b0e9408dc",
+	"topic": "go -- net: malformed DNS message can cause infinite loop",
+	"affects": [
+		{
+			"name": [
+				"go122"
+			],
+			"range": [
+				{
+					"lt": "1.22.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"go121"
+			],
+			"range": [
+				{
+					"lt": "1.21.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Go project reports:</p>\n\t<blockquote cite=\"https://go.dev/issue/66754\">\n\t  <p>net: malformed DNS message can cause infinite loop</p>\n\t  <p>A malformed DNS message in response to a query can cause\n\t  the Lookup functions to get stuck in an infinite loop.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://go.dev/issue/66754"
+		],
+		"cvename": [
+			"CVE-2024-24788"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-25",
+		"entry": "2024-05-13"
+	}
+}
