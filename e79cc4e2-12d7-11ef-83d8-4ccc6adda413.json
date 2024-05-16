@@ -1,0 +1,37 @@
+{
+	"vid": "e79cc4e2-12d7-11ef-83d8-4ccc6adda413",
+	"topic": "qt6-base (core module) -- Invalid pointer in QStringConverter",
+	"affects": [
+		{
+			"name": [
+				"qt6-base"
+			],
+			"range": [
+				{
+					"ge": "6.5.0",
+					"le": "6.5.5"
+				},
+				{
+					"lt": "6.7.0",
+					"ge": "6.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Andy Shaw reports:</p>\n\t<blockquote cite=\"https://www.qt.io/blog/security-advisory-qstringconverter\">\n\t  <p>QStringConverter has an invalid pointer being passed as a callback\n\t    which can allow modification of the stack. Qt itself is not vulnerable\n\t    to remote attack however an application using QStringDecoder either\n\t    directly or indirectly can be vulnerable.</p>\n\t  <p>This requires:</p>\n\t  <ol>\n\t    <li>the attacker be able to tell the application a specific codec to use</li>\n\t    <li>the attacker be able to feed the application data in a specific way to cause the desired modification</li>\n\t    <li>the attacker what in the stack will get modified, which requires knowing the build of the application (and not all builds will be vulnerable)</li>\n\t    <li>the modification do anything in particular that is useful to the attacker, besides maybe crashing the application</li>\n\t  </ol>\n\t  <p>Qt does not automatically use any of those codecs, so this needs the application\n\t    to implement something using QStringDecoder to be vulnerable.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.qt.io/blog/security-advisory-qstringconverter"
+		],
+		"cvename": [
+			"CVE-2024-33861"
+		]
+	},
+	"dates": {
+		"discovery": "2024-05-02",
+		"entry": "2024-05-15"
+	}
+}
