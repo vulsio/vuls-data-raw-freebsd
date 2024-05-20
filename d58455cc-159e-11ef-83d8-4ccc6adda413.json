@@ -1,0 +1,33 @@
+{
+	"vid": "d58455cc-159e-11ef-83d8-4ccc6adda413",
+	"topic": "qt5-webengine -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"qt5-webengine"
+			],
+			"range": [
+				{
+					"lt": "5.15.16.p9_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<blockquote cite=\"https://code.qt.io/cgit/qt/qtwebengine-chromium.git/log/?h=87-based\">\n\t  <p>Backports for 2 security bugs in Chromium:</p>\n\t  <ul>\n\t    <li>CVE-2024-3157: Out of bounds write in Compositing</li>\n\t    <li>CVE-2024-3516: Heap buffer overflow in ANGLE</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://code.qt.io/cgit/qt/qtwebengine-chromium.git/log/?h=87-based"
+		],
+		"cvename": [
+			"CVE-2024-3157",
+			"CVE-2024-3516"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-16",
+		"entry": "2024-05-19"
+	}
+}
