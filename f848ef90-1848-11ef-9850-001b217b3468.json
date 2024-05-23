@@ -1,0 +1,47 @@
+{
+	"vid": "f848ef90-1848-11ef-9850-001b217b3468",
+	"topic": "Gitlab -- Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce",
+				"gitlab-ee"
+			],
+			"range": [
+				{
+					"lt": "17.0.1",
+					"ge": "17.0.0"
+				},
+				{
+					"lt": "16.11.3",
+					"ge": "16.11.0"
+				},
+				{
+					"lt": "16.10.6",
+					"ge": "11.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/05/22/patch-release-gitlab-17-0-1-released/\">\n\t  <p>1-click account takeover via XSS in the code editor in gitlab.com</p>\n\t  <p>A DOS vulnerability in the 'description' field of the runner</p>\n\t  <p>CSRF via K8s cluster-integration</p>\n\t  <p>Using Set Pipeline Status of a Commit API incorrectly create a new pipeline when SHA and pipeline_id did not match</p>\n\t  <p>Redos on wiki render API/Page</p>\n\t  <p>Resource exhaustion and denial of service with test_report API calls</p>\n\t  <p>Guest user can view dependency lists of private projects through job artifacts</p>\n\t  <p>Stored XSS via PDFjs</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/05/22/patch-release-gitlab-17-0-1-released/"
+		],
+		"cvename": [
+			"CVE-2024-4835",
+			"CVE-2024-2874",
+			"CVE-2023-7045",
+			"CVE-2023-6502",
+			"CVE-2024-1947",
+			"CVE-2024-4367"
+		]
+	},
+	"dates": {
+		"discovery": "2024-05-22",
+		"entry": "2024-05-22"
+	}
+}
