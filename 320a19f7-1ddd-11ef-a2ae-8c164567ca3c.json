@@ -1,0 +1,33 @@
+{
+	"vid": "320a19f7-1ddd-11ef-a2ae-8c164567ca3c",
+	"topic": "nginx-devel -- Multiple Vulnerabilities in HTTP/3",
+	"affects": [
+		{
+			"name": [
+				"nginx-devel"
+			],
+			"range": [
+				{
+					"lt": "1.27.0",
+					"ge": "1.25.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The nginx development team reports:</p>\n\t<blockquote cite=\"http://nginx.org/en/security_advisories.html\">\n\t  <p>This update fixes the following vulnerabilities:</p>\n\t  <ul>\n\t    <li>Stack overflow and use-after-free in HTTP/3</li>\n\t    <li>Buffer overwrite in HTTP/3</li>\n\t    <li>Memory disclosure in HTTP/3</li>\n\t    <li>NULL pointer dereference in HTTP/3</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"cvename": [
+			"CVE-2024-31079",
+			"CVE-2024-32760",
+			"CVE-2024-34161",
+			"CVE-2024-35200"
+		]
+	},
+	"dates": {
+		"discovery": "2024-05-29",
+		"entry": "2024-05-29"
+	}
+}
