@@ -1,0 +1,54 @@
+{
+	"vid": "5f608c68-276c-11ef-8caa-0897988a1c07",
+	"topic": "Composer -- Multiple command injections via malicious git/hg branch names",
+	"affects": [
+		{
+			"name": [
+				"php81-composer"
+			],
+			"range": [
+				{
+					"lt": "2.7.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"php82-composer"
+			],
+			"range": [
+				{
+					"lt": "2.7.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"php83-composer"
+			],
+			"range": [
+				{
+					"lt": "2.7.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Composer project reports:</p>\n\t<blockquote cite=\"https://github.com/composer/composer/security/advisories/GHSA-47f6-5gq3-vx9c\">\n\t  <p>The status, reinstall and remove commands with packages\n\t  installed from source via git containing specially crafted\n\t  branch names in the repository can be used to execute\n\t  code.</p>\n\t</blockquote>\n\t<blockquote cite=\"https://github.com/composer/composer/security/advisories/GHSA-v9qv-c7wm-wgmf\">\n\t  <p>The composer install command running inside a git/hg\n\t  repository which has specially crafted branch names can\n\t  lead to command injection. So this requires cloning\n\t  untrusted repositories.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/composer/composer/security/advisories/GHSA-47f6-5gq3-vx9c",
+			"https://github.com/composer/composer/security/advisories/GHSA-v9qv-c7wm-wgmf"
+		],
+		"cvename": [
+			"CVE-2024-35241",
+			"CVE-2024-35242"
+		]
+	},
+	"dates": {
+		"discovery": "2024-06-10",
+		"entry": "2024-06-10"
+	}
+}
