@@ -1,0 +1,42 @@
+{
+	"vid": "479df73e-2838-11ef-9cab-4ccc6adda413",
+	"topic": "plasma[56]-plasma-workspace -- Unauthorized users can access session manager",
+	"affects": [
+		{
+			"name": [
+				"plasma5-plasma-workspace"
+			],
+			"range": [
+				{
+					"lt": "5.27.11.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"plasma6-plasma-workspace"
+			],
+			"range": [
+				{
+					"lt": "6.0.4_2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>David Edmundson reports:</p>\n\t<blockquote cite=\"https://kde.org/info/security/advisory-20240531-1.txt\">\n\t  <p>KSmserver, KDE's XSMP manager, incorrectly allows connections via ICE\n\t    based purely on the host, allowing all local connections. This allows\n\t    another user on the same machine to gain access to the session\n\t    manager.</p>\n\t  <p>A well crafted client could use the session restore feature to execute\n\t    arbitrary code as the user on the next boot.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://kde.org/info/security/advisory-20240531-1.txt"
+		],
+		"cvename": [
+			"CVE-2024-36041"
+		]
+	},
+	"dates": {
+		"discovery": "2024-05-31",
+		"entry": "2024-06-11"
+	}
+}
