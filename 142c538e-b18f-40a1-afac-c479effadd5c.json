@@ -1,0 +1,33 @@
+{
+	"vid": "142c538e-b18f-40a1-afac-c479effadd5c",
+	"topic": "openvpn -- two security fixes",
+	"affects": [
+		{
+			"name": [
+				"openvpn"
+			],
+			"range": [
+				{
+					"lt": "2.6.11"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gert Doering reports that OpenVPN 2.6.11 fixes two security bugs (three on Windows):</p>\n\t<blockquote cite=\"https://github.com/OpenVPN/openvpn/blob/v2.6.11/Changes.rst#security-fixes\">\n\t  <p>CVE-2024-5594: control channel: refuse control channel messages with nonprintable characters in them. Security scope: a malicious openvpn peer can send garbage to openvpn log, or cause high CPU load. (Reynir Björnsson)</p>\n\t  <p>CVE-2024-28882: only call schedule_exit() once (on a given peer). Security scope: an authenticated client can make the server \"keep the session\" even when the server has been told to disconnect this client. (Reynir Björnsson)</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/OpenVPN/openvpn/blob/v2.6.11/Changes.rst#security-fixes"
+		],
+		"cvename": [
+			"CVE-2024-5594",
+			"CVE-2024-28882"
+		]
+	},
+	"dates": {
+		"discovery": "2024-05-16",
+		"entry": "2024-06-20"
+	}
+}
