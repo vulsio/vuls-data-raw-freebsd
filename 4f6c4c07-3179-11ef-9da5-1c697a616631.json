@@ -1,0 +1,43 @@
+{
+	"vid": "4f6c4c07-3179-11ef-9da5-1c697a616631",
+	"topic": "emacs -- Arbitrary shell code evaluation vulnerability",
+	"affects": [
+		{
+			"name": [
+				"emacs",
+				"emacs-canna",
+				"emacs-nox",
+				"emacs-wayland"
+			],
+			"range": [
+				{
+					"lt": "29.3_3,3"
+				}
+			]
+		},
+		{
+			"name": [
+				"emacs-devel",
+				"emacs-devel-nox"
+			],
+			"range": [
+				{
+					"lt": "30.0.50.20240615_1,3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GNU Emacs developers report:</p>\n\t<blockquote cite=\"https://lists.gnu.org/archive/html/info-gnu-emacs/2024-06/msg00000.html\">\n\t  <p>Emacs 29.4 is an emergency bugfix release intended to fix a security vulnerability.  Arbitrary shell commands are no longer run when turning on Org mode in order to avoid running malicious code.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://seclists.org/oss-sec/2024/q2/296"
+		]
+	},
+	"dates": {
+		"discovery": "2024-06-22",
+		"entry": "2024-06-23"
+	}
+}
