@@ -1,0 +1,43 @@
+{
+	"vid": "07f0ea8c-356a-11ef-ac6d-a0423f48a938",
+	"topic": "frr - Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"frr9"
+			],
+			"range": [
+				{
+					"lt": "9.1.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"frr8"
+			],
+			"range": [
+				{
+					"lt": "8.5.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"https://frrouting.org/release/9.1.1/\">\n\t  <p>In FRRouting (FRR) through 9.1, there are multiples vulnerabilities.</p>\n\t<ul>\n\t <li>CVE-2024-31950: buffer overflow and daemon crash in ospf_te_parse_ri for OSPF LSA packets</li>\n\t <li>CVE-2024-31951: buffer overflow and daemon crash in ospf_te_parse_ext_link for OSPF LSA packets</li>\n\t</ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://frrouting.org/release/9.1.1/"
+		],
+		"cvename": [
+			"CVE-2024-31950",
+			"CVE-2024-31951"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-07",
+		"entry": "2024-06-28"
+	}
+}
