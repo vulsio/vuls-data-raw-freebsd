@@ -1,0 +1,33 @@
+{
+	"vid": "5d921a8c-3a43-11ef-b611-84a93843eb75",
+	"topic": "Apache httpd -- source code disclosure",
+	"affects": [
+		{
+			"name": [
+				"apache24"
+			],
+			"range": [
+				{
+					"lt": "2.4.61",
+					"ge": "2.4.60"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Apache httpd project reports:</p>\n\t<blockquote cite=\"https://httpd.apache.org/security/vulnerabilities_24.html\">\n\t  <p>isource code disclosure with handlers configured via AddType\n\t    (CVE-2024-39884) (Important). A regression in the core of Apache HTTP\n\t    Server 2.4.60 ignores some use of the legacy content-type based\n\t    configuration of handlers. \"AddType\" and similar configuration,\n\t    under some circumstances where files are requested indirectly, result\n\t    in source code disclosure of local content. For example, PHP scripts\n\t    may be served instead of interpreted.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://httpd.apache.org/security/vulnerabilities_24.html"
+		],
+		"cvename": [
+			"CVE-2024-39884"
+		]
+	},
+	"dates": {
+		"discovery": "2024-07-04",
+		"entry": "2024-07-04"
+	}
+}
