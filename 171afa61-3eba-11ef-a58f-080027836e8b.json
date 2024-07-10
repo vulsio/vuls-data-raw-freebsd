@@ -1,0 +1,48 @@
+{
+	"vid": "171afa61-3eba-11ef-a58f-080027836e8b",
+	"topic": "Django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py39-django42",
+				"py310-django42",
+				"py311-django42"
+			],
+			"range": [
+				{
+					"lt": "4.2.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"py310-django50",
+				"py311-django50"
+			],
+			"range": [
+				{
+					"lt": "5.0.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2024/jul/09/security-releases/\">\n\t  <p>CVE-2024-38875: Potential denial-of-service in django.utils.html.urlize().</p>\n\t  <p>CVE-2024-39329: Username enumeration through timing difference for users with unusable passwords.</p>\n\t  <p>CVE-2024-39330: Potential directory-traversal in django.core.files.storage.Storage.save().</p>\n\t  <p>CVE-2024-39614: Potential denial-of-service in django.utils.translation.get_supported_language_variant().</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2024/jul/09/security-releases/"
+		],
+		"cvename": [
+			"CVE-2024-38875",
+			"CVE-2024-39329",
+			"CVE-2024-39330",
+			"CVE-2024-39614"
+		]
+	},
+	"dates": {
+		"discovery": "2024-07-01",
+		"entry": "2024-07-10"
+	}
+}
