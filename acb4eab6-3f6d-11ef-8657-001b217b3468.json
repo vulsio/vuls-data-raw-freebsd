@@ -1,0 +1,47 @@
+{
+	"vid": "acb4eab6-3f6d-11ef-8657-001b217b3468",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce",
+				"gitlab-ee"
+			],
+			"range": [
+				{
+					"lt": "17.1.2",
+					"ge": "17.1.0"
+				},
+				{
+					"lt": "17.0.4",
+					"ge": "17.0.0"
+				},
+				{
+					"lt": "16.11.6",
+					"ge": "11.8.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/07/10/patch-release-gitlab-17-1-2-released/\">\n\t  <p>An attacker can run pipeline jobs as an arbitrary user</p>\n\t  <p>Developer user with admin_compliance_framework permission can change group URL</p>\n\t  <p>Admin push rules custom role allows creation of project level deploy token</p>\n\t  <p>Package registry vulnerable to manifest confusion</p>\n\t  <p>User with admin_group_member permission can ban group members</p>\n\t  <p>Subdomain takeover in GitLab Pages</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/07/10/patch-release-gitlab-17-1-2-released/"
+		],
+		"cvename": [
+			"CVE-2024-6385",
+			"CVE-2024-5257",
+			"CVE-2024-5470",
+			"CVE-2024-6595",
+			"CVE-2024-2880",
+			"CVE-2024-5528"
+		]
+	},
+	"dates": {
+		"discovery": "2024-07-10",
+		"entry": "2024-07-11"
+	}
+}
