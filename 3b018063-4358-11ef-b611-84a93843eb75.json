@@ -1,0 +1,79 @@
+{
+	"vid": "3b018063-4358-11ef-b611-84a93843eb75",
+	"topic": "MySQL -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"mysql80-client"
+			],
+			"range": [
+				{
+					"lt": "8.0.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql80-server"
+			],
+			"range": [
+				{
+					"lt": "8.0.38"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql81-client"
+			],
+			"range": [
+				{
+					"lt": "8.1.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql80-server"
+			],
+			"range": [
+				{
+					"lt": "8.1.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql84-client"
+			],
+			"range": [
+				{
+					"lt": "8.4.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"mysql84-server"
+			],
+			"range": [
+				{
+					"lt": "8.4.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Oracle reports:</p>\n\t<blockquote cite=\"https://www.oracle.com/security-alerts/cpujul2024.html#MySQL\">\n\t  <p>36 new security patches for Oracle MySQL. 11 of these vulnerabilities\n\t    may be remotely exploitable without authentication, i.e., may be\n\t    exploited over a network without requiring user credentials.\n\t    The highest CVSS v3.1 Base Score of vulnerabilities affecting Oracle\n\t    MySQL is 9.8.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.oracle.com/security-alerts/cpujul2024.html#MySQL"
+		]
+	},
+	"dates": {
+		"discovery": "2024-07-16",
+		"entry": "2024-07-16"
+	}
+}
