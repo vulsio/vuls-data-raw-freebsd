@@ -1,0 +1,37 @@
+{
+	"vid": "6091d1d8-4347-11ef-a4d4-080027957747",
+	"topic": "GLPI -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"glpi"
+			],
+			"range": [
+				{
+					"lt": "10.0.16,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>GLPI team reports:</p>\n\t<blockquote cite=\"https://github.com/glpi-project/glpi/releases/tag/10.0.16\">\n\t  <p>GLPI 10.0.16 Changelog</p>\n\t  <ul>\n\t    <li>[SECURITY - high] Account takeover via SQL Injection in AJAX scripts (CVE-2024-37148)</li>\n\t    <li>[SECURITY - high] Remote code execution through the plugin loader (CVE-2024-37149)</li>\n\t    <li>[SECURITY - moderate] Authenticated file upload to restricted tickets (CVE-2024-37147)</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37148",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37149",
+			"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37147",
+			"https://github.com/glpi-project/glpi/releases/tag/10.0.16"
+		],
+		"cvename": [
+			"CVE-2024-37148",
+			"CVE-2024-37149",
+			"CVE-2024-37147"
+		]
+	},
+	"dates": {
+		"discovery": "2024-06-03",
+		"entry": "2024-07-16"
+	}
+}
