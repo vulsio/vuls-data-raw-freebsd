@@ -1,0 +1,48 @@
+{
+	"vid": "94d441d2-5497-11ef-9d2f-080027836e8b",
+	"topic": "Django -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"py39-django42",
+				"py310-django42",
+				"py311-django42"
+			],
+			"range": [
+				{
+					"lt": "4.2.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"py310-django50",
+				"py311-django50"
+			],
+			"range": [
+				{
+					"lt": "5.0.8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Django reports:</p>\n\t<blockquote cite=\"https://www.djangoproject.com/weblog/2024/aug/06/security-releases/\">\n\t  <p>CVE-2024-41989: Memory exhaustion in django.utils.numberformat.floatformat().</p>\n\t  <p>CVE-2024-41990: Potential denial-of-service in django.utils.html.urlize().</p>\n\t  <p>CVE-2024-41991: Potential denial-of-service vulnerability in\n\t    django.utils.html.urlize() and AdminURLFieldWidget.</p>\n\t  <p>CVE-2024-42005: Potential SQL injection in QuerySet.values() and values_list().</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.djangoproject.com/weblog/2024/aug/06/security-releases/"
+		],
+		"cvename": [
+			"CVE-2024-41989",
+			"CVE-2024-41990",
+			"CVE-2024-41991",
+			"CVE-2024-42005"
+		]
+	},
+	"dates": {
+		"discovery": "2024-08-01",
+		"entry": "2024-08-07"
+	}
+}
