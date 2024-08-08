@@ -1,0 +1,66 @@
+{
+	"vid": "48e6d514-5568-11ef-af48-6cc21735f730",
+	"topic": "PostgreSQL -- Prevent unauthorized code execution during pg_dump",
+	"affects": [
+		{
+			"name": [
+				"postgresql-client"
+			],
+			"range": [
+				{
+					"lt": "16.4"
+				},
+				{
+					"lt": "15.8"
+				},
+				{
+					"lt": "14.13"
+				},
+				{
+					"lt": "13.16"
+				},
+				{
+					"lt": "12.20"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql-server"
+			],
+			"range": [
+				{
+					"lt": "16.4"
+				},
+				{
+					"lt": "15.8"
+				},
+				{
+					"lt": "14.13"
+				},
+				{
+					"lt": "13.16"
+				},
+				{
+					"lt": "12.20"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2024-7348/\">\n\t   <p>\n\t     An attacker able to create and drop non-temporary objects could\n\t     inject SQL code that would be executed by a concurrent pg_dump\n\t     session with the privileges of the role running pg_dump\n\t     (which is often a superuser). The attack involves replacing a\n\t     sequence or similar object with a view or foreign table that will\n\t     execute malicious code. To prevent this, introduce a new server\n\t     parameter restrict_nonsystem_relation_kind that can disable\n\t     expansion of non-builtin views as well as access to foreign\n\t     tables, and teach pg_dump to set it when available. Note that the\n\t     attack is prevented only if both pg_dump and the server it is\n\t     dumping from are new enough to have this fix.\n\t   </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.postgresql.org/support/security/CVE-2024-7348/"
+		],
+		"cvename": [
+			"CVE-2024-7348"
+		]
+	},
+	"dates": {
+		"discovery": "2024-08-08",
+		"entry": "2024-08-08"
+	}
+}
