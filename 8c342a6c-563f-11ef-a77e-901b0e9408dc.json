@@ -1,0 +1,32 @@
+{
+	"vid": "8c342a6c-563f-11ef-a77e-901b0e9408dc",
+	"topic": "soft-serve -- Remote code execution vulnerability",
+	"affects": [
+		{
+			"name": [
+				"soft-serve"
+			],
+			"range": [
+				{
+					"lt": "0.7.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>soft-serve team reports:</p>\n\t<blockquote cite=\"https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-m445-w3xr-vp2f\">\n\t  <p>Arbitrary code execution by crafting git ssh requests</p>\n\t  <p>It is possible for a user who can commit files to a\n\t  repository hosted by Soft Serve to execute arbitrary code\n\t  via environment manipulation and Git.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-m445-w3xr-vp2f"
+		],
+		"cvename": [
+			"CVE-2024-41956"
+		]
+	},
+	"dates": {
+		"discovery": "2024-08-01",
+		"entry": "2024-08-09"
+	}
+}
