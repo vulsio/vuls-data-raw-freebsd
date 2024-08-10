@@ -1,0 +1,34 @@
+{
+	"vid": "5776cc4f-5717-11ef-b611-84a93843eb75",
+	"topic": "Roundcube -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"roundcube"
+			],
+			"range": [
+				{
+					"lt": "1.6.8,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Roundcube project reports:</p>\n\t<blockquote cite=\"https://roundcube.net/news/2024/08/04/security-updates-1.6.8-and-1.5.8\">\n\t  <p>XSS vulnerability in post-processing of sanitized HTML content [CVE-2024-42009]</p>\n\t  <p>XSS vulnerability in serving of attachments other than HTML or SVG [CVE-2024-42008]</p>\n\t  <p>information leak (access to remote content) via insufficient CSS filtering [CVE-2024-42010]</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://roundcube.net/news/2024/08/04/security-updates-1.6.8-and-1.5.8"
+		],
+		"cvename": [
+			"CVE-2024-42009",
+			"CVE-2024-42008",
+			"CVE-2024-42010"
+		]
+	},
+	"dates": {
+		"discovery": "2024-08-04",
+		"entry": "2024-08-10"
+	}
+}
