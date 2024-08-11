@@ -1,0 +1,32 @@
+{
+	"vid": "7d631146-5769-11ef-b618-1c697a616631",
+	"topic": "AMD CPUs -- Guest Memory Vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"cpu-microcode-amd"
+			],
+			"range": [
+				{
+					"lt": "20240810"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>AMD reports:</p>\n\t<blockquote cite=\"https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7014.html\">\n\t  <p>\n\t   Researchers from IOActive have reported that it may be possible for\n\t   an attacker with ring 0 access to modify the configuration of System\n\t   Management Mode (SMM) even when SMM Lock is enabled.  Improper\n\t   validation in a model specific register (MSR) could allow a malicious\n\t   program with ring0 access to modify SMM configuration while SMI lock\n\t   is enabled, potentially leading to arbitrary code execution.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7014.html"
+		],
+		"cvename": [
+			"CVE-2023-31315"
+		]
+	},
+	"dates": {
+		"discovery": "2024-08-09",
+		"entry": "2024-08-10"
+	}
+}
