@@ -4,21 +4,9 @@
 	"affects": [
 		{
 			"name": [
-				"postgresql-client"
+				"postgresql12-client"
 			],
 			"range": [
-				{
-					"lt": "16.4"
-				},
-				{
-					"lt": "15.8"
-				},
-				{
-					"lt": "14.13"
-				},
-				{
-					"lt": "13.16"
-				},
 				{
 					"lt": "12.20"
 				}
@@ -26,23 +14,91 @@
 		},
 		{
 			"name": [
-				"postgresql-server"
+				"postgresql13-client"
+			],
+			"range": [
+				{
+					"lt": "13.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql14-client"
+			],
+			"range": [
+				{
+					"lt": "14.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql15-client"
+			],
+			"range": [
+				{
+					"lt": "15.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql16-client"
 			],
 			"range": [
 				{
 					"lt": "16.4"
-				},
-				{
-					"lt": "15.8"
-				},
-				{
-					"lt": "14.13"
-				},
-				{
-					"lt": "13.16"
-				},
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql12-server"
+			],
+			"range": [
 				{
 					"lt": "12.20"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql13-server"
+			],
+			"range": [
+				{
+					"lt": "13.16"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql14-server"
+			],
+			"range": [
+				{
+					"lt": "14.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql15-server"
+			],
+			"range": [
+				{
+					"lt": "15.8"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql16-server"
+			],
+			"range": [
+				{
+					"lt": "16.4"
 				}
 			]
 		}
