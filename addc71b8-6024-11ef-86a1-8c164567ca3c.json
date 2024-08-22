@@ -1,0 +1,41 @@
+{
+	"vid": "addc71b8-6024-11ef-86a1-8c164567ca3c",
+	"topic": "nginx -- Vulnerability in the ngx_http_mp4_module",
+	"affects": [
+		{
+			"name": [
+				"nginx-devel"
+			],
+			"range": [
+				{
+					"lt": "1.27.1",
+					"ge": "1.5.13"
+				}
+			]
+		},
+		{
+			"name": [
+				"nginx"
+			],
+			"range": [
+				{
+					"lt": "1.26.2",
+					"ge": "1.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The nginx development team reports:</p>\n\t<blockquote cite=\"http://nginx.org/en/security_advisories.html\">\n\t  <p>This update fixes the buffer overread vulnerability in the\n\tngx_http_mp4_module.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"cvename": [
+			"CVE-2024-7347"
+		]
+	},
+	"dates": {
+		"discovery": "2024-08-14",
+		"entry": "2024-08-22"
+	}
+}
