@@ -1,0 +1,45 @@
+{
+	"vid": "49ef501c-62b6-11ef-bba5-2cf05da270f3",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce",
+				"gitlab-ee"
+			],
+			"range": [
+				{
+					"lt": "17.3.1",
+					"ge": "17.3.0"
+				},
+				{
+					"lt": "17.2.4",
+					"ge": "17.2.0"
+				},
+				{
+					"lt": "17.1.6",
+					"ge": "8.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/08/21/patch-release-gitlab-17-3-1-released/\">\n\t  <p>The GitLab Web Interface Does Not Guarantee Information Integrity When Downloading Source Code from Releases</p>\n\t  <p>Denial of Service by importing maliciously crafted GitHub repository</p>\n\t  <p>Prompt injection in \"Resolve Vulnerabilty\" results in arbitrary command execution in victim's pipeline</p>\n\t  <p>An unauthorized user can perform certain actions through GraphQL after a group owner enables IP restrictions</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/08/21/patch-release-gitlab-17-3-1-released/"
+		],
+		"cvename": [
+			"CVE-2024-6502",
+			"CVE-2024-8041",
+			"CVE-2024-7110",
+			"CVE-2024-3127"
+		]
+	},
+	"dates": {
+		"discovery": "2024-08-21",
+		"entry": "2024-08-25"
+	}
+}
