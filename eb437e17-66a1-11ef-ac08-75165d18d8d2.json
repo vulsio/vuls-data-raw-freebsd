@@ -15,7 +15,7 @@
 	],
 	"description": {
 		"xmlns": "http://www.w3.org/1999/xhtml",
-		"text": "\n\t<p>The forgejo team reports:</p>\n\t<blockquote cite=\"https://codeberg.org/forgejo/forgejo/milestone/7728\">\n        <p>The scope of application tokens was not verified when writing\n        containers or Conan packages.  This is of no consequence when the\n        user associated with the application token does not have write\n        access to packages.  If the user has write access to packages, such\n        a token can be used to write containers and Conan packages.  An\n        application token that was used to write containers or Conan\n        packages without the package:write scope will now fail with an\n        unauthorized error.  It must be re-created to include the\n        package:write scope.</p>\n\t</blockquote>\n\t"
+		"text": "\n\t<p>The forgejo team reports:</p>\n\t<blockquote cite=\"https://codeberg.org/forgejo/forgejo/milestone/7728\">\n\t<p>The scope of application tokens was not verified when writing\n\tcontainers or Conan packages.  This is of no consequence when the\n\tuser associated with the application token does not have write\n\taccess to packages.  If the user has write access to packages, such\n\ta token can be used to write containers and Conan packages.  An\n\tapplication token that was used to write containers or Conan\n\tpackages without the package:write scope will now fail with an\n\tunauthorized error.  It must be re-created to include the\n\tpackage:write scope.</p>\n\t</blockquote>\n\t"
 	},
 	"references": {
 		"url": [

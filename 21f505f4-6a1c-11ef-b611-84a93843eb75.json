@@ -1,0 +1,83 @@
+{
+	"vid": "21f505f4-6a1c-11ef-b611-84a93843eb75",
+	"topic": "OpenSSL -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"openssl"
+			],
+			"range": [
+				{
+					"lt": "3.0.15,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl31"
+			],
+			"range": [
+				{
+					"lt": "3.1.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl32"
+			],
+			"range": [
+				{
+					"lt": "3.2.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl33"
+			],
+			"range": [
+				{
+					"lt": "3.3.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl-quictls"
+			],
+			"range": [
+				{
+					"lt": "3.0.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"openssl31-quictls"
+			],
+			"range": [
+				{
+					"lt": "3.1.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The OpenSSL project reports:</p>\n\t<blockquote cite=\"https://www.openssl.org/news/secadv/20240528.txt\">\n\t  <p>Possible denial of service in X.509 name checks [Moderate severity]\n\t    Applications performing certificate name checks (e.g., TLS clients\n\t    checking server certificates) may attempt to read an invalid\n\t    memory address resulting in abnormal termination of the application\n\t    process.</p>\n\t  <p>SSL_select_next_proto buffer overread [Low severity]\n\t    Calling the OpenSSL API function SSL_select_next_proto with an empty\n\t    supported client protocols buffer may cause a crash or memory\n\t    contents to be sent to the peer.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://openssl-library.org/news/vulnerabilities/"
+		],
+		"cvename": [
+			"CVE-2024-5535",
+			"CVE-2024-6119"
+		]
+	},
+	"dates": {
+		"discovery": "2024-09-03",
+		"entry": "2024-09-03"
+	}
+}
