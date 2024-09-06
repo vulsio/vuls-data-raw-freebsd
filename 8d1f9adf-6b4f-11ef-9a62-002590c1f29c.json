@@ -1,0 +1,61 @@
+{
+	"vid": "8d1f9adf-6b4f-11ef-9a62-002590c1f29c",
+	"topic": "FreeBSD -- Multiple vulnerabilities in libnv",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "14.1_4",
+					"ge": "14.1"
+				},
+				{
+					"lt": "14.0_10",
+					"ge": "14.0"
+				},
+				{
+					"lt": "13.3_6",
+					"ge": "13.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"FreeBSD"
+			],
+			"range": [
+				{
+					"lt": "14.1_4",
+					"ge": "14.1"
+				},
+				{
+					"lt": "14.0_10",
+					"ge": "14.0"
+				},
+				{
+					"lt": "13.3_6",
+					"ge": "13.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>CVE-2024-45287 is a vulnerability that affects both the kernel\n\tand userland.  A malicious value of size in a structure of packed\n\tlibnv can cause an integer overflow, leading to the allocation of\n\ta smaller buffer than required for the parsed data.</p>\n\t<p>CVE-2024-45288 is a vulnerability that affects both the kernel and\n\tuserland.  A missing null-termination character in the last element\n\tof an nvlist array string can lead to writing outside the allocated\n\tbuffer.</p>\n\t<h1>Impact:</h1>\n\t<p>It is possible for an attacker to overwrite portions of memory\n\t(in userland or the kernel) as the allocated buffer might be smaller\n\tthan the data received from a malicious process.  This vulnerability\n\tcould result in privilege escalation or cause a system panic.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2024-45287",
+			"CVE-2024-45288"
+		],
+		"freebsd_sa": [
+			"SA-24:09.libnv"
+		]
+	},
+	"dates": {
+		"discovery": "2024-09-04",
+		"entry": "2024-09-05"
+	}
+}
