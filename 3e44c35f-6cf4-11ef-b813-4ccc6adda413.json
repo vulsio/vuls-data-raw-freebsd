@@ -1,0 +1,33 @@
+{
+	"vid": "3e44c35f-6cf4-11ef-b813-4ccc6adda413",
+	"topic": "exiv2 -- Out-of-bounds read in AsfVideo::streamProperties",
+	"affects": [
+		{
+			"name": [
+				"exiv2"
+			],
+			"range": [
+				{
+					"lt": "0.28.3,1",
+					"ge": "0.28.0,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Kevin Backhouse reports:</p>\n\t<blockquote cite=\"https://github.com/Exiv2/exiv2/security/advisories/GHSA-38rv-8x93-pvrh\">\n\t  <p>An out-of-bounds read was found in Exiv2 version v0.28.2. The vulnerability\n\t   is in the parser for the ASF video format, which was a new feature in v0.28.0,\n\t   so Exiv2 versions before v0.28 are not affected. The out-of-bounds read is\n\t   triggered when Exiv2 is used to read the metadata of a crafted video file.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/Exiv2/exiv2/security/advisories/GHSA-38rv-8x93-pvrh"
+		],
+		"cvename": [
+			"CVE-2024-39695"
+		]
+	},
+	"dates": {
+		"discovery": "2024-04-21",
+		"entry": "2024-09-07"
+	}
+}
