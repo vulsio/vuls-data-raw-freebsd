@@ -1,0 +1,41 @@
+{
+	"vid": "c02b8db5-771b-11ef-9a62-002590c1f29c",
+	"topic": "FreeBSD -- NFS client accepts file names containing path separators",
+	"affects": [
+		{
+			"name": [
+				"FreeBSD-kernel"
+			],
+			"range": [
+				{
+					"lt": "14.1_3",
+					"ge": "14.1"
+				},
+				{
+					"lt": "14.0_9",
+					"ge": "14.0"
+				},
+				{
+					"lt": "13.3_5",
+					"ge": "13.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<h1>Problem Description:</h1>\n\t<p>When mounting a remote filesystem using NFS, the kernel did not\n\tsanitize remotely provided filenames for the path separator character,\n\t\"/\".  This allows readdir(3) and related functions to return\n\tfilesystem entries with names containing additional path components.</p>\n\t<h1>Impact:</h1>\n\t<p>The lack of validation described above gives rise to a confused\n\tdeputy problem.  For example, a program copying files from an NFS\n\tmount could be tricked into copying from outside the intended source\n\tdirectory, and/or to a location outside the intended destination\n\tdirectory.</p>\n      "
+	},
+	"references": {
+		"cvename": [
+			"CVE-2024-6759"
+		],
+		"freebsd_sa": [
+			"SA-24:07.nfsclient"
+		]
+	},
+	"dates": {
+		"discovery": "2024-08-07",
+		"entry": "2024-09-20"
+	}
+}
