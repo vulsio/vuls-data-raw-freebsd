@@ -1,0 +1,29 @@
+{
+	"vid": "d47b7ae7-fe1d-4f7f-919a-480ca8035f00",
+	"topic": "zeek -- potential DoS vulnerability",
+	"affects": [
+		{
+			"name": [
+				"zeek"
+			],
+			"range": [
+				{
+					"lt": "7.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Tim Wojtulewicz of Corelight reports:</p>\n\t<blockquote cite=\"https://github.com/zeek/zeek/releases/tag/v7.0.2\">\n\t  <p> The POP3 parser has been hardened to avoid unbounded\n\t  state growth in the face of one-sided traffic capture or\n\t  when enabled for non-POP3 traffic. </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/zeek/zeek/releases/tag/v7.0.2"
+		]
+	},
+	"dates": {
+		"discovery": "2024-09-24",
+		"entry": "2024-09-24"
+	}
+}
