@@ -1,0 +1,44 @@
+{
+	"vid": "4b7ed61f-7bbf-11ef-9369-2cf05da270f3",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce",
+				"gitlab-ee"
+			],
+			"range": [
+				{
+					"lt": "17.4.1",
+					"ge": "17.4.0"
+				},
+				{
+					"lt": "17.3.4",
+					"ge": "17.3.0"
+				},
+				{
+					"lt": "17.2.8",
+					"ge": "15.6.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/09/25/patch-release-gitlab-17-4-1-released/\">\n\t  <p>Maintainer can leak Dependency Proxy password by changing Dependency Proxy URL via crafted POST request</p>\n\t  <p>AI feature reads unsanitized content, allowing for attacker to hide prompt injection</p>\n\t  <p>Project reference can be exposed in system notes</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/09/25/patch-release-gitlab-17-4-1-released/"
+		],
+		"cvename": [
+			"CVE-2024-4278",
+			"CVE-2024-4099",
+			"CVE-2024-8974"
+		]
+	},
+	"dates": {
+		"discovery": "2024-09-25",
+		"entry": "2024-09-26"
+	}
+}
