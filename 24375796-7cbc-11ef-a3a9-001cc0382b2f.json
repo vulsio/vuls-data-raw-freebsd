@@ -1,0 +1,35 @@
+{
+	"vid": "24375796-7cbc-11ef-a3a9-001cc0382b2f",
+	"topic": "cups-filters -- remote code execution",
+	"affects": [
+		{
+			"name": [
+				"cups-filters"
+			],
+			"range": [
+				{
+					"gt": "0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>OpenPrinting reports:</p>\n\t<blockquote cite=\"https://github.com/OpenPrinting/cups-browsed/security/advisories/GHSA-rj88-6mr5-rcw8\">\n\t  <p>Due to the service binding to *:631 ( INADDR_ANY ), multiple bugs\n\t    in cups-browsed can be exploited in sequence to introduce a\n\t    malicious printer to the system. This chain of exploits ultimately\n\t    enables an attacker to execute arbitrary commands remotely on the\n\t    target machine without authentication when a print job is started.\n\t    Posing a significant security risk over the network. Notably, this\n\t    vulnerability is particularly concerning as it can be exploited\n\t    from the public internet, potentially exposing a vast number of\n\t    systems to remote attacks if their CUPS services are enabled.</p>\n\t</blockquote>\n\t<p>The vulnerability allows an attacker on the internet to create a\n\t  new printer device with arbitrary commands in the PPD file of the\n\t  printer. Attacks using mDNS on the local network can also replace an\n\t  existing printer. The commands are executed when a user attempts to\n\t  print on the malicious device. They run with the privileges of the\n\t  user \"cups\".</p>\n\t<p>It is recommended to disable the cups_browsed service until patches\n\t  become available. On FreeBSD this is the default. You can check the\n\t  status and disable the service with the following commands:</p>\n\t<p><code># service cups_browsed status<br/>\n\t  # service cups_browsed stop<br/>\n\t  # service cups_browsed disable</code></p>\n\t<p>Attacks from the internet can be blocked by removing the \"cups\"\n\t  protocol from the BrowseRemoteProtocols and BrowseProtocols\n\t  directives in /usr/local/etc/cups/cups-browsed.conf. Attacks using\n\t  mDNS can be blocked by removing the \"dnssd\" protocol as well. Access\n\t  can be limited to specific IP addresses using BrowseAllow,\n\t  BrowseDeny, and BrowseOrder directives as documented in\n\t  cups-browsed.conf(5). Then restart the service with the following\n\t  command:</p>\n\t<p><code># service cups_browsed restart</code></p>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/OpenPrinting/cups-browsed/security/advisories/GHSA-rj88-6mr5-rcw8"
+		],
+		"cvename": [
+			"CVE-2024-47076",
+			"CVE-2024-47175",
+			"CVE-2024-47176",
+			"CVE-2024-47177"
+		]
+	},
+	"dates": {
+		"discovery": "2024-09-26",
+		"entry": "2024-09-27"
+	}
+}

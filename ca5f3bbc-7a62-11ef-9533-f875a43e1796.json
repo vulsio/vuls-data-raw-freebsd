@@ -1,0 +1,34 @@
+{
+	"vid": "ca5f3bbc-7a62-11ef-9533-f875a43e1796",
+	"topic": "expat -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"expat2"
+			],
+			"range": [
+				{
+					"lt": "2.6.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>libexpat reports:</p>\n\t<blockquote cite=\"https://github.com/libexpat/libexpat/blob/master/expat/Changes\">\n\t<ul>\n\t<li>CVE-2024-45490: Calling function XML_ParseBuffer with\n\tlen &lt; 0 without noticing and then calling XML_GetBuffer\n\twill have XML_ParseBuffer fail to recognize the problem\n\tand XML_GetBuffer corrupt memory.\n\tWith the fix, XML_ParseBuffer now complains with error\n\tXML_ERROR_INVALID_ARGUMENT just like sibling XML_Parse\n\thas been doing since Expat 2.2.1, and now documented.\n\tImpact is denial of service to potentially artitrary code\n\texecution.</li>\n\t<li>CVE-2024-45491: Internal function dtdCopy can have an\n\tinteger overflow for nDefaultAtts on 32-bit platforms\n\t(where UINT_MAX equals SIZE_MAX).\n\tImpact is denial of service to potentially artitrary code\n\texecution.</li>\n\t<li>CVE-2024-45492: Internal function nextScaffoldPart can\n\thave an integer overflow for m_groupSize on 32-bit\n\tplatforms (where UINT_MAX equals SIZE_MAX).\n\tImpact is denial of service to potentially artitrary code\n\texecution.</li>\n\t</ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/libexpat/libexpat/blob/master/expat/Changes"
+		],
+		"cvename": [
+			"CVE-2024-45490",
+			"CVE-2024-45491",
+			"CVE-2024-45492"
+		]
+	},
+	"dates": {
+		"discovery": "2024-09-24",
+		"entry": "2024-09-24"
+	}
+}
