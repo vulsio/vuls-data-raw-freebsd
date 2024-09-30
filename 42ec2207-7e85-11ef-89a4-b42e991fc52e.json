@@ -1,0 +1,52 @@
+{
+	"vid": "42ec2207-7e85-11ef-89a4-b42e991fc52e",
+	"topic": "sqlite -- use-after-free bug in jsonparseaddnodearray",
+	"affects": [
+		{
+			"name": [
+				"sqlite3"
+			],
+			"range": [
+				{
+					"lt": "3.43.2,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-rl9-sqlite"
+			],
+			"range": [
+				{
+					"lt": "3.43.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"linux-c7-sqlite"
+			],
+			"range": [
+				{
+					"lt": "3.43.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>secalert@redhat.com reports:</p>\n\t<blockquote cite=\"https://access.redhat.com/security/cve/CVE-2024-0232\">\n\t  <p>A heap use-after-free issue has been identified in SQLite in the\n\tjsonParseAddNodeArray() function in sqlite3.c.  This flaw allows a\n\tlocal attacker to leverage a victim to pass specially crafted\n\tmalicious input to the application, potentially causing a crash and\n\tleading to a denial of service.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2024-0232"
+		],
+		"cvename": [
+			"CVE-2024-0232"
+		]
+	},
+	"dates": {
+		"discovery": "2024-01-16",
+		"entry": "2024-09-29"
+	}
+}
