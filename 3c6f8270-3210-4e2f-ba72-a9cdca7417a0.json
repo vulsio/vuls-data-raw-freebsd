@@ -1,0 +1,43 @@
+{
+	"vid": "3c6f8270-3210-4e2f-ba72-a9cdca7417a0",
+	"topic": "jenkins -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"jenkins"
+			],
+			"range": [
+				{
+					"lt": "2.479"
+				}
+			]
+		},
+		{
+			"name": [
+				"jenkins-lts"
+			],
+			"range": [
+				{
+					"lt": "2.462.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Jenkins Security Advisory:</p>\n\t<blockquote cite=\"https://www.jenkins.io/security/advisory/2024-10-02/\">\n\t  <h1>Description</h1>\n\t  <h5>(Medium) SECURITY-3451 / CVE-2024-47803</h5>\n\t  <p>Exposure of multi-line secrets through error messages in Jenkins</p>\n\t  <h1>Description</h1>\n\t  <h5>(Medium) SECURITY-3448 / CVE-2024-47804</h5>\n\t  <p>Item creation restriction bypass vulnerability in Jenkins</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.jenkins.io/security/advisory/2024-10-02/"
+		],
+		"cvename": [
+			"CVE-2024-47803",
+			"CVE-2024-47804"
+		]
+	},
+	"dates": {
+		"discovery": "2024-10-02",
+		"entry": "2024-10-03"
+	}
+}

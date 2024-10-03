@@ -1,0 +1,55 @@
+{
+	"vid": "fe5c1e7a-7eed-11ef-9533-f875a43e1796",
+	"topic": "php -- Multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"php81"
+			],
+			"range": [
+				{
+					"lt": "8.1.30"
+				}
+			]
+		},
+		{
+			"name": [
+				"php82"
+			],
+			"range": [
+				{
+					"lt": "8.2.24"
+				}
+			]
+		},
+		{
+			"name": [
+				"php83"
+			],
+			"range": [
+				{
+					"lt": "8.3.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t      <p>php.net reports:</p>\n\t      <blockquote cite=\"https://www.php.net/ChangeLog-8.php\">\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>CVE-2024-8926: CGI: Fixed bug GHSA-9pqp-7h25-4f32 (Bypass of CVE-2024-4577, Parameter Injection Vulnerability).</li>\n\t\t\t\t\t\t<li>CVE-2024-8927: CGI: Fixed bug GHSA-94p6-54jq-9mwp (cgi.force_redirect configuration is bypassable due to the environment variable collision).</li>\n\t\t\t\t\t\t<li>CVE-2024-9026: FPM: Fixed bug GHSA-865w-9rf3-2wh5 (Logs from childrens may be altered).</li>\n\t\t\t\t\t\t<li>CVE-2024-8925: SAPI: Fixed bug GHSA-9pqp-7h25-4f32 (Erroneous parsing of multipart form data).</li>\n\t\t\t\t\t</ul>\n\t      </blockquote>\n\t    "
+	},
+	"references": {
+		"url": [
+			"https://www.php.net/ChangeLog-8.php"
+		],
+		"cvename": [
+			"CVE-2024-8926",
+			"CVE-2024-8927",
+			"CVE-2024-9026",
+			"CVE-2024-8925"
+		]
+	},
+	"dates": {
+		"discovery": "2024-09-26",
+		"entry": "2024-09-30"
+	}
+}
