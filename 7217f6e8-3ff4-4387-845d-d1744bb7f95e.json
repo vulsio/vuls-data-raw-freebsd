@@ -1,0 +1,43 @@
+{
+	"vid": "7217f6e8-3ff4-4387-845d-d1744bb7f95e",
+	"topic": "chromium -- multiple security fixes",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "129.0.6668.100"
+				}
+			]
+		},
+		{
+			"name": [
+				"ungoogled-chromium"
+			],
+			"range": [
+				{
+					"lt": "129.0.6668.100"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_8.html\">\n\t <p>This update includes 3 security fixes:</p>\n\t <ul>\n\t    <li>[368241697] High CVE-2024-9602: Type Confusion in V8. Reported by Seunghyun Lee (@0x10n) on 2024-09-20</li>\n\t    <li>[367818758] High CVE-2024-9603: Type Confusion in V8. Reported by @WeShotTheMoon and @Nguyen Hoang Thach of starlabs on 2024-09-18</li>\n\t </ul>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_8.html"
+		],
+		"cvename": [
+			"CVE-2024-9602",
+			"CVE-2024-9603"
+		]
+	},
+	"dates": {
+		"discovery": "2024-10-08",
+		"entry": "2024-10-09"
+	}
+}
