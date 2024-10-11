@@ -1,0 +1,42 @@
+{
+	"vid": "2fb13238-872d-11ef-bd1e-b42e991fc52e",
+	"topic": "firefox -- use-after-free code execution",
+	"affects": [
+		{
+			"name": [
+				"firefox"
+			],
+			"range": [
+				{
+					"lt": "131.0.2,2"
+				}
+			]
+		},
+		{
+			"name": [
+				"firefox-esr"
+			],
+			"range": [
+				{
+					"lt": "128.3.1,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>security@mozilla.org reports:</p>\n\t<blockquote cite=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1923344\">\n\t  <p>An attacker was able to achieve code execution in the\n\tcontent process by exploiting a use-after-free in Animation\n\ttimelines. We have had reports of this vulnerability being\n\texploited in the wild.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2024-9680"
+		],
+		"cvename": [
+			"CVE-2024-9680"
+		]
+	},
+	"dates": {
+		"discovery": "2024-10-09",
+		"entry": "2024-10-10"
+	}
+}
