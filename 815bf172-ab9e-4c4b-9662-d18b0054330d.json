@@ -1,0 +1,44 @@
+{
+	"vid": "815bf172-ab9e-4c4b-9662-d18b0054330d",
+	"topic": "electron{31,32} -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"electron31"
+			],
+			"range": [
+				{
+					"lt": "31.7.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"electron32"
+			],
+			"range": [
+				{
+					"lt": "32.2.1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Electron developers report:</p>\n\t<blockquote cite=\"https://github.com/electron/electron/releases/tag/v31.7.1\">\n\t  <p>This update fixes the following vulnerabilities:</p>\n\t  <ul>\n\t    <li>Security: backported fix for CVE-2024-9602.</li>\n\t    <li>Security: backported fix for CVE-2024-9603.</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/advisories/GHSA-4v8q-vp3v-vvxh",
+			"https://github.com/advisories/GHSA-92m3-m5pw-p2x9"
+		],
+		"cvename": [
+			"CVE-2024-9602",
+			"CVE-2024-9603"
+		]
+	},
+	"dates": {
+		"discovery": "2024-10-16",
+		"entry": "2024-10-18"
+	}
+}
