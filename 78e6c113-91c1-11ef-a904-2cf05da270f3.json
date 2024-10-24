@@ -1,0 +1,43 @@
+{
+	"vid": "78e6c113-91c1-11ef-a904-2cf05da270f3",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce",
+				"gitlab-ee"
+			],
+			"range": [
+				{
+					"lt": "17.5.1",
+					"ge": "17.5.0"
+				},
+				{
+					"lt": "17.4.3",
+					"ge": "17.4.0"
+				},
+				{
+					"lt": "17.3.6",
+					"ge": "11.2.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/10/23/patch-release-gitlab-17-5-1-released/\">\n\t  <p>HTML injection in Global Search may lead to XSS</p>\n\t  <p>DoS via XML manifest file import</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/10/23/patch-release-gitlab-17-5-1-released/"
+		],
+		"cvename": [
+			"CVE-2024-8312",
+			"CVE-2024-6826"
+		]
+	},
+	"dates": {
+		"discovery": "2024-10-23",
+		"entry": "2024-10-24"
+	}
+}
