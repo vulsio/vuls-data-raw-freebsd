@@ -1,0 +1,32 @@
+{
+	"vid": "fd538d14-5778-4764-b321-2ddd61a8a58f",
+	"topic": "keycloak -- Missing server identity checks when sending mails via SMTPS",
+	"affects": [
+		{
+			"name": [
+				"keycloak"
+			],
+			"range": [
+				{
+					"lt": "26.0.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n        <p>Red Hat reports:</p>\n        <blockquote cite=\"https://bugzilla.redhat.com/show_bug.cgi?id=2315808\">\n            <p>A vulnerability was found in Apache Sling Commons Messaging\n              Mail(angus-mail), which provides a simple interface for sending\n              emails via SMTPS in OSGi, does not offer an option to enable\n              server identity checks, leaving connections vulnerable to\n              \"man-in-the-middle\" attacks and can allow insecure email\n              communication.</p>\n        </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://www.cve.org/CVERecord?id=CVE-2021-44549"
+		],
+		"cvename": [
+			"CVE-2021-44549"
+		]
+	},
+	"dates": {
+		"discovery": "2024-10-01",
+		"entry": "2024-10-31"
+	}
+}
