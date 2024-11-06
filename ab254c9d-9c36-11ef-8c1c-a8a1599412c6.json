@@ -1,0 +1,43 @@
+{
+	"vid": "ab254c9d-9c36-11ef-8c1c-a8a1599412c6",
+	"topic": "chromium -- multiple security fixes",
+	"affects": [
+		{
+			"name": [
+				"chromium"
+			],
+			"range": [
+				{
+					"lt": "130.0.6723.116"
+				}
+			]
+		},
+		{
+			"name": [
+				"ungoogled-chromium"
+			],
+			"range": [
+				{
+					"lt": "130.0.6723.116"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <p>Chrome Releases reports:</p>\n       <blockquote cite=\"https://chromereleases.googleblog.com/2024/11/stable-channel-update-for-desktop.html\">\n\t <p>This update includes 2 security fixes:</p>\n\t <ul>\n\t    <li>[370217726] High CVE-2024-10826: Use after free in Family Experiences. Reported by Anonymous on 2024-09-29</li>\n\t    <li>[375065084] High CVE-2024-10827: Use after free in Serial. Reported by Anonymous on 2024-10-23</li>\n\t </ul>\n       </blockquote>\n      "
+	},
+	"references": {
+		"url": [
+			"https://chromereleases.googleblog.com/2024/11/stable-channel-update-for-desktop.html"
+		],
+		"cvename": [
+			"CVE-2024-10826",
+			"CVE-2024-10827"
+		]
+	},
+	"dates": {
+		"discovery": "2024-11-05",
+		"entry": "2024-11-06"
+	}
+}
