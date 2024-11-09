@@ -1,0 +1,38 @@
+{
+	"vid": "70cf37c8-939b-11ef-87ad-a8a15998b5cb",
+	"topic": "tnef -- Invalid read and write operations, controlled by an attacker",
+	"affects": [
+		{
+			"name": [
+				"tnef"
+			],
+			"range": [
+				{
+					"le": "1.4.12"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"http://www.debian.org/security/2017/dsa-3798\">\n\t  <p>CVE-2017-6307: An issue was discovered in tnef before\n\t  1.4.13.  Two OOB Writes have been identified in\n\t  src/mapi_attr.c:mapi_attr_read().  These might lead to\n\t  invalid read and write operations, controlled by an\n\t  attacker.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.debian.org/security/2017/dsa-3798\">\n\t  <p>CVE-2017-6308: An issue was discovered in tnef before\n\t  1.4.13.  Several Integer Overflows, which can lead to Heap\n\t  Overflows, have been identified in the functions that wrap\n\t  memory allocation.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.debian.org/security/2017/dsa-3798\">\n\t  <p>CVE-2017-6309: An issue was discovered in tnef before\n\t  1.4.13.  Two type confusions have been identified in the\n\t  parse_file() function.  These might lead to invalid read and\n\t  write operations, controlled by an attacker.</p>\n\t</blockquote>\n\t<blockquote cite=\"http://www.debian.org/security/2017/dsa-3798\">\n\t  <p>CVE-2017-6310: An issue was discovered in tnef before\n\t  1.4.13.  Four type confusions have been identified in the\n\t  file_add_mapi_attrs() function.  These might lead to invalid\n\t  read and write operations, controlled by an attacker.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2017-6307",
+			"https://nvd.nist.gov/vuln/detail/CVE-2017-6308",
+			"https://nvd.nist.gov/vuln/detail/CVE-2017-6309",
+			"https://nvd.nist.gov/vuln/detail/CVE-2017-6310"
+		],
+		"cvename": [
+			"CVE-2017-6307",
+			"CVE-2017-6308",
+			"CVE-2017-6309",
+			"CVE-2017-6310"
+		]
+	},
+	"dates": {
+		"discovery": "2017-02-24",
+		"entry": "2024-10-26"
+	}
+}

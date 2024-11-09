@@ -1,0 +1,38 @@
+{
+	"vid": "96266fc9-1200-43b5-8393-4c51f54bb7bc",
+	"topic": "electron32 -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"electron32"
+			],
+			"range": [
+				{
+					"lt": "32.2.3"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Electron developers report:</p>\n\t<blockquote cite=\"https://github.com/electron/electron/releases/tag/v32.2.3\">\n\t  <p>This update fixes the following vulnerabilities:</p>\n\t  <ul>\n\t    <li>Security: backported fix for CVE-2024-10230.</li>\n\t    <li>Security: backported fix for CVE-2024-10231.</li>\n\t    <li>Security: backported fix for CVE-2024-10229.</li>\n\t    <li>Security: backported fix for CVE-2024-10487.</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/advisories/GHSA-g4gj-m346-585c",
+			"https://github.com/advisories/GHSA-3wfx-mj93-vf8v",
+			"https://github.com/advisories/GHSA-3hjp-j522-245f",
+			"https://github.com/advisories/GHSA-h72p-7xmw-gpp8"
+		],
+		"cvename": [
+			"CVE-2024-10230",
+			"CVE-2024-10231",
+			"CVE-2024-10229",
+			"CVE-2024-10487"
+		]
+	},
+	"dates": {
+		"discovery": "2024-11-08",
+		"entry": "2024-11-08"
+	}
+}
