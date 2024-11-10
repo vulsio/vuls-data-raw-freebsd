@@ -1,0 +1,32 @@
+{
+	"vid": "305ceb2c-9df8-11ef-a660-d85ed309193e",
+	"topic": "x11vnc -- access to shared memory segments",
+	"affects": [
+		{
+			"name": [
+				"x11vnc"
+			],
+			"range": [
+				{
+					"lt": "0.9.16_8"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2020-29074\">\n\t  <p>scan.c in x11vnc 0.9.16 uses IPC_CREAT|0777 in shmget calls,\n\t  which allows access by actors other than the current user.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2020-29074"
+		],
+		"cvename": [
+			"CVE-2020-29074"
+		]
+	},
+	"dates": {
+		"discovery": "2020-11-18",
+		"entry": "2024-11-08"
+	}
+}

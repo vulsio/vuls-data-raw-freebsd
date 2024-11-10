@@ -1,0 +1,32 @@
+{
+	"vid": "adffe51e-9df5-11ef-a660-d85ed309193e",
+	"topic": "lrzsz -- Integer overflow in zmodem, crash and information leak",
+	"affects": [
+		{
+			"name": [
+				"lrzsz"
+			],
+			"range": [
+				{
+					"lt": "0.12.20_7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cve@mitre.org reports:</p>\n\t<blockquote cite=\"https://nvd.nist.gov/vuln/detail/CVE-2018-10195\">\n\t  <p>Lrzsz has an integer overflow vulernability in the\n\t  src/zm.c:zsdata() function. An attacker could exploit this with\n\t  the sz command to cause a crash or potentially leak information\n\t  to the receiving server.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2018-10195"
+		],
+		"cvename": [
+			"CVE-2018-10195"
+		]
+	},
+	"dates": {
+		"discovery": "2018-04-26",
+		"entry": "2024-11-08"
+	}
+}
