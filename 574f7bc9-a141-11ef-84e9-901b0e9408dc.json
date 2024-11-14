@@ -1,0 +1,42 @@
+{
+	"vid": "574f7bc9-a141-11ef-84e9-901b0e9408dc",
+	"topic": "Matrix clients -- mxc uri validation in js sdk",
+	"affects": [
+		{
+			"name": [
+				"cinny"
+			],
+			"range": [
+				{
+					"lt": "4.2.3"
+				}
+			]
+		},
+		{
+			"name": [
+				"element-web"
+			],
+			"range": [
+				{
+					"lt": "1.11.85"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>matrix-js-sdk upstream reports:</p>\n\t<blockquote cite=\"https://github.com/matrix-org/matrix-js-sdk/security/advisories/GHSA-xvg8-m4x3-w6xr\">\n\t  <p>matrix-js-sdk before 34.11.0 is vulnerable to client-side\n\t  path traversal via crafted MXC URIs. A malicious room member\n\t  can trigger clients based on the matrix-js-sdk to issue\n\t  arbitrary authenticated GET requests to the client's\n\t  homeserver.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/matrix-org/matrix-js-sdk/security/advisories/GHSA-xvg8-m4x3-w6xr"
+		],
+		"cvename": [
+			"CVE-2024-50336"
+		]
+	},
+	"dates": {
+		"discovery": "2024-11-12",
+		"entry": "2024-11-12"
+	}
+}
