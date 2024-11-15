@@ -1,0 +1,46 @@
+{
+	"vid": "1eb4d32c-a245-11ef-998c-2cf05da270f3",
+	"topic": "Gitlab -- vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitlab-ce",
+				"gitlab-ee"
+			],
+			"range": [
+				{
+					"lt": "17.5.2",
+					"ge": "17.5.0"
+				},
+				{
+					"lt": "17.4.4",
+					"ge": "17.4.0"
+				},
+				{
+					"lt": "17.3.7",
+					"ge": "16.0.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Gitlab reports:</p>\n\t<blockquote cite=\"https://about.gitlab.com/releases/2024/11/13/patch-release-gitlab-17-5-2-released/\">\n\t  <p>Unauthorized access to Kubernetes cluster agent</p>\n\t  <p>Device OAuth flow allows for cross window forgery</p>\n\t  <p>Denial of Service by importing malicious crafted FogBugz import payload</p>\n\t  <p>Stored XSS through javascript URL in Analytics dashboards</p>\n\t  <p>HTML injection in vulnerability Code flow could lead to XSS on self hosted instances</p>\n\t  <p>Information disclosure through an API endpoint</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://about.gitlab.com/releases/2024/11/13/patch-release-gitlab-17-5-2-released/"
+		],
+		"cvename": [
+			"CVE-2024-9693",
+			"CVE-2024-7404",
+			"CVE-2024-8648",
+			"CVE-2024-8180",
+			"CVE-2024-10240"
+		]
+	},
+	"dates": {
+		"discovery": "2024-11-13",
+		"entry": "2024-11-14"
+	}
+}

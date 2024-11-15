@@ -1,0 +1,82 @@
+{
+	"vid": "3831292b-a29d-11ef-af48-6cc21735f730",
+	"topic": "PostgreSQL -- PostgreSQL row security below e.g. subqueries disregards user ID changes",
+	"affects": [
+		{
+			"name": [
+				"postgresql17-server"
+			],
+			"range": [
+				{
+					"lt": "17.1"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql16-server"
+			],
+			"range": [
+				{
+					"lt": "16.5"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql15-server"
+			],
+			"range": [
+				{
+					"lt": "15.9"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql14-server"
+			],
+			"range": [
+				{
+					"lt": "14.14"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql13-server"
+			],
+			"range": [
+				{
+					"lt": "13.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"postgresql12-server"
+			],
+			"range": [
+				{
+					"lt": "12.21"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>PostgreSQL project reports:</p>\n\t<blockquote cite=\"https://www.postgresql.org/support/security/CVE-2024-10976/\">\n\t<p>\n\tIncomplete tracking in PostgreSQL of tables with row\n\tsecurity allows a reused query to view or change\n\tdifferent rows from those intended. CVE-2023-2455 and\n\tCVE-2016-2193 fixed most interaction between row\n\tsecurity and user ID changes. They missed cases where a\n\tsubquery, WITH query, security invoker view, or\n\tSQL-language function references a table with a\n\trow-level security policy. This has the same\n\tconsequences as the two earlier CVEs. That is to say, it\n\tleads to potentially incorrect policies being applied in\n\tcases where role-specific policies are used and a given\n\tquery is planned under one role and then executed under\n\tother roles. This scenario can happen under security\n\tdefiner functions or when a common user and query is\n\tplanned initially and then re-used across multiple SET\n\tROLEs.\n\n\tApplying an incorrect policy may permit a user to complete\n\totherwise-forbidden reads and modifications. This affects only databases\n\tthat have used CREATE POLICY to define a row security policy. An\n\tattacker must tailor an attack to a particular application's pattern of\n\tquery plan reuse, user ID changes, and role-specific row security\n\tpolicies.\n\t</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://www.postgresql.org/support/security/CVE-2024-10976/"
+		],
+		"cvename": [
+			"CVE-2024-10976"
+		]
+	},
+	"dates": {
+		"discovery": "2024-11-14",
+		"entry": "2024-11-14"
+	}
+}
