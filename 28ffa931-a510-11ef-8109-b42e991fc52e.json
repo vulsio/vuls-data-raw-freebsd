@@ -1,0 +1,62 @@
+{
+	"vid": "28ffa931-a510-11ef-8109-b42e991fc52e",
+	"topic": "mongodb -- Buffer over-reads in MongoDB Server",
+	"affects": [
+		{
+			"name": [
+				"mongodb50"
+			],
+			"range": [
+				{
+					"lt": "5.0.30"
+				}
+			]
+		},
+		{
+			"name": [
+				"mongodb60"
+			],
+			"range": [
+				{
+					"lt": "6.0.19"
+				}
+			]
+		},
+		{
+			"name": [
+				"mongodb70"
+			],
+			"range": [
+				{
+					"lt": "7.0.15"
+				}
+			]
+		},
+		{
+			"name": [
+				"mongodb80"
+			],
+			"range": [
+				{
+					"lt": "8.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>cna@mongodb.com reports:</p>\n\t<blockquote cite=\"https://jira.mongodb.org/browse/SERVER-96419\">\n\t  <p>An authorized user may trigger crashes or receive the contents of\n\tbuffer over-reads of Server memory by issuing specially crafted\n\trequests that construct malformed BSON in the MongoDB Server.\n\t</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://nvd.nist.gov/vuln/detail/CVE-2024-10921"
+		],
+		"cvename": [
+			"CVE-2024-10921"
+		]
+	},
+	"dates": {
+		"discovery": "2024-11-14",
+		"entry": "2024-11-17"
+	}
+}
