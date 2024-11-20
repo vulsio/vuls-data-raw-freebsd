@@ -1,0 +1,42 @@
+{
+	"vid": "141f2a22-a6a7-11ef-b282-0c9d92850f7a",
+	"topic": "xorg server -- _XkbSetCompatMap vulnerability",
+	"affects": [
+		{
+			"name": [
+				"xorg-server"
+			],
+			"range": [
+				{
+					"lt": "21.1.14,1"
+				}
+			]
+		},
+		{
+			"name": [
+				"xwayland"
+			],
+			"range": [
+				{
+					"lt": "24.1.4,1"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The X.Org project reports:</p>\n\t<blockquote cite=\"https://lists.x.org/archives/xorg-announce/2024-October/003545.html\">\n\t  <ul>\n\t    <li>\n\t      CVE-2024-9632: Heap buffer Heap-based buffer overflow\n\t\tprivilege escalation in _XkbSetCompatMap\n\n\t      <p>The _XkbSetCompatMap() function attempts to resize\n\t\tthe `sym_interpret` buffer.\n\n\t\tHowever, It didn't update its size properly.\n\t\tIt updated `num_si` only, without updating `size_si`.\n\n\t\tThis may lead to local privilege escalation if the\n\t\tserver is run as root or remote code execution\n\t\t(e.g. x11 over ssh).</p>\n\t    </li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://lists.x.org/archives/xorg-announce/2024-October/003545.html"
+		],
+		"cvename": [
+			"CVE-2024-9632"
+		]
+	},
+	"dates": {
+		"discovery": "2024-10-29",
+		"entry": "2024-11-19"
+	}
+}
