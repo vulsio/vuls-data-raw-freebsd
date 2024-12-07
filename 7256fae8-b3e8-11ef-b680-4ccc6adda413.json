@@ -1,0 +1,36 @@
+{
+	"vid": "7256fae8-b3e8-11ef-b680-4ccc6adda413",
+	"topic": "gstreamer1-plugins -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gstreamer1-plugins"
+			],
+			"range": [
+				{
+					"lt": "1.24.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The GStreamer Security Center reports:</p>\n\t<blockquote cite=\"https://gstreamer.freedesktop.org/security/\">\n\t  <p>3 security bugs.</p>\n\t  <ul>\n\t    <li>CVE-2024-47542: ID3v2 parser out-of-bounds read and NULL-pointer dereference</li>\n\t    <li>CVE-2024-47600: Out-of-bounds read in gst-discoverer-1.0 commandline tool</li>\n\t    <li>CVE-2024-47541: Out-of-bounds write in SSA subtitle parser</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://gstreamer.freedesktop.org/security/sa-2024-0008.html",
+			"https://gstreamer.freedesktop.org/security/sa-2024-0018.html",
+			"https://gstreamer.freedesktop.org/security/sa-2024-0023.html"
+		],
+		"cvename": [
+			"CVE-2024-47542",
+			"CVE-2024-47600",
+			"CVE-2024-47541"
+		]
+	},
+	"dates": {
+		"discovery": "2024-12-03",
+		"entry": "2024-12-06"
+	}
+}

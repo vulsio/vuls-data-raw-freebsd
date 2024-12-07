@@ -1,0 +1,32 @@
+{
+	"vid": "7b34ddf7-b3e8-11ef-b680-4ccc6adda413",
+	"topic": "gstreamer1-plugins-ogg -- Out-of-bounds write in Ogg demuxer",
+	"affects": [
+		{
+			"name": [
+				"gstreamer1-plugins-ogg"
+			],
+			"range": [
+				{
+					"lt": "1.24.10"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The GStreamer Security Center reports:</p>\n\t<blockquote cite=\"https://gstreamer.freedesktop.org/security/\">\n\t  <p>An out-of-bounds write in the Ogg demuxer that can cause crashes\n\t    for certain input files.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://gstreamer.freedesktop.org/security/sa-2024-0026.html"
+		],
+		"cvename": [
+			"CVE-2024-47615"
+		]
+	},
+	"dates": {
+		"discovery": "2024-12-03",
+		"entry": "2024-12-06"
+	}
+}
