@@ -1,0 +1,30 @@
+{
+	"vid": "6ea20f0c-bca3-11ef-8926-9b4f2d14eb53",
+	"topic": "gitea -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitea"
+			],
+			"range": [
+				{
+					"lt": "1.22.4"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <h1>Problem Description:</h1>\n       <ul>\n       <li>Fix basic auth with webauthn</li>\n       <li>Refactor internal routers (partial backport, auth token const time comparing)</li>\n       </ul>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/go-gitea/gitea/pull/32531",
+			"https://github.com/go-gitea/gitea/pull/32473"
+		]
+	},
+	"dates": {
+		"discovery": "2024-11-16",
+		"entry": "2024-12-17"
+	}
+}

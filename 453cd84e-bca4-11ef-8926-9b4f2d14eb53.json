@@ -1,0 +1,30 @@
+{
+	"vid": "453cd84e-bca4-11ef-8926-9b4f2d14eb53",
+	"topic": "gitea -- multiple vulnerabilities",
+	"affects": [
+		{
+			"name": [
+				"gitea"
+			],
+			"range": [
+				{
+					"lt": "1.22.5"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <h1>Problem Description:</h1>\n       <ul>\n       <li>Fix delete branch perm checking</li>\n       <li>Upgrade crypto library</li>\n       </ul>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/go-gitea/gitea/pull/32791",
+			"https://github.com/go-gitea/gitea/pull/32654"
+		]
+	},
+	"dates": {
+		"discovery": "2024-11-27",
+		"entry": "2024-12-17"
+	}
+}

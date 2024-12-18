@@ -1,0 +1,30 @@
+{
+	"vid": "38e6f778-bca3-11ef-8926-9b4f2d14eb53",
+	"topic": "gitea -- Fix misuse of PublicKeyCallback",
+	"affects": [
+		{
+			"name": [
+				"gitea"
+			],
+			"range": [
+				{
+					"lt": "1.22.6"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n       <h1>Problem Description:</h1>\n       <ul>\n       <li>Misuse of ServerConfig.PublicKeyCallback may cause authorization\n       bypass in golang.org/x/crypto</li>\n       </ul>\n      "
+	},
+	"references": {
+		"url": [
+			"https://github.com/go-gitea/gitea/pull/32810",
+			"https://github.com/advisories/GHSA-v778-237x-gjrc"
+		]
+	},
+	"dates": {
+		"discovery": "2024-12-12",
+		"entry": "2024-12-17"
+	}
+}
