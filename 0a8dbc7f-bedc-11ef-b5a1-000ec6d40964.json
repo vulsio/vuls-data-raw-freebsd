@@ -1,0 +1,29 @@
+{
+	"vid": "0a8dbc7f-bedc-11ef-b5a1-000ec6d40964",
+	"topic": "Vaultwarden -- Admin organization permissions",
+	"affects": [
+		{
+			"name": [
+				"vaultwarden"
+			],
+			"range": [
+				{
+					"lt": "1.32.7"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>The Vaultwarden project reports:</p>\n\t<blockquote cite=\"https://github.com/dani-garcia/vaultwarden/pull/5291\">\n\t  <p>Admins from any organization were able to modify or delete groups in any other organization if they know the group's uuid.</p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/dani-garcia/vaultwarden/pull/5291"
+		]
+	},
+	"dates": {
+		"discovery": "2024-12-20",
+		"entry": "2024-12-20"
+	}
+}
