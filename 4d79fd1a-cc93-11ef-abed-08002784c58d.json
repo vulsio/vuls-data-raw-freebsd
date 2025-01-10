@@ -1,0 +1,53 @@
+{
+	"vid": "4d79fd1a-cc93-11ef-abed-08002784c58d",
+	"topic": "redis,valkey -- Denial-of-service valnerability due to malformed ACL selectors",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "7.4.2",
+					"ge": "7.0.0"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis72"
+			],
+			"range": [
+				{
+					"lt": "7.2.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"valkey"
+			],
+			"range": [
+				{
+					"lt": "8.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Redis core team reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/security/advisories/GHSA-prpq-rh5h-46g9\">\n\t  <p>\n\t    An authenticated with sufficient privileges may create a\n\t    malformed ACL selector which, when accessed, triggers a\n\t    server panic and subsequent denial of service.The problem\n\t    exists in Redis 7.0.0 or newer.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/redis/redis/security/advisories/GHSA-prpq-rh5h-46g9"
+		],
+		"cvename": [
+			"CVE-2024-51741"
+		]
+	},
+	"dates": {
+		"discovery": "2025-01-06",
+		"entry": "2025-01-10"
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"vid": "5f19ac58-cc90-11ef-abed-08002784c58d",
+	"topic": "redis,valkey -- Remote code execution valnerability",
+	"affects": [
+		{
+			"name": [
+				"redis"
+			],
+			"range": [
+				{
+					"lt": "7.4.2"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis72"
+			],
+			"range": [
+				{
+					"lt": "7.2.7"
+				}
+			]
+		},
+		{
+			"name": [
+				"redis62"
+			],
+			"range": [
+				{
+					"lt": "6.2.17"
+				}
+			]
+		},
+		{
+			"name": [
+				"valkey"
+			],
+			"range": [
+				{
+					"lt": "8.0.2"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>Redis core team reports:</p>\n\t<blockquote cite=\"https://github.com/redis/redis/security/advisories/GHSA-39h2-x6c4-6w4c\">\n\t  <p>\n\t    An authenticated user may use a specially crafted Lua\n\t    script to manipulate the garbage collector and potentially\n\t    lead to remote code execution. The problem exists in all\n\t    versions of Redis with Lua scripting.\n\t  </p>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"url": [
+			"https://github.com/redis/redis/security/advisories/GHSA-39h2-x6c4-6w4c"
+		],
+		"cvename": [
+			"CVE-2024-46981"
+		]
+	},
+	"dates": {
+		"discovery": "2025-01-06",
+		"entry": "2025-01-10"
+	}
+}
