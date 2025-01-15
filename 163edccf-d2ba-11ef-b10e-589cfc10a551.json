@@ -1,0 +1,34 @@
+{
+	"vid": "163edccf-d2ba-11ef-b10e-589cfc10a551",
+	"topic": "rsync -- Multiple security fixes",
+	"affects": [
+		{
+			"name": [
+				"rsync"
+			],
+			"range": [
+				{
+					"lt": "3.4.0"
+				}
+			]
+		}
+	],
+	"description": {
+		"xmlns": "http://www.w3.org/1999/xhtml",
+		"text": "\n\t<p>rsync reports:</p>\n\t<blockquote cite=\"https://kb.cert.org/vuls/id/952657\">\n\t  <p>This update includes multiple security fixes:</p>\n\t  <ul>\n\t    <li>CVE-2024-12084: Heap Buffer Overflow in Checksum Parsing</li>\n\t    <li>CVE-2024-12085: Info Leak via uninitialized Stack contents defeats ASLR</li>\n\t    <li>CVE-2024-12086: Server leaks arbitrary client files</li>\n\t    <li>CVE-2024-12087: Server can make client write files outside of destination directory using symbolic links</li>\n\t    <li>CVE-2024-12088: --safe-links Bypass</li>\n\t    <li>CVE-2024-12747: symlink race condition</li>\n\t  </ul>\n\t</blockquote>\n\t"
+	},
+	"references": {
+		"cvename": [
+			"CVE-2024-12084",
+			"CVE-2024-12085",
+			"CVE-2024-12086",
+			"CVE-2024-12087",
+			"CVE-2024-12088",
+			"CVE-2024-12747"
+		]
+	},
+	"dates": {
+		"discovery": "2025-01-14",
+		"entry": "2025-01-14"
+	}
+}
